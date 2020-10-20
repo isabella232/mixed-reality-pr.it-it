@@ -43,8 +43,7 @@
 ### [WebVR](webvr-questions.md)
 ### [Altre domande](other-questions.md)
 
-## Appendice
+## Risorse
 ### [Registrazione di bug e feedback](filing-feedback.md)
 ### [Panoramica e cronologia delle versioni del software Realtà mista](mixed-reality-software.md)
-### [Funzionamento dei controller del movimento](motion-controllers.md)
 ### [Funzionamento del tracciamento dall'interno verso l'esterno](tracking-system.md)
