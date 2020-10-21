@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 56238f302074bb4de21acbc0575f4ab913cb84b1
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: 360b8fea1744e2753aaa5310d79e82f978d92f67
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174420"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293112"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Controller di movimento in realtà mista di Windows
 
@@ -42,7 +42,6 @@ La maggior parte degli auricolari viene abbinata direttamente alla cuffia, ma al
 4. Seguire le istruzioni fornite sullo schermo.
 
 > [!NOTE]
-
 > * Per i controller che si abbinano direttamente al PC, è necessario inserirli in modalità di associazione attivando e quindi premendo il pulsante di associazione all'interno del compartmento della batteria fino a quando le luci iniziano a lampeggiare.  
 > * I controller di movimento supportano solo l'accoppiamento a un computer o a un PC alla volta. Se è necessario usarli con un'altra cuffia, è necessario eseguire il processo di associazione. Vedere [configurare la realtà mista di Windows](set-up-windows-mixed-reality.md)
 

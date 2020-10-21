@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, compatibilità, compatibilità, introduzione, configurazione, PC, requisiti di sistema
 appliesto:
 - Windows 10
-ms.openlocfilehash: c76f670230a4a19b53b7e8f938b13e79bb7c8db7
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: b10fc9962d899b0a2c2ee15e6d039fc6bfb6d503
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174442"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293060"
 ---
 # <a name="before-you-start"></a>Prima di iniziare
 
@@ -52,7 +52,7 @@ Verificare che il PC sia connesso a Internet. È necessario scaricare i driver e
 
 ## <a name="make-sure-you-have-a-compatible-graphics-driver"></a>Assicurarsi di disporre di un driver della grafica compatibile
 
-Per completare la configurazione della realtà mista, è necessario che il PC disponga di un driver grafico WDDM 2,2 o versione successiva. Se non dispone già di un driver di grafica compatibile, provare le origini seguenti:
+Per completare la configurazione della realtà mista di Windows, è necessario che il PC disponga di un driver grafico WDDM 2,2 o versione successiva. Se non dispone già di un driver di grafica compatibile, provare le origini seguenti:
 
 * Controllare gli aggiornamenti più recenti dei driver critici usando Windows Update (**avviare > impostazioni di Windows > aggiornamento e sicurezza > verifica della disponibilità di aggiornamenti**)
 * Verificare la disponibilità di aggiornamenti più recenti dei driver facoltativi:
@@ -64,7 +64,7 @@ Per completare la configurazione della realtà mista, è necessario che il PC di
 
 ## <a name="make-sure-that-you-have-any-required-adapters"></a>Assicurarsi di disporre di tutti gli adapter necessari
 
-Il PC compatibile con la realtà mista di Windows potrebbe non avere le porte HDMI e USB 3,0 di dimensioni complete necessarie per connettere l'auricolare immersivo. In alternativa, potrebbe essere necessaria una scheda Bluetooth per soddisfare i requisiti del portale per la realtà mista.  In tal caso, sarà necessario disporre di adapter per connettere l'auricolare e i controller di movimento. È disponibile un elenco di tipi di adapter che potrebbero essere necessari e alcune raccomandazioni su modelli di adapter specifici [qui](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
+Il PC compatibile con la realtà mista di Windows potrebbe non avere le porte HDMI e USB 3,0 di dimensioni complete necessarie per connettere l'auricolare immersivo. In alternativa, potrebbe essere necessaria una scheda Bluetooth per soddisfare i requisiti del portale per la realtà mista di Windows.  In tal caso, sarà necessario disporre di adapter per connettere l'auricolare e i controller di movimento. Assicurarsi di esaminare un elenco di [tipi di adapter che potrebbero essere necessari e alcune raccomandazioni su modelli di adapter specifici](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
 
 ## <a name="make-sure-that-you-have-input-devices"></a>Assicurarsi di avere dispositivi di input
 
@@ -76,7 +76,7 @@ A meno che non siano stati acquistati cuffie Samsung HMD Odyssey, HP Reverb o HP
 
 ## <a name="make-sure-that-you-have-a-large-open-space"></a>Assicurarsi di disporre di una grande quantità di spazio aperto
 
-Se si desidera spostarsi quando si usa la realtà mista di Windows, è necessario avere uno spazio aperto di grandi dimensioni.  Durante l'installazione verrà richiesto di scegliere tra "seduti e in piedi" o "tutte le esperienze". Scegliere "tutte le esperienze" e configurare un limite se si desidera spostarsi.
+Se si desidera spostarsi quando si usa la realtà mista di Windows, è necessario avere uno spazio aperto di grandi dimensioni.  Durante l'installazione verrà richiesto di scegliere tra "seduti e in piedi" o "tutte le esperienze". Scegliere "tutte le esperienze" e configurare un limite se si desidera spostarsi. Per comprendere i requisiti di spazio, rivedere le [linee guida per l'integrità, la sicurezza e la comodità dell'auricolare immersive](wmr-health-safety-comfort.md) .
 
 ### <a name="seated-and-standing-no-boundary"></a>Seduto e in piedi (nessun limite)
 
