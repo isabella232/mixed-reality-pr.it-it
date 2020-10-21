@@ -14,7 +14,6 @@
 ### [Installare Windows Mixed Reality](install-windows-mixed-reality.md)
 ### [Configurare Windows Mixed Reality](set-up-windows-mixed-reality.md)
 ### [Domande frequenti sulla configurazione di Windows Mixed Reality](wmr-setup-faq.md)
-### [Salute, sicurezza e comfort con il visore VR immersive](wmr-health-safety-comfort.md)
 
 ## Uso di Windows Mixed Reality
 ### [Esercitazione per la realtà mista](learn-mixed-reality.md)
@@ -28,6 +27,7 @@
 ### [Domande frequenti sull'uso di Windows Mixed Reality](using-wmr-faq.md)
 
 ## Domande frequenti sulla risoluzione dei problemi
+### [Registrazione di bug e feedback](filing-feedback.md)
 ### [Domande frequenti di carattere generale](troubleshooting-windows-mixed-reality.md)
 ### [Errori di installazione](installation_errors.md)
 ### [Configurazione](set-up-questions.md)
@@ -44,6 +44,6 @@
 ### [Altre domande](other-questions.md)
 
 ## Risorse
-### [Registrazione di bug e feedback](filing-feedback.md)
+### [Salute, sicurezza e comfort con il visore VR immersive](wmr-health-safety-comfort.md)
 ### [Panoramica e cronologia delle versioni del software Realtà mista](mixed-reality-software.md)
 ### [Funzionamento del tracciamento dall'interno verso l'esterno](tracking-system.md)
