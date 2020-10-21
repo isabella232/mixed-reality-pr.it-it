@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Portale di dispositivi di Windows, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 398b9ee312c8d49e3468980e5e2c1be556c17162
-ms.sourcegitcommit: 252b52f7541a6e15aa33322286855af8a3924fc1
+ms.openlocfilehash: 98030e55736d423d1fb84d2b965f6ed40246d8f4
+ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862995"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92011496"
 ---
 # <a name="using-the-windows-device-portal"></a>Uso del Portale di dispositivi di Windows
 
@@ -374,3 +374,20 @@ Tocca o fai clic sull'area al di sotto di **Virtual keyboard** (Tastiera virtual
 ## <a name="device-portal-rest-apis"></a>API REST del Portale di dispositivi
 
 Tutti gli elementi del Portale dispositivi sono basati su [API REST](device-portal-api-reference.md) che puoi usare facoltativamente per accedere ai dati e controllare il dispositivo a livello di codice.
+
+## <a name="troubleshooting"></a>Risoluzione dei problemi
+
+### <a name="how-to-fix-the-its-lonely-here-message"></a>Come correggere il messaggio "Nessun contenuto"
+
+> [!NOTE]
+> Se si passa da HoloLens 2 a HoloLens (prima generazione), è possibile che le pagine vengano visualizzate prive di contenuto se usate prima in HoloLens 2 e successivamente in HoloLens (prima generazione).
+
+![Messaggio Nessun contenuto nella pagina del Portale di dispositivi](images/using-windows-portal-img-19.png)
+
+1. Selezionare **Reimposta layout** dal menu in alto a sinistra:
+
+![Selezione di Reimposta layout nel menu del Portale di dispositivi](images/using-windows-portal-img-20.png)
+
+2. Fare clic su **Reimposta layout** sotto l'intestazione **Reset workspace** (Reimposta area di lavoro). La pagina del portale verrà aggiornata automaticamente e verrà visualizzato il contenuto.
+
+![Selezione di Reimposta layout nella pagina Reimposta area di lavoro](images/using-windows-portal-img-21.png)
