@@ -1,0 +1,49 @@
+### YamlMime:Hub
+title: Documentazione su VR di Windows Mixed Reality
+summary: Informazioni per un uso efficace di Windows Mixed Reality da parte di clienti di livello intermedio e avanzato.
+brand: windows
+metadata:
+  title: Documentazione su VR di Windows Mixed Reality
+  description: Informazioni per un uso efficace di Windows Mixed Reality da parte di clienti di livello intermedio e avanzato.
+  services: guidance
+  ms.service: guidance
+  ms.topic: hub-page
+  ms.prod: mixed-reality
+  ms.technology: enthusiast-guide
+  author: mattwojo
+  ms.author: mattwoj
+  ms.openlocfilehash: b791970df40711c298501b2db09cff8ec342de8a
+  ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+  ms.translationtype: HT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 10/19/2020
+  ms.locfileid: "92174388"
+highlightedContent:
+  items:
+  - title: Prima dell'acquisto
+    itemType: learn
+    url: windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md
+  - title: Introduzione
+    itemType: get-started
+    url: before-you-start.md
+  - title: Esercitazione per la realtà mista
+    itemType: how-to-guide
+    url: learn-mixed-reality.md
+  - title: Windows Mixed Reality Academy
+    itemType: video
+    url: https://developer.microsoft.com/en-us/windows/mixed-reality/academy
+additionalContent:
+  sections:
+  - title: Altre risorse
+    summary: Sono disponibili collegamenti per la risoluzione dei problemi, documentazione relativa allo sviluppo e forum.
+    items:
+    - title: Risoluzione dei problemi
+      summary: Risoluzione di ogni tipo di problema per tutte le aree di Windows Mixed Reality
+      url: installation_errors.md
+    - title: Commenti e suggerimenti
+      summary: Raccolta di articoli di approfondimento aggiuntivi su Windows Mixed Reality, relativi ad argomenti che vanno dalla registrazione di feedback utile al funzionamento dei sottosistemi
+      url: filing-feedback.md
+    - title: Documentazione relativa allo sviluppo
+      summary: Documentazione relativa allo sviluppo e alla progettazione
+      url: https://developer.microsoft.com/windows/mixed-reality
+  footer: Sono stati riscontrati problemi nel sito? [Invia le tue segnalazioni](https://forums.hololens.com/categories/using-windows-mixed-reality)
