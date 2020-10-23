@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, pre-vendita, ricerca, acquisto, prima dell'acquisto
 appliesto:
 - Windows 10
-ms.openlocfilehash: de697bc7002ab342241acc2bdc989a3e1e397632
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: b665d0d84f511ae5e6383c5d4b5aadea400b2033
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293038"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434616"
 ---
 # <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -31,15 +31,11 @@ ms.locfileid: "92293038"
 
 ### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>Quali produttori vendono i dispositivi di realtà mista di Windows?
 
-**Risposta rapida:** Gli auricolari e i controller di movimento sono attualmente disponibili da Acer, ASUS, Samsung e HP. Vedere <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
+**Risposta rapida:** Gli auricolari e i controller di movimento sono attualmente disponibili da HP. Vedere <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
 
 ### <a name="where-can-i-buy-standalone-motion-controllers"></a>Dove è possibile acquistare I controller di movimento autonomi?
 
 **Risposta rapida:** Sfortunatamente, non siamo a conoscenza dei rivenditori che vendono controller di movimento autonomi al momento.
-
-### <a name="what-is-the-price-point"></a>Qual è il punto di prezzo?
-
-**Risposta rapida:** I prezzi per cuffie e controller variano in base al produttore e al rivenditore. Vedere <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro> per i dispositivi con realtà mista attualmente in vendita da Microsoft.
 
 ### <a name="what-is-the-difference-between-a-windows-mixed-reality-pc-and-a-windows-mixed-reality-ultra-pc"></a>Qual è la differenza tra un PC con una realtà mista di Windows e un PC a realtà mista di Windows?
 
@@ -47,7 +43,7 @@ ms.locfileid: "92293038"
 
 ### <a name="why-is-this-called-windows-mixed-reality-when-the-devices-look-like-they-provide-a-virtual-reality-experience"></a>Perché si tratta di una "realtà mista" di Windows quando i dispositivi sembrano fornire un'esperienza di "realtà virtuale"?
 
-**Risposta rapida:** La realtà mista si riferisce alla gamma completa di calcolo spaziale, dalla realtà aumentata alla realtà virtuale e dagli ologrammi. La piattaforma di realtà mista Microsoft supporta sia la realtà virtuale che la realtà aumentata. Sono attualmente supportati due tipi di dispositivi con una tecnologia simile su tale spettro: HoloLens (AR) e auricolari Windows Mixed Reality (VR) con i controller di movimento.
+**Risposta rapida:** La realtà mista si riferisce alla gamma completa di calcolo spaziale, dalla realtà aumentata alla realtà virtuale e dagli ologrammi. La piattaforma di realtà mista Windows supporta i dispositivi in realtà virtuale (VR) e realtà aumentata (AR). Sono attualmente supportati due tipi di dispositivi con una tecnologia simile su tale spettro: HoloLens (AR) e auricolari Windows Mixed Reality (VR) con i controller di movimento.
 
 Altre informazioni sulla realtà mista sono disponibili qui: <https://docs.microsoft.com/windows/mixed-reality/mixed-reality>
 
@@ -71,7 +67,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 
 ### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>Il rilevamento interno dei controller di movimento può avere un effetto sul gioco a causa della fotocamera FOV?
 
- Come gli auricolari, i controller di movimento della realtà mista di Windows non richiedono alcuna configurazione dei sensori di rilevamento esterni. Il controller viene invece rilevato dai sensori nell'auricolare. Se l'utente sposta i controller fuori dal campo di visualizzazione dell'auricolare, nella maggior parte dei casi Windows continuerà a dedurre le posizioni del controller e le fornirà all'app. Quando il controller ha perso il rilevamento visivo per un periodo di tempo sufficiente, le posizioni del controller vengono rilasciate a posizioni di accuratezza approssimativa. A questo punto, il sistema bloccherà il controller all'utente, tenendo traccia della posizione dell'utente mentre si spostano, esponendo comunque il vero orientamento del controller usando i sensori di orientamento interni. Molte app che usano i controller per puntare e attivare gli elementi dell'interfaccia utente possono funzionare normalmente con una precisione approssimativa senza che l'utente si accorga. Il modo migliore per ottenere questo aspetto è provare a eseguire l'operazione. Prova a visitare un Microsoft Store vicino a te e scoprilo! Nel frattempo, di seguito è riportato un video con esempi di contenuti immersivi che funzionano con i controller di movimento in diversi Stati di rilevamento:
+ Come gli auricolari, i controller di movimento della realtà mista di Windows non richiedono alcuna configurazione dei sensori di rilevamento esterni. Il controller viene invece rilevato dai sensori nell'auricolare. Se l'utente sposta i controller fuori dal campo di visualizzazione dell'auricolare, nella maggior parte dei casi Windows continuerà a dedurre le posizioni del controller e le fornirà all'app. Quando il controller ha perso il rilevamento visivo per un periodo di tempo sufficiente, le posizioni del controller vengono rilasciate a posizioni di accuratezza approssimativa. A questo punto, il sistema bloccherà il controller all'utente, tenendo traccia della posizione dell'utente mentre si spostano, esponendo comunque il vero orientamento del controller usando i sensori di orientamento interni. Molte app che usano i controller per puntare e attivare gli elementi dell'interfaccia utente possono funzionare normalmente con una precisione approssimativa senza che l'utente si accorga. Il modo migliore per ottenere questo aspetto è provare a eseguire l'operazione.
 
 ### <a name="how-is-windows-mixed-reality-different-from-samsung-gear-vr"></a>In che modo la realtà mista di Windows è diversa da Samsung Gear VR?
 
@@ -103,7 +99,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Fino a 90Hz </td>
 <td> 100 ° </td>
 <td> Jack da 3,5 mm </td>
-<td> nessuno </td>
+<td> Nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.acer.com/ac/en/US/content/windows-mixed-reality-home">Acer</a> </td>
@@ -129,7 +125,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Fino a 90Hz </td>
 <td> 95 ° </td>
 <td> Jack da 3,5 mm </td>
-<td> nessuno </td>
+<td> Nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.asus.com/us/Headset/ASUS-Windows-Mixed-Reality-Headset-HC102/">ASU</a> </td>
@@ -142,7 +138,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Fino a 90Hz </td>
 <td> 105 ° </td>
 <td> Jack da 3,5 mm </td>
-<td> nessuno </td>
+<td> Nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.dell.com/en-us/shop/accessories/apd/536-bbbr?~ck=mn">Dell</a> </td>
@@ -155,7 +151,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Fino a 90Hz </td>
 <td> 105 ° </td>
 <td> Jack da 3,5 mm </td>
-<td> nessuno </td>
+<td> Nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="http://pr.fujitsu.com/jp/news/2017/10/17.html">Fujitsu</a> </td>
@@ -181,7 +177,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Fino a 90Hz </td>
 <td> 105 ° </td>
 <td> Jack da 3,5 mm </td>
-<td> nessuno </td>
+<td> Nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://store.hp.com/us/en/pdp/hp-windows-mixed-reality-headset-vr1000-100">HP</a> </td>
@@ -194,7 +190,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Fino a 90Hz </td>
 <td> 105 ° </td>
 <td> Jack da 3,5 mm </td>
-<td> nessuno </td>
+<td> Nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.lenovo.com/us/en/virtual-reality-and-smart-devices/virtual-and-augmented-reality/lenovo-explorer/Lenovo-Explorer/p/G10NREAG0A2">Lenovo</a> </td>
@@ -207,7 +203,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Fino a 90Hz </td>
 <td> 105 ° </td>
 <td> Jack da 3,5 mm </td>
-<td> nessuno </td>
+<td> Nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.medion.com/be/shop/monitoren-medion-erazer-mr-x1000-vr-headset-controllers-30023616a1.html">Medion</a> </td>
@@ -220,7 +216,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Fino a 90Hz </td>
 <td> 110 ° </td>
 <td> Integrato </td>
-<td> nessuno </td>
+<td> Nessuno </td>
 <td style="text-align: center;">Meccanico</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.samsung.com/us/computing/hmd/windows-mixed-reality/xe800zaa-hc1us-xe800zaa-hc1us/?redir=windows%20mixed%20reality">Samsung</a> </td>
@@ -246,7 +242,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Fino a 90Hz </td>
 <td> 105 ° </td>
 <td> Jack da 3,5 mm </td>
-<td> nessuno </td>
+<td> Nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="http://3glasses.com/goods.action?gid=30">3Glasses</a> </td>
@@ -315,7 +311,7 @@ Ai dettagli tecnici elencati sopra viene fatto riferimento dalle specifiche del 
 
 **Risposta rapida:** I controller di movimento per la realtà mista di Windows usano Bluetooth. A seconda dell'auricolare, i controller di movimento sono abbinati alla radio Bluetooth sull'auricolare (se attrezzata) o alla radio Bluetooth del PC.
 
-* Alcuni auricolari per la realtà mista di Windows, tra cui Acer 500, Samsung Odyssey + e HP Reverb, includono le radio Bluetooth predefinite per l'uso con i controller di movimento. I controller di movimento dotati di questi auricolari sono pre-abbinati all'auricolare dalla factory e non richiedono che il PC disponga di una radio Bluetooth separata.
+* Alcuni auricolari per la realtà mista di Windows, tra cui Acer per la 500, Samsung Odyssey +, HP reverbi e HP reverbi G2, includono le radio Bluetooth predefinite per l'uso con i controller di movimento. I controller di movimento dotati di questi auricolari sono pre-abbinati all'auricolare dalla factory e non richiedono che il PC disponga di una radio Bluetooth separata.
 * Gli altri auricolari per la realtà mista di Windows dovranno essere abbinati a una radio Bluetooth nel PC.
 
 ### <a name="are-windows-mixed-reality-motion-controllers-cross-compatible-between-windows-mixed-reality-headsets"></a>I controller di movimento per la realtà mista di Windows sono compatibili tra le cuffie di realtà mista di Windows?
@@ -372,7 +368,7 @@ Ai dettagli tecnici elencati sopra viene fatto riferimento dalle specifiche del 
 
 **Risposta rapida:** Sì, la realtà mista di Windows funzionerà anche se non si dispone di molto spazio. È possibile impostare questa impostazione durante l'installazione selezionando l'esperienza "desk-scale".
 
-## <a name="content"></a>Contenuto
+## <a name="content"></a>Content
 
 ### <a name="what-games-and-apps-run-on-windows-mixed-reality"></a>Quali giochi e app vengono eseguiti in realtà mista di Windows?
 

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, compatibilità, compatibilità, introduzione, configurazione, PC, requisiti di sistema
 appliesto:
 - Windows 10
-ms.openlocfilehash: b10fc9962d899b0a2c2ee15e6d039fc6bfb6d503
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 84001a46826ada06e315f1707ee9516c3da063bd
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293060"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434570"
 ---
 # <a name="before-you-start"></a>Prima di iniziare
 
@@ -35,10 +35,12 @@ Per ulteriori informazioni sui problemi di compatibilità dei PC, vedere [qui](h
 
 ## <a name="make-sure-you-have-the-windows-10-version-1709-or-newer-installed"></a>Verificare che sia installato Windows 10 versione 1709 o versione successiva
 
-Per usare la realtà mista di Windows, è necessario che sia in esecuzione Windows 10 versione 1709 (Fall Creators Update) o versione successiva. Le versioni compatibili di Windows 10 includono:
-* Windows 10 versione 1709 (Fall Creators Update, Build 16299)
-* Windows 10 versione 1803 (Spring Update, Build 17134)
-* Windows 10 versione 1809 (aggiornamento di ottobre, Build 17763)
+Per usare la realtà mista di Windows, è necessario che sia in esecuzione Windows 10 versione 1903 o successiva. Le versioni compatibili di Windows 10 includono:
+
+* Windows 10 versione 1903
+* Windows 10 versione 1909
+* Windows 10 versione 2004
+* Versione di Windows 10 20H2
 
 Per visualizzare la versione di Windows 10 attualmente in esecuzione nel dispositivo, selezionare il pulsante **Start** , quindi selezionare **impostazioni > sistema > informazioni su**.
 
@@ -48,7 +50,7 @@ Per ulteriori informazioni su come rendere aggiornato il PC, vedere [qui](https:
 
 ## <a name="make-sure-your-pc-is-connected-to-the-internet"></a>Verificare che il PC sia connesso a Internet
 
-Verificare che il PC sia connesso a Internet. È necessario scaricare i driver e un altro software per ottenere la realtà mista di Windows in esecuzione.  Se la connessione di rete Wi-Fi è impostata su a consumo, impostarla su non a consumo. [Altre informazioni](https://support.microsoft.com/en-us/help/4028458/windows-metered-connections-in-windows-10)
+Verificare che il PC sia connesso a Internet. È necessario scaricare i driver e un altro software per ottenere la realtà mista di Windows in esecuzione.
 
 ## <a name="make-sure-you-have-a-compatible-graphics-driver"></a>Assicurarsi di disporre di un driver della grafica compatibile
 
@@ -64,15 +66,11 @@ Per completare la configurazione della realtà mista di Windows, è necessario c
 
 ## <a name="make-sure-that-you-have-any-required-adapters"></a>Assicurarsi di disporre di tutti gli adapter necessari
 
-Il PC compatibile con la realtà mista di Windows potrebbe non avere le porte HDMI e USB 3,0 di dimensioni complete necessarie per connettere l'auricolare immersivo. In alternativa, potrebbe essere necessaria una scheda Bluetooth per soddisfare i requisiti del portale per la realtà mista di Windows.  In tal caso, sarà necessario disporre di adapter per connettere l'auricolare e i controller di movimento. Assicurarsi di esaminare un elenco di [tipi di adapter che potrebbero essere necessari e alcune raccomandazioni su modelli di adapter specifici](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
+Il PC compatibile con la realtà mista di Windows potrebbe non avere le porte HDMI e USB 3,0 di dimensioni complete necessarie per connettere l'auricolare immersivo. In alternativa, potrebbe essere necessaria una scheda Bluetooth per soddisfare i requisiti del portale per la realtà mista di Windows.  In tal caso, sarà necessario disporre di adapter per connettere l'auricolare e i controller di movimento. Assicurarsi di esaminare l'elenco dei [tipi di adapter che potrebbero essere necessari e alcune raccomandazioni su specifici modelli di adapter](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
 
 ## <a name="make-sure-that-you-have-input-devices"></a>Assicurarsi di avere dispositivi di input
 
 La realtà mista di Windows è progettata per funzionare al meglio con i controller di movimento della realtà mista di Windows, che forniscono interazioni naturali e precise senza necessità di installare hardware sulle pareti. È anche possibile usare un controller Xbox o un mouse e una tastiera.
-
-## <a name="get-headphones-if-your-headset-didnt-come-with-them"></a>Ricevi cuffie se la cuffia non è stata associata
-
-A meno che non siano stati acquistati cuffie Samsung HMD Odyssey, HP Reverb o HP reverbi G2 (che hanno integrato cuffie AKG e un microfono dual array integrato), è necessario ottenere un auricolare audio con una coppia di cuffie che può essere collegata al jack audio headset's 3,5 mm di HMD.
 
 ## <a name="make-sure-that-you-have-a-large-open-space"></a>Assicurarsi di disporre di una grande quantità di spazio aperto
 

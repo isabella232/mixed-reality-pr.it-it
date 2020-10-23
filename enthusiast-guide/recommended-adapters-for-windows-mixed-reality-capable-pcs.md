@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, adapter, dongle, HDMI, USB, DisplayPort
 appliesto:
 - Windows 10
-ms.openlocfilehash: bcdc25c0f6e678666a713d01aaa4fb15da31e90c
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: ea0cd3c87fecda310ec72ba50d8f5982d1782b31
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174402"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434595"
 ---
 # <a name="recommended-adapters"></a>Adapter consigliati
 > [!NOTE]
@@ -28,7 +28,7 @@ Il [PC compatibile con la realtà mista di Windows](windows-mixed-reality-minimu
 
 <table>
 <tr>
-<th style="width:30%">Type</th><th style="width:40%">Adattatore</th><th style="width:15%">60Hz in grado di supportare</th><th style="width:15%">90Hz in grado di supportare</th>
+<th style="width:30%">Tipo</th><th style="width:40%">Adattatore</th><th style="width:15%">60Hz in grado di supportare</th><th style="width:15%">90Hz in grado di supportare</th>
 </tr><tr>
 <td rowspan="2" style="vertical-align: middle;">DisplayPort (full-size) a HDMI 2,0</td><td>Adattatore Club3D DisplayPort 1,2 a HDMI 2,0 attivo</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
@@ -78,7 +78,7 @@ Queste tabelle consentono di determinare se sono necessarie schede di visualizza
     <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td><td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
     <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td><td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
     <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td><td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="border: 1px solid black">nessuno</td>
+    <td style="border: 1px solid black">Nessuno</td>
   </tr>
   <tr style="border: 1px solid black">
     <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td>
@@ -165,7 +165,7 @@ Queste tabelle consentono di determinare se sono necessarie schede di visualizza
     <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
     <td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
     <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="border: 1px solid black;">nessuno</td>
+    <td style="border: 1px solid black;">Nessuno</td>
 </tr>
   <tr style="border: 1px solid black;">
     <td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
@@ -185,7 +185,7 @@ Queste tabelle consentono di determinare se sono necessarie schede di visualizza
     <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
     <td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
     <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="border: 1px solid black;">nessuno</td>
+    <td style="border: 1px solid black;">Nessuno</td>
   </tr>
   <tr style="border: 1px solid black;">
     <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
@@ -263,7 +263,7 @@ Queste tabelle consentono di determinare se sono necessarie schede di visualizza
 
 Se la cuffia è stata rilasciata dopo 2018, le schede non sono necessarie e i controller sono associati all'auricolare.
 
-I dispositivi forniti in 2017 o versioni precedenti necessitano di un adattatore per i controller. Se il PC non include Bluetooth per l'associazione di controller di movimento per la [realtà mista di Windows](controllers-in-wmr.md), è possibile usare un adapter come il plug-in USB Bluetooth 4,0 Low Energy Micro Adapter.
+I dispositivi forniti in 2017 o versioni precedenti necessitano di un adattatore per i controller. Se il PC non include Bluetooth per l'associazione di controller di movimento per la [realtà mista di Windows](controllers-in-wmr.md#Pair-motion-controllers), è possibile usare un adapter come il plug-in USB Bluetooth 4,0 Low Energy Micro Adapter.
 
 > [!NOTE]
 > Microsoft non produce, verifica, certifica né garantisce la funzionalità, l'affidabilità o la qualità degli adapter. Per eventuali domande, problemi o problemi relativi a qualsiasi adapter, è necessario contattare il venditore o il produttore dell'adapter.

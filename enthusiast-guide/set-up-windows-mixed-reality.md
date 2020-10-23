@@ -3,12 +3,12 @@ title: Configurare Windows Mixed Reality
 description: Come configurare i controller di movimento per la realtà mista di Windows, il riconoscimento vocale e l'audio e definire il limite della stanza per uno spazio di riproduzione sicuro.
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, introduzione, installazione, controller di movimento, controller, sintesi vocale, audio, seduto, in piedi, confine, driver grafici, Microsoft Edge, cromo
-ms.openlocfilehash: 71775ba03cb143b83f1a4514f62f20df903df96d
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: cd59fd34dd00edc98d209681cc1239895c36ada2
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174464"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434637"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Configurare Windows Mixed Reality
 
@@ -16,7 +16,7 @@ ms.locfileid: "92174464"
 
 Per eseguire la realtà mista di Windows, è necessario:
 
-* Un headset immersivo A realtà mista compatibile. [Altre informazioni](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
+* Un headset immersivo A realtà mista compatibile. [Scopri di più](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
 * Un [PC con la realtà mista di Windows](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) con le porte corrette per la cuffia
 * [Controller](controllers-in-wmr.md)di movimento, controller Xbox o mouse e tastiera
 * Cuffie con MIC (se non sono state compilate le cuffie)
@@ -86,7 +86,7 @@ Non sono necessari passaggi aggiuntivi se si sceglie questa opzione.
 
 ## <a name="what-is-the-maximum-size-of-the-boundary"></a>Qual è la dimensione massima del limite?
 
-Le dimensioni massime attualmente supportate per la realtà mista di Windows sono 18x18ft (5.7 x 5.7 m) o 13ft (4m) RADIUS dal centro.  Le dimensioni limite dipendono dal punto di ancoraggio e dalla distanza del punto di ancoraggio che è possibile spostare prima di rischiare la stabilità del limite.  La realtà mista di Windows si basa su un'astrazione della fase nella piattaforma, la fase è lo spazio in cui ci si sposta e la fase dipende da un singolo ancoraggio (che quasi tutte le app presuppone anche che sia il modo in cui vive e Oculus funziona, perché hanno solo un unico sistema di coordinate).  Il motivo per cui questo aspetto è importante è che con il rilevamento interno, man mano che ci si allontana da un punto di ancoraggio, il rilevamento della cuffia è affidabile per mantenere stabile il limite.  Laddove il limite è concepito per evitare ostacoli fisici, diventa sempre più problematico, dal centro.  Due fattori sono passati alla decisione sulla dimensione massima del limite; la distanza massima tra le cuffie per la realtà mista di Windows potrebbe offrire la migliore esperienza di scalabilità delle chat con un limite e la lunghezza del cavo auricolare, che per la maggior parte delle cuffie per la realtà mista di Windows è 10ft (3M). 
+Le dimensioni massime attualmente supportate per la realtà mista di Windows sono 18x18ft (5.7 x 5.7 m) o 13ft (4m) RADIUS dal centro.  Le dimensioni limite dipendono dal punto di ancoraggio e dalla distanza del punto di ancoraggio che è possibile spostare prima di rischiare la stabilità del limite.  La realtà mista di Windows si basa su un'astrazione della fase nella piattaforma, la fase è lo spazio in cui ci si sposta e la fase dipende da un singolo ancoraggio (che quasi tutte le app presuppone anche che sia il modo in cui vive e Oculus funziona, perché hanno solo un unico sistema di coordinate).  Il motivo per cui questo aspetto è importante è che con il rilevamento interno, man mano che ci si allontana da un punto di ancoraggio, il rilevamento della cuffia è affidabile per mantenere stabile il limite.  Laddove il limite è concepito per evitare ostacoli fisici, diventa sempre più problematico, dal centro.  Due fattori sono passati alla decisione sulla dimensione massima del limite; la distanza massima tra le cuffie per la realtà mista di Windows potrebbe offrire la migliore esperienza di scalabilità delle chat con un limite e la lunghezza del cavo auricolare, che per la maggior parte delle cuffie per la realtà mista di Windows è 10ft (3M).
 
 ## <a name="set-up-speech"></a>Configura sintesi vocale
 
@@ -112,7 +112,7 @@ Qui viene visualizzata la risoluzione nativa dell'auricolare.
 
 Se al PC si connette una cuffia con schermi con risoluzione superiore (ad esempio, cuffie con 4320x2160), verrà visualizzata un'impostazione per regolare la risoluzione dello schermo della realtà mista.
 
-* Questa impostazione fornisce l'opzione per lo stack di composizione della realtà mista di Windows per eseguire il rendering in modo nativo (ad esempio, in 4320x2160) o per fare in modo che lo stack di composizione esegua il rendering con una risoluzione e una scalabilità inferiori (ad esempio, eseguire il rendering in 2880x1440 e scalare su 4320x2160.
+* Questa impostazione fornisce l'opzione per lo stack di composizione della realtà mista di Windows per eseguire il rendering in modo nativo (ad esempio, in 4320x2160) o per fare in modo che lo stack di composizione esegua il rendering a una risoluzione e scalabilità inferiori (ad esempio, eseguire il rendering in 2880x1440 e scalare su 4320x2160).
 * L'impostazione predefinita prevede il rendering nativo, ad esempio l'opzione **4320 x 2160 (qualità migliore)** , per fornire la migliore qualità visiva possibile dall'auricolare.
 * Se il PC non soddisfa i requisiti minimi dell'hardware grafico per la cuffia con schermi con risoluzione superiore e/o se si verificano problemi di prestazioni della grafica, è possibile provare a usare la selezione dell'opzione di **scalabilità automatica (prestazioni ottimali)** .
 
@@ -131,9 +131,7 @@ Questa impostazione avanzata sostituisce l'esperienza di frequenza di aggiorname
 * **90Hz**
 
 >[!Note]
->L'impostazione della frequenza di aggiornamento automatico per HP Reverb G2 è 90Hz
-
-Alcune funzionalità della realtà mista di Windows, tra cui l'anteprima del portale misto reality e la visualizzazione di un auricolare più grande, sono disponibili solo con l'esperienza 90Hz.
+>Quando si configura per la prima volta l'auricolare HP Reverb G2, l'esperienza verrà modificata in 90Hz per garantire l'esperienza ottimale.  Se necessario, è possibile ripristinare automatico.
 
 ### <a name="input-switching"></a>Cambio di input
 
@@ -180,5 +178,5 @@ La possibilità di entrare in realtà mista una seconda volta è semplice quanto
 * [Risoluzione dei problemi relativi all'installazione](installation_errors.md)
 * [Risoluzione dei problemi di installazione](set-up-questions.md)
 * [Esercitazione per la realtà mista](learn-mixed-reality.md)
-* [Funzionamento dei controller del movimento](controllers-in-wmr.md)
+* [Controller del movimento](controllers-in-wmr.md)
 * [Funzionamento del tracciamento dall'interno verso l'esterno](tracking-system.md)

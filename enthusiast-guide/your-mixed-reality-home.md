@@ -3,18 +3,18 @@ title: Home realtà mista
 description: Come navigare e teletrasportarsi all'interno della Home realtà mista di Windows, avviare app e giochi, personalizzare la Home page e modificare le impostazioni visive, audio e vocali.
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, Home, esplorazione, app, giochi
-ms.openlocfilehash: 6537bca13a7eb133d7f78e7922ea91304fdc90f2
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 177a9db67f304c163356a814b5c4d2e54ba4867d
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293091"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434621"
 ---
 # <a name="your-windows-mixed-reality-home"></a>Ambiente iniziale di Windows Mixed Reality
 
 ## <a name="what-is-the-windows-mixed-reality-home"></a>Che cos'è la Home realtà mista di Windows
 
-La realtà mista di Windows è il primo sistema operativo spaziale. Invece di usare una schermata piatta e un'interfaccia 2D, sfrutta la nostra capacità istintiva di spostarsi nello spazio tridimensionale. Ogni posizione ha uno scopo e il contenuto ha un contesto. Proprio come il PC inizia dall'interfaccia desktop e il telefono inizia con una schermata iniziale, la realtà mista di Windows inizia dalla Home realtà mista. Si tratta di un ambiente che è possibile esplorare e personalizzare per crearne uno personalizzato. Si tratta dell'area di disegno per le migliaia di app disponibili nella Microsoft Store. È possibile eseguire il multitasking con queste app come non è mai stato possibile prima, in 3D, in cui lo spazio è quasi illimitato.
+La realtà mista di Windows è il primo sistema operativo spaziale. Invece di usare una schermata piatta e un'interfaccia 2D, sfrutta la nostra capacità istintiva di spostarsi nello spazio tridimensionale. Ogni posizione ha uno scopo e il contenuto ha un contesto. Proprio come il PC inizia dall'interfaccia desktop e il telefono inizia con una schermata iniziale, la realtà mista di Windows inizia dalla Home realtà mista. Si tratta di un ambiente che è possibile esplorare e personalizzare per crearne uno personalizzato. Si tratta dell'area di disegno per le migliaia di app disponibili nella Microsoft Store o SteamVR. È possibile eseguire il multitasking con queste app come non è mai stato possibile prima, in 3D, in cui lo spazio è quasi illimitato.
 
 ## <a name="move-through-the-windows-mixed-reality-home"></a>Spostarsi attraverso la Home realtà mista di Windows
 
@@ -26,7 +26,7 @@ La realtà mista di Windows è il primo sistema operativo spaziale. Invece di us
   * Una funzionalità utile è detta "blocca all'app", che consente di passare alla posizione ideale per interagire con le finestre delle app. È sufficiente puntare l'arco di teleportazione a una finestra e lasciarla andare. Il sistema si posiziona automaticamente nella posizione ideale per sfruttare il contenuto di tale finestra di destinazione.
 * Esplorazione **virtuale:** È possibile spostarsi in modo continuo deselezionando il levetta (è necessario fare clic) sui controller di movimento o sul gamepad e quindi spostarsi nella direzione desiderata.
 
-## <a name="launch-an-app"></a>avviare un'app
+## <a name="launch-an-app"></a>Avviare un'app
 
 1. Dalla Home realtà mista di Windows, premere il pulsante Windows sul controller per avviare il menu Start.
 2. Selezionare l'app che si vuole avviare.
@@ -73,7 +73,7 @@ Passare a **impostazioni > ambiente di realtà misto > > Reimposta il** ![ Panne
 
 ## <a name="turn-off-the-boundary"></a>Disattivare il limite
 
-Passare al portale per la realtà mista di Windows e aprire il menu in alto a sinistra nella schermata. Selezionare **Esegui configurazione > limite della stanza**. Impostare l'interruttore su disattivato. Se si disattiva il limite, è necessario rimanere seduti alla propria scrivania.
+Passare al portale per la realtà mista e aprire il menu in alto a sinistra nella schermata. Selezionare **Esegui configurazione > limite della stanza**. Impostare l'interruttore su disattivato. Se si disattiva il limite, è necessario rimanere seduti alla propria scrivania.
 
 ## <a name="spatial-sound-in-the-windows-mixed-reality-home"></a>Audio spaziale nella Home realtà mista di Windows
 

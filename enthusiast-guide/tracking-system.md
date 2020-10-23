@@ -3,12 +3,12 @@ title: Funzionamento del tracciamento dall'interno verso l'esterno
 description: Informazioni sul sistema di rilevamento basato su fotocamera, interno esterno usato negli auricolari per la realtà mista di Windows.
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, Inside-out, Inside out, tracking, videocamera
-ms.openlocfilehash: a91b5fba399e9bb328fd579811a64aee03b49efd
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: eda1b323915788f72ae6f4a2efcf51850734eac9
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174335"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434598"
 ---
 # <a name="inside-out-tracking"></a>Rilevamento interno
 
@@ -72,6 +72,6 @@ Il sistema di rilevamento archivia alcuni dati dell'ambiente in modo da poter ri
 
 ## <a name="see-also"></a>Vedere anche
 * [Risoluzione dei problemi del sistema di rilevamento](tracking.md)
-* [Funzionamento dei controller del movimento](controller-in-wmr.md)
+* [Controller del movimento](controller-in-wmr.md)
 * [Ambiente iniziale di Windows Mixed Reality](your-mixed-reality-home.md)
 * [Uso di giochi e app in realtà mista di Windows](using-games-and-apps-in-windows-mixed-reality.md)

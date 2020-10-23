@@ -8,29 +8,20 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 360b8fea1744e2753aaa5310d79e82f978d92f67
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: d1cf8e56d19ef9ae62d9f83811e843f34b1c2d8c
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293112"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434583"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Controller di movimento in realtà mista di Windows
 
 I controller di movimento sono accessori hardware che consentono agli utenti di intervenire in realtà mista. Un vantaggio dei controller di movimento rispetto ai movimenti è che i controller hanno una posizione precisa nello spazio, consentendo un'interazione con granularità fine con gli oggetti digitali. Per gli auricolari a realtà mista di Windows, i controller di movimento sono il modo principale in cui gli utenti interverranno in tutto il mondo.
+
 I controller di movimento per la realtà mista di Windows offrono un tracking preciso e reattivo del movimento nel campo della visualizzazione usando i sensori nell'auricolare immersiva, ovvero non è necessario installare hardware nei muri dello spazio. Questi controller di movimento offriranno la stessa facilità di installazione e portabilità come gli auricolari immersivi a realtà mista di Windows.
 
-La realtà mista di Windows è progettata per funzionare meglio con i controller di movimento della realtà mista, che forniscono interazioni naturali e precise senza necessità di installare hardware sulle pareti.
-
 È anche possibile usare un controller Xbox, un mouse e una tastiera o aggirare [usando solo la voce](using-speech-in-wmr.md).
-
-**Funzionalità**
-
-* Rilevamento ottico
-* Trigger
-* Pulsante di cattura
-* Levetta
-* Touchpad
 
 ## <a name="motion-controller-setup"></a>Impostazione del controller di movimento
 
@@ -38,12 +29,12 @@ La maggior parte degli auricolari viene abbinata direttamente alla cuffia, ma al
 
 1. Avviare il **portale di realtà mista** con la cuffia connessa.  
 2. Nell'angolo in basso a sinistra selezionare **... > configurare i controller**.
-3. Inserire 2 batterie AA in ogni controller e attivare la modalità di associazione del controller (vedere le istruzioni nella sezione controller di movimento pair)
+3. Inserire 2 batterie AA in ogni controller e attivare la modalità di associazione del controller (vedere le istruzioni nella [sezione controller di movimento Pair](controllers-in-wmr.md#Pair-motion-controllers) )
 4. Seguire le istruzioni fornite sullo schermo.
 
 > [!NOTE]
-> * Per i controller che si abbinano direttamente al PC, è necessario inserirli in modalità di associazione attivando e quindi premendo il pulsante di associazione all'interno del compartmento della batteria fino a quando le luci iniziano a lampeggiare.  
-> * I controller di movimento supportano solo l'accoppiamento a un computer o a un PC alla volta. Se è necessario usarli con un'altra cuffia, è necessario eseguire il processo di associazione. Vedere [configurare la realtà mista di Windows](set-up-windows-mixed-reality.md)
+> * Per i controller che si abbinano direttamente al PC, è necessario inserirli in modalità di associazione attivando e quindi premendo il pulsante di associazione all'interno del compartmento della batteria fino a quando le luci iniziano a lampeggiare.
+> * I controller di movimento supportano solo l'associazione a un PC alla volta. Se è necessario usarli con un'altra cuffia, è necessario eseguire il processo di associazione. Vedere [configurare la realtà mista di Windows](set-up-windows-mixed-reality.md)
 
 [Ottenere assistenza per la connessione](wmr-setup-faq.md#my-motion-controllers-arent-working)
 
@@ -58,20 +49,29 @@ La maggior parte degli auricolari viene abbinata direttamente alla cuffia, ma al
 
 ## <a name="pair-motion-controllers"></a>Controller di movimento delle coppie
 
+Se si usa una cuffia che include un controller Bluetooth integrato, ad esempio Samsung Odyssey + o HP Reverb, i controller devono essere già abbinati. Tuttavia, è comunque possibile associare i controller usando l'app configura (dovrebbe essere già installata durante la configurazione di HMD. È anche possibile ottenerlo da Microsoft Store.
+
+### <a name="pair-motion-controllers-to-hmd"></a>Associare controller di movimento a HMD
+
 Accendere i controller premendo il pulsante Windows per 2 secondi fino alla luce dei LED.
 
 Rimuovere il coperchio della batteria dai controller e trovare il piccolo pulsante di associazione al bordo del controller. Premere questo pulsante per associarlo al PC.
+    ![Associazione del controller di movimento](images/connect_controller.png)
 
-Se si usa l'auricolare HP Reverb G2, i controller devono essere già abbinati. Tuttavia, è possibile associare i controller usando l'app di configurazione HP reverbi G2 VR (dovrebbe essere già installata durante la configurazione. È anche possibile ottenerlo da Microsoft Store. È anche possibile associare il controller a un PV aggiungendo un altro dispositivo Bluetooth:
+Avviare il **portale di realtà mista** con la cuffia connessa.  
+Nell'angolo in basso a sinistra selezionare **... > configurare i controller**.
+Seguire le istruzioni sullo schermo.
+
+### <a name="pair-motion-controllers-to-pc"></a>Associa controller di movimento al PC
+
+È possibile associare il controller a un PC aggiungendo un altro dispositivo Bluetooth.
+
+Accendere i controller e posizionarli in modalità di associazione come descritto in precedenza.
 
 * Passa a impostazioni computer
 * Dispositivo/Aggiungi Bluetooth o altro dispositivo.
 
-![Associazione del controller di movimento](images/connect_controller.png)
-
-È possibile che venga visualizzato un messaggio nell'angolo in basso a destra dello schermo quando il firmware sui controller viene aggiornato. Quando si verifica questa situazione, è possibile passare al passaggio successivo dell'esercitazione, ma non disattivare i controller.
-
-Al termine dell'aggiornamento del firmware del controller, verrà riavviato e riconnesso al PC host. I LED saranno solidi e luminosi.
+Una volta completata l'associazione, i LED saranno solidi e luminosi.
 
 ### <a name="common-issues"></a>Problemi comuni
 
@@ -129,8 +129,8 @@ Il controller comunica a chi sta facendo vibrando e lampeggiando le luci del LED
 * Se un headset immersivo è connesso al PC ed è disponibile un nuovo firmware del controller, il firmware verrà inserito automaticamente nei controller di movimento alla successiva accensione.
 * Gli aggiornamenti del firmware del controller sono indicati da un modello di illuminazione del quadrante dei LED in movimento circolare e da richiedere 1-2 minuti. Gli aggiornamenti del firmware possono richiedere talvolta più tempo, fino a 10 minuti, che potrebbero indicare una scarsa connettività Bluetooth o interferenze radio.
 * Nel caso in cui l'aggiornamento del firmware venga interrotto (spegnimento del controller o esaurimento della batteria) verrà effettuato un nuovo tentativo al successivo accensione.
-* Al termine dell'aggiornamento del firmware, i controller vengono riavviati e riconnessi. 
-* Entrambi i controller devono essere connessi adesso. (Controllare Bluetooth e altri dispositivi per gli elementi seguenti): ![Controller connessi](images/cyk-connected.jpg)
+* Al termine dell'aggiornamento del firmware, i controller vengono riavviati e riconnessi.
+* Entrambi i controller devono essere connessi adesso. Passare al portale per la realtà mista per verificare lo stato dei controller.
 * Verificare che i controller funzionino correttamente:
   * Avviare il **portale di realtà mista** e immettere la Home realtà mista.
   * Spostare i controller e verificare il rilevamento, i pulsanti di test e verificare il funzionamento della teleportazione. In caso contrario, vedere [la sezione risoluzione dei problemi del controller di movimento](motion-controller-problems.md)
@@ -155,4 +155,4 @@ Inviare commenti e suggerimenti nell'hub feedback, usando la categoria "Mixed Re
 * [Contattaci per assistenza](https://support.microsoft.com/contactus/)
 * [Risoluzione dei problemi](troubleshooting-windows-mixed-reality.md)
 
-Problemi con i controller di movimento? [Ottieni aiuto](using-wmr-faq.md#im-having-trouble-with-my-motion-controllers)
+Problemi con i controller di movimento? [Ottieni aiuto](motion-controller-problems.md)
