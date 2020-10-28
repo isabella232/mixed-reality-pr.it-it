@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, pre-vendita, ricerca, acquisto, prima dell'acquisto
 appliesto:
 - Windows 10
-ms.openlocfilehash: b665d0d84f511ae5e6383c5d4b5aadea400b2033
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: a38b6ed8625fbb419ad24f2e27acec881d7b85a7
+ms.sourcegitcommit: ea7d806c9aa88d1295493a25f47e58bb72a4000a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434616"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92907443"
 ---
 # <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -21,17 +21,17 @@ ms.locfileid: "92434616"
 
 ### <a name="where-can-i-buy-a-windows-mixed-reality-ready-pc-or-headset"></a>Dove è possibile acquistare un PC o un auricolare con la realtà mista di Windows?
 
-**Risposta rapida:** È possibile acquistare un PC o un auricolare pronto per la realtà mista di Windows presso un rivenditore locale approvato o in linea da un'ampia gamma di rivenditori, inclusa la Microsoft Store. Trova un PC o un headset di Windows misto reality pronto: <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
+**Risposta rapida:** È possibile acquistare un PC o un auricolare pronto per la realtà mista di Windows presso un rivenditore locale approvato o in linea da un'ampia gamma di rivenditori, inclusa la Microsoft Store. Trova un PC o un headset di Windows misto reality pronto: <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### <a name="where-can-i-try-windows-mixed-reality"></a>Dove posso provare la realtà mista di Windows?
 
-**Risposta rapida:** È possibile provare la realtà mista di Windows in un [reattore Microsoft](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) nelle vicinanze.  
-* Trova il reattore Microsoft locale: <https://www.microsoft.com/en-us/store/locations/all-locations>
+**Risposta rapida:** È possibile provare la realtà mista di Windows in un [reattore Microsoft](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) nelle vicinanze.
+
 * Trova eventi Microsoft Reactor in Meetup.com: <https://www.meetup.com/pro/microsoft-reactor>
 
 ### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>Quali produttori vendono i dispositivi di realtà mista di Windows?
 
-**Risposta rapida:** Gli auricolari e i controller di movimento sono attualmente disponibili da HP. Vedere <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
+**Risposta rapida:** Gli auricolari e i controller di movimento sono attualmente disponibili da HP. Vedere <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### <a name="where-can-i-buy-standalone-motion-controllers"></a>Dove è possibile acquistare I controller di movimento autonomi?
 
@@ -51,7 +51,7 @@ Altre informazioni sulla realtà mista sono disponibili qui: <https://docs.micro
 
 **Risposta rapida:** Gli auricolari per la realtà mista di Windows eseguono il rilevamento interno (le videocamere di rilevamento sono nella cuffia) e la configurazione plug-and-Play con Windows 10.
 
-**Altri dettagli**: la realtà mista di Windows offre diverse funzionalità, tra cui la semplice configurazione (senza bisogno di sensori esterni per tenere traccia dell'utente e dei controller), la scelta di auricolari per soddisfare la comodità e il punto di prezzo, le cuffie con risoluzioni competitive e infine un'esperienza utente univoca che offre un'interfaccia spaziale che consente di usare migliaia di app dal Microsoft Store.
+**Altri dettagli** : la realtà mista di Windows offre diverse funzionalità, tra cui la semplice configurazione (senza bisogno di sensori esterni per tenere traccia dell'utente e dei controller), la scelta di auricolari per soddisfare la comodità e il punto di prezzo, le cuffie con risoluzioni competitive e infine un'esperienza utente univoca che offre un'interfaccia spaziale che consente di usare migliaia di app dal Microsoft Store.
 
 ### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>La realtà mista significa che le fotocamere interne sono pass-through? È possibile sperimentare la realtà aumentata oltre alla realtà virtuale?
 
@@ -81,7 +81,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <table>
 <tr>
 <th style="width:25%"> Cuffie </th>
-<th style="width:15%"> Soluzione </th>
+<th style="width:15%"> Risoluzione </th>
 <th style="width:10%"> Schermo </th>
 <th style="width:10%"> Frequenza di aggiornamento </th>
 <th style="width:10%"> FOV </th>
@@ -99,7 +99,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Fino a 90Hz </td>
 <td> 100 ° </td>
 <td> Jack da 3,5 mm </td>
-<td> Nessuno </td>
+<td> nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.acer.com/ac/en/US/content/windows-mixed-reality-home">Acer</a> </td>
@@ -125,7 +125,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Fino a 90Hz </td>
 <td> 95 ° </td>
 <td> Jack da 3,5 mm </td>
-<td> Nessuno </td>
+<td> nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.asus.com/us/Headset/ASUS-Windows-Mixed-Reality-Headset-HC102/">ASU</a> </td>
@@ -138,7 +138,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Fino a 90Hz </td>
 <td> 105 ° </td>
 <td> Jack da 3,5 mm </td>
-<td> Nessuno </td>
+<td> nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.dell.com/en-us/shop/accessories/apd/536-bbbr?~ck=mn">Dell</a> </td>
@@ -151,7 +151,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Fino a 90Hz </td>
 <td> 105 ° </td>
 <td> Jack da 3,5 mm </td>
-<td> Nessuno </td>
+<td> nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="http://pr.fujitsu.com/jp/news/2017/10/17.html">Fujitsu</a> </td>
@@ -177,7 +177,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Fino a 90Hz </td>
 <td> 105 ° </td>
 <td> Jack da 3,5 mm </td>
-<td> Nessuno </td>
+<td> nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://store.hp.com/us/en/pdp/hp-windows-mixed-reality-headset-vr1000-100">HP</a> </td>
@@ -190,7 +190,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Fino a 90Hz </td>
 <td> 105 ° </td>
 <td> Jack da 3,5 mm </td>
-<td> Nessuno </td>
+<td> nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.lenovo.com/us/en/virtual-reality-and-smart-devices/virtual-and-augmented-reality/lenovo-explorer/Lenovo-Explorer/p/G10NREAG0A2">Lenovo</a> </td>
@@ -203,7 +203,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Fino a 90Hz </td>
 <td> 105 ° </td>
 <td> Jack da 3,5 mm </td>
-<td> Nessuno </td>
+<td> nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.medion.com/be/shop/monitoren-medion-erazer-mr-x1000-vr-headset-controllers-30023616a1.html">Medion</a> </td>
@@ -216,7 +216,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Fino a 90Hz </td>
 <td> 110 ° </td>
 <td> Integrato </td>
-<td> Nessuno </td>
+<td> nessuno </td>
 <td style="text-align: center;">Meccanico</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.samsung.com/us/computing/hmd/windows-mixed-reality/xe800zaa-hc1us-xe800zaa-hc1us/?redir=windows%20mixed%20reality">Samsung</a> </td>
@@ -242,7 +242,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Fino a 90Hz </td>
 <td> 105 ° </td>
 <td> Jack da 3,5 mm </td>
-<td> Nessuno </td>
+<td> nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="http://3glasses.com/goods.action?gid=30">3Glasses</a> </td>
@@ -257,7 +257,7 @@ Ai dettagli tecnici elencati sopra viene fatto riferimento dalle specifiche del 
 
 ### <a name="do-the-mixed-reality-headsets-have-ipd-adjustment"></a>Gli auricolari con realtà mista hanno una regolazione dpi?
 
-**Risposta rapida:** A seconda dell'auricolare, alcuni auricolari di realtà mista includono la regolazione di dpi meccanica. Altri auricolari includono la regolazione del software dpi, che migliora la distorsione dell'immagine e l'accuratezza della profondità in base al dpi. Gli utenti possono impostare il dpi personalizzato tramite **le impostazioni > realtà mista > visualizzare > la calibrazione**.
+**Risposta rapida:** A seconda dell'auricolare, alcuni auricolari di realtà mista includono la regolazione di dpi meccanica. Altri auricolari includono la regolazione del software dpi, che migliora la distorsione dell'immagine e l'accuratezza della profondità in base al dpi. Gli utenti possono impostare il dpi personalizzato tramite **le impostazioni > realtà mista > visualizzare > la calibrazione** .
 
 ### <a name="do-the-mixed-reality-headsets-have-eye-relief-adjustment"></a>Gli auricolari per la realtà mista hanno una regola di rilievo degli occhi?
 
