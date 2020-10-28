@@ -13,6 +13,6 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2020
 ms.locfileid: "92638498"
 ---
-# <a name="porting-overview"></a><span data-ttu-id="b9a53-104">Panoramica del porting</span><span class="sxs-lookup"><span data-stu-id="b9a53-104">Porting overview</span></span>
+# <a name="porting-overview"></a><span data-ttu-id="0a565-104">Panoramica del porting</span><span class="sxs-lookup"><span data-stu-id="0a565-104">Porting overview</span></span>
 
-<span data-ttu-id="b9a53-105">[//TODO: richiesta immagine intestazione]</span><span class="sxs-lookup"><span data-stu-id="b9a53-105">[//TODO: Need header image]</span></span>
+<span data-ttu-id="0a565-105">[//TODO: richiesta immagine intestazione]</span><span class="sxs-lookup"><span data-stu-id="0a565-105">[//TODO: Need header image]</span></span>
