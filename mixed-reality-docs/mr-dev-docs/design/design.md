@@ -7,12 +7,12 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: realtà mista, individuare, distribuire, indice, pagina di destinazione, progettazione, sviluppo, esercitazioni, app di esempio, nozioni di base, case study, risorse, guide pratiche per HoloLens, progetti open source, concetti di base, interazione
-ms.openlocfilehash: 947d9378cd65ceda11cf5dbb1d103a8f9bcc6e63
-ms.sourcegitcommit: 8aa3b0034f9f2ff0973d49061c669a82c2c8d7e6
+ms.openlocfilehash: 7333163a01496f41c4cb3cd98f54012e5c58a8d4
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92058585"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293123"
 ---
 # <a name="start-designing-and-prototyping"></a>Iniziare a progettare e a creare prototipi
 
@@ -32,9 +32,9 @@ Come tutti i percorsi, anche quello che riguarda la progettazione di applicazion
 
 |  Checkpoint  |  Risultato  |
 | --- | --- |
-| [Espandere il processo di progettazione](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Dare un'occhiata da vicino ai metodi, alle informazioni dettagliate e alla teoria di progettazione raccolti dagli sviluppatori di realtà mista all'interno e all'esterno di Microsoft |
+| [Espandere il processo di progettazione](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Una sguardo in prima persona al processo di progettazione della realtà mista realizzato da designer all'interno e all'esterno di Microsoft |
 | [Tipi di app di realtà mista](types-of-mixed-reality-apps.md) | Decidere in quale punto dello spettro della realtà mista si colloca l'esperienza dell'app |
-| [App Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Apprendere le nozioni di base relative alla progettazione dell'esperienza utente in realtà mista sperimentando in prima persona i comportamenti della realtà mista, i suggerimenti e i consigli per la creazione di straordinarie app HoloLens |
+| [App Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Apprendere le nozioni di base relative alla progettazione dell'esperienza utente in realtà mista sperimentando in prima persona i comportamenti della realtà mista, i suggerimenti e i consigli per la creazione di straordinarie app HoloLens (disponibile per il download da Microsoft Store in HoloLens 2) |
 
 ### <a name="2-core-concepts"></a>2. Concetti di base
 
@@ -46,7 +46,7 @@ Per lo sviluppo di app per VR o AR, esistono alcuni concetti fondamentali che si
 | --- | --- |
 | [Frame olografico](holographic-frame.md) | Comprendere il modo in cui gli utenti vedono il contenuto sovrapposto al mondo reale quando indossano i visori VR |
 | [Sistemi di coordinate](coordinate-systems.md) | Imparare a posizionare gli ologrammi in punti che siano significativi per l'utente, che si tratti di una stanza fisica o di un ambiente virtuale creato |
-| [Mapping spaziale](spatial-mapping.md) | Ancorare gli oggetti nel mondo dell'utente e sfruttare i segnali di profondità del mondo reale |
+| [Mapping spaziale](spatial-mapping.md) | Ancorare gli oggetti nel mondo dell'utente e sfruttare i vantaggi delle superfici fisiche del mondo reale |
 | [Considerazioni sul comfort](comfort.md) | Garantire il comfort e la sicurezza degli utenti creando e presentando contenuti immersivi in modo da simulare il mondo naturale |
 
 ### <a name="3-interaction-design"></a>3. Progettazione delle interazioni
