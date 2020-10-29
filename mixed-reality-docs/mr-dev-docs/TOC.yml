@@ -1,0 +1,12 @@
+- name: Benvenuti in Realtà mista
+  href: index.yml
+- name: Rilevazione
+  href: discover/toc.yml
+- name: Progettazione
+  href: design/toc.yml
+- name: Sviluppo
+  href: develop/toc.yml
+- name: Distribuire
+  href: distribute/toc.yml
+- name: Novità
+  href: whats-new/toc.yml
