@@ -1,5 +1,5 @@
 ---
-title: Installare il software di realtà mista di Windows
+title: Installare il software Windows Mixed Reality
 description: Dopo aver inserito l'auricolare della realtà mista di Windows, usare l'app portale per la realtà mista per iniziare e scaricare le funzionalità della realtà mista di Windows.
 author: hferrone
 ms.author: v-hferrone
@@ -8,14 +8,17 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, introduzione, configurazione, portale per realtà mista
 appliesto:
 - Windows 10
-ms.openlocfilehash: 5e04f29f834b2220f51f1748aa59e4188d8ad38d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b07e1a90247072952969cb2e2fc845bdb906bcae
+ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686532"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92915566"
 ---
-# <a name="install-windows-mixed-reality-software"></a>Installare il software di realtà mista di Windows
+# <a name="install-windows-mixed-reality-software"></a>Installare il software Windows Mixed Reality
+
+> [!div class="nextstepaction"]
+> [Ottenere il portale per la realtà mista](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab)
 
 ## <a name="launch-mixed-reality-portal"></a>Avviare il portale di realtà mista
 
@@ -92,4 +95,4 @@ Viene visualizzato il messaggio "preparazione della configurazione" sullo scherm
 * [Contattaci per assistenza](https://support.microsoft.com/contactus/)
 * [Risoluzione dei problemi di installazione](installation_errors.md)
 * [Risoluzione dei problemi di installazione](set-up-questions.md)
-* [Configurare la realtà mista di Windows](set-up-windows-mixed-reality.md)
+* [Configurare Windows Mixed Reality](set-up-windows-mixed-reality.md)
