@@ -8,28 +8,26 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 75d8ade12d5534a1eb86f36bcdd590539a6811b5
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+ms.openlocfilehash: a1ab7ae441796eafde9f085a744015c972cb4b6b
+ms.sourcegitcommit: 4cb579ac0413fc2dfad5da6506437246f6653926
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683177"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93036267"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Ottieni assistenza per la compatibilità dei PC in realtà mista di Windows
 
-Quando si configura la realtà mista di Windows o si esegue l'app di [controllo del PC Windows Mixed Reality](https://www.microsoft.com/p/windows-mixed-reality-pc-check/9nzvl19n7cnc?rtc=1#activetab=pivot:overviewtab) nel computer, si riceverà un report che indica se il PC è pronto per l'esecuzione. Di seguito sono riportati alcuni dettagli su ciò che è possibile vedere.
+Quando si configura la realtà mista di Windows o si esegue l'app di [controllo del PC Windows Mixed Reality](https://www.microsoft.com/p/windows-mixed-reality-pc-check/9nzvl19n7cnc?rtc=1#activetab=pivot:overviewtab) nel computer, si riceverà un report che indica se il PC è pronto per l'esecuzione. Sono stati suddivisi dettagli specifici sugli elementi che potrebbero essere visualizzati nelle sezioni riportate di seguito.
 
-Per assicurarsi che sia possibile eseguire la realtà mista, esaminare i [requisiti minimi per la compatibilità hardware del PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md).
+Prima di procedere, verificare che il computer soddisfi i [requisiti minimi per la compatibilità hardware del PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) per eseguire la realtà mista.
 
 ## <a name="youre-good-to-go"></a>Si è pronti per iniziare
 
-Ottime notizie: il PC può eseguire la realtà mista di Windows. Tuttavia, tenere presente che c'è ancora una variazione tra l'hardware e la configurazione del computer, quindi l'esperienza di realtà mista potrebbe non essere la stessa in tutti i PC.
+Ottime notizie, il PC può eseguire la realtà mista di Windows. Tenere presente che c'è ancora una variazione tra l'hardware e la configurazione del computer, quindi l'esperienza di realtà mista potrebbe non essere la stessa in tutti i PC.
 
 ## <a name="supports-some-features"></a>Supporta alcune funzionalità
 
-Il PC dovrebbe essere in grado di eseguire alcune esperienze di realtà miste di Windows, ma potrebbe non offrire la migliore esperienza possibile. La grafica potrebbe essere ritardata, alcune app e giochi potrebbero non funzionare correttamente e altri potrebbero non essere eseguiti. 
-
-Ecco i messaggi che possono essere visualizzati e le operazioni da eseguire:
+Il PC è in grado di eseguire alcune esperienze di realtà miste di Windows, ma potrebbe non offrire la migliore esperienza possibile. I possibili svantaggi includono la grafica in ritardo, i riscontri sulle prestazioni per app e giochi, con alcune applicazioni e giochi che non possono essere eseguiti. Sono stati elencati i messaggi che potrebbero essere visualizzati e le operazioni da eseguire:
 
 ### <a name="this-pc-has-an-integrated-graphics-card-with-single-channel-ram"></a>Questo PC ha una scheda grafica integrata con RAM a canale singolo
 
@@ -45,7 +43,7 @@ PCIe sta per il *componente periferico Interconnect Express* . Si tratta della c
 
 ### <a name="this-pcs-graphics-driver-might-not-work-well-with-windows-mixed-reality"></a>Il driver grafico di questo PC potrebbe non funzionare correttamente con la realtà mista di Windows
 
-Se si verificano problemi, provare a scaricare un nuovo driver grafico usando Windows Update ( **avvia > impostazioni > aggiorna & sicurezza > verificare la disponibilità di aggiornamenti** ) o andare al sito Web del produttore del PC o del produttore della scheda grafica.
+Provare a scaricare un nuovo driver grafico usando Windows Update selezionando **avvia > impostazioni > aggiorna & sicurezza > verificare la disponibilità di aggiornamenti** o andare al sito Web del produttore del PC o del produttore della scheda grafica.
 
 > [!div class="nextstepaction"]
 > [Verificare gli aggiornamenti](ms-settings:windowsupdate?activationSource=SMC-Article-4045777)
@@ -54,7 +52,7 @@ Se il tentativo non funziona, è necessario aggiungere una [scheda grafica compa
 
 ### <a name="this-pcs-processor-might-not-work-well-with-windows-mixed-reality"></a>Il processore di questo PC potrebbe non funzionare correttamente con la realtà mista di Windows
 
-Il processore di questo PC potrebbe non funzionare correttamente con la realtà mista di Windows, perché non ha un numero sufficiente di core. Se la realtà mista di Windows non viene eseguita correttamente, sostituire il processore con uno [compatibile](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) o passare a un [PC compatibile](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
+Il processore del PC potrebbe non funzionare correttamente con la realtà mista di Windows, perché non ha un numero sufficiente di core. Se la realtà mista di Windows non viene eseguita correttamente, sostituire il processore con uno [compatibile](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) o passare a un [PC compatibile](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
 
 ### <a name="this-pc-might-not-have-a-compatible-usb-configuration"></a>Il PC potrebbe non avere una configurazione USB compatibile
 
@@ -79,7 +77,7 @@ Bluetooth 4,0 è necessario per i controller di movimento della realtà mista su
 
 ### <a name="depending-on-your-headset-you-may-need-a-bluetooth-adapter-to-use-motion-controllers"></a>A seconda dell'auricolare, potrebbe essere necessario un adattatore Bluetooth per usare i controller di movimento
 
-Alcuni auricolari dispongono di Bluetooth integrato, in modo che i controller possano associarsi direttamente agli auricolari. Per usare i controller di movimento, altri richiedono una radio Bluetooth nel PC o un dongle separato. [Vedere gli adapter consigliati](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+Alcuni auricolari dispongono di Bluetooth integrato, quindi i controller possono associarsi direttamente agli auricolari. Per usare i controller di movimento, altri richiedono una radio Bluetooth nel PC o un dongle separato. Per ulteriori informazioni, [vedere la pagina adattatori consigliati](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) .
 
 ### <a name="this-pc-doesnt-have-a-self-powered-usb-port"></a>Il PC non dispone di una porta USB autonoma
 
@@ -91,7 +89,7 @@ Il PC dovrebbe funzionare, ma un processore Intel a prestazioni elevate fornirà
 
 ## <a name="cant-run-windows-mixed-reality"></a>Non è possibile eseguire la realtà mista di Windows
 
-Ecco i messaggi che possono essere visualizzati e le operazioni da eseguire:
+Se non è possibile eseguire la realtà mista di Windows, fare riferimento all'elenco dei messaggi che possono essere visualizzati e alle possibili soluzioni seguenti:
 
 ### <a name="this-pcs-graphics-card-wont-work-with-windows-mixed-reality"></a>La scheda grafica del PC non funzionerà con la realtà mista di Windows
 
@@ -99,7 +97,7 @@ La scheda grafica del PC non è compatibile con la realtà mista di Windows. È 
 
 ### <a name="this-pcs-graphics-driver-wont-work-with-windows-mixed-reality"></a>Il driver di grafica del PC non funzionerà con la realtà mista di Windows
 
-Il driver di grafica del PC non funzionerà con la realtà mista di Windows. Provare a scaricare un nuovo driver grafico usando Windows Update ( **avviare > impostazioni > aggiornare & sicurezza > verificare la disponibilità di aggiornamenti** ) o andare al sito Web del produttore del PC o del produttore della scheda grafica. 
+Il driver di grafica del PC non funzionerà con la realtà mista di Windows. Provare a scaricare un nuovo driver grafico usando Windows Update selezionando **avvia > impostazioni > aggiorna & sicurezza > verificare la disponibilità di aggiornamenti** o andare al sito Web del produttore del PC o del produttore della scheda grafica. 
 
 > [!div class="nextstepaction"]
 > [Verificare gli aggiornamenti](ms-settings:windowsupdate?activationSource=SMC-Article-4045777)
@@ -112,7 +110,7 @@ Il processore del PC non supporta le istruzioni AVX/POPCNT. Per eseguire la real
 
 ### <a name="this-pc-doesnt-have-enough-free-disk-space-to-run-windows-mixed-reality"></a>Il PC non dispone di spazio su disco sufficiente per eseguire la realtà mista di Windows
 
-La realtà mista di Windows richiede 10 GB di spazio libero su disco per l'installazione e prestazioni ottimali. Cancellare spazio nell'unità, quindi riprovare a eseguire l'installazione.
+La realtà mista di Windows richiede 10 GB di spazio libero su disco per l'installazione e prestazioni ottimali. Deselezionare uno spazio nell'unità e riprovare a eseguire la configurazione dall'inizio.
 
 ### <a name="this-pc-is-running-an-edition-of-windows-that-doesnt-support-windows-mixed-reality"></a>Questo PC esegue un'edizione di Windows che non supporta la realtà mista di Windows
 
@@ -142,7 +140,7 @@ Alcune configurazioni hardware possono causare problemi di prestazioni con la re
 > [!NOTE]
 > Se viene visualizzato il messaggio "questa configurazione hardware potrebbe funzionare con la realtà mista di Windows, ma non è ancora stata testata", potrebbe verificarsi alcuni problemi di prestazioni quando si esegue la realtà mista di Windows per sessioni lunghe.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Contattare la community](https://answers.microsoft.com)
 * [Contattaci per assistenza](https://support.microsoft.com/contactus/)
