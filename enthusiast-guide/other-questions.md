@@ -1,24 +1,25 @@
 ---
 title: Altre domande
-description: Risoluzione avanzata dei problemi di Windows Mixed Reality che va oltre la documentazione standard del supporto clienti.
+description: Ulteriori suggerimenti sulla risoluzione dei problemi di Windows Mixed Reality che vanno oltre la documentazione del supporto clienti standard.
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto, disinstallazione di realtà mista di Windows, lingue supportate
 appliesto:
 - Windows 10
-ms.openlocfilehash: a8a035a4d113a0a53f41079709660f65bfa278a0
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: aa61148a115ae295c1dc64b575a2fae7b0111470
+ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685821"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044463"
 ---
 # <a name="other-questions"></a>Altre domande
 
 ## <a name="my-graphics-driver-isnt-supported-im-getting-graphics-driver-failure-errors"></a>Il driver della grafica non è supportato (si verificano errori nel driver di grafica).
 
 Cercare ed eseguire "dxdiag":
+
 1.  Se il risultato è "renderer di base", il driver di grafica non è installato. Per risolvere il problema:
     * Passare a **Device Manager > azione > analizzare le modifiche apportate all'hardware** .
     * Utilizzare Windows Update per aggiornare il driver.
@@ -119,16 +120,16 @@ Per disinstallare la realtà mista di Windows usando i comandi seguenti:
 2. Nella casella di **ricerca** Digitare "regedit" e quindi selezionare "Sì".
 3. Rimuovere i valori del registro di sistema seguenti:
    <ul>
-    <li><b>HKEY_CURRENT_USER \software\microsoft\windows\currentversion\holographic</b>, quindi eliminare "FirstRunSucceeded".</li> 
-    <li><b>HKEY_CURRENT_USER \software\microsoft\windows\currentversion\holographic\speechandaudio</b>, quindi eliminare "PreferDesktopSpeaker" e "PreferDesktopMic".</li> 
-    <li><b>HKEY_CURRENT_USER \software\microsoft\ Speech_OneCore &gt; Settings\Holographic</b>, quindi eliminare "DisableSpeechInput". Nota: gli elementi del registro di sistema in HHKEY_CURRENT_USER devono essere eliminati per ogni account utente nel computer che ha utilizzato la realtà mista di Windows.</li> 
-    <li><b>HKEY_LOCAL_MACHINE \software\microsoft\windows\currentversion\perceptionsimulationextensions</b>, quindi eliminare "DeviceID" e "Mode".</li> 
-    <li><b>HKEY_CURRENT_USER \software\microsoft\windows\currentversion\holographic</b>, quindi eliminare "OnDeviceLearningCompleted".</li> 
+    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic</b>, quindi eliminare "FirstRunSucceeded".</li> 
+    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic\SpeechAndAudio</b>, quindi eliminare "PreferDesktopSpeaker" e "PreferDesktopMic".</li> 
+    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore&gt; Settings\Holographic</b>, quindi eliminare "DisableSpeechInput". Nota: gli elementi del registro di sistema in HHKEY_CURRENT_USER devono essere eliminati per ogni account utente nel computer che ha utilizzato la realtà mista di Windows.</li> 
+    <li><b>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\PerceptionSimulationExtensions</b>, quindi eliminare "DeviceID" e "Mode".</li> 
+    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic</b>, quindi eliminare "OnDeviceLearningCompleted".</li> 
    </ul>
 4. Rimuovere le chiavi del registro di sistema seguenti: <ul>
-   <li> <b>HKEY_CURRENT_USER \Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
-   <li> <b>HKEY_LOCAL_MACHINE \Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
-   <li> <b>HKEY_CURRENT_USER \Software\Microsoft\ Speech_OneCore \Settings\HolographicPreferences</b></li><br/></ul>
+   <li> <b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
+   <li> <b>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
+   <li> <b>HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore\Settings\HolographicPreferences</b></li><br/></ul>
 5. Chiudere l'editor del registro di sistema.
 6. Passare a **C:\Utenti\nome name\appdata\local\packages\ Microsoft.Windows.HolographicFirstRun_cw5n1h2txyewy \localstate** ed eliminare "RoomBounds.json". Ripetere questa operazione per ogni utente che ha utilizzato la realtà mista di Windows.
 7. Aprire il prompt dei comandi di amministrazione e passare a **C:\ProgramData\WindowsHolographicDevices\SpatialStore\HoloLensSensors** . Eliminare il contenuto della cartella "HeadTracking data", ma non la cartella stessa.

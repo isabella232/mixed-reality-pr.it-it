@@ -13,12 +13,12 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: e968b311ca93ccf3f197fbc4a6d2abec7284a686
-  ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+  ms.openlocfilehash: 7d5ba4ded77079858ef36c62a4c90e2fdd5794f5
+  ms.sourcegitcommit: 4cb579ac0413fc2dfad5da6506437246f6653926
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 10/03/2020
-  ms.locfileid: "91674795"
+  ms.lasthandoff: 10/30/2020
+  ms.locfileid: "93036277"
 highlightedContent:
   items:
   - title: Che cos'è Realtà mista?
@@ -42,9 +42,9 @@ highlightedContent:
   - title: Appassionati di VR
     itemType: how-to-guide
     url: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/
-  - title: Prova un'app di esempio
-    itemType: sample
-    url: develop/unity/samples.md
+  - title: Moduli di apprendimento su Realtà mista
+    itemType: learn
+    url: develop/mr-learning-overview.md
 productDirectory:
   title: Approfondimenti su Realtà mista
   summary: Qualunque sia il tuo ruolo, progettista, sviluppatore o professionista IT, ti offriamo il percorso adatto per iniziare a muovere i primi passi e imparare a correre.

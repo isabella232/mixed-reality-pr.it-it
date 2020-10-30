@@ -1,5 +1,5 @@
 ---
-title: Domande frequenti sull'uso della realtà mista di Windows
+title: Domande frequenti sull'uso di Windows Mixed Reality
 description: Risposte alle domande comuni quando si lavora con la realtà mista di Windows.
 author: hferrone
 ms.author: v-hferrone
@@ -8,14 +8,14 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 62b6b61f74abfd77ba61563639ff719576551f07
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: cf02ccfc92d80ee1d1a8f6ca3d4ab55650f4a62c
+ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685629"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044441"
 ---
-# <a name="using-windows-mixed-reality-faq"></a>Domande frequenti sull'uso della realtà mista di Windows
+# <a name="using-windows-mixed-reality-faq"></a>Domande frequenti sull'uso di Windows Mixed Reality
 
 Per informazioni sull'uso dell'auricolare immersiva mista di Windows, vedere questi argomenti per informazioni generali e risoluzione dei problemi.
 
@@ -95,7 +95,7 @@ Se il piano non viene visualizzato, ad esempio se si è certi di essere mobile, 
 
 ## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>Ho ricevuto un messaggio che dice di inserire e addebitare il mio PC. Perché?
 
-Se si usa un computer portatile, la realtà mista di Windows funziona meglio quando il PC è completamente addebitato e collegato. 
+Se si usa un computer portatile, la realtà mista di Windows funziona meglio quando il PC è completamente addebitato e collegato.
 
 ## <a name="how-do-i-uninstall-windows-mixed-reality"></a>Ricerca per categorie disinstallare la realtà mista di Windows?
 
@@ -106,7 +106,7 @@ Quando si è pronti per iniziare a usare nuovamente l'auricolare, collegarlo e i
 > [!NOTE]
 > Se viene visualizzato un messaggio indicante che non è stato possibile completare la rimozione della realtà mista di Windows, significa che alcuni file, incluse le informazioni sull'ambiente, potrebbero essere ancora presenti nel computer. Questo può causare problemi se si decide di reinstallare la realtà mista di Windows in un secondo momento.
 > 
-> Per informazioni su come rimuovere manualmente le informazioni sulla realtà mista di Windows rimanenti dal PC, vedere **[questo articolo](troubleshooting-windows-mixed-reality.md#how-to-uninstall-windows-mixed-reality)** . 
+> Per informazioni su come rimuovere manualmente le informazioni sulla realtà mista di Windows rimanenti dal PC, vedere **[questo articolo](installation_errors.md)** .
 
 ## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Il Wi-Fi rallenta quando si usa la realtà mista di Windows
 
@@ -132,6 +132,6 @@ Quando si usa l'auricolare, la realtà mista di Windows richiede un po' di tempo
 
 Serve ancora assistenza? Per la risoluzione avanzata dei problemi, vedere [questo articolo](troubleshooting-windows-mixed-reality.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Contattare la community](https://answers.microsoft.com)
 * [Contattaci per assistenza](https://support.microsoft.com/contactus/)
