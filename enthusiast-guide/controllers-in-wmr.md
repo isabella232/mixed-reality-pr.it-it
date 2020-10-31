@@ -8,14 +8,14 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: d1cf8e56d19ef9ae62d9f83811e843f34b1c2d8c
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: 892236c632d21620e48ced55d594bd059704a423
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434583"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132055"
 ---
-# <a name="motion-controllers-in-windows-mixed-reality"></a>Controller di movimento in realtà mista di Windows
+# <a name="motion-controllers-in-windows-mixed-reality"></a>Controller del movimento in Windows Mixed Reality
 
 I controller di movimento sono accessori hardware che consentono agli utenti di intervenire in realtà mista. Un vantaggio dei controller di movimento rispetto ai movimenti è che i controller hanno una posizione precisa nello spazio, consentendo un'interazione con granularità fine con gli oggetti digitali. Per gli auricolari a realtà mista di Windows, i controller di movimento sono il modo principale in cui gli utenti interverranno in tutto il mondo.
 
@@ -28,8 +28,8 @@ I controller di movimento per la realtà mista di Windows offrono un tracking pr
 La maggior parte degli auricolari viene abbinata direttamente alla cuffia, ma alcune cuffie iniziali richiedono che i controller di movimento siano abbinati al PC con Bluetooth 4,0. Quando si connette la cuffia per la prima volta, si passa all'attivazione dei controller di movimento durante l'installazione. Tuttavia, se è necessario riassociarli in un secondo momento, ecco come:
 
 1. Avviare il **portale di realtà mista** con la cuffia connessa.  
-2. Nell'angolo in basso a sinistra selezionare **... > configurare i controller**.
-3. Inserire 2 batterie AA in ogni controller e attivare la modalità di associazione del controller (vedere le istruzioni nella [sezione controller di movimento Pair](controllers-in-wmr.md#Pair-motion-controllers) )
+2. Nell'angolo in basso a sinistra selezionare **... > configurare i controller** .
+3. Inserire 2 batterie AA in ogni controller e attivare la modalità di associazione del controller (vedere le istruzioni nella [sezione controller di movimento Pair](controllers-in-wmr.md#pair-motion-controllers) )
 4. Seguire le istruzioni fornite sullo schermo.
 
 > [!NOTE]
@@ -45,7 +45,7 @@ La maggior parte degli auricolari viene abbinata direttamente alla cuffia, ma al
 > 
 > Se si dispone di un controller Xbox cablato, collegarlo al PC.
 > 
-> Alcuni giochi e app usano il controller Xbox in modo diverso rispetto a come viene usato in realtà mista. Per usare il controller per un gioco o un'app, selezionare **Usa come gamepad** sulla barra dell'app o "USA come gamepad". Per riportare il controller alla realtà mista, selezionare **Usa come gamepad**, nuovamente oppure "USA con lo sguardo".  
+> Alcuni giochi e app usano il controller Xbox in modo diverso rispetto a come viene usato in realtà mista. Per usare il controller per un gioco o un'app, selezionare **Usa come gamepad** sulla barra dell'app o "USA come gamepad". Per riportare il controller alla realtà mista, selezionare **Usa come gamepad** , nuovamente oppure "USA con lo sguardo".  
 
 ## <a name="pair-motion-controllers"></a>Controller di movimento delle coppie
 
@@ -59,7 +59,7 @@ Rimuovere il coperchio della batteria dai controller e trovare il piccolo pulsan
     ![Associazione del controller di movimento](images/connect_controller.png)
 
 Avviare il **portale di realtà mista** con la cuffia connessa.  
-Nell'angolo in basso a sinistra selezionare **... > configurare i controller**.
+Nell'angolo in basso a sinistra selezionare **... > configurare i controller** .
 Seguire le istruzioni sullo schermo.
 
 ### <a name="pair-motion-controllers-to-pc"></a>Associa controller di movimento al PC
@@ -95,8 +95,8 @@ Ecco come aggirare la realtà mista con i controller di movimento, un gamepad Xb
 | --- | --- | --- | --- |
 | Teletrasporto | Premere il levetta in poi, quindi puntare il controller in cui si desidera passare. Rilasciare il levetta. | Premere il levetta di sinistra in poi, quindi cercare la posizione desiderata. Rilasciare il levetta. | Fare clic e tenendo premuto il pulsante destro, quindi puntare il puntatore del mouse sul punto in cui si desidera passare. Rilasciare il pulsante. |
 | Select | Puntare il controller, quindi tirare il trigger o fare clic sul touchpad. | Osservare la destinazione, quindi premere. | Puntare il mouse, quindi fare clic con il pulsante sinistro del mouse. |
-| Aprire il menu Start | Premere il pulsante **Windows** . | Premere il pulsante **Xbox** . | Premere il **tasto logo Windows**. |
-| Uscire da un'app immersiva | Premere il pulsante **Windows** . Quindi selezionare **Home realtà mista** dal menu azioni rapide. | Premere il pulsante **Xbox** . Quindi selezionare il pulsante **Home realtà mista** nel menu azioni rapide. | Premere il **tasto logo Windows**. Quindi selezionare il pulsante **Home realtà mista** nel menu azioni rapide visualizzato. |
+| Aprire il menu Start | Premere il pulsante **Windows** . | Premere il pulsante **Xbox** . | Premere il **tasto logo Windows** . |
+| Uscire da un'app immersiva | Premere il pulsante **Windows** . Quindi selezionare **Home realtà mista** dal menu azioni rapide. | Premere il pulsante **Xbox** . Quindi selezionare il pulsante **Home realtà mista** nel menu azioni rapide. | Premere il **tasto logo Windows** . Quindi selezionare il pulsante **Home realtà mista** nel menu azioni rapide visualizzato. |
 | Ruota | Spostare il levetta a sinistra o a destra. | Spostare il lato destro verso sinistra o verso destra. | Non disponibile. |
 | Eseguire il backup | Spostare il levetta indietro. | Spostare il Left stick indietro. | Non disponibile. |
 | Camminata | Eseguire il push del levetta verso il basso e quindi premerlo nella direzione desiderata. | Premere il pulsante sinistro del mouse verso il basso e quindi premerlo nella direzione desiderata. | Non disponibile. |
@@ -151,8 +151,10 @@ Inviare commenti e suggerimenti nell'hub feedback, usando la categoria "Mixed Re
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Contattare la community](https://answers.microsoft.com)
-* [Contattaci per assistenza](https://support.microsoft.com/contactus/)
-* [Risoluzione dei problemi](troubleshooting-windows-mixed-reality.md)
+- [Controller HP in Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+- [Controller HP in Unreal](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+- [Contattare la community](https://answers.microsoft.com)
+- [Contattaci per assistenza](https://support.microsoft.com/contactus/)
+- [Risoluzione dei problemi](troubleshooting-windows-mixed-reality.md)
 
 Problemi con i controller di movimento? [Ottieni aiuto](motion-controller-problems.md)

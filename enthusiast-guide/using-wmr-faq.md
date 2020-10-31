@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: cf02ccfc92d80ee1d1a8f6ca3d4ab55650f4a62c
-ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
+ms.openlocfilehash: 9c31f772baa434a4c14157ae91c97454f1910a3c
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044441"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131825"
 ---
 # <a name="using-windows-mixed-reality-faq"></a>Domande frequenti sull'uso di Windows Mixed Reality
 
@@ -40,7 +40,7 @@ La realtà mista di Windows è progettata per riprodurre un suono attraverso l'a
 
 ## <a name="speech-commands-arent-working"></a>Comandi vocali non funzionanti
 
-Per usare i comandi vocali, le impostazioni relative alla lingua e al riconoscimento vocale del PC devono essere impostate su una [lingua e un'area di realtà mista di Windows supportata](wmr-setup-faq.md#what-languages-are-supported-in-windows-mixed-reality). Per verificare l'area geografica e la lingua di Windows, selezionare **impostazioni > ora & lingua > regione & lingua** . Per controllare la lingua vocale, selezionare **impostazioni > ora & lingua > voce** .
+Per usare i comandi vocali, le impostazioni relative alla lingua e al riconoscimento vocale del PC devono essere impostate su una [lingua e un'area di realtà mista di Windows supportata](other-questions.md#what-languages-are-supported-in-windows-mixed-reality). Per verificare l'area geografica e la lingua di Windows, selezionare **impostazioni > ora & lingua > regione & lingua** . Per controllare la lingua vocale, selezionare **impostazioni > ora & lingua > voce** .
 
 Se la cuffia non ha un microfono incorporato, alleghi le cuffie con un microfono alla cuffia o al PC. Per fare in modo che l'input Mic venga attivato automaticamente all'auricolare quando le cuffie sono direttamente connesse, selezionare **impostazioni > realtà mista > audio e sintesi vocale** e assicurarsi che **, quando si indossa la cuffia, passare alla cuffia microfonica** è accesa.
 
@@ -132,6 +132,6 @@ Quando si usa l'auricolare, la realtà mista di Windows richiede un po' di tempo
 
 Serve ancora assistenza? Per la risoluzione avanzata dei problemi, vedere [questo articolo](troubleshooting-windows-mixed-reality.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Contattare la community](https://answers.microsoft.com)
 * [Contattaci per assistenza](https://support.microsoft.com/contactus/)

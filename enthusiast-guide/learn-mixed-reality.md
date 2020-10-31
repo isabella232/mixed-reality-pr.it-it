@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, esercitazione, introduzione
 appliesto:
 - Windows 10
-ms.openlocfilehash: 94b23785861ad70630a14d26668164fdf699fcce
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: be85b88f356532df736d69f8319ca6a7337ae824
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92292982"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132065"
 ---
 # <a name="learn-mixed-reality"></a>Esercitazione per la realtà mista
 
@@ -45,7 +45,7 @@ Per altre informazioni su come aggirare la realtà mista con i controller di mov
 
 ## <a name="use-voice-commands-and-cortana-inside-of-the-windows-mixed-reality-home"></a>Usare i comandi vocali e Cortana all'interno della Home realtà mista di Windows
 
-[Informazioni sui comandi vocali che è possibile usare nella Home page della realtà mista di Windows](https://support.microsoft.com/en-us/help/4041322/windows-10-speech-in-windows-mixed-reality)
+[Informazioni sui comandi vocali che è possibile usare nella Home page della realtà mista di Windows](https://support.microsoft.com/help/4041322/windows-10-speech-in-windows-mixed-reality)
 
 ## <a name="show-a-preview-of-what-im-seeing-in-my-headset-on-my-desktops-screen"></a>Mostra un'anteprima di ciò che viene visualizzato nell'auricolare sulla schermata del desktop
 
@@ -54,5 +54,5 @@ Per altre informazioni su come aggirare la realtà mista con i controller di mov
 ## <a name="see-also"></a>Vedere anche
 
 * [Risoluzione dei problemi relativi all'installazione](installation_errors.md)
-* [Risoluzione dei problemi di installazione](set-up-questions.md)
+* [Risoluzione dei problemi di installazione](wmr-setup-faq.md)
 * [Home realtà mista](your-mixed-reality-home.md)

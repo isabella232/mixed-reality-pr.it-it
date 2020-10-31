@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto, disinstallazione di realtà mista di Windows, lingue supportate
 appliesto:
 - Windows 10
-ms.openlocfilehash: aa61148a115ae295c1dc64b575a2fae7b0111470
-ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
+ms.openlocfilehash: a49008cb7d6a51385cb0d4ece7dfae3018aefe88
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044463"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131865"
 ---
 # <a name="other-questions"></a>Altre domande
 
@@ -29,7 +29,7 @@ Cercare ed eseguire "dxdiag":
     * Utilizzare Windows Update per aggiornare il driver.
     * Se tale aggiornamento non risolve il problema, passare al sito Web del produttore e installare l'aggiornamento del driver più recente. 
     * Se un aggiornamento non è disponibile per la GPU, è possibile che WMR non sia supportato nel dispositivo. Se lo si ritiene necessario, contattare il [supporto tecnico](https://support.microsoft.com).
-    
+
 Se la configurazione della realtà mista di Windows indica che la scheda grafica non soddisfa i requisiti e si ritiene che sia presente, assicurarsi che l'auricolare sia collegato alla scheda corretta.
 
 ## <a name="my-samsung-odyssey-or-odyssey-headset-firmware-update-is-stuck"></a>L'aggiornamento del firmware di Samsung Odyssey o Odyssey + Headset è bloccato.
@@ -37,6 +37,7 @@ Se la configurazione della realtà mista di Windows indica che la scheda grafica
 Samsung è proprietario e pubblica gli aggiornamenti del firmware dell'auricolare forniti tramite le app complementari per dispositivi "Samsung HMD Odyssey Setup" e "Samsung HMD Odyssey + Setup". Per altri dettagli e per informazioni sui problemi di aggiornamento del firmware Samsung, contattare il servizio clienti Samsung.
 
 Se il processo di aggiornamento del firmware si blocca e non è stato trovato alcun progresso per più di cinque minuti:
+
 * Scollegare temporaneamente tutti gli altri dispositivi USB e riprovare a eseguire l'aggiornamento del firmware.
 * Connettere la cuffia Samsung a una porta USB 3,0 diversa nel PC.
 * Disabilitare e/o disinstallare tutti i software installati che potrebbero interferire con gli aggiornamenti del firmware, ad esempio AORUS App Center di gigabyte.
@@ -45,28 +46,32 @@ Se il processo di aggiornamento del firmware si blocca e non è stato trovato al
 ## <a name="how-do-i-access-my-pc-desktop-in-mixed-reality"></a>Ricerca per categorie accedere al desktop del PC in realtà mista?
 Avviare l'app desktop nel pulsante cuffia da **Windows > tutte le app > desktop** per accedere al desktop del PC in realtà mista.
 
-## <a name="how-can-i-see-multiple-monitors-in-mixed-reality"></a>Come è possibile visualizzare più monitor in realtà mista?
-Per impostazione predefinita, l'app desktop passa automaticamente a visualizzare il monitoraggio con lo stato attivo. Se si desidera visualizzare tutti i monitoraggi in realtà mista: 
+## <a name="how-can-i-see-multiple-monitors-in-mixed-reality"></a>Come è possibile visualizzare più monitoraggi in realtà mista
+
+Per impostazione predefinita, l'app desktop passa automaticamente a visualizzare il monitoraggio con lo stato attivo. Se si desidera visualizzare tutti i monitoraggi in realtà mista:
+
 * Fare clic sull'icona di monitoraggio nell'angolo superiore sinistro dell'app.
 * Disabilitare "cambia automaticamente il monitoraggio".
 * Selezionare il monitoraggio che si desidera visualizzare.
 * Avviare un'altra istanza dell'app desktop.
 * Selezionare il monitoraggio che si desidera visualizzare su tale istanza.
 * Ripetere la ripetizione per tutti i monitoraggi fisici.
-Si noti che sarà necessario selezionare nuovamente il monitoraggio da visualizzare in ogni app desktop ogni volta che si riavvia la realtà mista. 
+Si noti che sarà necessario selezionare nuovamente il monitoraggio da visualizzare in ogni app desktop ogni volta che si riavvia la realtà mista.
 
-## <a name="my-desktop-app-only-shows-a-black-screen"></a>My Desktop App Mostra solo una schermata nera.
+## <a name="my-desktop-app-only-shows-a-black-screen"></a>My Desktop App Mostra solo una schermata nera
+
 Se il PC ha una GPU NVIDIA ibrida, il problema potrebbe essere causato dal dispositivo Nvidia che esegue il runtimebroker.exe sulla GPU discreta invece che su quello integrato. Per risolvere il problema, seguire queste istruzioni in "[ricerca per categorie creare le impostazioni Optimus per un nuovo programma?](http://nvidia.custhelp.com/app/answers/detail/a_id/2615/~/how-do-i-customize-optimus-profiles-and-settings%3F)" per aggiungere C:\windows\system32\runtimebroker.exe e forzarlo per l'esecuzione nel processore "Integrated graphics". 
 
 ## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Il Wi-Fi rallenta quando si usa la realtà mista di Windows.
 
 Se si usa una connessione Wi-Fi a 2,4 GHz, i controller di movimento potrebbero rallentare la connessione Wi-Fi. Provare una delle operazioni seguenti:
-* Passare a una connessione Wi-Fi 5GHz, se disponibile. [Altre informazioni](https://support.microsoft.com/en-us/help/4000461)
-* Usare una scheda Bluetooth separata per connettere i controller di movimento al PC. Vedere [Adapter consigliati](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines).
+
+* Passare a una connessione Wi-Fi 5GHz, se disponibile. [Altre informazioni](https://support.microsoft.com/help/4000461)
+* Usare una scheda Bluetooth separata per connettere i controller di movimento al PC. Vedere [Adapter consigliati](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines).
 
 ## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>Ho ricevuto un messaggio che dice di inserire e addebitare il mio PC. Perché?
 
-Se si usa un computer portatile, la realtà mista di Windows funziona meglio quando il PC è completamente addebitato e collegato. 
+Se si usa un computer portatile, la realtà mista di Windows funziona meglio quando il PC è completamente addebitato e collegato.
 
 ## <a name="what-is-the-experience-options-setting"></a>Che cos'è l'impostazione opzioni esperienza?
 
@@ -75,9 +80,10 @@ Questa impostazione ( **impostazioni > realtà mista > visualizzare > opzioni di
 * 60Hz: imposta la frequenza di aggiornamento su 60Hz e disattiva determinate funzionalità, ad esempio acquisizione video e anteprima nel portale di realtà mista.
 * 90Hz: imposta la frequenza di aggiornamento su 90Hz.
 
-## <a name="what-languages-are-supported-in-windows-mixed-reality"></a>Quali lingue sono supportate in realtà mista di Windows?
+## <a name="what-languages-are-supported-in-windows-mixed-reality"></a>Linguaggi supportati nella realtà mista di Windows
 
 La realtà mista di Windows è disponibile nelle seguenti lingue:
+
 * Cinese semplificato (Cina)
 * Inglese (Australia)
 * Inglese (Canada)

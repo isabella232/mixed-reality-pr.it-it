@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, introduzione, configurazione, portale per realtà mista
 appliesto:
 - Windows 10
-ms.openlocfilehash: b07e1a90247072952969cb2e2fc845bdb906bcae
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: a9333e9f4d80ea73724e2530f2e94c3d0e32d0d4
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915566"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132105"
 ---
 # <a name="install-windows-mixed-reality-software"></a>Installare il software Windows Mixed Reality
 
@@ -51,9 +51,10 @@ Se si verificano problemi o si riceve un messaggio di errore durante l'uso del p
 
 **Verificare che il PC riconosca la cuffia**
 
-Se il riavvio non funziona, assicurarsi che la cuffia sia riconosciuta dal PC. Selezionare Start, digitare gestione dispositivi nella casella di ricerca e quindi selezionarlo nell'elenco. Espandere dispositivi di realtà mista e verificare se l'auricolare è elencato. 
+Se il riavvio non funziona, assicurarsi che la cuffia sia riconosciuta dal PC. Selezionare Start, digitare gestione dispositivi nella casella di ricerca e quindi selezionarlo nell'elenco. Espandere dispositivi di realtà mista e verificare se l'auricolare è elencato.
 
 Se non è elencato, provare a eseguire le operazioni seguenti:
+
 * Collegare la cuffia a porte diverse sul PC, se disponibile.
 * Verificare la disponibilità degli aggiornamenti software più recenti da [Windows Update](https://support.microsoft.com/help/12373).
 * Disinstallare e reinstallare la realtà mista di Windows:
@@ -91,8 +92,9 @@ Viene visualizzato il messaggio "preparazione della configurazione" sullo scherm
 ![Preparazione per la configurazione](images/1050px-gettingsetup.png)
 
 ## <a name="see-also"></a>Vedere anche
+
 * [Contattare la community](https://answers.microsoft.com)
 * [Contattaci per assistenza](https://support.microsoft.com/contactus/)
 * [Risoluzione dei problemi di installazione](installation_errors.md)
-* [Risoluzione dei problemi di installazione](set-up-questions.md)
+* [Risoluzione dei problemi di installazione](wmr-setup-faq.md)
 * [Configurare Windows Mixed Reality](set-up-windows-mixed-reality.md)

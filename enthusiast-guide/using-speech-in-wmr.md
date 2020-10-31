@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: cd7a1ba20fa695bf5c13adef301f63491b1ca586
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b65be6082967b49ee9d3c8b97cb0a18f9149a3ca
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685645"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131955"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Uso di sintesi vocale in realtà mista di Windows
 
@@ -36,7 +36,7 @@ Nella Home realtà mista di Windows, se viene visualizzata una parola, è spesso
 
 È possibile usarli in tutta la realtà mista di Windows per essere più veloci. Alcuni comandi usano il cursore dello sguardo, che verrà indicato con "Select".
 
-| Per | Pronuncia |
+| Operazione da eseguire | Pronuncia |
 | --- | --- |
 | Select | Pronunciare "Select" per visualizzare il cursore. Quindi, capovolgere l'intestazione per posizionare il cursore sull'elemento che si desidera selezionare e pronunciare di nuovo "Select". |
 | Aprire il menu Start | Vai a Start |
@@ -54,7 +54,7 @@ Nella Home realtà mista di Windows, se viene visualizzata una parola, è spesso
 
 Guardare un oggetto 3D, un ologramma o una finestra dell'app per usare questi comandi:
 
-| Per | Pronuncia |
+| Operazione da eseguire | Pronuncia |
 | --- | --- |
 | Rendilo più grande | Maggiore |
 | Dimensioni inferiori | Più piccoli |
@@ -66,7 +66,7 @@ Guardare un oggetto 3D, un ologramma o una finestra dell'app per usare questi co
 
 Osservare una finestra dell'app o un oggetto 3D per usare i comandi seguenti:
 
-| Per | Pronuncia |
+| Operazione da eseguire | Pronuncia |
 | --- | --- |
 | Chiudere un'app o un oggetto 3D | Chiudi |
 | Modificare un elemento (ridimensionare o spostare) | Regolare |
@@ -81,7 +81,7 @@ Osservare una finestra dell'app o un oggetto 3D per usare i comandi seguenti:
 
 Guardare il menu Start per usare i comandi seguenti:
 
-| Per | Pronuncia |
+| Operazione da eseguire | Pronuncia |
 | --- | --- |
 | Vai all'elenco tutte le app | Tutte le app |
 | Spostarsi verso l'alto o verso il basso all'avvio o a tutte le app | Pagina su/giù |
@@ -98,7 +98,7 @@ Guardare il menu Start per usare i comandi seguenti:
 
 Pronunciare "Hey Cortana", quindi usare uno dei comandi seguenti:
 
-| Per | Pronuncia |
+| Operazione da eseguire | Pronuncia |
 | --- | --- |
 | Scopri cosa puoi dire a Cortana | What can I say? |
 | Aumento/riduzione del volume | Attiva/Disattiva volume |
@@ -123,19 +123,20 @@ Pronunciare "Hey Cortana", quindi usare uno dei comandi seguenti:
 Passa alla modalità di dettatura ogni volta che la tastiera è attiva per un modo semplice di digitare. Selezionare microfono sulla tastiera o semplicemente "avvia la dettatura", per iniziare.
 
 > [!NOTE]
-> La tastiera della realtà mista è disponibile solo in inglese, ma è possibile utilizzare la dettatura in uno dei [linguaggi di realtà mista di Windows](wmr-setup-faq.md#what-languages-are-supported-in-windows-mixed-reality)supportati.
+> La tastiera della realtà mista è disponibile solo in inglese, ma è possibile utilizzare la dettatura in uno dei [linguaggi di realtà mista di Windows](other-questions.md#what-languages-are-supported-in-windows-mixed-reality)supportati.
 
-### <a name="keyboard-dictation-commands"></a>Comandi di dettatura tastiera 
+### <a name="keyboard-dictation-commands"></a>Comandi di dettatura tastiera
 
-| Per | Pronuncia |
+| Operazione da eseguire | Pronuncia |
 | --- | --- |
 | Chiudi la tastiera | Chiudi |
 | Inizia la dettatura | Inizia la dettatura |
 | Arresta la dettatura | Arresta la dettatura |
 | Elimina quanto appena detta | Elimina |
-| Selezionare tutti gli elementi nella casella di dettatura | Selezionare tutto |
+| Selezionare tutti gli elementi nella casella di dettatura | Seleziona tutto |
 
 ### <a name="punctuation"></a>Punteggiatura
+
 È necessario pronunciare i nomi della punteggiatura che si vuole usare. Ad esempio, si potrebbe dire "Hey **virgole** What are up to **Question Mark** ".
 
 Di seguito sono riportate le parole chiave di punteggiatura che è possibile usare:
@@ -146,12 +147,12 @@ Di seguito sono riportate le parole chiave di punteggiatura che è possibile usa
 * Apri virgolette, Chiudi virgolette
 * Hashtag, smiley/smiley, accigliato, Winky
 * Dollaro, percentuale
- 
-A volte è utile scrivere elementi come gli indirizzi di posta elettronica. Per example@outlook.com indicare, ad esempio, "E X a M P L E in Outlook dot com".
 
+A volte è utile scrivere elementi come gli indirizzi di posta elettronica. Per example@outlook.com indicare, ad esempio, "E X a M P L E in Outlook dot com".
 
 Per arrestare la dettatura, selezionare **fine** .
 
 ## <a name="see-also"></a>Vedere anche
+
 * [Contattare la community](https://answers.microsoft.com)
 * [Contattaci per assistenza](https://support.microsoft.com/contactus/)
