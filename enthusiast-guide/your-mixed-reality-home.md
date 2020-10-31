@@ -3,12 +3,12 @@ title: Home realtà mista
 description: Come navigare e teletrasportarsi all'interno della Home realtà mista di Windows, avviare app e giochi, personalizzare la Home page e modificare le impostazioni visive, audio e vocali.
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, Home, esplorazione, app, giochi
-ms.openlocfilehash: 177a9db67f304c163356a814b5c4d2e54ba4867d
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: ce4774f4a8f752d5e508d8daa66c050b2a6f28ca
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434621"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132115"
 ---
 # <a name="your-windows-mixed-reality-home"></a>Ambiente iniziale di Windows Mixed Reality
 
@@ -73,7 +73,7 @@ Passare a **impostazioni > ambiente di realtà misto > > Reimposta il** ![ Panne
 
 ## <a name="turn-off-the-boundary"></a>Disattivare il limite
 
-Passare al portale per la realtà mista e aprire il menu in alto a sinistra nella schermata. Selezionare **Esegui configurazione > limite della stanza**. Impostare l'interruttore su disattivato. Se si disattiva il limite, è necessario rimanere seduti alla propria scrivania.
+Passare al portale per la realtà mista e aprire il menu in alto a sinistra nella schermata. Selezionare **Esegui configurazione > limite della stanza** . Impostare l'interruttore su disattivato. Se si disattiva il limite, è necessario rimanere seduti alla propria scrivania.
 
 ## <a name="spatial-sound-in-the-windows-mixed-reality-home"></a>Audio spaziale nella Home realtà mista di Windows
 
@@ -84,7 +84,7 @@ La Home realtà mista di Windows include una simulazione di suoni spaziali in cu
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Risoluzione dei problemi relativi alla Home realtà mista di Windows](set-up-questions.md#my-controllers-arent-showing-in-my-windows-mixed-reality-home)
+* [Risoluzione dei problemi relativi alla Home realtà mista di Windows](wmr-setup-faq.md#my-motion-controllers-arent-working)
 * [Uso di giochi e app in realtà mista di Windows](using-games-and-apps-in-windows-mixed-reality.md)
 * [Funzionamento del tracciamento dall'interno verso l'esterno](tracking-system.md)
 * [Funzionamento dei controller del movimento](controllers-in-wmr.md)

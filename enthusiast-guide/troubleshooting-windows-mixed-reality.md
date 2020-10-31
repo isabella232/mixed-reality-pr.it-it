@@ -3,12 +3,12 @@ title: Risoluzione dei problemi relativi a realtà mista di Windows
 description: Risoluzione dei problemi di Windows Mixed Reality che va oltre la documentazione standard del supporto clienti.
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto
-ms.openlocfilehash: d51b5fab0759ab58b9becfd9287582d126bd629e
-ms.sourcegitcommit: e8b0c18c293d7ee22c06fd5ed8c9ab212e6205da
+ms.openlocfilehash: 75f1365b8cc0acc540db8932d6672ab11219749a
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93061839"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131945"
 ---
 # <a name="troubleshooting-windows-mixed-reality-faqs"></a>Risoluzione dei problemi relativi alla realtà mista di Windows (domande frequenti)
 
@@ -16,7 +16,7 @@ Quando si verificano problemi con qualsiasi elemento correlato all'hardware imme
 Vedere gli articoli seguenti per le aree in cui si è verificato il problema.
 
 - [Errori di installazione](installation_errors.md)
-- [Configurazione](set-up-questions.md)
+- [Configurazione](wmr-setup-faq.md)
 - [Limiti](boundary-questions.md)
 - [Connettività del visore VR](headset-connectivity.md)
 - [Display del visore VR](headset-display.md)
