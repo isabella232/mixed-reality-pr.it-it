@@ -7,12 +7,12 @@ ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realtà mista, sviluppo, guida introduttiva, nuovo progetto, conversione, funzionalità, fotocamera, simulazione, emulazione, documentazione
-ms.openlocfilehash: ed6e3482194b17ec3b6dfa2abe309f3519c64662
-ms.sourcegitcommit: 9ab467e36d7d9fad51b0e93a56038a6421a7b09d
+ms.openlocfilehash: 006814c17d7e2e7c343f28b83de845674c079a95
+ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91980312"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92638568"
 ---
 # <a name="unity-development-overview"></a>Panoramica dello sviluppo con Unity
 
@@ -21,7 +21,7 @@ ms.locfileid: "91980312"
 La soluzione più veloce per creare un'[app di realtà mista](../../design/app-views.md) in [Unity](https://unity.com) è rappresentata da Mixed Reality Toolkit. Se si usa Unity per la prima volta, prima di continuare è consigliabile esplorare le [esercitazioni](https://unity3d.com/learn/tutorials) di livello principiante nella piattaforma Unity Learn. È opportuno anche visitare l'[Asset Store](https://www.assetstore.unity3d.com/) completo e i [forum sulla realtà mista per Unity](https://forum.unity3d.com/forums/hololens.102/) per partecipare alla community online impegnata nella creazione di app di realtà mista. In questi ambienti si scoprono spesso risorse o soluzioni estremamente interessanti. Per iniziare a usare MRTK, passare ai checkpoint di sviluppo illustrati di seguito.
 
 > [!IMPORTANT]
-> Se si ha a disposizione un progetto Unity da trasferire in HoloLens 2, consultare le **[guide per il porting](../porting-apps/porting-guides.md)** . Sono disponibili guide per progetti che usano HTK, MRTK v1, SteamVR o che sono stati sviluppati per visori VR immersive, ad esempio Oculus Rift o HTC Vive.
+> Se si ha a disposizione un progetto Unity da trasferire in HoloLens 2, consultare le **[guide per il porting](../porting-apps/porting-overview.md)** . Sono disponibili guide per progetti che usano HTK, MRTK v1, SteamVR o che sono stati sviluppati per visori VR immersive, ad esempio Reverb G2, Oculus Rift e HTC Vive.
 
 ## <a name="development-checkpoints"></a>Checkpoint di sviluppo
 

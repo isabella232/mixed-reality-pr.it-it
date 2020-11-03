@@ -7,12 +7,12 @@ ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, beta, streaming, comunicazione remota, realtà mista, sviluppo, guida introduttiva, funzionalità, nuovo progetto, emulatore, documentazione, guide, caratteristiche, ologrammi, sviluppo di giochi
-ms.openlocfilehash: 3b5dc5d0ce1510405960c6effd653acc9c2588b2
-ms.sourcegitcommit: 9ab467e36d7d9fad51b0e93a56038a6421a7b09d
+ms.openlocfilehash: 25842fb8083b7757e73e7dbe7551b6bde9d8d95e
+ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91980342"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92638588"
 ---
 # <a name="unreal-development-overview"></a>Panoramica dello sviluppo con Unreal
 
@@ -27,6 +27,9 @@ Muovere i primi passi nelle <a href="https://docs.microsoft.com/windows/mixed-re
 * Supporto iniziale per Ancoraggi nello spazio di Azure
 
 Se non hai esperienza di sviluppo con Unreal, non iniziare alla cieca. Esplora la <a href="https://docs.unrealengine.com/GettingStarted/index.html" target="_blank">serie di esercitazioni</a> su Unreal per acquisire familiarità e cerca risorse e supporto nel <a href="https://www.unrealengine.com/marketplace/store" target="_blank">marketplace</a> di Unreal e nei <a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">forum</a> dedicati alla realtà mista. Queste risorse ti consentono di entrare in contatto con la community di sviluppatori e risolutori di problemi che operano oggi sul mercato della realtà mista.
+
+> [!IMPORTANT]
+> Se si ha a disposizione un progetto Unreal da trasferire in HoloLens 2 o un visore VR immersive come Reverb G2, consultare le **[guide per il porting](../porting-apps/porting-overview.md)** .
 
 ## <a name="development-checkpoints"></a>Checkpoint di sviluppo
 
