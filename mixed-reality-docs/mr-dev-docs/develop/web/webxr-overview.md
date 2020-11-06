@@ -6,22 +6,27 @@ ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
 keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, realtà mista di Windows, Web VR, Web XR, Web Mr, Web AR, 360, 360 video, 360 video, 360 foto, 360 foto, 360 contenuto, immersive Web, immersiveweb, IW
-ms.openlocfilehash: 01e6cd44e9879cd7fd9b11e178134eaf364cc53c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b72d4968e59e3e631138b1ecfd17ca9bbdd95c84
+ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91691189"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93416872"
 ---
 # <a name="webxr-overview"></a>Panoramica di WebXR
 
 ## <a name="what-is-webxr"></a>Informazioni su WebXR
 
-L' **API del dispositivo WebXR** consente di accedere ai dispositivi di **realtà virtuale (VR)** e **realtà aumentata (AR)** , inclusi i **sensori** e le **visualizzazioni montate** sul **Web** . L'API del dispositivo WebXR è attualmente disponibile in Microsoft Edge e Chrome versione 79 e versioni successive supporta WebXR come valore predefinito. È possibile controllare lo stato del supporto del browser più recente per WebXR in [caniuse.com](https://caniuse.com/#search=webxr).
+L' **API del dispositivo WebXR** consente di accedere ai dispositivi di **realtà virtuale (VR)** e **realtà aumentata (AR)** , inclusi i **sensori** e le **visualizzazioni montate** sul **Web**. L'API del dispositivo WebXR è attualmente disponibile in Microsoft Edge e Chrome versione 79 e versioni successive supporta WebXR come valore predefinito. È possibile controllare lo stato del supporto del browser più recente per WebXR in [caniuse.com](https://caniuse.com/#search=webxr).
 
 Scopri di più sulla [realtà mista di Windows e sul nuovo Microsoft Edge](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge) [nella sezione novità.](https://docs.microsoft.com/windows/mixed-reality/mrtk-porting-guide)
 
 ## <a name="viewing-webxr"></a>Visualizzazione di WebXR
+
+> [!IMPORTANT]
+> Microsoft Edge (legacy) supporta solo WebVR, un'API deprecata che non è disponibile nei browser correnti. Tuttavia, il nuovo **[browser Edge basato su cromo](../../whats-new/new-microsoft-edge.md)** supporta WebXR ed è disponibile per la creazione di prototipi VR in realtà mista di Windows. WebVR non sarà disponibile nel nuovo browser Edge basato su cromo.
+> 
+> Se si sta cercando un modo per eseguire il prototipo di WebXR in HoloLens 2 oggi, vedere la [realtà di Firefox](https://mixedreality.mozilla.org/firefox-reality/).
 
 Per verificare se il browser supporta WebXR, è possibile passare agli [esempi di WebXR](https://immersive-web.github.io/webxr-samples/) nel browser.
 
