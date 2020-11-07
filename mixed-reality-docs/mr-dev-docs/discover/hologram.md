@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, HoloLens, ologrammi, progettazione, interazione
-ms.openlocfilehash: f5c42d197316169a99e388e40bf97a03682630ce
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 5e0ef2768b6e79136f8144492d6825107a6ed88e
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690364"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340699"
 ---
 # <a name="what-is-a-hologram"></a>Che cos'è un ologramma?
 
@@ -73,7 +73,7 @@ Quando si dispone di una posizione specifica in cui si desidera un ologramma, è
 Alcuni ologrammi seguono invece l'utente. Gli ologrammi con tag vengono posizionati in relazione all'utente, indipendentemente dalla loro posizione. È anche possibile scegliere di portare un ologramma per un po' di tempo e quindi posizionarlo sul muro quando si accede a un'altra stanza.
 
 **Procedure consigliate**
-* Alcuni scenari possono richiedere che gli ologrammi rimangano facilmente individuabili o visibili nell'intera esperienza. Questo tipo di posizionamento è costituito da due approcci di alto livello. Chiameremo **"display-locked"** e **"Body-locked"** .
+* Alcuni scenari possono richiedere che gli ologrammi rimangano facilmente individuabili o visibili nell'intera esperienza. Questo tipo di posizionamento è costituito da due approcci di alto livello. Chiameremo **"display-locked"** e **"Body-locked"**.
    * Il contenuto con blocco visualizzato è posizionato "bloccato" sullo schermo del dispositivo. Si tratta di un'operazione complessa per diversi motivi, tra cui una sensazione insensata di "clingyness" che rende molti utenti frustrati e che desiderano "eliminarli". In generale, molti designer hanno ritenuto migliore di evitare il contenuto del blocco visualizzato.
    * L'approccio con blocco del corpo è molto più perdonabile. Il blocco del corpo si verifica quando un ologramma è vincolato al corpo dell'utente o al vettore dello sguardo, ma è posizionato nello spazio 3D intorno all'utente. Molte esperienze hanno adottato un comportamento di blocco del corpo in cui l'ologramma "segue" lo sguardo degli utenti, che consente all'utente di ruotare il corpo e spostarsi nello spazio senza perdere l'ologramma. L'integrazione di un ritardo aiuta il movimento dell'ologramma a essere più naturale. Ad esempio, un'interfaccia utente di base del sistema operativo Windows olografico usa una variante del blocco del corpo che segue lo sguardo dell'utente con un ritardo di tipo elastico e elastico mentre l'utente si attiva.
 * Posizionare l'ologramma a una distanza di visualizzazione comoda in genere a circa 1-2 metri di distanza dall'inizio.
@@ -126,6 +126,17 @@ Gli ologrammi possono anche essere bloccati da oggetti reali. Un carattere ologr
 
 ---
 
+## <a name="next-discovery-checkpoint"></a>Checkpoint individuazione successiva
+
+Se si sta seguendo il [percorso di individuazione](get-started-with-mr.md) , è possibile esplorare le nozioni di base della realtà mista. Da qui è possibile passare all'argomento di base successivo: 
+
+> [!div class="nextstepaction"]
+> [Una nuova visione del lavoro](https://dynamics.microsoft.com//mixed-reality/overview/)
+
+In alternativa, passare a:
+
+> [!div class="nextstepaction"]
+> [La ricerca di un'esperienza di uso del computer più personale](../out-of-scope/case-study-the-pursuit-of-more-personal-computing.md)
 
 ## <a name="see-also"></a>Vedere anche
 * [Espandere il processo di progettazione](case-study-expanding-the-design-process-for-mixed-reality.md)

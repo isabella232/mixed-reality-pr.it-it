@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: mapping spaziale, HoloLens, realtà mista, ricostruzione della superficie, mesh
-ms.openlocfilehash: 83c235cb7a5111be2b7e01d6c5864c1d06e9c6dc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6ca545327e412eaba5ee79959dfa9d01380b18c6
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686100"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340669"
 ---
 # <a name="spatial-mapping"></a>Mapping spaziale
 
@@ -119,7 +119,7 @@ Per generare comportamenti fisici realistici, è probabile che sia necessario es
 
 Sarà inoltre necessario considerare il modo in cui l' [esperienza di analisi](spatial-mapping.md#the-environment-scanning-experience) dell'applicazione influisce sulla simulazione fisica. In primo luogo, le superfici mancanti non si scontrano con niente. cosa accade quando la palla di gomma si sposta verso il basso nel corridoio e al termine del mondo noto? In secondo luogo, è necessario decidere se si continuerà a rispondere alle modifiche nell'ambiente nel tempo. In alcuni casi, è opportuno rispondere il più rapidamente possibile; Supponiamo che l'utente usi porte e mobili come barriere mobili in difesa contro una tempesta di frecce romane in arrivo. In altri casi, tuttavia, potrebbe essere necessario ignorare i nuovi aggiornamenti; guidare le auto sportive olografiche in tutto il circuito può non essere così divertente se il cane decide di sedersi al centro della traccia.
 
-### <a name="navigation"></a>Navigazione
+### <a name="navigation"></a>Spostamento
 
 Le applicazioni possono utilizzare i dati di mapping spaziale per concedere ai caratteri olografici (o agenti) la possibilità di esplorare il mondo reale nello stesso modo in cui una persona reale. Questo può contribuire a rafforzare la presenza di caratteri olografici limitando gli stessi allo stesso set di comportamenti naturali e noti di quelli dell'utente e dei relativi amici.
 
@@ -230,7 +230,7 @@ Le [prestazioni](../develop/platform-capabilities-and-apis/understanding-perform
 
 ## <a name="mesh-processing"></a>Elaborazione mesh
 
-Un'applicazione può voler eseguire [varie operazioni](spatial-mapping.md#mesh-processing) sulle mesh della superficie spaziale in base alle proprie esigenze. I dati relativi a indici e vertici forniti con ogni mesh di superficie spaziale utilizzano lo stesso layout familiare dei [vertex buffer e degli indici](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) utilizzati per il rendering di mesh triangolari in tutte le moderne API di rendering. Tuttavia, un fatto fondamentale da tenere presente è che i triangoli di mapping spaziale hanno un **ordine di avvolgimento in senso antiorario** . Ogni triangolo è rappresentato da tre indici di vertice nel buffer di indice della mesh e questi indici identificano i vertici del triangolo in un ordine **orario** , quando il triangolo viene visualizzato dal lato **anteriore** . Il lato anteriore (o esterno) delle mesh della superficie spaziale corrisponde a quello previsto per il lato anteriore (visibile) delle superfici reali.
+Un'applicazione può voler eseguire [varie operazioni](spatial-mapping.md#mesh-processing) sulle mesh della superficie spaziale in base alle proprie esigenze. I dati relativi a indici e vertici forniti con ogni mesh di superficie spaziale utilizzano lo stesso layout familiare dei [vertex buffer e degli indici](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) utilizzati per il rendering di mesh triangolari in tutte le moderne API di rendering. Tuttavia, un fatto fondamentale da tenere presente è che i triangoli di mapping spaziale hanno un **ordine di avvolgimento in senso antiorario**. Ogni triangolo è rappresentato da tre indici di vertice nel buffer di indice della mesh e questi indici identificano i vertici del triangolo in un ordine **orario** , quando il triangolo viene visualizzato dal lato **anteriore** . Il lato anteriore (o esterno) delle mesh della superficie spaziale corrisponde a quello previsto per il lato anteriore (visibile) delle superfici reali.
 
 Le applicazioni devono eseguire la semplificazione della rete solo se la densità del triangolo più grossolana fornita dall'osservatore di superficie è ancora insufficiente. questo lavoro è dispendioso dal punto di vista del calcolo ed è già eseguito dal runtime per generare i vari livelli di dettaglio forniti.
 
@@ -256,9 +256,9 @@ Ogni applicazione che usa il mapping spaziale deve considerare la possibilità d
 
 La natura di questa esperienza di analisi può variare significativamente a seconda delle esigenze di ogni applicazione, ma due principi principali dovrebbero guidare la progettazione.
 
-In primo luogo, **una comunicazione chiara con l'utente rappresenta il problema principale** . L'utente deve sempre tenere presente se i requisiti dell'applicazione vengono soddisfatti. Quando non vengono soddisfatte, dovrebbe essere immediatamente chiaro all'utente perché questo è così e dovrebbe essere portato rapidamente a intraprendere l'azione appropriata.
+In primo luogo, **una comunicazione chiara con l'utente rappresenta il problema principale**. L'utente deve sempre tenere presente se i requisiti dell'applicazione vengono soddisfatti. Quando non vengono soddisfatte, dovrebbe essere immediatamente chiaro all'utente perché questo è così e dovrebbe essere portato rapidamente a intraprendere l'azione appropriata.
 
-In secondo luogo, **le applicazioni devono provare a trovare un equilibrio tra efficienza e affidabilità** . Quando è possibile eseguire questa operazione in modo **affidabile** , le applicazioni devono analizzare automaticamente i dati del mapping spaziale per salvare l'ora utente. Quando non è possibile eseguire questa operazione in modo affidabile, le applicazioni devono invece consentire all'utente di fornire rapidamente all'applicazione le informazioni aggiuntive necessarie.
+In secondo luogo, **le applicazioni devono provare a trovare un equilibrio tra efficienza e affidabilità**. Quando è possibile eseguire questa operazione in modo **affidabile** , le applicazioni devono analizzare automaticamente i dati del mapping spaziale per salvare l'ora utente. Quando non è possibile eseguire questa operazione in modo affidabile, le applicazioni devono invece consentire all'utente di fornire rapidamente all'applicazione le informazioni aggiuntive necessarie.
 
 Per semplificare la progettazione dell'esperienza di analisi corretta, considerare quali delle seguenti possibilità sono applicabili all'applicazione:
 
@@ -368,6 +368,13 @@ Di seguito sono riportati alcuni esempi di diversi tipi di elaborazione di mesh 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 * Affinché le mesh della superficie siano orientate correttamente, ogni GameObject deve essere attivo prima di essere inviato al SurfaceObserver per costruire la mesh. In caso contrario, le maglie vengono visualizzate nello spazio, ma ruotate a angoli strani.
 * Il GameObject che esegue lo script che comunica con il SurfaceObserver deve essere impostato sull'origine. In caso contrario, tutte le GameObject create e inviate al SurfaceObserver per la costruzione delle mesh avranno un offset uguale all'offset dell'oggetto del gioco padre. In questo modo, le mesh possono visualizzare diversi metri che rendono molto difficile eseguire il debug di ciò che accade.
+
+## <a name="next-discovery-checkpoint"></a>Checkpoint individuazione successiva
+
+Se si sta seguendo il [percorso di individuazione](../discover/get-started-with-mr.md) , è possibile esplorare le nozioni di base della realtà mista. Da qui è possibile passare all'argomento di base successivo: 
+
+> [!div class="nextstepaction"]
+> [Suggerire la scala di un oggetto (scala)](../design/scale.md)
 
 ## <a name="see-also"></a>Vedere anche
 * [Sistemi di coordinate](coordinate-systems.md)

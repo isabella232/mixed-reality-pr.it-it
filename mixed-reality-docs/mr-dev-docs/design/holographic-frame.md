@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
 keywords: HoloLens, realtà mista di Windows, frame olografico, campo di visualizzazione
-ms.openlocfilehash: 516d9255fbc8067f42e17125d41240c9ba49a33b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 649cacfaf40f226a84f1b9b928cb47e468f3f146
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686780"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340639"
 ---
 # <a name="holographic-frame"></a>Frame olografico
 
@@ -21,7 +21,7 @@ Gli utenti vedono il mondo della realtà mista attraverso un riquadro di visuali
 
 Spesso gli sviluppatori hanno la necessità di limitare l'ambito della propria esperienza a ciò che l'utente può visualizzare immediatamente, sacrificando la scalabilità reale per garantire che l'utente visualizzi un oggetto nel suo complesso. Analogamente, le finestre di progettazione con applicazioni complesse spesso sovraccaricano il frame olografico con contenuto, che sovraccarica gli utenti con interazioni complesse e interfacce ingombranti. I progettisti che creano contenuto di realtà mista non devono limitare la loro esperienza a direttamente davanti all'utente e all'interno della loro immediata visualizzazione. Se il mondo fisico intorno all'utente è mappato, tutte queste superfici dovrebbero essere considerate come un'area di disegno potenziale per il contenuto digitale e le interazioni. La corretta progettazione di interazioni e contenuto all'interno di un'esperienza deve incoraggiare l'utente a spostarsi nello spazio, indirizzando la loro attenzione ai contenuti chiave e aiutando a vedere il potenziale completo della realtà mista.
 
-Forse la tecnica più importante per incoraggiare lo spostamento e l'esplorazione all'interno di un'app è **consentire agli utenti di adattarsi all'esperienza** . Fornire agli utenti un breve periodo di tempo "senza attività" con il dispositivo. Questa operazione può essere semplice quanto inserire un oggetto nello spazio e consentire agli utenti di spostarsi all'interno o raccontare un'introduzione all'esperienza. Questa volta dovrebbe essere privo di attività critiche o di movimenti specifici, ad esempio l'uso di un tocco aereo, invece lo scopo di consentire agli utenti di adattarsi alla visualizzazione del contenuto attraverso il dispositivo prima di richiedere interattività o avanzare attraverso le fasi dell'applicazione. Se è la prima volta che si tratta di un utente con il dispositivo, questo è particolarmente importante in quanto si familiarizzano con la visualizzazione dei contenuti attraverso la cornice olografica e la natura degli ologrammi.
+Forse la tecnica più importante per incoraggiare lo spostamento e l'esplorazione all'interno di un'app è **consentire agli utenti di adattarsi all'esperienza**. Fornire agli utenti un breve periodo di tempo "senza attività" con il dispositivo. Questa operazione può essere semplice quanto inserire un oggetto nello spazio e consentire agli utenti di spostarsi all'interno o raccontare un'introduzione all'esperienza. Questa volta dovrebbe essere privo di attività critiche o di movimenti specifici, ad esempio l'uso di un tocco aereo, invece lo scopo di consentire agli utenti di adattarsi alla visualizzazione del contenuto attraverso il dispositivo prima di richiedere interattività o avanzare attraverso le fasi dell'applicazione. Se è la prima volta che si tratta di un utente con il dispositivo, questo è particolarmente importante in quanto si familiarizzano con la visualizzazione dei contenuti attraverso la cornice olografica e la natura degli ologrammi.
 
 ### <a name="large-objects"></a>Oggetti di grandi dimensioni
 
@@ -139,9 +139,16 @@ Come esperienza immersiva, questi utenti erano invitati a cercare, spostando il 
 
 La rappresentazione realistica di Buzz ha fornito un punto focale potente, completando tecniche sottili per trasformare il Buzz verso l'utente come se fosse presente, parlando con te. Man mano che l'utente si sposta sull'esperienza, Buzz si sposta verso una soglia prima di tornare a uno stato neutro se l'utente si sposta troppo oltre la periferia. Se l'utente ha l'aspetto di Buzz completamente (ad esempio, per esaminare qualcosa altrove nella scena), quindi torna a Buzz, la posizione direzionale dell'Assistente vocale sarà ancora una volta incentrata sull'utente. Le tecniche come questa forniscono un potente senso di immersione e creano un punto focale all'interno del frame olografico, riducendo lo spostamento di un'intestazione e la promozione della [comodità degli utenti](comfort.md).
 
+## <a name="next-discovery-checkpoint"></a>Checkpoint individuazione successiva
+
+Se si sta seguendo il [percorso di individuazione](../discover/get-started-with-mr.md) , è possibile esplorare le nozioni di base della realtà mista. Da qui è possibile passare all'argomento di base successivo: 
+
+> [!div class="nextstepaction"]
+> [Far sembrare reali gli oggetti olografici (mapping spaziale)](../design/spatial-mapping.md)
+
 ## <a name="see-also"></a>Vedere anche
 * [Interazioni istintive](interaction-fundamentals.md)
 * [Comodità](comfort.md)
-* [Scalabilità](scale.md)
+* [Ridimensionamento](scale.md)
 * [Puntamento con la testa e attesa](gaze-and-dwell.md)
 * [Stabilità degli ologrammi](../develop/platform-capabilities-and-apis/hologram-stability.md)

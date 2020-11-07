@@ -6,12 +6,12 @@ ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, stile, progettazione
-ms.openlocfilehash: a9a02d681986df3d73c7990fc975e659e5326981
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 7d35da2d86d8d3b7f444974d87e5aa10e58ed2c8
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684013"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340659"
 ---
 # <a name="scale"></a>Scalabilità
 
@@ -79,6 +79,18 @@ Questa operazione può tuttavia creare alcuni artefatti possibili nell'esperienz
 <br>
 
 ---
+
+## <a name="next-discovery-checkpoint"></a>Checkpoint individuazione successiva
+
+Se si sta seguendo il [percorso di individuazione](../discover/get-started-with-mr.md) che è stato definito, si è alla fine dell'incursione iniziale in fondazioni di realtà miste. È possibile verificare quali partner del settore stanno facendo con la realtà mista nel mondo reale: 
+
+> [!div class="nextstepaction"]
+> [Esempi di come i partner di settore usano la realtà mista](../discover/get-started-with-mr.md#see-how-industry-partners-are-using-mixed-reality)
+
+In alternativa, proseguire con il percorso di progettazione:
+
+> [!div class="nextstepaction"]
+> [Inizia il tuo percorso di progettazione](../design/design.md)
 
 ## <a name="see-also"></a>Vedere anche
 * [Colore, luce e materiali](../color,-light-and-materials.md)

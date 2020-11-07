@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, HoloLens, case study, visione, scenari
-ms.openlocfilehash: 9e142d72866079e34e6f4a8df78b79d6f846275e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: e08026dbb490f8581118b1bf6351231eeffba92a
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687157"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340679"
 ---
 # <a name="case-study---the-pursuit-of-more-personal-computing"></a>Case Study: ricerca di più personal computing
 
@@ -148,14 +148,26 @@ L'intrattenimento è in molti modi per eseguire il push dei limiti della realtà
 
 ## <a name="start-building-today"></a>Inizia subito a sviluppare
 
-È difficile dire quale sarà il futuro della realtà mista per gli utenti, ma concentrarsi sui problemi specifici, acquisire dimestichezza con l'hardware reale e **sperimentare *oggi* con l'intersezione tra la realtà mista, la voce e l'intelligenza artificiale è fondamentale** . Microsoft sta iniziando a usare la realtà mista, ma l'apprendimento dei successi realizzati dalle aziende oggi ti aiuterà a creare le esperienze di domani.
+È difficile dire quale sarà il futuro della realtà mista per gli utenti, ma concentrarsi sui problemi specifici, acquisire dimestichezza con l'hardware reale e **sperimentare *oggi* con l'intersezione tra la realtà mista, la voce e l'intelligenza artificiale è fondamentale**. Microsoft sta iniziando a usare la realtà mista, ma l'apprendimento dei successi realizzati dalle aziende oggi ti aiuterà a creare le esperienze di domani.
+
+## <a name="next-discovery-checkpoint"></a>Checkpoint individuazione successiva
+
+Se si sta seguendo il [percorso di individuazione](../discover/get-started-with-mr.md) , è possibile esplorare le nozioni di base della realtà mista. Da qui è possibile passare all'argomento di base successivo: 
+
+> [!div class="nextstepaction"]
+> [Coinvolgente, ergonomico, istintivo e senza cavi](https://www.microsoft.com//hololens/hardware)
+
+In alternativa, passare all'esperienza di base per realtà mista:
+
+> [!div class="nextstepaction"]
+> [Fare in modo che l'utente possa operare comodamente (comfort)](../design/comfort.md)
 
 ## <a name="about-the-author"></a>Informazioni sull'autore
 
 <table style="border-collapse:collapse">
 <tr>
 <td style="border-style: none" width="60" padding-left="0px"><img alt="Picture of Mark Vitazko" width="60" height="60" src="images/mark-vitazko.jpg"></td>
-<td style="border-style: none"><b>Contrassegnare Vitazko</b><br>Progettazione UX @Microsoft</td>
+<td style="border-style: none"><b>Contrassegnare Vitazko</b><br>Designer di esperienza utente @Microsoft</td>
 </tr>
 </table>
  
