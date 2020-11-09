@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 04/08/2018
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, processi, case study
-ms.openlocfilehash: ee6bf2ad9f76e25c678458ca00505a95b406bfc6
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: f08115879d09d0be7ef8cae12ea0a4c15991a576
+ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293208"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94386247"
 ---
 # <a name="thinking-differently-for-mixed-reality"></a>Pensare in modo diverso per realtà mista
 Quando Microsoft ha lanciato il HoloLens (1st Gen) a un pubblico di sviluppatori ansiosi di 2016, il team ha già collaborato con gli studi all'interno e all'esterno di Microsoft per creare le esperienze di avvio del dispositivo. Questi team hanno imparato con la pratica, scoprendo sia le opportunità che le problematiche correlate al nuovo settore della progettazione per la realtà mista.
@@ -127,6 +127,13 @@ Le forniture di arte semplici e convenienti sono fondamentali per fornire ai mem
 * Spago
 * Matite
 * Sharpies
+
+## <a name="next-discovery-checkpoint"></a>Checkpoint individuazione successiva
+
+Se si sta seguendo il [percorso di individuazione](get-started-with-mr.md) , è possibile esplorare le nozioni di base della realtà mista. Da qui è possibile passare all'argomento di base successivo: 
+
+> [!div class="nextstepaction"]
+> [Comodità utente](../design/comfort.md)
 
 ## <a name="see-also"></a>Vedere anche
 * [Case Study: il primo anno del team di progettazione di HoloLens](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)

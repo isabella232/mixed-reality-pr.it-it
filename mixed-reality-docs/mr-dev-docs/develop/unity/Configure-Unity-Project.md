@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, realtà mista, sviluppo, Guida introduttiva, nuovo progetto
-ms.openlocfilehash: 3ddca223df94f4aa748ee510c3198389acecdedc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f1465dcb31718b9d3faeb64d24e33d9f9ffeb7cc
+ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683256"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94386217"
 ---
 # <a name="configure-a-new-unity-project-for-windows-mixed-reality"></a>Configurare un nuovo progetto Unity per la realtà mista di Windows 
 
@@ -19,7 +19,7 @@ ms.locfileid: "91683256"
 
 La realtà mista di Windows (WMR) è una piattaforma Microsoft introdotta come parte del sistema operativo Windows 10. La piattaforma WMR consente di creare applicazioni che eseguono il rendering di contenuto digitale su dispositivi di visualizzazione olografici e VR.
 
-Quando si configura per WMR, è possibile eseguire due percorsi. La prima opzione consiste nell'installare il [Toolkit di realtà mista](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) (MRTK) V2, che configurerà automaticamente l'ambiente WMR. La seconda opzione consiste nel modificare manualmente alcune impostazioni di Unity in modo da ottenere il rollup con WMR. 
+Quando si configura per WMR, è possibile eseguire due percorsi. La prima opzione consiste nell'installare il [Toolkit di realtà mista (MRTK)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html), che configurerà automaticamente l'ambiente WMR. La seconda opzione consiste nel modificare manualmente alcune impostazioni di Unity in modo da ottenere il rollup con WMR. 
 
 > [!NOTE]
 > È sempre possibile importare MRTK in un secondo momento, quindi non è necessario prima di tutto procedere con la route manuale.
@@ -36,7 +36,7 @@ La prima impostazione che è necessario modificare per WMR è la piattaforma del
 5. Imposta **tipo di compilazione** su **D3D**
 6. Impostare **UWP SDK** sull' **ultima versione installata**
 
-![Impostazioni di Unity XR](images/unity-uwp-settings.png)<br>
+<img src="images/unity-uwp-settings.png" width="550px" alt="Unity XR Settings">
 *Impostazioni di Unity XR*
 
 Quando la piattaforma è configurata correttamente, è necessario informare Unity che l'app deve creare una [visualizzazione immersiva](../../design/app-views.md) invece di una visualizzazione 2D quando viene esportata:
@@ -50,7 +50,7 @@ Quando la piattaforma è configurata correttamente, è necessario informare Unit
 
 ### <a name="updating-the-manifest"></a>Aggiornamento del manifesto
 
-L'app ora può gestire il rendering olografico e l'input spaziale. Tuttavia, l'app deve dichiarare le funzionalità appropriate nel manifesto per sfruttare le funzionalità specifiche. È possibile trovare le funzionalità di progetto passando a **Impostazioni lettore > impostazioni per piattaforma UWP (Universal Windows Platform) > impostazioni di pubblicazione > funzionalità** . 
+L'app ora può gestire il rendering olografico e l'input spaziale. Tuttavia, l'app deve dichiarare le funzionalità appropriate nel manifesto per sfruttare le funzionalità specifiche. È possibile trovare le funzionalità di progetto passando a **Impostazioni lettore > impostazioni per piattaforma UWP (Universal Windows Platform) > impostazioni di pubblicazione > funzionalità**. 
 
 È consigliabile fare in modo che le dichiarazioni di manifesto in Unity vengano incluse in tutti i progetti futuri esportati. Le funzionalità applicabili per l'abilitazione di API Unity comunemente usate per la realtà mista sono:
 
@@ -66,7 +66,7 @@ L'app ora può gestire il rendering olografico e l'input spaziale. Tuttavia, l'a
 
 HoloLens dispone di una GPU di classe mobile. Se l'app è destinata a HoloLens, è possibile ottimizzare le impostazioni di qualità nell'app per ottenere prestazioni più rapide per garantire la massima frequenza dei fotogrammi:
 1. Selezionare **modifica > impostazioni progetto > qualità**
-2. Selezionare l' **elenco a discesa** sotto il logo di **Windows Store** e selezionare **molto basso** . Si saprà che l'impostazione è stata applicata in modo corretto quando la casella nella colonna Windows Store e la riga **Molto bassa** è di colore verde.
+2. Selezionare l' **elenco a discesa** sotto il logo di **Windows Store** e selezionare **molto basso**. Si saprà che l'impostazione è stata applicata in modo corretto quando la casella nella colonna Windows Store e la riga **Molto bassa** è di colore verde.
 
 ![Impostazioni qualità Unity](images/getting-started-unity-quality-settings.jpg)<br>
 *Impostazioni qualità Unity*
@@ -80,7 +80,7 @@ Con la **realtà virtuale supportata** selezionata, il componente della [fotocam
 Se l'app è destinata a HoloLens in modo specifico, è necessario modificare alcune impostazioni per ottimizzare la visualizzazione trasparente del dispositivo. Queste impostazioni consentono di visualizzare il contenuto olografico nel mondo fisico:
 1. Nella **gerarchia** selezionare la **fotocamera principale**
 2. Nel pannello **Inspector** impostare la **posizione** di trasformazione su 0, 0 **, 0,** in modo che la posizione della testa dell'utente inizi in corrispondenza dell'origine mondiale di Unity.
-3. Modificare i **flag cancellati** in **colore a tinta unita** .
+3. Modificare i **flag cancellati** in **colore a tinta unita**.
 4. Modificare il colore di **sfondo** in **RGBA 0** , 0, 0, 0. Il nero viene visualizzato come trasparente in HoloLens.
 5. Modificare i **piani di ritaglio in prossimità** del [HoloLens consigliato](camera-in-unity.md#clip-planes) 0,85 (contatori).
 
@@ -88,8 +88,10 @@ Se l'app è destinata a HoloLens in modo specifico, è necessario modificare alc
 *Impostazioni della fotocamera Unity*
 
 > [!IMPORTANT]
-> Se si elimina e si crea una nuova fotocamera, assicurarsi che la nuova fotocamera sia contrassegnata come **MainCamera** .
+> Se si elimina e si crea una nuova fotocamera, assicurarsi che la nuova fotocamera sia contrassegnata come **MainCamera**.
 
 ## <a name="see-also"></a>Vedere anche
-* [Mixed Reality Toolkit v2](mrtk-getting-started.md)
+* [Guida all'installazione di MRTK (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+* [MRTK-Home della documentazione (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+* [Installare gli strumenti](../install-the-tools.md)
 * [Panoramica sullo sviluppo Unity](unity-development-overview.md)
