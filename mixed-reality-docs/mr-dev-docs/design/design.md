@@ -7,12 +7,12 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: realtà mista, individuare, distribuire, indice, pagina di destinazione, progettazione, sviluppo, esercitazioni, app di esempio, nozioni di base, case study, risorse, guide pratiche per HoloLens, progetti open source, concetti di base, interazione
-ms.openlocfilehash: 7333163a01496f41c4cb3cd98f54012e5c58a8d4
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 2ee127b05a8ad88e49eda6d088f84e895aeaf511
+ms.sourcegitcommit: 4e618948e1e2e0baf4bb3e8b67513fa7716aa815
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293123"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94361725"
 ---
 # <a name="start-designing-and-prototyping"></a>Iniziare a progettare e a creare prototipi
 
@@ -88,17 +88,17 @@ Il lavoro di un progettista non finisce mai, specialmente quando si tratta di im
         Scopri come creare esperienze interattive con Unity. Impara con la pratica, dall'inizio alla fine.
     :::column-end:::    
     :::column:::    
-        [![Mixed Reality Toolkit (MRTK)](images/Final_mrtk-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
+        [![Mixed Reality Toolkit (MRTK)](images/74-12.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
         **[Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>  
         Grazie all'interazione spaziale e ai componenti di base dell'interfaccia utente, puoi iniziare subito a progettare e sviluppare realtà miste con Unity.   
     :::column-end:::
     :::column:::    
-        [![Laboratori di progettazione di realtà mista](images/Final_mrdl_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        [![Laboratori di progettazione di realtà mista](images/74-13.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
         **[Laboratori di progettazione di realtà mista](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>  
         Sono disponibili app di esempio che illustrano come usare i componenti di base del toolkit MRTK per creare esperienze di realtà mista accattivanti.
     :::column-end:::        
     :::column:::    
-        [![Microsoft Maquette](images/Final_maquette_logo.png)](https://www.maquette.ms/)<br>
+        [![Microsoft Maquette](images/74-14.png)](https://www.maquette.ms/)<br>
         **[Microsoft Maquette](https://www.maquette.ms/)**<br>  
         Progetta per la realtà mista. Microsoft Maquette consente di creare prototipi spaziali con un'esperienza semplice, rapida e immersiva. 
     :::column-end:::    
@@ -112,22 +112,22 @@ Il lavoro di un progettista non finisce mai, specialmente quando si tratta di im
 
 :::row:::
     :::column:::
-       [![Acquisisci i concetti di base](images/icon-lightbulb.png)](../discover/get-started-with-mr.md#understand-the-basics)<br>
+       [![Acquisisci i concetti di base](images/74-15.png)](../discover/get-started-with-mr.md#understand-the-basics)<br>
         **[Acquisisci i concetti di base](../discover/get-started-with-mr.md#understand-the-basics)**<br>
         Approfondisci il significato di realtà mista e come viene usata.
     :::column-end:::
     :::column:::
-        [![Partecipa a un evento](images/icon-calendar.jpg)](../whats-new/sf-academy-events.md)<br>
+        [![Partecipa a un evento](images/74-16.png)](../whats-new/sf-academy-events.md)<br>
          **[Partecipa a un evento](../whats-new/sf-academy-events.md)**<br>
         Vieni a vedere l'hardware e partecipa all'esercitazione pratica per creare la tua prima applicazione HoloLens 2.
     :::column-end:::
     :::column:::
-        [![Installa gli strumenti](images/icon-design.png)](../develop/install-the-tools.md)<br>
+        [![Installa gli strumenti](images/74-17.png)](../develop/install-the-tools.md)<br>
          **[Installa gli strumenti](../develop/install-the-tools.md)**<br>
         Usa l'elenco di controllo dell'installazione per ottenere gli strumenti necessari per creare app per HoloLens e per la realtà mista.
     :::column-end:::
     :::column:::
-        [![Inizia a sviluppare](images/icon-developer.png)](../develop/development.md)<br>
+        [![Inizia a sviluppare](images/74-18.png)](../develop/development.md)<br>
         **[Inizia a sviluppare](../develop/development.md)**<br>
         Scegli un percorso di sviluppo in base al tuo livello di competenza, al tuo stile di lavoro o all'interesse per le piattaforme.
     :::column-end:::
