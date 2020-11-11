@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto tecnico, prestazioni
 appliesto:
 - Windows 10
-ms.openlocfilehash: 82f9accc8e24574faf7c826aff1908bea7350b08
-ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
+ms.openlocfilehash: c24f6766cab242332e79a0c5cf5ed3cd92c4687d
+ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049473"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94482399"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Domande frequenti su HP Reverb G2
 
@@ -73,3 +73,16 @@ Anche se molti giochi funzionano immediatamente con i controller di movimento di
 - Modello errato visualizzato: per risolvere questo problema è necessario un aggiornamento del gioco. In genere, questo non blocca le funzionalità del gioco, ma potrebbe causare confusione o persino artefatti visivi.
 - Dipendenza dal touchpad o più in generale nel layout di input del controller. SteamVR consente di creare associazioni personalizzate per aggirare questo tipo di problema:
     - La realtà mista di Windows per SteamVR include associazioni personalizzate per alcuni giochi. Queste associazioni vengono usate automaticamente all'avvio del gioco e non è necessaria alcuna azione da parte dell'utente.
+
+## <a name="my-steamvr-games-dont-appear-to-work-correctly-with-my-hp-motion-controllers"></a>I miei giochi SteamVR non sembrano funzionare correttamente con i controller di movimento HP
+
+Sebbene gli sviluppatori stiano lavorando per aggiornare i giochi per la compatibilità di HP Motion controller, abbiamo fornito associazioni controller personalizzate per molti dei giochi più diffusi su Steam. Con "realtà mista di Windows per SteamVR" completamente aggiornato alla versione 1.2.444, questi binding devono essere prelevati automaticamente quando il gioco è in esecuzione. Tuttavia, se il gioco non sembra registrare le azioni in questo momento, è possibile cercare manualmente i profili di binding personalizzati usando il menu delle impostazioni di SteamVR.
+Operazione da eseguire
+
+- Aprire il menu SteamVR premendo il pulsante di menu del controller di movimento destro
+- Selezionare l'icona "Settings" (impostazioni) nell'angolo in basso a destra del menu SteamVR.
+- Selezionare la scheda "controller"
+- Selezionare l'opzione "Gestisci binding controller"
+
+Da qui è possibile modificare il binding del controller attivo in "Custom", in modo da aprire l'opzione per provare le associazioni di gioco condivise dalla community.
+Se non sono ancora state condivise associazioni di gioco personalizzate per questo gioco (o se non si è pienamente soddisfatti di quelle provate), è anche possibile creare binding di gioco personalizzati e anche aiutare il resto della community condividendo questi ultimi dopo alcune sessioni di gioco.
