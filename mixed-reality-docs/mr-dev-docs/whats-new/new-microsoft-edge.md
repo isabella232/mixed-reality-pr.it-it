@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Edge, nuovo, Web immersivo, Microsoft Edge, browser, VR
-ms.openlocfilehash: 0f4ecdd26624e9b1e5b8e151e1ac074ece9c9769
-ms.sourcegitcommit: 1aae69e26ae872b724be1bd1ae0b3158c49dc7e2
+keywords: Edge, New, Web immersiv, Microsoft Edge, browser, VR, 360, 360 video, 360 Viewer, webxr, webvr
+ms.openlocfilehash: b20d21a3cd4cc77af86021e2b82555ba9c48478e
+ms.sourcegitcommit: 434ed0621af05307bb67b15cabf164561ec96ead
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92499586"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94520778"
 ---
 # <a name="windows-mixed-reality-and-the-new-microsoft-edge"></a>Realtà mista di Windows e la nuova Microsoft Edge
 
@@ -30,7 +30,7 @@ Il nuovo Microsoft Edge [adotta il progetto Chromium Open Source](https://blogs.
 
 I clienti che vogliono usare la nuova Microsoft Edge nella Home realtà mista di Windows per la realtà mista di Windows sono in grado di **eseguire l'aggiornamento a Windows 10 versione 1903 o successiva per il supporto nativo di applicazioni Win32, come il nuovo Microsoft Edge,** nella Home realtà mista. Controllare Windows Update o [installare manualmente la versione più recente di Windows 10](https://www.microsoft.com/en-us/software-download/windows10).
 
-Per ottenere la migliore esperienza Microsoft Edge nella Home realtà mista, è consigliabile attendere **alcune ottimizzazioni della realtà mista di Windows per i nuovi Microsoft Edge che arrivano con l'aggiornamento cumulativo 2020-01 per Windows 10 versione 1903 (o versione successiva)**, che dovrebbe essere disponibile in Windows Update entro la fine del gennaio.
+Per ottenere la migliore esperienza Microsoft Edge nella Home realtà mista, è consigliabile attendere **alcune ottimizzazioni della realtà mista di Windows per i nuovi Microsoft Edge che arrivano con l'aggiornamento cumulativo 2020-01 per Windows 10 versione 1903 (o versione successiva)** , che dovrebbe essere disponibile in Windows Update entro la fine del gennaio.
 
 >[!IMPORTANT]
 >Se si sceglie di scaricare il nuovo Microsoft Edge prima di eseguire questi aggiornamenti, si verificano alcuni problemi noti con il relativo comportamento nella realtà mista di Windows (che è possibile leggere di seguito).
@@ -81,6 +81,6 @@ I monitoraggi virtuali verranno allocati quando si tenta di avviare un'applicazi
 ### <a name="additional-known-issues"></a>Problemi noti aggiuntivi
 
 -   I siti Web aperti in realtà mista di Windows andranno perduti quando si chiude il portale di realtà mista, anche se le finestre Microsoft Edge rimarranno nella posizione in cui sono state inserite nella Home realtà mista.
-- Le esperienze di WebXR, tra cui l'estensione del Visualizzatore 360, potrebbero non essere avviate correttamente nei PC con una configurazione GPU ibrida. È possibile risolvere questo problema selezionando la GPU dedicata come GPU predefinita nel software della scheda grafica.
+- Le esperienze di WebXR, tra cui l'estensione del Visualizzatore 360, potrebbero non essere avviate correttamente nei PC con una configurazione GPU ibrida. Per risolvere questo problema, è possibile abilitare una funzionalità di anteprima nel nuovo Microsoft Edge. Passare a `edge://flags` , cercare "multiGPU" e abilitare il flag denominato **WEBXR multiGPU support**.
 -   L'audio da Microsoft Edge Windows non è spaziale.
--   **Correzione della versione dell'estensione del visualizzatore 360 2.3.8**: l'apertura di un video 360 da YouTube in realtà mista di Windows può comportare la distorsione del video nell'auricolare. Il riavvio di Edge dovrebbe aggiornare in modo invisibile l'estensione del Visualizzatore 360 per risolvere il problema. Per verificare quale versione dell'estensione è possibile immettere `edge://system/` nella barra degli indirizzi e selezionare il pulsante **Espandi** accanto a "estensioni".
+-   **Correzione della versione dell'estensione del visualizzatore 360 2.3.8** : l'apertura di un video 360 da YouTube in realtà mista di Windows può comportare la distorsione del video nell'auricolare. Il riavvio di Edge dovrebbe aggiornare in modo invisibile l'estensione del Visualizzatore 360 per risolvere il problema. Per verificare quale versione dell'estensione è possibile immettere `edge://system/` nella barra degli indirizzi e selezionare il pulsante **Espandi** accanto a "estensioni".
