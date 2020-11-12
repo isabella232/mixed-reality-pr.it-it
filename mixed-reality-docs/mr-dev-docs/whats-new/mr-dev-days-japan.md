@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Realtà mista, conferenza, Summit, sviluppatore, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 7d840c3f4f12f679dc7ca7622f906f3282ec785b
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: af9055c4e6074c4d4b10b4f0a6ac135c858b57a7
+ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386422"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94549114"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Realtà mista per i giorni di sviluppo in Giappone
 
@@ -29,14 +29,12 @@ Ci auguriamo che tu abbia partecipato al giorno dello sviluppo per la realtà mi
 
 ## <a name="registration"></a>Registrazione
 
-[Registrati ora](https://mixedrealityprod.microsoftcrmportals.com/MRDDRegistration/)
-
-Siamo entusiasti di aprire la registrazione per la realtà mista per sviluppatori di giorni in Giappone.  L'evento è gratuito e viene tenuto online in Microsoft teams Live Events.  Si richiede che i partecipanti si registrino per poter inviare aggiornamenti di posta elettronica man mano che l'evento si avvicina e quindi è possibile partecipare agli elementi interattivi dell'evento.
-
+Presto disponibile
 
 ## <a name="schedule---subject-to-change"></a>Pianificazione-soggetto a modifiche
 
 **Tutti gli orari sono ora solare Giappone (UTC + 9)** 
+
 
 
 ### <a name="december-16th"></a>16 dicembre
@@ -44,22 +42,22 @@ Siamo entusiasti di aprire la registrazione per la realtà mista per sviluppator
 |---------|---------|---------|---------|---------|
 |10:00-10:50am|Apertura del Keynote|TBD|JA/EN|N/D|
 |10:50am-11:00|**Interruzione**||||
-|11:00-11:25am|*Sessione 1* Che cos'è la realtà mista?Cosa si può fare con HL2?Tech stack|TBD|JA|100|
-|11:7.30-11:55am|*Sessione 2* Aggiornamento del mercato commerciale del Giappone con clienti e partner Case Study|TBD|JA|200|
-|12:00-12:50pm|*Sessione di pranzo* Panel: discussione gratuita interattiva, domande e risposte, MRTK + Oculus quest 2|TBD|JA|200|
+|11:00-11:25am|*Sessione 1* Che cos'è la realtà mista?Cosa si può fare con HL2?Tech stack|Atsushi Suzuki|JA|100|
+|11:7.30-11:55am|*Sessione 2* Aggiornamento del mercato commerciale del Giappone con clienti e partner Case Study|Tetsu Muranaka|JA|200|
+|12:00-12:50pm|*Sessione di pranzo* Panel: discussione gratuita interattiva, domande e risposte, MRTK + Oculus quest 2|Madoka Chiyoda + Microsoft MVP|JA|200|
 |12:50pm-1: pm|**Interruzione**||||
-|1: pm-1:25pm|*Sessione 3* Panoramica dello sviluppo di HoloLens 2|TBD|JA|200|
-|1: pm-1:55pm|*Sessione 4* HoloLens 2 & MRTK v 2.5 (MRTK-Unity)|TBD|JA|300|
-|2:00-2:20pm|*Sessione 5* Introduzione a HoloLens 2 e Unreal Engine (MRTK-Unreal)|TBD|IT|300|
-|2: pm-2:55pm|*Sessione 6* Progettazione delle app MR (procedura consigliata per la creazione dell'interfaccia utente/UX per l'app HL2)|TBD|IT|300|
+|1: pm-1:25pm|*Sessione 3* Panoramica dello sviluppo di HoloLens 2|Madoka Chiyoda|JA|200|
+|1: pm-1:55pm|*Sessione 4* HoloLens 2 & MRTK v 2.5 (MRTK-Unity)|Yoon Park|JA|300|
+|2:00-2:20pm|*Sessione 5* Introduzione a HoloLens 2 e Unreal Engine (MRTK-Unreal)|Cameron Micka|IT|300|
+|2: pm-2:55pm|*Sessione 6* Progettazione delle app MR (procedura consigliata per la creazione dell'interfaccia utente/UX per l'app HL2)|Daniel Escudero|IT|300|
 |2:55pm-3:14.15|**Interruzione**||||
 |3:14.15-3:40pm|*Sessione 7* Ancoraggi degli oggetti di Azure|TBD|IT|300|
-|3:45pm-4:22:00|*Sessione 8* Rendering remoto di Azure|TBD|JA|300|
+|3:45pm-4:22:00|*Sessione 8* Rendering remoto di Azure|Atsushi Suzuki|JA|300|
 |4:14.15-4:40pm|*Sessione 9* Ancoraggi spaziali di Azure|TBD|IT|300|
-|4:45PM-5:22:00|*Sessione 10* Strumento di blocco del mondo|TBD|IT|300|
-|5:14.15-5:40pm|*Sessione 11* Deep Dive di Azure Kinect DK, case study|TBD|JA|400|
-|5:45pm-6: pm|Chiusura|TBD|JA|ND|
-||||||
+<!--|4:45PM-5:22:00|*Sessione 10* Unity + PiXYZ|(Unità Giappone)|JA|200|-->
+|4:45PM-5:22:00|*Sessione 10* TBD|TBD|JA|200|
+|5:14.15-5:40pm|*Sessione 11* Deep Dive di Azure Kinect DK, case study|Shinji Chiba|JA|400|
+|5:45pm-6: pm|Chiusura|Madoka Chiyoda|JA|ND|
 
 #### <a name="contributors-english-subtitle-reviewers"></a>Collaboratori (revisori sottotitolo inglese)
 
