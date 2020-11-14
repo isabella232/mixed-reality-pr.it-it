@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: azure, realtà mista, unity, esercitazione, hololens, hololens 2, archiviazione blob di azure, archiviazione tabelle di azure, ancoraggi nello spazio di azure, azure bot framework
 ms.localizationpriority: high
-ms.openlocfilehash: 115044aa8fa5f143358b8014442bce26d4f3fec5
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: 878fd92a946b70ba3b0a867722f86ab801a79032
+ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915576"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93416977"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. Servizi cloud di Azure per HoloLens 2
 
@@ -75,10 +75,10 @@ L'applicazione è basata principalmente sull'interfaccia utente tradizionale, qu
 * Alcune funzionalità di programmazione C# di base
 * Un dispositivo HoloLens 2 [configurato per lo sviluppo](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
 * Una webcam connessa se vuoi eseguire il test dall'editor di Unity
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> con Unity 2019.3.X installato e il modulo di supporto delle compilazioni UWP (Universal Windows Platform) aggiunto
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> con Unity 2019 LTS installato e il modulo di supporto per la compilazione UWP (Universal Windows Platform) aggiunto
 
 > [!CAUTION]
-> La versione di Unity consigliata per questa serie di esercitazioni è Unity 2019.3.X. Questa istruzione sostituisce gli eventuali requisiti o suggerimenti relativi alla versione di Unity indicati negli argomenti visualizzabili facendo clic sui collegamenti dei prerequisiti sopra riportati.
+> La versione di Unity consigliata per questa serie di esercitazioni è Unity 2019 LTS. Questa istruzione sostituisce gli eventuali requisiti o suggerimenti relativi alla versione di Unity indicati negli argomenti visualizzabili facendo clic sui collegamenti dei prerequisiti sopra riportati.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Creazione e preparazione del progetto Unity
 

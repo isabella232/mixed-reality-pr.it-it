@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, hololens 2, archiviazione di azure
 ms.localizationpriority: high
-ms.openlocfilehash: d405ecc9f863e77271d4c16f820fc6ee00e55b1b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: e01796dd99982bb749d59108bcc972e5bc361770
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697941"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353329"
 ---
 # <a name="2-integrating-azure-storage"></a>2. Integrazione di Archiviazione di Azure
 
@@ -26,7 +26,7 @@ In questa esercitazione apprenderai come salvare dati di entità in Archiviazion
 
 ## <a name="understanding-azure-storage"></a>Informazioni su Archiviazione di Azure
 
-**Archiviazione di Azure** è una soluzione di archiviazione Microsoft sul cloud in grado di coprire numerosi scenari e requisiti. Si tratta di una soluzione con scalabilità elevata facilmente accessibile per gli sviluppatori. Tutti i servizi possono essere usati con un **account di archiviazione di Azure** . Per questo caso d'uso, verranno usati i servizi *archiviazione tabelle* e *archiviazione BLOB* .
+**Archiviazione di Azure** è una soluzione di archiviazione Microsoft sul cloud in grado di coprire numerosi scenari e requisiti. Si tratta di una soluzione con scalabilità elevata facilmente accessibile per gli sviluppatori. Tutti i servizi possono essere usati con un **account di archiviazione di Azure**. Per questo caso d'uso, verranno usati i servizi *archiviazione tabelle* e *archiviazione BLOB*.
 
 Sono disponibili altre informazioni sui [servizi Archiviazione di Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-overview).
 
@@ -34,7 +34,7 @@ Sono disponibili altre informazioni sui [servizi Archiviazione di Azure](https:/
 
 Questo servizio consente di archiviare i dati in modalità NoSQL e in questo progetto verrà usato per archiviare informazioni sull' *oggetto tracciato* , ad esempio nome, descrizione, ID ancoraggio nello spazio e altro ancora.
 
-Nel contesto dell'applicazione demo sono necessarie due tabelle, una per archiviare i dati relativi al progetto con informazioni sullo stato dei modelli con training (altre informazioni sono disponibili nell'esercitazione [Integrazione di Visione personalizzata di Azure](mr-learning-azure-03.md)) e una seconda tabella per archiviare le informazioni sugli *oggetti tracciati* .
+Nel contesto dell'applicazione demo sono necessarie due tabelle, una per archiviare i dati relativi al progetto con informazioni sullo stato dei modelli con training (altre informazioni sono disponibili nell'esercitazione [Integrazione di Visione personalizzata di Azure](mr-learning-azure-03.md)) e una seconda tabella per archiviare le informazioni sugli *oggetti tracciati*.
 
 Sono disponibili altre informazioni su [Archiviazione tabelle di Azure](https://docs.microsoft.com/azure/storage/tables/table-storage-overview).
 
@@ -57,7 +57,6 @@ Sebbene sia possibile visualizzare e verificare tutte le modifiche dall'interfac
 
 > [!TIP]
 > Per i test dall'editor di Unity puoi usare un emulatore locale:
-
 > * in Windows 10 puoi usare l'[emulatore di archiviazione di Azure](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)
 > * in MacOS/Linux puoi usare l'[immagine Azurite Docker](https://hub.docker.com/_/microsoft-azure-storage-azurite) per Docker
 
@@ -65,7 +64,7 @@ Sebbene sia possibile visualizzare e verificare tutte le modifiche dall'interfac
 
 Nella finestra Hierarchy (Gerarchia) individua l'oggetto **DataManager** e selezionalo.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial2-section4-step1-1.png)
+![Unity con i campi di configurazione del componente di script DataManager visualizzati in Inspector](images/mr-learning-azure/tutorial2-section4-step1-1.png)
 
 Dalla finestra Inspector (Controllo) noterai che tutte le impostazioni relative ad **Archiviazione di Azure** sono contenute nel componente **DataManager (script)** . Tutte le impostazioni pertinenti sono già impostate, devi solo sostituire il campo della *stringa di connessione* con la stringa che puoi recuperare dal portale di Azure. Se usi una soluzione emulatore di archiviazione di Azure locale, puoi mantenere il valore della *stringa di connessione* già fornita.
 
@@ -73,15 +72,15 @@ Il componente **DataManager (script)** è responsabile della comunicazione con i
 
 ## <a name="writing-and-reading-data-from-azure-table-storage"></a>Scrittura e lettura di dati da Archiviazione tabelle di Azure
 
-Con tutti gli elementi pronti, puoi ora creare un *oggetto tracciato* .
+Con tutti gli elementi pronti, puoi ora creare un *oggetto tracciato*.
 
-Apri l'applicazione in HoloLens e fai clic su **Set Object** (Imposta oggetto). Potrai osservare il modo in cui l'oggetto *EnterObjectName* diventa attivo nella gerarchia. In questo menu fai clic sulla *barra di ricerca* e digita il nome che desideri assegnare all' *oggetto tracciato* . Dopo aver fornito un nome, fai clic sul pulsante **Set Object** (Imposta oggetto). In Archiviazione tabelle di Azure verrà creato l' *oggetto tracciato* e sarà ora visibile **Object Card** (Scheda oggetto).
+Apri l'applicazione in HoloLens e fai clic su **Set Object** (Imposta oggetto). Potrai osservare il modo in cui l'oggetto *EnterObjectName* diventa attivo nella gerarchia. In questo menu fai clic sulla *barra di ricerca* e digita il nome che desideri assegnare all' *oggetto tracciato*. Dopo aver fornito un nome, fai clic sul pulsante **Set Object** (Imposta oggetto). In Archiviazione tabelle di Azure verrà creato l' *oggetto tracciato* e sarà ora visibile **Object Card** (Scheda oggetto).
 
 **Object Card** (Scheda oggetto) è una rappresentazione dell'interfaccia utente dell' *oggetto tracciato* e svolgerà un ruolo importante più volte in questa serie di esercitazioni.
 
 A questo punto, fai clic sulla *casella di testo* della descrizione e digita "Car", quindi fai clic sul pulsante **Save** (Salva) per salvare le modifiche. Arresta l'applicazione ed eseguila di nuovo.
 
-Fai clic ora su **Search Object** (Cerca oggetto) e digita nella *barra di ricerca* il nome usato in precedenza quando hai creato l' *oggetto tracciato* . Noterai che da **Archiviazione tabelle di Azure** viene recuperato **Object Card** (Scheda oggetto) con tutti i dati.
+Fai clic ora su **Search Object** (Cerca oggetto) e digita nella *barra di ricerca* il nome usato in precedenza quando hai creato l' *oggetto tracciato*. Noterai che da **Archiviazione tabelle di Azure** viene recuperato **Object Card** (Scheda oggetto) con tutti i dati.
 
 Sei libero di chiudere **Object Card** (Scheda oggetto) e di creare nuovi *oggetti tracciati* e modificare i relativi dati.
 
@@ -90,18 +89,18 @@ Sei libero di chiudere **Object Card** (Scheda oggetto) e di creare nuovi *ogget
 
 ## <a name="uploading-and-download-image-from-azure-blob-storage"></a>Caricamento e download dell'immagine da Archiviazione BLOB di Azure
 
-In questa sezione userai Archiviazione BLOB di Azure per caricare e scaricare immagini che verranno usate come anteprime per gli *oggetti tracciati* .
+In questa sezione userai Archiviazione BLOB di Azure per caricare e scaricare immagini che verranno usate come anteprime per gli *oggetti tracciati*.
 
 > [!NOTE]
 > In questa esercitazione l'applicazione acquisirà foto per caricare immagini in archiviazione BLOB. Se esegui questa operazione localmente dall'editor di Unity, assicurati di disporre di una webcam connessa al computer.
 
 Apri l'applicazione in HoloLens, fai clic su **Set Object** (Imposta oggetto) e digita nella *barra di ricerca* il nome "Car". A questo punto dovresti visualizzare **Object Card** (Scheda oggetto). Fai clic sul pulsante **Camera** (Fotocamera) e ti verrà richiesto di eseguire un'operazione AirTap per acquisire una foto. Dopo aver acquisito una foto, visualizzerai un messaggio che ti informa del caricamento attivo e dopo un periodo di tempo dovresti visualizzare l'immagine nel punto in cui precedentemente si trovava il segnaposto.
 
-A questo punto, esegui di nuovo l'applicazione e cerca l' *oggetto tracciato* . L'immagine caricata in precedenza dovrebbe visualizzarsi come anteprima.
+A questo punto, esegui di nuovo l'applicazione e cerca l' *oggetto tracciato*. L'immagine caricata in precedenza dovrebbe visualizzarsi come anteprima.
 
 ## <a name="deleting-image-from-azure-blob-storage"></a>Eliminazione di un'immagine da Archiviazione BLOB di Azure
 
-Nella sezione precedente hai caricato nuove immagini in Archiviazione BLOB di Azure. In questa sezione eliminerai un'anteprima di immagine per gli *oggetti tracciati* .
+Nella sezione precedente hai caricato nuove immagini in Archiviazione BLOB di Azure. In questa sezione eliminerai un'anteprima di immagine per gli *oggetti tracciati*.
 
 Apri l'applicazione in HoloLens, fai clic su **Set Object** (Imposta oggetto) e digita nella *barra di ricerca* il nome "Car". A questo punto dovresti visualizzare **Object Card** (Scheda oggetto) con l'immagine di anteprima. Fai clic sul pulsante **Delete** (Elimina). L'immagine di anteprima verrà sostituita dall'immagine segnaposto.
 
@@ -111,7 +110,7 @@ A questo punto, esegui di nuovo l'applicazione e cerca l' *oggetto tracciato* de
 
 In questa esercitazione hai appreso come usare i servizi Archiviazione di Azure per salvare in modo permanente dati non strutturati, come in questo caso gli **oggetti tracciati** e i file binari sotto forma di immagini di anteprima per l'applicazione demo **HoloLens 2** nel cloud.
 
-Nell'esercitazione successiva apprenderai come usare Visione personalizzata di Azure per rilevare le immagini associate a un *oggetto tracciato* .
+Nell'esercitazione successiva apprenderai come usare Visione personalizzata di Azure per rilevare le immagini associate a un *oggetto tracciato*.
 
 > [!div class="nextstepaction"]
 > [Esercitazione successiva: 3. Integrazione di Visione personalizzata di Azure](mr-learning-azure-03.md)

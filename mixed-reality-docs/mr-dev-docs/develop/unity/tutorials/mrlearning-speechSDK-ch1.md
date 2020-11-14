@@ -7,12 +7,12 @@ ms.date: 02/26/2019
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 4664adc6fa5bf5211fd495c8cc68dabf80fdc2e2
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 07130f7d8f10464219458be4ddd5c420a0512b51
+ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697456"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93416987"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1. Integrazione e uso del riconoscimento vocale e della trascrizione
 
@@ -35,10 +35,10 @@ In questa serie di esercitazioni creerai un'applicazione di Realtà mista per es
 * Windows 10 SDK 10.0.18362.0 o versioni successive
 * Alcune funzionalità di programmazione C# di base
 * Un dispositivo HoloLens 2 [configurato per lo sviluppo](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> con Unity 2019.2.X installato e il modulo di supporto delle compilazioni UWP (Universal Windows Platform) aggiunto
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> con Unity 2019 LTS installato e il modulo di supporto per la compilazione UWP (Universal Windows Platform) aggiunto
 
 > [!IMPORTANT]
-> La versione di Unity consigliata per questa serie di esercitazioni è Unity 2019.2.X. Questa istruzione sostituisce gli eventuali requisiti o suggerimenti relativi alla versione di Unity indicati negli argomenti visualizzabili facendo clic sui collegamenti dei prerequisiti sopra riportati.
+> La versione di Unity consigliata per questa serie di esercitazioni è Unity 2019 LTS. Questa istruzione sostituisce gli eventuali requisiti o suggerimenti relativi alla versione di Unity indicati negli argomenti visualizzabili facendo clic sui collegamenti dei prerequisiti sopra riportati.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Creazione e preparazione del progetto Unity
 

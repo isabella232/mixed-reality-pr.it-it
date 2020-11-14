@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR,
-ms.openlocfilehash: def16b5bff13fec13ce0ebb503ec88dfca22e0b8
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: c2a00b88992fde3e599020d930ef950222e87099
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293068"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573215"
 ---
 # <a name="start-your-vr-journey"></a>Iniziare il percorso VR
 
@@ -41,7 +41,7 @@ Una volta ottenuto il dispositivo, è necessario configurarlo e configurarlo cor
 
 |  Checkpoint  |  Risultato  |
 | --- | --- |
-| [Configurare Windows Mixed Reality](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | Familiarizzare con i controller, i limiti delle stanze, l'input vocale e Microsoft Edge sul nuovo dispositivo VR |
+| [Configurare Windows Mixed Reality](set-up-windows-mixed-reality.md) | Familiarizzare con i controller, i limiti delle stanze, l'input vocale e Microsoft Edge sul nuovo dispositivo VR |
 | [Domande frequenti sulla configurazione della realtà mista di Windows](wmr-setup-faq.md) | Risposte e guida alla risoluzione dei problemi noti durante la configurazione della realtà mista di Windows |
 | [Linee guida sull'integrità, sulla sicurezza e sul comfort](wmr-health-safety-comfort.md) | Suggerimenti per restare protetti durante l'uso della realtà mista di Windows prima di usare l'auricolare  |
 

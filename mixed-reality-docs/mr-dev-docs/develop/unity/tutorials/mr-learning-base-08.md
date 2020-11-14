@@ -1,18 +1,18 @@
 ---
 title: Esercitazioni introduttive - 8 Uso del tracciamento oculare
-description: Questo corso illustra come usare Mixed Reality Toolkit (MRTK) per creare un'applicazione di realtà mista.
+description: Questa esercitazione illustra come usare il tracciamento oculare con Mixed Reality Toolkit (MRTK).
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: a87b613ca47eb0ed6695a55c8e5afe0f24de5937
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 490a131bb196941d2ae581b97d88a104c0c212e2
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698518"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353499"
 ---
 # <a name="8-using-eye-tracking"></a>8. Uso del tracciamento oculare
 
@@ -32,7 +32,7 @@ In questa esercitazione si apprenderà come abilitare il tracciamento oculare pe
 
 Nel menu di Unity selezionare Mixed Reality Toolkit > Utilities > **Configure Unity Project** (Mixed Reality Toolkit > Utilità > Configura progetto Unity) per aprire la finestra **MRTK Project Configurator** (Configuratore del progetto MRTK) e quindi, nella sezione **UWP Capabilities** (Funzionalità UWP), verificare che l'opzione **Enable Eye Gaze Input Capability** (Abilita la funzionalità di input mediante sguardo fisso) sia disattivata:
 
-![mr-learning-base](images/mr-learning-base/base-08-section1-step1-1.png)
+![Finestra MRTK Project Configurator di Unity](images/mr-learning-base/base-08-section1-step1-1.png)
 
 > [!NOTE]
 > La funzionalità di input mediante sguardo fisso dovrebbe essere stata abilitata durante la configurazione delle istruzioni riportate in [Apply the MRTK Project Configurator settings](mr-learning-base-02.md#1-apply-the-mrtk-project-configurator-settings) (Applicare le impostazioni del Configuratore del progetto MRTK) quando è stato configurato il progetto Unity all'inizio di questa serie di esercitazioni. Se, tuttavia, non è abilitata, assicurarsi di farlo ora.
@@ -46,7 +46,7 @@ Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **MixedRealityToolkit
 * Clonare il profilo **DefaultMixedRealityPointerProfile** e assegnargli un nome appropriato, ad esempio _GettingStarted_MixedRealityPointerProfile_
 * Individuare la sezione **Gaze Settings** (Impostazioni sguardo) e selezionare la casella di controllo **Is Eye Tracking Enabled** (Tracciamento oculare abilitato)
 
-![mr-learning-base](images/mr-learning-base/base-08-section2-step1-1.png)
+![Componente MixedRealityToolkit di Unity con i profili appena creati applicati e il tracciamento oculare abilitato](images/mr-learning-base/base-08-section2-step1-1.png)
 
 > [!TIP]
 > Per rivedere la procedura di clonazione dei profili di MRTK, fare riferimento alle istruzioni riportate in [Configurazione dei profili di Mixed Reality Toolkit](mr-learning-base-03.md).
@@ -59,20 +59,20 @@ Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **MixedRealityToolkit
 * Clonare il profilo **DefaultMixedRealityInputSimulationProfile** e assegnargli un nome appropriato, ad esempio _GettingStarted_MixedRealityInputSimulationProfile_
 * Individuare la sezione **Eye Simulation** (Simulazione oculare) e selezionare la casella di controllo **Simulate Eye Position** (Simula posizione oculare)
 
-![mr-learning-base](images/mr-learning-base/base-08-section3-step1-1.png)
+![Componente MixedRealityToolkit di Unity con il profilo appena creato applicato e la simulazione oculare abilitata](images/mr-learning-base/base-08-section3-step1-1.png)
 
 ## <a name="adding-eye-tracking-to-objects"></a>Aggiunta del tracciamento oculare agli oggetti
 
 Nella finestra Hierarchy (Gerarchia) espandere l'oggetto RoverExplorer > **Buttons** (Pulsanti) e quindi, per ognuno dei tre oggetti pulsante figlio, espandere e selezionare l'oggetto SeeItSayItLabel > **TextMeshPro** :
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-1.png)
+![Unity con l'oggetto TextMeshPro selezionato](images/mr-learning-base/base-08-section4-step1-1.png)
 
 Con i tre oggetti TextMeshPro ancora selezionati, nella finestra Inspector (Controllo) usare il pulsante **Add Component** (Aggiungi componente) per aggiungere i componenti seguenti a tutti gli oggetti selezionati:
 
 * Componente **Box Collider** (Collisore cubico)
 * Componente **EyeTrackingTarget**
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-2.png)
+![Unity con l'oggetto TextMeshPro selezionato e componenti aggiunti](images/mr-learning-base/base-08-section4-step1-2.png)
 
 Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **Hints** (Suggerimenti) > SeeItSayItLabel > **TextMeshPro** e quindi configurare il componente **EyeTrackingTarget** come indicato di seguito:
 
@@ -87,13 +87,13 @@ Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **Hints** (Suggerimen
   * Dall'elenco a discesa **No Function** (Nessuna funzione) selezionare **TextMeshPro** > **float fontSize** (fontSize mobile) per aggiornare il valore della proprietà quando viene attivato l'evento
   * Impostare l'argomento su **0,04** per ripristinare le dimensioni del carattere a 0,04
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-3.png)
+![Unity con l'oggetto TextMeshPro di Hints selezionato e il componente EyeTrackingTarget configurato](images/mr-learning-base/base-08-section4-step1-3.png)
 
-**Ripetere** questo passaggio per l'oggetto **Explode** (Espandi) > SeeItSayItLabel > **TextMeshPro** e l'oggetto **Reset** (Ripristina) > SeeItSayItLabel > **TextMeshPro** .
+**Ripetere** questo passaggio per l'oggetto **Explode** (Espandi) > SeeItSayItLabel > **TextMeshPro** e l'oggetto **Reset** (Ripristina) > SeeItSayItLabel > **TextMeshPro**.
 
 Se si immette la modalità di gioco e quindi si tiene premuto il pulsante destro del mouse mentre si sposta il puntatore del mouse fino a quando lo sguardo fisso raggiunge una delle etichette, si noterà che le dimensioni del carattere aumentano del 50% e vengono ripristinate le dimensioni originali quando si distoglie lo sguardo:
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-4.png)
+![Doppia visualizzazione della modalità Play di Unity con lo sguardo che incontra l'obiettivo del tracciamento oculare costituito dall'etichetta del pulsante Explode](images/mr-learning-base/base-08-section4-step1-4.png)
 
 ## <a name="congratulations"></a>Lezione completata
 

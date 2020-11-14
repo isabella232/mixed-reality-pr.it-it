@@ -1,18 +1,18 @@
 ---
 title: Esercitazioni su Ancoraggi nello spazio di Azure - 2. Introduzione ad Ancoraggi nello spazio di Azure
-description: Completa questo corso per apprendere come implementare ancoraggi nello spazio di Azure in un'applicazione di realtà mista.
+description: In questo corso viene illustrato come usare Ancoraggi nello spazio di Azure per ancorare oggetti in un'applicazione di realtà mista.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: e5553df4256e0535d5becb94f22b9ce8eac228dc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c73ddec2fc1be20a4a2c582948cd240be7fe23db
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698025"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353449"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Introduzione ad Ancoraggi nello spazio di Azure
 
@@ -47,7 +47,7 @@ Segui quindi le istruzioni riportate in [Modifica delle opzioni di visualizzazio
 
 Scegli **Window (Finestra)**  > **Package Manager (Gestione pacchetti)** dal menu Unity per aprire la finestra Package Manager(Gestione pacchetti), quindi seleziona **AR Foundation** e fai clic sul pulsante **Install** (Installa) per installare il pacchetto:
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section2-step1-1.png)
+![Package Manager di Unity con AR Foundation selezionato](images/mr-learning-asa/asa-02-section2-step1-1.png)
 
 > [!NOTE]
 > Stai installando il pacchetto AR Foundation perché è richiesto da Azure Spatial Anchors SDK, che verrà importato nella sezione successiva.
@@ -62,7 +62,7 @@ Scarica e **importa** i pacchetti personalizzati di Unity seguenti, **nell'ordin
 
 Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progetto) avrà un aspetto simile al seguente:
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section3-step1-1.png)
+![Finestre Hierarchy, Scene e Project di Unity dopo l'importazione degli asset dell'esercitazione](images/mr-learning-asa/asa-02-section3-step1-1.png)
 
 > [!NOTE]
 > Se vengono visualizzati avvisi CS0618 che indicano che 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' è obsoleto, è possibile ignorare questi avvisi.
@@ -81,7 +81,7 @@ Nella finestra Project (Progetto) passa ad **Assets (Asset)**  > **MRTK.Tutorial
 * Prefab **Instructions**
 * Prefab **ParentAnchor**
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section4-step1-1.png)
+![Unity con i prefab appena aggiunti selezionati](images/mr-learning-asa/asa-02-section4-step1-1.png)
 
 > [!TIP]
 > Se trovi che le icone grandi nella scena, come quelle a forma di "T", siano motivo di distrazione, puoi nasconderle <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">disattivando il menu Gizmos</a>, come mostrato nell'immagine precedente.
@@ -90,19 +90,19 @@ Nella finestra Project (Progetto) passa ad **Assets (Asset)**  > **MRTK.Tutorial
 
 In questa sezione aggiungerai script alla scena per creare una serie di eventi Button che illustrano le nozioni fondamentali sul comportamento degli ancoraggi locali e degli ancoraggi nello spazio di Azure in un'app.
 
-Nella finestra Hierarchy (Gerarchia) espandi l'oggetto **ButtonParent** e seleziona il primo oggetto figlio denominato **StartAzureSession** . Nella finestra Inspector (Controllo) configura l'evento **On Click ()** (Al clic) del componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
+Nella finestra Hierarchy (Gerarchia) espandi l'oggetto **ButtonParent** e seleziona il primo oggetto figlio denominato **StartAzureSession**. Nella finestra Inspector (Controllo) configura l'evento **On Click ()** (Al clic) del componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
 
 * Assegna l'oggetto **ParentAnchor** al campo **None (Object)** (Nessuno - Oggetto)
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **AnchorModuleScript** > **StartAzureSession ()** per impostare questa funzione come l'azione da eseguire quando viene attivato l'evento
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-1.png)
+![Unity con l'evento OnClick del pulsante StartAzureSession configurato](images/mr-learning-asa/asa-02-section5-step1-1.png)
 
 Nella finestra Hierarchy (Gerarchia) seleziona il pulsante successivo denominato **StopAzureSession** e quindi nella finestra Inspector (Controllo) configura l'evento **On Click ()** (Al clic) del componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
 
 * Assegna l'oggetto **ParentAnchor** al campo **None (Object)** (Nessuno - Oggetto)
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **AnchorModuleScript** > **StopAzureSession ()** per impostare questa funzione come l'azione da eseguire quando viene attivato l'evento
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-2.png)
+![Unity con l'evento OnClick del pulsante StopAzureSession configurato](images/mr-learning-asa/asa-02-section5-step1-2.png)
 
 Nella finestra Hierarchy (Gerarchia) seleziona il pulsante successivo denominato **CreateAzureAnchor** e quindi nella finestra Inspector (Controllo) configura l'evento **On Click ()** (Al clic) del componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
 
@@ -110,7 +110,7 @@ Nella finestra Hierarchy (Gerarchia) seleziona il pulsante successivo denominato
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **AnchorModuleScript** > **CreateAzureAnchor ()** per impostare questa funzione come l'azione da eseguire quando viene attivato l'evento
 * Assegna l'oggetto **ParentAnchor** al campo **None (Game Object)** (Nessuno - Oggetto gioco) vuoto per impostarlo come argomento della funzione CreateAzureAnchor ()
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-3.png)
+![Unity con l'evento OnClick del pulsante CreateAzureAnchor configurato](images/mr-learning-asa/asa-02-section5-step1-3.png)
 
 Nella finestra Hierarchy (Gerarchia) seleziona il pulsante successivo denominato **RemoveLocalAnchor** e quindi nella finestra Inspector (Controllo) configura l'evento **On Click ()** (Al clic) del componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
 
@@ -118,21 +118,21 @@ Nella finestra Hierarchy (Gerarchia) seleziona il pulsante successivo denominato
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **AnchorModuleScript** > **RemoveLocalAnchor ()** per impostare questa funzione come l'azione da eseguire quando viene attivato l'evento
 * Assegna l'oggetto **ParentAnchor** al campo vuoto **None (Game Object)** (Nessuno - Oggetto gioco) per impostarlo come argomento della funzione RemoveLocalAnchor ()
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-4.png)
+![Unity con l'evento OnClick del pulsante RemoveLocalAnchor configurato](images/mr-learning-asa/asa-02-section5-step1-4.png)
 
 Nella finestra Hierarchy (Gerarchia) seleziona il pulsante successivo denominato **FindAzureAnchor** e quindi nella finestra Inspector (Controllo) configura l'evento **On Click ()** (Al clic) del componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
 
 * Assegna l'oggetto **ParentAnchor** al campo **None (Object)** (Nessuno - Oggetto)
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **AnchorModuleScript** > **FindAzureAnchor ()** per impostare questa funzione come l'azione da eseguire quando viene attivato l'evento
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-5.png)
+![Unity con l'evento OnClick del pulsante FindAzureAnchor configurato](images/mr-learning-asa/asa-02-section5-step1-5.png)
 
 Nella finestra Hierarchy (Gerarchia) seleziona il pulsante successivo denominato **DeleteAzureAnchor** e quindi nella finestra Inspector (Controllo) configura l'evento **On Click ()** (Al clic) del componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
 
-* Assegna l'oggetto **ParentAnchor** al campo **None (Object)** (Nessuno - Oggetto)
+* Assegnare l'oggetto **DeleteAzureAnchor** al campo **None (Object)** (Nessuno - Oggetto)
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **AnchorModuleScript** > **DeleteAzureAnchor ()** per impostare questa funzione come l'azione da eseguire quando viene attivato l'evento
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-6.png)
+![Unity con l'evento OnClick del pulsante DeleteAzureAnchor configurato](images/mr-learning-asa/asa-02-section5-step1-6.png)
 
 ## <a name="connecting-the-scene-to-the-azure-resource"></a>Connessione della scena alla risorsa di Azure
 
@@ -141,7 +141,7 @@ Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **ParentAnchor** e quin
 * Nel campo **Spatial Anchors Account ID** (ID account Ancoraggi nello spazio) incolla il valore di **Account ID** (ID account) del tuo account di Ancoraggi nello spazio di Azure
 * Nel campo **Spatial Anchors Account Key** (Chiave account Ancoraggi nello spazio) incolla il valore di **Access Key** (Chiave di accesso) primario o secondario del tuo account di Ancoraggi nello spazio di Azure
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section6-step1-1.png)
+![Unity con Spatial Anchor Manager configurato](images/mr-learning-asa/asa-02-section6-step1-1.png)
 
 ## <a name="trying-the-basic-behaviors-of-azure-spatial-anchors"></a>Test dei comportamenti di base di Ancoraggi nello spazio di Azure
 
@@ -163,7 +163,7 @@ Quando l'app è in esecuzione nel dispositivo, segui le istruzioni visualizzate 
 1. Elimina l'ancoraggio di Azure
 1. Arresta la sessione di Azure
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section7-step1-1.png)
+![Unity con l'oggetto Instructions selezionato](images/mr-learning-asa/asa-02-section7-step1-1.png)
 
 > [!CAUTION]
 > Poiché per gli ancoraggi nello spazio di Azure viene usato Internet per salvare e caricare i dati di ancoraggio, assicurati che il dispositivo sia connesso a Internet.
@@ -177,15 +177,15 @@ Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **ParentAnchor** e quin
 * Imposta **Scale X** (Scala X) su 1,1
 * Imposta **Scale Z** (Scala Z) su 1,1
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section8-step1-1.png)
+![Unity con l'oggetto ParentAnchor selezionato, posizionato e ridimensionato](images/mr-learning-asa/asa-02-section8-step1-1.png)
 
 Nella finestra Project (Progetto) passa alla cartella **Assets (Asset)**  > **MRTK.Tutorials.GettingStarted** > **Prefabs (Prefab)**  > **Rover** e quindi fai clic e trascina il prefab **RoverExplorer_Complete** sulla finestra Hierarchy (Gerarchia) per aggiungerlo alla scena:
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section8-step1-2.png)
+![Unity con il prefab RoverExplorer_Complete appena aggiunto selezionato](images/mr-learning-asa/asa-02-section8-step1-2.png)
 
 Con l'oggetto RoverModule_Complete appena aggiunto ancora selezionato nella finestra Hierarchy (Gerarchia), trascinalo sull'oggetto **ParentAnchor** per configurarlo come figlio dell'oggetto ParentAnchor:
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section8-step1-3.png)
+![Unity con l'oggetto RoverExplorer_Complete impostato come elemento figlio di ParentAnchor](images/mr-learning-asa/asa-02-section8-step1-3.png)
 
 Se ora ricompili il progetto e distribuisci l'app nel dispositivo, puoi riposizionare l'intera esperienza Rover Explorer (Esplora rover) spostando il cubo ridimensionato.
 

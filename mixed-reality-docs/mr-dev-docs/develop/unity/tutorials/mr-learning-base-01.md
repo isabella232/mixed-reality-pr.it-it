@@ -1,5 +1,5 @@
 ---
-title: Esercitazioni introduttive - 1 Introduzione
+title: Esercitazioni introduttive - 1 Introduzione alle esercitazioni introduttive
 description: Questo corso illustra come usare Mixed Reality Toolkit (MRTK) per creare un'applicazione di realtà mista da zero.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,14 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 6d6be08aa532de22a30e70274859eda466a78204
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 992d864d7e016c3d0906366d10993ff0559afc06
+ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697762"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93416899"
 ---
-# <a name="1-introduction"></a>1. Introduzione
+# <a name="1-introduction-to-the-getting-started-tutorials"></a>1. Introduzione alle esercitazioni introduttive
 
 ## <a name="overview"></a>Panoramica
 
@@ -44,13 +44,13 @@ Le esercitazioni di questa serie sono sequenziali, consultarle quindi nell'ordin
 * Un PC Windows 10 configurato in cui siano [installati gli strumenti](../../install-the-tools.md) corretti
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 o versioni successive
 * Un dispositivo HoloLens 2 [configurato per lo sviluppo](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> con Unity 2019.3.15 installato e il modulo Universal Windows Platform Build Support aggiunto
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> con Unity 2019 LTS installato e il modulo di supporto per la compilazione UWP (Universal Windows Platform) aggiunto
 
 > [!CAUTION]
 > La versione di MRTK consigliata per questa serie di esercitazioni è MRTK 2.4.0.
 
 > [!CAUTION]
-> La versione di Unity consigliata per questa serie di esercitazioni è Unity 2019.3.15. Questa istruzione sostituisce gli eventuali requisiti relativi alla versione di Unity indicati negli argomenti visualizzabili facendo clic sui collegamenti dei prerequisiti sopra riportati.
+> La versione di Unity consigliata per questa serie di esercitazioni è Unity 2019 LTS. Questa istruzione sostituisce gli eventuali requisiti relativi alla versione di Unity indicati negli argomenti visualizzabili facendo clic sui collegamenti dei prerequisiti sopra riportati.
 
 > [!div class="nextstepaction"]
 > [Esercitazione successiva: 2. Inizializzazione del progetto e distribuzione della prima applicazione](mr-learning-base-02.md)

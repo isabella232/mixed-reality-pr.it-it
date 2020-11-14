@@ -7,12 +7,12 @@ ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, beta, streaming, comunicazione remota, realtà mista, sviluppo, guida introduttiva, funzionalità, nuovo progetto, emulatore, documentazione, guide, caratteristiche, ologrammi, sviluppo di giochi
-ms.openlocfilehash: 25842fb8083b7757e73e7dbe7551b6bde9d8d95e
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: a8e345831167362745a45a8fa81ddae858083ca7
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638588"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340689"
 ---
 # <a name="unreal-development-overview"></a>Panoramica dello sviluppo con Unreal
 
@@ -45,7 +45,7 @@ Alla fine di questa sezione, si avrà una conoscenza di base su Mixed Reality To
 
 |  Checkpoint  |  Risultato  |
 | --- | --- |
-| [Installare gli ultimi aggiornamenti](../install-the-tools.md) | Scaricare e installare il pacchetto Unity più recente e configurare il progetto per la realtà mista |
+| [Installare gli ultimi aggiornamenti](../install-the-tools.md) | Scaricare e installare la versione più recente di Unreal Engine e configurare il progetto per la realtà mista |
 | [Serie di esercitazioni su HoloLens 2](tutorials/unreal-uxt-ch1.md) | Seguire le esercitazioni su MRTK di livello principiante per l'hardware HoloLens 2 |
 
 ### <a name="2-core-building-blocks"></a>2. Componenti fondamentali

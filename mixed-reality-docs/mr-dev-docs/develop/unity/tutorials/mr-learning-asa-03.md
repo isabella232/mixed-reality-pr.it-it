@@ -1,18 +1,18 @@
 ---
 title: Esercitazioni su Ancoraggi nello spazio di Azure - 3. Salvataggio, recupero e condivisione di ancoraggi nello spazio di Azure
-description: Completa questo corso per apprendere come implementare ancoraggi nello spazio di Azure in un'applicazione di realtà mista.
+description: In questo corso viene illustrato come salvare, recuperare e condividere Ancoraggi nello spazio di Azure in un'applicazione di realtà mista.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: edbbfa6bb4027e6d0d0d37a46575eafdb1d6e631
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 2fbf9b849cec62c5281396fcb1e2f8e6e26b4621
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698014"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353299"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3. Salvataggio, recupero e condivisione di ancoraggi nello spazio di Azure
 
@@ -25,13 +25,13 @@ In questa esercitazione apprenderai come salvare gli ancoraggi nello spazio di A
 
 ## <a name="preparing-the-scene"></a>Preparazione della scena
 
-Nella finestra Hierarchy (Gerarchia) espandi l'oggetto **ButtonParent** . Seleziona gli **ultimi quattro oggetti pulsante figlio** . Nella finestra Inspector (Controllo) **seleziona** la casella di controllo accanto al campo del nome per rendere attivi tutti gli oggetti.
+Nella finestra Hierarchy (Gerarchia) espandi l'oggetto **ButtonParent**. Seleziona gli **ultimi quattro oggetti pulsante figlio**. Nella finestra Inspector (Controllo) **seleziona** la casella di controllo accanto al campo del nome per rendere attivi tutti gli oggetti.
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section1-step1-1.png)
+![Unity con oggetti pulsante precedentemente inattivi selezionati e attivi](images/mr-learning-asa/asa-03-section1-step1-1.png)
 
-Nella finestra Hierarchy (Gerarchia) seleziona gli oggetti **ButtonParent** . Quindi nella finestra Inspector (Controllo) individua il componente **GridObjectCollection** e fai clic sul pulsante **Update Collection** (Aggiorna raccolta) per aggiornare la posizione di tutti gli oggetti figlio dell'oggetto **ButtonParent** .
+Nella finestra Hierarchy (Gerarchia) seleziona gli oggetti **ButtonParent**. Quindi nella finestra Inspector (Controllo) individua il componente **GridObjectCollection** e fai clic sul pulsante **Update Collection** (Aggiorna raccolta) per aggiornare la posizione di tutti gli oggetti figlio dell'oggetto **ButtonParent**.
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section1-step1-2.png)
+![Unity con il componente GridObjectCollection aggiornato](images/mr-learning-asa/asa-03-section1-step1-2.png)
 
 ## <a name="persisting-azure-spatial-anchors-between-app-sessions"></a>Mantenimento degli ancoraggi nello spazio di Azure tra sessioni dell'app
 
@@ -39,7 +39,7 @@ In questa sezione apprenderai come salvare e recuperare l'ID ancoraggio di Azure
 
 Nella finestra Hierarchy (Gerarchia) espandi l'oggetto **ButtonParent** e individua i due pulsanti denominati **SaveAzureAnchorIdToDisk** e **GetAzureAnchorIdFromDisk** :
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section2-step1-1.png)
+![Unity gli oggetti pulsante SaveAzureAnchorIdToDisk e GetAzureAnchorIdFromDisk selezionati](images/mr-learning-asa/asa-03-section2-step1-1.png)
 
 Segui la stessa procedura illustrata nelle istruzioni per la [configurazione dei pulsanti per il funzionamento della scena](mr-learning-asa-02.md#configuring-the-buttons-to-operate-the-scene) contenute nell'esercitazione precedente per configurare il componente **Interactable (Script)** (Con supporto per interazioni - Script) per ognuno dei due pulsanti:
 
@@ -66,9 +66,9 @@ In questa sezione apprenderai come condividere l'ID ancoraggio di Azure tra più
 
 Esistono diversi modi per trasferire gli ID ancoraggio di Azure da un dispositivo all'altro, inclusi i metodi descritti nella serie [Esercitazioni sulle funzionalità multiutente](mr-learning-sharing-02.md). In questo esempio userai un servizio Web semplice per caricare e scaricare gli ID ancoraggio tra dispositivi.
 
-Nella finestra Hierarchy (Gerarchia) espandi l'oggetto **ButtonParent** .   Individua i due pulsanti denominati **ShareAzureAnchorIdToNetwork** e **GetAzureAnchorIdFromNetwork** :
+Nella finestra Hierarchy (Gerarchia) espandi l'oggetto **ButtonParent**.   Individua i due pulsanti denominati **ShareAzureAnchorIdToNetwork** e **GetAzureAnchorIdFromNetwork** :
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section3-step1-1.png)
+![Unity con gli oggetti pulsante ShareAzureAnchorIdToNetwork e GetAzureAnchorIdFromNetwork selezionati](images/mr-learning-asa/asa-03-section3-step1-1.png)
 
 Segui la stessa procedura illustrata nelle istruzioni per la [configurazione dei pulsanti per il funzionamento della scena](mr-learning-asa-02.md#configuring-the-buttons-to-operate-the-scene) contenute nell'esercitazione precedente per configurare il componente **Interactable (Script)** (Con supporto per interazioni - Script) per ognuno dei due pulsanti:
 

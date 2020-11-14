@@ -1,18 +1,18 @@
 ---
 title: Esercitazioni introduttive - 7 Interazione con oggetti 3D
-description: Questo corso illustra come usare Mixed Reality Toolkit (MRTK) per creare un'applicazione di realtà mista.
+description: In questo corso viene illustrato come usare Mixed Reality Toolkit (MRTK) per interagire con oggetti 3D.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 0cedd731fc795341532a8a330f4fdcce9fba47b0
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1e91cc97f68a4d4b5bcb015184e96582533d1f96
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697617"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353519"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interazione con oggetti 3D
 
@@ -53,7 +53,7 @@ Nella finestra Hierarchy (Gerarchia) espandi l'oggetto RoverExplorer > **RoverPa
 * Componente **NearInteractionGrabbable**
 * Componente **Part Assembly Controller (Script)** (Controllo assembly parti - script)
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-1.png)
+![Unity con RoverAssembly e tutti gli oggetti parte rover selezionati e i componenti aggiunti](images/mr-learning-base/base-07-section1-step1-1.png)
 
 > [!TIP]
 > Per selezionare più oggetti non adiacenti, tieni premuto CTRL mentre usi il mouse per selezionare un oggetto.
@@ -68,14 +68,14 @@ Con tutti gli oggetti parte rover e l'oggetto RoverAssembly ancora selezionati, 
 
 * Dall'elenco a discesa **Two Handed Manipulation Type** (Tipo di manipolazione a due mani) deseleziona Scale (Scala) in modo che siano abilitate solo le opzioni **Move** (Sposta) e **Rotate** (Ruota)
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-2.png)
+![Unity con Two Handed Manipulation Type configurato](images/mr-learning-base/base-07-section1-step1-2.png)
 
 > [!NOTE]
 > A questo punto hai abilitato la manipolazione per tutti gli oggetti parte rover e per l'oggetto RoverAssembly.
 
 Nella finestra Project (Progetto) passa alla cartella **Assets (Asset)**  > **MRTK** > **SDK** > **StandardAssets** > **Audio** per individuare i clip audio:
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-3.png)
+![Finestra Project di Unity con la cartella Audio selezionata](images/mr-learning-base/base-07-section1-step1-3.png)
 
 Nella finestra Hierarchy (Gerarchia) seleziona di nuovo gli **oggetti parte rover** e quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **Audio Sources** (Origini audio) e configuralo come indicato di seguito:
 
@@ -83,13 +83,13 @@ Nella finestra Hierarchy (Gerarchia) seleziona di nuovo gli **oggetti parte rove
 * Deseleziona la casella di controllo **Play On Awake** (Riproduci quando operativo)
 * Modifica il campo **Spatial Blend** (Blend spaziale) impostandolo su 1
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-4.png)
+![Unity con tutte le parti rover selezionate e il componente Audio Source aggiunto e configurato](images/mr-learning-base/base-07-section1-step1-4.png)
 
 Nella finestra Hierarchy (Gerarchia) espandi l'oggetto RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** in modo da rivelare tutti gli oggetti suggerimento di posizionamento, quindi scegli la prima parte rover, RoverParts > **Camera_Part** , e configura il componente **Part Assembly Controller (Script)** (Controllo assembly parti - script) come indicato di seguito:
 
 * Assegna l'oggetto **Camera_PlacementHint** al campo **Location To Place** (Punto di posizionamento)
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-5.png)
+![Unity con il componente PartAssemblyController di Camera_Part configurato](images/mr-learning-base/base-07-section1-step1-5.png)
 
 **Ripeti** questo passaggio per ognuno degli oggetti parte rover rimanenti e per l'oggetto RoverAssembly per configurare il componente **Part Assembly Controller (Script)** (Controllo assembly parti - script) come indicato di seguito:
 
@@ -104,11 +104,11 @@ Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto pulsante RoverExplorer 
 * Assegna l'oggetto **RoverAssembly** al campo **None (Object)** (Nessuno - Oggetto)
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **PartAssemblyController** > **ResetPlacement ()** per impostare questa funzione come l'azione da eseguire quando viene attivato l'evento
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-6.png)
+![Unity con l'evento OnClick dell'oggetto pulsante Reset configurato](images/mr-learning-base/base-07-section1-step1-6.png)
 
 Se attivi ora la modalità di gioco, puoi usare l'interazione da vicino o da lontano per posizionare le parti rover sul rover. Quando è vicina al suggerimento di posizionamento corrispondente, la parte si blocca in posizione e diventa parte del rover. Per reimpostare i posizionamenti, puoi scegliere il pulsante Reset (Reimposta):
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-7.png)
+![Visualizzazione suddivisa della modalità di riproduzione in Unity con il pulsante Reset selezionato](images/mr-learning-base/base-07-section1-step1-7.png)
 
 Per altre informazioni sul componente Object Manipulator (Manipolatore oggetti) e sulle relative proprietà associate, puoi visitare la guida su [tale componente](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) nel [portale della documentazione di MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
@@ -125,7 +125,7 @@ Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **RoverExplorer** , qui
 
 **Deseleziona** quindi la casella di controllo accanto a entrambi i componenti in modo che siano **disabilitati** per impostazione predefinita:
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-1.png)
+![Unity con l'oggetto RoverExplorer selezionato e i componenti aggiunti e disabilitati](images/mr-learning-base/base-07-section2-step1-1.png)
 
 > [!NOTE]
 > La visualizzazione del cubo di delimitazione viene creata in fase di runtime e pertanto non è visibile prima di passare alla modalità di gioco.
@@ -145,7 +145,7 @@ Nella finestra Hierarchy (Gerarchia) espandi l'oggetto Menu > **ButtonCollection
 * Verifica che la casella di controllo dell'argomento sia **selezionata**
 * Lascia per **Icon** (Icona) l'impostazione di icona 'cubo con cubo di delimitazione'
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-2.png)
+![Unity con l'oggetto pulsante BoundingBox_Enable selezionato e il componente Button Config Helper configurato](images/mr-learning-base/base-07-section2-step1-2.png)
 
 Rinomina il quarto e ultimo pulsante come **BoundingBox_Disable** , quindi nella finestra Inspector (Controllo) configura il componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
 
@@ -159,11 +159,11 @@ Rinomina il quarto e ultimo pulsante come **BoundingBox_Disable** , quindi nella
 * Verifica che la casella di controllo dell'argomento sia **deselezionata**
 * Modifica l'impostazione di **Icon** (Icona) configurando l'icona 'cubo con cubo di delimitazione'
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-3.png)
+![Unity con l'oggetto pulsante BoundingBox_Disable selezionato e il componente Button Config Helper configurato](images/mr-learning-base/base-07-section2-step1-3.png)
 
 Se ora attivi la modalità di gioco e abiliti il cubo di delimitazione facendo clic sul pulsante Enable (Abilita), puoi usare l'interazione da vicino o da lontano per spostare, ruotare e ridimensionare il cubo di delimitazione e usare il pulsante Disable (Disabilita) per disabilitare nuovamente il cubo di delimitazione:
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-4.png)
+![Visualizzazione suddivisa della modalità di riproduzione in Unity con manipolazione del cubo di delimitazione in corso](images/mr-learning-base/base-07-section2-step1-4.png)
 
 Per altre informazioni sul componente Bounding Box (Cubo di delimitazione) e sulle relative proprietà associate, puoi visitare la guida su [tale componente](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html) nel [portale della documentazione di MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 

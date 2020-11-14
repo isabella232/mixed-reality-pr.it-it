@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 07/08/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, beta, streaming, comunicazione remota, realtà mista, sviluppo, guida introduttiva, funzionalità, nuovo progetto, emulatore, documentazione, guide, caratteristiche, ologrammi, sviluppo di giochi
-ms.openlocfilehash: d7c94ebb7fc6cc16916f1f577b8e54e374b9db1f
-ms.sourcegitcommit: e1de7caa7bd46afe9766186802fa4254d33d1ca6
+ms.openlocfilehash: 09d90af95d9433772563fdc292f31d118b3dd846
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92240768"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573295"
 ---
 # <a name="winrt-in-unreal"></a>WinRT in Unreal
 
@@ -46,7 +46,7 @@ Nel corso dello sviluppo di HoloLens potrebbe essere necessario scrivere una fun
 3. Prima di aggiungere il codice, è necessario aggiornare le proprietà del progetto per assicurarsi che il codice WinRT necessario possa essere compilato: 
     * Fare clic con il pulsante destro del mouse sul progetto HoloLensWinrtDLL e scegliere **Proprietà** .  
     * Modificare l'elenco a discesa **configurazione** in **tutte le configurazioni** e l'elenco a discesa **piattaforma** su **tutte le piattaforme**  
-    * In **proprietà di configurazione> C/C++> tutte le opzioni**:
+    * In **proprietà di configurazione> C/C++> tutte le opzioni** :
         * Aggiungere **await** a **Opzioni aggiuntive** per assicurarsi che sia possibile attendere le attività asincrone  
         * Modificare lo standard del **linguaggio c++** allo **standard ISO c++ 17 (/STD: c++ 17)** per includere qualsiasi codice WinRT
 
@@ -87,7 +87,7 @@ public:
 > [!NOTE]
 > Tutto il codice WinRT viene archiviato in **HoloLensWinrtDLL. cpp,** quindi Unreal non tenta di includere codice WinRT quando fa riferimento all'intestazione. 
 
-3. Sempre in **HoloLensWinrtDLL. cpp**aggiungere un corpo della funzione per OpenFileDialogue () e tutto il codice supportato: 
+3. Sempre in **HoloLensWinrtDLL. cpp** aggiungere un corpo della funzione per OpenFileDialogue () e tutto il codice supportato: 
 
 ```cpp
 // sgm is declared outside of OpenFileDialogue so it doesn't
@@ -180,12 +180,12 @@ Per il collegamento e l'uso di una DLL in Unreal è necessario un progetto C++. 
 > [!NOTE]
 > È stata ora creata una soluzione nella stessa directory del file uproject insieme a un nuovo script di compilazione denominato source/ConsumeWinRT/ConsumeWinRT. Build. cs.
 
-2. Aprire la soluzione, cercare la cartella **Games/ConsumeWinRT/source/ConsumeWinRT** e aprire **ConsumeWinRT.Build.cs**:
+2. Aprire la soluzione, cercare la cartella **Games/ConsumeWinRT/source/ConsumeWinRT** e aprire **ConsumeWinRT.Build.cs** :
 
 ![Apertura del file ConsumeWinRT.build.cs](images/unreal-winrt-img-05.png)
 
 ### <a name="linking-the-dll"></a>Collegamento della DLL
-1. In **ConsumeWinRT.Build.cs**aggiungere una proprietà per trovare il percorso di inclusione per la dll (la directory contenente HoloLensWinrtDLL. h). La DLL si trova in una directory figlio del percorso di inclusione, quindi questa proprietà verrà usata come dir radice binaria:
+1. In **ConsumeWinRT.Build.cs** aggiungere una proprietà per trovare il percorso di inclusione per la dll (la directory contenente HoloLensWinrtDLL. h). La DLL si trova in una directory figlio del percorso di inclusione, quindi questa proprietà verrà usata come dir radice binaria:
 
 ```cs
 using System.IO;
@@ -240,17 +240,32 @@ public ConsumeWinRT(ReadOnlyTargetRules target) : base(Target)
 }
 ```
 
-3. Aprire **WinrtActor. h** e aggiungere due definizioni di funzione, una che può essere usata da un progetto e un'altra che usa il codice dll: 
+3. Aprire **WinrtActor. h** e aggiungere una definizione di funzione, una che chiamerà da un progetto: 
+
 ```cpp
 public:
     UFUNCTION(BlueprintCallable)
-    static void OpenFileDialogue;
+    static void OpenFileDialogue();
 ```
 
-4. Aprire **WinrtActor. cpp** e caricare la dll in BeginPlay: 
+4. Aprire **WinrtActor. cpp** e aggiornare BeginPlay per caricare la dll: 
 
 ```cpp
-void AWinfrtActor::BeginPlay()
+void AWinrtActor::BeginPlay()
+{
+    Super::BeginPlay();
+
+    // Gets path to DLL location
+    const FString BinDir = FPaths::ProjectDir() / 
+        "ThirdParty" / "HoloLensWinrtDLL" / 
+        "arm64" / "Release" / "HoloLensWinrtDLL";
+
+    // Loads DLL into application
+    void * dllHandle = FPlatformProcess::GetDllHandle(
+        *(BinDir / "HoloLensWinrtDLL.dll"));
+}
+
+void AWinrtActor::OpenFileDialogue()
 {
 #if PLATFORM_HOLOLENS
     HoloLensWinrtDLL::OpenFileDialogue();
@@ -268,11 +283,11 @@ void AWinfrtActor::BeginPlay()
 
 ![Inserimento del WinrtActor nella scena](images/unreal-winrt-img-06.png)
 
-2. Nel **mondo**, trovare i **WindrtActor** precedentemente rilasciati nella scena e trascinarli nel progetto di livello: 
+2. Nel **mondo** , trovare i **WindrtActor** precedentemente rilasciati nella scena e trascinarli nel progetto di livello: 
 
 ![Trascinamento del WinrtActor nel progetto di livello](images/unreal-winrt-img-07.png)
 
-3. Nel progetto Level trascinare il nodo output da WinrtActor, cercare **Apri file Dialog**, quindi indirizzare il nodo da qualsiasi input utente.  In questo caso, la finestra di dialogo Apri file viene chiamata da un evento vocale: 
+3. Nel progetto Level trascinare il nodo output da WinrtActor, cercare **Apri file Dialog** , quindi indirizzare il nodo da qualsiasi input utente.  In questo caso, la finestra di dialogo Apri file viene chiamata da un evento vocale: 
 
 ![Configurazione dei nodi nel progetto di livello](images/unreal-winrt-img-08.png)
 

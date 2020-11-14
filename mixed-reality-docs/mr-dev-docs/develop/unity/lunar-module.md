@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, app di esempio, progettazione, HoloLens
-ms.openlocfilehash: 4ab408d23ca932e73c0939f8a5cdc48184666f78
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d4014e1300b60d61dfba38ee5c5b0c8a530fbe08
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684669"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573255"
 ---
 # <a name="lunar-module"></a>Modulo lunare
 
@@ -19,6 +19,11 @@ ms.locfileid: "91684669"
 >Questo articolo illustra un esempio esplorativo creato nei [laboratori di progettazione della realtà mista](https://github.com/Microsoft/MRDesignLabs_Unity), un posto in cui si condividono le informazioni e suggerimenti per lo sviluppo di app di realtà miste. Gli articoli e il codice correlati alla progettazione si evolveranno Man mano che si effettuano nuove individuazioni.
 
 Il [modulo Lunar](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) è un'app di esempio Open Source di Microsoft Mixed Reality Design Labs. Con questo progetto è possibile apprendere come estendere i movimenti di base di HoloLens con il rilevamento bidirezionale e l'input del controller Xbox, creare oggetti reattivi per il mapping di superficie e la ricerca di piani e implementare semplici sistemi di menu. Tutti i componenti del progetto sono disponibili per l'uso nella propria esperienza di app in realtà mista.
+
+## <a name="demo-video"></a>Video dimostrativo 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IcIP]
+
+Registrato con HoloLens 2 con l'acquisizione di realtà mista
 
 ## <a name="rethinking-classic-experiences-for-windows-mixed-reality"></a>Ripensare le esperienze classiche per la realtà mista di Windows
 
@@ -62,7 +67,7 @@ Richiedere all'utente di apprendere lo schema di input, controllare la spedizion
 
 L'input di base di HoloLens ha solo due movimenti: [tocco aereo e Bloom](../../design/gaze-and-commit.md#composite-gestures). Gli utenti non devono ricordare le sfumature contestuali o un elenco di movimenti specifici che rendono l'interfaccia della piattaforma sia versatile che facile da imparare. Sebbene il sistema possa esporre solo questi due movimenti, HoloLens come dispositivo è in grado di tenere traccia di due lancette contemporaneamente. Il nostro inno a Lunar Lander è un' [app immersiva](../../design/app-model.md) , che significa che abbiamo la possibilità di estendere il set di movimenti di base per sfruttare due mani e aggiungere i nostri mezzi tattili deliziosi per la navigazione dei moduli lunari.
 
-Tornando allo schema di controllo originale, **era necessario risolvere i problemi di spinta e rotazione** . L'avvertenza è la rotazione nel nuovo contesto che aggiunge un asse aggiuntivo (tecnicamente due, ma l'asse Y è meno importante per l'atterraggio). I due movimenti di spedizione distinti si prestano naturalmente per essere mappati a ogni mano:
+Tornando allo schema di controllo originale, **era necessario risolvere i problemi di spinta e rotazione**. L'avvertenza è la rotazione nel nuovo contesto che aggiunge un asse aggiuntivo (tecnicamente due, ma l'asse Y è meno importante per l'atterraggio). I due movimenti di spedizione distinti si prestano naturalmente per essere mappati a ogni mano:
 
 ![Toccare e trascinare movimento per ruotare il lander su tutti e tre gli assi](images/module-handdrag.gif)<br>
 *Toccare e trascinare movimento per ruotare il lander su tutti e tre gli assi*
@@ -73,7 +78,7 @@ La levetta sul computer arcade originale è stata mappata a una scala di valori,
 
 **Rotazione**
 
-Questo è un po' più complesso. Con i pulsanti "ruota" olografici per toccare Crea un'esperienza terribile. Non esiste un controllo fisico da sfruttare, quindi il comportamento deve derivare dalla manipolazione di un oggetto che rappresenta il lander o dal lander stesso. È stato creato un metodo che usa il tocco e il trascinamento, che consente a un utente di eseguire in modo efficace il push e il pull nella direzione desiderata. Ogni volta che un utente tocca e possiede, il punto nello spazio in cui è stato avviato il movimento diventa l'origine per la rotazione. Il trascinamento dall'origine converte il Delta della traslazione della mano (X, Y, Z) e lo applica al delta dei valori di rotazione del lander. O più semplicemente, *il trascinamento di sinistra <-> a destra, verso l'alto < > verso il basso, < > di nuovo negli spazi ruota la nave di conseguenza* .
+Questo è un po' più complesso. Con i pulsanti "ruota" olografici per toccare Crea un'esperienza terribile. Non esiste un controllo fisico da sfruttare, quindi il comportamento deve derivare dalla manipolazione di un oggetto che rappresenta il lander o dal lander stesso. È stato creato un metodo che usa il tocco e il trascinamento, che consente a un utente di eseguire in modo efficace il push e il pull nella direzione desiderata. Ogni volta che un utente tocca e possiede, il punto nello spazio in cui è stato avviato il movimento diventa l'origine per la rotazione. Il trascinamento dall'origine converte il Delta della traslazione della mano (X, Y, Z) e lo applica al delta dei valori di rotazione del lander. O più semplicemente, *il trascinamento di sinistra <-> a destra, verso l'alto < > verso il basso, < > di nuovo negli spazi ruota la nave di conseguenza*.
 
 Poiché il HoloLens può tenere traccia di due mani, la rotazione può essere assegnata a destra mentre la spinta viene controllata da sinistra. Finesse è il fattore determinante per il successo in questo gioco. L' *aspetto* di queste interazioni è la massima priorità assoluta. In particolare nel contesto dell'immersione tattile. Una nave che reagisce troppo rapidamente potrebbe essere inutilmente difficile da gestire, mentre un tempo troppo lento richiederebbe che l'utente "push e pull" sulla nave per un periodo di tempo molto lungo.
 
@@ -81,12 +86,12 @@ Poiché il HoloLens può tenere traccia di due mani, la rotazione può essere as
 
 Sebbene i movimenti della mano sul HoloLens forniscano un nuovo metodo di controllo granulare, c'è ancora una certa mancanza di feedback tattile "vero" ottenuto dai controlli analoghi. La connessione di un controller di gioco Xbox consente di riportare questo senso di fisici, sfruttando al tempo stesso i bastoncini di controllo per mantenere un controllo accurato.
 
-Esistono diversi modi per applicare lo schema di controllo relativamente diretto al controller Xbox. Poiché si sta tentando di rimanere nel modo più vicino possibile alla configurazione del arcade originale, le mappe di **Spinta** migliorano con il pulsante trigger. Questi pulsanti sono controlli analoghi, ovvero hanno più di semplici stati *on e off* , rispondono effettivamente al grado di pressione su di essi. In questo modo si ottiene un costrutto simile a quello della **levetta di Spinta** . A differenza del gioco originale e del movimento della mano, questo controllo taglierà la spinta della nave una volta che un utente smette di esercitare pressioni sul trigger. Offre comunque all'utente lo stesso livello di raffinatezza del gioco arcade originale.
+Esistono diversi modi per applicare lo schema di controllo relativamente diretto al controller Xbox. Poiché si sta tentando di rimanere nel modo più vicino possibile alla configurazione del arcade originale, le mappe di **Spinta** migliorano con il pulsante trigger. Questi pulsanti sono controlli analoghi, ovvero hanno più di semplici stati *on e off* , rispondono effettivamente al grado di pressione su di essi. In questo modo si ottiene un costrutto simile a quello della **levetta di Spinta**. A differenza del gioco originale e del movimento della mano, questo controllo taglierà la spinta della nave una volta che un utente smette di esercitare pressioni sul trigger. Offre comunque all'utente lo stesso livello di raffinatezza del gioco arcade originale.
 
 ![Viene eseguito il mapping di levetta a sinistra per l'imbardata e il roll, a destra levetta è mappato a Pitch and roll](images/thumbsticksidebyside.gif)<br>
 *Viene eseguito il mapping di levetta a sinistra per l'imbardata e il roll; il levetta destro è mappato a Pitch and roll*
 
-Il doppio ThumbSticks si presta naturalmente a controllare la rotazione delle spedizioni. Sfortunatamente, sono disponibili 3 assi su cui la nave può ruotare e due ThumbSticks che supportano entrambi due assi. Questa mancata corrispondenza indica che uno levetta controlla un asse; in alternativa, è presente una sovrapposizione di assi per ThumbSticks. La soluzione precedente si è risentita "Broken" poiché ThumbSticks incorporava intrinsecamente i valori X e Y locali. La seconda soluzione richiedeva alcuni test per individuare gli assi ridondanti che si ritengono più naturali. L'esempio finale usa l' *imbardata* e il *Roll* (assi Y e x) per la levetta sinistra e il *pitch* and *Roll* (assi Z e x) per il levetta destro. Si tratta di una cosa più naturale, perché il *Roll* sembra essere abbinato in modo indipendente con *imbardata* e *pitch* . Si noti che l'uso di entrambi ThumbSticks per *Roll* viene eseguito anche per raddoppiare il valore di rotazione. è piuttosto divertente avere i cicli del lander.
+Il doppio ThumbSticks si presta naturalmente a controllare la rotazione delle spedizioni. Sfortunatamente, sono disponibili 3 assi su cui la nave può ruotare e due ThumbSticks che supportano entrambi due assi. Questa mancata corrispondenza indica che uno levetta controlla un asse; in alternativa, è presente una sovrapposizione di assi per ThumbSticks. La soluzione precedente si è risentita "Broken" poiché ThumbSticks incorporava intrinsecamente i valori X e Y locali. La seconda soluzione richiedeva alcuni test per individuare gli assi ridondanti che si ritengono più naturali. L'esempio finale usa l' *imbardata* e il *Roll* (assi Y e x) per la levetta sinistra e il *pitch* and *Roll* (assi Z e x) per il levetta destro. Si tratta di una cosa più naturale, perché il *Roll* sembra essere abbinato in modo indipendente con *imbardata* e *pitch*. Si noti che l'uso di entrambi ThumbSticks per *Roll* viene eseguito anche per raddoppiare il valore di rotazione. è piuttosto divertente avere i cicli del lander.
 
 Questa app di esempio dimostra come il riconoscimento spaziale e l'immersione tattile possano modificare significativamente un'esperienza grazie alle modalità di input estendibili della realtà mista di Windows. Anche se Lunar Lander può essere prossimo a 40 anni, i concetti esposti con tale piccolo ottagono con le gambe rimarranno sempre attivi. Quando si immagina il futuro, perché non esaminare il passato?
 
@@ -99,11 +104,12 @@ Questa app di esempio dimostra come il riconoscimento spaziale e l'immersione ta
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60"><img alt="Picture of Addison Linville" width="60" height="60" src="images/addisonlinville-tile-60px.jpg"></td>
-<td style="border-style: none"><b>Addison Linville</b><br>Progettazione UX @Microsoft</td>
+<td style="border-style: none"><b>Addison Linville</b><br>Designer di esperienza utente @Microsoft</td>
 </tr>
 </table>
 
 ## <a name="see-also"></a>Vedere anche
-* [Controller del movimento](../../design/motion-controllers.md)
-* [Puntamento con la testa e commit](../../design/gaze-and-commit.md)
-* [Tipi di app di realtà mista](../../design/types-of-mixed-reality-apps.md)
+* [Hub di esempi MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(eseguire il download da Microsoft Store in HoloLens 2)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [Superfici](sampleapp-surfaces.md) - [(eseguire il download da Microsoft Store in HoloLens 2)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
+* [Tavola periodica degli elementi 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [Galaxy Explorer 2.0](galaxy-explorer-update.md)

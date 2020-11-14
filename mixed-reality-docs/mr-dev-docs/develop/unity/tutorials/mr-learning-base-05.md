@@ -1,18 +1,18 @@
 ---
 title: Esercitazioni introduttive - 5. Creazione di contenuto dinamico tramite risolutori
-description: Questo corso illustra come usare Mixed Reality Toolkit (MRTK) per creare un'applicazione di realtà mista.
+description: In questo corso viene illustrato come usare i risolutori di Mixed Reality Toolkit (MRTK) per creare contenuto dinamico.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: c6ddbbd8bb65aa93c80f1e4499e976c7c24af7ec
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 64b5c3c719ce72260a10226d22c178d4016e403b
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293215"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353529"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Creazione di contenuto dinamico tramite risolutori
 
@@ -30,7 +30,7 @@ In questa esercitazione verrà analizzato come posizionare in modo dinamico gli 
 
  I risolutori di MRTK si trovano nella cartella MRTK SDK. Per visualizzare i risolutori disponibili in un progetto, nella finestra Project (Progetto) passa ad **Assets (Asset)**  > **MRTK** > **SDK** > **Features (Funzionalità)**  > **Utilities (Utilità)**  > **Solvers** (Risolutori):
 
-![mr-learning-base](images/mr-learning-base/base-05-section1-step1-1.png)
+![Finestra Project di Unity con la cartella Solvers selezionata](images/mr-learning-base/base-05-section1-step1-1.png)
 
 In questa esercitazione verrà esaminata l'implementazione dei risolutori Directional Indicator (Indicatore direzionale) e Tap To Place (Tocco per posizionamento). Per altre informazioni sull'intera gamma di risolutori disponibili in MRTK, puoi fare riferimento alla guida [Risolutori](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) nel [portale della documentazione di MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
@@ -41,14 +41,14 @@ In questa esercitazione verrà esaminata l'implementazione dei risolutori Direct
 
 Nella finestra Project (Progetto) passa alla cartella **Assets (Asset)**  > **MRTK.Tutorials.GettingStarted** > **Prefabs** (Prefab), fai clic sul prefab **Chevron** e trascinalo sulla finestra Hierarchy (Gerarchia), quindi nella sezione Transform (Trasformazione) imposta **Position** (Posizione) su X = 0, Y = 0, Z = 2 per posizionarlo accanto all'oggetto RoverExplorer:
 
-![mr-learning-base](images/mr-learning-base/base-05-section2-step1-1.png)
+![Unity con il prefab Chevron appena aggiunto selezionato](images/mr-learning-base/base-05-section2-step1-1.png)
 
 > [!TIP]
 > Se ritieni che la fotocamera o altre icone nella scena nascondano gli oggetti o siano elementi di distrazione, puoi nasconderli <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">disattivando il menu Gizmos</a> come illustrato nell'immagine precedente. Per altre informazioni sul menu Gizmos e su come è possibile usarlo per ottimizzare la vista della scena, puoi fare riferimento alla documentazione relativa al <a href="https://docs.unity3d.com/Manual/GizmosMenu.html" target="_blank">menu Gizmos</a> di Unity.
 
 Rinominare l'oggetto Chevron **Indicator** (Indicatore) appena aggiunto, quindi nella finestra Inspector (Controllo) usare il pulsante **Add Component** (Aggiungi componente) per aggiungere **DirectionalIndicator** :
 
-![mr-learning-base](images/mr-learning-base/base-05-section2-step1-2.png)
+![Unity con il componente risolutore DirectionalIndicator aggiunto](images/mr-learning-base/base-05-section2-step1-2.png)
 
 > [!NOTE]
 > Quando aggiungi un risolutore, in questo caso il componente DirectionalIndicator, viene aggiunto automaticamente il componente SolverHandler perché è richiesto dai risolutori.
@@ -62,13 +62,13 @@ Configura i componenti DirectionalIndicator e SolverHandler nel modo seguente:
 * Assegna **RoverExplorer** a **Directional Target** (Destinazione direzionale) del componente **DirectionalIndicator** trascinandolo dalla finestra Hierarchy (Gerarchia) sul campo **None (Transform)** (Nessuna - Trasformazione)
 * Modifica il valore di **View Offset** (Offset visualizzazione) impostandolo su 0,2
 
-![mr-learning-base](images/mr-learning-base/base-05-section2-step1-3.png)
+![Unity con il componente risolutore DirectionalIndicator configurato](images/mr-learning-base/base-05-section2-step1-3.png)
 
 Seleziona il pulsante Play (Riproduci) per attivare la modalità di gioco e tieni premuto il pulsante destro del mouse mentre muovi il mouse verso sinistra o verso destra per ruotare la direzione dello sguardo. Potrai osservare quanto segue:
 
 * Quando allontani lo sguardo dall'oggetto RoverExplorer, viene visualizzato l'oggetto Indicator (Indicatore) che punta verso l'oggetto RoverExplorer
 
-![mr-learning-base](images/mr-learning-base/base-05-section2-step1-4.png)
+![Visualizzazione suddivisa della modalità di riproduzione in Unity con il risolutore DirectionalIndicator in uso](images/mr-learning-base/base-05-section2-step1-4.png)
 
 > [!NOTE]
 > Se il raggio della fotocamera non è visibile nella finestra della scena, verifica che sia attivato il menu Gizmos, come mostrato nell'immagine precedente.
@@ -87,7 +87,7 @@ Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto RoverExplorer > **Rover
 * Seleziona la casella di controllo **Keep Orientation Vertical** (Mantieni orientamento verticale)
 * Dall'elenco a discesa **Magnetic Surfaces (Superfici magnetiche)**  > **Element 0 (Elemento 0)** deseleziona tutte le opzioni tranne **Spatial Awareness** (Consapevolezza spaziale)
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-1.png)
+![Unity con il componente risolutore TapToPlace aggiunto e configurato](images/mr-learning-base/base-05-section3-step1-1.png)
 
 > [!NOTE]
 > L'impostazione Magnetic Surfaces (Superfici magnetiche) determina quali oggetti possono essere rilevati dal componente Tap To Place (Script) (Tocco per posizionamento - script) quando viene posizionato un oggetto. Modificando l'impostazione in modo da definire solo Spatial Awareness (Consapevolezza spaziale), il componente Tap To Place (Script) (Tocco per posizionamento - script) potrà posizionare Rover solo su oggetti del livello di Unity denominato Spatial Awareness (Consapevolezza spaziale), che per impostazione predefinita è la mesh di consapevolezza spaziale generata da HoloLens.
@@ -99,7 +99,7 @@ Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto RoverExplorer > **Rover
 
 Con l'oggetto RoverAssembly ancora selezionato nella finestra Hierarchy (Gerarchia), nella finestra Inspector (Controllo) individua l'evento **On Placing Started ()** (All'avvio del posizionamento) e fai clic sull'icona **+** per aggiungere un nuovo evento:
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-2.png)
+![Unity con l'evento OnPlacingStarted di TapToPlace aggiunto](images/mr-learning-base/base-05-section3-step1-2.png)
 
 Configura l'evento come indicato di seguito:
 
@@ -107,7 +107,7 @@ Configura l'evento come indicato di seguito:
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **TapToPlace** > **float SurfaceNormalOffset** per aggiornare il valore della proprietà SurfaceNormalOffset quando viene attivato l'evento
 * Verifica che l'argomento sia impostato su **0**
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-3.png)
+![Unity con l'evento OnPlacingStarted di TapToPlace configurato](images/mr-learning-base/base-05-section3-step1-3.png)
 
 Nella finestra Hierarchy (Gerarchia) fai clic con il pulsante destro del mouse in un punto vuoto e scegli **3D Object (Oggetto 3D)**  > **Cube (Cubo)** per creare un oggetto temporaneo che rappresenta il terreno e configura il componente **Transform** (Trasformazione) come segue:
 
@@ -115,27 +115,27 @@ Nella finestra Hierarchy (Gerarchia) fai clic con il pulsante destro del mouse i
 * **Rotation** (Rotazione): X = 0, Y = 0, Z = 0
 * **Scale** (Scala): X = 10, Y = 0,2, Z = 10
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-4.png)
+![Unity con oggetto cubo temporaneo del terreno aggiunto e posizionato](images/mr-learning-base/base-05-section3-step1-4.png)
 
 Con il cubo temporaneo ancora selezionato nella finestra Hierarchy (Gerarchia), nella finestra Inspector (Controllo) usa l'elenco a discesa **Layers** (Livelli) per modificare l'impostazione del livello del cubo in modo da includere solo il livello **Spatial Awareness** (Consapevolezza spaziale):
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-5.png)
+![Unity con il livello dell'oggetto cubo temporaneo del terreno impostato su Spatial Awareness](images/mr-learning-base/base-05-section3-step1-5.png)
 
 Seleziona il pulsante Play (Riproduci) per attivare la modalità di gioco, quindi tieni premuto il pulsante destro del mouse mentre muovi il mouse verso il basso finché lo sguardo non incontra l'oggetto RoverAssembly:
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-6.png)
+![Visualizzazione suddivisa della modalità di riproduzione in Unity con lo sguardo fisso che incontra l'oggetto RoverAssembly](images/mr-learning-base/base-05-section3-step1-6.png)
 
 Fai clic con il pulsante sinistro del mouse per avviare il processo di tocco e posizionamento:
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-7.png)
+![Visualizzazione suddivisa della modalità di riproduzione in Unity con il posizionamento TapToPlace avviato](images/mr-learning-base/base-05-section3-step1-7.png)
 
 Tieni premuto il pulsante destro del mouse mentre muovi il mouse verso sinistra o verso destra per ruotare la direzione dello sguardo. Quando sei soddisfatto del posizionamento, fai clic con il pulsante sinistro del mouse:
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-8.png)
+![Visualizzazione suddivisa della modalità di riproduzione in Unity con il posizionamento TapToPlace terminato](images/mr-learning-base/base-05-section3-step1-8.png)
 
 Dopo aver testato la funzionalità in modalità di gioco, fai clic con il pulsante destro del mouse sull'oggetto Cube (Cubo) e scegli **Delete** (Elimina) per rimuoverlo dalla scena:
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-9.png)
+![Unity con cubo temporaneo del terreno selezionato e il menu popup contestuale Delete](images/mr-learning-base/base-05-section3-step1-9.png)
 
 ## <a name="congratulations"></a>Lezione completata
 

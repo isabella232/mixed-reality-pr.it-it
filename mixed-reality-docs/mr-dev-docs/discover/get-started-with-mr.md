@@ -7,16 +7,22 @@ ms.date: 07/29/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realtà mista, individuare, distribuire, indice, pagina di destinazione, progettazione, sviluppo, esercitazioni, app di esempio, nozioni di base, case study, risorse, procedure per HoloLens, progetti open source
-ms.openlocfilehash: 4894383b5e4ae600555e5bd31ebc4c6f041445f3
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: 34c78c277e0b184c0421c2bdd56ef13411a5bf29
+ms.sourcegitcommit: bd359c269add7ac76f0c2c26ca7caedba14749b1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915586"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94417836"
 ---
 # <a name="get-started-with-mixed-reality"></a>Informazioni di base sulla realtà mista
 
+![Colibrì virtuale con mano umana](images/01_MixedReality.png)
+
+L'ecosistema della realtà mista è un ambito in crescita costituito da interazioni fisiche e digitali, limitato solo dall'immaginazione. Per gli sviluppatori di qualsiasi livello, esperti o neofiti, è consigliabile cominciare il viaggio nella realtà mista con le risorse definite nei collegamenti riportati di seguito. Gli argomenti da affrontare sono molti ed è quindi opportuno iniziare subito. 
+
 ## <a name="choose-your-track"></a>Scegli il percorso
+
+Se si ha già in mente l'area della realtà mista che si vuole esplorare, è possibile imboccare direttamente uno dei percorsi seguenti. Mantenere tuttavia questa pagina tra i segnalibri in modo da poter fare riferimento al contenuto concettuale di base in un secondo momento.
 
 :::row:::
     :::column:::
@@ -34,64 +40,33 @@ ms.locfileid: "92915586"
         **[Sono uno sviluppatore](../develop/development.md)**<br>
         ottieni informazioni sugli strumenti e sull'architettura
     :::column-end:::
-    <!-- :::column:::
-       [![Jump in with Unity and MRTK](../images/Unity-tile.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)<br>
-        **[Jump in with Unity and MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)**<br>
-        Optimize Unity for MR development
-    :::column-end::: -->
 :::row-end:::
-
 
 <br>
 
 ---
-
-<br>
 
 ## <a name="understand-the-basics"></a>Comprendere i concetti di base
 
-Se non hai familiarità con la realtà mista, scoprirai che cos'è e quali funzionalità offre.
-
-
-![Colibrì virtuale con mano umana](images/01_MixedReality.png)
+Se non si ha familiarità con la realtà mista, è importante iniziare dalle basi ed elaborare in modo personale i concetti di base, le esperienze e le funzionalità. È stata creata una specie di percorso sequenziale per aiutare a creare una solida base per la progettazione e lo sviluppo di idee personalizzate in realtà mista.
 
 ### <a name="what-is-mixed-reality"></a>Ce cos'è la realtà mista?
 
+![Cosa puoi fare con la realtà mista?](images/HLS19_remoteAssistHologram_001.jpg)
 
-#### <a name="mixed-reality-is-a-spectrum"></a>[La realtà mista è uno spettro](../discover/mixed-reality.md)
-La realtà mista è il risultato della fusione del mondo fisico con il mondo digitale. Rappresenta l'evoluzione successiva nell'interazione tra uomo, computer e ambiente e apre la strada a possibilità che finora potevano essere solo immaginate.
+Prima di dedicarsi alla progettazione o allo sviluppo di applicazioni, è necessario comprendere cosa si intende per realtà mista. Questa sezione è stata pensata per consentire di acquisire familiarità con lo spettro della realtà mista, che comprende la gamma di input ambientali, le variazioni percettive, le problematiche di progettazione e i dispositivi necessari. 
+
+|  Concetto  |  Risultato  |
+| --- | --- |
+| [La realtà mista è uno spettro](../discover/mixed-reality.md) | La realtà mista combina il piano fisico con quello digitale e rappresenta la prossima tappa nell'evoluzione delle interazioni tra uomo, computer e ambiente |
+| [Che cos'è un ologramma?](../discover/hologram.md) | HoloLens ti consente di creare ologrammi, ovvero oggetti costituiti da luce e suono che vengono visualizzati nell'ambiente circostante proprio come se fossero oggetti reali. Gli ologrammi rispondono allo sguardo, ai movimenti e ai comandi vocali e possono interagire con le superfici reali circostanti |
+| [Espandere il processo di progettazione](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Durante la creazione di esperienze immersive è possibile espandere la concezione di progettazione con il pensiero spaziale, il bodystorming e la recitazione  |
 
 <br>
-
-
-#### <a name="what-is-a-hologram"></a>[Che cos'è un ologramma?](../discover/hologram.md)
-HoloLens ti consente di creare ologrammi, ovvero oggetti costituiti da luce e suono che vengono visualizzati nell'ambiente circostante proprio come se fossero oggetti reali. Gli ologrammi rispondono al tuo sguardo, ai movimenti e ai comandi vocali e possono interagire con le superfici reali che ti circondano. Con gli ologrammi puoi creare oggetti digitali che fanno parte del tuo mondo.
-
-<br>
-
 
 ---
 
-<br>
-
-![Cosa puoi fare con la realtà mista?](images/HLS19_remoteAssistHologram_001.jpg)
-
-### <a name="what-can-you-do-with-mixed-reality"></a>Cosa puoi fare con la realtà mista?
-
-#### <a name="a-new-vision-for-work"></a>[Una nuova visione del lavoro](https://dynamics.microsoft.com//mixed-reality/overview/)
-Microsoft sta creando applicazioni di realtà mista per offrire maggiori opportunità ai dipendenti e ottimizzare le operazioni. Il team di Dynamics 365 ha lavorato a una serie di progetti per dimostrare le varie possibilità, tra cui [Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview), [Layout](https://docs.microsoft.com/dynamics365/mixed-reality/layout/) e [Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/).
-
-<br>
-
-#### <a name="the-pursuit-of-more-personal-computing"></a>[La ricerca di un'esperienza di uso del computer più personale](../out-of-scope/case-study-the-pursuit-of-more-personal-computing.md)
-Le opportunità di domani diventano possibili creando prodotti oggi. Le soluzioni fornite da questi prodotti rivelano ciò che è necessario per anticipare il futuro. Con la realtà mista questo è particolarmente vero. La vera comprensione si ottiene con la pratica partecipando a lavori reali, ovvero con dispositivi reali, clienti reali e problemi reali.
-
-
-<br>
-
-
 ## <a name="see-how-industry-partners-are-using-mixed-reality"></a>Esempi di come i partner di settore usano la realtà mista
-
 
 :::row:::
     :::column:::
@@ -129,76 +104,37 @@ Le opportunità di domani diventano possibili creando prodotti oggi. Le soluzion
 
 <br>
 
-<br>
-
 ---
 
-<br>
+### <a name="explore-hololens-and-mixed-reality-services"></a>Esplorare HoloLens e i servizi di realtà mista
 
 ![Vista esplosa HoloLens](images/HoloLens2_ExplodedView_8k.png)
 
-## <a name="what-are-the-capabilities-of-hololens"></a>Quali sono le funzionalità di HoloLens?
+Se si è interessati a vedere come funzionano i diversi servizi e dispositivi hardware di realtà mista, vedere i collegamenti seguenti. Questi collegamenti consentono di accedere a diverse parti della documentazione Microsoft, ma è consigliabile aggiungere segnalibri e tornare a questa pagina per proseguire il percorso di progettazione e sviluppo.
 
-### <a name="immersive-ergonomic-instinctual-and-untethered"></a>[Coinvolgente, ergonomico, istintivo e senza cavi](https://www.microsoft.com//hololens/hardware)
-
-HoloLens 2 offre l'esperienza di realtà mista più comoda e coinvolgente disponibile, con soluzioni leader del settore in grado di offrire valore velocemente, il tutto potenziato dall'affidabilità, dalla sicurezza e dalla scalabilità del cloud e dei servizi di intelligenza artificiale di Microsoft.
-
-<br>
-
----
-
-<br>
-
-![esperienze di base](images/text_in_unity_viewingangle.jpg)
-
-## <a name="what-are-the-core-concepts-of-an-experience"></a>Quali sono i concetti di base di un'esperienza?
-
-### <a name="keep-the-user-comfortable---comfort"></a>[Fare in modo che l'utente possa operare comodamente (comfort)](../design/comfort.md)
-Per garantire il massimo comfort per i caschi con visore, è importante per i progettisti e gli sviluppatori creare e presentare contenuti in modo da simulare il funzionamento di questi segnali nel mondo naturale.
-
-<br>
-
-### <a name="how-the-user-sees-the-world---holographic-frame"></a>[Considerare il modo in cui l'utente vede il mondo (frame olografico)](../design/holographic-frame.md)
-Gli utenti vedono il mondo della realtà mista attraverso un riquadro di visualizzazione rettangolare controllato tramite il visore VR. In HoloLens quest'area rettangolare è detta frame olografico e consente agli utenti di visualizzare il contenuto digitale sovrapposto al mondo reale circostante.
-
-<br>
-
-### <a name="making-holographic-objects-feel-real---spatial-mapping"></a>[Far sembrare reali gli oggetti olografici (mapping spaziale)](../design/spatial-mapping.md)
-Il mapping spaziale consente di posizionare gli oggetti su superfici reali. In questo modo è possibile ancorare gli oggetti nel mondo dell'utente, sfruttando i segnali di profondità del mondo reale.
-
-<br>
-
-### <a name="suggesting-the-scale-of-an-object---scale"></a>[Suggerire la scala di un oggetto (scala)](../design/scale.md)
-Per visualizzare contenuto che sembri realistico in forma olografica, è importante simulare quanto più possibile le statistiche visive del mondo reale. Ciò significa incorporare il maggior numero possibile di segnali visivi utili (nel mondo reale) per comprendere dove si trovino gli oggetti, quanto siano grandi e di cosa siano fatti.
-
-
-<br>
-
----
+|  Concetto  |  Risultato  |
+| --- | --- |
+| [Hardware HoloLens](https://www.microsoft.com//hololens/hardware) | HoloLens 2 offre l'esperienza di realtà mista più comoda e immersiva possibile, con soluzioni leader del settore in grado di offrire valore velocemente, il tutto potenziato dall'affidabilità, dalla sicurezza e dalla scalabilità del cloud e dei servizi di intelligenza artificiale di Microsoft |
+| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | È possibile esplorare una vasta gamma di prodotti, tra cui [Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview), [Layout](https://docs.microsoft.com/dynamics365/mixed-reality/layout/) e [Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/), che possono potenziare le capacità dei dipendenti e ottimizzare le operazioni con Dynamics 365. Una vera comprensione si acquisisce con la pratica su attività, dispositivi e utenti reali |
+| [Servizi cloud di Azure](../develop/mixed-reality-cloud-services.md) | Per creare esperienze immersive accattivanti in un'ampia gamma di piattaforme, è possibile aggiungere consapevolezza spaziale, ancoraggi spaziali e rendering di modelli 3D complessi |
 
 ## <a name="what-would-you-like-to-do-next"></a>Quali operazioni vuoi eseguire successivamente?
 
-
 :::row:::
-    :::column:::
-       [![Prova](images/icon-hololensuser.jpg)](https://www.microsoft.com//windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)<br>
-        **[Prova la realtà mista](https://www.microsoft.com//windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)**<br>
-        Chiedi una demo di Realtà mista e HoloLens presso il tuo Microsoft Store.
-    :::column-end:::
     :::column:::
         [![Diventa un autore](images/icon-design.png)](../design/design.md)<br>
         **[Diventare un autore](../design/design.md)**<br>
         Di seguito vengono illustrati i concetti di base che ti serviranno per iniziare a progettare e a creare prototipi.
     :::column-end:::
-    :::column:::
-        [![Partecipa a un evento](images/icon-calendar.jpg)](../whats-new/sf-academy-events.md)<br>
-        **[Partecipa a un evento](../whats-new/sf-academy-events.md)**<br>
-        Vieni a vedere l'hardware e partecipa a un'esercitazione pratica per creare la tua prima applicazione HoloLens 2.
-    :::column-end:::
-    :::column:::
+        :::column:::
         [![Inizia a sviluppare](images/icon-developer.png)](../develop/development.md)<br>
         **[Inizia a sviluppare](../develop/development.md)**<br>
         Scegli un percorso di sviluppo in base al tuo livello di competenza, al tuo stile di lavoro o all'interesse per le piattaforme.
+    :::column-end:::
+    :::column:::
+        [![Partecipa a un evento](images/icon-calendar.jpg)](../whats-new/sf-academy-events.md)<br>
+        **[Partecipa a un evento](../whats-new/sf-academy-events.md)**<br>
+        Vieni a vedere l'hardware e partecipa all'esercitazione pratica per creare la tua prima applicazione HoloLens 2.
     :::column-end:::
 :::row-end:::
 
@@ -208,6 +144,10 @@ Per visualizzare contenuto che sembri realistico in forma olografica, è importa
 <br>
 
 
-
 >[!IMPORTANT]
 >Tutto il materiale per lo sviluppo della realtà mista viene fornito in questo sito solo per riferimento. L'applicazione, il relativo utilizzo e l'impatto sugli utenti finali sono esclusiva responsabilità dello sviluppatore dell'applicazione, che è tenuto anche ad assicurarsi che l'applicazione non causi disagi, lesioni o altri danni agli utenti finali, oltre che a includere le dichiarazioni di non responsabilità e le avvertenze appropriate. È sempre necessario che lo sviluppatore adotti le misure appropriate in fase di sviluppo e pubblicazione dell'applicazione per assicurarsi che l'applicazione sia sicura e soddisfi tutti gli obblighi previsti nel [Contratto per gli sviluppatori di app con Microsoft](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement).
+
+## <a name="see-also"></a>Vedere anche
+* [Dettagli sull'hardware dei visori VR immersive](immersive-headset-hardware-details.md)
+* [Risorse della community](community.md)
+* [Guida per appassionati di VR](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/)

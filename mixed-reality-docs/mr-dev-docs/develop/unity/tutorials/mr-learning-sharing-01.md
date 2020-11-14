@@ -1,20 +1,20 @@
 ---
-title: Esercitazioni sulle funzionalità multiutente - 1. Introduzione
-description: In questo corso viene illustrato come implementare esperienze condivise multiutente in un'applicazione HoloLens 2.
+title: Esercitazioni sulle funzionalità multiutente - 1. Introduzione alle esercitazioni sulle funzionalità multiutente
+description: In questo corso viene illustrato come implementare esperienze multiutente condivise in un'applicazione HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 179ed341ffc2e34b94da887dd4c52d33bec6834e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 0a94bd7c939315f8c407b1f238c124e6c0c6a964
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701688"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353409"
 ---
-# <a name="1-introduction"></a>1. Introduzione
+# <a name="1-introduction-to-the-multi-user-capabilities-tutorials"></a>1. Introduzione alle esercitazioni sulle funzionalità multiutente
 
 ## <a name="overview"></a>Panoramica
 

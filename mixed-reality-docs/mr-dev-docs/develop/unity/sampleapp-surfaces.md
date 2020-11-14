@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: Realtà mista di Windows, HoloLens, MRTK, progettazione, app di esempio, controlli
-ms.openlocfilehash: ee410e16a578efa53a38da2fb6b6477e109ac101
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1c6cb4579bbd3d6124cf36b21226ffa803f39f00
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690524"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573185"
 ---
 # <a name="surfaces"></a>Superfici
 
@@ -21,6 +21,11 @@ ms.locfileid: "91690524"
 [Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)  è un'app di esempio Open Source di Microsoft Mixed Reality Design Labs. Esplora il modo in cui è possibile creare una sensazione tattile con la traccia a mano visiva, audio e completamente articolata.
 
 ![Superfici](images/MRDL_Surfaces_1.jpg)
+
+## <a name="demo-video"></a>Video dimostrativo 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IhWQ]
+
+Registrato con HoloLens 2 con l'acquisizione di realtà mista
 
 ## <a name="about-the-app"></a>Informazioni sull'app
 Surfaces illustra come usare il sistema di input MRTK (Mixed Reality Toolkit) e i blocchi predefiniti per creare un'esperienza di app per HoloLens 2. In questo progetto, è possibile trovare gli esempi seguenti:
@@ -47,11 +52,13 @@ https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0#activetab=pivot:overview
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
-<td style="border-style: none"><b>Dong Yoon Park</b><br>Progettazione UX @Microsoft</td>
+<td style="border-style: none"><b>Dong Yoon Park</b><br>Designer di esperienza utente @Microsoft</td>
 </tr>
 </table>
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Oggetto che supporta interazioni](../../design/interactable-object.md)
-* [Raccolta di oggetti](../../design/object-collection.md)
+* [Hub di esempi MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(eseguire il download da Microsoft Store in HoloLens 2)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [Superfici](sampleapp-surfaces.md) - [(eseguire il download da Microsoft Store in HoloLens 2)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
+* [Tavola periodica degli elementi 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [Galaxy Explorer 2.0](galaxy-explorer-update.md)

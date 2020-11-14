@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Realtà mista, conferenza, Summit, sviluppatore, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: af9055c4e6074c4d4b10b4f0a6ac135c858b57a7
-ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
-ms.translationtype: MT
+ms.openlocfilehash: 746b6257e6a3ab28424d7b74e43a1b6541d6fad0
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/12/2020
-ms.locfileid: "94549114"
+ms.locfileid: "94573285"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Realtà mista per i giorni di sviluppo in Giappone
 
@@ -48,18 +48,17 @@ Presto disponibile
 |12:50pm-1: pm|**Interruzione**||||
 |1: pm-1:25pm|*Sessione 3* Panoramica dello sviluppo di HoloLens 2|Madoka Chiyoda|JA|200|
 |1: pm-1:55pm|*Sessione 4* HoloLens 2 & MRTK v 2.5 (MRTK-Unity)|Yoon Park|JA|300|
-|2:00-2:20pm|*Sessione 5* Introduzione a HoloLens 2 e Unreal Engine (MRTK-Unreal)|Cameron Micka|IT|300|
+|2:00-2:25pm|*Sessione 5* Introduzione a HoloLens 2 e Unreal Engine (MRTK-Unreal)|Cameron Micka|IT|300|
 |2: pm-2:55pm|*Sessione 6* Progettazione delle app MR (procedura consigliata per la creazione dell'interfaccia utente/UX per l'app HL2)|Daniel Escudero|IT|300|
-|2:55pm-3:14.15|**Interruzione**||||
-|3:14.15-3:40pm|*Sessione 7* Ancoraggi degli oggetti di Azure|TBD|IT|300|
-|3:45pm-4:22:00|*Sessione 8* Rendering remoto di Azure|Atsushi Suzuki|JA|300|
-|4:14.15-4:40pm|*Sessione 9* Ancoraggi spaziali di Azure|TBD|IT|300|
-<!--|4:45PM-5:22:00|*Sessione 10* Unity + PiXYZ|(Unità Giappone)|JA|200|-->
-|4:45PM-5:22:00|*Sessione 10* TBD|TBD|JA|200|
-|5:14.15-5:40pm|*Sessione 11* Deep Dive di Azure Kinect DK, case study|Shinji Chiba|JA|400|
-|5:45pm-6: pm|Chiusura|Madoka Chiyoda|JA|ND|
+|2:55pm-3:22:00|**Interruzione**||||
+|3:22:00-3:35pm|*Sessione 7* Ancoraggi degli oggetti di Azure|TBD|IT|300|
+|3:40pm-4:05PM|*Sessione 8* Rendering remoto di Azure|Atsushi Suzuki|JA|300|
+|4:22:00-4:35pm|*Sessione 9* Ancoraggi spaziali di Azure|TBD|IT|300|
+|4:40pm-5:05PM|*Sessione 10* TBD|TBD|JA|200|
+|5:22:00-5:35pm|*Sessione 11* Deep Dive di Azure Kinect DK, case study|Shinji Chiba|JA|400|
+|5:35pm-5:50pm|Chiusura|Madoka Chiyoda|JA|ND|
 
-#### <a name="contributors-english-subtitle-reviewers"></a>Collaboratori (revisori sottotitolo inglese)
+#### <a name="contributors-technical-reviewers-for-the-subtitles"></a>Collaboratori (revisori tecnici per i sottotitoli)
 
 Futo Horio ( [@Futo_Horio](https://twitter.com/Futo_Horio) ), Takahiro Miyaura ( [@takabrz1](https://twitter.com/takabrz1) ), Akihiro Ueyama ( [@akihiro01051](https://twitter.com/akihiro01051) ), Kaoru Nakamura ( [@kaorun55](https://twitter.com/kaorun55) ), Shinya Tachihara ( [@deco_c_](https://twitter.com/deco_c_) )
 

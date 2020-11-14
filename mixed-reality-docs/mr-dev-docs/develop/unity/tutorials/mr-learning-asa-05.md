@@ -1,18 +1,18 @@
 ---
 title: Esercitazioni su Ancoraggi nello spazio di Azure - 5. Ancoraggi nello spazio di Azure per Android e iOS
-description: Completare questo corso per imparare a distribuire un progetto Unity con Mixed Reality Toolkit e Ancoraggi nello spazio di Azure in Android e iOS.
+description: In questo corso viene illustrato come distribuire un progetto Unity con Mixed Reality Toolkit (MRTK) e Ancoraggi nello spazio di Azure in Android e iOS.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, android, ios
 ms.localizationpriority: high
-ms.openlocfilehash: f1c1ab7c9a79108931762b31640ff667fe1fc2e5
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 501cfab2a86dcf5753b7371898a8c4b6c8a1e10b
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697947"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353379"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5. Ancoraggi nello spazio di Azure per Android e iOS
 
@@ -37,7 +37,7 @@ In questa sezione verrà eseguito l'aggiornamento e l'installazione dei seguenti
 
 Scegliere **Window** (Finestra)  > **Package Manager** (Gestione pacchetti) dal menu Unity per aprire la finestra Package Manager(Gestione pacchetti), quindi selezionare **AR Foundation** > **3.1.3** e fare clic sul pulsante **Update to 3.1.3** (Aggiorna a 3.1.3) per aggiornare il pacchetto:
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section1-step1-1.png)
+![Package Manager di Unity con AR Foundation selezionato](images/mr-learning-asa/asa-05-section1-step1-1.png)
 
 Seguire lo stesso processo per importare i pacchetti rimanenti, in base alle esigenze.
 
@@ -48,27 +48,27 @@ Seguire lo stesso processo per importare i pacchetti rimanenti, in base alle esi
 
 In questa sezione verrà illustrato come configurare MRTK per la distribuzione in un dispositivo mobile.
 
-Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **MixedRealityToolkit** . Quindi, nella finestra Inspector (Controllo) selezionare la scheda **Camera** (Fotocamera), clonare i profilo della fotocamera e assegnare un nome adatto, ad esempio **AzureSpatialAnchors_ARCameraProfile** :
+Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **MixedRealityToolkit**. Quindi, nella finestra Inspector (Controllo) selezionare la scheda **Camera** (Fotocamera), clonare i profilo della fotocamera e assegnare un nome adatto, ad esempio **AzureSpatialAnchors_ARCameraProfile** :
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-1.png)
+![Unity con il profilo ARCameraProfile appena creato selezionato](images/mr-learning-asa/asa-05-section2-step1-1.png)
 
 > [!TIP]
 > Per rivedere la procedura di clonazione dei profili MRTK, fare riferimento alle istruzioni contenute in [Configurazione dei profili di Mixed Reality Toolkit](mr-learning-base-03.md).
 
 Con la scheda **Camera** (Fotocamera) ancora selezionata nella finestra Inspector (Controllo), espandere **Camera Setting Providers** (Provider impostazioni fotocamera) e fare clic sul pulsante **+ Add Camera Setting Provider** (+ Aggiungi provider impostazioni fotocamera), quindi espandere **New data provider 1** (Nuovo provider di dati 1):
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-2.png)
+![Profilo ARCameraProfile di Unity con il nuovo provider di dati aggiunto](images/mr-learning-asa/asa-05-section2-step1-2.png)
 
 Usando l'elenco a discesa **Type** (Tipo), cambiare il tipo in **Microsoft.MixedReality.Toolkit.Experimental.UnityAR** > **UnityARCameraSettings** :
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-3.png)
+![Profilo ARCameraProfile di Unity con il percorso di selezione del tipo di provider di dati](images/mr-learning-asa/asa-05-section2-step1-3.png)
 
 Con l'oggetto **MixedRealityToolkit** ancora selezionato nella finestra Hierarchy (Gerarchia), usare il pulsante **Add Component** (Aggiungi componente) nella finestra Inspector (Controllo) per aggiungere i componenti seguenti:
 
 * AR Anchor Manager (Script)
 * DisableDiagnosticsSystem (Script)
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-4.png)
+![Oggetto MixedRealityToolkit di Unity con i componenti AR Anchor Manager e DisableDiagnosticsSystem aggiunti ](images/mr-learning-asa/asa-05-section2-step1-4.png)
 
 > [!NOTE]
 > Quando si aggiunge il componente AR Reference Point Manager (Script), viene aggiunto automaticamente il componente AR Session Origin (Script) perché è richiesto dal componente AR Reference Point Manager (Script).
@@ -79,7 +79,7 @@ In questa sezione verrà illustrato come configurare il progetto per la compilaz
 
 Dal menu di Unity scegli **File** > **Build Settings** (Impostazioni di compilazione) per visualizzare la finestra corrispondente, quindi impostare la piattaforma su Android:
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-1.png)
+![Finestra Build Settings di Unity con la piattaforma Android selezionata](images/mr-learning-asa/asa-05-section3-step1-1.png)
 
 > [!TIP]
 > Per rivedere la procedura per cambiare piattaforma di compilazione, fare riferimento alle istruzioni contenute in [Passaggio a un'altra piattaforma di compilazione](mr-learning-base-02.md#switching-the-build-platform).
@@ -88,17 +88,17 @@ Chiudere la finestra Build Settings (Impostazioni di compilazione).
 
 Nel menu di Unity selezionare **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** (Mixed Reality Toolkit > Utilità > Configura progetto Unity) per aprire la finestra **MRTK Project Configurator** (Configuratore progetto MRTK), verificare che tutte le opzioni siano selezionate, quindi fare clic sul pulsante **Apply** (Applica) per applicare le impostazioni:
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-2.png)
+![Finestra MRTK Project Configurator di Unity - Android](images/mr-learning-asa/asa-05-section3-step1-2.png)
 
 Dal menu Unity scegliere **Edit** > **Project Settings...** (Modifica > Impostazioni del progetto) per aprire la finestra Player Settings (Impostazioni lettore) e quindi individuare la sezione **Player** >  **Other Settings** (Lettore > Altre impostazioni), selezionare **Vulkan** e rimuoverlo facendo clic sul simbolo **"-"** :
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-3.png)
+![Area Other Settings di Unity con Vulkan selezionato](images/mr-learning-asa/asa-05-section3-step1-3.png)
 
 Chiudere la finestra Player Settings (Impostazioni giocatore) e aprire di nuovo la finestra Build Settings (Impostazioni di compilazione).
 
 Nella finestra Build Settings (Impostazioni di compilazione) fare clic sul pulsante **Add Open Scenes** (Aggiungi scene aperte) per aggiungere la scena corrente all'elenco **Scenes In Build** (Scene nella compilazione). Quindi, usare un cavo USB, connettere il dispositivo Android al computer e selezionarlo nell'elenco a discesa **Run Device** (Esegui dispositivo):
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-4.png)
+![Finestra Build Settings di Unity con la scena aggiunta e Run Device selezionato](images/mr-learning-asa/asa-05-section3-step1-4.png)
 
 >[!NOTE]
 > Se il dispositivo non è presente nell'elenco a discesa Run Device (Esegui dispositivo), potrebbe essere necessario premere il pulsante Refresh (Aggiorna) accanto all'elenco a discesa.
@@ -107,7 +107,7 @@ Nella finestra delle impostazioni di compilazione fare clic sul pulsante **Build
 
 Scegliere il percorso in cui archiviare la build, ad esempio _D:\MixedRealityLearning\Builds_ , quindi assegnare un nome adeguato all'apk, ad esempio _MRTKTutorials-AzureSpatialAnchors_ , e fare clic sul pulsante **Save** (Salva) per avviare il processo di compilazione:
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-5.png)
+![Finestra Build Settings di Unity con la finestra del prompt di salvataggio - Android](images/mr-learning-asa/asa-05-section3-step1-5.png)
 
 > [!NOTE]
 Se nella finestra della console Unity viene visualizzato un errore relativo ai moduli Android SDK, NDK o JDK, è necessario aprire Unity Hub e installare i moduli Android Build Support associati.
@@ -120,7 +120,7 @@ In questa sezione verrà illustrato come configurare il progetto per la compilaz
 
 Dal menu di Unity scegli **File** > **Build Settings** (Impostazioni di compilazione) per visualizzare la finestra corrispondente e impostare la piattaforma su iOS:
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section4-step1-1.png)
+![Finestra Build Settings di Unity con la piattaforma iOS selezionata](images/mr-learning-asa/asa-05-section4-step1-1.png)
 
 > [!TIP]
 > Per rivedere la procedura per cambiare piattaforma di compilazione, fare riferimento alle istruzioni contenute in [Passaggio a un'altra piattaforma di compilazione](mr-learning-base-02.md#switching-the-build-platform).
@@ -129,23 +129,23 @@ Chiudere la finestra Build Settings (Impostazioni di compilazione).
 
 Nel menu di Unity selezionare **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** (Mixed Reality Toolkit > Utilità > Configura progetto Unity) per aprire la finestra **MRTK Project Configurator** (Configuratore progetto MRTK), verificare che tutte le opzioni siano selezionate, quindi fare clic sul pulsante **Apply** (Applica) per applicare le impostazioni:
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section4-step1-2.png)
+![Finestra MRTK Project Configurator di Unity - iOS](images/mr-learning-asa/asa-05-section4-step1-2.png)
 
 Dal menu Unity scegliere **Edit** > **Project Settings...** (Modifica > Impostazioni del progetto) per aprire la finestra Player Settings (Impostazioni lettore) e quindi individuare la sezione **Player** >  **Other Settings** (Lettore > Altre impostazioni), deselezionare la casella di controllo **Strip Engine Code** (Rimuovi codice motore) per disabilitarla:
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section4-step1-3.png)
+![Area Other Settings di Unity con l'opzione Strip Engine Code disabilitata](images/mr-learning-asa/asa-05-section4-step1-3.png)
 
 Chiudere la finestra Player Settings (Impostazioni lettore) e aprire di nuovo la finestra **Build Settings** (Impostazioni di compilazione).
 
 Nella finestra Build Settings (Impostazioni di compilazione) fare clic sul pulsante **Add Open Scenes** (Aggiungi scene aperte) per aggiungere la scena corrente all'elenco **Scenes In Build** (Scene nella compilazione):
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section4-step1-4.png)
+![Finestra Build Settings di Unity con la scena aggiunta](images/mr-learning-asa/asa-05-section4-step1-4.png)
 
 Nella finestra delle impostazioni di compilazione fare clic sul pulsante **Build** (Compila) per aprire la finestra Build iOS (Compila in iOS).
 
 Scegliere un percorso appropriato in cui archiviare il progetto Xcode, ad esempio _D:\MixedRealityLearning\Builds_ , creare una nuova cartella e assegnarle un nome adatto, ad esempio, _MRTKTutorials-AzureSpatialAnchors_ , e quindi fare clic sul pulsante **Select Folder** (Seleziona cartella) per avviare il processo di compilazione:
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section4-step1-5.png)
+![Finestra Build Settings di Unity con la finestra del prompt di salvataggio - iOS](images/mr-learning-asa/asa-05-section4-step1-5.png)
 
 Al termine del processo di compilazione, seguire le istruzioni in [Esportare il progetto Xcode](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) per informazioni su come distribuire il progetto Xcode in un dispositivo iOS.
 

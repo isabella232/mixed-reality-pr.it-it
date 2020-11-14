@@ -1,18 +1,18 @@
 ---
 title: Esercitazioni sulle funzionalità multiutente - 4. Condivisione dei movimenti di oggetti con più utenti
-description: Completa questo corso per imparare a implementare esperienze condivise multiutente all'interno di un'applicazione HoloLens 2.
+description: In questo corso viene illustrato come condividere i movimenti di oggetti con più utente in un'applicazione HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: b080522e25d933aeb979c3d9a851beaaac4da57f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 4a8d98bbabd3061e8fb9f4262e202dac680d584b
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701687"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353419"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4. Condivisione dei movimenti di oggetti con più utenti
 
@@ -29,7 +29,7 @@ In questa sezione preparerai la scena aggiungendo il prefab dell'esercitazione.
 
 Nella finestra Project (Progetto) passare alla cartella **Assets** (Asset) > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** (Prefab) e trascinare il prefab **TableAnchor** nell'oggetto **SharedPlayground** nella finestra Hierarchy (Gerarchia) per aggiungerlo alla scena come elemento figlio dell'oggetto SharedPlayground:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
+![Unity con il prefab TableAnchor appena aggiunto selezionato](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
 
 ## <a name="configuring-pun-to-instantiate-the-objects"></a>Configurazione di PUN per creare un'istanza degli oggetti
 
@@ -41,19 +41,19 @@ Nella finestra Hierarchy (Gerarchia) espandi l'oggetto **NetworkLobby** e selezi
 
 * Al campo **Rover Explorer Prefab** (Prefab Rover Explorer) assegnare il prefab **RoverExplorer_Complete_Variant** dalla cartella Resources (Risorse)
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section2-step1-1.png)
+![Unity con il componente Photon Room parzialmente configurato](images/mr-learning-sharing/sharing-04-section2-step1-1.png)
 
 Con l'oggetto figlio **NetworkRoom** ancora selezionato, nella finestra Hierarchy (Gerarchia) espandi l'oggetto **TableAnchor** e quindi nella finestra Inspector (Controllo) individua il componente **Photon Room (Script)** (Stanza Photon - Script) e configuralo nel modo seguente:
 
 * Al campo **Rover Explorer Location** (Posizione Rover Explorer) assegnare l'oggetto figlio TableAnchor > **Table** (Tabella) dalla finestra Hierarchy (Gerarchia)
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section2-step1-2.png)
+![Unity con il componente Photon Room configurato](images/mr-learning-sharing/sharing-04-section2-step1-2.png)
 
 ## <a name="trying-the-experience-with-shared-object-movement"></a>Prova dell'esperienza con il movimento di un oggetto condiviso
 
 Se si compila e distribuisce il progetto Unity in HoloLens e quindi, tornando in Unity, si preme il pulsante Play per attivare la modalità di gioco mentre l'app è in esecuzione in HoloLens, si osserverà l'oggetto muoversi in Unity quando viene spostato in HoloLens:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section3-step1-1.gif)
+![Animazione che mostra Unity con oggetti collegati in rete](images/mr-learning-sharing/sharing-04-section3-step1-1.gif)
 
 ## <a name="congratulations"></a>Lezione completata
 

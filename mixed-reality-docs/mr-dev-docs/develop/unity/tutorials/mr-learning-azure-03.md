@@ -7,16 +7,16 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, hololens 2, visione personalizzata di azure, servizi cognitivi di azure
 ms.localizationpriority: high
-ms.openlocfilehash: baf5ddb805e6bff6fd41d2fb7cc8ea64b55944e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 9a6cccf9c1a7d2547ed5ddacfc4841d2f4d1609b
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697923"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353269"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Integrazione di Visione personalizzata di Azure
 
-In questa esercitazione si imparerà a usare **Visione personalizzata di Azure** . Si caricherà un set di foto per associarle a un *oggetto tracciato* , caricarle nel servizio **Visione personalizzata** e avviare il processo di training. Si userà quindi il servizio per rilevare l' *oggetto tracciato* acquisendo foto dal feed della webcam.
+In questa esercitazione si imparerà a usare **Visione personalizzata di Azure**. Si caricherà un set di foto per associarle a un *oggetto tracciato* , caricarle nel servizio **Visione personalizzata** e avviare il processo di training. Si userà quindi il servizio per rilevare l' *oggetto tracciato* acquisendo foto dal feed della webcam.
 
 ## <a name="objectives"></a>Obiettivi
 
@@ -26,7 +26,7 @@ In questa esercitazione si imparerà a usare **Visione personalizzata di Azure**
 
 ## <a name="understanding-azure-custom-vision"></a>Informazioni su Visione personalizzata di Azure
 
-**Visione personalizzata di Azure** fa parte della famiglia di **Servizi cognitivi** e viene usato per il training dei classificatori di immagini. Il classificatore di immagini è un servizio di intelligenza artificiale che usa il modello con training per applicare tag corrispondenti. Questa funzionalità di classificazione verrà usata dall'applicazione per rilevare gli *oggetti tracciati* .
+**Visione personalizzata di Azure** fa parte della famiglia di **Servizi cognitivi** e viene usato per il training dei classificatori di immagini. Il classificatore di immagini è un servizio di intelligenza artificiale che usa il modello con training per applicare tag corrispondenti. Questa funzionalità di classificazione verrà usata dall'applicazione per rilevare gli *oggetti tracciati*.
 
 Altre informazioni su [Visione personalizzata di Azure](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home).
 
@@ -34,20 +34,20 @@ Altre informazioni su [Visione personalizzata di Azure](https://docs.microsoft.c
 
 Prima di iniziare, è necessario creare un progetto di visione personalizzata. Il modo più rapido consiste nell'usare il portale Web.
 
-Seguire questa [esercitazione introduttiva](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images) per configurare l'account e il progetto fino alla sezione *Caricare e taggare le immagini* .
+Seguire questa [esercitazione introduttiva](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images) per configurare l'account e il progetto fino alla sezione *Caricare e taggare le immagini*.
 
 > [!WARNING]
 > Per eseguire il training di un modello, è necessario disporre di almeno 2 tag e 5 immagini per ogni tag. Per usare questa applicazione, è necessario creare almeno un tag con 5 immagini, affinché il processo di training non abbia esito negativo in un secondo momento.
 
 ## <a name="preparing-the-scene"></a>Preparazione della scena
 
-Nella finestra Project (Progetto) passare alla cartella **Assets** (Asset)  > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** (Prefab)  > **Manager** .
+Nella finestra Project (Progetto) passare alla cartella **Assets** (Asset)  > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** (Prefab)  > **Manager**.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-1.png)
+![Unity con la finestra Project che mostra il percorso del prefab ObjectDetectionManager](images/mr-learning-azure/tutorial3-section4-step1-1.png)
 
 Da qui, trascinare il prefab **ObjectDetectionManager** nella gerarchia della scena.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-2.png)
+![Unity con i campi di configurazione del componente script ObjectDetectionManager visualizzati in Inspector](images/mr-learning-azure/tutorial3-section4-step1-2.png)
 
 Nella finestra Hierarchy (Gerarchia) individuare l'oggetto **ObjectDetectionManager** e selezionarlo.
 Il prefab **ObjectDetectionManager** contiene il componente **ObjectDetectionManager (script)** e, come si può vedere dalla finestra Inspector (Controllo), dipende da diverse impostazioni.
@@ -66,11 +66,11 @@ Nel dashboard [Visione personalizzata](https://www.customvision.ai/projects) apr
 
 Dopo avere configurato correttamente **ObjectDetectionManager (script)** , trovare l'oggetto **SceneController** nella gerarchia della scena e selezionarlo.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-3.png)
+![Unity con i campi di configurazione del componente script SceneController visualizzati in Inspector](images/mr-learning-azure/tutorial3-section4-step1-3.png)
 
 Si noterà che il campo *Object Detection Manager* (Gestione rilevamento oggetti) nel componente **SceneController** è vuoto; trascinare **ObjectDetectionManager** dalla gerarchia a quel campo e salvare la scena.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-4.png)
+![Unity con il componente script SceneController configurato](images/mr-learning-azure/tutorial3-section4-step1-4.png)
 
 ## <a name="take-and-upload-images"></a>Acquisire e caricare immagini
 

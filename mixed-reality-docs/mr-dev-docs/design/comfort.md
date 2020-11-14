@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realtà mista, progettazione, comfort, HoloLens 2, HoloLens (prima generazione)
-ms.openlocfilehash: 6528dca71a1e0cd92b621cab8b1b7ba547fcb71e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f53c91b10f9dfc37678356c914e486f61eea6382
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698350"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340649"
 ---
 # <a name="comfort"></a>Comfort
 
@@ -40,17 +40,17 @@ I display HoloLens sono fissati a una distanza ottica di circa 2 m dall'utente. 
 
 ### <a name="best-practices-for-hololens-1st-gen-and-hololens-2"></a>Procedure consigliate per HoloLens (prima generazione) e HoloLens 2
 
-Per il massimo comfort, **la zona ottimale per il posizionamento degli ologrammi è compresa tra 1,25 e 5 m** . In ogni caso, i progettisti devono cercare di strutturare le scene di contenuto per incoraggiare gli utenti a interagire ad almeno 1 m dal contenuto, ad esempio regolando i [parametri relativi alle dimensioni del contenuto e al posizionamento predefinito](gaze-and-commit.md). 
+Per il massimo comfort, **la zona ottimale per il posizionamento degli ologrammi è compresa tra 1,25 e 5 m**. In ogni caso, i progettisti devono cercare di strutturare le scene di contenuto per incoraggiare gli utenti a interagire ad almeno 1 m dal contenuto, ad esempio regolando i [parametri relativi alle dimensioni del contenuto e al posizionamento predefinito](gaze-and-commit.md). 
 
 Anche se talvolta il contenuto deve essere visualizzato a una distanza inferiore a 1 m, è opportuno evitare di presentare ologrammi a meno di 40 cm di distanza. Consigliamo quindi di **applicare un effetto di dissolvenza a 40 cm e posizionare un piano di ritaglio del rendering a 30 cm** per evitare gli oggetti più vicini.
 
-Gli oggetti che si muovono in profondità hanno più probabilità di causare disagio rispetto agli oggetti fissi a causa del conflitto tra convergenza e accomodazione. Analogamente, costringere gli utenti a passare rapidamente tra la messa a fuoco da lontano e quella da vicino, ad esempio a causa di un ologramma popup che richiede l'interazione diretta, può causare disagio e affaticamento visivi. È quindi necessario **stare molto attenti a ridurre la frequenza con cui gli utenti devono visualizzare contenuto che si sta muovendo in profondità o cambiare rapidamente la messa a fuoco tra ologrammi vicini e lontani** . 
+Gli oggetti che si muovono in profondità hanno più probabilità di causare disagio rispetto agli oggetti fissi a causa del conflitto tra convergenza e accomodazione. Analogamente, costringere gli utenti a passare rapidamente tra la messa a fuoco da lontano e quella da vicino, ad esempio a causa di un ologramma popup che richiede l'interazione diretta, può causare disagio e affaticamento visivi. È quindi necessario **stare molto attenti a ridurre la frequenza con cui gli utenti devono visualizzare contenuto che si sta muovendo in profondità o cambiare rapidamente la messa a fuoco tra ologrammi vicini e lontani**. 
 
 ### <a name="additional-considerations-for-hololens-2-and-near-interaction-distances"></a>Considerazioni aggiuntive per HoloLens 2 e le distanze di interazione vicina
 
-Quando si progetta contenuto per l'interazione diretta (vicina) in HoloLens 2 o **in qualsiasi applicazione in cui il contenuto deve essere posizionato a una distanza inferiore a 1 m, è necessario prestare particolare attenzione ad assicurare il comfort dell'utente** . La probabilità di disagio a causa del conflitto tra convergenza e accomodazione aumenta in modo esponenziale man mano che si riduce la distanza di visualizzazione. Inoltre, gli utenti possono riscontrare maggiori effetti di sfocatura quando visualizzano il contenuto a distanze di interazione vicine. Consigliamo quindi di testare il contenuto sottoposto a rendering sia entro la zona di posizionamento ottimale dell'ologramma sia più vicino (da meno di 1 m fino al piano di ritaglio) per essere sicuri che rimanga nitido e comodo da visualizzare. 
+Quando si progetta contenuto per l'interazione diretta (vicina) in HoloLens 2 o **in qualsiasi applicazione in cui il contenuto deve essere posizionato a una distanza inferiore a 1 m, è necessario prestare particolare attenzione ad assicurare il comfort dell'utente**. La probabilità di disagio a causa del conflitto tra convergenza e accomodazione aumenta in modo esponenziale man mano che si riduce la distanza di visualizzazione. Inoltre, gli utenti possono riscontrare maggiori effetti di sfocatura quando visualizzano il contenuto a distanze di interazione vicine. Consigliamo quindi di testare il contenuto sottoposto a rendering sia entro la zona di posizionamento ottimale dell'ologramma sia più vicino (da meno di 1 m fino al piano di ritaglio) per essere sicuri che rimanga nitido e comodo da visualizzare. 
 
-**Consigliamo quindi di definire un "budget di profondità" per le app in base al periodo di tempo in cui si prevede che un utente visualizzi contenuto che si trova vicino (a meno di 1 m) e che si muove in profondità** . Un esempio consiste nell'evitare di costringere l'utente a rimanere in situazioni di questo tipo per oltre un quarto del tempo. Se questo budget viene superato, è opportuno eseguire con attenzione una serie di test utente per assicurare un'esperienza confortevole costante. 
+**Consigliamo quindi di definire un "budget di profondità" per le app in base al periodo di tempo in cui si prevede che un utente visualizzi contenuto che si trova vicino (a meno di 1 m) e che si muove in profondità**. Un esempio consiste nell'evitare di costringere l'utente a rimanere in situazioni di questo tipo per oltre un quarto del tempo. Se questo budget viene superato, è opportuno eseguire con attenzione una serie di test utente per assicurare un'esperienza confortevole costante. 
 
 In generale, è opportuno eseguire anche un attento test per garantire che i requisiti di interazione (come la velocità di spostamento, la raggiungibilità e così via) a distanze vicine risultino confortevoli per gli utenti. 
 
@@ -100,7 +100,7 @@ Sono disponibili diversi strumenti per sottoporre a benchmark della frequenza de
 
 ## <a name="self-motion-and-user-locomotion"></a>Movimento autonomo e locomozione dell'utente
 
-L'unica limitazione è rappresentata dalle dimensioni dello spazio fisico. Se vuoi consentire agli utenti di spostarsi più lontano nell'ambiente virtuale rispetto a quanto è possibile nella stanza reale, devi implementare una forma di movimento puramente virtuale. Tuttavia, un movimento virtuale sostenuto che non corrisponde al movimento fisico dell'utente può spesso provocare una sensazione di mal d'auto. Questo effetto è dovuto agli *indizi visivi* per il movimento autonomo provenienti dal *mondo virtuale* che sono in conflitto con gli [indizi dell'apparato vestibolare](https://en.wikipedia.org/wiki/Vestibular_system) per il movimento autonomo provenienti dal *mondo reale* .
+L'unica limitazione è rappresentata dalle dimensioni dello spazio fisico. Se vuoi consentire agli utenti di spostarsi più lontano nell'ambiente virtuale rispetto a quanto è possibile nella stanza reale, devi implementare una forma di movimento puramente virtuale. Tuttavia, un movimento virtuale sostenuto che non corrisponde al movimento fisico dell'utente può spesso provocare una sensazione di mal d'auto. Questo effetto è dovuto agli *indizi visivi* per il movimento autonomo provenienti dal *mondo virtuale* che sono in conflitto con gli [indizi dell'apparato vestibolare](https://en.wikipedia.org/wiki/Vestibular_system) per il movimento autonomo provenienti dal *mondo reale*.
 
 Per fortuna, puoi evitare questo problema seguendo alcuni suggerimenti per l'implementazione della locomozione dell'utente:
 * Inserisci sempre l'utente nel controllo dei movimenti: un movimento autonomo imprevisto può risultare particolarmente problematico.
@@ -162,6 +162,13 @@ L'angolo dello sguardo considerato ottimale (condizione di riposo) è compreso t
 ## <a name="arm-positions"></a>Posizioni delle braccia
 
 L'affaticamento muscolare può aumentare quando gli utenti devono tenere una mano alzata per tutta la durata di un'esperienza. Può anche essere faticoso per l'utente dover effettuare ripetutamente movimenti di simulazione del tocco con un dito per periodi prolungati. Consigliamo pertanto di evitare di richiedere movimenti ripetuti e costanti. Questo obiettivo può essere raggiunto incorporando brevi interruzioni oppure offrendo la possibilità di interagire con l'app con una combinazione di gesti e input vocale.
+
+## <a name="next-discovery-checkpoint"></a>Prossima stazione di scoperta
+
+Se si sta seguendo il [percorso di scoperta](../discover/get-started-with-mr.md) definito, è possibile esplorare le nozioni di base della realtà mista. Da qui è possibile passare all'argomento di base successivo: 
+
+> [!div class="nextstepaction"]
+> [Considerare il modo in cui l'utente vede il mondo (frame olografico)](../design/holographic-frame.md)
 
 ## <a name="see-also"></a>Vedere anche
 * [Sguardo fisso](gaze-and-commit.md)

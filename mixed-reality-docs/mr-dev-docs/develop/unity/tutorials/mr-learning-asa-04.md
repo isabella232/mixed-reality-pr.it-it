@@ -1,18 +1,18 @@
 ---
 title: Esercitazioni su Ancoraggi nello spazio di Azure - 4. Visualizzazione del feedback su Ancoraggi nello spazio di Azure
-description: Completare questo corso per imparare a implementare Ancoraggi nello spazio di Azure in un'applicazione di realtà mista.
+description: In questo corso viene illustrato come visualizzare feedback da Ancoraggi nello spazio di Azure in un'applicazione di realtà mista.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: c36fa20ae6438aee92d5d853febd683e01e81ea7
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 4c35af1f5a2a723df6603fbdf41dd18a2e9ee45d
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698002"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353339"
 ---
 # <a name="4-displaying-feedback-from-azure-spatial-anchors"></a>4. Visualizzazione del feedback su Ancoraggi nello spazio di Azure
 
@@ -25,9 +25,9 @@ In questa esercitazione si apprenderà come fornire agli utenti feedback su indi
 
 ## <a name="setting-up-asa-feedback-panel"></a>Configurazione del riquadro per il feedback di ASA
 
-Nella finestra Hierarchy (Gerarchia) fare clic con il pulsante destro del mouse sull'oggetto **Instructions** (Istruzioni)  > **TextContent** . Selezionare **3D Object** (Oggetto 3D)  > **Text (Testo) - TextMeshPro** per creare un oggetto testo TextMeshPro come figlio dell'oggetto Instructions (Istruzioni) > TextContent:
+Nella finestra Hierarchy (Gerarchia) fare clic con il pulsante destro del mouse sull'oggetto **Instructions** (Istruzioni)  > **TextContent**. Selezionare **3D Object** (Oggetto 3D)  > **Text (Testo) - TextMeshPro** per creare un oggetto testo TextMeshPro come figlio dell'oggetto Instructions (Istruzioni) > TextContent:
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-1.png)
+![Unity con l'oggetto TextMeshPro appena creato selezionato](images/mr-learning-asa/asa-04-section1-step1-1.png)
 
 > [!TIP]
 > Per rendere più agevole l'uso della scena, disattiva la <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">visibilità</a> per l'oggetto ParentAnchor facendo clic sull'icona a forma di occhio a sinistra dell'oggetto. In questo modo, l'oggetto viene nascosto nella finestra Scene (Scena) senza effetti sulla sua visibilità nel gioco.
@@ -44,13 +44,13 @@ Scegliere quindi le proprietà del tipo di carattere, in modo da adattare bene i
 * Modificare il valore di **Font Size** (Dimensioni carattere) per il componente TextMeshPro - Text (Testo) impostandolo su 0,17.
 * Modificare il valore di **Alignment** (Allineamento) per il componente TextMeshPro - Text (Testo) impostandolo su Center (Al centro verticalmente) e Middle (Al centro orizzontalmente).
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-2.png)
+![Unity con l'oggetto Feedback configurato](images/mr-learning-asa/asa-04-section1-step1-2.png)
 
 Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **Feedback** e quindi nella finestra Inspector (Controllo) usare il pulsante **Add Component** (Aggiungi componente), per aggiungere il componente **Anchor Feedback Script (Script)** (Script di feedback Ancoraggi - Script) e configuralo come indicato di seguito:
 
 * Assegnare l'oggetto **Feedback** stesso al campo **Feedback Text** (Testo feedback) del componente **Anchor Feedback Script (Script)** (Script di feedback Ancoraggi - Script).
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-3.png)
+![Unity con il componente Anchor Feedback Script configurato](images/mr-learning-asa/asa-04-section1-step1-3.png)
 
 ## <a name="congratulations"></a>Lezione completata
 

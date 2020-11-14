@@ -7,16 +7,16 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, hololens 2, Ancoraggi nello spazio di Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 2c10d7458fc956cb8974319cd5355260179f10b4
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f8271fe3b3b9549d6c95707466db9af3d312fab7
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697834"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353249"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4. Integrazione di Ancoraggi nello spazio di Azure
 
-In questa esercitazione verrà spiegato come usare **Ancoraggi nello spazio di Azure** . Si archivierà la posizione di un **oggetto tracciato** come oggetto di Ancoraggi nello spazio di Azure. Quando si esegue una query per l'ancoraggio, viene visualizzata una freccia che indica all'utente la posizione.
+In questa esercitazione verrà spiegato come usare **Ancoraggi nello spazio di Azure**. Si archivierà la posizione di un **oggetto tracciato** come oggetto di Ancoraggi nello spazio di Azure. Quando si esegue una query per l'ancoraggio, viene visualizzata una freccia che indica all'utente la posizione.
 
 ## <a name="objectives"></a>Obiettivi
 
@@ -41,17 +41,17 @@ In questa sezione verrà illustrato come configurare la scena e apportare le mod
 
 Nella finestra Project (Progetto) passa a **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manager**
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step1-1.png)
+![Unity con il prefab AnchorManager selezionato](images/mr-learning-azure/tutorial4-section1-step1-1.png)
 
 Dalla cartella **Manager** trascinare e rilasciare il prefab **Anchor Manager** (Gestione ancoraggi) nella gerarchia della scena.
 
 Selezionare il GameObject **Anchor Manager** nella gerarchia e nella sezione Inspector (Controllo) si noterà **Spatial Anchor Manager** (Script). Trovare il campo ID account chiave e aggiungere le credenziali che create nel prerequisito nella fase precedente.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step2-1.png)
+![Unity con il prefab AnchorManager appena aggiunto ancora selezionato](images/mr-learning-azure/tutorial4-section1-step2-1.png)
 
 Ora trovare l'oggetto **Scene Controller** (Controllo scena) nella gerarchia della scena e selezionarlo. Verrà visualizzata la finestra Inspector (Controllo) di **Scene Controller** (Controllo scena).
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step3-1.png)
+![Unity con il componente script SceneController configurato](images/mr-learning-azure/tutorial4-section1-step3-1.png)
 
 Si osserverà che il campo **Anchor Manager** (Gestione ancoraggi) nel componente **Scene Controller** (Controllo scena) è vuoto. Trascinare **Anchor Manager** (Gestione ancoraggi) da Hierarchy (Gerarchia) nella scena, rilasciarlo nel campo e salvare la scena.
 

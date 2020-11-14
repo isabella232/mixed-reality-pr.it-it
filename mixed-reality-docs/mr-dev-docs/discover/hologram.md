@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, HoloLens, ologrammi, progettazione, interazione
-ms.openlocfilehash: c26cbbaa011c9e7ec92ea45dfd9491dbd178a025
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: f902639e66246c9184750ebc58dbad1c04b2bb5a
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386237"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631469"
 ---
 # <a name="what-is-a-hologram"></a>Che cos'è un ologramma?
 
@@ -126,13 +126,10 @@ Gli ologrammi possono anche essere bloccati da oggetti reali. Un carattere ologr
 
 ---
 
-## <a name="next-discovery-checkpoint"></a>Checkpoint individuazione successiva
+## <a name="next-discovery-checkpoint"></a>Prossima stazione di scoperta
 
-Se si sta seguendo il [percorso di individuazione](get-started-with-mr.md) , è possibile esplorare le nozioni di base della realtà mista. Da qui è possibile passare all'argomento di base successivo: 
+Se si sta seguendo il [percorso di scoperta](get-started-with-mr.md) definito, è possibile esplorare le nozioni di base della realtà mista. Da qui è possibile passare all'argomento di base successivo: 
 
 > [!div class="nextstepaction"]
 > [Espandere il processo di progettazione](case-study-expanding-the-design-process-for-mixed-reality.md)
 
-## <a name="see-also"></a>Vedere anche
-* [Audio spaziale](../design/spatial-sound.md)
-* [Colore, luce e materiali](../color,-light-and-materials.md)

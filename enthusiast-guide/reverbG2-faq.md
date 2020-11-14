@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto tecnico, prestazioni
 appliesto:
 - Windows 10
-ms.openlocfilehash: 77d1d7273d1e73af4655ef45bd102220e15d2355
-ms.sourcegitcommit: af1e5c9003fc3b7dd0a2f67531f91f954b6a9ea3
+ms.openlocfilehash: 7d6d5a1eeabffdd7ad6d4ddd070a14c6dcf0d5ee
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94498286"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573205"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Domande frequenti su HP Reverb G2
 
@@ -36,13 +36,15 @@ Se si ritiene che la visualizzazione appaia leggermente sfocata, è possibile pr
 
 ## <a name="i-am-getting-a-7-14-something-went-wrong-error-when-i-plug-in-my-headset"></a>Si è verificato un errore 7-14 "si è verificato un errore" durante il collegamento dell'auricolare
 
+Il codice 7-14 qualcosa ha avuto esito negativo significa che alcuni dei componenti USB2 richiesti non sono stati trovati.  A causa del cavo molto lungo di HP reverbi G2, alcune delle tolleranze per i segnali USB sono più rigorose.  Ciò significa che una porta del computer potrebbe funzionare in modo più affidabile rispetto a un'altra.
+
 Se viene visualizzato un errore 7-14 "si è verificato un errore", provare a eseguire la procedura seguente:
 
-- Verificare che siano installati i driver più recenti.
-- Provare a collegare il cavo in una porta USB-3,0 diversa.
-- Usare l'unità C USB a una scheda inclusa per provare porte diverse.
-
-Provare a collegare il cavo in un hub USB diverso.  
+- Verificare che siano installati i driver più recenti per l'auricolare e il controller USB.
+- Assicurarsi di usare un driver USB Microsoft. Il nome del dispositivo "eXtensible Host Controller" deve essere "Microsoft".
+- Provare a collegare il cavo a una porta USB-3,0 diversa nel computer. (Provare le porte USB Type-C e Type-A)
+- Usare il cavo USB incluso in una scheda inclusa per provare porte diverse.
+- Provare a collegare la cuffia a un hub USB al computer.
 
 > [!NOTE]
 > HP consiglia di usare solo i controller USB incorporati nella scheda madre con i dispositivi G2 del riverbero.
