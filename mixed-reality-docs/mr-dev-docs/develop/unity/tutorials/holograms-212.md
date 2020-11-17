@@ -1,17 +1,17 @@
 ---
-title: Input MR 212-Voice
+title: 'MR Input 212: Voce'
 description: Seguire questa procedura dettagliata di codifica usando Unity, Visual Studio e HoloLens per informazioni dettagliate sui concetti vocali.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, esercitazione, Voice
-ms.openlocfilehash: ed37ef6e0c26c3d2a0cd2d51e18d01a258b2fc78
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, tutorial, Voice, HoloLens, Mixed Reality Academy, Unity, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale, Windows 10
+ms.openlocfilehash: b9d9002180da7a59c62b77b83872e77499da4c09
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686420"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677240"
 ---
 # <a name="mr-input-212-voice"></a>Input MR 212: Voce
 
@@ -72,7 +72,7 @@ In questo corso, viene rivisitata Esplora modelli, che è stata compilata in [Mr
 
 ### <a name="errata-and-notes"></a>Errori e note
 
-* "Enable Just My Code" deve essere disabilitato ( *deselezionato* ) in Visual Studio in strumenti-opzioni >->debug per raggiungere i punti di interruzione nel codice.
+* "Enable Just My Code" deve essere disabilitato (*deselezionato*) in Visual Studio in strumenti-opzioni >->debug per raggiungere i punti di interruzione nel codice.
 
 ## <a name="unity-setup"></a>Configurazione di Unity
 
@@ -88,11 +88,11 @@ In questo corso, viene rivisitata Esplora modelli, che è stata compilata in [Mr
 
 ### <a name="building"></a>Compilazione
 
-1. In Unity selezionare **File > impostazioni di compilazione** .
-2. Se **Scenes/ModelExplorer** non è elencato in **Scenes in Build** , fare clic su **Aggiungi scene aperte** per aggiungere la scena.
-3. Se si sta sviluppando in modo specifico per HoloLens, impostare **dispositivo di destinazione** su **HoloLens** . In caso contrario, lasciarlo in **qualsiasi dispositivo** .
+1. In Unity selezionare **File > impostazioni di compilazione**.
+2. Se **Scenes/ModelExplorer** non è elencato in **Scenes in Build**, fare clic su **Aggiungi scene aperte** per aggiungere la scena.
+3. Se si sta sviluppando in modo specifico per HoloLens, impostare **dispositivo di destinazione** su **HoloLens**. In caso contrario, lasciarlo in **qualsiasi dispositivo**.
 4. Verificare che **tipo di compilazione** sia impostato su **D3D** e che l' **SDK** sia impostato su **installato più recente** (che deve essere SDK 16299 o versione successiva).
-5. Fare clic su **Compila** .
+5. Fare clic su **Compila**.
 6. Creare una **nuova cartella** denominata "app".
 7. Fare clic sulla cartella dell' **app** .
 8. Premere **Seleziona cartella** e Unity avvierà la compilazione del progetto per Visual Studio.
@@ -100,21 +100,21 @@ In questo corso, viene rivisitata Esplora modelli, che è stata compilata in [Mr
 Quando si esegue Unity, viene visualizzata una finestra Esplora file.
 
 1. Aprire la cartella dell' **app** .
-2. Aprire la **soluzione ModelExplorer di Visual Studio** .
+2. Aprire la **soluzione ModelExplorer di Visual Studio**.
 
 Se si esegue la distribuzione in HoloLens:
 
-1. Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x86** .
-2. Fare clic sulla freccia a discesa accanto al pulsante computer locale e selezionare **computer remoto** .
-3. Immettere **l'indirizzo IP del dispositivo HoloLens** e impostare la modalità di autenticazione su **universale (protocollo non crittografato)** . Fare clic su **Seleziona** . Se non si conosce l'indirizzo IP del dispositivo, vedere **impostazioni > rete & Internet > opzioni avanzate** .
-4. Nella barra dei menu superiore fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5** . Se questa è la prima volta che si esegue la distribuzione nel dispositivo, sarà necessario [associarla a Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
-5. Quando l'app è stata distribuita, chiudere il **fitbox** con un **movimento di selezione** .
+1. Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x86**.
+2. Fare clic sulla freccia a discesa accanto al pulsante computer locale e selezionare **computer remoto**.
+3. Immettere **l'indirizzo IP del dispositivo HoloLens** e impostare la modalità di autenticazione su **universale (protocollo non crittografato)**. Fare clic su **Seleziona**. Se non si conosce l'indirizzo IP del dispositivo, vedere **impostazioni > rete & Internet > opzioni avanzate**.
+4. Nella barra dei menu superiore fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5**. Se questa è la prima volta che si esegue la distribuzione nel dispositivo, sarà necessario [associarla a Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+5. Quando l'app è stata distribuita, chiudere il **fitbox** con un **movimento di selezione**.
 
 Se si esegue la distribuzione in un auricolare immersivo:
 
-1. Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x64** .
-2. Verificare che la destinazione di distribuzione sia impostata su **computer locale** .
-3. Nella barra dei menu superiore fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5** .
+1. Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x64**.
+2. Verificare che la destinazione di distribuzione sia impostata su **computer locale**.
+3. Nella barra dei menu superiore fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5**.
 4. Quando l'app è stata distribuita, chiudere il **fitbox** estraendo il trigger in un controller di movimento.
 
 >[!NOTE]
@@ -136,14 +136,14 @@ In questo capitolo verrà illustrato come progettare comandi vocali. Quando si c
 
 #### <a name="do"></a>DO
 
-* Creare comandi concisi. Non si vuole usare *"Riproduci il video attualmente selezionato"* , perché questo comando non è conciso e può essere facilmente dimenticato dall'utente. È invece consigliabile usare: *"riprodurre video"* , perché è conciso e presenta più sillabe.
-* Usare un vocabolario semplice. Provare sempre a usare parole e frasi comuni che possono essere facilmente individuate e memorizzate dall'utente. Se, ad esempio, l'applicazione dispone di un oggetto nota che potrebbe essere visualizzato o nascosto, non è possibile utilizzare il comando *"Mostra cartello"* , perché "cartello" è un termine raramente utilizzato. Usare invece il comando: *"show note"* per rivelare la nota nell'applicazione.
-* Mantenere la coerenza. I comandi vocali devono essere mantenuti coerenti nell'intera applicazione. Si supponga di avere due scene nell'applicazione e che entrambe le scene includano un pulsante per la chiusura dell'applicazione. Se la prima scena usava il comando *"Exit"* per attivare il pulsante, ma la seconda scena usava il comando *"close app"* , l'utente sarà molto confuso. Se la stessa funzionalità viene mantenute tra più scene, è necessario usare lo stesso comando Voice per attivarlo.
+* Creare comandi concisi. Non si vuole usare *"Riproduci il video attualmente selezionato"*, perché questo comando non è conciso e può essere facilmente dimenticato dall'utente. È invece consigliabile usare: *"riprodurre video"*, perché è conciso e presenta più sillabe.
+* Usare un vocabolario semplice. Provare sempre a usare parole e frasi comuni che possono essere facilmente individuate e memorizzate dall'utente. Se, ad esempio, l'applicazione dispone di un oggetto nota che potrebbe essere visualizzato o nascosto, non è possibile utilizzare il comando *"Mostra cartello"*, perché "cartello" è un termine raramente utilizzato. Usare invece il comando: *"show note"* per rivelare la nota nell'applicazione.
+* Mantenere la coerenza. I comandi vocali devono essere mantenuti coerenti nell'intera applicazione. Si supponga di avere due scene nell'applicazione e che entrambe le scene includano un pulsante per la chiusura dell'applicazione. Se la prima scena usava il comando *"Exit"* per attivare il pulsante, ma la seconda scena usava il comando *"close app"*, l'utente sarà molto confuso. Se la stessa funzionalità viene mantenute tra più scene, è necessario usare lo stesso comando Voice per attivarlo.
 
 #### <a name="dont"></a>Non
 
-* Usare i comandi a sillaba singola. Ad esempio, se si crea un comando vocale per riprodurre un video, è consigliabile evitare di usare il semplice comando *"Play"* , poiché si tratta solo di una singola sillaba e potrebbe essere facilmente persa dal sistema. È invece consigliabile usare: *"riprodurre video"* , perché è conciso e presenta più sillabe.
-* Usare i comandi di sistema. Il comando *"Select"* è riservato dal sistema per attivare un evento tap per l'oggetto attualmente attivo. Non usare nuovamente il comando *"Select"* in una parola chiave o in una frase, perché potrebbe non funzionare come previsto. Se, ad esempio, il comando Voice per la selezione di un cubo nell'applicazione era *"Select Cube"* , ma l'utente stava osservando una sfera quando ha pronunciato il comando, viene invece selezionata la sfera. Analogamente, i comandi della barra dell'app sono abilitati. Non usare i comandi di riconoscimento vocale seguenti nella visualizzazione CoreWindow:
+* Usare i comandi a sillaba singola. Ad esempio, se si crea un comando vocale per riprodurre un video, è consigliabile evitare di usare il semplice comando *"Play"*, poiché si tratta solo di una singola sillaba e potrebbe essere facilmente persa dal sistema. È invece consigliabile usare: *"riprodurre video"*, perché è conciso e presenta più sillabe.
+* Usare i comandi di sistema. Il comando *"Select"* è riservato dal sistema per attivare un evento tap per l'oggetto attualmente attivo. Non usare nuovamente il comando *"Select"* in una parola chiave o in una frase, perché potrebbe non funzionare come previsto. Se, ad esempio, il comando Voice per la selezione di un cubo nell'applicazione era *"Select Cube"*, ma l'utente stava osservando una sfera quando ha pronunciato il comando, viene invece selezionata la sfera. Analogamente, i comandi della barra dell'app sono abilitati. Non usare i comandi di riconoscimento vocale seguenti nella visualizzazione CoreWindow:
     1. Indietro
     2. Strumento di scorrimento
     3. Strumento zoom
@@ -155,21 +155,21 @@ In questo capitolo verrà illustrato come progettare comandi vocali. Quando si c
 ### <a name="instructions"></a>Istruzioni
 
 * Nel pannello **gerarchia** di Unity usare lo strumento di ricerca per trovare l'oggetto **holoComm_screen_mesh** .
-* Fare doppio clic sull'oggetto **holoComm_screen_mesh** per visualizzarlo nella **scena** . Si tratta dell'espressione di controllo dell'astronauta, che risponderà ai comandi vocali.
+* Fare doppio clic sull'oggetto **holoComm_screen_mesh** per visualizzarlo nella **scena**. Si tratta dell'espressione di controllo dell'astronauta, che risponderà ai comandi vocali.
 * Nel pannello **Inspector** individuare il componente di **origine input vocale (script)** .
-* Espandere la sezione **Keywords (parole chiave** ) per visualizzare il comando Voice supportato: **Open Communicator** .
-* Fare clic sull'ingranaggio a destra, quindi selezionare **Modifica script** .
+* Espandere la sezione **Keywords (parole chiave** ) per visualizzare il comando Voice supportato: **Open Communicator**.
+* Fare clic sull'ingranaggio a destra, quindi selezionare **Modifica script**.
 * Esplorare **SpeechInputSource.cs** per comprendere in che modo Usa **KeywordRecognizer** per aggiungere comandi vocali.
 
 ### <a name="build-and-deploy"></a>Compilazione e distribuzione
 
 * In Unity, usare **File > impostazioni di compilazione** per ricompilare l'applicazione.
 * Aprire la cartella dell' **app** .
-* Aprire la **soluzione ModelExplorer di Visual Studio** .
+* Aprire la **soluzione ModelExplorer di Visual Studio**.
 
 Se il progetto è già stato compilato o distribuito in Visual Studio durante la configurazione, è possibile aprire l'istanza di VS e fare clic su' ricarica tutto ' quando richiesto.
 
-* In Visual Studio fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5** .
+* In Visual Studio fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5**.
 * Dopo la distribuzione dell'applicazione in HoloLens, chiudere la casella adatta usando il gesto di [tocco](../../../design/gaze-and-commit.md#composite-gestures) .
 * Guarda l'orologio dell'astronauta.
 * Quando l'espressione di controllo ha lo stato attivo, verificare che il cursore venga modificato in un microfono. Questo fornisce il feedback che l'applicazione è in ascolto dei comandi vocali.
@@ -198,7 +198,7 @@ Se il progetto è già stato compilato o distribuito in Visual Studio durante la
 * Nel pannello **Inspector** trovare il componente **Watch Astronaut (script)** .
 * Fare clic sul piccolo cubo blu che viene impostato come valore della proprietà **prefabbricata di Communicator** .
 * Nel pannello del **progetto** , la prefabbricata di **Communicator** dovrebbe ora avere lo stato attivo.
-* Fare clic sul prefabbricato di **Communicator** nel pannello del **progetto** per visualizzare i relativi componenti nel **controllo** .
+* Fare clic sul prefabbricato di **Communicator** nel pannello del **progetto** per visualizzare i relativi componenti nel **controllo**.
 * Si osservi il componente **Microphone Manager (script)** , che consente di registrare la voce dell'utente.
 * Si noti che l'oggetto **Communicator** dispone di un componente del **gestore di input vocale (script)** per rispondere al comando **Send Message** .
 * Esaminare il componente **Communicator (script)** e fare doppio clic sullo script per aprirlo in Visual Studio.
@@ -252,14 +252,14 @@ In questo capitolo verrà usato il riconoscimento di dettatura per creare un mes
 
 **MicrophoneManager.cs** verrà modificato in modo da usare il riconoscimento della dettatura. Questo è ciò che verrà aggiunto:
 
-1. Quando si preme il **pulsante record** , si **avvierà il DictationRecognizer** .
+1. Quando si preme il **pulsante record** , si **avvierà il DictationRecognizer**.
 2. Mostra l' **ipotesi** di ciò che DictationRecognizer ha compreso.
 3. Blocca i **risultati** della comprensione del DictationRecognizer.
 4. Verificare la presenza di timeout dal DictationRecognizer.
-5. Quando si preme il **pulsante Interrompi** oppure si verifica il timeout della sessione MIC, **arrestare il DictationRecognizer** .
-6. Riavviare il **KeywordRecognizer** , che resterà in attesa del comando **Send Message** .
+5. Quando si preme il **pulsante Interrompi** oppure si verifica il timeout della sessione MIC, **arrestare il DictationRecognizer**.
+6. Riavviare il **KeywordRecognizer**, che resterà in attesa del comando **Send Message** .
 
-A questo punto, procedere con l'esercitazione. Completare tutti gli esercizi di codifica per 3. a in **MicrophoneManager.cs** oppure copiare e incollare il codice finito riportato di seguito:
+È possibile iniziare subito. Completare tutti gli esercizi di codifica per 3. a in **MicrophoneManager.cs** oppure copiare e incollare il codice finito riportato di seguito:
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -451,7 +451,7 @@ namespace Academy
 
 * Ricompilare in Visual Studio e distribuirlo nel dispositivo.
 * Chiudere la casella adatta con un movimento di tocco aereo.
-* Guarda l'orologio dell'astronauta e pronuncia *"Open Communicator"* .
+* Guarda l'orologio dell'astronauta e pronuncia *"Open Communicator"*.
 * Selezionare il pulsante di **registrazione** (microfono) per registrare il messaggio.
 * Inizia a parlare. Il **riconoscimento della dettatura** interpreterà il riconoscimento vocale e visualizzerà il testo ipotizzato in Communicator.
 * Provare a pronunciare *"Invia messaggio"* durante la registrazione di un messaggio. Si noti che la **parola chiave Recognizer** non risponde perché il **riconoscimento della dettatura** è ancora attivo.
@@ -500,7 +500,7 @@ Nel file SRGS sono disponibili tre tipi di regole:
 
 ## <a name="the-end"></a>La fine
 
-Congratulazioni! A questo punto è stato completato il **sig. Input 212: Voice** .
+Congratulazioni. A questo punto è stato completato il **sig. Input 212: Voice**.
 
 * Si conosce il DOS e non i comandi vocali.
 * Sono state illustrate le modalità di utilizzo delle descrizioni comando per consentire agli utenti di riconoscere i comandi vocali.

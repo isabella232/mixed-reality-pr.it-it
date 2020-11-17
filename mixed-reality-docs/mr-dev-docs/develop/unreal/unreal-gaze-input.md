@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Realtà mista di Windows, ologrammi, HoloLens 2, rilevamento degli occhi, input dello sguardo, visualizzazione montata a capo, Unreal Engine
-ms.openlocfilehash: 477fbdc9c7ddb3b4e890e62150651d9227d4c19e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista di Windows, ologrammi, HoloLens 2, rilevamento degli occhi, input di sguardi, visualizzazione montata su schermo, Unreal Engine, auricolare realtà mista, auricolare della realtà mista di Windows, auricolare della realtà virtuale
+ms.openlocfilehash: 2ea55e3c53275f6150ca7f2def10d71634119e2e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684860"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679050"
 ---
 # <a name="gaze-input"></a>Input sguardo
 
@@ -44,9 +44,9 @@ Oltre alle API Unreal, consultare la documentazione relativa all' [interazione b
 
 Questa è tutta la configurazione necessaria per iniziare ad aggiungere l'input dello sguardo alle app HoloLens 2 in modo irreale. Altre informazioni sull'input di sguardi e sul modo in cui influiscono sugli utenti in realtà mista sono disponibili nei collegamenti seguenti. Quando si compilano esperienze interattive, tenere presente quanto prima.
 
-## <a name="next-development-checkpoint"></a>Checkpoint di sviluppo successivo
+## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si segue il percorso di checkpoint dello sviluppo non reale, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo: 
+Se si segue il percorso di checkpoint per lo sviluppo con Unreal che è stato delineato, si stanno esplorando i blocchi predefiniti fondamentali di MRTK. Da qui è possibile passare al blocco predefinito successivo: 
 
 > [!div class="nextstepaction"]
 > [Tracciamento mano](unreal-hand-tracking.md)
@@ -56,7 +56,7 @@ In alternativa, passare alle API e alle funzionalità della piattaforma di realt
 > [!div class="nextstepaction"]
 > [Fotocamera HoloLens](unreal-hololens-camera.md)
 
-È sempre possibile tornare ai checkpoint di [sviluppo non reali](unreal-development-overview.md#2-core-building-blocks) in qualsiasi momento.
+È sempre possibile tornare ai [checkpoint per lo sviluppo con Unreal](unreal-development-overview.md#2-core-building-blocks) in qualsiasi momento.
 
 ## <a name="see-also"></a>Vedere anche
 * [Calibrazione](../../calibration.md)

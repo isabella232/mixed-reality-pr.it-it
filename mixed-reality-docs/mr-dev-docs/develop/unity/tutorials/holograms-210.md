@@ -1,17 +1,17 @@
 ---
-title: Input MR 210-sguardo
+title: 'MR Input 210: Sguardo fisso'
 description: Seguire questa procedura dettagliata di codifica usando Unity, Visual Studio e HoloLens per informazioni dettagliate sui concetti relativi a sguardi.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, esercitazione, sguardo
-ms.openlocfilehash: b513d304e78d51b447f0bbba4990fb7df0556707
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, esercitazione, sguardo, HoloLens, realtà mista Academy, Unity, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale, Windows 10
+ms.openlocfilehash: 2cbbdba0a74ab94c6a291cbe6af1cd1ae9020fe4
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686452"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677250"
 ---
 # <a name="mr-input-210-gaze"></a>Input MR 210: Sguardo fisso
 
@@ -77,21 +77,21 @@ Qui è disponibile un astronauta che consente di apprendere i concetti di sguard
 ### <a name="instructions"></a>Istruzioni
 
 1. Riavviare Unity.
-2. Selezionare **Nuovo progetto** .
-3. Denominare il progetto **ModelExplorer** .
+2. Selezionare **Nuovo progetto**.
+3. Denominare il progetto **ModelExplorer**.
 4. Immettere location come cartella degli **sguardi** precedentemente non archiviata.
-5. Assicurati che il progetto sia impostato su **3D** .
-6. Fare clic su **Crea progetto** .
+5. Assicurati che il progetto sia impostato su **3D**.
+6. Fare clic su **Crea progetto**.
 
 ### <a name="unity-settings-for-hololens"></a>Impostazioni Unity per HoloLens
 
 È necessario informare Unity che l'app che si sta tentando di esportare deve creare una [visualizzazione immersiva](../../../design/app-views.md) anziché una visualizzazione 2D. Questa operazione viene eseguita aggiungendo HoloLens come dispositivo di realtà virtuale.
 
-1. Passare a **Edit > Settings Project > Player** .
+1. Passare a **Edit > Settings Project > Player**.
 2. Nel **pannello Inspector** per le impostazioni del lettore selezionare l'icona di **Windows Store** .
-3. Espandere il gruppo **Impostazioni XR** .
-4. Nella sezione **Rendering** selezionare la casella di controllo **Virtual Reality Supported** (Realtà virtuale supportata) per aggiungere un nuovo elenco di **SDK per la realtà virtuale** .
-5. Verificare che **Realtà mista di Windows** sia visualizzato nell'elenco. In caso contrario, selezionare il **+** pulsante nella parte inferiore dell'elenco e scegliere **Windows olografico** .
+3. Espandere il gruppo **Impostazioni XR**.
+4. Nella sezione **Rendering** selezionare la casella di controllo **Virtual Reality Supported** (Realtà virtuale supportata) per aggiungere un nuovo elenco di **SDK per la realtà virtuale**.
+5. Verificare che **Realtà mista di Windows** sia visualizzato nell'elenco. In caso contrario, selezionare il **+** pulsante nella parte inferiore dell'elenco e scegliere **Windows olografico**.
 
 Successivamente, è necessario impostare il back-end di scripting su .NET.
 
@@ -101,71 +101,71 @@ Successivamente, è necessario impostare il back-end di scripting su .NET.
 
 Infine, verranno aggiornate le impostazioni di qualità per ottenere prestazioni rapide su HoloLens.
 
-1. Passare a **modifica > impostazioni progetto > qualità** .
+1. Passare a **modifica > impostazioni progetto > qualità**.
 2. Fare clic sulla freccia rivolta verso il basso nella riga **predefinita** sotto l'icona di Windows Store.
-3. Selezionare **molto basso** per le **app di Windows Store** .
+3. Selezionare **molto basso** per le **app di Windows Store**.
 
 ### <a name="import-project-assets"></a>Importa asset progetto
 
 1. Fare clic con il pulsante destro del mouse sulla cartella **assets** nel pannello **Project** .
-2. Fare clic su **Importa pacchetto > pacchetto personalizzato** .
-3. Individuare i file di progetto scaricati e fare clic su **ModelExplorer. file unitypackage Tools** .
-4. Fare clic su **Apri** .
+2. Fare clic su **Importa pacchetto > pacchetto personalizzato**.
+3. Individuare i file di progetto scaricati e fare clic su **ModelExplorer. file unitypackage Tools**.
+4. Fare clic su **Apri**.
 5. Al termine del caricamento del pacchetto, fare clic sul pulsante **Importa** .
 
 ### <a name="setup-the-scene"></a>Configurare la scena
 
-1. Nella gerarchia eliminare la **fotocamera principale** .
+1. Nella gerarchia eliminare la **fotocamera principale**.
 2. Nella cartella **HoloToolkit** aprire la cartella di **input** , quindi aprire la cartella **prefabbricates** .
-3. Trascinare il prefabbricato **MixedRealityCameraParent** dalla cartella **prefabbricates** alla **gerarchia** .
-4. Fare clic con il pulsante destro del mouse sulla **luce direzionale** nella gerarchia e scegliere **Elimina** .
-5. Nella cartella **ologrammi** trascinare e rilasciare gli asset seguenti nella radice della **gerarchia** :
+3. Trascinare il prefabbricato **MixedRealityCameraParent** dalla cartella **prefabbricates** alla **gerarchia**.
+4. Fare clic con il pulsante destro del mouse sulla **luce direzionale** nella gerarchia e scegliere **Elimina**.
+5. Nella cartella **ologrammi** trascinare e rilasciare gli asset seguenti nella radice della **gerarchia**:
     * **AstroMan**
     * **Luci**
     * **SpaceAudioSource**
     * **SpaceBackground**
 6. Avviare la **modalità di riproduzione** ▶ per visualizzare l'astronauta.
-7. Fare clic su **modalità Riproduci** ▶ per **arrestare** .
-8. Nella cartella **ologrammi** individuare l'asset **fitbox** e trascinarlo nella radice della **gerarchia** .
+7. Fare clic su **modalità Riproduci** ▶ per **arrestare**.
+8. Nella cartella **ologrammi** individuare l'asset **fitbox** e trascinarlo nella radice della **gerarchia**.
 9. Selezionare **fitbox** nel pannello **gerarchia** .
 10. Trascinare la raccolta **astror** dalla **gerarchia** alla proprietà della **raccolta ologramma** di fitbox nel pannello **Inspector** .
 
 ### <a name="save-the-project"></a>Salvare il progetto
 
-1. Salvare la nuova scena: **File > Salva scena con nome** .
-2. Fare clic su **nuova cartella** e denominare la cartella **Scenes** .
-3. Denominare il file " **ModelExplorer** " e salvarlo nella cartella **Scenes** .
+1. Salvare la nuova scena: **File > Salva scena con nome**.
+2. Fare clic su **nuova cartella** e denominare la cartella **Scenes**.
+3. Denominare il file "**ModelExplorer**" e salvarlo nella cartella **Scenes** .
 
 ### <a name="build-the-project"></a>Compilare il progetto
 
-1. In Unity selezionare **File > impostazioni di compilazione** .
+1. In Unity selezionare **File > impostazioni di compilazione**.
 2. Fare clic su **Aggiungi scene aperte** per aggiungere la scena.
-3. Selezionare **piattaforma UWP (Universal Windows Platform)** nell'elenco **piattaforma** e fare clic su **Cambia piattaforma** .
-4. Se si sta sviluppando in modo specifico per HoloLens, impostare **dispositivo di destinazione** su **HoloLens** . In caso contrario, lasciarlo in **qualsiasi dispositivo** .
+3. Selezionare **piattaforma UWP (Universal Windows Platform)** nell'elenco **piattaforma** e fare clic su **Cambia piattaforma**.
+4. Se si sta sviluppando in modo specifico per HoloLens, impostare **dispositivo di destinazione** su **HoloLens**. In caso contrario, lasciarlo in **qualsiasi dispositivo**.
 5. Verificare che **tipo di compilazione** sia impostato su **D3D** e che l' **SDK** sia impostato su **installato più recente** (che deve essere SDK 16299 o versione successiva).
-6. Fare clic su **Compila** .
+6. Fare clic su **Compila**.
 7. Creare una **nuova cartella** denominata "app".
 8. Fare clic sulla cartella dell' **app** .
-9. Premere **Seleziona cartella** .
+9. Premere **Seleziona cartella**.
 
 Quando si esegue Unity, viene visualizzata una finestra Esplora file.
 
 1. Aprire la cartella dell' **app** .
-2. Aprire la **soluzione ModelExplorer di Visual Studio** .
+2. Aprire la **soluzione ModelExplorer di Visual Studio**.
 
 Se si esegue la distribuzione in HoloLens:
 
-1. Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x86** .
-2. Fare clic sulla freccia a discesa accanto al pulsante computer locale e selezionare **computer remoto** .
-3. Immettere **l'indirizzo IP del dispositivo HoloLens** e impostare la modalità di autenticazione su **universale (protocollo non crittografato)** . Fare clic su **Seleziona** . Se non si conosce l'indirizzo IP del dispositivo, vedere **impostazioni > rete & Internet > opzioni avanzate** .
-4. Nella barra dei menu superiore fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5** . Se questa è la prima volta che si esegue la distribuzione nel dispositivo, sarà necessario [associarla a Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
-5. Quando l'app è stata distribuita, chiudere il **fitbox** con un **movimento di selezione** .
+1. Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x86**.
+2. Fare clic sulla freccia a discesa accanto al pulsante computer locale e selezionare **computer remoto**.
+3. Immettere **l'indirizzo IP del dispositivo HoloLens** e impostare la modalità di autenticazione su **universale (protocollo non crittografato)**. Fare clic su **Seleziona**. Se non si conosce l'indirizzo IP del dispositivo, vedere **impostazioni > rete & Internet > opzioni avanzate**.
+4. Nella barra dei menu superiore fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5**. Se questa è la prima volta che si esegue la distribuzione nel dispositivo, sarà necessario [associarla a Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+5. Quando l'app è stata distribuita, chiudere il **fitbox** con un **movimento di selezione**.
 
 Se si esegue la distribuzione in un auricolare immersivo:
 
-1. Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x64** .
-2. Verificare che la destinazione di distribuzione sia impostata su **computer locale** .
-3. Nella barra dei menu superiore fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5** .
+1. Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x64**.
+2. Verificare che la destinazione di distribuzione sia impostata su **computer locale**.
+3. Nella barra dei menu superiore fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5**.
 4. Quando l'app è stata distribuita, chiudere il **fitbox** estraendo il trigger in un controller di movimento.
 
 ## <a name="chapter-2---cursor-and-target-feedback"></a>Capitolo 2-feedback del cursore e della destinazione
@@ -187,27 +187,27 @@ Il nostro lavoro verrà basato sui principi di progettazione dei cursori, vale a
 ### <a name="instructions"></a>Istruzioni
 
 1. Nella cartella **HoloToolkit\Input\Prefabs** trovare l'asset **InputManager** .
-2. Trascinare e rilasciare **InputManager** nella **gerarchia** .
+2. Trascinare e rilasciare **InputManager** nella **gerarchia**.
 3. Nella cartella **HoloToolkit\Input\Prefabs** trovare il **cursore** asset.
-4. Trascinare e rilasciare il **cursore** nella **gerarchia** .
-5. Consente di selezionare l'oggetto **InputManager** nella **gerarchia** .
-6. Trascinare l'oggetto **cursore** dalla **gerarchia** nel campo **cursore** di **SimpleSinglePointerSelector** di InputManager, nella parte inferiore del **controllo** .
+4. Trascinare e rilasciare il **cursore** nella **gerarchia**.
+5. Consente di selezionare l'oggetto **InputManager** nella **gerarchia**.
+6. Trascinare l'oggetto **cursore** dalla **gerarchia** nel campo **cursore** di **SimpleSinglePointerSelector** di InputManager, nella parte inferiore del **controllo**.
 
 ![Configurazione semplice del selettore con puntatore singolo](images/holograms210-ssps.png)
 
 ### <a name="build-and-deploy"></a>Compilazione e distribuzione
 
-1. Ricompilare l'app da **File > impostazioni di compilazione** .
-2. Aprire la **cartella dell'app** .
-3. Aprire la **soluzione ModelExplorer di Visual Studio** .
-4. Fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5** .
+1. Ricompilare l'app da **File > impostazioni di compilazione**.
+2. Aprire la **cartella dell'app**.
+3. Aprire la **soluzione ModelExplorer di Visual Studio**.
+4. Fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5**.
 5. Osservare il modo in cui viene disegnato il cursore e il modo in cui cambia aspetto se tocca un ologramma.
 
 ### <a name="instructions"></a>Istruzioni
 
 1. Nel pannello **gerarchia** espandere l'oggetto **astror** -> **GEO_G** -> **Back_Center** .
 2. Fare doppio clic su **Interactible.cs** per aprirlo in Visual Studio.
-3. Rimuovere il commento dalle righe nei callback **IFocusable. OnFocusEnter ()** e **IFocusable. OnFocusExit ()** in **Interactible.cs** . Questi vengono chiamati dal InputManager del Toolkit di realtà mista quando lo stato attivo (tramite sguardo o con il puntatore del controller) entra e esce dall'oggetto Collider di GameObject specifico.
+3. Rimuovere il commento dalle righe nei callback **IFocusable. OnFocusEnter ()** e **IFocusable. OnFocusExit ()** in **Interactible.cs**. Questi vengono chiamati dal InputManager del Toolkit di realtà mista quando lo stato attivo (tramite sguardo o con il puntatore del controller) entra e esce dall'oggetto Collider di GameObject specifico.
 
 ```cs
 /* TODO: DEVELOPER CODING EXERCISE 2.d */
@@ -271,14 +271,14 @@ Verrà usato il file **DirectionIndicator.cs** che:
 2. Nascondere l'indicatore direzionale se l'utente sta guardando gli ologrammi.
 3. Aggiornare l'indicatore direzionale in modo che punti agli ologrammi.
 
-A questo punto, procedere con l'esercitazione.
+È possibile iniziare subito.
 
 1. Fare clic sull'oggetto **astror** nel pannello **gerarchia** e **fare clic sulla freccia** per espanderlo.
-2. Nel pannello **gerarchia** selezionare l'oggetto **DirectionalIndicator** in **Astron** .
+2. Nel pannello **gerarchia** selezionare l'oggetto **DirectionalIndicator** in **Astron**.
 3. Nel pannello **Inspector** fare clic sul pulsante **Add Component** .
 4. Nel menu digitare nell' **indicatore di direzione** della casella di ricerca. Selezionare il risultato della ricerca.
-5. Nel pannello **gerarchia** trascinare e rilasciare l'oggetto **cursore** sulla proprietà **Cursor** del **controllo** .
-6. Nel pannello **progetto** , nella cartella **ologrammi** , trascinare l'asset **DirectionalIndicator** sulla proprietà **indicatore direzionale** nel **controllo** .
+5. Nel pannello **gerarchia** trascinare e rilasciare l'oggetto **cursore** sulla proprietà **Cursor** del **controllo**.
+6. Nel pannello **progetto** , nella cartella **ologrammi** , trascinare l'asset **DirectionalIndicator** sulla proprietà **indicatore direzionale** nel **controllo**.
 7. Compilare e distribuire l'app.
 8. Osservare come l'oggetto indicatore direzionale aiuta a trovare l'astronauta.
 
@@ -294,19 +294,19 @@ Verrà usato il file **Billboard.cs** per tenere un GameObject orientato in modo
 
 1. Nel pannello **gerarchia** selezionare l'oggetto **Astron** .
 2. Nel pannello **Inspector** fare clic sul pulsante **Add Component** .
-3. Nel menu digitare nella casella di ricerca **Billboard** . Selezionare il risultato della ricerca.
-4. Nel **controllo** impostare l' **asse pivot** su **Y** .
+3. Nel menu digitare nella casella di ricerca **Billboard**. Selezionare il risultato della ricerca.
+4. Nel **controllo** impostare l' **asse pivot** su **Y**.
 5. Prova Compilare e distribuire l'app come prima.
 6. Scopri in che modo l'oggetto Billboard si presenta indipendentemente dalla modalità di modifica del punto di vista.
 7. Eliminare lo script da **astroname** per il momento.
 
-## <a name="chapter-6---tag-along"></a>Capitolo 6-tag-along
+## <a name="chapter-6---tag-along"></a>Capitolo 6-Tag-Along
 
 >[!VIDEO https://www.youtube.com/embed/Ct8ORZAX5JU]
 
 ### <a name="objectives"></a>Obiettivi
 
-* Usare i tag-along per fare in modo che gli ologrammi ci siano nella stanza.
+* Usare Tag-Along per fare in modo che gli ologrammi vengano seguiti dalla stanza.
 
 Quando si lavora su questo problema, verranno illustrati i vincoli di progettazione seguenti:
 
@@ -320,11 +320,11 @@ Un oggetto tag-along non lascia completamente la visualizzazione dell'utente. È
 
 Verrà usato il file **SimpleTagalong.cs** che:
 
-1. Determinare se l'oggetto tag-along si trova all'interno dei limiti della fotocamera.
-2. Se non è presente nella vista tronco, posizionare il tag-lungo su parzialmente all'interno della vista tronco.
-3. In caso contrario, posizionare il tag su una distanza predefinita dall'utente.
+1. Determinare se l'oggetto Tag-Along si trova all'interno dei limiti della fotocamera.
+2. Se non è presente nella vista tronco, posizionare il Tag-Along su parzialmente all'interno della vista tronco.
+3. In caso contrario, posizionare il Tag-Along su una distanza predefinita dall'utente.
 
-Per eseguire questa operazione, è necessario prima di tutto modificare lo script **Interactible.cs** per chiamare **TagalongAction** .
+Per eseguire questa operazione, è necessario prima di tutto modificare lo script **Interactible.cs** per chiamare **TagalongAction**.
 
 1. Modificare **Interactible.cs** completando il codice esercizio 6. a (rimuovendo il commento dalle righe da 84 a 87).
 
@@ -341,11 +341,11 @@ Lo script **InteractibleAction.cs** , associato a **Interactible.cs** , esegue a
 
 * Nella cartella **Scripts** fare clic su **TagalongAction.cs** asset per aprirlo in Visual Studio.
 * Completare l'esercizio di codifica o sostituirlo con il seguente:
-  * Nella parte superiore della **gerarchia** , nella barra di ricerca digitare **ChestButton_Center** e selezionare il risultato.
+  * Nella parte superiore della **gerarchia**, nella barra di ricerca digitare **ChestButton_Center** e selezionare il risultato.
   * Nel pannello **Inspector** fare clic sul pulsante **Add Component** .
-  * Nel menu digitare nella casella di ricerca **azione Tagalong** . Selezionare il risultato della ricerca.
+  * Nel menu digitare nella casella di ricerca **azione Tagalong**. Selezionare il risultato della ricerca.
   * Nella cartella **ologrammi** trovare l'asset **Tagalong** .
-  * Consente di selezionare l'oggetto **ChestButton_Center** nella **gerarchia** . Trascinare e rilasciare l'oggetto **TagAlong** dal pannello del **progetto** nel **controllo** nella proprietà **oggetto in TagAlong** .
+  * Consente di selezionare l'oggetto **ChestButton_Center** nella **gerarchia**. Trascinare e rilasciare l'oggetto **TagAlong** dal pannello del **progetto** nel **controllo** nella proprietà **oggetto in TagAlong** .
   * Trascinare l'oggetto **azione Tagalong** da **Inspector** nel campo **azione Interactible** nello script **Interactible** .
 * Fare doppio clic sullo script **TagalongAction** per aprirlo in Visual Studio.
 
@@ -355,9 +355,9 @@ Lo script **InteractibleAction.cs** , associato a **Interactible.cs** , esegue a
 
 * Aggiungere funzionalità alla funzione PerformAction nello script TagalongAction (Ereditato da InteractibleAction).
 * Aggiungere il tabellone all'oggetto guardato su e impostare l'asse pivot su XY.
-* Aggiungere quindi un semplice tag insieme all'oggetto.
+* Aggiungere quindi Tag-Along semplici all'oggetto.
 
-Ecco la nostra soluzione, di **TagalongAction.cs** :
+Ecco la nostra soluzione, di **TagalongAction.cs**:
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.

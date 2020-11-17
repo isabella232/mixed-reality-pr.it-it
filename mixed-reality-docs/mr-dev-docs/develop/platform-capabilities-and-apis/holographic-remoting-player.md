@@ -5,18 +5,18 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: HoloLens, comunicazione remota, comunicazione remota olografica
-ms.openlocfilehash: f678931098f6518885a83ea7c06d4e9a3074465c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens, comunicazione remota, comunicazione remota olografica, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale, diagnostica, prestazioni
+ms.openlocfilehash: c65b10079ffbc40602ebbd25b1e493c19b2a6078
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683660"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677930"
 ---
 # <a name="holographic-remoting-player"></a>Holographic Remoting Player
 
 >[!IMPORTANT]
->La comunicazione remota olografica per HoloLens 2 è una modifica di versione principale. [Le applicazioni remote per **HoloLens (1st Gen)**](add-holographic-remoting.md) devono usare il pacchetto NuGet versione **1. x.** x e [le applicazioni remote per **HoloLens 2**](holographic-remoting-create-host.md) devono usare **2. x. x** . Ciò implica che le applicazioni remote scritte per HoloLens 2 non sono compatibili con HoloLens (1a generazione) e viceversa.
+>La comunicazione remota olografica per HoloLens 2 è una modifica di versione principale. [Le applicazioni remote per **HoloLens (1st Gen)**](add-holographic-remoting.md) devono usare il pacchetto NuGet versione **1. x.** x e [le applicazioni remote per **HoloLens 2**](holographic-remoting-create-host.md) devono usare **2. x. x**. Ciò implica che le applicazioni remote scritte per HoloLens 2 non sono compatibili con HoloLens (1a generazione) e viceversa.
 
 Il [lettore di comunicazione remota olografico](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40) è un'app complementare che si connette a app e giochi per PC che supportano la comunicazione remota olografica. La comunicazione remota olografica trasmette contenuto olografico da un PC a Microsoft HoloLens in tempo reale, usando una connessione Wi-Fi.
 
@@ -35,14 +35,14 @@ Seguire le istruzioni dell'app per connettersi al lettore di comunicazione remot
 
 Quando viene visualizzata la schermata principale, si saprà che non è presente un'app connessa.
 
-Si noti che la connessione remota olografica **non è crittografata** . È consigliabile usare sempre la comunicazione remota olografica su una connessione Wi-Fi sicura attendibile.
+Si noti che la connessione remota olografica **non è crittografata**. È consigliabile usare sempre la comunicazione remota olografica su una connessione Wi-Fi protetta attendibile.
 
 ## <a name="quality-and-performance"></a>Qualità e prestazioni
 
 La qualità e le prestazioni dell'esperienza variano in base a tre fattori:
 * **L'esperienza olografica che si sta eseguendo: le** app che eseguono il rendering di contenuto ad alta risoluzione o altamente dettagliato possono richiedere un PC più veloce o una connessione wireless più veloce.
 * **Hardware del PC** : il PC deve essere in grado di eseguire e codificare l'esperienza olografica a 60 fotogrammi al secondo. Per una scheda grafica, è in genere consigliabile usare GeForce GTX 970 o AMD Radeon R9 290 o una soluzione migliore. Anche in questo caso, la tua esperienza specifica potrebbe richiedere una scheda di fascia superiore o inferiore.
-* **Connessione Wi-Fi** : l'esperienza olografica viene trasmessa tramite Wi-Fi. Usa una rete veloce con congestione ridotta per massimizzare la qualità. L'uso di un PC connesso tramite un cavo Ethernet, anziché di un Wi-Fi, può migliorare anche la qualità.
+* **La connessione Wi-Fi** : l'esperienza olografica viene trasmessa tramite Wi-Fi. Usa una rete veloce con congestione ridotta per massimizzare la qualità. L'uso di un PC connesso tramite un cavo Ethernet, anziché di un Wi-Fi, può migliorare anche la qualità.
 
 ## <a name="diagnostics"></a>Diagnostica
 
@@ -55,7 +55,7 @@ In **HoloLens 2** l'app visualizzerà:
 
 ![Diagnostica del lettore di comunicazione remota olografica](images/holographicremotingplayer-diag.png)
 
-* **Render** : numero di frame di cui il lettore remoto ha eseguito il rendering durante l'ultimo secondo. Si noti che questo è indipendente dal numero di frame ricevuti tramite la rete (vedere **video frame** ). Inoltre, viene visualizzato il tempo Delta medio/massimo di rendering in millisecondi nell'ultimo secondo tra i frame sottoposti a rendering.
+* **Render** : numero di frame di cui il lettore remoto ha eseguito il rendering durante l'ultimo secondo. Si noti che questo è indipendente dal numero di frame ricevuti tramite la rete (vedere **video frame**). Inoltre, viene visualizzato il tempo Delta medio/massimo di rendering in millisecondi nell'ultimo secondo tra i frame sottoposti a rendering.
 
 * **Fotogrammi video** : il primo numero visualizzato è quello dei fotogrammi video ignorati, il secondo viene riusato per i fotogrammi video e la terza riceve i fotogrammi video. Tutti i numeri rappresentano il conteggio nell'ultimo secondo.
     * ```Received frames``` numero di fotogrammi video raggiunti nell'ultimo secondo. In condizioni normali, deve essere 60, ma se non si tratta di un indicatore, i frame vengono eliminati a causa di problemi di rete o il lato remoto o remoto non produce frame con la frequenza prevista.
@@ -68,8 +68,6 @@ In **HoloLens 2** l'app visualizzerà:
 * **Delta dei frame video** : Delta minimo/massimo tra i fotogrammi video ricevuti nell'ultimo secondo. Questo numero è in genere correlato ai frame ignorati/riutilizzati in caso di problemi causati da jitter di rete.
 * **Latenza** : il turnaround medio in millisecondi nell'ultimo secondo. Il turnaround in questo contesto indica il tempo di invio dei dati di post/sensore dal HoloLens al lato remoto/remoto fino a visualizzare il frame video per i dati di post/telemetria nella visualizzazione HoloLens.
 * **Fotogrammi video scartati** : il numero di fotogrammi video scartati nell'ultimo secondo e dopo che è stata stabilita una connessione. La causa principale per i fotogrammi video scartati è quando un frame video non viene visualizzato in ordine e per questo motivo è necessario rimuoverlo perché ne esiste già uno più recente. Questa operazione è simile ai *frame eliminati* , ma la relativa origine è a un livello inferiore nello stack di comunicazione remota. I fotogrammi video scartati sono previsti solo in condizioni di rete non valide.
-
-
 
 Nella schermata principale è possibile **disabilitare** la diagnostica per disattivare la diagnostica.
 

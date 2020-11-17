@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, HoloLens, cuffie immersive, app, UWP, invio, invio, filtri, metadati, requisiti di sistema, parole chiave, predato, certificazione, pacchetto, appx, merchandising
-ms.openlocfilehash: 1ea3a125bed26cabbf617585c0e87399c772e24a
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+ms.openlocfilehash: f5dae379deee54056595c291363b5b1e3e83f25e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631479"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678790"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Invio di un'app a Microsoft Store
 
@@ -67,9 +67,9 @@ Quando si crea un nuovo progetto di Windows universale in Visual Studio, verrà 
 
 ### <a name="specifying-target-device-families"></a>Specifica delle famiglie di dispositivi di destinazione
 
-Le applicazioni di realtà mista di Windows (sia per [HoloLens](../hololens-hardware-details.md) che per [auricolari immersivi](../discover/immersive-headset-hardware-details.md)) fanno parte del piattaforma UWP (Universal Windows Platform), quindi qualsiasi pacchetto dell'app con un file CAB della [famiglia di dispositivi di destinazione](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) **universale Windows** viene eseguito su PC HoloLens o Windows 10 con auricolari immersivi. Se non si specifica una famiglia di dispositivi di destinazione nel manifesto dell'applicazione, è possibile aprire inavvertitamente l'app fino a dispositivi Windows 10 non intenzionali. Attenersi alla procedura seguente per specificare la famiglia di dispositivi Windows 10 desiderata, quindi [verificare che le famiglie di dispositivi corrette siano impostate quando si carica il pacchetto dell'app nel centro partner per Microsoft Store l'invio.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
+Le applicazioni di realtà mista di Windows (sia per [HoloLens](../hololens-hardware-details.md) che per [auricolari immersivi](../discover/immersive-headset-hardware-details.md)) fanno parte del piattaforma UWP (Universal Windows Platform), quindi qualsiasi pacchetto dell'app con una [famiglia di dispositivi di destinazione](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) **Windows. universale** può essere eseguito su PC HoloLens o Windows 10 con auricolari immersivi. Se non si specifica una famiglia di dispositivi di destinazione nel manifesto dell'applicazione, è possibile aprire inavvertitamente l'app fino a dispositivi Windows 10 non intenzionali. Attenersi alla procedura seguente per specificare la famiglia di dispositivi Windows 10 desiderata, quindi [verificare che le famiglie di dispositivi corrette siano impostate quando si carica il pacchetto dell'app nel centro partner per Microsoft Store l'invio.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
 
-* Per impostare questo campo in Visual Studio, fare clic con il pulsante destro del mouse su **Package. appxmanifest** e selezionare **Visualizza codice** , quindi trovare il campo **nome TargetDeviceFamily** . Per impostazione predefinita, l'aspetto dovrebbe essere simile al seguente:
+* Per impostare questo campo in Visual Studio, fare clic con il pulsante destro del mouse su **Package. appxmanifest** e selezionare **Visualizza codice**, quindi trovare il campo **nome TargetDeviceFamily** . Per impostazione predefinita, l'aspetto dovrebbe essere simile al seguente:
 
 ```
 <Dependencies>
@@ -77,7 +77,7 @@ Le applicazioni di realtà mista di Windows (sia per [HoloLens](../hololens-hard
 </Dependencies>
 ```
 
-* Se si sta creando un'app **HoloLens** , è possibile assicurarsi che sia installata solo in HoloLens impostando il gruppo di dispositivi di destinazione su **Windows. olografico** : 
+* Se si sta creando un'app **HoloLens** , è possibile assicurarsi che sia installata solo in HoloLens impostando il gruppo di dispositivi di destinazione su **Windows. olografico**: 
 
 ```
 <Dependencies>
@@ -93,7 +93,7 @@ Le applicazioni di realtà mista di Windows (sia per [HoloLens](../hololens-hard
 </Dependencies>
 ```
 
-* Se l'app viene creata per **auricolari immersivi di Windows** , è possibile assicurarsi che sia installata solo nei PC Windows 10 con Windows 10 Fall Creators Update (necessario per la realtà mista di Windows) impostando la famiglia di dispositivi di destinazione su **Windows. desktop** con **MinVersion** di 10.0.16299.0:
+* Se l'app viene creata per **auricolari immersivi di Windows**, è possibile assicurarsi che sia installata solo nei PC Windows 10 con Windows 10 Fall Creators Update (necessario per la realtà mista di Windows) impostando la famiglia di dispositivi di destinazione su **Windows. desktop** con **MinVersion** di 10.0.16299.0:
 
 ```
 <Dependencies>
@@ -101,7 +101,7 @@ Le applicazioni di realtà mista di Windows (sia per [HoloLens](../hololens-hard
 </Dependencies>
 ```
 
-* Infine, se l'app è progettata per l'esecuzione sia in **HoloLens** che in modalità **mista di Windows** , è possibile verificare che l'app sia disponibile solo per queste due famiglie di dispositivi e che ogni destinazione disponga della versione minima di Windows corretta includendo una riga per ogni famiglia di dispositivi di destinazione con la rispettiva MinVersion:
+* Infine, se l'app è progettata per l'esecuzione sia in **HoloLens** che in modalità **mista di Windows**, è possibile verificare che l'app sia disponibile solo per queste due famiglie di dispositivi e che ogni destinazione disponga della versione minima di Windows corretta includendo una riga per ogni famiglia di dispositivi di destinazione con la rispettiva MinVersion:
 
 ```
 <Dependencies>
@@ -120,7 +120,7 @@ Quando si associa l'app alla Microsoft Store, i valori seguenti vengono scaricat
 * Nome pacchetto
 * Publisher ID (ID editore)
 * Nome visualizzato editore
-* Versione
+* Version
 
 Se si sta eseguendo l'override del file Package. appxmanifest predefinito con un file con estensione XML personalizzato, non è possibile associare l'app al Microsoft Store. L'associazione di un file manifesto personalizzato con l'archivio comporterà un messaggio di errore.
 
@@ -264,7 +264,7 @@ Aggiungere "realtà mista di Windows" ai termini di ricerca
 In molti casi, gli utenti non avranno alcuna esperienza con la realtà virtuale prima di acquistare una cuffia mista a realtà mista di Windows. Potrebbero non sapere cosa aspettarsi da giochi intensi o avere familiarità con la loro soglia di comfort in esperienze immersive. Molti clienti possono anche provare a usare un auricolare immersivo a realtà mista di Windows nei PC che non sono associati ai PC con la [realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines). A causa di queste considerazioni, è consigliabile valutare la possibilità di offrire una [versione di valutazione gratuita](https://docs.microsoft.com/windows/uwp/publish/set-app-pricing-and-availability#free-trial) per l'app o il gioco in realtà mista a pagamento.
 
 ## <a name="see-also"></a>Vedere anche
-* [Che cos'è la realtà mista?](../discover/mixed-reality.md)
+* [Che cos'è Realtà mista?](../discover/mixed-reality.md)
 * [Cenni preliminari sullo sviluppo](../develop/development.md)
 * [Visualizzazioni delle app](../design/app-views.md)
 * [Informazioni sulle prestazioni per la realtà mista](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)

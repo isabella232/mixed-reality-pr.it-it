@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: HoloLens, persistenza, Unity
-ms.openlocfilehash: bb1a9b0544f9325a60c86c7424b7b451b6b4335b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens, persistenza, Unity, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
+ms.openlocfilehash: cff7f05a5a5695ae8e379ed681c3b7320622968c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690077"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678530"
 ---
 # <a name="persistence-in-unity"></a>Persistenza in Unity
 
@@ -107,19 +107,19 @@ Per iniziare a creare esperienze condivise in Unity, provare le <a href="https:/
 
 Quando si è operativi con i Anchor spaziali di Azure, è possibile <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">creare e individuare ancoraggi in Unity</a>.
 
-## <a name="next-development-checkpoint"></a>Checkpoint di sviluppo successivo
+## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
 Se si sta seguendo il percorso di checkpoint per lo sviluppo di Unity, è possibile esplorare i blocchi predefiniti di base della realtà mista. Da qui è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Mapping spaziale](spatial-mapping-in-unity.md)
 
-In alternativa, passare alle API e alle funzionalità della piattaforma di realtà mista:
+In alternativa, passare alle API e funzionalità della piattaforma di realtà mista:
 
 > [!div class="nextstepaction"]
 > [Esperienze condivise](shared-experiences-in-unity.md)
 
-È sempre possibile tornare ai checkpoint per [lo sviluppo di Unity](unity-development-overview.md#2-core-building-blocks) in qualsiasi momento.
+È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](unity-development-overview.md#2-core-building-blocks) in qualsiasi momento.
 
 ## <a name="see-also"></a>Vedere anche
 * [Persistenza di ancoraggio spaziale](../../design/coordinate-systems.md#spatial-anchor-persistence)

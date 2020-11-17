@@ -5,15 +5,15 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 07/08/2020
 ms.topic: article
-keywords: ologrammi, stabilità, hololens
+keywords: ologrammi, stabilità, hololens, cuffie per realtà mista, cuffie per la realtà mista di Windows, auricolare della realtà virtuale, frequenza dei fotogrammi, rendering, riproiezione, separazione dei colori
 appliesto:
 - HoloLens
-ms.openlocfilehash: 21a9f7cff655ff35d32e3ca701219d4a1e41a0e2
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 081a080c73a1c78eb762b94291027cf7ebcbed45
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683757"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679600"
 ---
 # <a name="hologram-stability"></a>Stabilità degli ologrammi
 
@@ -32,7 +32,7 @@ La terminologia seguente può essere utile per identificare i problemi relativi 
 * **Deriva.** Gli utenti visualizzano la deriva perché un ologramma sembra allontanarsi dalla posizione in cui è stata originariamente posizionata. La tendenza si verifica quando gli ologrammi vengono posizionati lontano dagli [ancoraggi spaziali](../../design/spatial-anchors.md), in particolare in parti dell'ambiente di cui non è stato eseguito il mapping completo. La creazione di ologrammi vicini a ancoraggi spaziali riduce la probabilità di Drift.
 * **Nervosismo.** Quando un ologramma "estrae" o "salta" fuori dalla propria posizione occasionalmente. Nervosismo può verificarsi quando il rilevamento regola gli ologrammi in modo che corrispondano alla conoscenza aggiornata dell'ambiente.
 * **Nuotare.** Quando un ologramma sembra ondeggiare corrispondente al movimento della testa dell'utente. Il nuoto si verifica quando l'applicazione non dispone di una [riproiezione](hologram-stability.md#reprojection)completamente implementata e se la HoloLens non viene [calibrata](../../calibration.md) per l'utente corrente. L'utente può eseguire di nuovo l'applicazione di [calibrazione](../../calibration.md) per risolvere il problema. Gli sviluppatori possono aggiornare il piano di stabilizzazione per migliorare ulteriormente la stabilità.
-* **Separazione dei colori.** Le visualizzazioni in HoloLens sono schermi sequenziali con colore, che lampeggiano con i canali di colore rosso-verde-blu-verde a 60 Hz (i singoli campi colore sono visualizzati a 240 Hz). Ogni volta che un utente tiene traccia di un ologramma che si sta muovendo con i propri occhi, i bordi iniziali e finali dell'ologramma si separano nei colori costituenti, producendo un effetto arcobaleno. Il grado di separazione dipende dalla velocità dell'ologramma. In alcuni casi più rari, lo stato di un ologramma che si muove rapidamente osservando un ologramma stazionario può produrre anche un effetto arcobaleno, denominato *[separazione dei colori](hologram-stability.md#color-separation)* .
+* **Separazione dei colori.** Le visualizzazioni in HoloLens sono schermi sequenziali con colore, che lampeggiano con i canali di colore rosso-verde-blu-verde a 60 Hz (i singoli campi colore sono visualizzati a 240 Hz). Ogni volta che un utente tiene traccia di un ologramma che si sta muovendo con i propri occhi, i bordi iniziali e finali dell'ologramma si separano nei colori costituenti, producendo un effetto arcobaleno. Il grado di separazione dipende dalla velocità dell'ologramma. In alcuni casi più rari, lo stato di un ologramma che si muove rapidamente osservando un ologramma stazionario può produrre anche un effetto arcobaleno, denominato *[separazione dei colori](hologram-stability.md#color-separation)*.
 
 ## <a name="frame-rate"></a>Frequenza dei fotogrammi
 
@@ -91,7 +91,7 @@ Sono disponibili quattro tipi principali di riproiezione
 * **Nessuno:** Se l'applicazione non esegue alcuna operazione, la riproiezione piana viene utilizzata con il piano di stabilizzazione fisso a 2 metri nella direzione dello sguardo a capo dell'utente, in genere producendo risultati sottostandard.
 
 Le applicazioni devono eseguire azioni specifiche per abilitare i diversi tipi di riproiezione
-* **Riproiezione profondità:** L'applicazione invia il buffer di profondità al sistema per ogni frame sottoposto a rendering.  In Unity la riproiezione della profondità viene eseguita con l'opzione del **buffer di profondità condivisa** nel riquadro **impostazioni della realtà mista di Windows** in **Gestione plug** -in XR.  Le app DirectX chiamano CommitDirect3D11DepthBuffer.  L'applicazione non deve chiamare SetFocusPoint.
+* **Riproiezione profondità:** L'applicazione invia il buffer di profondità al sistema per ogni frame sottoposto a rendering.  In Unity la riproiezione della profondità viene eseguita con l'opzione del **buffer di profondità condivisa** nel riquadro **impostazioni della realtà mista di Windows** in **Gestione plug**-in XR.  Le app DirectX chiamano CommitDirect3D11DepthBuffer.  L'applicazione non deve chiamare SetFocusPoint.
 * **Riproiezione planare:** In ogni frame, le applicazioni indicano al sistema la posizione di un piano da stabilizzare.  Le applicazioni Unity chiamano SetFocusPointForFrame e devono avere il **buffer di profondità condiviso** disabilitato.  Le app DirectX chiamano SetFocusPoint e non devono chiamare CommitDirect3D11DepthBuffer.
 * **Riproiezione piana automatica:** Per abilitare, l'applicazione deve inviare il buffer di profondità al sistema come per la riproiezione approfondita.  In HoloLens 2, l'applicazione deve quindi SetFocusPoint con un punto di 0, 0 per ogni fotogramma.  Per HoloLens generazione 1, l'applicazione non deve chiamare SetFocusPoint.
 

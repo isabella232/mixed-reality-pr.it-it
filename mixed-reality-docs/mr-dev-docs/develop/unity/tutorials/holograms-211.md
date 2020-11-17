@@ -1,17 +1,17 @@
 ---
-title: Input MR 211-movimento
+title: 'MR Input 211: Gesto'
 description: Seguire questa procedura dettagliata di codifica usando Unity, Visual Studio e HoloLens per informazioni dettagliate sui concetti di movimento.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, esercitazione, gesto
-ms.openlocfilehash: 0d3057cb1751a3bc429ed1ccf520b451110f64b4
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, esercitazione, movimento, HoloLens, realtà mista, Unity, Headset per la realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale, Windows 10
+ms.openlocfilehash: 9f83e2f3b02cf8d83b2fb58a3a0d05dc8576b0e8
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686429"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678290"
 ---
 # <a name="mr-input-211-gesture"></a>Input MR 211: Movimento
 
@@ -64,7 +64,7 @@ In questo corso verrà rivisitato **Esplora modelli** di progetto Unity, che è 
 
 ### <a name="errata-and-notes"></a>Errori e note
 
-* "Enable Just My Code" deve essere disabilitato ( *deselezionato* ) in Visual Studio in strumenti-opzioni >->debug per raggiungere i punti di interruzione nel codice.
+* "Enable Just My Code" deve essere disabilitato (*deselezionato*) in Visual Studio in strumenti-opzioni >->debug per raggiungere i punti di interruzione nel codice.
 
 ## <a name="chapter-0---unity-setup"></a>Capitolo 0-installazione Unity
 
@@ -80,11 +80,11 @@ In questo corso verrà rivisitato **Esplora modelli** di progetto Unity, che è 
 
 ### <a name="building"></a>Compilazione
 
-1. In Unity selezionare **File > impostazioni di compilazione** .
-2. Se **Scenes/ModelExplorer** non è elencato in **Scenes in Build** , fare clic su **Aggiungi scene aperte** per aggiungere la scena.
-3. Se si sta sviluppando in modo specifico per HoloLens, impostare **dispositivo di destinazione** su **HoloLens** . In caso contrario, lasciarlo in **qualsiasi dispositivo** .
+1. In Unity selezionare **File > impostazioni di compilazione**.
+2. Se **Scenes/ModelExplorer** non è elencato in **Scenes in Build**, fare clic su **Aggiungi scene aperte** per aggiungere la scena.
+3. Se si sta sviluppando in modo specifico per HoloLens, impostare **dispositivo di destinazione** su **HoloLens**. In caso contrario, lasciarlo in **qualsiasi dispositivo**.
 4. Verificare che **tipo di compilazione** sia impostato su **D3D** e che l' **SDK** sia impostato su **installato più recente** (che deve essere SDK 16299 o versione successiva).
-5. Fare clic su **Compila** .
+5. Fare clic su **Compila**.
 6. Creare una **nuova cartella** denominata "app".
 7. Fare clic sulla cartella dell' **app** .
 8. Premere **Seleziona cartella** e Unity avvierà la compilazione del progetto per Visual Studio.
@@ -92,21 +92,21 @@ In questo corso verrà rivisitato **Esplora modelli** di progetto Unity, che è 
 Quando si esegue Unity, viene visualizzata una finestra Esplora file.
 
 1. Aprire la cartella dell' **app** .
-2. Aprire la **soluzione ModelExplorer di Visual Studio** .
+2. Aprire la **soluzione ModelExplorer di Visual Studio**.
 
 Se si esegue la distribuzione in HoloLens:
 
-1. Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x86** .
-2. Fare clic sulla freccia a discesa accanto al pulsante computer locale e selezionare **computer remoto** .
-3. Immettere **l'indirizzo IP del dispositivo HoloLens** e impostare la modalità di autenticazione su **universale (protocollo non crittografato)** . Fare clic su **Seleziona** . Se non si conosce l'indirizzo IP del dispositivo, vedere **impostazioni > rete & Internet > opzioni avanzate** .
-4. Nella barra dei menu superiore fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5** . Se questa è la prima volta che si esegue la distribuzione nel dispositivo, sarà necessario [associarla a Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
-5. Quando l'app è stata distribuita, chiudere il **fitbox** con un **movimento di selezione** .
+1. Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x86**.
+2. Fare clic sulla freccia a discesa accanto al pulsante computer locale e selezionare **computer remoto**.
+3. Immettere **l'indirizzo IP del dispositivo HoloLens** e impostare la modalità di autenticazione su **universale (protocollo non crittografato)**. Fare clic su **Seleziona**. Se non si conosce l'indirizzo IP del dispositivo, vedere **impostazioni > rete & Internet > opzioni avanzate**.
+4. Nella barra dei menu superiore fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5**. Se questa è la prima volta che si esegue la distribuzione nel dispositivo, sarà necessario [associarla a Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+5. Quando l'app è stata distribuita, chiudere il **fitbox** con un **movimento di selezione**.
 
 Se si esegue la distribuzione in un auricolare immersivo:
 
-1. Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x64** .
-2. Verificare che la destinazione di distribuzione sia impostata su **computer locale** .
-3. Nella barra dei menu superiore fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5** .
+1. Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x64**.
+2. Verificare che la destinazione di distribuzione sia impostata su **computer locale**.
+3. Nella barra dei menu superiore fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5**.
 4. Quando l'app è stata distribuita, chiudere il **fitbox** estraendo il trigger in un controller di movimento.
 
 >[!NOTE]
@@ -139,8 +139,8 @@ Successivamente, il cursore verrà aggiornato da [Mr Input 210](holograms-210.md
 
 1. Nel pannello **gerarchia** selezionare l'oggetto **cursore** ed eliminarlo.
 2. Nel pannello **progetto** cercare **CursorWithFeedback** e trascinarlo nel pannello **gerarchia** .
-3. Fare clic su **InputManager** nel pannello **gerarchia** , quindi trascinare l'oggetto **CursorWithFeedback** dalla **gerarchia** nel campo **cursore** **SimpleSinglePointerSelector** di InputManager, nella parte inferiore del **controllo** .
-4. Fare clic su **CursorWithFeedback** nella **gerarchia** .
+3. Fare clic su **InputManager** nel pannello **gerarchia** , quindi trascinare l'oggetto **CursorWithFeedback** dalla **gerarchia** nel campo **cursore** **SimpleSinglePointerSelector** di InputManager, nella parte inferiore del **controllo**.
+4. Fare clic su **CursorWithFeedback** nella **gerarchia**.
 5. Nel pannello **Inspector** espandere **dati sullo stato del cursore** sullo script del **cursore dell'oggetto** .
 
 I **dati relativi allo stato del cursore** funzionano come segue:
@@ -153,9 +153,9 @@ I **dati relativi allo stato del cursore** funzionano come segue:
 
 * In Unity, usare **File > impostazioni di compilazione** per ricompilare l'applicazione.
 * Aprire la cartella dell' **app** .
-* Se non è già aperto, aprire la **soluzione ModelExplorer di Visual Studio** .
+* Se non è già aperto, aprire la **soluzione ModelExplorer di Visual Studio**.
   * Se il progetto è già stato compilato o distribuito in Visual Studio durante la configurazione, è possibile aprire l'istanza di VS e fare clic su' ricarica tutto ' quando richiesto.
-* In Visual Studio fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5** .
+* In Visual Studio fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5**.
 * Dopo la distribuzione dell'applicazione in HoloLens, chiudere il fitbox usando il gesto di tocco.
 * Spostare la mano nella visualizzazione e puntare il dito dell'indice al cielo per iniziare a tenere traccia della mano.
 * Spostare la mano sinistra, destra, verso l'alto e verso il basso.
@@ -174,13 +174,13 @@ I **dati relativi allo stato del cursore** funzionano come segue:
 
 Per usare i movimenti di navigazione nell'app, è necessario modificare **GestureAction.cs** per ruotare gli oggetti quando si verifica il movimento di navigazione. Inoltre, verranno aggiunti commenti e suggerimenti al cursore da visualizzare quando è disponibile la navigazione.
 
-1. Nel pannello **gerarchia** espandere **CursorWithFeedback** .
+1. Nel pannello **gerarchia** espandere **CursorWithFeedback**.
 2. Nella cartella **ologrammi** trovare l'asset **ScrollFeedback** .
-3. Trascinare e rilasciare la prefabbricazione **ScrollFeedback** in **CursorWithFeedback** GameObject nella **gerarchia** .
-4. Fare clic su **CursorWithFeedback** .
+3. Trascinare e rilasciare la prefabbricazione **ScrollFeedback** in **CursorWithFeedback** GameObject nella **gerarchia**.
+4. Fare clic su **CursorWithFeedback**.
 5. Nel pannello **Inspector** fare clic sul pulsante **Add Component** .
-6. Nel menu digitare nella casella di ricerca **CursorFeedback** . Selezionare il risultato della ricerca.
-7. Trascinare e rilasciare l'oggetto **ScrollFeedback** dalla **gerarchia** sulla proprietà dell' **oggetto gioco rilevato Scroll** nel componente **feedback del cursore** del **controllo** .
+6. Nel menu digitare nella casella di ricerca **CursorFeedback**. Selezionare il risultato della ricerca.
+7. Trascinare e rilasciare l'oggetto **ScrollFeedback** dalla **gerarchia** sulla proprietà dell' **oggetto gioco rilevato Scroll** nel componente **feedback del cursore** del **controllo**.
 8. Nel pannello **gerarchia** selezionare l'oggetto **Astron** .
 9. Nel pannello **Inspector** fare clic sul pulsante **Add Component** .
 10. Nel menu digitare l' **azione di movimento** della casella di ricerca. Selezionare il risultato della ricerca.
@@ -343,24 +343,24 @@ Si noterà che gli altri eventi di navigazione sono già stati compilati con alc
 
 GestureManager.cs e AstronautManager.cs ci consentiranno di eseguire le operazioni seguenti:
 
-1. Usare la parola chiave Speech " **Move Astronaut** " per abilitare i movimenti di **manipolazione** e la " **ruota astronauta** " per disabilitarli.
-2. Passa a rispondere al **riconoscitore del movimento di manipolazione** .
+1. Usare la parola chiave Speech "**Move Astronaut**" per abilitare i movimenti di **manipolazione** e la "**ruota astronauta**" per disabilitarli.
+2. Passa a rispondere al **riconoscitore del movimento di manipolazione**.
 
-A questo punto, procedere con l'esercitazione.
+È possibile iniziare subito.
 
-1. Nel pannello **gerarchia** creare un nuovo GameObject vuoto. Assegnare al file il nome " **AstronautManager** ".
+1. Nel pannello **gerarchia** creare un nuovo GameObject vuoto. Assegnare al file il nome "**AstronautManager**".
 2. Nel pannello **Inspector** fare clic sul pulsante **Add Component** .
-3. Nel menu digitare nella casella di ricerca **gestione astronauti** . Selezionare il risultato della ricerca.
+3. Nel menu digitare nella casella di ricerca **gestione astronauti**. Selezionare il risultato della ricerca.
 4. Nel pannello **Inspector** fare clic sul pulsante **Add Component** .
 5. Nel menu digitare l' **origine input vocale** della casella di ricerca. Selezionare il risultato della ricerca.
 
 Verranno ora aggiunti i comandi vocali necessari per controllare lo stato di interazione dell'astronauta.
 
-1. Espandere la sezione **Keywords** nel **controllo** .
+1. Espandere la sezione **Keywords** nel **controllo**.
 2. Fare clic sul **+** lato destro per aggiungere una nuova parola chiave.
-3. Digitare la parola chiave come **Move Astronaut** . Se lo si desidera, è possibile aggiungere un tasto di scelta rapida.
+3. Digitare la parola chiave come **Move Astronaut**. Se lo si desidera, è possibile aggiungere un tasto di scelta rapida.
 4. Fare clic sul **+** lato destro per aggiungere una nuova parola chiave.
-5. Digitare la parola chiave come **ruota astronauta** . Se lo si desidera, è possibile aggiungere un tasto di scelta rapida.
+5. Digitare la parola chiave come **ruota astronauta**. Se lo si desidera, è possibile aggiungere un tasto di scelta rapida.
 6. Il codice del gestore corrispondente si trova in **GestureAction.cs** nel gestore **ISpeechHandler. OnSpeechKeywordRecognized** .
 
 ![Come configurare l'origine di input vocale per il capitolo 4](images/holograms211-speech.png)
@@ -368,9 +368,9 @@ Verranno ora aggiunti i comandi vocali necessari per controllare lo stato di int
 Successivamente, verrà configurato il feedback di manipolazione sul cursore.
 
 1. Nella cartella **olografici** del pannello del **progetto** individuare l'asset **PathingFeedback** .
-2. Trascinare e rilasciare la prefabbricazione **PathingFeedback** nell'oggetto **CursorWithFeedback** della **gerarchia** .
-3. Nel pannello **gerarchia** fare clic su **CursorWithFeedback** .
-4. Trascinare e rilasciare l'oggetto **PathingFeedback** dalla **gerarchia** alla proprietà dell' **oggetto del gioco rilevato nel percorso** nel componente **feedback del cursore** del **controllo** .
+2. Trascinare e rilasciare la prefabbricazione **PathingFeedback** nell'oggetto **CursorWithFeedback** della **gerarchia**.
+3. Nel pannello **gerarchia** fare clic su **CursorWithFeedback**.
+4. Trascinare e rilasciare l'oggetto **PathingFeedback** dalla **gerarchia** alla proprietà dell' **oggetto del gioco rilevato nel percorso** nel componente **feedback del cursore** del **controllo**.
 
 A questo punto è necessario aggiungere il codice a **GestureAction.cs** per abilitare gli elementi seguenti:
 
@@ -510,25 +510,25 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 
 In questa sezione vengono eseguite le attività seguenti:
 
-1. Aggiungere una nuova parola chiave " **expand Model** " per espandere il modello Astronaut.
-2. Aggiungere una nuova parola chiave " **Reset Model** " per restituire il modello al formato originale.
+1. Aggiungere una nuova parola chiave "**expand Model**" per espandere il modello Astronaut.
+2. Aggiungere una nuova parola chiave "**Reset Model**" per restituire il modello al formato originale.
 
 A tale scopo, aggiungere altre due parole chiave all'origine di input vocale del capitolo precedente. Verrà inoltre illustrato un altro modo per gestire gli eventi di riconoscimento.
 
-1. Fare clic su Back on **AstronautManager** nel **controllo** ed espandere la sezione **Keywords** nel **controllo** .
+1. Fare clic su Back on **AstronautManager** nel **controllo** ed espandere la sezione **Keywords** nel **controllo**.
 2. Fare clic sul **+** lato destro per aggiungere una nuova parola chiave.
-3. Digitare la parola chiave come **Espandi modello** . Se lo si desidera, è possibile aggiungere un tasto di scelta rapida.
+3. Digitare la parola chiave come **Espandi modello**. Se lo si desidera, è possibile aggiungere un tasto di scelta rapida.
 4. Fare clic sul **+** lato destro per aggiungere una nuova parola chiave.
-5. Digitare la parola chiave come **Reimposta modello** . Se lo si desidera, è possibile aggiungere un tasto di scelta rapida.
+5. Digitare la parola chiave come **Reimposta modello**. Se lo si desidera, è possibile aggiungere un tasto di scelta rapida.
 6. Nel pannello **Inspector** fare clic sul pulsante **Add Component** .
 7. Nel menu digitare il **gestore di input vocale** della casella di ricerca. Selezionare il risultato della ricerca.
-8. Il controllo **è un listener globale** , perché si vuole che questi comandi funzionino indipendentemente dal GameObject che si sta concentrando.
+8. Il controllo **è un listener globale**, perché si vuole che questi comandi funzionino indipendentemente dal GameObject che si sta concentrando.
 9. Fare clic sul **+** pulsante e selezionare **Espandi modello** dall'elenco a discesa parola chiave.
 10. Fare clic su **+** in risposta e trascinare **AstronautManager** dalla **gerarchia** nel campo **None (Object)** .
-11. A questo punto, fare clic sull'elenco a discesa **Nessuna funzione** , selezionare **AstronautManager** , quindi **ExpandModelCommand** .
+11. A questo punto, fare clic sull'elenco a discesa **Nessuna funzione** , selezionare **AstronautManager**, quindi **ExpandModelCommand**.
 12. Fare clic sul pulsante del gestore di input vocale **+** e selezionare **Reimposta modello** dall'elenco a discesa parola chiave.
 13. Fare clic su **+** in risposta e trascinare **AstronautManager** dalla **gerarchia** nel campo **None (Object)** .
-14. A questo punto, fare clic sull'elenco a discesa **Nessuna funzione** , selezionare **AstronautManager** , quindi **ResetModelCommand** .
+14. A questo punto, fare clic sull'elenco a discesa **Nessuna funzione** , selezionare **AstronautManager**, quindi **ResetModelCommand**.
 
 ![Come configurare l'origine e il gestore di input vocale per il capitolo 5](images/holograms211-speechhandler.png)
 
@@ -543,7 +543,7 @@ A tale scopo, aggiungere altre due parole chiave all'origine di input vocale del
 
 ## <a name="the-end"></a>La fine
 
-Congratulazioni! A questo punto è stato completato il **movimento Mr Input 211:** .
+Congratulazioni. A questo punto è stato completato il **movimento Mr Input 211:**.
 
 * Si è in grado di rilevare e rispondere agli eventi di rilevamento, spostamento e manipolazione della mano.
 * Si comprende la differenza tra i movimenti di spostamento e manipolazione.

@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: occhi, sguardi, Unity, ologramma, realtà mista
-ms.openlocfilehash: 8c1a6cb0847cd0e6e776c6d4e1f7c1efdc126279
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: occhi, sguardi, Unity, ologramma, realtà mista, cuffie per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, MRTK, Toolkit di realtà mista
+ms.openlocfilehash: 0c62de9cb1b7ea892831ea2cedbeb23be5ea7b37
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684708"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677510"
 ---
 # <a name="head-gaze-in-unity"></a>Sguardo da capo in Unity
 
@@ -56,19 +56,19 @@ Proprio come nel desktop in cui si usa un puntatore del mouse per la destinazion
 ## <a name="head-gaze-in-the-mixed-reality-toolkit-v2"></a>Head-sguardi nel Toolkit di realtà misto V2
 È possibile accedere a Head-sguardi da [Gestione input](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) in MRTK V2.
 
-## <a name="next-development-checkpoint"></a>Checkpoint di sviluppo successivo
+## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di checkpoint per lo sviluppo di Unity, è possibile esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo:
+Se si sta seguendo il percorso di checkpoint per lo sviluppo con Unity che abbiamo delineato, si stanno esplorando i blocchi predefiniti fondamentali in MRTK. Da qui è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Movimenti e controller del movimento](gestures-and-motion-controllers-in-unity.md)
 
-In alternativa, passare alle API e alle funzionalità della piattaforma di realtà mista:
+In alternativa, passare alle API e funzionalità della piattaforma di realtà mista:
 
 > [!div class="nextstepaction"]
 > [Esperienze condivise](shared-experiences-in-unity.md)
 
-È sempre possibile tornare ai checkpoint per [lo sviluppo di Unity](unity-development-overview.md#2-core-building-blocks) in qualsiasi momento.
+È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](unity-development-overview.md#2-core-building-blocks) in qualsiasi momento.
 
 ## <a name="see-also"></a>Vedere anche
 * [Fotocamera](camera-in-unity.md)

@@ -5,13 +5,13 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: Unity, Visual Studio, debug, il2cpp
-ms.openlocfilehash: 970d3000df995e7c6e331a41d10e25dc5aa370a8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, Visual Studio, debug, il2cpp, HoloLens, cuffie per realtà mista, cuffie con realtà mista di Windows, cuffie per realtà virtuale, UWP
+ms.openlocfilehash: 96a2c21fc6f8b2bdab199e65c9b1a31ffb6e029b
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684620"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678590"
 ---
 # <a name="managed-debugging-with-unity-il2cpp"></a>Debug gestito con Unity IL2CPP
 

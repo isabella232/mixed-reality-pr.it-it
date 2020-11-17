@@ -5,13 +5,13 @@ author: jonmlyons
 ms.author: jlyons
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, comunicazione remota, comunicazione remota olografica, lettore di comunicazione remota olografica
-ms.openlocfilehash: 4239eba84bd94c0bdc596392fdf7a0c780778850
-ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
+keywords: Unity, comunicazione remota, comunicazione remota olografica, lettore di comunicazione remota olografica, HoloLens, cuffia reale mista, auricolare di realtà mista, auricolare di realtà virtuale, modalità di riproduzione
+ms.openlocfilehash: 88ffa172c03dea6544ce8475612426e126415908
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94549094"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679060"
 ---
 # <a name="unity-play-mode"></a>Modalità di gioco Unity
 
@@ -24,7 +24,7 @@ Con la comunicazione remota olografica è possibile sperimentare l'app in HoloLe
 2. In HoloLens avviare l'app di **lettore remoto olografico** .
 3. In Unity andare al menu **finestra** , espandere il sottomenu **XR** e selezionare **emulazione olografica**.
 4. Impostare la **modalità di emulazione** su da **remoto a dispositivo**.
-5. Per **computer remoto** , immettere l'indirizzo IP del HoloLens.
+5. Per **computer remoto**, immettere l'indirizzo IP del HoloLens.
 6. Fare clic su **Connetti**. Si noterà che lo **stato della connessione è stato** modificato in **connesso** e la schermata è vuota in HoloLens.
 7. Fare clic sul pulsante **Play (Riproduci** ) per avviare la modalità di riproduzione e sperimentare l'app nella HoloLens.
 

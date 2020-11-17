@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
-keywords: Realtà mista di Windows, progettazione, controlli, carattere, tipografia, interfaccia utente, UX
-ms.openlocfilehash: 21409115ed1e9aa9103e1e77ea4aacc0881e1262
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista di Windows, progettazione, controlli, tipo di carattere, tipografia, interfaccia utente, UX, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale, MRTK, Toolkit di realtà mista
+ms.openlocfilehash: 9778b1b11db7ac1c330b0ede4f6153deff45a95a
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690029"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677360"
 ---
 # <a name="text-in-unity"></a>Testo in Unity
 
@@ -98,19 +98,19 @@ Il materiale del tipo di carattere predefinito di Unity non supporta l'occlusion
 ![Shader con supporto occlusione](images/hug-text-07-1000px.png)<br>
 *Shader con supporto occlusione*
 
-## <a name="next-development-checkpoint"></a>Checkpoint di sviluppo successivo
+## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di checkpoint per lo sviluppo di Unity, è possibile esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo:
+Se si sta seguendo il percorso di checkpoint per lo sviluppo con Unity che abbiamo delineato, si stanno esplorando i blocchi predefiniti fondamentali in MRTK. Da qui è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Input vocale](voice-input-in-unity.md)
 
-In alternativa, passare alle API e alle funzionalità della piattaforma di realtà mista:
+In alternativa, passare alle API e funzionalità della piattaforma di realtà mista:
 
 > [!div class="nextstepaction"]
 > [Esperienze condivise](shared-experiences-in-unity.md)
 
-È sempre possibile tornare ai checkpoint per [lo sviluppo di Unity](unity-development-overview.md#2-core-building-blocks) in qualsiasi momento.
+È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](unity-development-overview.md#2-core-building-blocks) in qualsiasi momento.
 
 
 ## <a name="see-also"></a>Vedere anche

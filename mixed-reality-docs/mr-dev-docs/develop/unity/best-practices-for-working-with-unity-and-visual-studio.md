@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Deploy, Unity, Visual Studio, HoloLens, HoloLens 2, Full-Headset
-ms.openlocfilehash: 4d145568190ea43cf2ec43442a1c3d5ca4d92251
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Deploy, Unity, Visual Studio, HoloLens, HoloLens 2, Headset immersivo, procedure consigliate, cuffie per realtà mista, cuffie per la realtà mista, cuffie per realtà virtuale, UWP, Strumenti di Visual Studio Windows SDK
+ms.openlocfilehash: 5e00b24c7a36ae83a281800e2c7d8b2fc377f178
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683241"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678846"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Procedure consigliate per l'uso con Unity e Visual Studio
 
@@ -55,7 +55,7 @@ Le soluzioni di Visual Studio UWP archiviate nel controllo del codice sorgente p
 
 ## <a name="use-text-format-assets-for-easy-comparison-of-content-changes"></a>Usare asset in formato testo per facilitare il confronto delle modifiche del contenuto
 
-L'archiviazione di asset in formato testo rende più semplice la verifica delle differenze delle modifiche del contenuto in Visual Studio. È possibile abilitare questa impostazione in "modifica > impostazioni progetto > Editor" modificando la modalità di **serializzazione asset** per **forzare il testo** . Tuttavia, l'Unione delle modifiche dei file di asset di testo è soggetta a errori e non è consigliata, quindi è consigliabile abilitare estrazioni binarie esclusive nel sistema di controllo del codice sorgente.
+L'archiviazione di asset in formato testo rende più semplice la verifica delle differenze delle modifiche del contenuto in Visual Studio. È possibile abilitare questa impostazione in "modifica > impostazioni progetto > Editor" modificando la modalità di **serializzazione asset** per **forzare il testo**. Tuttavia, l'Unione delle modifiche dei file di asset di testo è soggetta a errori e non è consigliata, quindi è consigliabile abilitare estrazioni binarie esclusive nel sistema di controllo del codice sorgente.
 
 ## <a name="see-also"></a>Vedere anche
 - [Visual Studio Tools per Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)

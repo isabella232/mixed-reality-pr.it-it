@@ -5,13 +5,13 @@ author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realtà mista di Windows, app di esempio, progettazione, HoloLens
-ms.openlocfilehash: d4014e1300b60d61dfba38ee5c5b0c8a530fbe08
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Realtà mista di Windows, app di esempio, progettazione, MRTK, Toolkit per realtà mista, Unity, app di esempio, app di esempio, open source, Microsoft Store, HoloLens, cuffie per la realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
+ms.openlocfilehash: ad5c544b9c164ef0d85eb3217685d6f96bb86367
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573255"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677466"
 ---
 # <a name="lunar-module"></a>Modulo lunare
 
@@ -43,7 +43,7 @@ Perché Atari e molte altre aziende di gioco scelgono di ripensare l'input?
 
 Un bambino che cammina attraverso una galleria sarà naturalmente intrigante dal più recente computer sgargiante. Ma Lunar Lander presenta un nuovo meccanico di input che si è rivelato fuori dalla folla.
 
-Lunar Lander usa due pulsanti per ruotare la nave a sinistra e a destra e una **levetta di Spinta** per controllare la quantità di spinta prodotta dalla nave. Questa leva offre agli utenti un certo livello di Finesse che non può essere fornito da un normale joystick. Si tratta anche di un componente comune ai moderni cockpit di aviazione. Atari ha voluto Lunar Lander per immergere l'utente nel sentimento che era in realtà pilota di un modulo lunare. Questo concetto è noto come " **immersione tattile** ".
+Lunar Lander usa due pulsanti per ruotare la nave a sinistra e a destra e una **levetta di Spinta** per controllare la quantità di spinta prodotta dalla nave. Questa leva offre agli utenti un certo livello di Finesse che non può essere fornito da un normale joystick. Si tratta anche di un componente comune ai moderni cockpit di aviazione. Atari ha voluto Lunar Lander per immergere l'utente nel sentimento che era in realtà pilota di un modulo lunare. Questo concetto è noto come " **immersione tattile**".
 
 L'immersione tattile è l'esperienza di feedback sensoriale dall'esecuzione di azioni ripetitive. In questo caso, l'azione ripetitiva di regolazione della leva e della rotazione della limitazione che gli occhi vedono e i nostri orecchi ascoltano, aiuta a connettere il lettore all'atto di atterrare una nave sulla superficie della luna. Questo concetto può essere associato al concetto psicologico di "Flow". Quando un utente viene completamente assorbito in un'attività con la giusta combinazione di sfida e ricompensa, o più semplicemente, sono "nella zona".
 

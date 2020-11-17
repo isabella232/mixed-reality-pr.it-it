@@ -5,13 +5,13 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, condivisione, rete, Accademia, esercitazione
-ms.openlocfilehash: 886b8b3ef449dc2872358fffd67b6af4c661de0e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, condivisione, rete, Accademia, esercitazione, HoloLens, realtà mista, Unity, Headset per la realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale, Windows 10
+ms.openlocfilehash: f57629e37463c9a05219ebae92bff8870728d688
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690765"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678260"
 ---
 # <a name="mr-sharing-240-multiple-hololens-devices"></a>Condivisione MR 240: Più dispositivi HoloLens
 
@@ -50,7 +50,7 @@ In questa esercitazione si apprenderà come:
   * Se è ancora necessario il supporto per Unity 5,6, usare [questa versione](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-240.zip).
   * Se è ancora necessario il supporto per Unity 5,5, usare [questa versione](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-240.zip).
   * Se è ancora necessario il supporto per Unity 5,4, usare [questa versione](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-240.zip).
-* Annullare l'archiviazione dei file sul desktop o in un'altra posizione facile da raggiungere. Mantenendo il nome della cartella **SharedHolograms** .
+* Annullare l'archiviazione dei file sul desktop o in un'altra posizione facile da raggiungere. Mantenendo il nome della cartella **SharedHolograms**.
 
 >[!NOTE]
 >Se si vuole esaminare il codice sorgente prima del download, è [disponibile in GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-240-SharedHolograms).
@@ -71,43 +71,43 @@ In questo capitolo verrà configurato il primo progetto Unity ed eseguiamo il pr
 * Riavviare Unity.
 * Selezionare **Open** (Apri).
 * Immettere il percorso come cartella **SharedHolograms** precedentemente non archiviata.
-* Selezionare **nome progetto** e fare clic su **Seleziona cartella** .
-* Nella **gerarchia** , fare clic con il pulsante destro del mouse sulla **fotocamera principale** e scegliere **Elimina** .
+* Selezionare **nome progetto** e fare clic su **Seleziona cartella**.
+* Nella **gerarchia**, fare clic con il pulsante destro del mouse sulla **fotocamera principale** e scegliere **Elimina**.
 * Nella cartella **HoloToolkit-sharing-240/Prefabbricates/camera** trovare la prefabbricata **principale della fotocamera** .
-* Trascinare e rilasciare la **fotocamera principale** nella **gerarchia** .
-* Nella **gerarchia** fare clic su **Crea** e **Crea vuoto** .
-* Fare clic con il pulsante destro del mouse sul nuovo **GameObject** e scegliere **Rinomina** .
-* Rinominare GameObject in **ologrammcollection** .
-* Selezionare l'oggetto **ologrammcollection** nella **gerarchia** .
-* Nel **controllo** impostare la **posizione di trasformazione** su: **X: 0, Y:-0,25, Z: 2** .
+* Trascinare e rilasciare la **fotocamera principale** nella **gerarchia**.
+* Nella **gerarchia** fare clic su **Crea** e **Crea vuoto**.
+* Fare clic con il pulsante destro del mouse sul nuovo **GameObject** e scegliere **Rinomina**.
+* Rinominare GameObject in **ologrammcollection**.
+* Selezionare l'oggetto **ologrammcollection** nella **gerarchia**.
+* Nel **controllo** impostare la **posizione di trasformazione** su: **X: 0, Y:-0,25, Z: 2**.
 * Nella cartella **olografici** del pannello del **progetto** individuare l'asset **EnergyHub** .
-* Trascinare e rilasciare l'oggetto **EnergyHub** dal **pannello progetto** alla **gerarchia** come **elemento figlio di ologrammcollection** .
+* Trascinare e rilasciare l'oggetto **EnergyHub** dal **pannello progetto** alla **gerarchia** come **elemento figlio di ologrammcollection**.
 * Seleziona **File > Salva scena con nome...**
-* Assegnare alla scena il nome **SharedHolograms** e fare clic su **Save** .
+* Assegnare alla scena il nome **SharedHolograms** e fare clic su **Save**.
 * Premere il pulsante **Play** in Unity per visualizzare l'anteprima degli ologrammi.
 * Premere **Riproduci** una seconda volta per arrestare la modalità di anteprima.
 
 **Esportare il progetto da Unity a Visual Studio**
 
-* In Unity selezionare **File > impostazioni di compilazione** .
+* In Unity selezionare **File > impostazioni di compilazione**.
 * Fare clic su **Aggiungi scene aperte** per aggiungere la scena.
-* Selezionare **piattaforma UWP (Universal Windows Platform)** nell'elenco **piattaforma** e fare clic su **Cambia piattaforma** .
-* Impostare **SDK** su **Universal 10** .
-* Impostare il **dispositivo di destinazione** su **HoloLens** e il **tipo di compilazione UWP** su **D3D** .
-* Controllare i **progetti C# di Unity** .
-* Fare clic su **Compila** .
+* Selezionare **piattaforma UWP (Universal Windows Platform)** nell'elenco **piattaforma** e fare clic su **Cambia piattaforma**.
+* Impostare **SDK** su **Universal 10**.
+* Impostare il **dispositivo di destinazione** su **HoloLens** e il **tipo di compilazione UWP** su **D3D**.
+* Controllare i **progetti C# di Unity**.
+* Fare clic su **Compila**.
 * Nella finestra Esplora file visualizzata creare una **nuova cartella** denominata "app".
 * Fare clic sulla cartella dell' **app** .
-* Premere **Seleziona cartella** .
+* Premere **Seleziona cartella**.
 * Quando si esegue Unity, viene visualizzata una finestra Esplora file.
 * Aprire la cartella dell' **app** .
 * Aprire **SharedHolograms. sln** per avviare Visual Studio.
-* Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x86** .
-* Fare clic sulla freccia a discesa accanto a computer locale e selezionare **dispositivo remoto** .
+* Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x86**.
+* Fare clic sulla freccia a discesa accanto a computer locale e selezionare **dispositivo remoto**.
     * Impostare l' **Indirizzo** sul nome o sull'indirizzo IP del HoloLens. Se non si conosce l'indirizzo IP del dispositivo, controllare **le impostazioni > rete & Internet > opzioni avanzate** o richiedere a Cortana **"Hey Cortana, qual è il mio indirizzo IP?"**
-    * Lasciare la **modalità di autenticazione** impostata su **universale** .
+    * Lasciare la **modalità di autenticazione** impostata su **universale**.
     * Fare clic su **Seleziona**
-* Fare clic su **debug > avvia senza eseguire debug** o premere **CTRL + F5** . Se questa è la prima volta che si esegue la distribuzione nel dispositivo, sarà necessario [associarla a Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+* Fare clic su **debug > avvia senza eseguire debug** o premere **CTRL + F5**. Se questa è la prima volta che si esegue la distribuzione nel dispositivo, sarà necessario [associarla a Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
 * Inserire il HoloLens e trovare l'ologramma di EnergyHub.
 
 ## <a name="chapter-2---interaction"></a>Capitolo 2-interazione
@@ -127,19 +127,19 @@ In questo capitolo si interagisce con gli ologrammi. Prima di tutto, verrà aggi
 
 * Nel **Pannello gerarchia** selezionare l'oggetto **ologrammcollection** .
 * Nel **Pannello di controllo** fare clic sul pulsante **Aggiungi componente** .
-* Nel menu digitare nella casella di ricerca lo **sguardo Manager** . Selezionare il risultato della ricerca.
+* Nel menu digitare nella casella di ricerca lo **sguardo Manager**. Selezionare il risultato della ricerca.
 * Nella cartella **HoloToolkit-sharing-240\Prefabs\Input** trovare il **cursore** asset.
-* Trascinare e rilasciare l'asset del **cursore** nella **gerarchia** .
+* Trascinare e rilasciare l'asset del **cursore** nella **gerarchia**.
 
 **Movimento**
 
 * Nel **Pannello gerarchia** selezionare l'oggetto **ologrammcollection** .
 * Fare clic su **Aggiungi componente** e digitare **gestione movimenti** nel campo di ricerca. Selezionare il risultato della ricerca.
-* Nel **Pannello gerarchia** espandere **ologrammcollection** .
+* Nel **Pannello gerarchia** espandere **ologrammcollection**.
 * Selezionare l'oggetto **EnergyHub** figlio.
 * Nel **Pannello di controllo** fare clic sul pulsante **Aggiungi componente** .
-* Nel menu digitare nella casella di ricerca **posizionamento ologrammi** . Selezionare il risultato della ricerca.
-* Salvare la scena selezionando **File > Salva scena** .
+* Nel menu digitare nella casella di ricerca **posizionamento ologrammi**. Selezionare il risultato della ricerca.
+* Salvare la scena selezionando **File > Salva scena**.
 
 **Distribuisci e goditi**
 
@@ -171,11 +171,11 @@ In questo capitolo si interagisce con gli ologrammi. Prima di tutto, verrà aggi
 ### <a name="instructions"></a>Istruzioni
 
 * Nel **Pannello del progetto** passare alla cartella **HoloToolkit-sharing-240\Prefabs\Sharing**
-* Trascinare e rilasciare il prefabbricato di **condivisione** nel **Pannello gerarchia** .
+* Trascinare e rilasciare il prefabbricato di **condivisione** nel **Pannello gerarchia**.
 
 Successivamente, è necessario avviare il servizio di condivisione. È necessario eseguire questo passaggio solo per **un PC** nell'esperienza condivisa.
 
-* In Unity-nel menu in alto a destra selezionare il **menu HoloToolkit-sharing-240** .
+* In Unity-nel menu in alto a destra selezionare il **menu HoloToolkit-sharing-240**.
 * Selezionare l'elemento **avvio condivisione servizio** nell'elenco a discesa.
 * Selezionare l'opzione **rete privata** e fare clic su **Consenti accesso** quando viene visualizzato il prompt del firewall.
 * Annotare l'indirizzo IPv4 visualizzato nella finestra della console del servizio di condivisione. Si tratta dello stesso IP del computer in cui viene eseguito il servizio.
@@ -183,10 +183,10 @@ Successivamente, è necessario avviare il servizio di condivisione. È necessari
 Seguire le istruzioni restanti in **tutti i PC** che faranno parte dell'esperienza condivisa.
 
 * Nella **gerarchia** selezionare l'oggetto di **condivisione** .
-* In **controllo** , nel componente **fase di condivisione** , modificare l' **indirizzo del server** da "localhost" all'indirizzo IPv4 del computer che esegue SharingService.exe.
+* In **controllo**, nel componente **fase di condivisione** , modificare l' **indirizzo del server** da "localhost" all'indirizzo IPv4 del computer che esegue SharingService.exe.
 * Nella **gerarchia** selezionare l'oggetto **ologrammcollection** .
 * Nel **controllo** fare clic sul pulsante **Aggiungi componente** .
-* Nella casella di ricerca digitare **Import Export Anchor Manager** . Selezionare il risultato della ricerca.
+* Nella casella di ricerca digitare **Import Export Anchor Manager**. Selezionare il risultato della ricerca.
 * Nel **pannello progetto** passare alla cartella **script** .
 * Fare doppio clic sullo script **HologramPlacement** per aprirlo in Visual Studio.
 * Sostituire il contenuto con il codice seguente.
@@ -295,9 +295,9 @@ public class HologramPlacement : Singleton<HologramPlacement>
 }
 ```
 
-* Tornare in Unity, selezionare **ologrammcollection** nel **Pannello gerarchia** .
+* Tornare in Unity, selezionare **ologrammcollection** nel **Pannello gerarchia**.
 * Nel **Pannello di controllo** fare clic sul pulsante **Aggiungi componente** .
-* Nel menu digitare nella casella di ricerca **Gestione stato app** . Selezionare il risultato della ricerca.
+* Nel menu digitare nella casella di ricerca **Gestione stato app**. Selezionare il risultato della ricerca.
 
 **Distribuisci e goditi**
 
@@ -322,7 +322,7 @@ Tutti gli utenti possono ora visualizzare lo stesso ologramma! A questo punto, v
 ### <a name="instructions"></a>Istruzioni
 
 * Nel **Pannello del progetto** passare alla cartella **ologrammi** .
-* Trascinare e rilasciare **PlayerAvatarStore** nella **gerarchia** .
+* Trascinare e rilasciare **PlayerAvatarStore** nella **gerarchia**.
 * Nel **pannello progetto** passare alla cartella **script** .
 * Fare doppio clic sullo script **AvatarSelector** per aprirlo in Visual Studio.
 * Sostituire il contenuto con il codice seguente.
@@ -368,11 +368,11 @@ public class AvatarSelector : MonoBehaviour
 ```
 
 * Nella **gerarchia** selezionare l'oggetto **ologrammcollection** .
-* Nel **controllo** fare clic su **Aggiungi componente** .
-* Nella casella di ricerca digitare **local Player Manager** . Selezionare il risultato della ricerca.
+* Nel **controllo** fare clic su **Aggiungi componente**.
+* Nella casella di ricerca digitare **local Player Manager**. Selezionare il risultato della ricerca.
 * Nella **gerarchia** selezionare l'oggetto **ologrammcollection** .
-* Nel **controllo** fare clic su **Aggiungi componente** .
-* Nella casella di ricerca digitare **Remote Player Manager** . Selezionare il risultato della ricerca.
+* Nel **controllo** fare clic su **Aggiungi componente**.
+* Nella casella di ricerca digitare **Remote Player Manager**. Selezionare il risultato della ricerca.
 * Aprire lo script **HologramPlacement** in Visual Studio.
 * Sostituire il contenuto con il codice seguente.
 
@@ -621,7 +621,7 @@ In questo capitolo si farà in modo che l'ancoraggio possa essere inserito in su
 ### <a name="instructions"></a>Istruzioni
 
 * Nel **Pannello del progetto** passare alla cartella **ologrammi** .
-* Trascinare e rilasciare il prefabbricato **CustomSpatialMapping** nella **gerarchia** .
+* Trascinare e rilasciare il prefabbricato **CustomSpatialMapping** nella **gerarchia**.
 * Nel **pannello progetto** passare alla cartella **script** .
 * Fare doppio clic sullo script **AppStateManager** per aprirlo in Visual Studio.
 * Sostituire il contenuto con il codice seguente.
@@ -986,7 +986,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
 * Toccare per inserire il EnergyHub.
 * Provare il comando vocale ' Reimposta destinazione ' per selezionare il EnergyHub di backup e collaborare come gruppo per spostare l'ologramma in una nuova posizione.
 
-## <a name="chapter-6---real-world-physics"></a>Capitolo 6-fisica reale
+## <a name="chapter-6---real-world-physics"></a>Capitolo 6-Real-World fisica
 
 >[!VIDEO https://www.youtube.com/embed/XNpQVSyXwMo]
 
@@ -1000,8 +1000,8 @@ In questo capitolo verranno aggiunti gli ologrammi che rimbalzano sulle superfic
 ### <a name="instructions"></a>Istruzioni
 
 * Nella **gerarchia** selezionare l'oggetto **ologrammcollection** .
-* Nel **controllo** fare clic su **Aggiungi componente** .
-* Nella casella di ricerca digitare **avvio del proiettile** . Selezionare il risultato della ricerca.
+* Nel **controllo** fare clic su **Aggiungi componente**.
+* Nella casella di ricerca digitare **avvio del proiettile**. Selezionare il risultato della ricerca.
 
 **Distribuisci e goditi**
 
@@ -1022,11 +1022,11 @@ In questo capitolo viene individuato un portale che può essere individuato solo
 ### <a name="instructions"></a>Istruzioni
 
 * Nel **Pannello del progetto** passare alla cartella **ologrammi** .
-* Trascinare e rilasciare l'asset di **Sottomondo** come **figlio di ologrammcollection** .
-* Con **ologrammcollection** selezionato, fare clic sul pulsante **Aggiungi componente** nel **controllo** .
-* Nel menu digitare nella casella di ricerca **ExplodeTarget** . Selezionare il risultato della ricerca.
-* Con **ologrammcollection** selezionato, dalla **gerarchia** trascinare l'oggetto **EnergyHub** nel campo di **destinazione** nel **controllo** .
-* Con l'oggetto **ologrammcollection** selezionato, dalla **gerarchia** trascinare l'oggetto di **Sottomondo** nel campo **Sottomondo** del **controllo** .
+* Trascinare e rilasciare l'asset di **Sottomondo** come **figlio di ologrammcollection**.
+* Con **ologrammcollection** selezionato, fare clic sul pulsante **Aggiungi componente** nel **controllo**.
+* Nel menu digitare nella casella di ricerca **ExplodeTarget**. Selezionare il risultato della ricerca.
+* Con **ologrammcollection** selezionato, dalla **gerarchia** trascinare l'oggetto **EnergyHub** nel campo di **destinazione** nel **controllo**.
+* Con l'oggetto **ologrammcollection** selezionato, dalla **gerarchia** trascinare l'oggetto di **Sottomondo** nel campo **Sottomondo** del **controllo**.
 
 **Distribuisci e goditi**
 

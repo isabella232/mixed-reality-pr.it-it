@@ -5,13 +5,13 @@ author: fieldsJacksonG
 ms.author: jacksonf
 ms.date: 07/08/2020
 ms.topic: article
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, beta, streaming, comunicazione remota, realtà mista, sviluppo, guida introduttiva, funzionalità, nuovo progetto, emulatore, documentazione, guide, caratteristiche, ologrammi, sviluppo di giochi
-ms.openlocfilehash: 09d90af95d9433772563fdc292f31d118b3dd846
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicazione remota, realtà mista, sviluppo, Guida introduttiva, funzionalità, nuovo progetto, emulatore, documentazione, guide, funzionalità, ologrammi, sviluppo di giochi, cuffie per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, WinRT, DLL
+ms.openlocfilehash: fd50e5ecd3186fc8852936affbfedc3d5fd4de75
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573295"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679810"
 ---
 # <a name="winrt-in-unreal"></a>WinRT in Unreal
 
@@ -46,7 +46,7 @@ Nel corso dello sviluppo di HoloLens potrebbe essere necessario scrivere una fun
 3. Prima di aggiungere il codice, è necessario aggiornare le proprietà del progetto per assicurarsi che il codice WinRT necessario possa essere compilato: 
     * Fare clic con il pulsante destro del mouse sul progetto HoloLensWinrtDLL e scegliere **Proprietà** .  
     * Modificare l'elenco a discesa **configurazione** in **tutte le configurazioni** e l'elenco a discesa **piattaforma** su **tutte le piattaforme**  
-    * In **proprietà di configurazione> C/C++> tutte le opzioni** :
+    * In **proprietà di configurazione> C/C++> tutte le opzioni**:
         * Aggiungere **await** a **Opzioni aggiuntive** per assicurarsi che sia possibile attendere le attività asincrone  
         * Modificare lo standard del **linguaggio c++** allo **standard ISO c++ 17 (/STD: c++ 17)** per includere qualsiasi codice WinRT
 
@@ -180,7 +180,7 @@ Per il collegamento e l'uso di una DLL in Unreal è necessario un progetto C++. 
 > [!NOTE]
 > È stata ora creata una soluzione nella stessa directory del file uproject insieme a un nuovo script di compilazione denominato source/ConsumeWinRT/ConsumeWinRT. Build. cs.
 
-2. Aprire la soluzione, cercare la cartella **Games/ConsumeWinRT/source/ConsumeWinRT** e aprire **ConsumeWinRT.Build.cs** :
+2. Aprire la soluzione, cercare la cartella **Games/ConsumeWinRT/source/ConsumeWinRT** e aprire **ConsumeWinRT.Build.cs**:
 
 ![Apertura del file ConsumeWinRT.build.cs](images/unreal-winrt-img-05.png)
 
@@ -283,11 +283,11 @@ void AWinrtActor::OpenFileDialogue()
 
 ![Inserimento del WinrtActor nella scena](images/unreal-winrt-img-06.png)
 
-2. Nel **mondo** , trovare i **WindrtActor** precedentemente rilasciati nella scena e trascinarli nel progetto di livello: 
+2. Nel **mondo**, trovare i **WindrtActor** precedentemente rilasciati nella scena e trascinarli nel progetto di livello: 
 
 ![Trascinamento del WinrtActor nel progetto di livello](images/unreal-winrt-img-07.png)
 
-3. Nel progetto Level trascinare il nodo output da WinrtActor, cercare **Apri file Dialog** , quindi indirizzare il nodo da qualsiasi input utente.  In questo caso, la finestra di dialogo Apri file viene chiamata da un evento vocale: 
+3. Nel progetto Level trascinare il nodo output da WinrtActor, cercare **Apri file Dialog**, quindi indirizzare il nodo da qualsiasi input utente.  In questo caso, la finestra di dialogo Apri file viene chiamata da un evento vocale: 
 
 ![Configurazione dei nodi nel progetto di livello](images/unreal-winrt-img-08.png)
 

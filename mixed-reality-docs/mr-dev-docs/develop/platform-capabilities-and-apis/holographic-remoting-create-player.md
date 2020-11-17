@@ -5,13 +5,13 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: HoloLens, comunicazione remota, comunicazione remota olografica
-ms.openlocfilehash: 51e9125ab5baee63ca193c6a75701b6dda9a16cb
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: HoloLens, comunicazione remota, comunicazione remota olografica, NuGet, manifesto dell'applicazione, contesto del lettore, app remota, auricolare in realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
+ms.openlocfilehash: f55973e74abc60f62599375aebf278224865a5c1
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683197"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677920"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>Scrivere un'app lettore Holographic Remoting personalizzata
 
@@ -35,8 +35,8 @@ I passaggi seguenti sono necessari per aggiungere il pacchetto NuGet a un proget
 1. Aprire il progetto in Visual Studio.
 2. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Gestisci pacchetti NuGet...**
 3. Nel pannello visualizzato fare clic su **Sfoglia** e quindi cercare "comunicazione remota olografica".
-4. Selezionare **Microsoft. olografic. Remoting** , assicurarsi di selezionare la versione **2. x.** x più recente e fare clic su **Installa** .
-5. Se viene visualizzata la finestra di dialogo **Anteprima** , fare clic su **OK** .
+4. Selezionare **Microsoft. olografic. Remoting**, assicurarsi di selezionare la versione **2. x.** x più recente e fare clic su **Installa**.
+5. Se viene visualizzata la finestra di dialogo **Anteprima** , fare clic su **OK**.
 6. La finestra di dialogo successiva visualizzata è il contratto di licenza. Fare clic su **Accetto** per accettare il contratto di licenza.
 
 >[!IMPORTANT]
@@ -108,7 +108,7 @@ La connessione può essere stabilita in uno dei modi seguenti:
 1) L'App Player in esecuzione su HoloLens 2 si connette all'app remota.
 2) L'app remota si connette all'App Player in esecuzione su HoloLens 2.
 
-Per connettersi dall'App Player all'app remota, chiamare il ```Connect``` metodo sul contesto del lettore specificando il nome host e la porta. La porta predefinita è **8265** .
+Per connettersi dall'App Player all'app remota, chiamare il ```Connect``` metodo sul contesto del lettore specificando il nome host e la porta. La porta predefinita è **8265**.
 
 ```cpp
 try

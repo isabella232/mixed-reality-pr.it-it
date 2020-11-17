@@ -5,18 +5,18 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Realtà mista, localizzatore spaziale, frame di riferimento spaziale, sistema di coordinate spaziali, fase spaziale, codice di esempio, stabilizzazione dell'immagine, ancoraggio spaziale, archivio di ancoraggio spaziale, perdita di tracce, procedura dettagliata
-ms.openlocfilehash: 5ae60d5696d40a07ad350d0de097eb2f82f1dde1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista, localizzatore spaziale, frame di riferimento spaziale, sistema di coordinate spaziali, fase spaziale, codice di esempio, stabilizzazione dell'immagine, ancoraggio spaziale, archivio di ancoraggio spaziale, perdita di tracce, procedura dettagliata, cuffie per realtà mista, auricolare di realtà mista, auricolare della realtà virtuale
+ms.openlocfilehash: 4ab97df0d0ce87f86b3b561edb544d503e479e96
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683917"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679660"
 ---
 # <a name="coordinate-systems-in-directx"></a>Sistemi di coordinate in DirectX
 
 > [!NOTE]
-> Questo articolo si riferisce alle API native di WinRT legacy.  Per i nuovi progetti di app native, è consigliabile usare l' **[API OpenXR](openxr-getting-started.md)** .
+> Questo articolo si riferisce alle API native di WinRT legacy.  Per i nuovi progetti di app native, è consigliabile usare l' **[API OpenXR](openxr-getting-started.md)**.
 
 I [sistemi di coordinate](../../design/coordinate-systems.md) costituiscono la base per la comprensione spaziale offerta dalle API per la realtà mista di Windows.
 
@@ -593,14 +593,14 @@ In queste sezioni vengono illustrate le modifiche apportate al modello di app ol
 
 In primo luogo, il modello è stato modificato per archiviare un SpatialLocatorAttachedFrameOfReference anziché un SpatialStationaryFrameOfReference:
 
-Da **HolographicTagAlongSampleMain. h** :
+Da **HolographicTagAlongSampleMain. h**:
 
 ```
    // A reference frame attached to the holographic camera.
    Windows::Perception::Spatial::SpatialLocatorAttachedFrameOfReference^   m_referenceFrame;
 ```
 
-Da **HolographicTagAlongSampleMain. cpp** :
+Da **HolographicTagAlongSampleMain. cpp**:
 
 ```
    // In this example, we create a reference frame attached to the device.
@@ -629,7 +629,7 @@ Questo SpatialPointerPose contiene le informazioni necessarie per posizionare l'
 
 Per motivi di comodità dell'utente, viene usata l'interpolazione lineare ("Lerp") per smussare la modifica nella posizione in modo tale che si verifichi in un determinato periodo di tempo. Si tratta di un'operazione più comoda per l'utente rispetto al blocco degli ologrammi. Lerping la posizione dell'ologramma tag-along consente anche di stabilizzare l'ologramma smorzando il movimento; Se questa operazione non è stata eseguita, l'utente vedrà la jitter dell'ologramma a causa di ciò che in genere è considerato un movimento impercettibile della testa dell'utente.
 
-Da **StationaryQuadRenderer::P ositionhologram** :
+Da **StationaryQuadRenderer::P ositionhologram**:
 
 ```
    const float& dtime = static_cast<float>(timer.GetElapsedSeconds());
@@ -656,7 +656,7 @@ Da **StationaryQuadRenderer::P ositionhologram** :
 >[!NOTE]
 >Nel caso di un pannello di debug, è possibile scegliere di riposizionare l'ologramma sul lato leggermente, in modo che non ostacoli la visualizzazione. Ecco un esempio di come è possibile eseguire questa operazione.
 
-Per **StationaryQuadRenderer::P ositionhologram** :
+Per **StationaryQuadRenderer::P ositionhologram**:
 
 ```
        // If you're making a debug view, you might not want the tag-along to be directly in the
@@ -673,7 +673,7 @@ Per **StationaryQuadRenderer::P ositionhologram** :
 
 Non è sufficiente posizionare semplicemente l'ologramma, che in questo caso è un quad; è anche necessario ruotare l'oggetto per far fronte all'utente. Si noti che questa rotazione si verifica nello spazio globale, perché questo tipo di tabellone consente all'ologramma di rimanere parte dell'ambiente dell'utente. Il tabellone degli spazi di visualizzazione non è altrettanto comodo perché l'ologramma viene bloccato sull'orientamento della visualizzazione. in tal caso, è anche necessario interpolare tra le matrici di visualizzazione a sinistra e a destra per acquisire una trasformazione di Billboard dello spazio di visualizzazione che non interrompa il rendering stereo. In questo caso, gli assi X e Z vengono ruotati in modo da far fronte all'utente.
 
-Da **StationaryQuadRenderer:: Update** :
+Da **StationaryQuadRenderer:: Update**:
 
 ```
    // Seconds elapsed since previous frame.
@@ -720,7 +720,7 @@ Da **StationaryQuadRenderer:: Update** :
 
 Per questo esempio, si sceglie anche di eseguire il rendering dell'ologramma nel sistema di coordinate del SpatialLocatorAttachedReferenceFrame, che è il punto in cui è stato posizionato l'ologramma. (Se si è deciso di eseguire il rendering usando un altro sistema di coordinate, è necessario acquisire una trasformazione dal sistema di coordinate del frame di riferimento collegato al dispositivo a tale sistema di coordinate).
 
-Da **HolographicTagAlongSampleMain:: Render** :
+Da **HolographicTagAlongSampleMain:: Render**:
 
 ```
    // The view and projection matrices for each holographic camera will change
@@ -733,7 +733,7 @@ Da **HolographicTagAlongSampleMain:: Render** :
        );
 ```
 
-Ecco fatto! L'ologramma ora "inseguisce" una posizione che è di 2 metri davanti alla direzione dello sguardo dell'utente.
+L'operazione è terminata. L'ologramma ora "inseguisce" una posizione che è di 2 metri davanti alla direzione dello sguardo dell'utente.
 
 >[!NOTE]
 >Questo esempio carica anche contenuto aggiuntivo. vedere StationaryQuadRenderer. cpp.

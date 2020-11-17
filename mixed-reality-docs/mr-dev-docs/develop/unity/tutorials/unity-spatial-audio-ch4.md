@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: realtà mista, Unity, esercitazione, hololens2, audio spaziale
-ms.openlocfilehash: cb9bfb03da864c78784c288f4d7c4190461cd838
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+keywords: realtà mista, Unity, esercitazione, hololens2, audio spaziale, MRTK, Toolkit per realtà mista, UWP, Windows 10, HRTF, funzione di trasferimento relativa alla testa, Reverb, Microsoft Spatializer
+ms.openlocfilehash: c752f79f53b5167d674b9e778637357d97fb914a
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293164"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678210"
 ---
 # <a name="enabling-and-disabling-spatialization-at-run-time"></a>Abilitazione e disabilitazione della spazializzazione in fase di esecuzione
 
@@ -90,7 +90,7 @@ public class SpatializeOnOff : MonoBehaviour
 > Se si preferisce disabilitare completamente la spazializzazione, modificare lo script in modo da regolare anche la proprietà Boolean di **spazializzazione** della variabile **SourceObject** .
 
 ## <a name="attach-your-script-and-drive-it-from-the-button"></a>Alleghi lo script e lo guidi dal pulsante
-Nel riquadro **Inspector** del **Quad**fare clic su **Add Component** e aggiungere lo script **Spatialize on off** :
+Nel riquadro **Inspector** del **Quad** fare clic su **Add Component** e aggiungere lo script **Spatialize on off** :
 
 ![Aggiungi script a Quad](images/spatial-audio/add-script-to-quad.png)
 

@@ -5,18 +5,18 @@ author: mikeriches
 ms.author: mriches
 ms.date: 05/24/2019
 ms.topic: article
-keywords: Realtà mista di Windows, ologrammi, comunicazione remota olografica, rendering remoto, rendering di rete, HoloLens, ologrammi remoti
-ms.openlocfilehash: 0a6cdf34a797a7113c780dee0049125861dd7c32
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista di Windows, ologrammi, comunicazione remota olografica, rendering remoto, rendering di rete, HoloLens, ologrammi remoti, cuffie per realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
+ms.openlocfilehash: ec03a349959f9bde71a2c8a600d513fb21c533a8
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685901"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679630"
 ---
 # <a name="add-holographic-remoting-hololens-1st-gen"></a>Aggiungere la comunicazione remota olografica (HoloLens (1st Gen))
 
 >[!IMPORTANT]
->Questo documento descrive la creazione di un'applicazione host per HoloLens 1. L'applicazione host per **HoloLens (1st Gen)** deve usare il pacchetto NuGet versione **1. x. x** . Ciò implica che le applicazioni host scritte per HoloLens 1 non sono compatibili con HoloLens 2 e viceversa.
+>Questo documento descrive la creazione di un'applicazione host per HoloLens 1. L'applicazione host per **HoloLens (1st Gen)** deve usare il pacchetto NuGet versione **1. x. x**. Ciò implica che le applicazioni host scritte per HoloLens 1 non sono compatibili con HoloLens 2 e viceversa.
 
 ## <a name="hololens-2"></a>HoloLens 2
 
@@ -43,8 +43,8 @@ Seguire questa procedura per ottenere il pacchetto NuGet per la comunicazione re
 1. Passare al progetto in Visual Studio.
 2. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Gestisci pacchetti NuGet...**
 3. Nel pannello visualizzato fare clic su **Sfoglia** e quindi cercare "comunicazione remota olografica".
-4. Selezionare **Microsoft. olografic. Remoting** e fare clic su **Installa** .
-5. Se viene visualizzata la finestra di dialogo **Anteprima** , fare clic su **OK** .
+4. Selezionare **Microsoft. olografic. Remoting** e fare clic su **Installa**.
+5. Se viene visualizzata la finestra di dialogo **Anteprima** , fare clic su **OK**.
 6. La finestra di dialogo successiva visualizzata è il contratto di licenza. Fare clic su **Accetto** per accettare il contratto di licenza.
 
 ### <a name="create-the-holographicstreamerhelpers"></a>Creare il HolographicStreamerHelpers

@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: SteamVR, compatibilità
-ms.openlocfilehash: 4a1439bed8743396cba13fa4d65debc62487ab46
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: SteamVR, compatibilità, porting, HoloLens 1st Gen, auricolare realtà mista, cuffia a realtà mista di Windows, migrazione, Windows 10, vapore, controller di movimento, haptics
+ms.openlocfilehash: be510203b928cc1871b505d184e1aba05ec99abc
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638507"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677660"
 ---
 # <a name="updating-your-steamvr-application"></a>Aggiornamento dell'applicazione SteamVR
 Invitiamo gli sviluppatori a testare e ottimizzare le proprie esperienze di SteamVR per l'esecuzione su cuffie di realtà miste Windows. Questa documentazione illustra i miglioramenti più comuni che gli sviluppatori possono fare per garantire che la loro esperienza sia ottimale in realtà mista di Windows.
@@ -29,10 +29,10 @@ Per iniziare a testare il gioco o l'app in realtà mista di Windows, assicurarsi
 ## <a name="controls"></a>Controlli
 
 Quando si progetta o si modifica il layout del controllo, tenere presente il seguente set di comandi riservati:
-1. Se si fa clic su un **levetta analogico a sinistra e a destra** viene riservato il **dashboard di Steam** .
+1. Se si fa clic su un **levetta analogico a sinistra e a destra** viene riservato il **dashboard di Steam**.
 
 > [!NOTE]
-> Se si usa un controller HP Reverb G2, fare clic sul pulsante del menu destro è riservato per il **dashboard di Steam** .
+> Se si usa un controller HP Reverb G2, fare clic sul pulsante del menu destro è riservato per il **dashboard di Steam**.
 
 2. Il **pulsante Windows** restituirà sempre gli utenti alla Home realtà mista di Windows.
 

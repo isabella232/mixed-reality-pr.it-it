@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Input vocale, KeywordRecognizer, GrammarRecognizer, microfono, dettatura, voce
-ms.openlocfilehash: b6930b35046e32beb1a4ca9f9ca29996487fcf4d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Input vocale, KeywordRecognizer, GrammarRecognizer, microfono, dettatura, voce, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare realtà virtuale, MRTK, Toolkit realtà mista
+ms.openlocfilehash: 20e2b8d4b8a18f38e72db7889a5d00cf15bfc0eb
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687252"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679890"
 ---
 # <a name="voice-input-in-unity"></a>Input vocale in Unity
 
@@ -41,7 +41,7 @@ Per consentire all'app di restare in ascolto di frasi specifiche pronunciate dal
 ### <a name="keywordrecognizer"></a>KeywordRecognizer
 
 **Spazio dei nomi:** *UnityEngine. Windows. Speech*<br>
-**Tipi:** *KeywordRecognizer* , *PhraseRecognizedEventArgs* , *SpeechError* , *SpeechSystemStatus*
+**Tipi:** *KeywordRecognizer*, *PhraseRecognizedEventArgs*, *SpeechError*, *SpeechSystemStatus*
 
 Sono necessarie alcune istruzioni using per salvare alcune sequenze di tasti:
 
@@ -103,7 +103,7 @@ keywordRecognizer.Start();
 ### <a name="grammarrecognizer"></a>GrammarRecognizer
 
 **Spazio dei nomi:** *UnityEngine. Windows. Speech*<br>
-**Tipi** : *GrammarRecognizer* , *PhraseRecognizedEventArgs* , *SpeechError* , *SpeechSystemStatus*
+**Tipi**: *GrammarRecognizer*, *PhraseRecognizedEventArgs*, *SpeechError*, *SpeechSystemStatus*
 
 GrammarRecognizer viene usato se si specifica la grammatica di riconoscimento usando SRGS. Questo può essere utile se l'app ha più di poche parole chiave, se si desidera riconoscere frasi più complesse o se si desidera attivare e disattivare facilmente i set di comandi. Vedere: [creare grammatiche con SRGS XML](https://msdn.microsoft.com/library/hh378349(v=office.14).aspx) per informazioni sul formato di file.
 
@@ -145,7 +145,7 @@ grammarRecognizer.Start();
 ## <a name="dictation"></a>Dettatura
 
 **Spazio dei nomi:** *UnityEngine. Windows. Speech*<br>
-**Tipi** : *DictationRecognizer* , *SpeechError* , *SpeechSystemStatus*
+**Tipi**: *DictationRecognizer*, *SpeechError*, *SpeechSystemStatus*
 
 Usare DictationRecognizer per convertire il riconoscimento vocale dell'utente in testo. DictationRecognizer espone la funzionalità di [Dettatura](../../design/voice-input.md#dictation) e supporta la registrazione e l'ascolto di eventi di ipotesi completati e frasi completate, in modo che sia possibile inviare commenti e suggerimenti all'utente sia durante la loro pronuncia che in seguito. I metodi Start () e stop () rispettivamente abilitano e disabilitano il riconoscimento della dettatura. Una volta terminato con il riconoscimento, è necessario eliminarlo utilizzando il metodo Dispose () per rilasciare le risorse utilizzate. Queste risorse verranno rilasciate automaticamente durante Garbage Collection a un costo aggiuntivo in termini di prestazioni, se non vengono rilasciate prima di tale operazione.
 
@@ -301,11 +301,11 @@ Lo script Helper Microphone è disponibile nella [cartella input/script/Utilitie
 
 - [HoloToolkit-Examples/input/Scenes/SpeechInputSource. Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scenes/SpeechInputSource.unity)
 
-## <a name="next-development-checkpoint"></a>Checkpoint di sviluppo successivo
+## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
 Se si segue il percorso di checkpoint per lo sviluppo di Unity, l'attività successiva consiste nell'esplorare le API e le funzionalità della piattaforma di realtà mista:
 
 > [!div class="nextstepaction"]
 > [Esperienze condivise](shared-experiences-in-unity.md)
 
-È sempre possibile tornare ai checkpoint per [lo sviluppo di Unity](unity-development-overview.md#2-core-building-blocks) in qualsiasi momento.
+È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](unity-development-overview.md#2-core-building-blocks) in qualsiasi momento.

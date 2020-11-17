@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
-keywords: Unity, impostazioni, realtà mista
-ms.openlocfilehash: 0e0f8649525c84bdc479dbcee92f737e877a60ca
-ms.sourcegitcommit: e1de7caa7bd46afe9766186802fa4254d33d1ca6
+keywords: Unity, impostazioni, realtà mista, HoloLens, cuffie per realtà mista, cuffie per la realtà mista di Windows, auricolare di realtà virtuale, prestazioni, impostazioni di qualità, impostazioni di illuminazione, buffer di profondità, XR, perdita di rilevamento
+ms.openlocfilehash: b560e75043cbf4a3cb93837938fdb65324cb16bb
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92240755"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677370"
 ---
 # <a name="recommended-settings-for-unity"></a>Impostazioni consigliate per Unity
 
@@ -23,11 +23,11 @@ Unity offre un set di opzioni predefinite che in genere corrispondono al caso me
 
 È importante modificare le impostazioni di **qualità di Unity** per l'ambiente in modo **molto basso**. Ciò consentirà di garantire che l'applicazione esegua performantly al framerate appropriato. Questa operazione è estremamente significativa per lo sviluppo di HoloLens. Per lo sviluppo di auricolari immersivi, a seconda delle specifiche del desktop che sfruttano l'esperienza VR, è comunque possibile ottenere un framerate senza i parametri di qualità più bassi.
 
-In Unity 2019 LTS + è possibile impostare il livello di qualità del **progetto modificando**  >  la qualità**delle impostazioni del progetto**  >  **Quality** e impostando il **valore predefinito** facendo clic sulla freccia verso il basso fino al livello di qualità **molto basso** .
+In Unity 2019 LTS + è possibile impostare il livello di qualità del **progetto modificando**  >  la qualità **delle impostazioni del progetto**  >  **Quality** e impostando il **valore predefinito** facendo clic sulla freccia verso il basso fino al livello di qualità **molto basso** .
 
 ### <a name="lighting-settings"></a>Impostazioni di illuminazione
 
-Analogamente alle impostazioni della scena di qualità, è importante impostare impostazioni di illuminazione ottimali per l'applicazione di realtà mista. In Unity, l'impostazione di illuminazione che in genere avrà un maggiore effetto sulle prestazioni sulla scena è l' **illuminazione globale in tempo reale**. Questa opzione può essere disattivata selezionando **Window**  >  **Rendering**  >  **Impostazioni illuminazione**  >  **globale in tempo reale**per il rendering della finestra.
+Analogamente alle impostazioni della scena di qualità, è importante impostare impostazioni di illuminazione ottimali per l'applicazione di realtà mista. In Unity, l'impostazione di illuminazione che in genere avrà un maggiore effetto sulle prestazioni sulla scena è l' **illuminazione globale in tempo reale**. Questa opzione può essere disattivata selezionando **Window**  >  **Rendering**  >  **Impostazioni illuminazione**  >  **globale in tempo reale** per il rendering della finestra.
 
 È disponibile un'altra impostazione di illuminazione, un' **illuminazione globale al forno**. Questa impostazione consente di ottenere risultati accattivanti e visivi per gli auricolari immersivi, ma in genere non è applicabile per lo sviluppo di HoloLens. Il **Illumniation globale cotto** viene calcolato solo per GameObject statici che in genere non sono disponibili in scenari HoloLens a causa della natura di un ambiente sconosciuto e mutevole.
 
@@ -62,7 +62,7 @@ Per ottenere una migliore stabilità dell'ologramma dalla percezione dell'utente
 Per abilitare questa funzionalità nel tuo progetto Unity
 
 1) Apri **Player XR Settings** (Impostazioni XR riproduttore). A tale scopo, vai a **Edit** (Modifica) > **Project Settings** (Impostazioni progetto) > **Player** (Riproduttore) > **XR Settings** (Impostazioni XR)
-2) Selezionare la casella di controllo **Abilita condivisione buffer di profondità** in **Virtual Reality SDK**  >  espansione di**realtà mista Windows** (casella di controllo**Virtual Reality supported** )
+2) Selezionare la casella di controllo **Abilita condivisione buffer di profondità** in **Virtual Reality SDK**  >  espansione di **realtà mista Windows** (casella di controllo **Virtual Reality supported** )
 
 Si consiglia inoltre di selezionare la **profondità a 16 bit** nell'impostazione del **formato Depth** in questo pannello, specialmente per lo sviluppo HoloLens. La selezione di 16 bit rispetto a 24 bit ridurrà in modo significativo i requisiti di larghezza di banda, in quanto sarà necessario spostare o elaborare i dati.
 
@@ -114,10 +114,10 @@ Per abilitare o disabilitare la schermata iniziale olografica:
 
 |  Mostra schermata iniziale Unity  |  Immagine Splash olografica  |  Comportamento |
 |----------|----------|----------|
-|  Attivato  |  nessuno  |  Mostra la schermata iniziale di Unity predefinita per 5 secondi o fino a quando non viene caricata l'app, a seconda del valore più lungo |
-|  Attivato  |  Personalizzato  |  Mostra la schermata iniziale personalizzata per 5 secondi o fino al caricamento dell'app, a seconda di quale sia il più lungo. |
-|  Disattivato  |  nessuno  |  Mostra il nero trasparente (Nothing) finché l'app non viene caricata. |
-|  Disattivato  |  Personalizzato  |  Mostra la schermata iniziale personalizzata per 5 secondi o fino al caricamento dell'app, a seconda di quale sia il più lungo. |
+|  On  |  Nessuno  |  Mostra la schermata iniziale di Unity predefinita per 5 secondi o fino a quando non viene caricata l'app, a seconda del valore più lungo |
+|  On  |  Personalizzato  |  Mostra la schermata iniziale personalizzata per 5 secondi o fino al caricamento dell'app, a seconda di quale sia il più lungo. |
+|  Off  |  Nessuno  |  Mostra il nero trasparente (Nothing) finché l'app non viene caricata. |
+|  Off  |  Personalizzato  |  Mostra la schermata iniziale personalizzata per 5 secondi o fino al caricamento dell'app, a seconda di quale sia il più lungo. |
 
 Per altre informazioni, vedere [la documentazione della schermata iniziale di Unity](https://docs.unity3d.com/Manual/class-PlayerSettingsSplashScreen.html) .
 
@@ -147,7 +147,7 @@ Per rifiutare esplicitamente il comportamento di sospensione automatica:
 
 Per definire un comportamento personalizzato quando il rilevamento viene perso, gestire gli [eventi di perdita del rilevamento](tracking-loss-in-unity.md)globale.
 
-### <a name="capabilities"></a>Capabilities
+### <a name="capabilities"></a>Funzionalità
 
 Per fare in modo che un'app sfrutti i vantaggi di determinate funzionalità, deve dichiarare le funzionalità appropriate nel manifesto. Le dichiarazioni di manifesto possono essere apportate in Unity, in modo che vengano incluse in ogni esportazione successiva del progetto.
 

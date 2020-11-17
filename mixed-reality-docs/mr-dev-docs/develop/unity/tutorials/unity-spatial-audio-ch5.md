@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: realtà mista, Unity, esercitazione, hololens2, audio spaziale
-ms.openlocfilehash: abe78417dc231e6228d1942e03418ba699bc0938
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: realtà mista, Unity, esercitazione, hololens2, audio spaziale, MRTK, Toolkit per realtà mista, UWP, Windows 10, HRTF, funzione di trasferimento correlato alla testa, riverbero, Microsoft Spatializer, mixer audio, riverbero SFX
+ms.openlocfilehash: d688955910d667edbdb79e63dab16587e66064a4
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91689676"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679700"
 ---
 # <a name="using-reverb-to-add-distance-to-spatial-audio"></a>Uso del riverbero per aggiungere distanza all'audio spaziale
 
@@ -21,19 +21,19 @@ Nei capitoli precedenti è stata aggiunta la spazializzazione ai suoni per dare 
 * Controllare la distanza percepita del suono usando la distanza del listener con l'ologramma
 
 ## <a name="add-a-mixer-group-and-a-reverb-effect"></a>Aggiungere un gruppo di mixer e un effetto di riverbero
-Nel [capitolo 2](unity-spatial-audio-ch2.md)è stato aggiunto un mixer. Il mixer include un **gruppo** per impostazione predefinita denominato **Master** . Poiché si vuole applicare un effetto di riverbero solo ad alcuni suoni, aggiungere un secondo **gruppo** per i suoni. Per aggiungere un **gruppo** , fare clic con il pulsante destro del mouse sul gruppo **Master** nel **mixer audio** e scegliere **Aggiungi gruppo figlio** :
+Nel [capitolo 2](unity-spatial-audio-ch2.md)è stato aggiunto un mixer. Il mixer include un **gruppo** per impostazione predefinita denominato **Master**. Poiché si vuole applicare un effetto di riverbero solo ad alcuni suoni, aggiungere un secondo **gruppo** per i suoni. Per aggiungere un **gruppo**, fare clic con il pulsante destro del mouse sul gruppo **Master** nel **mixer audio** e scegliere **Aggiungi gruppo figlio**:
 
 ![Aggiungi gruppo figlio](images/spatial-audio/add-child-group.png)
 
 In questo esempio è stato denominato il nuovo gruppo "effetto stanza".
 
-Ogni **gruppo** ha un proprio set di effetti. Aggiungere un effetto del riverbero al nuovo gruppo facendo clic su **Aggiungi...** nel nuovo gruppo e scegliendo il **riverbero SFX** :
+Ogni **gruppo** ha un proprio set di effetti. Aggiungere un effetto del riverbero al nuovo gruppo facendo clic su **Aggiungi...** nel nuovo gruppo e scegliendo il **riverbero SFX**:
 
 ![Aggiungi Riverb SFX](images/spatial-audio/add-sfx-reverb.png)
 
-Nella terminologia audio, l'audio originale, non riverberato, viene chiamato _percorso asciutto_ e l'audio dopo l'applicazione di filtri con il filtro del riverbero viene chiamato _percorso bagnato_ . Entrambi i percorsi vengono inviati all'output audio e i relativi punti di forza relativi in questa combinazione sono detti _mix bagnato/secco_ . La combinazione Wet/Dry influiscono fortemente sul senso della distanza.
+Nella terminologia audio, l'audio originale, non riverberato, viene chiamato _percorso asciutto_ e l'audio dopo l'applicazione di filtri con il filtro del riverbero viene chiamato _percorso bagnato_. Entrambi i percorsi vengono inviati all'output audio e i relativi punti di forza relativi in questa combinazione sono detti _mix bagnato/secco_. La combinazione Wet/Dry influiscono fortemente sul senso della distanza.
 
-Il **riverbero SFX** include i controlli per regolare la combinazione di Wet/Dry nell'effetto. Poiché il plug-in **Microsoft Spatializer** gestisce il percorso asciutto, verrà usato il **riverbero SFX** solo per il percorso bagnato. Nel riquadro **Inspector** del **riverbero SFX** :
+Il **riverbero SFX** include i controlli per regolare la combinazione di Wet/Dry nell'effetto. Poiché il plug-in **Microsoft Spatializer** gestisce il percorso asciutto, verrà usato il **riverbero SFX** solo per il percorso bagnato. Nel riquadro **Inspector** del **riverbero SFX**:
 * Impostare la proprietà livello secco sull'impostazione più bassa (-10000 mB)
 * Imposta la proprietà room sull'impostazione massima (0 mB)
 
@@ -117,7 +117,7 @@ public class SpatializeOnOff : MonoBehaviour
 }
 ```
 
-Se si rimuove il commento da queste righe, vengono aggiunte due proprietà al riquadro **Inspector** per lo script. Per impostare questi elementi, nel riquadro **Inspector** del componente **Spatialize on** of the **Quad** :
+Se si rimuove il commento da queste righe, vengono aggiunte due proprietà al riquadro **Inspector** per lo script. Per impostare questi elementi, nel riquadro **Inspector** del componente **Spatialize on** of the **Quad**:
 * Impostare la proprietà **gruppo effetti Room** sul nuovo gruppo di mixer effetti della stanza
 * Impostare la proprietà **gruppo Master** sul gruppo di mixer Master
 
@@ -129,6 +129,6 @@ Una volta apportate queste modifiche, le proprietà **Spatialize on off** hanno 
 
 Provare l'app in un HoloLens 2 o nell'editor di Unity. A questo punto, quando si tocca il pulsante nell'app per attivare la spazializzazione, lo script instrada l'audio del video al gruppo di effetti della stanza per aggiungere Reverb. Quando si passa a stereo, l'audio viene indirizzato al gruppo Master ed è possibile evitare di aggiungere Reverb.
 
-Sono state completate le esercitazioni audio spaziali HoloLens 2 per Unity. Congratulazioni!
+Sono state completate le esercitazioni audio spaziali HoloLens 2 per Unity. Congratulazioni.
 
 

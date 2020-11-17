@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: sistema di coordinate, sistema di coordinate spaziali, solo orientamento, scalabilità verticale, scalabilità, scalabilità, scalabilità globale, 360 gradi, seduto, in piedi, spazio, mondo, scala, posizione, orientamento, Unity, ancoraggio, ancoraggio spaziale, ancoraggio globale, blocco globale, blocco globale, blocco corpo, blocco del corpo, perdita di rilevamento, locatability, limiti, recenter
-ms.openlocfilehash: 59fae57f3ca5048f4027ed96fca03255683c1fe3
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: sistema di coordinate, sistema di coordinate spaziali, solo orientamento, scalabilità verticale e scalabilità verticale scalabilità orizzontale, scala mondiale, 360 gradi, seduto, in piedi, stanza, mondo, scala, posizione, orientamento, Unity, ancoraggio, ancoraggio spaziale, ancoraggio globale, blocco globale, blocco globale, blocco corpo, blocco del corpo, perdita di rilevamento, locatability, limiti, recenter, auricolare realtà mista, cuffia a realtà mista, auricolare di realtà virtuale
+ms.openlocfilehash: 92b132bb75e88711fb4bf9fda3dee5b778a0be6e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683136"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678680"
 ---
 # <a name="coordinate-systems-in-unity"></a>Sistemi di coordinate in Unity
 
@@ -39,7 +39,7 @@ Per un' **esperienza solo con orientamento** puro, ad esempio un visualizzatore 
 InputTracking.disablePositionalTracking = true;
 ```
 
-Per un' **esperienza a scalabilità verticale** , per consentire all'utente di ricentrare l'origine in un secondo momento, è possibile chiamare [XR. Metodo InputTracking. recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html) :
+Per un' **esperienza a scalabilità verticale**, per consentire all'utente di ricentrare l'origine in un secondo momento, è possibile chiamare [XR. Metodo InputTracking. recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html) :
 
 ```cs
 InputTracking.Recenter();
@@ -50,7 +50,7 @@ InputTracking.Recenter();
 **Spazio dei nomi:** *UnityEngine. XR*<br>
 **Tipo:** *XRDevice*
 
-Per un'esperienza **di scalabilità o** **scalabilità** , è necessario inserire il contenuto relativo alla superficie. Si ragiona sul pavimento dell'utente usando la **[fase spaziale](../../design/coordinate-systems.md#spatial-coordinate-systems)** , che rappresenta l'origine di livello del piano definita dall'utente e il limite di spazio facoltativo, configurato durante la prima esecuzione.
+Per un'esperienza **di scalabilità o** **scalabilità**, è necessario inserire il contenuto relativo alla superficie. Si ragiona sul pavimento dell'utente usando la **[fase spaziale](../../design/coordinate-systems.md#spatial-coordinate-systems)**, che rappresenta l'origine di livello del piano definita dall'utente e il limite di spazio facoltativo, configurato durante la prima esecuzione.
 
 Per assicurarsi che Unity stia operando con il sistema di coordinate globale a livello di piano, è possibile impostare Unity sul tipo di spazio di rilevamento RoomScale e assicurarsi che il set abbia esito positivo:
 
@@ -101,7 +101,7 @@ Per aggiungere un ancoraggio globale, chiamare AddComponent <WorldAnchor> () sul
 WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 ```
 
-Ecco fatto! Questo oggetto Game verrà ora ancorato alla posizione corrente nel mondo fisico. è possibile che le coordinate internazionali del mondo Unity vengano modificate leggermente nel tempo per garantire l'allineamento fisico. Usare la [persistenza](persistence-in-unity.md) per trovare nuovamente questa posizione ancorata in una sessione di app futura.
+L'operazione è terminata. Questo oggetto Game verrà ora ancorato alla posizione corrente nel mondo fisico. è possibile che le coordinate internazionali del mondo Unity vengano modificate leggermente nel tempo per garantire l'allineamento fisico. Usare la [persistenza](persistence-in-unity.md) per trovare nuovamente questa posizione ancorata in una sessione di app futura.
 
 ### <a name="removing-a-world-anchor"></a>Rimozione di un ancoraggio globale
 
@@ -168,19 +168,19 @@ Per iniziare a creare esperienze condivise in Unity, provare le <a href="https:/
 
 Quando si è operativi con i Anchor spaziali di Azure, è possibile <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">creare e individuare ancoraggi in Unity</a>.
 
-## <a name="next-development-checkpoint"></a>Checkpoint di sviluppo successivo
+## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
 Se si sta seguendo il percorso di checkpoint per lo sviluppo di Unity, è possibile esplorare i blocchi predefiniti di base della realtà mista. Da qui è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Sguardo fisso](gaze-in-unity.md)
 
-In alternativa, passare alle API e alle funzionalità della piattaforma di realtà mista:
+In alternativa, passare alle API e funzionalità della piattaforma di realtà mista:
 
 > [!div class="nextstepaction"]
 > [Esperienze condivise](shared-experiences-in-unity.md)
 
-È sempre possibile tornare ai checkpoint per [lo sviluppo di Unity](unity-development-overview.md#2-core-building-blocks) in qualsiasi momento.
+È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](unity-development-overview.md#2-core-building-blocks) in qualsiasi momento.
 
 ## <a name="see-also"></a>Vedere anche
 * [Scale Experience](../../design/coordinate-systems.md#mixed-reality-experience-scales)

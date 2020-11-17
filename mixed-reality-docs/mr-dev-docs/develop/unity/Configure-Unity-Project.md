@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
-keywords: Unity, realtà mista, sviluppo, Guida introduttiva, nuovo progetto
-ms.openlocfilehash: f1465dcb31718b9d3faeb64d24e33d9f9ffeb7cc
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+keywords: Unity, realtà mista, sviluppo, Guida introduttiva, nuovo progetto, realtà mista di Windows, UWP, XR, prestazioni
+ms.openlocfilehash: cd7e6c5681c717c37368393a605998a2ab8e4175
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386217"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677670"
 ---
 # <a name="configure-a-new-unity-project-for-windows-mixed-reality"></a>Configurare un nuovo progetto Unity per la realtà mista di Windows 
 
@@ -81,7 +81,7 @@ Se l'app è destinata a HoloLens in modo specifico, è necessario modificare alc
 1. Nella **gerarchia** selezionare la **fotocamera principale**
 2. Nel pannello **Inspector** impostare la **posizione** di trasformazione su 0, 0 **, 0,** in modo che la posizione della testa dell'utente inizi in corrispondenza dell'origine mondiale di Unity.
 3. Modificare i **flag cancellati** in **colore a tinta unita**.
-4. Modificare il colore di **sfondo** in **RGBA 0** , 0, 0, 0. Il nero viene visualizzato come trasparente in HoloLens.
+4. Modificare il colore di **sfondo** in **RGBA 0**, 0, 0, 0. Il nero viene visualizzato come trasparente in HoloLens.
 5. Modificare i **piani di ritaglio in prossimità** del [HoloLens consigliato](camera-in-unity.md#clip-planes) 0,85 (contatori).
 
 ![Impostazioni della fotocamera Unity](images/Unitycamerasettings.png)<br>
@@ -91,7 +91,7 @@ Se l'app è destinata a HoloLens in modo specifico, è necessario modificare alc
 > Se si elimina e si crea una nuova fotocamera, assicurarsi che la nuova fotocamera sia contrassegnata come **MainCamera**.
 
 ## <a name="see-also"></a>Vedere anche
-* [Guida all'installazione di MRTK (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
-* [MRTK-Home della documentazione (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+* [MRTK - Guida all'installazione (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+* [MRTK - Home page della documentazione (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 * [Installare gli strumenti](../install-the-tools.md)
 * [Panoramica sullo sviluppo Unity](unity-development-overview.md)

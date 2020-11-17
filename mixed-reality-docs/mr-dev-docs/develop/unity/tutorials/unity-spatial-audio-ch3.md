@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: realtà mista, Unity, esercitazione, hololens2, audio spaziale
-ms.openlocfilehash: cd684944bdd618dcf435ef91566d6d4f18aa87a3
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: realtà mista, Unity, esercitazione, hololens2, audio spaziale, MRTK, Toolkit per realtà mista, UWP, Windows 10, HRTF, funzione di trasferimento relativa alla testa, Reverb, Microsoft Spatializer, importazione video, lettore video
+ms.openlocfilehash: 43297fc4148600cc820111e6c206313560224ac9
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91689788"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679720"
 ---
 # <a name="spatializing-audio-from-a-video"></a>Spazializzazione dell'audio da un video
 In questo terzo capitolo del modulo audio spaziale delle esercitazioni di HoloLens 2 Unity è possibile:
@@ -35,12 +35,12 @@ Dopo queste modifiche, il riquadro **Inspector** per il file video sarà simile 
 
 ![Riquadro proprietà video](images/spatial-audio/video-property-pane.png)
 
-Successivamente, aggiungere un oggetto **lettore video** alla **gerarchia** facendo clic con il pulsante destro del mouse sul riquadro **gerarchia** e scegliendo **video-> lettore video** :
+Successivamente, aggiungere un oggetto **lettore video** alla **gerarchia** facendo clic con il pulsante destro del mouse sul riquadro **gerarchia** e scegliendo **video-> lettore video**:
 
 ![Lettore video nella gerarchia](images/spatial-audio/video-player-in-hierarchy.png)
 
 ## <a name="play-video-onto-a-quadrangle"></a>Riprodurre video su un quadrilatero
-L'oggetto **Player video** necessita di un oggetto gioco con trama su cui eseguire il rendering del video. Per prima cosa, aggiungere un **Quad** alla **gerarchia** facendo clic con il pulsante destro del mouse sul riquadro **gerarchia** e scegliendo **oggetto 3D-> Quad** :
+L'oggetto **Player video** necessita di un oggetto gioco con trama su cui eseguire il rendering del video. Per prima cosa, aggiungere un **Quad** alla **gerarchia** facendo clic con il pulsante destro del mouse sul riquadro **gerarchia** e scegliendo **oggetto 3D-> Quad**:
 
 ![Aggiungere Quad alla gerarchia](images/spatial-audio/add-quad-to-hierarchy.png)
 
@@ -48,17 +48,17 @@ Per assicurarsi che il **Quad** venga visualizzato davanti all'utente all'avvio 
 
 ![Trasformazione quad](images/spatial-audio/quad-transform.png)
 
-Per creare una trama del **Quad** con video, creare una nuova **trama di rendering** . Nel riquadro **progetto** , fare clic con il pulsante destro del mouse e scegliere **Crea-> trama di rendering** :
+Per creare una trama del **Quad** con video, creare una nuova **trama di rendering**. Nel riquadro **progetto** , fare clic con il pulsante destro del mouse e scegliere **Crea-> trama di rendering**:
 
 ![Crea trama di rendering](images/spatial-audio/create-render-texture.png)
 
-Nel riquadro **Inspector** della trama di **rendering** impostare la proprietà **size** in modo che corrisponda alla risoluzione nativa del video 1280x720. Quindi, per garantire prestazioni di rendering ottimali in HoloLens 2, impostare la proprietà **depth buffer** su almeno **16 bit di profondità** . Dopo queste impostazioni, il riquadro **Inspector** per la **trama di rendering** sarà simile al seguente:
+Nel riquadro **Inspector** della trama di **rendering** impostare la proprietà **size** in modo che corrisponda alla risoluzione nativa del video 1280x720. Quindi, per garantire prestazioni di rendering ottimali in HoloLens 2, impostare la proprietà **depth buffer** su almeno **16 bit di profondità**. Dopo queste impostazioni, il riquadro **Inspector** per la **trama di rendering** sarà simile al seguente:
 
 ![Proprietà trama di rendering](images/spatial-audio/render-texture-properties.png)
 
-Usare quindi la nuova **trama di rendering** come trama per il **Quad** :
+Usare quindi la nuova **trama di rendering** come trama per il **Quad**:
 1. Trascinare la **trama di rendering** dal riquadro **progetto** al **quadrato** della **gerarchia**
-2. Per garantire prestazioni ottimali in HoloLens 2, nel riquadro **Inspector** per il **Quad** selezionare lo **shader standard del Toolkit di realtà mista** .
+2. Per garantire prestazioni ottimali in HoloLens 2, nel riquadro **Inspector** per il **Quad** selezionare lo **shader standard del Toolkit di realtà mista**.
 
 Con queste impostazioni, il componente **trama** nel riquadro **Inspector** per il **Quad** sarà simile al seguente:
 
@@ -78,7 +78,7 @@ Nel riquadro **Inspector** per il **Quad** creare un' **origine audio** a cui in
 * Fare clic su **Aggiungi componente** nella parte inferiore del riquadro
 * Aggiungere un' **origine audio**
 
-Quindi, nell' **origine audio** :
+Quindi, nell' **origine audio**:
 * Impostare l' **output** sul mixer
 * Controllare la casella **Spatialize**
 * Spostare il dispositivo di scorrimento di **Blend spaziale** su 1 (3D)
@@ -87,7 +87,7 @@ Una volta apportate queste modifiche, il componente di **origine audio** nel riq
 
 ![Controllo origine audio quad](images/spatial-audio/quad-audio-source-inspector.png)
 
-Per impostare il **lettore video** in modo da instradare l'audio all' **origine audio** sul **Quad** , aprire il riquadro **Inspector** per il **lettore video** e:
+Per impostare il **lettore video** in modo da instradare l'audio all' **origine audio** sul **Quad**, aprire il riquadro **Inspector** per il **lettore video** e:
 * Impostare la **modalità di output audio** su' Audio source '
 * Impostare la proprietà di **origine audio** sul quad
 

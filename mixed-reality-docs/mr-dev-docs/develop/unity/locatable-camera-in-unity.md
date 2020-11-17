@@ -5,13 +5,13 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Foto, video, hololens, fotocamera, Unity, locatable
-ms.openlocfilehash: dfbbcc21db1247a7250e5049bfd1c4f89976ac15
-ms.sourcegitcommit: 8e91ff47ef70e80a41137f80aa1093e711d27bf7
+keywords: Foto, video, hololens, fotocamera, Unity, locatable, PVC, videocamera video foto, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, webcam, acquisizione foto, acquisizione video
+ms.openlocfilehash: c41ff88650da4aa6dc0d98c05b1b881362123a4f
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91957801"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678600"
 ---
 # <a name="locatable-camera-in-unity"></a>Fotocamera individuabile in Unity
 
@@ -205,7 +205,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 **Spazio dei nomi:** *UnityEngine. XR. WSA. Webcam*<br>
 **Tipo:** *VideoCapture*
 
-*VideoCapture* funziona in modo molto simile alla *fotoacquisizione* . Le uniche due differenze sono che è necessario specificare un valore per i frame al secondo (FPS) ed è possibile salvare direttamente sul disco come file con estensione MP4. I passaggi per usare *VideoCapture* sono i seguenti:
+*VideoCapture* funziona in modo molto simile alla *fotoacquisizione*. Le uniche due differenze sono che è necessario specificare un valore per i frame al secondo (FPS) ed è possibile salvare direttamente sul disco come file con estensione MP4. I passaggi per usare *VideoCapture* sono i seguenti:
 1. Creare un oggetto *VideoCapture*
 2. Creare un oggetto *CameraParameters* con le impostazioni desiderate
 3. Avviare la modalità video tramite *StartVideoModeAsync*

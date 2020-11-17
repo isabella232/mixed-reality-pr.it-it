@@ -5,13 +5,13 @@ author: cjdgit
 ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
-keywords: criteri di qualità delle app, realtà mista, app per realtà mista
-ms.openlocfilehash: 96d446e1f6f5649f842d674ea4692d619894cc32
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: criteri di qualità delle app, realtà mista, app per realtà mista, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare realtà virtuale
+ms.openlocfilehash: c18f4e8470f7f183fdf250472fd3a977f925dfbf
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683797"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677990"
 ---
 # <a name="app-quality-criteria"></a>Criteri di qualità delle app
 
@@ -176,7 +176,7 @@ I disallineamenti degli ologrammi con oggetti fisici (se destinati a essere posi
 
 |  Ottimale  |  Soddisfi |  Esito negativo |
 --- | --- | ---
-| Gli ologrammi si allineano alla superficie in genere nell'intervallo di centimetri. Se è necessaria una maggiore accuratezza, l'app deve fornire un modo efficiente per collaborare all'interno della specifica dell'app desiderata. | ND | Gli ologrammi appaiono non allineati con l'oggetto di destinazione fisico suddividendo il piano della superficie o facendo in modo che si trovi in un altro modo. Se è necessaria l'accuratezza, gli ologrammi dovrebbero soddisfare le specifiche di prossimità dello scenario. | 
+| Gli ologrammi si allineano alla superficie in genere nell'intervallo di centimetri. Se è necessaria una maggiore accuratezza, l'app deve fornire un modo efficiente per collaborare all'interno della specifica dell'app desiderata. | N/D | Gli ologrammi appaiono non allineati con l'oggetto di destinazione fisico suddividendo il piano della superficie o facendo in modo che si trovi in un altro modo. Se è necessaria l'accuratezza, gli ologrammi dovrebbero soddisfare le specifiche di prossimità dello scenario. | 
 
 ### <a name="how-to-measure"></a>Come misurare
 

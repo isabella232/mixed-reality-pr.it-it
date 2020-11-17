@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: realtà mista, Unity, esercitazione, hololens2, audio spaziale
-ms.openlocfilehash: 9ddfd1644a20ac063551b8140f9f8950ae172196
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: realtà mista, Unity, esercitazione, hololens2, audio spaziale, MRTK, Toolkit per realtà mista, UWP, Windows 10, HRTF, funzione di trasferimento relativa alla testa, Reverb, Microsoft Spatializer
+ms.openlocfilehash: fc657eb22034c1c3fd31aadedfe7b8ea7bb8447d
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91689861"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679710"
 ---
 # <a name="adding-spatial-audio-to-your-unity-project"></a>Aggiunta di audio spaziale al progetto Unity
 
@@ -51,7 +51,7 @@ Individuare e installare il pacchetto di **realtà mista di Windows** :
 
 ## <a name="install-mrtk-and-microsoft-spatializer"></a>Installare MRTK e Microsoft Spatializer
 Usando NuGet per Unity, installare i plug-in MRTK e Microsoft Spatializer:
-1. Nella barra dei menu di Unity fare clic su **NuGet-> Gestisci pacchetti NuGet** .
+1. Nella barra dei menu di Unity fare clic su **NuGet-> Gestisci pacchetti NuGet**.
 
 ![Gestisci pacchetti NuGet](images/spatial-audio/manage-nuget-packages.png)
 
@@ -67,13 +67,13 @@ Il [pacchetto NuGet MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/
 
 ## <a name="set-up-mrtk-in-your-project"></a>Configurare MRTK nel progetto
 
-1. Aprire la finestra impostazioni di compilazione passando a **file-> impostazioni di compilazione** .
+1. Aprire la finestra impostazioni di compilazione passando a **file-> impostazioni di compilazione**.
 
-2. Selezionare il _piattaforma UWP (Universal Windows Platform)_ e fare clic su **Cambia piattaforma** .
+2. Selezionare il _piattaforma UWP (Universal Windows Platform)_ e fare clic su **Cambia piattaforma**.
 
 3. Fare clic su **Impostazioni lettore** nella **finestra di compilazione** per aprire le proprietà **delle impostazioni del lettore** nel riquadro **controllo** .
     * In **Impostazioni XR** selezionare la casella di controllo **Virtual Reality supported**
-    * In **Impostazioni XR** , modificare la **modalità di rendering stereo** in **Single Pass istanza** .
+    * In **Impostazioni XR**, modificare la **modalità di rendering stereo** in **Single Pass istanza**.
     * In **impostazioni di pubblicazione** selezionare la casella di controllo **percezione spaziale** nella sezione **funzionalità**
 
 4. Sulla barra dei menu fare clic su **Toolkit realtà mista-> Aggiungi a scena e configura..** per aggiungere MRTK alla scena.
@@ -86,7 +86,7 @@ Abilitare il plug-in **Microsoft Spatializer** . Aprire **modifica-> impostazion
 ![Impostazioni del progetto che mostrano il plug-in Spatializer](images/spatial-audio/project-settings.png)
 
 ## <a name="enable-spatial-audio-on-your-workstation"></a>Abilitare l'audio spaziale nella workstation
-Nelle versioni desktop di Windows, l'audio spaziale è disabilitato per impostazione predefinita. Per abilitarla, fare clic con il pulsante destro del mouse sull'icona del volume sulla barra delle applicazioni. Per ottenere la migliore rappresentazione di ciò che è possibile sentire in HoloLens 2, scegliere **audio spaziale > Windows Sonic per le cuffie** .
+Nelle versioni desktop di Windows, l'audio spaziale è disabilitato per impostazione predefinita. Per abilitarla, fare clic con il pulsante destro del mouse sull'icona del volume sulla barra delle applicazioni. Per ottenere la migliore rappresentazione di ciò che è possibile sentire in HoloLens 2, scegliere **audio spaziale > Windows Sonic per le cuffie**.
 
 ![Impostazioni audio spaziali desktop](images/spatial-audio/desktop-audio-settings.png)
 

@@ -1,19 +1,19 @@
 ---
-title: Raccomandazioni materiali in Unreal
+title: Raccomandazioni sui materiali in Unreal
 description: Panoramica dei materiali in Unreal Engine.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/18/2020
 ms.topic: article
-keywords: Unreal Engine 4, UE4, HoloLens, HoloLens 2, sviluppo, materiali, documentazione, guide, funzionalità, ologrammi, sviluppo di giochi
-ms.openlocfilehash: bfce6e6bf8acd58821dba1213e1f1ab571d85a0c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal Engine 4, UE4, HoloLens, HoloLens 2, sviluppo, materiali, documentazione, guide, funzionalità, ologrammi, sviluppo di giochi, cuffie per realtà mista, auricolare di realtà mista di Windows, auricolare di realtà virtuale
+ms.openlocfilehash: d57689e9427ab5877e3afb49b0d19f35df6c47d2
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684548"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678940"
 ---
-# <a name="material-recommendations-in-unreal"></a>Raccomandazioni materiali in Unreal
+# <a name="material-recommendations-in-unreal"></a>Raccomandazioni sui materiali in Unreal
 
 I materiali possono produrre o interrompere le prestazioni in Unreal Engine. Questa pagina funge da avvio rapido delle impostazioni di base che è necessario usare per ottenere prestazioni ottimali.
 
@@ -73,7 +73,7 @@ Quando si creano parametri, è preferibile usare "parametri statici" laddove pos
 
 Quando si creano istanze di materiale, è necessario assegnare una preferenza alla **costante dell'istanza Material** su un'istanza del materiale dinamica. **Material instance Constant** è un materiale di istanza che viene calcolato una sola volta, prima del runtime.
 
-L'istanza del materiale creata tramite il browser del contenuto ( **fare clic con il pulsante destro del mouse > Crea istanza del materiale** ) è una costante dell'istanza del materiale. L'istanza del materiale dinamica viene creata tramite codice. Per ulteriori informazioni sulle istanze di materiale, vedere la [documentazione di Unreal Engine](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html).
+L'istanza del materiale creata tramite il browser del contenuto (**fare clic con il pulsante destro del mouse > Crea istanza del materiale**) è una costante dell'istanza del materiale. L'istanza del materiale dinamica viene creata tramite codice. Per ulteriori informazioni sulle istanze di materiale, vedere la [documentazione di Unreal Engine](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html).
 
 ![Creazione di istanze di materiale in Unreal](images/unreal-materials-img-08.png)
 

@@ -5,13 +5,13 @@ author: l-garrett
 ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
-keywords: Galaxy Explorer, case study, progetto, esempio
-ms.openlocfilehash: 1e04b27ff0382d87f8e6a15ae2b7b2284fa020e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Galaxy Explorer, case study, Project, Sample, MRTK, Mixed Reality Toolkit, Unity, app di esempio, app di esempio, open source, Microsoft Store, HoloLens, cuffie per la realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
+ms.openlocfilehash: 00bf30224a820bd85394c4b97136f81b52fe4128
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686701"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677630"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>Creazione di Galaxy Explorer per HoloLens 2
 
@@ -96,7 +96,7 @@ Sono stati rilevati commenti e suggerimenti visivi e audio che gli utenti forniv
 ![Visual affordances sui pianeti](images/ge-update-planet-affordances.png)
 
 ### <a name="adding-affordances-for-force-grab"></a>Aggiunta di affordances per Force appigli
- 
+ 
 Una volta ottenuto il meccanismo di forzatura di base con audio e Visual affordances, abbiamo esaminato come rendere più intuitiva la selezione dei pianeti. Ci sono due aspetti principali da considerare: poiché il sistema solare è un'interfaccia di trasferimento 3D, è necessario che gli utenti apprendano come indirizzare gli oggetti in modo coerente. Questo è stato aggravato dal fatto che il raggio della mano è molto veloce quando si seleziona un oggetto, facendo in modo che i pianeti si spostano verso l'utente incredibilmente rapidamente.
 
 Questa operazione è stata affrontata con una soluzione a tre punte. Il primo era abbastanza intuitivo: rallentare il processo di selezione in modo che i pianeti approccino l'utente a un ritmo più naturale. Dopo che la velocità è stata modificata, è stato necessario rivedere i affordances audio e visivi, aggiungendo commenti e suggerimenti audio aggiuntivi in modo da tenere traccia dell'utente.
@@ -151,7 +151,7 @@ Ora che è stata impostata la composizione visiva di Jupiter, era necessario ass
 I flussi che ruotano singolarmente hanno fornito una buona impressione visiva, ma non sono stati dettagliati se osservati in un intervallo di chiusura.
 
 Il punto di vista più accattivante era il posto di Giove, che ha creato un set di mesh e trame in modo specifico.
- 
+ 
 È stato usato un meccanismo simile a quello delle bande di Giove: un set di parti rotanti è stato composto l'uno dall'altro, mentre veniva anche raggruppato sotto il "livello master" per assicurarsi che rimangano in posizione indipendentemente dalla velocità con cui si sposta il resto.
 
 Quando i mesh sono stati configurati e sul posto, sono stati applicati livelli diversi del vortice Storm e ogni disco è stato animato singolarmente, i pezzi centrali si spostano più velocemente, con il resto progressivamente rallentato quando si sposta verso l'esterno.
@@ -202,4 +202,4 @@ Non in primo piano: Tim Gerken (Tech lead) e Oscar Salandin (finestra di progett
 
 ### <a name="mixed-reality-studios"></a>Studi di realtà mista
 
-Microsoft Mixed Reality Studio teams, che si trovano in America, Europa e Asia-Pacifico, sono esperti di progettazione dell'esperienza utente, elaborazione olografica, tecnologie AR/VR e sviluppo 3D; tra cui creazione di asset 3D, DirectX, Unity e Unreal. Ti aiuteremo a immaginare future, progettare, compilare e distribuire soluzioni, consentendo ai clienti di creare un notevole effetto sull'intera organizzazione. Gli studi collaborano a stretto contatto con oltre 22.000 professionisti dei servizi Microsoft per l'integrazione, l'adozione, le operazioni e il supporto delle applicazioni aziendali.
+Microsoft Mixed Reality Studio teams, che si trovano in America, Europa e Asia-Pacific-sono esperti di progettazione dell'esperienza utente, elaborazione olografica, tecnologie AR/VR e sviluppo 3D; tra cui creazione di asset 3D, DirectX, Unity e Unreal. Ti aiuteremo a immaginare future, progettare, compilare e distribuire soluzioni, consentendo ai clienti di creare un notevole effetto sull'intera organizzazione. Gli studi collaborano a stretto contatto con oltre 22.000 professionisti dei servizi Microsoft per l'integrazione, l'adozione, le operazioni e il supporto delle applicazioni aziendali.

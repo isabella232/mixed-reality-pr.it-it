@@ -5,15 +5,15 @@ author: sw5813
 ms.author: suwu
 ms.date: 7/10/2020
 ms.topic: article
-keywords: Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, distribuzione nel dispositivo, PC, documentazione
+keywords: Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, distribuzione su dispositivo, PC, documentazione, auricolare realtà mista, headset di realtà mista di Windows, auricolare della realtà virtuale
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: abd5e5c28ec5e66c4f73df8edf5e0ac0212d170a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 9d32dff121899d40175af813fac4f7be1acc66c3
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684789"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679120"
 ---
 # <a name="deploy-to-device-in-unreal"></a>Distribuire nel dispositivo in Unreal
 
@@ -30,11 +30,11 @@ Per entrambe le opzioni è necessario configurare il HoloLens per l'uso del port
 
 ![Opzioni menu a discesa Avvia](images/unreal/launch-dropdown.png)
 
-2. Aprire il **Device Manager** . Si noti che il HoloLens non verrà visualizzato automaticamente nell'elenco dei dispositivi.
+2. Aprire il **Device Manager**. Si noti che il HoloLens non verrà visualizzato automaticamente nell'elenco dei dispositivi.
 
 3. Espandere la sezione **aggiungere un dispositivo** non in elenco.
 
-4. Selezionare **HoloLens** come **piattaforma** .
+4. Selezionare **HoloLens** come **piattaforma**.
 
 5. Immettere le informazioni sull'indirizzo IP e sulla porta dei dispositivi separati da due punti come identificatore del dispositivo. Ad esempio, "127.0.0.1:10080" (quando si è connessi tramite USB). Usare le credenziali del nome utente e della password del portale del dispositivo.
 
@@ -52,11 +52,11 @@ Per entrambe le opzioni è necessario configurare il HoloLens per l'uso del port
 
 Per istruzioni dettagliate sulla creazione di [pacchetti e sulla distribuzione di un'app,](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) vedere l'ultima sezione del introduzione con la serie di esercitazioni Unreal.
 
-## <a name="next-development-checkpoint"></a>Checkpoint di sviluppo successivo
+## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
 Se si sta seguendo il percorso di checkpoint per lo sviluppo non reale, si è in fase di distribuzione. Da qui è possibile procedere con l'aggiunta di servizi avanzati:
 
 > [!div class="nextstepaction"]
 > [Servizi avanzati](unreal-development-overview.md#5-adding-services)
 
-È sempre possibile tornare ai checkpoint di [sviluppo non reali](unreal-development-overview.md#4-deploying-to-a-device) in qualsiasi momento.
+È sempre possibile tornare ai [checkpoint per lo sviluppo con Unreal](unreal-development-overview.md#4-deploying-to-a-device) in qualsiasi momento.

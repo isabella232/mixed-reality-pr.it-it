@@ -7,18 +7,18 @@ ms.date: 08/26/2020
 ms.topic: article
 keywords: Realtà mista, olografico, AR, VR, MR, XR, realtà aumentata, realtà virtuale, spiegazione
 ms.localizationpriority: high
-ms.openlocfilehash: a55b05f8edfeedfff3313844428b9af4cf7a2fc0
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+ms.openlocfilehash: 44914decd9530a11d11127b43af527d995f6c252
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340709"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631489"
 ---
 # <a name="what-is-mixed-reality"></a>Che cos'è Realtà mista?
 
 ![Puntamento e commit con le mani in HoloLens 2](images/02_MixedRealitySlashMixedReality.png)
 
-La realtà mista è una fusione tra mondo fisico e mondo digitale che rende possibili nuove interazioni tra uomo, computer e ambiente. Questa nuova realtà è il frutto dei progressi compiuti nei settori della visione artificiale, dell'elaborazione grafica, della tecnologia di visualizzazione e dei sistemi di input. Il termine *realtà mista* , tuttavia, è stato coniato nel 1994 in un documento a cura di Paul Milgram e Fumio Kishino, " [A Taxonomy of Mixed Reality Visual Displays](https://search.ieice.org/bin/summary.php?id=e77-d_12_1321)" (Tassonomia dei dispositivi di visualizzazione nella realtà mista). Questo documento ha preso il esame il concetto di *continuum di virtualizzazione* e la categorizzazione della tassonomia applicata ai dispositivi di visualizzazione. Da quel momento in poi, l'applicazione della realtà mista è andata oltre i dispositivi di visualizzazione per includere:
+La realtà mista è una fusione tra mondo fisico e mondo digitale che rende possibili nuove interazioni tra uomo, computer e ambiente. Questa nuova realtà è il frutto dei progressi compiuti nei settori della visione artificiale, dell'elaborazione grafica, della tecnologia di visualizzazione e dei sistemi di input. Il termine *realtà mista*, tuttavia, è stato coniato nel 1994 in un documento a cura di Paul Milgram e Fumio Kishino, "[A Taxonomy of Mixed Reality Visual Displays](https://search.ieice.org/bin/summary.php?id=e77-d_12_1321)" (Tassonomia dei dispositivi di visualizzazione nella realtà mista). Questo documento ha preso il esame il concetto di *continuum di virtualizzazione* e la categorizzazione della tassonomia applicata ai dispositivi di visualizzazione. Da quel momento in poi, l'applicazione della realtà mista è andata oltre i dispositivi di visualizzazione per includere:
 * Input ambientale
 * Audio spaziale
 * Posizioni e posizionamento negli spazi reali e virtuali
@@ -43,7 +43,7 @@ I miglioramenti apportati ai sensori e all'elaborazione stanno dando vita a una 
 
 <br>
 
-La combinazione di questi tre elementi, **elaborazione del computer, input umano e input ambientale** , consente di creare vere esperienze di realtà mista. Il movimento nel mondo fisico può tradursi in movimento nel mondo digitale. I confini nel mondo fisico possono influenzare le esperienze delle applicazioni, ad esempio le esperienze di gioco, nel mondo digitale. Senza l'input ambientale, non è possibile fondere le esperienze tra realtà fisiche e digitali.<br>
+La combinazione di questi tre elementi, **elaborazione del computer, input umano e input ambientale**, consente di creare vere esperienze di realtà mista. Il movimento nel mondo fisico può tradursi in movimento nel mondo digitale. I confini nel mondo fisico possono influenzare le esperienze delle applicazioni, ad esempio le esperienze di gioco, nel mondo digitale. Senza l'input ambientale, non è possibile fondere le esperienze tra realtà fisiche e digitali.<br>
 
 <br>
 
@@ -62,7 +62,7 @@ Dal momento che la realtà mista è una combinazione tra mondo fisico e mondo di
 
 ### <a name="augmented-vs-virtual-reality"></a>Realtà aumentata e realtà virtuale
 
-La maggior parte dei telefoni cellulari attualmente presenti sul mercato non dispone di alcuna capacità di conoscenza ambientale. Le esperienze che offrono non possono combinare realtà fisiche e digitali. Le esperienze di sovrapposizione di grafica sui flussi video del mondo fisico costituiscono la *realtà aumentata*. Le esperienze che occludono la vista per presentare un'esperienza digitale costituiscono la *realtà virtuale*. Le esperienze possibili tra la realtà aumentata e la realtà virtuale costituiscono la *realtà mista* :
+La maggior parte dei telefoni cellulari attualmente presenti sul mercato non dispone di alcuna capacità di conoscenza ambientale. Le esperienze che offrono non possono combinare realtà fisiche e digitali. Le esperienze di sovrapposizione di grafica sui flussi video del mondo fisico costituiscono la *realtà aumentata*. Le esperienze che occludono la vista per presentare un'esperienza digitale costituiscono la *realtà virtuale*. Le esperienze possibili tra la realtà aumentata e la realtà virtuale costituiscono la *realtà mista*:
 * Iniziando dal mondo fisico, si inserisce un oggetto digitale, ad esempio un ologramma, come se fosse presente.
 * Partendo dal mondo fisico, una rappresentazione digitale di un'altra persona, un avatar, mostra la posizione in cui si trovava quando ha lasciato gli appunti. In altre parole, queste sono esperienze che rappresentano la collaborazione asincrona in momenti diversi.
 * Partendo da un mondo digitale, i confini fisici del mondo fisico, ad esempio i muri e i mobili, vengono visualizzati digitalmente all'interno dell'esperienza per aiutare gli utenti a evitare gli oggetti fisici.
@@ -119,10 +119,4 @@ Se si sta seguendo il [percorso di scoperta](get-started-with-mr.md) definito, �
 > [!div class="nextstepaction"]
 > [Che cos'è un ologramma?](hologram.md)
 
-## <a name="see-also"></a>Vedere anche
-
-* [Che cos'è un ologramma?](hologram.md)
-* [Comprendere i concetti di base della realtà mista](get-started-with-mr.md#understand-the-basics)
-* [Iniziare a progettare e a creare prototipi](../design/design.md)
-* [Informazioni sugli strumenti e sull'architettura](../develop/development.md)
 

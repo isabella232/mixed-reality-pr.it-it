@@ -5,18 +5,18 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
-keywords: occhio, sguardo, Head-sguardi, tracking, tracciamento degli occhi, DirectX, input, ologrammi
-ms.openlocfilehash: 06f725f3560d2c05e15c2e1362e820262986a192
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: occhi, sguardi, Head-sguardi, tracking, tracking, Eye Tracking, DirectX, input, ologrammi, cuffie per realtà mista, cuffie per la realtà mista di Windows, cuffie per realtà virtuale
+ms.openlocfilehash: 9ec54f5db33346c499582b54a0b3e36c129bf7ab
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683869"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678080"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>Input occhi e sguardi in DirectX
 
 > [!NOTE]
-> Questo articolo si riferisce alle API native di WinRT legacy.  Per i nuovi progetti di app native, è consigliabile usare l' **[API OpenXR](openxr-getting-started.md)** .
+> Questo articolo si riferisce alle API native di WinRT legacy.  Per i nuovi progetti di app native, è consigliabile usare l' **[API OpenXR](openxr-getting-started.md)**.
 
 Per quanto riguarda la realtà mista di Windows, viene usato l'input occhi e occhio per determinare l'aspetto dell'utente. Questo può essere usato per gestire i modelli di input primari, ad esempio [Head-sguardi e commit](../../design/gaze-and-commit.md), nonché per fornire il contesto per i tipi di interazioni. Esistono due tipi di vettori di sguardi disponibili tramite l'API, ovvero Head-sguardi e sguardo.  Entrambe sono fornite come un raggio tridimensionale con un'origine e una direzione. Le applicazioni possono quindi Raycast nelle proprie scene, o nel mondo reale, e determinare le operazioni di destinazione dell'utente.
 
@@ -84,7 +84,7 @@ Usa la stessa API [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windo
 2. Abilitare la funzionalità di "input dello sguardo" nel manifesto del pacchetto.
 
 ### <a name="requesting-access-to-eye-gaze-input"></a>Richiesta di accesso a Eye-sguardi input
-All'avvio dell'app, chiamare [EyesPose:: RequestAccessAsync](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) per richiedere l'accesso al rilevamento degli occhi. Se necessario, il sistema richiede all'utente e restituisce [GazeInputAccessStatus:: allowed](https://docs.microsoft.com//uwp/api/windows.ui.input.gazeinputaccessstatus) dopo che è stato concesso l'accesso. Si tratta di una chiamata asincrona, quindi richiede un po' di gestione aggiuntiva. Nell'esempio seguente viene avviata un'operazione std:: thread scollegata per attendere il risultato, che viene archiviato in una variabile membro denominata *m_isEyeTrackingEnabled* .
+All'avvio dell'app, chiamare [EyesPose:: RequestAccessAsync](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) per richiedere l'accesso al rilevamento degli occhi. Se necessario, il sistema richiede all'utente e restituisce [GazeInputAccessStatus:: allowed](https://docs.microsoft.com//uwp/api/windows.ui.input.gazeinputaccessstatus) dopo che è stato concesso l'accesso. Si tratta di una chiamata asincrona, quindi richiede un po' di gestione aggiuntiva. Nell'esempio seguente viene avviata un'operazione std:: thread scollegata per attendere il risultato, che viene archiviato in una variabile membro denominata *m_isEyeTrackingEnabled*.
 
 ```cpp
 using namespace winrt::Windows::Perception::People;
@@ -134,7 +134,7 @@ if (Windows::Perception::People::EyesPose::IsSupported() &&
 
 ### <a name="declaring-the-gaze-input-capability"></a>Dichiarazione della funzionalità di *input di sguardi*
 
-Fare doppio clic sul file appxmanifest in *Esplora soluzioni* .  Passare quindi alla sezione *funzionalità* e controllare la funzionalità di *input di sguardi* . 
+Fare doppio clic sul file appxmanifest in *Esplora soluzioni*.  Passare quindi alla sezione *funzionalità* e controllare la funzionalità di *input di sguardi* . 
 
 ![Funzionalità di input di sguardi](images/gaze-input-capability.png)
 

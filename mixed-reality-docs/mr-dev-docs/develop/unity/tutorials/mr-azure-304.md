@@ -1,17 +1,17 @@
 ---
-title: MR e Azure 304-riconoscimento facciale
+title: 'MR and Azure 304: Riconoscimento volto'
 description: Completare questo corso per implementare il riconoscimento viso di Azure in un'applicazione di realtà mista.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: Azure, realtà mista, Accademia, Unity, esercitazione, API, riconoscimento viso, hololens, immersive, VR
-ms.openlocfilehash: 266f51a829d919f8b0f24e80589fd8ab21bb3694
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Azure, realtà mista, Accademia, Unity, esercitazione, API, riconoscimento viso, hololens, immersiva, VR, Windows 10, Visual Studio
+ms.openlocfilehash: 8e1420e5764e7330026731ffb4f0c180604c2789
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687908"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679830"
 ---
 # <a name="mr-and-azure-304-face-recognition"></a>MR e Azure 304: Riconoscimento del volto
 
@@ -87,30 +87,30 @@ Per usare il servizio *API viso* in Azure, sarà necessario configurare un'istan
     > [!NOTE]
     > Se non si dispone già di un account Azure, sarà necessario crearne uno. Se si segue questa esercitazione in una classe o in una situazione di laboratorio, rivolgersi all'insegnante o a uno dei Proctor per ottenere assistenza nella configurazione del nuovo account.
 
-2.  Una volta effettuato l'accesso, fare clic su **nuovo** nell'angolo in alto a sinistra e cercare *API viso* , quindi premere **invio** .
+2.  Una volta effettuato l'accesso, fare clic su **nuovo** nell'angolo in alto a sinistra e cercare *API viso*, quindi premere **invio**.
 
     ![Cerca API viso](images/AzureLabs-Lab4-01.png)
 
     > [!NOTE]
-    > La parola **New** potrebbe essere stata sostituita con **Crea una risorsa** , nei portali più recenti.
+    > La parola **New** potrebbe essere stata sostituita con **Crea una risorsa**, nei portali più recenti.
 
 3.  La nuova pagina fornirà una descrizione del servizio *API viso* . Nella parte inferiore sinistra di questo prompt selezionare il pulsante **Crea** per creare un'associazione con il servizio.
 
     ![informazioni sull'API viso](images/AzureLabs-Lab4-02.png)
 
-4.  Una volta fatto clic su **Crea** :
+4.  Una volta fatto clic su **Crea**:
 
     1. Inserire il nome desiderato per l'istanza del servizio.
 
     2. Selezionare una sottoscrizione.
 
-    3. Selezionare il piano tariffario appropriato. se è la prima volta che si crea un *servizio di API viso* , è necessario che sia disponibile un livello gratuito (denominato F0).
+    3. Selezionare il piano tariffario appropriato. se è la prima volta che si crea un *servizio di API viso*, è necessario che sia disponibile un livello gratuito (denominato F0).
 
     4. Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. Si consiglia di lasciare tutti i servizi di Azure associati a un singolo progetto (ad esempio questi Lab) in un gruppo di risorse comune). 
 
         > Per altre informazioni sui gruppi di risorse di Azure, [vedere l'articolo relativo al gruppo di risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
 
-    5. L'app UWP, **persona Maker** , che viene usata in un secondo momento, richiede l'uso di "Stati Uniti occidentali" per la località.
+    5. L'app UWP, **persona Maker**, che viene usata in un secondo momento, richiede l'uso di "Stati Uniti occidentali" per la località.
 
     6. Sarà inoltre necessario confermare di aver compreso i termini e le condizioni applicati a questo servizio.
 
@@ -154,40 +154,40 @@ Questa applicazione usa le librerie *Microsoft. ProjectOxford. Face* che consent
 >
 > - Creare un *gruppo* di persone, ovvero un gruppo composto da più persone a cui si desidera associarlo. Con l'account Azure è possibile ospitare più gruppi di persone.
 >
-> - Creare una *persona* , che è un membro di un gruppo di persone. Ogni persona ha un certo numero di immagini *facciali* associate.
+> - Creare una *persona*, che è un membro di un gruppo di persone. Ogni persona ha un certo numero di immagini *facciali* associate.
 >
 > -  Assegnare le *Immagini facciali* a una *persona* per consentire al servizio API viso di Azure di riconoscere una *persona* con la *faccia* corrispondente.
 >
-> -  Eseguire il *Training* del *servizio API viso di Azure* .
+> -  Eseguire il *Training* del *servizio API viso di Azure*.
 
-Tenere presente che, per eseguire il training dell'app in modo che riconosca le persone, saranno necessarie dieci (10) foto di primo piano di ogni persona che si desidera aggiungere al gruppo di persone. L'app di Windows 10 CAM può aiutarti a eseguire queste app. È necessario assicurarsi che ogni foto sia chiara (evitare la sfocatura, l'oscuramento o la distanza dal soggetto), avere la foto in formato di file jpg o PNG, con le dimensioni del file di immagine non maggiori di **4 MB** e non inferiori a **1 KB** .
+Tenere presente che, per eseguire il training dell'app in modo che riconosca le persone, saranno necessarie dieci (10) foto di primo piano di ogni persona che si desidera aggiungere al gruppo di persone. L'app di Windows 10 CAM può aiutarti a eseguire queste app. È necessario assicurarsi che ogni foto sia chiara (evitare la sfocatura, l'oscuramento o la distanza dal soggetto), avere la foto in formato di file jpg o PNG, con le dimensioni del file di immagine non maggiori di **4 MB** e non inferiori a **1 KB**.
 
 > [!NOTE]
 > Se si segue questa esercitazione, non usare il proprio viso per il training, come quando si inserisce il HoloLens, non è possibile esaminare se stessi. Usare la faccia di un collega o di un altro studente.
 
 **Autore della persona** che esegue:
 
-1.  Aprire la cartella **PersonMaker** e fare doppio clic sulla *soluzione PersonMaker* per aprirla con *Visual Studio* .
+1.  Aprire la cartella **PersonMaker** e fare doppio clic sulla *soluzione PersonMaker* per aprirla con *Visual Studio*.
 
 2.  Dopo aver aperto la *soluzione PersonMaker* , verificare che:
 
-    1. La *configurazione della soluzione* è impostata su **debug** .
+    1. La *configurazione della soluzione* è impostata su **debug**.
 
     2. La *piattaforma della soluzione* è impostata su **x86**
 
-    3. La *piattaforma di destinazione* è il **computer locale** .
+    3. La *piattaforma di destinazione* è il **computer locale**.
 
-    4.  Potrebbe anche essere necessario *ripristinare i pacchetti NuGet* facendo clic con il pulsante destro del mouse sulla *soluzione* e selezionando **Ripristina pacchetti NuGet** .
+    4.  Potrebbe anche essere necessario *ripristinare i pacchetti NuGet* facendo clic con il pulsante destro del mouse sulla *soluzione* e selezionando **Ripristina pacchetti NuGet**.
 
 3.  Fare clic su *computer locale* e l'applicazione viene avviata. Tenere presente che, su schermi più piccoli, tutto il contenuto potrebbe non essere visibile, anche se è possibile scorrere ulteriormente verso il basso per visualizzarlo.
 
     ![interfaccia utente di PERSON Maker](images/AzureLabs-Lab4-07.png)
 
-4.  Inserire la **chiave di autenticazione di Azure** , che dovrebbe essere disponibile, dal servizio *API viso* in Azure.
+4.  Inserire la **chiave di autenticazione di Azure**, che dovrebbe essere disponibile, dal servizio *API viso* in Azure.
 
 5.  Inserisci:
 
-    1. *ID* da assegnare al *gruppo person* . L'ID deve essere minuscolo, senza spazi. Prendere nota di questo ID, perché sarà necessario in un secondo momento nel progetto Unity.
+    1. *ID* da assegnare al *gruppo person*. L'ID deve essere minuscolo, senza spazi. Prendere nota di questo ID, perché sarà necessario in un secondo momento nel progetto Unity.
     2. *Nome* che si desidera assegnare al *gruppo person* (può contenere spazi).
 
 
@@ -211,7 +211,7 @@ Tenere presente che, per eseguire il training dell'app in modo che riconosca le 
 
 9.  Premere **Crea e Apri cartella** per aprire Esplora risorse e la cartella associata alla persona. Aggiungere le dieci (10) immagini nella cartella. Il formato del file deve essere *jpg* o *png* .
 
-10. Fare clic su **Invia ad Azure** . Un contatore indicherà lo stato dell'invio, seguito da un messaggio al termine dell'operazione.
+10. Fare clic su **Invia ad Azure**. Un contatore indicherà lo stato dell'invio, seguito da un messaggio al termine dell'operazione.
 
 11. Una volta completato il contatore e visualizzato un messaggio di conferma, fare clic su **Training** per eseguire il training del servizio.
 
@@ -221,19 +221,19 @@ Al termine del processo, si è pronti per passare a Unity.
 
 Di seguito è riportata una configurazione tipica per lo sviluppo con realtà mista e, di conseguenza, un modello valido per altri progetti.
 
-1.  Aprire *Unity* e fare clic su **New** . 
+1.  Aprire *Unity* e fare clic su **New**. 
 
     ![Avviare un nuovo progetto Unity.](images/AzureLabs-Lab4-08.png)
 
-2.  A questo punto sarà necessario specificare un nome di progetto Unity. Inserire **MR_FaceRecognition** . Verificare che il tipo di progetto sia impostato su **3D** . Impostare il **percorso** su un punto appropriato (ricordare che più vicino alle directory radice è migliore). Fare quindi clic su **Crea progetto** .
+2.  A questo punto sarà necessario specificare un nome di progetto Unity. Inserire **MR_FaceRecognition**. Verificare che il tipo di progetto sia impostato su **3D**. Impostare il **percorso** su un punto appropriato (ricordare che più vicino alle directory radice è migliore). Fare quindi clic su **Crea progetto**.
 
     ![Specificare i dettagli per il nuovo progetto Unity.](images/AzureLabs-Lab4-09.png)
 
-3.  Con Unity aperto, vale la pena controllare che l' **editor di script** predefinito sia impostato su **Visual Studio** . Passare a **Modifica preferenze >** e quindi dalla nuova finestra passare a **strumenti esterni** . Modificare l' **editor di script esterno** in **Visual Studio 2017** . Chiudere la finestra delle **Preferenze** .
+3.  Con Unity aperto, vale la pena controllare che l' **editor di script** predefinito sia impostato su **Visual Studio**. Passare a **Modifica preferenze >** e quindi dalla nuova finestra passare a **strumenti esterni**. Modificare l' **editor di script esterno** in **Visual Studio 2017**. Chiudere la finestra delle **Preferenze** .
 
     ![Aggiornare la preferenza dell'editor di script.](images/AzureLabs-Lab4-10.png)
 
-4.  Passare quindi a **File > impostazioni di compilazione** e impostare la piattaforma su **piattaforma UWP (Universal Windows Platform)** , facendo clic sul pulsante **Switch Platform** .
+4.  Passare quindi a **File > impostazioni di compilazione** e impostare la piattaforma su **piattaforma UWP (Universal Windows Platform)**, facendo clic sul pulsante **Switch Platform** .
 
     ![Finestra impostazioni di compilazione, passa alla piattaforma UWP.](images/AzureLabs-Lab4-11.png)
 
@@ -241,7 +241,7 @@ Di seguito è riportata una configurazione tipica per lo sviluppo con realtà mi
 
     1. Il **dispositivo di destinazione** è impostato su **HoloLens**
 
-        > Per gli auricolari immersivi, impostare **dispositivo di destinazione** su *qualsiasi dispositivo* .
+        > Per gli auricolari immersivi, impostare **dispositivo di destinazione** su *qualsiasi dispositivo*.
 
     2. Il **tipo di compilazione** è impostato su **D3D**
     3. **SDK** è impostato sull' **ultima versione installata**
@@ -249,19 +249,19 @@ Di seguito è riportata una configurazione tipica per lo sviluppo con realtà mi
     5. **Compilazione ed esecuzione** è impostato su **computer locale**
     6. Salvare la scena e aggiungerla alla compilazione. 
 
-        1. A tale scopo, selezionare **Aggiungi scene aperte** . Verrà visualizzata una finestra Salva.
+        1. A tale scopo, selezionare **Aggiungi scene aperte**. Verrà visualizzata una finestra Salva.
 
             ![Fare clic sul pulsante Aggiungi scene aperte](images/AzureLabs-Lab4-12.png)
 
-        2. Selezionare il pulsante **nuova cartella** per creare una nuova cartella, denominarla **Scenes** .
+        2. Selezionare il pulsante **nuova cartella** per creare una nuova cartella, denominarla **Scenes**.
 
             ![Crea nuova cartella script](images/AzureLabs-Lab4-13.png)
 
-        3. Aprire la cartella **Scenes** appena creata e quindi nel campo **nome file** : testo digitare **FaceRecScene** e quindi fare clic su **Salva** .
+        3. Aprire la cartella **Scenes** appena creata e quindi nel campo **nome file**: testo digitare **FaceRecScene** e quindi fare clic su **Salva**.
 
             ![Assegnare un nome alla nuova scena.](images/AzureLabs-Lab4-14.png)
 
-    7. Le impostazioni rimanenti, nelle *impostazioni di compilazione* , devono essere lasciate come predefinite per il momento.
+    7. Le impostazioni rimanenti, nelle *impostazioni di compilazione*, devono essere lasciate come predefinite per il momento.
 
 6. Nella finestra *impostazioni di compilazione* fare clic sul pulsante **Impostazioni lettore** . verrà aperto il pannello correlato nello spazio in cui si trova il *controllo* . 
 
@@ -277,29 +277,29 @@ Di seguito è riportata una configurazione tipica per lo sviluppo con realtà mi
 
             ![Aggiornare altre impostazioni.](images/AzureLabs-Lab4-16.png)
       
-    2. Nella scheda **impostazioni di pubblicazione** , in **funzionalità** , selezionare:
+    2. Nella scheda **impostazioni di pubblicazione** , in **funzionalità**, selezionare:
 
         - **InternetClient**
         - **Webcam**
 
             ![Aggiornamento delle impostazioni di pubblicazione.](images/AzureLabs-Lab4-17.png)
 
-    3. Nella parte inferiore del pannello, **nelle impostazioni di XR** (disponibili sotto **le impostazioni di pubblicazione** ), verificare la **realtà virtuale supportata** , verificare che sia stato aggiunto **Windows Mixed Reality SDK** .
+    3. Nella parte inferiore del pannello, **nelle impostazioni di XR** (disponibili sotto **le impostazioni di pubblicazione**), verificare la **realtà virtuale supportata**, verificare che sia stato aggiunto **Windows Mixed Reality SDK** .
 
         ![Aggiornare le impostazioni X R.](images/AzureLabs-Lab4-18.png)
 
-8.  Nelle *impostazioni di compilazione* , i **progetti C# Unity** non sono più disattivati; Selezionare la casella di controllo accanto a questo. 
+8.  Nelle *impostazioni di compilazione*, i **progetti C# Unity** non sono più disattivati; Selezionare la casella di controllo accanto a questo. 
 9.  Chiudere la finestra Build Settings (Impostazioni di compilazione).
-10. Salvare la scena e il progetto ( **file > Salva scena/file > Salva progetto** ).
+10. Salvare la scena e il progetto (**file > Salva scena/file > Salva progetto**).
 
 ## <a name="chapter-4---main-camera-setup"></a>Capitolo 4-configurazione della fotocamera principale
 
 > [!IMPORTANT]
-> Se si desidera ignorare il componente di *configurazione di Unity* di questo corso e continuare direttamente con il codice, è possibile [scaricare questo. file unitypackage Tools](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20304%20-%20Face%20recognition/Azure-MR-304.unitypackage)e importarlo nel progetto come [pacchetto personalizzato](https://docs.unity3d.com/Manual/AssetPackages.html). Tenere presente che questo pacchetto include anche l'importazione della *dll Newtonsoft* , illustrata nel [capitolo 5](#chapter-5--import-the-newtonsoftjson-library). Con questa importazione, è possibile continuare dal [capitolo 6](#chapter-6---create-the-faceanalysis-class).
+> Se si desidera ignorare il componente di *configurazione di Unity* di questo corso e continuare direttamente con il codice, è possibile [scaricare questo. file unitypackage Tools](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20304%20-%20Face%20recognition/Azure-MR-304.unitypackage)e importarlo nel progetto come [pacchetto personalizzato](https://docs.unity3d.com/Manual/AssetPackages.html). Tenere presente che questo pacchetto include anche l'importazione della *dll Newtonsoft*, illustrata nel [capitolo 5](#chapter-5--import-the-newtonsoftjson-library). Con questa importazione, è possibile continuare dal [capitolo 6](#chapter-6---create-the-faceanalysis-class).
 
-1.  Nel pannello *gerarchia* selezionare la **fotocamera principale** .
+1.  Nel pannello *gerarchia* selezionare la **fotocamera principale**.
 
-2.  Una volta selezionato, sarà possibile visualizzare tutti i componenti della **fotocamera principale** nel *Pannello di controllo* .
+2.  Una volta selezionato, sarà possibile visualizzare tutti i componenti della **fotocamera principale** nel *Pannello di controllo*.
 
     1. L' **oggetto fotocamera** deve essere denominato **Main camera** (nota l'ortografia).
 
@@ -323,12 +323,12 @@ Per semplificare la deserializzazione e la serializzazione degli oggetti ricevut
 Per importare la libreria:
 
 1.  Scaricare il pacchetto Unity.
-2.  Fare clic su **Asset** , **Importa pacchetto** , **pacchetto personalizzato** .
+2.  Fare clic su **Asset**, **Importa pacchetto**, **pacchetto personalizzato**.
 
     ![Importa Newtonsoft.Js](images/AzureLabs-Lab4-20.png)
 
 3.  Cercare il pacchetto Unity scaricato e fare clic su Apri.
-4.  Verificare che tutti i componenti del pacchetto siano stati sottoselezionati e fare clic su **Importa** .
+4.  Verificare che tutti i componenti del pacchetto siano stati sottoselezionati e fare clic su **Importa**.
 
     ![Importare la Newtonsoft.Jsnegli asset](images/AzureLabs-Lab4-21.png)
 
@@ -341,12 +341,12 @@ Lo scopo della classe FaceAnalysis è di ospitare i metodi necessari per comunic
 
 Per creare la classe *FaceAnalysis* :
 
- 1. Fare clic con il pulsante destro del mouse sulla *cartella assets* nel pannello Project, quindi scegliere **Crea**  >  **cartella** . Chiamare gli **script** della cartella. 
+ 1. Fare clic con il pulsante destro del mouse sulla *cartella assets* nel pannello Project, quindi scegliere **Crea**  >  **cartella**. Chiamare gli **script** della cartella. 
 
     ![Creare la classe FaceAnalysis.](images/AzureLabs-Lab4-22.png)
 
 2.  Fare doppio clic sulla cartella appena creata per aprirla. 
-3.  Fare clic con il pulsante destro del mouse all'interno della cartella, quindi fare clic su **Crea**  >  **script C#** . Chiamare lo script *FaceAnalysis* . 
+3.  Fare clic con il pulsante destro del mouse all'interno della cartella, quindi fare clic su **Crea**  >  **script C#**. Chiamare lo script *FaceAnalysis*. 
 4.  Fare doppio clic sul nuovo script *FaceAnalysis* per aprirlo con Visual Studio 2017.
 5.  Immettere gli spazi dei nomi seguenti sopra la classe *FaceAnalysis* :
 
@@ -638,7 +638,7 @@ Per creare la classe *FaceAnalysis* :
     ```
 
 14.  Ricordarsi di **salvare** le modifiche prima di tornare all'editor di Unity.
-15.  Nell'editor di Unity trascinare lo script FaceAnalysis dalla cartella Scripts nel pannello del progetto all'oggetto fotocamera principale nel *Pannello gerarchia* . Il nuovo componente script verrà aggiunto alla fotocamera principale. 
+15.  Nell'editor di Unity trascinare lo script FaceAnalysis dalla cartella Scripts nel pannello del progetto all'oggetto fotocamera principale nel *Pannello gerarchia*. Il nuovo componente script verrà aggiunto alla fotocamera principale. 
 
 ![Inserire FaceAnalysis nella fotocamera principale](images/AzureLabs-Lab4-23.png)
 
@@ -649,7 +649,7 @@ Lo scopo della classe *ImageCapture* è di ospitare i metodi necessari per comun
 
 Per creare la classe *ImageCapture* :
  
-1.  Fare clic con il pulsante destro del mouse all'interno della cartella **script** creata in precedenza, quindi fare clic su **Crea** , **script C#** . Chiamare lo script *ImageCapture* . 
+1.  Fare clic con il pulsante destro del mouse all'interno della cartella **script** creata in precedenza, quindi fare clic su **Crea**, **script C#**. Chiamare lo script *ImageCapture*. 
 2.  Fare doppio clic sul nuovo script *ImageCapture* per aprirlo con Visual Studio 2017.
 3.  Immettere gli spazi dei nomi seguenti sopra la classe ImageCapture:
 
@@ -818,17 +818,17 @@ Per avviare il processo di compilazione:
 
 Per eseguire la distribuzione in HoloLens:
 
-1.  È necessario l'indirizzo IP del HoloLens (per la distribuzione remota) e per assicurarsi che il HoloLens sia in **modalità sviluppatore** . Per eseguire questa operazione:
+1.  È necessario l'indirizzo IP del HoloLens (per la distribuzione remota) e per assicurarsi che il HoloLens sia in **modalità sviluppatore**. Per eseguire questa operazione:
 
-    1. Quando si indossa il HoloLens, aprire le **Impostazioni** .
-    2. Passare a **rete & Internet > opzioni avanzate Wi-Fi >**
+    1. Quando si indossa il HoloLens, aprire le **Impostazioni**.
+    2. Passare a **rete & Internet > Wi-Fi > opzioni avanzate**
     3. Prendere nota dell'indirizzo **IPv4** .
-    4. Quindi, tornare a **Settings (impostazioni** ) e quindi **aggiornare & Security > per gli sviluppatori** 
+    4. Quindi, tornare a **Settings (impostazioni**) e quindi **aggiornare & Security > per gli sviluppatori** 
     5. Impostare la modalità di sviluppo su.
 
-2.  Passare alla nuova compilazione Unity (cartella *app* ) e aprire il file della soluzione con *Visual Studio* .
-3.  Nella configurazione della soluzione selezionare **debug** .
-4.  Nella piattaforma soluzione selezionare **x86** , **computer remoto** . 
+2.  Passare alla nuova compilazione Unity (cartella *app* ) e aprire il file della soluzione con *Visual Studio*.
+3.  Nella configurazione della soluzione selezionare **debug**.
+4.  Nella piattaforma soluzione selezionare **x86**, **computer remoto**. 
 
     ![Modificare la configurazione della soluzione](images/AzureLabs-Lab4-26.png)
  
@@ -836,13 +836,13 @@ Per eseguire la distribuzione in HoloLens:
 6.  L'app verrà visualizzata nell'elenco delle app installate nella HoloLens, pronta per l'avvio.
 
 > [!NOTE]
-> Per eseguire la distribuzione in un dispositivo headset immersivo, impostare la **piattaforma della soluzione** su *computer locale* e impostare la **configurazione** su *debug* , con *x86* come **piattaforma** . Quindi eseguire la distribuzione nel computer locale, usando il **menu Compila** , selezionando *Distribuisci soluzione* . 
+> Per eseguire la distribuzione in un dispositivo headset immersivo, impostare la **piattaforma della soluzione** su *computer locale* e impostare la **configurazione** su *debug*, con *x86* come **piattaforma**. Quindi eseguire la distribuzione nel computer locale, usando il **menu Compila**, selezionando *Distribuisci soluzione*. 
 
 
 ## <a name="chapter-10---using-the-application"></a>Capitolo 10-uso dell'applicazione
 
 1.  Quando si usa il HoloLens, avviare l'app.
-2.  Esaminare la persona registrata con il *API viso* . Assicurarsi che:
+2.  Esaminare la persona registrata con il *API viso*. Assicurarsi che:
 
     -  Il volto della persona non è troppo distante e chiaramente visibile
     -  L'illuminazione dell'ambiente non è troppo scura
@@ -858,7 +858,7 @@ Congratulazioni, è stata creata un'app per realtà mista che sfrutta il servizi
 
 ![risultato del completamento del corso](images/AzureLabs-Lab4-00.png)
 
-## <a name="bonus-exercises"></a>Esercizi bonus
+## <a name="bonus-exercises"></a>Esercizi aggiuntivi
 
 ### <a name="exercise-1"></a>Esercizio 1
 

@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Realtà mista di Windows, verifica della mano, Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, sviluppo di giochi
-ms.openlocfilehash: 5bc120f802c2160282befd1ce6cb8025be21cbaa
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista di Windows, Tracking manuale, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, sviluppo di giochi, cuffie per realtà mista, cuffia a realtà mista di Windows, headset di realtà virtuale
+ms.openlocfilehash: 0a16a0291261277cb09e736e60b25f8ba71382e3
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683081"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679210"
 ---
 # <a name="hand-tracking-in-unreal"></a>Tracciamento mano in Unreal
 
@@ -68,7 +68,7 @@ enum class EWMRHandKeypoint : uint8
  
 ### <a name="supporting-hand-tracking"></a>Supporto del rilevamento della mano
 
-È possibile usare il rilevamento manuale nei progetti, aggiungendo supporto per il **rilevamento** manuale **> realtà mista di Windows** :
+È possibile usare il rilevamento manuale nei progetti, aggiungendo supporto per il **rilevamento** manuale **> realtà mista di Windows**:
 
 ![Verifica della mano BP](images/unreal/hand-tracking-bp.png)
 
@@ -115,7 +115,7 @@ Dopo aver abilitato l'origine e aperto un asset di animazione, espandere la sezi
 
 ![Animazione collegamento dinamico](images/unreal/live-link-animation.png)
  
-La gerarchia di animazione della mano è identica a quella di `EWMRHandKeypoint` . L'animazione può essere ridestinata usando **WindowsMixedRealityHandTrackingLiveLinkRemapAsset** :
+La gerarchia di animazione della mano è identica a quella di `EWMRHandKeypoint` . L'animazione può essere ridestinata usando **WindowsMixedRealityHandTrackingLiveLinkRemapAsset**:
 
 ![Animazione collegamento dinamico 2](images/unreal/live-link-animation2.png)
  
@@ -128,7 +128,7 @@ Può anche essere sottoclassato nell'Editor:
 ![Mesh mano](images/unreal/hand-mesh.png)
 
 Prima di poter accedere ai dati della mesh a mano, è necessario:
-- Selezionare l'asset **ARSessionConfig** , espandere impostazioni **AR-> Impostazioni mapping del mondo** e selezionare **genera dati mesh da geometria rilevata** . 
+- Selezionare l'asset **ARSessionConfig** , espandere impostazioni **AR-> Impostazioni mapping del mondo** e selezionare **genera dati mesh da geometria rilevata**. 
 
 Di seguito sono riportati i parametri di mesh predefiniti:
 
@@ -196,14 +196,14 @@ Per lavorare con le mesh mano nei progetti:
 
 È importante ricordare che, poiché i risultati di tutte le funzioni cambiano ogni frame, sono tutti resi richiamabili. Per ulteriori informazioni sulle funzioni pure e non pure o chiamabili, vedere il progetto GUID utente sulle [funzioni](https://docs.unrealengine.com/en-US/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure)
 
-Per utilizzare i raggi mano nei progetti, cercare le azioni in **HMD realtà mista di Windows** :
+Per utilizzare i raggi mano nei progetti, cercare le azioni in **HMD realtà mista di Windows**:
 
 ![Raggi mano BP](images/unreal/hand-rays-bp.png)
  
 Per accedere ad essi in C++, includere nella `WindowsMixedRealityFunctionLibrary.h` parte superiore del file di codice chiamante.
 
 ### <a name="enum"></a>Enumerazione
-È anche possibile accedere ai case di input in **EHMDInputControllerButtons** , che possono essere usati nei progetti:
+È anche possibile accedere ai case di input in **EHMDInputControllerButtons**, che possono essere usati nei progetti:
 
 ![Pulsanti del controller di input](images/unreal/input-controller-buttons.png)
 
@@ -405,9 +405,9 @@ const FKey FSpatialInputKeys::RightNavigationYGesture(RightNavigationYGestureNam
 const FKey FSpatialInputKeys::RightNavigationZGesture(RightNavigationZGestureName);
 ```
 
-## <a name="next-development-checkpoint"></a>Checkpoint di sviluppo successivo
+## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si segue il percorso di checkpoint dello sviluppo non reale, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo: 
+Se si segue il percorso di checkpoint per lo sviluppo con Unreal che è stato delineato, si stanno esplorando i blocchi predefiniti fondamentali di MRTK. Da qui è possibile passare al blocco predefinito successivo: 
 
 > [!div class="nextstepaction"]
 > [Ancoraggi nello spazio locali](unreal-spatial-anchors.md)
@@ -417,4 +417,4 @@ In alternativa, passare alle API e alle funzionalità della piattaforma di realt
 > [!div class="nextstepaction"]
 > [Fotocamera HoloLens](unreal-hololens-camera.md)
 
-È sempre possibile tornare ai checkpoint di [sviluppo non reali](unreal-development-overview.md#2-core-building-blocks) in qualsiasi momento.
+È sempre possibile tornare ai [checkpoint per lo sviluppo con Unreal](unreal-development-overview.md#2-core-building-blocks) in qualsiasi momento.

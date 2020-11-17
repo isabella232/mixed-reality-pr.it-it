@@ -5,13 +5,13 @@ author: JBrentJ
 ms.author: alexturn
 ms.date: 07/07/2020
 ms.topic: article
-keywords: Port, porting, Unity, middleware, Engine, UWP, Win32
-ms.openlocfilehash: 9822976ab7dac9ae7567e5f38ca44ceee646d098
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: porta, Unity, Unreal, middleware, motore, UWP, Win32, porting, HoloLens 1st Gen, auricolare realtà mista, cuffia a realtà mista di Windows, migrazione, Windows 10, mapping di input,
+ms.openlocfilehash: 18129151b1e3d11f9e9c7bb3c3420c23b5fd1dd0
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638544"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677730"
 ---
 # <a name="porting-guides"></a>Guide alla conversione
 
@@ -23,7 +23,7 @@ A livello generale, sono necessari i passaggi seguenti per trasferire il contenu
 1. **Verificare che il PC esegua Windows 10 Fall Creators Update (16299).** Non è più consigliabile ricevere le build di anteprima dall'anello Insider Skip Ahead, perché tali Build non saranno le più stabili per lo sviluppo di realtà miste.
 2. **Eseguire l'aggiornamento alla versione più recente della grafica o del motore di gioco.** I motori di gioco dovranno supportare Windows 10 SDK versione 10.0.15063.0 (rilasciato ad aprile 2017) o versione successiva.
 3. **Aggiornare tutti i middleware, i plug-in o i componenti.** Se l'app contiene componenti, è consigliabile eseguire l'aggiornamento alla versione più recente.
-4. **Rimuovere le dipendenze da SDK duplicati** . A seconda del dispositivo a cui è destinato il contenuto, è necessario rimuovere o compilarlo in modo condizionale (ad esempio, SteamVR) in modo da poter utilizzare le API di Windows.
+4. **Rimuovere le dipendenze da SDK duplicati**. A seconda del dispositivo a cui è destinato il contenuto, è necessario rimuovere o compilarlo in modo condizionale (ad esempio, SteamVR) in modo da poter utilizzare le API di Windows.
 5. **Risolvere i problemi di compilazione.** A questo punto, l'esercizio di porting è specifico per l'app, il motore e le dipendenze dei componenti.
 
 ## <a name="common-porting-steps"></a>Passaggi comuni di porting

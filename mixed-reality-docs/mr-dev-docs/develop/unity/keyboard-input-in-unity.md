@@ -5,18 +5,18 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: tastiera, input, Unity, touchscreenkeyboard
-ms.openlocfilehash: 806051a4ea429a058b271a55d7f5fc41503e346b
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+keywords: tastiera, input, Unity, touchscreenkeyboard, cuffie per realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
+ms.openlocfilehash: aa9bb3059a8d0cc5b829bf14d92928511259b7f9
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293143"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677420"
 ---
 # <a name="keyboard-input-in-unity"></a>Input da tastiera in Unity
 
 **Spazio dei nomi:** *UnityEngine*<br>
- **Tipo**: * [TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)*
+ **Tipo**: *[TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)*
 
 Sebbene HoloLens supporti molte forme di input, incluse le tastiere Bluetooth, la maggior parte delle applicazioni non può presupporre che tutti gli utenti dispongano di una tastiera fisica disponibile. Se l'applicazione richiede un input di testo, è necessario specificare una qualsiasi forma di tastiera sullo schermo.
 
@@ -48,7 +48,7 @@ Sono disponibili sei diverse visualizzazioni tastiera:
 
 La tastiera di sistema HoloLens è disponibile solo per le applicazioni Unity esportate con il "tipo di compilazione UWP" impostato su "XAML". Quando si sceglie "XAML" come "tipo di compilazione UWP" su "D3D", si verificano compromessi. Se non si ha familiarità con questi compromessi, può essere utile esplorare una [soluzione di input alternativa](#alternative-keyboard-options) alla tastiera di sistema.
 1. Aprire il menu **file** e selezionare **impostazioni di compilazione...**
-2. Verificare che **la piattaforma** sia impostata su **Windows Store**, che l' **SDK** sia impostato su **Universal 10**e impostare il **tipo di compilazione UWP** su **XAML**.
+2. Verificare che **la piattaforma** sia impostata su **Windows Store**, che l' **SDK** sia impostato su **Universal 10** e impostare il **tipo di compilazione UWP** su **XAML**.
 3. Nella finestra di dialogo **impostazioni di compilazione** fare clic sul pulsante **Impostazioni lettore...**
 4. Selezionare la scheda **impostazioni per Windows Store**
 5. Espandi il gruppo **altre impostazioni**

@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: realtà mista, sguardo fisso, selezione della destinazione con lo sguardo, interazione, progettazione, a portata di mano, HoloLens
-ms.openlocfilehash: 18e2a6128a5fa07fe2ddcd3c0eab192ccdedb4b4
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 8141bc588247be15174d4a85992b74911ffc002e
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698284"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631539"
 ---
 # <a name="direct-manipulation-with-hands"></a>Manipolazione diretta con le mani
 
@@ -34,7 +34,7 @@ La manipolazione diretta è basata sull'invito, ovvero è facile da usare. Non e
 <tr>
      <td><strong>Modello di input</strong></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (prima generazione)</strong></a></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
      <td><a href="https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details"><strong>Visori VR immersive</strong></a></td>
 </tr>
 <tr>
@@ -259,7 +259,7 @@ Permette di manipolare l'oggetto 3D tramite un cubo di delimitazione e gli invit
 
 Non è associato alcun invito al cubo di delimitazione. Gli utenti possono solo visualizzare il cubo di delimitazione e quindi interagire direttamente con esso. Se il cubo di delimitazione viene afferrato con una mano, lo spostamento e la rotazione dell'oggetto sono associati al movimento e all'orientamento della mano. Quando l'oggetto viene afferrato con due mani, gli utenti possono spostarlo, ridimensionarlo e ruotarlo in base al relativi movimenti delle mani.
 
-Una manipolazione specifica richiede precisione. È consigliabile usare la **manipolazione basata sugli inviti** , poiché offre un elevato livello di granularità. Per una manipolazione flessibile, è consigliabile usare la **manipolazione non basata sugli inviti** , perché trasmette esperienze immediate e divertenti.
+Una manipolazione specifica richiede precisione. È consigliabile usare la **manipolazione basata sugli inviti**, poiché offre un elevato livello di granularità. Per una manipolazione flessibile, è consigliabile usare la **manipolazione non basata sugli inviti**, perché trasmette esperienze immediate e divertenti.
 
 <br>
 
@@ -307,18 +307,18 @@ Avrai notato che sono presenti simmetrie di interazione che è possibile traccia
 
 La manipolazione diretta può essere fantastica se funziona come previsto. Ma può anche diventare frustrante se non riesci a spostare la mano in una direzione qualunque senza attivare involontariamente un ologramma. Il tracciamento oculare aiuta a identificare meglio l'intenzione dell'utente.
 
-* **Quando** : per ridurre l'attivazione involontaria di una risposta di manipolazione. Il tracciamento oculare consente di comprendere meglio l'attività in cui è attualmente impegnato un utente.
+* **Quando**: per ridurre l'attivazione involontaria di una risposta di manipolazione. Il tracciamento oculare consente di comprendere meglio l'attività in cui è attualmente impegnato un utente.
 Supponi ad esempio di essere impegnato nella lettura di un testo olografico (istruzioni) e di sporgerti per afferrare uno strumento di lavoro del mondo reale.
 
 In questo modo sposti accidentalmente la mano su alcuni pulsanti olografici interattivi che non avevi notato prima (forse erano fuori del campo visivo).
 
   In breve: se l'utente non ha guardato un ologramma per un periodo di tempo ma è stato rilevato un evento di tocco o cattura, è probabile che l'utente non intendesse in realtà interagire con l'ologramma.
 
-* **Quale** :  oltre alla gestione delle attivazioni false positive, un altro esempio include una migliore identificazione degli ologrammi da afferrare o toccare dal momento che il punto di intersezione preciso potrebbe non essere chiaro dalla tua prospettiva, soprattutto in presenza di più ologrammi ravvicinati.
+* **Quale**:  oltre alla gestione delle attivazioni false positive, un altro esempio include una migliore identificazione degli ologrammi da afferrare o toccare dal momento che il punto di intersezione preciso potrebbe non essere chiaro dalla tua prospettiva, soprattutto in presenza di più ologrammi ravvicinati.
 
   Anche se il tracciamento oculare in HoloLens 2 presenta limiti sull'accuratezza di determinazione dello sguardo, questa funzionalità può comunque essere molto utile per le interazioni da vicino a causa della disparità di profondità durante l'interazione con l'input mano. Ciò significa che talvolta è difficile determinare se la mano si trova dietro o davanti a un ologramma, ad esempio per afferrare con precisione un widget di manipolazione.
 
-* **Dove** : usa le informazioni su ciò che l'utente sta guardando con movimenti di lancio rapido. Afferra un ologramma e scaglialo verso la destinazione prevista.  
+* **Dove**: usa le informazioni su ciò che l'utente sta guardando con movimenti di lancio rapido. Afferra un ologramma e scaglialo verso la destinazione prevista.  
 
     Anche se questa soluzione a volte funziona correttamente, l'esecuzione di movimenti della mano può avere come risultato delle destinazioni estremamente imprecise. Il tracciamento oculare tuttavia può migliorare l'accuratezza del movimento.
 
@@ -327,7 +327,7 @@ In questo modo sposti accidentalmente la mano su alcuni pulsanti olografici inte
 ---
 
 ## <a name="manipulation-in-mrtk-mixed-reality-toolkit-for-unity"></a>Manipolazione in MRTK (Mixed Reality Toolkit) per Unity
-Con **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** è possibile ottenere facilmente un comportamento di manipolazione comune usando lo script **ObjectManipulator** . ObjectManipulator consente di afferrare e spostare gli oggetti direttamente con le mani o con il raggio della mano. Supporta anche la manipolazione a due mani per il ridimensionamento e la rotazione di un oggetto.
+Con **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** è possibile ottenere facilmente un comportamento di manipolazione comune usando lo script **ObjectManipulator**. ObjectManipulator consente di afferrare e spostare gli oggetti direttamente con le mani o con il raggio della mano. Supporta anche la manipolazione a due mani per il ridimensionamento e la rotazione di un oggetto.
 
 * [MRTK - Manipolazione](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html)
 

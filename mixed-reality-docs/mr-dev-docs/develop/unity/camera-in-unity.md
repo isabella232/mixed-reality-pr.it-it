@@ -5,13 +5,13 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, rendering olografico, olografico, immersivo, punto di messa a fuoco, buffer di profondità, solo orientamento, posizionale, opaco, trasparente, clip
-ms.openlocfilehash: 7e606232f626c64407ced75481deb3055326f760
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, rendering olografico, olografico, immersivo, punto di messa a fuoco, buffer di profondità, solo orientamento, posizionale, opaco, trasparente, clip, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
+ms.openlocfilehash: c3c470634e2c5c9445ae8c0a29621971de22a92b
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683176"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677620"
 ---
 # <a name="camera-in-unity"></a>Fotocamera in Unity
 
@@ -28,7 +28,7 @@ Tuttavia, per ottimizzare completamente la qualità visiva e la [stabilità dell
 
 Le impostazioni predefinite nel componente della fotocamera Unity sono per le applicazioni 3D tradizionali che necessitano di uno sfondo simile a skybox, perché non hanno un mondo reale.
 
-* Quando si esegue un' **[auricolare immersiva](../../discover/immersive-headset-hardware-details.md)** , si esegue il rendering di tutti gli elementi che l'utente vede, quindi è probabile che si desideri proteggere skybox.
+* Quando si esegue un' **[auricolare immersiva](../../discover/immersive-headset-hardware-details.md)**, si esegue il rendering di tutti gli elementi che l'utente vede, quindi è probabile che si desideri proteggere skybox.
 * Tuttavia, quando si esegue un **auricolare olografico** come [HoloLens](../../hololens-hardware-details.md), il mondo reale dovrebbe apparire dietro tutto il rendering della fotocamera. A tale scopo, impostare lo sfondo della fotocamera come trasparente (in HoloLens, il nero viene visualizzato come trasparente) invece di una trama skybox:
     1. Selezionare la fotocamera principale nel pannello gerarchia
     2. Nel pannello Inspector trovare il componente della fotocamera e modificare l'elenco a discesa Clear Flags da skybox a Solid Color.
@@ -81,7 +81,7 @@ La condivisione del buffer di profondità dell'app in Windows ogni frame offrir�
 
 Per specificare se l'app Unity fornirà un buffer di profondità a Windows:
 
-1. Passare a **Edit**  >  **Project Settings**  >  **Player**  >  **piattaforma UWP (Universal Windows Platform) Tab**  >  **XR Settings** .
+1. Passare a **Edit**  >  **Project Settings**  >  **Player**  >  **piattaforma UWP (Universal Windows Platform) Tab**  >  **XR Settings**.
 2. Espandere l'elemento **SDK di realtà mista di Windows** .
 3. Selezionare o deselezionare la casella di controllo **Abilita condivisione buffer di profondità** .  Questa opzione verrà controllata per impostazione predefinita nei nuovi progetti creati poiché questa funzionalità è stata aggiunta a Unity e verrà deselezionata per impostazione predefinita per i progetti precedenti aggiornati.
 
@@ -91,19 +91,19 @@ Fornire un buffer di profondità a Windows può migliorare la qualità visiva, p
 
 Seguire la Guida [dettagliata](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) per aggiungere Mixed Reality toolkit V2 al progetto Unity e il progetto verrà configurato automaticamente. È anche possibile configurare manualmente il progetto senza MRTK con la guida nella sezione seguente.
 
-## <a name="next-development-checkpoint"></a>Checkpoint di sviluppo successivo
+## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di checkpoint per lo sviluppo di Unity, è possibile esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo:
+Se si sta seguendo il percorso di checkpoint per lo sviluppo con Unity che abbiamo delineato, si stanno esplorando i blocchi predefiniti fondamentali in MRTK. Da qui è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Sguardo fisso](gaze-in-unity.md)
 
-In alternativa, passare alle API e alle funzionalità della piattaforma di realtà mista:
+In alternativa, passare alle API e funzionalità della piattaforma di realtà mista:
 
 > [!div class="nextstepaction"]
 > [Esperienze condivise](shared-experiences-in-unity.md)
 
-È sempre possibile tornare ai checkpoint per [lo sviluppo di Unity](unity-development-overview.md#2-core-building-blocks) in qualsiasi momento.
+È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](unity-development-overview.md#2-core-building-blocks) in qualsiasi momento.
 
 ## <a name="see-also"></a>Vedere anche
 

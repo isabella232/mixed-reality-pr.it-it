@@ -5,13 +5,13 @@ author: markkeinz
 ms.author: makei
 ms.date: 10/29/2020
 ms.topic: article
-keywords: HoloLens, comunicazione remota, comunicazione remota olografica
-ms.openlocfilehash: fcacac76e65fa884433afca9f568c5c0211dd570
-ms.sourcegitcommit: 979967d6841d8fa64cf1d6cf3ae532b736ed3bd1
+keywords: HoloLens, comunicazione remota, comunicazione remota olografica, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale, sicurezza, autenticazione, da server a client
+ms.openlocfilehash: 4004c7534092c73fe478130b9d957461bb34bcfa
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102300"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679590"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Abilitazione della sicurezza della connessione per la comunicazione remota olografica
 

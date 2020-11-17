@@ -5,13 +5,13 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, mapping spaziale, renderer, Collider, mesh, analisi, componente
-ms.openlocfilehash: 15948870d3150614aefa071ce07cf51c29d284fc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, mapping spaziale, renderer, Collider, mesh, analisi, componente, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare realtà virtuale, MRTK, Toolkit realtà mista
+ms.openlocfilehash: 60196a85689ce6c4c190acdfe305fc12982ace4c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690068"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677400"
 ---
 # <a name="spatial-mapping-in-unity"></a>Mapping spaziale in Unity
 
@@ -64,7 +64,7 @@ Il mapping spaziale richiede anche un MaxVersionTested di almeno 10.0.10586.0:
 
 ## <a name="getting-started-with-unitys-built-in-spatial-mapping-components"></a>Introduzione ai componenti di mapping spaziale incorporati di Unity
 
-Unity offre 2 componenti per aggiungere facilmente il mapping spaziale all'app, al **renderer di mapping spaziale** e al **mapping spaziale** .
+Unity offre 2 componenti per aggiungere facilmente il mapping spaziale all'app, al **renderer di mapping spaziale** e al **mapping spaziale**.
 
 ### <a name="spatial-mapping-renderer"></a>Renderer mapping spaziale
 
@@ -84,13 +84,13 @@ Il mapping spaziale Collider consente l'interazione di contenuto (o carattere) o
 
 Per usare questi due componenti nell'app Unity:
 1. Selezionare un GameObject al centro dell'area in cui si desidera rilevare le mesh della superficie spaziale.
-2. Nella finestra di controllo **aggiungere Component**  >  **XR**  >  **Spatial mapping Spatial**   o renderer di **mapping spaziale** .
+2. Nella finestra di controllo **aggiungere Component**  >  **XR**  >  **Spatial mapping Spatial** o renderer di **mapping spaziale**.
 
 Per altre informazioni su come usare questi componenti, vedere il sito della <a href="https://docs.unity3d.com/Manual/SpatialMappingComponents.html" target="_blank">documentazione di Unity</a>.
 
 ### <a name="going-beyond-the-built-in-spatial-mapping-components"></a>Superamento dei componenti predefiniti di mapping spaziale
 
-Questi componenti rendono semplice il trascinamento della selezione per iniziare a usare il mapping spaziale. Quando si vuole proseguire, è possibile esplorare due percorsi principali:
+Questi componenti rendono semplice il trascinamento della selezione per iniziare a usare il mapping spaziale.  Quando si vuole proseguire, è possibile esplorare due percorsi principali:
 * Per eseguire l'elaborazione della mesh di livello inferiore, vedere la sezione seguente sull'API script per il mapping spaziale di basso livello.
 * Per eseguire un'analisi della rete di livello superiore, vedere la sezione seguente sulla libreria SpatialUnderstanding in <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">MixedRealityToolkit</a>.
 
@@ -99,7 +99,7 @@ Questi componenti rendono semplice il trascinamento della selezione per iniziare
 Se è necessario un maggiore controllo di quanto si ottenga dal renderer di mapping spaziale e dai componenti Collider del mapping spaziale, è possibile usare le API script per il mapping spaziale di basso livello.
 
 **Spazio dei nomi:** *UnityEngine. XR. WSA*<br>
-**Tipi** : *SurfaceObserver* , *SurfaceChange* , *SurfaceData* , *SurfaceId*
+**Tipi**: *SurfaceObserver*, *SurfaceChange*, *SurfaceData*, *SurfaceId*
 
 Di seguito è riportato un contorno del flusso suggerito per un'applicazione che usa le API di mapping spaziale.
 
@@ -226,7 +226,7 @@ Tutto il codice sorgente è incluso, consentendo di personalizzarlo in base alle
 
 ### <a name="understanding-modules"></a>Informazioni sui moduli
 
-Sono disponibili tre interfacce primarie esposte dal modulo: topologia per query di superficie e spaziali semplici, forma per il rilevamento di oggetti e il Risolutore di posizionamento degli oggetti per il posizionamento basato sui vincoli dei set di oggetti. Ognuno di questi è descritto di seguito. Oltre alle tre interfacce del modulo principale, è possibile usare un'interfaccia di cast di tipo Ray per recuperare i tipi di superficie con tag ed è possibile copiare una mesh playspace stermetica personalizzata.
+Sono disponibili tre interfacce primarie esposte dal modulo: topologia per query di superficie e spaziali semplici, forma per il rilevamento di oggetti e il Risolutore di posizionamento degli oggetti per il posizionamento basato sui vincoli dei set di oggetti. Ogni modalità è illustrata di seguito. Oltre alle tre interfacce del modulo principale, è possibile usare un'interfaccia di cast di tipo Ray per recuperare i tipi di superficie con tag ed è possibile copiare una mesh playspace stermetica personalizzata.
 
 ### <a name="ray-casting"></a>Casting Ray
 
@@ -477,19 +477,19 @@ La dll informazioni archivia internamente il playspace come griglia di cubi voxe
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Mapping spaziale nel Toolkit per realtà mista
 Per altre informazioni sull'uso del mapping spaziale con Mixed Reality toolkit V2, vedere la <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html" target="_blank">sezione relativa alla conoscenza spaziale</a> della documentazione di MRTK.
 
-## <a name="next-development-checkpoint"></a>Checkpoint di sviluppo successivo
+## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di checkpoint per lo sviluppo di Unity, è possibile esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo: 
+Se si sta seguendo il percorso di checkpoint per lo sviluppo con Unity che abbiamo delineato, si stanno esplorando i blocchi predefiniti fondamentali in MRTK. Da qui è possibile passare al blocco predefinito successivo: 
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)
 
-In alternativa, passare alle API e alle funzionalità della piattaforma di realtà mista:
+In alternativa, passare alle API e funzionalità della piattaforma di realtà mista:
 
 > [!div class="nextstepaction"]
 > [Esperienze condivise](shared-experiences-in-unity.md)
 
-È sempre possibile tornare ai checkpoint per [lo sviluppo di Unity](unity-development-overview.md#2-core-building-blocks) in qualsiasi momento.
+È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](unity-development-overview.md#2-core-building-blocks) in qualsiasi momento.
 
 ## <a name="see-also"></a>Vedere anche
 * [Sistemi di coordinate](../../design/coordinate-systems.md)

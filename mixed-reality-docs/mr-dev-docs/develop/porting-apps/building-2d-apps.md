@@ -1,19 +1,19 @@
 ---
-title: Aggiornamento di app UWP 2D per la realtà mista
+title: Aggiornamento delle app UWP 2D per realtà mista
 description: Questo articolo illustra come aggiornare l'app di piattaforma UWP (Universal Windows Platform) 2D esistente per l'esecuzione in HoloLens e in Windows con cuffie immersive in realtà mista.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: app 2D, UWP, app Flat, HoloLens, auricolare immersivo, modello di app, pulsante indietro, barra delle applicazioni, dpi, risoluzione, scala
-ms.openlocfilehash: af262527c957dda57f0c8a3252a2f63207d6ca39
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: app 2D, UWP, app Flat, HoloLens, auricolare immersivo, modello di app, pulsante indietro, barra delle applicazioni, dpi, risoluzione, scalabilità, porting, HoloLens 1 gen, HoloLens 2, cuffia in realtà mista, cuffia a realtà mista di Windows, migrazione, Windows 10
+ms.openlocfilehash: 4103ee1e5a7169759dfd823b41b5e3fd18011956
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683405"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677800"
 ---
-# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>Aggiornamento di app UWP 2D per la realtà mista
+# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>Aggiornamento delle app UWP 2D per realtà mista
 
 La realtà mista di Windows consente a un utente di visualizzare gli ologrammi come se fossero più appropriati, nel mondo fisico o digitale. Al suo nucleo, sia HoloLens che i PC desktop a cui si alleghino gli accessori per auricolari immersivi sono dispositivi Windows 10. Ciò significa che è possibile eseguire quasi tutte le app piattaforma UWP (Universal Windows Platform) (UWP) nell'archivio come app 2D.
 
@@ -51,7 +51,7 @@ Se l'app 2D è stata distribuita nel computer desktop in cui si sta sviluppando 
 
 ## <a name="targeting-both-immersive-headsets-and-hololens"></a>Per gli auricolari immersivi e HoloLens
 
-Congratulazioni! L'app usa ora Windows 10 piattaforma UWP (Universal Windows Platform) (UWP).
+Congratulazioni. L'app usa ora Windows 10 piattaforma UWP (Universal Windows Platform) (UWP).
 
 L'app è ora in grado di essere eseguita sui dispositivi Windows odierni, ad esempio desktop, dispositivi mobili, Xbox, Windows Mixed Reality, cuffie immersive e HoloLens, nonché dispositivi Windows futuri. Tuttavia, per fare in modo che tutti questi dispositivi siano destinati a tutti i dispositivi, è necessario verificare che l'app sia destinata al gruppo di dispositivi Windows. universali.
 
@@ -69,16 +69,16 @@ Passiamo ora al manifesto di AppX per assicurarsi che l'app Windows 10 UWP possa
   ```
 * Salvare!
 
-Se non si usa Visual Studio per l'ambiente di sviluppo, è possibile aprire **AppXManifest.xml** nell'editor di testo di propria scelta per assicurarsi che la destinazione sia **Windows. Universal** *TargetDeviceFamily* .
+Se non si usa Visual Studio per l'ambiente di sviluppo, è possibile aprire **AppXManifest.xml** nell'editor di testo di propria scelta per assicurarsi che la destinazione sia **Windows. Universal** *TargetDeviceFamily*.
 
 ### <a name="run-in-the-hololens-emulator"></a>Esecuzione nell'emulatore di HoloLens
 
 Ora che l'app UWP è destinata a "Windows. Universal", è possibile compilare l'app ed eseguirla nell' [emulatore di HoloLens](../platform-capabilities-and-apis/using-the-hololens-emulator.md).
-* Assicurati avere [installato l'emulatore HoloLens](../install-the-tools.md).
+* Assicurati avere [installato l'emulatore HoloLens](../install-the-tools.md) .
 * In Visual Studio selezionare la configurazione della build **x86** per l'app
 
   ![Configurazione di build x86 in Visual Studio](../platform-capabilities-and-apis/images/x86setting.png)<br>
-* Selezionare **HoloLens Emulator** nel menu a discesa destinazione distribuzione
+* Seleziona **Emulatore HoloLens** nel menu a discesa delle destinazioni di distribuzione
 
   ![Emulatore di HoloLens nell'elenco delle destinazioni di distribuzione](images/deployemulator-500px.png)<br>
 * Selezionare **debug > avviare il debug** per distribuire l'app e avviare il debug.
@@ -98,7 +98,7 @@ Per raggiungere la fine di ciò che potrebbe causare l'avvio dell'app UWP in Hol
 ### <a name="running-your-uwp-app-in-the-debugger"></a>Esecuzione dell'app UWP nel debugger
 
 Questi passaggi consentono di eseguire il debug dell'app UWP usando il debugger di Visual Studio.
-* Se non è già stato fatto, aprire la soluzione in Visual Studio. Modificare la destinazione nell' **emulatore di HoloLens** e la configurazione della build in **x86** .
+* Se non è già stato fatto, aprire la soluzione in Visual Studio. Modificare la destinazione nell' **emulatore di HoloLens** e la configurazione della build in **x86**.
 * Selezionare **debug > avviare il debug** per distribuire l'app e avviare il debug.
 * Inserisci l'app in tutto il mondo con il mouse, la tastiera o il controller Xbox.
 * A questo punto, Visual Studio dovrebbe interrompersi nel codice dell'app.
@@ -116,7 +116,7 @@ Ora che l'app UWP è in esecuzione su auricolari immersivi e/o HoloLens come olo
 
 ![Dalla progettazione reattiva](images/scale-500px.png)
 
-Windows 10 sposta tutti i progetti visivi da pixel dello schermo reale a **effettivi pixel** . Ciò significa che gli sviluppatori progettano l'interfaccia utente seguendo le linee guida dell'interfaccia umana di Windows 10 per i pixel effettivi e il ridimensionamento di Windows assicura che i pixel effettivi siano le dimensioni corrette per l'usabilità tra dispositivi, soluzioni, DPI e così via. Per altre informazioni e per questa [presentazione di compilazione](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx), vedere la pagina [relativa alla lettura su MSDN](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx) .
+Windows 10 sposta tutti i progetti visivi da pixel dello schermo reale a **effettivi pixel**. Ciò significa che gli sviluppatori progettano l'interfaccia utente seguendo le linee guida dell'interfaccia umana di Windows 10 per i pixel effettivi e il ridimensionamento di Windows assicura che i pixel effettivi siano le dimensioni corrette per l'usabilità tra dispositivi, soluzioni, DPI e così via. Per altre informazioni e per questa [presentazione di compilazione](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx), vedere la pagina [relativa alla lettura su MSDN](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx) .
 
 Anche con la capacità univoca di collocare le app nel mondo a una gamma di distanze, sono consigliate le distanze di visualizzazione TV, per produrre la migliore leggibilità e l'interazione con lo sguardo o il movimento. Per questo motivo, una lavagna virtuale nella Home realtà mista visualizzerà la visualizzazione UWP piatta in:
 
@@ -147,7 +147,7 @@ le visualizzazioni 2D sono decorate con una barra dell'app sopra il contenuto. L
 
 **Title:** Visualizza il *DisplayName* del riquadro associato all'istanza dell'app
 
-**Back Button:** genera l'evento *[backrequested](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* quando viene premuto. La visibilità del pulsante indietro è controllata da *[SystemNavigationManager. AppViewBackButtonVisibility](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)* .
+**Back Button:** genera l'evento *[backrequested](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* quando viene premuto. La visibilità del pulsante indietro è controllata da *[SystemNavigationManager. AppViewBackButtonVisibility](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)*.
 
 ![Interfaccia utente della barra dell'app nella visualizzazione app 2D](images/12697297-10104100857470613-1470416918759008487-o-500px.jpg)<br>
 *Interfaccia utente della barra dell'app nella visualizzazione app 2D*

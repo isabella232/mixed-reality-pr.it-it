@@ -1,17 +1,17 @@
 ---
-title: MR Spatial 220-audio spaziale
+title: 'MR Spatial 220: Audio spaziale'
 description: Seguire questa procedura dettagliata di codifica usando Unity, Visual Studio e HoloLens per informazioni dettagliate sui concetti relativi ai suoni spaziali.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, esercitazione, spazio audio
-ms.openlocfilehash: 1da57024fbc069fcfc7d522175cf6d542304414a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, esercitazione, spazio audio, HoloLens, realtà mista Academy, Unity, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale, Windows 10
+ms.openlocfilehash: 043443c0c197e3b606c4845966e0cf60102d0b85
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91688988"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678370"
 ---
 # <a name="mr-spatial-220-spatial-sound"></a>Spaziale MR 220: Audio spaziale
 
@@ -58,7 +58,7 @@ Il [suono spaziale](../../../design/spatial-sound.md) respira la vita negli olog
 
 ### <a name="errata-and-notes"></a>Errori e note
 
-* "Enable Just My Code" deve essere disabilitato ( *deselezionato* ) in Visual Studio in strumenti-opzioni >->debug per raggiungere i punti di interruzione nel codice.
+* "Enable Just My Code" deve essere disabilitato (*deselezionato*) in Visual Studio in strumenti-opzioni >->debug per raggiungere i punti di interruzione nel codice.
 
 ## <a name="chapter-1---unity-setup"></a>Capitolo 1-installazione di Unity
 
@@ -74,48 +74,48 @@ Il [suono spaziale](../../../design/spatial-sound.md) respira la vita negli olog
 * Passare al desktop e trovare la cartella precedentemente non archiviata.
 * Fare clic sulla cartella **Starting\Decibel** , quindi premere il pulsante **Seleziona cartella** .
 * Attendere che il progetto venga caricato in Unity.
-* Nel pannello del **progetto** aprire **Scenes\Decibel.Unity** .
-* Nel pannello **gerarchia** espandere **ologrammcollection** e selezionare **P0LY** .
+* Nel pannello del **progetto** aprire **Scenes\Decibel.Unity**.
+* Nel pannello **gerarchia** espandere **ologrammcollection** e selezionare **P0LY**.
 * Nel controllo espandere **audiosource** e notare che non è presente alcuna casella di controllo **Spatialize** .
 
 Per impostazione predefinita, Unity non carica un plug-in Spatializer. Nei passaggi seguenti viene abilitato il suono spaziale nel progetto.
 
-* Nel menu principale di Unity scegliere **modifica > impostazioni progetto > audio** .
-* Individuare l'elenco a discesa plug-in **Spatializer** e selezionare **MS HRTF Spatializer** .
-* Nel pannello **gerarchia** selezionare **ologrammcollection > P0LY** .
+* Nel menu principale di Unity scegliere **modifica > impostazioni progetto > audio**.
+* Individuare l'elenco a discesa plug-in **Spatializer** e selezionare **MS HRTF Spatializer**.
+* Nel pannello **gerarchia** selezionare **ologrammcollection > P0LY**.
 * Nel pannello **Inspector** trovare il componente di **origine audio** .
 * Selezionare la casella di controllo **Spatialize** .
 * Trascinare il dispositivo di scorrimento di **Blend spaziale** fino a **3D** oppure immettere **1** nella casella di modifica.
 
 Il progetto verrà ora compilato in Unity e la soluzione verrà configurata in Visual Studio.
 
-1. In Unity selezionare **File > impostazioni di compilazione** .
+1. In Unity selezionare **File > impostazioni di compilazione**.
 2. Fare clic su **Aggiungi scene aperte** per aggiungere la scena.
-3. Selezionare **piattaforma UWP (Universal Windows Platform)** nell'elenco **piattaforma** e fare clic su **Cambia piattaforma** .
-4. Se si sta sviluppando in modo specifico per HoloLens, impostare **dispositivo di destinazione** su **HoloLens** . In caso contrario, lasciarlo in **qualsiasi dispositivo** .
+3. Selezionare **piattaforma UWP (Universal Windows Platform)** nell'elenco **piattaforma** e fare clic su **Cambia piattaforma**.
+4. Se si sta sviluppando in modo specifico per HoloLens, impostare **dispositivo di destinazione** su **HoloLens**. In caso contrario, lasciarlo in **qualsiasi dispositivo**.
 5. Verificare che **tipo di compilazione** sia impostato su **D3D** e che l' **SDK** sia impostato su **installato più recente** (che deve essere SDK 16299 o versione successiva).
-6. Fare clic su **Compila** .
+6. Fare clic su **Compila**.
 7. Creare una **nuova cartella** denominata "app".
 8. Fare clic sulla cartella dell' **app** .
-9. Premere **Seleziona cartella** .
+9. Premere **Seleziona cartella**.
 
 Quando si esegue Unity, viene visualizzata una finestra Esplora file.
 
 1. Aprire la cartella dell' **app** .
-2. Aprire la **soluzione decibel di Visual Studio** .
+2. Aprire la **soluzione decibel di Visual Studio**.
 
 Se si esegue la distribuzione in HoloLens:
 
-1. Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x86** .
-2. Fare clic sulla freccia a discesa accanto al pulsante computer locale e selezionare **computer remoto** .
-3. Immettere **l'indirizzo IP del dispositivo HoloLens** e impostare la modalità di autenticazione su **universale (protocollo non crittografato)** . Fare clic su **Seleziona** . Se non si conosce l'indirizzo IP del dispositivo, vedere **impostazioni > rete & Internet > opzioni avanzate** .
-4. Nella barra dei menu superiore fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5** . Se questa è la prima volta che si esegue la distribuzione nel dispositivo, sarà necessario [associarla a Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+1. Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x86**.
+2. Fare clic sulla freccia a discesa accanto al pulsante computer locale e selezionare **computer remoto**.
+3. Immettere **l'indirizzo IP del dispositivo HoloLens** e impostare la modalità di autenticazione su **universale (protocollo non crittografato)**. Fare clic su **Seleziona**. Se non si conosce l'indirizzo IP del dispositivo, vedere **impostazioni > rete & Internet > opzioni avanzate**.
+4. Nella barra dei menu superiore fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5**. Se questa è la prima volta che si esegue la distribuzione nel dispositivo, sarà necessario [associarla a Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
 
 Se si esegue la distribuzione in un auricolare immersivo:
 
-1. Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x64** .
-2. Verificare che la destinazione di distribuzione sia impostata su **computer locale** .
-3. Nella barra dei menu superiore fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5** .
+1. Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x64**.
+2. Verificare che la destinazione di distribuzione sia impostata su **computer locale**.
+3. Nella barra dei menu superiore fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5**.
 
 ## <a name="chapter-2---spatial-sound-and-interaction"></a>Capitolo 2-audio e interazione spaziali
 
@@ -138,14 +138,14 @@ Il percorso appropriato per il suono dipende dall'ologramma. Se, ad esempio, l'o
 
 Le istruzioni seguenti allegheranno un suono spaziali a un ologramma.
 
-* Nel pannello **gerarchia** espandere **ologrammcollection** e selezionare **P0LY** .
-* Nel pannello di **controllo** , in **audiosource** , fare clic sul cerchio accanto a **AudioClip** e selezionare **polihover** dal menu a comparsa.
+* Nel pannello **gerarchia** espandere **ologrammcollection** e selezionare **P0LY**.
+* Nel pannello di **controllo** , in **audiosource**, fare clic sul cerchio accanto a **AudioClip** e selezionare **polihover** dal menu a comparsa.
 * Fare clic sul cerchio accanto a **output** e selezionare **SoundEffects** dal menu a comparsa.
 
 Il progetto decibel usa un componente **audiomixer** Unity per abilitare la regolazione dei livelli audio per gruppi di suoni. Raggruppando i suoni in questo modo, è possibile modificare il volume complessivo mantenendo il volume relativo di ogni suono.
 
-* In **audiosource** espandere **impostazioni audio 3D** .
-* Impostare il **livello di Doppler** su **0** .
+* In **audiosource** espandere **impostazioni audio 3D**.
+* Impostare il **livello di Doppler** su **0**.
 
 L'impostazione del livello di Doppler su zero disabilita le modifiche apportate a un pitch causato da un movimento, ovvero l'ologramma o l'utente. Un esempio classico di Doppler è un'auto in rapida evoluzione. Quando l'auto si avvicina a un listener fisso, il pitch del motore aumenta. Quando passa il listener, il passo viene ridotto a distanza.
 
@@ -163,10 +163,10 @@ Un esempio di aspettative apprese è che gli uccelli si trovano in genere sopra 
 
 Le istruzioni seguenti consentono a P0LY di nascondersi dietro l'utente, in modo da poter usare il suono per individuare l'ologramma.
 
-* Nel pannello **gerarchia** selezionare **Managers** .
-* Nel pannello **Inspector** trovare gestore di **input vocale** .
-* In **gestore di input vocale** espandere **Vai a Nascondi** .
-* Modificare **Nessuna funzione** in **poliactions. GoHide** .
+* Nel pannello **gerarchia** selezionare **Managers**.
+* Nel pannello **Inspector** trovare gestore di **input vocale**.
+* In **gestore di input vocale** espandere **Vai a Nascondi**.
+* Modificare **Nessuna funzione** in **poliactions. GoHide**.
 
 ![Parola chiave: go Hide](images/gohide.png)
 
@@ -180,24 +180,24 @@ Le istruzioni seguenti consentono a P0LY di nascondersi dietro l'utente, in modo
 
 #### <a name="instructions"></a>Istruzioni
 
-* Nel pannello **gerarchia** espandere **ologrammcollection** .
-* Espandere **EnergyHub** e selezionare **base** .
-* Nel pannello di **controllo** fare clic su **Aggiungi componente** e aggiungere il **gestore audio del movimento** .
+* Nel pannello **gerarchia** espandere **ologrammcollection**.
+* Espandere **EnergyHub** e selezionare **base**.
+* Nel pannello di **controllo** fare clic su **Aggiungi componente** e aggiungere il **gestore audio del movimento**.
 * Nel **gestore del suono del movimento** fare clic sul cerchio accanto al clip avviato per la **navigazione** e selezionare il clip **aggiornato** e selezionare **RotateClick** dal menu a comparsa per entrambe.
 * Fare doppio clic su "GestureSoundHandler" per caricare in Visual Studio.
 
 Il gestore del suono del movimento esegue le attività seguenti:
 
-* Creare e configurare un **audiosource** .
+* Creare e configurare un **audiosource**.
 * Inserire **audiosource** nella posizione del **GameObject** appropriato.
 * Riproduce il **AudioClip** associato al movimento.
 
 #### <a name="build-and-deploy"></a>Compilazione e distribuzione
 
-1. In Unity selezionare **File > impostazioni di compilazione** .
-2. Fare clic su **Compila** .
+1. In Unity selezionare **File > impostazioni di compilazione**.
+2. Fare clic su **Compila**.
 3. Fare clic sulla cartella dell' **app** .
-4. Premere **Seleziona cartella** .
+4. Premere **Seleziona cartella**.
 
 Controllare che la barra degli strumenti indichi "versione", "x86" o "x64" e "dispositivo remoto". In caso contrario, si tratta dell'istanza di codifica di Visual Studio. Potrebbe essere necessario aprire nuovamente la soluzione dalla cartella dell'app.
 
@@ -230,16 +230,16 @@ Ad esempio, l'impostazione di un calice in una tabella dovrebbe rendere un suono
 
 #### <a name="instructions"></a>Istruzioni
 
-* Nel pannello **gerarchia** espandere **ologrammcollection** .
-* Espandere **EnergyHub** , selezionare **base** .
-* Nel pannello di **controllo** fare clic su **Aggiungi componente** e aggiungere **toccare per inserire il suono e l'azione** .
-* In **Tap per inserire il suono e l'azione** :
-  * Controllare la **posizione dell'elemento padre al tocco** .
-  * Impostare il **suono del posizionamento** sul **posto** .
-  * Imposta il **suono del pickup** su **pickup** .
-  * Premere + in basso a destra sotto l' **azione di prelievo** e **sull'azione di selezione host** . Trascinare EnergyHub dalla scena ai campi **None (Object)** .
-    * In **azione di prelievo** fare clic su **Nessuna funzione**  ->  **EnergyHubBase**  ->  **ResetAnimation** .
-    * In **azione posizionamento** fare clic su **Nessuna funzione**  ->  **EnergyHubBase**  ->  **onselect** .
+* Nel pannello **gerarchia** espandere **ologrammcollection**.
+* Espandere **EnergyHub**, selezionare **base**.
+* Nel pannello di **controllo** fare clic su **Aggiungi componente** e aggiungere **toccare per inserire il suono e l'azione**.
+* In **Tap per inserire il suono e l'azione**:
+  * Controllare la **posizione dell'elemento padre al tocco**.
+  * Impostare il **suono del posizionamento** sul **posto**.
+  * Imposta il **suono del pickup** su **pickup**.
+  * Premere + in basso a destra sotto l' **azione di prelievo** e **sull'azione di selezione host**. Trascinare EnergyHub dalla scena ai campi **None (Object)** .
+    * In **azione di prelievo** fare clic su **Nessuna funzione**  ->  **EnergyHubBase**  ->  **ResetAnimation**.
+    * In **azione posizionamento** fare clic su **Nessuna funzione**  ->  **EnergyHubBase**  ->  **onselect**.
 
 ![Toccare per inserire il suono e l'azione](images/holograms220-taptoplace.png)
 
@@ -253,12 +253,12 @@ Un esempio classico è una sala concerti. Quando un listener si trova al di fuor
 
 #### <a name="instructions"></a>Istruzioni
 
-* Nel pannello **gerarchia** espandere **ologrammcollection** e selezionare **P0LY** .
-* Nel pannello di **controllo** fare clic su **Aggiungi componente** e Aggiungi **emettitore audio** .
+* Nel pannello **gerarchia** espandere **ologrammcollection** e selezionare **P0LY**.
+* Nel pannello di **controllo** fare clic su **Aggiungi componente** e Aggiungi **emettitore audio**.
 
 La classe Emittor audio fornisce le funzionalità seguenti:
 
-* Ripristina tutte le modifiche apportate al volume del **audiosource** .
+* Ripristina tutte le modifiche apportate al volume del **audiosource**.
 * Esegue un oggetto **Physics. RaycastNonAlloc** dalla posizione dell'utente nella direzione del **GameObject** a cui è collegato il **AudioEmitter** .
 
 Il metodo RaycastNonAlloc viene utilizzato come ottimizzazione delle prestazioni per limitare le allocazioni e il numero di risultati restituiti.
@@ -268,44 +268,44 @@ Il metodo RaycastNonAlloc viene utilizzato come ottimizzazione delle prestazioni
 
 Si noti che AudioEmitter viene aggiornato in base alle scale temporali umane, anziché ai singoli frame. Questa operazione viene eseguita perché gli utenti in genere non si spostano abbastanza rapidamente affinché l'effetto debba essere aggiornato con una frequenza maggiore di ogni trimestre o metà di un secondo. Gli ologrammi che si teletrasportano rapidamente da una posizione a un'altra possono suddividere l'illusione.
 
-* Nel pannello **gerarchia** espandere **ologrammcollection** .
-* Espandere **EnergyHub** e selezionare **BlobOutside** .
-* Nel pannello di **controllo** fare clic su **Aggiungi componente** e aggiungere **occlusione audio** .
-* In **occlusione audio** impostare **frequenza di taglio** su **1500** .
+* Nel pannello **gerarchia** espandere **ologrammcollection**.
+* Espandere **EnergyHub** e selezionare **BlobOutside**.
+* Nel pannello di **controllo** fare clic su **Aggiungi componente** e aggiungere **occlusione audio**.
+* In **occlusione audio** impostare **frequenza di taglio** su **1500**.
 
 Questa impostazione limita le frequenze AudioSource a 1500 Hz e inferiori.
 
-* Impostare **volume pass-through** su **0,9** .
+* Impostare **volume pass-through** su **0,9**.
 
 Questa impostazione riduce il volume del AudioSource al 90% del livello corrente.
 
 Occlusione audio implementa IAudioInfluencer per:
 
-* Applicare un effetto occlusione usando un **AudioLowPassFilter** che viene collegato al **audiosource** gestito acquistare il **AudioEmitter** .
+* Applicare un effetto occlusione usando un **AudioLowPassFilter** che viene collegato al **audiosource** gestito acquistare il **AudioEmitter**.
 * Applica l'attenuazione del volume a AudioSource.
 * Disabilita l'effetto impostando una frequenza di taglio neutra e disabilitando il filtro.
 
 La frequenza utilizzata come neutra è 22 kHz (22000 Hz). Questa frequenza è stata scelta perché si trova al di sopra della frequenza massima nominale che può essere ascoltata dall'orecchio umano, che non ha alcun effetto discernente sul suono.
 
-* Nel pannello **gerarchia** selezionare **SpatialMapping** .
-* Nel pannello di **controllo** fare clic su **Aggiungi componente** e aggiungere **occlusione audio** .
-* In **occlusione audio** impostare **frequenza di taglio** su **750** .
+* Nel pannello **gerarchia** selezionare **SpatialMapping**.
+* Nel pannello di **controllo** fare clic su **Aggiungi componente** e aggiungere **occlusione audio**.
+* In **occlusione audio** impostare **frequenza di taglio** su **750**.
 
-Quando più occluders si trovano nel percorso tra l'utente e il **AudioEmitter** , viene applicata la frequenza più bassa al filtro.
+Quando più occluders si trovano nel percorso tra l'utente e il **AudioEmitter**, viene applicata la frequenza più bassa al filtro.
 
-* Impostare **volume pass-through** su **0,75** .
+* Impostare **volume pass-through** su **0,75**.
 
-Quando più occluders si trovano nel percorso tra l'utente e il **AudioEmitter** , il pass-through del volume viene applicato in aggiunta.
+Quando più occluders si trovano nel percorso tra l'utente e il **AudioEmitter**, il pass-through del volume viene applicato in aggiunta.
 
-* Nel pannello **gerarchia** selezionare **Managers** .
-* Nel pannello **Inspector** espandere gestore di **input vocale** .
-* In **gestore di input vocale** espandere **Vai a addebiti** .
-* Modificare **Nessuna funzione** in **poliactions. GoCharge** .
+* Nel pannello **gerarchia** selezionare **Managers**.
+* Nel pannello **Inspector** espandere gestore di **input vocale**.
+* In **gestore di input vocale** espandere **Vai a addebiti**.
+* Modificare **Nessuna funzione** in **poliactions. GoCharge**.
 
 ![Parola chiave: go charge](images/gocharge.png)
 
 * Espandi **.**
-* **Non modificare alcuna funzione** in **poliactions. Comeback** .
+* **Non modificare alcuna funzione** in **poliactions. Comeback**.
 
 ![Parola chiave: qui](images/comehere.png)
 
@@ -328,7 +328,7 @@ Si noti che l'occlusione audio viene rimossa quando P0LY esce dall'hub di energi
 #### <a name="key-concepts"></a>Concetti chiave
 
 * La dimensione dello spazio fornisce le code subliminali che contribuiscono alla localizzazione del suono.
-* I modelli room sono impostati per ogni **audiosource** .
+* I modelli room sono impostati per ogni **audiosource**.
 * [MixedRealityToolkit per Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity) fornisce il codice per l'impostazione del modello room.
 * Per esperienze di realtà mista, selezionare il modello room più adatto allo spazio reale.
 
@@ -437,57 +437,57 @@ In Unity è possibile contrassegnare un file audio per il flusso nelle impostazi
 
 #### <a name="instructions"></a>Istruzioni
 
-* Nel pannello **gerarchia** espandere **ologrammcollection** e selezionare **Sottomondo** .
-* Espandere **Underworld** e selezionare **VoiceSource** .
-* Nel pannello di **controllo** fare clic su **Aggiungi componente** e aggiungere **effetto voce utente** .
+* Nel pannello **gerarchia** espandere **ologrammcollection** e selezionare **Sottomondo**.
+* Espandere **Underworld** e selezionare **VoiceSource**.
+* Nel pannello di **controllo** fare clic su **Aggiungi componente** e aggiungere **effetto voce utente**.
 
-Verrà aggiunto un componente **audiosource** a **VoiceSource** .
+Verrà aggiunto un componente **audiosource** a **VoiceSource**.
 
-* In **audiosource** impostare **output** su **UserVoice (mixer)** .
+* In **audiosource** impostare **output** su **UserVoice (mixer)**.
 * Selezionare la casella di controllo **Spatialize** .
 * Trascinare il dispositivo di scorrimento di **Blend spaziale** fino a **3D** oppure immettere **1** nella casella di modifica.
-* Espandere **impostazioni audio 3D** .
-* Impostare il **livello di Doppler** su **0** .
+* Espandere **impostazioni audio 3D**.
+* Impostare il **livello di Doppler** su **0**.
 * In **effetto voce utente** impostare **oggetto padre** sul **Sottomondo** dalla scena.
-* Impostare **distanza massima** su **1** .
+* Impostare **distanza massima** su **1**.
 
 L'impostazione della **distanza massima** indica all' **utente** il modo in cui la chiusura dell'utente deve essere l'oggetto padre prima che l'effetto venga attivato.
 
-* In **effetto voce utente** espandere **parametri Chorus** .
-* Impostare **Depth** su **0,1** .
-* Impostare **toccare 1 volume** , **toccare 2 volume** e **toccare 3 volume** su **0,8** .
-* Impostare **volume audio originale** su **0,5** .
+* In **effetto voce utente** espandere **parametri Chorus**.
+* Impostare **Depth** su **0,1**.
+* Impostare **toccare 1 volume**, **toccare 2 volume** e **toccare 3 volume** su **0,8**.
+* Impostare **volume audio originale** su **0,5**.
 
 Le impostazioni precedenti configurano i parametri del **AudioChorusFilter** Unity usato per aggiungere ricchezza alla voce dell'utente.
 
-* In **effetto voce utente** espandere **parametri Echo** .
+* In **effetto voce utente** espandere **parametri Echo**.
 * Imposta **ritardo** su **300**
-* Imposta il **rapporto di decadimento** su **0,2** .
-* Impostare **volume audio originale** su **0** .
+* Imposta il **rapporto di decadimento** su **0,2**.
+* Impostare **volume audio originale** su **0**.
 
 Le impostazioni precedenti configurano i parametri del **AudioEchoFilter** Unity usato per fare in modo che la voce dell'utente sia Echo.
 
 Lo script dell'effetto vocale utente è responsabile di:
 
 * Misurazione della distanza tra l'utente e la **GameObject** a cui è associato lo script.
-* Determinare se l'utente si trova o meno a **GameObject** .
+* Determinare se l'utente si trova o meno a **GameObject**.
 
 È necessario che l'utente si trovi a fronte del GameObject, indipendentemente dalla distanza, per abilitare l'effetto.
 
-* Applicazione e configurazione di un **AudioChorusFilter** e di un **AudioEchoFilter** in **audiosource** .
+* Applicazione e configurazione di un **AudioChorusFilter** e di un **AudioEchoFilter** in **audiosource**.
 * Disabilitare l'effetto disabilitando i filtri.
 
 L'effetto voce utente usa il componente MIC Stream Selector, da [MixedRealityToolkit per Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity), per selezionare il flusso di voce di qualità elevata e instradarlo nel sistema audio di Unity.
 
-* Nel pannello **gerarchia** selezionare **Managers** .
-* Nel pannello **Inspector** espandere gestore di **input vocale** .
-* In **gestore di input vocale** espandere **Mostra Sottomondo** .
-* Modificare **Nessuna funzione** in **UnderworldBase. OnEnable** .
+* Nel pannello **gerarchia** selezionare **Managers**.
+* Nel pannello **Inspector** espandere gestore di **input vocale**.
+* In **gestore di input vocale** espandere **Mostra Sottomondo**.
+* Modificare **Nessuna funzione** in **UnderworldBase. OnEnable**.
 
 ![Parola chiave: Show Underworld](images/showunderworld.png)
 
-* Espandi **Nascondi Sottomondo** .
-* Modificare **Nessuna funzione** in **UnderworldBase. ondisable** .
+* Espandi **Nascondi Sottomondo**.
+* Modificare **Nessuna funzione** in **UnderworldBase. ondisable**.
 
 ![Parola chiave: Hide Underworld](images/hideunderworld.png)
 
@@ -497,7 +497,7 @@ L'effetto voce utente usa il componente MIC Stream Selector, da [MixedRealityToo
 
 Dopo la distribuzione dell'applicazione:
 
-* Far fronte a una superficie (Wall, Floor, Table) e pronunciare *"Show Underworld"* .
+* Far fronte a una superficie (Wall, Floor, Table) e pronunciare *"Show Underworld"*.
 
 Il Sottomondo verrà visualizzato e tutti gli altri ologrammi verranno nascosti. Se il Sottomondo non viene visualizzato, assicurarsi di essere connessi a una superficie reale.
 
@@ -512,6 +512,6 @@ Il Sottomondo verrà nascosto e verranno nuovamente visualizzati gli ologrammi n
 
 ## <a name="the-end"></a>La fine
 
-Congratulazioni! A questo punto è stato completato il comportamento di **spatial 220: Spatial** .
+Congratulazioni. A questo punto è stato completato il comportamento di **spatial 220: Spatial**.
 
 Ascolta il mondo e fai vivere le tue esperienze con i suoni.

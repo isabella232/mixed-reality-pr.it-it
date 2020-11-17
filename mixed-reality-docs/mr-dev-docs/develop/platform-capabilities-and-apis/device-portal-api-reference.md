@@ -5,13 +5,13 @@ author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
-keywords: HoloLens, portale per dispositivi Windows, API
-ms.openlocfilehash: 6b8f99fbc6f1965639ceef218f5c516d2e6ba467
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens, portale per dispositivi Windows, API, cuffie per realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
+ms.openlocfilehash: 1085f6c948ab7fe0ff8cb3801ebb0b883570acbc
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683772"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677970"
 ---
 # <a name="device-portal-api-reference"></a>Informazioni di riferimento sulle API di Portale di dispositivi
 
@@ -159,7 +159,7 @@ Parametri
 
 Ottenere la fase termica del dispositivo (0 normale, 1 caldo, 2 critico)
 
-## <a name="map-manager"></a>Gestione mappe
+## <a name="map-manager"></a>Map Manager (Gestore mappe)
 
 **/api/holographic/mapmanager/mapFiles (GET)**
 
@@ -259,7 +259,7 @@ Esempio:
 $.post("/api/holographic/mapmanager/exportmapandspatialmappingdb")
 ```
 
-### <a name="import"></a>Importare
+### <a name="import"></a>Importa
 
 **/API/Holographic/MapManager/Import (POST)**
 
@@ -355,7 +355,7 @@ Imposta le impostazioni predefinite di acquisizione della realtà mista.  Alcune
 
 Ottiene lo stato dell'acquisizione di realtà mista all'interno del portale del dispositivo Windows.
 
-***Response*** .
+**_Risposta_* _
 
 La risposta contiene una proprietà JSON che indica se il portale del dispositivo Windows sta registrando o meno il video.
 
@@ -363,7 +363,7 @@ La risposta contiene una proprietà JSON che indica se il portale del dispositiv
 {"IsRecording" : boolean}
 ```
 
-**/API/Holographic/MRC/Thumbnail (GET)**
+_ */API/Holographic/MRC/Thumbnail (Get)**
 
 Ottiene l'immagine di anteprima per il file specificato.
 

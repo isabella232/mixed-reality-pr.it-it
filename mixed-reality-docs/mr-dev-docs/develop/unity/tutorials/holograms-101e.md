@@ -1,17 +1,17 @@
 ---
-title: Nozioni di base su 101E-completare il progetto con l'emulatore
+title: 'MR Basics 101E: Progetto completo con emulatore'
 description: Seguire questa procedura dettagliata di codifica usando Unity, Visual Studio e l'emulatore HoloLens per apprendere le nozioni di base di un'applicazione olografica.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: realtà mista, realtà mista di Windows, HoloLens, ologramma, Accademia, esercitazione, emulatore
-ms.openlocfilehash: 9aa3da5367343f43eae167f8ffedc30b78076260
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: realtà mista, realtà mista di Windows, ologramma, Accademia, esercitazione, emulatore, HoloLens, Accademia di realtà mista, Unity, Headset per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, Windows 10, sguardo, movimenti, input vocale, suono spaziale, mapping spaziale
+ms.openlocfilehash: 3499011b8c91168bf27522e5f6f287b14295283e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686492"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678310"
 ---
 # <a name="mr-basics-101e-complete-project-with-emulator"></a>Nozioni di base MR 101E: Progetto completo con emulatore
 
@@ -42,11 +42,11 @@ Questa esercitazione illustra in dettaglio un progetto completo, integrato in Un
 
 ### <a name="project-files"></a>File di progetto
 
-* Scaricare i [file](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-101.zip) richiesti dal progetto.Richiede Unity 2017,2 o versione successiva.
+* Scaricare i [file](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-101.zip) richiesti dal progetto. Richiede Unity 2017,2 o versione successiva.
   * Se è ancora necessario il supporto per Unity 5,6, usare [questa versione](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-101.zip).
   * Se è ancora necessario il supporto per Unity 5,5, usare [questa versione](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-101.zip).
   * Se è ancora necessario il supporto per Unity 5,4, usare [questa versione](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-101.zip).
-* Annullare l'archiviazione dei file sul desktop o in un'altra posizione facile da raggiungere. Mantiene il nome della cartella come **origami** .
+* Annullare l'archiviazione dei file sul desktop o in un'altra posizione facile da raggiungere. Mantiene il nome della cartella come **origami**.
 
 >[!NOTE]
 >Se si vuole esaminare il codice sorgente prima del download, è [disponibile in GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-101).
@@ -68,54 +68,54 @@ In questo capitolo verrà configurato il primo progetto Unity ed eseguiamo il pr
 * Riavviare Unity.
 * Selezionare **Open** (Apri).
 * Immettere il percorso come cartella **origami** precedentemente non archiviata.
-* Selezionare **origami** e fare clic su **Seleziona cartella** .
-* Salvare la nuova scena: **file**  /  **Salva scena con nome** .
+* Selezionare **origami** e fare clic su **Seleziona cartella**.
+* Salvare la nuova scena: **file**  /  **Salva scena con nome**.
 * Assegnare un nome alla scena **origami** e premere il pulsante **Salva** .
 
 #### <a name="setup-the-main-camera"></a>Configurare la fotocamera principale
 
-* Nel **Pannello di gerarchia** , selezionare **Fotocamera principale** .
-* Nel **controllo** impostare la relativa posizione di trasformazione su **0, 0, 0** .
-* Trovare la proprietà **Clear Flags** e modificare l'elenco a discesa da **SKYBOX** a **tinta unita** .
+* Nel **Pannello di gerarchia**, selezionare **Fotocamera principale**.
+* Nel **controllo** impostare la relativa posizione di trasformazione su **0, 0, 0**.
+* Trovare la proprietà **Clear Flags** e modificare l'elenco a discesa da **SKYBOX** a **tinta unita**.
 * Fare clic sul campo **Sfondo** per aprire un editor dei colori.
-* Impostare **R, G, B e A** su **0** .
+* Impostare **R, G, B e A** su **0**.
 
 #### <a name="setup-the-scene"></a>Configurare la scena
 
-* Nel **Pannello gerarchia** fare clic su **Crea** e **Crea vuoto** .
-* Fare clic con il pulsante destro del mouse sul nuovo **GameObject** e scegliere Rinomina. Rinominare GameObject in **origamicollection** .
-* Dalla cartella **ologrammi** nel pannello del **progetto** :
-  * Trascinare la **fase** nella gerarchia in modo che sia un elemento figlio di **origamicollection** .
-  * Trascinare **Sphere1** nella gerarchia in modo che sia un elemento figlio di **origamicollection** .
-  * Trascinare **Sphere2** nella gerarchia in modo che sia un elemento figlio di **origamicollection** .
-* Fare clic con il pulsante destro del mouse sull'oggetto **direzionale chiaro** nel **Pannello gerarchia** e scegliere **Elimina** .
-* Dalla cartella **ologrammi** trascinare le **spie** nella radice del **Pannello gerarchia** .
-* Nella **gerarchia** selezionare **origamicollection** .
-* Nel **controllo** impostare la posizione di trasformazione su **0,-0,5, 2,0** .
+* Nel **Pannello gerarchia** fare clic su **Crea** e **Crea vuoto**.
+* Fare clic con il pulsante destro del mouse sul nuovo **GameObject** e scegliere Rinomina. Rinominare GameObject in **origamicollection**.
+* Dalla cartella **ologrammi** nel pannello del **progetto**:
+  * Trascinare la **fase** nella gerarchia in modo che sia un elemento figlio di **origamicollection**.
+  * Trascinare **Sphere1** nella gerarchia in modo che sia un elemento figlio di **origamicollection**.
+  * Trascinare **Sphere2** nella gerarchia in modo che sia un elemento figlio di **origamicollection**.
+* Fare clic con il pulsante destro del mouse sull'oggetto **direzionale chiaro** nel **Pannello gerarchia** e scegliere **Elimina**.
+* Dalla cartella **ologrammi** trascinare le **spie** nella radice del **Pannello gerarchia**.
+* Nella **gerarchia** selezionare **origamicollection**.
+* Nel **controllo** impostare la posizione di trasformazione su **0,-0,5, 2,0**.
 * Premere il pulsante **Play** in Unity per visualizzare l'anteprima degli ologrammi.
 * Nella finestra di anteprima verranno visualizzati gli oggetti origami.
 * Premere **Riproduci** una seconda volta per arrestare la modalità di anteprima.
 
 #### <a name="export-the-project-from-unity-to-visual-studio"></a>Esportare il progetto da Unity a Visual Studio
 
-* In Unity selezionare **File > impostazioni di compilazione** .
-* Selezionare **Windows Store** nell'elenco **piattaforma** e fare clic su **Cambia piattaforma** .
-* Impostare **SDK** su **Universal 10** e **tipo di compilazione** su **D3D** .
-* Controllare i **progetti C# di Unity** .
+* In Unity selezionare **File > impostazioni di compilazione**.
+* Selezionare **Windows Store** nell'elenco **piattaforma** e fare clic su **Cambia piattaforma**.
+* Impostare **SDK** su **Universal 10** e **tipo di compilazione** su **D3D**.
+* Controllare i **progetti C# di Unity**.
 * Fare clic su **Aggiungi scene aperte** per aggiungere la scena.
-* Fare clic su **Impostazioni lettore...** .
-* Nel pannello Inspector selezionare il **logo di Windows Store** . Quindi selezionare **impostazioni di pubblicazione** .
+* Fare clic su **Impostazioni lettore...**.
+* Nel pannello Inspector selezionare il **logo di Windows Store**. Quindi selezionare **impostazioni di pubblicazione**.
 * Nella sezione **funzionalità** selezionare le funzionalità **Microphone** e **SpatialPerception** .
-* Tornare alla finestra Impostazioni compilazione, fare clic su **Compila** .
+* Tornare alla finestra Impostazioni compilazione, fare clic su **Compila**.
 * Creare una **nuova cartella** denominata "app".
-* Fare clic sulla **cartella dell'app** .
-* Premere **Seleziona cartella** .
+* Fare clic sulla **cartella dell'app**.
+* Premere **Seleziona cartella**.
 * Quando si esegue Unity, viene visualizzata una finestra Esplora file.
 * Aprire la cartella dell' **app** .
-* Aprire la **soluzione origami di Visual Studio** .
-* Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x86** .
-  * Fare clic sulla freccia accanto al pulsante Device (dispositivo) e selezionare **HoloLens Emulator (emulatore** ).
-  * Fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5** .
+* Aprire la **soluzione origami di Visual Studio**.
+* Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x86**.
+  * Fare clic sulla freccia accanto al pulsante Device (dispositivo) e selezionare **HoloLens Emulator (emulatore**).
+  * Fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5**.
   * Dopo un po' di tempo l'emulatore inizierà con il progetto origami. Quando l' [emulatore](../../platform-capabilities-and-apis/using-the-hololens-emulator.md)viene avviato per la prima volta, possono essere necessari fino a 15 minuti per l'avvio dell'emulatore. Una volta avviata, non chiuderla.
 
 ## <a name="chapter-2---gaze"></a>Capitolo 2: sguardo
@@ -131,17 +131,17 @@ In questo capitolo, verranno introdotti i primi tre modi per interagire con gli 
 ### <a name="instructions"></a>Istruzioni
 
 * Tornare al progetto Unity e chiudere la finestra impostazioni di compilazione se è ancora aperta.
-* Selezionare la cartella **ologrammi** nel **Pannello del progetto** .
+* Selezionare la cartella **ologrammi** nel **Pannello del progetto**.
 * Trascinare l'oggetto **cursore** nel **Pannello gerarchia** a livello di radice.
 * Fare doppio clic sull'oggetto **cursore** per esaminarlo più da vicino.
 * Fare clic con il pulsante destro del mouse sulla cartella **Scripts** nel pannello Project.
 * Fare clic sul sottomenu **Crea** .
-* Selezionare **lo script C#** .
-* Denominare lo script **WorldCursor** . Nota: il nome fa distinzione tra maiuscole e minuscole. Non è necessario aggiungere l'estensione. cs.
-* Selezionare l'oggetto **cursore** nel **Pannello gerarchia** .
-* Trascinare e rilasciare lo script **WorldCursor** nel **pannello Inspector** .
+* Selezionare **lo script C#**.
+* Denominare lo script **WorldCursor**. Nota: il nome fa distinzione tra maiuscole e minuscole. Non è necessario aggiungere l'estensione. cs.
+* Selezionare l'oggetto **cursore** nel **Pannello gerarchia**.
+* Trascinare e rilasciare lo script **WorldCursor** nel **pannello Inspector**.
 * Fare doppio clic sullo script **WorldCursor** per aprirlo in Visual Studio.
-* Copiare e incollare questo codice in **WorldCursor.cs** e **salvare tutti** .
+* Copiare e incollare questo codice in **WorldCursor.cs** e **salvare tutti**.
 
 ```cs
 using UnityEngine;
@@ -188,10 +188,10 @@ public class WorldCursor : MonoBehaviour
 }
 ```
 
-* Ricompilare l'app da **File > impostazioni di compilazione** .
+* Ricompilare l'app da **File > impostazioni di compilazione**.
 * Tornare alla soluzione di Visual Studio usata in precedenza per la distribuzione nell'emulatore.
 * Quando richiesto, selezionare "ricarica tutto".
-* Fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5** .
+* Fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5**.
 * Usare il controller Xbox per esaminare la scena. Si noti come il cursore interagisce con la forma degli oggetti.
 
 ## <a name="chapter-3---gestures"></a>Capitolo 3-movimenti
@@ -208,7 +208,7 @@ In questo capitolo verrà aggiunto il supporto per i [movimenti](../../../design
 
 Si inizierà creando uno script che può rilevare il gesto di selezione.
 
-* Nella cartella **Scripts** creare uno script denominato **GazeGestureManager** .
+* Nella cartella **Scripts** creare uno script denominato **GazeGestureManager**.
 * Trascinare lo script **GazeGestureManager** sull'oggetto **origamicollection** nella gerarchia.
 * Aprire lo script **GazeGestureManager** in Visual Studio e aggiungere il codice seguente:
 
@@ -277,7 +277,7 @@ public class GazeGestureManager : MonoBehaviour
 }
 ```
 
-* Creare un altro script nella cartella Scripts, questa volta denominata **SphereCommands** .
+* Creare un altro script nella cartella Scripts, questa volta denominata **SphereCommands**.
 * Espandere l'oggetto **origamicollection** nella visualizzazione gerarchia.
 * Trascinare lo script **SphereCommands** sull'oggetto **Sphere1** nel pannello gerarchia.
 * Trascinare lo script **SphereCommands** sull'oggetto **Sphere2** nel pannello gerarchia.
@@ -318,10 +318,10 @@ In questo capitolo, verrà aggiunto il supporto per due [comandi vocali](../../.
 
 ### <a name="instructions"></a>Istruzioni
 
-* Nella cartella **Scripts** creare uno script denominato **SpeechManager** .
+* Nella cartella **Scripts** creare uno script denominato **SpeechManager**.
 * Trascinare lo script **SpeechManager** sull'oggetto **Origamicollection** nella gerarchia
 * Aprire lo script **SpeechManager** in Visual Studio.
-* Copiare e incollare questo codice in **SpeechManager.cs** e **salvare tutti** :
+* Copiare e incollare questo codice in **SpeechManager.cs** e **salvare tutti**:
 
 ```cs
 using System.Collections.Generic;
@@ -426,7 +426,7 @@ public class SphereCommands : MonoBehaviour
 
 * Esportare, compilare e distribuire l'app nell'emulatore di HoloLens.
 * L'emulatore supporterà il microfono del PC e risponderà alla voce: modificare la visualizzazione in modo che il cursore si trovi in una delle sfere e pronunciare "drop Sphere".
-* Pronunciare " **Reimposta tutto il mondo** " per riportare le posizioni iniziali.
+* Pronunciare "**Reimposta tutto il mondo**" per riportare le posizioni iniziali.
 
 ## <a name="chapter-5---spatial-sound"></a>Capitolo 5-audio spaziale
 
@@ -441,19 +441,19 @@ In questo capitolo verrà aggiunta la musica all'app e quindi verranno generati 
 ### <a name="instructions"></a>Istruzioni
 
 * In Unity selezionare dal menu in alto **modificare > impostazioni progetto > audio**
-* Trovare l'impostazione del plug-in **Spatializer** e selezionare **MS HRTF Spatializer** .
+* Trovare l'impostazione del plug-in **Spatializer** e selezionare **MS HRTF Spatializer**.
 * Dalla cartella **ologrammi** trascinare l'oggetto **ambiente** nell'oggetto **origamicollection** nel pannello gerarchia.
 * Selezionare **origamicollection** e trovare il componente di **origine audio** . Modificare le proprietà seguenti:
   * Controllare la proprietà **Spatialize** .
-  * Verificare la **riproduzione** .
+  * Verificare la **riproduzione**.
   * Modificare **Blend spaziali** in **3D** trascinando il dispositivo di scorrimento a destra.
   * Controllare la proprietà del **ciclo** .
-  * Espandere **impostazioni audio 3D** e immettere **0,1** per **livello Doppler** .
-  * Impostare **volume attenuazione** su **attenuazione logaritmico** .
-  * Impostare la **distanza massima** su **20** .
-* Nella cartella **Scripts** creare uno script denominato **SphereSounds** .
+  * Espandere **impostazioni audio 3D** e immettere **0,1** per **livello Doppler**.
+  * Impostare **volume attenuazione** su **attenuazione logaritmico**.
+  * Impostare la **distanza massima** su **20**.
+* Nella cartella **Scripts** creare uno script denominato **SphereSounds**.
 * Trascinare **SphereSounds** negli oggetti **Sphere1** e **Sphere2** della gerarchia.
-* Aprire **SphereSounds** in Visual Studio, aggiornare il codice seguente e **salvare tutto** .
+* Aprire **SphereSounds** in Visual Studio, aggiornare il codice seguente e **salvare tutto**.
 
 ```cs
 using UnityEngine;
@@ -551,18 +551,18 @@ Ora verrà usato il [mapping spaziale](../../../design/spatial-mapping.md) per c
 ### <a name="instructions"></a>Istruzioni
 
 * Fare clic sulla cartella **olografici** nel pannello del progetto.
-* Trascinare l'asset di **mapping spaziale** nella radice della **gerarchia** .
+* Trascinare l'asset di **mapping spaziale** nella radice della **gerarchia**.
 * Fare clic sull'oggetto **mapping spaziale** nella gerarchia.
 * Nel **pannello Inspector** modificare le proprietà seguenti:
   * Selezionare la casella per la **visualizzazione dei mesh** .
-  * Individuare il **materiale di estrazione** e fare clic sul cerchio a destra. Digitare " **wireframe** " nel campo di ricerca nella parte superiore. Fare clic sul risultato, quindi chiudere la finestra.
+  * Individuare il **materiale di estrazione** e fare clic sul cerchio a destra. Digitare "**wireframe**" nel campo di ricerca nella parte superiore. Fare clic sul risultato, quindi chiudere la finestra.
 * Esportare, compilare e distribuire l'app nell'emulatore di HoloLens.
 * Quando viene eseguita l'app, viene eseguito il rendering in wireframe di una rete di una stanza reale di una stanza reale sottoposta a scansione.
 * Guarda in che modo una sfera in sequenza ricade sulla fase e sul pavimento!
 
 Ora verrà illustrato come spostare l'oggetto Origamicollection in una nuova posizione:
 
-* Nella cartella **Scripts** creare uno script denominato **TapToPlaceParent** .
+* Nella cartella **Scripts** creare uno script denominato **TapToPlaceParent**.
 * Nella **gerarchia** espandere **origamicollection** e selezionare l'oggetto **stage** .
 * Trascinare lo script **TapToPlaceParent** nell'oggetto Stage.
 * Aprire lo script **TapToPlaceParent** in Visual Studio e aggiornarlo come segue:
@@ -624,7 +624,7 @@ public class TapToPlaceParent : MonoBehaviour
 ```
 
 * Esportare, compilare e distribuire l'app.
-* A questo punto dovrebbe essere possibile collocare il gioco in una posizione specifica guardandolo, usando il gesto selezionato ( **a** o barra spaziatrice), quindi passando a una nuova posizione e usando di nuovo il movimento di selezione.
+* A questo punto dovrebbe essere possibile collocare il gioco in una posizione specifica guardandolo, usando il gesto selezionato (**a** o barra spaziatrice), quindi passando a una nuova posizione e usando di nuovo il movimento di selezione.
 
 ## <a name="the-end"></a>La fine
 

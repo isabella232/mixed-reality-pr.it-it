@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, perdita di rilevamento, immagine della perdita di rilevamento
-ms.openlocfilehash: 5aa17def844735088bcee6137a7b76a586107e44
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, perdita di rilevamento, immagine della perdita del rilevamento, polling, auricolare a realtà mista, auricolare di realtà mista di Windows, auricolare di realtà virtuale
+ms.openlocfilehash: 52b81069e6b9f94a2a6a4fb552be4234cf43d1f0
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683120"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678420"
 ---
 # <a name="tracking-loss-in-unity"></a>Perdita del rilevamento in Unity
 
@@ -30,7 +30,7 @@ Per gestire manualmente la perdita del rilevamento, è necessario passare a **mo
 **Spazio dei nomi:** *UnityEngine. XR. WSA*<br>
 **Tipo:** *WorldManager*
 
-* World Manager espone un evento per rilevare il rilevamento perso/acquisito ( *WorldManager. OnPositionalLocatorStateChanged* ) e una proprietà per eseguire una query sullo stato corrente ( *WorldManager. state* )
+* World Manager espone un evento per rilevare il rilevamento perso/acquisito (*WorldManager. OnPositionalLocatorStateChanged*) e una proprietà per eseguire una query sullo stato corrente (*WorldManager. state*)
 * Quando lo stato di rilevamento non è attivo, la fotocamera non sembra tradursi nel mondo virtuale, anche quando l'utente si traduce. Ciò significa che gli oggetti non corrisponderanno più a una posizione fisica e tutti verranno visualizzati corpo bloccati.
 
 Quando si gestiscono le modifiche di rilevamento, è necessario eseguire il polling per la proprietà di stato ogni frame o gestire l'evento *OnPositionalLocatorStateChanged* .

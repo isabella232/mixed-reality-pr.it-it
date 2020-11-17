@@ -7,12 +7,12 @@ ms.date: 07/29/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realtà mista, individuare, distribuire, indice, pagina di destinazione, progettazione, sviluppo, esercitazioni, app di esempio, nozioni di base, case study, risorse, procedure per HoloLens, progetti open source
-ms.openlocfilehash: 34c78c277e0b184c0421c2bdd56ef13411a5bf29
-ms.sourcegitcommit: bd359c269add7ac76f0c2c26ca7caedba14749b1
+ms.openlocfilehash: 7c8fc83fd2b5542909fd2ea6ab4dca288175c56c
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94417836"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631519"
 ---
 # <a name="get-started-with-mixed-reality"></a>Informazioni di base sulla realtà mista
 
@@ -143,11 +143,6 @@ Se si è interessati a vedere come funzionano i diversi servizi e dispositivi ha
 
 <br>
 
-
 >[!IMPORTANT]
 >Tutto il materiale per lo sviluppo della realtà mista viene fornito in questo sito solo per riferimento. L'applicazione, il relativo utilizzo e l'impatto sugli utenti finali sono esclusiva responsabilità dello sviluppatore dell'applicazione, che è tenuto anche ad assicurarsi che l'applicazione non causi disagi, lesioni o altri danni agli utenti finali, oltre che a includere le dichiarazioni di non responsabilità e le avvertenze appropriate. È sempre necessario che lo sviluppatore adotti le misure appropriate in fase di sviluppo e pubblicazione dell'applicazione per assicurarsi che l'applicazione sia sicura e soddisfi tutti gli obblighi previsti nel [Contratto per gli sviluppatori di app con Microsoft](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement).
 
-## <a name="see-also"></a>Vedere anche
-* [Dettagli sull'hardware dei visori VR immersive](immersive-headset-hardware-details.md)
-* [Risorse della community](community.md)
-* [Guida per appassionati di VR](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/)

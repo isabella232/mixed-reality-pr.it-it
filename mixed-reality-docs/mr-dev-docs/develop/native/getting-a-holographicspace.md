@@ -5,18 +5,18 @@ author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Realtà mista di Windows, HolographicSpace, CoreWindow, input spaziale, rendering, catena di scambio, frame olografico, ciclo di aggiornamento, ciclo di gioco, frame di riferimento, locatability, codice di esempio, procedura dettagliata
-ms.openlocfilehash: d96362e7d5795449b608196e52bce55d0f16625b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista di Windows, HolographicSpace, CoreWindow, input spaziale, rendering, catena di scambio, frame olografico, ciclo di aggiornamento, ciclo del gioco, frame di riferimento, locatability, codice di esempio, procedura dettagliata, auricolare in realtà mista, auricolare di realtà misto di Windows, auricolare della realtà virtuale
+ms.openlocfilehash: fa2c64901a7c4a09710a472509441d54a9e3a383
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685924"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679640"
 ---
 # <a name="getting-a-holographicspace"></a>Ottenere un HolographicSpace
 
 > [!NOTE]
-> Questo articolo si riferisce alle API native di WinRT legacy.  Per i nuovi progetti di app native, è consigliabile usare l' **[API OpenXR](openxr-getting-started.md)** .
+> Questo articolo si riferisce alle API native di WinRT legacy.  Per i nuovi progetti di app native, è consigliabile usare l' **[API OpenXR](openxr-getting-started.md)**.
 
 La classe <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> è il portale nel mondo olografico. Controlla il rendering immersivo, fornisce i dati della fotocamera e fornisce l'accesso alle API di ragionamento spaziale. Ne viene creato uno per il <a href="https://docs.microsoft.com/api/windows.ui.core.corewindow" target="_blank">CoreWindow</a> dell'app UWP o l'HWND dell'app Win32.
 
@@ -114,20 +114,20 @@ m_cameraAddedToken = m_holographicSpace.CameraAdded(
 
 L'app deve anche rispondere agli eventi **CameraRemoved** rilasciando le risorse create per la fotocamera.
 
-Da **DeviceResources:: SetHolographicSpace** :
+Da **DeviceResources:: SetHolographicSpace**:
 
 ```cpp
 m_cameraRemovedToken = m_holographicSpace.CameraRemoved(
     std::bind(&AppMain::OnCameraRemoved, this, _1, _2));
 ```
 
-I gestori di eventi devono completare alcune operazioni per garantire che il rendering olografico scorra senza problemi e che l'app sia in grado di eseguire il rendering. Leggere il codice e i commenti per i dettagli: è possibile cercare **OnCameraAdded** e **OnCameraRemoved** nella classe principale per comprendere in che modo la mappa **m_cameraResources** viene gestita da **DeviceResources** .
+I gestori di eventi devono completare alcune operazioni per garantire che il rendering olografico scorra senza problemi e che l'app sia in grado di eseguire il rendering. Leggere il codice e i commenti per i dettagli: è possibile cercare **OnCameraAdded** e **OnCameraRemoved** nella classe principale per comprendere in che modo la mappa **m_cameraResources** viene gestita da **DeviceResources**.
 
 A questo punto, ci siamo concentrati su AppMain e sulla configurazione che consente all'app di sapere sulle fotocamere olografiche. Tenendo presente questo aspetto, è importante prendere in considerazione i due requisiti seguenti:
 
 1. Per il gestore dell'evento **CameraAdded** , l'app può funzionare in modo asincrono per completare la creazione di risorse e il caricamento di asset per la nuova fotocamera olografica. Le app che accettano più di un frame per completare questa operazione devono richiedere un rinvio e completare il rinvio dopo il caricamento asincrono. un' [attività PPL](https://docs.microsoft.com/cpp/parallel/concrt/parallel-patterns-library-ppl) può essere utilizzata per eseguire operazioni asincrone. L'app deve assicurarsi che sia pronta per il rendering della fotocamera immediatamente quando esce dal gestore eventi o quando completa il rinvio. Se si esce dal gestore eventi o si completa il rinvio, viene indicato al sistema che l'app è ora pronta a ricevere i frame olografici con la fotocamera inclusa.
 
-2. Quando l'app riceve un evento **CameraRemoved** , deve rilasciare tutti i riferimenti al buffer nascosto e chiudere immediatamente la funzione. Sono incluse le visualizzazioni della destinazione di rendering e qualsiasi altra risorsa che può includere un riferimento a [IDXGIResource](https://docs.microsoft.com/windows/desktop/api/dxgi/nn-dxgi-idxgiresource). L'app deve inoltre assicurarsi che il buffer nascosto non sia collegato come destinazione di rendering, come illustrato in **CameraResources:: ReleaseResourcesForBackBuffer** . Per velocizzare le operazioni, l'app può rilasciare il buffer nascosto e avviare un'attività per completare in modo asincrono qualsiasi altra operazione necessaria per arrestare la fotocamera. Il modello di app olografico include un'attività PPL che è possibile usare a questo scopo.
+2. Quando l'app riceve un evento **CameraRemoved** , deve rilasciare tutti i riferimenti al buffer nascosto e chiudere immediatamente la funzione. Sono incluse le visualizzazioni della destinazione di rendering e qualsiasi altra risorsa che può includere un riferimento a [IDXGIResource](https://docs.microsoft.com/windows/desktop/api/dxgi/nn-dxgi-idxgiresource). L'app deve inoltre assicurarsi che il buffer nascosto non sia collegato come destinazione di rendering, come illustrato in **CameraResources:: ReleaseResourcesForBackBuffer**. Per velocizzare le operazioni, l'app può rilasciare il buffer nascosto e avviare un'attività per completare in modo asincrono qualsiasi altra operazione necessaria per arrestare la fotocamera. Il modello di app olografico include un'attività PPL che è possibile usare a questo scopo.
 
 >[!NOTE]
 >Per determinare quando viene visualizzata una fotocamera aggiunta o rimossa nel frame, usare le proprietà **HolographicFrame** [AddedCameras](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe.addedcameras) e [RemovedCameras](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe.removedcameras) .
@@ -142,7 +142,7 @@ I frame di riferimento stazionari sono progettati per stabilizzare le posizioni 
 
 Il localizzatore spaziale rappresenta il dispositivo di realtà mista di Windows e tiene traccia del movimento del dispositivo e fornisce sistemi di coordinate che possono essere riconosciuti in relazione alla relativa posizione.
 
-Da **AppMain:: OnHolographicDisplayIsAvailableChanged** :
+Da **AppMain:: OnHolographicDisplayIsAvailableChanged**:
 
 ```cpp
 spatialLocator = SpatialLocator::GetDefault();
@@ -150,7 +150,7 @@ spatialLocator = SpatialLocator::GetDefault();
 
 Creare il frame di riferimento fisso una volta all'avvio dell'app. Questo è analogo alla definizione di un sistema di coordinate globale, con l'origine posizionata in corrispondenza della posizione del dispositivo all'avvio dell'app. Questo frame di riferimento non si sposta con il dispositivo.
 
-Da **AppMain:: SetHolographicSpace** :
+Da **AppMain:: SetHolographicSpace**:
 
 ```cpp
 m_stationaryReferenceFrame =
