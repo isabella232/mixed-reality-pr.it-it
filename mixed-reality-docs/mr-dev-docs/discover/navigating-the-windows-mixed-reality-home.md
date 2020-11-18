@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Shell, sistema operativo, piattaforma, scogliera, casa, casa, ambiente, avvio, menu Start, menu Home, pin, app, avvia app, Inserisci app, Teleport, sposta, naviga
-ms.openlocfilehash: 1f2ec91edca100e9253a6c8e65f4b3f9d2b2feeb
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Shell, sistema operativo, piattaforma, Cliff House, casa, casa, ambiente, avvio, menu Start, menu Home, pin, app, avvio di app, app, Teleport, sposta, naviga, auricolare realtà mista, cuffia virtuale reale, informazioni sulla realtà virtuale
+ms.openlocfilehash: 590e52de7caacc515e703da19e9efdc0a2b9c535
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687581"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703447"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Esplorazione dello spazio iniziale di Windows Mixed Reality
 
@@ -48,11 +48,11 @@ Le app possono essere avviate anche tramite un'API da app a app o tramite Cortan
 
 ## <a name="moving-and-adjusting-apps"></a>Spostamenti e regolazioni delle app
 
-Selezionare **Adjust** sulla barra dell'app per visualizzare i controlli che consentono di spostare, ridimensionare e ruotare il contenuto della realtà mista. Al termine, selezionare **fine** .
+Selezionare **Adjust** sulla barra dell'app per visualizzare i controlli che consentono di spostare, ridimensionare e ruotare il contenuto della realtà mista. Al termine, selezionare **fine**.
 
 ![Ardesia del negozio in modalità di regolazione (cornice blu). Si noti che la barra dell'app (superiore) è cambiata per includere i pulsanti ' done ' è Remove '.](images/adjust-500px.png)
 
-App diverse possono avere opzioni aggiuntive sulla barra dell'app. Microsoft Edge, ad esempio, dispone di opzioni di *scorrimento* , *trascinamento* e *Zoom* . 
+App diverse possono avere opzioni aggiuntive sulla barra dell'app. Microsoft Edge, ad esempio, dispone di opzioni di *scorrimento*, *trascinamento* e *Zoom* . 
 
 ![Barra dell'app per le app 2D in esecuzione in HoloLens](images/holobar-500px.png)
 
@@ -60,9 +60,9 @@ Il pulsante **indietro** Torna alle schermate visualizzate in precedenza nell'ap
 
 ## <a name="getting-around-your-home"></a>Guida alla Home page
 
-Con **HoloLens** , è possibile spostarsi nello spazio fisico per spostarsi all'interno della Home page.
+Con **HoloLens**, è possibile spostarsi nello spazio fisico per spostarsi all'interno della Home page.
 
-Con le **cuffie immersive** , è possibile ottenere in modo analogo le playspace per spostarsi all'interno di un'area simile nel mondo virtuale. Per spostarsi tra le distanze più lunghe, è possibile usare levetta sul controller per la "procedura", oppure è possibile usare la *teleportazione* per passare immediatamente a distanze più lunghe.
+Con le **cuffie immersive**, è possibile ottenere in modo analogo le playspace per spostarsi all'interno di un'area simile nel mondo virtuale. Per spostarsi tra le distanze più lunghe, è possibile usare levetta sul controller per la "procedura", oppure è possibile usare la *teleportazione* per passare immediatamente a distanze più lunghe.
 
 ![Teleportazione nella Home realtà mista di Windows](images/teleportation-500px.png)
 

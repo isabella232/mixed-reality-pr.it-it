@@ -1,25 +1,25 @@
 ---
-title: Sguardo e dimora
+title: Sguardo fisso e attesa
 description: Panoramica generale del modello di input di tipo (occhio/testa)
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
-keywords: Realtà mista, sguardo, abitazione, interazione, progettazione, rilevamento degli occhi, verifica della testa
-ms.openlocfilehash: ee8b6487079a071fe84606949314f2dd315df45f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista, sguardo, abitazione, interazione, progettazione, rilevamento degli occhi, rilevamento Head, auricolare in realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit di realtà mista
+ms.openlocfilehash: d47401b65f7d62e1fe59655c42efe72ac68acfc6
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686980"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702197"
 ---
-# <a name="gaze-and-dwell"></a>Sguardo e dimora
+# <a name="gaze-and-dwell"></a>Sguardo fisso e attesa
 
 Quando le mani sono occupate con gli attrezzi e le parti, i movimenti possono risultare difficili o addirittura impossibili.
 I comandi vocali possono anche essere inaffidabili in determinati contesti, ad esempio in condizioni troppo potenti.
 Sguardi e abitazioni offre un meccanismo familiare e facile da gestire per l'esecuzione di attività di Head-up e hands-free in HoloLens.
 Inoltre, lo sguardo e l'abitazione sono un ottimo fallback indipendente dall'interferenza del rumore o dai vincoli di silenzio nell'ambiente operativo.
-Si distinguono due varianti di _sguardo e dimora_ , ovvero lo [sguardo](gaze-and-dwell-head.md) e l'abitato e lo [sguardo e l'abitazione](gaze-and-dwell-eyes.md).
+Si distinguono due varianti di _sguardo e dimora_, ovvero lo [sguardo](gaze-and-dwell-head.md) e l'abitato e lo [sguardo e l'abitazione](gaze-and-dwell-eyes.md).
 
 ## <a name="scenarios"></a>Scenari
 

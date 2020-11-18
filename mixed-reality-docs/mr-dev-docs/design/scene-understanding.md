@@ -5,13 +5,13 @@ author: szymons
 ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
-keywords: Comprensione della scena, mapping spaziale, realtà mista di Windows, Unity
-ms.openlocfilehash: 6185d434b1687675f9ae46313277f61cf6d5e1f8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Comprensione della scena, mapping spaziale, realtà mista di Windows, Unity, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, occlusione, SDK
+ms.openlocfilehash: 80fb01707d3265aa3dac23d75ea92034115d3c94
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683997"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703367"
 ---
 # <a name="scene-understanding"></a>Informazioni sulle scene
 
@@ -109,7 +109,7 @@ Se i requisiti possono tollerare un aumento della latenza della comprensione del
 
 La comprensione della scena genera maglie stagne che compongono lo spazio con la semantica, in particolare per rispondere a molte limitazioni per la fisica che i mesh di mapping spaziale impongono. Le strutture stagne assicurano che i cast dei raggi fisici vengano sempre raggiunti e la scomposizione semantica consente la generazione più semplice di mesh NAV per la navigazione interna. Come descritto nella sezione relativa all' [occlusione](#occlusion), la creazione di una scena con EnableSceneObjectMeshes e EnableWorldMesh produrrà la mesh più fisicamente completa possibile. La proprietà stagne della mesh dell'ambiente impedisce che gli hit test abbiano esito negativo e che i dati della mesh garantiscano che la fisica interagisca con tutti gli oggetti nella scena e non solo con la struttura della stanza.
 
-### <a name="navigation"></a>Navigazione
+### <a name="navigation"></a>Spostamento
 
 Le mesh planari decomposte dalla classe semantica sono costrutti ideali per la pianificazione della navigazione e del percorso, semplificando molti dei problemi descritti nella panoramica dello [spostamento del mapping spaziale](spatial-mapping.md#navigation) . Gli oggetti SceneMesh calcolati nella scena sono già decomposti dal tipo di superficie, assicurando che la generazione della mesh NAV sia limitata alle superfici su cui è possibile eseguire il percorso. A causa della semplicità della struttura del piano, la generazione della mesh NAV dinamica nei motori 3D, ad esempio Unity, è raggiungibile a seconda dei requisiti in tempo reale.
 

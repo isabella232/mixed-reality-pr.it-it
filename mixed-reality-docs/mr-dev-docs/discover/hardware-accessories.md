@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 05/20/2020
 ms.topic: article
-keywords: procedure, accessori, Bluetooth, BT, controller, gamepad, clicker, Xbox
-ms.openlocfilehash: 7f51264a3914d028c9a027d70d5aa1999582110a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: procedure, accessori, Bluetooth, BT, controller, gamepad, clicker, Xbox, hardware, cuffie per realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale, controller di movimento
+ms.openlocfilehash: 3855d5337c4cad462b60ff8c73cec0b7b96c0ca1
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690340"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702007"
 ---
 # <a name="hardware-accessories"></a>Accessori hardware
 
@@ -19,7 +19,7 @@ I dispositivi per la realtà mista di Windows supportano accessori. È possibile
 
 Per informazioni sull'uso di accessori Bluetooth con HoloLens, vedere [connettersi ai dispositivi Bluetooth e USB-C](https://docs.microsoft.com/hololens/hololens-connect-devices).
 
-Gli auricolari a realtà mista di Windows richiedono accessori per l'input oltre lo [sguardo](../design/gaze-and-commit.md) e la [voce](../design/voice-input.md). Gli accessori supportati includono **tastiera e mouse** , **Gamepad** e **[controller di movimento](../design/motion-controllers.md)** .
+Gli auricolari a realtà mista di Windows richiedono accessori per l'input oltre lo [sguardo](../design/gaze-and-commit.md) e la [voce](../design/voice-input.md). Gli accessori supportati includono **tastiera e mouse**, **Gamepad** e **[controller di movimento](../design/motion-controllers.md)**.
 
 ## <a name="pairing-bluetooth-accessories"></a>Associazione di accessori Bluetooth
 

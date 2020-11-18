@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Realtà mista, controlli, interazione, interfaccia utente, UX
-ms.openlocfilehash: 73a69cad3899a2419cc5ffd55cf0b0eb33679f7b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, menu, cuffie per realtà mista, cuffie di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
+ms.openlocfilehash: 215147f0ded0c9594ddf075c1464ab04d031f2a9
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684100"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703397"
 ---
 # <a name="near-menu"></a>Menu adiacente
 

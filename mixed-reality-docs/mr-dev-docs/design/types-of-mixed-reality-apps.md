@@ -1,19 +1,19 @@
 ---
-title: Tipi di app di realtà mista
+title: Tipi di app per realtà mista
 description: Uno dei vantaggi dello sviluppo di app per la realtà mista di Windows è costituito dalla possibilità che la piattaforma possa supportare da ambienti virtuali completamente immersivi, fino a una chiara sovrapposizione di informazioni sull'ambiente corrente di un utente.
 author: rwinj
 ms.author: willyang
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realtà mista di Windows, progettazione, modelli di app
-ms.openlocfilehash: 5d2fa3a5d83f878009f4574c3468719c9af17014
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista di Windows, progettazione, modelli di app, cuffie per realtà mista, cuffie di realtà mista di Windows, cuffia virtuale reale, HoloLens
+ms.openlocfilehash: 17ae6b2ec8d9c67d2b6f0114535fc25c1cb487b2
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685996"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703217"
 ---
-# <a name="types-of-mixed-reality-apps"></a>Tipi di app di realtà mista
+# <a name="types-of-mixed-reality-apps"></a>Tipi di app per realtà mista
 
 Uno dei vantaggi dello sviluppo di app per Windows Mixed Reality è costituito dal fatto che la piattaforma può supportare un'ampia gamma di esperienze. Da ambienti virtuali completamente immersivi a una sovrapposizione poco invasiva di informazioni all'ambiente corrente di un utente, Windows Mixed Reality offre un set efficace di strumenti per creare qualsiasi tipo di esperienza. È importante che un creatore di app conosca tempestivamente il proprio processo di sviluppo, a seconda del punto in cui si trova in questo spettro. Questa decisione avrà un effetto sul trucco della progettazione dell'app e sul percorso tecnologico per lo sviluppo.
 

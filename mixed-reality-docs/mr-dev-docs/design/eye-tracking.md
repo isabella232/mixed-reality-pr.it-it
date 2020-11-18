@@ -5,13 +5,13 @@ author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
-keywords: Rilevamento degli occhi, realtà mista, input, sguardi oculari, calibrazione
-ms.openlocfilehash: 20e76188c6b64776d818f340f6aca0a725454dd8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Rilevamento degli occhi, realtà mista, input, sguardo, calibratura, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, finalità, azioni
+ms.openlocfilehash: c6167fc48a98de8f400400475c2057a2b4773b29
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685085"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702587"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Tracciamento oculare in HoloLens 2
 
@@ -63,7 +63,7 @@ Per altre informazioni sulla calibrazione e su come garantire un'esperienza unif
 <br>
 
 ## <a name="available-eye-tracking-data"></a>Dati di rilevamento degli occhi disponibili
-Prima di approfondire i casi d'uso specifici per l'input con sguardo a occhio, è opportuno evidenziare brevemente le funzionalità fornite dall'API HoloLens 2 [Eye Tracking](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) . Gli sviluppatori possono accedere a un singolo raggio d'occhio (origine e direzione dello sguardo) a circa _30 fps (30 Hz)_ .
+Prima di approfondire i casi d'uso specifici per l'input con sguardo a occhio, è opportuno evidenziare brevemente le funzionalità fornite dall'API HoloLens 2 [Eye Tracking](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) . Gli sviluppatori possono accedere a un singolo raggio d'occhio (origine e direzione dello sguardo) a circa _30 fps (30 Hz)_.
 Per informazioni più dettagliate su come accedere ai dati di rilevamento degli occhi, fare riferimento alle guide per gli sviluppatori per l'uso [degli sguardi in DirectX](../develop/native/gaze-in-directx.md) e [degli sguardi in Unity](https://aka.ms/mrtk-eyes).
 
 Lo sguardo stimato è approssimativamente entro 1,5 gradi nell'angolo visivo intorno alla destinazione effettiva (vedere la figura seguente). Poiché sono previste piccole imprecisioni, gli sviluppatori devono pianificare un certo margine attorno a questo valore con associazione inferiore (ad esempio, 2.0-3.0 gradi possono comportare un'esperienza molto più comoda). Di seguito viene illustrato come gestire la selezione di destinazioni di piccole dimensioni in modo più dettagliato. Per un accurato funzionamento del tracciamento oculare, ogni utente deve essere sottoposto a un'apposita calibrazione. 
@@ -79,9 +79,9 @@ Si noti che questi casi d'uso non fanno ancora parte dell'esperienza della shell
 È possibile provare alcuni di essi nel [Toolkit di realtà mista](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html), che fornisce diversi esempi interessanti e avanzati per l'uso degli occhi, ad esempio selezioni mirate, rapide e senza problemi, nonché lo scorrimento automatico del testo in base alle informazioni esaminate dall'utente. 
 
 ### <a name="user-intent"></a>Operazione che l'utente intende eseguire    
-Le informazioni su dove e cosa esamina un utente forniscono un **contesto potente per altri input** , ad esempio Voice, Hands e Controllers.
+Le informazioni su dove e cosa esamina un utente forniscono un **contesto potente per altri input**, ad esempio Voice, Hands e Controllers.
 Tali informazioni possono essere usate per diverse attività.
-Questo, ad esempio, può variare da un punto di **targeting** vista rapido e semplice a quello della scena semplicemente osservando un ologramma e pronunciando *"Select"* (vedere anche lo [sguardo e il commit](gaze-and-commit.md)) o *"put this..."* , quindi esaminando il punto in cui l'utente desidera inserire l'ologramma e indicare *"... "* . Per alcuni esempi, vedi [Mixed Reality Toolkit - Selezione della destinazione con lo sguardo](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) e [Mixed Reality Toolkit - Posizionamento della destinazione con lo sguardo](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html).
+Questo, ad esempio, può variare da un punto di **targeting** vista rapido e semplice a quello della scena semplicemente osservando un ologramma e pronunciando *"Select"* (vedere anche lo [sguardo e il commit](gaze-and-commit.md)) o *"put this..."*, quindi esaminando il punto in cui l'utente desidera inserire l'ologramma e indicare *"... "*. Per alcuni esempi, vedi [Mixed Reality Toolkit - Selezione della destinazione con lo sguardo](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) e [Mixed Reality Toolkit - Posizionamento della destinazione con lo sguardo](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html).
 
 Inoltre, un esempio per finalità utente potrebbe includere l'uso di informazioni sugli elementi esaminati dagli utenti per migliorare l'engagement con agenti virtuali incorporati e ologrammi interattivi. Ad esempio, gli agenti virtuali potrebbero adattare le opzioni disponibili e il relativo comportamento, in base al contenuto attualmente visualizzato. 
 
@@ -92,7 +92,7 @@ Un aspetto fondamentale è che la velocità di scorrimento si adatta alla veloci
 Un altro esempio è **lo zoom e la panoramica supportati dagli occhi,** in cui l'utente può avere la tendenza a concentrarsi esattamente su quello che si sta concentrando. L'attivazione e il controllo della velocità di zoom possono essere controllati da input voce o mano, che è importante per fornire all'utente il controllo, evitando così la sovraccarica. Di seguito vengono descritte in dettaglio le considerazioni di progettazione. Una volta eseguito lo zoom avanti, l'utente può seguire in modo semplice, ad esempio, il corso di una strada per esplorare il suo quartiere utilizzando semplicemente il proprio sguardo.
 Alcune demo di esempio per questi tipi di interazioni sono disponibili in [Mixed Reality Toolkit - Navigazione con gli occhi](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Navigation.html).
 
-Seguono altri casi di utilizzo per le _azioni implicite_ :
+Seguono altri casi di utilizzo per le _azioni implicite_:
 - **Notifiche intelligenti:** Ci si annoia a ricevere le notifiche che si trovano nel punto in cui si sta cercando? Prendendo in considerazione le informazioni a cui un utente presta attenzione, è possibile migliorare questa esperienza compensando le notifiche da cui l'utente sta attualmente guardando. Questo limita le distrazioni e le chiude automaticamente dopo che l'utente ha terminato la lettura. 
 - **Ologrammi attenti:** Olografici che reagiscono in maniera impercettibile quando si osservano. Questo può variare da elementi dell'interfaccia utente leggermente luminosi, un fiore lentamente fiorito a un cane virtuale che inizia a esaminare l'utente e scuotendo la coda. Questa interazione potrebbe offrire un'interessante sensazione di connettività e soddisfazione nell'applicazione.
 

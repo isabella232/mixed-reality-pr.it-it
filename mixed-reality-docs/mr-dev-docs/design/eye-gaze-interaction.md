@@ -5,13 +5,13 @@ author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
-keywords: Rilevamento degli occhi, realtà mista, input, sguardi occhi
-ms.openlocfilehash: 57b90142fc47b72030f9b767370fd84a5c7d5b14
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Rilevamento degli occhi, realtà mista, input, sguardi oculari, cuffie per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, progettazione, interazioni
+ms.openlocfilehash: 59dded6ca23b9adc075dc02d642ce7761f93bcfb
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685092"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702547"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>Interazione basata sugli sguardi su HoloLens 2
 
@@ -70,7 +70,7 @@ Grazie a un elevato consumo di energia, è molto responsabile.
 Sebbene sia possibile usare gli sguardi per creare esperienze utente soddisfacenti, che rendono un supereroe, è anche importante sapere che cosa non è adatto a tenere in considerazione questo aspetto. Di seguito sono illustrate alcune delle *questioni* da prendere in considerazione e il modo in cui risolverle quando si lavora con l'input Eye-sguardi: 
 
 - **Il controllo degli sguardi è "always on"** Nel momento in cui si aprono i coperchi degli occhi, gli occhi iniziano a fissando su elementi nell'ambiente. Reagire a ogni aspetto effettuato e rilasciare accidentalmente le azioni, perché si è verificato un problema troppo lungo, comporterebbe un'esperienza insoddisfacente.
-È quindi consigliabile combinare gli occhi con un *comando vocale* , un *gesto della mano* , un *clic su un pulsante* o un'abitazione estesa per attivare la selezione di una destinazione (per altre informazioni, vedere [Eye-sguardi e commit](gaze-and-commit-eyes.md)).
+È quindi consigliabile combinare gli occhi con un *comando vocale*, un *gesto della mano*, un *clic su un pulsante* o un'abitazione estesa per attivare la selezione di una destinazione (per altre informazioni, vedere [Eye-sguardi e commit](gaze-and-commit-eyes.md)).
 Questa soluzione consente anche una modalità in cui l'utente può esaminarsi liberamente senza essere sopraffatto dall'attivazione involontaria di qualcosa. Questo problema deve essere preso in considerazione anche quando si progettano commenti visivi e uditivi quando si esamina una destinazione.
 Provare a non sovraccaricare l'utente con effetti di pop-out immediati o rumori al passaggio del mouse. La sottigliezza è Key. Verranno illustrate alcune procedure consigliate per questo più avanti quando si parlano le [raccomandazioni di progettazione](eye-gaze-interaction.md#design-recommendations).
 
@@ -82,7 +82,7 @@ Provare a non sovraccaricare l'utente con effetti di pop-out immediati o rumori 
 Si tratta di un sentimento che è possibile richiamare negli utenti quando si impone loro di selezionare destinazioni troppo piccole nell'applicazione usando la destinazione degli occhi.
 Durante la progettazione, per creare un'esperienza piacevole e confortevole per gli utenti, è consigliabile definire destinazioni con un angolo visivo di almeno 2 gradi.
 
-- **Spostamenti occhi** incompleti Gli occhi eseguono movimenti rapidi dalla fissa alla fissa. Se guardi i percorsi di analisi dei movimenti oculari registrati, noterai che risultano irregolari. Gli occhi si spostano rapidamente e in salti spontanei rispetto ai movimenti a *capo* o a *mano* .  
+- **Spostamenti occhi** incompleti Gli occhi eseguono movimenti rapidi dalla fissa alla fissa. Se guardi i percorsi di analisi dei movimenti oculari registrati, noterai che risultano irregolari. Gli occhi si spostano rapidamente e in salti spontanei rispetto ai movimenti a *capo* o a *mano*.  
 
 - **Verifica dell'affidabilità:** L'accuratezza del rilevamento degli sguardi può compromettere leggermente la luce quando gli occhi si adattano alle nuove condizioni.
 Sebbene questo non debba necessariamente influire sulla progettazione dell'applicazione, in quanto l'accuratezza dovrebbe essere compresa nel limite di 2 °, potrebbe essere necessario che l'utente ricalibra nuovamente. 

@@ -5,13 +5,13 @@ author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
-keywords: Realtà mista di Windows, progettazione, Coach mano, auricolare immersivo, MRTK, Hands, assistenza
-ms.openlocfilehash: 10e5f3b025e4346d7c4075c2de7252c9ab217c93
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: Realtà mista di Windows, progettazione, Coach mano, auricolare immersivo, MRTK, Hands, Hands, aiuto, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
+ms.openlocfilehash: d925f28b1d34b5a157e89fc0ea56a7b28fffbe8f
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683247"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702347"
 ---
 # <a name="hand-coach"></a>Coach mano
 ![Esempio: Hand Coach](images/HandCoach/MRTK_handCoach.jpg)<br>

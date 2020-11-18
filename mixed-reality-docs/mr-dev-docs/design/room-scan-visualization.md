@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: alexpf
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realtà mista di Windows, modelli di app, progettazione, HoloLens, analisi chat room, mapping spaziale, mesh
-ms.openlocfilehash: 25de181bbb2dedaba9e4917f51cc80bac77cc5f1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista di Windows, modelli di app, progettazione, HoloLens, analisi chat room, mapping spaziale, mesh, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare realtà virtuale, HoloLens
+ms.openlocfilehash: f912ddcff5ef1d14468cec1e63c8153ae6460476
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684029"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703357"
 ---
 # <a name="room-scan-visualization"></a>Visualizzazione della scansione dello spazio
 

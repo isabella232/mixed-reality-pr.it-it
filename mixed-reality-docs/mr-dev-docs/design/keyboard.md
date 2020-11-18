@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Realtà mista, controlli, interazione, interfaccia utente, UX
-ms.openlocfilehash: 9558cd607d7b696851660f495de7965348f571e1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, auricolare realtà mista, auricolare di realtà misto di Windows, auricolare di realtà virtuale, HoloLens, tastiera, MRTK, Toolkit realtà mista
+ms.openlocfilehash: 52555dec04b42b7865e8d358d57cbc9112a7a326
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684156"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703147"
 ---
 # <a name="keyboard"></a>Tastiera
 
@@ -32,7 +32,7 @@ L'applicazione di realtà mista può richiamare la tastiera di sistema in qualsi
 
 ---
 
-## <a name="next-development-checkpoint"></a>Checkpoint di sviluppo successivo
+## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
 Se si sta seguendo il percorso di checkpoint per lo sviluppo di Unity, l'attività successiva consiste nel distribuire l'applicazione in un dispositivo o in un emulatore. 
 

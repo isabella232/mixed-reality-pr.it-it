@@ -5,20 +5,20 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realtà mista di Windows, HoloLens, ologrammi, progettazione, interazione
-ms.openlocfilehash: f902639e66246c9184750ebc58dbad1c04b2bb5a
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: Realtà mista di Windows, HoloLens, ologrammi, progettazione, interazione, auricolare realtà mista, auricolare di realtà mista di Windows, cos'è la realtà aumentata
+ms.openlocfilehash: 6407770a818bc294cf615201a837218173b963d0
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631469"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702247"
 ---
 # <a name="what-is-a-hologram"></a>Che cos'è un ologramma?
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/MVXH5V8MVQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-HoloLens consente di creare **ologrammi** , oggetti costituiti da luce e suoni presenti in tutto il mondo, proprio come se fossero oggetti reali. Gli ologrammi rispondono a [sguardi](../design/gaze-and-commit.md), [movimenti](../design/gaze-and-commit.md#composite-gestures) e [comandi vocali](../design/voice-input.md)e possono interagire con le [aree reali](../design/spatial-mapping.md) . Con gli ologrammi puoi creare oggetti digitali che fanno parte del tuo mondo.
+HoloLens consente di creare **ologrammi**, oggetti costituiti da luce e suoni presenti in tutto il mondo, proprio come se fossero oggetti reali. Gli ologrammi rispondono a [sguardi](../design/gaze-and-commit.md), [movimenti](../design/gaze-and-commit.md#composite-gestures) e [comandi vocali](../design/voice-input.md)e possono interagire con le [aree reali](../design/spatial-mapping.md) . Con gli ologrammi puoi creare oggetti digitali che fanno parte del tuo mondo.
 
 <br>
 

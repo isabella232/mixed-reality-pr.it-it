@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 3D, modellazione, linee guida per la modellazione, requisiti delle risorse, linee guida per la creazione, avvio, avvio 3D, trama, materiali, complessità, triangoli, mesh, poligoni, policount, limiti
-ms.openlocfilehash: 606726b9c205ccdf3eacafca96b2bd9ccae43e82
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+keywords: 3D, modellazione, linee guida per la modellazione, requisiti delle risorse, linee guida per la creazione, avvio, avvio 3D, trama, materiali, complessità, triangoli, mesh, poligoni, policount, limiti, cuffie per realtà mista, cuffie per la realtà mista, auricolare di realtà virtuale
+ms.openlocfilehash: fb2f2718497781a2d38a0a061016e146ff077488
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781559"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703467"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>Creare modelli 3D per l'uso nello spazio iniziale
 
@@ -237,7 +237,7 @@ Le animazioni non possono essere più lunghe di 20 minuti e non possono contener
 
 |Funzionalità|Massimo|
 |-----|-----|
-|Durata|20 minuti|
+|Duration|20 minuti|
 |KeyFrames|36.000| 
 |Vertici di destinazione morph|8192|
 

@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
-keywords: Realtà mista, controlli, interazione, interfaccia utente, UX
-ms.openlocfilehash: 6458f4b1c80c8606d07d610f509ed610a0ca4268
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista, controlli, interazione, CUE, interfaccia utente, UX, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, audio
+ms.openlocfilehash: e298ce7fa46688a734c55a6674c03b89a4e7b5f3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684220"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703227"
 ---
 # <a name="interactable-object"></a>Oggetto che supporta interazioni
 
@@ -67,7 +67,7 @@ Per tutti gli oggetti che gli utenti possono interagire con lo sguardo, il raggi
 
 È possibile usare tecniche come l'evidenziazione o il ridimensionamento per fornire segnali visivi per lo stato di input dell'utente. In realtà mista, è possibile trovare gli esempi di visualizzazione di diversi Stati di input nel menu Start e con i pulsanti della barra delle applicazioni. 
 
-Ecco come appaiono questi stati in un **pulsante olografico** :
+Ecco come appaiono questi stati in un **pulsante olografico**:
 
 :::row:::
     :::column:::
@@ -93,12 +93,12 @@ Ecco come appaiono questi stati in un **pulsante olografico** :
 HoloLens 2 supporta l'input di rilevamento a mano articolato che consente di interagire con gli oggetti. Senza commenti e suggerimenti tattili e una profonda percezione della profondità, a volte può essere difficile capire quanto è lontana la mano da un oggetto o se lo si sta toccando. È importante fornire segnali visivi sufficienti per comunicare lo stato dell'oggetto e in particolare lo stato delle mani in relazione a tale oggetto.
 
 Usare il feedback visivo per comunicare quanto segue:
-* **Impostazione predefinita (osservazione)** : stato inattivo predefinito dell'oggetto.
-* **Hover** : quando una mano si avvicina a un ologramma, modificare gli oggetti visivi per comunicare che la mano è destinata a ologrammi. 
-* **Distanza e punto di interazione** : poiché la mano si avvicina a un ologramma, progettare il feedback per comunicare il punto di interazione proiettato, oltre a quanto lontano dall'oggetto il dito
-* **Inizio contatto** : modificare gli oggetti visivi (chiaro, colore) per comunicare che si è verificato un tocco
-* **Colto** : modificare gli oggetti visivi (chiaro, colore) quando l'oggetto viene afferrato
-* **Estremità del contatto** : modificare gli oggetti visivi (chiaro, colore) al termine del tocco
+* **Impostazione predefinita (osservazione)**: stato inattivo predefinito dell'oggetto.
+* **Hover**: quando una mano si avvicina a un ologramma, modificare gli oggetti visivi per comunicare che la mano è destinata a ologrammi. 
+* **Distanza e punto di interazione**: poiché la mano si avvicina a un ologramma, progettare il feedback per comunicare il punto di interazione proiettato, oltre a quanto lontano dall'oggetto il dito
+* **Inizio contatto**: modificare gli oggetti visivi (chiaro, colore) per comunicare che si è verificato un tocco
+* **Colto**: modificare gli oggetti visivi (chiaro, colore) quando l'oggetto viene afferrato
+* **Estremità del contatto**: modificare gli oggetti visivi (chiaro, colore) al termine del tocco
 
 <br>
 
@@ -189,8 +189,8 @@ Un [pulsante in HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unit
 ### <a name="audio-cues"></a>Segnali audio
 
 Per le interazioni dirette, il feedback audio appropriato può migliorare notevolmente l'esperienza utente. Usare il feedback audio per comunicare quanto segue:
-* **Inizio contatto** : riprodurre un suono quando inizia il tocco
-* **Terminazione contatto** : riprodurre un suono al termine del tocco
+* **Inizio contatto**: riprodurre un suono quando inizia il tocco
+* **Terminazione contatto**: riprodurre un suono al termine del tocco
 * **Inizio** avvio: riprodurre un suono quando viene avviata la cattura
 * **Estremità** di chiusura: riprodurre un suono quando termina la cattura
 

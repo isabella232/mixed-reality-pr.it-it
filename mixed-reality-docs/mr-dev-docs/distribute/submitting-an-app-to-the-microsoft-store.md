@@ -5,13 +5,13 @@ author: hferrone
 ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
-keywords: Microsoft Store, HoloLens, cuffie immersive, app, UWP, invio, invio, filtri, metadati, requisiti di sistema, parole chiave, predato, certificazione, pacchetto, appx, merchandising
-ms.openlocfilehash: f5dae379deee54056595c291363b5b1e3e83f25e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+keywords: Microsoft Store, HoloLens, cuffie immersive, app, UWP, invio, invio, filtri, metadati, requisiti di sistema, parole chiave, predato, certificazione, pacchetto, appx, merchandising, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale
+ms.openlocfilehash: b5d25817afeb2d8d970d329c802b7eaabcdf7f35
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678790"
+ms.locfileid: "94703117"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Invio di un'app a Microsoft Store
 
@@ -120,7 +120,7 @@ Quando si associa l'app alla Microsoft Store, i valori seguenti vengono scaricat
 * Nome pacchetto
 * Publisher ID (ID editore)
 * Nome visualizzato editore
-* Version
+* Versione
 
 Se si sta eseguendo l'override del file Package. appxmanifest predefinito con un file con estensione XML personalizzato, non è possibile associare l'app al Microsoft Store. L'associazione di un file manifesto personalizzato con l'archivio comporterà un messaggio di errore.
 

@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
-keywords: realtà mista, sguardo fisso, attesa, interazione, progettazione
-ms.openlocfilehash: 825623b00107eec400b4df926c8980c92b065902
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista, sguardo, abitato, interazione, progettazione, cuffie per realtà mista, cuffie per realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit Reality, UX, linee guida, visualizzazione elenco
+ms.openlocfilehash: abedff5a273816f49419c7823b96eda1d474e336
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687012"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702317"
 ---
 # <a name="head-gaze-and-dwell"></a>Puntamento con la testa e attesa
 

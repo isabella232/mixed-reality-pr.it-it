@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 11/02/2019
 ms.topic: article
-keywords: Realtà mista di Windows, audio spaziale, progettazione, stile
-ms.openlocfilehash: 8bb48aad2d4582696241bc5444beabc88ca5a7d9
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista di Windows, audio spaziale, progettazione, stile, auricolare realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, movimenti, interazioni, attenuazione
+ms.openlocfilehash: 503a59eb6a71aea0e1ec043ca6e3196f821f211a
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686085"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703283"
 ---
 # <a name="how-to-use-sound-in-mixed-reality-applications"></a>Come usare un suono in applicazioni in realtà mista
 
@@ -68,7 +68,7 @@ Le interazioni vocali hanno spesso elementi visivi sottili. Usare i suoni per ra
 
 * Usare un segnale acustico positivo per le *conferme* dei comandi vocali. I toni crescenti e gli intervalli musicali principali sono validi.
 * Usare un tono più breve e meno positivo per gli *errori* dei comandi vocali. Evitare i suoni negativi. Usare invece un suono più a percussione, neutro per comunicare che l'applicazione sta procedendo dall'interazione.
-* Se l'applicazione ha una parola di riattivazione, usare un tono breve e gentile quando il dispositivo *inizia l'ascolto* . Usare un suono di loop delicato mentre l'applicazione *è* in ascolto.
+* Se l'applicazione ha una parola di riattivazione, usare un tono breve e gentile quando il dispositivo *inizia l'ascolto*. Usare un suono di loop delicato mentre l'applicazione *è* in ascolto.
 
 ### <a name="notifications"></a>Notifiche
 Le notifiche comunicano le modifiche dello stato dell'applicazione e altri eventi che non vengono avviati dall'utente, ad esempio i completamenti dei processi, i messaggi e le chiamate telefoniche.
@@ -99,7 +99,7 @@ La spazializzazione viene eseguita con un costo della CPU. Molte applicazioni ha
 ### <a name="when-and-how-to-apply-distance-based-attenuation"></a>Quando e come applicare un'attenuazione basata sulla distanza
 Nel mondo fisico, i suoni più lontani sono più tranquilli. Il motore audio può modellare questa attenuazione in base alla distanza di origine. Utilizzare l'attenuazione basata sulla distanza per la comunicazione di informazioni rilevanti.
 
-Le distanze per gli *indicatori visivi* , gli *ologrammi animati* e altri suoni informativi sono in genere rilevanti per l'utente. Usare l'attenuazione basata sulla distanza per fornire i segnali in modo intuitivo.
+Le distanze per gli *indicatori visivi*, gli *ologrammi animati* e altri suoni informativi sono in genere rilevanti per l'utente. Usare l'attenuazione basata sulla distanza per fornire i segnali in modo intuitivo.
 
 Regolare la curva di attenuazione per ogni origine per adattarla alle dimensioni degli spazi del mondo in realtà mista. La curva predefinita del motore audio è spesso destinata a spazi di dimensioni molto grandi (fino a metà chilometro).
 

@@ -5,13 +5,13 @@ author: nbarragan23
 ms.author: nobarr
 ms.date: 08/27/2019
 ms.topic: article
-keywords: mano, menu, pulsante, accesso rapido, layout
-ms.openlocfilehash: f7bf8ab2fb54e6a939bd538a0a0ba756c5efb916
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: mano, menu, pulsante, accesso rapido, layout, auricolare realtà mista, auricolare di realtà misto di Windows, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
+ms.openlocfilehash: 8f9adbdbebb826a79db037f48b233e3bc5e049de
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686925"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702297"
 ---
 # <a name="hand-menu"></a>Menu a mano
 
@@ -117,7 +117,7 @@ Di seguito sono riportati 2 posizionamenti consigliati in base alle esplorazioni
 ---
 
 ## <a name="menu-positions-that-are-not-recommended"></a>Posizioni dei menu non consigliate
-La ricerca degli utenti è stata eseguita con layout e percorsi di menu diversi. i percorsi dei menu seguenti **non sono consigliati** . trovare i svantaggi di ogni studio di seguito:
+La ricerca degli utenti è stata eseguita con layout e percorsi di menu diversi. i percorsi dei menu seguenti **non sono consigliati**. trovare i svantaggi di ogni studio di seguito:
 
 
 :::row:::

@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: mapping spaziale, HoloLens, realtà mista, ricostruzione della superficie, mesh
-ms.openlocfilehash: 6ca545327e412eaba5ee79959dfa9d01380b18c6
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: mapping spaziale, HoloLens, realtà mista, ricostruzione di superficie, mesh, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit di realtà mista, informazioni sulla scena, mesh globale, occlusione, fisica, navigazione, osservatore della superficie, rendering, elaborazione mesh
+ms.openlocfilehash: 448c64a6c19ee96d58be9a14f7ea4c34a755695e
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340669"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703317"
 ---
 # <a name="spatial-mapping"></a>Mapping spaziale
 
@@ -258,7 +258,7 @@ La natura di questa esperienza di analisi può variare significativamente a seco
 
 In primo luogo, **una comunicazione chiara con l'utente rappresenta il problema principale**. L'utente deve sempre tenere presente se i requisiti dell'applicazione vengono soddisfatti. Quando non vengono soddisfatte, dovrebbe essere immediatamente chiaro all'utente perché questo è così e dovrebbe essere portato rapidamente a intraprendere l'azione appropriata.
 
-In secondo luogo, **le applicazioni devono provare a trovare un equilibrio tra efficienza e affidabilità**. Quando è possibile eseguire questa operazione in modo **affidabile** , le applicazioni devono analizzare automaticamente i dati del mapping spaziale per salvare l'ora utente. Quando non è possibile eseguire questa operazione in modo affidabile, le applicazioni devono invece consentire all'utente di fornire rapidamente all'applicazione le informazioni aggiuntive necessarie.
+In secondo luogo, **le applicazioni devono provare a trovare un equilibrio tra efficienza e affidabilità**. Quando è possibile eseguire questa operazione in modo **affidabile**, le applicazioni devono analizzare automaticamente i dati del mapping spaziale per salvare l'ora utente. Quando non è possibile eseguire questa operazione in modo affidabile, le applicazioni devono invece consentire all'utente di fornire rapidamente all'applicazione le informazioni aggiuntive necessarie.
 
 Per semplificare la progettazione dell'esperienza di analisi corretta, considerare quali delle seguenti possibilità sono applicabili all'applicazione:
 
@@ -368,13 +368,6 @@ Di seguito sono riportati alcuni esempi di diversi tipi di elaborazione di mesh 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 * Affinché le mesh della superficie siano orientate correttamente, ogni GameObject deve essere attivo prima di essere inviato al SurfaceObserver per costruire la mesh. In caso contrario, le maglie vengono visualizzate nello spazio, ma ruotate a angoli strani.
 * Il GameObject che esegue lo script che comunica con il SurfaceObserver deve essere impostato sull'origine. In caso contrario, tutte le GameObject create e inviate al SurfaceObserver per la costruzione delle mesh avranno un offset uguale all'offset dell'oggetto del gioco padre. In questo modo, le mesh possono visualizzare diversi metri che rendono molto difficile eseguire il debug di ciò che accade.
-
-## <a name="next-discovery-checkpoint"></a>Checkpoint individuazione successiva
-
-Se si sta seguendo il [percorso di individuazione](../discover/get-started-with-mr.md) , è possibile esplorare le nozioni di base della realtà mista. Da qui è possibile passare all'argomento di base successivo: 
-
-> [!div class="nextstepaction"]
-> [Suggerire la scala di un oggetto (scala)](../design/scale.md)
 
 ## <a name="see-also"></a>Vedere anche
 * [Sistemi di coordinate](coordinate-systems.md)

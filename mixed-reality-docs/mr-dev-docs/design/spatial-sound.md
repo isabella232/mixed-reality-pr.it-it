@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 11/07/2019
 ms.topic: article
-keywords: Audio spaziale, audio surround, audio 3D, audio 3D, audio spaziale
-ms.openlocfilehash: fb3517307dccd7e41c39c012c69f1e1d141fa218
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Audio spaziale, audio surround, audio 3D, audio 3D, audio spaziale, cuffia a realtà mista, cuffie per realtà mista, cuffie per realtà virtuale, HoloLens, MRTK, Toolkit per realtà mista, case study, acustica
+ms.openlocfilehash: 50a5b4a634eec5a326158975f70fa385ce7af6a8
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686053"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703257"
 ---
 # <a name="audio-in-mixed-reality"></a>Audio in realtà mista
 L'audio è una parte essenziale della progettazione e della produttività in realtà mista. Il suono può:
@@ -92,7 +92,7 @@ Il supporto per HRTFs di Windows è disponibile per i motori audio di terze part
 * Plug-in del [motore audio Wwise](https://www.audiokinetic.com/products/plug-ins/msspatial/)
 
 ## <a name="acoustics"></a>Acustica
-L'audio spaziale è più di una direzione. Altre dimensioni includono l'occlusione, l'ostruzione, il riverbero, il portale e la modellazione dell'origine. Complessivamente, queste dimensioni vengono definite *acustiche* . Senza acustica, i suoni spaziali non hanno una distanza percepita.
+L'audio spaziale è più di una direzione. Altre dimensioni includono l'occlusione, l'ostruzione, il riverbero, il portale e la modellazione dell'origine. Complessivamente, queste dimensioni vengono definite *acustiche*. Senza acustica, i suoni spaziali non hanno una distanza percepita.
 
 I trattamenti acustici variano da semplice a molto complesso. È possibile usare un semplice riverbero supportato da qualsiasi motore audio per eseguire il push di suoni spaziali nell'ambiente del listener. I sistemi acustici come l' [acustica del progetto](https://aka.ms/acoustics)  offrono un trattamento acustico più completo e accattivante. I progetti acustici possono modellare l'effetto di muri, porte e altra geometria della scena su un suono. Si tratta di un'opzione valida nei casi in cui la geometria della scena pertinente è nota in fase di sviluppo.
 

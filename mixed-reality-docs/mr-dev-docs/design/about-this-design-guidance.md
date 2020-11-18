@@ -5,13 +5,13 @@ author: mrwied
 ms.author: jonwie
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realtà mista di Windows, progettazione, introduzione, guida
-ms.openlocfilehash: 114a3808d57b2bd78044ce743d568bd5effe25bb
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista di Windows, progettazione, introduzione, guida, cuffie per realtà mista, auricolare di realtà mista di Windows, auricolare di realtà virtuale, UX, risorse
+ms.openlocfilehash: 88e6b5866201a6ef116710b2b7b7c6af3a6ea5d3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685292"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703077"
 ---
 # <a name="about-this-design-guidance"></a>Informazioni su queste linee guida per la progettazione
 

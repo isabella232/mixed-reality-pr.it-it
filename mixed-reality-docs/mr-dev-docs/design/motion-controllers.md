@@ -5,13 +5,13 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: controller 6DOF, controller di movimento
-ms.openlocfilehash: 74ea6c8879d5deb1271e9a2169cae013b03bab5b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: controller 6DOF, controller di movimento, cuffie per realtà mista, cuffie per la realtà mista di Windows, auricolare della realtà virtuale, HoloLens, scorrimento, grip, stato
+ms.openlocfilehash: a1af86ca174bc574ab8030d8aebd128649b6515f
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684125"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703157"
 ---
 # <a name="motion-controllers"></a>Controller del movimento
 
@@ -73,7 +73,7 @@ I controller di movimento per la realtà mista di Windows offrono un tracking pr
 
 ### <a name="before-you-begin"></a>Prima di iniziare
 
-**Sono necessari:**
+**Prerequisiti:**
 * Set di due controller di movimento.
 * Quattro batterie AA.
 * Un PC in grado di Bluetooth 4,0.
@@ -104,7 +104,7 @@ I controller di movimento possono essere legati a computer host usando le impost
     :::column-end:::
 :::row-end:::
    
-8. Il controller verrà visualizzato nelle impostazioni Bluetooth nella **categoria "mouse, tastiera, & Pen"** come **connesso** . A questo punto, è possibile ottenere un aggiornamento del firmware: vedere la [sezione successiva](motion-controllers.md#updating-controller-firmware).
+8. Il controller verrà visualizzato nelle impostazioni Bluetooth nella **categoria "mouse, tastiera, & Pen"** come **connesso**. A questo punto, è possibile ottenere un aggiornamento del firmware: vedere la [sezione successiva](motion-controllers.md#updating-controller-firmware).
 9. Alleghi il coperchio della batteria.
 10. Ripetere i passaggi 1-9 per il secondo controller.
 
@@ -146,9 +146,9 @@ Se i controller sono spenti dopo l'associazione, lo stato verrà visualizzato co
 
 ## <a name="gazing-and-pointing"></a>Osservazione e puntamento
 
-La realtà mista di Windows supporta due modelli chiave per l'interazione. **sguardo e commit** , **punto e commit** :
-* Con lo **sguardo e il commit** , gli utenti hanno come destinazione un oggetto con il proprio [sguardo](gaze-and-commit.md) , quindi selezionano gli oggetti con rubinetti d'aria, un gamepad, un clic o la loro voce.
-* Con **Point e commit** , un utente può puntare a un controller di movimento in grado di puntare all'oggetto di destinazione e quindi selezionare oggetti con il trigger del controller.
+La realtà mista di Windows supporta due modelli chiave per l'interazione. **sguardo e commit** , **punto e commit**:
+* Con lo **sguardo e il commit**, gli utenti hanno come destinazione un oggetto con il proprio [sguardo](gaze-and-commit.md) , quindi selezionano gli oggetti con rubinetti d'aria, un gamepad, un clic o la loro voce.
+* Con **Point e commit**, un utente può puntare a un controller di movimento in grado di puntare all'oggetto di destinazione e quindi selezionare oggetti con il trigger del controller.
 
 Le app che supportano il puntamento con i controller di movimento devono anche abilitare le interazioni basate su sguardi laddove possibile, per offrire agli utenti una scelta nei dispositivi di input usati.
 
@@ -168,19 +168,19 @@ Per rappresentare meglio questi controller, esistono due tipi di pose che è pos
 
 La posizione del **grip** rappresenta la posizione della Palma di una mano rilevata da un HoloLens o della palma che contiene un controller di movimento.
 
-Negli auricolari immersivi, la disposizione dei grip è la scelta migliore per eseguire **il rendering della mano dell'utente** o di **un oggetto contenuto nella mano** , ad esempio una spada o una pistola. La posizione del grip viene usata anche durante la visualizzazione di un controller di movimento, perché il **modello di rendering** fornito da Windows per un controller di movimento usa la posizione del grip come origine e centro di rotazione.
+Negli auricolari immersivi, la disposizione dei grip è la scelta migliore per eseguire **il rendering della mano dell'utente** o di **un oggetto contenuto nella mano**, ad esempio una spada o una pistola. La posizione del grip viene usata anche durante la visualizzazione di un controller di movimento, perché il **modello di rendering** fornito da Windows per un controller di movimento usa la posizione del grip come origine e centro di rotazione.
 
 Il grip viene definito in modo specifico come segue:
-* **Posizione del grip** : il centro della palma quando si tiene il controller in modo naturale, regolato a sinistra o a destra per centrare la posizione all'interno del grip. Sul controller di movimento per la realtà mista di Windows, questa posizione viene in genere allineata con il pulsante afferra.
-* L' **asse destro dell'orientamento del grip** : quando si apre completamente la mano per formare una formula a 5 dita piatta, il raggio normale per la Palma (in avanti dal palmo sinistro e viceversa)
-* **Asse di avanzamento dell'orientamento del grip** : quando si chiude parzialmente la mano (come se si utilizzasse il controller), il raggio che punta "in poi" attraverso il tubo formato dalle dita non Thumb.
-* **Asse verticale dell'orientamento del grip** : l'asse verso l'alto implicato dalle definizioni di destra e di avanzamento.
+* **Posizione del grip**: il centro della palma quando si tiene il controller in modo naturale, regolato a sinistra o a destra per centrare la posizione all'interno del grip. Sul controller di movimento per la realtà mista di Windows, questa posizione viene in genere allineata con il pulsante afferra.
+* L' **asse destro dell'orientamento del grip**: quando si apre completamente la mano per formare una formula a 5 dita piatta, il raggio normale per la Palma (in avanti dal palmo sinistro e viceversa)
+* **Asse di avanzamento dell'orientamento del grip**: quando si chiude parzialmente la mano (come se si utilizzasse il controller), il raggio che punta "in poi" attraverso il tubo formato dalle dita non Thumb.
+* **Asse verticale dell'orientamento del grip**: l'asse verso l'alto implicato dalle definizioni di destra e di avanzamento.
 
 ### <a name="pointer-pose"></a>Posa puntatore
 
 Il **puntatore** posizionato rappresenta il suggerimento del controller che punta in futuro.
 
-La disposizione del puntatore fornita dal sistema è ideale per Raycast quando si esegue **il rendering del modello di controller** . Se si esegue il rendering di un altro oggetto virtuale al posto del controller, ad esempio una pistola virtuale, è necessario puntare con un raggio più naturale per tale oggetto virtuale, ad esempio un raggio che viaggia lungo il barilotto del modello Gun definito dall'app. Poiché gli utenti possono visualizzare l'oggetto virtuale e non il controller fisico, puntare con l'oggetto virtuale sarà probabilmente più naturale per quelli che usano l'app.
+La disposizione del puntatore fornita dal sistema è ideale per Raycast quando si esegue **il rendering del modello di controller**. Se si esegue il rendering di un altro oggetto virtuale al posto del controller, ad esempio una pistola virtuale, è necessario puntare con un raggio più naturale per tale oggetto virtuale, ad esempio un raggio che viaggia lungo il barilotto del modello Gun definito dall'app. Poiché gli utenti possono visualizzare l'oggetto virtuale e non il controller fisico, puntare con l'oggetto virtuale sarà probabilmente più naturale per quelli che usano l'app.
 
 ## <a name="controller-tracking-state"></a>Stato di rilevamento del controller
 
@@ -203,11 +203,11 @@ Le app che desiderano gestire le posizioni in modo diverso in base allo stato di
 <tr>
 <th> Stato di rilevamento </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>Accuratezza elevata</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Alto </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Accuratezza elevata</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Alta </td><td style="background-color: green; color: white"> True</td>
 </tr><tr>
-<td> <b>Accuratezza elevata (a rischio di perdita)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Alto </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Accuratezza elevata (a rischio di perdita)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Alta </td><td style="background-color: green; color: white"> True</td>
 </tr><tr>
-<td> <b>Accuratezza approssimativa</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Con approssimazione </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Accuratezza approssimativa</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Con approssimazione </td><td style="background-color: green; color: white"> True</td>
 </tr><tr>
 <td> <b>Nessuna posizione</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Con approssimazione </td><td style="background-color: orange"> false</td>
 </tr>
@@ -223,7 +223,7 @@ Questi stati di rilevamento del controller di movimento sono definiti come segue
 
 ## <a name="interactions-low-level-spatial-input"></a>Interazioni: input spaziale di basso livello
 
-Le interazioni di base tra i controller hands e Motion sono **Select** , **menu** , **afferrare** , **touchpad** , **levetta** e **Home** .
+Le interazioni di base tra i controller hands e Motion sono **Select**, **menu**, **afferrare**, **touchpad**, **levetta** e **Home**.
 * **Select** è l'interazione principale per attivare un ologramma, costituito da una pressione seguita da una versione. Per i controller di movimento, eseguire una selezione premere usando il trigger del controller. Altri modi per eseguire un'impostazione Select sono pronunciando il [comando vocale](voice-input.md) "Select". La stessa interazione SELECT può essere usata in qualsiasi app. Si pensi a SELECT come equivalente di un clic del mouse; un'azione universale che si apprende una volta e quindi si applica a tutte le app.
 * **Menu** è l'interazione secondaria per agire su un oggetto, usato per eseguire il pull di un menu di scelta rapida o eseguire altre azioni secondarie. Con i controller di movimento è possibile eseguire un'azione di menu usando il pulsante di *menu* del controller. (ovvero il pulsante con l'icona "menu" di hamburger)
 * La **comprensione** è il modo in cui gli utenti possono agire direttamente sugli oggetti a loro disposizione per manipolarli. Con i controller di movimento, è possibile eseguire un'azione di comprensione inserendo il pugno. Un controller di movimento può rilevare una stretta con un pulsante di cattura, un trigger di Palma o un altro sensore.
@@ -233,7 +233,7 @@ Le interazioni di base tra i controller hands e Motion sono **Select** , **menu*
 
 ## <a name="composite-gestures-high-level-spatial-input"></a>Movimenti compositi: input spaziale di alto livello
 
-Per rilevare un set comune di **[movimenti compositi](gaze-and-commit.md#composite-gestures)** di alto livello, è possibile tenere traccia dei [movimenti di mano](gaze-and-commit.md#composite-gestures) e dei controller di movimento nel tempo. Ciò consente all'app di rilevare movimenti di **tocco** , **attesa** , **manipolazione** e **spostamento** di alto livello, indipendentemente dal fatto che gli utenti finiscano con le mani o i controller.
+Per rilevare un set comune di **[movimenti compositi](gaze-and-commit.md#composite-gestures)** di alto livello, è possibile tenere traccia dei [movimenti di mano](gaze-and-commit.md#composite-gestures) e dei controller di movimento nel tempo. Ciò consente all'app di rilevare movimenti di **tocco**, **attesa**, **manipolazione** e **spostamento** di alto livello, indipendentemente dal fatto che gli utenti finiscano con le mani o i controller.
 
 ## <a name="rendering-the-motion-controller-model"></a>Rendering del modello del controller di movimento
 
@@ -283,4 +283,4 @@ Vedere la pagina relativa alla [risoluzione dei problemi di motion controller](h
 * [Movimenti](gaze-and-commit.md#composite-gestures)
 * [Guida per gli appassionati: Home page della realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
 * [Guida per gli appassionati: uso di giochi & app in realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
-* [Funzionamento del rilevamento interno](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)
+* [Funzionamento del tracciamento dall'interno verso l'esterno](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)

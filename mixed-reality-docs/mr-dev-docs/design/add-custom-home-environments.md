@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
-keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, Home, ambienti personalizzati, luoghi, Cliff House, Skyloft, utente, creazione
-ms.openlocfilehash: 69fac9fcc0b3d7f199f4277c5d1b5a0c7df5f8c2
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, Home, ambienti personalizzati, luoghi, scogliere, Skyloft, utente, creazione, auricolare in realtà mista, auricolare di realtà mista di Windows, Headset della realtà virtuale, HoloLens, MRTK, Toolkit di realtà mista
+ms.openlocfilehash: 3b5862c6ba4ec1a0549b751cf2982247b6501201
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781524"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703017"
 ---
 # <a name="design-your-own-immersive-environments"></a>Progettare ambienti immersivi personalizzati
 
@@ -53,11 +53,11 @@ Quando si usa un ambiente personalizzato si noterà che il Teleporting, l'intera
 2. Eseguire il file di **Fantasy_Island.exe** appena scaricato.
 
     > [!NOTE]
-    > Quando si tenta di eseguire un file con estensione exe scaricato dal Web (come questo), è possibile che venga visualizzato un messaggio popup "Windows Protected your PC". Per eseguire Fantasy_Island.exe da questa finestra popup, selezionare **altre informazioni** e quindi **eseguire comunque** . Questa impostazione di sicurezza ha lo scopo di impedire il download dei file che potrebbero non essere attendibili. scegliere questa opzione solo quando si considera attendibile l'origine del file.
+    > Quando si tenta di eseguire un file con estensione exe scaricato dal Web (come questo), è possibile che venga visualizzato un messaggio popup "Windows Protected your PC". Per eseguire Fantasy_Island.exe da questa finestra popup, selezionare **altre informazioni** e quindi **eseguire comunque**. Questa impostazione di sicurezza ha lo scopo di impedire il download dei file che potrebbero non essere attendibili. scegliere questa opzione solo quando si considera attendibile l'origine del file.
 
 3. Aprire **Esplora file** e passare alla cartella ambienti incollando il codice seguente nella barra degli indirizzi: `%LOCALAPPDATA%\Packages\EnvironmentsApp_cw5n1h2txyewy\LocalState` .
 4. Copiare l'ambiente di esempio scaricato in questa cartella.
-5. Riavviare il **portale di realtà mista** . Verrà aggiornato l'elenco di ambienti nel selettore di posizioni.
+5. Riavviare il **portale di realtà mista**. Verrà aggiornato l'elenco di ambienti nel selettore di posizioni.
 6. Inserire l'auricolare. Quando ci si trova nella Home page, aprire il **menu Start** usando il pulsante Windows del controller.
 7. Selezionare l'icona **posizioni** sopra l'elenco di app bloccate per scegliere un ambiente Home.
 8. L'ambiente Fantasy Island è stato scaricato nell'elenco di posizioni. Selezionare **Fantasy Island** per accedere al nuovo ambiente Home personalizzato.
@@ -96,7 +96,7 @@ Per semplificare questo processo, è stato creato il convertitore di asset per l
 
 Il convertitore supporta attualmente diversi flag per ottimizzare il comportamento esatto delle ottimizzazioni. Per ottenere risultati ottimali, è consigliabile eseguire con i flag seguenti:
 
-Contrassegno|Valori consigliati|Descrizione
+Flag|Valori consigliati|Descrizione
 ---|---|---
 -Max-texture-size|1024 o 2048| Per ottimizzare la qualità delle trame, il valore predefinito è 512x512. Si noti che un valore più grande influirà in modo significativo sulle dimensioni del file dell'ambiente, in modo da tenere presente il limite di 256 MB
 -min-Version|1803|Gli ambienti personalizzati sono supportati solo nelle versioni di Windows >= 1803. Questo flag rimuove le trame per le versioni precedenti e riduce le dimensioni del file dell'asset finale

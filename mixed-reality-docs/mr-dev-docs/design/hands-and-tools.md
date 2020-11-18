@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 04/26/2019
 ms.topic: article
-keywords: Realtà mista, mani, controller di movimento, interazione, progettazione
-ms.openlocfilehash: 8b2ed6127708204d0c4a537c56b2225ff26e0d0f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista, praticità, controller di movimento, interazione, progettazione, cuffie per realtà mista, cuffie con la realtà mista di Windows, cuffie per realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
+ms.openlocfilehash: e931e5ec11548d9aab0d1dd7f8921dbc7554abab
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686892"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702157"
 ---
 # <a name="hands-and-motion-controllers"></a>Mani e controller del movimento
 ## <a name="scenarios"></a>Scenari

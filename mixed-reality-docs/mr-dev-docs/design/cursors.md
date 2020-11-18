@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: HoloLens (1a generazione), HoloLens 2, realtà mista, cursori, targeting, sguardi, movimenti
-ms.openlocfilehash: 6fb5f335e192ce7664eab0099dc5d6aa6ed2420d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens (1st Gen), HoloLens 2, realtà mista, cursori, targeting, sguardi, movimenti, cuffie per realtà mista, auricolare di realtà mista di Windows, auricolare in realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, raggi, input
+ms.openlocfilehash: db895c7aad177d7ddd2eb371392812b1d7e4d039
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686116"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702647"
 ---
 # <a name="cursors"></a>Cursori
 
@@ -21,7 +21,7 @@ Un cursore, o un indicatore del vettore di destinazione corrente, fornisce un fe
 
 Il feedback fornito dal cursore offre agli utenti la possibilità di prevedere il modo in cui il sistema risponderà, utilizzare tale segnale come feedback per comunicare meglio la loro intenzione al dispositivo e, infine, avere maggiore fiducia sulle interazioni.
 
-Sono disponibili tre tipi di cursori: **Finger, Ray** e **Head-sguardi** . Questi puntatori funzionano con diverse modalità di input in HoloLens, HoloLens 2 e auricolari immersivi. Di seguito sono riportate informazioni aggiuntive sul tipo di cursore da usare per ogni tipo di modello di auricolare e interazione. Nel Toolkit di realtà mista (MRTK) sono stati creati moduli per i cursori con trascinamento della selezione che consentono di creare l'esperienza di puntamento corretta.
+Sono disponibili tre tipi di cursori: **Finger, Ray** e **Head-sguardi**. Questi puntatori funzionano con diverse modalità di input in HoloLens, HoloLens 2 e auricolari immersivi. Di seguito sono riportate informazioni aggiuntive sul tipo di cursore da usare per ogni tipo di modello di auricolare e interazione. Nel Toolkit di realtà mista (MRTK) sono stati creati moduli per i cursori con trascinamento della selezione che consentono di creare l'esperienza di puntamento corretta.
 
 
 ## <a name="device-support"></a>Supporto di dispositivi

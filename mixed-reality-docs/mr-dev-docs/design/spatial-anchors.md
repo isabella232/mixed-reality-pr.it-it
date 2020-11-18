@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: sistema di coordinate, sistema di coordinate nello spazio, scala del mondo, mondo, scala, posizione, orientamento, ancoraggio, ancoraggio nello spazio, vincolato al mondo, vincolo con il mondo, persistenza, condivisione
-ms.openlocfilehash: a1108aceb91ec80d20b4cac043477ee92527035b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: sistema di coordinate, sistema di coordinate spaziali, scalabilità globale, mondo, scala, posizione, orientamento, ancoraggio, ancoraggio spaziale, blocco globale, blocco globale, persistenza, condivisione, auricolare realtà mista, auricolare di realtà mista, auricolare della realtà virtuale, HoloLens
+ms.openlocfilehash: 92694023a3c7c7266b0f5d927180df20692b9d45
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683964"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703307"
 ---
 # <a name="spatial-anchors"></a>Ancoraggi nello spazio
 

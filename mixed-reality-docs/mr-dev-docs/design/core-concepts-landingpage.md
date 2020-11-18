@@ -5,13 +5,13 @@ author: grbury
 ms.author: grbury
 ms.date: 10/02/2019
 ms.topic: overview
-keywords: Realtà mista di Windows, progettazione, modelli di app, controlli, stile, HoloLens, interazione, elementi UX, comportamenti, blocchi predefiniti
-ms.openlocfilehash: cebcb99124ed71ed170210f2de9ce2f24bcb514d
-ms.sourcegitcommit: 53a00690f32a0a629ed23aefaae5a888f669dcb6
+keywords: Realtà mista di Windows, progettazione, modelli di app, controlli, stile, HoloLens, interazione, elementi UX, comportamenti, blocchi predefiniti, cuffie per la realtà mista, cuffie di realtà mista di Windows, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit di realtà mista, comfort, modello di app, coordinata, frame olografico
+ms.openlocfilehash: 57d2632265c00fbb7232aaae79328f506f00f9d2
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92138021"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702687"
 ---
 # <a name="core-concepts-overview"></a>Cenni preliminari sui concetti di base
 
@@ -22,37 +22,37 @@ Prima di immergersi nella progettazione dell'esperienza, è utile comprendere al
 
 :::row:::
     :::column:::
-        Modello app [ ![ modello](images/teleportation-640px.png)](app-model.md) app ** [App model](app-model.md)**
+        Modello app [ ![ modello](images/teleportation-640px.png)](app-model.md) app **[App model](app-model.md)**
     :::column-end:::
     :::column:::
-       [ ![ Comfort comfort](images/comfort-chart.PNG)](comfort.md) ** [Comfort](comfort.md)**
+       [ ![ Comfort comfort](images/comfort-chart.PNG)](comfort.md) **[Comfort](comfort.md)**
     :::column-end:::
     :::column:::
-        Sistemi di coordinate dei [ ![ sistemi](images/coordinate-systems.PNG)](coordinate-systems.md) di coordinate ** [Coordinate systems](coordinate-systems.md)**
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        Frame olografico [ ![ frame olografico](images/destinationmars-750px.png)](holographic-frame.md) ** [Holographic frame](holographic-frame.md)**
-    :::column-end:::
-    :::column:::
-        Visualizzazione analisi chat [ ![ room analisi chat](images/sr-mixedworld-140429-8pm-00068-1000px.png)](room-scan-visualization.md) room ** [Room scan visualization](room-scan-visualization.md)**
-    :::column-end:::
-    :::column:::
-        [ ![ Descrizione della scena comprensione della](images/scene-understanding.png)](scene-understanding.md) ** [scena](scene-understanding.md)**
+        Sistemi di coordinate dei [ ![ sistemi](images/coordinate-systems.PNG)](coordinate-systems.md) di coordinate **[Coordinate systems](coordinate-systems.md)**
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-        [ ![ Ancoraggi spaziali ancoraggi](images/azurespatialanchors.jpg)](spatial-anchors.md) ** [spaziali](spatial-anchors.md)**
+        Frame olografico [ ![ frame olografico](images/destinationmars-750px.png)](holographic-frame.md) **[Holographic frame](holographic-frame.md)**
     :::column-end:::
     :::column:::
-        Mapping spaziale [ ![ del mapping spaziale](images/surfacereconstruction.jpg)](spatial-mapping.md) ** [Spatial mapping](spatial-mapping.md)**
+        Visualizzazione analisi chat [ ![ room analisi chat](images/sr-mixedworld-140429-8pm-00068-1000px.png)](room-scan-visualization.md) room **[Room scan visualization](room-scan-visualization.md)**
     :::column-end:::
     :::column:::
-        Tipi [ ![ di app per realtà mista](images/enhancedenvironmentapps-640px.jpg)](types-of-mixed-reality-apps.md) di app per ** [realtà mista](types-of-mixed-reality-apps.md)**
+        [ ![ Descrizione della scena comprensione della](images/scene-understanding.png)](scene-understanding.md) **[scena](scene-understanding.md)**
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [ ![ Ancoraggi spaziali ancoraggi](images/azurespatialanchors.jpg)](spatial-anchors.md) **[spaziali](spatial-anchors.md)**
+    :::column-end:::
+    :::column:::
+        Mapping spaziale [ ![ del mapping spaziale](images/surfacereconstruction.jpg)](spatial-mapping.md) **[Spatial mapping](spatial-mapping.md)**
+    :::column-end:::
+    :::column:::
+        Tipi [ ![ di app per realtà mista](images/enhancedenvironmentapps-640px.jpg)](types-of-mixed-reality-apps.md) di app per **[realtà mista](types-of-mixed-reality-apps.md)**
     :::column-end:::
 :::row-end:::
 

@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: UWP, modello app, ciclo di vita, Sospendi, Riprendi, riquadri, viste, contratti
-ms.openlocfilehash: 67b883517ae17422bf7c27227c33882cf8a9f7ef
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: UWP, modello app, ciclo di vita, Sospendi, Riprendi, affianca, visualizzazioni, contratti, auricolare realtà mista, auricolare di realtà mista, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
+ms.openlocfilehash: 332556a5118f0c69a83654d345119995e4262cb5
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685244"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703107"
 ---
 # <a name="app-model"></a>Modello applicazioni
 
@@ -106,7 +106,7 @@ Un'app può avere visualizzazioni 2D sia nel monitor desktop che nell'auricolare
 
 #### <a name="switching-from-the-2d-xaml-view-to-the-immersive-view"></a>Passare dalla visualizzazione XAML 2D alla visualizzazione immersiva
 
-Se l'app usa XAML, il [IFRAMEWORKVIEWSOURCE](https://docs.microsoft.com/uwp/api/windows.applicationmodel.core.iframeworkviewsource) XAML controllerà la prima visualizzazione dell'app. L'app deve passare alla visualizzazione immersiva prima di attivare il **CoreWindow** , per assicurarsi che l'app venga avviata direttamente nell'esperienza immersiva.
+Se l'app usa XAML, il [IFRAMEWORKVIEWSOURCE](https://docs.microsoft.com/uwp/api/windows.applicationmodel.core.iframeworkviewsource) XAML controllerà la prima visualizzazione dell'app. L'app deve passare alla visualizzazione immersiva prima di attivare il **CoreWindow**, per assicurarsi che l'app venga avviata direttamente nell'esperienza immersiva.
 
 Usare [CoreApplication. CreateNewView](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.Core.CoreApplication#Windows_ApplicationModel_Core_CoreApplication_CreateNewView_Windows_ApplicationModel_Core_IFrameworkViewSource_) e [ApplicationViewSwitcher. SwitchAsync](https://docs.microsoft.com/uwp/api/Windows.UI.ViewManagement.ApplicationViewSwitcher#Windows_UI_ViewManagement_ApplicationViewSwitcher_SwitchAsync_System_Int32_) per impostarlo come visualizzazione attiva.
 
@@ -176,7 +176,7 @@ Per impostazione predefinita, le estensioni seguenti sono supportate localmente:
 
 I contratti e i punti di estensione dell'app consentono di registrare l'app per sfruttare le funzionalità più approfondite del sistema operativo, ad esempio la gestione di un'estensione di file o l'uso di attività in background. Si tratta di un elenco dei contratti supportati e non supportati e dei punti di estensione in HoloLens.
 
-|  Contratto o estensione  |  Supportato? | 
+|  Contratto o estensione  |  Supportata | 
 |----------|----------|
 | [Provider immagine account (estensione)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#account_picture_provider) | Non supportato | 
 | [Allarme](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#alarm) | Non supportato | 

@@ -5,15 +5,15 @@ author: thmignon
 ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
-keywords: 3D, modello, posizione in casa, luogo, mondo, modellazione, Home realtà mista, Web, app
-ms.openlocfilehash: 4ea720fd9fc404d4730733b6b65df13acdf1a51a
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+keywords: 3D, modello, posizione in casa, luogo, mondo, modellazione, Home realtà mista, Web, app, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
+ms.openlocfilehash: 192c403ce50c3a47fb19f644af78d1150bb9aa3f
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781569"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703187"
 ---
-# <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Abilitare la selezione host dei modelli 3D nella Home realtà mista
+# <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Abilitare il posizionamento di modelli 3D nell'ambiente iniziale
 
 > [!NOTE]
 > Questa funzionalità è stata aggiunta come parte dell' [aggiornamento di Windows 10 aprile 2018](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). Le versioni precedenti di Windows non sono compatibili con questa funzionalità.
@@ -88,7 +88,7 @@ private async void launchURI_Click(object sender, RoutedEventArgs e)
 
 ## <a name="considerations-for-immersive-vr-headsets"></a>Considerazioni per auricolari immersivi (VR)
 
-* Per gli auricolari immersivi (VR), non è necessario che il portale per la realtà mista sia in esecuzione prima di richiamare il *protocollo di aggiunta del modello* . In questo caso, il *protocollo Add Model* avvierà il portale di realtà mista e inserirà l'oggetto direttamente nel punto in cui l'auricolare sta cercando una volta arrivati nella Home realtà mista. 
+* Per gli auricolari immersivi (VR), non è necessario che il portale per la realtà mista sia in esecuzione prima di richiamare il *protocollo di aggiunta del modello*. In questo caso, il *protocollo Add Model* avvierà il portale di realtà mista e inserirà l'oggetto direttamente nel punto in cui l'auricolare sta cercando una volta arrivati nella Home realtà mista. 
 * Quando si richiama il *protocollo Aggiungi modello* dal desktop con il portale per la realtà mista già in esecuzione, assicurarsi che l'auricolare sia "sveglio". In caso contrario, la selezione host non avrà esito positivo. 
 
 ## <a name="see-also"></a>Vedere anche

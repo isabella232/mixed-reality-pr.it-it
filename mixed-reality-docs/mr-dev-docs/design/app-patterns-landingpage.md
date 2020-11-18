@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
-keywords: Progettazione di UX, UX realtà mista, UX, modelli di app, controlli, stile, HoloLens, interazione, interazione spaziale, interfaccia utente spaziale, elementi UX, comportamenti, blocchi predefiniti, tipografia, colori
-ms.openlocfilehash: c070d05f40cb3bf0376809fd684a05fd74f86fd5
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Progettazione dell'esperienza utente, UX in realtà mista, UX, modelli di app, controlli, stile, HoloLens, interazione, interazione spaziale, interfaccia utente spaziale, elementi UX, comportamenti, blocchi predefiniti, tipografia, colori, cuffie per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
+ms.openlocfilehash: c75856362f0e68eba2736105c028bff736c5932c
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685212"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703137"
 ---
 # <a name="ux-elements-overview"></a>Cenni preliminari sugli elementi UX
 ## <a name="foundational-elements"></a>Elementi di base

@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Realtà mista, controlli, interazione, interfaccia utente, UX
-ms.openlocfilehash: d1539231e770ee7c90b7e703189d1850c046ceeb
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, auricolare realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, descrizione comando, MRTK, Toolkit realtà mista
+ms.openlocfilehash: a182b9100341709dfb78ab188cbff2bd7ed3512e
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686020"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703237"
 ---
 # <a name="tooltip"></a>Descrizione comando
 

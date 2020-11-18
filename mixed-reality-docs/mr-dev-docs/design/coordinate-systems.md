@@ -5,17 +5,17 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: sistema di coordinate, sistema di coordinate spaziali, solo orientamento, scalabilità, scalabilità, scalabilità, scalabilità, scalabilità globale, 360 gradi, seduto, in piedi, stanza, mondo, scala, posizione, orientamento, fermo, allegato, fase, ancoraggio, ancoraggio spaziale, blocco globale, blocco globale, blocco corpo, blocco del corpo, limiti, persistenza, condivisione, perdita di tracce, ancoraggio spaziale cloud
-ms.openlocfilehash: bf7641d13302620a32aac260332c3be694ea324b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: sistema di coordinate, sistema di coordinate spaziali, solo orientamento, scalabilità verticale, scalabilità, scalabilità, scalabilità globale, 360 gradi, seduto, in piedi, stanza, mondo, scala, posizione, orientamento, fermo, allegato, fase, ancoraggio, ancoraggio spaziale, blocco globale, blocco globale, blocco del corpo, blocco del corpo, limiti, persistenza, condivisione, perdita di rilevamento, ancoraggio spaziale cloud, headset di realtà mista, headset di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit reality
+ms.openlocfilehash: afffffae5d23309b2ab9124b9f74b7818fd4adf6
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686164"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702537"
 ---
 # <a name="coordinate-systems"></a>Sistemi di coordinate
 
-Alle loro core, le app per la realtà mista inseriscono [ologrammi](../discover/hologram.md) nel mondo che sembrano e suonino come oggetti reali. Questo implica il posizionamento e l'orientamento accurati degli ologrammi in luoghi del mondo che sono significativi per l'utente, indipendentemente dal fatto che il mondo sia la stanza fisica o un'area di autenticazione virtuale creata. Quando ragionano sulla posizione e sull'orientamento degli ologrammi o su qualsiasi altra geometria, ad esempio il raggio di [sguardi](gaze-and-commit.md) o le [posizioni della mano](hands-and-tools.md), Windows fornisce vari sistemi di coordinate reali in cui è possibile esprimere la geometria, nota come **sistemi di coordinate spaziali** .
+Alle loro core, le app per la realtà mista inseriscono [ologrammi](../discover/hologram.md) nel mondo che sembrano e suonino come oggetti reali. Questo implica il posizionamento e l'orientamento accurati degli ologrammi in luoghi del mondo che sono significativi per l'utente, indipendentemente dal fatto che il mondo sia la stanza fisica o un'area di autenticazione virtuale creata. Quando ragionano sulla posizione e sull'orientamento degli ologrammi o su qualsiasi altra geometria, ad esempio il raggio di [sguardi](gaze-and-commit.md) o le [posizioni della mano](hands-and-tools.md), Windows fornisce vari sistemi di coordinate reali in cui è possibile esprimere la geometria, nota come **sistemi di coordinate spaziali**.
 
 <br>
 
@@ -96,8 +96,8 @@ Queste scale di esperienza seguono un modello di "nidificazione di bambole". Il 
 |  **Sì** |  No |  - |  - |  - |  **Seduti** | 
 |  **Sì** |  **Sì** |  No |  - |  - |  **In attesa** | 
 |  **Sì** |  **Sì** |  **Sì** |  No |  - |  **In piedi-360 °** | 
-|  **Sì** |  **Sì** |  **Sì** |  **Sì** |  No |  **Camera** | 
-|  **Sì** |  **Sì** |  **Sì** |  **Sì** |  **Sì** |  **World** | 
+|  **Sì** |  **Sì** |  **Sì** |  **Sì** |  No |  **Room** | 
+|  **Sì** |  **Sì** |  **Sì** |  **Sì** |  **Sì** |  **Mondo** | 
 
 Si noti che il frame della fase di riferimento non è ancora supportato in HoloLens. Un'app scalabile in HoloLens attualmente deve usare il [mapping spaziale](spatial-mapping.md) o la [comprensione della scena](scene-understanding.md) per individuare il piano e le pareti dell'utente.
 
@@ -105,7 +105,7 @@ Si noti che il frame della fase di riferimento non è ancora supportato in HoloL
 
 Tutte le applicazioni grafiche 3D usano [sistemi di coordinate cartesiane](https://docs.microsoft.com/windows/uwp/graphics-concepts/coordinate-systems) per motivare le posizioni e gli orientamenti degli oggetti nei mondi virtuali di cui eseguono il rendering. Tali sistemi di coordinate stabiliscono 3 assi perpendicolari lungo i quali posizionare gli oggetti: un asse X, Y e Z.
 
-In [realtà mista](../discover/mixed-reality.md), le app ne ragionano sui sistemi di coordinate sia virtuali che fisici. Windows chiama un sistema di coordinate che ha un significato reale nel mondo fisico di un **sistema di coordinate spaziali** .
+In [realtà mista](../discover/mixed-reality.md), le app ne ragionano sui sistemi di coordinate sia virtuali che fisici. Windows chiama un sistema di coordinate che ha un significato reale nel mondo fisico di un **sistema di coordinate spaziali**.
 
 I sistemi di coordinate spaziali esprimono i valori delle coordinate in metri. Ciò significa che gli oggetti posizionati a distanza di 2 unità nell'asse X, Y o Z verranno visualizzati 2 metri l'uno dall'altro quando ne viene eseguito il rendering in realtà mista. In questo modo è possibile eseguire facilmente il rendering di oggetti e ambienti a scalabilità reale.
 
@@ -115,9 +115,9 @@ In entrambi i tipi di sistemi di coordinate, l'asse X positivo punta a destra e 
 
 ## <a name="building-an-orientation-only-or-seated-scale-experience"></a>Creazione di un'esperienza di solo orientamento o con scalabilità verticale
 
-La chiave per il [rendering](../develop/platform-capabilities-and-apis/rendering.md) olografico è la modifica della visualizzazione dell'app degli ologrammi per ogni fotogramma mentre l'utente si sposta, in modo che corrisponda al movimento della testa stimato. È possibile creare **esperienze con scalabilità verticale** che rispettano le modifiche alla posizione iniziale e all'orientamento della testa dell'utente usando un **frame di riferimento fisso** .
+La chiave per il [rendering](../develop/platform-capabilities-and-apis/rendering.md) olografico è la modifica della visualizzazione dell'app degli ologrammi per ogni fotogramma mentre l'utente si sposta, in modo che corrisponda al movimento della testa stimato. È possibile creare **esperienze con scalabilità verticale** che rispettano le modifiche alla posizione iniziale e all'orientamento della testa dell'utente usando un **frame di riferimento fisso**.
 
-È necessario che il contenuto ignori gli aggiornamenti della posizione Head, rimanendo fisso a un'intestazione scelta e a distanza dall'utente in qualsiasi momento. L'esempio principale è il video di 360 gradi: poiché il video viene acquisito da un'unica prospettiva fissa, potrebbe rovinare l'illusione per la posizione di visualizzazione per lo spostamento rispetto al contenuto, anche se l'orientamento della visualizzazione deve cambiare quando l'utente cerca. È possibile compilare tali **esperienze solo di orientamento** utilizzando un **frame di riferimento allegato** .
+È necessario che il contenuto ignori gli aggiornamenti della posizione Head, rimanendo fisso a un'intestazione scelta e a distanza dall'utente in qualsiasi momento. L'esempio principale è il video di 360 gradi: poiché il video viene acquisito da un'unica prospettiva fissa, potrebbe rovinare l'illusione per la posizione di visualizzazione per lo spostamento rispetto al contenuto, anche se l'orientamento della visualizzazione deve cambiare quando l'utente cerca. È possibile compilare tali **esperienze solo di orientamento** utilizzando un **frame di riferimento allegato**.
 
 ### <a name="stationary-frame-of-reference"></a>Cornice fissa di riferimento
 
@@ -137,17 +137,17 @@ Quando la cuffia non riesce a capire dove si trova nel mondo, un frame di riferi
 
 ## <a name="building-a-standing-scale-or-room-scale-experience"></a>Creazione di un'esperienza di scalabilità o scalabilità in base all'ambiente
 
-Per andare oltre la scalabilità verticale su un headset immersivo e creare un' **esperienza di scalabilità permanente** , è possibile usare il **frame della fase di riferimento** .
+Per andare oltre la scalabilità verticale su un headset immersivo e creare un' **esperienza di scalabilità permanente**, è possibile usare il **frame della fase di riferimento**.
 
 Per offrire un' **esperienza di scalabilità** in una stanza, consentire agli utenti di aggirare i limiti di 5 metri predefiniti, è possibile controllare anche i **limiti di fase** .
 
 ### <a name="stage-frame-of-reference"></a>Cornice della fase di riferimento
 
-Quando si configura per la prima volta un auricolare immersivo, l'utente definisce una **fase** che rappresenta lo spazio in cui si verificheranno realtà miste. La fase definisce almeno un' **origine della fase** , un sistema di coordinate spaziali centrato sulla posizione del piano scelto dall'utente e sull'orientamento in base a cui si intende usare il dispositivo. Inserendo il contenuto in questo sistema di coordinate della fase sul piano Y = 0, è possibile assicurarsi che gli ologrammi vengano visualizzati comodamente al piano quando l'utente è in piedi, offrendo agli utenti un' **esperienza di scalabilità permanente** .
+Quando si configura per la prima volta un auricolare immersivo, l'utente definisce una **fase** che rappresenta lo spazio in cui si verificheranno realtà miste. La fase definisce almeno un' **origine della fase**, un sistema di coordinate spaziali centrato sulla posizione del piano scelto dall'utente e sull'orientamento in base a cui si intende usare il dispositivo. Inserendo il contenuto in questo sistema di coordinate della fase sul piano Y = 0, è possibile assicurarsi che gli ologrammi vengano visualizzati comodamente al piano quando l'utente è in piedi, offrendo agli utenti un' **esperienza di scalabilità permanente**.
 
 ### <a name="stage-bounds"></a>Limiti di fase
 
-L'utente può anche definire facoltativamente i **limiti della fase** , un'area all'interno della stanza che ha cancellato i mobili in cui intendono spostarsi in realtà mista. In tal caso, l'app può creare un' **esperienza su scala** , usando questi limiti per assicurarsi che gli ologrammi siano sempre posizionati laddove l'utente possa raggiungerli.
+L'utente può anche definire facoltativamente i **limiti della fase**, un'area all'interno della stanza che ha cancellato i mobili in cui intendono spostarsi in realtà mista. In tal caso, l'app può creare un' **esperienza su scala**, usando questi limiti per assicurarsi che gli ologrammi siano sempre posizionati laddove l'utente possa raggiungerli.
 
 Poiché il frame della fase di riferimento fornisce un singolo sistema di coordinate fisso entro il quale collocare il contenuto relativo al piano, rappresenta il percorso più semplice per il porting di applicazioni in scala e in scala sviluppate per le cuffie di realtà virtuale. Tuttavia, come con le piattaforme VR, un singolo sistema di coordinate può stabilizzare solo il contenuto in circa un diametro di 5 metri (16 piedi), prima che gli effetti della leva-ARM causino il contenuto lontano dal centro per spostarsi in modo evidente quando il sistema si adatta. Per superare i 5 metri, sono necessari ancoraggi spaziali.
 

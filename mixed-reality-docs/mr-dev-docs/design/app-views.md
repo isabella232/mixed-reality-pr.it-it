@@ -5,17 +5,17 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: visualizzazione immersiva, visualizzazione 2D, Slate, app
-ms.openlocfilehash: e625eca3adb7cd4a9dcd1f971917f008d5daa7d2
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: visualizzazione immersiva, visualizzazione 2D, lavagna, app, cuffie per realtà mista, cuffie con realtà mista di Windows, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
+ms.openlocfilehash: 1380c32dc89e472428c86be30b2fce82a946f3cc
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685172"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702918"
 ---
 # <a name="app-views"></a>Visualizzazioni delle app
 
-Le app di Windows possono contenere due tipi di visualizzazioni, viste **immersive** e **visualizzazioni 2D** . Le app possono passare tra le varie viste immersive e le visualizzazioni 2D, mostrando le visualizzazioni 2D in un monitor come una finestra o in una cuffia come una lavagna. Le app con almeno una visualizzazione immersiva vengono categorizzate come **app realtà miste** . Le app che non hanno mai una visualizzazione immersiva sono **app 2D** .
+Le app di Windows possono contenere due tipi di visualizzazioni, viste **immersive** e **visualizzazioni 2D**. Le app possono passare tra le varie viste immersive e le visualizzazioni 2D, mostrando le visualizzazioni 2D in un monitor come una finestra o in una cuffia come una lavagna. Le app con almeno una visualizzazione immersiva vengono categorizzate come **app realtà miste**. Le app che non hanno mai una visualizzazione immersiva sono **app 2D**.
 
 ## <a name="immersive-views"></a>Viste immersive
 

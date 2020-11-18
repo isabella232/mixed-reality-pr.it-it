@@ -5,13 +5,13 @@ author: jessemcculloch
 ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
-keywords: realtà mista, VR, LBE, località
-ms.openlocfilehash: 6ee013a576041a71d92307523dbfbaefa6c7d24a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: realtà mista, VR, LBE, posizione, cuffie per realtà mista, auricolare di realtà mista di Windows, auricolare di realtà virtuale, hardware, HoloLens, multiplayer, servizi cloud, Azure
+ms.openlocfilehash: b082153d3d32b2ecee1eb4430cab008819d50ba3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690332"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702097"
 ---
 # <a name="location-based-entertainment-with-windows-mixed-reality"></a>Divertimenti location based con la realtà mista di Windows
 
@@ -47,7 +47,7 @@ Kinect di Azure: [Dettagli](https://azure.microsoft.com//services/kinect-dk/)
 
 Per le esperienze VR con tethering del PC, gli OEM offrono un'incredibile selezione di PC zaino creati esattamente per le esigenze.
 
-HP ha appena lanciato il proprio HP VR Backpack G2, il PC indossabile più potente del mondo, ottimizzato per le esperienze di roaming gratuito, ora con una potenza del 30% superiore con una GPU RTX 2080 all'interno. [Dettagli](https://www8.hp.com/us/en/vr/vr-backpack.html)
+HP ha appena lanciato il proprio HP VR Backpack G2, il PC indossabile più potente del mondo, ottimizzato per le esperienze di roaming gratuito, ora con una potenza del 30% superiore con una GPU RTX 2080 all'interno. [Informazioni dettagliate](https://www8.hp.com/us/en/vr/vr-backpack.html)
 
 ### <a name="setup"></a>Configurazione
 

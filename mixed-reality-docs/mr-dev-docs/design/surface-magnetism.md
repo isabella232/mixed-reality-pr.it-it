@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Realtà mista, controlli, interazione, interfaccia utente, UX
-ms.openlocfilehash: 4d30b96882272ae54409a8681a891609b5bb6c29
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, magnetismo di superficie
+ms.openlocfilehash: 943c5e8a1f49a021b8f3a3dcfa749a1ae6a1250e
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686045"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703282"
 ---
 # <a name="surface-magnetism"></a>Magnetismo di superficie
 

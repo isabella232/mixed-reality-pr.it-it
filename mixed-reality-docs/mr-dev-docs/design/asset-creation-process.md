@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Asset, creazione, processo, Budget, poligoni, trame, shader, prestazioni
-ms.openlocfilehash: 56be236086a6947549af6199dc3d01ba7c555375
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Asset, creazione, processo, Budget, poligoni, trame, shader, prestazioni, cuffie per realtà mista, cuffie per la realtà mista di Windows, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, asset
+ms.openlocfilehash: 0c6f592dd813c06613801510ad8c8a936ad0de65
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685173"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702877"
 ---
 # <a name="asset-creation-process"></a>Processo di creazione degli asset
 
@@ -77,7 +77,7 @@ Si inizierà con i modi per ottenere gli asset per il progetto:
 ### <a name="creating-assets"></a>Creazione di asset
 
 **Strumenti di creazione**<br>
-Per prima cosa è possibile creare asset personalizzati in diversi modi. gli artisti 3D usano una serie di applicazioni e strumenti per creare modelli che sono costituiti da **mesh** , **trame** e **materiali** . Questa operazione viene quindi salvata in un formato di file che può essere importato o usato dal motore di grafica usato dall'app, ad esempio **. FBX** o **. OBJ** . Tutti gli strumenti che generano un modello supportato dal motore di grafica scelto funzioneranno in **HoloLens** . Tra gli artisti 3D, molti scelgono di usare il [Maya di Autodesk, che a sua volta è in grado di usare HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) per trasformare il modo in cui vengono create le risorse. Se si vuole ottenere un risultato rapido, è anche possibile usare il [Generatore 3D](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) incluso in Windows per l'esportazione. OBJ da usare nell'applicazione.
+Per prima cosa è possibile creare asset personalizzati in diversi modi. gli artisti 3D usano una serie di applicazioni e strumenti per creare modelli che sono costituiti da **mesh**, **trame** e **materiali**. Questa operazione viene quindi salvata in un formato di file che può essere importato o usato dal motore di grafica usato dall'app, ad esempio **. FBX** o **. OBJ**. Tutti gli strumenti che generano un modello supportato dal motore di grafica scelto funzioneranno in **HoloLens**. Tra gli artisti 3D, molti scelgono di usare il [Maya di Autodesk, che a sua volta è in grado di usare HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) per trasformare il modo in cui vengono create le risorse. Se si vuole ottenere un risultato rapido, è anche possibile usare il [Generatore 3D](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) incluso in Windows per l'esportazione. OBJ da usare nell'applicazione.
 
 **Acquisizione oggetti**<br>
 È anche possibile acquisire oggetti in 3D. L'acquisizione di oggetti inanimati in 3D e la relativa modifica con il software di creazione di contenuti digitali è sempre più diffusa con la crescita della stampa 3D. Utilizzando il sensore **Kinect 2** e il [Generatore 3D](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) è possibile utilizzare la funzionalità di acquisizione per creare asset da oggetti reali. Si tratta anche di una [suite di strumenti](https://en.wikipedia.org/wiki/Comparison_of_photogrammetry_software) che consentono di eseguire la stessa operazione con **fotogrammetria** elaborando un numero di immagini da unire e mesh e trame.

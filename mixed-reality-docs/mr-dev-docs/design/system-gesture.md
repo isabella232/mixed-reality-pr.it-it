@@ -5,13 +5,13 @@ author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
-keywords: Realtà mista, movimenti, interazione, progettazione
-ms.openlocfilehash: 909472abfec34f75a2f5fa810f87003978cc6a5e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista, movimenti, interazione, progettazione, cuffie per realtà mista, cuffie con realtà mista di Windows, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, Bloom
+ms.openlocfilehash: 1994b38341dfdb2ef1cdb326cf7747c0af5f9c34
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686036"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703267"
 ---
 # <a name="start-gesture"></a>Azione di avvio
 
@@ -97,7 +97,7 @@ In HoloLens 2, il movimento Bloom è stato sostituito con un pulsante di polso v
 > 1. È necessario eseguire l'aggiornamento all'aggiornamento di novembre 2019 (Build 18363,1039) o versione successiva.
 > 1. È necessario calibrare gli occhi del dispositivo in modo che funzionino correttamente. Se non vengono visualizzati punti orbitanti intorno all'icona di avvio quando si esaminano i punti, gli occhi non vengono calibrati sul dispositivo.
 
-È anche possibile eseguire il gesto di avvio con una sola mano. A tale scopo, è necessario guardare la Palma con l' **icona di avvio** sul polso interno. **Tenendo sempre d'occhio l'icona** , pizzicare il pollice e l'indice insieme.<br>
+È anche possibile eseguire il gesto di avvio con una sola mano. A tale scopo, è necessario guardare la Palma con l' **icona di avvio** sul polso interno. **Tenendo sempre d'occhio l'icona**, pizzicare il pollice e l'indice insieme.<br>
 :::row:::
     :::column:::
         ![Pulsante del polso pronto](images/wrist-button-ready.png)<br>

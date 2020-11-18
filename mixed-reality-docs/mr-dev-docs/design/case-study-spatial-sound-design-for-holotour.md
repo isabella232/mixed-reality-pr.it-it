@@ -5,13 +5,13 @@ author: jsyltebo
 ms.author: jsylte
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realtà mista di Windows, HoloLens, HoloTour, audio spaziale, case study
-ms.openlocfilehash: 6cf2d18661924276f1ea75efb88e29acd4709f37
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista di Windows, HoloLens, HoloTour, suono spaziale, case study, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, audio
+ms.openlocfilehash: 31e38f6f5ce309bba11515ab09303593af0a328b
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685156"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702837"
 ---
 # <a name="case-study-spatial-sound-design-for-holotour"></a>Case Study: progettazione di suoni spaziali per HoloTour
 
@@ -56,7 +56,7 @@ Quando è stato indicizzato nell'audio di acquisizione della fotocamera, abbiamo
 
 In un approccio diverso, talvolta si riproduce un ambiente stereo in loop insieme a emettitori di suoni spaziali posizionati intorno alla scena. Questi emettitori svolgono suoni monouso di volume casuale, pitch e frequenza del trigger. Questa tecnica crea un ambiente con un senso di direzionalità migliorato. In Aguas Aliens, ad esempio, è possibile scoprire in che modo ciascun quadrante del panorama dispone di emettitori specifici che evidenziano aree specifiche della geografia, ma che interagiscono per creare un ambiente immersivo generale.
 
-## <a name="tips-and-tricks"></a>Consigli e suggerimenti
+## <a name="tips-and-tricks"></a>Suggerimenti
 
 Esistono altri modi per evidenziare la direzionalità e migliorare l'immersione per sfruttare al meglio le funzionalità audio spaziali di HoloLens. Un elenco è disponibile qui. Attendere questi effetti la volta successiva che si prova a HoloTour.
 * **Cerca destinazioni:** Questi suoni vengono attivati quando si esamina un oggetto specifico o un'area del frame olografico. Si osservi, ad esempio, il caffè sul lato strada a Roma, Piazza Navona, per attivare leggermente i suoni del ristorante occupato.

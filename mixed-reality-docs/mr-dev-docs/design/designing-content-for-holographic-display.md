@@ -1,19 +1,19 @@
 ---
-title: Progettazione del contenuto per la visualizzazione olografica
+title: Progettazione di contenuto per la visualizzazione olografica
 description: Linee guida per la progettazione e procedure consigliate per la visualizzazione olografica
 author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
-keywords: Progettazione dell'interfaccia utente, visualizzazione olografica, progettazione del contenuto, tema scuro, tema chiaro
-ms.openlocfilehash: 627ffdd0a413ad3140c29e9b1c7bb69c9dc249cf
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Progettazione dell'interfaccia utente, schermo olografico, progettazione del contenuto, tema scuro, tema chiaro, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, progettazione, pixel
+ms.openlocfilehash: ea3fbda7aff80f0878521deb433c88b16abeab19
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686109"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702637"
 ---
-# <a name="designing-content-for-holographic-display"></a>Progettazione del contenuto per la visualizzazione olografica
+# <a name="designing-content-for-holographic-display"></a>Progettazione di contenuto per la visualizzazione olografica
 
 ![Posizione della mano del lato ulnare](images/UX_Hero_DarkTheme.jpg)
 

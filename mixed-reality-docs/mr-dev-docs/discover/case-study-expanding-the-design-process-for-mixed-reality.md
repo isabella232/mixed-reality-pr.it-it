@@ -5,13 +5,13 @@ author: danielescudero
 ms.author: daescu
 ms.date: 04/08/2018
 ms.topic: article
-keywords: Realtà mista di Windows, progettazione, processi, case study
-ms.openlocfilehash: 4cde36c8b5c3914c63e0c588e76dc4b782dcdcb9
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: Realtà mista di Windows, progettazione, processo, case study, auricolare realtà mista, auricolare di realtà mista di Windows, cuffia virtuale reale, informazioni sulla realtà virtuale, che cos'è la realtà aumentata, bodystorming, storyboard, commenti e suggerimenti
+ms.openlocfilehash: 5f1cc6efd7d1fa8dda043575562bfaf94ea812a9
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631509"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702207"
 ---
 # <a name="thinking-differently-for-mixed-reality"></a>Pensare in modo diverso per realtà mista
 Quando Microsoft ha lanciato il HoloLens (1st Gen) a un pubblico di sviluppatori ansiosi di 2016, il team ha già collaborato con gli studi all'interno e all'esterno di Microsoft per creare le esperienze di avvio del dispositivo. Questi team hanno imparato con la pratica, scoprendo sia le opportunità che le problematiche correlate al nuovo settore della progettazione per la realtà mista.

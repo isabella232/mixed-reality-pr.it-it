@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realtà mista di Windows, progettazione, controlli, interfaccia utente, UX
-ms.openlocfilehash: 751a8fe9a196f894ac0ef9e3dcca64dec1c97498
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista di Windows, progettazione, controlli, interfaccia utente, UX, indicatore di stato, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
+ms.openlocfilehash: 93cdd7054c05af9f8621e091fa3d4b59d9e65ee3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684061"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703387"
 ---
 # <a name="progress-indicator"></a>Indicatore di stato
 
@@ -27,7 +27,7 @@ Un controllo di stato fornisce all'utente un feedback nel caso in cui sia in cor
 
 ## <a name="types-of-progress"></a>Tipi di stato
 
-È importante fornire le informazioni sull'utente su ciò che accade. In realtà mista gli utenti possono essere facilmente distratti da ambienti fisici o oggetti se l'app non fornisce un feedback visivo efficace. Per le situazioni in cui sono necessari alcuni secondi, ad esempio quando i dati vengono caricati o una scena viene aggiornata, è consigliabile visualizzare un indicatore visivo. Sono disponibili due opzioni per indicare all'utente che è in corso un'operazione, ovvero un indicatore di **stato** o un **anello di avanzamento** .
+È importante fornire le informazioni sull'utente su ciò che accade. In realtà mista gli utenti possono essere facilmente distratti da ambienti fisici o oggetti se l'app non fornisce un feedback visivo efficace. Per le situazioni in cui sono necessari alcuni secondi, ad esempio quando i dati vengono caricati o una scena viene aggiornata, è consigliabile visualizzare un indicatore visivo. Sono disponibili due opzioni per indicare all'utente che è in corso un'operazione, ovvero un indicatore di **stato** o un **anello di avanzamento**.
 
 :::row:::
     :::column:::

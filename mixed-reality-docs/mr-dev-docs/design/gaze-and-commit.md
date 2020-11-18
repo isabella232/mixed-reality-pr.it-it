@@ -5,17 +5,17 @@ author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
-keywords: Realtà mista, sguardo, targeting, interazione, progettazione, rilevamento degli sguardi, rilevamento Head
-ms.openlocfilehash: 887d1a30a974bdd643889959a1fee55e96d7b16a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista, sguardo, targeting, interazione, progettazione, monitoraggio degli occhi, rilevamento Head, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
+ms.openlocfilehash: a901e505d8e282e52078f5635627fbc2018a27b5
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687037"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702407"
 ---
 # <a name="gaze-and-commit"></a>Sguardo fisso e commit
 
-_Sguardi e commit_ sono un modello di input fondamentale che è strettamente correlato al modo in cui si interagisce con i computer usando il mouse: _Point & fare clic su_ .
+_Sguardi e commit_ sono un modello di input fondamentale che è strettamente correlato al modo in cui si interagisce con i computer usando il mouse: _Point & fare clic su_.
 In questa pagina vengono introdotti due tipi di input di sguardi (occhio e sguardo) e diversi tipi di azioni di commit. 
 _Sguardi e commit_ sono considerati un modello di input molto lungo con manipolazione indiretta.
 Ciò significa che è preferibile usare per interagire con contenuto olografico non raggiunto.
@@ -133,7 +133,7 @@ Indipendentemente dal fatto che il modello di input con sguardo e commit venga u
 ---
 
 ## <a name="commit"></a>Commit
-Quando _si parla di diversi_ modi per esaminare una destinazione, è possibile approfondire la parte relativa al _commit_ nello _sguardo e nel commit_ .
+Quando _si parla di diversi_ modi per esaminare una destinazione, è possibile approfondire la parte relativa al _commit_ nello _sguardo e nel commit_.
 Dopo la destinazione di un oggetto o di un elemento dell'interfaccia utente, l'utente può interagire o fare clic su di esso usando un input secondario. Questo processo è noto come passaggio di commit del modello di input. 
 
 Sono supportati i metodi di commit seguenti:
@@ -257,7 +257,7 @@ La pressione prolungata consiste nel mantenere la posizione del dito abbassato d
 I movimenti di manipolazione possono essere usati per spostare, ridimensionare o ruotare un ologramma quando si vuole che l'ologramma reagisca 1:1 ai movimenti della mano dell'utente. Uno degli usi possibili di tali movimenti 1:1 è quello di consentire all'utente di disegnare o dipingere nel mondo.
 La selezione iniziale della destinazione per un movimento di manipolazione dovrebbe avvenire mediante sguardo fisso o puntamento. Una volta avviato il tocco e l'attesa, qualsiasi modifica dell'oggetto viene gestita da movimenti mano, liberando l'utente per l'aspetto durante la modifica.
 
-### <a name="navigation"></a>Navigazione
+### <a name="navigation"></a>Spostamento
 I movimenti di navigazione funzionano come un joystick virtuale e possono essere usati per spostarsi nei widget dell'interfaccia utente, ad esempio nei menu radiali. Tocca e tieni premuto per avviare il movimento, quindi sposta la mano all'interno di un cubo 3D normalizzato, centrato attorno al punto di pressione iniziale. Puoi spostare la mano lungo l'asse X, Y o Z da un valore -1 a 1, essendo lo 0 il punto di partenza.
 La navigazione può essere usata per creare movimenti continui di scorrimento o zoom basati sulla velocità, analoghi allo scorrimento di un'interfaccia utente 2D mediante il clic sul pulsante centrale del mouse e il successivo spostamento del mouse verso l'alto o il basso.
 

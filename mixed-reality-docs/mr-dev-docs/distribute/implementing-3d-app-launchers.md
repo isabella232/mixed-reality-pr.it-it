@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
-keywords: 3D, logo, icona, modellazione, avvio, utilità di avvio 3D, riquadro, cubo attivo, collegamento profondo, SecondaryTile, riquadro secondario, UWP
-ms.openlocfilehash: 22f2a6eebdd379b7d7959f9708bb55bb7de6b85e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 3D, logo, icona, modellazione, avvio, utilità di avvio 3D, riquadro, cubo attivo, collegamento diretto, SecondaryTile, riquadro secondario, UWP, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare in realtà virtuale, XML, riquadro, Unity
+ms.openlocfilehash: 926d0b3bb337517b65986f85f6977b3dd1975735
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684852"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703197"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>Implementare utilità di avvio per app 3D (app UWP)
 

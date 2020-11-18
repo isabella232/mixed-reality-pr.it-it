@@ -5,13 +5,13 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
-keywords: realtà mista, sguardo fisso, selezione della destinazione con lo sguardo fisso, interazione, progettazione
-ms.openlocfilehash: 76223dd375e76d943183bc745792e2cb9d3d0601
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista, sguardo, targeting, interazione, progettazione, cuffie per realtà mista, cuffie di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, target, Focus, smoothing
+ms.openlocfilehash: d913ac81e20962d38178223a050fdccfb51d8632
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685076"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702387"
 ---
 # <a name="head-gaze-and-commit"></a>Puntamento con la testa e commit
 _Head-sguardi e commit_ sono un caso speciale del modello di input [sguardo e commit](gaze-and-commit.md) che prevede la destinazione di un oggetto con la direzione della testa che punta verso l'alto (direzione), quindi agisce su di esso con un input secondario, ad esempio il tocco aereo della mano o il comando vocale "Select". 
