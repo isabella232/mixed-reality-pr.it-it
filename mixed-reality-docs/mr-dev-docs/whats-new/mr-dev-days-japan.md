@@ -1,19 +1,19 @@
 ---
-title: Realtà mista per i giorni di sviluppo in Giappone
+title: Mixed Reality Dev Days Giappone
 description: Pagina di evento per i giorni di sviluppo in realtà mista Giappone
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Realtà mista, conferenza, Summit, sviluppatore, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 170c0ebfeee2b6305c5d52c8aba143badaffa5e2
-ms.sourcegitcommit: 53c6d27781ed12e2899c72087d317a62b2fad8cb
+ms.openlocfilehash: e120582e6184b9b105221aeddb5bcb42629ccb0c
+ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/19/2020
-ms.locfileid: "94897356"
+ms.locfileid: "94933266"
 ---
-# <a name="mixed-reality-dev-days-japan"></a>Realtà mista per i giorni di sviluppo in Giappone
+# <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Giappone
 
 ![Mixed Reality Dev Days](images/MRDD/MRDevDaysJapanBanner.png)
 
@@ -55,10 +55,10 @@ Siamo entusiasti di aprire la registrazione per la realtà mista per sviluppator
 |2:00-2:25pm|*Sessione 5* Introduzione a HoloLens 2 e Unreal Engine (MRTK-Unreal)|Cameron Micka|IT|300|
 |2: pm-2:55pm|*Sessione 6* Creazione dell'app "progettazione di ologrammi". In questo articolo verranno illustrate le funzionalità, le esigenze e altre divertenti scoperte che abbiamo individuato durante la creazione della nuova app HoloLens 2.|Daniel Escudero|IT|300|
 |2:55pm-3:22:00|**Interruzione**||||
-|3:22:00-3:35pm|*Sessione 7* Ancoraggi degli oggetti di Azure|TBD|IT|300|
+|3:22:00-3:35pm|*Sessione 7* Ancoraggi degli oggetti di Azure|Jesse McCulloch|IT|300|
 |3:40pm-4:05PM|*Sessione 8* Rendering remoto di Azure|Atsushi Suzuki|JA|300|
-|4:22:00-4:35pm|*Sessione 9* Ancoraggi spaziali di Azure|TBD|IT|300|
-|4:40pm-5:05PM|*Sessione 10* TBD|TBD|JA|200|
+|4:22:00-4:35pm|*Sessione 9* Ancoraggi spaziali di Azure|TBD|JA|300|
+|4:40pm-5:05PM|*Sessione 10* Unity + PiXYZ|Shinobu Takahashi (Unity)|JA|200|
 |5:22:00-5:35pm|*Sessione 11* Deep Dive di Azure Kinect DK, case study|Shinji Chiba|JA|400|
 |5:35pm-5:50pm|Chiusura|Madoka Chiyoda|JA|N/D|
 
