@@ -7,18 +7,21 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, fotocamera, videocamera, MRC
-ms.openlocfilehash: e66583d46d64361621303e36a5fbcc209300f5d8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6302a64fcde2a16b6ae1cb570215629a3e6ea9e5
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697221"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573235"
 ---
 # <a name="hololens-photovideo-camera-in-unreal"></a>Fotocamera/videocamera HoloLens in Unreal
 
 ## <a name="overview"></a>Panoramica
 
-HoloLens dispone di una fotocamera/videocamera che viene usata per l'acquisizione in realtà mista (MRC) e può essere usata da un'app per accedere agli oggetti visivi reali.
+HoloLens dispone di una fotocamera/videocamera che viene usata per l'acquisizione in realtà mista (MRC) e può essere usata da un'app per accedere agli oggetti visivi reali. 
+
+> [!IMPORTANT]
+> La fotocamera/videocamera non è supportata con Holographic Remoting, ma per simulare la funzionalità della fotocamera/videocamera di HoloLens è possibile usare una webcam collegata al PC.
 
 ## <a name="render-from-the-pv-camera-for-mrc"></a>Eseguire il rendering dalla fotocamera/videocamera per MRC
 
@@ -31,7 +34,7 @@ Per impostazione predefinita, l'acquisizione in realtà mista usa l'output ologr
 
 Per acconsentire esplicitamente al rendering dalla fotocamera/videocamera:
 
-1. Chiama **SetEnabledMixedRealityCamera** e **ResizeMixedRealityCamera** .
+1. Chiama **SetEnabledMixedRealityCamera** e **ResizeMixedRealityCamera**.
     * Usa i valori **Size X** (Dimensione X) e **Size Y** (Dimensione Y) per impostare le dimensioni video.
 
 ![Terza fotocamera](../platform-capabilities-and-apis/images/unreal-camera-3rd.PNG)
@@ -44,7 +47,7 @@ Unreal gestirà quindi le richieste da MRC per eseguire il rendering dal punto d
 ## <a name="using-the-pv-camera"></a>Uso della fotocamera/videocamera
 
 La texture della webcam può essere recuperata nel gioco in fase di runtime, ma deve essere abilitata in **Edit > Project Settings** (Modifica > Impostazioni progetto) nell'editor:
-1. Passa a **Platforms > HoloLens > Capabilities** (Piattaforme > HoloLens > Funzionalità) e seleziona **Webcam** .
+1. Passa a **Platforms > HoloLens > Capabilities** (Piattaforme > HoloLens > Funzionalità) e seleziona **Webcam**.
     * Usa la funzione **StartCameraCapture** per usare la webcam in fase di runtime e la funzione **StopCameraCapture** per arrestare la registrazione.
 
 ![Avvio e arresto della fotocamera](images/unreal-camera-startstop.PNG)
@@ -58,7 +61,7 @@ Per eseguire il rendering dell'immagine della fotocamera:
 
 ![Rendering della fotocamera](images/unreal-camera-render.PNG)
 
-4. Crea una nuova funzione per questo timer, in questo caso **MaterialTimer** , e chiama **GetARCameraImage** per ottenere la texture dalla webcam.  
+4. Crea una nuova funzione per questo timer, in questo caso **MaterialTimer**, e chiama **GetARCameraImage** per ottenere la texture dalla webcam.  
 5. Se la texture è valida, imposta un parametro di texture nello shader sull'immagine.  In alternativa, avvia di nuovo il timer del materiale.
 
 ![Acquisire texture dalla webcam](images/unreal-camera-texture.PNG)

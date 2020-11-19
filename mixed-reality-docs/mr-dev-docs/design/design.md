@@ -7,12 +7,12 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: realtà mista, individuare, distribuire, indice, pagina di destinazione, progettazione, sviluppo, esercitazioni, app di esempio, nozioni di base, case study, risorse, guide pratiche per HoloLens, progetti open source, concetti di base, interazione
-ms.openlocfilehash: 2ee127b05a8ad88e49eda6d088f84e895aeaf511
-ms.sourcegitcommit: 4e618948e1e2e0baf4bb3e8b67513fa7716aa815
+ms.openlocfilehash: 19a83a132cca08573f1066a2f7b87bd383ca79f4
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94361725"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573275"
 ---
 # <a name="start-designing-and-prototyping"></a>Iniziare a progettare e a creare prototipi
 
@@ -35,7 +35,7 @@ Come tutti i percorsi, anche quello che riguarda la progettazione di applicazion
 | [Espandere il processo di progettazione](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Una sguardo in prima persona al processo di progettazione della realtà mista realizzato da designer all'interno e all'esterno di Microsoft |
 | [Tipi di app di realtà mista](types-of-mixed-reality-apps.md) | Decidere in quale punto dello spettro della realtà mista si colloca l'esperienza dell'app |
 | [App Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Apprendere le nozioni di base relative alla progettazione dell'esperienza utente in realtà mista sperimentando in prima persona i comportamenti della realtà mista, i suggerimenti e i consigli per la creazione di straordinarie app HoloLens (disponibile per il download da Microsoft Store in HoloLens 2) |
-
+| [MRTK Examples Hub](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | Sperimentare comuni interazioni spaziali e blocchi predefiniti per Realtà mista (disponibile per il download da Microsoft Store in HoloLens 2) |
 ### <a name="2-core-concepts"></a>2. Concetti di base
 
 Per lo sviluppo di app per VR o AR, esistono alcuni concetti fondamentali che si applicano alla progettazione di esperienze immersive fluide. Conoscere il punto di vista degli utenti, posizionare gli oggetti e garantire che tutti siano a proprio agio in un ambiente sicuro sono le priorità principali in questa fase del percorso. Alla fine di questa sezione si sarà acquisita una solida base per proseguire con la progettazione delle interazioni.

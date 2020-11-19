@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 2d3a826ba3bf8fdf1299038a7964278f0d57dbb7
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: f4530cb6519434f8eb74e5335fecbe82ac2cd2c2
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353539"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631529"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Creazione delle interfacce utente
 
@@ -38,14 +38,14 @@ Nella finestra Hierarchy (Gerarchia) fai clic con il pulsante destro del mouse s
 
 ![Unity con l'oggetto Buttons appena creato selezionato e posizionato](images/mr-learning-base/base-06-section1-step1-1.png)
 
-Nella finestra Project (Progetto) passa alla cartella **Assets** (Asset)  > **MRTK.Tutorials.GettingStarted** > **Prefabs** (Prefab), fai clic e trascina il prefab **PressableRoundButton** sull'oggetto **Buttons** , quindi fai clic con il pulsante destro del mouse su PressableRoundButton e scegli **Duplicate** (Duplica) per creare una copia. Ripeti queste operazioni fino a ottenere un totale di tre oggetti PressableRoundButton:
+Nella finestra Project (Progetto) passa alla cartella **Assets** (Asset)  > **MRTK.Tutorials.GettingStarted** > **Prefabs** (Prefab), fai clic e trascina il prefab **PressableRoundButton** sull'oggetto **Buttons**, quindi fai clic con il pulsante destro del mouse su PressableRoundButton e scegli **Duplicate** (Duplica) per creare una copia. Ripeti queste operazioni fino a ottenere un totale di tre oggetti PressableRoundButton:
 
 ![Unity con i prefab PressableRoundButton appena aggiunti](images/mr-learning-base/base-06-section1-step1-2.png)
 
-Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **Buttons** , quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **GridObjectCollection** e configuralo come indicato di seguito:
+Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **Buttons**, quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **GridObjectCollection** e configuralo come indicato di seguito:
 
 * **Sort Type** (Tipo ordinamento): Child Order (Ordine elementi figlio)
-* **Layout** : Orizzontale
+* **Layout**: Orizzontale
 * **Cell Width** (Larghezza cella): 0.2
 * **Anchor** (Ancoraggio): Middle Left (In mezzo a sinistra)
 
@@ -53,22 +53,25 @@ Fai quindi clic sul pulsante **Update Collection** (Aggiorna raccolta) per aggio
 
 ![Oggetto Buttons di Unity con il componente GridObjectCollection aggiunto, configurato e applicato](images/mr-learning-base/base-06-section1-step1-3.png)
 
-Nella finestra Hierarchy (Gerarchia) assegna ai pulsanti i nomi **Hints** , **Explode** e **Reset**.
+Nella finestra Hierarchy (Gerarchia) assegna ai pulsanti i nomi **Hints**, **Explode** e **Reset**.
 
-Per ogni pulsante, seleziona l'oggetto figlio **SeeItSayItLabel** > **TextMeshPro** , quindi nella finestra Inspector (Controllo) modifica il rispettivo testo componente **TextMeshPro - Text** (TextMeshPro - Testo) in modo che corrisponda ai nomi dei pulsanti:
+Per ogni pulsante, seleziona l'oggetto figlio **SeeItSayItLabel** > **TextMeshPro**, quindi nella finestra Inspector (Controllo) modifica il rispettivo testo componente **TextMeshPro - Text** (TextMeshPro - Testo) in modo che corrisponda ai nomi dei pulsanti:
 
 ![Unity con le etichette di testo dei pulsanti configurate](images/mr-learning-base/base-06-section1-step1-4.png)
 
 Al termine, comprimi gli oggetti figlio dell'oggetto Buttons.
 
-Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto pulsante **Hints** , quindi nella finestra Inspector (Controllo) configura l'evento **OnClick ()** con supporto per interazioni come indicato di seguito:
+Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto pulsante **Hints**, quindi nella finestra Inspector (Controllo) configurare l'evento **Interactable.OnClick ()** come indicato di seguito:
 
 * Assegna l'oggetto **RoverAssembly** al campo **None (Object)** (Nessuno - Oggetto)
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **PlacementHintsController** > **TogglePlacementHints ()** per impostare questa funzione come l'azione da eseguire quando viene attivato l'evento
 
 ![Unity con l'evento OnClick dell'oggetto pulsante Hints configurato](images/mr-learning-base/base-06-section1-step1-5.png)
 
-Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto pulsante **Explode** , quindi nella finestra Inspector (Controllo) configura l'evento **OnClick ()** con supporto per interazioni come indicato di seguito:
+> [!TIP]
+> Il componente Interactable è un contenitore all-in-one che consente a tutti gli oggetti di interagire con facilità e rispondere all'input. Interactable agisce come un catch-all per tutti i tipi di input, tra cui il tocco, i raggi della mano, il riconoscimento vocale e così via e incanala tali interazioni in eventi e risposte con temi visivi. Per informazioni su come configurarlo per diversi tipi di input e personalizzarne il tema visivo, è possibile fare riferimento all'argomento [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) nel [portale della documentazione di MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+
+Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto pulsante **Explode**, quindi nella finestra Inspector (Controllo) configurare l'evento **Interactable.OnClick ()** come indicato di seguito:
 
 * Assegna l'oggetto **RoverAssembly** al campo **None (Object)** (Nessuno - Oggetto)
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **ExplodedViewController** > **ToggleExplodedView ()** per impostare questa funzione come l'azione da eseguire quando viene attivato l'evento
@@ -92,11 +95,11 @@ Nella finestra Project (Progetto) passare alla cartella **Assets** (Asset)  > **
 
 ![Unity con il prefab NearMenu appena aggiunto selezionato](images/mr-learning-base/base-06-section2-step1-1.png)
 
-Nella finestra Hierarchy (Gerarchia) rinomina l'oggetto come **Menu** , quindi espandi il relativo oggetto figlio **ButtonCollection** per visualizzare i quattro pulsanti:
+Nella finestra Hierarchy (Gerarchia) rinomina l'oggetto come **Menu**, quindi espandi il relativo oggetto figlio **ButtonCollection** per visualizzare i quattro pulsanti:
 
 ![Unity con l'oggetto Menu selezionato e l'oggetto ButtonCollection espanso](images/mr-learning-base/base-06-section2-step1-2.png)
 
-Rinomina il primo pulsante come **Indicator** , quindi nella finestra Inspector (Controllo) configura il componente **Button Config Helper (Script)** (Helper configurazione pulsanti - Script) come indicato di seguito:
+Rinomina il primo pulsante come **Indicator**, quindi nella finestra Inspector (Controllo) configura il componente **Button Config Helper (Script)** (Helper configurazione pulsanti - Script) come indicato di seguito:
 
 * Modifica il contenuto di **Main Label Text** (Testo etichetta principale) in modo che corrisponda al nome del pulsante
 * Assegna l'oggetto **Indicator** al campo **None (Object)** (Nessuno - Oggetto)
@@ -116,7 +119,7 @@ Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **Indicator** (Indica
 > [!NOTE]
 > A questo punto, all'avvio dell'app, l'indicatore è disabilitato per impostazione predefinita e può essere abilitato premendo il pulsante Indicator.
 
-Rinomina il secondo pulsante come **TapToPlace** , quindi nella finestra Inspector (Controllo) configura il componente **Button Config Helper (Script)** (Helper configurazione pulsanti - Script) come indicato di seguito:
+Rinomina il secondo pulsante come **TapToPlace**, quindi nella finestra Inspector (Controllo) configura il componente **Button Config Helper (Script)** (Helper configurazione pulsanti - Script) come indicato di seguito:
 
 * Modifica il contenuto di **Main Label Text** (Testo etichetta principale) in modo che corrisponda al nome del pulsante
 * Assegna l'oggetto RoverExplorer > **RoverAssembly** al campo **None (Object)** (Nessuno - Oggetto)
@@ -126,7 +129,7 @@ Rinomina il secondo pulsante come **TapToPlace** , quindi nella finestra Inspect
 
 ![Unity con il componente Button Config Helper dell'oggetto pulsante TapToPlace configurato](images/mr-learning-base/base-06-section2-step1-5.png)
 
-Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **RoverAssembly** , quindi nella finestra Inspector (Controllo) configura il componente **Tap To Place (Script)** (Tocco per posizionamento - Script) come indicato di seguito:
+Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **RoverAssembly**, quindi nella finestra Inspector (Controllo) configura il componente **Tap To Place (Script)** (Tocco per posizionamento - Script) come indicato di seguito:
 
 * Deseleziona la casella di controllo accanto al nome per rendere inattivo il componente per impostazione predefinita
 * Nella sezione dell'evento **On Placing Stopped ()** (All'arresto del posizionamento) fare clic sull'icona **+** per aggiungere un nuovo evento:
@@ -174,7 +177,7 @@ Nella finestra Hierarchy (Gerarchia) espandi l'oggetto RoverExplorer > **RoverPa
 
 ![Unity con tutti gli oggetti parte rover selezionati e il componente ToolTipSpawner aggiunto e configurato](images/mr-learning-base/base-06-section4-step1-2.png)
 
-Nella finestra Hierarchy (Gerarchia) seleziona la prima parte rover, RoverParts > **Camera_Part** , e configura il componente **ToolTipSpawner** come indicato di seguito:
+Nella finestra Hierarchy (Gerarchia) seleziona la prima parte rover, RoverParts > **Camera_Part**, e configura il componente **ToolTipSpawner** come indicato di seguito:
 
 * Modifica **Tool Tip Text** (Testo descrizione comando) in modo che rifletta il nome della parte, ovvero **Camera**
 
@@ -182,10 +185,10 @@ Nella finestra Hierarchy (Gerarchia) seleziona la prima parte rover, RoverParts 
 
 **Ripeti** questo passaggio per ogni oggetto parte rover per configurare il componente **ToolTipSpawner** come indicato di seguito:
 
-* Per **Generator_Part** , imposta **Tool Tip Text** (Testo descrizione comando) su **Generator**
-* Per **Lights_Part** , imposta **Tool Tip Text** (Testo descrizione comando) su **Lights**
-* Per **UHFAntenna_Part** , imposta **Tool Tip Text** (Testo descrizione comando) su **UHF Antenna**
-* Per **Spectrometer_Part** , imposta **Tool Tip Text** (Testo descrizione comando) su **Spectrometer**
+* Per **Generator_Part**, imposta **Tool Tip Text** (Testo descrizione comando) su **Generator**
+* Per **Lights_Part**, imposta **Tool Tip Text** (Testo descrizione comando) su **Lights**
+* Per **UHFAntenna_Part**, imposta **Tool Tip Text** (Testo descrizione comando) su **UHF Antenna**
+* Per **Spectrometer_Part**, imposta **Tool Tip Text** (Testo descrizione comando) su **Spectrometer**
 
 Seleziona il pulsante Play (Riproduci) per attivare la modalità di gioco, quindi tieni premuto il pulsante destro del mouse mentre muovi il mouse finché lo sguardo non incontra una delle parti. Verrà così visualizzata la descrizione comando relativa a tale parte:
 
