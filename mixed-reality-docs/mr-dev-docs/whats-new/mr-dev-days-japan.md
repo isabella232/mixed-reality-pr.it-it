@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Realtà mista, conferenza, Summit, sviluppatore, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 746b6257e6a3ab28424d7b74e43a1b6541d6fad0
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
-ms.translationtype: HT
+ms.openlocfilehash: 170c0ebfeee2b6305c5d52c8aba143badaffa5e2
+ms.sourcegitcommit: 53c6d27781ed12e2899c72087d317a62b2fad8cb
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573285"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94897356"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Realtà mista per i giorni di sviluppo in Giappone
 
@@ -27,9 +27,13 @@ Ci auguriamo che tu abbia partecipato al giorno dello sviluppo per la realtà mi
 
 **Registrazione gratuita**
 
+**Lingua principale-giapponese**
+
 ## <a name="registration"></a>Registrazione
 
-Presto disponibile
+[Registrazione-ora aperta](https://mixedrealityprod.microsoftcrmportals.com/event/sessions?id=MR_Dev_Days_Japan864059683)
+
+Siamo entusiasti di aprire la registrazione per la realtà mista per sviluppatori di giorni in Giappone.  L'evento è gratuito e viene tenuto online in Microsoft teams Live Events.  Si richiede che i partecipanti si registrino per poter inviare aggiornamenti di posta elettronica man mano che l'evento si avvicina e quindi è possibile partecipare agli elementi interattivi dell'evento.
 
 ## <a name="schedule---subject-to-change"></a>Pianificazione-soggetto a modifiche
 
@@ -49,14 +53,14 @@ Presto disponibile
 |1: pm-1:25pm|*Sessione 3* Panoramica dello sviluppo di HoloLens 2|Madoka Chiyoda|JA|200|
 |1: pm-1:55pm|*Sessione 4* HoloLens 2 & MRTK v 2.5 (MRTK-Unity)|Yoon Park|JA|300|
 |2:00-2:25pm|*Sessione 5* Introduzione a HoloLens 2 e Unreal Engine (MRTK-Unreal)|Cameron Micka|IT|300|
-|2: pm-2:55pm|*Sessione 6* Progettazione delle app MR (procedura consigliata per la creazione dell'interfaccia utente/UX per l'app HL2)|Daniel Escudero|IT|300|
+|2: pm-2:55pm|*Sessione 6* Creazione dell'app "progettazione di ologrammi". In questo articolo verranno illustrate le funzionalità, le esigenze e altre divertenti scoperte che abbiamo individuato durante la creazione della nuova app HoloLens 2.|Daniel Escudero|IT|300|
 |2:55pm-3:22:00|**Interruzione**||||
 |3:22:00-3:35pm|*Sessione 7* Ancoraggi degli oggetti di Azure|TBD|IT|300|
 |3:40pm-4:05PM|*Sessione 8* Rendering remoto di Azure|Atsushi Suzuki|JA|300|
 |4:22:00-4:35pm|*Sessione 9* Ancoraggi spaziali di Azure|TBD|IT|300|
 |4:40pm-5:05PM|*Sessione 10* TBD|TBD|JA|200|
 |5:22:00-5:35pm|*Sessione 11* Deep Dive di Azure Kinect DK, case study|Shinji Chiba|JA|400|
-|5:35pm-5:50pm|Chiusura|Madoka Chiyoda|JA|ND|
+|5:35pm-5:50pm|Chiusura|Madoka Chiyoda|JA|N/D|
 
 #### <a name="contributors-technical-reviewers-for-the-subtitles"></a>Collaboratori (revisori tecnici per i sottotitoli)
 
