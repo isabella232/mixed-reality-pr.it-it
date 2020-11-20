@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto tecnico, prestazioni
 appliesto:
 - Windows 10
-ms.openlocfilehash: 7d6d5a1eeabffdd7ad6d4ddd070a14c6dcf0d5ee
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+ms.openlocfilehash: 241fb95d92c771af727cc50287e4d1b2526123a5
+ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573205"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95002966"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Domande frequenti su HP Reverb G2
 
@@ -43,7 +43,7 @@ Se viene visualizzato un errore 7-14 "si è verificato un errore", provare a ese
 - Verificare che siano installati i driver più recenti per l'auricolare e il controller USB.
 - Assicurarsi di usare un driver USB Microsoft. Il nome del dispositivo "eXtensible Host Controller" deve essere "Microsoft".
 - Provare a collegare il cavo a una porta USB-3,0 diversa nel computer. (Provare le porte USB Type-C e Type-A)
-- Usare il cavo USB incluso in una scheda inclusa per provare porte diverse.
+- Usare l'unità C USB inclusa in un adapter per provare porte diverse.
 - Provare a collegare la cuffia a un hub USB al computer.
 
 > [!NOTE]
@@ -75,7 +75,7 @@ Anche se la maggior parte dei giochi non Visualizza i controller o usa i modelli
 ## <a name="my-steamvr-games-dont-appear-to-work-correctly-with-my-hp-motion-controllers"></a>I miei giochi SteamVR non sembrano funzionare correttamente con i controller di movimento HP
 
 Sebbene gli sviluppatori stiano lavorando per aggiornare i giochi per la compatibilità di HP Motion controller, abbiamo fornito associazioni controller personalizzate per molti dei giochi più diffusi su Steam. Con "realtà mista di Windows per SteamVR" completamente aggiornato alla versione 1.2.444, questi binding devono essere prelevati automaticamente quando il gioco è in esecuzione. Tuttavia, se il gioco non sembra registrare le azioni in questo momento, è possibile cercare manualmente i profili di binding personalizzati usando il menu delle impostazioni di SteamVR.
-Operazione da eseguire
+Per
 
 - Aprire il menu SteamVR premendo il pulsante di menu del controller di movimento destro
 - Selezionare l'icona "Settings" (impostazioni) nell'angolo in basso a destra del menu SteamVR.

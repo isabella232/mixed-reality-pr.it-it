@@ -3,12 +3,12 @@ title: Configurare Windows Mixed Reality
 description: Come configurare i controller di movimento per la realtà mista di Windows, il riconoscimento vocale e l'audio e definire il limite della stanza per uno spazio di riproduzione sicuro.
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, introduzione, installazione, controller di movimento, controller, sintesi vocale, audio, seduto, in piedi, confine, driver grafici, Microsoft Edge, cromo
-ms.openlocfilehash: 95ca5b8d86e26061e565a74efa36e49cc3d1b92b
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 16fa0fbf1574a61a5c7401de8a1e0431e183ec11
+ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132145"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95002996"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Configurare Windows Mixed Reality
 
@@ -24,7 +24,11 @@ Per eseguire la realtà mista di Windows, è necessario:
 
 ## <a name="get-set"></a>Ottenere set
 
-Preparare lo spazio (incluso lo spazio su sovraccarico). Assicurarsi che non vi siano ostacoli, rischi o elementi fragili nell'area in uso. Non impostare nella parte superiore di una scala o sotto una ventola a soffitto molto bassa. Rimuovere fragili e gli ostacoli dall'area e assicurarsi che tutti gli utenti che usano l'auricolare leggano e conoscano le [linee guida](https://support.microsoft.com/help/4039969)per la sicurezza.
+Preparare lo spazio (incluso lo spazio su sovraccarico). Assicurarsi che non vi siano ostacoli, rischi o elementi fragili nell'area in uso. Non impostare nella parte superiore di una scala o sotto una ventola a soffitto molto bassa. Rimuovere fragili e gli ostacoli dall'area e assicurarsi che tutti gli utenti che usano l'auricolare leggano e conoscano le linee guida per la sicurezza.
+
+Quando lo spazio è pronto, collegare la cuffia, ma non inserirla ancora, prima di tutto è necessario eseguire alcune operazioni di configurazione nel PC. Si eseguirà un controllo del PC, si scaricherà il software, si connetteranno i controller e si creerà un [limite](boundary-questions.md) che consente di evitare ostacoli.
+
+Viene quindi visualizzata la parte divertente, che viene inserita nell'auricolare e si entra nel mondo misto. Cortana sarà in attesa di offrire una presentazione. Buon divertimento!
 
 ## <a name="go"></a>Per
 
@@ -40,7 +44,7 @@ Se si dispone di un auricolare senza una radio incorporata, sarà necessario con
 
 Se si prevede di usare solo un gamepad Xbox o una tastiera e un mouse, non è necessario associare i controller.  Se si prevede di usare i controller, è probabile che sia possibile associarli.
 
-**Nota** : i controller di movimento per la realtà mista di Windows richiedono Bluetooth 4,0. Se il PC non dispone di Bluetooth integrato, sarà necessario collegare una scheda Bluetooth USB che supporti Bluetooth 4,0 per abilitare i controller di movimento. Se si usa la radio predefinita nell'auricolare, non è necessaria una scheda Bluetooth.
+**Nota**: i controller di movimento per la realtà mista di Windows richiedono Bluetooth 4,0. Se il PC non dispone di Bluetooth integrato, sarà necessario collegare una scheda Bluetooth USB che supporti Bluetooth 4,0 per abilitare i controller di movimento. Se si usa la radio predefinita nell'auricolare, non è necessaria una scheda Bluetooth.
 
 ![Acquisire familiarità con i controller di movimento](images/get_to_know_controllers.png)
 
@@ -100,7 +104,7 @@ A meno che non sia stato acquistato un Samsung HMD Odyssey (che ha integrato cuf
 
 ## <a name="adjusting-your-headsets-display-settings"></a>Regolazione delle impostazioni di visualizzazione dell'auricolare
 
-La realtà mista di Windows sceglie automaticamente le impostazioni di visualizzazione che bilanciano la qualità e le prestazioni, in base alla configurazione hardware del PC. Per modificare queste impostazioni, passare a **impostazioni > realtà mista > visualizzazione dell'auricolare** .
+La realtà mista di Windows sceglie automaticamente le impostazioni di visualizzazione che bilanciano la qualità e le prestazioni, in base alla configurazione hardware del PC. Per modificare queste impostazioni, passare a **impostazioni > realtà mista > visualizzazione dell'auricolare**.
 
 ### <a name="visuals"></a>Oggetti visivi
 
@@ -126,7 +130,7 @@ Questa impostazione consente di modificare la taratura dpi per gli auricolari co
 
 Questa impostazione avanzata sostituisce l'esperienza di frequenza di aggiornamento dello schermo della cuffia predefinita.
 
-* **Automatico (impostazione predefinita)** : seleziona automaticamente l'esperienza 60Hz o 90Hz in base alla configurazione hardware del PC.
+* **Automatico (impostazione predefinita)**: seleziona automaticamente l'esperienza 60Hz o 90Hz in base alla configurazione hardware del PC.
 * **60Hz**
 * **90Hz**
 
@@ -138,7 +142,7 @@ Questa impostazione avanzata sostituisce l'esperienza di frequenza di aggiorname
 Questa impostazione controlla il comportamento della realtà mista di Windows in risposta al sensore di presenza dell'auricolare:
 
 * **Cambia automaticamente usando il sensore di presenza dell'auricolare** (impostazione predefinita): Windows indirizza automaticamente l'input (tastiera, mouse...) alla realtà mista di Windows quando si indossa l'auricolare. È possibile eseguire l'override in qualsiasi momento con Win + Y.
-* **Passa manualmente usando il tasto logo Windows + Y** : Windows non userà il sensore di presenza dell'auricolare per rilevare quando si sta indossando la cuffia. È necessario usare Win + Y per cambiare l'input tra il desktop del PC e la realtà mista di Windows.
+* **Passa manualmente usando il tasto logo Windows + Y**: Windows non userà il sensore di presenza dell'auricolare per rilevare quando si sta indossando la cuffia. È necessario usare Win + Y per cambiare l'input tra il desktop del PC e la realtà mista di Windows.
 
 Questa impostazione è disponibile in Windows 10, versione 1903 o successive.
 
@@ -165,13 +169,13 @@ Per usare il nuovo Microsoft Edge basato su cromo nella Home realtà mista di Wi
 - I siti Web aperti in realtà mista di Windows andranno perduti quando si chiude il portale di realtà mista, anche se le finestre Microsoft Edge rimarranno nella posizione in cui sono state inserite nella Home realtà mista.
 - L'audio da Microsoft Edge Windows non è spaziale.
 - Correzione della versione dell'estensione del Visualizzatore 360 2.3.8: l'apertura di un video 360 da YouTube in realtà mista di Windows può comportare la distorsione del video nell'auricolare. Il riavvio di Edge dovrebbe aggiornare in modo invisibile l'estensione del Visualizzatore 360 per risolvere il problema. Per verificare quale versione dell'estensione è possibile immettere `edge://system/` nella barra degli indirizzi e selezionare il pulsante "Espandi" accanto a "estensioni".
-- Durante le sessioni di realtà mista di Windows, i monitoraggi virtuali verranno visualizzati come monitoraggi fisici generici nelle **impostazioni > visualizzazione > di sistema** .
+- Durante le sessioni di realtà mista di Windows, i monitoraggi virtuali verranno visualizzati come monitoraggi fisici generici nelle **impostazioni > visualizzazione > di sistema**.
 
 ## <a name="launching-mixed-reality-after-the-first-time"></a>Avvio della realtà mista dopo la prima volta
 
 La possibilità di entrare in realtà mista una seconda volta è semplice quanto riportare l'auricolare mentre è connesso al PC. È anche possibile avviare manualmente l'applicazione del portale per la realtà mista aprendola dal menu Start. L'input e l'audio verranno indirizzati automaticamente all'auricolare quando lo si inserisce. in alternativa, è possibile attivare questa impostazione manualmente premendo **Windows + Y** sulla tastiera.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Contattare la community](https://answers.microsoft.com)
 * [Contattaci per assistenza](https://support.microsoft.com/contactus/)

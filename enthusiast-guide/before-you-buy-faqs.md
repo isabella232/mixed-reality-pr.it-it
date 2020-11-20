@@ -8,56 +8,56 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, pre-vendita, ricerca, acquisto, prima dell'acquisto
 appliesto:
 - Windows 10
-ms.openlocfilehash: a38b6ed8625fbb419ad24f2e27acec881d7b85a7
-ms.sourcegitcommit: ea7d806c9aa88d1295493a25f47e58bb72a4000a
+ms.openlocfilehash: 20a585088c9bea9d01754f78e9934a4022c0e34c
+ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92907443"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95002975"
 ---
-# <a name="frequently-asked-questions"></a>Domande frequenti
+# <a name="before-you-buy-frequently-asked-questions"></a>Prima di acquistare domande frequenti
 
 ## <a name="general-questions"></a>Domande generali
 
-### <a name="where-can-i-buy-a-windows-mixed-reality-ready-pc-or-headset"></a>Dove è possibile acquistare un PC o un auricolare con la realtà mista di Windows?
+### <a name="where-can-i-buy-a-windows-mixed-reality-ready-pc-or-headset"></a>Dove è possibile acquistare un PC o un auricolare per la realtà mista di Windows
 
 **Risposta rapida:** È possibile acquistare un PC o un auricolare pronto per la realtà mista di Windows presso un rivenditore locale approvato o in linea da un'ampia gamma di rivenditori, inclusa la Microsoft Store. Trova un PC o un headset di Windows misto reality pronto: <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
-### <a name="where-can-i-try-windows-mixed-reality"></a>Dove posso provare la realtà mista di Windows?
+### <a name="where-can-i-try-windows-mixed-reality"></a>Dove posso provare la realtà mista di Windows
 
 **Risposta rapida:** È possibile provare la realtà mista di Windows in un [reattore Microsoft](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) nelle vicinanze.
 
 * Trova eventi Microsoft Reactor in Meetup.com: <https://www.meetup.com/pro/microsoft-reactor>
 
-### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>Quali produttori vendono i dispositivi di realtà mista di Windows?
+### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>Quali produttori vendono dispositivi di realtà mista Windows
 
 **Risposta rapida:** Gli auricolari e i controller di movimento sono attualmente disponibili da HP. Vedere <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
-### <a name="where-can-i-buy-standalone-motion-controllers"></a>Dove è possibile acquistare I controller di movimento autonomi?
+### <a name="where-can-i-buy-standalone-motion-controllers"></a>Dove è possibile acquistare controller di movimento autonomi
 
 **Risposta rapida:** Sfortunatamente, non siamo a conoscenza dei rivenditori che vendono controller di movimento autonomi al momento.
 
-### <a name="what-is-the-difference-between-a-windows-mixed-reality-pc-and-a-windows-mixed-reality-ultra-pc"></a>Qual è la differenza tra un PC con una realtà mista di Windows e un PC a realtà mista di Windows?
+### <a name="what-is-the-difference-between-a-windows-mixed-reality-pc-and-a-windows-mixed-reality-ultra-pc"></a>Qual è la differenza tra un PC con ambiente misto Windows e un PC a realtà mista di Windows
 
 **Risposta rapida:** Di seguito sono riportate informazioni dettagliate sui PC con la realtà mista Windows e i PC. <https://aka.ms/mrcompat>
 
-### <a name="why-is-this-called-windows-mixed-reality-when-the-devices-look-like-they-provide-a-virtual-reality-experience"></a>Perché si tratta di una "realtà mista" di Windows quando i dispositivi sembrano fornire un'esperienza di "realtà virtuale"?
+### <a name="why-is-this-called-windows-mixed-reality-when-the-devices-look-like-they-provide-a-virtual-reality-experience"></a>Perché si tratta di una "realtà mista" di Windows quando i dispositivi sembrano fornire un'esperienza di "realtà virtuale"
 
 **Risposta rapida:** La realtà mista si riferisce alla gamma completa di calcolo spaziale, dalla realtà aumentata alla realtà virtuale e dagli ologrammi. La piattaforma di realtà mista Windows supporta i dispositivi in realtà virtuale (VR) e realtà aumentata (AR). Sono attualmente supportati due tipi di dispositivi con una tecnologia simile su tale spettro: HoloLens (AR) e auricolari Windows Mixed Reality (VR) con i controller di movimento.
 
 Altre informazioni sulla realtà mista sono disponibili qui: <https://docs.microsoft.com/windows/mixed-reality/mixed-reality>
 
-### <a name="what-is-the-difference-between-windows-mixed-reality-and-other-vr-headsets"></a>Qual è la differenza tra la realtà mista di Windows e altri auricolari VR?
+### <a name="what-is-the-difference-between-windows-mixed-reality-and-other-vr-headsets"></a>Qual è la differenza tra la realtà mista di Windows e altri auricolari VR
 
 **Risposta rapida:** Gli auricolari per la realtà mista di Windows eseguono il rilevamento interno (le videocamere di rilevamento sono nella cuffia) e la configurazione plug-and-Play con Windows 10.
 
-**Altri dettagli** : la realtà mista di Windows offre diverse funzionalità, tra cui la semplice configurazione (senza bisogno di sensori esterni per tenere traccia dell'utente e dei controller), la scelta di auricolari per soddisfare la comodità e il punto di prezzo, le cuffie con risoluzioni competitive e infine un'esperienza utente univoca che offre un'interfaccia spaziale che consente di usare migliaia di app dal Microsoft Store.
+**Altri dettagli**: la realtà mista di Windows offre diverse funzionalità, tra cui la semplice configurazione (senza bisogno di sensori esterni per tenere traccia dell'utente e dei controller), la scelta di auricolari per soddisfare la comodità e il punto di prezzo, le cuffie con risoluzioni competitive e infine un'esperienza utente univoca che offre un'interfaccia spaziale che consente di usare migliaia di app dal Microsoft Store.
 
-### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>La realtà mista significa che le fotocamere interne sono pass-through? È possibile sperimentare la realtà aumentata oltre alla realtà virtuale?
+### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>La realtà mista significa che le fotocamere interne sono pass-through? È possibile sperimentare la realtà aumentata oltre alla realtà virtuale
 
-**Risposta rapida:** No, le fotocamere interne-out negli auricolari per la realtà mista di Windows vengono usate solo per il rilevamento posizionale. Gli auricolari per la realtà mista di Windows sono bloccati, vale a dire che sono destinati alla realtà virtuale e non offrono una visualizzazione del mondo reale o della realtà aumentata. 
+**Risposta rapida:** No, le fotocamere interne-out negli auricolari per la realtà mista di Windows vengono usate solo per il rilevamento posizionale. Gli auricolari per la realtà mista di Windows sono bloccati, vale a dire che sono destinati alla realtà virtuale e non offrono una visualizzazione del mondo reale o della realtà aumentata.
 
-### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>Informazioni sul rilevamento interno In che modo è diverso rispetto all'esterno o al rilevamento del Faro?
+### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>Informazioni sul rilevamento interno Come è diverso rispetto al rilevamento esterno o al rilevamento del Faro
 
 * **Rilevamento interno** La realtà mista di Windows usa il rilevamento interno. Con le videocamere di rilevamento interne sono incorporate nell'auricolare e tenere traccia delle modifiche nell'ambiente per determinare la posizione degli auricolari in relazione all'ambiente mentre ci si sposta.
 
@@ -65,11 +65,11 @@ Altre informazioni sulla realtà mista sono disponibili qui: <https://docs.micro
 
 Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel modo seguente: <https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system>
 
-### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>Il rilevamento interno dei controller di movimento può avere un effetto sul gioco a causa della fotocamera FOV?
+### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>Il rilevamento interno dei controller di movimento ha un effetto sul gioco a causa della fotocamera FOV
 
  Come gli auricolari, i controller di movimento della realtà mista di Windows non richiedono alcuna configurazione dei sensori di rilevamento esterni. Il controller viene invece rilevato dai sensori nell'auricolare. Se l'utente sposta i controller fuori dal campo di visualizzazione dell'auricolare, nella maggior parte dei casi Windows continuerà a dedurre le posizioni del controller e le fornirà all'app. Quando il controller ha perso il rilevamento visivo per un periodo di tempo sufficiente, le posizioni del controller vengono rilasciate a posizioni di accuratezza approssimativa. A questo punto, il sistema bloccherà il controller all'utente, tenendo traccia della posizione dell'utente mentre si spostano, esponendo comunque il vero orientamento del controller usando i sensori di orientamento interni. Molte app che usano i controller per puntare e attivare gli elementi dell'interfaccia utente possono funzionare normalmente con una precisione approssimativa senza che l'utente si accorga. Il modo migliore per ottenere questo aspetto è provare a eseguire l'operazione.
 
-### <a name="how-is-windows-mixed-reality-different-from-samsung-gear-vr"></a>In che modo la realtà mista di Windows è diversa da Samsung Gear VR?
+### <a name="how-is-windows-mixed-reality-different-from-samsung-gear-vr"></a>In che modo la realtà mista di Windows è diversa da Samsung Gear VR
 
 **Risposta rapida:** Tutti i prodotti VR basati su smartphone, tra cui Samsung Gear VR e Google Daydream, usano i sistemi di rilevamento della posizione Head di 3 gradi di libertà (3DOF). i sistemi basati su 3DOF consentono di spostare l'intestazione **solo** dal collo nel mondo virtuale. Windows MR d'altra parte usa un sistema di rilevamento della posizione di 6 gradi di libertà (6DOF) e dei controller. i sistemi basati su 6DOF consentono di spostare l'intero corpo nel mondo virtuale; quindi, è possibile aggirare un oggetto e vederlo da prospettive diverse, esattamente come si può fare nel mondo fisico. Rift e vive sono anche sistemi basati su 6DOF.
 
@@ -257,7 +257,7 @@ Ai dettagli tecnici elencati sopra viene fatto riferimento dalle specifiche del 
 
 ### <a name="do-the-mixed-reality-headsets-have-ipd-adjustment"></a>Gli auricolari con realtà mista hanno una regolazione dpi?
 
-**Risposta rapida:** A seconda dell'auricolare, alcuni auricolari di realtà mista includono la regolazione di dpi meccanica. Altri auricolari includono la regolazione del software dpi, che migliora la distorsione dell'immagine e l'accuratezza della profondità in base al dpi. Gli utenti possono impostare il dpi personalizzato tramite **le impostazioni > realtà mista > visualizzare > la calibrazione** .
+**Risposta rapida:** A seconda dell'auricolare, alcuni auricolari di realtà mista includono la regolazione di dpi meccanica. Altri auricolari includono la regolazione del software dpi, che migliora la distorsione dell'immagine e l'accuratezza della profondità in base al dpi. Gli utenti possono impostare il dpi personalizzato tramite **le impostazioni > realtà mista > visualizzare > la calibrazione**.
 
 ### <a name="do-the-mixed-reality-headsets-have-eye-relief-adjustment"></a>Gli auricolari per la realtà mista hanno una regola di rilievo degli occhi?
 
