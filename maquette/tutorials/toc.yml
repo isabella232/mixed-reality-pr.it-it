@@ -1,0 +1,16 @@
+- name: Funzionalità 1
+  href: feature-1.md
+- name: Funzionalità 2
+  href: feature-2.md
+- name: Funzionalità 3
+  href: feature-3.md
+- name: Funzionalità 4
+  href: feature-4.md
+- name: Creazione di una finestra di dialogo
+  href: creating-dialog-box.md
+- name: Creazione di una finestra delle proprietà da JSON
+  href: json-property-sheet.md
+- name: Accesso a JSON dal Web
+  href: accessing-web-json.md
+- name: Utilizzo dei dati di Excel
+  href: working-with-excel-data.md
