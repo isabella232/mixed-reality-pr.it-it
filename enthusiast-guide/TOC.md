@@ -1,15 +1,11 @@
 # [Documentazione per appassionati di Windows Mixed Reality](index.yml)
 ## [Iniziare il percorso VR](vr-journey.md)
 
-## Prima dell'acquisto
-<!-- ### [What is Windows Mixed Reality?](windows-mixed-reality.md) -->
+## Introduzione
+### [Prima di iniziare](before-you-start.md)
 ### [Linee guida per l'hardware minimo](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
 ### [Adapter consigliati](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 ### [Assistenza per la compatibilità dei PC](get-help-with-pc-compatibility.md)
-### [Domande frequenti](before-you-buy-faqs.md)
-
-## Introduzione
-### [Prima di iniziare](before-you-start.md)
 ### [Collegare il visore VR](plug-in-your-headset.md)
 ### [Installare Windows Mixed Reality](install-windows-mixed-reality.md)
 ### [Configurare Windows Mixed Reality](set-up-windows-mixed-reality.md)
@@ -31,6 +27,7 @@
 ### [Registrazione di bug e feedback](filing-feedback.md)
 ### [Codici di errore](error-codes.md)
 ### [Errori di installazione](installation_errors.md)
+### [Prima dell'acquisto](before-you-buy-faqs.md)
 ### [Limiti](boundary-questions.md)
 ### [Connettività del visore VR](headset-connectivity.md)
 ### [Display del visore VR](headset-display.md)
