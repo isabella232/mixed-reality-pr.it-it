@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, controlli, tipo di carattere, tipografia, interfaccia utente, UX, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: 9778b1b11db7ac1c330b0ede4f6153deff45a95a
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 04b62cd0989042856dbd15d467d042f67df69931
+ms.sourcegitcommit: 5d6dbbb94e60cf10786d0fbbaf4239a1541e9e29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677360"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95008134"
 ---
 # <a name="text-in-unity"></a>Testo in Unity
 
@@ -93,7 +93,7 @@ In base a questi fattori di scalabilità, sono stati creati [prefabbricati di te
 
 ### <a name="shader-with-occlusion-support"></a>Shader con supporto occlusione
 
-Il materiale del tipo di carattere predefinito di Unity non supporta l'occlusione. Per questo motivo, per impostazione predefinita verrà visualizzato il testo dietro gli oggetti. È stato incluso un semplice [shader che supporta l'occlusione](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MRTK/Core/StandardAssets/Shaders/Text3DShader.shader). L'immagine seguente mostra il testo con il materiale carattere predefinito (a sinistra) e il testo con occlusione corretta (destra).
+Il materiale del tipo di carattere predefinito di Unity non supporta l'occlusione. Per questo motivo, per impostazione predefinita verrà visualizzato il testo dietro gli oggetti. È stato incluso un semplice [shader che supporta l'occlusione](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/StandardAssets/Shaders/Text3DShader.shader). L'immagine seguente mostra il testo con il materiale carattere predefinito (a sinistra) e il testo con occlusione corretta (destra).
 
 ![Shader con supporto occlusione](images/hug-text-07-1000px.png)<br>
 *Shader con supporto occlusione*
