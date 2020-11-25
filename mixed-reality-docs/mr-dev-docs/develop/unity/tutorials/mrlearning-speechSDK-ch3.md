@@ -5,44 +5,44 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
-keywords: realtà mista, unity, esercitazione, hololens
+keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, riconoscimento vocale, Windows 10, traduzione vocale
 ms.localizationpriority: high
-ms.openlocfilehash: 6a7aead068b5ab8ba25bcf84bbeae0a19723845b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1139da69b27352b996d57184e21e9d6291d26fce
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91702188"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679920"
 ---
-# <a name="3-adding-the-azure-cognitive-services-speech-translation-component"></a><span data-ttu-id="7a89d-105">3. Aggiunta del componente di traduzione vocale di Servizi cognitivi di Azure</span><span class="sxs-lookup"><span data-stu-id="7a89d-105">3. Adding the Azure Cognitive Services speech translation component</span></span>
+# <a name="3-adding-the-azure-cognitive-services-speech-translation-component"></a><span data-ttu-id="39563-105">3. Aggiunta del componente di traduzione vocale di Servizi cognitivi di Azure</span><span class="sxs-lookup"><span data-stu-id="39563-105">3. Adding the Azure Cognitive Services speech translation component</span></span>
 
-<span data-ttu-id="7a89d-106">In questa esercitazione aggiungerai a un progetto la traduzione vocale in modo da poter tradurre e trascrivere il parlato in tre lingue diverse.</span><span class="sxs-lookup"><span data-stu-id="7a89d-106">In this tutorial, you will add speech translation to your project which will allow you to translate and transcribed your speech into three different languages.</span></span>
+<span data-ttu-id="39563-106">In questa esercitazione aggiungerai a un progetto la traduzione vocale in modo da poter tradurre e trascrivere il parlato in tre lingue diverse.</span><span class="sxs-lookup"><span data-stu-id="39563-106">In this tutorial, you will add speech translation to your project which will allow you to translate and transcribed your speech into three different languages.</span></span>
 
-## <a name="objectives"></a><span data-ttu-id="7a89d-107">Obiettivi</span><span class="sxs-lookup"><span data-stu-id="7a89d-107">Objectives</span></span>
+## <a name="objectives"></a><span data-ttu-id="39563-107">Obiettivi</span><span class="sxs-lookup"><span data-stu-id="39563-107">Objectives</span></span>
 
-* <span data-ttu-id="7a89d-108">Ottenere informazioni su come integrare la traduzione vocale di Azure</span><span class="sxs-lookup"><span data-stu-id="7a89d-108">Learn how to integrate Azure speech translation</span></span>
+* <span data-ttu-id="39563-108">Ottenere informazioni su come integrare la traduzione vocale di Azure</span><span class="sxs-lookup"><span data-stu-id="39563-108">Learn how to integrate Azure speech translation</span></span>
 
-## <a name="instructions"></a><span data-ttu-id="7a89d-109">Istruzioni</span><span class="sxs-lookup"><span data-stu-id="7a89d-109">Instructions</span></span>
+## <a name="instructions"></a><span data-ttu-id="39563-109">Istruzioni</span><span class="sxs-lookup"><span data-stu-id="39563-109">Instructions</span></span>
 
-<span data-ttu-id="7a89d-110">Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **Lunarcom** , quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **Lunarcom Translation Recognizer (Script)** (Riconoscimento traduzione Lunarcom - Script) all'oggetto Lunarcom e configuralo come indicato di seguito:</span><span class="sxs-lookup"><span data-stu-id="7a89d-110">In the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, use the **Add Component** button to add the **Lunarcom Translation Recognizer (Script)** component to the Lunarcom object and configure it as follows:</span></span>
+<span data-ttu-id="39563-110">Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **Lunarcom**, quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **Lunarcom Translation Recognizer (Script)** (Riconoscimento traduzione Lunarcom - Script) all'oggetto Lunarcom e configuralo come indicato di seguito:</span><span class="sxs-lookup"><span data-stu-id="39563-110">In the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, use the **Add Component** button to add the **Lunarcom Translation Recognizer (Script)** component to the Lunarcom object and configure it as follows:</span></span>
 
-* <span data-ttu-id="7a89d-111">Modifica l'impostazione di **Target Language** (Lingua di destinazione) impostando la lingua desiderata, ad esempio _German_ (Tedesco)</span><span class="sxs-lookup"><span data-stu-id="7a89d-111">Change the **Target Language** to a language of your choosing, for example, _German_</span></span>
+* <span data-ttu-id="39563-111">Modifica l'impostazione di **Target Language** (Lingua di destinazione) impostando la lingua desiderata, ad esempio _German_ (Tedesco)</span><span class="sxs-lookup"><span data-stu-id="39563-111">Change the **Target Language** to a language of your choosing, for example, _German_</span></span>
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial3-section1-step1-1.png)
 
 > [!NOTE]
-> <span data-ttu-id="7a89d-113">Il componente Lunarcom Translation Recognizer (Script) (Riconoscimento traduzione Lunarcom - Script) non fa parte di MRTK.</span><span class="sxs-lookup"><span data-stu-id="7a89d-113">The Lunarcom Translation Recognizer (Script) component is not part of MRTK.</span></span> <span data-ttu-id="7a89d-114">È stato fornito con gli asset dell'esercitazione.</span><span class="sxs-lookup"><span data-stu-id="7a89d-114">It was provided with this tutorial's assets.</span></span>
+> <span data-ttu-id="39563-113">Il componente Lunarcom Translation Recognizer (Script) (Riconoscimento traduzione Lunarcom - Script) non fa parte di MRTK.</span><span class="sxs-lookup"><span data-stu-id="39563-113">The Lunarcom Translation Recognizer (Script) component is not part of MRTK.</span></span> <span data-ttu-id="39563-114">È stato fornito con gli asset dell'esercitazione.</span><span class="sxs-lookup"><span data-stu-id="39563-114">It was provided with this tutorial's assets.</span></span>
 
-<span data-ttu-id="7a89d-115">Se attivi la modalità di gioco, puoi testare la traduzione vocale selezionando prima il pulsante satellite.</span><span class="sxs-lookup"><span data-stu-id="7a89d-115">If you now enter Game mode, you can test the speech translation by first pressing the satellite button.</span></span> <span data-ttu-id="7a89d-116">Supponendo quindi che il computer disponga di un microfono, quando pronunci una frase, questa verrà tradotta nella lingua scelta e trascritta nel pannello del terminale:</span><span class="sxs-lookup"><span data-stu-id="7a89d-116">Then, assuming your computer has a microphone, when you say something, your speech will be translated into the chosen language and transcribed on the terminal panel:</span></span>
+<span data-ttu-id="39563-115">Se attivi la modalità di gioco, puoi testare la traduzione vocale selezionando prima il pulsante satellite.</span><span class="sxs-lookup"><span data-stu-id="39563-115">If you now enter Game mode, you can test the speech translation by first pressing the satellite button.</span></span> <span data-ttu-id="39563-116">Supponendo quindi che il computer disponga di un microfono, quando pronunci una frase, questa verrà tradotta nella lingua scelta e trascritta nel pannello del terminale:</span><span class="sxs-lookup"><span data-stu-id="39563-116">Then, assuming your computer has a microphone, when you say something, your speech will be translated into the chosen language and transcribed on the terminal panel:</span></span>
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial3-section1-step1-2.png)
 
 > [!CAUTION]
-> <span data-ttu-id="7a89d-118">Poiché l'applicazione deve connettersi ad Azure, assicurati che il computer o il dispositivo sia connesso a Internet.</span><span class="sxs-lookup"><span data-stu-id="7a89d-118">The application needs to connect to Azure, so make sure your computer/device is connected to the internet.</span></span>
+> <span data-ttu-id="39563-118">Poiché l'applicazione deve connettersi ad Azure, assicurati che il computer o il dispositivo sia connesso a Internet.</span><span class="sxs-lookup"><span data-stu-id="39563-118">The application needs to connect to Azure, so make sure your computer/device is connected to the internet.</span></span>
 
-## <a name="congratulations"></a><span data-ttu-id="7a89d-119">Lezione completata</span><span class="sxs-lookup"><span data-stu-id="7a89d-119">Congratulations</span></span>
+## <a name="congratulations"></a><span data-ttu-id="39563-119">Lezione completata</span><span class="sxs-lookup"><span data-stu-id="39563-119">Congratulations</span></span>
 
-<span data-ttu-id="7a89d-120">Il progetto ora è in grado di tradurre correttamente in lingue diverse le parole che pronunci.</span><span class="sxs-lookup"><span data-stu-id="7a89d-120">Your project can now successfully translate the words you speak into several different languages.</span></span> <span data-ttu-id="7a89d-121">Esegui l'applicazione sul dispositivo per verificare che la funzionalità venga eseguita correttamente.</span><span class="sxs-lookup"><span data-stu-id="7a89d-121">Run the application on your device to ensure the feature is working properly.</span></span>
+<span data-ttu-id="39563-120">Il progetto ora è in grado di tradurre correttamente in lingue diverse le parole che pronunci.</span><span class="sxs-lookup"><span data-stu-id="39563-120">Your project can now successfully translate the words you speak into several different languages.</span></span> <span data-ttu-id="39563-121">Esegui l'applicazione sul dispositivo per verificare che la funzionalità venga eseguita correttamente.</span><span class="sxs-lookup"><span data-stu-id="39563-121">Run the application on your device to ensure the feature is working properly.</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="7a89d-122">Esercitazione successiva: 4. Configurazione di finalità e comprensione del linguaggio naturale</span><span class="sxs-lookup"><span data-stu-id="7a89d-122">Next tutorial: 4. Setting up intent and natural language understanding</span></span>](mrlearning-speechSDK-ch4.md)
+> [<span data-ttu-id="39563-122">Esercitazione successiva: 4. Configurazione di finalità e comprensione del linguaggio naturale</span><span class="sxs-lookup"><span data-stu-id="39563-122">Next tutorial: 4. Setting up intent and natural language understanding</span></span>](mrlearning-speechSDK-ch4.md)

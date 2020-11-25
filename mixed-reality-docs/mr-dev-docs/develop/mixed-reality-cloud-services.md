@@ -7,13 +7,13 @@ ms.author: v-haferr
 ms.date: 06/5/2020
 ms.topic: overview
 ms.localizationpriority: high
-keywords: Realtà mista, sviluppare, sviluppo, HoloLens, servizi cloud
-ms.openlocfilehash: ae79da3d5bdf85bc27312044409c1f9c9aa5f031
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista, sviluppare, sviluppo, HoloLens, servizi cloud, Azure, rendering remoto, ancoraggi nello spazio, servizi cognitivi, cognizione, unity, machine learning, traduzione vocale, visione artificiale, Microsoft Graph
+ms.openlocfilehash: 640e99637f9cfa1786e1e78ed5cec396748b2f47
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697300"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679690"
 ---
 # <a name="azure-cloud-services"></a>Servizi cloud di Azure
 
@@ -46,9 +46,9 @@ Come ulteriore vantaggio, ARR non limita il tipo di interfaccia utente che è po
 Ancoraggi nello spazio di Azure, o ASA, è un servizio multipiattaforma che consente di creare applicazioni di realtà mista con riconoscimento dello spazio. Con gli ancoraggi nello spazio di Azure è possibile eseguire il mapping, mantenere in modo permanente e condividere contenuto olografico tra più dispositivi in scala reale. 
 
 ASA è una soluzione personalizzata in modo esclusivo per casi d'uso comuni in realtà mista, tra cui:
-* **Way-finding** : due o più ancoraggi nello spazio possono essere collegati per creare un elenco di attività o punti di interesse con cui un utente può interagire.
-* **Esperienze multiutente** : gli utenti possono effettuare spostamenti avanti e indietro interagendo con oggetti nello stesso spazio virtuale.
-* **Contenuto virtuale permanente nel mondo reale** : gli utenti possono posizionare nel mondo reale oggetti virtuali visualizzabili da altri dispositivi supportati.
+* **Way-finding**: due o più ancoraggi nello spazio possono essere collegati per creare un elenco di attività o punti di interesse con cui un utente può interagire.
+* **Esperienze multiutente**: gli utenti possono effettuare spostamenti avanti e indietro interagendo con oggetti nello stesso spazio virtuale.
+* **Contenuto virtuale permanente nel mondo reale**: gli utenti possono posizionare nel mondo reale oggetti virtuali visualizzabili da altri dispositivi supportati.
 
 ![Esempio di Ancoraggi nello spazio di Azure](images/persistence.gif)
 
