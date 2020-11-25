@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realtà mista, unity, esercitazione, hololens, android, ios
+keywords: realtà mista, unity, esercitazione, hololens, android, ios, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 501cfab2a86dcf5753b7371898a8c4b6c8a1e10b
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: bee84db206dbb4e95272799c16d6dbd4e394e807
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353379"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679430"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5. Ancoraggi nello spazio di Azure per Android e iOS
 
@@ -48,7 +48,7 @@ Seguire lo stesso processo per importare i pacchetti rimanenti, in base alle esi
 
 In questa sezione verrà illustrato come configurare MRTK per la distribuzione in un dispositivo mobile.
 
-Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **MixedRealityToolkit**. Quindi, nella finestra Inspector (Controllo) selezionare la scheda **Camera** (Fotocamera), clonare i profilo della fotocamera e assegnare un nome adatto, ad esempio **AzureSpatialAnchors_ARCameraProfile** :
+Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **MixedRealityToolkit**. Quindi, nella finestra Inspector (Controllo) selezionare la scheda **Camera** (Fotocamera), clonare i profilo della fotocamera e assegnare un nome adatto, ad esempio **AzureSpatialAnchors_ARCameraProfile**:
 
 ![Unity con il profilo ARCameraProfile appena creato selezionato](images/mr-learning-asa/asa-05-section2-step1-1.png)
 
@@ -59,7 +59,7 @@ Con la scheda **Camera** (Fotocamera) ancora selezionata nella finestra Inspecto
 
 ![Profilo ARCameraProfile di Unity con il nuovo provider di dati aggiunto](images/mr-learning-asa/asa-05-section2-step1-2.png)
 
-Usando l'elenco a discesa **Type** (Tipo), cambiare il tipo in **Microsoft.MixedReality.Toolkit.Experimental.UnityAR** > **UnityARCameraSettings** :
+Usando l'elenco a discesa **Type** (Tipo), cambiare il tipo in **Microsoft.MixedReality.Toolkit.Experimental.UnityAR** > **UnityARCameraSettings**:
 
 ![Profilo ARCameraProfile di Unity con il percorso di selezione del tipo di provider di dati](images/mr-learning-asa/asa-05-section2-step1-3.png)
 
@@ -105,7 +105,7 @@ Nella finestra Build Settings (Impostazioni di compilazione) fare clic sul pulsa
 
 Nella finestra delle impostazioni di compilazione fare clic sul pulsante **Build And Run** (Compila ed esegui) per aprire la finestra Build Android (Compila in Android).
 
-Scegliere il percorso in cui archiviare la build, ad esempio _D:\MixedRealityLearning\Builds_ , quindi assegnare un nome adeguato all'apk, ad esempio _MRTKTutorials-AzureSpatialAnchors_ , e fare clic sul pulsante **Save** (Salva) per avviare il processo di compilazione:
+Scegliere il percorso in cui archiviare la build, ad esempio _D:\MixedRealityLearning\Builds_, quindi assegnare un nome adeguato all'apk, ad esempio _MRTKTutorials-AzureSpatialAnchors_, e fare clic sul pulsante **Save** (Salva) per avviare il processo di compilazione:
 
 ![Finestra Build Settings di Unity con la finestra del prompt di salvataggio - Android](images/mr-learning-asa/asa-05-section3-step1-5.png)
 
@@ -143,7 +143,7 @@ Nella finestra Build Settings (Impostazioni di compilazione) fare clic sul pulsa
 
 Nella finestra delle impostazioni di compilazione fare clic sul pulsante **Build** (Compila) per aprire la finestra Build iOS (Compila in iOS).
 
-Scegliere un percorso appropriato in cui archiviare il progetto Xcode, ad esempio _D:\MixedRealityLearning\Builds_ , creare una nuova cartella e assegnarle un nome adatto, ad esempio, _MRTKTutorials-AzureSpatialAnchors_ , e quindi fare clic sul pulsante **Select Folder** (Seleziona cartella) per avviare il processo di compilazione:
+Scegliere un percorso appropriato in cui archiviare il progetto Xcode, ad esempio _D:\MixedRealityLearning\Builds_, creare una nuova cartella e assegnarle un nome adatto, ad esempio, _MRTKTutorials-AzureSpatialAnchors_, e quindi fare clic sul pulsante **Select Folder** (Seleziona cartella) per avviare il processo di compilazione:
 
 ![Finestra Build Settings di Unity con la finestra del prompt di salvataggio - iOS](images/mr-learning-asa/asa-05-section4-step1-5.png)
 

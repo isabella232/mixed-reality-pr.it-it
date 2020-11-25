@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realtà mista, unity, esercitazione, hololens
+keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, interazioni degli oggetti, cubi di delimitazione
 ms.localizationpriority: high
-ms.openlocfilehash: 1e91cc97f68a4d4b5bcb015184e96582533d1f96
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 5e2857a7baf85187902bd98de6271e53dcc3539e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353519"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679270"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interazione con oggetti 3D
 
@@ -34,12 +34,12 @@ Di seguito sono elencati i passaggi principali da eseguire per ottenere questo r
 3. Configurare il componente Object Manipulator (Script) (Manipolatore oggetti - script)
 
 > [!NOTE]
-> Per poter **manipolare un oggetto** , è necessario che l'oggetto abbia i componenti seguenti:
+> Per poter **manipolare un oggetto**, è necessario che l'oggetto abbia i componenti seguenti:
 >
 > * Componente **Collider** (Collisore), ad esempio un collisore cuboide
 > * Componente **Object Manipulator (Script)** (Manipolatore oggetti - script)
 >
-> Per poter **manipolare** e **afferrare un oggetto con le mani tracciate** , è necessario che l'oggetto abbia i componenti seguenti:
+> Per poter **manipolare** e **afferrare un oggetto con le mani tracciate**, è necessario che l'oggetto abbia i componenti seguenti:
 >
 > * Componente **Collider** (Collisore), ad esempio un collisore cuboide
 > * Componente **Object Manipulator (Script)** (Manipolatore oggetti - script)
@@ -47,7 +47,7 @@ Di seguito sono elencati i passaggi principali da eseguire per ottenere questo r
 
 Configurerai inoltre Rover Explorer (Esplora rover) in modo che sia possibile posizionare le parti rover sul rover per renderlo un assembly di rover completo.
 
-Nella finestra Hierarchy (Gerarchia) espandi l'oggetto RoverExplorer > **RoverParts** e seleziona tutti i relativi oggetti parte rover figlio e l'oggetto **RoverAssembly** , quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere i componenti seguenti a tutti gli oggetti selezionati:
+Nella finestra Hierarchy (Gerarchia) espandi l'oggetto RoverExplorer > **RoverParts** e seleziona tutti i relativi oggetti parte rover figlio e l'oggetto **RoverAssembly**, quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere i componenti seguenti a tutti gli oggetti selezionati:
 
 * Componente **Object Manipulator (Script)** (Manipolatore oggetti - script)
 * Componente **NearInteractionGrabbable**
@@ -85,7 +85,7 @@ Nella finestra Hierarchy (Gerarchia) seleziona di nuovo gli **oggetti parte rove
 
 ![Unity con tutte le parti rover selezionate e il componente Audio Source aggiunto e configurato](images/mr-learning-base/base-07-section1-step1-4.png)
 
-Nella finestra Hierarchy (Gerarchia) espandi l'oggetto RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** in modo da rivelare tutti gli oggetti suggerimento di posizionamento, quindi scegli la prima parte rover, RoverParts > **Camera_Part** , e configura il componente **Part Assembly Controller (Script)** (Controllo assembly parti - script) come indicato di seguito:
+Nella finestra Hierarchy (Gerarchia) espandi l'oggetto RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** in modo da rivelare tutti gli oggetti suggerimento di posizionamento, quindi scegli la prima parte rover, RoverParts > **Camera_Part**, e configura il componente **Part Assembly Controller (Script)** (Controllo assembly parti - script) come indicato di seguito:
 
 * Assegna l'oggetto **Camera_PlacementHint** al campo **Location To Place** (Punto di posizionamento)
 
@@ -93,11 +93,11 @@ Nella finestra Hierarchy (Gerarchia) espandi l'oggetto RoverAssembly > RoverMode
 
 **Ripeti** questo passaggio per ognuno degli oggetti parte rover rimanenti e per l'oggetto RoverAssembly per configurare il componente **Part Assembly Controller (Script)** (Controllo assembly parti - script) come indicato di seguito:
 
-* Per **Generator_Part** , assegna l'oggetto **Generator_PlacementHint** al campo **Location To Place** (Punto di posizionamento)
-* Per **Lights_Part** , assegna l'oggetto **Lights_PlacementHint** al campo **Location To Place** (Punto di posizionamento)
-* Per **UHFAntenna_Part** , assegna l'oggetto **UHFAntenna_PlacementHint** al campo **Location To Place** (Punto di posizionamento)
-* Per **Spectrometer_Part** , assegna l'oggetto **Spectrometer_PlacementHint** al campo **Location To Place** (Punto di posizionamento)
-* Per **RoverAssembly** , assegna l'oggetto stesso., ovvero l'oggetto **RoverAssembly** stesso, al campo **Location To Place** (Punto di posizionamento)
+* Per **Generator_Part**, assegna l'oggetto **Generator_PlacementHint** al campo **Location To Place** (Punto di posizionamento)
+* Per **Lights_Part**, assegna l'oggetto **Lights_PlacementHint** al campo **Location To Place** (Punto di posizionamento)
+* Per **UHFAntenna_Part**, assegna l'oggetto **UHFAntenna_PlacementHint** al campo **Location To Place** (Punto di posizionamento)
+* Per **Spectrometer_Part**, assegna l'oggetto **Spectrometer_PlacementHint** al campo **Location To Place** (Punto di posizionamento)
+* Per **RoverAssembly**, assegna l'oggetto stesso., ovvero l'oggetto **RoverAssembly** stesso, al campo **Location To Place** (Punto di posizionamento)
 
 Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto pulsante RoverExplorer > Buttons (Pulsanti) > **Reset** (Reimposta) e quindi nella finestra Inspector (Controllo) configura l'evento **OnClick ()** con supporto per interazioni come indicato di seguito:
 
@@ -118,7 +118,7 @@ I cubi di delimitazione consentono di manipolare gli oggetti con una mano in mod
 
 In questo esempio aggiungerai un cubo di delimitazione all'oggetto RoverExplorer in modo da poter spostare, ruotare e ridimensionare facilmente l'intera esperienza. Configurerai inoltre il menu in modo che sia possibile abilitare e disabilitare il cubo di delimitazione.
 
-Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **RoverExplorer** , quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere i componenti seguenti:
+Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **RoverExplorer**, quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere i componenti seguenti:
 
 * Componente **BoundingBox**
 * Componente **Object Manipulator (Script)** (Manipolatore oggetti - script)
@@ -133,7 +133,7 @@ Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **RoverExplorer** , qui
 > [!NOTE]
 > Il componente BoundingBox aggiungerà automaticamente il componente NearInteractionGrabbable in fase di runtime. Non è necessario pertanto aggiungere questo componente per afferrare con le mani tracciate gli oggetti racchiusi.
 
-Nella finestra Hierarchy (Gerarchia) espandi l'oggetto Menu > **ButtonCollection** in modo da rivelare i quattro pulsanti e rinomina il terzo pulsante come **BoundingBox_Enable** , quindi nella finestra Inspector (Controllo) configura il componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
+Nella finestra Hierarchy (Gerarchia) espandi l'oggetto Menu > **ButtonCollection** in modo da rivelare i quattro pulsanti e rinomina il terzo pulsante come **BoundingBox_Enable**, quindi nella finestra Inspector (Controllo) configura il componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
 
 * Imposta **Main Label Text** (Testo etichetta principale) su **Enable** (Abilita)
 * Assegna l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)
@@ -147,7 +147,7 @@ Nella finestra Hierarchy (Gerarchia) espandi l'oggetto Menu > **ButtonCollection
 
 ![Unity con l'oggetto pulsante BoundingBox_Enable selezionato e il componente Button Config Helper configurato](images/mr-learning-base/base-07-section2-step1-2.png)
 
-Rinomina il quarto e ultimo pulsante come **BoundingBox_Disable** , quindi nella finestra Inspector (Controllo) configura il componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
+Rinomina il quarto e ultimo pulsante come **BoundingBox_Disable**, quindi nella finestra Inspector (Controllo) configura il componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
 
 * Imposta **Main Label Text** (Testo etichetta principale) su **Disable** (Disabilita)
 * Assegna l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)

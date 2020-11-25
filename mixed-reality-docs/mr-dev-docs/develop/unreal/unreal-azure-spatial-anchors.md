@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 07/01/2020
 ms.topic: tutorial
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, sviluppo di azure, ancoraggi nello spazio, realtà mista, sviluppo, funzionalità, nuovo progetto, emulatore, documentazione, guide, ologrammi, sviluppo di giochi
-ms.openlocfilehash: 5f1f7ef0cb55714ed87bbc3e827d77d3e2694084
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, sviluppo di azure, ancoraggi nello spazio, realtà mista, sviluppo, funzionalità, nuovo progetto, emulatore, documentazione, guide, ologrammi, sviluppo di giochi, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
+ms.openlocfilehash: 05a4b221961fa9b3a150eb8ef9f8bd2f77f5b955
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701228"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679870"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Ancoraggi nello spazio di Azure in Unreal
 
@@ -47,7 +47,7 @@ Per altre informazioni, vedere la documentazione relativa all'[autenticazione di
 ## <a name="adding-azure-spatial-anchors-plugins"></a>Aggiunta di plug-in di Ancoraggi nello spazio di Azure
 
 Abilitare i plug-in di Ancoraggi nello spazio di Azure nell'editor Unreal nel modo seguente:
-1. Fare clic su **Edit > Plugins** (Modifica > Plug-in) e cercare **AzureSpatialAnchors** e **AzureSpatialAnchorsForWMR** .
+1. Fare clic su **Edit > Plugins** (Modifica > Plug-in) e cercare **AzureSpatialAnchors** e **AzureSpatialAnchorsForWMR**.
 2. Selezionare la casella di controllo **Enabled** (Abilitato) di entrambi i plug-in per consentire l'accesso alle librerie del progetto di Ancoraggi nello spazio di Azure nell'applicazione.
 
 ![Plug-in di Ancoraggi nello spazio](images/asa-unreal/unreal-spatial-anchors-img-01.png)
@@ -69,7 +69,7 @@ Avviare una sessione di Ancoraggi nello spazio di Azure nel modo seguente:
 
 ![Plug-in di Ancoraggi nello spazio](images/asa-unreal/unreal-spatial-anchors-img-03.png)
 
-3. Configurare la sessione di Ancoraggi nello spazio di Azure per specificare **ID account** e **Chiave dell'account** .
+3. Configurare la sessione di Ancoraggi nello spazio di Azure per specificare **ID account** e **Chiave dell'account**.
 
 ![Plug-in di Ancoraggi nello spazio](images/asa-unreal/unreal-spatial-anchors-img-04.png)
 
@@ -132,7 +132,7 @@ Dopo aver configurato l'ancoraggio nello spazio di Azure con i parametri, chiama
 ![Plug-in di Ancoraggi nello spazio](images/asa-unreal/unreal-spatial-anchors-img-15.png)
 
 > [!NOTE]
-> Save Cloud Anchor (Salva ancoraggio cloud) è una funzione asincrona e può essere chiamata solo in un evento thread di gioco, ad esempio **EventTick** . È possibile che Save Cloud Anchor (Salva ancoraggio cloud) non venga visualizzata come funzione disponibile tra le funzioni di progetto personalizzate. Dovrebbe essere disponibile, tuttavia, nell'editor del progetto Pawn Event Graph (Grafico eventi Pawn).
+> Save Cloud Anchor (Salva ancoraggio cloud) è una funzione asincrona e può essere chiamata solo in un evento thread di gioco, ad esempio **EventTick**. È possibile che Save Cloud Anchor (Salva ancoraggio cloud) non venga visualizzata come funzione disponibile tra le funzioni di progetto personalizzate. Dovrebbe essere disponibile, tuttavia, nell'editor del progetto Pawn Event Graph (Grafico eventi Pawn).
 
 Nell'esempio seguente l'ancoraggio nello spazio di Azure viene archiviato in un set durante un callback dell'evento di input. L'ancoraggio viene quindi salvato in EventTick. Per salvare un ancoraggio nello spazio di Azure, possono essere necessari più tentativi a seconda della quantità di dati spaziali creati dalla sessione di Ancoraggi nello spazio di Azure. Per questo motivo è consigliabile controllare se la chiamata di salvataggio ha avuto esito positivo.
 
@@ -172,7 +172,7 @@ Oltre a creare ancoraggi nello spazio di Azure, è possibile rilevare ancoraggi 
 
 ![Plug-in di Ancoraggi nello spazio](images/asa-unreal/unreal-spatial-anchors-img-19.png)
 
-3. Effettuare la sottoscrizione ad **ASAAnchor Located Delegate** per il componente **AzureSpatialAnchorsEvent** .
+3. Effettuare la sottoscrizione ad **ASAAnchor Located Delegate** per il componente **AzureSpatialAnchorsEvent**.
     * Il delegato consente all'applicazione di stabilire quando sono stati individuati nuovi ancoraggi associati all'account di Ancoraggi nello spazio di Azure.
     * Con il callback dell'evento, gli ancoraggi nello spazio di Azure creati dai peer con la sessione di Ancoraggi nello spazio di Azure non avranno segnaposto AR creati per impostazione predefinita. Per creare un segnaposto AR per l'ancoraggio nello spazio di Azure rilevato, gli sviluppatori possono chiamare la funzione **Create ARPin Around Azure Cloud Spatial Anchor** (Crea segnaposto AR attorno all'ancoraggio nello spazio cloud di Azure).
 
@@ -180,7 +180,7 @@ Oltre a creare ancoraggi nello spazio di Azure, è possibile rilevare ancoraggi 
 
 Per individuare gli ancoraggi nello spazio di Azure creati dai peer con il servizio Ancoraggi nello spazio di Azure, l'applicazione dovrà creare un elemento **Azure Spatial Anchors Watcher** (Watcher ancoraggi nello spazio di Azure):
 1. Verificare che sia in esecuzione una sessione di Ancoraggi nello spazio di Azure.
-2. Creare **AzureSpatialAnchorsLocateCriteria** .
+2. Creare **AzureSpatialAnchorsLocateCriteria**.
     * È possibile specificare diversi parametri di posizione, ad esempio la distanza dall'utente o la distanza da un altro ancoraggio.
 3. Dichiarare in **AzureSpatialAnchorsLocateCritieria** l'identificatore di ancoraggio nello spazio di Azure desiderato.
 4. Chiamare **Create Watcher** (Crea Watcher).

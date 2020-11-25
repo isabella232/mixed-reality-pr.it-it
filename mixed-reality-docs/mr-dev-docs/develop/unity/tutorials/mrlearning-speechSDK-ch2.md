@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 06/27/2019
 ms.topic: article
-keywords: realtà mista, unity, esercitazione, hololens
+keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, riconoscimento vocale, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: a7fa1bdaa72d341eaa49ac70dfa926d8f9bbad7a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d5b0e5140c698996c051eab10064d99280482886
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91702207"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679730"
 ---
 # <a name="2-using-speech-recognition-to-execute-commands"></a>2. Uso del riconoscimento vocale per l'esecuzione di comandi
 
@@ -26,19 +26,19 @@ In questa esercitazione aggiungerai la possibilità di eseguire comandi con il r
 
 Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **Lunarcom** e quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **Lunarcom Wake Word Recognizer (Script)** (Riconoscimento parola di attivazione Lunarcom - Script) all'oggetto Lunarcom e configuralo come indicato di seguito:
 
-* Nel campo **Wake Word** (Parola di attivazione) immetti una frase appropriata, ad esempio _Activate Terminal_ .
-* Nel campo **Dismiss Word** (Parola di eliminazione) immetti una frase appropriata, ad esempio _Dismiss Terminal_ .
+* Nel campo **Wake Word** (Parola di attivazione) immetti una frase appropriata, ad esempio _Activate Terminal_.
+* Nel campo **Dismiss Word** (Parola di eliminazione) immetti una frase appropriata, ad esempio _Dismiss Terminal_.
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-1.png)
 
 > [!NOTE]
 > Il componente Lunarcom Wake Word Recognizer (Script) (Riconoscimento parola di attivazione Lunarcom - Script) non fa parte di MRTK. È stato fornito con gli asset dell'esercitazione.
 
-Se ora attivi la modalità gioco, come nell'esercitazione precedente, il pannello del terminale viene abilitato per impostazione predefinita. Tuttavia, puoi ora disabilitarlo pronunciando la parola di eliminazione **Dismiss terminal** :
+Se ora attivi la modalità gioco, come nell'esercitazione precedente, il pannello del terminale viene abilitato per impostazione predefinita. Tuttavia, puoi ora disabilitarlo pronunciando la parola di eliminazione **Dismiss terminal**:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-2.png)
 
-Puoi anche riabilitarlo pronunciando la parola di attivazione **Activate terminal** :
+Puoi anche riabilitarlo pronunciando la parola di attivazione **Activate terminal**:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-3.png)
 

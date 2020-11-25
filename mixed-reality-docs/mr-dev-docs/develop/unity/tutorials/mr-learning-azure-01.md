@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: azure, realtà mista, unity, esercitazione, hololens, hololens 2, archiviazione blob di azure, archiviazione tabelle di azure, ancoraggi nello spazio di azure, azure bot framework
+keywords: azure, realtà mista, unity, esercitazione, hololens, hololens 2, archiviazione blob di azure, archiviazione tabelle di azure, ancoraggi nello spazio di azure, azure bot framework, servizi cloud di azure, visione personalizzata di azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 878fd92a946b70ba3b0a867722f86ab801a79032
-ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
+ms.openlocfilehash: 98ca849722feeaa307cb43e568570897b48ed850
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93416977"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679420"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. Servizi cloud di Azure per HoloLens 2
 
@@ -55,7 +55,7 @@ Userai [Archiviazione di Azure](https://azure.microsoft.com/services/storage/) p
 
 ### <a name="azure-custom-vision"></a>Visione personalizzata di Azure
 
-Con [Visione personalizzata di Azure](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) (che fa parte di [Servizi cognitivi di Azure](https://azure.microsoft.com/services/cognitive-services/)) puoi associare agli *oggetti tracciati* un set di immagini, eseguire il training di un modello di Machine Learning per il set e rilevare l' *oggetto tracciato*.
+Con [Visione personalizzata di Azure](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) (che fa parte di [Servizi cognitivi di Azure](https://azure.microsoft.com/services/cognitive-services/)) puoi associare agli *oggetti tracciati* un set di immagini, eseguire il training di un modello di Machine Learning per il set e rilevare l'*oggetto tracciato*.
 
 ### <a name="azure-spatial-anchors"></a>Ancoraggi nello spazio di Azure
 
@@ -106,7 +106,7 @@ Scegli **Window** (Finestra)  > **Package Manager** (Gestione pacchetti) dal men
 
 ## <a name="importing-the-tutorial-assets"></a>Importazione degli asset dell'esercitazione
 
-Scarica e **importa** i pacchetti personalizzati di Unity seguenti, **nell'ordine in cui sono elencati** :
+Scarica e **importa** i pacchetti personalizzati di Unity seguenti, **nell'ordine in cui sono elencati**:
 
 * [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage)
 * [AzureStorageForUnity.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureStorageForUnity.unitypackage)
@@ -127,7 +127,7 @@ Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progett
 
 In questa sezione preparerai la scena aggiungendo alcuni dei prefab dell'esercitazione.
 
-Nella finestra Project (Progetto) passa alla cartella **Assets** (Asset)  > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** (Prefab)  > **Manager**. Tenendo premuto il tasto CTRL, fai clic su **SceneController** , **RootMenu** e **DataManager** per selezionare i tre prefab:
+Nella finestra Project (Progetto) passa alla cartella **Assets** (Asset)  > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** (Prefab)  > **Manager**. Tenendo premuto il tasto CTRL, fai clic su **SceneController**, **RootMenu** e **DataManager** per selezionare i tre prefab:
 
 ![Unity con i prefab SceneController, RootMenu e DataManager selezionati](images/mr-learning-azure/tutorial1-section5-step1-1.png)
 
@@ -150,11 +150,11 @@ Per concentrarti sugli oggetti nella scena, puoi fare doppio clic sull'oggetto *
 
 ## <a name="configuring-the-scene"></a>Configurazione della scena
 
-In questa sezione connetterai *SceneManager* , *DataManager* e *RootMenu* insieme in modo che una scena di lavoro sia pronta per l'esercitazione successiva, ovvero [Integrazione di Archiviazione di Azure](mr-learning-azure-01.md).
+In questa sezione connetterai *SceneManager*, *DataManager* e *RootMenu* insieme in modo che una scena di lavoro sia pronta per l'esercitazione successiva, ovvero [Integrazione di Archiviazione di Azure](mr-learning-azure-01.md).
 
 ### <a name="connect-the-objects"></a>Connettere gli oggetti
 
-Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **DataManager** :
+Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **DataManager**:
 
 ![Unity con l'oggetto DataManager selezionato](images/mr-learning-azure/tutorial1-section6-step1-1.png)
 
@@ -162,7 +162,7 @@ Nella finestra Inspector (Controllo) individua il componente **DataManager (Scri
 
 ![Unity con il listener di eventi DataManager aggiunto](images/mr-learning-azure/tutorial1-section6-step1-2.png)
 
-Noterai che il menu a discesa dell'evento è diventato attivo. Fai clic su questo menu e passa a **SceneController** , quindi dal sottomenu scegli l'opzione **Init ()** :
+Noterai che il menu a discesa dell'evento è diventato attivo. Fai clic su questo menu e passa a **SceneController**, quindi dal sottomenu scegli l'opzione **Init ()** :
 
 ![Unity con l'azione evento DataManager aggiunto](images/mr-learning-azure/tutorial1-section6-step1-3.png)
 
@@ -170,7 +170,7 @@ Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **SceneController**. In
 
 ![Unity con SceneController selezionato](images/mr-learning-azure/tutorial1-section6-step1-4.png)
 
-Noterai che sono presenti diversi campi non popolati. Ora puoi modificarli. Sposta l'oggetto **DataManager** da Hierarchy (Gerarchia) nel campo *Data Manager* , quindi sposta GameObject di **RootMenu** da Hierarchy (Gerarchia) nel campo *Main Menu* (Menu principale).
+Noterai che sono presenti diversi campi non popolati. Ora puoi modificarli. Sposta l'oggetto **DataManager** da Hierarchy (Gerarchia) nel campo *Data Manager*, quindi sposta GameObject di **RootMenu** da Hierarchy (Gerarchia) nel campo *Main Menu* (Menu principale).
 
 ![Unity con SceneController configurato](images/mr-learning-azure/tutorial1-section6-step1-5.png)
 
@@ -190,7 +190,7 @@ Nella finestra Project Settings (Impostazioni progetto) seleziona **Player** (Le
 
 ![Impostazioni di pubblicazione di Unity](images/mr-learning-azure/tutorial1-section7-step1-2.png)
 
-In **Publishing Settings** (Impostazioni di pubblicazione) scorri verso il basso fino alla sezione **Capabilities** (Funzionalità) e riverifica che siano abilitate le funzionalità **InternetClient** , **Microphone** e **SpatialPerception** , che hai abilitato al momento della creazione del progetto all'inizio dell'esercitazione. Abilita quindi le funzionalità **InternetClientServer** , **PrivateNetworkClientServer** e **Webcam** :
+In **Publishing Settings** (Impostazioni di pubblicazione) scorri verso il basso fino alla sezione **Capabilities** (Funzionalità) e riverifica che siano abilitate le funzionalità **InternetClient**, **Microphone** e **SpatialPerception**, che hai abilitato al momento della creazione del progetto all'inizio dell'esercitazione. Abilita quindi le funzionalità **InternetClientServer**, **PrivateNetworkClientServer** e **Webcam**:
 
 ![Funzionalità di Unity](images/mr-learning-azure/tutorial1-section7-step1-3.png)
 

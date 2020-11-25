@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, beta, streaming, comunicazione remota, realtà mista, sviluppo, guida introduttiva, funzionalità, nuovo progetto, emulatore, documentazione, guide, caratteristiche, ologrammi, sviluppo di giochi
-ms.openlocfilehash: a8e345831167362745a45a8fa81ddae858083ca7
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicazione remota, realtà mista, sviluppo, guida introduttiva, funzionalità, nuovo progetto, emulatore, documentazione, guide, caratteristiche, ologrammi, sviluppo di giochi, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
+ms.openlocfilehash: b810ad7500f8bb2a70ef18ad29fb32df8801a2de
+ms.sourcegitcommit: 2759aba06e643d70004023b105ed26b33ce3dbfa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340689"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94810447"
 ---
 # <a name="unreal-development-overview"></a>Panoramica dello sviluppo con Unreal
 
@@ -29,7 +29,7 @@ Muovere i primi passi nelle <a href="https://docs.microsoft.com/windows/mixed-re
 Se non hai esperienza di sviluppo con Unreal, non iniziare alla cieca. Esplora la <a href="https://docs.unrealengine.com/GettingStarted/index.html" target="_blank">serie di esercitazioni</a> su Unreal per acquisire familiarità e cerca risorse e supporto nel <a href="https://www.unrealengine.com/marketplace/store" target="_blank">marketplace</a> di Unreal e nei <a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">forum</a> dedicati alla realtà mista. Queste risorse ti consentono di entrare in contatto con la community di sviluppatori e risolutori di problemi che operano oggi sul mercato della realtà mista.
 
 > [!IMPORTANT]
-> Se si ha a disposizione un progetto Unreal da trasferire in HoloLens 2 o un visore VR immersive come Reverb G2, consultare le **[guide per il porting](../porting-apps/porting-overview.md)** .
+> Se si ha a disposizione un progetto Unreal da trasferire in un visore VR immersive come Reverb G2, consultare la **[guida per il porting](unreal-reverb-g2-controllers.md)** .
 
 ## <a name="development-checkpoints"></a>Checkpoint di sviluppo
 

@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realtà mista, unity, esercitazione, hololens
+keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, sessioni dell'app
 ms.localizationpriority: high
-ms.openlocfilehash: 2fbf9b849cec62c5281396fcb1e2f8e6e26b4621
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: c085aecef1ce32565d2f3bbbf1d5fdb2da91c217
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353299"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679410"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3. Salvataggio, recupero e condivisione di ancoraggi nello spazio di Azure
 
@@ -37,14 +37,14 @@ Nella finestra Hierarchy (Gerarchia) seleziona gli oggetti **ButtonParent**. Qui
 
 In questa sezione apprenderai come salvare e recuperare l'ID ancoraggio di Azure sul e dal disco locale di HoloLens. In questo modo potrai eseguire query su Azure per ottenere lo stesso ID ancoraggio tra sessioni diverse dell'app e gli ologrammi ancorati potranno essere collocati nella stessa posizione in cui si trovavano nella sessione precedente dell'app.
 
-Nella finestra Hierarchy (Gerarchia) espandi l'oggetto **ButtonParent** e individua i due pulsanti denominati **SaveAzureAnchorIdToDisk** e **GetAzureAnchorIdFromDisk** :
+Nella finestra Hierarchy (Gerarchia) espandi l'oggetto **ButtonParent** e individua i due pulsanti denominati **SaveAzureAnchorIdToDisk** e **GetAzureAnchorIdFromDisk**:
 
 ![Unity gli oggetti pulsante SaveAzureAnchorIdToDisk e GetAzureAnchorIdFromDisk selezionati](images/mr-learning-asa/asa-03-section2-step1-1.png)
 
 Segui la stessa procedura illustrata nelle istruzioni per la [configurazione dei pulsanti per il funzionamento della scena](mr-learning-asa-02.md#configuring-the-buttons-to-operate-the-scene) contenute nell'esercitazione precedente per configurare il componente **Interactable (Script)** (Con supporto per interazioni - Script) per ognuno dei due pulsanti:
 
-* Per l'oggetto pulsante **SaveAzureAnchorIdToDisk** , assegna la funzione AnchorModuleScript > **SaveAzureAnchorIdToDisk ()** .
-* Per l'oggetto pulsante **GetAzureAnchorIdFromDisk** , assegna la funzione AnchorModuleScript > **GetAzureAnchorIdFromDisk ()** .
+* Per l'oggetto pulsante **SaveAzureAnchorIdToDisk**, assegna la funzione AnchorModuleScript > **SaveAzureAnchorIdToDisk ()** .
+* Per l'oggetto pulsante **GetAzureAnchorIdFromDisk**, assegna la funzione AnchorModuleScript > **GetAzureAnchorIdFromDisk ()** .
 
 Se compili l'app aggiornata in HoloLens, ora puoi rendere permanenti gli ancoraggi nello spazio di Azure, ovvero mantenerli da una sessione all'altra dell'app salvando l'ID ancoraggio di Azure. Per provare, puoi seguire questa procedura:
 
@@ -66,14 +66,14 @@ In questa sezione apprenderai come condividere l'ID ancoraggio di Azure tra più
 
 Esistono diversi modi per trasferire gli ID ancoraggio di Azure da un dispositivo all'altro, inclusi i metodi descritti nella serie [Esercitazioni sulle funzionalità multiutente](mr-learning-sharing-02.md). In questo esempio userai un servizio Web semplice per caricare e scaricare gli ID ancoraggio tra dispositivi.
 
-Nella finestra Hierarchy (Gerarchia) espandi l'oggetto **ButtonParent**.   Individua i due pulsanti denominati **ShareAzureAnchorIdToNetwork** e **GetAzureAnchorIdFromNetwork** :
+Nella finestra Hierarchy (Gerarchia) espandi l'oggetto **ButtonParent**.   Individua i due pulsanti denominati **ShareAzureAnchorIdToNetwork** e **GetAzureAnchorIdFromNetwork**:
 
 ![Unity con gli oggetti pulsante ShareAzureAnchorIdToNetwork e GetAzureAnchorIdFromNetwork selezionati](images/mr-learning-asa/asa-03-section3-step1-1.png)
 
 Segui la stessa procedura illustrata nelle istruzioni per la [configurazione dei pulsanti per il funzionamento della scena](mr-learning-asa-02.md#configuring-the-buttons-to-operate-the-scene) contenute nell'esercitazione precedente per configurare il componente **Interactable (Script)** (Con supporto per interazioni - Script) per ognuno dei due pulsanti:
 
-* Per l'oggetto **ShareAzureAnchorIdToNetwork** , assegna la funzione AnchorModuleScript > **ShareAzureAnchorIdToNetwork ()** .
-* Per l'oggetto **GetAzureAnchorIdFromNetwork** , assegna la funzione AnchorModuleScript > **GetAzureAnchorIdFromNetwork ()** .
+* Per l'oggetto **ShareAzureAnchorIdToNetwork**, assegna la funzione AnchorModuleScript > **ShareAzureAnchorIdToNetwork ()** .
+* Per l'oggetto **GetAzureAnchorIdFromNetwork**, assegna la funzione AnchorModuleScript > **GetAzureAnchorIdFromNetwork ()** .
 
 Se compili l'app aggiornata in due dispositivi HoloLens, ora puoi ottenere l'allineamento spaziale condividendo l'ID ancoraggio di Azure. Per provare, puoi seguire questa procedura:
 

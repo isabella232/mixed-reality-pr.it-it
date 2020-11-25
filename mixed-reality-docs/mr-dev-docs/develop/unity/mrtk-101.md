@@ -5,14 +5,14 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 08/27/2019
 ms.topic: article
-keywords: HoloLens, MRTK, Mixed Reality Toolkit, Windows Mixed Reality, progettazione, app di esempio, controlli
+keywords: HoloLens, MRTK, Mixed Reality Toolkit, Windows Mixed Reality, progettazione, app di esempio, controlli, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
 ms.localizationpriority: high
-ms.openlocfilehash: d10de5c9f16e0caa289d5110647b4c45a8a8fcf9
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: 95d8f8c52b226eda7ea1601feffc1464c2ea91c5
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386267"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677531"
 ---
 # <a name="mrtk-101-how-to-use-mixed-reality-toolkit-unity-for-common-spatial-interactions"></a>MRTK 101: Come usare Mixed Reality Toolkit Unity per le interazioni spaziali comuni
 ![MRTK](images/MRTK101/MRTK101Cover.png)
@@ -45,7 +45,7 @@ Per far comparire le mani simulate, premi la barra spaziatrice (mano destra) o i
 
 
 ## <a name="how-to-grab-and-move-an-object"></a>Come afferrare e spostare un oggetto?
-Per rendere afferrabile un oggetto, assegna questi due script: **ObjectManipulator.cs** e **NearInteractionGrabbable.cs** (per afferrare l'oggetto direttamente con input di tracciamento della mano articolata). ObjectManipulator supporta sia le interazioni da vicino sia quelle da lontano. Puoi afferrare e spostare un oggetto con l'input di tracciamento della mano articolata di HoloLens 2 (da vicino), il raggio della mano (da lontano), il raggio del controller del movimento (da lontano), il cursore dello sguardo e la simulazione del tocco di HoloLens (da lontano).
+Per rendere afferrabile un oggetto, assegna questi due script: **ObjectManipulator.cs** e **NearInteractionGrabbable.cs**(per afferrare l'oggetto direttamente con input di tracciamento della mano articolata). ObjectManipulator supporta sia le interazioni da vicino sia quelle da lontano. Puoi afferrare e spostare un oggetto con l'input di tracciamento della mano articolata di HoloLens 2 (da vicino), il raggio della mano (da lontano), il raggio del controller del movimento (da lontano), il cursore dello sguardo e la simulazione del tocco di HoloLens (da lontano).
 
 <br/><img alt="NearInteractionGrabbable and ObjectManipulator.cs assigned to an object" width="800" src="images/MRTK101/MRTK_ManipulationHandler.png">
 

@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, esercitazione, guida introduttiva, mrtk, uxt, UX Tools, documentazione
-ms.openlocfilehash: 5af888fe57afce21e9ff0ccfe8144533e7368acf
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, esercitazione, guida introduttiva, mrtk, uxt, UX Tools, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
+ms.openlocfilehash: 82e210aff35f1c41547f022b91114cbca1419830
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701567"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679880"
 ---
 # <a name="3-setting-up-your-project-for-mixed-reality"></a>3. Configurazione del progetto per la realtà mista
 
@@ -29,7 +29,7 @@ Nell'esercitazione precedente ti sei dedicato alla configurazione del progetto d
 Le sessioni AR in Unreal non funzionano da sole. Per usare una sessione, è necessario un asset di dati ARSessionConfig con cui interagire, che costituisce la tua prossima attività:
 
 1. Fai clic su **Add New > Miscellaneous > Data Asset** (Aggiungi nuovo > Varie > Asset dati) in **Content Browser** (Browser contenuto). Assicurati di essere nella cartella **Content** radice. 
-    * Seleziona **ARSessionConfig** , fai clic su **Select** (Seleziona) e assegna all'asset il nome **ARSessionConfig** .
+    * Seleziona **ARSessionConfig**, fai clic su **Select** (Seleziona) e assegna all'asset il nome **ARSessionConfig**.
 
 ![Creazione di un'origine dati](images/unreal-uxt/3-createasset.PNG)
 
@@ -44,11 +44,11 @@ Al termine, il passaggio successivo consiste nell'assicurarsi che la sessione AR
 ![Open Level Blueprint (Apri progetto livello)](images/unreal-uxt/3-level-blueprint.PNG)
 
 5. Trascina il nodo di esecuzione (freccia rivolta verso sinistra) fuori da **Event BeginPlay** (Evento BeginPlay) e rilascia. Cerca il nodo **Start AR Session** (Avvia sessione AR) e premi INVIO.  
-    * Fai clic sull'elenco a discesa **Select Asset** (Seleziona asset) in **Session Config** (Configurazione sessione) e scegli l'asset **ARSessionConfig** . 
+    * Fai clic sull'elenco a discesa **Select Asset** (Seleziona asset) in **Session Config** (Configurazione sessione) e scegli l'asset **ARSessionConfig**. 
 
 ![Start AR Session (Avvia sessione AR)](images/unreal-uxt/3-start-ar-session.PNG)
 
-6. Fai clic con il pulsante destro del mouse in un punto qualsiasi di EventGraph e crea un nuovo nodo **Event EndPlay** . Trascina e rilascia il pin di esecuzione. Cerca un nodo **Stop AR Session** (Arresta sessione AR) e premi INVIO. Se la sessione AR non viene arrestata al termine del livello, alcune funzionalità potrebbero smettere di funzionare se l'app viene riavviata durante lo streaming a un visore VR. 
+6. Fai clic con il pulsante destro del mouse in un punto qualsiasi di EventGraph e crea un nuovo nodo **Event EndPlay**. Trascina e rilascia il pin di esecuzione. Cerca un nodo **Stop AR Session** (Arresta sessione AR) e premi INVIO. Se la sessione AR non viene arrestata al termine del livello, alcune funzionalità potrebbero smettere di funzionare se l'app viene riavviata durante lo streaming a un visore VR. 
     * Seleziona **Compile** (Compila) e **Save** (Salva) e torna alla finestra principale.
 
 ![Stop AR Session (Arresta sessione AR)](images/unreal-uxt/3-stoparsession.PNG)
@@ -57,7 +57,7 @@ Al termine, il passaggio successivo consiste nell'assicurarsi che la sessione AR
 A questo punto, il progetto necessita ancora di un oggetto Player. In Unreal, l'oggetto **Pawn** (Pedone) rappresenta l'utente del gioco, ma in questo caso sarà l'esperienza HoloLens 2.
 
 1. Fai clic su **Add New > Blueprint Class** (Aggiungi nuovo > Classe progetto) nella cartella **Content** ed espandi la sezione **All Classes** (Tutte le classi) in fondo. 
-    * Cercare **DefaultPawn** , fare clic su **Select** (Seleziona), assegnare il nome **MRPawn** e fare doppio clic sull'asset per aprirlo. 
+    * Cercare **DefaultPawn**, fare clic su **Select** (Seleziona), assegnare il nome **MRPawn** e fare doppio clic sull'asset per aprirlo. 
 
 ![Creare un nuovo pedone basato su DefaultPawn](images/unreal-uxt/3-defaultpawn.PNG)
 
@@ -65,12 +65,15 @@ A questo punto, il progetto necessita ancora di un oggetto Player. In Unreal, l'
 > Per impostazione predefinita, i pedoni hanno componenti mesh e collisione. Nella maggior parte dei progetti Unreal, i pedoni sono oggetti solidi che possono collidere con altri componenti. Dato che il pedone e l'utente coincidono nella realtà mista, è necessario poter passare attraverso gli ologrammi senza collisioni. 
 
 2. Seleziona **CollisionComponent** nel pannello **Components** (Componenti) e scorri fino alla sezione **Collision** (Collisione) del pannello **Details** (Dettagli). 
-    * Fai clic sull'elenco a discesa **Collision Presets** (Set di impostazioni di collisione) e cambia il valore in **NoCollision** . 
-    * Eseguire la stessa operazione per **MeshComponent** .
+    * Fai clic sull'elenco a discesa **Collision Presets** (Set di impostazioni di collisione) e cambia il valore in **NoCollision**. 
+    * Eseguire la stessa operazione per **MeshComponent**.
 
 ![Modifica dei set di impostazioni di collisione del pedone](images/unreal-uxt/3-nocollision.PNG)
 
 3. Fare clic su **Add Component > Camera** (Aggiungi componente > Fotocamera) nel pannello **Components** (Componenti) e assegnare all'elemento il nome **Camera** (Fotocamera). In tal modo, la fotocamera del giocatore si muoverà insieme al dispositivo HoloLens 2.
+
+> [!NOTE]
+> Verificare che il componente **Camera** sia un figlio diretto della radice (**CollisionComponent**).
 
 4. Fare clic su **Compile** (Compila) e quindi su **Save** (Salva) per salvare il progetto.
 
@@ -84,13 +87,13 @@ Per completare la configurazione della realtà mista manca solo la modalità di 
 
 ![MRGameMode nel browser dei contenuti](images/unreal-uxt/3-gamemode.PNG)
 
-2.  Passa alla sezione **Classes** (Classi) nel pannello **Details** (Dettagli) e modifica **Default Pawn Class** (Classe pedone predefinito) in **MRPawn** . 
+2.  Passa alla sezione **Classes** (Classi) nel pannello **Details** (Dettagli) e modifica **Default Pawn Class** (Classe pedone predefinito) in **MRPawn**. 
     * Seleziona **Compile** (Compila) e **Save** (Salva) e torna alla finestra principale. 
 
 ![Impostazione della classe di pedone predefinita](images/unreal-uxt/3-setpawn.PNG)
 
 3.  Seleziona **Edit > Projects Settings** (Modifica > Impostazioni progetti) e fai clic su **Maps & Modes** (Mappe e modalità) nell'elenco a sinistra. 
-    * Espandi **Default Modes** (Modalità predefinite) e cambia **Default Game Mode** (Modalità gioco predefinita) in **MRGameMode** . 
+    * Espandi **Default Modes** (Modalità predefinite) e cambia **Default Game Mode** (Modalità gioco predefinita) in **MRGameMode**. 
     * Espandi **Default Maps** (Mappe predefinite) e imposta sia **EditorStartupMap** sia **GameDefaultMap** su **Main** (Principale). In questo modo, quando si chiude e si riapre l'editor o si usa il gioco, per impostazione predefinita viene selezionata la mappa principale.
 
 ![Project Settings - Maps & Modes (Impostazioni progetto - Mappe e modalità)](images/unreal-uxt/3-mapsandmodes.PNG)

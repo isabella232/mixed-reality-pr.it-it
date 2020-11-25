@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realtà mista, unity, esercitazione, hololens
+keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, risolutori
 ms.localizationpriority: high
-ms.openlocfilehash: 64b5c3c719ce72260a10226d22c178d4016e403b
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: fb86cdfe82e8d89c65e8513b52e2de49f52a2f04
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353529"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679300"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Creazione di contenuto dinamico tramite risolutori
 
@@ -46,7 +46,7 @@ Nella finestra Project (Progetto) passa alla cartella **Assets (Asset)**  > **MR
 > [!TIP]
 > Se ritieni che la fotocamera o altre icone nella scena nascondano gli oggetti o siano elementi di distrazione, puoi nasconderli <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">disattivando il menu Gizmos</a> come illustrato nell'immagine precedente. Per altre informazioni sul menu Gizmos e su come è possibile usarlo per ottimizzare la vista della scena, puoi fare riferimento alla documentazione relativa al <a href="https://docs.unity3d.com/Manual/GizmosMenu.html" target="_blank">menu Gizmos</a> di Unity.
 
-Rinominare l'oggetto Chevron **Indicator** (Indicatore) appena aggiunto, quindi nella finestra Inspector (Controllo) usare il pulsante **Add Component** (Aggiungi componente) per aggiungere **DirectionalIndicator** :
+Rinominare l'oggetto Chevron **Indicator** (Indicatore) appena aggiunto, quindi nella finestra Inspector (Controllo) usare il pulsante **Add Component** (Aggiungi componente) per aggiungere **DirectionalIndicator**:
 
 ![Unity con il componente risolutore DirectionalIndicator aggiunto](images/mr-learning-base/base-05-section2-step1-2.png)
 

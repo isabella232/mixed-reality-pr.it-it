@@ -5,18 +5,18 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realtà mista, unity, esercitazione, hololens, hololens 2, visione personalizzata di azure, servizi cognitivi di azure
+keywords: realtà mista, unity, esercitazione, hololens, hololens 2, visione personalizzata di azure, servizi cognitivi di azure, servizi cloud di azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 9a6cccf9c1a7d2547ed5ddacfc4841d2f4d1609b
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: d30d409752c8b7f9728a4a6576829d175f91506d
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353269"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679350"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Integrazione di Visione personalizzata di Azure
 
-In questa esercitazione si imparerà a usare **Visione personalizzata di Azure**. Si caricherà un set di foto per associarle a un *oggetto tracciato* , caricarle nel servizio **Visione personalizzata** e avviare il processo di training. Si userà quindi il servizio per rilevare l' *oggetto tracciato* acquisendo foto dal feed della webcam.
+In questa esercitazione si imparerà a usare **Visione personalizzata di Azure**. Si caricherà un set di foto per associarle a un *oggetto tracciato*, caricarle nel servizio **Visione personalizzata** e avviare il processo di training. Si userà quindi il servizio per rilevare l'*oggetto tracciato* acquisendo foto dal feed della webcam.
 
 ## <a name="objectives"></a>Obiettivi
 
@@ -88,11 +88,11 @@ Quando le immagini sono sufficienti, fare clic sul pulsante **Train** (Esegui tr
 
 ## <a name="detect-objects"></a>Rilevare oggetti
 
-A questo punto è possibile testare il modello con training, eseguire l'applicazione e dal *menu principale* fare clic su **Search Object** (Cerca oggetto) e digitare il nome dell' **oggetto tracciato** in questione. Quando viene visualizzata la **Object Card** (Scheda oggetto), fare clic sul pulsante **Custom Vision** (Visione personalizzata). Da qui, **ObjectDetectionManager** inizierà ad acquisire immagini in background dalla fotocamera e lo stato di avanzamento verrà indicato nel menu. Puntare la fotocamera sull'oggetto usato per eseguire il training del modello. Si noterà che dopo un breve periodo di tempo rileverà l'oggetto.
+A questo punto è possibile testare il modello con training, eseguire l'applicazione e dal *menu principale* fare clic su **Search Object** (Cerca oggetto) e digitare il nome dell'**oggetto tracciato** in questione. Quando viene visualizzata la **Object Card** (Scheda oggetto), fare clic sul pulsante **Custom Vision** (Visione personalizzata). Da qui, **ObjectDetectionManager** inizierà ad acquisire immagini in background dalla fotocamera e lo stato di avanzamento verrà indicato nel menu. Puntare la fotocamera sull'oggetto usato per eseguire il training del modello. Si noterà che dopo un breve periodo di tempo rileverà l'oggetto.
 
 ## <a name="congratulations"></a>Lezione completata
 
-In questa esercitazione si è appreso come usare Visione personalizzata di Azure per eseguire il training delle immagini e usare il servizio di classificazione per rilevare le immagini che corrispondono all' **oggetto tracciato** associato.
+In questa esercitazione si è appreso come usare Visione personalizzata di Azure per eseguire il training delle immagini e usare il servizio di classificazione per rilevare le immagini che corrispondono all'**oggetto tracciato** associato.
 
 Nell'esercitazione successiva verrà spiegato come usare Ancoraggi nello spazio di Azure per collegare un *oggetto tracciato* a una posizione nel mondo fisico e come visualizzare una freccia che guiderà l'utente per tornare alla posizione collegata dell'oggetto tracciato.
 

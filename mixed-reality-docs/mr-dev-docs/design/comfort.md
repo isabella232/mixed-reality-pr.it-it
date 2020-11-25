@@ -6,13 +6,13 @@ ms.author: erpau
 ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Realtà mista, progettazione, comfort, HoloLens 2, HoloLens (prima generazione)
-ms.openlocfilehash: f53c91b10f9dfc37678356c914e486f61eea6382
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Realtà mista, progettazione, comodità, HoloLens 2, HoloLens (1a generazione), visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, locomozione
+ms.openlocfilehash: f4edc048086e933a451290a8ca9f19f588797963
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340649"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702657"
 ---
 # <a name="comfort"></a>Comfort
 
@@ -162,13 +162,6 @@ L'angolo dello sguardo considerato ottimale (condizione di riposo) è compreso t
 ## <a name="arm-positions"></a>Posizioni delle braccia
 
 L'affaticamento muscolare può aumentare quando gli utenti devono tenere una mano alzata per tutta la durata di un'esperienza. Può anche essere faticoso per l'utente dover effettuare ripetutamente movimenti di simulazione del tocco con un dito per periodi prolungati. Consigliamo pertanto di evitare di richiedere movimenti ripetuti e costanti. Questo obiettivo può essere raggiunto incorporando brevi interruzioni oppure offrendo la possibilità di interagire con l'app con una combinazione di gesti e input vocale.
-
-## <a name="next-discovery-checkpoint"></a>Prossima stazione di scoperta
-
-Se si sta seguendo il [percorso di scoperta](../discover/get-started-with-mr.md) definito, è possibile esplorare le nozioni di base della realtà mista. Da qui è possibile passare all'argomento di base successivo: 
-
-> [!div class="nextstepaction"]
-> [Considerare il modo in cui l'utente vede il mondo (frame olografico)](../design/holographic-frame.md)
 
 ## <a name="see-also"></a>Vedere anche
 * [Sguardo fisso](gaze-and-commit.md)

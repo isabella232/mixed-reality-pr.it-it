@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realtà mista, unity, esercitazione, hololens
+keywords: realtà mista, unity, esercitazione, hololens, funzionalità multiutente, Photon, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: aeda463610f1fb1205eade556a2c2b9bc07a4fde
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 062c39ab6973c7c71e305cfc7a695fb250c76596
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353479"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679260"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Configurazione di Photon Unity Networking
 
@@ -50,7 +50,7 @@ Dal menu Unity scegli **Edit** > **Project Settings...** (Modifica > Impostazion
 
 ![Impostazioni del lettore di Unity](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
-In **Publishing Settings** (Impostazioni di pubblicazione) scorrere verso il basso fino alla sezione **Capabilities** (Funzionalità) e verificare che siano abilitate le funzionalità **InternetClient** , **Microphone** , **SpatialPerception** , e **GazeInput** , abilitate al passaggio [Configurazione del progetto Unity](mr-learning-base-02.md#configuring-the-unity-project) precedente.
+In **Publishing Settings** (Impostazioni di pubblicazione) scorrere verso il basso fino alla sezione **Capabilities** (Funzionalità) e verificare che siano abilitate le funzionalità **InternetClient**, **Microphone**, **SpatialPerception**, e **GazeInput**, abilitate al passaggio [Configurazione del progetto Unity](mr-learning-base-02.md#configuring-the-unity-project) precedente.
 
 Abilitare quindi le funzionalità aggiuntive seguenti:
 
@@ -70,7 +70,7 @@ Scegliere **Window** > **Package Manager** (Finestra > Gestione pacchetti) dal m
 
 ## <a name="importing-the-tutorial-assets"></a>Importazione degli asset dell'esercitazione
 
-Scarica e **importa** i pacchetti personalizzati di Unity seguenti, **nell'ordine in cui sono elencati** :
+Scarica e **importa** i pacchetti personalizzati di Unity seguenti, **nell'ordine in cui sono elencati**:
 
 * [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage) (versione 2.2.1)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
@@ -146,7 +146,7 @@ Fai quindi clic sul pulsante **Setup Project** (Configura progetto) per applicar
 
 ![Finestra PUN Setup di Unity con AppId compilato](images/mr-learning-sharing/sharing-02-section7-step1-2.png)
 
-Dopo che Unity ha terminato il processo di configurazione di PUN, nel menu PUN Setup (Configurazione PUN) verrà visualizzato il messaggio **Done!** (Fatto) e nella finestra Project (Progetto) verrà selezionato automaticamente l'asset **PhotonServerSettings** , in modo che le relative proprietà siano visualizzate nella finestra Inspector (Controllo):
+Dopo che Unity ha terminato il processo di configurazione di PUN, nel menu PUN Setup (Configurazione PUN) verrà visualizzato il messaggio **Done!** (Fatto) e nella finestra Project (Progetto) verrà selezionato automaticamente l'asset **PhotonServerSettings**, in modo che le relative proprietà siano visualizzate nella finestra Inspector (Controllo):
 
 ![Finestra PUN Setup di Unity con Setup Project applicato](images/mr-learning-sharing/sharing-02-section7-step1-3.png)
 

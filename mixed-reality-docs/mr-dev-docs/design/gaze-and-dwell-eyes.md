@@ -6,19 +6,19 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: tracciamento oculare, realtà mista, input, sguardo fisso, selezione oculare della destinazione, HoloLens 2, selezione con gli occhi, attesa
-ms.openlocfilehash: b7c2b22c24336813231e7e5ea4742f03b9d78004
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Tracciamento oculare, Realtà mista, Input, Sguardo fisso, Selezione oculare della destinazione, HoloLens 2, Selezione con gli occhi, Attesa, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, progettazione
+ms.openlocfilehash: 2d17b93b09b204e6ebb94a51bcc709ee043b5018
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698494"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702307"
 ---
 # <a name="eye-gaze-and-dwell"></a>Sguardo fisso e attesa
 
 Il modello di interazione _"sguardo fisso e attesa"_ è un caso speciale del modello di interazione [sguardo fisso e commit](gaze-and-commit.md):
 1. Guarda una destinazione e 
-2. Conferma l'intenzione di selezionare tale destinazione effettuando esplicitamente un input secondario: _continua semplicemente a guardare la destinazione che intendi selezionare_ .
+2. Conferma l'intenzione di selezionare tale destinazione effettuando esplicitamente un input secondario: _continua semplicemente a guardare la destinazione che intendi selezionare_.
 
 ## <a name="advantages-of-the-eye-gaze-and-dwell-interaction-model"></a>Vantaggi del modello di interazione "sguardo fisso e attesa" 
 Se le mani sono già occupate per eseguire un'attività o per maneggiare strumenti, potrebbe non essere possibile usarle per interagire con gli ologrammi.
@@ -32,7 +32,7 @@ Se il tempo di attesa è troppo breve, è possibile che l'utente sia sopraffatto
 
 ## <a name="design-recommendations"></a>Suggerimenti per la progettazione
 È consigliabile usare un approccio a due stati per il feedback dell'attesa:
-1. *Ritardo iniziale* : quando l'utente inizia a guardare una destinazione, non dovrebbe prodursi alcuna azione per evitare un'esperienza utente spiacevole e schiacciante. Viene invece avviato un timer per rilevare se l'utente stia intenzionalmente fissando la destinazione o semplicemente guardandola.
+1. *Ritardo iniziale*: quando l'utente inizia a guardare una destinazione, non dovrebbe prodursi alcuna azione per evitare un'esperienza utente spiacevole e schiacciante. Viene invece avviato un timer per rilevare se l'utente stia intenzionalmente fissando la destinazione o semplicemente guardandola.
 Si consiglia un tempo di inizio di 150-250 ms in una determinata prossimità (differenza tra concentrare lo sguardo su una destinazione di grandi dimensioni e guardarsi intorno).  
 2. *Inizio feedback attesa:* dopo aver verificato che l'utente stia intenzionalmente fissando la destinazione, si inizia a mostrare un feedback dell'attesa per informarlo che sta per essere avviata l'attivazione dell'attesa. 
 3. *Feedback continuo:* mentre l'utente fissa lo sguardo sulla destinazione, visualizza un indicatore di avanzamento continuo che gli indica che non deve distogliere lo sguardo dalla destinazione. In particolare, per l'input con sguardo fisso è consigliabile _trattenere l'attenzione visiva dell'utente_ iniziando con un cerchio o una sfera più grande che si contrae in una versione più piccola. La visualizzazione di un indicatore per lo stato finale (cerchio piccolo) consente di comunicare all'utente quando termina l'attesa. Di seguito è riportata un'illustrazione di esempio. 

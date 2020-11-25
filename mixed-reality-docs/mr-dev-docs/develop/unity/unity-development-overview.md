@@ -6,13 +6,13 @@ ms.author: kurtie
 ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unity, realtà mista, sviluppo, guida introduttiva, nuovo progetto, conversione, funzionalità, fotocamera, simulazione, emulazione, documentazione
-ms.openlocfilehash: 006814c17d7e2e7c343f28b83de845674c079a95
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: Unity, realtà mista, sviluppo, guida introduttiva, nuovo progetto, porting, funzionalità, fotocamera, simulazione, emulazione, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, mapping spaziale, input vocale, fotocamera individuabile, emulatore, Azure, esercitazioni
+ms.openlocfilehash: 9a9a5bc47327b3bd23ac6212b8b9f12787b74e4c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638568"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679900"
 ---
 # <a name="unity-development-overview"></a>Panoramica dello sviluppo con Unity
 

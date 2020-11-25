@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/29/2020
 ms.topic: article
-keywords: realtà mista, unity, esercitazione, hololens
+keywords: realtà mista, unity, esercitazione, hololens, holographic remoting per PC, descrizioni comandi, tracciamento oculare
 ms.localizationpriority: high
-ms.openlocfilehash: d88d3e17e26ddd361f2cbe1a32f22025255303f0
-ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
+ms.openlocfilehash: eae7b57544b8a544d3df926296ad5f2a720d5529
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93416997"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679770"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Introduzione a Holographic Remoting per PC
 
@@ -131,7 +131,7 @@ Per ognuno dei pulsanti rimanenti, completa il processo descritto in precedenza 
 
 Ora i pulsanti sono configurati per illustrare il funzionamento del passaggio a un altro modello e la funzionalità di ritaglio. È il momento di aggiungere modelli 3D e gli oggetti di ritaglio allo script.
 
-Per la dimostrazione sono stati forniti sei modelli 3D diversi. Espandere * *_ModelParentobject_* _ per esporre questi modelli 3D.
+Per la dimostrazione sono stati forniti sei modelli 3D diversi. Espandere **_ModelParentobject_* _ per esporre questi modelli 3D.
 
 Con l'oggetto ButtonParent ancora selezionato nella finestra Hierarchy (Gerarchia), individuare nella finestra Inspector (Controllo) il componente _ *View Button Control (Script)* * (Controllo pulsante di visualizzazione - Script) ed espandere la variabile **Models** (Modelli).
 
@@ -157,7 +157,7 @@ In questa sezione aggiungerai il renderer degli oggetti figlio dell'oggetto Mars
 
 Nella finestra Hierarchy (Gerarchia) espandi l'oggetto **ClippingObjects** per esporre i tre diversi oggetti di ritaglio che userai in questo progetto.
 
-Per configurare l'oggetto **ClippingSphere** , fai clic su di esso e nella finestra Inspector (Controllo) individua il componente **Clipping Sphere (Script)** (Sfera di ritaglio - Script). Nel campo della dimensione immetti il numero di renderer che è necessario aggiungere per il modello 3D. In questo caso, aggiungi 10 per gli oggetti figlio di MarsCuriosityRover. Verranno creati i campi per l'aggiunta dei renderer. Trascina e rilascia gli oggetti modello figlio dell'oggetto MarsCuriosityRover in questi campi.
+Per configurare l'oggetto **ClippingSphere**, fai clic su di esso e nella finestra Inspector (Controllo) individua il componente **Clipping Sphere (Script)** (Sfera di ritaglio - Script). Nel campo della dimensione immetti il numero di renderer che è necessario aggiungere per il modello 3D. In questo caso, aggiungi 10 per gli oggetti figlio di MarsCuriosityRover. Verranno creati i campi per l'aggiunta dei renderer. Trascina e rilascia gli oggetti modello figlio dell'oggetto MarsCuriosityRover in questi campi.
 
 ![Unity con i campi del componente di script ClippingSphere configurati](images/mrlearning-pc-holographic-remoting/Tutorial1-Section5-Step1-1.png)
 
@@ -171,7 +171,7 @@ In questa sezione esaminerai come abilitare il tracciamento oculare nel tuo prog
 
 ### <a name="1-identify-target-objects-and-associated-tooltips"></a>1. Identificare gli oggetti di destinazione e le descrizioni comandi associate
 
-Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto ModelParent. Espandere **_MarsCuriosity -> Rover_ *_ per trovare cinque parti principali di MarsCuriosityRover: _* POI-Camera** , **POI-Wheels** , **POI-Antenna** , **POI-Spectrometer** , **POI-RUHF Antenna**.
+Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto ModelParent. Espandere **_MarsCuriosity -> Rover_ *_ per trovare cinque parti principali di MarsCuriosityRover: _* POI-Camera**, **POI-Wheels**, **POI-Antenna**, **POI-Spectrometer**, **POI-RUHF Antenna**.
 
 * Osserva cinque oggetti descrizione comando corrispondenti associati a parti di MarsCuriosityRover nella finestra Hierarchy (Gerarchia).
 * Configurerai questi oggetti per evidenziare l'esperienza quando guardi le parti di MarsCuriosityRover.
@@ -180,14 +180,14 @@ Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto ModelParent. Espandere 
 
 ### <a name="2-implement-while-looking-at-target-----on-look-away--events"></a>2. Implementare gli eventi Looking At Target () (Mentre viene guardata la destinazione) e On Look Away () (Quando viene distolto lo sguardo)
 
-Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto * **POI-Camera** _. Nella finestra Inspector (Controllo) individuare il componente _ *Eye Tracking Target (Script)* * (Destinazione tracciamento oculare - Script) e configurare gli eventi **While Looking At Target ()** (Mentre viene guardata la destinazione) & **On Look Away ()** (Quando viene distolto lo sguardo) come indicato di seguito:
+Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto ***POI-Camera** _. Nella finestra Inspector (Controllo) individuare il componente _ *Eye Tracking Target (Script)* * (Destinazione tracciamento oculare - Script) e configurare gli eventi **While Looking At Target ()** (Mentre viene guardata la destinazione) & **On Look Away ()** (Quando viene distolto lo sguardo) come indicato di seguito:
 
 * Al campo **None (Object)** (Nessuno - Oggetto) assegna l'oggetto **POI-Camera ToolTip**
 * Dall'elenco a discesa **No Function** (Nessuna funzione) dell'evento **While Looking At Target ()** (Mentre viene guardata la destinazione) seleziona **GameObject** > **SetActive (bool).** Seleziona la **casella di controllo** sottostante per evidenziare la descrizione comando come l'azione che viene attivata quando guardi l'oggetto di destinazione.
 
 ![Unity con la configurazione dell'evento WhileLookingAtTarget di EyeTrackingTarget in corso](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-1.png)
 
-* Segui lo stesso processo e fai clic sull'elenco a discesa **No Function** (Nessuna funzione) del listener di eventi **On Look Away ()** (Quando viene distolto lo sguardo). Seleziona quindi **GameObject** > **SetActive (bool** ) e lascia vuota la **casella di controllo** per nascondere la descrizione comando come l'azione che viene attivata quando distogli lo sguardo dall'oggetto di destinazione.
+* Segui lo stesso processo e fai clic sull'elenco a discesa **No Function** (Nessuna funzione) del listener di eventi **On Look Away ()** (Quando viene distolto lo sguardo). Seleziona quindi **GameObject** > **SetActive (bool**) e lascia vuota la **casella di controllo** per nascondere la descrizione comando come l'azione che viene attivata quando distogli lo sguardo dall'oggetto di destinazione.
 
 ![Unity con l'evento OnLookAway di EyeTrackingTarget configurato](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-2.png)
 

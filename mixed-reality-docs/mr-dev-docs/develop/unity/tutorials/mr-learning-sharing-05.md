@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realtà mista, unity, esercitazione, hololens
+keywords: realtà mista, unity, esercitazione, hololens, funzionalità multiutente, Photon, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 65672bad9a967e11e7feb7efc45759608e9c9e76
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: ec24a8dcdc8708e61184056df6d282f4496cb453
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353429"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678250"
 ---
 # <a name="5-integrating-azure-spatial-anchors-into-a-shared-experience"></a>5. Integrazione di Ancoraggi nello spazio di Azure in un'esperienza condivisa
 
@@ -29,7 +29,7 @@ Nella finestra Hierarchy (Gerarchia) espandi l'oggetto **SharedPlayground** e qu
 
 ![Unity con gli oggetti SharedPlayground e TableAnchor espansi](images/mr-learning-sharing/sharing-05-section1-step1-1.png)
 
-Nella finestra Project (Progetto) passare alla cartella **Assets** (Asset)  > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** (Prefab) e trascinare il prefab **Buttons** nell'oggetto figlio **TableAnchor** , per aggiungerlo alla scena come elemento figlio dell'oggetto TableAnchor:
+Nella finestra Project (Progetto) passare alla cartella **Assets** (Asset)  > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** (Prefab) e trascinare il prefab **Buttons** nell'oggetto figlio **TableAnchor**, per aggiungerlo alla scena come elemento figlio dell'oggetto TableAnchor:
 
 ![Unity con il prefab Buttons appena aggiunto selezionato](images/mr-learning-sharing/sharing-05-section1-step1-2.png)
 
@@ -37,7 +37,7 @@ Nella finestra Project (Progetto) passare alla cartella **Assets** (Asset)  > **
 
 In questa sezione verrà configurata una serie di eventi Button che illustrano le nozioni di base per poter usare Ancoraggi nello spazio di Azure e ottenere l'allineamento spaziale in un'esperienza condivisa.
 
-Nella finestra Hierarchy (Gerarchia) espandi l'oggetto **Button** e seleziona il primo oggetto pulsante figlio denominato **StartAzureSession** :
+Nella finestra Hierarchy (Gerarchia) espandi l'oggetto **Button** e seleziona il primo oggetto pulsante figlio denominato **StartAzureSession**:
 
 ![Unity con l'oggetto pulsante StartAzureSession selezionato](images/mr-learning-sharing/sharing-05-section2-step1-1.png)
 
@@ -90,7 +90,7 @@ Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **TableAnchor** e qui
 
 ![Unity con Anchor Module Script configurato](images/mr-learning-sharing/sharing-05-section3-step1-2.png)
 
-Con l'oggetto **TableAnchor** ancora selezionato, nella finestra Inspector (Controllo) verificare che tutti i componenti dello script siano **abilitati** :
+Con l'oggetto **TableAnchor** ancora selezionato, nella finestra Inspector (Controllo) verificare che tutti i componenti dello script siano **abilitati**:
 
 * Seleziona la casella di controllo accanto a **Spatial Anchor Manager (Script)** (Gestione ancoraggi nello spazio - Script) per abilitarlo
 * Seleziona la casella di controllo accanto a **Anchor Module Script (Script)** (Script modulo di ancoraggio - Script) per abilitarlo

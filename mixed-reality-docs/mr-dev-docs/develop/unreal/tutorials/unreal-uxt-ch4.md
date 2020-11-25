@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 08/18/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, esercitazione, guida introduttiva, mrtk, uxt, UX Tools, documentazione
-ms.openlocfilehash: a4ad1879e73c85e25e5de675a4180f57361691a9
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, esercitazione, guida introduttiva, mrtk, uxt, UX Tools, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
+ms.openlocfilehash: dc17b878255a3d6a8e0efc3a4c5bd7aa7d57373d
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91702397"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679850"
 ---
 # <a name="4-making-your-scene-interactive"></a>4. Rendere la scena interattiva
 
@@ -30,7 +30,7 @@ Nell'esercitazione precedente hai aggiunto un asset ARSession, il pedone e la mo
 ## <a name="downloading-the-mrtk-ux-tools-plugin"></a>Download del plug-in UX Tools di MRTK
 Prima di iniziare a usare l'input dell'utente, è necessario aggiungere il plug-in al progetto.
 
-1.  Nella [pagina delle versioni](https://github.com/microsoft/MixedReality-UXTools-Unreal/releases) di UX Tools per la realtà mista su GitHub passare alla versione UX Tools for Unreal v0.9.0 e scaricare **UXTools.0.9.0.zip** . Decomprimere i file.
+1.  Nella [pagina delle versioni](https://github.com/microsoft/MixedReality-UXTools-Unreal/releases) di UX Tools per la realtà mista su GitHub passare alla versione UX Tools for Unreal v0.9.0 e scaricare **UXTools.0.9.0.zip**. Decomprimere i file.
 
 2.  Crea una nuova cartella denominata **Plugins** (Plug-in) nella cartella radice del progetto. Copia il plug-in UXTools decompresso in questa cartella e riavvia l'editor Unreal. 
 
@@ -77,7 +77,7 @@ Entrambi gli attori di interazione manuale Uxt devono avere proprietari e posizi
     * Trascina il segnaposto fuori da uno dei segnaposto **Owner** (Proprietario) e rilascialo per inserire un nuovo nodo. 
     * Cerca **self** e seleziona la variabile **Get a reference to self** (Ottieni riferimento a Self), quindi crea un collegamento tra il nodo di riferimento dell'oggetto **Self** e il segnaposto **Owner** (Proprietario) dell'altro attore di interazione manuale. 
 3. Infine, selezionare la casella **Show Near Cursor on Grab Targets** (Mostra cursore di prossimità sui target di cattura) per entrambi gli attori di interazione manuale. In questo modo, verrà visualizzato un cursore sui target di cattura quando il dito indice si avvicina e risulterà più facile vedere la posizione del dito rispetto al target.
-    * **Compila** , **Salva** e torna alla finestra principale. 
+    * **Compila**, **Salva** e torna alla finestra principale. 
 
 Assicurati che le connessioni corrispondano allo screenshot seguente, ma trascina liberamente i nodi per rendere più leggibile il progetto
 
@@ -105,9 +105,9 @@ Per altre informazioni sui componenti del manipolatore disponibili nel plug-in U
 
 ## <a name="testing-the-scene"></a>Test della scena
 Ottimo! A questo punto puoi testare l'app con le nuove mani virtuali e l'input utente. Premi **Play** (Gioca) nella finestra principale e vedrai due mani con mesh fornite dal plug-in UX Tools di MRTK, con i raggi della mano che si estendono dal palmo. Puoi controllare le mani e le relative interazioni nel modo seguente:
-- Tieni premuto **ALT di sinistra** per controllare la **mano sinistra** e **MAIUSC di sinistra** per controllare la **mano destra** . 
-- Sposta il mouse per muovere la mano e scorri con la **rotellina del mouse** per spostare la mano **avanti** o **indietro** . 
-- Fai clic con il pulsante sinistro del mouse per **pizzicare** e con il pulsante centrale del mouse per **picchiettare con le dita** . 
+- Tieni premuto **ALT di sinistra** per controllare la **mano sinistra** e **MAIUSC di sinistra** per controllare la **mano destra**. 
+- Sposta il mouse per muovere la mano e scorri con la **rotellina del mouse** per spostare la mano **avanti** o **indietro**. 
+- Fai clic con il pulsante sinistro del mouse per **pizzicare** e con il pulsante centrale del mouse per **picchiettare con le dita**. 
 
 > [!NOTE]
 > La simulazione di input potrebbe non funzionare se sono collegati più visori VR al computer. In caso di problemi, provare a scollegare gli altri visori VR. 

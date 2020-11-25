@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
-keywords: realtà mista, unity, esercitazione, hololens
+keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, riconoscimento vocale, Windows 10, traduzione vocale
 ms.localizationpriority: high
-ms.openlocfilehash: 6a7aead068b5ab8ba25bcf84bbeae0a19723845b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1139da69b27352b996d57184e21e9d6291d26fce
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91702188"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679920"
 ---
 # <a name="3-adding-the-azure-cognitive-services-speech-translation-component"></a>3. Aggiunta del componente di traduzione vocale di Servizi cognitivi di Azure
 
@@ -24,7 +24,7 @@ In questa esercitazione aggiungerai a un progetto la traduzione vocale in modo d
 
 ## <a name="instructions"></a>Istruzioni
 
-Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **Lunarcom** , quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **Lunarcom Translation Recognizer (Script)** (Riconoscimento traduzione Lunarcom - Script) all'oggetto Lunarcom e configuralo come indicato di seguito:
+Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **Lunarcom**, quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **Lunarcom Translation Recognizer (Script)** (Riconoscimento traduzione Lunarcom - Script) all'oggetto Lunarcom e configuralo come indicato di seguito:
 
 * Modifica l'impostazione di **Target Language** (Lingua di destinazione) impostando la lingua desiderata, ad esempio _German_ (Tedesco)
 

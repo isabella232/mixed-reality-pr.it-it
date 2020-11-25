@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, beta, streaming, comunicazione remota, realtà mista, sviluppo, guida introduttiva, funzionalità, nuovo progetto, emulatore, documentazione, guide, caratteristiche, ologrammi, sviluppo di giochi
-ms.openlocfilehash: 9b953cd0ea9aab92b2306da63a948b470363d0e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicazione remota, realtà mista, sviluppo, guida introduttiva, funzionalità, nuovo progetto, emulatore, documentazione, guide, caratteristiche, ologrammi, sviluppo di giochi, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, audio spaziale
+ms.openlocfilehash: 25fa60b4e55ec0f3bd0875ad88834981d198f7f5
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91702117"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679800"
 ---
 # <a name="spatial-audio-in-unreal"></a>Audio spaziale in Unreal
 
@@ -27,7 +27,7 @@ Dato che l'elaborazione dell'audio spaziale di qualità elevata è un'attività 
 Per aggiungere l'audio spaziale a un progetto, prima di tutto è necessario installare il plug-in Microsoft Spatial Sound. Per trovarlo, procedi in questo modo:
 
 1. Fai clic su **Edit > Plugins** (Modifica > Plug-in) e immetti **MicrosoftSpatialSound** nella casella di ricerca.
-2. Seleziona la casella di controllo **Enabled** (Abilitato) nel plug-in **MicrosoftSpatialSound** .
+2. Seleziona la casella di controllo **Enabled** (Abilitato) nel plug-in **MicrosoftSpatialSound**.
 3. Riavvia Unreal Editor selezionando **Restart Now** (Riavvia ora) nella pagina dei plug-in.
 
 > [!NOTE]
@@ -40,12 +40,12 @@ Una volta riavviato l'editor, il progetto è impostato.
 
 ## <a name="setting-the-spatialization-plugin-for-hololens-2-platform"></a>Impostazione del plug-in di spazializzazione per la piattaforma HoloLens 2
 La configurazione del plug-in di spazializzazione è specifica delle singole piattaforme.  Per abilitare il plug-in Microsoft spatial audio per HoloLens 2:
-1. Seleziona **Edit > Project Settings** (Modifica > Impostazioni progetto), scorri fino a **Platforms** (Piattaforme) e fai clic su **HoloLens** .
-2. Espandi le proprietà **Audio** e imposta il campo **Spatialization Plugin** (Plug-in di spazializzazione) su **Microsoft Spatial Sound** .
+1. Seleziona **Edit > Project Settings** (Modifica > Impostazioni progetto), scorri fino a **Platforms** (Piattaforme) e fai clic su **HoloLens**.
+2. Espandi le proprietà **Audio** e imposta il campo **Spatialization Plugin** (Plug-in di spazializzazione) su **Microsoft Spatial Sound**.
 
 ![Plug-in di spazializzazione per la piattaforma HoloLens](images/unreal-spatial-audio-img-02.png)
 
-Se prevedi di visualizzare in anteprima l'applicazione nell'editor Unreal su un PC desktop, dovrai ripetere i passaggi precedenti per la piattaforma **Windows** :
+Se prevedi di visualizzare in anteprima l'applicazione nell'editor Unreal su un PC desktop, dovrai ripetere i passaggi precedenti per la piattaforma **Windows**:
 
 ![Plug-in di spazializzazione per la piattaforma Windows](images/unreal-spatial-audio-img-05.png)
 

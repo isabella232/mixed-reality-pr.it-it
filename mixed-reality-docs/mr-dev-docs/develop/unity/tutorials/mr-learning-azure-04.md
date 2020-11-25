@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realtà mista, unity, esercitazione, hololens, hololens 2, Ancoraggi nello spazio di Azure
+keywords: realtà mista, unity, esercitazione, hololens, hololens 2, ancoraggi nello spazio di Azure, servizi cloud di azure, visione personalizzata di azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: f8271fe3b3b9549d6c95707466db9af3d312fab7
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 5245f3522e7822c16ebc0d0113634f152f223086
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353249"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679340"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4. Integrazione di Ancoraggi nello spazio di Azure
 
@@ -26,7 +26,7 @@ In questa esercitazione verrà spiegato come usare **Ancoraggi nello spazio di A
 
 ## <a name="understanding-azure-spatial-anchors"></a>Informazioni su Ancoraggi nello spazio di Azure
 
- **Ancoraggi nello spazio di Azure** fa parte della famiglia di Servizi cloud di Azure e viene utilizzato per salvare posizioni di ancoraggio. Le posizioni di ancoraggio salvate possono essere recuperate in base all' *ID di ancoraggio* dal cloud. Questa posizione di ancoraggio è condivisibile e accessibile da dispositivi multipiattaforma come i dispositivi HoloLens, iOS e Android.
+ **Ancoraggi nello spazio di Azure** fa parte della famiglia di Servizi cloud di Azure e viene utilizzato per salvare posizioni di ancoraggio. Le posizioni di ancoraggio salvate possono essere recuperate in base all'*ID di ancoraggio* dal cloud. Questa posizione di ancoraggio è condivisibile e accessibile da dispositivi multipiattaforma come i dispositivi HoloLens, iOS e Android.
 
 Altre informazioni su [Ancoraggi nello spazio di Azure](https://docs.microsoft.com/azure/spatial-anchors/overview).
 
@@ -70,7 +70,7 @@ In questa sezione verrà illustrato come salvare la posizione dell'oggetto.
 
 Eseguire l'applicazione e fare clic su **Set Object** (Imposta oggetto) nel menu principale dell'esperienza.
 
-Specificare il **nome** dell'oggetto da salvare e fare clic su **Set Object** (Imposta oggetto) per proseguire. Per aggiungere altre informazioni sull'oggetto, selezionare l' **immagine** e descrivere l'oggetto.
+Specificare il **nome** dell'oggetto da salvare e fare clic su **Set Object** (Imposta oggetto) per proseguire. Per aggiungere altre informazioni sull'oggetto, selezionare l'**immagine** e descrivere l'oggetto.
 
 Per salvare la posizione, fare clic su **Save Location** (Salva posizione)
 

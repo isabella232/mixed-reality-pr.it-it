@@ -6,13 +6,13 @@ ms.author: grbury
 ms.date: 07/29/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Windows Mixed Reality, testare, MRTK, MRTK versione 2, HoloLens 2
-ms.openlocfilehash: 88bee12196099837f46164552c690a6b326f9ba7
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+keywords: Windows Mixed Reality, test, MRTK, MRTK versione 2, HoloLens 2, unity, porting, HoloLens 1a generazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, migrazione, procedure consigliate, ARM
+ms.openlocfilehash: 84edf3b029140884443c23d685fe03a12161d1b8
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386227"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677390"
 ---
 # <a name="get-your-existing-app-ready-for-hololens-2"></a>Preparare un'app esistente per HoloLens 2
 
@@ -107,7 +107,7 @@ Per informazioni sulle differenze di API specifiche tra HTK/MRTK e MRTK v2, vedi
 - Quando possibile, usare l'esperienza utente MRTK predefinita (pulsanti, slate e così via).
 - Evita di modificare direttamente i file MRTK e crea invece wrapper intorno ai componenti MRTK.
     - Questa azione semplifica inserimenti e aggiornamenti MRTK futuri.
-- Esamina ed esplora le scene di esempio fornite in MRTK (soprattutto *HandInteractionExamples.scene* ).
+- Esamina ed esplora le scene di esempio fornite in MRTK (soprattutto *HandInteractionExamples.scene*).
 - Ricrea l'interfaccia utente basata su aree di disegno con quadrilateri, collisori e testo TextMeshPro.
 - Abilita la [condivisione dei buffer di intensità](camera-in-unity.md#sharing-your-depth-buffers-with-windows) o [imposta il punto di messa a fuoco](focus-point-in-unity.md); usa un buffer di intensità di 16 bit per prestazioni migliori. Quando esegui il rendering del colore, assicurati di farlo anche per la profondità. Unity in genere non scrive la profondità per oggetti gioco trasparenti e di testo. 
 - Imposta il percorso di rendering con istanze a singolo passaggio.

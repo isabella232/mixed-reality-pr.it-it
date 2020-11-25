@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realtà mista, unity, esercitazione, hololens
+keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, tracciamento oculare
 ms.localizationpriority: high
-ms.openlocfilehash: 490a131bb196941d2ae581b97d88a104c0c212e2
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 2b572a106cba904231ed124260cd879cd3a9a944
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353499"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679750"
 ---
 # <a name="8-using-eye-tracking"></a>8. Uso del tracciamento oculare
 
@@ -53,7 +53,7 @@ Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **MixedRealityToolkit
 
 ## <a name="enabling-simulated-eye-tracking-for-the-unity-editor"></a>Abilitazione del tracciamento oculare simulato per l'editor di Unity
 
-Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **MixedRealityToolkit** , nella finestra Inspector (Controllo) passare alla scheda **Input** e quindi:
+Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **MixedRealityToolkit**, nella finestra Inspector (Controllo) passare alla scheda **Input** e quindi:
 
 * Espandere la sezione **Input Data Providers** > **Input Simulation Service** (Provider di dati di input > Servizio di simulazione input)
 * Clonare il profilo **DefaultMixedRealityInputSimulationProfile** e assegnargli un nome appropriato, ad esempio _GettingStarted_MixedRealityInputSimulationProfile_
@@ -63,7 +63,7 @@ Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **MixedRealityToolkit
 
 ## <a name="adding-eye-tracking-to-objects"></a>Aggiunta del tracciamento oculare agli oggetti
 
-Nella finestra Hierarchy (Gerarchia) espandere l'oggetto RoverExplorer > **Buttons** (Pulsanti) e quindi, per ognuno dei tre oggetti pulsante figlio, espandere e selezionare l'oggetto SeeItSayItLabel > **TextMeshPro** :
+Nella finestra Hierarchy (Gerarchia) espandere l'oggetto RoverExplorer > **Buttons** (Pulsanti) e quindi, per ognuno dei tre oggetti pulsante figlio, espandere e selezionare l'oggetto SeeItSayItLabel > **TextMeshPro**:
 
 ![Unity con l'oggetto TextMeshPro selezionato](images/mr-learning-base/base-08-section4-step1-1.png)
 
@@ -78,12 +78,12 @@ Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **Hints** (Suggerimen
 
 * Nella sezione dell'evento **On Look At Start ()** (Quando viene rivolto lo sguardo all'inizio)
   * Fare clic sull'icona **+** piccola per aggiungere un altro evento
-  * Assegnare l'oggetto, ad esempio lo stesso oggetto **TextMeshPro** , al campo **None (Object)** (Nessuno - Oggetto)
+  * Assegnare l'oggetto, ad esempio lo stesso oggetto **TextMeshPro**, al campo **None (Object)** (Nessuno - Oggetto)
   * Dall'elenco a discesa **No Function** (Nessuna funzione) selezionare **TextMeshPro** > **float fontSize** (fontSize mobile) per aggiornare il valore della proprietà quando viene attivato l'evento
   * Impostare l'argomento su **0,06** per aumentare del 50% le dimensioni correnti del carattere 0,04
 * Nella sezione dell'evento **On Look Away ()** (Quando viene distolto lo sguardo)
   * Fare clic sull'icona **+** piccola per aggiungere un altro evento
-  * Assegnare l'oggetto, ad esempio lo stesso oggetto **TextMeshPro** , al campo **None (Object)** (Nessuno - Oggetto)
+  * Assegnare l'oggetto, ad esempio lo stesso oggetto **TextMeshPro**, al campo **None (Object)** (Nessuno - Oggetto)
   * Dall'elenco a discesa **No Function** (Nessuna funzione) selezionare **TextMeshPro** > **float fontSize** (fontSize mobile) per aggiornare il valore della proprietà quando viene attivato l'evento
   * Impostare l'argomento su **0,04** per ripristinare le dimensioni del carattere a 0,04
 

@@ -6,13 +6,13 @@ ms.author: cmeekhof
 ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: realtà mista, interazione, progettazione, HoloLens, mani, da lontano, puntamento e commit
-ms.openlocfilehash: 5baf625127b1c1757bb6ae82473adcb8329746cd
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Realtà mista, interazione, progettazione, HoloLens, mani, da lontano, puntamento e commit, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens, raggi della mano, manipolazione degli oggetti, MRTK, Mixed Reality Toolkit, DoF
+ms.openlocfilehash: 91befcec2d9b020c58d3ed02fd181122ce715936
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697354"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703457"
 ---
 # <a name="point-and-commit-with-hands"></a>Puntamento e commit con le mani
 

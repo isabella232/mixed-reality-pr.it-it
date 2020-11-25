@@ -6,13 +6,13 @@ ms.author: alexturn
 ms.date: 09/07/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: informazioni aggiornate, strumenti, inizio, nozioni di base, unity, visual studio, toolkit
-ms.openlocfilehash: 8e123ec9de117b3c1c5959f2719481ae8094a9e6
-ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
+keywords: aggiornamento, strumenti, attività iniziali, nozioni di base, unity, visual studio, toolkit, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, installazione, Windows, HoloLens, emulatore, unreal, openxr
+ms.openlocfilehash: 54d74f51473bda99e4f9ffea8157ee44696ab9f4
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94482414"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678230"
 ---
 # <a name="install-the-tools"></a>Installare gli strumenti
 

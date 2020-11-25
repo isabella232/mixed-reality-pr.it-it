@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 08/14/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, esercitazione, guida introduttiva, mrtk, uxt, UX Tools, documentazione
-ms.openlocfilehash: f7b57cf8a023874aa14118ff5cd50076bbf344e0
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, esercitazione, guida introduttiva, mrtk, uxt, UX Tools, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
+ms.openlocfilehash: f903848b8d5c9c1dccfc00cd7bd6d16d2e491a5e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91702348"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679840"
 ---
 # <a name="5-adding-a-button--resetting-piece-locations"></a>5. Aggiunta di un pulsante e ripristino delle posizioni dei pezzi
 
@@ -32,11 +32,11 @@ La prima attività consiste nel creare un progetto di funzione che riporta un pe
 
 1.  Apri **WhiteKing** (Re bianco), fai clic sull'icona **+** accanto alla sezione **Functions** (Funzioni) in **My Blueprint** (Progetto personale) e assegna alla funzione il nome **Reset Location** (Ripristina posizione). 
 
-2.  Trascina e rilascia l'esecuzione da **Reset Location** (Ripristina posizione) nella griglia del progetto per creare un nodo **SetActorRelativeTransform** . 
+2.  Trascina e rilascia l'esecuzione da **Reset Location** (Ripristina posizione) nella griglia del progetto per creare un nodo **SetActorRelativeTransform**. 
     * Questa funzione imposta la trasformazione (posizione, rotazione e scala) di un attore rispetto al relativo elemento padre. Questa funzione verrà usata per ripristinare la posizione del Re sulla scacchiera, anche se è stata spostata dalla posizione originale. 
     
-3. Fai clic con il pulsante destro del mouse all'interno di Event Graph (Grafico eventi), scegli **Make Transform** (Crea trasformazione) e imposta **Location** (Posizione) su **X = -26** , **Y = 4** , **Z = 0** .
-    * Connetti il relativo **Return Value** (Valore restituito) al segnaposto **New Relative Transform** (Nuova trasformazione relativa) in **SetActorRelativeTransform** . 
+3. Fai clic con il pulsante destro del mouse all'interno di Event Graph (Grafico eventi), scegli **Make Transform** (Crea trasformazione) e imposta **Location** (Posizione) su **X = -26**, **Y = 4**, **Z = 0**.
+    * Connetti il relativo **Return Value** (Valore restituito) al segnaposto **New Relative Transform** (Nuova trasformazione relativa) in **SetActorRelativeTransform**. 
 
 ![Funzione di ripristino della posizione](images/unreal-uxt/5-function.PNG)
 
@@ -47,7 +47,7 @@ Scegli **Compile** (Compila) e **Save** (Salva) per compilare e salvare il proge
 Ora che la funzione è stata configurata correttamente, l'attività successiva consiste nel creare un pulsante che la attiva quando viene toccato. 
 
 
-1.  Fare clic su **Add New > Blueprint Class** (Aggiungi nuovo > Classe progetto), espandere la sezione **All Classes** (Tutte le classi) e cercare **BP_ButtonHoloLens2** . 
+1.  Fare clic su **Add New > Blueprint Class** (Aggiungi nuovo > Classe progetto), espandere la sezione **All Classes** (Tutte le classi) e cercare **BP_ButtonHoloLens2**. 
     * Assegna il nome **ResetButton** e fai doppio clic per aprire il progetto.
 
 > [!NOTE]
@@ -70,7 +70,7 @@ Verrà aperta l'utilità Icon Brush Editor fornita dal plug-in UX Tools, che con
     
 A questo punto puoi chiamare la funzione **Reset Location** (Ripristina posizione) di **WhiteKing** (Re bianco), che necessita un riferimento all'attore **WhiteKing** (Re bianco) nel livello. 
 
-4.  Nel pannello **My Blueprint** (Progetto personale) passare alla sezione **Variables** (Variabili), fare clic sul pulsante **+** e assegnare alla variabile il nome **WhiteKing** . 
+4.  Nel pannello **My Blueprint** (Progetto personale) passare alla sezione **Variables** (Variabili), fare clic sul pulsante **+** e assegnare alla variabile il nome **WhiteKing**. 
     * Nel pannello **Details** (Dettagli) selezionare l'elenco a discesa accanto a **Variable Type** (Tipo di variabile), cercare **WhiteKing** e selezionare **Object Reference** (Riferimento oggetto). 
     * Seleziona la casella accanto a **Instance Editable** (Istanza modificabile). In questo modo la variabile potrà essere impostata dal livello principale. 
 
@@ -85,7 +85,7 @@ A questo punto non resta che attivare la funzione di reimpostazione alla pressio
 
 ![Chiamata della funzione di ripristino della posizione alla pressione del pulsante](images/unreal-uxt/5-callresetloc.PNG)
 
-2.  Trascina **ResetButton** nel viewport e impostane la posizione su **X = 50** , **Y = -25** e **Z = 10** . Impostarne la rotazione su **Z = 180** . In **Default** (Valore predefinito) imposta il valore della variabile **WhiteKing** su **WhiteKing** .
+2.  Trascina **ResetButton** nel viewport e impostane la posizione su **X = 50**, **Y = -25** e **Z = 10**. Impostarne la rotazione su **Z = 180**. In **Default** (Valore predefinito) imposta il valore della variabile **WhiteKing** su **WhiteKing**.
 
 ![Impostazione della variabile](images/unreal-uxt/5-buttonlevel.PNG)
 

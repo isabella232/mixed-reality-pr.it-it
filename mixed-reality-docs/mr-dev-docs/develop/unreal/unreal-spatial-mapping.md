@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, mapping spaziale
-ms.openlocfilehash: 8e49878cf37945c8e317b1098f48014b57d18551
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, mapping spaziale, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
+ms.openlocfilehash: cd7e99230809c9d98f732e0dfa1f0b86d05c4365
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698500"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678810"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Mapping spaziale in Unreal
 
@@ -30,8 +30,8 @@ Per abilitare il mapping spaziale in HoloLens:
 Per acconsentire esplicitamente al mapping spaziale ed eseguire il debug di **MRMesh** in un gioco HoloLens:
 1. Apri **ARSessionConfig** ed espandi la sezione **ARSettings > World Mapping** (ARSettings > Mapping mondo). 
 
-2. Seleziona **Generate Mesh Data from Tracked Geometry** (Genera dati mesh da geometria rilevata), che indica al plug-in di HoloLens di avviare l'acquisizione asincrona dei dati di mapping spaziale e presentarli ad Unreal tramite **MRMesh** . 
-3. Seleziona **Render Mesh Data in Wireframe** (Esegui il rendering dei dati mesh in wireframe) per visualizzare un contorno wireframe bianco di ogni triangolo in **MRMesh** . 
+2. Seleziona **Generate Mesh Data from Tracked Geometry** (Genera dati mesh da geometria rilevata), che indica al plug-in di HoloLens di avviare l'acquisizione asincrona dei dati di mapping spaziale e presentarli ad Unreal tramite **MRMesh**. 
+3. Seleziona **Render Mesh Data in Wireframe** (Esegui il rendering dei dati mesh in wireframe) per visualizzare un contorno wireframe bianco di ogni triangolo in **MRMesh**. 
 
 ![Archivio di ancoraggi nello spazio pronto](images/unreal-spatialmapping-arsettings.PNG)
 
@@ -67,12 +67,12 @@ Il materiale della mesh può essere modificato nel grafico eventi del progetto o
 In C++ è possibile sottoscrivere il delegato `OnTrackableAdded` per ottenere `ARTrackedGeometry` non appena è disponibile, come mostrato nel codice seguente. 
 
 > [!IMPORTANT]
-> Il file build.cs del progetto **DEVE** includere **AugmentedReality** nell'elenco **PublicDependencyModuleNames** .
-> - Questo comprende **ARBlueprintLibrary.h** e **MRMeshComponent.h** , che consente di ispezionare il componente **MRMesh** di **UARTrackedGeometry** . 
+> Il file build.cs del progetto **DEVE** includere **AugmentedReality** nell'elenco **PublicDependencyModuleNames**.
+> - Questo comprende **ARBlueprintLibrary.h** e **MRMeshComponent.h**, che consente di ispezionare il componente **MRMesh** di **UARTrackedGeometry**. 
 
 ![Esempio di ancoraggi nello spazio in codice C++](images/unreal-spatialmapping-examplecode.PNG)
 
-Il mapping spaziale non è l'unico tipo di dati che viene esposto tramite **ARTrackedGeometries** . Puoi verificare che `EARObjectClassification` è `World`, che indica che si tratta di una geometria di mapping spaziale. 
+Il mapping spaziale non è l'unico tipo di dati che viene esposto tramite **ARTrackedGeometries**. Puoi verificare che `EARObjectClassification` è `World`, che indica che si tratta di una geometria di mapping spaziale. 
 
 Sono presenti delegati simili per gli eventi aggiornati e rimossi: 
 - `AddOnTrackableUpdatedDelegate_Handle` 

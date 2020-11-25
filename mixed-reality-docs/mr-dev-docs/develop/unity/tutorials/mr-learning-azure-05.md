@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realtà mista, unity, esercitazione, hololens, hololens 2, servizio azure bot, luis, linguaggio naturale, bot conversazione
+keywords: realtà mista, unity, esercitazione, hololens, hololens 2, servizio azure bot, luis, linguaggio naturale, bot conversazione, servizi cloud di azure, visione personalizzata di azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 417b534223427b491d900ad767d9fd797698ac71
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: d9884fc135a38e610df9faceb8cf4b24c21f7982
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915556"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679360"
 ---
 # <a name="5-integrating-azure-bot-service"></a>5. Integrazione del servizio Azure Bot
 
@@ -44,20 +44,20 @@ L'obiettivo del bot è quello di poter indicare quanti *oggetti tracciati* sono 
 
 ### <a name="a-quick-look-into-tracked-objects-azure-function"></a>Rapida descrizione della funzione di Azure relativa agli oggetti tracciati
 
-Stai per iniziare a creare il bot, ma per renderlo utile devi assegnargli una risorsa da cui possa eseguire il pull dei dati. Poiché il *bot* sarà in grado di contare il numero di **oggetti tracciati** , trovare oggetti specifici in base al nome e fornirne i dettagli, userai una semplice funzione di Azure che ha accesso all' **archivio tabelle di Azure**.
+Stai per iniziare a creare il bot, ma per renderlo utile devi assegnargli una risorsa da cui possa eseguire il pull dei dati. Poiché il *bot* sarà in grado di contare il numero di **oggetti tracciati**, trovare oggetti specifici in base al nome e fornirne i dettagli, userai una semplice funzione di Azure che ha accesso all'**archivio tabelle di Azure**.
 
 Scaricare il progetto della funzione di Azure Tracked Objects: [AzureFunction_TrackedObjectsService.zip](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureFunction_TrackedObjectsService.zip) ed estrarlo nel disco rigido.
 
-Questa funzione di Azure dispone di due azioni, **Count** e **Find** , che possono essere richiamate tramite chiamate *GET* *HTTP* di base. Puoi esaminare il codice in **Visual Studio**.
+Questa funzione di Azure dispone di due azioni, **Count** e **Find**, che possono essere richiamate tramite chiamate *GET* *HTTP* di base. Puoi esaminare il codice in **Visual Studio**.
 
 Scopri di più sulle [funzioni di Azure](https://docs.microsoft.com/azure/azure-functions/functions-overview).
 
-La funzione **Count** esegue una query nell' **archivio tabelle** per recuperare tutti i **TrackedObject** dalla tabella: un concetto molto semplice. Dall'altra parte, la funzione **Find** accetta un parametro di query *name* dalla richiesta *GET* , esegue una query nell' **archivio tabelle** per trovare un **TrackedObject** corrispondente e restituisce un DTO come JSON.
+La funzione **Count** esegue una query nell'**archivio tabelle** per recuperare tutti i **TrackedObject** dalla tabella: un concetto molto semplice. Dall'altra parte, la funzione **Find** accetta un parametro di query *name* dalla richiesta *GET*, esegue una query nell'**archivio tabelle** per trovare un **TrackedObject** corrispondente e restituisce un DTO come JSON.
 
 Puoi distribuire questa **funzione di Azure** direttamente da **Visual Studio**.
 Fai clic sul collegamento per accedere a tutte le informazioni relative alla [distribuzione di una funzione di Azure](https://docs.microsoft.com/azure/devops/pipelines/targets/azure-functions?view=azure-devops&tabs=dotnet-core%2Cyaml&preserve-view=true).
 
-Una volta completata la distribuzione, nel **portale di Azure** apri la risorsa corrispondente e fai clic su **Configurazione** all'interno della sezione *Impostazioni*. In **Impostazioni applicazione** devi fornire la *stringa di connessione* all' **archivio di Azure** in cui si trovano gli **oggetti tracciati**. Fai clic su **Nuova impostazione applicazione** , quindi come nome usa **AzureStorageConnectionString** e come valore fornisci la *stringa di connessione* corretta. Fai quindi clic su **Salva**. La **funzione di Azure** è ora pronta a servire il *bot* che creerai più avanti.
+Una volta completata la distribuzione, nel **portale di Azure** apri la risorsa corrispondente e fai clic su **Configurazione** all'interno della sezione *Impostazioni*. In **Impostazioni applicazione** devi fornire la *stringa di connessione* all'**archivio di Azure** in cui si trovano gli **oggetti tracciati**. Fai clic su **Nuova impostazione applicazione**, quindi come nome usa **AzureStorageConnectionString** e come valore fornisci la *stringa di connessione* corretta. Fai quindi clic su **Salva**. La **funzione di Azure** è ora pronta a servire il *bot* che creerai più avanti.
 
 ### <a name="creating-a-conversation-bot"></a>Creazione di un bot conversazionale
 
@@ -65,7 +65,7 @@ Esistono diversi modi per sviluppare un bot conversazionale basato su Bot Framew
 
 Puoi scaricare le versioni più recenti dal [repository di GitHub](https://github.com/microsoft/BotFramework-Composer/releases). È disponibile per Windows, Mac e Linux.
 
-Dopo aver installato **Bot Framework Composer** , avvia l'applicazione. Verrà visualizzata l'interfaccia seguente:
+Dopo aver installato **Bot Framework Composer**, avvia l'applicazione. Verrà visualizzata l'interfaccia seguente:
 
 ![Home di Bot Framework Composer](images/mr-learning-azure/tutorial5-section4-step1-1.png)
 
@@ -75,7 +75,7 @@ Sulla barra superiore fai clic su **Open** (Apri) e seleziona il progetto Bot Fr
 
 ![Bot Framework Composer con il progetto TrackedObjectsBot aperto](images/mr-learning-azure/tutorial5-section4-step1-2.png)
 
-Guardando il lato sinistro, puoi vedere il **pannello delle finestre di dialogo**. In tale area è presente una finestra di dialogo denominata **TrackedObjectsBot** , sotto il cui nome sono visibili diversi **trigger**.
+Guardando il lato sinistro, puoi vedere il **pannello delle finestre di dialogo**. In tale area è presente una finestra di dialogo denominata **TrackedObjectsBot**, sotto il cui nome sono visibili diversi **trigger**.
 
 Scopri di più sui [concetti relativi a Bot Framework](https://docs.microsoft.com/composer/concept-dialog).
 
@@ -89,7 +89,7 @@ Questo è il punto di ingresso del chat *bot* ogni volta che un *utente* avvia u
 
 #### <a name="askingforcount"></a>AskingForCount
 
-Questa finestra di dialogo viene attivata quando l' *utente* chiede di contare tutti gli **oggetti tracciati**.
+Questa finestra di dialogo viene attivata quando l'*utente* chiede di contare tutti gli **oggetti tracciati**.
 Le frasi trigger sono le seguenti:
 
 >* count me all (conta tutto)
@@ -97,24 +97,24 @@ Le frasi trigger sono le seguenti:
 
 ![Trigger di finestra di dialogo AskForCount del progetto TrackedObjectsBot](images/mr-learning-azure/tutorial5-section4-step1-4.png)
 
-Grazie a [LUIS](https://docs.microsoft.com/composer/how-to-use-luis), non è necessario che l' *utente* esprima le frasi esattamente come farebbe in una conversazione naturale.
+Grazie a [LUIS](https://docs.microsoft.com/composer/how-to-use-luis), non è necessario che l'*utente* esprima le frasi esattamente come farebbe in una conversazione naturale.
 
 In questa finestra di dialogo il *bot* comunicherà anche con la funzione **Count** di Azure, per la quale più avanti sono disponibili altre informazioni.
 
 #### <a name="unknown-intent"></a>Unknown Intent (Finalità sconosciuta)
 
-Questa finestra di dialogo viene attivata se l'input dell' *utente* non si adatta ad altre condizioni di trigger e risponde chiedendo all'utente di provare a riformulare la domanda.
+Questa finestra di dialogo viene attivata se l'input dell'*utente* non si adatta ad altre condizioni di trigger e risponde chiedendo all'utente di provare a riformulare la domanda.
 
 ![Trigger di finestra di dialogo Unknown Intent del progetto TrackedObjectsBot](images/mr-learning-azure/tutorial5-section4-step1-5.png)
 
 #### <a name="findentity"></a>FindEntity
 
 L'ultima finestra di dialogo è più complessa perché correlata alla creazione di rami e all'archiviazione dei dati nella memoria *bots*.
-Chiede all'utente il *nome* dell' **oggetto tracciato** per cui vuole ottenere altre informazioni, esegue una query per la funzione **Find** di Azure e usa la risposta per procedere con la conversazione.
+Chiede all'utente il *nome* dell'**oggetto tracciato** per cui vuole ottenere altre informazioni, esegue una query per la funzione **Find** di Azure e usa la risposta per procedere con la conversazione.
 
 ![Trigger di finestra di dialogo FindEntity del progetto TrackedObjectsBot](images/mr-learning-azure/tutorial5-section4-step1-6.png)
 
-Se l' **oggetto tracciato** non viene trovato, l'utente viene informato e la conversazione termina. Quando l' **oggetto tracciato** in questione viene trovato, vengono verificate e segnalate le proprietà disponibili.
+Se l'**oggetto tracciato** non viene trovato, l'utente viene informato e la conversazione termina. Quando l'**oggetto tracciato** in questione viene trovato, vengono verificate e segnalate le proprietà disponibili.
 
 ### <a name="adapting-the-bot"></a>Adattamento del bot
 
@@ -159,7 +159,7 @@ A questo punto connetterai l'oggetto **ChatBotManager** al componente **ChatBotC
 
 A questo punto, è necessario un modo per aprire **ChatBotPanel** affinché l'utente possa interagire con esso. Nella finestra della scena è possibile che tu abbia notato la presenza di un pulsante laterale *Chat Bot* nell'oggetto **MainMenu**. Sarà necessario usarlo per risolvere il problema.
 
-In Hierarchy (Gerarchia) individua **RootMenu** > **MainMenu** > **SideButtonCollection** > **ButtonChatBot** , quindi in Inspector (Controllo) individua lo script *ButtonConfigHelper*. Qui vedrai uno slot vuoto nel callback dell'evento **OnClick()** . Trascina e rilascia **ChatBotPanel** nello slot dell'evento, dall'elenco a discesa passa a *GameObject* , quindi scegli *SetActive (bool)* nel sottomenu e abilita la casella di controllo.
+In Hierarchy (Gerarchia) individua **RootMenu** > **MainMenu** > **SideButtonCollection** > **ButtonChatBot**, quindi in Inspector (Controllo) individua lo script *ButtonConfigHelper*. Qui vedrai uno slot vuoto nel callback dell'evento **OnClick()** . Trascina e rilascia **ChatBotPanel** nello slot dell'evento, dall'elenco a discesa passa a *GameObject*, quindi scegli *SetActive (bool)* nel sottomenu e abilita la casella di controllo.
 
 ![Unity con ButtonChatBot configurato](images/mr-learning-azure/tutorial5-section6-step1-4.png)
 
@@ -192,4 +192,4 @@ In questa esercitazione hai appreso come usare Azure Bot Framework per interagir
 ## <a name="conclusion"></a>Conclusione
 
 Nel corso di questa serie di esercitazioni hai sperimentato in che modo i **servizi cloud di Azure** hanno consentito di introdurre nuove e interessanti funzionalità nella tua applicazione.
-Ora puoi archiviare dati e immagini nel cloud con **Archiviazione di Azure** , usare **Visione personalizzata di Azure** per associare le immagini ed eseguire il training di un modello, riunire gli oggetti in un contesto locale con gli **ancoraggi nello spazio di Azure** e implementare **Azure Bot Framework con tecnologia LUIS** per aggiungere un bot conversazionale per un modello di interazione nuovo e naturale.
+Ora puoi archiviare dati e immagini nel cloud con **Archiviazione di Azure**, usare **Visione personalizzata di Azure** per associare le immagini ed eseguire il training di un modello, riunire gli oggetti in un contesto locale con gli **ancoraggi nello spazio di Azure** e implementare **Azure Bot Framework con tecnologia LUIS** per aggiungere un bot conversazionale per un modello di interazione nuovo e naturale.

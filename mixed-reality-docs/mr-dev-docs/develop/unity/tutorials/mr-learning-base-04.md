@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: realtà mista, unity, esercitazione, hololens
+keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, risolutori, raccolta di oggetti griglia
 ms.localizationpriority: high
-ms.openlocfilehash: 849de7c50adc8ff1da5262ad46fae50cce48e953
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: b49d1b93b98a68e253239647262edc737fdbeb58
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353219"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679310"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4. Posizionamento degli oggetti nella scena
 
@@ -47,7 +47,7 @@ Nella finestra Hierarchy (Gerarchia) fare clic con il pulsante destro del mouse 
 > [!TIP]
 > Per visualizzare le finestre della scena e di gioco affiancate, come mostrato nell'immagine precedente, trascinare la finestra di gioco a destra della finestra della scena. Per altre informazioni sulla personalizzazione dell'area di lavoro, consultare l'argomento relativo alla <a href="https://docs.unity3d.com/Manual/CustomizingYourWorkspace.html" target="_blank">personalizzazione dell'area di lavoro</a> nella documentazione di Unity.
 
-Fare clic con il pulsante destro del mouse sull'oggetto appena creato, scegliere **Rename** (Rinomina) e modificare il nome in **RoverExplorer** :
+Fare clic con il pulsante destro del mouse sull'oggetto appena creato, scegliere **Rename** (Rinomina) e modificare il nome in **RoverExplorer**:
 
 ![Menu popup contestuale Rename di Unity](images/mr-learning-base/base-04-section2-step1-2.png)
 
@@ -100,7 +100,7 @@ Nella finestra Hierarchy (Gerarchia) fare clic con il pulsante destro del mouse 
 
 ![Unity con l'oggetto RoverParts appena creato selezionato e posizionato](images/mr-learning-base/base-04-section4-step1-1.png)
 
-Nella finestra Hierarchy (Gerarchia) selezionare tutti gli oggetti figlio RoverExplorer > RoverAssembly > RoverModel > **Parts** , fare clic con il pulsante destro del mouse su di essi e scegliere **Duplicate** (Duplica) per creare una copia di ognuna delle parti:
+Nella finestra Hierarchy (Gerarchia) selezionare tutti gli oggetti figlio RoverExplorer > RoverAssembly > RoverModel > **Parts**, fare clic con il pulsante destro del mouse su di essi e scegliere **Duplicate** (Duplica) per creare una copia di ognuna delle parti:
 
 ![Unity con tutte le voci di Parts selezionate e il menu popup contestuale Duplicate](images/mr-learning-base/base-04-section4-step1-2.png)
 
@@ -118,18 +118,18 @@ Per rendere più agevole l'uso della scena, nella finestra Hierarchy (Gerarchia)
 > [!TIP]
 > Per altre informazioni sui controlli per la visibilità nella scena e su come usarli per ottimizzare la vista e il flusso di lavoro della scena, consultare l'argomento sulla <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">visibilità nella scena</a> nella documentazione di Unity.
 
-Nella finestra Hierarchy (Gerarchia), ripulire i nomi degli oggetti figlio RoverParts sostituendo la parte finale **(1)** con **_Part** :
+Nella finestra Hierarchy (Gerarchia), ripulire i nomi degli oggetti figlio RoverParts sostituendo la parte finale **(1)** con **_Part**:
 
 ![Unity con il nome delle parti duplicate ripuliti](images/mr-learning-base/base-04-section4-step1-5.png)
 
-Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **RoverParts** , quindi nella finestra Inspector (Controllo) fare clic sul pulsante **Add Component** (Aggiungi componente) e cercare e selezionare **GridObjectCollection** per aggiungere il componente GridObjectCollection all'oggetto RoverParts:
+Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **RoverParts**, quindi nella finestra Inspector (Controllo) fare clic sul pulsante **Add Component** (Aggiungi componente) e cercare e selezionare **GridObjectCollection** per aggiungere il componente GridObjectCollection all'oggetto RoverParts:
 
 ![Oggetto RoverParts di Unity con l'aggiunta del componente Grid Object Collection in corso](images/mr-learning-base/base-04-section4-step1-6.png)
 
 Configurare i valori del componente **GridObjectCollection** come segue:
 
 * **Sort Type** (Tipo di ordinamento): Alfabetico
-* **Layout** : Orizzontale
+* **Layout**: Orizzontale
 * **Cell Width** (Larghezza cella): 0,25
 * **Distance from parent** (Distanza dal padre): 0,38
 
