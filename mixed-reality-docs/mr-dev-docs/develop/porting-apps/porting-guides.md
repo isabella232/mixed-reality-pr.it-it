@@ -1,23 +1,23 @@
 ---
-title: Guide alla conversione
+title: Porting delle app VR alla realtà mista di Windows
 description: Procedura dettagliata che spiega come trasferire un'applicazione immersiva esistente a una realtà mista di Windows.
 author: JBrentJ
 ms.author: alexturn
 ms.date: 07/07/2020
 ms.topic: article
 keywords: porta, Unity, Unreal, middleware, motore, UWP, Win32, porting, HoloLens 1st Gen, auricolare realtà mista, cuffia a realtà mista di Windows, migrazione, Windows 10, mapping di input,
-ms.openlocfilehash: 18129151b1e3d11f9e9c7bb3c3420c23b5fd1dd0
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: aa9d45a4413fd8e0f5c7eec61f830635c2db6f4b
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677730"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443672"
 ---
-# <a name="porting-guides"></a>Guide alla conversione
+# <a name="porting-vr-apps-to-windows-mixed-reality"></a>Porting delle app VR alla realtà mista di Windows
 
 Windows 10 include il supporto diretto per auricolari immersivi e olografici. Se è stato creato contenuto per altri dispositivi, ad esempio Oculus Rift o HTC vive, questi hanno dipendenze da librerie esistenti sopra l'API della piattaforma del sistema operativo. Il riutilizzo delle app VR Unity di Win32 per la realtà mista di Windows prevede il reindirizzamento dell'utilizzo di SDK VR specifici del fornitore alle API VR tra fornitori di Unity.
 
-## <a name="porting-overview"></a>Panoramica del porting
+## <a name="porting-requirements"></a>Requisiti di porting
 
 A livello generale, sono necessari i passaggi seguenti per trasferire il contenuto esistente:
 1. **Verificare che il PC esegua Windows 10 Fall Creators Update (16299).** Non è più consigliabile ricevere le build di anteprima dall'anello Insider Skip Ahead, perché tali Build non saranno le più stabili per lo sviluppo di realtà miste.
@@ -56,7 +56,7 @@ La piattaforma di realtà mista Windows è ancora in fase di sviluppo attivo. È
 > [!IMPORTANT]
 > Se si usano i controller di HP Reverb G2, fare riferimento a [questo articolo](../unreal/unreal-reverb-g2-controllers.md) per istruzioni aggiuntive sul mapping degli input.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Linee guida per la compatibilità hardware con la realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Informazioni sulle prestazioni per la realtà mista](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Suggerimenti sulle prestazioni per Unity](../unity/performance-recommendations-for-unity.md)

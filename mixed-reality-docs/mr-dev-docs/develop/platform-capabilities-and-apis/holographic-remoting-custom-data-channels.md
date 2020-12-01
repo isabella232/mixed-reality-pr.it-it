@@ -3,15 +3,15 @@ title: Canali di dati di Holographic Remoting personalizzati
 description: I canali di dati personalizzati possono essere usati per inviare dati utente tramite la connessione remota olografica già stabilita.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicazione remota, comunicazione remota olografica, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale, canali di dati
-ms.openlocfilehash: bbbf0e1dd48e1e6872243b2ea562b0729d53ebae
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 119a08a7f0e41aca694184879e33aaf54160220c
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677910"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443453"
 ---
 # <a name="custom-holographic-remoting-data-channels"></a>Canali di dati di Holographic Remoting personalizzati
 
@@ -114,7 +114,8 @@ m_customDataChannel.Close();
 ```
 
 ## <a name="see-also"></a>Vedere anche
-* [Scrivere un'app remota Holographic Remoting](holographic-remoting-create-host.md)
+* [Scrittura di un'app remota di comunicazione remota olografica usando le API di Windows mixed.](holographic-remoting-create-remote-wmr.md)
+* [Scrittura di un'app remota di comunicazione remota olografica usando le API di OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Scrivere un'app lettore Holographic Remoting personalizzata](holographic-remoting-create-player.md)
 * [Limitazioni e risoluzione dei problemi di comunicazione remota olografica](holographic-remoting-troubleshooting.md)
 * [Condizioni di licenza software per Holographic Remoting](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

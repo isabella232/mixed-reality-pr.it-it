@@ -3,20 +3,24 @@ title: Cronologia delle versioni remota olografica
 description: Cronologia delle versioni per la comunicazione remota olografica in HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicazione remota, comunicazione remota olografica, cronologia delle versioni, auricolare in realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: d9b1a9e7aa519084c05f658b2bc1864dc26e7ffa
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5ac15c9af7f6cb2d0263b1ee20e0d2c490d353a0
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677850"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443473"
 ---
 # <a name="holographic-remoting-version-history"></a>Cronologia delle versioni remota olografica
 
 > [!IMPORTANT]
 > Queste linee guida sono specifiche per la comunicazione remota olografica in HoloLens 2.
+
+## <a name="version-240-december-1-2020"></a>Versione 2.4.0 (1 dicembre 2020) <a name="v2.4.0"></a>
+* La comunicazione remota olografica supporta ora la scrittura di app Remote con l' [API OpenXR](../native/openxr.md). Per iniziare, vedere [scrittura di un'app remota di comunicazione remota olografica usando le API di OpenXR](holographic-remoting-create-remote-openxr.md).
+* Correzioni di bug e miglioramenti alla stabilità.
 
 ## <a name="version-231-october-10-2020"></a>Versione 2.3.1 (10 ottobre 2020) <a name="v2.3.1"></a>
 * Correzione della regressione con la stima di posa remota che ha causato il jitter visivo.
@@ -102,8 +106,9 @@ ms.locfileid: "94677850"
 * Prima versione pubblica della comunicazione remota olografica per HoloLens 2.
 
 ## <a name="see-also"></a>Vedere anche
+* [Scrittura di un'app remota di comunicazione remota olografica usando le API di Windows mixed.](holographic-remoting-create-remote-wmr.md)
+* [Scrittura di un'app remota di comunicazione remota olografica usando le API di OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Scrivere un'app lettore Holographic Remoting personalizzata](holographic-remoting-create-player.md)
-* [Scrittura di un'app host di comunicazione remota olografica](holographic-remoting-create-host.md)
 * [Limitazioni e risoluzione dei problemi di comunicazione remota olografica](holographic-remoting-troubleshooting.md)
 * [Condizioni di licenza software per Holographic Remoting](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Informativa sulla privacy di Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

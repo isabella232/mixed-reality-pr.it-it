@@ -3,15 +3,15 @@ title: Scrivere un lettore Holographic Remoting personalizzato
 description: Grazie alla creazione di un'app lettore di comunicazione remota olografica personalizzata è possibile creare un'applicazione personalizzata in grado di visualizzare il contenuto di cui è stato eseguito il rendering in un computer remoto in HoloLens 2. Questo articolo descrive il modo in cui è possibile ottenere questo risultato.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicazione remota, comunicazione remota olografica, NuGet, manifesto dell'applicazione, contesto del lettore, app remota, auricolare in realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: f55973e74abc60f62599375aebf278224865a5c1
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 69dc382873eb4fe0dc50f6f55e074c3491b02c02
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677920"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443636"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>Scrivere un'app lettore Holographic Remoting personalizzata
 
@@ -251,7 +251,8 @@ Per ulteriori informazioni, vedere la ```PlayerFrameStatistics``` documentazione
 I canali di dati personalizzati possono essere utilizzati per inviare dati utente tramite la connessione remota già stabilita. Per ulteriori informazioni, vedere [canali di dati personalizzati](holographic-remoting-custom-data-channels.md) .
 
 ## <a name="see-also"></a>Vedere anche
-* [Scrivere un'app remota Holographic Remoting](holographic-remoting-create-host.md)
+* [Scrittura di un'app remota di comunicazione remota olografica usando le API di Windows mixed.](holographic-remoting-create-remote-wmr.md)
+* [Scrittura di un'app remota di comunicazione remota olografica usando le API di OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Canali di dati di Holographic Remoting personalizzati](holographic-remoting-custom-data-channels.md)
 * [Stabilire una connessione sicura con Holographic Remoting](holographic-remoting-secure-connection.md)
 * [Limitazioni e risoluzione dei problemi di comunicazione remota olografica](holographic-remoting-troubleshooting.md)

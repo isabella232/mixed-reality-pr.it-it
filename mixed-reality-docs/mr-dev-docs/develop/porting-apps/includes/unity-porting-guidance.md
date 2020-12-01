@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: bcc899a178917a8ef184b4c11bd724df71f7b5c0
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: bf6b98eca850d2b280e7a016799c4287955159a6
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638543"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443677"
 ---
 # <a name="project-settings"></a>[Impostazioni del progetto](#tab/project)
 
@@ -54,7 +54,7 @@ Dall'interno dell'applicazione Unity:
 
 È possibile creare esperienze di realtà miste in un'ampia gamma di [scale di esperienza](../../../design/coordinate-systems.md).
 
-Se si esegue il porting di un' **esperienza con scalabilità verticale** , è necessario assicurarsi che Unity sia impostato sul tipo di spazio di rilevamento **stazionario** :
+Se si esegue il porting di un' **esperienza con scalabilità verticale**, è necessario assicurarsi che Unity sia impostato sul tipo di spazio di rilevamento **stazionario** :
 
 ```cs
 XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
@@ -62,7 +62,7 @@ XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
 
 Questo codice precedente imposta il sistema di Coordinate internazionali di Unity per tenere traccia del [frame di riferimento fisso](../../../design/coordinate-systems.md#spatial-coordinate-systems). Nella modalità di rilevamento fisso, il contenuto inserito nell'editor immediatamente davanti alla posizione predefinita della fotocamera (avanti è-Z) viene visualizzato davanti all'utente all'avvio dell'app. Per ricentrare l'origine di seduta dell'utente, è possibile chiamare XR di Unity [. Metodo InputTracking. recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html) .
 
-Se si sta effettuando il porting di un'esperienza di **scalabilità permanente** o di **scalabilità** in modalità locale, il contenuto verrà inserito in relazione al pavimento. Si ragiona sul pavimento dell'utente usando la **[fase spaziale](../../../design/coordinate-systems.md#spatial-coordinate-systems)** , che rappresenta l'origine di livello del piano definita dall'utente e il limite di spazio facoltativo, configurato durante la prima esecuzione. Per queste esperienze è necessario assicurarsi che Unity sia impostato sul tipo di spazio di rilevamento **RoomScale** . Anche se RoomScale è il valore predefinito, è consigliabile impostarlo in modo esplicito e assicurarsi di tornare a true per individuare le situazioni in cui l'utente ha spostato il computer dalla stanza in cui è stato calibrato:
+Se si sta effettuando il porting di un'esperienza di **scalabilità permanente** o di **scalabilità** in modalità locale, il contenuto verrà inserito in relazione al pavimento. Si ragiona sul pavimento dell'utente usando la **[fase spaziale](../../../design/coordinate-systems.md#spatial-coordinate-systems)**, che rappresenta l'origine di livello del piano definita dall'utente e il limite di spazio facoltativo, configurato durante la prima esecuzione. Per queste esperienze è necessario assicurarsi che Unity sia impostato sul tipo di spazio di rilevamento **RoomScale** . Anche se RoomScale è il valore predefinito, è consigliabile impostarlo in modo esplicito e assicurarsi di tornare a true per individuare le situazioni in cui l'utente ha spostato il computer dalla stanza in cui è stato calibrato:
 
 ```cs
 if (XRDevice.SetTrackingSpaceType(TrackingSpaceType.RoomScale))
@@ -95,9 +95,6 @@ L'algoritmo si basa su un Blog di Daniel smilkov: [rettangolo più grande in un 
 
 Ogni gioco o applicazione destinata a un HMD esistente avrà un set di input che gestisce, i tipi di input necessari per l'esperienza e le API specifiche che chiama per ottenere tali input. Abbiamo investito nel tentativo di renderlo il più semplice e semplice possibile per sfruttare i vantaggi degli input disponibili nella realtà mista di Windows.
 1. Per informazioni dettagliate sul modo in cui la realtà mista di Windows espone l'input e su come eseguire questa operazione, vedere la **Guida al porting di input per Unity** nella scheda adiacente.
-2. Scegliere se utilizzare l'API di input cross-VR-SDK di Unity o l'API di input specifica del sig. Le API di input. GetButton/input. getaxis generale vengono usate attualmente dalle app di Unity VR per l'input [Oculus](https://docs.unity3d.com/Manual/OculusControllers.html) e l' [input OpenVR](https://docs.unity3d.com/Manual/OpenVRControllers.html). Se le app usano già queste API per i controller di movimento, questo è il percorso più semplice: è necessario solo modificare il mapping di pulsanti e assi nel gestore di input.
-    * È possibile accedere ai dati di motion controller in Unity usando le API General Cross-VR-SDK input. GetButton/input. getaxis o le API UnityEngine. XR. WSA. input specifiche di MR. (in precedenza nello spazio dei nomi UnityEngine. XR. WSA. input in Unity 5,6)
-    * Vedere l' [esempio nel Toolkit](https://github.com/Microsoft/HoloToolkit-Unity/pull/572) che combina gamepad e controller di movimento.
 
 ### <a name="9-performance-testing-and-tuning"></a>9. test delle prestazioni e ottimizzazione
 
@@ -112,7 +109,13 @@ La realtà mista di Windows sarà disponibile in un'ampia gamma di dispositivi, 
 > [!IMPORTANT]
 > Se si usano i controller di HP Reverb G2, fare riferimento a [questo articolo](../../unity/unity-reverb-g2-controllers.md) per istruzioni aggiuntive sul mapping degli input.
 
-## <a name="general-inputgetbuttongetaxis-apis"></a>Input generale. GetButton/API getaxis
+## <a name="unity-xr-input-apis"></a>API di input di Unity XR
+
+Per i nuovi progetti, è consigliabile usare le nuove API di input XR dall'inizio. 
+
+Altre informazioni sulle [API XR](https://docs.unity3d.com/Manual/xr_input.html)sono disponibili qui.
+
+## <a name="inputgetbuttongetaxis-apis"></a>Input. GetButton/API getaxis
 
 Unity usa attualmente le API input. GetButton/input. getasse generale per esporre l'input per [Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html) e [OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html). Se le app usano già queste API per l'input, questo è il percorso più semplice per supportare i controller di movimento in realtà mista di Windows: è necessario solo modificare il mapping di pulsanti e assi nel gestore di input.
 
@@ -120,10 +123,13 @@ Per altre informazioni, vedere la [tabella di mapping degli assi e dei pulsanti 
 
 ## <a name="windows-specific-xrwsainput-apis"></a>XR specifico di Windows. WSA. API di input
 
+> [!CAUTION]
+> Se il progetto usa uno dei XR. Le API WSA vengono gradualmente eliminate a favore di XR SDK in future versioni di Unity. Per i nuovi progetti, è consigliabile usare XR SDK dall'inizio. Altre informazioni sul [sistema di input e sulle API di XR](https://docs.unity3d.com/Manual/xr_input.html)sono disponibili qui.
+
 Se l'app crea già una logica di input personalizzata per ogni piattaforma, è possibile scegliere di usare le API di input spaziali specifiche di Windows nello spazio dei nomi **UnityEngine. XR. WSA. input** . In questo modo è possibile accedere a informazioni aggiuntive, ad esempio l'accuratezza della posizione o il tipo di origine, consentendo di comunicare le mani e i controller a HoloLens.
 
 > [!NOTE]
-> Se si usano i controller di HP Reverb G2, tutte le API di input continueranno a funzionare ad eccezione di **InteractionSource. supportsTouchpad** , che restituirà false senza dati del touchpad.
+> Se si usano i controller di HP Reverb G2, tutte le API di input continueranno a funzionare ad eccezione di **InteractionSource. supportsTouchpad**, che restituirà false senza dati del touchpad.
 
 Per altre informazioni, vedere la [Panoramica delle API UnityEngine. XR. WSA. input](../../unity/gestures-and-motion-controllers-in-unity.md#windows-specific-apis-xrwsainput).
 
@@ -133,15 +139,15 @@ La realtà mista di Windows supporta i controller di movimento in diversi fattor
 
 Per rappresentare meglio questi controller, esistono due tipi di pose che è possibile esaminare per ogni origine interazione:
 
-* La posizione del **grip** , che rappresenta la posizione della Palma di una mano rilevata da un HoloLens o della palma che contiene un controller di movimento.
-    * Negli auricolari immersivi è consigliabile usare questa soluzione per eseguire **il rendering della mano dell'utente** o di **un oggetto contenuto nella mano** , ad esempio una spada o una pistola.
-    * **Posizione del grip** : il centro della palma quando si tiene il controller in modo naturale, regolato a sinistra o a destra per centrare la posizione all'interno del grip.
-    * L' **asse destro dell'orientamento del grip** : quando si apre completamente la mano per formare una formula a 5 dita piatta, il raggio normale per la Palma (in avanti dal palmo sinistro e viceversa)
-    * **Asse di avanzamento dell'orientamento del grip** : quando si chiude parzialmente la mano (come se si utilizzasse il controller), il raggio che punta "in poi" attraverso il tubo formato dalle dita non Thumb.
-    * **Asse verticale dell'orientamento del grip** : l'asse verso l'alto implicato dalle definizioni di destra e di avanzamento.
-    * È possibile accedere al grip con l'API di input tra fornitori di Unity ( **[XR). InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/Rotation** ) o tramite l'API specifica di Windows ( **SourceState. SourcePose. TryGetPosition/Rotation** , che richiede la richiesta della forma del grip).
+* La posizione del **grip**, che rappresenta la posizione della Palma di una mano rilevata da un HoloLens o della palma che contiene un controller di movimento.
+    * Negli auricolari immersivi è consigliabile usare questa soluzione per eseguire **il rendering della mano dell'utente** o di **un oggetto contenuto nella mano**, ad esempio una spada o una pistola.
+    * **Posizione del grip**: il centro della palma quando si tiene il controller in modo naturale, regolato a sinistra o a destra per centrare la posizione all'interno del grip.
+    * L' **asse destro dell'orientamento del grip**: quando si apre completamente la mano per formare una formula a 5 dita piatta, il raggio normale per la Palma (in avanti dal palmo sinistro e viceversa)
+    * **Asse di avanzamento dell'orientamento del grip**: quando si chiude parzialmente la mano (come se si utilizzasse il controller), il raggio che punta "in poi" attraverso il tubo formato dalle dita non Thumb.
+    * **Asse verticale dell'orientamento del grip**: l'asse verso l'alto implicato dalle definizioni di destra e di avanzamento.
+    * È possibile accedere al grip con l'API di input tra fornitori di Unity (**[XR). InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/Rotation**) o tramite l'API specifica di Windows (**SourceState. SourcePose. TryGetPosition/Rotation**, che richiede la richiesta della forma del grip).
 * Il **puntatore** che rappresenta il suggerimento del controller che punta in poi.
     * Questa posizione è particolarmente utilizzata per Raycast quando si **punta all'interfaccia utente** quando si esegue il rendering del modello di controller.
-    * Attualmente, la posa del puntatore è disponibile solo tramite l'API specifica di Windows ( **sourceState. sourcePose. TryGetPosition/Rotation** , che richiede la posa del puntatore).
+    * Attualmente, la posa del puntatore è disponibile solo tramite l'API specifica di Windows (**sourceState. sourcePose. TryGetPosition/Rotation**, che richiede la posa del puntatore).
 
 Queste coordinate di pose sono tutte espresse in coordinate internazionali di Unity.
