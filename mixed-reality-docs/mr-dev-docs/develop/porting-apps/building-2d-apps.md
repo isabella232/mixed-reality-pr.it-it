@@ -1,19 +1,19 @@
 ---
-title: Aggiornamento delle app UWP 2D per realtà mista
+title: Aggiornamento delle app UWP 2D per la realtà mista di Windows
 description: Questo articolo illustra come aggiornare l'app di piattaforma UWP (Universal Windows Platform) 2D esistente per l'esecuzione in HoloLens e in Windows con cuffie immersive in realtà mista.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: app 2D, UWP, app Flat, HoloLens, auricolare immersivo, modello di app, pulsante indietro, barra delle applicazioni, dpi, risoluzione, scalabilità, porting, HoloLens 1 gen, HoloLens 2, cuffia in realtà mista, cuffia a realtà mista di Windows, migrazione, Windows 10
-ms.openlocfilehash: 4103ee1e5a7169759dfd823b41b5e3fd18011956
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f4dcc022fced0b3e22eb42751dc596e1b334a01a
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677800"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443633"
 ---
-# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>Aggiornamento delle app UWP 2D per realtà mista
+# <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>Aggiornamento delle app UWP 2D per la realtà mista di Windows
 
 La realtà mista di Windows consente a un utente di visualizzare gli ologrammi come se fossero più appropriati, nel mondo fisico o digitale. Al suo nucleo, sia HoloLens che i PC desktop a cui si alleghino gli accessori per auricolari immersivi sono dispositivi Windows 10. Ciò significa che è possibile eseguire quasi tutte le app piattaforma UWP (Universal Windows Platform) (UWP) nell'archivio come app 2D.
 
@@ -51,7 +51,7 @@ Se l'app 2D è stata distribuita nel computer desktop in cui si sta sviluppando 
 
 ## <a name="targeting-both-immersive-headsets-and-hololens"></a>Per gli auricolari immersivi e HoloLens
 
-Congratulazioni. L'app usa ora Windows 10 piattaforma UWP (Universal Windows Platform) (UWP).
+Congratulazioni! L'app usa ora Windows 10 piattaforma UWP (Universal Windows Platform) (UWP).
 
 L'app è ora in grado di essere eseguita sui dispositivi Windows odierni, ad esempio desktop, dispositivi mobili, Xbox, Windows Mixed Reality, cuffie immersive e HoloLens, nonché dispositivi Windows futuri. Tuttavia, per fare in modo che tutti questi dispositivi siano destinati a tutti i dispositivi, è necessario verificare che l'app sia destinata al gruppo di dispositivi Windows. universali.
 
@@ -175,7 +175,7 @@ L' [input vocale](../../design/voice-input.md) è una parte essenziale dell'espe
 
 Quando l'app è in esecuzione, creare un pacchetto dell'app per [inviarla al Microsoft Store](../../distribute/submitting-an-app-to-the-microsoft-store.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Modello di app](../../design/app-model.md)
 * [Puntamento con la testa e commit](../../design/gaze-and-commit.md)
 * [Controller del movimento](../../design/motion-controllers.md)

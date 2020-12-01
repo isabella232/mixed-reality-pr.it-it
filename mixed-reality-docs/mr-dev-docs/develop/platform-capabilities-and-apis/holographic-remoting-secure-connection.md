@@ -1,17 +1,17 @@
 ---
 title: Abilitazione della sicurezza della connessione per la comunicazione remota olografica
 description: Questa pagina illustra come configurare la comunicazione remota olografica per l'uso di connessioni crittografate e autenticate tra Player e app Remote.
-author: markkeinz
-ms.author: makei
-ms.date: 10/29/2020
+author: florianbagarmicrosoft
+ms.author: flbagar
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicazione remota, comunicazione remota olografica, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale, sicurezza, autenticazione, da server a client
-ms.openlocfilehash: 4004c7534092c73fe478130b9d957461bb34bcfa
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: b2c054d19044b89b487331806b8256de1379fd53
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679590"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443457"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Abilitazione della sicurezza della connessione per la comunicazione remota olografica
 
@@ -38,8 +38,11 @@ Sicurezza nella comunicazione remota olografica, quando è configurata correttam
 * **Riservatezza:** nessuna parte di terze parti può leggere le informazioni scambiate tra il lettore e l'app remota
 * **Integrità:** il lettore e il computer remoto possono rilevare eventuali modifiche in transito alla comunicazione
 
->[!TIP]
->Per poter usare le funzionalità di sicurezza, sarà necessario implementare sia un [lettore personalizzato](holographic-remoting-create-player.md) che un' [app remota personalizzata](holographic-remoting-create-host.md).
+>[!IMPORTANT]
+>Per poter usare le funzionalità di sicurezza, è necessario implementare sia un [lettore personalizzato](holographic-remoting-create-player.md) che un'app remota personalizzata usando le API [OpenXR](holographic-remoting-create-remote-openxr.md) o di [realtà mista di Windows](holographic-remoting-create-remote-wmr.md) .
+
+>[!NOTE]
+> A partire dalla versione [2.4.0](holographic-remoting-version-history.md#v2.4.0) è possibile creare app Remote con l' [API OpenXR](../native/openxr.md) . Una panoramica su come stabilire una connessione sicura in un ambiente OpenXR è disponibile di [seguito](#secure-connection-using-the-openxr-api).
 
 ## <a name="planning-the-security-implementation"></a>Pianificazione dell'implementazione della sicurezza
 
@@ -168,8 +171,26 @@ Implementare l' `ICertificateValidator` interfaccia come segue:
 >[!NOTE]
 >Se il caso d'uso richiede una forma diversa di convalida (vedere il caso d'uso del certificato #1 sopra), ignorare completamente la convalida del sistema. Usare invece qualsiasi API o libreria in grado di gestire i certificati X. 509 con codifica DER per decodificare la catena di certificati ed eseguire i controlli necessari per il caso d'uso.
 
+## <a name="secure-connection-using-the-openxr-api"></a>Connessione sicura tramite l'API OpenXR
+
+Quando si usa l'API [OpenXR](../native/openxr.md) , tutte le API correlate alla connessione sicura sono disponibili come parte dell' `XR_MSFT_holographic_remoting` estensione OpenXR.
+
+>[!IMPORTANT]
+>Per informazioni sull'API dell'estensione OpenXR per la comunicazione remota olografica, vedere la [specifica](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html) che si trova nel [repository GitHub degli esempi di comunicazione remota olografica](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+
+Gli elementi chiave per la connessione sicura mediante l' `XR_MSFT_holographic_remoting` estensione OpenXR sono i callback seguenti.
+- `xrRemotingRequestAuthenticationTokenCallbackMSFT`, genera o Recupera il token di autenticazione da inviare.
+- `xrRemotingValidateServerCertificateCallbackMSFT`, convalida la catena di certificati.
+- `xrRemotingValidateAuthenticationTokenCallbackMSFT`, convalida il token di autenticazione del client.
+- `xrRemotingRequestServerCertificateCallbackMSFT`, fornire l'applicazione server con il certificato da utilizzare.
+
+Questi callback possono essere forniti al runtime OpenXR di comunicazione remota tramite `xrRemotingSetSecureConnectionClientCallbacksMSFT` e `xrRemotingSetSecureConnectionServerCallbacksMSFT` . Inoltre, la connessione protetta deve essere abilitata tramite il parametro secureConnection nella `XrRemotingConnectInfoMSFT` struttura o la `XrRemotingListenInfoMSFT` struttura a seconda che si usi `xrRemotingConnectMSFT` o `xrRemotingListenMSFT` .
+
+Questa API è molto simile all'API basata su IDL descritta in [implementazione della sicurezza della comunicazione remota olografica](#implementing-holographic-remoting-security) , ma invece di implementare le interfacce si suppone fornire implementazioni di callback. È possibile trovare un esempio dettagliato come parte dell'app di esempio OpenXR disponibile nel [repository GitHub degli esempi di comunicazione remota olografica](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+
 ## <a name="see-also"></a>Vedere anche
-* [Scrivere un'app remota Holographic Remoting](holographic-remoting-create-host.md)
+* [Scrittura di un'app remota di comunicazione remota olografica usando le API di Windows mixed.](holographic-remoting-create-remote-wmr.md)
+* [Scrittura di un'app remota di comunicazione remota olografica usando le API di OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Scrivere un'app lettore Holographic Remoting personalizzata](holographic-remoting-create-player.md)
 * [Limitazioni e risoluzione dei problemi di comunicazione remota olografica](holographic-remoting-troubleshooting.md)
 * [Condizioni di licenza software per Holographic Remoting](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

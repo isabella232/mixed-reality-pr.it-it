@@ -1,17 +1,17 @@
 ---
 title: Aggiungere la comunicazione remota olografica
 description: Viene illustrato come usare la comunicazione remota olografica per eseguire il rendering degli ologrammi in una HoloLens in rete.
-author: mikeriches
-ms.author: mriches
-ms.date: 05/24/2019
+author: florianbagarmicrosoft
+ms.author: flbagar
+ms.date: 12/01/2020
 ms.topic: article
 keywords: Realtà mista di Windows, ologrammi, comunicazione remota olografica, rendering remoto, rendering di rete, HoloLens, ologrammi remoti, cuffie per realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: ec03a349959f9bde71a2c8a600d513fb21c533a8
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7aafb7a764a062efcca2c5a3cd9f77d4395516a2
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679630"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443645"
 ---
 # <a name="add-holographic-remoting-hololens-1st-gen"></a>Aggiungere la comunicazione remota olografica (HoloLens (1st Gen))
 
@@ -23,7 +23,7 @@ ms.locfileid: "94679630"
 Gli sviluppatori HoloLens che usano la comunicazione remota olografica dovranno aggiornare le proprie app per renderle compatibili con HoloLens 2. Questa operazione richiede una nuova versione del pacchetto NuGet di comunicazione remota olografica. Se un'applicazione che usa il pacchetto NuGet di comunicazione remota olografica con un numero di versione inferiore a 2.0.0.0 tenta di connettersi al lettore di comunicazione remota olografica in HoloLens 2, la connessione avrà esito negativo.
 
 >[!NOTE]
->Le linee guida specifiche per HoloLens 2 sono disponibili [qui](holographic-remoting-create-host.md).
+>Le linee guida specifiche per HoloLens 2 sono disponibili [qui](holographic-remoting-create-remote-wmr.md).
 
 
 ## <a name="add-holographic-remoting-to-your-desktop-or-uwp-app"></a>Aggiungere la comunicazione remota olografica all'app desktop o UWP

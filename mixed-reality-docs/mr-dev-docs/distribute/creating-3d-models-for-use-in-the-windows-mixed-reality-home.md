@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 3D, modellazione, linee guida per la modellazione, requisiti delle risorse, linee guida per la creazione, avvio, avvio 3D, trama, materiali, complessità, triangoli, mesh, poligoni, policount, limiti, cuffie per realtà mista, cuffie per la realtà mista, auricolare di realtà virtuale
-ms.openlocfilehash: fb2f2718497781a2d38a0a061016e146ff077488
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 6baf8bd4faf6bb9994806e846602c91b83a1530b
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703467"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443656"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>Creare modelli 3D per l'uso nello spazio iniziale
 
@@ -60,7 +60,7 @@ La Home realtà mista di Windows non supporta i modelli con più di 10.000 trian
 ### <a name="node-counts-and-submesh-limits"></a>Conteggi dei nodi e limiti di sottomesh
 La Home realtà mista di Windows non supporta i modelli con più di 64 nodi o sottomesh 32 per LOD. I nodi sono un concetto nella [specifica glTF](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy) che definiscono gli oggetti nella scena. Le sottomesh sono definite nella matrice di [primitive](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes) sulla mesh nell'oggetto. 
 
-|  Funzionalità |  Descrizione  |  Massimo supportato | Documentazione |
+|  Feature |  Descrizione  |  Massimo supportato | Documentazione |
 |------|------|------|------|
 |  Nodi |  Oggetti nella scena glTF |  64 per LOD | [Qui](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy)|
 |  Sottomesh |  Somma delle primitive in tutte le mesh |  32 per LOD | [Qui](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes)|
@@ -97,6 +97,9 @@ Indica allo shader se qualcosa è metal o no. Raw Metal = 1,0 bianco non metal =
 ## <a name="optimizations"></a>Ottimizzazioni
 
 La Home realtà mista di Windows offre una serie di ottimizzazioni oltre alla specifica glTF di base definita con estensioni personalizzate. Queste ottimizzazioni sono necessarie nelle versioni di Windows <= 1709 e consigliate nelle versioni più recenti di Windows. È possibile ottimizzare facilmente qualsiasi modello glTF 2,0 usando il [convertitore di asset per la realtà mista di Windows disponibile su GitHub](https://github.com/Microsoft/glTF-Toolkit/releases). Questo strumento esegue le ottimizzazioni e la compressione delle trame corrette come specificato di seguito. Per un utilizzo generale è consigliabile usare WindowsMRAssetConverter, ma se è necessario un maggiore controllo sull'esperienza e si vuole creare una pipeline di ottimizzazione personalizzata, è possibile fare riferimento alla specifica dettagliata riportata di seguito.  
+
+> [!NOTE]
+> Per un elenco definitivo delle possibilità per i limiti di modello esatti, vedere l'articolo relativo all' [ottimizzazione del modello 3D](https://docs.microsoft.com/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) da usare nelle applicazioni Dynamics 365.
 
 ### <a name="materials"></a>Materiali
 
@@ -235,7 +238,7 @@ Dopo aver apportato le modifiche al modello glTF, è possibile salvarlo direttam
 ### <a name="restrictions"></a>Restrizioni
 Le animazioni non possono essere più lunghe di 20 minuti e non possono contenere più di 36.000 fotogrammi chiave (20 minuti a 30 FPS). Inoltre, quando si usano le animazioni basate su morph target, non devono superare 8192 vertici di destinazione morph o meno. Il superamento di questi conteggi farà sì che l'asset animato non sia supportato nella Home realtà mista di Windows. 
 
-|Funzionalità|Massimo|
+|Feature|Massimo|
 |-----|-----|
 |Duration|20 minuti|
 |KeyFrames|36.000| 
@@ -277,7 +280,7 @@ Windows non supporta le linee e i punti della modalità primitive.
 * [HoloLens Mixed Reality texture Packaging Extensions Specification](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_normalRoughnessMetallic/README.md)
 * [Specifica delle estensioni di Microsoft DDS Textures glTF](https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/MSFT_texture_dds)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Implementare utilità di avvio per app 3D (app UWP)](implementing-3d-app-launchers.md)
 * [Implementare utilità di avvio per app 3D (app Win32)](implementing-3d-app-launchers-win32.md)

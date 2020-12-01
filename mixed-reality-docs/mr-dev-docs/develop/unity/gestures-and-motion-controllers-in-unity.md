@@ -1,23 +1,29 @@
 ---
 title: Movimenti e controller del movimento in Unity
 description: Informazioni su come intervenire sullo sguardo in Unity con i movimenti della mano e i controller di movimento.
-author: thetuvix
+author: hferrone
 ms.author: alexturn
-ms.date: 03/21/2018
+ms.date: 12/1/2020
 ms.topic: article
 keywords: movimenti, controller di movimento, Unity, sguardo, input, cuffie per realtà mista, cuffie di realtà mista di Windows, cuffie per realtà virtuale, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: e1a2ae10638bb8dbd35eed7e9a0a1d2a05181f0c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 122642bb7fc561e505098bca00b8bf65bfd4552e
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678650"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443583"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Movimenti e controller del movimento in Unity
 
 Ci sono due modi principali per agire sullo [sguardo in Unity](gaze-in-unity.md), [movimenti della mano](../../design/gaze-and-commit.md#composite-gestures) e [controller di movimento](../../design/motion-controllers.md) in HoloLens e HMD immersivi. È possibile accedere ai dati per entrambe le origini dell'input spaziale tramite le stesse API in Unity.
 
 Unity offre due modi principali per accedere ai dati di input spaziali per la realtà mista di Windows, le API *input. GetButton/input. getaxis* comuni che funzionano su più SDK di Unity XR e un'API *InteractionManager/GestureRecognizer* specifica della realtà mista di Windows che espone il set completo di dati di input spaziali disponibili.
+
+## <a name="unity-xr-input-apis"></a>API di input di Unity XR
+
+Per i nuovi progetti, è consigliabile usare le nuove API di input XR dall'inizio. 
+
+Altre informazioni sulle [API XR](https://docs.unity3d.com/Manual/xr_input.html)sono disponibili qui.
 
 ## <a name="unity-buttonaxis-mapping-table"></a>Pulsante Unity/tabella di mapping asse
 
@@ -146,9 +152,9 @@ Le app che desiderano gestire le posizioni in modo diverso in base allo stato di
 <tr>
 <th> Stato di rilevamento </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>Accuratezza elevata</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Alta </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Accuratezza elevata</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Alto </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Accuratezza elevata (a rischio di perdita)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Alta </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Accuratezza elevata (a rischio di perdita)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Alto </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>Accuratezza approssimativa</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Con approssimazione </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -213,6 +219,9 @@ Si noti che questo rappresenta la posizione del grip del controller (dove l'uten
 Si noti che la relazione tra la posizione del grip e la posizione del puntatore (dove la punta del controller sta puntando) può variare tra i controller. Al momento, l'accesso alla posizione del puntatore del controller è possibile solo tramite l'API di input specifica del sig, descritta nelle sezioni riportate di seguito.
 
 ## <a name="windows-specific-apis-xrwsainput"></a>API specifiche di Windows (XR. WSA. Input
+
+> [!CAUTION]
+> Se il progetto usa uno dei XR. Le API WSA vengono gradualmente eliminate a favore di XR SDK in future versioni di Unity. Per i nuovi progetti, è consigliabile usare XR SDK dall'inizio. Altre informazioni sul [sistema di input e sulle API di XR](https://docs.unity3d.com/Manual/xr_input.html)sono disponibili qui.
 
 **Spazio dei nomi:** *UnityEngine. XR. WSA. input*<br>
 **Tipi**: *InteractionManager*, *InteractionSourceState*, *InteractionSource*, *InteractionSourceProperties*, *InteractionSourceKind*, *InteractionSourceLocation*

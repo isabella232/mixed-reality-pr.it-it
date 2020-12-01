@@ -3,20 +3,20 @@ title: Holographic Remoting Player
 description: Il lettore di comunicazione remota olografico è un'app complementare che si connette a app e giochi per PC che supportano la comunicazione remota olografica. La comunicazione remota olografica trasmette contenuto olografico da un PC a Microsoft HoloLens in tempo reale, usando una connessione Wi-Fi.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicazione remota, comunicazione remota olografica, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale, diagnostica, prestazioni
-ms.openlocfilehash: c65b10079ffbc40602ebbd25b1e493c19b2a6078
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 990143a6d0c51f5f817ca0636573c3479a7e1682
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677930"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443618"
 ---
 # <a name="holographic-remoting-player"></a>Holographic Remoting Player
 
 >[!IMPORTANT]
->La comunicazione remota olografica per HoloLens 2 è una modifica di versione principale. [Le applicazioni remote per **HoloLens (1st Gen)**](add-holographic-remoting.md) devono usare il pacchetto NuGet versione **1. x.** x e [le applicazioni remote per **HoloLens 2**](holographic-remoting-create-host.md) devono usare **2. x. x**. Ciò implica che le applicazioni remote scritte per HoloLens 2 non sono compatibili con HoloLens (1a generazione) e viceversa.
+>La comunicazione remota olografica per HoloLens 2 è una modifica di versione principale. [Le applicazioni remote per **HoloLens (1st Gen)**](add-holographic-remoting.md) devono usare il pacchetto NuGet versione **1. x.** x e [le applicazioni remote per **HoloLens 2**](holographic-remoting-create-remote-wmr.md) devono usare **2. x. x**. Ciò implica che le applicazioni remote scritte per HoloLens 2 non sono compatibili con HoloLens (1a generazione) e viceversa.
 
 Il [lettore di comunicazione remota olografico](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40) è un'app complementare che si connette a app e giochi per PC che supportano la comunicazione remota olografica. La comunicazione remota olografica trasmette contenuto olografico da un PC a Microsoft HoloLens in tempo reale, usando una connessione Wi-Fi.
 
@@ -26,6 +26,9 @@ Il lettore di comunicazione remota olografico è disponibile sia per HoloLens (1
 
 >[!TIP]
 >A partire dalla versione [2.2.0](holographic-remoting-version-history.md#v2.2.0) , il lettore di comunicazione remota olografico è disponibile anche per i PC Windows che eseguono la [realtà mista Windows](../../discover/navigating-the-windows-mixed-reality-home.md).
+
+>[!TIP]
+>A partire dalla versione [2.4.0](holographic-remoting-version-history.md#v2.4.0) è possibile creare app Remote con l' [API OpenXR](../native/openxr.md) . Per iniziare, vedere [scrittura di un'app remota di comunicazione remota olografica usando le API di OpenXR](holographic-remoting-create-remote-openxr.md).
 
 ## <a name="connecting-to-the-holographic-remoting-player"></a>Connessione al lettore di comunicazione remota olografica
 
@@ -78,6 +81,7 @@ Nella schermata principale è possibile **disabilitare** la diagnostica per disa
 
 ## <a name="see-also"></a>Vedere anche
 * [HoloLens (1a generazione): aggiungere la comunicazione remota olografica](add-holographic-remoting.md)
-* [HoloLens 2: scrittura di un'app remota di comunicazione remota olografica](holographic-remoting-create-host.md)
+* [Scrittura di un'app remota di comunicazione remota olografica usando le API di Windows mixed.](holographic-remoting-create-remote-wmr.md)
+* [Scrittura di un'app remota di comunicazione remota olografica usando le API di OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Condizioni di licenza software per Holographic Remoting](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Informativa sulla privacy di Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

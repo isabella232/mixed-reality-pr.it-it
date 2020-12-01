@@ -3,15 +3,15 @@ title: Limitazioni e risoluzione dei problemi di comunicazione remota olografica
 description: Procedura di risoluzione dei problemi per la comunicazione remota olografica in HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: Realtà mista di Windows, ologrammi, comunicazione remota olografica, rendering remoto, rendering di rete, HoloLens, ologrammi remoti, risoluzione dei problemi, guida, cuffie per realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 9577f9f028987be71fdb9cd839f86980db350f02
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: ca0e4b3a43eae5be09f2c0bfbee9056cd847787c
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679580"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443600"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Risoluzione dei problemi di comunicazione remota olografica
 
@@ -105,7 +105,8 @@ Le API seguenti **non** sono attualmente supportate quando si usa la comunicazio
 
 ## <a name="see-also"></a>Vedere anche
 * [Cronologia delle versioni remota olografica](holographic-remoting-version-history.md)
-* [Scrivere un'app remota Holographic Remoting](holographic-remoting-create-host.md)
+* [Scrittura di un'app remota di comunicazione remota olografica usando le API di Windows mixed.](holographic-remoting-create-remote-wmr.md)
+* [Scrittura di un'app remota di comunicazione remota olografica usando le API di OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Scrivere un'app lettore Holographic Remoting personalizzata](holographic-remoting-create-player.md)
 * [Condizioni di licenza software per Holographic Remoting](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Informativa sulla privacy di Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

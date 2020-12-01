@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Realtà mista, conferenza, Summit, sviluppatore, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 6f673c78004f94692fcb09d304d6d40d2f97f1c3
-ms.sourcegitcommit: 893d7df2df66316e881dfba578a2810c203d9aa3
+ms.openlocfilehash: c0111c03d2350627106a53af7c1e04d448a08fe6
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94941857"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443487"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Giappone
 
@@ -95,13 +95,13 @@ Se per qualche motivo non è possibile accedere ai team, controllare il canale Y
 
 ### <a name="code-of-conduct"></a>Codice di comportamento 
 
-**_La missione di Microsoft consiste nel consentire a ogni persona e ogni organizzazione del mondo di ottenere maggiori risultati. Sono inclusi tutti gli eventi e le raccolte Microsoft, tra cui le piattaforme digitali, in cui si cerca di creare un'esperienza intuitiva, intuitiva, piacevole e intuitiva per tutti i partecipanti._* _  
+L'obiettivo principale di Microsoft è quello di offrire a ogni utente e organizzazione i mezzi necessari a ottenere risultati sempre migliori. Sono inclusi tutti gli eventi e le raccolte Microsoft, tra cui le piattaforme digitali, in cui si cerca di creare un'esperienza intuitiva, intuitiva, piacevole e intuitiva per tutti i partecipanti.
 
-_*_Si prevede che tutti i partecipanti agli eventi digitali rispettino i principi di questo codice di comportamento, che copre l'evento digitale principale e tutte le attività correlate. Il comportamento, i messaggi, le immagini o le interazioni non sono tollerati da qualsiasi partecipante di terze parti, in qualsiasi forma, in qualsiasi aspetto del programma, incluse le attività aziendali e sociali, indipendentemente dalla posizione. Microsoft non tollererà molestie o discriminazioni basate su età, ascendenza, colore, identità del sesso o espressione, origine nazionale, disabilità fisica o mentale, religione, orientamento sessuale o qualsiasi altra caratteristica protetta da leggi locali, normative e ordinamenti applicabili._*_  
+Si prevede che tutti i partecipanti agli eventi digitali rispettino i principi di questo codice di comportamento, che copre l'evento digitale principale e tutte le attività correlate. Il comportamento, i messaggi, le immagini o le interazioni non sono tollerati da qualsiasi partecipante di terze parti, in qualsiasi forma, in qualsiasi aspetto del programma, incluse le attività aziendali e sociali, indipendentemente dalla posizione. Microsoft non tollererà molestie o discriminazioni basate su età, ascendenza, colore, identità del sesso o espressione, origine nazionale, disabilità fisica o mentale, religione, orientamento sessuale o qualsiasi altra caratteristica protetta da leggi locali, normative e ordinamenti applicabili.  
 
-_*_La fotografia, il video o la registrazione del contenuto della sessione o delle presentazioni in qualsiasi formato condiviso nei canali sociali è vietato. Invitiamo tutti gli utenti a contribuire alla creazione di un ambiente accogliente e sicuro. Segnala eventuali preoccupazioni, comportamenti molesti, sospetti o attività di disturbo per la hotline di condotta aziendale (1-877-320-MSFT o [buscond@microsoft.com](mailto:buscond@microsoft.com) ). Microsoft si riserva il diritto di rifiutare l'ammissione o rimuovere qualsiasi persona da giorni di sviluppo di realtà mista in qualsiasi momento a sua esclusiva discrezione._*_  
+La fotografia, il video o la registrazione del contenuto della sessione o delle presentazioni in qualsiasi formato condiviso nei canali sociali è vietato. Invitiamo tutti gli utenti a contribuire alla creazione di un ambiente accogliente e sicuro. Segnala eventuali preoccupazioni, comportamenti molesti, sospetti o attività di disturbo per la hotline di condotta aziendale (1-877-320-MSFT o [buscond@microsoft.com](mailto:buscond@microsoft.com) ). Microsoft si riserva il diritto di rifiutare l'ammissione o rimuovere qualsiasi persona da giorni di sviluppo di realtà mista in qualsiasi momento a sua esclusiva discrezione. 
 
-_ Invitiamo *_tutti a comportarsi responsabilmente all'interno dell'ambiente immersivo AltspaceVR come si farebbe per qualsiasi evento in-person. Rispettare lo spazio di altri utenti e non bloccare la visualizzazione di altri partecipanti della fase quando si partecipa all'evento.  Tenere presente che, come qualsiasi evento in-person, qualsiasi altro utente possa essere sentito da altri utenti nell'evento, se è necessario avere una conversazione privata, è consigliabile passare a un altro spazio all'interno di AltspaceVR, ad esempio la Home page di AltspaceVR_**
+Invitiamo tutti a comportarsi responsabilmente all'interno dell'ambiente immersivo AltspaceVR come si farebbe per qualsiasi evento in-person. Rispettare lo spazio di altri utenti e non bloccare la visualizzazione di altri partecipanti della fase quando si partecipa all'evento.  Tenere presente che, come qualsiasi evento in-person, qualsiasi altro utente possa essere sentito da altri utenti nell'evento, se è necessario disporre di una conversazione privata, si consiglia di portarlo in un altro spazio all'interno di AltspaceVR, ad esempio la Home page di AltspaceVR.
 
 
 
