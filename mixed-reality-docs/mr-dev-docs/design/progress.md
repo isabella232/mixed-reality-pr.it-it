@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, controlli, interfaccia utente, UX, indicatore di stato, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 93cdd7054c05af9f8621e091fa3d4b59d9e65ee3
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: aa74ae1bf9dae9831743aeaf6ce18df196784ded
+ms.sourcegitcommit: bec6029b2780c54cc04a45ef7ae5df3f5b4727c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703387"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96470513"
 ---
 # <a name="progress-indicator"></a>Indicatore di stato
 
@@ -90,7 +90,7 @@ Un controllo di stato fornisce all'utente un feedback nel caso in cui sia in cor
 
 ## <a name="progress-indicator-in-mrtk-mixed-reality-toolkit-for-unity"></a>Indicatore di stato in MRTK (Mixed Reality Toolkit) per Unity
 
-* [MRTK-prefabbricati indicatore di stato](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/ProgressIndicators)
+* [MRTK-prefabbricati indicatore di stato](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MRTK/SDK/Features/UX/Prefabs/ProgressIndicators)
 * [MRTK-servizio di transizione della scena](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Extensions/SceneTransitionService/SceneTransitionServiceOverview.html)
 
 
@@ -98,7 +98,7 @@ Un controllo di stato fornisce all'utente un feedback nel caso in cui sia in cor
 
 ---
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

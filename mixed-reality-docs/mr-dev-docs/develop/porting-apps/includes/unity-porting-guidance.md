@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: bf6b98eca850d2b280e7a016799c4287955159a6
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 487118403c2a8af1a6b54bc9aa9245fbe9d0568a
+ms.sourcegitcommit: bec6029b2780c54cc04a45ef7ae5df3f5b4727c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443677"
+ms.locfileid: "96478548"
 ---
 # <a name="project-settings"></a>[Impostazioni del progetto](#tab/project)
 
@@ -94,7 +94,8 @@ L'algoritmo si basa su un Blog di Daniel smilkov: [rettangolo più grande in un 
 ### <a name="8-work-through-your-input-model"></a>8. utilizzare il modello di input
 
 Ogni gioco o applicazione destinata a un HMD esistente avrà un set di input che gestisce, i tipi di input necessari per l'esperienza e le API specifiche che chiama per ottenere tali input. Abbiamo investito nel tentativo di renderlo il più semplice e semplice possibile per sfruttare i vantaggi degli input disponibili nella realtà mista di Windows.
-1. Per informazioni dettagliate sul modo in cui la realtà mista di Windows espone l'input e su come eseguire questa operazione, vedere la **Guida al porting di input per Unity** nella scheda adiacente.
+
+Per informazioni dettagliate sul modo in cui la realtà mista di Windows espone l'input e su come eseguire questa operazione, vedere la [Guida al porting di input per Unity](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-guides?tabs=input) nella scheda adiacente.
 
 ### <a name="9-performance-testing-and-tuning"></a>9. test delle prestazioni e ottimizzazione
 
