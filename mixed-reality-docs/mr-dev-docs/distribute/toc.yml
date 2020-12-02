@@ -1,4 +1,5 @@
-# - name: Overview 
+- name: Panoramica
+  href: distribute-overview.md
 - name: Launcher di app 3D
   items:
     - name: Indicazioni per la progettazione
