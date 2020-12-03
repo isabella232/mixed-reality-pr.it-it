@@ -8,13 +8,15 @@
   href: install-the-tools.md
 - name: Conversione di app
   items:
-    - name: Preparare un'app esistente per HoloLens 2
-      href: unity/mrtk-porting-guide.md
-    - name: Guida alla conversione per le app Immersive
+    - name: Panoramica della conversione
+      href: porting-apps/porting-overview.md
+    - name: Conversione di app HoloLens (prima generazione) in HoloLens 2
+      href: porting-apps/porting-hl1-hl2.md
+    - name: Conversione di app VR in Windows Mixed Reality
       href: porting-apps/porting-guides.md
-    - name: Aggiornamento per SteamVR
+    - name: Aggiornamento di app SteamVR per Windows Mixed Reality
       href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
-    - name: Aggiornamento di app UWP 2D per la realtà mista
+    - name: Aggiornamento di app UWP 2D per Windows Mixed Reality
       href: porting-apps/building-2d-apps.md
 - name: Unity
   items:
@@ -26,8 +28,6 @@
           href: unity/mrtk-getting-started.md
         - name: Configurare un progetto Unity per Windows Mixed Reality
           href: unity/configure-unity-project.md
-        - name: Preparare un'app esistente per HoloLens 2
-          href: unity/mrtk-porting-guide.md
     - name: Esercitazioni
       items:
         - name: Panoramica
@@ -399,7 +399,11 @@
         - name: Holographic Remoting Player
           href: platform-capabilities-and-apis/holographic-remoting-player.md
         - name: Scrivere un'app remota Holographic Remoting
-          href: platform-capabilities-and-apis/holographic-remoting-create-host.md
+          items:
+            - name: API HolographicSpace
+              href: platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md
+            - name: API di OpenXR
+              href: platform-capabilities-and-apis/holographic-remoting-create-remote-openxr.md
         - name: Scrivere un'app lettore Holographic Remoting personalizzata
           href: platform-capabilities-and-apis/holographic-remoting-create-player.md
         - name: Canali di dati di Holographic Remoting personalizzati
