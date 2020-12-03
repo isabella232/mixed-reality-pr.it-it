@@ -3,22 +3,40 @@ title: Panoramica di apprendimento della realtà mista
 description: Vedere i moduli di Learn relativi alla realtà mista.
 author: hferrone
 ms.author: jemccull
-ms.date: 10/28/2020
+ms.date: 11/30/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, apprendimento, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, traduzione, Azure, servizi cognitivi di Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 70114e25003368263c6e2fecad5a4fe8e2f96de0
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: e6c1cc878558c5ce74be7018f6d59cbfc4bcd09a
+ms.sourcegitcommit: 83d0aa2c9a626a203b25de30d8ae9da8585d05ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678090"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96324198"
 ---
 # <a name="mixed-reality-learning-overview"></a>Panoramica di apprendimento della realtà mista
 
 Durante lo sviluppo di soluzioni per la realtà mista, maggiore è il numero di strumenti disponibili, meglio è. Sebbene la documentazione e le esercitazioni scritte siano fondamentali, gli sviluppatori con maggiori capacità di apprendimento a livello visivo potranno avvalersi dei contenuti video disponibili in Microsoft Learn. Poiché vengono costantemente aggiunti nuovi moduli, è opportuno verificare ogni volta se sono presenti altri aggiornamenti.
 
 I moduli di Learn offrono l'opportunità di diventare sviluppatori esperti di soluzioni di realtà mista, fornendo una struttura basata su moduli che permette di iniziare a usare strumenti chiave come Mixed Reality Toolkit, Unity e i servizi di Realtà mista di Azure. Con la definizione degli obiettivi di apprendimento e dei requisiti e l'impostazione dell'intervallo di tempo previsto per il completamento in un'unica interfaccia, l'uso di Hello World è più facile che mai. È possibile iniziare subito a usare i moduli di Learn relativi alla realtà mista o guardare il [video](https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Microsoft-Learn) introduttivo a Microsoft Learn.
+
+## <a name="general-modules"></a>Moduli generali
+
+Se si vogliono scoprire le nozioni di base della realtà mista o non si è ancora scelto un percorso di sviluppo, è possibile iniziare dai moduli di apprendimento indipendenti dalla tecnologia.
+
+### <a name="introduction-to-mixed-reality"></a>[Introduzione alla realtà mista](https://docs.microsoft.com/learn/modules/intro-to-mixed-reality/)
+
+Creare una base comprendente i concetti principali, la terminologia e i processi di progettazione specifici per lo spazio di sviluppo della realtà mista.
+
+**Obiettivi di apprendimento**
+
+Al termine del modulo, si sarà in grado di:
+
+* Definire la realtà mista e distinguere tra realtà virtuale e realtà aumentata
+* Descrivere le idee principali alla base degli ologrammi
+* Iniziare a progettare e sviluppare applicazioni 3D
+* Comprendere l'importanza della realtà mista per le app reali
+* Sfruttare le potenzialità del cloud per la realtà mista
 
 ## <a name="unity-modules"></a>Moduli Unity
 
@@ -28,7 +46,9 @@ Per qualsiasi sviluppatore, sia principiante che professionista esperto, l'appro
 
 Importare Mixed Reality Toolkit nel progetto Unity per accelerare lo sviluppo di realtà mista.
 
-**Obiettivi di apprendimento** Al termine di questo modulo, sarà possibile:
+**Obiettivi di apprendimento**
+
+Al termine del modulo, si sarà in grado di:
 
 * Configurare Unity per lo sviluppo con Windows Mixed Reality
 * Importare il pacchetto MRTK (Mixed Reality Toolkit) Foundation in Unity
@@ -40,7 +60,9 @@ Importare Mixed Reality Toolkit nel progetto Unity per accelerare lo sviluppo di
 
 Creare un'applicazione di traduzione della lingua per un dispositivo di realtà mista (Windows Mixed Reality, HoloLens 2 e così via) usando Servizi cognitivi.
 
-**Obiettivi di apprendimento** Al termine di questo modulo, sarà possibile:
+**Obiettivi di apprendimento**
+
+Al termine del modulo, si sarà in grado di:
 
 * Configurare un progetto Unity per il servizio Voce in Servizi cognitivi di Azure
 * Integrare il servizio Voce con un'applicazione di Windows Mixed Reality

@@ -7,18 +7,21 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, ancoraggi nello spazio, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 3ce83160f745fc48f082776caa3cfa87d23a1844
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 8be1521d44a9dda521c1570d3ac55955e475bc30
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678830"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354502"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Ancoraggi nello spazio locali in Unreal
 
 ## <a name="overview"></a>Panoramica
 
 Gli ancoraggi nello spazio consentono di salvare gli ologrammi nel mondo reale in più sessioni dell'applicazione. Questi vengono esposti tramite Unreal come oggetti **ARPin** e salvati nell'archivio degli ancoraggi di HoloLens che viene caricato nelle sessioni future. Gli ancoraggi locali sono ideali come fallback in assenza di connettività Internet.
+
+> [!NOTE]
+> Le funzioni di ancoraggio di UE 4.25 sono obsolete nella versione 4.26 e devono essere sostituite con funzioni più recenti. 
 
 > [!IMPORTANT]
 > Gli ancoraggi locali vengono archiviati nel dispositivo, mentre i dati relativi ad Ancoraggi nello spazio di Azure vengono archiviati nel cloud. Se si vuole usare i servizi cloud di Azure per archiviare gli ancoraggi, è disponibile un documento che fornisce informazioni dettagliate sull'integrazione di [Ancoraggi nello spazio di Azure](unreal-azure-spatial-anchors.md). Si noti che è possibile includere ancoraggi locali e ancoraggi di Azure nello stesso progetto senza che si verifichino conflitti.
@@ -27,13 +30,13 @@ Gli ancoraggi nello spazio consentono di salvare gli ologrammi nel mondo reale i
 
 Prima di salvare o caricare gli ancoraggi, verifica che l'archivio degli ancoraggi sia pronto.  Se chiami una delle funzioni di ancoraggio di HoloLens prima che l'archivio degli ancoraggi sia pronto, la chiamata avrà esito negativo.  
 
-![Archivio di ancoraggi nello spazio pronto](images/unreal-spatialanchors-store-ready.PNG)
+[!INCLUDE[](includes/tabs-sa-1.md)]
 
 ## <a name="saving-anchors"></a>Salvataggio degli ancoraggi
 
 Quando l'applicazione dispone di un componente che deve essere aggiunto al mondo reale, può salvarlo nell'archivio di ancoraggio con la sequenza illustrata di seguito: 
 
-![Salvataggio degli ancoraggi nello spazio](images/unreal-spatialanchors-save.PNG)
+[!INCLUDE[](includes/tabs-sa-2.md)]
 
 Operazioni da eseguire:
 1. Genera un attore in una posizione nota.
@@ -47,7 +50,7 @@ Operazioni da eseguire:
 
 Quando un'applicazione viene avviata, puoi usare il progetto seguente per ripristinare i componenti nelle rispettive posizioni di ancoraggio:
 
-![Caricamento degli ancoraggi nello spazio](images/unreal-spatialanchors-load.PNG)
+[!INCLUDE[](includes/tabs-sa-3.md)]
 
 Operazioni da eseguire:
 1. Esegui l'iterazione di tutti gli ancoraggi nell'archivio degli ancoraggi. 
@@ -62,7 +65,7 @@ Eseguiamo anche una query sull'ID di ancoraggio, in modo che sia possibile gener
 
 Terminate le operazioni su un ancoraggio, puoi eliminare singoli ancoraggi o l'intero archivio degli ancoraggi con i componenti **Remove ARPin from WMRAnchor Store** (Rimuovi ARPin dall'archivio WMRAnchor) e **Remove All ARPins from WMRAnchor Store** (Rimuovi tutti gli ARPin dall'archivio WMRAnchor).
 
-![Rimozione degli ancoraggi nello spazio](images/unreal-spatialanchors-remove.PNG)
+[!INCLUDE[](includes/tabs-sa-4.md)]
 
 > [!NOTE]
 > Tieni presente che gli ancoraggi spaziali sono ancora in versione beta, quindi visualizza di nuovo questa pagina in futuro per verificare se sono presenti informazioni e funzionalità aggiornate.

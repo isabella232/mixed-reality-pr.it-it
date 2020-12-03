@@ -7,18 +7,21 @@ ms.date: 07/01/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, sviluppo di azure, ancoraggi nello spazio, realtà mista, sviluppo, funzionalità, nuovo progetto, emulatore, documentazione, guide, ologrammi, sviluppo di giochi, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 05a4b221961fa9b3a150eb8ef9f8bd2f77f5b955
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: b464292b606f6c375fe84a50867cac770cd8f001
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679870"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354549"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Ancoraggi nello spazio di Azure in Unreal
 
 ## <a name="overview"></a>Panoramica
 
 Ancoraggi nello spazio di Azure è un servizio di Realtà mista di Microsoft che consente ai dispositivi di realtà aumentata di individuare, condividere e salvare in modo permanente i punti di ancoraggio nel mondo fisico. La documentazione seguente fornisce istruzioni utili per l'integrazione del servizio Ancoraggi nello spazio di Azure in un progetto Unreal. Per altre informazioni, vedere il [servizio Ancoraggi nello spazio di Azure](https://azure.microsoft.com/services/spatial-anchors/).
+
+> [!NOTE]
+> Unreal Engine 4.26 è ora dotato di plug-in per il supporto di ARKit e ARCore nel caso in cui la destinazione sia un dispositivo iOS o Android.
 
 > [!IMPORTANT]
 > Gli ancoraggi locali vengono archiviati nel dispositivo, mentre i dati relativi ad Ancoraggi nello spazio di Azure vengono archiviati nel cloud. Se si vuole archiviare gli ancoraggi in locale in un dispositivo, è disponibile il documento [Ancoraggi nello spazio locali](unreal-spatial-anchors.md) che fornisce informazioni dettagliate per l'esecuzione del processo. Si noti che è possibile includere ancoraggi locali e ancoraggi di Azure nello stesso progetto senza che si verifichino conflitti.
