@@ -6,14 +6,17 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, HoloLens, cuffie immersive, app, UWP, invio, invio, filtri, metadati, requisiti di sistema, parole chiave, predato, certificazione, pacchetto, appx, merchandising, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: b5d25817afeb2d8d970d329c802b7eaabcdf7f35
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 1d37337279e46e5f0f9d5cea82813af8de9d0f76
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703117"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578900"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Invio di un'app a Microsoft Store
+
+> [!IMPORTANT]
+> Se si sta inviando un'applicazione non reale, assicurarsi di seguire le **[istruzioni di pubblicazione qui](../develop/unreal/unreal-publishing-to-store.md)** prima di continuare.
 
 Sia [HoloLens](../hololens-hardware-details.md) che il PC Windows 10 che alimentano le [cuffie immersive](../discover/immersive-headset-hardware-details.md) eseguono piattaforma UWP (Universal Windows Platform) app. Se si sta inviando un'app che supporta HoloLens, PC o entrambi, l'invio dell'app passa attraverso il centro per i [partner](https://partner.microsoft.com/dashboard).
 

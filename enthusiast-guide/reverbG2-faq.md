@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto tecnico, prestazioni
 appliesto:
 - Windows 10
-ms.openlocfilehash: 7712641bad36b8759b9237abf14593f8c121e81b
-ms.sourcegitcommit: 3eb4c1a79e9173a5c9b6d2284f34c0bceced402c
+ms.openlocfilehash: 0c0bc508772fe32af9edc21ca62ba5e46125fe88
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96501709"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578616"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Domande frequenti su HP Reverb G2
 
@@ -57,6 +57,10 @@ In alcuni casi, durante il processo di ripresa, la scheda video non è in grado 
 ## <a name="my-hp-motion-controller-joystick-will-sometimes-stick-to-one-side"></a>Il joystick di HP Motion controller a volte viene attaccato da un lato
 
 Questo problema è stato corretto deselezionando completamente il joystick fino a quando non viene fatto clic e verrà spostato liberamente.
+
+## <a name="others-state-i-am-very-loud-or-that-my-audio-is-clipping-while-i-am-using-the-microphone-with-some-applications"></a>Gli altri Stati sono molto rumorosi o si sta ritagliando l'audio quando si usa il microfono con alcune applicazioni
+
+I livelli del volume di input vengono impostati automaticamente su 100% quando il microfono di HP Reverb G2 viene riconosciuto per la prima volta da un computer Windows. A causa dei microfoni G2 di qualità elevata, la sensibilità di input è molto più elevata rispetto alle impostazioni predefinite di Windows 10. Si consiglia di impostare il livello di input del microfono di Reverb G2 a partire dal 50% e di scalare verticalmente. Un'impostazione ottimale è specifica dell'utente, soprattutto quando si usano applicazioni che non hanno un'impostazione del microfono "guadagno automatico". Gli esempi di applicazioni con "guadagno automatico" sono Skype, zoom, teams e Cisco WebEx, ma non tutte le applicazioni di telecomunicazioni o di telecomunicazione VR hanno questa funzionalità.
 
 ## <a name="the-mixed-reality-portal-says-cant-run-mixed-reality-on-this-headset-but-this-worked-fine-with-my-previous-wmr-headset"></a>Il portale per la realtà mista indica che "non è possibile eseguire la realtà mista in questo auricolare", ma questa operazione è stata eseguita correttamente con la WMR
 

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/02/2020
 ms.topic: article
 keywords: HoloLens, realtà mista, cuffie immersive, app, UWP, invio, invio, filtri, metadati, requisiti di sistema, parole chiave, predato, certificazione, pacchetto, appx, merchandising
-ms.openlocfilehash: f52109792e174a0b0fbdd9738539b5fc88f190a1
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 4ea60d2111f99924eaa417d4ff6fa8830934588c
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443495"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578880"
 ---
 # <a name="distributing-your-apps"></a>Distribuzione delle app
 
@@ -81,7 +81,7 @@ La possibilità di ottenere le tue app negli utenti o in tutto il mondo è l'asp
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="#additional-scenarios"><strong>Distribuzione Win32 personalizzata</strong></a> (solo per la realtà mista di Windows-vedere di seguito)</td>
+    <td><a href="#additional-scenarios"><strong>Distribuzione Win32 personalizzata</strong></a> (non disponibile per i dispositivi HoloLens: vedere di seguito)</td>
     <td>✔️</td>
     <td>✔️</td>
     <td>❌</td>
@@ -99,7 +99,7 @@ La possibilità di ottenere le tue app negli utenti o in tutto il mondo è l'asp
 
 * È anche possibile distribuire le compilazioni nel dispositivo e condividerle con altri sviluppatori che hanno la modalità di sviluppo abilitata tramite la [distribuzione e il debug con Visual Studio](../develop/platform-capabilities-and-apis/using-visual-studio.md) o l' [installazione di un pacchetto dell'applicazione con il portale del dispositivo](https://docs.microsoft.com/hololens/holographic-custom-apps#installing-an-application-package-with-the-device-portal).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Ricerca, installazione e disinstallazione delle applicazioni dal Microsoft Store](https://docs.microsoft.com/hololens/holographic-store-apps)
 
 <!-- ## Submitting to the Microsoft Store

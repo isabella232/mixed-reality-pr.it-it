@@ -1,17 +1,17 @@
 ---
 title: WinRT in Unreal
 description: Panoramica del plug-in di audio spaziale per Unreal Engine.
-author: fieldsJacksonG
+author: hferrone
 ms.author: jacksonf
 ms.date: 07/08/2020
 ms.topic: article
 keywords: Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicazione remota, realtà mista, sviluppo, Guida introduttiva, funzionalità, nuovo progetto, emulatore, documentazione, guide, funzionalità, ologrammi, sviluppo di giochi, cuffie per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, WinRT, DLL
-ms.openlocfilehash: 722add1601013d206ffface84d3a53cf3a9d89f9
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: ff0b235a45bf0e04b82e610384a290e8fc3a7525
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354445"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578596"
 ---
 # <a name="winrt-in-unreal"></a>WinRT in Unreal
 
@@ -26,7 +26,7 @@ Se si sta seguendo il percorso di checkpoint per lo sviluppo con Unreal che abbi
 > [!div class="nextstepaction"]
 > [Distribuzione nel dispositivo](unreal-deploying.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [API C++/WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/)
 * [Classe FileSavePicker](https://docs.microsoft.com/uwp/api/Windows.Storage.Pickers.FileSavePicker) 
 * [Librerie di terze parti non reali](https://docs.unrealengine.com/Programming/BuildTools/UnrealBuildTool/ThirdPartyLibraries/index.html) 
