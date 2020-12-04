@@ -1,6 +1,6 @@
 - name: Introduzione allo sviluppo di app di Realtà mista
   href: development.md
-- name: Servizi cloud di Azure
+- name: Panoramica dei servizi cloud di realtà mista di Azure
   href: mixed-reality-cloud-services.md
 - name: Panoramica di apprendimento della realtà mista
   href: mr-learning-overview.md
