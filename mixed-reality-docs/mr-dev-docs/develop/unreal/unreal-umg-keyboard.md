@@ -6,16 +6,16 @@ ms.author: suwu
 ms.date: 11/25/2020
 ms.topic: article
 keywords: Realtà mista di Windows, ologrammi, HoloLens 2, rilevamento degli occhi, input di sguardi, visualizzazione montata su schermo, Unreal Engine, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, widget, interfaccia utente, UMG, grafica di movimento non reale, Unreal Engine, UE, UE4
-ms.openlocfilehash: 9f22a5f7a13732727b6b122d385aad7e708a1343
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: 59ad108a0e27298256f4f0d1661381a4f1748777
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96355409"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609762"
 ---
 # <a name="umg-and-keyboard-in-unreal"></a>UMG e tastiera in Unreal
 
-Unreal Motion Graphics (UMG) è il sistema di interfaccia utente incorporato del motore di Unreal, usato per creare interfacce quali menu e caselle di testo. Le interfacce utente compilate con UMG sono costituite da widget. In questa guida viene illustrato come creare un nuovo widget, aggiungerlo allo spazio globale e abilitare l'interazione con tale widget in realtà mista, usando la tastiera di sistema come esempio. Per altre informazioni su UMG, vedere la [documentazione](https://docs.unrealengine.com/en-US/Engine/UMG/index.html)ufficiale di Unreal Engine. 
+Unreal Motion Graphics (UMG) è il sistema di interfaccia utente incorporato del motore di Unreal, usato per creare interfacce quali menu e caselle di testo. Le interfacce utente compilate con UMG sono costituite da widget. Verranno fornite istruzioni per la creazione di un nuovo widget, per aggiungerlo allo spazio globale e per abilitare l'interazione utilizzando la tastiera di sistema come esempio. Per altre informazioni su UMG, vedere la [documentazione](https://docs.unrealengine.com/en-US/Engine/UMG/index.html)ufficiale di Unreal Engine. 
 
 ## <a name="create-a-new-widget"></a>Creare un nuovo widget
 
@@ -27,7 +27,7 @@ Unreal Motion Graphics (UMG) è il sistema di interfaccia utente incorporato del
 
 ![Screenshot della finestra della gerarchia con componente del widget di testo evidenziato ed espanso](images/unreal-umg-img-02.png)
 
-- Selezionare un widget nella gerarchia o nella finestra di progettazione e modificare i parametri nel pannello dei dettagli.  In questo caso, è stato aggiunto un "testo suggerimento" predefinito e un colore tinta quando il cursore è posizionato sulla casella di testo per fornire commenti e suggerimenti su cui il widget è pronto per l'interazione.  In una casella di testo viene visualizzata una tastiera virtuale in HoloLens quando viene interagito con:
+- Selezionare un widget nella gerarchia o nella finestra di progettazione e modificare i parametri nel pannello dei dettagli.  In questo caso, è stato aggiunto un "testo suggerimento" predefinito e un colore tinta visualizzato quando si passa il mouse sulla casella di testo.  In una casella di testo viene visualizzata una tastiera virtuale in HoloLens quando viene interagito con:
 
 ![Screenshot dei parametri modificati nella finestra gerarchia](images/unreal-umg-img-03.png)
 
@@ -57,13 +57,16 @@ I widget UMG ricevono in genere l'input da un mouse.  In HoloLens o VR è necess
 
 ![Screenshot di un nuovo attore con un componente di interazione widget evidenziato](images/unreal-umg-img-08.png)
 
-- Nel pannello dei dettagli per il componente interazione widget impostare la distanza di interazione sulla distanza desiderata, impostare l' **origine interazione** su **personalizzata** e per lo sviluppo impostare **Mostra debug** su **true**:
+- Nel pannello dei dettagli per il componente interazione widget:
+    - Impostare la distanza di interazione sul valore della distanza desiderato
+    - Impostare l' **origine interazione** su **personalizzata**
+    - Per lo sviluppo, impostare **Mostra debug** su **true**:
 
 ![Screenshot delle proprietà del componente interazione e debug del widget](images/unreal-umg-img-09.png)
 
-Il valore predefinito per l'origine interazione è "World", che deve inviare raycasts in base alla posizione globale del componente di interazione del widget, ma in AR e VR questa situazione non sembra essere la stessa.  L'abilitazione di "Mostra debug" e l'aggiunta di una tinta del passaggio del mouse ai widget durante lo sviluppo è importante per verificare la correttezza del componente interazione widget.  La soluzione alternativa consiste nell'usare un'origine personalizzata e impostare Raycast nel grafico eventi dal raggio della mano.  
+Il valore predefinito per l'origine interazione è "World", che deve inviare raycasts in base alla posizione globale del componente di interazione del widget. In AR e VR, questo non è il caso.  L'abilitazione di "Mostra debug" e l'aggiunta di una tinta al passaggio del mouse ai widget è importante per verificare che il componente interazione widget stia eseguendo le operazioni desiderate.  La soluzione alternativa consiste nell'usare un'origine personalizzata e impostare Raycast nel grafico eventi dal raggio della mano.  
 
-Qui viene chiamato il simbolo di evento:
+Questa operazione viene chiamata dal segno di evento:
 
 ![Progetto del segno di evento](images/unreal-umg-img-10.png)
 

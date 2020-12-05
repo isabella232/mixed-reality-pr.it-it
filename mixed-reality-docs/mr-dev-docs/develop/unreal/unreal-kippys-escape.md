@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, distribuzione su dispositivo, PC, documentazione, auricolare realtà mista, headset di realtà mista di Windows, auricolare della realtà virtuale
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f5abfca4d5f85fd65aee77857d94a989122df310
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: eaba6ea1ee77ffffb74008402eafd1f09fd822e5
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678950"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609682"
 ---
 # <a name="the-making-of-kippys-escape"></a>Creazione dell'escape di Kippy
 
@@ -24,7 +24,7 @@ Kippy il robot si riattiva per trovarsi in un'isola. L'utente deve mettere in pr
 
 ## <a name="overview"></a>Panoramica
 
-L'escape di Kippy è un'app di esempio [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware) Open Source compilata con Unreal Engine 4 e [gli strumenti UX per la realtà mista per Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). In questo post verrà illustrata la procedura per offrire l'escape di Kippy, dai primi principi e dalla progettazione visiva all'implementazione e all'ottimizzazione dell'esperienza. È possibile trovare altre informazioni sullo sviluppo di applicazioni di realtà miste con gli strumenti UX MRTK nella [Panoramica dello sviluppo non reale](unreal-development-overview.md).
+L'escape di Kippy è un'app di esempio [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware) Open Source compilata con Unreal Engine 4 e [gli strumenti UX per la realtà mista per Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). In questo post verrà illustrata la procedura da seguire per i primi principi e la progettazione visiva per l'implementazione e l'ottimizzazione dell'esperienza. È possibile trovare altre informazioni sullo sviluppo di applicazioni di realtà miste con gli strumenti UX MRTK nella [Panoramica dello sviluppo non reale](unreal-development-overview.md).
 
 ## <a name="first-principles"></a>Principi iniziali 
 
@@ -36,7 +36,7 @@ Sono stati rilevati tre principi guida per l'esperienza: che era necessario per 
 
 HoloLens 2 ha accesso alle funzionalità di progettazione che non sono state trovate in nessun altro momento nei giochi. Gli oggetti possono essere direttamente spostati o modificati usando le mani o mirati al rilevamento a occhio. Queste funzionalità principali sono alla base di alcuni dei momenti di divertimento compilati nell'escape di Kippy.  
 
-Usando le funzionalità di HoloLens 2 univoche come linee guida per la progettazione di giochi, abbiamo definito alcuni scenari di ambiente di piccole dimensioni. Le isole sono molto sensate, perché possono essere modificate per altezze diverse per i giocatori e hanno fornito alcune interessanti idee sul Bridge. Da quel punto in poi, abbiamo atterrato sul tema della civiltà antica che soddisfa la fantascienza, con l'idea che qualcuno ha creato macchinari su rovine che sfruttano una strana energia fornita da ogni isola. Le isole venivano ognuna con un aspetto specifico, un dettaglio che consentiva di creare un interesse visivo. Un giusto equilibrio tra modellazione e texturing è stato la scelta migliore per tenere le chiamate di traccia basse per le prestazioni di rendering, quindi un aspetto stilizzato è stato progettato tenendo presente questo aspetto. 
+Usando le funzionalità di HoloLens 2 univoche come linee guida per la progettazione di giochi, abbiamo definito alcuni scenari di ambiente di piccole dimensioni. Le isole hanno avuto senso perché possono essere modificate per diverse altezze dei giocatori e forniscono alcune interessanti idee sul Bridge. Siamo atterrati sul tema della civiltà antica che soddisfa la fantascienza, con l'idea che qualcuno ha creato macchinari su rovine che sfruttano una strana energia fornita da ogni isola. Le isole venivano ognuna con un aspetto specifico, un dettaglio che consentiva di creare un interesse visivo. Un giusto equilibrio tra la modellazione e la creazione di texturing consente di tenere le chiamate di traccia basse per le prestazioni di rendering, quindi un aspetto stilizzato è stato progettato tenendo presente questo aspetto. 
 
 ![La progettazione dei primi Giochi Disegna ](images/kippys-escape/kippys-escape-img-01.png)
  *alcuni schizzi iniziali per l'aspetto dell'esperienza*
@@ -54,7 +54,7 @@ Per rimanere entro la pianificazione di produzione breve, abbiamo stabilito che 
 
 *Se l'utente impiega troppo tempo per risolvere un rompicapo, Kippy fornirà all'utente un suggerimento*
 
-Al di là della progettazione di caratteri e ambienti, abbiamo deciso di impegnarsi per far divertire il gioco. Il rilevamento degli occhi ci ha consentito di avviare gli attributi di materiali e suoni, che hanno evidenziato le parti principali del gioco. L'audio spaziale ha aiutato a far sentire i livelli a casa nell'ambiente del giocatore. La possibilità di recuperare oggetti, pulsanti di push e manipolare i dispositivi di scorrimento consente di coinvolgere i giocatori innovativi, quindi è importante assicurarsi che questi punti di connessione siano naturali. 
+Al di là della progettazione di caratteri e ambienti, abbiamo deciso di impegnarsi per far divertire il gioco. Il rilevamento degli occhi ci ha consentito di avviare gli attributi di materiali e suoni, che hanno evidenziato le parti principali del gioco. L'audio spaziale ha aiutato a far sentire i livelli a casa nell'ambiente del giocatore. La possibilità di acquisire oggetti, pulsanti di push e manipolare i dispositivi di scorrimento consente di coinvolgere i giocatori in modo innovativo. Era importante assicurarsi che questi punti di connessione fossero naturali. 
 
 ![La fine del cavo del Bridge si illumina quando l'utente si avvicina](images/kippys-escape/kippys-escape-img-05.gif)
 
@@ -117,4 +117,4 @@ Avviare il HoloLens 2 e [scaricare](https://www.microsoft.com/p/kippys-escape/9n
 </tr>
 </table>
 
-Grazie speciale per i nostri amici di [Framestore](https://www.framestore.com/) , che ci aiutano a portare il Kippy di escape a livello successivo. Dallo sviluppo di caratteri, alla progettazione di asset, alla programmazione dei giochi, la loro collaborazione su questo progetto era fondamentale.  
+Grazie speciale per i nostri amici di [Framestore](https://www.framestore.com/) , che ci aiutano a portare la fuga di Kippy. Dallo sviluppo di caratteri, alla progettazione di asset, alla programmazione dei giochi, la loro collaborazione su questo progetto era fondamentale.  

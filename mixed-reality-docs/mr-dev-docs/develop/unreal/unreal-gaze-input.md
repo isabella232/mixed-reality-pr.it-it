@@ -6,16 +6,16 @@ ms.author: jacksonf
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Realtà mista di Windows, ologrammi, HoloLens 2, rilevamento degli occhi, input di sguardi, visualizzazione montata su schermo, Unreal Engine, auricolare realtà mista, auricolare della realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: d0470c5abbefce797254aa9f2030519d3347aaab
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: 0a011c3f5a7ad79e83e25c4c95c46d2a04ad555d
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/04/2020
-ms.locfileid: "96578890"
+ms.locfileid: "96609502"
 ---
 # <a name="gaze-input"></a>Input sguardo
 
-Lo sguardo viene usato per indicare l'aspetto dell'utente.  Questo usa le telecamere di rilevamento degli occhi sul dispositivo per trovare un raggio nello spazio non reale che corrisponde a quello che l'utente sta attualmente cercando.
+L'input di sguardi nelle app di realtà mista sta per scoprire cosa si sta osservando gli utenti. Quando le telecamere di rilevamento degli occhi sul dispositivo corrispondono a raggi nello spazio globale non reale, i dati della linea di visione dell'utente diventano disponibili. Lo sguardo può essere usato sia in progetti sia in C++ ed è una funzionalità di base per i meccanismi come l'interazione tra oggetti, la ricerca e i controlli della fotocamera.
 
 ## <a name="enabling-eye-tracking"></a>Abilitazione del rilevamento degli occhi
 
@@ -25,34 +25,34 @@ Lo sguardo viene usato per indicare l'aspetto dell'utente.  Questo usa le teleca
 
 - Crea un nuovo attore e aggiungilo alla tua scena
 
-> [!NOTE] 
-> HoloLens Eye Tracking in Unreal ha solo un singolo raggio di sguardi per entrambi gli occhi anziché i due raggi necessari per il rilevamento stereoscopico, che non è supportato.
+> [!NOTE]
+> HoloLens Eye Tracking in Unreal ha un singolo raggio di sguardi per entrambi gli occhi. Il rilevamento stereoscopico, che richiede due raggi, non è supportato.
 
 ## <a name="using-eye-tracking"></a>Uso del tracciamento oculare
 
-Verificare prima di tutto che il dispositivo supporti la verifica degli occhi con la funzione IsEyeTrackerConnected.  Se restituisce true, chiamare GetGazeData per trovare la posizione in cui si trovano gli occhi dell'utente durante il frame corrente:
+Verificare prima di tutto che il dispositivo supporti la verifica degli occhi con la funzione **IsEyeTrackerConnected** .  Se la funzione restituisce true, chiamare **GetGazeData** per trovare il punto in cui gli occhi dell'utente stanno esaminando nel frame corrente:
 
 ![Progetto della funzione di rilevamento degli occhi connessa](images/unreal-gaze-img-02.png)
 
 > [!NOTE]
 > Il punto di fissaggio e il valore di confidenza non sono disponibili in HoloLens.
 
-Per trovare le informazioni che l'utente sta osservando, usare l'origine e la direzione degli sguardi in una traccia di riga.  L'inizio di questo vettore è l'origine dello sguardo e la fine è l'origine più la direzione dello sguardo moltiplicata per la distanza desiderata:
+Usare l'origine e la direzione degli sguardi in una traccia di linea per individuare esattamente il punto in cui gli utenti stanno cercando.  Il valore dello sguardo è un vettore, a partire dall'origine dello sguardo e termina dall'origine più la direzione dello sguardo moltiplicata per la distanza di traccia della riga:
 
 ![Progetto della funzione Get sguardi data](images/unreal-gaze-img-03.png)
 
 ## <a name="getting-head-orientation"></a>Recupero dell'orientamento della testa
 
-In alternativa, è possibile usare la rotazione HMD per rappresentare la direzione della testa dell'utente.  Questa operazione non richiede la funzionalità di input di sguardi, ma non fornisce informazioni di rilevamento degli occhi.  Per ottenere i dati di output corretti, è necessario aggiungere un riferimento al progetto come contesto globale:
+È anche possibile usare la rotazione della visualizzazione a capo montato (HMD) per rappresentare la direzione della testa dell'utente. È possibile ottenere la direzione degli utenti senza abilitare la funzionalità di input di sguardi, ma non vengono fornite informazioni di rilevamento degli occhi.  Aggiungere un riferimento al progetto come contesto globale per ottenere i dati di output corretti:
 
 > [!NOTE]
 > Il recupero dei dati di HMD è disponibile solo in Unreal 4,26 e versioni successive.
 
 ![Progetto della funzione Get HMDData](images/unreal-gaze-img-04.png)
 
-## <a name="using-c"></a>Utilizzo di C++ 
+## <a name="using-c"></a>Utilizzo di C++
 
-- Nel file build.cs del gioco aggiungere "EyeTracker" all'elenco PublicDependencyModuleNames:
+- Nel file **Build.cs** del gioco aggiungere **EyeTracker** all'elenco **PublicDependencyModuleNames** :
 
 ```cpp
 PublicDependencyModuleNames.AddRange(
@@ -65,19 +65,19 @@ PublicDependencyModuleNames.AddRange(
 });
 ```
 
-- In "file/nuova classe C++" creare un nuovo attore C++ denominato "EyeTracker"
-    - Una soluzione di Visual Studio si aprirà alla nuova classe EyeTracker. Compilare ed eseguire per aprire il gioco Unreal con il nuovo attore EyeTracker.  Cercare "EyeTracker" nella finestra "Place Actors".  Trascinare e rilasciare questa classe nella finestra del gioco per aggiungerla al progetto:
+- In **file/nuova classe c++** creare un nuovo attore C++ denominato **EyeTracker**
+    - Una soluzione di Visual Studio apre la nuova classe EyeTracker. Compilare ed eseguire per aprire il gioco Unreal con il nuovo attore EyeTracker.  Cercare "EyeTracker" nella finestra **posiziona attori** e trascinare la classe nella finestra del gioco per aggiungerla al progetto:
 
 ![Screenshot di un attore con la finestra posiziona attore aperta](images/unreal-gaze-img-06.png)
 
-- In EyeTracker. cpp aggiungere inclusioni per EyeTrackerFunctionLibrary e DrawDebugHelpers:
+- In **EyeTracker. cpp** aggiungere inclusioni per **EyeTrackerFunctionLibrary** e **DrawDebugHelpers**:
 
 ```cpp
 #include "EyeTrackerFunctionLibrary.h"
 #include "DrawDebugHelpers.h"
 ```
 
-In segno di spunta verificare che il dispositivo supporti la verifica degli occhi con UEyeTrackerFunctionLibrary:: IsEyeTrackerConnected.  Individuare quindi l'inizio e la fine di un raggio per una traccia di linea da UEyeTrackerFunctionLibrary:: GetGazeData:
+Verificare che il dispositivo supporti la verifica degli occhi con **UEyeTrackerFunctionLibrary:: IsEyeTrackerConnected** prima di provare a ottenere i dati di sguardi.  Se è supportata la verifica degli occhi, trovare l'inizio e la fine di un raggio per una traccia di linea da **UEyeTrackerFunctionLibrary:: GetGazeData**. Da qui è possibile costruire un vettore di sguardi e passare il relativo contenuto a **LineTraceSingleByChannel** per eseguire il debug di tutti i risultati del raggio:
 
 ```cpp
 void AEyeTracker::Tick(float DeltaTime)
@@ -104,7 +104,7 @@ void AEyeTracker::Tick(float DeltaTime)
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si segue il percorso di checkpoint per lo sviluppo con Unreal che è stato delineato, si stanno esplorando i blocchi predefiniti fondamentali di MRTK. Da qui è possibile passare al blocco predefinito successivo: 
+Se si sta seguendo il percorso di sviluppo non reale, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Tracciamento mano](unreal-hand-tracking.md)

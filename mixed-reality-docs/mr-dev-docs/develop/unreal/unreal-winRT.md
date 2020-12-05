@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 07/08/2020
 ms.topic: article
 keywords: Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicazione remota, realtà mista, sviluppo, Guida introduttiva, funzionalità, nuovo progetto, emulatore, documentazione, guide, funzionalità, ologrammi, sviluppo di giochi, cuffie per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, WinRT, DLL
-ms.openlocfilehash: ff0b235a45bf0e04b82e610384a290e8fc3a7525
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: f9001f3a9e36eb5d8553545f38cf10411bafd64b
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/04/2020
-ms.locfileid: "96578596"
+ms.locfileid: "96609408"
 ---
 # <a name="winrt-in-unreal"></a>WinRT in Unreal
 
@@ -21,7 +21,7 @@ Nel corso dello sviluppo di HoloLens potrebbe essere necessario scrivere una fun
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di checkpoint per lo sviluppo con Unreal che abbiamo delineato, si stanno esplorando le API e le funzionalità della piattaforma di realtà mista. Da qui è possibile passare a qualsiasi [argomento](unreal-development-overview.md#3-platform-capabilities-and-apis) o passare direttamente alla distribuzione dell'app in un dispositivo o in un emulatore.
+Se si sta seguendo il percorso di sviluppo non reale, si sta esaminando le funzionalità della piattaforma di realtà mista e le API. Da qui è possibile passare a qualsiasi [argomento](unreal-development-overview.md#3-platform-capabilities-and-apis) o passare direttamente alla distribuzione dell'app in un dispositivo o in un emulatore.
 
 > [!div class="nextstepaction"]
 > [Distribuzione nel dispositivo](unreal-deploying.md)

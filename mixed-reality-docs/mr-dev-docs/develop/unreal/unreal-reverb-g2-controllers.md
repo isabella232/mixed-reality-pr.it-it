@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
 keywords: Unreal Engine 4, UE4, Reverb, Reverb G2, HP reverbi G2, realtà mista, sviluppo, controller di movimento, input utente, funzionalità, nuovo progetto, emulatore, documentazione, guide, funzionalità, ologrammi, sviluppo di giochi, cuffie per realtà mista, headset di realtà mista, auricolare della realtà virtuale
-ms.openlocfilehash: 6a56b11e6738dd6359508d0cdfc1560bddfaff2e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 419f5b803a6abb2b19080807ef9f403b96758683
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678930"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609592"
 ---
 # <a name="hp-reverb-g2-controllers-in-unreal"></a>Controller di HP Reverb G2 in Unreal 
 
@@ -28,7 +28,7 @@ Se nel gioco non sono presenti associazioni controller per il controller di real
 
 ![Modifica del mapping delle associazioni esistenti quando non esistono associazioni controller](images/reverb-g2-img-04.png)
 
-Gli eventi verranno comunque attivati, ma se il gioco deve usare binding specifici del controller, ad esempio il pulsante di menu destro, è necessario usare il profilo di interazione con la realtà mista di HP.  È possibile specificare più associazioni controller per azione per supportare al meglio dispositivi diversi.
+Gli eventi verranno comunque attivati, ma se il gioco deve usare binding specifici del controller, ad esempio il pulsante di menu destro, è necessario usare il profilo di interazione con la realtà di HP mixed.  È possibile specificare più associazioni controller per azione per supportare al meglio dispositivi diversi.
    
 ![Uso di più associazioni controller](images/reverb-g2-img-05.png)
 

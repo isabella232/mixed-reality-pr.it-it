@@ -3,14 +3,14 @@ title: Funzionamento del tracciamento dall'interno verso l'esterno
 description: Informazioni sul sistema di rilevamento basato su fotocamera, interno esterno usato negli auricolari per la realtà mista di Windows.
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, Inside-out, Inside out, tracking, videocamera
-ms.openlocfilehash: eda1b323915788f72ae6f4a2efcf51850734eac9
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: e299415d8f5a727d8005a9cb3a65dd5da0d9bdf6
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434598"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609732"
 ---
-# <a name="inside-out-tracking"></a>Rilevamento interno
+# <a name="inside-out-tracking"></a>Tracciamento dall'interno verso l'esterno
 
 ## <a name="how-does-inside-out-tracking-work"></a>Funzionamento del rilevamento interno
 
@@ -30,7 +30,7 @@ Dal momento che il rilevamento degli auricolari per la realtà mista di Windows 
 
 ## <a name="how-much-light-is-enough-light"></a>Quanto luce è sufficiente?
 
-Una regola empirica è costituita dal fatto che, se si è in grado di spostarsi nell'ambiente senza ritenere che sia troppo scuro e se è possibile osservare le funzionalità di un'altra persona da tutta la stanza, è probabile che il sistema di rilevamento disponga di una luce sufficiente.
+Una regola empirica è costituita dal fatto che, se si è in grado di spostarsi nell'ambiente senza ritenere che sia troppo scuro e se è possibile osservare le funzionalità di un'altra persona da tutta la stanza, è probabile che il sistema di rilevamento disponga di una luce sufficiente. Tenere presente che, se si sta osservando il sole, le fotocamere possono risultare saturate e non potranno essere rilevate in modo affidabile. 
 
 ## <a name="what-is-the-recommended-amount-of-environmental-features"></a>Qual è la quantità consigliata di funzionalità ambientali?
 
@@ -42,7 +42,7 @@ Il dispositivo è progettato per supportare il movimento in eccesso rispetto a q
 
 ## <a name="where-will-tracking-not-work"></a>Dove il rilevamento non funziona?
 
-Il rilevamento non funzionerà in una stanza scura in cui le fotocamere non saranno in grado di visualizzare le funzionalità sufficienti a causa di una scarsa luminosità. Il rilevamento in genere non viene eseguito correttamente (o a volte funziona) in veicoli mobili come aeroplani, bus, treni, automobili o ascensori.
+Il rilevamento non funzionerà in una stanza scura in cui le fotocamere non saranno in grado di visualizzare le funzionalità sufficienti a causa di una scarsa luminosità. Il rilevamento in genere non viene eseguito correttamente (o a volte funziona) in veicoli mobili come aeroplani, bus, treni, automobili o ascensori. Il rilevamento può anche avere esito negativo in situazioni in cui c'è troppa luce o una forte differenza. Se, ad esempio, è presente un flusso diretto di luce solare in una stanza, le fotocamere potrebbero abbassare l'esposizione per ridurre la saturazione e non essere in grado di visualizzare le normali funzionalità naturali. Si consiglia di attenersi all'illuminazione relativamente uniforme e, se è necessario strizzare o trovare elementi estremamente luminosi, il sistema di rilevamento potrebbe non essere in grado di eseguire correttamente questa operazione. 
 
 ## <a name="what-is-the-difference-between-3dof-and-6dof"></a>Qual è la differenza tra 3DOF e 6DOF?
 
@@ -72,6 +72,6 @@ Il sistema di rilevamento archivia alcuni dati dell'ambiente in modo da poter ri
 
 ## <a name="see-also"></a>Vedere anche
 * [Risoluzione dei problemi del sistema di rilevamento](tracking.md)
-* [Controller del movimento](controller-in-wmr.md)
+* [Controller del movimento](controllers-in-wmr.md)
 * [Ambiente iniziale di Windows Mixed Reality](your-mixed-reality-home.md)
 * [Uso di giochi e app in realtà mista di Windows](using-games-and-apps-in-windows-mixed-reality.md)
