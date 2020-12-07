@@ -1,11 +1,15 @@
 - name: Introduzione allo sviluppo di app di Realtà mista
   href: development.md
-- name: Panoramica dei servizi cloud di realtà mista di Azure
-  href: mixed-reality-cloud-services.md
-- name: Panoramica di apprendimento della realtà mista
-  href: mr-learning-overview.md
 - name: Installare gli strumenti
   href: install-the-tools.md
+- name: Introduzione
+  items:
+    - name: Panoramica dei servizi cloud di realtà mista di Azure
+      href: mixed-reality-cloud-services.md
+    - name: Panoramica di apprendimento della realtà mista
+      href: mr-learning-overview.md
+    - name: Esempi e app di funzionalità
+      href: features-and-samples.md
 - name: Conversione di app
   items:
     - name: Panoramica della conversione
@@ -216,8 +220,6 @@
           href: unity/unity-reverb-g2-controllers.md
     - name: App di esempio
       items:
-        - name: Panoramica
-          href: unity/samples.md
         - name: HoloLens 2
           items:
             - name: Superfici
@@ -300,8 +302,6 @@
           href: unreal/unreal-reverb-g2-controllers.md
     - name: App di esempio
       items:
-        - name: Panoramica
-          href: unreal/unreal-samples.md
         - name: Kippy's Escape
           href: unreal/unreal-kippys-escape.md
     - name: Prestazioni e distribuzione
@@ -396,6 +396,8 @@
           href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md
         - name: 'Come funziona: Mixed Reality Capture Studio'
           href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
+        - name: Installazione PIX per HoloLens 2
+          href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: Holographic Remoting
       items:
         - name: Holographic Remoting Player
