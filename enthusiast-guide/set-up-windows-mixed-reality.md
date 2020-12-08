@@ -3,12 +3,12 @@ title: Configurare Windows Mixed Reality
 description: Come configurare i controller di movimento per la realtà mista di Windows, il riconoscimento vocale e l'audio e definire il limite della stanza per uno spazio di riproduzione sicuro.
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, introduzione, installazione, controller di movimento, controller, sintesi vocale, audio, seduto, in piedi, confine, driver grafici, Microsoft Edge, cromo
-ms.openlocfilehash: 16fa0fbf1574a61a5c7401de8a1e0431e183ec11
-ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
+ms.openlocfilehash: 693c55a7375dd2cb1b4a6f880fca31ba8d50c7f9
+ms.sourcegitcommit: b90697776b7027ed7eb8dd49a72d52740a16d12d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "95002996"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96843129"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Configurare Windows Mixed Reality
 
@@ -16,7 +16,7 @@ ms.locfileid: "95002996"
 
 Per eseguire la realtà mista di Windows, è necessario:
 
-* Un headset immersivo A realtà mista compatibile. [Scopri di più](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
+* Un headset immersivo A realtà mista compatibile. [Altre informazioni](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
 * Un [PC con la realtà mista di Windows](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) con le porte corrette per la cuffia
 * [Controller](controllers-in-wmr.md)di movimento, controller Xbox o mouse e tastiera
 * Cuffie con MIC (se non sono state compilate le cuffie)
@@ -24,15 +24,15 @@ Per eseguire la realtà mista di Windows, è necessario:
 
 ## <a name="get-set"></a>Ottenere set
 
-Preparare lo spazio (incluso lo spazio su sovraccarico). Assicurarsi che non vi siano ostacoli, rischi o elementi fragili nell'area in uso. Non impostare nella parte superiore di una scala o sotto una ventola a soffitto molto bassa. Rimuovere fragili e gli ostacoli dall'area e assicurarsi che tutti gli utenti che usano l'auricolare leggano e conoscano le linee guida per la sicurezza.
+Preparare lo spazio (incluso lo spazio su sovraccarico). Assicurarsi che non vi siano ostacoli, rischi o elementi fragili nell'area in uso. Non impostare nella parte superiore di una scala o sotto una ventola a soffitto molto bassa. Rimuovere eventuali fragili o ostacoli dall'area e assicurarsi che tutti gli utenti dell'auricolare leggano e conoscano le linee guida per la sicurezza.
 
-Quando lo spazio è pronto, collegare la cuffia, ma non inserirla ancora, prima di tutto è necessario eseguire alcune operazioni di configurazione nel PC. Si eseguirà un controllo del PC, si scaricherà il software, si connetteranno i controller e si creerà un [limite](boundary-questions.md) che consente di evitare ostacoli.
+Quando lo spazio è pronto, collegare la cuffia, ma non inserirla, prima di tutto è necessario eseguire alcune operazioni di configurazione nel PC. Si eseguirà un controllo del PC, si scaricherà il software, si connetteranno i controller e si creerà un [limite](boundary-questions.md) che consente di evitare ostacoli.
 
 Viene quindi visualizzata la parte divertente, che viene inserita nell'auricolare e si entra nel mondo misto. Cortana sarà in attesa di offrire una presentazione. Buon divertimento!
 
 ## <a name="go"></a>Per
 
-Quando lo spazio è pronto, collegare la cuffia, ma non inserirla ancora, prima di tutto è necessario eseguire alcune operazioni di configurazione nel PC. Si eseguirà un controllo del PC, si scaricherà il software, si connetteranno i controller e si creerà un [limite](boundary-questions.md) che consente di evitare ostacoli.
+Quando lo spazio è pronto, collegare la cuffia, ma non inserirla, prima di tutto è necessario eseguire alcune operazioni di configurazione nel PC. Si eseguirà un controllo del PC, si scaricherà il software, si connetteranno i controller e si creerà un [limite](boundary-questions.md) che consente di evitare ostacoli.
 
 Viene quindi visualizzata la parte divertente, che viene inserita nell'auricolare e si entra nel mondo misto. Cortana sarà in attesa di offrire una presentazione. Buon divertimento!
 
@@ -40,11 +40,11 @@ Viene quindi visualizzata la parte divertente, che viene inserita nell'auricolar
 
 Se la cuffia ha una radio predefinita, i controller inclusi nell'auricolare vengono associati alla Factory. Quando si accende per la prima volta i nuovi controller e l'auricolare, questi saranno già abbinati.
 
-Se si dispone di un auricolare senza una radio incorporata, sarà necessario configurare i controller di movimento associando i controller al PC (la maggior parte degli auricolari prodotti dopo 2018 avrà la radio predefinita).
+Se si dispone di un auricolare senza una radio predefinita, sarà necessario configurare i controller di movimento abbinando tali controller al PC. La maggior parte degli auricolari prodotti dopo 2018 dispone di radio predefinita.
 
 Se si prevede di usare solo un gamepad Xbox o una tastiera e un mouse, non è necessario associare i controller.  Se si prevede di usare i controller, è probabile che sia possibile associarli.
 
-**Nota**: i controller di movimento per la realtà mista di Windows richiedono Bluetooth 4,0. Se il PC non dispone di Bluetooth integrato, sarà necessario collegare una scheda Bluetooth USB che supporti Bluetooth 4,0 per abilitare i controller di movimento. Se si usa la radio predefinita nell'auricolare, non è necessaria una scheda Bluetooth.
+**Nota**: i controller di movimento per la realtà mista di Windows richiedono Bluetooth 4,0. Se il PC non dispone di Bluetooth integrato, è necessario collegare una scheda Bluetooth USB che supporta Bluetooth 4,0 per abilitare i controller di movimento. Non è necessaria una scheda Bluetooth per usare la radio predefinita nell'auricolare.
 
 ![Acquisire familiarità con i controller di movimento](images/get_to_know_controllers.png)
 
@@ -54,15 +54,15 @@ Se è necessario associare i controller di movimento, rivedere i [controller nel
 
 Scegliere un'esperienza di scalabilità o di scalabilità della scrivania:
 
-**Opzione 1: configurare per tutte le esperienze (anche nota come scalabilità a livello di spazio)** consente di esplorare la stanza ed è l'esperienza di realtà mista più immersiva. Per la realtà mista è consigliabile cancellare almeno 5 piedi x 7 piedi (1,5 metri x 2 metri) di spazio.
+**Opzione 1: configurare per tutte le esperienze (anche nota come scalabilità a livello di spazio)** consente di esplorare la stanza ed è l'esperienza di realtà mista più immersiva. Per la realtà mista è consigliabile cancellare almeno cinque piedi x sette piedi (1,5 metri x 2 metri) di spazio.
 
-**Opzione 2: l'esperienza di configurazione per la scalabilità (anche nota come scala desk) può essere** utilizzata sulla scrivania. È una buona opzione se non si ha molto spazio nello spazio. Significa anche che l'auricolare verrà usato senza un limite. Dovrai rimanere in un'unica posizione, perché non avrai alcun limite per aiutarti a evitare ostacoli fisici. Inoltre, alcune app e giochi possono essere progettati per essere usati con un limite, quindi potrebbero non funzionare come previsto.
+**Opzione 2: l'esperienza di configurazione per la scalabilità (anche nota come scala desk) può essere** utilizzata sulla scrivania. È una buona opzione se lo spazio non è elevato. Significa anche che l'auricolare verrà usato senza un limite. Dovrai rimanere in un'unica posizione, perché non avrai alcun limite per aiutarti a evitare ostacoli fisici. Inoltre, alcune app e giochi sono progettati per essere usati con un limite, quindi potrebbero non funzionare come previsto.
 
 ![Scegliere un'installazione](images/1050px-chooseasetup.png)
 
 ### <a name="if-you-choose-set-me-up-for-all-experiences"></a>Se si sceglie "Configura per tutte le esperienze"
 
-A breve, la tua stanza diventerà un mondo virtuale in cui è possibile esplorare e interagire. Metti in risalto e pulisci spazio nella tua stanza per l'esecuzione di realtà mista (ad esempio, cancella una certa superficie e sposta la poltrona sul lato della stanza). Per la realtà mista è consigliabile cancellare almeno 5 piedi x 7 piedi (1,5 metri x 2 metri) di spazio.
+A breve, la tua stanza diventerà un mondo virtuale in cui è possibile esplorare e interagire. Metti in risalto e pulisci spazio nella tua stanza per l'esecuzione di realtà mista. Per la realtà mista, è consigliabile cancellare almeno cinque piedi x sette piedi o 1,5 metri x 2 metri di spazio.
 
 ![Assicurarsi che lo spazio sia chiaro](images/1050px-createaboundary.png)
 
@@ -90,17 +90,17 @@ Non sono necessari passaggi aggiuntivi se si sceglie questa opzione.
 
 ## <a name="what-is-the-maximum-size-of-the-boundary"></a>Qual è la dimensione massima del limite?
 
-Le dimensioni massime attualmente supportate per la realtà mista di Windows sono 18x18ft (5.7 x 5.7 m) o 13ft (4m) RADIUS dal centro.  Le dimensioni limite dipendono dal punto di ancoraggio e dalla distanza del punto di ancoraggio che è possibile spostare prima di rischiare la stabilità del limite.  La realtà mista di Windows si basa su un'astrazione della fase nella piattaforma, la fase è lo spazio in cui ci si sposta e la fase dipende da un singolo ancoraggio (che quasi tutte le app presuppone anche che sia il modo in cui vive e Oculus funziona, perché hanno solo un unico sistema di coordinate).  Il motivo per cui questo aspetto è importante è che con il rilevamento interno, man mano che ci si allontana da un punto di ancoraggio, il rilevamento della cuffia è affidabile per mantenere stabile il limite.  Laddove il limite è concepito per evitare ostacoli fisici, diventa sempre più problematico, dal centro.  Due fattori sono passati alla decisione sulla dimensione massima del limite; la distanza massima tra le cuffie per la realtà mista di Windows potrebbe offrire la migliore esperienza di scalabilità delle chat con un limite e la lunghezza del cavo auricolare, che per la maggior parte delle cuffie per la realtà mista di Windows è 10ft (3M).
+Le dimensioni massime massime supportate in realtà mista di Windows sono un raggio 18x18ft (5.7 x 5,7 m) o 13 ft (4 m) al centro.  Le dimensioni limite dipendono dal punto di ancoraggio e dalla distanza del punto di ancoraggio che è possibile spostare prima di rischiare la stabilità del limite.  La realtà mista di Windows si basa su un'astrazione della fase nella piattaforma, ovvero sullo spazio in cui ci si sposta. Questa fase dipende da un singolo ancoraggio, che quasi tutte le app presuppone anche che sia il funzionamento di vive e Oculus, perché hanno solo un singolo sistema di coordinate.  Questo è importante perché con il rilevamento interno, man mano che ci si allontana da un punto di ancoraggio, il rilevamento della cuffia è affidabile per mantenere stabile il limite.  Laddove il limite è concepito per evitare ostacoli fisici, diventa sempre più problematico, dal centro.  Due fattori sono passati alla decisione sulla dimensione massima del limite; la distanza massima tra le cuffie per la realtà mista di Windows potrebbe offrire la migliore esperienza di scalabilità delle chat con un limite e la lunghezza del cavo auricolare, che per la maggior parte delle cuffie di realtà miste Windows è 10 ft (3 m).
 
 ## <a name="set-up-speech"></a>Configura sintesi vocale
 
-È possibile abilitare i comandi Cortana all'interno di realtà mista. In questo modo è possibile usare i comandi vocali all'interno della realtà mista per teletrasportarsi, aprire app ed eseguire altre operazioni. Ulteriori informazioni su questo articolo sono disponibili nel capitolo [informazioni sulla realtà mista](learn-mixed-reality.md) .
+È possibile abilitare i comandi Cortana in realtà mista, che consente di usare i comandi vocali per teletrasportarsi e aprire app. Per ulteriori informazioni su queste azioni, vedere il capitolo [informazioni sulla realtà mista](learn-mixed-reality.md) .
 
 ![La realtà mista è migliore con la sintesi vocale](images/1050px-betterwithspeech.png)
 
 ## <a name="set-up-your-audio-headset"></a>Configurare la cuffia audio
 
-A meno che non sia stato acquistato un Samsung HMD Odyssey (che ha integrato cuffie AKG e un array dual microphone integrato), è necessario ottenere una cuffia audio (con microfono e cuffia) e collegarla all'audio jack da 3,5 mm dell'auricolare. Il jack audio da 3,5 mm per la cuffia, a seconda del modello di auricolare, deve trovarsi sul lato inferiore della visiera auricolare o alla fine di un cavo audio breve che fuoriesce dalla visiera auricolare.
+A meno che non sia stato acquistato un Samsung HMD Odyssey con cuffie AKG integrate e un array microfonico doppio, è necessario ottenere una cuffia audio con microfono e cuffia e collegarla al jack audio 3,5-mm dell'auricolare. Il jack audio 3,5-mm per la cuffia è, a seconda del modello di auricolare, situato sul lato inferiore della visiera auricolare o alla fine di un cavo audio breve collegato alla visiera dell'auricolare.
 
 ## <a name="adjusting-your-headsets-display-settings"></a>Regolazione delle impostazioni di visualizzazione dell'auricolare
 
@@ -114,11 +114,11 @@ Questa impostazione controlla la qualità visiva della Home realtà mista. Il va
 
 Qui viene visualizzata la risoluzione nativa dell'auricolare.
 
-Se al PC si connette una cuffia con schermi con risoluzione superiore (ad esempio, cuffie con 4320x2160), verrà visualizzata un'impostazione per regolare la risoluzione dello schermo della realtà mista.
+Se si connette al PC una cuffia con schermi con risoluzione superiore, ad esempio auricolari con 4320x2160, verrà visualizzata un'impostazione per regolare la risoluzione dello schermo della realtà mista.
 
 * Questa impostazione fornisce l'opzione per lo stack di composizione della realtà mista di Windows per eseguire il rendering in modo nativo (ad esempio, in 4320x2160) o per fare in modo che lo stack di composizione esegua il rendering a una risoluzione e scalabilità inferiori (ad esempio, eseguire il rendering in 2880x1440 e scalare su 4320x2160).
 * L'impostazione predefinita prevede il rendering nativo, ad esempio l'opzione **4320 x 2160 (qualità migliore)** , per fornire la migliore qualità visiva possibile dall'auricolare.
-* Se il PC non soddisfa i requisiti minimi dell'hardware grafico per la cuffia con schermi con risoluzione superiore e/o se si verificano problemi di prestazioni della grafica, è possibile provare a usare la selezione dell'opzione di **scalabilità automatica (prestazioni ottimali)** .
+* Se il PC non soddisfa i requisiti minimi per l'hardware grafico per la cuffia con schermi con risoluzione superiore o se si verificano problemi di prestazioni della grafica, provare a usare la selezione dell'opzione di **scalabilità automatica (prestazioni ottimali)** .
 
 Questa impostazione è disponibile in Windows 10, versione 1903 o successive.
 
@@ -130,9 +130,9 @@ Questa impostazione consente di modificare la taratura dpi per gli auricolari co
 
 Questa impostazione avanzata sostituisce l'esperienza di frequenza di aggiornamento dello schermo della cuffia predefinita.
 
-* **Automatico (impostazione predefinita)**: seleziona automaticamente l'esperienza 60Hz o 90Hz in base alla configurazione hardware del PC.
-* **60Hz**
-* **90Hz**
+* **Automatico (impostazione predefinita)**: seleziona automaticamente l'esperienza 60 hz o 90 Hz in base alla configurazione hardware del PC.
+* **60 Hz**
+* **90 Hz**
 
 >[!Note]
 >Quando si configura per la prima volta l'auricolare HP Reverb G2, l'esperienza verrà modificata in 90Hz per garantire l'esperienza ottimale.  Se necessario, è possibile ripristinare automatico.
@@ -141,7 +141,7 @@ Questa impostazione avanzata sostituisce l'esperienza di frequenza di aggiorname
 
 Questa impostazione controlla il comportamento della realtà mista di Windows in risposta al sensore di presenza dell'auricolare:
 
-* **Cambia automaticamente usando il sensore di presenza dell'auricolare** (impostazione predefinita): Windows indirizza automaticamente l'input (tastiera, mouse...) alla realtà mista di Windows quando si indossa l'auricolare. È possibile eseguire l'override in qualsiasi momento con Win + Y.
+* **Cambia automaticamente usando il sensore di presenza dell'auricolare** (impostazione predefinita): Windows indirizza automaticamente l'input (tastiera, mouse...) alla realtà mista di Windows quando si indossa l'auricolare. È possibile eseguire l'override di questa operazione in qualsiasi momento con Win + Y.
 * **Passa manualmente usando il tasto logo Windows + Y**: Windows non userà il sensore di presenza dell'auricolare per rilevare quando si sta indossando la cuffia. È necessario usare Win + Y per cambiare l'input tra il desktop del PC e la realtà mista di Windows.
 
 Questa impostazione è disponibile in Windows 10, versione 1903 o successive.
@@ -159,7 +159,7 @@ Per usare il nuovo Microsoft Edge basato su cromo nella Home realtà mista di Wi
 
 - L'avvio di qualsiasi app Win32, incluso il nuovo Microsoft Edge, causa un blocco breve della visualizzazione dell'auricolare.
 - Il riquadro Microsoft Edge scompare dal menu Start della realtà mista di Windows (è possibile trovarlo nella cartella "app classiche").
-- Windows dal Microsoft Edge precedente è ancora situato intorno alla Home realtà mista, ma non può essere usato. Il tentativo di attivare tali finestre viene avviato all'interno dell'app desktop.
+- Windows dal Microsoft Edge precedente è ancora situato intorno alla Home realtà mista, ma non può essere usato. Il tentativo di attivare tali finestre viene avviato nell'app desktop.
 - Selezionando un collegamento ipertestuale nella Home realtà mista viene avviato un Web browser sul desktop anziché la Home realtà mista.
 - L'app WebVR Showcase è presente nella Home realtà mista, nonostante WebVR non sia più supportata.
 - Miglioramenti generali al lancio da tastiera e agli oggetti visivi.
@@ -173,7 +173,7 @@ Per usare il nuovo Microsoft Edge basato su cromo nella Home realtà mista di Wi
 
 ## <a name="launching-mixed-reality-after-the-first-time"></a>Avvio della realtà mista dopo la prima volta
 
-La possibilità di entrare in realtà mista una seconda volta è semplice quanto riportare l'auricolare mentre è connesso al PC. È anche possibile avviare manualmente l'applicazione del portale per la realtà mista aprendola dal menu Start. L'input e l'audio verranno indirizzati automaticamente all'auricolare quando lo si inserisce. in alternativa, è possibile attivare questa impostazione manualmente premendo **Windows + Y** sulla tastiera.
+Passare alla realtà mista una seconda volta è facile quanto riportare l'auricolare mentre è connesso al PC. È anche possibile avviare manualmente l'applicazione del portale per la realtà mista aprendola dal menu Start. L'input e l'audio verranno indirizzati automaticamente all'auricolare quando lo si inserisce. in alternativa, è possibile attivare questa impostazione manualmente premendo **Windows + Y** sulla tastiera.
 
 ## <a name="see-also"></a>Vedi anche
 
