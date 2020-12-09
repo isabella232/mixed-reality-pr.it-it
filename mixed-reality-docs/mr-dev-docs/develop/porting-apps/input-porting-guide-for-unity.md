@@ -3,15 +3,15 @@ title: Guida alla conversione dell'input per Unity
 description: Informazioni su come gestire l'input per la realtà mista di Windows in Unity.
 author: thetuvix
 ms.author: alexturn
-ms.date: 03/21/2018
+ms.date: 12/9/2020
 ms.topic: article
 keywords: input, Unity, porting
-ms.openlocfilehash: 4ad4b66b8238b3d00142fd14161113c6b912641c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 053918ec62f83c74655b0d4bb09a2b45b62bfc53
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683285"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925882"
 ---
 # <a name="input-porting-guide-for-unity"></a>Guida alla conversione dell'input per Unity
 
@@ -35,16 +35,16 @@ La realtà mista di Windows supporta i controller di movimento in diversi fattor
 
 Per rappresentare meglio questi controller, esistono due tipi di pose che è possibile esaminare per ogni origine interazione:
 
-* La posizione del **grip** , che rappresenta la posizione della Palma di una mano rilevata da un HoloLens o della palma che contiene un controller di movimento.
-    * Negli auricolari immersivi è consigliabile usare questa soluzione per eseguire **il rendering della mano dell'utente** o di **un oggetto contenuto nella mano** , ad esempio una spada o una pistola.
-    * **Posizione del grip** : il centro della palma quando si tiene il controller in modo naturale, regolato a sinistra o a destra per centrare la posizione all'interno del grip.
-    * L' **asse destro dell'orientamento del grip** : quando si apre completamente la mano per formare una formula a 5 dita piatta, il raggio normale per la Palma (in avanti dal palmo sinistro e viceversa)
-    * **Asse di avanzamento dell'orientamento del grip** : quando si chiude parzialmente la mano (come se si utilizzasse il controller), il raggio che punta "in poi" attraverso il tubo formato dalle dita non Thumb.
-    * **Asse verticale dell'orientamento del grip** : l'asse verso l'alto implicato dalle definizioni di destra e di avanzamento.
-    * È possibile accedere al grip con l'API di input tra fornitori di Unity ( **[XR). InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/Rotation** ) o tramite l'API specifica di Windows ( **SourceState. SourcePose. TryGetPosition/Rotation** , che richiede la richiesta della forma del grip).
+* La posizione del **grip**, che rappresenta la posizione della Palma di una mano rilevata da un HoloLens o della palma che contiene un controller di movimento.
+    * Negli auricolari immersivi è consigliabile usare questa soluzione per eseguire **il rendering della mano dell'utente** o di **un oggetto contenuto nella mano**, ad esempio una spada o una pistola.
+    * **Posizione del grip**: il centro della palma quando si tiene il controller in modo naturale, regolato a sinistra o a destra per centrare la posizione all'interno del grip.
+    * L' **asse destro dell'orientamento del grip**: quando si apre completamente la mano per formare una formula a 5 dita piatta, il raggio normale per la Palma (in avanti dal palmo sinistro e viceversa)
+    * **Asse di avanzamento dell'orientamento del grip**: quando si chiude parzialmente la mano (come se si utilizzasse il controller), il raggio che punta "in poi" attraverso il tubo formato dalle dita non Thumb.
+    * **Asse verticale dell'orientamento del grip**: l'asse verso l'alto implicato dalle definizioni di destra e di avanzamento.
+    * È possibile accedere al grip con l'API di input tra fornitori di Unity (**[XR). InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/Rotation**) o tramite l'API specifica di Windows (**SourceState. SourcePose. TryGetPosition/Rotation**, che richiede la richiesta della forma del grip).
 * Il **puntatore** che rappresenta il suggerimento del controller che punta in poi.
     * Questa posizione è particolarmente utilizzata per Raycast quando si **punta all'interfaccia utente** quando si esegue il rendering del modello di controller.
-    * Attualmente, la posa del puntatore è disponibile solo tramite l'API specifica di Windows ( **sourceState. sourcePose. TryGetPosition/Rotation** , che richiede la posa del puntatore).
+    * Attualmente, la posa del puntatore è disponibile solo tramite l'API specifica di Windows (**sourceState. sourcePose. TryGetPosition/Rotation**, che richiede la posa del puntatore).
 
 Queste coordinate di pose sono tutte espresse in coordinate internazionali di Unity.
 

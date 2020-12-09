@@ -3,15 +3,15 @@ title: Distribuzione delle app
 description: Panoramica delle diverse opzioni di distribuzione per diverse piattaforme e archivi di pubblicazione supportati.
 author: hferrone
 ms.author: v-hferrone
-ms.date: 10/02/2020
+ms.date: 12/9/2020
 ms.topic: article
 keywords: HoloLens, realtà mista, cuffie immersive, app, UWP, invio, invio, filtri, metadati, requisiti di sistema, parole chiave, predato, certificazione, pacchetto, appx, merchandising
-ms.openlocfilehash: 4ea60d2111f99924eaa417d4ff6fa8830934588c
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: 5c7a1d6e00610a4046bd71b07ca5184399c9e335
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96578880"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925780"
 ---
 # <a name="distributing-your-apps"></a>Distribuzione delle app
 

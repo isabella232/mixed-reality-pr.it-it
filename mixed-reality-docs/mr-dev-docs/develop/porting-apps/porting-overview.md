@@ -1,19 +1,19 @@
 ---
-title: Panoramica del porting
+title: Panoramica della conversione
 description: Panoramica delle varie opzioni di porting per la realtà mista delle applicazioni esistenti.
 author: hferrone
 ms.author: v-hferrone
-ms.date: 10/02/2020
+ms.date: 12/9/2020
 ms.topic: article
 keywords: porting, Unity, middleware, motore, UWP, Win32
-ms.openlocfilehash: 074e0792a5ed43bb56b8f337613234efbd166eb7
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 1ec03610dd26e9f75162795cbdded77a8e0189ce
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443536"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925824"
 ---
-# <a name="porting-overview"></a>Panoramica del porting
+# <a name="porting-overview"></a>Panoramica della conversione
 
 Quando si tratta di eseguire il porting o l'aggiornamento dei progetti esistenti per la realtà mista, possono verificarsi diversi scenari, a seconda che l'app sia stata compilata con Unity o Unreal Engine, HoloLens (1st Gen) o HoloLens 2 o SteamVR. Questa pagina di panoramica contiene le raccomandazioni correnti per ogni piattaforma e dispositivo. Assicurarsi di controllare quando questi processi cambiano sempre.
 
