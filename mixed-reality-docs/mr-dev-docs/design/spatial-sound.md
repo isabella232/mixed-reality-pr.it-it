@@ -2,16 +2,16 @@
 title: Audio in realtà mista
 description: L'audio in realtà mista può aumentare la confidenza degli utenti nelle interazioni dell'interfaccia utente e immergere gli utenti nell'esperienza.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 11/07/2019
 ms.topic: article
 keywords: Audio spaziale, audio surround, audio 3D, audio 3D, audio spaziale, cuffia a realtà mista, cuffie per realtà mista, cuffie per realtà virtuale, HoloLens, MRTK, Toolkit per realtà mista, case study, acustica
-ms.openlocfilehash: 50a5b4a634eec5a326158975f70fa385ce7af6a8
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 2fe40f1b271e7ae775c333951286e87c5196c20b
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703257"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002496"
 ---
 # <a name="audio-in-mixed-reality"></a>Audio in realtà mista
 L'audio è una parte essenziale della progettazione e della produttività in realtà mista. Il suono può:

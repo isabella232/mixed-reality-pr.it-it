@@ -2,16 +2,16 @@
 title: Esercitazioni audio spaziali-5. Uso del riverbero per aggiungere distanza all'audio spaziale
 description: Aggiungere un effetto di riverbero per migliorare il senso della variazione della distanza nell'audio spaziale.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: realtà mista, Unity, esercitazione, hololens2, audio spaziale, MRTK, Toolkit per realtà mista, UWP, Windows 10, HRTF, funzione di trasferimento correlato alla testa, riverbero, Microsoft Spatializer, mixer audio, riverbero SFX
-ms.openlocfilehash: d688955910d667edbdb79e63dab16587e66064a4
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: c63e5a239806c133e814eee8b44cbfb30f55aa5d
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679700"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002616"
 ---
 # <a name="using-reverb-to-add-distance-to-spatial-audio"></a>Uso del riverbero per aggiungere distanza all'audio spaziale
 
@@ -129,6 +129,6 @@ Una volta apportate queste modifiche, le proprietà **Spatialize on off** hanno 
 
 Provare l'app in un HoloLens 2 o nell'editor di Unity. A questo punto, quando si tocca il pulsante nell'app per attivare la spazializzazione, lo script instrada l'audio del video al gruppo di effetti della stanza per aggiungere Reverb. Quando si passa a stereo, l'audio viene indirizzato al gruppo Master ed è possibile evitare di aggiungere Reverb.
 
-Sono state completate le esercitazioni audio spaziali HoloLens 2 per Unity. Congratulazioni.
+Sono state completate le esercitazioni audio spaziali HoloLens 2 per Unity. Congratulazioni!
 
 

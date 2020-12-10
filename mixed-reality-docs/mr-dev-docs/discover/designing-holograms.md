@@ -1,17 +1,17 @@
 ---
-title: Progettazione di ologrammi
+title: Designing Holograms
 description: Scopri la realtà mista tramite la nuova applicazione per la progettazione di ologrammi di Microsoft.
 author: hferrone
 ms.author: daescu
 ms.date: 11/24/2020
 ms.topic: article
 keywords: MRTK, Toolkit per realtà mista, ologrammi, progettazione di ologrammi, apprendimento, app di esempio, auricolare realtà mista, auricolare della realtà virtuale, informazioni sulla realtà virtuale
-ms.openlocfilehash: 243b6f28da7b074b3ff6d48794d525ac08281fa7
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: bf904b319ed5b452f254b659315d9b531832a4d5
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96355436"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002586"
 ---
 # <a name="the-making-of-designing-holograms"></a>Creazione della progettazione di ologrammi
 
@@ -122,6 +122,32 @@ Inizialmente, abbiamo iniziato ad aggiungere uno spessore ai pannelli e alle ico
 Ovviamente le icone funzionano in modo molto migliore rispetto al testo semplice, quindi, per fornire una guida ancora più potente, ho iniziato a creare un set di oggetti animati e avatar, ognuno dei quali racconta una piccola storia di ciò che viene eseguito nel rispettivo scenario e del modo in cui viene usato.
 
 ![GIF animata di un sistema di menu interattivo olografico](images/designing-holograms/creative-process.gif)
+
+## <a name="core-concepts"></a>Concetti di base
+
+**Frame olografico**
+
+![GIF animata di un utente che si occupa della Dollhouse con il frame olografico evidenziato](images/designing-holograms/FOVandFOI.gif)
+
+**Sistemi di coordinate**
+
+![GIF animata di un utente che sta cercando la Dollhouse con i sistemi di coordinate evidenziati](images/designing-holograms/CoordinateSystems.gif)
+
+**Tracciamento oculare**
+
+![GIF animato di un utente che esamina gli ologrammi stazionari con il raggio d'occhio evidenziato](images/designing-holograms/EyeTracking.gif)
+
+**Visualizzazione dell'analisi delle chat e mapping spaziale**
+
+![GIF animato di tutte le aree all'interno della Dollhouse mappata](images/designing-holograms/SpatialMapping.gif)
+
+**Informazioni sulle scene**
+
+![GIF animata di oggetti nella Dollhouse riconosciuta](images/designing-holograms/SceneUnderstanding.gif)
+
+**Punto e commit con raggi mano**
+
+![GIF animata di un utente che solleva la mano con un raggio di mano evidenziato](images/designing-holograms/HandRays.gif)
 
 ## <a name="try-it-out-moments"></a>Minuti di prova
 
