@@ -6,24 +6,22 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: occhi, sguardi, Unity, ologramma, realtà mista, cuffie per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: 0c62de9cb1b7ea892831ea2cedbeb23be5ea7b37
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: ca33fef5a5a761df83ed7991b366cf711a5db224
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677510"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010362"
 ---
 # <a name="head-gaze-in-unity"></a>Sguardo da capo in Unity
 
-Lo [sguardo](../../design/gaze-and-commit.md) è un modo principale per consentire agli utenti di individuare gli [ologrammi](../../discover/hologram.md) creati dall'app in [realtà mista](../../discover/mixed-reality.md).
-
+Lo [sguardo](../../design/gaze-and-commit.md) è il modo principale per consentire agli utenti di individuare gli [ologrammi](../../discover/hologram.md) creati dall'app in [realtà mista](../../discover/mixed-reality.md).
 
 ## <a name="implementing-head-gaze"></a>Implementazione dell'Head-sguardi
 
-Dal punto di vista concettuale, l' [Head-sguardi](../../design/gaze-and-commit.md) viene implementato proiettando un raggio dalla parte iniziale dell'utente in cui si trova l'auricolare, nella direzione in avanti che si trovano e determinano la collisione del raggio.
-In Unity, la posizione e la direzione della testa dell'utente vengono esposte tramite la [fotocamera](camera-in-unity.md)principale di Unity, in particolare [UnityEngine. camera. Main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [Transform. inoltr](https://docs.unity3d.com/ScriptReference/Transform-forward.html) e [UnityEngine. camera. Main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [Transform. Position](https://docs.unity3d.com/ScriptReference/Transform-position.html).
+A livello concettuale, è possibile determinare lo [sguardo a capo](../../design/gaze-and-commit.md) proiettando un raggio dall'auricolare dell'utente per verificarne il risultato. In Unity, la posizione e la direzione della testa dell'utente vengono esposte tramite la [fotocamera](camera-in-unity.md), in particolare [UnityEngine. camera. Main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [Transform. inoltr](https://docs.unity3d.com/ScriptReference/Transform-forward.html) e [UnityEngine. camera. Main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [Transform. Position](https://docs.unity3d.com/ScriptReference/Transform-position.html).
 
-La chiamata a [Physics. RayCast](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) genera una struttura [RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) che contiene informazioni sulla collisione, tra cui il punto 3D in cui si è verificata la collisione e l'altro GameObject del raggio di puntamento.
+La chiamata a [Physics. RayCast](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) fornisce un [RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) che contiene informazioni sulla collisione, tra cui il punto di collisione 3D e l'altro GameObject il raggio d'occhio.
 
 ### <a name="example-implement-head-gaze"></a>Esempio: implementare l'Head-sguardi
 
@@ -47,18 +45,18 @@ void Update()
 
 ### <a name="best-practices"></a>Procedure consigliate
 
-Mentre nell'esempio precedente viene illustrato come eseguire un singolo Raycast in un ciclo di aggiornamento per trovare la destinazione a cui puntano gli utenti, è consigliabile eseguire questa operazione in un singolo oggetto che gestisce il controllo, anziché eseguire questa operazione in un oggetto potenzialmente interessato all'oggetto che si sta osservando. In questo modo, l'app consente di salvare l'elaborazione eseguendo solo uno sguardo a capo Raycast ogni frame.
+Mentre l'esempio precedente genera una singola Raycast dal ciclo di aggiornamento per trovare la destinazione a cui punta l'utente, si consiglia di usare un singolo oggetto per gestire tutti i processi con lo sguardo a capo. Combinando la logica di puntamento, la potenza di elaborazione dell'app viene salvata e il Raycasting viene limitato a uno per fotogramma.
 
 ## <a name="visualizing-head-gaze"></a>Visualizzazione dell'Head-sguardi
 
-Proprio come nel desktop in cui si usa un puntatore del mouse per la destinazione e l'interazione con il contenuto, è necessario implementare un [cursore](../../design/cursors.md) che rappresenti il capo dell'utente. In questo modo l'utente è in confidenza con l'interazione con.
+Analogamente a quanto avviene con un puntatore del mouse su un computer, è necessario implementare un [cursore](../../design/cursors.md) che rappresenti l'Head-sguardi dell'utente. Conoscere il contenuto di destinazione di un utente aumenta la fiducia nell'interazione con.
 
-## <a name="head-gaze-in-the-mixed-reality-toolkit-v2"></a>Head-sguardi nel Toolkit di realtà misto V2
-È possibile accedere a Head-sguardi da [Gestione input](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) in MRTK V2.
+## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Head-sguardi nel Toolkit per la realtà mista 
+È possibile accedere a Head-sguardi da [Gestione input](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) in MRTK.
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di checkpoint per lo sviluppo con Unity che abbiamo delineato, si stanno esplorando i blocchi predefiniti fondamentali in MRTK. Da qui è possibile passare al blocco predefinito successivo:
+Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Movimenti e controller del movimento](gestures-and-motion-controllers-in-unity.md)

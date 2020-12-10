@@ -6,18 +6,22 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, rendering olografico, olografico, immersivo, punto di messa a fuoco, buffer di profondità, solo orientamento, posizionale, opaco, trasparente, clip, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: c3c470634e2c5c9445ae8c0a29621971de22a92b
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 26eb8966004c958c6063d09de891ef835d973a82
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677620"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010432"
 ---
 # <a name="camera-in-unity"></a>Fotocamera in Unity
 
-Quando si usa una cuffia a realtà mista, diventa il centro del mondo olografico. Il componente della [fotocamera](https://docs.unity3d.com/Manual/class-Camera.html) Unity gestirà automaticamente il rendering stereoscopico e seguirà lo spostamento e la rotazione delle intestazioni quando il progetto ha selezionato "realtà virtuale supportata" con "realtà mista di Windows" come dispositivo (nella sezione altre impostazioni delle impostazioni di Windows Store Player). Questo può essere elencato come "Windows olografico" nelle versioni precedenti di Unity.
+Quando si usa una cuffia a realtà mista, diventa il centro del mondo olografico. Il componente della [fotocamera](https://docs.unity3d.com/Manual/class-Camera.html) Unity gestirà automaticamente il rendering stereoscopico e seguirà lo spostamento e la rotazione del titolo. Tuttavia, per ottimizzare completamente la qualità visiva e la [stabilità dell'ologramma](../platform-capabilities-and-apis/hologram-stability.md), è necessario impostare le impostazioni della fotocamera descritte di seguito.
 
-Tuttavia, per ottimizzare completamente la qualità visiva e la [stabilità dell'ologramma](../platform-capabilities-and-apis/hologram-stability.md), è necessario impostare le impostazioni della fotocamera descritte di seguito.
+## <a name="setup"></a>Configurazione
+
+1. Passare ad **altre impostazioni** sezione delle **impostazioni di Windows Store Player**
+2. Scegliere la **realtà mista di Windows** come dispositivo, che può essere elencato come **Windows olografico** nelle versioni precedenti di Unity
+3. Selezione della **realtà virtuale supportata**
 
 >[!NOTE]
 >Queste impostazioni devono essere applicate alla fotocamera in ogni scena dell'app.
@@ -26,10 +30,10 @@ Tuttavia, per ottimizzare completamente la qualità visiva e la [stabilità dell
 
 ## <a name="holographic-vs-immersive-headsets"></a>Cuffie olografiche rispetto a quelle immersive
 
-Le impostazioni predefinite nel componente della fotocamera Unity sono per le applicazioni 3D tradizionali che necessitano di uno sfondo simile a skybox, perché non hanno un mondo reale.
+Le impostazioni predefinite nel componente della fotocamera Unity sono per le applicazioni 3D tradizionali, che richiedono uno sfondo SKYBOX, perché non hanno un mondo reale.
 
 * Quando si esegue un' **[auricolare immersiva](../../discover/immersive-headset-hardware-details.md)**, si esegue il rendering di tutti gli elementi che l'utente vede, quindi è probabile che si desideri proteggere skybox.
-* Tuttavia, quando si esegue un **auricolare olografico** come [HoloLens](../../hololens-hardware-details.md), il mondo reale dovrebbe apparire dietro tutto il rendering della fotocamera. A tale scopo, impostare lo sfondo della fotocamera come trasparente (in HoloLens, il nero viene visualizzato come trasparente) invece di una trama skybox:
+* Tuttavia, quando si esegue un **auricolare olografico** come [HoloLens](../../hololens-hardware-details.md), il mondo reale dovrebbe apparire dietro tutto il rendering della fotocamera. Impostare lo sfondo della fotocamera come trasparente (in HoloLens, il nero viene visualizzato come trasparente) invece di una trama skybox:
     1. Selezionare la fotocamera principale nel pannello gerarchia
     2. Nel pannello Inspector trovare il componente della fotocamera e modificare l'elenco a discesa Clear Flags da skybox a Solid Color.
     3. Selezionare la selezione dei colori di sfondo e modificare i valori di RGBA in (0, 0, 0, 0)
@@ -51,11 +55,11 @@ Il layout dell'app sarà più semplice se si immagina la posizione iniziale dell
 Il rendering del contenuto troppo vicino all'utente può risultare scomodo in realtà mista. È possibile regolare i [piani di ritaglio vicini e lontani](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances) sul componente della fotocamera.
 
 1. Selezionare la fotocamera principale nel pannello gerarchia
-2. Nel pannello Inspector trovare i piani di ritaglio dei componenti della fotocamera e modificare la casella di testo near da 0,3 a 85. Il rendering del contenuto ancora più vicino può causare disagi da parte dell'utente e deve essere evitato in base alle [linee guida di rendering](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances).
+2. Nel pannello Inspector trovare i piani di ritaglio dei componenti della fotocamera e modificare la casella di testo near da 0,3 a 0,85. Il rendering del contenuto ancora più vicino può causare disagi da parte dell'utente e deve essere evitato in base alle [linee guida di rendering](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances).
 
 ## <a name="multiple-cameras"></a>Più fotocamere
 
-Quando nella scena sono presenti più componenti della fotocamera, Unity sa quale fotocamera usare per il rendering stereoscopico e il rilevamento Head controllando quale GameObject ha il tag MainCamera.
+Quando nella scena sono presenti più componenti della fotocamera, Unity sa quale fotocamera usare per il rendering stereoscopico e il rilevamento Head in base a quale GameObject ha il tag MainCamera.
 
 ## <a name="recentering-a-seated-experience"></a>Ricentrare un'esperienza di seduta
 
@@ -67,33 +71,33 @@ Sia HoloLens che le cuffie immersive riproiettano ogni frame di cui l'app esegue
 
 Per impostazione predefinita:
 
-* Gli **auricolari immersivi** eseguiranno una riproiezione posizionale, modificando gli ologrammi per la stima errata nella posizione e nell'orientamento, se l'app fornisce un buffer di profondità per un determinato frame.  Se non viene fornito un buffer di profondità, il sistema correggerà solo le stime errate all'orientamento.
-* Gli **auricolari olografici** come HoloLens eseguiranno la riproiezione posizionale se l'app fornisce o meno il buffer di profondità.  La riproiezione posizionale è possibile senza buffer di profondità su HoloLens perché il rendering è spesso di tipo sparse con uno sfondo stabile fornito dal mondo reale.
+* Gli **auricolari immersivi** si occupano della riproiezione posizionale se l'app fornisce un buffer di profondità per un determinato frame. Gli auricolari immersivi configureranno anche gli ologrammi in modo da ottenere una stima errata nella posizione e nell'orientamento. Se non viene fornito un buffer di profondità, il sistema correggerà solo le stime errate all'orientamento.
+* Gli **auricolari olografici** come HoloLens si occuperà della riproiezione posizionale, indipendentemente dal fatto che l'app fornisca il buffer di profondità.  La riproiezione posizionale è possibile senza buffer di profondità su HoloLens perché il rendering è spesso di tipo sparse con uno sfondo stabile fornito dal mondo reale.
 
-Se si è certi che si sta compilando un' [esperienza di solo orientamento](coordinate-systems-in-unity.md#building-an-orientation-only-or-seated-scale-experience) con contenuto con blocco del corpo rigido (ad esempio, il contenuto video di 360 gradi), è possibile impostare in modo esplicito la modalità di riprogettazione in modo che sia l'orientamento solo impostando [HolographicSettings. ReprojectionMode](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.ReprojectionMode.html) su [HolographicReprojectionMode. OrientationOnly](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.HolographicReprojectionMode.html).
+Se si è certi che si sta compilando un' [esperienza di solo orientamento](coordinate-systems-in-unity.md#building-an-orientation-only-or-seated-scale-experience) con contenuto rigidamente bloccato dal corpo (ad esempio, il contenuto video di 360 gradi), è possibile impostare in modo esplicito la modalità di riproiezione su orientamento solo impostando [HolographicSettings. ReprojectionMode](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.ReprojectionMode.html) su [HolographicReprojectionMode. OrientationOnly](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.HolographicReprojectionMode.html).
 
 ## <a name="sharing-your-depth-buffers-with-windows"></a>Condivisione dei buffer di profondità con Windows
 
 La condivisione del buffer di profondità dell'app in Windows ogni frame offrirà all'app uno dei due aumenti di stabilità dell'ologramma, in base al tipo di auricolare per cui si esegue il rendering:
 
-* Gli **auricolari immersivi** possono eseguire la riproiezione posizionale quando viene fornito un buffer di profondità, regolando gli ologrammi per la stima errata nella posizione e nell'orientamento.
+* Gli **auricolari immersivi** possono gestire la riproiezione posizionale quando viene fornito un buffer di profondità, regolando gli ologrammi per la stima errata nella posizione e nell'orientamento.
 * Per gli **auricolari olografici** sono disponibili alcuni metodi diversi. HoloLens 1 seleziona automaticamente un [punto di interesse](focus-point-in-unity.md) quando viene fornito un buffer di profondità, ottimizzando la stabilità dell'ologramma lungo il piano che interseca la maggior parte del contenuto. HoloLens 2 stabilizza il contenuto usando [LSR di profondità (vedere la sezione Osservazioni)](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint).
 
 Per specificare se l'app Unity fornirà un buffer di profondità a Windows:
 
 1. Passare a **Edit**  >  **Project Settings**  >  **Player**  >  **piattaforma UWP (Universal Windows Platform) Tab**  >  **XR Settings**.
 2. Espandere l'elemento **SDK di realtà mista di Windows** .
-3. Selezionare o deselezionare la casella di controllo **Abilita condivisione buffer di profondità** .  Questa opzione verrà controllata per impostazione predefinita nei nuovi progetti creati poiché questa funzionalità è stata aggiunta a Unity e verrà deselezionata per impostazione predefinita per i progetti precedenti aggiornati.
+3. Selezionare o deselezionare la casella di controllo **Abilita condivisione buffer di profondità** .  Per impostazione predefinita, l'opzione Abilita condivisione buffer di profondità è selezionata nei nuovi progetti, poiché questa funzionalità è stata aggiunta a Unity e verrà deselezionata per impostazione predefinita per i progetti meno recenti aggiornati.
 
-Fornire un buffer di profondità a Windows può migliorare la qualità visiva, purché Windows possa mappare accuratamente i valori di profondità per pixel normalizzati nel buffer di profondità a distanza in metri, usando i piani vicini e lontani impostati in Unity sulla fotocamera principale.  Se il rendering passa i valori di profondità di gestione in modi tipici, in genere è opportuno eseguire questa procedura, sebbene i passaggi di rendering traslucidi che scrivono nel buffer di profondità durante la visualizzazione dei pixel di colore esistenti possano confondere la riproiezione.  Se si è certi che i passaggi di rendering lasceranno molti dei pixel di profondità finali con valori di profondità non corretti, è probabile che si ottenga una qualità visiva migliore deselezionando "Abilita condivisione buffer di profondità". # # Checkpoint di sviluppo successivo
+Un buffer di profondità può migliorare la qualità visiva, purché Windows possa mappare accuratamente i valori di profondità per pixel normalizzati nel buffer di profondità a distanza in metri, usando i piani vicini e lontani impostati in Unity sulla fotocamera principale.  Se il rendering passa i valori di profondità di gestione in modi tipici, in genere è opportuno eseguire questa procedura, sebbene i passaggi di rendering traslucidi che scrivono nel buffer di profondità durante la visualizzazione dei pixel di colore esistenti possano confondere la riproiezione.  Se si è certi che i passaggi di rendering lasceranno molti dei pixel di profondità finali con valori di profondità non corretti, è probabile che si ottenga una qualità visiva migliore deselezionando "Abilita condivisione buffer di profondità".
 
-## <a name="automatic-scene-and-camera-setup-with-mixed-reality-toolkit-v2"></a>Configurazione automatica della scena e della fotocamera con Mixed Reality toolkit V2
+## <a name="automatic-scene-and-camera-setup-with-mixed-reality-toolkit"></a>Configurazione automatica della scena e della fotocamera con il Toolkit di realtà misto 
 
-Seguire la Guida [dettagliata](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) per aggiungere Mixed Reality toolkit V2 al progetto Unity e il progetto verrà configurato automaticamente. È anche possibile configurare manualmente il progetto senza MRTK con la guida nella sezione seguente.
+Seguire la Guida [dettagliata](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) per aggiungere il Toolkit di reality misto al progetto Unity e il progetto verrà configurato automaticamente. È anche possibile configurare manualmente il progetto senza MRTK con la guida nella sezione seguente.
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di checkpoint per lo sviluppo con Unity che abbiamo delineato, si stanno esplorando i blocchi predefiniti fondamentali in MRTK. Da qui è possibile passare al blocco predefinito successivo:
+Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Sguardo fisso](gaze-in-unity.md)

@@ -1,24 +1,24 @@
 ---
 title: Modulo lunare
-description: LunarModule è un'app di esempio Open Source di Microsoft Mixed Reality Design Labs. Con questo progetto è possibile apprendere come estendere i movimenti di base di HoloLens con il rilevamento bidirezionale e l'input del controller Xbox, creare oggetti reattivi per il mapping di superficie e la ricerca di piani e implementare semplici sistemi di menu.
+description: Informazioni su come estendere i movimenti di base di HoloLens con rilevamento bidirezionale e input del controller Xbox, creare oggetti reattivi per il mapping di superficie e la ricerca di piani e implementare semplici sistemi di menu.
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, app di esempio, progettazione, MRTK, Toolkit per realtà mista, Unity, app di esempio, app di esempio, open source, Microsoft Store, HoloLens, cuffie per la realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: ad5c544b9c164ef0d85eb3217685d6f96bb86367
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 2861cb85ac2f4a51a80e586b2be42ddb1d395e8a
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677466"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010502"
 ---
 # <a name="lunar-module"></a>Modulo lunare
 
 >[!NOTE]
 >Questo articolo illustra un esempio esplorativo creato nei [laboratori di progettazione della realtà mista](https://github.com/Microsoft/MRDesignLabs_Unity), un posto in cui si condividono le informazioni e suggerimenti per lo sviluppo di app di realtà miste. Gli articoli e il codice correlati alla progettazione si evolveranno Man mano che si effettuano nuove individuazioni.
 
-Il [modulo Lunar](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) è un'app di esempio Open Source di Microsoft Mixed Reality Design Labs. Con questo progetto è possibile apprendere come estendere i movimenti di base di HoloLens con il rilevamento bidirezionale e l'input del controller Xbox, creare oggetti reattivi per il mapping di superficie e la ricerca di piani e implementare semplici sistemi di menu. Tutti i componenti del progetto sono disponibili per l'uso nella propria esperienza di app in realtà mista.
+Il [modulo Lunar](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) è un'app di esempio Open Source di Microsoft Mixed Reality Design Labs. Informazioni su come estendere i movimenti di base di HoloLens con rilevamento bidirezionale e input del controller Xbox, creare oggetti reattivi per il mapping di superficie e la ricerca di piani e implementare semplici sistemi di menu. Tutti i componenti del progetto sono disponibili per l'uso nella propria esperienza di app in realtà mista.
 
 ## <a name="demo-video"></a>Video dimostrativo 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IcIP]
@@ -32,9 +32,9 @@ Nel suo ambiente, una piccola nave che ricorda il modulo Apollo analizza metodic
 ![Interfaccia originale del lander lunare 1979 di Atari](images/640px-atari-lunar-lander.png)<br>
 *Interfaccia originale del lander lunare 1979 di Atari*
 
-[Lunar Lander](https://en.wikipedia.org/wiki/Lunar_Lander_(1979_video_game)) è un classico arcade in cui i giocatori tentano di pilotare una luna Lander in una posizione piatta di terreno lunare. Tutti gli utenti nati negli anni '70 hanno impiegato ore in un arcade con i loro occhi incollati a questa nave vettoriale. Quando un giocatore sposta la propria spedizione verso un'area di destinazione desiderata, la scalabilità del terreno consente di visualizzare progressivamente più dettagli. Success indica l'atterraggio entro la soglia sicura della velocità orizzontale e verticale. I punti vengono assegnati per il tempo impiegato per l'atterraggio e il carburante rimanente, con un moltiplicatore in base alle dimensioni dell'area di destinazione.
+[Lunar Lander](https://en.wikipedia.org/wiki/Lunar_Lander_(1979_video_game)) è un classico arcade in cui i giocatori tentano di pilotare una luna Lander in una posizione piatta di terreno lunare. Tutti gli utenti nati negli anni '70 hanno impiegato ore in un arcade con i loro occhi incollati a questa nave vettoriale. Quando un giocatore sposta la propria spedizione verso un'area di destinazione, il terreno viene ridimensionato per visualizzare progressivamente più dettagli. Success indica l'atterraggio entro la soglia sicura della velocità orizzontale e verticale. I punti vengono assegnati per il tempo impiegato per l'atterraggio e il carburante rimanente, con un moltiplicatore in base alle dimensioni dell'area di destinazione.
 
-Oltre al gameplay, l'era del gioco arcade ha portato a un'innovazione costante degli schemi di controllo. Dalle più semplici configurazioni di pulsanti e joystick a 4 vie (viste nell'icona [Pac-Man](https://en.wikipedia.org/wiki/Pac-Man)) agli schemi estremamente specifici e complicati rilevati negli anni '90 e 00s (come quelli dei simulatori di golf e dei tiratori). Lo schema di input usato nel computer Lunar Lander è particolarmente interessante per due motivi: limitare il fascino e l'immersione.
+Oltre al gameplay, l'era del gioco arcade ha portato a un'innovazione costante degli schemi di controllo. Dalle più semplici configurazioni di pulsanti e joystick a quattro vie (viste nel [Pac-Man](https://en.wikipedia.org/wiki/Pac-Man)iconico) agli schemi estremamente specifici e complicati rilevati negli ultimi 90 s e 00s (ad esempio, i simulatori di golf e i cacciatori di treni). Lo schema di input usato nel computer Lunar Lander è interessante per due motivi: limitare il fascino e l'immersione.
 
 ![Console arcade del Lunar Lander di Atari](images/atariconsole.png)<br>
 *Console della Galleria Lunar Lander di Atari*
@@ -45,7 +45,7 @@ Un bambino che cammina attraverso una galleria sarà naturalmente intrigante dal
 
 Lunar Lander usa due pulsanti per ruotare la nave a sinistra e a destra e una **levetta di Spinta** per controllare la quantità di spinta prodotta dalla nave. Questa leva offre agli utenti un certo livello di Finesse che non può essere fornito da un normale joystick. Si tratta anche di un componente comune ai moderni cockpit di aviazione. Atari ha voluto Lunar Lander per immergere l'utente nel sentimento che era in realtà pilota di un modulo lunare. Questo concetto è noto come " **immersione tattile**".
 
-L'immersione tattile è l'esperienza di feedback sensoriale dall'esecuzione di azioni ripetitive. In questo caso, l'azione ripetitiva di regolazione della leva e della rotazione della limitazione che gli occhi vedono e i nostri orecchi ascoltano, aiuta a connettere il lettore all'atto di atterrare una nave sulla superficie della luna. Questo concetto può essere associato al concetto psicologico di "Flow". Quando un utente viene completamente assorbito in un'attività con la giusta combinazione di sfida e ricompensa, o più semplicemente, sono "nella zona".
+L'immersione tattile è l'esperienza di feedback sensoriale per eseguire azioni ripetitive. In questo caso, l'azione ripetitiva di regolazione della leva e della rotazione della limitazione, che i nostri occhi vedono e i nostri orecchi, consentono di connettere il giocatore all'atto di atterrare una nave sulla superficie della luna. Questo concetto può essere associato al concetto psicologico di "Flow". Quando un utente viene completamente assorbito in un'attività con la giusta combinazione di sfida e ricompensa, o più semplicemente, sono "nella zona".
 
 Probabilmente, il tipo più importante di immersione nella realtà mista è l'immersione spaziale. L'intero punto della realtà mista consiste nel credere che questi oggetti digitali esistano nel mondo reale. Stiamo sintetizzando gli ologrammi negli ambienti, a livello spaziale in tutti gli ambienti e le esperienze. Questo non significa che non possiamo ancora impiegare altri tipi di immersione nelle nostre esperienze, proprio come Atari ha fatto con l'immersione tattile in Lunar Lander.
 
@@ -61,11 +61,11 @@ Sfruttando gli ambienti di un utente, sono disponibili opzioni di terreno infini
 ![Flying the Lunar Module](images/640px-lm-hero.jpg)<br>
 *Flying the Lunar Module*
 
-Richiedere all'utente di apprendere lo schema di input, controllare la spedizione e avere una piccola destinazione su cui atterrare è molto richiesta. Un'esperienza di gioco con successo offre la giusta combinazione di sfida e premi. L'utente deve essere in grado di scegliere un livello di difficoltà, con la modalità più semplice per richiedere all'utente di atterrare correttamente in un'area definita dall'utente in una superficie analizzata da HoloLens. Una volta che un utente ha ottenuto il blocco del gioco, può quindi alzare di livello la difficoltà nel modo più appropriato.
+Richiedere all'utente di apprendere lo schema di input, controllare la spedizione e avere una piccola destinazione su cui atterrare è molto richiesta. Un'esperienza di gioco con successo offre la giusta combinazione di sfida e premi. L'utente può scegliere un livello di difficoltà, con la modalità più semplice per richiedere all'utente di atterrare correttamente in un'area definita dall'utente in una superficie analizzata da HoloLens. Una volta che un utente ha ottenuto il blocco del gioco, può quindi alzare di livello la difficoltà nel modo più appropriato.
 
 ### <a name="adding-input-for-hand-gestures"></a>Aggiunta dell'input per i movimenti della mano
 
-L'input di base di HoloLens ha solo due movimenti: [tocco aereo e Bloom](../../design/gaze-and-commit.md#composite-gestures). Gli utenti non devono ricordare le sfumature contestuali o un elenco di movimenti specifici che rendono l'interfaccia della piattaforma sia versatile che facile da imparare. Sebbene il sistema possa esporre solo questi due movimenti, HoloLens come dispositivo è in grado di tenere traccia di due lancette contemporaneamente. Il nostro inno a Lunar Lander è un' [app immersiva](../../design/app-model.md) , che significa che abbiamo la possibilità di estendere il set di movimenti di base per sfruttare due mani e aggiungere i nostri mezzi tattili deliziosi per la navigazione dei moduli lunari.
+L'input di base di HoloLens ha solo due movimenti: [tocco aereo e Bloom](../../design/gaze-and-commit.md#composite-gestures). Gli utenti non devono ricordare le sfumature contestuali o un elenco di movimenti specifici che rendono l'interfaccia della piattaforma sia versatile che facile da imparare. Sebbene il sistema possa esporre solo questi due movimenti, HoloLens come dispositivo è in grado di tenere traccia di due lancette contemporaneamente. Il nostro inno a Lunar Lander è un'app immersiva, che consente di estendere il set di movimenti di base per sfruttare due mani e aggiungere i nostri mezzi gradevoli per la navigazione dei moduli lunari.
 
 Tornando allo schema di controllo originale, **era necessario risolvere i problemi di spinta e rotazione**. L'avvertenza è la rotazione nel nuovo contesto che aggiunge un asse aggiuntivo (tecnicamente due, ma l'asse Y è meno importante per l'atterraggio). I due movimenti di spedizione distinti si prestano naturalmente per essere mappati a ogni mano:
 
@@ -74,24 +74,24 @@ Tornando allo schema di controllo originale, **era necessario risolvere i proble
 
 **Spinta**
 
-La levetta sul computer arcade originale è stata mappata a una scala di valori, più alta è stata spostata, più la Spinta è stata applicata alla nave. Una sfumatura importante da sottolineare qui è che l'utente può prendere la mano del controllo e mantenere un valore desiderato. Per ottenere lo stesso risultato, è possibile usare efficacemente il comportamento di tocco e di trascinamento. Il valore di Spinta inizia da zero. L'utente tocca e trascina per aumentare il valore. A questo punto, è possibile continuare a gestirlo. Qualsiasi modifica del valore del movimento tocco e trascinamento sarà il Delta del valore originale.
+La levetta sul computer arcade originale è stata mappata a una scala di valori, più alta è stata spostata, più la Spinta è stata applicata alla nave. Una sfumatura importante da sottolineare è il modo in cui l'utente può prendere la mano del controllo e mantenere un valore desiderato. Per ottenere lo stesso risultato, è possibile usare efficacemente il comportamento di tocco e di trascinamento. Il valore di Spinta inizia da zero. L'utente tocca e trascina per aumentare il valore. A questo punto, è possibile continuare a gestirlo. Qualsiasi modifica del valore del movimento tocco e trascinamento sarà il Delta del valore originale.
 
 **Rotazione**
 
 Questo è un po' più complesso. Con i pulsanti "ruota" olografici per toccare Crea un'esperienza terribile. Non esiste un controllo fisico da sfruttare, quindi il comportamento deve derivare dalla manipolazione di un oggetto che rappresenta il lander o dal lander stesso. È stato creato un metodo che usa il tocco e il trascinamento, che consente a un utente di eseguire in modo efficace il push e il pull nella direzione desiderata. Ogni volta che un utente tocca e possiede, il punto nello spazio in cui è stato avviato il movimento diventa l'origine per la rotazione. Il trascinamento dall'origine converte il Delta della traslazione della mano (X, Y, Z) e lo applica al delta dei valori di rotazione del lander. O più semplicemente, *il trascinamento di sinistra <-> a destra, verso l'alto < > verso il basso, < > di nuovo negli spazi ruota la nave di conseguenza*.
 
-Poiché il HoloLens può tenere traccia di due mani, la rotazione può essere assegnata a destra mentre la spinta viene controllata da sinistra. Finesse è il fattore determinante per il successo in questo gioco. L' *aspetto* di queste interazioni è la massima priorità assoluta. In particolare nel contesto dell'immersione tattile. Una nave che reagisce troppo rapidamente potrebbe essere inutilmente difficile da gestire, mentre un tempo troppo lento richiederebbe che l'utente "push e pull" sulla nave per un periodo di tempo molto lungo.
+Poiché il HoloLens può tenere traccia di due mani, la rotazione può essere assegnata a destra mentre la spinta viene controllata da sinistra. Finesse è il fattore determinante per il successo in questo gioco. L' *aspetto* di queste interazioni è la massima priorità assoluta. In particolare nel contesto dell'immersione tattile. Una nave che reagisce troppo rapidamente sarebbe difficile da guidare, mentre una troppo lenta richiederebbe all'utente di effettuare il push e il pull sulla nave per un periodo di tempo troppo lungo.
 
 ### <a name="adding-input-for-game-controllers"></a>Aggiunta dell'input per i controller di gioco
 
-Sebbene i movimenti della mano sul HoloLens forniscano un nuovo metodo di controllo granulare, c'è ancora una certa mancanza di feedback tattile "vero" ottenuto dai controlli analoghi. La connessione di un controller di gioco Xbox consente di riportare questo senso di fisici, sfruttando al tempo stesso i bastoncini di controllo per mantenere un controllo accurato.
+Sebbene i movimenti della mano sul HoloLens forniscano un nuovo metodo di controllo granulare, c'è ancora una certa mancanza di feedback tattile "vero" ottenuto dai controlli analoghi. La connessione di un controller di gioco Xbox ci permette di riportare questo senso di fisico, sfruttando al tempo stesso i bastoncini di controllo per mantenerne il controllo.
 
 Esistono diversi modi per applicare lo schema di controllo relativamente diretto al controller Xbox. Poiché si sta tentando di rimanere nel modo più vicino possibile alla configurazione del arcade originale, le mappe di **Spinta** migliorano con il pulsante trigger. Questi pulsanti sono controlli analoghi, ovvero hanno più di semplici stati *on e off* , rispondono effettivamente al grado di pressione su di essi. In questo modo si ottiene un costrutto simile a quello della **levetta di Spinta**. A differenza del gioco originale e del movimento della mano, questo controllo taglierà la spinta della nave una volta che un utente smette di esercitare pressioni sul trigger. Offre comunque all'utente lo stesso livello di raffinatezza del gioco arcade originale.
 
 ![Viene eseguito il mapping di levetta a sinistra per l'imbardata e il roll, a destra levetta è mappato a Pitch and roll](images/thumbsticksidebyside.gif)<br>
 *Viene eseguito il mapping di levetta a sinistra per l'imbardata e il roll; il levetta destro è mappato a Pitch and roll*
 
-Il doppio ThumbSticks si presta naturalmente a controllare la rotazione delle spedizioni. Sfortunatamente, sono disponibili 3 assi su cui la nave può ruotare e due ThumbSticks che supportano entrambi due assi. Questa mancata corrispondenza indica che uno levetta controlla un asse; in alternativa, è presente una sovrapposizione di assi per ThumbSticks. La soluzione precedente si è risentita "Broken" poiché ThumbSticks incorporava intrinsecamente i valori X e Y locali. La seconda soluzione richiedeva alcuni test per individuare gli assi ridondanti che si ritengono più naturali. L'esempio finale usa l' *imbardata* e il *Roll* (assi Y e x) per la levetta sinistra e il *pitch* and *Roll* (assi Z e x) per il levetta destro. Si tratta di una cosa più naturale, perché il *Roll* sembra essere abbinato in modo indipendente con *imbardata* e *pitch*. Si noti che l'uso di entrambi ThumbSticks per *Roll* viene eseguito anche per raddoppiare il valore di rotazione. è piuttosto divertente avere i cicli del lander.
+Il doppio ThumbSticks si presta naturalmente a controllare la rotazione delle spedizioni. Sfortunatamente, esistono tre assi su cui la nave può ruotare e due ThumbSticks che supportano entrambi due assi. Questa mancata corrispondenza indica che uno levetta controlla un asse; oppure è presente una sovrapposizione di assi per ThumbSticks. La soluzione precedente si è risentita "Broken" poiché ThumbSticks incorporava intrinsecamente i valori X e Y locali. La seconda soluzione richiedeva alcuni test per individuare gli assi ridondanti che si ritengono più naturali. L'esempio finale usa l' *imbardata* e il *Roll* (assi Y e x) per la levetta sinistra e il *pitch* and *Roll* (assi Z e x) per il levetta destro. Si tratta di una cosa più naturale, perché il *Roll* sembra essere abbinato in modo indipendente con *imbardata* e *pitch*. Si noti che l'uso di entrambi ThumbSticks per *Roll* viene eseguito anche per raddoppiare il valore di rotazione. è piuttosto divertente avere i cicli del lander.
 
 Questa app di esempio dimostra come il riconoscimento spaziale e l'immersione tattile possano modificare significativamente un'esperienza grazie alle modalità di input estendibili della realtà mista di Windows. Anche se Lunar Lander può essere prossimo a 40 anni, i concetti esposti con tale piccolo ottagono con le gambe rimarranno sempre attivi. Quando si immagina il futuro, perché non esaminare il passato?
 

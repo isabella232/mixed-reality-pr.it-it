@@ -2,16 +2,16 @@
 title: Audio spaziale in Unity
 description: Riprodurre un suono spaziale da uno specifico punto 3D nella scena Unity.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 11/07/2019
 ms.topic: article
 keywords: Unity, audio spaziale, HRTF, dimensioni della stanza, auricolare in realtà mista, auricolare di realtà mista di Windows, auricolare realtà virtuale, MRTK, Toolkit realtà mista, Spatializer, Reverb
-ms.openlocfilehash: db01fe81457d0f46b7f287458b4d48af4a98f2bc
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 1efe287855cc5b7738069c6d8183c2ecb5bd6d59
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678440"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010142"
 ---
 # <a name="spatial-sound-in-unity"></a>Audio spaziale in Unity
 
@@ -19,12 +19,12 @@ Questa pagina contiene collegamenti a risorse per il suono spaziale in Unity.
 
 ## <a name="spatializer-options"></a>Opzioni di Spatializer
 Le opzioni di Spatializer per le applicazioni di realtà mista includono:
-* *SPATIALIZER HRTF MS*. Unity fornisce questo elemento come parte del pacchetto facoltativo di *realtà mista di Windows* .
-  * Questa operazione viene eseguita sulla CPU in un'architettura a "singola origine" con costi più elevati.
-  * Questa operazione viene fornita per garantire la compatibilità con le versioni precedenti delle applicazioni HoloLens originali.
-* *Microsoft Spatializer*. Questa operazione è disponibile dal [repository GitHub Microsoft Spatializer](https://github.com/microsoft/spatialaudio-unity).
-  * Questa operazione usa un'architettura a più livelli di costo inferiore.
-  * In HoloLens 2 questa operazione viene scaricata in un acceleratore hardware.
+* Unity fornisce il *HRTF MS Spatializer* come parte del pacchetto facoltativo di *realtà mista di Windows* .
+  * Viene eseguito sulla CPU in un'architettura a più costi ' single-source '.
+  * Fornito per la compatibilità con le versioni precedenti con le applicazioni HoloLens originali.
+* *Microsoft Spatializer* è disponibile nel [repository GitHub Microsoft Spatializer](https://github.com/microsoft/spatialaudio-unity).
+  * Usa un'architettura a più livelli di costo inferiore.
+  * Offload a un acceleratore hardware in HoloLens 2. 
 
 Per le nuove applicazioni, è consigliabile *Microsoft Spatializer*.
 
@@ -34,19 +34,21 @@ Usare [NuGet per Unity](https://github.com/GlitchEnzo/NuGetForUnity/releases/lat
 * Alleghi un' **origine audio** a un oggetto nella gerarchia
 * Selezionare la casella di controllo **Abilita spazializzazione**
 * Spostare il dispositivo di scorrimento di **Blend spaziale** su "1"
-* Verificare che l'audio spaziale sia abilitato nella workstation per sviluppatori. Per abilitarla, fare clic con il pulsante destro del mouse sull'icona del volume sulla barra delle applicazioni e verificare che l'audio spaziale sia impostato su un valore diverso da "off". Per ottenere la migliore rappresentazione delle informazioni su HoloLens 2, scegliere **Windows Sonic per le cuffie**.
+* Verificare che l'audio spaziale sia abilitato nella workstation per sviluppatori. 
+    * Fare clic con il pulsante destro del mouse sull'icona del volume sulla barra delle applicazioni e verificare che l'audio spaziale sia impostato su un valore diverso da "off". 
+    * Scegliere **Windows Sonic per le cuffie** per ottenere la migliore rappresentazione di ciò che verrà ascoltato in HoloLens 2.
 
 >[!NOTE]
 >Se si verifica un errore in Unity che non è in grado di caricare il plug-in Microsoft. SpatialAudio. Spatializer. Unity, perché una delle relative dipendenze non è presente, verificare di disporre della versione più recente di [Microsoft Visual C++ ridistribuibile](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) installata nel computer.
 
-Per informazioni dettagliate, vedere:
+Per altre informazioni, vedere:
 * [Repository GitHub Microsoft Spatializer](https://github.com/microsoft/spatialaudio-unity)
 * [Esercitazione di Spatializer di Microsoft](tutorials/unity-spatial-audio-ch1.md)
 * [Documentazione dell'origine audio di Unity](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html)
 * [Documentazione di Unity Spatializer](https://docs.unity3d.com/Manual/VRAudioSpatializer.html)
 
 ## <a name="distance-based-attenuation"></a>Attenuazione basate sulla distanza
-Il decadimento basato sulla distanza predefinito di Unity ha una distanza minima di 1 metro e una distanza massima di 500 metri, con un attenuazione logaritmico. Queste impostazioni possono essere usate per lo scenario in uso oppure è possibile che le origini siano attenuate troppo rapidamente o troppo lentamente. Per informazioni dettagliate, vedere:
+Il decadimento basato sulla distanza predefinito di Unity ha una distanza minima di 1 metro e una distanza massima di 500 metri, con un attenuazione logaritmico. Queste impostazioni possono essere usate per lo scenario in uso oppure è possibile che le origini siano attenuate troppo rapidamente o troppo lentamente. Per altre informazioni, vedere:
 * [Progettazione audio in realtà mista](../../design/spatial-sound-design.md) per le impostazioni consigliate.
 * [Documentazione dell'origine audio di Unity](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html) per istruzioni sull'impostazione di queste curve.
 
@@ -64,7 +66,7 @@ Per esempi di suoni spaziali in Unity, vedere:
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di checkpoint per lo sviluppo di Unity, è possibile esplorare i blocchi predefiniti di base della realtà mista. Da qui è possibile passare al blocco predefinito successivo:
+Se si sta seguendo il percorso di sviluppo di Unity, è possibile esplorare i blocchi predefiniti di base della realtà mista. Da qui è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)

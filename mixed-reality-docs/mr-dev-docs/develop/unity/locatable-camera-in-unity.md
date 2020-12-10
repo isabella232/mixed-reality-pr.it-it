@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Foto, video, hololens, fotocamera, Unity, locatable, PVC, videocamera video foto, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, webcam, acquisizione foto, acquisizione video
-ms.openlocfilehash: c41ff88650da4aa6dc0d98c05b1b881362123a4f
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 125521206421acbcc4c9ad6e5fb371314ddb48f2
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678600"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010102"
 ---
 # <a name="locatable-camera-in-unity"></a>Fotocamera individuabile in Unity
 
@@ -19,10 +19,10 @@ ms.locfileid: "94678600"
 
 La funzionalità "WebCam" deve essere dichiarata per l'uso della [fotocamera](../platform-capabilities-and-apis/locatable-camera.md)da parte di un'app.
 1. Nell'editor di Unity passare alle impostazioni del lettore passando alla pagina "Edit > Project Settings > Player"
-2. Fare clic sulla scheda "Windows Store"
+2. Selezionare la scheda "Windows Store"
 3. Nella sezione "impostazioni di pubblicazione > funzionalità" controllare le funzionalità di **Webcam** e **microfono**
 
-Con la fotocamera può essere eseguita una sola operazione alla volta. Per determinare la modalità (foto, video o nessuno) in cui si trova attualmente la fotocamera, è possibile controllare UnityEngine. XR. WSA. WebCam. Mode.
+Con la fotocamera può essere eseguita una sola operazione alla volta. È possibile controllare la modalità con cui la fotocamera è attualmente in uso con UnityEngine. XR. WSA. WebCam. Mode. Le modalità disponibili sono Photo, video o None.
 
 ## <a name="photo-capture"></a>Acquisizione foto
 
@@ -33,13 +33,13 @@ Il tipo di *acquisizione* di foto consente di scattare fotografie con la fotocam
 1. Creare un oggetto di *acquisizione*
 2. Creare un oggetto *CameraParameters* con le impostazioni desiderate
 3. Avviare la modalità foto tramite *StartPhotoModeAsync*
-4. Accetta la foto desiderata
+4. Scattare la foto desiderata
     * opzionale Interagire con l'immagine
 5. Arrestare la modalità foto e pulire le risorse
 
 ### <a name="common-set-up-for-photocapture"></a>Configurazione comune per l'acquisizione di un'immagine
 
-Per tutti e tre gli usi, iniziare con gli stessi primi 3 passaggi precedenti
+Per tutti e tre gli usi, iniziare con gli stessi primi tre passaggi precedenti
 
 Iniziare creando un oggetto di *acquisizione*
 
@@ -124,7 +124,7 @@ void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
 
 ### <a name="capture-a-photo-to-a-texture2d"></a>Acquisire una foto in un Texture2D
 
-Quando si acquisiscono dati in un Texture2D, il processo è molto simile all'acquisizione su disco.
+Quando si acquisiscono dati in un Texture2D, il processo è simile all'acquisizione su disco.
 
 Seguire il processo di configurazione precedente.
 
@@ -165,9 +165,9 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 
 ### <a name="capture-a-photo-and-interact-with-the-raw-bytes"></a>Acquisisci una foto e interagisci con i byte non elaborati
 
-Per interagire con i byte non elaborati di un frame in memoria, seguire gli stessi passaggi di configurazione descritti in precedenza e *OnPhotoModeStarted* come in acquisizione di una foto in un Texture2D. La differenza si trova in *OnCapturedPhotoToMemory* , in cui è possibile ottenere i byte non elaborati e interagire con essi.
+Per interagire con i byte non elaborati di un frame in memoria, seguire gli stessi passaggi di installazione indicati in precedenza e *OnPhotoModeStarted* come per acquisire una foto in un Texture2D. La differenza si trova in *OnCapturedPhotoToMemory* , in cui è possibile ottenere i byte non elaborati e interagire con essi.
 
-In questo esempio verrà creato un *elenco <Color>* che potrebbe essere ulteriormente elaborato o applicato a una trama tramite i *pixel ()*
+In questo esempio verrà creato un *elenco <Color>* che verrà ulteriormente elaborato o applicato a una trama tramite *sepixels ()*
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -205,7 +205,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 **Spazio dei nomi:** *UnityEngine. XR. WSA. Webcam*<br>
 **Tipo:** *VideoCapture*
 
-*VideoCapture* funziona in modo molto simile alla *fotoacquisizione*. Le uniche due differenze sono che è necessario specificare un valore per i frame al secondo (FPS) ed è possibile salvare direttamente sul disco come file con estensione MP4. I passaggi per usare *VideoCapture* sono i seguenti:
+*VideoCapture* funziona in modo analogo alla *fotoacquisizione*. Le uniche due differenze sono che è necessario specificare un valore per i frame al secondo (FPS) ed è possibile salvare direttamente sul disco come file con estensione MP4. I passaggi per usare *VideoCapture* sono i seguenti:
 1. Creare un oggetto *VideoCapture*
 2. Creare un oggetto *CameraParameters* con le impostazioni desiderate
 3. Avviare la modalità video tramite *StartVideoModeAsync*
@@ -277,7 +277,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-In un secondo momento, sarà necessario arrestare la registrazione. Questo problema può verificarsi da un timer o da un input utente, ad esempio.
+In un secondo momento, è necessario arrestare la registrazione usando un timer o un input utente, ad esempio.
 
 ```cs
 // The user has indicated to stop recording

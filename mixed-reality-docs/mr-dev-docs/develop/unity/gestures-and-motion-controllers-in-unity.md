@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: movimenti, controller di movimento, Unity, sguardo, input, cuffie per realtà mista, cuffie di realtà mista di Windows, cuffie per realtà virtuale, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: 122642bb7fc561e505098bca00b8bf65bfd4552e
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 8941fa05af21a7b2c7302f4a76f27cf38e1d5a65
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443583"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010322"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Movimenti e controller del movimento in Unity
 
 Ci sono due modi principali per agire sullo [sguardo in Unity](gaze-in-unity.md), [movimenti della mano](../../design/gaze-and-commit.md#composite-gestures) e [controller di movimento](../../design/motion-controllers.md) in HoloLens e HMD immersivi. È possibile accedere ai dati per entrambe le origini dell'input spaziale tramite le stesse API in Unity.
 
-Unity offre due modi principali per accedere ai dati di input spaziali per la realtà mista di Windows, le API *input. GetButton/input. getaxis* comuni che funzionano su più SDK di Unity XR e un'API *InteractionManager/GestureRecognizer* specifica della realtà mista di Windows che espone il set completo di dati di input spaziali disponibili.
+Unity offre due modi principali per accedere ai dati di input spaziali per la realtà mista di Windows. Le API *input. GetButton/input. getaxis* comuni sono compatibili con più SDK di Unity XR, mentre l'API *InteractionManager/GestureRecognizer* specifica di Windows Mixed Reality espone il set completo di dati di input spaziali.
 
 ## <a name="unity-xr-input-apis"></a>API di input di Unity XR
 
@@ -27,13 +27,13 @@ Altre informazioni sulle [API XR](https://docs.unity3d.com/Manual/xr_input.html)
 
 ## <a name="unity-buttonaxis-mapping-table"></a>Pulsante Unity/tabella di mapping asse
 
-Gli ID dei pulsanti e degli assi nella tabella seguente sono supportati nel gestore di input di Unity per i controller di movimento della realtà mista di Windows tramite le API *input. GetButton/getaxis* , mentre la colonna "Windows specific" si riferisce alle proprietà disponibili nel tipo *InteractionSourceState* . Ognuna di queste API è descritta in dettaglio nelle sezioni riportate di seguito.
+Il gestore di input di Unity per i controller di movimento per la realtà mista di Windows supporta gli ID dei pulsanti e degli assi elencati di seguito tramite le API *input. GetButton/getaxis* . La colonna "Windows specific" si riferisce alle proprietà disponibili al di sotto del tipo *InteractionSourceState* . Ognuna di queste API è descritta in dettaglio nelle sezioni riportate di seguito.
 
 I mapping degli ID di pulsanti/assi per la realtà mista di Windows in genere corrispondono agli ID dell'asse o del pulsante Oculus.
 
 I mapping degli ID di pulsanti/assi per la realtà mista di Windows differiscono dai mapping di OpenVR in due modi:
 1. Il mapping USA ID touchpad distinti da levetta per supportare i controller con ThumbSticks e touchpad.
-2. Il mapping evita l'overload degli ID dei pulsanti A e X per i pulsanti di menu, in modo da lasciare quelli disponibili per i pulsanti ABXY fisici.
+2. Il mapping evita l'overload degli ID dei pulsanti A e X per i pulsanti di menu in modo da lasciarli disponibili per i pulsanti ABXY fisici.
 
 <table>
 <tr>
@@ -104,15 +104,15 @@ If you're using the HP Reverb G2 controllers, refer to the table below for butto
 
 ## <a name="grip-pose-vs-pointing-pose"></a>Posa del grip e puntamento
 
-La realtà mista di Windows supporta i controller di movimento in diversi fattori di forma, con la progettazione di ogni controller diversa nella relazione tra la posizione della mano dell'utente e la direzione naturale "Avanti" che le app devono usare per puntare durante il rendering del controller.
+La realtà mista di Windows supporta i controller di movimento in diversi fattori di forma. La progettazione di ogni controller differisce dalla propria relazione tra la posizione della mano dell'utente e la direzione naturale "Avanti" che le app devono usare per puntare durante il rendering del controller.
 
 Per rappresentare meglio questi controller, esistono due tipi di pose che è possibile esaminare per ogni origine interazione, la **posizione del grip** e la **posizione del puntatore**. Sia le coordinate della formula del grip che del puntatore sono espresse da tutte le API Unity nelle coordinate globali di Unity.
 
 ### <a name="grip-pose"></a>Pose di grip
 
-La posizione del **grip** rappresenta la posizione della Palma di una mano rilevata da un HoloLens o della palma che contiene un controller di movimento.
+La posizione del **grip** rappresenta il percorso della palma degli utenti, rilevata da un HoloLens o che contiene un controller di movimento.
 
-Negli auricolari immersivi, la disposizione dei grip è la scelta migliore per eseguire **il rendering della mano dell'utente** o di **un oggetto contenuto nella mano**, ad esempio una spada o una pistola. La posizione del grip viene usata anche durante la visualizzazione di un controller di movimento, perché il **modello di rendering** fornito da Windows per un controller di movimento usa la posizione del grip come origine e centro di rotazione.
+Negli auricolari immersivi la disposizione dei grip è la scelta migliore per eseguire **il rendering della mano dell'utente** o di **un oggetto contenuto nella mano dell'utente**. La richiesta di grip viene usata anche durante la visualizzazione di un controller di movimento. Il **modello di rendering** fornito da Windows per un controller di movimento usa la posizione del grip come origine e centro di rotazione.
 
 Il grip viene definito in modo specifico come segue:
 * **Posizione del grip**: il centro della palma quando si tiene il controller in modo naturale, regolato a sinistra o a destra per centrare la posizione all'interno del grip. Sul controller di movimento per la realtà mista di Windows, questa posizione viene in genere allineata con il pulsante afferra.
@@ -134,7 +134,7 @@ Attualmente, la posa del puntatore è disponibile in Unity solo tramite l'API sp
 
 Come gli auricolari, il controller di movimento di realtà mista di Windows non richiede l'installazione di sensori di rilevamento esterni. Il controller viene invece rilevato dai sensori nell'auricolare.
 
-Se l'utente sposta i controller fuori dal campo di visualizzazione dell'auricolare, nella maggior parte dei casi Windows continuerà a dedurre le posizioni del controller e le fornirà all'app. Quando il controller ha perso il rilevamento visivo per un periodo di tempo sufficiente, le posizioni del controller vengono rilasciate a posizioni di accuratezza approssimativa.
+Se l'utente sposta i controller fuori dal campo di visualizzazione dell'auricolare, Windows continua a dedurre le posizioni del controller nella maggior parte dei casi. Quando il controller ha perso il rilevamento visivo per un periodo di tempo sufficiente, le posizioni del controller vengono rilasciate a posizioni di accuratezza approssimativa.
 
 A questo punto, il sistema bloccherà il controller all'utente, tenendo traccia della posizione dell'utente mentre si spostano, esponendo comunque il vero orientamento del controller usando i sensori di orientamento interni. Molte app che usano i controller per puntare e attivare gli elementi dell'interfaccia utente possono funzionare normalmente con una precisione approssimativa senza che l'utente abbia notato.
 
@@ -152,9 +152,9 @@ Le app che desiderano gestire le posizioni in modo diverso in base allo stato di
 <tr>
 <th> Stato di rilevamento </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>Accuratezza elevata</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Alto </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Accuratezza elevata</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Alta </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Accuratezza elevata (a rischio di perdita)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Alto </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Accuratezza elevata (a rischio di perdita)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Alta </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>Accuratezza approssimativa</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Con approssimazione </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -163,10 +163,10 @@ Le app che desiderano gestire le posizioni in modo diverso in base allo stato di
 </table>
 
 Questi stati di rilevamento del controller di movimento sono definiti come segue:
-* **Accuratezza elevata:** Mentre il controller di movimento si trova all'interno del campo di visualizzazione dell'auricolare, in genere fornisce posizioni con accuratezza elevata, in base al rilevamento visivo. Si noti che un controller che sposta temporaneamente il campo di visualizzazione o è temporaneamente nascosto dai sensori dell'auricolare (ad esempio, da parte dell'utente) continuerà a restituire le pose con precisione elevata per un breve periodo di tempo, in base al rilevamento inerziale del controller stesso.
-* **Accuratezza elevata (a rischio di perdita):** Quando l'utente sposta il controller di movimento oltre il bordo del campo di visualizzazione dell'auricolare, l'auricolare non sarà presto in grado di rilevare visivamente la posizione del controller. L'app sa quando il controller ha raggiunto questo limite FOV visualizzando il **SourceLossRisk** REACH 1,0. A questo punto, l'app può scegliere di sospendere i movimenti del controller che richiedono un flusso costante di pose di qualità molto elevata.
+* **Accuratezza elevata:** Mentre il controller di movimento si trova all'interno del campo di visualizzazione dell'auricolare, in genere fornisce posizioni con accuratezza elevata, in base al rilevamento visivo. Un controller che sposta temporaneamente il campo di visualizzazione o è temporaneamente nascosto dai sensori dell'auricolare (ad esempio, da parte dell'utente) continuerà a restituire le pose con precisione elevata per un breve periodo di tempo, in base al rilevamento inerziale del controller stesso.
+* **Accuratezza elevata (a rischio di perdita):** Quando l'utente sposta il controller di movimento oltre il bordo del campo di visualizzazione dell'auricolare, l'auricolare non sarà presto in grado di rilevare visivamente la posizione del controller. L'app sa quando il controller ha raggiunto questo limite FOV visualizzando il **SourceLossRisk** REACH 1,0. A questo punto, l'app può scegliere di sospendere i movimenti del controller che richiedono un flusso costante di pose di alta qualità.
 * **Accuratezza approssimativa:** Quando il controller ha perso il rilevamento visivo per un periodo di tempo sufficiente, le posizioni del controller vengono rilasciate a posizioni di accuratezza approssimativa. A questo punto, il sistema bloccherà il controller all'utente, tenendo traccia della posizione dell'utente mentre si spostano, esponendo comunque il vero orientamento del controller usando i sensori di orientamento interni. Molte app che usano i controller per puntare e attivare gli elementi dell'interfaccia utente possono funzionare normalmente con una precisione approssimativa senza che l'utente ne abbia notato. Le app con requisiti di input più pesanti possono scegliere di comprendere questo calo dall'accuratezza **elevata** all'accuratezza **approssimativa** controllando la proprietà **PositionAccuracy** , ad esempio per dare all'utente un hitbox più generoso sulle destinazioni fuori schermo durante questo periodo di tempo.
-* **Nessuna posizione:** Mentre il controller può funzionare con una precisione approssimativa per molto tempo, a volte il sistema sa che anche una posizione bloccata dal corpo non è al momento significativa. Ad esempio, un controller appena attivato potrebbe non essere mai stato osservato visivamente oppure un utente può arrestare un controller che viene quindi prelevato da qualcun altro. In questi casi, il sistema non fornirà alcuna posizione all'app e *TryGetPosition* restituirà false.
+* **Nessuna posizione:** Mentre il controller può funzionare con una precisione approssimativa per molto tempo, a volte il sistema sa che anche una posizione bloccata dal corpo non è significativa al momento. Ad esempio, un controller attivato potrebbe non essere mai stato osservato visivamente oppure un utente potrebbe mettere a disposizione un controller che viene quindi prelevato da qualcun altro. In questi casi, il sistema non fornirà alcuna posizione all'app e *TryGetPosition* restituirà false.
 
 ## <a name="common-unity-apis-inputgetbuttongetaxis"></a>API Unity comuni (input. GetButton/getaxis)
 
@@ -214,9 +214,10 @@ Vector3 leftPosition = InputTracking.GetLocalPosition(XRNode.LeftHand);
 Quaternion leftRotation = InputTracking.GetLocalRotation(XRNode.LeftHand);
 ```
 
-Si noti che questo rappresenta la posizione del grip del controller (dove l'utente possiede il controller), che è utile per il rendering di una spada o di una pistola nella mano dell'utente o di un modello del controller stesso.
-
-Si noti che la relazione tra la posizione del grip e la posizione del puntatore (dove la punta del controller sta puntando) può variare tra i controller. Al momento, l'accesso alla posizione del puntatore del controller è possibile solo tramite l'API di input specifica del sig, descritta nelle sezioni riportate di seguito.
+> [!NOTE] 
+> Il codice precedente rappresenta la posizione del grip del controller (dove l'utente possiede il controller), che è utile per il rendering di una spada o di un'arma a mano dell'utente o di un modello del controller stesso.
+> 
+> La relazione tra la posizione del grip e la posizione del puntatore (dove la punta del controller sta puntando) può variare tra i controller. Al momento, l'accesso alla posizione del puntatore del controller è possibile solo tramite l'API di input specifica del sig, descritta nelle sezioni riportate di seguito.
 
 ## <a name="windows-specific-apis-xrwsainput"></a>API specifiche di Windows (XR. WSA. Input
 
@@ -265,7 +266,7 @@ Ogni *InteractionSourceState* restituito rappresenta un'origine interazione nel 
 
 ### <a name="polling-for-forward-predicted-rendering-poses"></a>Polling per le pose di rendering con stima avanzata
 
-* Quando si esegue il polling per i dati di origine dell'interazione da mani e controller, le pose ricevute sono le pose stimate in avanti per il momento in cui i fotoni del frame raggiungono gli occhi dell'utente.  Queste pose con stima avanzata vengono usate in modo ottimale per il **rendering** del controller o di un oggetto mantenuto per ogni frame.  Se si fa riferimento a una determinata pressione o rilascio con il controller, questo sarà più accurato se si usano le API degli eventi cronologici descritte di seguito.
+* Quando si esegue il polling per i dati di origine dell'interazione da mani e controller, le pose ricevute sono le pose stimate in avanti per il momento in cui i fotoni del frame raggiungono gli occhi dell'utente.  Per il **rendering** del controller o di un oggetto mantenuto ogni frame, è consigliabile utilizzare le pose con stima avanzata.  Se la destinazione è una determinata pressione o rilascio con il controller, questo sarà più accurato se si usano le API degli eventi cronologici descritte di seguito.
 
    ```cs
    var sourcePose = interactionSourceState.sourcePose;
@@ -334,10 +335,10 @@ Gli eventi di origine interazione disponibili sono:
 ### <a name="events-for-historical-targeting-poses-that-most-accurately-match-a-press-or-release"></a>Gli eventi per il targeting cronologico rappresentano la corrispondenza più accurata tra una stampa o una versione
 
 Le API di polling descritte in precedenza forniscono le pose previste dall'app.  Anche se queste pose stimate sono ideali per il rendering del controller o di un oggetto palmare virtuale, le pose future non sono ottimali per la destinazione, per due motivi principali:
-* Quando l'utente preme un pulsante su un controller, è possibile che si verifichino 20ms di latenza wireless su Bluetooth prima che il sistema riceva la pressione.
-* Quindi, se si usa una formula con stima di avanzamento, è possibile applicare un altro 20ms di stima in diretta per individuare l'ora in cui i fotoni del frame corrente raggiungono gli occhi dell'utente.
+* Quando l'utente preme un pulsante su un controller, potrebbero essere presenti circa 20 ms di latenza wireless su Bluetooth prima che il sistema riceva la pressione.
+* Quindi, se si usa una formula con stima di avanzamento, è possibile applicare un altro 10-20 ms di stima in diretta per individuare l'ora in cui i fotoni del frame corrente raggiungono gli occhi dell'utente.
 
-Questo significa che il polling fornisce una posizione di origine o una posizione Head che è 30-40ms in uscita dal punto in cui si è verificata l'intestazione e le mani dell'utente.  Per l'input della mano HoloLens, anche se non si verifica alcun ritardo di trasmissione wireless, si verifica un ritardo di elaborazione simile per rilevare la pressione.
+Questo significa che il polling fornisce una posizione di origine o una posizione iniziale che è 30-40 ms in poi da dove si è verificata l'intestazione e le mani dell'utente.  Per l'input della mano HoloLens, anche se non si verifica alcun ritardo di trasmissione wireless, si verifica un ritardo di elaborazione simile per rilevare la pressione.
 
 Per definire la destinazione in modo accurato in base all'intento originale dell'utente per la pressione di un controller o una mano, è necessario usare la funzione di origine o di intestazione di origine cronologica da tale evento di input *InteractionSourcePressed* o *InteractionSourceReleased* .
 
@@ -523,22 +524,22 @@ Per eseguire il rendering dei controller di movimento nell'app che corrispondono
 
 ## <a name="throwing-objects"></a>Generazione di oggetti
 
-La generazione di oggetti in realtà virtuale è un problema più complesso che può sembrare. Come per la maggior parte delle interazioni basate fisicamente, quando la generazione di un gioco agisce in modo imprevisto, è immediatamente evidente e interrompe l'immersione. Abbiamo dedicato un po' di tempo a comprendere in modo approfondito come rappresentare un comportamento di generazione fisico corretto e avere a disposizione alcune linee guida, abilitate tramite aggiornamenti della piattaforma, che vogliamo condividere con te.
+La generazione di oggetti in realtà virtuale è un problema più difficile rispetto a quello che può sembrare inizialmente. Come per la maggior parte delle interazioni basate fisicamente, quando la generazione di un gioco agisce in modo imprevisto, è immediatamente evidente e interrompe l'immersione. Abbiamo dedicato un po' di tempo a comprendere in modo approfondito come rappresentare un comportamento di generazione fisico corretto e avere a disposizione alcune linee guida, abilitate tramite aggiornamenti alla piattaforma, che vogliamo condividere con te.
 
 È possibile trovare un esempio di come si consiglia di implementare il lancio [qui](https://github.com/keluecke/MixedRealityToolkit-Unity/blob/master/External/Unitypackages/ThrowingStarter.unitypackage). Questo esempio segue le quattro linee guida seguenti:
-* **Utilizzare la *velocità* del controller invece della posizione**. Nell'aggiornamento di novembre di Windows è stata introdotta una modifica nel comportamento quando si [Verifica lo stato di rilevamento posizionale '' approssimativo](../../design/motion-controllers.md#controller-tracking-state). In questo stato, le informazioni sulla velocità del controller continueranno a essere segnalate fino a quando riteniamo che la precisione è elevata, che è spesso più lunga della posizione rimane alta.
+* **Utilizzare la *velocità* del controller invece della posizione**. Nell'aggiornamento di novembre di Windows è stata introdotta una modifica nel comportamento quando si [Verifica lo stato di rilevamento posizionale '' approssimativo](../../design/motion-controllers.md#controller-tracking-state). In questo stato, le informazioni sulla velocità del controller continueranno a essere segnalate fino a quando riteniamo che la sua accuratezza elevata, che è spesso più lunga della posizione, resta alta accuratezza.
 * **Incorporare la *velocità angolare* del controller**. Questa logica è interamente contenuta nel `throwing.cs` file nel `GetThrownObjectVelAngVel` metodo statico, all'interno del pacchetto collegato sopra:
    1. Poiché viene mantenuta la velocità angolare, l'oggetto generato deve mantenere la stessa velocità angolare del momento in cui si trovava al momento della generazione: `objectAngularVelocity = throwingControllerAngularVelocity;`
-   2. Poiché il centro della massa dell'oggetto generato è probabilmente diverso dall'origine della posizione del grip, probabilmente ha una velocità diversa rispetto a quella del controller nel frame di riferimento dell'utente. La parte della velocità dell'oggetto contribuito in questo modo è la velocità tangenziale istantanea del centro della massa dell'oggetto generato intorno all'origine del controller. Questa velocità tangenziale è il prodotto incrociato della velocità angolare del controller con il vettore che rappresenta la distanza tra l'origine del controller e il centro della massa dell'oggetto generato.
+   2. Poiché il centro della massa dell'oggetto generato è probabilmente diverso dall'origine della posizione del grip, è probabile che abbia una velocità diversa rispetto a quella del controller nel frame di riferimento dell'utente. La parte della velocità dell'oggetto contribuito in questo modo è la velocità tangenziale istantanea del centro della massa dell'oggetto generato intorno all'origine del controller. Questa velocità tangenziale è il prodotto incrociato della velocità angolare del controller con il vettore che rappresenta la distanza tra l'origine del controller e il centro della massa dell'oggetto generato.
 
       ```cs
       Vector3 radialVec = thrownObjectCenterOfMass - throwingControllerPos;
       Vector3 tangentialVelocity = Vector3.Cross(throwingControllerAngularVelocity, radialVec);
       ```
 
-   3. La velocità totale dell'oggetto generata è quindi la somma della velocità del controller e della velocità tangenziale: `objectVelocity = throwingControllerVelocity + tangentialVelocity;`
+   3. La velocità totale dell'oggetto generata è la somma della velocità del controller e della velocità tangenziale: `objectVelocity = throwingControllerVelocity + tangentialVelocity;`
 
-* **Prestare particolare attenzione all' *ora* in cui viene applicata la velocità**. Quando si preme un pulsante, può essere necessario fino a 20ms per l'evento per propagarsi attraverso la tecnologia Bluetooth al sistema operativo. Ciò significa che se si esegue il polling di una modifica dello stato del controller da Pressed a not Pressed o viceversa, il controller pone le informazioni che verranno apportate in precedenza in questa modifica dello stato. Inoltre, la presentazione del controller presentata dall'API di polling viene stimata in modo da riflettere una probabile situazione nel momento in cui verrà visualizzato il frame, che potrebbe essere più 20ms in futuro. Questo è ideale per il *rendering* degli oggetti conservati, ma costituisce un problema di tempo per la *destinazione* dell'oggetto durante il calcolo della traiettoria nel momento in cui l'utente ha rilasciato il proprio Throw. Fortunatamente, con l'aggiornamento di novembre, quando viene inviato un evento Unity, ad esempio *InteractionSourcePressed* o *InteractionSourceReleased* , lo stato include i dati cronologici di post di ritorno quando il pulsante è stato effettivamente premuto o rilasciato.  Per ottenere il rendering del controller più accurato e la destinazione del controller durante i lanci, è necessario usare correttamente il polling e la gestione degli eventi, in base alle esigenze:
+* **Prestare particolare attenzione all' *ora* in cui viene applicata la velocità**. Quando si preme un pulsante, l'evento può richiedere fino a 20 ms per la propagazione tramite Bluetooth al sistema operativo. Ciò significa che se si esegue il polling di una modifica dello stato del controller da Pressed a not Pressed o viceversa, il controller pone le informazioni che verranno apportate in precedenza in questa modifica dello stato. Inoltre, la formula del controller presentata dall'API di polling viene stimata in modo da riflettere un probabile posto nel momento in cui verrà visualizzato il frame che potrebbe essere più di 20 ms in futuro. Questo è ideale per il *rendering* degli oggetti conservati, ma costituisce un problema di tempo per la *destinazione* dell'oggetto durante il calcolo della traiettoria nel momento in cui l'utente ha rilasciato il Throw. Fortunatamente, con l'aggiornamento di novembre, quando viene inviato un evento Unity, ad esempio *InteractionSourcePressed* o *InteractionSourceReleased* , lo stato include i dati di post cronologici da indietro quando il pulsante è stato premuto o rilasciato.  Per ottenere il rendering del controller più accurato e la destinazione del controller durante i lanci, è necessario usare correttamente il polling e la gestione degli eventi, in base alle esigenze:
    * Per il **rendering del controller** ogni frame, l'app deve posizionare il *GameObject* del controller in corrispondenza del controller con stima avanzata per l'ora del fotone del frame corrente.  Si ottengono questi dati dalle API di polling Unity, ad esempio *[XR. InputTracking. GetLocalPosition](https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalPosition.html)* o *[XR. WSA. Input. InteractionManager. GetCurrentReading](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.GetCurrentReading.html)*.
    * Per il **controller che punta** alla stampa o al rilascio, l'app deve Raycast e calcolare le traiettorie in base alla definizione del controller cronologico per l'evento di stampa o di rilascio.  Si ottengono questi dati dalle API di gestione degli eventi di Unity, ad esempio *[InteractionManager. InteractionSourcePressed](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.InteractionSourcePressed.html)*.
 * **Utilizzare la disposizione del grip**. La velocità e la velocità angolari vengono segnalate rispetto alla posizione del grip, non alla posizione del puntatore.
@@ -564,7 +565,7 @@ Le esercitazioni dettagliate, con esempi di personalizzazione più dettagliati, 
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di checkpoint per lo sviluppo con Unity che abbiamo delineato, si stanno esplorando i blocchi predefiniti fondamentali in MRTK. Da qui è possibile passare al blocco predefinito successivo:
+Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Tracciamento della mano e oculare](hand-eye-in-unit.md)

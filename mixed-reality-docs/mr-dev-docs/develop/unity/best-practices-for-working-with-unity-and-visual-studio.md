@@ -6,36 +6,36 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Deploy, Unity, Visual Studio, HoloLens, HoloLens 2, Headset immersivo, procedure consigliate, cuffie per realtà mista, cuffie per la realtà mista, cuffie per realtà virtuale, UWP, Strumenti di Visual Studio Windows SDK
-ms.openlocfilehash: 5e00b24c7a36ae83a281800e2c7d8b2fc377f178
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 9e80cad3e7154ae5548514297343db8efcdcb49e
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678846"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010262"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Procedure consigliate per l'uso con Unity e Visual Studio
 
-Uno sviluppatore che crea un'applicazione di realtà mista con Unity dovrà passare tra Unity e Visual Studio per creare il pacchetto dell'applicazione distribuito in HoloLens e/o un auricolare immersivo. Per impostazione predefinita, sono necessarie due istanze di Visual Studio (una per modificare gli script Unity e una per la distribuzione nel dispositivo e il debug). La procedura seguente consente lo sviluppo usando una singola istanza di Visual Studio, riduce la frequenza di esportazione dei progetti Unity e migliora l'esperienza di debug.
+Quando si crea un'applicazione di realtà mista con Unity, è necessario passare tra Unity e Visual Studio per compilare e distribuire il pacchetto dell'app in HoloLens o in un auricolare immersivo. Per impostazione predefinita, sono necessarie due istanze di Visual Studio: un'istanza per modificare gli script Unity e un altro per eseguire la distribuzione nel dispositivo ed eseguire il debug. Le istruzioni seguenti consentono di sviluppare usando una singola istanza di Visual Studio, riducendo la frequenza di esportazione dei progetti Unity e migliorando l'esperienza di debug.
 
 ## <a name="improving-iteration-time"></a>Miglioramento del tempo di iterazione
 
-Il supporto per il back-end di scripting .NET in Unity è stato deprecato in Unity 2018 e rimosso in Unity 2019 +. Si consiglia quindi di passare a [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html). Questa operazione può tuttavia comportare tempi di compilazione più lunghi da Unity a Visual Studio. Per migliorare l'iterazione più veloce, è necessario configurare l'ambiente per ottenere risultati ottimali per la compilazione.
+Il supporto per il back-end di scripting .NET in Unity è stato deprecato in Unity 2018 e rimosso in Unity 2019 +. si consiglia quindi di passare a [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html). Tuttavia, è possibile che si verifichino tempi di compilazione più lunghi da Unity a Visual Studio. Per migliorare l'iterazione più veloce, configurare l'ambiente per ottenere risultati ottimali di compilazione:
 
-1) Utilizzare la compilazione incrementale compilando il progetto nella stessa directory ogni volta, riutilizzando i file predefiniti
+1) Usare la compilazione incrementale compilando il progetto nella stessa directory ogni volta, riutilizzando i file predefiniti
 2) Disabilitare le analisi del software anti-malware per il progetto & cartelle di compilazione
    - Aprire **Virus & Threat Protection** nell'app impostazioni di Windows 10
    - Selezionare **Gestisci impostazioni** in **virus & impostazioni di protezione dalle minacce**
    - Selezionare **Aggiungi o Rimuovi esclusioni** nella sezione **esclusioni**
-   - Fare clic su **Aggiungi un'esclusione** e selezionare la cartella contenente il codice del progetto Unity e gli output di compilazione
+   - Selezionare **Aggiungi un'esclusione** e selezionare la cartella contenente il codice del progetto Unity e gli output di compilazione
 3) Usare un'unità SSD per la compilazione
 
 Per altre informazioni, vedere [ottimizzazione dei tempi di compilazione per IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html) . Esaminare inoltre [il debug nel back-end di scripting di IL2CPP](https://docs.unity3d.com/Manual/windowsstore-debugging-il2cpp.html).
 
-Si consiglia inoltre di installare l' [estensione *UnityScriptAnalyzer* di Visual Studio](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer). Questo strumento analizza gli script C# di Unity per il codice che può essere scritto in modo più ottimizzato.
+Si consiglia di installare l' [estensione *UnityScriptAnalyzer* di Visual Studio](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer). Questo strumento analizza gli script C# di Unity per il codice che può essere scritto in modo più ottimizzato.
 
 ## <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools per Unity
 
-Scarica [Visual Studio Tools per Unity](https://docs.microsoft.com/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity?view=vs-2019)
+Scarica [Visual Studio Tools per Unity](https://docs.microsoft.com/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity)
 
 **Vantaggi di Visual Studio Tools per Unity**
 * Eseguire il debug della modalità di riproduzione in-editor di Unity da Visual Studio inserendo punti di interruzione, valutando variabili ed espressioni complesse.
@@ -45,17 +45,17 @@ Scarica [Visual Studio Tools per Unity](https://docs.microsoft.com/visualstudio/
 
 ## <a name="expose-c-class-variables-for-easy-tuning"></a>Esporre le variabili di classe C# per semplificare l'ottimizzazione
 
-Esistono due modi per esporre le variabili di classe. Il modo consigliato consiste nell'aggiungere l'attributo [SerializeField] alle variabili private. In questo modo, è possibile accedervi dall'editor, ma non esposte a livello di codice.  L'altra opzione consiste nel rendere pubbliche le variabili di classe C# per esporle nell'interfaccia utente dell'editor. 
+Esistono due modi per esporre le variabili di classe. Il modo consigliato consiste nell'aggiungere l'attributo [SerializeField] alle variabili private. È possibile accedere ai campi serializzati dall'editor, ma non esposti a livello di codice.  L'altra opzione consiste nel rendere pubbliche le variabili di classe C# per esporle nell'interfaccia utente dell'editor. 
 
-Entrambi gli approcci consentono di modificare facilmente le variabili durante la riproduzione in-Editor. Questa operazione è particolarmente utile per l'ottimizzazione delle proprietà meccaniche di interazione.
+Entrambi gli approcci consentono di modificare facilmente le variabili durante la riproduzione nell'editor, operazione particolarmente utile per l'ottimizzazione delle proprietà meccaniche di interazione.
 
 ## <a name="regenerate-uwp-visual-studio-solutions-after-windows-sdk-or-unity-upgrade"></a>Rigenera le soluzioni di Visual Studio UWP dopo l'aggiornamento di Windows SDK o Unity
 
-Le soluzioni di Visual Studio UWP archiviate nel controllo del codice sorgente possono essere aggiornate dopo l'aggiornamento a un nuovo motore di Windows SDK o Unity. È possibile risolvere questo problema dopo l'aggiornamento compilando una nuova soluzione UWP da Unity, quindi unendo eventuali differenze nella soluzione archiviata.
+Le soluzioni di Visual Studio UWP archiviate nel controllo del codice sorgente possono essere aggiornate dopo l'aggiornamento a un nuovo motore di Windows SDK o Unity. È possibile risolvere le soluzioni obsolete dopo creando una nuova soluzione UWP da Unity e unendo le differenze nella soluzione archiviata.
 
 ## <a name="use-text-format-assets-for-easy-comparison-of-content-changes"></a>Usare asset in formato testo per facilitare il confronto delle modifiche del contenuto
 
-L'archiviazione di asset in formato testo rende più semplice la verifica delle differenze delle modifiche del contenuto in Visual Studio. È possibile abilitare questa impostazione in "modifica > impostazioni progetto > Editor" modificando la modalità di **serializzazione asset** per **forzare il testo**. Tuttavia, l'Unione delle modifiche dei file di asset di testo è soggetta a errori e non è consigliata, quindi è consigliabile abilitare estrazioni binarie esclusive nel sistema di controllo del codice sorgente.
+L'archiviazione di asset in formato testo rende più semplice la verifica delle differenze delle modifiche del contenuto in Visual Studio. È possibile archiviare gli asset in formato testo selezionando **modifica > impostazioni progetto > editor** e modificare la modalità di **serializzazione asset** per **forzare il testo**. Tuttavia, l'Unione delle modifiche dei file di asset di testo è soggetta a errori e non è consigliata, quindi è consigliabile abilitare estrazioni binarie esclusive nel controllo del codice sorgente.
 
 ## <a name="see-also"></a>Vedere anche
 - [Visual Studio Tools per Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)

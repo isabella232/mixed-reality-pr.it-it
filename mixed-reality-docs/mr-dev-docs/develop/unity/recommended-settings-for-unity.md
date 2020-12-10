@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, impostazioni, realtà mista, HoloLens, cuffie per realtà mista, cuffie per la realtà mista di Windows, auricolare di realtà virtuale, prestazioni, impostazioni di qualità, impostazioni di illuminazione, buffer di profondità, XR, perdita di rilevamento
-ms.openlocfilehash: b560e75043cbf4a3cb93837938fdb65324cb16bb
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: d32dd19e535d2681654014cc92f319dc564e059e
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677370"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010112"
 ---
 # <a name="recommended-settings-for-unity"></a>Impostazioni consigliate per Unity
 
@@ -21,24 +21,24 @@ Unity offre un set di opzioni predefinite che in genere corrispondono al caso me
 
 ### <a name="low-quality-settings"></a>Impostazioni di bassa qualità
 
-È importante modificare le impostazioni di **qualità di Unity** per l'ambiente in modo **molto basso**. Ciò consentirà di garantire che l'applicazione esegua performantly al framerate appropriato. Questa operazione è estremamente significativa per lo sviluppo di HoloLens. Per lo sviluppo di auricolari immersivi, a seconda delle specifiche del desktop che sfruttano l'esperienza VR, è comunque possibile ottenere un framerate senza i parametri di qualità più bassi.
+È importante modificare le impostazioni di **qualità di Unity** in modo **molto basso** , in modo che l'applicazione sia in esecuzione e venga eseguita correttamente nel framerate appropriato, soprattutto per lo sviluppo HoloLens. Per lo sviluppo di auricolari immersivi, a seconda delle specifiche del desktop che sfruttano l'esperienza VR, è comunque possibile ottenere un framerate senza i parametri di qualità più bassi.
 
-In Unity 2019 LTS + è possibile impostare il livello di qualità del **progetto modificando**  >  la qualità **delle impostazioni del progetto**  >  **Quality** e impostando il **valore predefinito** facendo clic sulla freccia verso il basso fino al livello di qualità **molto basso** .
+In Unity 2019 LTS + è possibile impostare il livello di qualità del progetto **modificando**  >  la qualità **delle impostazioni del progetto**  >   e impostando il **valore predefinito** facendo clic sulla freccia verso il basso per il livello di qualità * * molto basso.
 
 ### <a name="lighting-settings"></a>Impostazioni di illuminazione
 
-Analogamente alle impostazioni della scena di qualità, è importante impostare impostazioni di illuminazione ottimali per l'applicazione di realtà mista. In Unity, l'impostazione di illuminazione che in genere avrà un maggiore effetto sulle prestazioni sulla scena è l' **illuminazione globale in tempo reale**. Questa opzione può essere disattivata selezionando **Window**  >  **Rendering**  >  **Impostazioni illuminazione**  >  **globale in tempo reale** per il rendering della finestra.
+Analogamente alle impostazioni della scena di qualità, è importante impostare impostazioni di illuminazione ottimali per l'applicazione di realtà mista. In Unity, l'impostazione di illuminazione che in genere avrà un maggiore effetto sulle prestazioni sulla scena è l' **illuminazione globale in tempo reale**. È possibile disattivare l'illuminazione globale passando a **finestra** impostazioni di illuminazione per il  >  **rendering** in  >    >  **tempo reale illuminazione globale**.
 
-È disponibile un'altra impostazione di illuminazione, un' **illuminazione globale al forno**. Questa impostazione consente di ottenere risultati accattivanti e visivi per gli auricolari immersivi, ma in genere non è applicabile per lo sviluppo di HoloLens. Il **Illumniation globale cotto** viene calcolato solo per GameObject statici che in genere non sono disponibili in scenari HoloLens a causa della natura di un ambiente sconosciuto e mutevole.
+C'è un'altra impostazione di illuminazione, un' **illuminazione globale al forno**. Questa impostazione consente di ottenere risultati accattivanti e visivi per gli auricolari immersivi, ma non è applicabile per lo sviluppo HoloLens. L' **illuminazione globale al forno** viene calcolata solo per GameObject statici, che non sono disponibili in HoloLens Scenes a causa della natura di un ambiente sconosciuto e mutevole.
 
-Per ulteriori informazioni, leggere l' [illuminazione globale da Unity](https://docs.unity3d.com/Manual/GIIntro.html) . 
+Per altre informazioni, leggere [illuminazione globale da Unity](https://docs.unity3d.com/Manual/GIIntro.html) . 
 
 >[!NOTE]
 > L' **illuminazione globale in tempo reale** è impostata **per ogni scena** e pertanto gli sviluppatori devono salvare questa proprietà per ogni scena Unity nel progetto.
 
 ### <a name="single-pass-instancing-rendering-path"></a>Percorso di rendering per istanze Single Pass
 
-Nelle applicazioni di realtà mista la scena viene visualizzata due volte, una per ogni occhio all'utente. Rispetto allo sviluppo 3D tradizionale, questo raddoppia effettivamente la quantità di lavoro che deve essere calcolata. Pertanto, è importante selezionare il percorso di rendering più efficiente in Unity per risparmiare sia sulla CPU che sul tempo GPU. Il rendering con istanza Single Pass ottimizza la pipeline di rendering Unity per le app di realtà miste ed è quindi consigliabile abilitare questa impostazione per impostazione predefinita per ogni progetto.
+Nelle applicazioni di realtà mista la scena viene visualizzata due volte, una per ogni occhio all'utente. Rispetto allo sviluppo 3D tradizionale, questo raddoppia effettivamente la quantità di lavoro che deve essere calcolata. È importante selezionare il percorso di rendering più efficiente in Unity per salvarlo in tempo CPU e GPU. Il rendering con istanza Single Pass ottimizza la pipeline di rendering Unity per le app di realtà miste ed è consigliabile abilitare questa impostazione per impostazione predefinita per ogni progetto.
 
 Per abilitare questa funzionalità nel tuo progetto Unity
 
@@ -57,7 +57,7 @@ Per informazioni dettagliate su questo approccio di rendering, vedere gli artico
 
 ### <a name="enable-depth-buffer-sharing"></a>Abilita condivisione buffer di profondità
 
-Per ottenere una migliore stabilità dell'ologramma dalla percezione dell'utente, è consigliabile abilitare la proprietà **depth buffer sharing** in Unity. Se si attiva questa impostazione, Unity condividerà la mappa di profondità prodotta dall'applicazione con la piattaforma di realtà mista di Windows. La piattaforma sarà quindi in grado di ottimizzare la stabilità degli ologrammi in modo specifico per la scena in cui viene eseguito il rendering dell'applicazione da parte di un frame specifico.
+Per ottenere una migliore stabilità dell'ologramma dalla percezione dell'utente, è consigliabile abilitare la proprietà **depth buffer sharing** in Unity. Se si attiva questa impostazione, Unity condividerà la mappa di profondità prodotta dall'applicazione con la piattaforma di realtà mista di Windows. La piattaforma può quindi ottimizzare la stabilità degli ologrammi in modo specifico per la scena per qualsiasi frame sottoposto a rendering dall'applicazione.
 
 Per abilitare questa funzionalità nel tuo progetto Unity
 
@@ -66,7 +66,7 @@ Per abilitare questa funzionalità nel tuo progetto Unity
 
 Si consiglia inoltre di selezionare la **profondità a 16 bit** nell'impostazione del **formato Depth** in questo pannello, specialmente per lo sviluppo HoloLens. La selezione di 16 bit rispetto a 24 bit ridurrà in modo significativo i requisiti di larghezza di banda, in quanto sarà necessario spostare o elaborare i dati.
 
-Per ottimizzare la stabilità dell'ologramma, la piattaforma per la realtà mista di Windows si basa sul buffer di profondità, che corrisponde a tutti gli ologrammi sottoposti a rendering sullo schermo. Pertanto, con la condivisione del buffer di profondità in, è importante quando si esegue il rendering del colore, per eseguire anche il rendering della profondità. In Unity, la maggior parte dei materiali opachi o TransparentCutout eseguirà il rendering per impostazione predefinita, ma gli oggetti trasparenti e di testo non eseguiranno in genere il rendering della profondità anche se si tratta di uno shader dipendente
+Per ottimizzare la stabilità dell'ologramma, la piattaforma per la realtà mista di Windows si basa sul buffer di profondità, che corrisponde a tutti gli ologrammi sottoposti a rendering sullo schermo. Pertanto, con la condivisione del buffer di profondità in, è importante quando si esegue il rendering del colore, per eseguire anche il rendering della profondità. In Unity, la maggior parte dei materiali opachi o TransparentCutout eseguirà il rendering per impostazione predefinita, ma gli oggetti trasparenti e di testo non eseguiranno il rendering della profondità sebbene questo sia dipendente dallo shader e così via.
 
 Se si usa il [Toolkit di realtà misto standard shader](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md), per eseguire il rendering della profondità per gli oggetti trasparenti:
 
@@ -83,14 +83,14 @@ Se si usa il [Toolkit di realtà misto standard shader](https://github.com/micro
 
 ### <a name="building-for-il2cpp"></a>Compilazione per IL2CPP
 
-Unity ha deprecato il supporto per il back-end di scripting .NET e pertanto consiglia agli sviluppatori di usare **IL2CPP** per le compilazioni UWP di Visual Studio. Anche se questo offre diversi vantaggi, la creazione della soluzione di Visual Studio da Unity per **IL2CPP** può essere notevolmente più lenta rispetto al vecchio metodo .NET. Pertanto, è consigliabile seguire le procedure consigliate per la compilazione di **IL2CPP** per risparmiare sul tempo di iterazione dello sviluppo.
+Unity ha deprecato il supporto per il back-end di scripting .NET e pertanto consiglia agli sviluppatori di usare **IL2CPP** per le compilazioni UWP di Visual Studio. Anche se questo offre diversi vantaggi, la creazione della soluzione di Visual Studio da Unity per **IL2CPP** può essere più lenta rispetto al vecchio metodo .NET. Pertanto, è consigliabile seguire le procedure consigliate per la compilazione di **IL2CPP** per risparmiare sul tempo di iterazione dello sviluppo.
 
 1) Utilizzare la compilazione incrementale compilando il progetto nella stessa directory ogni volta, riutilizzando i file predefiniti
 2) Disabilitare le analisi del software anti-malware per il progetto & cartelle di compilazione
    - Aprire **Virus & Threat Protection** nell'app impostazioni di Windows 10
    - Selezionare **Gestisci impostazioni** in **virus & impostazioni di protezione dalle minacce**
    - Selezionare **Aggiungi o Rimuovi esclusioni** nella sezione **esclusioni**
-   - Fare clic su **Aggiungi un'esclusione** e selezionare la cartella contenente il codice del progetto Unity e gli output di compilazione
+   - Selezionare **Aggiungi un'esclusione** e selezionare la cartella contenente il codice del progetto Unity e gli output di compilazione
 3) Usare un'unità SSD per la compilazione
 
 Per altre informazioni, vedere [ottimizzazione dei tempi di compilazione per IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html) .
@@ -107,10 +107,10 @@ HoloLens dispone di una CPU e GPU di classe mobile, il che significa che le app 
 Per abilitare o disabilitare la schermata iniziale olografica:
 
 1) Vai alla pagina **modifica**  >  **Impostazioni progetto**  >  **lettore**
-2) Fare clic sulla scheda **Windows Store** e aprire la sezione **immagine iniziale** .
-3) Applicare l'immagine desiderata sotto la proprietà **olografica >** olografica di Windows.
-    - Impostando l'opzione **Mostra schermata iniziale di Unity** sarà abilitata o disabilitata la schermata iniziale di Unity personalizzata. Se non si ha una licenza Pro Unity, viene sempre visualizzata la schermata iniziale di Unity personalizzata.
-    - Se viene applicata un' **immagine Splash olografica** , questa viene sempre visualizzata indipendentemente dal fatto che la casella di controllo Mostra schermata iniziale di Unity sia abilitata o disabilitata. Specificare un'immagine Splash olografica personalizzata è disponibile solo per gli sviluppatori che dispongono di una licenza Pro Unity.
+2) Selezionare la scheda **Windows Store** e aprire la sezione **immagine iniziale** .
+3) Applicare l'immagine sotto la proprietà **olografica > olografica di Windows** .
+    - Impostando l'opzione **Mostra schermata iniziale di Unity** sarà abilitata o disabilitata la schermata iniziale di Unity personalizzata. Se non si ha una licenza Pro Unity, viene sempre visualizzata la schermata iniziale di Unity branded.
+    - Se viene applicata un' **immagine iniziale olografica** , questa verrà sempre visualizzata se la casella di controllo Mostra schermata iniziale Unity è abilitata o disabilitata. Specificare un'immagine Splash olografica personalizzata è disponibile solo per gli sviluppatori che dispongono di una licenza Pro Unity.
 
 |  Mostra schermata iniziale Unity  |  Immagine Splash olografica  |  Comportamento |
 |----------|----------|----------|
@@ -130,17 +130,17 @@ Se si verifica una perdita di rilevamento, il comportamento predefinito di Unity
 Per personalizzare l'immagine del rilevamento perso:
 
 1) Vai alla pagina **modifica**  >  **Impostazioni progetto**  >  **lettore**
-2) Fare clic sulla scheda **Windows Store** e aprire la sezione **immagine iniziale** .
-3) Applicare l'immagine desiderata sotto la proprietà **olografica Windows > Tracking Loss** .
+2) Selezionare nella scheda **Windows Store** e aprire la sezione **immagine iniziale** .
+3) Applicare l'immagine sotto la proprietà dell' **immagine della perdita di rilevamento > olografici di Windows** .
 
 #### <a name="opt-out-of-automatic-pause"></a>Rifiutare esplicitamente la sospensione automatica
 
-È possibile che alcune app non richiedano il rilevamento, ad esempio le [app solo](coordinate-systems-in-unity.md) per l'orientamento, ad esempio i visualizzatori video di 360 gradi, oppure che sia necessario continuare l'elaborazione senza interruzioni durante la perdita del rilevamento. In questi casi, le app possono rifiutare esplicitamente la perdita predefinita del comportamento del rilevamento. Gli sviluppatori che scelgono questa operazione sono responsabili di nascondere o disabilitare tutti gli oggetti che non vengono visualizzati correttamente in uno scenario di perdita del rilevamento. Nella maggior parte dei casi, l'unico contenuto che si consiglia di eseguire il rendering in questo caso è il contenuto con blocco del corpo, centrato attorno alla fotocamera principale.
+È possibile che alcune app non richiedano il rilevamento, ad esempio le [app solo](coordinate-systems-in-unity.md) per l'orientamento, ad esempio i visualizzatori video di 360 gradi, oppure che sia necessario continuare l'elaborazione senza interruzioni durante la perdita del rilevamento. È possibile rifiutare esplicitamente la perdita predefinita del comportamento di rilevamento, ma si è responsabili di nascondere o disabilitare gli oggetti, che non vengono visualizzati correttamente in uno scenario di perdita del rilevamento. Nella maggior parte dei casi, l'unico contenuto che si consiglia di eseguire il rendering in questo caso è il contenuto con blocco del corpo, centrato attorno alla fotocamera principale.
 
 Per rifiutare esplicitamente il comportamento di sospensione automatica:
 
 1) Vai alla pagina **modifica**  >  **Impostazioni progetto**  >  **lettore**
-2) Fare clic sulla scheda **Windows Store** e aprire la sezione **immagine iniziale** .
+2) Selezionare la scheda **Windows Store** e aprire la sezione **immagine iniziale** .
 3) Modificare la casella **di controllo > Windows olografico nella casella di controllo Sospendi perdita e Mostra immagine** .
 
 #### <a name="tracking-loss-events"></a>Eventi di perdita di rilevamento
@@ -149,12 +149,12 @@ Per definire un comportamento personalizzato quando il rilevamento viene perso, 
 
 ### <a name="capabilities"></a>Funzionalità
 
-Per fare in modo che un'app sfrutti i vantaggi di determinate funzionalità, deve dichiarare le funzionalità appropriate nel manifesto. Le dichiarazioni di manifesto possono essere apportate in Unity, in modo che vengano incluse in ogni esportazione successiva del progetto.
+Per fare in modo che un'app sfrutti i vantaggi di determinate funzionalità, deve dichiarare le funzionalità appropriate nel manifesto. Le dichiarazioni di manifesto possono essere apportate in Unity, in modo che siano incluse in ogni esportazione futura del progetto.
 
 È possibile abilitare le funzionalità per un'applicazione di realtà mista:
 
 1) Vai alla pagina **modifica**  >  **Impostazioni progetto**  >  **lettore**
-2) Fare clic sulla scheda **Windows Store** , aprire la sezione **impostazioni di pubblicazione** e cercare l'elenco delle **funzionalità**
+2) Selezionare la scheda **Windows Store** , aprire la sezione **impostazioni di pubblicazione** e cercare l'elenco delle **funzionalità**
 
 Le funzionalità applicabili per l'abilitazione delle API di uso comune per le app olografiche sono:
 <br>

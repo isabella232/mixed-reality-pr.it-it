@@ -1,31 +1,31 @@
 ---
 title: Creazione di Galaxy Explorer per HoloLens 2
-description: Benvenuti nel percorso di aggiornamento di Galaxy Explorer per HoloLens 2. Proprio come in Galaxy Explorer originale, il nostro team sarà in grado di aprire il progetto in GitHub per garantire che la community abbia accesso completo.
+description: Benvenuti nel percorso di aggiornamento di Galaxy Explorer per HoloLens 2. Proprio come in Galaxy Explorer originale, il nostro team sarà in grado di fornire il progetto in GitHub per garantire che la community abbia accesso completo.
 author: l-garrett
 ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
 keywords: Galaxy Explorer, case study, Project, Sample, MRTK, Mixed Reality Toolkit, Unity, app di esempio, app di esempio, open source, Microsoft Store, HoloLens, cuffie per la realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 00bf30224a820bd85394c4b97136f81b52fe4128
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 00bf589d738cf74cbfdb489bc43aadf931dda285
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677630"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010472"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>Creazione di Galaxy Explorer per HoloLens 2
 
-Benvenuti nel percorso di aggiornamento di Galaxy Explorer per HoloLens 2. [Galaxy Explorer](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer "Galaxy Explorer") è stato sviluppato originariamente come un'applicazione open source per HoloLens (1st Gen) tramite il programma Condividi il programma di idea ed è una delle prime esperienze di realtà miste che molti hanno avuto. Ora è in corso l'aggiornamento per le [funzionalità nuove ed entusiasmanti di HoloLens 2](https://www.microsoft.com/hololens/hardware).
+Benvenuti nell'applicazione Galaxy Explorer per HoloLens 2 aggiornata. [Galaxy Explorer](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer "Galaxy Explorer") è stato sviluppato originariamente come un'applicazione open source per HoloLens (First Gen) tramite il programma Condividi la tua idea ed è una delle prime esperienze di realtà miste che molti hanno avuto. Ora è stato aggiornato per le [nuove e interessanti funzionalità di HoloLens 2](https://www.microsoft.com/hololens/hardware).
 
-Come uno degli [studi di realtà mista Microsoft](galaxy-explorer-update.md#mixed-reality-studios), in genere si sviluppano soluzioni di livello commerciale e si stanno sviluppando & test sulle piattaforme di destinazione durante il processo di sviluppo e creatività. È ora disponibile la situazione univoca in cui non è ancora possibile accedere ai dispositivi HoloLens 2, ma è entusiasta di avviare gli aggiornamenti in Galaxy Explorer. Questo progetto verrà usato per i Framework e gli strumenti, ad esempio [MRTK V2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html), che diventano disponibili per gli utenti e per la community, per poi offrirci il viaggio.
+Come uno degli [studi di realtà mista Microsoft](galaxy-explorer-update.md#mixed-reality-studios), in genere si sviluppano soluzioni di livello commerciale e si stanno sviluppando & test sulle piattaforme di destinazione durante il processo di sviluppo e creatività. Questo progetto viene avviato usando i Framework e gli strumenti (ad esempio [MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)) che diventano disponibili per gli utenti e la community, per consentire la corsa.
 
-Proprio come in Galaxy Explorer originale, il [nostro team](galaxy-explorer-update.md#meet-the-team) sarà [in grado di aprire il progetto in GitHub](https://github.com/Microsoft/GalaxyExplorer) per garantire che la community abbia accesso completo. Il nostro percorso verrà inoltre documentato in modo completo sulla trasparenza dei modi in cui è stato sottoposto a porting da MRTK V1 a MRTK V2, in che modo è stata migliorata l'esperienza in base alle nuove funzionalità disponibili in HoloLens 2 e in che modo è stato assicurato che Galaxy Explorer è rimasto un'esperienza multipiattaforma. Quindi, che tu stia visualizzando Galaxy Explorer in HoloLens (1 ° generazione), HoloLens 2, un auricolare per la realtà mista di Windows o sul tuo desktop Windows 10, vogliamo assicurarti che tu abbia un'esperienza immersiva e ti piaccia il percorso così com'è.
+Proprio come in Galaxy Explorer originale, il [nostro team](galaxy-explorer-update.md#meet-the-team) sarà [aperto per la fornitura del progetto su GitHub](https://github.com/Microsoft/GalaxyExplorer) per garantire che la community abbia accesso completo. Il nostro percorso verrà inoltre documentato in modo completo, in modo da garantire una maggiore trasparenza sulla modalità di trasferimento da MRTK V1 a MRTK V2, con una migliore esperienza con le nuove funzionalità disponibili in HoloLens 2 e con la certezza che Galaxy Explorer rimanga un'esperienza multipiattaforma. Che tu stia visualizzando Galaxy Explorer in HoloLens (First Gen), HoloLens 2, un auricolare per la realtà mista di Windows o sul tuo desktop Windows 10, vogliamo assicurarti che tu stia godendo il tuo percorso.
 
-Questa pagina verrà espansa Man mano che si procede attraverso il progetto e verranno forniti collegamenti ad articoli più dettagliati, codice, artefatti di progettazione, documentazione aggiuntiva di MRTK V2 e così via.
+Questa pagina si espanderà durante l'avanzamento del progetto con collegamenti ad articoli più dettagliati, codice, elementi di progettazione e documentazione aggiuntiva di MRTK per fornire un'occhiata al progetto.
 
 ## <a name="unveiling-the-new-logo"></a>Scopri il nuovo logo
 
-Siamo entusiasti di iniziare con un'anteprima del nuovo logo di Galaxy Explorer. Pur facendo un omaggio al logo originale con il latte, abbiamo progettato una visualizzazione realistica e aggiornato la tipografia per offrire un'idea più accattivante e moderna. Il logo è incluso in un'anteprima di una delle nuove icone.
+Siamo entusiasti di iniziare con un'anteprima del nuovo logo di Galaxy Explorer. Pur facendo un omaggio al logo originale con il latte, abbiamo progettato una visualizzazione realistica e aggiornato la tipografia per offrire un aspetto più moderno. Il logo è incluso in un'anteprima di una delle nuove icone.
 
 ![Logo di New Galaxy Explorer](images/ge-update-app-icon.png)
 
@@ -33,17 +33,17 @@ La progettazione e la tipografia del logo consentiranno di impostare il tono per
 
 ## <a name="thinking-about-interactions"></a>Considerazioni sulle interazioni
 
-Come studio creativo, siamo entusiasti del privilegio di trasferire Galaxy Explorer a HoloLens 2. Dall'inizio abbiamo voluto che l'esperienza fosse una celebrazione del nuovo dispositivo e per dimostrare che l'empowerment della realtà mista è limitato solo alla fantasia.
+Come studio creativo, siamo entusiasti del privilegio di trasferire Galaxy Explorer a HoloLens 2. Dall'inizio abbiamo voluto che l'esperienza fosse una celebrazione del nuovo dispositivo e per dimostrare che l'empowerment della realtà mista è limitato solo dall'immaginazione.
 
 HoloLens 2 consente agli utenti di toccare, afferrare e spostare gli ologrammi in modi che ritengono naturale: rispondono molto come gli oggetti reali. I modelli a mano completamente articolata sono sorprendenti, perché consentono agli utenti di fare ciò che si ritiene naturale. Ad esempio, tutti gli utenti preferiscono una Coppa leggermente diversa e, anziché applicare un metodo particolare, HoloLens 2 consente di eseguire questa operazione.
 
 >[!VIDEO https://www.youtube.com/embed/wogJv5v9x-s]
 
-Si tratta di un grande cambiamento rispetto alle interfacce basate sul tocco aereo sui dispositivi HoloLens di prima generazione. Invece di interagire con gli ologrammi a distanza, gli utenti possono ora ottenere "Close e personal". Quando si trasferiscono esperienze esistenti a HoloLens 2 o si pianificano nuove esperienze, è importante avere familiarità con la manipolazione diretta degli ologrammi.
+Si tratta di una modifica significativa rispetto alle interfacce basate sul tocco aereo sui dispositivi HoloLens di prima generazione. Invece di interagire con gli ologrammi a distanza, gli utenti possono ora ottenere "Close e personal". Quando si trasferiscono esperienze esistenti a HoloLens 2 o si pianificano nuove esperienze, è importante avere familiarità con la manipolazione diretta degli ologrammi.
 
 ### <a name="direct-manipulation-vs-the-vast-distances-in-space"></a>Manipolazione diretta rispetto alle vaste distanze nello spazio
 
-Si tratta di un'esperienza magica che permette di raggiungere, afferrare un pianeta e tenerlo a portata di mano. Il problema con questo approccio è costituito dalla dimensione del sistema solare, che è enorme. L'utente deve esplorare la stanza per avvicinarsi a ogni pianeta per poter interagire con esso.
+Si tratta di un'esperienza magica per raggiungere, afferrare un pianeta e tenerlo a portata di mano. Il problema con questo approccio è costituito dalla dimensione del sistema solare, che è enorme. L'utente dovrà aggirare la stanza per avvicinarsi a ogni pianeta per interagire con esso.
 
 Per consentire agli utenti di interagire con gli oggetti più lontani, MRTK offre raggi a mano che si rivelano dal centro della palma dell'utente, agendo come un'estensione del manuale. Un cursore a forma di ciambella viene collegato alla fine del raggio per indicare dove si interseca il raggio con un oggetto di destinazione. L'oggetto su cui si posa il cursore può quindi ricevere i comandi gestuali dalla mano. 
 
@@ -59,7 +59,7 @@ Un concetto che abbiamo esplorato era basato sulla telecinesi, ovvero la potenza
 
 ![Concetto di interazione forzata](images/ge-update-interactions-concept-force-grab.png)
 
-L'utente indicherà il raggio della mano su un pianeta, che fornirebbe il feedback di destinazione. Man mano che l'utente estende la propria mano aperta, il pianeta viene indirizzato verso l'utente da una forza magica fino a quando non è sufficientemente vicino per poterlo acquisire. Quindi, il nome dell'interazione: forzare l'esecuzione. Man mano che l'utente spinge il mondo con la loro apertura, tornerà alla propria orbita.
+L'utente indicherà il raggio della mano su un pianeta, che fornirebbe il feedback di destinazione. Man mano che l'utente estende la propria mano aperta, il pianeta viene indirizzato verso l'utente da una forza magica fino a quando non è sufficiente per estrarlo. Quindi, il nome dell'interazione: forzare l'esecuzione. Man mano che l'utente spinge il mondo con la loro apertura, tornerà alla propria orbita.
 
 ### <a name="force-grab-prototyping"></a>Forza la prototipazione
 
@@ -79,7 +79,7 @@ __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 
 ### <a name="implementing-force-grab-into-the-application"></a>Implementazione dell'esecuzione forzata nell'applicazione
 
-Quando si è provato a forzare i pianeti, abbiamo scoperto che abbiamo dovuto modificare la scala del sistema solare. Si è scoperto che una rappresentazione accurata e di medie dimensioni del sistema solare è difficile per gli utenti capire e navigare, non sapevano dove cercare. Tuttavia, una rappresentazione accurata di piccole dimensioni rende alcuni pianeti troppo piccoli per essere facilmente selezionati. Di conseguenza, le dimensioni dei pianeti e la spaziatura tra oggetti solari sono state progettate per essere confortevoli all'interno di una stanza di medie dimensioni, mantenendo al tempo stesso l'accuratezza relativa.
+Quando si è provato a forzare i pianeti, abbiamo scoperto che abbiamo dovuto modificare la scala del sistema solare. Si è scoperto che una rappresentazione accurata e di medie dimensioni del sistema solare è difficile per gli utenti capire e spostarsi. Tuttavia, una rappresentazione di dimensioni ridotte rende alcuni pianeti troppo piccoli per essere facilmente selezionati. Di conseguenza, le dimensioni dei pianeti e la spaziatura tra oggetti solari sono state progettate per essere confortevoli all'interno di una stanza di medie dimensioni, mantenendo al tempo stesso l'accuratezza relativa.
 
 Durante le fasi successive dello sprint di sviluppo, abbiamo avuto una buona fortuna per avere a disposizione gli esperti di realtà mista MSFT, quindi abbiamo dovuto lavorare come tester esperti ed eseguire iterazioni rapide nell'interazione di forzatura.
 
@@ -91,17 +91,17 @@ Immagine: Jenny Kam, Senior Design lead, che testa un lavoro in corso di Galaxy 
 
 Quando abbiamo sperimentato HoloLens 2, abbiamo scoperto che anche se le nuove interazioni sono naturali e intuitive, gli ologrammi rimangono invariati: senza sensazioni di peso o tattili. Poiché gli ologrammi non forniscono il feedback naturale che gli utenti sono abituati a ricevere quando interagiscono con gli oggetti, è necessario crearli.
 
-Sono stati rilevati commenti e suggerimenti visivi e audio che gli utenti fornivano per le varie fasi delle loro interazioni. Poiché il meccanismo di forzatura è fondamentale per interagire con Galaxy Explorer, abbiamo fatto molte iterazioni. Lo scopo era quello di trovare il giusto equilibrio tra il feedback audio e visivo per ogni fase dell'interazione, ovvero concentrandosi sull'oggetto previsto, chiamandolo all'utente e quindi rilasciandolo. Si è appreso che è stato richiesto un maggior numero di commenti e suggerimenti visivi per rafforzare l'interazione rispetto a quello usato per HoloLens (1a generazione).
+Sono stati rilevati commenti e suggerimenti visivi e audio che gli utenti fornivano per le varie fasi delle loro interazioni. Poiché il meccanismo di forzatura è fondamentale per interagire con Galaxy Explorer, abbiamo fatto molte iterazioni. Lo scopo era quello di trovare il giusto equilibrio tra il feedback audio e visivo per ogni fase dell'interazione, ovvero concentrandosi sull'oggetto previsto, chiamandolo all'utente e quindi rilasciandolo. Ciò che abbiamo appreso è che è stato richiesto un maggior numero di feedback audio e visivi per rafforzare l'interazione rispetto a quella usata per HoloLens (prima generazione).
 
 ![Visual affordances sui pianeti](images/ge-update-planet-affordances.png)
 
 ### <a name="adding-affordances-for-force-grab"></a>Aggiunta di affordances per Force appigli
  
-Una volta ottenuto il meccanismo di forzatura di base con audio e Visual affordances, abbiamo esaminato come rendere più intuitiva la selezione dei pianeti. Ci sono due aspetti principali da considerare: poiché il sistema solare è un'interfaccia di trasferimento 3D, è necessario che gli utenti apprendano come indirizzare gli oggetti in modo coerente. Questo è stato aggravato dal fatto che il raggio della mano è molto veloce quando si seleziona un oggetto, facendo in modo che i pianeti si spostano verso l'utente incredibilmente rapidamente.
+Una volta ottenuto il meccanismo di forzatura di base con audio e Visual affordances, è stato illustrato come rendere la selezione dei pianeti più intuitiva. Ci sono due aspetti principali da considerare: poiché il sistema solare è un'interfaccia di trasferimento 3D, è necessario che gli utenti apprendano come indirizzare gli oggetti in modo coerente. Questo è stato aggravato dal fatto che il raggio della mano è veloce durante la selezione di un oggetto, facendo in modo che i pianeti si spostano verso l'utente incredibilmente rapidamente.
 
-Questa operazione è stata affrontata con una soluzione a tre punte. Il primo era abbastanza intuitivo: rallentare il processo di selezione in modo che i pianeti approccino l'utente a un ritmo più naturale. Dopo che la velocità è stata modificata, è stato necessario rivedere i affordances audio e visivi, aggiungendo commenti e suggerimenti audio aggiuntivi in modo da tenere traccia dell'utente.
+Questa operazione è stata affrontata con una soluzione a tre punte. Il primo era abbastanza intuitivo: rallentare il processo di selezione in modo che i pianeti approccino l'utente a un ritmo più naturale. Dopo che la velocità è stata modificata, è stato necessario rivedere i affordances audio e visivi, aggiungendo il feedback audio che il pianeta ha rilevato per l'utente.
 
-La seconda parte della soluzione consisteva nel rendere estremamente tangibile la visualizzazione dell'intera interazione forzata. È stata visualizzata una linea spessa che si sposta verso l'oggetto di destinazione quando il raggio della mano si connette, quindi riporta di nuovo l'oggetto all'utente come un lazo. 
+La seconda parte della soluzione consisteva nell'apportare la visualizzazione dell'intera interazione con l'azione di cattura. È stata visualizzata una linea spessa che si sposta verso l'oggetto di destinazione quando il raggio della mano si connette, quindi riporta di nuovo l'oggetto all'utente come un lazo. 
 
 ![Affordances visivo "lazo" per la forzatura](images/ge-update-lasso-affordances.png)
 
@@ -123,7 +123,7 @@ Come un gigante gassoso, le shell esterne di Jupiter sono costituite da livelli 
 
 Il secondo approccio era una soluzione "Smoke-and-mirror", costituita dalla sovrapposizione di livelli di trama trasparente, ognuno dei quali ha affrontato un aspetto specifico del movimento atmosferico, compilato su una composizione di mesh rotanti.
 
-Nell'immagine seguente è possibile visualizzare la shell interna sulla sinistra. Questo livello opaco fornisce uno sfondo alla composizione per proteggersi da eventuali piccoli gap tra i diversi livelli che comprendono i cloud. A causa della rotazione lenta del livello, viene anche servito come buffer visivo tra i gruppi di movimento più veloci per facilitare la creazione di Unity visuali in tutti i livelli.
+Nell'immagine seguente è possibile visualizzare la shell interna sulla sinistra. Questo livello Mat fornisce uno sfondo alla composizione per proteggersi da eventuali piccoli gap tra i diversi livelli che compongono i cloud. A causa della rotazione lenta del livello, viene anche servito come un buffer visivo tra le bande mobili più veloci per facilitare la creazione di Unity visuali in tutti i livelli.
 
 Dopo aver impostato il punto di ancoraggio sul modello, i livelli del cloud spostando sono stati proiettati nelle mesh centrali e giuste visualizzate sotto.
 
@@ -135,13 +135,13 @@ La trama esistente è stata suddivisa in un Atlante di trama in tre parti: il te
 
 La caratteristica grande macchia rossa è stata inoltre suddivisa nelle varie parti mobili e quindi inserita in un'area altrimenti invisibile della trama. Questi componenti possono essere considerati come le macchie rosse nella sezione centrale dell'immagine seguente.
 
-Poiché ogni banda ha una direzione e una velocità specifiche, la trama è stata applicata singolarmente a ogni mesh. I mesh hanno quindi un centro e un punto di perno comuni per poter animare in modo concentrico l'intera superficie.
+Poiché ogni banda ha una direzione e una velocità specifiche, la trama è stata applicata singolarmente a ogni mesh. I mesh hanno quindi un centro e un punto di perno comuni, che hanno consentito di animare in modo concentrico l'intera superficie.
 
 ![Panoramica delle trame Jupiter](images/ge-update-jupiter-planet-cloud-texture.png)
 
 ### <a name="rotation-and-texture-behavior"></a>Comportamento della rotazione e della trama
 
-Ora che è stata impostata la composizione visiva di Jupiter, era necessario assicurarsi che le velocità di rotazione e di orbita fossero calcolate correttamente e applicate di conseguenza. Per il completamento di una rotazione completa, per Jupiter sono necessarie circa 9 ore. Si tratta di una situazione di definizione dovuta alla rotazione differenziale. Di conseguenza, il flusso equatoriale è stato impostato come ' flusso Master ', accettando 3600 frame per una rotazione completa. Ogni altro livello doveva avere una velocità rotazionale come fattore di 3600, in modo da corrispondere alla posizione iniziale, consentendo ad esempio 600, 900, 1200, 1800 e così via.
+Una volta impostata la composizione visiva di Jupiter, era necessario garantire che le velocità di rotazione e di orbita fossero calcolate correttamente e applicate di conseguenza. Per il completamento di una rotazione completa, per Jupiter sono necessarie circa 9 ore. Si tratta di una situazione di definizione dovuta alla rotazione differenziale. Di conseguenza, il flusso equatoriale è stato impostato come ' flusso Master ', accettando 3600 frame per una rotazione completa. Ogni altro livello deve avere una velocità rotazionale come fattore di 3600 per corrispondere alla posizione iniziale, consentendo, ad esempio, 600, 900, 1200, 1800 e così via.
 
 ![Trame della shell Jupiter](images/ge-update-shell-texture.jpg)
 
@@ -176,7 +176,7 @@ Il risultato è che la shell interna disponeva di un valore della coda di render
 
 I livelli Jupiter con trama sono stati configurati inizialmente, il che si è rivelato insufficiente per l'implementazione.
 
-Lo shader standard del pianeta originale (e tutte le relative varianti) riceve le informazioni di illuminazione tramite uno script, SunLightReceiver, che non è supportato dallo shader standard MRTK.
+Lo shader standard del pianeta originale, e tutte le relative varianti, ricevono le informazioni di illuminazione tramite uno script, SunLightReceiver, che non è supportato dallo shader standard MRTK.
 
 Semplicemente lo scambio degli shader non è una soluzione perché lo shader standard del pianeta non supporta le mappe di trama con lucidi. Questo shader è stato modificato per fare in modo che la compilazione Jupiter funzioni come previsto.
 
@@ -190,7 +190,7 @@ Infine, è necessario configurare le miscele Alpha impostando la blend di origin
 
 Il nostro team di studio di realtà mista è costituito da designer, artisti 3D, specialisti di UX, sviluppatori, Program Manager e un responsabile di studio. Siamo in tutto il mondo: Belgio, Canada, Germania, Israele, Giappone, Regno Unito e Stati Uniti. Si tratta di un team multidisciplinare che deriva da un background diversificato, ovvero giochi tradizionali e indie, marketing digitale, sanità e scienza.
 
-Siamo entusiasti di creare Galaxy Explorer per HoloLens 2 e di aggiornare le versioni HoloLens (1st Gen), VR e desktop. 
+Siamo entusiasti di creare Galaxy Explorer per HoloLens 2 e di aggiornare le versioni HoloLens (First Gen), VR e desktop. 
 
 ![Il team di Galaxy Explorer](images/ge-update-team-image.png)
 

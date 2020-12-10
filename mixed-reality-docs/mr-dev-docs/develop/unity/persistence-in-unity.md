@@ -1,24 +1,24 @@
 ---
 title: Persistenza in Unity
-description: La persistenza consente agli utenti di aggiungere singoli ologrammi o un'area di lavoro ovunque si trovino, quindi trovarli in un secondo momento, in cui si aspettano per molti usi dell'app.
+description: La persistenza consente agli utenti di aggiungere singoli ologrammi ovunque si trovino e quindi di trovarli in un secondo momento rispetto a molti utilizzi dell'app.
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens, persistenza, Unity, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: cff7f05a5a5695ae8e379ed681c3b7320622968c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: d74f9c0a118c1886037c564073742ebedc7d0146
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678530"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010442"
 ---
 # <a name="persistence-in-unity"></a>Persistenza in Unity
 
 **Spazio dei nomi:** *UnityEngine. XR. WSA. Persistence*<br>
 **Classe:** *WorldAnchorStore*
 
-WorldAnchorStore è la chiave per la creazione di esperienze olografiche in cui gli ologrammi mantengono posizioni reali specifiche tra le istanze dell'applicazione. In questo modo gli utenti possono aggiungere singoli ologrammi o un'area di lavoro ovunque si trovino, quindi trovarli in un secondo momento, in cui si aspettano molti usi dell'app.
+WorldAnchorStore è la chiave per la creazione di esperienze olografiche in cui gli ologrammi mantengono posizioni reali specifiche tra le istanze dell'applicazione. Gli utenti possono quindi aggiungere singoli ologrammi ovunque si trovino e trovarli più avanti nello stesso punto rispetto a molti utilizzi dell'app.
 
 ## <a name="how-to-persist-holograms-across-sessions"></a>Come salvare in modo permanente gli ologrammi tra le sessioni
 
@@ -26,7 +26,7 @@ Il WorldAnchorStore consentirà di rendere permanente il percorso di WorldAnchor
 
 Per caricare gli ologrammi dalle sessioni precedenti:
 1. Ottenere il WorldAnchorStore
-2. Caricare i dati dell'app correlati all'ancoraggio mondiale che fornisce l'ID dell'ancoraggio globale
+2. Caricare i dati dell'app correlati all'ancoraggio globale, che fornisce l'ID dell'ancoraggio globale
 3. Caricare un ancoraggio globale dall'ID
 
 Per salvare gli ologrammi per le sessioni future:
@@ -36,7 +36,7 @@ Per salvare gli ologrammi per le sessioni future:
 
 ### <a name="getting-the-worldanchorstore"></a>Recupero di WorldAnchorStore
 
-È opportuno tenere presente un riferimento al WorldAnchorStore in modo che sia possibile procedere quando si desidera eseguire un'operazione. Poiché si tratta di una chiamata asincrona, potenzialmente non appena viene avviata, è necessario chiamare
+È consigliabile tenere un riferimento a WorldAnchorStore in modo da essere a conoscenza quando è pronto per eseguire un'operazione. Poiché si tratta di una chiamata asincrona, potenzialmente non appena viene avviata, si vuole chiamare:
 
 ```
 WorldAnchorStore.GetAsync(StoreLoaded);
@@ -51,11 +51,11 @@ private void StoreLoaded(WorldAnchorStore store)
 }
 ```
 
-È ora disponibile un riferimento a WorldAnchorStore che verrà usato per salvare e caricare specifici ancoraggi internazionali.
+È ora disponibile un riferimento a WorldAnchorStore, che verrà usato per salvare e caricare specifici ancoraggi internazionali.
 
 ### <a name="saving-a-worldanchor"></a>Salvataggio di un WorldAnchor
 
-Per salvare, è sufficiente assegnare un nome a quello che si sta salvando e passarlo nel WorldAnchor ottenuto in precedenza quando si desidera salvare. Nota: il tentativo di salvare due ancoraggi nella stessa stringa avrà esito negativo (Store. Il salvataggio restituirà false. È necessario eliminare il salvataggio precedente prima di salvarne uno nuovo:
+Per salvare, è sufficiente assegnare un nome a quello che si sta salvando e passarlo nel WorldAnchor ottenuto in precedenza quando si desidera salvare. Nota: il tentativo di salvare due ancoraggi nella stessa stringa avrà esito negativo (Store. Il salvataggio restituirà false. Eliminare il salvataggio precedente prima di salvare quello nuovo:
 
 ```
 private void SaveGame()
@@ -114,7 +114,7 @@ Se si sta seguendo il percorso di checkpoint per lo sviluppo di Unity, è possib
 > [!div class="nextstepaction"]
 > [Mapping spaziale](spatial-mapping-in-unity.md)
 
-In alternativa, passare alle API e funzionalità della piattaforma di realtà mista:
+In alternativa, passare alle API e alle funzionalità della piattaforma di realtà mista:
 
 > [!div class="nextstepaction"]
 > [Esperienze condivise](shared-experiences-in-unity.md)

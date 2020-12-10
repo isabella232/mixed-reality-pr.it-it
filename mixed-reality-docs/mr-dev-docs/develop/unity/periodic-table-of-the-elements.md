@@ -1,24 +1,24 @@
 ---
 title: Tavola periodica degli elementi
-description: La tabella periodica degli elementi è un'app di esempio Open Source di Microsoft Mixed Reality Design Labs, in cui è possibile apprendere come disporre una matrice di oggetti nello spazio 3D con vari tipi di superficie usando una raccolta di oggetti.
+description: La tabella periodica degli elementi è un'app di esempio Open Source di Microsoft Mixed Reality Design Labs. Informazioni su come definire il layout di una matrice di oggetti nello spazio 3D con vari tipi di superficie usando una raccolta di oggetti.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, app di esempio, controlli, MRTK, Toolkit per realtà mista, Unity, app di esempio, app di esempio, open source, Microsoft Store, HoloLens, auricolare per realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 4b85631fb044ee0b24c003f7808fd0455b87deec
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a4099c889fee886e63d3a8b773398a250621f26e
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677680"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010182"
 ---
 # <a name="periodic-table-of-the-elements"></a>Tavola periodica degli elementi
 
 >[!NOTE]
 >Questo articolo illustra un esempio esplorativo creato nei [laboratori di progettazione della realtà mista](https://github.com/Microsoft/MRDesignLabs_Unity), un posto in cui si condividono le informazioni e suggerimenti per lo sviluppo di app di realtà miste. Gli articoli e il codice correlati alla progettazione si evolveranno Man mano che si effettuano nuove individuazioni.
 
-[La tabella periodica degli elementi](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) è un'app di esempio Open Source di Microsoft Mixed Reality Design Labs. Con questo progetto è possibile apprendere come disporre una matrice di oggetti nello spazio 3D con vari tipi di superficie usando una **[raccolta di oggetti](../../design/object-collection.md)**. Viene inoltre illustrato come creare oggetti interagibili che rispondono agli input standard da HoloLens. È possibile usare i componenti di questo progetto per creare un'esperienza di app per realtà mista.
+[La tabella periodica degli elementi](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) è un'app di esempio Open Source di Microsoft Mixed Reality Design Labs. Informazioni su come disporre una matrice di oggetti nello spazio 3D con vari tipi di superficie usando una **[raccolta di oggetti](../../design/object-collection.md)**. Viene inoltre illustrato come creare oggetti interagibili che rispondono agli input standard da HoloLens. È possibile usare i componenti di questo progetto per creare un'esperienza di app per realtà mista.
 
 ![Tabella del periodo dell'app elementi](images/640px-periodictable-hero.jpg)
 
@@ -31,9 +31,9 @@ Registrato con HoloLens 2 con l'acquisizione di realtà mista
 
 La tabella periodica degli elementi Visualizza gli elementi chimici e ognuna delle relative proprietà in uno spazio 3D. Incorpora le interazioni di base di HoloLens, ad esempio lo sguardo e il tocco aereo. Gli utenti possono ottenere informazioni sugli elementi con i modelli 3D animati. Possono comprendere visivamente la Shell degli elettroni di un elemento e il suo nucleo, composto da protoni e neutroni.
 
-## <a name="background"></a>Sfondo
+## <a name="background"></a>Background
 
-Dopo la prima volta che ho sperimentato HoloLens, un'app di tabella periodica era un'idea che ho voluto sperimentare in realtà mista. Poiché ogni elemento dispone di molti punti dati visualizzati con testo, ho pensato che sarebbe stato molto soggetto per l'esplorazione della composizione tipografica in uno spazio 3D. La possibilità di visualizzare il modello Electron dell'elemento era un'altra parte interessante di questo progetto.
+Dopo aver sperimentato HoloLens, sapevo di voler sperimentare un'app di tabella periodica in realtà mista. Poiché ogni elemento dispone di molti punti dati visualizzati con testo, ho pensato che sarebbe stato molto soggetto per l'esplorazione della composizione tipografica in uno spazio 3D. Fornire agli utenti la possibilità di visualizzare il modello Electron dell'elemento era un'altra parte interessante di questo progetto.
 
 ## <a name="design"></a>Progettazione
 
@@ -55,7 +55,7 @@ L'utente può modificare il tipo di superficie per aria toccando i pulsanti nell
 
 ### <a name="interactable-object-button"></a>Oggetto interagibile (pulsante)
 
-L' [oggetto interagibile](../../design/interactable-object.md) è un oggetto che può rispondere agli input HoloLens di base. Viene fornito come prefabbricato/script che è possibile applicare facilmente a qualsiasi oggetto. Ad esempio, è possibile rendere interattivo un caffè nella scena e rispondere a input come lo sguardo, il tocco aereo, i movimenti di spostamento e manipolazione. [Scopri di più](../../design/interactable-object.md)
+L' [oggetto interagibile](../../design/interactable-object.md) è un oggetto che può rispondere agli input HoloLens di base. Viene fornito come prefabbricato/script, che è possibile applicare facilmente a qualsiasi oggetto. Ad esempio, è possibile rendere interattivo un caffè nella scena e rispondere a input come lo sguardo, il tocco aereo, la navigazione e i movimenti di manipolazione. [Scopri di più](../../design/interactable-object.md)
 
 ![oggetto nteractable](images/640px-periodictable-interactableobject.jpg)
 

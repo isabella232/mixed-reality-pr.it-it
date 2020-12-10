@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: tastiera, input, Unity, touchscreenkeyboard, cuffie per realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: aa9bb3059a8d0cc5b829bf14d92928511259b7f9
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 613c9327b517205c340555b6423a3809906f9b9f
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677420"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010512"
 ---
 # <a name="keyboard-input-in-unity"></a>Input da tastiera in Unity
 
@@ -24,11 +24,11 @@ Unity fornisce la classe *[TouchScreenKeyboard](https://docs.unity3d.com/ScriptR
 
 ## <a name="hololens-system-keyboard-behavior-in-unity"></a>Comportamento della tastiera di sistema HoloLens in Unity
 
-In HoloLens, *TouchScreenKeyboard* sfrutta la tastiera sullo schermo del sistema. La tastiera sullo schermo del sistema non è in grado di sovrapporsi a una visualizzazione volumetrica, in modo che Unity debba creare una visualizzazione XAML 2D secondaria per mostrare la tastiera e tornare alla visualizzazione volumetrica una volta inviato l'input. Il flusso utente sarà simile al seguente:
+In HoloLens, *TouchScreenKeyboard* sfrutta la tastiera su schermo del sistema. La tastiera su schermo del sistema non può sovrapporsi a una visualizzazione volumetrica. Unity deve creare una visualizzazione XAML 2D secondaria per mostrare la tastiera e tornare alla visualizzazione volumetrica una volta inviato l'input. Il flusso utente sarà simile al seguente:
 1. L'utente esegue un'azione che causa il codice dell'app per chiamare *TouchScreenKeyboard*
     * L'app è responsabile della sospensione dello stato dell'app prima della chiamata a *TouchScreenKeyboard*
     * L'app può terminare prima di tornare alla visualizzazione volumetrica
-2. Unity passa a una visualizzazione XAML 2D, che viene inserita automaticamente nel mondo
+2. Unity passa a una visualizzazione XAML 2D, che è posizionata automaticamente nel mondo
 3. L'utente immette il testo usando la tastiera di sistema e invia o Annulla
 4. Unity ritorna alla visualizzazione volumetrica
     * L'app è responsabile della ripresa dello stato dell'app al termine della *TouchScreenKeyboard*
@@ -49,7 +49,7 @@ Sono disponibili sei diverse visualizzazioni tastiera:
 La tastiera di sistema HoloLens è disponibile solo per le applicazioni Unity esportate con il "tipo di compilazione UWP" impostato su "XAML". Quando si sceglie "XAML" come "tipo di compilazione UWP" su "D3D", si verificano compromessi. Se non si ha familiarità con questi compromessi, può essere utile esplorare una [soluzione di input alternativa](#alternative-keyboard-options) alla tastiera di sistema.
 1. Aprire il menu **file** e selezionare **impostazioni di compilazione...**
 2. Verificare che **la piattaforma** sia impostata su **Windows Store**, che l' **SDK** sia impostato su **Universal 10** e impostare il **tipo di compilazione UWP** su **XAML**.
-3. Nella finestra di dialogo **impostazioni di compilazione** fare clic sul pulsante **Impostazioni lettore...**
+3. Nella finestra di dialogo **impostazioni di compilazione** selezionare il pulsante **Impostazioni lettore...**
 4. Selezionare la scheda **impostazioni per Windows Store**
 5. Espandi il gruppo **altre impostazioni**
 6. Nella sezione **rendering** selezionare la casella di controllo **realtà virtuale supportata** per aggiungere un nuovo elenco **dispositivi di realtà virtuale**
@@ -71,7 +71,7 @@ public static string keyboardText = "";
 
 ### <a name="invoke-the-keyboard"></a>Richiama la tastiera
 
-Quando si verifica un evento che richiede l'input da tastiera, chiamare una di queste funzioni a seconda del tipo di input desiderato. Si noti che il titolo viene specificato nel parametro textPlaceholder.
+Quando si verifica un evento che richiede l'input da tastiera, chiamare una di queste funzioni a seconda del tipo di input che si desidera utilizzare come titolo nel parametro textPlaceholder.
 
 ```cs
 // Single-line textbox
@@ -118,7 +118,7 @@ Le alternative attuali per sfruttare la tastiera di sistema tramite Unity includ
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si segue il percorso di checkpoint per lo sviluppo di Unity, è possibile esplorare le funzionalità e le API della piattaforma per la realtà mista. Da qui è possibile passare a qualsiasi [argomento](unity-development-overview.md#3-platform-capabilities-and-apis) o passare direttamente alla distribuzione dell'app in un dispositivo o in un emulatore.
+Se si sta seguendo il percorso di sviluppo di Unity, è possibile esplorare le funzionalità e le API della piattaforma per la realtà mista. Da qui è possibile passare a qualsiasi [argomento](unity-development-overview.md#3-platform-capabilities-and-apis) o passare direttamente alla distribuzione dell'app in un dispositivo o in un emulatore.
 
 > [!div class="nextstepaction"]
 > [Eseguire la distribuzione in HoloLens o in modalità mista di Windows per la realtà mista](../platform-capabilities-and-apis/using-visual-studio.md)

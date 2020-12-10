@@ -6,24 +6,24 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, Visual Studio, Export, Build, deploy, HoloLens, multireality Headset, Windows Mixed Reality Headset, Virtual Reality Headset, UWP, Deploying
-ms.openlocfilehash: 29415fa7d561cab1aec5f0c2c9344fa24b0e8293
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4da20a30375c7204c532a19c129c9265c0fa27d9
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677560"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010412"
 ---
 # <a name="exporting-and-building-a-unity-visual-studio-solution"></a>Esportazione e creazione di una soluzione di Visual Studio Unity
 
-Se non si prevede di usare la tastiera di sistema nell'applicazione, è consigliabile usare *D3D* perché l'applicazione userà una quantità di memoria leggermente inferiore e un tempo di avvio leggermente più rapido. Se si usa l'API TouchScreenKeyboard nel progetto per usare la tastiera di sistema, è necessario esportare come *XAML*.
+Se l'app non richiede la tastiera di sistema, si consiglia di usare *D3D* in modo che l'app usi un minor numero di memoria e un tempo di avvio più veloce. Tuttavia, se si usa la tastiera di sistema tramite l'API TouchScreenKeyboard, è necessario esportare il progetto come *XAML*.
 
 ## <a name="how-to-export-from-unity"></a>Come esportare da Unity
 
 ![Impostazioni di compilazione Unity](images/unitybuildsettings-300px.png)<br>
-*Impostazioni di compilazione Unity*
+*Impostazioni di compilazione nell'editor di Unity*
 
 1. Quando si è pronti per esportare il progetto da Unity, aprire il menu **file** e selezionare **impostazioni di compilazione...**
-2. Fare clic su **Aggiungi scene aperte** per aggiungere la scena alla compilazione.
+2. Selezionare **Aggiungi scene aperte** per aggiungere la scena alla compilazione.
 3. Nella finestra di dialogo **impostazioni di compilazione** scegliere le opzioni seguenti per esportare per HoloLens:
    * **Piattaforma:** *piattaforma UWP (Universal Windows Platform)* e assicurarsi di selezionare **Switch Platform (Cambia piattaforma** ) per rendere effettive le selezioni.
    * **SDK:** *universale 10*.
@@ -48,7 +48,7 @@ Se non si prevede di usare la tastiera di sistema nell'applicazione, è consigli
 
 ## <a name="when-to-re-export-from-unity"></a>Quando eseguire nuovamente l'esportazione da Unity
 
-Il controllo della casella di controllo "progetti C#" quando si esporta l'app da Unity crea una soluzione di Visual Studio che include tutti i file di script Unity. Ciò consente di eseguire l'iterazione degli script senza riesportare da Unity. Tuttavia, se si desidera apportare modifiche al progetto che non cambiano solo il contenuto degli script, sarà necessario eseguire di nuovo l'esportazione da Unity. Di seguito sono riportati alcuni esempi di casi in cui è necessario eseguire di nuovo l'esportazione da Unity:
+Controllo della casella di controllo **progetti C#** quando si esporta l'app da Unity crea una soluzione di Visual Studio che include tutti i file di script Unity. La presenza di tutti gli script in un'unica posizione consente di eseguire l'iterazione senza riesportare da Unity. Tuttavia, se si apportano modifiche al progetto che non cambiano solo il contenuto degli script, sarà necessario eseguire di nuovo l'esportazione da Unity. Di seguito sono riportati alcuni esempi di casi in cui è necessario eseguire di nuovo l'esportazione da Unity:
 * È possibile aggiungere o rimuovere asset nella scheda progetto.
 * È possibile modificare qualsiasi valore nella scheda Inspector (controllo).
 * Si aggiungono o rimuovono oggetti dalla scheda gerarchia.
@@ -56,7 +56,7 @@ Il controllo della casella di controllo "progetti C#" quando si esporta l'app da
 
 ## <a name="building-and-deploying-a-unity-visual-studio-solution"></a>Compilazione e distribuzione di una soluzione Unity di Visual Studio
 
-Il resto della compilazione e della distribuzione delle app avviene in [Visual Studio](../platform-capabilities-and-apis/using-visual-studio.md). Sarà necessario specificare una configurazione di compilazione Unity. Le convenzioni di denominazione di Unity possono essere diverse da quelle usate in genere in Visual Studio:
+Il resto della compilazione e della distribuzione delle app avviene in [Visual Studio](../platform-capabilities-and-apis/using-visual-studio.md). Sarà necessario specificare una configurazione di compilazione Unity. Le convenzioni di denominazione di Unity possono essere diverse da quelle usate in Visual Studio:
 
 |  Configurazione  |  Spiegazione | 
 |----------|----------|
@@ -64,8 +64,8 @@ Il resto della compilazione e della distribuzione delle app avviene in [Visual S
 |  Master  |  Tutte le ottimizzazioni sono attivate e il profiler è disabilitato. Usato per inviare app allo Store. | 
 |  Versione  |  Tutte le ottimizzazioni sono attivate e il profiler è abilitato. Usato per valutare le prestazioni dell'app. | 
 
-Si noti che l'elenco precedente è un subset dei trigger comuni che comporteranno la generazione del progetto di Visual Studio. In generale, la modifica dei file con estensione cs da Visual Studio non richiede la rigenerazione del progetto da Unity.
+Si noti che l'elenco precedente è un subset dei trigger comuni che comporteranno la generazione del progetto di Visual Studio. In generale, la modifica dei file con estensione cs da Visual Studio non richiede la rigenerazione del progetto dall'interno di Unity.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-Se le modifiche apportate ai file con estensione cs non vengono riconosciute nel progetto di Visual Studio, assicurarsi che "progetti C# Unity" sia selezionato quando si genera il progetto VS dal menu Compila di Unity.
+Se le modifiche apportate ai file con estensione cs non vengono riconosciute nel progetto di Visual Studio, assicurarsi che i **progetti C# di Unity** vengano controllati quando si genera il progetto vs dal menu Compila di Unity.

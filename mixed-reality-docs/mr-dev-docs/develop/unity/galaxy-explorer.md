@@ -6,18 +6,19 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Galaxy Explorer, case study, Project, Sample, MRTK, Mixed Reality Toolkit, Unity, app di esempio, app di esempio, open source, Microsoft Store, HoloLens, cuffie per la realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: a58d07cd50679154fe68d3b8b7d424ea6cfbf39e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7ab439a1248895975c5ebff676862515ee79ecf0
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678620"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010302"
 ---
 # <a name="galaxy-explorer"></a>Galaxy Explorer
 
 **Sono state condivise le idee. Stiamo condividendo il codice.**
 
-Il progetto Galaxy Explorer è pronto. Hai condiviso le tue idee con la community, hai scelto un'app, hai osservato un team durante la fase di sviluppo e ora puoi avere il codice sorgente. Se si dispone di un dispositivo, è anche possibile scaricare il progetto Galaxy Explorer da Windows Store per Microsoft HoloLens.
+Il progetto Galaxy Explorer è pronto. Hai condiviso le tue idee con la community, hai scelto un'app, ho guardato un team per compilarla e ora puoi ottenere il codice sorgente. Se si dispone di un dispositivo, il progetto Galaxy Explorer è disponibile per il download da Windows Store per Microsoft HoloLens.
+
 >[!TIP]
 >[Ottenere il codice](https://github.com/Microsoft/GalaxyExplorer) su GitHub
 
@@ -92,7 +93,7 @@ Nell'episodio 7 il team completa il progetto e condivide il codice.
 ![Team di sviluppo di Galaxy Explorer](images/syiteampic.jpg)<br>
 *Team di sviluppo di Galaxy Explorer*
 
-Abbiamo appreso la creazione del team giusto è uno degli investimenti più importanti che potremmo realizzare. Si è deciso di organizzare in modo analogo a un Game Studio per coloro che hanno familiarità con il modello di sviluppo. Abbiamo scelto di avere undici membri principali del team per il controllo dell'ambito, poiché avevamo un intervallo di tempo fisso (crea qualcosa di interessante prima della compilazione il 30 marzo 2016).
+Abbiamo appreso che la creazione del team giusto è uno degli investimenti più importanti che avremmo deciso di organizzare in modo analogo a un Game Studio per coloro che hanno familiarità con il modello di sviluppo. Abbiamo scelto di avere 11 membri del team Core per il controllo dell'ambito, perché avevamo un intervallo di tempo fisso (crea qualcosa di interessante prima della compilazione il 30 marzo 2016).
 
 Per questo progetto, abbiamo iniziato con un Producer, Jessica che ha condotto la pianificazione, la revisione dello stato di avanzamento e l'esecuzione di attività quotidiane. È quello con i capelli rosa. Avevamo un responsabile della progettazione (Jon) e un Senior Designer (Peter). Hanno mantenuto la visione creativa per Galaxy Explorer. Jon è uno degli occhiali nella riga anteriore e Peter è il secondo da destra nella parte posteriore.
 
@@ -100,9 +101,9 @@ Avevamo tre sviluppatori: BJ (tra Jon e Jessica), Mike (seconda riga a sinistra)
 
 Abbiamo iniziato con quattro artisti a tempo pieno: un ideatore (Giancarlo, secondo da sinistra nella parte posteriore), un modellatore (Andy, terzo da destra nel retro), un artista tecnico (Alex (la maggior parte della persona) e un animatore (Steve (più a sinistra). Ognuna di esse esegue anche questa operazione, ma queste sono responsabilità primarie.
 
-Avremo un tester a tempo pieno, Lena, che ha testato ogni giorno le compilazioni, ha configurato i nostri revisioni di compilazione e ha esaminato le funzionalità non appena vengono riportate online. Tutti gli utenti hanno testato costantemente le nostre compilazioni. Lena ' s a rocking the Leather Jacket.
+Avevamo un tester a tempo pieno, Lena, che ha testato le nostre Build ogni giorno, configurando le recensioni di compilazione e rivisto le funzionalità non appena vengono riportate online. Tutti gli utenti hanno testato costantemente le nostre compilazioni. Lena ' s a rocking the Leather Jacket.
 
-Siamo tutti parte di uno studio di grandi dimensioni in Microsoft, il team che si occupa di sviluppo non di gioco. Sono stati rilevati anche un gruppo di altri utenti: abbiamo chiamato il talento del nostro Art Director, il tecnico dell'audio e la leadership di studio in tutto il progetto, ma queste persone erano risorse condivise con altri progetti del team più ampio.
+Siamo tutti parte di uno studio di grandi dimensioni in Microsoft, il team che si occupa di sviluppo non di gioco. Sono stati rilevati anche un gruppo di altri utenti: abbiamo chiamato il talento del nostro Art Director, il tecnico dell'audio e la leadership di studio spesso in tutto il progetto, ma queste persone erano risorse condivise con altri progetti del team più ampio.
 
 ## <a name="see-also"></a>Vedere anche
 * [Case Study-creazione di una galassia in realtà mista](../../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md)
