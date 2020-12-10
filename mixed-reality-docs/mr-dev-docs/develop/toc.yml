@@ -6,8 +6,6 @@
   items:
     - name: Panoramica dei servizi cloud di realtà mista di Azure
       href: mixed-reality-cloud-services.md
-    - name: Panoramica di apprendimento della realtà mista
-      href: mr-learning-overview.md
     - name: Esempi e app di funzionalità
       href: features-and-samples.md
 - name: Conversione di app
@@ -254,6 +252,8 @@
   items:
     - name: Panoramica dello sviluppo con Unreal
       href: unreal/unreal-development-overview.md
+    - name: Aggiornamento di progetti in Unreal
+      href: unreal/unreal-porting.md
     - name: Esercitazioni
       items:
         - name: Creare un'app per gli scacchi con UX Tools di MRTK
@@ -310,8 +310,6 @@
           href: unreal/unreal-deploying.md
         - name: Pubblicazione in Microsoft Store
           href: unreal/unreal-publishing-to-store.md
-        - name: Aggiornamento di progetti in Unreal
-          href: unreal/unreal-porting.md
         - name: Consigli sulle prestazioni per Unreal
           href: unreal/performance-recommendations-for-unreal.md
         - name: Raccomandazioni sui materiali in Unreal
