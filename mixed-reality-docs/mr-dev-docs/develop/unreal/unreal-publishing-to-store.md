@@ -1,0 +1,113 @@
+---
+title: Pubblicazione in Microsoft Store
+description: ''
+author: hferrone
+ms.author: jacksonf
+ms.date: 12/3/2020
+ms.topic: article
+ms.localizationpriority: high
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, documentazione, guide, funzionalità, visore VR realtà mista, visore VR di windows mixed reality, visore VR per realtà virtuale, pubblicazione, distribuzione, Microsoft Store
+ms.openlocfilehash: 37a17ba4a691ca8db6ce447abd485293454b8ae3
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96583948"
+---
+# <a name="publishing-to-the-microsoft-store"></a><span data-ttu-id="98788-103">Pubblicazione in Microsoft Store</span><span class="sxs-lookup"><span data-stu-id="98788-103">Publishing to the Microsoft Store</span></span>
+
+<span data-ttu-id="98788-104">Quando l'app Unreal è pronta per essere pubblicata, è necessario aggiornare alcune impostazioni di progetto prima dell'invio a Microsoft Store.</span><span class="sxs-lookup"><span data-stu-id="98788-104">When you're ready to get your Unreal app out to the world, there are a few project settings that need updating before you submit to the Microsoft Store.</span></span> <span data-ttu-id="98788-105">Tutte queste impostazioni hanno valori predefiniti. Per rappresentare l'applicazione in modo ottimale, tuttavia, devono essere modificate per la fase di produzione.</span><span class="sxs-lookup"><span data-stu-id="98788-105">All of these settings have default values, but should be changed for production to best represent the application.</span></span>
+
+## <a name="project-settings-for-the-store-packaging"></a><span data-ttu-id="98788-106">Impostazioni di progetto per la creazione di pacchetti per lo Store</span><span class="sxs-lookup"><span data-stu-id="98788-106">Project settings for the store packaging</span></span>
+
+1. <span data-ttu-id="98788-107">Selezionare prima **Project Settings > Description** (Impostazioni progetto > Descrizione) e aggiornare le informazioni sul gioco e sull'editore:</span><span class="sxs-lookup"><span data-stu-id="98788-107">First, select **Project Settings > Description** and update the game and publisher information:</span></span> 
+    * <span data-ttu-id="98788-108">**Game Name** (Nome gioco) verrà visualizzato nel riquadro dell'app in HoloLens</span><span class="sxs-lookup"><span data-stu-id="98788-108">The **Game Name** will appear in the app tile on the HoloLens</span></span>
+    * <span data-ttu-id="98788-109">**Company Distinguished Name** (Nome distinto società) viene usato durante la generazione del certificato di progetto e deve avere il formato seguente:</span><span class="sxs-lookup"><span data-stu-id="98788-109">The **Company Distinguished Name** is used when generating the project certificate and should be in the format:</span></span> 
+        * <span data-ttu-id="98788-110">**CN=CommonName, O=OrganizationName, L=LocalityName, S=StateOrProvinceName, C=CountryName**:</span><span class="sxs-lookup"><span data-stu-id="98788-110">**CN=CommonName, O=OrganizationName, L=LocalityName, S=StateOrProvinceName, C=CountryName**:</span></span>
+
+![Screenshot dell'editor di Unreal con la sezione relativa alla descrizione espansa nelle impostazioni di progetto](images/unreal-publishing-img-01.png)
+
+2. <span data-ttu-id="98788-112">Espandere la sezione **HoloLens** delle impostazioni di progetto e aggiornare le risorse per la creazione di pacchetti.</span><span class="sxs-lookup"><span data-stu-id="98788-112">Expand the **HoloLens** section of the project settings and update the packaging resources.</span></span>  <span data-ttu-id="98788-113">Questi nomi di risorse verranno visualizzati nella pagina dell'applicazione nello Store:</span><span class="sxs-lookup"><span data-stu-id="98788-113">These resource names will be shown on the application’s store page:</span></span>
+
+![Screenshot dell'editor di Unreal con la sezione relativa alla creazione di pacchetti espansa nelle impostazioni di progetto](images/unreal-publishing-img-02.png)
+
+3. <span data-ttu-id="98788-115">Espandere la sezione **Images** (Immagini) e aggiornare le immagini predefinite dello Store con le trame che rappresentano l'app dello Store.</span><span class="sxs-lookup"><span data-stu-id="98788-115">Expand the **Images** section and update the default store images with textures that represent the store app.</span></span>  <span data-ttu-id="98788-116">Facoltativamente, selezionare la casella di controllo **3D Logo** (Logo 3D) per caricare un file con estensione glb da usare come cubo live 3D all'avvio dell'applicazione:</span><span class="sxs-lookup"><span data-stu-id="98788-116">Optionally, select the **3D Logo** checkbox to upload a glb file to use as a 3D live cube when launching the application:</span></span>
+
+![Screenshot dell'editor di Unreal con la sezione relativa alle immagini espansa nelle impostazioni di progetto](images/unreal-publishing-img-03.png)
+
+4. <span data-ttu-id="98788-118">Infine, selezionare **Generate New** (Genera nuovo) per generare un certificato di firma dal nome del progetto e dal nome distinto della società</span><span class="sxs-lookup"><span data-stu-id="98788-118">Lastly, select **Generate New** to generate a signing certificate from the project name and company distinguished name</span></span>  
+    * <span data-ttu-id="98788-119">Impostare un valore per **Tile Background Color** (Colore di sfondo riquadro), che verrà visualizzato al posto di eventuali pixel trasparenti nelle immagini dello Store.</span><span class="sxs-lookup"><span data-stu-id="98788-119">Set a **Tile Background Color**, which will appear in place of any transparent pixels in the store images.</span></span>
+    * <span data-ttu-id="98788-120">Espandere l'elenco a discesa e abilitare **Use Retail Windows Store Environment** (Usa ambiente Windows Store retail) per l'esecuzione in dispositivi bloccati per utenti retail e non sbloccati per sviluppatori.</span><span class="sxs-lookup"><span data-stu-id="98788-120">Expand the dropdown and enable **Use Retail Windows Store Environment** to run on retail-locked, not dev-unlocked, devices.</span></span>
+
+![Screenshot dell'editor di Unreal con la sezione relativa alla generazione del certificato espansa nelle impostazioni di progetto](images/unreal-publishing-img-04.png)
+
+## <a name="optional-app-installer"></a><span data-ttu-id="98788-122">Programma di installazione app facoltativo</span><span class="sxs-lookup"><span data-stu-id="98788-122">Optional App Installer</span></span>
+
+<span data-ttu-id="98788-123">È possibile creare un file Programma di installazione app in **Project Settings > HoloLens** (Impostazioni progetto > HoloLens), che può essere usato per distribuire l'applicazione al di fuori dello Store.</span><span class="sxs-lookup"><span data-stu-id="98788-123">An App Installer file can be created from **Project Settings > HoloLens**, which can be used to distribute the application outside of the store.</span></span>  <span data-ttu-id="98788-124">Abilitare la casella di controllo **Should Create App Installer** (Devi creare Programma di installazione app) e impostare un URL o un percorso di rete nella posizione in cui si vuole archiviare il pacchetto appxbundle del gioco.</span><span class="sxs-lookup"><span data-stu-id="98788-124">Enable the **Should Create App Installer** checkbox and set a URL or network path where you'd like the game’s appxbundle to be stored.</span></span>  
+
+![Screenshot dell'editor di Unreal con la sezione relativa al Programma di installazione app espansa nelle impostazioni di progetto](images/unreal-publishing-img-05.png)
+
+<span data-ttu-id="98788-126">Quando si crea il pacchetto dell'app, vengono generati sia appxbundle sia appinstaller.</span><span class="sxs-lookup"><span data-stu-id="98788-126">When the app is being packaged, both the appxbundle and appinstaller will be generated.</span></span>  <span data-ttu-id="98788-127">Caricare appxbundle nell'URL di installazione e quindi avviare appinstaller per installare l'app dal percorso di rete.</span><span class="sxs-lookup"><span data-stu-id="98788-127">Upload the appxbundle to the installation URL, then launch the appinstaller to install the app from the network location.</span></span>
+
+## <a name="windows-app-certification-kit"></a><span data-ttu-id="98788-128">Kit di certificazione app Windows</span><span class="sxs-lookup"><span data-stu-id="98788-128">Windows App Certification Kit</span></span>
+
+<span data-ttu-id="98788-129">Windows 10 SDK viene fornito con il Kit di certificazione app Windows (WACK) per convalidare problemi comuni che possono influire sul caricamento di un pacchetto nello Store.</span><span class="sxs-lookup"><span data-stu-id="98788-129">The Windows 10 SDK ships with the Windows App Certification Kit (WACK) to validate common issues that could affect uploading a package to the store.</span></span>  <span data-ttu-id="98788-130">È possibile trovare WACK nella directory Windows Kits, in genere nel percorso seguente:</span><span class="sxs-lookup"><span data-stu-id="98788-130">You can find the WACK in the Windows Kits directory, usually under the following path:</span></span> 
+
+```
+C:\Program Files (x86)\Windows Kits\10\App Certification Kit.
+```
+
+1. <span data-ttu-id="98788-131">Dopo la creazione del pacchetto del file appx per la pubblicazione, eseguire **appcertui.exe** e seguire le istruzioni per eseguire la scansione di appx:</span><span class="sxs-lookup"><span data-stu-id="98788-131">After your appx file is packaged for publication, run **appcertui.exe** and follow the prompts to scan the appx:</span></span>
+
+![Screenshot dell'app selezionata per la convalida nel Kit di certificazione app Windows](images/unreal-publishing-img-06.png)
+
+2. <span data-ttu-id="98788-133">Selezionare **Convalida app di Store**:</span><span class="sxs-lookup"><span data-stu-id="98788-133">Select **Validate Store App**:</span></span>
+
+![Screenshot della selezione della convalida nel Kit di certificazione app Windows](images/unreal-publishing-img-07.png)
+
+3. <span data-ttu-id="98788-135">Individuare appx nella sezione superiore e selezionare **Avanti**:</span><span class="sxs-lookup"><span data-stu-id="98788-135">Browse for the appx in the top section and select **Next**:</span></span>
+
+![Screenshot della selezione di test nel Kit di certificazione app Windows](images/unreal-publishing-img-08.png)
+
+4. <span data-ttu-id="98788-137">Selezionare **Avanti** per eseguire i test e creare un report:</span><span class="sxs-lookup"><span data-stu-id="98788-137">Select **Next** to run the tests and create a report:</span></span>
+    * <span data-ttu-id="98788-138">Tutti i test disponibili che possono essere eseguiti nel PC host saranno abilitati per impostazione predefinita</span><span class="sxs-lookup"><span data-stu-id="98788-138">All available tests that can be run on the host PC will be enabled by default</span></span>
+
+![Screenshot dello stato di avanzamento della convalida nel Kit di certificazione app Windows](images/unreal-publishing-img-09.png)
+
+5. <span data-ttu-id="98788-140">Attendere il completamento dei test.</span><span class="sxs-lookup"><span data-stu-id="98788-140">Wait for the tests to finish.</span></span> <span data-ttu-id="98788-141">Al termine, nella finestra finale verrà indicato l'esito positivo o negativo, che può essere visualizzato nel report salvato.</span><span class="sxs-lookup"><span data-stu-id="98788-141">Once complete, the final window will show a pass or fail result, which can be viewed in the saved report.</span></span>
+
+![Screenshot dei risultati del report finale nel Kit di certificazione app Windows](images/unreal-publishing-img-10.png)
+
+## <a name="known-wack-failure-with-425"></a><span data-ttu-id="98788-143">Errore noto di WACK nella versione 4.25</span><span class="sxs-lookup"><span data-stu-id="98788-143">Known WACK failure with 4.25</span></span>
+
+<span data-ttu-id="98788-144">Il plug-in di Windows Mixed Reality in Unreal 4.25 non riuscirà a eseguire WACK perché vengono inclusi alcuni file binari x64 durante la creazione del pacchetto per HoloLens.</span><span class="sxs-lookup"><span data-stu-id="98788-144">The Windows Mixed Reality plugin in Unreal 4.25 will fail WACK because some x64 binaries are included while packaging for HoloLens.</span></span> <span data-ttu-id="98788-145">L'errore sarà simile al seguente:</span><span class="sxs-lookup"><span data-stu-id="98788-145">The failure will look like this:</span></span>
+
+![Screenshot dell'errore dovuto all'analizzatore binario e alle API supportate dal Kit di certificazione app Windows](images/unreal-publishing-img-11.png)
+
+<span data-ttu-id="98788-147">Per correggere il problema:</span><span class="sxs-lookup"><span data-stu-id="98788-147">To fix the issue:</span></span>
+1. <span data-ttu-id="98788-148">Passare alla directory radice di installazione o di origine di Unreal aprendo un progetto di Unreal e facendo clic con il pulsante destro del mouse sull'icona di Unreal nella barra delle applicazioni.</span><span class="sxs-lookup"><span data-stu-id="98788-148">Browse to the Unreal installation or source directory root by opening an Unreal project and right-click on the Unreal icon in the taskbar.</span></span>
+2. <span data-ttu-id="98788-149">Fare clic con il pulsante destro del mouse su UE4Editor, selezionare Properties (Proprietà) e passare al percorso indicato alla voce **Location** (Posizione):</span><span class="sxs-lookup"><span data-stu-id="98788-149">Right-click on UE4Editor, select properties, and browse to the path in the **Location** entry:</span></span>
+
+```
+Open Engine\Plugins\Runtime\WindowsMixedReality\Source\WindowsMixedRealityHMD\WindowsMixedRealityHMD.Build.cs.
+```
+
+3. <span data-ttu-id="98788-150">In **WindowsMixedRealityHMD.Build.cs** modificare la **riga 32** da:</span><span class="sxs-lookup"><span data-stu-id="98788-150">In **WindowsMixedRealityHMD.Build.cs**, modify **line 32** from:</span></span>
+
+```cpp
+if(Target.Platform != UnrealTargetPlatform.Win32)
+```
+
+<span data-ttu-id="98788-151">in:</span><span class="sxs-lookup"><span data-stu-id="98788-151">to:</span></span>
+
+```cpp
+if(Target.Platform == UnrealTargetPlatform.Win64)
+
+```
+
+4. <span data-ttu-id="98788-152">Chiudere Unreal, riaprire il progetto e creare nuovamente il pacchetto per HoloLens.</span><span class="sxs-lookup"><span data-stu-id="98788-152">Close Unreal, reopen the project, and repackage for HoloLens.</span></span>  <span data-ttu-id="98788-153">Eseguire nuovamente WACK e l'errore verrà rimosso.</span><span class="sxs-lookup"><span data-stu-id="98788-153">Rerun WACK and the error will be gone.</span></span> 
+
+## <a name="see-also"></a><span data-ttu-id="98788-154">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="98788-154">See also</span></span>
+* [<span data-ttu-id="98788-155">Invio di un'app a Microsoft Store</span><span class="sxs-lookup"><span data-stu-id="98788-155">Submitting an app to the Microsoft Store</span></span>](../../distribute/submitting-an-app-to-the-microsoft-store.md)
+* [<span data-ttu-id="98788-156">Kit di certificazione app Windows</span><span class="sxs-lookup"><span data-stu-id="98788-156">Windows App Certification Kit</span></span>](https://developer.microsoft.com/windows/downloads/app-certification-kit)
+* [<span data-ttu-id="98788-157">Creare un file del programma di installazione app manualmente</span><span class="sxs-lookup"><span data-stu-id="98788-157">Create an App Installer file manually</span></span>](https://docs.microsoft.com/windows/msix/app-installer/how-to-create-appinstaller-file)
