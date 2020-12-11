@@ -1,26 +1,26 @@
 ---
 title: Scrivere un lettore Holographic Remoting personalizzato
-description: Grazie alla creazione di un'app lettore di comunicazione remota olografica personalizzata è possibile creare un'applicazione personalizzata in grado di visualizzare il contenuto di cui è stato eseguito il rendering in un computer remoto in HoloLens 2. Questo articolo descrive il modo in cui è possibile ottenere questo risultato.
+description: Grazie alla creazione di un'app per lettore remoto olografica personalizzata, è possibile creare un'applicazione personalizzata in grado di visualizzare il contenuto di cui è stato eseguito il rendering in un computer remoto in HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicazione remota, comunicazione remota olografica, NuGet, manifesto dell'applicazione, contesto del lettore, app remota, auricolare in realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 69dc382873eb4fe0dc50f6f55e074c3491b02c02
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: ac3ee68cf3cff3e024ce40acceac61a2fe123399
+ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443636"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97102896"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>Scrivere un'app lettore Holographic Remoting personalizzata
 
 >[!IMPORTANT]
 >Questo documento descrive la creazione di un'applicazione lettore personalizzata per HoloLens 2. I lettori personalizzati scritti per HoloLens 2 non sono compatibili con le applicazioni remote scritte per HoloLens 1. Questo implica che entrambe le applicazioni devono usare il pacchetto NuGet versione **2.** x. x.
 
-Grazie alla creazione di un'app lettore di comunicazione remota olografica personalizzata è possibile creare un'applicazione personalizzata in grado di visualizzare [visualizzazioni immersive](../../design/app-views.md) da in un computer remoto nel HoloLens 2. Questo articolo descrive il modo in cui è possibile ottenere questo risultato. Tutto il codice in questa pagina e i progetti di lavoro sono disponibili nel [repository GitHub degli esempi di comunicazione remota olografica](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+Grazie alla creazione di un'app lettore di comunicazione remota olografica personalizzata, è possibile creare un'applicazione personalizzata in grado di visualizzare [visualizzazioni immersive](../../design/app-views.md) da in un computer remoto nel HoloLens 2. Tutto il codice in questa pagina e i progetti di lavoro sono disponibili nel [repository GitHub degli esempi di comunicazione remota olografica](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
-Un lettore di comunicazione remota olografica consente all'app di visualizzare il contenuto olografico [eseguito](rendering.md) su un computer desktop o su un dispositivo UWP, ad esempio la Xbox One, consentendo l'accesso a più risorse di sistema. Un'app lettore di comunicazione remota olografica trasmette i dati di input a un'applicazione remota olografica remota e riceve una visualizzazione immersiva come flusso video e audio. La connessione viene eseguita usando il Wi-Fi standard. Per creare un'app per giocatori, si userà un pacchetto NuGet per aggiungere la comunicazione remota olografica all'app UWP e scrivere il codice per gestire la connessione e per visualizzare una visualizzazione immersiva. 
+Un lettore di comunicazione remota olografica consente all'app di visualizzare il [rendering](rendering.md) di contenuto olografico in un computer desktop o in un dispositivo UWP come Xbox One con accesso a più risorse di sistema. Un'app lettore di comunicazione remota olografica trasmette i dati di input a un'applicazione remota olografica remota e riceve una visualizzazione immersiva come flusso video e audio. La connessione viene eseguita usando il Wi-Fi standard. Per creare un'app per giocatori, usare un pacchetto NuGet per aggiungere la comunicazione remota olografica all'app UWP. Scrivere quindi il codice per gestire la connessione e visualizzare una visualizzazione immersiva. 
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -34,10 +34,10 @@ Un punto di partenza valido è un'app UWP basata su DirectX funzionante che ha g
 I passaggi seguenti sono necessari per aggiungere il pacchetto NuGet a un progetto in Visual Studio.
 1. Aprire il progetto in Visual Studio.
 2. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Gestisci pacchetti NuGet...**
-3. Nel pannello visualizzato fare clic su **Sfoglia** e quindi cercare "comunicazione remota olografica".
-4. Selezionare **Microsoft. olografic. Remoting**, assicurarsi di selezionare la versione **2. x.** x più recente e fare clic su **Installa**.
+3. Nel pannello visualizzato selezionare **Sfoglia** e quindi cercare "comunicazione remota olografica".
+4. Selezionare **Microsoft. olografic. Remoting**, assicurarsi di selezionare la versione **2. x.** x più recente e selezionare **Installa**.
 5. Se viene visualizzata la finestra di dialogo **Anteprima** , fare clic su **OK**.
-6. La finestra di dialogo successiva visualizzata è il contratto di licenza. Fare clic su **Accetto** per accettare il contratto di licenza.
+6. Selezionare **Accetto** quando viene visualizzata la finestra di dialogo contratto di licenza.
 
 >[!IMPORTANT]
 ><a name="idl"></a>Il contenuto del ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` pacchetto NuGet contiene la documentazione dettagliata per l'API esposta dalla comunicazione remota olografica.
@@ -47,7 +47,7 @@ I passaggi seguenti sono necessari per aggiungere il pacchetto NuGet a un proget
 Per fare in modo che l'applicazione sia in grado di riconoscere il Microsoft.Holographic.AppRemoting.dll aggiunto dal pacchetto NuGet, è necessario eseguire i passaggi seguenti per il progetto:
 
 1. Nella Esplora soluzioni fare clic con il pulsante destro del mouse sul file **Package. appxmanifest** e scegliere **Apri con...**
-2. Selezionare l' **editor XML (testo)** e fare clic su OK.
+2. Seleziona **editor XML (testo)** e seleziona **OK**
 3. Aggiungere le righe seguenti al file e salvare
 ```xml
   </Capabilities>
@@ -206,15 +206,15 @@ Se l'operazione riesce, ```BlitRemoteFrame``` restituisce ```BlitResult::Success
 - L'app remota ha eseguito il commit di un buffer di profondità tramite [HolographicCameraRenderingParameters. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_).
 - L'App Player personalizzata ha associato un buffer di profondità valido prima di chiamare ```BlitRemoteFrame``` .
 
-Se queste condizioni vengono soddisfatte ```BlitRemoteFrame``` , blit la profondità remota nel buffer di profondità locale attualmente associato. È quindi possibile eseguire il rendering di contenuto locale aggiuntivo che avrà un'intersezione di profondità con il contenuto di cui è stato eseguito il rendering remoto. Inoltre, è possibile eseguire il commit del buffer di profondità locale tramite [HolographicCameraRenderingParameters. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_) nel lettore personalizzato per ottenere una riproiezione della profondità per il contenuto remoto e locale di cui è stato eseguito il rendering. Per informazioni dettagliate, vedere [riproiezione approfondita](hologram-stability.md#reprojection) .
+Se queste condizioni vengono soddisfatte ```BlitRemoteFrame``` , blit la profondità remota nel buffer di profondità locale attualmente associato. È quindi possibile eseguire il rendering di contenuto locale aggiuntivo, che avrà una profondità di intersezione con il contenuto di cui è stato eseguito il rendering remoto. Inoltre, è possibile eseguire il commit del buffer di profondità locale tramite [HolographicCameraRenderingParameters. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_) nel lettore personalizzato per ottenere una riproiezione della profondità per il contenuto remoto e locale di cui è stato eseguito il rendering. Per informazioni dettagliate, vedere [riproiezione approfondita](hologram-stability.md#reprojection) .
 
 ### <a name="projection-transform-mode"></a>Modalità di trasformazione proiezione
 
-Un problema che si verifica quando si usa la riproiezione di profondità tramite la comunicazione remota olografica è che è possibile eseguire il rendering del contenuto remoto con una trasformazione di proiezione diversa rispetto al contenuto locale di cui è stato eseguito il rendering direttamente dall'App Player personalizzata. Un caso d'uso comune è quello di specificare valori diversi per il piano near e lontano (tramite [HolographicCamera:: SetNearPlaneDistance](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.setnearplanedistance) e [HolographicCamera:: SetFarPlaneDistance](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.setfarplanedistance)) sul lato Player e sul lato remoto. In questo caso non è chiaro se la trasformazione della proiezione sul lato Player deve riflettere le distanze del piano remoto vicino/lontano o quelle locali.
+Un problema che emerge quando si usa la riproiezione di profondità tramite la comunicazione remota olografica è che il contenuto remoto può essere sottoposto a rendering con una trasformazione di proiezione diversa rispetto al contenuto locale di cui è stato eseguito il rendering direttamente dall'App Player personalizzata. Un caso d'uso comune è quello di specificare valori diversi per il piano near e lontano (tramite [HolographicCamera:: SetNearPlaneDistance](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.setnearplanedistance) e [HolographicCamera:: SetFarPlaneDistance](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.setfarplanedistance)) sul lato Player e sul lato remoto. In questo caso, non è chiaro se la trasformazione della proiezione sul lato Player deve riflettere le distanze del piano remoto vicino/lontano o quelle locali.
 
 A partire dalla versione [2.1.0](holographic-remoting-version-history.md#v2.1.0) è possibile controllare la modalità di trasformazione della proiezione tramite ```PlayerContext::ProjectionTransformConfig``` . I valori supportati sono:
 
-- ```Local``` - [HolographicCameraPose::P rojectiontransform](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.projectiontransform) restituisce una trasformazione di proiezione che riflette le distanze del piano vicino/lontano impostate dall'App Player personalizzata in HolographicCamera.
+- ```Local``` - [HolographicCameraPose::P rojectiontransform](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.projectiontransform) restituisce una trasformazione di proiezione, che riflette le distanze del piano vicino/lontano impostate dall'App Player personalizzata in HolographicCamera.
 - ```Remote``` -La trasformazione della proiezione riflette le distanze del piano vicino/lontano specificate dall'app remota.
 - ```Merged``` -Le distanze del piano vicino/estremo dall'app remota e l'app per giocatori personalizzata sono unite. Per impostazione predefinita, questa operazione viene eseguita impostando il valore minimo delle distanze vicino al piano e il valore massimo delle distanze del piano lontano. Nel caso in cui il lato remoto o locale sia invertito, ad esempio lontano < vicino, le distanze del piano remoto vicino/lontano vengono capovolte.
 
@@ -251,7 +251,7 @@ Per ulteriori informazioni, vedere la ```PlayerFrameStatistics``` documentazione
 I canali di dati personalizzati possono essere utilizzati per inviare dati utente tramite la connessione remota già stabilita. Per ulteriori informazioni, vedere [canali di dati personalizzati](holographic-remoting-custom-data-channels.md) .
 
 ## <a name="see-also"></a>Vedere anche
-* [Scrittura di un'app remota di comunicazione remota olografica usando le API di Windows mixed.](holographic-remoting-create-remote-wmr.md)
+* [Scrittura di un'app remota olografica remota usando le API di realtà mista di Windows](holographic-remoting-create-remote-wmr.md)
 * [Scrittura di un'app remota di comunicazione remota olografica usando le API di OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Canali di dati di Holographic Remoting personalizzati](holographic-remoting-custom-data-channels.md)
 * [Stabilire una connessione sicura con Holographic Remoting](holographic-remoting-secure-connection.md)

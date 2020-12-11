@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, componenti software, cronologia delle versioni, note sulla versione, cronologia delle versioni
 appliesto:
 - Windows 10
-ms.openlocfilehash: 76a913ae5890c908dda4e25d5b5c21554fdae7f0
-ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
+ms.openlocfilehash: 0dd2ef30252189d006bfaf5702c47dce72f2798d
+ms.sourcegitcommit: d8db38647cf45f05b9445ceaf057d4cd01721ee6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92011429"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97091305"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Panoramica e cronologia delle versioni del software Realtà mista
 
@@ -25,7 +25,7 @@ La realtà mista di Windows è costituita dai componenti software principali seg
     * In Windows 10, versioni 1709 e 1803, il portale di realtà mista è un componente chiave del sistema operativo Windows 10 e viene aggiornato tramite Windows Update.
     * In Windows 10, versione 1809 e successive, il portale di realtà mista viene aggiornato tramite l'app Microsoft Store.
 2. Il **pacchetto di funzionalità per la realtà mista** (Dom), scaricato e installato automaticamente durante la prima esecuzione del portale di realtà mista. Altre informazioni sul pacchetto Dom sono disponibili [qui](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality)
-3. Il **driver**per la realtà mista e il driver del controller di movimento, noto anche come driver HoloLens Sensors, è il pacchetto di driver chiave che consente di usare le cuffie di realtà miste di Windows con la realtà mista di Windows. Questa operazione viene scaricata e installata automaticamente tramite Windows Update la prima volta che si collega la cuffia a realtà mista e viene regolarmente aggiornata tramite Windows Update
+3. Il **driver** per la realtà mista e il driver del controller di movimento, noto anche come driver HoloLens Sensors, è il pacchetto di driver chiave che consente di usare le cuffie di realtà miste di Windows con la realtà mista di Windows. Questa operazione viene scaricata e installata automaticamente tramite Windows Update la prima volta che si collega la cuffia a realtà mista e viene regolarmente aggiornata tramite Windows Update
 4. I **driver del modello a realtà mista Motion controller** contengono i modelli 3D dei controller di movimento della realtà mista e sono necessari per esperienze di realtà miste di terze parti. Questa operazione viene scaricata e installata automaticamente tramite Windows Update la prima volta che i controller di movimento della realtà mista vengono associati al PC e vengono aggiornati tramite Windows Update
 5. **Windows 10, versione 1709 (l'aggiornamento di Fall Creator) o più recente** contiene componenti chiave del sistema operativo e tecnologie che consentono la realtà mista di Windows
 
@@ -100,6 +100,7 @@ Questo driver viene scaricato e installato automaticamente tramite Windows Updat
 
    | Versione          | Data di rilascio          | Modifiche principali                                                 |
    |------------------|-----------------------|---------------------------------------------------------------|
+   | [10.0.19041.2037](https://www.microsoft.com/en-us/download/details.aspx?id=102527)  | Decimo dicembre 2020  | Compatibile con Windows 10, versione 1903 e versioni successive.<br/><ul><li>Nuovo firmware del controller per il controller HP per risolvere un problema per cui alcuni controller hanno trigger non funzionanti.</li>|
    | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102156)  | 8 ottobre 2020  | Compatibile con Windows 10, versione 1903 e versioni successive.<br/><ul><li>Supporto ufficiale per HP reverbi G2, HP Omnicept e il nuovo controller HP.</li><li>Correzioni di visualizzazione secondarie per gli auricolari HP Reverb e Samsung Odyssey +. (Richiede la [Build del sistema operativo 19041,546](https://support.microsoft.com/en-us/help/4577063/windows-10-update-kb4577063) o versioni successive oppure [Build del sistema operativo 18362,1110 e 18363,1110](https://support.microsoft.com/en-us/help/4577062/windows-10-update-kb4577062) o versione successiva).</li><li>Miglioramenti delle transizioni dello stato di alimentazione del computer dalla sospensione per ridurre gli errori di SWW 1-4.</li><li>Correzioni e miglioramenti dell'affidabilità della piattaforma per l'auricolare della realtà mista di Windows.|
    | [10.0.19041.1009](https://www.microsoft.com/en-us/download/details.aspx?id=101260)  | 7 maggio, 2020      | Compatibile con Windows 10, versione 1903 e versioni successive.<br/><ul><li>Correzioni e miglioramenti dell'affidabilità della piattaforma per l'auricolare della realtà mista di Windows.</li></ul>  |
 
