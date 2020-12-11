@@ -1,34 +1,35 @@
 ---
 title: 2. Inizializzazione del progetto e prima applicazione
-description: Parte 2 di 6 in una serie di esercitazioni per la creazione di una semplice app di scacchi con Unreal Engine 4 e il plug-in UX Tools di Mixed Reality Toolkit
+description: Parte 2 di 6 in una serie di esercitazioni per la creazione di un'app per gli scacchi con Unreal Engine 4 e il plug-in UX Tools di Mixed Reality Toolkit
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, esercitazione, guida introduttiva, mrtk, uxt, UX Tools, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 869b947d23c3fbd1e561cef2c3ec41322fefd6a2
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 464df846d0fc6e1bd22ee3862adcdf110c377728
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679910"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609652"
 ---
 # <a name="2-initializing-your-project-and-first-application"></a>2. Inizializzazione del progetto e prima applicazione
 
-## <a name="overview"></a>Panoramica
+Nella prima esercitazione si inizia con un nuovo progetto Unreal e si abilita il plug-in HoloLens, si crea e si illumina un livello e si aggiungono pezzi degli scacchi. Poiché per tutti i materiali e gli oggetti 3D verranno usati gli asset predefiniti, non occorre preoccuparsi di modellare alcunché. Al termine di questa esercitazione, sarà disponibile un'area di disegno vuota, pronta per lo sviluppo in realtà mista.
 
-In questa prima esercitazione inizierai a creare una nuova applicazione Unreal per HoloLens 2. Eseguirai varie operazioni, come aggiungere il plug-in HoloLens, creare e illuminare un livello e popolarlo con una scacchiera e un pezzo degli scacchi. Non dovrai modellare nulla da zero perché userai asset predefiniti per il pezzo degli scacchi 3D e i materiali degli oggetti. Al termine di questa esercitazione avrai un'area di disegno vuota pronta da configurare per la realtà mista.
-
-Prima di proseguire, assicurati di disporre di tutti i prerequisiti indicati nella [Guida introduttiva](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch1).
+> [!IMPORTANT]
+> Verificare di soddisfare tutti i prerequisiti indicati nella [Guida introduttiva](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch1).
 
 ## <a name="objectives"></a>Obiettivi
+
 * Configurazione di un progetto Unreal per lo sviluppo con HoloLens
 * Importazione di asset e configurazione di una scena
 * Creazione di attori ed eventi a livello di script con progetti
 
 ## <a name="creating-a-new-unreal-project"></a>Creazione di un nuovo progetto Unreal
-Prima di tutto, è necessario un progetto su cui lavorare. Se è la prima volta che crei un'app Unreal per HoloLens, dovrai [scaricare i file di supporto](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/tutorials/unreal-uxt-ch6#packaging-and-deploying-the-app-via-device-portal) dal launcher Epic.
+
+Prima di tutto, è necessario un progetto su cui lavorare. Se si sviluppa in Unreal per la prima volta, è necessario [scaricare i file di supporto](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/tutorials/unreal-uxt-ch6#packaging-and-deploying-the-app-via-device-portal) dal launcher Epic.
 
 1. Avvia Unreal Engine
 
@@ -50,6 +51,7 @@ Prima di tutto, è necessario un progetto su cui lavorare. Se è la prima volta 
 Il progetto dovrebbe aprirsi automaticamente nell'editor Unreal e a quel punto puoi passare alla sezione successiva.
 
 ## <a name="enabling-required-plugins"></a>Abilitazione dei plug-in necessari
+
 Prima di iniziare ad aggiungere oggetti alla scena, è necessario abilitare due plug-in.
 
 1. Apri **Edit > Plugins** (Modifica > Plug-in) e seleziona **Augmented Reality** (Realtà aumentata) nell'elenco di opzioni predefinite. 
@@ -65,51 +67,51 @@ Prima di iniziare ad aggiungere oggetti alla scena, è necessario abilitare due 
 > [!NOTE]
 > Per lo sviluppo di HoloLens 2 sono necessari entrambi i plug-in.
 
-Terminata questa configurazione, puoi iniziare a creare altri livelli.
+Con i plug-in abilitati, il livello vuoto è pronto per l'uso da parte dell'azienda.
 
 ## <a name="creating-a-level"></a>Creazione di un livello
-L'attività successiva consiste nel creare una semplice configurazione di gioco con un punto iniziale e un cubo per riferimento e scala.
+L'attività successiva consiste nel creare una configurazione di gioco con un punto iniziale e un cubo per riferimento e scala.
 
 1. Seleziona **File > New Level** (File > Nuovo livello) e scegli **Empty Level** (Livello vuoto). In questa fase, la scena predefinita nel riquadro di visualizzazione dovrebbe essere vuota.
 
 2. Seleziona **Basic** (Base) nella scheda **Modes** (Modalità) e trascina **PlayerStart** nella scena. 
-    * Imposta **Location** (Posizione) su **X = 0**, **Y = 0** e **Z = 0** nella scheda **Details** (Dettagli). L'utente viene posizionato al centro della scena all'avvio dell'app.
+    * Impostare **Location** (Posizione) su **X = 0**, **Y = 0** e **Z = 0** nella scheda **Details** (Dettagli) per collocare l'utente al centro della scena all'avvio dell'app.
 
 ![Riquadro di visualizzazione con PlayerStart](images/unreal-uxt/2-playerstart.PNG)
 
 3. Trascina un oggetto **Cube** (Cubo) dalla scheda **Basic** (Base) nella scena. 
-    * Imposta **Location** (Posizione) su **X = 50**, **Y = 0** e **Z = 0**. Il cubo viene posizionato a 50 cm di distanza dal giocatore al momento dell'avvio. 
+    * Imposta **Location** (Posizione) su **X = 50**, **Y = 0** e **Z = 0**. In questo modo, il cubo viene posizionato a 50 cm di distanza dal giocatore al momento dell'avvio. 
     * Imposta **Scale** (Scala) su **X = 0.2**, **Y = 0.2** e **Z = 0.2** per ridurre le dimensioni del cubo. 
 
-Il cubo non sarà visibile finché non aggiungerai una luce alla scena, che è l'ultima attività da eseguire prima di testare la scena.
+Il cubo non sarà visibile finché non viene aggiunta una luce alla scena, che è l'ultima attività da eseguire prima del test.
 
 4. Passa alla scheda **Lights** (Luci) nel pannello **Modes** (Modalità) e trascina un oggetto **Directional Light** (Luce direzionale) nella scena. Posiziona la luce al di sopra di **PlayerStart** perché sia visibile.
 
 ![Riquadro di visualizzazione con aggiunta di luce](images/unreal-uxt/2-light.PNG)
 
-5. Passa a **File > Save Current** (File > Salva corrente), assegna il nome **Main** (Principale) al livello e fai clic su **Save** (Salva). 
+5. Passare a **File > Save Current** (File > Salva corrente), assegnare al livello il nome **Main** e selezionare **Save** (Salva). 
 
 Una volta impostata la scena, seleziona **Play** (Riproduci) sulla barra degli strumenti per vedere il cubo in azione. Quando avrai terminato di ammirare il tuo lavoro, premi **ESC** per arrestare l'applicazione.
 
 ![Un cubo nel riquadro di visualizzazione](images/unreal-uxt/2-cube.PNG)
 
-Ora che la scena è configurata, puoi iniziare ad aggiungere la scacchiera e il pezzo per completare l'ambiente dell'applicazione.
+Ora che la scena è configurata, è possibile iniziare ad aggiungere la scacchiera e i pezzi per completare l'ambiente dell'applicazione.
 
 ## <a name="importing-assets"></a>Importazione di asset
 Al momento la scena è un po' spoglia, ma puoi arricchirla importando asset predefiniti nel progetto.
 
 1. Scaricare e decomprimere la cartella di asset [GitHub](https://github.com/microsoft/MixedReality-Unreal-Samples/blob/master/ChessApp/ChessAssets.7z) con [7-zip](https://www.7-zip.org/).
 
-2. Fai clic su **Add New > New Folder** (Aggiungi nuovo > Nuova cartella) in **Content Browser** (Browser contenuto) e assegna il nome **ChessAssets** alla cartella. 
-    * Fai doppio clic sulla nuova cartella, in cui importerai gli asset 3D.
+2. Selezionare **Add New > New Folder** (Aggiungi nuovo > Nuova cartella) in **Content Browser** (Browser contenuto) e assegnare alla cartella il nome **ChessAssets**. 
+    * Fare doppio clic sulla nuova cartella in cui verranno importati gli asset 3D.
 
 ![Visualizzare o nascondere il pannello delle origini](images/unreal-uxt/2-showhidesources.PNG)
 
-3. Fai clic su **Import** (Importa) in **Content Browser** (Browser contenuto), seleziona tutti gli elementi nella cartella di asset decompressa e scegli **Open** (Apri). 
-    * Questa cartella contiene le mesh degli oggetti 3D per la scacchiera e i pezzi in formato FBX e le mappe di texture in formato TGA che userai per i materiali.  
+3. Fare clic su **Import** (Importa) in **Content Browser** (Browser contenuto), selezionare tutti gli elementi inclusi nella cartella degli asset decompressa e fare clic su **Open** (Apri). 
+    * Gli asset includono le mesh degli oggetti 3D per la scacchiera e i pezzi in formato FBX e le mappe di texture in formato TGA che verranno usate per i materiali.  
 
 4. Quando viene visualizzata la finestra FBX Import Options (Opzioni di importazione FBX), espandi la sezione **Material** (Materiale) e modifica **Material Import Method** (Metodo importazione materiale) in **Do Not Create Material** (Non creare materiale).
-    * Fai clic su **Import All** (Importa tutto).
+    * Selezionare **Import All** (Importa tutto).
 
 ![Opzioni importazione FBX](images/unreal-uxt/2-nocreatemat.PNG)
 
@@ -117,7 +119,7 @@ Non serve fare altro per gli asset. Il prossimo set di attività consiste nel cr
 
 ## <a name="adding-blueprints"></a>Aggiunta di progetti
 
-1. Fare clic su **Add New > New Folder** (Aggiungi nuovo > Nuova cartella) in **Content Browser** (Browser contenuto) e assegnare alla cartella il nome **Blueprints** (Progetti). 
+1. Selezionare **Add New > New Folder** (Aggiungi nuovo > Nuova cartella) in **Content Browser** (Browser contenuto) e assegnare alla cartella il nome **Blueprints**. 
 
 > [!NOTE]
 > I [progetti](https://docs.unrealengine.com/en-US/Engine/Blueprints/index.html) sono asset speciali che forniscono un'interfaccia basata su nodi per la creazione di nuovi tipi di attori ed eventi a livello di script. 
@@ -138,7 +140,7 @@ Gli oggetti che hai creato sono grigi per impostazione predefinita e questo non 
 
 1. Fai doppio clic su **Board** (Tavola) per aprire l'editor dei progetti. 
 
-2. Fai clic su **Add Component > Scene** (Aggiungi componente > Scena) nel pannello **Components** (Componenti) e assegna il nome **Root** (Radice) alla scena. Nota che **Root** (Radice) viene visualizzato come elemento figlio di **DefaultSceneRoot** nello screenshot seguente:
+2. Selezionare **Add Component > Scene** (Aggiungi componente > Scena) nel pannello **Components** (Componenti) e assegnare alla scena il nome **Root**. Nota che **Root** (Radice) viene visualizzato come elemento figlio di **DefaultSceneRoot** nello screenshot seguente:
 
 ![Sostituzione della radice nel progetto](images/unreal-uxt/2-root-blueprint.PNG)
 
@@ -148,15 +150,15 @@ Gli oggetti che hai creato sono grigi per impostazione predefinita e questo non 
 ![Sostituzione della radice](images/unreal-uxt/2-root.PNG)
 
 
-4. Fai clic su **Add Component > Static Mesh** (Aggiungi componente > Mesh statica) nel pannello **Components** (Componenti) e assegna il nome **SM_Board** (MS_Tavola) alla mesh statica. Verrà visualizzata come oggetto figlio in **Root** (Radice).
+4. Selezionare **Add Component > Static Mesh** (Aggiungi componente > Mesh statica) nel pannello **Components** (Componenti) e assegnare alla mesh il nome **SM_Board**. Verrà visualizzata come oggetto figlio in **Root** (Radice).
 
 ![Aggiunta di una mesh statica](images/unreal-uxt/2-sm-board.PNG)
 
-4. Fai clic su **SM_Board** (MS_Tavola), scorri verso il basso fino alla sezione **Static Mesh** (Mesh statica) del pannello **Details** (Dettagli) e quindi seleziona **ChessBoard** (Scacchiera) nell'elenco a discesa. 
+4. Selezionare **SM_Board**, scorrere verso il basso fino alla sezione **Static Mesh** (Mesh statica) del pannello **Details** (Dettagli) e selezionare **ChessBoard** nell'elenco a discesa. 
 
 ![Mesh Tavola nel riquadro di visualizzazione](images/unreal-uxt/2-sm-board-view.PNG)
 
-5.  Sempre nel pannello **Details** (Dettagli) espandi la sezione **Materials** (Materiali) e fai clic su **Create New Asset > Material** (Crea nuovo asset > Materiale) nell'elenco a discesa. 
+5.  Sempre nel pannello **Details** (Dettagli) espandere la sezione **Materials** (Materiali) e selezionare **Create New Asset > Material** (Crea nuovo asset > Materiale) nell'elenco a discesa. 
     * Assegna a questo materiale il nome **M_ChessBoard** (M_Scacchiera) e salvalo nella cartella **ChessAssets**. 
 
 ![Creare un nuovo materiale](images/unreal-uxt/2-newmat.PNG)
@@ -171,7 +173,7 @@ Gli oggetti che hai creato sono grigi per impostazione predefinita e questo non 
 
 ![Impostare il colore di base](images/unreal-uxt/2-boardalbedomat.PNG)
 
-8.  Ripeti altre quattro volte il passaggio precedente per creare altri quattro nodi **Texture Sample** (Esempio di texture) con le impostazioni seguenti:
+8.  Ripetere altre quattro volte il passaggio precedente per creare altri quattro nodi **Texture Sample** (Esempio di texture) con le impostazioni seguenti:
     * Imposta **Texture** su **ChessBoard_AO** (Scacchiera_OA) e collega **RGB** al segnaposto **Ambient Occlusion** (Occlusione ambiente).
     * Imposta **Texture** su **ChessBoard_Metal**(Scacchiera_Metallo) e collega **RGB** al segnaposto **Metallic** (Metallico). 
     * Imposta **Texture** su **ChessBoard_Normal** (Scacchiera_Normale) e collega **RGB** al segnaposto **Normal** (Normale).
@@ -180,7 +182,7 @@ Gli oggetti che hai creato sono grigi per impostazione predefinita e questo non 
 
 ![Associare le texture rimanenti](images/unreal-uxt/2-boardmat.PNG)
 
-Prima di continuare, verifica che la configurazione del materiale corrisponda allo screenshot riportato sopra.
+Prima di continuare, verificare che la configurazione del materiale corrisponda allo screenshot riportato sopra.
 
 ## <a name="populating-the-scene"></a>Popolamento della scena
 Se torni al progetto **Board** (Tavola), noterai che il materiale appena creato è stato applicato. A questo punto devi solo configurare la scena. Prima di tutto, modifica le proprietà seguenti per assicurarti che la scacchiera sia di dimensioni ragionevoli e disposta nella corretta angolazione quando viene inserita nella scena:
@@ -192,13 +194,13 @@ Se torni al progetto **Board** (Tavola), noterai che il materiale appena creato 
 2.  Fai clic con il pulsante destro del mouse su **Cube > Edit > Delete** (Cubo > Modifica > Elimina) e trascina **Board** (Tavola) da **Content Browser** (Browser contenuto) nel viewport. 
     * Imposta **Location** (Posizione) su **X = 80**, **Y = 0** e **Z = 20**. 
 
-3.  Fai clic sul pulsante **Play** per visualizzare la nuova tavola nel livello. Premi **ESC** per tornare all'editor. 
+3.  Selezionare il pulsante **Play** per visualizzare la nuova scacchiera nel livello. Premi **ESC** per tornare all'editor. 
 
 A questo punto creerai un pezzo degli scacchi seguendo la stessa procedura usata per la scacchiera:
 
-1. Passa alla cartella **Blueprints** (Progetti), fai clic con il pulsante destro del mouse e scegli **Blueprint Class** (Classe progetto) e **Actor** (Attore). Assegna a questo attore il nome **WhiteKing** (Re bianco).
+1. Passare alla cartella **Blueprints** (Progetti), fare clic con il pulsante destro del mouse e scegliere **Blueprint Class** (Classe progetto) e **Actor** (Attore). Assegna a questo attore il nome **WhiteKing** (Re bianco).
 
-2. Fai doppio clic su **WhiteKing** per aprirlo nell'editor progetti, fai clic su **Add Component > Scene** (Aggiungi componente > Scena) e assegna il nome **Root** (Radice) alla scena. 
+2. Fare doppio clic su **WhiteKing** per aprirlo nell'editor progetti, selezionare **Add Component > Scene** (Aggiungi componente > Scena) e assegnare alla scena il nome **Root**. 
     * Trascina **Root** (Radice) su **DefaultSceneRoot** per sostituirla. 
 
 3. Fai clic su **Add Component > Static Mesh** (Aggiungi componente > Mesh statica) e assegna il nome **SM_King** (MS_Re) alla mesh. 
@@ -227,6 +229,6 @@ Hai quasi finito: ora basta aggiungere il nuovo pezzo degli scacchi alla scena:
 
 3.  Nel pannello **Details** (Dettagli) in **Transform** (Trasformazione) imposta **Location** (Posizione) di **WhiteKing** (ReBianco) su **X = -26**, **Y = 4** e **Z = 0**.
 
-Ecco fatto! Fai clic su **Play** (Riproduci) per vedere in azione il livello popolato, quindi premi **ESC** quando vuoi uscire. In questa esercitazione sono stati illustrati molti aspetti relativi alla creazione di un progetto semplice, ma il tuo progetto ora è pronto per passare alla parte successiva della serie, dedicata alla configurazione per la realtà mista. 
+Ecco fatto! Selezionare **Play** per vedere in azione il livello popolato e premere **ESC** per uscire. Con la creazione di un progetto semplice sono già stati illustrati molti aspetti. Ora, tuttavia, è possibile passare alla parte successiva della serie, dedicata alla configurazione per la realtà mista. 
 
 [Sezione successiva: 3. Configurare il progetto per la realtà mista](unreal-uxt-ch3.md)
