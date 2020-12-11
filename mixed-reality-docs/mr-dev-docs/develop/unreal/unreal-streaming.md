@@ -10,26 +10,25 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, str
 appliesto:
 - HoloLens
 - HoloLens 2
-ms.openlocfilehash: 5a001088208106176ae771c2bc684674e6ce37a8
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 9cbde33ce7238d704d4b24b4afbed9d8306d4e4d
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679780"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609332"
 ---
 # <a name="streaming-in-unreal"></a>Streaming in Unreal
 
-## <a name="overview"></a>Panoramica
 Lo streaming da un PC a HoloLens offre due vantaggi fondamentali: 
 * Consente all'app di realtà mista di sfruttare la potenza di calcolo del PC. 
 * Consente di accelerare l'iterazione dello sviluppo. 
 
-Prima di tutto, devi scaricare [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md) nel dispositivo HoloLens. Questo consente all'app di trasmettere direttamente in streaming al lettore remoto in HoloLens dalle origini seguenti:
+Prima di tutto, devi scaricare [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md) nel dispositivo HoloLens. Holographic Remoting Player consente all'app di trasmettere in streaming direttamente al lettore remoto di HoloLens dalle origini seguenti:
 
 * Editor Unreal Engine
 * Un eseguibile Windows in pacchetto 
 
-Durante lo streaming, hai accesso a quasi tutte le funzionalità di HoloLens che avresti a disposizione durante l'esecuzione di un'applicazione in un dispositivo. Questo include [tracciamento mano e articolazioni](unreal-hand-tracking.md) (se usi HoloLens 2), [mapping spaziale](unreal-spatial-mapping.md) e [ancoraggi nello spazio](unreal-spatial-anchors.md), ma esclude le funzionalità riportate in questo [elenco di limitazioni](../platform-capabilities-and-apis/holographic-remoting-troubleshooting.md). 
+Durante lo streaming, hai accesso a quasi tutte le funzionalità di HoloLens che avresti a disposizione durante l'esecuzione di un'applicazione in un dispositivo. Questo include [tracciamento mano e articolazioni](unreal-hand-tracking.md) se si usa HoloLens 2, [mapping spaziale](unreal-spatial-mapping.md) e [ancoraggi nello spazio](unreal-spatial-anchors.md), ma esclude le funzionalità riportate in questo [elenco](../platform-capabilities-and-apis/holographic-remoting-troubleshooting.md). 
 
 > [!NOTE]
 > * La qualità dello streaming dipende in larga misura dalla potenza del segnale Wi-Fi.
@@ -45,7 +44,7 @@ Durante lo streaming, hai accesso a quasi tutte le funzionalità di HoloLens che
     </colgroup>
     <tr>
         <td><strong>Origine</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (prima generazione)</strong></a></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens 1a generazione</strong></a></td>
         <td><a href="https://www.microsoft.com/hololens/hardware"><strong>HoloLens 2</strong></a></td>
         <td><strong>Visori VR immersive</strong></td>
     </tr>
@@ -66,16 +65,16 @@ Durante lo streaming, hai accesso a quasi tutte le funzionalità di HoloLens che
 
 ## <a name="streaming-from-the-unreal-editor"></a>Streaming dall'editor Unreal
 
-In qualità di sviluppatore, noterai che lo streaming dall'editor Unreal al dispositivo HoloLens offre grandi vantaggi in fase di test, ovvero non è più necessario attendere che l'app venga compilata e distribuita prima di provare gli aggiornamenti.
+In qualità di sviluppatore, si noterà che lo streaming dall'editor Unreal al dispositivo HoloLens offre vantaggi significativi in fase di test, soprattutto perché non è più necessario attendere che l'app venga compilata e distribuita prima di provare gli aggiornamenti.
 
-Puoi trovare istruzioni dettagliate sullo [streaming dall'editor Unreal](tutorials/unreal-uxt-ch6.md#device-only-streaming) nell'ultima sezione della serie di esercitazioni di introduzione a Unreal.
+È possibile trovare istruzioni dettagliate per lo [streaming dall'editor Unreal](tutorials/unreal-uxt-ch6.md#device-only-streaming) nella serie di esercitazioni.
 
 ## <a name="streaming-from-a-packaged-windows-executable"></a>Streaming da un eseguibile Windows in pacchetto
 
-A partire da Unreal 4.25.1, è possibile trasmettere l'app in streaming a un dispositivo HoloLens 2 da un eseguibile Windows in pacchetto seguendo questa procedura: 
+In Unreal 4.25.1 e versioni successive, è possibile trasmettere l'app in streaming a un dispositivo HoloLens 2 da un eseguibile Windows in pacchetto: 
 
 1. Passa a **File > Package Project > Windows** (File > Crea pacchetto progetto > Windows) nel menu dell'editor. 
-    * Scegli una posizione in cui salvare il pacchetto e fai clic su **Select Folder** (Seleziona cartella).
+    * Scegliere una posizione in cui salvare il pacchetto e selezionare **Select Folder** (Seleziona cartella).
 
 2. Terminata la creazione del pacchetto, apri **Holographic Remoting Player** in HoloLens 2 e prendi nota dell'indirizzo IP. 
 3. Lascia aperto **Holographic Remoting Player** e usa il prompt della riga di comando per: 
@@ -88,6 +87,7 @@ A partire da Unreal 4.25.1, è possibile trasmettere l'app in streaming a un dis
 Premi INVIO e inizierà lo streaming dell'applicazione.
 
 ## <a name="see-also"></a>Vedere anche
+
 * [Cronologia delle versioni di Holographic Remoting](../platform-capabilities-and-apis/holographic-remoting-version-history.md)
 * [Scrivere un'app lettore Holographic Remoting personalizzata](../platform-capabilities-and-apis/holographic-remoting-create-player.md)
 * [Stabilire una connessione sicura con Holographic Remoting](../platform-capabilities-and-apis/holographic-remoting-secure-connection.md)

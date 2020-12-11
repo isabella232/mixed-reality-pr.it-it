@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: grafica, cpu, gpu, rendering, garbage collection, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 2c5a459f673889dd4c52043f9b9df6a3fe43a93a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6fd12bec31bb721def8801a8f2bacb8c3cb75745
+ms.sourcegitcommit: d11275796a1f65c31dd56b44a8a1bbaae4d7ec76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697588"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761773"
 ---
 # <a name="performance-recommendations-for-unity"></a>Consigli sulle prestazioni per Unity
 
@@ -120,9 +120,9 @@ public class ExampleClass : MonoBehaviour
 
 3) **Attenzione alla conversione boxing**
 
-    La [conversione boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) è un concetto base del linguaggio e del runtime C#. Si tratta del processo di wrapping delle variabili di tipo valore come char, int, bool e così via in variabili di tipo riferimento. Quando una variabile di tipo valore viene "sottoposta alla conversione boxing", viene incapsulata all'interno di un System.Object archiviato nell'heap gestito. Pertanto, la memoria viene allocata e, quando alla fine viene ceduta, deve essere elaborata dal Garbage Collector. Queste allocazioni e deallocazioni comportano un costo in termini di prestazioni e in molti scenari non sono necessarie o possono essere facilmente sostituite da un'alternativa meno dispendiosa.
+    La [conversione boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) è un concetto base del linguaggio e del runtime C#. Si tratta del processo di wrapping delle variabili di tipo valore come `char`, `int`, `bool` e così via in variabili di tipo riferimento. Quando una variabile di tipo valore viene "sottoposta alla conversione boxing", viene incapsulata all'interno di un `System.Object` archiviato nell'heap gestito. Pertanto, la memoria viene allocata e, quando alla fine viene ceduta, deve essere elaborata dal Garbage Collector. Queste allocazioni e deallocazioni comportano un costo in termini di prestazioni e in molti scenari non sono necessarie o possono essere facilmente sostituite da un'alternativa meno dispendiosa.
 
-    Una delle forme più comuni di conversione boxing nello sviluppo è l'uso di [tipi di valore nullable](https://docs.microsoft.com//dotnet/csharp/programming-guide/nullable-types/). Spesso si vuole poter restituire null per un tipo valore in una funzione, soprattutto quando l'operazione potrebbe non riuscire a ottenere il valore. Il potenziale problema correlato a questo approccio è rappresentato dal fatto che l'allocazione ora viene eseguita nell'heap e che di conseguenza deve essere sottoposta a Garbage Collection in un secondo momento.
+    Per evitare la conversione boxing, assicurarsi che le variabili, i campi e le proprietà in cui vengono archiviati i tipi numerici e gli struct (inclusi `Nullable<T>`) siano fortemente tipizzati come tipi specifici, ad esempio `int`, `float?` o `MyStruct`, anziché utilizzare l'oggetto.  Se si inseriscono questi oggetti in un elenco, assicurarsi di usare un elenco fortemente tipizzato, ad esempio `List<int>`, anziché `List<object>` o `ArrayList`.
 
     **Esempio di conversione boxing in C#**
 
@@ -130,21 +130,6 @@ public class ExampleClass : MonoBehaviour
     // boolean value type is boxed into object boxedMyVar on the heap
     bool myVar = true;
     object boxedMyVar = myVar;
-    ```
-
-    **Esempio di conversione boxing problematica tramite tipi valore nullable**
-
-    Questo codice illustra una classe di particelle fittizia che è possibile creare in un progetto Unity. Una chiamata a `TryGetSpeed()` causerà un'allocazione di oggetti nell'heap che dovrà essere sottoposta a Garbage Collection in un momento successivo. Questo esempio è particolarmente problematico perché in una scena possono essere presenti oltre 1000 particelle, a ciascuna delle quali viene chiesta la rispettiva velocità corrente. Ciò significa che vengono allocate e conseguentemente deallocate migliaia di oggetti ogni frame, con una notevole riduzione delle prestazioni. La riscrittura della funzione per la restituzione di un valore negativo, ad esempio-1, per indicare un errore consente di evitare questo problema e di mantenere la memoria nello stack.
-
-    ```csharp
-        public class MyParticle
-        {
-            // Example of function returning nullable value type
-            public int? TryGetSpeed()
-            {
-                // Returns current speed int value or null if fails
-            }
-        }
     ```
 
 #### <a name="repeating-code-paths"></a>Percorsi di codice ripetuti
@@ -249,7 +234,7 @@ Per altri dettagli, leggi *Static Batching* (Invio in batch statico) in [Draw Ca
 
 #### <a name="dynamic-batching"></a>Invio in batch dinamico
 
-Poiché è problematico contrassegnare gli oggetti come *statici* per lo sviluppo per HoloLens, l'invio in batch dinamico può essere un'ottima soluzione per compensare la carenza di questa funzionalità. Può naturalmente essere utile anche nei visori VR immersive. Può tuttavia essere difficile abilitare l'invio in batch dinamico in Unity perché i GameObject devono **a) condividere lo stesso materiale** e **b) soddisfare un lungo elenco di altri criteri** .
+Poiché è problematico contrassegnare gli oggetti come *statici* per lo sviluppo per HoloLens, l'invio in batch dinamico può essere un'ottima soluzione per compensare la carenza di questa funzionalità. Può naturalmente essere utile anche nei visori VR immersive. Può tuttavia essere difficile abilitare l'invio in batch dinamico in Unity perché i GameObject devono **a) condividere lo stesso materiale** e **b) soddisfare un lungo elenco di altri criteri**.
 
 Per l'elenco completo, leggi *Dynamic Batching* (Invio in batch dinamico) in [Draw Call Batching in Unity](https://docs.unity3d.com/Manual/DrawCallBatching.html) (Invio di chiamate di disegno in batch in Unity). In genere, i GameObject diventano non validi per l'invio in batch dinamico perché i dati di mesh associati non possono essere più di 300 vertici.
 
