@@ -2,21 +2,21 @@
 title: Mapping spaziale in Unreal
 description: Guida all'uso del mapping spaziale in Unreal
 author: hferrone
-ms.author: v-hferrone
+ms.author: jacksonf
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, mapping spaziale, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 878eae5f5fd0b7a1630511faa23c1477455ed988
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: bde5a1b53f6ad90bc84f54bd3e4f1237b78f2abe
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354379"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609422"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Mapping spaziale in Unreal
 
-Il mapping spaziale consente di posizionare oggetti sulle superfici reali visualizzando l'ambiente intorno a HoloLens, rendendo gli ologrammi più realistici per l'utente. Il mapping spaziale consente anche di ancorare gli oggetti nel mondo dell'utente sfruttando i segnali di profondità del mondo reale. In questo modo l'utente avrà l'impressione che questi ologrammi si trovino effettivamente nello spazio che lo circonda; gli ologrammi che fluttuano nello spazio o che si muovono insieme all'utente non vengono percepiti come reali. È consigliabile inserire elementi di comfort, quando possibile.
+Il mapping spaziale consente di posizionare gli oggetti sulle superfici fisiche del mondo reale. Quando viene eseguito il mapping dell'ambiente intorno a HoloLens, gli ologrammi sembrano più realistici per l'utente. Il mapping spaziale ancora gli oggetti nell'ambiente dell'utente sfruttando i suggerimenti di profondità e dando l'impressione che questi ologrammi si trovino effettivamente nello spazio. Gli ologrammi che fluttuano nello spazio o che si muovono insieme all'utente non vengono percepiti come reali, quindi è sempre necessario inserire gli elementi per comodità quando possibile.
 
 Per altre informazioni su qualità del mapping spaziale, posizionamento, occlusione, rendering e così via, consulta il documento [Mapping spaziale](../../design/spatial-mapping.md).
 
@@ -40,13 +40,13 @@ Per acconsentire esplicitamente al mapping spaziale ed eseguire il debug di **MR
 ## <a name="spatial-mapping-at-runtime"></a>Mapping spaziale in fase di runtime
 Puoi modificare i parametri seguenti per aggiornare il comportamento di runtime del mapping spaziale:
 
-- Apri **Edit > Project Settings** (Modifica > Impostazioni progetto), scorri verso il basso fino alla sezione **Platforms** (Piattaforme) e seleziona **HoloLens > Spatial Mapping** (HoloLens > Mapping spaziale): 
+- Aprire **Edit > Project Settings** (Modifica > Impostazioni progetto), scorrere verso il basso fino alla sezione **Platforms** (Piattaforme) e selezionare **HoloLens > Spatial Mapping** (HoloLens > Mapping spaziale): 
 
 ![Impostazioni del progetto di ancoraggi nello spazio](images/unreal-spatialmapping-projectsettings.PNG)
 
 - Il parametro **Max Triangles Per Cubic Meter** (Numero massimo di triangoli per metro cubo) aggiorna la densità dei triangoli nella mesh di mapping spaziale.  
 - Il parametro **Spatial Meshing Volume Size** (Dimensioni del volume della mesh spaziale) indica le dimensioni del cubo intorno al giocatore per il rendering e l'aggiornamento dei dati di mapping spaziale.  
-    + Se prevedi che l'ambiente di runtime dell'applicazione sia di grandi dimensioni, è possibile che questo valore debba essere elevato per poter corrispondere allo spazio reale.  Viceversa, questo valore può essere più piccolo se l'applicazione deve soltanto posizionare ologrammi sulle superfici immediatamente attorno all'utente. Il volume di mapping spaziale si sposterà quindi contestualmente all'utente. 
+    + Se prevedi che l'ambiente di runtime dell'applicazione sia di grandi dimensioni, è possibile che questo valore debba essere elevato per poter corrispondere allo spazio reale. Il valore può essere più piccolo se l'applicazione deve soltanto posizionare ologrammi sulle superfici immediatamente attorno all'utente. Il volume di mapping spaziale si sposterà quindi contestualmente all'utente. 
 
 ## <a name="working-with-mrmesh"></a>Uso di MRMesh
 
@@ -54,7 +54,7 @@ In primo luogo, è necessario avviare il mapping spaziale:
 
 ![Progetto della funzione ToggleARCapture con il tipo di acquisizione Spatial Mapping evidenziato](images/unreal-spatial-mapping-img-02.png)
 
-Una volta acquisito il mapping spaziale per lo spazio, è consigliabile disattivare il mapping spaziale.  Il mapping spaziale può essere completato dopo un determinato periodo di tempo oppure quando i raycast emessi in ogni direzione restituiscono collisioni con MRMesh.
+Una volta acquisito, è consigliabile disattivare il mapping spaziale per lo spazio.  Il mapping spaziale può essere completato dopo un determinato periodo di tempo oppure quando i raycast emessi in ogni direzione restituiscono collisioni con MRMesh.
 
 Per ottenere l'accesso a **MRMesh** in fase di runtime:
 1. Aggiungi un componente **ARTrackableNotify** a un attore del progetto. 
@@ -62,7 +62,7 @@ Per ottenere l'accesso a **MRMesh** in fase di runtime:
 ![Ancoraggi nello spazio AR Trackable Notify](images/unreal-spatialmapping-artrackablenotify.PNG)
 
 2. Seleziona il componente **ARTrackableNotify** ed spandi la sezione **Events** (Events) nel pannello **Details** (Dettagli). 
-    - Fai clic sul pulsante **+** sugli eventi da monitorare. 
+    - Selezionare il pulsante **+** sugli eventi da monitorare. 
 
 ![Eventi sugli ancoraggi nello spazio](images/unreal-spatialmapping-events.PNG)
 

@@ -2,25 +2,25 @@
 title: Aggiornamento di progetti in Unreal
 description: Panoramica delle procedure di aggiornamento della versione e delle API deprecate nei progetti Unreal.
 author: hferrone
-ms.author: v-hferrone
+ms.author: jacksonf
 ms.date: 11/23/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, documentazione, guide, funzionalità, visore VR realtà mista, visore VR di windows mixed reality, visore VR per realtà virtuale, porting, aggiornamento
-ms.openlocfilehash: efad783ee199ed42c7355917a180855b3ec4f11b
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: 0ba10b8ee1067da4494f147d43f8834010e1250f
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96355706"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609662"
 ---
 # <a name="upgrading-projects-in-unreal"></a>Aggiornamento di progetti in Unreal
 
-Quando si esegue l'aggiornamento a una nuova versione di Unreal, le funzioni deprecate vengono visualizzate come avvisi durante la compilazione del progetto o la creazione del pacchetto del progetto.  Le funzioni sono deprecate quando viene aggiunta una nuova funzione da usare in sostituzione. 
+Quando si esegue l'aggiornamento a una nuova versione di Unreal, le funzioni deprecate vengono visualizzate come avvisi durante la compilazione dei progetti o la creazione del pacchetto del progetto.  Le funzioni sono deprecate quando viene aggiunta una nuova funzione da usare in sostituzione. 
 
 ## <a name="426-upgrades"></a>Aggiornamenti alla versione 4.26
  
-Nella versione 4.26 tutte le piattaforme AR e VR sono state sottoposte a refactoring per aggiungere interfacce comuni e rendere il codice dell'applicazione indipendente dalla piattaforma.  A causa del refactoring, i progetti HoloLens aggiornati alla versione 4.26 possono visualizzare un numero di avvisi superiore al normale.  È consigliabile eseguire l'aggiornamento alle nuove API, in modo che il progetto possa essere facilmente convertito per altre piattaforme.
+Nella versione 4.26 tutte le piattaforme AR e VR sono state sottoposte a refactoring per aggiungere interfacce comuni e rendere il codice dell'applicazione indipendente dalla piattaforma. È quindi possibile che vengano visualizzati più avvisi del solito.  È consigliabile eseguire l'aggiornamento alle nuove API, in modo che il progetto possa essere facilmente convertito per altre piattaforme.
 
 Nei messaggi di avviso verrà visualizzata la funzione deprecata e verrà indicata la funzione da usare in sostituzione.  Tutte le funzioni deprecate continueranno a funzionare per questa versione, ma potrebbero non funzionare nelle versioni future.  Le funzioni deprecate non verranno nemmeno più elencate durante la ricerca di funzioni in un progetto.
 

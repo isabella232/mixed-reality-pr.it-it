@@ -7,18 +7,16 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, ancoraggi nello spazio, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 8be1521d44a9dda521c1570d3ac55955e475bc30
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: b517b1d89ddf7a35864db45a17336f4493816526
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354502"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609632"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Ancoraggi nello spazio locali in Unreal
 
-## <a name="overview"></a>Panoramica
-
-Gli ancoraggi nello spazio consentono di salvare gli ologrammi nel mondo reale in più sessioni dell'applicazione. Questi vengono esposti tramite Unreal come oggetti **ARPin** e salvati nell'archivio degli ancoraggi di HoloLens che viene caricato nelle sessioni future. Gli ancoraggi locali sono ideali come fallback in assenza di connettività Internet.
+Gli ancoraggi nello spazio salvano gli ologrammi nel mondo reale in più sessioni dell'applicazione come **ARPin**. Una volta salvati nell'archivio di ancoraggio di HoloLens, è possibile caricare ARPin in sessioni future e scegliere un'opzione di fallback ideale in assenza di connettività Internet.
 
 > [!NOTE]
 > Le funzioni di ancoraggio di UE 4.25 sono obsolete nella versione 4.26 e devono essere sostituite con funzioni più recenti. 
@@ -28,13 +26,13 @@ Gli ancoraggi nello spazio consentono di salvare gli ologrammi nel mondo reale i
 
 ## <a name="checking-the-anchor-store"></a>Verifica dell'archivio degli ancoraggi
 
-Prima di salvare o caricare gli ancoraggi, verifica che l'archivio degli ancoraggi sia pronto.  Se chiami una delle funzioni di ancoraggio di HoloLens prima che l'archivio degli ancoraggi sia pronto, la chiamata avrà esito negativo.  
+Prima di salvare o caricare gli ancoraggi, verifica che l'archivio degli ancoraggi sia pronto.  Chiamando una delle funzioni di ancoraggio di HoloLens prima che l'archivio degli ancoraggi sia pronto, la chiamata avrà esito negativo.  
 
 [!INCLUDE[](includes/tabs-sa-1.md)]
 
 ## <a name="saving-anchors"></a>Salvataggio degli ancoraggi
 
-Quando l'applicazione dispone di un componente che deve essere aggiunto al mondo reale, può salvarlo nell'archivio di ancoraggio con la sequenza illustrata di seguito: 
+Quando l'applicazione dispone di un componente che si vuole aggiungere al mondo reale, è possibile salvarlo nell'archivio di ancoraggio con la sequenza illustrata di seguito: 
 
 [!INCLUDE[](includes/tabs-sa-2.md)]
 
@@ -44,7 +42,7 @@ Operazioni da eseguire:
 3. Aggiungi l'attore all'oggetto **ARPin** e salva il segnaposto nell'archivio degli ancoraggi di HoloLens.  
     * Il nome dell'ancoraggio scelto deve essere univoco. In questo esempio è usato il timestamp corrente. 
 
-4. Se l'ancoraggio viene salvato correttamente nell'archivio degli ancoraggi, puoi ispezionarlo nel portale del dispositivo HoloLens in **System > Map manager > Anchor Files Saved On Device** (Sistema > Gestore mappe > File di ancoraggio salvati sul dispositivo). 
+4. Se l'ancoraggio viene salvato correttamente nell'archivio degli ancoraggi, è possibile ispezionarlo nel portale del dispositivo HoloLens in **System > Map manager > Anchor Files Saved On Device** (Sistema > Gestore mappe > File di ancoraggio salvati sul dispositivo). 
 
 ## <a name="loading-anchors"></a>Caricamento degli ancoraggi
 
@@ -63,7 +61,7 @@ Eseguiamo anche una query sull'ID di ancoraggio, in modo che sia possibile gener
 
 ## <a name="removing-anchors"></a>Rimozione degli ancoraggi 
 
-Terminate le operazioni su un ancoraggio, puoi eliminare singoli ancoraggi o l'intero archivio degli ancoraggi con i componenti **Remove ARPin from WMRAnchor Store** (Rimuovi ARPin dall'archivio WMRAnchor) e **Remove All ARPins from WMRAnchor Store** (Rimuovi tutti gli ARPin dall'archivio WMRAnchor).
+Terminate le operazioni su un ancoraggio, è possibile eliminare singoli ancoraggi o l'intero archivio degli ancoraggi con i componenti **Remove ARPin from WMRAnchor Store** (Rimuovi ARPin dall'archivio WMRAnchor) e **Remove All ARPins from WMRAnchor Store** (Rimuovi tutti gli ARPin dall'archivio WMRAnchor).
 
 [!INCLUDE[](includes/tabs-sa-4.md)]
 
@@ -72,7 +70,7 @@ Terminate le operazioni su un ancoraggio, puoi eliminare singoli ancoraggi o l'i
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si segue il percorso di checkpoint per lo sviluppo con Unreal che è stato delineato, si stanno esplorando i blocchi predefiniti fondamentali di MRTK. Da qui è possibile passare al blocco predefinito successivo: 
+Se si segue il percorso delineato per lo sviluppo con Unreal, tenere presente che si stanno esplorando i blocchi predefiniti fondamentali di MRTK. Da qui, è possibile passare al blocco predefinito successivo: 
 
 > [!div class="nextstepaction"]
 > [Ancoraggi nello spazio di Azure](unreal-azure-spatial-anchors.md)

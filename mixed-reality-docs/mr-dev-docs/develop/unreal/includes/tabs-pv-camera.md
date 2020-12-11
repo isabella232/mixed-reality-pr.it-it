@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5952cf94ba07a6d92903050a2a813cc911d4d70f
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: a8258f1ba99fdd1607014624c4ad4d6ec0a8e330
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354678"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609608"
 ---
 # <a name="425"></a>[4.25](#tab/425)
 
@@ -13,9 +13,9 @@ ms.locfileid: "96354678"
 > [!NOTE]
 > Questa operazione richiede **Unreal Engine 4.25** o versioni successive.
 
-Il sistema e i registratori MRC personalizzati creano acquisizioni in realtà mista combinando la fotocamera/videocamera con ologrammi sottoposti a rendering dall'app immersiva.
+Il sistema e i registratori MRC personalizzati creano acquisizioni in realtà mista combinando la fotocamera/videocamera con ologrammi sottoposti a rendering dall'app.
 
-Per impostazione predefinita, l'acquisizione in realtà mista usa l'output olografico dell'occhio destro. Se un'app immersiva sceglie di [eseguire il rendering dalla fotocamera/videocamera](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in), verrà usata quest'ultima. Ciò migliora il mapping tra il mondo reale e gli ologrammi nel video MRC.
+Per impostazione predefinita, l'acquisizione in realtà mista usa l'output olografico dell'occhio destro. Se un'app immersiva sceglie di [eseguire il rendering dalla fotocamera/videocamera](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in), verrà usata quest'ultima. Il rendering dalla fotocamera/videocamera migliora il mapping tra il mondo reale e gli ologrammi nel video MRC.
 
 Per acconsentire esplicitamente al rendering dalla fotocamera/videocamera:
 
@@ -51,7 +51,7 @@ Per eseguire il rendering dell'immagine della fotocamera:
 
 ![Acquisire texture dalla webcam](../images/unreal-camera-texture.PNG)
 
-5. Assicurati che il materiale includa un parametro corrispondente al nome in **SetTextureParameterValue** associato a una voce di colore. In mancanza di questo parametro, l'immagine della fotocamera non potrà essere visualizzata correttamente.
+5. Assicurarsi che il materiale includa un parametro corrispondente al nome in **SetTextureParameterValue** associato a una voce di colore. In mancanza di questo parametro, l'immagine della fotocamera non potrà essere visualizzata correttamente.
 
 ![Texture della fotocamera](../images/unreal-camera-material.PNG)
 
@@ -91,13 +91,13 @@ Per eseguire il rendering dell'immagine della fotocamera:
 
 ## <a name="find-camera-positions-in-world-space"></a>Trovare le posizioni della fotocamera nello spazio globale
 
-La fotocamera in HoloLens 2 presenta uno scostamento verticale rispetto al rilevamento della testa operato dal dispositivo.  Per tenere in considerazione questo aspetto, sono disponibili alcune funzioni per individuare la fotocamera nello spazio globale.
+La fotocamera in HoloLens 2 presenta uno scostamento verticale rispetto al rilevamento della testa operato dal dispositivo.  Per tenere in considerazione questo scostamento, sono disponibili alcune funzioni per individuare la fotocamera nello spazio globale.
 
-GetPVCameraToWorldTransform ottiene la trasformazione della fotocamera/videocamera nello spazio globale.  Tale trasformazione verrà posizionata sull'obiettivo della fotocamera:
+GetPVCameraToWorldTransform ottiene la trasformazione nello spazio globale della fotocamera/videocamera e viene posizionata sull'obiettivo della fotocamera:
 
 ![Progetto della funzione Get PVCamera to World Transform](../images/unreal-pvc-img-08.png)
 
-GetWorldSpaceRayFromCameraPoint esegue il cast di un raggio dall'obiettivo dalla fotocamera alla scena nello spazio globale di Unreal per trovare un elemento presente in un particolare pixel del frame della fotocamera:
+GetWorldSpaceRayFromCameraPoint esegue il cast di un raggio dall'obiettivo della fotocamera alla scena nello spazio globale di Unreal per trovare un contenuto di pixel presente nel frame della fotocamera:
 
 ![Progetto di Get World Space Ray from Camera Point](../images/unreal-pvc-img-09.png)
 
@@ -105,7 +105,7 @@ GetPVCameraIntrinsics restituisce i valori intrinseci della fotocamera, che poss
 
 ![Progetto delle funzioni di Get PVCamera Intrinsics](../images/unreal-pvc-img-10.png)
 
-Per trovare un elemento presente nello spazio globale in corrispondenza di una particolare coordinata del pixel, è possibile usare una traccia lineare con il raggio dello spazio globale:
+Per trovare un elemento presente nello spazio globale in corrispondenza di una particolare coordinata del pixel, usare una traccia lineare con il raggio dello spazio globale:
 
 ![Progetto del raggio dello spazio globale usato per individuare un elemento presente nello spazio globale in corrispondenza di una particolare coordinata](../images/unreal-pvc-img-11.png)
 
@@ -169,7 +169,7 @@ ACamCapture::ACamCapture()
 
 In BeginPlay creare un'istanza di materiale dinamico dal materiale della fotocamera del progetto, applicarla al componente della mesh statica e avviare la fotocamera HoloLens. 
  
-Nell'editor fare clic con il pulsante destro del mouse su CamTextureMaterial nel browser del contenuto e selezionare "Copy Reference" (Copia riferimento) per ottenere la stringa per CameraMatPath.
+Per ottenere la stringa per CameraMatPath, nell'editor fare clic con il pulsante destro del mouse su CamTextureMaterial nel browser del contenuto e selezionare "Copy Reference" (Copia riferimento).
 
 ```cpp
 void ACamCapture::BeginPlay()

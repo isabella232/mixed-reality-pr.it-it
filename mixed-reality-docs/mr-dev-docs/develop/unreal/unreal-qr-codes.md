@@ -7,16 +7,16 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, codici a matrice, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: f2f06e9aa8d458d58dc8551ab6cd726622c30d4c
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: 7e39e1d822f0aa623a83678beef24f2c98a18944
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354414"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609642"
 ---
 # <a name="qr-codes-in-unreal"></a>Codici a matrice in Unreal
 
-HoloLens 2 può individuare i codici a matrice in uno spazio del mondo reale usando la webcam, eseguendone il rendering come ologrammi mediante un sistema di coordinate nella posizione reale di ciascun nodo.  Oltre ai singoli codici a matrice, HoloLens 2 è in grado di eseguire il rendering degli ologrammi nella stessa posizione su più dispositivi per creare un'esperienza condivisa. Assicurati di seguire le procedure consigliate per l'aggiunta di codici a matrice alle tue applicazioni:
+HoloLens 2 può individuare i codici a matrice nello spazio globale usando la webcam, eseguendone il rendering come ologrammi nella posizione reale di ciascun codice. HoloLens 2 è in grado di eseguire il rendering degli ologrammi nella stessa posizione su più dispositivi per creare un'esperienza condivisa. Assicurati di seguire le procedure consigliate per l'aggiunta di codici a matrice alle tue applicazioni:
 
 - Zone silenziose
 - Illuminazione e sfondo
@@ -29,11 +29,11 @@ Presta particolare attenzione alle [considerazioni sull'ambiente](../../environm
 
 ## <a name="enabling-qr-detection"></a>Abilitazione del rilevamento di codici a matrice
 Dato che HoloLens 2 deve usare la webcam per visualizzare i codici a matrice, è necessario abilitarla nelle impostazioni del progetto:
-- Apri **Edit > Project Settings** (Modifica > Impostazioni progetto), scorri fino alla sezione **Platforms** (Piattaforme) e fai clic su **HoloLens**.
+- Aprire **Edit > Project Settings** (Modifica > Impostazioni progetto), scorrere fino alla sezione **Platforms** (Piattaforme) e selezionare **HoloLens**.
     + Espandi la sezione **Capabilities** (Funzionalità) e seleziona **Webcam**.  
 - Devi anche acconsentire esplicitamente al rilevamento dei codici a matrice [aggiungendo un asset ARSessionConfig](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset).
 
-[!INCLUDE[](includes/tabs-qr-codes.md)]
+[!INCLUDE[](includes/tabs-qr-codes-1.md)]
 
 ## <a name="setting-up-a-tracked-qr-code"></a>Configurazione di un codice a matrice rilevato
 
@@ -54,7 +54,7 @@ I codici a matrice vengono esposti tramite il sistema di geometria rilevata AR d
 ## <a name="using-a-tracked-qr-code"></a>Uso di un codice a matrice rilevato
 Il grafico degli eventi nell'immagine seguente mostra l'evento **OnUpdateTrackedImage** usato per eseguire il rendering di un punto al centro di un codice a matrice e stamparne i dati.
 
-![Esempio di rendering dei codici a matrice](images/unreal-qr-render.PNG)
+[!INCLUDE[](includes/tabs-qr-codes-2.md)]
 
 Ecco cosa accade:
 1. Prima di tutto, viene eseguito il cast dell'immagine rilevata in un codice **ARTrackedQRCode** per verificare che l'immagine aggiornata corrente sia un codice a matrice.  
