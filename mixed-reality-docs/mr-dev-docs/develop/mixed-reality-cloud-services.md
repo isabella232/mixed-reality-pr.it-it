@@ -4,16 +4,16 @@ title: Panoramica dei servizi cloud di realtà mista di Azure
 description: Risorse dei servizi cloud di Realtà mista.
 author: hferrone
 ms.author: v-haferr
-ms.date: 06/5/2020
+ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realtà mista, sviluppare, sviluppo, HoloLens, servizi cloud, Azure, rendering remoto, ancoraggi nello spazio, servizi cognitivi, cognizione, unity, machine learning, traduzione vocale, visione artificiale, Microsoft Graph
-ms.openlocfilehash: 338574ac5a06841a6a2a9920fc0dfbdfdbfd0bbf
-ms.sourcegitcommit: eba192e1cfaef35bc55161d4e9a0adea36ff1a18
+ms.openlocfilehash: f69ec9672898caf01092d805e5c83df48a14a65e
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96526058"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925932"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Panoramica dei servizi cloud di realtà mista di Azure
 
