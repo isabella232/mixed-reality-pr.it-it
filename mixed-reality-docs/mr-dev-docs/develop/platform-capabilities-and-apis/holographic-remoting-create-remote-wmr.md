@@ -1,32 +1,30 @@
 ---
 title: Scrittura di un'app remota olografica remota (WMR)
-description: Creando un contenuto remoto dell'app remota olografica, di cui viene eseguito il rendering in un computer remoto, può essere trasmesso a HoloLens 2. Questo articolo descrive il modo in cui è possibile ottenere questo risultato.
+description: Creando un contenuto remoto dell'app remota olografica, di cui viene eseguito il rendering in un computer remoto, può essere trasmesso a HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicazione remota, comunicazione remota olografica, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale, NuGet
-ms.openlocfilehash: 3bbb75d9f1b6db64326f5b429103828266650a52
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 5eddcc117008ebc54eac11965592099601880d3e
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96469512"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530222"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-holographicspace-api"></a>Scrittura di un'app remota di comunicazione remota olografica tramite l'API HolographicSpace
 
 >[!IMPORTANT]
 >Questo documento descrive la creazione di un'applicazione remota per HoloLens 2 con l' [API HolographicSpace](../native/getting-a-holographicspace.md). Le applicazioni remote per **HoloLens (1a Gen)** devono usare il pacchetto NuGet versione **1. x. x**. Ciò implica che le applicazioni remote scritte per HoloLens 2 non sono compatibili con HoloLens 1 e viceversa. La documentazione per HoloLens 1 è disponibile [qui](add-holographic-remoting.md).
 
-Grazie alla creazione di un'app remota olografica remota, il contenuto remoto di cui è stato eseguito il rendering in un computer remoto può essere trasmesso a HoloLens 2 e a dispositivi immersivi come gli auricolari di realtà mista di Windows. Questo articolo descrive il modo in cui è possibile ottenere questo risultato. Tutto il codice in questa pagina e i progetti di lavoro sono disponibili nel [repository GitHub degli esempi di comunicazione remota olografica](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+Le app di comunicazione remota olografica possono trasmettere contenuti con rendering remoto a HoloLens 2 e agli auricolari immersivi con la realtà mista di Windows. È inoltre possibile accedere a più risorse di sistema e integrare [visualizzazioni immersive](../../design/app-views.md) remote in software per PC desktop esistenti. Un'app remota riceve un flusso di dati di input da HoloLens 2, esegue il rendering del contenuto in una visualizzazione immersiva virtuale e trasmette nuovamente i frame di contenuto a HoloLens 2. La connessione viene eseguita usando il Wi-Fi standard. La comunicazione remota olografica viene aggiunta a un'app desktop o UWP tramite un pacchetto NuGet. È necessario codice aggiuntivo che gestisce la connessione e ne esegue il rendering in una visualizzazione immersiva. Una tipica connessione remota avrà una bassa di 50 ms di latenza. L'App Player può segnalare la latenza in tempo reale.
 
-La comunicazione remota olografica consente a un'app di destinare gli auricolari HoloLens 2 e Windows Mixed Reality con contenuto olografico eseguito in un computer desktop o in un dispositivo UWP come Xbox One, consentendo l'accesso a più risorse di sistema e rendendo possibile l'integrazione di [visualizzazioni immersive](../../design/app-views.md) remote in software per PC desktop esistenti. Un'app remota riceve un flusso di dati di input da HoloLens 2, esegue il rendering del contenuto in una visualizzazione immersiva virtuale e trasmette nuovamente i frame di contenuto a HoloLens 2. La connessione viene eseguita usando il Wi-Fi standard. La comunicazione remota olografica viene aggiunta a un'app desktop o UWP tramite un pacchetto NuGet. È necessario codice aggiuntivo che gestisce la connessione e ne esegue il rendering in una visualizzazione immersiva.
-
-Una tipica connessione remota avrà una bassa di 50 ms di latenza. L'App Player può segnalare la latenza in tempo reale.
+Tutto il codice in questa pagina e i progetti di lavoro sono disponibili nel [repository GitHub degli esempi di comunicazione remota olografica](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Un punto di partenza efficace è un'app desktop o UWP basata su DirectX funzionante che ha come destinazione l' [API HolographicSpace](../native/getting-a-holographicspace.md). Per informazioni dettagliate, vedere [Cenni preliminari sullo sviluppo DirectX](../native/directx-development-overview.md). Il [modello di progetto olografico C++](../native/creating-a-holographic-directx-project.md) è un punto di partenza valido.
+Un punto di partenza efficace è un'app desktop o UWP basata su DirectX funzionante, che ha come destinazione l' [API HolographicSpace](../native/getting-a-holographicspace.md). Per informazioni dettagliate, vedere [Cenni preliminari sullo sviluppo DirectX](../native/directx-development-overview.md). Il [modello di progetto olografico C++](../native/creating-a-holographic-directx-project.md) è un punto di partenza valido.
 
 >[!IMPORTANT]
 >Qualsiasi app che usa la comunicazione remota olografica deve essere creata per usare un [Apartment](https://docs.microsoft.com//windows/win32/com/multithreaded-apartments)multithread. L'uso di un [Apartment a thread singolo](https://docs.microsoft.com//windows/win32/com/single-threaded-apartments) è supportato, ma comporta prestazioni ottimali e possibilmente balbettanti durante la riproduzione. Quando si usa C++/WinRT [WinRT:: init_apartment](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/get-started) un apartment multithread è il valore predefinito.
@@ -38,10 +36,10 @@ Un punto di partenza efficace è un'app desktop o UWP basata su DirectX funziona
 I passaggi seguenti sono necessari per aggiungere il pacchetto NuGet a un progetto in Visual Studio.
 1. Aprire il progetto in Visual Studio.
 2. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Gestisci pacchetti NuGet...**
-3. Nel pannello visualizzato fare clic su **Sfoglia** e quindi cercare "comunicazione remota olografica".
-4. Selezionare **Microsoft. olografic. Remoting**, assicurarsi di selezionare la versione **2. x.** x più recente e fare clic su **Installa**.
+3. Nel pannello visualizzato selezionare **Sfoglia** e quindi cercare "comunicazione remota olografica".
+4. Selezionare **Microsoft. olografic. Remoting**, assicurarsi di selezionare la versione **2. x.** x più recente e selezionare **Installa**.
 5. Se viene visualizzata la finestra di dialogo **Anteprima** , fare clic su **OK**.
-6. La finestra di dialogo successiva visualizzata è il contratto di licenza. Fare clic su **Accetto** per accettare il contratto di licenza.
+6. Selezionare **Accetto** quando viene visualizzata la finestra di dialogo contratto di licenza.
 
 >[!NOTE]
 >La versione **1. x.** x del pacchetto NuGet è ancora disponibile per gli sviluppatori che desiderano utilizzare HoloLens 1. Per informazioni dettagliate, vedere [aggiungere la comunicazione remota olografica (HoloLens (1st Gen))](add-holographic-remoting.md).
@@ -75,7 +73,7 @@ CreateRemoteContext(m_remoteContext, 20000, false, PreferredVideoCodec::Default)
 >[!WARNING]
 >La comunicazione remota olografica funziona sostituendo il runtime della realtà mista di Windows che fa parte di Windows con un runtime specifico di .NET Remoting. Questa operazione viene eseguita durante la creazione del contesto remoto. Per questo motivo qualsiasi chiamata a qualsiasi API di realtà mista di Windows prima di creare il contesto remoto può causare un comportamento imprevisto. L'approccio consigliato consiste nel creare il contesto remoto il prima possibile prima di interagire con qualsiasi API di realtà mista. Non combinare mai oggetti creati o recuperati tramite qualsiasi API di realtà mista di Windows prima della chiamata a CreateRemoteContext con gli oggetti creati o recuperati in seguito.
 
-Successivamente, è necessario creare lo spazio olografico. Non è necessario specificare un CoreWindow. Le app desktop che non dispongono di un CoreWindow possono semplicemente passare un ```nullptr``` .
+Successivamente, è necessario creare lo spazio olografico. La specifica di un CoreWindow non è obbligatoria. Le app desktop che non dispongono di un CoreWindow possono semplicemente passare un ```nullptr``` .
 
 ```cpp
 m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::CreateForCoreWindow(nullptr);
@@ -126,7 +124,7 @@ catch(winrt::hresult_error& e)
 
 ## <a name="handling-remoting-specific-events"></a>Gestione di eventi specifici della comunicazione remota
 
-Il contesto remoto espone tre eventi che sono importanti per monitorare lo stato di una connessione.
+Il contesto remoto espone tre eventi, che sono importanti per monitorare lo stato di una connessione.
 1) OnConnected: attivato quando una connessione al dispositivo è stata stabilita correttamente.
 ```cpp
 winrt::weak_ref<winrt::Microsoft::Holographic::AppRemoting::IRemoteContext> remoteContextWeakRef = m_remoteContext;
@@ -239,7 +237,7 @@ Esistono due modi per specificare le frasi da riconoscere.
 1) Specifica all'interno di un file XML di grammatica vocale. Per informazioni dettagliate, vedere [come creare una grammatica XML di base](https://docs.microsoft.com//previous-versions/office/developer/speech-technologies/hh361658(v=office.14)) .
 2) Specificare passandoli all'interno del vettore del dizionario a ```ApplyParameters``` .
 
-All'interno del callback OnRecognizedSpeech è possibile elaborare gli eventi di riconoscimento vocale:
+All'interno del callback OnRecognizedSpeech, gli eventi di riconoscimento vocale possono essere elaborati:
 
 ```cpp
 void SampleRemoteMain::OnRecognizedSpeech(const winrt::hstring& recognizedText)
@@ -268,7 +266,7 @@ void SampleRemoteMain::OnRecognizedSpeech(const winrt::hstring& recognizedText)
 
 ## <a name="preview-streamed-content-locally"></a>Anteprima del contenuto trasmesso localmente
 
-Per visualizzare lo stesso contenuto nell'app remota che viene inviata al dispositivo ```OnSendFrame``` , è possibile usare l'evento del contesto remoto. L' ```OnSendFrame``` evento viene attivato ogni volta che la libreria remota olografica invia il frame corrente al dispositivo remoto. Questo è il momento ideale per eseguire il contenuto, blit anche nella finestra desktop o UWP.
+Per visualizzare lo stesso contenuto nell'app remota inviata al dispositivo ```OnSendFrame``` , è possibile usare l'evento del contesto remoto. L' ```OnSendFrame``` evento viene attivato ogni volta che la libreria remota olografica invia il frame corrente al dispositivo remoto. Questo è il momento ideale per eseguire il contenuto, blit anche nella finestra desktop o UWP.
 
 ```cpp
 #include <windows.graphics.directx.direct3d11.interop.h>
@@ -293,7 +291,7 @@ m_onSendFrameEventRevoker = m_remoteContext.OnSendFrame(
 
 ## <a name="depth-reprojection"></a>Riproiezione profondità
 
-A partire dalla versione [2.1.0](holographic-remoting-version-history.md#v2.1.0), la comunicazione remota olografica supporta la [riproiezione approfondita](hologram-stability.md#reprojection). Questa operazione richiede, oltre al buffer dei colori, di trasmettere anche il buffer di profondità dall'applicazione remota a HoloLens 2. Per impostazione predefinita, il flusso del buffer di profondità è abilitato e configurato per utilizzare la metà della risoluzione del buffer di colore. Questo può essere modificato come segue:
+A partire dalla versione [2.1.0](holographic-remoting-version-history.md#v2.1.0), la comunicazione remota olografica supporta la [riproiezione approfondita](hologram-stability.md#reprojection). Questa operazione richiede che sia il buffer di colore che il buffer di profondità vengano trasmessi dall'applicazione remota a HoloLens 2. Per impostazione predefinita, il flusso del buffer di profondità è abilitato e configurato per utilizzare la metà della risoluzione del buffer di colore. Questo può essere modificato come segue:
 
 ```cpp
 // class implementation
@@ -317,7 +315,7 @@ Si noti che se i valori predefiniti non devono essere usati, ```ConfigureDepthVi
 
 Tenere presente che l'uso di un buffer di profondità di risoluzione completa influiscono anche sui requisiti della larghezza di banda e deve essere considerato nel valore della larghezza di banda massima fornito a ```CreateRemoteContext``` .
 
-Oltre a configurare la risoluzione è anche necessario eseguire il commit di un buffer di profondità tramite [HolographicCameraRenderingParameters. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_).
+Oltre a configurare la risoluzione, è inoltre necessario eseguire il commit di un buffer di profondità tramite [HolographicCameraRenderingParameters. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_).
 
 ```cpp
 
