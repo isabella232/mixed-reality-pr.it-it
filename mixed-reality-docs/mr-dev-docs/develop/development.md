@@ -4,16 +4,16 @@ title: Informazioni sugli strumenti e sull'architettura
 description: Documentazione per sviluppatori di realtà mista per HoloLens e visori VR immersive.
 author: grbury
 ms.author: grbury
-ms.date: 07/31/2020
+ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realtà mista, sviluppare, sviluppo, HoloLens, unity, unreal, directx, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, sviluppo di realtà virtuale, sviluppo di realtà aumentata
-ms.openlocfilehash: e269523b7ddd369d65e9a33dbeb32b13a17428a4
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 75501e299b0bccbc35056ebb2da6657bd5d1e335
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677860"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925971"
 ---
 # <a name="introduction-to-mixed-reality-development"></a>Introduzione allo sviluppo di app di Realtà mista
 

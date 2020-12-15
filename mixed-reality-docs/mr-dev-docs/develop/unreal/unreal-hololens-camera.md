@@ -3,16 +3,16 @@ title: Fotocamera/videocamera HoloLens in Unreal
 description: Guida all'uso della fotocamera/videocamera HoloLens in Unreal
 author: hferrone
 ms.author: jacksonf
-ms.date: 06/10/2020
+ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, videocamera, fotocamera, MRC, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: c0c6e06e66e03934912906dbff5a93f9271a68b6
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: fb7bbf5a0f41c15d73e59226dad32cda8764e6cc
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609607"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926099"
 ---
 # <a name="hololens-photovideo-camera-in-unreal"></a>Fotocamera/videocamera HoloLens in Unreal
 
