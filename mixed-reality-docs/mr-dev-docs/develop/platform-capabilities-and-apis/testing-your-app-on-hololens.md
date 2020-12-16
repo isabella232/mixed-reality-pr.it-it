@@ -6,31 +6,31 @@ ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens, test
-ms.openlocfilehash: f498fd9f724cc0786e7b8bfe656f1948de1ab0cb
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: e1a5a62cf52a3144f02b8acaa96b3c653246fd9c
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684908"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530336"
 ---
 # <a name="testing-your-app-on-hololens"></a>Test dell'app in HoloLens
 
-Il test delle applicazioni HoloLens è molto simile a quello delle applicazioni Windows. Tutte le aree comuni devono essere considerate (funzionalità, interoperabilità, prestazioni, sicurezza, affidabilità e così via). Esistono, tuttavia, alcune aree che richiedono una particolare gestione o attenzione ai dettagli che non vengono in genere osservati nelle app per PC o telefoni. Le app olografiche devono essere eseguite senza problemi in un set eterogeneo di ambienti. Devono inoltre mantenere sempre le prestazioni e la comodità degli utenti. Le linee guida per il test di queste aree sono descritte in dettaglio in questo argomento.
+Il test delle applicazioni HoloLens è simile a quello delle applicazioni Windows. È comunque necessario considerare la funzionalità, l'interoperabilità, le prestazioni, la sicurezza, l'affidabilità e così via. Tuttavia, alcune aree che non compaiono nelle app per PC o per telefoni cellulari richiedono una gestione speciale. Le app olografiche devono essere eseguite senza problemi in un set eterogeneo di ambienti. Devono inoltre mantenere sempre le prestazioni e la comodità degli utenti. Questa guida è utile per il test di queste aree.
 
 ## <a name="performance"></a>Prestazioni
 
 Le app olografiche devono essere eseguite senza problemi in un set eterogeneo di ambienti. Devono inoltre mantenere sempre le prestazioni e la comodità degli utenti. Le prestazioni sono molto importanti per l'esperienza dell'utente con un'app olografica a cui è dedicato un intero argomento. Assicurarsi di leggere e seguire le [prestazioni di comprensione per la realtà mista](understanding-performance-for-mixed-reality.md)
 
 ## <a name="testing-3d-in-3d"></a>Test 3D in 3D
-1. **Testare l'app in tutti gli spazi diversi possibili.** Prova in grandi sale, piccoli spazi, bagni, cucine, camere, uffici e così via. Prendere in considerazione anche le camere con funzionalità non standard, ad esempio muri non verticali, muri curvi, massimali non orizzontali. Funziona bene durante la transizione tra chat room, piani, attraversamento di corridoi o scale?
-2. **Testare l'app in condizioni di illuminazione diverse.** Risponde correttamente a condizioni ambientali diverse, ad esempio illuminazione, superfici nere, superfici trasparenti o riflettenti, ad esempio specchi, pareti vetrate e così via.
+1. **Testare l'app in tutti gli spazi diversi possibili.** Prova in stanze di grandi dimensioni, piccoli spazi, bagni, cucine, camere, uffici e così via. Prendere in considerazione anche le camere con funzionalità non standard, ad esempio muri non verticali, muri curvi, massimali non orizzontali. Funziona bene durante la transizione tra chat room, piani, attraversamento di corridoi o scale?
+2. **Testare l'app in condizioni di illuminazione diverse.** Risponde correttamente a diverse condizioni ambientali come illuminazione, superfici nere e superfici trasparenti o riflettenti come i mirror e i muri vetrati.
 3. **Testare l'app in condizioni di movimento diverse.** Inserire sul dispositivo e provare gli scenari in diversi Stati di movimento. Risponde correttamente a uno stato di spostamento o costante diverso?
 4. **Testare il funzionamento dell'app da diverse angolazioni.** Se si dispone di un ologramma bloccato in tutto il mondo, cosa accade se l'utente si aggira? Cosa accade se si verifica qualcosa tra l'utente e l'ologramma? Cosa accade se l'utente esamina l'ologramma sopra o sotto?
-5. **Usare i segnali spaziali e audio.** Assicurarsi che l'app li usi per impedire che l'utente vada perso.
+5. **Usare i segnali spaziali e audio.** Assicurarsi che l'app usi segnali spaziali e audio per impedire che l'utente vada perso.
 6. **Testare l'app a diversi livelli di rumore di ambiente.** Se sono stati implementati i comandi vocali, provare a richiamarli con diversi livelli di rumore di ambiente.
-7. **Testare l'app in sede e in piedi** . Assicurarsi di eseguire il test dalle posizioni di seduta e di posizione.
-8. **Testare l'app da diverse distanze** . Gli elementi dell'interfaccia utente possono essere letti e interagire da lontano? L'app reagirà agli utenti troppo vicini agli ologrammi?
-9. **Testare l'app in base alle interazioni comuni della barra delle app** . Tutti i riquadri delle app e le app universali 2D hanno una [barra dell'app](../../discover/navigating-the-windows-mixed-reality-home.md#moving-and-adjusting-apps) che consente di controllare il modo in cui l'app viene posizionata nel mondo misto. Assicurarsi che facendo clic su Rimuovi si interrompa normalmente il processo dell'app e che il pulsante indietro sia supportato nel contesto dell'app universale 2D. Provare a ridimensionare e spostare l'app in [modalità di regolazione](../../discover/navigating-the-windows-mixed-reality-home.md#moving-and-adjusting-apps) sia quando è attiva, sia quando si tratta di un riquadro dell'app sospesa.
+7. **Testare l'app in sede e in piedi**. Assicurarsi di eseguire il test dalle posizioni di seduta e di posizione.
+8. **Testare l'app da diverse distanze**. Gli elementi dell'interfaccia utente possono essere letti e interagire da lontano? L'app reagirà agli utenti troppo vicini agli ologrammi?
+9. **Testare l'app in base alle interazioni comuni della barra delle app**. Tutti i riquadri delle app e le app universali 2D hanno una [barra dell'app](../../discover/navigating-the-windows-mixed-reality-home.md#moving-and-adjusting-apps) che consente di controllare la posizione delle app nel mondo misto. Assicurarsi di fare clic su Rimuovi termina il processo dell'app normalmente e che il pulsante indietro sia supportato nel contesto dell'app universale 2D. Provare a ridimensionare e spostare l'app in [modalità di regolazione](../../discover/navigating-the-windows-mixed-reality-home.md#moving-and-adjusting-apps) sia quando è attiva, sia quando si tratta di un riquadro dell'app sospesa.
 
 ### <a name="environmental-test-matrix"></a>Matrice di test ambientali
 
@@ -38,7 +38,7 @@ Le app olografiche devono essere eseguite senza problemi in un set eterogeneo di
 
 ## <a name="comfort"></a>Comfort
 1. **Ritagliare i piani.** Prestare attenzione alla posizione in cui [viene eseguito il rendering degli ologrammi](hologram-stability.md#hologram-render-distances).
-2. **Evitare lo spostamento virtuale incoerente con lo spostamento Head effettivo.** Evitare lo spostamento della fotocamera in modo che non sia rappresentativo del movimento effettivo dell'utente. Se l'app richiede lo spostamento dell'utente tramite una scena, rendere prevedibile il movimento, ridurre al minimo l'accelerazione e consentire all'utente di controllare il movimento.
+2. **Evitare lo spostamento virtuale incoerente con lo spostamento Head effettivo.** Evitare lo spostamento della fotocamera in modo che non rappresenti il movimento effettivo dell'utente. Se l'app richiede lo spostamento dell'utente tramite una scena, rendere prevedibile il movimento, ridurre al minimo l'accelerazione e consentire all'utente di controllare il movimento.
 3. **Seguire le linee guida per la qualità degli ologrammi.** Le app performanti che implementano le [linee guida relative alla qualità olografica](hologram-stability.md) hanno una minore probabilità di causare disagio nell'utente.
 4. **Distribuisci gli ologrammi orizzontalmente anziché verticalmente.** Forzare l'utente a dedicare lunghi periodi di tempo alla ricerca verso l'alto o verso il basso può causare fatica nel collo.
 
@@ -48,16 +48,16 @@ Le app olografiche devono essere eseguite senza problemi in un set eterogeneo di
 ### <a name="interaction-models"></a>Modelli di interazione
 
 Assicurarsi che le interazioni ologramma funzionino con il [modello di interazione](../../design/interaction-fundamentals.md)scelto.
-È inoltre consigliabile convalidare con diversi accessori, ad esempio mouse e tastiera, se questi accessori sono necessari per supportare l'accessibilità.
+È inoltre consigliabile convalidare con diversi accessori, ad esempio mouse e tastiera, se sono necessari per supportare l'accessibilità.
 
-**Verificare quando l'app ha un comportamento diverso con il mouse e il tocco.** In questo modo si identificano le incoerenze e si aiutano a prendere decisioni di progettazione per rendere più naturale l'esperienza per gli utenti. Ad esempio, l'attivazione di un'azione in base al passaggio del mouse.
+**Verificare quando l'app ha un comportamento diverso con il mouse e il tocco.** Identifica le incoerenze e aiuta a prendere decisioni di progettazione per rendere più naturale l'esperienza per gli utenti. Ad esempio, l'attivazione di un'azione in base al passaggio del mouse.
 
 
 ### <a name="custom-voice-commands"></a>Comandi vocali personalizzati
 
-L' [input vocale](../../design/voice-input.md) è una forma naturale di interazione. L'esperienza utente può essere magica o confusa a seconda dei comandi scelti e del modo in cui vengono esposti. Di norma, non usare i comandi vocali di sistema, ad esempio "Select" o "Hey Cortana" come comandi personalizzati. Di seguito sono riportati alcuni punti da considerare:
-1. **Evitare l'uso di comandi che hanno un suono simile.** Questo può potenzialmente attivare il comando errato.
-2. **Quando possibile, scegliere parole complesse fonetiche.** Questo consente di ridurre al minimo e/o evitare le attivazioni false.
+L' [input vocale](../../design/voice-input.md) è una forma naturale di interazione. L'esperienza utente può essere magica o confusa a seconda dei comandi scelti e del modo in cui vengono esposti. Come regola, non è consigliabile usare i comandi Voice di sistema, ad esempio "Select" o "Hey Cortana" come comandi personalizzati. Di seguito sono riportati alcuni punti da considerare:
+1. **Evitare l'uso di comandi che hanno un suono simile.** Può potenzialmente attivare il comando errato.
+2. **Quando possibile, scegliere parole complesse fonetiche.** Riduce al minimo e/o evita le attivazioni false.
 
 ### <a name="peripherals"></a>Periferiche
 
@@ -79,7 +79,7 @@ Testare l'applicazione senza una fonte di alimentazione connessa per comprendere
 
 Convalidare gli scenari principali funziona come previsto durante la transizione tra gli Stati di alimentazione. Ad esempio, l'applicazione rimane nella posizione originale? Lo stato viene mantenuto correttamente? Continua a funzionare come previsto?
 1. **Standby/Riprendi.** Per attivare la modalità standby, è possibile premere e rilasciare immediatamente il pulsante di alimentazione. Il dispositivo verrà inoltre inserito automaticamente in standby dopo 3 minuti di inattività. Per riprendere dalla modalità standby, è possibile premere e rilasciare immediatamente il pulsante di alimentazione. Il dispositivo verrà ripreso anche se si connette o si disconnette da una fonte di alimentazione.
-2. **Arresto/riavvio.** Per arrestarlo, premere e tenere premuto il pulsante di alimentazione per 6 secondi. Per riavviare, premere il pulsante di alimentazione.
+2. **Arresto/riavvio.** Per arrestare, tenere premuto il pulsante di alimentazione per 6 secondi. Per riavviare, premere il pulsante di alimentazione.
 
 ### <a name="multi-app-scenarios"></a>Scenari con più app
 
@@ -87,7 +87,7 @@ Convalidare la funzionalità dell'app principale durante il cambio tra le app, s
 
 ## <a name="telemetry"></a>Telemetria
 
-Usare i dati di telemetria e l'analisi per guidare l'utente. L'integrazione di Analytics nell'app ti permette di ottenere informazioni dettagliate sull'app dai beta tester e dagli utenti finali. Questi dati possono essere usati per ottimizzare l'app prima dell'invio allo Store e per gli aggiornamenti futuri. Sono disponibili molte opzioni di analisi. Se non si è certi di dove iniziare, vedere [App Insights](https://www.visualstudio.com/products/application-insights-vs.aspx).
+Usare i dati di telemetria e l'analisi per guidare l'utente. L'integrazione di Analytics nell'app ti permette di ottenere informazioni dettagliate sull'app da beta tester e dagli utenti finali. Questi dati possono essere usati per ottimizzare l'app prima dell'invio allo Store e per gli aggiornamenti futuri. Sono disponibili molte opzioni di analisi. Se non si è certi di dove iniziare, vedere [App Insights](https://www.visualstudio.com/products/application-insights-vs.aspx).
 
 Domande da considerare:
 1. In che modo gli utenti usano lo spazio?
@@ -95,11 +95,11 @@ Domande da considerare:
 3. Quanto tempo trascorre nelle diverse fasi dell'applicazione?
 4. Quanto tempo trascorre nell'app?
 5. Quali sono i percorsi di utilizzo più comuni che gli utenti stanno tentando?
-6. Gli utenti stanno colpendo Stati e/o errori imprevisti?
+6. Gli utenti stanno colpendo Stati o errori imprevisti?
 
 ## <a name="emulator-and-simulated-input"></a>Emulatore e input simulato
 
-L' [emulatore di HoloLens](using-the-hololens-emulator.md) è un ottimo modo per testare in modo efficiente l'app olografica con un'ampia gamma di caratteristiche e spazi utente simulati. Ecco alcuni suggerimenti per usare efficacemente l'emulatore per testare l'app:
+L' [emulatore di HoloLens](using-the-hololens-emulator.md) è un ottimo modo per testare in modo efficiente l'app olografica con diversi tipi di caratteristiche e spazi utente simulati. Ecco alcuni suggerimenti per usare efficacemente l'emulatore per testare l'app:
 1. **Usare le chat virtuali dell'emulatore per espandere i test.** L'emulatore è dotato di un set di chat virtuali che è possibile usare per testare l'app in più ambienti.
 2. **Usare l'emulatore per esaminare l'app da tutti gli angoli.** Le chiavi PageUp/PageDn rendono l'utente simulato più alto o più breve.
 3. **Testare l'app con un HoloLens reale.** L'emulatore di HoloLens è un ottimo strumento che consente di eseguire rapidamente l'iterazione di un'app e di intercettare nuovi bug, ma assicurarsi di eseguire test anche su un HoloLens fisico prima di inviare a Windows Store. Questo è importante per garantire che le prestazioni e l'esperienza siano ottimali nell'hardware reale.

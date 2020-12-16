@@ -6,12 +6,12 @@ ms.author: pbarnett
 ms.date: 06/8/2020
 ms.topic: article
 keywords: HoloLens, emulatore, simulazione, realtà mista di Windows, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 59e163c61b620fb1e203fe651d22cc45c2074d19
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f5076e65ba1c5d95c1bb106d2d3181665177b43a
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679620"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530454"
 ---
 # <a name="advanced-hololens-emulator-and-mixed-reality-simulator-input"></a>Emulatore HoloLens avanzato e input per il simulatore di realtà mista
 
@@ -29,22 +29,22 @@ Per movimento si intende il controllo e la modifica della posizione e dell'orien
 * **Y**: spostarsi verso l'alto o verso il basso.
 * **Z**: spostarsi avanti o indietro.
 
-L'input del controller movimento e movimento viene mappato in modo accurato al modo in cui i dispositivi fisici:
-* **Azione**: consente di simulare l'azione di premere l'indice sul pollice o di estrarre il pulsante di azione in un controller. Ad esempio, l'input dell'azione può essere usato per simulare il gesto di tocco aereo, scorrere il contenuto e premere e tenere premuto.
-* **Movimento di [Bloom](../../design/system-gesture.md#bloom)/System o Home**: il movimento HoloLens Bloom/System o il pulsante Home del controller viene usato per tornare alla shell e per eseguire le azioni di sistema.
+L'input del controller movimento e movimento viene mappato in modo accurato ai dispositivi fisici:
+* **Azione**: simula l'azione di pressione dell'indice sul pollice o di pull del pulsante di azione su un controller. Ad esempio, l'input dell'azione può essere usato per simulare il gesto di tocco aereo, scorrere il contenuto e premere e tenere premuto.
+* **Movimento di [Bloom](../../design/system-gesture.md#bloom)/System o Home**: il movimento HoloLens Bloom/System o il pulsante Home del controller viene usato per tornare alla shell e per attivare le azioni di sistema.
 
-Le mani hanno una rappresentazione avanzata in HoloLens 2.  Oltre a essere monitorati/non rilevati e utilizzabili per la guida dei movimenti, le mani hanno ora un modello di ossatura articolato adattabile ed esposto allo sviluppatore.  Questo introduce 26 punti di rilevamento in ogni mano.  
-* **Joint**: una delle venti posizioni registrate per una determinata mano rilevata. Questo sarà un punto in cui è associato lo spazio 3D.
-* **Pose**: raccolta completa di tutte le giunzioni in una mano rilevata. A questo punto, si tratta di una raccolta di 26 giunzioni. 
+Le mani hanno una rappresentazione avanzata in HoloLens 2.  Oltre a essere rilevati/non rilevati e utilizzabili per la guida dei movimenti, le mani hanno ora un modello di ossatura articolato adattabile ed esposto allo sviluppatore.  Il modello Skeleton presenta 26 punti di rilevamento in ogni mano.  
+* **Joint**: una delle 20 posizioni rilevate per una determinata mano rilevata con un punto associato nello spazio 3D.
+* **Pose**: raccolta completa di tutte le giunzioni in una mano rilevata, 26 giunzioni in tutti i nodi. 
 
-Attualmente, il controllo diretto di ogni posizione congiunta non viene esposto singolarmente tramite l'interfaccia utente dell'emulatore, sebbene sia possibile impostarli tramite l'API di simulazione. Piuttosto, abbiamo un set di rappresentazioni utili che l'emulatore consente di passare da una all'altra.
+Attualmente non viene esposto il controllo diretto delle singole posizioni congiunte attraverso l'emulatore, ma è possibile impostarle tramite l'API di simulazione. È presente un set di rappresentazioni utili che l'emulatore consente di passare da una all'altra.
 
 È anche possibile controllare lo stato dell'input del sensore simulato:
-* **Reset**: restituirà tutti i sensori simulati ai valori predefiniti.  A partire dall'emulatore HoloLens 2, è possibile definire l'ambito di una reimpostazione a una o entrambe le lancette usando le lancette desiderate usando i tasti di modifica appropriati o i pulsanti (Alt a sinistra e/o a destra o il paraurti sinistro e/o destro).
-* **Rilevamento**: scorre le modalità di rilevamento posizionale. ad esempio:
+* **Reset**: restituisce tutti i sensori simulati ai valori predefiniti.  A partire dall'emulatore HoloLens 2, una reimpostazione può avere come ambito una o entrambe le mani. Attivare la mano desiderata usando i tasti di modifica o i pulsanti (a sinistra e/o a destra o a sinistra e/o a destra del gamepad).
+* **Rilevamento**: scorre le modalità di rilevamento posizionali, tra cui:
   * **Impostazione predefinita**: il sistema operativo sceglie la modalità di rilevamento migliore in base alle richieste effettuate dal sistema.
-   * **Orientation**: impone il rilevamento solo dell'orientamento, indipendentemente dalle richieste effettuate dal sistema.
-   * **Posizionale**: forza il rilevamento posizionale, indipendentemente dalle richieste effettuate dal sistema.
+   * **Orientation**: impone il rilevamento solo dell'orientamento, a prescindere dalle richieste di sistema.
+   * **Posizionale**: forza il rilevamento posizionale, a prescindere dalle richieste di sistema.
 
 ## <a name="types-of-input"></a>Tipi di input
 
@@ -55,8 +55,8 @@ Nella tabella seguente viene illustrato come viene eseguito il mapping di ogni t
 |  Rotazione y specificati |  Frecce sinistra/destra |  Trascinare verso sinistra/destra |  Destra levetta sinistra/destra | 
 |  Tonalità |  Frecce su/giù |  Trascina su/giù |  Levetta a destra | 
 |  Eseguire il rollback |  DOMANDE E RISPOSTE |  |  DPad a sinistra/destra | 
-|  x |  A/D |  |  Sinistra levetta sinistra/destra | 
-|  S |  PGSU/PGGIÙ |  |  DPad | 
+|  X |  A/D |  |  Sinistra levetta sinistra/destra | 
+|  Y |  PGSU/PGGIÙ |  |  DPad | 
 |  Z |  W/S |  |  Levetta verso l'alto o verso il basso | 
 |  Azione |  Immettere o spazio |  Pulsante destro |  Un pulsante o uno o più trigger | 
 |  Bloom/sistema |  Tasto F2 o Windows |  |  Pulsante B | 
@@ -79,7 +79,7 @@ Nota: i pulsanti del controller possono essere assegnati a una mano/controller o
 
 ## <a name="targeting"></a>Targeting 
 
-Alcuni dei concetti di input precedenti si basano su se stessi.  Action, Bloom/System, reset e tracking sono concetti completi, non sono necessari e non sono interessati da alcun modificatore aggiuntivo per la destinazione.  Tuttavia, i concetti rimanenti possono essere applicati a una di più destinazioni. Sono stati introdotti modi per specificare la destinazione prevista a cui applicare il comando.  In tutti i casi, è possibile specificare tramite l'interfaccia utente o tramite i tasti di scelta rapida, l'oggetto di destinazione.  In alcuni casi, è anche possibile specificare direttamente con il controller Xbox. 
+Alcuni dei concetti di input precedenti si basano su se stessi.  Action, Bloom/System, reset e tracking sono concetti completi, che non sono necessari e non sono interessati da alcun modificatore aggiuntivo per la destinazione.  I concetti rimanenti possono essere applicati a una di più destinazioni. Sono stati introdotti modi per specificare la destinazione prevista a cui applicare il comando.  In tutti i casi, è possibile specificare tramite l'interfaccia utente o tramite i tasti di scelta rapida, l'oggetto di destinazione.  In alcuni casi, è anche possibile specificare direttamente con il controller Xbox. 
 
 Nella tabella seguente vengono descritte le opzioni per la destinazione e la modalità di attivazione di ognuna di esse.
 
@@ -87,8 +87,8 @@ Nella tabella seguente vengono descritte le opzioni per la destinazione e la mod
 |----------|----------|----------|----------|
 | Corpo | (predefinito) | (predefinito) | (predefinito) |
 | Head | Mantieni H | (Non disponibile) | (Non disponibile) |
-| Mano sinistra/controller | Pulsante Alt sinistro | Pulsante Mantieni la spalla sinistra | Puntina da disegno a sinistra | 
-| Mano destra/controller | Pulsante ALT destro | Pulsante destro della spalla | Puntina da disegno a destra |
+| Mano sinistra/controller | Pulsante Alt sinistro | Pulsante Mantieni la spalla sinistra | Puntina da disegno Left-Hand | 
+| Mano destra/controller | Pulsante ALT destro | Pulsante destro della spalla | Puntina da disegno Right-Hand |
 | Occhi | Mantieni Y | (Non disponibile) | Puntina da disegno |
   
 La tabella seguente illustra in che modo ogni modificatore di destinazione esegue il mapping di ognuno dei concetti di base di input Movement
@@ -98,8 +98,8 @@ La tabella seguente illustra in che modo ogni modificatore di destinazione esegu
 |  Rotazione y specificati |  Trasforma corpo a sinistra/a destra |  Sposta mano sinistra/destra |  Trasforma la testa a sinistra/destra | Sguardi occhi a sinistra/destra |
 |  Tonalità |  Attiva/disattiva intestazione |  Spostare la mano verso l'alto o verso il basso |  Attiva/disattiva intestazione | Sguardi occhi in alto/in basso | 
 |  Eseguire il rollback |  Roll Head verso sinistra/destra |  |  Roll Head verso sinistra/destra | (Nessuna azione) |
-|  x |  Diapositiva corpo sinistro/destro |  Spostare la mano/il controller a sinistra/destra |  Trasforma la testa a sinistra/destra | (Nessuna azione) |
-|  S |  Sposta il corpo verso l'alto o verso il basso |  Spostare la mano/il controller verso l'alto/il basso |  Attiva/disattiva intestazione | (Nessuna azione) |
+|  X |  Diapositiva corpo sinistro/destro |  Spostare la mano/il controller a sinistra/destra |  Trasforma la testa a sinistra/destra | (Nessuna azione) |
+|  Y |  Sposta il corpo verso l'alto o verso il basso |  Spostare la mano/il controller verso l'alto/il basso |  Attiva/disattiva intestazione | (Nessuna azione) |
 |  Z |  Sposta il corpo avanti/indietro |  Spostare la mano/il controller avanti/indietro |  Attiva/disattiva intestazione | (Nessuna azione) |
  
  
@@ -134,7 +134,8 @@ Il set di controlli seguente è consigliato per l'utilizzo giornaliero:
 
 Quando si usa una cuffia mista a realtà mista di Windows con l'emulatore HoloLens 2, lo spostamento e la rotazione vengono automaticamente mappati alla rotazione e al movimento dell'auricolare.  La posizione e l'orientamento del controller di movimento vengono mappati automaticamente alla posizione e all'orientamento della mano nell'emulatore.  Nella tabella seguente sono elencate le azioni aggiuntive disponibili quando si utilizza un controller di movimento.
 
-Si noti che quando si usa un auricolare, i controlli di tastiera, mouse e gamepad standard vengono automaticamente ignorati.
+> [!NOTE]
+> Quando si usa un auricolare, i controlli standard per tastiera, mouse e Gamepad vengono automaticamente ignorati.
 
 |  Operazione |  Azione |  Note | 
 |----------|----------|----------|
@@ -150,7 +151,7 @@ Si noti che quando si usa un auricolare, i controlli di tastiera, mouse e gamepa
 
 ## <a name="perception-simulation-control-panel-keyboard-shortcuts"></a>Tasti di scelta rapida della simulazione della percezione del pannello di controllo
 
-I tasti di scelta rapida seguenti sono disponibili per l'accesso al pannello di controllo della simulazione di percezione e l'abilitazione o la disabilitazione dei dispositivi di input PC per l'uso con simulazione.
+È possibile accedere al pannello di controllo della simulazione di percezione e abilitare o disabilitare i dispositivi di input del PC con i seguenti tasti di scelta rapida.
 
 | Operazione | Tasto di scelta rapida | Descrizione/Note |
 |-----------|----------|-------------|

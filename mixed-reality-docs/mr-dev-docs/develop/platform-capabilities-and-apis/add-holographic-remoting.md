@@ -6,50 +6,50 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Realtà mista di Windows, ologrammi, comunicazione remota olografica, rendering remoto, rendering di rete, HoloLens, ologrammi remoti, cuffie per realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 7aafb7a764a062efcca2c5a3cd9f77d4395516a2
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 809258d3387b5e45885c0eb207544c176f891a1d
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443645"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530304"
 ---
-# <a name="add-holographic-remoting-hololens-1st-gen"></a>Aggiungere la comunicazione remota olografica (HoloLens (1st Gen))
+# <a name="add-holographic-remoting-hololens-first-gen"></a>Aggiungere la comunicazione remota olografica (HoloLens (First Gen))
 
 >[!IMPORTANT]
->Questo documento descrive la creazione di un'applicazione host per HoloLens 1. L'applicazione host per **HoloLens (1st Gen)** deve usare il pacchetto NuGet versione **1. x. x**. Ciò implica che le applicazioni host scritte per HoloLens 1 non sono compatibili con HoloLens 2 e viceversa.
+> Questo documento descrive la creazione di un'applicazione host per HoloLens 1. L'applicazione host per **HoloLens (1st Gen)** deve usare il pacchetto NuGet versione **1. x. x**. Ciò implica che le applicazioni host scritte per HoloLens 1 non sono compatibili con HoloLens 2 e viceversa.
 
 ## <a name="hololens-2"></a>HoloLens 2
 
-Gli sviluppatori HoloLens che usano la comunicazione remota olografica dovranno aggiornare le proprie app per renderle compatibili con HoloLens 2. Questa operazione richiede una nuova versione del pacchetto NuGet di comunicazione remota olografica. Se un'applicazione che usa il pacchetto NuGet di comunicazione remota olografica con un numero di versione inferiore a 2.0.0.0 tenta di connettersi al lettore di comunicazione remota olografica in HoloLens 2, la connessione avrà esito negativo.
+Gli sviluppatori HoloLens che usano la comunicazione remota olografica dovranno aggiornare le proprie app per renderle compatibili con HoloLens 2. Questa operazione richiede una nuova versione del pacchetto NuGet di comunicazione remota olografica. Assicurarsi di usare la versione 2.0.0.0 o successiva del pacchetto NuGet per la comunicazione remota olografica quando ci si connette al lettore di comunicazione remota olografica in HoloLens 2. in caso contrario, la connessione non riuscirà.
 
 >[!NOTE]
->Le linee guida specifiche per HoloLens 2 sono disponibili [qui](holographic-remoting-create-remote-wmr.md).
+> Le linee guida specifiche per HoloLens 2 sono disponibili [qui](holographic-remoting-create-remote-wmr.md).
 
 
 ## <a name="add-holographic-remoting-to-your-desktop-or-uwp-app"></a>Aggiungere la comunicazione remota olografica all'app desktop o UWP
 
 Questa pagina descrive come aggiungere la comunicazione remota olografica a un'app desktop o UWP.
 
-La comunicazione remota olografica consente all'app di avere come destinazione un HoloLens con contenuto olografico ospitato in un computer desktop o in un dispositivo UWP come Xbox One, consentendo l'accesso a più risorse di sistema e rendendo possibile l'integrazione di [visualizzazioni immersive](../../design/app-views.md) remote in software per PC desktop esistenti. Un'app host Remoting riceve un flusso di dati di input da un HoloLens, esegue il rendering del contenuto in una visualizzazione immersiva virtuale e trasmette i frame di contenuto a HoloLens. La connessione viene eseguita usando il Wi-Fi standard. Per usare la comunicazione remota, si userà un pacchetto NuGet per aggiungere la comunicazione remota olografica all'app desktop o UWP e scrivere il codice per gestire la connessione e per eseguire il rendering in una visualizzazione immersiva. Le librerie helper sono incluse nell'esempio di codice che semplificano l'attività di gestione della connessione del dispositivo.
+La comunicazione remota olografica consente all'app di avere come destinazione un HoloLens con contenuto olografico ospitato in un computer desktop o in un dispositivo UWP, ad esempio Xbox One. È anche possibile accedere a più risorse di sistema, rendendo possibile l'integrazione di [visualizzazioni immersive](../../design/app-views.md) remote in software per PC desktop esistenti. Un'app host Remoting riceve un flusso di dati di input da un HoloLens, esegue il rendering del contenuto in una visualizzazione immersiva virtuale e trasmette i frame di contenuto a HoloLens. La connessione viene eseguita usando il Wi-Fi standard. Per usare la comunicazione remota, usare un pacchetto NuGet per aggiungere la comunicazione remota olografica all'app desktop o UWP, quindi scrivere il codice per gestire la connessione ed eseguire il rendering di una visualizzazione immersiva. Le librerie helper sono incluse nell'esempio di codice che semplificano l'attività di gestione della connessione del dispositivo.
 
 Una tipica connessione remota avrà una bassa di 50 ms di latenza. L'App Player può segnalare la latenza in tempo reale.
 
 >[!NOTE]
->I frammenti di codice in questo articolo illustrano attualmente l'uso di C++/CX anziché C + 17 conforme a C++/WinRT come usato nel [modello di progetto olografico c++](../native/creating-a-holographic-directx-project.md).  I concetti sono equivalenti per un progetto C++/WinRT, anche se sarà necessario tradurre il codice.
+>I frammenti di codice in questo articolo illustrano attualmente l'uso di C++/CX anziché C + 17 conforme a C++/WinRT come usato nel [modello di progetto olografico c++](../native/creating-a-holographic-directx-project.md).  I concetti sono equivalenti per un progetto C++/WinRT, anche se è necessario tradurre il codice.
 
 ### <a name="get-the-remoting-nuget-packages"></a>Ottenere i pacchetti NuGet per la comunicazione remota
 
 Seguire questa procedura per ottenere il pacchetto NuGet per la comunicazione remota olografica e aggiungere un riferimento dal progetto:
 1. Passare al progetto in Visual Studio.
 2. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Gestisci pacchetti NuGet...**
-3. Nel pannello visualizzato fare clic su **Sfoglia** e quindi cercare "comunicazione remota olografica".
-4. Selezionare **Microsoft. olografic. Remoting** e fare clic su **Installa**.
+3. Nel pannello **visualizzato selecct cercare** "comunicazione remota olografica".
+4. Selezionare **Microsoft. olografic. Remoting** e selecct **Install**.
 5. Se viene visualizzata la finestra di dialogo **Anteprima** , fare clic su **OK**.
-6. La finestra di dialogo successiva visualizzata è il contratto di licenza. Fare clic su **Accetto** per accettare il contratto di licenza.
+6. Selezionare **Accetto** quando viene visualizzata la finestra di dialogo contratto di licenza.
 
 ### <a name="create-the-holographicstreamerhelpers"></a>Creare il HolographicStreamerHelpers
 
-In primo luogo, è necessaria un'istanza di HolographicStreamerHelpers. Aggiungere questo oggetto alla classe che gestirà la comunicazione remota.
+Prima di tutto, è necessario aggiungere un'istanza di HolographicStreamerHelpers alla classe che gestirà la comunicazione remota.
 
 ```cpp
 #include <HolographicStreamerHelpers.h>
@@ -180,7 +180,7 @@ m_streamerHelpers->OnSendFrame += ref new SendFrameEvent(
 
 ### <a name="render-holographic-content"></a>Rendering del contenuto olografico
 
-Per eseguire il rendering del contenuto usando la comunicazione remota, è necessario configurare un IFrameworkView virtuale all'interno dell'app desktop o UWP ed elaborare i frame olografici dalla comunicazione remota. Tutte le API olografiche di Windows vengono utilizzate allo stesso modo da questa visualizzazione, ma sono impostate in modo leggermente diverso.
+Per eseguire il rendering del contenuto usando la comunicazione remota, è necessario configurare un IFrameworkView virtuale all'interno dell'app desktop o UWP ed elaborare i frame olografici dalla comunicazione remota. Tutte le API olografiche di Windows vengono utilizzate allo stesso modo da questa visualizzazione, ma sono configurate in modo leggermente diverso.
 
 Invece di crearli autonomamente, i componenti di spazio olografico e vocale provengono dalla classe HolographicRemotingHelpers:
 
@@ -188,7 +188,7 @@ Invece di crearli autonomamente, i componenti di spazio olografico e vocale prov
 m_appView->Initialize(m_streamerHelpers->HolographicSpace, m_streamerHelpers->RemoteSpeech);
 ```
 
-Anziché usare un ciclo di aggiornamento all'interno di un metodo Run, è necessario fornire gli aggiornamenti del ciclo principale dell'app desktop o UWP. Ciò consente all'app desktop o UWP di rimanere in controllo dell'elaborazione dei messaggi.
+Invece di usare un ciclo di aggiornamento in un metodo Run, è necessario fornire gli aggiornamenti del ciclo principale dell'app desktop o UWP. Ciò consente all'app desktop o UWP di rimanere in controllo dell'elaborazione dei messaggi.
 
 ```cpp
 void DesktopWindow::Tick()
@@ -258,7 +258,6 @@ internal:
        }
 ```
 
-**Esempio di codice:** È disponibile un esempio di codice .NET Remoting completo, che include una visualizzazione di applicazioni olografica compatibile con i progetti host .NET Remoting e Remoting per desktop Win32, UWP DirectX e UWP con XAML. Per ottenerlo, fare clic qui:
-* [Esempio di codice Windows olografico per servizi remoti](https://github.com/Microsoft/HoloLensCompanionKit/)
+**Esempio di codice:** È disponibile un [esempio di codice .NET Remoting](https://github.com/Microsoft/HoloLensCompanionKit) completo, che include una visualizzazione di applicazioni olografica compatibile con i progetti host .NET Remoting e Remoting per desktop Win32, UWP DirectX e UWP con XAML. 
 
 **Nota di debug:** La libreria remota olografica può generare eccezioni first-chance. Queste eccezioni possono essere visibili nelle sessioni di debug, a seconda delle impostazioni delle eccezioni di Visual Studio attive al momento. Queste eccezioni vengono rilevate internamente dalla libreria di comunicazione remota olografica e possono essere ignorate.

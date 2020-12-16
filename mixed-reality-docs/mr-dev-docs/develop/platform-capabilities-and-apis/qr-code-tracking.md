@@ -6,16 +6,16 @@ ms.author: dobrown
 ms.date: 05/15/2019
 ms.topic: article
 keywords: VR, LBE, location based Entertainment, VR Arcade, Arcade, immersive, QR, QR code, hololens2
-ms.openlocfilehash: e7b1f04b51cb1011cd0d66c27fe6a8bff3aafb79
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 023da7a98d1559d9dd0387a7efbaf26ad577df50
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684980"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530010"
 ---
 # <a name="qr-code-tracking"></a>Rilevamento di codici a matrice
 
-HoloLens 2 è in grado di rilevare i codici a matrice nell'ambiente intorno all'auricolare, stabilendo un sistema di coordinate in base alla posizione reale del codice.
+HoloLens 2 è in grado di rilevare i codici a matrice nell'ambiente attorno al visore VR, stabilendo un sistema di coordinate nella posizione reale di ciascun codice.
 
 ## <a name="device-support"></a>Supporto di dispositivi
 
@@ -31,12 +31,14 @@ HoloLens 2 è in grado di rilevare i codici a matrice nell'ambiente intorno all'
 >Il rilevamento del codice a matrice con auricolari a realtà mista di Windows su PC desktop è supportato in Windows 10 versione 2004 e successive. Usare l'API Microsoft. MixedReality. QRCodeWatcher. non supportata () per determinare se la funzionalità è supportata nel dispositivo corrente.
 
 ## <a name="getting-the-qr-package"></a>Recupero del pacchetto QR
+
 È possibile scaricare il pacchetto NuGet per il rilevamento del codice QR [qui](https://nuget.org/Packages/Microsoft.MixedReality.QR).
 
 ## <a name="detecting-qr-codes"></a>Rilevamento di codici QR
 
 ### <a name="adding-the-webcam-capability"></a>Aggiunta della funzionalità webcam
-Per rilevare i codici QR, è necessario aggiungere la funzionalità `webcam` al manifesto. Questa funzionalità è necessaria perché i dati nei codici rilevati nell'ambiente dell'utente possono contenere informazioni riservate.
+
+È necessario aggiungere la funzionalità `webcam` al manifesto per rilevare i codici QR. Questa funzionalità è necessaria perché i dati nei codici rilevati nell'ambiente dell'utente possono contenere informazioni riservate.
 
 È possibile richiedere l'autorizzazione chiamando `QRCodeWatcher.RequestAccessAsync()` :
 
@@ -56,9 +58,7 @@ Sebbene il rilevamento del codice a matrice richieda la `webcam` funzionalità, 
 
 ### <a name="detecting-qr-codes-in-unity"></a>Rilevamento di codici QR in Unity
 
-È possibile usare l'API di rilevamento del codice a matrice in Unity senza dipendere da MRTK. A tale scopo, è necessario installare il pacchetto NuGet usando [NuGet per Unity](https://github.com/GlitchEnzo/NuGetForUnity).
-
-È disponibile un'app Unity di esempio che visualizza un quadrato olografico su codici a matrice, insieme ai dati associati, ad esempio GUID, dimensioni fisiche, timestamp e dati decodificati. Questa app si trova in https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes .
+È possibile usare l'API di rilevamento del codice a matrice in Unity senza importare MRTK installando il pacchetto NuGet usando [NuGet per Unity](https://github.com/GlitchEnzo/NuGetForUnity). Per avere un'idea del funzionamento, scaricare l' [app Unity di esempio](https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes). L'app di esempio include esempi per la visualizzazione di un quadrato olografico su codici QR e dati associati, ad esempio GUID, dimensioni fisiche, timestamp e dati decodificati.
 
 ### <a name="detecting-qr-codes-in-c"></a>Rilevamento di codici QR in C++
 
@@ -122,13 +122,15 @@ private:
 
 ## <a name="getting-the-coordinate-system-for-a-qr-code"></a>Recupero del sistema di coordinate per un codice a matrice
 
-Ogni codice a matrice rilevato espone un [sistema di coordinate spaziali](../../design/coordinate-systems.md) allineato al codice a matrice nell'angolo superiore sinistro del quadrato di rilevamento rapido in alto a sinistra, come illustrato di seguito.  Quando si usa direttamente il QR SDK, l'asse Z punta alla carta (non mostrata): quando viene convertito in coordinate Unity, l'asse Z punta all'esterno della carta ed è a sinistra.
-
-Il SpatialCoordinateSystem del codice a matrice viene allineato come illustrato. Questo sistema di coordinate può essere ottenuto dalla piattaforma chiamando <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview:: CreateCoordinateSystemForNode</a> e passando il SpatialGraphNodeId del codice.
+Ogni codice QR rilevato espone un [sistema di coordinate spaziali](../../design/coordinate-systems.md) allineato al codice a matrice nell'angolo superiore sinistro del quadrato di rilevamento rapido in alto a sinistra:  
 
 ![Sistema di coordinate del codice a matrice](images/Qr-coordinatesystem.png) 
 
-Per un oggetto QRCode, nel codice C++ riportato di seguito viene illustrato come creare un rettangolo e posizionarlo utilizzando il sistema di coordinate del codice a matrice:
+Quando si usa direttamente il QR SDK, l'asse Z punta alla carta (non mostrata): quando viene convertito in coordinate Unity, l'asse Z punta all'esterno della carta ed è a sinistra.
+
+Il SpatialCoordinateSystem del codice a matrice viene allineato come illustrato. È possibile ottenere il sistema di coordinate dalla piattaforma chiamando <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview:: CreateCoordinateSystemForNode</a> e passando il SpatialGraphNodeId del codice.
+
+Nel codice C++ riportato di seguito viene illustrato come creare un rettangolo e posizionarlo utilizzando il sistema di coordinate del codice a matrice:
 
 ```cpp
 // Creates a 2D rectangle in the x-y plane, with the specified properties.
@@ -193,23 +195,23 @@ La [specifica QR](https://www.qrcode.com/en/howto/code.html) contiene altre info
 ### <a name="lighting-and-backdrop"></a>Illuminazione e sfondo
 La qualità del rilevamento del codice a matrice è soggetta a variazioni di illuminazione e sfondo. 
 
-In una scena con illuminazione particolarmente luminosa, stampare un codice nero su uno sfondo grigio. In caso contrario, stampare un codice a matrice nero su uno sfondo bianco.
+In una scena con illuminazione luminosa stampare un codice nero su uno sfondo grigio. In caso contrario, stampare un codice a matrice nero su uno sfondo bianco.
 
-Se lo sfondo del codice è particolarmente scuro, provare a usare un codice nero in grigio se la frequenza di rilevamento è bassa. Se lo sfondo è relativamente chiaro, un codice normale dovrebbe funzionare correttamente.
+Se lo sfondo del codice è scuro, provare a usare un codice nero in grigio se la frequenza di rilevamento è bassa. Se lo sfondo è relativamente chiaro, un codice normale dovrebbe funzionare correttamente.
 
 ### <a name="size-of-qr-codes"></a>Dimensioni dei codici QR
 I dispositivi di realtà mista di Windows non funzionano con codici a matrice con lati inferiori a 5 cm.
 
-Per i codici a matrice con lunghezza compresa tra 5 e 10 cm, è necessario essere abbastanza vicini per rilevare il codice. Sarà inoltre necessario più tempo per rilevare i codici in questa dimensione. 
+Per i codici QR compresi tra 5 cm e 10 cm di lunghezza, è necessario essere abbastanza vicini per rilevare il codice. Sarà inoltre necessario più tempo per rilevare i codici in questa dimensione. 
 
-Il tempo esatto per rilevare i codici dipende non solo dalle dimensioni dei codici a matrice, ma dalla distanza del codice. Lo spostamento più vicino al codice consente di compensare i problemi con le dimensioni.
+Il tempo esatto per rilevare i codici dipende non solo dalle dimensioni dei codici a matrice, ma da quanto manca il codice. Lo spostamento più vicino al codice consente di compensare i problemi con le dimensioni.
 
 ### <a name="distance-and-angular-position-from-the-qr-code"></a>Posizione angolare e distanza dal codice a matrice
-Le videocamere di rilevamento possono rilevare solo un certo livello di dettaglio. Per i codici molto piccoli, < 10cm lungo i lati, è necessario essere abbastanza vicini. Per un codice a matrice di versione 1 variabile da 10 a 25 cm di larghezza, la distanza di rilevamento minima varia da 0,15 metri a 0,5 metri. 
+Le videocamere di rilevamento possono rilevare solo un certo livello di dettaglio. Per i codici piccoli, < 10 cm lungo i lati, è necessario essere abbastanza vicini. Per un codice a matrice di versione 1 variabile da 10 cm a 25 cm di larghezza, la distanza di rilevamento minima varia da 0,15 metri a 0,5 metri. 
 
 La distanza di rilevamento per le dimensioni aumenta in modo lineare. 
 
-Il rilevamento a matrice funziona con un intervallo di angoli + = 45deg. Ciò consente di verificare la corretta risoluzione per il rilevamento del codice.
+Il rilevamento a matrice funziona con un intervallo di angoli + = 45 deg per garantire la corretta risoluzione per il rilevamento del codice.
 
 ### <a name="qr-codes-with-logos"></a>Codici QR con logo
 I codici QR con logo non sono stati testati e non sono attualmente supportati.
@@ -220,7 +222,7 @@ I dispositivi di realtà mista Windows rilevano codici QR a livello di sistema n
 Si consiglia di configurare l'app in modo da ignorare i codici QR precedenti a un timestamp specifico. Attualmente, l'API non supporta la cancellazione della cronologia del codice QR.
 
 ### <a name="qr-code-placement-in-a-space"></a>Posizionamento del codice a matrice in uno spazio
-Per consigli su dove e come collocare i codici QR, vedere Considerazioni sull' [ambiente per HoloLens](../../environment-considerations-for-hololens.md).
+Per consigli su dove e come collocare i codici QR, vedere [considerazioni sull'ambiente per HoloLens](../../environment-considerations-for-hololens.md).
 
 ## <a name="qr-api-reference"></a>Riferimento all'API QR
 

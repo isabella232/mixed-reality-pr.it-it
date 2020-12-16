@@ -6,17 +6,17 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Realtà mista di Windows, tastiera, mouse, controller di gioco, Xbox Controller, HoloLens, desktop, procedura dettagliata, codice di esempio
-ms.openlocfilehash: 47d5ac7c7517d607d29d004497f62ac0755c3051
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b7984c86b952612af020e2bd91063e0a9b0d92f6
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685037"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530051"
 ---
 # <a name="keyboard-mouse-and-controller-input-in-directx"></a>Input da tastiera, mouse e controller in DirectX
 
 > [!NOTE]
-> Questo articolo si riferisce alle API native di WinRT legacy.  Per i nuovi progetti di app native, è consigliabile usare l' **[API OpenXR](../native/openxr-getting-started.md)** .
+> Questo articolo si riferisce alle API native di WinRT legacy.  Per i nuovi progetti di app native, è consigliabile usare l' **[API OpenXR](../native/openxr-getting-started.md)**.
 
 Tastiere, topi e controller di gioco possono essere tutti formati utili per i dispositivi di realtà mista Windows. Le tastiere e i topi Bluetooth sono entrambi supportati in HoloLens, per l'uso con il debug dell'app o come forma alternativa di input. La realtà mista di Windows supporta anche auricolari immersivi collegati a PC, in cui i topi, le tastiere e i controller di gioco hanno storicamente la norma.
 
@@ -51,7 +51,7 @@ Da AppView. cpp:
 ```
 
 ### <a name="virtual-keyboard-input"></a>Input tastiera virtuale
-Per gli auricolari desktop immersivi è possibile supportare anche le tastiere virtuali di cui è stato eseguito il rendering da Windows attraverso la visualizzazione immersiva. Per supportare questa operazione, l'app può implementare **CoreTextEditContext** . Questo consente a Windows di comprendere lo stato delle caselle di testo sottoposte a rendering dell'app, in modo che la tastiera virtuale possa contribuire correttamente al testo presente.
+Per gli auricolari desktop immersivi è possibile supportare le tastiere virtuali di cui è stato eseguito il rendering da Windows attraverso la visualizzazione immersiva implementando **CoreTextEditContext**. Questo consente a Windows di comprendere lo stato delle caselle di testo sottoposte a rendering dell'app, in modo che la tastiera virtuale possa contribuire correttamente al testo presente.
 
 Per ulteriori informazioni sull'implementazione del supporto CoreTextEditContext, vedere l' [esempio CoreTextEditContext](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomEditControl).
 
@@ -59,7 +59,8 @@ Per ulteriori informazioni sull'implementazione del supporto CoreTextEditContext
 
 È anche possibile usare l'input del mouse, tramite i gestori eventi di input di UWP CoreWindow. Ecco come modificare il modello di app olografico di Windows per supportare i clic del mouse nello stesso modo dei movimenti premuti. Dopo aver apportato questa modifica, un clic del mouse quando si indossa un dispositivo headset immersivo riposiziona il cubo.
 
-Si noti che le app UWP possono anche ottenere dati XY non elaborati per il mouse usando l'API [MouseDevice](https://docs.microsoft.com/uwp/api/Windows.Devices.Input.MouseDevice) .
+> [!NOTE]
+> Le app UWP possono anche ottenere dati XY non elaborati per il mouse usando l'API [MouseDevice](https://docs.microsoft.com/uwp/api/Windows.Devices.Input.MouseDevice) .
 
 Per iniziare, dichiarare un nuovo gestore OnPointerPressed in AppView. h:
 
@@ -103,7 +104,7 @@ Sarà necessaria anche questa variabile membro privata:
        bool m_pointerPressed = false;
 ```
 
-Infine, la classe principale viene aggiornata con la nuova logica per supportare i clic del mouse. Per iniziare, aggiungere questo gestore eventi. Assicurarsi di aggiornare il nome della classe:
+Infine, la classe principale verrà aggiornata con la nuova logica per supportare i clic del mouse. Per iniziare, aggiungere questo gestore eventi. Assicurarsi di aggiornare il nome della classe:
 
 ```
 void MyHolographicAppMain::OnPointerPressed()
@@ -128,13 +129,13 @@ SpatialInteractionSourceState^ pointerState = m_spatialInputHandler->CheckForInp
    m_pointerPressed = false;
 ```
 
-Ricompilare e ridistribuire. Si noterà che il clic del mouse riposiziona il cubo nell'auricolare immersivo o HoloLens con il mouse Bluetooth collegato.
+Ricompilare e ridistribuire. Si noti che il clic del mouse ora riposiziona il cubo nell'auricolare immersivo o HoloLens con il mouse Bluetooth collegato.
 
 ### <a name="game-controller-support"></a>Supporto del controller di gioco
 
 I controller dei giochi possono essere un metodo divertente e pratico per consentire all'utente di controllare un'esperienza di realtà mista di Windows.
 
-Il primo passaggio per aggiungere il supporto per i controller di gioco al modello di app olografico di Windows consiste nell'aggiungere le seguenti dichiarazioni di membro privato alla classe di intestazione per il file principale:
+ aggiungere le seguenti dichiarazioni di membro privato alla classe di intestazione per il file principale:
 
 ```
 // Recognize gamepads that are plugged in after the app starts.
@@ -265,7 +266,7 @@ Esistono alcune differenze fondamentali nel modo in cui questo codice può esser
 * Non è possibile fare affidamento sull'input della tastiera o del mouse per essere presente. Tutte le funzionalità dell'app devono funzionare con lo sguardo, il gesto e l'input vocale.
 * Quando viene collegata una tastiera Bluetooth, può essere utile abilitare l'input da tastiera per qualsiasi testo che l'app potrebbe richiedere. Questo può essere un ottimo supplemento per la dettatura, ad esempio.
 * Per quanto riguarda la progettazione dell'app, non fare affidamento su (ad esempio) i controlli WASD e mouse per il gioco. HoloLens è progettato per l'utente in modo da aggirare la stanza. In questo caso, l'utente controlla direttamente la fotocamera. Un'interfaccia per guidare la fotocamera attorno alla stanza con i controlli Move/look non fornirà la stessa esperienza.
-* L'input da tastiera può essere un ottimo modo per controllare gli aspetti di debug dell'app o del motore di gioco, soprattutto perché l'utente non dovrà usare la tastiera. Il cablaggio è identico a quello usato per le API degli eventi CoreWindow. In questo scenario, è possibile scegliere di implementare un modo per configurare l'app per instradare gli eventi della tastiera a una modalità di "debug solo input" durante le sessioni di debug.
+* L'input da tastiera è un modo eccellente per controllare l'app o il debug del motore di gioco, soprattutto perché l'utente non deve usare la tastiera. Il cablaggio è identico a quello usato per le API degli eventi CoreWindow. In questo scenario, è possibile scegliere di implementare un modo per configurare l'app per instradare gli eventi della tastiera a una modalità di "debug solo input" durante le sessioni di debug.
 * Anche i controller Bluetooth funzionano.
 
 ## <a name="see-also"></a>Vedere anche

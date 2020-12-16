@@ -1,28 +1,26 @@
 ---
 title: Scrittura di un'app remota olografica remota (OpenXR)
-description: Con la creazione di un'app remota olografica remota, il contenuto remoto, di cui viene eseguito il rendering in un computer remoto, può essere trasmesso a HoloLens 2. Questo articolo descrive il modo in cui è possibile ottenere questo risultato.
+description: Con la creazione di un'app remota olografica remota, il contenuto remoto, di cui viene eseguito il rendering in un computer remoto, può essere trasmesso a HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicazione remota, comunicazione remota olografica, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale, NuGet
-ms.openlocfilehash: 7e46c67e7dac08759890fa66d540379991414aad
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 202f2108ade9998d25d87dee20d4bd456da0a118
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96469504"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530422"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-openxr-api"></a>Scrittura di un'app remota di comunicazione remota olografica tramite l'API OpenXR
 
 >[!IMPORTANT]
 >Questo documento descrive la creazione di un'applicazione remota per gli auricolari HoloLens 2 e Windows Mixed Reality usando l' [API OpenXR](../native/openxr.md). Le applicazioni remote per **HoloLens (1a Gen)** devono usare il pacchetto NuGet versione **1. x. x**. Ciò implica che le applicazioni remote scritte per HoloLens 2 non sono compatibili con HoloLens 1 e viceversa. La documentazione per HoloLens 1 è disponibile [qui](add-holographic-remoting.md).
 
-Grazie alla creazione di un'app remota olografica remota, il contenuto remoto di cui è stato eseguito il rendering in un computer remoto può essere trasmesso a HoloLens 2 e a dispositivi immersivi come gli auricolari di realtà mista di Windows. Questo articolo descrive il modo in cui è possibile ottenere questo risultato. Tutto il codice in questa pagina e i progetti di lavoro sono disponibili nel [repository GitHub degli esempi di comunicazione remota olografica](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+Le app di comunicazione remota olografica possono trasmettere contenuti con rendering remoto a HoloLens 2 e agli auricolari immersivi con la realtà mista di Windows. È inoltre possibile accedere a più risorse di sistema e integrare [visualizzazioni immersive](../../design/app-views.md) remote in software per PC desktop esistenti. Un'app remota riceve un flusso di dati di input da HoloLens 2, esegue il rendering del contenuto in una visualizzazione immersiva virtuale e trasmette nuovamente i frame di contenuto a HoloLens 2. La connessione viene eseguita usando il Wi-Fi standard. La comunicazione remota olografica viene aggiunta a un'app desktop o UWP tramite un pacchetto NuGet. È necessario codice aggiuntivo che gestisce la connessione e ne esegue il rendering in una visualizzazione immersiva. Una tipica connessione remota avrà una bassa di 50 ms di latenza. L'App Player può segnalare la latenza in tempo reale.
 
-La comunicazione remota olografica consente a un'app di destinare gli auricolari HoloLens 2 e Windows Mixed Reality con contenuto olografico eseguito in un computer desktop o in un dispositivo UWP come Xbox One, consentendo l'accesso a più risorse di sistema e rendendo possibile l'integrazione di [visualizzazioni immersive](../../design/app-views.md) remote in software per PC desktop esistenti. Un'app remota riceve un flusso di dati di input da HoloLens 2, esegue il rendering del contenuto in una visualizzazione immersiva virtuale e trasmette nuovamente i frame di contenuto a HoloLens 2. La connessione viene eseguita usando il Wi-Fi standard. La comunicazione remota olografica viene aggiunta a un'app desktop o UWP tramite un pacchetto NuGet. È necessario codice aggiuntivo che gestisce la connessione e ne esegue il rendering in una visualizzazione immersiva.
-
-Una tipica connessione remota avrà una bassa di 50 ms di latenza. L'App Player può segnalare la latenza in tempo reale.
+Tutto il codice in questa pagina e i progetti di lavoro sono disponibili nel [repository GitHub degli esempi di comunicazione remota olografica](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -36,10 +34,10 @@ Un punto di partenza valido è un'app desktop o UWP funzionante basata su OpenXR
 I passaggi seguenti sono necessari per aggiungere il pacchetto NuGet a un progetto in Visual Studio.
 1. Aprire il progetto in Visual Studio.
 2. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Gestisci pacchetti NuGet...**
-3. Nel pannello visualizzato fare clic su **Sfoglia** e quindi cercare "comunicazione remota olografica".
-4. Selezionare **Microsoft. olografic. Remoting. OpenXr**, assicurarsi di selezionare la versione **2. x.** x più recente e fare clic su **Installa**.
+3. Nel pannello visualizzato selezionare **Sfoglia** e quindi cercare "comunicazione remota olografica".
+4. Selezionare **Microsoft. olografic. Remoting. OpenXr**, assicurarsi di selezionare la versione **2. x.** x più recente e selezionare **Installa**.
 5. Se viene visualizzata la finestra di dialogo **Anteprima** , fare clic su **OK**.
-6. La finestra di dialogo successiva visualizzata è il contratto di licenza. Fare clic su **Accetto** per accettare il contratto di licenza.
+6. Selezionare **Accetto** quando viene visualizzata la finestra di dialogo contratto di licenza.
 7. Ripetere i passaggi da 3 a 6 per i pacchetti NuGet seguenti: OpenXR. Headers, OpenXR. loader
 
 >[!NOTE]
@@ -47,7 +45,7 @@ I passaggi seguenti sono necessari per aggiungere il pacchetto NuGet a un proget
 
 ## <a name="select-the-holographic-remoting-openxr-runtime"></a>Selezionare il runtime OpenXR di comunicazione remota olografica
 
-Il primo passaggio da eseguire nell'app remota consiste nel selezionare il runtime OpenXR di comunicazione remota olografica che fa parte del pacchetto NuGet Microsoft. Olografic. Remoting. OpenXr. Questa operazione può essere eseguita impostando la ```XR_RUNTIME_JSON``` variabile di ambiente sul percorso del RemotingXR.jsnel file all'interno dell'app. Questa variabile di ambiente viene usata dal caricatore OpenXR per non usare il runtime OpenXR predefinito del sistema, ma viene invece reindirizzato al runtime OpenXR della comunicazione remota olografica. Quando si usa il pacchetto NuGet Microsoft. Olografic. Remoting. OpenXr, il RemotingXR.jsnel file viene copiato automaticamente durante la compilazione nella cartella di output, quindi la selezione del runtime di OpenXR è in genere simile alla seguente.
+Il primo passaggio da eseguire nell'app remota consiste nel selezionare il runtime OpenXR di comunicazione remota olografica, che fa parte del pacchetto NuGet Microsoft. Olografic. Remoting. OpenXr. Questa operazione può essere eseguita impostando la ```XR_RUNTIME_JSON``` variabile di ambiente sul percorso del RemotingXR.jsnel file all'interno dell'app. Questa variabile di ambiente viene usata dal caricatore OpenXR per non usare il runtime OpenXR predefinito del sistema, ma viene invece reindirizzato al runtime OpenXR della comunicazione remota olografica. Quando si usa il pacchetto NuGet Microsoft. Olografic. Remoting. OpenXr, il RemotingXR.jsnel file viene copiato automaticamente durante la compilazione nella cartella di output, la selezione del runtime di OpenXR è in genere simile alla seguente.
 
 ```cpp
 bool EnableRemotingXR() {
@@ -84,7 +82,7 @@ Dopo che l'app remota ha creato il XrInstance ed eseguito una query su XrSystemI
 
 >[!WARNING]
 > Il runtime OpenXR di comunicazione remota olografica è in grado di fornire solo i dati specifici del dispositivo, ad esempio le configurazioni della vista o le modalità di combinazione dell'ambiente dopo aver stabilito una connessione. ```xrEnumerateViewConfigurations```, ```xrEnumerateViewConfigurationViews``` , ```xrGetViewConfigurationProperties``` , ```xrEnumerateEnvironmentBlendModes``` e ```xrGetSystemProperties``` forniranno i valori predefiniti, corrispondenti a quello che in genere si ottiene se ci si connette a un lettore che esegue in un HoloLens 2, prima di essere completamente connessi.
-Si consiglia vivamente di non chiamare questi metodi prima che sia stata stabilita una connessione. Il suggerimento è usare questi metodi dopo che il XrSession è stato creato correttamente e lo stato della sessione è almeno XR_SESSION_STATE_READY.
+Si consiglia vivamente di non chiamare questi metodi prima che sia stata stabilita una connessione. Il suggerimento viene usato questi metodi dopo che il XrSession è stato creato correttamente e lo stato della sessione è almeno XR_SESSION_STATE_READY.
 
 È possibile configurare le proprietà generali come la velocità in bit massima, l'audio abilitato, il codec video o la risoluzione del flusso del buffer di profondità tramite ```xrRemotingSetContextPropertiesMSFT``` come indicato di seguito.
 
@@ -138,13 +136,13 @@ Gli Stati di connessione disponibili sono:
 >[!IMPORTANT]
 > ```xrRemotingConnectMSFT``` oppure ```xrRemotingListenMSFT``` deve essere chiamato prima di provare a creare un XrSession tramite xrCreateSession. Se si tenta di creare un XrSession mentre lo stato della connessione è ```XR_REMOTING_CONNECTION_STATE_DISCONNECTED_MSFT``` la creazione della sessione avrà esito positivo, ma lo stato della sessione passerà immediatamente a XR_SESSION_STATE_LOSS_PENDING.
 
-L'implementazione di comunicazione remota olografica ```xrCreateSession``` supporta l'attesa della creazione di una connessione. È possibile chiamare ```xrRemotingConnectMSFT``` o ```xrRemotingListenMSFT``` immediatamente seguito da una chiamata a ```xrCreateSession``` che bloccherà e attenda la creazione di una connessione. Il timeout è fisso a 10 secondi. Se è possibile stabilire una connessione entro questo periodo di tempo, la creazione del XrSession avrà esito positivo e lo stato della sessione passerà a XR_SESSION_STATE_READY. Se non è possibile stabilire alcuna connessione, la creazione della sessione riesce anche ma passa immediatamente a XR_SESSION_STATE_LOSS_PENDING.
+L'implementazione di comunicazione remota olografica ```xrCreateSession``` supporta l'attesa della creazione di una connessione. È possibile chiamare ```xrRemotingConnectMSFT``` o ```xrRemotingListenMSFT``` immediatamente seguito da una chiamata a, che blocca e attende che venga stabilita una connessione. Il timeout è fisso a 10 secondi. Se è possibile stabilire una connessione entro questo periodo di tempo, la creazione del XrSession avrà esito positivo e lo stato della sessione passerà a XR_SESSION_STATE_READY. Se non è possibile stabilire alcuna connessione, la creazione della sessione riesce anche ma passa immediatamente a XR_SESSION_STATE_LOSS_PENDING.
 
-In generale lo stato della connessione è coppia con lo stato XrSession. Qualsiasi modifica allo stato della connessione influisca anche sullo stato della sessione. Ad esempio, se lo stato della connessione passa da `XR_REMOTING_CONNECTION_STATE_CONNECTED_MSFT` a ```XR_REMOTING_CONNECTION_STATE_DISCONNECTED_MSFT``` stato sessione, passerà anche a XR_SESSION_STATE_LOSS_PENDING.
+In generale, lo stato di connessione è coppia con lo stato XrSession. Qualsiasi modifica allo stato della connessione influisca anche sullo stato della sessione. Ad esempio, se lo stato della connessione passa da `XR_REMOTING_CONNECTION_STATE_CONNECTED_MSFT` a ```XR_REMOTING_CONNECTION_STATE_DISCONNECTED_MSFT``` stato sessione, passerà anche a XR_SESSION_STATE_LOSS_PENDING.
 
 ## <a name="handling-remoting-specific-events"></a>Gestione di eventi specifici della comunicazione remota
 
-Il runtime OpenXR di comunicazione remota olografica espone tre eventi che sono importanti per monitorare lo stato di una connessione.
+Il runtime OpenXR di comunicazione remota olografica espone tre eventi, che sono importanti per monitorare lo stato di una connessione.
 1) ```XR_TYPE_REMOTING_EVENT_DATA_CONNECTED_MSFT```: Attivato quando una connessione al dispositivo è stata stabilita correttamente.
 2) ```XR_TYPE_REMOTING_EVENT_DATA_DISCONNECTED_MSFT```: Attivato se una connessione stabilita è chiusa o non è stato possibile stabilire una connessione.
 3) ```XR_TYPE_REMOTING_EVENT_DATA_LISTENING_MSFT```: Quando viene avviata l'attesa delle connessioni in ingresso.
@@ -183,7 +181,7 @@ while (pollEvent(eventData)) {
 
 ## <a name="preview-streamed-content-locally"></a>Anteprima del contenuto trasmesso localmente
 
-Per visualizzare lo stesso contenuto nell'app remota che viene inviato al dispositivo ```XR_MSFT_holographic_remoting_frame_mirroring``` , è possibile usare l'estensione. Con questa estensione è possibile inviare una trama a xrEndFrame. Questa operazione viene eseguita usando la ```XrRemotingFrameMirrorImageInfoMSFT``` struttura concatenata a XrFrameEndInfo, come indicato di seguito.
+Per visualizzare lo stesso contenuto nell'app remota inviata al dispositivo ```XR_MSFT_holographic_remoting_frame_mirroring``` , è possibile usare l'estensione. Con questa estensione, è possibile inviare una trama a xrEndFrame usando l'oggetto ```XrRemotingFrameMirrorImageInfoMSFT``` che non è concatenato a XrFrameEndInfo come indicato di seguito.
 
 ```cpp
 XrFrameEndInfo frameEndInfo{XR_TYPE_FRAME_END_INFO};

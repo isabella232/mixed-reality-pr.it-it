@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicazione remota, comunicazione remota olografica, cronologia delle versioni, auricolare in realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 5ac15c9af7f6cb2d0263b1ee20e0d2c490d353a0
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: bda4d4a304c6d13a55ad0433fcd248d8513fa6a0
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443473"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530388"
 ---
 # <a name="holographic-remoting-version-history"></a>Cronologia delle versioni remota olografica
 
@@ -19,15 +19,15 @@ ms.locfileid: "96443473"
 > Queste linee guida sono specifiche per la comunicazione remota olografica in HoloLens 2.
 
 ## <a name="version-240-december-1-2020"></a>Versione 2.4.0 (1 dicembre 2020) <a name="v2.4.0"></a>
-* La comunicazione remota olografica supporta ora la scrittura di app Remote con l' [API OpenXR](../native/openxr.md). Per iniziare, vedere [scrittura di un'app remota di comunicazione remota olografica usando le API di OpenXR](holographic-remoting-create-remote-openxr.md).
+* La comunicazione remota olografica supporta ora la scrittura di app Remote con l' [API OpenXR](../native/openxr.md). Per iniziare, vedere la pagina relativa alla [scrittura di un'app remota di comunicazione remota olografica usando le API OpenXR](holographic-remoting-create-remote-openxr.md) .
 * Correzioni di bug e miglioramenti alla stabilità.
 
 ## <a name="version-231-october-10-2020"></a>Versione 2.3.1 (10 ottobre 2020) <a name="v2.3.1"></a>
-* Correzione della regressione con la stima di posa remota che ha causato il jitter visivo.
-* Implementato PerceptionDeviceSetCreateFactoryOverride che garantisce che PerceptionDevice.dll fornito con la comunicazione remota olografica non interferisca con la versione fornita con Windows 10.
+* Correzione della regressione con la stima di posa remota, che ha causato l'instabilità visiva.
+* Implementato PerceptionDeviceSetCreateFactoryOverride, che garantisce che PerceptionDevice.dll fornito con la comunicazione remota olografica non interferisca con la versione fornita con Windows 10.
 
 ## <a name="version-230-october-2-2020"></a>Versione 2.3.0 (2 ottobre 2020) <a name="v2.3.0"></a>
-* Correzione di arresti anomali che possono verificarsi quando il lettore di comunicazione remota olografica è sospeso.
+* Correzione di arresti anomali, che può verificarsi quando il lettore di comunicazione remota olografica è sospeso.
 * Miglioramenti della stabilità.
 
 ## <a name="version-223-august-28-2020"></a>Versione 2.2.3 (28 agosto 2020) <a name="v2.2.3"></a>
@@ -35,7 +35,7 @@ ms.locfileid: "96443473"
 
 ## <a name="version-222-july-10-2020"></a>Versione 2.2.2 (10 luglio 2020) <a name="v2.2.2"></a>
 * Correzione di un problema relativo a [HolographicCamera. LeftViewportParameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.leftviewportparameters) e [HolographicCamera. RightViewportParameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.rightviewportparameters) che non restituisce alcun vertice di mesh di area nascosta durante il flusso da un auricolare a realtà mista di Windows.
-* Correzione di un arresto anomalo che può verificarsi con una connessione di rete insufficiente.
+* Correzione di un arresto anomalo, che può verificarsi con una connessione di rete insufficiente.
 
 ## <a name="version-221-july-6-2020"></a>Versione 2.2.1 (6 luglio 2020) <a name="v2.2.1"></a>
 > [!IMPORTANT]
@@ -46,17 +46,17 @@ ms.locfileid: "96443473"
 * È ora possibile installare il lettore di comunicazione remota olografica nei PC che eseguono la [realtà mista di Windows](../../discover/navigating-the-windows-mixed-reality-home.md), rendendo possibile lo streaming di auricolari immersivi.
 * I [controller di movimento](../../design/motion-controllers.md) sono ora supportati dalla comunicazione remota olografica e i dati specifici del controller possono essere recuperati tramite [SpatialInteractionSource. controller](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.controller#Windows_UI_Input_Spatial_SpatialInteractionSource_Controller).
 * [SpatialStageFrameOfReference](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference) è ora supportato e la fase corrente può essere recuperata tramite [SpatialStageFrameOfReference. Current](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current). Inoltre, è possibile richiedere una nuova fase tramite [SpatialStageFrameOfReference. RequestNewStageAsync](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync).
-* Nelle versioni precedenti, la stima di pose è stata completamente gestita sul lato Player da parte del lettore di comunicazione remota olografica. A partire dalla versione 2.2.0, la comunicazione remota olografica ha la sincronizzazione dell'ora e la stima viene eseguita completamente dall'applicazione remota. Gli utenti devono inoltre prevedere una maggiore stabilità degli ologrammi in situazioni di rete complesse.
+* Nelle versioni precedenti, la stima di pose veniva gestita sul lato Player dal lettore di comunicazione remota olografica. A partire dalla versione 2.2.0, la comunicazione remota olografica ha la sincronizzazione dell'ora e la stima viene eseguita completamente dall'applicazione remota. Gli utenti devono inoltre prevedere una maggiore stabilità degli ologrammi in situazioni di rete complesse.
 
 ## <a name="version-213-may-25-2020"></a>Versione 2.1.3 (25 maggio 2020) <a name="v2.1.3"></a>
-* Comportamento modificato dell'evento [HolographicSpace. CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) . Nelle versioni **precedenti non era garantito che** un [HolographicCamera](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera) aggiunto abbia anche un [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) valido durante la creazione del frame successivo tramite [HolographicSpace. CreateNextFrame](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createnextframe). A partire dalla versione 2.1.3 [HolographicSpace. CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) è sincronizzato con i dati di post provenienti dal lettore di comunicazione remota olografica e gli utenti possono aspettarsi che, quando viene aggiunta una fotocamera, sia disponibile anche un [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) valido per tale fotocamera nel frame successivo.
-* Aggiunto **disabilitato** a DepthBufferStreamResolution che può essere usato per disabilitare il flusso del buffer di profondità tramite RemoteContext.ConfigureDepthVideoStream. Si noti che se si usa [HolographicCameraRenderingParameters. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) avrà esito negativo con *E_ILLEGAL_METHOD_CALL*.
+* Comportamento modificato dell'evento [HolographicSpace. CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) . Nelle versioni precedenti, **non** era garantito che un [HolographicCamera](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera) aggiunto abbia anche un [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) valido durante la creazione del frame successivo tramite [HolographicSpace. CreateNextFrame](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createnextframe). A partire dalla versione 2.1.3, [HolographicSpace. CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) viene sincronizzato con i dati di post provenienti dal lettore di comunicazione remota olografica. Gli utenti possono prevedere che, quando viene aggiunta una fotocamera, nel frame successivo è disponibile anche un [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) valido.
+* Aggiunto **disabilitato** a DepthBufferStreamResolution, che può essere usato per disabilitare il flusso del buffer di profondità tramite RemoteContext.ConfigureDepthVideoStream. Si noti che se si usa [HolographicCameraRenderingParameters. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) avrà esito negativo con *E_ILLEGAL_METHOD_CALL*.
 * La schermata iniziale del lettore di comunicazione remota olografica è stata riprogettata e ora non blocca la visualizzazione degli utenti.
 * Miglioramenti alla stabilità e correzioni di bug.
 
 ## <a name="version-212-april-5-2020"></a>Versione 2.1.2 (5 aprile 2020) <a name="v2.1.2"></a>
 * Correzione del problema di compatibilità con le versioni precedenti dell'audio tra la versione più recente di Remote Remoting Player e le app Remote con una versione inferiore a 2.1.0.
-* Problema di ancoraggio spaziale fisso che ha chiuso in modo imprevisto il lettore remoto olografico. Questo problema interessa anche i giocatori personalizzati.
+* Problema di ancoraggio spaziale fisso, che ha chiuso in modo imprevisto il lettore di comunicazione remota olografica. Questo problema interessa anche i giocatori personalizzati.
 
 ## <a name="version-211-march-20-2020"></a>Versione 2.1.1 (20 marzo 2020) <a name="v2.1.1"></a>
 * Correzione del problema di codifica video con le app remote quando si usano GPU AMD.
@@ -76,11 +76,11 @@ ms.locfileid: "96443473"
 
 ## <a name="version-2016-november-11-2019"></a>Versione 2.0.16 (11 novembre 2019) <a name="2.0.16"></a>
 * Correzione di un deadlock nel rilevamento del codice QR.
-* Correzione dell'eccezione unhandeld a causa dell'attesa del blocco nel thread principale.
+* Correzione dell'eccezione unhandeled a causa di un'attesa di blocco nel thread principale.
 
 ## <a name="version-2014-october-26-2019"></a>Versione 2.0.14 (26 ottobre 2019) <a name="v2.0.14"></a>
 * Supporto per le nuove API PerceptionDevice (aggiornamento di Windows 10 di novembre 2019).
-* Correzione di un problema che impedisce l'attivazione degli eventi di movimento da SpatialGestureRecognizer.
+* Correzione del problema, che impedisce l'attivazione degli eventi di movimento da SpatialGestureRecognizer.
 * Correzione del problema di threading quando si utilizza SpatialSurfaceObserver. SetBoundingVolume.
 
 ## <a name="version-2012-october-18-2019"></a>Versione 2.0.12 (18 ottobre 2019) <a name="v2.0.12"></a>
@@ -106,7 +106,7 @@ ms.locfileid: "96443473"
 * Prima versione pubblica della comunicazione remota olografica per HoloLens 2.
 
 ## <a name="see-also"></a>Vedere anche
-* [Scrittura di un'app remota di comunicazione remota olografica usando le API di Windows mixed.](holographic-remoting-create-remote-wmr.md)
+* [Scrittura di un'app remota olografica remota usando le API di realtà mista di Windows](holographic-remoting-create-remote-wmr.md)
 * [Scrittura di un'app remota di comunicazione remota olografica usando le API di OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Scrivere un'app lettore Holographic Remoting personalizzata](holographic-remoting-create-player.md)
 * [Limitazioni e risoluzione dei problemi di comunicazione remota olografica](holographic-remoting-troubleshooting.md)

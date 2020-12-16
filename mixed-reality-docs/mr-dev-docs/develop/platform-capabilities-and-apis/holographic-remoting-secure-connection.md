@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicazione remota, comunicazione remota olografica, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale, sicurezza, autenticazione, da server a client
-ms.openlocfilehash: b2c054d19044b89b487331806b8256de1379fd53
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 64eb54d9401f3fbc8b73ebb97b19de5a68cdc5c4
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443457"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530410"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Abilitazione della sicurezza della connessione per la comunicazione remota olografica
 
@@ -30,7 +30,7 @@ La comunicazione remota olografica scambia informazioni in una rete. Se non sono
 
 Le app di esempio e il lettore di comunicazione remota olografica in Windows Store sono con sicurezza disabilitata. Questa operazione rende gli esempi più facili da comprendere. Consente inoltre di iniziare più rapidamente con lo sviluppo.
 
-Per il test dei campi o per l'uso in produzione, è consigliabile abilitare la sicurezza nella soluzione di comunicazione remota olografica.
+Per il test dei campi o la produzione, si consiglia vivamente di abilitare la sicurezza nella soluzione di comunicazione remota olografica.
 
 Sicurezza nella comunicazione remota olografica, quando è configurata correttamente per il caso d'uso, offre le seguenti garanzie:
 
@@ -66,7 +66,7 @@ Il modo in cui il client convalida il certificato del server e i tipi di certifi
 
 **Caso d'uso 1:** Il nome host del server non è fisso oppure il server non è risolto dal nome host.
 
-In questo caso d'uso, non è pratico (o addirittura possibile) emettere un certificato per il nome host del server. In questo caso, è consigliabile convalidare l'identificazione personale del certificato. Analogamente a un'impronta digitale umana, l'identificazione personale identifica in modo univoco un certificato.
+In questo caso d'uso, non è pratico (o addirittura possibile) emettere un certificato per il nome host del server. Si consiglia di convalidare invece l'identificazione personale del certificato. Analogamente a un'impronta digitale umana, l'identificazione personale identifica in modo univoco un certificato.
 
 È importante comunicare l'identificazione personale al client fuori banda. Ciò significa che non è possibile inviarlo tramite la stessa connessione di rete usata per la comunicazione remota. È invece possibile immetterlo manualmente nella configurazione del client o fare in modo che il client analizzi un codice a matrice.
 
@@ -159,7 +159,7 @@ Per convalidare i certificati, è possibile usare la logica di convalida del sis
 In Windows, la convalida del sistema verificherà quanto segue:
 
 * Integrità della catena di certificati: i certificati formano una catena coerente che termina in corrispondenza di un certificato radice attendibile
-* Validità del certificato: il certificato del server è compreso nell'intervallo di validità e viene emesso ai fini dell'autenticazione del server
+* Validità del certificato: il certificato del server è compreso nell'intervallo di validità e viene emesso per l'autenticazione server
 * Revoca: il certificato non è stato revocato
 * Nome corrispondenza: il nome host del server corrisponde a uno dei nomi host per i quali è stato emesso il certificato
 
@@ -173,7 +173,7 @@ Implementare l' `ICertificateValidator` interfaccia come segue:
 
 ## <a name="secure-connection-using-the-openxr-api"></a>Connessione sicura tramite l'API OpenXR
 
-Quando si usa l'API [OpenXR](../native/openxr.md) , tutte le API correlate alla connessione sicura sono disponibili come parte dell' `XR_MSFT_holographic_remoting` estensione OpenXR.
+Quando si usa l' [API OpenXR](../native/openxr.md) , tutte le API correlate alla connessione sicura sono disponibili come parte dell' `XR_MSFT_holographic_remoting` estensione OpenXR.
 
 >[!IMPORTANT]
 >Per informazioni sull'API dell'estensione OpenXR per la comunicazione remota olografica, vedere la [specifica](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html) che si trova nel [repository GitHub degli esempi di comunicazione remota olografica](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
@@ -184,12 +184,12 @@ Gli elementi chiave per la connessione sicura mediante l' `XR_MSFT_holographic_r
 - `xrRemotingValidateAuthenticationTokenCallbackMSFT`, convalida il token di autenticazione del client.
 - `xrRemotingRequestServerCertificateCallbackMSFT`, fornire l'applicazione server con il certificato da utilizzare.
 
-Questi callback possono essere forniti al runtime OpenXR di comunicazione remota tramite `xrRemotingSetSecureConnectionClientCallbacksMSFT` e `xrRemotingSetSecureConnectionServerCallbacksMSFT` . Inoltre, la connessione protetta deve essere abilitata tramite il parametro secureConnection nella `XrRemotingConnectInfoMSFT` struttura o la `XrRemotingListenInfoMSFT` struttura a seconda che si usi `xrRemotingConnectMSFT` o `xrRemotingListenMSFT` .
+Questi callback possono essere forniti al runtime OpenXR di comunicazione remota tramite `xrRemotingSetSecureConnectionClientCallbacksMSFT` e `xrRemotingSetSecureConnectionServerCallbacksMSFT` . Inoltre, la connessione protetta deve essere abilitata tramite il parametro secureConnection nella `XrRemotingConnectInfoMSFT` struttura o la `XrRemotingListenInfoMSFT` struttura a seconda che si stia usando `xrRemotingConnectMSFT` o `xrRemotingListenMSFT` .
 
-Questa API è molto simile all'API basata su IDL descritta in [implementazione della sicurezza della comunicazione remota olografica](#implementing-holographic-remoting-security) , ma invece di implementare le interfacce si suppone fornire implementazioni di callback. È possibile trovare un esempio dettagliato come parte dell'app di esempio OpenXR disponibile nel [repository GitHub degli esempi di comunicazione remota olografica](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+Questa API è simile all'API basata su IDL descritta in [implementazione della sicurezza della comunicazione remota olografica](#implementing-holographic-remoting-security). Tuttavia, invece di implementare le interfacce, si dovrebbe fornire implementazioni di callback. È possibile trovare un esempio dettagliato nell' [app di esempio OpenXR](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
 ## <a name="see-also"></a>Vedere anche
-* [Scrittura di un'app remota di comunicazione remota olografica usando le API di Windows mixed.](holographic-remoting-create-remote-wmr.md)
+* [Scrittura di un'app remota olografica remota usando le API di realtà mista di Windows](holographic-remoting-create-remote-wmr.md)
 * [Scrittura di un'app remota di comunicazione remota olografica usando le API di OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Scrivere un'app lettore Holographic Remoting personalizzata](holographic-remoting-create-player.md)
 * [Limitazioni e risoluzione dei problemi di comunicazione remota olografica](holographic-remoting-troubleshooting.md)

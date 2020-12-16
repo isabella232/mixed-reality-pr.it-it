@@ -6,16 +6,16 @@ ms.author: grbury
 ms.date: 02/10/2019
 ms.topic: article
 keywords: esperienza condivisa, realtà mista, ologramma, ancoraggio spaziale, multiutente, più
-ms.openlocfilehash: f05632f344e448a2b9fce95912086f3fda69c180
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6db5bb13d7e04dbee6b4d9d6568b821347bd769a
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684917"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530122"
 ---
 # <a name="shared-experiences-in-mixed-reality"></a>Esperienze condivise in realtà mista
 
-Gli ologrammi non devono rimanere privati per un solo utente. Le app olografiche possono condividere [ancoraggi spaziali](../../design/spatial-anchors.md) da un dispositivo HoloLens, iOS o Android a un altro, consentendo agli utenti di eseguire il rendering di un ologramma nella stessa posizione del mondo reale su più dispositivi.
+Gli ologrammi non devono rimanere privati per un solo utente. Le app olografiche possono condividere [ancoraggi spaziali](../../design/spatial-anchors.md) da un dispositivo HoloLens, iOS o Android a un altro, in modo da consentire agli utenti di eseguire il rendering di un ologramma nello stesso punto del mondo reale tra più dispositivi.
 
 ## <a name="six-questions-to-define-shared-scenarios"></a>Sei domande per definire scenari condivisi
 
@@ -31,13 +31,13 @@ Una presentazione potrebbe essere condotta da un singolo utente virtuale, mentre
 
 Ci sono molti modi per condividere, ma abbiamo scoperto che la maggior parte di essi rientrano in tre categorie:
 
-* **Presentazione** : quando viene visualizzato lo stesso contenuto per più utenti. Ad esempio, un professore sta offrendo una lezione a diversi studenti che usano lo stesso materiale olografico presentato a tutti. Il professore, tuttavia, potrebbe avere suggerimenti e note che potrebbero non essere visibili ad altri utenti.
-* **Collaborazione** : quando le persone lavorano insieme per raggiungere alcuni obiettivi comuni. Ad esempio, il professore ha fornito un progetto per ottenere informazioni sull'esecuzione di un intervento chirurgico al cuore. Gli studenti si abbinano e creano un'esperienza di Lab per competenze condivise che consente agli studenti di medicina di collaborare al modello di cuore e apprendere.
-* **Linee guida** : quando una persona sta aiutando qualcuno a risolvere un problema in un'interazione di stile uno-a-uno. Ad esempio, il professore che fornisce indicazioni a uno studente durante l'esecuzione del Lab delle competenze di Heart Surgery nell'esperienza condivisa.
+* **Presentazione**: quando viene visualizzato lo stesso contenuto per più utenti. Ad esempio, un professore sta offrendo una lezione a diversi studenti che usano lo stesso materiale olografico presentato a tutti. Il professore, tuttavia, potrebbe avere suggerimenti e note che potrebbero non essere visibili ad altri utenti.
+* **Collaborazione**: quando le persone lavorano insieme per raggiungere alcuni obiettivi comuni. Ad esempio, il professore ha fornito un progetto per apprendere un intervento chirurgico a cuore. Gli studenti si abbinano e creano un'esperienza di Lab per competenze condivise, che consente agli studenti medici di collaborare al modello Heart e apprendere.
+* **Linee guida**: quando una persona sta aiutando qualcuno a risolvere un problema in un'interazione di stile uno-a-uno. Ad esempio, il professore che fornisce indicazioni a uno studente quando si occupa del Lab delle competenze di Heart Surgery nell'esperienza condivisa.
 
 ### <a name="2-what-is-the-group-size"></a>2. quali sono le dimensioni del gruppo?
 
-Le esperienze di condivisione **uno-a-uno** possono fornire una linea di base avanzata e idealmente è possibile creare prove del concetto a questo livello. Tuttavia, tenere presente che la condivisione con gruppi di grandi dimensioni (oltre 6 persone) può causare problemi sia tecnici (dati che di rete) che Social (l'effetto di una stanza con [diversi avatar](https://vimeo.com/160704056)). La complessità aumenta in modo esponenziale Man mano che si passa da gruppi **piccoli** a **grandi** .
+Le esperienze di condivisione **uno-a-uno** possono fornire una linea di base avanzata e idealmente è possibile creare prove del concetto a questo livello. Tuttavia, tenere presente che la condivisione con gruppi di grandi dimensioni (oltre sei persone) può causare problemi sia tecnici (dati che rete) e social (l'effetto di una stanza con [diversi avatar](https://vimeo.com/160704056)). La complessità aumenta in modo esponenziale Man mano che si passa da gruppi **piccoli** a **grandi**.
 
 È stato rilevato che le esigenze dei gruppi possono rientrare in tre categorie di dimensioni:
 * 1:1
@@ -52,15 +52,15 @@ Le dimensioni del gruppo fanno una domanda importante perché influenza:
 
 ### <a name="3-where-is-everyone"></a>3. dove si trova tutti?
 
-La forza della realtà mista entra in gioco quando un'esperienza condivisa può essere eseguita nella stessa posizione. Chiamiamo il percorso **condiviso** . Viceversa, quando il gruppo viene distribuito e almeno un partecipante non si trova nello stesso spazio fisico (come spesso accade con VR), chiamiamo un' **esperienza remota** . Spesso, si tratta di un caso in cui il **gruppo dispone di** un percorso condiviso e di un partecipante remoto, ad esempio due gruppi nelle sale riunioni.
+La forza della realtà mista entra in gioco quando un'esperienza condivisa può essere eseguita nella stessa posizione. **Si chiama tale percorso**. Viceversa, quando il gruppo viene distribuito e almeno un partecipante non si trova nello stesso spazio fisico (come spesso accade con VR), chiamiamo un' **esperienza remota**. Spesso, si tratta di un caso in cui il gruppo dispone di partecipanti **sia** con percorso condiviso che remoto (ad esempio, due gruppi in sale riunioni).
 
 ![Tre persone con olografo sulla tabella](images/three-people-with-holograph-on-table-500px.png)
 
 Le categorie seguenti consentono di indicare la posizione in cui si trovano gli utenti:
 
-* Percorso **condiviso** : tutti gli utenti si troveranno nello stesso spazio fisico.
-* **Remote** : tutti gli utenti saranno in spazi fisici distinti.
-* **Entrambi** : gli utenti saranno una combinazione di spazi con percorso condiviso e remoto.
+* Percorso **condiviso: tutti** gli utenti si troveranno nello stesso spazio fisico.
+* **Remote**: tutti gli utenti saranno in spazi fisici distinti.
+* **Entrambi**: gli utenti saranno costituiti da una combinazione di spazi con percorso condiviso e remoto.
 
 Questa domanda è fondamentale perché influenza:
 
@@ -75,9 +75,9 @@ In genere si pensa a esperienze **sincrone** quando si verificano esperienze con
 
 Considera le tue esperienze come una delle seguenti categorie di tempo:
 
-* In modo **sincrono** : condivisione dell'esperienza olografica nello stesso momento. Ad esempio, due studenti che eseguono il Lab delle competenze nello stesso momento.
-* In **modo asincrono** : condivisione dell'esperienza olografica in momenti diversi. Ad esempio, due studenti che eseguono il Lab delle competenze, ma che lavorano su sezioni separate in momenti diversi.
-* **Entrambi** : gli utenti potranno a volte condividere in modo sincrono, ma in altre occasioni in modo asincrono. Ad esempio, un professore che valuta l'assegnazione eseguita dagli studenti in un secondo momento e lascia note per gli studenti per il giorno successivo.
+* In modo **sincrono**: condivisione dell'esperienza olografica nello stesso momento. Ad esempio, due studenti che operano nel Lab delle competenze nello stesso momento.
+* In **modo asincrono**: condivisione dell'esperienza olografica in momenti diversi. Ad esempio, due studenti che lavorano al Lab delle competenze, ma che lavorano su sezioni separate in momenti diversi.
+* **Entrambi**: gli utenti potranno a volte condividere in modo sincrono, ma in altre occasioni in modo asincrono. Ad esempio, un professore che valuta l'assegnazione eseguita dagli studenti in un secondo momento e lascia note per gli studenti per il giorno successivo.
 
 Questa domanda è importante perché influenza:
 
@@ -86,23 +86,23 @@ Questa domanda è importante perché influenza:
 
 ### <a name="5-how-similar-are-their-physical-environments"></a>5. quanto sono simili gli ambienti fisici?
 
-La probabilità di due ambienti reali identici, al di fuori delle esperienze con risorse condivise, è snella, a meno che tali ambienti non siano stati progettati per essere identici. È più probabile che si disponga di ambienti **simili** . Ad esempio, le sale riunioni sono simili, in genere hanno una tabella con sede centrale racchiusa tra sedie. I salotti, d'altra parte, sono in genere **dissimili** e possono includere un numero qualsiasi di elementi mobili in una matrice infinita di layout.
+La probabilità di due ambienti reali identici, al di fuori delle esperienze con percorso condiviso, è snella, a meno che tali ambienti non siano stati progettati per essere identici. È più probabile che si disponga di ambienti **simili** . Ad esempio, le sale riunioni sono simili, in genere hanno una tabella posizionata a livello centrale racchiusa tra sedie. I salotti, d'altra parte, sono dissimili * * e possono includere un numero qualsiasi di elementi mobili in una matrice infinita di layout.
 
 ![Olografo nella tabella](images/holograph-on-table-500px.png)
 
 Prendere in considerazione le esperienze di condivisione che si adattano a una delle due categorie seguenti:
 
-* **Simile** : ambienti che tendono a avere arredi simili, luce ambientale e suoni, dimensioni della stanza fisica. Ad esempio, il professore si trova in una conferenza A e gli studenti si trovano nell'aula B. la conferenza A può avere un minor numero di poltrone rispetto a B, ma entrambi possono avere una scrivania fisica in cui posizionare gli ologrammi.
-* **Dissimili** : ambienti molto diversi nelle impostazioni della mobilia, dimensioni delle stanze, considerazioni chiare e valide. Ad esempio, un professore si trova in uno stato attivo, mentre gli studenti si trovano in una sala conferenze di grandi dimensioni, pieni di studenti e docenti.
+* **Simile**: ambienti che tendono a avere arredi simili, luce ambientale e suoni, dimensioni della stanza fisica. Ad esempio, il professore si trova in una conferenza A e gli studenti si trovano nell'aula B. la conferenza A può avere un minor numero di poltrone rispetto a B, ma entrambi possono avere una scrivania fisica in cui posizionare gli ologrammi.
+* **Dissimili**: ambienti diversi nelle impostazioni della mobilia, dimensioni delle stanze, considerazioni chiare e valide. Ad esempio, un professore si trova in uno stato attivo, ma gli studenti si trovano in una sala conferenze di grandi dimensioni, piena di studenti e docenti.
 
 È importante [considerare l'ambiente](../../environment-considerations-for-hololens.md), in quanto influenzerà:
 
 * Il modo in cui gli utenti sperimenteranno questi oggetti. Ad esempio, se l'esperienza è ottimale per una tabella e l'utente non dispone di una tabella, O su una superficie piatta, ma l'utente ha uno spazio ingombrante.
-* Scala degli oggetti. Ad esempio, l'inserimento di un modello umano a 6 piedi in una tabella potrebbe risultare complesso, ma un modello di cuore sarebbe perfetto.
+* Scala degli oggetti. Ad esempio, l'inserimento di un modello umano a sei piedi in una tabella potrebbe risultare complesso, ma un modello di cuore sarebbe perfetto.
 
 ### <a name="6-what-devices-are-they-using"></a>6. quali dispositivi usano?
 
-Oggi spesso è probabile che si verifichino esperienze condivise tra due [**dispositivi immersivi**](../../discover/immersive-headset-hardware-details.md) (questi dispositivi potrebbero differire leggermente in termini di pulsanti e funzionalità relative, ma non molto) o di due **dispositivi olografici** in base alle soluzioni destinate a questi dispositivi. Considerare tuttavia se i **dispositivi 2D** (un partecipante mobile/desktop o un Observer) saranno considerati necessari, soprattutto in situazioni di **dispositivi 2D e 3D misti** . Conoscere i tipi di dispositivi che verranno usati dai partecipanti è importante, non solo perché sono dotati di diversi vincoli di fedeltà e dati e opportunità, ma poiché gli utenti hanno aspettative univoche per ogni piattaforma.
+Oggi spesso è probabile che si verifichino esperienze condivise tra due [**dispositivi immersivi**](../../discover/immersive-headset-hardware-details.md) (questi dispositivi potrebbero essere leggermente diversi per i pulsanti e le funzionalità relative, ma non per la maggior parte) o per due **dispositivi olografici** in base alle soluzioni destinate a questi dispositivi. Considerare tuttavia se i **dispositivi 2D** (un partecipante mobile/desktop o un Observer) saranno considerati necessari, soprattutto in situazioni di **dispositivi 2D e 3D misti**. Conoscere i tipi di dispositivi che verranno usati dai partecipanti è importante, non solo perché sono dotati di diversi vincoli di fedeltà e dati e opportunità, ma poiché gli utenti hanno aspettative univoche per ogni piattaforma.
 
 ## <a name="exploring-the-potential-of-shared-experiences"></a>Esplorare le potenzialità delle esperienze condivise
 
@@ -120,7 +120,7 @@ Si consideri lo [strumento di collaborazione onvisione](https://www.youtube.com/
 
 ![Collaborazione tra i colleghi separati in remoto per pianificare il lavoro per Mars Rover](images/onsight-nasa-jpl.gif)
 
-*Uno scienziato Esplora un ambiente usando un dispositivo **3D e in realtà mista** con un **piccolo** gruppo di colleghi **remoti** che usano dispositivi **3D e 2D** . La **collaborazione** è **sincrona** (ma può essere rivisitata in modo asincrono) e gli ambienti fisici sono (praticamente) **simili** .*
+*Uno scienziato Esplora un ambiente usando un dispositivo **3D e in realtà mista** con un **piccolo** gruppo di colleghi **remoti** che usano dispositivi **3D e 2D** . La **collaborazione** è **sincrona** (ma può essere rivisitata in modo asincrono) e gli ambienti fisici sono (praticamente) **simili**.*
 
 Esperienze come onvisione presentano nuove opportunità di collaborazione. Dall'indirizzamento fisico degli elementi nell'ambiente virtuale a un collega e alla condivisione della loro prospettiva come spiegano i risultati. Oninsight usa l'obiettivo dell'immersione e della presenza per ripensare le esperienze di condivisione in realtà mista.
 
@@ -130,10 +130,10 @@ Una collaborazione intuitiva è il fondamento della conversazione, l'interazione
 
 A seconda dell'applicazione e dello scenario, per ottenere l'esperienza desiderata saranno necessari vari requisiti. tra cui:
 
-* **Corrispondenza** : possibilità di creare sessioni, annunciare sessioni, individuare e invitare persone specifiche, sia in locale che in remoto per partecipare alla sessione.
-* **Condivisione di ancoraggio** : possibilità di allineare le coordinate tra più dispositivi in uno spazio locale comune, in modo che gli ologrammi vengano visualizzati nella stessa posizione per tutti gli utenti.
-* **Rete** : possibilità di avere posizioni, interazioni e movimenti di persone e ologrammi sincronizzati in tempo reale in tutti i partecipanti.
-* **Archiviazione dello stato** : possibilità di archiviare caratteristiche e posizioni degli ologrammi nello spazio per l'aggiunta a metà sessione, il richiamo in un secondo momento e l'affidabilità in caso di problemi di rete.
+* **Corrispondenza**: possibilità di creare sessioni, annunciare sessioni, individuare e invitare persone specifiche, sia in locale che in remoto per partecipare alla sessione.
+* **Condivisione di ancoraggio**: possibilità di allineare le coordinate tra più dispositivi in uno spazio locale comune, in modo che gli ologrammi vengano visualizzati nella stessa posizione per tutti gli utenti.
+* **Rete**: la possibilità di avere posizioni, interazioni e movimenti di persone e ologrammi sincronizzati in tempo reale tra tutti i partecipanti.
+* **Archiviazione dello stato**: possibilità di archiviare caratteristiche e posizioni degli ologrammi nello spazio per l'aggiunta a metà sessione, il richiamo in un secondo momento e l'affidabilità in caso di problemi di rete.
 
 La chiave per le esperienze condivise consiste nel fatto che più utenti vedono gli stessi ologrammi nel mondo sul proprio dispositivo, spesso grazie alla condivisione di ancoraggi per allineare le coordinate tra dispositivi.
 
@@ -155,7 +155,7 @@ Sono disponibili diverse opzioni per il servizio e la tecnologia che consentono 
 
 Sfruttare gli [ancoraggi spaziali di Azure](https://docs.microsoft.com/azure/spatial-anchors/) nell'app.  L'abilitazione e la condivisione di ancoraggi spaziali tra i dispositivi consentono di creare un'applicazione in cui gli utenti visualizzano gli ologrammi nello stesso punto nello stesso momento.  È necessaria una sincronizzazione aggiuntiva tra dispositivi per consentire agli utenti di interagire con gli ologrammi e visualizzare i movimenti o gli aggiornamenti di stato degli ologrammi.
 
-## <a name="share-1st-person-perspective"></a>Condividi la prospettiva del primo utente
+## <a name="share-first-person-perspective"></a>Condividi la prospettiva della prima persona
 
 Usare il supporto Miracast incorporato, per gli utenti locali quando si dispone di un ricevitore Miracast supportato, ad esempio un PC o una TV, non è necessario alcun codice dell'app aggiuntivo.
 
@@ -164,7 +164,7 @@ Usare [MixedReality-WebRTC](https://github.com/microsoft/mixedreality-webrtc) ne
 > [!NOTE]
 > Si noti che SignalWire è un servizio a pagamento e non è di proprietà/affiliato a Microsoft.
 
-## <a name="presenter-spectator-applications-and-demos"></a>Presenter-applicazioni e demo Spectator
+## <a name="presenter-spectator-applications-and-demos"></a>Presenter-Spectator applicazioni e demo
 
 Usare [MixedReality-SpectatorView](https://github.com/microsoft/MixedReality-SpectatorView) per rendere le [funzionalità di visualizzazione degli spettatori](spectator-view.md) nell'app.  Abilitare altri dispositivi (HL, Android, iOS e videocamere) per vedere cosa vede HoloLens da una prospettiva diversa nello stesso percorso e ricevere aggiornamenti sulle interazioni dell'utente HoloLens dell'host che interagisce con gli ologrammi.  Guardare, scattare foto e registrare video sulle operazioni svolte dall'host con gli ologrammi nell'applicazione dal punto di vista spaziale con il compagno spettatore della stessa app.
 

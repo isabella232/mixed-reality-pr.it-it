@@ -8,16 +8,14 @@ ms.topic: article
 keywords: ologrammi, stabilità, hololens, cuffie per realtà mista, cuffie per la realtà mista di Windows, auricolare della realtà virtuale, frequenza dei fotogrammi, rendering, riproiezione, separazione dei colori
 appliesto:
 - HoloLens
-ms.openlocfilehash: 081a080c73a1c78eb762b94291027cf7ebcbed45
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 345ba3608b77ed4d7b493985903295f5ee3f4863
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679600"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530423"
 ---
 # <a name="hologram-stability"></a>Stabilità degli ologrammi
-
-## <a name="overview"></a>Panoramica
 
 Per ottenere ologrammi stabili, HoloLens dispone di una pipeline di stabilizzazione dell'immagine incorporata. La pipeline di stabilizzazione funziona automaticamente in background, pertanto non è necessario eseguire alcun passaggio aggiuntivo per abilitarla. Tuttavia, è consigliabile esercitare tecniche che migliorano la stabilità degli ologrammi ed evitano scenari che riducono la stabilità.
 
@@ -29,7 +27,7 @@ La terminologia seguente può essere utile per identificare i problemi relativi 
 * **Precisione.** Una volta che l'ologramma è stato bloccato in tutto il mondo e si trova nel mondo reale, deve rimanere dove è posizionato in relazione all'ambiente circostante e indipendentemente dalle modifiche apportate all'ambiente di piccole e sparse. Se un ologramma viene visualizzato in un percorso imprevisto, si tratta di un problema di *accuratezza* . Questi scenari possono verificarsi se due stanze distinte sembrano identiche.
 * **Jitter.** Gli utenti osservano il jitter come agitazione ad alta frequenza di un ologramma, che può verificarsi quando si verifica un peggioramento dell'ambiente. Per gli utenti, la soluzione esegue l' [ottimizzazione del sensore](../../sensor-tuning.md).
 * **Judder.** Le frequenze di rendering basse generano immagini di movimento e doppie non uniformi degli ologrammi. Judder è particolarmente evidente negli ologrammi con movimento. Gli sviluppatori devono mantenere una [costante 60 fps](hologram-stability.md#frame-rate).
-* **Deriva.** Gli utenti visualizzano la deriva perché un ologramma sembra allontanarsi dalla posizione in cui è stata originariamente posizionata. La tendenza si verifica quando gli ologrammi vengono posizionati lontano dagli [ancoraggi spaziali](../../design/spatial-anchors.md), in particolare in parti dell'ambiente di cui non è stato eseguito il mapping completo. La creazione di ologrammi vicini a ancoraggi spaziali riduce la probabilità di Drift.
+* **Deriva.** Gli utenti visualizzano la deriva perché un ologramma sembra allontanarsi dalla posizione in cui è stata originariamente posizionata. La deviazione si verifica quando si posizionano gli ologrammi lontani dagli [ancoraggi spaziali](../../design/spatial-anchors.md), in particolare in parti senza mapping dell'ambiente. La creazione di ologrammi vicini a ancoraggi spaziali riduce la probabilità di Drift.
 * **Nervosismo.** Quando un ologramma "estrae" o "salta" fuori dalla propria posizione occasionalmente. Nervosismo può verificarsi quando il rilevamento regola gli ologrammi in modo che corrispondano alla conoscenza aggiornata dell'ambiente.
 * **Nuotare.** Quando un ologramma sembra ondeggiare corrispondente al movimento della testa dell'utente. Il nuoto si verifica quando l'applicazione non dispone di una [riproiezione](hologram-stability.md#reprojection)completamente implementata e se la HoloLens non viene [calibrata](../../calibration.md) per l'utente corrente. L'utente può eseguire di nuovo l'applicazione di [calibrazione](../../calibration.md) per risolvere il problema. Gli sviluppatori possono aggiornare il piano di stabilizzazione per migliorare ulteriormente la stabilità.
 * **Separazione dei colori.** Le visualizzazioni in HoloLens sono schermi sequenziali con colore, che lampeggiano con i canali di colore rosso-verde-blu-verde a 60 Hz (i singoli campi colore sono visualizzati a 240 Hz). Ogni volta che un utente tiene traccia di un ologramma che si sta muovendo con i propri occhi, i bordi iniziali e finali dell'ologramma si separano nei colori costituenti, producendo un effetto arcobaleno. Il grado di separazione dipende dalla velocità dell'ologramma. In alcuni casi più rari, lo stato di un ologramma che si muove rapidamente osservando un ologramma stazionario può produrre anche un effetto arcobaleno, denominato *[separazione dei colori](hologram-stability.md#color-separation)*.
@@ -70,7 +68,7 @@ Gli utenti che indossano HoloLens si adatteranno sempre a 2,0 m per mantenere un
 
 Il disagio del conflitto vergence-accommodation può essere evitato o ridotto a icona mantenendo il contenuto convergente il più vicino possibile a 2,0 m (ovvero, in una scena con una grande profondità, inserire le aree di interesse quasi 2,0 m, quando possibile). Quando il contenuto non può essere inserito vicino a 2,0 m, il disagio del conflitto vergence-Accommodation è maggiore quando lo sguardo dell'utente tra diverse distanze. In altre parole, è molto più semplice esaminare un ologramma stazionario che rimanga a 50 cm rispetto a un ologramma di 50 cm che si sposta verso e fuori dall'utente nel tempo.
 
-Anche l'inserimento di contenuto a 2,0 m è vantaggioso perché i due schermi sono progettati per una sovrapposizione completa a questa distanza. Per le immagini posizionate fuori da questo piano, dal momento che si spostano sul lato del frame olografico, verranno visualizzate da una visualizzazione rimanendo comunque visibile sull'altro. Questa rivalità binoculare può compromettere la percezione approfondita del holorgam.
+Anche l'inserimento di contenuto a 2,0 m è vantaggioso perché i due schermi sono progettati per una sovrapposizione completa a questa distanza. Per le immagini posizionate fuori da questo piano, dal momento che si spostano sul lato del frame olografico, verranno visualizzate da una visualizzazione rimanendo comunque visibile sull'altro. Questa rivalità binoculare può compromettere la percezione approfondita dell'ologramma.
 
 **Distanza ottimale per il posizionamento degli ologrammi rispetto allo sguardo dell'utente**
 
@@ -81,7 +79,7 @@ Anche l'inserimento di contenuto a 2,0 m è vantaggioso perché i due schermi so
 **Procedure consigliate** Quando gli ologrammi non possono essere posizionati a 2 m e i conflitti tra la convergenza e l'alloggio non possono essere evitati, la zona ottimale per la posizione degli ologrammi è compresa tra 1,25 m e 5 m. In ogni caso, i progettisti devono strutturare il contenuto per incoraggiare gli utenti a interagire tra 1 + m (ad esempio, modificare le dimensioni del contenuto e i parametri di posizionamento predefiniti).
 
 ## <a name="reprojection"></a>Riproiezione
-HoloLens esegue una sofisticata tecnica di stabilizzazione olografica assistita da hardware, nota come riproiezione. La riproiezione prende in considerazione il movimento e la modifica del punto di visualizzazione (CameraPose) quando viene animata la scena e l'utente lo sposta.  Le applicazioni devono eseguire azioni specifiche per l'uso ottimale della riproiezione.
+HoloLens dispone di una tecnica sofisticata di stabilizzazione olografica assistita da hardware, nota come riproiezione. La riproiezione prende in considerazione il movimento e la modifica del punto di visualizzazione (CameraPose) quando viene animata la scena e l'utente lo sposta.  Le applicazioni devono eseguire azioni specifiche per l'uso ottimale della riproiezione.
 
 
 Sono disponibili quattro tipi principali di riproiezione
@@ -97,7 +95,7 @@ Le applicazioni devono eseguire azioni specifiche per abilitare i diversi tipi d
 
 ### <a name="choosing-reprojection-technique"></a>Scelta della tecnica di riproiezione
 
-Tipo di stabilizzazione |    Auricolari immersivi |    HoloLens generazione 1 | HoloLens 2
+Tipo di stabilizzazione |    Visori VR immersive |    HoloLens generazione 1 | HoloLens 2
 --- | --- | --- | ---
 Riproiezione profondità |    Consigliato |   N/D |   Consigliato<br/><br/>Le applicazioni Unity devono usare Unity 2018.4.12 o versione successiva o Unity 2019,3 o versione successiva. In caso contrario, usare la riproiezione piana automatica.
 Riproiezione piana automatica | N/D |   Impostazione predefinita consigliata |   Consigliato se la riproiezione di profondità non fornisce i risultati migliori<br/><br/>Le applicazioni Unity sono consigliate per usare Unity 2018.4.12 o versione successiva o Unity 2019,3 o versione successiva.  Le versioni precedenti di Unity funzioneranno con risultati di riproiezione leggermente ridotti.
@@ -105,7 +103,7 @@ Riproiezione planare |   Non consigliato |   Consigliato se planare automatico n
 
 ### <a name="verifying-depth-is-set-correctly"></a>La verifica della profondità è stata impostata correttamente
             
-Quando un metodo di riproiezione usa il buffer di profondità, è importante verificare che il contenuto del buffer di profondità rappresenti la scena di rendering dell'applicazione.  Una serie di fattori può causare problemi. Se è presente una seconda fotocamera usata per eseguire il rendering delle sovrapposizioni dell'interfaccia utente, ad esempio, è probabile che sovrascriva tutte le informazioni di profondità dalla visualizzazione effettiva.  Gli oggetti trasparenti spesso non impostano la profondità.  Per impostazione predefinita, il rendering del testo non imposta la profondità.  Quando la profondità non corrisponde agli ologrammi sottoposti a rendering, nel rendering saranno presenti anomalie visibili.
+Quando un metodo di riproiezione usa il buffer di profondità, è importante verificare che il contenuto del buffer di profondità rappresenti la scena di rendering dell'applicazione.  Una serie di fattori può causare problemi. Se è presente una seconda fotocamera usata per eseguire il rendering delle sovrapposizioni dell'interfaccia utente, ad esempio, è probabile che sovrascriva tutte le informazioni di profondità dalla visualizzazione effettiva.  Gli oggetti trasparenti spesso non impostano la profondità.  Per impostazione predefinita, il rendering del testo non imposta la profondità.  Quando la profondità non corrisponde agli ologrammi sottoposti a rendering, saranno presenti anomalie visibili nel rendering.
             
 HoloLens 2 ha un visualizzatore che mostra dove Depth è e non è impostato, che può essere abilitato dal portale del dispositivo.  Nella scheda **viste**  >  di **stabilità ologramma** selezionare la casella **di controllo Visualizza profondità nella casella degli auricolari** .  Le aree con una profondità impostata correttamente saranno blu.  Gli elementi di cui è stato eseguito il rendering senza set di profondità sono contrassegnati in rosso e devono essere corretti.  
 
@@ -161,7 +159,7 @@ Ad esempio:
 
 ## <a name="color-separation"></a>Separazione dei colori 
 
-A causa della natura delle visualizzazioni di HoloLens, è talvolta possibile percepire un artefatto denominato "separazione dei colori". Si manifesta come un'immagine che si separa nei singoli colori di base: rosso, verde e blu. L'artefatto può essere particolarmente visibile quando si visualizzano oggetti bianchi, perché hanno grandi quantità di rosso, verde e blu. È più evidente quando un utente tiene traccia visiva di un ologramma che si muove attraverso la cornice olografica ad alta velocità. Un altro modo in cui l'artefatto può manifestarsi è la distorsione/deformazione degli oggetti. Se un oggetto ha un contrasto elevato e/o colori puri, ad esempio rosso, verde, blu, la separazione dei colori viene percepita come distorsione delle diverse parti dell'oggetto.
+A causa della natura di HoloLens, è talvolta possibile percepire un artefatto denominato "separazione dei colori". Si manifesta come un'immagine che si separa nei singoli colori di base: rosso, verde e blu. L'artefatto può essere particolarmente visibile quando si visualizzano oggetti bianchi, perché hanno grandi quantità di rosso, verde e blu. È più evidente quando un utente tiene traccia visiva di un ologramma che si muove attraverso la cornice olografica ad alta velocità. Un altro modo in cui l'artefatto può manifestarsi è la distorsione/deformazione degli oggetti. Se un oggetto ha un contrasto elevato e/o colori puri, ad esempio rosso, verde, blu, la separazione dei colori viene percepita come distorsione delle diverse parti dell'oggetto.
 
 **Esempio di ciò che la separazione dei colori di un cursore rotondo bianco con blocco Head potrebbe avere l'aspetto di un utente che ruota verso il lato:**
 

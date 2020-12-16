@@ -6,18 +6,18 @@ ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
 keywords: criteri di qualità delle app, realtà mista, app per realtà mista, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare realtà virtuale
-ms.openlocfilehash: c18f4e8470f7f183fdf250472fd3a977f925dfbf
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 788a2e8ac1a364f8c33e3895992fd99fa220a26a
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677990"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530288"
 ---
 # <a name="app-quality-criteria"></a>Criteri di qualità delle app
 
 Questo documento descrive i principali fattori che influiscono sulla qualità delle app per realtà mista. Per ogni fattore vengono fornite le informazioni seguenti
-* Panoramica: breve descrizione del fattore di qualità e dei motivi per cui è importante.
-* Effetto del dispositivo: il tipo di dispositivo di realtà mista della finestra interessato.
+* Panoramica: breve descrizione del fattore di qualità e del motivo per cui è importante.
+* Impatto sul dispositivo: il tipo di dispositivo di realtà mista della finestra interessato.
 * Criteri di qualità: come valutare il fattore di qualità.
 * Come misurare, ovvero i metodi per misurare o sperimentare il problema.
 * Suggerimenti: riepilogo degli approcci per offrire un'esperienza utente migliore.
@@ -25,7 +25,7 @@ Questo documento descrive i principali fattori che influiscono sulla qualità de
 
 ## <a name="frame-rate"></a>Frequenza dei fotogrammi
 
-La frequenza dei fotogrammi è il primo pilastro della stabilità degli ologrammi e della comodità degli utenti. La frequenza dei fotogrammi al di sotto delle destinazioni consigliate può comportare la distorsione degli ologrammi, con un impatto negativo sulla credibilità dell'esperienza e potenzialmente causare affaticamento degli occhi. La frequenza dei fotogrammi di destinazione per la tua esperienza negli auricolari ad alta realtà mista di Windows è 60Hz o 90Hz, a seconda dei computer compatibili con la realtà Windows che desideri supportare. Per HoloLens la frequenza dei fotogrammi di destinazione è 60Hz.
+La frequenza dei fotogrammi è il primo pilastro della stabilità degli ologrammi e della comodità degli utenti. La frequenza dei fotogrammi al di sotto delle destinazioni consigliate può comportare la distorsione degli ologrammi, con un impatto negativo sulla credibilità dell'esperienza e potenzialmente causare affaticamento degli occhi. La frequenza dei fotogrammi di destinazione per la tua esperienza negli auricolari ad alta realtà mista di Windows è 60 Hz o 90 Hz, a seconda dei PC con compatibilità con la realtà Windows che stai supportando. Per HoloLens, la frequenza dei fotogrammi di destinazione è 60 Hz.
 
 ### <a name="device-impact"></a>Effetti sul dispositivo
 
@@ -51,7 +51,7 @@ La frequenza dei fotogrammi è il primo pilastro della stabilità degli ologramm
 
 |  Ottimale  |  Soddisfi |  Esito negativo |
 --- | --- | ---
-| L'app soddisfa costantemente i frame al secondo (FPS) obiettivo del dispositivo di destinazione: 60fps in HoloLens; 90fps su PC ultra; e 60fps nei PC mainstream. | L'app ha un frame intermittente che non ostacola l'esperienza principale; o FPS è costantemente inferiore all'obiettivo desiderato, ma non impedisce l'esperienza dell'app. | L'app sta riscontrando un calo della frequenza dei fotogrammi in media ogni 10 secondi o meno. |
+| L'app soddisfa costantemente i frame al secondo (FPS) obiettivo del dispositivo di destinazione: 60 fps in HoloLens; 90 fps nei PC ultra; e 60 fps nei PC mainstream. | L'app ha un frame intermittente che non ostacola l'esperienza di base oppure FPS è costantemente inferiore rispetto a quello desiderato, ma non impedisce l'esperienza dell'app. | L'app sta riscontrando un calo della frequenza dei fotogrammi in media ogni 10 secondi o meno. |
 
 ### <a name="how-to-measure"></a>Come misurare
 
@@ -75,8 +75,8 @@ La frequenza dei fotogrammi è il primo pilastro della stabilità degli ologramm
 
 #### <a name="tools-and-tutorials"></a>Strumenti ed esercitazioni
 
-* [MRToolkit, visualizzazione del contatore FPS](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Utilities/README.md)
-* [MRToolkit, shader](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Utilities/Shaders)
+* [Toolkit di realtà mista, visualizzazione del contatore FPS](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Utilities/README.md)
+* [Toolkit per realtà mista, shader](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Utilities/Shaders)
 
 #### <a name="external-references"></a>Riferimenti esterni
 
@@ -114,13 +114,13 @@ Gli ologrammi stabili aumenteranno l'usabilità e la credibilità dell'app e cre
 
 |  Ottimale  |  Soddisfi |  Esito negativo |
 --- | --- | ---
-|  Gli ologrammi appaiono costantemente stabili. | Il contenuto secondario presenta un movimento imprevisto; o un movimento imprevisto non ostacola l'esperienza complessiva dell'app. | Il contenuto primario nel frame presenta un movimento imprevisto. |
+|  Gli ologrammi appaiono costantemente stabili. | Il contenuto secondario mostra un movimento imprevisto; o un movimento imprevisto non ostacola l'esperienza complessiva dell'app. | Il contenuto primario nel frame Mostra un movimento imprevisto. |
 
 ### <a name="how-to-measure"></a>Come misurare
 
 Durante l'uso del dispositivo e la visualizzazione dell'esperienza:
 
-* Spostare la testa da un lato all'altro, se gli ologrammi mostrano un movimento imprevisto, la frequenza dei fotogrammi ridotta o l'allineamento non corretto del piano di stabilità al piano focale è la causa probabile.
+* Spostare la testa da un lato all'altro. Se gli ologrammi mostrano un movimento imprevisto, la frequenza dei fotogrammi ridotta o l'allineamento non corretto del piano di stabilità al piano focale è la causa probabile.
 * Spostarsi tra gli ologrammi e l'ambiente, cercare comportamenti come Swim e nervosismo. Questo tipo di movimento è probabilmente causato dal fatto che il dispositivo non tiene traccia dell'ambiente o la distanza dall'ancoraggio spaziale.
 * Se nel frame sono presenti ologrammi di grandi dimensioni o più, osservare il comportamento degli ologrammi a diverse profondità spostando la posizione della testa da un lato all'altro, se shakiness è probabilmente causato dal piano di stabilizzazione.
 
@@ -150,7 +150,7 @@ Durante l'uso del dispositivo e la visualizzazione dell'esperienza:
 
 ## <a name="holograms-position-on-real-surfaces"></a>Posizione degli ologrammi su superfici reali
 
-I disallineamenti degli ologrammi con oggetti fisici (se destinati a essere posizionati in relazione l'uno con l'altro) sono un'indicazione chiara della mancata unione degli ologrammi e del mondo reale. L'accuratezza della selezione host deve essere relativa alle esigenze dello scenario; ad esempio, la selezione della superficie generale può utilizzare la mappa spaziale, ma la selezione host più accurata richiede l'utilizzo di marcatori e di calibrazione.
+I disallineamenti degli ologrammi con oggetti fisici, se destinati a essere posizionati in relazione l'uno con l'altro, sono un'indicazione chiara della mancata unione degli ologrammi e del mondo reale. L'accuratezza della selezione host deve essere relativa alle esigenze dello scenario; ad esempio, la selezione della superficie generale può utilizzare la mappa spaziale, ma la selezione host più accurata richiede l'utilizzo di marcatori e di calibrazione.
 
 ### <a name="device-impact"></a>Effetti sul dispositivo
 
@@ -176,11 +176,11 @@ I disallineamenti degli ologrammi con oggetti fisici (se destinati a essere posi
 
 |  Ottimale  |  Soddisfi |  Esito negativo |
 --- | --- | ---
-| Gli ologrammi si allineano alla superficie in genere nell'intervallo di centimetri. Se è necessaria una maggiore accuratezza, l'app deve fornire un modo efficiente per collaborare all'interno della specifica dell'app desiderata. | N/D | Gli ologrammi appaiono non allineati con l'oggetto di destinazione fisico suddividendo il piano della superficie o facendo in modo che si trovi in un altro modo. Se è necessaria l'accuratezza, gli ologrammi dovrebbero soddisfare le specifiche di prossimità dello scenario. | 
+| Gli ologrammi si allineano alla superficie in genere nell'intervallo di centimetri. Se è necessaria una maggiore precisione, l'app deve fornire un modo efficiente per collaborare all'interno della specifica dell'app. | N/D | Gli ologrammi appaiono non allineati con l'oggetto di destinazione fisico suddividendo il piano della superficie o facendo in modo che si trovi in un altro modo. Se è necessaria l'accuratezza, gli ologrammi dovrebbero soddisfare le specifiche di prossimità dello scenario. | 
 
 ### <a name="how-to-measure"></a>Come misurare
 
-* Gli ologrammi posizionati sulla mappa spaziale non devono essere visualizzati in modo significativo sopra o sotto la superficie.
+* Gli ologrammi posizionati sulla mappa spaziale non devono apparire in modo significativo al di sopra o al di sotto della superficie.
 * Gli ologrammi che richiedono un posizionamento accurato devono avere una forma di sistema di marcatore e di calibrazione accurato per il requisito dello scenario.
 
 ### <a name="recommendations"></a>Consigli
@@ -213,7 +213,7 @@ I disallineamenti degli ologrammi con oggetti fisici (se destinati a essere posi
 
 ## <a name="viewing-zone-of-comfort"></a>Visualizzazione della zona di comfort
 
-Gli sviluppatori di app controllano la posizione di convergenza degli occhi degli utenti inserendo contenuto e ologrammi a diverse profondità. Gli utenti che indossano HoloLens saranno sempre a 2,0 m per mantenere un'immagine chiara, perché le visualizzazioni HoloLens sono fisse a distanza ottica circa 2,0 m dall'utente. Una profondità di contenuto impropria può causare disagi visivi o affaticamento.
+Gli sviluppatori di app controllano la posizione di convergenza degli occhi degli utenti inserendo contenuto e ologrammi a diverse profondità. Gli utenti che indossano HoloLens si adatteranno sempre a 2,0 m per mantenere un'immagine chiara perché i display HoloLens sono fissi a una distanza ottica circa 2,0 m dall'utente. Una profondità di contenuto impropria può causare disagi visivi o affaticamento.
 
 ### <a name="device-impact"></a>Effetti sul dispositivo
 
@@ -240,26 +240,26 @@ Gli sviluppatori di app controllano la posizione di convergenza degli occhi degl
 <table>
 <tr>
 <td> Ottimale </td><td><ul>
-<li>Inserire il contenuto a 2m.</li><li>Quando gli ologrammi non possono essere posizionati su 2m e i conflitti tra la convergenza e l'alloggio non possono essere evitati, la zona ottimale per la posizione degli ologrammi è compresa tra 1.25 m e 5m.</li><li>In ogni caso, i progettisti devono strutturare il contenuto per incoraggiare gli utenti a interagire tra 1 + m (ad esempio, modificare le dimensioni del contenuto e i parametri di posizionamento predefiniti).</li><li>A meno che non sia specificamente necessario per lo scenario, un piano di ritaglio deve essere implementato con dissolvenza a partire da 1 milione.</li><li>Nei casi in cui è necessaria un'osservazione più stretta di un ologramma senza movimento, il contenuto non deve essere più vicino a 50cm.</li>
+<li>Inserire il contenuto a 2 m.</li><li>Quando gli ologrammi non possono essere posizionati a 2 m e i conflitti tra la convergenza e l'alloggio non possono essere evitati, la zona ottimale per la posizione degli ologrammi è compresa tra 1,25 m e 5 m.</li><li>In ogni caso, i progettisti devono strutturare il contenuto per incoraggiare gli utenti a interagire tra 1 + m (ad esempio, modificare le dimensioni del contenuto e i parametri di posizionamento predefiniti).</li><li>A meno che non sia richiesto dallo scenario, un piano di ridimensionamento deve essere implementato con fade out a partire da 1 m.</li><li>Nei casi in cui è necessaria un'osservazione più stretta di un ologramma non in movimento, il contenuto non dovrebbe essere più vicino a 50 cm.</li>
 </ul></td>
 </tr><tr>
 <td> Soddisfi</td><td> Il contenuto si trova all'interno delle linee guida per la visualizzazione e il movimento, ma non è corretto o non utilizza il piano di ritaglio.</td>
 </tr><tr>
-<td> Esito negativo </td><td> Il contenuto viene presentato troppo vicino (in genere &lt; 1.25 m o &lt; 50cm per gli ologrammi stazionari che richiedono un'osservazione più approfondita).</td>
+<td> Esito negativo </td><td> Il contenuto è troppo vicino (in genere &lt; 1,25 m o &lt; 50 cm per gli ologrammi stazionari che richiedono un'osservazione più approfondita).</td>
 </tr>
 </table>
 
 ### <a name="how-to-measure"></a>Come misurare
 
-* Il contenuto deve essere in genere 2m, ma non più vicino a 1,25 o più di 5 minuti.
-* Con poche eccezioni, la distanza di rendering del ritaglio HoloLens deve essere impostata su. 85CM con la dissolvenza del contenuto a partire da 1 milione. Approccio al contenuto e annotare l'effetto del piano di ritaglio.
-* Il contenuto fisso non deve essere più vicino a 50cm.
+* Il contenuto deve essere in genere di 2 m, ma non più vicino a 1,25 o superiore a 5 m.
+* Con poche eccezioni, la distanza di rendering del ritaglio HoloLens deve essere impostata su 85CM con dissolvenza fuori dal contenuto a partire da 1 m. Approccio al contenuto e annotare l'effetto del piano di ritaglio.
+* Il contenuto fisso non deve essere più vicino a 50 cm.
 
 ### <a name="recommendations"></a>Consigli
 
-* Progettare il contenuto per la distanza di visualizzazione ottimale di 2m.
-* Impostare la distanza di rendering del ritaglio su 85cm con la dissolvenza del contenuto a partire da 1 milione.
-* Per gli ologrammi stazionari che necessitano di una visualizzazione più vicina, il piano di ridimensionamento deve essere non più vicino a 30cm e la dissolvenza dovrebbe iniziare da almeno 10 cm dal piano di ritaglio.
+* Progettare il contenuto per la distanza di visualizzazione ottimale di 2 m.
+* Impostare la distanza di rendering del ritaglio su 85 cm con dissolvenza fuori dal contenuto a partire da 1 m.
+* Per gli ologrammi stazionari che necessitano di una visualizzazione più vicina, il piano di ridimensionamento deve essere non più vicino a 30 cm e la dissolvenza in uscita deve iniziare da almeno 10 cm dal piano di ritaglio.
 
 ### <a name="resources"></a>Risorse
 
@@ -313,7 +313,7 @@ Indipendentemente dalla visualizzazione della zona di problemi di comfort, l'ute
 
 ## <a name="use-of-spatial-sound"></a>Uso del suono spaziale
 
-In realtà mista di Windows, il motore audio fornisce il componente uditivo dell'esperienza di realtà mista simulando il suono 3D usando la direzione, la distanza e le simulazioni ambientali. L'uso di un suono spaziale in un'applicazione consente agli sviluppatori di collocare in modo convincente i suoni in uno spazio tridimensionale (Sphere) intorno all'utente. Questi suoni sembreranno come se provenissero da oggetti fisici reali o dagli ologrammi della realtà mista nell'ambiente dell'utente. Il suono spaziale è uno strumento potente per l'immersione, l'accessibilità e la progettazione dell'esperienza utente nelle applicazioni di realtà mista.
+In realtà mista di Windows, il motore audio fornisce il componente uditivo dell'esperienza di realtà mista simulando il suono 3D usando la direzione, la distanza e le simulazioni ambientali. L'uso di un suono spaziale in un'applicazione consente agli sviluppatori di inserire in modo convincente i suoni in uno spazio tridimensionale (Sphere) intorno all'utente. Questi suoni sembreranno come se provenissero da oggetti fisici reali o dagli ologrammi della realtà mista nell'ambiente dell'utente. Il suono spaziale è uno strumento potente per l'immersione, l'accessibilità e la progettazione dell'esperienza utente nelle applicazioni di realtà mista.
 
 ### <a name="device-impact"></a>Effetti sul dispositivo
 
@@ -367,7 +367,7 @@ In realtà mista di Windows, il motore audio fornisce il componente uditivo dell
 
 #### <a name="tools-and-tutorials"></a>Strumenti ed esercitazioni
 
-* [MRToolkit, audio spaziale](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialSound/README.md)
+* [Toolkit di realtà mista-audio spaziale](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialSound/README.md)
 
 ## <a name="focus-on-holographic-frame-fov-boundaries"></a>Concentrarsi sui limiti dei frame olografici (FOV)
 
@@ -402,7 +402,7 @@ L'esperienza utente ben progettata può creare e gestire un contesto utile dell'
 ### <a name="how-to-measure"></a>Come misurare
 
 * Il contesto di un ologramma (grande) viene perso o non è compreso perché viene troncato ai limiti.
-* La posizione degli ologrammi è difficile da trovare a causa dell'assenza di direttori di attenzione o contenuti che si spostano rapidamente all'interno e all'esterno del frame olografico.
+* Le posizioni degli ologrammi sono difficili da trovare a causa dell'assenza di direttori di attenzione o contenuti che si spostano rapidamente all'interno e all'esterno del frame olografico.
 * Per visualizzare completamente un ologramma, è necessario che lo scenario sia normale e ripetitivo, in modo da ottenere una riduzione del collo.
 
 ### <a name="recommendations"></a>Consigli
@@ -458,7 +458,7 @@ Gli ologrammi dovrebbero rispondere alla posizione dell'utente approssimativamen
 <td> Soddisfi </td><td> L'interfaccia utente si adatta alla posizione dell'utente, ma può impedire la visualizzazione del contenuto della chiave che richiede all'utente di modificare la posizione.</td>
 </tr><tr>
 <td> Esito negativo </td><td><ol>
-<li>Gli elementi dell'interfaccia utente vengono persi o bloccati durante lo spostamento, facendo sì che l'utente ritorni in modo non naturale ai controlli (o trova).</li><li>Gli elementi dell'interfaccia utente limitano la visualizzazione del contenuto primario.</li><li>Lo spostamento dell'interfaccia utente non è ottimizzato per la visualizzazione della distanza e del momento in particolare con elementi dell'interfaccia utente con <a href="../../design/billboarding-and-tag-along.md">tag lungo</a> .</li>
+<li>Gli elementi dell'interfaccia utente vengono persi o bloccati durante lo spostamento, facendo sì che l'utente ritorni in modo non naturale ai controlli (o trova).</li><li>Gli elementi dell'interfaccia utente limitano la visualizzazione del contenuto primario.</li><li>Lo spostamento dell'interfaccia utente non è ottimizzato per la visualizzazione della distanza e del momento in particolare con elementi dell'interfaccia utente con <a href="../../design/billboarding-and-tag-along.md">tag</a> .</li>
 </ol></td>
 </tr>
 </table>
@@ -486,7 +486,7 @@ Gli ologrammi dovrebbero rispondere alla posizione dell'utente approssimativamen
 
 ## <a name="input-interaction-clarity"></a>Chiarezza interazione input
 
-La chiarezza dell'interazione di input è essenziale per l'usabilità di un'app e include coerenza di input, accessibilità, individuabilità dei metodi di interazione. L'utente deve essere in grado di usare interazioni comuni a livello di piattaforma senza riapprendere. Se l'app ha un input personalizzato, dovrebbe essere chiaramente comunicata e dimostrata.
+La chiarezza dell'interazione di input è essenziale per l'usabilità di un'app e include coerenza di input, accessibilità, individuabilità dei metodi di interazione. L'utente può usare interazioni comuni a livello di piattaforma senza riapprendere. Se l'app ha un input personalizzato, dovrebbe essere chiaramente comunicata e dimostrata.
 
 ### <a name="device-impact"></a>Effetti sul dispositivo
 
@@ -646,7 +646,7 @@ Le app che richiedono dati di mapping spaziale si basano sul dispositivo per rac
 
 ### <a name="how-to-measure"></a>Come misurare
 
-* Durante un'analisi dello spazio richiesto, viene fornita una guida visiva e audio che indica il punto di ricerca e quando avviare e arrestare l'analisi.
+* Durante un'analisi dello spazio necessario, vengono fornite indicazioni visive e audio che indicano la posizione in cui cercare e quando avviare e arrestare l'analisi.
 
 ### <a name="recommendations"></a>Consigli
 
