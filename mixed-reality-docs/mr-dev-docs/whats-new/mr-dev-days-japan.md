@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Realtà mista, conferenza, Summit, sviluppatore, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 7ca5357c9d7f3536fc165d0663813ae98f45004f
-ms.sourcegitcommit: 1b5a5ce89f2edc86985a73e4f3828bb761e7543a
+ms.openlocfilehash: 925e94931adab767fbca2544d781c9ba1c095216
+ms.sourcegitcommit: cecb76c6a9b4b2c4e9769a5829a7146c99086e85
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/16/2020
-ms.locfileid: "97564256"
+ms.locfileid: "97580547"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Giappone
 
@@ -39,28 +39,29 @@ Ci auguriamo che tu abbia partecipato al giorno dello sviluppo per la realtà mi
 
 **Tutti gli orari sono ora solare Giappone (UTC + 9)** 
 
-
-
 ### <a name="december-16th"></a>16 dicembre
+
+**È stata posticipata un'ora dalla pianificazione originale.**
+
 |**Time**|**Titolo sessione**|**Relatore**|**Lingua**|**Level**|
 |---------|---------|---------|---------|---------|
-|10:00-10:50am|Apertura del Keynote|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/EN|N/D|
-|10:50am-11:00|**Interrompi (10min)**||||
-|11:00-11:25am|*Sessione 1* Introduzione alla realtà mista|Atsushi Suzuki|JA|100|
-|11:7.30-11:55am|*Sessione 2* Tempo reale aziendale misto|Tetsu Muranaka|JA|200|
-|12:00-12:50pm|*Sessione di pranzo* Panel: discussione gratuita interattiva, domande e risposte, MRTK + Oculus quest 2|Madoka Chiyoda + Microsoft MVP|JA|200|
-|12:50pm-1: pm|**Interrompi (10min)**||||
-|1: pm-1:25pm|*Sessione 3* Panoramica dello sviluppo di HoloLens 2|Madoka Chiyoda|JA|200|
-|1: pm-1:55pm|*Sessione 4* Componenti UX MRTK v 2.5.0|Yoon Park|JA|300|
-|2:00-2:25pm|*Sessione 5* Introduzione a HoloLens 2 e Unreal Engine (MRTK-Unreal)|Cameron Micka|IT|300|
-|2: pm-2:55pm|*Sessione 6* Creazione di ologrammi|Daniel Escudero|IT|300|
-|2:55pm-3:14.15|**Interrompi (20 min)**||||
-|3:14.15-3:40pm|*Sessione 7* Ancoraggi degli oggetti di Azure|Jesse McCulloch|IT|300|
-|3:45pm-4:22:00|*Sessione 8* Rendering remoto di Azure|Atsushi Suzuki|JA|300|
-|4:14.15-4:40pm|*Sessione 9* Allineamento dell'ologramma e del mondo reale tramite ancoraggi spaziali di Azure|Yingguang Mei|IT|300|
-|4:45PM-5:22:00|*Sessione 10* Unity + PiXYZ|Shinobu Takahashi (tecnologie Unity Giappone)|JA|200|
-|5:14.15-5:40pm|*Sessione 11* Deep Dive di Azure Kinect DK, case study|Shinji Chiba|JA|400|
-|5:45pm-6: pm|Chiusura|Madoka Chiyoda|JA|N/D|
+|11:00-11:50am|Apertura del Keynote|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/EN|N/D|
+|11:50am-12.00|**Interrompi (10min)**||||
+|12:00-12:25pm|*Sessione 1* Introduzione alla realtà mista|Atsushi Suzuki|JA|100|
+|12:18.30-12:55pm|*Sessione 2* Tempo reale aziendale misto|Tetsu Muranaka|JA|200|
+|1: pm-1:50pm|*Sessione di pranzo* Panel: discussione gratuita interattiva, domande e risposte, MRTK + Oculus quest 2|Madoka Chiyoda + Microsoft MVP|JA|200|
+|1:50pm-2:00|**Interrompi (10min)**||||
+|2:00-2:25pm|*Sessione 3* Panoramica dello sviluppo di HoloLens 2|Madoka Chiyoda|JA|200|
+|2: pm-2:55pm|*Sessione 4* Componenti UX MRTK v 2.5.0|Yoon Park|JA|300|
+|3: pm-3:25pm|*Sessione 5* Introduzione a HoloLens 2 e Unreal Engine (MRTK-Unreal)|Cameron Micka|IT|300|
+|3: pm-3:55pm|*Sessione 6* Creazione di ologrammi|Daniel Escudero|IT|300|
+|3:55pm-4:14.15|**Interrompi (20 min)**||||
+|4:14.15-4:40pm|*Sessione 7* Ancoraggi degli oggetti di Azure|Jesse McCulloch|IT|300|
+|4:45PM-5:22:00|*Sessione 8* Rendering remoto di Azure|Atsushi Suzuki|JA|300|
+|5:14.15-5:40pm|*Sessione 9* Allineamento dell'ologramma e del mondo reale tramite ancoraggi spaziali di Azure|Yingguang Mei|IT|300|
+|5:45pm-6:22:00|*Sessione 10* Unity + PiXYZ|Shinobu Takahashi (tecnologie Unity Giappone)|JA|200|
+|6:14.15-6:40pm|*Sessione 11* Deep Dive di Azure Kinect DK, case study|Shinji Chiba|JA|400|
+|6:45pm-7:00|Chiusura|Madoka Chiyoda|JA|N/D|
 
 #### <a name="contributors-technical-reviewers-for-the-subtitles"></a>Collaboratori (revisori tecnici per i sottotitoli)
 
