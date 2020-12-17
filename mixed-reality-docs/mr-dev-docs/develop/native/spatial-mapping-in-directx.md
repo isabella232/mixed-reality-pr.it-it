@@ -1,24 +1,24 @@
 ---
 title: Mapping spaziale in DirectX
-description: Viene illustrato come implementare il mapping spaziale nell'app DirectX. Questo include una spiegazione dettagliata dell'applicazione di esempio di mapping spaziale inclusa con l'SDK piattaforma UWP (Universal Windows Platform).
+description: Informazioni su come implementare il mapping spaziale nell'app DirectX, inclusa l'applicazione di esempio di mapping spaziale fornita con l'SDK piattaforma UWP (Universal Windows Platform).
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Realtà mista di Windows, mapping spaziale, ambiente, interazione, DirectX, WinRT, API, codice di esempio, UWP, SDK, procedura dettagliata
-ms.openlocfilehash: 3e20f0b7a677ba522f8a1140284a2aa0e96eedcd
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: fa372473939222ef4be7ca36076a17241173c441
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685908"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612915"
 ---
 # <a name="spatial-mapping-in-directx"></a>Mapping spaziale in DirectX
 
 > [!NOTE]
-> Questo articolo si riferisce alle API native di WinRT legacy.  Per i nuovi progetti di app native, è consigliabile usare l' **[API OpenXR](openxr-getting-started.md)** .
+> Questo articolo si riferisce alle API native di WinRT legacy.  Per i nuovi progetti di app native, è consigliabile usare l' **[API OpenXR](openxr-getting-started.md)**.
 
-Questo argomento descrive come implementare il [mapping spaziale](../../design/spatial-mapping.md) nell'app DirectX. Questo include una spiegazione dettagliata dell'applicazione di esempio di mapping spaziale inclusa con l'SDK piattaforma UWP (Universal Windows Platform).
+Questo argomento descrive come implementare il [mapping spaziale](../../design/spatial-mapping.md) nell'app DirectX, inclusa una spiegazione dettagliata dell'applicazione di esempio per il mapping spaziale in pacchetto con l'SDK piattaforma UWP (Universal Windows Platform).
 
 Questo argomento usa il codice dell'esempio di codice UWP di [HolographicSpatialMapping](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping) .
 
@@ -50,7 +50,7 @@ Questo argomento usa il codice dell'esempio di codice UWP di [HolographicSpatial
 
 ## <a name="directx-development-overview"></a>Panoramica dello sviluppo DirectX
 
-Lo sviluppo di applicazioni native per il mapping spaziale USA le API nello spazio dei nomi [Windows. Perception. Spatial](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.aspx) . Queste API offrono il controllo completo della funzionalità di mapping spaziale, in modo direttamente analogo alle API di mapping spaziale esposte da [Unity](../unity/spatial-mapping-in-unity.md).
+Lo sviluppo di applicazioni native per il mapping spaziale USA le API nello spazio dei nomi [Windows. Perception. Spatial](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.aspx) . Queste API offrono il controllo completo della funzionalità di mapping spaziale, nello stesso modo in cui le API di mapping spaziale sono esposte da [Unity](../unity/spatial-mapping-in-unity.md).
 
 ### <a name="perception-apis"></a>API di percezione
 
@@ -58,23 +58,23 @@ I tipi primari forniti per lo sviluppo di mapping spaziale sono i seguenti:
 * [SpatialSurfaceObserver](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.aspx) fornisce informazioni sulle superfici in aree di spazio specificate dall'applicazione in prossimità dell'utente, sotto forma di oggetti SpatialSurfaceInfo.
 * [SpatialSurfaceInfo](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceinfo.aspx) descrive una singola superficie spaziale esistente, incluso un ID univoco, il volume di delimitazione e l'ora dell'Ultima modifica. Fornirà un SpatialSurfaceMesh in modo asincrono su richiesta.
 * [SpatialSurfaceMeshOptions](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemeshoptions.aspx) contiene i parametri usati per personalizzare gli oggetti SpatialSurfaceMesh richiesti da SpatialSurfaceInfo.
-* [SpatialSurfaceMesh](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.aspx) rappresenta i dati mesh per una singola superficie spaziale. I dati per le posizioni del vertice, le normali dei vertici e gli indici dei triangoli sono contenuti negli oggetti SpatialSurfaceMeshBuffer del membro.
+* [SpatialSurfaceMesh](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.aspx) rappresenta i dati mesh per una singola superficie spaziale. I dati relativi a posizioni vertice, normali vertici e indici triangolare sono contenuti negli oggetti SpatialSurfaceMeshBuffer del membro.
 * [SpatialSurfaceMeshBuffer](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemeshbuffer.aspx) esegue il wrapping di un singolo tipo di dati mesh.
 
 Quando si sviluppa un'applicazione con queste API, il flusso del programma di base sarà simile al seguente (come illustrato nell'applicazione di esempio descritta di seguito):
 - **Configurare il SpatialSurfaceObserver**
   - Chiamare [RequestAccessAsync](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.requestaccessasync.aspx)per assicurarsi che l'utente disponga dell'autorizzazione per l'uso delle funzionalità di mapping spaziale del dispositivo da parte dell'applicazione.
   - Creare un'istanza di un oggetto SpatialSurfaceObserver.
-  - Chiamare [SetBoundingVolumes](https://msdn.microsoft.com/library/windows/apps/mt592747.aspx) per specificare le aree di spazio in cui si desiderano informazioni sulle superfici spaziali. È possibile modificare queste aree in futuro chiamando semplicemente questa funzione. Ogni area viene specificata usando un [SpatialBoundingVolume](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialboundingvolume.aspx).
+  - Chiamare [SetBoundingVolumes](https://msdn.microsoft.com/library/windows/apps/mt592747.aspx) per specificare le aree di spazio in cui si desiderano informazioni sulle superfici spaziali. È possibile modificare queste aree in futuro chiamando di nuovo questa funzione. Ogni area viene specificata usando un [SpatialBoundingVolume](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialboundingvolume.aspx).
   - Eseguire la registrazione per l'evento [ObservedSurfacesChanged](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.observedsurfaceschanged.aspx) , che verrà attivato ogni volta che sono disponibili nuove informazioni sulle superfici spaziali nelle aree di spazio specificate.
 - **Elabora eventi ObservedSurfacesChanged**
   - Nel gestore eventi chiamare [GetObservedSurfaces](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.getobservedsurfaces.aspx) per ricevere una mappa di oggetti SpatialSurfaceInfo. Utilizzando questa mappa, è possibile aggiornare i record delle superfici spaziali [presenti nell'ambiente dell'utente](../../design/spatial-mapping.md#mesh-caching).
   - Per ogni oggetto SpatialSurfaceInfo, è possibile eseguire una query su [TryGetBounds](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceinfo.trygetbounds.aspx) per determinare gli extent spaziali della superficie, espressa in un [sistema di coordinate spaziali](../../design/coordinate-systems.md) a scelta.
-  - Se si decide di richiedere una mesh per una superficie spaziale, chiamare [TryComputeLatestMeshAsync](https://msdn.microsoft.com/library/windows/apps/mt592715.aspx). È possibile specificare opzioni che specificano la densità desiderata dei triangoli e il formato dei dati della mesh restituiti.
+  - Se si decide di richiedere, mesh per una superficie spaziale, chiamare [TryComputeLatestMeshAsync](https://msdn.microsoft.com/library/windows/apps/mt592715.aspx). È possibile specificare opzioni che specificano la densità dei triangoli e il formato dei dati di mesh restituiti.
 - **Rete di ricezione ed elaborazione**
-  - Ogni chiamata a TryComputeLatestMeshAsync restituirà aysnchronously un oggetto SpatialSurfaceMesh.
-  - Da questo oggetto è possibile accedere agli oggetti SpatialSurfaceMeshBuffer contenuti per accedere agli indici triangolari, alle posizioni dei vertici e alle normali del vertice, se richiesti, della mesh. Questi dati saranno in un formato compatibile direttamente con le [API Direct3D 11](https://msdn.microsoft.com/library/windows/desktop/ff476501(v=vs.85).aspx) usate per il rendering dei mesh.
-  - Da qui l'applicazione può facoltativamente eseguire l'analisi o l' [elaborazione](../../design/spatial-mapping.md#mesh-processing) dei dati di rete e usarla per il [rendering](../../design/spatial-mapping.md#rendering) e la Raycasting fisica [e il conflitto](../../design/spatial-mapping.md#raycasting-and-collision).
+  - Ogni chiamata a TryComputeLatestMeshAsync restituirà in modo asincrono un oggetto SpatialSurfaceMesh.
+  - Da questo oggetto è possibile accedere agli oggetti SpatialSurfaceMeshBuffer contenuti, che consente di accedere agli indici del triangolo, alle posizioni dei vertici e alle normali del vertice della mesh se vengono richiesti. Questi dati saranno in un formato compatibile direttamente con le [API Direct3D 11](https://msdn.microsoft.com/library/windows/desktop/ff476501(v=vs.85).aspx) usate per il rendering dei mesh.
+  - Da qui l'applicazione può facoltativamente analizzare o [elaborare](../../design/spatial-mapping.md#mesh-processing) i dati mesh e usarli per il [rendering](../../design/spatial-mapping.md#rendering) e la [Raycasting fisica e il conflitto](../../design/spatial-mapping.md#raycasting-and-collision).
   - Un dettaglio importante da tenere presente è che è necessario applicare una scala alle posizioni dei vertici della mesh, ad esempio nel vertex shader usato per il rendering delle mesh, per convertirle dalle unità Integer ottimizzate in cui sono archiviate nel buffer, ai contatori. È possibile recuperare questa scala chiamando [VertexPositionScale](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.vertexpositionscale.aspx).
 
 ### <a name="troubleshooting"></a>Risoluzione dei problemi
@@ -84,11 +84,11 @@ Quando si sviluppa un'applicazione con queste API, il flusso del programma di ba
 
 L'esempio di codice di [mapping spaziale olografico](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping) include codice che è possibile usare per iniziare a caricare mesh di superficie nell'app, inclusa l'infrastruttura per la gestione e il rendering di mesh di superficie.
 
-A questo punto, viene illustrato come aggiungere la funzionalità di mapping della superficie all'app DirectX. È possibile aggiungere questo codice al progetto di [modello di app Windows olografico](creating-a-holographic-directx-project.md) oppure è possibile seguire l'esempio di codice riportato in precedenza. Questo esempio di codice è basato sul modello di app olografico di Windows.
+A questo punto, viene illustrato come aggiungere funzionalità di mapping di superficie all'app DirectX. È possibile aggiungere questo codice al progetto di [modello di app Windows olografico](creating-a-holographic-directx-project.md) oppure è possibile seguire l'esempio di codice riportato in precedenza. Questo esempio di codice è basato sul modello di app olografico di Windows.
 
 ### <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>Configurare l'app per l'uso della funzionalità spatialPerception
 
-L'app deve essere in grado di usare la funzionalità di mapping spaziale. Questa operazione è necessaria perché la mesh spaziale è una rappresentazione dell'ambiente dell'utente, che può essere considerato dati privati. Dichiarare questa funzionalità nel file Package. appxmanifest per l'app. Ecco un esempio:
+L'app può usare la funzionalità di mapping spaziale. Questa operazione è necessaria perché la mesh spaziale è una rappresentazione dell'ambiente dell'utente, che può essere considerato dati privati. Dichiarare questa funzionalità nel file Package. appxmanifest per l'app. Ecco un esempio:
 
 ```xml
 <Capabilities>
@@ -110,7 +110,7 @@ La funzionalità deriva dallo spazio dei nomi **uap2** . Per ottenere l'accesso 
 
 ### <a name="check-for-spatial-mapping-feature-support"></a>Verificare il supporto della funzionalità di mapping spaziale
 
-La realtà mista di Windows supporta un'ampia gamma di dispositivi, inclusi i dispositivi che non supportano il mapping spaziale. Se l'app può usare il mapping spaziale o deve usare il mapping spaziale per fornire funzionalità, deve verificare che il mapping spaziale sia supportato prima di provare a usarlo. Se, ad esempio, il mapping spaziale è richiesto dall'app per la realtà mista, viene visualizzato un messaggio in tal senso se un utente prova a eseguirlo su un dispositivo senza mapping spaziale. In alternativa, l'app potrebbe essere in grado di eseguire il rendering del proprio ambiente virtuale al posto dell'ambiente dell'utente, offrendo un'esperienza simile a quella che sarebbe accaduto se fosse disponibile il mapping spaziale. In ogni caso, questa API consente all'app di essere a conoscenza del momento in cui non otterrà dati di mapping spaziali e risponderà nel modo appropriato.
+La realtà mista di Windows supporta un'ampia gamma di dispositivi, inclusi i dispositivi, che non supportano il mapping spaziale. Se l'app può usare il mapping spaziale o deve usare il mapping spaziale per fornire funzionalità, deve verificare che il mapping spaziale sia supportato prima di provare a usarlo. Se, ad esempio, il mapping spaziale è richiesto dall'app per la realtà mista, viene visualizzato un messaggio in tal senso se un utente prova a eseguirlo su un dispositivo senza mapping spaziale. In alternativa, l'app può eseguire il rendering del proprio ambiente virtuale al posto dell'ambiente dell'utente, offrendo un'esperienza simile a quella che verrebbe eseguita se il mapping spaziale fosse disponibile. In ogni caso, questa API consente all'app di essere a conoscenza di quando non ottiene i dati di mapping spaziale e risponde nel modo appropriato.
 
 Per controllare il dispositivo corrente per il supporto del mapping spaziale, verificare prima di tutto che il contratto UWP sia al livello 4 o superiore, quindi chiamare SpatialSurfaceObserver:: di supporto (). Di seguito viene illustrato come eseguire questa operazione nel contesto dell'esempio di codice di [mapping spaziale olografico](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping) . Il supporto viene verificato immediatamente prima di richiedere l'accesso.
 
@@ -136,7 +136,7 @@ if (m_surfaceObserver == nullptr)
            /// etc ...
 ```
 
-Si noti che quando il contratto UWP è inferiore al livello 4, l'app deve continuare come se il dispositivo fosse in grado di eseguire il mapping spaziale.
+Quando il contratto UWP è inferiore al livello 4, l'app deve continuare come se il dispositivo fosse in grado di eseguire il mapping spaziale.
 
 ### <a name="request-access-to-spatial-mapping-data"></a>Richiedere l'accesso ai dati di mapping spaziale
 
@@ -161,7 +161,7 @@ initSurfaceObserverTask.then([this, coordinateSystem](Windows::Perception::Spati
 
 Lo spazio dei nomi **Windows::P erception:: Spatial:: Surfaces** include la classe [SpatialSurfaceObserver](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.aspx) , che osserva uno o più volumi specificati in un [SpatialCoordinateSystem](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.aspx). Usare un'istanza di [SpatialSurfaceObserver](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.aspx) per accedere ai dati di Surface Mesh in tempo reale.
 
-Da **AppMain. h** :
+Da **AppMain. h**:
 
 ```cpp
 // Obtains surface mapping data from the device in real time.
@@ -201,7 +201,7 @@ Successivamente, è necessario configurare l'osservatore della superficie per os
         m_surfaceObserver->SetBoundingVolume(bounds);
 ```
 
-Si noti che è invece possibile impostare più volumi di delimitazione.
+È invece possibile impostare più volumi di delimitazione.
 
 *Si tratta di pseudocodice:*
 
@@ -219,11 +219,11 @@ m_surfaceObserver->SetBoundingVolume(
             );
 ```
 
-Se l'app deve eseguire operazioni in modo diverso quando i dati di mapping di superficie non sono disponibili, è possibile scrivere codice per rispondere al caso in cui [SpatialPerceptionAccessStatus](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialperceptionaccessstatus.aspx) non è **consentito** , ad esempio, non sarà consentito nei PC con dispositivi immersivi collegati perché i dispositivi non hanno hardware per il mapping spaziale. Per questi dispositivi, è invece necessario basarsi sulla fase spaziale per ottenere informazioni sull'ambiente e la configurazione del dispositivo dell'utente.
+Se l'app deve eseguire operazioni in modo diverso quando i dati di mapping di superficie non sono disponibili, è possibile scrivere codice per rispondere al caso in cui il [SpatialPerceptionAccessStatus](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialperceptionaccessstatus.aspx) non è **consentito** , ad esempio, non sarà consentito nei PC con dispositivi immersivi collegati perché i dispositivi non hanno hardware per il mapping spaziale. Per questi dispositivi, è invece necessario basarsi sulla fase spaziale per ottenere informazioni sull'ambiente e la configurazione del dispositivo dell'utente.
 
 ### <a name="initialize-and-update-the-surface-mesh-collection"></a>Inizializzare e aggiornare la raccolta Surface Mesh
 
-Se l'osservatore della superficie è stato creato correttamente, è possibile procedere con l'inizializzazione della raccolta di mesh della superficie. Qui viene usata l'API del modello pull per ottenere immediatamente il set corrente di superfici osservate:
+Se l'osservatore della superficie è stato creato correttamente, è possibile continuare a inizializzare la raccolta di mesh della superficie. Qui viene usata l'API del modello pull per ottenere immediatamente il set corrente di superfici osservate:
 
 ```cpp
 auto mapContainingSurfaceCollection = m_surfaceObserver->GetObservedSurfaces();
@@ -317,7 +317,7 @@ Il recupero delle informazioni sulla mesh della superficie è semplice quanto il
 
 Nell'esempio di codice si è scelto di usare le mesh di superficie per il rendering. Si tratta di uno scenario comune per gli ologrammi occlusione dietro le superfici reali. È anche possibile eseguire il rendering delle mesh o eseguire il rendering delle versioni elaborate di tali mesh per mostrare all'utente quali aree della chat vengono analizzate prima di iniziare a fornire funzionalità per app o giochi.
 
-L'esempio di codice avvia il processo quando riceve gli aggiornamenti di Surface Mesh dal gestore eventi descritto nella sezione precedente. La riga di codice importante in questa funzione è la chiamata a Update the Surface *mesh* : da questo momento abbiamo già elaborato le informazioni di mesh e stiamo per ottenere i dati relativi ai vertici e agli indici da usare nel modo appropriato.
+L'esempio di codice avvia il processo quando riceve gli aggiornamenti di Surface Mesh dal gestore eventi descritto nella sezione precedente. La riga di codice importante in questa funzione è la chiamata a Update the Surface *mesh*: da questo momento abbiamo già elaborato le informazioni di mesh e stiamo per ottenere i dati relativi ai vertici e agli indici da usare nel modo appropriato.
 
 Da RealtimeSurfaceMeshRenderer. cpp:
 
@@ -339,7 +339,7 @@ void RealtimeSurfaceMeshRenderer::AddOrUpdateSurface(Guid id, SpatialSurfaceInfo
 }
 ```
 
-Il codice di esempio è progettato in modo che una classe di dati, **SurfaceMesh** , gestisca l'elaborazione e il rendering dei dati di rete. Questi mesh sono gli elementi di cui **RealtimeSurfaceMeshRenderer** mantiene effettivamente una mappa. Ognuno di essi contiene un riferimento al SpatialSurfaceMesh da cui proviene e viene usato ogni volta che è necessario accedere al vertice mesh o ai buffer di indice oppure ottenere una trasformazione per la mesh. Per il momento, la mesh viene contrassegnata in modo da richiedere un aggiornamento.
+Il codice di esempio è progettato in modo che una classe di dati, **SurfaceMesh**, gestisca l'elaborazione e il rendering dei dati di rete. Questi mesh sono gli elementi di cui **RealtimeSurfaceMeshRenderer** mantiene effettivamente una mappa. Ognuno di essi contiene un riferimento al SpatialSurfaceMesh da cui proviene, quindi è possibile usarlo ogni volta che è necessario accedere al vertex mesh o ai buffer di indice oppure ottenere una trasformazione per la mesh. Per il momento, la mesh viene contrassegnata in modo da richiedere un aggiornamento.
 
 Da SurfaceMesh. cpp:
 
@@ -454,9 +454,9 @@ void SurfaceMesh::UpdateTransform(
 }
 ```
 
-Quando è il momento di eseguire il rendering delle mesh della superficie, le operazioni di preparazione vengono eseguite prima del rendering della raccolta. Viene configurata la pipeline dello shader per la configurazione di rendering corrente e viene configurata la fase dell'assembler di input. Si noti che la classe helper della fotocamera olografica **CameraResources. cpp** ha già configurato il buffer costante di visualizzazione/proiezione da ora.
+Quando è il momento di eseguire il rendering delle mesh della superficie, le operazioni di preparazione vengono eseguite prima del rendering della raccolta. Viene configurata la pipeline dello shader per la configurazione di rendering corrente e viene configurata la fase dell'assembler di input. La classe helper della fotocamera olografica **CameraResources. cpp** ha già configurato il buffer costante di visualizzazione/proiezione da ora.
 
-Da **RealtimeSurfaceMeshRenderer:: Render** :
+Da **RealtimeSurfaceMeshRenderer:: Render**:
 
 ```cpp
 auto context = m_deviceResources->GetD3DDeviceContext();
@@ -519,7 +519,7 @@ for (auto& pair : m_meshCollection)
 
 Le singole mesh sono responsabili della configurazione del buffer di Vertex e index buffer, stride e della trasformazione del modello. Come per il cubo rotante nel modello di app olografico di Windows, viene eseguito il rendering nei buffer stereoscopici usando le istanze.
 
-Da **SurfaceMesh::D RAW** :
+Da **SurfaceMesh::D RAW**:
 
 ```cpp
 // The vertices are provided in {vertex, normal} format
@@ -661,7 +661,7 @@ else
 
 È anche possibile creare solo le mesh della superficie nei buffer di visualizzazione stereo. Abbiamo scelto di creare i visi completi con l'illuminazione, ma è possibile creare wireframe, elaborare mesh prima del rendering, applicare una mappa di trama e così via.
 
-Qui, l'esempio di codice indica al renderer mesh di creare la raccolta. Questa volta non viene specificato un passaggio di sola profondità, quindi si collegherà una pixel shader e si completerà la pipeline di rendering usando le destinazioni specificate per la fotocamera virtuale corrente.
+Qui, l'esempio di codice indica al renderer mesh di creare la raccolta. Questa volta non viene specificato un passaggio di solo profondità, verrà collegato un pixel shader e verrà completata la pipeline di rendering usando le destinazioni specificate per la fotocamera virtuale corrente.
 
 ```cpp
 // Spatial Mapping mesh rendering pass: Draw Spatial Mapping mesh over the world.

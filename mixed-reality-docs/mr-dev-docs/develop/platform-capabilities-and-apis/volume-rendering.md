@@ -6,12 +6,12 @@ ms.author: kkennedy
 ms.date: 03/21/2018
 ms.topic: article
 keywords: immagine volumetrica, rendering del volume, prestazioni, realtà mista
-ms.openlocfilehash: 6dbb49c31761d4b7b9da5060d15763c3925be754
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c0b68a2368823e5699e24d66bfafe1e4e05bdce8
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683394"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612945"
 ---
 # <a name="volume-rendering"></a>Rendering dei volumi
 
@@ -23,11 +23,11 @@ Soluzioni principali per migliorare le prestazioni
 3. BENE: riduzione del volume secondario: Mostra solo pochi livelli del volume
 4. BENE: abbassare la risoluzione del rendering del volume (vedere il rendering di una scena di risoluzione mista)
 
-È presente una certa quantità di informazioni che possono essere trasferite dall'applicazione alla schermata in un particolare frame, ovvero la larghezza di banda totale della memoria. Inoltre, qualsiasi elaborazione (o ' ombreggiatura ') necessaria per trasformare i dati per la presentazione richiede tempo. Le considerazioni principali per il rendering del volume sono le seguenti:
-* Screen-width * screen-height * screen-count * volume-layers-on-that-pixel = Total-volume-Samples-per-frame
+È disponibile solo una certa quantità di informazioni che possono essere trasferite dall'applicazione alla schermata in un particolare frame, ovvero la larghezza di banda totale della memoria. Inoltre, qualsiasi elaborazione (o ' ombreggiatura ') necessaria per trasformare i dati per la presentazione richiede tempo. Le considerazioni principali per il rendering del volume sono le seguenti:
+* Screen-Width * Screen-Height * Screen-Count * volume-layers-on-that-pixel = Total-volume-Samples-per-frame
 * 1028 * 720 * 2 * 256 = 378961920 (100%) (volume res completo: troppi esempi)
 * 1028 * 720 * 2 * 1 = 1480320 (0,3% of Full) (slice sottile: 1 campione per pixel, esecuzione senza problemi)
-* 1028 * 720 * 2 * 10 = 14803200 (3,9% della versione completa) (sezione del volume secondario: 10 campioni per pixel, esecuzione abbastanza agevole, aspetto 3D)
+* 1028 * 720 * 2 * 10 = 14803200 (3,9% of Full) (sezione subvolume: 10 campioni per pixel, esecuzione abbastanza agevole, aspetto 3D)
 * 200 * 200 * 2 * 256 = 20480000 (5% di pieno) (volume res inferiore: un minor numero di pixel, un volume intero, appare 3D ma un bit sfocato)
 
 ## <a name="representing-3d-textures"></a>Rappresentazione di trame 3D
@@ -98,7 +98,7 @@ float4 ShadeVol( float intensity ) {
    color.rgba = tex2d( ColorRampTexture, float2( unitIntensity, 0 ) );
 ```
 
-In molte delle nostre applicazioni viene archiviato nel volume sia un valore di intensità RAW che un "indice di segmentazione" (per segmentare parti diverse, ad esempio Skin e Bone). questi segmenti vengono in genere creati dagli esperti in strumenti dedicati. Questa operazione può essere combinata con l'approccio precedente per inserire un colore diverso o persino una rampa di colore diversa per ogni indice di segmento:
+In molte delle nostre applicazioni viene archiviato nel volume sia un valore di intensità RAW che un "indice di segmentazione" (per segmentare parti diverse, ad esempio Skin e Bone). questi segmenti sono creati da esperti in strumenti dedicati. Questa operazione può essere combinata con l'approccio precedente per inserire un colore diverso o persino una rampa di colore diversa per ogni indice di segmento:
 
 ```
 // Change color to match segment index (fade each segment towards black):
@@ -181,7 +181,7 @@ float4 volTraceSubVolume(float3 objPosStart, float3 cameraPosVolSpace) {
 
 Come eseguire il rendering di una parte della scena con una risoluzione bassa e inserirla di nuovo:
 1. Configurare due fotocamere fuori schermo, una per seguire ogni occhio che aggiorna ogni frame
-2. Configurare due destinazioni di rendering a bassa risoluzione, ad esempio 200x200 ognuna, in cui vengono sottoposte a rendering le fotocamere
+2. Configurare due destinazioni di rendering a bassa risoluzione (ovvero 200x200 ognuna) in cui vengono sottoposte a rendering le fotocamere
 3. Configurare un quad che si sposta davanti all'utente
 
 Ogni frame:

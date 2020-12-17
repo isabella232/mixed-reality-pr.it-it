@@ -1,17 +1,17 @@
 ---
 title: Sistemi di coordinate in DirectX
-description: Spiega come usare i localizzatori spaziali di realtà mista di Windows, i frame di riferimento, gli ancoraggi spaziali e i sistemi di coordinate, come usare SpatialStage, come gestire la perdita di rilevamento, come salvare e caricare ancoraggi e come eseguire la stabilizzazione delle immagini.
+description: Informazioni sui sistemi di coordinate in DirectX e sulla realtà mista con localizzatori spaziali, frame di riferimento e ancoraggi spaziali. Usare SpatialStage e gestire la perdita di rilevamento, il salvataggio e il caricamento di ancoraggi e la stabilizzazione delle immagini.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Realtà mista, localizzatore spaziale, frame di riferimento spaziale, sistema di coordinate spaziali, fase spaziale, codice di esempio, stabilizzazione dell'immagine, ancoraggio spaziale, archivio di ancoraggio spaziale, perdita di tracce, procedura dettagliata, cuffie per realtà mista, auricolare di realtà mista, auricolare della realtà virtuale
-ms.openlocfilehash: 4ab97df0d0ce87f86b3b561edb544d503e479e96
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7bf2309f3fb6264d6b1a5232f7ead78b771c1649
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679660"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613115"
 ---
 # <a name="coordinate-systems-in-directx"></a>Sistemi di coordinate in DirectX
 
@@ -20,18 +20,18 @@ ms.locfileid: "94679660"
 
 I [sistemi di coordinate](../../design/coordinate-systems.md) costituiscono la base per la comprensione spaziale offerta dalle API per la realtà mista di Windows.
 
-Gli attuali dispositivi VR o Single-Room VR stabiliscono un sistema di coordinate primario per rappresentare lo spazio rilevato. I dispositivi di realtà mista di Windows, ad esempio HoloLens, sono progettati per essere usati in ambienti di grandi dimensioni non definiti, con l'individuazione e l'apprendimento del dispositivo in base all'ambiente in cui l'utente si aggira. Ciò consente al dispositivo di adattarsi a un miglioramento continuo delle informazioni sulle chat dell'utente, ma comporta sistemi di coordinate che cambieranno la relazione tra loro attraverso la durata dell'app. La realtà mista di Windows supporta un'ampia gamma di dispositivi, spaziando da cuffie immersive sedute attraverso frame di riferimento collegati al mondo.
+Gli attuali dispositivi VR o Single-Room VR stabiliscono un sistema di coordinate primario per lo spazio rilevato. I dispositivi di realtà mista, come HoloLens, sono progettati per ambienti non definiti di grandi dimensioni, con il dispositivo che individua e apprende le sue aree circostanti mentre l'utente si aggira. Il dispositivo si adatta al continuo miglioramento delle informazioni sulle chat degli utenti, ma comporta la modifica delle relazioni tra i sistemi di coordinazione e la durata delle app. La realtà mista di Windows supporta un'ampia gamma di dispositivi, spaziando da cuffie immersive sedute attraverso frame di riferimento collegati al mondo.
 
 >[!NOTE]
 >I frammenti di codice in questo articolo illustrano attualmente l'uso di C++/CX anziché C + 17 conforme a C++/WinRT come usato nel [modello di progetto olografico c++](creating-a-holographic-directx-project.md).  I concetti sono equivalenti per un progetto C++/WinRT, anche se sarà necessario tradurre il codice.
 
 ## <a name="spatial-coordinate-systems-in-windows"></a>Sistemi di coordinate spaziali in Windows
 
-Il tipo di base usato per ragionare sui sistemi di coordinate reali in Windows è <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>. Un'istanza di questo tipo rappresenta un sistema di coordinate arbitrario e fornisce un metodo per ottenere una matrice di trasformazione che è possibile utilizzare per trasformare tra due sistemi di coordinate senza comprenderne i dettagli.
+Il tipo di base usato per ragionare sui sistemi di coordinate reali in Windows è <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>. Un'istanza di questo tipo rappresenta un sistema di coordinate arbitrario, che fornisce un metodo per ottenere i dati della matrice di trasformazione che è possibile utilizzare per trasformare tra due sistemi di coordinate senza comprenderne i dettagli.
 
-I metodi che restituiscono le informazioni spaziali, rappresentate come punti, raggi o volumi nell'ambiente dell'utente, accetteranno un parametro SpatialCoordinateSystem per consentire di decidere il sistema di coordinate in cui è più utile per le coordinate da restituire. Le unità per queste coordinate saranno sempre espresse in metri.
+I metodi che restituiscono informazioni spaziali accetteranno un parametro SpatialCoordinateSystem per consentire di decidere il sistema di coordinate in cui è più utile per le coordinate da restituire. Le informazioni spaziali sono rappresentate come punti, raggi o volumi nell'ambiente dell'utente e le unità per queste coordinate saranno sempre in metri.
 
-Un SpatialCoordinateSystem ha una relazione dinamica con altri sistemi di coordinate, inclusi quelli che rappresentano la posizione del dispositivo. In qualsiasi momento, il dispositivo potrebbe essere in grado di individuare alcuni sistemi di coordinate e non altri. Per la maggior parte dei sistemi di coordinate, l'app deve essere pronta per gestire i periodi di tempo durante i quali non possono essere individuati.
+Un SpatialCoordinateSystem ha una relazione dinamica con altri sistemi di coordinate, inclusi quelli che rappresentano la posizione del dispositivo. In qualsiasi momento, il dispositivo può individuare alcuni sistemi di coordinate e non altri. Per la maggior parte dei sistemi di coordinate, l'app deve essere pronta per gestire i periodi di tempo durante i quali non possono essere individuati.
 
 L'applicazione non deve creare direttamente SpatialCoordinateSystems, bensì deve essere usata tramite le API percettive. Nelle API percettive sono disponibili tre fonti principali di sistemi di coordinate, ciascuna delle quali è mappata a un concetto descritto nella pagina [sistemi di coordinate](../../design/coordinate-systems.md) :
 * Per ottenere un frame di riferimento fisso, creare un <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstationaryframeofreference" target="_blank">SpatialStationaryFrameOfReference</a> o ottenerne uno dalla <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference" target="_blank">SpatialStageFrameOfReference</a>corrente.
@@ -43,11 +43,17 @@ Tutti i sistemi di coordinate restituiti da questi oggetti vengono gestiti a des
 ![Sistemi di coordinate a sinistra e a destra](images/left-hand-right-hand.gif)<br>
 *Sistemi di coordinate a sinistra e a destra*
 
-Per eseguire il bootstrap in un SpatialCoordinateSystem in base alla posizione di un HoloLens, usare la classe <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a> per creare un frame di riferimento collegato o fisso, come descritto nelle sezioni riportate di seguito.
+Usare la classe <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a> per creare un frame di riferimento collegato o stazionario per eseguire il bootstrap in un SpatialCoordinateSystem in base alla posizione del HoloLens. Continuare con la sezione successiva per altre informazioni su questo processo.
 
 ## <a name="place-holograms-in-the-world-using-a-spatial-stage"></a>Posizionare gli ologrammi in tutto il mondo usando una fase spaziale
 
-Il sistema di coordinate per gli auricolari a realtà mista di Windows opaco si accede usando la proprietà <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current" target="_blank">SpatialStageFrameOfReference:: Current</a> statica. Questa API fornisce un sistema di coordinate, informazioni sul fatto che il lettore sia seduto o mobile, il limite di un'area sicura per spostarsi se il lettore è mobile e indica se l'auricolare è direzionale o meno. Per gli aggiornamenti della fase spaziale è inoltre disponibile un gestore eventi.
+Il sistema di coordinate per gli auricolari a realtà mista di Windows opaco si accede usando la proprietà <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current" target="_blank">SpatialStageFrameOfReference:: Current</a> statica. Questa API fornisce:
+
+* Sistema di coordinate
+* Informazioni sul fatto che il lettore sia seduto o mobile
+* Il limite di un'area sicura per spostarsi se il lettore è mobile
+* Indica se l'auricolare è direzionale. 
+* Gestore eventi per gli aggiornamenti alla fase spaziale.
 
 Prima di tutto, si ottiene la fase spaziale e si sottoscrive la sottoscrizione degli aggiornamenti: 
 
@@ -68,7 +74,7 @@ SpatialStageManager::SpatialStageManager(
 }
 ```
 
-Nel metodo OnCurrentChanged l'app deve esaminare la fase spaziale e aggiornare di conseguenza l'esperienza del lettore. In questo esempio viene fornita una visualizzazione del limite della fase, nonché la posizione iniziale specificata dall'utente e l'intervallo di visualizzazione e l'intervallo di proprietà dello spostamento della fase. Viene anche eseguito il fallback al nostro sistema di coordinate fisse, quando non è possibile fornire una fase.
+Nel metodo OnCurrentChanged l'app deve esaminare la fase spaziale e aggiornare l'esperienza del lettore. In questo esempio viene fornita una visualizzazione del limite della fase e la posizione iniziale specificata dall'utente e l'intervallo di visualizzazione e l'intervallo di proprietà dello spostamento della fase. Viene anche eseguito il fallback al nostro sistema di coordinate fisse, quando non è possibile fornire una fase.
 
 
 Codice per l'aggiornamento di una **fase spaziale**
@@ -175,7 +181,7 @@ void SpatialStageManager::OnCurrentChanged(Object^ /*o*/)
 }
 ```
 
-Il set di vertici che definiscono i limiti della fase vengono forniti in ordine orario. La shell di realtà mista di Windows disegna una recinzione al limite quando l'utente lo avvicina; è possibile che si desideri triangularize l'area a cui è possibile passare per i propri scopi. L'algoritmo seguente può essere usato per triangularize la fase.
+Il set di vertici che definiscono i limiti della fase vengono forniti in ordine orario. La shell della realtà mista di Windows disegna una recinzione al confine quando l'utente si avvicina, ma è consigliabile triangularize l'area a cui è possibile passare per i propri scopi. L'algoritmo seguente può essere usato per triangularize la fase.
 
 
 Codice per la **triangolazione della fase spaziale**
@@ -304,9 +310,9 @@ Gli [ancoraggi spaziali](../../design/coordinate-systems.md#spatial-anchors) son
 
 È possibile creare un SpatialAnchor in qualsiasi posizione e orientamento all'interno della SpatialCoordinateSystem scelta. Il dispositivo deve essere in grado di individuare il sistema di coordinate al momento e il sistema non deve avere raggiunto il limite di ancoraggi spaziali.
 
-Una volta definito, il sistema di coordinate di un SpatialAnchor si adatta continuamente per mantenere la posizione e l'orientamento precisi della posizione iniziale. È quindi possibile usare questo SpatialAnchor per eseguire il rendering degli ologrammi che appariranno corretti negli ambienti dell'utente nella posizione esatta.
+Una volta definito, il sistema di coordinate di un SpatialAnchor si adatta continuamente per tenere la posizione e l'orientamento precisi della posizione iniziale. È quindi possibile usare questo SpatialAnchor per eseguire il rendering degli ologrammi che appariranno corretti negli ambienti dell'utente nella posizione esatta.
 
-Gli effetti delle rettifiche che mantengono l'ancoraggio sul posto vengono ingranditi come distanza dall'ancoraggio. Pertanto, è consigliabile evitare di eseguire il rendering del contenuto relativo a un ancoraggio maggiore di circa 3 metri dall'origine dell'ancoraggio.
+Gli effetti delle rettifiche che mantengono l'ancoraggio sul posto vengono ingranditi come distanza dall'ancoraggio. È consigliabile evitare di eseguire il rendering del contenuto relativo a un ancoraggio superiore a circa 3 metri dall'origine dell'ancoraggio.
 
 La proprietà [CoordinateSystem](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.coordinatesystem.aspx) ottiene un sistema di coordinate che consente di posizionare il contenuto relativo all'ancoraggio, con l'interpolazione applicata quando il dispositivo regola la posizione esatta dell'ancoraggio.
 
@@ -316,9 +322,9 @@ Utilizzare la proprietà [RawCoordinateSystem](https://msdn.microsoft.com/librar
 
 È possibile salvare in locale una SpatialAnchor usando la classe [SpatialAnchorStore](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchorstore.aspx) e quindi riportarla in una sessione di app futura nello stesso dispositivo HoloLens.
 
-Usando gli <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">ancoraggi spaziali di Azure</a>, è possibile creare un ancoraggio cloud durevole da un SpatialAnchor locale, che può essere individuato dall'app su più dispositivi HoloLens, iOS e Android.  Condividendo un ancoraggio spaziale comune tra più dispositivi, ogni utente può visualizzare il contenuto di cui è stato eseguito il rendering relativo a tale ancoraggio nella stessa posizione fisica.  Ciò rende possibili esperienze condivise in tempo reale.
+Usando gli <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">ancoraggi spaziali di Azure</a>, è possibile creare un ancoraggio cloud durevole da un SpatialAnchor locale, che può essere individuato dall'app su più dispositivi HoloLens, iOS e Android.  Condividendo un ancoraggio spaziale comune tra più dispositivi, ogni utente può visualizzare il contenuto di cui è stato eseguito il rendering relativo a tale ancoraggio nella stessa posizione fisica in tempo reale. 
 
-Puoi usare <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Ancoraggi nello spazio di Azure</a> anche per la persistenza asincrona degli ologrammi su dispositivi HoloLens, iOS e Android.  Condividendo un ancoraggio durevole nello spazio del cloud, più dispositivi possono osservare nel tempo lo stesso ologramma salvato in modo permanente, anche se tali dispositivi non sono presenti insieme contemporaneamente.
+È anche possibile usare gli <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">ancoraggi spaziali di Azure</a> per la persistenza ologramma asincrona nei dispositivi HoloLens, iOS e Android.  Grazie alla condivisione di un ancoraggio spaziale cloud durevole, più dispositivi possono osservare lo stesso ologramma persistente nel tempo, anche se i dispositivi non sono presenti contemporaneamente.
 
 Per iniziare a creare esperienze condivise nell'app HoloLens, provare la <a href="https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">Guida introduttiva di Azure Spatial Anchors HoloLens</a>di 5 minuti.
 
@@ -328,9 +334,10 @@ Una volta che si è in esecuzione con gli ancoraggi spaziali di Azure, è possib
 
 Per questo esempio di codice, il modello di applicazione Windows olografico è stato modificato per creare ancoraggi quando viene rilevato il movimento **premuto** . Il cubo viene quindi inserito in corrispondenza dell'ancoraggio durante il passaggio di rendering.
 
-Poiché più ancoraggi sono supportati dalla classe helper, è possibile inserire tutti i cubi desiderati usando questo esempio di codice.
+Poiché più ancoraggi sono supportati dalla classe helper, è possibile inserire tutti i cubi che si vuole usare per questo esempio di codice.
 
-Si noti che gli ID per gli ancoraggi sono elementi che è possibile controllare nell'app. In questo esempio è stato creato uno schema di denominazione sequenziale in base al numero di ancoraggi attualmente archiviati nella raccolta di ancoraggi dell'app.
+> [!NOTE]
+> Gli ID per gli ancoraggi sono elementi che è possibile controllare nell'app. In questo esempio è stato creato uno schema di denominazione sequenziale in base al numero di ancoraggi attualmente archiviati nella raccolta di ancoraggi dell'app.
 
 ```
    // Check for new input state since the last frame.
@@ -486,11 +493,11 @@ Quando si è pronti per provare a salvare gli ancoraggi in memoria in SpatialAnc
 
 ### <a name="load-content-from-the-anchor-store-when-the-app-resumes"></a>Carica il contenuto dall'archivio di ancoraggio quando l'app riprende
 
-Quando l'app riprende o in qualsiasi altro momento necessario per il implementaiton dell'app, è possibile ripristinare gli ancoraggi salvati in precedenza nel AnchorStore trasferendo i file dal IMapView dell'archivio di ancoraggio nel database in memoria di SpatialAnchors.
+È possibile ripristinare gli ancoraggi salvati in AnchorStore trasferendo i file da IMapView dell'archivio di ancoraggio nel database in memoria di SpatialAnchors quando l'app riprende o in qualsiasi momento.
 
 Per ripristinare gli ancoraggi dal SpatialAnchorStore, ripristinare ognuno di essi interessato alla raccolta in memoria.
 
-È necessario un database in memoria personalizzato di SpatialAnchors; un modo per associare le stringhe al SpatialAnchors creato. Nel codice di esempio si sceglie di usare Windows:: Foundation:: Collections:: IMap per archiviare gli ancoraggi, che semplifica l'uso della stessa chiave e del valore di dati per SpatialAnchorStore.
+È necessario un database in memoria personalizzato di SpatialAnchors per associare le stringhe al SpatialAnchors creato. Nel codice di esempio si sceglie di usare Windows:: Foundation:: Collections:: IMap per archiviare gli ancoraggi, che semplifica l'uso della stessa chiave e del valore di dati per SpatialAnchorStore.
 
 ```
    // This is an in-memory anchor list that is separate from the anchor store.
@@ -554,7 +561,7 @@ Con la classe helper è quasi inutile eseguire il wrapping della funzione Clear.
 
 ### <a name="example-relating-anchor-coordinate-systems-to-stationary-reference-frame-coordinate-systems"></a>Esempio: correlazione di sistemi di coordinate di ancoraggio a sistemi di coordinate dei frame di riferimento stazionari
 
-Supponiamo di avere un ancoraggio e di voler mettere in relazione un elemento del sistema di coordinate dell'ancoraggio alla SpatialStationaryReferenceFrame che si sta già usando per la maggior parte degli altri contenuti. È possibile usare [TryGetTransformTo](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.trygettransformto.aspx) per ottenere una trasformazione dal sistema di coordinate dell'ancoraggio a quello del frame di riferimento fisso:
+Supponiamo di avere un ancoraggio e di voler mettere in relazione un elemento del sistema di coordinate dell'ancoraggio alla SpatialStationaryReferenceFrame già in uso per l'altro contenuto. È possibile usare [TryGetTransformTo](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.trygettransformto.aspx) per ottenere una trasformazione dal sistema di coordinate dell'ancoraggio a quello del frame di riferimento fisso:
 
 ```
    // In this code snippet, someAnchor is a SpatialAnchor^ that has been initialized and is valid in the current environment.
@@ -579,17 +586,17 @@ Per il rendering, è spesso possibile ottenere risultati migliori raggruppando g
 
 In alcuni casi si vuole eseguire il rendering di un ologramma che [rimane collegato](../../design/coordinate-systems.md#attached-frame-of-reference) alla posizione del dispositivo, ad esempio un pannello con informazioni di debug o un messaggio informativo quando il dispositivo è in grado di determinare solo l'orientamento e non la posizione nello spazio. A tale scopo, viene usato un frame di riferimento allegato.
 
-La classe SpatialLocatorAttachedFrameOfReference definisce i sistemi di coordinate relativi al dispositivo anziché al mondo reale. Questo frame dispone di un'intestazione fissa rispetto all'area circostante dell'utente che punta alla posizione in cui l'utente si trovava al momento della creazione del frame di riferimento. Da questo punto in poi, tutti gli orientamenti in questo frame di riferimento sono relativi a tale intestazione fissa, anche quando l'utente ruota il dispositivo.
+La classe SpatialLocatorAttachedFrameOfReference definisce i sistemi di coordinate, che sono relativi al dispositivo anziché al mondo reale. Questo frame dispone di un'intestazione fissa rispetto all'area circostante dell'utente che punta alla posizione in cui l'utente si trovava al momento della creazione del frame di riferimento. Da questo punto in poi, tutti gli orientamenti in questo frame di riferimento sono relativi a tale intestazione fissa, anche quando l'utente ruota il dispositivo.
 
 Per HoloLens, l'origine del sistema di coordinate del frame si trova al centro della rotazione della testa dell'utente, in modo che la relativa posizione non sia interessata dalla rotazione della testa. L'app può specificare un offset rispetto a questo punto per posizionare gli ologrammi davanti all'utente.
 
 Per ottenere un SpatialLocatorAttachedFrameOfReference, usare la classe SpatialLocator e chiamare CreateAttachedFrameOfReferenceAtCurrentHeading.
 
-Si noti che questo vale per l'intero intervallo di dispositivi di realtà mista di Windows.
+Si applica all'intera gamma di dispositivi di realtà mista di Windows.
 
 ### <a name="use-a-reference-frame-attached-to-the-device"></a>Usare un frame di riferimento collegato al dispositivo
 
-In queste sezioni vengono illustrate le modifiche apportate al modello di app olografico di Windows per abilitare un frame di riferimento collegato al dispositivo tramite questa API. Si noti che questo ologramma "collegato" funziona insieme a ologrammi fissi o ancorati e può essere usato anche quando il dispositivo non è temporaneamente in grado di trovare la propria posizione nel mondo.
+In queste sezioni vengono illustrate le modifiche apportate al modello di app olografico di Windows per abilitare un frame di riferimento collegato al dispositivo tramite questa API. Questo ologramma "collegato" funziona insieme a ologrammi fissi o ancorati e può essere usato anche quando il dispositivo non è temporaneamente in grado di trovare la propria posizione nel mondo.
 
 In primo luogo, il modello è stato modificato per archiviare un SpatialLocatorAttachedFrameOfReference anziché un SpatialStationaryFrameOfReference:
 
@@ -627,7 +634,7 @@ SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordina
 
 Questo SpatialPointerPose contiene le informazioni necessarie per posizionare l'ologramma in base all' [intestazione corrente dell'utente](gaze-in-directx.md).
 
-Per motivi di comodità dell'utente, viene usata l'interpolazione lineare ("Lerp") per smussare la modifica nella posizione in modo tale che si verifichi in un determinato periodo di tempo. Si tratta di un'operazione più comoda per l'utente rispetto al blocco degli ologrammi. Lerping la posizione dell'ologramma tag-along consente anche di stabilizzare l'ologramma smorzando il movimento; Se questa operazione non è stata eseguita, l'utente vedrà la jitter dell'ologramma a causa di ciò che in genere è considerato un movimento impercettibile della testa dell'utente.
+Per la comodità degli utenti, viene usata l'interpolazione lineare ("Lerp") per smussare la modifica della posizione in un periodo di tempo. Si tratta di un'operazione più comoda per l'utente rispetto al blocco degli ologrammi. Lerping la posizione dell'ologramma tag-along consente anche di stabilizzare l'ologramma smorzando il movimento. Se questa operazione non è stata eseguita, l'utente vedrà la jitter dell'ologramma a causa di ciò che in genere è considerato un movimento impercettibile della testa dell'utente.
 
 Da **StationaryQuadRenderer::P ositionhologram**:
 
@@ -654,7 +661,7 @@ Da **StationaryQuadRenderer::P ositionhologram**:
 ```
 
 >[!NOTE]
->Nel caso di un pannello di debug, è possibile scegliere di riposizionare l'ologramma sul lato leggermente, in modo che non ostacoli la visualizzazione. Ecco un esempio di come è possibile eseguire questa operazione.
+>Nel caso di un pannello di debug, è possibile scegliere di riposizionare l'ologramma sul lato leggermente, in modo da non ostacolare la visualizzazione. Ecco un esempio di come è possibile eseguire questa operazione.
 
 Per **StationaryQuadRenderer::P ositionhologram**:
 
@@ -671,7 +678,7 @@ Per **StationaryQuadRenderer::P ositionhologram**:
 
 ### <a name="rotate-the-hologram-to-face-the-camera"></a>Ruotare l'ologramma per far fronte alla fotocamera
 
-Non è sufficiente posizionare semplicemente l'ologramma, che in questo caso è un quad; è anche necessario ruotare l'oggetto per far fronte all'utente. Si noti che questa rotazione si verifica nello spazio globale, perché questo tipo di tabellone consente all'ologramma di rimanere parte dell'ambiente dell'utente. Il tabellone degli spazi di visualizzazione non è altrettanto comodo perché l'ologramma viene bloccato sull'orientamento della visualizzazione. in tal caso, è anche necessario interpolare tra le matrici di visualizzazione a sinistra e a destra per acquisire una trasformazione di Billboard dello spazio di visualizzazione che non interrompa il rendering stereo. In questo caso, gli assi X e Z vengono ruotati in modo da far fronte all'utente.
+Non è sufficiente posizionare l'ologramma, che in questo caso è un quad; è anche necessario ruotare l'oggetto per far fronte all'utente. Questa rotazione si verifica nello spazio globale, perché questo tipo di tabellone consente all'ologramma di rimanere parte dell'ambiente dell'utente. Il tabellone degli spazi di visualizzazione non è altrettanto comodo perché l'ologramma viene bloccato sull'orientamento della visualizzazione. in tal caso, è anche necessario interpolare tra le matrici di visualizzazione a sinistra e a destra per acquisire una trasformazione del cartellone dello spazio di visualizzazione che non interrompe il rendering stereo. In questo caso, gli assi X e Z vengono ruotati in modo da far fronte all'utente.
 
 Da **StationaryQuadRenderer:: Update**:
 
@@ -733,7 +740,7 @@ Da **HolographicTagAlongSampleMain:: Render**:
        );
 ```
 
-L'operazione è terminata. L'ologramma ora "inseguisce" una posizione che è di 2 metri davanti alla direzione dello sguardo dell'utente.
+Ecco fatto! L'ologramma ora "inseguisce" una posizione che è di 2 metri davanti alla direzione dello sguardo dell'utente.
 
 >[!NOTE]
 >Questo esempio carica anche contenuto aggiuntivo. vedere StationaryQuadRenderer. cpp.

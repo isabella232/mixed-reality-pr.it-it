@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: DirectX, rendering olografico, nativo, app nativa, WinRT, app WinRT, API della piattaforma, motore personalizzato, middleware, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 0d5e364fdb4faac73f28649f5c009823a74ac595
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 493715660ff8df79df25e09c82fe48b863053ed3
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679650"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613075"
 ---
 # <a name="native-development-overview"></a>Panoramica dello sviluppo nativo
 
 ![Logo banner nativo](../images/native_logo_banner.png)
 
-i motori 3D come [Unity](../unity/unity-development-overview.md) o [Unreal](../unreal/unreal-development-overview.md) non sono gli unici percorsi di sviluppo di realtà mista aperti. È anche possibile creare app per realtà mista codificando direttamente le API per la realtà mista di Windows con DirectX 11 o DirectX 12. Sfruttando la piattaforma direttamente, si crea essenzialmente un middleware o un Framework personalizzato. 
+i motori 3D come [Unity](../unity/unity-development-overview.md) o [Unreal](../unreal/unreal-development-overview.md) non sono gli unici percorsi di sviluppo di realtà mista aperti. È anche possibile creare app per realtà mista usando le API di realtà mista di Windows con DirectX 11 o DirectX 12. Passando all'origine della piattaforma, si crea essenzialmente un middleware o un Framework personalizzato. 
 
 > [!IMPORTANT]
 > Se si vuole mantenere un progetto WinRT esistente, passare alla documentazione principale di [WinRT](creating-a-holographic-directx-project.md). 
@@ -29,10 +29,10 @@ Usare i checkpoint seguenti per trasferire i giochi e le applicazioni di Unity n
 ### <a name="1-getting-started"></a>1. Guida introduttiva
 
 La realtà mista [di Windows supporta due tipi di app](../../design/app-views.md):
-* **Applicazioni a realtà mista** (UWP o Win32) che usano l'API [HOLOGRAPHICSPACE](getting-a-holographicspace.md) o l' [API OpenXR](openxr.md) per eseguire il rendering di una [visualizzazione immersiva](../../design/app-views.md) per l'utente che riempie la visualizzazione dell'auricolare
+* UWP o **applicazioni di realtà mista** Win32 che usano l'API [HOLOGRAPHICSPACE](getting-a-holographicspace.md) o l' [API OpenXR](openxr.md) per eseguire il rendering di una [visualizzazione immersiva](../../design/app-views.md) che riempie la visualizzazione dell'auricolare
 * **app 2D** (UWP) che usano DirectX, XAML o un altro Framework per eseguire il rendering di [visualizzazioni 2D](../../design/app-views.md#2d-views) in slate nella Home realtà mista di Windows
 
-Le differenze tra lo sviluppo di DirectX per le [visualizzazioni 2D e le visualizzazioni immersive](../../design/app-views.md) riguardano principalmente il rendering olografico e l'input spaziale. Il [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) dell'applicazione UWP o l'HWND dell'applicazione Win32 sono obbligatori e rimangono in gran parte uguali. Lo stesso vale per le API WinRT disponibili per l'app. È tuttavia necessario usare un subset diverso di queste API per sfruttare le funzionalità olografiche. Ad esempio, presentazione catena e frame presenti vengono gestiti dal sistema per le applicazioni olografiche allo scopo di abilitare un ciclo di frame stimato per la posa.
+Le differenze tra lo sviluppo di DirectX per le [visualizzazioni 2D e le visualizzazioni immersive](../../design/app-views.md) riguardano principalmente il rendering olografico e l'input spaziale. Il [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) dell'applicazione UWP o l'HWND dell'applicazione Win32 sono obbligatori e rimangono in gran parte uguali. Lo stesso vale per le API WinRT disponibili per l'app. È tuttavia necessario usare un subset diverso di queste API per sfruttare le funzionalità olografiche. Ad esempio, il sistema per le applicazioni olografiche gestisce presentazione catena e frame presenti per abilitare un ciclo di frame stimato per la posa.
 
 [!INCLUDE[](../includes/native-getting-started.md)]
 
@@ -54,11 +54,11 @@ Le applicazioni di realtà mista di Windows usano le API seguenti per creare esp
 
 ### <a name="3-deploying-and-testing"></a>3. distribuzione e test
 
-È possibile sviluppare app usando OpenXR in un visore VR immersive di HoloLens 2 o Windows Mixed Reality sul desktop.  Se non si ha accesso a una cuffia, è invece possibile usare l' [emulatore HoloLens 2](../platform-capabilities-and-apis/using-the-hololens-emulator.md) o il [simulatore di realtà mista di Windows](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) .
+È possibile sviluppare su un desktop usando OpenXR in un auricolare HoloLens 2 o Windows misto realtà mista.  Se non si ha accesso a una cuffia, è invece possibile usare l' [emulatore HoloLens 2](../platform-capabilities-and-apis/using-the-hololens-emulator.md) o il [simulatore di realtà mista di Windows](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) .
 
 ## <a name="whats-next"></a>Passaggi successivi
 
-Il lavoro degli sviluppatori non finisce mai, soprattutto per quanto riguarda la conoscenza di nuovi strumenti o SDK. Le sezioni seguenti consentono di affrontare aspetti più avanzati rispetto al materiale di livello principiante già completato e di accedere a risorse utili se si rimane bloccati. Questi argomenti e queste risorse non sono presentati in ordine sequenziale, quindi possono essere esplorati liberamente.
+Il lavoro di uno sviluppatore non finisce mai, soprattutto per quanto riguarda l'apprendimento di nuovi strumenti o SDK. Le sezioni seguenti consentono di accedere alle aree oltre il materiale di livello principiante già completato. Questi argomenti e risorse non sono in ordine sequenziale, quindi è possibile esplorare
 
 ### <a name="additional-resources"></a>Risorse aggiuntive
 

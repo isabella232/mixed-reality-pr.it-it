@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Rilevamento degli occhi, realtà mista, input, sguardo, calibratura, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, finalità, azioni
-ms.openlocfilehash: c6167fc48a98de8f400400475c2057a2b4773b29
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 53a44fab72d3a15df3cf5929c6ddda4fec06af71
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702587"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612865"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Tracciamento oculare in HoloLens 2
 
@@ -81,7 +81,7 @@ Si noti che questi casi d'uso non fanno ancora parte dell'esperienza della shell
 ### <a name="user-intent"></a>Operazione che l'utente intende eseguire    
 Le informazioni su dove e cosa esamina un utente forniscono un **contesto potente per altri input**, ad esempio Voice, Hands e Controllers.
 Tali informazioni possono essere usate per diverse attività.
-Questo, ad esempio, può variare da un punto di **targeting** vista rapido e semplice a quello della scena semplicemente osservando un ologramma e pronunciando *"Select"* (vedere anche lo [sguardo e il commit](gaze-and-commit.md)) o *"put this..."*, quindi esaminando il punto in cui l'utente desidera inserire l'ologramma e indicare *"... "*. Per alcuni esempi, vedi [Mixed Reality Toolkit - Selezione della destinazione con lo sguardo](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) e [Mixed Reality Toolkit - Posizionamento della destinazione con lo sguardo](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html).
+Questo, ad esempio, può variare da un punto di  vista rapido e semplice a quello della scena semplicemente osservando un ologramma e pronunciando *"Select"* (vedere anche lo [sguardo e il commit](gaze-and-commit.md)) o *"put this..."*, quindi esaminando il punto in cui l'utente desidera inserire l'ologramma e indicare *"... "*. Per alcuni esempi, vedi [Mixed Reality Toolkit - Selezione della destinazione con lo sguardo](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) e [Mixed Reality Toolkit - Posizionamento della destinazione con lo sguardo](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html).
 
 Inoltre, un esempio per finalità utente potrebbe includere l'uso di informazioni sugli elementi esaminati dagli utenti per migliorare l'engagement con agenti virtuali incorporati e ologrammi interattivi. Ad esempio, gli agenti virtuali potrebbero adattare le opzioni disponibili e il relativo comportamento, in base al contenuto attualmente visualizzato. 
 
@@ -133,7 +133,7 @@ Questo problema può essere dovuto a diversi motivi per i quali più comuni sono
 * L'utente ha occhiali univoci o una condizione oculare che il sistema non supporta ancora.    
 * Fattori esterni che inibiscono il monitoraggio degli occhi affidabili, ad esempio le sbavature sulla visiera HoloLens o sugli occhiali, il sole intenso diretto e le occlusioni a causa dei capelli davanti agli occhi.   
 
-Di conseguenza, gli sviluppatori devono assicurarsi che sia disponibile un supporto di fallback appropriato per questi utenti. Nella pagina relativa al [rilevamento degli occhi nella pagina DirectX](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-is-not-available) vengono illustrate le API necessarie per rilevare se i dati di rilevamento degli occhi sono disponibili. 
+Di conseguenza, gli sviluppatori devono assicurarsi che sia disponibile un supporto di fallback appropriato per questi utenti. Nella pagina relativa al [rilevamento degli occhi nella pagina DirectX](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-isnt-available) vengono illustrate le API necessarie per rilevare se i dati di rilevamento degli occhi sono disponibili. 
 
 Anche se alcuni utenti hanno deciso consapevolmente di revocare l'accesso ai dati di rilevamento degli occhi e sono OK con il compromesso di un'esperienza utente inferiore alla privacy di non fornire l'accesso ai dati di rilevamento degli occhi, in alcuni casi potrebbe non essere intenzionale.  
 Di conseguenza, se l'app usa la funzionalità di rilevamento degli occhi e si tratta di una parte importante dell'esperienza, è consigliabile comunicarla chiaramente all'utente.     

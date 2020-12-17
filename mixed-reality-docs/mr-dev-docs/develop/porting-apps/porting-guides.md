@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: porta, Unity, Unreal, middleware, motore, UWP, Win32, porting, HoloLens 1st Gen, auricolare realtà mista, cuffia a realtà mista di Windows, migrazione, Windows 10, mapping di input,
-ms.openlocfilehash: 9f3e064c4462fc3d12a23bd94885476bcd2f9466
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 4137ff4dcc9f72dd66b9078b0d86c2d06f01f2bc
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925943"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613225"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>Conversione di app VR in Windows Mixed Reality
 
-Windows 10 include il supporto diretto per auricolari immersivi e olografici. Se è stato creato contenuto per altri dispositivi, ad esempio Oculus Rift o HTC vive, questi hanno dipendenze da librerie esistenti sopra l'API della piattaforma del sistema operativo. Il riutilizzo delle app VR Unity di Win32 per la realtà mista di Windows prevede il reindirizzamento dell'utilizzo di SDK VR specifici del fornitore alle API VR tra fornitori di Unity.
+Windows 10 include il supporto per auricolari immersivi e olografici. Se è stato creato contenuto per altri dispositivi, ad esempio Oculus Rift o HTC vive, questi hanno dipendenze da librerie esistenti sopra l'API della piattaforma del sistema operativo. Il riutilizzo delle app VR Unity di Win32 per la realtà mista di Windows prevede il reindirizzamento dell'utilizzo di SDK VR specifici del fornitore alle API VR tra fornitori di Unity.
 
 ## <a name="porting-requirements"></a>Requisiti di porting
 
@@ -23,7 +23,7 @@ A livello generale, sono necessari i passaggi seguenti per trasferire il contenu
 1. **Verificare che il PC esegua Windows 10 Fall Creators Update (16299).** Non è più consigliabile ricevere le build di anteprima dall'anello Insider Skip Ahead, perché tali Build non saranno le più stabili per lo sviluppo di realtà miste.
 2. **Eseguire l'aggiornamento alla versione più recente della grafica o del motore di gioco.** I motori di gioco dovranno supportare Windows 10 SDK versione 10.0.15063.0 (rilasciato ad aprile 2017) o versione successiva.
 3. **Aggiornare tutti i middleware, i plug-in o i componenti.** Se l'app contiene componenti, è consigliabile eseguire l'aggiornamento alla versione più recente.
-4. **Rimuovere le dipendenze da SDK duplicati**. A seconda del dispositivo a cui è destinato il contenuto, è necessario rimuovere o compilarlo in modo condizionale (ad esempio, SteamVR) in modo da poter utilizzare le API di Windows.
+4. **Rimuovere le dipendenze da SDK duplicati**. A seconda del dispositivo a cui è destinato il contenuto, è necessario rimuovere o compilarlo in modo condizionale per poter usare le API di Windows. Un esempio di questo scenario è SteamVR.
 5. **Risolvere i problemi di compilazione.** A questo punto, l'esercizio di porting è specifico per l'app, il motore e le dipendenze dei componenti.
 
 ## <a name="common-porting-steps"></a>Passaggi comuni di porting

@@ -6,17 +6,17 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: procedura dettagliata, comando vocale, frase, riconoscimento, sintesi vocale, DirectX, piattaforma, Cortana, realtà mista di Windows
-ms.openlocfilehash: bdd92f79b3dd9677ac5c2c64e532978477ac5bca
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c917fbc4215442bc66f52dc2c527e01b2c446594
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683812"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613105"
 ---
 # <a name="voice-input-in-directx"></a>Input vocale in DirectX
 
 > [!NOTE]
-> Questo articolo si riferisce alle API native di WinRT legacy.  Per i nuovi progetti di app native, è consigliabile usare l' **[API OpenXR](openxr-getting-started.md)** .
+> Questo articolo si riferisce alle API native di WinRT legacy.  Per i nuovi progetti di app native, è consigliabile usare l' **[API OpenXR](openxr-getting-started.md)**.
 
 Questo articolo illustra come implementare i [comandi vocali](../../design/voice-input.md) e il riconoscimento di frasi brevi e frasi in un'app DirectX per la realtà mista di Windows.
 
@@ -29,7 +29,7 @@ Questa sezione descrive come usare il riconoscimento vocale continuo per abilita
 
 Per prima cosa, creare una nuova istanza di *Windows:: media:: sintesi vocale:: SpeechRecognizer* .
 
-Da *HolographicVoiceInputSampleMain:: CreateSpeechConstraintsForCurrentState* :
+Da *HolographicVoiceInputSampleMain:: CreateSpeechConstraintsForCurrentState*:
 
 ```
 m_speechRecognizer = ref new SpeechRecognizer();
@@ -97,7 +97,7 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
 
 Il gestore dell'evento *OnResultGenerated* riceve i dati dell'evento in un'istanza di [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) . Se la confidenza è maggiore della soglia definita, l'applicazione deve tenere presente che si è verificato l'evento. Salvare i dati dell'evento in modo che sia possibile utilizzarli in un ciclo di aggiornamento successivo.
 
-Da *HolographicVoiceInputSampleMain. cpp* :
+Da *HolographicVoiceInputSampleMain. cpp*:
 
 ```
 // Change the cube color, if we get a valid result.
@@ -112,7 +112,7 @@ Da *HolographicVoiceInputSampleMain. cpp* :
 
 Nel codice di esempio, viene modificato il colore del cubo dell'ologramma rotante in base al comando dell'utente.
 
-Da *HolographicVoiceInputSampleMain:: Update* :
+Da *HolographicVoiceInputSampleMain:: Update*:
 
 ```
 // Check for new speech input since the last frame.
@@ -156,7 +156,7 @@ auto constraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScen
    {
 ```
 
-Se la compilazione ha esito positivo, è possibile procedere con il riconoscimento vocale.
+Se la compilazione ha esito positivo, è possibile continuare con il riconoscimento vocale.
 
 ```
 try
@@ -367,7 +367,7 @@ Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizer
 
 Gli esempi di riconoscimento vocale olografico usano la sintesi vocale per fornire istruzioni acustiche all'utente. Questa sezione illustra come creare un esempio di voce sintetizzata e riprodurlo con le API HRTF audio.
 
-Quando si richiede l'input di frasi, è necessario fornire le proprie richieste di riconoscimento vocale. I prompt possono anche indicare quando è possibile pronunciare i comandi vocali per uno scenario di riconoscimento continuo. Nell'esempio seguente viene illustrato come utilizzare un sintetizzatore vocale a tale scopo. È anche possibile usare un clip vocale pre-registrato, un'interfaccia utente visiva o un altro indicatore di cosa dire, ad esempio negli scenari in cui la richiesta non è dinamica.
+Quando si richiede l'input di frasi, è consigliabile fornire le proprie richieste di riconoscimento vocale. I prompt possono anche indicare quando è possibile pronunciare i comandi vocali per uno scenario di riconoscimento continuo. Nell'esempio seguente viene illustrato come utilizzare un sintetizzatore vocale a tale scopo. È anche possibile usare un clip vocale pre-registrato, un'interfaccia utente visiva o un altro indicatore degli elementi da pronunciare, ad esempio negli scenari in cui il messaggio di richiesta non è dinamico.
 
 Per prima cosa, creare l'oggetto SpeechSynthesizer.
 
