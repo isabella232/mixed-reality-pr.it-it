@@ -3,16 +3,16 @@ title: Informazioni di base sulla realtà mista
 description: Per aiutare gli utenti che non hanno familiarità con la realtà mista a scoprire che cos'è e quali funzionalità offre.
 author: grbury
 ms.author: grbury
-ms.date: 07/29/2020
+ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realtà mista, individuare, distribuire, indice, pagina di destinazione, progettazione, sviluppo, esercitazioni, app di esempio, nozioni di base, case study, risorse, guide pratiche per HoloLens, progetti open source, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: c085a60f78ef68e2139b8cc3dd2fdae24bce2a52
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: ef39848fea512df9fa61ca4d538354e11fb8e042
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702269"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926061"
 ---
 # <a name="get-started-with-mixed-reality"></a>Informazioni di base sulla realtà mista
 
@@ -60,6 +60,7 @@ Prima di dedicarsi alla progettazione o allo sviluppo di applicazioni, è necess
 | --- | --- |
 | [La realtà mista è uno spettro](../discover/mixed-reality.md) | La realtà mista combina il piano fisico con quello digitale e rappresenta la prossima tappa nell'evoluzione delle interazioni tra uomo, computer e ambiente |
 | [Che cos'è un ologramma?](../discover/hologram.md) | HoloLens ti consente di creare ologrammi, ovvero oggetti costituiti da luce e suono che vengono visualizzati nell'ambiente circostante proprio come se fossero oggetti reali. Gli ologrammi rispondono allo sguardo, ai movimenti e ai comandi vocali e possono interagire con le superfici reali circostanti |
+| [Panoramica di apprendimento della realtà mista](mr-learning-overview.md#general-modules) | È possibile provare a usare il modulo Realtà mista curato da Microsoft tramite Microsoft Learn |
 | [Espandere il processo di progettazione](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Durante la creazione di esperienze immersive è possibile espandere la concezione di progettazione con il pensiero spaziale, il bodystorming e la recitazione  |
 
 <br>

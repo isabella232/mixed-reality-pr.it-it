@@ -1,32 +1,32 @@
 ---
 title: Guida introduttiva a MRTK versione 2
-description: Per i nuovi sviluppatori interessati a usufruire dei vantaggi offerti da MRTK
+description: Per i nuovi sviluppatori interessati a usare MRTK
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, Mixed Reality Toolkit, MRTK versione 2, MRTK, strumenti, SDK, HoloLens, HoloLens 2, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, multipiattaforma
-ms.openlocfilehash: c780084e89e286d9558fafa78c460518f48a0368
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a8e85e27617d5c7d616d6db75941c5cf5808f3ce
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678560"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010122"
 ---
 # <a name="getting-started-with-mrtk-for-unity"></a>Introduzione a MRTK per Unity
 ![MRTK](../../design/images/MRTK_UX_Hero.png)
 
 ## <a name="what-is-mixed-reality-toolkit-mrtk"></a>Che cos'è Mixed Reality Toolkit (MRTK)?
-MRTK è un toolkit open source eccezionale, disponibile da quando il dispositivo HoloLens è stato rilasciato per la prima volta, ma che oggi non sarebbe così efficace senza i preziosi contributi della nostra community di sviluppatori. Negli ultimi tre anni abbiamo acquisito feedback dalla nostra community di sviluppatori e abbiamo creato MRTK v2 tenendo conto delle loro principali esigenze e segnalazioni.  
+MRTK è uno straordinario toolkit open source disponibile sin dalla prima versione di HoloLens. Il toolkit non avrebbe raggiunto i livelli attuali senza il contributo e l'impegno costante della community di sviluppatori Microsoft. Negli ultimi tre anni abbiamo acquisito feedback dalla community di sviluppatori e abbiamo creato MRTK v2 tenendo conto delle principali esigenze e segnalazioni.  
 
-MRTK per Unity è un kit di sviluppo multipiattaforma open source per applicazioni di realtà mista. MRTK offre un sistema di input multipiattaforma, componenti di base e blocchi predefiniti comuni per le interazioni spaziali. MRTK versione 2 permette di accelerare lo sviluppo di applicazioni destinate a Microsoft HoloLens, di visori VR immersive di Windows Mixed Reality e della piattaforma OpenVR. Il progetto mira a ridurre le barriere di accesso, creare applicazioni di realtà mista e restituire contributi alla community per continuare a crescere insieme.
+MRTK per Unity è un kit di sviluppo multipiattaforma open source per applicazioni di realtà mista. Il toolkit offre un sistema di input multipiattaforma, componenti di base e blocchi predefiniti comuni per le interazioni spaziali. MRTK versione 2 intende accelerare lo sviluppo di applicazioni per Microsoft HoloLens, i visori VR immersive di Windows Mixed Reality e la piattaforma OpenVR. Il progetto mira a ridurre le barriere di accesso, creare applicazioni di realtà mista e restituire contributi alla community per continuare a crescere insieme.
 
 <br>
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCG]
 
-Per altre informazioni, vedere la [documentazione di MRTK in GitHub](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html). Per iniziare, seguire la procedura descritta nella pagina relativa alla [guida all'installazione](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html).
+Vedere la [documentazione di MRTK su GitHub](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html) e inziare con la [guida all'installazione](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html).
 
 
 ## <a name="new-with-mrtk-v2"></a>Novità di MRTK v2
@@ -36,10 +36,10 @@ Per altre informazioni, vedere la [documentazione di MRTK in GitHub](https://mic
 Il toolkit è stato creato in modo modulare, quindi non è necessario includerlo per intero nel progetto.  Questa caratteristica presenta alcuni vantaggi.  Consente di limitare le dimensioni del progetto e ne semplifica la gestione.  Inoltre, poiché il toolkit è stato creato con oggetti gestibili tramite script ed è dotato di interfaccia, puoi anche sostituire i componenti inclusi nel toolkit con componenti personalizzati, per supportare altri servizi, sistemi e piattaforme.
 
 ### <a name="cross-platform"></a>Multipiattaforma
-Il toolkit include il supporto per più piattaforme.  Anche se questo non significa che ogni singola piattaforma è supportata in modo predefinito, abbiamo fatto in modo che nessuna parte del codice del toolkit smetta di funzionare nel caso in cui tu scelga di configurare altre piattaforme di destinazione per la tua build.  L'affidabilità e l'estendibilità che caratterizzano la progettazione modulare ti aiuteranno a seguire la strada giusta per supportare più piattaforme, come ARCore, ARKit e OpenVR.
+Il toolkit include il supporto per più piattaforme.  Anche se questo non significa che ogni singola piattaforma sia supportata, Microsoft ha fatto in modo che nessuna parte di codice del toolkit smetta di funzionare quando si scelgono altre piattaforme di destinazione per la build.  L'affidabilità e l'estendibilità della progettazione modulare permettono alle app di supportare più piattaforme, ad esempio ARCore, ARKit e OpenVR.
 
 ### <a name="performant"></a>Ottime prestazioni
-Dovendo lavorare con piattaforme mobili, abbiamo realizzato il toolkit tenendo sempre ben presenti le prestazioni.  Questo è un aspetto molto importante e volevamo essere sicuri che gli strumenti funzionassero nel modo giusto.
+Dovendo lavorare con piattaforme mobili, abbiamo realizzato il toolkit tenendo sempre ben presenti le prestazioni.  Questo aspetto è molto importante e Microsoft ha voluto assicurarsi che gli strumenti non creino difficoltà agli utenti.
 
 ## <a name="see-also"></a>Vedere anche
 * [Installare gli strumenti](../install-the-tools.md)

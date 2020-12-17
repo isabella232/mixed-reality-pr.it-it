@@ -7,12 +7,12 @@ ms.date: 11/23/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, documentazione, guide, funzionalità, visore VR realtà mista, visore VR di windows mixed reality, visore VR per realtà virtuale, porting, aggiornamento
-ms.openlocfilehash: 0ba10b8ee1067da4494f147d43f8834010e1250f
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 5460ab55c887c44029e956545cf6a549f55716f7
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609662"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010622"
 ---
 # <a name="upgrading-projects-in-unreal"></a>Aggiornamento di progetti in Unreal
 
@@ -50,3 +50,7 @@ Nei messaggi di avviso verrà visualizzata la funzione deprecata e verrà indica
 | IsTrackingAvailable | ![Progetto della proprietà IsTrackingAvailable](images/unreal-porting-img-17.png) |
 | IsButtonClicked, IsButtonDown, IsGrasped, IsSelectPressed | Usare il sistema di azione di input di Unreal. |
 | SetFocusPointForFrame | Rimossa nella versione 4.26.  In precedenza questa funzione veniva usata per la riproiezione durante la comunicazione remota, ora supportata dalla riproiezione avanzata. |
+
+## <a name="426-changes"></a>Modifiche della versione 4.26
+
+La modifica più significativa apportata consiste nel fatto che l'opzione **Start in VR** (Avvia in VR) disponibile in **Edit > Project Settings > Project > Description > Settings** (Modifica > Impostazioni progetto > Progetto > Descrizione > Impostazioni) è obbligatoria per l'avvio del plug-in Windows Mixed Reality. Senza questo parametro, gli ologrammi non vengono visualizzati nel dispositivo.

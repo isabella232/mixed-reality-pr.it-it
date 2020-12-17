@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, esercitazione, guida introduttiva, mrtk, uxt, UX Tools, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 4319b1171090b8ca7a320e98867bfb3635bab005
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 7f6f501a5e2cde9fdb6aa3ba1aa973a4ab697fd8
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609492"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010547"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. Creazione di pacchetti e distribuzione nel dispositivo o nell'emulatore
 
@@ -49,6 +49,7 @@ Dopo esserti connesso, fai clic sulla freccia a discesa a destra del pulsante **
 1.  Passa a **Edit > Project Settings** (Modifica > Impostazioni progetto).
     * Aggiungi un nome progetto in **Project > Description > About > Project Name** (Progetto > Descrizione > Informazioni -> Nome progetto).
     * Aggiungi **CN=NomeSocietà** in **Project > Description > Publisher > Company Distinguished Name** (Progetto > Descrizione > Autore > Nome distinto società).
+    * Selezionare **Start in VR** (Avvia in VR) in **Project > Description > Settings** (Progetto > Descrizione > Impostazioni).
 
 > [!IMPORTANT]
 > Se lasci vuoto uno di questi campi, viene generato un errore quando tenti di generare un nuovo certificato nel passaggio 3.
@@ -56,7 +57,10 @@ Dopo esserti connesso, fai clic sulla freccia a discesa a destra del pulsante **
 > [!IMPORTANT]
 > Il nome dell'autore deve essere nel [formato LADPv3 Distinguished Names](https://www.ietf.org/rfc/rfc2253.txt). Se il nome dell'autore non è valido, viene visualizzato un errore che indica che la chiave di firma non è stata trovata e che non è stato possibile firmare digitalmente l'app durante la creazione del pacchetto.
 
-![Impostazioni del progetto - Descrizione](images/unreal-uxt/6-cn.PNG)
+> [!IMPORTANT]
+> Se non si seleziona l'opzione "Start in VR" (Avvia in VR), l'applicazione tenterà l'avvio in una finestra.
+
+![Impostazioni del progetto - Descrizione](images/unreal-uxt/6-cn-new.PNG)
 
 2.  Abilita **Build for HoloLens Emulation** (Build per emulazione HoloLens) e/o **Build for HoloLens Device** (Build per dispositivo HoloLens) in **Platforms > HoloLens** (Piattaforme > HoloLens).
 

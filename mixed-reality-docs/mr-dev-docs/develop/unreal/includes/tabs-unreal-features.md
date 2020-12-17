@@ -1,20 +1,22 @@
 ---
-ms.openlocfilehash: be2bbcc7e20a005ecb91228cdfa36b20f56acb33
-ms.sourcegitcommit: f31f3a54c7c46e21884d62b4a696acf122a3c2b9
+ms.openlocfilehash: 31f11712c2f1cbe7e6726ecf5a83ccd31a2e616e
+ms.sourcegitcommit: 0509cf6c57067cffd75a0189106e3369e9ecc5c8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96781968"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96912175"
 ---
 # <a name="426"></a>[4.26](#tab/ue426)
 
 L'ultima versione di Unreal Engine 4.26 include:
-* Supporto di OpenXR
-* Supporto per il plug-in [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal) con estensioni OpenXR specifiche del fornitore Microsoft
+* Supporto per le nuove [API XR per più dispositivi](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-porting)
+* Supporto di OpenXR e plug-in [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal) 
 * Plug-in HoloLens Media Player per la riproduzione video a prestazioni elevate
 * Ancoraggi nello spazio di Azure per Android e iOS (beta)
-* Streaming da Azure a HoloLens 2
+* Supporto per connessioni inverse durante la comunicazione remota e l'abilitazione dello streaming da Azure a HoloLens 2
+* Accesso alla tastiera di sistema di HoloLens 2
 * Conformità del kit di certificazione app Windows per le app in pacchetto
+* Supporto di Unreal Insights per HoloLens 2
 * Supporto del controller HP Reverb G2
 
 Per altre informazioni, vedere le <a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_26/index.html" target="_blank" title="note sulla versione di Unreal Engine 4.26"></a>. 

@@ -1,18 +1,18 @@
 ---
 title: Uso dell'emulatore HoloLens
 description: Uso dell'emulatore HoloLens per testare le app di realtà mista nel PC senza un dispositivo HoloLens fisico.
-author: pbarnettms
-ms.author: pbarnett
+author: hamalawi
+ms.author: moelhama
 ms.date: 10/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, emulatore
-ms.openlocfilehash: 702fb18d22808cb23fa5b31ac19b50645f86efe6
-ms.sourcegitcommit: 5bf2121490b7b76135f52d41216330023745f54c
+ms.openlocfilehash: e6dc8a7d38d5c7c9575723446350ee087a69dc18
+ms.sourcegitcommit: 0509cf6c57067cffd75a0189106e3369e9ecc5c8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92001470"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96855908"
 ---
 # <a name="using-the-hololens-emulator"></a>Uso dell'emulatore HoloLens
 
@@ -28,7 +28,7 @@ Se intendi sviluppare applicazioni per visori VR immersive per Windows Mixed Rea
 Scarica l'emulatore HoloLens.
 
 Versioni:
-* [Emulatore HoloLens 2 (Windows Holographic, versione 2004, aggiornamento di ottobre 2020)](https://go.microsoft.com/fwlink/?linkid=2145829).
+* [Emulatore HoloLens 2 (Windows Holographic, versione 20H2, aggiornamento di dicembre 2020)](https://go.microsoft.com/fwlink/?linkid=2151523).
 * [Emulatore HoloLens (prima generazione) e modelli di progetti olografici](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 Nella pagina relativa all'[archivio dell'emulatore HoloLens](hololens-emulator-archive.md) puoi trovare le note sulla versione e le build meno recenti dell'emulatore.
@@ -285,7 +285,7 @@ Se il sistema si blocca all'avvio dell'emulatore, disabilita l'accelerazione har
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di checkpoint per lo sviluppo con Unity che abbiamo delineato, ci si trova nella fase di distribuzione. Da qui è possibile passare all'argomento successivo:
+Se si segue il percorso di checkpoint per lo sviluppo con Unity che è stato delineato, ci si trova nella fase di distribuzione. Da qui è possibile passare all'argomento successivo:
 
 > [!div class="nextstepaction"]
 > [Distribuzione nell'emulatore HoloLens](using-the-hololens-emulator.md)
