@@ -8,22 +8,22 @@ ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, esercitazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, unity, unreal, HoloLens, ancoraggi nello spazio di Azure, servizi vocali di Azure
-ms.openlocfilehash: 0e3b1749790e3c372570bdd1d8e68fe3fd593dd8
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a85792ba082450fb01f3c6f7bb008d3c7b17560b
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677280"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010462"
 ---
-# <a name="tutorials"></a>Esercitazioni 
+# <a name="tutorials"></a>Esercitazioni
 
 ![Utente HoloLens 2](images/08_Tutorials.png)
 
-Attualmente, tutte le esercitazioni e le app di esempio sono basate su Unity o Unreal. Man mano che vengono sviluppati contenuti per altri motori e piattaforme, potrai trovarli sotto l'intestazione pertinente nel Sommario.
+Attualmente, tutte le esercitazioni e le app di esempio sono basate su Unity o Unreal. Il contenuto che viene sviluppato per altri motori e piattaforme sarà disponibile sotto l'intestazione pertinente nel Sommario.
 
 ## <a name="hololens-2"></a>HoloLens 2 
 
-Le esercitazioni di HoloLens 2 sono state realizzate per aiutare gli sviluppatori ad apprendere le tecniche e le procedure consigliate per sviluppare applicazioni di realtà mista. Le esercitazioni di Unity sono basate sul [Mixed Reality Toolkit 2.0 (MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity), l'esercitazione di Unreal è basata su [UX Tools for Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal).
+Le esercitazioni su HoloLens 2 sono state studiate per insegnare le tecniche e le procedure ottimali per lo sviluppo di applicazioni di realtà mista. Le esercitazioni di Unity sono basate sul [Mixed Reality Toolkit 2.0 (MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity), l'esercitazione di Unreal è basata su [UX Tools for Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal).
 
 * Esercitazioni introduttive
     * Unity: [1 di 9 Introduzione](tutorials/mr-learning-base-01.md)
@@ -39,7 +39,7 @@ Mixed Reality Academy è un set di esercitazioni dettagliate online con i file d
 * Le esercitazioni trattano argomenti di livello 100, 200 e 300, dove: il livello 100 riguarda le nozioni di base dei progetti, il livello 200 riguarda i principali blocchi predefiniti e il livello 300 riguarda l'integrazione dei servizi cloud.
 * Nella maggior parte dei corsi vengono trattati concetti applicabili sia a HoloLens sia ai visori VR immersive.
 * Ogni esercitazione è organizzata per capitolo e la maggior parte include dimostrazioni video dei concetti chiave.
-* Un PC Windows 10 con gli [strumenti installati](../install-the-tools.md) corretti è un prerequisito comune per completare ogni esercitazione.
+* Un PC Windows 10 con i corretti [strumenti installati](../install-the-tools.md) è un prerequisito comune per completare ogni esercitazione.
 
 >[!NOTE]
 >Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista. Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi. Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2. Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](tutorials/mr-learning-base-01.md).
@@ -198,7 +198,7 @@ Queste esercitazioni autonome sono molto utili per imparare a implementare diver
                                           </div>
                                           <div class="cardText">
                                               <h3>MR e Azure 304: Riconoscimento del volto</h3>
-                                              <p>Impara a usare l'API Viso di Azure per eseguire il rilevamento e il riconoscimento dei volti nella tua app di realtà mista.</p>
+                                              <p>Vengono fornite informazioni su come usare l'API Viso di Azure per il rilevamento e il riconoscimento dei volti nell'app di realtà mista.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -217,7 +217,7 @@ Queste esercitazioni autonome sono molto utili per imparare a implementare diver
                                           </div>
                                           <div class="cardText">
                                               <h3>MR e Azure 305: Funzioni e archiviazione</h3>
-                                              <p>In questo corso imparerai a creare e usare Funzioni di Azure e ad archiviare i dati in Archiviazione di Azure dall'interno di un'app di realtà mista.</p>
+                                              <p>In questo corso vengono fornite informazioni su come creare e usare Funzioni di Azure e archiviare dati in Archiviazione di Azure dall'interno di un'app di realtà mista.</p>
                                           </div>
                                       </div>
                                   </div>
