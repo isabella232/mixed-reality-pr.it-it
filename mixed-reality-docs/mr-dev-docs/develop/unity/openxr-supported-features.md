@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/15/2020
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, realtà mista, MRTK, Toolkit per realtà mista, realtà aumentata, realtà virtuale, cuffie con realtà mista, informazioni, esercitazione, introduzione
-ms.openlocfilehash: dc908762d6e44e04f56b8ff82b90394106ca42e5
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 5db08dee6b26de6fa3f44d92709e4903bb90a44c
+ms.sourcegitcommit: 7595db7438398b5c78cec41a6f8ab625711bf8ec
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/17/2020
-ms.locfileid: "97622945"
+ms.locfileid: "97664419"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Realtà mista OpenXR le funzionalità supportate in Unity
 
@@ -25,12 +25,12 @@ Attualmente sono supportate le funzionalità seguenti:
 * Ottimizza il pacchetto UWP e l'interazione CoreWindow per le applicazioni HoloLens 2.
 * Rilevamento della scalabilità globale tramite ancoraggi e spazio non vincolato.
 * API di archiviazione di ancoraggio per salvare in modo permanente gli ancoraggi nell'archivio locale HoloLens 2.
-* Motion controller e Hand Interactions, incluso il nuovo controller HP Reverb G2.
+* [Motion controller e Hand Interactions](#motion-controller-and-hand-interactions), incluso il nuovo controller HP Reverb G2.
 * Tracciatura manuale articolata con 26 giunzioni e input RADIUS Uniti.
 * Interazione con gli occhi su HoloLens 2.
 * Individuazione della fotocamera Photo/video (PV) in HoloLens 2.
 * Acquisizione di realtà mista tramite il rendering di 3 occhi attraverso la fotocamera FV.
-* Supporta "Play" per HoloLens 2 usando l'app di comunicazione remota olografica, consentendo agli sviluppatori di eseguire il debug degli script senza compilare e distribuire nel dispositivo.
+* Supporta ["Play" in HoloLens 2 con l'app di comunicazione remota olografica](#holographic-remoting-in-unity-editor-play-mode), consentendo agli sviluppatori di eseguire il debug degli script senza compilare e distribuire nel dispositivo.
 * Compatibile con MRTK Unity 2.5.2 tramite il pacchetto MRTK OpenXR adapter. <missing link>
 * Compatibile con Unity [ARFoundation 4,0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) o versione successiva
 
