@@ -6,12 +6,12 @@ ms.author: randyw
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Nessuno
-ms.openlocfilehash: 748685f89e44221ff50b90b57d871867b83f581c
-ms.sourcegitcommit: d4b96e5b51b64ff618dbf667e8b8eb069e1a2fe2
+ms.openlocfilehash: 1fc560d170c4e17f4d70b7068474a1aabda472a2
+ms.sourcegitcommit: 3762d207d3b5f4a1d932197aae7a4fae4baec960
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91717434"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97676134"
 ---
 # <a name="title-be-as-specific-as-possible-use-human-terms"></a>Titolo (per quanto possibile, usare i termini umani) 
 
@@ -38,9 +38,9 @@ ms.locfileid: "91717434"
 </tr>
 <tr>
      <td>Argomento o titolo dell'articolo</td>
-     <td>❌ Non supportata</td>
-     <td>✔️ Consigliata</td>
-     <td>✔️ Consigliata</td>
+     <td>❌ Non supportato</td>
+     <td>✔️ Consigliato</td>
+     <td>✔️ Consigliato</td>
 </tr>
 </table>
 
@@ -65,7 +65,7 @@ Convenzioni editoriali:
 *   Non provare a essere divertente.
 *   Scrivi usando l'ortografia e le convenzioni en-US (Stati Uniti Inglese).
 *   **Usa la distinzione tra maiuscole e minuscole per titoli, intestazioni di sezione e... bene.** All'interno delle frasi, le uniche parole che devono essere in lettere maiuscole sono i sostantivi appropriati (proprio come si è appreso nella scuola di grammatica). I nomi dei marchi, ad esempio Microsoft HoloLens, sono sostantivi appropriati. I nomi delle funzionalità, ad esempio il mapping spaziale, non sono sostantivi appropriati, a meno che non siano marchiati.
-*   Non scrivere collegamenti nel formato "per altre informazioni, vedere [qui](../whats-new/contributing.md)". Al contrario, posizionare i collegamenti in modo [contestuale](../whats-new/contributing.md) senza indirizzare il lettore a andare altrove.
+*   Non scrivere collegamenti nel formato "per altre informazioni, vedere [qui](../contributing.md)". Al contrario, posizionare i collegamenti in modo [contestuale](../contributing.md) senza indirizzare il lettore a andare altrove.
 *   Questa documentazione è l'origine della verità. Le informazioni devono essere accurate e aggiornate.
 
 <br>
