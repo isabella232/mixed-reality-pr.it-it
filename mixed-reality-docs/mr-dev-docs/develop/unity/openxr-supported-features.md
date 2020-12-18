@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/15/2020
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, realtà mista, MRTK, Toolkit per realtà mista, realtà aumentata, realtà virtuale, cuffie con realtà mista, informazioni, esercitazione, introduzione
-ms.openlocfilehash: 5db08dee6b26de6fa3f44d92709e4903bb90a44c
-ms.sourcegitcommit: 7595db7438398b5c78cec41a6f8ab625711bf8ec
+ms.openlocfilehash: 1cbe9dd1ffb493bcc9da76e70dec9720f2d10340
+ms.sourcegitcommit: 4bbf2f802117a9a3788b2b0e3b0a2f58e187f6ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97664419"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97665361"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Realtà mista OpenXR le funzionalità supportate in Unity
 
@@ -24,7 +24,7 @@ Attualmente sono supportate le funzionalità seguenti:
 * Supporta entrambe le applicazioni UWP per le applicazioni HoloLens 2 e Win32 VR per le cuffie di realtà mista di Windows.
 * Ottimizza il pacchetto UWP e l'interazione CoreWindow per le applicazioni HoloLens 2.
 * Rilevamento della scalabilità globale tramite ancoraggi e spazio non vincolato.
-* API di archiviazione di ancoraggio per salvare in modo permanente gli ancoraggi nell'archivio locale HoloLens 2.
+* [API di archiviazione di ancoraggio per salvare](#anchors-and-anchor-persistence) in modo permanente gli ancoraggi nell'archivio locale HoloLens 2.
 * [Motion controller e Hand Interactions](#motion-controller-and-hand-interactions), incluso il nuovo controller HP Reverb G2.
 * Tracciatura manuale articolata con 26 giunzioni e input RADIUS Uniti.
 * Interazione con gli occhi su HoloLens 2.
@@ -58,12 +58,67 @@ A questo punto è possibile fare clic sul pulsante "Riproduci" per riprodurre l'
 > [!NOTE]
 > A partire dalla versione 0.1.0 la comunicazione remota olografica, il runtime non supporta la funzionalità di ancoraggio e le funzionalità di ARAnchorManager non funzioneranno tramite la comunicazione remota.  Questa funzionalità è disponibile nelle versioni future.
 
+## <a name="anchors-and-anchor-persistence"></a>Ancoraggi e persistenza di ancoraggio
+
+Il plug-in di OpenXR realtà mista fornisce la funzionalità di ancoraggio di base tramite un'implementazione di ARFoundation **ARAnchorManager** di Unity. Per apprendere le nozioni di base su **ARAnchor** in ARFoundation, vedere il [Manuale di ARFoundation per AR Anchor Manager](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/anchor-manager.html). A partire dalla versione 0.1.0, questo plug-in supporta tutte le funzionalità di ARAnchorManager, ad eccezione della creazione di ancoraggi collegati a un piano, che sarà disponibile in una versione futura.
+
+### <a name="anchor-persistence-and-the-xranchorstore"></a>Persistenza di ancoraggio e XRAnchorStore
+
+Un'API aggiuntiva denominata **XRAnchorStore** consente di salvare in modo permanente gli ancoraggi tra le sessioni. XRAnchorStore è una rappresentazione degli ancoraggi salvati nel dispositivo. Gli ancoraggi possono essere salvati in permanenza da **ARAnchors** nella scena Unity, caricati dall'archiviazione in nuovi **ARAnchors** o eliminati dall'archivio.
+
+> [!NOTE]
+> Questi ancoraggi devono essere salvati e caricati nello stesso dispositivo. L'archiviazione di ancoraggio tra dispositivi verrà supportata tramite ancoraggi spaziali di Azure in una versione futura.
+
+``` cs
+public class Microsoft.MixedReality.ARSubsystems.XRAnchorStore
+{
+    // A list of all persisted anchors, which can be loaded.
+    public IReadOnlyList<string> PersistedAnchorNames { get; }
+
+    // Clear all persisted anchors
+    public void Clear();
+
+    // Load a single persisted anchor by name. The ARAnchorManager will create this new anchor and report it in
+    // the ARAnchorManager.anchorsChanged event. The TrackableId returned here is the same TrackableId the 
+    // ARAnchor will have when it is instantiated.
+    public TrackableId LoadAnchor(string name);
+
+    // Attempts to persist an existing ARAnchor with the given TrackableId to the local store. Returns true if 
+    // the storage is successful, false otherwise.
+    public bool TryPersistAnchor(string name, TrackableId trackableId);
+
+    // Removes a single persisted anchor from the anchor store. This will not affect any ARAnchors in the Unity
+    // scene, only the anchors in storage.
+    public void UnpersistAnchor(string name);
+}
+```
+
+Per caricare XRAnchorStore, il plug-in fornisce un metodo di estensione in XRAnchorSubsystem, il sottosistema di un ARAnchorManager:
+
+``` cs
+public static Task<XRAnchorStore> LoadAnchorStoreAsync(this XRAnchorSubsystem anchorSubsystem)
+```
+
+Per usare questo metodo di estensione, accedervi dal sottosistema di ARAnchorManager come indicato di seguito:
+ 
+``` cs
+ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>(); 
+XRAnchorStore anchorStore = await arAnchorManager.subsystem.LoadAnchorStoreAsync(); 
+```
+
+Per un esempio completo di come salvare in modo permanente/non permanente gli ancoraggi, vedere gli script di ancoraggio-> di esempio GameObject e AnchorsSample.cs nella scena di [esempio di plug-in realtà mista OpenXR](openxr-getting-started.md#hololens-2-samples):
+
+![Screenshot del pannello gerarchia aperto nell'editor di Unity con l'esempio Anchors evidenziato](images/openxr-features-img-04.png)
+
+![Screenshot del pannello Inspector aperto nell'editor di Unity con lo script di esempio Anchors evidenziato](images/openxr-features-img-05.png)
+
 ## <a name="motion-controller-and-hand-interactions"></a>Interazioni tra controller di movimento e mano
-Per apprendere le nozioni di base sulle interazioni tra realtà mista in Unity, vedere il [Manuale di Unity per Unity XR input](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html). Questa documentazione di Unity riguarda i mapping da input specifici del controller a più generalizzabili `InputFeatureUsage` , il modo in cui possono essere identificati e categorizzati gli input XR disponibili, come leggere i dati da questi input e altro ancora. 
+
+Per apprendere le nozioni di base sulle interazioni tra realtà mista in Unity, vedere il [Manuale di Unity per Unity XR input](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html). Questa documentazione di Unity riguarda i mapping da input specifici del controller a **InputFeatureUsage** più generalizzabili, il modo in cui possono essere identificati e categorizzati gli input XR disponibili, come leggere i dati da questi input e altro ancora. 
  
-Il plug-in OpenXR per la realtà mista fornisce profili di interazione di input aggiuntivi, con mapping a standard `InputFeatureUsage` s come descritto di seguito: 
+Il plug-in OpenXR per la realtà mista fornisce profili di interazione di input aggiuntivi, mappati a **InputFeatureUsage** standard, come descritto di seguito: 
  
-| `InputFeatureUsage` | Controller HP Reverb G2 (OpenXR) | Mano HoloLens (OpenXR) |
+| InputFeatureUsage | Controller HP Reverb G2 (OpenXR) | Mano HoloLens (OpenXR) |
 | ---- | ---- | ---- |
 | primary2DAxis | Joystick | |
 | primary2DAxisClick | Joystick-fare clic | |
@@ -75,9 +130,25 @@ Il plug-in OpenXR per la realtà mista fornisce profili di interazione di input 
 | triggerButton | Trigger-premere | |
 | menuButton | Menu | |
 
-#### <a name="haptics"></a>Haptics
-Per informazioni sull'uso di haptics nel sistema di input XR di Unity, è possibile trovare la documentazione nel [Manuale di Unity per Unity XR input-haptics](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics). 
+### <a name="aim-and-grip-poses"></a>Pose AIM e grip
 
+È possibile accedere a due set di pose tramite interazioni di input OpenXR: 
+* Il grip si pone per il rendering degli oggetti a mano
+* L'obiettivo si pone per puntare al mondo. 
+
+Altre informazioni su questa progettazione e sulle differenze tra le due pose sono reperibili nella [specifica OpenXR-sottopercorsi di input](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#semantic-path-input).
+
+Le pose fornite da InputFeatureUsages **DevicePosition**, **DeviceRotation**, **DeviceVelocity** e **DeviceAngularVelocity** rappresentano tutti la postura del **grip** OpenXR. InputFeatureUsages correlate alle pose del grip sono definite in [CommonUsages](https://docs.unity3d.com/2020.2/Documentation/ScriptReference/XR.CommonUsages.html)di Unity.
+
+Le pose fornite da InputFeatureUsages **PointerPosition**, **PointerRotation**, **PointerVelocity** e **PointerAngularVelocity** rappresentano tutti il OpenXR **AIM** pose. Questi InputFeatureUsages non sono definiti in alcun file C# incluso, quindi è necessario definire il proprio InputFeatureUsages come indicato di seguito:
+
+``` cs
+public static readonly InputFeatureUsage<Vector3> PointerPosition = new InputFeatureUsage<Vector3>("PointerPosition");
+```
+
+### <a name="haptics"></a>Haptics
+
+Per informazioni sull'uso di haptics nel sistema di input XR di Unity, è possibile trovare la documentazione nel [Manuale di Unity per Unity XR input-haptics](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics). 
 
 ## <a name="whats-coming-soon"></a>Presto disponibile
 
