@@ -5,12 +5,12 @@ author: mattwojo
 ms.author: mattwoj
 ms.date: 03/21/2018
 ms.topic: article
-ms.openlocfilehash: dd84ba86af0b86b29510c4c317ad0a14fabc296b
-ms.sourcegitcommit: 3762d207d3b5f4a1d932197aae7a4fae4baec960
+ms.openlocfilehash: 0a71072a27befc4295b82e1235cbc75655743056
+ms.sourcegitcommit: 0b406ccbc7ce619e42809ba8dfdc47d83f4917ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/18/2020
-ms.locfileid: "97676264"
+ms.locfileid: "97691314"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>Contributo alla documentazione per sviluppatori di realtà mista
 
@@ -48,12 +48,12 @@ Usare il flusso di lavoro seguente per apportare aggiornamenti a *un articolo es
    ![Modificare un articolo.](images/editpage.png)
 3. Modificare il contenuto dell'articolo secondo le [nozioni di base di Markdown](#markdown-basics).
 4. Aggiornare i metadati all'inizio di ogni articolo:
-   * title: titolo della pagina che viene visualizzato nella scheda del browser quando viene visualizzato l'articolo. I titoli delle pagine vengono usati per la SEO e l'indicizzazione, quindi non modificare il titolo a meno che non sia necessario (sebbene sia meno critico prima che la documentazione diventi pubblica).
-   * Descrizione: scrivere una breve descrizione del contenuto dell'articolo, che incrementa il SEO e l'individuazione.
-   * autore: se si è il proprietario principale della pagina, aggiungere qui l'alias GitHub.
-   * ms. Author: se si è il proprietario principale della pagina, aggiungere qui l'alias Microsoft (non è necessario @microsoft.com , ma solo l'alias).
-   * ms. Date: aggiornare la data se si aggiunge contenuto principale alla pagina, ma non per correzioni quali chiarificazione, formattazione, grammatica o ortografia.
-   * Parole chiave: supporto delle parole chiave in SEO (ottimizzazione del motore di ricerca). Aggiungere parole chiave, separate da una virgola e uno spazio, specifiche dell'articolo, ma senza segni di punteggiatura dopo l'ultima parola chiave nell'elenco. Non è necessario aggiungere parole chiave globali che si applicano a tutti gli articoli, perché sono gestite altrove. 
+   * **title**: titolo della pagina che viene visualizzato nella scheda del browser quando viene visualizzato l'articolo. I titoli delle pagine vengono usati per la SEO e l'indicizzazione, quindi non modificare il titolo a meno che non sia necessario (sebbene sia meno critico prima che la documentazione diventi pubblica).
+   * **Descrizione**: scrivere una breve descrizione del contenuto dell'articolo, che incrementa il SEO e l'individuazione.
+   * **autore**: se si è il proprietario principale della pagina, aggiungere qui l'alias github.
+   * **ms. Author**: se si è il proprietario principale della pagina, aggiungere qui l'alias Microsoft (non è necessario @microsoft.com , ma solo l'alias).
+   * **ms. date**: aggiornare la data se si aggiunge contenuto principale alla pagina, ma non per correzioni quali chiarificazione, formattazione, grammatica o ortografia.
+   * **parole chiave**: supporto delle parole chiave in SEO (ottimizzazione del motore di ricerca). Aggiungere parole chiave, separate da una virgola e uno spazio, specifiche dell'articolo, ma senza segni di punteggiatura dopo l'ultima parola chiave nell'elenco. Non è necessario aggiungere parole chiave globali che si applicano a tutti gli articoli, perché sono gestite altrove. 
 5. Una volta completate le modifiche apportate all'articolo, scorrere verso il basso e selezionare **Proponi modifica file**.
 6. Nella pagina successiva selezionare **Crea richiesta pull** per unire il ramo creato automaticamente in ' Master '.
 7. Ripetere i passaggi precedenti per il prossimo articolo che si desidera modificare.
