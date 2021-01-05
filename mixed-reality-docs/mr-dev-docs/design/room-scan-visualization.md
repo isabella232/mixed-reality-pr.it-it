@@ -1,28 +1,28 @@
 ---
 title: Visualizzazione della scansione dello spazio
-description: Le applicazioni che richiedono dati di mapping spaziali si basano sul dispositivo per raccogliere automaticamente questi dati nel tempo e nelle sessioni mentre l'utente Esplora il proprio ambiente con il dispositivo attivo.
+description: Le applicazioni che richiedono il mapping spaziale usano il dispositivo per raccogliere i dati nel tempo e nelle sessioni.
 author: mattzmsft
 ms.author: alexpf
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, modelli di app, progettazione, HoloLens, analisi chat room, mapping spaziale, mesh, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare realtà virtuale, HoloLens
-ms.openlocfilehash: f912ddcff5ef1d14468cec1e63c8153ae6460476
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: f4ec072c8fde8d3e7e390bd837116a8262bac38b
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703357"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848256"
 ---
 # <a name="room-scan-visualization"></a>Visualizzazione della scansione dello spazio
 
-Le applicazioni che richiedono dati di mapping spaziali si basano sul dispositivo per raccogliere automaticamente questi dati nel tempo e nelle sessioni mentre l'utente Esplora il proprio ambiente con il dispositivo attivo. La completezza e la qualità di questi dati dipendono da diversi fattori, tra cui la quantità di esplorazione eseguita dall'utente, il tempo trascorso dall'esplorazione e l'eventuale spostamento degli oggetti, ad esempio mobili e porte, dal momento in cui il dispositivo ha analizzato l'area.
+Le applicazioni che richiedono il mapping spaziale si basano sul dispositivo per raccogliere i dati nel tempo e nelle sessioni. La completezza e la qualità dei dati di mapping dipendono da molti fattori, tra cui la quantità di esplorazione eseguita dall'utente, il tempo trascorso dall'esplorazione e l'eventuale spostamento degli oggetti, ad esempio mobili e porte, dal momento in cui il dispositivo ha analizzato l'area.
 
 Per garantire dati di mapping spaziali utili, gli sviluppatori di applicazioni dispongono di diverse opzioni:
 * Basarsi su ciò che è già stato raccolto. Questi dati potrebbero essere inizialmente incompleti.
 * Chiedere all'utente di usare il movimento Bloom per ottenere la Home realtà mista di Windows e quindi esplorare l'area che si vuole usare per l'esperienza. Possono usare il tocco aereo per verificare che tutte le aree necessarie siano note al dispositivo.
 * Crea un'esperienza di esplorazione personalizzata nella propria applicazione.
 
-Si noti che in tutti questi casi i dati effettivi raccolti durante l'esplorazione vengono archiviati dal sistema e non è necessario che l'applicazione esegua questa operazione.
+In tutti questi casi, i dati effettivi raccolti durante l'esplorazione vengono archiviati dal sistema e non è necessario che l'applicazione esegua questa operazione.
 
 ## <a name="device-support"></a>Supporto di dispositivi
 
@@ -48,31 +48,31 @@ Si noti che in tutti questi casi i dati effettivi raccolti durante l'esplorazion
 
 ## <a name="building-a-custom-scanning-experience"></a>Creazione di un'esperienza di analisi personalizzata
 
-Le applicazioni possono decidere di analizzare i dati di mapping spaziali all'inizio dell'esperienza per valutare se desiderano che l'utente esegua ulteriori passaggi per migliorare la sua completezza e qualità. Se l'analisi indica che è necessario migliorare la qualità, gli sviluppatori devono fornire una visualizzazione da sovrapporre al mondo per indicare:
+Le applicazioni possono analizzare i dati di mapping spaziali all'inizio dell'esperienza per valutare se desiderano che l'utente esegua ulteriori passaggi per migliorare la sua completezza e qualità. Se l'analisi indica che è necessario migliorare la qualità, gli sviluppatori devono fornire una visualizzazione da sovrapporre al mondo per indicare:
 * La quantità di volume totale in prossimità degli utenti deve essere parte integrante dell'esperienza
 * Dove l'utente deve passare per migliorare i dati
 
-Gli utenti non sono a conoscenza di ciò che fa un'analisi "positiva". È necessario visualizzare o indicare gli elementi da cercare se viene chiesto di valutare un'analisi, ovvero la planarità, la distanza dai muri effettivi e così via. Lo sviluppatore deve implementare un ciclo di feedback che includa l'aggiornamento dei dati di mapping spaziale durante la fase di analisi o di esplorazione.
+Gli utenti non sono in grado di eseguire un'analisi "positiva". È necessario visualizzare o indicare gli elementi da cercare se viene chiesto di valutare un'analisi, ovvero la planarità, la distanza dai muri effettivi e così via. Lo sviluppatore deve implementare un ciclo di feedback che includa l'aggiornamento dei dati di mapping spaziale durante la fase di analisi o di esplorazione.
 
-In molti casi, può essere preferibile informare l'utente di cosa è necessario fare (ad esempio, osservare il soffitto, guardare dietro la mobilia), per ottenere la qualità di analisi necessaria.
+In molti casi, è preferibile comunicare all'utente le operazioni necessarie per ottenere la qualità di analisi necessaria. Si osservi, ad esempio, il soffitto, osservare la mobilia e così via.
 
 ## <a name="cached-versus-continuous-spatial-mapping"></a>Memorizzazione nella cache rispetto al mapping spaziale continuo
 
 I dati di mapping spaziali sono le applicazioni che possono essere utilizzate dalle applicazioni di origine dati con maggiore peso. Per evitare problemi di prestazioni, ad esempio i frame eliminati o la balbuzie, l'utilizzo di questi dati deve essere eseguito con cautela.
 
-L'analisi attiva durante un'esperienza può essere utile o dannosa e lo sviluppatore dovrà decidere quale metodo utilizzare in base all'esperienza.
+L'analisi attiva durante un'esperienza può essere vantaggiosa e dannosa, quindi è necessario decidere quale metodo utilizzare in base all'esperienza.
 
 ### <a name="cached-spatial-mapping"></a>Mapping spaziale memorizzato nella cache
 
-Nel caso del mapping spaziale memorizzato nella cache, l'applicazione esegue in genere uno snapshot dei dati di mapping spaziali e utilizza questo snapshot per la durata dell'esperienza.
+Se sono presenti dati di mapping spaziali memorizzati nella cache, l'applicazione esegue in genere uno snapshot dei dati di mapping spaziali e utilizza questo snapshot durante l'esperienza.
 
 **Vantaggi**
-* Riduzione del sovraccarico sul sistema durante l'esecuzione dell'esperienza con un notevole miglioramento delle prestazioni, della temperatura e della CPU.
+* Riduzione del sovraccarico sul sistema durante l'esecuzione dell'esperienza con un notevole miglioramento delle prestazioni, della temperatura e del risparmio di energia.
 * Un'implementazione più semplice dell'esperienza principale, poiché non viene interrotta dalle modifiche nei dati spaziali.
 * Costo singolo per ogni post elaborazione dei dati spaziali per la fisica, la grafica e altri scopi.
 
 **Svantaggi**
-* Lo spostamento di oggetti o persone reali non viene riflesso dai dati memorizzati nella cache. ad esempio è possibile che l'applicazione prenda in considerazione uno sportello aperto quando viene effettivamente chiuso.
+* Lo spostamento di oggetti o persone reali non viene riflesso dai dati memorizzati nella cache. ad esempio, l'applicazione potrebbe prendere in considerazione uno sportello aperto al momento della chiusura.
 * Potenzialmente più memoria dell'applicazione per mantenere la versione memorizzata nella cache dei dati.
 
 Un caso valido per questo metodo è un ambiente controllato o una tabella Top Game.
@@ -87,12 +87,13 @@ Alcune applicazioni possono basarsi sull'analisi continua per aggiornare i dati 
 
 **Svantaggi**
 * Maggiore complessità nell'implementazione dell'esperienza principale.
-* Potenziale sovraccarico dell'elaborazione aggiuntiva per la grafica o la fisica, in quanto le modifiche devono essere inserite in modo incrementale da questi sistemi.
-* Maggiore potenza, temperatura e effetti sulla CPU.
+* Potenziale sovraccarico dell'elaborazione di elementi grafici e fisici aggiuntivi, in quanto le modifiche devono essere inserite in modo incrementale da questi sistemi.
+* Maggiore potenza, temperatura e effetti della CPU.
 
-Un caso ideale per questo metodo è quello in cui gli ologrammi devono interagire con gli oggetti mobili, ad esempio, un'automobile olografica che può inserirsi in uno sportello a seconda che sia aperta o chiusa.
+Un caso ideale per questo metodo è quello in cui gli ologrammi dovrebbero interagire con gli oggetti mobili, ad esempio, un'automobile olografica che può inserirsi in uno sportello a seconda che sia aperta o chiusa.
 
 ## <a name="see-also"></a>Vedere anche
+
 * [Mapping spaziale](spatial-mapping.md)
 * [Sistemi di coordinate](coordinate-systems.md)
 * [Progettazione dell'audio spaziale](spatial-sound-design.md)

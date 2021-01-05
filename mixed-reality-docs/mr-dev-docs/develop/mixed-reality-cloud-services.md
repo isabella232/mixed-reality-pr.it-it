@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realtà mista, sviluppare, sviluppo, HoloLens, servizi cloud, Azure, rendering remoto, ancoraggi nello spazio, servizi cognitivi, cognizione, unity, machine learning, traduzione vocale, visione artificiale, Microsoft Graph
-ms.openlocfilehash: f69ec9672898caf01092d805e5c83df48a14a65e
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: e660556810cdea86321b7826217268e6c8d0850a
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925932"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865406"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Panoramica dei servizi cloud di realtà mista di Azure
 
@@ -28,7 +28,7 @@ I servizi cloud di Realtà mista come **Rendering remoto di Azure** e **Ancoragg
 ### <a name="azure-remote-rendering"></a>Rendering remoto di Azure
 Rendering remoto di Azure, o ARR, è un servizio che consente di eseguire il rendering in tempo reale di modelli 3D estremamente complessi e di trasmetterli a un dispositivo. ARR è attualmente disponibile in anteprima pubblica e può essere aggiunto a progetti Unity o C++ nativi destinati a HoloLens 2 o PC desktop Windows.
 
-![ Immagine di Rendering remoto](../design/images/RemoteRendering.jpg)
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-Azure-Mixed-Reality-Services-Azure-Remote-Rendering/player]
 
 ARR è un componente fondamentale di ogni applicazione di realtà mista eseguita in un dispositivo senza tethering, poiché questo tipo di dispositivi ha una potenza di calcolo inferiore per il rendering. Si prenda come esempio il confronto seguente tra i modelli di motore affiancati. Il modello ad alta fedeltà a sinistra ha più di 18 milioni triangoli, mentre il modello ridotto a destra ne ha circa 200.000 soltanto. Negli scenari in cui ogni dettaglio è importante, ad esempio nella gestione di impianti industriali, nella revisione della progettazione di asset come i motori di autocarri, nella pianificazione della chirurgia preoperatoria e altro ancora, la visualizzazione 3D dà vita al dettaglio. In questo modo, progettisti, tecnici, medici e studenti possono comprendere meglio le informazioni complesse ed effettuare la scelta giusta. Questa semplificazione, tuttavia, può comportare la perdita di dettagli importanti necessari per prendere decisioni aziendali e di progettazione fondamentali.
 

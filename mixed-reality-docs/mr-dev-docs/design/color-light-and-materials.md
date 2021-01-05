@@ -1,22 +1,23 @@
 ---
 title: Colore, luce e materiali
-description: La progettazione di contenuto per la realtà mista richiede un'attenta considerazione del colore, dell'illuminazione e dei materiali per ognuno degli asset visivi usati nell'esperienza.
+description: La progettazione di contenuto per la realtà mista richiede un'attenta considerazione di colore, illuminazione e materiali per tutti gli asset visivi.
 author: mavitazk
 ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, colore, luce, materiali, cuffie per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 9333be5316f5b3ba317aac3ef8591c0dd65370d4
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 5d99941f068e808ba14d97084ef840a66aded2a9
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702787"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848059"
 ---
 # <a name="color-light-and-materials"></a>Colore, luce e materiali
+
 ![Colore, luce e materiali](images/RemoteRendering.jpg)
 
-La progettazione di contenuto per la realtà mista richiede un'attenta considerazione del colore, dell'illuminazione e dei materiali per ognuno degli asset visivi usati nell'esperienza. Queste decisioni possono essere per entrambi gli scopi estetici, ad esempio l'uso di luce e materiale per impostare il tono di un ambiente immersivo e le finalità funzionali, ad esempio l'uso di colori sorprendenti per avvertire gli utenti di un'azione imminente. Ognuna di queste decisioni deve essere ponderata rispetto alle opportunità e ai vincoli del dispositivo di destinazione dell'esperienza.
+La progettazione di contenuto per la realtà mista richiede un'attenta considerazione di colore, illuminazione e materiali per tutte le risorse virtuali. Gli scopi estetici possono includere l'uso della luce e del materiale per impostare il tono di un ambiente immersivo, mentre gli scopi funzionali possono includere l'uso di colori sorprendenti per avvisare gli utenti di un'azione imminente. Ognuna di queste decisioni deve essere ponderata rispetto alle opportunità e ai vincoli del dispositivo di destinazione dell'esperienza.
 
 Di seguito sono riportate le linee guida specifiche per il rendering degli asset su auricolari immersivi e olografici. Molti di questi elementi sono strettamente legati ad altre aree tecniche e un elenco di argomenti correlati è reperibile nella sezione [vedere anche](color-light-and-materials.md#see-also) alla fine di questo articolo.
 
@@ -24,9 +25,10 @@ Di seguito sono riportate le linee guida specifiche per il rendering degli asset
 
 Il contenuto di cui è stato eseguito il rendering negli auricolari immersivi viene visualizzato in modo visivo diverso rispetto al contenuto visualizzato negli auricolari olografici. Mentre gli auricolari immersivi in genere eseguono il rendering del contenuto in modo analogo a quanto ci si aspetterebbe in una schermata 2D, le cuffie olografiche come HoloLens usano le visualizzazioni RGB a colori sequenziali per il rendering degli ologrammi.
 
-Per testare le esperienze olografiche in un auricolare olografico, è necessario sempre tempo. L'aspetto del contenuto, anche se è compilato in modo specifico per i dispositivi olografici, sarà diverso da quello dei monitoraggi secondari, degli snapshot e della visualizzazione spettatore. Ricordarsi di esaminare le esperienze con un dispositivo, testare l'illuminazione degli ologrammi e osservare tutti i lati (oltre a quanto sopra e sotto) come viene eseguito il rendering del contenuto. Assicurarsi di eseguire il test in un intervallo di impostazioni di luminosità sul dispositivo, in quanto è improbabile che tutti gli utenti condividano un valore predefinito presupposto, oltre a una serie diversificata di condizioni di illuminazione.
+Per testare le esperienze olografiche in un auricolare olografico, è necessario sempre tempo. L'aspetto del contenuto, anche se è compilato in modo specifico per i dispositivi olografici, sarà diverso da quello dei monitoraggi secondari, degli snapshot e della visualizzazione spettatore. Ricordarsi di esaminare le esperienze con un dispositivo, testare l'illuminazione degli ologrammi e osservare tutti i lati, oltre a quanto riportato sopra e sotto, il rendering del contenuto. Assicurarsi di eseguire il test con un intervallo di impostazioni di luminosità nel dispositivo. È improbabile che tutti gli utenti condividano un valore predefinito presupposto e un set diversificato di condizioni di illuminazione.
 
 ## <a name="fundamentals-of-rendering-on-holographic-devices"></a>Nozioni fondamentali sul rendering nei dispositivi olografici
+
 * I **dispositivi olografici hanno visualizzazioni additive** : gli ologrammi vengono creati aggiungendo luce alla luce dal mondo reale. il bianco verrà visualizzato con luminosità, mentre il nero verrà visualizzato come trasparente.
 
 * **L'impatto sui colori varia a seconda dell'ambiente dell'utente. le** varie condizioni di illuminazione sono disponibili nella stanza di un utente. Consente di creare contenuti con livelli di contrasto appropriati per una maggiore chiarezza.
@@ -35,21 +37,22 @@ Per testare le esperienze olografiche in un auricolare olografico, è necessario
 
 ## <a name="designing-with-color"></a>Progettazione con colore
 
-A causa della natura delle visualizzazioni additive, alcuni colori possono apparire diversi in schermi olografici. Alcuni colori verranno visualizzati in ambienti di illuminazione mentre altri saranno meno interessati. I colori a freddo tendono a tornare in background, mentre i colori caldi vengono spostati in primo piano. Considerare questi fattori quando si esplorano i colori nelle proprie esperienze:
+A causa della natura degli schermi additivi, alcuni colori possono apparire diversi in schermi olografici. Alcuni colori verranno visualizzati in ambienti di illuminazione mentre altri saranno meno interessati. I colori a freddo tendono a tornare in background, mentre i colori caldi vengono spostati in primo piano. Considerare questi fattori quando si esplorano i colori nelle proprie esperienze:
 
-* Il **rendering di colori luminosi** . il bianco appare molto chiaro e deve essere usato con moderazione. Per la maggior parte dei casi, si consideri un valore bianco intorno a R 235 G 235 B 235. Le vaste aree luminose possono causare disagi da parte dell'utente. Per la finestra dell'interfaccia utente, è consigliabile usare i colori scuri.
+* **Rendering di colori** luminosi. il bianco appare luminoso e deve essere usato con moderazione. Per la maggior parte dei casi, si consideri un valore bianco intorno a R 235 G 235 B 235. Le vaste aree luminose possono causare disagi da parte dell'utente. Per la finestra dell'interfaccia utente, è consigliabile usare colori scuri.
 
 * **Rendering dei colori scuri** : a causa della natura degli schermi additivi, i colori scuri appaiono trasparenti. Un oggetto nero a tinta unita non verrà visualizzato nel mondo reale. Vedere il canale alfa sotto. Per dare l'impressione di "nero", provare con un valore RGB grigio molto scuro, ad esempio 16, 16, 16.
 
 * **Uniformità dei colori** : in genere gli ologrammi vengono resi sufficientemente luminosi in modo da mantenere l'uniformità dei colori, indipendentemente dallo sfondo. È possibile che le aree grandi diventino macchie. Evitare grandi aree di colore chiaro e a tinta unita.
 
-* **Gamut** -HoloLens trae vantaggio da una "ampia gamma di colori", concettualmente simile ad Adobe RGB. Di conseguenza, alcuni colori possono presentare diverse qualità e rappresentazione nel dispositivo.
+* **Gamut** -HoloLens trae vantaggio da una "ampia gamma di colori", concettualmente simile ad Adobe RGB. Di conseguenza, alcuni colori possono mostrare diverse qualità e rappresentazione nel dispositivo.
 
 * **Gamma** : la luminosità e il contrasto dell'immagine sottoposta a rendering variano tra i dispositivi immersivi e olografici. Queste differenze di dispositivi spesso sembrano creare aree scure di colore e ombreggiature, più o meno luminose.
 
 * **Separazione** dei colori, nota anche come "interruzione del colore" o "frangia del colore", la separazione dei colori si verifica in genere con gli ologrammi mobili (incluso il cursore) quando un utente tiene traccia degli oggetti con gli occhi.
 
 ## <a name="technical-considerations"></a>Considerazioni tecniche
+
 * **Aliasing** : si tratta di un aliasing, irregolare o "scale Steps", in cui il bordo della geometria di un ologramma soddisfa il mondo reale. L'uso di trame con un elevato livello di dettaglio può aggravare questo effetto. Le trame devono essere mappate e i filtri sono abilitati. Si consiglia di dissolvere i bordi degli ologrammi o di aggiungere una trama che crei un bordo nero attorno agli oggetti. Evitare la geometria sottile laddove possibile.
 
 * **Canale alfa** : è necessario cancellare il canale alfa in modo da renderlo completamente trasparente per tutte le parti in cui non viene eseguito il rendering di un ologramma. Lasciando i lead alfa non definiti agli artefatti visivi quando si acquisiscono immagini/video dal dispositivo o con la visualizzazione spettatore.
@@ -57,17 +60,18 @@ A causa della natura delle visualizzazioni additive, alcuni colori possono appar
 * **Ammorbidimento della trama** : poiché la luce è additiva nelle visualizzazioni olografiche, è preferibile evitare grandi aree di colore chiaro e a tinta unita, perché spesso non producono l'effetto visivo desiderato.
 
 ## <a name="design-guidelines-for-holographic-display"></a>Linee guida di progettazione per la visualizzazione olografica
+
 ![Occlusione del colore e della mano](images/color_handocclusion.jpg)
 
-Quando si progettano contenuti per le visualizzazioni olografiche, è necessario considerare diversi elementi per ottenere la migliore esperienza. Visitare la pagina [relativa alla progettazione di contenuto per la visualizzazione olografica](designing-content-for-holographic-display.md) per le linee guida e le indicazioni.
+Quando si progettano contenuti per le visualizzazioni olografiche, è necessario considerare diversi elementi per ottenere la migliore esperienza. Vedere [progettazione di contenuto per la visualizzazione olografica](designing-content-for-holographic-display.md) per le linee guida e le indicazioni.
 
 ## <a name="storytelling-with-light-and-color"></a>Storie con luce e colore
 
-Luce e colore possono aiutare a far apparire gli ologrammi in modo più naturale nell'ambiente dell'utente, oltre a fornire materiale sussidiario e guida per l'utente. Per le esperienze olografiche, considerare questi fattori quando si esplorano l'illuminazione e il colore:
+Luce e colore possono aiutare gli ologrammi a comparire più naturalmente nell'ambiente dell'utente e offrire indicazioni e assistenza per l'utente. Per le esperienze olografiche, considerare questi fattori quando si esplorano l'illuminazione e il colore:
 
 :::row:::
     :::column:::
-* **Vignettatura** : un effetto "vignette" per scurire i materiali può aiutare a concentrare l'attenzione dell'utente sul centro del campo di visualizzazione. Questo effetto scurisce il materiale dell'ologramma a un raggio dal vettore di sguardi dell'utente. Si noti che questo è efficace anche quando l'utente Visualizza gli ologrammi da un angolo obliquo o uno sguardo.
+* **Vignettatura** : un effetto "vignette" per scurire i materiali può aiutare a concentrare l'attenzione dell'utente sul centro del campo di visualizzazione. Questo effetto scurisce il materiale dell'ologramma a un raggio dal vettore di sguardi dell'utente. Questa operazione è efficace anche quando l'utente Visualizza gli ologrammi da un angolo obliquo o uno sguardo.
 
 * **Enfasi** : attirare l'attenzione sugli oggetti o sui punti di interazione differenziando colori, luminosità e illuminazione. Per informazioni più dettagliate sui metodi di illuminazione nella narrazione, vedere [pixel cinematografoy-un approccio di illuminazione per la grafica dei computer](http://media.siggraph.org/education/cgsource/Archive/ConfereceCourses/S96/course30.pdf).<br>
         <br>
@@ -96,7 +100,7 @@ I materiali sono elementi fondamentali per la creazione di ologrammi realistici.
 
 ---
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Progettazione di contenuto per la visualizzazione olografica](designing-content-for-holographic-display.md)
 * [Separazione dei colori](../develop/platform-capabilities-and-apis/hologram-stability.md#color-separation)
 * [Ologrammi](../discover/hologram.md)

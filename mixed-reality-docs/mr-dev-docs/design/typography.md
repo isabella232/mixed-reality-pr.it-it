@@ -6,19 +6,19 @@ ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, stile, carattere, tipografia, interfaccia utente, UX, testo, auricolare realtà mista, auricolare di realtà mista di Windows, cuffia virtuale reale, HoloLens
-ms.openlocfilehash: c0e3b23c52925b6fe64dccc7087613e8cd49e851
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 09e0e6029011fdd7fda793f6b6645cb3744baa3b
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703247"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848137"
 ---
 # <a name="typography"></a>Tipografia
 
 ![Esempio di tipografia in HoloLens](images/typography-cover.png)<br>
 
 
-Il testo è un elemento importante per la distribuzione di informazioni nell'esperienza dell'app. Proprio come per la tipografia su schermi 2D, l'obiettivo è chiarezza e leggibilità. Grazie all'aspetto tridimensionale della realtà mista, è possibile influire sul testo e sull'esperienza utente complessiva in modo ancora più significativo.
+Il testo è un elemento importante per la distribuzione di informazioni nell'esperienza dell'app. Proprio come per la tipografia su schermi 2D, l'obiettivo è chiarezza e leggibilità. Con l'aspetto tridimensionale della realtà mista, c'è la possibilità di influenzare il testo e l'esperienza utente complessiva in modo ancora più ampio.
 
 Quando si parla di tipo in 3D, si tende a pensare a testo 3D estruso e volumetrico. Fatta eccezione per alcune progettazioni di logotipi e altre applicazioni limitate, il testo estruso tende a ridurre la leggibilità del testo. Anche se stiamo progettando esperienze per 3D, usiamo 2D per il tipo perché è più leggibile e più facile da leggere.
 
@@ -37,17 +37,17 @@ Contrasto e gerarchia di compilazione utilizzando dimensioni e pesi diversi per 
 
 ### <a name="limit-your-fonts"></a>Limitare i tipi di carattere
 
-Evitare di usare più di due famiglie di caratteri diverse in un unico contesto. In questo modo si interromperà l'armonia e la coerenza dell'esperienza e si renderà più difficile l'utilizzo delle informazioni. In HoloLens, poiché le informazioni sono sovrapposte all'ambiente fisico, l'utilizzo di un numero eccessivo di stili dei tipi di carattere comporta un peggioramento dell'esperienza. Segoe UI è il tipo di carattere per tutti i progetti digitali Microsoft. Viene usato in modo coerente nella shell della realtà mista di Windows. È possibile scaricare il file del tipo di carattere Segoe UI dalla [pagina Windows Design Toolkit](https://docs.microsoft.com/windows/uwp/design-downloads/).
+Evitare di usare più di due famiglie di caratteri diverse in un unico contesto. Un numero eccessivo di tipi di carattere suddividerà l'armonia e la coerenza dell'esperienza e renderà più difficile l'utilizzo delle informazioni. In HoloLens, poiché le informazioni sono sovrapposte all'ambiente fisico, l'utilizzo di un numero eccessivo di stili dei tipi di carattere comporta un peggioramento dell'esperienza. Segoe UI è il tipo di carattere per tutti i progetti digitali Microsoft. Viene usato in modo coerente nella shell della realtà mista di Windows. È possibile scaricare il file del tipo di carattere Segoe UI dalla [pagina Windows Design Toolkit](https://docs.microsoft.com/windows/uwp/design-downloads/).
 
 [Ulteriori informazioni sul carattere tipografico Segoe UI](https://docs.microsoft.com/windows/uwp/design/style/typography)
 
 ### <a name="avoid-thin-font-weights"></a>Evitare i pesi del carattere sottile
 
-Evitare di usare i pesi per i tipi di carattere chiaro o Semilight per le dimensioni dei tipi in essere, poiché i tratti verticali sottili comportano vibrazioni e riducono la leggibilità I tipi di carattere moderni con uno spessore del tratto sufficiente funzionano correttamente. Ad esempio, Helvetica e Arial sono molto leggibili in HoloLens usando pesi regolari o in grassetto.
+Evitare di usare i pesi per i tipi di carattere chiaro o Semilight per le dimensioni dei tipi in 42 PT perché i tratti verticali sottili si vibrano e peggiorano la leggibilità. I tipi di carattere moderni con uno spessore del tratto sufficiente funzionano correttamente. Ad esempio, Helvetica e Arial sono leggibili in HoloLens usando pesi regolari o in grassetto.
 
-### <a name="color"></a>Colore
+### <a name="color"></a>Color
 
-In HoloLens, poiché gli ologrammi vengono costruiti con un sistema di luce additiva, il testo bianco è altamente leggibile. È possibile trovare esempi di testo bianco nel menu Start e nella barra dell'app. Anche se il testo bianco funziona bene senza una piastra posteriore in HoloLens, un background fisico complesso potrebbe rendere difficile la lettura del tipo. Per migliorare l'attenzione dell'utente e ridurre al minimo la distrazione da uno sfondo fisico, è consigliabile usare un testo bianco su un pannello scuro o colorato.
+In HoloLens, poiché gli ologrammi vengono costruiti con un sistema di luce additiva, il testo bianco è altamente leggibile. È possibile trovare esempi di testo bianco nel menu Start e nella barra dell'app. Anche se il testo bianco funziona bene senza una piastra posteriore in HoloLens, un background fisico complesso potrebbe rendere difficile la lettura del tipo. È consigliabile usare testo bianco su un pannello scuro o colorato per migliorare lo stato attivo dell'utente e ridurre al minimo la distrazione da uno sfondo fisico.
 
 <br>
 
@@ -56,15 +56,15 @@ In HoloLens, poiché gli ologrammi vengono costruiti con un sistema di luce addi
  *Esempi di testo bianco su un pannello posteriore scuro o colorato.*
 <br>
 
-Per usare testo scuro, è necessario usare una piastra indietro luminosa per renderla leggibile. Nei sistemi di colori additivi, il nero viene visualizzato come trasparente. Ciò significa che non sarà possibile visualizzare il testo nero senza una piastra posteriore colorata.
+Per usare testo scuro, è necessario usare una piastra indietro luminosa per renderla leggibile. Nei sistemi di colori additivi, il nero viene visualizzato come trasparente. Ciò significa che non verrà visualizzato il testo nero senza una piastra posteriore colorata.
 
 :::row:::
     :::column:::
-        ![Esempi di testo nero](images/typography-whiteonblack.png)<br>
+        ![Esempi di bianco su nero e nero su testo bianco](images/typography-whiteonblack.png)<br>
         *Esempi di bianco su nero e nero su testo bianco*<br>
     :::column-end:::
     :::column:::
-        ![Esempi di testo nero](images/640px-typography-blackonwhite.jpg)<br>
+        ![Esempi di testo nero nelle app di sistema-archivio e impostazioni](images/640px-typography-blackonwhite.jpg)<br>
         *Esempi di testo nero nelle app di sistema-archivio e impostazioni*<br>
     :::column-end:::
 :::row-end:::
@@ -75,30 +75,31 @@ Per usare testo scuro, è necessario usare una piastra indietro luminosa per ren
 
 ## <a name="recommended-font-size"></a>Dimensioni del carattere consigliate
 
-Come si può immaginare, i tipi di dimensioni usati in un PC o un Tablet (in genere tra 12-32pt) sembrano abbastanza piccoli a una distanza di 2 metri. Dipende dalle caratteristiche di ogni tipo di carattere, ma in generale l'angolo di visualizzazione minimo consigliato e l'altezza del tipo di carattere per la leggibilità sono circa 0,35 °-0,4 °/12.21-13.97mm in base agli studi di ricerca degli utenti. È pari a circa 35 40pt con il fattore di scalabilità introdotto nel [testo nella pagina Unity](../develop/unity/text-in-unity.md) . 
+Come si può immaginare, i tipi di dimensioni usati in un PC o un Tablet (in genere tra 12-32pt) sono piccoli a una distanza di 2 metri. Dipende dalle caratteristiche di ogni tipo di carattere, ma in generale l'angolo di visualizzazione minimo consigliato e l'altezza del tipo di carattere per la leggibilità sono circa 0,35 °-0,4 °/12.21-13.97 mm in base agli studi di ricerca degli utenti. È circa 35-40 PT con il fattore di scalabilità introdotto nel [testo nella pagina Unity](../develop/unity/text-in-unity.md) . 
 
-Per l'interazione near a 0,45 m (45 cm), l'angolo di visualizzazione del tipo di carattere leggibile minimo e l'altezza sono 0.4 °-0,5 °/3.14 – 3,9 mm. Si tratta di circa 9 12pt con il fattore di scala introdotto nel [testo in Unity](../develop/unity/text-in-unity.md).
+Per l'interazione near a 0,45 m (45 cm), l'angolo di visualizzazione del tipo di carattere leggibile minimo e l'altezza sono 0.4 °-0,5 °/3.14 – 3,9 mm. È circa 9-12 PT con il fattore di scala introdotto nel [testo in Unity](../develop/unity/text-in-unity.md).
 
 ![Contenuto dell'intervallo di interazione near-and-distante ](images/typography-distance-1000px.jpg)
  *nell'intervallo di interazione near and lontano*
 
 ### <a name="the-minimum-legible-font-size"></a>Dimensioni minime del carattere leggibili
+
 | Distanza | Angolo di visualizzazione | Altezza testo | Dimensioni carattere * * |
 |---------|---------|---------|---------|
 | 45 cm (distanza di manipolazione diretta) | 0.4 °-0,5 ° | 3.14 – 3,9 mm | 8,9 – 11.13 PT |
-| 2m | 0,35 °-0,4 ° | 12.21 – 13.97 mm | 34.63-39.58 PT |
-
+| 2 m | 0,35 °-0,4 ° | 12.21 – 13.97 mm | 34.63-39.58 PT |
 
 ### <a name="the-comfortably-legible-font-size"></a>Dimensioni del carattere facilmente leggibili
+
 | Distanza | Angolo di visualizzazione | Altezza testo | Dimensioni carattere * * |
 |---------|---------|---------|---------|
 | 45 cm (distanza di manipolazione diretta) | 0,65 °-0,8 ° | 5.1-6,3 mm | 14.47-17,8 PT |
-| 2m | 0.6 °-0,75 ° | 20,9-26.2 mm | 59.4-74.2 PT |
+| 2 m | 0.6 °-0,75 ° | 20,9-26.2 mm | 59.4-74.2 PT |
 
 
-Segoe UI (il tipo di carattere predefinito per Windows) funziona correttamente nella maggior parte dei casi. Tuttavia, evitare di usare famiglie di caratteri chiaro o semichiaro in piccole dimensioni poiché i tratti verticali sottili vibrano e diminuiscono la leggibilità. I tipi di carattere moderni con uno spessore del tratto sufficiente funzionano correttamente. Ad esempio, Helvetica e Arial sembrano splendidi e sono molto leggibili in HoloLens con pesi regolari o in grassetto.
+Segoe UI (il tipo di carattere predefinito per Windows) funziona correttamente nella maggior parte dei casi. Evitare di usare famiglie di caratteri chiaro o semichiaro in piccole dimensioni poiché i tratti verticali sottili vibrano e diminuiscono la leggibilità. I tipi di carattere moderni con uno spessore del tratto sufficiente funzionano correttamente. Ad esempio, Helvetica e Arial sembrano splendidi e sono leggibili in HoloLens con pesi regolari o in grassetto.
 
-**Per informazioni più dettagliate sul calcolo delle dimensioni del testo in Unity, consultare il [testo in Unity](../develop/unity/text-in-unity.md)**
+**Per informazioni più dettagliate sul calcolo delle dimensioni del testo in Unity, vedere il [testo in Unity](../develop/unity/text-in-unity.md)**
 
 ![Visualizzazione angolo, ](images/Text_In_Unity_ViewingAngle.jpg)
  *angolo e altezza del testo*
@@ -128,7 +129,7 @@ Segoe UI (il tipo di carattere predefinito per Windows) funziona correttamente n
 
 ---
 
+## <a name="see-also"></a>Vedi anche
 
-## <a name="see-also"></a>Vedere anche
 * [Testo in Unity](../develop/unity/text-in-unity.md)
 * [Colore, luce e materiali](../color,-light-and-materials.md)

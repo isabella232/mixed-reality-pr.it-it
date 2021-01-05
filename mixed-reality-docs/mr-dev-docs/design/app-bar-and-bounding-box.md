@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
 keywords: Realtà mista di Windows, barra delle applicazioni, rettangolo di delimitazione, cuffie per realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: f718babfa07c69b6579fbd78f306a10f0ed6aad5
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 0f94aa3842afbfbd544716b801c7cb88d7be3abc
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703057"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847650"
 ---
 # <a name="bounding-box-and-app-bar"></a>Rettangolo di selezione e barra dell'app
 ![Il delimitatore è l'interfaccia standard per la manipolazione di oggetti in realtà mista.](images/UX_Hero_BoundingBox.jpg)<br>
@@ -19,12 +19,12 @@ ms.locfileid: "94703057"
 
 ## <a name="what-is-the-bounding-box"></a>Che cos'è il rettangolo di delimitazione?
 
-Il delimitatore è l'interfaccia standard per la manipolazione di oggetti in realtà mista. Fornisce all'utente la convenienza che l'oggetto è attualmente modificabile. In HoloLens 2 il rettangolo di delimitazione funziona con la manipolazione diretta della mano e risponde alla vicinanza finger's dell'utente. Mostra commenti visivi per aiutare l'utente a percepire la distanza dall'oggetto.
+Il delimitatore è l'interfaccia standard per la manipolazione di oggetti in realtà mista. Questa funzionalità fornisce all'utente un segnale visivo che l'oggetto è attualmente modificabile. In HoloLens 2 il rettangolo di delimitazione funziona con la manipolazione diretta della mano e risponde alla vicinanza finger's dell'utente. Mostra commenti visivi per aiutare l'utente a percepire la distanza dall'oggetto.
 
 :::row:::
     :::column:::
         ### <a name="scaling-an-objectbr"></a>Ridimensionamento di un oggetto<br>
-        Gli angoli del rettangolo di delimitazione indicano all'utente che l'oggetto può essere ridimensionato. Gli handle seguono un modello molto noto per la regolazione della scala. Questa offerta visiva mostra agli utenti l'area totale dell'oggetto, anche se non è visibile al di fuori di una modalità di regolazione. Questo è particolarmente importante perché, in caso contrario, un oggetto bloccato a un altro oggetto o a una superficie può sembrare comportarsi come se fosse presente spazio che non dovrebbe essere presente.<br>
+        Gli angoli del rettangolo di delimitazione indicano all'utente che l'oggetto può essere ridimensionato. Gli handle seguono un modello molto noto per la regolazione della scala. Questo segnale visivo Mostra agli utenti l'area totale dell'oggetto, anche se non è visibile al di fuori di una modalità di regolazione. Senza questa funzionalità, un oggetto bloccato a un altro oggetto o a una superficie può sembrare un comportamento simile a quello di uno spazio che non dovrebbe essere presente.<br>
         <br>
         *Ciclo video: ridimensionamento di un oggetto tramite il rettangolo di delimitazione*
     :::column-end:::
@@ -74,12 +74,12 @@ Il delimitatore è l'interfaccia standard per la manipolazione di oggetti in rea
 
 ## <a name="what-is-the-app-bar"></a>Che cos'è la barra dell'app?
 
-La barra dell'app è un menu a livello di oggetto contenente una serie di pulsanti visualizzati sul bordo inferiore dei limiti di un ologramma. Questo modello viene in genere usato per offrire agli utenti la possibilità di rimuovere e modificare gli ologrammi. La barra dell'app è stata progettata principalmente per gestire gli oggetti posizionati nell'ambiente di un utente. Insieme al rettangolo di delimitazione, un utente ha il controllo completo sulla posizione e sulla modalità di orientamento degli oggetti in realtà mista.
+La barra dell'app è un menu a livello di oggetto che contiene una serie di pulsanti visualizzati sul bordo inferiore dei limiti di un ologramma. Questo modello viene in genere usato per consentire agli utenti di rimuovere e modificare gli ologrammi. La barra dell'app è stata progettata principalmente per gestire gli oggetti posizionati nell'ambiente di un utente. Insieme al rettangolo di delimitazione, un utente ha il controllo completo sulla posizione e sulla modalità di orientamento degli oggetti in realtà mista.
 
 :::row:::
     :::column:::
         ### <a name="the-app-bar-follows-the-userbr"></a>La barra dell'app segue l'utente<br>
-        Poiché questo modello viene usato con oggetti bloccati dal mondo, quando un utente si sposta intorno all'oggetto, la barra dell'app verrà sempre visualizzata sul lato degli oggetti più vicino all'utente. Sebbene questo non sia il tabellone, ottiene lo stesso risultato. impedire la posizione di un utente per occludere o bloccare la funzionalità che altrimenti sarebbe disponibile da una posizione diversa nell'ambiente. <br>
+        Poiché questo modello viene usato con oggetti bloccati dal mondo, quando un utente si sposta intorno all'oggetto, la barra dell'app verrà sempre visualizzata sul lato degli oggetti più vicino all'utente. Anche se non si tratta tecnicamente di un tabellone, questa funzionalità consente di ottenere lo stesso risultato. Impedire la posizione di un utente per occludere o bloccare la funzionalità che altrimenti sarebbe disponibile da una posizione diversa nell'ambiente. <br>
         <br>
         *Ciclo video: aggirare un ologramma, la barra dell'app segue*
     :::column-end:::
@@ -93,7 +93,7 @@ La barra dell'app è un menu a livello di oggetto contenente una serie di pulsan
 
 
 ## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a>Rettangolo di delimitazione in MRTK (Mixed Reality Toolkit) per Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornisce script e prefabbricati per il rettangolo di delimitazione e la barra dell'app. È possibile aggiungere un rettangolo di delimitazione semplicemente assegnando lo script BoundingBox.cs su qualsiasi oggetto.
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornisce script e prefabbricati per il rettangolo di delimitazione e la barra dell'app. È possibile aggiungere un rettangolo di delimitazione assegnando lo script BoundingBox.cs su qualsiasi oggetto.
 
 * [MRTK-rettangolo di delimitazione](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)
 
@@ -103,7 +103,7 @@ La barra dell'app è un menu a livello di oggetto contenente una serie di pulsan
 ---
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

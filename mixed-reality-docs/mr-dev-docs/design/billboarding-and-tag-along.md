@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, Billboard, tag-along, cuffie per realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 1f40e1b180eccd8b79da43a07f969375d5135508
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 44f2678fe2f8e4be071086f46037749d1df61ae4
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702887"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848033"
 ---
 # <a name="billboarding-and-tag-along"></a>Billboarding e tag-along
 
@@ -22,9 +22,9 @@ ms.locfileid: "94702887"
 
 ## <a name="what-is-billboarding"></a>Che cos'è il tabellone?
 
-Il tabellone è un concetto di comportamento che può essere applicato a oggetti in realtà mista. Gli oggetti con il tabellone sono sempre orientati a fronte dell'utente. Questa operazione è particolarmente utile con i sistemi di testo e di menu in cui gli oggetti statici posizionati nell'ambiente dell'utente (con blocco globale) sarebbero altrimenti nascosti o illeggibili se un utente dovesse spostarsi.
+Il tabellone è un concetto di comportamento che può essere applicato a oggetti in realtà mista. Gli oggetti con il tabellone sono sempre orientati a fronte dell'utente. I sistemi di testo e menu sono casi d'uso comuni, in cui gli oggetti statici inseriti nell'ambiente dell'utente (con blocco globale) sarebbero altrimenti nascosti o illeggibili quando gli utenti si spostano.
 
-Gli oggetti con il tabellone abilitato possono essere ruotati liberamente nell'ambiente dell'utente. Possono anche essere vincolati a un singolo asse, a seconda delle considerazioni di progettazione. Tenere presente che gli oggetti di cui è stato effettuato il Billboard possono ritagliare o occludere se sono posizionati troppo vicino ad altri oggetti o in HoloLens, troppo vicino alle superfici analizzate. Per evitare questo problema, considerare il footprint totale che un oggetto può produrre quando ruotato sull'asse abilitato per il tabellone.
+Gli oggetti con il tabellone abilitato possono essere ruotati liberamente nell'ambiente dell'utente. Possono anche essere vincolati a un singolo asse, a seconda delle considerazioni di progettazione. Tenere presente che gli oggetti di cui è stato effettuato il Billboard possono essere ritagliati o occludereti quando vengono posizionati troppo vicini ad altri oggetti o in HoloLens, troppo vicino alle superfici analizzate. Per evitare questo problema, considerare il footprint totale che un oggetto può produrre quando ruotato sull'asse abilitato per il tabellone.
 
 <br>
 
@@ -36,18 +36,18 @@ Tag-Along è un concetto di comportamento che può essere aggiunto agli ologramm
 ![Il pannello HoloLens Pins è un ottimo esempio del comportamento dei tag](images/tagalong-1000px.jpg)<br>
 *Il menu Start di HoloLens è un ottimo esempio di comportamento di tag-along*
 
-Gli oggetti tag-along hanno parametri che possono ottimizzare il modo in cui si comportano. Il contenuto può essere all'interno o all'esterno della linea di visione dell'utente nel modo desiderato mentre l'utente si sposta all'interno dell'ambiente. Quando l'utente si sposta, il contenuto tenterà di rimanere all'interno della periferia dell'utente scorrendo verso il bordo della visualizzazione, a seconda della velocità con cui un utente sposta il contenuto temporaneamente fuori dalla visualizzazione. Quando l'utente guarda l'oggetto tag-along, viene visualizzato in modo più completo. Il contenuto è sempre un "colpo d'occhio" in modo che gli utenti non dimentichino mai la direzione in cui si trova il contenuto.
+Gli oggetti tag-along hanno parametri, che possono ottimizzare il modo in cui si comportano. Il contenuto può essere all'interno o all'esterno della linea di visione dell'utente mentre l'utente si sposta intorno all'ambiente. Quando si sposta, il contenuto tenta di rimanere all'interno della periferia dell'utente scorrendo verso il bordo della visualizzazione. Il contenuto potrebbe essere temporaneamente fuori dalla visualizzazione a seconda della velocità di trasferimento dell'utente. Quando l'utente guarda l'oggetto tag-along, viene visualizzato in modo più completo. Il contenuto è sempre un "colpo d'occhio" in modo che gli utenti non dimentichino mai la direzione in cui si trova il contenuto.
 
-I parametri aggiuntivi possono fare in modo che l'oggetto tag-along si trovi collegato alla testa dell'utente da un elastico. L'attenuazione dell'accelerazione o della decelerazione dà peso all'oggetto che lo rende più fisicamente presente. Questo comportamento primaverile è un'offerta che consente all'utente di creare un modello mentale accurato del funzionamento dei tag. L'audio consente di fornire affordances aggiuntive quando gli utenti hanno oggetti in modalità tag-along. L'audio deve rafforzare la velocità di spostamento; una rotazione a capo veloce dovrebbe offrire un effetto acustico più evidente mentre la velocità naturale dovrebbe avere un audio minimo se si verificano effetti.
+I parametri aggiuntivi possono fare in modo che l'oggetto tag-along si trovi collegato alla testa dell'utente da un elastico. L'attenuazione dell'accelerazione o della decelerazione dà peso all'oggetto che lo rende più fisicamente presente. Questo comportamento primaverile è un'offerta che consente all'utente di creare un modello mentale accurato del funzionamento dei tag. Audio consente di fornire altre indicazioni quando gli utenti dispongono di oggetti in modalità tag-along. L'audio deve rafforzare la velocità di spostamento; una rotazione a capo veloce dovrebbe offrire un effetto acustico più evidente, mentre l'esplorazione a una velocità naturale dovrebbe avere effetti audio minimi o non disponibili.
 
-Proprio come il contenuto con blocco principale, gli oggetti tag-along possono rivelarsi opprimenti o nauseanti se si muovono in modo sfrenato o troppo lungo nella visualizzazione dell'utente. Quando un utente si trova e quindi si arresta rapidamente, i loro sensi indicano che sono stati arrestati. Il loro saldo informa che la loro testa si è interrotta e la loro visione vede il mondo che si interrompe. Tuttavia, se il tag-along continua a essere spostato quando l'utente si arresta, può confonderne i sensi.
+Proprio come il contenuto con blocco principale, gli oggetti tag-along possono rivelarsi opprimenti o nauseanti se si muovono in modo sfrenato o troppo lungo nella visualizzazione dell'utente. Quando un utente si trova, si interrompe rapidamente, i loro sensi indicano che sono stati arrestati. Il loro saldo informa che la loro testa è stata interrotta e la loro visione vede il mondo che smette di diventare. Tuttavia, se il tag-along continua a essere spostato quando l'utente si arresta, può confonderne i sensi.
 
 <br>
 
 ---
 
 ## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Billboard e tag-along in MRTK (Mixed Reality Toolkit) per Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornisce script per il comportamento di Billboard e tag-along. È sufficiente assegnare lo script Billboard.cs a qualsiasi oggetto per aggiungere il comportamento di Billboard e fare in modo che l'oggetto faccia sempre fronte all'utente. Per aggiungere un comportamento tag-along, usare lo script RadialView.cs. È possibile modificare varie opzioni, ad esempio lerping tempo, distanza e grado.
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornisce script per il comportamento di Billboard e tag-along. Assegnare lo script Billboard.cs a qualsiasi oggetto per aggiungere il comportamento di Billboard e fare in modo che l'oggetto faccia sempre fronte all'utente. Per aggiungere un comportamento tag-along, usare lo script RadialView.cs. È possibile modificare varie opzioni, ad esempio lerping tempo, distanza e grado.
 
 * [MRTK-Risolutore viste radiali](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html#radialview)
 * [MRTK-script Billboard](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
@@ -57,7 +57,7 @@ Proprio come il contenuto con blocco principale, gli oggetti tag-along possono r
 
 ---
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

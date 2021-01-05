@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: occhi, sguardi, Head-sguardi, tracking, tracking, Eye Tracking, DirectX, input, ologrammi, cuffie per realtà mista, cuffie per la realtà mista di Windows, cuffie per realtà virtuale
-ms.openlocfilehash: 4e8c638d91125a30cb4121b09a699f9ff6db5892
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 4d7ed9b735b5f3cd7029e42ccc75bc539e3c4f4b
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613045"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848094"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>Input occhi e sguardi in DirectX
 
@@ -84,6 +84,7 @@ Usa la stessa API [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windo
 2. Abilitare la funzionalità di "input dello sguardo" nel manifesto del pacchetto.
 
 ### <a name="requesting-access-to-eye-gaze-input"></a>Richiesta di accesso a Eye-sguardi input
+
 All'avvio dell'app, chiamare [EyesPose:: RequestAccessAsync](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) per richiedere l'accesso al rilevamento degli occhi. Se necessario, il sistema richiede all'utente e restituisce [GazeInputAccessStatus:: allowed](https://docs.microsoft.com//uwp/api/windows.ui.input.gazeinputaccessstatus) dopo che è stato concesso l'accesso. Si tratta di una chiamata asincrona, quindi richiede un po' di gestione aggiuntiva. Nell'esempio seguente viene avviata un'operazione std:: thread scollegata per attendere il risultato, che viene archiviato in una variabile membro denominata *m_isEyeTrackingEnabled*.
 
 ```cpp
@@ -146,6 +147,7 @@ Vengono aggiunte le righe seguenti alla sezione del *pacchetto* nel file appxman
 ```
 
 ### <a name="getting-the-eye-gaze-ray"></a>Ottenere il raggio d'occhio
+
 Dopo aver ricevuto l'accesso a ET, è possibile cogliere il raggio d'occhio per ogni fotogramma.
 Come per l'Head-sguardi, ottenere il [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) chiamando [SpatialPointerPose:: TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) con un timestamp e un sistema di coordinate desiderati. SpatialPointerPose contiene un oggetto [EyesPose](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose) tramite la proprietà [Eyes](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes) . Questo valore non è null solo se è abilitata la funzionalità Eye Tracking. Da qui è possibile verificare se l'utente nel dispositivo ha una calibrazione per il rilevamento degli occhi chiamando [EyesPose:: IsCalibrationValid](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid).  Usare quindi la proprietà [sguardi](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) per ottenere [SpatialRay](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialray) che contiene la posizione e la direzione degli sguardi. La proprietà sguardi può talvolta essere null, quindi assicurarsi di controllarla. Questo problema può verificarsi se un utente calibrato chiude temporaneamente gli occhi.
 
@@ -174,7 +176,8 @@ if (pointerPose)
 ```
 
 ## <a name="fallback-when-eye-tracking-isnt-available"></a>Fallback quando il rilevamento degli occhi non è disponibile
-Come indicato nella documentazione di progettazione per il [monitoraggio degli occhi](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-is-not-available), sia le finestre di progettazione che gli sviluppatori devono tenere presenti le istanze in cui i dati di rilevamento degli occhi potrebbero non essere disponibili.
+
+Come indicato nella documentazione di progettazione per il [monitoraggio degli occhi](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-isnt-available), sia le finestre di progettazione che gli sviluppatori devono tenere presenti le istanze in cui i dati di rilevamento degli occhi potrebbero non essere disponibili.
 
 I dati non sono disponibili per diversi motivi:
 * Un utente che non è stato calibrato
@@ -190,11 +193,12 @@ Sebbene alcune API siano già state citate in questo documento, di seguito viene
 * Verificare che l'utente abbia specificato l'autorizzazione dell'app per usare i dati di rilevamento degli occhi: recuperare il _' GazeInputAccessStatus '_ corrente. Un esempio di come eseguire questa operazione è illustrato nella pagina relativa alla [richiesta di accesso a sguardi input](https://docs.microsoft.com/windows/mixed-reality/gaze-in-directX#requesting-access-to-gaze-input).   
 
 È anche possibile verificare che i dati di rilevamento degli occhi non siano obsoleti aggiungendo un timeout tra gli aggiornamenti dei dati di rilevamento degli occhi ricevuti e altrimenti il fallback a Head-sguardi, come descritto di seguito.   
-Per ulteriori informazioni, vedere le [considerazioni sulla progettazione di fallback](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-is-not-available) .
+Per ulteriori informazioni, vedere le [considerazioni sulla progettazione di fallback](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-isnt-available) .
 
 <br>
 
 ## <a name="correlating-gaze-with-other-inputs"></a>Correlazione di sguardi con altri input
+
 In alcuni casi potrebbe essere necessario un [SpatialPointerPose](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose) che corrisponda a un evento nel passato. Ad esempio, se l'utente esegue una scelta aerea, l'app potrebbe voler sapere cosa stavano cercando. A questo scopo, l'uso di [SpatialPointerPose:: TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) con il tempo previsto per i frame potrebbe non essere accurato a causa della latenza tra l'elaborazione dell'input di sistema e l'ora di visualizzazione. Inoltre, se si usa il controllo degli sguardi per la destinazione, gli occhi tendono a proseguire anche prima di terminare un'azione di commit. Si tratta di un problema minore per un semplice tocco, ma diventa più importante quando si combinano i comandi Long Voice con rapidi movimenti oculari. Un modo per gestire questo scenario è eseguire un'ulteriore chiamata a  [SpatialPointerPose:: TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp), usando un timestamp cronologico corrispondente all'evento di input.  
 
 Tuttavia, per l'input che viene indirizzato attraverso SpatialInteractionManager, è disponibile un metodo più semplice. [SpatialInteractionSourceState](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) dispone di una propria funzione [TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose) . Chiamando che fornirà un [SpatialPointerPose](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose) perfettamente correlato senza le congetture. Per altre informazioni sull'uso di SpatialInteractionSourceStates, vedere la documentazione su [hands and Motion Controllers in DirectX](hands-and-motion-controllers-in-directx.md) .
@@ -202,6 +206,7 @@ Tuttavia, per l'input che viene indirizzato attraverso SpatialInteractionManager
 <br>
 
 ## <a name="calibration"></a>Calibrazione
+
 Per il corretto funzionamento dell'analisi degli occhi, è necessario che ogni utente debba esaminare la [calibrazione degli utenti](../../calibration.md). In questo modo, il dispositivo può modificare il sistema per un'esperienza di visualizzazione più comoda e di qualità superiore per l'utente e garantire il rilevamento accurato degli occhi allo stesso tempo. Gli sviluppatori non devono eseguire alcuna operazione al termine della gestione della calibrazione degli utenti. Il sistema garantisce che all'utente venga richiesto di calibrare il dispositivo nei casi seguenti:
 * L'utente sta usando il dispositivo per la prima volta
 * L'utente ha rifiutato in precedenza il processo di calibrazione
@@ -211,7 +216,8 @@ Gli sviluppatori devono garantire un supporto adeguato per gli utenti in cui i d
 
 <br>
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
+
 * [Calibrazione](../../calibration.md)
 * [Sistemi di coordinate in DirectX](coordinate-systems-in-directx.md)
 * [Eye-sguardi su HoloLens 2](../../design/eye-tracking.md)

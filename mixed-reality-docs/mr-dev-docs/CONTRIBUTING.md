@@ -5,20 +5,28 @@ author: mattwojo
 ms.author: mattwoj
 ms.date: 03/21/2018
 ms.topic: article
-ms.openlocfilehash: 0a71072a27befc4295b82e1235cbc75655743056
-ms.sourcegitcommit: 0b406ccbc7ce619e42809ba8dfdc47d83f4917ff
+ms.openlocfilehash: 47689a53557e6ce9b97d0e9d834a70fb0a7786d0
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97691314"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865416"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>Contributo alla documentazione per sviluppatori di realtà mista
 
 Benvenuti nel [repository pubblico per la documentazione per sviluppatori di realtà mista](https://github.com/MicrosoftDocs/mixed-reality/tree/master/mixed-reality-docs). Eventuali articoli creati o modificati in questo repository **saranno visibili al pubblico.** 
 
-La documentazione relativa alla realtà mista è ora disponibile nella piattaforma docs.microsoft.com, che usa Markdown con le funzionalità di Markdig di GitHub. Il contenuto modificato in questo repository viene formattato in pagine stilizzate visualizzate all'indirizzo https://docs.microsoft.com/windows/mixed-reality . Se si vuole contribuire alla documentazione degli appassionati di HoloLens o VR, visitare i rispettivi repository [HoloLens](https://github.com/MicrosoftDocs/Hololens) e [VR](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) .
+La documentazione relativa alla realtà mista è ora disponibile nella piattaforma docs.microsoft.com, che usa Markdown con le funzionalità di Markdig di GitHub. Il contenuto modificato in questo repository viene formattato in pagine stilizzate visualizzate all'indirizzo https://docs.microsoft.com/windows/mixed-reality . 
 
 Questa pagina illustra i passaggi e le linee guida di base per contribuire e i collegamenti alle nozioni di base di Markdown. Grazie per il contributo!
+
+## <a name="available-repos"></a>Repository disponibili
+
+| Nome del repository | URL |
+| --- | --- |
+| Realtà mista | [MicrosoftDocs/Mixed-Reality](https://docs.microsoft.com/windows/mixed-reality) |
+| Guida per gli appassionati di VR | [MicrosoftDocs/mixed-Real/appassionati-Guida](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
+| HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
 
 ## <a name="before-you-start"></a>Prima di iniziare
 

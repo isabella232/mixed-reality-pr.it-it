@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, controlli, interfaccia utente, UX, indicatore di stato, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: aa74ae1bf9dae9831743aeaf6ce18df196784ded
-ms.sourcegitcommit: bec6029b2780c54cc04a45ef7ae5df3f5b4727c1
+ms.openlocfilehash: 3f24f7095147a0d220df8adc42b67a1b8e4053c9
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96470513"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848278"
 ---
 # <a name="progress-indicator"></a>Indicatore di stato
 
@@ -19,7 +19,7 @@ ms.locfileid: "96470513"
 
 <img src="images/MRTK_ProgressIndicator.gif" alt="Progress ring example in HoloLens" width="940px">
 
-Un controllo di stato fornisce all'utente un feedback nel caso in cui sia in corso un'operazione di lunga durata. Può significare che l'utente non può interagire con l'app quando l'indicatore di stato è visibile e può anche indicare quanto è il tempo di attesa stimato, a seconda dell'indicatore usato.
+Un controllo progress fornisce il feedback che è in corso un'operazione a esecuzione prolungata. Quando un indicatore di stato è visibile, gli utenti possono visualizzare il tempo di attesa e non possono interagire con l'app.
 
 <br>
 
@@ -27,12 +27,12 @@ Un controllo di stato fornisce all'utente un feedback nel caso in cui sia in cor
 
 ## <a name="types-of-progress"></a>Tipi di stato
 
-È importante fornire le informazioni sull'utente su ciò che accade. In realtà mista gli utenti possono essere facilmente distratti da ambienti fisici o oggetti se l'app non fornisce un feedback visivo efficace. Per le situazioni in cui sono necessari alcuni secondi, ad esempio quando i dati vengono caricati o una scena viene aggiornata, è consigliabile visualizzare un indicatore visivo. Sono disponibili due opzioni per indicare all'utente che è in corso un'operazione, ovvero un indicatore di **stato** o un **anello di avanzamento**.
+È importante fornire le informazioni sull'utente su ciò che accade. In realtà mista, gli utenti possono essere facilmente distratti dall'ambiente fisico o dagli oggetti se l'app non ha un feedback visivo valido. Per le situazioni in cui sono necessari alcuni secondi, ad esempio quando i dati vengono caricati o una scena viene aggiornata, è consigliabile mostrare un indicatore visivo. Sono disponibili due opzioni per indicare all'utente che è in corso un'operazione, ovvero un indicatore di **stato** o un **anello di avanzamento**.
 
 :::row:::
     :::column:::
         ### <a name="progress-barbr"></a>Barra di stato<br>
-        Un indicatore di stato Mostra la percentuale di completamento di un'attività. Deve essere usato durante un'operazione la cui durata è nota (determinata), ma lo stato di avanzamento non deve bloccare l'interazione dell'utente con l'app.<br>
+        Un indicatore di stato Mostra la percentuale di completamento di un'attività. Deve essere usato durante un'operazione la cui durata è nota (determinata), ma lo stato di avanzamento non dovrebbe bloccare l'interazione dell'utente con l'app.<br>
         <br>
         *Image: esempio di indicatore di stato in HoloLens*
     :::column-end:::
@@ -49,13 +49,13 @@ Un controllo di stato fornisce all'utente un feedback nel caso in cui sia in cor
 :::row:::
     :::column:::
         ### <a name="progress-ringbr"></a>Anello di stato<br>
-        Un anello di avanzamento ha solo uno stato indeterminato e deve essere usato quando ogni ulteriore interazione con l'utente viene bloccata fino al completamento dell'operazione.<br>
+        Un anello di avanzamento ha uno stato indeterminato e deve essere usato quando l'interazione dell'utente viene bloccata fino al completamento dell'operazione.<br>
         <br>
         *Immagine: esempio di anello di stato in HoloLens*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![Esempio di anello di stato in HoloLens](images/640px-progressring.jpg)<br>
+       ![Esempio di anello di stato nel dispositivo HoloLens](images/640px-progressring.jpg)<br>
     :::column-end:::
 :::row-end:::
 

@@ -6,32 +6,28 @@ ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: Realtà mista, sguardo, targeting, interazione, progettazione, monitoraggio degli occhi, rilevamento Head, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: a901e505d8e282e52078f5635627fbc2018a27b5
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: f9e79f8d600002f63e87316ea588741a21c0d68b
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702407"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847929"
 ---
 # <a name="gaze-and-commit"></a>Sguardo fisso e commit
 
-_Sguardi e commit_ sono un modello di input fondamentale che è strettamente correlato al modo in cui si interagisce con i computer usando il mouse: _Point & fare clic su_.
-In questa pagina vengono introdotti due tipi di input di sguardi (occhio e sguardo) e diversi tipi di azioni di commit. 
-_Sguardi e commit_ sono considerati un modello di input molto lungo con manipolazione indiretta.
-Ciò significa che è preferibile usare per interagire con contenuto olografico non raggiunto.
+_Sguardi e commit_ sono un modello di input fondamentale che è strettamente correlato al modo in cui si interagisce con i computer usando il mouse: _Point & fare clic su_. In questa pagina vengono introdotti due tipi di input di sguardi (occhio e sguardo) e diversi tipi di azioni di commit. _Sguardi e commit_ sono considerati un modello di input molto lungo con manipolazione indiretta. È consigliabile usarlo per interagire con contenuto olografico non raggiungibile.
 
-Gli auricolari per la realtà mista possono usare la posizione e l'orientamento dell'intestazione dell'utente per determinare il vettore di direzione della direzione. Per comprendere questo concetto, pensa a un laser che punti dritto davanti partendo direttamente tra gli occhi dell'utente. Questa è una grossolana approssimazione del punto guardato dall'utente. L'applicazione può intersecare questo raggio con oggetti virtuali o reali e creare un cursore in tale posizione per consentire all'utente di conoscere gli elementi attualmente destinati.
+Gli auricolari per la realtà mista possono usare la posizione e l'orientamento dell'intestazione dell'utente per determinare il vettore di direzione della direzione. Si pensi a sguardi come un laser che punta direttamente direttamente tra gli occhi dell'utente. Questa è una grossolana approssimazione del punto guardato dall'utente. L'applicazione può intersecare questo raggio con oggetti virtuali o reali e creare un cursore in tale posizione per consentire all'utente di sapere di cosa sono destinati.
 
-Oltre al controllo, alcuni auricolari con realtà mista, ad esempio HoloLens 2, includono sistemi di rilevamento degli occhi che producono un vettore di sguardi oculari. In questo modo si ottiene una misurazione precisa di dove sta guardando l'utente. In entrambi i casi, lo sguardo rappresenta un segnale importante per lo scopo dell'utente. Maggiore è il sistema in grado di interpretare e prevedere le azioni previste dall'utente, gli aumenti di soddisfazione degli utenti e migliorare le prestazioni.
+Oltre al controllo, alcuni auricolari con realtà mista, ad esempio HoloLens 2, includono sistemi di rilevamento degli occhi che producono un vettore di sguardi oculari. In questo modo si ottiene una misurazione precisa di dove sta guardando l'utente. In entrambi i casi, lo sguardo rappresenta un segnale importante per lo scopo dell'utente. Maggiore è il sistema in grado di interpretare e prevedere le azioni previste dall'utente, maggiore è il miglioramento delle prestazioni e della soddisfazione degli utenti.
 
 Di seguito sono riportati alcuni esempi di come uno sviluppatore di realtà mista può trarre vantaggio da un occhio d'occhio:
 * L'app può intersecare sguardi con gli ologrammi nella scena per determinare il punto in cui l'attenzione dell'utente è (più precisa con occhio).
-* L'app può effettuare il canale di movimenti e pressioni del controller in base allo sguardo dell'utente, consentendo all'utente di selezionare, attivare, acquisire, scorrere o interagire in altro modo con i propri ologrammi.
+* L'app può effettuare il canale di movimenti e pressioni del controller in base allo sguardo dell'utente, che consente all'utente di selezionare, attivare, acquisire, scorrere o interagire in altro modo con i loro ologrammi.
 * L'app può consentire all'utente di posizionare gli ologrammi su superfici reali intersecando il raggio di sguardi con la mesh di mapping spaziale.
-* L'app può sapere quando l'utente *non* sta osservando la direzione di un oggetto importante, che può portare l'app a fornire suggerimenti visivi e audio per la rotazione verso tale oggetto.
+* L'app può sapere quando l'utente non sta osservando la direzione di un oggetto importante, che può portare l'app a fornire suggerimenti visivi e audio per la rotazione verso tale oggetto.
 
 <br>
-
 
 ## <a name="device-support"></a>Supporto di dispositivi
 
@@ -50,7 +46,7 @@ Di seguito sono riportati alcuni esempi di come uno sviluppatore di realtà mist
     </tr>
      <tr>
         <td>Puntamento con la testa e commit</td>
-        <td>✔️ Consigliata</td>
+        <td>✔️ Consigliato</td>
         <td>✔️ Consigliato (terza scelta - <a href="interaction-fundamentals.md">Vedi le altre opzioni</a>)</td>
         <td>➕ Opzione alternativa</td>
     </tr>
@@ -66,7 +62,7 @@ Di seguito sono riportati alcuni esempi di come uno sviluppatore di realtà mist
 ## <a name="gaze"></a>Sguardo fisso
 
 ### <a name="eye--or-head-gaze"></a>Occhio o Head-sguardi?
-Ci sono diverse considerazioni da tenere in considerazione quando si affronta la domanda se è necessario usare il modello di input "sguardo e commit" o "Head-sguardi e commit". Se si sta sviluppando per un auricolare immersivo o HoloLens (1st Gen), la scelta è semplice: Head-sguardi e commit. Se si sta sviluppando per HoloLens 2, la scelta diventa leggermente più difficile ed è per questo motivo che è importante comprendere i vantaggi e le difficoltà che derivano da ognuno di essi.
+Ci sono diverse considerazioni quando si affronta la domanda se è necessario usare il modello di input "sguardo attento e commit" o "Head-sguardi e commit". Se si sta sviluppando per un auricolare immersivo o per HoloLens (1st Gen), la scelta è semplice: Head-sguardi e commit. Se si sta sviluppando per HoloLens 2, la scelta diventa leggermente più complessa. È importante comprendere i vantaggi e le esigenze di ognuno di essi.
 Nella tabella riportata di seguito sono stati compilati alcuni Pro e con le versioni precedenti per confrontare Head-vs. Eye-sguardi targeting. Questo è molto più completo e si consiglia di saperne di più sugli sguardi mirati in realtà mista:
 * [Eye tracking on HoloLens 2](eye-tracking.md): introduzione generale della nuova funzionalità di rilevamento degli occhi in HoloLens 2, incluse alcune istruzioni per gli sviluppatori. 
 * [Interazione con gli sguardi oculari](eye-gaze-interaction.md): considerazioni sulla progettazione e consigli per la pianificazione dell'uso del rilevamento degli occhi come input.
@@ -95,11 +91,11 @@ Nella tabella riportata di seguito sono stati compilati alcuni Pro e con le vers
         <td>Richiede che mostri un cursore</td>
     </tr>
     <tr>
-        <td>Nessun movimento degli occhi, ad esempio, non adatto per il disegno</td>
+        <td>Nessun movimento degli occhi, ad esempio, non corretto per il disegno</td>
         <td>Maggiore controllo ed esplicito</td>
     </tr>
     <tr>
-        <td>Difficile per gli obiettivi molto piccoli (ad esempio, piccoli pulsanti o collegamenti weblink)</td>
+        <td>Difficile per le destinazioni di piccole dimensioni (ad esempio, piccoli pulsanti o collegamenti weblink)</td>
         <td>Affidabile! Ottimo fallback.</td>
     </tr>
     <tr>
@@ -108,7 +104,7 @@ Nella tabella riportata di seguito sono stati compilati alcuni Pro e con le vers
     </tr>
 </table>
 
-Indipendentemente dal fatto che il modello di input con sguardo e commit venga usato per il modello di input con sguardo e commit, viene usato con diversi insiemi di vincoli di progettazione, che verranno trattati separatamente negli articoli sugli sguardi [e sui commit](gaze-and-commit-eyes.md) e sugli sguardi e sui [commit](gaze-and-commit-head.md) .
+Indipendentemente dal fatto che si usi il modello di input con sguardo e commit, ognuno di essi viene usato con diversi insiemi di vincoli di progettazione. Questi sono trattati separatamente negli articoli sugli sguardi [e sui commit](gaze-and-commit-eyes.md) e sugli sguardi e sui [commit](gaze-and-commit-head.md) .
 
 <br>
 
@@ -118,9 +114,9 @@ Indipendentemente dal fatto che il modello di input con sguardo e commit venga u
 
 :::row:::
     :::column:::
-        Per lo sguardo a capo, la maggior parte delle app deve usare un [cursore](cursors.md) (o altre indicazioni visive/visive) per fornire all'utente la confidenza con cui si sta per interagire. In genere, il cursore viene posizionato in tutto il mondo in cui il raggio di sguardo principale interseca un oggetto, che può essere un ologramma o una superficie reale.<br>
+        Per lo sguardo a capo, la maggior parte delle app deve usare un [cursore](cursors.md) o altre indicazioni visive/visive per fornire all'utente la confidenza con cui si sta per interagire. In genere, il cursore viene posizionato in tutto il mondo in cui il raggio di sguardo principale interseca un oggetto, che può essere un ologramma o una superficie reale.<br>
         <br>
-        Per gli occhi, in genere è consigliabile *non* mostrare un cursore, in quanto questa operazione può diventare rapidamente distrazione e fastidioso per l'utente. È invece possibile evidenziare leggermente le destinazioni visive o usare un cursore occhio molto debole per fornire informazioni su ciò che l'utente sta per interagire. Per altre informazioni, vedere le [linee guida di progettazione per l'input basato su occhi](eye-tracking.md) su HoloLens 2.
+        Per gli occhi, in genere è consigliabile *non* mostrare un cursore, in quanto questa operazione può diventare rapidamente distrazione e fastidioso per l'utente. È invece possibile evidenziare leggermente le destinazioni visive o usare un cursore a occhio debole per fornire informazioni su ciò che l'utente sta per interagire. Per altre informazioni, vedere le [linee guida di progettazione per l'input basato su occhi](eye-tracking.md) su HoloLens 2.
     :::column-end:::
         :::column:::
        ![Un cursore visivo di esempio per mostrare lo sguardo](images/cursor.jpg)<br>
@@ -137,14 +133,14 @@ Quando _si parla di diversi_ modi per esaminare una destinazione, è possibile a
 Dopo la destinazione di un oggetto o di un elemento dell'interfaccia utente, l'utente può interagire o fare clic su di esso usando un input secondario. Questo processo è noto come passaggio di commit del modello di input. 
 
 Sono supportati i metodi di commit seguenti:
-- Gesto della mano del rubinetto d'aria (ad esempio, alzare la mano davanti all'utente e riunire il dito e il pollice dell'indice)
+- Gesto della mano del rubinetto d'aria, ovvero sollevare la mano davanti all'utente e riunire il dito e il pollice dell'indice
 - Pronunciare _"Select"_ o uno dei comandi vocali di destinazione
 - Premere un solo pulsante su un [clic del HoloLens](https://docs.microsoft.com/hololens/hololens1-clicker)
 - Premere il pulsante ' A ' in un gamepad Xbox
 - Premere il pulsante "A" in un controller adattivo Xbox
 
 ### <a name="gaze-and-air-tap-gesture"></a>Gesto dello sguardo e del tocco aereo
-Per simulazione del tocco si intende un gesto tocco fatto con la mano mantenuta in verticale. Per eseguire un rubinetto aereo, aumentare il dito dell'indice nella posizione pronta, quindi pizzicare il cursore e aumentare il dito dell'indice fino al rilascio. In HoloLens (1a generazione), il rubinetto aereo è l'input secondario più comune.
+Per simulazione del tocco si intende un gesto tocco fatto con la mano mantenuta in verticale. Per usare un rubinetto aereo, aumentare il dito dell'indice nella posizione pronta, quindi pizzicare il cursore e aumentare il dito dell'indice fino al rilascio. In HoloLens (1a generazione), il rubinetto aereo è l'input secondario più comune.
 
 
 :::row:::
@@ -159,22 +155,22 @@ Per simulazione del tocco si intende un gesto tocco fatto con la mano mantenuta 
 :::row-end:::
 
 
-Il rubinetto aereo è disponibile anche in HoloLens 2. È stato rilassato dalla versione originale. Quasi tutti i tipi di Pinch sono ora supportati finché la mano è eretta e mantiene ancora. Ciò consente agli utenti di apprendere ed eseguire più facilmente il movimento. Questo nuovo tocco sostituisce quello precedente tramite la stessa API, in modo che le applicazioni esistenti avranno automaticamente il nuovo comportamento dopo la ricompilazione per HoloLens 2.
+Il rubinetto aereo è disponibile anche in HoloLens 2. È stato rilassato dalla versione originale. Quasi tutti i tipi di Pinch sono ora supportati finché la mano è eretta e mantiene ancora. In questo modo è molto più semplice per gli utenti apprendere e usare il gesto. Questo nuovo tocco sostituisce quello precedente tramite la stessa API, in modo che le applicazioni esistenti avranno automaticamente il nuovo comportamento dopo la ricompilazione per HoloLens 2.
 
 <br>
 
 ---
 
 ### <a name="gaze-and-select-voice-command"></a>Sguardo e "Select" (comando vocale)
-Il comando Voice è uno dei metodi di interazione principali in realtà mista. Fornisce un meccanismo senza intervento pratico per controllare il sistema. Esistono diversi tipi di modelli di interazione vocale:
+Il comando Voice è uno dei metodi di interazione principali in realtà mista. Fornisce un potente meccanismo vivavoce per controllare il sistema. Esistono diversi tipi di modelli di interazione vocale:
 
-- Comando "Select" generico che esegue l'attivazione di un clic o il commit come input secondario.
+- Comando "Select" generico che usa l'attivazione o il commit di un clic come input secondario.
 - I comandi dell'oggetto, ad esempio "close" o "make it Bigger", eseguono ed eseguono il commit in un'azione come input secondario.
-- I comandi globali (ad esempio, "go to Start") non richiedono una destinazione.
+- I comandi globali (ad esempio, "Vai a avvio") non richiedono una destinazione.
 - Le interfacce utente di conversazione o entità come Cortana hanno una funzionalità del linguaggio di intelligenza artificiale.
 - Comandi vocali personalizzati
 
-Per altre informazioni e per un elenco completo dei comandi vocali disponibili e per informazioni su come usarli, vedere la guida per i comandi [vocali](../out-of-scope/voice-design.md) .
+Per altre informazioni e per un elenco completo dei comandi vocali disponibili e per informazioni su come usarli, vedere il materiale sussidiario per i comandi [vocali](../out-of-scope/voice-design.md) .
 
 <br>
 
@@ -231,7 +227,7 @@ Il controller adattivo Xbox esegue l'attivazione di un clic come input secondari
 ![Controller adattivo Xbox](images/xbox-adaptive-controller-devices.jpg)<br>
 *Controller adattivo Xbox*
 
-Connetti dispositivi esterni, ad esempio commutatori, pulsanti, montaggi e joystick, per creare un'esperienza di controller personalizzata univoca. Gli input Button, levetta e trigger sono controllati con dispositivi per l'accesso facilitato connessi tramite jack da 3,5 mm e porte USB.
+Connetti dispositivi esterni, ad esempio commutatori, pulsanti, montaggi e joystick, per creare un'esperienza di controller personalizzata univoca. Gli input Button, levetta e trigger sono controllati con dispositivi per l'accesso facilitato connessi tramite Jack 3,5-mm e porte USB.
 
 ![Porte del controller adattivo Xbox](images/xbox-adaptive-controller-ports.jpg)<br>
 *Porte del controller adattivo Xbox*
@@ -247,18 +243,18 @@ Connetti dispositivi esterni, ad esempio commutatori, pulsanti, montaggi e joyst
 ## <a name="composite-gestures"></a>Movimenti compositi
 
 ### <a name="air-tap"></a>Simulazione del tocco
-Il gesto del rubinetto d'aria, così come gli altri movimenti riportati di seguito, reagirà solo a un tap specifico. Per rilevare altri rubinetti, ad esempio menu o afferra, l'applicazione deve usare direttamente le interazioni di livello inferiore descritte nella precedente sezione due movimenti dei componenti principali.
+Il gesto del rubinetto d'aria (e gli altri movimenti seguenti) reagiscono solo a un tocco specifico. Per rilevare altri rubinetti, ad esempio menu o afferra, l'applicazione deve usare direttamente le interazioni di livello inferiore descritte nella precedente sezione due movimenti dei componenti principali.
 
 ### <a name="tap-and-hold"></a>Tocco e pressione prolungata
-La pressione prolungata consiste nel mantenere la posizione del dito abbassato della simulazione del tocco. La combinazione di tocco e mantenimento dell'aria permette una serie di interazioni di tipo "clic e trascinamento" più complesse in combinazione con lo spostamento ARM, ad esempio la selezione di un oggetto anziché l'attivazione di interazioni secondarie MouseDown, ad esempio la visualizzazione di un menu di scelta rapida.
-È tuttavia consigliabile prestare attenzione durante la progettazione di questo movimento perché gli utenti possono avere la tendenza ad allentare la posizione della mano durante l'esecuzione di un movimento esteso.
+La pressione prolungata consiste nel mantenere la posizione del dito abbassato della simulazione del tocco. La combinazione di tocco aereo e di attesa consente diverse interazioni di tipo "clic e trascinamento" più complesse, in combinazione con lo spostamento ARM, ad esempio la selezione di un oggetto anziché l'attivazione delle interazioni secondarie MouseDown, ad esempio la visualizzazione di un menu di scelta rapida.
+Prestare attenzione quando si progetta per questo movimento, tuttavia, poiché gli utenti possono essere inclini a rilassare le posture della mano durante qualsiasi movimento esteso.
 
 ### <a name="manipulation"></a>modifica
 I movimenti di manipolazione possono essere usati per spostare, ridimensionare o ruotare un ologramma quando si vuole che l'ologramma reagisca 1:1 ai movimenti della mano dell'utente. Uno degli usi possibili di tali movimenti 1:1 è quello di consentire all'utente di disegnare o dipingere nel mondo.
-La selezione iniziale della destinazione per un movimento di manipolazione dovrebbe avvenire mediante sguardo fisso o puntamento. Una volta avviato il tocco e l'attesa, qualsiasi modifica dell'oggetto viene gestita da movimenti mano, liberando l'utente per l'aspetto durante la modifica.
+La selezione iniziale della destinazione per un movimento di manipolazione dovrebbe avvenire mediante sguardo fisso o puntamento. Una volta avviato il tocco e l'attesa, qualsiasi manipolazione degli oggetti viene gestita da movimenti mano, che consente di liberare l'utente per l'aspetto durante la modifica.
 
-### <a name="navigation"></a>Spostamento
-I movimenti di navigazione funzionano come un joystick virtuale e possono essere usati per spostarsi nei widget dell'interfaccia utente, ad esempio nei menu radiali. Tocca e tieni premuto per avviare il movimento, quindi sposta la mano all'interno di un cubo 3D normalizzato, centrato attorno al punto di pressione iniziale. Puoi spostare la mano lungo l'asse X, Y o Z da un valore -1 a 1, essendo lo 0 il punto di partenza.
+### <a name="navigation"></a>Navigazione
+I movimenti di navigazione funzionano come un joystick virtuale e possono essere usati per spostarsi nei widget dell'interfaccia utente, ad esempio nei menu radiali. Tocca e tieni premuto per avviare il movimento, quindi sposta la mano all'interno di un cubo 3D normalizzato, centrato attorno al punto di pressione iniziale. È possibile spostare la mano lungo l'asse X, Y o Z da un valore compreso tra-1 e 1, dove 0 è il punto di partenza.
 La navigazione può essere usata per creare movimenti continui di scorrimento o zoom basati sulla velocità, analoghi allo scorrimento di un'interfaccia utente 2D mediante il clic sul pulsante centrale del mouse e il successivo spostamento del mouse verso l'alto o il basso.
 
 La navigazione con Rails si riferisce alla capacità di riconoscere i movimenti in determinati assi fino a quando non viene raggiunta una determinata soglia sull'asse. Questa operazione è utile solo quando lo sviluppatore sposta in più assi è abilitato in un'applicazione, ad esempio se un'applicazione è configurata in modo da riconoscere i movimenti di navigazione tra l'asse X, l'asse Y ma anche l'asse X specificato con Rails. In questo caso, il sistema rileverà i movimenti di mano sull'asse X, purché rimangano all'interno di una guida immaginaria (Guida) sull'asse X, se lo spostamento della mano si verifica anche sull'asse Y.
@@ -276,9 +272,9 @@ HoloLens riconosce i movimenti della mano tenendo traccia della posizione di una
 Per ogni mano rilevato da HoloLens, è possibile accedere alla propria posizione senza orientamento e lo stato premuto. Non appena la mano si avvicina al bordo della cornice di movimento, viene fornito anche un vettore direzionale che puoi decidere di mostrare all'utente in modo che sappia come muovere la mano per riportarla dove può essere vista da HoloLens.
 
 ## <a name="gesture-frame"></a>Cornice di movimento
-Per i movimenti in HoloLens, è necessario che la mano si trovi all'interno di un frame di movimento, in un intervallo che può essere visualizzato in modo appropriato dalle fotocamere con rilevamento dei movimenti, dal naso alla vita e tra le spalle. Gli utenti devono essere sottoposti a training in questa area di riconoscimento sia per l'esito positivo dell'azione sia per la loro comodità. Molti utenti presumono inizialmente che il frame di movimento debba trovarsi all'interno della propria visualizzazione tramite HoloLens e tenere le braccia invariate per interagire. Quando si usa il clicker HoloLens, non è necessario che le mani si trovino all'interno del frame di movimento.
+Per i movimenti in HoloLens, è necessario che la mano si trovi all'interno di un frame di movimento, in un intervallo che può essere visualizzato in modo appropriato dalle fotocamere con rilevamento dei movimenti, dal naso alla vita e tra le spalle. Gli utenti devono essere sottoposti a training in questa area di riconoscimento sia per l'esito positivo dell'azione sia per la loro comodità. Molti utenti presumono inizialmente che il frame di movimento debba trovarsi all'interno della propria visualizzazione tramite HoloLens e mantenere le armi insolitamente per interagire. Quando si usa il clicker HoloLens, non è necessario che le mani si trovino all'interno del frame di movimento.
 
-Nel caso di movimenti continui in particolare, c'è il rischio che gli utenti sposti le loro mani al di fuori del frame di movimento mentre si trova a metà movimento quando si trasferisce un oggetto olografico, ad esempio, e si perde il risultato previsto.
+Per i movimenti continui in particolare, c'è il rischio che gli utenti sposti le loro mani al di fuori del frame di movimento mentre si trova a metà movimento quando si trasferisce un oggetto olografico, ad esempio, e si perde il risultato previsto.
 
 Sono tre gli aspetti da considerare:
 
@@ -290,7 +286,7 @@ Sono tre gli aspetti da considerare:
 
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Interazione basata sullo sguardo](eye-gaze-interaction.md)
 * [Tracciamento oculare in HoloLens 2](eye-tracking.md)
 * [Sguardo fisso e attesa](gaze-and-dwell.md)

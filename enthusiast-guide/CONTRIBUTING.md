@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: d8b4e23603a09d39fef076b600364a55410d12c3
-ms.sourcegitcommit: 0b406ccbc7ce619e42809ba8dfdc47d83f4917ff
+ms.openlocfilehash: afb559937c2bde06d3c74c1c572aefec50502884
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97691435"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865436"
 ---
 # <a name="contributing-to-the-mixed-reality-enthusiast-guide"></a>Contributo alla guida per gli appassionati di realtà mista
 
@@ -167,7 +167,7 @@ Durante la modifica in GitHub tramite un Web browser, è possibile selezionare l
 >[!NOTE]
 >L'anteprima delle modifiche in review.docs.microsoft.com è disponibile solo per i dipendenti Microsoft
 
-Dipendenti Microsoft: una volta che i contributi sono Stati Uniti nel ramo ' Master ', è possibile esaminare il contenuto prima che diventi pubblico all'indirizzo https://review.docs.microsoft.com/windows/mixed-reality?branch=master . Trovare l'articolo usando il sommario nella colonna a sinistra.
+Dipendenti Microsoft: una volta che i contributi sono Stati Uniti nel ramo ' Master ', è possibile esaminare il contenuto prima che diventi pubblico all'indirizzo https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide?branch=master . Trovare l'articolo usando il sommario nella colonna a sinistra.
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>Modifica nel browser rispetto alla modifica con un client desktop
 

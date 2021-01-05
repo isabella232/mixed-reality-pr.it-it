@@ -6,35 +6,35 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, magnetismo di superficie
-ms.openlocfilehash: 943c5e8a1f49a021b8f3a3dcfa749a1ae6a1250e
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 5bc1b22db00e46d95d05c719b46c8f17426be8ef
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703282"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848150"
 ---
 # <a name="surface-magnetism"></a>Magnetismo di superficie
 
 ![Magnetismo di superficie](images/MRTK_SurfaceMagnetism.gif)
 
-Usando la tecnica di magnetismo di Surface, è possibile inserire un oggetto olografico in una superficie fisica reale. Allineando l'orientamento dell'oggetto alla superficie del mondo reale, è possibile creare un'esperienza più coinvolgente e naturale per l'utente.
+Il magnetismo di superficie consente di inserire oggetti olografici su superfici fisiche reali. Allineando l'orientamento dell'oggetto alla superficie del mondo reale, è possibile creare un'esperienza più coinvolgente e naturale per l'utente.
 
 <br>
 
 ---
 
 ## <a name="surface-magnetism-in-mrtk-mixed-reality-toolkit-for-unity"></a>Magnetismo di superficie in MRTK (Toolkit realtà mista) per Unity
+
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornisce gli script e le scene di esempio per la tecnica di magnetismo della superficie. È possibile usare il magnetismo della superficie con vari tipi di input, ad esempio il raggio di mano, lo sguardo e i controller di movimento.
 
 * [Risolutore MRTK-Surface magnetismo](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html#surfacemagnetism)
 * [Scenari di esempio di MRTK-Spatial Awareness + Surface magnetismo](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/Examples/Demos/Solvers/Scenes/SurfaceMagnetismSpatialAwarenessExample.unity)
 
-
 <br>
 
 ---
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

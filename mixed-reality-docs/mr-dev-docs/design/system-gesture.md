@@ -6,16 +6,16 @@ ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Realtà mista, movimenti, interazione, progettazione, cuffie per realtà mista, cuffie con realtà mista di Windows, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, Bloom
-ms.openlocfilehash: 1994b38341dfdb2ef1cdb326cf7747c0af5f9c34
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 9df8d54dcf63c13dedabdbf55300b3516a2c9bf1
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703267"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848159"
 ---
 # <a name="start-gesture"></a>Azione di avvio
 
-Il gesto di avvio è un movimento della mano usato per richiamare il menu Start. È l'equivalente di premere il tasto Windows sulla tastiera, il pulsante Xbox su un controller Xbox o il pulsante Windows sul controller di movimento per le cuffie immersive. È importante comprendere quali movimenti sono riservati per il sistema in ogni dispositivo di realtà mista per evitare conflitti durante la progettazione delle interazioni.
+Il gesto di avvio è un movimento della mano usato per richiamare il menu Start. È l'equivalente di premere il tasto Windows sulle tastiere, il pulsante Xbox nei controller Xbox o il pulsante Windows sui controller di movimento per le cuffie immersive. Prestare particolare attenzione ai movimenti del sistema riservati in ogni dispositivo di realtà mista per evitare conflitti durante la progettazione delle interazioni.
 
 ## <a name="device-support"></a>Supporto di dispositivi
 
@@ -53,7 +53,8 @@ Il gesto di avvio è un movimento della mano usato per richiamare il menu Start.
 </table>
 
 ## <a name="bloom"></a>Fioritura
-Per visualizzare il menu Start in HoloLens (1st Gen), abbiamo progettato "Bloom", un gesto simbolico che simula il fiore fiorito. È distinto per l'interazione surefooted, facile da eseguire e rapido da richiamare. Per eseguire il gesto di fioritura su HoloLens (1 ° gen), è necessario passare a un palmo e a una mano insieme, quindi aprire la mano diffondendo le dita.
+
+Abbiamo progettato "Bloom" per visualizzare il menu Start in HoloLens (1st Gen), che è un gesto simbolico che simula un fiore fiorito. Si tratta di un'operazione distinta per l'interazione sicura, facile da usare e rapida da richiamare. Per usare il movimento, è possibile passare da una palma all'altra, quindi aprire la mano, diffondendo le dita.
 
 :::row:::
     :::column:::
@@ -71,7 +72,8 @@ Per visualizzare il menu Start in HoloLens (1st Gen), abbiamo progettato "Bloom"
 ---
 
 ## <a name="start-gesture"></a>Azione di avvio
-In HoloLens 2, il movimento Bloom è stato sostituito con un pulsante di polso virtuale che consente interazioni più istintive che non richiedono ulteriori attività di insegnamento. Visualizzando gli utenti con il pulsante del polso, è possibile accedervi in modo intuitivo e premerlo con l'altra parte.
+
+In HoloLens 2, il movimento Bloom è stato sostituito con un pulsante di polso virtuale, che è più istintivo per gli utenti. Visualizzando gli utenti con il pulsante del polso, è possibile accedervi in modo intuitivo e premerlo con l'altra parte.
 
 :::row:::
     :::column:::
@@ -88,7 +90,6 @@ In HoloLens 2, il movimento Bloom è stato sostituito con un pulsante di polso v
 
 ---
 
-
 ## <a name="one-handed-start-gesture"></a>Gesto iniziale a una mano
 
 > [!IMPORTANT]
@@ -97,7 +98,7 @@ In HoloLens 2, il movimento Bloom è stato sostituito con un pulsante di polso v
 > 1. È necessario eseguire l'aggiornamento all'aggiornamento di novembre 2019 (Build 18363,1039) o versione successiva.
 > 1. È necessario calibrare gli occhi del dispositivo in modo che funzionino correttamente. Se non vengono visualizzati punti orbitanti intorno all'icona di avvio quando si esaminano i punti, gli occhi non vengono calibrati sul dispositivo.
 
-È anche possibile eseguire il gesto di avvio con una sola mano. A tale scopo, è necessario guardare la Palma con l' **icona di avvio** sul polso interno. **Tenendo sempre d'occhio l'icona**, pizzicare il pollice e l'indice insieme.<br>
+È anche possibile usare il gesto di avvio con una sola mano. Si tenga presente che la Palma si trova in corrispondenza dell'icona di **avvio** sul polso interno. **Tenendo sempre d'occhio l'icona**, pizzicare il pollice e l'indice insieme.<br>
 :::row:::
     :::column:::
         ![Pulsante del polso pronto](images/wrist-button-ready.png)<br>
@@ -113,7 +114,7 @@ In HoloLens 2, il movimento Bloom è stato sostituito con un pulsante di polso v
 
 ---
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Interazioni istintive](interaction-fundamentals.md)
 * [Sguardo attento](eye-tracking.md)
