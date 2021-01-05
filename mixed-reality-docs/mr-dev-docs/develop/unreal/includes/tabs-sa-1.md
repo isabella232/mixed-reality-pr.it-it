@@ -1,15 +1,15 @@
 ---
-ms.openlocfilehash: 065327e89b28daa4475bf624430d361176a98a7e
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: 73a0fac8519881a9deb7049b122a7d739ef972b4
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354501"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717449"
 ---
-# <a name="425"></a>[<span data-ttu-id="831c5-101">4.25</span><span class="sxs-lookup"><span data-stu-id="831c5-101">4.25</span></span>](#tab/425)
-
-![Archivio di ancoraggi nello spazio pronto](../images/unreal-spatialanchors-store-ready.PNG)
-
-# <a name="426"></a>[<span data-ttu-id="831c5-103">4.26</span><span class="sxs-lookup"><span data-stu-id="831c5-103">4.26</span></span>](#tab/426)
+# <a name="426"></a>[<span data-ttu-id="ab78b-101">4.26</span><span class="sxs-lookup"><span data-stu-id="ab78b-101">4.26</span></span>](#tab/426)
 
 ![Archivio di ancoraggi nello spazio pronto 4.26](../images/local-spatial-anchors-img-01.png)
+
+# <a name="425"></a>[<span data-ttu-id="ab78b-103">4.25</span><span class="sxs-lookup"><span data-stu-id="ab78b-103">4.25</span></span>](#tab/425)
+
+![Archivio di ancoraggi nello spazio pronto](../images/unreal-spatialanchors-store-ready.PNG)
