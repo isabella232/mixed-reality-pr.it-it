@@ -8,12 +8,12 @@ ms.topic: article
 keywords: ologrammi, stabilità, hololens, cuffie per realtà mista, cuffie per la realtà mista di Windows, auricolare della realtà virtuale, frequenza dei fotogrammi, rendering, riproiezione, separazione dei colori
 appliesto:
 - HoloLens
-ms.openlocfilehash: 345ba3608b77ed4d7b493985903295f5ee3f4863
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 4405cd0fa7cfca5205d312d1ccc54efc06db7bd7
+ms.sourcegitcommit: 13fe1e7f7f268730a0be720933d7414e9c63ac9b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530423"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97808832"
 ---
 # <a name="hologram-stability"></a>Stabilità degli ologrammi
 
@@ -91,7 +91,7 @@ Sono disponibili quattro tipi principali di riproiezione
 Le applicazioni devono eseguire azioni specifiche per abilitare i diversi tipi di riproiezione
 * **Riproiezione profondità:** L'applicazione invia il buffer di profondità al sistema per ogni frame sottoposto a rendering.  In Unity la riproiezione della profondità viene eseguita con l'opzione del **buffer di profondità condivisa** nel riquadro **impostazioni della realtà mista di Windows** in **Gestione plug**-in XR.  Le app DirectX chiamano CommitDirect3D11DepthBuffer.  L'applicazione non deve chiamare SetFocusPoint.
 * **Riproiezione planare:** In ogni frame, le applicazioni indicano al sistema la posizione di un piano da stabilizzare.  Le applicazioni Unity chiamano SetFocusPointForFrame e devono avere il **buffer di profondità condiviso** disabilitato.  Le app DirectX chiamano SetFocusPoint e non devono chiamare CommitDirect3D11DepthBuffer.
-* **Riproiezione piana automatica:** Per abilitare, l'applicazione deve inviare il buffer di profondità al sistema come per la riproiezione approfondita.  In HoloLens 2, l'applicazione deve quindi SetFocusPoint con un punto di 0, 0 per ogni fotogramma.  Per HoloLens generazione 1, l'applicazione non deve chiamare SetFocusPoint.
+* **Riproiezione piana automatica:** Per abilitare, l'applicazione deve inviare il buffer di profondità al sistema come per la riproiezione approfondita. Le app che usano il Toolkit di realtà mista (MRTK) possono configurare il [provider di impostazioni della fotocamera](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) per l'uso della riproiezione Autopiano. Le app native devono impostare `DepthReprojectionMode` in [HolographicCameraRenderingParameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) su `AutoPlanar` ogni frame. Per HoloLens generazione 1, l'applicazione non deve chiamare SetFocusPoint.
 
 ### <a name="choosing-reprojection-technique"></a>Scelta della tecnica di riproiezione
 
@@ -144,7 +144,7 @@ La cosa più importante che uno sviluppatore può eseguire per stabilizzare gli 
 
 **Procedure consigliate** Non esiste un modo universale per configurare il piano di stabilizzazione ed è specifico dell'app. La raccomandazione principale è sperimentare e vedere cosa funziona meglio per lo scenario in uso. Tuttavia, provare a allineare il piano di stabilizzazione con il maggior volume possibile di contenuto, perché tutto il contenuto di questo piano è perfettamente stabilizzato.
 
-Ad esempio:
+Esempio:
 * Se si dispone solo di contenuto planare (lettura di app, app per la riproduzione video), allineare il piano di stabilizzazione al piano con il contenuto.
 * Se sono presenti tre piccole sfere bloccate a livello globale, il piano di stabilizzazione viene tagliato anche se i centri di tutte le sfere attualmente presenti nella visualizzazione dell'utente.
 * Se la scena include contenuto con profondità notevolmente diverse, prediligere ulteriori oggetti.
@@ -181,7 +181,7 @@ Sebbene sia difficile evitare completamente la separazione dei colori, sono disp
 
 Come in precedenza, il rendering a 60 FPS e l'impostazione del piano di stabilizzazione sono le tecniche più importanti per la stabilità degli ologrammi. Se si verifica la separazione dei colori evidente, verificare innanzitutto che la frequenza dei fotogrammi soddisfi le aspettative.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Informazioni sulle prestazioni per la realtà mista](understanding-performance-for-mixed-reality.md)
 * [Colore, luce e materiali](../../color,-light-and-materials.md)
 * [Interazioni istintive](../../design/interaction-fundamentals.md)

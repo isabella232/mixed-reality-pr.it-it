@@ -6,30 +6,30 @@ ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, logo, icona, modellazione, avvio, utilità di avvio 3D, riquadro, cubo attivo, collegamento diretto, SecondaryTile, riquadro secondario, UWP, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare in realtà virtuale, XML, riquadro, Unity
-ms.openlocfilehash: 926d0b3bb337517b65986f85f6977b3dd1975735
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 38f0932f20e3660c91b87de7bcb9d66799d9a51a
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703197"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757497"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>Implementare utilità di avvio per app 3D (app UWP)
 
 > [!NOTE]
 > Questa funzionalità è stata aggiunta come parte di 2017 Fall Creators Update (RS3) per gli auricolari immersivi ed è supportata da HoloLens con l'aggiornamento di Windows 10 aprile 2018. Assicurarsi che l'applicazione sia destinata a una versione del Windows SDK maggiore o uguale a) 10.0.16299 su auricolari immersivi e 10.0.17125 su HoloLens. È possibile trovare la Windows SDK più recente [qui](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
-La [Home realtà mista di Windows](../discover/navigating-the-windows-mixed-reality-home.md) è il punto di partenza in cui gli utenti atterrano prima di avviare le applicazioni. Quando si crea un'applicazione UWP per la realtà mista di Windows, per impostazione predefinita le app vengono avviate come lavagne 2D con il logo dell'app. Quando si sviluppano esperienze per la realtà mista di Windows, è possibile definire facoltativamente un utilità di avvio 3D per eseguire l'override dell'utilità di avvio 2D predefinita per l'applicazione. In generale, i programmi di avvio 3D sono consigliati per l'avvio di applicazioni immersive che riportano gli utenti fuori dalla Home realtà mista di Windows, mentre l'utilità di avvio 2D predefinita è preferibile quando l'app viene attivata sul posto. È anche possibile creare un [collegamento Deep 3D (SecondaryTile)](#3d-deep-links-secondarytiles) come avvio 3D al contenuto all'interno di un'app UWP 2D.
+La [Home realtà mista di Windows](../discover/navigating-the-windows-mixed-reality-home.md) è il punto di partenza in cui gli utenti atterrano prima di avviare le applicazioni. Quando si crea un'applicazione UWP per la realtà mista di Windows, per impostazione predefinita le app vengono avviate come lavagne 2D con il logo dell'app. Quando si sviluppano esperienze per la realtà mista di Windows, è possibile definire facoltativamente un utilità di avvio 3D per eseguire l'override dell'utilità di avvio 2D predefinita per l'applicazione. In generale, i programmi di avvio 3D sono consigliati per l'avvio di applicazioni immersive che riportano gli utenti fuori dalla Home realtà mista di Windows. Quando l'app viene attivata sul posto, è preferibile l'utilità di avvio 2D predefinita. È anche possibile creare un [collegamento Deep 3D (SecondaryTile)](#3d-deep-links-secondarytiles) come avvio 3D al contenuto all'interno di un'app UWP 2D.
 
 >[!VIDEO https://www.youtube.com/embed/TxIslHsEXno]
 
 ## <a name="3d-app-launcher-creation-process"></a>processo di creazione dell'utilità di avvio delle app 3D
 
-Per la creazione di un avvio di app 3D sono necessari tre passaggi:
+Per la creazione di un avvio di app 3D sono disponibili tre passaggi:
 1. [Progettazione e concezione](3d-app-launcher-design-guidance.md)
 2. [Modellazione ed esportazione](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 3. Integrazione nell'applicazione (questo articolo)
 
-gli asset 3D da usare come avvii per l'applicazione devono essere creati usando le [linee guida per la creazione di realtà miste di Windows](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) per garantire la compatibilità. Gli asset che non soddisfano questa specifica di authoring non verranno sottoposti a rendering nella Home della realtà mista di Windows.
+gli asset 3D da usare come avvii per l'applicazione devono essere creati usando le [linee guida per la creazione di realtà miste di Windows](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) per garantire la compatibilità. Non verrà eseguito il rendering degli asset che non soddisfano questa specifica di authoring nella Home page della realtà mista di Windows.
 
 ## <a name="configuring-the-3d-launcher"></a>Configurazione dell'utilità di avvio 3D
 
@@ -72,7 +72,7 @@ Specificare quindi "MixedRealityModel" nel riquadro predefinito per l'applicazio
 </Applications>
 ```
 
-Gli elementi MixedRealityModel accettano un percorso di file che punta a un asset 3D archiviato nel pacchetto dell'app. Attualmente sono supportati solo i modelli 3D distribuiti usando il formato di file. glb e creati in base alle [istruzioni per la creazione di asset 3D con la realtà mista di Windows](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) . Gli asset devono essere archiviati nel pacchetto dell'app e l'animazione non è attualmente supportata. Se il parametro "Path" viene lasciato vuoto, Windows visualizzerà lo Slate 2D anziché l'utilità di avvio 3D. **Nota:** l'asset. GLB deve essere contrassegnato come "contenuto" nelle impostazioni di compilazione prima di compilare ed eseguire l'app.
+L'elemento MixedRealityModel accetta un percorso di file che punta a un asset 3D archiviato nel pacchetto dell'app. Attualmente sono supportati solo i modelli 3D distribuiti usando il formato di file. glb e creati in base alle [istruzioni per la creazione di asset 3D con la realtà mista di Windows](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) . Gli asset devono essere archiviati nel pacchetto dell'app e l'animazione non è attualmente supportata. Se il parametro "Path" viene lasciato vuoto, Windows visualizzerà lo Slate 2D anziché l'utilità di avvio 3D. **Nota:** l'asset. GLB deve essere contrassegnato come "contenuto" nelle impostazioni di compilazione prima di compilare ed eseguire l'app.
 
 
 ![Selezionare il GLB in Esplora soluzioni e usare la sezione proprietà per contrassegnarlo come "contenuto" nelle impostazioni di compilazione](images/buildsetting-content-300px.png)<br>
@@ -80,7 +80,7 @@ Gli elementi MixedRealityModel accettano un percorso di file che punta a un asse
 
 ### <a name="bounding-box"></a>Rettangolo di selezione
 
-Un rettangolo di delimitazione può essere utilizzato per aggiungere facoltativamente un'area del buffer aggiuntiva intorno all'oggetto. Il rettangolo di delimitazione viene specificato utilizzando un punto centrale e gli extent che indicano la distanza tra il centro del rettangolo di delimitazione e i relativi bordi lungo ogni asse. È possibile eseguire il mapping delle unità per il rettangolo di delimitazione a 1 unità = 1 contatore. Se non viene fornito un rettangolo di delimitazione, ne verrà automaticamente inserito uno nella mesh dell'oggetto. Se il rettangolo di delimitazione specificato è inferiore a quello del modello, verrà ridimensionato per adattarsi alla rete.
+Un rettangolo di delimitazione può essere usato per aggiungere facoltativamente un'area del buffer aggiuntiva intorno all'oggetto. Il rettangolo di delimitazione viene specificato utilizzando un punto centrale ed extent, che indicano la distanza tra il centro del rettangolo di delimitazione e i relativi bordi lungo ogni asse. È possibile eseguire il mapping delle unità per il rettangolo di delimitazione a 1 unità = 1 contatore. Se non viene fornito un rettangolo di delimitazione, ne verrà automaticamente inserito uno nella mesh dell'oggetto. Se il rettangolo di delimitazione specificato è inferiore a quello del modello, verrà ridimensionato per adattarsi alla rete.
 
 Il supporto per l'attributo del rettangolo delimitatore verrà con l'aggiornamento di Windows RS4 come proprietà nell'elemento MixedRealityModel. Per definire innanzitutto un rettangolo di delimitazione nella parte superiore del manifesto dell'applicazione, aggiungere lo schema uap6 e includerlo come spazi dei nomi ignorabili:
 
@@ -157,7 +157,7 @@ await tile.RequestCreateAsync();
 
 ### <a name="bounding-box"></a>Rettangolo di selezione
 
-È possibile utilizzare un rettangolo di delimitazione per aggiungere un'area del buffer aggiuntiva intorno all'oggetto. Il rettangolo di delimitazione viene specificato utilizzando un punto centrale e gli extent che indicano la distanza tra il centro del rettangolo di delimitazione e i relativi bordi lungo ogni asse. È possibile eseguire il mapping delle unità per il rettangolo di delimitazione a 1 unità = 1 contatore. Se non viene fornito un rettangolo di delimitazione, ne verrà automaticamente inserito uno nella mesh dell'oggetto. Se il rettangolo di delimitazione specificato è inferiore a quello del modello, verrà ridimensionato per adattarsi alla rete.
+È possibile utilizzare un rettangolo di delimitazione per aggiungere un'area del buffer aggiuntiva intorno all'oggetto. Il rettangolo di delimitazione viene specificato utilizzando un punto centrale ed extent, che indicano la distanza tra il centro del rettangolo di delimitazione e i relativi bordi lungo ogni asse. È possibile eseguire il mapping delle unità per il rettangolo di delimitazione a 1 unità = 1 contatore. Se non viene specificato un rettangolo di delimitazione, ne verrà automaticamente inserito uno nella mesh dell'oggetto. Se il rettangolo di delimitazione specificato è inferiore a quello del modello, verrà ridimensionato per adattarsi alla rete.
 
 ### <a name="activation-behavior"></a>Comportamento di attivazione
 
@@ -166,7 +166,7 @@ await tile.RequestCreateAsync();
 
 È possibile definire il comportamento di attivazione di un secondaryTile 3D per controllare il modo in cui viene reagisce quando viene selezionato da un utente. Questo può essere usato per inserire gli oggetti 3D nella Home realtà mista che sono puramente informativi o decorativi. Sono supportati i tipi di comportamento di attivazione seguenti:
 1. Impostazione predefinita: quando un utente seleziona il secondaryTile 3D, l'app viene attivata
-2. None: se gli utenti selezionano il secondaryTile 3D, l'app non viene attivata.
+2. None: quando l'utente seleziona il secondaryTile 3D, non viene eseguita alcuna operazione e l'app non viene attivata.
 
 ### <a name="obtaining-and-updating-an-existing-secondarytile"></a>Acquisizione e aggiornamento di un "secondaryTile" esistente
 
@@ -191,18 +191,19 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 
 ### <a name="checking-that-the-user-is-in-windows-mixed-reality"></a>Verifica per verificare se l'utente si trova in una realtà mista di Windows
 
-i collegamenti profondi 3D (secondaryTiles) possono essere creati solo quando la visualizzazione viene visualizzata in un auricolare di realtà mista di Windows. Quando la visualizzazione non viene presentata in un headset di realtà mista di Windows, è consigliabile gestirla in modo appropriato nascondendo il punto di ingresso o mostrando un messaggio di errore. È possibile eseguire questa verifica eseguendo una query su [IsCurrentViewPresentedOnHolographic ()](https://docs.microsoft.com/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_).
+i collegamenti profondi 3D (secondaryTiles) possono essere creati solo quando la visualizzazione viene visualizzata in un auricolare di realtà mista di Windows. Quando la visualizzazione non viene presentata in una serie di cuffie per la realtà mista di Windows, è consigliabile gestirla in modo appropriato nascondendo il punto di ingresso o mostrando un messaggio di errore. È possibile eseguire questa verifica eseguendo una query su [IsCurrentViewPresentedOnHolographic ()](https://docs.microsoft.com/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_).
 
 ## <a name="tile-notifications"></a>Notifiche del riquadro
 
-Le notifiche dei riquadri attualmente non supportano l'invio di un aggiornamento con un asset 3D. Ciò significa che gli sviluppatori non saranno in grado di eseguire le operazioni seguenti
+Le notifiche dei riquadri attualmente non supportano l'invio di un aggiornamento con un asset 3D. Ciò significa che gli sviluppatori non possono eseguire le operazioni seguenti:
+
 * Notifiche push
 * Polling periodico
 * Notifiche pianificate
 
-Per altre informazioni sulle altre funzionalità e gli attributi dei riquadri e sul modo in cui vengono usati per i riquadri 2D, vedere la documentazione relativa ai [riquadri per le app UWP](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
+Per altre informazioni sulle funzionalità e sugli attributi di altri riquadri e su come vengono usati per i riquadri 2D, vedere la [documentazione relativa ai riquadri per le app UWP](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Esempio di modello di realtà mista](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) contenente un utilità di avvio delle app 3D.
 * [Linee guida per la progettazione di utilità di avvio di app 3D](3d-app-launcher-design-guidance.md)

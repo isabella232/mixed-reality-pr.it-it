@@ -1,11 +1,23 @@
 ---
-ms.openlocfilehash: 9fdcbdfe115fa859081c28b768f9c213ac241d13
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: c5a13798ca6a73f1a6410abe310c2166b67f4626
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002675"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717500"
 ---
+# <a name="426"></a>[4.26](#tab/426)
+
+La gerarchia è descritta da `EHandKeypoint` enum:
+
+![Immagine delle opzioni di Bluprint del punto di riferimento della mano](../images/hand-keypoint-bp.png)
+
+È possibile ottenere tutti questi dati dalle mani di un utente usando la funzione **Get Motion controller data** . Questa funzione restituisce una struttura **XRMotionControllerData** . Di seguito è riportato uno script di progetto di esempio che analizza la struttura XRMotionControllerData per ottenere le posizioni congiunte della mano e disegna un sistema di coordinate di debug in corrispondenza della posizione di ogni joint.
+
+![Progetto di Get sguardi data Function connesso a line Trace by Channel Function](../images/unreal-hand-tracking-img-03.png)
+
+È importante controllare se la struttura è valida e se è una mano. In caso contrario, è possibile ottenere un comportamento non definito nell'accesso a posizioni, rotazioni e matrici di raggi.
+
 # <a name="425"></a>[4.25](#tab/425)
 
 L' `EWMRHandKeypoint` enumerazione descrive la gerarchia ossea della mano. È possibile trovare ogni punto di riferimento della mano elencato nei progetti:
@@ -84,15 +96,3 @@ Ecco una suddivisione dei parametri della funzione di GetHandJointTransform:
 * * * RADIUS: raggio della base dell'osso.
 * * * Valore restituito: true se l'osso rileva il frame, false se l'osso non viene rilevato.
 
-
-# <a name="426"></a>[4.26](#tab/426)
-
-La gerarchia è descritta da `EHandKeypoint` enum:
-
-![Immagine delle opzioni di Bluprint del punto di riferimento della mano](../images/hand-keypoint-bp.png)
-
-È possibile ottenere tutti questi dati dalle mani di un utente usando la funzione **Get Motion controller data** . Questa funzione restituisce una struttura **XRMotionControllerData** . Di seguito è riportato uno script di progetto di esempio che analizza la struttura XRMotionControllerData per ottenere le posizioni congiunte della mano e disegna un sistema di coordinate di debug in corrispondenza della posizione di ogni joint.
-
-![Progetto di Get sguardi data Function connesso a line Trace by Channel Function](../images/unreal-hand-tracking-img-03.png)
-
-È importante controllare se la struttura è valida e se è una mano. In caso contrario, è possibile ottenere un comportamento non definito nell'accesso a posizioni, rotazioni e matrici di raggi.

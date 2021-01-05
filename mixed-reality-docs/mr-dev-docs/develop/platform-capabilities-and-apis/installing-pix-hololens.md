@@ -6,18 +6,18 @@ ms.author: flbagar
 ms.date: 12/02/2020
 ms.topic: article
 keywords: HoloLens, HoloLens 2, PIX, acquisizione, cuffia a realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 5dfc16f97790b47af3c24ca44c060a9a2495a320
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 598a6b891798be7059eae2eff578c6bbbae442f6
+ms.sourcegitcommit: 9d79aaa313f003dd42d5610d458031890776ee8e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530445"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97822923"
 ---
 # <a name="installing-pix-for-hololens-2"></a>Installazione PIX per HoloLens 2
 
 [Pix](https://devblogs.microsoft.com/pix) è uno strumento di ottimizzazione e debug delle prestazioni per le applicazioni DirectX 12 in Windows. 
 
-## <a name="setup"></a>Installazione
+## <a name="setup"></a>Configurazione
 
 1. Scaricare la [versione]( https://devblogs.microsoft.com/pix/download) più recente di pix dal PC host e connettere HoloLens 2 al PC tramite un cavo USB.
 
@@ -25,7 +25,7 @@ ms.locfileid: "97530445"
 
 3. Abilitare la **modalità sviluppatore** e il portale per i **dispositivi**:
 
-* Apri **Impostazioni** dalla shell:
+* Aprire **le impostazioni** dalla Home realtà mista:
 
 ![Screenshot del menu HoloLens con il pulsante Impostazioni evidenziato](images/pix-img-01.jpg)
 
@@ -114,5 +114,5 @@ Per prima cosa, usare il portale del dispositivo per verificare che l'app non si
 
 PIX è ora pronto per l'uso.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Home page di PIX](https://devblogs.microsoft.com/pix)

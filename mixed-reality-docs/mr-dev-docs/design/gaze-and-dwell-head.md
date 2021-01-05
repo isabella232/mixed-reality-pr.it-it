@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
 keywords: Realtà mista, sguardo, abitato, interazione, progettazione, cuffie per realtà mista, cuffie per realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit Reality, UX, linee guida, visualizzazione elenco
-ms.openlocfilehash: abedff5a273816f49419c7823b96eda1d474e336
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 060d78ec629905ac9f2134851998ec131d85f0cd
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702317"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847376"
 ---
 # <a name="head-gaze-and-dwell"></a>Puntamento con la testa e attesa
 
@@ -19,7 +19,7 @@ Quando le mani sono occupate con gli attrezzi e le parti, i movimenti possono ri
 
 ## <a name="scenarios"></a>Scenari
 
-Il punto di vista e la permanenza sono eccellenze negli scenari in cui le mani di una persona sono occupate da altre attività e la voce non è del 100% affidabile o disponibile a causa di vincoli ambientali o sociali. Un buon esempio di questo tipo di situazioni è dato da una persona che indossa un dispositivo HoloLens per la sovrimpressione di informazioni di riferimento mentre ripara il motore di un'automobile. Le sue mani sono occupate con gli attrezzi o devono sostenere il corpo mentre la persona si protende sul vano motore. L'autofficina è rumorosa a causa dei colpi e del ronzio costanti degli attrezzi da lavoro, quindi l'uso dei comandi vocali risulterebbe particolarmente difficoltoso. Head-sguardi e l'abitazione consentono all'utente che usa HoloLens di esplorare in modo sicuro il materiale di riferimento senza interrompere il flusso di lavoro. 
+Il punto di partenza e l'abitazione sono ottimi negli scenari in cui le mani di una persona sono occupate da altre attività. Questa funzionalità è utile anche quando la voce non è del 100% affidabile o disponibile a causa di vincoli ambientali o sociali. Un buon esempio di questo tipo di situazioni è dato da una persona che indossa un dispositivo HoloLens per la sovrimpressione di informazioni di riferimento mentre ripara il motore di un'automobile. Le sue mani sono occupate con gli attrezzi o devono sostenere il corpo mentre la persona si protende sul vano motore. L'autofficina è rumorosa a causa dei colpi e del ronzio costanti degli attrezzi da lavoro, quindi l'uso dei comandi vocali risulterebbe particolarmente difficoltoso. Head-sguardi e l'abitazione consentono all'utente che usa HoloLens di esplorare in modo sicuro il materiale di riferimento senza interrompere il flusso di lavoro. 
 
 ## <a name="device-support"></a>Supporto di dispositivi
 
@@ -38,9 +38,9 @@ Il punto di vista e la permanenza sono eccellenze negli scenari in cui le mani d
     </tr>
      <tr>
         <td>Puntamento con la testa e attesa</td>
-        <td>✔️ Consigliata</td>
-        <td>✔️ Consigliata</td>
-        <td>✔️ Consigliata</td>
+        <td>✔️ Consigliato</td>
+        <td>✔️ Consigliato</td>
+        <td>✔️ Consigliato</td>
     </tr>
 </table>
 
@@ -49,7 +49,7 @@ Il punto di vista e la permanenza sono eccellenze negli scenari in cui le mani d
 
 **Evitare di usare lo "sguardo fisso come un'arma"**
 
-Il puntamento con la testa e l'attesa richiedono un feedback visivo intuitivo, ma una mole eccessiva di feedback può produrre ansia. Il feedback deve aiutare l'utente a capire cosa sta puntando, ma non selezionare automaticamente una destinazione contrariamente alla sua intenzione. Per leggere un testo, le icone e le etichette servono più tempo e più attenzione, quindi considera questo aspetto per dare alla persona modo di assorbire le informazioni prima di effettuare la selezione.
+Il puntamento con la testa e l'attesa richiedono un feedback visivo intuitivo, ma una mole eccessiva di feedback può produrre ansia. Il feedback dovrebbe aiutare gli utenti a conoscere gli elementi di destinazione, ma non a selezionarli in modo autonomo rispetto al loro scopo. Quando si leggono testo, icone ed etichette, è necessario fornire agli utenti il tempo necessario per l'assorbimento delle informazioni prima della selezione.
     
 **Cercare di ottenere una velocità ottimale**
     
@@ -57,37 +57,38 @@ Le interazioni di attesa possono avere timer diversi in base all'impatto sulla n
     
 **Evitare l'effetto yo-yo**
 
-L'effetto yo-yo è uno scomodo andamento del movimento della testa che può verificarsi quando la posizione del contenuto e dei controlli per il puntamento con la testa e l'attesa obbligano gli utenti a guardare ripetutamente in alto e in basso. Ad esempio, un elenco di spostamento con il pulsante di selezione e il pulsante di disattivazione nella parte inferiore induce un ciclo di ricerca verso il basso, Cerca i risultati, Cerca giù e così via. Questo modello risultante è scomodo e deve essere evitato posizionando i controlli di navigazione in una posizione centralizzata che richiede meno avanti e indietro. Il posizionamento dei pulsanti di attesa in base al loro effetto diventa un fattore importante per il comfort dell'utente.
-
+L'effetto yo-yo è un modello di movimento Head scomodo che si verifica quando la posizione del contenuto e i controlli Head-sguardi/abitazione forzano la ricerca e la riduzione ripetuta degli utenti. Ad esempio, un elenco di spostamento con il pulsante di visualizzazione e il pulsante di disattivazione nella parte inferiore induce un ciclo di ricerca verso il basso, Cerca i risultati, Cerca giù per abitare e così via. Il modello risultante è scomodo, quindi è consigliabile posizionare i controlli di navigazione in una posizione centralizzata che richiede meno avanti e indietro. Il posizionamento dei pulsanti di permanenza in base ai relativi effetti diventa importante per la comodità.
+s
 <br>
 
 ---
 
-
 ## <a name="ux-guidelines-and-best-practices"></a>Linee guida e procedure consigliate per l'esperienza utente
 
 ### <a name="target-sizes"></a>Dimensioni delle destinazioni
-  Per essere facilmente accessibili, gli obiettivi di Head-look e di abitazione devono essere sufficientemente grandi da poter essere esaminati in modo semplice e tenere la sede stabile sulla destinazione per il periodo di tempo previsto. Per ottenere un'esperienza ottimale, è consigliabile utilizzare una dimensione minima di 2 gradi. 
+
+Per poter essere facilmente accessibili, le destinazioni Head-sguardi e di destinazione devono essere sufficientemente grandi da poter esaminare comodamente e contenere una sede alla destinazione per il tempo previsto. Per ottenere un'esperienza ottimale, è consigliabile utilizzare una dimensione minima di 2 gradi. 
 
 ### <a name="visual-feedback"></a>Feedback visivo
 
 Quando usi un riempimento radiale per rappresentare il timer di attesa, inizia dalla parte centrale del pulsante. Una risposta uniforme genera meno confusione di tante indicazioni diverse sui vari pulsanti. 
 
-  * È tuttavia possibile contravvenire a questa regola per le interazioni direzionali, ad esempio per la navigazione verso l'alto, il basso, a sinistra, a destra e così via. Ad esempio, Microsoft Dynamics 365 Guides fa un'eccezione per AVANTI/INDIETRO, trattandosi di riempimenti sinistra-destra.
-  * Considera la possibilità di invertire il riempimento radiale dall'esterno per scenari come quelli di disattivazione di un pulsante. La sensazione opposta di premere un pulsante è un effetto visivo piacevole da mantenere. 
+  * Questa regola può essere interrotta anche per le interazioni direzionali (ad esempio, NAV su/giù/sinistra/destra e così via). Ad esempio, Microsoft Dynamics 365 Guides fa un'eccezione per AVANTI/INDIETRO, trattandosi di riempimenti sinistra-destra.
+  * Provare a invertire il riempimento radiale dall'esterno, per scenari come la disattivazione di un pulsante. La sensazione opposta di premere un pulsante è un effetto visivo piacevole da mantenere. 
 
 ### <a name="progressive-disclosure"></a>Rivelazione progressiva
 
-Con la rilevazione progressiva vengono mostrati solo i dettagli rilevanti in ciascuna fase di un'interazione. Nel caso dell'attesa, ciò significa rivelare la destinazione con l'evidenziazione, ad esempio in un controllo elenco.
+Con la rilevazione progressiva vengono mostrati solo i dettagli rilevanti in ciascuna fase di un'interazione. Per l'abitazione, significa che la destinazione dell'abitazione viene rivelata in evidenza, ad esempio in un controllo elenco.
 
  ### <a name="oversized-targets"></a>Destinazioni di dimensioni eccessive
+
 L'area di attesa può essere più grande dell'icona inattiva per agevolare l'uso, come nel caso del pulsante Indietro in Microsoft Dynamics 365 Guides.
 
 ### <a name="prevent-flickering-with-delayed-feedback"></a>Evitare lo sfarfallio con un feedback ritardato
-Aggiungi un breve ritardo prima di avviare il feedback visivo per evitare lo sfarfallio quando qualcuno passa su una destinazione di attesa.
-* Per i pulsanti che interagiscono con frequenza frequente, è molto breve, in modo che l'applicazione ritenga riattiva.
-* Per i pulsanti che interagiscono con una frequenza infrequente, un ritardo più lungo può essere appropriato per evitare l'interfaccia.
 
+Aggiungi un breve ritardo prima di avviare il feedback visivo per evitare lo sfarfallio quando qualcuno passa su una destinazione di attesa.
+* Per i pulsanti interattivi con frequenza, è consigliabile ridurre il ritardo, in modo che l'applicazione ritenga nuovamente attiva.
+* Per i pulsanti che interagiscono con una frequenza infrequente, un ritardo più lungo può essere appropriato per evitare l'interfaccia.
 
 <br>
 
@@ -118,7 +119,8 @@ Aggiungi un breve ritardo prima di avviare il feedback visivo per evitare lo sfa
 
 
 ### <a name="low-frequency-buttons"></a>Pulsanti usati raramente
-I pulsanti usati raramente sono pulsanti con cui si interagisce con meno regolarità all'interno dell'applicazione. Un buon esempio è rappresentato da un pulsante che consente di accedere al menu delle impostazioni o di cancellare tutto il lavoro svolto.
+
+I pulsanti con frequenza bassa sono pulsanti che non sono interagiti regolarmente con l'intera applicazione. Un buon esempio è rappresentato da un pulsante che consente di accedere al menu delle impostazioni o di cancellare tutto il lavoro svolto.
 
 * Prova a posizionare questi pulsanti in modo che non intralcino i percorsi di puntamento con la testa di uso frequente per evitare che vengano attivati accidentalmente. 
 
@@ -130,7 +132,7 @@ I pulsanti usati raramente sono pulsanti con cui si interagisce con meno regolar
 
 :::row:::
     :::column:::
-        Quando un'azione ha un impatto significativo, ad esempio perché determina un addebito di denaro, l'eliminazione del lavoro svolto o l'avvio di un lungo processo, è utile chiedere alla persona di confermare che intendesse effettivamente selezionare un determinato pulsante.<br>
+        Quando un'azione ha un impatto significativo, ad esempio l'addebito dei costi, l'eliminazione del lavoro o l'avvio di un processo lungo, è utile confermare che una persona ha voluto selezionare un pulsante.<br>
         <br>
         **Indicazioni**<br>
   * Mostra l'evidenziazione della selezione sul pulsante principale.
@@ -149,7 +151,8 @@ I pulsanti usati raramente sono pulsanti con cui si interagisce con meno regolar
 ---
 
 ### <a name="toggle-buttons"></a>Interruttori
-Per funzionare correttamente, gli interruttori necessitano di una logica più sottile. Quando una persona si sofferma (ovvero resta in attesa) su un interruttore e lo attiva, deve uscire dal pulsante e quindi tornare per riavviare la logica di attesa. È importante che i pulsanti attivabili o disattivabili come interruttori abbiano uno stato attivo chiaramente diverso dallo stato inattivo. 
+
+Per funzionare correttamente, gli interruttori necessitano di una logica più sottile. Quando un utente si sofferma su un interruttore e lo attiva, deve uscire dal pulsante e quindi tornare a riavviare la logica di permanenza. È importante che i pulsanti attivabili con lo stato attivo e inattivo siano deselezionati. 
 
 <br>
 
@@ -159,7 +162,7 @@ Per funzionare correttamente, gli interruttori necessitano di una logica più so
 
 :::row:::
     :::column:::
-        Le visualizzazioni elenco presentano una particolare sfida per l'input di punta e di residenza. Gli utenti devono poter analizzare il contenuto senza avere la sensazione di doversi muovere con cautela tra le destinazioni di attesa.<br>
+        Le visualizzazioni elenco presentano una particolare sfida per l'input di punta e di residenza. Gli utenti possono eseguire la scansione del contenuto senza che sia simile a quello che si aggira intorno alle destinazioni di residenza.<br>
         <br>
 **Indicazioni**<br>
   * Far evidenziare l'intera riga quando si è a capo, ma non inizia la permanenza, a meno che l'Head-sguardi si trovi nella destinazione di residenza specifica.
@@ -179,7 +182,8 @@ Per funzionare correttamente, gli interruttori necessitano di una logica più so
 
 ---
  
- ## <a name="see-also"></a>Vedere anche
+ ## <a name="see-also"></a>Vedi anche
+
 * [Sguardo e commit](gaze-and-commit.md)
 * [Mani - Manipolazione diretta](direct-manipulation.md)
 * [Mani - Movimenti](gaze-and-commit.md#composite-gestures)

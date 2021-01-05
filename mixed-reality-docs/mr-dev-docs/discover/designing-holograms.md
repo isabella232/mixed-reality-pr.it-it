@@ -6,19 +6,19 @@ ms.author: daescu
 ms.date: 11/24/2020
 ms.topic: article
 keywords: MRTK, Toolkit per realtà mista, ologrammi, progettazione di ologrammi, apprendimento, app di esempio, auricolare realtà mista, auricolare della realtà virtuale, informazioni sulla realtà virtuale
-ms.openlocfilehash: bf904b319ed5b452f254b659315d9b531832a4d5
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 2480b5e0b4dca502c746dad6f070226ffa8cd1f9
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002586"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757759"
 ---
 # <a name="the-making-of-designing-holograms"></a>Creazione della progettazione di ologrammi
 
 > [!NOTE]
 > Per tenere conto di tutte le gif interessanti e dei video incorporati in questa pagina, è necessario attendere una piccola finestra di caricamento.
 
-L'apprendimento della progettazione per la realtà mista può essere difficile, soprattutto in merito alla modalità di visualizzazione del supporto, che non sempre si traduce correttamente nei processi di progettazione 2D. In Microsoft è stata creata un'app gratuita che è possibile scaricare per HoloLens 2, che consente di apprendere le nozioni di base sulla progettazione di UX realtà mista sperimentando l'it in prima persona. L'approccio esclusivo dell'app di progettazione degli ologrammi si immerge in comportamenti di realtà misti, suggerimenti e consigli per la creazione di app HoloLens accattivanti e straordinarie. Scarica gratuitamente l'app dal Microsoft Store e impara dal team Microsoft Mixed Reality Design.
+L'apprendimento della progettazione per la realtà mista può essere difficile perché il supporto non è sempre tradotto correttamente nei processi di progettazione 2D. Qui presso Microsoft è stata creata un'app gratuita per HoloLens 2 che consente di apprendere le nozioni di base della progettazione di UX realtà mista in prima persona. L'approccio esclusivo dell'app di progettazione degli ologrammi si immerge in comportamenti di realtà misti, suggerimenti e consigli per la creazione di app HoloLens accattivanti e straordinarie. Scarica gratuitamente l'app dal Microsoft Store e impara dal team Microsoft Mixed Reality Design.
 
 > [!div class="nextstepaction"]
 > [Scaricare l'app per la progettazione di ologrammi](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)
@@ -33,7 +33,7 @@ L'apprendimento della progettazione per la realtà mista può essere difficile, 
 
 Come molti di voi, ho usato per progettare app per dispositivi mobili. Dal punto di vista di un ambiente di progettazione 2D, il passaggio all'intero ambiente di calcolo spaziale, in cui tutto è ora in tutto il mondo, è stato un cambiamento significativo. In realtà mista, le app non sono più confinate in una schermata 2D; Infatti, sono quasi gratuite, si trovano nel mondo reale e interagiscono con gli oggetti reali.
 
-Per me, la connessione di esperienze 3D ai processi di progettazione 2D convenzionali è l'aspetto più complesso dello sviluppo di realtà miste. Nelle conversazioni con i clienti, mi sento di sapere quali sono le funzionalità da includere e come renderle operativi. Si tratta di codice, posso seguire la documentazione e le esercitazioni, ma l'esperienza utente? Così tante funzionalità, diverse opzioni di input, diversi scenari e ambienti fisici, è molto difficile.
+Per me, la connessione di esperienze 3D ai processi di progettazione 2D convenzionali è l'aspetto più complesso dello sviluppo di realtà miste. Nelle conversazioni con i clienti, mi sento di sapere quali sono le funzionalità da includere e come renderle operativi. Si tratta di codice, posso seguire la documentazione e le esercitazioni, ma l'esperienza utente? Un numero così elevato di funzionalità, diverse opzioni di input, scenari diversi e ambienti fisici, è molto difficile.
 
 ![Immagine del workshop di progettazione HoloLens 2 nell'immagine di San Francisco del ](images/designing-holograms/workshop.jpeg)
  *workshop di progettazione HoloLens 2 a San Francisco*
@@ -52,7 +52,7 @@ La progettazione di ologrammi è un'esperienza visiva che illustra i concetti e 
 
 ## <a name="exploring-the-doll-house"></a>Esplorazione della casa di bambola
 
-Il Doll House è l'ambiente virtuale usato nell'app, una stanza in miniatura 80 x 60 x 40 cm che contiene gli elementi di base che la maggior parte delle stanze hanno in comune, ad esempio muri, lampade, mobilia, una tabella e una TV. La casa Doll è il protagonista principale dell'esperienza dell'app, quindi è necessario assicurarsi che funzioni perfettamente in qualsiasi ambiente. Considerarlo come una piccola stanza demo per visualizzare tutti i tipi di concetti di realtà mista.
+La casa Doll è l'ambiente virtuale usato nell'app. L'ambiente è una stanza in miniatura di 80 x 60 x 40 cm che contiene gli elementi di base che la maggior parte delle stanze hanno in comune, ad esempio muri, lampade, mobilia, una tabella e una TV. La casa Doll è il protagonista principale dell'esperienza dell'app, quindi è necessario assicurarsi che funzioni perfettamente in qualsiasi ambiente. Considerarlo come una piccola stanza demo per visualizzare tutti i tipi di concetti di realtà mista.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Dollhouse-adjustment-behavior-in-the-Designing-Holograms-app/player]
 *Video del comportamento di regolazione della Dollhouse*
@@ -65,7 +65,7 @@ Il presupposto iniziale era che le dimostrazioni di 1:1 sarebbero state sorprend
 - Gli schermi sono additivi, ovvero l'intero ambiente virtuale verrà sovrapposto alla stanza di un utente. Questo può creare confusione con due tabelle, forse doppi divani e muri che non si allineano.
 - E peggiori di tutto un ambiente virtuale limitato da un campo di visualizzazione.
 
-Quando è stata tentata una scala mini 1:10, il risultato è una splendida vista di uccelli in una sala realistica in cui è possibile visualizzare tutto ciò che era in corso da qualsiasi angolo e così via. Ciò che era più sorprendente è che la maggior parte dei tester ritenesse molto più immersiva per visualizzare una versione ridotta, quindi non si è mai attivata la scala 1:1. Quindi abbiamo deciso di rimuovere la versione 1:1 ed evitare il lavoro aggiuntivo necessario per adattare l'interfaccia utente e altri aspetti dell'app.
+Quando è stata tentata la scalabilità minima 1:10, il risultato è una fantastica visualizzazione degli uccelli di una stanza realistica. È possibile visualizzare tutti gli elementi che stavano procedendo da qualsiasi angolo nello stesso momento. Ciò che era più sorprendente è che la maggior parte dei tester ritenesse molto più immersiva per visualizzare una versione ridotta, quindi non si è mai attivata la scala 1:1. Quindi abbiamo deciso di rimuovere la versione 1:1 ed evitare il lavoro aggiuntivo necessario per adattare l'interfaccia utente e altri aspetti dell'app.
 
 ![Campo di visualizzazione con il ](images/designing-holograms/1-1-scale.png)
  *campo di visualizzazione scalabile 1:1 con scala 1:1*
@@ -84,7 +84,7 @@ Microsoft dispone di uno studio di acquisizione di realtà mista a San Francisco
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Raw-capture-footage-for-the-Designing-Holograms-app/player]
 *Metraggio non elaborato di Daniel Escudero da una delle fotocamere 106 in Mixed Reality Capture Studio a San Francisco.*
 
-Il processo di acquisizione genera una mesh, normali e una trama con fotogrammi chiave, che possono essere recapitati come file OBJ/PNG per un ulteriore post-produzione o pronti per la riproduzione come file MP4 compresso H. 264. Questi file possono essere importati in Unity, Unreal, native e WebXR ed eseguiti in Windows, iOS, Mac, Android, Magic LEAP e PlayStation VR.
+Il processo di acquisizione genera una mesh, normali e una trama con fotogrammi chiave, che possono essere recapitati come file OBJ/PNG per un ulteriore post-produzione o pronti per la riproduzione come file MP4 compresso H. 264. Questi file possono essere importati in progetti Unity, Unreal, native e WebXR. I file possono essere eseguiti in Windows, iOS, Mac, Android, Magic LEAP e PlayStation VR.
 
 <br>
 
@@ -107,7 +107,7 @@ Questo espediente è stato usato per assicurarsi che l'acquisizione inattiva sia
 
 ### <a name="syncing-animated-objects"></a>Sincronizzazione di oggetti animati
 
-Il secondo è stato l'animazione degli oggetti da sincronizzare con lo spostamento di un'acquisizione. In diverse parti dell'app sono stati importati obj sequenziali di un'acquisizione specifica ogni cinque frame. Il obj è stato quindi animato nella scena per verificare che corrispondano al frame corrispondente dell'acquisizione. Si tratta di un processo noioso di animazione e di fotogrammi, ma il risultato è notevole, ora è possibile vedere un'acquisizione di realtà mista che interagisce con oggetti non acquisiti.
+Il secondo è stato l'animazione degli oggetti da sincronizzare con lo spostamento di un'acquisizione. In diverse parti dell'app sono stati importati obj sequenziali di un'acquisizione specifica ogni cinque frame. Il obj è stato quindi animato nella scena per verificare che corrispondano al frame corrispondente dell'acquisizione. Si tratta di un processo noioso di animazione e di fotogrammi, ma il risultato è eccezionale. È ora possibile vedere un'acquisizione di realtà mista che interagisce con oggetti non acquisiti.
 
 ![Animazione sincronizzata tra un'acquisizione di realtà mista e un pannello dell'interfaccia utente](images/designing-holograms/synced-objects.gif)
 
@@ -115,11 +115,11 @@ Il secondo è stato l'animazione degli oggetti da sincronizzare con lo spostamen
 
 ### <a name="ui-creative-process"></a>Processo creativo dell'interfaccia utente
 
-Quando abbiamo iniziato a ideando la progettazione dell'interfaccia utente, oltre alle informazioni di trasporto, vorremmo anche mostrare parte della magia e delle possibilità offerte dagli ologrammi. La semplice visualizzazione di finestre 2D statiche e caselle di testo non si trova nel mondo 3D e non mostra molte delle possibilità a disposizione, quindi fin dall'inizio abbiamo deciso di uscire da questo e sfruttare completamente lo spazio 3D olografico.
+Quando è stata avviata la progettazione dell'interfaccia utente, abbiamo voluto illustrare alcuni dei Magic e delle possibilità che gli ologrammi offrivano. Semplicemente mostrando le finestre 2D statiche e le caselle di testo non si ritengono nel mondo 3D. Molte delle possibilità a disposizione non vengono visualizzate, quindi fin dall'inizio abbiamo deciso di allontanarsi da questo e sfruttare completamente lo spazio 3D olografico.
 
-Inizialmente, abbiamo iniziato ad aggiungere uno spessore ai pannelli e alle icone oltre alle informazioni di testo. Tuttavia, come un utente, viene visualizzata una casella di testo. Caselle di testo con immagini, ma non sono presenti. Siamo andati oltre usando gli shader MRTK (Mixed Reality Toolkit). Gli shader MRTK sono diventati uno strumento potente ed è stato fatto uso delle funzionalità degli stencil, alcuni possono conoscerlo come effetto del portale, per aggiungere una profondità negativa ai pannelli. Ciò significa invece di aggiungere elementi davanti a una casella di testo, le icone vengono ora visualizzate dietro un pannello trasparente. Ora, come un utente è qualcosa che non riesco più a replicare nel mondo reale e questo è il punto in cui la magia olografica è iniziata. Inoltre, un utente che non mi piace leggere, lo faccio molto già nel mondo fisico.
+Inizialmente, abbiamo iniziato ad aggiungere uno spessore ai pannelli, alle icone e alle informazioni di testo. Tuttavia, come un utente, viene visualizzata una casella di testo. Caselle di testo con immagini, ma non sono presenti. Siamo andati oltre usando gli shader MRTK (Mixed Reality Toolkit). Gli shader MRTK sono diventati uno strumento potente e sono state usate le funzionalità degli stencil per aggiungere una profondità negativa ai pannelli. Ciò significa invece di aggiungere elementi davanti a una casella di testo, le icone vengono ora visualizzate dietro un pannello trasparente. Ora, come un utente è qualcosa che non riesco più a replicare nel mondo reale e questo è il punto in cui la magia olografica è iniziata. Inoltre, un utente che non mi piace leggere, faccio molto già nel mondo fisico.
 
-Ovviamente le icone funzionano in modo molto migliore rispetto al testo semplice, quindi, per fornire una guida ancora più potente, ho iniziato a creare un set di oggetti animati e avatar, ognuno dei quali racconta una piccola storia di ciò che viene eseguito nel rispettivo scenario e del modo in cui viene usato.
+Ovviamente le icone funzionano in modo molto migliore rispetto al testo semplice, per offrire una guida ancora più potente, ho iniziato a creare un set di oggetti animati e avatar, ognuno dei quali racconta una piccola cosa che viene eseguita nel rispettivo scenario e come viene usata.
 
 ![GIF animata di un sistema di menu interattivo olografico](images/designing-holograms/creative-process.gif)
 
@@ -177,11 +177,11 @@ La progettazione di ologrammi insegna concetti di realtà mista, ma consente anc
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60"><img alt="Picture of Martin Wettig" width="60" height="60" src="images/designing-holograms/martin-wettig.jpeg"></td>
-<td style="border-style: none"><b>Martin Wettig</b><br><i>Artista 3D Senior</i><br>Martin conduce grafica 3D e progettazione dell'interfaccia utente sulla progettazione di ologrammi ed era in precedenza un artista 3D senior in uno degli studi di realtà mista di Microsoft a Berlino.</td>
+<td style="border-style: none"><b>Martin Wettig</b><br><i>Artista 3D Senior</i><br>Martin conduce grafica 3D e progettazione dell'interfaccia utente sulla progettazione degli ologrammi ed era in precedenza un artista 3D Senior presso uno degli studi di realtà mista di Microsoft a Berlino.</td>
 </tr>
 </table>
 
-Un grande ringraziamento al team di progettazione della realtà mista per la condivisione di una conoscenza di questo genere e naturalmente per le persone straordinarie che hanno preso parte alla [teoria degli oggetti](https://objecttheory.com/) che è diventato un compagno di squadra essenziale in ogni singolo passaggio di questo progetto. Grazie per il talento straordinario, per la passione e per gli occhi eccezionali per la progettazione.
+Un enorme ringraziamento al team di progettazione della realtà mista per la condivisione di una conoscenza così elevata e a persone straordinarie con la [teoria degli oggetti](https://objecttheory.com/) per essere i colleghi essenziali a ogni passaggio del progetto. Grazie per il talento straordinario, per la passione e per gli occhi eccezionali per la progettazione.
 
 > [!div class="nextstepaction"]
 > [Scaricare l'app per la progettazione di ologrammi](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)

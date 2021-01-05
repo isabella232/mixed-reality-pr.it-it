@@ -1,11 +1,28 @@
 ---
-ms.openlocfilehash: 50b56f6f081f682c3f3655e81aa492d84d254314
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 6b9223481ed909961dbb88d03e4b55ef68448525
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002658"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717915"
 ---
+# <a name="426"></a>[4.26](#tab/426)
+
+### <a name="windows-mixed-reality"></a>Windows Mixed Reality
+
+![Progetto di inizio riproduzione connessione per la funzione configura movimenti](../images/unreal-hand-tracking-img-09.png)
+
+Quindi, è necessario aggiungere il codice per sottoscrivere gli eventi seguenti:
+
+![Progetto dello screenshot dei movimenti di input di input spaziali Windows, tap e Left Manipulation ](../images/unreal/key-events.png)
+ ![ delle opzioni dei movimenti di tocco di input spaziali di Windows nel pannello dei dettagli](../images/unreal/key-events2.png)
+
+### <a name="openxr"></a>OpenXR
+
+In OpenXR, gli eventi di movimento vengono rilevati tramite la pipeline di input. Usando l'interazione manuale, il dispositivo può riconoscere automaticamente i movimenti Tap e di attesa, ma non gli altri. Sono denominati OpenXRMsftHandInteraction Select e i mapping del grip. Non è necessario abilitare la sottoscrizione, dichiarare gli eventi in impostazioni/motore/input del progetto, in modo analogo a quanto segue:
+
+![Screenshot dei mapping delle azioni OpenXR](../images/unreal-hand-tracking-img-12.png)
+
 # <a name="425"></a>[4.25](#tab/425)
 
 È possibile trovare la funzione Blueprint in **input spaziale di realtà mista di Windows** e la funzione C++ aggiungendo `WindowsMixedRealitySpatialInputFunctionLibrary.h` nel file di codice chiamante.
@@ -87,19 +104,3 @@ const FKey FSpatialInputKeys::RightNavigationYGesture(RightNavigationYGestureNam
 const FKey FSpatialInputKeys::RightNavigationZGesture(RightNavigationZGestureName);
 ```
 
-# <a name="426"></a>[4.26](#tab/426)
-
-### <a name="windows-mixed-reality"></a>Windows Mixed Reality
-
-![Progetto di inizio riproduzione connessione per la funzione configura movimenti](../images/unreal-hand-tracking-img-09.png)
-
-Quindi, è necessario aggiungere il codice per sottoscrivere gli eventi seguenti:
-
-![Progetto dello screenshot dei movimenti di input di input spaziali Windows, tap e Left Manipulation ](../images/unreal/key-events.png)
- ![ delle opzioni dei movimenti di tocco di input spaziali di Windows nel pannello dei dettagli](../images/unreal/key-events2.png)
-
-### <a name="openxr"></a>OpenXR
-
-In OpenXR, gli eventi di movimento vengono rilevati tramite la pipeline di input. Usando l'interazione manuale, il dispositivo può riconoscere automaticamente i movimenti Tap e di attesa, ma non gli altri. Sono denominati OpenXRMsftHandInteraction Select e i mapping del grip. Non è necessario abilitare la sottoscrizione, dichiarare gli eventi in impostazioni/motore/input del progetto, in modo analogo a quanto segue:
-
-![Screenshot dei mapping delle azioni OpenXR](../images/unreal-hand-tracking-img-12.png)

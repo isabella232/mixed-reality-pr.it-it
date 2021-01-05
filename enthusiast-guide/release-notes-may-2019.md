@@ -6,20 +6,20 @@ ms.author: mazeller
 ms.date: 07/11/2019
 ms.topic: article
 keywords: Note sulla versione, versione, Windows 10, Build, 19h1, sistema operativo, 2019 maggio
-ms.openlocfilehash: f5645baa726c68e6da5be949e90515da41d159cb
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+ms.openlocfilehash: 19444732884a87de3f28e90d656deef6e51eb191
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91784062"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725922"
 ---
 # <a name="release-notes---may-2019"></a>Note sulla versione-2019 maggio
 
-**Windows 10 May 2019 Update** (noto anche come 19H1) include nuove funzionalità per le cuffie per la realtà mista di Windows (VR), ad esempio la possibilità di avviare applicazioni Win32 nella Home realtà mista. HoloLens (1a generazione) è in manutenzione a lungo termine, con aggiornamenti di manutenzione da rilasciare mensilmente.
+**Windows 10 May 2019 Update** (noto anche come 19H1) include nuove funzionalità per le cuffie per la realtà mista di Windows (VR), ad esempio la possibilità di avviare applicazioni Win32 nella Home realtà mista. HoloLens (1a generazione) è in manutenzione a lungo termine, con aggiornamenti di manutenzione rilasciati ogni mese.
 
-Per eseguire l'aggiornamento alla versione più recente sul PC per gli auricolari per la realtà mista di Windows (VR), aprire l'app **Impostazioni** , passare a **Aggiorna & sicurezza** , quindi selezionare il pulsante **Verifica aggiornamenti** . In un PC Windows 10, è anche possibile installare manualmente l'aggiornamento di Windows 10 May 2019 usando lo [strumento di creazione di Windows Media](https://www.microsoft.com/software-download/windows10).
+Per eseguire l'aggiornamento alla versione più recente sul PC per gli auricolari per la realtà mista di Windows (VR), aprire l'app **Impostazioni** , passare a **Aggiorna & sicurezza**, quindi selezionare il pulsante **Verifica aggiornamenti** . In un PC Windows 10, è anche possibile installare manualmente l'aggiornamento di Windows 10 May 2019 usando lo [strumento di creazione di Windows Media](https://www.microsoft.com/software-download/windows10).
 
-**Versione più recente per desktop:** Windows 10 May 2019 Update ( **10.0.18362.116** )<br>
+**Versione più recente per desktop:** Windows 10 May 2019 Update (**10.0.18362.116**)<br>
 
 ## <a name="new-features-for-windows-mixed-reality-immersive-headsets"></a>Nuove funzionalità per gli auricolari immersivi a realtà mista di Windows
 
@@ -33,14 +33,14 @@ Con l'aggiornamento di Windows 10 maggio 2019, è stata introdotta la possibilit
 ![Browser Win32](images/mr-win32-slates-2.png)
 
 #### <a name="how-to-launch"></a>Come avviare
-Per avviare un'applicazione Win32 in realtà mista di Windows, aprire il pannello dei pin tramite il pulsante Windows sul controller e selezionare "tutte le app" sul lato destro del pannello.  Verrà visualizzata una cartella denominata "app classiche", in cui sarà possibile selezionare e avviare la maggior parte delle applicazioni Win32 installate nel computer.
+Per avviare un'applicazione Win32 in realtà mista di Windows, aprire il pannello dei pin tramite il pulsante Windows sul controller e selezionare "tutte le app" sul lato destro del pannello.  Troverai una cartella denominata "app classiche", che potrai accedere e selezionare e avviare la maggior parte delle applicazioni Win32 installate nel computer.
 
 ![Pin_Panel Win32](images/mr-win32-slates-pinspanel.png)
 
-#### <a name="please-help-us-improve"></a>Aiutaci a migliorare!
-Si cerca continuamente di migliorare la compatibilità.  Se le applicazioni Win32 classiche preferite non si comportano correttamente durante la realtà mista di Windows, inviare commenti e suggerimenti tramite l'hub per i [Commenti](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub).
+#### <a name="help-us-improve"></a>Aiutaci a migliorare!
+Si cerca continuamente di migliorare la compatibilità.  Se le applicazioni Win32 classiche preferite non si comportano correttamente durante la realtà mista di Windows, inviare commenti e suggerimenti tramite l' [Hub di feedback](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub).
 
-## <a name="hololens-1st-gen-long-term-servicing"></a>HoloLens (1a generazione) manutenzione a lungo termine
+## <a name="hololens-1st-gen-long-term-servicing"></a>HoloLens (1a generazione) Long-Term manutenzione
 
 HoloLens (1st Gen) sta immettendo lo stato di Long Term Servicing (LTS). Gli aggiornamenti futuri si concentrano sul problema e sulle correzioni per la sicurezza, mantenendo al tempo stesso la parità di funzionalità con la [versione di Windows 10 ottobre 2018](release-notes-october-2018.md) per HoloLens (nota anche come RS5). 
 
@@ -65,7 +65,7 @@ Usare l' [App Hub di feedback nel PC Windows 10](https://docs.microsoft.com/wind
 * [Note sulla versione - maggio 2016](release-notes-may-2016.md)
 * [Note sulla versione - marzo 2016](release-notes-march-2016.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Supporto per cuffie immersive (collegamento esterno)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [Supporto di HoloLens (collegamento esterno)](https://support.microsoft.com/products/hololens)
 * [Installare gli strumenti](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)

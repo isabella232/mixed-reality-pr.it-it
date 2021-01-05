@@ -1,36 +1,36 @@
 ---
 title: Panoramica del case study
-description: Storie, informazioni ed esperienze che il team di realtà misto ha riscontrato e buttato lungo il percorso.
+description: Storie, informazioni ed esperienze che il team di realtà misto ha trovato e buttato lungo il percorso.
 author: grbury
 ms.author: grbury
 ms.date: 08/24/2019
 ms.topic: overview
 keywords: Realtà mista di Windows, HoloLens, case study, visione, scenari, case study, cuffie per la realtà mista, cuffie per la realtà mista, cuffie per realtà virtuale
-ms.openlocfilehash: b30cc49759867b4f11f3f88195c8d9bec87ba297
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 7d3e2f3bbbc6a89bf4f136e2657f8a9abe7b9560
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703487"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757649"
 ---
 # <a name="case-study-gallery"></a>Raccolta di case study
 
-Storie, informazioni ed esperienze che il team di realtà misto ha riscontrato e buttato lungo il percorso.
+Storie, informazioni ed esperienze che il team di realtà misto ha trovato e buttato lungo il percorso.
 
 :::row:::
     :::column:::
        [ ![ 3 HoloStudio UI and Interaction Design Learning](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md) **[3 HoloStudio UI and interazioni design Learns](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
-        HoloStudio è stata una delle prime app per HoloLens. Per questo motivo, era necessario creare nuove procedure consigliate per la progettazione dell'interfaccia utente e dell'interazione 3D. Questa operazione è stata approvata con un numero elevato di test, prototipi ed errori.<br>
+        HoloStudio è stata una delle prime app per HoloLens. Per questo motivo, era necessario creare nuove procedure consigliate per la progettazione dell'interfaccia utente e dell'interazione 3D. Questa operazione è stata approvata tramite test ed errori degli utenti.<br>
         *Luglio 2016*
     :::column-end:::
     :::column:::
-       [ ![ Compilazione di HoloSketch, un layout spaziale e un'app di sketch di UX per la compilazione di HoloLens](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md) **[HoloSketch, un layout spaziale e un'app per lo sketch di UX per HoloLens](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
+       [ ![ Compilazione di HoloSketch, un layout spaziale e un'app per lo sketch di UX per la compilazione di HoloLens](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md) **[HoloSketch, un layout spaziale e un'app per lo sketch di UX per HoloLens](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
         HoloSketch è un layout spaziale su dispositivo e uno strumento di schizzo UX per HoloLens per aiutare a creare esperienze olografiche.<br>
          *Luglio 2017*
     :::column-end:::
     :::column:::
        [ ![ Creazione di un'esperienza immersiva nei frammenti](images/surfacereconstruction.jpg)](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md) **[creazione di un'esperienza immersiva nei frammenti](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)**<br>
-        Frammenti è un dramma Interactive Crime per Microsoft HoloLens, in cui si seguono gli indizi per risolvere un mistero che si verifica nello spazio reale.<br>
+        I frammenti sono un dramma Interactive Crime per Microsoft HoloLens, in cui si seguono gli indizi per risolvere un mistero che si verifica nello spazio reale.<br>
         *Agosto 2016*
     :::column-end:::
 :::row-end:::
@@ -79,7 +79,7 @@ Prima che Microsoft HoloLens spedito, abbiamo chiesto al nostro community di svi
     :::column-end:::
     :::column:::
        [ ![ Creazione di Galaxy Explorer per HoloLens 2](../develop/unity/images/ge-update-interactions-concept-force-grab.png)](../develop/unity/galaxy-explorer-update.md) **[creazione di Galaxy Explorer per HoloLens 2](../develop/unity/galaxy-explorer-update.md)**<br>
-        Benvenuti nel percorso di aggiornamento di Galaxy Explorer per HoloLens 2. Galaxy Explorer è stato sviluppato originariamente come un'applicazione open source per HoloLens (1st Gen) tramite il programma Condividi il programma di idea ed è una delle prime esperienze di realtà miste che molti hanno avuto. A questo punto è stato aggiornato per le nuove funzionalità di HoloLens 2.<br>
+        Benvenuti nel percorso di aggiornamento di Galaxy Explorer per HoloLens 2. Galaxy Explorer è stato sviluppato originariamente come un'applicazione open source per HoloLens (1st Gen) tramite il programma Condividi la tua idea ed è una delle prime esperienze di realtà miste che molti hanno avuto. A questo punto è stato aggiornato per le nuove funzionalità di HoloLens 2.<br>
         *Giugno 2019*
     :::column-end:::
     :::column:::
@@ -104,7 +104,7 @@ HoloTour per Microsoft HoloLens fornisce tour personali immersivi 3D di posizion
         *Agosto 2016*
     :::column-end:::
     :::column:::
-       [ ![ Acquisizione e creazione di contenuto per](../out-of-scope/images/camera-machu-pichu-500px.png)](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md) l' **[acquisizione HoloTour e la creazione di contenuto per HoloTour](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md)**<br>
+       [ ![ Acquisizione e creazione di contenuto per Machu Pichu HoloTour](../out-of-scope/images/camera-machu-pichu-500px.png)](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md) **[acquisizione e creazione di contenuto per HoloTour](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md)**<br>
         HoloTour offre tour personali immersivi 3D di posizioni iconiche in tutto il mondo. Come abbiamo scoperto, la creazione di un rendering 3D in modo convincente di una posizione nota accetta una combinazione di creazioni guidate creative e tecnologiche.<br>
         *Agosto 2016*
     :::column-end:::
@@ -140,7 +140,7 @@ Leggi i nostri concetti di alto livello e conosci i principi che seguono.
 :::row:::
     :::column:::
        [ ![ Rappresentazione umana in realtà mista](../develop/unity/images/bang-ai-weiwie.jpg)](../out-of-scope/case-study-representing-humans-in-mixed-reality.md) **[che rappresenta gli uomini in realtà mista](../out-of-scope/case-study-representing-humans-in-mixed-reality.md)**<br>
-        Quali sono le opportunità emerse quando non è possibile creare solo elementi eccezionali, ma si utilizzano le acquisizioni più realistiche degli ambienti, degli oggetti e degli utenti in realtà mista?<br>
+        Quali sono le opportunità emerse quando non è possibile creare solo elementi eccezionali, ma si usano le acquisizioni più realistiche degli ambienti, degli oggetti e degli utenti in realtà mista?<br>
          *Novembre 2017*
     :::column-end:::
     :::column:::

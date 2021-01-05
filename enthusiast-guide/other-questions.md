@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto, disinstallazione di realtà mista di Windows, lingue supportate
 appliesto:
 - Windows 10
-ms.openlocfilehash: a49008cb7d6a51385cb0d4ece7dfae3018aefe88
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: cf23d52fc72fa3b499b32d3770151306111afaa4
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131865"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726012"
 ---
 # <a name="other-questions"></a>Altre domande
 
@@ -21,7 +21,7 @@ ms.locfileid: "93131865"
 Cercare ed eseguire "dxdiag":
 
 1.  Se il risultato è "renderer di base", il driver di grafica non è installato. Per risolvere il problema:
-    * Passare a **Device Manager > azione > analizzare le modifiche apportate all'hardware** .
+    * Passare a **Device Manager > azione > analizzare le modifiche apportate all'hardware**.
     * Utilizzare Windows Update per aggiornare il driver.
     * Se il problema persiste, accedere al sito Web del produttore e installare l'aggiornamento del driver più recente. 
     * Se un aggiornamento non è disponibile per la GPU, è possibile che WMR non sia supportato nel dispositivo. Se lo si ritiene necessario, contattare il [supporto tecnico](https://support.microsoft.com).
@@ -40,8 +40,8 @@ Se il processo di aggiornamento del firmware si blocca e non è stato trovato al
 
 * Scollegare temporaneamente tutti gli altri dispositivi USB e riprovare a eseguire l'aggiornamento del firmware.
 * Connettere la cuffia Samsung a una porta USB 3,0 diversa nel PC.
-* Disabilitare e/o disinstallare tutti i software installati che potrebbero interferire con gli aggiornamenti del firmware, ad esempio AORUS App Center di gigabyte.
-* Usare un PC diverso per eseguire l'aggiornamento del firmware per la cuffia Samsung.
+* Disabilitare o disinstallare tutti i software installati che potrebbero interferire con gli aggiornamenti del firmware, ad esempio AORUS App Center di gigabyte.
+* Usare un PC diverso per aggiornare il firmware della cuffia Samsung.
 
 ## <a name="how-do-i-access-my-pc-desktop-in-mixed-reality"></a>Ricerca per categorie accedere al desktop del PC in realtà mista?
 Avviare l'app desktop nel pulsante cuffia da **Windows > tutte le app > desktop** per accedere al desktop del PC in realtà mista.
@@ -50,23 +50,23 @@ Avviare l'app desktop nel pulsante cuffia da **Windows > tutte le app > desktop*
 
 Per impostazione predefinita, l'app desktop passa automaticamente a visualizzare il monitoraggio con lo stato attivo. Se si desidera visualizzare tutti i monitoraggi in realtà mista:
 
-* Fare clic sull'icona di monitoraggio nell'angolo superiore sinistro dell'app.
+* Selezionare l'icona di monitoraggio nell'angolo superiore sinistro dell'app.
 * Disabilitare "cambia automaticamente il monitoraggio".
 * Selezionare il monitoraggio che si desidera visualizzare.
 * Avviare un'altra istanza dell'app desktop.
 * Selezionare il monitoraggio che si desidera visualizzare su tale istanza.
 * Ripetere la ripetizione per tutti i monitoraggi fisici.
-Si noti che sarà necessario selezionare nuovamente il monitoraggio da visualizzare in ogni app desktop ogni volta che si riavvia la realtà mista.
+È necessario riselezionare il monitoraggio da visualizzare in ogni app desktop ogni volta che si riavvia la realtà mista.
 
 ## <a name="my-desktop-app-only-shows-a-black-screen"></a>My Desktop App Mostra solo una schermata nera
 
-Se il PC ha una GPU NVIDIA ibrida, il problema potrebbe essere causato dal dispositivo Nvidia che esegue il runtimebroker.exe sulla GPU discreta invece che su quello integrato. Per risolvere il problema, seguire queste istruzioni in "[ricerca per categorie creare le impostazioni Optimus per un nuovo programma?](http://nvidia.custhelp.com/app/answers/detail/a_id/2615/~/how-do-i-customize-optimus-profiles-and-settings%3F)" per aggiungere C:\windows\system32\runtimebroker.exe e forzarlo per l'esecuzione nel processore "Integrated graphics". 
+Se il PC ha una GPU NVIDIA ibrida, il dispositivo Nvidia che esegue il runtimebroker.exe sulla GPU discreta anziché su quello integrato potrebbe essere il colpevole. Per risolvere il problema, seguire queste istruzioni in "[ricerca per categorie creare le impostazioni Optimus per un nuovo programma?](http://nvidia.custhelp.com/app/answers/detail/a_id/2615/~/how-do-i-customize-optimus-profiles-and-settings%3F)" per aggiungere C:\windows\system32\runtimebroker.exe e forzarlo per l'esecuzione nel processore "Integrated graphics". 
 
 ## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Il Wi-Fi rallenta quando si usa la realtà mista di Windows.
 
-Se si usa una connessione Wi-Fi a 2,4 GHz, i controller di movimento potrebbero rallentare la connessione Wi-Fi. Provare una delle operazioni seguenti:
+Se si usa una connessione Wi-Fi a 2,4 GHz, i controller di movimento potrebbero rallentare la connessione Wi-Fi:
 
-* Passare a una connessione Wi-Fi 5GHz, se disponibile. [Altre informazioni](https://support.microsoft.com/help/4000461)
+* Passare a una connessione Wi-Fi a 5 GHz, se disponibile. [Altre informazioni](https://support.microsoft.com/help/4000461)
 * Usare una scheda Bluetooth separata per connettere i controller di movimento al PC. Vedere [Adapter consigliati](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines).
 
 ## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>Ho ricevuto un messaggio che dice di inserire e addebitare il mio PC. Perché?
@@ -75,10 +75,10 @@ Se si usa un computer portatile, la realtà mista di Windows funziona meglio qua
 
 ## <a name="what-is-the-experience-options-setting"></a>Che cos'è l'impostazione opzioni esperienza?
 
-Questa impostazione ( **impostazioni > realtà mista > visualizzare > opzioni di esperienza** ) consente di modificare le impostazioni delle prestazioni della realtà mista di Windows. Questo consente di scegliere l'esperienza ottimale per la configurazione hardware in un intervallo di contenuti. Sono disponibili le opzioni seguenti:
+**Impostazioni > realtà mista > visualizzare > opzioni di esperienza** consente di modificare le impostazioni delle prestazioni della realtà mista di Windows. Questo consente di scegliere l'esperienza ottimale per la configurazione hardware in un intervallo di contenuti. È possibile scegliere tra tre opzioni di esperienza:
 * Automatico: la realtà mista di Windows determina la migliore esperienza per la configurazione hardware. Per la maggior parte delle persone, questa è la scelta migliore per iniziare.
-* 60Hz: imposta la frequenza di aggiornamento su 60Hz e disattiva determinate funzionalità, ad esempio acquisizione video e anteprima nel portale di realtà mista.
-* 90Hz: imposta la frequenza di aggiornamento su 90Hz.
+* 60 Hz: imposta la frequenza di aggiornamento su 60 Hz e disattiva determinate funzionalità, ad esempio acquisizione video e anteprima nel portale di realtà mista.
+* 90 Hz: imposta la frequenza di aggiornamento su 90 Hz.
 
 ## <a name="what-languages-are-supported-in-windows-mixed-reality"></a>Linguaggi supportati nella realtà mista di Windows
 
@@ -97,7 +97,7 @@ La realtà mista di Windows è disponibile nelle seguenti lingue:
 * Spagnolo (Messico)
 * Spagnolo (Spagna)
 
-È possibile usare la realtà mista di Windows se il PC è impostato su una lingua diversa, ma l'interfaccia verrà visualizzata in inglese (Stati Uniti) e i comandi vocali e la dettatura non saranno disponibili. La tastiera di Windows per la realtà mista è solo l'inglese (Stati Uniti). Per immettere testo in un'altra lingua, usare una tastiera fisica connessa al PC. È anche possibile usare la dettatura in uno dei linguaggi di realtà mista supportati di Windows elencati in precedenza. è sufficiente selezionare microfono sulla tastiera sullo schermo.
+È possibile utilizzare la realtà mista di Windows se il PC è impostato su una lingua diversa. Tuttavia, l'interfaccia verrà visualizzata in inglese (Stati Uniti) e i comandi vocali e la dettatura non saranno disponibili. La tastiera di Windows per la realtà mista è solo l'inglese (Stati Uniti). Per immettere testo in un'altra lingua, usare una tastiera fisica connessa al PC. È anche possibile usare la dettatura in uno dei linguaggi di realtà mista supportati di Windows elencati in precedenza. è sufficiente selezionare microfono sulla tastiera sullo schermo.
 
 La realtà mista di Windows è disponibile anche nelle seguenti lingue senza comandi vocali o funzionalità di dettatura:
 * Cinese tradizionale (Taiwan e Hong Kong)
@@ -138,11 +138,11 @@ Per disinstallare la realtà mista di Windows usando i comandi seguenti:
    <li> <b>HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore\Settings\HolographicPreferences</b></li><br/></ul>
 5. Chiudere l'editor del registro di sistema.
 6. Passare a **C:\Utenti\nome name\appdata\local\packages\ Microsoft.Windows.HolographicFirstRun_cw5n1h2txyewy \localstate** ed eliminare "RoomBounds.json". Ripetere questa operazione per ogni utente che ha utilizzato la realtà mista di Windows.
-7. Aprire il prompt dei comandi di amministrazione e passare a **C:\ProgramData\WindowsHolographicDevices\SpatialStore\HoloLensSensors** . Eliminare il contenuto della cartella "HeadTracking data", ma non la cartella stessa.
+7. Aprire il prompt dei comandi di amministrazione e passare a **C:\ProgramData\WindowsHolographicDevices\SpatialStore\HoloLensSensors**. Eliminare il contenuto della cartella "HeadTracking data", ma non la cartella stessa.
 8. Digitare "PowerShell" nella casella di ricerca, fare clic con il pulsante destro del mouse su "Windows PowerShell" e selezionare "Esegui come amministratore".
 9. In Windows PowerShell: <ul>
    <li>Al prompt dei comandi, copiare e incollare <b>DISM/online/Get-capabilities</b>, quindi premere INVIO.</b></li> 
-   <li>Copiare l'identità della funzionalità che inizia con Analog. Olografic. desktop (se non è presente, questo significa che questo elemento non è installato. In tal caso, andare al passaggio 10.</li> 
+   <li>Copiare l'identità della funzionalità che inizia con Analog. Olografic. desktop. Se non è presente, l'elemento non è installato ed è possibile procedere al passaggio 10.</li> 
    <li>Copiare e incollare il prompt dei comandi seguente, quindi premere INVIO: <b>DISM/online/Remove-Capability/CapabilityName: identità funzionalità copiata nell'ultimo passaggio</b></li>
    </ul>
 10. Riavviare il PC.

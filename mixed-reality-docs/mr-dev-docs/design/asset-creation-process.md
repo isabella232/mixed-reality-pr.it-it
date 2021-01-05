@@ -6,27 +6,27 @@ ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Asset, creazione, processo, Budget, poligoni, trame, shader, prestazioni, cuffie per realtà mista, cuffie per la realtà mista di Windows, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, asset
-ms.openlocfilehash: 0c6f592dd813c06613801510ad8c8a936ad0de65
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 2089ac7a870d9b4b13d314774d6d6124b78bb15c
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702877"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847551"
 ---
 # <a name="asset-creation-process"></a>Processo di creazione degli asset
 
-La realtà mista di Windows si basa su decenni di investimenti effettuati da Microsoft in DirectX. Ciò significa che tutti gli sviluppatori di esperienza e competenze hanno la possibilità di creare grafica 3D continua a essere utile con HoloLens.
+La realtà mista di Windows si basa su decenni di investimenti effettuati da Microsoft in DirectX. Tutta l'esperienza e le competenze degli sviluppatori con la creazione di grafica 3D continuano a essere utili con HoloLens.
 
-Gli asset creati per un progetto sono disponibili in molte forme e form. Possono essere costituiti da una serie di trame/immagini, audio, video, modelli 3D e animazioni. Non è possibile iniziare a coprire tutti gli strumenti disponibili per creare i diversi tipi di asset usati in un progetto. Per questo articolo, si escentreranno sui metodi di creazione di asset 3D.
+Gli asset creati per un progetto sono disponibili in molte forme e form. Possono essere costituiti da una serie di trame/immagini, audio, video, modelli 3D e animazioni. Non è possibile iniziare a coprire tutti gli strumenti disponibili per creare i diversi tipi di asset usati in un progetto. Per questo articolo, ci concentreremo sui metodi di creazione di asset 3D.
 
 ![Concetto, creazione, integrazione e flusso di iterazione](images/concept-creation-integration-iteration-flow-640px.jpg)<br>
 *Concetto, creazione, integrazione e flusso di iterazione*
 
 ## <a name="things-to-consider"></a>Aspetti da considerare
 
-Quando si esamina l'esperienza che si sta tentando di creare, considerarlo come un **budget** che è possibile spendere per provare a creare l'esperienza migliore. Non esistono necessariamente limiti rigidi sul numero di **poligoni** o **tipi di materiali** usati negli asset, ma più un set di compromessi con budget.
+Quando si esamina l'esperienza, si sta provando a crearla come un **budget** che è possibile spendere per provare a creare l'esperienza migliore. Non sono necessariamente presenti limiti rigidi per il numero di **poligoni** o **tipi di materiale** che è possibile usare negli asset. Considerarlo più come un set di compromessi con budget.
 
-Di seguito è riportato un budget di esempio per la propria esperienza. Le prestazioni non sono in genere un singolo punto di errore, ma la morte è di mille tagli per sé.
+Di seguito è riportato un budget di esempio per la propria esperienza. Le prestazioni non sono un singolo punto di errore, ma sono morte di mille tagli.
 <br>
 
 <table style="float:right; margin-left: 10px;">
@@ -60,11 +60,11 @@ Di seguito è riportato un budget di esempio per la propria esperienza. Le prest
 
 **Complessità degli asset**
 * Quanti triangoli/poligoni?
-* Quanto è complesso lo shader? Quando si usa il Toolkit per la realtà mista, è consigliabile usare lo [shader standard del Toolkit di realtà misto](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md) per ridurre la complessità dello shader.
+* Quanto è complesso lo shader? Quando si usa il Toolkit di realtà mista, è consigliabile usare lo [shader standard di Mixed Reality Toolkit](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md) per ridurre la complessità dello shader.
 
 Gli sviluppatori e gli artisti devono prendere in considerazione le funzionalità del dispositivo e del motore di grafica. Microsoft HoloLens ha tutto il calcolo e la grafica integrati nel dispositivo. Condivide le funzionalità che gli sviluppatori troveranno in una piattaforma mobile.
 
-Il processo di creazione per gli asset è lo stesso indipendentemente dal fatto che la destinazione sia un'esperienza per un [dispositivo olografico o per un dispositivo immersivo](../discover/mixed-reality.md#the-mixed-reality-spectrum). L'aspetto principale da tenere presente è la funzionalità del dispositivo come indicato in precedenza, nonché la scalabilità, poiché è possibile vedere il mondo reale in realtà mista, in modo da mantenere la scalabilità corretta in base all'esperienza.
+Il processo di creazione dell'asset è identico se l'esperienza è destinata a un dispositivo [olografico o](../discover/mixed-reality.md#the-mixed-reality-spectrum)a un dispositivo immersivo. La cosa principale da notare è la capacità e la scalabilità del dispositivo. È possibile vedere il mondo reale in realtà mista, quindi è opportuno mantenere la scalabilità corretta in base all'esperienza.
 
 ## <a name="authoring-assets"></a>Creazione di asset
 
@@ -77,23 +77,23 @@ Si inizierà con i modi per ottenere gli asset per il progetto:
 ### <a name="creating-assets"></a>Creazione di asset
 
 **Strumenti di creazione**<br>
-Per prima cosa è possibile creare asset personalizzati in diversi modi. gli artisti 3D usano una serie di applicazioni e strumenti per creare modelli che sono costituiti da **mesh**, **trame** e **materiali**. Questa operazione viene quindi salvata in un formato di file che può essere importato o usato dal motore di grafica usato dall'app, ad esempio **. FBX** o **. OBJ**. Tutti gli strumenti che generano un modello supportato dal motore di grafica scelto funzioneranno in **HoloLens**. Tra gli artisti 3D, molti scelgono di usare il [Maya di Autodesk, che a sua volta è in grado di usare HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) per trasformare il modo in cui vengono create le risorse. Se si vuole ottenere un risultato rapido, è anche possibile usare il [Generatore 3D](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) incluso in Windows per l'esportazione. OBJ da usare nell'applicazione.
+Per prima cosa è possibile creare asset personalizzati in diversi modi. gli artisti 3D utilizzano varie applicazioni e strumenti per creare modelli, che sono costituiti da **mesh**, **trame** e **materiali**. Questa operazione viene quindi salvata in un formato di file che può essere importato o usato dal motore di grafica usato dall'app, ad esempio **. FBX** o **. OBJ**. Tutti gli strumenti che generano un modello supportato dal motore di grafica scelto funzioneranno in **HoloLens**. Tra gli artisti 3D, molti scelgono di usare [Maya di Autodesk perché può usare HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) per trasformare il modo in cui vengono create le risorse. Se si vuole ottenere un risultato rapido, è anche possibile usare il [Generatore 3D](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) incluso in Windows per l'esportazione. OBJ da usare nell'applicazione.
 
 **Acquisizione oggetti**<br>
-È anche possibile acquisire oggetti in 3D. L'acquisizione di oggetti inanimati in 3D e la relativa modifica con il software di creazione di contenuti digitali è sempre più diffusa con la crescita della stampa 3D. Utilizzando il sensore **Kinect 2** e il [Generatore 3D](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) è possibile utilizzare la funzionalità di acquisizione per creare asset da oggetti reali. Si tratta anche di una [suite di strumenti](https://en.wikipedia.org/wiki/Comparison_of_photogrammetry_software) che consentono di eseguire la stessa operazione con **fotogrammetria** elaborando un numero di immagini da unire e mesh e trame.
+È anche possibile acquisire oggetti in 3D. L'acquisizione di oggetti inanimati in 3D e la relativa modifica con il software di creazione di contenuti digitali è sempre più diffusa con la crescita della stampa 3D. Utilizzando il sensore **Kinect 2** e il [Generatore 3D](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) è possibile utilizzare la funzionalità di acquisizione per creare asset da oggetti reali. Si tratta di una [suite di strumenti](https://en.wikipedia.org/wiki/Comparison_of_photogrammetry_software) che consentono di eseguire la stessa operazione con **fotogrammetria** elaborando varie immagini per unire e mesh e trame.
 
 ### <a name="purchasing-assets"></a>Acquisti di asset
 
 Un'altra opzione eccellente è quella di acquistare asset per la propria esperienza. Sono disponibili moltissime risorse tramite servizi, ad esempio [Unity Asset Store](https://www.assetstore.unity3d.com/) o [TurboSquid](https://www.turbosquid.com/) , tra gli altri.
 
-Quando si acquistano asset da terze parti, è sempre necessario controllare quanto segue:
+Quando si acquistano asset da terze parti, è sempre necessario controllare le proprietà seguenti:
 * **Qual è il numero di Poly?**
   * Rientra nel budget?
 * **Sono disponibili livelli di dettaglio (LODs) per il modello?**
-  * Il livello di dettaglio di un modello consente di ridimensionare i dettagli di un modello in modo da ottenere prestazioni ottimali.
+  * Un livello di dettaglio dei modelli consente di ridimensionare i dettagli di un modello in modo da ottenere prestazioni ottimali.
 * **Il file di origine è disponibile?**
-  * In genere non è incluso in [archivio risorse di Unity](https://www.assetstore.unity3d.com/) ma sempre incluso con servizi come [TurboSquid](https://www.turbosquid.com/).
-  * Senza il file di origine, non sarà possibile modificare l'asset.
+  * Non incluso in [Archivio asset Unity](https://www.assetstore.unity3d.com/) ma sempre incluso con servizi come [TurboSquid](https://www.turbosquid.com/).
+  * Senza il file di origine, non è possibile modificare l'asset.
   * Verificare che il file di origine fornito possa essere importato dagli strumenti 3D.
 * **Scopri cosa stai ricevendo**
   * Sono disponibili animazioni?
@@ -101,19 +101,19 @@ Quando si acquistano asset da terze parti, è sempre necessario controllare quan
 
 ### <a name="porting-assets"></a>Porting degli asset
 
-In alcuni casi verranno gestite risorse esistenti originariamente create per altri dispositivi e app diverse. Nella maggior parte dei casi questi asset possono essere convertiti in formati compatibili con il motore di grafica usato dall'app.
+In alcuni casi verranno gestite risorse esistenti originariamente create per altri dispositivi e app diverse. Nella maggior parte dei casi, questi asset possono essere convertiti in formati compatibili con il motore di grafica usato dall'app.
 
-Quando si trasferiscono asset da usare nell'applicazione HoloLens, è necessario richiedere quanto segue:
+Quando si trasferiscono asset da usare nell'applicazione HoloLens, è necessario porre le domande seguenti:
 * **È possibile importare direttamente o è necessario convertirli in un altro formato?** Controllare il formato che si sta importando con il motore grafico in uso.
 * **Se la conversione in un formato compatibile è qualcosa di perduto,** Talvolta è possibile che i dettagli vengano persi o che l'importazione possa causare la pulizia degli artefatti in uno strumento di creazione 3D.
-* **Qual è il numero di triangoli/poligoni per l'asset?** A seconda del budget per l'applicazione, è possibile usare [Simplygon](https://www.simplygon.com/) o strumenti simili per decimare (in modo procedurale o ridurre manualmente il numero di Poly) l'asset originale per adattarsi al budget per le applicazioni.
+* **Qual è il numero di triangolo/poligono per l'asset?** A seconda del budget per l'applicazione, è possibile usare [Simplygon](https://www.simplygon.com/) o strumenti simili per decimare (in modo procedurale o ridurre manualmente il numero di Poly) l'asset originale per adattarsi al budget per le applicazioni.
 
 ### <a name="outsourcing-assets"></a>Asset di outsourcing
 
 Un'altra opzione per progetti più grandi che richiedono più risorse rispetto al team è attrezzata per la creazione di asset di origine. Il processo di outsourcing implica la ricerca del giusto studio o agenzia specializzato nell'esternalizzazione degli asset. Questa è l'opzione più costosa, ma è anche la più flessibile per quanto possibile.
 * **Definire chiaramente ciò che si sta richiedendo**
   * Fornire il maggior dettaglio possibile
-  * Immagini del concetto anteriore, laterale e posteriore
+  * Immagini del concetto front, Side e back
   * Arte di riferimento che mostra asset nel contesto
   * Scala dell'oggetto (in genere specificato in centimetri)
 * **Fornire un budget**
@@ -123,4 +123,4 @@ Un'altra opzione per progetti più grandi che richiedono più risorse rispetto a
 * **Informazioni sui costi**
   * Quali sono i criteri di outsourcing per le richieste di modifica?
 
-L'outsourcing può funzionare in modo estremamente efficace in base alla sequenza temporale dei progetti, ma richiede una supervisione per garantire che si ottengano le risorse corrette necessarie per la prima volta.
+L'outsourcing può funzionare correttamente in base alla sequenza temporale dei progetti, ma richiede una supervisione per garantire che si ottengano le risorse appropriate per la prima volta.

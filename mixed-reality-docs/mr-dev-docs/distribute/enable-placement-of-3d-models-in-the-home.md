@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
 keywords: 3D, modello, posizione in casa, luogo, mondo, modellazione, Home realtà mista, Web, app, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 192c403ce50c3a47fb19f644af78d1150bb9aa3f
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: ad35e1d010e32c4729b0d0dd58943dabdee86e09
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703187"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757809"
 ---
 # <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Abilitare il posizionamento di modelli 3D nell'ambiente iniziale
 
@@ -20,7 +20,7 @@ ms.locfileid: "94703187"
 
 La [Home realtà mista di Windows](../discover/navigating-the-windows-mixed-reality-home.md) è il punto di partenza in cui gli utenti atterrano prima di avviare le applicazioni. In alcuni scenari, le app 2D, ad esempio l'app Olografics, consentono di posizionare i modelli 3D direttamente nella Home realtà mista come decorazioni o per un ulteriore controllo in 3D completo. Il *protocollo Aggiungi modello* consente di inviare un modello 3D dal sito Web o dall'applicazione direttamente nella Home realtà mista di Windows, in cui verrà mantenuto come i [lanci di app 3D](3d-app-launcher-design-guidance.md), le app 2D e gli ologrammi. 
 
-Se, ad esempio, si sta sviluppando un'applicazione che espone un catalogo di mobili 3D per la progettazione di uno spazio, è possibile usare il *protocollo Aggiungi modello* per consentire agli utenti di collocare i modelli di mobili 3D dal catalogo. Una volta inserite in tutto il mondo, gli utenti possono spostare, ridimensionare e rimuovere questi modelli 3D esattamente come altri ologrammi nella Home page. Questo articolo fornisce una panoramica dell'implementazione del *protocollo Add Model* in modo da consentire agli utenti di decorare il proprio mondo con oggetti 3D dall'app o dal Web.
+Se, ad esempio, si sta sviluppando un'applicazione che espone un catalogo di mobili 3D per la progettazione di uno spazio, usare il *protocollo Aggiungi modello* per consentire agli utenti di collocare i modelli di mobili 3D dal catalogo. Una volta inserite in tutto il mondo, gli utenti possono spostare, ridimensionare e rimuovere questi modelli 3D esattamente come altri ologrammi nella Home page. Questo articolo fornisce una panoramica dell'implementazione del *protocollo Add Model* per consentire agli utenti di decorare il proprio mondo con oggetti 3D dall'app o dal Web.
 
 ## <a name="device-support"></a>Supporto di dispositivi
 
@@ -88,10 +88,10 @@ private async void launchURI_Click(object sender, RoutedEventArgs e)
 
 ## <a name="considerations-for-immersive-vr-headsets"></a>Considerazioni per auricolari immersivi (VR)
 
-* Per gli auricolari immersivi (VR), non è necessario che il portale per la realtà mista sia in esecuzione prima di richiamare il *protocollo di aggiunta del modello*. In questo caso, il *protocollo Add Model* avvierà il portale di realtà mista e inserirà l'oggetto direttamente nel punto in cui l'auricolare sta cercando una volta arrivati nella Home realtà mista. 
-* Quando si richiama il *protocollo Aggiungi modello* dal desktop con il portale per la realtà mista già in esecuzione, assicurarsi che l'auricolare sia "sveglio". In caso contrario, la selezione host non avrà esito positivo. 
+* Per gli auricolari immersivi (VR), il portale per la realtà mista non deve essere in esecuzione prima di richiamare il *protocollo di aggiunta del modello*. In questo caso, il *protocollo Add Model* avvierà il portale di realtà mista e inserirà l'oggetto direttamente nel punto in cui l'auricolare sta cercando una volta arrivati nella Home realtà mista. 
+* Quando si richiama il *protocollo Aggiungi modello* dal desktop con il portale per la realtà mista già in esecuzione, assicurarsi che l'auricolare sia "sveglio". In caso contrario, la selezione host non riuscirà. 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Creazione di modelli 3D per l'utilizzo nella Home realtà mista di Windows](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [Esplorazione dello spazio iniziale di Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md)

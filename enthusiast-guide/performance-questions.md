@@ -7,16 +7,16 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto tecnico, prestazioni
 appliesto:
 - Windows 10
-ms.openlocfilehash: d6b37f8f6c964222b90fff57f0ba994c14fcaeab
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: dea2e81d53bfbb16a8803fc3f7c4e011741dfce6
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131965"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726002"
 ---
 # <a name="performance-faqs"></a>Domande frequenti sulle prestazioni
 
-## <a name="is-my-windows-mixed-reality-headset-rendering-at-60hz-or-90hz-framerate"></a>È il rendering dell'auricolare della realtà mista di Windows a 60Hz o 90Hz framerate
+## <a name="is-my-windows-mixed-reality-headset-rendering-at-60-hz-or-90-hz-framerate"></a>È il rendering dell'auricolare di realtà mista di Windows a 60 Hz o 90-Hz framerate
 
 Se si dispone di una GPU discreta con porte HDMI 2,0 e una CPU con quattro o più core fisici, si dovrebbe ottenere 90 Hz. Per confermare, controllare il **portale del dispositivo > scheda prestazioni** .
 
@@ -26,18 +26,18 @@ Nota: le impostazioni della qualità visiva in "auricolare display" influiscono 
 
 ## <a name="my-pc-is-running-slowly"></a>Il PC funziona lentamente
 
-Il sistema può essere lento per diversi motivi e, nella maggior parte dei casi, questo solo pochi secondi. Se si verifica questo problema in lunghi periodi di tempo:
+Il sistema può essere lento per diversi motivi, che in genere dura solo pochi secondi. Se si verifica questo problema in lunghi periodi di tempo:
 
 1. Chiudere l'applicazione inutilizzata sul desktop.
 2. Verificare che il computer portatile sia collegato a una fonte di alimentazione.
-3. Verificare che il PC non stia scaldando.
+3. Verificare che il PC non si stia scaldando.
 4. Abbassare la qualità visiva nella Home realtà mista di Windows.
 5. Assicurarsi di disporre dei [driver grafici](other-questions.md#my-graphics-driver-isnt-supported-im-getting-graphics-driver-failure-errors) più recenti per il PC.
 
 ## <a name="my-pc-is-warming-up-as-i-run-the-mixed-reality-experiences-how-do-i-keep-it-cool"></a>Il mio PC si sta scaldando durante l'esecuzione delle esperienze di realtà miste. Ricerca per categorie Keep it cool
 
 1. Verificare che la batteria sia addebitata e che la fonte di alimentazione sia collegata.
-2. Verificare che le ventole del PC non siano bloccate.
+2. Assicurarsi che le ventole del PC non siano bloccate.
 3. Usare il PC in un ambiente relativamente sporadico.
 4. Verificare che non siano presenti fonti di calore, ad esempio il sole o i sfiati di calore, a cui punta il PC.
 
@@ -46,8 +46,8 @@ Il sistema può essere lento per diversi motivi e, nella maggior parte dei casi,
 * Assicurarsi che l'auricolare sia collegato alla scheda grafica corretta nel PC. Alcuni PC hanno schede grafiche sia integrate che discrete. La scheda discreta offre in genere le prestazioni migliori. [Altre informazioni sull'hardware del PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md).
 * Chiudere le applicazioni inutilizzate sul desktop.
 * Verificare che le cuffie si trovino comodamente (spostarle in basso e in alto o a sinistra e a destra per adattarle).
-* Modificare le impostazioni visive dell'auricolare in **impostazioni > realtà mista > visualizzazione dell'auricolare** . Quando la "qualità visiva" è impostata su "automatico", l'esperienza di realtà mista per il PC verrà scelta automaticamente. Per altri dettagli visivi, impostare "qualità visiva" su "alta". Se gli oggetti visivi sono increspati, selezionare un'impostazione inferiore.
-* Modificare la manopola di calibrazione dell'auricolare per assicurarsi che le lenti siano impostate sulla distanza corretta tra gli alunni (denominato dpi). Se non si conosce il valore di dpi, un optometrista dovrebbe essere in grado di misurarlo o usare un sito web progettato per misurare i dpi. Se la cuffia non ha una manopola di calibrazione, selezionare **impostazioni > realtà mista > visualizzare l'auricolare** e modificare il "controllo di calibrazione".
+* Modificare le impostazioni visive dell'auricolare in **impostazioni > realtà mista > visualizzazione dell'auricolare**. Quando la "qualità visiva" è impostata su "automatico", l'esperienza di realtà mista per il PC verrà scelta automaticamente. Per altri dettagli visivi, impostare "qualità visiva" su "alta". Se gli oggetti visivi sono increspati, selezionare un'impostazione inferiore.
+* Modificare la manopola di calibrazione dell'auricolare per assicurarsi che le lenti siano impostate sulla distanza corretta tra gli alunni (denominato dpi). Se non si conosce il valore di dpi, un oculista può misurarlo per l'utente oppure usare un sito web progettato per misurare i dip. Se la cuffia non ha una manopola di calibrazione, selezionare **impostazioni > realtà mista > visualizzare l'auricolare** e modificare il "controllo di calibrazione".
 * Se si usa un adattatore USB-C o DisplayPort per HDMI, provare con un altro. Vedere [Adapter consigliati.](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 * Disconnettere tutti i monitoraggi aggiuntivi che possono essere connessi alla scheda grafica del computer.
 * Provare alcune app di realtà miste diverse da Windows Store, altre possono funzionare meglio con la configurazione del computer.

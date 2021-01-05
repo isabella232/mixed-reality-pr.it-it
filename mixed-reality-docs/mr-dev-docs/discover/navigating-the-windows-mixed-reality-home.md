@@ -6,16 +6,16 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Shell, sistema operativo, piattaforma, Cliff House, casa, casa, ambiente, avvio, menu Start, menu Home, pin, app, avvio di app, app, Teleport, sposta, naviga, auricolare realtà mista, cuffia virtuale reale, informazioni sulla realtà virtuale
-ms.openlocfilehash: 590e52de7caacc515e703da19e9efdc0a2b9c535
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 4d8aa88fa1057c550601feb7ad85ace15fcada54
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703447"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757689"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Esplorazione dello spazio iniziale di Windows Mixed Reality
 
-Proprio come l'esperienza del PC Windows inizia con il desktop, la realtà mista di Windows inizia con la Home page. La Home realtà mista di Windows sfrutta la capacità innata di comprendere ed esplorare i punti 3D. Con HoloLens, la tua abitazione è il tuo spazio fisico. Con auricolari immersivi, la tua casa è una posizione virtuale.
+Proprio come l'esperienza del PC Windows inizia con il desktop, la realtà mista di Windows inizia con la Home page. La Home realtà mista di Windows usa la capacità innata per comprendere ed esplorare i punti 3D. Con HoloLens, la tua abitazione è il tuo spazio fisico, ma con auricolari immersivi la tua casa è una posizione virtuale.
 
 A casa è anche possibile usare il menu Start per aprire e inserire app e contenuti. È possibile compilare la Home page con contenuto della realtà mista e multitasking usando più app nello stesso momento. Gli elementi da inserire in casa sono disponibili anche se si riavvia il dispositivo.
 
@@ -52,7 +52,7 @@ Selezionare **Adjust** sulla barra dell'app per visualizzare i controlli che con
 
 ![Ardesia del negozio in modalità di regolazione (cornice blu). Si noti che la barra dell'app (superiore) è cambiata per includere i pulsanti ' done ' è Remove '.](images/adjust-500px.png)
 
-App diverse possono avere opzioni aggiuntive sulla barra dell'app. Microsoft Edge, ad esempio, dispone di opzioni di *scorrimento*, *trascinamento* e *Zoom* . 
+App diverse possono avere altre opzioni sulla barra dell'app. Microsoft Edge, ad esempio, dispone di opzioni di *scorrimento*, *trascinamento* e *Zoom* . 
 
 ![Barra dell'app per le app 2D in esecuzione in HoloLens](images/holobar-500px.png)
 
@@ -62,7 +62,7 @@ Il pulsante **indietro** Torna alle schermate visualizzate in precedenza nell'ap
 
 Con **HoloLens**, è possibile spostarsi nello spazio fisico per spostarsi all'interno della Home page.
 
-Con le **cuffie immersive**, è possibile ottenere in modo analogo le playspace per spostarsi all'interno di un'area simile nel mondo virtuale. Per spostarsi tra le distanze più lunghe, è possibile usare levetta sul controller per la "procedura", oppure è possibile usare la *teleportazione* per passare immediatamente a distanze più lunghe.
+Con gli **auricolari immersivi** è possibile iniziare a usare la playspace per spostarsi all'interno di un'area simile nel mondo virtuale. Per spostarsi tra le distanze più lunghe, usare levetta sul controller per la "procedura". in alternativa, è possibile usare la *teleportazione* per passare immediatamente a distanze più lunghe.
 
 ![Teleportazione nella Home realtà mista di Windows](images/teleportation-500px.png)
 
@@ -87,7 +87,7 @@ Gli [auricolari immersivi a realtà mista di Windows](immersive-headset-hardware
 
 ### <a name="motion-controllers"></a>Controller del movimento
 
-L'esperienza di realtà mista di Windows migliore sarà con i [controller di movimento](../design/motion-controllers.md) per la realtà mista di Windows che supportano il rilevamento di 6 gradi di libertà usando solo i sensori presenti nell'auricolare. non sono richiesti fotocamere o marcatori esterni.
+L'esperienza di realtà mista di Windows migliore sarà con i [controller di movimento](../design/motion-controllers.md) per la realtà mista di Windows che supportano sei gradi di rilevamento della libertà usando solo i sensori presenti nell'auricolare. non sono richiesti fotocamere o marcatori esterni.
 
 I comandi di navigazione saranno presto disponibili.
 
@@ -97,7 +97,7 @@ I comandi di navigazione saranno presto disponibili.
   * Toccare il levetta a sinistra, a destra o a sinistra per spostarsi a sinistra, a destra o indietro in piccoli incrementi.
   * Fai clic sul pulsante destro del mouse sul levetta a sinistra, quindi sposta il levetta nella direzione che preferisci ["Walk".](navigating-the-windows-mixed-reality-home.md#getting-around-your-home)
 * Toccare il **levetta destro** a sinistra o a destra per ruotare la direzione di 45 gradi.
-* Premendo il pulsante **a** viene eseguita un'operazione SELECT che agisce come il gesto del [rubinetto d'aria](../design/gaze-and-commit.md#composite-gestures) .
+* Quando si preme il pulsante **A** , viene selezionato e agisce come il gesto del [rubinetto d'aria](../design/gaze-and-commit.md#composite-gestures) .
 * Premendo il pulsante della **Guida** viene [visualizzato il menu Start](navigating-the-windows-mixed-reality-home.md#start-menu) , che agisce come il movimento [Bloom](../design/system-gesture.md#bloom) .
 * Premendo i **trigger Left e Right** è possibile eseguire lo zoom avanti e indietro di un'app desktop 2D con cui si interagisce nella Home page.
 
@@ -106,14 +106,14 @@ I comandi di navigazione saranno presto disponibili.
 **Nota:** Usare il **tasto Windows + Y** per passare il mouse tra il controllo del desktop del PC e la Home realtà mista di Windows.
 
 All'interno della Home realtà mista di Windows:
-* Se si preme il pulsante **sinistro** del mouse, viene eseguita una selezione che agisce come il movimento del [rubinetto d'aria](../design/gaze-and-commit.md#composite-gestures) .
+* Premendo il pulsante **sinistro** del mouse viene selezionato il pulsante del mouse, che agisce come il movimento del [rubinetto d'aria](../design/gaze-and-commit.md#composite-gestures) .
 * Tenendo premuto il pulsante destro del mouse **,** viene visualizzata [la porta del reticolo.](navigating-the-windows-mixed-reality-home.md#getting-around-your-home)
 * Premendo il tasto **Windows** sulla tastiera si apre il [menu Start](navigating-the-windows-mixed-reality-home.md#start-menu) e si agisce come il movimento [Bloom](../design/system-gesture.md#bloom) .
 * Quando [si](../design/gaze-and-commit.md) Guarda un'app desktop 2D, è possibile **fare clic** con il pulsante **destro** del mouse per visualizzare i menu di scelta rapida e utilizzare la **rotellina di scorrimento** per scorrere (proprio come nel desktop del PC).
 
 ## <a name="cortana"></a>Cortana
 
-[Cortana](../design/voice-input.md#hey-cortana) è il tuo assistente personale in realtà mista di Windows, proprio come su PC e telefono. HoloLens dispone di un microfono integrato, ma gli auricolari immersivi possono richiedere hardware aggiuntivo. Usare Cortana per aprire le app, riavviare il dispositivo, cercare online e altro ancora. Gli sviluppatori possono anche scegliere di [integrare Cortana](https://dev.windows.com/cortana) nelle proprie esperienze.
+[Cortana](../design/voice-input.md#hey-cortana) è il tuo assistente personale in realtà mista di Windows, proprio come su PC e telefono. HoloLens dispone di un microfono integrato, ma gli auricolari immersivi possono richiedere hardware aggiuntivo. Usare Cortana per aprire le app, riavviare il dispositivo, cercare elementi online e altro ancora. Gli sviluppatori possono anche scegliere di [integrare Cortana](https://dev.windows.com/cortana) nelle proprie esperienze.
 
 È anche possibile usare i comandi vocali per spostarsi a casa. Ad esempio, puntare a un pulsante (usando lo [sguardo](../design/gaze-and-commit.md) o un controller, a seconda del dispositivo) e pronunciare "Select". Altri comandi vocali includono "Go Home", "Bigger", "minor", "close" e "Face me".
 
@@ -134,7 +134,7 @@ La realtà mista di Windows include diverse app predefinite, ad esempio:
 * **Desktop** (auricolari immersivi) per la visualizzazione di monitor desktop in un auricolare immersivo
 * **Esplora file** Accedere a file e cartelle che si trovano nel dispositivo
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Visualizzazioni delle app](../design/app-views.md)
 * [Controller del movimento](../design/motion-controllers.md)
 * [Accessori hardware](hardware-accessories.md)

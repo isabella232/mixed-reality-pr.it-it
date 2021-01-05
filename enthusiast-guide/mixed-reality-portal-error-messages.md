@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto, portale di realtà mista
 appliesto:
 - Windows 10
-ms.openlocfilehash: 11fa60b16a350d794a08db6a5f6120d88259c9ac
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 2beb063afb3aea5f44be116e6cb906312447dbd8
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685876"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726042"
 ---
 # <a name="mixed-reality-portal-error-messages"></a>Messaggi di errore del portale di realtà mista
 
@@ -29,12 +29,12 @@ Se questa operazione non funziona, assicurarsi che il PC riconosca la cuffia:
 2. Digitare "gestione dispositivi" nella casella di ricerca e selezionarlo nell'elenco. 
 3. Espandere "dispositivi in realtà mista" e verificare se l'auricolare è elencato. 
 
-Se non è elencato, provare a eseguire le operazioni seguenti:
+Se non è elencato:
 1. Collegare la cuffia a porte diverse sul PC, se disponibile.
 2. Verificare la disponibilità degli aggiornamenti software più recenti da Windows Update.
 3. Disinstallare e reinstallare la realtà mista di Windows:
     1. Scollegare entrambi i cavi auricolare dal PC.
-    2. Selezionare **impostazioni > realtà mista > disinstallare** .
+    2. Selezionare **impostazioni > realtà mista > disinstallare**.
     3. Selezionare **impostazioni > dispositivi > Bluetooth & altri dispositivi** per disaccoppiare i controller di movimento. Selezionare ogni controller, quindi selezionare "Rimuovi dispositivo".
     4. Collegare la cuffia al PC per reinstallare la realtà mista di Windows.
     
@@ -44,8 +44,8 @@ Connettere la cuffia a una porta USB diversa (e assicurarsi che si tratta di una
 
 ## <a name="im-getting-a-check-your-display-cable-error-message"></a>Viene visualizzato il messaggio di errore "check your display Cable".
 
-Attenersi alla procedura seguente:
+Per risolvere il problema, attenersi alla procedura seguente:
 * Connettere la cuffia a DisplayPort 1,2 o versione successiva o HDMI 1,4 o versione successiva. Assicurarsi che la porta corrisponda alla scheda grafica più avanzata nel PC.
-* Se si sta usando un adapter, assicurarsi che sia in grado di supportare 4K.
+* Se si usa un adapter, assicurarsi che sia in grado di supportare 4K.
 * Provare a usare una porta HDMI diversa.
 * Se un monitor esterno è collegato a una porta HDMI, provare a connetterlo a una DisplayPort e usare la porta HDMI per l'auricolare.

@@ -8,18 +8,18 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 892236c632d21620e48ced55d594bd059704a423
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: f349f4bbc2cadd511515783504562052f1d58ed3
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132055"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725392"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Controller del movimento in Windows Mixed Reality
 
-I controller di movimento sono accessori hardware che consentono agli utenti di intervenire in realtà mista. Un vantaggio dei controller di movimento rispetto ai movimenti è che i controller hanno una posizione precisa nello spazio, consentendo un'interazione con granularità fine con gli oggetti digitali. Per gli auricolari a realtà mista di Windows, i controller di movimento sono il modo principale in cui gli utenti interverranno in tutto il mondo.
+I controller di movimento sono accessori hardware che consentono agli utenti di interagire in realtà mista. Un vantaggio dei controller di movimento rispetto ai movimenti è che i controller hanno una posizione precisa nello spazio, consentendo un'interazione con granularità fine con gli oggetti digitali. Per gli auricolari a realtà mista di Windows, i controller di movimento sono il modo principale in cui gli utenti interverranno in tutto il mondo.
 
-I controller di movimento per la realtà mista di Windows offrono un tracking preciso e reattivo del movimento nel campo della visualizzazione usando i sensori nell'auricolare immersiva, ovvero non è necessario installare hardware nei muri dello spazio. Questi controller di movimento offriranno la stessa facilità di installazione e portabilità come gli auricolari immersivi a realtà mista di Windows.
+I controller di movimento per la realtà mista di Windows offrono rilevamento dello spostamento preciso e reattivo nel campo di visualizzazione tramite i sensori di auricolari immersivi. Non è necessario installare hardware nei muri dello spazio. Questi controller di movimento offriranno la stessa facilità di installazione e portabilità come gli auricolari immersivi a realtà mista di Windows.
 
 È anche possibile usare un controller Xbox, un mouse e una tastiera o aggirare [usando solo la voce](using-speech-in-wmr.md).
 
@@ -28,8 +28,8 @@ I controller di movimento per la realtà mista di Windows offrono un tracking pr
 La maggior parte degli auricolari viene abbinata direttamente alla cuffia, ma alcune cuffie iniziali richiedono che i controller di movimento siano abbinati al PC con Bluetooth 4,0. Quando si connette la cuffia per la prima volta, si passa all'attivazione dei controller di movimento durante l'installazione. Tuttavia, se è necessario riassociarli in un secondo momento, ecco come:
 
 1. Avviare il **portale di realtà mista** con la cuffia connessa.  
-2. Nell'angolo in basso a sinistra selezionare **... > configurare i controller** .
-3. Inserire 2 batterie AA in ogni controller e attivare la modalità di associazione del controller (vedere le istruzioni nella [sezione controller di movimento Pair](controllers-in-wmr.md#pair-motion-controllers) )
+2. Nell'angolo in basso a sinistra selezionare **... > configurare i controller**.
+3. Inserire due batterie AA in ogni controller e attivare la modalità di associazione del controller (vedere le istruzioni nella [sezione controller di movimento Pair](controllers-in-wmr.md#pair-motion-controllers) )
 4. Seguire le istruzioni fornite sullo schermo.
 
 > [!NOTE]
@@ -45,11 +45,11 @@ La maggior parte degli auricolari viene abbinata direttamente alla cuffia, ma al
 > 
 > Se si dispone di un controller Xbox cablato, collegarlo al PC.
 > 
-> Alcuni giochi e app usano il controller Xbox in modo diverso rispetto a come viene usato in realtà mista. Per usare il controller per un gioco o un'app, selezionare **Usa come gamepad** sulla barra dell'app o "USA come gamepad". Per riportare il controller alla realtà mista, selezionare **Usa come gamepad** , nuovamente oppure "USA con lo sguardo".  
+> Alcuni giochi e app usano il controller Xbox in modo diverso rispetto a come viene usato in realtà mista. Per usare il controller per un gioco o un'app, selezionare **Usa come gamepad** sulla barra dell'app o "USA come gamepad". Per riportare il controller alla realtà mista, selezionare **Usa come gamepad**, nuovamente oppure "USA con lo sguardo".  
 
 ## <a name="pair-motion-controllers"></a>Controller di movimento delle coppie
 
-Se si usa una cuffia che include un controller Bluetooth integrato, ad esempio Samsung Odyssey + o HP Reverb, i controller devono essere già abbinati. Tuttavia, è comunque possibile associare i controller usando l'app configura (dovrebbe essere già installata durante la configurazione di HMD. È anche possibile ottenerlo da Microsoft Store.
+Se si usa una cuffia che include un controller Bluetooth integrato, ad esempio Samsung Odyssey + o HP Reverb, i controller devono essere già abbinati. Tuttavia, è comunque possibile associare i controller usando l'app di installazione, che dovrebbe essere già installata durante la configurazione di HMD. È anche possibile ottenerlo da Microsoft Store.
 
 ### <a name="pair-motion-controllers-to-hmd"></a>Associare controller di movimento a HMD
 
@@ -59,7 +59,7 @@ Rimuovere il coperchio della batteria dai controller e trovare il piccolo pulsan
     ![Associazione del controller di movimento](images/connect_controller.png)
 
 Avviare il **portale di realtà mista** con la cuffia connessa.  
-Nell'angolo in basso a sinistra selezionare **... > configurare i controller** .
+Nell'angolo in basso a sinistra selezionare **... > configurare i controller**.
 Seguire le istruzioni sullo schermo.
 
 ### <a name="pair-motion-controllers-to-pc"></a>Associa controller di movimento al PC
@@ -78,8 +78,8 @@ Una volta completata l'associazione, i LED saranno solidi e luminosi.
 * Verificare che nel PC sia attiva una sola radio Bluetooth. Se si dispone di più di una radio Bluetooth, sarà necessario disabilitare le altre radio in Device Manager.
 * Posizionare il dongle Bluetooth in una porta con una linea di visibilità chiara per i controller e molto altro ancora collegato ai dispositivi USB 3,0. USB 3,0 è noto come interferenza RF con Bluetooth (leggere [questo documento](https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/usb3-frequency-interference-paper.pdf) da Intel per altri dettagli). Le porte USB 2,0 possono funzionare meglio per il dongle Bluetooth.
 * Assicurarsi che la chiavetta Bluetooth non sia collegata a una porta USB accanto al cavo USB di HMD. Il cavo Headset è stato noto per causare interferenze con i dongle Bluetooth. Per ottenere risultati ottimali, collegare il dongle alla porta USB anteriore del computer.
-* Per i notebook, verificare che il Wi-Fi sia collegato alla banda 5GHz per la migliore esperienza (selezionare l'icona della rete wireless in basso a destra e selezionare le proprietà per la rete in uso). I notebook progettati per condividere un'antenna a 2,4 GHz per la connettività Bluetooth e Wi-Fi hanno più probabilità di congestione dei dati sotto forma di velocità di rete rallentate o prestazioni di rilevamento insufficienti per i controller di movimento.
-* I controller di movimento riceveranno periodicamente nuovi aggiornamenti software da Microsoft. I controller visualizzeranno un modello alternato di spie lampeggianti quando ricevono questi nuovi aggiornamenti software. Si tratta di una situazione normale. Attendere il completamento dell'aggiornamento del software prima di usare i controller (i controller vibrano e una luce costante sostituirà il modello Flash alternato al termine).
+* Per i notebook, verificare che la connessione Wi-Fi sia connessa a una banda di 5 GHz per un'esperienza ottimale. Selezionare l'icona della rete wireless in basso a destra e selezionare le proprietà per la rete in uso. I notebook progettati per condividere un'antenna da 2,4 GHz per la connettività Bluetooth e Wi-Fi visualizzeranno la congestione dei dati da velocità di rete rallentate o prestazioni di rilevamento del controller di movimento scarse.
+* I controller di movimento riceveranno periodicamente nuovi aggiornamenti software da Microsoft. I controller visualizzeranno un modello alternato di spie lampeggianti quando ricevono questi nuovi aggiornamenti software. Si tratta di una situazione normale. Attendere il completamento dell'aggiornamento del software prima di usare i controller. I controller vibrano e una luce costante sostituirà il modello di Flash alternato al termine dell'operazione.
 * Prima che i controller completino il processo di aggiornamento, è possibile che venga richiesto di inserire la cuffia e usare levetta per teletrasportarsi ". I controller non saranno visibili o utilizzabili fino al completamento dell'aggiornamento. La maggior parte degli aggiornamenti si verifica entro due minuti, ma gli aggiornamenti possono richiedere fino a 10 minuti. Attendere il completamento dell'aggiornamento prima di procedere al passaggio successivo.
 
 ## <a name="using-controllers"></a>Uso di controller
@@ -91,12 +91,12 @@ Ecco come aggirare la realtà mista con i controller di movimento, un gamepad Xb
 
 ![Mapping del pulsante del controller di movimento](images/get_to_know_controllers.png)
 
-|  Operazione da eseguire  |  Controller del movimento  | Game pad | Mouse + tastiera |
+|  Per  |  Controller del movimento  | Game pad | Mouse + tastiera |
 | --- | --- | --- | --- |
-| Teletrasporto | Premere il levetta in poi, quindi puntare il controller in cui si desidera passare. Rilasciare il levetta. | Premere il levetta di sinistra in poi, quindi cercare la posizione desiderata. Rilasciare il levetta. | Fare clic e tenendo premuto il pulsante destro, quindi puntare il puntatore del mouse sul punto in cui si desidera passare. Rilasciare il pulsante. |
-| Select | Puntare il controller, quindi tirare il trigger o fare clic sul touchpad. | Osservare la destinazione, quindi premere. | Puntare il mouse, quindi fare clic con il pulsante sinistro del mouse. |
-| Aprire il menu Start | Premere il pulsante **Windows** . | Premere il pulsante **Xbox** . | Premere il **tasto logo Windows** . |
-| Uscire da un'app immersiva | Premere il pulsante **Windows** . Quindi selezionare **Home realtà mista** dal menu azioni rapide. | Premere il pulsante **Xbox** . Quindi selezionare il pulsante **Home realtà mista** nel menu azioni rapide. | Premere il **tasto logo Windows** . Quindi selezionare il pulsante **Home realtà mista** nel menu azioni rapide visualizzato. |
+| Teletrasporto | Premere il levetta in poi, quindi puntare il controller in cui si desidera passare. Rilasciare il levetta. | Premere il levetta di sinistra in poi, quindi cercare la posizione desiderata. Rilasciare il levetta. | Selezionare e posizionare il pulsante destro, quindi puntare il puntatore del mouse sul punto in cui si desidera passare. Rilasciare il pulsante. |
+| Select | Puntare il controller, quindi tirare il trigger o usare il touchpad. | Osservare la destinazione, quindi premere. | Puntare il mouse, quindi fare clic con il pulsante sinistro del mouse. |
+| Aprire il menu Start | Premere il pulsante **Windows** . | Premere il pulsante **Xbox** . | Premere il **tasto logo Windows**. |
+| Uscire da un'app immersiva | Premere il pulsante **Windows** . Quindi selezionare **Home realtà mista** dal menu azioni rapide. | Premere il pulsante **Xbox** . Quindi selezionare il pulsante **Home realtà mista** nel menu azioni rapide. | Premere il tasto logo Windows. Quindi selezionare il pulsante **Home realtà mista** nel menu azioni rapide visualizzato. |
 | Ruota | Spostare il levetta a sinistra o a destra. | Spostare il lato destro verso sinistra o verso destra. | Non disponibile. |
 | Eseguire il backup | Spostare il levetta indietro. | Spostare il Left stick indietro. | Non disponibile. |
 | Camminata | Eseguire il push del levetta verso il basso e quindi premerlo nella direzione desiderata. | Premere il pulsante sinistro del mouse verso il basso e quindi premerlo nella direzione desiderata. | Non disponibile. |
@@ -127,7 +127,7 @@ Il controller comunica a chi sta facendo vibrando e lampeggiando le luci del LED
 ## <a name="updating-motion-controllers-firmware"></a>Aggiornamento del firmware per i controller di movimento
 
 * Se un headset immersivo è connesso al PC ed è disponibile un nuovo firmware del controller, il firmware verrà inserito automaticamente nei controller di movimento alla successiva accensione.
-* Gli aggiornamenti del firmware del controller sono indicati da un modello di illuminazione del quadrante dei LED in movimento circolare e da richiedere 1-2 minuti. Gli aggiornamenti del firmware possono richiedere talvolta più tempo, fino a 10 minuti, che potrebbero indicare una scarsa connettività Bluetooth o interferenze radio.
+* Gli aggiornamenti del firmware del controller vengono mostrati con un modello di illuminazione dei quadranti LED in movimento circolare e che importano 1-2 minuti. Gli aggiornamenti del firmware possono richiedere talvolta più tempo, fino a 10 minuti, che potrebbero indicare una scarsa connettività Bluetooth o interferenze radio.
 * Nel caso in cui l'aggiornamento del firmware venga interrotto (spegnimento del controller o esaurimento della batteria) verrà effettuato un nuovo tentativo al successivo accensione.
 * Al termine dell'aggiornamento del firmware, i controller vengono riavviati e riconnessi.
 * Entrambi i controller devono essere connessi adesso. Passare al portale per la realtà mista per verificare lo stato dei controller.
@@ -139,7 +139,7 @@ Il controller comunica a chi sta facendo vibrando e lampeggiando le luci del LED
 
 ### <a name="how-can-i-check-battery-level"></a>Come è possibile controllare il livello della batteria?
 
-*R: il livello della batteria è sul lato inverso del modello virtuale, non è presente alcun indicatore di livello di batteria fisico. Al termine dell'accensione del controller, attendere alcuni secondi per stabilizzare la lettura.*
+*R: il livello della batteria è sul lato inverso del modello virtuale, non è presente alcun indicatore del livello di batteria fisico. Dopo l'accensione del controller, attendere alcuni secondi per stabilizzare la lettura.*
 
 ### <a name="can-you-use-these-controllers-without-a-headset-just-for-the-joysticktriggeretc-input"></a>È possibile usare questi controller senza cuffie? Solo per l'input joystick/trigger/etc?
 
@@ -149,7 +149,7 @@ Il controller comunica a chi sta facendo vibrando e lampeggiando le luci del LED
 
 Inviare commenti e suggerimenti nell'hub feedback, usando la categoria "Mixed Reality-> input".
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Controller HP in Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
 - [Controller HP in Unreal](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)

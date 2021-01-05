@@ -6,12 +6,12 @@ ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: HoloLens, portale per dispositivi Windows, API, cuffie per realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 1085f6c948ab7fe0ff8cb3801ebb0b883570acbc
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: c705ce65971042ab41befed9c6813dc797b61fc0
+ms.sourcegitcommit: 084b1da9d7b435394b38d6152a2f9aee7a74aa2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677970"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97804428"
 ---
 # <a name="device-portal-api-reference"></a>Informazioni di riferimento sulle API di Portale di dispositivi
 
@@ -389,6 +389,9 @@ Arresta la registrazione della realtà mista corrente
 
 ## <a name="mixed-reality-streaming"></a>Flusso di realtà mista
 
+> [!CAUTION]
+> A causa dell'isolamento del loopback, non è possibile connettersi al flusso di realtà misto dall'interno di un'app in un dispositivo.
+
 HoloLens supporta l'anteprima in tempo reale della realtà mista tramite il download in blocchi di un MP4 frammentato.
 
 I flussi di realtà mista condividono lo stesso set di parametri per controllare gli elementi acquisiti:
@@ -693,6 +696,6 @@ Parametri
 Restituisce i dati
 * All'avvio, restituisce lo stato della sessione WPR.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Avviare il Portale di dispositivi di Windows](using-the-windows-device-portal.md)
 * [Informazioni di riferimento sulle API del portale per dispositivi (UWP)](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-api-core)

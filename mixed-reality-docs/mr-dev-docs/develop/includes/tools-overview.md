@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: cd6541dd651573f31ddc2e2a388be53394059c5f
-ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
+ms.openlocfilehash: 283bfffb2d59d92712e86e12c05be8974f04fae6
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94482423"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97718061"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -81,8 +81,6 @@ Se non si riesce a distribuire un'applicazione direttamente tramite USB, verific
 
 >[!WARNING]
 >Non confonderle con le [linee guida per la compatibilità hardware minima del computer](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), che descrivono le *specifiche del computer utente* a cui fare riferimento per le app o i giochi per visori VR immersive.
-
-Se si usa un visore VR **Reverb G2**, scaricare il plug-in **Microsoft-Valve OpenXR** (TODO: // necessario collegamento).
 
 Se il PC di sviluppo per visori VR immersive non dispone di porte HDMI e/o USB 3.0 di grandi dimensioni, dovrai usare [adattatori](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs) per collegare i visori.
 
@@ -196,8 +194,6 @@ Se non si riesce a distribuire un'applicazione direttamente tramite USB, verific
 
 >[!WARNING]
 >Non confonderle con le [linee guida per la compatibilità hardware minima del computer](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), che descrivono le *specifiche del computer utente* a cui fare riferimento per le app o i giochi per visori VR immersive.
-
-Se si usa un visore VR **Reverb G2**, scaricare il plug-in **Microsoft-Valve OpenXR** (TODO: // necessario collegamento).
 
 Se il PC di sviluppo per visori VR immersive non dispone di porte HDMI e/o USB 3.0 di grandi dimensioni, dovrai usare [adattatori](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs) per collegare i visori.
 

@@ -1,6 +1,6 @@
 ---
 title: Esercitazione per la realtà mista
-description: Viene descritto come eseguire l'app per la realtà mista Learn, che illustra come usare ed esplorare la realtà mista di Windows.
+description: Viene descritto come eseguire l'app per la realtà mista Learn e come spostarsi in realtà mista di Windows.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,24 +8,24 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, esercitazione, introduzione
 appliesto:
 - Windows 10
-ms.openlocfilehash: be85b88f356532df736d69f8319ca6a7337ae824
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 2cbfb171065b0f2cf616348194b286e37159d425
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132065"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726052"
 ---
 # <a name="learn-mixed-reality"></a>Esercitazione per la realtà mista
 
 ## <a name="running-the-learning-experience-for-the-first-time"></a>Esecuzione dell'esperienza di apprendimento per la prima volta
 
-Al termine dell'installazione, l'app del portale Mixed Reality dovrebbe avviare un'esperienza immersiva nel HMD, denominata **Learn Mixed Reality** , che spiegherà come usare la realtà mista di Windows. Per iniziare, guardare la gemma nella schermata di caricamento. Si dovrebbe sentire la voce di Cortana nell'auricolare che fornisce istruzioni sulle operazioni da eseguire successivamente.
+Al termine dell'installazione, l'app del portale per la realtà mista dovrebbe avviare un'esperienza immersiva nella HMD chiamata **apprendimento della realtà mista**. Questa esperienza immersiva ti spiegherà come usare la realtà mista di Windows. Per iniziare, guardare la gemma nella schermata di caricamento. Si dovrebbe sentire la voce di Cortana nell'auricolare che fornisce istruzioni sulle operazioni da eseguire successivamente.
 
 ![Esercitazione per la realtà mista](images/file-learnmixedrealitystart.png)
 
-## <a name="re-run-the-learning-experience"></a>Eseguire di nuovo l'esperienza di apprendimento
+## <a name="rerun-the-learning-experience"></a>Eseguire di nuovo l'esperienza di apprendimento
 
-Informazioni su realtà mista è un'app. L'app può essere avviata dal menu Start all'interno della [Home realtà mista](your-mixed-reality-home.md) in qualsiasi momento. Uso dei controller di movimento o della tastiera:
+Informazioni su realtà mista è un'app. L'app può essere avviata dal menu Start della [Home realtà mista](your-mixed-reality-home.md) in qualsiasi momento. Uso dei controller di movimento o della tastiera:
 
 ### <a name="use-your-motion-controllers"></a>Usare i controller di movimento
 
@@ -51,7 +51,7 @@ Per altre informazioni su come aggirare la realtà mista con i controller di mov
 
 È sufficiente premere l'icona **Riproduci** nella parte inferiore dell'app del portale per la realtà mista.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Risoluzione dei problemi relativi all'installazione](installation_errors.md)
 * [Risoluzione dei problemi di installazione](wmr-setup-faq.md)

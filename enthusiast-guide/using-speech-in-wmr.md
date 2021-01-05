@@ -8,16 +8,16 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: b65be6082967b49ee9d3c8b97cb0a18f9149a3ca
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 6a32b96fd932e3b7d47e29749fb47c70b64e32c3
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131955"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725772"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Uso di sintesi vocale in realtà mista di Windows
 
-Usa la tua voce per aggirare più rapidamente la realtà mista di Windows: fai una foto veloce, Apri un'app, persino Teleport senza controller. Per un modo semplice per digitare, provare a usare la modalità di dettatura sulla tastiera della realtà mista. 
+Puoi usare la tua voce per aggirare più rapidamente la realtà mista di Windows. La creazione di una foto veloce, l'apertura di un'app, anche il Teleporting senza un controller, sono tutte parole. Per un modo semplice per digitare, provare la modalità di dettatura sulla tastiera della realtà mista. 
 
 Problemi con il riconoscimento vocale? [Ottieni aiuto](using-wmr-faq.md#speech-commands-arent-working)
 
@@ -30,13 +30,13 @@ Problemi con il riconoscimento vocale? [Ottieni aiuto](using-wmr-faq.md#speech-c
 
 ## <a name="see-it-say-it"></a>Guarda, parla
 
-Nella Home realtà mista di Windows, se viene visualizzata una parola, è spesso possibile usarla come un comando vocale. Ad esempio, è sufficiente pronunciare il nome di un pulsante per selezionarlo. Se non viene visualizzato un nome, puntare il controller di movimento sul pulsante (oppure, se si usa un gamepad Xbox, è possibile trovare il proprio sguardo) per scoprire cosa dire. 
+Nella Home realtà mista di Windows, se viene visualizzata una parola, è spesso possibile usarla come un comando vocale. Ad esempio, è sufficiente pronunciare il nome di un pulsante per selezionarlo. Se non viene visualizzato un nome, puntare il controller di movimento sul pulsante per individuare gli elementi da pronunciare. Per i gamepad Xbox, resta il tuo sguardo sul pulsante.
 
 ## <a name="general-speech-commands"></a>Comandi vocali generali
 
-È possibile usarli in tutta la realtà mista di Windows per essere più veloci. Alcuni comandi usano il cursore dello sguardo, che verrà indicato con "Select".
+Usare i comandi vocali seguenti in realtà mista di Windows per ottenere più rapidamente. Alcuni comandi usano il cursore dello sguardo, che verrà indicato con "Select".
 
-| Operazione da eseguire | Pronuncia |
+| Per | Pronuncia |
 | --- | --- |
 | Select | Pronunciare "Select" per visualizzare il cursore. Quindi, capovolgere l'intestazione per posizionare il cursore sull'elemento che si desidera selezionare e pronunciare di nuovo "Select". |
 | Aprire il menu Start | Vai a Start |
@@ -54,19 +54,19 @@ Nella Home realtà mista di Windows, se viene visualizzata una parola, è spesso
 
 Guardare un oggetto 3D, un ologramma o una finestra dell'app per usare questi comandi:
 
-| Operazione da eseguire | Pronuncia |
+| Per | Pronuncia |
 | --- | --- |
 | Rendilo più grande | Maggiore |
 | Dimensioni inferiori | Più piccoli |
 | Trasforma l'utente | Mi faccia |
-| Prepararsi per lo spostamento, seguirà lo sguardo | Sposta |
+| Prepararsi per lo spostamento. si seguirà lo sguardo | Sposta |
 | Posizionarlo al termine dello spostamento | Posizione |
 
 ## <a name="app-bar-commands"></a>Comandi della barra dell'app
 
 Osservare una finestra dell'app o un oggetto 3D per usare i comandi seguenti:
 
-| Operazione da eseguire | Pronuncia |
+| Per | Pronuncia |
 | --- | --- |
 | Chiudere un'app o un oggetto 3D | Chiudi |
 | Modificare un elemento (ridimensionare o spostare) | Regolare |
@@ -81,7 +81,7 @@ Osservare una finestra dell'app o un oggetto 3D per usare i comandi seguenti:
 
 Guardare il menu Start per usare i comandi seguenti:
 
-| Operazione da eseguire | Pronuncia |
+| Per | Pronuncia |
 | --- | --- |
 | Vai all'elenco tutte le app | Tutte le app |
 | Spostarsi verso l'alto o verso il basso all'avvio o a tutte le app | Pagina su/giù |
@@ -98,7 +98,7 @@ Guardare il menu Start per usare i comandi seguenti:
 
 Pronunciare "Hey Cortana", quindi usare uno dei comandi seguenti:
 
-| Operazione da eseguire | Pronuncia |
+| Per | Pronuncia |
 | --- | --- |
 | Scopri cosa puoi dire a Cortana | What can I say? |
 | Aumento/riduzione del volume | Attiva/Disattiva volume |
@@ -127,17 +127,17 @@ Passa alla modalità di dettatura ogni volta che la tastiera è attiva per un mo
 
 ### <a name="keyboard-dictation-commands"></a>Comandi di dettatura tastiera
 
-| Operazione da eseguire | Pronuncia |
+| Per | Pronuncia |
 | --- | --- |
 | Chiudi la tastiera | Chiudi |
 | Inizia la dettatura | Inizia la dettatura |
 | Arresta la dettatura | Arresta la dettatura |
-| Elimina quanto appena detta | Elimina |
+| Elimina i dati imposti | Elimina |
 | Selezionare tutti gli elementi nella casella di dettatura | Seleziona tutto |
 
 ### <a name="punctuation"></a>Punteggiatura
 
-È necessario pronunciare i nomi della punteggiatura che si vuole usare. Ad esempio, si potrebbe dire "Hey **virgole** What are up to **Question Mark** ".
+È necessario pronunciare i nomi della punteggiatura che si vuole usare. Ad esempio, si potrebbe dire "Hey **virgole** What are up to **Question Mark**".
 
 Di seguito sono riportate le parole chiave di punteggiatura che è possibile usare:
 
@@ -148,11 +148,11 @@ Di seguito sono riportate le parole chiave di punteggiatura che è possibile usa
 * Hashtag, smiley/smiley, accigliato, Winky
 * Dollaro, percentuale
 
-A volte è utile scrivere elementi come gli indirizzi di posta elettronica. Per example@outlook.com indicare, ad esempio, "E X a M P L E in Outlook dot com".
+A volte è utile scrivere elementi come gli indirizzi di posta elettronica. Per example@outlook.com indicare, ad esempio, "E X a M P L E in Outlook dot-com".
 
-Per arrestare la dettatura, selezionare **fine** .
+Per arrestare la dettatura, selezionare **fine**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Contattare la community](https://answers.microsoft.com)
 * [Contattaci per assistenza](https://support.microsoft.com/contactus/)

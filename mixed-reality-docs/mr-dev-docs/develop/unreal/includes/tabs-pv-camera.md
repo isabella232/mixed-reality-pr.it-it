@@ -1,60 +1,11 @@
 ---
-ms.openlocfilehash: a8258f1ba99fdd1607014624c4ad4d6ec0a8e330
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: eb51caa4caf0d425b5e49c3abca2a523b08fc312
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609608"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717402"
 ---
-# <a name="425"></a>[4.25](#tab/425)
-
-## <a name="render-from-the-pv-camera-for-mrc"></a>Eseguire il rendering dalla fotocamera/videocamera per MRC
-
-> [!NOTE]
-> Questa operazione richiede **Unreal Engine 4.25** o versioni successive.
-
-Il sistema e i registratori MRC personalizzati creano acquisizioni in realtà mista combinando la fotocamera/videocamera con ologrammi sottoposti a rendering dall'app.
-
-Per impostazione predefinita, l'acquisizione in realtà mista usa l'output olografico dell'occhio destro. Se un'app immersiva sceglie di [eseguire il rendering dalla fotocamera/videocamera](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in), verrà usata quest'ultima. Il rendering dalla fotocamera/videocamera migliora il mapping tra il mondo reale e gli ologrammi nel video MRC.
-
-Per acconsentire esplicitamente al rendering dalla fotocamera/videocamera:
-
-1. Chiama **SetEnabledMixedRealityCamera** e **ResizeMixedRealityCamera**.
-    * Usa i valori **Size X** (Dimensione X) e **Size Y** (Dimensione Y) per impostare le dimensioni video.
-
-![Terza fotocamera](../../platform-capabilities-and-apis/images/unreal-camera-3rd.PNG)
-
-Unreal gestirà quindi le richieste da MRC per eseguire il rendering dal punto di vista della fotocamera/videocamera.
-
-> [!NOTE]
-> Solo quando viene attivata [Aquisizione realtà mista](../../../mixed-reality-capture.md) all'app verrà chiesto di eseguire il rendering dal punto di vista della fotocamera/videocamera.
-
-## <a name="using-the-pv-camera"></a>Uso della fotocamera/videocamera
-
-La texture della webcam può essere recuperata nel gioco in fase di runtime, ma deve essere abilitata in **Edit > Project Settings** (Modifica > Impostazioni progetto) nell'editor:
-1. Passa a **Platforms > HoloLens > Capabilities** (Piattaforme > HoloLens > Funzionalità) e seleziona **Webcam**.
-    * Usa la funzione **StartCameraCapture** per usare la webcam in fase di runtime e la funzione **StopCameraCapture** per arrestare la registrazione.
-
-![Avvio e arresto della fotocamera](../images/unreal-camera-startstop.PNG)
-
-## <a name="rendering-an-image"></a>Rendering di un'immagine
-Per eseguire il rendering dell'immagine della fotocamera:
-1. Crea un'istanza materiale dinamica basata su un materiale nel progetto, denominato **PVCamMat** nello screenshot seguente.  
-2. Imposta l'istanza materiale dinamica su una variabile **Material Instance Dynamic Object Reference** (Riferimento all'oggetto dinamico istanza materiale).  
-3. Imposta il materiale dell'oggetto nella scena che eseguirà il rendering del feed della fotocamera su questa nuova istanza materiale dinamica.
-    * Avvia un timer che verrà usato per associare l'immagine della fotocamera al materiale.
-
-![Rendering della fotocamera](../images/unreal-camera-render.PNG)
-
-4. Crea una nuova funzione per questo timer, in questo caso **MaterialTimer**, e chiama **GetARCameraImage** per ottenere la texture dalla webcam.  
-5. Se la texture è valida, imposta un parametro di texture nello shader sull'immagine.  In alternativa, avvia di nuovo il timer del materiale.
-
-![Acquisire texture dalla webcam](../images/unreal-camera-texture.PNG)
-
-5. Assicurarsi che il materiale includa un parametro corrispondente al nome in **SetTextureParameterValue** associato a una voce di colore. In mancanza di questo parametro, l'immagine della fotocamera non potrà essere visualizzata correttamente.
-
-![Texture della fotocamera](../images/unreal-camera-material.PNG)
-
 # <a name="426"></a>[4.26](#tab/426) 
 
 ## <a name="pv-camera-feed-setup"></a>Impostazione del feed della fotocamera/videocamera
@@ -221,4 +172,53 @@ void ACamCapture::Tick(float DeltaTime)
     }
 }
 ```
+
+# <a name="425"></a>[4.25](#tab/425)
+
+## <a name="render-from-the-pv-camera-for-mrc"></a>Eseguire il rendering dalla fotocamera/videocamera per MRC
+
+> [!NOTE]
+> Questa operazione richiede **Unreal Engine 4.25** o versioni successive.
+
+Il sistema e i registratori MRC personalizzati creano acquisizioni in realtà mista combinando la fotocamera/videocamera con ologrammi sottoposti a rendering dall'app.
+
+Per impostazione predefinita, l'acquisizione in realtà mista usa l'output olografico dell'occhio destro. Se un'app immersiva sceglie di [eseguire il rendering dalla fotocamera/videocamera](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in), verrà usata quest'ultima. Il rendering dalla fotocamera/videocamera migliora il mapping tra il mondo reale e gli ologrammi nel video MRC.
+
+Per acconsentire esplicitamente al rendering dalla fotocamera/videocamera:
+
+1. Chiama **SetEnabledMixedRealityCamera** e **ResizeMixedRealityCamera**.
+    * Usa i valori **Size X** (Dimensione X) e **Size Y** (Dimensione Y) per impostare le dimensioni video.
+
+![Terza fotocamera](../../platform-capabilities-and-apis/images/unreal-camera-3rd.PNG)
+
+Unreal gestirà quindi le richieste da MRC per eseguire il rendering dal punto di vista della fotocamera/videocamera.
+
+> [!NOTE]
+> Solo quando viene attivata [Aquisizione realtà mista](../../../mixed-reality-capture.md) all'app verrà chiesto di eseguire il rendering dal punto di vista della fotocamera/videocamera.
+
+## <a name="using-the-pv-camera"></a>Uso della fotocamera/videocamera
+
+La texture della webcam può essere recuperata nel gioco in fase di runtime, ma deve essere abilitata in **Edit > Project Settings** (Modifica > Impostazioni progetto) nell'editor:
+1. Passa a **Platforms > HoloLens > Capabilities** (Piattaforme > HoloLens > Funzionalità) e seleziona **Webcam**.
+    * Usa la funzione **StartCameraCapture** per usare la webcam in fase di runtime e la funzione **StopCameraCapture** per arrestare la registrazione.
+
+![Avvio e arresto della fotocamera](../images/unreal-camera-startstop.PNG)
+
+## <a name="rendering-an-image"></a>Rendering di un'immagine
+Per eseguire il rendering dell'immagine della fotocamera:
+1. Crea un'istanza materiale dinamica basata su un materiale nel progetto, denominato **PVCamMat** nello screenshot seguente.  
+2. Imposta l'istanza materiale dinamica su una variabile **Material Instance Dynamic Object Reference** (Riferimento all'oggetto dinamico istanza materiale).  
+3. Imposta il materiale dell'oggetto nella scena che eseguirà il rendering del feed della fotocamera su questa nuova istanza materiale dinamica.
+    * Avvia un timer che verrà usato per associare l'immagine della fotocamera al materiale.
+
+![Rendering della fotocamera](../images/unreal-camera-render.PNG)
+
+4. Crea una nuova funzione per questo timer, in questo caso **MaterialTimer**, e chiama **GetARCameraImage** per ottenere la texture dalla webcam.  
+5. Se la texture è valida, imposta un parametro di texture nello shader sull'immagine.  In alternativa, avvia di nuovo il timer del materiale.
+
+![Acquisire texture dalla webcam](../images/unreal-camera-texture.PNG)
+
+5. Assicurarsi che il materiale includa un parametro corrispondente al nome in **SetTextureParameterValue** associato a una voce di colore. In mancanza di questo parametro, l'immagine della fotocamera non potrà essere visualizzata correttamente.
+
+![Texture della fotocamera](../images/unreal-camera-material.PNG)
 

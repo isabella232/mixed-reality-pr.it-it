@@ -6,19 +6,18 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, auricolare realtà mista, auricolare di realtà misto di Windows, auricolare di realtà virtuale, HoloLens, tastiera, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 52555dec04b42b7865e8d358d57cbc9112a7a326
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: b258ad7934cae76c581723d681cce32c68458b72
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703147"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847282"
 ---
 # <a name="keyboard"></a>Tastiera
 
 ![Tastiera](images/UX_Hero_Keyboard.jpg)
 
-L'applicazione di realtà mista può richiamare la tastiera di sistema in qualsiasi momento. Si noti che la tastiera di sistema si comporterà in base alle funzionalità della piattaforma di destinazione, ad esempio la tastiera in HoloLens 2 supporta le interazioni con la mano diretta, mentre la tastiera su HoloLens (1a generazione) supporta lo sguardo e l'input del movimento del tocco aereo.
-
+L'applicazione di realtà mista può richiamare la tastiera di sistema in qualsiasi momento, il che si comporta in base alle funzionalità della piattaforma di destinazione. Ad esempio, la tastiera su HoloLens 2 supporta le interazioni dirette, mentre le tastiere HoloLens (1st Gen) supportano gli sguardi e i rubinetti d'aria.
 
 <br>
 
@@ -34,12 +33,12 @@ L'applicazione di realtà mista può richiamare la tastiera di sistema in qualsi
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di checkpoint per lo sviluppo di Unity, l'attività successiva consiste nel distribuire l'applicazione in un dispositivo o in un emulatore. 
+Se si sta seguendo il percorso di sviluppo di Unity, l'attività successiva consiste nel distribuire l'applicazione in un dispositivo o in un emulatore. 
 
 > [!div class="nextstepaction"]
 > [Eseguire la distribuzione in HoloLens o in modalità mista di Windows per la realtà mista](../develop/platform-capabilities-and-apis/using-visual-studio.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

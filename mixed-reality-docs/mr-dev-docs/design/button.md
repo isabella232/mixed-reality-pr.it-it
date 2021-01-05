@@ -1,65 +1,64 @@
 ---
 title: Pulsante
-description: Un pulsante offre all'utente un modo per attivare un'azione immediata. È uno dei componenti più fondamentali in realtà mista.
+description: Viene illustrato come attivare un'azione immediata con i pulsanti, che è uno dei componenti fondamentali della realtà mista.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, cuffie per realtà mista, cuffie con realtà mista di Windows, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, pulsante
-ms.openlocfilehash: c5e52bef8604ba4874b7f4b055107ec0db6b3683
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: b4e8388c4e3ea855c191cbdfc06621018274ff86
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702857"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847594"
 ---
 # <a name="button"></a>Button
 
 ![Button](images/UX_Hero_Button.jpg)
 
-Un pulsante offre all'utente un modo per attivare un'azione immediata. È uno dei componenti più fondamentali in realtà mista. In HoloLens 2, un pulsante presenta molti suggerimenti visivi e affordances per aumentare la confidenza dell'interazione dell'utente. 
-
+Un pulsante consente agli utenti di attivare azioni immediate in un'esperienza di realtà mista. In HoloLens 2 i pulsanti hanno segnali visivi e affordances che consentono di aumentare la confidenza di interazione con gli utenti. 
 
 :::row:::
     :::column:::
-       ![Spostamento](images/UX_Button_Affordance_ProximityLight.jpg)<br>
+       ![Pulsante con effetto di luce vicino visualizzato](images/UX_Button_Affordance_ProximityLight.jpg)<br>
        **Luce vicina**<br>
     :::column-end:::
     :::column:::
-       ![Rotazione](images/UX_Button_Affordance_FocusHighlight.jpg)<br>
+       ![Pulsante selezionato con effetto evidenziato attivo visualizzato](images/UX_Button_Affordance_FocusHighlight.jpg)<br>
         **Evidenziazione dello stato attivo**<br>
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       ![Spostamento](images/UX_Button_Affordance_Compression.jpg)<br>
+       ![Pulsante premuto con effetto della gabbia di compressione visualizzato](images/UX_Button_Affordance_Compression.jpg)<br>
        **Compressione Cage**<br>
     :::column-end:::
     :::column:::
-       ![Rotazione](images/UX_Button_Affordance_Pulse.jpg)<br>
+       ![Pulsante premuto con effetto impulso trigger visualizzato](images/UX_Button_Affordance_Pulse.jpg)<br>
         **Pulse on trigger**<br>
     :::column-end:::
 :::row-end:::
 
 <br>
 
-
 ---
 
 ## <a name="button-in-mrtkmixed-reality-toolkit-for-unity"></a>Pulsante in MRTK (Mixed Reality Toolkit) per Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornisce vari tipi di prefabbricati di pulsanti. È possibile trovare i pulsanti di tipo Shell per HoloLens 2 e HoloLens (1st Gen), oltre ad esempi personalizzati. La precostruzione HoloLens 2 Button contiene una grande quantità di affordances dettagliata che consentono di migliorare la confidenza dell'utente. Include evidenziazione basata sulla prossimità, compressione della gabbia anteriore e effetto di impulso sul trigger.
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornisce vari tipi di prefabbricati di pulsanti, inclusi i pulsanti di tipo Shell per HoloLens 2 e HoloLens (1a generazione). Il prefabbricato di HoloLens 2 Button contiene diversi affordances dettagliati che consentono di migliorare la confidenza degli utenti:
 
-* [Pulsante di MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
+* Evidenziazione basata su prossimità
+* Compressione della gabbia anteriore
+* Effetto impulsi sul trigger.
 
-
+* Per altre istruzioni ed esempi personalizzati, vedere il [pulsante MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) .
 
 <br>
 
 ---
 
-
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

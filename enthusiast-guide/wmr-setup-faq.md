@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: c789fbb19f406c6dc355e326f2f12a5d64030e32
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: bde88890f596e19dd9b5f9e87ceabbf91039af67
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131815"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725442"
 ---
 # <a name="windows-mixed-reality-setup-faq"></a>Domande frequenti sulla configurazione di Windows Mixed Reality
 
@@ -28,7 +28,7 @@ Attenersi alla procedura seguente:
 * Riavviare il computer e riprovare. Potrebbe essere necessario ripetere più volte o eseguire lo strumento di risoluzione dei problemi di Windows Update per cancellare gli aggiornamenti in sospeso.
 
 > [!NOTE]
-> * Se si è in una rete gestita dall'organizzazione, rivolgersi all'amministratore. Potrebbe essere necessario abilitare la realtà mista di Windows. Cerchi le istruzioni per professionisti IT? Vedere **[questo articolo](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality)** .
+> * Se si è in una rete gestita dall'organizzazione, rivolgersi all'amministratore. Potrebbe essere necessario abilitare la realtà mista di Windows. Cerchi le istruzioni per professionisti IT? Vedere **[questo articolo](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality)**.
 > * Se la connessione di rete Wi-Fi è impostata su a consumo, impostarla su non a consumo. **[Scopri di più](https://support.microsoft.com/help/4028458)**
 
 ## <a name="i-get-a-message-that-says-something-went-wrong-and-we-couldnt-start-windows-mixed-reality"></a>Viene visualizzato un messaggio che indica che si è verificato un errore e non è stato possibile avviare la realtà mista di Windows.
@@ -40,15 +40,15 @@ Attenersi alla procedura seguente:
 3. Passare a **impostazioni > aggiorna & sicurezza > Windows Update** e assicurarsi che Windows Update sia attivato. Quindi, scaricare e installare gli aggiornamenti in attesa di installazione.
 4. Riconnettere l'auricolare al computer, quindi riprovare a eseguire l'installazione.
 
-Se i passaggi precedenti non funzionano, provare a disinstallare e reinstallare la realtà mista di Windows. Passare a **impostazioni > realtà mista > disinstallare** e selezionare **Disinstalla** . Riavviare quindi il computer. Per avviare nuovamente il processo di installazione, è sufficiente collegare la cuffia al PC.
+Se i passaggi precedenti non funzionano, provare a disinstallare e reinstallare la realtà mista di Windows. Passare a **impostazioni > realtà mista > disinstallare** e selezionare **Disinstalla**. Riavviare quindi il computer. Per avviare nuovamente il processo di installazione, è sufficiente collegare la cuffia al PC.
 
 ## <a name="the-mixed-reality-portal-doesnt-open-when-i-plug-in-my-headset"></a>Il portale per la realtà mista non si apre quando si collega l'auricolare
 
-Il portale per la realtà mista, l'app che consente di configurare la realtà mista di Windows, è progettata per l'apertura automatica quando si collega un auricolare compatibile. Se non si apre, passare a Start e digitare "Mixed Reality Portal" nella casella di ricerca per aprire l'app. Se non si riesce a trovare il portale di realtà mista, questo potrebbe significare che è necessario eseguire [l'aggiornamento alla versione più recente di Windows](https://support.microsoft.com/en-us/help/12373/windows-update-faq).
+Il portale per la realtà mista, l'app che consente di configurare la realtà mista di Windows, è progettata per l'apertura automatica quando si collega un auricolare compatibile. Se non si apre, passare a Start e digitare "Mixed Reality Portal" nella casella di ricerca per aprire l'app. Potrebbe essere necessario eseguire l' [aggiornamento alla versione più recente di Windows](https://support.microsoft.com/en-us/help/12373/windows-update-faq) , se non si riesce a trovare il portale di realtà mista.
 
 ## <a name="i-get-a-message-that-says-my-pc-cant-run-windows-mixed-reality"></a>Viene visualizzato un messaggio che indica che il PC non può eseguire la realtà mista di Windows
 
-Se si riceve questo messaggio, il PC non soddisfa i [requisiti minimi](https://support.microsoft.com/help/4039260) necessari per eseguire la realtà mista di Windows. Il problema potrebbe essere dovuto al fatto che la configurazione hardware del computer non è compatibile con la realtà mista di Windows o perché è necessario eseguire l' [aggiornamento alla versione più recente di Windows](https://support.microsoft.com/help/12373).
+Se si riceve questo messaggio, il PC non soddisfa i [requisiti minimi](https://support.microsoft.com/help/4039260) necessari per eseguire la realtà mista di Windows. La configurazione hardware del computer potrebbe non essere compatibile con la realtà mista di Windows o potrebbe essere necessario eseguire [l'aggiornamento alla versione più recente di Windows](https://support.microsoft.com/help/12373).
 
 Note sulle schede grafiche:
 
@@ -57,7 +57,7 @@ Note sulle schede grafiche:
 
 ## <a name="i-get-a-message-that-says-youre-nearly-therethis-pc-doesnt-meet-the-minimum-requirements-needed-to-run-windows-mixed-reality"></a>Viene visualizzato un messaggio che indica che il PC non soddisfa i requisiti minimi necessari per l'esecuzione della realtà mista di Windows.
 
-Se si riceve questo messaggio, il PC non soddisfa i requisiti minimi necessari per la migliore esperienza nella realtà mista di Windows. Il PC potrebbe essere in grado di eseguire un auricolare immersivo, ma potrebbe non essere in grado di eseguire determinate app o potrebbe riscontrare problemi di prestazioni.
+Se si riceve questo messaggio, il PC non soddisfa i requisiti minimi necessari per la migliore esperienza nella realtà mista di Windows. Il PC può eseguire un auricolare immersivo, ma potrebbe non essere in grado di eseguire determinate app o potrebbe avere problemi con le prestazioni.
 
 ## <a name="my-xbox-controller-isnt-working"></a>Il controller Xbox non funziona
 
@@ -75,7 +75,7 @@ Attenersi alla procedura seguente:
 
 * Assicurarsi che i controller siano accesi e addebitati completamente.
 * Sostituire le batterie del controller.
-* Spegnere e riaccendere i controller tenendoli davanti all'utente. Premere e tenere premuto il pulsante Windows per 4 secondi per spegnere un controller, quindi premerlo e tenerlo premuto di nuovo per 2 secondi per attivarlo.
+* Spegnere e riaccendere i controller tenendoli davanti all'utente. Premere e tenere premuto il pulsante Windows per 4 secondi per spegnere un controller, quindi tenere premuto di nuovo per 2 secondi per attivarlo.
 * Passare a **impostazioni > dispositivi > Bluetooth & altri dispositivi** nel PC e assicurarsi che siano abbinati (dovrebbero essere visualizzati nella pagina).
 
 [Altre informazioni sui controller di movimento](controllers-in-wmr.md)
@@ -85,13 +85,13 @@ Attenersi alla procedura seguente:
 Attenersi alla procedura seguente:
 
 - Verificare che l'auricolare sia connesso alle porte corrette del computer. Deve essere collegato alla scheda grafica discreta del PC e a una porta USB 3,0. Ecco come identificare le porte corrette:
-    - Le porte USB 3,0 hanno un logo speciale con un contrassegno "SS" (che indica "SuperSpeed"). Il pezzo interno della porta è generalmente blu, mentre le porte USB 2,0 precedenti sono in genere nere o bianche all'interno.
-    - Se il computer dispone di due porte HDMI, utilizzare quella che si connette alla scheda grafica, non la scheda madre del computer. Non è sempre ovvio, ma le porte discrete si trovano spesso in uno slot di espansione nel computer. Se si prova a usare una porta e non funziona, provare l'altra.
+    - Le porte USB 3,0 hanno un logo speciale con un contrassegno "SS" (che indica "SuperSpeed"). Il pezzo interno della porta è generalmente blu, ma le porte USB 2,0 precedenti sono in genere nere o bianche all'interno.
+    - Se il computer dispone di due porte HDMI, utilizzare quella che si connette alla scheda grafica, non la scheda madre del computer. Questa operazione non è sempre ovvia, anche se le porte discrete si trovano spesso in uno slot di espansione nel computer. Se si prova a usare una porta e non funziona, provare l'altra.
 - Accedere al sito Web del produttore dell'auricolare e aggiornare i driver e il firmware per l'auricolare.
 
 ## <a name="during-mixed-reality-start-up-im-stuck-at-turn-your-head-side-to-side-and-then-at-the-floor"></a>Durante l'avvio della realtà mista, mi sono bloccato a "capovolgere il lato destro e quindi al pavimento".
 
-Questo passaggio consente all'auricolare di riconoscere lo spazio e di ripristinare i limiti e le pavimentazioni virtuali esistenti. Quando si usa l'auricolare, questo processo di analisi può richiedere fino a 10 secondi. Una volta completata l'operazione, sarà possibile usare la Home realtà mista di Windows o verrà richiesto di configurare di nuovo il limite.
+Questo passaggio consente all'auricolare di riconoscere lo spazio e di ripristinare i limiti e le pavimentazioni virtuali esistenti. Quando si usa l'auricolare, questo processo di analisi può richiedere fino a 10 secondi. Una volta completata l'operazione, si sarà in casa la realtà mista di Windows o verrà richiesto di configurare di nuovo il limite.
 
 Se il processo di analisi richiede più di 10 secondi, potrebbe essersi verificato un problema con il sensore di prossimità nell'auricolare:
 
@@ -100,11 +100,11 @@ Se il processo di analisi richiede più di 10 secondi, potrebbe essersi verifica
 
 ## <a name="the-floor-of-my-windows-mixed-reality-home-doesnt-appear-to-be-at-the-correct-height"></a>Il piano di casa della realtà mista di Windows non sembra essere all'altezza corretta
 
-Selezionare **inizia > regolazione del piano** , che viene avviata quando si inserisce l'app in tutto il mondo, per apportare modifiche durante l'uso dell'auricolare. In questa app si verrà indirizzati all'uso del touch pad (Motion controller) o del riquadro direzione (gamepad) per regolare l'altezza del piano. Quando il piano è corretto, usare il pulsante Windows per tornare alla Home page.
+Selezionare **inizia > regolazione del piano**, che verrà avviata dopo aver inserito l'app nel mondo, per apportare modifiche durante l'uso dell'auricolare. In questa app si verrà indirizzati all'uso di touch pad (Motion controller) o direction pad (gamepad) per regolare l'altezza del piano. Quando il piano è corretto, usare il pulsante Windows per tornare alla Home page.
 
 ## <a name="i-cant-show-a-preview-of-what-im-seeing-in-my-headset-on-my-desktop"></a>Non è possibile visualizzare un'anteprima di ciò che viene visualizzato nell'auricolare sul desktop
 
-Il portale per la realtà mista di Windows include un pulsante **Riproduci** nella parte inferiore della schermata che consente di visualizzare in anteprima gli elementi visualizzati nell'auricolare sullo schermo del desktop. Per motivi di prestazioni, questa funzionalità è disponibile solo nei PC che eseguono Windows Mixed Reality Ultra (90Hz).
+Il portale per la realtà mista di Windows include un pulsante **Riproduci** nella parte inferiore della schermata che consente di visualizzare in anteprima gli elementi visualizzati nell'auricolare sullo schermo del desktop. Per motivi di prestazioni, questa funzionalità è disponibile solo nei PC che eseguono Windows Mixed Reality Ultra (90 Hz).
 
 ## <a name="how-can-i-get-a-clearer-view-in-my-headset"></a>Come è possibile ottenere una visualizzazione più chiara nell'auricolare
 
@@ -124,9 +124,9 @@ Provare a eseguire quanto segue:
 
 ## <a name="my-wi-fi-slows-down-when-i-use-windows-mixed-reality"></a>Il Wi-Fi rallenta quando si usa la realtà mista di Windows
 
-Se si usa una connessione Wi-Fi a 2,4 GHz, i controller di movimento potrebbero rallentare la connessione Wi-Fi. Provare una delle operazioni seguenti:
+Se si usa una connessione Wi-Fi a 2,4 GHz, i controller di movimento potrebbero rallentare la connessione Wi-Fi. Provare a eseguire una delle operazioni seguenti:
 
-* Passare a una connessione di Wi-Fi a 5 GHz, se disponibile. Altre informazioni
+* Passare a una connessione Wi-Fi a 5 GHz, se disponibile. Altre informazioni
 * Usare una scheda Bluetooth separata per connettere i controller di movimento al PC. [Vedere gli adapter consigliati](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 > [!NOTE]
@@ -154,11 +154,11 @@ Se non è elencato:
 2. Verificare la disponibilità degli aggiornamenti software più recenti da Windows Update.
 3. Disinstallare e reinstallare la realtà mista di Windows:
     1. Scollegare entrambi i cavi auricolare dal PC.
-    2. Selezionare **impostazioni > realtà mista > disinstallare** .
+    2. Selezionare **impostazioni > realtà mista > disinstallare**.
     3. Se i controller di movimento sono abbinati al PC, selezionare **impostazioni > dispositivi > Bluetooth & altri dispositivi** per disaccoppiarli. Selezionare ogni controller e "Rimuovi dispositivo". Se i controller sono abbinati all'auricolare, è possibile ignorare questo passaggio.
     4. Collegare la cuffia al PC per reinstallare la realtà mista di Windows.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Contattare la community](https://answers.microsoft.com)
 * [Contattaci per assistenza](https://support.microsoft.com/contactus/)

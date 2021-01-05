@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Realtà mista, conferenza, Summit, sviluppatore, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: bd51220e030af1e9c60a66eb43ea6985b95cd43f
-ms.sourcegitcommit: 16524778ece416e002f52c9ceae354e1122bcc74
+ms.openlocfilehash: 93bafae605640a0576fd273f761eaec0a8994d86
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97582415"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757599"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Giappone
 
@@ -39,18 +39,18 @@ Grazie per aver partecipato al Giappone per lo sviluppo di realtà mista. Tutti 
 
 **Tutti gli orari sono ora solare Giappone (UTC + 9)** 
 
-### <a name="december-16th"></a>16 dicembre
+### <a name="december-16"></a>16 dicembre
 
 **È stata posticipata un'ora dalla pianificazione originale.**
 
 |**Time**|**Titolo sessione**|**Relatore**|**Lingua**|**Level**|
 |---------|---------|---------|---------|---------|
 |11:00-11:50am|[Apertura del discorso con un benvenuto speciale da Alex Kipman](https://youtu.be/MamMO11TnzY)|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/EN|N/D|
-|11:50am-12.00|**Interrompi (10min)**||||
+|11:50am-12.00|**Interrompi (10 min)**||||
 |12:00-12:25pm|Introduzione della *sessione 1* [alla realtà mista](https://youtu.be/HqJy91y8Of0)|Atsushi Suzuki|JA|100|
 |12:18.30-12:55pm|*Sessione 2* [combinazione di tempo reale aziendale](https://youtu.be/fJJ9I8UGbio)|Tetsu Muranaka|JA|200|
 |1: pm-1:50pm|*Sessione di pranzo* Panel: discussione gratuita interattiva, domande e risposte, MRTK + Oculus quest 2 * Update in seguito|Madoka Chiyoda + Microsoft MVP|JA|200|
-|1:50pm-2:00|**Interrompi (10min)**||||
+|1:50pm-2:00|**Interrompi (10 min)**||||
 |2:00-2:25pm|Panoramica della *sessione 3* [sullo sviluppo di HoloLens 2](https://youtu.be/_z0CwAVkbiQ)|Madoka Chiyoda|JA|200|
 |2: pm-2:55pm|*Session 4* [MRTK UX Components v 2.5.0](https://youtu.be/If5R9diyF50)|Yoon Park|JA|300|
 |3: pm-3:25pm|*Sessione 5* [Introduzione a HoloLens 2 e Unreal Engine (MRTK-Unreal)](https://youtu.be/AsAuPx0iz3o)|Cameron Micka|IT|300|
@@ -72,17 +72,17 @@ Questa sezione verrà aggiornata di frequente perché si ottengono altre domande
 
 **Q** -chi deve partecipare al giorno di sviluppo della realtà mista
 
-**R** : questo evento è incluso in tutti gli utenti che operano o svolgono nello spazio di realtà misto. Sebbene la maggior parte del contenuto sia destinata agli sviluppatori, sappiamo anche che è disponibile un contenuto interessante per un'ampia gamma di ruoli, oltre agli sviluppatori. Ricordarsi di controllare la pianificazione degli aggiornamenti per visualizzare il tipo di contenuto che verrà fornito.  
+**R** : questo evento è incluso in tutti gli utenti che operano o svolgono nello spazio di realtà misto. Sebbene la maggior parte del contenuto presentato sia incentrato sugli sviluppatori, sappiamo anche che è disponibile contenuto interessante per un'ampia gamma di ruoli. Ricordarsi di controllare la pianificazione degli aggiornamenti per visualizzare il tipo di contenuto che verrà fornito.  
 
 **D** : non è possibile trovare l'evento negli eventi live del team
 
-**A: per** partecipare, fare clic sul collegamento nel messaggio di posta elettronica che si riceverà dopo la registrazione per l'evento. È consigliabile controllare nell'app teams PC ed è anche possibile partecipare all'app per dispositivi mobili teams o nel browser desktop.
+**A: per** partecipare, selezionare il collegamento nel messaggio di posta elettronica che verrà visualizzato dopo la registrazione per l'evento. È consigliabile controllare nell'app teams PC ed è anche possibile partecipare all'app per dispositivi mobili teams o nel browser desktop.
 
-Se per qualche motivo non è possibile accedere ai team, controllare il canale YouTube in cui l'evento verrà trasmesso simultaneamente. Tuttavia, non sarà possibile partecipare al controllo di qualità con gli speaker.
+Se per qualche motivo non si è in grado di accedere ai team, controllare il canale YouTube in cui l'evento verrà trasmesso simultaneamente. Tuttavia, non è possibile partecipare al controllo di qualità con gli speaker.
 
 **D** : i materiali di presentazione e i video della sessione saranno disponibili dopo l'evento?
 
-**R** : verranno rilasciate tutte le sessioni video, ma a causa del tempo richiesto, provare a partecipare a Microsoft Live, se possibile.
+**R** : verrà rilasciata ogni sessione video, ma a causa del tempo richiesto, provare a partecipare a Microsoft Live, se possibile.
 
 <!--  
 **Q** -  
@@ -99,8 +99,8 @@ Se per qualche motivo non è possibile accedere ai team, controllare il canale Y
 
 ### <a name="code-of-conduct"></a>Codice di comportamento 
 
-L'obiettivo principale di Microsoft è quello di offrire a ogni utente e organizzazione i mezzi necessari a ottenere risultati sempre migliori. Sono inclusi tutti gli eventi e le raccolte Microsoft, tra cui le piattaforme digitali, in cui si cerca di creare un'esperienza intuitiva, intuitiva, piacevole e intuitiva per tutti i partecipanti.
+L'obiettivo principale di Microsoft è quello di offrire a ogni utente e organizzazione i mezzi necessari a ottenere risultati sempre migliori. Sono inclusi tutti gli eventi e le raccolte Microsoft, tra cui le piattaforme digitali, in cui si cerca di creare un'esperienza intuitiva, semplice e intuitiva per tutti i partecipanti.
 
-Si prevede che tutti i partecipanti agli eventi digitali rispettino i principi di questo codice di comportamento, che copre l'evento digitale principale e tutte le attività correlate. Il comportamento, i messaggi, le immagini o le interazioni non sono tollerati da qualsiasi partecipante di terze parti, in qualsiasi forma, in qualsiasi aspetto del programma, incluse le attività aziendali e sociali, indipendentemente dalla posizione. Microsoft non tollererà molestie o discriminazioni basate su età, ascendenza, colore, identità del sesso o espressione, origine nazionale, disabilità fisica o mentale, religione, orientamento sessuale o qualsiasi altra caratteristica protetta da leggi locali, normative e ordinamenti applicabili.  
+Si prevede che tutti i partecipanti agli eventi digitali rispettino i principi di questo codice di comportamento, che copre l'evento digitale principale e tutte le attività correlate. Il comportamento, i messaggi, le immagini o le interazioni non sono tollerabili da parte di qualsiasi partecipante, in qualsiasi forma, in qualsiasi aspetto del programma, incluse le attività aziendali e sociali, indipendentemente dalla posizione. Microsoft non tollererà molestie o discriminazioni in base a età, ascendenza, colore, identità del sesso o espressione, origine nazionale, disabilità fisica o mentale, religione, orientamento sessuale o qualsiasi altra caratteristica protetta da leggi locali, normative e ordinamenti applicabili.  
 
 La fotografia, il video o la registrazione del contenuto della sessione o delle presentazioni in qualsiasi formato condiviso nei canali sociali è vietato. Invitiamo tutti gli utenti a contribuire alla creazione di un ambiente accogliente e sicuro. Segnala eventuali preoccupazioni, comportamenti molesti, sospetti o attività di disturbo per la hotline di condotta aziendale (1-877-320-MSFT o [buscond@microsoft.com](mailto:buscond@microsoft.com) ). Microsoft si riserva il diritto di rifiutare l'ammissione o rimuovere qualsiasi persona da giorni di sviluppo di realtà mista in qualsiasi momento a sua esclusiva discrezione. 

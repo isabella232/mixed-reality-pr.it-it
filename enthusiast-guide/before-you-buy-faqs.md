@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, pre-vendita, ricerca, acquisto, prima dell'acquisto
 appliesto:
 - Windows 10
-ms.openlocfilehash: 20a585088c9bea9d01754f78e9934a4022c0e34c
-ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
+ms.openlocfilehash: e9b9254166b3ac4c188531d3651407ecfd853460
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "95002975"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725512"
 ---
 # <a name="before-you-buy-frequently-asked-questions"></a>Prima di acquistare domande frequenti
 
@@ -21,7 +21,7 @@ ms.locfileid: "95002975"
 
 ### <a name="where-can-i-buy-a-windows-mixed-reality-ready-pc-or-headset"></a>Dove è possibile acquistare un PC o un auricolare per la realtà mista di Windows
 
-**Risposta rapida:** È possibile acquistare un PC o un auricolare pronto per la realtà mista di Windows presso un rivenditore locale approvato o in linea da un'ampia gamma di rivenditori, inclusa la Microsoft Store. Trova un PC o un headset di Windows misto reality pronto: <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
+**Risposta rapida:** È possibile acquistare un PC o un auricolare pronto per la realtà mista di Windows presso un rivenditore locale approvato o in linea da rivenditori diversi, inclusa la Microsoft Store. Trova un PC o un headset di Windows misto reality pronto: <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### <a name="where-can-i-try-windows-mixed-reality"></a>Dove posso provare la realtà mista di Windows
 
@@ -51,7 +51,7 @@ Altre informazioni sulla realtà mista sono disponibili qui: <https://docs.micro
 
 **Risposta rapida:** Gli auricolari per la realtà mista di Windows eseguono il rilevamento interno (le videocamere di rilevamento sono nella cuffia) e la configurazione plug-and-Play con Windows 10.
 
-**Altri dettagli**: la realtà mista di Windows offre diverse funzionalità, tra cui la semplice configurazione (senza bisogno di sensori esterni per tenere traccia dell'utente e dei controller), la scelta di auricolari per soddisfare la comodità e il punto di prezzo, le cuffie con risoluzioni competitive e infine un'esperienza utente univoca che offre un'interfaccia spaziale che consente di usare migliaia di app dal Microsoft Store.
+**Altri dettagli**: la realtà mista di Windows offre diverse funzionalità, tra cui la semplice configurazione (senza bisogno di sensori esterni per tenere traccia dell'utente e dei controller), la scelta di auricolari per soddisfare la comodità e il punto di prezzo, le cuffie con risoluzioni competitive e infine un'esperienza utente univoca che offre un'interfaccia spaziale, che consente di usare migliaia di app dal Microsoft Store.
 
 ### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>La realtà mista significa che le fotocamere interne sono pass-through? È possibile sperimentare la realtà aumentata oltre alla realtà virtuale
 
@@ -59,11 +59,11 @@ Altre informazioni sulla realtà mista sono disponibili qui: <https://docs.micro
 
 ### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>Informazioni sul rilevamento interno Come è diverso rispetto al rilevamento esterno o al rilevamento del Faro
 
-* **Rilevamento interno** La realtà mista di Windows usa il rilevamento interno. Con le videocamere di rilevamento interne sono incorporate nell'auricolare e tenere traccia delle modifiche nell'ambiente per determinare la posizione degli auricolari in relazione all'ambiente mentre ci si sposta.
+* **Rilevamento interno** La realtà mista di Windows usa il rilevamento interno. Con le fotocamere di rilevamento interne sono incorporate nell'auricolare e tenere traccia delle modifiche apportate all'ambiente per determinare la posizione degli auricolari in base all'ambiente mentre ci si sposta.
 
-* **Rilevamento esterno** Oculus, vive e altri usano il rilevamento esterno.  Con il rilevamento esterno, l'auricolare viene monitorato da uno o più dispositivi esterni. Le fotocamere sono compilate in questi dispositivi esterni, posizionati intorno all'ambiente e vengono usati per determinare la posizione della cuffia in relazione all'ambiente.
+* **Rilevamento esterno** Oculus, vive e altri usano il rilevamento esterno.  Con il rilevamento esterno, l'auricolare viene monitorato da uno o più dispositivi esterni. Le fotocamere sono compilate in questi dispositivi esterni, posizionati intorno all'ambiente e vengono usati per determinare la posizione dell'auricolare in base all'ambiente.
 
-Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel modo seguente: <https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system>
+Scopri di più sul [rilevamento interno](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system).
 
 ### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>Il rilevamento interno dei controller di movimento ha un effetto sul gioco a causa della fotocamera FOV
 
@@ -71,7 +71,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 
 ### <a name="how-is-windows-mixed-reality-different-from-samsung-gear-vr"></a>In che modo la realtà mista di Windows è diversa da Samsung Gear VR
 
-**Risposta rapida:** Tutti i prodotti VR basati su smartphone, tra cui Samsung Gear VR e Google Daydream, usano i sistemi di rilevamento della posizione Head di 3 gradi di libertà (3DOF). i sistemi basati su 3DOF consentono di spostare l'intestazione **solo** dal collo nel mondo virtuale. Windows MR d'altra parte usa un sistema di rilevamento della posizione di 6 gradi di libertà (6DOF) e dei controller. i sistemi basati su 6DOF consentono di spostare l'intero corpo nel mondo virtuale; quindi, è possibile aggirare un oggetto e vederlo da prospettive diverse, esattamente come si può fare nel mondo fisico. Rift e vive sono anche sistemi basati su 6DOF.
+**Risposta rapida:** Tutti i prodotti VR basati su smartphone, tra cui Samsung Gear VR e Google Daydream, usano i sistemi di rilevamento della posizione Head di 3DOF (Three Degrees of Freedom). i sistemi basati su 3DOF consentono di spostare l'intestazione **solo** dal collo nel mondo virtuale. Windows MR d'altra parte usa un sistema di rilevamento della posizione di sei gradi di libertà (6DOF) e dei controller. i sistemi basati su 6DOF consentono di spostare l'intero corpo nel mondo virtuale; quindi, è possibile aggirare un oggetto e vederlo da prospettive diverse, esattamente come si può fare nel mondo fisico. Rift e vive sono anche sistemi basati su 6DOF.
 
 * Per altre informazioni su 3DOF e 6DOF, vedere qui: <https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system#what-is-the-difference-between-3dof-and-6dof> 
 * Scopri di più sul rilevamento posizionale e il grado di libertà (DOF) qui: <https://www.roadtovr.com/introduction-positional-tracking-degrees-freedom-dof/>
@@ -81,7 +81,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <table>
 <tr>
 <th style="width:25%"> Cuffie </th>
-<th style="width:15%"> Risoluzione </th>
+<th style="width:15%"> Soluzione </th>
 <th style="width:10%"> Schermo </th>
 <th style="width:10%"> Frequenza di aggiornamento </th>
 <th style="width:10%"> FOV </th>
@@ -96,10 +96,10 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Acer AH101 </td>
 <td> 2880x1440 </td>
 <td> LCD </td>
-<td> Fino a 90Hz </td>
+<td> Fino a 90 Hz </td>
 <td> 100 ° </td>
-<td> Jack da 3,5 mm </td>
-<td> nessuno </td>
+<td> 3,5-mm Jack </td>
+<td> Nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.acer.com/ac/en/US/content/windows-mixed-reality-home">Acer</a> </td>
@@ -109,9 +109,9 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Acer OJO 500 </td>
 <td> 2880x1440 </td>
 <td> LCD </td>
-<td> Fino a 90Hz </td>
+<td> Fino a 90 Hz </td>
 <td> 100 ° </td>
-<td> Integrato + 3,5 mm Jack </td>
+<td> Integrato + 3,5-mm Jack </td>
 <td> Predefinito </td>
 <td style="text-align: center;">Meccanico</td>
 <td> Calo 2018 </td>
@@ -122,10 +122,10 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> ASUS HC102 </td>
 <td> 2880x1440 </td>
 <td> LCD </td>
-<td> Fino a 90Hz </td>
+<td> Fino a 90 Hz </td>
 <td> 95 ° </td>
-<td> Jack da 3,5 mm </td>
-<td> nessuno </td>
+<td> 3,5-mm Jack </td>
+<td> Nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.asus.com/us/Headset/ASUS-Windows-Mixed-Reality-Headset-HC102/">ASU</a> </td>
@@ -135,10 +135,10 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Visore Dell </td>
 <td> 2880x1440 </td>
 <td> LCD </td>
-<td> Fino a 90Hz </td>
+<td> Fino a 90 Hz </td>
 <td> 105 ° </td>
-<td> Jack da 3,5 mm </td>
-<td> nessuno </td>
+<td> 3,5-mm Jack </td>
+<td> Nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.dell.com/en-us/shop/accessories/apd/536-bbbr?~ck=mn">Dell</a> </td>
@@ -148,10 +148,10 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Auricolare FMV Fujitsu </td>
 <td> 2880x1440 </td>
 <td> LCD </td>
-<td> Fino a 90Hz </td>
+<td> Fino a 90 Hz </td>
 <td> 105 ° </td>
-<td> Jack da 3,5 mm </td>
-<td> nessuno </td>
+<td> 3,5-mm Jack </td>
+<td> Nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="http://pr.fujitsu.com/jp/news/2017/10/17.html">Fujitsu</a> </td>
@@ -161,9 +161,9 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Riverb HP </td>
 <td> 4320x2160 </td>
 <td> LCD </td>
-<td> Fino a 90Hz </td>
+<td> Fino a 90 Hz </td>
 <td> 114 ° </td>
-<td> Integrato + 3,5 mm Jack </td>
+<td> Integrato + 3,5-mm Jack </td>
 <td> Predefinito </td>
 <td style="text-align: center;">Software</td>
 <td> Primavera 2019 </td>
@@ -174,10 +174,10 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> HP VR1000 </td>
 <td> 2880x1440 </td>
 <td> LCD </td>
-<td> Fino a 90Hz </td>
+<td> Fino a 90 Hz </td>
 <td> 105 ° </td>
-<td> Jack da 3,5 mm </td>
-<td> nessuno </td>
+<td> 3,5-mm Jack </td>
+<td> Nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://store.hp.com/us/en/pdp/hp-windows-mixed-reality-headset-vr1000-100">HP</a> </td>
@@ -187,10 +187,10 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Lenovo Explorer </td>
 <td> 2880x1440 </td>
 <td> LCD </td>
-<td> Fino a 90Hz </td>
+<td> Fino a 90 Hz </td>
 <td> 105 ° </td>
-<td> Jack da 3,5 mm </td>
-<td> nessuno </td>
+<td> 3,5-mm Jack </td>
+<td> Nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.lenovo.com/us/en/virtual-reality-and-smart-devices/virtual-and-augmented-reality/lenovo-explorer/Lenovo-Explorer/p/G10NREAG0A2">Lenovo</a> </td>
@@ -200,10 +200,10 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Medion ERAZER MR X1000 </td>
 <td> 2880x1440 </td>
 <td> LCD </td>
-<td> Fino a 90Hz </td>
+<td> Fino a 90 Hz </td>
 <td> 105 ° </td>
-<td> Jack da 3,5 mm </td>
-<td> nessuno </td>
+<td> 3,5-mm Jack </td>
+<td> Nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.medion.com/be/shop/monitoren-medion-erazer-mr-x1000-vr-headset-controllers-30023616a1.html">Medion</a> </td>
@@ -213,10 +213,10 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Samsung HMD Odyssey</td>
 <td> 2880x1600 </td>
 <td> AMOLED </td>
-<td> Fino a 90Hz </td>
+<td> Fino a 90 Hz </td>
 <td> 110 ° </td>
 <td> Integrato </td>
-<td> nessuno </td>
+<td> Nessuno </td>
 <td style="text-align: center;">Meccanico</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.samsung.com/us/computing/hmd/windows-mixed-reality/xe800zaa-hc1us-xe800zaa-hc1us/?redir=windows%20mixed%20reality">Samsung</a> </td>
@@ -226,7 +226,7 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> Samsung HMD Odyssey+</td>
 <td> 2880x1600 </td>
 <td> AMOLED </td>
-<td> Fino a 90Hz </td>
+<td> Fino a 90 Hz </td>
 <td> 110 ° </td>
 <td> Integrato </td>
 <td> Predefinito </td>
@@ -239,10 +239,10 @@ Per ulteriori informazioni sul rilevamento interno, è possibile procedere nel m
 <td> 3Glasses Blubur S2</td>
 <td> 2880x1440 </td>
 <td> LCD </td>
-<td> Fino a 90Hz </td>
+<td> Fino a 90 Hz </td>
 <td> 105 ° </td>
-<td> Jack da 3,5 mm </td>
-<td> nessuno </td>
+<td> 3,5-mm Jack </td>
+<td> Nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="http://3glasses.com/goods.action?gid=30">3Glasses</a> </td>
@@ -265,21 +265,21 @@ Ai dettagli tecnici elencati sopra viene fatto riferimento dalle specifiche del 
 
 ### <a name="will-there-be-issues-with-motion-controller-tracking-if-multiple-windows-mixed-reality-headsets-are-in-close-proximity"></a>Si verificano problemi con il rilevamento del controller di movimento se più cuffie di realtà miste Windows sono in prossimità?
 
-**Risposta rapida:** È stato rilevato che non esiste alcuna interferenza con i controller di movimento, ma è necessario fornire agli utenti spazio sufficiente per la migliore esperienza nella realtà mista, ovvero 10 metri x 10 metri.
+**Risposta rapida:** È stato rilevato che non esiste alcuna interferenza con i controller di movimento, ma è necessario fornire agli utenti spazio sufficiente per la migliore esperienza nella realtà mista, ad esempio 10 metri x 10 metri.
 
 ### <a name="is-there-boundary-chaperone-or-guardian-system-in-windows-mixed-reality"></a>È presente un sistema di limite, chaperon o sorveglianza in realtà mista di Windows?
 
-**Risposta rapida:** La realtà mista di Windows consente di configurare un limite. Inoltre, alcuni degli auricolari di Windows sono dotati di un display a cerniera, quindi è possibile capovolgere l'auricolare mentre si lavora.
+**Risposta rapida:** La realtà mista di Windows consente di impostare un limite. Inoltre, alcuni degli auricolari di Windows sono dotati di un display a cerniera, quindi è possibile capovolgere l'auricolare mentre si lavora.
 
 ### <a name="do-windows-mixed-reality-headsets-work-in-the-dark"></a>Gli auricolari per la realtà mista di Windows funzionano in scuro?
 
-**Risposta rapida:** Una regola generale corretta è che se non si riesce a spostarsi in tutta tranquillità perché è troppo scura, il sistema di rilevamento avrà anche un po' di tempo per lavorare in tale ambiente.
+**Risposta rapida:** Una regola generale corretta è se non si riesce a spostarsi in tutta tranquillità perché è troppo scura, anche il sistema di rilevamento avrà a che fare con l'ambiente.
 
 ### <a name="what-is-the-cable-length-of-the-windows-mixed-reality-headset"></a>Qual è la lunghezza del cavo dell'auricolare della realtà mista di Windows?
 
 **Risposta rapida:** In genere la lunghezza del cavo di cuffie di realtà miste Windows è 4 metri, ma dipende dall'auricolare. Per altri dettagli, vedere: <https://www.microsoft.com/en-us/store/collections/vrandmixedrealityheadsets>
 
-### <a name="can-i-use-an-usb--hdmi-extension-cables-with-windows-mixed-reality-headsets"></a>È possibile usare cavi di estensione USB/HDMI con auricolari per la realtà mista di Windows?
+### <a name="can-i-use-a-usb--hdmi-extension-cable-with-windows-mixed-reality-headsets"></a>È possibile usare un cavo di estensione USB/HDMI con auricolari per la realtà mista di Windows?
 
 **Risposta rapida:** Abbiamo progettato la realtà mista di Windows per lavorare senza cavi di estensione. L'uso di cavi di estensione con auricolari per la realtà mista non è supportato e l'uso può influito sull'esperienza utente.
 
@@ -322,7 +322,7 @@ Ai dettagli tecnici elencati sopra viene fatto riferimento dalle specifiche del 
 
 **Risposta rapida:** Se il PC non dispone del supporto Bluetooth integrato, sarà necessario collegare una scheda Bluetooth USB che supporti Bluetooth 4,0 per abilitare i controller di movimento.
 
-### <a name="will-the-controllers-work-with-bluetooth-31-or-do-i-need-bluetooth-40"></a>I controller funzionano con Bluetooth 3,1 o è necessario Bluetooth 4,0?
+### <a name="will-the-controllers-work-with-bluetooth-31-or-do-i-need-bluetooth-40"></a>Il controller funziona con Bluetooth 3,1 o è necessario Bluetooth 4,0?
 
 **Risposta rapida:** La specifica minima supportata per la realtà mista di Windows è Bluetooth 4,0. Se il PC ha Bluetooth 3,1, non è possibile impedire l'uso dei controller, ma la migliore esperienza è la BT 4,0. Scaricare ed eseguire il [portale di realtà mista](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) per verificare se il PC è pronto per WMR.
 
@@ -354,7 +354,7 @@ Ai dettagli tecnici elencati sopra viene fatto riferimento dalle specifiche del 
 
 ### <a name="can-i-see-my-keyboard-from-inside-a-windows-mixed-reality-headset"></a>È possibile visualizzare la tastiera dall'interno di una cuffia a realtà mista di Windows?
 
-**Risposta rapida:** Non è possibile visualizzare la tastiera fisica all'interno dell'auricolare, ma è possibile usare la tastiera software. Inoltre, molti auricolari a realtà mista di Windows hanno uno schermo a cerniera, quindi è possibile capovolgere l'auricolare mentre si lavora. Altri dettagli: <https://www.microsoft.com/en-us/windows/windows-mixed-reality#specs>
+**Risposta rapida:** Non è possibile visualizzare la tastiera fisica dall'auricolare, ma è possibile usare la tastiera software. Inoltre, molti auricolari a realtà mista di Windows hanno uno schermo a cerniera, quindi è possibile capovolgere l'auricolare mentre si lavora. Altri dettagli: <https://www.microsoft.com/en-us/windows/windows-mixed-reality#specs>
 
 ### <a name="what-games-require-a-gamepad-as-opposed-to-motion-controllers"></a>Quali giochi richiedono un gamepad anziché i controller di movimento?
 
@@ -368,7 +368,7 @@ Ai dettagli tecnici elencati sopra viene fatto riferimento dalle specifiche del 
 
 **Risposta rapida:** Sì, la realtà mista di Windows funzionerà anche se non si dispone di molto spazio. È possibile impostare questa impostazione durante l'installazione selezionando l'esperienza "desk-scale".
 
-## <a name="content"></a>Content
+## <a name="content"></a>Contenuto
 
 ### <a name="what-games-and-apps-run-on-windows-mixed-reality"></a>Quali giochi e app vengono eseguiti in realtà mista di Windows?
 
@@ -386,7 +386,7 @@ Ai dettagli tecnici elencati sopra viene fatto riferimento dalle specifiche del 
 
 ### <a name="are-the-minimum-specs-for-steamvr-higher-than-a-windows-mixed-reality-ultra-pc"></a>Le specifiche minime per SteamVR sono superiori a quelle di un PC con una realtà mista di Windows?
 
-**Risposta rapida:** È possibile eseguire SteamVR con i requisiti di Ultra PC per la realtà mista di Windows. Tuttavia, è consigliabile eseguire l'anteprima di SteamVR su un PC con una scheda video GTX 1070 (o superiore) e un processore Intel Core i7. Si sta continuando a esaminare il feedback e a ottimizzare le prestazioni per supportare configurazioni di sistema aggiuntive negli aggiornamenti futuri. Il PC non verrà bloccato dall'esecuzione di SteamVR di realtà mista di Windows se non si soddisfano queste specifiche, tuttavia questo influirà sulle prestazioni e sulla qualità dell'esperienza complessiva.
+**Risposta rapida:** È possibile eseguire SteamVR con i requisiti di Ultra PC per la realtà mista di Windows. Tuttavia, è consigliabile eseguire l'anteprima di SteamVR su un PC con una scheda video GTX 1070 (o superiore) e un processore Intel Core i7. Stiamo continuando a esaminare il feedback e a ottimizzare le prestazioni per supportare configurazioni di sistema aggiuntive negli aggiornamenti futuri. Se non si soddisfano queste specifiche più elevate, il PC non sarà in grado di eseguire SteamVR. Tuttavia, questo influirà sulle prestazioni e sulla qualità dell'esperienza complessiva.
 
 ### <a name="are-all-steam-vr-games-be-supported"></a>Sono supportati tutti i giochi di Steam VR?
 

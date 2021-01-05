@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: controller 6DOF, controller di movimento, cuffie per realtà mista, cuffie per la realtà mista di Windows, auricolare della realtà virtuale, HoloLens, scorrimento, grip, stato
-ms.openlocfilehash: a1af86ca174bc574ab8030d8aebd128649b6515f
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 768e316f175769d7399866b0b7cc62ee8c5c2cde
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703157"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847444"
 ---
 # <a name="motion-controllers"></a>Controller del movimento
 
@@ -57,7 +57,7 @@ ms.locfileid: "94703157"
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/1nlcdDNOdm8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-I controller di movimento per la realtà mista di Windows offrono un tracking preciso e reattivo del movimento nel campo della visualizzazione usando i sensori nell'auricolare immersiva, ovvero non è necessario installare hardware nei muri dello spazio. Questi controller di movimento offriranno la stessa facilità di installazione e portabilità come gli auricolari immersivi a realtà mista di Windows. I nostri partner per i dispositivi pianificano di commercializzare e vendere questi controller ai piani di vendita al dettaglio.
+I controller di movimento per la realtà mista di Windows offrono un rilevamento dello spostamento preciso e reattivo nel campo di visualizzazione usando i sensori nell'auricolare immersiva. Non è necessario installare hardware nei muri dello spazio. Questi controller di movimento offriranno la stessa facilità di installazione e portabilità come gli auricolari immersivi a realtà mista di Windows. I nostri partner per i dispositivi pianificano di commercializzare e vendere questi controller ai piani di vendita al dettaglio.
 
 ![Scopri il controller](images/controllerimage-750px.png)<br>
 *Scopri il controller*
@@ -73,10 +73,10 @@ I controller di movimento per la realtà mista di Windows offrono un tracking pr
 
 ### <a name="before-you-begin"></a>Prima di iniziare
 
-**Prerequisiti:**
+**Saranno necessari gli elementi seguenti:**
 * Set di due controller di movimento.
 * Quattro batterie AA.
-* Un PC in grado di Bluetooth 4,0.
+* Un PC con supporto Bluetooth 4,0.
 
 **Verificare la disponibilità di Windows, Unity e gli aggiornamenti dei driver**
 * Visitare [installare gli strumenti](../develop/install-the-tools.md) per le versioni preferite di Windows, Unity e così via per lo sviluppo di realtà miste.
@@ -86,7 +86,7 @@ I controller di movimento per la realtà mista di Windows offrono un tracking pr
 
 I controller di movimento possono essere legati a computer host usando le impostazioni di Windows come qualsiasi altro dispositivo Bluetooth.
 
-1. Inserire 2 batterie AA nella parte posteriore del controller. Lasciare il coperchio della batteria per il momento.
+1. Inserire due batterie AA nella parte posteriore del controller. Lasciare il coperchio della batteria per il momento.
 2. Se si usa una scheda Bluetooth USB esterna anziché una radio Bluetooth incorporata, vedere le procedure consigliate [Bluetooth](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) prima di procedere. Per la configurazione del desktop con la radio predefinita, assicurarsi che l'antenna sia connessa.
 3. Aprire **le impostazioni di Windows**  ->  **dispositivi**  ->  **aggiungere Bluetooth o altro dispositivo**  ->  **Bluetooth** e rimuovere le istanze precedenti di "motion controller – Right" e "motion controller – left". Controllare anche la categoria altri dispositivi nella parte inferiore dell'elenco.
 4. Selezionare **Aggiungi Bluetooth o altro dispositivo** e vedere avvio per individuare i dispositivi Bluetooth.
@@ -121,11 +121,11 @@ I controller di movimento possono essere legati a computer host usando le impost
     :::column-end:::
 :::row-end:::
 
-Se i controller sono spenti dopo l'associazione, lo stato verrà visualizzato come abbinato. Se i controller vengono mantenuti in modo permanente nella categoria "altri dispositivi", l'associazione potrebbe essere stata completata solo parzialmente e deve essere eseguita di nuovo per ottenere la funzionalità del controller.
+Se i controller sono spenti dopo l'associazione, lo stato verrà visualizzato come abbinato. Per i controller in modo permanente nella categoria "altri dispositivi", l'associazione può essere completata solo parzialmente. In questo caso, eseguire di nuovo i passaggi di associazione per ottenere la funzionalità del controller.
 
 ### <a name="updating-controller-firmware"></a>Aggiornamento del firmware del controller
 
-* Se un headset immersivo è connesso al PC ed è disponibile un nuovo firmware del controller, il firmware verrà inserito automaticamente nei controller di movimento alla successiva accensione. Gli aggiornamenti del firmware del controller sono indicati da un modello di illuminazione del quadrante dei LED in movimento circolare e da richiedere 1-2 minuti.
+* Se un headset immersivo è connesso al PC con il nuovo firmware del controller è disponibile, il firmware verrà inserito automaticamente nei controller di movimento alla successiva attivazione. Gli aggiornamenti del firmware del controller sono indicati da un modello di illuminazione del quadrante dei LED in movimento circolare e da richiedere 1-2 minuti.
 
 
 :::row:::
@@ -147,14 +147,14 @@ Se i controller sono spenti dopo l'associazione, lo stato verrà visualizzato co
 ## <a name="gazing-and-pointing"></a>Osservazione e puntamento
 
 La realtà mista di Windows supporta due modelli chiave per l'interazione. **sguardo e commit** , **punto e commit**:
-* Con lo **sguardo e il commit**, gli utenti hanno come destinazione un oggetto con il proprio [sguardo](gaze-and-commit.md) , quindi selezionano gli oggetti con rubinetti d'aria, un gamepad, un clic o la loro voce.
+* Con lo **sguardo e il commit**, gli utenti hanno come destinazione un oggetto con il proprio [sguardo](gaze-and-commit.md), quindi selezionano gli oggetti con tocchi d'aria, un gamepad, un clic o la loro voce.
 * Con **Point e commit**, un utente può puntare a un controller di movimento in grado di puntare all'oggetto di destinazione e quindi selezionare oggetti con il trigger del controller.
 
 Le app che supportano il puntamento con i controller di movimento devono anche abilitare le interazioni basate su sguardi laddove possibile, per offrire agli utenti una scelta nei dispositivi di input usati.
 
 ### <a name="managing-recoil-when-pointing"></a>Gestione della ribobina quando si punta
 
-Quando si usano i controller di movimento per puntare ed eseguire il commit, gli utenti utilizzeranno il controller per individuare e quindi intervenire eseguendo il pull del trigger. Gli utenti che tirano il trigger vigorosamente potrebbero finire a puntare il controller in un livello superiore alla fine del pull del trigger rispetto a quello previsto.
+Quando si usano i controller di movimento per puntare ed eseguire il commit, gli utenti utilizzeranno il controller per la destinazione e l'interazione eseguendo il pull del trigger. Gli utenti che tirano il trigger vigorosamente potrebbero finire a puntare il controller in un livello superiore alla fine del pull del trigger rispetto a quello previsto.
 
 Per gestire un eventuale rinculo che può verificarsi quando gli utenti effettuano il pull del trigger, l'app può bloccare il raggio di destinazione quando il valore dell'asse analogico del trigger supera 0,0. È quindi possibile eseguire un'azione con la definizione di un numero limitato di frame in un secondo momento quando il valore del trigger raggiunge 1,0, purché la pressione finale venga eseguita in un intervallo di tempo breve. Quando si usa il gesto di [tocco composito](gaze-and-commit.md#composite-gestures)di livello superiore, Windows gestirà l'acquisizione e il timeout dei raggi di destinazione.
 
@@ -172,7 +172,7 @@ Negli auricolari immersivi, la disposizione dei grip è la scelta migliore per e
 
 Il grip viene definito in modo specifico come segue:
 * **Posizione del grip**: il centro della palma quando si tiene il controller in modo naturale, regolato a sinistra o a destra per centrare la posizione all'interno del grip. Sul controller di movimento per la realtà mista di Windows, questa posizione viene in genere allineata con il pulsante afferra.
-* L' **asse destro dell'orientamento del grip**: quando si apre completamente la mano per formare una formula a 5 dita piatta, il raggio normale per la Palma (in avanti dal palmo sinistro e viceversa)
+* L' **asse destro dell'orientamento del grip**: quando si apre completamente la mano per formare una formula a cinque dita piatta, il raggio normale per la Palma (in avanti dal palmo sinistro e viceversa)
 * **Asse di avanzamento dell'orientamento del grip**: quando si chiude parzialmente la mano (come se si utilizzasse il controller), il raggio che punta "in poi" attraverso il tubo formato dalle dita non Thumb.
 * **Asse verticale dell'orientamento del grip**: l'asse verso l'alto implicato dalle definizioni di destra e di avanzamento.
 
@@ -203,11 +203,11 @@ Le app che desiderano gestire le posizioni in modo diverso in base allo stato di
 <tr>
 <th> Stato di rilevamento </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>Accuratezza elevata</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Alta </td><td style="background-color: green; color: white"> True</td>
+<td> <b>Accuratezza elevata</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Alto </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Accuratezza elevata (a rischio di perdita)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Alta </td><td style="background-color: green; color: white"> True</td>
+<td> <b>Accuratezza elevata (a rischio di perdita)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Alto </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Accuratezza approssimativa</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Con approssimazione </td><td style="background-color: green; color: white"> True</td>
+<td> <b>Accuratezza approssimativa</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Con approssimazione </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>Nessuna posizione</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Con approssimazione </td><td style="background-color: orange"> false</td>
 </tr>
@@ -216,10 +216,10 @@ Le app che desiderano gestire le posizioni in modo diverso in base allo stato di
 
 
 Questi stati di rilevamento del controller di movimento sono definiti come segue:
-* **Accuratezza elevata:** Mentre il controller di movimento si trova all'interno del campo di visualizzazione dell'auricolare, in genere fornisce posizioni con accuratezza elevata, in base al rilevamento visivo. Si noti che un controller che sposta temporaneamente il campo di visualizzazione o è temporaneamente nascosto dai sensori dell'auricolare (ad esempio, da parte dell'utente) continuerà a restituire le pose con precisione elevata per un breve periodo di tempo, in base al rilevamento inerziale del controller stesso.
-* **Accuratezza elevata (a rischio di perdita):** Quando l'utente sposta il controller di movimento oltre il bordo del campo di visualizzazione dell'auricolare, l'auricolare non sarà presto in grado di rilevare visivamente la posizione del controller. L'app sa quando il controller ha raggiunto questo limite FOV visualizzando il **SourceLossRisk** REACH 1,0. A questo punto, l'app può scegliere di sospendere i movimenti del controller che richiedono un flusso costante di pose di qualità molto elevata.
+* **Accuratezza elevata:** Mentre il controller di movimento si trova all'interno del campo di visualizzazione dell'auricolare, in genere fornisce posizioni con accuratezza elevata, in base al rilevamento visivo. Un controller che sposta temporaneamente il campo di visualizzazione o è temporaneamente nascosto dai sensori dell'auricolare (ad esempio, dall'altra parte dell'utente) continuerà a restituire le pose con precisione elevata per un breve periodo di tempo, in base al rilevamento inerziale del controller stesso.
+* **Accuratezza elevata (a rischio di perdita):** Quando l'utente sposta il controller di movimento oltre il bordo del campo di visualizzazione dell'auricolare, l'auricolare non sarà presto in grado di rilevare visivamente la posizione del controller. L'app sa quando il controller ha raggiunto questo limite FOV visualizzando il **SourceLossRisk** REACH 1,0. A questo punto, l'app può scegliere di sospendere i movimenti del controller che richiedono un flusso costante di pose di alta qualità.
 * **Accuratezza approssimativa:** Quando il controller ha perso il rilevamento visivo per un periodo di tempo sufficiente, le posizioni del controller vengono rilasciate a posizioni di accuratezza approssimativa. A questo punto, il sistema bloccherà il controller all'utente, tenendo traccia della posizione dell'utente mentre si spostano, esponendo comunque il vero orientamento del controller usando i sensori di orientamento interni. Molte app che usano i controller per puntare e attivare gli elementi dell'interfaccia utente possono funzionare normalmente con una precisione approssimativa senza che l'utente ne abbia notato. Le app con requisiti di input più pesanti possono scegliere di comprendere questo calo dall'accuratezza **elevata** all'accuratezza **approssimativa** controllando la proprietà **PositionAccuracy** , ad esempio per dare all'utente un hitbox più generoso sulle destinazioni fuori schermo durante questo periodo di tempo.
-* **Nessuna posizione:** Mentre il controller può funzionare con una precisione approssimativa per molto tempo, a volte il sistema sa che anche una posizione bloccata dal corpo non è al momento significativa. Ad esempio, un controller appena attivato potrebbe non essere mai stato osservato visivamente oppure un utente può arrestare un controller che viene quindi prelevato da qualcun altro. In questi casi, il sistema non fornirà alcuna posizione all'app e **TryGetPosition** restituirà false.
+* **Nessuna posizione:** Mentre il controller può funzionare con una precisione approssimativa per molto tempo, a volte il sistema sa che anche una posizione bloccata dal corpo non è significativa al momento. Ad esempio, un controller attivato potrebbe non essere mai stato osservato visivamente oppure un utente potrebbe mettere a disposizione un controller che viene quindi prelevato da qualcun altro. In questi casi, il sistema non fornirà alcuna posizione all'app e **TryGetPosition** restituirà false.
 
 ## <a name="interactions-low-level-spatial-input"></a>Interazioni: input spaziale di basso livello
 
@@ -239,7 +239,7 @@ Per rilevare un set comune di **[movimenti compositi](gaze-and-commit.md#composi
 
 **modelli di controller 3D** Windows rende disponibile per le app un modello di rendering di ogni controller di movimento attualmente attivo nel sistema. Grazie alla possibilità di caricare e articolare dinamicamente i modelli di controller forniti dal sistema in fase di esecuzione, l'app è in grado di garantire la compatibilità con le versioni future per qualsiasi futura progettazione del controller.
 
-È necessario eseguire il rendering di questi modelli di cui è possibile eseguire il rendering in corrispondenza della **posizione** del controller, perché l'origine del modello è allineata a questo punto nel mondo fisico. Se si esegue il rendering dei modelli di controller, è possibile che si desideri Raycast nella scena dalla **posizione dell'indicatore** di misura, che rappresenta il raggio lungo il quale gli utenti si aspettano naturalmente di puntare, data la progettazione fisica del controller.
+Si consiglia di eseguire il rendering di tutti i modelli visualizzabili in corrispondenza della **posizione** del controller, perché l'origine del modello è allineata a questo punto nel mondo fisico. Se si esegue il rendering dei modelli di controller, è possibile che si desideri Raycast nella scena dalla **posizione dell'indicatore** di misura, che rappresenta il raggio lungo il quale gli utenti si aspettano naturalmente di puntare, data la progettazione fisica del controller.
 
 Per altre informazioni su come caricare dinamicamente i modelli di controller in Unity, vedere la sezione [rendering del modello di controller di movimento in Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md#rendering-the-motion-controller-model-in-unity) .
 
@@ -277,7 +277,7 @@ Vedere la pagina relativa alla [risoluzione dei problemi di motion controller](h
 
 [Inviare commenti e suggerimenti](../give-us-feedback.md) nell'hub feedback, usando la categoria "Mixed Reality-> input".
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Movimenti e controller del movimento in Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md)
 * [Mani e controller del movimento in DirectX](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [Movimenti](gaze-and-commit.md#composite-gestures)

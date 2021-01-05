@@ -1,11 +1,19 @@
 ---
-ms.openlocfilehash: 23bba22801f61f6b4814991c8b3bde68d2c5f6b7
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 18ccbf3e28eaa2f61157bd9585d633c987e9af48
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002698"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97718217"
 ---
+# <a name="426"></a>[4.26](#tab/426)
+
+Per ottenere i dati per i raggi di mano, è necessario usare la funzione Get Motion controller data della sezione precedente. La struttura restituita contiene due parametri che è possibile usare per creare un raggio della mano, la **posizione** e la **rotazione degli obiettivi**. Questi parametri formano un raggio diretto dal gomito. È necessario prenderli e trovare un ologramma a cui punta.
+
+Di seguito è riportato un esempio di come determinare se un raggio di mano raggiunge un widget e imposta un risultato di hit personalizzato:
+
+![Progetto di Get Motion controller data Function](../images/unreal-hand-tracking-img-04.png) 
+
 # <a name="425"></a>[4.25](#tab/425)
 
 Per utilizzare i raggi mano nei progetti, cercare le azioni in **HMD realtà mista di Windows**:
@@ -138,10 +146,3 @@ C++:
 ```cpp
 static EHMDTrackingStatus UWindowsMixedRealityFunctionLibrary::GetControllerTrackingStatus(EControllerHand hand);
 ```
-# <a name="426"></a>[4.26](#tab/426)
-
-Per ottenere i dati per i raggi di mano, è necessario usare la funzione Get Motion controller data della sezione precedente. La struttura restituita contiene due parametri che è possibile usare per creare un raggio della mano, la **posizione** e la **rotazione degli obiettivi**. Questi parametri formano un raggio diretto dal gomito. È necessario prenderli e trovare un ologramma a cui punta.
-
-Di seguito è riportato un esempio di come determinare se un raggio di mano raggiunge un widget e imposta un risultato di hit personalizzato:
-
-![Progetto di Get Motion controller data Function](../images/unreal-hand-tracking-img-04.png) 

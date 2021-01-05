@@ -6,18 +6,18 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: HoloLens, realtà mista, cuffie immersive, app, UWP, invio, invio, filtri, metadati, requisiti di sistema, parole chiave, predato, certificazione, pacchetto, appx, merchandising
-ms.openlocfilehash: b4b82557ba274852ebb3f97058017fa2e5db1c02
-ms.sourcegitcommit: 9e9d58de4513655c7daa71ff4b5b2c2b115ab959
+ms.openlocfilehash: 632bb9c0c5bdb93041f71a4382802b02f6817f0e
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97034582"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757629"
 ---
 # <a name="distributing-your-apps"></a>Distribuzione delle app
 
 ![Floaty Bird 3D app lancher in WMR Home](images/distribute-hero-image.png)
 
-La possibilità di ottenere le tue app negli utenti o in tutto il mondo è l'aspetto più importante, a volte accurato, di qualsiasi attività di sviluppo. Il processo è stato semplificato in un set di risorse elencate di seguito, che dipendono tutti dallo scenario di distribuzione e distribuzione più adatto per l'utente o il team.
+La possibilità di ottenere le tue app negli utenti o in tutto il mondo è l'aspetto più importante, a volte accurato, di qualsiasi attività di sviluppo. Il processo è stato semplificato in un set di risorse, che dipendono dallo scenario di distribuzione e distribuzione più adatto per l'utente o il team.
 
 [!INCLUDE[](includes/before-submission.md)]
 
@@ -40,7 +40,7 @@ La possibilità di ottenere le tue app negli utenti o in tutto il mondo è l'asp
 </colgroup>
 <tr>
     <td><strong>Scenario</strong></td>
-    <td><strong>Installazione del dispositivo locale</strong></td>
+    <td><strong>Installazioni del dispositivo locale</strong></td>
     <td><strong>Condividi con altri utenti</strong></td>
     <td><strong>Condividere con un'organizzazione</strong></td>
 </tr>
@@ -81,7 +81,7 @@ La possibilità di ottenere le tue app negli utenti o in tutto il mondo è l'asp
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="#additional-scenarios"><strong>Distribuzione Win32 personalizzata</strong></a> (non disponibile per i dispositivi HoloLens: vedere di seguito)</td>
+    <td><a href="#other-scenarios"><strong>Distribuzione Win32 personalizzata</strong></a> (non disponibile per i dispositivi HoloLens: vedere di seguito)</td>
     <td>✔️</td>
     <td>✔️</td>
     <td>❌</td>
@@ -91,14 +91,14 @@ La possibilità di ottenere le tue app negli utenti o in tutto il mondo è l'asp
 > [!IMPORTANT]
 > Il programma di installazione dell'app non è attualmente disponibile per i dispositivi gestiti o HoloLens (1a generazione).
 
-## <a name="additional-scenarios"></a>Scenari aggiuntivi
+## <a name="other-scenarios"></a>Altri scenari
 
-* Per la distribuzione di applicazioni Win32, inclusi il gioco di Steam e il passaggio del gioco, è possibile creare una Win32. File EXE che usa la destinazione di compilazione autonoma del PC da Unity e invia le app come di consueto alla piattaforma scelta. 
+* È possibile generare una Win32. File EXE che usa la destinazione di compilazione autonoma del PC da Unity per la distribuzione di applicazioni Win32, inclusi il gioco di Steam e il pass. Una volta ottenuto il. EXE, è possibile inviare le app come di consueto alla piattaforma scelta. 
 
 * Se è necessario installare un'applicazione HoloLens 2 mentre si è offline, fare riferimento alle istruzioni [Secure HoloLens 2 offline](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) oppure installare l'app tramite un pacchetto di provisioning senza abilitare la modalità sviluppatore.
 
 * È anche possibile distribuire le compilazioni nel dispositivo e condividerle con altri sviluppatori che hanno la modalità di sviluppo abilitata tramite la [distribuzione e il debug con Visual Studio](../develop/platform-capabilities-and-apis/using-visual-studio.md) o l' [installazione di un pacchetto dell'applicazione con il portale del dispositivo](https://docs.microsoft.com/hololens/holographic-custom-apps#installing-an-application-package-with-the-device-portal).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Ricerca, installazione e disinstallazione delle applicazioni dal Microsoft Store](https://docs.microsoft.com/hololens/holographic-store-apps)
 

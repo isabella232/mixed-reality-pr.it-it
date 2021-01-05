@@ -3,12 +3,12 @@ title: Uso di SteamVR con la realtà mista di Windows
 description: Modalità di riproduzione di giochi SteamVR su cuffie di realtà miste Windows con PC compatibili.
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, Games, SteamVR, Steam, requisiti di sistema
-ms.openlocfilehash: a064e448979ed256a5ed09d8b1342e287078e01d
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: e91c5b7fcaed2f048e79843c47ae613761a5d3ad
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131925"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725742"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>Uso di SteamVR con la realtà mista di Windows
 
@@ -16,15 +16,15 @@ La realtà mista di Windows per SteamVR consente agli utenti di eseguire esperie
 
 ## <a name="get-your-pc-ready"></a>Preparare il PC
 
-* Assicurarsi che non siano presenti aggiornamenti in sospeso: selezionare **avvia > impostazioni > aggiorna & sicurezza > Windows Update** . Se sono disponibili aggiornamenti, selezionare **Installa ora** . Se non sono disponibili aggiornamenti, selezionare **Controlla aggiornamenti** , quindi installarne di nuovi.
+* Assicurarsi che non siano presenti aggiornamenti in sospeso: selezionare **avvia > impostazioni > aggiorna & sicurezza > Windows Update**. Se sono disponibili aggiornamenti, selezionare **Installa ora**. Se non sono disponibili aggiornamenti, selezionare **Controlla aggiornamenti**, quindi installarne di nuovi.
 * I requisiti del computer variano per le app e i contenuti in Steam. Vedere i requisiti minimi per titolo. Un PC con una scheda grafica GTX 1070 (o equivalente) e un processore Intel® Core™ i7 dovrebbero offrire un'esperienza ottimale per un'ampia gamma di titoli.
 
 ## <a name="set-up-windows-mixed-reality-for-steamvr"></a>Configurare la realtà mista di Windows per SteamVR
 
-1. Se non è già stata configurata la [realtà mista di Windows](set-up-windows-mixed-reality.md).
+1. Configurare la [realtà mista di Windows](set-up-windows-mixed-reality.md) , se non è già stato fatto
 2. Installare [Steam](http://store.steampowered.com/about/) e **accedere** oppure **creare un nuovo account.**
 3. Installare [SteamVR](https://store.steampowered.com/app/250820/SteamVR/). Con la cuffia collegata, avviare Steam. verrà visualizzata una finestra di dialogo che richiede l'installazione di SteamVR. Seguire le istruzioni visualizzate nella finestra di dialogo per installarlo.
-    * Se non viene visualizzata la finestra popup, installare SteamVR passando alla sezione *strumenti* della *libreria* . Individuare SteamVR nell'elenco e quindi fare clic con il pulsante destro del mouse e scegliere *Installa gioco* .
+    * Se non viene visualizzata la finestra popup, installare SteamVR passando alla sezione *strumenti* della *libreria*. Individuare SteamVR nell'elenco, quindi fare clic con il pulsante destro del mouse e scegliere *Installa gioco*.
 4. Installare [la realtà mista di Windows per SteamVR](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/).
 
 ## <a name="play-steamvr-games"></a>Giochi SteamVR
@@ -33,7 +33,7 @@ La realtà mista di Windows per SteamVR consente agli utenti di eseguire esperie
 2. Una volta che la Home realtà mista di Windows è stata caricata e i controller sono visibili, aprire l'app Steam sul desktop.
 3. Usare l'app Steam per avviare un gioco SteamVR dalla libreria di Steam.
 
-**Suggerimento** : per avviare giochi SteamVR senza togliere l'auricolare, usare l'app desktop ( **Avvia > desktop** ) per visualizzare e interagire con il desktop del PC all'interno di realtà mista di Windows.
+**Suggerimento**: per avviare giochi SteamVR senza togliere l'auricolare, usare l'app desktop (**Avvia > desktop**) per visualizzare e interagire con il desktop del PC all'interno di realtà mista di Windows.
 
 ## <a name="using-motion-controllers-with-steamvr"></a>Uso dei controller di movimento con SteamVR
 
@@ -44,7 +44,7 @@ I controller di movimento verranno usati in modo diverso in giochi diversi. Di s
 
 ## <a name="changing-the-resolution"></a>Modifica della risoluzione
 
-È possibile modificare il dispositivo di scorrimento risoluzione dell'applicazione nella finestra impostazioni di SteamVR->-> in qualsiasi momento, se si desidera riprodurre giochi a una risoluzione superiore. Si **noti** che quando si usa un moltiplicatore di risoluzione superiore è possibile prevedere che il gioco imposti un maggior numero di sforzi nel PC. Se si aumenta il moltiplicatore e si visualizzano le prestazioni ridotte, modificare questo dispositivo di scorrimento al livello predefinito e riavviare il gioco per assicurarsi che la modifica venga applicata. ![ Modificare la risoluzione dell'applicazione](images/SteamVR_Settings_Applications.png)
+È possibile modificare il dispositivo di scorrimento risoluzione dell'applicazione nella finestra impostazioni di SteamVR->-> in qualsiasi momento, se si desidera riprodurre giochi a una risoluzione superiore. * * Quando si usa un moltiplicatore di risoluzione superiore, è possibile prevedere che il gioco imposti un maggior numero di sforzi nel PC. Se si aumenta il moltiplicatore e si visualizzano le prestazioni ridotte, modificare il dispositivo di scorrimento al livello predefinito e riavviare il gioco per assicurarsi che la modifica venga applicata.![Modificare la risoluzione dell'applicazione](images/SteamVR_Settings_Applications.png)
 
 ## <a name="using-multiple-headsets"></a>Uso di più auricolari
 
@@ -62,10 +62,10 @@ Se si desidera ottenere gli aggiornamenti con maggiore frequenza, si consiglia d
 
 Per aggiungere:
 
-  1. In Steam usare l'elenco a discesa nel menu **libreria** per filtrare il **software** .
-  2. Nell'elenco fare clic con il pulsante destro del mouse su **realtà mista di Windows per SteamVR** e scegliere **Proprietà** .
-  3. Fare clic sulla scheda **beta** .
-  4. Acconsentire esplicitamente a **"beta-Public Beta"** e fare clic su **Chiudi** per confermare. Si noti che il campo del codice di accesso Beta deve essere lasciato vuoto.
+  1. In Steam usare l'elenco a discesa nel menu **libreria** per filtrare il **software**.
+  2. Nell'elenco fare clic con il pulsante destro del mouse su **realtà mista di Windows per SteamVR** e scegliere **Proprietà**.
+  3. Selezionare la scheda **beta** .
+  4. Acconsentire esplicitamente a **"beta-Public Beta"** e selezionare **Close (Chiudi** ) per confermare. Il campo del codice di accesso Beta deve essere lasciato vuoto.
   
 ### <a name="steamvr-beta"></a>SteamVR beta
 
@@ -73,10 +73,10 @@ SteamVR viene creato e rilasciato da Valve ed è comune in tutti gli auricolari 
 
 Per aggiungere:
 
-  1. In Steam usare l'elenco a discesa nel menu **libreria** per filtrare **gli strumenti** .
-  2. Nell'elenco fare clic con il pulsante destro del mouse su **SteamVR** e scegliere **Proprietà** .
-  3. Fare clic sulla scheda **beta** .
-  4. Acconsentire esplicitamente a **"beta-Public Beta"** e fare clic su **Chiudi** per confermare.  Si noti che il campo del codice di accesso Beta deve essere lasciato vuoto. ![ Passare a SteamVR beta nella finestra di dialogo delle proprietà per SteamVR](images/steamvr-beta.png)
+  1. In Steam usare l'elenco a discesa nel menu **libreria** per filtrare gli **strumenti**.
+  2. Nell'elenco fare clic con il pulsante destro del mouse su **SteamVR** e scegliere **Proprietà**.
+  3. Selezionare la scheda **beta** .
+  4. Acconsentire esplicitamente a **"beta-Public Beta"** e selezionare **Close (Chiudi** ) per confermare.  Il campo del codice di accesso Beta deve essere lasciato vuoto. ![ Passare a SteamVR beta nella finestra di dialogo delle proprietà per SteamVR](images/steamvr-beta.png)
 
 ### <a name="windows-insider-program"></a>Programma Windows Insider
 
@@ -90,19 +90,19 @@ Quando è abilitata la riproiezione del movimento, tutti i giochi di Steam VR es
 
 Le modalità di riproiezione del movimento disponibili sono le seguenti:
 
-* **Impostazione di SteamVR per app** : consente di controllare la riproiezione del movimento tramite l'interfaccia utente delle impostazioni di SteamVR. È quindi possibile aprire le impostazioni di SteamVR, passare a video > Per-Application impostazioni video e selezionare un'opzione per "Smoothing movimento".
-* **Auto** : Abilita la riproiezione del movimento per attivarsi automaticamente quando il rendering di un gioco è troppo lento per mantenere 90 fps. Quando un gioco inizia a mantenere 90 FPS o avvia il rendering a meno di 45 FPS, la riproiezione del movimento verrà disattivata. La riproiezione rotazionale asincrona è sempre abilitata.
-* **Motion Vector** : impone che l'applicazione venga sempre eseguita a metà framerate con la riproiezione del vettore di movimento.
-* **None** : Disabilita la riproiezione del movimento.
+* **Impostazione di SteamVR per app**: consente di controllare la riproiezione del movimento tramite l'interfaccia utente delle impostazioni di SteamVR. È quindi possibile aprire le impostazioni di SteamVR, passare a video > Per-Application impostazioni video e selezionare un'opzione per "Smoothing movimento".
+* **Auto**: Abilita la riproiezione del movimento per attivarsi automaticamente quando il rendering di un gioco è troppo lento per mantenere 90 fps. Quando un gioco inizia a mantenere 90 FPS o avvia il rendering a meno di 45 FPS, la riproiezione del movimento verrà disattivata. La riproiezione rotazionale asincrona è sempre abilitata.
+* **Motion Vector**: impone che l'applicazione venga sempre eseguita a metà framerate con la riproiezione del vettore di movimento.
+* **None**: Disabilita la riproiezione del movimento.
 
 **Elementi visivi previsti** 
 
-1. Quando si usa una risoluzione dell'applicazione superiore al 150%, è possibile che si verifichi una sfocatura. Quando si usa la riproiezione del movimento è consigliabile usare un valore inferiore al 150%.
+1. Quando si usa una risoluzione dell'applicazione superiore al 150%, è possibile che si verifichi una sfocatura. Quando si usa la riproiezione del movimento, è consigliabile usare un valore inferiore al 150%.
 2. I bordi o il testo a contrasto acuto, in particolare nei menu o nelle HUDs del gioco, possono sembrare temporaneamente decurvati o distorti a causa della disocclusione.
-3. SteamVR Home e molti altri giochi che non hanno raggiunto in modo affidabile 50-60 FPS nel computer continueranno a avere un'esperienza negativa con questa modalità.
-4. Alcuni giochi sono stati segnalati per essere eseguiti alla velocità del 50% o con una latenza maggiore (lag). Per segnalare questi giochi, seguire le istruzioni riportate nell' [Hub feedback di Windows](filing-feedback.md) .
+3. SteamVR Home e molti altri giochi che non rilevano in modo affidabile 50-60 FPS nel PC continueranno a avere una scarsa esperienza con questa modalità.
+4. Alcuni giochi sono stati segnalati per essere eseguiti alla velocità del 50% o con una latenza maggiore (lag). Segnala questi giochi tramite le istruzioni dell' [Hub feedback di Windows](filing-feedback.md) di seguito.
 
-Inizialmente abbiamo il supporto sperimentale per le GPU NVidia di ultima generazione. Stiamo continuando a eseguire l'iterazione e a migliorare il supporto della riproiezione dei movimenti sulle GPU aggiuntive e siamo ansiosi di ricevere commenti e suggerimenti.
+Inizialmente abbiamo il supporto sperimentale per le GPU NVidia di ultima generazione. Stiamo continuando a eseguire l'iterazione e il miglioramento del supporto per la riproiezione dei movimenti su più GPU e siamo ansiosi di ricevere commenti e suggerimenti.
 
 **GPU supportate:** NVIDIA GeForce GTX1060, AMD RX470 o una soluzione migliore, con i driver grafici compatibili con la realtà mista di Windows installati.
 
@@ -110,7 +110,7 @@ Per abilitare la riproiezione del movimento:
 
 1. Assicurarsi di aver scelto la **realtà mista di Windows per SteamVR beta** usando le istruzioni riportate sopra.
 2. Aprire il dashboard di SteamVR.
-3. Aprire la realtà mista di Windows per le impostazioni di SteamVR facendo clic sul pulsante sul lato sinistro con il logo della realtà mista di Windows.
+3. Selezionare il pulsante sul lato sinistro con il logo della realtà mista di Windows per aprire la **realtà mista di Windows per** le impostazioni SteamVR.
 4. Nell'interfaccia utente visualizzata selezionare la scheda grafica.
 5. Selezionare "auto" per "modalità di riproiezione del movimento dell'app SteamVR predefinita" per abilitare la riproiezione automatica del movimento.
 
@@ -118,7 +118,7 @@ Per abilitare la riproiezione del movimento:
 
 **Indicatore di riproiezione del movimento**
 
-L'indicatore di riproiezione del movimento consente di diagnosticare i problemi con la funzionalità sperimentale di riproiezione automatica dei movimenti. Quando è impostato su true, durante la riproiezione automatica del movimento viene visualizzato un indicatore nella parte superiore sinistra della visualizzazione dell'auricolare. Il colore e la posizione di questo indicatore corrisponde alla modalità di riproiezione del movimento corrente. per esempi, vedere il diagramma seguente.
+L'indicatore di riproiezione del movimento consente di diagnosticare i problemi con la funzionalità sperimentale di riproiezione automatica dei movimenti. Quando è impostato su true, durante la riproiezione automatica del movimento verrà visualizzato un indicatore nella parte superiore sinistra della visualizzazione dell'auricolare. Il colore e la posizione di questo indicatore corrisponde alla modalità di riproiezione del movimento corrente. per esempi, vedere il diagramma seguente.
 
 ![Indicatore mvLSR](images/mvLSRIndicator.png)
 
@@ -139,23 +139,23 @@ I commenti e i suggerimenti sono utili per migliorare l'esperienza di SteamVR di
 1. Nell'hub feedback indicare che si sta segnalando un nuovo problema in "che tipo di feedback è?" nella parte superiore della sezione.
 2. Selezionare la categoria **realtà mista** e la sottocategoria **app** .
 3. Inserire la parola "SteamVR" nel riepilogo del problema. Che consente di trovare i commenti e suggerimenti degli utenti.
-4. Descrivere il gioco o l'applicazione SteamVR usata quando si è verificato il problema.
-5. Prendere in considerazione la possibilità di aggiungere un report di sistema SteamVR ai commenti. Sono disponibili log aggiuntivi che consentono di diagnosticare il problema.
-    1. Nella finestra SteamVR (le piccole finestre che mostrano lo stato del controller) fare clic sul titolo per aprire il menu.
+4. Descrivere il gioco o l'applicazione SteamVR usata per il problema.
+5. Prendere in considerazione la possibilità di aggiungere un report di sistema SteamVR ai commenti. Sono disponibili più log che consentono di diagnosticare il problema.
+    1. Nella finestra SteamVR (le piccole finestre che mostrano lo stato del controller) selezionare sul titolo per aprire il menu.
     2. Selezionare "Crea report di sistema".
     3. Salva nel file.
     4. Alleghi direttamente il file generato alla voce dell'hub di feedback.
 6. Se il feedback riguarda le prestazioni di SteamVR, raccogliere una traccia delle prestazioni della realtà mista: 
-    1. Fare clic sul pulsante **ricrea problema** .
-    2. Nell'elenco a discesa accanto a "Includi dati su" selezionare **prestazioni realtà mista** .
-    3. Verificare che il gioco sia in esecuzione e fare clic su **Avvia acquisizione** .
+    1. Selezionare il pulsante **ricrea problema** .
+    2. Nell'elenco a discesa accanto a "Includi dati su" selezionare **prestazioni realtà mista**.
+    3. Verificare che il gioco sia in esecuzione e selezionare **Avvia acquisizione**.
     4. Dedicare alcuni secondi alla riproduzione del gioco per acquisire la traccia. Non acquisire la traccia per più di 10-15 secondi oppure sarà troppo grande per l'invio.
-    5. Fare clic su **Arresta acquisizione** .
-7. Dopo aver completato il resto dei campi, fare clic su **Invia** .
+    5. Selezionare **Arresta acquisizione**.
+7. Selezionare **Invia** dopo aver completato il resto dei campi.
 
 In caso di domande o commenti da condividere, è anche possibile contattarci nel forum di [Steam](http://steamcommunity.com/app/719950/discussions/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Risoluzione dei problemi di SteamVR con la realtà mista di Windows](steamvr-questions.md)
 * [Uso di giochi e app in realtà mista di Windows](using-games-and-apps-in-windows-mixed-reality.md)

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR,
-ms.openlocfilehash: 9426a85611cf53a349ca5bc8f3727ee8a784940e
-ms.sourcegitcommit: a129039d8ed228ed0305aa312006cadf403f0831
+ms.openlocfilehash: 9a82ab12b9cf91bd1fefcf84a2f6b4e62c8df24a
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95417205"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725708"
 ---
 # <a name="start-your-vr-journey"></a>Iniziare il percorso VR
 
@@ -23,7 +23,11 @@ Usare i checkpoint seguenti per configurare, configurare e usare i dispositivi V
 
 ### <a name="1-before-you-buy"></a>1. prima di acquistare
 
-È importante che il PC sia in grado di gestire l'hardware VR acquistato per ottenere la migliore esperienza di installazione e utilizzo. In alcuni casi, potrebbe essere necessario ordinare altri [Adapter o hardware](recommended-adapters-for-windows-mixed-reality-capable-pcs.md). In questa sezione vengono illustrati i requisiti minimi per il PC, i controlli di compatibilità e le domande frequenti associate all'hardware della realtà virtuale.
+Il PC deve gestire l'hardware VR che si sta acquistando per ottenere la migliore esperienza di installazione e utilizzo. In alcuni casi, potrebbe essere necessario ordinare schede aggiuntive [o hardware](recommended-adapters-for-windows-mixed-reality-capable-pcs.md). Questa sezione illustra la procedura dettagliata:
+
+* Requisiti minimi per il PC
+* Controlli di compatibilità
+* Domande frequenti associate all'hardware della realtà virtuale
 
 <br>
 
@@ -48,7 +52,11 @@ Una volta ottenuto il dispositivo, è necessario configurarlo e configurarlo cor
 
 ### <a name="3-using-windows-mixed-reality"></a>3. uso della realtà mista di Windows
 
-Sono disponibili diverse funzionalità e servizi tramite la realtà mista di Windows e gli auricolari VR immersivi. Al termine di questa sezione, sarà possibile spostarsi all'interno dell'ambiente di casa virtuale, usando i controller e il riconoscimento vocale come input e integrando servizi e applicazioni come SteamVR e WebVR.
+Sono disponibili diverse funzionalità e servizi tramite la realtà mista di Windows e gli auricolari VR immersivi. Al termine di questa sezione, sarà possibile:
+
+* Esplorazione dell'ambiente di casa virtuale
+* Uso di controller e sintesi vocale come input
+* Integrazione di servizi e applicazioni come SteamVR e WebVR.
 
 <br>
 
@@ -57,7 +65,7 @@ Sono disponibili diverse funzionalità e servizi tramite la realtà mista di Win
 | [Esercitazione per la realtà mista](learn-mixed-reality.md) | Informazioni su come usare lo sguardo, la voce, i controller e gli input da tastiera e mouse |
 | [Esplora la Home realtà mista di Windows](your-mixed-reality-home.md) | Esplora l'ambiente virtuale della Home realtà mista di Windows  |
 | [Uso di controller](controllers-in-wmr.md) | Configurare, comprendere e usare i controller di movimento |
-| [Uso dell'input vocale](using-speech-in-wmr.md) | Acquisire familiarità con un'ampia gamma di comandi vocali che possono interagire con gli oggetti 3D, la barra dell'app, il menu Start e Cortana |
+| [Uso dell'input vocale](using-speech-in-wmr.md) | Acquisire familiarità con diversi comandi vocali che possono interagire con gli oggetti 3D, la barra dell'app, il menu Start e Cortana |
 
 > [!NOTE]
 > In caso di problemi con una qualsiasi delle funzionalità sopra riportate, consultare le **[domande frequenti su come usare la realtà mista di Windows](using-wmr-faq.md)**.
@@ -81,9 +89,9 @@ Quando si verificano problemi con qualsiasi elemento correlato all'hardware imme
  
 * [Domande frequenti di carattere generale](troubleshooting-windows-mixed-reality.md) 
 
-Se non si trova ciò che si sta cercando, è disponibile un elenco completo dei documenti di domande frequenti specifiche per gli argomenti nella sezione relativa alle **domande frequenti sulla risoluzione dei problemi** che trattano tutti gli elementi, dai codici di installazione e di errore fino alla visualizzazione delle prestazioni e dell'auricolare. Per altre informazioni sul funzionamento di funzionalità specifiche in VR, vedere gli articoli relativi al funzionamento dei [controller di movimento](controllers-in-wmr.md) e del [rilevamento interno](tracking-system.md) .
+Se non si trova ciò che si sta cercando, è disponibile un elenco completo dei documenti di domande frequenti specifiche per gli argomenti nella sezione relativa alla **risoluzione dei problemi delle domande frequenti che trattano** tutti gli elementi, dai codici di installazione e di errore fino alla visualizzazione delle prestazioni e dell'auricolare. Per ulteriori informazioni sul funzionamento di funzionalità specifiche, vedere gli articoli relativi al funzionamento dei [controller di movimento](controllers-in-wmr.md) e del [rilevamento interno](tracking-system.md) .
 
-Siamo sempre alla ricerca di nuovi problemi e bug, quindi se immetti un documento non documentato, inviaci [commenti e suggerimenti qui](filing-feedback.md).
+Siamo sempre alla ricerca di nuovi problemi e bug, quindi se si verificano altri problemi, è possibile inviare [commenti e suggerimenti](filing-feedback.md).
 
 > [!NOTE]
 > Una cronologia delle versioni di realtà mista di Windows completa è disponibile [qui](mixed-reality-software.md).

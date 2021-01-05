@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, HoloLens, cuffie immersive, app, UWP, invio, invio, filtri, metadati, requisiti di sistema, parole chiave, predato, certificazione, pacchetto, appx, merchandising, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 1d37337279e46e5f0f9d5cea82813af8de9d0f76
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: 92de6072300ed94873cc68dfa78531da4685d274
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96578900"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757839"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Invio di un'app a Microsoft Store
 
@@ -70,7 +70,7 @@ Quando si crea un nuovo progetto di Windows universale in Visual Studio, verrà 
 
 ### <a name="specifying-target-device-families"></a>Specifica delle famiglie di dispositivi di destinazione
 
-Le applicazioni di realtà mista di Windows (sia per [HoloLens](../hololens-hardware-details.md) che per [auricolari immersivi](../discover/immersive-headset-hardware-details.md)) fanno parte del piattaforma UWP (Universal Windows Platform), quindi qualsiasi pacchetto dell'app con una [famiglia di dispositivi di destinazione](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) **Windows. universale** può essere eseguito su PC HoloLens o Windows 10 con auricolari immersivi. Se non si specifica una famiglia di dispositivi di destinazione nel manifesto dell'applicazione, è possibile aprire inavvertitamente l'app fino a dispositivi Windows 10 non intenzionali. Attenersi alla procedura seguente per specificare la famiglia di dispositivi Windows 10 desiderata, quindi [verificare che le famiglie di dispositivi corrette siano impostate quando si carica il pacchetto dell'app nel centro partner per Microsoft Store l'invio.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
+Le applicazioni di realtà mista di Windows (sia per [HoloLens](../hololens-hardware-details.md) che per [auricolari immersivi](../discover/immersive-headset-hardware-details.md)) fanno parte del piattaforma UWP (Universal Windows Platform), quindi qualsiasi pacchetto dell'app con una [famiglia di dispositivi di destinazione](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) **Windows. universale** può essere eseguito su PC HoloLens o Windows 10 con auricolari immersivi. Se non si specifica una famiglia di dispositivi di destinazione nel manifesto dell'applicazione, è possibile aprire inavvertitamente l'app fino a dispositivi Windows 10 non intenzionali. Attenersi alla procedura seguente per specificare la famiglia di dispositivi Windows 10 desiderata, quindi [verificare che siano state impostate le famiglie di dispositivi corrette quando si carica il pacchetto dell'app nel centro partner per Microsoft Store l'invio.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
 
 * Per impostare questo campo in Visual Studio, fare clic con il pulsante destro del mouse su **Package. appxmanifest** e selezionare **Visualizza codice**, quindi trovare il campo **nome TargetDeviceFamily** . Per impostazione predefinita, l'aspetto dovrebbe essere simile al seguente:
 
@@ -172,7 +172,7 @@ La piattaforma universale di Windows consente di creare una singola applicazione
 
 Se si sta inviando un'app realtà mista basata su un progetto Unity, vedere prima questo [video](https://channel9.msdn.com/Blogs/One-Dev-Minute/How-to-publish-your-Unity-game-as-a-UWP-app) .
 
-In generale, l'invio di un'app di realtà mista Windows che funziona su HoloLens e/o cuffie immersive è proprio come l'invio di qualsiasi app UWP al Microsoft Store. Dopo aver [creato l'app riservando il nome](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name), seguire l'elenco di [controllo](https://docs.microsoft.com/windows/uwp/publish/app-submissions)per l'invio di UWP.
+In generale, l'invio di un'app di realtà mista Windows che funziona su HoloLens o cuffie immersive è proprio come l'invio di qualsiasi app UWP al Microsoft Store. Dopo aver [creato l'app riservando il nome](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name), seguire l'elenco di [controllo](https://docs.microsoft.com/windows/uwp/publish/app-submissions)per l'invio di UWP.
 
 Una delle prime operazioni da eseguire è [selezionare una categoria e una sottocategoria](https://docs.microsoft.com/windows/uwp/publish/category-and-subcategory-table) per l'esperienza di realtà mista. È importante **scegliere la categoria più accurata per l'app**. Le categorie consentono di commercializzare l'applicazione nelle categorie dei negozi appropriati e di assicurarsi che venga visualizzata usando le query di ricerca pertinenti. **Elencare il titolo di VR come gioco non comporta una migliore esposizione per l'app** e può impedire che venga visualizzato in categorie più adatte e meno affollate.
 
@@ -192,7 +192,7 @@ Dichiarazioni di prodotti di realtà mista
 In primo luogo, è necessario identificare i tipi di dispositivi per i quali l'app offre un'esperienza di realtà mista. L'identificazione dei tipi di dispositivo garantisce che l'app sia inclusa nelle raccolte di realtà miste di Windows nell'archivio.
 
 Accanto a "questa esperienza è progettata per la realtà mista di Windows in:"
-* Controllare la casella **PC** se l'app offre un'esperienza VR quando un headset immersivo è connesso al PC dell'utente. Si consiglia di selezionare questa casella di controllo se l'app è impostata per l'esecuzione esclusivamente su un dispositivo headset immersivo o se si tratta di un'app o di un gioco per PC standard che offre una modalità di realtà mista e/o un contenuto bonus quando si connette una cuffia.
+* Controllare la casella **PC** se l'app offre un'esperienza VR quando un headset immersivo è connesso al PC dell'utente. È consigliabile selezionare questa casella di controllo se l'app è configurata per essere eseguita esclusivamente su un dispositivo headset immersivo o se si tratta di un'app o di un gioco PC standard che offre una modalità di realtà mista o un contenuto bonus quando si connette una cuffia.
 * Controllare la casella **HoloLens** solo se l'app offre un'esperienza olografica quando viene eseguita in HoloLens.
 * Controllare **entrambe** le caselle se l'app offre un'esperienza di realtà mista in entrambi i tipi di dispositivo.
 
@@ -211,11 +211,11 @@ In questa sezione si identificherà l'hardware minimo (obbligatorio) e l'hardwar
 
 **Hardware di input:**
 
-Usare le caselle di controllo per indicare ai potenziali clienti se l'app supporta il **microfono** per l' [input vocale](../design/voice-input.md)), il **[controller Xbox o gamepad](../discover/hardware-accessories.md#bluetooth-gamepads)** e/o i **[controller di movimento della realtà mista di Windows](../design/motion-controllers.md)**. Queste informazioni verranno riportate nella pagina dei dettagli del prodotto dell'app nello Store e aiuteranno l'app a essere inclusa nelle raccolte di giochi/app appropriate. È ad esempio possibile che esista una raccolta per tutti i giochi che supportano i controller di movimento.
+Usare le caselle di controllo per indicare ai potenziali clienti se l'app supporta il **microfono** per l' [input vocale](../design/voice-input.md)), **[Xbox controller o gamepad](../discover/hardware-accessories.md#bluetooth-gamepads)** o i **[controller di movimento di realtà mista di Windows](../design/motion-controllers.md)**. Queste informazioni verranno riportate nella pagina dei dettagli del prodotto dell'app nello Store e aiuteranno l'app a essere inclusa nelle raccolte di giochi/app appropriate. È ad esempio possibile che esista una raccolta per tutti i giochi che supportano i controller di movimento.
 
 Si consiglia di selezionare le caselle di controllo per "hardware minimo" o "hardware consigliato" per i tipi di input. 
 
-Ad esempio: 
+Esempio: 
 * Se il gioco richiede controller di movimento, ma accetta l'input vocale tramite microfono, selezionare la casella di controllo "hardware minimo" accanto a "controller di movimento per la realtà mista di Windows", ma la casella di controllo "hardware consigliato" accanto a "microfono". 
 * Se è possibile riprodurre il gioco con un controller Xbox, un gamepad o un controller di movimento, è possibile selezionare la casella di controllo "hardware minimo" accanto a "controller Xbox o gamepad" e selezionare la casella di controllo "hardware consigliato" accanto a "controller di movimento per la realtà mista di Windows". i controller di movimento offriranno probabilmente un passo avanti nell'esperienza del gamepad.
 
@@ -266,8 +266,8 @@ Aggiungere "realtà mista di Windows" ai termini di ricerca
 
 In molti casi, gli utenti non avranno alcuna esperienza con la realtà virtuale prima di acquistare una cuffia mista a realtà mista di Windows. Potrebbero non sapere cosa aspettarsi da giochi intensi o avere familiarità con la loro soglia di comfort in esperienze immersive. Molti clienti possono anche provare a usare un auricolare immersivo a realtà mista di Windows nei PC che non sono associati ai PC con la [realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines). A causa di queste considerazioni, è consigliabile valutare la possibilità di offrire una [versione di valutazione gratuita](https://docs.microsoft.com/windows/uwp/publish/set-app-pricing-and-availability#free-trial) per l'app o il gioco in realtà mista a pagamento.
 
-## <a name="see-also"></a>Vedere anche
-* [Che cos'è Realtà mista?](../discover/mixed-reality.md)
+## <a name="see-also"></a>Vedi anche
+* [Che cos'è la realtà mista?](../discover/mixed-reality.md)
 * [Cenni preliminari sullo sviluppo](../develop/development.md)
 * [Visualizzazioni delle app](../design/app-views.md)
 * [Informazioni sulle prestazioni per la realtà mista](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)

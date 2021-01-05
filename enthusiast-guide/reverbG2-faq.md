@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto tecnico, prestazioni
 appliesto:
 - Windows 10
-ms.openlocfilehash: 0c0bc508772fe32af9edc21ca62ba5e46125fe88
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: 55baf3f076b8cf0f815f899658b3bbe61292e267
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96578616"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725902"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Domande frequenti su HP Reverb G2
 
@@ -28,17 +28,17 @@ HP consiglia:
 
 Se si ritiene che la visualizzazione appaia leggermente sfocata, è possibile provare a eseguire alcune operazioni:
 
-- Assicurarsi che l'auricolare si trovi correttamente, in modo che gli occhi siano centrati per quanto riguarda gli obiettivi.
-- Provare a modificare il dpi (interpupillare distance). Si noti che il riverbero G2 usa un dpi hardware. Per modificarlo, cercare la regolazione di DPI nell'auricolare.
-- Se sono necessari gli occhiali o i contatti, sono ancora necessari.
-- Controllare le lenti se devono essere pulite (solo panno in microfibre-nessun fluido).
-- A causa della progettazione avanzata dell'auricolare, è possibile che si verifichino alcuni Ghost di immagini secondarie nei primi minuti quando si avvia il dispositivo mentre si è a freddo finché gli LCD non hanno la possibilità di scaldarsi.
+- Assicurarsi che l'auricolare si trovi correttamente con gli occhi centrati sulle lenti.
+- Provare a modificare il dpi (interpupillare distance). Reverb G2 usa un hardware dpi. Per modificarlo, cercare la regolazione di DPI nell'auricolare.
+- Se sono necessari occhiali o contatti, è necessario usarli quando si usa il dispositivo.
+- Verificare che le lenti siano pulite (solo panno in microfibre-nessun fluido).
+- A causa della progettazione avanzata di cuffie, potrebbe essere presente un'immagine secondaria dei primi minuti quando si avvia il dispositivo mentre si è a freddo finché gli LCD non hanno la possibilità di scaldarsi.
 
 ## <a name="i-am-getting-a-7-14-something-went-wrong-error-when-i-plug-in-my-headset"></a>Si è verificato un errore 7-14 "si è verificato un errore" durante il collegamento dell'auricolare
 
 Il codice 7-14 qualcosa ha avuto esito negativo significa che alcuni dei componenti USB2 richiesti non sono stati trovati.  A causa del cavo molto lungo di HP reverbi G2, alcune delle tolleranze per i segnali USB sono più rigorose.  Ciò significa che una porta del computer potrebbe funzionare in modo più affidabile rispetto a un'altra.
 
-Se viene visualizzato un errore 7-14 "si è verificato un errore", provare a eseguire la procedura seguente:
+Se viene visualizzato un errore 7-14 "si è verificato un errore", provare a eseguire i passaggi seguenti:
 
 - Verificare che siano installati i driver più recenti per l'auricolare e il controller USB.
 - Assicurarsi di usare un driver USB Microsoft. Il nome del dispositivo "eXtensible Host Controller" deve essere "Microsoft".
@@ -58,7 +58,7 @@ In alcuni casi, durante il processo di ripresa, la scheda video non è in grado 
 
 Questo problema è stato corretto deselezionando completamente il joystick fino a quando non viene fatto clic e verrà spostato liberamente.
 
-## <a name="others-state-i-am-very-loud-or-that-my-audio-is-clipping-while-i-am-using-the-microphone-with-some-applications"></a>Gli altri Stati sono molto rumorosi o si sta ritagliando l'audio quando si usa il microfono con alcune applicazioni
+## <a name="others-state-i-am-loud-or-that-my-audio-is-clipping-while-i-am-using-the-microphone-with-some-applications"></a>Gli altri Stati sono ad alta voce o che l'audio sta per ritagliare mentre sto usando il microfono con alcune applicazioni
 
 I livelli del volume di input vengono impostati automaticamente su 100% quando il microfono di HP Reverb G2 viene riconosciuto per la prima volta da un computer Windows. A causa dei microfoni G2 di qualità elevata, la sensibilità di input è molto più elevata rispetto alle impostazioni predefinite di Windows 10. Si consiglia di impostare il livello di input del microfono di Reverb G2 a partire dal 50% e di scalare verticalmente. Un'impostazione ottimale è specifica dell'utente, soprattutto quando si usano applicazioni che non hanno un'impostazione del microfono "guadagno automatico". Gli esempi di applicazioni con "guadagno automatico" sono Skype, zoom, teams e Cisco WebEx, ma non tutte le applicazioni di telecomunicazioni o di telecomunicazione VR hanno questa funzionalità.
 
@@ -68,12 +68,12 @@ Questo problema può verificarsi perché il sistema HP Reverb G2 richiede un PC 
 
 ## <a name="it-looks-like-my-left-display-is-stretched-and-the-right-display-is-off-centered-and-half-black"></a>Sembra che lo schermo a sinistra sia allungato e che la visualizzazione destra sia disattivata e mezza nera
 
-Questo problema può verificarsi quando la cuffia non è in esecuzione con la risoluzione nativa. A causa della natura degli schermi ad alta risoluzione in HP reverbi G2 HMD, non tutti i sistemi saranno in grado di eseguire il rendering della risoluzione nativa. Una correzione verrà rilasciata in un Windows Update futuro che risolverà il problema di rendering quando l'auricolare non è alla risoluzione nativa.
+Questo problema può verificarsi quando la cuffia non viene eseguita con la risoluzione nativa. A causa della natura degli schermi ad alta risoluzione in HP reverbi G2 HMD, non tutti i sistemi possono eseguire il rendering della risoluzione nativa. Una correzione verrà rilasciata in un Windows Update futuro che risolverà il problema di rendering quando l'auricolare non è alla risoluzione nativa.
 
 Esistono alcuni motivi per cui il sistema non è in grado di eseguire il rendering alla risoluzione nativa:
 
-- Il DisplayPort del sistema potrebbe non essere compatibile con 1,3 o potrebbe non supportare tutte le 4 corsie.
-- Se si utilizza un adapter, è possibile che non supporti la compatibilità con HBR3 o che non supporti tutte le 4 corsie.
+- Il DisplayPort del sistema potrebbe non essere compatibile con 1,3 o potrebbe non supportare tutte e quattro le corsie.
+- Se si usa un adapter, potrebbe non essere compatibile con HBR3 o potrebbe non supportare tutte e quattro le corsie.
 - Se il sistema dispone di una GPU ibrida, è possibile che la larghezza di banda disponibile per DisplayPort sia limitata.
 
 ## <a name="why-are-my-hp-motion-controller-models-not-showing-up-correctly-in-a-game"></a>Perché i modelli HP Motion controller non vengono visualizzati correttamente in un gioco
@@ -91,4 +91,4 @@ Per
 - Selezionare l'opzione "Gestisci binding controller"
 
 Da qui è possibile modificare il binding del controller attivo in "Custom", in modo da aprire l'opzione per provare le associazioni di gioco condivise dalla community.
-Se non sono ancora state condivise associazioni di gioco personalizzate per questo gioco (o se non si è pienamente soddisfatti di quelle provate), è anche possibile creare binding di gioco personalizzati e anche aiutare il resto della community condividendo questi ultimi dopo alcune sessioni di gioco.
+Se non è ancora stata condivisa alcuna associazione di gioco personalizzata per questo gioco (o se non si è pienamente soddisfatti di quelli usati), è anche possibile creare binding di gioco personalizzati e anche aiutare il resto della community condividendo questi ultimi dopo alcune sessioni di gioco.

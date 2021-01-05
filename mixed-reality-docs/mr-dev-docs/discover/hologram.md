@@ -6,22 +6,21 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, HoloLens, ologrammi, progettazione, interazione, auricolare realtà mista, auricolare di realtà mista di Windows, cos'è la realtà aumentata
-ms.openlocfilehash: 6407770a818bc294cf615201a837218173b963d0
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: b390910fcece8e6263d19f52c80b784efb2561f6
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702247"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757559"
 ---
 # <a name="what-is-a-hologram"></a>Che cos'è un ologramma?
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/MVXH5V8MVQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-HoloLens consente di creare **ologrammi**, oggetti costituiti da luce e suoni presenti in tutto il mondo, proprio come se fossero oggetti reali. Gli ologrammi rispondono a [sguardi](../design/gaze-and-commit.md), [movimenti](../design/gaze-and-commit.md#composite-gestures) e [comandi vocali](../design/voice-input.md)e possono interagire con le [aree reali](../design/spatial-mapping.md) . Con gli ologrammi puoi creare oggetti digitali che fanno parte del tuo mondo.
+HoloLens consente di creare **ologrammi**, che sono oggetti costituiti da luce e suoni che vengono visualizzati in tutto il mondo, come gli oggetti reali. Gli ologrammi rispondono a [sguardi](../design/gaze-and-commit.md), [movimenti](../design/gaze-and-commit.md#composite-gestures)e [comandi vocali](../design/voice-input.md). Possono anche interagire con le [aree reali](../design/spatial-mapping.md) . Con gli ologrammi puoi creare oggetti digitali che fanno parte del tuo mondo.
 
 <br>
-
 
 ## <a name="device-support"></a>Supporto di dispositivi
 
@@ -54,7 +53,7 @@ HoloLens consente di creare **ologrammi**, oggetti costituiti da luce e suoni pr
 
 Gli ologrammi che HoloLens [esegue il rendering](../develop/platform-capabilities-and-apis/rendering.md) vengono visualizzati nel frame olografico direttamente davanti agli occhi dell'utente. Gli ologrammi aggiungono luce al mondo, il che significa che è possibile visualizzare sia la luce dallo schermo che la luce dall'ambiente circostante. HoloLens non rimuove la luce dagli occhi, quindi gli ologrammi non possono essere sottoposti a rendering con il colore nero. Il contenuto nero viene invece visualizzato come trasparente.
 
-Gli ologrammi possono avere diversi aspetti e comportamenti. Alcune sono realistiche e solide e altre sono animate ed etereo. Gli ologrammi possono evidenziare le funzionalità nell'ambiente in uso e possono essere elementi nell'interfaccia utente dell'app.
+Gli ologrammi possono avere diversi aspetti e comportamenti. Alcune sono realistiche e solide e altre sono animate ed etereo. È possibile usare gli ologrammi per evidenziare le funzionalità nell'ambiente o usarle come elementi nell'interfaccia utente dell'app.
 
 ![Mano che manipola un ologramma](images/hologram-hands-940px.jpg)
 
@@ -66,29 +65,28 @@ Gli ologrammi possono anche creare [suoni](../design/spatial-sound.md), che semb
 
 ## <a name="a-hologram-can-be-placed-in-the-world-or-tag-along-with-you"></a>Un ologramma può essere inserito nel mondo o nel tag insieme all'utente
 
-Quando si dispone di una posizione specifica in cui si desidera un ologramma, è possibile [inserirla](../design/coordinate-systems.md) esattamente nel mondo. Quando si tratta di un ologramma, viene visualizzato un aspetto stabile rispetto al mondo. Se si usa un [ancoraggio spaziale](../design/coordinate-systems.md#spatial-anchors) per aggiungere l'oggetto in modo consolidato al mondo, il sistema può persino ricordare dove è stato lasciato quando si torna più tardi.
+Quando si dispone di una posizione specifica per un ologramma, è possibile [inserirla](../design/coordinate-systems.md) esattamente in quel punto del mondo. Quando si procede in questo modo, l'ologramma sembra stabile in base a tutto il mondo. Se si usa un [ancoraggio spaziale](../design/coordinate-systems.md#spatial-anchors) per aggiungere l'oggetto, il sistema può persino ricordare dove è stato lasciato quando si torna più tardi.
 
 ![Due uomini che usano il layout di Microsoft Dynamics 365 in uno spazio al dettaglio](images/HLS19_retailLayoutHologram_001-940px.jpg)
 
-Alcuni ologrammi seguono invece l'utente. Gli ologrammi con tag vengono posizionati in relazione all'utente, indipendentemente dalla loro posizione. È anche possibile scegliere di portare un ologramma per un po' di tempo e quindi posizionarlo sul muro quando si accede a un'altra stanza.
+Alcuni ologrammi seguono invece l'utente, posizionandosi in base all'utente indipendentemente dalla loro posizione. È anche possibile scegliere di portare un ologramma per un po' di tempo e quindi posizionarlo sul muro quando si accede a un'altra stanza.
 
 **Procedure consigliate**
 * Alcuni scenari possono richiedere che gli ologrammi rimangano facilmente individuabili o visibili nell'intera esperienza. Questo tipo di posizionamento è costituito da due approcci di alto livello. Chiameremo **"display-locked"** e **"Body-locked"**.
-   * Il contenuto con blocco visualizzato è posizionato "bloccato" sullo schermo del dispositivo. Si tratta di un'operazione complessa per diversi motivi, tra cui una sensazione insensata di "clingyness" che rende molti utenti frustrati e che desiderano "eliminarli". In generale, molti designer hanno ritenuto migliore di evitare il contenuto del blocco visualizzato.
-   * L'approccio con blocco del corpo è molto più perdonabile. Il blocco del corpo si verifica quando un ologramma è vincolato al corpo dell'utente o al vettore dello sguardo, ma è posizionato nello spazio 3D intorno all'utente. Molte esperienze hanno adottato un comportamento di blocco del corpo in cui l'ologramma "segue" lo sguardo degli utenti, che consente all'utente di ruotare il corpo e spostarsi nello spazio senza perdere l'ologramma. L'integrazione di un ritardo aiuta il movimento dell'ologramma a essere più naturale. Ad esempio, un'interfaccia utente di base del sistema operativo Windows olografico usa una variante del blocco del corpo che segue lo sguardo dell'utente con un ritardo di tipo elastico e elastico mentre l'utente si attiva.
+   * Il contenuto con blocco visualizzato è posizionato "bloccato" sullo schermo del dispositivo. Questo tipo di contenuto è difficile per diversi motivi, tra cui una sensazione insensata di "clingyness" che rende molti utenti frustrati e che desiderano "agitarlo". In generale, molti designer hanno ritenuto migliore di evitare il contenuto del blocco visualizzato.
+   * L'approccio con blocco del corpo è molto più perdonabile. Il blocco del corpo si verifica quando si esegue il tethering del corpo di un ologramma nel corpo dell'utente o del vettore di sguardi nello spazio 3D. Molte esperienze hanno adottato un comportamento di blocco del corpo in cui l'ologramma "segue" lo sguardo degli utenti, che consente all'utente di ruotare il corpo e spostarsi nello spazio senza perdere l'ologramma. L'integrazione di un ritardo aiuta il movimento dell'ologramma a essere più naturale. Ad esempio, un'interfaccia utente di base del sistema operativo Windows olografico usa una variante del blocco del corpo che segue lo sguardo dell'utente con un ritardo di tipo elastico e elastico mentre l'utente si attiva.
 * Posizionare l'ologramma a una distanza di visualizzazione comoda in genere a circa 1-2 metri di distanza dall'inizio.
-* Fornire una certa tendenza per gli elementi che devono essere continuamente nel frame olografico oppure provare ad animare il contenuto su un lato dello schermo quando l'utente modifica il proprio punto di visualizzazione.
+* Fornire una quantità di Drift per gli elementi che devono essere continuamente nel frame olografico oppure provare ad animare il contenuto su un lato dello schermo quando l'utente modifica il proprio punto di visualizzazione.
 
-**Posizionare gli ologrammi nell'area ottimale, tra 1.25 m e 5m**
+**Posizionare gli ologrammi nell'area ottimale, tra 1,25 m e 5 m**
 
-Due contatori sono i più ottimali e l'esperienza ridurrà il più vicino possibile da un contatore. A distanze più vicine a un metro, gli ologrammi che si spostano regolarmente in profondità sono più probabilmente problematici degli ologrammi stazionari. Prendere in considerazione la possibilità di ritagliare o dissolvere il contenuto quando diventa troppo vicino, in modo da non inserirlo in un'esperienza imprevista.
+Due contatori sono i più ottimali e l'esperienza diminuisce più vicino a 1 contatore. A distanze più vicine a 1 metro, gli ologrammi che si spostano regolarmente in profondità sono più probabilmente problematici degli ologrammi stazionari. Prendere in considerazione la possibilità di ritagliare o dissolvere il contenuto quando il contenuto diventa troppo vicino, in modo da non inserirlo in un'esperienza imprevista.
 
 ![Distanza ottimale per inserire gli ologrammi dall'utente.](images/distanceguiderendering-950px.png)
 
 <br>
 
 ---
-
 
 ## <a name="a-hologram-interacts-with-you-and-your-world"></a>Un ologramma interagisce con l'utente e il mondo
 
@@ -98,13 +96,13 @@ Gli ologrammi non hanno solo la luce e il suono; sono anche una parte attiva del
 
 Gli ologrammi consentono interazioni personali che non sono possibili altrove. Poiché il HoloLens sa dove si trova nel mondo, un carattere olografico può esaminarlo direttamente quando si cammina intorno alla stanza.
 
-Un ologramma può interagire anche con l'ambiente in uso. Ad esempio, è possibile inserire una palla da rimbalzo olografica sopra una tabella. Quindi, con un [Rubinetto aria](../design/gaze-and-commit.md#composite-gestures), guardare il rimbalzo della palla e creare un suono quando si raggiunge la tabella.
+Un ologramma può interagire anche con l'ambiente in uso. Ad esempio, è possibile inserire una palla da rimbalzo olografica sopra una tabella. Quindi, con un [rubinetto d'aria](../design/gaze-and-commit.md#composite-gestures), Guarda il rimbalzo della palla e crea un suono quando raggiunge la tabella.
 
 Gli ologrammi possono anche essere bloccati da oggetti reali. Un carattere olografico, ad esempio, può spostarsi tra una porta e un muro, fuori dalla propria visione.
 
 **Suggerimenti per l'integrazione di ologrammi e il mondo reale**
-* L'allineamento alle regole gravitazionali rende gli ologrammi più semplici da correlare e più credibili. ad esempio: posizionare un cane olografico & un vaso sulla tabella anziché inserirli nello spazio.
-* Molti designer hanno scoperto che possono integrare gli ologrammi in modo ancora più credibile creando un'ombreggiatura negativa sulla superficie in cui si trova l'ologramma. A tale scopo, è possibile creare un alone di luce intorno all'ologramma e quindi sottrarre l'ombreggiatura dal bagliore. Il Soft Glow si integra con la luce del mondo reale e con i motivi dell'ombreggiatura dell'ologramma nell'ambiente.
+* L'allineamento alle regole gravitazionali rende gli ologrammi più semplici da correlare e più credibili. ad esempio: posizionare un cane olografico a fondo & un vaso nella tabella anziché inserirlo nello spazio.
+* Molti designer hanno scoperto che possono integrare ologrammi più credibili creando un'ombreggiatura negativa sulla superficie su cui si trova l'ologramma. A tale scopo, è possibile creare un alone di luce intorno all'ologramma e quindi sottrarre l'ombreggiatura dal bagliore. Il Soft Glow si integra con la luce del mondo reale, che usa l'ombreggiatura per basare l'ologramma nell'ambiente.
 
 <br>
 
