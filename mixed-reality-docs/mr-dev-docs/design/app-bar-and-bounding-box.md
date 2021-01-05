@@ -6,31 +6,31 @@ ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
 keywords: Realtà mista di Windows, barra delle applicazioni, rettangolo di delimitazione, cuffie per realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: f718babfa07c69b6579fbd78f306a10f0ed6aad5
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 0f94aa3842afbfbd544716b801c7cb88d7be3abc
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703057"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847650"
 ---
-# <a name="bounding-box-and-app-bar"></a><span data-ttu-id="3aaf9-104">Rettangolo di selezione e barra dell'app</span><span class="sxs-lookup"><span data-stu-id="3aaf9-104">Bounding box and App bar</span></span>
-<span data-ttu-id="3aaf9-105">![Il delimitatore è l'interfaccia standard per la manipolazione di oggetti in realtà mista.](images/UX_Hero_BoundingBox.jpg)</span><span class="sxs-lookup"><span data-stu-id="3aaf9-105">![Bounding is the standard interface for object manipulation in Mixed Reality.](images/UX_Hero_BoundingBox.jpg)</span></span><br>
+# <a name="bounding-box-and-app-bar"></a><span data-ttu-id="c5176-104">Rettangolo di selezione e barra dell'app</span><span class="sxs-lookup"><span data-stu-id="c5176-104">Bounding box and App bar</span></span>
+<span data-ttu-id="c5176-105">![Il delimitatore è l'interfaccia standard per la manipolazione di oggetti in realtà mista.](images/UX_Hero_BoundingBox.jpg)</span><span class="sxs-lookup"><span data-stu-id="c5176-105">![Bounding is the standard interface for object manipulation in Mixed Reality.](images/UX_Hero_BoundingBox.jpg)</span></span><br>
 <br>
 
-## <a name="what-is-the-bounding-box"></a><span data-ttu-id="3aaf9-106">Che cos'è il rettangolo di delimitazione?</span><span class="sxs-lookup"><span data-stu-id="3aaf9-106">What is the Bounding box?</span></span>
+## <a name="what-is-the-bounding-box"></a><span data-ttu-id="c5176-106">Che cos'è il rettangolo di delimitazione?</span><span class="sxs-lookup"><span data-stu-id="c5176-106">What is the Bounding box?</span></span>
 
-<span data-ttu-id="3aaf9-107">Il delimitatore è l'interfaccia standard per la manipolazione di oggetti in realtà mista.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-107">Bounding is the standard interface for object manipulation in Mixed Reality.</span></span> <span data-ttu-id="3aaf9-108">Fornisce all'utente la convenienza che l'oggetto è attualmente modificabile.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-108">It provides the user an affordance that the object is currently adjustable.</span></span> <span data-ttu-id="3aaf9-109">In HoloLens 2 il rettangolo di delimitazione funziona con la manipolazione diretta della mano e risponde alla vicinanza finger's dell'utente.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-109">On HoloLens 2, the bounding box works with direct hand manipulation and responds to the user's finger's proximity.</span></span> <span data-ttu-id="3aaf9-110">Mostra commenti visivi per aiutare l'utente a percepire la distanza dall'oggetto.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-110">It shows visual feedback to help the user perceive the distance from the object.</span></span>
+<span data-ttu-id="c5176-107">Il delimitatore è l'interfaccia standard per la manipolazione di oggetti in realtà mista.</span><span class="sxs-lookup"><span data-stu-id="c5176-107">Bounding is the standard interface for object manipulation in Mixed Reality.</span></span> <span data-ttu-id="c5176-108">Questa funzionalità fornisce all'utente un segnale visivo che l'oggetto è attualmente modificabile.</span><span class="sxs-lookup"><span data-stu-id="c5176-108">This feature provides the user with a visual cue that the object is currently adjustable.</span></span> <span data-ttu-id="c5176-109">In HoloLens 2 il rettangolo di delimitazione funziona con la manipolazione diretta della mano e risponde alla vicinanza finger's dell'utente.</span><span class="sxs-lookup"><span data-stu-id="c5176-109">On HoloLens 2, the bounding box works with direct hand manipulation and responds to the user's finger's proximity.</span></span> <span data-ttu-id="c5176-110">Mostra commenti visivi per aiutare l'utente a percepire la distanza dall'oggetto.</span><span class="sxs-lookup"><span data-stu-id="c5176-110">It shows visual feedback to help the user perceive the distance from the object.</span></span>
 
 :::row:::
     :::column:::
-        ### <a name="scaling-an-objectbr"></a><span data-ttu-id="3aaf9-111">Ridimensionamento di un oggetto</span><span class="sxs-lookup"><span data-stu-id="3aaf9-111">Scaling an object</span></span><br>
-        <span data-ttu-id="3aaf9-112">Gli angoli del rettangolo di delimitazione indicano all'utente che l'oggetto può essere ridimensionato.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-112">The corners of the bounding box tell the user that the object can scale.</span></span> <span data-ttu-id="3aaf9-113">Gli handle seguono un modello molto noto per la regolazione della scala.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-113">The handles follow a widely understood pattern for adjusting scale.</span></span> <span data-ttu-id="3aaf9-114">Questa offerta visiva mostra agli utenti l'area totale dell'oggetto, anche se non è visibile al di fuori di una modalità di regolazione.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-114">This visual affordance shows users the total area of the object – even if it’s not visible outside of an adjustment mode.</span></span> <span data-ttu-id="3aaf9-115">Questo è particolarmente importante perché, in caso contrario, un oggetto bloccato a un altro oggetto o a una superficie può sembrare comportarsi come se fosse presente spazio che non dovrebbe essere presente.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-115">This is especially important because if it weren’t there, an object snapped to another object or surface may appear to behave as if there was space around it that shouldn’t be there.</span></span><br>
+        ### <a name="scaling-an-objectbr"></a><span data-ttu-id="c5176-111">Ridimensionamento di un oggetto</span><span class="sxs-lookup"><span data-stu-id="c5176-111">Scaling an object</span></span><br>
+        <span data-ttu-id="c5176-112">Gli angoli del rettangolo di delimitazione indicano all'utente che l'oggetto può essere ridimensionato.</span><span class="sxs-lookup"><span data-stu-id="c5176-112">The corners of the bounding box tell the user that the object can scale.</span></span> <span data-ttu-id="c5176-113">Gli handle seguono un modello molto noto per la regolazione della scala.</span><span class="sxs-lookup"><span data-stu-id="c5176-113">The handles follow a widely understood pattern for adjusting scale.</span></span> <span data-ttu-id="c5176-114">Questo segnale visivo Mostra agli utenti l'area totale dell'oggetto, anche se non è visibile al di fuori di una modalità di regolazione.</span><span class="sxs-lookup"><span data-stu-id="c5176-114">This visual cue shows users the total area of the object – even if it’s not visible outside of an adjustment mode.</span></span> <span data-ttu-id="c5176-115">Senza questa funzionalità, un oggetto bloccato a un altro oggetto o a una superficie può sembrare un comportamento simile a quello di uno spazio che non dovrebbe essere presente.</span><span class="sxs-lookup"><span data-stu-id="c5176-115">Without this feature, an object snapped to another object or surface may appear to behave like there was space around it that shouldn’t be there.</span></span><br>
         <br>
-        <span data-ttu-id="3aaf9-116">*Ciclo video: ridimensionamento di un oggetto tramite il rettangolo di delimitazione*</span><span class="sxs-lookup"><span data-stu-id="3aaf9-116">*Video loop: Scaling an object via bounding box*</span></span>
+        <span data-ttu-id="c5176-116">*Ciclo video: ridimensionamento di un oggetto tramite il rettangolo di delimitazione*</span><span class="sxs-lookup"><span data-stu-id="c5176-116">*Video loop: Scaling an object via bounding box*</span></span>
     :::column-end:::
         :::column:::
-        <span data-ttu-id="3aaf9-117">![space](images/spacer-20x582.png)</span><span class="sxs-lookup"><span data-stu-id="3aaf9-117">![space](images/spacer-20x582.png)</span></span><br>
-       <span data-ttu-id="3aaf9-118">![HoloLens punto di vista della scalabilità di un oggetto tramite il rettangolo di delimitazione](images/HoloLens2_BoundingBox.gif)</span><span class="sxs-lookup"><span data-stu-id="3aaf9-118">![HoloLens point-of-view of scaling an object via bounding box](images/HoloLens2_BoundingBox.gif)</span></span><br>
+        <span data-ttu-id="c5176-117">![space](images/spacer-20x582.png)</span><span class="sxs-lookup"><span data-stu-id="c5176-117">![space](images/spacer-20x582.png)</span></span><br>
+       <span data-ttu-id="c5176-118">![HoloLens punto di vista della scalabilità di un oggetto tramite il rettangolo di delimitazione](images/HoloLens2_BoundingBox.gif)</span><span class="sxs-lookup"><span data-stu-id="c5176-118">![HoloLens point-of-view of scaling an object via bounding box](images/HoloLens2_BoundingBox.gif)</span></span><br>
     :::column-end:::
 :::row-end:::
 
@@ -38,14 +38,14 @@ ms.locfileid: "94703057"
 
 :::row:::
     :::column:::
-        ### <a name="rotating-an-objectbr"></a><span data-ttu-id="3aaf9-119">Rotazione di un oggetto</span><span class="sxs-lookup"><span data-stu-id="3aaf9-119">Rotating an object</span></span><br>
-        <span data-ttu-id="3aaf9-120">Il affordances rettangolare verticale sui bordi del rettangolo di delimitazione sono indicatori di rotazione.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-120">The vertical rectangular affordances on the edges of the bounding box are rotation indicators.</span></span> <span data-ttu-id="3aaf9-121">In questo modo l'utente garantisce una maggiore regolazione degli ologrammi posizionati.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-121">This gives the user more fine adjustment over their placed holograms.</span></span> <span data-ttu-id="3aaf9-122">Non solo è possibile modificare e ridimensionare, ma ora ruotare anche.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-122">Not only can they adjust and scale, but now rotate as well.</span></span><br>
+        ### <a name="rotating-an-objectbr"></a><span data-ttu-id="c5176-119">Rotazione di un oggetto</span><span class="sxs-lookup"><span data-stu-id="c5176-119">Rotating an object</span></span><br>
+        <span data-ttu-id="c5176-120">Il affordances rettangolare verticale sui bordi del rettangolo di delimitazione sono indicatori di rotazione.</span><span class="sxs-lookup"><span data-stu-id="c5176-120">The vertical rectangular affordances on the edges of the bounding box are rotation indicators.</span></span> <span data-ttu-id="c5176-121">In questo modo l'utente garantisce una maggiore regolazione degli ologrammi posizionati.</span><span class="sxs-lookup"><span data-stu-id="c5176-121">This gives the user more fine adjustment over their placed holograms.</span></span> <span data-ttu-id="c5176-122">Non solo è possibile modificare e ridimensionare, ma ora ruotare anche.</span><span class="sxs-lookup"><span data-stu-id="c5176-122">Not only can they adjust and scale, but now rotate as well.</span></span><br>
         <br>
-        <span data-ttu-id="3aaf9-123">*Ciclo video: rotazione di un oggetto tramite il rettangolo di delimitazione*</span><span class="sxs-lookup"><span data-stu-id="3aaf9-123">*Video loop: Rotating an object via bounding box*</span></span>
+        <span data-ttu-id="c5176-123">*Ciclo video: rotazione di un oggetto tramite il rettangolo di delimitazione*</span><span class="sxs-lookup"><span data-stu-id="c5176-123">*Video loop: Rotating an object via bounding box*</span></span>
     :::column-end:::
         :::column:::
-        <span data-ttu-id="3aaf9-124">![space](images/spacer-20x582.png)</span><span class="sxs-lookup"><span data-stu-id="3aaf9-124">![space](images/spacer-20x582.png)</span></span><br>
-       <span data-ttu-id="3aaf9-125">![HoloLens punto di visualizzazione della rotazione di un oggetto tramite il rettangolo di delimitazione](images/HoloLens2_BoundingBox_Rotate.gif)</span><span class="sxs-lookup"><span data-stu-id="3aaf9-125">![HoloLens point-of-view of rotating an object via bounding box](images/HoloLens2_BoundingBox_Rotate.gif)</span></span><br>
+        <span data-ttu-id="c5176-124">![space](images/spacer-20x582.png)</span><span class="sxs-lookup"><span data-stu-id="c5176-124">![space](images/spacer-20x582.png)</span></span><br>
+       <span data-ttu-id="c5176-125">![HoloLens punto di visualizzazione della rotazione di un oggetto tramite il rettangolo di delimitazione](images/HoloLens2_BoundingBox_Rotate.gif)</span><span class="sxs-lookup"><span data-stu-id="c5176-125">![HoloLens point-of-view of rotating an object via bounding box](images/HoloLens2_BoundingBox_Rotate.gif)</span></span><br>
     :::column-end:::
 :::row-end:::
 
@@ -53,73 +53,73 @@ ms.locfileid: "94703057"
 
 :::row:::
     :::column:::
-        ### <a name="visual-feedback-on-hand-proximity-on-hololens-2br"></a><span data-ttu-id="3aaf9-126">Feedback visivo sulle prossimità della mano su HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="3aaf9-126">Visual feedback on hand proximity on HoloLens 2</span></span><br>
-        <span data-ttu-id="3aaf9-127">In HoloLens 2 è presente un segnale visivo aggiuntivo che può aiutare la percezione dell'utente della profondità.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-127">On HoloLens 2, there is an additional visual cue which can help the user's perception of depth.</span></span> <span data-ttu-id="3aaf9-128">Un anello vicino alla loro parte viene visualizzato e ridimensionato quando il dito si avvicina all'oggetto.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-128">A ring near their fingertip shows up and scales down as the fingertip gets closer to the object.</span></span> <span data-ttu-id="3aaf9-129">L'anello alla fine converge in un punto quando viene raggiunto lo stato premuto.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-129">The ring eventually converges into a dot when the pressed state is reached.</span></span> <span data-ttu-id="3aaf9-130">Questa convenienza visiva consente all'utente di comprendere la distanza dall'oggetto.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-130">This visual affordance helps the user understand how far they are from the object.</span></span><br>
+        ### <a name="visual-feedback-on-hand-proximity-on-hololens-2br"></a><span data-ttu-id="c5176-126">Feedback visivo sulle prossimità della mano su HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="c5176-126">Visual feedback on hand proximity on HoloLens 2</span></span><br>
+        <span data-ttu-id="c5176-127">In HoloLens 2 è presente un segnale visivo aggiuntivo che può aiutare la percezione dell'utente della profondità.</span><span class="sxs-lookup"><span data-stu-id="c5176-127">On HoloLens 2, there's an extra visual cue, which can help the user's perception of depth.</span></span> <span data-ttu-id="c5176-128">Un anello vicino alla loro parte viene visualizzato e ridimensionato quando il dito si avvicina all'oggetto.</span><span class="sxs-lookup"><span data-stu-id="c5176-128">A ring near their fingertip shows up and scales down as the fingertip gets closer to the object.</span></span> <span data-ttu-id="c5176-129">L'anello alla fine converge in un punto quando viene raggiunto lo stato premuto.</span><span class="sxs-lookup"><span data-stu-id="c5176-129">The ring eventually converges into a dot when the pressed state is reached.</span></span> <span data-ttu-id="c5176-130">Questa convenienza visiva consente all'utente di comprendere la distanza dall'oggetto.</span><span class="sxs-lookup"><span data-stu-id="c5176-130">This visual affordance helps the user understand how far they are from the object.</span></span><br>
         <br>
-        <span data-ttu-id="3aaf9-131">*Ciclo video: esempio di feedback visivo basato sulla prossimità a un rettangolo di delimitazione*</span><span class="sxs-lookup"><span data-stu-id="3aaf9-131">*Video loop: Example of visual feedback based on proximity to a bounding box*</span></span>
+        <span data-ttu-id="c5176-131">*Ciclo video: esempio di feedback visivo basato sulla prossimità a un rettangolo di delimitazione*</span><span class="sxs-lookup"><span data-stu-id="c5176-131">*Video loop: Example of visual feedback based on proximity to a bounding box*</span></span>
     :::column-end:::
         :::column:::
-        <span data-ttu-id="3aaf9-132">![space](images/spacer-20x582.png)</span><span class="sxs-lookup"><span data-stu-id="3aaf9-132">![space](images/spacer-20x582.png)</span></span><br>
-       <span data-ttu-id="3aaf9-133">![Feedback visivo sulla prossimità della mano](images/HoloLens2_Proximity.gif)</span><span class="sxs-lookup"><span data-stu-id="3aaf9-133">![Visual feedback on hand proximity](images/HoloLens2_Proximity.gif)</span></span><br>
+        <span data-ttu-id="c5176-132">![space](images/spacer-20x582.png)</span><span class="sxs-lookup"><span data-stu-id="c5176-132">![space](images/spacer-20x582.png)</span></span><br>
+       <span data-ttu-id="c5176-133">![Feedback visivo sulla prossimità della mano](images/HoloLens2_Proximity.gif)</span><span class="sxs-lookup"><span data-stu-id="c5176-133">![Visual feedback on hand proximity](images/HoloLens2_Proximity.gif)</span></span><br>
     :::column-end:::
 :::row-end:::
 
 <br>
 
-<span data-ttu-id="3aaf9-134">**Per lo sviluppo di app Unity, vedere [il riquadro delimitatore in Mixed Reality Toolkit-Unity.](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)**</span><span class="sxs-lookup"><span data-stu-id="3aaf9-134">**For Unity app development, see [Bounding box in the Mixed Reality Toolkit-Unity.](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)**</span></span>
-
-<br>
-
----
-
-## <a name="what-is-the-app-bar"></a><span data-ttu-id="3aaf9-135">Che cos'è la barra dell'app?</span><span class="sxs-lookup"><span data-stu-id="3aaf9-135">What is the App bar?</span></span>
-
-<span data-ttu-id="3aaf9-136">La barra dell'app è un menu a livello di oggetto contenente una serie di pulsanti visualizzati sul bordo inferiore dei limiti di un ologramma.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-136">The App bar is a object-level menu containing a series of buttons that displays on the bottom edge of a hologram's bounds.</span></span> <span data-ttu-id="3aaf9-137">Questo modello viene in genere usato per offrire agli utenti la possibilità di rimuovere e modificare gli ologrammi.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-137">This pattern is commonly used to give users the ability to remove and adjust holograms.</span></span> <span data-ttu-id="3aaf9-138">La barra dell'app è stata progettata principalmente per gestire gli oggetti posizionati nell'ambiente di un utente.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-138">The App bar was designed primarily as a way to manage placed objects in a user's environment.</span></span> <span data-ttu-id="3aaf9-139">Insieme al rettangolo di delimitazione, un utente ha il controllo completo sulla posizione e sulla modalità di orientamento degli oggetti in realtà mista.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-139">Coupled with the bounding box, a user has full control over where and how objects are oriented in mixed reality.</span></span>
-
-:::row:::
-    :::column:::
-        ### <a name="the-app-bar-follows-the-userbr"></a><span data-ttu-id="3aaf9-140">La barra dell'app segue l'utente</span><span class="sxs-lookup"><span data-stu-id="3aaf9-140">The App bar follows the user</span></span><br>
-        <span data-ttu-id="3aaf9-141">Poiché questo modello viene usato con oggetti bloccati dal mondo, quando un utente si sposta intorno all'oggetto, la barra dell'app verrà sempre visualizzata sul lato degli oggetti più vicino all'utente.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-141">Since this pattern is used with objects that are world locked, as a user moves around the object the App bar will always display on the objects' side closest to the user.</span></span> <span data-ttu-id="3aaf9-142">Sebbene questo non sia il tabellone, ottiene lo stesso risultato. impedire la posizione di un utente per occludere o bloccare la funzionalità che altrimenti sarebbe disponibile da una posizione diversa nell'ambiente.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-142">While this isn't billboarding, it effectively achieves the same result; preventing a user's position to occlude or block functionality that would otherwise be available from a different location in their environment.</span></span> <br>
-        <br>
-        <span data-ttu-id="3aaf9-143">*Ciclo video: aggirare un ologramma, la barra dell'app segue*</span><span class="sxs-lookup"><span data-stu-id="3aaf9-143">*Video loop: Walking around a hologram, the App bar follows*</span></span>
-    :::column-end:::
-        :::column:::
-        <span data-ttu-id="3aaf9-144">![space](images/spacer-20x582.png)</span><span class="sxs-lookup"><span data-stu-id="3aaf9-144">![space](images/spacer-20x582.png)</span></span><br>
-       <span data-ttu-id="3aaf9-145">![Aggirare un ologramma.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-145">![Walking around a hologram.</span></span> <span data-ttu-id="3aaf9-146">Segue la barra dell'app.](images/HoloLens2_AppBarFollowing.gif)</span><span class="sxs-lookup"><span data-stu-id="3aaf9-146">The App bar follows.](images/HoloLens2_AppBarFollowing.gif)</span></span><br>
-    :::column-end:::
-:::row-end:::
-
-<br>
-
-
-## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a><span data-ttu-id="3aaf9-147">Rettangolo di delimitazione in MRTK (Mixed Reality Toolkit) per Unity</span><span class="sxs-lookup"><span data-stu-id="3aaf9-147">Bounding box in MRTK (Mixed Reality Toolkit) for Unity</span></span>
-<span data-ttu-id="3aaf9-148">**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornisce script e prefabbricati per il rettangolo di delimitazione e la barra dell'app.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-148">**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides scripts and prefabs for the Bounding box and App bar.</span></span> <span data-ttu-id="3aaf9-149">È possibile aggiungere un rettangolo di delimitazione semplicemente assegnando lo script BoundingBox.cs su qualsiasi oggetto.</span><span class="sxs-lookup"><span data-stu-id="3aaf9-149">You can add a Bounding box by simply assigning the BoundingBox.cs script onto any object.</span></span>
-
-* [<span data-ttu-id="3aaf9-150">MRTK-rettangolo di delimitazione</span><span class="sxs-lookup"><span data-stu-id="3aaf9-150">MRTK - Bounding Box</span></span>](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)
-
+<span data-ttu-id="c5176-134">**Per lo sviluppo di app Unity, vedere [il riquadro delimitatore in Mixed Reality Toolkit-Unity.](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)**</span><span class="sxs-lookup"><span data-stu-id="c5176-134">**For Unity app development, see [Bounding box in the Mixed Reality Toolkit-Unity.](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)**</span></span>
 
 <br>
 
 ---
 
+## <a name="what-is-the-app-bar"></a><span data-ttu-id="c5176-135">Che cos'è la barra dell'app?</span><span class="sxs-lookup"><span data-stu-id="c5176-135">What is the App bar?</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="3aaf9-151">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="3aaf9-151">See also</span></span>
+<span data-ttu-id="c5176-136">La barra dell'app è un menu a livello di oggetto che contiene una serie di pulsanti visualizzati sul bordo inferiore dei limiti di un ologramma.</span><span class="sxs-lookup"><span data-stu-id="c5176-136">The App bar is an object-level menu, which contains a series of buttons displayed on the bottom edge of a hologram's bounds.</span></span> <span data-ttu-id="c5176-137">Questo modello viene in genere usato per consentire agli utenti di rimuovere e modificare gli ologrammi.</span><span class="sxs-lookup"><span data-stu-id="c5176-137">This pattern is commonly used to let users remove and adjust holograms.</span></span> <span data-ttu-id="c5176-138">La barra dell'app è stata progettata principalmente per gestire gli oggetti posizionati nell'ambiente di un utente.</span><span class="sxs-lookup"><span data-stu-id="c5176-138">The App bar was designed primarily as a way to manage placed objects in a user's environment.</span></span> <span data-ttu-id="c5176-139">Insieme al rettangolo di delimitazione, un utente ha il controllo completo sulla posizione e sulla modalità di orientamento degli oggetti in realtà mista.</span><span class="sxs-lookup"><span data-stu-id="c5176-139">Coupled with the bounding box, a user has full control over where and how objects are oriented in mixed reality.</span></span>
 
-* [<span data-ttu-id="3aaf9-152">Cursori</span><span class="sxs-lookup"><span data-stu-id="3aaf9-152">Cursors</span></span>](cursors.md)
-* [<span data-ttu-id="3aaf9-153">Raggio della mano</span><span class="sxs-lookup"><span data-stu-id="3aaf9-153">Hand ray</span></span>](point-and-commit.md)
-* [<span data-ttu-id="3aaf9-154">Button</span><span class="sxs-lookup"><span data-stu-id="3aaf9-154">Button</span></span>](button.md)
-* [<span data-ttu-id="3aaf9-155">Oggetto che supporta interazioni</span><span class="sxs-lookup"><span data-stu-id="3aaf9-155">Interactable object</span></span>](interactable-object.md)
-* [<span data-ttu-id="3aaf9-156">Rettangolo di selezione e barra dell'app</span><span class="sxs-lookup"><span data-stu-id="3aaf9-156">Bounding box and App bar</span></span>](app-bar-and-bounding-box.md)
-* [<span data-ttu-id="3aaf9-157">Manipolazione</span><span class="sxs-lookup"><span data-stu-id="3aaf9-157">Manipulation</span></span>](direct-manipulation.md)
-* [<span data-ttu-id="3aaf9-158">Menu a mano</span><span class="sxs-lookup"><span data-stu-id="3aaf9-158">Hand menu</span></span>](hand-menu.md)
-* [<span data-ttu-id="3aaf9-159">Menu adiacente</span><span class="sxs-lookup"><span data-stu-id="3aaf9-159">Near menu</span></span>](near-menu.md)
-* [<span data-ttu-id="3aaf9-160">Raccolta di oggetti</span><span class="sxs-lookup"><span data-stu-id="3aaf9-160">Object collection</span></span>](object-collection.md)
-* [<span data-ttu-id="3aaf9-161">Comando vocale</span><span class="sxs-lookup"><span data-stu-id="3aaf9-161">Voice command</span></span>](voice-input.md)
-* [<span data-ttu-id="3aaf9-162">Tastiera</span><span class="sxs-lookup"><span data-stu-id="3aaf9-162">Keyboard</span></span>](keyboard.md)
-* [<span data-ttu-id="3aaf9-163">Descrizione comando</span><span class="sxs-lookup"><span data-stu-id="3aaf9-163">Tooltip</span></span>](tooltip.md)
-* [<span data-ttu-id="3aaf9-164">Slate</span><span class="sxs-lookup"><span data-stu-id="3aaf9-164">Slate</span></span>](slate.md)
-* [<span data-ttu-id="3aaf9-165">Dispositivo di scorrimento</span><span class="sxs-lookup"><span data-stu-id="3aaf9-165">Slider</span></span>](slider.md)
-* [<span data-ttu-id="3aaf9-166">Shader</span><span class="sxs-lookup"><span data-stu-id="3aaf9-166">Shader</span></span>](shader.md)
-* [<span data-ttu-id="3aaf9-167">Billboarding e tag-along</span><span class="sxs-lookup"><span data-stu-id="3aaf9-167">Billboarding and tag-along</span></span>](billboarding-and-tag-along.md)
-* [<span data-ttu-id="3aaf9-168">Visualizzazione dello stato</span><span class="sxs-lookup"><span data-stu-id="3aaf9-168">Displaying progress</span></span>](progress.md)
-* [<span data-ttu-id="3aaf9-169">Magnetismo di superficie</span><span class="sxs-lookup"><span data-stu-id="3aaf9-169">Surface magnetism</span></span>](surface-magnetism.md)
+:::row:::
+    :::column:::
+        ### <a name="the-app-bar-follows-the-userbr"></a><span data-ttu-id="c5176-140">La barra dell'app segue l'utente</span><span class="sxs-lookup"><span data-stu-id="c5176-140">The App bar follows the user</span></span><br>
+        <span data-ttu-id="c5176-141">Poiché questo modello viene usato con oggetti bloccati dal mondo, quando un utente si sposta intorno all'oggetto, la barra dell'app verrà sempre visualizzata sul lato degli oggetti più vicino all'utente.</span><span class="sxs-lookup"><span data-stu-id="c5176-141">Since this pattern is used with objects that are world locked, as a user moves around the object the App bar will always display on the objects' side closest to the user.</span></span> <span data-ttu-id="c5176-142">Anche se non si tratta tecnicamente di un tabellone, questa funzionalità consente di ottenere lo stesso risultato.</span><span class="sxs-lookup"><span data-stu-id="c5176-142">While not technically billboarding, this feature effectively achieves the same result.</span></span> <span data-ttu-id="c5176-143">Impedire la posizione di un utente per occludere o bloccare la funzionalità che altrimenti sarebbe disponibile da una posizione diversa nell'ambiente.</span><span class="sxs-lookup"><span data-stu-id="c5176-143">Preventing a user's position to occlude or block functionality that would otherwise be available from a different location in their environment.</span></span> <br>
+        <br>
+        <span data-ttu-id="c5176-144">*Ciclo video: aggirare un ologramma, la barra dell'app segue*</span><span class="sxs-lookup"><span data-stu-id="c5176-144">*Video loop: Walking around a hologram, the App bar follows*</span></span>
+    :::column-end:::
+        :::column:::
+        <span data-ttu-id="c5176-145">![space](images/spacer-20x582.png)</span><span class="sxs-lookup"><span data-stu-id="c5176-145">![space](images/spacer-20x582.png)</span></span><br>
+       <span data-ttu-id="c5176-146">![Aggirare un ologramma.</span><span class="sxs-lookup"><span data-stu-id="c5176-146">![Walking around a hologram.</span></span> <span data-ttu-id="c5176-147">Segue la barra dell'app.](images/HoloLens2_AppBarFollowing.gif)</span><span class="sxs-lookup"><span data-stu-id="c5176-147">The App bar follows.](images/HoloLens2_AppBarFollowing.gif)</span></span><br>
+    :::column-end:::
+:::row-end:::
+
+<br>
+
+
+## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a><span data-ttu-id="c5176-148">Rettangolo di delimitazione in MRTK (Mixed Reality Toolkit) per Unity</span><span class="sxs-lookup"><span data-stu-id="c5176-148">Bounding box in MRTK (Mixed Reality Toolkit) for Unity</span></span>
+<span data-ttu-id="c5176-149">**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornisce script e prefabbricati per il rettangolo di delimitazione e la barra dell'app.</span><span class="sxs-lookup"><span data-stu-id="c5176-149">**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides scripts and prefabs for the Bounding box and App bar.</span></span> <span data-ttu-id="c5176-150">È possibile aggiungere un rettangolo di delimitazione assegnando lo script BoundingBox.cs su qualsiasi oggetto.</span><span class="sxs-lookup"><span data-stu-id="c5176-150">You can add a Bounding box by assigning the BoundingBox.cs script onto any object.</span></span>
+
+* [<span data-ttu-id="c5176-151">MRTK-rettangolo di delimitazione</span><span class="sxs-lookup"><span data-stu-id="c5176-151">MRTK - Bounding Box</span></span>](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)
+
+
+<br>
+
+---
+
+
+## <a name="see-also"></a><span data-ttu-id="c5176-152">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="c5176-152">See also</span></span>
+
+* [<span data-ttu-id="c5176-153">Cursori</span><span class="sxs-lookup"><span data-stu-id="c5176-153">Cursors</span></span>](cursors.md)
+* [<span data-ttu-id="c5176-154">Raggio della mano</span><span class="sxs-lookup"><span data-stu-id="c5176-154">Hand ray</span></span>](point-and-commit.md)
+* [<span data-ttu-id="c5176-155">Button</span><span class="sxs-lookup"><span data-stu-id="c5176-155">Button</span></span>](button.md)
+* [<span data-ttu-id="c5176-156">Oggetto che supporta interazioni</span><span class="sxs-lookup"><span data-stu-id="c5176-156">Interactable object</span></span>](interactable-object.md)
+* [<span data-ttu-id="c5176-157">Rettangolo di selezione e barra dell'app</span><span class="sxs-lookup"><span data-stu-id="c5176-157">Bounding box and App bar</span></span>](app-bar-and-bounding-box.md)
+* [<span data-ttu-id="c5176-158">Manipolazione</span><span class="sxs-lookup"><span data-stu-id="c5176-158">Manipulation</span></span>](direct-manipulation.md)
+* [<span data-ttu-id="c5176-159">Menu a mano</span><span class="sxs-lookup"><span data-stu-id="c5176-159">Hand menu</span></span>](hand-menu.md)
+* [<span data-ttu-id="c5176-160">Menu adiacente</span><span class="sxs-lookup"><span data-stu-id="c5176-160">Near menu</span></span>](near-menu.md)
+* [<span data-ttu-id="c5176-161">Raccolta di oggetti</span><span class="sxs-lookup"><span data-stu-id="c5176-161">Object collection</span></span>](object-collection.md)
+* [<span data-ttu-id="c5176-162">Comando vocale</span><span class="sxs-lookup"><span data-stu-id="c5176-162">Voice command</span></span>](voice-input.md)
+* [<span data-ttu-id="c5176-163">Tastiera</span><span class="sxs-lookup"><span data-stu-id="c5176-163">Keyboard</span></span>](keyboard.md)
+* [<span data-ttu-id="c5176-164">Descrizione comando</span><span class="sxs-lookup"><span data-stu-id="c5176-164">Tooltip</span></span>](tooltip.md)
+* [<span data-ttu-id="c5176-165">Slate</span><span class="sxs-lookup"><span data-stu-id="c5176-165">Slate</span></span>](slate.md)
+* [<span data-ttu-id="c5176-166">Dispositivo di scorrimento</span><span class="sxs-lookup"><span data-stu-id="c5176-166">Slider</span></span>](slider.md)
+* [<span data-ttu-id="c5176-167">Shader</span><span class="sxs-lookup"><span data-stu-id="c5176-167">Shader</span></span>](shader.md)
+* [<span data-ttu-id="c5176-168">Billboarding e tag-along</span><span class="sxs-lookup"><span data-stu-id="c5176-168">Billboarding and tag-along</span></span>](billboarding-and-tag-along.md)
+* [<span data-ttu-id="c5176-169">Visualizzazione dello stato</span><span class="sxs-lookup"><span data-stu-id="c5176-169">Displaying progress</span></span>](progress.md)
+* [<span data-ttu-id="c5176-170">Magnetismo di superficie</span><span class="sxs-lookup"><span data-stu-id="c5176-170">Surface magnetism</span></span>](surface-magnetism.md)
