@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, realtà mista, MRTK, Toolkit per realtà mista, realtà aumentata, realtà virtuale, cuffie con realtà mista, informazioni, esercitazione, introduzione
-ms.openlocfilehash: 9e7f59c57d409d61df73e6d07659bf6c7242202c
-ms.sourcegitcommit: 5784336a780486d05db6a627839efe47f08fac36
+ms.openlocfilehash: 7d28dd50e111da4b010bcae699b7451d967e8f35
+ms.sourcegitcommit: 653ddcae6d7a1617c89da1153fa8e7b482ef6818
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97880601"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97905293"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Uso del plug-in OpenXR per la realtà mista per Unity
 
@@ -126,7 +126,11 @@ Per usare uno o più degli esempi, installare [ARFoundation 4.0 +](https://docs.
 
 Ora che il progetto è stato configurato per OpenXR ed è possibile accedere agli esempi, vedere quali [funzionalità](openxr-supported-features.md) sono attualmente supportate nel plug-in OpenXR.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="have-feedback"></a>Inviare commenti e suggerimenti?
+
+OpenXR è ancora in fase di sperimentazione, quindi saremmo lieti di ricevere commenti e suggerimenti per aiutarti a migliorarlo. Ci troviamo nei [Forum di Unity](https://aka.ms/unityforums) contrassegnando il post del forum con **Microsoft**  +  **OpenXR** e **HoloLens 2** o la **realtà mista di Windows**.
+
+## <a name="see-also"></a>Vedere anche
 
 * [Configurazione del progetto senza MRTK](configure-unity-project.md)
 * [Impostazioni consigliate per Unity](recommended-settings-for-unity.md)
