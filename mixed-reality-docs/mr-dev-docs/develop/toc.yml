@@ -140,7 +140,7 @@
               href: unity/tutorials/holograms-220.md
             - name: 'MR Spatial 230: Mapping spaziale'
               href: unity/tutorials/holograms-230.md
-            - name: 'MR Sharing 240: Dispositivi HoloLens multipli'
+            - name: 'MR Sharing 240: Più dispositivi HoloLens'
               href: unity/tutorials/holograms-240.md
         - name: Esercitazioni per realtà mista e servizi di Azure
           items:
