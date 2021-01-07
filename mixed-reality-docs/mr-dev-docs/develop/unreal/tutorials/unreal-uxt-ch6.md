@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, esercitazione, guida introduttiva, mrtk, uxt, UX Tools, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 7f6f501a5e2cde9fdb6aa3ba1aa973a4ab697fd8
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 83d8068ca8ce73f23edb85cf9044db5409105380
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010547"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865396"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. Creazione di pacchetti e distribuzione nel dispositivo o nell'emulatore
 
@@ -30,6 +30,9 @@ Nell'esercitazione precedente hai aggiunto un semplice pulsante che riporta il p
 Se usi questa strategia per l'app di scacchi, dovrai eseguire alcuni passaggi:
 
 1.  Installa **Holographic Remoting Player** dal Microsoft Store in HoloLens 2 ed esegui l'app. Prendere nota dell'indirizzo IP visualizzato nell'app.
+    * Passare a **Edit > Project Settings** (Modifica > Impostazioni progetto) e verificare che l'opzione **Default RHI** (RHI predefinito) di Windows sia impostata su **Default** (Predefinito) o **D3D11**:
+
+![RHI predefinito](../images/unreal/performance-recommendations-img-09.png)
 
 2.  Nell'editor di Unity passare a **Edit > Project Settings** (Modifica > Impostazioni progetto) e selezionare **Enable Remoting** (Abilita comunicazione remota) nella sezione **Holographic Remoting**.
 

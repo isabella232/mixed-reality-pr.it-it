@@ -7,12 +7,12 @@ ms.date: 04/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realtà mista, Sguardo fisso, selezione della destinazione con lo sguardo, interazione, progettazione, hololens, MMR, multimodale, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens
-ms.openlocfilehash: a4b4c8fed9bb74b12bfa4390e1675acab44b3eec
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 37ac7475172977c8741c17817568cc9b5ad2a4e5
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703167"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847295"
 ---
 # <a name="introducing-instinctual-interactions"></a>Introduzione alle interazioni istintive
 
@@ -20,14 +20,11 @@ ms.locfileid: "94703167"
 
 La filosofia delle interazioni semplici e istintive è alla base di tutta la piattaforma di realtà mista. Abbiamo adottato tre accorgimenti per consentire ai progettisti e agli sviluppatori di applicazioni di fornire ai clienti interazioni facili e intuitive. 
 
-In primo luogo, ci siamo assicurati che i sensori e le tecnologie di input, tra cui il tracciamento oculare e delle mani e l'input in linguaggio naturale, si combinino in perfetti modelli di interazione multimodale.  
-In base alle nostre ricerche, le attività di progettazione e sviluppo all'interno di un framework multimodale (e non basate su singoli input) sono la chiave di volta per creare esperienze istintive.
+Per prima cosa, abbiamo verificato che i sensori e le tecnologie di input si combinino in modelli di interazione multimodale. Questi modelli di interazione includono tracciamento della mano e oculare insieme all'input in linguaggio naturale. In base alle nostre ricerche, le attività di progettazione e sviluppo all'interno di un framework multimodale (e non basate su singoli input) sono la chiave di volta per creare esperienze istintive.
 
-In secondo luogo, constatiamo che molti sviluppatori destinano le loro applicazioni a più dispositivi HoloLens, come HoloLens 2 e HoloLens (prima generazione) oppure HoloLens e VR.  
-Abbiamo quindi progettato modelli di interazione in grado di funzionare in tutti i dispositivi, anche se la tecnologia di input varia da uno all'altro.  
-Ad esempio, per l'interazione da lontano con un visore VR immersive di Windows dotato di un controller 6DoF e per l'interazione da lontano con un dispositivo HoloLens 2 vengono usati gli stessi inviti e modelli, semplificando lo sviluppo di applicazioni per più dispositivi e assicurando interazioni più naturali con gli utenti. 
+In secondo luogo, constatiamo che molti sviluppatori destinano le loro applicazioni a più dispositivi HoloLens, come HoloLens 2 e HoloLens (prima generazione) oppure HoloLens e VR. Abbiamo quindi progettato modelli di interazione in grado di funzionare in tutti i dispositivi, anche se la tecnologia di input varia da uno all'altro. Ad esempio, per l'interazione da lontano con un visore VR immersive di Windows dotato di un controller 6DoF e con un dispositivo HoloLens 2 vengono usati gli stessi inviti e modelli. Questo consente di semplificare lo sviluppo di applicazioni per più dispositivi e assicura interazioni più naturali con gli utenti. 
 
-Anche se riconosciamo che possono esistere migliaia di interazioni efficaci, coinvolgenti e magiche nella realtà mista, abbiamo constatato che l'utilizzo intenzionale di un unico modello di interazione end-to-end in un'applicazione è il modo migliore per garantire agli utenti risultati ottimali e un'esperienza eccezionale. A questo scopo, in queste indicazioni relative all'interazione abbiamo incluso tre aspetti:
+Anche se riconosciamo che possono esistere migliaia di interazioni efficaci, coinvolgenti e magiche nella realtà mista, abbiamo constatato che l'uso intenzionale di un unico modello di interazione in un'applicazione è il modo migliore per garantire agli utenti risultati ottimali e un'esperienza eccezionale. A questo scopo, in queste indicazioni relative all'interazione abbiamo incluso tre aspetti:
 * Materiale specifico incentrato sui tre principali modelli di interazione e sui componenti e schemi necessari per ciascun modello.
 * Istruzioni supplementari su altri vantaggi offerti dalla piattaforma.
 * Indicazioni di carattere generale, utili per selezionare il modello di interazione appropriato per uno scenario di sviluppo specifico.
@@ -66,18 +63,18 @@ La classifica seguente offre una panoramica semplificata. Informazioni dettaglia
     </tr>
     <tr>
         <td><a href="gaze-and-commit.md">Sguardo e commit</a></td>
-        <td>Esperienze di tipo click-through, ad esempio presentazioni 3D e demo.</td>
+        <td>Esperienze click-through, ad esempio presentazioni 3D e demo.</td>
         <td>È necessario eseguire il training in dispositivi HMD, non in dispositivi mobili. Ideale per controller accessibili. Ideale per HoloLens (prima generazione).</td>
         <td>HoloLens 2<br>HoloLens (prima generazione)<br>Visori VR immersive<br>AR per dispositivi mobili</td>
     </tr>
 </table>
 <br>
 
-Per evitare che siano presenti lacune nell'esperienza di interazione dell'utente, è preferibile seguire le indicazioni per un singolo modello dall'inizio alla fine.
+Per evitare lacune nell'esperienza di interazione dell'utente, è preferibile seguire le indicazioni per un singolo modello dall'inizio alla fine.
 
 Le sezioni seguenti illustrano la procedura di selezione e implementazione di uno di questi modelli di interazione.  
  
-### <a name="by-the-end-of-this-page-you-will-understand-our-guidance-on"></a>Al termine di questa pagina, avrai appreso a:
+### <a name="by-the-end-of-this-page-youll-understand-our-guidance-on"></a>Al termine di questa pagina, si sarà appreso quanto segue:
  
 * Scegliere un modello di interazione per il cliente
 * Implementare il modello di interazione
@@ -91,7 +88,7 @@ In genere, gli sviluppatori e gli autori valutano tutti i tipi di interazione ch
 
 ### <a name="why-follow-this-guidance"></a>Perché seguire le indicazioni?
 
-* I nostri modelli di interazione sono testati in base a criteri obiettivi e soggettivi, ad esempio lo sforzo fisico e cognitivo, l'intuitività e la capacità di apprendimento. 
+* I nostri modelli di interazione sono testati in base a criteri oggettivi e soggettivi, tra cui lo sforzo fisico e cognitivo, l'intuitività e la capacità di apprendimento. 
 * Poiché esistono diversi tipi di interazione, è possibile che anche gli inviti audio/video e il comportamento degli oggetti siano diversi da un modello di interazione all'altro.  
 * Combinando parti di diversi modelli di interazione si rischia di ottenere inviti concorrenti, ad esempio raggi della mano simultanei e un cursore di puntamento con la testa. Tutto questo può inondare l'utente di troppe informazioni e confonderlo.
 
@@ -159,9 +156,9 @@ R:  Per tutti i controller non tracciati è consigliabile usare il modello di pu
 R:  Se non è necessario usare molti controlli di interfaccia, il modello di puntamento con la testa e commit è un'opzione praticabile che consente agli utenti di non doversi preoccupare della selezione della destinazione. 
  
 7.  D:  Gli utenti usano sia i visori VR immersive di HoloLens (prima generazione) sia quelli di HoloLens 2/Windows Mixed Reality?<br><br>
-R:  Poiché quello di puntamento con la testa e commit è il modello di interazione per HoloLens (prima generazione), è consigliabile che gli autori che supportano HoloLens (prima generazione) usino questo modello per qualsiasi funzionalità o modalità che gli utenti possono sperimentare con un visore VR HoloLens (prima generazione). Per informazioni dettagliate sull'eccezionale esperienza offerta da più generazioni di HoloLens, vedere la prossima sezione relativa al *passaggio da un modello di interazione all'altro*.
+R:  Poiché quello di puntamento con la testa e commit è il modello di interazione per HoloLens (prima generazione), è consigliabile che gli autori che supportano HoloLens (prima generazione) usino questo modello per qualsiasi funzionalità o modalità che gli utenti possono sperimentare con un visore VR HoloLens (prima generazione). Per informazioni dettagliate su come offrire un'esperienza eccezionale per più generazioni di HoloLens, vedere la prossima sezione relativa al *passaggio da un modello di interazione all'altro*.
  
-8.  D: Quali sono le indicazioni per gli utenti che in genere usano dispositivi mobili, muovendosi in uno spazio di grandi dimensioni o spostandosi da uno spazio all'altro, e per quelli che tendono a operare in un unico spazio?<br><br>
+8.  D: Quali sono le indicazioni per gli utenti che usano dispositivi mobili, muovendosi in uno spazio di grandi dimensioni o spostandosi da uno spazio all'altro, e per quelli che tendono a operare in un unico spazio?<br><br>
 R:  Tutti i modelli di interazione sono adatti a questi utenti.  
 
 > [!NOTE]
@@ -169,8 +166,7 @@ R:  Tutti i modelli di interazione sono adatti a questi utenti.
 
 
 ## <a name="transitioning-interaction-models"></a>Passaggio da un modello di interazione all'altro
-Per alcuni casi d'uso può essere necessario impiegare più modelli di interazione. Ad esempio, per il flusso di creazione di un'applicazione viene usato il modello di interazione _"mani e controller del movimento"_ , ma per i tecnici sul campo è preferibile adottare una modalità a mani libere.
-Se per un'esperienza sono necessari più modelli di interazione, tieni presente che molti utenti possono avere difficoltà a passare da un modello all'altro, in particolare quelli che hanno scarsa familiarità con la realtà mista.
+Per alcuni casi d'uso può essere necessario impiegare più modelli di interazione. Ad esempio, per il flusso di creazione di un'applicazione viene usato il modello di interazione _"mani e controller del movimento"_ , ma per i tecnici sul campo è preferibile adottare una modalità a mani libere. Se per un'esperienza sono necessari più modelli di interazione, gli utenti possono avere difficoltà a passare da un modello all'altro, in particolare gli utenti che hanno scarsa familiarità con la realtà mista.
 
 > [!Note]
 > Continueremo a fornire altre indicazioni che saranno rese disponibili per sviluppatori e progettisti per informarli su come, quando e perché usare più modelli di interazione di realtà mista.

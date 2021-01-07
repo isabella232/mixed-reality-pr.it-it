@@ -1,36 +1,38 @@
 ---
 title: Sguardo fisso e attesa
-description: Panoramica del modello di input sguardo fisso e attesa
+description: Panoramica del modello di input sguardo fisso e attesa.
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Tracciamento oculare, Realtà mista, Input, Sguardo fisso, Selezione oculare della destinazione, HoloLens 2, Selezione con gli occhi, Attesa, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, progettazione
-ms.openlocfilehash: 2d17b93b09b204e6ebb94a51bcc709ee043b5018
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: bf9ad97790093a08156660bfd6e33d16c06e6387
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702307"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847813"
 ---
 # <a name="eye-gaze-and-dwell"></a>Sguardo fisso e attesa
 
 Il modello di interazione _"sguardo fisso e attesa"_ è un caso speciale del modello di interazione [sguardo fisso e commit](gaze-and-commit.md):
-1. Guarda una destinazione e 
-2. Conferma l'intenzione di selezionare tale destinazione effettuando esplicitamente un input secondario: _continua semplicemente a guardare la destinazione che intendi selezionare_.
+1. Guardare una destinazione e 
+2. Confermare l'intenzione di selezionare tale destinazione usando esplicitamente un input secondario: _continua semplicemente a guardare la destinazione che intendi selezionare_.
 
 ## <a name="advantages-of-the-eye-gaze-and-dwell-interaction-model"></a>Vantaggi del modello di interazione "sguardo fisso e attesa" 
+
 Se le mani sono già occupate per eseguire un'attività o per maneggiare strumenti, potrebbe non essere possibile usarle per interagire con gli ologrammi.
-Un'alternativa di interazione senza usare le mani per la selezione degli ologrammi è costituita dal modello _"sguardo fisso e attesa"_ . Il vantaggio di questo approccio consiste nel fatto che anche gli utenti fortemente ostacolati nei movimenti, che potrebbero non essere in grado di ruotare completamente la testa o il corpo, possono interagire con gli ologrammi (ad esempio, in un ambiente di lavoro molto angusto).
+Un'alternativa di interazione senza usare le mani per la selezione degli ologrammi è costituita dal modello _"sguardo fisso e attesa"_ . Con questo approccio anche gli utenti fortemente ostacolati nei movimenti, che potrebbero non essere in grado di ruotare completamente la testa o il corpo, possono interagire con gli ologrammi (ad esempio, in un ambiente di lavoro molto angusto).
 L'utente fissa semplicemente lo sguardo sulla destinazione da selezionare e visualizza un feedback di attesa diverso per indicare il processo.
 
-
 ## <a name="challenges-of-the-eye-gaze-and-dwell-interaction-model"></a>Svantaggi del modello di interazione "sguardo fisso e attesa"
-In generale, è consigliabile usare le attivazioni basate sull'attesa come ultima possibilità qualora non sia possibile usare l'input tramite voce o mani. La scelta del tempo di attesa infatti può essere piuttosto complessa. Gli utenti inesperti sono a proprio agio con tempi di attesa più lunghi, mentre gli utenti esperti vogliono esplorare in modo rapido ed efficiente le proprie esperienze. Questa esigenza comporta la difficoltà di adattare il tempo di attesa in base alle esigenze specifiche di un utente.
+
+In generale, è consigliabile usare le attivazioni basate sull'attesa come ultima possibilità qualora non sia possibile usare l'input tramite voce o mani. La scelta del tempo di attesa infatti può essere complessa. Gli utenti inesperti sono a proprio agio con tempi di attesa più lunghi, mentre gli utenti esperti vogliono esplorare in modo rapido ed efficiente le proprie esperienze. Questa esigenza comporta la difficoltà di adattare il tempo di attesa in base alle esigenze specifiche di un utente.
 Se il tempo di attesa è troppo breve, è possibile che l'utente sia sopraffatto dalla presenza continua di ologrammi che reagiscono al suo sguardo fisso. Se il tempo di attesa è troppo lungo, l'esperienza può risultare troppo lenta in quanto l'utente deve fissare lo sguardo sulle destinazioni per un lungo periodo di tempo interrompendo il flusso del lavoro.
 
 ## <a name="design-recommendations"></a>Suggerimenti per la progettazione
+
 È consigliabile usare un approccio a due stati per il feedback dell'attesa:
 1. *Ritardo iniziale*: quando l'utente inizia a guardare una destinazione, non dovrebbe prodursi alcuna azione per evitare un'esperienza utente spiacevole e schiacciante. Viene invece avviato un timer per rilevare se l'utente stia intenzionalmente fissando la destinazione o semplicemente guardandola.
 Si consiglia un tempo di inizio di 150-250 ms in una determinata prossimità (differenza tra concentrare lo sguardo su una destinazione di grandi dimensioni e guardarsi intorno).  

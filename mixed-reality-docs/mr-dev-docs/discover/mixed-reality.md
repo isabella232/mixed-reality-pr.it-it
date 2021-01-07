@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: article
 keywords: Realtà mista, olografica, AR, VR, MR, XR, realtà aumentata, realtà virtuale, spiegazione, case study, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata
 ms.localizationpriority: high
-ms.openlocfilehash: 5f4e41c04206eb5ca1a0d2e0dac914a1b3b1052d
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 7f06909b12137598649d113697651277751bcb22
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703127"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757699"
 ---
 # <a name="what-is-mixed-reality"></a>Che cos'è Realtà mista?
 
@@ -34,7 +34,7 @@ La realtà mista è una fusione tra mondo fisico e mondo digitale che rende poss
 
 Negli ultimi decenni è stata approfondita sempre di più la relazione tra input umano e del computer, portando a un disciplina nota come *interazione uomo-computer* o HCI L'input umano avviene attraverso diversi mezzi, tra cui tastiere, mouse, tocco, input penna, voce e anche il tracciamento dello scheletro con Kinect.
 
-I miglioramenti apportati ai sensori e all'elaborazione stanno dando vita a una nuova area di input computer dagli ambienti. L'interazione tra computer e ambienti è essenzialmente una conoscenza o *percezione* ambientale ed è proprio per questo motivo che le API di Windows che rivelano informazioni ambientali sono chiamate [API di percezione](https://docs.microsoft.com/uwp/api/Windows.Perception). L'input ambientale acquisisce elementi come la posizione di una persona nell'ambiente ([tracciamento del movimento della testa](../design/coordinate-systems.md)), le superfici e i confini ([mapping spaziale](../design/spatial-mapping.md) e [conoscenza della scena](../design/scene-understanding.md)), l'illuminazione ambientale, l'audio ambientale, il riconoscimento degli oggetti e la posizione.
+I miglioramenti apportati ai sensori e all'elaborazione stanno creando nuove aree di input computer dagli ambienti. L'interazione tra computer e ambienti è una conoscenza o *percezione* ambientale ed è proprio per questo motivo che le API di Windows che rivelano informazioni ambientali sono chiamate [API di percezione](https://docs.microsoft.com/uwp/api/Windows.Perception). L'input ambientale acquisisce elementi come la posizione di una persona nell'ambiente ([tracciamento del movimento della testa](../design/coordinate-systems.md)), le superfici e i confini ([mapping spaziale](../design/spatial-mapping.md) e [conoscenza della scena](../design/scene-understanding.md)), l'illuminazione ambientale, l'audio ambientale, il riconoscimento degli oggetti e la posizione.
 
 <br>
 
@@ -43,7 +43,7 @@ I miglioramenti apportati ai sensori e all'elaborazione stanno dando vita a una 
 
 <br>
 
-La combinazione di questi tre elementi, **elaborazione del computer, input umano e input ambientale**, consente di creare vere esperienze di realtà mista. Il movimento nel mondo fisico può tradursi in movimento nel mondo digitale. I confini nel mondo fisico possono influenzare le esperienze delle applicazioni, ad esempio le esperienze di gioco, nel mondo digitale. Senza l'input ambientale, non è possibile fondere le esperienze tra realtà fisiche e digitali.<br>
+La combinazione di questi tre elementi, **elaborazione del computer, input umano e input ambientale**, consente di creare vere esperienze di realtà mista. Il movimento nel mondo fisico si traduce in movimento nel mondo digitale. I confini nel mondo fisico influenzano le esperienze delle applicazioni, ad esempio le esperienze di gioco, nel mondo digitale. Senza l'input ambientale, non è possibile fondere le esperienze tra realtà fisiche e digitali.<br>
 
 <br>
 
@@ -66,7 +66,6 @@ La maggior parte dei telefoni cellulari attualmente presenti sul mercato non dis
 * Iniziando dal mondo fisico, si inserisce un oggetto digitale, ad esempio un ologramma, come se fosse presente.
 * Partendo dal mondo fisico, una rappresentazione digitale di un'altra persona, un avatar, mostra la posizione in cui si trovava quando ha lasciato gli appunti. In altre parole, queste sono esperienze che rappresentano la collaborazione asincrona in momenti diversi.
 * Partendo da un mondo digitale, i confini fisici del mondo fisico, ad esempio i muri e i mobili, vengono visualizzati digitalmente all'interno dell'esperienza per aiutare gli utenti a evitare gli oggetti fisici.
-
 
 <br>
 
@@ -100,7 +99,7 @@ Esistono due tipi principali di dispositivi che offrono esperienze Windows Mixed
 > [!NOTE]
 > Il fatto che un dispositivo sia connesso, anche con tethering, a un PC separato (tramite cavo USB o Wi-Fi) o che sia un dispositivo autonomo (senza tethering) non indica se si tratta di un dispositivo olografico o immersive. Le funzionalità che migliorano la mobilità determinano una migliore esperienza e i dispositivi olografici e immersive possono essere sia con che senza tethering.
 
-Il progresso tecnologico è ciò che ha reso possibile le esperienze di realtà mista. Non sono disponibili al momento dispositivi in grado di offrire esperienze che coprono l'intero spettro. Windows 10 offre una piattaforma di realtà mista comune per produttori e sviluppatori di dispositivi. I dispositivi odierni possono supportare una gamma specifica nell'ambito dello spettro della realtà mista e tale gamma si arricchirà con nuovi dispositivi. In futuro i dispositivi olografici diventeranno più immersive e i dispositivi immersive diventeranno più olografici.
+Il progresso tecnologico rende possibili esperienze di realtà mista, ma non sono disponibili al momento dispositivi in grado di offrire esperienze che coprono l'intero spettro. Windows 10 offre una piattaforma di realtà mista comune per produttori e sviluppatori di dispositivi. I dispositivi odierni possono supportare una gamma specifica nell'ambito dello spettro della realtà mista e tale gamma si arricchirà con nuovi dispositivi. In futuro i dispositivi olografici saranno più immersive e i dispositivi immersive saranno più olografici.
 
 <br>
 
@@ -114,7 +113,7 @@ Il progresso tecnologico è ciò che ha reso possibile le esperienze di realtà 
 
 ## <a name="next-discovery-checkpoint"></a>Prossima stazione di scoperta
 
-Se si sta seguendo il [percorso di scoperta](get-started-with-mr.md) definito, è possibile esplorare le nozioni di base della realtà mista. Da qui è possibile passare all'argomento di base successivo: 
+Se si sta seguendo il [percorso di scoperta](get-started-with-mr.md) definito, è possibile esplorare le nozioni di base della realtà mista. Da qui è possibile continuare con l'argomento di base successivo: 
 
 > [!div class="nextstepaction"]
 > [Che cos'è un ologramma?](hologram.md)
