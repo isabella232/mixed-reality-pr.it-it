@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: e55c66599e47abff35b872a494a6afbb48774171
-ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
+ms.openlocfilehash: 8f6ba747c2f336194cb30241dce18bc1138143f2
+ms.sourcegitcommit: b331ec40b1e8869e6a6e7b2e32a03ff68e04b956
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97859520"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97956064"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Ottieni assistenza per la compatibilità dei PC in realtà mista di Windows
 
@@ -27,13 +27,32 @@ Prima di procedere, provare le correzioni più comuni seguenti:
 > * Controllare l'elenco degli [Adapter consigliati](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 > * Aggiornare il driver della grafica selezionando **avvia > impostazioni > aggiorna & sicurezza > Verifica disponibilità aggiornamenti** 
 
+Per contattare il supporto tecnico, è possibile rivolgersi alla [community](https://answers.microsoft.com), [contattare il supporto tecnico](https://support.microsoft.com/contactus/)o esaminare le informazioni per la [risoluzione dei problemi](troubleshooting-windows-mixed-reality.md) .
+
 ## <a name="youre-good-to-go"></a>Si è pronti per iniziare
 
 Bene. Se viene visualizzato il messaggio, il PC può eseguire la realtà mista **di** Windows. Esiste ancora una variazione tra l'hardware e la configurazione del computer, quindi l'esperienza di realtà mista potrebbe non essere la stessa in tutti i PC.
 
 ## <a name="supports-some-features"></a>Supporta alcune funzionalità
 
-Se viene visualizzato il **supporta un** messaggio di funzionalità, il PC può eseguire alcune esperienze di realtà miste di Windows, ma potrebbe non offrire la migliore esperienza possibile. I possibili svantaggi includono la grafica in ritardo, i riscontri delle prestazioni e alcune applicazioni e giochi che non possono essere eseguiti. Sono stati elencati i messaggi che potrebbero essere visualizzati e le operazioni da eseguire su di essi.
+Se viene visualizzato il **supporta un** messaggio di funzionalità, il PC può eseguire alcune esperienze di realtà miste di Windows, ma potrebbe non offrire la migliore esperienza possibile. I possibili svantaggi includono la grafica in ritardo, i riscontri delle prestazioni e alcune applicazioni e giochi che non possono essere eseguiti. Sono stati elencati i messaggi che potrebbero essere visualizzati e le operazioni da eseguire:
+
+* [Questo PC ha una scheda grafica integrata con RAM a canale singolo](#this-pc-has-an-integrated-graphics-card-with-single-channel-ram)
+* [Questo PC ha una configurazione grafica ibrida con un collegamento PCIe non compatibile](#this-pc-has-a-hybrid-graphics-configuration-with-an-incompatible-pcie-link)
+* [Il driver grafico di questo PC potrebbe non funzionare correttamente con la realtà mista di Windows](#this-pcs-graphics-driver-might-not-work-well-with-windows-mixed-reality)
+* [Il processore di questo PC potrebbe non funzionare correttamente con la realtà mista di Windows](#this-pcs-processor-might-not-work-well-with-windows-mixed-reality)
+* [Il PC potrebbe non avere una configurazione USB compatibile](#this-pc-might-not-have-a-compatible-usb-configuration)
+* [Il PC non ha Bluetooth 4,0 per i controller](#this-pc-doesnt-have-bluetooth-40-for-controllers)
+* [A seconda dell'auricolare, potrebbe essere necessario un adattatore Bluetooth per usare i controller di movimento](#depending-on-your-headset-you-may-need-a-bluetooth-adapter-to-use-motion-controllers)
+* [Il PC non dispone di una porta USB autonoma](#this-pc-doesnt-have-a-self-powered-usb-port)
+* [La scheda grafica del PC non funzionerà con la realtà mista di Windows](#this-pcs-graphics-card-wont-work-with-windows-mixed-reality)
+* [Il driver di grafica del PC non funzionerà con la realtà mista di Windows](#this-pcs-graphics-driver-wont-work-with-windows-mixed-reality)
+* [Il processore del PC non funzionerà con la realtà mista di Windows](#this-pcs-processor-wont-work-with-windows-mixed-reality)
+* [Il PC non dispone di spazio su disco sufficiente per eseguire la realtà mista di Windows](#this-pc-doesnt-have-enough-free-disk-space-to-run-windows-mixed-reality)
+* [Questo PC esegue un'edizione di Windows che non supporta la realtà mista di Windows](#this-pc-is-running-an-edition-of-windows-that-doesnt-support-windows-mixed-reality)
+* [Il PC non esegue la versione più recente di Windows 10](#this-pc-isnt-running-the-latest-version-of-windows-10)
+* [Il PC non ha una porta USB 3,0](#this-pc-has-no-usb-30-port)
+* [Non è possibile eseguire questa app tramite Desktop remoto](#you-cant-run-this-app-via-remote-desktop)
 
 ### <a name="this-pc-has-an-integrated-graphics-card-with-single-channel-ram"></a>Questo PC ha una scheda grafica integrata con RAM a canale singolo
 
@@ -161,10 +180,11 @@ Per usare la realtà mista di Windows, è necessario un PC con un monitor connes
 
 Alcune configurazioni hardware possono causare problemi di prestazioni con la realtà mista di Windows. Per problemi quali il caricamento lento, gli oggetti visivi increspati o qualità visiva scadente, provare queste correzioni comuni:
 
-* Chiudere tutte le app aperte in esecuzione sul desktop del PC.
+* Chiudi tutte le app aperte in esecuzione sul desktop del PC
 * Se si usa un adattatore USB-C o DisplayPort per HDMI, provare con un altro. Vedere gli adapter consigliati
-* Se sono presenti monitoraggi aggiuntivi connessi alla scheda grafica del PC, disconnetterli.
-* Provare a scaricare alcune app di realtà miste diverse da Windows Store: alcune possono funzionare meglio con la configurazione del computer.
+* Se sono presenti monitoraggi aggiuntivi connessi alla scheda grafica del PC, disconnetterli
+* Provare a scaricare alcune app di realtà miste diverse da Windows Store: alcune possono funzionare meglio con la configurazione del computer
+* Vedere la [documentazione relativa alle domande sulle prestazioni](performance-questions.md)
 
 Se si verificano ancora problemi di prestazioni, aggiornare le seguenti impostazioni della [realtà mista di Windows](set-up-windows-mixed-reality.md) per un'esperienza utente ottimale:
 
@@ -178,7 +198,7 @@ Se si verificano ancora problemi di prestazioni, aggiornare le seguenti impostaz
 
 ## <a name="working-with-steamvr"></a>Uso di SteamVR
 
-Divertirsi con i giochi di SteamVR è un ottimo modo per sperimentare tutti i prodotti disponibili in VR. Tuttavia, è opportuno assicurarsi di ottenere le migliori prestazioni dal dispositivo immersivo. Dopo l'installazione di [Steam](https://store.steampowered.com/about):
+Divertirsi con i giochi di SteamVR è un ottimo modo per sperimentare tutti i prodotti disponibili in VR. Tuttavia, è opportuno assicurarsi di [ottenere le migliori prestazioni](performance-questions.md) dal dispositivo immersivo. Dopo l'installazione di [Steam](https://store.steampowered.com/about):
 
 * Seguire le istruzioni per l' [uso di SteamVR con la realtà mista di Windows](using-steamvr-with-windows-mixed-reality.md)
 * Installare le app di [test delle prestazioni di SteamVR](https://store.steampowered.com/app/323910/SteamVR_Performance_Test)
@@ -196,9 +216,3 @@ In alternativa, passare direttamente alla sezione introduttiva:
 > [Configurazione della realtà mista di Windows](set-up-windows-mixed-reality.md)
 
 È sempre possibile tornare al [percorso VR](vr-journey.md) in qualsiasi momento.
-
-## <a name="see-also"></a>Vedi anche
-
-* [Contattare la community](https://answers.microsoft.com)
-* [Contattaci per assistenza](https://support.microsoft.com/contactus/)
-* [Risoluzione dei problemi](troubleshooting-windows-mixed-reality.md)
