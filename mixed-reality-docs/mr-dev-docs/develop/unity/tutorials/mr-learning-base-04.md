@@ -1,5 +1,5 @@
 ---
-title: Esercitazioni introduttive - 4 Posizionamento degli oggetti nella scena
+title: Esercitazioni di MRTK - 4. Posizionamento degli oggetti nella scena
 description: Questa esercitazione illustra come posizionare gli oggetti nella scena e come usare Mixed Reality Toolkit (MRTK) per organizzare gli oggetti in una griglia.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, risolutori, raccolta di oggetti griglia
 ms.localizationpriority: high
-ms.openlocfilehash: b49d1b93b98a68e253239647262edc737fdbeb58
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: e09047e4f75697722f76301630c275f126b3cbda
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679310"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613255"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4. Posizionamento degli oggetti nella scena
 

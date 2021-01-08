@@ -1,5 +1,5 @@
 ---
-title: Esercitazioni introduttive - 5. Creazione di contenuto dinamico tramite risolutori
+title: Esercitazioni di MRTK - 5. Creazione di contenuto dinamico tramite risolutori
 description: In questo corso viene illustrato come usare i risolutori di Mixed Reality Toolkit (MRTK) per creare contenuto dinamico.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, risolutori
 ms.localizationpriority: high
-ms.openlocfilehash: fb86cdfe82e8d89c65e8513b52e2de49f52a2f04
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 533aa1c9f2b0b7620e23d611714552fb19a5357b
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679300"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613505"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Creazione di contenuto dinamico tramite risolutori
 

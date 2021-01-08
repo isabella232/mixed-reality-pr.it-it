@@ -4,7 +4,7 @@ summary: Scopri il mondo in espansione delle applicazioni di Realtà mista con W
 brand: windows
 metadata:
   title: Documentazione sulla realtà mista
-  description: Entra nel mondo in continua espansione delle applicazioni di Realtà mista con Windows Mixed Reality, Mixed Reality Toolkit (MRTK), Unity, Unreal e altro ancora per HoloLens e visori VR immersive.
+  description: Approfondire il mondo in espansione delle applicazioni di realtà mista per cuffie HoloLens e Windows Immersive.
   services: service
   ms.service: service
   ms.subservice: subservice
@@ -13,12 +13,12 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: 0ddea2f7271e00cc4f845b6bfd6c53c919846632
-  ms.sourcegitcommit: 653ddcae6d7a1617c89da1153fa8e7b482ef6818
+  ms.openlocfilehash: 0ef4c230bb58d9be3c0d61822754c313ab8dab16
+  ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 01/06/2021
-  ms.locfileid: "97905283"
+  ms.lasthandoff: 01/08/2021
+  ms.locfileid: "98007557"
 highlightedContent:
   items:
   - title: Che cos'è Realtà mista?

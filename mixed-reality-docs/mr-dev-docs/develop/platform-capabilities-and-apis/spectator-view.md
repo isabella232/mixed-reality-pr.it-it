@@ -1,18 +1,18 @@
 ---
 title: Spectator View
-description: Visualizzare gli ologrammi da un dispositivo esterno per mostrare un'esperienza di realtà mista su un display esterno o registrare un video di tale esperienza.
+description: Visualizzare ologrammi da un dispositivo esterno per mostrare o registrare un'esperienza di realtà mista in uno schermo esterno.
 author: chrisfromwork
 ms.author: chriba
 ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Realtà mista, MixedRealityToolkit, demo, record
-ms.openlocfilehash: 7b48315753ada0ae7a94abca5377a083ac659a34
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c344edea9b499bdff15d1d93e400b8be626a63b6
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698175"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530105"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>Spectator View per HoloLens e HoloLens 2
 
@@ -20,8 +20,7 @@ ms.locfileid: "91698175"
 
 ## <a name="overview"></a>Panoramica
 
-Quando indossiamo un dispositivo HoloLens, spesso dimentichiamo che le persone che non lo hanno non possono assistere alle cose straordinarie che possiamo vedere. Spectator View consente agli altri di visualizzare su uno schermo 2D ciò che un utente di HoloLens può vedere nel proprio mondo.
-Questo strumento offre un approccio rapido e conveniente per registrare ologrammi in HD usando dispositivi mobili. Offre inoltre la possibilità di eseguire registrazioni degli ologrammi di qualità professionale con videocamere.
+Quando si indossa un dispositivo HoloLens, è facile dimenticare che una persona non dotata di tale dispositivo non può sperimentare le stesse meraviglie visive. Spectator View consente ad altri utenti di visualizzare gli stessi elementi che un utente HoloLens vede in uno schermo 2D. Si tratta inoltre di un approccio rapido e conveniente per registrare ologrammi in HD con dispositivi mobili e ottenere registrazioni di ologrammi di ottima qualità con l'uso di videocamere.
 
 ## <a name="key-resources"></a>Risorse principali
 
@@ -30,7 +29,8 @@ Questo strumento offre un approccio rapido e conveniente per registrare ologramm
 * [**Esempi di Spectator View**](https://github.com/microsoft/MixedReality-SpectatorView/tree/master/samples)
 
 ## <a name="use-cases"></a>Casi d'uso
-* Puoi registrare un'esperienza di realtà mista usando un iPhone o un dispositivo Android. Esegui una registrazione in Full HD e applica l'anti-aliasing agli ologrammi e persino le ombre. È un modo economico e rapido per acquisire video di ologrammi.
+
+* Puoi registrare un'esperienza di realtà mista usando un iPhone o un dispositivo Android. Per acquisire video di ologrammi in modo rapido e conveniente, registrare in Full HD e applicare l'anti-aliasing agli ologrammi e all'ombreggiatura.
 * Trasmetti in streaming le esperienze di realtà mista a un dispositivo Apple TV direttamente dal tuo iPhone o iPad, in tempo reale.
 * Condividi l'esperienza con i tuoi ospiti: consenti alle persone che non hanno HoloLens di visualizzare gli ologrammi direttamente dai loro telefoni o tablet.
 

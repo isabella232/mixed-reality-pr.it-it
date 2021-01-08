@@ -7,18 +7,18 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realtà mista, individuare, distribuire, indice, pagina di destinazione, progettazione, sviluppo, esercitazioni, app di esempio, nozioni di base, case study, risorse, guide pratiche per HoloLens, progetti open source, concetti di base, interazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: a11283ad4a7931c9e061cdbf25d4659fa4760822
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 5c0eefe6f4811feba6d1d52164652acbc44945c3
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926004"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847597"
 ---
 # <a name="start-designing-and-prototyping"></a>Iniziare a progettare e a creare prototipi
 
 ![Progettazione astratta di realtà mista](images/design-hero-image.png)
 
-Le applicazioni di realtà mista sono diverse da tutte le altre applicazioni oggi esistenti e la loro progettazione è estremamente complessa. Non solo è necessario tenere conto delle nuove combinazioni di mondi reali e virtuali che si creano, ma anche dei nuovi tipi di esperienze utente che vengono messi in campo. Poiché la realtà mista abbraccia un'area molto vasta, sono stati selezionati i punti più importanti lungo lo spettro di progettazione e sono stati esposti di seguito sotto forma di una serie di checkpoint. Questi checkpoint sono stati pensati per essere eseguiti in sequenza, ma se si ha già esperienza in materia è possibile passare a una qualsiasi delle sezioni seguenti.
+Le applicazioni di realtà mista sono diverse da tutte le altre applicazioni oggi esistenti e la loro progettazione è estremamente complessa. Non solo è necessario tenere conto delle nuove combinazioni di mondi reali e virtuali che si creano, ma anche delle nuove esperienze utente offerte. Poiché la realtà mista abbraccia un'area molto vasta, sono stati selezionati i punti più importanti lungo lo spettro di progettazione e sono stati esposti di seguito sotto forma di una serie di checkpoint. Questi checkpoint sono stati pensati per essere eseguiti in sequenza, ma se si ha già esperienza in materia è possibile passare a una qualsiasi delle sezioni seguenti.
 
 ## <a name="design-checkpoints"></a>Progettare checkpoint
 
@@ -34,8 +34,9 @@ Come tutti i percorsi, anche quello che riguarda la progettazione di applicazion
 | --- | --- |
 | [Espandere il processo di progettazione](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Una sguardo in prima persona al processo di progettazione della realtà mista realizzato da designer all'interno e all'esterno di Microsoft |
 | [Tipi di app di realtà mista](types-of-mixed-reality-apps.md) | Decidere in quale punto dello spettro della realtà mista si colloca l'esperienza dell'app |
-| [App Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Apprendere le nozioni di base relative alla progettazione dell'esperienza utente in realtà mista sperimentando in prima persona i comportamenti della realtà mista, i suggerimenti e i consigli per la creazione di straordinarie app HoloLens (disponibile per il download da Microsoft Store in HoloLens 2) |
+| [App Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Apprendere le nozioni di base relative alla progettazione dell'esperienza utente in realtà mista sperimentando comportamenti, suggerimenti e raccomandazioni per la creazione di straordinarie app HoloLens (disponibile per il download da Microsoft Store in HoloLens 2) |
 | [MRTK Examples Hub](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | Sperimentare comuni interazioni spaziali e blocchi predefiniti per Realtà mista (disponibile per il download da Microsoft Store in HoloLens 2) |
+
 ### <a name="2-core-concepts"></a>2. Concetti di base
 
 Per lo sviluppo di app per VR o AR, esistono alcuni concetti fondamentali che si applicano alla progettazione di esperienze immersive fluide. Conoscere il punto di vista degli utenti, posizionare gli oggetti e garantire che tutti siano a proprio agio in un ambiente sicuro sono le priorità principali in questa fase del percorso. Alla fine di questa sezione si sarà acquisita una solida base per proseguire con la progettazione delle interazioni.
@@ -45,26 +46,26 @@ Per lo sviluppo di app per VR o AR, esistono alcuni concetti fondamentali che si
 |  Concetto  |  Risultato  |
 | --- | --- |
 | [Frame olografico](holographic-frame.md) | Comprendere il modo in cui gli utenti vedono il contenuto sovrapposto al mondo reale quando indossano i visori VR |
-| [Sistemi di coordinate](coordinate-systems.md) | Imparare a posizionare gli ologrammi in punti che siano significativi per l'utente, che si tratti di una stanza fisica o di un ambiente virtuale creato |
+| [Sistemi di coordinate](coordinate-systems.md) | Imparare a posizionare gli ologrammi in punti significativi dell'ambiente, che si tratti di una stanza fisica o di un ambiente virtuale creato |
 | [Mapping spaziale](spatial-mapping.md) | Ancorare gli oggetti nel mondo dell'utente e sfruttare i vantaggi delle superfici fisiche del mondo reale |
 | [Considerazioni sul comfort](comfort.md) | Garantire il comfort e la sicurezza degli utenti creando e presentando contenuti immersivi in modo da simulare il mondo naturale |
 
 ### <a name="3-interaction-design"></a>3. Progettazione delle interazioni
 
-Indipendentemente da quanto sia bella e immersiva, un'esperienza virtuale è inutile senza interazione. Questa sezione descrive in dettaglio i modelli di interazione di base, i controller del movimento e di tracciamento della mano, l'uso dell'input vocale e la raccolta dei dati di tracciamento oculare degli utenti. Alla fine di questa sezione sarà possibile affrontare l'ultimo importante argomento del percorso di progettazione: l'esperienza utente.
+Indipendentemente da quanto sia bella e immersiva, un'esperienza virtuale è inutile senza interazione. Questa sezione descrive in dettaglio i modelli di interazione di base, i controller del movimento e di tracciamento della mano, l'input vocale e la raccolta dei dati di tracciamento oculare degli utenti. Alla fine di questa sezione sarà possibile affrontare l'ultimo importante argomento del percorso di progettazione: l'esperienza utente.
 
 ![Fattori di progettazione delle interazioni](images/UX_Hero_Manipulation.jpg)
 
 |  Concetto  |  Risultato  |
 | --- | --- |
 | [Modelli di interazione](interaction-fundamentals.md) | Fornire agli utenti interazioni istintive attraverso la mano, l'occhio e l'input vocale |
-| [Mani e controller del movimento](hands-and-tools.md) | Imparare a toccare e manipolare gli ologrammi a corto raggio con le mani di un utente o a lungo raggio con interazioni precise |
+| [Mani e controller del movimento](hands-and-tools.md) | Imparare a interagire con gli ologrammi a corto raggio con le mani di un utente o a lungo raggio con interazioni precise |
 | [Input vocale](voice-input.md) | Usare i comandi vocali come input nelle app immersive per controllare gli ologrammi e gli ambienti circostanti  |
 | [Tracciamento oculare](eye-tracking.md) | Aggiungere un nuovo livello di contesto e comprensione umana in un'esperienza olografica usando le informazioni relative agli elementi osservati dagli utenti |
 
 ### <a name="4-user-experience-elements"></a>4. Elementi dell'esperienza utente
 
-Dopo aver appreso le interazioni di base, è possibile concentrarsi sui punti più fini degli elementi dell'esperienza utente e su come adattarli agli ambienti esclusivi della realtà mista. Verranno illustrati i comportamenti comuni, la progettazione degli asset, il ridimensionamento degli oggetti e gli elementi tipografici, il tutto con l'obiettivo di rendere le app più intuitive possibile per gli utenti. Questa sezione segna la fine del percorso ufficiale di progettazione della realtà mista. Per proseguire, sono tuttavia disponibili altre risorse nella sezione [Passaggi successivi](#whats-next).
+Dopo aver appreso le interazioni di base, è possibile concentrarsi sui punti più fini degli elementi dell'esperienza utente e su come adattarli agli ambienti esclusivi della realtà mista. Verranno illustrati i comportamenti comuni, la progettazione degli asset, il ridimensionamento degli oggetti e gli elementi tipografici, rendendo l'esperienza intuitiva per gli utenti. Questa sezione segna la fine del percorso ufficiale di progettazione della realtà mista. Per proseguire, sono tuttavia disponibili altre risorse nella sezione [Passaggi successivi](#whats-next).
 
 ![Elementi UX](images/UX_Hero_BoundingBox.jpg)
 
@@ -108,7 +109,7 @@ Il lavoro di un progettista non finisce mai, specialmente quando si tratta di im
 
 ---
 
-### <a name="additional-resources"></a>Risorse aggiuntive
+### <a name="other-resources"></a>Altre risorse
 
 :::row:::
     :::column:::
