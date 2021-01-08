@@ -6,21 +6,26 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, HoloLens, cuffie immersive, app, UWP, invio, invio, filtri, metadati, requisiti di sistema, parole chiave, predato, certificazione, pacchetto, appx, merchandising, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 92de6072300ed94873cc68dfa78531da4685d274
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 7b1953fe0244b06f019f0e28432b7f9be9c21081
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757839"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031977"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Invio di un'app a Microsoft Store
 
 > [!IMPORTANT]
-> Se si sta inviando un'applicazione non reale, assicurarsi di seguire le **[istruzioni di pubblicazione qui](../develop/unreal/unreal-publishing-to-store.md)** prima di continuare.
+> Se si sta inviando un'applicazione non reale, assicurarsi di seguire le **[istruzioni di pubblicazione](../develop/unreal/unreal-publishing-to-store.md)** prima di continuare.
+
+## <a name="prerequisites"></a>Prerequisiti
 
 Sia [HoloLens](../hololens-hardware-details.md) che il PC Windows 10 che alimentano le [cuffie immersive](../discover/immersive-headset-hardware-details.md) eseguono piattaforma UWP (Universal Windows Platform) app. Se si sta inviando un'app che supporta HoloLens, PC o entrambi, l'invio dell'app passa attraverso il centro per i [partner](https://partner.microsoft.com/dashboard).
 
-Se non si dispone già di un account per sviluppatore del centro per i partner, [iscriversi](https://developer.microsoft.com/store/register) a uno prima di procedere.
+Se non si dispone già di un account per sviluppatore del centro per i partner, [iscriversi](https://developer.microsoft.com/store/register) a uno prima di procedere. Altre informazioni sulle linee guida e gli elenchi di controllo per l'invio sono disponibili nell'articolo relativo alle [trasmissioni di app](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
+
+> [!IMPORTANT]
+> Non sarà possibile inviare alcuna applicazione al Microsoft Store se l'account sviluppatore del centro per i partner non riesce a verificare la verifica dell'utilizzo. Per ulteriori informazioni, contattare il [team di supporto](https://developer.microsoft.com/windows/support) di partner Center.
 
 ## <a name="packaging-a-mixed-reality-app"></a>Creazione del pacchetto di un'app per realtà mista
 
@@ -215,7 +220,7 @@ Usare le caselle di controllo per indicare ai potenziali clienti se l'app suppor
 
 Si consiglia di selezionare le caselle di controllo per "hardware minimo" o "hardware consigliato" per i tipi di input. 
 
-Esempio: 
+Ad esempio: 
 * Se il gioco richiede controller di movimento, ma accetta l'input vocale tramite microfono, selezionare la casella di controllo "hardware minimo" accanto a "controller di movimento per la realtà mista di Windows", ma la casella di controllo "hardware consigliato" accanto a "microfono". 
 * Se è possibile riprodurre il gioco con un controller Xbox, un gamepad o un controller di movimento, è possibile selezionare la casella di controllo "hardware minimo" accanto a "controller Xbox o gamepad" e selezionare la casella di controllo "hardware consigliato" accanto a "controller di movimento per la realtà mista di Windows". i controller di movimento offriranno probabilmente un passo avanti nell'esperienza del gamepad.
 
@@ -266,8 +271,8 @@ Aggiungere "realtà mista di Windows" ai termini di ricerca
 
 In molti casi, gli utenti non avranno alcuna esperienza con la realtà virtuale prima di acquistare una cuffia mista a realtà mista di Windows. Potrebbero non sapere cosa aspettarsi da giochi intensi o avere familiarità con la loro soglia di comfort in esperienze immersive. Molti clienti possono anche provare a usare un auricolare immersivo a realtà mista di Windows nei PC che non sono associati ai PC con la [realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines). A causa di queste considerazioni, è consigliabile valutare la possibilità di offrire una [versione di valutazione gratuita](https://docs.microsoft.com/windows/uwp/publish/set-app-pricing-and-availability#free-trial) per l'app o il gioco in realtà mista a pagamento.
 
-## <a name="see-also"></a>Vedi anche
-* [Che cos'è la realtà mista?](../discover/mixed-reality.md)
+## <a name="see-also"></a>Vedere anche
+* [Che cos'è Realtà mista?](../discover/mixed-reality.md)
 * [Cenni preliminari sullo sviluppo](../develop/development.md)
 * [Visualizzazioni delle app](../design/app-views.md)
 * [Informazioni sulle prestazioni per la realtà mista](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
