@@ -1,17 +1,17 @@
 ---
 title: Rilevamento di codici a matrice
-description: Informazioni su come rilevare i codici a matrice in HoloLens 2.
+description: Informazioni su come rilevare i codici a matrice, aggiungere funzionalità di webcam e gestire i sistemi di coordinate nelle app di realtà mista in HoloLens 2.
 author: dorreneb
 ms.author: dobrown
 ms.date: 05/15/2019
 ms.topic: article
 keywords: VR, LBE, location based Entertainment, VR Arcade, Arcade, immersive, QR, QR code, hololens2
-ms.openlocfilehash: 023da7a98d1559d9dd0387a7efbaf26ad577df50
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 7e5931e0d23ef6c905b8ec54d08e572a89e747e0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530010"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009401"
 ---
 # <a name="qr-code-tracking"></a>Rilevamento di codici a matrice
 
@@ -21,7 +21,7 @@ HoloLens 2 è in grado di rilevare i codici a matrice nell'ambiente attorno al v
 
 <table>
 <tr>
-<th>Funzionalità</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (prima generazione)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
+<th>Feature</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (prima generazione)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
 </tr><tr>
 <td> Rilevamento del codice a matrice</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️</td>
 </tr>

@@ -1,21 +1,22 @@
 ---
 title: Elementi UX della realtà mista
-description: Questo documento contiene una serie di argomenti che illustrano come progettare per i dispositivi a realtà mista.
+description: Informazioni su come progettare le app per i dispositivi con realtà mista con elementi fondamentali, controlli comuni e comportamenti.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
 keywords: Progettazione dell'esperienza utente, UX in realtà mista, UX, modelli di app, controlli, stile, HoloLens, interazione, interazione spaziale, interfaccia utente spaziale, elementi UX, comportamenti, blocchi predefiniti, tipografia, colori, cuffie per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 47f7877e9a5f8a71bcae9a16011210d9fc897040
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a1b087230b5a744cb6194c5cb791e4085aa791c6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847786"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009701"
 ---
 # <a name="ux-elements-overview"></a>Cenni preliminari sugli elementi UX
 
 ## <a name="foundational-elements"></a>Elementi di base
+
 Informazioni sugli elementi fondamentali necessari per progettare una grande esperienza di realtà mista.
 
 :::row:::
@@ -39,6 +40,7 @@ Informazioni sugli elementi fondamentali necessari per progettare una grande esp
 <br>
 
 ## <a name="common-controls-and-behaviors"></a>Controlli e comportamenti comuni
+
 Informazioni sulle interazioni spaziali e sui blocchi predefiniti dell'interfaccia utente usati di frequente per le esperienze in realtà mista.
 
 :::row:::

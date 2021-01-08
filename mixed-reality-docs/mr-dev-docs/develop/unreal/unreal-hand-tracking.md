@@ -1,17 +1,17 @@
 ---
 title: Tracciamento mano in Unreal
-description: Spiega come usare il rilevamento manuale in Unreal
+description: Informazioni su come usare l'input per il rilevamento della mano, la posa, le mesh di mano e le animazioni dei collegamenti dinamici in app Real realtà miste.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Realtà mista di Windows, Tracking manuale, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, sviluppo di giochi, cuffie per realtà mista, cuffia a realtà mista di Windows, headset di realtà virtuale
-ms.openlocfilehash: 66ae1994f2bbee3ba4786a7c4eeebfe1cd57ca37
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: e482c93233348325736d2c224788e9174c1f3b67
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002659"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010161"
 ---
 # <a name="hand-tracking-in-unreal"></a>Tracciamento mano in Unreal
 
@@ -162,7 +162,7 @@ HoloLens 2 tiene traccia dei movimenti spaziali, il che significa che è possibi
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di sviluppo non reale, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo:
+Se si segue il percorso delineato per lo sviluppo con Unreal, tenere presente che si stanno esplorando i blocchi predefiniti fondamentali di MRTK. Da qui, è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Ancoraggi nello spazio locali](unreal-spatial-anchors.md)

@@ -1,17 +1,17 @@
 ---
 title: Abilitare il posizionamento di modelli 3D nello spazio iniziale
-description: Come inserire modelli 3D dal sito Web o dall'applicazione nella Home realtà mista di Windows
+description: Scopri come inserire modelli 3D dal tuo sito Web o da un'applicazione nella Home realtà mista di Windows.
 author: thmignon
 ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
 keywords: 3D, modello, posizione in casa, luogo, mondo, modellazione, Home realtà mista, Web, app, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: ad35e1d010e32c4729b0d0dd58943dabdee86e09
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: c92ba7a3242b618b9ef9cef01ae400cf4dbf36b2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757809"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010101"
 ---
 # <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Abilitare il posizionamento di modelli 3D nell'ambiente iniziale
 
@@ -42,7 +42,7 @@ Se, ad esempio, si sta sviluppando un'applicazione che espone un catalogo di mob
     </tr>
 </table>
 
-## <a name="overview"></a>Panoramica
+## <a name="the-basics"></a>Nozioni di base
 
 Per abilitare il posizionamento dei modelli 3D nella Home realtà mista di Windows sono necessari due passaggi:
 1. [Verificare che il modello 3D sia compatibile con la Home realtà mista di Windows](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md).
@@ -91,7 +91,7 @@ private async void launchURI_Click(object sender, RoutedEventArgs e)
 * Per gli auricolari immersivi (VR), il portale per la realtà mista non deve essere in esecuzione prima di richiamare il *protocollo di aggiunta del modello*. In questo caso, il *protocollo Add Model* avvierà il portale di realtà mista e inserirà l'oggetto direttamente nel punto in cui l'auricolare sta cercando una volta arrivati nella Home realtà mista. 
 * Quando si richiama il *protocollo Aggiungi modello* dal desktop con il portale per la realtà mista già in esecuzione, assicurarsi che l'auricolare sia "sveglio". In caso contrario, la selezione host non riuscirà. 
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Creazione di modelli 3D per l'utilizzo nella Home realtà mista di Windows](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [Esplorazione dello spazio iniziale di Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md)

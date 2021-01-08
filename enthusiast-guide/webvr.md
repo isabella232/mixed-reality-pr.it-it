@@ -1,14 +1,14 @@
 ---
 title: Uso di WebVR con la realtà mista di Windows
-description: Descrive WebVR e come usarlo con Microsoft Edge negli auricolari per la realtà mista di Windows.
+description: Informazioni sulle nozioni di base su WebVR, su come usarlo con Microsoft Edge su cuffie di realtà miste Windows e sui problemi comuni di risoluzione dei problemi.
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, WebVR, Edge, Microsoft Edge, esplorazione Web
-ms.openlocfilehash: 92f1d00c7f635c88a727732fb743996a654ba775
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 0b0d07383b43feaa11fb9bfac2b071d8d4d80b19
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725602"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009441"
 ---
 # <a name="using-webvr-with-windows-mixed-reality"></a>Uso di WebVR con la realtà mista di Windows
 
@@ -61,7 +61,7 @@ Per sperimentare il contenuto di WebVR in un auricolare di realtà mista di Wind
 5. La prima volta che si tenta di immettere VR in un dominio specifico, il browser richiederà il consenso per l'uso di visualizzazione immersiva, selezionare Sì: ![Interfaccia utente di consenso visualizzata al primo tentativo di immissione di VR in un particolare dominio](images/1053px-Webvr-consent-ui.png)
 6. L'auricolare dovrebbe iniziare a visualizzare il contenuto di WebVR.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Risoluzione dei problemi > WebVR](webvr-questions.md)
 * [Come accedere alla prima esperienza WebVR](using-games-and-apps-in-windows-mixed-reality.md#how-to-get-into-your-first-webvr-experience)

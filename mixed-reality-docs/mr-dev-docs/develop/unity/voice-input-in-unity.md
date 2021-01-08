@@ -1,17 +1,17 @@
 ---
 title: Input vocale in Unity
-description: Unity espone tre modi per aggiungere input vocale all'applicazione di realtà mista Windows.
+description: Scopri in che modo Unity espone tre modi per aggiungere input vocale, riconoscimento vocale e dettatura all'applicazione di realtà mista Windows.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Input vocale, KeywordRecognizer, GrammarRecognizer, microfono, dettatura, voce, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare realtà virtuale, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 66aba92c14eca4183739687934e12db289cd2302
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: d07909bbf05ff882eb0a4b6123c39eae9280e3e8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010572"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009801"
 ---
 # <a name="voice-input-in-unity"></a>Input vocale in Unity
 

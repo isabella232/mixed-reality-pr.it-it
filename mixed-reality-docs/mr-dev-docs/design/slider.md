@@ -1,17 +1,17 @@
 ---
 title: Slider
-description: Un dispositivo di scorrimento è un componente dell'interfaccia utente che consente di impostare un valore spostando una manopola o una levetta in una traccia.
+description: Informazioni su come usare il componente Slider UI per impostare un valore spostando una manopola o una levetta in una traccia usando il Toolkit di realtà mista.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, auricolare realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, dispositivo di scorrimento, MRTK, Toolkit realtà mista
-ms.openlocfilehash: b2f338dd25bbcc50a68a3c5e9b8d980d15827755
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 15a536074f8f873456482a55c1c9dbe418602bb1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848231"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009561"
 ---
 # <a name="slider"></a>Slider
 
@@ -31,7 +31,7 @@ Un dispositivo di scorrimento è un componente dell'interfaccia utente usato per
 
 ---
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

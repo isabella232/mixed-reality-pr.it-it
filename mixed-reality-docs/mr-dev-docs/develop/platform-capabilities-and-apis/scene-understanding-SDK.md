@@ -1,17 +1,17 @@
 ---
 title: Scenario di comprensione dell'SDK
-description: Guida alla programmazione per l'SDK di informazioni sulla scena
+description: Informazioni su come installare e usare la scena Understanding SDK, inclusi componenti, mesh e oggetti nelle app per realtà mista.
 author: szymons
 ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: Comprensione della scena, mapping spaziale, realtà mista di Windows, Unity
-ms.openlocfilehash: 1ec29d09ab52abae9a9111a6441523c8aa7720f7
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 9520ad604125705c60624254b097de5fc93021ec
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530351"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009381"
 ---
 # <a name="scene-understanding-sdk-overview"></a>Panoramica dell'SDK per la comprensione della scena
 
@@ -119,13 +119,13 @@ SceneObjects può avere uno dei seguenti elementi:
 <tr>
 <th>SceneObjectKind</th> <th>Descrizione</th>
 </tr>
-<tr><td>Background</td><td>Il SceneObject <b>non</b> è noto come uno degli altri tipi di oggetto scena riconosciuti. Questa classe non deve essere confusa con uno sconosciuto, in cui lo sfondo non è a parete/piano/soffitto e così via... mentre Unknown non è ancora stato categorizzato.</b></td></tr>
+<tr><td>Sfondo</td><td>Il SceneObject <b>non</b> è noto come uno degli altri tipi di oggetto scena riconosciuti. Questa classe non deve essere confusa con uno sconosciuto, in cui lo sfondo non è a parete/piano/soffitto e così via... mentre Unknown non è ancora stato categorizzato.</b></td></tr>
 <tr><td>Parete</td><td>Una parete fisica. Si presuppone che i muri siano strutture ambientali non mobili.</td></tr>
 <tr><td>Piano</td><td>I piani sono superfici in cui è possibile spostarsi. Nota: le scale non sono piani. Si noti inoltre che le pavimentazioni presuppongono una superficie a cui è possibile spostarsi e pertanto non esiste alcun presupposto esplicito di un pavimento singolare. Strutture a più livelli, rampe e così via... deve essere classificata come floor.</td></tr>
 <tr><td>Ceiling</td><td>Superficie superiore di una stanza.</td></tr>
 <tr><td>Piattaforma</td><td>Una superficie piana grande su cui posizionare gli ologrammi. Che tendono a rappresentare tabelle, piani di ridimensionamento e altre superfici orizzontali di grandi dimensioni.</td></tr>
 <tr><td>World</td><td>Etichetta riservata per i dati geometrici indipendenti dall'assegnazione di etichette. La mesh generata impostando il flag di aggiornamento EnableWorldMesh verrebbe classificato come World.</td></tr>
-<tr><td>Unknown</td><td>Questo oggetto scena deve ancora essere classificato e assegnato un tipo. Questa operazione non deve essere confusa con background, perché questo oggetto può essere qualsiasi cosa, il sistema non ha ancora una classificazione sufficientemente sicura.</td></tr>
+<tr><td>Sconosciuto</td><td>Questo oggetto scena deve ancora essere classificato e assegnato un tipo. Questa operazione non deve essere confusa con background, perché questo oggetto può essere qualsiasi cosa, il sistema non ha ancora una classificazione sufficientemente sicura.</td></tr>
 </tr>
 </table>
 

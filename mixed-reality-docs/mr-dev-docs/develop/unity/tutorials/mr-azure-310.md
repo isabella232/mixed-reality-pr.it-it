@@ -1,17 +1,17 @@
 ---
 title: 'MR and Azure 310: Rilevamento oggetti'
-description: Completare questo corso per apprendere come eseguire il training di un modello di apprendimento automatico e quindi usare il modello sottoposto a training per riconoscere oggetti simili e la relativa posizione nel mondo reale dall'interno di un'applicazione di realtà mista.
+description: Completare questo corso per apprendere come eseguire il training e usare un modello di apprendimento automatico per riconoscere oggetti simili e la relativa posizione nel mondo reale.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, visione personalizzata, rilevamento di oggetti, realtà mista, Accademia, Unity, esercitazione, API, hololens, Windows 10, Visual Studio
-ms.openlocfilehash: 10f3b2b8f8422a20c39a4d89568e42ca530683c2
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 8f625ebc1e40edaa6364567686c345386ea37dbf
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679460"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010171"
 ---
 # <a name="mr-and-azure-310-object-detection"></a>Mr e Azure 310: rilevamento di oggetti
 
@@ -1292,7 +1292,7 @@ A questo punto si è pronti per compilare l'applicazione come soluzione UWP che 
 
     1.  Quando si indossa il HoloLens, aprire le **Impostazioni**.
 
-    2.  Passa a **rete &**  >  **Wi-Fi**  >  **Opzioni avanzate** Wi-Fi Internet
+    2.  Passa a **rete &**  >    >  **Opzioni avanzate** Wi-Fi Internet
 
     3.  Prendere nota dell'indirizzo **IPv4** .
 

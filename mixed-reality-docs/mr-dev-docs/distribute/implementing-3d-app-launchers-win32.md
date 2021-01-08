@@ -1,17 +1,17 @@
 ---
 title: Implementare utilità di avvio per app 3D (app Win32)
-description: Informazioni su come creare programmi di avvio e logo di app 3D per app e giochi Win32 VR per il menu di avvio della realtà mista di Windows e l'ambiente domestico.
+description: Informazioni su come creare programmi di avvio e logo di app 3D per app e giochi Win32 VR per il menu Start e l'ambiente Home.
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, logo, icona, modellazione, avvio, utilità di avvio 3D, riquadro, cubo attivo, Win32, auricolare realtà mista, auricolare di realtà misto di Windows, auricolare della realtà virtuale, manifesto
-ms.openlocfilehash: 5a3e38de54aad1fceb4804003043c87dddab61c4
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 63b07664cb09f51e6d0588fdc50d141ad8985093
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757819"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009670"
 ---
 # <a name="implement-3d-app-launchers-win32-apps"></a>Implementare utilità di avvio per app 3D (app Win32)
 
@@ -165,7 +165,7 @@ IconFile=C:\Program Files (x86)\MyLauncher\apps\app-identifier\game.exe
 IconIndex=0
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Esempio di modello di realtà mista](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) contenente un utilità di avvio delle app 3D.
 * [Linee guida per la progettazione di utilità di avvio di app 3D](3d-app-launcher-design-guidance.md)

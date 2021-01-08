@@ -1,17 +1,17 @@
 ---
 title: Acquisizione di realtà mista per gli sviluppatori
-description: Procedure consigliate per l'acquisizione di realtà mista per gli sviluppatori.
+description: Informazioni sulle procedure consigliate per l'abilitazione, l'uso e il rendering dell'acquisizione di realtà mista per gli sviluppatori.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: MRC, foto, video, acquisizione, fotocamera
-ms.openlocfilehash: 13765686c3e86822efff17b25995a6eaa4008e6c
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: e55100003859e3581bdd7f6e1da312e1fdd8cf57
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613345"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009941"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>Acquisizione di realtà mista per gli sviluppatori
 

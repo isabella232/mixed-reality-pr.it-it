@@ -1,17 +1,17 @@
 ---
 title: Esplorazione dello spazio iniziale di Windows Mixed Reality
-description: Gli auricolari per la realtà mista HoloLens e Windows condividono un paradigma per avviare, inserire e modificare le app e i modelli 3D nel proprio ambiente (sia fisico che digitale). Informazioni su come spostarsi nella Home realtà mista di Windows in entrambi i tipi di dispositivi.
+description: Informazioni su come spostarsi nella Home realtà mista di Windows in HoloLens e nelle cuffie di realtà mista di Windows.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Shell, sistema operativo, piattaforma, Cliff House, casa, casa, ambiente, avvio, menu Start, menu Home, pin, app, avvio di app, app, Teleport, sposta, naviga, auricolare realtà mista, cuffia virtuale reale, informazioni sulla realtà virtuale
-ms.openlocfilehash: 4d8aa88fa1057c550601feb7ad85ace15fcada54
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 06e28c9c1f0f6244f7f502382d61d4740b5fb71f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757689"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009691"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Esplorazione dello spazio iniziale di Windows Mixed Reality
 
@@ -134,7 +134,7 @@ La realtà mista di Windows include diverse app predefinite, ad esempio:
 * **Desktop** (auricolari immersivi) per la visualizzazione di monitor desktop in un auricolare immersivo
 * **Esplora file** Accedere a file e cartelle che si trovano nel dispositivo
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Visualizzazioni delle app](../design/app-views.md)
 * [Controller del movimento](../design/motion-controllers.md)
 * [Accessori hardware](hardware-accessories.md)

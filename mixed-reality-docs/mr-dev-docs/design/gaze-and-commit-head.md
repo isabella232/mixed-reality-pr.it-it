@@ -1,17 +1,17 @@
 ---
 title: Puntamento con la testa e commit
-description: Cenni preliminari sul modello di input Head-sguardi e commit.
+description: Introduzione al modello di input Head-sguardi e commit, inclusi il ridimensionamento, la posizione e la stabilizzazione della destinazione.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
 keywords: Realtà mista, sguardo, targeting, interazione, progettazione, cuffie per realtà mista, cuffie di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, target, Focus, smoothing
-ms.openlocfilehash: cc12c349704a63c5b95c9eede91d0486f56787a2
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 13a040a8309d084fcfdbfa91cbd9d63b595b004a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847877"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009451"
 ---
 # <a name="head-gaze-and-commit"></a>Puntamento con la testa e commit
 
@@ -34,7 +34,7 @@ _Head-sguardi e commit_ sono un caso speciale del modello di input [sguardo e co
     </tr>
      <tr>
         <td>Puntamento con la testa e commit</td>
-        <td>✔️ Consigliato</td>
+        <td>✔️ Consigliata</td>
         <td>✔️ Consigliato (terza scelta - <a href="interaction-fundamentals.md">Vedi le altre opzioni</a>)</td>
         <td>➕ Opzione alternativa</td>
     </tr>
@@ -89,7 +89,7 @@ Questo meccanismo può essere considerato come una versione più generale degli 
 
 Quando si determinano gli elementi interattivi adiacenti da assegnare, lo stato attivo alla viscosità dello stato attivo fornisce una distorsione all'elemento attualmente attivo. Questo consente di ridurre i comportamenti di cambio dello stato attivo quando si esegue il mobile a un punto medio tra due elementi con rumore naturale.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Interazione basata sullo sguardo](eye-gaze-interaction.md)
 * [Sguardo fisso e attesa](gaze-and-dwell.md)

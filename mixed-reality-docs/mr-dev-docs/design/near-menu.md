@@ -1,17 +1,17 @@
 ---
 title: Menu adiacente
-description: Un menu vicino è una raccolta di pulsanti in un pannello che seguono il comportamento di tag-along.
+description: Informazioni su come usare near menus, ovvero una raccolta di pulsanti in un pannello che seguono il comportamento di tag-along in un ambiente di realtà mista.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, menu, cuffie per realtà mista, cuffie di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: fb64ecf4a0bc2d7a495e87d127b39aded1212a6f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 3cba4452861f05a1ce921c1f18f6636661ee34b0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847259"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009931"
 ---
 # <a name="near-menu"></a>Menu adiacente
 
@@ -32,7 +32,7 @@ Un menu vicino è una raccolta di pulsanti in un pannello che seguono gli utenti
 
 ---
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

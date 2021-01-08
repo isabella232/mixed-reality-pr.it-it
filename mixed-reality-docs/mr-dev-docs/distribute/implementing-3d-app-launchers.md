@@ -1,17 +1,17 @@
 ---
 title: Implementare utilità di avvio per app 3D (app UWP)
-description: Come creare programmi di avvio e logo per app 3D per le app e i giochi di UWP di realtà mista di Windows (distribuiti tramite il Microsoft Store), sia su HoloLens che su cuffie immersive (VR).
+description: Informazioni su come creare programmi di avvio e logo per app 3D per app e giochi UWP di realtà mista di Windows in HoloLens e VR.
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, logo, icona, modellazione, avvio, utilità di avvio 3D, riquadro, cubo attivo, collegamento diretto, SecondaryTile, riquadro secondario, UWP, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare in realtà virtuale, XML, riquadro, Unity
-ms.openlocfilehash: 38f0932f20e3660c91b87de7bcb9d66799d9a51a
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 40a68d0835ec8fb92d6417650700f41e8a31aab6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757497"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009681"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>Implementare utilità di avvio per app 3D (app UWP)
 
@@ -203,7 +203,7 @@ Le notifiche dei riquadri attualmente non supportano l'invio di un aggiornamento
 
 Per altre informazioni sulle funzionalità e sugli attributi di altri riquadri e su come vengono usati per i riquadri 2D, vedere la [documentazione relativa ai riquadri per le app UWP](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Esempio di modello di realtà mista](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) contenente un utilità di avvio delle app 3D.
 * [Linee guida per la progettazione di utilità di avvio di app 3D](3d-app-launcher-design-guidance.md)

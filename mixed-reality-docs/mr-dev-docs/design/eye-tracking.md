@@ -1,17 +1,17 @@
 ---
 title: Tracciamento oculare
-description: HoloLens 2 consente un nuovo livello di contesto e comprensione umana all'interno dell'esperienza olografica, offrendo agli sviluppatori la possibilità di usare le informazioni relative a ciò che l'utente sta esaminando.
+description: Scopri come tenere traccia degli occhi per HoloLens 2 e i nuovi livelli di comprensione umana, se disponibili in esperienze olografiche.
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Rilevamento degli occhi, realtà mista, input, sguardo, calibratura, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, finalità, azioni
-ms.openlocfilehash: 5ee957db85c2eefc32b7bfd716268262b347867b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: ffc9fd172f3e9a1cfd648e3fb431274690c9f190
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847945"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009601"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Tracciamento oculare in HoloLens 2
 
@@ -19,7 +19,7 @@ ms.locfileid: "97847945"
 
 HoloLens 2 consente un nuovo livello di contesto e comprensione umana all'interno dell'esperienza olografica, offrendo agli sviluppatori la possibilità di usare le informazioni relative a ciò che l'utente sta esaminando. Questa pagina illustra il modo in cui gli sviluppatori possono trarre vantaggio dal rilevamento degli sguardi per i diversi casi d'uso e cosa cercare quando si progettano interazioni utente basate sull'occhio. 
 
-L'API di rilevamento degli occhi è stata progettata con la riservatezza di un utente, evitando di passare informazioni identificabili, in particolare qualsiasi biometria. Per le applicazioni che supportano il rilevamento degli occhi, l'utente deve concedere l'autorizzazione dell'app per usare le informazioni di rilevamento degli occhi. 
+L'API di rilevamento degli occhi è stata progettata con la riservatezza di un utente, evitando di passare informazioni identificabili, in particolare qualsiasi biometria. Per le applicazioni che supportano il rilevamento degli occhi, l'utente deve concedere l'autorizzazione dell'app per usare le informazioni di rilevamento degli occhi.
 
 ### <a name="device-support"></a>Supporto di dispositivi
 
@@ -166,7 +166,7 @@ Anche in questo caso, si consiglia di comunicare chiaramente questo problema all
 
 In questa pagina è stata auspicata una panoramica approfondita per iniziare a comprendere il ruolo del rilevamento degli occhi e l'input degli sguardi per HoloLens 2. Per iniziare lo sviluppo, consultare le informazioni sul ruolo di [sguardo attento per interagire con gli ologrammi](eye-gaze-interaction.md), osservare lo sguardo [in Unity](https://aka.ms/mrtk-eyes) e guardare gli [occhi in DirectX](../develop/native/gaze-in-directx.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Calibrazione](../calibration.md)
 * [Comodità](comfort.md)

@@ -1,17 +1,17 @@
 ---
 title: Visualizzazioni delle app
-description: I due tipi di visualizzazioni nelle app di realtà mista di Windows sono viste immersive e visualizzazioni 2D.
+description: 'Informazioni su come usare i due tipi di visualizzazioni nelle app per la realtà mista di Windows: viste immersive e visualizzazioni 2D.'
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: visualizzazione immersiva, visualizzazione 2D, lavagna, app, cuffie per realtà mista, cuffie con realtà mista di Windows, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 0c6127427d5af118bb18aea5c19ddaef6fe8d5eb
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a9cd03212fcbb0d7b3d9e4d2b3108e4d09972455
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848068"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009631"
 ---
 # <a name="app-views"></a>Visualizzazioni delle app
 
@@ -43,7 +43,7 @@ Un uso chiave delle visualizzazioni 2D mostra un modulo di immissione di testo c
 
 Un'app può avere visualizzazioni 2D sia sul monitor desktop che su un auricolare collegato in un computer desktop. È possibile, ad esempio, esplorare Edge sul monitor desktop usando la visualizzazione 2D principale per trovare un video di 360 gradi. Quando si riproduce il video, Edge avvierà una visualizzazione immersiva secondaria all'interno dell'auricolare per visualizzare il contenuto video immersivo.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Modello di app](app-model.md)
 * [Aggiornamento di app UWP 2D per la realtà mista](../develop/porting-apps/building-2d-apps.md)

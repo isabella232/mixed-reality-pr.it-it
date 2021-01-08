@@ -1,17 +1,17 @@
 ---
 title: Frame olografico
-description: Gli utenti vedono il mondo della realtà mista tramite il frame olografico.
+description: Scopri in che modo gli utenti vedono il mondo della realtà mista tramite il frame olografico e come progettare meglio l'esperienza.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
 keywords: HoloLens, realtà mista di Windows, frame olografico, campo di visualizzazione, FOV, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit per realtà mista, interazioni, navigazione, menu
-ms.openlocfilehash: 679f629d5190ad6e3df2d92d2adfcce998f7dea5
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 5898f98054afadb58fb059ff54be23f015232d55
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847378"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009591"
 ---
 # <a name="holographic-frame"></a>Frame olografico
 
@@ -139,9 +139,9 @@ Come esperienza immersiva, questi utenti erano invitati a cercare, spostando il 
 
 La rappresentazione realistica di Buzz ha fornito un punto focale potente, completando tecniche sottili per trasformare il ronzio verso l'utente come se fosse presente, parlando con te. Man mano che l'utente si sposta sull'esperienza, Buzz si sposta verso una soglia prima di tornare a uno stato neutro se l'utente si sposta troppo oltre la periferia. Se l'utente ha l'aspetto di Buzz completamente (ad esempio, per esaminare qualcosa altrove nella scena), quindi torna a Buzz, la posizione direzionale dell'Assistente vocale sarà ancora una volta incentrata sull'utente. Le tecniche come questa forniscono un potente senso di immersione e creano un punto focale all'interno del frame olografico, riducendo lo spostamento di un'intestazione e la promozione della [comodità degli utenti](comfort.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Interazioni istintive](interaction-fundamentals.md)
 * [Comodità](comfort.md)
-* [Ridimensiona](scale.md)
+* [Ridimensionamento](scale.md)
 * [Puntamento con la testa e attesa](gaze-and-dwell.md)
 * [Stabilità degli ologrammi](../develop/platform-capabilities-and-apis/hologram-stability.md)

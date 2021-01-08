@@ -1,17 +1,17 @@
 ---
 title: Sguardo fisso in Unity
-description: Lo sguardo è un modo principale per consentire agli utenti di individuare gli ologrammi creati dall'app in realtà mista.
+description: Informazioni su come usare l'input di sguardi come un modo principale per consentire agli utenti di individuare gli ologrammi creati dall'app in realtà mista.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: occhi, sguardi, Unity, ologramma, realtà mista, cuffie per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: ca33fef5a5a761df83ed7991b366cf711a5db224
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 5dab8cb38aaa4b9a4547f4bf494afb093b6d8058
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010362"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009891"
 ---
 # <a name="head-gaze-in-unity"></a>Sguardo da capo in Unity
 
@@ -56,7 +56,7 @@ Analogamente a quanto avviene con un puntatore del mouse su un computer, è nece
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo:
+Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui, è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Movimenti e controller del movimento](gestures-and-motion-controllers-in-unity.md)

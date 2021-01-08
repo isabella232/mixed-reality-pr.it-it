@@ -1,17 +1,17 @@
 ---
-title: Input vocale
-description: Esercitazione sulla configurazione e l'uso dell'input vocale in HoloLens 2 e Unreal Engine
+title: Input vocale in Unreal
+description: Informazioni su come configurare e usare l'input vocale, i mapping vocale e il riconoscimento in app Real realtà mista per i dispositivi HoloLens 2.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Realtà mista di Windows, Unreal, Unreal Engine 4, UE4, HoloLens 2, Voice, input vocale, riconoscimento vocale, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, sviluppo di giochi, cuffie per realtà mista, cuffia di realtà mista di Windows, Headset della realtà virtuale
-ms.openlocfilehash: 504a2d978e3c9bc698e8edd11ea8a4d6be13795a
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: c7ac523258dc44aa261470aea8cdf21f32c915b2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609752"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010071"
 ---
 # <a name="voice-input-in-unreal"></a>Input vocale in Unreal
 

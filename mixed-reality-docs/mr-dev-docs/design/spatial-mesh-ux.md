@@ -1,17 +1,17 @@
 ---
 title: Visualizzazione Mesh spaziale
-description: Informazioni sul modo in cui i dispositivi comprendono gli ambienti fisici che usano mesh spaziali.
+description: Informazioni sulle linee guida di progettazione e sulla comprensione dell'ambiente fisico con la visualizzazione Mesh spaziale in MRTK.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: Realtà mista, HoloLens, controlli dell'interfaccia utente, interazione, interfaccia utente, UX, progettazione di UX, interfaccia utente spaziale, interazione spaziale, interfaccia utente 3D, UX 3D, auricolare in realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: ffa13da6762b803ba2a3f370308ac2af65164ecf
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 0f9cdc218c6fe54b8892c39a6a76f023e203d334
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848195"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009921"
 ---
 # <a name="spatial-mesh"></a>Mesh spaziale
 
@@ -41,7 +41,7 @@ MRTK fornisce diversi materiali per la visualizzazione Mesh spaziale.
 
 ---
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

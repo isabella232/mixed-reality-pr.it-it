@@ -1,17 +1,17 @@
 ---
 title: Billboarding e tag-along
-description: Gli oggetti con il tabellone sono sempre orientati a fronte dell'utente.
+description: Informazioni su come usare gli oggetti con il tabellone, che sempre si orientano a far fronte all'utente nelle applicazioni di realtà mista.
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, Billboard, tag-along, cuffie per realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 44f2678fe2f8e4be071086f46037749d1df61ae4
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 92caa1bcd325cefecc6d3820b819cecfce6fc09c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848033"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009612"
 ---
 # <a name="billboarding-and-tag-along"></a>Billboarding e tag-along
 
@@ -57,7 +57,7 @@ Proprio come il contenuto con blocco principale, gli oggetti tag-along possono r
 
 ---
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

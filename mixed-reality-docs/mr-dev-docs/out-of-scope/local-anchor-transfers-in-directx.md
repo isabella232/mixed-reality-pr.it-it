@@ -1,17 +1,17 @@
 ---
 title: Trasferimenti di ancoraggio locali in DirectX
-description: Viene illustrato come sincronizzare due dispositivi HoloLens trasferendo ancoraggi spaziali.
+description: Informazioni su come sincronizzare due dispositivi HoloLens tramite il trasferimento, l'esportazione e la serializzazione di ancoraggi spaziali.
 author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, Synchronize, ancoraggio spaziale, trasferimento, multiplayer, visualizzazione, scenario, procedura dettagliata, codice di esempio, trasferimento, trasferimento di ancoraggio locale, esportazione di ancoraggio, importazione di ancoraggio
-ms.openlocfilehash: 6d54b29a01617f9d78b7fdfec0ebc04a3cd48002
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 5007220f480a3093864502e624737e9707bd3952
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684476"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009651"
 ---
 # <a name="local-anchor-transfers-in-directx"></a>Trasferimenti di ancoraggio locali in DirectX
 
@@ -31,7 +31,7 @@ Si noti che gli ancoraggi spaziali non sono in grado di trasferire tra tipi di d
 
 ## <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>Configurare l'app per l'uso della funzionalità spatialPerception
 
-È necessario concedere all'app l'autorizzazione per usare la funzionalità spatialPerception prima di poter usare [SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx). Questa operazione è necessaria perché il trasferimento di un ancoraggio spaziale comporta la condivisione delle immagini del sensore raccolte nel tempo in prossimità di tale ancoraggio, che potrebbero includere informazioni riservate.
+È necessario concedere all'app l'autorizzazione per usare la funzionalità SpatialPerception prima di poter usare [SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx). Questa operazione è necessaria perché il trasferimento di un ancoraggio spaziale comporta la condivisione delle immagini del sensore raccolte nel tempo in prossimità di tale ancoraggio, che potrebbero includere informazioni riservate.
 
 Dichiarare questa funzionalità nel file Package. appxmanifest per l'app. Ecco un esempio:
 

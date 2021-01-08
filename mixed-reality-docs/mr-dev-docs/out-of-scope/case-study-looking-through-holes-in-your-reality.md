@@ -1,17 +1,17 @@
 ---
 title: Case study - Guardare attraverso fori nella realtà
-description: In questo case study viene illustrato come implementare l'effetto "finestra magica" in HoloLens, che consente all'utente di vedere dietro le pareti, sotto il pavimento e in aperture virtuali all'interno dell'ambiente effettivo.
+description: In questo case study viene illustrata l'implementazione dell'effetto "finestra magica" in HoloLens, che consente all'utente di vedere dietro le pareti, sotto il pavimento e in aperture virtuali.
 author: ericrehmeyer
 ms.author: bestruku
 ms.date: 10/18/2019
 ms.topic: article
 keywords: Realtà mista di Windows, HoloLens, Magic Window, parallasse
-ms.openlocfilehash: 84af124cc69e03b3502cee55c694b11ff5c9433b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 018e45a79d88cbc8e28204f023106fbe5dae39bc
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687428"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010111"
 ---
 # <a name="case-study---looking-through-holes-in-your-reality"></a>Case study - Guardare attraverso fori nella realtà
 
@@ -19,7 +19,7 @@ Quando le persone pensano alla realtà mista e a cosa possono fare con Microsoft
 
 ## <a name="the-tech"></a>Il Tech
 
-Se si hanno combattuto gli stranieri durante l'attraversamento dei muri in **[RoboRaid](https://www.youtube.com/watch?v=Hf9qkURqtbM)** , è stato sbloccato un muro sicuro nei **[frammenti](case-study-creating-an-immersive-experience-in-fragments.md)** oppure è stato abbastanza fortunato per vedere il UNSC Infinity hangar nell' **[esperienza di Halo 5 all'E3 nel 2015](https://www.youtube.com/watch?v=QDw5QjDtFy8)** , si è visto che cosa sto parlando. A seconda dell'immaginazione, questo espediente visivo può essere usato per inserire buchi temporanei nel muro a secco o per nascondere i mondi in un listello separato.
+Se si hanno combattuto gli stranieri durante l'attraversamento dei muri in **[RoboRaid](https://www.youtube.com/watch?v=Hf9qkURqtbM)**, è stato sbloccato un muro sicuro nei **[frammenti](case-study-creating-an-immersive-experience-in-fragments.md)** oppure è stato abbastanza fortunato per vedere il UNSC Infinity hangar nell' **[esperienza di Halo 5 all'E3 nel 2015](https://www.youtube.com/watch?v=QDw5QjDtFy8)**, si è visto che cosa sto parlando. A seconda dell'immaginazione, questo espediente visivo può essere usato per inserire buchi temporanei nel muro a secco o per nascondere i mondi in un listello separato.
 
 ![RoboRaid aggiunge le pipe tridimensionali e altre strutture dietro le pareti, visibili solo attraverso buchi creati come interruzioni degli invasori.](../develop/unity/images/roboraid-640px.png)
 

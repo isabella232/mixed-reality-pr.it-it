@@ -1,18 +1,18 @@
 ---
 title: Domande frequenti su HP Reverb G2
-description: Domande frequenti sull'uso di HP Reverb G2 Headset
+description: È possibile rimanere sempre aggiornati sulle domande frequenti sull'uso di HP reverbi G2 Headset con auricolari immersivi con la realtà mista di Windows.
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto tecnico, prestazioni
 appliesto:
 - Windows 10
-ms.openlocfilehash: 55baf3f076b8cf0f815f899658b3bbe61292e267
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 00338e1354dc04acc76fa2525c721a5e2bd4afe2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725902"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009471"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Domande frequenti su HP Reverb G2
 

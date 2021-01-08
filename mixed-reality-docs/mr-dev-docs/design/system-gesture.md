@@ -1,17 +1,17 @@
 ---
 title: Azione di avvio
-description: Avviare il gesto per chiamare il menu Start.
+description: Informazioni su come usare il gesto di avvio per chiamare il menu Start in HoloLens e gli auricolari immersivi con la realtà mista di Windows.
 author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Realtà mista, movimenti, interazione, progettazione, cuffie per realtà mista, cuffie con realtà mista di Windows, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, Bloom
-ms.openlocfilehash: 9df8d54dcf63c13dedabdbf55300b3516a2c9bf1
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9e29d483375db103cebc30be9117e40899a9f81f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848159"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009431"
 ---
 # <a name="start-gesture"></a>Azione di avvio
 
@@ -114,7 +114,7 @@ In HoloLens 2, il movimento Bloom è stato sostituito con un pulsante di polso v
 
 ---
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Interazioni istintive](interaction-fundamentals.md)
 * [Sguardo attento](eye-tracking.md)

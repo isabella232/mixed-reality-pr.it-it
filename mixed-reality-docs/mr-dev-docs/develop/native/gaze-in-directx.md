@@ -1,17 +1,17 @@
 ---
 title: Puntamento con la testa e sguardo fisso in DirectX
-description: Informazioni su come usare il controllo degli sguardi e il rilevamento degli occhi nelle app DirectX native.
+description: Informazioni su come richiedere, usare e decomprimere i dati di Raycasting da sguardi e rilevamento degli occhi nelle app DirectX native.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: occhi, sguardi, Head-sguardi, tracking, tracking, Eye Tracking, DirectX, input, ologrammi, cuffie per realtà mista, cuffie per la realtà mista di Windows, cuffie per realtà virtuale
-ms.openlocfilehash: 4d7ed9b735b5f3cd7029e42ccc75bc539e3c4f4b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a518e5e4153da9c58295abb257a8ed2d69145211
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848094"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009551"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>Input occhi e sguardi in DirectX
 
@@ -27,6 +27,7 @@ Per quanto riguarda la realtà mista di Windows, viene usato l'input occhi e occ
 I raggi Head e sguardi sono accessibili tramite l'API  [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) . Chiamare [SpatialPointerPose:: TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) per ricevere un nuovo oggetto SpatialPointerPose in corrispondenza del timestamp e del [sistema di coordinate](coordinate-systems-in-directx.md)specificati. Questo SpatialPointerPose contiene un'origine e una direzione per lo sguardo del capo. Contiene anche un'origine e una direzione degli sguardi se è disponibile la verifica degli occhi.
 
 ### <a name="device-support"></a>Supporto di dispositivi
+
 <table>
 <colgroup>
     <col width="25%" />
@@ -216,7 +217,7 @@ Gli sviluppatori devono garantire un supporto adeguato per gli utenti in cui i d
 
 <br>
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Calibrazione](../../calibration.md)
 * [Sistemi di coordinate in DirectX](coordinate-systems-in-directx.md)

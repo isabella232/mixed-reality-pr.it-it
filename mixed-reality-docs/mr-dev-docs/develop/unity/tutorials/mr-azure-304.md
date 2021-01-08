@@ -1,17 +1,17 @@
 ---
 title: 'MR and Azure 304: Riconoscimento volto'
-description: Completare questo corso per implementare il riconoscimento viso di Azure in un'applicazione di realtà mista.
+description: Completa questo corso per informazioni su come implementare il riconoscimento volto di Azure in un'applicazione di realtà mista.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realtà mista, Accademia, Unity, esercitazione, API, riconoscimento viso, hololens, immersiva, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 8e1420e5764e7330026731ffb4f0c180604c2789
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a6578950039a0a9267b7191f5b96775dca366c01
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679830"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010151"
 ---
 # <a name="mr-and-azure-304-face-recognition"></a>MR e Azure 304: Riconoscimento del volto
 

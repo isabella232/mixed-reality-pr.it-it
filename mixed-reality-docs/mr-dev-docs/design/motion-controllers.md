@@ -1,17 +1,17 @@
 ---
 title: Controller del movimento
-description: Dettagli sui controller di movimento della realtà mista.
+description: Informazioni su come configurare, associare e dirigere le interazioni di input usando controller di movimento della realtà mista nelle applicazioni.
 author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: controller 6DOF, controller di movimento, cuffie per realtà mista, cuffie per la realtà mista di Windows, auricolare della realtà virtuale, HoloLens, scorrimento, grip, stato
-ms.openlocfilehash: 768e316f175769d7399866b0b7cc62ee8c5c2cde
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2dbe0ab0b83b371a88e419e7b223f30670bfeaea
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847444"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009711"
 ---
 # <a name="motion-controllers"></a>Controller del movimento
 
@@ -213,8 +213,6 @@ Le app che desiderano gestire le posizioni in modo diverso in base allo stato di
 </tr>
 </table>
 
-
-
 Questi stati di rilevamento del controller di movimento sono definiti come segue:
 * **Accuratezza elevata:** Mentre il controller di movimento si trova all'interno del campo di visualizzazione dell'auricolare, in genere fornisce posizioni con accuratezza elevata, in base al rilevamento visivo. Un controller che sposta temporaneamente il campo di visualizzazione o è temporaneamente nascosto dai sensori dell'auricolare (ad esempio, dall'altra parte dell'utente) continuerà a restituire le pose con precisione elevata per un breve periodo di tempo, in base al rilevamento inerziale del controller stesso.
 * **Accuratezza elevata (a rischio di perdita):** Quando l'utente sposta il controller di movimento oltre il bordo del campo di visualizzazione dell'auricolare, l'auricolare non sarà presto in grado di rilevare visivamente la posizione del controller. L'app sa quando il controller ha raggiunto questo limite FOV visualizzando il **SourceLossRisk** REACH 1,0. A questo punto, l'app può scegliere di sospendere i movimenti del controller che richiedono un flusso costante di pose di alta qualità.
@@ -277,7 +275,8 @@ Vedere la pagina relativa alla [risoluzione dei problemi di motion controller](h
 
 [Inviare commenti e suggerimenti](../give-us-feedback.md) nell'hub feedback, usando la categoria "Mixed Reality-> input".
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
+
 * [Movimenti e controller del movimento in Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md)
 * [Mani e controller del movimento in DirectX](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [Movimenti](gaze-and-commit.md#composite-gestures)

@@ -1,17 +1,17 @@
 ---
 title: Perdita del rilevamento in Unity
-description: Gestione della perdita di rilevamento all'interno di un'app Unity.
+description: Informazioni su come gestire la perdita di rilevamento manuale e predefinita in un'app per realtà mista Unity.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, perdita di rilevamento, immagine della perdita del rilevamento, polling, auricolare a realtà mista, auricolare di realtà mista di Windows, auricolare di realtà virtuale
-ms.openlocfilehash: 1df9f579abf43576284d065afa091bb26c631482
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 39ce4e079886b27ed35c419a3b3913c6700e0d32
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010052"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009851"
 ---
 # <a name="tracking-loss-in-unity"></a>Perdita del rilevamento in Unity
 
@@ -37,7 +37,7 @@ Quando si gestiscono le modifiche di rilevamento autonomamente, è necessario es
 
 ### <a name="polling"></a>Polling
 
-Lo stato più importante è *PositionalLocatorState. Active*, che significa che il rilevamento è completamente funzionante. Qualsiasi altro stato comporterà solo Delta rotazionali alla fotocamera principale. Esempio:
+Lo stato più importante è *PositionalLocatorState. Active*, che significa che il rilevamento è completamente funzionante. Qualsiasi altro stato comporterà solo Delta rotazionali alla fotocamera principale. Ad esempio:
 
 ```cs
 void Update()
@@ -82,4 +82,5 @@ private void WorldManager_OnPositionalLocatorStateChanged(PositionalLocatorState
 ```
 
 ## <a name="see-also"></a>Vedere anche
+
 * [Gestione della perdita di rilevamento in DirectX](../native/coordinate-systems-in-directx.md#handling-tracking-loss)

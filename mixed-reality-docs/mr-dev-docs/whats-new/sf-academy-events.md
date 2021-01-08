@@ -1,17 +1,17 @@
 ---
 title: Mixed Reality Speaker Series
-description: Calendario degli eventi di sviluppo di realtà mista nel reattore a San Francisco.
+description: È possibile rimanere sempre aggiornati sul calendario degli eventi di sviluppo di realtà mista nel reattore a San Francisco.
 author: danielescudero
 ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: evento, calendario, Accademia, pianificazione, SF, San Francisco, Reactor
-ms.openlocfilehash: 169af00c61d1eeb5af6b0ea1249f5f4c3083a9f3
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: ce0fb818547af70252e7387a910207e333407363
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757429"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010001"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Eventi di realtà mista Microsoft
 
@@ -19,7 +19,7 @@ Partecipa al team Microsoft Mixed Reality in questi prossimi eventi.
 
 <br>
 
-|Event|Data|Tema|
+|Evento|Data|Tema|
 |-------------|-------------|-----|
 | Mixed Reality Speaker Series|23 aprile 2020|[Aumento del Web](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Augmenting-WebXR-Standards)|
 | Mixed Reality Speaker Series|22 giugno 2020|[Creazione di esperienze didattiche con MR](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Educational-Experiences-in-MR)|
@@ -32,5 +32,3 @@ Partecipa al team Microsoft Mixed Reality in questi prossimi eventi.
 | Mixed Reality Speaker Series|22 ottobre 2020|[Introduzione a WebXR con BabylonJS](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
 | Mixed Reality Speaker Series|17 novembre 2020|[Creazione del futuro: novità di MRTK](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
 | Mixed Reality Speaker Series|1 dicembre 2020|[Progettazione di ologrammi]()|
-
-

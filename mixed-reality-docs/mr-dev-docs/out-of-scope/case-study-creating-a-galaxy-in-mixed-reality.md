@@ -1,17 +1,17 @@
 ---
 title: Case Study-creazione di una galassia in realtà mista
-description: Prima che Microsoft HoloLens spedito, abbiamo chiesto al nostro community di sviluppatori quale tipo di app vorrebbero vedere un'esperienza di Team Build interna per il nuovo dispositivo. Sono state condivise più di 5000 idee e dopo un sondaggio Twitter di 24 ore, il vincitore era un'idea denominata "Galaxy Explorer".
+description: Informazioni sull'applicazione "Galaxy Explorer" e su come è stata creata per il HoloLens Microsft e dopo un sondaggio Twitter di 24 ore da parte degli sviluppatori della community.
 author: karimluccin
 ms.author: kaluccin
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Galaxy Explorer, HoloLens, realtà mista di Windows, Condividi la tua idea case study
-ms.openlocfilehash: 91e1c356d69d2b58795a0a0003dd5ffaf0ef1bdc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 0226c38e9fa21407a7a6529693a2adb3c5da7659
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687524"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009781"
 ---
 # <a name="case-study---creating-a-galaxy-in-mixed-reality"></a>Case Study-creazione di una galassia in realtà mista
 
@@ -41,7 +41,7 @@ Sono stati avviati test di stress con migliaia di particelle puntiformi in vari 
 
 ### <a name="creating-the-position-of-the-stars"></a>Creazione della posizione delle stelle
 
-Uno dei membri del team ha già scritto il codice C# che genera stelle nella posizione iniziale. Le stelle si trovano su un'ellisse e la loro posizione può essere descritta da ( **curveOffset** , **ellipseSize** , **elevazione** ) dove **curveOffset** è l'angolo della stella lungo l'ellisse, **ellipseSize** è la dimensione dell'ellisse lungo X e Z ed elevazione dell'elevazione corretta della stella all'interno della galassia. In questo modo, è possibile creare un buffer ([ComputeBuffer di Unity](https://docs.unity3d.com/ScriptReference/ComputeBuffer.html)) che verrebbe inizializzato con ogni attributo Star e lo invierà alla GPU in cui risiederà per il resto dell'esperienza. Per creare questo buffer, viene usato [DrawProcedural di Unity](https://docs.unity3d.com/ScriptReference/Graphics.DrawProcedural.html) che consente l'esecuzione di uno shader (codice su una GPU) in un set arbitrario di punti senza avere una mesh effettiva che rappresenti la galassia:
+Uno dei membri del team ha già scritto il codice C# che genera stelle nella posizione iniziale. Le stelle si trovano su un'ellisse e la loro posizione può essere descritta da (**curveOffset**, **ellipseSize**, **elevazione**) dove **curveOffset** è l'angolo della stella lungo l'ellisse, **ellipseSize** è la dimensione dell'ellisse lungo X e Z ed elevazione dell'elevazione corretta della stella all'interno della galassia. In questo modo, è possibile creare un buffer ([ComputeBuffer di Unity](https://docs.unity3d.com/ScriptReference/ComputeBuffer.html)) che verrebbe inizializzato con ogni attributo Star e lo invierà alla GPU in cui risiederà per il resto dell'esperienza. Per creare questo buffer, viene usato [DrawProcedural di Unity](https://docs.unity3d.com/ScriptReference/Graphics.DrawProcedural.html) che consente l'esecuzione di uno shader (codice su una GPU) in un set arbitrario di punti senza avere una mesh effettiva che rappresenti la galassia:
 
 **CPU**
 
@@ -85,14 +85,14 @@ Una volta aggiunti i puntini di sospensione sufficienti e impostati per la rotaz
 
 ### <a name="creating-the-motion-of-the-stars"></a>Creazione del movimento delle stelle
 
-Per animare il movimento a stella generale, è necessario aggiungere un angolo costante per ogni fotogramma e ottenere le stelle che si spostano lungo i puntini di sospensione a una velocità radiale costante. Questo è il motivo principale per l'uso di **curveOffset** . Questa operazione non è tecnicamente corretta perché le stelle si muovono più velocemente lungo i lati lunghi dei puntini di sospensione, ma il movimento generale si è ritenuto positivo.
+Per animare il movimento a stella generale, è necessario aggiungere un angolo costante per ogni fotogramma e ottenere le stelle che si spostano lungo i puntini di sospensione a una velocità radiale costante. Questo è il motivo principale per l'uso di **curveOffset**. Questa operazione non è tecnicamente corretta perché le stelle si muovono più velocemente lungo i lati lunghi dei puntini di sospensione, ma il movimento generale si è ritenuto positivo.
 
 ![Le stelle si muovono più velocemente nell'arco lungo, più lentamente sui bordi.](images/ellipse-movement.jpg)
 
 Le stelle si muovono più velocemente nell'arco lungo, più lentamente sui bordi.
 
 
-A tale scopo, ogni stella viene descritta in modo completo da ( **curveOffset** , **ellipseSize** , **Elevation** , **Age** ) in cui **Age** è un accumulo del tempo totale trascorso dal momento in cui la scena è stata caricata.
+A tale scopo, ogni stella viene descritta in modo completo da (**curveOffset**, **ellipseSize**, **Elevation**, **Age**) in cui **Age** è un accumulo del tempo totale trascorso dal momento in cui la scena è stata caricata.
 
 
 

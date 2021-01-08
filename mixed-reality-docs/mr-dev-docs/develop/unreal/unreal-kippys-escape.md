@@ -1,6 +1,6 @@
 ---
 title: Creazione dell'escape di Kippy
-description: Seguici durante l'esplorazione del processo di escape di Kippy per HoloLens 2 in Unreal Engine.
+description: Seguici durante l'esplorazione della creazione dell'applicazione di escape Mixed Reality Kippy per HoloLens 2 in Unreal Engine.
 author: sw5813
 ms.author: suwu
 ms.date: 9/4/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, distribuzione su dispositivo, PC, documentazione, auricolare realtà mista, headset di realtà mista di Windows, auricolare della realtà virtuale
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: eaba6ea1ee77ffffb74008402eafd1f09fd822e5
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: df199b6a3215158e15fb1252dd75c58aea5bc2ab
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609682"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010041"
 ---
 # <a name="the-making-of-kippys-escape"></a>Creazione dell'escape di Kippy
 
@@ -21,8 +21,6 @@ Kippy il robot si riattiva per trovarsi in un'isola. L'utente deve mettere in pr
 
 > [!IMPORTANT]
 > Assicurarsi di usare **Unreal Engine 4,25 o versione successiva** se si sta creando l'escape di Kippy dal repository GitHub.
-
-## <a name="overview"></a>Panoramica
 
 L'escape di Kippy è un'app di esempio [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware) Open Source compilata con Unreal Engine 4 e [gli strumenti UX per la realtà mista per Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). In questo post verrà illustrata la procedura da seguire per i primi principi e la progettazione visiva per l'implementazione e l'ottimizzazione dell'esperienza. È possibile trovare altre informazioni sullo sviluppo di applicazioni di realtà miste con gli strumenti UX MRTK nella [Panoramica dello sviluppo non reale](unreal-development-overview.md).
 

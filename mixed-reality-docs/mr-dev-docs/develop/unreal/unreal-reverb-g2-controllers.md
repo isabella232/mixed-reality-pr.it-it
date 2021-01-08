@@ -1,17 +1,17 @@
 ---
 title: Controller di HP Reverb G2 in Unreal
-description: Istruzioni sull'uso dei controller HP Reverb G2 in OpenXR e SteamVR
+description: Informazioni su come usare i nuovi controller di HP Reverb G2 in OpenXR e SteamVR per le applicazioni di realtà mista non reali.
 author: hferrone
 ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
 keywords: Unreal Engine 4, UE4, Reverb, Reverb G2, HP reverbi G2, realtà mista, sviluppo, controller di movimento, input utente, funzionalità, nuovo progetto, emulatore, documentazione, guide, funzionalità, ologrammi, sviluppo di giochi, cuffie per realtà mista, headset di realtà mista, auricolare della realtà virtuale
-ms.openlocfilehash: 419f5b803a6abb2b19080807ef9f403b96758683
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 83ff19c0527ee2d10a4f00ccd84539ca16d05517
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609592"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009991"
 ---
 # <a name="hp-reverb-g2-controllers-in-unreal"></a>Controller di HP Reverb G2 in Unreal 
 

@@ -1,17 +1,17 @@
 ---
 title: Mani e controller del movimento in DirectX
-description: Guida per gli sviluppatori per l'uso del controllo della mano e dei controller di movimento nelle app DirectX native.
+description: Introduzione alla guida per gli sviluppatori per l'uso del controllo della mano e dei controller di movimento nelle app DirectX native.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Hands, controller di movimento, DirectX, input, ologrammi, cuffie per la realtà mista, cuffie di realtà mista di Windows, cuffie per realtà virtuale
-ms.openlocfilehash: 52fc8f054ee4a4a57374c90fc31703b749d498de
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 43673602b01a1937953d16fcca9b4c4f4d3fd33a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613055"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009541"
 ---
 # <a name="hands-and-motion-controllers-in-directx"></a>Mani e controller del movimento in DirectX
 
@@ -104,14 +104,14 @@ L'API SpatialInteractionSource supporta i controller e i sistemi di rilevamento 
 
 | Proprietà | Descrizione | Movimenti di HoloLens (1a generazione) | Controller di movimento | Mano articolata|
 |--- |--- |--- |--- |--- |
-| [SpatialInteractionSource::**manualità**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | A destra o a sinistra/controller. | Non supportato | Supportato | Supportato |
+| [SpatialInteractionSource::**manualità**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | A destra o a sinistra/controller. | Non supportato | Supportato | Funzionalità supportata |
 | [SpatialInteractionSourceState::**IsSelectPressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isselectpressed) | Stato corrente del pulsante primario. | Rubinetto aereo | Trigger | Tocco aria rilassato (tocco verticale) |
 | [SpatialInteractionSourceState:: è stato **afferrato**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isgrasped) | Stato corrente del pulsante di cattura. | Non supportato | Pulsante di cattura | Pinza o chiusa |
 | [SpatialInteractionSourceState::**IsMenuPressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.ismenupressed) | Stato corrente del pulsante di menu.    | Non supportato | Pulsante di menu | Non supportato |
 | [SpatialInteractionSourceLocation::**position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.position) | Posizione XYZ della mano o della posizione del grip sul controller. | Percorso Palm | Posizione del grip | Percorso Palm |
 | [SpatialInteractionSourceLocation::**Orientation**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.orientation) | Quaternione che rappresenta l'orientamento della mano o della posizione del grip sul controller. | Non supportato | Orientamento della posizione del grip | Orientamento Palm |
-| [SpatialPointerInteractionSourcePose::**position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.position#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_Position) | Origine del raggio di puntamento. | Non supportato | Supportato | Supportato |
-| [SpatialPointerInteractionSourcePose::**ForwardDirection**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.forwarddirection#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_ForwardDirection) | Direzione del raggio di puntamento. | Non supportato | Supportato | Supportato |
+| [SpatialPointerInteractionSourcePose::**position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.position#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_Position) | Origine del raggio di puntamento. | Non supportato | Supportato | Funzionalità supportata |
+| [SpatialPointerInteractionSourcePose::**ForwardDirection**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.forwarddirection#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_ForwardDirection) | Direzione del raggio di puntamento. | Non supportato | Supportato | Funzionalità supportata |
 
 Alcune delle proprietà indicate sopra non sono disponibili in tutti i dispositivi e l'API fornisce un mezzo per testarlo. Ad esempio, è possibile esaminare la proprietà [SpatialInteractionSource:: IsGraspSupported](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.isgraspsupported) per determinare se l'origine fornisce un'azione di comprensione.
 
@@ -149,7 +149,7 @@ Oltre ai 25 giunti gerarchici, il sistema fornisce un insieme di Palm.  Il Palm 
 
 Per ogni giunzione vengono fornite le informazioni seguenti:
 
-| Name | Descrizione |
+| Nome | Descrizione |
 |--- |--- |
 |Posizione | posizione 3D del giunto, disponibile in qualsiasi sistema di coordinate richiesto. |
 |Orientamento | orientamento 3D dell'osso, disponibile in qualsiasi sistema di coordinate richiesto. |

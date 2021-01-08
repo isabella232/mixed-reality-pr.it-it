@@ -1,17 +1,17 @@
 ---
 title: Processo di creazione degli asset
-description: Linee guida per la creazione di asset per esperienze di realtà miste.
+description: Informazioni su come creare, acquistare e trasferire asset per esperienze di realtà miste.
 author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Asset, creazione, processo, Budget, poligoni, trame, shader, prestazioni, cuffie per realtà mista, cuffie per la realtà mista di Windows, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, asset
-ms.openlocfilehash: 2089ac7a870d9b4b13d314774d6d6124b78bb15c
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a5f4271de522111b0ef994869b9ecf4910582562
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847551"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009620"
 ---
 # <a name="asset-creation-process"></a>Processo di creazione degli asset
 
