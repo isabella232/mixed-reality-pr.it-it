@@ -1,26 +1,25 @@
 ---
-title: "Case Study: creazione di un'esperienza immersiva nei frammenti"
+title: 'Case Study: creazione di esperienze immersive nei frammenti'
 description: Frammenti è un dramma Interactive Crime per Microsoft HoloLens, in cui si seguono gli indizi per risolvere un mistero che si verifica nello spazio reale.
 author: mattzmsft
 ms.author: miharnis
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Frammenti, HoloLens, realtà mista di Windows
-ms.openlocfilehash: 85b7ebb57239bd8e90e19f42cf75e439dfcbdf02
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: a212f5e9f3b95ccf047c7a6118d59c74c6edc719
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690949"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009661"
 ---
-# <a name="case-study---creating-an-immersive-experience-in-fragments"></a><span data-ttu-id="356a7-104">Case Study: creazione di un'esperienza immersiva nei frammenti</span><span class="sxs-lookup"><span data-stu-id="356a7-104">Case study - Creating an immersive experience in Fragments</span></span>
+# <a name="case-study---creating-an-immersive-experience-in-fragments"></a><span data-ttu-id="e14ef-104">Case Study: creazione di un'esperienza immersiva nei frammenti</span><span class="sxs-lookup"><span data-stu-id="e14ef-104">Case study - Creating an immersive experience in Fragments</span></span>
 
-<span data-ttu-id="356a7-105">Frammenti è un dramma Interactive Crime per Microsoft HoloLens, in cui si seguono gli indizi per risolvere un mistero che si verifica nello spazio reale.</span><span class="sxs-lookup"><span data-stu-id="356a7-105">Fragments is an interactive crime drama for Microsoft HoloLens, where you follow the clues to solve a mystery that takes place in your real-world space.</span></span> <span data-ttu-id="356a7-106">Scopri in che modo il team di sviluppo dei frammenti usava le funzionalità esclusive di HoloLens per immergere i giocatori nell'azione, inserendoli direttamente al centro della storia.</span><span class="sxs-lookup"><span data-stu-id="356a7-106">Find out how the Fragments development team used the unique features of HoloLens to immerse players in the action, putting them directly in the center of the story.</span></span>
-
-
+<span data-ttu-id="e14ef-105">Frammenti è un dramma Interactive Crime per Microsoft HoloLens, in cui si seguono gli indizi per risolvere un mistero che si verifica nello spazio reale.</span><span class="sxs-lookup"><span data-stu-id="e14ef-105">Fragments is an interactive crime drama for Microsoft HoloLens, where you follow the clues to solve a mystery that takes place in your real-world space.</span></span> <span data-ttu-id="e14ef-106">Scopri in che modo il team di sviluppo dei frammenti usava le funzionalità esclusive di HoloLens per immergere i giocatori nell'azione, inserendoli direttamente al centro della storia.</span><span class="sxs-lookup"><span data-stu-id="e14ef-106">Find out how the Fragments development team used the unique features of HoloLens to immerse players in the action, putting them directly in the center of the story.</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/9ULJV4G5XkA]
 
-## <a name="see-also"></a><span data-ttu-id="356a7-107">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="356a7-107">See also</span></span>
-* [<span data-ttu-id="356a7-108">Mapping spaziale</span><span class="sxs-lookup"><span data-stu-id="356a7-108">Spatial mapping</span></span>](../design/spatial-mapping.md)
-* [<span data-ttu-id="356a7-109">Frammenti per Microsoft HoloLens</span><span class="sxs-lookup"><span data-stu-id="356a7-109">Fragments for Microsoft HoloLens</span></span>](https://www.microsoft.com/p/fragments/9nblggh5ggm8)
+## <a name="see-also"></a><span data-ttu-id="e14ef-107">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="e14ef-107">See also</span></span>
+
+* [<span data-ttu-id="e14ef-108">Mapping spaziale</span><span class="sxs-lookup"><span data-stu-id="e14ef-108">Spatial mapping</span></span>](../design/spatial-mapping.md)
+* [<span data-ttu-id="e14ef-109">Frammenti per Microsoft HoloLens</span><span class="sxs-lookup"><span data-stu-id="e14ef-109">Fragments for Microsoft HoloLens</span></span>](https://www.microsoft.com/p/fragments/9nblggh5ggm8)

@@ -1,50 +1,50 @@
 ---
 title: Trasferimenti di ancoraggio locali in Unity
-description: Trasferire gli ancoraggi tra più dispositivi HoloLens in un'applicazione Unity.
+description: Informazioni su come trasferire ancoraggi tra più dispositivi HoloLens in un'applicazione di realtà mista Unity.
 author: fieldsjacksong
 ms.author: jacksonf
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Sharing, Anchor, WorldAnchor, MR sharing 250, WorldAnchorTransferBatch, SpatialPerception, Transfer, local Anchor Transfer, Anchor Export, Anchor import
-ms.openlocfilehash: d6aebfb89d05926b1f773dea58ee65fead57988e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1048e6a3cfc41a04cd49e201e5d1841e805a4193
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690764"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009641"
 ---
-# <a name="local-anchor-transfers-in-unity"></a><span data-ttu-id="4407e-104">Trasferimenti di ancoraggio locali in Unity</span><span class="sxs-lookup"><span data-stu-id="4407e-104">Local anchor transfers in Unity</span></span>
+# <a name="local-anchor-transfers-in-unity"></a><span data-ttu-id="a99f4-104">Trasferimenti di ancoraggio locali in Unity</span><span class="sxs-lookup"><span data-stu-id="a99f4-104">Local anchor transfers in Unity</span></span>
 
-<span data-ttu-id="4407e-105">Nei casi in cui non è possibile usare gli <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">ancoraggi spaziali di Azure</a>, i trasferimenti di ancoraggio locali consentono a un dispositivo HoloLens di esportare un ancoraggio per l'importazione da parte di un secondo dispositivo HoloLens.</span><span class="sxs-lookup"><span data-stu-id="4407e-105">In situations where you cannot use <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>, local anchor transfers enable one HoloLens device to export an anchor to be imported by a second HoloLens device.</span></span>
-
->[!NOTE]
-><span data-ttu-id="4407e-106">I trasferimenti di ancoraggio locali forniscono un richiamo di ancoraggio meno affidabile rispetto agli <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">ancoraggi spaziali di Azure</a>e i dispositivi iOS e Android non sono supportati da questo approccio.</span><span class="sxs-lookup"><span data-stu-id="4407e-106">Local anchor transfers provide less robust anchor recall than <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>, and iOS and Android devices are not supported by this approach.</span></span>
-
-### <a name="setting-the-spatialperception-capability"></a><span data-ttu-id="4407e-107">Impostazione della funzionalità SpatialPerception</span><span class="sxs-lookup"><span data-stu-id="4407e-107">Setting the SpatialPerception capability</span></span>
-
-<span data-ttu-id="4407e-108">Per consentire a un'app di trasferire ancoraggi spaziali, è necessario abilitare la funzionalità *SpatialPerception* .</span><span class="sxs-lookup"><span data-stu-id="4407e-108">In order for an app to transfer spatial anchors, the *SpatialPerception* capability must be enabled.</span></span>
-
-<span data-ttu-id="4407e-109">Come abilitare la funzionalità *SpatialPerception* :</span><span class="sxs-lookup"><span data-stu-id="4407e-109">How to enable the *SpatialPerception* capability:</span></span>
-1. <span data-ttu-id="4407e-110">Nell'editor di Unity aprire il riquadro **"Impostazioni lettore"** (modificare > impostazioni progetto > lettore)</span><span class="sxs-lookup"><span data-stu-id="4407e-110">In the Unity Editor, open the **"Player Settings"** pane (Edit > Project Settings > Player)</span></span>
-2. <span data-ttu-id="4407e-111">Fare clic sulla scheda **"Windows Store"**</span><span class="sxs-lookup"><span data-stu-id="4407e-111">Click on the **"Windows Store"** tab</span></span>
-3. <span data-ttu-id="4407e-112">Espandere **"impostazioni di pubblicazione"** e selezionare la funzionalità **"SpatialPerception"** nell'elenco **"funzionalità"**</span><span class="sxs-lookup"><span data-stu-id="4407e-112">Expand **"Publishing Settings"** and check the **"SpatialPerception"** capability in the **"Capabilities"** list</span></span>
+<span data-ttu-id="a99f4-105">Nei casi in cui non è possibile usare gli <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">ancoraggi spaziali di Azure</a>, i trasferimenti di ancoraggio locali consentono a un dispositivo HoloLens di esportare un ancoraggio per l'importazione da parte di un secondo dispositivo HoloLens.</span><span class="sxs-lookup"><span data-stu-id="a99f4-105">In situations where you cannot use <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>, local anchor transfers enable one HoloLens device to export an anchor to be imported by a second HoloLens device.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="4407e-113">Se il progetto Unity è già stato esportato in una soluzione di Visual Studio, sarà necessario eseguire l'esportazione in una nuova cartella o [impostare manualmente questa funzionalità in appxmanifest in Visual Studio](local-anchor-transfers-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).</span><span class="sxs-lookup"><span data-stu-id="4407e-113">If you have already exported your Unity project to a Visual Studio solution, you will need to either export to a new folder or manually [set this capability in the AppxManifest in Visual Studio](local-anchor-transfers-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).</span></span>
+><span data-ttu-id="a99f4-106">I trasferimenti di ancoraggio locali forniscono un richiamo di ancoraggio meno affidabile rispetto agli <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">ancoraggi spaziali di Azure</a>e i dispositivi iOS e Android non sono supportati da questo approccio.</span><span class="sxs-lookup"><span data-stu-id="a99f4-106">Local anchor transfers provide less robust anchor recall than <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>, and iOS and Android devices are not supported by this approach.</span></span>
 
-### <a name="anchor-transfer"></a><span data-ttu-id="4407e-114">Trasferimento di ancoraggio</span><span class="sxs-lookup"><span data-stu-id="4407e-114">Anchor Transfer</span></span>
+### <a name="setting-the-spatialperception-capability"></a><span data-ttu-id="a99f4-107">Impostazione della funzionalità SpatialPerception</span><span class="sxs-lookup"><span data-stu-id="a99f4-107">Setting the SpatialPerception capability</span></span>
 
-<span data-ttu-id="4407e-115">**Spazio dei nomi:** *UnityEngine. XR. WSA. sharing*</span><span class="sxs-lookup"><span data-stu-id="4407e-115">**Namespace:** *UnityEngine.XR.WSA.Sharing*</span></span><br>
-<span data-ttu-id="4407e-116">**Tipo** : *WorldAnchorTransferBatch*</span><span class="sxs-lookup"><span data-stu-id="4407e-116">**Type** : *WorldAnchorTransferBatch*</span></span>
+<span data-ttu-id="a99f4-108">Per consentire a un'app di trasferire ancoraggi spaziali, è necessario abilitare la funzionalità *SpatialPerception* .</span><span class="sxs-lookup"><span data-stu-id="a99f4-108">In order for an app to transfer spatial anchors, the *SpatialPerception* capability must be enabled.</span></span>
 
-<span data-ttu-id="4407e-117">Per trasferire un [WorldAnchor](../develop/unity/coordinate-systems-in-unity.md), è necessario stabilire l'ancoraggio da trasferire.</span><span class="sxs-lookup"><span data-stu-id="4407e-117">To transfer a [WorldAnchor](../develop/unity/coordinate-systems-in-unity.md), one must establish the anchor to be transferred.</span></span> <span data-ttu-id="4407e-118">L'utente di un HoloLens analizza l'ambiente e sceglie manualmente o a livello di codice un punto nello spazio come ancoraggio per l'esperienza condivisa.</span><span class="sxs-lookup"><span data-stu-id="4407e-118">The user of one HoloLens scans their environment and either manually or programmatically chooses a point in space to be the Anchor for the shared experience.</span></span> <span data-ttu-id="4407e-119">I dati che rappresentano questo punto possono quindi essere serializzati e trasmessi agli altri dispositivi che condividono nell'esperienza.</span><span class="sxs-lookup"><span data-stu-id="4407e-119">The data that represents this point can then be serialized and transmitted to the other devices that are sharing in the experience.</span></span> <span data-ttu-id="4407e-120">Ogni dispositivo deserializza quindi i dati di ancoraggio e tenta di individuare il punto nello spazio.</span><span class="sxs-lookup"><span data-stu-id="4407e-120">Each device then de-serializes the anchor data and attempts to locate that point in space.</span></span> <span data-ttu-id="4407e-121">Per il corretto funzionamento del trasferimento di ancoraggio, è necessario che ogni dispositivo abbia eseguito una scansione sufficiente dell'ambiente, in modo che sia possibile identificare il punto rappresentato dall'ancoraggio.</span><span class="sxs-lookup"><span data-stu-id="4407e-121">In order for Anchor Transfer to work, each device must have scanned in enough of the environment such that the point represented by the anchor can be identified.</span></span>
+<span data-ttu-id="a99f4-109">Come abilitare la funzionalità *SpatialPerception* :</span><span class="sxs-lookup"><span data-stu-id="a99f4-109">How to enable the *SpatialPerception* capability:</span></span>
+1. <span data-ttu-id="a99f4-110">Nell'editor di Unity aprire il riquadro **"Impostazioni lettore"** (modificare > impostazioni progetto > lettore)</span><span class="sxs-lookup"><span data-stu-id="a99f4-110">In the Unity Editor, open the **"Player Settings"** pane (Edit > Project Settings > Player)</span></span>
+2. <span data-ttu-id="a99f4-111">Fare clic sulla scheda **"Windows Store"**</span><span class="sxs-lookup"><span data-stu-id="a99f4-111">Click on the **"Windows Store"** tab</span></span>
+3. <span data-ttu-id="a99f4-112">Espandere **"impostazioni di pubblicazione"** e selezionare la funzionalità **"SpatialPerception"** nell'elenco **"funzionalità"**</span><span class="sxs-lookup"><span data-stu-id="a99f4-112">Expand **"Publishing Settings"** and check the **"SpatialPerception"** capability in the **"Capabilities"** list</span></span>
 
-### <a name="setup"></a><span data-ttu-id="4407e-122">Configurazione</span><span class="sxs-lookup"><span data-stu-id="4407e-122">Setup</span></span>
+>[!NOTE]
+><span data-ttu-id="a99f4-113">Se il progetto Unity è già stato esportato in una soluzione di Visual Studio, sarà necessario eseguire l'esportazione in una nuova cartella o [impostare manualmente questa funzionalità in appxmanifest in Visual Studio](local-anchor-transfers-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).</span><span class="sxs-lookup"><span data-stu-id="a99f4-113">If you have already exported your Unity project to a Visual Studio solution, you will need to either export to a new folder or manually [set this capability in the AppxManifest in Visual Studio](local-anchor-transfers-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).</span></span>
 
-<span data-ttu-id="4407e-123">Il codice di esempio in questa pagina contiene alcuni campi che dovranno essere inizializzati:</span><span class="sxs-lookup"><span data-stu-id="4407e-123">The sample code on this page has a few fields that will need to be initialized:</span></span>
-1. <span data-ttu-id="4407e-124">*GameObject rootGameObject* è un *GameObject* in Unity in cui è presente un componente *WorldAnchor* .</span><span class="sxs-lookup"><span data-stu-id="4407e-124">*GameObject rootGameObject* is a *GameObject* in Unity that has a *WorldAnchor* Component on it.</span></span> <span data-ttu-id="4407e-125">Un utente nell'esperienza condivisa inserisce questo *GameObject* ed Esporta i dati negli altri utenti.</span><span class="sxs-lookup"><span data-stu-id="4407e-125">One user in the shared experience will place this *GameObject* and export the data to the other users.</span></span>
-2. <span data-ttu-id="4407e-126">*WorldAnchor gameRootAnchor* è *UnityEngine. XR. WSA. WorldAnchor* che si trova in *rootGameObject* .</span><span class="sxs-lookup"><span data-stu-id="4407e-126">*WorldAnchor gameRootAnchor* is the *UnityEngine.XR.WSA.WorldAnchor* that is on *rootGameObject* .</span></span>
-3. <span data-ttu-id="4407e-127">*byte [] importedData* è una matrice di byte per l'ancoraggio serializzato che ogni client riceve sulla rete.</span><span class="sxs-lookup"><span data-stu-id="4407e-127">*byte[] importedData* is a byte array for the serialized anchor each client is receiving over the network.</span></span>
+### <a name="anchor-transfer"></a><span data-ttu-id="a99f4-114">Trasferimento di ancoraggio</span><span class="sxs-lookup"><span data-stu-id="a99f4-114">Anchor Transfer</span></span>
+
+<span data-ttu-id="a99f4-115">**Spazio dei nomi:** *UnityEngine. XR. WSA. sharing*</span><span class="sxs-lookup"><span data-stu-id="a99f4-115">**Namespace:** *UnityEngine.XR.WSA.Sharing*</span></span><br>
+<span data-ttu-id="a99f4-116">**Tipo**: *WorldAnchorTransferBatch*</span><span class="sxs-lookup"><span data-stu-id="a99f4-116">**Type**: *WorldAnchorTransferBatch*</span></span>
+
+<span data-ttu-id="a99f4-117">Per trasferire un [WorldAnchor](../develop/unity/coordinate-systems-in-unity.md), è necessario stabilire l'ancoraggio da trasferire.</span><span class="sxs-lookup"><span data-stu-id="a99f4-117">To transfer a [WorldAnchor](../develop/unity/coordinate-systems-in-unity.md), one must establish the anchor to be transferred.</span></span> <span data-ttu-id="a99f4-118">L'utente di un HoloLens analizza l'ambiente e sceglie manualmente o a livello di codice un punto nello spazio come ancoraggio per l'esperienza condivisa.</span><span class="sxs-lookup"><span data-stu-id="a99f4-118">The user of one HoloLens scans their environment and either manually or programmatically chooses a point in space to be the Anchor for the shared experience.</span></span> <span data-ttu-id="a99f4-119">I dati che rappresentano questo punto possono quindi essere serializzati e trasmessi agli altri dispositivi che condividono nell'esperienza.</span><span class="sxs-lookup"><span data-stu-id="a99f4-119">The data that represents this point can then be serialized and transmitted to the other devices that are sharing in the experience.</span></span> <span data-ttu-id="a99f4-120">Ogni dispositivo deserializza quindi i dati di ancoraggio e tenta di individuare il punto nello spazio.</span><span class="sxs-lookup"><span data-stu-id="a99f4-120">Each device then de-serializes the anchor data and attempts to locate that point in space.</span></span> <span data-ttu-id="a99f4-121">Per il corretto funzionamento del trasferimento di ancoraggio, è necessario che ogni dispositivo abbia eseguito una scansione sufficiente dell'ambiente, in modo che sia possibile identificare il punto rappresentato dall'ancoraggio.</span><span class="sxs-lookup"><span data-stu-id="a99f4-121">In order for Anchor Transfer to work, each device must have scanned in enough of the environment such that the point represented by the anchor can be identified.</span></span>
+
+### <a name="setup"></a><span data-ttu-id="a99f4-122">Configurazione</span><span class="sxs-lookup"><span data-stu-id="a99f4-122">Setup</span></span>
+
+<span data-ttu-id="a99f4-123">Il codice di esempio in questa pagina contiene alcuni campi che dovranno essere inizializzati:</span><span class="sxs-lookup"><span data-stu-id="a99f4-123">The sample code on this page has a few fields that will need to be initialized:</span></span>
+1. <span data-ttu-id="a99f4-124">*GameObject rootGameObject* è un *GameObject* in Unity in cui è presente un componente *WorldAnchor* .</span><span class="sxs-lookup"><span data-stu-id="a99f4-124">*GameObject rootGameObject* is a *GameObject* in Unity that has a *WorldAnchor* Component on it.</span></span> <span data-ttu-id="a99f4-125">Un utente nell'esperienza condivisa inserisce questo *GameObject* ed Esporta i dati negli altri utenti.</span><span class="sxs-lookup"><span data-stu-id="a99f4-125">One user in the shared experience will place this *GameObject* and export the data to the other users.</span></span>
+2. <span data-ttu-id="a99f4-126">*WorldAnchor gameRootAnchor* è *UnityEngine. XR. WSA. WorldAnchor* che si trova in *rootGameObject*.</span><span class="sxs-lookup"><span data-stu-id="a99f4-126">*WorldAnchor gameRootAnchor* is the *UnityEngine.XR.WSA.WorldAnchor* that is on *rootGameObject*.</span></span>
+3. <span data-ttu-id="a99f4-127">*byte [] importedData* è una matrice di byte per l'ancoraggio serializzato che ogni client riceve sulla rete.</span><span class="sxs-lookup"><span data-stu-id="a99f4-127">*byte[] importedData* is a byte array for the serialized anchor each client is receiving over the network.</span></span>
 
 ```
 public GameObject rootGameObject;
@@ -61,16 +61,16 @@ void Start ()
 }
 ```
 
-### <a name="exporting"></a><span data-ttu-id="4407e-128">Esportazione</span><span class="sxs-lookup"><span data-stu-id="4407e-128">Exporting</span></span>
+### <a name="exporting"></a><span data-ttu-id="a99f4-128">Esportazione</span><span class="sxs-lookup"><span data-stu-id="a99f4-128">Exporting</span></span>
 
-<span data-ttu-id="4407e-129">Per eseguire l'esportazione, è sufficiente un *WorldAnchor* e per sapere cosa verrà chiamato in modo da renderlo utile per l'app ricevente.</span><span class="sxs-lookup"><span data-stu-id="4407e-129">To export, we just need a *WorldAnchor* and to know what we will call it such that it makes sense for the receiving app.</span></span> <span data-ttu-id="4407e-130">Un client nell'esperienza condivisa eseguirà questa procedura per esportare l'ancoraggio condiviso:</span><span class="sxs-lookup"><span data-stu-id="4407e-130">One client in the shared experience will perform these steps to export the shared anchor:</span></span>
-1. <span data-ttu-id="4407e-131">Creare un *WorldAnchorTransferBatch*</span><span class="sxs-lookup"><span data-stu-id="4407e-131">Create a *WorldAnchorTransferBatch*</span></span>
-2. <span data-ttu-id="4407e-132">Aggiungere il *WorldAnchors* da trasferire</span><span class="sxs-lookup"><span data-stu-id="4407e-132">Add the *WorldAnchors* to transfer</span></span>
-3. <span data-ttu-id="4407e-133">Inizia l'esportazione</span><span class="sxs-lookup"><span data-stu-id="4407e-133">Begin the export</span></span>
-4. <span data-ttu-id="4407e-134">Gestisci l'evento *OnExportDataAvailable* quando i dati diventano disponibili</span><span class="sxs-lookup"><span data-stu-id="4407e-134">Handle the *OnExportDataAvailable* event as data becomes available</span></span>
-5. <span data-ttu-id="4407e-135">Gestisci evento *OnExportComplete*</span><span class="sxs-lookup"><span data-stu-id="4407e-135">Handle the *OnExportComplete* event</span></span>
+<span data-ttu-id="a99f4-129">Per eseguire l'esportazione, è sufficiente un *WorldAnchor* e per sapere cosa verrà chiamato in modo da renderlo utile per l'app ricevente.</span><span class="sxs-lookup"><span data-stu-id="a99f4-129">To export, we just need a *WorldAnchor* and to know what we will call it such that it makes sense for the receiving app.</span></span> <span data-ttu-id="a99f4-130">Un client nell'esperienza condivisa eseguirà questa procedura per esportare l'ancoraggio condiviso:</span><span class="sxs-lookup"><span data-stu-id="a99f4-130">One client in the shared experience will perform these steps to export the shared anchor:</span></span>
+1. <span data-ttu-id="a99f4-131">Creare un *WorldAnchorTransferBatch*</span><span class="sxs-lookup"><span data-stu-id="a99f4-131">Create a *WorldAnchorTransferBatch*</span></span>
+2. <span data-ttu-id="a99f4-132">Aggiungere il *WorldAnchors* da trasferire</span><span class="sxs-lookup"><span data-stu-id="a99f4-132">Add the *WorldAnchors* to transfer</span></span>
+3. <span data-ttu-id="a99f4-133">Inizia l'esportazione</span><span class="sxs-lookup"><span data-stu-id="a99f4-133">Begin the export</span></span>
+4. <span data-ttu-id="a99f4-134">Gestisci l'evento *OnExportDataAvailable* quando i dati diventano disponibili</span><span class="sxs-lookup"><span data-stu-id="a99f4-134">Handle the *OnExportDataAvailable* event as data becomes available</span></span>
+5. <span data-ttu-id="a99f4-135">Gestisci evento *OnExportComplete*</span><span class="sxs-lookup"><span data-stu-id="a99f4-135">Handle the *OnExportComplete* event</span></span>
 
-<span data-ttu-id="4407e-136">Viene creato un *WorldAnchorTransferBatch* per incapsulare gli elementi che verranno trasferiti e quindi esportati in byte:</span><span class="sxs-lookup"><span data-stu-id="4407e-136">We create a *WorldAnchorTransferBatch* to encapsulate what we will be transferring and then export that into bytes:</span></span>
+<span data-ttu-id="a99f4-136">Viene creato un *WorldAnchorTransferBatch* per incapsulare gli elementi che verranno trasferiti e quindi esportati in byte:</span><span class="sxs-lookup"><span data-stu-id="a99f4-136">We create a *WorldAnchorTransferBatch* to encapsulate what we will be transferring and then export that into bytes:</span></span>
 
 ```
 private void ExportGameRootAnchor()
@@ -81,7 +81,7 @@ private void ExportGameRootAnchor()
 }
 ```
 
-<span data-ttu-id="4407e-137">Quando i dati diventano disponibili, inviare i byte al client o al buffer perché i segmenti di dati sono disponibili e inviarli con qualsiasi mezzo:</span><span class="sxs-lookup"><span data-stu-id="4407e-137">As data becomes available, send the bytes to the client or buffer as segments of data is available and send through whatever means desired:</span></span>
+<span data-ttu-id="a99f4-137">Quando i dati diventano disponibili, inviare i byte al client o al buffer perché i segmenti di dati sono disponibili e inviarli con qualsiasi mezzo:</span><span class="sxs-lookup"><span data-stu-id="a99f4-137">As data becomes available, send the bytes to the client or buffer as segments of data is available and send through whatever means desired:</span></span>
 
 ```
 private void OnExportDataAvailable(byte[] data)
@@ -90,7 +90,7 @@ private void OnExportDataAvailable(byte[] data)
 }
 ```
 
-<span data-ttu-id="4407e-138">Al termine dell'esportazione, se i dati sono stati trasferiti e la serializzazione non è riuscita, indicare al client di rimuovere i dati.</span><span class="sxs-lookup"><span data-stu-id="4407e-138">Once the export is complete, if we have been transferring data and serialization failed, tell the client to discard the data.</span></span> <span data-ttu-id="4407e-139">Se la serializzazione ha avuto esito positivo, indicare al client che tutti i dati sono stati trasferiti e che è possibile avviare l'importazione:</span><span class="sxs-lookup"><span data-stu-id="4407e-139">If the serialization succeeded, tell the client that all data has been transferred and importing can start:</span></span>
+<span data-ttu-id="a99f4-138">Al termine dell'esportazione, se i dati sono stati trasferiti e la serializzazione non è riuscita, indicare al client di rimuovere i dati.</span><span class="sxs-lookup"><span data-stu-id="a99f4-138">Once the export is complete, if we have been transferring data and serialization failed, tell the client to discard the data.</span></span> <span data-ttu-id="a99f4-139">Se la serializzazione ha avuto esito positivo, indicare al client che tutti i dati sono stati trasferiti e che è possibile avviare l'importazione:</span><span class="sxs-lookup"><span data-stu-id="a99f4-139">If the serialization succeeded, tell the client that all data has been transferred and importing can start:</span></span>
 
 ```
 private void OnExportComplete(SerializationCompletionReason completionReason)
@@ -106,9 +106,9 @@ private void OnExportComplete(SerializationCompletionReason completionReason)
 }
 ```
 
-### <a name="importing"></a><span data-ttu-id="4407e-140">Importazione</span><span class="sxs-lookup"><span data-stu-id="4407e-140">Importing</span></span>
+### <a name="importing"></a><span data-ttu-id="a99f4-140">Importazione</span><span class="sxs-lookup"><span data-stu-id="a99f4-140">Importing</span></span>
 
-<span data-ttu-id="4407e-141">Dopo aver ricevuto tutti i byte dal mittente, è possibile importare di nuovo i dati in un *WorldAnchorTransferBatch* e bloccare l'oggetto del gioco radice nella stessa posizione fisica.</span><span class="sxs-lookup"><span data-stu-id="4407e-141">After receiving all of the bytes from the sender, we can import the data back into a *WorldAnchorTransferBatch* and lock our root game object into the same physical location.</span></span> <span data-ttu-id="4407e-142">Nota: l'importazione a volte avrà esito negativo e deve essere riprovata:</span><span class="sxs-lookup"><span data-stu-id="4407e-142">Note: import will sometimes transiently fail and needs to be retried:</span></span>
+<span data-ttu-id="a99f4-141">Dopo aver ricevuto tutti i byte dal mittente, è possibile importare di nuovo i dati in un *WorldAnchorTransferBatch* e bloccare l'oggetto del gioco radice nella stessa posizione fisica.</span><span class="sxs-lookup"><span data-stu-id="a99f4-141">After receiving all of the bytes from the sender, we can import the data back into a *WorldAnchorTransferBatch* and lock our root game object into the same physical location.</span></span> <span data-ttu-id="a99f4-142">Nota: l'importazione a volte avrà esito negativo e deve essere riprovata:</span><span class="sxs-lookup"><span data-stu-id="a99f4-142">Note: import will sometimes transiently fail and needs to be retried:</span></span>
 
 ```
 // This byte array should have been updated over the network from TransferDataToClient
@@ -137,5 +137,5 @@ private void OnImportComplete(SerializationCompletionReason completionReason, Wo
 }
 ```
 
-<span data-ttu-id="4407e-143">Dopo che un *GameObject* è stato bloccato tramite la chiamata *lockobject* , avrà un *WorldAnchor* che lo manterrà nella stessa posizione fisica del mondo, ma potrebbe trovarsi in una posizione diversa nello spazio delle coordinate di Unity rispetto ad altri utenti.</span><span class="sxs-lookup"><span data-stu-id="4407e-143">After a *GameObject* is locked via the *LockObject* call, it will have a *WorldAnchor* which will keep it in the same physical position in the world, but it may be at a different location in the Unity coordinate space than other users.</span></span>
+<span data-ttu-id="a99f4-143">Dopo che un *GameObject* è stato bloccato tramite la chiamata *lockobject* , avrà un *WorldAnchor* che lo manterrà nella stessa posizione fisica del mondo, ma potrebbe trovarsi in una posizione diversa nello spazio delle coordinate di Unity rispetto ad altri utenti.</span><span class="sxs-lookup"><span data-stu-id="a99f4-143">After a *GameObject* is locked via the *LockObject* call, it will have a *WorldAnchor* which will keep it in the same physical position in the world, but it may be at a different location in the Unity coordinate space than other users.</span></span>
 
