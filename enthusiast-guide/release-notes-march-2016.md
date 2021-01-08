@@ -1,17 +1,17 @@
 ---
 title: Note sulla versione - marzo 2016
-description: Note sulla versione di HoloLens per il lancio di HoloLens e Windows olografico.
+description: È possibile rimanere sempre aggiornati sulle note sulla versione di HoloLens per l'avvio di HoloLens e Windows olografico.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Note sulla versione, HoloLens, sistema operativo, piattaforma, funzionalità, compilazione, avvio
-ms.openlocfilehash: 9129bb220d2a580235494a94ecbd3227e7d4c7c7
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: a7797483b5ba60203f0f0b3c2c4ce79b924d81dc
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725932"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009201"
 ---
 # <a name="release-notes---march-2016"></a>Note sulla versione - marzo 2016
 
@@ -33,7 +33,7 @@ Prova le app della posta in arrivo
 
 Per sbloccare il dispositivo per lo sviluppo, aprire l'app *Impostazioni* , passare a *Aggiorna & sicurezza*, passare alla pagina *per sviluppatori* e impostare l'opzione modalità sviluppatore su attivato. È anche possibile abilitare il [portale](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal) per i dispositivi da qui.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Problemi noti di HoloLens](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
 * [Installare gli strumenti](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
 * [Esplorazione dello spazio iniziale di Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)

@@ -1,17 +1,17 @@
 ---
 title: Impostazioni consigliate per Unity
-description: Unity offre alcuni comportamenti specifici per la realtà mista che possono essere alternate tramite le impostazioni del progetto.
+description: Informazioni sulle prestazioni e sulla pubblicazione dei comportamenti di Unity specifiche per app realtà miste che possono essere alternate tramite le impostazioni del progetto.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, impostazioni, realtà mista, HoloLens, cuffie per realtà mista, cuffie per la realtà mista di Windows, auricolare di realtà virtuale, prestazioni, impostazioni di qualità, impostazioni di illuminazione, buffer di profondità, XR, perdita di rilevamento
-ms.openlocfilehash: d32dd19e535d2681654014cc92f319dc564e059e
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: be85b592a6857c9dd40e2b3bb3f09dec0a6273be
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010112"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009331"
 ---
 # <a name="recommended-settings-for-unity"></a>Impostazioni consigliate per Unity
 

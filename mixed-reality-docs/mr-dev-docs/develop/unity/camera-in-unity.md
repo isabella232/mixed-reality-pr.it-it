@@ -1,17 +1,17 @@
 ---
 title: Fotocamera in Unity
-description: Come usare la fotocamera principale di Unity per lo sviluppo di realtà mista di Windows per eseguire il rendering olografico.
+description: Informazioni su come configurare e usare la fotocamera principale di Unity per lo sviluppo di realtà mista di Windows per eseguire il rendering olografico.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, rendering olografico, olografico, immersivo, punto di messa a fuoco, buffer di profondità, solo orientamento, posizionale, opaco, trasparente, clip, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 26eb8966004c958c6063d09de891ef835d973a82
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: cd5284a8fdef7254b7d0375b57877d30f5d0d708
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010432"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006391"
 ---
 # <a name="camera-in-unity"></a>Fotocamera in Unity
 
@@ -97,7 +97,7 @@ Seguire la Guida [dettagliata](https://microsoft.github.io/MixedRealityToolkit-U
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo:
+Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui, è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Sguardo fisso](gaze-in-unity.md)

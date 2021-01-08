@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicazione remota, comunicazione remota olografica, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale, sicurezza, autenticazione, da server a client
-ms.openlocfilehash: 64eb54d9401f3fbc8b73ebb97b19de5a68cdc5c4
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 0881238bfca199958802598a3e1829a9de0d8e5b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530410"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006481"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Abilitazione della sicurezza della connessione per la comunicazione remota olografica
 
@@ -24,7 +24,7 @@ Questa pagina offre una panoramica della sicurezza di rete per la comunicazione 
 * misure consigliate basate su diversi casi di utilizzo
 * implementazione della sicurezza nella soluzione di comunicazione remota olografica
 
-## <a name="overview"></a>Panoramica
+## <a name="holographic-remoting-security"></a>Sicurezza della comunicazione remota olografica
 
 La comunicazione remota olografica scambia informazioni in una rete. Se non sono presenti misure di sicurezza, gli avversari nella stessa rete potrebbero compromettere l'integrità della comunicazione o accedere a informazioni riservate.
 

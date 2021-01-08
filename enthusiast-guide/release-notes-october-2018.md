@@ -1,26 +1,26 @@
 ---
 title: Note sulla versione - ottobre 2018
-description: Note sulla versione di HoloLens e Windows Mixed Reality per l'aggiornamento di Windows 10 ottobre 2018 (noto anche come RS5).
+description: È possibile rimanere sempre aggiornati sulle note sulla versione di HoloLens e Windows Mixed Reality per l'aggiornamento di Windows 10 di ottobre 2018/RS5.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 10/02/2018
 ms.topic: article
 keywords: Note sulla versione, versione, Windows 10, Build, RS5, sistema operativo
-ms.openlocfilehash: 88d7393fdcf499b1fabd36668364ffb31b0e793d
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+ms.openlocfilehash: f7d95481d166f2c8795701c516946346101a21d0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91783964"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007111"
 ---
 # <a name="release-notes---october-2018"></a>Note sulla versione - ottobre 2018
 
 L' **[aggiornamento di Windows 10 ottobre 2018](https://blogs.windows.com/windowsexperience/2018/10/02/find-out-whats-new-in-windows-and-office-in-october/)** (noto anche come RS5) include nuove funzionalità sia per gli auricolari HoloLens che per quelli immersivi con la realtà mista di Windows connessi ai PC. 
 
-Per eseguire l'aggiornamento alla versione più recente di HoloLens o PC (per auricolari (VR) Windows Mixed Reality (VR), aprire l'app **Impostazioni** , passare a **Aggiorna & sicurezza** , quindi selezionare il pulsante **Controlla aggiornamenti** . In un PC Windows 10, è anche possibile installare manualmente l'aggiornamento di Windows 10 ottobre 2018 usando lo [strumento di creazione di Windows Media](https://www.microsoft.com/software-download/windows10).
+Per eseguire l'aggiornamento alla versione più recente di HoloLens o PC (per auricolari (VR) Windows Mixed Reality (VR), aprire l'app **Impostazioni** , passare a **Aggiorna & sicurezza**, quindi selezionare il pulsante **Controlla aggiornamenti** . In un PC Windows 10, è anche possibile installare manualmente l'aggiornamento di Windows 10 ottobre 2018 usando lo [strumento di creazione di Windows Media](https://www.microsoft.com/software-download/windows10).
 
-**Versione più recente per desktop:** Aggiornamento di Windows 10 ottobre 2018 ( **10.0.17763.107** )<br>
-**Versione più recente per HoloLens:** Aggiornamento di Windows 10 ottobre 2018 ( **10.0.17763.134** )<br>
+**Versione più recente per desktop:** Aggiornamento di Windows 10 ottobre 2018 (**10.0.17763.107**)<br>
+**Versione più recente per HoloLens:** Aggiornamento di Windows 10 ottobre 2018 (**10.0.17763.134**)<br>
 
 ## <a name="new-features-for-windows-mixed-reality-immersive-headsets"></a>Nuove funzionalità per gli auricolari immersivi a realtà mista di Windows
 
@@ -41,7 +41,7 @@ L'aggiornamento di Windows 10 ottobre 2018 include numerosi miglioramenti per l'
     * Nuova app *WebVR Showcase* per l'individuazione di una selezione regolare di esperienze WebVR.
     * I primi clienti con la realtà mista di Windows entrano a Cliff House e li trovano già popolati con i lanci di app 3D per alcune delle app e dei giochi immersivi Preferiti dal Microsoft Store.
     * Microsoft Edge Windows include ora un pulsante *Condividi* .
-* **Menu azioni rapide** : dall'interno di un'app immersiva mista, è possibile premere il pulsante Windows per accedere a un nuovo menu azioni rapide, con accesso semplice a *SteamVR menu* , *acquisizione foto/video* , *torcia elettrica* e *Home* .
+* **Menu azioni rapide** : dall'interno di un'app immersiva mista, è possibile premere il pulsante Windows per accedere a un nuovo menu azioni rapide, con accesso semplice a *SteamVR menu*, *acquisizione foto/video*, *torcia elettrica* e *Home*.
 * **Supporto per i PC zaino** : gli auricolari a realtà mista (VR) di Windows vengono eseguiti nei PC Backpack senza richiedere un emulatore di visualizzazione una volta completata l'installazione.
 * **Nuove funzionalità audio** : è ora possibile eseguire il mirroring dell'audio da un'esperienza di realtà mista di Windows sia al jack audio (o alle cuffie) nell'auricolare *che* a un dispositivo audio connesso al PC (ad esempio, altoparlanti esterni). È stato inoltre aggiunto un indicatore visivo per il livello di volume nella visualizzazione dell'auricolare.
 * **Altri miglioramenti**
@@ -60,7 +60,7 @@ L'aggiornamento di Windows 10 ottobre 2018 è disponibile pubblicamente per tutt
 
 ### <a name="for-everyone"></a>Per tutti
 
-* **Menu azioni rapide** : dall'interno di un'app immersiva mista, è possibile premere il pulsante Windows per accedere a un nuovo menu azioni rapide, con facile accesso per *avviare la registrazione di video* , *scattare foto* , la *realtà mista Home* , *modificare il volume* e *connettersi* .
+* **Menu azioni rapide** : dall'interno di un'app immersiva mista, è possibile premere il pulsante Windows per accedere a un nuovo menu azioni rapide, con facile accesso per *avviare la registrazione di video*, *scattare foto*, la *realtà mista Home*, *modificare il volume* e *connettersi*.
 * **Avviare/arrestare l'acquisizione video dal menu azioni rapide o avvio** : se si avvia l'acquisizione video dal menu Start o dal menu azioni rapide, sarà possibile arrestare la registrazione dalla stessa posizione. Non dimenticare che è sempre possibile eseguire questa operazione con i comandi vocali.
 * **Proiettare in un dispositivo abilitato per Miracast** : proiettare il contenuto di HoloLens su un dispositivo Surface o TV/monitor con supporto per Miracast.
 * **Nuove notifiche** : consente di visualizzare e rispondere alle notifiche in HoloLens, proprio come in un PC.  

@@ -1,17 +1,17 @@
 ---
 title: Mapping spaziale in DirectX
-description: Informazioni su come implementare il mapping spaziale nell'app DirectX, inclusa l'applicazione di esempio di mapping spaziale fornita con l'SDK piattaforma UWP (Universal Windows Platform).
+description: Informazioni su come implementare il mapping spaziale nell'app DirectX e su come usare l'applicazione di esempio di mapping spaziale in piattaforma UWP (Universal Windows Platform) SDK.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Realtà mista di Windows, mapping spaziale, ambiente, interazione, DirectX, WinRT, API, codice di esempio, UWP, SDK, procedura dettagliata
-ms.openlocfilehash: fa372473939222ef4be7ca36076a17241173c441
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: bcd78487e96aaf09707aa4bf58917223cc2e8583
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612915"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006711"
 ---
 # <a name="spatial-mapping-in-directx"></a>Mapping spaziale in DirectX
 

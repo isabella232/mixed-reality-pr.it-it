@@ -1,17 +1,17 @@
 ---
 title: Test dell'app in HoloLens
-description: Linee guida e suggerimenti per il test dell'app HoloLens
+description: Informazioni su indicazioni generali e suggerimenti per l'ottimizzazione delle prestazioni e di testing delle applicazioni di realtà mista HoloLens.
 author: jonmlyons
 ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens, test
-ms.openlocfilehash: e1a5a62cf52a3144f02b8acaa96b3c653246fd9c
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: d26a3717da2ee9943e92e3602b6029435815262b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530336"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008541"
 ---
 # <a name="testing-your-app-on-hololens"></a>Test dell'app in HoloLens
 
@@ -22,6 +22,7 @@ Il test delle applicazioni HoloLens è simile a quello delle applicazioni Window
 Le app olografiche devono essere eseguite senza problemi in un set eterogeneo di ambienti. Devono inoltre mantenere sempre le prestazioni e la comodità degli utenti. Le prestazioni sono molto importanti per l'esperienza dell'utente con un'app olografica a cui è dedicato un intero argomento. Assicurarsi di leggere e seguire le [prestazioni di comprensione per la realtà mista](understanding-performance-for-mixed-reality.md)
 
 ## <a name="testing-3d-in-3d"></a>Test 3D in 3D
+
 1. **Testare l'app in tutti gli spazi diversi possibili.** Prova in stanze di grandi dimensioni, piccoli spazi, bagni, cucine, camere, uffici e così via. Prendere in considerazione anche le camere con funzionalità non standard, ad esempio muri non verticali, muri curvi, massimali non orizzontali. Funziona bene durante la transizione tra chat room, piani, attraversamento di corridoi o scale?
 2. **Testare l'app in condizioni di illuminazione diverse.** Risponde correttamente a diverse condizioni ambientali come illuminazione, superfici nere e superfici trasparenti o riflettenti come i mirror e i muri vetrati.
 3. **Testare l'app in condizioni di movimento diverse.** Inserire sul dispositivo e provare gli scenari in diversi Stati di movimento. Risponde correttamente a uno stato di spostamento o costante diverso?
@@ -37,11 +38,11 @@ Le app olografiche devono essere eseguite senza problemi in un set eterogeneo di
 ![Matrice di test dell'ambiente per lo sviluppo di app HoloLens](images/environment-matrix-600px.png)
 
 ## <a name="comfort"></a>Comfort
+
 1. **Ritagliare i piani.** Prestare attenzione alla posizione in cui [viene eseguito il rendering degli ologrammi](hologram-stability.md#hologram-render-distances).
 2. **Evitare lo spostamento virtuale incoerente con lo spostamento Head effettivo.** Evitare lo spostamento della fotocamera in modo che non rappresenti il movimento effettivo dell'utente. Se l'app richiede lo spostamento dell'utente tramite una scena, rendere prevedibile il movimento, ridurre al minimo l'accelerazione e consentire all'utente di controllare il movimento.
 3. **Seguire le linee guida per la qualità degli ologrammi.** Le app performanti che implementano le [linee guida relative alla qualità olografica](hologram-stability.md) hanno una minore probabilità di causare disagio nell'utente.
 4. **Distribuisci gli ologrammi orizzontalmente anziché verticalmente.** Forzare l'utente a dedicare lunghi periodi di tempo alla ricerca verso l'alto o verso il basso può causare fatica nel collo.
-
 
 ## <a name="input"></a>Input
 
@@ -113,4 +114,5 @@ Alcuni sviluppatori di app potrebbero voler automatizzare il test delle proprie 
 Per offrire all'app la possibilità di essere [pubblicata in Windows Store](../../distribute/submitting-an-app-to-the-microsoft-store.md), convalidarla e testarla localmente prima di inviarla per la certificazione. Se l'app è destinata al gruppo di dispositivi Windows. olografico, il [Kit di certificazione app Windows](https://msdn.microsoft.com/library/windows/apps/xaml/mt186449.aspx) eseguirà solo i test di analisi statica locali nel PC. Nessun test verrà eseguito nella HoloLens.
 
 ## <a name="see-also"></a>Vedere anche
+
 * [Invio di un'app a Windows Store](../../distribute/submitting-an-app-to-the-microsoft-store.md)

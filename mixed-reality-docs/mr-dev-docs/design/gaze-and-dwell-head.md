@@ -1,17 +1,17 @@
 ---
 title: Puntamento con la testa e attesa
-description: Panoramica del modello di input puntamento con la testa e attesa
+description: Introduzione a una panoramica del modello di input Head-sguardi e di residenza, inclusi scenari comuni e principi di progettazione.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
 keywords: Realtà mista, sguardo, abitato, interazione, progettazione, cuffie per realtà mista, cuffie per realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit Reality, UX, linee guida, visualizzazione elenco
-ms.openlocfilehash: 060d78ec629905ac9f2134851998ec131d85f0cd
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2bfd984a466c1ccd3913e889ca57663800f46380
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847376"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007081"
 ---
 # <a name="head-gaze-and-dwell"></a>Puntamento con la testa e attesa
 
@@ -182,7 +182,7 @@ Per funzionare correttamente, gli interruttori necessitano di una logica più so
 
 ---
  
- ## <a name="see-also"></a>Vedi anche
+ ## <a name="see-also"></a>Vedere anche
 
 * [Sguardo e commit](gaze-and-commit.md)
 * [Mani - Manipolazione diretta](direct-manipulation.md)

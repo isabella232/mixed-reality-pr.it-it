@@ -1,6 +1,6 @@
 ---
 title: Uso di sintesi vocale in realtà mista di Windows
-description: Informazioni su come usare l'input vocale nelle app per la realtà mista di Windows.
+description: Informazioni su come usare l'input vocale per controllare i comandi, gli oggetti 3D e la dettatura nelle app per la realtà mista di Windows.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 6a32b96fd932e3b7d47e29749fb47c70b64e32c3
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9c1863a3fb0c7d8681f82aa6e0d93400bef578c9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725772"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007671"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Uso di sintesi vocale in realtà mista di Windows
 
@@ -152,7 +152,7 @@ A volte è utile scrivere elementi come gli indirizzi di posta elettronica. Per 
 
 Per arrestare la dettatura, selezionare **fine**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Contattare la community](https://answers.microsoft.com)
 * [Contattaci per assistenza](https://support.microsoft.com/contactus/)

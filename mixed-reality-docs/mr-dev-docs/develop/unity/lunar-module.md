@@ -1,17 +1,17 @@
 ---
 title: Modulo lunare
-description: Informazioni su come estendere i movimenti di base di HoloLens con rilevamento bidirezionale e input del controller Xbox, creare oggetti reattivi per il mapping di superficie e la ricerca di piani e implementare semplici sistemi di menu.
+description: Informazioni su come estendere i movimenti di base di HoloLens con rilevamento bidirezionale e input del controller Xbox, creare oggetti reattivi e implementare i sistemi di menu.
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, app di esempio, progettazione, MRTK, Toolkit per realtà mista, Unity, app di esempio, app di esempio, open source, Microsoft Store, HoloLens, cuffie per la realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 2861cb85ac2f4a51a80e586b2be42ddb1d395e8a
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: b0630df49fd8ad154017000893a08560793fb39e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010502"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008821"
 ---
 # <a name="lunar-module"></a>Modulo lunare
 
@@ -20,7 +20,7 @@ ms.locfileid: "97010502"
 
 Il [modulo Lunar](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) è un'app di esempio Open Source di Microsoft Mixed Reality Design Labs. Informazioni su come estendere i movimenti di base di HoloLens con rilevamento bidirezionale e input del controller Xbox, creare oggetti reattivi per il mapping di superficie e la ricerca di piani e implementare semplici sistemi di menu. Tutti i componenti del progetto sono disponibili per l'uso nella propria esperienza di app in realtà mista.
 
-## <a name="demo-video"></a>Video dimostrativo 
+## <a name="demo-video"></a>Video demo 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IcIP]
 
 Registrato con HoloLens 2 con l'acquisizione di realtà mista

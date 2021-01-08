@@ -1,17 +1,17 @@
 ---
 title: Note sulla versione-2019 maggio
-description: Note sulla versione della realtà mista di Windows per Windows 10 2019 aggiornamento (noto anche come 19H1).
+description: È possibile rimanere sempre aggiornati sulle note sulla versione della realtà mista di Windows per l'aggiornamento di Windows 10 19H1.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 07/11/2019
 ms.topic: article
 keywords: Note sulla versione, versione, Windows 10, Build, 19h1, sistema operativo, 2019 maggio
-ms.openlocfilehash: 19444732884a87de3f28e90d656deef6e51eb191
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: fd5688b7c68e0a16873ff153f3c158a3575e02e9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725922"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007121"
 ---
 # <a name="release-notes---may-2019"></a>Note sulla versione-2019 maggio
 
@@ -65,7 +65,7 @@ Usare l' [App Hub di feedback nel PC Windows 10](https://docs.microsoft.com/wind
 * [Note sulla versione - maggio 2016](release-notes-may-2016.md)
 * [Note sulla versione - marzo 2016](release-notes-march-2016.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Supporto per cuffie immersive (collegamento esterno)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [Supporto di HoloLens (collegamento esterno)](https://support.microsoft.com/products/hololens)
 * [Installare gli strumenti](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)

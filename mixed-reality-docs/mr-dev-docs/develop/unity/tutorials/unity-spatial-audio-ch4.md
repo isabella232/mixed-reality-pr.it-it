@@ -1,26 +1,28 @@
 ---
-title: Esercitazioni audio spaziali-4. Abilitazione e disabilitazione dell'audio spaziale in fase di esecuzione
-description: Usare un pulsante per abilitare e disabilitare la spazializzazione dell'audio in fase di esecuzione.
+title: Abilitazione e disabilitazione dell'audio spaziale in fase di esecuzione
+description: Informazioni su come scrivere uno script C# che usa un pulsante per abilitare e disabilitare la spazializzazione audio in fase di esecuzione.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: realtà mista, Unity, esercitazione, hololens2, audio spaziale, MRTK, Toolkit per realtà mista, UWP, Windows 10, HRTF, funzione di trasferimento relativa alla testa, Reverb, Microsoft Spatializer
-ms.openlocfilehash: c9e510e544962c5d1a4c462d20dafa222c6a5289
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: eaaf8a05088b5bab674ca11b15b0c63383faa479
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002606"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007341"
 ---
 # <a name="enabling-and-disabling-spatialization-at-run-time"></a>Abilitazione e disabilitazione della spazializzazione in fase di esecuzione
 
 ## <a name="objectives"></a>Obiettivi
+
 In questo quarto capitolo, verranno illustrate le operazioni seguenti:
 * Aggiungere un nuovo script per controllare la spazializzazione in un oggetto gioco
 * Unità dello script di controllo della spazializzazione dalle azioni dei pulsanti
 
 ## <a name="add-spatialization-control-script"></a>Aggiungi script di controllo di spazializzazione
+
 Fare clic con il pulsante destro del mouse nel riquadro **progetto** e creare un nuovo script c# scegliendo **Crea-> script c#**. Denominare lo script "SpatializeOnOff".
 
 ![Crea script](images/spatial-audio/create-script.png)
@@ -90,6 +92,7 @@ public class SpatializeOnOff : MonoBehaviour
 > Se si preferisce disabilitare completamente la spazializzazione, modificare lo script in modo da regolare anche la proprietà Boolean di **spazializzazione** della variabile **SourceObject** .
 
 ## <a name="attach-your-script-and-drive-it-from-the-button"></a>Alleghi lo script e lo guidi dal pulsante
+
 Nel riquadro **Inspector** del **Quad** fare clic su **Add Component** e aggiungere lo script **Spatialize on off** :
 
 ![Aggiungi script a Quad](images/spatial-audio/add-script-to-quad.png)
@@ -115,6 +118,7 @@ Una volta apportate queste modifiche, il componente **interagisce** sarà simile
 ![Impostazioni azione pulsante](images/spatial-audio/button-action-settings.png)
 
 ## <a name="next-steps"></a>Passaggi successivi
+
 Provare l'app in un HoloLens 2 o nell'editor di Unity. Nell'app è ora possibile toccare il pulsante per attivare e disattivare la spazializzazione nel video. Quando si esegue il test nell'editor di Unity, premere la barra spaziatrice e scorrere con la rotellina di scorrimento per attivare la simulazione manuale. 
 
 > [!div class="nextstepaction"]

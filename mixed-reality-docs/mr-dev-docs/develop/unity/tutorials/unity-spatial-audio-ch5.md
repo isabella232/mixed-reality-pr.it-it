@@ -1,26 +1,28 @@
 ---
-title: Esercitazioni audio spaziali-5. Uso del riverbero per aggiungere distanza all'audio spaziale
-description: Aggiungere un effetto di riverbero per migliorare il senso della variazione della distanza nell'audio spaziale.
+title: Uso del riverbero per aggiungere distanza all'audio spaziale
+description: Informazioni su come aggiungere un effetto di riverbero per migliorare il senso di variazione della distanza per l'audio spaziale in un'applicazione di realtà mista.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: realtà mista, Unity, esercitazione, hololens2, audio spaziale, MRTK, Toolkit per realtà mista, UWP, Windows 10, HRTF, funzione di trasferimento correlato alla testa, riverbero, Microsoft Spatializer, mixer audio, riverbero SFX
-ms.openlocfilehash: c63e5a239806c133e814eee8b44cbfb30f55aa5d
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 6c04ac1e4b52c7eb6104d54c184c789bec413852
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002616"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006361"
 ---
 # <a name="using-reverb-to-add-distance-to-spatial-audio"></a>Uso del riverbero per aggiungere distanza all'audio spaziale
 
 ## <a name="objectives"></a>Obiettivi
+
 Nei capitoli precedenti è stata aggiunta la spazializzazione ai suoni per dare loro un senso di direzione. In questo quinto capitolo, si aggiungerà un effetto di riverbero per dare un senso alla distanza. I nostri obiettivi sono:
 * Migliorare la distanza percepita delle origini audio aggiungendo Reverb
 * Controllare la distanza percepita del suono usando la distanza del listener con l'ologramma
 
 ## <a name="add-a-mixer-group-and-a-reverb-effect"></a>Aggiungere un gruppo di mixer e un effetto di riverbero
+
 Nel [capitolo 2](unity-spatial-audio-ch2.md)è stato aggiunto un mixer. Il mixer include un **gruppo** per impostazione predefinita denominato **Master**. Poiché si vuole applicare un effetto di riverbero solo ad alcuni suoni, aggiungere un secondo **gruppo** per i suoni. Per aggiungere un **gruppo**, fare clic con il pulsante destro del mouse sul gruppo **Master** nel **mixer audio** e scegliere **Aggiungi gruppo figlio**:
 
 ![Aggiungi gruppo figlio](images/spatial-audio/add-child-group.png)
@@ -44,6 +46,7 @@ Dopo queste modifiche, il riquadro **Inspector** del **riverbero SFX** sarà sim
 Le altre impostazioni controllano l'aspetto della stanza simulata. In particolare, il **tempo di decadimento** è correlato alla dimensione della stanza percepita. 
 
 ## <a name="enable-reverb-on-the-video-playback"></a>Abilitare il riverbero per la riproduzione video
+
 Per abilitare il riverbero in un'origine audio sono necessari due passaggi:
 * Indirizzare l' **origine audio** al **gruppo** appropriato
 * Impostare il plug-in **Microsoft Spatializer** per passare l'audio al **gruppo** per l'elaborazione
@@ -129,6 +132,6 @@ Una volta apportate queste modifiche, le proprietà **Spatialize on off** hanno 
 
 Provare l'app in un HoloLens 2 o nell'editor di Unity. A questo punto, quando si tocca il pulsante nell'app per attivare la spazializzazione, lo script instrada l'audio del video al gruppo di effetti della stanza per aggiungere Reverb. Quando si passa a stereo, l'audio viene indirizzato al gruppo Master ed è possibile evitare di aggiungere Reverb.
 
-Sono state completate le esercitazioni audio spaziali HoloLens 2 per Unity. Congratulazioni!
+Sono state completate le esercitazioni audio spaziali HoloLens 2 per Unity. A questo punto,
 
 

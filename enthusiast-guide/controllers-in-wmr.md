@@ -1,6 +1,6 @@
 ---
 title: Controller in Windows Mixed Reality
-description: Informazioni su come configurare e usare i controller in realtà mista di Windows.
+description: Informazioni su come configurare, associare, usare e risolvere i problemi comuni relativi ai controller in realtà mista di Windows.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: f349f4bbc2cadd511515783504562052f1d58ed3
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 5f2e02c85b443497f539d1bfcbf165214e3ac3c1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725392"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007801"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Controller del movimento in Windows Mixed Reality
 
@@ -149,7 +149,7 @@ Il controller comunica a chi sta facendo vibrando e lampeggiando le luci del LED
 
 Inviare commenti e suggerimenti nell'hub feedback, usando la categoria "Mixed Reality-> input".
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Controller HP in Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
 - [Controller HP in Unreal](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)

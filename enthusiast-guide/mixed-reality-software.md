@@ -1,6 +1,6 @@
 ---
-title: Panoramica e cronologia delle versioni del software Realtà mista
-description: Panoramica dei principali componenti software per la realtà mista di Windows e della relativa cronologia di rilascio
+title: Panoramica del software e cronologia delle versioni
+description: Panoramica dei principali componenti software per la realtà mista di Windows, le cuffie immersive e la cronologia delle versioni.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, componenti software, cronologia delle versioni, note sulla versione, cronologia delle versioni
 appliesto:
 - Windows 10
-ms.openlocfilehash: 31adf0572482cb9857ff94c2b7ef3aee4fe538d9
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: b06bd835f1e2562e01bfb7bf240747919f422e8c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726022"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009251"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Panoramica e cronologia delle versioni del software Realtà mista
 
@@ -49,9 +49,11 @@ Eseguendo l'aggiornamento alla versione più recente del PC per gli auricolari p
 ### <a name="updates-for-windows-mixed-reality-immersive-headsets"></a>Aggiornamenti per gli auricolari immersivi a realtà mista di Windows
 
 #### <a name="introducing-the-new-microsoft-edge"></a>Introduzione al nuovo Microsoft Edge
+
 Come [annunciato in precedenza](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge), sono stati apportati aggiornamenti per un supporto migliore con il nuovo browser Microsoft Edge in realtà mista di Windows. Il nuovo Microsoft Edge adotta il progetto Chromium open source per creare una migliore compatibilità Web per i clienti e meno frammentazione del Web per tutti gli sviluppatori Web. Supporta anche WebXR, il nuovo standard per la creazione di esperienze Web Immersive per le cuffie VR, al posto di WebVR.
 
 #### <a name="improved-settings-for-wmr"></a>Impostazioni migliorate per WMR
+
 Grazie ai commenti e suggerimenti, abbiamo aggiunto e chiarito le impostazioni nella pagina di visualizzazione dell'auricolare:
 
 * **Qualità visiva della Home** : la modifica di queste impostazioni influiscono solo sull'ambiente di casa realtà mista (Cliff House e Skyloft):
@@ -71,15 +73,18 @@ Grazie ai commenti e suggerimenti, abbiamo aggiunto e chiarito le impostazioni n
 * **Commutazione di input** : attivare o disattivare il comportamento di commutazione dello stato attivo (Win + Y) automatico (in base ai commenti del sensore di presenza) o manuale.
 
 #### <a name="new-cortana-app"></a>Nuova app Cortana
+
 Questo aggiornamento a Windows include la versione più recente dell'app Cortana, che attualmente è solo in lingua inglese (Stati Uniti) e non supporta più alcuni comandi specifici della realtà mista, ad esempio "scattare un'immagine" e "scattare un video". È possibile usare il nuovo Cortana per avviare le app e supporta anche nuovi comandi mirati per la produttività, ad esempio, "quando il prossimo incontro?" oppure "Invia un messaggio di posta elettronica a <name> che sto eseguendo tardi".
     
 #### <a name="additional-updates-in-available-in-19041546-released-october-2020"></a>Aggiornamenti aggiuntivi disponibili nel 19041,546 (rilasciato ottobre 2020)
+
 Questo aggiornamento di manutenzione mensile del desktop include le modifiche seguenti per i dispositivi di realtà mista di Windows: 
 * Consente di ridurre le distorsioni e le aberrazioni nelle visualizzazioni montate in realtà mista di Windows (HMD). 
 * Aggiunge il supporto per i controller di movimento della realtà mista di HP Windows imminenti. 
 * Modifica il comportamento dell'impostazione della frequenza di aggiornamento 90-Hz in realtà mista di Windows in modo che non venga più riattivato automaticamente a 60 Hz in determinati casi in cui non è possibile raggiungere 90 Hz. 
 
 #### <a name="help-us-improve"></a>Aiutaci a migliorare!
+
 Si cerca continuamente di migliorare la compatibilità.  Se le applicazioni Win32 classiche preferite non si comportano correttamente durante la realtà mista di Windows, inviare commenti e suggerimenti tramite l' [Hub di feedback](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub).
 
 ### <a name="prior-release-notes"></a>Note sulla versione precedente

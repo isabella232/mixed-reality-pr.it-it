@@ -1,17 +1,17 @@
 ---
 title: Finestra di dialogo
-description: Informazioni sulle sovrapposizioni della finestra di dialogo e su come usarle in applicazioni di realtà mista.
+description: Informazioni sulle sovrapposizioni della finestra di dialogo in MRTK e su come usarle nelle applicazioni di realtà mista.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: Realtà mista, HoloLens, controlli dell'interfaccia utente, interazione, interfaccia utente, UX, progettazione di UX, interfaccia utente spaziale, interazione spaziale, interfaccia utente 3D, UX 3D, auricolare in realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 752c4cc03c90e498664c61fa3c53b303a2a83a2f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9ef4fc5e4d781d235996a645e8d1bb81e040a64c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847450"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009051"
 ---
 # <a name="dialog"></a>Finestra di dialogo
 
@@ -39,7 +39,7 @@ MRTK fornisce il controllo della finestra di dialogo in tre dimensioni con una o
 
 ---
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

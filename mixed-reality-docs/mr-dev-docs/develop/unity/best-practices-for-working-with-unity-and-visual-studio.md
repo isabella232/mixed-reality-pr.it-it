@@ -1,17 +1,17 @@
 ---
-title: Procedure consigliate per l'uso con Unity e Visual Studio
+title: Procedure consigliate per Unity e Visual Studio
 description: Suggerimenti e consigli per semplificare il flusso di lavoro della creazione di un'applicazione di realtà mista con Unity e Visual Studio.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Deploy, Unity, Visual Studio, HoloLens, HoloLens 2, Headset immersivo, procedure consigliate, cuffie per realtà mista, cuffie per la realtà mista, cuffie per realtà virtuale, UWP, Strumenti di Visual Studio Windows SDK
-ms.openlocfilehash: 9e80cad3e7154ae5548514297343db8efcdcb49e
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 9464c86826b9a8ea2c64384dfa699fc6d98743dd
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010262"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009371"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Procedure consigliate per l'uso con Unity e Visual Studio
 

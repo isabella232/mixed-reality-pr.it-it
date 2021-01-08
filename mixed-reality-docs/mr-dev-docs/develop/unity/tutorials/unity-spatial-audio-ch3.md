@@ -1,19 +1,20 @@
 ---
-title: Esercitazioni audio spaziali-3. Spazializzazione dell'audio da un video
-description: Importare un asset video nel progetto Unity e spatialize l'audio dal video.
+title: Spazializzazione dell'audio da un video
+description: Informazioni su come importare un asset video nel progetto di realtà mista Unity e spatialize l'audio dal video.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: realtà mista, Unity, esercitazione, hololens2, audio spaziale, MRTK, Toolkit per realtà mista, UWP, Windows 10, HRTF, funzione di trasferimento relativa alla testa, Reverb, Microsoft Spatializer, importazione video, lettore video
-ms.openlocfilehash: 46f2f88be6613096a835f04e826b776c32c1b8c2
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 211d1e32a8137444d0f33d442a60067dcd77ca36
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002626"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007412"
 ---
 # <a name="spatializing-audio-from-a-video"></a>Spazializzazione dell'audio da un video
+
 In questo terzo capitolo del modulo audio spaziale delle esercitazioni di HoloLens 2 Unity è possibile:
 * Importare un video e aggiungere un lettore video
 * Riprodurre il video su un quadrilatero
@@ -40,6 +41,7 @@ Successivamente, aggiungere un oggetto **lettore video** alla **gerarchia** face
 ![Lettore video nella gerarchia](images/spatial-audio/video-player-in-hierarchy.png)
 
 ## <a name="play-video-onto-a-quadrangle"></a>Riprodurre video su un quadrilatero
+
 L'oggetto **Player video** necessita di un oggetto gioco con trama su cui eseguire il rendering del video. Per prima cosa, aggiungere un **Quad** alla **gerarchia** facendo clic con il pulsante destro del mouse sul riquadro **gerarchia** e scegliendo **oggetto 3D-> Quad**:
 
 ![Aggiungere Quad alla gerarchia](images/spatial-audio/add-quad-to-hierarchy.png)
@@ -74,6 +76,7 @@ Il riquadro **Inspector** per il **lettore video** sarà ora simile al seguente:
 ![Proprietà lettore video](images/spatial-audio/video-player-properties.png)
 
 ## <a name="spatialize-the-audio-from-the-video"></a>Spatialize l'audio dal video
+
 Nel riquadro **Inspector** per il **Quad** creare un' **origine audio** a cui indirizzare l'audio dal video:
 * Fare clic su **Aggiungi componente** nella parte inferiore del riquadro
 * Aggiungere un' **origine audio**
@@ -96,6 +99,7 @@ Dopo queste modifiche, il riquadro **Inspector** per il **lettore video** sarà 
 ![Origine audio del set di lettori video](images/spatial-audio/video-player-set-audio-source.png)
 
 ## <a name="next-steps"></a>Passaggi successivi
+
 Provare l'app in un HoloLens 2 o nell'editor di Unity. Potrai visualizzare e ascoltare il video e l'audio del video sarà spaziali.
 
 > [!div class="nextstepaction"]

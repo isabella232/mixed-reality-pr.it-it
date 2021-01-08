@@ -1,22 +1,22 @@
 ---
 title: Panoramica di WebVR
-description: Panoramica dell'uso e dello sviluppo per WebVR in realtà mista di Windows
+description: Scopri le nozioni di base sull'uso e lo sviluppo di applicazioni WebVR in esecuzione su cuffie immersive a realtà mista di Windows.
 author: yonet
 ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
 keywords: WebVR, WebXR, WinMR, WebAR, Web VR, Web XR, Web Mr, Web AR, 360, 360 video, 360 video, 360 Photo, 360 photos, 360 content, immersive Web, immersiveweb, IW
-ms.openlocfilehash: fdff2acf7816f36129d867650b16d9760a92e375
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: bf0335c0fa7fd42f60a20690d22b2ef9a4f6859a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91691196"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006961"
 ---
 # <a name="webvr-overview"></a>Panoramica di WebVR
 
 > [!IMPORTANT]
-> Le **API WebVR 1,1** sono deprecate e sostituite dalle **API del dispositivo WebXR** .
+> Le **API WebVR 1,1** sono deprecate e sostituite dalle **API del dispositivo WebXR**.
 
 Le API WebVR 1,1 sono deprecate e rimosse da Chrome e dal nuovo Microsoft Edge. Le API WebVR sono sostituite dalle API del dispositivo WebXR. È possibile controllare l'elenco di browser che attualmente supportano le API WebVR in [caniuse.com](https://caniuse.com/#search=webvr).
 

@@ -1,17 +1,17 @@
 ---
 title: Note sulla versione - agosto 2016
-description: Note sulla versione di HoloLens per la versione anniversario di Windows 10 (2016)
+description: È possibile rimanere sempre aggiornati sulle note sulla versione di HoloLens per la versione di anniversario di Windows 10 per la versione 2016.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, note sulla versione, sistema operativo, piattaforma, funzionalità, suite commerciale
-ms.openlocfilehash: 870da1075dd1fa1a83926a89bad753233927abda
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9d65d0a2454b5eb076e7c350a6d26e11660af9a5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725962"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009261"
 ---
 # <a name="release-notes---august-2016"></a>Note sulla versione - agosto 2016
 
@@ -92,7 +92,7 @@ Contattare il gestore di account Microsoft locale per acquistare Microsoft HoloL
 </tr><tr>
 <td><a href="https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps">Portale di business Store</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<th colspan="3" style="text-align: left;"> Sicurezza e identità</th>
+<th colspan="3" style="text-align: left;"> Sicurezza e Identity</th>
 </tr><tr>
 <td>Accedi con Azure Active Directory (AAD)</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
@@ -116,7 +116,7 @@ Contattare il gestore di account Microsoft locale per acquistare Microsoft HoloL
 * [Note sulla versione - maggio 2016](release-notes-may-2016.md)
 * [Note sulla versione - marzo 2016](release-notes-march-2016.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Problemi noti di HoloLens](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
 * [Funzionalità commerciali](https://docs.microsoft.com/windows/mixed-reality/commercial-features)
 * [Installare gli strumenti](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)

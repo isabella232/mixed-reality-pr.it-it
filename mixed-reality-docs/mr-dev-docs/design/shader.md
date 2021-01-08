@@ -1,17 +1,17 @@
 ---
 title: Shader
-description: Il Toolkit di realtà mista standard shader fornisce vari tipi di effetti visivi che possono essere usati con gli ologrammi.
+description: Informazioni sul modo in cui lo shader standard di Mixed Reality Toolkit offre diversi tipi di effetti visivi che possono essere usati con gli ologrammi nelle app per realtà mista.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, shader, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, effetti visivi
-ms.openlocfilehash: 08701fb48d633f7de75b74b5e44655c3a01fade8
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 68e40c053f9557debf9ad22baf2f48a8e06a1bbb
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848240"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008861"
 ---
 # <a name="shader"></a>Shader
 
@@ -44,7 +44,7 @@ Poiché gli oggetti olografici sono combinati con quelli fisici nell'ambiente re
 
 ---
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

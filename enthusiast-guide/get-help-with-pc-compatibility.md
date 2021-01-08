@@ -1,6 +1,6 @@
 ---
-title: Ottieni assistenza per la compatibilità dei PC in realtà mista di Windows
-description: Risorse della Guida per i problemi di compatibilità dei PC quando si lavora con la realtà mista di Windows.
+title: Assistenza per la compatibilità dei PC
+description: È possibile rimanere sempre aggiornati sulle risorse per la risoluzione dei problemi di compatibilità dei PC quando si utilizzano dispositivi e applicazioni di realtà mista di Windows.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 01/07/2021
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: a3d8c21a6f9f94cbecca81915145603588e468ff
-ms.sourcegitcommit: e944f24d2deb4433865cc8f6fd9305d6d9676f48
+ms.openlocfilehash: e3d150544c3bce99d1aa808229d282b3d2fe1dd0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97971900"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007481"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Ottieni assistenza per la compatibilità dei PC in realtà mista di Windows
 

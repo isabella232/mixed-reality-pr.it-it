@@ -1,17 +1,17 @@
 ---
 title: Rilevamento mano e occhio articolato in Unity
-description: Ci sono due modi principali per agire sullo sguardo in Unity, movimenti della mano e controller di movimento.
+description: Informazioni sui due modi principali per agire sullo sguardo in Unity, movimenti della mano e controller di movimento.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: movimenti, controller di movimento, Unity, sguardo, input, cuffie per realtà mista, cuffie di realtà mista di Windows, cuffie per realtà virtuale, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: de8ea7968c36722f3690c5515e4f69e576898524
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 4c704677a78fee02b9da9d0db9bc2966ab6b3724
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97011554"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008954"
 ---
 # <a name="articulated-hand-and-eye-tracking-in-unity"></a>Rilevamento mano e occhio articolato in Unity
 
@@ -48,7 +48,7 @@ Esplorare i diversi tipi di interazioni e i controlli dell'interfaccia utente di
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo:
+Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui, è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Mapping spaziale](spatial-mapping-in-unity.md)

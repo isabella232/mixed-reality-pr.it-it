@@ -1,17 +1,17 @@
 ---
 title: Ancoraggi nello spazio condivisi in DirectX
-description: Viene illustrato come sincronizzare due dispositivi HoloLens condividendo ancoraggi spaziali.
+description: Informazioni su come sincronizzare due dispositivi HoloLens condividendo gli ancoraggi locali e spaziali di Azure nelle applicazioni DirectX.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: HoloLens, Synchronize, ancoraggio spaziale, trasferimento, multiplayer, visualizzazione, scenario, procedura dettagliata, codice di esempio, Azure, ancoraggi spaziali di Azure, ASA
-ms.openlocfilehash: 4e41975a18c28cb2228b20ebb5d3a445774cca44
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 46fe6be5d81a8fc68502500e318eb8e63d223089
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530324"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008531"
 ---
 # <a name="shared-experiences-in-directx"></a>Esperienze condivise in DirectX
 
@@ -35,6 +35,7 @@ Una volta che si è in esecuzione con gli ancoraggi spaziali di Azure, è possib
 Nei casi in cui non è possibile usare gli ancoraggi spaziali di Azure, i [trasferimenti di ancoraggio locali](../../out-of-scope/local-anchor-transfers-in-directx.md) consentono a un dispositivo HoloLens di esportare un ancoraggio per l'importazione da parte di un secondo dispositivo HoloLens.  Questo approccio offre un richiamo di ancoraggio meno affidabile rispetto agli ancoraggi spaziali di Azure e i dispositivi iOS e Android non sono supportati da questo approccio.
 
 ## <a name="see-also"></a>Vedere anche
+
 * [Esperienze condivise nella realtà mista](shared-experiences-in-mixed-reality.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Ancoraggi nello spazio di Azure</a>
 * <a href="https://docs.microsoft.com/cpp/api/spatial-anchors/winrt/" target="_blank">Azure Spatial Anchors SDK per HoloLens</a>

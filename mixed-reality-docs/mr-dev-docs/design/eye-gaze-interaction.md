@@ -1,17 +1,17 @@
 ---
 title: Interazione basata su sguardo fisso
-description: HoloLens 2 consente di raggiungere un nuovo livello di comprensione contestuale e umana all'interno dell'esperienza olografica, offrendo agli sviluppatori la possibilità di usare le informazioni relative a cosa gli utenti stanno guardando. Questa pagina descrive le raccomandazioni di progettazione per gli sviluppatori che vogliono usare gli sguardi come input.
+description: Scopri le interazioni basate su occhi e sguardi su HoloLens 2 e i nuovi livelli di contesto e comprensione umana, se disponibili in esperienze olografiche.
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Rilevamento degli occhi, realtà mista, input, sguardi oculari, cuffie per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, progettazione, interazioni
-ms.openlocfilehash: e21d591d2843f67f3a0b0eed42a27c74942e8999
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: b5091b92fd048f72184212401d54ad0b7353875c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847334"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008581"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>Interazione basata sugli sguardi su HoloLens 2
 

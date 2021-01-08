@@ -8,12 +8,12 @@ ms.topic: article
 keywords: ologrammi, stabilità, hololens, cuffie per realtà mista, cuffie per la realtà mista di Windows, auricolare della realtà virtuale, frequenza dei fotogrammi, rendering, riproiezione, separazione dei colori
 appliesto:
 - HoloLens
-ms.openlocfilehash: 4405cd0fa7cfca5205d312d1ccc54efc06db7bd7
-ms.sourcegitcommit: 13fe1e7f7f268730a0be720933d7414e9c63ac9b
+ms.openlocfilehash: 36abf928d8f665717bacaf8da372d299b41fabd6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97808832"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006641"
 ---
 # <a name="hologram-stability"></a>Stabilità degli ologrammi
 
@@ -66,7 +66,7 @@ La convergenza e l'alloggio sono univoci, in quanto i segnali aggiuntivi retinic
 
 Gli utenti che indossano HoloLens si adatteranno sempre a 2,0 m per mantenere un'immagine chiara perché i HoloLens visualizzati sono fissi a distanza ottica circa 2,0 m dall'utente. Gli sviluppatori di app controllano la posizione di convergenza degli occhi degli utenti inserendo contenuto e ologrammi a diverse profondità. Quando gli utenti sono in grado di adattarsi a diverse distanze, il collegamento naturale tra i due segnali viene danneggiato, causando fastidio visivi o affaticamento, soprattutto quando la grandezza del conflitto è grande. 
 
-Il disagio del conflitto vergence-accommodation può essere evitato o ridotto a icona mantenendo il contenuto convergente il più vicino possibile a 2,0 m (ovvero, in una scena con una grande profondità, inserire le aree di interesse quasi 2,0 m, quando possibile). Quando il contenuto non può essere inserito vicino a 2,0 m, il disagio del conflitto vergence-Accommodation è maggiore quando lo sguardo dell'utente tra diverse distanze. In altre parole, è molto più semplice esaminare un ologramma stazionario che rimanga a 50 cm rispetto a un ologramma di 50 cm che si sposta verso e fuori dall'utente nel tempo.
+Il disagio del conflitto vergence-accommodation può essere evitato o ridotto a icona mantenendo il contenuto convergente il più vicino possibile a 2,0 m (ovvero, in una scena con una grande profondità, inserire le aree di interesse quasi 2,0 m, quando possibile). Quando il contenuto non può essere inserito vicino a 2,0 m, il disagio del conflitto vergence-Accommodation è maggiore quando lo sguardo dell'utente tra diverse distanze. In altre parole, è molto più confortevole guardare un ologramma che rimane fisso a 50 cm di distanza rispetto a un ologramma distante 50 cm che si avvicina e si allontana gradualmente.
 
 Anche l'inserimento di contenuto a 2,0 m è vantaggioso perché i due schermi sono progettati per una sovrapposizione completa a questa distanza. Per le immagini posizionate fuori da questo piano, dal momento che si spostano sul lato del frame olografico, verranno visualizzate da una visualizzazione rimanendo comunque visibile sull'altro. Questa rivalità binoculare può compromettere la percezione approfondita dell'ologramma.
 
@@ -95,7 +95,7 @@ Le applicazioni devono eseguire azioni specifiche per abilitare i diversi tipi d
 
 ### <a name="choosing-reprojection-technique"></a>Scelta della tecnica di riproiezione
 
-Tipo di stabilizzazione |    Visori VR immersive |    HoloLens generazione 1 | HoloLens 2
+Tipo di stabilizzazione |    Auricolari immersivi |    HoloLens generazione 1 | HoloLens 2
 --- | --- | --- | ---
 Riproiezione profondità |    Consigliato |   N/D |   Consigliato<br/><br/>Le applicazioni Unity devono usare Unity 2018.4.12 o versione successiva o Unity 2019,3 o versione successiva. In caso contrario, usare la riproiezione piana automatica.
 Riproiezione piana automatica | N/D |   Impostazione predefinita consigliata |   Consigliato se la riproiezione di profondità non fornisce i risultati migliori<br/><br/>Le applicazioni Unity sono consigliate per usare Unity 2018.4.12 o versione successiva o Unity 2019,3 o versione successiva.  Le versioni precedenti di Unity funzioneranno con risultati di riproiezione leggermente ridotti.
@@ -144,7 +144,7 @@ La cosa più importante che uno sviluppatore può eseguire per stabilizzare gli 
 
 **Procedure consigliate** Non esiste un modo universale per configurare il piano di stabilizzazione ed è specifico dell'app. La raccomandazione principale è sperimentare e vedere cosa funziona meglio per lo scenario in uso. Tuttavia, provare a allineare il piano di stabilizzazione con il maggior volume possibile di contenuto, perché tutto il contenuto di questo piano è perfettamente stabilizzato.
 
-Esempio:
+Ad esempio:
 * Se si dispone solo di contenuto planare (lettura di app, app per la riproduzione video), allineare il piano di stabilizzazione al piano con il contenuto.
 * Se sono presenti tre piccole sfere bloccate a livello globale, il piano di stabilizzazione viene tagliato anche se i centri di tutte le sfere attualmente presenti nella visualizzazione dell'utente.
 * Se la scena include contenuto con profondità notevolmente diverse, prediligere ulteriori oggetti.
@@ -181,7 +181,7 @@ Sebbene sia difficile evitare completamente la separazione dei colori, sono disp
 
 Come in precedenza, il rendering a 60 FPS e l'impostazione del piano di stabilizzazione sono le tecniche più importanti per la stabilità degli ologrammi. Se si verifica la separazione dei colori evidente, verificare innanzitutto che la frequenza dei fotogrammi soddisfi le aspettative.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Informazioni sulle prestazioni per la realtà mista](understanding-performance-for-mixed-reality.md)
 * [Colore, luce e materiali](../../color,-light-and-materials.md)
 * [Interazioni istintive](../../design/interaction-fundamentals.md)

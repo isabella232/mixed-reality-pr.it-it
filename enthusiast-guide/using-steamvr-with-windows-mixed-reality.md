@@ -1,14 +1,14 @@
 ---
 title: Uso di SteamVR con la realtà mista di Windows
-description: Modalità di riproduzione di giochi SteamVR su cuffie di realtà miste Windows con PC compatibili.
+description: Informazioni su come configurare e riprodurre giochi SteamVR su cuffie e controller di realtà mista di Windows con PC compatibili.
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, Games, SteamVR, Steam, requisiti di sistema
-ms.openlocfilehash: e91c5b7fcaed2f048e79843c47ae613761a5d3ad
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9330d6026b74494c851aea6b4664c1ede787c1c5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725742"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006901"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>Uso di SteamVR con la realtà mista di Windows
 
@@ -155,7 +155,7 @@ I commenti e i suggerimenti sono utili per migliorare l'esperienza di SteamVR di
 
 In caso di domande o commenti da condividere, è anche possibile contattarci nel forum di [Steam](http://steamcommunity.com/app/719950/discussions/).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Risoluzione dei problemi di SteamVR con la realtà mista di Windows](steamvr-questions.md)
 * [Uso di giochi e app in realtà mista di Windows](using-games-and-apps-in-windows-mixed-reality.md)

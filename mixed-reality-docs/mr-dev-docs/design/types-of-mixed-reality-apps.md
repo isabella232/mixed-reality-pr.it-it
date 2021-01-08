@@ -1,17 +1,17 @@
 ---
 title: Tipi di app per realtà mista
-description: Informazioni sull'ampia gamma di esperienze che la piattaforma di realtà mista può supportare, da ambienti completamente immersivi a una chiara sovrapposizione di informazioni sull'ambiente corrente di un utente.
+description: Informazioni sulle esperienze supportate dalla piattaforma di realtà mista, da ambienti immersivi a una chiara sovrapposizione di informazioni sull'ambiente di un utente.
 author: rwinj
 ms.author: willyang
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, modelli di app, cuffie per realtà mista, cuffie di realtà mista di Windows, cuffia virtuale reale, HoloLens
-ms.openlocfilehash: 8c9a051ff0b80461fe590efa37593bddb01c0e63
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 795d8733b9f509a79d9429f75dff2f88a2a63c93
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848103"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007621"
 ---
 # <a name="types-of-mixed-reality-apps"></a>Tipi di app per realtà mista
 

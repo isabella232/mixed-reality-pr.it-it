@@ -1,17 +1,17 @@
 ---
 title: 'MR Basics 100: Introduzione a Unity'
-description: Informazioni su come creare la prima applicazione "Hello World" di base per la realtà mista.
+description: Informazioni su come creare la prima applicazione "Hello World" della realtà mista di base per i dispositivi HoloLens e Windows Mixed Reality.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: realtà mista, realtà mista di Windows, HoloLens, immersiva, VR, Mr, introduzione, ologramma, Accademia, esercitazione, Accademia di realtà mista, Unity, auricolare in realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 83ca133e341688f42fa2d53b4d50f1aefa9bb39b
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7b316314d7aa693e8be9006b2c5578c1bae7e3ff
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678410"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006511"
 ---
 # <a name="mr-basics-100-getting-started-with-unity"></a>Nozioni di base MR 100: Introduzione a Unity
 
@@ -43,7 +43,7 @@ Per compilare un'app con Unity, è prima di tutto necessario creare un progetto.
 Per compilare e distribuire app UWP, Unity può esportare il progetto come una soluzione di Visual Studio che conterrà tutti i file di asset e di codice necessari.
 
 1. Avvia Unity
-2. Seleziona **nuovo**
+2. Selezionare **Nuovo**
 3. Immettere un nome di progetto (ad esempio "MixedRealityIntroduction")
 4. Immettere un percorso per salvare il progetto
 5. Verificare che sia selezionato l'interruttore **3D**

@@ -1,5 +1,5 @@
 ---
-title: Integrità mista di Windows, sicurezza e comodità per la realtà mista di Windows
+title: Integrità e sicurezza dell'auricolare di realtà mista di Windows
 description: Informazioni su come rimanere integri, sicuri e comodi per gli utenti quando si usano app per la realtà mista di Windows.
 author: hferrone
 ms.author: v-hferrone
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: a8b78cd637b3f3b68ef793aa76031e3151f1f0fe
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 32b29d11585bae4e803e516ae3733e1165f45587
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725572"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009001"
 ---
 # <a name="windows-mixed-reality-immersive-headset-health-safety-and-comfort"></a>Integrità mista di Windows, sicurezza e comodità per la realtà mista di Windows
 
@@ -41,7 +41,7 @@ Seguire tutte le indicazioni di configurazione per la realtà mista di Windows, 
 
 È **possibile che alcuni utenti riscontrino disagio** , ad esempio nausea, cinetosi, vertigini, disorientamento, cefalea, affaticamento o affaticamento degli occhi quando si usa la realtà mista di Windows, in particolare quando si adattano a usarla. La malattia del movimento e i sintomi correlati possono verificarsi in caso di mancata corrispondenza tra gli elementi visualizzati e l'aspetto del corpo. Se si è soggetti a una malattia di movimento, si ottengono emicranie, si verifica un disturbo interno dell'orecchio o altre condizioni di integrità, è possibile che si verifichi un rischio maggiore di disagio.
 
-**Determinate situazioni possono aumentare il rischio di disagio.** Esempio:
+**Determinate situazioni possono aumentare il rischio di disagio.** Ad esempio:
 
 * Essere un nuovo utente-i sintomi tendono a diminuire man mano che si acquisisce familiarità con la realtà mista di Windows.
 * I dispositivi possono funzionare meglio per gli utenti la cui interpupillare distanza (dpi) rientra in un determinato intervallo. Il dpi è la distanza tra il centro degli alunni dei due occhi. Gli utenti con un dpi al di fuori dell'intervallo ottimale per il dispositivo potrebbero riscontrare fastidio.
@@ -57,6 +57,6 @@ Seguire tutte le indicazioni di configurazione per la realtà mista di Windows, 
 **Per semplificare la gestione dell'ambiente**, se disponibile e configurato, è possibile usare le funzionalità del dispositivo per configurare i limiti per l'uso dei dispositivi, in modo da evitare ostacoli.
 
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Contattare la community](https://answers.microsoft.com)
 * [Contattaci per assistenza](https://support.microsoft.com/contactus/)

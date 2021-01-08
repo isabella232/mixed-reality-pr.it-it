@@ -1,17 +1,17 @@
 ---
 title: Sistemi di coordinate in DirectX
-description: Informazioni sui sistemi di coordinate in DirectX e sulla realtà mista con localizzatori spaziali, frame di riferimento e ancoraggi spaziali. Usare SpatialStage e gestire la perdita di rilevamento, il salvataggio e il caricamento di ancoraggi e la stabilizzazione delle immagini.
+description: Informazioni sui sistemi di coordinate in DirectX e sulla realtà mista con localizzatori spaziali, frame di riferimento e ancoraggi spaziali.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Realtà mista, localizzatore spaziale, frame di riferimento spaziale, sistema di coordinate spaziali, fase spaziale, codice di esempio, stabilizzazione dell'immagine, ancoraggio spaziale, archivio di ancoraggio spaziale, perdita di tracce, procedura dettagliata, cuffie per realtà mista, auricolare di realtà mista, auricolare della realtà virtuale
-ms.openlocfilehash: 7bf2309f3fb6264d6b1a5232f7ead78b771c1649
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 055eff0bb04228cb0a19b9ea208bfc9c00ce2dbe
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613115"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006861"
 ---
 # <a name="coordinate-systems-in-directx"></a>Sistemi di coordinate in DirectX
 

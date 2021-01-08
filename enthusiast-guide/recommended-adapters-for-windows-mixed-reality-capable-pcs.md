@@ -1,5 +1,5 @@
 ---
-title: Adattatori consigliati per PC con supporto per la realtà mista di Windows
+title: Adattatori consigliati per PC con realtà mista Windows
 description: Elenco degli adattatori consigliati per l'uso con le cuffie con la realtà mista di Windows se il PC non dispone di porte USB e HDMI di dimensioni complete.
 author: hferrone
 ms.author: v-hferrone
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, adapter, dongle, HDMI, USB, DisplayPort
 appliesto:
 - Windows 10
-ms.openlocfilehash: 248a202ce57c0b6872ddefc9ec9c2f89e2aa87a4
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 86eaa8d462d97a740f15859d2ab631aafb8dd68e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725982"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009101"
 ---
 # <a name="recommended-adapters"></a>Adapter consigliati
 > [!NOTE]
@@ -278,6 +278,6 @@ Si noti anche le linee guida seguenti per l'uso di un hub USB 3,0 esterno:
 * L'hub USB 3,0 deve essere alimentato esternamente (avere una scheda AC che fornisce potenza aggiuntiva).
 * L'hub a 10 porte USB 3,0 SuperSpeed con 48 W Adapter è noto per funzionare correttamente con le cuffie con la realtà mista di Windows e la maggior parte dei PC.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Risoluzione dei problemi di connettività auricolare](headset-connectivity.md)
 * [Linee guida per la compatibilità hardware con la realtà mista di Windows](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)

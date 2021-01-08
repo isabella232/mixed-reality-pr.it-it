@@ -1,17 +1,17 @@
 ---
 title: Tipografia
-description: Il testo è un elemento importante per la distribuzione di informazioni nell'esperienza dell'app.
+description: Informazioni su come progettare e implementare testo come elemento importante per la distribuzione di informazioni nell'esperienza di app in realtà mista.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, stile, carattere, tipografia, interfaccia utente, UX, testo, auricolare realtà mista, auricolare di realtà mista di Windows, cuffia virtuale reale, HoloLens
-ms.openlocfilehash: 09e0e6029011fdd7fda793f6b6645cb3744baa3b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 38acc8c0d2c7dbd7bcb192f82bb1bb52838323ac
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848137"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007651"
 ---
 # <a name="typography"></a>Tipografia
 
@@ -129,7 +129,7 @@ Segoe UI (il tipo di carattere predefinito per Windows) funziona correttamente n
 
 ---
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Testo in Unity](../develop/unity/text-in-unity.md)
 * [Colore, luce e materiali](../color,-light-and-materials.md)

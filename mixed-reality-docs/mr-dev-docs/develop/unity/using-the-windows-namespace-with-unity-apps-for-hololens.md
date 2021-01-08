@@ -1,17 +1,17 @@
 ---
 title: API WinRT con Unity per HoloLens
-description: Illustra come usare le API WinRT (lo spazio dei nomi Windows) nel progetto Unity per HoloLens.
+description: Come usare le API WinRT e lo spazio dei nomi di Windows nei progetti di realtà mista Unity per HoloLens.
 author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, WinRT, realtà mista di Windows, API, procedura dettagliata, cuffie per la realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, API di realtà mista
-ms.openlocfilehash: ff12df7eb41350fe1f842b3450f3532e4ab8ffa1
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 2c57af72a10867b5ef4fc87ff96679e576d203f4
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010582"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007321"
 ---
 # <a name="winrt-apis-with-unity-for-hololens"></a>API WinRT con Unity per HoloLens
 

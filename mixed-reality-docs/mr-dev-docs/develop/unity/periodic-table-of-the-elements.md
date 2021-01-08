@@ -1,17 +1,17 @@
 ---
 title: Tavola periodica degli elementi
-description: La tabella periodica degli elementi è un'app di esempio Open Source di Microsoft Mixed Reality Design Labs. Informazioni su come definire il layout di una matrice di oggetti nello spazio 3D con vari tipi di superficie usando una raccolta di oggetti.
+description: Informazioni su come disporre una matrice di oggetti nello spazio 3D con vari tipi di superficie usando una raccolta di oggetti con la tabella periodica dell'app di esempio Elements.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, app di esempio, controlli, MRTK, Toolkit per realtà mista, Unity, app di esempio, app di esempio, open source, Microsoft Store, HoloLens, auricolare per realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: a4099c889fee886e63d3a8b773398a250621f26e
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: fd525b0d41efa15ff55097456fb6b06dd3d60c25
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010182"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009361"
 ---
 # <a name="periodic-table-of-the-elements"></a>Tavola periodica degli elementi
 
@@ -22,7 +22,7 @@ ms.locfileid: "97010182"
 
 ![Tabella del periodo dell'app elementi](images/640px-periodictable-hero.jpg)
 
-## <a name="demo-video"></a>Video dimostrativo 
+## <a name="demo-video"></a>Video demo 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCF]
 
 Registrato con HoloLens 2 con l'acquisizione di realtà mista
@@ -31,7 +31,7 @@ Registrato con HoloLens 2 con l'acquisizione di realtà mista
 
 La tabella periodica degli elementi Visualizza gli elementi chimici e ognuna delle relative proprietà in uno spazio 3D. Incorpora le interazioni di base di HoloLens, ad esempio lo sguardo e il tocco aereo. Gli utenti possono ottenere informazioni sugli elementi con i modelli 3D animati. Possono comprendere visivamente la Shell degli elettroni di un elemento e il suo nucleo, composto da protoni e neutroni.
 
-## <a name="background"></a>Background
+## <a name="background"></a>Sfondo
 
 Dopo aver sperimentato HoloLens, sapevo di voler sperimentare un'app di tabella periodica in realtà mista. Poiché ogni elemento dispone di molti punti dati visualizzati con testo, ho pensato che sarebbe stato molto soggetto per l'esplorazione della composizione tipografica in uno spazio 3D. Fornire agli utenti la possibilità di visualizzare il modello Electron dell'elemento era un'altra parte interessante di questo progetto.
 
@@ -55,13 +55,13 @@ L'utente può modificare il tipo di superficie per aria toccando i pulsanti nell
 
 ### <a name="interactable-object-button"></a>Oggetto interagibile (pulsante)
 
-L' [oggetto interagibile](../../design/interactable-object.md) è un oggetto che può rispondere agli input HoloLens di base. Viene fornito come prefabbricato/script, che è possibile applicare facilmente a qualsiasi oggetto. Ad esempio, è possibile rendere interattivo un caffè nella scena e rispondere a input come lo sguardo, il tocco aereo, la navigazione e i movimenti di manipolazione. [Scopri di più](../../design/interactable-object.md)
+L' [oggetto interagibile](../../design/interactable-object.md) è un oggetto che può rispondere agli input HoloLens di base. Viene fornito come prefabbricato/script, che è possibile applicare facilmente a qualsiasi oggetto. Ad esempio, è possibile rendere interattivo un caffè nella scena e rispondere a input come lo sguardo, il tocco aereo, la navigazione e i movimenti di manipolazione. [Altre informazioni](../../design/interactable-object.md)
 
 ![oggetto nteractable](images/640px-periodictable-interactableobject.jpg)
 
 ### <a name="object-collection"></a>Raccolta di oggetti
 
-La [raccolta](../../design/object-collection.md) di oggetti è un oggetto che consente di disporre più oggetti in varie forme. Supporta piani, cilindri, sfere e dispersione. È possibile configurare proprietà aggiuntive, ad esempio raggio, numero di righe e spaziatura. [Scopri di più](../../design/object-collection.md)
+La [raccolta](../../design/object-collection.md) di oggetti è un oggetto che consente di disporre più oggetti in varie forme. Supporta piani, cilindri, sfere e dispersione. È possibile configurare proprietà aggiuntive, ad esempio raggio, numero di righe e spaziatura. [Altre informazioni](../../design/object-collection.md)
 
 ![Raccolta di oggetti](images/640px-periodictable-collections.jpg)
 

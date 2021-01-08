@@ -1,17 +1,17 @@
 ---
 title: Informazioni sulle prestazioni per la realtà mista
-description: Informazioni e dettagli avanzati per l'ottimizzazione delle prestazioni dell'app di realtà mista di Windows.
+description: Informazioni e dettagli avanzati per l'analisi e l'ottimizzazione delle prestazioni delle app per la realtà mista di Windows.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, prestazioni, ottimizzazione, CPU, GPU
-ms.openlocfilehash: fc7b6385acda9079a649131b9e6eccf5ac067819
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ff3db5d49ddab13a20c4c32de8e5640fff4f0d81
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530066"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008471"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>Informazioni sulle prestazioni per la realtà mista
 
@@ -134,7 +134,7 @@ Un numero eccessivo di operazioni di allocazione e deallocazione della memoria p
 
 #### <a name="object-pooling"></a>Pooling di oggetti
 
-Il pool di oggetti è una tecnica comune per ridurre i costi delle allocazioni e delle deallocazioni continue degli oggetti. Questa operazione viene eseguita allocando un pool di grandi dimensioni di oggetti identici e riutilizzando le istanze disponibili inattive da questo pool invece di generare ed eliminare costantemente gli oggetti nel tempo. I pool di oggetti sono ottimi per i componenti riutilizzabili con durata variabile durante un'app.
+Il pool di oggetti è una tecnica comune per ridurre i costi delle allocazioni e delle deallocazioni continue degli oggetti. Viene eseguito allocando un pool di grandi dimensioni di oggetti identici e riutilizzando le istanze inattive disponibili di questo pool invece di generare ed eliminare costantemente gli oggetti nel tempo. I pool di oggetti sono la soluzione ideale per i componenti riutilizzabili con durata variabile durante l'esecuzione di un'app.
 
 ## <a name="see-also"></a>Vedere anche
 - [Consigli sulle prestazioni per Unity](../unity/performance-recommendations-for-unity.md)

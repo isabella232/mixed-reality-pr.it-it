@@ -1,17 +1,17 @@
 ---
 title: Scrivere un lettore Holographic Remoting personalizzato
-description: Grazie alla creazione di un'app per lettore remoto olografica personalizzata, è possibile creare un'applicazione personalizzata in grado di visualizzare il contenuto di cui è stato eseguito il rendering in un computer remoto in HoloLens 2.
+description: Creare un'app hologaphic Remoting personalizzata per visualizzare il contenuto di cui è stato eseguito il rendering in un computer remoto in HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicazione remota, comunicazione remota olografica, NuGet, manifesto dell'applicazione, contesto del lettore, app remota, auricolare in realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: ac3ee68cf3cff3e024ce40acceac61a2fe123399
-ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
+ms.openlocfilehash: 23449749e709075e6530730e596bfcc9cd088c1e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97102896"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006551"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>Scrivere un'app lettore Holographic Remoting personalizzata
 

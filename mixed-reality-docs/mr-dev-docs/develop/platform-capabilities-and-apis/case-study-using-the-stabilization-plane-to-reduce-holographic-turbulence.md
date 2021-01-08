@@ -1,17 +1,17 @@
 ---
-title: 'Case Study: uso del piano di stabilizzazione per ridurre la turbolenza olografica'
-description: Uso del piano di stabilizzazione per ridurre la turbolenza olografica
+title: 'Case Study: uso del piano di stabilizzazione'
+description: Esplorare il modo in cui il team di sviluppo ha usato il piano di stabilizzazione per ridurre la turbolenza olografica in un'applicazione di realtà
 author: bstrukus
 ms.author: bestruku
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, ologrammi, stabilizzazione, case study, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: e0eba3df5457ea06ee80682d99c82a5a23c1635d
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 85caee589a5f031f605417639eab2e980cb613c5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530434"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006701"
 ---
 # <a name="case-study---using-the-stabilization-plane-to-reduce-holographic-turbulence"></a>Case Study: uso del piano di stabilizzazione per ridurre la turbolenza olografica
 

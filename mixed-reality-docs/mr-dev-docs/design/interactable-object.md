@@ -1,17 +1,17 @@
 ---
 title: Oggetto che supporta interazioni
-description: Un pulsante è a lungo una metafora usata per attivare un evento nel mondo astratto 2D. Nel mondo della realtà mista tridimensionale, non dobbiamo più limitarci a questo mondo dell'astrazione.
+description: Informazioni su come attivare gli eventi, fornire segnali visivi e interagire con gli oggetti nelle applicazioni di realtà mista.
 author: cre8ivepark
 ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, CUE, interfaccia utente, UX, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, audio
-ms.openlocfilehash: fb7004c22602683e4edb1e38784cac5c0b7479c4
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: d0dc8ce6425d597d04b47a6c8b08f72534488594
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847863"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007201"
 ---
 # <a name="interactable-object"></a>Oggetto che supporta interazioni
 
@@ -277,7 +277,7 @@ Lo shader standard di MixedRealityToolkit offre diverse opzioni, ad esempio la *
 ---
 
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

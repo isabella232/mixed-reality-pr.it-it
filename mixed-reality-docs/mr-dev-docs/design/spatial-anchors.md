@@ -1,17 +1,17 @@
 ---
 title: Ancoraggi nello spazio
-description: Procedure consigliate per l'uso di ancoraggi nello spazio per il rendering di ologrammi stabili.
+description: Informazioni sulle procedure consigliate per l'uso di ancoraggi spaziali per il rendering di ologrammi stabili nelle applicazioni di realtà mista.
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: sistema di coordinate, sistema di coordinate spaziali, scalabilità globale, mondo, scala, posizione, orientamento, ancoraggio, ancoraggio spaziale, blocco globale, blocco globale, persistenza, condivisione, auricolare realtà mista, auricolare di realtà mista, auricolare della realtà virtuale, HoloLens
-ms.openlocfilehash: 7f6997e491f76e66845b88ea0897dbb037495ba6
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2db88f9bc5d128f4a9eb42cfb5211d0597b43cfa
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848213"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009111"
 ---
 # <a name="spatial-anchors"></a>Ancoraggi nello spazio
 
@@ -71,7 +71,7 @@ Questa operazione è particolarmente importante per gli ancoraggi locali che son
 
 Per gli ancoraggi nello spazio del cloud, le dimensioni dello spazio di archiviazione possono adattarsi come richiesto dallo scenario. È possibile archiviare tutti gli ancoraggi cloud necessari, rilasciandoli quando si è certi che gli utenti non richiedano nuovamente l'ancoraggio.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Sistemi di coordinate](coordinate-systems.md)
 * [Esperienze condivise nella realtà mista](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)

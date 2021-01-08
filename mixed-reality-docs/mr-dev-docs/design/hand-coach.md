@@ -1,17 +1,17 @@
 ---
 title: Coach mano
-description: le mani 3D attivate quando il sistema non rileva le mani dell'utente per assisterle.
+description: Scopri in che modo le mani 3D vengono attivate con il Coach mano quando il sistema non rileva le mani dell'utente per assisterle.
 author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, Coach mano, auricolare immersivo, MRTK, Hands, Hands, aiuto, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: e46704a1cd2e93fc1764528c408c01d117444c34
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 07b42482d9258b4189ef43683370bd951f5c88e8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847958"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009161"
 ---
 # <a name="hand-coach"></a>Coach mano
 
@@ -173,7 +173,7 @@ Una volta soddisfatta l'animazione
     *   Impostazione per progetto
         *   Scenografia impostata su UWP: è possibile trovare l'istruzione nel [progetto di Unity](../develop/unity/Configure-Unity-Project.md) per la realtà mista di Windows
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Interazione-nozioni fondamentali](interaction-fundamentals.md)
 * [Processo di creazione dell'asset](asset-creation-process.md)

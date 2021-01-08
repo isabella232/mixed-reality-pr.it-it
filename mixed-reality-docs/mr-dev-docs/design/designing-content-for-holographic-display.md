@@ -1,17 +1,17 @@
 ---
 title: Progettazione di contenuto per la visualizzazione olografica
-description: Informazioni sulle linee guida di progettazione e sulle procedure consigliate per la visualizzazione olografica.
+description: Informazioni sulle linee guida di progettazione e sulle procedure consigliate per la visualizzazione olografica sui dispositivi HoloLens.
 author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: Progettazione dell'interfaccia utente, schermo olografico, progettazione del contenuto, tema scuro, tema chiaro, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, progettazione, pixel
-ms.openlocfilehash: 4a95f5df50a600035d9127c73f86a5d8be5e7131
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 371d9aac610a765e7ecc6dd1f17401e5d7855672
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847988"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009091"
 ---
 # <a name="designing-content-for-holographic-display"></a>Progettazione di contenuto per la visualizzazione olografica
 
@@ -22,6 +22,7 @@ Quando si progettano contenuti per le visualizzazioni olografiche, è necessario
 <br>
 
 ## <a name="challenges-with-bright-color-on-a-large-surface"></a>Problemi con colore luminoso su larga superficie 
+
 In base alla ricerca e al test dell'esperienza HoloLens, abbiamo scoperto che l'uso di colori luminosi in un'area di grandi dimensioni della visualizzazione può causare diversi problemi: 
 
 **Affaticamento degli occhi** 
@@ -110,7 +111,7 @@ Se il progetto deve usare oggetti trasparenti, provare a ridurre al minimo il nu
 
 ---
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Colore, luce e materiali](color-light-and-materials.md)
 * [Cursori](cursors.md)

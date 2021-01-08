@@ -1,17 +1,17 @@
 ---
 title: Superfici
-description: Surfaces è un'app di esempio Open Source di Microsoft Mixed Reality Design Labs. Esplora il modo in cui è possibile creare una sensazione tattile con la traccia a mano visiva, audio e completamente articolata.
+description: Informazioni su come creare sensazioni tattili con l'app di esempio relativa a oggetti visivi, audio e con rilevamento manuale.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, app di esempio, controlli, MRTK, Toolkit per realtà mista, Unity, app di esempio, app di esempio, open source, Microsoft Store, HoloLens, auricolare per realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: c20ea17b20c867d9bf1da0d5f6244e36f2abbf27
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: bfb93574212dc9e6624d8baac636caf5c8df428a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678520"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009311"
 ---
 # <a name="surfaces"></a>Superfici
 
@@ -22,12 +22,14 @@ ms.locfileid: "94678520"
 
 ![Superfici](images/MRDL_Surfaces_1.jpg)
 
-## <a name="demo-video"></a>Video dimostrativo 
+## <a name="demo-video"></a>Video demo 
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IhWQ]
 
 Registrato con HoloLens 2 con l'acquisizione di realtà mista
 
 ## <a name="about-the-app"></a>Informazioni sull'app
+
 Surfaces illustra come usare il sistema di input MRTK (Mixed Reality Toolkit) e i blocchi predefiniti per creare un'esperienza di app per HoloLens 2. In questo progetto, è possibile trovare gli esempi seguenti:
 - Usare il [sistema di input](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)di MRTK, in particolare il rilevamento a mano/insieme.
 - Usare lo [shader standard](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html) di MRTK per la grafica ad alte prestazioni.
@@ -35,14 +37,17 @@ Surfaces illustra come usare il sistema di input MRTK (Mixed Reality Toolkit) e 
 È possibile usare i componenti di questo progetto per creare esperienze di app per la realtà mista.
 
 ## <a name="mr-dev-days-2020---learnings-from-the-mr-surfaces-app"></a>MR dev Days 2020-apprendere dall'app MR Surfaces
+
 [Informazioni sull'app Surfaces](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App)
 
 Lars Simkins, Senior designer dietro l'app MRDL Surfaces, illustra la storia di progettazione dell'app e gli Highlight tecnici.
 
 ## <a name="project-repository-on-github"></a>Repository del progetto in GitHub
+
 [https://github.com/microsoft/MRDL_Unity_Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)
 
 ## <a name="download-app-from-microsoft-store-in-hololens-2"></a>Scaricare un'app da Microsoft Store in HoloLens 2
+
 https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0#activetab=pivot:overviewtab
 
 (L'app è disponibile solo in HoloLens 2)

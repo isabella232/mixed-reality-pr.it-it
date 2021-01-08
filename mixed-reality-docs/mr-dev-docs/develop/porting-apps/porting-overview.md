@@ -1,17 +1,17 @@
 ---
 title: Panoramica della conversione
-description: Panoramica delle varie opzioni di porting per la realtà mista delle applicazioni esistenti.
+description: Panoramica delle varie opzioni di porting per l'uso delle applicazioni esistenti per la realtà mista per HoloLens e VR.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: porting, Unity, middleware, motore, UWP, Win32
-ms.openlocfilehash: d8cbb62500a81a29a00f4d32eaed0c2df3f5149d
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 5a57c73481e80e5ab6fac1bd02b83c5d3dfaabb6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612835"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007491"
 ---
 # <a name="porting-overview"></a>Panoramica della conversione
 

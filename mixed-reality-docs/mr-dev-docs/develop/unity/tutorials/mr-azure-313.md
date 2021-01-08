@@ -1,17 +1,17 @@
 ---
 title: 'MR and Azure 313: Servizio hub IoT'
-description: Completare questo corso per apprendere come implementare il servizio Hub Azure Internet in una macchina virtuale che esegue Ubuntu 16,4 e quindi visualizzare i dati del messaggio usando Microsoft HoloLens o un auricolare immersivo (VR).
+description: Informazioni su come implementare il servizio Hub Azure Internet in una macchina virtuale che esegue Ubuntu 16,4 e visualizzare i dati del messaggio usando l'auricolare Microsoft HoloLens o VR.
 author: drneil
 ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
 keywords: Azure, realtà mista, Academy, Edge, Internet delle cose, esercitazione, API, notifiche, funzioni, tabelle, hololens, immersive, VR, Internet delle cose, macchine virtuali, Ubuntu, Python, Windows 10, Visual Studio
-ms.openlocfilehash: 2a642bad363d86e37ca2d6c00ebf1ebb73908dec
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 3c01c7351ee284b72a15fd7d5bdd3205fec91e49
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679510"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009301"
 ---
 # <a name="mr-and-azure-313-iot-hub-service"></a>MR e Azure 313: Servizio Hub IoT
 
@@ -805,7 +805,7 @@ Di seguito è riportato un elenco di righe di comando e suggerimenti che consent
         sudo iotedge list
     ```
 
-    Or
+    Oppure
 
     ```bash
         sudo docker ps

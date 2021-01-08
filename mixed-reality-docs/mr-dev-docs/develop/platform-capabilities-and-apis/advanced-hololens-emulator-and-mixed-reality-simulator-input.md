@@ -1,17 +1,17 @@
 ---
-title: Emulatore HoloLens avanzato e input per il simulatore di realtà mista
+title: Emulatore HoloLens avanzato e simulatore di realtà mista
 description: Istruzioni dettagliate per l'uso di tastiera, mouse e controller Xbox per simulare l'input per l'emulatore di HoloLens e il simulatore di realtà mista di Windows.
 author: pbarnettms
 ms.author: pbarnett
 ms.date: 06/8/2020
 ms.topic: article
 keywords: HoloLens, emulatore, simulazione, realtà mista di Windows, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: f5076e65ba1c5d95c1bb106d2d3181665177b43a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ff8a2830630b73266fe7348eee5459bcad98e2e0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530454"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006681"
 ---
 # <a name="advanced-hololens-emulator-and-mixed-reality-simulator-input"></a>Emulatore HoloLens avanzato e input per il simulatore di realtà mista
 
@@ -56,7 +56,7 @@ Nella tabella seguente viene illustrato come viene eseguito il mapping di ogni t
 |  Tonalità |  Frecce su/giù |  Trascina su/giù |  Levetta a destra | 
 |  Eseguire il rollback |  DOMANDE E RISPOSTE |  |  DPad a sinistra/destra | 
 |  X |  A/D |  |  Sinistra levetta sinistra/destra | 
-|  Y |  PGSU/PGGIÙ |  |  DPad | 
+|  S |  PGSU/PGGIÙ |  |  DPad | 
 |  Z |  W/S |  |  Levetta verso l'alto o verso il basso | 
 |  Azione |  Immettere o spazio |  Pulsante destro |  Un pulsante o uno o più trigger | 
 |  Bloom/sistema |  Tasto F2 o Windows |  |  Pulsante B | 
@@ -99,7 +99,7 @@ La tabella seguente illustra in che modo ogni modificatore di destinazione esegu
 |  Tonalità |  Attiva/disattiva intestazione |  Spostare la mano verso l'alto o verso il basso |  Attiva/disattiva intestazione | Sguardi occhi in alto/in basso | 
 |  Eseguire il rollback |  Roll Head verso sinistra/destra |  |  Roll Head verso sinistra/destra | (Nessuna azione) |
 |  X |  Diapositiva corpo sinistro/destro |  Spostare la mano/il controller a sinistra/destra |  Trasforma la testa a sinistra/destra | (Nessuna azione) |
-|  Y |  Sposta il corpo verso l'alto o verso il basso |  Spostare la mano/il controller verso l'alto/il basso |  Attiva/disattiva intestazione | (Nessuna azione) |
+|  S |  Sposta il corpo verso l'alto o verso il basso |  Spostare la mano/il controller verso l'alto/il basso |  Attiva/disattiva intestazione | (Nessuna azione) |
 |  Z |  Sposta il corpo avanti/indietro |  Spostare la mano/il controller avanti/indietro |  Attiva/disattiva intestazione | (Nessuna azione) |
  
  

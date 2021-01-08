@@ -1,17 +1,17 @@
 ---
 title: Limitazioni e risoluzione dei problemi di comunicazione remota olografica
-description: Procedura di risoluzione dei problemi per la comunicazione remota olografica in HoloLens 2.
+description: Trovare le risorse e le istruzioni per la risoluzione dei problemi per la funzionalità di comunicazione remota olografica nei dispositivi HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Realtà mista di Windows, ologrammi, comunicazione remota olografica, rendering remoto, rendering di rete, HoloLens, ologrammi remoti, risoluzione dei problemi, guida, cuffie per realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 9b900238abc79b0f2f93691d4b4a67cce67a201a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ee1dce72af02374e930de4a1bdff94285c7a84ae
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530191"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006451"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Risoluzione dei problemi di comunicazione remota olografica
 
@@ -24,7 +24,7 @@ Per le app di esempio per la comunicazione remota olografica è stata abilitata 
 
 Se si ottiene l'errore irreversibile *vccorlib. lib* , assicurarsi che il carico di lavoro di Visual Studio includa le [librerie mitigate di Spectre](https://aka.ms/Ofhn4c)
 
-## <a name="speech"></a>Riconoscimento vocale
+## <a name="speech"></a>Voce
 
 Il lettore di comunicazione remota olografica supporta una sovrapposizione di diagnostica, che può essere abilitata in base a quanto detto ```Enable Diagnostics``` e disabilitato ```Disable Diagnostics``` . Se si riscontrano problemi con questi comandi vocali, è anche possibile avviare il lettore di comunicazione remota olografica tramite un Web browser usando ```ms-holographic-remoting:?stats``` come URL.
 

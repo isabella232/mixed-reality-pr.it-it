@@ -1,17 +1,17 @@
 ---
 title: Rendering in DirectX
-description: Viene illustrato il rendering olografico per la realtà mista di Windows.
+description: Informazioni su come aggiornare ed eseguire il rendering del contenuto nelle applicazioni DirectX per la realtà mista di Windows.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Realtà mista di Windows, ologrammi, rendering, grafica 3D, HolographicFrame, ciclo di rendering, ciclo di aggiornamento, procedura dettagliata, codice di esempio, Direct3D
-ms.openlocfilehash: 90d665e8054a185969a95e6ff6415979e728e9ab
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: aafead61b45550f499405ae63bda7d7f8e79d224
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613185"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006721"
 ---
 # <a name="rendering-in-directx"></a>Rendering in DirectX
 

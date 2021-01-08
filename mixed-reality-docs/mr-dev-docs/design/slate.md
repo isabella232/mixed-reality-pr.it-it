@@ -1,17 +1,17 @@
 ---
 title: Slate
-description: Uno Slate è un controllo di stile della finestra sottile per la visualizzazione di contenuto 2D.
+description: Per la visualizzazione di contenuto 2D tramite il Toolkit di realtà mista, è molto semplice.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare realtà virtuale, HoloLens, ardesia, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 53bcc9d8ac3b222e9b5a3dfcf47b327c212552d2
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: cbb4a741f4f78dcad603670bc282a25bc0e70fd2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848222"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008811"
 ---
 # <a name="slate"></a>Slate
 
@@ -31,7 +31,7 @@ Uno Slate è un controllo di stile della finestra sottile per la visualizzazione
 
 ---
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

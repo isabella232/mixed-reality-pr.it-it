@@ -1,17 +1,17 @@
 ---
 title: Informazioni di riferimento sulle API di Portale di dispositivi
-description: Informazioni di riferimento sulle API per il portale per dispositivi Windows in HoloLens
+description: È possibile rimanere sempre aggiornati sull'API del portale per dispositivi Windows per lo sviluppo di HoloLens.
 author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: HoloLens, portale per dispositivi Windows, API, cuffie per realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: c705ce65971042ab41befed9c6813dc797b61fc0
-ms.sourcegitcommit: 084b1da9d7b435394b38d6152a2f9aee7a74aa2a
+ms.openlocfilehash: 13845a5a5668ee8c86178196326425f46be9b321
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97804428"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006651"
 ---
 # <a name="device-portal-api-reference"></a>Informazioni di riferimento sulle API di Portale di dispositivi
 
@@ -696,6 +696,6 @@ Parametri
 Restituisce i dati
 * All'avvio, restituisce lo stato della sessione WPR.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Avviare il Portale di dispositivi di Windows](using-the-windows-device-portal.md)
 * [Informazioni di riferimento sulle API del portale per dispositivi (UWP)](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-api-core)

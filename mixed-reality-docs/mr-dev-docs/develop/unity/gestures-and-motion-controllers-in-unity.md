@@ -1,17 +1,17 @@
 ---
 title: Movimenti e controller del movimento in Unity
-description: Informazioni su come intervenire sullo sguardo in Unity con i movimenti della mano e i controller di movimento.
+description: Informazioni su come intervenire sullo sguardo in Unity con i movimenti della mano e i controller di movimento usando XR e le API comuni per i pulsanti e gli assi.
 author: hferrone
 ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: movimenti, controller di movimento, Unity, sguardo, input, cuffie per realtà mista, cuffie di realtà mista di Windows, cuffie per realtà virtuale, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: 8941fa05af21a7b2c7302f4a76f27cf38e1d5a65
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 3ef3e3d5a1d9171ff6cc04e19fa97bb73768370e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010322"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008791"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Movimenti e controller del movimento in Unity
 
@@ -152,9 +152,9 @@ Le app che desiderano gestire le posizioni in modo diverso in base allo stato di
 <tr>
 <th> Stato di rilevamento </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>Accuratezza elevata</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Alta </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Accuratezza elevata</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Alto </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Accuratezza elevata (a rischio di perdita)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Alta </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Accuratezza elevata (a rischio di perdita)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Alto </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>Accuratezza approssimativa</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Con approssimazione </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -565,7 +565,7 @@ Le esercitazioni dettagliate, con esempi di personalizzazione più dettagliati, 
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo:
+Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui, è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Tracciamento della mano e oculare](hand-eye-in-unit.md)

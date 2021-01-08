@@ -1,6 +1,6 @@
 ---
 title: Prima di iniziare
-description: Come verificare che il PC sia compatibile con e pronto per la realtà mista di Windows.
+description: Scopri come verificare che il PC sia compatibile e pronto per un'ampia gamma di esperienze di applicazioni di realtà miste di Windows.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, compatibilità, compatibilità, introduzione, configurazione, PC, requisiti di sistema
 appliesto:
 - Windows 10
-ms.openlocfilehash: f4743b6548def227675944fcd742b1596963cb3c
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: b7e90477ed16170a5661f34798a5af822ad8e945
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725492"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006881"
 ---
 # <a name="before-you-start"></a>Prima di iniziare
 
@@ -84,7 +84,7 @@ Se si seleziona "seduto e in piedi", si userà l'auricolare senza un limite. Ci�
 
 Se si sceglie "tutte le esperienze", sarà possibile configurare un limite ed essere in grado di spostarsi tra le esperienze delle app che funzionano con un limite e quelle che non ne richiedono una. Preparare lo spazio assicurandosi che non ci siano ostacoli, rischi o elementi fragili nell'area che verrà usata, incluso sopra l'intestazione. Non impostare nella parte superiore di una scala o sotto una ventola a soffitto molto bassa. Rimuovere fragili e gli ostacoli dall'area e assicurarsi che tutti gli utenti usino l'auricolare leggano e conoscano le [linee guida](https://support.microsoft.com/en-us/help/4039969/windows-10-mixed-reality-immersive-headset-health-safety-comfort)per la sicurezza.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Collegare il HMD](plug-in-your-headset.md)
 * [Requisiti hardware minimi per il PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)

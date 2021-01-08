@@ -1,23 +1,24 @@
 ---
 title: Audio spaziale in Unity
-description: Riprodurre un suono spaziale da uno specifico punto 3D nella scena Unity.
+description: Viene illustrato come riprodurre e attenuare i suoni spaziali da uno specifico punto 3D nella scena Unity con esempi.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 11/07/2019
 ms.topic: article
 keywords: Unity, audio spaziale, HRTF, dimensioni della stanza, auricolare in realtà mista, auricolare di realtà mista di Windows, auricolare realtà virtuale, MRTK, Toolkit realtà mista, Spatializer, Reverb
-ms.openlocfilehash: 1efe287855cc5b7738069c6d8183c2ecb5bd6d59
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: ec2703aa89925cb68860670f574a1e43f672e247
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010142"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009271"
 ---
 # <a name="spatial-sound-in-unity"></a>Audio spaziale in Unity
 
 Questa pagina contiene collegamenti a risorse per il suono spaziale in Unity.
 
 ## <a name="spatializer-options"></a>Opzioni di Spatializer
+
 Le opzioni di Spatializer per le applicazioni di realtà mista includono:
 * Unity fornisce il *HRTF MS Spatializer* come parte del pacchetto facoltativo di *realtà mista di Windows* .
   * Viene eseguito sulla CPU in un'architettura a più costi ' single-source '.
@@ -48,11 +49,13 @@ Per altre informazioni, vedere:
 * [Documentazione di Unity Spatializer](https://docs.unity3d.com/Manual/VRAudioSpatializer.html)
 
 ## <a name="distance-based-attenuation"></a>Attenuazione basate sulla distanza
+
 Il decadimento basato sulla distanza predefinito di Unity ha una distanza minima di 1 metro e una distanza massima di 500 metri, con un attenuazione logaritmico. Queste impostazioni possono essere usate per lo scenario in uso oppure è possibile che le origini siano attenuate troppo rapidamente o troppo lentamente. Per altre informazioni, vedere:
 * [Progettazione audio in realtà mista](../../design/spatial-sound-design.md) per le impostazioni consigliate.
 * [Documentazione dell'origine audio di Unity](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html) per istruzioni sull'impostazione di queste curve.
 
 ## <a name="reverb"></a>Riverbero
+
 _Microsoft Spatializer_ Disabilita gli effetti post-Spatializer per impostazione predefinita. Per abilitare il riverbero e altri effetti per le origini spaziali:
 * Alleghi il componente del **livello di invio dell'effetto chat** a ogni origine
 * Modificare la curva del livello di invio per ogni origine, per controllare il guadagno sull'audio restituito al grafico per l'elaborazione degli effetti
@@ -60,16 +63,17 @@ _Microsoft Spatializer_ Disabilita gli effetti post-Spatializer per impostazione
 Per informazioni dettagliate, vedere [il capitolo 5 dell'esercitazione su Spatializer](tutorials/unity-spatial-audio-ch5.md) .
 
 ## <a name="unity-spatial-sound-examples"></a>Esempi di suoni spaziali Unity
+
 Per esempi di suoni spaziali in Unity, vedere:
 * [Demo di MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/Audio)
 * [Progetto di esempio Microsoft Spatializer](https://github.com/microsoft/spatialaudio-unity/tree/master/Samples/MicrosoftSpatializerSample)
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di sviluppo di Unity, è possibile esplorare i blocchi predefiniti di base della realtà mista. Da qui è possibile passare al blocco predefinito successivo:
+Se si sta seguendo il percorso di sviluppo di Unity, è possibile esplorare i blocchi predefiniti di base della realtà mista. Da qui, è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
-> [Text](text-in-unity.md)
+> [Testo](text-in-unity.md)
 
 In alternativa, passare alle API e funzionalità della piattaforma di realtà mista:
 
@@ -79,5 +83,6 @@ In alternativa, passare alle API e funzionalità della piattaforma di realtà mi
 È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](unity-development-overview.md#2-core-building-blocks) in qualsiasi momento.
 
 ## <a name="see-also"></a>Vedere anche
+
 * [Progettazione audio in realtà mista](../../design/spatial-sound-design.md)
 * [Esercitazione di Spatializer di Microsoft](tutorials/unity-spatial-audio-ch1.md)

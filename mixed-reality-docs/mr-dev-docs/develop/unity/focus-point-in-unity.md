@@ -1,17 +1,17 @@
 ---
 title: Punto focale in Unity
-description: Ottimizzazione manuale della stabilità degli ologrammi in Unity impostando il punto di attivazione
+description: Informazioni su come regolare manualmente la stabilità degli ologrammi in Unity impostando il punto di messa a fuoco per gli auricolari HoloLens e di realtà mista di Windows.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, punto focale, piano di messa a fuoco, piano di stabilizzazione, punto di stabilizzazione, riproiezione, LSR, buffer di profondità, auricolare realtà mista, auricolare della realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: d2708dcf39f1d2c67ab1abf69f8330f9dd536ab0
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: bd662a079f23ed590708d961e924859675a44917
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010272"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009341"
 ---
 # <a name="focus-point-in-unity"></a>Punto focale in Unity
 
@@ -53,7 +53,7 @@ void Update()
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di sviluppo di Unity, è possibile esplorare le funzionalità e le API della piattaforma per la realtà mista. Da qui è possibile passare all'argomento successivo:
+Se si sta seguendo il percorso di sviluppo di Unity, è possibile esplorare le funzionalità e le API della piattaforma per la realtà mista. Da qui, è possibile passare all'argomento successivo:
 
 > [!div class="nextstepaction"]
 > [Perdita del tracciamento](tracking-loss-in-unity.md)
@@ -66,4 +66,5 @@ In alternativa, passare direttamente alla distribuzione dell'app in un dispositi
 È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](unity-development-overview.md#3-platform-capabilities-and-apis) in qualsiasi momento.
 
 ### <a name="see-also"></a>Vedere anche
+
 * [Piano di stabilizzazione](../platform-capabilities-and-apis/hologram-stability.md#reprojection)

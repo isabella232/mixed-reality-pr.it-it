@@ -1,17 +1,17 @@
 ---
 title: Acquisti in-app
-description: Gli acquisti in-app sono supportati nelle app per realtà mista, ma è necessario configurarli.
+description: Informazioni su come usare gli acquisti in-app nelle app per realtà mista con visualizzazioni XAML 2D e un popup del sistema operativo Windows azionario.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: acquisti in-app, hololens, XAML, cuffie per realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 905c1be72bf2a3d6fa167cab68a4cb71e6538acc
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: a87cc68f67def1d46a3a6ba352e723d356f51fa2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757781"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008671"
 ---
 # <a name="in-app-purchases"></a>Acquisti in-app
 

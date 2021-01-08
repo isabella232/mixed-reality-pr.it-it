@@ -1,6 +1,6 @@
 ---
 title: Domande frequenti sulla configurazione di Windows Mixed Reality
-description: Risposte alle domande di configurazione comuni quando si lavora con la realtà mista di Windows.
+description: Risposte alle domande di configurazione comuni quando si utilizzano dispositivi e applicazioni di realtà mista di Windows.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: bde88890f596e19dd9b5f9e87ceabbf91039af67
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 2da2524ae09014b990ea4f0301a21d4aac963eb9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725442"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008631"
 ---
 # <a name="windows-mixed-reality-setup-faq"></a>Domande frequenti sulla configurazione di Windows Mixed Reality
 
@@ -158,7 +158,7 @@ Se non è elencato:
     3. Se i controller di movimento sono abbinati al PC, selezionare **impostazioni > dispositivi > Bluetooth & altri dispositivi** per disaccoppiarli. Selezionare ogni controller e "Rimuovi dispositivo". Se i controller sono abbinati all'auricolare, è possibile ignorare questo passaggio.
     4. Collegare la cuffia al PC per reinstallare la realtà mista di Windows.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Contattare la community](https://answers.microsoft.com)
 * [Contattaci per assistenza](https://support.microsoft.com/contactus/)

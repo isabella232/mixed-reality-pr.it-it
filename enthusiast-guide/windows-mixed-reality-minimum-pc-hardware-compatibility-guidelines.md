@@ -1,6 +1,6 @@
 ---
-title: Linee guida per la compatibilità hardware con la realtà mista di Windows
-description: Grafico che illustra i requisiti minimi per il sistema PC per la compatibilità con la realtà mista di Windows.
+title: Linee guida sulla compatibilità con Windows Mixed Reality PC
+description: Grafico di panoramica che illustra i requisiti minimi per il sistema PC per la compatibilità con la realtà mista di Windows.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, ultra, compatibile, compatibilità, requisiti di sistema, PC
 appliesto:
 - Windows 10
-ms.openlocfilehash: bd287e2089056be56330c2c2e8e9af2c079009ac
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: ed53c388797cb57a7f2a53ed40b18923a23c8b74
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725662"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009121"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>Linee guida per la compatibilità hardware con la realtà mista di Windows
 
@@ -69,6 +69,7 @@ Si otterrà quindi un'analisi del PC con l'hardware, i driver e il sistema opera
  [Ottenere assistenza con i risultati del portale di realtà mista](https://support.microsoft.com/en-us/help/4045777/windows-10-get-help-with-pc-compatibility-in-windows-mixed-reality)
 
 ## <a name="compatibility-guidelines"></a>Linee guida sulla compatibilità
+
 > [!IMPORTANT]
 > Microsoft verrà aggiornato, apportando aggiunte a e potrebbe rivedere queste linee guida sulla compatibilità dei PC con Windows Mixed Reality. Per le linee guida e i requisiti più recenti, consultare regolarmente.
 
@@ -260,7 +261,8 @@ Altre informazioni sulla compatibilità della superficie con la realtà mista di
     </tr>
 </table>
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
+
 * [Contattare la community](https://answers.microsoft.com)
 * [Contattaci per assistenza](https://support.microsoft.com/contactus/)
 * [Adattatori consigliati per PC con supporto per la realtà mista di Windows](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)

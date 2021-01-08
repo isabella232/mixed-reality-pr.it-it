@@ -1,6 +1,6 @@
 ---
 title: Domande frequenti sull'uso di Windows Mixed Reality
-description: Risposte alle domande comuni quando si lavora con la realtà mista di Windows.
+description: Trovare le risorse alle domande più comuni quando si lavora con le applicazioni e l'hardware della realtà mista di Windows.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 75ed2699cc34af5f526e0799b762d45ef36e99b9
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 31a27afa9c96ee8beb8b38f74534fc6f58c01f1d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725672"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007051"
 ---
 # <a name="using-windows-mixed-reality-faq"></a>Domande frequenti sull'uso di Windows Mixed Reality
 
@@ -24,7 +24,6 @@ Serve ancora assistenza? Per la risoluzione avanzata dei problemi, vedere questo
 ## <a name="i-see-a-message-that-says-lost-tracking-or-we-dont-have-a-boundary-for-this-space"></a>Viene visualizzato un messaggio che indica che il rilevamento è stato perso o che non è presente alcun limite per questo spazio.
 
 Selezionare **avvia > portale per la realtà mista** sul desktop. Selezionare **menu**, quindi **Esegui il programma di installazione** per creare un nuovo limite. La realtà mista di Windows supporta più percorsi e identifica lo spazio all'avvio a condizione che la chat room non venga modificata.  
-
 
 ## <a name="i-cant-hear-any-sound-or-the-sound-is-coming-from-my-computer-instead-of-my-headset"></a>Non riesco a udire alcun suono o il suono proveniente dal mio computer invece che dall'auricolare
 
@@ -113,7 +112,7 @@ Quando si è pronti per iniziare a usare nuovamente l'auricolare, collegarlo e i
 Se si usa una connessione Wi-Fi a 2,4 GHz, i controller di movimento potrebbero rallentare la connessione Wi-Fi:
 
 <!-- TODO: Use Windows Mixed Reality PC hardware guidelines interlink -->
-* Passare a una connessione Wi-Fi a 5 GHz, se disponibile. [Scopri di più](https://support.microsoft.com/help/4000461)
+* Passare a una connessione Wi-Fi a 5 GHz, se disponibile. [Altre informazioni](https://support.microsoft.com/help/4000461)
 * Usare una scheda Bluetooth separata per connettere i controller di movimento al PC. [Vedere gli adapter consigliati](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 ## <a name="what-is-the-experience-options-setting"></a>Che cos'è l'impostazione opzioni esperienza?
@@ -132,6 +131,7 @@ Quando si usa l'auricolare, la realtà mista di Windows richiede un po' di tempo
 
 Serve ancora assistenza? Per la risoluzione avanzata dei problemi, vedere [questo articolo](troubleshooting-windows-mixed-reality.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
+
 * [Contattare la community](https://answers.microsoft.com)
 * [Contattaci per assistenza](https://support.microsoft.com/contactus/)

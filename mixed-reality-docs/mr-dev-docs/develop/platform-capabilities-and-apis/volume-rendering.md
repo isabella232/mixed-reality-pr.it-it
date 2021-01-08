@@ -1,17 +1,17 @@
 ---
 title: Rendering dei volumi
-description: Le immagini volumetriche contengono informazioni dettagliate con opacità e colore in tutto il volume che non possono essere facilmente espresse come superfici. Informazioni su come eseguire il rendering efficiente di immagini volumetriche in realtà mista di Windows.
+description: Informazioni su come eseguire in modo efficiente il rendering di immagini volumetriche complete con opacità e colore in realtà mista di Windows.
 author: kevinkennedy
 ms.author: kkennedy
 ms.date: 03/21/2018
 ms.topic: article
 keywords: immagine volumetrica, rendering del volume, prestazioni, realtà mista
-ms.openlocfilehash: c0b68a2368823e5699e24d66bfafe1e4e05bdce8
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 2a76be80d786aea0c8bc1bd364155fa37d37e151
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612945"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008781"
 ---
 # <a name="volume-rendering"></a>Rendering dei volumi
 

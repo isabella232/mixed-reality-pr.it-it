@@ -1,17 +1,17 @@
 ---
 title: Informazioni sulle scene
-description: Introduzione alle funzionalità di comprensione della scena per HoloLens
+description: Informazioni su come sviluppare con la comprensione della scena per HoloLens, inclusi SDK, funzionalità e scenari di utilizzo comuni.
 author: szymons
 ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: Comprensione della scena, mapping spaziale, realtà mista di Windows, Unity, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, occlusione, SDK
-ms.openlocfilehash: f46245c668e7cc58258fa4e28c4af5aa7812ef5f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: c4485c5501300d6ca629f4e587fde1f88eea7ea5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848264"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008871"
 ---
 # <a name="scene-understanding"></a>Informazioni sulle scene
 

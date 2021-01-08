@@ -1,17 +1,17 @@
 ---
 title: Sguardo fisso e attesa
-description: Panoramica generale del modello di input di tipo (occhio/testa).
+description: Ottenere una panoramica generale del modello di input occhi e Head per le applicazioni di realtà miste.
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: Realtà mista, sguardo, abitazione, interazione, progettazione, rilevamento degli occhi, rilevamento Head, auricolare in realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: e8005551e08248a73098bd0f9c198b0919e2471a
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2daeea996251b1220ee4753567b42117fbb2126c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847339"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007641"
 ---
 # <a name="gaze-and-dwell"></a>Sguardo fisso e attesa
 
@@ -53,7 +53,7 @@ Lo sguardo e l'abitazione consentono all'utente che usa HoloLens di esplorare in
      <tr>
         <td>Sguardo fisso e attesa</td>
         <td>❌ Non disponibile</td>
-        <td>✔️ Consigliato</td>
+        <td>✔️ Consigliata</td>
         <td>❌ Non disponibile</td>
     </tr>
 </table>
@@ -63,7 +63,7 @@ Lo sguardo e l'abitazione consentono all'utente che usa HoloLens di esplorare in
 
 ---
 
- ## <a name="see-also"></a>Vedi anche
+ ## <a name="see-also"></a>Vedere anche
 
 * [Interazione basata sullo sguardo](eye-gaze-interaction.md)
 * [Tracciamento oculare in HoloLens 2](eye-tracking.md)

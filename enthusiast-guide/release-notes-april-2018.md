@@ -1,17 +1,17 @@
 ---
 title: Note sulla versione-2018 aprile
-description: Note sulla versione di HoloLens e Windows Mixed Reality per l'aggiornamento di Windows 10 aprile 2018 (noto anche come RS4).
+description: È possibile rimanere sempre aggiornati sulle note sulla versione di HoloLens e Windows Mixed Reality per l'aggiornamento di Windows 10 aprile 2018/RS4.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 05/21/2018
 ms.topic: article
 keywords: Note sulla versione, versione, Windows 10, compilazione, RS4, sistema operativo
-ms.openlocfilehash: 42d22feb582716be5ab0bd24ade4a8566dddb5cf
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 8590cf8f813f22fb4f91fef0862b1e2e4ad43b1a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725972"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009241"
 ---
 # <a name="release-notes---april-2018"></a>Note sulla versione-2018 aprile
 
@@ -266,7 +266,7 @@ Usare l' [App Hub di feedback in HoloLens o Windows 10 PC](https://docs.microsof
 * [Note sulla versione - maggio 2016](release-notes-may-2016.md)
 * [Note sulla versione - marzo 2016](release-notes-march-2016.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Supporto per cuffie immersive (collegamento esterno)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [Supporto di HoloLens (collegamento esterno)](https://support.microsoft.com/products/hololens)
 * [Installare gli strumenti](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
