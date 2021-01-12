@@ -3,14 +3,14 @@ title: Istruzioni per i contributi
 description: Informazioni su come contribuire ai documenti per sviluppatori di realtà mista nella piattaforma docs.microsoft.com usando Markdown di GitHub.
 author: mattwojo
 ms.author: mattwoj
-ms.date: 03/21/2018
+ms.date: 01/11/2021
 ms.topic: article
-ms.openlocfilehash: 47689a53557e6ce9b97d0e9d834a70fb0a7786d0
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: 8add6413b0ff4bb32c15d1fce10977397aa33ba1
+ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865416"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98108854"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>Contributo alla documentazione per sviluppatori di realtà mista
 

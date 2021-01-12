@@ -3,15 +3,15 @@ title: Uso del plug-in OpenXR per la realtà mista per Unity
 description: Informazioni su come abilitare il plug-in OpenXR per la realtà mista per i progetti Unity.
 author: hferrone
 ms.author: alexturn
-ms.date: 12/1/2020
+ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, realtà mista, MRTK, Toolkit per realtà mista, realtà aumentata, realtà virtuale, cuffie con realtà mista, informazioni, esercitazione, introduzione
-ms.openlocfilehash: 7d28dd50e111da4b010bcae699b7451d967e8f35
-ms.sourcegitcommit: 653ddcae6d7a1617c89da1153fa8e7b482ef6818
+ms.openlocfilehash: c5d312161b7d0f4f832e8d09dbacf5af700ffd8d
+ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97905293"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98108884"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Uso del plug-in OpenXR per la realtà mista per Unity
 
@@ -20,7 +20,7 @@ A partire da Unity versione 2020,2, il pacchetto di plug-in per la realtà mista
 ## <a name="prerequisites"></a>Prerequisiti
 
 * Unity 2020,2 o versione successiva
-* Plug-in OpenXR Unity 0.1.1 o versione successiva
+* Plug-in OpenXR Unity 0.1.2 o versione successiva
 * Visual Studio 2019 o versione successiva
 * Installare il supporto della piattaforma **UWP** in Unity per le app HoloLens 2
 
@@ -62,7 +62,7 @@ Per aggiungere il pacchetto OpenXR:
 
     ``` json
       "dependencies": {
-        "com.microsoft.mixedreality.openxr": "0.1.1",
+        "com.microsoft.mixedreality.openxr": "0.1.2",
       }
     ```
 
@@ -109,7 +109,7 @@ Per usare uno o più degli esempi, installare [ARFoundation 4.0 +](https://docs.
 2. Nell'elenco dei pacchetti selezionare il plug-in **OpenXR realtà mista**
 3. Individuare l'esempio nell'elenco degli **esempi** e selezionare **Importa** .
 
-![Screenshot di gestione pacchetti Unity aperto nell'editor di Unity con la realtà mista OpenXR plug-in selezionato ed esempi pulsante di importazione evidenziato](images/openxr-img-10.png)
+![Screenshot di gestione pacchetti Unity aperto nell'editor di Unity con la realtà mista OpenXR plug-in selezionato ed esempi pulsante di importazione evidenziato](images/openxr-img-03.png)
 
 <!-- ### For all other OpenXR samples
 
@@ -121,6 +121,33 @@ Per usare uno o più degli esempi, installare [ARFoundation 4.0 +](https://docs.
 
 > [!NOTE]
 > Quando viene aggiornato un pacchetto, Unity offre la possibilità di aggiornare gli esempi importati.  L'aggiornamento di un esempio importato sovrascriverà tutte le modifiche apportate all'esempio e alle risorse associate.
+
+## <a name="using-mrtk-with-openxr-support"></a>Uso di MRTK con il supporto OpenXR
+
+MRTK Unity supporta il plug-in OpenXR realtà mista a partire dalla versione 2.5.3.  I plug-in MRTK possono essere installati dagli stessi registri con ambito impostati quando si [installa il plug-in OpenXR realtà mista](#installing-the-mixed-reality-openxr-plugin). Per informazioni più dettagliate, vedere la [documentazione di MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/usingupm.html#registering-the-mixed-reality-component-server).
+
+1. Aggiungere i pacchetti seguenti in **[projectRoot]/Packages/manifest.js** nel file:
+
+```json
+"dependencies": {
+    "com.microsoft.mixedreality.toolkit.foundation": "2.5.3",
+    "com.microsoft.mixedreality.toolkit.tools": "2.5.3",
+    "com.microsoft.mixedreality.toolkit.examples": "2.5.3",
+    …
+}
+```
+
+2. Passare allo script del componente MixedReality Toolkit nel controllo e passare al profilo **DefaultOpenXRConfigurationProfile** :
+
+![Screenshot del cambio della configurazione di MRTK nel componente del Toolkit per realtà mista del controllo](images/openxr-img-11.png)
+
+### <a name="known-issues"></a>Problemi noti 
+
+Quando si usa la funzionalità di rilevamento della mano, aggiungere la riga seguente nel file **assets/MixedRealityToolkit. generated/link.xml** :
+
+```
+<assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>
+```
 
 ## <a name="next-steps"></a>Passaggi successivi
 

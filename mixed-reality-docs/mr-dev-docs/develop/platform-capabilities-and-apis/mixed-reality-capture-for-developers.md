@@ -1,19 +1,19 @@
 ---
-title: Acquisizione di realtà mista per gli sviluppatori
+title: Acquisizione realtà mista per sviluppatori
 description: Informazioni sulle procedure consigliate per l'abilitazione, l'uso e il rendering dell'acquisizione di realtà mista per gli sviluppatori.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: MRC, foto, video, acquisizione, fotocamera
-ms.openlocfilehash: e55100003859e3581bdd7f6e1da312e1fdd8cf57
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 40d621133d8aa4c7a58488b80a04ca3b4b46638d
+ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009941"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98108864"
 ---
-# <a name="mixed-reality-capture-for-developers"></a>Acquisizione di realtà mista per gli sviluppatori
+# <a name="mixed-reality-capture-for-developers"></a>Acquisizione realtà mista per sviluppatori
 
 > [!NOTE]
 > Per informazioni su una nuova funzionalità MRC per HoloLens 2, vedere [Render dalla fotocamera PV](#render-from-the-pv-camera-opt-in) di seguito.
@@ -221,11 +221,11 @@ Le applicazioni hanno due opzioni per aggiungere l'effetto:
 
 Effetto video MRC (**Windows. Media. MixedRealityCapture. MixedRealityCaptureVideoEffect**)
 
-|  Nome proprietà  |  Tipo  |  Valore predefinito  |  Descrizione |
+|  Nome della proprietà  |  Tipo  |  Valore predefinito  |  Descrizione |
 |----------|----------|----------|----------|
 |  StreamType  |  UINT32 ([MediaStreamType](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaStreamType))  |  1 (VideoRecord)  |  Descrivere il flusso di acquisizione per cui viene usato questo effetto. L'audio non è disponibile. |
-|  HologramCompositionEnabled  |  boolean  |  TRUE  |  Flag per abilitare o disabilitare gli ologrammi nell'acquisizione video. |
-|  RecordingIndicatorEnabled  |  boolean  |  TRUE  |  Flag per abilitare o disabilitare l'indicatore di registrazione sullo schermo durante l'acquisizione di ologrammi. |
+|  HologramCompositionEnabled  |  boolean  |  true  |  Flag per abilitare o disabilitare gli ologrammi nell'acquisizione video. |
+|  RecordingIndicatorEnabled  |  boolean  |  true  |  Flag per abilitare o disabilitare l'indicatore di registrazione sullo schermo durante l'acquisizione di ologrammi. |
 |  VideoStabilizationEnabled  |  boolean  |  FALSE  |  Flag per abilitare o disabilitare la stabilizzazione video con tecnologia HoloLens Tracker. |
 |  VideoStabilizationBufferLength  |  UINT32  |  0  |  Consente di impostare il numero di frame cronologici utilizzati per la stabilizzazione del video. 0 è 0: latenza e quasi "Free" da un punto di vista dell'alimentazione e delle prestazioni. 15 è consigliato per la massima qualità (a costo di 15 fotogrammi di latenza e memoria). |
 |  GlobalOpacityCoefficient  |  float  |  0,9 (HoloLens) 1,0 (auricolare immersivo)  |  Impostare il coefficiente di opacità globale di un ologramma compreso tra 0,0 (completamente trasparente) e 1,0 (completamente opaco). |
@@ -241,7 +241,7 @@ Effetto video MRC (**Windows. Media. MixedRealityCapture. MixedRealityCaptureVid
 
 Effetto audio MRC (**Windows. Media. MixedRealityCapture. MixedRealityCaptureAudioEffect**)
 
-| Nome proprietà | Tipo | Valore predefinito | Descrizione |
+| Nome della proprietà | Tipo | Valore predefinito | Descrizione |
 |----------|----------|----------|----------|
 | MixerMode | UINT32 | 2 (MIC e audio di sistema) | Enum usato per indicare le origini audio da usare: 0 (solo audio MIC), 1 (solo audio di sistema), 2 (MIC e audio di sistema) |
 | LoopbackGain | float | Impostazione di **miglioramento audio app** nel portale per dispositivi Windows | Ottenere da applicare al volume audio del sistema. Compreso tra 0,0 e 5,0. Supportato solo su HoloLens 2 |
@@ -254,37 +254,55 @@ Effetto audio MRC (**Windows. Media. MixedRealityCapture. MixedRealityCaptureAud
 
 ### <a name="simultaneous-mrc-limitations"></a>Limitazioni di MRC simultanee
 
-Esistono alcune limitazioni relative a più app che accedono a MRC nello stesso momento.
+È necessario essere a conoscenza di alcune limitazioni quando più applicazioni accedono a MRC nello stesso momento.
 
 #### <a name="photovideo-camera-access"></a>Accesso alla fotocamera foto/video
 
-La fotocamera Photo/video è limitata al numero di processi che possono accedervi nello stesso momento. Mentre un processo registra un video o scatta una foto, qualsiasi altro processo non riuscirà ad acquisire la fotocamera foto/video. Questo vale sia per l'acquisizione di realtà mista sia per l'acquisizione di foto/video standard.
+In HoloLens 1, MRC non riuscirà ad acquisire un video di foto o di acquisizione mentre un processo registra un video o scatta una foto. È vero anche il contrario: se MRC è in esecuzione, l'applicazione non riuscirà ad accedere alla fotocamera. 
 
-Con HoloLens 2, un'app può usare la proprietà MediaCaptureInitializationSettings [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode) per indicare che desiderano eseguire SharedReadOnly se non necessitano di un controllo esclusivo sulla fotocamera foto/video. La risoluzione e il framerate dell'acquisizione saranno limitati alle altre app che hanno configurato la fotocamera per la fornitura.
+Con HoloLens 2 è possibile condividere l'accesso alla fotocamera. Se non è necessario il controllo diretto della risoluzione o della frequenza dei fotogrammi, è possibile inizializzare MediaCapture usando la [Proprietà SharedMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041) con SharedReadOnly.  
 
 ##### <a name="built-in-mrc-photovideo-camera-access"></a>Accesso a foto/video della fotocamera MRC incorporato
 
 Funzionalità MRC incorporata in Windows 10 (tramite Cortana, menu Start, collegamenti hardware, Miracast, portale per dispositivi Windows):
+
 * Per impostazione predefinita, viene eseguito con ExclusiveControl
 
-Tuttavia, il supporto è stato aggiunto a ogni sottosistema per operare in modalità condivisa:
-* Se un'app richiede l'accesso ExclusiveControl alla fotocamera Photo/video, la funzionalità MRC predefinita si interrompe automaticamente usando la fotocamera foto/video, in modo che la richiesta dell'app venga completata
-* Se viene avviata la funzionalità di gestione delle applicazioni incorporate in una ExclusiveControl, la funzionalità MRC predefinita verrà eseguita in modalità SharedReadOnly
+Tuttavia, il supporto è stato aggiunto al sottosistema MRC per operare in modalità condivisa: 
+
+* Se un'app richiede l'accesso ExclusiveControl alla fotocamera Photo/video, la funzionalità MRC predefinita si interrompe automaticamente usando la fotocamera foto/video, in modo che la richiesta dell'app venga completata 
+* Se viene avviata la funzionalità di gestione delle applicazioni incorporate in una ExclusiveControl, la funzionalità MRC predefinita verrà eseguita in modalità SharedReadOnly 
 
 Questa funzionalità in modalità condivisa presenta alcune restrizioni:
+
 * Foto tramite Cortana, collegamenti hardware o menu Start: richiede l'aggiornamento di Windows 10 aprile 2018 (o versione successiva)
 * Video tramite Cortana, collegamenti hardware o menu Start: richiede l'aggiornamento di Windows 10 aprile 2018 (o versione successiva)
 * Streaming MRC over Miracast: richiede l'aggiornamento di Windows 10 ottobre 2018 (o versione successiva)
 * Streaming di MRC sul portale per dispositivi Windows o tramite l'app complementare HoloLens: richiede HoloLens 2
 
 >[!NOTE]
-> La risoluzione e il framerate dell'interfaccia utente della fotocamera MRC integrata potrebbero essere ridotti dai valori normali quando un'altra app usa la fotocamera foto/video.
+> La risoluzione e la frequenza dei fotogrammi dell'interfaccia utente della fotocamera MRC predefinita potrebbero essere ridotte dai valori normali quando un'altra app usa la fotocamera foto/video.
 
-#### <a name="mrc-access"></a>Accesso a MRC
+#### <a name="mrc-access-for-developers"></a>Accesso a MRC per gli sviluppatori
 
-Con l'aggiornamento di Windows 10 aprile 2018, non esiste più una limitazione per più app che accedono al flusso MRC. Tuttavia, l'accesso alla videocamera Photo/video presenta ancora alcune limitazioni.
+Si consiglia di richiedere sempre il controllo esclusivo per la fotocamera quando si usa MRC. In questo modo l'applicazione avrà il controllo completo delle impostazioni della fotocamera, purché si siano consapevoli delle limitazioni elencate in precedenza. 
 
-In precedenza all'aggiornamento di Windows 10 aprile 2018, il registratore MRC personalizzato di un'app si escludono a vicenda con il sistema MRC (acquisizione di foto, acquisizione di video o flusso dal portale per dispositivi Windows).
+* Creare un oggetto di acquisizione multimediale usando le [impostazioni di inizializzazione](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings?view=winrt-19041)
+* Impostare la proprietà [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) su **Exclusive**
+
+> [!CAUTION]
+> Prima di continuare, assicurarsi di leggere attentamente le [osservazioni SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#remarks) .
+
+* Configurare la fotocamera nel modo desiderato
+* Avviare l'app, acquisire i fotogrammi video con l'API di avvio e quindi abilitare MRC
+
+> [!CAUTION]
+> Se si avvia MRC prima di avviare l'app, non sarà possibile garantire che la funzionalità funzioni come previsto.
+
+È possibile trovare un esempio completo del processo precedente nell'esempio di [rilevamento dei volti olografici](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicfacetracking).
+
+> [!NOTE]
+> Prima dell'aggiornamento di Windows 10 aprile 2018, il registratore MRC personalizzato di un'app si escludono a vicenda con il sistema MRC (acquisizione di foto, acquisizione di video o flusso dal portale per dispositivi Windows).
 
 ## <a name="see-also"></a>Vedere anche
 
