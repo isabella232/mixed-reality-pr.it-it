@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: evento, calendario, Accademia, pianificazione, SF, San Francisco, Reactor
-ms.openlocfilehash: ce0fb818547af70252e7387a910207e333407363
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a7d592243f758415c0ca757f35567d80fbfc1f2f
+ms.sourcegitcommit: 44d0f2873c75003caf9d8d244ceaeb3faa89df63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010001"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110439"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Eventi di realtà mista Microsoft
 
@@ -19,7 +19,7 @@ Partecipa al team Microsoft Mixed Reality in questi prossimi eventi.
 
 <br>
 
-|Evento|Data|Tema|
+|Event|Data|Tema|
 |-------------|-------------|-----|
 | Mixed Reality Speaker Series|23 aprile 2020|[Aumento del Web](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Augmenting-WebXR-Standards)|
 | Mixed Reality Speaker Series|22 giugno 2020|[Creazione di esperienze didattiche con MR](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Educational-Experiences-in-MR)|
@@ -31,4 +31,4 @@ Partecipa al team Microsoft Mixed Reality in questi prossimi eventi.
 | Mixed Reality Speaker Series|22 settembre 2020|[Escape di Kippy: Introduzione a Unreal & MRTK per HoloLens 2]()|
 | Mixed Reality Speaker Series|22 ottobre 2020|[Introduzione a WebXR con BabylonJS](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
 | Mixed Reality Speaker Series|17 novembre 2020|[Creazione del futuro: novità di MRTK](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
-| Mixed Reality Speaker Series|1 dicembre 2020|[Progettazione di ologrammi]()|
+| Mixed Reality Speaker Series|1 dicembre 2020|[Progettazione di ologrammi](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Making-of-Designing-Holograms)|
