@@ -1,5 +1,5 @@
 ---
-title: Esercitazioni su Ancoraggi nello spazio di Azure - 1. Introduzione alle esercitazioni su Ancoraggi nello spazio di Azure
+title: Introduzione alle esercitazioni su Ancoraggi nello spazio di Azure
 description: In questo corso viene illustrato come implementare Ancoraggi nello spazio di Azure in un'applicazione di realtà mista.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, ios, android, Windows 10, ARCore, macOS, Android Build Support, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 005bbf3f9ecb7ed7f15f78d4042b4090f00edca7
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6ac412913f8d475d213a26cb4f9f82e12d129b82
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679400"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008401"
 ---
 # <a name="1-introduction-to-the-azure-spatial-anchors-tutorials"></a>1. Introduzione alle esercitazioni su Ancoraggi nello spazio di Azure
-
-## <a name="overview"></a>Panoramica
 
 Esercitazioni su Ancoraggi nello spazio di Azure Con questa serie di esercitazioni si apprenderanno le nozioni di base di <a href="https://azure.microsoft.com/services/spatial-anchors" target="_blank">Ancoraggi nello spazio di Azure</a> (ASA) e le procedure per ancorare un'esperienza di realtà mista completa al mondo reale. Si apprenderà anche come distribuire il progetto in Android e iOS.
 

@@ -1,5 +1,5 @@
 ---
-title: Esercitazioni su Holographic Remoting per PC - 2 Creare un'applicazione Holographic Remoting per PC
+title: Creare un'applicazione Holographic Remoting per PC
 description: In questo corso viene illustrato come creare un'applicazione per PC per usare in remoto un'esperienza di realtà mista da PC a HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, holographic remoting per PC, Visual Studio
 ms.localizationpriority: high
-ms.openlocfilehash: 258fd80c812fca246190e98b3fa371b2f4c1b51f
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: fd357b0b487b948afb6ae15c9e84362e2bc1ef90
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679240"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007331"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2. Creazione di un'applicazione Holographic Remoting per PC
 

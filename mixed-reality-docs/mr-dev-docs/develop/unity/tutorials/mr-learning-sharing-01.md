@@ -1,5 +1,5 @@
 ---
-title: Esercitazioni sulle funzionalità multiutente - 1. Introduzione alle esercitazioni sulle funzionalità multiutente
+title: Introduzione alle esercitazioni sulle funzionalità multiutente
 description: In questo corso viene illustrato come implementare esperienze multiutente condivise in un'applicazione HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, funzionalità multiutente, Photon, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 9bcaed777b8b98d95065324fc1fb5b33a1923e63
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 1000b4d2637e3a0f3bbc79df9866577427674767
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679740"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007221"
 ---
 # <a name="1-introduction-to-the-multi-user-capabilities-tutorials"></a>1. Introduzione alle esercitazioni sulle funzionalità multiutente
-
-## <a name="overview"></a>Panoramica
 
 Esercitazioni sulle funzionalità multiutente Con questa serie di esercitazioni si apprenderanno le nozioni di base per la creazione di un'esperienza multiutente usando <a href="https://www.photonengine.com/PUN" target="_blank">Photon Unity Networking</a> (PUN). PUN è una delle diverse opzioni di rete disponibili per gli sviluppatori di realtà mista per creare esperienze condivise.
 

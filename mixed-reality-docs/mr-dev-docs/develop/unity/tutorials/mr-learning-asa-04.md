@@ -1,5 +1,5 @@
 ---
-title: Esercitazioni su Ancoraggi nello spazio di Azure - 4. Visualizzazione del feedback su Ancoraggi nello spazio di Azure
+title: Visualizzazione del feedback su Ancoraggi nello spazio di Azure
 description: In questo corso viene illustrato come visualizzare feedback da Ancoraggi nello spazio di Azure in un'applicazione di realtà mista.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, sessioni, elementi di feedback
 ms.localizationpriority: high
-ms.openlocfilehash: fe87e539060b57f505838b43e897e8b6d8336aaf
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 05e418b84f3370274433c4cc21f0122f3475301c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679390"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008331"
 ---
 # <a name="4-displaying-feedback-from-azure-spatial-anchors"></a>4. Visualizzazione del feedback su Ancoraggi nello spazio di Azure
 

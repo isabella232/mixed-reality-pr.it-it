@@ -1,5 +1,5 @@
 ---
-title: Esercitazioni su Ancoraggi nello spazio di Azure - 3. Salvataggio, recupero e condivisione di ancoraggi nello spazio di Azure
+title: Salvataggio, recupero e condivisione di ancoraggi nello spazio di Azure
 description: In questo corso viene illustrato come salvare, recuperare e condividere Ancoraggi nello spazio di Azure in un'applicazione di realtà mista.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, sessioni dell'app
 ms.localizationpriority: high
-ms.openlocfilehash: c085aecef1ce32565d2f3bbbf1d5fdb2da91c217
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: abe0c8bc70469826e25f7016a3cc1ba971c1fcc1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679410"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008361"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3. Salvataggio, recupero e condivisione di ancoraggi nello spazio di Azure
 

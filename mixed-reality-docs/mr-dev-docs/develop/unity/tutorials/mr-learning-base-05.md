@@ -1,5 +1,5 @@
 ---
-title: Esercitazioni di MRTK - 5. Creazione di contenuto dinamico tramite risolutori
+title: Creazione di contenuto dinamico tramite risolutori
 description: In questo corso viene illustrato come usare i risolutori di Mixed Reality Toolkit (MRTK) per creare contenuto dinamico.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, risolutori
 ms.localizationpriority: high
-ms.openlocfilehash: 533aa1c9f2b0b7620e23d611714552fb19a5357b
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 959ed164e566f5bee3db203437145fa08ce168d8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613505"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008021"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Creazione di contenuto dinamico tramite risolutori
-
-## <a name="overview"></a>Panoramica
 
 In questa esercitazione verrà analizzato come posizionare in modo dinamico gli ologrammi usando gli strumenti di posizionamento disponibili in MRTK, noti come risolutori, per risolvere scenari complessi di posizionamento nello spazio. In MRTK i risolutori sono un sistema di script e comportamenti usati per consentire agli oggetti di seguire te, l'utente o altri oggetti gioco nella scena. Possono anche essere usati per l'ancoraggio a determinate posizioni, rendendo così più intuitiva l'app.
 

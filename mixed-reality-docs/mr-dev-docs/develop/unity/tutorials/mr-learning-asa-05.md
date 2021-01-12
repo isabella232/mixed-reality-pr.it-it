@@ -1,5 +1,5 @@
 ---
-title: Esercitazioni su Ancoraggi nello spazio di Azure - 5. Ancoraggi nello spazio di Azure per Android e iOS
+title: Ancoraggi nello spazio di Azure per Android e iOS
 description: In questo corso viene illustrato come distribuire un progetto Unity con Mixed Reality Toolkit (MRTK) e Ancoraggi nello spazio di Azure in Android e iOS.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, android, ios, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: bee84db206dbb4e95272799c16d6dbd4e394e807
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 545373ed169a77614b0a00264f5ba1bf1f3deb8e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679430"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008391"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5. Ancoraggi nello spazio di Azure per Android e iOS
 

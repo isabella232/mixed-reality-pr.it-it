@@ -7,18 +7,16 @@ ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Realtà mista, MixedRealityToolkit, demo, record
-ms.openlocfilehash: c344edea9b499bdff15d1d93e400b8be626a63b6
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 1f61d2094ec2762ab22576d2eac85ed6bf81d5c7
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530105"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008611"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>Spectator View per HoloLens e HoloLens 2
 
 ![Marcatore](images/SpecViewPhoneHero.jpg)
-
-## <a name="overview"></a>Panoramica
 
 Quando si indossa un dispositivo HoloLens, è facile dimenticare che una persona non dotata di tale dispositivo non può sperimentare le stesse meraviglie visive. Spectator View consente ad altri utenti di visualizzare gli stessi elementi che un utente HoloLens vede in uno schermo 2D. Si tratta inoltre di un approccio rapido e conveniente per registrare ologrammi in HD con dispositivi mobili e ottenere registrazioni di ologrammi di ottima qualità con l'uso di videocamere.
 

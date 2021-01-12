@@ -1,5 +1,5 @@
 ---
-title: Esercitazioni di MRTK - 1. Introduzione alle esercitazioni di MRTK
+title: Introduzione alle esercitazioni di MRTK
 description: Questo corso illustra come usare Mixed Reality Toolkit (MRTK) per creare un'applicazione di realtà mista da zero.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, risolutori, tracciamento oculare, comandi vocali
 ms.localizationpriority: high
-ms.openlocfilehash: 25a19d24a027000c78d6bffe2c74eb9f9d91370c
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 27a5f2cae4f08fbc142c8b872c22d23ab41cdc62
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613205"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008081"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1. Introduzione alle esercitazioni di MRTK
-
-## <a name="overview"></a>Panoramica
 
 Serie di esercitazioni introduttive Nel corso di queste esercitazioni, verranno fornite informazioni su Mixed Reality Toolkit (MRTK) e alcune delle funzionalità che offre. Sarà anche possibile creare un'esperienza di realtà mista in cui l'utente può esplorare un ologramma modellato in base a Mars Curiosity Rover della NASA. Al termine di questa serie, si disporrà di una solida conoscenza di MRTK e dell'utilizzo di questo strumento per accelerare il processo di sviluppo.
 

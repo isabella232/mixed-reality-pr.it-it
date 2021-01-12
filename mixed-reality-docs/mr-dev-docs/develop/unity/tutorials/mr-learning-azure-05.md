@@ -1,5 +1,5 @@
 ---
-title: Esercitazioni sul cloud di Azure - 5. Integrazione del servizio Azure Bot con LUIS
+title: Integrazione del servizio Azure Bot con LUIS
 description: Completa questo corso per apprendere come implementare il servizio Azure Bot e il riconoscimento del linguaggio naturale in un'applicazione HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, hololens 2, servizio azure bot, luis, linguaggio naturale, bot conversazione, servizi cloud di azure, visione personalizzata di azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: d9884fc135a38e610df9faceb8cf4b24c21f7982
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 70d136467bc677c028614429e6e197ce25b30327
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679360"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008251"
 ---
 # <a name="5-integrating-azure-bot-service"></a>5. Integrazione del servizio Azure Bot
 

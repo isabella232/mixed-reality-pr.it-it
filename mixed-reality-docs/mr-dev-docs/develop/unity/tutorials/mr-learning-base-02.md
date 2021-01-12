@@ -1,5 +1,5 @@
 ---
-title: Esercitazioni di MRTK - 2. Inizializzazione del progetto e distribuzione della prima applicazione
+title: Inizializzazione del progetto e distribuzione della prima applicazione
 description: In questo corso viene illustrato come configurare il progetto Unity per Mixed Reality Toolkit (MRTK) e come distribuirlo in HoloLens 2.
 author: jessemcculloch
 ms.author: v-vtieto
@@ -7,16 +7,14 @@ ms.date: 12/30/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: ebf81b9b1ae1abb5001b88e0f2b2929c45c22d7f
-ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
+ms.openlocfilehash: 2ce119e1dd18eacf02088d00e99fb70d06bf956e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97859530"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008221"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. Inizializzazione del progetto e distribuzione della prima applicazione
-
-## <a name="overview"></a>Panoramica
 
 In questa esercitazione apprenderai come creare un nuovo progetto Unity, come configurarlo per lo sviluppo <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank">Mixed Reality Toolkit (MRTK)</a> e come importare MRTK. Verranno inoltre esaminati i processi di configurazione, compilazione e distribuzione di una scena Unity di base da Visual Studio a HoloLens 2. Dopo la distribuzione in HoloLens 2, dovrebbe essere visualizzata una mesh di mapping spaziale che copre le superfici percepite da HoloLens. Dovresti anche vedere indicatori sulle mani e sulle dita per il tracciamento delle mani e un contatore della frequenza dei fotogrammi per tenere sotto controllo le prestazioni dell'app.
 
