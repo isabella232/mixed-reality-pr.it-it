@@ -1,18 +1,18 @@
 ---
-title: Esercitazioni introduttive - 1 Panoramica e obiettivi
-description: Questo corso illustra come implementare il riconoscimento volto di Azure in un'applicazione di realtà mista.
+title: Panoramica e obiettivi dell'esercitazione
+description: Completa questo corso per informazioni su come implementare il riconoscimento volto di Azure in un'applicazione di realtà mista.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 777203d0051c22b0f249db7d377ab08f92c089b7
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d767cca4fbb88d0cfdd7c2fdea1a0621523ad236
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91701588"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010091"
 ---
 # <a name="1-overview-and-objectives"></a>1. Panoramica e obiettivi
 

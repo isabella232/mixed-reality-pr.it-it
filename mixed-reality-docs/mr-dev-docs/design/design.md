@@ -7,18 +7,22 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realtà mista, individuare, distribuire, indice, pagina di destinazione, progettazione, sviluppo, esercitazioni, app di esempio, nozioni di base, case study, risorse, guide pratiche per HoloLens, progetti open source, concetti di base, interazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 5c0eefe6f4811feba6d1d52164652acbc44945c3
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: f4a4ea50c45263f18079da76dd8dfd5f31e2af44
+ms.sourcegitcommit: 44d0f2873c75003caf9d8d244ceaeb3faa89df63
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847597"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110449"
 ---
 # <a name="start-designing-and-prototyping"></a>Iniziare a progettare e a creare prototipi
 
 ![Progettazione astratta di realtà mista](images/design-hero-image.png)
 
-Le applicazioni di realtà mista sono diverse da tutte le altre applicazioni oggi esistenti e la loro progettazione è estremamente complessa. Non solo è necessario tenere conto delle nuove combinazioni di mondi reali e virtuali che si creano, ma anche delle nuove esperienze utente offerte. Poiché la realtà mista abbraccia un'area molto vasta, sono stati selezionati i punti più importanti lungo lo spettro di progettazione e sono stati esposti di seguito sotto forma di una serie di checkpoint. Questi checkpoint sono stati pensati per essere eseguiti in sequenza, ma se si ha già esperienza in materia è possibile passare a una qualsiasi delle sezioni seguenti.
+Le applicazioni di realtà mista sono diverse da tutte le altre applicazioni oggi esistenti e la loro progettazione è estremamente complessa. Non solo è necessario tenere conto delle nuove combinazioni di mondi reali e virtuali che si creano, ma anche delle nuove esperienze utente offerte. Poiché la realtà mista abbraccia un'area molto vasta, sono stati selezionati i punti più importanti lungo lo spettro di progettazione e sono stati esposti di seguito sotto forma di una serie di checkpoint. Questi checkpoint sono stati pensati per essere eseguiti in sequenza, ma se si ha già esperienza in materia è possibile passare a una qualsiasi delle sezioni seguenti. 
+
+Per iniziare, guardare il video introduttivo sulla progettazione:
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LhlW]
 
 ## <a name="design-checkpoints"></a>Progettare checkpoint
 

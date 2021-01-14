@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 11533175057217bddcc7e121a524da1f26d2764e
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: c74a6c0c22439376a84ecb8254b945295c8988a2
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915542"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98052894"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -40,11 +40,11 @@ Per la creazione di app di Realtà mista con Unity sono disponibili diverse opzi
 
 Esistono diversi servizi cloud che possono essere integrati nei progetti di realtà mista creati in Unity, in particolare **Rendering remoto di Azure** e **Ancoraggi nello spazio di Azure**. Questi servizi consentono di aggiungere contenuti olografici condivisi e rendering 3D in tempo reale alle applicazioni, rendendole più accattivanti e coinvolgenti per gli utenti.
 
-Tutti questi servizi vengono illustrati durante il [percorso di sviluppo con Unity](../unity/unity-development-overview.md), che è il **percorso vivamente consigliato per la formazione sulla realtà mista con Unity**. Avendo già iniziato il percorso, sarà sufficiente continuare a leggere e usare il grande pulsante blu in fondo all'articolo. Se invece ci si trova in una fase di sviluppo più avanzata e si vuole iniziare a operare concretamente, vedere la [panoramica dei servizi cloud ](../mixed-reality-cloud-services.md) o passare direttamente alle [risorse dei servizi](../unity/unity-development-overview.md#5-adding-services).
+Tutti questi servizi vengono illustrati durante il [percorso di sviluppo con Unity per HoloLens](../unity/unity-development-overview.md), che è il **percorso consigliato per la formazione sulla realtà mista con Unity**. Avendo già iniziato il percorso, sarà sufficiente continuare a leggere e usare il grande pulsante blu in fondo all'articolo. Se invece ci si trova in una fase di sviluppo più avanzata e si vuole iniziare a operare concretamente, vedere la [panoramica dei servizi cloud ](../mixed-reality-cloud-services.md) o passare direttamente alle [risorse dei servizi](../unity/unity-development-overview.md#5-adding-services).
 
 ## <a name="dynamics-365-guides"></a>Guide di Dynamics 365
 
-È possibile usare **Microsoft Dynamics 365 Guides** per collegare visivamente le istruzioni olografiche all'ambiente virtuale delle app, offrendo importanti informazioni agli utenti quando e dove è necessario. Questa funzionalità è illustrata anche nel percorso di sviluppo con Unity, ma se si vuole fare un passo avanti è possibile vedere l'offerta disponibile selezionando la scheda **Dynamics 365** [qui](../unity/unity-development-overview.md#5-adding-services).
+È possibile usare **Microsoft Dynamics 365 Guides** per collegare visivamente le istruzioni olografiche all'ambiente virtuale delle app, offrendo importanti informazioni agli utenti quando e dove è necessario. Questa funzionalità è illustrata anche nel percorso di sviluppo con Unity per HoloLens, ma se si vuole andare oltre è possibile visualizzare le opzioni offerte selezionando la scheda **Dynamics 365** [qui](../unity/unity-development-overview.md#5-adding-services).
 
 ## <a name="examples"></a>Esempi
 
@@ -88,7 +88,7 @@ Per la creazione di app di Realtà mista con il motore Unreal sono disponibili d
 
 ## <a name="cloud-services"></a>Servizi cloud
 
-Quando si creano app di realtà mista in Unreal, è possibile accedere a un potente servizio cloud denominato **Ancoraggi nello spazio di Azure** , che consente di aggiungere, salvare in modo permanente e condividere contenuto olografico in diversi dispositivi. 
+Quando si creano app di realtà mista in Unreal, è possibile accedere a un potente servizio cloud denominato **Ancoraggi nello spazio di Azure**, che consente di aggiungere, salvare in modo permanente e condividere contenuto olografico in diversi dispositivi. 
 
 La funzionalità Ancoraggi nello spazio di Azure viene illustrata durante il [percorso di sviluppo con Unreal](../unreal/unreal-development-overview.md), che è il **percorso vivamente consigliato per la formazione sulla realtà mista con Unreal**. Avendo già iniziato il percorso, sarà sufficiente continuare a leggere e usare il grande pulsante blu in fondo all'articolo. Se invece ci si trova in una fase di sviluppo più avanzata e si vuole iniziare a operare concretamente, vedere la [panoramica dei servizi cloud ](../mixed-reality-cloud-services.md) o passare direttamente alle [risorse dei servizi](../unreal/unreal-development-overview.md#5-adding-services).
 

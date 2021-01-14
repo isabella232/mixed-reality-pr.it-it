@@ -1,33 +1,34 @@
 ---
 title: Sviluppo di Unity per HoloLens
-description: Guida introduttiva alla creazione di app di realtà mista in Unity e HoloLens.
+description: Introduzione alla creazione di app di realtà mista in Unity e HoloLens con il percorso di checkpoint dedicato.
 author: hferrone
 ms.author: kurtie
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realtà mista, sviluppo, guida introduttiva, nuovo progetto, porting, funzionalità, fotocamera, simulazione, emulazione, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, mapping spaziale, input vocale, fotocamera individuabile, emulatore, Azure, esercitazioni
-ms.openlocfilehash: 150d86d1522f3fa71dd9d9a1fe154baef89496e0
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 28ddaeed4218dc3433e13122806a2032e335dd56
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613475"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031987"
 ---
-# <a name="unity-development-for-hololens"></a>Sviluppo di Unity per HoloLens 
+# <a name="unity-development-for-hololens"></a>Sviluppo di Unity per HoloLens
 
 ![Logo banner di Unity](../images/unity_logo_banner.png)
 
 La soluzione più veloce per creare un'[app di realtà mista](../../design/app-views.md) per HoloLens in [Unity](https://unity.com) è rappresentata da Mixed Reality Toolkit. Se si usa Unity per la prima volta, prima di continuare è consigliabile esplorare le [esercitazioni](https://unity3d.com/learn/tutorials) di livello principiante nella piattaforma Unity Learn. È opportuno anche visitare l'[Asset Store](https://www.assetstore.unity3d.com/) completo e i [forum sulla realtà mista per Unity](https://forum.unity3d.com/forums/hololens.102/) per partecipare alla community online impegnata nella creazione di app di realtà mista. In questi ambienti si scoprono spesso risorse o soluzioni estremamente interessanti. Per iniziare a usare MRTK, passare ai checkpoint di sviluppo illustrati di seguito.
 
 > [!IMPORTANT]
-> Se si ha a disposizione un progetto Unity da trasferire in HoloLens 2, consultare le **[guide per il porting](../porting-apps/porting-overview.md)** . Sono disponibili guide per progetti che usano HTK, MRTK v1, SteamVR o che sono stati sviluppati per visori VR immersive, ad esempio Reverb G2, Oculus Rift e HTC Vive.
+> Se si ha a disposizione un progetto Unity da trasferire in HoloLens 2, consultare le **[guide per il porting](../porting-apps/porting-overview.md)** . Sono disponibili guide per i progetti che usano HTK, MRTK V1 o SteamVR.
 
 ## <a name="development-checkpoints"></a>Checkpoint di sviluppo
 
-Usare i checkpoint seguenti per trasferire i giochi e le applicazioni di Unity nel mondo della realtà mista. Se non è stata ancora esplorata l'[applicazione di esempio Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd), è consigliabile scaricarla e usarla per acquisire familiarità con i concetti di base dell'esperienza utente in realtà mista. 
+Usare i checkpoint seguenti per trasferire i giochi e le applicazioni di Unity nel mondo della realtà mista. Se non è stata ancora esplorata l'[applicazione di esempio Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd), è consigliabile scaricarla e usarla per acquisire familiarità con i concetti di base dell'esperienza utente in realtà mista.
 
 ### <a name="1-getting-started"></a>1. Guida introduttiva
+
 Il modo più semplice per sviluppare in Unity è quello di usare Mixed Reality Toolkit. MRTK consentirà di configurare automaticamente un progetto per la realtà mista e fornirà un set di funzionalità utili per accelerare il processo di sviluppo. Alla fine di questa sezione, si avrà una conoscenza di base su Mixed Reality Toolkit, un ambiente di sviluppo configurato correttamente per le app di realtà mista e un progetto MRTK funzionante in Unity creato dall'utente.
 
 |  Checkpoint  |  Risultato  |
@@ -37,10 +38,10 @@ Il modo più semplice per sviluppare in Unity è quello di usare Mixed Reality T
 | [Serie di esercitazioni su HoloLens 2](tutorials/mr-learning-base-01.md) | Seguire le esercitazioni su MRTK di livello principiante per l'hardware HoloLens 2 |
 
 > [!IMPORTANT]
-> Se vuoi creare un nuovo progetto Unity senza importare Mixed Reality Toolkit, devi modificare manualmente un piccolo set di impostazioni di Unity per Windows Mixed Reality. Le impostazioni sono suddivise in due categorie: per progetto e per scena. Per la procedura dettagliata, vedere la guida alla configurazione.
+> Se vuoi creare un nuovo progetto Unity senza importare Mixed Reality Toolkit, devi modificare manualmente un piccolo set di impostazioni di Unity per Windows Mixed Reality. Le impostazioni sono suddivise in due categorie: per progetto e per scena. Per la procedura dettagliata, vedere la [guida alla configurazione](configure-unity-project.md).
 
 > [!NOTE]
-> Dopo aver configurato MRTK V2 nel progetto, gli oggetti di gioco Unity standard, ad esempio la fotocamera, si illumineranno immediatamente per un'esperienza da seduti. Per istruzioni sulla modifica della scala di esperienza dell'applicazione, vedere la pagina relativa ai sistemi di coordinate.
+> Dopo aver configurato MRTK V2 nel progetto, gli oggetti di gioco Unity standard, ad esempio la fotocamera, si illumineranno immediatamente per un'esperienza da seduti. Per istruzioni sulla modifica della scala di esperienza dell'applicazione, vedere la pagina relativa ai [sistemi di coordinate](coordinate-systems-in-unity.md).
 
 ### <a name="2-core-building-blocks"></a>2. Componenti fondamentali
 
@@ -82,7 +83,7 @@ Il lavoro degli sviluppatori non finisce mai, soprattutto per quanto riguarda la
 
 ### <a name="porting"></a>Conversione
 
-Se si hanno a disposizione app di cui non si vuole eseguire il porting, sarà utile consultare gli articoli elencati di seguito.
+Se si hanno a disposizione app di cui si vuole eseguire la conversione, sarà utile consultare gli articoli elencati di seguito:
 
 * [Da HoloToolkit/MRTK a MRTK v2](mrtk-porting-guide.md)
 * [Guida alla conversione per le app Immersive](../porting-apps/porting-guides.md)
@@ -113,11 +114,21 @@ Oltre a questa documentazione disponibile in docs.microsoft.com, è disponibile 
 | [Informazioni di riferimento sullo scripting](https://docs.unity3d.com/ScriptReference/) | Questa sezione della documentazione contiene i dettagli dell'API di scripting fornita da Unity. È accessibile online dall'editor di Unity facendo clic su **Help > Scripting Reference** (Guida > Riferimento scripting) |
 | [Manuale](https://docs.unity3d.com/Manual/index.html) | Questo manuale è stato progettato per facilitare l'utente nel processo di apprendimento di Unity, dalle tecniche di base a quelle più avanzate. È accessibile online oppure dall'editor di Unity facendo clic su **Help > Manual** (Guida > Manuale) |
 
-
 > [!div class="nextstepaction"]
 > [Esplora MRTK](mrtk-getting-started.md)
 
+## <a name="have-feedback"></a>Per inviare suggerimenti,
+
+È possibile contattare gli sviluppatori Microsoft nei [forum Unity](https://aka.ms/unityforums) contrassegnando con un tag **Microsoft** e una combinazione dei tag seguenti per specificare a quale plug-in fa riferimento il feedback fornito:
+
+* HoloLens 2 
+* Windows Mixed Reality
+* OpenXR
+* XRSDK
+* XR legacy 
+
 ## <a name="see-also"></a>Vedere anche
+
 * [Mixed Reality Toolkit v2](mrtk-getting-started.md)
 * [Nozioni di base MR 100: Introduzione a Unity](tutorials/holograms-100.md)
 * [Impostazioni consigliate per Unity](recommended-settings-for-unity.md)

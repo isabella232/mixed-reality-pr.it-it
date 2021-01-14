@@ -1,18 +1,18 @@
 ---
 title: Panoramica dello sviluppo con Unreal
-description: Panoramica dello sviluppo della realtà mista con Unreal Engine 4
+description: Introduzione allo sviluppo di realtà mista per HoloLens e VR con Unreal Engine 4 tramite il percorso di checkpoint dedicato.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicazione remota, realtà mista, sviluppo, guida introduttiva, funzionalità, nuovo progetto, emulatore, documentazione, guide, caratteristiche, ologrammi, sviluppo di giochi, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, OpenXR
-ms.openlocfilehash: af5883ad71acf919133c330b1da8eb846d3a039f
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 3d9a33ca98734d40a37e24805f28f7f70b6a4ba9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926019"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009761"
 ---
 # <a name="unreal-development-overview"></a>Panoramica dello sviluppo con Unreal
 

@@ -1,22 +1,20 @@
 ---
-title: Esercitazioni di MRTK - 3. Configurazione dei profili di Mixed Reality Toolkit
-description: Questa esercitazione illustra come configurare i profili di Mixed Reality Toolkit (MRTK).
+title: Configurazione dei profili di Mixed Reality Toolkit
+description: Questa esercitazione illustra come configurare i profili di Mixed Reality Toolkit (MRTK) per le app di realtà mista.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, consapevolezza spaziale
 ms.localizationpriority: high
-ms.openlocfilehash: 48bb6aa8705c9d874e6af8867d1edbe2385cb853
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 58f9c5f756a12e99fd10b136b2a450c6227b2dad
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613245"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008011"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. Configurazione dei profili di Mixed Reality Toolkit
-
-## <a name="overview"></a>Panoramica
 
 In questa esercitazione si apprenderà come personalizzare e configurare i profili di MRTK.
 

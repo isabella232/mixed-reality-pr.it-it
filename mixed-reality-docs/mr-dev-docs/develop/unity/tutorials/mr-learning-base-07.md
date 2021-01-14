@@ -1,18 +1,18 @@
 ---
-title: Esercitazioni di MRTK - 7. Interazione con oggetti 3D
-description: In questo corso viene illustrato come usare Mixed Reality Toolkit (MRTK) per interagire con oggetti 3D.
+title: Interazione con oggetti 3D
+description: Questa esercitazione illustra come usare Mixed Reality Toolkit (MRTK) per interagire con gli oggetti 3D nelle app di realtà mista e manipolarli.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, interazioni degli oggetti, cubi di delimitazione
 ms.localizationpriority: high
-ms.openlocfilehash: a457c850cdc5db7b9613ae20caab23d69b342997
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: c9acb72b2ad961737f5ce3f21c048fc80024b49d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613495"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007931"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interazione con oggetti 3D
 

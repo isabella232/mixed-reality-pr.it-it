@@ -1,14 +1,17 @@
 ---
-ms.openlocfilehash: eb51caa4caf0d425b5e49c3abca2a523b08fc312
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: ad7d530de61864528ae80e4d0086687d282e6b18
+ms.sourcegitcommit: 8f9f98342aaf66645fd74dac3fad499f9d799ce7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97717402"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98109432"
 ---
 # <a name="426"></a>[4.26](#tab/426) 
 
 ## <a name="pv-camera-feed-setup"></a>Impostazione del feed della fotocamera/videocamera
+
+> [!IMPORTANT]
+> La fotocamera/videocamera è implementata nei plug-in Windows Mixed Reality e OpenXR. OpenXR, tuttavia, richiede l'installazione del [plug-in Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal). Inoltre, OpenXR presenta una limitazione corrente per cui la fotocamera può funzionare con l'interfaccia RHI DirectX11. Questa limitazione verrà eliminata in una successiva versione di Unreal. 
 
 - In **Project Settings > HoloLens** (Impostazioni progetto) abilitare la funzionalità **Webcam**:
 

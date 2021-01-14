@@ -1,18 +1,18 @@
 ---
 title: Mapping spaziale in Unreal
-description: Guida all'uso del mapping spaziale in Unreal
+description: Informazioni su come usare il mapping spaziale e le mesh nelle applicazioni di realtà mista Unreal per i dispositivi HoloLens.
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, mapping spaziale, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 6d70e7f2d32fbf39bc51534661b8224547c36acc
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 3f07acc5bb4ad85084f6eb178fd1c33d94224408
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926047"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009961"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Mapping spaziale in Unreal
 

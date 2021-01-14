@@ -1,18 +1,18 @@
 ---
 title: Sguardo fisso e attesa
-description: Panoramica del modello di input sguardo fisso e attesa.
+description: Panoramica del modello di input sguardo fisso e attesa, inclusi modelli di interazione, linee guida per la progettazione e problematiche specifiche.
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Tracciamento oculare, Realtà mista, Input, Sguardo fisso, Selezione oculare della destinazione, HoloLens 2, Selezione con gli occhi, Attesa, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, progettazione
-ms.openlocfilehash: bf9ad97790093a08156660bfd6e33d16c06e6387
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 78f8dcec3c8368128ec5904df36ce1391aa8b879
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847813"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007711"
 ---
 # <a name="eye-gaze-and-dwell"></a>Sguardo fisso e attesa
 
@@ -43,6 +43,7 @@ Si consiglia un tempo di inizio di 150-250 ms in una determinata prossimità (di
 ![Stati dell'attesa](images/eyes_dwellstate_recommendation.png)<br>
 
 ## <a name="see-also"></a>Vedere anche
+
 * [Tracciamento oculare](eye-tracking.md)
 * [Sguardo fisso e commit](gaze-and-commit-eyes.md)
 * [Sguardo e commit](gaze-and-commit.md)

@@ -1,18 +1,18 @@
 ---
 title: Ancoraggi nello spazio locali in Unreal
-description: Guida all'uso degli ancoraggi nello spazio in Unreal
+description: Informazioni su come usare, salvare e gestire gli ancoraggi nello spazio presenti nelle applicazioni di realtà mista Unreal.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, ancoraggi nello spazio, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 1c9d9fa119e57c57ab126fc26a26a35d75e07db7
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: d44610ea0632dbc93941096007e60e4ae7be53e1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926085"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009981"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Ancoraggi nello spazio locali in Unreal
 
@@ -83,6 +83,7 @@ In alternativa, passare alle API e alle funzionalità della piattaforma di realt
 È sempre possibile tornare ai [checkpoint per lo sviluppo con Unreal](unreal-development-overview.md#2-core-building-blocks) in qualsiasi momento.
 
 ## <a name="see-also"></a>Vedere anche
+
 * [Ancoraggi nello spazio di Azure](unreal-azure-spatial-anchors.md)
 * [Ancoraggi nello spazio](../../design/spatial-anchors.md)
 * [Sistemi di coordinate](../../design/coordinate-systems.md)

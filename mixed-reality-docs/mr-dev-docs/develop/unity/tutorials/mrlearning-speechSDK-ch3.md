@@ -1,18 +1,18 @@
 ---
-title: Esercitazioni sui servizi vocali di Azure - 3 Aggiunta del componente di traduzione vocale di Servizi cognitivi di Azure
-description: In questo corso otterrai informazioni su come implementare Azure Speech SDK in un'applicazione di realtà mista.
+title: Aggiunta del componente di traduzione vocale di Servizi cognitivi di Azure
+description: In questo corso viene illustrato come aggiungere la traduzione vocale di Servizi cognitivi di Azure in applicazioni di realtà mista.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, riconoscimento vocale, Windows 10, traduzione vocale
 ms.localizationpriority: high
-ms.openlocfilehash: 1139da69b27352b996d57184e21e9d6291d26fce
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 3c647ca841e51b707aae4171b31b0b045c79fb03
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679920"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009881"
 ---
 # <a name="3-adding-the-azure-cognitive-services-speech-translation-component"></a>3. Aggiunta del componente di traduzione vocale di Servizi cognitivi di Azure
 

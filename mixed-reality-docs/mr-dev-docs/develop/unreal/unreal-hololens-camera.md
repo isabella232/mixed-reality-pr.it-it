@@ -1,18 +1,18 @@
 ---
 title: Fotocamera/videocamera HoloLens in Unreal
-description: Guida all'uso della fotocamera/videocamera HoloLens in Unreal
+description: Informazioni su come usare la fotocamera/videocamera HoloLens per Acquisizione realtà mista e l'individuazione degli oggetti in Unreal.
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, videocamera, fotocamera, MRC, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: fb7bbf5a0f41c15d73e59226dad32cda8764e6cc
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 15eba0c992d6d3d8895314f1a6128ace18c02483
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926099"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010061"
 ---
 # <a name="hololens-photovideo-camera-in-unreal"></a>Fotocamera/videocamera HoloLens in Unreal
 
@@ -38,5 +38,6 @@ In alternativa, passare direttamente alla distribuzione dell'app in un dispositi
 È sempre possibile tornare ai [checkpoint per lo sviluppo con Unreal](unreal-development-overview.md#3-platform-capabilities-and-apis) in qualsiasi momento.
 
 ## <a name="see-also"></a>Vedere anche
+
 * [Fotocamera individuabile](../platform-capabilities-and-apis/locatable-camera.md)
 * [Acquisizione realtà mista per sviluppatori](../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md)

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 283bfffb2d59d92712e86e12c05be8974f04fae6
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: 4b9a1c20a8d885ea796c296f6a542d41e3ab58ef
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97718061"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98052882"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -21,7 +21,7 @@ ms.locfileid: "97718061"
 
 [Mixed Reality Toolkit](../unity/mrtk-getting-started.md) (MRTK) è un kit di sviluppo multipiattaforma open source per applicazioni di realtà mista. MRTK offre un sistema di input multipiattaforma, componenti di base e blocchi predefiniti comuni per le interazioni spaziali. Il toolkit permette di accelerare lo sviluppo di applicazioni destinate a Microsoft HoloLens, ai visori VR immersive di Windows Mixed Reality e alla piattaforma OpenVR.
 
-Per l'installazione, è consigliabile completare la [sezione introduttiva](../unity/unity-development-overview.md#1-getting-started) del nostro [percorso di sviluppo con Unity](../unity/unity-development-overview.md). Se si sta già seguendo il percorso di sviluppo con Unity, completare il resto dei passaggi di configurazione elencati di seguito e proseguire con le [esercitazioni introduttive su HoloLens 2](../unity/tutorials/mr-learning-base-01.md).
+Per l'installazione è consigliabile completare la sezione introduttiva dei percorsi di sviluppo dedicati per [HoloLens](../unity/unity-development-overview.md#1-getting-started) o [VR](../unity/unity-development-wmr-overview.md#1-getting-started). Se si sta già seguendo il percorso di sviluppo con Unity per HoloLens, completare i rimanenti passaggi di configurazione elencati di seguito e proseguire con le [esercitazioni introduttive su HoloLens 2](../unity/tutorials/mr-learning-base-01.md).
 
 > [!IMPORTANT]
 > Si noti che le istruzioni di installazione sono destinate alla più recente combinazione stabile di versioni di MRTK e Unity, ovvero **MRTK 2.4.0** e **Unity 2019.3.15**.
@@ -72,7 +72,7 @@ Tra le possibili soluzioni vi sono le seguenti:
 
 ##### <a name="i-cant-deploy-over-usb"></a>Impossibile distribuire tramite USB
 
-Se non si riesce a distribuire un'applicazione direttamente tramite USB, verificare che siano soddisfatti tutti i requisiti di installazione sopra elencati e seguire l'[esercitazione dettagliata](../unity/tutorials/mr-learning-base-02.md#building-your-application-to-your-hololens-2).
+Se non si riesce a distribuire un'applicazione direttamente tramite USB, verificare che siano soddisfatti tutti i requisiti di installazione sopra elencati e seguire l'[esercitazione dettagliata](../unity/tutorials/mr-learning-base-02.md#building-and-deploying-to-your-hololens-2).
 
 #### <a name="immersive-vr-headset-requirements"></a>Requisiti per visori VR immersive
 
@@ -115,16 +115,24 @@ Esistono attualmente [problemi noti](https://docs.microsoft.com/windows/mixed-re
 Se non si ha familiarità con lo sviluppo di MRTK con Unity, è consigliabile seguire il nostro percorso di sviluppo con Unity:
 
 > [!div class="nextstepaction"]
-> [Iniziare il percorso Unity](../unity/unity-development-overview.md)
+> [Inizia il percorso in Unity per HoloLens](../unity/unity-development-overview.md)
+
+> [!div class="nextstepaction"]
+> [Inizia il percorso in Unity per VR](../unity/unity-development-wmr-overview.md)
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di checkpoint per lo sviluppo con Unity che abbiamo delineato, l'attività successiva consiste nel seguire la serie di esercitazioni su HoloLens 2.
+Se si segue il percorso di checkpoint per lo sviluppo con Unity per HoloLens delineato, l'attività successiva consiste nel seguire la serie di esercitazioni su HoloLens 2.
 
 > [!div class="nextstepaction"]
 > [Serie di esercitazioni su HoloLens 2](../unity/tutorials/mr-learning-base-01.md)
 
-È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](../unity/unity-development-overview.md#1-getting-started) in qualsiasi momento.
+Se si segue il percorso in Unity per VR, l'attività successiva consiste nel configurare il progetto.
+
+> [!div class="nextstepaction"]
+> [Configurazione del progetto per WMR](../unity/configure-unity-project.md)
+
+È sempre possibile tornare ai checkpoint di sviluppo con Unity per [HoloLens](../unity/unity-development-overview.md#1-getting-started) e [VR](../unity/unity-development-wmr-overview.md#1-getting-started) in qualsiasi momento.
 
 # <a name="unreal"></a>[Unreal](#tab/unreal)
 

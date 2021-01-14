@@ -1,18 +1,18 @@
 ---
 title: Puntamento e commit con le mani
-description: Panoramica del modello di input puntamento e commit
+description: Informazioni di base sul modello di input puntamento e commit per il supporto dei movimenti nelle applicazioni di realtà mista.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realtà mista, interazione, progettazione, HoloLens, mani, da lontano, puntamento e commit, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens, raggi della mano, manipolazione degli oggetti, MRTK, Mixed Reality Toolkit, DoF
-ms.openlocfilehash: 13b692dada134f856ac6eed446cca45702030f67
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 4ee1fabac763a22006b956e46a908ff4d11e395f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848291"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009741"
 ---
 # <a name="point-and-commit-with-hands"></a>Puntamento e commit con le mani
 

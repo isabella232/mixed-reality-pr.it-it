@@ -1,18 +1,18 @@
 ---
 title: Aggiornamento di progetti in Unreal
-description: Panoramica delle procedure di aggiornamento della versione e delle API deprecate nei progetti Unreal.
+description: Informazioni sulle procedure di aggiornamento della versione, sulle modifiche alle API e sulle deprecazioni per i progetti Unreal.
 author: hferrone
 ms.author: jacksonf
 ms.date: 11/23/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, documentazione, guide, funzionalità, visore VR realtà mista, visore VR di windows mixed reality, visore VR per realtà virtuale, porting, aggiornamento
-ms.openlocfilehash: 5460ab55c887c44029e956545cf6a549f55716f7
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 27fb726bc0ca9c51b4e7b68ad28b76f89312262e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010622"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010051"
 ---
 # <a name="upgrading-projects-in-unreal"></a>Aggiornamento di progetti in Unreal
 

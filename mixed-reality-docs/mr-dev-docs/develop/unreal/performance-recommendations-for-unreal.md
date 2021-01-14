@@ -1,24 +1,25 @@
 ---
 title: Consigli sulle prestazioni per Unreal
-description: Consigli per ottenere prestazioni ottimali per le app di realtà mista in Unreal
+description: Informazioni su come ottenere prestazioni ottimali dalle app di realtà mista con le impostazioni di progetto consigliate di Unreal.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, prestazioni, ottimizzazione, impostazioni, documentazione
-ms.openlocfilehash: a369a68f8ebf9b7084c22f0efa3bbf0bf5ecbebf
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: a1a8dacd0206882c7ebd67b2658fa2e6300aa66a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865426"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009821"
 ---
 # <a name="performance-recommendations-for-unreal"></a>Consigli sulle prestazioni per Unreal
 
 Unreal Engine offre diverse funzionalità che possono migliorare le prestazioni delle app, in base agli argomenti affrontati in [Consigli sulle prestazioni per la realtà mista](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md). Prima di proseguire, è consigliabile approfondire le conoscenze sui colli di bottiglia delle applicazioni, sull'analisi e la profilazione delle app in realtà mista e sulle correzioni delle prestazioni generali.
 
 ## <a name="recommended-unreal-project-settings"></a>Impostazioni consigliate per il progetto Unreal
+
 Tutte le impostazioni seguenti sono disponibili in **Edit > Project Settings** (Modifica > Impostazioni progetto).
 
 1. Uso del renderer VR per dispositivi mobili:
@@ -78,4 +79,5 @@ Tutte le impostazioni seguenti sono disponibili in **Edit > Project Settings** (
 ![Riduzione delle permutazioni degli shader per dispositivi mobili](images/unreal/performance-recommendations-img-08.png)
 
 ## <a name="see-also"></a>Vedere anche
+
 * [Linee guida sulle prestazioni di Unreal Engine per dispositivi mobili]( https://docs.unrealengine.com/Platforms/Mobile/Performance/index.html)
