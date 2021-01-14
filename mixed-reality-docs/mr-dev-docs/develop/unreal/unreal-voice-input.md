@@ -6,18 +6,20 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Realtà mista di Windows, Unreal, Unreal Engine 4, UE4, HoloLens 2, Voice, input vocale, riconoscimento vocale, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, sviluppo di giochi, cuffie per realtà mista, cuffia di realtà mista di Windows, Headset della realtà virtuale
-ms.openlocfilehash: c7ac523258dc44aa261470aea8cdf21f32c915b2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 466b41c522e95f9fe3d618ad221dde8ccd925634
+ms.sourcegitcommit: a688bf0f1b796e4860f8252e852be79053937088
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010071"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205836"
 ---
 # <a name="voice-input-in-unreal"></a>Input vocale in Unreal
 
 L'input vocale in Unreal consente di interagire con un ologramma senza dover usare i movimenti della mano ed è supportato solo HoloLens 2. L'input vocale in HoloLens 2 è alimentato dallo stesso motore che supporta la sintesi vocale in tutte le altre app di Windows universale, ma Unreal usa un motore più limitato per elaborare l'input vocale. In questo modo è possibile limitare le funzionalità di input vocali in Unreal ai mapping di riconoscimento vocale predefiniti, descritte nelle sezioni seguenti. 
 
 ## <a name="enabling-speech-recognition"></a>Abilitazione del riconoscimento vocale
+
+Se si usa un plug-in realtà misto di Windows, l'input vocale non richiede alcuna API della realtà mista di Windows speciale; si basa sull'API di mapping di [input](https://docs.unrealengine.com/Gameplay/Input/index.html) Unreal Engine 4 esistente. Se si usa OpenXR, è necessario installare anche il plug-in [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal). 
 
 Per abilitare il riconoscimento vocale in HoloLens:
 1. Selezionare **Impostazioni progetto > piattaforma > funzionalità di > HoloLens** e abilitare il **microfono**. 
@@ -29,8 +31,6 @@ Per abilitare il riconoscimento vocale in HoloLens:
 ![Impostazioni di riconoscimento vocale Windows](images/unreal/speech-recognition-settings.png)
 
 3. Una finestra di dialogo viene visualizzata quando l'applicazione inizia per la prima volta a richiedere se si vuole abilitare il microfono. Se **si seleziona Sì** , viene avviato l'input vocale nell'app.
-
-L'input vocale non richiede alcuna API della realtà mista di Windows speciale; si basa sull'API di mapping di [input](https://docs.unrealengine.com/Gameplay/Input/index.html) Unreal Engine 4 esistente. 
 
 ## <a name="adding-speech-mappings"></a>Aggiunta di mapping vocale
 
