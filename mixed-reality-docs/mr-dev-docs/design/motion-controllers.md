@@ -5,13 +5,13 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: controller 6DOF, controller di movimento, cuffie per realtà mista, cuffie per la realtà mista di Windows, auricolare della realtà virtuale, HoloLens, scorrimento, grip, stato
-ms.openlocfilehash: 2dbe0ab0b83b371a88e419e7b223f30670bfeaea
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: controller 6DOF, controller di movimento, associazione, cuffie per realtà mista, auricolare di realtà mista di Windows, cuffia virtuale reale, HoloLens, scorrimento, grip, stato
+ms.openlocfilehash: 94a9292b3a765131ae197fd9f91c27a52a463eef
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009711"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192619"
 ---
 # <a name="motion-controllers"></a>Controller del movimento
 
@@ -239,7 +239,7 @@ Per rilevare un set comune di **[movimenti compositi](gaze-and-commit.md#composi
 
 Si consiglia di eseguire il rendering di tutti i modelli visualizzabili in corrispondenza della **posizione** del controller, perché l'origine del modello è allineata a questo punto nel mondo fisico. Se si esegue il rendering dei modelli di controller, è possibile che si desideri Raycast nella scena dalla **posizione dell'indicatore** di misura, che rappresenta il raggio lungo il quale gli utenti si aspettano naturalmente di puntare, data la progettazione fisica del controller.
 
-Per altre informazioni su come caricare dinamicamente i modelli di controller in Unity, vedere la sezione [rendering del modello di controller di movimento in Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md#rendering-the-motion-controller-model-in-unity) .
+Per altre informazioni su come caricare dinamicamente i modelli di controller in Unity, vedere la sezione [rendering del modello di controller di movimento in Unity](../develop/unity/gestures-in-unity.md#rendering-the-motion-controller-model-in-unity) .
 
 **linea grafica controller 2D** Sebbene sia consigliabile aggiungere comandi e suggerimenti del controller in-app ai modelli di controller in-app, è possibile che alcuni sviluppatori vogliano usare rappresentazioni linea 2D dei controller di movimento nell'interfaccia utente "esercitazione" o "procedura" flat. Per gli sviluppatori, sono stati resi disponibili i file con estensione png per la linea del controller di movimento.
 
@@ -275,9 +275,9 @@ Vedere la pagina relativa alla [risoluzione dei problemi di motion controller](h
 
 [Inviare commenti e suggerimenti](../give-us-feedback.md) nell'hub feedback, usando la categoria "Mixed Reality-> input".
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-* [Movimenti e controller del movimento in Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md)
+* [Controller di movimento in Unity](../develop/unity/motion-controllers-in-unity.md)
 * [Mani e controller del movimento in DirectX](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [Movimenti](gaze-and-commit.md#composite-gestures)
 * [Guida per gli appassionati: Home page della realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)

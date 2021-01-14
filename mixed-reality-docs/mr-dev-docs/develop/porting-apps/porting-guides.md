@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: porta, Unity, Unreal, middleware, motore, UWP, Win32, porting, HoloLens 1st Gen, auricolare realtà mista, cuffia a realtà mista di Windows, migrazione, Windows 10, mapping di input,
-ms.openlocfilehash: f1cb7cd96ee1d6e32c9ef1f8d3e0e1b2654e0a79
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b43b42567183ef77ef76b301212233eeeb7c04ca
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009871"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192665"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>Conversione di app VR in Windows Mixed Reality
 
@@ -56,12 +56,12 @@ La piattaforma di realtà mista Windows è ancora in fase di sviluppo attivo. È
 > [!IMPORTANT]
 > Se si usano i controller di HP Reverb G2, fare riferimento a [questo articolo](../unreal/unreal-reverb-g2-controllers.md) per istruzioni aggiuntive sul mapping degli input.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Linee guida per la compatibilità hardware con la realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Informazioni sulle prestazioni per la realtà mista](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Suggerimenti sulle prestazioni per Unity](../unity/performance-recommendations-for-unity.md)
 * [Controller del movimento](../../design/motion-controllers.md)
-* [Movimenti e controller del movimento in Unity](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Controller di movimento in Unity](../unity/motion-controllers-in-unity.md)
 * [UnityEngine. XR. WSA. input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
 * [UnityEngine. XR. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
 * [Guide alla conversione](porting-guides.md)

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: occhi, sguardi, Unity, ologramma, realtà mista, cuffie per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: 5dab8cb38aaa4b9a4547f4bf494afb093b6d8058
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7efc77eff90a164fdc0476a90912a0f52c9bb33d
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009891"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192639"
 ---
 # <a name="head-gaze-in-unity"></a>Sguardo da capo in Unity
 
@@ -59,7 +59,7 @@ Analogamente a quanto avviene con un puntatore del mouse su un computer, è nece
 Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui, è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
-> [Movimenti e controller del movimento](gestures-and-motion-controllers-in-unity.md)
+> [Controller del movimento](motion-controllers-in-unity.md)
 
 In alternativa, passare alle API e funzionalità della piattaforma di realtà mista:
 
