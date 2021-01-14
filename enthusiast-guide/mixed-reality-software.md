@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, componenti software, cronologia delle versioni, note sulla versione, cronologia delle versioni
 appliesto:
 - Windows 10
-ms.openlocfilehash: b06bd835f1e2562e01bfb7bf240747919f422e8c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 763814e7ab81feeb22c4cbe4f5daf02d62db38fa
+ms.sourcegitcommit: 4b6815605e2ea3830052baed38df21af354d2f9b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009251"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98166756"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Panoramica e cronologia delle versioni del software Realtà mista
 
@@ -167,6 +167,7 @@ In Windows 10, versione 1809 e successive, il [portale di realtà mista](https:/
 
    | Versione            | Data di rilascio          | Modifiche principali                                                 |
    |--------------------|-----------------------|---------------------------------------------------------------|
+   | 2000.20111.1381.0  | 10 dicembre 2020        | <ul><li>Aggiorna la pagina di destinazione del portale per la realtà mista.</li><li>Riduce gli errori di connettività dell'auricolare durante gli aggiornamenti del firmware. </li></ul>  |    | 2000.20071.1133.0  | 5 agosto 2020        | <ul><li>Supporto per [OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) per sospendere la finestra di anteprima.</li></ul>  | 
    | 2000.20071.1133.0  | 5 agosto 2020        | <ul><li>Supporto per [OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) per sospendere la finestra di anteprima.</li></ul>  | 
    | 2000.20041.1212.0  | 11 maggio 2020          | <ul><li>Risolve un problema di temporizzazione che ha provocato un errore 15-5 incoerente.</li><li>Supporto migliorato per l'esecuzione di realtà mista di Windows senza connessione a Internet.</li><li>Supporto migliorato per l'associazione di controller di movimento tramite i **controller di installazione**.</li></ul>  | 
    | 2000.20031.1202.0  | 14 aprile 2020        | <ul><li>Supporto per l'iscrizione a informazioni, suggerimenti e offerte per la realtà mista di Windows.</li></ul>  | 
