@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: HoloLens, realtà mista, cuffie immersive, app, UWP, invio, invio, filtri, metadati, requisiti di sistema, parole chiave, predato, certificazione, pacchetto, appx, merchandising
-ms.openlocfilehash: 632bb9c0c5bdb93041f71a4382802b02f6817f0e
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: b729bd65413587d3ad3b05bef495349b60a6fffd
+ms.sourcegitcommit: 47a5c86b4694449c825902631777a9962a40e332
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757629"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98215976"
 ---
 # <a name="distributing-your-apps"></a>Distribuzione delle app
 
@@ -66,7 +66,7 @@ La possibilità di ottenere le tue app negli utenti o in tutto il mondo è l'asp
     <td><a href="submitting-an-app-to-the-microsoft-store.md"><strong>Microsoft Store</strong></a></td>
     <td>❌</td>
     <td>✔️</td>
-    <td>✔️</td>s
+    <td>✔️</td>
 </tr>
 <tr>
     <td><a href="https://docs.microsoft.com/hololens/app-deploy-store-business"><strong>Microsoft Store per le aziende</strong></a></td>
@@ -97,8 +97,8 @@ La possibilità di ottenere le tue app negli utenti o in tutto il mondo è l'asp
 
 * Se è necessario installare un'applicazione HoloLens 2 mentre si è offline, fare riferimento alle istruzioni [Secure HoloLens 2 offline](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) oppure installare l'app tramite un pacchetto di provisioning senza abilitare la modalità sviluppatore.
 
-* È anche possibile distribuire le compilazioni nel dispositivo e condividerle con altri sviluppatori che hanno la modalità di sviluppo abilitata tramite la [distribuzione e il debug con Visual Studio](../develop/platform-capabilities-and-apis/using-visual-studio.md) o l' [installazione di un pacchetto dell'applicazione con il portale del dispositivo](https://docs.microsoft.com/hololens/holographic-custom-apps#installing-an-application-package-with-the-device-portal).
+* È anche possibile distribuire le compilazioni nel dispositivo e condividerle con altri sviluppatori che hanno la modalità di sviluppo abilitata tramite la [distribuzione e il debug con Visual Studio](../develop/platform-capabilities-and-apis/using-visual-studio.md) o l' [installazione di un pacchetto dell'applicazione con il portale del dispositivo](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#sideloading-applications).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Ricerca, installazione e disinstallazione delle applicazioni dal Microsoft Store](https://docs.microsoft.com/hololens/holographic-store-apps)
 
