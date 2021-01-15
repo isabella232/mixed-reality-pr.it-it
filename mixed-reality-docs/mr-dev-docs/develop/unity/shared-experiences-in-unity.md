@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Condivisione, ancoraggio, WorldAnchor, MR sharing 250, WorldAnchorTransferBatch, SpatialPerception, Azure, ancoraggi spaziali di Azure, ASA, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: a82439d5676bf4bcb7898a33aafc29b43e91a49f
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: 4d24f3690f4d4b1fc206dbd2b5e0aa5afad6c34c
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031957"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226340"
 ---
 # <a name="shared-experiences-in-unity"></a>Esperienze condivise in Unity
 
@@ -43,7 +43,7 @@ In alternativa, passare direttamente alla distribuzione dell'app in un dispositi
 > [!div class="nextstepaction"]
 > [Eseguire la distribuzione in HoloLens o in modalità mista di Windows per la realtà mista](../platform-capabilities-and-apis/using-visual-studio.md)
 
-È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](unity-development-overview.md#3-platform-capabilities-and-apis) in qualsiasi momento.
+È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](unity-development-overview.md#3-advanced-features) in qualsiasi momento.
 
 ## <a name="see-also"></a>Vedere anche
 * [Esperienze condivise nella realtà mista](../platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)

@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Foto, video, hololens, fotocamera, Unity, locatable, PVC, videocamera video foto, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, webcam, acquisizione foto, acquisizione video
-ms.openlocfilehash: 125521206421acbcc4c9ad6e5fb371314ddb48f2
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 8916b332774185e4453b514ca7b6916947bdcd81
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010102"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226420"
 ---
 # <a name="locatable-camera-in-unity"></a>Fotocamera individuabile in Unity
 
@@ -309,7 +309,7 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si segue il percorso di checkpoint per lo sviluppo di Unity, è possibile esplorare le funzionalità e le API della piattaforma per la realtà mista. Da qui è possibile passare all'argomento successivo:
+Se si segue il percorso di checkpoint per lo sviluppo di Unity, è possibile esplorare le funzionalità e le API della piattaforma per la realtà mista. Da qui, è possibile passare all'argomento successivo:
 
 > [!div class="nextstepaction"]
 > [Punto di interesse](focus-point-in-unity.md)
@@ -319,7 +319,7 @@ In alternativa, passare direttamente alla distribuzione dell'app in un dispositi
 > [!div class="nextstepaction"]
 > [Eseguire la distribuzione in HoloLens o in modalità mista di Windows per la realtà mista](../platform-capabilities-and-apis/using-visual-studio.md)
 
-È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](unity-development-overview.md#3-platform-capabilities-and-apis) in qualsiasi momento.
+È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](unity-development-overview.md#3-advanced-features) in qualsiasi momento.
 
 ## <a name="see-also"></a>Vedere anche
 * [Fotocamera individuabile](../platform-capab ilities-and-apis/locatable-camera.md)
