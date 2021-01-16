@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto tecnico, prestazioni
 appliesto:
 - Windows 10
-ms.openlocfilehash: 00338e1354dc04acc76fa2525c721a5e2bd4afe2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 60854785d526c7abff6327ddbb8d39d4eef23ae4
+ms.sourcegitcommit: c904d47ab2ce03d433d5eff394ec4078f404a0f7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009471"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98242537"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Domande frequenti su HP Reverb G2
 
@@ -92,3 +92,13 @@ Per
 
 Da qui è possibile modificare il binding del controller attivo in "Custom", in modo da aprire l'opzione per provare le associazioni di gioco condivise dalla community.
 Se non è ancora stata condivisa alcuna associazione di gioco personalizzata per questo gioco (o se non si è pienamente soddisfatti di quelli usati), è anche possibile creare binding di gioco personalizzati e anche aiutare il resto della community condividendo questi ultimi dopo alcune sessioni di gioco.
+
+## <a name="i-have-all-cables-connected-to-the-headset-and-pc-but-it-wont-turn-on"></a>Tutti i cavi sono connessi alla cuffia e al PC ma non vengono attivati
+
+Verificare che il cavo collegato all'auricolare sia completamente posizionato. È presente un piccolo punto sulla parte superiore del cavo che verrà allineato accanto al bordo superiore dell'auricolare quando è stato inserito completamente:
+
+![Piccolo punto sulla parte superiore del cavo](images/small-dot.jpg)
+
+## <a name="how-can-i-power-down-the-headset-while-still-using-my-pc"></a>Come è possibile spegnere la cuffia e continuare a usare il PC
+
+Scollegare la scheda di connessione AC dalla casella di collegamento sul cavo auricolare per rimuovere l'alimentazione dall'auricolare.
