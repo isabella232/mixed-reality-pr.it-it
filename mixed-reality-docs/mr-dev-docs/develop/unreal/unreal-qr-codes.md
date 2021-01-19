@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, codici a matrice, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 1daa368ee9f98accec58c6621073bd7caefdfdcb
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: d896af683a86a1b27e5d100df744222085574a93
+ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010011"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98247744"
 ---
 # <a name="qr-codes-in-unreal"></a>Codici a matrice in Unreal
 
@@ -85,7 +85,7 @@ In alternativa, passare direttamente alla distribuzione dell'app in un dispositi
 > [!div class="nextstepaction"]
 > [Distribuzione nel dispositivo](unreal-deploying.md)
 
-È sempre possibile tornare ai [checkpoint per lo sviluppo con Unreal](unreal-development-overview.md#3-platform-capabilities-and-apis) in qualsiasi momento.
+È sempre possibile tornare ai [checkpoint per lo sviluppo con Unreal](unreal-development-overview.md#3-advanced-features) in qualsiasi momento.
 
 ## <a name="see-also"></a>Vedere anche
 * [Mapping spaziale](../../design/spatial-mapping.md)

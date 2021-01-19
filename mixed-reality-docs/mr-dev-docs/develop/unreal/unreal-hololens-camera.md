@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, videocamera, fotocamera, MRC, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 15eba0c992d6d3d8895314f1a6128ace18c02483
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6f1301e0daeb44521dfb4e93a915d49d9aea8443
+ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010061"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98247764"
 ---
 # <a name="hololens-photovideo-camera-in-unreal"></a>Fotocamera/videocamera HoloLens in Unreal
 
@@ -35,7 +35,7 @@ In alternativa, passare direttamente alla distribuzione dell'app in un dispositi
 > [!div class="nextstepaction"]
 > [Distribuzione nel dispositivo](unreal-deploying.md)
 
-È sempre possibile tornare ai [checkpoint per lo sviluppo con Unreal](unreal-development-overview.md#3-platform-capabilities-and-apis) in qualsiasi momento.
+È sempre possibile tornare ai [checkpoint per lo sviluppo con Unreal](unreal-development-overview.md#3-advanced-features) in qualsiasi momento.
 
 ## <a name="see-also"></a>Vedere anche
 
