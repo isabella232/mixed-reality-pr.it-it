@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Realtà mista, localizzatore spaziale, frame di riferimento spaziale, sistema di coordinate spaziali, fase spaziale, codice di esempio, stabilizzazione dell'immagine, ancoraggio spaziale, archivio di ancoraggio spaziale, perdita di tracce, procedura dettagliata, cuffie per realtà mista, auricolare di realtà mista, auricolare della realtà virtuale
-ms.openlocfilehash: 055eff0bb04228cb0a19b9ea208bfc9c00ce2dbe
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7cf463e4c3bb9b2fe06c834376eb46e3ee20c1ee
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006861"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581075"
 ---
 # <a name="coordinate-systems-in-directx"></a>Sistemi di coordinate in DirectX
 
@@ -27,27 +27,27 @@ Gli attuali dispositivi VR o Single-Room VR stabiliscono un sistema di coordinat
 
 ## <a name="spatial-coordinate-systems-in-windows"></a>Sistemi di coordinate spaziali in Windows
 
-Il tipo di base usato per ragionare sui sistemi di coordinate reali in Windows è <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>. Un'istanza di questo tipo rappresenta un sistema di coordinate arbitrario, che fornisce un metodo per ottenere i dati della matrice di trasformazione che è possibile utilizzare per trasformare tra due sistemi di coordinate senza comprenderne i dettagli.
+Il tipo di base usato per ragionare sui sistemi di coordinate reali in Windows è <a href="/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>. Un'istanza di questo tipo rappresenta un sistema di coordinate arbitrario, che fornisce un metodo per ottenere i dati della matrice di trasformazione che è possibile utilizzare per trasformare tra due sistemi di coordinate senza comprenderne i dettagli.
 
 I metodi che restituiscono informazioni spaziali accetteranno un parametro SpatialCoordinateSystem per consentire di decidere il sistema di coordinate in cui è più utile per le coordinate da restituire. Le informazioni spaziali sono rappresentate come punti, raggi o volumi nell'ambiente dell'utente e le unità per queste coordinate saranno sempre in metri.
 
 Un SpatialCoordinateSystem ha una relazione dinamica con altri sistemi di coordinate, inclusi quelli che rappresentano la posizione del dispositivo. In qualsiasi momento, il dispositivo può individuare alcuni sistemi di coordinate e non altri. Per la maggior parte dei sistemi di coordinate, l'app deve essere pronta per gestire i periodi di tempo durante i quali non possono essere individuati.
 
 L'applicazione non deve creare direttamente SpatialCoordinateSystems, bensì deve essere usata tramite le API percettive. Nelle API percettive sono disponibili tre fonti principali di sistemi di coordinate, ciascuna delle quali è mappata a un concetto descritto nella pagina [sistemi di coordinate](../../design/coordinate-systems.md) :
-* Per ottenere un frame di riferimento fisso, creare un <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstationaryframeofreference" target="_blank">SpatialStationaryFrameOfReference</a> o ottenerne uno dalla <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference" target="_blank">SpatialStageFrameOfReference</a>corrente.
-* Per ottenere un ancoraggio spaziale, creare un <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor" target="_blank">SpatialAnchor</a>.
-* Per ottenere un frame di riferimento collegato, creare un <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocatorattachedframeofreference" target="_blank">SpatialLocatorAttachedFrameOfReference</a>.
+* Per ottenere un frame di riferimento fisso, creare un <a href="/uwp/api/windows.perception.spatial.spatialstationaryframeofreference" target="_blank">SpatialStationaryFrameOfReference</a> o ottenerne uno dalla <a href="/uwp/api/windows.perception.spatial.spatialstageframeofreference" target="_blank">SpatialStageFrameOfReference</a>corrente.
+* Per ottenere un ancoraggio spaziale, creare un <a href="/uwp/api/windows.perception.spatial.spatialanchor" target="_blank">SpatialAnchor</a>.
+* Per ottenere un frame di riferimento collegato, creare un <a href="/uwp/api/windows.perception.spatial.spatiallocatorattachedframeofreference" target="_blank">SpatialLocatorAttachedFrameOfReference</a>.
 
 Tutti i sistemi di coordinate restituiti da questi oggetti vengono gestiti a destra, con + y su, + x a destra e + z all'indietro. È possibile ricordare quale direzione punta l'asse z positivo puntando le dita della parte sinistra o destra nella direzione x positiva e inserendole nella direzione y positiva. La direzione dei punti di controllo, verso o lontano da te, è la direzione che l'asse z positivo punta per il sistema di coordinate. Nella figura seguente vengono illustrati questi due sistemi di coordinate.
 
 ![Sistemi di coordinate a sinistra e a destra](images/left-hand-right-hand.gif)<br>
 *Sistemi di coordinate a sinistra e a destra*
 
-Usare la classe <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a> per creare un frame di riferimento collegato o stazionario per eseguire il bootstrap in un SpatialCoordinateSystem in base alla posizione del HoloLens. Continuare con la sezione successiva per altre informazioni su questo processo.
+Usare la classe <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a> per creare un frame di riferimento collegato o stazionario per eseguire il bootstrap in un SpatialCoordinateSystem in base alla posizione del HoloLens. Continuare con la sezione successiva per altre informazioni su questo processo.
 
 ## <a name="place-holograms-in-the-world-using-a-spatial-stage"></a>Posizionare gli ologrammi in tutto il mondo usando una fase spaziale
 
-Il sistema di coordinate per gli auricolari a realtà mista di Windows opaco si accede usando la proprietà <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current" target="_blank">SpatialStageFrameOfReference:: Current</a> statica. Questa API fornisce:
+Il sistema di coordinate per gli auricolari a realtà mista di Windows opaco si accede usando la proprietà <a href="/uwp/api/windows.perception.spatial.spatialstageframeofreference.current" target="_blank">SpatialStageFrameOfReference:: Current</a> statica. Questa API fornisce:
 
 * Sistema di coordinate
 * Informazioni sul fatto che il lettore sia seduto o mobile
@@ -289,9 +289,9 @@ std::vector<unsigned short> SpatialStageManager::TriangulatePoints(std::vector<f
 
 ## <a name="place-holograms-in-the-world-using-a-stationary-frame-of-reference"></a>Posizionare gli ologrammi nel mondo usando un frame di riferimento fisso
 
-La classe [SpatialStationaryFrameOfReference](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialstationaryframeofreference.aspx) rappresenta un frame di riferimento che [rimane stazionario](../../design/coordinate-systems.md#stationary-frame-of-reference) rispetto a quello dell'utente quando l'utente si sposta. Questo frame di riferimento assegna priorità a mantenere le coordinate stabili vicino al dispositivo. Un uso chiave di un SpatialStationaryFrameOfReference è fungere da sistema di coordinate globale sottostante all'interno di un motore di rendering durante il rendering degli ologrammi.
+La classe [SpatialStationaryFrameOfReference](/uwp/api/Windows.Perception.Spatial.SpatialStationaryFrameOfReference) rappresenta un frame di riferimento che [rimane stazionario](../../design/coordinate-systems.md#stationary-frame-of-reference) rispetto a quello dell'utente quando l'utente si sposta. Questo frame di riferimento assegna priorità a mantenere le coordinate stabili vicino al dispositivo. Un uso chiave di un SpatialStationaryFrameOfReference è fungere da sistema di coordinate globale sottostante all'interno di un motore di rendering durante il rendering degli ologrammi.
 
-Per ottenere un SpatialStationaryFrameOfReference, usare la classe [SpatialLocator](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatiallocator.aspx) e chiamare [CreateStationaryFrameOfReferenceAtCurrentLocation](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatiallocator.createstationaryframeofreferenceatcurrentlocation.aspx).
+Per ottenere un SpatialStationaryFrameOfReference, usare la classe [SpatialLocator](/uwp/api/Windows.Perception.Spatial.SpatialLocator) e chiamare [CreateStationaryFrameOfReferenceAtCurrentLocation](/uwp/api/Windows.Perception.Spatial.SpatialLocator).
 
 Dal codice del modello di applicazione olografica di Windows:
 
@@ -314,21 +314,21 @@ Una volta definito, il sistema di coordinate di un SpatialAnchor si adatta conti
 
 Gli effetti delle rettifiche che mantengono l'ancoraggio sul posto vengono ingranditi come distanza dall'ancoraggio. È consigliabile evitare di eseguire il rendering del contenuto relativo a un ancoraggio superiore a circa 3 metri dall'origine dell'ancoraggio.
 
-La proprietà [CoordinateSystem](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.coordinatesystem.aspx) ottiene un sistema di coordinate che consente di posizionare il contenuto relativo all'ancoraggio, con l'interpolazione applicata quando il dispositivo regola la posizione esatta dell'ancoraggio.
+La proprietà [CoordinateSystem](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) ottiene un sistema di coordinate che consente di posizionare il contenuto relativo all'ancoraggio, con l'interpolazione applicata quando il dispositivo regola la posizione esatta dell'ancoraggio.
 
-Utilizzare la proprietà [RawCoordinateSystem](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.rawcoordinatesystem.aspx) e l'evento [RawCoordinateSystemAdjusted](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.rawcoordinatesystemadjusted.aspx) corrispondente per gestire manualmente queste modifiche.
+Utilizzare la proprietà [RawCoordinateSystem](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) e l'evento [RawCoordinateSystemAdjusted](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) corrispondente per gestire manualmente queste modifiche.
 
 ### <a name="persist-and-share-spatial-anchors"></a>Mantieni e Condividi ancoraggi spaziali
 
-È possibile salvare in locale una SpatialAnchor usando la classe [SpatialAnchorStore](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchorstore.aspx) e quindi riportarla in una sessione di app futura nello stesso dispositivo HoloLens.
+È possibile salvare in locale una SpatialAnchor usando la classe [SpatialAnchorStore](/uwp/api/Windows.Perception.Spatial.SpatialAnchorStore) e quindi riportarla in una sessione di app futura nello stesso dispositivo HoloLens.
 
-Usando gli <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">ancoraggi spaziali di Azure</a>, è possibile creare un ancoraggio cloud durevole da un SpatialAnchor locale, che può essere individuato dall'app su più dispositivi HoloLens, iOS e Android.  Condividendo un ancoraggio spaziale comune tra più dispositivi, ogni utente può visualizzare il contenuto di cui è stato eseguito il rendering relativo a tale ancoraggio nella stessa posizione fisica in tempo reale. 
+Usando gli <a href="/azure/spatial-anchors/overview" target="_blank">ancoraggi spaziali di Azure</a>, è possibile creare un ancoraggio cloud durevole da un SpatialAnchor locale, che può essere individuato dall'app su più dispositivi HoloLens, iOS e Android.  Condividendo un ancoraggio spaziale comune tra più dispositivi, ogni utente può visualizzare il contenuto di cui è stato eseguito il rendering relativo a tale ancoraggio nella stessa posizione fisica in tempo reale. 
 
-È anche possibile usare gli <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">ancoraggi spaziali di Azure</a> per la persistenza ologramma asincrona nei dispositivi HoloLens, iOS e Android.  Grazie alla condivisione di un ancoraggio spaziale cloud durevole, più dispositivi possono osservare lo stesso ologramma persistente nel tempo, anche se i dispositivi non sono presenti contemporaneamente.
+È anche possibile usare gli <a href="/azure/spatial-anchors/overview" target="_blank">ancoraggi spaziali di Azure</a> per la persistenza ologramma asincrona nei dispositivi HoloLens, iOS e Android.  Grazie alla condivisione di un ancoraggio spaziale cloud durevole, più dispositivi possono osservare lo stesso ologramma persistente nel tempo, anche se i dispositivi non sono presenti contemporaneamente.
 
-Per iniziare a creare esperienze condivise nell'app HoloLens, provare la <a href="https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">Guida introduttiva di Azure Spatial Anchors HoloLens</a>di 5 minuti.
+Per iniziare a creare esperienze condivise nell'app HoloLens, provare la <a href="/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">Guida introduttiva di Azure Spatial Anchors HoloLens</a>di 5 minuti.
 
-Una volta che si è in esecuzione con gli ancoraggi spaziali di Azure, è possibile <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-cpp-winrt" target="_blank">creare e individuare ancoraggi in HoloLens</a>.  Le procedure dettagliate sono disponibili anche per <a href="https://docs.microsoft.com/azure/spatial-anchors/create-locate-anchors-overview" target="_blank">Android e iOS</a> , consentendo di condividere gli stessi ancoraggi in tutti i dispositivi.
+Una volta che si è in esecuzione con gli ancoraggi spaziali di Azure, è possibile <a href="/azure/spatial-anchors/concepts/create-locate-anchors-cpp-winrt" target="_blank">creare e individuare ancoraggi in HoloLens</a>.  Le procedure dettagliate sono disponibili anche per <a href="/azure/spatial-anchors/create-locate-anchors-overview" target="_blank">Android e iOS</a> , consentendo di condividere gli stessi ancoraggi in tutti i dispositivi.
 
 ### <a name="create-spatialanchors-for-holographic-content"></a>Crea SpatialAnchors per contenuto olografico
 
@@ -382,7 +382,7 @@ Viene ora illustrato come scrivere una classe SampleSpatialAnchorHelper che cons
 * Caricamento di ancoraggi dal SpatialAnchorStore del sistema, mantenuto separato dalla raccolta locale in memoria.
 * Salvataggio della raccolta in memoria locale degli ancoraggi in SpatialAnchorStore quando l'app sceglie di eseguire questa operazione.
 
-Di seguito viene illustrato come salvare gli oggetti [SpatialAnchor](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx) in [SpatialAnchorStore](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchorstore.aspx).
+Di seguito viene illustrato come salvare gli oggetti [SpatialAnchor](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) in [SpatialAnchorStore](/uwp/api/Windows.Perception.Spatial.SpatialAnchorStore).
 
 Quando la classe viene avviata, viene richiesto il SpatialAnchorStore in modo asincrono. Ciò implica l'I/O di sistema, perché l'API carica l'archivio di ancoraggio e questa API viene resa asincrona in modo che l'I/O non sia bloccante.
 
@@ -539,7 +539,7 @@ Per ripristinare gli ancoraggi dal SpatialAnchorStore, ripristinare ognuno di es
 
 ### <a name="clear-the-anchor-store-when-needed"></a>Cancellare l'archivio di ancoraggio, quando necessario
 
-In alcuni casi è necessario cancellare lo stato dell'app e scrivere nuovi dati. Ecco come si esegue questa operazione con [SpatialAnchorStore](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchorstore.aspx).
+In alcuni casi è necessario cancellare lo stato dell'app e scrivere nuovi dati. Ecco come si esegue questa operazione con [SpatialAnchorStore](/uwp/api/Windows.Perception.Spatial.SpatialAnchorStore).
 
 Con la classe helper è quasi inutile eseguire il wrapping della funzione Clear. Si sceglie di eseguire questa operazione nell'implementazione di esempio, perché la classe helper è responsabile del proprietario dell'istanza di SpatialAnchorStore.
 
@@ -561,7 +561,7 @@ Con la classe helper è quasi inutile eseguire il wrapping della funzione Clear.
 
 ### <a name="example-relating-anchor-coordinate-systems-to-stationary-reference-frame-coordinate-systems"></a>Esempio: correlazione di sistemi di coordinate di ancoraggio a sistemi di coordinate dei frame di riferimento stazionari
 
-Supponiamo di avere un ancoraggio e di voler mettere in relazione un elemento del sistema di coordinate dell'ancoraggio alla SpatialStationaryReferenceFrame già in uso per l'altro contenuto. È possibile usare [TryGetTransformTo](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.trygettransformto.aspx) per ottenere una trasformazione dal sistema di coordinate dell'ancoraggio a quello del frame di riferimento fisso:
+Supponiamo di avere un ancoraggio e di voler mettere in relazione un elemento del sistema di coordinate dell'ancoraggio alla SpatialStationaryReferenceFrame già in uso per l'altro contenuto. È possibile usare [TryGetTransformTo](/uwp/api/Windows.Perception.Spatial.SpatialCoordinateSystem) per ottenere una trasformazione dal sistema di coordinate dell'ancoraggio a quello del frame di riferimento fisso:
 
 ```
    // In this code snippet, someAnchor is a SpatialAnchor^ that has been initialized and is valid in the current environment.
@@ -807,7 +807,7 @@ Le API di [mapping spaziale](spatial-mapping-in-directx.md) utilizzano i sistemi
 ## <a name="see-also"></a>Vedere anche
 * [Sistemi di coordinate](../../design/coordinate-systems.md)
 * [Ancoraggi nello spazio](../../design/spatial-anchors.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Ancoraggi nello spazio di Azure</a>
+* <a href="/azure/spatial-anchors" target="_blank">Ancoraggi nello spazio di Azure</a>
 * [Puntamento con la testa e sguardo fisso in DirectX](gaze-in-directx.md)
 * [Mani e controller del movimento in DirectX](hands-and-motion-controllers-in-directx.md)
 * [Mapping spaziale in DirectX](spatial-mapping-in-directx.md)

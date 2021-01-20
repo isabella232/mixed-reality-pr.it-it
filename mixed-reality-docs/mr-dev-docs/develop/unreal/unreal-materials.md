@@ -2,16 +2,16 @@
 title: Raccomandazioni sui materiali in Unreal
 description: Panoramica dei materiali in Unreal Engine.
 author: hferrone
-ms.author: v-hferrone
+ms.author: safarooq
 ms.date: 09/18/2020
 ms.topic: article
 keywords: Unreal Engine 4, UE4, HoloLens, HoloLens 2, sviluppo, materiali, documentazione, guide, funzionalità, ologrammi, sviluppo di giochi, cuffie per realtà mista, auricolare di realtà mista di Windows, auricolare di realtà virtuale
-ms.openlocfilehash: 11c10577bd3946facb96fd77b09265ab5ca26f24
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: bfe70e730c5fbd6e5d103737b03e76bfd0ab65f6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609572"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580791"
 ---
 # <a name="material-recommendations-in-unreal"></a>Raccomandazioni sui materiali in Unreal
 

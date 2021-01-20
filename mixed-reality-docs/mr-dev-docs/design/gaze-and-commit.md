@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: Realtà mista, sguardo, targeting, interazione, progettazione, monitoraggio degli occhi, rilevamento Head, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: f9e79f8d600002f63e87316ea588741a21c0d68b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: bfbf58ad065f91b27208d36ba63672ee5c28dfdd
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847929"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582329"
 ---
 # <a name="gaze-and-commit"></a>Sguardo fisso e commit
 
@@ -40,7 +40,7 @@ Di seguito sono riportati alcuni esempi di come uno sviluppatore di realtà mist
     </colgroup>
     <tr>
         <td><strong>Modello di input</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (prima generazione)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (prima generazione)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
     </tr>
@@ -135,7 +135,7 @@ Dopo la destinazione di un oggetto o di un elemento dell'interfaccia utente, l'u
 Sono supportati i metodi di commit seguenti:
 - Gesto della mano del rubinetto d'aria, ovvero sollevare la mano davanti all'utente e riunire il dito e il pollice dell'indice
 - Pronunciare _"Select"_ o uno dei comandi vocali di destinazione
-- Premere un solo pulsante su un [clic del HoloLens](https://docs.microsoft.com/hololens/hololens1-clicker)
+- Premere un solo pulsante su un [clic del HoloLens](/hololens/hololens1-clicker)
 - Premere il pulsante ' A ' in un gamepad Xbox
 - Premere il pulsante "A" in un controller adattivo Xbox
 
@@ -253,7 +253,7 @@ Prestare attenzione quando si progetta per questo movimento, tuttavia, poiché g
 I movimenti di manipolazione possono essere usati per spostare, ridimensionare o ruotare un ologramma quando si vuole che l'ologramma reagisca 1:1 ai movimenti della mano dell'utente. Uno degli usi possibili di tali movimenti 1:1 è quello di consentire all'utente di disegnare o dipingere nel mondo.
 La selezione iniziale della destinazione per un movimento di manipolazione dovrebbe avvenire mediante sguardo fisso o puntamento. Una volta avviato il tocco e l'attesa, qualsiasi manipolazione degli oggetti viene gestita da movimenti mano, che consente di liberare l'utente per l'aspetto durante la modifica.
 
-### <a name="navigation"></a>Navigazione
+### <a name="navigation"></a>Spostamento
 I movimenti di navigazione funzionano come un joystick virtuale e possono essere usati per spostarsi nei widget dell'interfaccia utente, ad esempio nei menu radiali. Tocca e tieni premuto per avviare il movimento, quindi sposta la mano all'interno di un cubo 3D normalizzato, centrato attorno al punto di pressione iniziale. È possibile spostare la mano lungo l'asse X, Y o Z da un valore compreso tra-1 e 1, dove 0 è il punto di partenza.
 La navigazione può essere usata per creare movimenti continui di scorrimento o zoom basati sulla velocità, analoghi allo scorrimento di un'interfaccia utente 2D mediante il clic sul pulsante centrale del mouse e il successivo spostamento del mouse verso l'alto o il basso.
 
@@ -286,7 +286,7 @@ Sono tre gli aspetti da considerare:
 
 
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Interazione basata sullo sguardo](eye-gaze-interaction.md)
 * [Tracciamento oculare in HoloLens 2](eye-tracking.md)
 * [Sguardo fisso e attesa](gaze-and-dwell.md)
@@ -295,4 +295,3 @@ Sono tre gli aspetti da considerare:
 * [Mani - Puntamento e commit](point-and-commit.md)
 * [Interazioni istintive](interaction-fundamentals.md)
 * [Input vocale](voice-input.md)
-

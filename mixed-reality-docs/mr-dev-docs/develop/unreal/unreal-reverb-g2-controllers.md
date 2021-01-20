@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
 keywords: Unreal Engine 4, UE4, Reverb, Reverb G2, HP reverbi G2, realtà mista, sviluppo, controller di movimento, input utente, funzionalità, nuovo progetto, emulatore, documentazione, guide, funzionalità, ologrammi, sviluppo di giochi, cuffie per realtà mista, headset di realtà mista, auricolare della realtà virtuale
-ms.openlocfilehash: 83ff19c0527ee2d10a4f00ccd84539ca16d05517
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 006c70208ec0eaa45447caecf39f799c4be1bfeb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009991"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582682"
 ---
 # <a name="hp-reverb-g2-controllers-in-unreal"></a>Controller di HP Reverb G2 in Unreal 
 
@@ -54,5 +54,5 @@ Fare clic con il pulsante destro del mouse su un progetto e cercare i nuovi nomi
 
 ## <a name="see-also"></a>Vedere anche
 * [Input SteamVR](https://docs.unrealengine.com/Platforms/VR/SteamVR/HowTo/SteamVRInput/index.html)
-* [Uso di SteamVR con la realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)
+* [Uso di SteamVR con la realtà mista di Windows](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)
 * [Fotocamera Unreal Player](https://docs.unrealengine.com/Programming/Tutorials/PlayerCamera/3/index.html)

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: afb559937c2bde06d3c74c1c572aefec50502884
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: 28ca1653019252c749fe5977a06bff4503800c10
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865436"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580181"
 ---
 # <a name="contributing-to-the-mixed-reality-enthusiast-guide"></a>Contributo alla guida per gli appassionati di realtà mista
 
@@ -22,7 +22,7 @@ Grazie per l'interesse dimostrato nella Guida per gli appassionati. Ringraziamo 
 > [!IMPORTANT]
 > Tutti i repository che pubblicano contenuto in docs.microsoft.com adottano il [Codice di comportamento Open Source di Microsoft](https://opensource.microsoft.com/codeofconduct/). Per altre informazioni, vedere [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) (Domande frequenti sul Codice di comportamento Open Source di Microsoft) oppure contattare [opencode@microsoft.com](mailto:opencode@microsoft.com) per eventuali domande o commenti.<br>
 >
-> Le correzioni minori o i chiarimenti inviati per la documentazione e gli esempi di codice nei repository pubblici sono coperti dalle [Condizioni per l'utilizzo di docs.microsoft.com](https://docs.microsoft.com/legal/termsofuse). Per le novità o le modifiche significative verrà generato un commento nella richiesta pull con la richiesta di inviare un contratto di licenza online per i contributi (Contribution License Agreement, CLA) se non si è dipendenti Microsoft. Prima che la richiesta pull venga accettata, è necessario completare il modulo online.
+> Le correzioni minori o i chiarimenti inviati per la documentazione e gli esempi di codice nei repository pubblici sono coperti dalle [Condizioni per l'utilizzo di docs.microsoft.com](/legal/termsofuse). Per le novità o le modifiche significative verrà generato un commento nella richiesta pull con la richiesta di inviare un contratto di licenza online per i contributi (Contribution License Agreement, CLA) se non si è dipendenti Microsoft. Prima che la richiesta pull venga accettata, è necessario completare il modulo online.
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
@@ -53,7 +53,7 @@ Il sistema di pubblicazione è associato a GitHub, quindi questa procedura è im
 | 5. fare clic su Anteprima modifiche per verificare che la formattazione appaia come previsto. | ![Anteprima modifiche](images/edit-in-github.png)|
 | 6. al termine, scorrere fino alla fine della pagina e fare clic su "Proponi modifica file". verrà visualizzata la pagina "confronto di modifiche", che consente di verificare le modifiche. Fare quindi clic sul pulsante "Crea richiesta pull" per inviare le modifiche. L'operazione è così conclusa. | ![Proporre una modifica](images/propose.jpg)|
 
-Dopo aver inviato le modifiche (tramite una richiesta pull), verranno esaminate da un membro del team della documentazione. Se la richiesta viene accettata, gli aggiornamenti vengono pubblicati in [https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide) .
+Dopo aver inviato le modifiche (tramite una richiesta pull), verranno esaminate da un membro del team della documentazione. Se la richiesta viene accettata, gli aggiornamenti vengono pubblicati in [https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide](/windows/mixed-reality/enthusiast-guide) .
 
 * Solo per la revisione interna, è possibile visualizzare le modifiche in [https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide](https://review.docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/?branch=master) .
 
@@ -128,7 +128,7 @@ Usare il flusso di lavoro seguente per *creare nuovi articoli* nel repository de
 
 ## <a name="working-with-branches"></a>Uso dei rami
 
-Il [repository GitHub della Guida per gli appassionati della realtà mista](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide) usa due rami padre principali: [Master](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/master), questo contenuto può essere esaminato nel [sito di staging](https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide)e in [tempo reale](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/live)per il contenuto visualizzato nel [sito Live](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide).
+Il [repository GitHub della Guida per gli appassionati della realtà mista](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide) usa due rami padre principali: [Master](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/master), questo contenuto può essere esaminato nel [sito di staging](https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide)e in [tempo reale](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/live)per il contenuto visualizzato nel [sito Live](/windows/mixed-reality/enthusiast-guide).
 
 Quando si effettuano i contributi, inviare la richiesta pull al ramo **Master** . Questo ramo può essere visualizzato nel sito di gestione temporanea e deve contenere solo i contributi pronti per la pubblicazione. È anche possibile creare e inviare un ramo con il proprio nome di ramo univoco, che può essere selezionato e visualizzato nel sito di gestione temporanea. Il ramo **Live** può essere usato solo dagli amministratori del contenuto.
 
@@ -138,13 +138,13 @@ Le risorse seguenti consentiranno di apprendere come modificare la documentazion
 
 - [Informazioni di base su Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Poster di riferimento Markdown-at-Glance](images/MarkdownPoster.pdf)
-- [Risorse aggiuntive per la scrittura di Markdown per docs.microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [Risorse aggiuntive per la scrittura di Markdown per docs.microsoft.com](/contribute/how-to-write-use-markdown)
 
 ### <a name="adding-tables"></a>Aggiunta di tabelle
 
 A causa del modo in cui le tabelle docs.microsoft.com stili, non avranno bordi o stili personalizzati, anche se si prova a usare CSS inline. Sembra funzionare per un breve periodo di tempo, ma alla fine la piattaforma eliminerà lo stile dalla tabella. Pianificare in anticipo e semplificare le tabelle. [Ecco un sito che semplifica la semplicità delle tabelle Markdown](https://www.tablesgenerator.com/markdown_tables).
 
-L' [estensione docs Markdown per Visual Studio Code](https://docs.microsoft.com/teamblog/docs-extension) rende inoltre semplice la generazione di tabelle se si usa [Visual Studio Code (vedere di seguito)](#using-visual-studio-code) per modificare la documentazione.
+L' [estensione docs Markdown per Visual Studio Code](/teamblog/docs-extension) rende inoltre semplice la generazione di tabelle se si usa [Visual Studio Code (vedere di seguito)](#using-visual-studio-code) per modificare la documentazione.
 
 ### <a name="adding-images"></a>Aggiunta di immagini
 

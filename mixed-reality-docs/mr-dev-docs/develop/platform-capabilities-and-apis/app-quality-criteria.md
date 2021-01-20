@@ -6,12 +6,12 @@ ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
 keywords: criteri di qualità delle app, realtà mista, app per realtà mista, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare realtà virtuale
-ms.openlocfilehash: 8037b573f50ef1f1137a6c50913990fadf40e92e
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 3f6752c0a15ae7db21be1f4a6d2843339ab28a5c
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192679"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581262"
 ---
 # <a name="app-quality-criteria"></a>Criteri di qualità delle app
 
@@ -36,7 +36,7 @@ La frequenza dei fotogrammi è il primo pilastro della stabilità degli ologramm
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
         <td></td>
     </tr>
@@ -99,7 +99,7 @@ Gli ologrammi stabili aumenteranno l'usabilità e la credibilità dell'app e cre
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
         <td></td>
     </tr>
@@ -161,7 +161,7 @@ I disallineamenti degli ologrammi con oggetti fisici, se destinati a essere posi
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
         <td></td>
     </tr>
@@ -224,7 +224,7 @@ Gli sviluppatori di app controllano la posizione di convergenza degli occhi degl
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
         <td></td>
     </tr>
@@ -281,7 +281,7 @@ Indipendentemente dalla visualizzazione della zona di problemi di comfort, l'ute
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
         <td></td>
     </tr>
@@ -324,7 +324,7 @@ In realtà mista di Windows, il motore audio fornisce il componente uditivo dell
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
         <td></td>
     </tr>
@@ -382,7 +382,7 @@ L'esperienza utente ben progettata può creare e gestire un contesto utile dell'
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
         <td></td>
     </tr>
@@ -438,7 +438,7 @@ Gli ologrammi dovrebbero rispondere alla posizione dell'utente approssimativamen
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
         <td></td>
     </tr>
@@ -479,7 +479,7 @@ Gli ologrammi dovrebbero rispondere alla posizione dell'utente approssimativamen
 #### <a name="documentation"></a>Documentazione
 
 * [Progettazione delle interazioni](../../discover/hologram.md)
-* [Colore, luce e materiale](../../color,-light-and-materials.md)
+* [Colore, luce e materiale](../../design/color-light-and-materials.md)
 * [Billboarding e tag-along](../../design/billboarding-and-tag-along.md)
 * [Interazioni istintive](../../design/interaction-fundamentals.md)
 * [Movimento autonomo e locomozione dell'utente](../../design/comfort.md#self-motion-and-user-locomotion)
@@ -497,7 +497,7 @@ La chiarezza dell'interazione di input è essenziale per l'usabilità di un'app 
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
         <td></td>
     </tr>
@@ -548,7 +548,7 @@ La chiarezza dell'interazione di input è essenziale per l'usabilità di un'app 
 * [Controller di movimento in Unity](../unity/motion-controllers-in-unity.md)
 * [Movimenti in Unity](../unity/gestures-in-unity.md)
 * [Input vocale in Unity](../unity/voice-input-in-unity.md)
-* [Input da tastiera, mouse e controller in DirectX](../../keyboard,-mouse,-and-controller-input-in-directx.md)
+* [Input da tastiera, mouse e controller in DirectX](./keyboard-mouse-and-controller-input-in-directx.md)
 * [Puntamento con la testa e sguardo fisso in DirectX](../native/gaze-in-directx.md)
 * [Mani e controller del movimento in DirectX](../native/hands-and-motion-controllers-in-directx.md)
 * [Input vocale in DirectX](../native/voice-input-in-directx.md)
@@ -573,7 +573,7 @@ Un pulsante è a lungo una metafora usata per attivare un evento nel mondo astra
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
         <td></td>
     </tr>
@@ -628,7 +628,7 @@ Le app che richiedono dati di mapping spaziale si basano sul dispositivo per rac
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
         <td></td>
     </tr>
@@ -683,7 +683,7 @@ In un'app di realtà mista, il contenuto può essere esterno al campo di visuali
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
         <td></td>
     </tr>
@@ -726,7 +726,7 @@ Un controllo di stato fornisce all'utente un feedback nel caso in cui sia in cor
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
         <td></td>
     </tr>

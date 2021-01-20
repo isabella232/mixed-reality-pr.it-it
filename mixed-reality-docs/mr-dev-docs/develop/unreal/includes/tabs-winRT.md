@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6bed33ee9b41a4ee66ce4c1c579d398f0958143d
-ms.sourcegitcommit: db01faaf76bccd4f0432cf6b383fefa04ab7a085
+ms.openlocfilehash: 7d530b66596bb79a082b98e5417bd125a7c5687d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97745724"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580418"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
@@ -69,7 +69,7 @@ Al primo passaggio, è necessario aggiungere un packages.config ( https://docs.m
 </packages>
 ```
 
-È ora possibile scaricare NuGet, i pacchetti necessari o fare riferimento alla [documentazione](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-nuget-cli)di NuGet.
+È ora possibile scaricare NuGet, i pacchetti necessari o fare riferimento alla [documentazione](/nuget/consume-packages/install-use-packages-nuget-cli)di NuGet.
 
 Aprire YourModule.Build.cs e aggiungere il codice seguente:
 
@@ -533,5 +533,4 @@ Quando Unreal chiama OpenFileDialogue, viene aperta una finestra di dialogo di f
 
 ## <a name="summary"></a>Riepilogo 
 
-Si consiglia di usare questa esercitazione come punto di partenza per l'utilizzo del codice WinRT in Unreal quando è necessario salvare i file nel disco HoloLens usando la stessa finestra di dialogo di Windows.  Lo stesso processo si applica all'esportazione di funzioni aggiuntive dall'intestazione HoloLensWinrtDLL e usate in Unreal.  Prestare particolare attenzione al codice DLL che attende il codice WinRT asincrono in un thread MTA in background, evitando il deadlock del thread del gioco non reale. 
-
+Si consiglia di usare questa esercitazione come punto di partenza per l'utilizzo del codice WinRT in Unreal quando è necessario salvare i file nel disco HoloLens usando la stessa finestra di dialogo di Windows.  Lo stesso processo si applica all'esportazione di funzioni aggiuntive dall'intestazione HoloLensWinrtDLL e usate in Unreal.  Prestare particolare attenzione al codice DLL che attende il codice WinRT asincrono in un thread MTA in background, evitando il deadlock del thread del gioco non reale.

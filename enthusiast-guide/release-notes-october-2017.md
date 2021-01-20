@@ -6,18 +6,18 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Note sulla versione, versione, Windows 10, Build, RS3, sistema operativo
-ms.openlocfilehash: 83c16a40388960547cfcf7444e1ae630c2f5b7f2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: e3be8edab2aedd18013622c671283b71f95f98d8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009491"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581447"
 ---
 # <a name="release-notes---october-2017"></a>Note sulla versione - ottobre 2017
 
-Benvenuti in Windows Mixed Reality La versione di **[Windows 10 Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update/)** introduce il supporto per i nuovi auricolari e i controller di [movimento](https://docs.microsoft.com/windows/mixed-reality/design/motion-controllers)con la [realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/discover/immersive-headset-hardware-details) . È ora possibile esplorare i nuovi mondi, riprodurre giochi VR e sperimentare animazioni immersive quando si è connessi a un PC con supporto per la [realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
+Benvenuti in Windows Mixed Reality La versione di **[Windows 10 Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update/)** introduce il supporto per i nuovi auricolari e i controller di [movimento](/windows/mixed-reality/design/motion-controllers)con la [realtà mista di Windows](/windows/mixed-reality/discover/immersive-headset-hardware-details) . È ora possibile esplorare i nuovi mondi, riprodurre giochi VR e sperimentare animazioni immersive quando si è connessi a un PC con supporto per la [realtà mista di Windows](./windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md).
 
-Il rilascio di auricolari per la realtà mista di Windows e dei controller di movimento è il punto culminale di un enorme impegno del team e un importante passo avanti per la [piattaforma di realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/discover/mixed-reality), tra cui [Microsoft HoloLens](https://docs.microsoft.com/windows/mixed-reality/hololens-hardware-details). Mentre HoloLens non riceve un aggiornamento con Windows 10 Fall Creators Update, il lavoro in HoloLens non è stato interrotto. Verranno fornite numerose informazioni e informazioni dettagliate da applicare al nostro lavoro recente nell'ambito della realtà mista di Windows. Infatti, gli auricolari e i controller di movimento di realtà mista di Windows rappresentano un ottimo punto di ingresso allo sviluppo anche per HoloLens, in quanto le stesse API, gli strumenti e i concetti si applicano a entrambi.
+Il rilascio di auricolari per la realtà mista di Windows e dei controller di movimento è il punto culminale di un enorme impegno del team e un importante passo avanti per la [piattaforma di realtà mista di Windows](/windows/mixed-reality/discover/mixed-reality), tra cui [Microsoft HoloLens](/windows/mixed-reality/hololens-hardware-details). Mentre HoloLens non riceve un aggiornamento con Windows 10 Fall Creators Update, il lavoro in HoloLens non è stato interrotto. Verranno fornite numerose informazioni e informazioni dettagliate da applicare al nostro lavoro recente nell'ambito della realtà mista di Windows. Infatti, gli auricolari e i controller di movimento di realtà mista di Windows rappresentano un ottimo punto di ingresso allo sviluppo anche per HoloLens, in quanto le stesse API, gli strumenti e i concetti si applicano a entrambi.
 
 Per eseguire l'aggiornamento alla versione più recente per ogni dispositivo, aprire l'app **Impostazioni** , passare a **Aggiorna & sicurezza**, quindi selezionare il pulsante **Controlla aggiornamenti** . In un PC Windows 10, è anche possibile installare manualmente Windows 10 Fall Creators Update usando lo strumento di [creazione di Windows Media](https://www.microsoft.com/software-download/windows10).
 
@@ -30,16 +30,16 @@ Per eseguire l'aggiornamento alla versione più recente per ogni dispositivo, ap
 
 Windows 10 Fall Creators Update introduce ufficialmente il supporto per gli auricolari per la realtà mista di Windows e i controller di movimento e rende Windows 10 il primo sistema operativo spaziale del mondo. Ecco le novità:
 * **[Varietà di auricolari](https://blogs.windows.com/windowsexperience/2017/10/03/how-to-pre-order-your-windows-mixed-reality-headset/)** : la realtà mista di Windows consente ai partner di offrire diversi tipi di auricolari a partire da $399 USD in bundle con i controller di movimento.
-* **[Controller di movimento](https://docs.microsoft.com/windows/mixed-reality/design/motion-controllers)** : i controller di movimento per la realtà mista di Windows sono abbinati in modalità wireless al PC tramite Bluetooth e sono caratterizzati da sei gradi di rilevamento della libertà, molti metodi di input e IMUs.
-* **[Facile installazione e portabilità](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs)** : configurazione e introduzione in meno di 10 minuti. Gli auricolari immersivi usano il rilevamento interno per tenere traccia del movimento e dei controller di movimento, con sei gradi di libertà. Non sono richieste fotocamere esterne o marcatori Faro.
-* **[Supporto per una gamma più ampia di PC: la](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)** realtà mista di Windows consentirà a un maggior numero di utenti di sperimentare Desktop VR, con il supporto per schede grafiche e PC integrati a partire da $499 USD.
-* **[Home realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)** : il primo sistema operativo spaziale del mondo offre un ambiente domestico familiare per il multitasking con app 2D, l'avvio di giochi e app VR e l'inserimento di ologrammi decorativi.
+* **[Controller di movimento](/windows/mixed-reality/design/motion-controllers)** : i controller di movimento per la realtà mista di Windows sono abbinati in modalità wireless al PC tramite Bluetooth e sono caratterizzati da sei gradi di rilevamento della libertà, molti metodi di input e IMUs.
+* **[Facile installazione e portabilità](./recommended-adapters-for-windows-mixed-reality-capable-pcs.md)** : configurazione e introduzione in meno di 10 minuti. Gli auricolari immersivi usano il rilevamento interno per tenere traccia del movimento e dei controller di movimento, con sei gradi di libertà. Non sono richieste fotocamere esterne o marcatori Faro.
+* **[Supporto per una gamma più ampia di PC: la](./windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)** realtà mista di Windows consentirà a un maggior numero di utenti di sperimentare Desktop VR, con il supporto per schede grafiche e PC integrati a partire da $499 USD.
+* **[Home realtà mista di Windows](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)** : il primo sistema operativo spaziale del mondo offre un ambiente domestico familiare per il multitasking con app 2D, l'avvio di giochi e app VR e l'inserimento di ologrammi decorativi.
 * **[Giochi e app VR straordinarie nell'Microsoft Store](https://www.microsoft.com/store/collections/MR-All-ImmersiveContent/)** , da intrattenimento immersivo come Hulu vr e 360 video a Epic Games come SUPERHOT VR e Arizona Sunshine, il Microsoft Store offre una gamma di contenuti da sperimentare nella realtà mista di Windows.
-* **[Accesso anticipato a SteamVR](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)** : Windows 10 Fall Creators Update consente il supporto dei titoli SteamVR con le cuffie e i controller di realtà mista di Windows, rendendo disponibile il catalogo più grande di titoli VR per gli utenti di realtà mista di Windows.
+* **[Accesso anticipato a SteamVR](./using-steamvr-with-windows-mixed-reality.md)** : Windows 10 Fall Creators Update consente il supporto dei titoli SteamVR con le cuffie e i controller di realtà mista di Windows, rendendo disponibile il catalogo più grande di titoli VR per gli utenti di realtà mista di Windows.
 
 ## <a name="known-issues"></a>Problemi noti
 
-Abbiamo lavorato duramente per offrire un'eccezionale esperienza di realtà mista di Windows, ma stiamo ancora verificando alcuni problemi noti. Se ne trovate altre, [inviaci commenti](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback).
+Abbiamo lavorato duramente per offrire un'eccezionale esperienza di realtà mista di Windows, ma stiamo ancora verificando alcuni problemi noti. Se ne trovate altre, [inviaci commenti](/windows/mixed-reality/give-us-feedback).
 
 ### <a name="desktop-app-in-the-windows-mixed-reality-home"></a>App desktop nella Home realtà mista di Windows
 * Lo strumento di cattura non funziona nell'app desktop.
@@ -95,7 +95,7 @@ Abbiamo lavorato duramente per offrire un'eccezionale esperienza di realtà mist
 * [Note sulla versione - marzo 2016](release-notes-march-2016.md)
 
 ## <a name="see-also"></a>Vedere anche
-* [Supporto per cuffie immersive (collegamento esterno)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
-* [Problemi noti di HoloLens](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
-* [Installare gli strumenti](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [Commenti e suggerimenti](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)
+* [Supporto per cuffie immersive (collegamento esterno)](./troubleshooting-windows-mixed-reality.md)
+* [Problemi noti di HoloLens](/windows/mixed-reality/hololens-known-issues)
+* [Installare gli strumenti](/windows/mixed-reality/develop/install-the-tools)
+* [Commenti e suggerimenti](/windows/mixed-reality/give-us-feedback)

@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: Realtà mista, sguardo, abitazione, interazione, progettazione, rilevamento degli occhi, rilevamento Head, auricolare in realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: 2daeea996251b1220ee4753567b42117fbb2126c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: aa4fceeb8875da89fd7f84c3709ff6db07fd96f4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007641"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582135"
 ---
 # <a name="gaze-and-dwell"></a>Sguardo fisso e attesa
 
@@ -40,7 +40,7 @@ Lo sguardo e l'abitazione consentono all'utente che usa HoloLens di esplorare in
     </colgroup>
     <tr>
         <td><strong>Modello di input</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (prima generazione)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (prima generazione)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
     </tr>
@@ -53,7 +53,7 @@ Lo sguardo e l'abitazione consentono all'utente che usa HoloLens di esplorare in
      <tr>
         <td>Sguardo fisso e attesa</td>
         <td>❌ Non disponibile</td>
-        <td>✔️ Consigliata</td>
+        <td>✔️ Consigliato</td>
         <td>❌ Non disponibile</td>
     </tr>
 </table>

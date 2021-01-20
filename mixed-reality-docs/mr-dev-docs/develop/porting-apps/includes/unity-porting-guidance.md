@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 0ef22142ac2efc3ef47ece2619d31dbeddcff8fe
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 6c33618e6d09da156bc4a4480fbecf3c0da94378
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192664"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580571"
 ---
 # <a name="project-settings"></a>[Impostazioni del progetto](#tab/project)
 
@@ -39,7 +39,7 @@ Dall'interno dell'applicazione Unity:
 > Se l'applicazione dispone di dipendenze da servizi specifici del dispositivo, ad esempio la corrispondenza da Steam, sarà necessario disabilitarli in questo passaggio. È possibile associare i servizi equivalenti forniti da Windows in un secondo momento.
 
 ### <a name="5-setup-your-windows-mixed-reality-hardware"></a>5. configurare l'hardware della realtà mista di Windows
-1. Esaminare i passaggi nella [configurazione dell'auricolare immersiva](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/before-you-start
+1. Esaminare i passaggi nella [configurazione dell'auricolare immersiva](/windows/mixed-reality/enthusiast-guide/before-you-start
 )
 2. Scopri come [usare il simulatore di realtà mista di Windows](../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) e passare [alla Home realtà mista di Windows](../../../discover/navigating-the-windows-mixed-reality-home.md)
 
@@ -95,13 +95,13 @@ L'algoritmo si basa su un Blog di Daniel smilkov: [rettangolo più grande in un 
 
 Ogni gioco o applicazione destinata a un HMD esistente avrà un set di input che gestisce, i tipi di input necessari per l'esperienza e le API specifiche che chiama per ottenere tali input. Abbiamo investito nel tentativo di renderlo il più semplice e semplice possibile per sfruttare i vantaggi degli input disponibili nella realtà mista di Windows.
 
-Per informazioni dettagliate sul modo in cui la realtà mista di Windows espone l'input e su come eseguire questa operazione, vedere la [Guida al porting di input per Unity](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-guides?tabs=input) nella scheda adiacente.
+Per informazioni dettagliate sul modo in cui la realtà mista di Windows espone l'input e su come eseguire questa operazione, vedere la [Guida al porting di input per Unity](../porting-guides.md?tabs=input) nella scheda adiacente.
 
 ### <a name="9-performance-testing-and-tuning"></a>9. test delle prestazioni e ottimizzazione
 
-La realtà mista di Windows sarà disponibile in un'ampia gamma di dispositivi, a partire da PC con giochi di fascia alta, fino a PC mainstream di mercato più ampi. A seconda del mercato di destinazione, esiste una differenza significativa nei budget di calcolo e grafica disponibili per l'applicazione. Durante questo esercizio di porting, è probabile che si usi un PC Premium e che siano disponibili budget di calcolo e grafica significativi per l'app. Se si vuole rendere l'app disponibile a un pubblico più ampio, è consigliabile eseguire il test e la profilatura dell'app sull' [hardware rappresentativo a cui si vuole fare riferimento](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
+La realtà mista di Windows sarà disponibile in un'ampia gamma di dispositivi, a partire da PC con giochi di fascia alta, fino a PC mainstream di mercato più ampi. A seconda del mercato di destinazione, esiste una differenza significativa nei budget di calcolo e grafica disponibili per l'applicazione. Durante questo esercizio di porting, è probabile che si usi un PC Premium e che siano disponibili budget di calcolo e grafica significativi per l'app. Se si vuole rendere l'app disponibile a un pubblico più ampio, è consigliabile eseguire il test e la profilatura dell'app sull' [hardware rappresentativo a cui si vuole fare riferimento](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
 
-[Unity](https://docs.unity3d.com/Manual/Profiler.html) e [Visual Studio](https://docs.microsoft.com/visualstudio/profiling/index) includono i profiler delle prestazioni e le linee guida per la pubblicazione di [Microsoft](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) e [Intel](https://software.intel.com/articles/vr-content-developer-guide) per la profilatura e l'ottimizzazione delle prestazioni. È disponibile una descrizione approfondita delle prestazioni disponibili [per comprendere le prestazioni della realtà mista](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md). Sono inoltre disponibili dettagli specifici per Unity in [raccomandazioni sulle prestazioni per Unity](../../unity/performance-recommendations-for-unity.md).
+[Unity](https://docs.unity3d.com/Manual/Profiler.html) e [Visual Studio](/visualstudio/profiling/index) includono i profiler delle prestazioni e le linee guida per la pubblicazione di [Microsoft](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) e [Intel](https://software.intel.com/articles/vr-content-developer-guide) per la profilatura e l'ottimizzazione delle prestazioni. È disponibile una descrizione approfondita delle prestazioni disponibili [per comprendere le prestazioni della realtà mista](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md). Sono inoltre disponibili dettagli specifici per Unity in [raccomandazioni sulle prestazioni per Unity](../../unity/performance-recommendations-for-unity.md).
 
 # <a name="input-mapping"></a>[Mapping dell'input](#tab/input)
 

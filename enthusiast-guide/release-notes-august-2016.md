@@ -6,30 +6,30 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, note sulla versione, sistema operativo, piattaforma, funzionalità, suite commerciale
-ms.openlocfilehash: 9d65d0a2454b5eb076e7c350a6d26e11660af9a5
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: c70da10043cfbcfa88105635f2467c8feaadbedf
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009261"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581647"
 ---
 # <a name="release-notes---august-2016"></a>Note sulla versione - agosto 2016
 
-Il team di HoloLens è in attesa di commenti e suggerimenti da parte degli sviluppatori del programma Windows Insider per definire le priorità del lavoro. Continua a [inviare commenti e suggerimenti](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) tramite l'hub di feedback, i [forum per sviluppatori](https://forums.hololens.com) e il [ @HoloLens Twitter tramite ](https://twitter.com/hololens). Poiché Windows 10 abbraccia l'aggiornamento dell'anniversario, il team di HoloLens è lieto di offrire un ulteriore miglioramento dell'esperienza olografica. In questo aggiornamento abbiamo dedicato alle principali correzioni, miglioramenti e introduzione alle funzionalità richieste dalle aziende e disponibili in Microsoft HoloLens Commercial Suite.
+Il team di HoloLens è in attesa di commenti e suggerimenti da parte degli sviluppatori del programma Windows Insider per definire le priorità del lavoro. Continua a [inviare commenti e suggerimenti](/windows/mixed-reality/give-us-feedback) tramite l'hub di feedback, i [forum per sviluppatori](https://forums.hololens.com) e il [ @HoloLens Twitter tramite ](https://twitter.com/hololens). Poiché Windows 10 abbraccia l'aggiornamento dell'anniversario, il team di HoloLens è lieto di offrire un ulteriore miglioramento dell'esperienza olografica. In questo aggiornamento abbiamo dedicato alle principali correzioni, miglioramenti e introduzione alle funzionalità richieste dalle aziende e disponibili in Microsoft HoloLens Commercial Suite.
 
 **Ultima versione:** Aggiornamento di Windows olografico 2016 (**10.0.14393.0**, versione anniversario di Windows 10)
 
 >[!VIDEO https://www.youtube.com/embed/tNd0e2CiAkE]
 
-Per eseguire l' [aggiornamento alla versione corrente](https://docs.microsoft.com/windows/mixed-reality/updating-hololens), aprire l'app *Impostazioni* , passare a *Aggiorna & sicurezza*, quindi selezionare il pulsante *Controlla aggiornamenti* .
+Per eseguire l' [aggiornamento alla versione corrente](/windows/mixed-reality/updating-hololens), aprire l'app *Impostazioni* , passare a *Aggiorna & sicurezza*, quindi selezionare il pulsante *Controlla aggiornamenti* .
 
 ## <a name="new-features"></a>Nuove funzionalità
 
-**Connetti a processo di debug** HoloLens supporta ora il debug da Connetti a processo. È possibile usare Visual Studio 2015 Update 3 per connettersi a un'app in esecuzione in un HoloLens e [avviarne il debug](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio#debugging-an-installed-or-running-app). Questa operazione funziona senza la necessità di eseguire la distribuzione da un progetto di Visual Studio.
+**Connetti a processo di debug** HoloLens supporta ora il debug da Connetti a processo. È possibile usare Visual Studio 2015 Update 3 per connettersi a un'app in esecuzione in un HoloLens e [avviarne il debug](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio#debugging-an-installed-or-running-app). Questa operazione funziona senza la necessità di eseguire la distribuzione da un progetto di Visual Studio.
 
 **Aggiornamento dell'emulatore di HoloLens** È stata rilasciata anche una versione aggiornata dell'emulatore di HoloLens.
 
-**Supporto di gamepad** È ora possibile associare e usare gamepad Bluetooth con HoloLens. Le funzionalità Bluetooth del controller wireless appena rilasciate e possono essere usate per riprodurre app e giochi abilitati per gamepad preferiti. Prima di poter connettere il controller senza fili Xbox a HoloLens, è necessario applicare un [aggiornamento del controller](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) . Il controller wireless Xbox S è supportato dalle API [XInput](https://msdn.microsoft.com/library/windows/desktop/hh405053(v=vs.85).aspx) e [Windows. Gaming. input](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx) . È possibile accedere a più modelli di controller Bluetooth tramite l'API [Windows. Gaming. input](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx) .
+**Supporto di gamepad** È ora possibile associare e usare gamepad Bluetooth con HoloLens. Le funzionalità Bluetooth del controller wireless appena rilasciate e possono essere usate per riprodurre app e giochi abilitati per gamepad preferiti. Prima di poter connettere il controller senza fili Xbox a HoloLens, è necessario applicare un [aggiornamento del controller](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) . Il controller wireless Xbox S è supportato dalle API [XInput](/windows/win32/xinput/xinput-game-controller-apis-portal) e [Windows. Gaming. input](/uwp/api/Windows.Gaming.Input) . È possibile accedere a più modelli di controller Bluetooth tramite l'API [Windows. Gaming. input](/uwp/api/Windows.Gaming.Input) .
 
 ## <a name="improvements-and-fixes"></a>Miglioramenti e correzioni
 
@@ -53,7 +53,7 @@ Sono stati corretti i problemi seguenti:
 
 ## <a name="introducing-microsoft-hololens-commercial-suite"></a>Introduzione a Microsoft HoloLens Commercial Suite
 
-Microsoft HoloLens Commercial Suite è pronto per la distribuzione aziendale. Sono state aggiunte diverse [funzionalità commerciali](https://docs.microsoft.com/windows/mixed-reality/commercial-features) altamente richieste dai partner commerciali iniziali.
+Microsoft HoloLens Commercial Suite è pronto per la distribuzione aziendale. Sono state aggiunte diverse [funzionalità commerciali](/windows/mixed-reality/commercial-features) altamente richieste dai partner commerciali iniziali.
 
 Contattare il gestore di account Microsoft locale per acquistare Microsoft HoloLens Commercial Suite.
 
@@ -78,7 +78,7 @@ Contattare il gestore di account Microsoft locale per acquistare Microsoft HoloL
 </tr><tr>
 <td>Rete privata virtuale (VPN)</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td><a href="https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#kiosk-mode">Modalità tutto schermo</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#kiosk-mode">Modalità tutto schermo</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> Gestione e distribuzione</th>
 </tr><tr>
@@ -90,7 +90,7 @@ Contattare il gestore di account Microsoft locale per acquistare Microsoft HoloL
 </tr><tr>
 <td>Microsoft Store (consumer)</td><td style="text-align: center;">Consumer</td><td style="text-align: center;">Filtraggio tramite MDM</td>
 </tr><tr>
-<td><a href="https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps">Portale di business Store</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="/microsoft-store/working-with-line-of-business-apps">Portale di business Store</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> Sicurezza e Identity</th>
 </tr><tr>
@@ -100,13 +100,13 @@ Contattare il gestore di account Microsoft locale per acquistare Microsoft HoloL
 </tr><tr>
 <td>Credenziali di nuova generazione con sblocco PIN</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td><a href="https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/secure-boot-overview">Avvio protetto</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td><a href="/windows-hardware/design/device-experiences/oem-secure-boot">Avvio protetto</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> Assistenza e supporto</th>
 </tr><tr>
 <td>Aggiornamenti automatici del sistema man mano che arrivano</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td><a href="https://technet.microsoft.com/itpro/windows/plan/windows-update-for-business">Windows Update for Business</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="/windows/deployment/update/waas-manage-updates-wufb">Windows Update for Business</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td>Long Term Servicing Branch</td><td></td><td style="text-align: center;">✔️</td>
 </tr>
@@ -117,7 +117,7 @@ Contattare il gestore di account Microsoft locale per acquistare Microsoft HoloL
 * [Note sulla versione - marzo 2016](release-notes-march-2016.md)
 
 ## <a name="see-also"></a>Vedere anche
-* [Problemi noti di HoloLens](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
-* [Funzionalità commerciali](https://docs.microsoft.com/windows/mixed-reality/commercial-features)
-* [Installare gli strumenti](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [Uso dell'emulatore HoloLens](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)
+* [Problemi noti di HoloLens](/windows/mixed-reality/hololens-known-issues)
+* [Funzionalità commerciali](/windows/mixed-reality/commercial-features)
+* [Installare gli strumenti](/windows/mixed-reality/develop/install-the-tools)
+* [Uso dell'emulatore HoloLens](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)

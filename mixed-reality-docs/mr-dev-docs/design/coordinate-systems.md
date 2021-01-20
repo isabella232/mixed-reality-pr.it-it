@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: sistema di coordinate, sistema di coordinate spaziali, solo orientamento, scalabilità verticale, scalabilità, scalabilità, scalabilità globale, 360 gradi, seduto, in piedi, stanza, mondo, scala, posizione, orientamento, fermo, allegato, fase, ancoraggio, ancoraggio spaziale, blocco globale, blocco globale, blocco del corpo, blocco del corpo, limiti, persistenza, condivisione, perdita di rilevamento, ancoraggio spaziale cloud, headset di realtà mista, headset di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit reality
-ms.openlocfilehash: 42efc1444c030641ad215501c4a12d6315ea9857
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 6d4bddc17027ad32f82fbc8c37860e64b2bc57eb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848026"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582414"
 ---
 # <a name="coordinate-systems"></a>Sistemi di coordinate
 
@@ -32,9 +32,9 @@ Alle loro core, le app per la realtà mista inseriscono [ologrammi](../discover/
     </colgroup>
     <tr>
         <td><strong>Funzionalità</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (prima generazione)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (prima generazione)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details"><strong>Visori VR immersive</strong></a></td>
+        <td><a href="/windows/mixed-reality/immersive-headset-hardware-details"><strong>Visori VR immersive</strong></a></td>
     </tr>
      <tr>
         <td><a href="coordinate-systems.md#stationary-frame-of-reference">Cornice fissa di riferimento</a></td>
@@ -105,7 +105,7 @@ Il frame di fase del riferimento non è ancora supportato in HoloLens. Un'app sc
 
 ## <a name="spatial-coordinate-systems"></a>Sistemi di coordinate spaziali
 
-Tutte le applicazioni grafiche 3D utilizzano [sistemi di coordinate cartesiane](https://docs.microsoft.com/windows/uwp/graphics-concepts/coordinate-systems) per motivare le posizioni e gli orientamenti degli oggetti virtuali. Questi sistemi di coordinate stabiliscono 3 assi perpendicolari lungo i quali posizionare gli oggetti: un asse X, Y e Z.
+Tutte le applicazioni grafiche 3D utilizzano [sistemi di coordinate cartesiane](/windows/uwp/graphics-concepts/coordinate-systems) per motivare le posizioni e gli orientamenti degli oggetti virtuali. Questi sistemi di coordinate stabiliscono 3 assi perpendicolari lungo i quali posizionare gli oggetti: un asse X, Y e Z.
 
 In [realtà mista](../discover/mixed-reality.md), le app ragionano sui sistemi di coordinate virtuali e fisici. Windows chiama un sistema di coordinate che ha un significato reale nel mondo fisico di un **sistema di coordinate spaziali**.
 
@@ -191,13 +191,13 @@ Gli ancoraggi spaziali possono anche consentire all'app di ricordare un percorso
 
 Grazie alla permanenza degli ancoraggi nello Store, gli utenti possono inserire singoli ologrammi o collocare un'area di lavoro attorno alla quale un'app inserirà i vari ologrammi e quindi troverà gli ologrammi in un secondo momento, su molti usi dell'app.
 
-È anche possibile usare gli <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">ancoraggi spaziali di Azure</a> per la persistenza ologramma asincrona nei dispositivi HoloLens, iOS e Android.  Grazie alla condivisione di un ancoraggio spaziale cloud durevole, più dispositivi possono osservare lo stesso ologramma persistente nel tempo, anche se i dispositivi non sono presenti contemporaneamente.
+È anche possibile usare gli <a href="/azure/spatial-anchors/overview" target="_blank">ancoraggi spaziali di Azure</a> per la persistenza ologramma asincrona nei dispositivi HoloLens, iOS e Android.  Grazie alla condivisione di un ancoraggio spaziale cloud durevole, più dispositivi possono osservare lo stesso ologramma persistente nel tempo, anche se i dispositivi non sono presenti contemporaneamente.
 
 ### <a name="spatial-anchor-sharing"></a>Condivisione di ancoraggio spaziale
 
 L'app può anche condividere un ancoraggio spaziale in tempo reale con altri dispositivi, consentendo esperienze condivise in tempo reale.
 
-Usando gli <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">ancoraggi spaziali di Azure</a>, l'app può condividere un ancoraggio spaziale tra più dispositivi HoloLens, iOS e Android. Facendo in modo che ciascun dispositivo esegua il rendering di un ologramma usando lo stesso ancoraggio nello spazio, tutti gli utenti vedranno l'ologramma nello stesso punto nel mondo reale.
+Usando gli <a href="/azure/spatial-anchors/overview" target="_blank">ancoraggi spaziali di Azure</a>, l'app può condividere un ancoraggio spaziale tra più dispositivi HoloLens, iOS e Android. Facendo in modo che ciascun dispositivo esegua il rendering di un ologramma usando lo stesso ancoraggio nello spazio, tutti gli utenti vedranno l'ologramma nello stesso punto nel mondo reale.
 
 ## <a name="avoid-head-locked-content"></a>Evitare contenuto con blocco Head
 
@@ -233,11 +233,11 @@ Quando si inizia a usare una cuffia in un ambiente in cui la mobilia, i blocchi 
 
 In alcuni casi, una casa o un altro spazio può avere due aree identiche. Ad esempio, due sale riunioni identiche, due aree d'angolo identiche, due manifesti identici di grandi dimensioni che coprono il campo di visualizzazione del dispositivo. In questi scenari, il dispositivo può, a volte, essere confuso tra le parti identiche e contrassegnarle come la stessa rappresentazione interna. Ciò può causare la visualizzazione degli ologrammi da alcune aree in altre posizioni. Il dispositivo può iniziare a perdere il rilevamento spesso perché la relativa rappresentazione interna dell'ambiente è danneggiata. In questo caso, è consigliabile reimpostare la comprensione ambientale del sistema. La reimpostazione della mappa comporta la perdita di tutte le posizionamenti di ancoraggio spaziali. In questo modo l'auricolare si rileverà correttamente nelle aree univoche dell'ambiente. Tuttavia, il problema può verificarsi se il dispositivo viene confuso nuovamente tra le aree identiche.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Presentazione GDC 2017 su sistemi di coordinate spaziali e rendering olografico](https://channel9.msdn.com/events/GDC/GDC-2017/GDC2017-008)
 * [Sistemi di coordinate in Unity](../develop/unity/coordinate-systems-in-unity.md)
 * [Sistemi di coordinate in DirectX](../develop/native/coordinate-systems-in-directx.md)
 * [Ancoraggi nello spazio](spatial-anchors.md)
 * [Esperienze condivise nella realtà mista](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Ancoraggi nello spazio di Azure</a>
+* <a href="/azure/spatial-anchors" target="_blank">Ancoraggi nello spazio di Azure</a>
 * [Case study - Guardare attraverso fori nella realtà](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto
 appliesto:
 - Windows 10
-ms.openlocfilehash: 6bcd6db30bf3a8a6e69d45c10be523d45ee4f82a
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: f448cafe3d0952ada63d545e44b58001779a1470
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725412"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580512"
 ---
 # <a name="headset-display-faqs"></a>Domande frequenti sulla visualizzazione dell'auricolare
 
@@ -52,7 +52,7 @@ ms.locfileid: "97725412"
 
 ## <a name="my-headset-display-occasionally-turns-black-after-some-use"></a>Il display dell'auricolare viene occasionalmente trasformato in nero dopo un certo utilizzo
 
-* Provare a disabilitare eventuali funzionalità di sospensione o risparmio di energia USB nel PC. Ad esempio, in **impostazioni > sistema > Power & sospensione > [sospensione selettiva USB](https://docs.microsoft.com/windows-hardware/drivers/usbcon/usb-selective-suspend)**, l'impostazione "Consenti al computer di disattivare questo dispositivo per risparmiare energia" in Device Manager e tutte le impostazioni di risparmio energia USB nel firmware del PC.
+* Provare a disabilitare eventuali funzionalità di sospensione o risparmio di energia USB nel PC. Ad esempio, in **impostazioni > sistema > Power & sospensione > [sospensione selettiva USB](/windows-hardware/drivers/usbcon/usb-selective-suspend)**, l'impostazione "Consenti al computer di disattivare questo dispositivo per risparmiare energia" in Device Manager e tutte le impostazioni di risparmio energia USB nel firmware del PC.
 * Disconnettere temporaneamente eventuali altri dispositivi USB e periferiche connesse al PC.
 * Verificare che la versione del driver GPU sia recente e verificare la presenza di nuovi problemi di prestazioni e compatibilità e regressioni sui nuovi driver.
 

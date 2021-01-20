@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, rendering olografico, olografico, immersivo, punto di messa a fuoco, buffer di profondità, solo orientamento, posizionale, opaco, trasparente, clip, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: cd5284a8fdef7254b7d0375b57877d30f5d0d708
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: ba42e8a384f62dddcf7b8e685859ddeff7b666bb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006391"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581124"
 ---
 # <a name="camera-in-unity"></a>Fotocamera in Unity
 
@@ -33,7 +33,7 @@ Quando si usa una cuffia a realtà mista, diventa il centro del mondo olografico
 Le impostazioni predefinite nel componente della fotocamera Unity sono per le applicazioni 3D tradizionali, che richiedono uno sfondo SKYBOX, perché non hanno un mondo reale.
 
 * Quando si esegue un' **[auricolare immersiva](../../discover/immersive-headset-hardware-details.md)**, si esegue il rendering di tutti gli elementi che l'utente vede, quindi è probabile che si desideri proteggere skybox.
-* Tuttavia, quando si esegue un **auricolare olografico** come [HoloLens](../../hololens-hardware-details.md), il mondo reale dovrebbe apparire dietro tutto il rendering della fotocamera. Impostare lo sfondo della fotocamera come trasparente (in HoloLens, il nero viene visualizzato come trasparente) invece di una trama skybox:
+* Tuttavia, quando si esegue un **auricolare olografico** come [HoloLens](/hololens/hololens1-hardware), il mondo reale dovrebbe apparire dietro tutto il rendering della fotocamera. Impostare lo sfondo della fotocamera come trasparente (in HoloLens, il nero viene visualizzato come trasparente) invece di una trama skybox:
     1. Selezionare la fotocamera principale nel pannello gerarchia
     2. Nel pannello Inspector trovare il componente della fotocamera e modificare l'elenco a discesa Clear Flags da skybox a Solid Color.
     3. Selezionare la selezione dei colori di sfondo e modificare i valori di RGBA in (0, 0, 0, 0)
@@ -81,7 +81,7 @@ Se si è certi che si sta compilando un' [esperienza di solo orientamento](coord
 La condivisione del buffer di profondità dell'app in Windows ogni frame offrirà all'app uno dei due aumenti di stabilità dell'ologramma, in base al tipo di auricolare per cui si esegue il rendering:
 
 * Gli **auricolari immersivi** possono gestire la riproiezione posizionale quando viene fornito un buffer di profondità, regolando gli ologrammi per la stima errata nella posizione e nell'orientamento.
-* Per gli **auricolari olografici** sono disponibili alcuni metodi diversi. HoloLens 1 seleziona automaticamente un [punto di interesse](focus-point-in-unity.md) quando viene fornito un buffer di profondità, ottimizzando la stabilità dell'ologramma lungo il piano che interseca la maggior parte del contenuto. HoloLens 2 stabilizza il contenuto usando [LSR di profondità (vedere la sezione Osservazioni)](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint).
+* Per gli **auricolari olografici** sono disponibili alcuni metodi diversi. HoloLens 1 seleziona automaticamente un [punto di interesse](focus-point-in-unity.md) quando viene fornito un buffer di profondità, ottimizzando la stabilità dell'ologramma lungo il piano che interseca la maggior parte del contenuto. HoloLens 2 stabilizza il contenuto usando [LSR di profondità (vedere la sezione Osservazioni)](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint).
 
 Per specificare se l'app Unity fornirà un buffer di profondità a Windows:
 
@@ -97,7 +97,7 @@ Seguire la Guida [dettagliata](https://microsoft.github.io/MixedRealityToolkit-U
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui, è possibile passare al blocco predefinito successivo:
+Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Sguardo fisso](gaze-in-unity.md)

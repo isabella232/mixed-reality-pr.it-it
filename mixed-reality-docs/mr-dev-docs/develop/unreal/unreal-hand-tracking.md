@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Realtà mista di Windows, Tracking manuale, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, sviluppo di giochi, cuffie per realtà mista, cuffia a realtà mista di Windows, headset di realtà virtuale
-ms.openlocfilehash: e482c93233348325736d2c224788e9174c1f3b67
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 1888258321af978ca52623008193e6dae94833a8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010161"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581100"
 ---
 # <a name="hand-tracking-in-unreal"></a>Tracciamento mano in Unreal
 
@@ -156,13 +156,13 @@ Il recupero della disposizione è adatto a interazioni di chiusura, ad esempio l
 
 ## <a name="gestures"></a>Movimenti
 
-HoloLens 2 tiene traccia dei movimenti spaziali, il che significa che è possibile acquisire tali movimenti come input. Il rilevamento dei movimenti si basa su un modello di sottoscrizione. Utilizzare la funzione "Configura movimenti" per indicare al dispositivo quali movimenti si desidera rilevare.  Per ulteriori informazioni sui movimenti, vedere il documento [HoloLens 2 Basic Usage](https://docs.microsoft.com/hololens/hololens2-basic-usage) .
+HoloLens 2 tiene traccia dei movimenti spaziali, il che significa che è possibile acquisire tali movimenti come input. Il rilevamento dei movimenti si basa su un modello di sottoscrizione. Utilizzare la funzione "Configura movimenti" per indicare al dispositivo quali movimenti si desidera rilevare.  Per ulteriori informazioni sui movimenti, vedere il documento [HoloLens 2 Basic Usage](/hololens/hololens2-basic-usage) .
 
 [!INCLUDE[](includes/tabs-tracking-gestures.md)]
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si segue il percorso delineato per lo sviluppo con Unreal, tenere presente che si stanno esplorando i blocchi predefiniti fondamentali di MRTK. Da qui, è possibile passare al blocco predefinito successivo:
+Se si segue il percorso delineato per lo sviluppo con Unreal, tenere presente che si stanno esplorando i blocchi predefiniti fondamentali di MRTK. Da qui è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Ancoraggi nello spazio locali](unreal-spatial-anchors.md)

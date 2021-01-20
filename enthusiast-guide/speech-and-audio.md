@@ -3,12 +3,12 @@ title: Domande frequenti su sintesi vocale e audio
 description: Risoluzione dei problemi della realtà mista di Windows vocale e audio che va oltre la documentazione standard del supporto clienti.
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto tecnico, problemi audio, problemi di sintesi vocale
-ms.openlocfilehash: d685190248dd17792f941cf53e3a57499cd3e662
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: fff5d661dbe61d4c9364c83e3bd0c6ddb8ab5cc6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725892"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581417"
 ---
 # <a name="speech-and-audio-faqs"></a>Domande frequenti su sintesi vocale e audio
 
@@ -35,7 +35,7 @@ ms.locfileid: "97725892"
 
 * Alcune app, come quelle avviate tramite SteamVR, possono perdere audio o bloccarsi quando il dispositivo audio cambia quando si avvia o si arresta il portale di realtà mista. Per risolvere il problema, riaprire il portale per la realtà mista e riavviare l'app.
 * Se un altro dispositivo USB multimediale, ad esempio una web cam, condivide lo stesso hub USB interno o esterno con l'auricolare della realtà mista di Windows, le cuffie o i jack audio della cuffia potrebbero occasionalmente avere un segnale acustico o nessun audio. Collegare la cuffia a una porta USB che usa un hub diverso oppure disconnettere/disabilitare l'altro dispositivo multimediale USB.
-* Se si nota un forte aumento del rumore dalle cuffie connesse, l'hub USB del PC potrebbe non essere in grado di fornire una potenza sufficiente per l'auricolare della realtà mista di Windows. In tal caso, archiviare un bug dell' [Hub di feedback](https://docs.microsoft.com/hololens/hololens-feedback) e provare a:
+* Se si nota un forte aumento del rumore dalle cuffie connesse, l'hub USB del PC potrebbe non essere in grado di fornire una potenza sufficiente per l'auricolare della realtà mista di Windows. In tal caso, archiviare un bug dell' [Hub di feedback](/hololens/hololens-feedback) e provare a:
     * rimozione di cavi di estensione
     * uso di un HUB USB 3,0 Basato su esterno dedicato
     * una porta USB diversa del PC

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens (1st Gen), HoloLens 2, realtà mista, cursori, targeting, sguardi, movimenti, cuffie per realtà mista, auricolare di realtà mista di Windows, auricolare in realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, raggi, input
-ms.openlocfilehash: 3d1bc215f7f5c37f1c2c3ae33c3bc2e4031b354a
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 0525bb9b30dfe71fba7b8ebf2afd2c87a8c97a27
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848004"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582401"
 ---
 # <a name="cursors"></a>Cursori
 
@@ -32,7 +32,7 @@ Sono disponibili tre tipi di cursori: **Finger, Ray** e **Head-sguardi**. Questi
     </colgroup>
     <tr>
         <td><strong>Funzionalità</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (prima generazione)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (prima generazione)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
     </tr>
@@ -141,7 +141,7 @@ Se si desidera personalizzare i comportamenti e le caratteristiche di feedback d
 * È possibile utilizzare il cursore per visualizzare lo stato o la finalità di input dell'utente. Ad esempio, è possibile visualizzare un'icona che informa l'utente che il sistema rileva lo stato della mano e che l'applicazione sa che è pronto a intervenire.
 * È anche possibile usare il cursore per mostrare agli utenti che i comandi vocali sono stati uditi dal sistema con una modifica del colore momentanea
 
-* Gli Stati del cursore seguenti possono essere implementati in modi diversi. È possibile implementare questi stati diversi modellando il cursore come una macchina a Stati. Esempio:
+* Gli Stati del cursore seguenti possono essere implementati in modi diversi. È possibile implementare questi stati diversi modellando il cursore come una macchina a Stati. Ad esempio:
     * Lo stato di inattività è il punto in cui viene visualizzato il cursore predefinito.
     * Lo stato pronto è quando è stata rilevata la mano dell'utente nella posizione pronta.
     * Lo stato di interazione è quando l'utente sta eseguendo una particolare interazione.
@@ -163,7 +163,7 @@ La progettazione senza cursore è consigliata quando il senso di immersione è u
 
 ## <a name="cursor-in-mrtk-mixed-reality-toolkit-for-unity"></a>Cursore in MRTK (Mixed Reality Toolkit) per Unity
 
-Per impostazione predefinita, [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) fornisce una precostruzione del cursore ([DefaultCursor. prefabbricate](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)) che ha lo stesso stato di visualizzazione del cursore di sistema della shell. Viene assegnato nel profilo di input di MRTK in puntatori. È possibile sostituire o personalizzare questo cursore per la propria esperienza. Per l'esperienza con l'input di rilevamento degli occhi, MRTK fornisce anche EyeGazeCursor, che presenta un oggetto visivo sottile per ridurre al minimo la distrazione.
+Per impostazione predefinita, [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) fornisce una precostruzione del cursore ([DefaultCursor. prefabbricate](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)) che ha lo stesso stato di visualizzazione del cursore di sistema della shell. Tale file viene assegnato in Pointers (Puntatori) nel profilo di input di MRTK. È possibile sostituire o personalizzare questo cursore per la propria esperienza. Per l'esperienza con l'input di rilevamento degli occhi, MRTK fornisce anche EyeGazeCursor, che presenta un oggetto visivo sottile per ridurre al minimo la distrazione.
 
 * [MRTK - Profilo del puntatore](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
 * [MRTK - Sistema di input](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)

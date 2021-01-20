@@ -6,12 +6,12 @@ ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, colore, luce, materiali, cuffie per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 5d99941f068e808ba14d97084ef840a66aded2a9
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: bf64413793aa40d158fde9f9a416d9a9b66af236
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848059"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580062"
 ---
 # <a name="color-light-and-materials"></a>Colore, luce e materiali
 
@@ -100,9 +100,9 @@ I materiali sono elementi fondamentali per la creazione di ologrammi realistici.
 
 ---
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Progettazione di contenuto per la visualizzazione olografica](designing-content-for-holographic-display.md)
 * [Separazione dei colori](../develop/platform-capabilities-and-apis/hologram-stability.md#color-separation)
 * [Ologrammi](../discover/hologram.md)
 * [Microsoft Design Language-colore](https://www.microsoft.com/design/color)
-* [Colore di piattaforma UWP (Universal Windows Platform)](https://docs.microsoft.com/windows/uwp/style/color)
+* [Colore di piattaforma UWP (Universal Windows Platform)](/windows/uwp/style/color)

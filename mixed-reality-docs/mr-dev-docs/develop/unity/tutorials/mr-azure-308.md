@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realtà mista, Accademia, Unity, esercitazione, API, notifiche, funzioni, tabelle, hub di notifica, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 4b71968eb546cc5d7a5cd767f2ecafae102c763c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5bf6720fe7be178bf4fb15ae2b87f4ff502afe9b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679540"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581273"
 ---
 # <a name="mr-and-azure-308-cross-device-notifications"></a>MR e Azure 308: Notifiche tra più dispositivi
 
@@ -26,11 +26,11 @@ ms.locfileid: "94679540"
 
 In questo corso verrà illustrato come aggiungere funzionalità di hub di notifica a un'applicazione di realtà mista usando hub di notifica di Azure, tabelle di Azure e funzioni di Azure.
 
-**Hub di notifica di Azure** è un servizio Microsoft che consente agli sviluppatori di inviare notifiche push mirate e personalizzate a qualsiasi piattaforma, tutto alimentato all'interno del cloud. Ciò consente agli sviluppatori di comunicare con gli utenti finali o persino di comunicare tra le varie applicazioni, a seconda dello scenario. Per altre informazioni, visitare la **Azure Notification Hubs** [pagina](https://docs.microsoft.com/azure/notification-hubs/notification-hubs-push-notification-overview)Hub di notifica di Azure.
+**Hub di notifica di Azure** è un servizio Microsoft che consente agli sviluppatori di inviare notifiche push mirate e personalizzate a qualsiasi piattaforma, tutto alimentato all'interno del cloud. Ciò consente agli sviluppatori di comunicare con gli utenti finali o persino di comunicare tra le varie applicazioni, a seconda dello scenario. Per altre informazioni, visitare la  [pagina](/azure/notification-hubs/notification-hubs-push-notification-overview)Hub di notifica di Azure.
 
-**Funzioni di Azure** è un servizio Microsoft che consente agli sviluppatori di eseguire piccole porzioni di codice, "funzioni", in Azure. Questo consente di delegare il lavoro al cloud, anziché l'applicazione locale, che può avere molti vantaggi. **Funzioni di Azure** supporta diversi linguaggi di sviluppo, tra cui C \# , F \# , Node.js, Java e php. Per altre informazioni, visitare la **Azure Functions** [pagina](https://docs.microsoft.com/azure/azure-functions/functions-overview)funzioni di Azure.
+**Funzioni di Azure** è un servizio Microsoft che consente agli sviluppatori di eseguire piccole porzioni di codice, "funzioni", in Azure. Questo consente di delegare il lavoro al cloud, anziché l'applicazione locale, che può avere molti vantaggi. **Funzioni di Azure** supporta diversi linguaggi di sviluppo, tra cui C \# , F \# , Node.js, Java e php. Per altre informazioni, visitare la  [pagina](/azure/azure-functions/functions-overview)funzioni di Azure.
 
-**Tabelle di Azure** è un servizio cloud Microsoft che consente agli sviluppatori di archiviare dati non SQL strutturati nel cloud, rendendoli facilmente accessibili ovunque. Il servizio è caratterizzato da una progettazione non schema, che consente l'evoluzione delle tabelle in base alle esigenze e pertanto è molto flessibile. Per altre informazioni, visita la **Azure Tables** [pagina](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview) delle tabelle di Azure
+**Tabelle di Azure** è un servizio cloud Microsoft che consente agli sviluppatori di archiviare dati non SQL strutturati nel cloud, rendendoli facilmente accessibili ovunque. Il servizio è caratterizzato da una progettazione non schema, che consente l'evoluzione delle tabelle in base alle esigenze e pertanto è molto flessibile. Per altre informazioni, visita la  [pagina](/azure/cosmos-db/table-storage-overview) delle tabelle di Azure
 
 Dopo aver completato questo corso, si disporrà di un'applicazione per le cuffie immersive a realtà mista e di un'applicazione per PC desktop, che sarà in grado di eseguire le operazioni seguenti:
 
@@ -48,7 +48,7 @@ Nell'applicazione, spetta all'utente come integrare i risultati con la progettaz
 
 <table>
 <tr>
-<th>Corso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
+<th>Corso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
 </tr><tr>
 <td> MR e Azure 308: Notifiche tra più dispositivi</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -69,7 +69,7 @@ Per questo corso è consigliabile usare i componenti hardware e software seguent
 - [Windows 10 SDK più recente](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Un [headset di Windows misto reality immersiv (VR)](../../../discover/immersive-headset-hardware-details.md) o [Microsoft HoloLens](../../../hololens-hardware-details.md) con la modalità di sviluppo abilitata
+- Un [headset di Windows misto reality immersiv (VR)](../../../discover/immersive-headset-hardware-details.md) o [Microsoft HoloLens](/hololens/hololens1-hardware) con la modalità di sviluppo abilitata
 - Accesso a Internet per il programma di installazione di Azure e per accedere a hub di notifica
 
 ## <a name="before-you-start"></a>Prima di iniziare
@@ -145,13 +145,13 @@ Con le credenziali delle app recuperate, sarà necessario accedere al portale di
 
     4.  Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. Si consiglia di lasciare tutti i servizi di Azure associati a un singolo progetto (ad esempio questi Lab) in un gruppo di risorse comune).
 
-        > Per altre informazioni sui gruppi di risorse di Azure, seguire questo collegamento per informazioni [su come gestire un gruppo di risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal). 
+        > Per altre informazioni sui gruppi di risorse di Azure, seguire questo collegamento per informazioni [su come gestire un gruppo di risorse](/azure/azure-resource-manager/resource-group-portal). 
 
     5.  Selezionare una **sottoscrizione** appropriata.
 
     6.  Sarà inoltre necessario confermare di aver compreso i termini e le condizioni applicati a questo servizio.
 
-    7. Selezionare **Crea**.
+    7. Selezionare **Create** (Crea).
 
         ![dettagli del servizio di riempimento](images/AzureLabs-Lab8-08.png)
 
@@ -212,7 +212,7 @@ Dopo aver creato l'istanza del servizio Hub di notifica, tornare al portale di A
 
     9.  Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. Si consiglia di lasciare tutti i servizi di Azure associati a un singolo progetto (ad esempio questi Lab) in un gruppo di risorse comune).
 
-        > Per altre informazioni sui gruppi di risorse di Azure, seguire questo collegamento per informazioni [su come gestire un gruppo di risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Per altre informazioni sui gruppi di risorse di Azure, seguire questo collegamento per informazioni [su come gestire un gruppo di risorse](/azure/azure-resource-manager/resource-group-portal).
 
     10. Lasciare le **reti virtuali** **disabilitate** se si tratta di un'opzione.
 
@@ -362,7 +362,7 @@ In primo luogo, è necessario creare un file che consentirà alla funzione di Az
 
     4. Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. Si consiglia di lasciare tutti i servizi di Azure associati a un singolo progetto (ad esempio questi Lab) in un gruppo di risorse comune).
 
-        > Per altre informazioni sui gruppi di risorse di Azure, seguire questo collegamento per informazioni [su come gestire un gruppo di risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Per altre informazioni sui gruppi di risorse di Azure, seguire questo collegamento per informazioni [su come gestire un gruppo di risorse](/azure/azure-resource-manager/resource-group-portal).
 
     5. Per **sistema operativo**, fare clic su Windows, che corrisponde alla piattaforma desiderata.
 
@@ -657,11 +657,11 @@ Configurare e testare l'auricolare immersiva della realtà mista.
 
     ![imposta strumenti esterni di Visual Studio](images/AzureLabs-Lab8-54.png)
 
-4.  Passare quindi a **File**  >  **impostazioni di compilazione** file e selezionare **piattaforma UWP (Universal Windows Platform)**, quindi fare clic sul pulsante **Cambia piattaforma** per applicare la selezione.
+4.  Passare quindi a   >  **impostazioni di compilazione** file e selezionare **piattaforma UWP (Universal Windows Platform)**, quindi fare clic sul pulsante **Cambia piattaforma** per applicare la selezione.
 
     ![piattaforme switch](images/AzureLabs-Lab8-55.png)
 
-5.  Sempre nelle **File**  >  **impostazioni di compilazione** file, verificare che:
+5.  Sempre nelle   >  **impostazioni di compilazione** file, verificare che:
 
     1.  Il **dispositivo di destinazione** è impostato su **qualsiasi dispositivo**
 
@@ -722,7 +722,7 @@ Configurare e testare l'auricolare immersiva della realtà mista.
 
 ## <a name="chapter-8---importing-the-dlls-in-unity"></a>Capitolo 8-importazione delle dll in Unity
 
-Si utilizzerà archiviazione di Azure per Unity (che a sua volta USA .NET SDK per Azure). Per altre informazioni, seguire questo [collegamento su archiviazione di Azure per Unity](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity).
+Si utilizzerà archiviazione di Azure per Unity (che a sua volta USA .NET SDK per Azure). Per altre informazioni, seguire questo [collegamento su archiviazione di Azure per Unity](/sandbox/gamedev/unity/azure-storage-unity).
 
 Attualmente esiste un problema noto in Unity che richiede che i plug-in vengano riconfigurati dopo l'importazione. Questi passaggi (4-7 in questa sezione) non saranno più necessari dopo la risoluzione del bug.
 
@@ -1138,7 +1138,7 @@ Per creare il secondo script:
 
 Tutti gli elementi necessari per la sezione Unity di questo progetto sono ora completati.
 
-1.  Passare a **impostazioni di compilazione** (impostazioni di **File**  >  **compilazione** file).
+1.  Passare a **impostazioni di compilazione** (impostazioni di  >  **compilazione** file).
 
 2.  Nella finestra **impostazioni di compilazione** fare clic su **Compila**.
 
@@ -1173,11 +1173,11 @@ Di seguito è riportata una configurazione tipica per lo sviluppo con la realtà
 
     ![imposta editor esterno su Visual Studio](images/AzureLabs-Lab8-81.png)
 
-4.  Passare quindi a **File**  >  **impostazioni di compilazione** file e passare alla piattaforma **piattaforma UWP (Universal Windows Platform)**, facendo clic sul pulsante **Switch Platform** .
+4.  Passare quindi a   >  **impostazioni di compilazione** file e passare alla piattaforma **piattaforma UWP (Universal Windows Platform)**, facendo clic sul pulsante **Switch Platform** .
 
     ![passare da una piattaforma all'altra a UWP](images/AzureLabs-Lab8-82.png)
 
-5.  Passare a **File**  >  **impostazioni di compilazione** file e verificare che:
+5.  Passare a   >  **impostazioni di compilazione** file e verificare che:
 
     1.  Il **dispositivo di destinazione** è impostato su **qualsiasi dispositivo**
 
@@ -1242,14 +1242,14 @@ Di seguito è riportata una configurazione tipica per lo sviluppo con la realtà
 
 ### <a name="chapter-13---importing-the-dlls-in-the-mixed-reality-unity-project"></a>Capitolo 13-importazione delle dll nel progetto di Unity per la realtà mista
 
-Verrà usata la libreria di archiviazione di Azure per Unity (che usa .NET SDK per Azure). Seguire questo collegamento per l' [uso di archiviazione di Azure con Unity](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity).
+Verrà usata la libreria di archiviazione di Azure per Unity (che usa .NET SDK per Azure). Seguire questo collegamento per l' [uso di archiviazione di Azure con Unity](/sandbox/gamedev/unity/azure-storage-unity).
 Attualmente esiste un problema noto in Unity che richiede che i plug-in vengano riconfigurati dopo l'importazione. Questi passaggi (4-7 in questa sezione) non saranno più necessari dopo la risoluzione del bug.
 
 Per importare l'SDK nel progetto, assicurarsi di aver scaricato la versione più recente di [. file unitypackage Tools](https://aka.ms/azstorage-unitysdk). Procedere quindi come segue:
 
 1.  Aggiungere il. file unitypackage Tools scaricato dal precedente a Unity usando l'opzione di menu **Asset**  >  **Import Package**  >  **Custom** Package.
 
-2.  Nella casella **Importa pacchetto Unity** visualizzata è possibile selezionare tutti gli elementi in archiviazione **plug**-in  >  **Storage**.
+2.  Nella casella **Importa pacchetto Unity** visualizzata è possibile selezionare tutti gli elementi in archiviazione **plug**-in  >  .
 
     ![Importa pacchetto](images/AzureLabs-Lab8-90.png)
 
@@ -1485,7 +1485,7 @@ Per creare lo script **NotificationReceiver** :
 
 Questo capitolo è identico al processo di compilazione per il progetto precedente. Tutti gli elementi necessari per la sezione Unity di questo progetto sono stati completati, quindi è giunto il momento di compilarli da Unity.
 
-1.  Passare a **impostazioni di compilazione** (impostazioni di **File**  >  **compilazione** file).
+1.  Passare a **impostazioni di compilazione** (impostazioni di   >  **compilazione** file).
 
 2.  Dal menu **impostazioni di compilazione** verificare che **Unity Projects C# Projects** _ sia selezionato (che consente di modificare gli script in questo progetto, dopo la compilazione).
 
@@ -1523,7 +1523,7 @@ Per importare il pacchetto NuGet:
 
     ![Apri Gestione NuGet](images/AzureLabs-Lab8-102.png)
 
-3.  Selezionare la **_Browse_*scheda Sfoglia _ e cercare _* WindowsAzure. Messaging. Managed**.
+3.  Selezionare la ***scheda Sfoglia _ e cercare _* WindowsAzure. Messaging. Managed**.
 
     ![trovare il pacchetto di messaggistica di Windows Azure](images/AzureLabs-Lab8-103.png)
 

@@ -6,18 +6,18 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Rilevamento degli occhi, realtà mista, input, sguardi oculari, cuffie per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, progettazione, interazioni
-ms.openlocfilehash: b5091b92fd048f72184212401d54ad0b7353875c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: db3cb774d72de13c2f1e51d446969ee7a4cdf2b7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008581"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582382"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>Interazione basata sugli sguardi su HoloLens 2
 
 ![Demo sul rilevamento degli occhi in MRTK](images/mrtk_et_scenemenu.jpg)
 
-Una delle nuove interessanti funzionalità di HoloLens 2 è la verifica degli occhi. Nella pagina [HoloLens 2](eye-tracking.md) è stata illustrata la necessità di ogni utente di eseguire una [calibrazione](https://docs.microsoft.com/hololens/hololens-calibration), fornite alcune indicazioni per gli sviluppatori e casi d'uso evidenziati per la verifica degli occhi. L'input con sguardo oculare è ancora un nuovo tipo di input dell'utente ed è necessario apprendere molto. 
+Una delle nuove interessanti funzionalità di HoloLens 2 è la verifica degli occhi. Nella pagina [HoloLens 2](eye-tracking.md) è stata illustrata la necessità di ogni utente di eseguire una [calibrazione](/hololens/hololens-calibration), fornite alcune indicazioni per gli sviluppatori e casi d'uso evidenziati per la verifica degli occhi. L'input con sguardo oculare è ancora un nuovo tipo di input dell'utente ed è necessario apprendere molto. 
 
 Anche se l'input con sguardo oculare viene usato solo in modo impercettibile nell'esperienza della shell olografica (l'interfaccia utente visualizzata quando si avvia HoloLens 2), più app, ad esempio ["HoloLens Playground"](https://www.microsoft.com/p/mr-playground/9nb31lh723s2), presentano esempi eccezionali sul modo in cui l'input dello sguardo può essere aggiunto alla magia dell'esperienza olografica.
 In questa pagina vengono illustrate le considerazioni di progettazione per l'integrazione dell'input Eye-sguardi per interagire con le applicazioni olografiche.
@@ -35,7 +35,7 @@ Verranno fornite informazioni sui vantaggi principali, oltre a una sfida univoca
 </colgroup>
 <tr>
      <td><strong>Funzionalità</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (prima generazione)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (prima generazione)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
 </tr>

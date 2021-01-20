@@ -6,19 +6,19 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Realtà mista di Windows, HolographicSpace, CoreWindow, input spaziale, rendering, catena di scambio, frame olografico, ciclo di aggiornamento, ciclo del gioco, frame di riferimento, locatability, codice di esempio, procedura dettagliata, auricolare in realtà mista, auricolare di realtà misto di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: c630905b4f7f3bf03d575201feb944c3b8f62f32
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 215c3cbacd4c7975d05b3a1b3f3992c9198642f7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009531"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580917"
 ---
 # <a name="getting-a-holographicspace"></a>Ottenere un HolographicSpace
 
 > [!NOTE]
 > Questo articolo si riferisce alle API native di WinRT legacy.  Per i nuovi progetti di app native, è consigliabile usare l' **[API OpenXR](openxr-getting-started.md)**.
 
-La classe <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> è il portale nel mondo olografico. Controlla il rendering immersivo, fornisce i dati della fotocamera e fornisce l'accesso alle API di ragionamento spaziale. Ne verrà creato uno per il <a href="https://docs.microsoft.com/api/windows.ui.core.corewindow" target="_blank">CoreWindow</a> dell'app UWP o l'HWND dell'app Win32.
+La classe <a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> è il portale nel mondo olografico. Controlla il rendering immersivo, fornisce i dati della fotocamera e fornisce l'accesso alle API di ragionamento spaziale. Ne verrà creato uno per il <a href="/api/windows.ui.core.corewindow" target="_blank">CoreWindow</a> dell'app UWP o l'HWND dell'app Win32.
 
 ## <a name="set-up-the-holographic-space"></a>Configurare lo spazio olografico
 
@@ -30,7 +30,7 @@ Per un' **app UWP** [a partire dal *modello di app DirectX 11 (Windows universal
 m_holographicSpace = HolographicSpace::CreateForCoreWindow(window);
 ```
 
-Se si sta creando un' **app Win32** [a partire dall'esempio Win32 *BasicHologram*](creating-a-holographic-directx-project.md#creating-a-win32-project), vedere **app:: CreateWindowAndHolographicSpace** per un esempio di HWND. È quindi possibile convertirlo in un HWND immersivo creando un <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a>associato:
+Se si sta creando un' **app Win32** [a partire dall'esempio Win32 *BasicHologram*](creating-a-holographic-directx-project.md#creating-a-win32-project), vedere **app:: CreateWindowAndHolographicSpace** per un esempio di HWND. È quindi possibile convertirlo in un HWND immersivo creando un <a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a>associato:
 
 ```cpp
 void App::CreateWindowAndHolographicSpace(HINSTANCE hInstance, int nCmdShow)
@@ -93,7 +93,7 @@ void App::CreateWindowAndHolographicSpace(HINSTANCE hInstance, int nCmdShow)
 ```
 
 Una volta ottenuto un HolographicSpace per UWP CoreWindow o l'HWND Win32, il HolographicSpace può gestire le fotocamere olografiche, creare sistemi di coordinate ed eseguire il rendering olografico. Lo spazio olografico corrente viene usato in più posizioni nel modello DirectX:
-* La classe **DeviceResources** deve ottenere alcune informazioni dall'oggetto HolographicSpace per creare il dispositivo Direct3D. ID adattatore DXGI associato alla visualizzazione olografica. La classe <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> usa il dispositivo Direct3D 11 dell'app per creare e gestire risorse basate su dispositivo, ad esempio i buffer indietro per ogni fotocamera olografica. Se si è interessati a vedere il funzionamento di questa funzione sotto la cappa, è possibile trovarla in DeviceResources. cpp.
+* La classe **DeviceResources** deve ottenere alcune informazioni dall'oggetto HolographicSpace per creare il dispositivo Direct3D. ID adattatore DXGI associato alla visualizzazione olografica. La classe <a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> usa il dispositivo Direct3D 11 dell'app per creare e gestire risorse basate su dispositivo, ad esempio i buffer indietro per ogni fotocamera olografica. Se si è interessati a vedere il funzionamento di questa funzione sotto la cappa, è possibile trovarla in DeviceResources. cpp.
 * La funzione **DeviceResources:: InitializeUsingHolographicSpace** illustra come ottenere l'adapter cercando LUID e come scegliere una scheda predefinita se non è specificata alcuna scheda preferita.
 * La classe principale dell'app usa lo spazio olografico di **AppView:: sewindow** o **app:: CreateWindowAndHolographicSpace** per gli aggiornamenti e il rendering.
 
@@ -126,12 +126,12 @@ I gestori di eventi devono completare alcune operazioni per garantire che il ren
 
 A questo punto, ci siamo concentrati su AppMain e sulla configurazione che consente all'app di sapere sulle fotocamere olografiche. Tenendo presente questo aspetto, è importante prendere in considerazione i due requisiti seguenti:
 
-1. Per il gestore dell'evento **CameraAdded** , l'app può funzionare in modo asincrono per completare la creazione di risorse e il caricamento di asset per la nuova fotocamera olografica. Le app che accettano più di un frame per completare questa operazione devono richiedere un rinvio e completare il rinvio dopo il caricamento asincrono. Un' [attività PPL](https://docs.microsoft.com/cpp/parallel/concrt/parallel-patterns-library-ppl) può essere utilizzata per eseguire operazioni asincrone. L'app deve assicurarsi che sia pronta per il rendering della fotocamera immediatamente quando esce dal gestore eventi o quando completa il rinvio. Se si esce dal gestore eventi o si completa il rinvio, viene indicato al sistema che l'app è ora pronta a ricevere i frame olografici con la fotocamera inclusa.
+1. Per il gestore dell'evento **CameraAdded** , l'app può funzionare in modo asincrono per completare la creazione di risorse e il caricamento di asset per la nuova fotocamera olografica. Le app che accettano più di un frame per completare questa operazione devono richiedere un rinvio e completare il rinvio dopo il caricamento asincrono. Un' [attività PPL](/cpp/parallel/concrt/parallel-patterns-library-ppl) può essere utilizzata per eseguire operazioni asincrone. L'app deve assicurarsi che sia pronta per il rendering della fotocamera immediatamente quando esce dal gestore eventi o quando completa il rinvio. Se si esce dal gestore eventi o si completa il rinvio, viene indicato al sistema che l'app è ora pronta a ricevere i frame olografici con la fotocamera inclusa.
 
-2. Quando l'app riceve un evento **CameraRemoved** , deve rilasciare tutti i riferimenti al buffer nascosto e chiudere immediatamente la funzione. Sono incluse le visualizzazioni della destinazione di rendering e qualsiasi altra risorsa che può includere un riferimento a [IDXGIResource](https://docs.microsoft.com/windows/desktop/api/dxgi/nn-dxgi-idxgiresource). L'app deve inoltre assicurarsi che il buffer nascosto non sia collegato come destinazione di rendering, come illustrato in **CameraResources:: ReleaseResourcesForBackBuffer**. Per velocizzare le operazioni, l'app può rilasciare il buffer nascosto e avviare un'attività per completare in modo asincrono eventuali altre operazioni di chiusura per la fotocamera. Il modello di app olografico include un'attività PPL che è possibile usare a questo scopo.
+2. Quando l'app riceve un evento **CameraRemoved** , deve rilasciare tutti i riferimenti al buffer nascosto e chiudere immediatamente la funzione. Sono incluse le visualizzazioni della destinazione di rendering e qualsiasi altra risorsa che può includere un riferimento a [IDXGIResource](/windows/desktop/api/dxgi/nn-dxgi-idxgiresource). L'app deve inoltre assicurarsi che il buffer nascosto non sia collegato come destinazione di rendering, come illustrato in **CameraResources:: ReleaseResourcesForBackBuffer**. Per velocizzare le operazioni, l'app può rilasciare il buffer nascosto e avviare un'attività per completare in modo asincrono eventuali altre operazioni di chiusura per la fotocamera. Il modello di app olografico include un'attività PPL che è possibile usare a questo scopo.
 
 >[!NOTE]
->Per determinare quando viene visualizzata una fotocamera aggiunta o rimossa nel frame, usare le proprietà **HolographicFrame** [AddedCameras](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe.addedcameras) e [RemovedCameras](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe.removedcameras) .
+>Per determinare quando viene visualizzata una fotocamera aggiunta o rimossa nel frame, usare le proprietà **HolographicFrame** [AddedCameras](/uwp/api/windows.graphics.holographic.holographicframe.addedcameras) e [RemovedCameras](/uwp/api/windows.graphics.holographic.holographicframe.removedcameras) .
 
 ## <a name="create-a-frame-of-reference-for-your-holographic-content"></a>Creare un frame di riferimento per il contenuto olografico
 
@@ -139,7 +139,7 @@ Il contenuto dell'app deve essere posizionato in un [sistema di coordinate spazi
 
 Sono disponibili due tipi di frame di riferimento in Windows olografico: frame di riferimento collegati al dispositivo e frame di riferimento che rimangono fissi quando il dispositivo viene spostato nell'ambiente dell'utente. Per impostazione predefinita, il modello di applicazione olografica usa un frame di riferimento fisso. Questo è uno dei modi più semplici per eseguire il rendering degli ologrammi con blocco mondiale.
 
-I frame di riferimento stazionari sono progettati per stabilizzare le posizioni vicino alla posizione corrente del dispositivo. Ciò significa che le coordinate aggiuntive del dispositivo possono essere leggermente ripartite rispetto all'ambiente dell'utente, perché il dispositivo apprende altre informazioni sullo spazio. Esistono due modi per creare un frame di riferimento stazionario: acquisire il sistema di coordinate dalla [fase spaziale](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage)oppure usare il valore predefinito <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>. Se si sta creando un'app di realtà mista di Windows per auricolari immersivi, il punto di partenza consigliato è la [fase spaziale](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage). La fase spaziale fornisce inoltre informazioni sulle funzionalità dell'auricolare immersivo utilizzato dal lettore. Qui viene illustrato come usare il valore predefinito <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>.
+I frame di riferimento stazionari sono progettati per stabilizzare le posizioni vicino alla posizione corrente del dispositivo. Ciò significa che le coordinate aggiuntive del dispositivo possono essere leggermente ripartite rispetto all'ambiente dell'utente, perché il dispositivo apprende altre informazioni sullo spazio. Esistono due modi per creare un frame di riferimento stazionario: acquisire il sistema di coordinate dalla [fase spaziale](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage)oppure usare il valore predefinito <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>. Se si sta creando un'app di realtà mista di Windows per auricolari immersivi, il punto di partenza consigliato è la [fase spaziale](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage). La fase spaziale fornisce inoltre informazioni sulle funzionalità dell'auricolare immersivo utilizzato dal lettore. Qui viene illustrato come usare il valore predefinito <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>.
 
 Il localizzatore spaziale rappresenta il dispositivo di realtà mista di Windows e tiene traccia del movimento del dispositivo e fornisce sistemi di coordinate che possono essere riconosciuti in relazione alla relativa posizione.
 
@@ -161,7 +161,7 @@ m_stationaryReferenceFrame =
 Tutti i frame di riferimento sono allineati alla gravità, ovvero l'asse y punta "verso l'alto" in relazione all'ambiente dell'utente. Poiché Windows utilizza i sistemi di coordinate "di destra", la direzione dell'asse – z coincide con la direzione "Avanti" del dispositivo quando viene creato il frame di riferimento.
 
 >[!NOTE]
->Quando l'app richiede un posizionamento preciso dei singoli ologrammi, usare un <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor" target="_blank">SpatialAnchor</a> per ancorare il singolo ologramma a una posizione nel mondo reale. Ad esempio, usare un ancoraggio spaziale quando l'utente indica un punto di interesse speciale. Le posizioni di ancoraggio non sono derivate, ma possono essere modificate. Per impostazione predefinita, quando si modifica un ancoraggio, la posizione viene semplificata al posto dei diversi frame successivi dopo la correzione. A seconda dell'applicazione, in questo caso si potrebbe voler gestire la regolazione in modo diverso, ad esempio rinviando l'ologramma al di fuori della visualizzazione. La proprietà <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor.rawcoordinatesystem" target="_blank">RawCoordinateSystem</a> e gli eventi <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor.rawcoordinatesystemadjusted" target="_blank">RawCoordinateSystemAdjusted</a> abilitano queste personalizzazioni.
+>Quando l'app richiede un posizionamento preciso dei singoli ologrammi, usare un <a href="/uwp/api/windows.perception.spatial.spatialanchor" target="_blank">SpatialAnchor</a> per ancorare il singolo ologramma a una posizione nel mondo reale. Ad esempio, usare un ancoraggio spaziale quando l'utente indica un punto di interesse speciale. Le posizioni di ancoraggio non sono derivate, ma possono essere modificate. Per impostazione predefinita, quando si modifica un ancoraggio, la posizione viene semplificata al posto dei diversi frame successivi dopo la correzione. A seconda dell'applicazione, in questo caso si potrebbe voler gestire la regolazione in modo diverso, ad esempio rinviando l'ologramma al di fuori della visualizzazione. La proprietà <a href="/uwp/api/windows.perception.spatial.spatialanchor.rawcoordinatesystem" target="_blank">RawCoordinateSystem</a> e gli eventi <a href="/uwp/api/windows.perception.spatial.spatialanchor.rawcoordinatesystemadjusted" target="_blank">RawCoordinateSystemAdjusted</a> abilitano queste personalizzazioni.
 
 ## <a name="respond-to-locatability-changed-events"></a>Risposta agli eventi locatability modificati
 

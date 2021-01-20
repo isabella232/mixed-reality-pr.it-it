@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 07/11/2019
 ms.topic: article
 keywords: Note sulla versione, versione, Windows 10, Build, 19h1, sistema operativo, 2019 maggio
-ms.openlocfilehash: fd5688b7c68e0a16873ff153f3c158a3575e02e9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b8df518b03544bd2473ff67030ed008e1a2bc26e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007121"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581507"
 ---
 # <a name="release-notes---may-2019"></a>Note sulla versione-2019 maggio
 
@@ -50,7 +50,7 @@ Si sta verificando un problema che richiede la connessione di un monitor al PC p
 
 ## <a name="provide-feedback-and-report-issues"></a>Inviare commenti e suggerimenti e segnalare problemi
 
-Usare l' [App Hub di feedback nel PC Windows 10](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) o il dispositivo HoloLens per inviare commenti e suggerimenti e segnalare problemi. L'uso dell'hub feedback garantisce che tutte le informazioni di diagnostica necessarie siano incluse per aiutare i nostri tecnici a eseguire rapidamente il debug e risolvere il problema.
+Usare l' [App Hub di feedback nel PC Windows 10](/windows/mixed-reality/give-us-feedback) o il dispositivo HoloLens per inviare commenti e suggerimenti e segnalare problemi. L'uso dell'hub feedback garantisce che tutte le informazioni di diagnostica necessarie siano incluse per aiutare i nostri tecnici a eseguire rapidamente il debug e risolvere il problema.
 
 >[!NOTE]
 >Assicurarsi di accettare il prompt che chiede se si vuole che l'hub feedback acceda alla cartella documenti (selezionare **Sì** quando richiesto).
@@ -66,8 +66,7 @@ Usare l' [App Hub di feedback nel PC Windows 10](https://docs.microsoft.com/wind
 * [Note sulla versione - marzo 2016](release-notes-march-2016.md)
 
 ## <a name="see-also"></a>Vedere anche
-* [Supporto per cuffie immersive (collegamento esterno)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
+* [Supporto per cuffie immersive (collegamento esterno)](./troubleshooting-windows-mixed-reality.md)
 * [Supporto di HoloLens (collegamento esterno)](https://support.microsoft.com/products/hololens)
-* [Installare gli strumenti](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
+* [Installare gli strumenti](/windows/mixed-reality/develop/install-the-tools)
 * [Invia commenti e suggerimenti] (https://docs.microsoft.com/windows/mixed-reality/give-us-feedback
-

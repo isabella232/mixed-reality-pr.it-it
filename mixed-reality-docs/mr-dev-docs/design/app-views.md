@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: visualizzazione immersiva, visualizzazione 2D, lavagna, app, cuffie per realtà mista, cuffie con realtà mista di Windows, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: a9cd03212fcbb0d7b3d9e4d2b3108e4d09972455
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b6a16fc3b1ac45d74874f37ce44a36d3e144fee8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009631"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580103"
 ---
 # <a name="app-views"></a>Visualizzazioni delle app
 
@@ -24,7 +24,7 @@ Una visualizzazione Immersive offre all'app la possibilità di creare ologrammi 
 ![In una visualizzazione immersiva, gli ologrammi possono essere posizionati in tutto il mondo.](images/designoverview-940px.jpg)<br>
 *In una visualizzazione immersiva, gli ologrammi possono essere posizionati in tutto il mondo*
 
-In [HoloLens](https://docs.microsoft.com/hololens/hololens1-hardware)l'app esegue il rendering degli ologrammi sopra gli ambienti reali dell'utente. In una [serie di cuffie a realtà mista di Windows](../discover/immersive-headset-hardware-details.md), l'utente non può vedere il mondo reale, quindi l'app deve eseguire il rendering di tutti gli elementi visualizzati dall'utente.
+In [HoloLens](/hololens/hololens1-hardware)l'app esegue il rendering degli ologrammi sopra gli ambienti reali dell'utente. In una [serie di cuffie a realtà mista di Windows](../discover/immersive-headset-hardware-details.md), l'utente non può vedere il mondo reale, quindi l'app deve eseguire il rendering di tutti gli elementi visualizzati dall'utente.
 
 La [Home realtà mista di Windows](../discover/navigating-the-windows-mixed-reality-home.md) (inclusi il menu Start e gli ologrammi posizionati intorno all'ambiente) non viene visualizzata in una visualizzazione immersiva. In HoloLens, Cortana inoltra tutte le notifiche di sistema che si verificano durante la visualizzazione di una visualizzazione immersiva, a cui l'utente può rispondere con l'input vocale.
 

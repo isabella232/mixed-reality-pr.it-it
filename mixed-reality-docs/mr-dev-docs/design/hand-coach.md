@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, Coach mano, auricolare immersivo, MRTK, Hands, Hands, aiuto, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 07b42482d9258b4189ef43683370bd951f5c88e8
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 69afe767e01c57535b79575e4f25fabe4a9f6f39
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009161"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582270"
 ---
 # <a name="hand-coach"></a>Coach mano
 
@@ -177,7 +177,7 @@ Una volta soddisfatta l'animazione
 
 * [Interazione-nozioni fondamentali](interaction-fundamentals.md)
 * [Processo di creazione dell'asset](asset-creation-process.md)
-* [Movimenti](../gestures.md)
+* [Movimenti](./interaction-fundamentals.md)
 * [Installare gli strumenti](../develop/install-the-tools.md)
 * [Configurare il progetto Unity](../develop/unity/Configure-Unity-Project.md)
 * [Panoramica dello sviluppo per Unity](../develop/unity/unity-development-overview.md)

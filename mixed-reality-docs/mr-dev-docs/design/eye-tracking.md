@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Rilevamento degli occhi, realtà mista, input, sguardo, calibratura, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, finalità, azioni
-ms.openlocfilehash: ffc9fd172f3e9a1cfd648e3fb431274690c9f190
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: d603e2576856fe48080a1a1f06c1814a78381192
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009601"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582321"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Tracciamento oculare in HoloLens 2
 
@@ -32,7 +32,7 @@ L'API di rilevamento degli occhi è stata progettata con la riservatezza di un u
 </colgroup>
 <tr>
      <td><strong>Funzionalità</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (prima generazione)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (prima generazione)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
 </tr>
@@ -48,7 +48,7 @@ L'API di rilevamento degli occhi è stata progettata con la riservatezza di un u
 
 ## <a name="calibration"></a>Calibrazione 
 
-Per il corretto funzionamento degli occhi, è necessario che ogni utente esamini la [calibrazione degli utenti](../calibration.md) per cui l'utente deve esaminare un set di destinazioni olografiche. In questo modo, il dispositivo può modificare il sistema per un'esperienza di visualizzazione più comoda e di qualità superiore per l'utente e garantire il rilevamento accurato degli occhi allo stesso tempo. 
+Per il corretto funzionamento degli occhi, è necessario che ogni utente esamini la [calibrazione degli utenti](/hololens/hololens-calibration) per cui l'utente deve esaminare un set di destinazioni olografiche. In questo modo, il dispositivo può modificare il sistema per un'esperienza di visualizzazione più comoda e di qualità superiore per l'utente e garantire il rilevamento accurato degli occhi allo stesso tempo. 
 
 Il rilevamento degli occhi dovrebbe funzionare per la maggior parte degli utenti, ma in rari casi non è possibile calibrare correttamente un utente. La calibrazione potrebbe non riuscire per vari motivi, tra cui: 
 * L'utente ha rifiutato in precedenza il processo di calibrazione
@@ -59,13 +59,13 @@ Il rilevamento degli occhi dovrebbe funzionare per la maggior parte degli utenti
 
 Gli sviluppatori devono assicurarsi di fornire un supporto adeguato per gli utenti per i quali i dati di rilevamento degli occhi potrebbero non essere disponibili, che non sono in grado di eseguire correttamente la calibrazione. Sono disponibili raccomandazioni per le soluzioni di fallback nella sezione nella parte inferiore di questa pagina. 
 
-Per altre informazioni sulla calibrazione e su come garantire un'esperienza uniforme, vedere la pagina relativa alla [calibrazione degli utenti](../calibration.md) .
+Per altre informazioni sulla calibrazione e su come garantire un'esperienza uniforme, vedere la pagina relativa alla [calibrazione degli utenti](/hololens/hololens-calibration) .
 
 <br>
 
 ## <a name="available-eye-tracking-data"></a>Dati di rilevamento degli occhi disponibili
 
-Prima di approfondire i casi d'uso specifici per l'input con sguardo a occhio, è opportuno evidenziare brevemente le funzionalità fornite dall'API HoloLens 2 [Eye Tracking](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) . Gli sviluppatori possono accedere a un singolo raggio d'occhio (origine e direzione dello sguardo) a circa _30 fps (30 Hz)_.
+Prima di approfondire i casi d'uso specifici per l'input con sguardo a occhio, è opportuno evidenziare brevemente le funzionalità fornite dall'API HoloLens 2 [Eye Tracking](/uwp/api/windows.perception.people.eyespose) . Gli sviluppatori possono accedere a un singolo raggio d'occhio (origine e direzione dello sguardo) a circa _30 fps (30 Hz)_.
 Per informazioni più dettagliate su come accedere ai dati di rilevamento degli occhi, fare riferimento alle guide per gli sviluppatori per l'uso [degli sguardi in DirectX](../develop/native/gaze-in-directx.md) e [degli sguardi in Unity](https://aka.ms/mrtk-eyes).
 
 Lo sguardo stimato è approssimativamente entro 1,5 gradi nell'angolo visivo intorno alla destinazione effettiva (vedere la figura seguente). Poiché sono previste piccole imprecisioni, gli sviluppatori devono pianificare un certo margine attorno a questo valore con associazione inferiore (ad esempio, 2.0-3.0 gradi possono comportare un'esperienza molto più comoda). In dettaglio di seguito verrà illustrato come gestire la selezione di destinazioni di piccole dimensioni. Per un accurato funzionamento del tracciamento oculare, ogni utente deve essere sottoposto a un'apposita calibrazione. 
@@ -135,8 +135,8 @@ Da un lato, gli occhi si muovono così velocemente che è necessario prestare at
 
 In rari casi, i dati di rilevamento degli occhi potrebbero non essere disponibili.
 Questa condizione può essere dovuta a diversi motivi per i quali i più comuni sono elencati di seguito:
-* Il sistema non è riuscito a [calibrare l'utente](../calibration.md).
-* La [calibrazione](../calibration.md)è stata ignorata dall'utente.    
+* Il sistema non è riuscito a [calibrare l'utente](/hololens/hololens-calibration).
+* La [calibrazione](/hololens/hololens-calibration)è stata ignorata dall'utente.   
 * L'utente è calibrato, ma ha deciso di non concedere all'app l'autorizzazione per l'uso dei dati di rilevamento degli occhi.    
 * L'utente ha occhiali univoci o una condizione oculare che il sistema non supporta ancora. 
 * Fattori esterni che inibiscono la verifica affidabile degli occhi, ad esempio le sbavature sulla visiera HoloLens o sugli occhiali, il sole intenso diretto e le occlusioni a causa dei capelli davanti agli occhi.  
@@ -168,12 +168,10 @@ In questa pagina è stata auspicata una panoramica approfondita per iniziare a c
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Calibrazione](../calibration.md)
+* [Calibrazione](/hololens/hololens-calibration)
 * [Comodità](comfort.md)
 * [Interazione basata su sguardo fisso](eye-gaze-interaction.md)
 * [Eye-sguardi in DirectX](../develop/native/gaze-in-directx.md)
 * [Eye-sguardi in Unity (Toolkit realtà mista)](https://aka.ms/mrtk-eyes)
 * [Sguardo e commit](gaze-and-commit.md)
 * [Input vocale](../out-of-scope/voice-design.md)
-
-

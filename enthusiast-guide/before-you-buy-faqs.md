@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, pre-vendita, ricerca, acquisto, prima dell'acquisto
 appliesto:
 - Windows 10
-ms.openlocfilehash: e9b9254166b3ac4c188531d3651407ecfd853460
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 1f7eaa59a18598d1df2ecef611a9ea7d58e6a36a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725512"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580297"
 ---
 # <a name="before-you-buy-frequently-asked-questions"></a>Prima di acquistare domande frequenti
 
@@ -63,7 +63,7 @@ Altre informazioni sulla realtà mista sono disponibili qui: <https://docs.micro
 
 * **Rilevamento esterno** Oculus, vive e altri usano il rilevamento esterno.  Con il rilevamento esterno, l'auricolare viene monitorato da uno o più dispositivi esterni. Le fotocamere sono compilate in questi dispositivi esterni, posizionati intorno all'ambiente e vengono usati per determinare la posizione dell'auricolare in base all'ambiente.
 
-Scopri di più sul [rilevamento interno](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system).
+Scopri di più sul [rilevamento interno](./tracking-system.md).
 
 ### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>Il rilevamento interno dei controller di movimento ha un effetto sul gioco a causa della fotocamera FOV
 
@@ -82,7 +82,7 @@ Scopri di più sul [rilevamento interno](https://docs.microsoft.com/windows/mixe
 <tr>
 <th style="width:25%"> Cuffie </th>
 <th style="width:15%"> Soluzione </th>
-<th style="width:10%"> Schermo </th>
+<th style="width:10%"> Visualizza </th>
 <th style="width:10%"> Frequenza di aggiornamento </th>
 <th style="width:10%"> FOV </th>
 <th style="width:15%"> Audio </th>
@@ -99,7 +99,7 @@ Scopri di più sul [rilevamento interno](https://docs.microsoft.com/windows/mixe
 <td> Fino a 90 Hz </td>
 <td> 100 ° </td>
 <td> 3,5-mm Jack </td>
-<td> Nessuno </td>
+<td> nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.acer.com/ac/en/US/content/windows-mixed-reality-home">Acer</a> </td>
@@ -125,7 +125,7 @@ Scopri di più sul [rilevamento interno](https://docs.microsoft.com/windows/mixe
 <td> Fino a 90 Hz </td>
 <td> 95 ° </td>
 <td> 3,5-mm Jack </td>
-<td> Nessuno </td>
+<td> nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.asus.com/us/Headset/ASUS-Windows-Mixed-Reality-Headset-HC102/">ASU</a> </td>
@@ -138,7 +138,7 @@ Scopri di più sul [rilevamento interno](https://docs.microsoft.com/windows/mixe
 <td> Fino a 90 Hz </td>
 <td> 105 ° </td>
 <td> 3,5-mm Jack </td>
-<td> Nessuno </td>
+<td> nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.dell.com/en-us/shop/accessories/apd/536-bbbr?~ck=mn">Dell</a> </td>
@@ -151,7 +151,7 @@ Scopri di più sul [rilevamento interno](https://docs.microsoft.com/windows/mixe
 <td> Fino a 90 Hz </td>
 <td> 105 ° </td>
 <td> 3,5-mm Jack </td>
-<td> Nessuno </td>
+<td> nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="http://pr.fujitsu.com/jp/news/2017/10/17.html">Fujitsu</a> </td>
@@ -177,7 +177,7 @@ Scopri di più sul [rilevamento interno](https://docs.microsoft.com/windows/mixe
 <td> Fino a 90 Hz </td>
 <td> 105 ° </td>
 <td> 3,5-mm Jack </td>
-<td> Nessuno </td>
+<td> nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://store.hp.com/us/en/pdp/hp-windows-mixed-reality-headset-vr1000-100">HP</a> </td>
@@ -190,7 +190,7 @@ Scopri di più sul [rilevamento interno](https://docs.microsoft.com/windows/mixe
 <td> Fino a 90 Hz </td>
 <td> 105 ° </td>
 <td> 3,5-mm Jack </td>
-<td> Nessuno </td>
+<td> nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.lenovo.com/us/en/virtual-reality-and-smart-devices/virtual-and-augmented-reality/lenovo-explorer/Lenovo-Explorer/p/G10NREAG0A2">Lenovo</a> </td>
@@ -203,7 +203,7 @@ Scopri di più sul [rilevamento interno](https://docs.microsoft.com/windows/mixe
 <td> Fino a 90 Hz </td>
 <td> 105 ° </td>
 <td> 3,5-mm Jack </td>
-<td> Nessuno </td>
+<td> nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.medion.com/be/shop/monitoren-medion-erazer-mr-x1000-vr-headset-controllers-30023616a1.html">Medion</a> </td>
@@ -216,7 +216,7 @@ Scopri di più sul [rilevamento interno](https://docs.microsoft.com/windows/mixe
 <td> Fino a 90 Hz </td>
 <td> 110 ° </td>
 <td> Integrato </td>
-<td> Nessuno </td>
+<td> nessuno </td>
 <td style="text-align: center;">Meccanico</td>
 <td> Calo 2017 </td>
 <td> <a href="https://www.samsung.com/us/computing/hmd/windows-mixed-reality/xe800zaa-hc1us-xe800zaa-hc1us/?redir=windows%20mixed%20reality">Samsung</a> </td>
@@ -242,7 +242,7 @@ Scopri di più sul [rilevamento interno](https://docs.microsoft.com/windows/mixe
 <td> Fino a 90 Hz </td>
 <td> 105 ° </td>
 <td> 3,5-mm Jack </td>
-<td> Nessuno </td>
+<td> nessuno </td>
 <td style="text-align: center;">Software</td>
 <td> Calo 2017 </td>
 <td> <a href="http://3glasses.com/goods.action?gid=30">3Glasses</a> </td>
@@ -368,7 +368,7 @@ Ai dettagli tecnici elencati sopra viene fatto riferimento dalle specifiche del 
 
 **Risposta rapida:** Sì, la realtà mista di Windows funzionerà anche se non si dispone di molto spazio. È possibile impostare questa impostazione durante l'installazione selezionando l'esperienza "desk-scale".
 
-## <a name="content"></a>Contenuto
+## <a name="content"></a>Content
 
 ### <a name="what-games-and-apps-run-on-windows-mixed-reality"></a>Quali giochi e app vengono eseguiti in realtà mista di Windows?
 

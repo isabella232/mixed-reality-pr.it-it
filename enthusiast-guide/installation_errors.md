@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto tecnico, installazione
 appliesto:
 - Windows 10
-ms.openlocfilehash: 56ead28a5809eadef1797507168b68cbaf79953e
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 056caca0b7e562007178929d4a59c2faeaece450
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726062"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581665"
 ---
 # <a name="installation-errors"></a>Errori di installazione
 
@@ -31,7 +31,7 @@ Per la realtà mista di Windows è necessario un driver di scheda grafica che su
 
 ## <a name="before-we-can-set-up-windows-mixed-reality-your-administrator-will-need-to-enable-it-for-your-organization-learn-more"></a>"Prima di poter configurare la realtà mista di Windows, l'amministratore dovrà abilitarlo per l'organizzazione. Altre informazioni "
 
-È probabile che si tratti di una rete gestita dall'azienda e che l'organizzazione usi Windows Server Update Services (WSUS). Questi e altri criteri che potrebbero bloccare il download. Contattare il reparto IT dell'organizzazione o l'amministratore di sistema per [abilitare la realtà mista di Windows](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality#enable).
+È probabile che si tratti di una rete gestita dall'azienda e che l'organizzazione usi Windows Server Update Services (WSUS). Questi e altri criteri che potrebbero bloccare il download. Contattare il reparto IT dell'organizzazione o l'amministratore di sistema per [abilitare la realtà mista di Windows](/windows/application-management/manage-windows-mixed-reality#enable).
 
 ## <a name="we-couldnt-download-the-mixed-reality-software-or-hang-tight-while-we-do-some-downloading"></a>"Non è stato possibile scaricare il software per realtà mista" o "blocco durante il download"
 

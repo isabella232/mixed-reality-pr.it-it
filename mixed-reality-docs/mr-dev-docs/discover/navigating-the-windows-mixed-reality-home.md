@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Shell, sistema operativo, piattaforma, Cliff House, casa, casa, ambiente, avvio, menu Start, menu Home, pin, app, avvio di app, app, Teleport, sposta, naviga, auricolare realtà mista, cuffia virtuale reale, informazioni sulla realtà virtuale
-ms.openlocfilehash: 06e28c9c1f0f6244f7f502382d61d4740b5fb71f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6b021aff20363f0e3efc1c2675df41ee5819aef6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009691"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582630"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Esplorazione dello spazio iniziale di Windows Mixed Reality
 
@@ -28,7 +28,7 @@ Il menu Start è costituito da:
 * Cortana (su auricolari immersivi, un riquadro iniziale; in HoloLens, nella parte superiore di Start)
 * App aggiunte
 * Pulsante tutte le app (segno più)
-* Pulsanti foto e video per l' [acquisizione di realtà mista](../mixed-reality-capture.md)
+* Pulsanti foto e video per l' [acquisizione di realtà mista](/hololens/holographic-photos-and-videos)
 
 Passare tra le visualizzazioni app bloccate e tutte le app selezionando i pulsanti più o meno. Per aprire il menu Start in HoloLens, usare il movimento Bloom. Su un auricolare immersivo, premere il pulsante Windows sul controller.
 
@@ -40,7 +40,7 @@ Per eseguire l'app, è necessario inserirla nella Home page:
 1. Usare lo [sguardo](../design/gaze-and-commit.md) o il controller per posizionare l'app dove si vuole. In questo modo, le dimensioni e la posizione verranno regolate automaticamente per essere conformi allo spazio in cui viene inserito.
 2. Posizionare l'app usando il tocco di aria (HoloLens) o il pulsante Seleziona (cuffie immersive). Per annullare e ripristinare il menu Start, usare il gesto Bloom o il pulsante Windows.
 
-le [app 2D](../develop/porting-apps/building-2d-apps.md), create per desktop, dispositivi mobili o Xbox possono essere modificate per l'esecuzione come app immersive di realtà mista usando l' [API HolographicSpace](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicspace.aspx). Un'app immersiva porta l'utente fuori dalla casa e in un'esperienza immersiva. Gli utenti possono tornare a casa con il movimento Bloom (HoloLens) o premendo il pulsante Windows sul controller (cuffie immersive).
+le [app 2D](../develop/porting-apps/building-2d-apps.md), create per desktop, dispositivi mobili o Xbox possono essere modificate per l'esecuzione come app immersive di realtà mista usando l' [API HolographicSpace](/uwp/api/Windows.Graphics.Holographic.HolographicSpace). Un'app immersiva porta l'utente fuori dalla casa e in un'esperienza immersiva. Gli utenti possono tornare a casa con il movimento Bloom (HoloLens) o premendo il pulsante Windows sul controller (cuffie immersive).
 
 Le app possono essere avviate anche tramite un'API da app a app o tramite Cortana.
 
@@ -122,7 +122,7 @@ All'interno della Home realtà mista di Windows:
 La realtà mista di Windows include diverse app predefinite, ad esempio:
 * **Microsoft Store** per ottenere app e giochi
 * **Hub di feedback** per inviare commenti e suggerimenti sulle app di sistema e di sistema
-* **Impostazioni** per configurare le impostazioni di sistema (inclusi gli aggiornamenti di [rete](../connecting-to-wi-fi-on-hololens.md) e di sistema)
+* **Impostazioni** per configurare le impostazioni di sistema (inclusi gli aggiornamenti di [rete](/hololens/hololens-network) e di sistema)
 * **Microsoft Edge** per esplorare siti Web
 * **Foto** per visualizzare e condividere foto e video
 * **Calibrazione** (solo HoloLens) per la modifica dell'esperienza HoloLens per l'utente corrente
@@ -138,6 +138,6 @@ La realtà mista di Windows include diverse app predefinite, ad esempio:
 * [Visualizzazioni delle app](../design/app-views.md)
 * [Controller del movimento](../design/motion-controllers.md)
 * [Accessori hardware](hardware-accessories.md)
-* [Considerazioni relative all'ambiente per HoloLens](../environment-considerations-for-hololens.md)
+* [Considerazioni relative all'ambiente per HoloLens](/hololens/hololens-environment-considerations)
 * [Implementazione di launcher di app 3D](../distribute/implementing-3d-app-launchers.md)
 * [Creazione di modelli 3D per l'utilizzo nella Home realtà mista di Windows](../distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)

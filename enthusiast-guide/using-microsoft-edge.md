@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 11/11/2020
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, Home, esplorazione, esplorazione, app, giochi, Microsoft Edge, Chromium, Edge, 360, 360 video, 360 Viewer
-ms.openlocfilehash: d3ed8f95285eefacf43177915d512bfb41730243
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 26691dd3cf1b8e620373ef150de61cd2c7f461db
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725782"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581299"
 ---
 # <a name="windows-mixed-reality-and-the-new-microsoft-edge"></a>Realtà mista di Windows e la nuova Microsoft Edge
 
@@ -48,7 +48,7 @@ Dopo aver eseguito l'aggiornamento cumulativo 2020-01 per Windows 10 versione 19
 
 **Perché si verifica questo problema**
 
-Il supporto per le applicazioni Win32 classiche nella realtà mista di Windows è stato introdotto con l' [aggiornamento 2019 di Windows 10](https://docs.microsoft.com/windows/mixed-reality/release-notes-may-2019). Per abilitare questo supporto, è necessario creare un monitor virtuale per ospitare l'applicazione Win32. Ogni volta che viene avviata una nuova applicazione Win32, è necessario creare un altro monitor virtuale. Sfortunatamente, la creazione di un monitoraggio virtuale è un'attività intensa che può causare un blocco breve della visualizzazione dell'auricolare. I clienti hanno offerto commenti e suggerimenti sull'esperienza di disagio e di disturbo. Grazie a questo feedback, oltre a un maggiore utilizzo delle applicazioni Win32, abbiamo deciso di pre-allocare tre monitoraggi virtuali durante l'avvio della realtà mista di Windows per evitare questa situazione di disturbo e consentire ai clienti di avviare fino a tre applicazioni Win32 simultanee senza dover visualizzare il blocco dello schermo dell'auricolare.
+Il supporto per le applicazioni Win32 classiche nella realtà mista di Windows è stato introdotto con l' [aggiornamento 2019 di Windows 10](/windows/mixed-reality/release-notes-may-2019). Per abilitare questo supporto, è necessario creare un monitor virtuale per ospitare l'applicazione Win32. Ogni volta che viene avviata una nuova applicazione Win32, è necessario creare un altro monitor virtuale. Sfortunatamente, la creazione di un monitoraggio virtuale è un'attività intensa che può causare un blocco breve della visualizzazione dell'auricolare. I clienti hanno offerto commenti e suggerimenti sull'esperienza di disagio e di disturbo. Grazie a questo feedback, oltre a un maggiore utilizzo delle applicazioni Win32, abbiamo deciso di pre-allocare tre monitoraggi virtuali durante l'avvio della realtà mista di Windows per evitare questa situazione di disturbo e consentire ai clienti di avviare fino a tre applicazioni Win32 simultanee senza dover visualizzare il blocco dello schermo dell'auricolare.
 
 **Soluzione alternativa**
 

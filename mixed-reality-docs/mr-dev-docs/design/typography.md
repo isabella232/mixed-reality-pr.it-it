@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, stile, carattere, tipografia, interfaccia utente, UX, testo, auricolare realtà mista, auricolare di realtà mista di Windows, cuffia virtuale reale, HoloLens
-ms.openlocfilehash: 38acc8c0d2c7dbd7bcb192f82bb1bb52838323ac
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 015273c84462e48e145af77421da4131bb650d9e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007651"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580270"
 ---
 # <a name="typography"></a>Tipografia
 
@@ -37,15 +37,15 @@ Contrasto e gerarchia di compilazione utilizzando dimensioni e pesi diversi per 
 
 ### <a name="limit-your-fonts"></a>Limitare i tipi di carattere
 
-Evitare di usare più di due famiglie di caratteri diverse in un unico contesto. Un numero eccessivo di tipi di carattere suddividerà l'armonia e la coerenza dell'esperienza e renderà più difficile l'utilizzo delle informazioni. In HoloLens, poiché le informazioni sono sovrapposte all'ambiente fisico, l'utilizzo di un numero eccessivo di stili dei tipi di carattere comporta un peggioramento dell'esperienza. Segoe UI è il tipo di carattere per tutti i progetti digitali Microsoft. Viene usato in modo coerente nella shell della realtà mista di Windows. È possibile scaricare il file del tipo di carattere Segoe UI dalla [pagina Windows Design Toolkit](https://docs.microsoft.com/windows/uwp/design-downloads/).
+Evitare di usare più di due famiglie di caratteri diverse in un unico contesto. Un numero eccessivo di tipi di carattere suddividerà l'armonia e la coerenza dell'esperienza e renderà più difficile l'utilizzo delle informazioni. In HoloLens, poiché le informazioni sono sovrapposte all'ambiente fisico, l'utilizzo di un numero eccessivo di stili dei tipi di carattere comporta un peggioramento dell'esperienza. Segoe UI è il tipo di carattere per tutti i progetti digitali Microsoft. Viene usato in modo coerente nella shell della realtà mista di Windows. È possibile scaricare il file del tipo di carattere Segoe UI dalla [pagina Windows Design Toolkit](/windows/uwp/design-downloads/).
 
-[Ulteriori informazioni sul carattere tipografico Segoe UI](https://docs.microsoft.com/windows/uwp/design/style/typography)
+[Ulteriori informazioni sul carattere tipografico Segoe UI](/windows/uwp/design/style/typography)
 
 ### <a name="avoid-thin-font-weights"></a>Evitare i pesi del carattere sottile
 
 Evitare di usare i pesi per i tipi di carattere chiaro o Semilight per le dimensioni dei tipi in 42 PT perché i tratti verticali sottili si vibrano e peggiorano la leggibilità. I tipi di carattere moderni con uno spessore del tratto sufficiente funzionano correttamente. Ad esempio, Helvetica e Arial sono leggibili in HoloLens usando pesi regolari o in grassetto.
 
-### <a name="color"></a>Color
+### <a name="color"></a>Colore
 
 In HoloLens, poiché gli ologrammi vengono costruiti con un sistema di luce additiva, il testo bianco è altamente leggibile. È possibile trovare esempi di testo bianco nel menu Start e nella barra dell'app. Anche se il testo bianco funziona bene senza una piastra posteriore in HoloLens, un background fisico complesso potrebbe rendere difficile la lettura del tipo. È consigliabile usare testo bianco su un pannello scuro o colorato per migliorare lo stato attivo dell'utente e ridurre al minimo la distrazione da uno sfondo fisico.
 
@@ -132,4 +132,4 @@ Segoe UI (il tipo di carattere predefinito per Windows) funziona correttamente n
 ## <a name="see-also"></a>Vedere anche
 
 * [Testo in Unity](../develop/unity/text-in-unity.md)
-* [Colore, luce e materiali](../color,-light-and-materials.md)
+* [Colore, luce e materiali](./color-light-and-materials.md)

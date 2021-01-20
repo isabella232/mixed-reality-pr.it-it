@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 2da2524ae09014b990ea4f0301a21d4aac963eb9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 87eb22e600ca2426bdd3fec1fd428c11d9c45313
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008631"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581817"
 ---
 # <a name="windows-mixed-reality-setup-faq"></a>Domande frequenti sulla configurazione di Windows Mixed Reality
 
@@ -28,7 +28,7 @@ Attenersi alla procedura seguente:
 * Riavviare il computer e riprovare. Potrebbe essere necessario ripetere più volte o eseguire lo strumento di risoluzione dei problemi di Windows Update per cancellare gli aggiornamenti in sospeso.
 
 > [!NOTE]
-> * Se si è in una rete gestita dall'organizzazione, rivolgersi all'amministratore. Potrebbe essere necessario abilitare la realtà mista di Windows. Cerchi le istruzioni per professionisti IT? Vedere **[questo articolo](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality)**.
+> * Se si è in una rete gestita dall'organizzazione, rivolgersi all'amministratore. Potrebbe essere necessario abilitare la realtà mista di Windows. Cerchi le istruzioni per professionisti IT? Vedere **[questo articolo](/windows/application-management/manage-windows-mixed-reality)**.
 > * Se la connessione di rete Wi-Fi è impostata su a consumo, impostarla su non a consumo. **[Scopri di più](https://support.microsoft.com/help/4028458)**
 
 ## <a name="i-get-a-message-that-says-something-went-wrong-and-we-couldnt-start-windows-mixed-reality"></a>Viene visualizzato un messaggio che indica che si è verificato un errore e non è stato possibile avviare la realtà mista di Windows.

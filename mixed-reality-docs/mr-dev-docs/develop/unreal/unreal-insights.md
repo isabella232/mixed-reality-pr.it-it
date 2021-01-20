@@ -1,19 +1,19 @@
 ---
-title: Profilatura con informazioni dettagliate non reali
+title: Profilatura con Unreal Insights
 description: Informazioni su come usare Unreal Insights in HoloLens 2.
 author: sajidfarooq
 ms.author: v-hferrone
 ms.date: 12/10/2020
 ms.topic: article
 keywords: Unreal Engine 4, UE4, HoloLens, HoloLens 2, sviluppo, profling, Unreal Insights, documentazione, guide, funzionalità, ologrammi, sviluppo di giochi, cuffie per realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 20e620f147f2cf5ee05073467c8ce7335340d59d
-ms.sourcegitcommit: 53bde413a174712cb9d3794d02d96363a2d599cd
+ms.openlocfilehash: b41d36679adfb35b5cc3561b8d5e7734654e7fb5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97486379"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580829"
 ---
-# <a name="profiling-with-unreal-insights"></a>Profilatura con informazioni dettagliate non reali 
+# <a name="profiling-with-unreal-insights"></a>Profilatura con Unreal Insights 
 
 [Unreal Insights](https://docs.unrealengine.com/TestingAndOptimization/PerformanceAndProfiling/UnrealInsights/Overview/index.html) è un sistema di profilatura che raccoglie, analizza e Visualizza i dati da Unreal Engine. Il sistema di profilatura consente di individuare i colli di bottiglia e le aree di ottimizzazione in cui le prestazioni delle app possono usare un Boost. In genere, si abilitano le informazioni dettagliate non reali direttamente dall'editor, ma per HoloLens 2 è necessario usare la riga di comando.  
 

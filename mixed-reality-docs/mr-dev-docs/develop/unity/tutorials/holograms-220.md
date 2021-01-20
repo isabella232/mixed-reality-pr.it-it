@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, esercitazione, spazio audio, HoloLens, realtà mista Academy, Unity, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale, Windows 10
-ms.openlocfilehash: 043443c0c197e3b606c4845966e0cf60102d0b85
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: da130a5a93ec261d2e767874faa31dbc50d51b12
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678370"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582760"
 ---
 # <a name="mr-spatial-220-spatial-sound"></a>Spaziale MR 220: Audio spaziale
 
 >[!NOTE]
->Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](../../../mr-learning-base-01.md).
+>Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](./mr-learning-base-01.md).
 
 Il [suono spaziale](../../../design/spatial-sound.md) respira la vita negli ologrammi e offre loro la presenza nel nostro mondo. Gli ologrammi sono costituiti da luci e suoni e, se si perde la visione degli ologrammi, il suono spaziale può aiutarti a trovarli. Il suono spaziale non è analogo a quello tipico che è possibile sentire sulla radio, è un suono posizionato nello spazio 3D. Con il suono spaziale è possibile far sembrare gli ologrammi come se fossero dietro di te, accanto a te o persino in testa! In questo corso verrà:
 
@@ -30,7 +30,7 @@ Il [suono spaziale](../../../design/spatial-sound.md) respira la vita negli olog
 
 <table>
 <tr>
-<th>Corso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
+<th>Corso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
 </tr><tr>
 <td>Spaziale MR 220: Audio spaziale</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -512,6 +512,6 @@ Il Sottomondo verrà nascosto e verranno nuovamente visualizzati gli ologrammi n
 
 ## <a name="the-end"></a>La fine
 
-Congratulazioni. A questo punto è stato completato il comportamento di **spatial 220: Spatial**.
+La procedura è stata completata. A questo punto è stato completato il comportamento di **spatial 220: Spatial**.
 
 Ascolta il mondo e fai vivere le tue esperienze con i suoni.

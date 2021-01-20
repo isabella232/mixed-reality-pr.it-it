@@ -6,32 +6,32 @@ ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, Synchronize, ancoraggio spaziale, trasferimento, multiplayer, visualizzazione, scenario, procedura dettagliata, codice di esempio, trasferimento, trasferimento di ancoraggio locale, esportazione di ancoraggio, importazione di ancoraggio
-ms.openlocfilehash: 5007220f480a3093864502e624737e9707bd3952
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 5d539338a25657441ee07acac38a4edd6cd86e58
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009651"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582803"
 ---
 # <a name="local-anchor-transfers-in-directx"></a>Trasferimenti di ancoraggio locali in DirectX
 
-Nei casi in cui non è possibile usare gli <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">ancoraggi spaziali di Azure</a>, i trasferimenti di ancoraggio locali consentono a un dispositivo HoloLens di esportare un ancoraggio per l'importazione da parte di un secondo dispositivo HoloLens.
+Nei casi in cui non è possibile usare gli <a href="/azure/spatial-anchors" target="_blank">ancoraggi spaziali di Azure</a>, i trasferimenti di ancoraggio locali consentono a un dispositivo HoloLens di esportare un ancoraggio per l'importazione da parte di un secondo dispositivo HoloLens.
 
 >[!NOTE]
->I trasferimenti di ancoraggio locali forniscono un richiamo di ancoraggio meno affidabile rispetto agli <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">ancoraggi spaziali di Azure</a>e i dispositivi iOS e Android non sono supportati da questo approccio.
+>I trasferimenti di ancoraggio locali forniscono un richiamo di ancoraggio meno affidabile rispetto agli <a href="/azure/spatial-anchors" target="_blank">ancoraggi spaziali di Azure</a>e i dispositivi iOS e Android non sono supportati da questo approccio.
 
 >[!NOTE]
 >I frammenti di codice in questo articolo illustrano attualmente l'uso di C++/CX anziché C + 17 conforme a C++/WinRT come usato nel [modello di progetto olografico c++](../develop/native/creating-a-holographic-directx-project.md).  I concetti sono equivalenti per un progetto C++/WinRT, anche se sarà necessario tradurre il codice.
 
 ## <a name="transferring-spatial-anchors"></a>Trasferimento di ancoraggi spaziali
 
-È possibile trasferire gli ancoraggi spaziali tra i dispositivi di realtà mista di Windows usando [SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx). Questa API consente di aggregare un ancoraggio con tutti i dati del sensore di supporto necessari per trovare la posizione esatta del mondo e quindi importare il bundle in un altro dispositivo. Dopo che l'app nel secondo dispositivo ha importato l'ancoraggio, ogni app può eseguire il rendering degli ologrammi usando il sistema di coordinate dell'ancoraggio spaziale condiviso, che verrà quindi visualizzato nella stessa posizione del mondo reale.
+È possibile trasferire gli ancoraggi spaziali tra i dispositivi di realtà mista di Windows usando [SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager). Questa API consente di aggregare un ancoraggio con tutti i dati del sensore di supporto necessari per trovare la posizione esatta del mondo e quindi importare il bundle in un altro dispositivo. Dopo che l'app nel secondo dispositivo ha importato l'ancoraggio, ogni app può eseguire il rendering degli ologrammi usando il sistema di coordinate dell'ancoraggio spaziale condiviso, che verrà quindi visualizzato nella stessa posizione del mondo reale.
 
 Si noti che gli ancoraggi spaziali non sono in grado di trasferire tra tipi di dispositivi diversi, ad esempio un ancoraggio spaziale HoloLens potrebbe non essere locatable usando un auricolare immersivo.  Anche gli ancoraggi trasferiti non sono compatibili con i dispositivi iOS o Android.
 
 ## <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>Configurare l'app per l'uso della funzionalità spatialPerception
 
-È necessario concedere all'app l'autorizzazione per usare la funzionalità SpatialPerception prima di poter usare [SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx). Questa operazione è necessaria perché il trasferimento di un ancoraggio spaziale comporta la condivisione delle immagini del sensore raccolte nel tempo in prossimità di tale ancoraggio, che potrebbero includere informazioni riservate.
+È necessario concedere all'app l'autorizzazione per usare la funzionalità SpatialPerception prima di poter usare [SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager). Questa operazione è necessaria perché il trasferimento di un ancoraggio spaziale comporta la condivisione delle immagini del sensore raccolte nel tempo in prossimità di tale ancoraggio, che potrebbero includere informazioni riservate.
 
 Dichiarare questa funzionalità nel file Package. appxmanifest per l'app. Ecco un esempio:
 
@@ -53,11 +53,11 @@ La funzionalità deriva dallo spazio dei nomi **uap2** . Per ottenere l'accesso 
     >
 ```
 
-**Nota:** L'app dovrà richiedere la funzionalità in fase di esecuzione prima di poter accedere alle API di esportazione/importazione SpatialAnchor. Vedere [RequestAccessAsync](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.requestaccessasync.aspx) negli esempi seguenti.
+**Nota:** L'app dovrà richiedere la funzionalità in fase di esecuzione prima di poter accedere alle API di esportazione/importazione SpatialAnchor. Vedere [RequestAccessAsync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) negli esempi seguenti.
 
 ## <a name="serialize-anchor-data-by-exporting-it-with-the-spatialanchortransfermanager"></a>Serializzare i dati di ancoraggio esportandoli con SpatialAnchorTransferManager
 
-Nell'esempio di codice viene inclusa una funzione di supporto per esportare (serializzare) i dati [SpatialAnchor](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx) . Questa API di esportazione serializza tutti gli ancoraggi in una raccolta di coppie chiave-valore che associa stringhe a ancoraggi.
+Nell'esempio di codice viene inclusa una funzione di supporto per esportare (serializzare) i dati [SpatialAnchor](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) . Questa API di esportazione serializza tutti gli ancoraggi in una raccolta di coppie chiave-valore che associa stringhe a ancoraggi.
 
 ```
 // ExportAnchorDataAsync: Exports a byte buffer containing all of the anchors in the given collection.
@@ -274,7 +274,7 @@ Se i dati possono essere importati, si ottiene una visualizzazione mappa delle c
 
 ## <a name="special-considerations"></a>Considerazioni speciali
 
-L'API [TryExportAnchorsAsync](https://msdn.microsoft.com/library/windows/apps/mt592763.aspx) consente l'esportazione di più [SpatialAnchors](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx) nello stesso BLOB binario opaco. Tuttavia, esiste una lieve differenza nei dati che verranno inclusi nel BLOB, a seconda che un singolo SpatialAnchor o più SpatialAnchors vengano esportati in una singola chiamata.
+L'API [TryExportAnchorsAsync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) consente l'esportazione di più [SpatialAnchors](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) nello stesso BLOB binario opaco. Tuttavia, esiste una lieve differenza nei dati che verranno inclusi nel BLOB, a seconda che un singolo SpatialAnchor o più SpatialAnchors vengano esportati in una singola chiamata.
 
 ### <a name="export-of-a-single-spatialanchor"></a>Esportazione di un singolo SpatialAnchor
 
@@ -675,6 +675,6 @@ void SampleAnchorTcpClient::HandleException(Exception^ exception)
 Ecco fatto! A questo punto, è necessario disporre di informazioni sufficienti per provare a individuare gli ancoraggi ricevuti sulla rete. Anche in questo caso, si noti che il client deve disporre di un numero sufficiente di dati di rilevamento visivi per lo spazio per individuare correttamente l'ancoraggio. Se non funziona immediatamente, provare a spostarsi per un po'. Se ancora non funziona, fare in modo che il server invii più ancoraggi e usare le comunicazioni di rete per concordare su uno che funzioni per il client. È possibile provare a eseguire questa operazione scaricando HolographicSpatialAnchorTransferSample, configurando gli indirizzi IP del client e del server e distribuendo il server a dispositivi HoloLens client e server.
 
 ## <a name="see-also"></a>Vedere anche
-* [PPL (Parallel Patterns Library)](https://msdn.microsoft.com/library/dd492418.aspx)
-* [Windows. Networking. StreamSocket](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocket.aspx)
-* [Windows. Networking. StreamSocketListener](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocketlistener.aspx)
+* [PPL (Parallel Patterns Library)](/cpp/parallel/concrt/parallel-patterns-library-ppl)
+* [Windows. Networking. StreamSocket](/uwp/api/Windows.Networking.Sockets.StreamSocket)
+* [Windows. Networking. StreamSocketListener](/uwp/api/Windows.Networking.Sockets.StreamSocketListener)
