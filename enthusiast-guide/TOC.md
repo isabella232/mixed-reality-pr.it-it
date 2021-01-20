@@ -44,7 +44,7 @@
 ### [Salute, sicurezza e comfort con il visore VR immersive](wmr-health-safety-comfort.md)
 ### [Panoramica e cronologia delle versioni del software Realtà mista](mixed-reality-software.md)
 ### [Funzionamento del tracciamento dall'interno verso l'esterno](tracking-system.md)
-### [Controller HP Reverb G2 in Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-### [Controller HP Reverb G2 in Unreal](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+### [Controller HP Reverb G2 in Unity](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+### [Controller HP Reverb G2 in Unreal](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 
 ## [Guida per l'invio di contributi](contributing.md)
