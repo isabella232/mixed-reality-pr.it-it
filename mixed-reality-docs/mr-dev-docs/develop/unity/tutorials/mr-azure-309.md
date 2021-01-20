@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realtà mista, Accademia, Unity, esercitazione, API, Application Insights, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: d663da0e3a0d00532669a122dc95f2089bf08712
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5d599e7c3c6f887675bf010a10fb8841e80143db
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679470"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582959"
 ---
 # <a name="mr-and-azure-309-application-insights"></a>MR e Azure 309: Application Insights
 
@@ -40,7 +40,7 @@ Questo corso spiegherà come ottenere i risultati dal servizio Application Insig
 
 <table>
 <tr>
-<th>Corso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
+<th>Corso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
 </tr><tr>
 <td> MR e Azure 309: Application Insights</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -61,7 +61,7 @@ Per questo corso è consigliabile usare i componenti hardware e software seguent
 - [Windows 10 SDK più recente](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Un [headset di Windows misto reality immersiv (VR)](../../../discover/immersive-headset-hardware-details.md) o [Microsoft HoloLens](../../../hololens-hardware-details.md) con la modalità di sviluppo abilitata
+- Un [headset di Windows misto reality immersiv (VR)](../../../discover/immersive-headset-hardware-details.md) o [Microsoft HoloLens](/hololens/hololens1-hardware) con la modalità di sviluppo abilitata
 - Un set di cuffie con un microfono incorporato (se la cuffia non dispone di un MIC e di altoparlanti predefiniti)
 - Accesso a Internet per il programma di installazione di Azure e Application Insights il recupero dei dati
 
@@ -102,13 +102,13 @@ Per usare *Application Insights*, è necessario creare e configurare un servizio
 
     4.  Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. Si consiglia di lasciare tutti i servizi di Azure associati a un singolo progetto (ad esempio questi corsi) in un gruppo di risorse comune).
 
-        > Per altre informazioni sui gruppi di risorse di Azure, [vedere l'articolo relativo al gruppo di risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Per altre informazioni sui gruppi di risorse di Azure, [vedere l'articolo relativo al gruppo di risorse](/azure/azure-resource-manager/resource-group-portal).
 
     5.  Selezionare un **percorso**.
 
     6.  Sarà inoltre necessario confermare di aver compreso i termini e le condizioni applicati a questo servizio.
 
-    7.  Selezionare **Crea**.
+    7.  Selezionare **Create** (Crea).
 
         ![Portale di Azure](images/AzureLabs-Lab309-03.png)
 
@@ -337,15 +337,15 @@ Verranno ora create alcune forme di base per la scena, con cui l'utente può int
 
 8.  Fare clic con il pulsante destro del mouse in un'area vuota nel *Pannello gerarchia*, quindi su **oggetto 3D, capsula**.
 
-    -  Con la **capsula** selezionata, modificare la **Transform** *posizione* di trasformazione in: **-10, 1, 0**.
+    -  Con la **capsula** selezionata, modificare la  *posizione* di trasformazione in: **-10, 1, 0**.
 
 9.  Fare clic con il pulsante destro del mouse in un'area vuota nel *Pannello gerarchia*, quindi su **oggetto 3D, cubo**.
 
-    -  Con il **cubo** selezionato, modificare la **Transform** *posizione* di trasformazione in: **0, 0, 10**.
+    -  Con il **cubo** selezionato, modificare la  *posizione* di trasformazione in: **0, 0, 10**.
 
 10. Fare clic con il pulsante destro del mouse in un'area vuota nel *Pannello gerarchia*, quindi su **oggetto 3D, sfera**.
 
-    -  Con la **sfera** selezionata, modificare la **Transform** *posizione* di trasformazione in: **10, 0, 0**.
+    -  Con la **sfera** selezionata, modificare la  *posizione* di trasformazione in: **10, 0, 0**.
 
     ![Configurare gli oggetti nella scena Unity](images/AzureLabs-Lab309-40.png)
 
@@ -1207,7 +1207,7 @@ In questo capitolo è necessario inserire lo script di **spostamento** sull' **e
 
 Tutti gli elementi necessari per la sezione Unity di questo progetto sono stati completati, quindi è giunto il momento di compilarli da Unity.
 
-1.  Passare a **impostazioni di compilazione**(**File**  >  **impostazioni di compilazione** file).
+1.  Passare a **impostazioni di compilazione**(  >  **impostazioni di compilazione** file).
 
 2.  Nella finestra **impostazioni di compilazione** fare clic su **Compila**.
 
@@ -1281,4 +1281,3 @@ Provare a generare, anziché creare manualmente gli oggetti ObjectInScene e impo
 **Esercizio 2**
 
 Ordinare i risultati del Application Insights in base all'ora, in modo da ottenere i dati più rilevanti e implementare tali dati sensibili all'ora nell'applicazione.
-

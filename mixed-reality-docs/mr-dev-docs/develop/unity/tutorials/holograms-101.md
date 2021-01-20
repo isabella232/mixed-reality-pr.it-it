@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: realtà mista, realtà mista di Windows, HoloLens, ologramma, Accademia, esercitazione, HoloLens, Accademia realtà mista, Unity, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale, Windows 10
-ms.openlocfilehash: f2725db17a2991b956c777ee7106b7f094582f77
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4ca16542060e1cee746ba5095a7bf68ca8136267
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677200"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583710"
 ---
 # <a name="mr-basics-101-complete-project-with-device"></a>Nozioni di base MR 101: Progetto completo con dispositivo
 
@@ -32,7 +32,7 @@ Il completamento dell'esercitazione richiede circa 1 ora.
 
 <table>
 <tr>
-<th>Corso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
+<th>Corso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
 </tr><tr>
 <td>Nozioni di base MR 101: Progetto completo con dispositivo</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>

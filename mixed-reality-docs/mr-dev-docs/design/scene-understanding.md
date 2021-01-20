@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: Comprensione della scena, mapping spaziale, realtà mista di Windows, Unity, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, occlusione, SDK
-ms.openlocfilehash: c4485c5501300d6ca629f4e587fde1f88eea7ea5
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 1458ca9e70a52913ae150c58393c3e030e2c1add
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008871"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583336"
 ---
 # <a name="scene-understanding"></a>Informazioni sulle scene
 
@@ -56,7 +56,7 @@ Per informazioni dettagliate sullo sviluppo con la comprensione della scena, ved
     </colgroup>
     <tr>
         <td><strong>Funzionalità</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (prima generazione)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (prima generazione)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
     </tr>
@@ -111,7 +111,7 @@ Se i requisiti possono tollerare un aumento della latenza della comprensione del
 
 La comprensione della scena genera maglie stagne che compongono lo spazio con la semantica, in particolare per rispondere a molte limitazioni per la fisica che i mesh di mapping spaziale impongono. Le strutture stagne assicurano che i cast dei raggi fisici vengano sempre raggiunti e la scomposizione semantica consente la generazione più semplice di mesh NAV per la navigazione interna. Come descritto nella sezione relativa all' [occlusione](#occlusion), la creazione di una scena con EnableSceneObjectMeshes e EnableWorldMesh produrrà la mesh più fisicamente completa possibile. La proprietà stagne della mesh dell'ambiente impedisce che gli hit test riscontrino le superfici. I dati di rete garantiscono che la fisica interagisca con tutti gli oggetti nella scena e non solo con la struttura della stanza.
 
-### <a name="navigation"></a>Navigazione
+### <a name="navigation"></a>Spostamento
 
 Le mesh planari decomposte dalla classe semantica sono costrutti ideali per la pianificazione della navigazione e del percorso, semplificando molti dei problemi descritti nella panoramica dello [spostamento del mapping spaziale](spatial-mapping.md#navigation) . Gli oggetti SceneMesh calcolati nella scena sono decomposti dal tipo di superficie, assicurando che la generazione della mesh NAV sia limitata alle superfici che possono essere esaminate. A causa della semplicità, la generazione della mesh NAV dinamica nei motori 3D, ad esempio Unity, è raggiungibile a seconda dei requisiti in tempo reale.
 

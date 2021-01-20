@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, prestazioni, ottimizzazione, CPU, GPU
-ms.openlocfilehash: ff3db5d49ddab13a20c4c32de8e5640fff4f0d81
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 68aae6408a59b197227ab8cd9042e11f8a255d10
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008471"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583081"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>Informazioni sulle prestazioni per la realtà mista
 
@@ -21,7 +21,7 @@ Di seguito sono elencati i valori di framerate a prestazioni per ogni piattaform
 
 | Piattaforma | Frequenza fotogrammi di destinazione |
 |----------|-------------------|
-| [HoloLens](../../hololens-hardware-details.md) | 60 FPS |
+| [HoloLens](/hololens/hololens1-hardware) | 60 FPS |
 | [Windows reality Ultra PC](../../discover/immersive-headset-hardware-details.md) | 90 FPS |
 | [PC con realtà mista di Windows](../../discover/immersive-headset-hardware-details.md) | 60 FPS |
 
@@ -46,7 +46,7 @@ Sono disponibili molti strumenti che consentono di comprendere il profilo delle 
 
 Di seguito sono riportati alcuni strumenti comuni che consentono di raccogliere informazioni di profilatura approfondite per l'applicazione:
 - [Analizzatori prestazioni grafica Intel](https://software.intel.com/gpa)
-- [Debugger grafica di Visual Studio](https://docs.microsoft.com/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)
+- [Debugger grafica di Visual Studio](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)
 - [Profiler Unity](https://docs.unity3d.com/Manual/Profiler.html)
 - [Debugger frame Unity](https://docs.unity3d.com/Manual/FrameDebugger.html)
 
@@ -100,7 +100,7 @@ La velocità di riempimento si concentra sulla riduzione del numero di operazion
 
 #### <a name="reduce-polygon-count"></a>Ridurre il numero di poligoni
 
-Il numero di poligoni più elevati comporta un numero maggiore di operazioni per la GPU, quindi la [riduzione del numero di poligoni](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets) nella scena riduce il tempo di rendering. Esistono altri fattori che rendono l'ombreggiatura costosa, ma il conteggio dei poligoni è la metrica più semplice per determinare la quantità di lavoro necessaria per il rendering di una scena.
+Il numero di poligoni più elevati comporta un numero maggiore di operazioni per la GPU, quindi la [riduzione del numero di poligoni](/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets) nella scena riduce il tempo di rendering. Esistono altri fattori che rendono l'ombreggiatura costosa, ma il conteggio dei poligoni è la metrica più semplice per determinare la quantità di lavoro necessaria per il rendering di una scena.
 
 #### <a name="limit-overdraw"></a>Limitare le sovrapposizioni
 
@@ -139,6 +139,5 @@ Il pool di oggetti è una tecnica comune per ridurre i costi delle allocazioni e
 ## <a name="see-also"></a>Vedere anche
 - [Consigli sulle prestazioni per Unity](../unity/performance-recommendations-for-unity.md)
 - [Impostazioni consigliate per Unity](../unity/recommended-settings-for-unity.md)
-- [Ottimizzare i modelli 3D](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
-- [Procedure consigliate per la conversione e l'ottimizzazione di modelli 3D in tempo reale](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/best-practices)
-
+- [Ottimizzare i modelli 3D](/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
+- [Procedure consigliate per la conversione e l'ottimizzazione di modelli 3D in tempo reale](/dynamics365/mixed-reality/import-tool/best-practices)

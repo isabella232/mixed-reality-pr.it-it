@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
 keywords: Azure, realtà mista, Academy, Edge, Internet delle cose, esercitazione, API, notifiche, funzioni, tabelle, hololens, immersive, VR, Internet delle cose, macchine virtuali, Ubuntu, Python, Windows 10, Visual Studio
-ms.openlocfilehash: 3c01c7351ee284b72a15fd7d5bdd3205fec91e49
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f23a9bf5bcdb0868ef9b0e6f77fbdb7a15dfdce1
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009301"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582815"
 ---
 # <a name="mr-and-azure-313-iot-hub-service"></a>MR e Azure 313: Servizio Hub IoT
 
@@ -39,9 +39,9 @@ I servizi che si utilizzeranno includono:
 
 - **Azure container Registry** è un servizio di Microsoft Azure che consente agli sviluppatori di archiviare le immagini del contenitore per diversi tipi di contenitori. Per altre informazioni, visitare la [pagina del **servizio container Registry di Azure**](https://azure.microsoft.com/services/container-registry/).
 
-- **Azure app per le funzioni** è un servizio Microsoft Azure, che consente agli sviluppatori di eseguire piccole porzioni di codice, "funzioni", in Azure. Questo consente di delegare il lavoro al cloud, anziché l'applicazione locale, che può avere molti vantaggi. **Funzioni di Azure** supporta diversi linguaggi di sviluppo, tra cui C \# , F \# , Node.js, Java e php. Per altre informazioni, visitare la [pagina **funzioni di Azure**](https://docs.microsoft.com/azure/azure-functions/functions-overview).
+- **Azure app per le funzioni** è un servizio Microsoft Azure, che consente agli sviluppatori di eseguire piccole porzioni di codice, "funzioni", in Azure. Questo consente di delegare il lavoro al cloud, anziché l'applicazione locale, che può avere molti vantaggi. **Funzioni di Azure** supporta diversi linguaggi di sviluppo, tra cui C \# , F \# , Node.js, Java e php. Per altre informazioni, visitare la [pagina **funzioni di Azure**](/azure/azure-functions/functions-overview).
 
-- **Archiviazione di Azure: tabelle** è un servizio Microsoft Azure, che consente agli sviluppatori di archiviare dati strutturati e non SQL nel cloud, rendendoli facilmente accessibili ovunque. Il servizio presenta una progettazione senza schema, che consente l'evoluzione delle tabelle in base alle esigenze e pertanto è molto flessibile. Per altre informazioni, visita la [pagina delle **tabelle di Azure**](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview)
+- **Archiviazione di Azure: tabelle** è un servizio Microsoft Azure, che consente agli sviluppatori di archiviare dati strutturati e non SQL nel cloud, rendendoli facilmente accessibili ovunque. Il servizio presenta una progettazione senza schema, che consente l'evoluzione delle tabelle in base alle esigenze e pertanto è molto flessibile. Per altre informazioni, visita la [pagina delle **tabelle di Azure**](/azure/cosmos-db/table-storage-overview)
 
 Questo corso ti insegnerà come configurare e usare il servizio hub Internet delle cose e quindi visualizzare una risposta fornita da un dispositivo. Sarà quindi necessario applicare questi concetti a una configurazione del servizio Hub delle cose personalizzate, che può essere compilata.
 
@@ -49,7 +49,7 @@ Questo corso ti insegnerà come configurare e usare il servizio hub Internet del
 
 <table>
 <tr>
-<th>Corso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
+<th>Corso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
 </tr><tr>
 <td> MR e Azure 313: Servizio Hub IoT</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -57,7 +57,7 @@ Questo corso ti insegnerà come configurare e usare il servizio hub Internet del
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Per i prerequisiti più aggiornati per lo sviluppo con realtà mista, tra cui con Microsoft HoloLens, vedere l'articolo [installare gli strumenti](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) .
+Per i prerequisiti più aggiornati per lo sviluppo con realtà mista, tra cui con Microsoft HoloLens, vedere l'articolo [installare gli strumenti](/windows/mixed-reality/install-the-tools) .
 
 > [!NOTE]
 > Questa esercitazione è progettata per gli sviluppatori che hanno esperienza di base con Python. Tenere inoltre presente che i prerequisiti e le istruzioni scritte in questo documento rappresentano gli elementi testati e verificati al momento della stesura (luglio 2018). È possibile utilizzare il software più recente, come indicato nell'articolo [installare gli strumenti](../../install-the-tools.md) , ma non si presuppone che le informazioni in questo corso corrispondano perfettamente a quelle disponibili nel software più recente rispetto a quanto indicato di seguito.
@@ -81,17 +81,17 @@ Sono necessari i componenti hardware e software seguenti:
 
 ### <a name="before-you-start"></a>Prima di iniziare
 
-1. Configurare e testare il HoloLens. Se è necessario supporto per la configurazione di HoloLens, [vedere l'articolo relativo alla configurazione di HoloLens](https://docs.microsoft.com/hololens/hololens-setup).
+1. Configurare e testare il HoloLens. Se è necessario supporto per la configurazione di HoloLens, [vedere l'articolo relativo alla configurazione di HoloLens](/hololens/hololens-setup).
 2. Quando si inizia a sviluppare una nuova app HoloLens, è consigliabile eseguire la **taratura** e l' **ottimizzazione dei sensori** , a volte può essere utile per eseguire queste attività per ogni utente.
 
-Per informazioni sulla calibrazione, seguire questo [collegamento all'articolo relativo alla calibrazione di HoloLens](../../../calibration.md#hololens-2).
+Per informazioni sulla calibrazione, seguire questo [collegamento all'articolo relativo alla calibrazione di HoloLens](/hololens/hololens-calibration#hololens-2).
 
-Per informazioni sull'ottimizzazione dei sensori, seguire questo [collegamento all'articolo relativo all'ottimizzazione del sensore HoloLens](../../../sensor-tuning.md).
+Per informazioni sull'ottimizzazione dei sensori, seguire questo [collegamento all'articolo relativo all'ottimizzazione del sensore HoloLens](/hololens/hololens-updates).
 
 3. Configurare la **macchina virtuale Ubuntu** con **Hyper-V**. Le risorse seguenti consentiranno di semplificare il processo.
     1.  Per prima cosa, seguire questo collegamento per [scaricare l'immagine ISO 16.04.4 LTS (xenial Xerus) di Ubuntu](https://au.releases.ubuntu.com/16.04/). Selezionare l' **immagine del desktop di 64 bit per PC (amd64)**.
-    2.  Verificare che **Hyper-V** sia abilitato nel computer Windows 10. È possibile seguire questo collegamento per istruzioni sull' [installazione e l'abilitazione di Hyper-V in Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).
-    3.  Avviare Hyper-V e creare una nuova macchina virtuale Ubuntu. È possibile seguire questo collegamento per una [Guida dettagliata su come creare una macchina virtuale con Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine). Quando viene richiesto di **installare un sistema operativo da un file di immagine di avvio**, selezionare l'immagine ISO di **Ubuntu** scaricata in precedenza.
+    2.  Verificare che **Hyper-V** sia abilitato nel computer Windows 10. È possibile seguire questo collegamento per istruzioni sull' [installazione e l'abilitazione di Hyper-V in Windows 10](/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).
+    3.  Avviare Hyper-V e creare una nuova macchina virtuale Ubuntu. È possibile seguire questo collegamento per una [Guida dettagliata su come creare una macchina virtuale con Hyper-V](/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine). Quando viene richiesto di **installare un sistema operativo da un file di immagine di avvio**, selezionare l'immagine ISO di **Ubuntu** scaricata in precedenza.
 
     > [!NOTE]
     > Non è consigliabile usare la **creazione rapida di Hyper-V** .  
@@ -186,7 +186,7 @@ A questo punto si inizierà la creazione e la configurazione del **servizio Hub*
 
     1. Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. Si consiglia di lasciare tutti i servizi di Azure associati a un singolo progetto (ad esempio questi corsi) in un gruppo di risorse comune).
 
-        > Per altre informazioni sui gruppi di risorse di Azure, seguire questo collegamento per informazioni [su come gestire un gruppo di risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Per altre informazioni sui gruppi di risorse di Azure, seguire questo collegamento per informazioni [su come gestire un gruppo di risorse](/azure/azure-resource-manager/resource-group-portal).
 
 
     2. Selezionare un **percorso** appropriato (usare la stessa posizione in tutti i servizi creati in questo corso).
@@ -382,7 +382,7 @@ A questo punto è possibile passare alla configurazione del dispositivo **che es
     >1. Riavviare VS Code e/o il computer.
     >2. Potrebbe essere necessario passare il **terminale vs code** a quello usato per installare Python, ad esempio **PowerShell** (soprattutto se l'ambiente Python è già installato nel computer). Con il terminale aperto è possibile trovare il menu a discesa sul lato destro del terminale.
      ![Creare il contenitore](images/AzureLabs-Lab313-24b.png) 
-    >3. Verificare che il percorso di installazione di **Python** venga aggiunto come **variabile di ambiente** nel computer. Tagliatore deve far parte dello stesso percorso. [Per ulteriori informazioni sulle variabili di ambiente](https://msdn.microsoft.com/library/windows/desktop/ms682653(v=vs.85).aspx), seguire questo collegamento. 
+    >3. Verificare che il percorso di installazione di **Python** venga aggiunto come **variabile di ambiente** nel computer. Tagliatore deve far parte dello stesso percorso. [Per ulteriori informazioni sulle variabili di ambiente](/windows/win32/procthread/environment-variables), seguire questo collegamento. 
 
 7. Al termine dell'installazione di **tagliatore** , è necessario riavviare il computer, in modo che **tagliatore** venga riconosciuto come comando nell'ambiente del sistema.
 
@@ -870,7 +870,7 @@ Tornare al portale di Azure, in cui si creerà un servizio tabelle di Azure crea
 
     9. Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. Si consiglia di lasciare tutti i servizi di Azure associati a un singolo progetto (ad esempio questi corsi) in un gruppo di risorse comune).
 
-        > Per altre informazioni sui gruppi di risorse di Azure, seguire questo collegamento per informazioni [su come gestire un gruppo di risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Per altre informazioni sui gruppi di risorse di Azure, seguire questo collegamento per informazioni [su come gestire un gruppo di risorse](/azure/azure-resource-manager/resource-group-portal).
 
     10. Lasciare le **reti virtuali** **disabilitate**, se questa è un'opzione.
 
@@ -1011,7 +1011,7 @@ In primo luogo, è necessario creare un file che consentirà alla funzione di Az
 
     4. Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. Si consiglia di lasciare tutti i servizi di Azure associati a un singolo progetto (ad esempio questi corsi) in un gruppo di risorse comune).
 
-        > Per altre informazioni sui gruppi di risorse di Azure, seguire questo collegamento per informazioni [su come gestire un gruppo di risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Per altre informazioni sui gruppi di risorse di Azure, seguire questo collegamento per informazioni [su come gestire un gruppo di risorse](/azure/azure-resource-manager/resource-group-portal).
 
     5. Per **sistema operativo**, fare clic su Windows, che corrisponde alla piattaforma desiderata.
 

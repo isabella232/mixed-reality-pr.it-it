@@ -5,12 +5,12 @@ author: mattwojo
 ms.author: mattwoj
 ms.date: 01/11/2021
 ms.topic: article
-ms.openlocfilehash: 8add6413b0ff4bb32c15d1fce10977397aa33ba1
-ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
+ms.openlocfilehash: f60179c35f6103c4771ea2777e05829bfb7a8ce4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98108854"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583046"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>Contributo alla documentazione per sviluppatori di realtà mista
 
@@ -24,7 +24,7 @@ Questa pagina illustra i passaggi e le linee guida di base per contribuire e i c
 
 | Nome del repository | URL |
 | --- | --- |
-| Realtà mista | [MicrosoftDocs/Mixed-Reality](https://docs.microsoft.com/windows/mixed-reality) |
+| Realtà mista | [MicrosoftDocs/Mixed-Reality](/windows/mixed-reality) |
 | Guida per gli appassionati di VR | [MicrosoftDocs/mixed-Real/appassionati-Guida](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 | HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
 
@@ -131,13 +131,13 @@ Le risorse seguenti consentiranno di apprendere come modificare la documentazion
 
 - [Informazioni di base su Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Poster di riferimento Markdown-at-Glance](images/MarkdownPoster.pdf)
-- [Risorse aggiuntive per la scrittura di Markdown per docs.microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [Risorse aggiuntive per la scrittura di Markdown per docs.microsoft.com](/contribute/how-to-write-use-markdown)
 
 ### <a name="adding-tables"></a>Aggiunta di tabelle
 
 A causa del modo in cui le tabelle docs.microsoft.com stili, non avranno bordi o stili personalizzati, anche se si prova a usare CSS inline. Sembra funzionare per un breve periodo di tempo, ma alla fine la piattaforma eliminerà lo stile dalla tabella. Pianificare in anticipo e semplificare le tabelle. [Ecco un sito che semplifica la semplicità delle tabelle Markdown](https://www.tablesgenerator.com/markdown_tables).
 
-L' [estensione docs Markdown per Visual Studio Code](https://docs.microsoft.com/teamblog/docs-extension) rende inoltre semplice la generazione di tabelle se si usa [Visual Studio Code (vedere di seguito)](#using-visual-studio-code) per modificare la documentazione.
+L' [estensione docs Markdown per Visual Studio Code](/teamblog/docs-extension) rende inoltre semplice la generazione di tabelle se si usa [Visual Studio Code (vedere di seguito)](#using-visual-studio-code) per modificare la documentazione.
 
 ### <a name="adding-images"></a>Aggiunta di immagini
 

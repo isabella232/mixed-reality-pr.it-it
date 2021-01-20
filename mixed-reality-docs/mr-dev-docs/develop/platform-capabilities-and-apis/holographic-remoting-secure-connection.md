@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicazione remota, comunicazione remota olografica, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale, sicurezza, autenticazione, da server a client
-ms.openlocfilehash: 0881238bfca199958802598a3e1829a9de0d8e5b
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6b8c26bfa32661a180f1f58acc5c4aa13529f3bb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006481"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583839"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Abilitazione della sicurezza della connessione per la comunicazione remota olografica
 
@@ -97,7 +97,7 @@ Un segreto condiviso non sarà sufficiente per coprire il caso d'uso. È invece 
 * Il client invia questo token al server tramite la comunicazione remota olografica
 * Il server convalida il token del client rispetto al provider di identità
 
-Un esempio di provider di identità è la [piattaforma di identità Microsoft](https://docs.microsoft.com/azure/active-directory/develop/).
+Un esempio di provider di identità è la [piattaforma di identità Microsoft](/azure/active-directory/develop/).
 
 Come nel caso di utilizzo precedente, assicurarsi che questi token non vengano inviati tramite canali non protetti o altrimenti esposti.
 
@@ -115,7 +115,7 @@ Per queste chiamate è necessario fornire implementazioni di determinate interfa
 Tutte le interfacce dispongono di una funzione che richiede di eseguire un'azione, che riceve un oggetto callback come parametro. Utilizzando questo oggetto, è possibile implementare facilmente la gestione asincrona della richiesta. Mantiene un riferimento a questo oggetto e chiama la funzione di completamento quando l'azione asincrona è completa. La funzione di completamento può essere chiamata da qualsiasi thread.
 
 >[!TIP]
->L'implementazione di interfacce WinRT può essere eseguita facilmente con C++/WinRT. Il capitolo [API autore con C++/WinRT](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/author-apis) descrive in modo dettagliato questo aspetto.
+>L'implementazione di interfacce WinRT può essere eseguita facilmente con C++/WinRT. Il capitolo [API autore con C++/WinRT](//windows/uwp/cpp-and-winrt-apis/author-apis) descrive in modo dettagliato questo aspetto.
 
 >[!IMPORTANT]
 >Il contenuto del `build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl` pacchetto NuGet contiene la documentazione dettagliata per l'API relativa alle connessioni protette.
@@ -193,5 +193,5 @@ Questa API è simile all'API basata su IDL descritta in [implementazione della s
 * [Scrittura di un'app remota di comunicazione remota olografica usando le API di OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Scrivere un'app lettore Holographic Remoting personalizzata](holographic-remoting-create-player.md)
 * [Limitazioni e risoluzione dei problemi di comunicazione remota olografica](holographic-remoting-troubleshooting.md)
-* [Condizioni di licenza software per Holographic Remoting](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Condizioni di licenza software per Holographic Remoting](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Informativa sulla privacy di Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

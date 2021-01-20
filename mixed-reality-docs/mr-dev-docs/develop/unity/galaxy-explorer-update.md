@@ -6,16 +6,16 @@ ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
 keywords: Galaxy Explorer, case study, Project, Sample, MRTK, Mixed Reality Toolkit, Unity, app di esempio, app di esempio, open source, Microsoft Store, HoloLens, cuffie per la realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: d3a31204275b2d2a9f1f1ea1c283993d2e0285ed
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4a5df06009d2c9c25b12c8e7f4bd1622821964c8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009581"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582893"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>Creazione di Galaxy Explorer per HoloLens 2
 
-Benvenuti nell'applicazione Galaxy Explorer per HoloLens 2 aggiornata. [Galaxy Explorer](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer "Galaxy Explorer") è stato sviluppato originariamente come un'applicazione open source per HoloLens (First Gen) tramite il programma Condividi la tua idea ed è una delle prime esperienze di realtà miste che molti hanno avuto. Ora è stato aggiornato per le [nuove e interessanti funzionalità di HoloLens 2](https://www.microsoft.com/hololens/hardware).
+Benvenuti nell'applicazione Galaxy Explorer per HoloLens 2 aggiornata. [Galaxy Explorer](/windows/mixed-reality/galaxy-explorer "Galaxy Explorer") è stato sviluppato originariamente come un'applicazione open source per HoloLens (First Gen) tramite il programma Condividi la tua idea ed è una delle prime esperienze di realtà miste che molti hanno avuto. Ora è stato aggiornato per le [nuove e interessanti funzionalità di HoloLens 2](https://www.microsoft.com/hololens/hardware).
 
 Come uno degli [studi di realtà mista Microsoft](galaxy-explorer-update.md#mixed-reality-studios), in genere si sviluppano soluzioni di livello commerciale e si stanno sviluppando & test sulle piattaforme di destinazione durante il processo di sviluppo e creatività. Questo progetto viene avviato usando i Framework e gli strumenti (ad esempio [MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)) che diventano disponibili per gli utenti e la community, per consentire la corsa.
 

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: sistema di coordinate, sistema di coordinate spaziali, scalabilità globale, mondo, scala, posizione, orientamento, ancoraggio, ancoraggio spaziale, blocco globale, blocco globale, persistenza, condivisione, auricolare realtà mista, auricolare di realtà mista, auricolare della realtà virtuale, HoloLens
-ms.openlocfilehash: 2db88f9bc5d128f4a9eb42cfb5211d0597b43cfa
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b11dc8cada8b67a21795dd9838579fc5dd735e6d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009111"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583259"
 ---
 # <a name="spatial-anchors"></a>Ancoraggi nello spazio
 
@@ -19,8 +19,8 @@ Un ancoraggio spaziale rappresenta un punto importante del mondo che il sistema 
 
 È anche possibile salvare in permanenza e condividere gli ancoraggi spaziali tra le sessioni dell'applicazione e tra i dispositivi:
 * Salvando gli ancoraggi spaziali locali su disco e ricaricarli in un secondo momento, l'applicazione può calcolare la stessa posizione nel mondo reale tra più sessioni dell'applicazione in un singolo HoloLens.
-* Usando gli <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">ancoraggi spaziali di Azure</a> per creare un ancoraggio cloud, l'applicazione può condividere un ancoraggio spaziale tra più dispositivi HoloLens, iOS e Android. Poiché ogni dispositivo esegue il rendering di un ologramma usando lo stesso ancoraggio spaziale, gli utenti vedranno che l'ologramma viene visualizzato nella stessa posizione nel mondo reale. Ciò rende possibili esperienze condivise in tempo reale.
-* È anche possibile usare gli <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">ancoraggi spaziali di Azure</a> per la persistenza ologramma asincrona nei dispositivi HoloLens, iOS e Android. Grazie alla condivisione di un ancoraggio spaziale cloud durevole, più dispositivi possono osservare lo stesso ologramma persistente nel tempo, anche se i dispositivi non sono presenti contemporaneamente.
+* Usando gli <a href="/azure/spatial-anchors/overview" target="_blank">ancoraggi spaziali di Azure</a> per creare un ancoraggio cloud, l'applicazione può condividere un ancoraggio spaziale tra più dispositivi HoloLens, iOS e Android. Poiché ogni dispositivo esegue il rendering di un ologramma usando lo stesso ancoraggio spaziale, gli utenti vedranno che l'ologramma viene visualizzato nella stessa posizione nel mondo reale. Ciò rende possibili esperienze condivise in tempo reale.
+* È anche possibile usare gli <a href="/azure/spatial-anchors/overview" target="_blank">ancoraggi spaziali di Azure</a> per la persistenza ologramma asincrona nei dispositivi HoloLens, iOS e Android. Grazie alla condivisione di un ancoraggio spaziale cloud durevole, più dispositivi possono osservare lo stesso ologramma persistente nel tempo, anche se i dispositivi non sono presenti contemporaneamente.
 
 Per esperienze su scala o su larga scala per gli auricolari desktop con tethering che resteranno entro un diametro di 5 metri, in genere è possibile usare il [frame della fase di riferimento](coordinate-systems.md#stage-frame-of-reference) anziché gli ancoraggi spaziali, che fornisce un unico sistema di coordinate in cui eseguire il rendering di tutto il contenuto. Tuttavia, se l'applicazione consente agli utenti di aggirare oltre 5 contatori in HoloLens, probabilmente operando in un intero piano di un edificio, saranno necessari ancoraggi spaziali per assicurare la stabilità del contenuto.
 
@@ -75,7 +75,7 @@ Per gli ancoraggi nello spazio del cloud, le dimensioni dello spazio di archivia
 
 * [Sistemi di coordinate](coordinate-systems.md)
 * [Esperienze condivise nella realtà mista](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Ancoraggi nello spazio di Azure</a>
+* <a href="/azure/spatial-anchors" target="_blank">Ancoraggi nello spazio di Azure</a>
 * [Persistenza in Unity](../develop/unity/persistence-in-unity.md)
 * [Ancoraggi nello spazio in DirectX](../develop/native/coordinate-systems-in-directx.md#place-holograms-in-the-world-using-spatial-anchors)
 * [Case study - Guardare attraverso fori nella realtà](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

@@ -6,17 +6,17 @@ ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
 keywords: 3D, modello, posizione in casa, luogo, mondo, modellazione, Home realtà mista, Web, app, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: c92ba7a3242b618b9ef9cef01ae400cf4dbf36b2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 58da61add35546331ff8199fa20885f9869a9f43
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010101"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583799"
 ---
 # <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Abilitare il posizionamento di modelli 3D nell'ambiente iniziale
 
 > [!NOTE]
-> Questa funzionalità è stata aggiunta come parte dell' [aggiornamento di Windows 10 aprile 2018](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). Le versioni precedenti di Windows non sono compatibili con questa funzionalità.
+> Questa funzionalità è stata aggiunta come parte dell' [aggiornamento di Windows 10 aprile 2018](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). Le versioni precedenti di Windows non sono compatibili con questa funzionalità.
 
 La [Home realtà mista di Windows](../discover/navigating-the-windows-mixed-reality-home.md) è il punto di partenza in cui gli utenti atterrano prima di avviare le applicazioni. In alcuni scenari, le app 2D, ad esempio l'app Olografics, consentono di posizionare i modelli 3D direttamente nella Home realtà mista come decorazioni o per un ulteriore controllo in 3D completo. Il *protocollo Aggiungi modello* consente di inviare un modello 3D dal sito Web o dall'applicazione direttamente nella Home realtà mista di Windows, in cui verrà mantenuto come i [lanci di app 3D](3d-app-launcher-design-guidance.md), le app 2D e gli ologrammi. 
 
@@ -32,7 +32,7 @@ Se, ad esempio, si sta sviluppando un'applicazione che espone un catalogo di mob
     </colgroup>
     <tr>
         <td><strong>Funzionalità</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
     </tr>
      <tr>

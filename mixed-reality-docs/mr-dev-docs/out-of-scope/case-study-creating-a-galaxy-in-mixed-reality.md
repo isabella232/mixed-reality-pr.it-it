@@ -6,12 +6,12 @@ ms.author: kaluccin
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Galaxy Explorer, HoloLens, realtà mista di Windows, Condividi la tua idea case study
-ms.openlocfilehash: 0226c38e9fa21407a7a6529693a2adb3c5da7659
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: ef97920d22df65a9d4fa5e630840759e58c80b53
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009781"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583548"
 ---
 # <a name="case-study---creating-a-galaxy-in-mixed-reality"></a>Case Study-creazione di una galassia in realtà mista
 
@@ -147,7 +147,7 @@ L'esecuzione di cloud a schermo intero e il tentativo di sfocarli sarebbe stata 
 
 ### <a name="a-bit-of-context-first"></a>Prima un po' di contesto
 
-Quando si usano le trame in un gioco, le dimensioni della trama corrisponderanno raramente all'area in cui si vuole usarlo, ma è possibile usare un tipo diverso di filtro della trama per ottenere la scheda grafica per l'interpolazione del colore desiderato dai pixel della trama ([filtro della trama](https://msdn.microsoft.com/library/dn642451.aspx)). Il filtraggio che interessa è il [filtraggio bilineare](https://msdn.microsoft.com/library/windows/desktop/bb172357.aspx) che consente di calcolare il valore di qualsiasi pixel usando i 4 adiacenti più vicini.
+Quando si usano le trame in un gioco, le dimensioni della trama corrisponderanno raramente all'area in cui si vuole usarlo, ma è possibile usare un tipo diverso di filtro della trama per ottenere la scheda grafica per l'interpolazione del colore desiderato dai pixel della trama ([filtro della trama](/previous-versions/visualstudio/visual-studio-2015/debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants)). Il filtraggio che interessa è il [filtraggio bilineare](/windows/win32/direct3d9/bilinear-texture-filtering) che consente di calcolare il valore di qualsiasi pixel usando i 4 adiacenti più vicini.
 
 ![Originale prima del filtro](images/texture-1.png)
 

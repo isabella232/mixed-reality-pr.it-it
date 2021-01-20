@@ -6,12 +6,12 @@ ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, stile, progettazione, cuffie per realtà mista, auricolare di realtà mista di Windows, auricolare di realtà virtuale, HoloLens, scala, ologrammi
-ms.openlocfilehash: 6711a58fb4dde2aa28272c3003e642c4f4d3e236
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 12b1c96146f76274831c9bc3427cef93bb326f70
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848275"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583317"
 ---
 # <a name="scale"></a>Scalabilità
 
@@ -80,7 +80,7 @@ Questa operazione può tuttavia creare alcuni artefatti possibili nell'esperienz
 
 ---
 
-## <a name="see-also"></a>Vedi anche
-* [Colore, luce e materiali](../color,-light-and-materials.md)
+## <a name="see-also"></a>Vedere anche
+* [Colore, luce e materiali](./color-light-and-materials.md)
 * [Tipografia](typography.md)
 * [Progettazione dell'audio spaziale](spatial-sound-design.md)

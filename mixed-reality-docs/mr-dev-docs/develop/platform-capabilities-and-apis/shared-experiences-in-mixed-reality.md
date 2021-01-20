@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 02/10/2019
 ms.topic: article
 keywords: esperienza condivisa, realtà mista, ologramma, ancoraggio spaziale, multiutente, più
-ms.openlocfilehash: 6db5bb13d7e04dbee6b4d9d6568b821347bd769a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 3383bcd8b87dad6e817262d96b8ac1ebb3d0c8f5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530122"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583150"
 ---
 # <a name="shared-experiences-in-mixed-reality"></a>Esperienze condivise in realtà mista
 
@@ -95,7 +95,7 @@ Prendere in considerazione le esperienze di condivisione che si adattano a una d
 * **Simile**: ambienti che tendono a avere arredi simili, luce ambientale e suoni, dimensioni della stanza fisica. Ad esempio, il professore si trova in una conferenza A e gli studenti si trovano nell'aula B. la conferenza A può avere un minor numero di poltrone rispetto a B, ma entrambi possono avere una scrivania fisica in cui posizionare gli ologrammi.
 * **Dissimili**: ambienti diversi nelle impostazioni della mobilia, dimensioni delle stanze, considerazioni chiare e valide. Ad esempio, un professore si trova in uno stato attivo, ma gli studenti si trovano in una sala conferenze di grandi dimensioni, piena di studenti e docenti.
 
-È importante [considerare l'ambiente](../../environment-considerations-for-hololens.md), in quanto influenzerà:
+È importante [considerare l'ambiente](/hololens/hololens-environment-considerations), in quanto influenzerà:
 
 * Il modo in cui gli utenti sperimenteranno questi oggetti. Ad esempio, se l'esperienza è ottimale per una tabella e l'utente non dispone di una tabella, O su una superficie piatta, ma l'utente ha uno spazio ingombrante.
 * Scala degli oggetti. Ad esempio, l'inserimento di un modello umano a sei piedi in una tabella potrebbe risultare complesso, ma un modello di cuore sarebbe perfetto.
@@ -137,11 +137,11 @@ A seconda dell'applicazione e dello scenario, per ottenere l'esperienza desidera
 
 La chiave per le esperienze condivise consiste nel fatto che più utenti vedono gli stessi ologrammi nel mondo sul proprio dispositivo, spesso grazie alla condivisione di ancoraggi per allineare le coordinate tra dispositivi.
 
-Per condividere gli ancoraggi, usare gli [ancoraggi spaziali di Azure](https://docs.microsoft.com/azure/spatial-anchors):
+Per condividere gli ancoraggi, usare gli [ancoraggi spaziali di Azure](/azure/spatial-anchors):
 
 * Prima di tutto l'ologramma viene posizionato dall'utente.
 * L'app crea un [ancoraggio spaziale](../../design/spatial-anchors.md), per aggiungere tale ologramma esattamente nel mondo.
-* Gli ancoraggi possono essere condivisi in dispositivi HoloLens, iOS e Android tramite [ancoraggi spaziali di Azure](https://docs.microsoft.com/azure/spatial-anchors/).
+* Gli ancoraggi possono essere condivisi in dispositivi HoloLens, iOS e Android tramite [ancoraggi spaziali di Azure](/azure/spatial-anchors/).
 
 Con un ancoraggio spaziale condiviso, l'app in ogni dispositivo dispone ora di un [sistema di coordinate comune](../../design/coordinate-systems.md) in cui è possibile collocare il contenuto. A questo punto l'app può garantire la posizione e l'orientamento dell'ologramma nella stessa posizione.
 
@@ -153,7 +153,7 @@ Sono disponibili diverse opzioni per il servizio e la tecnologia che consentono 
 
 ## <a name="shared-static-holograms-no-interactions"></a>Ologrammi statici condivisi (nessuna interazione)
 
-Sfruttare gli [ancoraggi spaziali di Azure](https://docs.microsoft.com/azure/spatial-anchors/) nell'app.  L'abilitazione e la condivisione di ancoraggi spaziali tra i dispositivi consentono di creare un'applicazione in cui gli utenti visualizzano gli ologrammi nello stesso punto nello stesso momento.  È necessaria una sincronizzazione aggiuntiva tra dispositivi per consentire agli utenti di interagire con gli ologrammi e visualizzare i movimenti o gli aggiornamenti di stato degli ologrammi.
+Sfruttare gli [ancoraggi spaziali di Azure](/azure/spatial-anchors/) nell'app.  L'abilitazione e la condivisione di ancoraggi spaziali tra i dispositivi consentono di creare un'applicazione in cui gli utenti visualizzano gli ologrammi nello stesso punto nello stesso momento.  È necessaria una sincronizzazione aggiuntiva tra dispositivi per consentire agli utenti di interagire con gli ologrammi e visualizzare i movimenti o gli aggiornamenti di stato degli ologrammi.
 
 ## <a name="share-first-person-perspective"></a>Condividi la prospettiva della prima persona
 
@@ -172,7 +172,7 @@ Usare [MixedReality-SpectatorView](https://github.com/microsoft/MixedReality-Spe
 
 ## <a name="multi-user-collaborative-experience"></a>Esperienza di collaborazione multiutente
 
-Inizia con l' [esercitazione per l'apprendimento multiutente](../../mrlearning-sharing(photon)-ch1.md), che sfrutta gli [ancoraggi spaziali di Azure](https://docs.microsoft.com/azure/spatial-anchors/) per gli utenti locali e [Photon SDK](https://www.photonengine.com/PUN) per sincronizzare il contenuto o lo stato nella scena. Crea applicazioni di collaborazione localmente in cui ogni utente ha una propria prospettiva sugli ologrammi nella scena e può interagire completamente con gli ologrammi.  Gli aggiornamenti vengono forniti in tutti i dispositivi e la gestione dei conflitti di interazione viene gestita da Photon.
+Inizia con l' [esercitazione per l'apprendimento multiutente](../unity/tutorials/mr-learning-sharing-02.md), che sfrutta gli [ancoraggi spaziali di Azure](/azure/spatial-anchors/) per gli utenti locali e [Photon SDK](https://www.photonengine.com/PUN) per sincronizzare il contenuto o lo stato nella scena. Crea applicazioni di collaborazione localmente in cui ogni utente ha una propria prospettiva sugli ologrammi nella scena e può interagire completamente con gli ologrammi.  Gli aggiornamenti vengono forniti in tutti i dispositivi e la gestione dei conflitti di interazione viene gestita da Photon.
 
 > [!NOTE]
 > Si noti che [Photon](https://www.photonengine.com/) è un prodotto non Microsoft, quindi è possibile che sia necessaria una relazione di fatturazione con Photon per commercializzare e la scalabilità per un utilizzo superiore.
@@ -185,7 +185,7 @@ Uno scenario diverso o il desiderio di usare una tecnologia o un servizio divers
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Ancoraggi nello spazio di Azure](https://docs.microsoft.com/azure/spatial-anchors)
+* [Ancoraggi nello spazio di Azure](/azure/spatial-anchors)
 * [Ancoraggi nello spazio condivisi in DirectX](shared-spatial-anchors-in-directx.md)
 * [Esperienze condivise in Unity](../unity/shared-experiences-in-unity.md)
 * [Visualizzazione spettatore](spectator-view.md)

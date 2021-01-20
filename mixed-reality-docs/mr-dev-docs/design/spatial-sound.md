@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 11/07/2019
 ms.topic: article
 keywords: Audio spaziale, audio surround, audio 3D, audio 3D, audio spaziale, cuffia a realtà mista, cuffie per realtà mista, cuffie per realtà virtuale, HoloLens, MRTK, Toolkit per realtà mista, case study, acustica
-ms.openlocfilehash: b65a4ff3dc64863f02f1459fa0c3adc5d34b0703
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 335ff8acf036591bbbf9868f591ca2c3cef1386c
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848172"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583257"
 ---
 # <a name="audio-in-mixed-reality"></a>Audio in realtà mista
 
@@ -43,7 +43,7 @@ Vedere esempi dettagliati [di progettazione che usa audio](spatial-sound-design.
     </colgroup>
     <tr>
         <td><strong>Funzionalità</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (prima generazione)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (prima generazione)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
     </tr>
@@ -91,7 +91,7 @@ Ogni persona ha una forma orecchio, una dimensione della testa e una posizione d
 
 ### <a name="spatializer-platform-support"></a>Supporto della piattaforma Spatializer
 
-Windows offre la spazializzazione, tra cui HRTFs, tramite l' [API ISpatialAudioClient](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound). Questa API espone l'accelerazione hardware HoloLens 2 HRTF alle applicazioni.
+Windows offre la spazializzazione, tra cui HRTFs, tramite l' [API ISpatialAudioClient](/windows/win32/coreaudio/spatial-sound). Questa API espone l'accelerazione hardware HoloLens 2 HRTF alle applicazioni.
 
 ### <a name="spatializer-middleware-support"></a>Supporto del middleware Spatializer
 
@@ -103,7 +103,7 @@ Il supporto per HRTFs di Windows è disponibile per i motori audio di terze part
 
 L'audio spaziale è più di una direzione. Altre dimensioni includono l'occlusione, l'ostruzione, il riverbero, il portale e la modellazione del codice sorgente. Complessivamente, queste dimensioni vengono definite *acustiche*. Senza acustica, i suoni spaziali non hanno una distanza percepita.
 
-I trattamenti acustici variano da semplice a complesso. È possibile usare un Reverb supportato da qualsiasi motore audio per eseguire il push di suoni spaziali nell'ambiente del listener. I sistemi acustici come l' [acustica del progetto](https://aka.ms/acoustics)  offrono un trattamento acustico più completo e accattivante. I progetti acustici possono modellare l'effetto di muri, porte e altra geometria della scena su un suono. Si tratta di un'opzione valida nei casi in cui la geometria della scena pertinente è nota in fase di sviluppo.
+I trattamenti acustici variano da semplice a complesso. È possibile usare un Reverb supportato da qualsiasi motore audio per eseguire il push di suoni spaziali nell'ambiente del listener. I sistemi acustici come l' [acustica del progetto](/gaming/acoustics/what-is-acoustics)  offrono un trattamento acustico più completo e accattivante. I progetti acustici possono modellare l'effetto di muri, porte e altra geometria della scena su un suono. Si tratta di un'opzione valida nei casi in cui la geometria della scena pertinente è nota in fase di sviluppo.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

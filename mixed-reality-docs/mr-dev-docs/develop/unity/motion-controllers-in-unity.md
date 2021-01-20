@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: controller di movimento, Unity, input, cuffie per realtà mista, cuffie di realtà mista di Windows, headset di realtà virtuale, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: bf9aad0ee67a406280cefedec8b55fb1de130b8b
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: db103e674a369f13e62aac5e8c0513b2c2c17f9e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192963"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583499"
 ---
 # <a name="motion-controllers-in-unity"></a>Controller di movimento in Unity
 
@@ -445,15 +445,15 @@ Le esercitazioni dettagliate, con esempi di personalizzazione più dettagliati, 
 - [Input MR 211: Movimento](tutorials/holograms-211.md)
 - [Input MR 213: Controller del movimento](../../deprecated/mixed-reality-213.md)
 
-[![Input MR 213-controller di movimento](images/mr213-main-600px.jpg)](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-213)<br>
+[![Input MR 213-controller di movimento](images/mr213-main-600px.jpg)](/windows/mixed-reality/mixed-reality-213)<br>
 *Input MR 213-controller di movimento*
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui, è possibile passare al blocco predefinito successivo:
+Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
-> [Tracciamento della mano e oculare](hand-eye-in-unit.md)
+> [Tracciamento della mano e oculare](./hand-eye-in-unity.md)
 
 In alternativa, passare alle API e funzionalità della piattaforma di realtà mista:
 

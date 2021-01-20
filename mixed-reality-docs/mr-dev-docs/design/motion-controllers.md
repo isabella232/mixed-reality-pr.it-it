@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: controller 6DOF, controller di movimento, associazione, cuffie per realtà mista, auricolare di realtà mista di Windows, cuffia virtuale reale, HoloLens, scorrimento, grip, stato
-ms.openlocfilehash: 94a9292b3a765131ae197fd9f91c27a52a463eef
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 367c9d9e0179c82af05af3fded9341ff7960d19e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192619"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583661"
 ---
 # <a name="motion-controllers"></a>Controller del movimento
 
@@ -41,7 +41,7 @@ ms.locfileid: "98192619"
 </colgroup>
 <tr>
      <td><strong>Funzionalità</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (prima generazione)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (prima generazione)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
 </tr>
@@ -80,14 +80,14 @@ I controller di movimento per la realtà mista di Windows offrono un rilevamento
 
 **Verificare la disponibilità di Windows, Unity e gli aggiornamenti dei driver**
 * Visitare [installare gli strumenti](../develop/install-the-tools.md) per le versioni preferite di Windows, Unity e così via per lo sviluppo di realtà miste.
-* Assicurarsi di disporre dei driver più aggiornati per l' [auricolare e il controller di movimento](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/mixed-reality-software).
+* Assicurarsi di disporre dei driver più aggiornati per l' [auricolare e il controller di movimento](/windows/mixed-reality/enthusiast-guide/mixed-reality-software).
 
 ### <a name="pairing-controllers"></a>Associazione di controller
 
 I controller di movimento possono essere legati a computer host usando le impostazioni di Windows come qualsiasi altro dispositivo Bluetooth.
 
 1. Inserire due batterie AA nella parte posteriore del controller. Lasciare il coperchio della batteria per il momento.
-2. Se si usa una scheda Bluetooth USB esterna anziché una radio Bluetooth incorporata, vedere le procedure consigliate [Bluetooth](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) prima di procedere. Per la configurazione del desktop con la radio predefinita, assicurarsi che l'antenna sia connessa.
+2. Se si usa una scheda Bluetooth USB esterna anziché una radio Bluetooth incorporata, vedere le procedure consigliate [Bluetooth](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) prima di procedere. Per la configurazione del desktop con la radio predefinita, assicurarsi che l'antenna sia connessa.
 3. Aprire **le impostazioni di Windows**  ->  **dispositivi**  ->  **aggiungere Bluetooth o altro dispositivo**  ->  **Bluetooth** e rimuovere le istanze precedenti di "motion controller – Right" e "motion controller – left". Controllare anche la categoria altri dispositivi nella parte inferiore dell'elenco.
 4. Selezionare **Aggiungi Bluetooth o altro dispositivo** e vedere avvio per individuare i dispositivi Bluetooth.
 5. Premere e tenere premuto il pulsante Windows del controller per accendere il controller, quindi rilasciarlo dopo il ronzio.
@@ -142,7 +142,7 @@ Se i controller sono spenti dopo l'associazione, lo stato verrà visualizzato co
 
 * Verificare che i controller funzionino correttamente:
     1. Avviare il **portale di realtà mista** e immettere la Home realtà mista.
-    2. Spostare i controller e verificare il rilevamento, i pulsanti di test e verificare il funzionamento della [teleportazione](../discover/navigating-the-windows-mixed-reality-home.md#getting-around-your-home) . In caso contrario, consultare la sezione relativa alla [risoluzione dei problemi del controller di movimento](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers).
+    2. Spostare i controller e verificare il rilevamento, i pulsanti di test e verificare il funzionamento della [teleportazione](../discover/navigating-the-windows-mixed-reality-home.md#getting-around-your-home) . In caso contrario, consultare la sezione relativa alla [risoluzione dei problemi del controller di movimento](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers).
 
 ## <a name="gazing-and-pointing"></a>Osservazione e puntamento
 
@@ -257,7 +257,7 @@ I controller di movimento supportano l'associazione a un singolo computer. Per a
 
 ### <a name="how-do-i-update-motion-controller-firmware"></a>Ricerca per categorie aggiornare il firmware del controller di movimento?
 
-Il firmware del controller di movimento fa parte del driver della cuffia e verrà aggiornato automaticamente alla connessione, se necessario. Gli aggiornamenti del firmware in genere importano 1-2 minuti a seconda della qualità del collegamento e della radio Bluetooth. In rari casi, gli aggiornamenti del firmware del controller possono richiedere fino a 10 minuti, che possono indicare una scarsa connettività Bluetooth o interferenze radio. Per risolvere i problemi di connettività, vedere [procedure consigliate Bluetooth nella Guida per gli appassionati](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) . Dopo un aggiornamento del firmware, i controller verranno riavviati e riconnessi al PC host. è possibile notare che i LED sono luminosi per il rilevamento. Se un aggiornamento del firmware viene interrotto (ad esempio, i controller perdono energia), verrà ritentata la volta successiva che i controller saranno accesi.
+Il firmware del controller di movimento fa parte del driver della cuffia e verrà aggiornato automaticamente alla connessione, se necessario. Gli aggiornamenti del firmware in genere importano 1-2 minuti a seconda della qualità del collegamento e della radio Bluetooth. In rari casi, gli aggiornamenti del firmware del controller possono richiedere fino a 10 minuti, che possono indicare una scarsa connettività Bluetooth o interferenze radio. Per risolvere i problemi di connettività, vedere [procedure consigliate Bluetooth nella Guida per gli appassionati](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) . Dopo un aggiornamento del firmware, i controller verranno riavviati e riconnessi al PC host. è possibile notare che i LED sono luminosi per il rilevamento. Se un aggiornamento del firmware viene interrotto (ad esempio, i controller perdono energia), verrà ritentata la volta successiva che i controller saranno accesi.
 
 ### <a name="how-i-can-check-battery-level"></a>Come posso controllare il livello della batteria?
 
@@ -269,17 +269,17 @@ Non per le applicazioni Windows universali.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-Vedere la pagina relativa alla [risoluzione dei problemi di motion controller](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers) nella Guida per gli appassionati.
+Vedere la pagina relativa alla [risoluzione dei problemi di motion controller](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers) nella Guida per gli appassionati.
 
 ## <a name="filing-motion-controller-feedbackbugs"></a>Suggerimenti/bug del controller di movimento di archiviazione
 
-[Inviare commenti e suggerimenti](../give-us-feedback.md) nell'hub feedback, usando la categoria "Mixed Reality-> input".
+[Inviare commenti e suggerimenti](/hololens/hololens-feedback) nell'hub feedback, usando la categoria "Mixed Reality-> input".
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Controller di movimento in Unity](../develop/unity/motion-controllers-in-unity.md)
 * [Mani e controller del movimento in DirectX](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [Movimenti](gaze-and-commit.md#composite-gestures)
-* [Guida per gli appassionati: Home page della realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
-* [Guida per gli appassionati: uso di giochi & app in realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
-* [Funzionamento del tracciamento dall'interno verso l'esterno](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)
+* [Guida per gli appassionati: Home page della realtà mista di Windows](/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
+* [Guida per gli appassionati: uso di giochi & app in realtà mista di Windows](/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
+* [Funzionamento del tracciamento dall'interno verso l'esterno](/windows/mixed-reality/enthusiast-guide/tracking-system)

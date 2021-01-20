@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, HoloLens, ologrammi, progettazione, interazione, auricolare realtà mista, auricolare di realtà mista di Windows, cos'è la realtà aumentata
-ms.openlocfilehash: b390910fcece8e6263d19f52c80b784efb2561f6
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: cc6b4a4838e7a275b1ef3a45e54c4b894a04b9c2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757559"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583346"
 ---
 # <a name="what-is-a-hologram"></a>Che cos'è un ologramma?
 
@@ -33,7 +33,7 @@ HoloLens consente di creare **ologrammi**, che sono oggetti costituiti da luce e
     </colgroup>
     <tr>
         <td><strong>Funzionalità</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (prima generazione)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (prima generazione)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
     </tr>
@@ -126,8 +126,7 @@ Gli ologrammi possono anche essere bloccati da oggetti reali. Un carattere ologr
 
 ## <a name="next-discovery-checkpoint"></a>Prossima stazione di scoperta
 
-Se si sta seguendo il [percorso di scoperta](get-started-with-mr.md) definito, è possibile esplorare le nozioni di base della realtà mista. Da qui è possibile passare all'argomento di base successivo: 
+Se si sta seguendo il [percorso di scoperta](get-started-with-mr.md) definito, è possibile esplorare le nozioni di base della realtà mista. Da qui è possibile continuare con l'argomento di base successivo: 
 
 > [!div class="nextstepaction"]
 > [Espandere il processo di progettazione](case-study-expanding-the-design-process-for-mixed-reality.md)
-

@@ -6,19 +6,19 @@ ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, Home, ambienti personalizzati, luoghi, scogliere, Skyloft, utente, creazione, auricolare in realtà mista, auricolare di realtà mista di Windows, Headset della realtà virtuale, HoloLens, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: 2d88b4e20c2703b554572c0d39d5c69767164694
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: ca6a41f8388a767b1191ddc3b377822567a603a6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848080"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583308"
 ---
 # <a name="design-your-own-immersive-environments"></a>Progettare ambienti immersivi personalizzati
 
 >[!NOTE]
 >Si tratta di una funzionalità sperimentale. È possibile provarlo e divertirlo, ma non stupirsi se tutto funziona come previsto. Microsoft sta valutando la redditività di questa funzionalità e ne è interessato l'uso. per informazioni sull'esperienza e sui bug trovati, vedere i [forum per sviluppatori](https://forums.hololens.com/categories/custom-home-environments).
 
-A partire dall' [aggiornamento di Windows 10 aprile 2018](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018), è stata abilitata una funzionalità sperimentale che consente di aggiungere ambienti personalizzati alla selezione posizioni (dal menu Start) da usare come [Home realtà mista di Windows](../discover/navigating-the-windows-mixed-reality-home.md). La realtà mista di Windows presenta due ambienti predefiniti, Cliff House e Skyloft, che è possibile scegliere come Home. La creazione di ambienti personalizzati consente di espandere l'elenco con le proprie creazioni. Questa funzionalità è disponibile in uno stato preliminare per valutare l'interesse di autori e sviluppatori. Scopri i tipi di mondi creati e Scopri come usare diversi strumenti di creazione.
+A partire dall' [aggiornamento di Windows 10 aprile 2018](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018), è stata abilitata una funzionalità sperimentale che consente di aggiungere ambienti personalizzati alla selezione posizioni (dal menu Start) da usare come [Home realtà mista di Windows](../discover/navigating-the-windows-mixed-reality-home.md). La realtà mista di Windows presenta due ambienti predefiniti, Cliff House e Skyloft, che è possibile scegliere come Home. La creazione di ambienti personalizzati consente di espandere l'elenco con le proprie creazioni. Questa funzionalità è disponibile in uno stato preliminare per valutare l'interesse di autori e sviluppatori. Scopri i tipi di mondi creati e Scopri come usare diversi strumenti di creazione.
 
 Quando si usa un ambiente personalizzato si noterà che il Teleporting, l'interazione con le app e il posizionamento degli ologrammi funzionano esattamente come avviene in Cliff House e Skyloft. È possibile esplorare il Web in un panorama Fantasy o riempire una città futuristica con ologrammi. le possibilità sono infinite.
 
@@ -32,7 +32,7 @@ Quando si usa un ambiente personalizzato si noterà che il Teleporting, l'intera
     </colgroup>
     <tr>
         <td><strong>Funzionalità</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
     </tr>
      <tr>
@@ -101,7 +101,7 @@ Contrassegno|Valori consigliati|Descrizione
 -Max-texture-size|1024 o 2048| Modificare il valore per migliorare la qualità delle trame. l'impostazione predefinita è 512x512. Un valore maggiore avrà un impatto significativo sulle dimensioni del file dell'ambiente, in modo da tenere presente il limite di 256 MB
 -min-Version|1803|Gli ambienti personalizzati sono supportati solo nelle versioni di Windows >= 1803. Questo flag rimuove le trame per le versioni precedenti e riduce le dimensioni del file dell'asset finale
 
-Esempio:
+Ad esempio:
 
 ```cmd
 WindowsMRAssetConverter FileToConvert.gltf -max-texture-size 1024 -min-version 1803
@@ -149,6 +149,5 @@ Il percorso di generazione predefinito si trova a 0, 0, 0 nell'ambiente. Attualm
 
 Quando si crea l'ambiente personalizzato, verrà usata una simulazione di rendering acustico che non corrisponde allo spazio fisico creato. Il suono può provenire dalle direzioni errate e può sembrare ovattato. 
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Microsoft Mixed Reality asset Converter (su GitHub)](https://github.com/Microsoft/glTF-Toolkit/releases)
-

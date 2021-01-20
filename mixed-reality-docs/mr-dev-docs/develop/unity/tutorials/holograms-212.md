@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, tutorial, Voice, HoloLens, Mixed Reality Academy, Unity, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale, Windows 10
-ms.openlocfilehash: b9d9002180da7a59c62b77b83872e77499da4c09
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6fb3e10cb440fdda941a6d68b106da1bbaaedbc9
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677240"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583685"
 ---
 # <a name="mr-input-212-voice"></a>Input MR 212: Voce
 
 >[!NOTE]
->Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](../../../mr-learning-base-01.md).
+>Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](./mr-learning-base-01.md).
 
 L' [input vocale](../../../design/voice-input.md) ci offre un altro modo per interagire con gli ologrammi. I comandi vocali funzionano in modo molto naturale e semplice. Progettare i comandi vocali in modo che siano:
 
@@ -45,7 +45,7 @@ In questo corso, viene rivisitata Esplora modelli, che è stata compilata in [Mr
 
 <table>
 <tr>
-<th>Corso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
+<th>Corso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
 </tr><tr>
 <td>Input MR 212: Voce</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -149,7 +149,7 @@ In questo capitolo verrà illustrato come progettare comandi vocali. Quando si c
     3. Strumento zoom
     4. Strumento di trascinamento
     5. Regolare
-    6. Rimuovi
+    6. Rimuovere
 * Usare suoni simili. Provare a evitare di usare comandi vocali che fanno rima. Se si dispone di un'applicazione di acquisto che supporta *"Mostra archivio"* e *"Mostra più"* come comandi vocali, è necessario disabilitare uno dei comandi mentre l'altro è in uso. Ad esempio, è possibile usare il pulsante *"Mostra archivio"* per aprire l'archivio e quindi disabilitare il comando quando l'archivio è stato visualizzato in modo che il comando *"Mostra più"* possa essere usato per l'esplorazione.
 
 ### <a name="instructions"></a>Istruzioni
@@ -259,7 +259,7 @@ In questo capitolo verrà usato il riconoscimento di dettatura per creare un mes
 5. Quando si preme il **pulsante Interrompi** oppure si verifica il timeout della sessione MIC, **arrestare il DictationRecognizer**.
 6. Riavviare il **KeywordRecognizer**, che resterà in attesa del comando **Send Message** .
 
-È possibile iniziare subito. Completare tutti gli esercizi di codifica per 3. a in **MicrophoneManager.cs** oppure copiare e incollare il codice finito riportato di seguito:
+A questo punto, procedere con l'esercitazione. Completare tutti gli esercizi di codifica per 3. a in **MicrophoneManager.cs** oppure copiare e incollare il codice finito riportato di seguito:
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -500,7 +500,7 @@ Nel file SRGS sono disponibili tre tipi di regole:
 
 ## <a name="the-end"></a>La fine
 
-Congratulazioni. A questo punto è stato completato il **sig. Input 212: Voice**.
+La procedura è stata completata. A questo punto è stato completato il **sig. Input 212: Voice**.
 
 * Si conosce il DOS e non i comandi vocali.
 * Sono state illustrate le modalità di utilizzo delle descrizioni comando per consentire agli utenti di riconoscere i comandi vocali.

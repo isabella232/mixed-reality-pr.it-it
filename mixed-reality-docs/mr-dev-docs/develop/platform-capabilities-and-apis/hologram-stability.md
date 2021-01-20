@@ -8,12 +8,12 @@ ms.topic: article
 keywords: ologrammi, stabilità, hololens, cuffie per realtà mista, cuffie per la realtà mista di Windows, auricolare della realtà virtuale, frequenza dei fotogrammi, rendering, riproiezione, separazione dei colori
 appliesto:
 - HoloLens
-ms.openlocfilehash: 36abf928d8f665717bacaf8da372d299b41fabd6
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 064e42f771391e77874796e91ea8e4d563c08ec2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006641"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582888"
 ---
 # <a name="hologram-stability"></a>Stabilità degli ologrammi
 
@@ -25,11 +25,11 @@ La qualità degli ologrammi è il risultato di un ambiente efficace e uno svilup
 
 La terminologia seguente può essere utile per identificare i problemi relativi all'ambiente, alle velocità di rendering incoerenti o basse o a qualsiasi altro elemento.
 * **Precisione.** Una volta che l'ologramma è stato bloccato in tutto il mondo e si trova nel mondo reale, deve rimanere dove è posizionato in relazione all'ambiente circostante e indipendentemente dalle modifiche apportate all'ambiente di piccole e sparse. Se un ologramma viene visualizzato in un percorso imprevisto, si tratta di un problema di *accuratezza* . Questi scenari possono verificarsi se due stanze distinte sembrano identiche.
-* **Jitter.** Gli utenti osservano il jitter come agitazione ad alta frequenza di un ologramma, che può verificarsi quando si verifica un peggioramento dell'ambiente. Per gli utenti, la soluzione esegue l' [ottimizzazione del sensore](../../sensor-tuning.md).
+* **Jitter.** Gli utenti osservano il jitter come agitazione ad alta frequenza di un ologramma, che può verificarsi quando si verifica un peggioramento dell'ambiente. Per gli utenti, la soluzione esegue l' [ottimizzazione del sensore](/hololens/hololens-updates).
 * **Judder.** Le frequenze di rendering basse generano immagini di movimento e doppie non uniformi degli ologrammi. Judder è particolarmente evidente negli ologrammi con movimento. Gli sviluppatori devono mantenere una [costante 60 fps](hologram-stability.md#frame-rate).
 * **Deriva.** Gli utenti visualizzano la deriva perché un ologramma sembra allontanarsi dalla posizione in cui è stata originariamente posizionata. La deviazione si verifica quando si posizionano gli ologrammi lontani dagli [ancoraggi spaziali](../../design/spatial-anchors.md), in particolare in parti senza mapping dell'ambiente. La creazione di ologrammi vicini a ancoraggi spaziali riduce la probabilità di Drift.
 * **Nervosismo.** Quando un ologramma "estrae" o "salta" fuori dalla propria posizione occasionalmente. Nervosismo può verificarsi quando il rilevamento regola gli ologrammi in modo che corrispondano alla conoscenza aggiornata dell'ambiente.
-* **Nuotare.** Quando un ologramma sembra ondeggiare corrispondente al movimento della testa dell'utente. Il nuoto si verifica quando l'applicazione non dispone di una [riproiezione](hologram-stability.md#reprojection)completamente implementata e se la HoloLens non viene [calibrata](../../calibration.md) per l'utente corrente. L'utente può eseguire di nuovo l'applicazione di [calibrazione](../../calibration.md) per risolvere il problema. Gli sviluppatori possono aggiornare il piano di stabilizzazione per migliorare ulteriormente la stabilità.
+* **Nuotare.** Quando un ologramma sembra ondeggiare corrispondente al movimento della testa dell'utente. Il nuoto si verifica quando l'applicazione non dispone di una [riproiezione](hologram-stability.md#reprojection)completamente implementata e se la HoloLens non viene [calibrata](/hololens/hololens-calibration) per l'utente corrente. L'utente può eseguire di nuovo l'applicazione di [calibrazione](/hololens/hololens-calibration) per risolvere il problema. Gli sviluppatori possono aggiornare il piano di stabilizzazione per migliorare ulteriormente la stabilità.
 * **Separazione dei colori.** Le visualizzazioni in HoloLens sono schermi sequenziali con colore, che lampeggiano con i canali di colore rosso-verde-blu-verde a 60 Hz (i singoli campi colore sono visualizzati a 240 Hz). Ogni volta che un utente tiene traccia di un ologramma che si sta muovendo con i propri occhi, i bordi iniziali e finali dell'ologramma si separano nei colori costituenti, producendo un effetto arcobaleno. Il grado di separazione dipende dalla velocità dell'ologramma. In alcuni casi più rari, lo stato di un ologramma che si muove rapidamente osservando un ologramma stazionario può produrre anche un effetto arcobaleno, denominato *[separazione dei colori](hologram-stability.md#color-separation)*.
 
 ## <a name="frame-rate"></a>Frequenza dei fotogrammi
@@ -45,7 +45,7 @@ Eseguendo il rendering a 60 FPS, si stanno eseguendo tre operazioni per rendere 
 
 **Coerenza frequenza frame** La coerenza della frequenza di fotogrammi è importante quanto un frame elevato al secondo. I frame talvolta eliminati sono inevitabili per qualsiasi applicazione con contenuto e HoloLens implementa alcuni algoritmi sofisticati per il ripristino da problemi occasionali. Tuttavia, un framerate costantemente fluttuante è molto più evidente a un utente rispetto all'esecuzione coerente a frequenze di fotogrammi inferiori. Ad esempio, un'applicazione che esegue il rendering senza problemi per cinque fotogrammi (60 FPS per la durata di questi cinque fotogrammi) e quindi rilascia ogni altro frame per i 10 fotogrammi successivi (30 FPS per la durata di questi 10 frame) risulta più instabile rispetto a un'applicazione che esegue costantemente il rendering a 30 FPS.
 
-In una nota correlata, il sistema operativo limita le applicazioni a 30 FPS quando l' [acquisizione di realtà mista](../../mixed-reality-capture.md) è in esecuzione.
+In una nota correlata, il sistema operativo limita le applicazioni a 30 FPS quando l' [acquisizione di realtà mista](/hololens/holographic-photos-and-videos) è in esecuzione.
 
 **Analisi delle prestazioni** Esistono diversi tipi di strumenti che è possibile usare per eseguire il benchmark della frequenza dei fotogrammi dell'applicazione, ad esempio:
 * GPUView
@@ -91,7 +91,7 @@ Sono disponibili quattro tipi principali di riproiezione
 Le applicazioni devono eseguire azioni specifiche per abilitare i diversi tipi di riproiezione
 * **Riproiezione profondità:** L'applicazione invia il buffer di profondità al sistema per ogni frame sottoposto a rendering.  In Unity la riproiezione della profondità viene eseguita con l'opzione del **buffer di profondità condivisa** nel riquadro **impostazioni della realtà mista di Windows** in **Gestione plug**-in XR.  Le app DirectX chiamano CommitDirect3D11DepthBuffer.  L'applicazione non deve chiamare SetFocusPoint.
 * **Riproiezione planare:** In ogni frame, le applicazioni indicano al sistema la posizione di un piano da stabilizzare.  Le applicazioni Unity chiamano SetFocusPointForFrame e devono avere il **buffer di profondità condiviso** disabilitato.  Le app DirectX chiamano SetFocusPoint e non devono chiamare CommitDirect3D11DepthBuffer.
-* **Riproiezione piana automatica:** Per abilitare, l'applicazione deve inviare il buffer di profondità al sistema come per la riproiezione approfondita. Le app che usano il Toolkit di realtà mista (MRTK) possono configurare il [provider di impostazioni della fotocamera](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) per l'uso della riproiezione Autopiano. Le app native devono impostare `DepthReprojectionMode` in [HolographicCameraRenderingParameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) su `AutoPlanar` ogni frame. Per HoloLens generazione 1, l'applicazione non deve chiamare SetFocusPoint.
+* **Riproiezione piana automatica:** Per abilitare, l'applicazione deve inviare il buffer di profondità al sistema come per la riproiezione approfondita. Le app che usano il Toolkit di realtà mista (MRTK) possono configurare il [provider di impostazioni della fotocamera](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) per l'uso della riproiezione Autopiano. Le app native devono impostare `DepthReprojectionMode` in [HolographicCameraRenderingParameters](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) su `AutoPlanar` ogni frame. Per HoloLens generazione 1, l'applicazione non deve chiamare SetFocusPoint.
 
 ### <a name="choosing-reprojection-technique"></a>Scelta della tecnica di riproiezione
 
@@ -183,6 +183,6 @@ Come in precedenza, il rendering a 60 FPS e l'impostazione del piano di stabiliz
 
 ## <a name="see-also"></a>Vedere anche
 * [Informazioni sulle prestazioni per la realtà mista](understanding-performance-for-mixed-reality.md)
-* [Colore, luce e materiali](../../color,-light-and-materials.md)
+* [Colore, luce e materiali](../../design/color-light-and-materials.md)
 * [Interazioni istintive](../../design/interaction-fundamentals.md)
 * [Stabilizzazione ologramma MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/hologram-stabilization.html)

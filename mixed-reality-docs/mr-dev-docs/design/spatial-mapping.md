@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: mapping spaziale, HoloLens, realtà mista, ricostruzione di superficie, mesh, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit di realtà mista, informazioni sulla scena, mesh globale, occlusione, fisica, navigazione, osservatore della superficie, rendering, elaborazione mesh
-ms.openlocfilehash: 4305a291a2a83f4425c5a80d25dd8145a7033492
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 1c41706abc0a393e8530b38be83fed49ed3e20a6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848197"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583270"
 ---
 # <a name="spatial-mapping"></a>Mapping spaziale
 
@@ -32,7 +32,7 @@ Il mapping spaziale fornisce una rappresentazione dettagliata delle superfici re
     </colgroup>
     <tr>
         <td><strong>Funzionalità</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (prima generazione)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (prima generazione)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
     </tr>
@@ -78,7 +78,7 @@ Per HoloLens 2, è possibile eseguire una query su una versione statica dei dati
 
 ## <a name="what-influences-spatial-mapping-quality"></a>Che influenza la qualità del mapping spaziale?
 
-Diversi fattori [, descritti in](../environment-considerations-for-hololens.md)dettaglio, possono influenzare la frequenza e la gravità di questi errori.  Tuttavia, è consigliabile progettare l'applicazione in modo che l'utente possa raggiungere gli obiettivi anche in presenza di errori nei dati di mapping spaziali.
+Diversi fattori [, descritti in](/hololens/hololens-environment-considerations)dettaglio, possono influenzare la frequenza e la gravità di questi errori.  Tuttavia, è consigliabile progettare l'applicazione in modo che l'utente possa raggiungere gli obiettivi anche in presenza di errori nei dati di mapping spaziali.
 
 ## <a name="common-usage-scenarios"></a>Scenari di utilizzo comuni
 
@@ -120,7 +120,7 @@ Per generare comportamenti fisici realistici, è probabile che sia necessario es
 
 Sarà inoltre necessario considerare il modo in cui l' [esperienza di analisi](spatial-mapping.md#the-environment-scanning-experience) dell'applicazione influisce sulla simulazione fisica. In primo luogo, le superfici mancanti non si scontrano con niente. cosa accade quando la palla di gomma si sposta verso il basso nel corridoio e al termine del mondo noto? In secondo luogo, è necessario decidere se continuare a rispondere alle modifiche nell'ambiente nel tempo. In alcuni casi, è opportuno rispondere il più rapidamente possibile; Supponiamo che l'utente usi porte e mobili come barriere mobili in difesa contro una tempesta di frecce romane in arrivo. In altri casi, tuttavia, potrebbe essere necessario ignorare i nuovi aggiornamenti; guidare le auto sportive olografiche in tutto il circuito può non essere così divertente se il cane decide di sedersi al centro della traccia.
 
-### <a name="navigation"></a>Navigazione
+### <a name="navigation"></a>Spostamento
 
 Le applicazioni possono utilizzare i dati di mapping spaziale per concedere ai caratteri olografici (o agenti) la possibilità di esplorare il mondo reale nello stesso modo in cui una persona reale. Questo può contribuire a rafforzare la presenza di caratteri olografici limitando gli stessi allo stesso set di comportamenti naturali e noti di quelli dell'utente e dei relativi amici.
 
@@ -209,13 +209,13 @@ Esistono tre modi principali in cui i mesh di mapping spaziale tendono a essere 
    * Un aspetto da tenere presente è che le mesh spaziali sono diverse dal tipo di mesh che può essere creato da un artista 3D. La topologia triangolare non sarà' clean ' come topologia creata dall'uomo e la mesh soffrirà di [diversi errori](spatial-mapping.md#what-influences-spatial-mapping-quality).
    * Per creare una gradevole estetica visiva, è possibile eseguire alcune operazioni di [elaborazione della mesh](spatial-mapping.md#mesh-processing), ad esempio per riempire buchi o normali superfici uniformi. È anche possibile usare uno shader per proiettare le trame progettate dall'artista sulla mesh anziché visualizzare direttamente la topologia mesh e le normali.
 * Per gli ologrammi occlusione dietro le superfici reali
-   * È possibile eseguire il rendering delle superfici spaziali in un passaggio solo Depth, che influisce solo sul [buffer di profondità](https://msdn.microsoft.com/library/windows/desktop/bb219616(v=vs.85).aspx) e non influisce sulle destinazioni di rendering dei colori.
+   * È possibile eseguire il rendering delle superfici spaziali in un passaggio solo Depth, che influisce solo sul [buffer di profondità](/windows/win32/direct3d9/depth-buffers) e non influisce sulle destinazioni di rendering dei colori.
    * In questo modo, il buffer di profondità viene sottoposto a rendering degli ologrammi in occludere in seguito alle superfici spaziali. Una corretta occlusione degli ologrammi migliora il senso che gli ologrammi sono effettivamente presenti nello spazio fisico dell'utente.
-   * Per abilitare il rendering con solo profondità, aggiornare lo stato di Blend per impostare [RenderTargetWriteMask](https://msdn.microsoft.com/library/windows/desktop/hh404492(v=vs.85).aspx) su zero per tutte le destinazioni di rendering dei colori.
+   * Per abilitare il rendering con solo profondità, aggiornare lo stato di Blend per impostare [RenderTargetWriteMask](/windows/win32/api/d3d11_1/ns-d3d11_1-d3d11_render_target_blend_desc1) su zero per tutte le destinazioni di rendering dei colori.
 * Per modificare l'aspetto degli ologrammi bloccati dalle superfici reali
-   * In genere, la geometria sottoposta a rendering è nascosta quando è nascosta. Questa operazione viene eseguita impostando la funzione depth nello [stato depth-stencil](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx) su "minore o uguale a", che fa sì che la geometria sia visibile solo quando è **più vicina** alla fotocamera rispetto alla geometria sottoposta a rendering precedente.
+   * In genere, la geometria sottoposta a rendering è nascosta quando è nascosta. Questa operazione viene eseguita impostando la funzione depth nello [stato depth-stencil](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc) su "minore o uguale a", che fa sì che la geometria sia visibile solo quando è **più vicina** alla fotocamera rispetto alla geometria sottoposta a rendering precedente.
    * Tuttavia, può essere utile tenere visibile una determinata geometria anche quando è bloccato e modificarne l'aspetto quando è bloccato come un modo per fornire un feedback visivo all'utente. Questo consente, ad esempio, all'applicazione di mostrare all'utente la posizione di un oggetto e di renderlo chiaro che si trova dietro una superficie reale.
-   * Per ottenere questo risultato, eseguire il rendering della geometria una seconda volta con un shader diverso che crea l'aspetto "nascosto" desiderato. Prima di eseguire il rendering della geometria per la seconda volta, apportare due modifiche allo [stato di stencil Depth](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx). Per prima cosa, impostare la funzione depth su "maggiore o uguale a" in modo che la geometria sia visibile solo se è **più lontana** dalla fotocamera rispetto a tutte le geometrie precedentemente sottoposte a rendering. In secondo luogo, impostare DepthWriteMask su zero, in modo che il buffer di profondità non venga modificato (il buffer di profondità deve continuare a rappresentare la profondità della geometria **più vicina** alla fotocamera).
+   * Per ottenere questo risultato, eseguire il rendering della geometria una seconda volta con un shader diverso che crea l'aspetto "nascosto" desiderato. Prima di eseguire il rendering della geometria per la seconda volta, apportare due modifiche allo [stato di stencil Depth](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc). Per prima cosa, impostare la funzione depth su "maggiore o uguale a" in modo che la geometria sia visibile solo se è **più lontana** dalla fotocamera rispetto a tutte le geometrie precedentemente sottoposte a rendering. In secondo luogo, impostare DepthWriteMask su zero, in modo che il buffer di profondità non venga modificato (il buffer di profondità deve continuare a rappresentare la profondità della geometria **più vicina** alla fotocamera).
 
 Le [prestazioni](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) sono un aspetto importante quando si esegue il rendering dei mesh di mapping spaziali. Di seguito sono riportate alcune tecniche di rendering specifiche per il rendering delle mesh di mapping spaziale:
 * Regola densità triangolo
@@ -227,11 +227,11 @@ Le [prestazioni](../develop/platform-capabilities-and-apis/understanding-perform
    * Poiché l'abbassamento di livello viene eseguito in base a mesh e le superfici spaziali possono essere di grandi dimensioni, la suddivisione di ogni mesh della superficie spaziale in blocchi più piccoli può comportare un abbattimento più efficiente (in quanto viene eseguito il rendering di un numero inferiore di triangoli Offscreen). Tuttavia, esiste un compromesso; maggiore è il numero di mesh disponibili, maggiore è il numero di chiamate da creare, che possono aumentare i costi della CPU. In un caso estremo, i calcoli per l'eliminazione di tronco possono anche avere un costo della CPU misurabile.
 * Modificare l'ordine di rendering
    * Le superfici spaziali tendono a essere di grandi dimensioni, perché rappresentano l'intero ambiente dell'utente che la circonda. I costi di elaborazione dei pixel sulla GPU possono essere elevati, soprattutto nei casi in cui è presente più di un livello di geometria visibile, incluse le superfici spaziali e altri ologrammi. In questo caso, il livello più vicino all'utente occlusione i livelli più lontani, quindi qualsiasi tempo GPU dedicato al rendering di questi livelli più distanti viene sprecato.
-   * Per ridurre questo lavoro ridondante sulla GPU, è possibile eseguire il rendering di superfici opache in ordine da primo a indietro (più vicine prima, più distanti le ultime). Per "opaque" si intende la superficie per la quale DepthWriteMask è impostato su uno nello [stato depth-stencil](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx). Quando viene eseguito il rendering delle superfici più vicine, il buffer di profondità verrà preimpostato in modo che le superfici più remote vengano ignorate in modo efficiente dal processore pixel sulla GPU.
+   * Per ridurre questo lavoro ridondante sulla GPU, è possibile eseguire il rendering di superfici opache in ordine da primo a indietro (più vicine prima, più distanti le ultime). Per "opaque" si intende la superficie per la quale DepthWriteMask è impostato su uno nello [stato depth-stencil](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc). Quando viene eseguito il rendering delle superfici più vicine, il buffer di profondità verrà preimpostato in modo che le superfici più remote vengano ignorate in modo efficiente dal processore pixel sulla GPU.
 
 ## <a name="mesh-processing"></a>Elaborazione mesh
 
-Un'applicazione potrebbe voler eseguire [varie operazioni](spatial-mapping.md#mesh-processing) sulle mesh della superficie spaziale in base alle proprie esigenze. I dati relativi a indici e vertici forniti con ogni mesh di superficie spaziale utilizzano lo stesso layout familiare dei [vertex buffer e degli indici](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) utilizzati per il rendering di mesh triangolari in tutte le moderne API di rendering. Tuttavia, un fatto fondamentale da tenere presente è che i triangoli di mapping spaziale hanno un **ordine di avvolgimento in senso antiorario**. Ogni triangolo è rappresentato da tre indici di vertice nel buffer di indice della mesh e questi indici identificano i vertici del triangolo in un ordine **orario** , quando il triangolo viene visualizzato dal lato **anteriore** . Il lato anteriore (o esterno) delle mesh della superficie spaziale corrisponde a quello previsto per il lato anteriore (visibile) delle superfici reali.
+Un'applicazione potrebbe voler eseguire [varie operazioni](spatial-mapping.md#mesh-processing) sulle mesh della superficie spaziale in base alle proprie esigenze. I dati relativi a indici e vertici forniti con ogni mesh di superficie spaziale utilizzano lo stesso layout familiare dei [vertex buffer e degli indici](/windows/win32/direct3d9/rendering-from-vertex-and-index-buffers) utilizzati per il rendering di mesh triangolari in tutte le moderne API di rendering. Tuttavia, un fatto fondamentale da tenere presente è che i triangoli di mapping spaziale hanno un **ordine di avvolgimento in senso antiorario**. Ogni triangolo è rappresentato da tre indici di vertice nel buffer di indice della mesh e questi indici identificano i vertici del triangolo in un ordine **orario** , quando il triangolo viene visualizzato dal lato **anteriore** . Il lato anteriore (o esterno) delle mesh della superficie spaziale corrisponde a quello previsto per il lato anteriore (visibile) delle superfici reali.
 
 Le applicazioni devono solo semplificare la rete se la densità del triangolo più grossolana fornita dall'osservatore di superficie è ancora insufficiente. questo lavoro è dispendioso dal punto di vista del calcolo ed è già eseguito dal runtime per generare i vari livelli di dettaglio forniti.
 
@@ -292,7 +292,7 @@ Per semplificare la progettazione dell'esperienza di analisi corretta, considera
    * Un'applicazione può richiedere un'analisi di tutte le superfici nella stanza corrente, incluse quelle dietro l'utente.
    * Ad esempio, un gioco può mettere l'utente nel ruolo di Gulliver, in assiege da centinaia di piccoli Lillipuziani che si avvicinano da tutte le direzioni.
    * In questi casi, l'applicazione dovrà determinare il numero di superfici presenti nella stanza corrente è già stata analizzata e indicare allo sguardo dell'utente di colmare gap significative.
-   * La chiave per questo processo è fornire feedback visivo che rende chiaro all'utente quali superfici non sono ancora state analizzate. L'applicazione potrebbe, ad esempio, usare la [nebbia basata sulla distanza](https://msdn.microsoft.com/library/windows/desktop/bb173401%28v=vs.85%29.aspx) per evidenziare visivamente le aree non coperte dalle superfici di mapping spaziale.
+   * La chiave per questo processo è fornire feedback visivo che rende chiaro all'utente quali superfici non sono ancora state analizzate. L'applicazione potrebbe, ad esempio, usare la [nebbia basata sulla distanza](/windows/win32/direct3d9/fog-formulas) per evidenziare visivamente le aree non coperte dalle superfici di mapping spaziale.
 
 * **Eseguire uno snapshot iniziale dell'ambiente**
    * Un'applicazione potrebbe voler ignorare tutte le modifiche apportate all'ambiente dopo aver eseguito uno snapshot iniziale.
@@ -373,7 +373,7 @@ Di seguito sono riportati alcuni esempi di diversi tipi di elaborazione di mesh 
 * Affinché le mesh della superficie siano orientate correttamente, ogni GameObject deve essere attivo prima di essere inviato al SurfaceObserver per costruire la mesh. In caso contrario, le maglie vengono visualizzate nello spazio, ma ruotate a angoli strani.
 * Il GameObject che esegue lo script che comunica con il SurfaceObserver deve essere impostato sull'origine. In caso contrario, tutte le GameObject create e inviate al SurfaceObserver per la costruzione delle mesh avranno un offset uguale all'offset dell'oggetto del gioco padre. In questo modo, le mesh vengono visualizzate a diversi metri, il che rende difficile il debug di ciò che accade.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Sistemi di coordinate](coordinate-systems.md)
 * [Mapping spaziale in DirectX](../develop/native/spatial-mapping-in-directx.md)

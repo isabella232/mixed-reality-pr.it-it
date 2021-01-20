@@ -6,19 +6,19 @@ ms.author: toddly
 ms.date: 05/27/2020
 ms.topic: article
 keywords: Note sulla versione, versione, Windows 10, Build, 20H1, sistema operativo, maggio 2020, 2004
-ms.openlocfilehash: 514b41a6064f5044251cab9c47789e87dc245baa
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+ms.openlocfilehash: e69bc4d67d37ef7615443d417a151ee32a285f0e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781512"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582840"
 ---
 # <a name="release-notes"></a>Note sulla versione
 
-È possibile trovare le note sulla versione più recenti per gli auricolari per la realtà mista Windows e i driver del controller di movimento nella [documentazione della Guida](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/mixed-reality-software)per gli appassionati Per informazioni HoloLens, vedere le note sulla versione [HoloLens (1st Gen)](https://docs.microsoft.com/hololens/hololens1-release-notes) o [HoloLens 2](https://docs.microsoft.com/hololens/hololens-release-notes) .
+È possibile trovare le note sulla versione più recenti per gli auricolari per la realtà mista Windows e i driver del controller di movimento nella [documentazione della Guida](/windows/mixed-reality/enthusiast-guide/mixed-reality-software)per gli appassionati Per informazioni HoloLens, vedere le note sulla versione [HoloLens (1st Gen)](/hololens/hololens1-release-notes) o [HoloLens 2](/hololens/hololens-release-notes) .
 
 ## <a name="see-also"></a>Vedere anche
-* [Supporto per cuffie immersive (collegamento esterno)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
+* [Supporto per cuffie immersive (collegamento esterno)](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [Supporto di HoloLens (collegamento esterno)](https://support.microsoft.com/products/hololens)
 * [Installare gli strumenti](../develop/install-the-tools.md)
-* [Commenti e suggerimenti](../give-us-feedback.md)
+* [Commenti e suggerimenti](/hololens/hololens-feedback)

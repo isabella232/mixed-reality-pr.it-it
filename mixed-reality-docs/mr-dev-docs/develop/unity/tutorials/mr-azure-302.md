@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realtà mista, Accademia, Unity, esercitazione, API, visione artificiale, hololens, immersiva, VR, Windows 10, Visual Studio
-ms.openlocfilehash: f972ba57bc27bff32aba70972fad2e6374d0c574
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 2ba5f01b0b14c655f8639f74590a511629350fbb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679530"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583282"
 ---
 # <a name="mr-and-azure-302-computer-vision"></a>MR e Azure 302: Visione artificiale
 
@@ -42,7 +42,7 @@ Nell'applicazione, spetta all'utente come integrare i risultati con la progettaz
 
 <table>
 <tr>
-<th>Corso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
+<th>Corso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
 </tr><tr>
 <td> MR e Azure 302: Visione artificiale</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -63,19 +63,19 @@ Per questo corso è consigliabile usare i componenti hardware e software seguent
 - [Windows 10 SDK più recente](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Un [headset di Windows misto reality immersiv (VR)](../../../discover/immersive-headset-hardware-details.md) o [Microsoft HoloLens](../../../hololens-hardware-details.md) con la modalità di sviluppo abilitata
+- Un [headset di Windows misto reality immersiv (VR)](../../../discover/immersive-headset-hardware-details.md) o [Microsoft HoloLens](/hololens/hololens1-hardware) con la modalità di sviluppo abilitata
 - Una fotocamera connessa al PC (per lo sviluppo di auricolari immersivi)
 - Accesso a Internet per il programma di installazione di Azure e il recupero API Visione artificiale
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
 1.  Per evitare che si verifichino problemi durante la compilazione di questo progetto, è consigliabile creare il progetto indicato in questa esercitazione in una cartella radice o quasi radice (i percorsi di cartella lunghi possono causare problemi in fase di compilazione).
-2.  Configurare e testare il HoloLens. Se è necessario supporto per la configurazione di HoloLens, [vedere l'articolo relativo alla configurazione di HoloLens](https://docs.microsoft.com/hololens/hololens-setup). 
+2.  Configurare e testare il HoloLens. Se è necessario supporto per la configurazione di HoloLens, [vedere l'articolo relativo alla configurazione di HoloLens](/hololens/hololens-setup). 
 3.  Quando si inizia a sviluppare una nuova app HoloLens, è consigliabile eseguire la taratura e l'ottimizzazione dei sensori, a volte può essere utile per eseguire queste attività per ogni utente. 
 
-Per informazioni sulla calibrazione, seguire questo [collegamento all'articolo relativo alla calibrazione di HoloLens](../../../calibration.md#hololens-2).
+Per informazioni sulla calibrazione, seguire questo [collegamento all'articolo relativo alla calibrazione di HoloLens](/hololens/hololens-calibration#hololens-2).
 
-Per informazioni sull'ottimizzazione dei sensori, seguire questo [collegamento all'articolo relativo all'ottimizzazione del sensore HoloLens](../../../sensor-tuning.md).
+Per informazioni sull'ottimizzazione dei sensori, seguire questo [collegamento all'articolo relativo all'ottimizzazione del sensore HoloLens](/hololens/hololens-updates).
 
 ## <a name="chapter-1--the-azure-portal"></a>Capitolo 1: portale di Azure
 
@@ -104,7 +104,7 @@ Per usare il servizio *API visione artificiale* in Azure, sarà necessario confi
     3. Selezionare il piano **tariffario** appropriato. se è la prima volta che si crea un servizio di *API visione artificiale* , è necessario che sia disponibile un livello gratuito (denominato F0).
     4. Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. Si consiglia di lasciare tutti i servizi di Azure associati a un singolo progetto (ad esempio questi Lab) in un gruppo di risorse comune). 
 
-        > Per altre informazioni sui gruppi di risorse di Azure, [vedere l'articolo relativo al gruppo di risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Per altre informazioni sui gruppi di risorse di Azure, [vedere l'articolo relativo al gruppo di risorse](/azure/azure-resource-manager/resource-group-portal).
 
     5. Determinare il percorso del gruppo di risorse (se si sta creando un nuovo gruppo di risorse). Il percorso dovrebbe trovarsi idealmente nell'area in cui verrà eseguita l'applicazione. Alcune risorse di Azure sono disponibili solo in determinate aree geografiche.
 

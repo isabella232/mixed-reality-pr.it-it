@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 7/29/2019
 ms.topic: article
 keywords: OpenXR, Khronos, BasicXRApp, DirectX, nativo, app nativa, motore personalizzato, middleware
-ms.openlocfilehash: ba03799ff42d3a4c27799dcf2f4035d408360120
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 76193cdf3c790037474b66de9fbbbd1da8f31199
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613130"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583792"
 ---
 # <a name="openxr"></a>OpenXR
 
@@ -80,7 +80,7 @@ Sebbene alcune di queste estensioni possano iniziare come estensioni specifiche 
 
 *Il nuovo motore RenderDragon di Minecraft sta creando il proprio supporto VR per desktop usando OpenXR*
 
-Microsoft ha collaborato con Unity ed Epic Games per garantire che il futuro della realtà mista sia aperto, non solo per HoloLens 2, ma per tutta la gamma di PC VR, tra cui la [nuova cuffia G2 del riverbero di HP](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).  Per ulteriori informazioni sullo sviluppo di HoloLens (1a generazione), vedere le [Note sulla versione](https://docs.microsoft.com/hololens/hololens1-release-notes).
+Microsoft ha collaborato con Unity ed Epic Games per garantire che il futuro della realtà mista sia aperto, non solo per HoloLens 2, ma per tutta la gamma di PC VR, tra cui la [nuova cuffia G2 del riverbero di HP](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).  Per ulteriori informazioni sullo sviluppo di HoloLens (1a generazione), vedere le [Note sulla versione](/hololens/hololens1-release-notes).
 
 Per informazioni su come iniziare a usare OpenXR in Unity, Unreal Engine o il proprio motore, leggere l'articolo.
 

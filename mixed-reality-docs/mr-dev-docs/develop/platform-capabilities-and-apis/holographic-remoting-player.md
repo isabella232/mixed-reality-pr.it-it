@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicazione remota, comunicazione remota olografica, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale, diagnostica, prestazioni
-ms.openlocfilehash: c016221746efb34dd83ceb42a4a2cde156dde4c8
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7a7c7762f079dcc4ec05bacec8bd7ab0d3625e0e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006531"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583162"
 ---
 # <a name="holographic-remoting-player"></a>Holographic Remoting Player
 
@@ -83,5 +83,5 @@ Nella schermata principale è possibile **disabilitare** la diagnostica per disa
 * [HoloLens (First Gen): aggiungere la comunicazione remota olografica](add-holographic-remoting.md)
 * [Scrittura di un'app remota olografica remota usando le API di realtà mista di Windows](holographic-remoting-create-remote-wmr.md)
 * [Scrittura di un'app remota di comunicazione remota olografica usando le API di OpenXR](holographic-remoting-create-remote-openxr.md)
-* [Condizioni di licenza software per Holographic Remoting](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Condizioni di licenza software per Holographic Remoting](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Informativa sulla privacy di Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realtà mista, Accademia, Unity, esercitazione, API, Language Understanding Intelligence Service, Luis, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 431858d369bc7007cc5eddbf0e75d9b74b7ba5d3
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a91fcd2e20ce1e1731bd398fa72923f6ff5e8406
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679500"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583431"
 ---
 # <a name="mr-and-azure-303-natural-language-understanding-luis"></a>MR e Azure 303: LUIS (Natural Language Understanding)
 
@@ -44,7 +44,7 @@ Prepararsi a eseguire il training di LUIS più volte, come spiegato nel [capitol
 
 <table>
 <tr>
-<th>Corso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
+<th>Corso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
 </tr><tr>
 <td>MR e Azure 303: LUIS (Natural Language Understanding)</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -65,7 +65,7 @@ Per questo corso è consigliabile usare i componenti hardware e software seguent
 - [Windows 10 SDK più recente](../../install-the-tools.md)
 - [Unity 2017,4](../../install-the-tools.md)
 - [Visual Studio 2017](../../install-the-tools.md)
-- Un [headset di Windows misto reality immersiv (VR)](../../../discover/immersive-headset-hardware-details.md) o [Microsoft HoloLens](../../../hololens-hardware-details.md) con la modalità di sviluppo abilitata
+- Un [headset di Windows misto reality immersiv (VR)](../../../discover/immersive-headset-hardware-details.md) o [Microsoft HoloLens](/hololens/hololens1-hardware) con la modalità di sviluppo abilitata
 - Un set di cuffie con un microfono incorporato (se la cuffia non dispone di un MIC e di altoparlanti predefiniti)
 - Accesso a Internet per il programma di installazione di Azure e il recupero LUIS
 
@@ -105,11 +105,11 @@ Per usare il servizio *Language Understanding* in Azure, sarà necessario config
     3. Selezionare il piano **tariffario** appropriato. se è la prima volta che si crea un *servizio Luis*, è necessario che sia disponibile un livello gratuito (denominato F0). L'allocazione gratuita dovrebbe essere più che sufficiente per questo corso.
     4. Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. Si consiglia di lasciare tutti i servizi di Azure associati a un singolo progetto (ad esempio questi corsi) in un gruppo di risorse comune). 
 
-        > Per altre informazioni sui gruppi di risorse di Azure, [vedere l'articolo relativo al gruppo di risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Per altre informazioni sui gruppi di risorse di Azure, [vedere l'articolo relativo al gruppo di risorse](/azure/azure-resource-manager/resource-group-portal).
 
     5. Determinare il **percorso** del gruppo di risorse (se si sta creando un nuovo gruppo di risorse). Il percorso dovrebbe trovarsi idealmente nell'area in cui verrà eseguita l'applicazione. Alcune risorse di Azure sono disponibili solo in determinate aree geografiche.
     6. Sarà inoltre necessario confermare di aver compreso i termini e le condizioni applicati a questo servizio.
-    7. Selezionare **Crea**.
+    7. Selezionare **Create** (Crea).
 
         ![Crea servizio LUIS-input utente](images/AzureLabs-Lab3-03.png)
  
@@ -1117,4 +1117,4 @@ Quando si usa questa applicazione è possibile notare che, se si osserva l'ogget
 
 ### <a name="exercise-2"></a>Esercizio 2
 
-Provare a estendere le funzionalità di LUIS e app, aggiungendo funzionalità aggiuntive per gli oggetti nella scena. è ad esempio possibile creare nuovi oggetti in corrispondenza del punto di riscontro, a seconda di ciò che viene indicato dall'utente e quindi usare tali oggetti insieme agli oggetti scena correnti, con i comandi esistenti. 
+Provare a estendere le funzionalità di LUIS e app, aggiungendo funzionalità aggiuntive per gli oggetti nella scena. è ad esempio possibile creare nuovi oggetti in corrispondenza del punto di riscontro, a seconda di ciò che viene indicato dall'utente e quindi usare tali oggetti insieme agli oggetti scena correnti, con i comandi esistenti.

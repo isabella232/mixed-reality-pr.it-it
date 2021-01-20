@@ -6,12 +6,12 @@ ms.author: dobrown
 ms.date: 05/15/2019
 ms.topic: article
 keywords: VR, LBE, location based Entertainment, VR Arcade, Arcade, immersive, QR, QR code, hololens2
-ms.openlocfilehash: 7e5931e0d23ef6c905b8ec54d08e572a89e747e0
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 08ed651deaab0c230142f45b93858f41ee300323
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009401"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583139"
 ---
 # <a name="qr-code-tracking"></a>Rilevamento di codici a matrice
 
@@ -21,7 +21,7 @@ HoloLens 2 è in grado di rilevare i codici a matrice nell'ambiente attorno al v
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (prima generazione)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
+<th>Funzionalità</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens (prima generazione)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
 </tr><tr>
 <td> Rilevamento del codice a matrice</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️</td>
 </tr>
@@ -128,7 +128,7 @@ Ogni codice QR rilevato espone un [sistema di coordinate spaziali](../../design/
 
 Quando si usa direttamente il QR SDK, l'asse Z punta alla carta (non mostrata): quando viene convertito in coordinate Unity, l'asse Z punta all'esterno della carta ed è a sinistra.
 
-Il SpatialCoordinateSystem del codice a matrice viene allineato come illustrato. È possibile ottenere il sistema di coordinate dalla piattaforma chiamando <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview:: CreateCoordinateSystemForNode</a> e passando il SpatialGraphNodeId del codice.
+Il SpatialCoordinateSystem del codice a matrice viene allineato come illustrato. È possibile ottenere il sistema di coordinate dalla piattaforma chiamando <a href="/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview:: CreateCoordinateSystemForNode</a> e passando il SpatialGraphNodeId del codice.
 
 Nel codice C++ riportato di seguito viene illustrato come creare un rettangolo e posizionarlo utilizzando il sistema di coordinate del codice a matrice:
 
@@ -222,7 +222,7 @@ I dispositivi di realtà mista Windows rilevano codici QR a livello di sistema n
 Si consiglia di configurare l'app in modo da ignorare i codici QR precedenti a un timestamp specifico. Attualmente, l'API non supporta la cancellazione della cronologia del codice QR.
 
 ### <a name="qr-code-placement-in-a-space"></a>Posizionamento del codice a matrice in uno spazio
-Per consigli su dove e come collocare i codici QR, vedere [considerazioni sull'ambiente per HoloLens](../../environment-considerations-for-hololens.md).
+Per consigli su dove e come collocare i codici QR, vedere [considerazioni sull'ambiente per HoloLens](/hololens/hololens-environment-considerations).
 
 ## <a name="qr-api-reference"></a>Riferimento all'API QR
 
@@ -460,4 +460,4 @@ namespace Microsoft.MixedReality.QR
 
 ## <a name="see-also"></a>Vedere anche
 * [Sistemi di coordinate](../../design/coordinate-systems.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Ancoraggi nello spazio di Azure</a>
+* <a href="/azure/spatial-anchors/overview" target="_blank">Ancoraggi nello spazio di Azure</a>

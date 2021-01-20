@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 3D, modellazione, linee guida per la modellazione, requisiti delle risorse, linee guida per la creazione, avvio, avvio 3D, trama, materiali, complessità, triangoli, mesh, poligoni, policount, limiti, cuffie per realtà mista, cuffie per la realtà mista, auricolare di realtà virtuale
-ms.openlocfilehash: 17014e3deaaa161dd7949a55679b916e872ad5a7
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: c5447661bdbe6aeb59a3e7a524863d68b717ee0e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757788"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583817"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>Creare modelli 3D per l'uso nello spazio iniziale
 
@@ -101,7 +101,7 @@ Indica allo shader se qualcosa è metal o no. Raw Metal = 1,0 bianco non metal =
 La Home realtà mista di Windows offre una serie di ottimizzazioni oltre alla specifica glTF di base definita con estensioni personalizzate. Queste ottimizzazioni sono necessarie nelle versioni di Windows <= 1709 e consigliate nelle versioni più recenti di Windows. È possibile ottimizzare facilmente qualsiasi modello glTF 2,0 usando il [convertitore di asset per la realtà mista di Windows disponibile su GitHub](https://github.com/Microsoft/glTF-Toolkit/releases). Questo strumento esegue le ottimizzazioni e la compressione delle trame corrette come specificato di seguito. Per uso generale, è consigliabile usare WindowsMRAssetConverter, ma se è necessario un maggiore controllo sull'esperienza e si vuole creare una pipeline di ottimizzazione personalizzata, è possibile fare riferimento alla specifica dettagliata riportata di seguito.  
 
 > [!NOTE]
-> Per un elenco definitivo delle possibilità per i limiti di modello esatti, vedere l'articolo relativo all' [ottimizzazione del modello 3D](https://docs.microsoft.com/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) da usare nelle applicazioni Dynamics 365.
+> Per un elenco definitivo delle possibilità per i limiti di modello esatti, vedere l'articolo relativo all' [ottimizzazione del modello 3D](/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) da usare nelle applicazioni Dynamics 365.
 
 ### <a name="materials"></a>Materiali
 
@@ -184,7 +184,7 @@ LODs vengono visualizzati in realtà mista di Windows in base a un sistema basat
 
 |  Livello LOD  |  Intervallo consigliato  |  Intervallo predefinito | 
 |-------|-------|-------|
-|  LOD 0  |  100%-50% |  0,5 | 
+|  LOD 0  |  100%-50% |  0.5 | 
 |  LOD 1 |  Inferiore al 50%-20%  |  0,2 | 
 |  LOD 2 |  Inferiore al 20%-1%  |  0.01 | 
 |  LOD 4  |  Inferiore all'1%  |  - | 
@@ -192,7 +192,7 @@ LODs vengono visualizzati in realtà mista di Windows in base a un sistema basat
 ## <a name="animation-guidelines"></a>Linee guida sull'animazione
 
 > [!NOTE]
-> Questa funzionalità è stata aggiunta come parte dell' [aggiornamento di Windows 10 aprile 2018](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). Nelle versioni precedenti di Windows queste animazioni non vengono riprodotte, ma verranno comunque caricate in base alle indicazioni fornite in questo articolo.  
+> Questa funzionalità è stata aggiunta come parte dell' [aggiornamento di Windows 10 aprile 2018](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). Nelle versioni precedenti di Windows queste animazioni non vengono riprodotte, ma verranno comunque caricate in base alle indicazioni fornite in questo articolo.  
 
 La Home realtà mista supporta gli oggetti glTF animati su cuffie HoloLens e Immersive (VR). Se si desidera attivare animazioni sul modello, è necessario utilizzare l'estensione Mappa animazione nel formato glTF. Questa estensione consente di attivare animazioni nel modello glTF in base alla presenza dell'utente in tutto il mondo. ad esempio, attivare un'animazione quando l'utente si avvicina all'oggetto o durante la ricerca. Se l'oggetto glTF ha animazioni, ma non definisce i trigger, le animazioni non verranno riprodotte. La sezione seguente descrive un flusso di lavoro per l'aggiunta di questi trigger a qualsiasi oggetto glTF animato.
 
@@ -255,7 +255,7 @@ Le animazioni non possono essere più lunghe di 20 minuti e non possono contener
 
 Windows non supporta il capovolgimento della geometria con scale negative. La geometria con scale negative provocherà probabilmente artefatti visivi.
 
-L'asset glTF deve puntare alla scena predefinita usando l'attributo della scena per il rendering da parte di Windows MR. Inoltre, il caricatore di Windows glTF prima dell' [aggiornamento di Windows 10 aprile 2018](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) **richiede** funzioni di accesso:
+L'asset glTF deve puntare alla scena predefinita usando l'attributo della scena per il rendering da parte di Windows MR. Inoltre, il caricatore di Windows glTF prima dell' [aggiornamento di Windows 10 aprile 2018](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) **richiede** funzioni di accesso:
 * Deve avere valori min e max.
 * Il tipo SCALAr deve essere componentType UNSIGNED_SHORT (5123) o UNSIGNED_INT (5125).
 * Il tipo VEC2 e VEC3 deve essere componentType FLOAT (5126).
@@ -289,7 +289,7 @@ Windows MR non supporta le linee e i punti della modalità primitive.
 * [HoloLens Mixed Reality texture Packaging Extensions Specification](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_normalRoughnessMetallic/README.md)
 * [Specifica delle estensioni di Microsoft DDS Textures glTF](https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/MSFT_texture_dds)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Implementare utilità di avvio per app 3D (app UWP)](implementing-3d-app-launchers.md)
 * [Implementare utilità di avvio per app 3D (app Win32)](implementing-3d-app-launchers-win32.md)

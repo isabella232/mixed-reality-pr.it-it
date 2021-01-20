@@ -6,12 +6,12 @@ ms.author: alexpf
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, modelli di app, progettazione, HoloLens, analisi chat room, mapping spaziale, mesh, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare realtà virtuale, HoloLens
-ms.openlocfilehash: f4ec072c8fde8d3e7e390bd837116a8262bac38b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 0bef09d7f023127f1f5eedf28065758b4a438f3e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848256"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583603"
 ---
 # <a name="room-scan-visualization"></a>Visualizzazione della scansione dello spazio
 
@@ -34,7 +34,7 @@ In tutti questi casi, i dati effettivi raccolti durante l'esplorazione vengono a
     </colgroup>
     <tr>
         <td><strong>Funzionalità</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
     </tr>
      <tr>

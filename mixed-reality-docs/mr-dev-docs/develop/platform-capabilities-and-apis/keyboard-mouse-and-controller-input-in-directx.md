@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Realtà mista di Windows, tastiera, mouse, controller di gioco, Xbox Controller, HoloLens, desktop, procedura dettagliata, codice di esempio
-ms.openlocfilehash: b7984c86b952612af020e2bd91063e0a9b0d92f6
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 3cf35ba195e839332cbedb8b2c3945334a158cbc
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530051"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583634"
 ---
 # <a name="keyboard-mouse-and-controller-input-in-directx"></a>Input da tastiera, mouse e controller in DirectX
 
@@ -60,7 +60,7 @@ Per ulteriori informazioni sull'implementazione del supporto CoreTextEditContext
 È anche possibile usare l'input del mouse, tramite i gestori eventi di input di UWP CoreWindow. Ecco come modificare il modello di app olografico di Windows per supportare i clic del mouse nello stesso modo dei movimenti premuti. Dopo aver apportato questa modifica, un clic del mouse quando si indossa un dispositivo headset immersivo riposiziona il cubo.
 
 > [!NOTE]
-> Le app UWP possono anche ottenere dati XY non elaborati per il mouse usando l'API [MouseDevice](https://docs.microsoft.com/uwp/api/Windows.Devices.Input.MouseDevice) .
+> Le app UWP possono anche ottenere dati XY non elaborati per il mouse usando l'API [MouseDevice](/uwp/api/Windows.Devices.Input.MouseDevice) .
 
 Per iniziare, dichiarare un nuovo gestore OnPointerPressed in AppView. h:
 

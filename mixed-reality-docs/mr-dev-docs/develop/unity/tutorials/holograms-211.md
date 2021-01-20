@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, esercitazione, movimento, HoloLens, realtà mista, Unity, Headset per la realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale, Windows 10
-ms.openlocfilehash: 9f83e2f3b02cf8d83b2fb58a3a0d05dc8576b0e8
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: dfb31901001f760abd60bda3022902267b7c05cf
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678290"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583702"
 ---
 # <a name="mr-input-211-gesture"></a>Input MR 211: Movimento
 
 >[!NOTE]
->Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](../../../mr-learning-base-01.md).
+>Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](./mr-learning-base-01.md).
 
 I [movimenti](../../../design/gaze-and-commit.md#composite-gestures) attivano l'azione dell'utente. Grazie ai movimenti, gli utenti possono interagire con gli ologrammi. In questo corso si apprenderà come tenere traccia delle mani dell'utente, rispondere all'input dell'utente e fornire commenti e suggerimenti all'utente in base allo stato e alla posizione della mano.
 
@@ -38,7 +38,7 @@ In questo corso verrà rivisitato **Esplora modelli** di progetto Unity, che è 
 
 <table>
 <tr>
-<th>Corso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
+<th>Corso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
 </tr><tr>
 <td>Input MR 211: Movimento</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -346,7 +346,7 @@ GestureManager.cs e AstronautManager.cs ci consentiranno di eseguire le operazio
 1. Usare la parola chiave Speech "**Move Astronaut**" per abilitare i movimenti di **manipolazione** e la "**ruota astronauta**" per disabilitarli.
 2. Passa a rispondere al **riconoscitore del movimento di manipolazione**.
 
-È possibile iniziare subito.
+A questo punto, procedere con l'esercitazione.
 
 1. Nel pannello **gerarchia** creare un nuovo GameObject vuoto. Assegnare al file il nome "**AstronautManager**".
 2. Nel pannello **Inspector** fare clic sul pulsante **Add Component** .
@@ -543,7 +543,7 @@ A tale scopo, aggiungere altre due parole chiave all'origine di input vocale del
 
 ## <a name="the-end"></a>La fine
 
-Congratulazioni. A questo punto è stato completato il **movimento Mr Input 211:**.
+La procedura è stata completata. A questo punto è stato completato il **movimento Mr Input 211:**.
 
 * Si è in grado di rilevare e rispondere agli eventi di rilevamento, spostamento e manipolazione della mano.
 * Si comprende la differenza tra i movimenti di spostamento e manipolazione.

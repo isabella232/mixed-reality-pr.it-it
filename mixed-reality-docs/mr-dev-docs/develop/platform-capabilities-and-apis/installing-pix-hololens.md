@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/02/2020
 ms.topic: article
 keywords: HoloLens, HoloLens 2, PIX, acquisizione, cuffia a realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 598a6b891798be7059eae2eff578c6bbbae442f6
-ms.sourcegitcommit: 9d79aaa313f003dd42d5610d458031890776ee8e
+ms.openlocfilehash: 29cb741cd986fbb98dabb1faf2051450fd0286c3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97822923"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583089"
 ---
 # <a name="installing-pix-for-hololens-2"></a>Installazione PIX per HoloLens 2
 
@@ -21,7 +21,7 @@ ms.locfileid: "97822923"
 
 1. Scaricare la [versione]( https://devblogs.microsoft.com/pix/download) più recente di pix dal PC host e connettere HoloLens 2 al PC tramite un cavo USB.
 
-2. Se il HoloLens 2 si trova in una [Build di Windows Insider](https://insider.windows.com) o ha una configurazione che interrompe Pix,  [relampeggiare il dispositivo](https://docs.microsoft.com/hololens/hololens-recovery) per cancellare tutti i dati.
+2. Se il HoloLens 2 si trova in una [Build di Windows Insider](https://insider.windows.com) o ha una configurazione che interrompe Pix,  [relampeggiare il dispositivo](/hololens/hololens-recovery) per cancellare tutti i dati.
 
 3. Abilitare la **modalità sviluppatore** e il portale per i **dispositivi**:
 
@@ -46,7 +46,7 @@ ms.locfileid: "97822923"
 * Con il dispositivo ancora connesso, sveglio e con l'utente connesso, avviare Visual Studio.
 
 > [!IMPORTANT]
-> Verificare che il dispositivo non sia in modalità standby o in stato di sospensione. In caso di problemi con questo passaggio, fare riferimento alle istruzioni del portale per i [dispositivi Windows](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+> Verificare che il dispositivo non sia in modalità standby o in stato di sospensione. In caso di problemi con questo passaggio, fare riferimento alle istruzioni del portale per i [dispositivi Windows](./using-the-windows-device-portal.md).
 
 ## <a name="preparing-for-deployment"></a>Preparazione per la distribuzione
 
@@ -114,5 +114,5 @@ Per prima cosa, usare il portale del dispositivo per verificare che l'app non si
 
 PIX è ora pronto per l'uso.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Home page di PIX](https://devblogs.microsoft.com/pix)

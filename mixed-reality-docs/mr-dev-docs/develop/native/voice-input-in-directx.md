@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: procedura dettagliata, comando vocale, frase, riconoscimento, sintesi vocale, DirectX, piattaforma, Cortana, realtà mista di Windows
-ms.openlocfilehash: c917fbc4215442bc66f52dc2c527e01b2c446594
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 5f7ed587b474d147c0b13e4896a89f655f8dc30b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613105"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583745"
 ---
 # <a name="voice-input-in-directx"></a>Input vocale in DirectX
 
@@ -67,7 +67,7 @@ m_speechCommandList->Append(StringReference(L"SpeechRecognizer"));
    m_speechCommandData.push_back(float4(0.5f, 0.1f, 1.f, 1.f));
 ```
 
-Per caricare l'elenco di comandi nell'elenco di vincoli per il riconoscimento vocale, usare un oggetto [SpeechRecognitionListConstraint](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) .
+Per caricare l'elenco di comandi nell'elenco di vincoli per il riconoscimento vocale, usare un oggetto [SpeechRecognitionListConstraint](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint) .
 
 ```
 SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListConstraint(m_speechCommandList);
@@ -86,7 +86,7 @@ SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListCon
    });
 ```
 
-Sottoscrivere l'evento [ResultGenerated](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.resultgenerated.aspx) sulla [SpeechContinuousRecognitionSession](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.aspx)del riconoscimento vocale. Questo evento invia una notifica all'app quando uno dei comandi è stato riconosciuto.
+Sottoscrivere l'evento [ResultGenerated](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession) sulla [SpeechContinuousRecognitionSession](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession)del riconoscimento vocale. Questo evento invia una notifica all'app quando uno dei comandi è stato riconosciuto.
 
 ```
 m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
@@ -95,7 +95,7 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
            );
 ```
 
-Il gestore dell'evento *OnResultGenerated* riceve i dati dell'evento in un'istanza di [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) . Se la confidenza è maggiore della soglia definita, l'applicazione deve tenere presente che si è verificato l'evento. Salvare i dati dell'evento in modo che sia possibile utilizzarli in un ciclo di aggiornamento successivo.
+Il gestore dell'evento *OnResultGenerated* riceve i dati dell'evento in un'istanza di [SpeechContinuousRecognitionResultGeneratedEventArgs](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionResultGeneratedEventArgs) . Se la confidenza è maggiore della soglia definita, l'applicazione deve tenere presente che si è verificato l'evento. Salvare i dati dell'evento in modo che sia possibile utilizzarli in un ciclo di aggiornamento successivo.
 
 Da *HolographicVoiceInputSampleMain. cpp*:
 
@@ -256,7 +256,7 @@ catch (Exception^ exception)
 ```
 
 > [!NOTE]
-> Sono disponibili diversi [SpeechRecognitionScenarios](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) predefiniti che è possibile usare per ottimizzare il riconoscimento vocale.
+> Sono disponibili diversi [SpeechRecognitionScenarios](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionScenario) predefiniti che è possibile usare per ottimizzare il riconoscimento vocale.
 
 * Per ottimizzare la dettatura, utilizzare lo scenario di dettatura.<br/>
    ```
@@ -431,5 +431,5 @@ catch (Exception^ exception)
 ```
 
 ## <a name="see-also"></a>Vedere anche
-* [Progettazione di app vocali](https://msdn.microsoft.com/library/dn596121.aspx)
+* [Progettazione di app vocali](/windows/uwp/design/input/speech-interactions)
 * [Esempio SpeechRecognitionAndSynthesis](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)

@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realtà mista, Accademia, Unity, esercitazione, API, servizi multimediali, streaming video, 360, immersiva, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 1d53b260b2c4b00ff6bf985646a45948472a56a5
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 3a0401b7503d8a783ba529cf24cdf6cc55c88311
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679520"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583452"
 ---
 # <a name="mr-and-azure-306-streaming-video"></a>MR e Azure 306: Streaming video
 
@@ -43,7 +43,7 @@ Nell'applicazione, spetta all'utente come integrare i risultati con la progettaz
 
 <table>
 <tr>
-<th>Corso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
+<th>Corso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
 </tr><tr>
 <td> MR e Azure 306: Streaming video</td><td style="text-align: center;"> </td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -142,7 +142,7 @@ Per usare il servizio multimediale di Azure, è necessario configurare un'istanz
 
     3. Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. Si consiglia di lasciare tutti i servizi di Azure associati a un singolo progetto (ad esempio questi Lab) in un gruppo di risorse comune). 
     
-    > Per altre informazioni sui gruppi di risorse di Azure, seguire questo collegamento per informazioni [su come gestire i gruppi di risorse di Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+    > Per altre informazioni sui gruppi di risorse di Azure, seguire questo collegamento per informazioni [su come gestire i gruppi di risorse di Azure](/azure/azure-resource-manager/resource-group-portal).
 
     4.  Determinare il **percorso** del gruppo di risorse (se si sta creando un nuovo gruppo di risorse). Il percorso dovrebbe trovarsi idealmente nell'area in cui verrà eseguita l'applicazione. Alcune risorse di Azure sono disponibili solo in determinate aree geografiche.
 
@@ -245,12 +245,12 @@ Per usare il servizio multimediale di Azure, è necessario configurare un'istanz
 
 23. Verrà richiesto di impostare un **localizzatore**, ovvero il punto di ingresso, per file/s negli asset. Per lo scenario, impostare le proprietà seguenti:
 
-    1.  Tipo di localizzatore **Locator type**  >  **Progressive**.
+    1.  Tipo di localizzatore   >  **Progressive**.
 
     2.  La **Data** e l' **ora** verranno impostate per l'utente, dalla data corrente, a un'ora futura (100 anni in questo caso). Lasciarlo invariato o modificarlo in base alle esigenze.
 
     > [!NOTE]
-    > Per altre informazioni sui localizzatori e sulle opzioni che è possibile scegliere, vedere la [documentazione di servizi multimediali di Azure](https://docs.microsoft.com/azure/media-services/media-services-concepts).
+    > Per altre informazioni sui localizzatori e sulle opzioni che è possibile scegliere, vedere la [documentazione di servizi multimediali di Azure](/azure/media-services/media-services-concepts).
 
 24. Nella parte inferiore del pannello fare clic sul pulsante **Aggiungi** .
 
@@ -285,7 +285,7 @@ Di seguito è riportata una configurazione tipica per lo sviluppo con la realtà
 
     ![Portale di Azure](images/AzureLabs-Lab6-30.png)
 
-4.  Passare quindi a **_File_ *impostazioni di compilazione* File** e passare alla piattaforma **piattaforma UWP (Universal Windows Platform)**, facendo clic sul pulsante **Switch Platform** .
+4.  Passare quindi a ***impostazioni di compilazione* File** e passare alla piattaforma **piattaforma UWP (Universal Windows Platform)**, facendo clic sul pulsante **Switch Platform** .
 
 5.  Assicurarsi inoltre che:
 
@@ -367,7 +367,7 @@ Procedura: importare il **file unitypackage Tools**:
 
 4.  All'interno della **gerarchia** selezionare l'oggetto **principale della fotocamera** e aggiornare i componenti seguenti:
 
-    1.  **Trasformazione**
+    1.  **Trasformare**
 
         1.  Position = **X**: 0, **Y**: 0, **Z**: 0.
 
@@ -606,7 +606,7 @@ Per creare questa classe:
     ```
 
     > [!TIP] 
-    > Il metodo **ChangeScene ()** usa una funzionalità C utile \# chiamata *operatore condizionale*. In questo modo è possibile controllare le condizioni e i valori restituiti in base al risultato del controllo, il tutto all'interno di un'unica istruzione. Seguire questo [collegamento per altre informazioni sull'operatore condizionale](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/conditional-operator).
+    > Il metodo **ChangeScene ()** usa una funzionalità C utile \# chiamata *operatore condizionale*. In questo modo è possibile controllare le condizioni e i valori restituiti in base al risultato del controllo, il tutto all'interno di un'unica istruzione. Seguire questo [collegamento per altre informazioni sull'operatore condizionale](/dotnet/csharp/language-reference/operators/conditional-operator).
 
 11. Salvare le modifiche in Visual Studio prima di tornare a Unity.
 
@@ -629,7 +629,7 @@ Per creare questa classe:
 
 2.  Fare clic con il pulsante destro del mouse nel pannello del **progetto** , **Crea* * C \# script * *. Denominare **lo script.**
 
-3.  Fare doppio clic sul nuovo **_Gaze_*script di sguardo _ per aprirlo con _* Visual Studio 2017.**
+3.  Fare doppio clic sul nuovo ***script di sguardo _ per aprirlo con _* Visual Studio 2017.**
 
 4.  Verificare che lo spazio dei nomi seguente si trovi nella parte superiore dello script e rimuovere gli altri:
 
@@ -888,5 +888,3 @@ Per modificare i video in questa esercitazione è possibile usare solo una singo
 **Esercizio 2**
 
 Sperimentare Azure e Unity e provare a implementare la possibilità per l'app di selezionare automaticamente un video con dimensioni di file diverse, a seconda del livello di attendibilità di una connessione Internet.
-
-

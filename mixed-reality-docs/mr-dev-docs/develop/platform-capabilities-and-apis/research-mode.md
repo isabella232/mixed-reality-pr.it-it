@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 07/31/2020
 ms.topic: article
 keywords: Modalità di ricerca, CV, RS4, visione artificiale, ricerca, HoloLens, HoloLens 2
-ms.openlocfilehash: 6c40ac814a5dacfdbb942aec8200f46157bea161
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: c8e626969f87eda8b686ba759a167a2bf48e3277
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530083"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583130"
 ---
 # <a name="hololens-research-mode"></a>Modalità ricerca di HoloLens
 
@@ -36,7 +36,7 @@ Se si usa un HoloLens 2, è anche possibile accedere agli input aggiuntivi segue
 ![Schermata dell'app modalità di ricerca](images/sensor-stream-viewer.jpg)<br>
 *Acquisizione di realtà mista di un'applicazione di test che visualizza gli otto flussi di sensori disponibili in modalità ricerca*
 
-## <a name="usage"></a>Uso
+## <a name="usage"></a>Utilizzo
 
 La modalità di ricerca è progettata per ricercatori accademici e industriali che esplorano nuove idee nei campi di Visione artificiale e robotica.  Non è destinata alle applicazioni distribuite in ambienti aziendali o disponibili tramite il Microsoft Store o altri canali di distribuzione.
 
@@ -44,7 +44,7 @@ Inoltre, Microsoft non garantisce che la modalità di ricerca o la funzionalità
 
 ## <a name="security-and-performance"></a>Sicurezza e prestazioni
 
-L'abilitazione della modalità di ricerca usa più potenza della batteria rispetto all'uso di HoloLens 2 in condizioni normali, anche se l'applicazione che usa le funzionalità della modalità di ricerca non è in esecuzione.  L'abilitazione di questa modalità può anche ridurre la sicurezza complessiva del dispositivo perché le applicazioni possono usare i dati del sensore in modo errato.  Altre informazioni sulla sicurezza del dispositivo sono disponibili nelle [domande frequenti sulla sicurezza di HoloLens](https://docs.microsoft.com/hololens/hololens-faq-security).  
+L'abilitazione della modalità di ricerca usa più potenza della batteria rispetto all'uso di HoloLens 2 in condizioni normali, anche se l'applicazione che usa le funzionalità della modalità di ricerca non è in esecuzione.  L'abilitazione di questa modalità può anche ridurre la sicurezza complessiva del dispositivo perché le applicazioni possono usare i dati del sensore in modo errato.  Altre informazioni sulla sicurezza del dispositivo sono disponibili nelle [domande frequenti sulla sicurezza di HoloLens](/hololens/hololens-faq-security).  
 
 ## <a name="device-support"></a>Supporto di dispositivi
 <table>
@@ -54,8 +54,8 @@ L'abilitazione della modalità di ricerca usa più potenza della batteria rispet
     <col width="33%" /> </colgroup>
     <tr>
         <td><strong>Funzionalità</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens 1a generazione</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens 1a generazione</strong></a></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
     </tr>
      <tr>
         <td>Fotocamere di rilevamento Head</td>
@@ -92,7 +92,7 @@ La modalità di ricerca è un'estensione della modalità sviluppatore. Prima di 
 * Selezionare **per gli sviluppatori** e abilitare la **modalità sviluppatore**.
 * Scorri verso il basso e abilita **Portale dispositivi**.
 
-Una volta abilitate le funzionalità per gli sviluppatori, [connettersi al portale del dispositivo](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-hololens) per abilitare le funzionalità della modalità di ricerca:
+Una volta abilitate le funzionalità per gli sviluppatori, [connettersi al portale del dispositivo](/windows/uwp/debug-test-perf/device-portal-hololens) per abilitare le funzionalità della modalità di ricerca:
 
 * Passare alla **modalità di ricerca di System >** nel **portale del dispositivo**.
 * Selezionare **Consenti accesso al flusso del sensore**.
@@ -104,15 +104,15 @@ Dopo aver riavviato il dispositivo, le applicazioni caricate tramite il **portal
 *Finestra modalità di ricerca nel portale per dispositivi HoloLens*
 
 > [!IMPORTANT]
-> La modalità di ricerca per HoloLens 2 è disponibile a partire dalla Build 19041,1356. Se è necessario accedere a una build precedente, iscriversi al programma di [Anteprima di insider](https://docs.microsoft.com/hololens/hololens-insider) .
+> La modalità di ricerca per HoloLens 2 è disponibile a partire dalla Build 19041,1356. Se è necessario accedere a una build precedente, iscriversi al programma di [Anteprima di insider](/hololens/hololens-insider) .
 
 ### <a name="using-sensor-data-in-your-apps"></a>Uso dei dati dei sensori nelle app
 
-Le applicazioni possono accedere ai dati del flusso dei sensori nello stesso modo in cui [Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197) accede ai flussi della fotocamera e della foto. 
+Le applicazioni possono accedere ai dati del flusso dei sensori nello stesso modo in cui [Media Foundation](/windows/win32/medfound/microsoft-media-foundation-sdk) accede ai flussi della fotocamera e della foto. 
 
 Tutte le API che funzionano per lo sviluppo di HoloLens sono disponibili anche in modalità ricerca. In particolare, l'applicazione conosce esattamente dove HoloLens si trova nello spazio 6DoF a ogni tempo di acquisizione del fotogramma del sensore.
 
-Sono disponibili applicazioni di esempio che illustrano l'accesso al flusso in modalità ricerca, usando le [funzioni intrinseche ed estrinseche](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world)e i flussi di registrazione:
+Sono disponibili applicazioni di esempio che illustrano l'accesso al flusso in modalità ricerca, usando le [funzioni intrinseche ed estrinseche](/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world)e i flussi di registrazione:
 * [HoloLens (prima generazione)](https://github.com/Microsoft/HoloLensForCV)
 * [HoloLens 2](https://github.com/microsoft/HoloLens2ForCV)
 
@@ -124,7 +124,7 @@ Per HoloLens 2, usare lo strumento di [registrazione dei problemi](https://githu
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Microsoft Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197)
+* [Microsoft Media Foundation](/windows/win32/medfound/microsoft-media-foundation-sdk)
 * [Repository GitHub HoloLensForCV](https://github.com/Microsoft/HoloLensForCV)
 * [Repository GitHub HoloLens2ForCV](https://github.com/microsoft/HoloLens2ForCV)
 * [Avviare il Portale di dispositivi di Windows](using-the-windows-device-portal.md)

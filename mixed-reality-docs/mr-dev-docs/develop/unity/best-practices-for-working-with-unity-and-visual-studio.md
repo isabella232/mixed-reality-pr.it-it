@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Deploy, Unity, Visual Studio, HoloLens, HoloLens 2, Headset immersivo, procedure consigliate, cuffie per realtà mista, cuffie per la realtà mista, cuffie per realtà virtuale, UWP, Strumenti di Visual Studio Windows SDK
-ms.openlocfilehash: 9464c86826b9a8ea2c64384dfa699fc6d98743dd
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6940382af605c28686cec862cf2d9b6cb8411387
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009371"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583465"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Procedure consigliate per l'uso con Unity e Visual Studio
 
@@ -35,7 +35,7 @@ Si consiglia di installare l' [estensione *UnityScriptAnalyzer* di Visual Studio
 
 ## <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools per Unity
 
-Scarica [Visual Studio Tools per Unity](https://docs.microsoft.com/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity)
+Scarica [Visual Studio Tools per Unity](/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity)
 
 **Vantaggi di Visual Studio Tools per Unity**
 * Eseguire il debug della modalità di riproduzione in-editor di Unity da Visual Studio inserendo punti di interruzione, valutando variabili ed espressioni complesse.

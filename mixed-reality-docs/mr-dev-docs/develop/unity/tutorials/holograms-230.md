@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, esercitazione, mapping spaziale, superficie di ricostruzione, mesh, HoloLens, Reality Academy, Unity, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare di realtà virtuale, Windows 10
-ms.openlocfilehash: dc96fbff43c21216e3b860f1dbbbaae330e1f176
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6b218de239da04190fbf08ff8668fa16009df949
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677190"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582931"
 ---
 # <a name="mr-spatial-230-spatial-mapping"></a>Spaziale MR 230: Mapping spaziale
 
 >[!NOTE]
->Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](../../../mr-learning-base-01.md).
+>Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](./mr-learning-base-01.md).
 
 Il [mapping spaziale](../../../design/spatial-mapping.md) combina il mondo reale e il mondo virtuale insegnando gli ologrammi sull'ambiente. In MR Spatial 230 (Project Planetarium) si apprenderà come:
 
@@ -32,7 +32,7 @@ Il [mapping spaziale](../../../design/spatial-mapping.md) combina il mondo reale
 
 <table>
 <tr>
-<th>Corso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
+<th>Corso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
 </tr><tr>
 <td>Spaziale MR 230: Mapping spaziale</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
@@ -134,7 +134,7 @@ Il [mapping spaziale](../../../design/spatial-mapping.md) combina il mondo reale
 * In Visual Studio utilizzare la barra degli strumenti superiore per modificare la configurazione in **Release**.
 * Impostare la piattaforma su **x86**.
 * Fare clic sulla freccia a discesa a destra di "computer locale" e selezionare **computer remoto**.
-* Immettere l' [indirizzo IP del dispositivo](../../../connecting-to-wi-fi-on-hololens.md#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) nel campo Address e modificare la modalità di autenticazione in **Universal (protocollo non crittografato)**.
+* Immettere l' [indirizzo IP del dispositivo](/hololens/hololens-network#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) nel campo Address e modificare la modalità di autenticazione in **Universal (protocollo non crittografato)**.
 * Fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5**.
 * Guardare il pannello **output** in Visual Studio per lo stato di compilazione e distribuzione.
 * Una volta distribuita l'app, esaminare la chat room. Vengono visualizzate le aree circostanti coperte da mesh wireframe nere e bianche.
@@ -148,7 +148,7 @@ Si analizzerà ora il modo in cui il mapping spaziale può influire sulle presta
 * Fare clic su **Aggiungi Profiler > GPU**.
 * Fare clic su **> <Enter IP> Profiler attivo**.
 * Immettere l' **indirizzo IP** del HoloLens.
-* Fare clic su **Connetti**.
+* Fare clic su **Connect** (Connetti).
 * Osservare il numero di millisecondi impiegato dalla GPU per eseguire il rendering di un frame.
 * Arrestare l'esecuzione dell'applicazione nel dispositivo.
 * Tornare a Visual Studio e aprire **SpatialMappingObserver.cs**. Si troverà nella cartella HoloToolkit\SpatialMapping del progetto Assembly-CSharp (Windows universale).
@@ -1208,7 +1208,7 @@ public class PlanetOcclusion : MonoBehaviour
 
 ## <a name="the-end"></a>La fine
 
-Congratulazioni. A questo punto è stato completato il **mapping spaziale 230: mapping spaziale**.
+La procedura è stata completata. A questo punto è stato completato il **mapping spaziale 230: mapping spaziale**.
 
 * Si sa come analizzare l'ambiente e caricare i dati di mapping spaziale in Unity.
 * Si conoscono le nozioni di base degli shader e il modo in cui è possibile usare i materiali per visualizzare nuovamente il mondo.

@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: realtà mista, realtà mista di Windows, ologramma, Accademia, esercitazione, emulatore, HoloLens, Accademia di realtà mista, Unity, Headset per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, Windows 10, sguardo, movimenti, input vocale, suono spaziale, mapping spaziale
-ms.openlocfilehash: 3499011b8c91168bf27522e5f6f287b14295283e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: afe62dbc3385b41d08011bf7893672272f25485b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678310"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583696"
 ---
 # <a name="mr-basics-101e-complete-project-with-emulator"></a>Nozioni di base MR 101E: Progetto completo con emulatore
 
@@ -28,7 +28,7 @@ Questa esercitazione illustra in dettaglio un progetto completo, integrato in Un
 
 <table>
 <tr>
-<th>Corso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
+<th>Corso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
 </tr><tr>
 <td>Nozioni di base MR 101E: Progetto completo con emulatore</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>

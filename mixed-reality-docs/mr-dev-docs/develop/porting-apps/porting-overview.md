@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: porting, Unity, middleware, motore, UWP, Win32
-ms.openlocfilehash: 5a57c73481e80e5ab6fac1bd02b83c5d3dfaabb6
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 268d98b45aa659614e0266bfd1add7c7ed2f684a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007491"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583579"
 ---
 # <a name="porting-overview"></a>Panoramica della conversione
 
@@ -48,7 +48,7 @@ Il nostro Consiglio attuale per lo sviluppo non reale con realtà mista è **Unr
 
 ### <a name="hololens-1st-gen-unity-apps-to-hololens-2"></a>HoloLens (1st Gen) Unity Apps to HoloLens 2
 
-Se si dispone di un'applicazione HoloLens (1st Gen) Unity esistente che si desidera trasferire a un HoloLens 2, seguire le istruzioni contenute nell'articolo relativo al [porting di HoloLens](../unity/mrtk-porting-guide.md).
+Se si dispone di un'applicazione HoloLens (1st Gen) Unity esistente che si desidera trasferire a un HoloLens 2, seguire le istruzioni contenute nell'articolo relativo al [porting di HoloLens](./porting-hl1-hl2.md).
 
 ### <a name="windows-mixed-reality-headsets"></a>Visori VR di Windows Mixed Reality
 
@@ -61,4 +61,3 @@ Per qualsiasi esperienza SteamVR che si vuole aggiornare per gli auricolari di r
 ### <a name="2d-universal-windows-applications"></a>applicazioni Windows universali 2D
 
 Se si dispone di un'app UWP 2D esistente che si desidera trasferire a un auricolare o a un HoloLens per la realtà mista di Windows, seguire le istruzioni [per il porting di UWP 2D per la realtà mista di Windows](building-2d-apps.md) .
-

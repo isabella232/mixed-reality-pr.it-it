@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, logo, icona, modellazione, avvio, utilità di avvio 3D, riquadro, cubo attivo, collegamento diretto, SecondaryTile, riquadro secondario, UWP, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare in realtà virtuale, XML, riquadro, Unity
-ms.openlocfilehash: 40a68d0835ec8fb92d6417650700f41e8a31aab6
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7a0b73a0b3638c1aa2c9cbffacd548fb461589ea
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009681"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582972"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>Implementare utilità di avvio per app 3D (app UWP)
 
@@ -118,7 +118,7 @@ Quando si lavora con Unity, il progetto deve essere compilato e aperto in Visual
 >[!IMPORTANT]
 >i collegamenti profondi 3D (secondaryTiles) funzionano solo con le app UWP 2D. È tuttavia possibile creare un utilità di [avvio delle app 3D](implementing-3d-app-launchers.md) per avviare un'app esclusiva dalla Home realtà mista di Windows.
 
-Le applicazioni 2D possono essere migliorate per la realtà mista di Windows aggiungendo la possibilità di inserire modelli 3D dall'app nella [Home realtà mista di Windows](../discover/navigating-the-windows-mixed-reality-home.md) come collegamenti profondi al contenuto all'interno dell'app 2D, proprio come i [riquadri secondari 2D](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles) nel menu Start di Windows. Ad esempio, è possibile creare fotosfere 360 ° che si collegano direttamente a un'app del Visualizzatore foto di 360 ° o consentire agli utenti di inserire contenuto 3D da una raccolta di asset che apre una pagina di dettagli sull'autore. Si tratta solo di un paio di modi per espandere la funzionalità dell'applicazione 2D con contenuto 3D.
+Le applicazioni 2D possono essere migliorate per la realtà mista di Windows aggiungendo la possibilità di inserire modelli 3D dall'app nella [Home realtà mista di Windows](../discover/navigating-the-windows-mixed-reality-home.md) come collegamenti profondi al contenuto all'interno dell'app 2D, proprio come i [riquadri secondari 2D](/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles) nel menu Start di Windows. Ad esempio, è possibile creare fotosfere 360 ° che si collegano direttamente a un'app del Visualizzatore foto di 360 ° o consentire agli utenti di inserire contenuto 3D da una raccolta di asset che apre una pagina di dettagli sull'autore. Si tratta solo di un paio di modi per espandere la funzionalità dell'applicazione 2D con contenuto 3D.
 
 ### <a name="creating-a-3d-secondarytile"></a>Creazione di un "secondaryTile" 3D
 
@@ -191,7 +191,7 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 
 ### <a name="checking-that-the-user-is-in-windows-mixed-reality"></a>Verifica per verificare se l'utente si trova in una realtà mista di Windows
 
-i collegamenti profondi 3D (secondaryTiles) possono essere creati solo quando la visualizzazione viene visualizzata in un auricolare di realtà mista di Windows. Quando la visualizzazione non viene presentata in una serie di cuffie per la realtà mista di Windows, è consigliabile gestirla in modo appropriato nascondendo il punto di ingresso o mostrando un messaggio di errore. È possibile eseguire questa verifica eseguendo una query su [IsCurrentViewPresentedOnHolographic ()](https://docs.microsoft.com/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_).
+i collegamenti profondi 3D (secondaryTiles) possono essere creati solo quando la visualizzazione viene visualizzata in un auricolare di realtà mista di Windows. Quando la visualizzazione non viene presentata in una serie di cuffie per la realtà mista di Windows, è consigliabile gestirla in modo appropriato nascondendo il punto di ingresso o mostrando un messaggio di errore. È possibile eseguire questa verifica eseguendo una query su [IsCurrentViewPresentedOnHolographic ()](/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_).
 
 ## <a name="tile-notifications"></a>Notifiche del riquadro
 
@@ -201,7 +201,7 @@ Le notifiche dei riquadri attualmente non supportano l'invio di un aggiornamento
 * Polling periodico
 * Notifiche pianificate
 
-Per altre informazioni sulle funzionalità e sugli attributi di altri riquadri e su come vengono usati per i riquadri 2D, vedere la [documentazione relativa ai riquadri per le app UWP](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
+Per altre informazioni sulle funzionalità e sugli attributi di altri riquadri e su come vengono usati per i riquadri 2D, vedere la [documentazione relativa ai riquadri per le app UWP](/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
 
 ## <a name="see-also"></a>Vedere anche
 

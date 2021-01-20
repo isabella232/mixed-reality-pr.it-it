@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 08/03/2020
 ms.topic: article
 keywords: LBE, MixedRealitySpatialDataPackager.exe, MixedRealitySpatialDataPackager
-ms.openlocfilehash: df6757730c8a5448d96811bfe4ce024f6942dc07
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 93d598a6add8350850faadab241b254e9cb341aa
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686268"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583646"
 ---
 # <a name="mixed-reality-spatial-data-packager-documentation"></a>Documentazione del pacchetto di dati spaziali della realtà mista
 
@@ -23,7 +23,7 @@ ms.locfileid: "91686268"
 > Questo strumento e le relative operazioni sono offerti così come sono. È soggetta a modifiche senza preavviso e potrebbe non essere compatibile con le versioni future di Windows o Windows Mixed Reality HMD. 
 
 
-## <a name="download"></a>Download
+## <a name="download"></a>Scarica
  Scarica [MixedRealitySpatialDataPackager qui](https://download.microsoft.com/download/A/1/2/A12B8A90-B3F7-4ED9-A4BB-D59DDCDAA125/MixedRealitySpatialDataPackager.zip)
 
 ## <a name="device-support"></a>Supporto di dispositivi
@@ -37,7 +37,7 @@ ms.locfileid: "91686268"
     </colgroup>
     <tr>
         <td><strong>Funzionalità</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (prima generazione)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (prima generazione)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
     </tr>
@@ -49,7 +49,7 @@ ms.locfileid: "91686268"
     </tr>
 </table>
 
-## <a name="quickstart"></a>Avvio rapido
+## <a name="quickstart"></a>Guida introduttiva
 
 Lo strumento di combinazione dei dati spaziali della realtà mista copia i dati spaziali di un'app di destinazione da un PC a un altro tramite un processo di esportazione e importazione in due passaggi. Lo strumento deve essere eseguito con privilegi di amministratore ed Elimina i dati spaziali esistenti durante l'importazione. L'esportazione lascia intatti i dati spaziali esistenti.
 
@@ -71,8 +71,7 @@ Requisiti e limitazioni principali:
 4. Ridurre al minimo le superfici senza trama, ad esempio inserire un intervallo di poster diversi sui muri bianchi
 5. Mappare lo spazio senza oggetti dinamici nella scena, ad esempio lo stato di trasferimento di persone
 6. Blocca la mappa durante l'importazione (disponibile tramite l'anteprima di Insider)
-7. Sbloccare la mappa e ripetere l'analisi dell'ambiente quando si verificano peggioramenti della qualità e/o sono presenti modifiche nell'ambiente (illuminazione o modifiche nel layout degli oggetti)
-***
+7. Sbloccare la mappa e ripetere l'analisi dell'ambiente quando si verificano peggioramenti della qualità e/o sono presenti modifiche nell'ambiente (illuminazione o modifiche nel layout degli oggetti) * * _
 
 ## <a name="running-mixed-reality-spatial-data-packager-with-companion-script"></a>Esecuzione di pacchetti di dati spaziali di realtà mista con script complementare
 
@@ -154,7 +153,7 @@ MixedRealitySpatialDataPackager.exe import <folderpath to mapx files> <target pa
 L'importazione Elimina i dati spaziali esistenti e li sostituisce con i dati della directory specificata. L'input del nome dell'app specifica il nome del pacchetto dell'app di destinazione per cui devono essere importati gli ancoraggi spaziali e il SID utente di destinazione specifica l'utente che deve avere accesso agli ancoraggi spaziali importati. Il nome della famiglia di pacchetti di destinazione e i SID utente devono corrispondere ai valori esistenti nel PC oppure il file exe avrà esito negativo.
 
 
-***
+_**
 ## <a name="error-messages"></a>messaggi di errore
 Inoltre, i messaggi di errore che seguono gli errori saranno associati a un HRESULT
 

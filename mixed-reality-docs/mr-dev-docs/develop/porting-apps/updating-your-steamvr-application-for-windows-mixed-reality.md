@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: SteamVR, compatibilità, porting, HoloLens 1st Gen, auricolare realtà mista, cuffia a realtà mista di Windows, migrazione, Windows 10, vapore, controller di movimento, haptics
-ms.openlocfilehash: c67eed489f626c804583592e496fcfaff5d8c291
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: b6d92d558218f71af0e8c7693f64a50a44524c63
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192629"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583823"
 ---
 # <a name="updating-steamvr-apps-for-windows-mixed-reality"></a>Aggiornamento di app SteamVR per Windows Mixed Reality
 
@@ -19,7 +19,7 @@ Invitiamo gli sviluppatori a testare e ottimizzare le proprie esperienze di Stea
 
 ## <a name="initial-setup-instructions"></a>Istruzioni per la configurazione iniziale
 
-Per iniziare a testare il gioco o l'app in realtà mista di Windows, assicurarsi di seguire prima la [Guida introduttiva.](https://aka.ms/WindowsMixedRealitySteamVR)
+Per iniziare a testare il gioco o l'app in realtà mista di Windows, assicurarsi di seguire prima la [Guida introduttiva.](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)
 
 ## <a name="controller-models"></a>Modelli di controller
 
@@ -48,7 +48,7 @@ Inoltre, se sono presenti punti nell'esperienza in cui si visualizzano immagini 
 
 ## <a name="haptics"></a>Haptics
 
-A partire dall' [aggiornamento di Windows 10 aprile 2018](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018), haptics sono ora supportati per le esperienze SteamVR in realtà mista di Windows. Se l'app o il gioco SteamVR include già il supporto per haptics, dovrebbe funzionare ora (senza lavoro aggiuntivo) con i controller di movimento per la [realtà mista di Windows](../../design/motion-controllers.md).
+A partire dall' [aggiornamento di Windows 10 aprile 2018](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018), haptics sono ora supportati per le esperienze SteamVR in realtà mista di Windows. Se l'app o il gioco SteamVR include già il supporto per haptics, dovrebbe funzionare ora (senza lavoro aggiuntivo) con i controller di movimento per la [realtà mista di Windows](../../design/motion-controllers.md).
 
 I controller di movimento per la realtà mista di Windows usano un motore haptics standard, anziché gli attuatori lineari presenti in altri controller di movimento di SteamVR. Questo può comportare un'esperienza utente leggermente diversa da quella prevista. È quindi consigliabile testare e ottimizzare la progettazione haptics con i controller di movimento di realtà mista di Windows. Ad esempio, talvolta gli impulsi brevi (5-10 ms) sono meno evidenti nei controller di movimento della realtà mista di Windows. Per produrre un impulso più evidente, provare a inviare un "clic" più lungo (40-70 ms) per fornire al motore più tempo per l'avvio prima di essere richiamato.
 
@@ -62,16 +62,16 @@ Per visualizzare il supporto della realtà mista di Windows per il titolo, passa
 
 ## <a name="bugs-and-feedback"></a>Bug e commenti
 
-I commenti e i suggerimenti sono utili per migliorare l'esperienza di SteamVR di realtà mista di Windows. Inviare tutti i commenti e i bug tramite l' [Hub feedback di Windows](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/filing-feedback). Ecco alcuni [suggerimenti su come fare in modo che il feedback di SteamVR](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality#sharing-feedback-on-steamvr)sia il più utile possibile.
+I commenti e i suggerimenti sono utili per migliorare l'esperienza di SteamVR di realtà mista di Windows. Inviare tutti i commenti e i bug tramite l' [Hub feedback di Windows](/windows/mixed-reality/enthusiast-guide/filing-feedback). Ecco alcuni [suggerimenti su come fare in modo che il feedback di SteamVR](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality#sharing-feedback-on-steamvr)sia il più utile possibile.
 
 In caso di domande o commenti da condividere, è anche possibile contattarci nel forum di [Steam](https://steamcommunity.com/app/719950/discussions/).
 
 ## <a name="faqs-and-troubleshooting"></a>Domande frequenti e risoluzione dei problemi
 
-Se si verificano problemi generali durante l'impostazione o la riproduzione dell'esperienza, [vedere le procedure di risoluzione dei problemi più recenti](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#steamvr).
+Se si verificano problemi generali durante l'impostazione o la riproduzione dell'esperienza, [vedere le procedure di risoluzione dei problemi più recenti](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#steamvr).
 
 ## <a name="see-also"></a>Vedere anche
 
 * [Installare gli strumenti](../install-the-tools.md)
-* [Cronologia driver per cuffie e controller di movimento](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/mixed-reality-software)
-* [Linee guida per la compatibilità hardware con la realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
+* [Cronologia driver per cuffie e controller di movimento](/windows/mixed-reality/enthusiast-guide/mixed-reality-software)
+* [Linee guida per la compatibilità hardware con la realtà mista di Windows](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)

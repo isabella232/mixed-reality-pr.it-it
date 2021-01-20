@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realtà mista, Accademia, Unity, esercitazione, API, traduzione testuale, hololens, immersiva, VR, traduzione in lingua, Windows 10, Visual Studio
-ms.openlocfilehash: 3f7d48df92ae5ed979c6fa8d69d348ce084d3fb9
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 0b7e7c2e4146d3c60e62c25764aae48260fdf3ef
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679570"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583289"
 ---
 # <a name="mr-and-azure-301-language-translation"></a>MR e Azure 301: Traduzione
 
@@ -40,7 +40,7 @@ Questo corso spiegherà come ottenere i risultati dal servizio di conversione in
 
 <table>
 <tr>
-<th>Corso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
+<th>Corso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
 </tr><tr>
 <td> MR e Azure 301: Traduzione</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -61,7 +61,7 @@ Per questo corso è consigliabile usare i componenti hardware e software seguent
 - [Windows 10 SDK più recente](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Un [headset di Windows misto reality immersiv (VR)](../../../discover/immersive-headset-hardware-details.md) o [Microsoft HoloLens](../../../hololens-hardware-details.md) con la modalità di sviluppo abilitata
+- Un [headset di Windows misto reality immersiv (VR)](../../../discover/immersive-headset-hardware-details.md) o [Microsoft HoloLens](/hololens/hololens1-hardware) con la modalità di sviluppo abilitata
 - Un set di cuffie con un microfono incorporato (se la cuffia non dispone di un MIC e di altoparlanti predefiniti)
 - Accesso a Internet per l'installazione e il recupero della traduzione in Azure
 
@@ -106,11 +106,11 @@ Per usare l'API di Azure translator, sarà necessario configurare un'istanza del
     3. Selezionare il piano **tariffario** appropriato. se è la prima volta che si crea un *servizio di traduzione testuale*, è necessario che sia disponibile un livello gratuito (denominato F0).
     4. Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. Si consiglia di lasciare tutti i servizi di Azure associati a un singolo progetto (ad esempio questi Lab) in un gruppo di risorse comune).
 
-        > Per altre informazioni sui gruppi di risorse di Azure, [vedere l'articolo relativo al gruppo di risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Per altre informazioni sui gruppi di risorse di Azure, [vedere l'articolo relativo al gruppo di risorse](/azure/azure-resource-manager/resource-group-portal).
 
     5. Determinare il **percorso** del gruppo di risorse (se si sta creando un nuovo gruppo di risorse). Il percorso dovrebbe trovarsi idealmente nell'area in cui verrà eseguita l'applicazione. Alcune risorse di Azure sono disponibili solo in determinate aree geografiche.
     6. Sarà inoltre necessario confermare di aver compreso i termini e le condizioni applicati a questo servizio.
-    7. Selezionare **Crea**.
+    7. Selezionare **Create** (Crea).
 
         ![Fare clic sul pulsante Crea.](images/AzureLabs-Lab1-04.png)
 
@@ -609,7 +609,7 @@ Per creare questa classe:
     ```
 
     > [!NOTE]
-    > - Le lingue inserite nell' **enum** di lingue sono solo esempi. Se lo si desidera, è possibile aggiungerne altri. l' [API supporta oltre 60 lingue](https://docs.microsoft.com/azure/cognitive-services/translator/languages) (incluso Klingon).
+    > - Le lingue inserite nell' **enum** di lingue sono solo esempi. Se lo si desidera, è possibile aggiungerne altri. l' [API supporta oltre 60 lingue](/azure/cognitive-services/translator/languages) (incluso Klingon).
     > - Esiste una [pagina più interattiva che copre le lingue disponibili](https://www.microsoft.com/translator/business/languages/), ma è importante tenere presente che la pagina sembra funzionare solo quando la lingua del sito è impostata su' ' (e il sito Microsoft verrà probabilmente reindirizzato alla lingua nativa). È possibile modificare la lingua del sito nella parte inferiore della pagina o modificando l'URL.
     > - Il valore **authorizationKey** , nel frammento di codice precedente, deve essere la **chiave**  ricevuta quando si è effettuata la sottoscrizione al *API traduzione testuale di Azure*. Questo è stato trattato nel [capitolo 1](#chapter-1--the-azure-portal).
 

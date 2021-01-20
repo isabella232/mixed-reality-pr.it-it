@@ -6,18 +6,18 @@ ms.author: vladkol
 ms.date: 05/20/2018
 ms.topic: article
 keywords: Unity, realtà mista, nativa, xrdevice, spatialcoordinatesystem, holographicframe, holographiccamera, ispatialcoordinatesystem, iholographicframe, iholographiccamera, getnativeptr, auricolare realtà mista, headset di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 7aa69286942ce98909e23508d92fb88c59ce9175
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 64e83e04e56b1296d5115353eed68baadeba193c
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009811"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583563"
 ---
 # <a name="mixed-reality-native-objects-in-unity"></a>Oggetti nativi di realtà mista in Unity
 
 Ogni app di realtà mista [ottiene un HolographicSpace prima di iniziare a](../native/getting-a-holographicspace.md) ricevere i dati della fotocamera e i frame di rendering. In Unity, il motore esegue automaticamente questi passaggi, gestendo gli oggetti olografici e aggiornando internamente come parte del ciclo di rendering.
 
-Negli scenari avanzati potrebbe tuttavia essere necessario ottenere l'accesso agli oggetti nativi sottostanti, ad esempio <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> e <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>corrente. <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">UnityEngine. XR. XRDevice</a> fornisce l'accesso a questi oggetti nativi.
+Negli scenari avanzati potrebbe tuttavia essere necessario ottenere l'accesso agli oggetti nativi sottostanti, ad esempio <a href="/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> e <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>corrente. <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">UnityEngine. XR. XRDevice</a> fornisce l'accesso a questi oggetti nativi.
 
 ## <a name="xrdevice"></a>XRDevice 
 
@@ -132,7 +132,7 @@ public static bool GetCurrentFrameDateTime(out DateTime frameDateTime)
 ## <a name="see-also"></a>Vedere anche
 
 * [Uso dello spazio dei nomi Windows con le app Unity per HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
-* <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>
-* <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>
-* <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a>
+* <a href="/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>
+* <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>
+* <a href="/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a>
 * [Rendering in DirectX](../native/rendering-in-directx.md)

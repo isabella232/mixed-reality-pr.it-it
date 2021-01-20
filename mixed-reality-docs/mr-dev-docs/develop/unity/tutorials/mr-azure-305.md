@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realtà mista, Accademia, Unity, esercitazione, API, funzioni, archiviazione, hololens, immersiva, VR, Windows 10, Visual Studio
-ms.openlocfilehash: bc609e5a4a1c4252f498ada4dba2206140635667
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5c9784446923b3eae7a600b8e672574ce6465038
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679490"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583424"
 ---
 # <a name="mr-and-azure-305-functions-and-storage"></a>MR e Azure 305: Funzioni e archiviazione
 
@@ -26,9 +26,9 @@ ms.locfileid: "94679490"
 
 In questo corso si apprenderà come creare e usare funzioni di Azure e come archiviare i dati con una risorsa di archiviazione di Azure, all'interno di un'applicazione di realtà mista.
 
-*Funzioni di Azure* è un servizio Microsoft che consente agli sviluppatori di eseguire piccole porzioni di codice, "funzioni", in Azure. Questo consente di delegare il lavoro al cloud, anziché l'applicazione locale, che può avere molti vantaggi. *Funzioni di Azure* supporta diversi linguaggi di sviluppo, tra cui C \# , F \# , Node.js, Java e php. Per altre informazioni, vedere l' [articolo funzioni di Azure](https://docs.microsoft.com/azure/azure-functions/functions-overview).
+*Funzioni di Azure* è un servizio Microsoft che consente agli sviluppatori di eseguire piccole porzioni di codice, "funzioni", in Azure. Questo consente di delegare il lavoro al cloud, anziché l'applicazione locale, che può avere molti vantaggi. *Funzioni di Azure* supporta diversi linguaggi di sviluppo, tra cui C \# , F \# , Node.js, Java e php. Per altre informazioni, vedere l' [articolo funzioni di Azure](/azure/azure-functions/functions-overview).
 
-*Archiviazione di Azure* è un servizio cloud Microsoft che consente agli sviluppatori di archiviare i dati, con l'assicurazione che saranno a disponibilità elevata, protezione, durabilità, scalabilità e ridondanza. Ciò significa che Microsoft gestirà tutta la manutenzione e i problemi critici. Per altre informazioni, vedere l' [articolo archiviazione di Azure](https://docs.microsoft.com/azure/storage/common/storage-introduction).
+*Archiviazione di Azure* è un servizio cloud Microsoft che consente agli sviluppatori di archiviare i dati, con l'assicurazione che saranno a disponibilità elevata, protezione, durabilità, scalabilità e ridondanza. Ciò significa che Microsoft gestirà tutta la manutenzione e i problemi critici. Per altre informazioni, vedere l' [articolo archiviazione di Azure](/azure/storage/common/storage-introduction).
 
 Dopo aver completato questo corso, si disporrà di un'applicazione con un auricolare immersiva a realtà mista che sarà in grado di eseguire le operazioni seguenti:
 
@@ -44,7 +44,7 @@ Nell'applicazione, spetta all'utente come integrare i risultati con la progettaz
 
 <table>
 <tr>
-<th>Corso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
+<th>Corso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
 </tr><tr>
 <td>MR e Azure 305: Funzioni e archiviazione</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -65,7 +65,7 @@ Per questo corso è consigliabile usare i componenti hardware e software seguent
 - [Windows 10 SDK più recente](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Un [headset di Windows misto reality immersiv (VR)](../../../discover/immersive-headset-hardware-details.md) o [Microsoft HoloLens](../../../hololens-hardware-details.md) con la modalità di sviluppo abilitata
+- Un [headset di Windows misto reality immersiv (VR)](../../../discover/immersive-headset-hardware-details.md) o [Microsoft HoloLens](/hololens/hololens1-hardware) con la modalità di sviluppo abilitata
 - Una sottoscrizione di un account Azure per la creazione di risorse di Azure
 - Accesso a Internet per l'installazione di Azure e il recupero dei dati
 
@@ -113,11 +113,11 @@ Per usare il **servizio di archiviazione di Azure**, è necessario creare e conf
 
     9. Scegliere un *gruppo di risorse* o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. Si consiglia di lasciare tutti i servizi di Azure associati a un singolo progetto (ad esempio questi Lab) in un gruppo di risorse comune). 
 
-        > Per altre informazioni sui gruppi di risorse di Azure, [vedere l'articolo relativo al gruppo di risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Per altre informazioni sui gruppi di risorse di Azure, [vedere l'articolo relativo al gruppo di risorse](/azure/azure-resource-manager/resource-group-portal).
 
     10. Sarà inoltre necessario confermare di aver compreso i termini e le condizioni applicati a questo servizio.
 
-    11. Selezionare **Crea**.
+    11. Selezionare **Create** (Crea).
 
         ![informazioni sul servizio di input](images/AzureLabs-Lab5-03.png)
 
@@ -166,7 +166,7 @@ Per creare una funzione di Azure:
 
     3. Scegliere un *gruppo di risorse* o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. Si consiglia di lasciare tutti i servizi di Azure associati a un singolo progetto (ad esempio questi Lab) in un gruppo di risorse comune). 
 
-        > Per altre informazioni sui gruppi di risorse di Azure, [vedere l'articolo relativo al gruppo di risorse](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Per altre informazioni sui gruppi di risorse di Azure, [vedere l'articolo relativo al gruppo di risorse](/azure/azure-resource-manager/resource-group-portal).
 
     4.  Per questo esercizio, selezionare *Windows* come **sistema operativo** scelto.
 
@@ -256,11 +256,11 @@ Configurare e testare l'auricolare immersiva della realtà mista.
 
     ![imposta Visual Studio come editor di script](images/AzureLabs-Lab5-19.png)
 
-4.  Passare quindi a **File**  >  **impostazioni di compilazione** file e passare alla piattaforma **piattaforma UWP (Universal Windows Platform)**, facendo clic sul pulsante **Switch Platform** .
+4.  Passare quindi a   >  **impostazioni di compilazione** file e passare alla piattaforma **piattaforma UWP (Universal Windows Platform)**, facendo clic sul pulsante **Switch Platform** .
 
     ![passa alla piattaforma UWP](images/AzureLabs-Lab5-20.png)
 
-5.  Passare a **File**  >  **impostazioni di compilazione** file e verificare che:
+5.  Passare a   >  **impostazioni di compilazione** file e verificare che:
 
     1. Il **dispositivo di destinazione** è impostato su **qualsiasi dispositivo**.
 
@@ -463,7 +463,7 @@ Configurare e testare l'auricolare immersiva della realtà mista.
 
 ## <a name="chapter-6---import-azure-storage-for-unity"></a>Capitolo 6: importare archiviazione di Azure per Unity
 
-Si utilizzerà archiviazione di Azure per Unity (che a sua volta USA .NET SDK per Azure). Per altre informazioni, vedere l' [articolo archiviazione di Azure per Unity](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity).
+Si utilizzerà archiviazione di Azure per Unity (che a sua volta USA .NET SDK per Azure). Per altre informazioni, vedere l' [articolo archiviazione di Azure per Unity](/sandbox/gamedev/unity/azure-storage-unity).
 
 Attualmente esiste un problema noto in Unity che richiede che i plug-in vengano riconfigurati dopo l'importazione. Questi passaggi (4-7 in questa sezione) non saranno più necessari dopo la risoluzione del bug.
 
@@ -471,7 +471,7 @@ Per importare l'SDK nel progetto, assicurarsi di aver scaricato la versione più
 
 1.  Aggiungere il file con **estensione file unitypackage Tools** a Unity usando l'opzione di menu **Asset**  >  **Import Package**  >  **Custom Package** .
 
-2.  Nella casella **Importa pacchetto Unity** visualizzata è possibile selezionare tutti gli elementi in archiviazione **plug**-in  >  **Storage**. Deselezionare tutti gli altri elementi, perché non sono necessari per questo corso.
+2.  Nella casella **Importa pacchetto Unity** visualizzata è possibile selezionare tutti gli elementi in archiviazione **plug**-in  >  . Deselezionare tutti gli altri elementi, perché non sono necessari per questo corso.
 
     ![Importa nel pacchetto](images/AzureLabs-Lab5-45.png)
 
@@ -1220,7 +1220,7 @@ Per distribuire l'applicazione:
 3.  Nella **configurazione della soluzione** selezionare **debug**.
 
     > Per Microsoft HoloLens, può risultare più semplice impostare questa impostazione su *computer remoto*, in modo da non essere collegati al computer. Tuttavia, sarà necessario eseguire anche le operazioni seguenti:
-    > - Individuare l' **indirizzo IP** della HoloLens, che si trova all'interno della rete **Impostazioni**  >  **&**  >  Opzioni avanzate **Wi-Fi**  >  **Advanced Options**. l'indirizzo IPv4 è quello da usare. 
+    > - Individuare l' **indirizzo IP** della HoloLens, che si trova all'interno della rete **Impostazioni**  >  **&**  >  Opzioni avanzate **Wi-Fi**  >  . l'indirizzo IPv4 è quello da usare. 
     > - Verificare che la **modalità sviluppatore** sia **attiva**; disponibile in **Impostazioni**  >  **aggiornare & sicurezza**  >  **per gli sviluppatori**.
 
     ![Distribuisci soluzione](images/AzureLabs-Lab5-55.png)
@@ -1243,4 +1243,4 @@ Creare un secondo punto di spawn e registrare il punto di generazione da cui è 
 
 ### <a name="exercise-2"></a>Esercizio 2
 
-Creare un modo per riavviare l'app, anziché riaprirla ogni volta. Il **caricamento di scene** è un punto di partenza valido. Al termine di questa operazione, creare un modo per cancellare l'elenco Archiviato in *archiviazione di Azure*, in modo che possa essere facilmente reimpostato dall'app. 
+Creare un modo per riavviare l'app, anziché riaprirla ogni volta. Il **caricamento di scene** è un punto di partenza valido. Al termine di questa operazione, creare un modo per cancellare l'elenco Archiviato in *archiviazione di Azure*, in modo che possa essere facilmente reimpostato dall'app.

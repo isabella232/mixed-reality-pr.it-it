@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: Comprensione della scena, mapping spaziale, realtà mista di Windows, Unity
-ms.openlocfilehash: 9520ad604125705c60624254b097de5fc93021ec
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 10cb96ffe0496a20c7244ba4c40dec097ebd4bd8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009381"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583755"
 ---
 # <a name="scene-understanding-sdk-overview"></a>Panoramica dell'SDK per la comprensione della scena
 
@@ -119,7 +119,7 @@ SceneObjects può avere uno dei seguenti elementi:
 <tr>
 <th>SceneObjectKind</th> <th>Descrizione</th>
 </tr>
-<tr><td>Sfondo</td><td>Il SceneObject <b>non</b> è noto come uno degli altri tipi di oggetto scena riconosciuti. Questa classe non deve essere confusa con uno sconosciuto, in cui lo sfondo non è a parete/piano/soffitto e così via... mentre Unknown non è ancora stato categorizzato.</b></td></tr>
+<tr><td>Background</td><td>Il SceneObject <b>non</b> è noto come uno degli altri tipi di oggetto scena riconosciuti. Questa classe non deve essere confusa con uno sconosciuto, in cui lo sfondo non è a parete/piano/soffitto e così via... mentre Unknown non è ancora stato categorizzato.</b></td></tr>
 <tr><td>Parete</td><td>Una parete fisica. Si presuppone che i muri siano strutture ambientali non mobili.</td></tr>
 <tr><td>Piano</td><td>I piani sono superfici in cui è possibile spostarsi. Nota: le scale non sono piani. Si noti inoltre che le pavimentazioni presuppongono una superficie a cui è possibile spostarsi e pertanto non esiste alcun presupposto esplicito di un pavimento singolare. Strutture a più livelli, rampe e così via... deve essere classificata come floor.</td></tr>
 <tr><td>Ceiling</td><td>Superficie superiore di una stanza.</td></tr>
@@ -131,7 +131,7 @@ SceneObjects può avere uno dei seguenti elementi:
 
 ### <a name="scenemesh"></a>SceneMesh
 
-Un SceneMesh è un SceneComponent che approssima la geometria degli oggetti geometrici arbitrari usando un elenco di triangolo. SceneMeshes vengono usati in diversi contesti, possono rappresentare i componenti della struttura di celle stagne o come WorldMesh, che rappresenta la mesh di mapping spaziale senza limiti associata alla scena. I dati relativi a indici e vertici forniti con ogni mesh utilizzano lo stesso layout familiare dei [buffer di vertice e di indice](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) utilizzati per il rendering di mesh triangolari in tutte le moderne API di rendering. Nella comprensione della scena, le maglie usano indici a 32 bit e potrebbero dover essere suddivise in blocchi per determinati motori di rendering.
+Un SceneMesh è un SceneComponent che approssima la geometria degli oggetti geometrici arbitrari usando un elenco di triangolo. SceneMeshes vengono usati in diversi contesti, possono rappresentare i componenti della struttura di celle stagne o come WorldMesh, che rappresenta la mesh di mapping spaziale senza limiti associata alla scena. I dati relativi a indici e vertici forniti con ogni mesh utilizzano lo stesso layout familiare dei [buffer di vertice e di indice](/windows/win32/direct3d9/rendering-from-vertex-and-index-buffers) utilizzati per il rendering di mesh triangolari in tutte le moderne API di rendering. Nella comprensione della scena, le maglie usano indici a 32 bit e potrebbero dover essere suddivise in blocchi per determinati motori di rendering.
 
 #### <a name="winding-order-and-coordinate-systems"></a>Ordine di avvolgimento e sistemi di coordinate
 
@@ -265,7 +265,7 @@ Si noti che si tratta del SceneObject con la trasformazione rispetto all'origine
 
 La comprensione della scena ha effettuato un tentativo intenzionale di allinearsi alle rappresentazioni tradizionali della scena 3D quando si gestiscono le trasformazioni. Ogni scena è quindi confinata a un singolo sistema di coordinate, in modo analogo alla maggior parte delle rappresentazioni ambientali 3D. SceneObjects forniscono il percorso relativo al sistema di coordinate. Se l'applicazione sta affrontando scenari che estendono il limite di una singola origine, può ancorare SceneObjects a SpatialAnchors o generare diverse scene e unirle, ma per semplicità si presuppone che esistano scene ermetiche nella propria origine localizzata da un NodeId definito da scene. OriginSpatialGraphNodeId.
 
-Il codice Unity seguente, ad esempio, Mostra come usare la percezione di Windows e le API Unity per allineare i sistemi di coordinate. Vedere [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) e [SpatialGraphInteropPreview](https://docs.microsoft.com//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) per informazioni dettagliate sulle API di percezione di Windows e sugli [oggetti nativi della realtà mista in Unity](https://docs.microsoft.com//windows/mixed-reality/unity-xrdevice-advanced) per informazioni dettagliate su come ottenere un SpatialCoordinateSystem che corrisponda all'origine mondiale di Unity.
+Il codice Unity seguente, ad esempio, Mostra come usare la percezione di Windows e le API Unity per allineare i sistemi di coordinate. Vedere [SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) e [SpatialGraphInteropPreview](//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) per informazioni dettagliate sulle API di percezione di Windows e sugli [oggetti nativi della realtà mista in Unity](//windows/mixed-reality/unity-xrdevice-advanced) per informazioni dettagliate su come ottenere un SpatialCoordinateSystem che corrisponda all'origine mondiale di Unity.
 
 ```cs
 private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnderstanding.Scene scene)

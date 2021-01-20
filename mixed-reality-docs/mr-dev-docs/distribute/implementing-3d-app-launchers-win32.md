@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, logo, icona, modellazione, avvio, utilità di avvio 3D, riquadro, cubo attivo, Win32, auricolare realtà mista, auricolare di realtà misto di Windows, auricolare della realtà virtuale, manifesto
-ms.openlocfilehash: 63b07664cb09f51e6d0588fdc50d141ad8985093
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 46d3419d3c8267291496d8f788103d7002e6f230
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009670"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583036"
 ---
 # <a name="implement-3d-app-launchers-win32-apps"></a>Implementare utilità di avvio per app 3D (app Win32)
 
@@ -33,11 +33,11 @@ gli asset 3D da usare come avvii per l'applicazione devono essere creati usando 
 
 ## <a name="configuring-the-3d-launcher"></a>Configurazione dell'utilità di avvio 3D
 
-Le applicazioni Win32 verranno visualizzate nell'elenco "tutte le app" nel menu di avvio della realtà mista di Windows se si crea un Launcher di app 3D. A tale scopo, creare un file XML del [manifesto degli elementi visivi](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx) che fa riferimento all'utilità di avvio delle app 3D attenendosi alla procedura seguente:
+Le applicazioni Win32 verranno visualizzate nell'elenco "tutte le app" nel menu di avvio della realtà mista di Windows se si crea un Launcher di app 3D. A tale scopo, creare un file XML del [manifesto degli elementi visivi](/previous-versions/windows/apps/dn393983(v=win.10)) che fa riferimento all'utilità di avvio delle app 3D attenendosi alla procedura seguente:
 
 1. Creare un **file GLB asset di avvio app 3D** (vedere [modellazione ed esportazione](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)).
-2. Creare un **[manifesto degli elementi visivi](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx)** per l'applicazione.
-    1. È possibile iniziare con l' [esempio riportato di seguito](#sample-visual-elements-manifest).  Per altri dettagli, vedere la documentazione completa del [manifesto degli elementi visivi](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx) .
+2. Creare un **[manifesto degli elementi visivi](/previous-versions/windows/apps/dn393983(v=win.10))** per l'applicazione.
+    1. È possibile iniziare con l' [esempio riportato di seguito](#sample-visual-elements-manifest).  Per altri dettagli, vedere la documentazione completa del [manifesto degli elementi visivi](/previous-versions/windows/apps/dn393983(v=win.10)) .
     2. Aggiornare **Square150x150Logo** e **SQUARE70X70LOGO** con un png/jpg/gif per l'app.
         * Questi verranno usati per il logo 2D dell'app nell'elenco di tutte le app della realtà mista di Windows e per il menu Start sul desktop.
         * Il percorso del file è basato sulla cartella che contiene il manifesto degli elementi visivi.

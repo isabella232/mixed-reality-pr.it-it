@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: realtà mista, realtà mista di Windows, HoloLens, immersiva, VR, Mr, introduzione, ologramma, Accademia, esercitazione, Accademia di realtà mista, Unity, auricolare in realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 7b316314d7aa693e8be9006b2c5578c1bae7e3ff
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 86ac759cb73e39f88d62db5dab0c38108bb17d55
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006511"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583730"
 ---
 # <a name="mr-basics-100-getting-started-with-unity"></a>Nozioni di base MR 100: Introduzione a Unity
 
@@ -24,7 +24,7 @@ Questa esercitazione illustra come creare un'app di base per realtà mista compi
 
 <table>
 <tr>
-<th>Corso</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
+<th>Corso</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></th>
 </tr><tr>
 <td>Nozioni di base MR 100: Introduzione a Unity</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -154,7 +154,7 @@ A questo punto, dopo aver creato il cubo, è possibile eseguire un controllo rap
 2. Aprire la **finestra > XR > emulazione olografica**.
 3. Modificare la **modalità di emulazione** da **Nessuna** a **remota a dispositivo**.
 4. In **computer remoto**, immettere l'indirizzo IP della HoloLens annotata in precedenza.
-5. Fare clic su **Connetti**.
+5. Fare clic su **Connect** (Connetti).
 6. Verificare che lo **stato della connessione** venga modificato in verde **connesso**.
 7. A questo punto è possibile fare clic su **Play** nell'editor di Unity.
 
