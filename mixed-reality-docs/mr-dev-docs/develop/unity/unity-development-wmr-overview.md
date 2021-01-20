@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realtà mista, sviluppo, guida introduttiva, nuovo progetto, conversione, funzionalità, fotocamera, simulazione, emulazione, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, input vocale, fotocamera individuabile, emulatore, Azure, esercitazioni
-ms.openlocfilehash: ba63f137e90b68345f3e5bbb831aba6abd6fe538
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: edd75def71ad31a1d29a480d0b2a7f7ffbd8c037
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98040579"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226430"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>Sviluppo in Unity per VR e Windows Mixed Reality
 
@@ -42,7 +42,7 @@ Dopo aver avviato un nuovo progetto immersivo, sono necessari alcuni blocchi pre
 
 [!INCLUDE[](../includes/unity-building-blocks-wmr.md)]
 
-### <a name="3-platform-capabilities-and-apis"></a>3. API e funzionalità della piattaforma
+### <a name="3-advanced-features"></a>3. Funzionalità avanzate
 
 Altre funzionalità chiave per le applicazioni immersive sono disponibili tramite le API di Unity senza la necessità di ulteriori pacchetti o configurazioni. Dopo aver esaminato le funzionalità più avanzate offerte da Unity, sarà possibile creare app VR più complesse.
 
