@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, prestazioni, ottimizzazione, CPU, GPU
-ms.openlocfilehash: 68aae6408a59b197227ab8cd9042e11f8a255d10
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5012c30dce1ca4149324c916355922086a33c258
+ms.sourcegitcommit: 6725b83adf13f6573faacb27db2bcaafe80df472
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583081"
+ms.locfileid: "98615127"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>Informazioni sulle prestazioni per la realtà mista
 
@@ -49,6 +49,9 @@ Di seguito sono riportati alcuni strumenti comuni che consentono di raccogliere 
 - [Debugger grafica di Visual Studio](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)
 - [Profiler Unity](https://docs.unity3d.com/Manual/Profiler.html)
 - [Debugger frame Unity](https://docs.unity3d.com/Manual/FrameDebugger.html)
+- [Informazioni dettagliate non reali](../unreal/unreal-insights.md)
+- [PIX](https://devblogs.microsoft.com/pix/)
+- [Pofiling GPU in Unreal](https://docs.unrealengine.com/en-US/TestingAndOptimization/PerformanceAndProfiling/GPU/index.html)
 
 ### <a name="how-to-profile-in-any-environment"></a>Come profilare in qualsiasi ambiente
 
@@ -136,8 +139,12 @@ Un numero eccessivo di operazioni di allocazione e deallocazione della memoria p
 
 Il pool di oggetti è una tecnica comune per ridurre i costi delle allocazioni e delle deallocazioni continue degli oggetti. Viene eseguito allocando un pool di grandi dimensioni di oggetti identici e riutilizzando le istanze inattive disponibili di questo pool invece di generare ed eliminare costantemente gli oggetti nel tempo. I pool di oggetti sono la soluzione ideale per i componenti riutilizzabili con durata variabile durante l'esecuzione di un'app.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Consigli sulle prestazioni per Unity](../unity/performance-recommendations-for-unity.md)
 - [Impostazioni consigliate per Unity](../unity/recommended-settings-for-unity.md)
-- [Ottimizzare i modelli 3D](/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
-- [Procedure consigliate per la conversione e l'ottimizzazione di modelli 3D in tempo reale](/dynamics365/mixed-reality/import-tool/best-practices)
+- [Consigli sulle prestazioni per Unreal](../unreal/performance-recommendations-for-unreal.md)
+- [Raccomandazioni sui materiali in Unreal](../unreal/unreal-materials.md)
+- [Ottimizzare i modelli 3D](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
+- [Procedure consigliate per la conversione e l'ottimizzazione di modelli 3D in tempo reale](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/best-practices)
+- [Linee guida sulle prestazioni per artisti e designer per Unreal](https://docs.unrealengine.com/en-US/TestingAndOptimization/PerformanceAndProfiling/Guidelines/index.html)
+- [Procedure consigliate di VR per Unreal](https://docs.unrealengine.com/en-US/SharingAndReleasing/XRDevelopment/VR/DevelopVR/ContentSetup/index.html)
