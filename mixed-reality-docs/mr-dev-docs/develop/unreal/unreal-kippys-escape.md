@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, distribuzione su dispositivo, PC, documentazione, auricolare realtà mista, headset di realtà mista di Windows, auricolare della realtà virtuale
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7302e6c8d5de866b652ec4741fbef128eca616e0
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: eca0b12cd9ba4e3d5d4033790184ffd770b44280
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580810"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635399"
 ---
 # <a name="the-making-of-kippys-escape"></a>Creazione dell'escape di Kippy
 
@@ -62,21 +62,21 @@ Al di là della progettazione di caratteri e ambienti, abbiamo deciso di impegna
 
 L'escape di Kippy si basa principalmente sui componenti degli strumenti UX della realtà mista per rendere il gioco interattivo, ovvero gli attori di interazione, i controlli dei limiti, i manipolatori, i dispositivi di scorrimento e i pulsanti.   
 
-L' [attore di interazione Hand](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html) consente la manipolazione diretta e distante degli ologrammi. All'inizio della sequenza di escape di Kippy, all'utente viene data la possibilità di impostare la posizione del gioco. I raggi mano che si estendono dalla palma dell'utente consentono di modificare facilmente gli ologrammi di grandi dimensioni, come illustrato nel gif riportato di seguito.  
+L' [attore di interazione Hand](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html) consente la manipolazione diretta e distante degli ologrammi. All'inizio della sequenza di escape di Kippy, all'utente viene data la possibilità di impostare la posizione del gioco. I raggi mano che si estendono dalla palma dell'utente consentono di modificare facilmente gli ologrammi di grandi dimensioni, come illustrato nel gif riportato di seguito.  
 
 ![Gif attore interazione mano](images/kippys-escape/kippys-escape-img-06.gif)
 
-La scena segnaposto può essere trascinata e ruotata utilizzando il componente di [controllo dei limiti](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/BoundsControl.html) degli strumenti UX.  
+La scena segnaposto può essere trascinata e ruotata utilizzando il componente di [controllo dei limiti](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/BoundsControl.html) degli strumenti UX.  
 
-Nella seconda isola è necessario che l'utente acquisisca le gemme e le inserisca negli slot corrispondenti. Le gemme hanno [manipolatori](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/Manipulator.html) collegati che consentono all'utente di riprenderle e inserirle. 
+Nella seconda isola è necessario che l'utente acquisisca le gemme e le inserisca negli slot corrispondenti. Le gemme hanno [manipolatori](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Manipulator.html) collegati che consentono all'utente di riprenderle e inserirle. 
 
 ![Gif di esempio del manipolatore](images/kippys-escape/kippys-escape-img-07.gif)
 
-Un [pulsante stampabile](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PressableButton.html) è la chiave per attivare le bombe da usare sulla terza isola.  
+Un [pulsante stampabile](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PressableButton.html) è la chiave per attivare le bombe da usare sulla terza isola.  
 
 ![Gif di esempio del pulsante stampabile](images/kippys-escape/kippys-escape-img-08.gif)
 
-Viene visualizzato un componente [Slider](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PinchSlider.html) sulla quarta isola, che attiva il Bridge finale da generare.  
+Viene visualizzato un componente [Slider](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PinchSlider.html) sulla quarta isola, che attiva il Bridge finale da generare.  
 
 ![Gif di esempio del componente Slider](images/kippys-escape/kippys-escape-img-09.gif) 
 

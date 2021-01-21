@@ -3,19 +3,19 @@ title: Rilevamento di codici a matrice
 description: Informazioni su come rilevare i codici a matrice, aggiungere funzionalità di webcam e gestire i sistemi di coordinate nelle app di realtà mista in HoloLens 2.
 author: dorreneb
 ms.author: dobrown
-ms.date: 05/15/2019
+ms.date: 01/21/2021
 ms.topic: article
 keywords: VR, LBE, location based Entertainment, VR Arcade, Arcade, immersive, QR, QR code, hololens2
-ms.openlocfilehash: 08ed651deaab0c230142f45b93858f41ee300323
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 0f53b8def268b2d501c6efe3c3e40ea18f9323e0
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583139"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635433"
 ---
 # <a name="qr-code-tracking"></a>Rilevamento di codici a matrice
 
-HoloLens 2 è in grado di rilevare i codici a matrice nell'ambiente attorno al visore VR, stabilendo un sistema di coordinate nella posizione reale di ciascun codice.
+HoloLens 2 è in grado di rilevare i codici a matrice nell'ambiente attorno al visore VR, stabilendo un sistema di coordinate nella posizione reale di ciascun codice. Una volta abilitata la webcam del dispositivo, sarà possibile riconoscere codici a matrice nelle versioni più recenti dei progetti Unreal o Unity. Prima di passare all'ambiente di produzione, è consigliabile seguire le [procedure](#best-practices-for-qr-code-detection) consigliate che sono state poste alla fine dell'articolo.
 
 ## <a name="device-support"></a>Supporto di dispositivi
 
@@ -458,6 +458,6 @@ namespace Microsoft.MixedReality.QR
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Sistemi di coordinate](../../design/coordinate-systems.md)
 * <a href="/azure/spatial-anchors/overview" target="_blank">Ancoraggi nello spazio di Azure</a>
