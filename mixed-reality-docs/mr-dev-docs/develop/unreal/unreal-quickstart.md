@@ -7,12 +7,12 @@ ms.date: 01/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal Engine 4, Unreal Editor, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, documentazione, guide, funzionalità, cuffie per la realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale, porting, aggiornamento
-ms.openlocfilehash: cd490c47479ba34bec942667afc8f34292bbb53c
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 3b2b88ac897a8791fec1ca2942d0db34efcee598
+ms.sourcegitcommit: be33fcda10d1cb98df90b428a923289933d42c77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98584800"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98672738"
 ---
 # <a name="creating-a-hololens-project"></a>Creazione di un progetto HoloLens
 
@@ -29,7 +29,7 @@ Prima di tutto, è necessario un progetto su cui lavorare. Se si sviluppa in Unr
 
 4. Nelle **impostazioni del progetto** impostare **C++, Scalable 3D o 2D, mobile/tablet** e **nessun contenuto iniziale**, quindi scegliere un percorso di salvataggio e fare clic su **Crea progetto**
 
-> Si sta usando un progetto C++ anziché un progetto per creare il plug-in degli strumenti UX, che verrà configurato in un secondo momento.
+> [!NOTE] Per essere pronti a usare il plug-in OpenXR in un secondo momento, si usa un progetto C++ anziché un progetto di progetto. Questa Guida introduttiva usa il plug-in OpenXR predefinito incluso in Unreal Engine. È tuttavia consigliabile scaricare e usare il plug-in Microsoft OpenXR ufficiale. Per questo è necessario che il progetto sia un progetto C++.
 
 ![Finestra Impostazioni progetto con opzioni di progetto, prestazioni, piattaforma di destinazione e contenuto iniziale evidenziato](images/unreal-quickstart-img-03.png)
 
