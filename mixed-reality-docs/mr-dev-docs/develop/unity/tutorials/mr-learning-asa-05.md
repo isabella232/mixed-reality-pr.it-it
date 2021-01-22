@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, android, ios, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 62481a0203eac873adfdb2a5dae8e08aaa16ffbe
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 741c000de0ab2feb3dcbff33e2a0b0acc70838e8
+ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582088"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699250"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5. Ancoraggi nello spazio di Azure per Android e iOS
 
@@ -28,7 +28,7 @@ Questa esercitazione illustra come compilare il progetto nei dispositivi Android
 In questa sezione verrà eseguito l'aggiornamento e l'installazione dei seguenti pacchetti incorporati:
 
 * AR Foundation 3.1.3
-* XR Legacy Input Helpers 2.1.4
+* Helper di input legacy XR 2.1.6
 * ARCore XR Plugin 3.1.3 per il supporto Android
 * ARKit XR plugin 3.1.3 per il supporto iOS
 
@@ -73,6 +73,10 @@ Con l'oggetto **MixedRealityToolkit** ancora selezionato nella finestra Hierarch
 > [!NOTE]
 > Quando si aggiunge il componente AR Reference Point Manager (Script), viene aggiunto automaticamente il componente AR Session Origin (Script) perché è richiesto dal componente AR Reference Point Manager (Script).
 
+
+
+Aggiornare lo script di MRTK Unity per le definizioni richiamando la voce di menu: **mixed reality Toolkit**  >  **Utilities**  >  **Unity** > Update scripting definisce
+
 ## <a name="building-your-application-to-your-android-device"></a>Compilazione dell'applicazione in un dispositivo Android
 
 In questa sezione verrà illustrato come configurare il progetto per la compilazione e la distribuzione in un dispositivo Android.
@@ -93,6 +97,10 @@ Nel menu di Unity selezionare **Mixed Reality Toolkit** > **Utilities** > **Conf
 Dal menu Unity scegliere **Edit** > **Project Settings...** (Modifica > Impostazioni del progetto) per aprire la finestra Player Settings (Impostazioni lettore) e quindi individuare la sezione **Player** >  **Other Settings** (Lettore > Altre impostazioni), selezionare **Vulkan** e rimuoverlo facendo clic sul simbolo **"-"** :
 
 ![Area Other Settings di Unity con Vulkan selezionato](images/mr-learning-asa/asa-05-section3-step1-3.png)
+
+Nel menu Unity selezionare **modifica**  >  **Impostazioni progetto...**  > **Lettore** >  di **Impostazione di XR**, assicurarsi di trovarsi nella piattaforma **Android** e selezionare la casella di controllo **Virtual Reality supported** , quindi fare clic sull'icona + e selezionare None:
+
+![Finestra MRTK Project Configurator di Unity - Android](images/mr-learning-asa/asa-05-section3-step1-2-1.png)
 
 Chiudere la finestra Player Settings (Impostazioni giocatore) e aprire di nuovo la finestra Build Settings (Impostazioni di compilazione).
 

@@ -6,17 +6,22 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicazione remota, comunicazione remota olografica, cronologia delle versioni, auricolare in realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 0eab33a058aee8003b352fbfae3ba038b80319d4
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: e1f80d0d2cbd02b78ed07e3ec60825ffe1059309
+ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582870"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699010"
 ---
 # <a name="holographic-remoting-version-history"></a>Cronologia delle versioni remota olografica
 
 > [!IMPORTANT]
 > Queste linee guida sono specifiche per la comunicazione remota olografica in HoloLens 2.
+
+## <a name="version-241-january-22-2021"></a>Versione 2.4.1 (22 gennaio 2021) <a name="v2.4.1"></a>
+
+* Correzione del problema relativo a SpatialAnchorManager:: RequestStoreAsync non funziona in modo affidabile quando viene chiamato durante la connessione.
+* Correzione del problema relativo a SpatialAnchorManager:: TrySave non è stato corretto il salvataggio di un ancoraggio se Anchor in question non è locatable.
 
 ## <a name="version-240-december-1-2020"></a>Versione 2.4.0 (1 dicembre 2020) <a name="v2.4.0"></a>
 

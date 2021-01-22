@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure
 ms.localizationpriority: high
-ms.openlocfilehash: c5fc1d4dad554cdfed6b8fac5fe5a5207bbd834b
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 60d4ae99629f0caf7e5cc7e73b05ed35ee3f4ac4
+ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98669486"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699215"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Introduzione ad Ancoraggi nello spazio di Azure
 
@@ -52,9 +52,11 @@ Scegliere **Window** > **Package Manager** (Finestra > Gestione pacchetti) dal m
 
 ## <a name="importing-the-tutorial-assets"></a>Importazione degli asset dell'esercitazione
 
+Aggiungere AzurespatialAnchors SDK V 2.7.1 nel progetto Unity, per aggiungere i pacchetti, seguire questa [esercitazione](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
+
 Scarica e **importa** i pacchetti personalizzati di Unity seguenti, **nell'ordine in cui sono elencati**:
 
-* [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage) (versione 2.2.1)
+
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage)
 
@@ -188,7 +190,7 @@ Con l'oggetto RoverModule_Complete appena aggiunto ancora selezionato nella fine
 Se ora ricompili il progetto e distribuisci l'app nel dispositivo, puoi riposizionare l'intera esperienza Rover Explorer (Esplora rover) spostando il cubo ridimensionato.
 
 > [!TIP]
-> Sono disponibili diversi flussi di esperienza utente per il riposizionamento, tra cui l'uso di un oggetto di riposizionamento (come il cubo usato in questa esercitazione), l'uso di un pulsante per attivare e disattivare un cubo di delimitazione intorno all'esperienza, l'uso di gizmo di posizione e rotazione e altro ancora.
+> Per le esperienze di riposizionamento, tra cui l'uso di un oggetto di riposizionamento, ad esempio il cubo usato in questa esercitazione, è possibile usare un pulsante per alternare un controllo dei limiti che racchiude l'esperienza, l'uso di gizmo di posizione e di rotazione e altro ancora.
 
 ## <a name="congratulations"></a>Lezione completata
 
