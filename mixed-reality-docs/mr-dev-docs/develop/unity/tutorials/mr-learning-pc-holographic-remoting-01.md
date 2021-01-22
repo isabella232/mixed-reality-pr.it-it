@@ -7,12 +7,12 @@ ms.date: 07/29/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, holographic remoting per PC, descrizioni comandi, tracciamento oculare
 ms.localizationpriority: high
-ms.openlocfilehash: 551c6427d9659dd7f5bad8558c777e918456b4d7
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: d8c7de8a93a32107afe67a1d0375612ab6245be9
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007921"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581963"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Introduzione a Holographic Remoting per PC
 
@@ -46,7 +46,7 @@ Prima di proseguire, è **consigliabile** completare la serie di [Esercitazioni 
 
 In questa sezione creerai un nuovo progetto Unity per prepararti allo sviluppo con MRTK.
 
-A questo scopo, segui prima l'esercitazione [Inizializzazione del progetto e prima applicazione](mr-learning-base-02.md), escluse le istruzioni della sezione [Compilare l'applicazione nel dispositivo](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2), che include i passaggi seguenti:
+A questo scopo, segui prima l'esercitazione [Inizializzazione del progetto e prima applicazione](mr-learning-base-02.md), escluse le istruzioni della sezione [Compilare l'applicazione nel dispositivo](mr-learning-base-02.md#building-your-application-to-your-hololens-2), che include i passaggi seguenti:
 
 1. [Creazione del progetto Unity](mr-learning-base-02.md#creating-the-unity-project) e assegnazione di un nome appropriato, ad esempio *MRTK Tutorials*
 
@@ -56,7 +56,7 @@ A questo scopo, segui prima l'esercitazione [Inizializzazione del progetto e pri
 
 4. [Importazione di Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
 
-5. [Configurazione del progetto Unity](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+5. [Configurazione del progetto Unity](mr-learning-base-02.md#configuring-the-unity-project)
 
 6. [Creazione e impostazione della scena](mr-learning-base-02.md#creating-and-configuring-the-scene) e assegnazione di un nome appropriato, ad esempio **PC Holographic Remoting**
 
@@ -67,7 +67,7 @@ Segui quindi le istruzioni riportate in [Modifica delle opzioni di visualizzazio
 Scarica e **importa** [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage).
 
 >[!TIP]
-> Per rivedere la procedura di importazione di un pacchetto personalizzato di Unity, puoi fare riferimento alle istruzioni contenute in [Importare Mixed Reality Toolkit](../../../mrlearning-base-ch1.md#import-the-mixed-reality-toolkit).
+> Per rivedere la procedura di importazione di un pacchetto personalizzato di Unity, puoi fare riferimento alle istruzioni contenute in [Importare Mixed Reality Toolkit](./mr-learning-base-02.md#importing-the-mixed-reality-toolkit).
 
 Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progetto) avrà un aspetto simile al seguente:
 
@@ -191,7 +191,7 @@ Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto ***POI-Camera** _. Ne
 
 Segui lo stesso processo e assegna i rispettivi oggetti descrizione comando agli eventi **While Looking At Target ()** (Mentre viene guardata la destinazione) & **On Look Away ()** (Quando viene distolto lo sguardo) delle parti corrispondenti di **MarsCuriosityRover**.
 
-Per abilitare il tracciamento oculare, segui queste [linee guida](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations).
+Per abilitare il tracciamento oculare, segui queste [linee guida](/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations).
 
 ## <a name="congratulations"></a>Lezione completata
 

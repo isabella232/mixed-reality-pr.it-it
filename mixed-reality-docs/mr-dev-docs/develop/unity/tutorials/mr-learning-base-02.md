@@ -2,17 +2,17 @@
 title: Inizializzazione del progetto e distribuzione della prima applicazione
 description: In questo corso viene illustrato come configurare il progetto Unity per Mixed Reality Toolkit (MRTK) e come distribuirlo in HoloLens 2.
 author: jessemcculloch
-ms.author: v-vtieto
-ms.date: 12/30/2020
+ms.author: jemccull
+ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: 2ce119e1dd18eacf02088d00e99fb70d06bf956e
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 4d82d0974a0a797e7f8d2de2d4943666f7d32a4f
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008221"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98669498"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. Inizializzazione del progetto e distribuzione della prima applicazione
 
@@ -20,221 +20,228 @@ In questa esercitazione apprenderai come creare un nuovo progetto Unity, come co
 
 ## <a name="objectives"></a>Obiettivi
 
-* Apprendere come configurare Unity per lo sviluppo per HoloLens.
-* Apprendere come compilare e distribuire l'app in HoloLens.
-* Sperimentare la mesh di mapping spaziale, le mesh mano il contatore della frequenza dei fotogrammi sul dispositivo HoloLens 2.
+* Apprendere come configurare Unity per lo sviluppo per HoloLens
+* Apprendere come compilare e distribuire l'app in HoloLens
+* Sperimentare la mesh di mapping spaziale, le mesh manuali e il contatore della frequenza dei fotogrammi sul dispositivo HoloLens 2
 
 ## <a name="creating-the-unity-project"></a>Creazione del progetto Unity
 
-1. Avviare **Unity Hub**, selezionare la scheda **Projects** (Progetti) e quindi fare clic sulla **freccia giù** accanto al pulsante **New** (Nuovo):
+Avvia **Unity Hub**, seleziona la scheda **Projects** (Progetti) e fai clic sulla **freccia giù** accanto al pulsante **New** (Nuovo):
 
-![Unity Hub in cui è evidenziata la freccia giù del pulsante "New" (Nuovo)](images/mr-learning-base/base-02-section1-step1-1.png)
+![Unity Hub con il pulsante New evidenziato](images/mr-learning-base/base-02-section1-step1-1.png)
 
-2. Dal menu a discesa scegliere la versione di Unity specificata nella sezione [Prerequisiti](mr-learning-base-01.md#prerequisites):
+Nell'elenco a discesa seleziona la **versione** di Unity specificata nella sezione [Prerequisiti](mr-learning-base-01.md#prerequisites):
 
-![Selezionare la versione di Unity](images/mr-learning-base/base-02-section1-step1-2.png)
+![Unity Hub con l'elenco a discesa per la seleziona della versione NEW](images/mr-learning-base/base-02-section1-step1-2.png)
 
 > [!TIP]
 > Se la versione specifica di Unity non è disponibile in Unity Hub, puoi avviare l'installazione da <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Download Archive</a> (Archivio download) di Unity.
 
-3. Nella finestra **Create a new project** (Crea un nuovo progetto) eseguire queste operazioni:
+Nella finestra Create a new project (Crea un nuovo progetto):
 
-    * Assicurarsi che in **Templates** (Modelli) sia impostata l'opzione **3D**.
-    * Nella casella **Project Name** (Nome progetto) immettere un nome appropriato per il progetto, ad esempio "Esercitazioni di MRTK".
-    * Fare clic sul pulsante con tre punti accanto a **Location** (Percorso) e quindi passare alla cartella in cui si intende salvare il progetto.
+* Assicurati che in **Templates** (Modelli) sia impostata l'opzione **3D**
+* Immetti un nome appropriato nel campo **Project Name** (Nome progetto), ad esempio _MRTK Tutorials_
+* Nel campo **Location** (Percorso) scegli un percorso appropriato in cui archiviare il progetto, ad esempio _D:\MixedRealityLearning_
+* Fai clic sul pulsante **Create** (Crea) per creare e avviare il nuovo progetto Unity
+
+![Unity Hub con la finestra Create a new project compilata](images/mr-learning-base/base-02-section1-step1-3.png)
 
 > [!CAUTION]
-> Se lavori in Windows, tieni presente che è previsto un limite (MAX_PATH) di 255 caratteri per il percorso. È pertanto consigliabile salvare il progetto Unity in prossimità della radice dell'unità.
+> Se lavori in Windows, tieni presente che è previsto un limite (MAX_PATH) di 255 caratteri per il percorso. Dovresti pertanto salvare il progetto Unity in prossimità della radice dell'unità.
 
-    * Fare clic sul pulsante **Create** (Crea). Il nuovo progetto Unity viene creato e avviato.
+Attendi che Unity crei il progetto:
 
-![Unity Hub con la finestra "Create a new project" (Crea un nuovo progetto) completata](images/mr-learning-base/base-02-section1-step1-3.png)
-
-La barra di stato consente di restare aggiornati sullo stato di avanzamento.
-
-![L'indicatore di stato di Unity consente di restare aggiornati sullo stato di "creazione del progetto"](images/mr-learning-base/base-02-section1-step1-4.png)
+![Creazione di un nuovo progetto Unity in corso](images/mr-learning-base/base-02-section1-step1-4.png)
 
 ## <a name="switching-the-build-platform"></a>Passaggio a un'altra piattaforma di compilazione
 
-1. Sulla barra dei menu scegliere **File** > **Build Settings** (Impostazioni di compilazione).
+Dal menu di Unity scegli **File** > **Build Settings** (Impostazioni di compilazione) per visualizzare la finestra corrispondente:
 
 ![Percorso del menu Build Settings... di Unity](images/mr-learning-base/base-02-section2-step1-1.png)
 
-2. Nella finestra **Build Settings** (Impostazioni di compilazione) selezionare **Universal Windows Platform** (Piattaforma UWP) e quindi fare clic sul pulsante **Switch Platform** (Cambia piattaforma):
+Nella finestra Build Settings (Impostazioni di compilazione), seleziona **Universal Windows Platform** e fai clic sul pulsante **Switch Platform** (Cambia piattaforma):
 
 ![Finestra Build Settings di Unity con la piattaforma UWP selezionata in sostituzione della piattaforma Standalone](images/mr-learning-base/base-02-section2-step1-2.png)
 
-3. Attendere che venga completato il cambiamento di piattaforma e quindi chiudere la finestra **Build Settings** (Impostazioni di compilazione).
+Attendi che Unity completi il passaggio all'altra piattaforma:
+
+![Passaggio di Unity all'altra piattaforma in corso](images/mr-learning-base/base-02-section2-step1-3.png)
+
+Una volta completato il passaggio all'altra piattaforma, fai clic sull'icona **x** di colore rosso per chiudere la finestra Build Settings (Impostazioni di compilazione):
+
+![Finestra Build Settings di Unity con l'icona di chiusura evidenziata](images/mr-learning-base/base-02-section2-step1-4.png)
 
 ## <a name="importing-the-textmeshpro-essential-resources"></a>Importazione delle risorse essenziali TextMeshPro
 
-Le risorse essenziali TextMeshPro sono richieste dagli elementi dell'interfaccia utente di MRTK. Se non si prevede di usare gli elementi dell'interfaccia utente di MRTK nel progetto, è possibile ignorare questo passaggio.
-
-1. Sulla barra dei menu scegliere **Window** (Finestra) > **TextMeshPro** > **Import TMP Essential Resources** (Importa le risorse essenziali TMP).
+Scegli **Window (Finestra)**  > **TextMeshPro** > **Import TMP Essential Resources** (Importa le risorse essenziali TMP) dal menu di Unity per aprire la finestra Import Unity Package (Importa pacchetto Unity):
 
 ![Percorso del menu Import TMP Essential Resources di Unity](images/mr-learning-base/base-02-section3-step1-1.png)
 
-2. Nella finestra **Import Unity Package** (Importa il pacchetto Unity) fare clic sul pulsante **All** (Tutti) per assicurarsi che vengano selezionati tutti gli asset e quindi fare clic sul pulsante **Import** (Importa) per importare gli asset:
+Nella finestra Import Unity Package (Importa il pacchetto Unity), fai clic sul pulsante **All** (Tutti) per assicurarti che vengano selezionati tutti gli asset e quindi fai clic sul pulsante **Import** (Importa) per importare gli asset:
 
 ![Finestra di importazione TMP Essential Resources di Unity](images/mr-learning-base/base-02-section3-step1-2.png)
 
+> [!TIP]
+> Le risorse essenziali TextMeshPro sono richieste dagli elementi dell'interfaccia utente di MRTK. Puoi ignorare questo passaggio se non prevedi di usare gli elementi dell'interfaccia utente di MRTK nel progetto.
+
 ## <a name="importing-the-mixed-reality-toolkit"></a>Importazione di Mixed Reality Toolkit
 
-1. Scarica il pacchetto personalizzato di Unity:
+Scarica il pacchetto personalizzato di Unity:
 
-    [Microsoft.MixedReality.Toolkit.Unity.Foundation.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.4.0/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.4.0.unitypackage)
+* [Microsoft. MixedReality. Toolkit. Unity. Foundation. 2.5.1. file unitypackage Tools](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.5.1/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.5.1.unitypackage)
 
-2. Sulla barra dei menu scegliere **Assets** (Asset) > **Import Package (Importa pacchetto)**  > **Custom Package** (Pacchetto personalizzato).
-3. Nella finestra di dialogo **Import package** (Importa pacchetto) passare al percorso del pacchetto appena scaricato, selezionare il pacchetto e quindi fare clic sul pulsante **Open** (Apri).
-4. Nella finestra **Import Unity Package** (Importa il pacchetto Unity) fare clic sul pulsante **All** (Tutti) per assicurarsi che vengano selezionati tutti gli asset e quindi fare clic sul pulsante **Import** (Importa) per importare gli asset.
+Dal menu di Unity scegli **Assets** (Asset) > **Import Package** (Importa il pacchetto) > **Custom Package** (Pacchetto personalizzato) per visualizzare la finestra Import package (Importa il pacchetto):
 
-## <a name="selecting-mrtk-and-project-settings"></a>Selezione delle impostazioni di MRTK e del progetto
+![Percorso del menu di importazione Custom Package... di Unity](images/mr-learning-base/base-02-section4-step1-1.png)
 
-Al termine dell'importazione del pacchetto dalla sezione precedente, viene visualizzata la finestra **MRTK Project Configurator** (Configuratore del progetto MRTK). In caso contrario, è possibile aprirlo manualmente passando a **Mixed Reality Toolkit** > **Utilities** (Utilità) > **Configure Unity Project** (Configura il progetto Unity):
+Nel pacchetto di importazione... Selezionare la finestra **Microsoft. MixedReality. Toolkit. Unity. Foundation. 2.5.1. file unitypackage Tools** scaricata e fare clic sul pulsante **Apri** :
+
+![Finestra Import Package di Unity con il prompt di apertura](images/mr-learning-base/base-02-section4-step1-2.png)
+
+Nella finestra Import Unity Package (Importa il pacchetto Unity), fai clic sul pulsante **All** (Tutti) per assicurarti che vengano selezionati tutti gli asset e quindi fai clic sul pulsante **Import** (Importa) per importare gli asset:
+
+![Finestra di importazione MRTK Foundation di Unity](images/mr-learning-base/base-02-section4-step1-3.png)
+
+## <a name="configuring-the-unity-project"></a>Configurazione del progetto Unity
+
+### <a name="1-apply-the-mrtk-project-configurator-settings"></a>1. Applicare le impostazioni di MRTK Project Configurator (Configuratore del progetto MRTK)
+
+Al termine dell'importazione del pacchetto dalla sezione precedente, viene visualizzata la finestra MRTK Project Configurator (Configuratore del progetto MRTK). In caso contrario, è possibile aprirlo manualmente passando a **Mixed Reality Toolkit** > **Utilities** (Utilità) > **Configure Unity Project** (Configura il progetto Unity):
 
 ![Percorso del menu Configure Unity Project di Unity](images/mr-learning-base/base-02-section5-step1-1.png)
 
-1. Nella finestra **MRTK Project Configurator** (Configuratore del progetto MRTK) espandere la sezione **Modify Configurations** (Modifica configurazioni), se necessario, e quindi verificare che tutte le opzioni siano selezionate.
+Nella finestra MRTK Project Configurator (Configuratore del progetto MRTK) espandi la sezione **Modify Configurations** (Modifica configurazioni), verifica che tutte le opzioni siano selezionate e fai clic sul pulsante **Apply** (Applica) per applicare le impostazioni:
 
-![Finestra MRTK Project Configurator (Configuratore del progetto MRTK) di Unity in cui è visualizzata la sezione Modify Configurations (Modifica configurazioni)](images/mr-learning-base/base-02-section5-step1-2.png)
-
-2. Per applicare le impostazioni, fare clic sul pulsante **Apply** (Applica).
-
-![Pulsante Apply (Applica) in MRTK](images/mr-learning-base/apply.png)
-
-> [!NOTE]
-> Viene usata la versione legacy di XR incorporata in Unity, invece del nuovo sistema di plug-in XR, perché il nuovo sistema non è completamente compatibile con le [versioni consigliate di Unity e MRTK](mr-learning-base-01.md#prerequisites) per questa serie di esercitazioni. Se vengono visualizzati avvisi relativi alla deprecazione di XR incorporata, è possibile ignorarli.
+![Finestra MRTK Project Configurator di Unity](images/mr-learning-base/base-02-section5-step1-2.png)
 
 > [!TIP]
 > L'applicazione delle impostazioni predefinite di MRTK è facoltativa ma fortemente consigliata, poiché consente di configurare alcune impostazioni consigliate di Unity:
->
-> * Enable legacy XR (Abilita XR legacy): abilita VR per il progetto.
+
 > * Set Single Pass Instanced rendering path (Imposta il percorso di rendering con istanze a singolo passaggio): migliora le prestazioni grafiche eseguendo la pipeline di rendering per entrambi gli occhi nella stessa chiamata di disegno. Per altre informazioni su questo argomento, è possibile fare riferimento alla sezione sul [rendering con istanze a singolo passaggio](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html#single-pass-instanced-rendering) della documentazione di MRTK relativa alle [prestazioni](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html).
 > * Set default Spatial Awareness layer (Imposta livello di consapevolezza spaziale predefinito): crea un livello di Unity denominato Spatial Awareness e configura MRTK per l'uso di questo livello per la mesh di consapevolezza spaziale. Per altre informazioni sui livelli di Unity, vedere la documentazione relativa alla <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">personalizzazione dell'area di lavoro</a> di Unity.
 
-3. Sulla barra dei menu scegliere **Edit** (Modifica) > **Project Settings** (Impostazioni progetto).
+### <a name="2-configure-additional-project-settings"></a>2. Configurare impostazioni di progetto aggiuntive
 
-4. Nella finestra **Project Settings** (Impostazioni progetto) selezionare **Player** (Lettore), fare clic sull'elenco a discesa **XR Settings** (Impostazioni XR) e quindi selezionare la casella accanto a **Virtual Reality Supported** (Realtà virtuale supportata):
+Dal menu di Unity scegli **Edit** (Modifica) > **Project Settings** (Impostazioni del progetto) per visualizzare la finestra corrispondente:
 
-![Finestra XR Settings(Impostazioni XR) di Unity in cui è visualizzata la casella Virtual Reality Supported (Realtà virtuale supportata)](images/mr-learning-base/base-02-section5-step2-2.png)
+![Percorso del menu Project Settings... di Unity](images/mr-learning-base/base-02-section5-step2-1.png)
 
-Viene importato Windows Mixed Reality SDK:
+Nella finestra Impostazioni progetto selezionare Gestione plug **-in XR**  >  **installa Gestione plug-in** di XR, per installare la gestione dei plug-in XR:
 
-![Finestra XR Settings(Impostazioni XR) di Unity in cui è visualizzata la sezione Virtual Reality SDKs (Virtual Reality SDK)](images/mr-learning-base/mixed-reality-sdk.png)
+![Finestra Project Settings di Unity con il nome del pacchetto configurato](images/mr-learning-base/base-02-section5-step2-2.png)
 
-Al termine dell'importazione di Windows Mixed Reality SDK, viene visualizzata di nuovo la finestra **MRTK Project Configurator** (Configuratore del progetto MRTK). In caso contrario, selezionare **Mixed Reality Toolkit** > **Utilities** (Utilità) > **Configure Unity Project** (Configura il progetto Unity) per aprirla.
+al termine dell'installazione della gestione dei plug-in di XR in Unity. Assicurarsi di essere in piattaforma UWP (Universal Windows Platform) impostazioni e controllare l'inizializzazione di XR all'avvio.
 
-5. Nella finestra **MRTK Project Configurator** (Configuratore del progetto MRTK) fare clic sull'elenco a discesa **Audio spatializer** (Spazializzatore audio) e quindi selezionare **MS HRTF Spatializer** (Spazializzatore MS HRTF).
+![Unity configurazione della gestione dei plug-in XR](images/mr-learning-base/base-02-section5-step2-3.png)
 
-![Finestra Project Settings (Impostazioni progetto) in cui sono visualizzate le opzioni Audio spatializer (Spazializzatore audio)](images/mr-learning-base/base-02-section5-step2-3.png)
+Nella finestra Project Settings (Impostazioni progetto) seleziona **Player (Lettore)**  > **XR Settings** (Impostazioni XR), fai clic sull'icona **+** e seleziona Windows Mixed Reality per aggiungere Windows Mixed Reality SDK:
 
-6. Fare clic sul pulsante **Applica**. La finestra **MRTK Project Configurator** (Configuratore del progetto MRTK) viene chiusa.
+![Area XR Settings di Unity con Windows Mixed Reality SDK selezionato](images/mr-learning-base/base-02-section5-step2-4.png)
 
-    > [!TIP]
-    > L'impostazione della proprietà Audio spatializer (Spazializzatore audio) è facoltativa, ma può migliorare l'esperienza audio nel progetto. Se si imposta questa proprietà su MS HRTF Spatializer, questo plug-in di spazializzatore verrà usato quando la proprietà AudioSource.spatialize di Unity è abilitata. Per altre informazioni su questo argomento, è possibile fare riferimento alle esercitazioni sull'audio spaziale.
+Al termine dell'importazione di Windows Mixed Reality SDK, dovrebbe visualizzarsi di nuovo la finestra MRTK Project Configurator (Configuratore del progetto MRTK). In caso contrario, usa il menu di Unity per aprirla.
 
-7. Nella finestra **Project Settings** (Impostazioni progetto) fare clic sull'elenco a discesa **Depth Format** (Formato profondità) e quindi selezionare **16-bit depth** (Profondità a 16 bit):
+Nella finestra MRTK Project Configurator (Configuratore del progetto MRTK) usa l'elenco a discesa **Audio spatializer** (Spazializzatore audio) per selezionare **MS HRTF Spatializer** e quindi fai clic sul pulsante **Apply** (Applica) per applicare l'impostazione:
 
-    :::image type="content" source="images/mr-learning-base/base-02-section5-step2-4.png" alt-text="Area XR Settings (Impostazioni XR) di Unity in cui è selezionata l'opzione 16-bit depth (Profondità a 16 bit).":::
+![Area XR Settings di Unity con Windows Mixed Reality SDK selezionato](images/mr-learning-base/base-02-section5-step2-5.png)
 
-    > [!TIP]
-    > La riduzione del formato profondità a 16 bit è facoltativa, ma consente di migliorare le prestazioni grafiche nel progetto. Per altre informazioni su questo argomento, è possibile fare riferimento alla sezione sulla [condivisione del buffer di intensità (HoloLens)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html#depth-buffer-sharing-hololens) della documentazione di MRTK relativa alle [prestazioni](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html).
+> [!TIP]
+>L'impostazione della proprietà Audio spatializer (Spazializzatore audio) è facoltativa, ma può migliorare l'esperienza audio nel progetto. Se si imposta questa proprietà su MS HRTF Spatializer, questo plug-in di spazializzatore verrà usato quando la proprietà AudioSource.spatialize di Unity è abilitata. Per ulteriori informazioni su questo argomento, è possibile fare riferimento alle  <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> esercitazioni audio spaziali</a>.
 
-8. Fare clic sull'elenco a discesa **Publishing Settings** (Impostazioni di pubblicazione) e quindi nella casella **Package name** (Nome pacchetto) immettere un nome appropriato, ad esempio "MRTK-Tutorials-Getting-Started".
+Nella finestra Project Settings (Impostazioni progetto) seleziona **Player (Lettore)**  > **XR Settings** (Impostazioni XR) e quindi usa l'elenco a discesa **Depth Format** (Formato profondità) per selezionare **16-bit depth** (Profondità a 16 bit):
 
-    :::image type="content" source="images/mr-learning-base/base-02-section5-step2-5.png" alt-text="Finestra Publishing Settings (Impostazioni di pubblicazione) di Unity con il nome pacchetto configurato.":::
+![Unity Abilita 16 profondità](images/mr-learning-base/base-02-section5-step2-6.png)
 
-    **Nome pacchetto e nome prodotto**
+> [!TIP]
+> La riduzione del formato di profondità a 16 bit è facoltativa, ma consente di migliorare le prestazioni grafiche nel progetto. Per ulteriori informazioni su questo argomento, è possibile fare riferimento alla sezione   <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html#depth-buffer-sharing-hololens" target="_blank">  HoloLens (depth buffer sharing) </a> della documentazione  <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html" target="_blank"> sulle prestazioni </a> di MRTK.
 
-    - Il valore di 'Package name' (Nome del pacchetto) è l'identificatore univoco dell'app. Creare questo identificatore prima di distribuire l'app per evitare di sovrascrivere app installate in precedenza.
-    - Il valore di 'Product Name' (Nome del prodotto) è il nome visualizzato nel menu di avvio di HoloLens. Per semplificare l'individuazione dell'app durante lo sviluppo, è possibile anteporre un carattere di sottolineatura al nome in modo che compaia all'inizio dell'elenco.
+Nella finestra Project Settings (Impostazioni progetto) seleziona **Player (Lettore)**  > **Publishing Settings** (Impostazioni di pubblicazione) e quindi nel campo **Package name** (Nome del pacchetto) immetti un nome appropriato, ad esempio _MRTKTutorials-GettingStarted_:
 
-    :::image type="content" source="images/mr-learning-base/product-name.png" alt-text="Finestra Project Settings (Impostazioni progetto) di Unity con il nome prodotto configurato.":::
+![Finestra Project Settings di Unity con il nome del pacchetto configurato](images/mr-learning-base/base-02-section5-step2-7.png)
 
-9. Chiudere la finestra **Project Settings** (Impostazioni progetto).
+> [!NOTE]
+> Il valore di 'Package name' (Nome del pacchetto) è l'identificatore univoco dell'app. Modifica questo identificatore prima di distribuire l'app per evitare di sovrascrivere app installate in precedenza.
+
+> [!TIP]
+> Il valore di 'Product Name' (Nome del prodotto) è il nome visualizzato nel menu di avvio di HoloLens. Per semplificare l'individuazione dell'app durante lo sviluppo, anteponi un carattere di sottolineatura al nome in modo che compaia all'inizio dell'elenco.
 
 ## <a name="creating-and-configuring-the-scene"></a>Creazione e configurazione della scena
 
-1. Sulla barra dei menu scegliere **File** > **New Scene** (Nuova scena).
-2. Per aggiungere MRTK alla scena, sulla barra dei menu scegliere **Mixed Reality Toolkit** > **Add to Scene and Configure** (Aggiungi alla scena e configura).
+Scegli **File** > **New Scene** (Nuova scena) dal menu di Unity per creare una nuova scena:
 
-    :::image type="content" source="images/mr-learning-base/base-02-section6-step1-2.png" alt-text="Percorso del menu Add to Scene and Configure (Aggiungi alla scena e configura) di Unity.":::
+![Percorso del menu New Scene di Unity](images/mr-learning-base/base-02-section6-step1-1.png)
 
-3. Nella finestra **Hierarchy** (Gerarchia) assicurarsi che sia selezionato l'oggetto **MixedRealityToolkit**.
+Scegli **Mixed Reality Toolkit** > **Add to Scene and Configure...** (Aggiungi alla scena e configura) dal menu di Unity per aggiungere MRTK alla scena corrente:
 
-    :::image type="content" source="images/mr-learning-base/select-mixed-reality-toolkit.png" alt-text="Assicurarsi che l'oggetto MixedRealityTookit sia selezionato.":::
+![Percorso del menu Add to Scene and Configure... di Unity](images/mr-learning-base/base-02-section6-step1-2.png)
 
-4. Nella sezione **MixedRealityToolkit** della finestra **Inspector** (Controllo) verificare che il profilo di configurazione sia impostato su **DefaultMixedRealityToolkitConfigurationProfile**:
+Con l'oggetto **MixedRealityToolkit** selezionato nella finestra Hierarchy (Gerarchia), nella finestra Inspector (Controllo) verifica che il profilo di configurazione di **Mixed Reality Toolkit** sia impostato su **DefaultMixedRealityToolkitConfigurationProfile**:
 
-    :::image type="content" source="images/mr-learning-base/base-02-section6-step1-3.png" alt-text="Componente MixedRealityToolkit di Unity con DefaultMixedRealityTookitConfigurationProfile selezionato.":::
+![Componente MixedRealityToolkit di Unity con DefaultMixedRealityTookitConfigurationProfile selezionato](images/mr-learning-base/base-02-section6-step1-3.png)
 
-    > [!IMPORTANT]
-    > Durante le attività di sviluppo per HoloLens viene usato in genere DefaultHoloLens2ConfigurationProfile. Tuttavia, per questa esercitazione si userà DefaultMixedRealityToolkitConfigurationProfile. Nell'esercitazione successiva, riguardante la [configurazione dei profili MRTK](mr-learning-base-03.md), si passerà a DefaultHoloLens2ConfigurationProfile.
+Dal menu di Unity scegli **File** > **Save As** (Salva con nome) per visualizzare la finestra Save Scene (Salva la scena):
 
-5. Sulla barra dei menu scegliere **File** > **Save As** (Salva con nome).
-6. Nella finestra di dialogo **Save scene** (Salva scena) passare alla cartella **Scenes** (Scene) del progetto. Nella casella **File name** (Nome file) assegnare alla scena un nome appropriato, ad esempio "\_GettingStarted\_", e quindi fare clic sul pulsante **Save** (Salva).
+![Percorso del menu Save As... di Unity](images/mr-learning-base/base-02-section6-step1-4.png)
 
-    :::image type="content" source="images/mr-learning-base/base-02-section6-step1-5.png" alt-text="Finestra del prompt di salvataggio della scena di Unity.":::
+Nella finestra Save Scene (Salva la scena) passa alla cartella **Scenes** (Scene) del progetto, assegna alla scena un nome appropriato, ad esempio _GettingStarted_, e fai clic sul pulsante **Save** (Salva) per salvare la scena:
 
-## <a name="building-and-deploying-to-your-hololens-2"></a>Compilazione e distribuzione in HoloLens 2
+![Finestra Save Scene di Unity con il prompt di salvataggio](images/mr-learning-base/base-02-section6-step1-5.png)
 
-> Prima di compilare sul dispositivo, verificare quanto segue:
-- Il dispositivo è in modalità sviluppatore.
-- Il dispositivo è associato al computer di sviluppo. In caso contrario, verrà visualizzata la finestra di dialogo seguente in Visual Studio durante il processo di compilazione:
+## <a name="building-your-application-to-your-hololens-2"></a>Compilazione dell'applicazione nel dispositivo HoloLens 2
 
-![Immissione del PIN per l'associazione dei dispositivi](images/mr-learning-base/pin-request.png)
+### <a name="1-build-the-unity-project"></a>1. Compilare il progetto Unity
 
- Per altre informazioni su entrambi questi passaggi, vedere [Uso di Visual Studio per la distribuzione e il debug](../../platform-capabilities-and-apis/using-visual-studio.md).
+Dal menu di Unity scegli **File** > **Build Settings** (Impostazioni di compilazione) per visualizzare la finestra corrispondente.
 
-1. Sulla barra dei menu scegliere **File** > **Build Settings** (Impostazioni di compilazione).
-2. Nella finestra **Build Settings** (Impostazioni di compilazione) fare clic sul pulsante **Add Open Scenes** (Aggiungi scene aperte) per aggiungere la scena corrente all'elenco **Scenes In Build** (Scene in compilazione).
+Nella finestra Build Settings (Impostazioni di compilazione), fai clic sul pulsante **Add Open Scenes** (Aggiungi scene aperte) per aggiungere la scena corrente all'elenco **Scenes In Build** (Scene in compilazione) e quindi fai clic sul pulsante **Build** (Compila) per visualizzare la finestra Build Universal Windows Platform (Compilazione UWP):
 
-![Aggiungere la scena corrente all'elenco "Scenes in Build" (Scene in compilazione)](images/mr-learning-base/base-02-section7-step1-1.png)
+![Finestra Build Settings di Unity con la piattaforma UWP selezionata](images/mr-learning-base/base-02-section7-step1-1.png)
 
-3. Fare clic sul pulsante **Build**.
+Nella finestra Build Universal Windows Platform (Compilazione UWP), scegli un percorso appropriato in cui archiviare la compilazione, ad esempio _D:\MixedRealityLearning\Builds_, crea una nuova cartella e assegnale un nome adatto (ad esempio, _GettingStarted_) e quindi fai clic sul pulsante **Select Folder** (Seleziona cartella) per avviare il processo di compilazione:
 
-    :::image type="content" source="images/mr-learning-base/build-button.png" alt-text="Fare clic sul pulsante Build.":::
+![Finestra Build Settings di Unity con la finestra del prompt di selezione della cartella](images/mr-learning-base/base-02-section7-step1-2.png)
 
-4. Nella finestra di dialogo **Build Universal Windows Platform** (Compila piattaforma UWP) scegliere un percorso appropriato per memorizzare la build, ad esempio è possibile creare una cartella "Build" nella cartella "Esercitazioni di MRTK". Creare una nuova cartella e assegnarle un nome appropriato, ad esempio "GettingStarted", selezionare la cartella e quindi fare clic sul pulsante **Select Folder** (Seleziona cartella) per avviare il processo di compilazione.
+Attendi che Unity completi il processo di compilazione:
 
-    :::image type="content" source="images/mr-learning-base/base-02-section7-step1-2.png" alt-text="Finestra di compilazione di Unity in cui è visualizzata la cartella della build.":::
+![Processo di compilazione di Unity in corso](images/mr-learning-base/base-02-section7-step1-3.png)
 
-    Viene visualizzata una barra di stato che consente di restare aggiornati sullo stato di avanzamento della compilazione.
+### <a name="2-build-and-deploy-the-application"></a>2. Compilare e distribuire l'applicazione
 
-    :::image type="content" source="images/mr-learning-base/base-02-section7-step1-3.png" alt-text="Processo di compilazione di Unity in corso.":::
+Al termine del processo di compilazione, Unity richiederà a Esplora file di Windows di aprire il percorso in cui è stata archiviata la compilazione. Spostati all'interno della cartella e fai doppio clic sul file della soluzione per aprirlo in Visual Studio:
 
-    > [!TIP]
-    > Puoi anche eseguire la distribuzione nell'[emulatore HoloLens](../../platform-capabilities-and-apis/using-the-hololens-emulator.md) o creare un [Pacchetto applicazione](https://docs.microsoft.com/windows/uwp/packaging/packaging-uwp-apps) per il sideload.
+![Esplora risorse con la soluzione di Visual Studio appena creata selezionata](images/mr-learning-base/base-02-section8-step1-1.png)
 
-5. Al termine del processo di compilazione, in Esplora file passare al percorso in cui è stata memorizzata la build e quindi fare doppio clic sul file della soluzione per aprirlo in Visual Studio:
+> [!NOTE]
+> Se Visual Studio chiede di installare nuovi componenti, dedica qualche minuto a verificare di disporre di tutti i componenti indispensabili come specificato nella documentazione **[Installare gli strumenti](../../install-the-tools.md)** .
 
-    :::image type="content" source="images/mr-learning-base/base-02-section8-step1-1.png" alt-text="Esplora risorse in cui è selezionato il file appena creato per la soluzione di Visual Studio.":::
+Configura Visual Studio per HoloLens selezionando la configurazione **Master** o **Release**, l'architettura **ARM64** e **Dispositivo** come destinazione:
 
-    > [!NOTE]
-    > Se Visual Studio chiede di installare nuovi componenti, dedica qualche minuto a verificare di disporre di tutti i componenti indispensabili come specificato nella documentazione **[Installare gli strumenti](../../install-the-tools.md)** .
+![Visual Studio configurato per la distribuzione in HoloLens 2](images/mr-learning-base/base-02-section8-step1-2.png)
 
-6. Configurare Visual Studio per HoloLens selezionando la configurazione **Master** o **Release**, l'architettura **ARM64** e **Dispositivo** come destinazione.
+> [!TIP]
+> Se esegui la distribuzione in HoloLens (1a generazione), seleziona l'architettura **x86**.
 
-    > [!TIP]
-    > Se esegui la distribuzione in HoloLens (1a generazione), seleziona l'architettura **x86**.
+> [!NOTE]
+> Per HoloLens, in genere la compilazione viene eseguita per l'architettura ARM. Esiste tuttavia un <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank"><strong>problema noto</strong></a> in Unity 2019.3 che causa errori quando viene selezionata l'architettura di compilazione ARM in Visual Studio. La soluzione consigliata consiste nel compilare per ARM64. Se questa opzione non è applicabile, passa a **Modifica > Impostazioni progetto > Player (Lettore) > Altre impostazioni** e disabilita **Graphics Jobs** (Processi grafici).
 
-    :::image type="content" source="images/mr-learning-base/base-02-section8-step1-2.png" alt-text="Visual Studio configurato per la distribuzione in HoloLens 2.":::
+> [!NOTE]
+> Se non viene visualizzata l'opzione Dispositivo come destinazione, potresti dover modificare il progetto di avvio per la soluzione di Visual Studio passando dal progetto IL2CPP al progetto UWP. A tale scopo, in Esplora soluzioni fai clic con il pulsante destro del mouse su NomeProgetto (Windows universale) e scegli **Imposta come progetto di avvio**.
 
-    > [!NOTE]
-    > Per HoloLens, in genere la compilazione viene eseguita per l'architettura ARM. Esiste tuttavia un <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank"><strong>problema noto</strong></a> in Unity 2019.3 che causa errori quando viene selezionata l'architettura di compilazione ARM in Visual Studio. La soluzione consigliata consiste nel compilare per ARM64. Se questa opzione non è applicabile, passa a **Modifica > Impostazioni progetto > Player (Lettore) > Altre impostazioni** e disabilita **Graphics Jobs** (Processi grafici).
+Connetti HoloLens al computer e quindi seleziona **Debug** > **Avvia senza eseguire il debug** per eseguire la compilazione e la distribuzione nel dispositivo:
 
-    > [!NOTE]
-    > Se non viene visualizzata l'opzione Dispositivo come destinazione, potresti dover modificare il progetto di avvio per la soluzione di Visual Studio passando dal progetto IL2CPP al progetto UWP. A tale scopo, in Esplora soluzioni fare clic con il pulsante destro del mouse su NomeProgetto (Windows universale) e quindi scegliere **Imposta come progetto di avvio**.
+![Percorso del menu di avvio di Visual Studio senza debug](images/mr-learning-base/base-02-section8-step1-3.png)
 
-7. Connettere HoloLens al computer e quindi eseguire una di queste operazioni:
-- Per compilare l'app, distribuirla in HoloLens e avviarla automaticamente senza il debugger di Visual Studio associato, pertanto sulla barra dei menu scegliere **Debug** > **Avvia senza eseguire il debug**.
+> [!IMPORTANT]
+> Prima della compilazione nel dispositivo, quest'ultimo deve essere in modalità sviluppatore e associato al computer di sviluppo. Per completare i due passaggi segui [queste istruzioni](../../platform-capabilities-and-apis/using-visual-studio.md).
 
-    :::image type="content" source="images/mr-learning-base/base-02-section8-step1-3.png" alt-text="Percorso del menu di Visual Studio per l'avvio senza il debug.":::
+> [!TIP]
+> Puoi anche eseguire la distribuzione nell'[emulatore HoloLens](../../platform-capabilities-and-apis/using-the-hololens-emulator.md) o creare un [Pacchetto applicazione](https://docs.microsoft.com/windows/uwp/packaging/packaging-uwp-apps) per il sideload.
 
-- Per compilare e distribuire l'app in HoloLens senza però avviarla automaticamente, sulla barra dei menu scegliere **Compila > Distribuisci soluzione**.
+Usando Avvia senza eseguire il debug, l'app viene avviata nel dispositivo senza collegare il debugger di Visual Studio.
 
-    > [!NOTE]
-    >Potrebbe essere visibile nell'app il profiler di diagnostica, che può essere attivato o disattivato tramite il comando vocale **Toggle Diagnostics** (Attiva/Disattiva diagnostica). È consigliabile mantenere visibile il profiler la maggior parte del tempo durante lo sviluppo per verificare quando le modifiche apportate all'app possono produrre effetti negativi sulle prestazioni. Le app HoloLens ad esempio devono [essere eseguite costantemente a 60 FPS](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md).
+Seleziona **Compila > Distribuisci soluzione** per eseguire la distribuzione nel dispositivo senza che l'app venga avviata automaticamente.
+
+> [!NOTE]
+>Potrebbe essere visibile nell'app il profiler di diagnostica, che può essere attivato o disattivato tramite il comando vocale **Toggle Diagnostics** (Attiva/Disattiva diagnostica). È consigliabile mantenere visibile il profiler la maggior parte del tempo durante lo sviluppo per verificare quando le modifiche apportate all'app possono produrre effetti negativi sulle prestazioni. Le app HoloLens ad esempio devono [essere eseguite costantemente a 60 FPS](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md).
 
 ## <a name="congratulations"></a>Lezione completata
 

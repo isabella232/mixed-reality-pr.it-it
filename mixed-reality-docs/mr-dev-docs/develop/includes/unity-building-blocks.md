@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d6d5f40f94f490901d95d70583da38bf393b2599
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
-ms.translationtype: HT
+ms.openlocfilehash: 8ca6c6b4eea1d49f98e7a04b091a4a08cb859ff3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98195331"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582996"
 ---
 # <a name="available-in-mrtk"></a>[Disponibile in MRTK](#tab/mrtk)
 
@@ -15,7 +15,7 @@ ms.locfileid: "98195331"
 | [Sguardo fisso](../unity/gaze-in-unity.md) | Consentire agli utenti di puntare agli ologrammi fissandoli con lo sguardo |
 | [Controller del movimento](../unity/motion-controllers-in-unity.md) | Aggiungere azioni nello spazio alle app di realtà mista |
 | [Movimenti](../unity/gestures-in-unity.md) | Usare i movimenti della mano come input nelle esperienze di realtà mista |
-| [Tracciamento della mano e oculare](../unity/hand-eye-in-unit.md) | Integrare l'input di tracciamento della mano articolata e oculare nell'esperienza utente |
+| [Tracciamento della mano e oculare](../unity/hand-eye-in-unity.md) | Integrare l'input di tracciamento della mano articolata e oculare nell'esperienza utente |
 | [Mapping spaziale](../unity/spatial-mapping-in-unity.md) | Mappare lo spazio fisico con una mesh virtuale sovrapposta per contrassegnare i limiti dell'ambiente |
 | [Text](../unity/text-in-unity.md) | Ottenere testo nitido e di alta qualità di dimensioni gestibili e con un rendering di qualità |
 | [Input vocale](../unity/voice-input-in-unity.md) | Acquisire parole chiave, frasi e dettature pronunciate degli utenti|
@@ -34,5 +34,3 @@ ms.locfileid: "98195331"
 | [Audio spaziale](../unity/spatial-sound-in-unity.md) | Migliorare le app con audio 3D immersivo |
 | [Text](../unity/text-in-unity.md) | Ottenere testo nitido e di alta qualità di dimensioni gestibili e con un rendering di qualità |
 | [Input vocale](../unity/voice-input-in-unity.md) | Acquisire parole chiave, frasi e dettature pronunciate degli utenti|
-
-

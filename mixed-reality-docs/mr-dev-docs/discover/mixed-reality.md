@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: article
 keywords: Realtà mista, olografica, AR, VR, MR, XR, realtà aumentata, realtà virtuale, spiegazione, case study, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata
 ms.localizationpriority: high
-ms.openlocfilehash: 7f06909b12137598649d113697651277751bcb22
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
-ms.translationtype: HT
+ms.openlocfilehash: 2eac20b85ceeb9413dfc0b6820cceda2ddf335c5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757699"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583010"
 ---
 # <a name="what-is-mixed-reality"></a>Che cos'è Realtà mista?
 
@@ -34,7 +34,7 @@ La realtà mista è una fusione tra mondo fisico e mondo digitale che rende poss
 
 Negli ultimi decenni è stata approfondita sempre di più la relazione tra input umano e del computer, portando a un disciplina nota come *interazione uomo-computer* o HCI L'input umano avviene attraverso diversi mezzi, tra cui tastiere, mouse, tocco, input penna, voce e anche il tracciamento dello scheletro con Kinect.
 
-I miglioramenti apportati ai sensori e all'elaborazione stanno creando nuove aree di input computer dagli ambienti. L'interazione tra computer e ambienti è una conoscenza o *percezione* ambientale ed è proprio per questo motivo che le API di Windows che rivelano informazioni ambientali sono chiamate [API di percezione](https://docs.microsoft.com/uwp/api/Windows.Perception). L'input ambientale acquisisce elementi come la posizione di una persona nell'ambiente ([tracciamento del movimento della testa](../design/coordinate-systems.md)), le superfici e i confini ([mapping spaziale](../design/spatial-mapping.md) e [conoscenza della scena](../design/scene-understanding.md)), l'illuminazione ambientale, l'audio ambientale, il riconoscimento degli oggetti e la posizione.
+I miglioramenti apportati ai sensori e all'elaborazione stanno creando nuove aree di input computer dagli ambienti. L'interazione tra computer e ambienti è una conoscenza o *percezione* ambientale ed è proprio per questo motivo che le API di Windows che rivelano informazioni ambientali sono chiamate [API di percezione](/uwp/api/Windows.Perception). L'input ambientale acquisisce elementi come la posizione di una persona nell'ambiente ([tracciamento del movimento della testa](../design/coordinate-systems.md)), le superfici e i confini ([mapping spaziale](../design/spatial-mapping.md) e [conoscenza della scena](../design/scene-understanding.md)), l'illuminazione ambientale, l'audio ambientale, il riconoscimento degli oggetti e la posizione.
 
 <br>
 
@@ -117,5 +117,3 @@ Se si sta seguendo il [percorso di scoperta](get-started-with-mr.md) definito, �
 
 > [!div class="nextstepaction"]
 > [Che cos'è un ologramma?](hologram.md)
-
-

@@ -7,12 +7,12 @@ ms.date: 02/26/2019
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, riconoscimento vocale, Windows 10, LUIS, portale LUIS, finalità, entità, espressioni, comprensione del linguaggio naturale
 ms.localizationpriority: high
-ms.openlocfilehash: 07044d3dc38be12d5d601d34a23a241a71c5b06d
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 8d840855321de5d4e055b944783649c9d8028f9a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007771"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581475"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4. Configurazione della comprensione delle finalità e del linguaggio naturale
 
@@ -55,7 +55,7 @@ Fai clic sul pulsante **Create** (Crea) per creare un'istanza del servizio:
 Nella pagina Create (Crea) fai clic sull'opzione **Prediction** (Stima) e immetti i valori seguenti:
 
 * In **Subscription** (Sottoscrizione) seleziona **Free Trail** (Prova gratuita) se disponi di una sottoscrizione di prova gratuita, altrimenti seleziona una delle altre sottoscrizioni
-* In **Resource group** (Gruppo risorse) fai clic sul collegamento **Create new** (Crea nuovo), immetti un nome appropriato, ad esempio *MRKT-Tutorials*, e quindi fai clic su **OK**
+* Per il **gruppo di risorse**, fare clic sul collegamento **Crea nuovo** , immettere un nome appropriato, ad esempio *MRKT-esercitazioni*, quindi fare clic su **OK** .
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-3.png)
 
@@ -73,7 +73,7 @@ Sempre nella pagina Create (Crea) immetti i valori seguenti:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-4.png)
 
-Passa quindi alla scheda **Review + create** (Verifica e crea), esamina i dettagli e quindi fai clic sul pulsante **Create** (Crea), disponibile nella parte inferiore della pagina, per creare la risorsa e il nuovo gruppo di risorse se ne hai configurato uno per la creazione:
+Fare quindi clic su **Verifica + crea** , esaminare i dettagli, quindi fare clic sul pulsante **Crea** , che si trova nella parte inferiore della pagina, per creare la risorsa e il nuovo gruppo di risorse se ne è stato configurato uno per la creazione:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-5.png)
 
@@ -107,13 +107,14 @@ Di seguito sono riportati i passaggi principali da eseguire per ottenere questo 
 Con lo stesso account utente usato durante la creazione della risorsa di Azure nella sezione precedente, accedi a <a href="https://www.luis.ai" target="_blank">LUIS</a>, seleziona il tuo paese e accetta le condizioni per l'utilizzo. Nel passaggio successivo, quando viene visualizzata la richiesta **Link your Azure account** (Collega il tuo account Azure), scegli **Continue using your trial key** (Continua a usare la chiave di prova) per usare invece una risorsa di creazione di Azure.
 
 > [!NOTE]
-> Se hai già effettuato l'iscrizione a LUIS e la chiave di prova per la creazione è scaduta, puoi fare riferimento alla documentazione [Eseguire la migrazione a una chiave di creazione delle risorse di Azure](https://docs.microsoft.com/azure/cognitive-services/luis/luis-migration-authoring) per passare ad Azure per la risorsa di creazione LUIS.
+> Se hai già effettuato l'iscrizione a LUIS e la chiave di prova per la creazione è scaduta, puoi fare riferimento alla documentazione [Eseguire la migrazione a una chiave di creazione delle risorse di Azure](/azure/cognitive-services/luis/luis-migration-authoring) per passare ad Azure per la risorsa di creazione LUIS.
 
-Dopo aver eseguito l'accesso, passa alla pagina **My apps** (App personali), quindi fai clic su **Create new app** (Crea nuova app) e immetti i valori seguenti nella finestra popup **Create new app** (Crea nuova app):
+Dopo aver eseguito l'accesso, fare clic su **nuova app** e immettere i valori seguenti nella finestra popup **Crea nuova app** :
 
 * In **Name** (Nome) immetti un nome appropriato, ad esempio *MRTK Tutorials - AzureSpeechServices*
 * In **Culture** (Impostazioni cultura) seleziona **English** (Inglese)
 * In **Description** (Descrizione) immetti facoltativamente una descrizione appropriata
+* Per **risorsa di stima** selezionare l'elenco a discesa risorsa di stima in base a cui è stato creato il portale di Azure.
 
 Fai quindi clic sul pulsante **Done** (Fine) per creare la nuova app:
 
@@ -125,7 +126,7 @@ Al termine della creazione della nuova app, visualizzerai la pagina **Dashboard*
 
 ### <a name="2-create-intents"></a>2. Creare finalità
 
-Dalla pagina Dashboard passa alla pagina Build (Compila) > App Assets (Asset app) > **Intents** (Finalità), quindi fai clic su **Create new intent** (Crea nuova finalità) e immetti il valore seguente nella finestra popup **Create new intent** (Crea nuova finalità):
+Dalla pagina Dashboard passare alla pagina Compila > app assets > **Intents** , quindi fare clic su **Crea** e immettere il valore seguente nella finestra popup **Crea nuovo preventivo** :
 
 * In **Intent name** (Nome finalità) immetti **PressButton**
 
@@ -164,12 +165,12 @@ Dopo aver aggiunto tutte le espressioni di esempio, la pagina della finalità Pr
 
 ### <a name="4-create-entities"></a>4. Creare entità
 
-Dalla pagina della finalità PressButton passa alla pagina Build (Compila) > App Assets (Asset app) > **Entities** (Entità), quindi fai clic su **Create new entity** (Crea nuova entità) e immetti i valori seguenti nella finestra popup **Create new entity** (Crea nuova entità):
+Dalla pagina PressButton Intent, passare alla pagina Build > app assets > **Entities** , quindi fare clic su **Crea** e immettere i valori seguenti nella finestra popup **Crea nuova entità** :
 
 * In **Entity name** (Nome entità) immetti **Action** (Azione)
-* In **Entity type** (Tipo entità) seleziona **Simple** (Semplice)
+* Per **tipo di entità** selezionare **computer learned**
 
-Fai quindi clic sul pulsante **Done** (Fine) per creare la nuova entità:
+Fare quindi clic sul pulsante **Crea** per creare la nuova entità:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step4-1.png)
 
@@ -188,7 +189,7 @@ Dopo essere tornato alla pagina della finalità PressButton, fai clic sulla paro
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-1.png)
 
-La frase **go ahead** (vai avanti) è ora definita come valore dell'entità **Action** (Azione). Se passi il cursore del mouse sopra il nome dell'entità Action (Azione), puoi visualizzare il valore dell'entità Action (Azione) associato:
+La frase **go ahead** (vai avanti) è ora definita come valore dell'entità **Action** (Azione). A questo punto è possibile notare il valore dell'entità Action sotto la parola Go Ahead:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-2.png)
 
@@ -199,7 +200,7 @@ Fai quindi clic sulla parola **launch** (lancia) e infine scegli **Target (Simpl
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-3.png)
 
-La parola **launch** (lancia) è ora definita come valore dell'entità **Target**. Se passi il cursore del mouse sopra il nome dell'entità Target, puoi visualizzare il valore dell'entità Target associato:
+La parola di **avvio** è ora definita come valore di entità di **destinazione** . A questo punto è possibile notare il valore dell'entità di destinazione sotto la parola Launch:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-4.png)
 
@@ -219,14 +220,6 @@ L'espressione di esempio della finalità PressButton 'go ahead and launch the ro
 Dopo aver etichettato tutte le espressioni di esempio, la pagina della finalità PressButton dovrebbe essere simile alla seguente:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-5.png)
-
-Come metodo alternativo per verificare che siano state assegnate le entità corrette, fai clic sul menu **View options** (Opzioni vista) e passa alla vista **Show entity values** (Mostra valori entità):
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-6.png)
-
-Ora, con la vista impostata in modo da mostrare i valori delle entità, puoi passare il cursore del mouse sulle parole e le frasi con etichetta per verificare rapidamente il nome dell'entità assegnata:
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-7.png)
 
 ### <a name="6-train-test-and-publish-the-app"></a>6. Eseguire il training, il test e la pubblicazione dell'app
 
@@ -249,7 +242,7 @@ Dopo l'elaborazione dell'espressione di test, fai clic su **Inspect** (Ispeziona
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-3.png)
 
-Per pubblicare l'app, fai clic sul pulsante **Publish** (Pubblica) in alto a destra, quindi nella finestra popup **Choose your publishing slot and settings** (Scegli lo slot e le impostazioni di pubblicazione) seleziona **Production** (Produzione) e fai clic sul pulsante **Publish** (Pubblica):
+Per pubblicare l'app, fare clic sul pulsante **pubblica** in alto a destra, quindi nella finestra popup **scegliere lo slot di pubblicazione e le impostazioni** Selezionare **produzione** e fare clic sul pulsante **fine** :
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-4.png)
 
@@ -257,25 +250,9 @@ Attendi il completamento del processo di pubblicazione:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-5.png)
 
-### <a name="7-assign-an-azure-prediction-resource-to-the-app"></a>7. Assegnare una risorsa di stima di Azure all'app
+Passare alla pagina Gestisci impostazioni applicazione > > **risorse di Azure** . la pagina risorse di Azure dovrebbe essere simile alla seguente:
 
-Passa alla pagina Manage (Gestisci) > Application Settings (Impostazioni applicazione) > **Azure Resources** (Risorse di Azure):
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step7-1.png)
-
-Nella pagina Azure Resources (Risorse di Azure) fai clic sul pulsante **Add prediction resource** (Aggiungi risorsa di stima) e seleziona i valori seguenti nella finestra popup **Assign a resource to your app** (Assegna una risorsa all'app):
-
-* In **Tenant name** (Nome tenant) seleziona il nome del tenant
-* In **Subscription Name** (Nome sottoscrizione) seleziona la stessa sottoscrizione usata in precedenza nella sezione [Creazione della risorsa Azure Language Understanding](mrlearning-speechSDK-ch4.md#creating-the-azure-language-understanding-resource)
-* In **LUIS resource name** (Nome risorsa LUIS) seleziona la risorsa di stima creata in precedenza nella sezione [Creazione della risorsa Azure Language Understanding](mrlearning-speechSDK-ch4.md#creating-the-azure-language-understanding-resource)
-
-Fai quindi clic sul pulsante **Assign Resource** (Assegna risorsa) per assegnare la risorsa di stima di Azure all'app:
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step7-2.png)
-
-Dopo l'assegnazione della risorsa, la pagina Azure Resources (Risorse di Azure) dovrebbe essere simile alla seguente:
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step7-3.png)
+![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-6.png)
 
 ## <a name="connecting-the-unity-project-to-the-luis-app"></a>Connessione del progetto Unity all'app LUIS
 

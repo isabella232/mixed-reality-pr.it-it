@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, funzionalità multiutente, Photon, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 8bf8d440cb47d817514e34c98ac45f34f495c2bb
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: e0bfd56c6900b84c2b8c2bda71e66aa40417bd5a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007301"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581356"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Configurazione di Photon Unity Networking
 
@@ -28,13 +28,13 @@ In questa esercitazione si preparerà l'ambiente per la creazione di un'esperien
 
 In questa sezione creerai un nuovo progetto Unity per prepararti allo sviluppo con MRTK.
 
-Seguire prima l'esercitazione [Inizializzazione del progetto e distribuzione della prima applicazione](mr-learning-base-02.md), escluse le istruzioni della sezione [Compilare l'applicazione nel dispositivo](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2). L'esercitazione include i passaggi seguenti:
+Seguire prima l'esercitazione [Inizializzazione del progetto e distribuzione della prima applicazione](mr-learning-base-02.md), escluse le istruzioni della sezione [Compilare l'applicazione nel dispositivo](mr-learning-base-02.md#building-your-application-to-your-hololens-2). L'esercitazione include i passaggi seguenti:
 
 1. [Creazione del progetto Unity](mr-learning-base-02.md#creating-the-unity-project) e assegnazione di un nome appropriato, ad esempio *MRTK Tutorials*
 2. [Passaggio a un'altra piattaforma di compilazione](mr-learning-base-02.md#switching-the-build-platform)
 3. [Importazione delle risorse essenziali TextMeshPro](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [Importazione di Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Configurazione del progetto Unity](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+5. [Configurazione del progetto Unity](mr-learning-base-02.md#configuring-the-unity-project)
 6. [Creazione e configurazione della scena](mr-learning-base-02.md#creating-and-configuring-the-scene) e assegnazione di un nome appropriato, ad esempio *MultiUserCapabilities*
 
 Seguire quindi le istruzioni riportate in [Modifica delle opzioni di visualizzazione di consapevolezza spaziale](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) per:
@@ -48,7 +48,7 @@ Dal menu Unity scegli **Edit** > **Project Settings...** (Modifica > Impostazion
 
 ![Impostazioni del lettore di Unity](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
-In **Publishing Settings** (Impostazioni di pubblicazione) scorrere verso il basso fino alla sezione **Capabilities** (Funzionalità) e verificare che siano abilitate le funzionalità **InternetClient**, **Microphone**, **SpatialPerception**, e **GazeInput**, abilitate al passaggio [Configurazione del progetto Unity](mr-learning-base-02.md#selecting-mrtk-and-project-settings) precedente.
+In **Publishing Settings** (Impostazioni di pubblicazione) scorrere verso il basso fino alla sezione **Capabilities** (Funzionalità) e verificare che siano abilitate le funzionalità **InternetClient**, **Microphone**, **SpatialPerception**, e **GazeInput**, abilitate al passaggio [Configurazione del progetto Unity](mr-learning-base-02.md#configuring-the-unity-project) precedente.
 
 Abilitare quindi le funzionalità aggiuntive seguenti:
 
@@ -83,7 +83,7 @@ Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progett
 > Per rivedere la procedura di importazione di un pacchetto personalizzato di Unity, è possibile fare riferimento alle istruzioni riportate in [Importazione di Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit).
 
 > [!NOTE]
-> Dopo aver importato il pacchetto di asset dell'esercitazione MultiUserCapabilities, nella finestra della console verranno visualizzati alcuni errori [CS0246](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0246) che indicano che manca il tipo o lo spazio dei nomi. Si tratta di un comportamento previsto, che verrà risolto nella prossima sezione quando verranno importati gli asset di PUN.
+> Dopo aver importato il pacchetto di asset dell'esercitazione MultiUserCapabilities, nella finestra della console verranno visualizzati alcuni errori [CS0246](/dotnet/csharp/language-reference/compiler-messages/cs0246) che indicano che manca il tipo o lo spazio dei nomi. Si tratta di un comportamento previsto, che verrà risolto nella prossima sezione quando verranno importati gli asset di PUN.
 
 ## <a name="importing-the-pun-assets"></a>Importazione degli asset di PUN
 

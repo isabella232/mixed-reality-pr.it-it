@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, hololens 2, archiviazione di azure, servizi cloud di azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: a948e035a467588091a2b5e16a3e2632ab3049d3
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 9c2041f9dac284fc4a7bea7d79b95e3e6240902a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008201"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581926"
 ---
 # <a name="2-integrating-azure-storage"></a>2. Integrazione di Archiviazione di Azure
 
@@ -28,7 +28,7 @@ In questa esercitazione apprenderai come salvare dati di entità in Archiviazion
 
 **Archiviazione di Azure** è una soluzione di archiviazione Microsoft sul cloud in grado di coprire numerosi scenari e requisiti. Si tratta di una soluzione con scalabilità elevata facilmente accessibile per gli sviluppatori. Tutti i servizi possono essere usati con un **account di archiviazione di Azure**. Per questo caso d'uso, verranno usati i servizi *archiviazione tabelle* e *archiviazione BLOB*.
 
-Sono disponibili altre informazioni sui [servizi Archiviazione di Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-overview).
+Sono disponibili altre informazioni sui [servizi Archiviazione di Azure](/azure/storage/blobs/storage-blobs-overview).
 
 ### <a name="azure-table-storage"></a>Archiviazione tabelle di Azure
 
@@ -36,18 +36,18 @@ Questo servizio consente di archiviare i dati in modalità NoSQL e in questo pro
 
 Nel contesto dell'applicazione demo sono necessarie due tabelle, una per archiviare i dati relativi al progetto con informazioni sullo stato dei modelli con training (altre informazioni sono disponibili nell'esercitazione [Integrazione di Visione personalizzata di Azure](mr-learning-azure-03.md)) e una seconda tabella per archiviare le informazioni sugli *oggetti tracciati*.
 
-Sono disponibili altre informazioni su [Archiviazione tabelle di Azure](https://docs.microsoft.com/azure/storage/tables/table-storage-overview).
+Sono disponibili altre informazioni su [Archiviazione tabelle di Azure](/azure/storage/tables/table-storage-overview).
 
 ### <a name="azure-blob-storage"></a>Archiviazione BLOB di Azure
 
 Questo servizio consente di archiviare file binari di grandi dimensioni e lo userai per archiviare le foto acquisite per *oggetti tracciati* come anteprima.
 Per l'applicazione demo necessiti di un contenitore BLOB per archiviare le immagini.
 
-Sono disponibili altre informazioni su [Archiviazione BLOB di Azure](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction).
+Sono disponibili altre informazioni su [Archiviazione BLOB di Azure](/azure/storage/blobs/storage-blobs-introduction).
 
 ## <a name="preparing-azure-storage"></a>Preparazione di Archiviazione di Azure
 
-Per usare i servizi Archiviazione di Azure, necessiterai di un account di archiviazione di Azure. Per creare un account di archiviazione, vedi [Creare un account di archiviazione](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal). Per altre informazioni sugli account di archiviazione, vedi [Panoramica dell'account di archiviazione di Azure](https://docs.microsoft.com/azure/storage/common/storage-account-overview).
+Per usare i servizi Archiviazione di Azure, necessiterai di un account di archiviazione di Azure. Per creare un account di archiviazione, vedi [Creare un account di archiviazione](/azure/storage/common/storage-account-create?tabs=azure-portal). Per altre informazioni sugli account di archiviazione, vedi [Panoramica dell'account di archiviazione di Azure](/azure/storage/common/storage-account-overview).
 
 Dopo aver creato un account di archiviazione, puoi recuperare dal **portale di Azure** la stringa di connessione, che sarà necessaria nella sezione successiva di questa lezione.
 
@@ -57,7 +57,7 @@ Sebbene sia possibile visualizzare e verificare tutte le modifiche dall'interfac
 
 > [!TIP]
 > Per i test dall'editor di Unity puoi usare un emulatore locale:
-> * in Windows 10 è possibile usare l'[Emulatore di archiviazione di Azure](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)
+> * in Windows 10 è possibile usare l'[Emulatore di archiviazione di Azure](/azure/storage/common/storage-use-emulator)
 > * in MacOS/Linux puoi usare l'[immagine Azurite Docker](https://hub.docker.com/_/microsoft-azure-storage-azurite) per Docker
 
 ## <a name="preparing-the-scene"></a>Preparazione della scena

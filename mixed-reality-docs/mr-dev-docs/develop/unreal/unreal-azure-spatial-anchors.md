@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, sviluppo di azure, ancoraggi nello spazio, realtà mista, sviluppo, funzionalità, nuovo progetto, emulatore, documentazione, guide, ologrammi, sviluppo di giochi, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 95e8ad708dd44a05fb306b2ea49f167fd400c5d8
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 5797cd48198b163b55f3724685126b1d4d85c69c
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009771"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583021"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Ancoraggi nello spazio di Azure in Unreal
 
@@ -30,17 +30,17 @@ Per completare le procedure contenute in questa guida, verificare che siano sodd
 
 - Installato [Unreal versione 4.25](https://www.unrealengine.com/get-now) o successiva
 - [Progetto HoloLens 2](tutorials/unreal-uxt-ch1.md) configurato in Unreal 
-- Leggere la sezione [Panoramica di Ancoraggi nello spazio di Azure](https://docs.microsoft.com/azure/spatial-anchors/overview)
+- Leggere la sezione [Panoramica di Ancoraggi nello spazio di Azure](/azure/spatial-anchors/overview)
 - Nozioni di base su C++ e Unreal
 
 ## <a name="getting-azure-spatial-anchors-account-info"></a>Recupero delle informazioni sull'account di Ancoraggi nello spazio di Azure
 
 Prima di usare Ancoraggi nello spazio di Azure nel progetto, è necessario:
-* [Creare una risorsa di Ancoraggi nello spazio](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource) e copiare i campi dell'account elencati di seguito. Questi valori vengono usati per autenticare gli utenti con l'account dell'applicazione:
+* [Creare una risorsa di Ancoraggi nello spazio](/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource) e copiare i campi dell'account elencati di seguito. Questi valori vengono usati per autenticare gli utenti con l'account dell'applicazione:
     * **ID account**
     * **Chiave dell'account**
 
-Per altre informazioni, vedere la documentazione relativa all'[autenticazione di Ancoraggi nello spazio di Azure](https://docs.microsoft.com/azure/spatial-anchors/concepts/authentication?tabs=csharp).
+Per altre informazioni, vedere la documentazione relativa all'[autenticazione di Ancoraggi nello spazio di Azure](/azure/spatial-anchors/concepts/authentication?tabs=csharp).
 
 > [!NOTE]
 > Ancoraggi nello spazio di Azure in Unreal 4.25 non supporta i token di autenticazione di Azure AD. Il supporto per questa funzionalità, tuttavia, sarà disponibile in una versione successiva.
@@ -65,7 +65,7 @@ Una sessione di Ancoraggi nello spazio di Azure consente alle applicazioni clien
 ![Screenshot del riquadro dei dettagli con l'ID e la chiave dell'account di Ancoraggi nello spazio di Azure e il tipo di variabile evidenziati](images/asa-unreal/unreal-spatial-anchors-img-02.png)
 
 Avviare una sessione di Ancoraggi nello spazio di Azure nel modo seguente:
-1. Verificare che nell'applicazione HoloLens sia in esecuzione un'istanza di **AR Session** (Sessione AR) poiché la sessione di Ancoraggi nello spazio di Azure non può essere avviata fino a quando non è in esecuzione una sessione AR. [Creare un asset di sessione AR](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset) se non ne è stato configurato nessuno.
+1. Verificare che nell'applicazione HoloLens sia in esecuzione un'istanza di **AR Session** (Sessione AR) poiché la sessione di Ancoraggi nello spazio di Azure non può essere avviata fino a quando non è in esecuzione una sessione AR. [Creare un asset di sessione AR](/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset) se non ne è stato configurato nessuno.
 2. Aggiungere l'evento personalizzato **Start Azure Spatial Anchors Session** (Avvia sessione di Ancoraggi nello spazio di Azure) e configurarlo nel modo illustrato nello screenshot seguente.
     * La creazione di una sessione non determina l'avvio della sessione per impostazione predefinita, che consente di configurare la sessione per l'autenticazione con il servizio Ancoraggi nello spazio di Azure.
 
@@ -216,6 +216,6 @@ In alternativa, passare alle API e alle funzionalità della piattaforma di realt
 
 ## <a name="next-steps"></a>Passaggi successivi
 * [Ancoraggi nello spazio locali](unreal-spatial-anchors.md)
-* [Documentazione di Ancoraggi nello spazio](https://docs.microsoft.com/azure/spatial-anchors/)
+* [Documentazione di Ancoraggi nello spazio](/azure/spatial-anchors/)
 * [Funzionalità di Ancoraggi nello spazio](https://azure.microsoft.com/services/spatial-anchors/#features)
-* [Linee guida per un'esperienza efficace di gestione degli ancoraggi](https://docs.microsoft.com/azure/spatial-anchors/concepts/guidelines-effective-anchor-experiences)
+* [Linee guida per un'esperienza efficace di gestione degli ancoraggi](/azure/spatial-anchors/concepts/guidelines-effective-anchor-experiences)

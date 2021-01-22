@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realtà mista, sviluppo, guida introduttiva, nuovo progetto, porting, funzionalità, fotocamera, simulazione, emulazione, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, mapping spaziale, input vocale, fotocamera individuabile, emulatore, Azure, esercitazioni
-ms.openlocfilehash: c5b7683574378565c71e95bc6205be3dbf92fcaf
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
-ms.translationtype: HT
+ms.openlocfilehash: fc444f4d40d8bc013253869fe77ddd563e889d85
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226440"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582979"
 ---
 # <a name="unity-development-for-hololens"></a>Sviluppo di Unity per HoloLens
 
@@ -85,7 +85,7 @@ Il lavoro degli sviluppatori non finisce mai, soprattutto per quanto riguarda la
 
 Se si hanno a disposizione app di cui si vuole eseguire la conversione, sarà utile consultare gli articoli elencati di seguito:
 
-* [Da HoloToolkit/MRTK a MRTK v2](mrtk-porting-guide.md)
+* [Da HoloToolkit/MRTK a MRTK v2](../porting-apps/porting-hl1-hl2.md)
 * [Guida alla conversione per le app Immersive](../porting-apps/porting-guides.md)
 * [Guida al porting dell'input](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 

@@ -7,12 +7,12 @@ ms.date: 04/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, realtà mista, debug, distribuzione
-ms.openlocfilehash: 20bda2cd247f18680d3f9fe95284e238a32e1140
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
-ms.translationtype: HT
+ms.openlocfilehash: c4ffe3a426ad82c324efef20639cf836f16a7f63
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97529968"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583617"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>Uso di Visual Studio per la distribuzione e il debug
 
@@ -129,7 +129,7 @@ Per dissociare HoloLens da tutti i computer associati:
 
 ## <a name="graphics-debugger-for-hololens-1st-gen"></a>Debugger grafica per HoloLens (prima generazione)
 
-Gli strumenti di Diagnostica della grafica di Visual Studio sono utili per la scrittura e l'ottimizzazione di un'app olografica. Per informazioni dettagliate, vedi [Diagnostica della grafica di Visual Studio su MSDN](https://msdn.microsoft.com/library/hh315751.aspx).
+Gli strumenti di Diagnostica della grafica di Visual Studio sono utili per la scrittura e l'ottimizzazione di un'app olografica. Per informazioni dettagliate, vedi [Diagnostica della grafica di Visual Studio su MSDN](/previous-versions/visualstudio/visual-studio-2015/debugger/visual-studio-graphics-diagnostics).
 
 **Per avviare Debugger grafica**
 1. Segui le istruzioni riportate sopra per specificare come destinazione un dispositivo o un emulatore
@@ -138,7 +138,7 @@ Gli strumenti di Diagnostica della grafica di Visual Studio sono utili per la sc
 
 ## <a name="profiling"></a>Profilatura
 
-Gli strumenti di profilatura di Visual Studio consentono di analizzare le prestazioni e l'uso delle risorse dell'app. Sono inclusi strumenti per ottimizzare l'uso di CPU, memoria, grafica e rete. Per i dettagli completi, vedi [Eseguire strumenti di diagnostica senza debug in MSDN](https://msdn.microsoft.com/library/dn957936.aspx).
+Gli strumenti di profilatura di Visual Studio consentono di analizzare le prestazioni e l'uso delle risorse dell'app. Sono inclusi strumenti per ottimizzare l'uso di CPU, memoria, grafica e rete. Per i dettagli completi, vedi [Eseguire strumenti di diagnostica senza debug in MSDN](/previous-versions/visualstudio/visual-studio-2015/profiling/profiling-tools).
 
 **Per avviare gli strumenti di profilatura con HoloLens**
 1. Segui le istruzioni riportate sopra per specificare come destinazione un dispositivo o un emulatore
@@ -175,5 +175,5 @@ In alternativa, passare direttamente all'aggiunta di servizi avanzati:
 ## <a name="see-also"></a>Vedere anche
 * [Installare gli strumenti](../install-the-tools.md)
 * [Uso dell'emulatore HoloLens](using-the-hololens-emulator.md)
-* [Distribuzione e debug delle app UWP (Universal Windows Platform)](https://msdn.microsoft.com/library/windows/apps/xaml/mt613243.aspx)
-* [Abilitare il dispositivo per lo sviluppo](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
+* [Distribuzione e debug delle app UWP (Universal Windows Platform)](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps)
+* [Abilitare il dispositivo per lo sviluppo](/windows/uwp/get-started/enable-your-device-for-development)

@@ -1,15 +1,15 @@
 ---
-ms.openlocfilehash: 31f11712c2f1cbe7e6726ecf5a83ccd31a2e616e
-ms.sourcegitcommit: 0509cf6c57067cffd75a0189106e3369e9ecc5c8
-ms.translationtype: HT
+ms.openlocfilehash: 2ccad1adee0098233d08c6694dbb84d9fc1df6ff
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96912175"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580048"
 ---
 # <a name="426"></a>[4.26](#tab/ue426)
 
 L'ultima versione di Unreal Engine 4.26 include:
-* Supporto per le nuove [API XR per più dispositivi](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-porting)
+* Supporto per le nuove [API XR per più dispositivi](../unreal-porting.md)
 * Supporto di OpenXR e plug-in [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal) 
 * Plug-in HoloLens Media Player per la riproduzione video a prestazioni elevate
 * Ancoraggi nello spazio di Azure per Android e iOS (beta)
@@ -31,4 +31,4 @@ Unreal Engine 4.25 include:
 * Acquisizione in realtà mista (MRC, Mixed Reality Capture)
 * Supporto iniziale per Ancoraggi nello spazio di Azure
 
-Per altre informazioni, vedere le <a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_25/index.html" target="_blank" title="note sulla versione di Unreal Engine 4.25"></a>. 
+Per altre informazioni, vedere le <a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_25/index.html" target="_blank" title="note sulla versione di Unreal Engine 4.25"></a>.

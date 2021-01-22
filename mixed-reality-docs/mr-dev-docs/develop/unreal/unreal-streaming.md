@@ -10,12 +10,12 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, str
 appliesto:
 - HoloLens
 - HoloLens 2
-ms.openlocfilehash: a0c376ed6366e57b8a521c52db2fc02fcd1c0285
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: bbae1170850ec4bbb41bc9274223d19102adddae
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009951"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580337"
 ---
 # <a name="streaming-in-unreal"></a>Streaming in Unreal
 
@@ -52,7 +52,7 @@ Unreal 4.26 in esecuzione in OpenXR supporta lo streaming nelle versioni 2.4.0 e
     </colgroup>
     <tr>
         <td><strong>Origine</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens 1a generazione</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens 1a generazione</strong></a></td>
         <td><a href="https://www.microsoft.com/hololens/hardware"><strong>HoloLens 2</strong></a></td>
         <td><strong>Visori VR immersive</strong></td>
     </tr>

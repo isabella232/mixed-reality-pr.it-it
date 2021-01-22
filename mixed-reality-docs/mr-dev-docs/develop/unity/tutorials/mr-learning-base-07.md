@@ -7,21 +7,21 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, interazioni degli oggetti, cubi di delimitazione
 ms.localizationpriority: high
-ms.openlocfilehash: c9acb72b2ad961737f5ce3f21c048fc80024b49d
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 23cfe3d3746d6ab6dbc0757f32b95ddc8637a366
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007931"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98578755"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interazione con oggetti 3D
 
-In questa esercitazione apprenderai come abilitare la manipolazione da vicino e da lontano degli oggetti 3D e limitare i tipi di manipolazione consentiti. Apprenderai anche come aggiungere cubi di delimitazione intorno agli oggetti 3D per controllare più facilmente la manipolazione degli oggetti.
+In questa esercitazione apprenderai come abilitare la manipolazione da vicino e da lontano degli oggetti 3D e limitare i tipi di manipolazione consentiti. Si apprenderà anche come aggiungere il controllo dei limiti intorno agli oggetti 3D per semplificare il controllo della manipolazione degli oggetti.
 
 ## <a name="objectives"></a>Obiettivi
 
 * Apprendere come configurare gli oggetti 3D in modo che sia possibile interagire con essi
-* Apprendere come aggiungere cubi di delimitazione a oggetti 3D
+* Informazioni su come aggiungere il controllo dei limiti a oggetti 3D
 
 ## <a name="manipulating-3d-objects"></a>Manipolazione di oggetti 3D
 
@@ -59,6 +59,9 @@ Nella finestra Hierarchy (Gerarchia) espandi l'oggetto RoverExplorer > **RoverPa
 > Per selezionare più oggetti non adiacenti, tieni premuto CTRL mentre usi il mouse per selezionare un oggetto.
 
 > [!NOTE]
+> Quando si aggiunge un manipolatore di oggetti (script), in questo caso, il gestore di vincoli (script) viene aggiunto automaticamente perché il manipolatore di oggetti (script) dipende da esso.
+
+> [!NOTE]
 > Ai fini di questa esercitazione, i collisori sono già stati aggiunti alle parti rover. Per altre informazioni sui collisori, puoi visitare la documentazione <a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">corrispondente</a> di Unity.
 
 > [!NOTE]
@@ -73,7 +76,7 @@ Con tutti gli oggetti parte rover e l'oggetto RoverAssembly ancora selezionati, 
 > [!NOTE]
 > A questo punto hai abilitato la manipolazione per tutti gli oggetti parte rover e per l'oggetto RoverAssembly.
 
-Nella finestra Project (Progetto) passa alla cartella **Assets (Asset)**  > **MRTK** > **SDK** > **StandardAssets** > **Audio** per individuare i clip audio:
+Nella finestra del progetto passare alla cartella **assets**  >  **MRTK**  >  **StandardAssets**  >  **audio** per individuare i clip audio:
 
 ![Finestra Project di Unity con la cartella Audio selezionata](images/mr-learning-base/base-07-section1-step1-3.png)
 
@@ -114,24 +117,27 @@ Per altre informazioni sul componente Object Manipulator (Manipolatore oggetti) 
 
 ## <a name="adding-bounding-boxes"></a>Aggiunta di cubi di delimitazione
 
-I cubi di delimitazione consentono di manipolare gli oggetti con una mano in modo più semplice e intuitivo per l'interazione sia da vicino che da lontano, in quanto forniscono punti di manipolazione utilizzabili per il ridimensionamento e la rotazione.
+I rettangoli di delimitazione rendono più semplice e intuitivo manipolare gli oggetti con una sola mano, sia per l'interazione vicina che per quella più lunga, fornendo handle che possono essere utilizzati per la scalabilità e la rotazione.
 
-In questo esempio aggiungerai un cubo di delimitazione all'oggetto RoverExplorer in modo da poter spostare, ruotare e ridimensionare facilmente l'intera esperienza. Configurerai inoltre il menu in modo che sia possibile abilitare e disabilitare il cubo di delimitazione.
+In questo esempio si aggiungerà un rettangolo di delimitazione all'oggetto RoverExplorer in modo che l'intera esperienza possa essere facilmente spostata, ruotata e ridimensionata. Inoltre, il menu viene configurato in modo che sia possibile attivare e disattivare il rettangolo di delimitazione.
 
 Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **RoverExplorer**, quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere i componenti seguenti:
 
 * Componente **BoundingBox**
 * Componente **Object Manipulator (Script)** (Manipolatore oggetti - script)
 
-**Deseleziona** quindi la casella di controllo accanto a entrambi i componenti in modo che siano **disabilitati** per impostazione predefinita:
+Deselezionare quindi la casella di **controllo** accanto a tutti i componenti per renderli **disabilitati** per impostazione predefinita:
 
 ![Unity con l'oggetto RoverExplorer selezionato e i componenti aggiunti e disabilitati](images/mr-learning-base/base-07-section2-step1-1.png)
 
 > [!NOTE]
-> La visualizzazione del cubo di delimitazione viene creata in fase di runtime e pertanto non è visibile prima di passare alla modalità di gioco.
+> La visualizzazione del riquadro delimitatore viene creata in fase di esecuzione e, pertanto, non è visibile prima di immettere la modalità di gioco.
 
 > [!NOTE]
-> Il componente BoundingBox aggiungerà automaticamente il componente NearInteractionGrabbable in fase di runtime. Non è necessario pertanto aggiungere questo componente per afferrare con le mani tracciate gli oggetti racchiusi.
+>Il componente BoundingBox aggiungerà automaticamente il componente NearInteractionGrabbable in fase di runtime. Non è necessario pertanto aggiungere questo componente per afferrare con le mani tracciate gli oggetti racchiusi.
+
+> [!NOTE]
+>Il manipolatore di oggetti (script) aggiunge automaticamente Gestione vincoli (script)
 
 Nella finestra Hierarchy (Gerarchia) espandi l'oggetto Menu > **ButtonCollection** in modo da rivelare i quattro pulsanti e rinomina il terzo pulsante come **BoundingBox_Enable**, quindi nella finestra Inspector (Controllo) configura il componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
 
@@ -143,7 +149,7 @@ Nella finestra Hierarchy (Gerarchia) espandi l'oggetto Menu > **ButtonCollection
 * Assegna l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **ObjectManipulator** > **bool Enabled** per aggiornare il valore di questa proprietà quando viene attivato l'evento
 * Verifica che la casella di controllo dell'argomento sia **selezionata**
-* Lascia per **Icon** (Icona) l'impostazione di icona 'cubo con cubo di delimitazione'
+* Lascia l' **icona** come icona ' cubo con controllo dei limiti '
 
 ![Unity con l'oggetto pulsante BoundingBox_Enable selezionato e il componente Button Config Helper configurato](images/mr-learning-base/base-07-section2-step1-2.png)
 
@@ -157,19 +163,19 @@ Rinomina il quarto e ultimo pulsante come **BoundingBox_Disable**, quindi nella 
 * Assegna l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **ObjectManipulator** > **bool Enabled** per aggiornare il valore di questa proprietà quando viene attivato l'evento
 * Verifica che la casella di controllo dell'argomento sia **deselezionata**
-* Modifica l'impostazione di **Icon** (Icona) configurando l'icona 'cubo con cubo di delimitazione'
+* Modificare l' **icona** nell'icona ' Cube with bounds Control '
 
 ![Unity con l'oggetto pulsante BoundingBox_Disable selezionato e il componente Button Config Helper configurato](images/mr-learning-base/base-07-section2-step1-3.png)
 
-Se ora attivi la modalità di gioco e abiliti il cubo di delimitazione facendo clic sul pulsante Enable (Abilita), puoi usare l'interazione da vicino o da lontano per spostare, ruotare e ridimensionare il cubo di delimitazione e usare il pulsante Disable (Disabilita) per disabilitare nuovamente il cubo di delimitazione:
+Se a questo punto si immette la modalità di gioco e si Abilita il controllo dei limiti facendo clic sul pulsante Abilita, è possibile utilizzare l'interazione vicina o distante per spostare, ruotare e ridimensionare il rettangolo di selezione e utilizzare il pulsante Disabilita per disabilitare di nuovo il rettangolo di selezione:
 
 ![Visualizzazione suddivisa della modalità di riproduzione in Unity con manipolazione del cubo di delimitazione in corso](images/mr-learning-base/base-07-section2-step1-4.png)
 
-Per altre informazioni sul componente Bounding Box (Cubo di delimitazione) e sulle relative proprietà associate, puoi visitare la guida su [tale componente](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html) nel [portale della documentazione di MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+Per ulteriori informazioni sul componente del riquadro e sulle proprietà associate, è possibile visitare la guida del rettangolo di [delimitazione](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html) nel [portale della documentazione di MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
 ## <a name="congratulations"></a>Lezione completata
 
-In questa esercitazione hai appreso come abilitare la manipolazione da vicino e da lontano degli oggetti 3D e limitare i tipi di manipolazione consentiti. Hai appreso anche come aggiungere cubi di delimitazione intorno agli oggetti 3D per controllare più facilmente la manipolazione degli oggetti.
+In questa esercitazione hai appreso come abilitare la manipolazione da vicino e da lontano degli oggetti 3D e limitare i tipi di manipolazione consentiti. Si è inoltre appreso come aggiungere un rettangolo di delimitazione intorno agli oggetti 3D per semplificare il controllo della manipolazione degli oggetti.
 
 > [!div class="nextstepaction"]
 > [Esercitazione successiva: 8. Uso del tracciamento oculare](mr-learning-base-08.md)

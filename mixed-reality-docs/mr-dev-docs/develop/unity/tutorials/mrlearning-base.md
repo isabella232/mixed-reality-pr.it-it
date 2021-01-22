@@ -7,12 +7,12 @@ ms.date: 02/26/2019
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: d767cca4fbb88d0cfdd7c2fdea1a0621523ad236
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: b7e04a03f01beb1438f6f723c3938d05a60c9131
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010091"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581160"
 ---
 # <a name="1-overview-and-objectives"></a>1. Panoramica e obiettivi
 
@@ -27,7 +27,7 @@ ms.locfileid: "98010091"
     </colgroup>
     <tr>
         <td><strong>Corso</strong></td>
-        <td><a href="../../../hololens-hardware-details.md"><strong>HoloLens (prima generazione)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (prima generazione)</strong></a></td>
         <td><a href="https://www.microsoft.com//hololens/hardware"><strong>HoloLens 2</strong></a></td>
         <td><a href="../../../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
     </tr>
@@ -52,4 +52,4 @@ ms.locfileid: "98010091"
 > [!IMPORTANT]
 > La versione di Unity consigliata per questa serie di esercitazioni è Unity 2019.2.X. Questa istruzione sostituisce gli eventuali requisiti o suggerimenti relativi alla versione di Unity indicati negli argomenti visualizzabili facendo clic sui collegamenti dei prerequisiti sopra riportati.
 
-[Lezione successiva: 2. Inizializzazione del progetto e prima applicazione](../../../mrlearning-base-ch1.md)
+[Lezione successiva: 2. Inizializzazione del progetto e prima applicazione](./mr-learning-base-02.md)

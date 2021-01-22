@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realtà mista, individuare, distribuire, indice, pagina di destinazione, progettazione, sviluppo, esercitazioni, app di esempio, nozioni di base, case study, risorse, guide pratiche per HoloLens, progetti open source, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 03db5f79a531d77bfd1cd6513c5bed9ad1202189
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 222c70882826e61d2b60e104c460156687f8b5df
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009721"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583349"
 ---
 # <a name="get-started-with-mixed-reality"></a>Informazioni di base sulla realtà mista
 
@@ -152,7 +152,7 @@ Se si è interessati a vedere come funzionano i diversi servizi e dispositivi ha
 |  Concetto  |  Risultato  |
 | --- | --- |
 | [Hardware HoloLens](https://www.microsoft.com//hololens/hardware) | HoloLens 2 offre l'esperienza di realtà mista più comoda e immersiva possibile, con soluzioni leader del settore in grado di offrire valore velocemente, il tutto potenziato dall'affidabilità, dalla sicurezza e dalla scalabilità del cloud e dei servizi di intelligenza artificiale di Microsoft |
-| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | È possibile esplorare una vasta gamma di prodotti, tra cui [Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview), Layout e [Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/), che possono potenziare le capacità dei dipendenti e ottimizzare le operazioni con Dynamics 365. Una vera comprensione si acquisisce con la pratica su attività, dispositivi e utenti reali |
+| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | È possibile esplorare una vasta gamma di prodotti, tra cui [Remote Assist](/dynamics365/mixed-reality/remote-assist/ra-overview), Layout e [Guides](/dynamics365/mixed-reality/guides/), che possono potenziare le capacità dei dipendenti e ottimizzare le operazioni con Dynamics 365. Una vera comprensione si acquisisce con la pratica su attività, dispositivi e utenti reali |
 | [Servizi cloud di Azure](../develop/mixed-reality-cloud-services.md) | È possibile creare esperienze immersive accattivanti su diverse piattaforme con consapevolezza spaziale, ancoraggi nello spazio e rendering di modelli 3D complessi |
 
 ## <a name="what-would-you-like-to-do-next"></a>Quali operazioni vuoi eseguire successivamente?
@@ -181,5 +181,4 @@ Se si è interessati a vedere come funzionano i diversi servizi e dispositivi ha
 <br>
 
 >[!IMPORTANT]
->Tutto il materiale per lo sviluppo della realtà mista viene fornito in questo sito solo per riferimento. L'applicazione, il relativo utilizzo e l'impatto sugli utenti finali sono esclusiva responsabilità dello sviluppatore dell'applicazione, che è tenuto anche ad assicurarsi che l'applicazione non causi disagi, lesioni o altri danni agli utenti finali, oltre che a includere le dichiarazioni di non responsabilità e le avvertenze appropriate. È sempre necessario che lo sviluppatore adotti le misure appropriate in fase di sviluppo e pubblicazione dell'applicazione per assicurarsi che l'applicazione sia sicura e soddisfi tutti gli obblighi previsti nel [Contratto per gli sviluppatori di app con Microsoft](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement).
-
+>Tutto il materiale per lo sviluppo della realtà mista viene fornito in questo sito solo per riferimento. L'applicazione, il relativo utilizzo e l'impatto sugli utenti finali sono esclusiva responsabilità dello sviluppatore dell'applicazione, che è tenuto anche ad assicurarsi che l'applicazione non causi disagi, lesioni o altri danni agli utenti finali, oltre che a includere le dichiarazioni di non responsabilità e le avvertenze appropriate. È sempre necessario che lo sviluppatore adotti le misure appropriate in fase di sviluppo e pubblicazione dell'applicazione per assicurarsi che l'applicazione sia sicura e soddisfi tutti gli obblighi previsti nel [Contratto per gli sviluppatori di app con Microsoft](/legal/windows/agreements/app-developer-agreement).

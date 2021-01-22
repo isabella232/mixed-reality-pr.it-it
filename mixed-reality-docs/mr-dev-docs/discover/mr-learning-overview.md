@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, apprendimento, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, traduzione, Azure, servizi cognitivi di Azure, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 211d8e61a45a59df725f4c6c7d11c93f129d63b5
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: f8188cc8c417b60864cd963120ad004d6169c3c2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006911"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583528"
 ---
 # <a name="mixed-reality-learn-overview"></a>Panoramica di Learn sulla realtà mista
 
@@ -26,7 +26,7 @@ I moduli di Learn consentono di diventare sviluppatori esperti di soluzioni di r
 
 Se si vogliono scoprire le nozioni di base della realtà mista o non si è ancora scelto un percorso di sviluppo, è possibile iniziare dai moduli di apprendimento indipendenti dalla tecnologia.
 
-### <a name="introduction-to-mixed-reality"></a>[Introduzione alla realtà mista](https://docs.microsoft.com/learn/modules/intro-to-mixed-reality/)
+### <a name="introduction-to-mixed-reality"></a>[Introduzione alla realtà mista](/learn/modules/intro-to-mixed-reality/)
 
 Creare una base comprendente i concetti principali, la terminologia e i processi di progettazione specifici per lo spazio di sviluppo della realtà mista.
 
@@ -44,7 +44,7 @@ Al termine del modulo, si sarà in grado di:
 
 Per qualsiasi sviluppatore, sia principiante che professionista esperto, l'approccio pratico allo sviluppo di realtà mista in Unity consente di raggiungere gli obiettivi più velocemente, con maggiore sicurezza e in base ai ritmi personali.
 
-### <a name="set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit"></a>[Configurare un progetto di realtà mista in Unity con Mixed Reality Toolkit](https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/)
+### <a name="set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit"></a>[Configurare un progetto di realtà mista in Unity con Mixed Reality Toolkit](/learn/modules/mixed-reality-toolkit-project-unity/)
 
 Importare Mixed Reality Toolkit nel progetto Unity per accelerare lo sviluppo di realtà mista.
 
@@ -58,7 +58,7 @@ Al termine del modulo, si sarà in grado di:
 * Confrontare e contrapporre i tre principali modelli di interazione di MRTK
 * Modificare gli ologrammi usando ObjectManipulator
 
-### <a name="create-a-language-translator-app-with-unity--azure-cognitive-services"></a>[Creare un'app di traduzione linguistica con Unity e Servizi cognitivi di Azure](https://docs.microsoft.com/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/)
+### <a name="create-a-language-translator-app-with-unity--azure-cognitive-services"></a>[Creare un'app di traduzione linguistica con Unity e Servizi cognitivi di Azure](/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/)
 
 Creare un'applicazione di traduzione del linguaggio per il dispositivo di realtà mista (Windows Mixed Reality, HoloLens 2 e così via) usando Servizi cognitivi
 

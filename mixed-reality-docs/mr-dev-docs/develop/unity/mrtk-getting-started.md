@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, Mixed Reality Toolkit, MRTK versione 2, MRTK, strumenti, SDK, HoloLens, HoloLens 2, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, multipiattaforma
-ms.openlocfilehash: b153c267e20b0f9609c2fe507512051b24a2b62b
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 4c013f1fa50518404f899b4181e7c07b9e4e0e56
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008830"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581699"
 ---
 # <a name="introducing-mrtk-for-unity"></a>Introduzione a MRKT per Unity
 
@@ -28,8 +28,7 @@ MRTK per Unity è un kit di sviluppo multipiattaforma open source per applicazio
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCG]
 
-Vedere la [documentazione di MRTK su GitHub](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html) e inziare con la [guida all'installazione](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html).
-
+Vedere la [documentazione di MRTK su GitHub](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html) e iniziare a usare la Guida all' [installazione](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html).
 
 ## <a name="new-with-mrtk-v2"></a>Novità di MRTK v2
 
@@ -50,6 +49,7 @@ Dovendo lavorare con piattaforme mobili, abbiamo realizzato il toolkit tenendo s
 ## <a name="see-also"></a>Vedere anche
 
 * [Installare gli strumenti](../install-the-tools.md)
+* [Sviluppo con MRTK per Unity](unity-development-overview.md)
 * [MRTK - Guida all'installazione (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
 * [MRTK - Home page della documentazione (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 * [Porting da HoloToolkit/MRTK a MRTK versione 2 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, prefab, ologrammi, descrizioni comandi
 ms.localizationpriority: high
-ms.openlocfilehash: 989de4871332608448619e75ffd760c616332533
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 4fe4b016be36e04abffeb415f690cc0c01a6f767
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008061"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98669514"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Creazione delle interfacce utente
 
@@ -97,17 +97,17 @@ Nella finestra Hierarchy (Gerarchia) rinomina l'oggetto come **Menu**, quindi es
 
 ![Unity con l'oggetto Menu selezionato e l'oggetto ButtonCollection espanso](images/mr-learning-base/base-06-section2-step1-2.png)
 
-Rinomina il primo pulsante come **Indicator**, quindi nella finestra Inspector (Controllo) configura il componente **Button Config Helper (Script)** (Helper configurazione pulsanti - Script) come indicato di seguito:
+Rinominare il primo pulsante nell'indicatore Buttoncollection in, quindi nella finestra Inspector configurare il componente helper config (script) del pulsante come indicato di seguito:
 
 * Modifica il contenuto di **Main Label Text** (Testo etichetta principale) in modo che corrisponda al nome del pulsante
-* Assegna l'oggetto **Indicator** al campo **None (Object)** (Nessuno - Oggetto)
+* Assegnare l'oggetto indicatore simile a una freccia di espansione al campo None (Object).
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **GameObject** > **SetActive (bool)** per impostare questa funzione come l'azione da eseguire quando viene attivato l'evento
 * Verifica che la casella di controllo dell'argomento sia **selezionata**
 * Imposta **Icon** (Icona) sull'icona di ricerca
 
 ![Unity con il componente Button Config Helper dell'oggetto pulsante Indicator configurato](images/mr-learning-base/base-06-section2-step1-3.png)
 
-Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **Indicator** (Indicatore), quindi nella finestra di controllo:
+Per disabilitare l'oggetto indicatore Chevron, nella finestra gerarchia selezionare l'oggetto indicatore simile a Chevron, quindi nella finestra di controllo:
 
 * Deseleziona la casella di controllo accanto al nome per rendere inattivo il componente per impostazione predefinita
 * Usare il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **Directional Indicator Controller (Script)** (Controller destinazione direzionale - Script)
@@ -115,7 +115,7 @@ Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **Indicator** (Indica
 ![Unity con l'oggetto Indicator selezionato e disabilitato e il componente DirectionalIndicatorController aggiunto](images/mr-learning-base/base-06-section2-step1-4.png)
 
 > [!NOTE]
-> A questo punto, all'avvio dell'app, l'indicatore è disabilitato per impostazione predefinita e può essere abilitato premendo il pulsante Indicator.
+> A questo punto, all'avvio dell'app, l'indicatore della freccia di espansione è disabilitato per impostazione predefinita e può essere abilitato premendo il pulsante dell'indicatore.
 
 Rinomina il secondo pulsante come **TapToPlace**, quindi nella finestra Inspector (Controllo) configura il componente **Button Config Helper (Script)** (Helper configurazione pulsanti - Script) come indicato di seguito:
 
@@ -169,7 +169,7 @@ Nella finestra Project (Progetto) passa alla cartella **Assets** (Asset)  > **MR
 Nella finestra Hierarchy (Gerarchia) espandi l'oggetto RoverExplorer > **RoverParts** e seleziona tutti i relativi oggetti parte rover figlio, quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **ToolTipSpawner** e configuralo come indicato di seguito:
 
 * Verifica che la casella di controllo **Focus Enabled** (Stato attivo abilitato) sia selezionata per richiedere all'utente di guardare la parte per visualizzare la descrizione comando
-* Assegna il prefab **Simple Line ToolTip** (Descrizione comando linee semplice) dalla finestra Project (Progetto) al campo **Tool Tip Prefab** (Prefab descrizione comando)
+* Assegnare la **Descrizione comando della riga semplice** prefabbricata dalla finestra del progetto al campo **prefabbricato**
 * Imposta ToolTip Override Settings (Impostazioni di override descrizione comando) > **Settings Mode** (Modalità impostazioni) su **Override**
 * Imposta ToolTip Override Settings (Impostazioni di override descrizione comando) > **Manual Pivot Local Position Y** (Posizione Y locale pivot manuale) su **1.5**
 
@@ -196,4 +196,5 @@ Seleziona il pulsante Play (Riproduci) per attivare la modalità di gioco, quind
 
 In questa esercitazione hai appreso come creare un'interfaccia utente semplice usando i prefab per pulsanti e menu forniti da MRTK insieme al componente TextMeshPro di Unity e come configurare i pulsanti per attivare eventi quando vengono premuti. Hai inoltre appreso come aggiungere elementi descrizione comando dinamici per l'interfaccia utente per fornire all'utente informazioni aggiuntive.
 
-[Esercitazione successiva: 7. Interazione con oggetti 3D](mr-learning-base-07.md)
+> [!div class="nextstepaction"]
+>[Esercitazione successiva: 7. Interazione con oggetti 3D](mr-learning-base-07.md)

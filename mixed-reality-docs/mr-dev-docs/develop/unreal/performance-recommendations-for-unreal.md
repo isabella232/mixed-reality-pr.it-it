@@ -2,17 +2,17 @@
 title: Consigli sulle prestazioni per Unreal
 description: Informazioni su come ottenere prestazioni ottimali dalle app di realtà mista con le impostazioni di progetto consigliate di Unreal.
 author: hferrone
-ms.author: v-hferrone
+ms.author: safarooq
 ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, prestazioni, ottimizzazione, impostazioni, documentazione
-ms.openlocfilehash: a1a8dacd0206882c7ebd67b2658fa2e6300aa66a
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: e956f12d27c826cff35e0b65957060953073a28b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009821"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583068"
 ---
 # <a name="performance-recommendations-for-unreal"></a>Consigli sulle prestazioni per Unreal
 

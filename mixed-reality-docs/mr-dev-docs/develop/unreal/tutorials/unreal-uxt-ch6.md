@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, esercitazione, guida introduttiva, mrtk, uxt, UX Tools, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 83d8068ca8ce73f23edb85cf9044db5409105380
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
-ms.translationtype: HT
+ms.openlocfilehash: 7b706cf2a8685954ed916c825c3617ade190f1e0
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865396"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583650"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. Creazione di pacchetti e distribuzione nel dispositivo o nell'emulatore
 
@@ -25,7 +25,7 @@ Nell'esercitazione precedente hai aggiunto un semplice pulsante che riporta il p
 
 ## <a name="device-only-streaming"></a>[Solo dispositivo] Streaming
 
-[Holographic Remoting](https://docs.microsoft.com/windows/mixed-reality/add-holographic-remoting) indica lo streaming di dati da un PC o dispositivo UWP autonomo a HoloLens 2, non il cambio di canale. Un'app host remota riceve un flusso di dati di input da HoloLens, esegue il rendering del contenuto in una visualizzazione Immersive virtuale e ritrasmette i frame di contenuto a HoloLens tramite Wi-Fi. Lo streaming consente di aggiungere visualizzazioni Immersive remote al software per PC desktop esistente e di accedere a più risorse di sistema.
+[Holographic Remoting](/windows/mixed-reality/add-holographic-remoting) indica lo streaming di dati da un PC o dispositivo UWP autonomo a HoloLens 2, non il cambio di canale. Un'app host remota riceve un flusso di dati di input da HoloLens, esegue il rendering del contenuto in una visualizzazione Immersive virtuale e ritrasmette i frame di contenuto a HoloLens tramite Wi-Fi. Lo streaming consente di aggiungere visualizzazioni Immersive remote al software per PC desktop esistente e di accedere a più risorse di sistema.
 
 Se usi questa strategia per l'app di scacchi, dovrai eseguire alcuni passaggi:
 
@@ -81,7 +81,7 @@ Dopo esserti connesso, fai clic sulla freccia a discesa a destra del pulsante **
 5. Passa a **File > Package Project** (File > Crea pacchetto progetto) e seleziona **HoloLens**.
     * Crea una nuova cartella in cui salvare il pacchetto e fare clic su **Select Folder** (Seleziona cartella).
 
-6.  Dopo avere creato il pacchetto dell'app, apri il [Portale di dispositivi di Windows](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal), passa a **Views > Apps** (Viste > App) e trova la sezione **Deploy apps** (Distribuzione app).
+6.  Dopo avere creato il pacchetto dell'app, apri il [Portale di dispositivi di Windows](/windows/mixed-reality/using-the-windows-device-portal), passa a **Views > Apps** (Viste > App) e trova la sezione **Deploy apps** (Distribuzione app).
 
 7.  Fai clic su **Sfoglia** (Sfoglia), passa al file **ChessApp.appxbundle** e fai clic su **Apri**.
 
@@ -91,7 +91,7 @@ Dopo esserti connesso, fai clic sulla freccia a discesa a destra del pulsante **
 8.  Fai clic su **Install** (Installa).
     * È ora possibile passare a **All Apps** (Tutte le app) e toccare l'app installata per eseguirla. In alternativa, avviare l'app direttamente dal **Portale di dispositivi di Windows**. 
 
-A questo punto, la tua applicazione in realtà mista HoloLens è completa e pronta per l'uso. Sono, tuttavia, necessarie altre operazioni. MRTK include molte funzionalità autonome che puoi aggiungere ai progetti, ad esempio il mapping spaziale, lo sguardo e l'input vocale e persino codici a matrice. Per altre informazioni su queste funzionalità, consulta la [Panoramica sullo sviluppo con Unreal](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview).
+A questo punto, la tua applicazione in realtà mista HoloLens è completa e pronta per l'uso. Sono, tuttavia, necessarie altre operazioni. MRTK include molte funzionalità autonome che puoi aggiungere ai progetti, ad esempio il mapping spaziale, lo sguardo e l'input vocale e persino codici a matrice. Per altre informazioni su queste funzionalità, consulta la [Panoramica sullo sviluppo con Unreal](/windows/mixed-reality/unreal-development-overview).
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 

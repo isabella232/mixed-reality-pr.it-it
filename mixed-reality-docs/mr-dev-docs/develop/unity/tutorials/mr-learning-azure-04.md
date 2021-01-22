@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, hololens 2, ancoraggi nello spazio di Azure, servizi cloud di azure, visione personalizzata di azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 50e5bccf09e03ebda8057dbb3ca9d83fc01694bd
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 75c3f98c2f40f03240906716d9b942a157994130
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008171"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581889"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4. Integrazione di Ancoraggi nello spazio di Azure
 
@@ -28,12 +28,12 @@ In questa esercitazione verrà spiegato come usare **Ancoraggi nello spazio di A
 
  **Ancoraggi nello spazio di Azure** fa parte della famiglia di Servizi cloud di Azure e viene utilizzato per salvare posizioni di ancoraggio. Le posizioni di ancoraggio salvate possono essere recuperate in base all'*ID di ancoraggio* dal cloud. Questa posizione di ancoraggio è condivisibile e accessibile da dispositivi multipiattaforma come i dispositivi HoloLens, iOS e Android.
 
-Altre informazioni su [Ancoraggi nello spazio di Azure](https://docs.microsoft.com/azure/spatial-anchors/overview).
+Altre informazioni su [Ancoraggi nello spazio di Azure](/azure/spatial-anchors/overview).
 
 ## <a name="preparing-azure-spatial-anchors"></a>Preparazione di Ancoraggi nello spazio di Azure
 
 Prima di iniziare, è necessario creare una risorsa di ancoraggio nello spazio nel portale di Azure.
-Vedere come [creare una risorsa di Ancoraggi nello spazio](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource).
+Vedere come [creare una risorsa di Ancoraggi nello spazio](/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource).
 
 ## <a name="preparing-the-scene"></a>Preparazione della scena
 

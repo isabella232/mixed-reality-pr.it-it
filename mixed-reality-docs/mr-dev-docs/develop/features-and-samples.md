@@ -7,12 +7,12 @@ ms.date: 12/3/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, learn, esempi, MRTK, research mode, HoloLens 2, codici a matrice, WebRTC, acquisizione realtà mista, holographic remoting, UX Tools
 ms.localizationpriority: high
-ms.openlocfilehash: 3aa0e51a92b909689ff97a07b45900ab65579c59
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 78cfc726bdffdb461a83bd1e9805d8f0e64b0f01
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007611"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583189"
 ---
 # <a name="samples-and-feature-apps"></a>Esempi e app di funzionalità
 
@@ -30,7 +30,7 @@ Gli esempi di funzionalità elencati di seguito corrispondono a implementazioni 
 
 ### <a name="research-mode"></a>Research Mode
 
-La funzionalità Research Mode è stata introdotta nel dispositivo HoloLens di prima generazione per consentire l'accesso ai sensori chiave sul dispositivo, in particolare per le applicazioni di ricerca che non sono destinate alla distribuzione. Le applicazioni seguenti sono esempi relativi all'accesso e alla registrazione dei flussi di Search Mode e all'uso di funzioni [intrinseche ed estrinseche](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world).
+La funzionalità Research Mode è stata introdotta nel dispositivo HoloLens di prima generazione per consentire l'accesso ai sensori chiave sul dispositivo, in particolare per le applicazioni di ricerca che non sono destinate alla distribuzione. Le applicazioni seguenti sono esempi relativi all'accesso e alla registrazione dei flussi di Search Mode e all'uso di funzioni [intrinseche ed estrinseche](/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world).
 
 <br>
 
@@ -67,7 +67,7 @@ Acquisizione realtà mista (MRC, Mixed reality capture) acquisisce, in formato f
 
 | Articolo di riferimento | Esempio |
 | --- | --- |
-| [Acquisizione realtà mista](platform-capabilities-and-apis/mixed-reality-capture-for-developers.md) | [Esempi di acquisizione realtà mista](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
+| [Acquisizione realtà mista](platform-capabilities-and-apis/mixed-reality-capture-for-developers.md) | [Esempi di acquisizione realtà mista](/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
 
 ### <a name="holographic-remoting"></a>Holographic Remoting
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 53d22260603c4e52096eccf1d7af6a3b0732124e
-ms.sourcegitcommit: 672a7a145cfc656273af4ea34f99583eb9fa849c
-ms.translationtype: HT
+ms.openlocfilehash: e79b14c19a452b5b78c6f8cf7ea24bd65bfa0eaa
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98225198"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98605305"
 ---
 # <a name="426"></a>[4.26](#tab/426) 
 
@@ -197,7 +197,7 @@ Per acconsentire esplicitamente al rendering dalla fotocamera/videocamera:
 Unreal gestirà quindi le richieste da MRC per eseguire il rendering dal punto di vista della fotocamera/videocamera.
 
 > [!NOTE]
-> Solo quando viene attivata [Aquisizione realtà mista](../../../mixed-reality-capture.md) all'app verrà chiesto di eseguire il rendering dal punto di vista della fotocamera/videocamera.
+> Solo quando viene attivata [Aquisizione realtà mista](/hololens/holographic-photos-and-videos) all'app verrà chiesto di eseguire il rendering dal punto di vista della fotocamera/videocamera.
 
 ## <a name="using-the-pv-camera"></a>Uso della fotocamera/videocamera
 
@@ -224,4 +224,3 @@ Per eseguire il rendering dell'immagine della fotocamera:
 5. Assicurarsi che il materiale includa un parametro corrispondente al nome in **SetTextureParameterValue** associato a una voce di colore. In mancanza di questo parametro, l'immagine della fotocamera non potrà essere visualizzata correttamente.
 
 ![Texture della fotocamera](../images/unreal-camera-material.PNG)
-

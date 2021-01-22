@@ -7,12 +7,12 @@ ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Realtà mista, MixedRealityToolkit, demo, record
-ms.openlocfilehash: 1f61d2094ec2762ab22576d2eac85ed6bf81d5c7
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: aa85b54283b260447c36072b74031554e1aa1939
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008611"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583118"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>Spectator View per HoloLens e HoloLens 2
 
@@ -60,6 +60,6 @@ La tabella seguente illustra le diverse funzionalità di Spectator View e le opz
 | Durata di configurazione del runtime               |         Adesso          |                     Lente                    |
 ## <a name="see-also"></a>Vedere anche
 
-* [Acquisizione in realtà mista (MRC, Mixed Reality Capture)](../../mixed-reality-capture.md) 
+* [Acquisizione in realtà mista (MRC, Mixed Reality Capture)](/hololens/holographic-photos-and-videos) 
 * [Acquisizione realtà mista per sviluppatori](mixed-reality-capture-for-developers.md)
 * [Esperienze condivise nella realtà mista](shared-experiences-in-mixed-reality.md)

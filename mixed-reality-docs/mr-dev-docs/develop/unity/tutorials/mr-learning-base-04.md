@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, risolutori, raccolta di oggetti griglia
 ms.localizationpriority: high
-ms.openlocfilehash: e09047e4f75697722f76301630c275f126b3cbda
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
-ms.translationtype: HT
+ms.openlocfilehash: 27964cad03111a3f7dad89c66df0cb9a4f95a9e2
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613255"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98579210"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4. Posizionamento degli oggetti nella scena
 
@@ -143,4 +143,5 @@ Fare quindi clic sul pulsante **Update Collection** (Aggiorna raccolta) per aggi
 
 In questa esercitazione è stato illustrato come posizionare gli oggetti nella scena in relazione all'utente e come usare la funzionalità Grid Object Collection (Raccolta di oggetti griglia) di MRTK per organizzare gli oggetti in una raccolta.
 
-[Esercitazione successiva: 5. Creazione di contenuto dinamico tramite risolutori](mr-learning-base-05.md)
+> [!div class="nextstepaction"]
+>[Esercitazione successiva: 5. Creazione di contenuto dinamico tramite risolutori](mr-learning-base-05.md)

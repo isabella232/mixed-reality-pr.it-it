@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realtà mista, progettazione, comodità, HoloLens 2, HoloLens (1a generazione), visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, locomozione
-ms.openlocfilehash: 74ead209beb3396db83e5e446490efe17293b14e
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
-ms.translationtype: HT
+ms.openlocfilehash: 9f366b2eb3ef33d3f63d3227d14aec642e8203b7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847496"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582490"
 ---
 # <a name="comfort"></a>Comfort
 
@@ -78,15 +78,15 @@ Il valore di IPD si riferisce alla distanza tra le pupille, ovvero i punti centr
 
 #### <a name="hololens-1st-gen"></a>HoloLens (prima generazione)
 
-Per HoloLens (prima generazione), il valore di IPD viene stimato e impostato durante la [calibrazione](https://docs.microsoft.com/hololens/hololens-calibration) del dispositivo. Per i nuovi utenti di un dispositivo già configurato, è necessario eseguire la calibrazione o impostare il valore di IPD manualmente. Il valore di VO dipende completamente dal modo in cui viene indossato il dispositivo. In particolare, per ridurre al minimo il valore di VO, il dispositivo deve essere posizionato sulla testa dell'utente in modo tale che i display si trovino allo stesso livello dell'asse degli occhi. 
+Per HoloLens (prima generazione), il valore di IPD viene stimato e impostato durante la [calibrazione](/hololens/hololens-calibration) del dispositivo. Per i nuovi utenti di un dispositivo già configurato, è necessario eseguire la calibrazione o impostare il valore di IPD manualmente. Il valore di VO dipende completamente dal modo in cui viene indossato il dispositivo. In particolare, per ridurre al minimo il valore di VO, il dispositivo deve essere posizionato sulla testa dell'utente in modo tale che i display si trovino allo stesso livello dell'asse degli occhi. 
 
 #### <a name="hololens-2"></a>HoloLens 2
 
-Per HoloLens 2, il valore di IPD viene stimato e impostato durante la [calibrazione](https://docs.microsoft.com/hololens/hololens-calibration) del dispositivo rispetto agli occhi. Per i nuovi utenti di un dispositivo già configurato, è necessario eseguire la calibrazione per assicurarsi che il valore di IPD sia impostato correttamente. In HoloLens 2 il valore di VO viene calcolato automaticamente. 
+Per HoloLens 2, il valore di IPD viene stimato e impostato durante la [calibrazione](/hololens/hololens-calibration) del dispositivo rispetto agli occhi. Per i nuovi utenti di un dispositivo già configurato, è necessario eseguire la calibrazione per assicurarsi che il valore di IPD sia impostato correttamente. In HoloLens 2 il valore di VO viene calcolato automaticamente. 
 
 ### <a name="guidance-for-immersive-devices"></a>Indicazioni per i dispositivi di tipo immersive
 
-I caschi con visore di tipo immersive di Windows Mixed Reality non prevedono la calibrazione automatica per i valori di IPD o VO. Il valore della distanza interpupillare può essere impostato manualmente nel software (nelle impostazioni del Portale realtà mista vedere la sezione relativa alla [calibrazione](https://docs.microsoft.com/hololens/hololens-calibration)). In alternativa, alcuni caschi con visore sono dotati di un dispositivo di scorrimento meccanico che consente all'utente di adattare la spaziatura delle lenti a una posizione appropriata, che corrisponda approssimativamente alla distanza interpupillare. 
+I caschi con visore di tipo immersive di Windows Mixed Reality non prevedono la calibrazione automatica per i valori di IPD o VO. Il valore della distanza interpupillare può essere impostato manualmente nel software (nelle impostazioni del Portale realtà mista vedere la sezione relativa alla [calibrazione](/hololens/hololens-calibration)). In alternativa, alcuni caschi con visore sono dotati di un dispositivo di scorrimento meccanico che consente all'utente di adattare la spaziatura delle lenti a una posizione appropriata, che corrisponda approssimativamente alla distanza interpupillare. 
 
 ## <a name="rendering-rates"></a>Velocità di rendering
 
@@ -177,4 +177,4 @@ L'affaticamento muscolare può aumentare quando gli utenti devono tenere una man
 * [Stabilità degli ologrammi](../develop/platform-capabilities-and-apis/hologram-stability.md)
 * [Interazioni istintive](interaction-fundamentals.md)
 * [Frame olografico](holographic-frame.md)
-* [Calibrazione](https://docs.microsoft.com/hololens/hololens-calibration)
+* [Calibrazione](/hololens/hololens-calibration)

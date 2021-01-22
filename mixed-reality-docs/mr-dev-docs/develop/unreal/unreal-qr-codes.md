@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, codici a matrice, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: d896af683a86a1b27e5d100df744222085574a93
-ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
-ms.translationtype: HT
+ms.openlocfilehash: d9f23bacf31b310da6d49e74de2153b50e642c7d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98247744"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582660"
 ---
 # <a name="qr-codes-in-unreal"></a>Codici a matrice in Unreal
 
@@ -22,7 +22,7 @@ HoloLens 2 può individuare i codici a matrice nello spazio globale usando la we
 - Illuminazione e sfondo
 - Dimensione, distanza e posizione angolare
 
-Presta particolare attenzione alle [considerazioni sull'ambiente](../../environment-considerations-for-hololens.md) quando vengono inseriti codici a matrice nell'app. Per altre informazioni su questi argomenti e per istruzioni su come scaricare il pacchetto NuGet necessario, vedi il documento principale [Rilevamento di codici a matrice](../platform-capabilities-and-apis/qr-code-tracking.md).
+Presta particolare attenzione alle [considerazioni sull'ambiente](/hololens/hololens-environment-considerations) quando vengono inseriti codici a matrice nell'app. Per altre informazioni su questi argomenti e per istruzioni su come scaricare il pacchetto NuGet necessario, vedi il documento principale [Rilevamento di codici a matrice](../platform-capabilities-and-apis/qr-code-tracking.md).
 
 > [!CAUTION]
 > I codici a matrice sono l'unico tipo di immagini che possono essere rilevate da HoloLens automaticamente. Il modulo **UARTrackedImage** di Unreal non è supportato in HoloLens. Se è necessario rilevare immagini personalizzate, è possibile accedere alla [webcam](unreal-hololens-camera.md) del dispositivo ed elaborare le immagini usando una libreria di riconoscimento immagini di terze parti. 
@@ -32,7 +32,7 @@ Presta particolare attenzione alle [considerazioni sull'ambiente](../../environm
 Dato che HoloLens 2 deve usare la webcam per visualizzare i codici a matrice, è necessario abilitarla nelle impostazioni del progetto:
 - Aprire **Edit > Project Settings** (Modifica > Impostazioni progetto), scorrere fino alla sezione **Platforms** (Piattaforme) e selezionare **HoloLens**.
     + Espandi la sezione **Capabilities** (Funzionalità) e seleziona **Webcam**.  
-- Devi anche acconsentire esplicitamente al rilevamento dei codici a matrice [aggiungendo un asset ARSessionConfig](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset).
+- Devi anche acconsentire esplicitamente al rilevamento dei codici a matrice [aggiungendo un asset ARSessionConfig](/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset).
 
 [!INCLUDE[](includes/tabs-qr-codes-1.md)]
 
@@ -62,7 +62,7 @@ Ecco cosa accade:
 1. Prima di tutto, viene eseguito il cast dell'immagine rilevata in un codice **ARTrackedQRCode** per verificare che l'immagine aggiornata corrente sia un codice a matrice.  
 2. I dati codificati vengono recuperati dalla variabile **QRCode**. È possibile ottenere la parte superiore sinistra del codice a matrice dalla posizione di **GetLocalToWorldTransform** e le dimensioni con **GetEstimateSize**.
 
-È anche possibile [ottenere il sistema di coordinate per un codice a matrice](https://docs.microsoft.com/windows/mixed-reality/qr-code-tracking#getting-the-coordinate-system-for-a-qr-code) nel codice.
+È anche possibile [ottenere il sistema di coordinate per un codice a matrice](/windows/mixed-reality/qr-code-tracking#getting-the-coordinate-system-for-a-qr-code) nel codice.
 
 ## <a name="finding-the-unique-id"></a>Ricerca dell'ID univoco
 

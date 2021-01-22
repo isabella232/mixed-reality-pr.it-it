@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, comandi vocali, input vocale
 ms.localizationpriority: high
-ms.openlocfilehash: 8aea8ead6416787f2979e0deff46ee5d6d45eb19
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: c052c3501ab34811f33f1f6464c8394669eebe77
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007911"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98669483"
 ---
 # <a name="9-using-speech-commands"></a>9. Uso dei comandi vocali
 
@@ -30,7 +30,7 @@ Nel menu di Unity selezionare Mixed Reality Toolkit > Utilities > **Configure Un
 ![Abilitare la funzionalità microfono](images/mr-learning-base/base-09-section1-step1-1.png)
 
 > [!NOTE]
-> La funzionalità Microfono dovrebbe essere stata abilitata durante la procedura illustrata in [Applicare le impostazioni di MRTK Project Configurator (Configuratore del progetto MRTK)](mr-learning-base-02.md#selecting-mrtk-and-project-settings) quando è stato configurato il progetto Unity all'inizio di questa serie di esercitazioni. Se, tuttavia, non è abilitata, assicurarsi di farlo ora.
+> La funzionalità Microfono dovrebbe essere stata abilitata durante la procedura illustrata in [Applicare le impostazioni di MRTK Project Configurator (Configuratore del progetto MRTK)](mr-learning-base-02.md#creating-and-configuring-the-scene) quando è stato configurato il progetto Unity all'inizio di questa serie di esercitazioni. Se, tuttavia, non è abilitata, assicurarsi di farlo ora.
 
 ## <a name="creating-speech-commands"></a>Creazione di comandi vocali
 
@@ -147,4 +147,3 @@ Se si sta seguendo il percorso di checkpoint per lo sviluppo con Unity che abbia
 > [Interazioni di base](../mrtk-101.md)
 
 È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](../unity-development-overview.md#1-getting-started) in qualsiasi momento.
-

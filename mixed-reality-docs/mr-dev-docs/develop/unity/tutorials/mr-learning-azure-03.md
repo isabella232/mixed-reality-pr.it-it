@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, hololens 2, visione personalizzata di azure, servizi cognitivi di azure, servizi cloud di azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: bd99b2ca8f41c276db747dc7fc75328c31807512
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: aa3ad219ab2cd45b14d06881757ec776d3e098f3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008211"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581935"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Integrazione di Visione personalizzata di Azure
 
@@ -28,13 +28,13 @@ In questa esercitazione si imparerà a usare **Visione personalizzata di Azure**
 
 **Visione personalizzata di Azure** fa parte della famiglia di **Servizi cognitivi** e viene usato per il training dei classificatori di immagini. Il classificatore di immagini è un servizio di intelligenza artificiale che usa il modello con training per applicare tag corrispondenti. Questa funzionalità di classificazione verrà usata dall'applicazione per rilevare gli *oggetti tracciati*.
 
-Altre informazioni su [Visione personalizzata di Azure](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home).
+Altre informazioni su [Visione personalizzata di Azure](/azure/cognitive-services/custom-vision-service/home).
 
 ## <a name="preparing-azure-custom-vision"></a>Preparazione di Visione personalizzata di Azure
 
 Prima di iniziare, è necessario creare un progetto di visione personalizzata. Il modo più rapido consiste nell'usare il portale Web.
 
-Seguire questa [esercitazione introduttiva](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images) per configurare l'account e il progetto fino alla sezione *Caricare e taggare le immagini*.
+Seguire questa [esercitazione introduttiva](/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images) per configurare l'account e il progetto fino alla sezione *Caricare e taggare le immagini*.
 
 > [!WARNING]
 > Per eseguire il training di un modello, è necessario disporre di almeno 2 tag e 5 immagini per ogni tag. Per usare questa applicazione, è necessario creare almeno un tag con 5 immagini, affinché il processo di training non abbia esito negativo in un secondo momento.

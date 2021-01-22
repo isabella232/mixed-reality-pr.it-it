@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realtà mista, sviluppare, sviluppo, HoloLens, servizi cloud, Azure, rendering remoto, ancoraggi nello spazio, servizi cognitivi, cognizione, unity, machine learning, traduzione vocale, visione artificiale, Microsoft Graph
-ms.openlocfilehash: 251fd68d2a3fea79c1db160b6aaf64aad05c686f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 725e41e94923f1738eb11064c772f9138a6be09a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009571"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582708"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Panoramica dei servizi cloud di realtà mista di Azure
 
@@ -66,10 +66,10 @@ Il servizio può essere sviluppato in numerosi ambienti e distribuito a una vast
 
 :::row:::
     :::column:::
-       [![Riconoscimento vocale](../whats-new/images/speech.jpg)](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
+       [![Riconoscimento vocale](../whats-new/images/speech.jpg)](/azure/cognitive-services/speech-service/)
     :::column-end:::
     :::column span="2":::
-        ### <a name="speech"></a>[Voce](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
+        ### <a name="speech"></a>[Voce](/azure/cognitive-services/speech-service/)
         I servizi Voce consentono l'integrazione delle funzionalità di elaborazione vocale in qualsiasi app o servizio. È possibile convertire la lingua parlata in testo o generare una sintesi vocale naturale da testo usando caratteri voce standard o personalizzabili. È possibile provare gratuitamente qualsiasi servizio e creare velocemente app e servizi abilitati per la sintesi vocale con le funzionalità seguenti.
     :::column-end:::
 :::row-end:::
@@ -78,10 +78,10 @@ Il servizio può essere sviluppato in numerosi ambienti e distribuito a una vast
 
 :::row:::
     :::column:::
-       [![Visione](../whats-new/images/vision.jpg)](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
+       [![Visione](../whats-new/images/vision.jpg)](/azure/cognitive-services/computer-vision/)
     :::column-end:::
     :::column span="2":::
-        ### <a name="vision"></a>[Visione](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
+        ### <a name="vision"></a>[Visione](/azure/cognitive-services/computer-vision/)
         È possibile riconoscere, identificare, creare sottotitoli, indicizzare e moderare immagini, video e contenuto input penna digitale. Visione consente ad app e servizi di identificare e analizzare con precisione il contenuto all'interno di immagini, video e input penna digitale.
     :::column-end:::
 :::row-end:::
@@ -95,7 +95,7 @@ I servizi autonomi elencati di seguito non sono applicabili alla realtà mista, 
 <table>
     <tr>
         <td><strong>Servizio cloud di Azure</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (prima generazione)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (prima generazione)</strong></a></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
     </tr>
      <tr>
@@ -167,5 +167,5 @@ I servizi autonomi elencati di seguito non sono applicabili alla realtà mista, 
 
 ## <a name="see-also"></a>Vedere anche
 
-* Esercitazioni sugli ancoraggi nello spazio di Azure per HoloLens 2: [1 di 3 Introduzione ad Ancoraggi nello spazio di Azure](../mrlearning-asa-ch1.md)
+* Esercitazioni sugli ancoraggi nello spazio di Azure per HoloLens 2: [1 di 3 Introduzione ad Ancoraggi nello spazio di Azure](./unity/tutorials/mr-learning-asa-02.md)
 * Esercitazioni sui servizi Voce di Azure per HoloLens 2: [1 di 4 Integrazione e uso del riconoscimento vocale e della trascrizione](../develop/unity/tutorials/mrlearning-speechSDK-ch1.md)

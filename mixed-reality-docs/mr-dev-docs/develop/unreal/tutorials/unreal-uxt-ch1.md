@@ -7,16 +7,16 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, esercitazione, guida introduttiva, mrtk, uxt, UX Tools, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 762247f550a3471bbbb6d1004283c6f901346503
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: a46b9fef96f75f3d80b9ebbd5cbd724730374b41
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009791"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580562"
 ---
 # <a name="1-getting-started"></a>1. Guida introduttiva
 
-Indipendentemente dal fatto che l'utente sia alle prime armi o un professionista esperto nell'ambito della realtà mista, questo è il punto di partenza ideale per esplorare [HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/) e [Unreal Engine](https://www.unrealengine.com/en-US/). Questa serie di esercitazioni offre una guida dettagliata su come creare un'app di scacchi interattiva con il [plug-in UX Tools](https://github.com/microsoft/MixedReality-UXTools-Unreal), che fa parte di [Mixed Reality Toolkit per Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal). Con il plug-in potrai aggiungere comuni funzionalità UX ai tuoi progetti con codice, progetti ed esempi. 
+Indipendentemente dal fatto che l'utente sia alle prime armi o un professionista esperto nell'ambito della realtà mista, questo è il punto di partenza ideale per esplorare [HoloLens 2](../../../index.yml) e [Unreal Engine](https://www.unrealengine.com/en-US/). Questa serie di esercitazioni offre una guida dettagliata su come creare un'app di scacchi interattiva con il [plug-in UX Tools](https://github.com/microsoft/MixedReality-UXTools-Unreal), che fa parte di [Mixed Reality Toolkit per Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal). Con il plug-in potrai aggiungere comuni funzionalità UX ai tuoi progetti con codice, progetti ed esempi. 
 
 ![Schermata finale in viewport](images/unreal-uxt/5-endscene.PNG)
 
@@ -40,7 +40,7 @@ Prima di iniziare, è importante verificare che siano installati gli elementi se
 
 Assicurarsi, innanzitutto, che la configurazione venga eseguita con tutti i pacchetti di Visual Studio necessari:
 1. Installa la versione più recente di [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
-1. Installa i [carichi di lavoro](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-workloads) seguenti:
+1. Installa i [carichi di lavoro](/visualstudio/install/modify-visual-studio#modify-workloads) seguenti:
     * Sviluppo per desktop con C++
     * Sviluppo per desktop .NET
     * Sviluppo per la piattaforma UWP
@@ -48,7 +48,7 @@ Assicurarsi, innanzitutto, che la configurazione venga eseguita con tutti i pacc
     * Connettività dispositivi USB
     * Strumenti della piattaforma UWP (Universal Windows Platform) per C++ (v142)
 
-1. Installa i [componenti](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-individual-components) seguenti:
+1. Installa i [componenti](/visualstudio/install/modify-visual-studio#modify-individual-components) seguenti:
     * Compilatori, strumenti di compilazione e runtime > MSVC versione 142 - VS 2019 C++ ARM64 Build Tools (versione più recente)
 
 È possibile verificare l'installazione con l'immagine seguente:
