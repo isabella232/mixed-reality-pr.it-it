@@ -6,12 +6,12 @@ ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
 keywords: realtà mista, VR, LBE, posizione, cuffie per realtà mista, auricolare di realtà mista di Windows, auricolare di realtà virtuale, hardware, HoloLens, multiplayer, servizi cloud, Azure
-ms.openlocfilehash: 41b35e7f92f8410357c685362ebc1714aea616e8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 1cc54ad0ef4b9892c49e13c7437a4d5356093c79
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580676"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810107"
 ---
 # <a name="location-based-entertainment-with-windows-mixed-reality"></a>Divertimenti location based con la realtà mista di Windows
 
@@ -98,11 +98,11 @@ Il file JSON deve avere il seguente contenuto con "true" impostato per una delle
  
 **D: sono disponibili istruzioni per la configurazione di playspace?**
 
-R: la configurazione di una playspace deve essere eseguita come se si trattasse di un'esperienza di installazione del consumer. Il processo di configurazione della chat consente inoltre di definire i limiti delle chat room. Altre informazioni sulla configurazione dei limiti delle chat possono essere lette [qui](//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
+R: la configurazione di una playspace deve essere eseguita come se si trattasse di un'esperienza di installazione del consumer. Il processo di configurazione della chat consente inoltre di definire i limiti delle chat room. Altre informazioni sulla configurazione dei limiti delle chat possono essere lette [qui](/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
 
 Come illustrato nel documento precedente, il numero massimo ragionevole di coordinate singole playspace è intorno a 5mx5m. Se si vuole avere un'area di dimensioni maggiori, è possibile usare la funzionalità ancoraggi spaziali nello stack di API olografico di Windows. L'uso di questa API richiederà una progettazione personalizzata nelle esperienze che si stanno producendo.  
 
-Altre informazioni su come ottimizzare il contenuto per diverse dimensioni di spazio possono essere lette [qui](//windows/mixed-reality/coordinate-systems).
+Altre informazioni su come ottimizzare il contenuto per diverse dimensioni di spazio possono essere lette [qui](/windows/mixed-reality/coordinate-systems).
  
 
 **D: lo spazio è troppo grande e si verificano errori quando si tenta di configurare un'esperienza permanente con i limiti. Quali operazioni è necessario eseguire per configurare l'esperienza di roaming libero di grandi dimensioni?**
@@ -113,7 +113,7 @@ R: per configurare uno spazio maggiore di ~ 18x18ft, non è possibile usare l'es
 
 Lo sviluppatore di applicazioni è responsabile di visualizzare le misure di sicurezza necessarie in modo che gli utenti non entrino in conflitto con l'ambiente fisico.  Questi possono essere muri digitali all'interno dell'esperienza o un oggetto visivo limite del gioco personalizzato. 
 
-Informazioni aggiuntive sulla configurazione del limite della stanza con WMR sono disponibili [qui](//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
+Informazioni aggiuntive sulla configurazione del limite della stanza con WMR sono disponibili [qui](/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
 
 **D: dove si trova l'origine del playspace?**
 
@@ -140,7 +140,7 @@ R: se si sceglie la compilazione di Windows 20H1 o versione successiva tramite i
 
 D: come funziona la tecnologia di rilevamento negli auricolari per la realtà mista di Windows?  
 
-La realtà mista condivide la stessa tecnologia di rilevamento del HoloLens. Per ulteriori informazioni sul sistema di rilevamento esterno, consultare la documentazione [qui](//windows/mixed-reality/enthusiast-guide/tracking-system).
+La realtà mista condivide la stessa tecnologia di rilevamento del HoloLens. Per ulteriori informazioni sul sistema di rilevamento esterno, consultare la documentazione [qui](/windows/mixed-reality/enthusiast-guide/tracking-system).
 
 Per una descrizione di come funziona il sistema di mapping spaziale di livello superiore, è possibile leggere [qui](../design/spatial-mapping.md)la descrizione.
 
@@ -188,13 +188,13 @@ R: Azure PlayFab è una piattaforma di back-end completa per giochi Live. Per al
 
 **D: utilizzo SteamVR per distribuire le mie esperienze. La realtà mista di Windows funziona con SteamVR?**
 
-R: la realtà mista di Windows per SteamVR consente agli utenti di eseguire esperienze SteamVR su cuffie immersive a realtà mista di Windows. Altre informazioni su SteamVR con WMR sono disponibili [qui](//windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality).
+R: la realtà mista di Windows per SteamVR consente agli utenti di eseguire esperienze SteamVR su cuffie immersive a realtà mista di Windows. Altre informazioni su SteamVR con WMR sono disponibili [qui](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality).
 
 ### <a name="support-and-community"></a>Supporto e community  
 
 Sono disponibili alcune utili risorse che consentono di coinvolgere esperti del team, ottenere supporto per la risoluzione dei problemi e contribuire alla più ampia community di sviluppatori di realtà mista.  
 
-Se si verificano problemi con le funzionalità rilasciate pubblicamente, è possibile archiviare un bug usando l'hub feedback. per informazioni aggiuntive, fare riferimento a questa [pagina](//windows/mixed-reality/enthusiast-guide/filing-feedback).
+Se si verificano problemi con le funzionalità rilasciate pubblicamente, è possibile archiviare un bug usando l'hub feedback. per informazioni aggiuntive, fare riferimento a questa [pagina](/windows/mixed-reality/enthusiast-guide/filing-feedback).
 
 Per altre informazioni sulla risoluzione dei problemi relativi a WMR, eseguire una [richiesta di supporto](https://support.microsoft.com//supportforbusiness/productselection?sapId=96bfb202-bc79-741b-bf7a-774d8b767782) con il team di supporto clienti.
 

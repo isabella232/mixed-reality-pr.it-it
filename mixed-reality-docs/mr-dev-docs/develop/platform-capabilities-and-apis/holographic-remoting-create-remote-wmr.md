@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicazione remota, comunicazione remota olografica, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale, NuGet
-ms.openlocfilehash: 65c76266c00f51cbe17f6bfd2991a6adf4103855
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6884c2679b155c36a21bcf89352524e4957a9f20
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583852"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810073"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-holographicspace-api"></a>Scrittura di un'app remota di comunicazione remota olografica tramite l'API HolographicSpace
 
@@ -27,7 +27,7 @@ Tutto il codice in questa pagina e i progetti di lavoro sono disponibili nel [re
 Un punto di partenza efficace è un'app desktop o UWP basata su DirectX funzionante, che ha come destinazione l' [API HolographicSpace](../native/getting-a-holographicspace.md). Per informazioni dettagliate, vedere [Cenni preliminari sullo sviluppo DirectX](../native/directx-development-overview.md). Il [modello di progetto olografico C++](../native/creating-a-holographic-directx-project.md) è un punto di partenza valido.
 
 >[!IMPORTANT]
->Qualsiasi app che usa la comunicazione remota olografica deve essere creata per usare un [Apartment](//windows/win32/com/multithreaded-apartments)multithread. L'uso di un [Apartment a thread singolo](//windows/win32/com/single-threaded-apartments) è supportato, ma comporta prestazioni ottimali e possibilmente balbettanti durante la riproduzione. Quando si usa C++/WinRT [WinRT:: init_apartment](//windows/uwp/cpp-and-winrt-apis/get-started) un apartment multithread è il valore predefinito.
+>Qualsiasi app che usa la comunicazione remota olografica deve essere creata per usare un [Apartment](/windows/win32/com/multithreaded-apartments)multithread. L'uso di un [Apartment a thread singolo](/windows/win32/com/single-threaded-apartments) è supportato, ma comporta prestazioni ottimali e possibilmente balbettanti durante la riproduzione. Quando si usa C++/WinRT [WinRT:: init_apartment](/windows/uwp/cpp-and-winrt-apis/get-started) un apartment multithread è il valore predefinito.
 
 
 
@@ -104,7 +104,7 @@ catch(winrt::hresult_error& e)
 >Come per qualsiasi API C++/WinRT, ```Connect``` può generare un WinRT:: hresult_error che deve essere gestito.
 
 >[!TIP]
->Per evitare di usare la proiezione del linguaggio [C++/WinRT](//windows/uwp/cpp-and-winrt-apis/) ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` , è possibile includere il file che si trova all'interno del pacchetto NuGet di comunicazione remota olografica. Contiene le dichiarazioni delle interfacce COM sottostanti. Tuttavia, è consigliabile utilizzare C++/WinRT.
+>Per evitare di usare la proiezione del linguaggio [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/) ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` , è possibile includere il file che si trova all'interno del pacchetto NuGet di comunicazione remota olografica. Contiene le dichiarazioni delle interfacce COM sottostanti. Tuttavia, è consigliabile utilizzare C++/WinRT.
 
 L'ascolto delle connessioni in ingresso nell'app remota può essere eseguito chiamando il ```Listen``` metodo. Durante questa chiamata è possibile specificare sia la porta di handshake che la porta di trasporto. La porta di handshake viene utilizzata per l'handshake iniziale. I dati vengono quindi inviati tramite la porta di trasporto. Per impostazione predefinita vengono usati **8265** e **8266** .
 
@@ -197,7 +197,7 @@ if (auto remoteSpeech = m_remoteContext.GetRemoteSpeech())
 }
 ```
 
-Utilizzando un metodo helper asincrono è quindi possibile inizializzare il riconoscimento vocale remoto. Questa operazione deve essere eseguita in modo asincrono perché l'inizializzazione potrebbe richiedere una quantità di tempo considerevole. [Le operazioni di concorrenza e asincrone con c++/WinRT](//windows/uwp/cpp-and-winrt-apis/concurrency) spiegano come creare funzioni asincrone con c++/WinRT.
+Utilizzando un metodo helper asincrono è quindi possibile inizializzare il riconoscimento vocale remoto. Questa operazione deve essere eseguita in modo asincrono perché l'inizializzazione potrebbe richiedere una quantità di tempo considerevole. [Le operazioni di concorrenza e asincrone con c++/WinRT](/windows/uwp/cpp-and-winrt-apis/concurrency) spiegano come creare funzioni asincrone con c++/WinRT.
 
 ```cpp
 winrt::Windows::Foundation::IAsyncOperation<winrt::Windows::Storage::StorageFile> LoadGrammarFileAsync()
@@ -234,7 +234,7 @@ winrt::fire_and_forget InitializeSpeechAsync(
 ```
 
 Esistono due modi per specificare le frasi da riconoscere.
-1) Specifica all'interno di un file XML di grammatica vocale. Per informazioni dettagliate, vedere [come creare una grammatica XML di base](//previous-versions/office/developer/speech-technologies/hh361658(v=office.14)) .
+1) Specifica all'interno di un file XML di grammatica vocale. Per informazioni dettagliate, vedere [come creare una grammatica XML di base](/previous-versions/office/developer/speech-technologies/hh361658(v=office.14)) .
 2) Specificare passandoli all'interno del vettore del dizionario a ```ApplyParameters``` .
 
 All'interno del callback OnRecognizedSpeech, gli eventi di riconoscimento vocale possono essere elaborati:
@@ -362,5 +362,5 @@ I canali di dati personalizzati possono essere utilizzati per inviare dati utent
 * [Canali di dati di Holographic Remoting personalizzati](holographic-remoting-custom-data-channels.md)
 * [Stabilire una connessione sicura con Holographic Remoting](holographic-remoting-secure-connection.md)
 * [Limitazioni e risoluzione dei problemi di comunicazione remota olografica](holographic-remoting-troubleshooting.md)
-* [Condizioni di licenza software per Holographic Remoting](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Condizioni di licenza software per Holographic Remoting](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Informativa sulla privacy di Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 06/12/2019
 ms.topic: article
 keywords: fotocamera, hololens, fotocamera a colori, anteriore, hololens 2, CV, visione artificiale, fiduciale, marcatori, codice a matrice, QR, foto, video
-ms.openlocfilehash: bc478aa658b26eb3a4efb16c62d0874b12992e78
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: f34973fee56f9469632b320a62dd441ed32e5805
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583619"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810159"
 ---
 # <a name="locatable-camera"></a>Fotocamera individuabile
 
@@ -37,7 +37,7 @@ HoloLens include una fotocamera riguardante il mondo montata sulla parte anterio
 
 * Fotocamera con messa a fuoco automatica foto/video (PV) con bilanciamento del carico automatico, esposizione automatica e pipeline per l'elaborazione di immagini complete.
 * Il LED per la privacy bianca per il mondo si illuminerà ogni volta che la fotocamera è attiva.
-* HoloLens 2 supporta diversi profili fotocamera. Informazioni su come [individuare e selezionare le funzionalità della fotocamera](//windows/uwp/audio-video-camera/camera-profiles).
+* HoloLens 2 supporta diversi profili fotocamera. Informazioni su come [individuare e selezionare le funzionalità della fotocamera](/windows/uwp/audio-video-camera/camera-profiles).
 * La videocamera supporta i profili e le risoluzioni seguenti (tutte le modalità video sono 16:9 proporzioni):
   
   | Profilo                                         | Video     | Anteprima   | Ancora     | Frequenza fotogrammi | Campo di visualizzazione orizzontale (H-FOV) | Utilizzo suggerito                             |
@@ -75,14 +75,14 @@ Per passare da "CameraIntrinsics" e "CameraCoordinateSystem" al sistema di coord
 
 ### <a name="using-mediaframereference"></a>Uso di MediaFrameReference
 
-Queste istruzioni si applicano se you ' r usa la classe [MediaFrameReference](//uwp/api/windows.media.capture.frames.mediaframereference) per leggere i frame immagine dalla fotocamera.
+Queste istruzioni si applicano se you ' r usa la classe [MediaFrameReference](/uwp/api/windows.media.capture.frames.mediaframereference) per leggere i frame immagine dalla fotocamera.
 
-Ogni fotogramma immagine (foto o video) include un [SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) radice alla fotocamera al momento dell'acquisizione, a cui è possibile accedere usando la proprietà [CoordinateSystem](//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) di [MediaFrameReference](//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference). Ogni frame contiene una descrizione del modello di obiettivo della fotocamera, che è possibile trovare nella proprietà [CameraIntrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) . Insieme, queste trasformazioni definiscono per ogni pixel un raggio nello spazio 3D che rappresenta il percorso utilizzato dai fotoni che hanno prodotto il pixel. Questi raggi possono essere correlati ad altro contenuto nell'app ottenendo la trasformazione dal sistema di coordinate del frame a un altro sistema di coordinate, ad esempio da un [frame di riferimento](../../design/coordinate-systems.md#stationary-frame-of-reference)fisso. 
+Ogni fotogramma immagine (foto o video) include un [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) radice alla fotocamera al momento dell'acquisizione, a cui è possibile accedere usando la proprietà [CoordinateSystem](/uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) di [MediaFrameReference](/uwp/api/Windows.Media.Capture.Frames.MediaFrameReference). Ogni frame contiene una descrizione del modello di obiettivo della fotocamera, che è possibile trovare nella proprietà [CameraIntrinsics](/uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) . Insieme, queste trasformazioni definiscono per ogni pixel un raggio nello spazio 3D che rappresenta il percorso utilizzato dai fotoni che hanno prodotto il pixel. Questi raggi possono essere correlati ad altro contenuto nell'app ottenendo la trasformazione dal sistema di coordinate del frame a un altro sistema di coordinate, ad esempio da un [frame di riferimento](../../design/coordinate-systems.md#stationary-frame-of-reference)fisso. 
 
 Ogni frame di immagini offre quanto segue:
 * Dati pixel (in formato RGB/NV12/JPEG/ecc.)
-* [SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) dalla posizione di acquisizione
-* Classe [CameraIntrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) che contiene la modalità Lens della fotocamera
+* [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) dalla posizione di acquisizione
+* Classe [CameraIntrinsics](/uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) che contiene la modalità Lens della fotocamera
 
 Nell' [esempio HolographicFaceTracking](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking) viene illustrato il modo piuttosto semplice per eseguire una query per la trasformazione tra il sistema di coordinate della fotocamera e i sistemi di coordinate dell'applicazione.
 
@@ -256,7 +256,7 @@ Esempi:
 * Identificare e riconoscere gli oggetti nella chat room
 * Identificare e riconoscere persone nella stanza, ad esempio inserendo schede di contatto olografiche sui visi
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Esempio di fotocamera locatable](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)
 * [Fotocamera individuabile in Unity](../unity/locatable-camera-in-unity.md)
 * [Acquisizione in realtà mista (MRC, Mixed Reality Capture)](/hololens/holographic-photos-and-videos)

@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: Comprensione della scena, mapping spaziale, realtà mista di Windows, Unity
-ms.openlocfilehash: 748ec444bfcbabb534f391a889fcc16c7671bf7d
-ms.sourcegitcommit: 753f0ee94cf86be645cad8efd60f1b43ac529c96
+ms.openlocfilehash: 2a1bf87ae4ce13b47d373f44e398d02382674fe7
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98758367"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810140"
 ---
 # <a name="scene-understanding-sdk-overview"></a>Panoramica dell'SDK per la comprensione della scena
 
@@ -265,7 +265,7 @@ Si noti che si tratta del SceneObject con la trasformazione rispetto all'origine
 
 La comprensione della scena ha effettuato un tentativo intenzionale di allinearsi alle rappresentazioni tradizionali della scena 3D quando si gestiscono le trasformazioni. Ogni scena è quindi confinata a un singolo sistema di coordinate, in modo analogo alla maggior parte delle rappresentazioni ambientali 3D. SceneObjects forniscono il percorso relativo al sistema di coordinate. Se l'applicazione sta affrontando scenari che estendono il limite di una singola origine, può ancorare SceneObjects a SpatialAnchors o generare diverse scene e unirle, ma per semplicità si presuppone che esistano scene ermetiche nella propria origine localizzata da un NodeId definito da scene. OriginSpatialGraphNodeId.
 
-Il codice Unity seguente, ad esempio, Mostra come usare la percezione di Windows e le API Unity per allineare i sistemi di coordinate. Vedere [SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) e [SpatialGraphInteropPreview](//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) per informazioni dettagliate sulle API di percezione di Windows e sugli [oggetti nativi della realtà mista in Unity](//windows/mixed-reality/unity-xrdevice-advanced) per informazioni dettagliate su come ottenere un SpatialCoordinateSystem che corrisponda all'origine mondiale di Unity.
+Il codice Unity seguente, ad esempio, Mostra come usare la percezione di Windows e le API Unity per allineare i sistemi di coordinate. Vedere [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) e [SpatialGraphInteropPreview](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) per informazioni dettagliate sulle API di percezione di Windows e sugli [oggetti nativi della realtà mista in Unity](/windows/mixed-reality/unity-xrdevice-advanced) per informazioni dettagliate su come ottenere un SpatialCoordinateSystem che corrisponda all'origine mondiale di Unity.
 
 ```cs
 private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnderstanding.Scene scene)
