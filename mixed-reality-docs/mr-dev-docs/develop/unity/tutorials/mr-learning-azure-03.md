@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, hololens 2, visione personalizzata di azure, servizi cognitivi di azure, servizi cloud di azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: aa3ad219ab2cd45b14d06881757ec776d3e098f3
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 7676a55a2276b88f3bc123dda90a1b8d39536a61
+ms.sourcegitcommit: daa45a19a3a353334380cda78fee7fa149f0e48b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581935"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98981720"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Integrazione di Visione personalizzata di Azure
 
@@ -50,17 +50,17 @@ Da qui, trascinare il prefab **ObjectDetectionManager** nella gerarchia della sc
 ![Unity con i campi di configurazione del componente script ObjectDetectionManager visualizzati in Inspector](images/mr-learning-azure/tutorial3-section4-step1-2.png)
 
 Nella finestra Hierarchy (Gerarchia) individuare l'oggetto **ObjectDetectionManager** e selezionarlo.
-Il prefab **ObjectDetectionManager** contiene il componente **ObjectDetectionManager (script)** e, come si può vedere dalla finestra Inspector (Controllo), dipende da diverse impostazioni.
+La prefabbricazione **ObjectDetectionManager** contiene il componente **ObjectDetectionManager (script)** e, come si può notare dalla finestra di controllo, dipende dalle impostazioni di Azure e del progetto.
 
 ## <a name="retrieving-azure-api-resource-credentials"></a>Recupero delle credenziali delle risorse API di Azure
 
 Le credenziali necessarie per le impostazioni **ObjectDetectionManager (script)** possono essere recuperate dal portale di Azure e dal portale del servizio Visione personalizzata.
 
-### <a name="azure-portal"></a>Portale di Azure
+### <a name="retrieving-azure-settings-credentials"></a>Recupero delle credenziali delle impostazioni di Azure
 
-Trovare e individuare la risorsa visione personalizzata di tipo **Servizi cognitivi** creata nella sezione *Preparazione della scena* di questa esercitazione. Fare clic su *Keys and Endpoint* (Chiavi ed endpoint) per recuperare le credenziali necessarie.
+Trovare e individuare la risorsa visione personalizzata di tipo **Servizi cognitivi** creati nella sezione *preparazione della scena* di questa esercitazione (selezionare il nome delle risorse della visione personalizzata seguito da *-stima* ). Fare clic su *Panoramica* o *chiavi ed endpoint* per recuperare le credenziali necessarie.
 
-### <a name="custom-vision-dashboard"></a>Dashboard Visione personalizzata
+### <a name="retrieving-project-settings-credentials"></a>Recupero delle credenziali delle impostazioni di progetto
 
 Nel dashboard [Visione personalizzata](https://www.customvision.ai/projects) aprire il progetto creato per questa esercitazione e fare clic sull'icona a forma di ingranaggio nell'angolo in alto a destra della pagina per aprire la pagina delle impostazioni. Qui nella sezione *Resources* (Risorse) a destra sono riportate le credenziali necessarie.
 
@@ -87,6 +87,10 @@ Quando le immagini sono sufficienti, fare clic sul pulsante **Train** (Esegui tr
 > **ObjectDetectionManager (script)** carica direttamente le immagini acquisite nel servizio Visione personalizzata. In alternativa, l'API di visione personalizzata accetta gli URL delle immagini; come esercizio, è possibile modificare **ObjectDetectionManager (script)** per caricare le immagini in un archivio BLOB.
 
 ## <a name="detect-objects"></a>Rilevare oggetti
+
+Prima di rilevare gli oggetti, è necessario modificare la chiave API presente in  **ObjectDetectionManager (script)** in Impostazioni progetto già assegnate con la chiave visiva personalizzata.
+
+Trovare e individuare la risorsa visione personalizzata in portale di Azure. Fare clic su *chiavi ed endpoint* per recuperare la chiave API e sostituire con la chiave API precedente in Impostazioni progetto.
 
 A questo punto è possibile testare il modello con training, eseguire l'applicazione e dal *menu principale* fare clic su **Search Object** (Cerca oggetto) e digitare il nome dell'**oggetto tracciato** in questione. Quando viene visualizzata la **Object Card** (Scheda oggetto), fare clic sul pulsante **Custom Vision** (Visione personalizzata). Da qui, **ObjectDetectionManager** inizierà ad acquisire immagini in background dalla fotocamera e lo stato di avanzamento verrà indicato nel menu. Puntare la fotocamera sull'oggetto usato per eseguire il training del modello. Si noterà che dopo un breve periodo di tempo rileverà l'oggetto.
 
