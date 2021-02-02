@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: 4d82d0974a0a797e7f8d2de2d4943666f7d32a4f
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: ff479df81316ab5ceeabf045ad1bbae007190ed4
+ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98669498"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99238152"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. Inizializzazione del progetto e distribuzione della prima applicazione
 
@@ -86,7 +86,13 @@ Nella finestra Import Unity Package (Importa il pacchetto Unity), fai clic sul p
 
 ## <a name="importing-the-mixed-reality-toolkit"></a>Importazione di Mixed Reality Toolkit
 
-Scarica il pacchetto personalizzato di Unity:
+### <a name="using-the-mixed-reality-feature-tool"></a>Uso dello strumento funzionalità per la realtà mista
+
+Per installare MRTK con la nuova applicazione di strumenti per la funzionalità di realtà mista, seguire le [istruzioni di installazione e utilizzo](../welcome-to-mr-feature-tool.md) e selezionare il pacchetto di **mixed reality Toolkit Foundation** nella categoria del Toolkit di realtà mista.
+
+### <a name="using-unity-packages"></a>Uso dei pacchetti Unity
+
+Per installare MRTK con un pacchetto personalizzato:
 
 * [Microsoft. MixedReality. Toolkit. Unity. Foundation. 2.5.1. file unitypackage Tools](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.5.1/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.5.1.unitypackage)
 
@@ -128,9 +134,9 @@ Dal menu di Unity scegli **Edit** (Modifica) > **Project Settings** (Impostazion
 
 Nella finestra Impostazioni progetto selezionare Gestione plug **-in XR**  >  **installa Gestione plug-in** di XR, per installare la gestione dei plug-in XR:
 
-![Finestra Project Settings di Unity con il nome del pacchetto configurato](images/mr-learning-base/base-02-section5-step2-2.png)
+![Impostazioni del progetto con la gestione dei plug-in XR selezionata](images/mr-learning-base/base-02-section5-step2-2.png)
 
-al termine dell'installazione della gestione dei plug-in di XR in Unity. Assicurarsi di essere in piattaforma UWP (Universal Windows Platform) impostazioni e controllare l'inizializzazione di XR all'avvio.
+Al termine dell'installazione della gestione dei plug-in di XR in Unity. Assicurarsi di essere in piattaforma UWP (Universal Windows Platform) impostazioni e controllare l'inizializzazione di XR all'avvio.
 
 ![Unity configurazione della gestione dei plug-in XR](images/mr-learning-base/base-02-section5-step2-3.png)
 
@@ -142,10 +148,10 @@ Al termine dell'importazione di Windows Mixed Reality SDK, dovrebbe visualizzars
 
 Nella finestra MRTK Project Configurator (Configuratore del progetto MRTK) usa l'elenco a discesa **Audio spatializer** (Spazializzatore audio) per selezionare **MS HRTF Spatializer** e quindi fai clic sul pulsante **Apply** (Applica) per applicare l'impostazione:
 
-![Area XR Settings di Unity con Windows Mixed Reality SDK selezionato](images/mr-learning-base/base-02-section5-step2-5.png)
+![Finestra di configurazione del progetto MRTK con proprietà audio Spatializer evidenziata](images/mr-learning-base/base-02-section5-step2-5.png)
 
 > [!TIP]
->L'impostazione della proprietà Audio spatializer (Spazializzatore audio) è facoltativa, ma può migliorare l'esperienza audio nel progetto. Se si imposta questa proprietà su MS HRTF Spatializer, questo plug-in di spazializzatore verrà usato quando la proprietà AudioSource.spatialize di Unity è abilitata. Per ulteriori informazioni su questo argomento, è possibile fare riferimento alle  <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> esercitazioni audio spaziali</a>.
+>L'impostazione della proprietà Audio spatializer (Spazializzatore audio) è facoltativa, ma può migliorare l'esperienza audio nel progetto. Se si imposta questa proprietà su MS HRTF Spatializer, questo plug-in di spazializzatore verrà usato quando la proprietà AudioSource.spatialize di Unity è abilitata. Per ulteriori informazioni su questo argomento, è possibile fare riferimento alle  <a href="https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> esercitazioni audio spaziali</a>.
 
 Nella finestra Project Settings (Impostazioni progetto) seleziona **Player (Lettore)**  > **XR Settings** (Impostazioni XR) e quindi usa l'elenco a discesa **Depth Format** (Formato profondità) per selezionare **16-bit depth** (Profondità a 16 bit):
 
