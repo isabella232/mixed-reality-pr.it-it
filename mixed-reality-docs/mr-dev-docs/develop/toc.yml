@@ -24,20 +24,6 @@
       href: unity/unity-development-overview.md
     - name: Sviluppo in Unity per VR
       href: unity/unity-development-wmr-overview.md
-    - name: Strumento per la funzionalità di realtà mista
-      items:
-        - name: Strumento per la funzionalità MR
-          href: unity/welcome-to-mr-feature-tool.md
-        - name: Configurare
-          href: unity/configuring-feature-tool.md
-        - name: Rilevazione
-          href: unity/discovering-features.md
-        - name: Importa
-          href: unity/importing-features.md
-        - name: Dettagli del pacchetto
-          href: unity/viewing-package-details.md
-        - name: Revisione delle modifiche
-          href: unity/reviewing-changes.md
     - name: Esercitazioni
       items:
         - name: Panoramica
@@ -188,6 +174,20 @@
           href: unity/openxr-getting-started.md
         - name: Funzionalità supportate dal plug-in OpenXR
           href: unity/openxr-supported-features.md
+        - name: Strumento per la funzionalità di realtà mista
+          items:
+            - name: Strumento per la funzionalità MR
+              href: unity/welcome-to-mr-feature-tool.md
+            - name: Configurare
+              href: unity/configuring-feature-tool.md
+            - name: Rilevazione
+              href: unity/discovering-features.md
+            - name: Importa
+              href: unity/importing-features.md
+            - name: Dettagli del pacchetto
+              href: unity/viewing-package-details.md
+            - name: Revisione delle modifiche
+              href: unity/reviewing-changes.md
     - name: Blocchi predefiniti di base
       items:
         - name: Fotocamera
@@ -276,7 +276,7 @@
       href: unreal/unreal-porting.md
     - name: Avvi rapidi
       items:
-        - name: Creazione di un progetto HoloLens
+        - name: Creazione della prima applicazione HoloLens Unreal
           href: unreal/unreal-quickstart.md
     - name: Esercitazioni
       items:
