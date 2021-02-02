@@ -1,5 +1,5 @@
 ---
-title: Creazione di un progetto HoloLens
+title: Creazione della prima applicazione HoloLens Unreal
 description: Informazioni su come configurare correttamente un progetto irreale con gli oggetti scena e le interazioni di input per lo sviluppo di realtà mista HoloLens.
 author: hferrone
 ms.author: safarooq
@@ -7,14 +7,27 @@ ms.date: 01/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal Engine 4, Unreal Editor, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, documentazione, guide, funzionalità, cuffie per la realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale, porting, aggiornamento
-ms.openlocfilehash: 3b2b88ac897a8791fec1ca2942d0db34efcee598
-ms.sourcegitcommit: be33fcda10d1cb98df90b428a923289933d42c77
+ms.openlocfilehash: 467987f69b50c0ec635c99899d6bcecab5a62af0
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98672738"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421430"
 ---
-# <a name="creating-a-hololens-project"></a>Creazione di un progetto HoloLens
+# <a name="creating-your-first-hololens-unreal-application"></a>Creazione della prima applicazione HoloLens Unreal
+
+Questa guida illustra come ottenere la prima app per la realtà mista in esecuzione in HoloLens in Unreal Engine. Nella tradizione di "Hello World", verrà creata una semplice app che visualizza un cubo sullo schermo. Per renderlo più utile, verrà creato anche il primo gesto per ruotare il cubo e uscire dall'applicazione. 
+
+## <a name="objectives"></a>Obiettivi
+
+* Avviare un progetto HoloLens
+* Abilitare i plug-in corretti
+* Creare un asset di dati ARSessionConfig
+* Configurare gli input del movimento
+* Creazione di un livello di base
+* Implementare un movimento di pizzico
+
+## <a name="creating-a-new-project"></a>Creazione di un nuovo progetto
 
 Prima di tutto, è necessario un progetto su cui lavorare. Se si sviluppa in Unreal per la prima volta, è necessario [scaricare i file di supporto](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) dal launcher Epic.
 
@@ -29,7 +42,8 @@ Prima di tutto, è necessario un progetto su cui lavorare. Se si sviluppa in Unr
 
 4. Nelle **impostazioni del progetto** impostare **C++, Scalable 3D o 2D, mobile/tablet** e **nessun contenuto iniziale**, quindi scegliere un percorso di salvataggio e fare clic su **Crea progetto**
 
-> [!NOTE] Per essere pronti a usare il plug-in OpenXR in un secondo momento, si usa un progetto C++ anziché un progetto di progetto. Questa Guida introduttiva usa il plug-in OpenXR predefinito incluso in Unreal Engine. È tuttavia consigliabile scaricare e usare il plug-in Microsoft OpenXR ufficiale. Per questo è necessario che il progetto sia un progetto C++.
+> [!NOTE] 
+> Per essere pronti a usare il plug-in OpenXR in un secondo momento, si usa un progetto C++ anziché un progetto di progetto. Questa Guida introduttiva usa il plug-in OpenXR predefinito incluso in Unreal Engine. È tuttavia consigliabile scaricare e usare il plug-in Microsoft OpenXR ufficiale. Per questo è necessario che il progetto sia un progetto C++.
 
 ![Finestra Impostazioni progetto con opzioni di progetto, prestazioni, piattaforma di destinazione e contenuto iniziale evidenziato](images/unreal-quickstart-img-03.png)
 
@@ -131,14 +145,18 @@ Al termine, il passaggio successivo consiste nell'assicurarsi che la sessione AR
 
 ![Mapping delle azioni con opzioni di interazione della mano Open XR MSFT evidenziate](images/unreal-quickstart-img-16.jpg)
 
-4. Aprire il **progetto Level** e aggiungere un **InputAction RightPinch** e **InputAction LeftPinch**
+## <a name="setting-up-gestures"></a>Impostazione di movimenti
+
+Ora che sono stati impostati gli input, è possibile arrivare alla parte interessante: aggiungere movimenti. Consente di ruotare il cubo a destra e uscire dall'applicazione in un pizzico di sinistra.
+
+1. Aprire il **progetto Level** e aggiungere un **InputAction RightPinch** e **InputAction LeftPinch**
 * Connettere l'evento Pinch a destra a un **AddActorLocalRotation** con il **cubo** come destinazione e **rotazione delta** impostati su **X = 0, Y = 0** e **Z = 20**. Il cubo verrà ora ruotato di 20 gradi ogni volta che si pizzica
 * Connetti l'evento di tocco a sinistra per **chiudere il gioco**
 
 ![Livello Bluprint aperto con azioni di input per gli eventi di pizzico a destra e a sinistra](images/unreal-quickstart-img-17.jpg)
 
-5. Nelle impostazioni di **trasformazione** del cubo impostare **mobilità** su **mobile** in modo che possa essere spostata dinamicamente:
+2. Nelle impostazioni di **trasformazione** del cubo impostare **mobilità** su **mobile** in modo che possa essere spostata dinamicamente:
 
 ![Impostazioni trasformare con proprietà Mobility evidenziate](images/unreal-quickstart-img-18.jpg)
 
-A questo punto, si è pronti per deply ci ed eseguire il test dell'applicazione.
+A questo punto, si è pronti per distribuire e testare l'applicazione.

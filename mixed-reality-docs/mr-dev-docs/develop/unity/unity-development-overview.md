@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realtà mista, sviluppo, guida introduttiva, nuovo progetto, porting, funzionalità, fotocamera, simulazione, emulazione, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, mapping spaziale, input vocale, fotocamera individuabile, emulatore, Azure, esercitazioni
-ms.openlocfilehash: fc444f4d40d8bc013253869fe77ddd563e889d85
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 59bb269bfb8d7e0a9cfd6963cf144ddb0e070c5f
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582979"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421410"
 ---
 # <a name="unity-development-for-hololens"></a>Sviluppo di Unity per HoloLens
 
@@ -36,6 +36,7 @@ Il modo più semplice per sviluppare in Unity è quello di usare Mixed Reality T
 | [Che cos'è MRTK?](mrtk-getting-started.md) | Per iniziare, acquisire familiarità con Mixed Reality Toolkit e imparare a conoscere i vantaggi che offre |
 | [Installare gli strumenti più recenti](../install-the-tools.md) | Scaricare e installare il pacchetto Unity più recente e configurare il progetto per la realtà mista |
 | [Serie di esercitazioni su HoloLens 2](tutorials/mr-learning-base-01.md) | Seguire le esercitazioni su MRTK di livello principiante per l'hardware HoloLens 2 |
+| Scaricare **facoltativamente** [lo strumento per la funzionalità di realtà mista](welcome-to-mr-feature-tool.md) | Un nuovo strumento di sviluppo per l'individuazione, l'aggiornamento e l'aggiunta di pacchetti di funzionalità di realtà mista ai progetti Unity |
 
 > [!IMPORTANT]
 > Se vuoi creare un nuovo progetto Unity senza importare Mixed Reality Toolkit, devi modificare manualmente un piccolo set di impostazioni di Unity per Windows Mixed Reality. Le impostazioni sono suddivise in due categorie: per progetto e per scena. Per la procedura dettagliata, vedere la [guida alla configurazione](configure-unity-project.md).

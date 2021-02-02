@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicazione remota, realtà mista, sviluppo, guida introduttiva, funzionalità, nuovo progetto, emulatore, documentazione, guide, caratteristiche, ologrammi, sviluppo di giochi, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, OpenXR
-ms.openlocfilehash: a5b65bbfe5a1f365a93836406365fdc395b73c47
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 99540b9cd3473097896d847943b9736300000305
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580054"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421420"
 ---
 # <a name="unreal-development-overview"></a>Panoramica dello sviluppo con Unreal
 
@@ -38,6 +38,7 @@ Prima di tutto, è necessario installare gli strumenti per lo sviluppo di app pe
 |  Checkpoint  |  Risultato  |
 | --- | --- |
 | [Installare gli ultimi aggiornamenti](../install-the-tools.md) | Scaricare e installare la versione più recente di Unreal Engine e configurare il progetto per la realtà mista |
+| [Creazione della prima applicazione HoloLens Unreal](unreal-quickstart.md) | Inizia il tuo percorso di sviluppo irreale e HoloLens creando un'applicazione di base per la realtà mista |
 | [Serie di esercitazioni su HoloLens 2](tutorials/unreal-uxt-ch1.md) | Acquisire le informazioni necessarie per sviluppare app di realtà mista in Unreal, compilare la prima app con MRTK e distribuire l'app in HoloLens 2 |
 | (Facoltativo) Iniziare a usare [OpenXR](../native/openxr.md) in Unreal | Se si ha l'intenzione di creare un'app OpenXR in Unreal, è necessario disabilitare il plug-in del motore seguente:<ul><li>Windows Mixed Reality</li></ul><br>Scaricare e abilitare il plug-in seguente nel progetto da GitHub:<ul><li> [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal)</li></ul><br>L'elenco completo delle funzionalità attualmente supportate in OpenXR è [riportato di seguito](#supported-features).|
 
