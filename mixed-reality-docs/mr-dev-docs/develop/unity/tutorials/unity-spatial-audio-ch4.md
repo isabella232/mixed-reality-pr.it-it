@@ -3,15 +3,15 @@ title: Esercitazioni audio spaziali-4. Abilitazione e disabilitazione dell'audio
 description: Usare un pulsante per abilitare e disabilitare la spazializzazione dell'audio in fase di esecuzione.
 author: kegodin
 ms.author: v-hferrone
-ms.date: 12/01/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, Unity, esercitazione, hololens2, audio spaziale, MRTK, Toolkit per realtà mista, UWP, Windows 10, HRTF, funzione di trasferimento relativa alla testa, Reverb, Microsoft Spatializer
-ms.openlocfilehash: 9239c45efa5196b94fe2e05f85a2e83df6c7789f
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 26143975707b2cd6141803a6335cec89db5bbd26
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578320"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590733"
 ---
 # <a name="4-enabling-and-disabling-spatialization-at-run-time"></a>4. Abilitazione e disabilitazione della spazializzazione in fase di esecuzione
 

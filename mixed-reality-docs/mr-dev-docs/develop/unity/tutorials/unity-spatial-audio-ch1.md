@@ -3,15 +3,15 @@ title: Esercitazioni audio spaziali-1. Aggiunta di audio spaziale al progetto
 description: Aggiungere il plug-in Microsoft Spatializer al progetto Unity per accedere a HoloLens 2 HRTF hardware offload.
 author: kegodin
 ms.author: v-hferrone
-ms.date: 12/01/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, Unity, esercitazione, hololens2, audio spaziale, MRTK, Toolkit per realtà mista, UWP, Windows 10, HRTF, funzione di trasferimento relativa alla testa, Reverb, Microsoft Spatializer
-ms.openlocfilehash: cc7a4db5a3b4d853f2912a5e8e022fddd372e105
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 7ed1355e3c522fcd94a96dd761a8a9ebb01c4c4c
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635389"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590043"
 ---
 # <a name="1-adding-spatial-audio-to-your-unity-project"></a>1. aggiunta di audio spaziale al progetto Unity
 
@@ -70,7 +70,7 @@ Quindi, seguire le istruzioni per la [modifica delle opzioni di visualizzazione 
 Scaricare e importare Microsoft Spatializer  <a href="https://github.com/microsoft/spatialaudio-unity/releases/download/v1.0.18/Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage" target="_blank">Microsoft. SpatialAudio. Spatializer. Unity. 1.0.18. file unitypackage Tools </a>
 
 >[!TIP]
-> Per rivedere la procedura di importazione di un pacchetto personalizzato di Unity, puoi fare riferimento alle istruzioni contenute in [Importare Mixed Reality Toolkit](../../../mrlearning-base-ch1.md#import-the-mixed-reality-toolkit).
+> Per un promemoria su come importare un pacchetto personalizzato Unity, è possibile fare riferimento alle istruzioni relative all' [importazione delle risorse dell'esercitazione](mr-learning-base-04.md#importing-the-tutorial-assets) .
 
 ## <a name="enable-the-microsoft-spatializer-plugin"></a>Abilitare il plug-in Microsoft Spatializer
 

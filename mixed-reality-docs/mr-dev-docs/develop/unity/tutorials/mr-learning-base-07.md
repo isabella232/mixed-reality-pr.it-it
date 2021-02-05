@@ -3,16 +3,16 @@ title: Interazione con oggetti 3D
 description: Questa esercitazione illustra come usare Mixed Reality Toolkit (MRTK) per interagire con gli oggetti 3D nelle app di realtà mista e manipolarli.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
-keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, interazioni degli oggetti, cubi di delimitazione
+keywords: realtà mista, Unity, esercitazione, hololens, MRTK, Toolkit realtà mista, UWP, interazioni tra oggetti, controlli dei limiti
 ms.localizationpriority: high
-ms.openlocfilehash: 23cfe3d3746d6ab6dbc0757f32b95ddc8637a366
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: f92eca294e2114207a5e28ebe80aa480b9029b66
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578755"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590443"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interazione con oggetti 3D
 
@@ -76,7 +76,7 @@ Con tutti gli oggetti parte rover e l'oggetto RoverAssembly ancora selezionati, 
 > [!NOTE]
 > A questo punto hai abilitato la manipolazione per tutti gli oggetti parte rover e per l'oggetto RoverAssembly.
 
-Nella finestra del progetto passare alla cartella **assets**  >  **MRTK**  >  **StandardAssets**  >  **audio** per individuare i clip audio:
+Nella finestra del progetto passare a **pacchetti**  >  **mixed reality Toolkit standard**  >  cartella **audio** per individuare i clip audio:
 
 ![Finestra Project di Unity con la cartella Audio selezionata](images/mr-learning-base/base-07-section1-step1-3.png)
 
@@ -115,15 +115,15 @@ Se attivi ora la modalità di gioco, puoi usare l'interazione da vicino o da lon
 
 Per altre informazioni sul componente Object Manipulator (Manipolatore oggetti) e sulle relative proprietà associate, puoi visitare la guida su [tale componente](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) nel [portale della documentazione di MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
-## <a name="adding-bounding-boxes"></a>Aggiunta di cubi di delimitazione
+## <a name="adding-bounds-control"></a>Aggiunta del controllo Bounds
 
-I rettangoli di delimitazione rendono più semplice e intuitivo manipolare gli oggetti con una sola mano, sia per l'interazione vicina che per quella più lunga, fornendo handle che possono essere utilizzati per la scalabilità e la rotazione.
+Il controllo dei limiti rende più semplice e intuitivo manipolare gli oggetti con una sola mano, sia per l'interazione vicina che per quella più lunga, fornendo handle che possono essere usati per la scalabilità e la rotazione.
 
-In questo esempio si aggiungerà un rettangolo di delimitazione all'oggetto RoverExplorer in modo che l'intera esperienza possa essere facilmente spostata, ruotata e ridimensionata. Inoltre, il menu viene configurato in modo che sia possibile attivare e disattivare il rettangolo di delimitazione.
+In questo esempio si aggiungerà un BoundsControl all'oggetto RoverExplorer, in modo che l'intera esperienza possa essere spostata, ruotata e ridimensionata facilmente. Inoltre, il menu viene configurato in modo che sia possibile attivare e disattivare il controllo dei limiti.
 
 Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **RoverExplorer**, quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere i componenti seguenti:
 
-* Componente **BoundingBox**
+* Componente **BoundsControl**
 * Componente **Object Manipulator (Script)** (Manipolatore oggetti - script)
 
 Deselezionare quindi la casella di **controllo** accanto a tutti i componenti per renderli **disabilitati** per impostazione predefinita:
@@ -131,19 +131,19 @@ Deselezionare quindi la casella di **controllo** accanto a tutti i componenti pe
 ![Unity con l'oggetto RoverExplorer selezionato e i componenti aggiunti e disabilitati](images/mr-learning-base/base-07-section2-step1-1.png)
 
 > [!NOTE]
-> La visualizzazione del riquadro delimitatore viene creata in fase di esecuzione e, pertanto, non è visibile prima di immettere la modalità di gioco.
+> La visualizzazione del controllo dei limiti viene creata in fase di esecuzione e, pertanto, non è visibile prima di immettere la modalità di gioco.
 
 > [!NOTE]
->Il componente BoundingBox aggiungerà automaticamente il componente NearInteractionGrabbable in fase di runtime. Non è necessario pertanto aggiungere questo componente per afferrare con le mani tracciate gli oggetti racchiusi.
+>Il componente BoundsControl aggiungerà automaticamente il componente NearInteractionGrabbable in fase di esecuzione. Non è necessario pertanto aggiungere questo componente per afferrare con le mani tracciate gli oggetti racchiusi.
 
 > [!NOTE]
 >Il manipolatore di oggetti (script) aggiunge automaticamente Gestione vincoli (script)
 
-Nella finestra Hierarchy (Gerarchia) espandi l'oggetto Menu > **ButtonCollection** in modo da rivelare i quattro pulsanti e rinomina il terzo pulsante come **BoundingBox_Enable**, quindi nella finestra Inspector (Controllo) configura il componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
+Nella finestra gerarchia espandere il menu > oggetto **buttoncollection** per visualizzare i quattro pulsanti e rinominare il terzo pulsante in **BoundsControl_Enable**, quindi nella finestra di controllo configurare il componente **Helper config (script) del pulsante** come indicato di seguito:
 
 * Imposta **Main Label Text** (Testo etichetta principale) su **Enable** (Abilita)
 * Assegna l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)
-* Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **BoundingBox** > **bool Enabled** per aggiornare il valore di questa proprietà quando viene attivato l'evento
+* Nell'elenco a discesa **Nessuna funzione** selezionare **BoundsControl**  >  **bool Enabled** per aggiornare il valore della proprietà quando viene attivato l'evento
 * Verifica che la casella di controllo dell'argomento sia **selezionata**
 * Fai clic sull'icona **+** piccola per aggiungere un altro evento
 * Assegna l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)
@@ -151,31 +151,31 @@ Nella finestra Hierarchy (Gerarchia) espandi l'oggetto Menu > **ButtonCollection
 * Verifica che la casella di controllo dell'argomento sia **selezionata**
 * Lascia l' **icona** come icona ' cubo con controllo dei limiti '
 
-![Unity con l'oggetto pulsante BoundingBox_Enable selezionato e il componente Button Config Helper configurato](images/mr-learning-base/base-07-section2-step1-2.png)
+![Unity con BoundsControl_Enable oggetto Button selezionato e il componente helper config del pulsante configurato](images/mr-learning-base/base-07-section2-step1-2.png)
 
-Rinomina il quarto e ultimo pulsante come **BoundingBox_Disable**, quindi nella finestra Inspector (Controllo) configura il componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
+Rinominare il pulsante Avanti e ultimo per **BoundsControl_Disable**, quindi nella finestra di controllo configurare il componente **Helper config (script) del pulsante** come indicato di seguito:
 
 * Imposta **Main Label Text** (Testo etichetta principale) su **Disable** (Disabilita)
 * Assegna l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)
-* Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **BoundingBox** > **bool Enabled** per aggiornare il valore di questa proprietà quando viene attivato l'evento
-* Verifica che la casella di controllo dell'argomento sia **deselezionata**
+* Nell'elenco a discesa **Nessuna funzione** selezionare **BoundsControl**  >  **bool Enabled** per aggiornare il valore della proprietà quando viene attivato l'evento
+* Verificare che la casella di controllo dell'argomento sia **deselezionata**
 * Fai clic sull'icona **+** piccola per aggiungere un altro evento
 * Assegna l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **ObjectManipulator** > **bool Enabled** per aggiornare il valore di questa proprietà quando viene attivato l'evento
 * Verifica che la casella di controllo dell'argomento sia **deselezionata**
 * Modificare l' **icona** nell'icona ' Cube with bounds Control '
 
-![Unity con l'oggetto pulsante BoundingBox_Disable selezionato e il componente Button Config Helper configurato](images/mr-learning-base/base-07-section2-step1-3.png)
+![Unity con BoundsControl_Disable oggetto Button selezionato e il componente helper config del pulsante configurato](images/mr-learning-base/base-07-section2-step1-3.png)
 
-Se a questo punto si immette la modalità di gioco e si Abilita il controllo dei limiti facendo clic sul pulsante Abilita, è possibile utilizzare l'interazione vicina o distante per spostare, ruotare e ridimensionare il rettangolo di selezione e utilizzare il pulsante Disabilita per disabilitare di nuovo il rettangolo di selezione:
+Se a questo punto si immette la modalità di gioco e si Abilita il controllo dei limiti facendo clic sul pulsante Abilita, è possibile utilizzare l'interazione vicina o distante per spostare, ruotare e ridimensionare il controllo dei limiti e utilizzare il pulsante Disabilita per disabilitare di nuovo il controllo dei limiti:
 
-![Visualizzazione suddivisa della modalità di riproduzione in Unity con manipolazione del cubo di delimitazione in corso](images/mr-learning-base/base-07-section2-step1-4.png)
+![Visualizzazione split della modalità di riproduzione Unity con controllo dei limiti modificato](images/mr-learning-base/base-07-section2-step1-4.png)
 
-Per ulteriori informazioni sul componente del riquadro e sulle proprietà associate, è possibile visitare la guida del rettangolo di [delimitazione](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html) nel [portale della documentazione di MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+Per ulteriori informazioni sul componente di controllo dei limiti e sulle proprietà associate, è possibile visitare la Guida di [controllo dei limiti](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html) nel [portale della documentazione di MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
 ## <a name="congratulations"></a>Lezione completata
 
-In questa esercitazione hai appreso come abilitare la manipolazione da vicino e da lontano degli oggetti 3D e limitare i tipi di manipolazione consentiti. Si è inoltre appreso come aggiungere un rettangolo di delimitazione intorno agli oggetti 3D per semplificare il controllo della manipolazione degli oggetti.
+In questa esercitazione hai appreso come abilitare la manipolazione da vicino e da lontano degli oggetti 3D e limitare i tipi di manipolazione consentiti. Si è inoltre appreso come aggiungere il controllo dei limiti intorno agli oggetti 3D per semplificare il controllo della manipolazione degli oggetti.
 
 > [!div class="nextstepaction"]
 > [Esercitazione successiva: 8. Uso del tracciamento oculare](mr-learning-base-08.md)

@@ -3,16 +3,16 @@ title: Introduzione a Holographic Remoting per PC
 description: In questo corso viene illustrato come trasmettere in remoto le applicazioni di realtà mista da PC a HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/29/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, holographic remoting per PC, descrizioni comandi, tracciamento oculare
 ms.localizationpriority: high
-ms.openlocfilehash: d8c7de8a93a32107afe67a1d0375612ab6245be9
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5a779ca03921701b2111e4ed5525b6f7bc250070
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581963"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590383"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Introduzione a Holographic Remoting per PC
 
@@ -67,7 +67,7 @@ Segui quindi le istruzioni riportate in [Modifica delle opzioni di visualizzazio
 Scarica e **importa** [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage).
 
 >[!TIP]
-> Per rivedere la procedura di importazione di un pacchetto personalizzato di Unity, puoi fare riferimento alle istruzioni contenute in [Importare Mixed Reality Toolkit](./mr-learning-base-02.md#importing-the-mixed-reality-toolkit).
+> Per un promemoria su come importare un pacchetto personalizzato Unity, è possibile fare riferimento alle istruzioni relative all' [importazione delle risorse dell'esercitazione](mr-learning-base-04.md#importing-the-tutorial-assets) .
 
 Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progetto) avrà un aspetto simile al seguente:
 
@@ -129,9 +129,9 @@ Per ognuno dei pulsanti rimanenti, completa il processo descritto in precedenza 
 
 Ora i pulsanti sono configurati per illustrare il funzionamento del passaggio a un altro modello e la funzionalità di ritaglio. È il momento di aggiungere modelli 3D e gli oggetti di ritaglio allo script.
 
-Per la dimostrazione sono stati forniti sei modelli 3D diversi. Espandere **_ModelParentobject_* _ per esporre questi modelli 3D.
+Sono stati forniti sei modelli 3D diversi per la dimostrazione. Espandi ***ModelParentobject*** per esporre questi modelli 3D.
 
-Con l'oggetto ButtonParent ancora selezionato nella finestra Hierarchy (Gerarchia), individuare nella finestra Inspector (Controllo) il componente _ *View Button Control (Script)* * (Controllo pulsante di visualizzazione - Script) ed espandere la variabile **Models** (Modelli).
+Con l'oggetto ButtonParent ancora selezionato nella finestra Hierarchy (Gerarchia), individua nella finestra Inspector (Controllo) il componente **View Button Control (Script)** (Controllo pulsante di visualizzazione - Script) ed espandi la variabile **Models** (Modelli).
 
 Nel campo **Size** (Dimensione) immetti il numero di modelli 3D che vuoi avere nella scena. In questo caso, 6. Verranno creati i campi per l'aggiunta di nuovi modelli 3D.
 
@@ -169,7 +169,7 @@ In questa sezione esaminerai come abilitare il tracciamento oculare nel tuo prog
 
 ### <a name="1-identify-target-objects-and-associated-tooltips"></a>1. Identificare gli oggetti di destinazione e le descrizioni comandi associate
 
-Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto ModelParent. Espandere **_MarsCuriosity -> Rover_ *_ per trovare cinque parti principali di MarsCuriosityRover: _* POI-Camera**, **POI-Wheels**, **POI-Antenna**, **POI-Spectrometer**, **POI-RUHF Antenna**.
+Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto ModelParent. Espandere ***MarsCuriosity-> Rover** _ per trovare cinque parti principali del MarsCuriosityRover: _ * PDI-camera * *, **poi-Wheels**, **PDI-Antena**, **PDI-spettrometro**, **poi-RUHF antenna**.
 
 * Osserva cinque oggetti descrizione comando corrispondenti associati a parti di MarsCuriosityRover nella finestra Hierarchy (Gerarchia).
 * Configurerai questi oggetti per evidenziare l'esperienza quando guardi le parti di MarsCuriosityRover.

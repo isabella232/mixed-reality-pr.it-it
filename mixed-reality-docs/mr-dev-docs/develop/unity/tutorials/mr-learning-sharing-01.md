@@ -3,16 +3,16 @@ title: Introduzione alle esercitazioni sulle funzionalità multiutente
 description: In questo corso viene illustrato come implementare esperienze multiutente condivise in un'applicazione HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, funzionalità multiutente, Photon, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 7f9164540b6d887dcb43bfd6bfa2cc074ee05ce2
-ms.sourcegitcommit: d9f87635c87627adba7db37834e4627c149f9a28
+ms.openlocfilehash: 90c5b2ee3f25c39fc644aee0fbbf49643f7d2a59
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/05/2021
-ms.locfileid: "99570224"
+ms.locfileid: "99590173"
 ---
 # <a name="1-introduction-to-the-multi-user-capabilities-tutorials"></a>1. Introduzione alle esercitazioni sulle funzionalità multiutente
 

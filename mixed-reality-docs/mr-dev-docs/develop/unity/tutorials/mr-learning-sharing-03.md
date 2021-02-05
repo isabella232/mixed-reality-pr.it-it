@@ -3,16 +3,16 @@ title: Connessione di più utenti
 description: In questo corso viene illustrato come connettere più utenti in un'applicazione di realtà mista per HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, funzionalità multiutente, Photon, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 0c6bf0871836ad7aae9c3906b2042f97ae003ebf
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 58ea52332485a3e0ca460322f6af60266b119ede
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699065"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590193"
 ---
 # <a name="3-connecting-multiple-users"></a>3. Connessione di più utenti
 
@@ -69,7 +69,7 @@ Nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi
 
 ### <a name="2-create-the-avatar"></a>2. Creare l'avatar
 
-Nella finestra del progetto passare alla cartella **assets**  >  **MRTK**  >  **StandardAssets**  >  **Materials** per individuare i materiali MRTK.
+Nella finestra del progetto passare alla cartella **packages**  >  **mixed reality Toolkit Foundation**  >  **SDK**  >  **StandardAssets**  >  **Materials** per individuare i materiali MRTK.
 
 Nella finestra Hierarchy (Gerarchia) fare quindi clic con il pulsante destro del mouse sull'oggetto **PhotonUser** e selezionare **3D Object** > **Sphere** (Oggetto 3D > Sfera) per creare un oggetto sfera come elemento figlio dell'oggetto PhotonUser e configuralo nel modo seguente:
 

@@ -3,16 +3,16 @@ title: Creare un'applicazione Holographic Remoting per PC
 description: In questo corso viene illustrato come creare un'applicazione per PC per usare in remoto un'esperienza di realtà mista da PC a HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, holographic remoting per PC, Visual Studio
 ms.localizationpriority: high
-ms.openlocfilehash: fd357b0b487b948afb6ae15c9e84362e2bc1ef90
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 916a9396c0b29637d5619bac203718e05112b598
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007331"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590303"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2. Creazione di un'applicazione Holographic Remoting per PC
 
@@ -53,11 +53,11 @@ Nella sezione **XR Settings** (Impostazioni XR) selezionare la casella di contro
 
 Dal menu di Unity scegliere File > Build Settings (Impostazioni di compilazione) per visualizzare la finestra corrispondente.
 
-Nella finestra Build Settings (Impostazioni di compilazione) fare clic sul pulsante **_Add Open Scenes_* _ (Aggiungi scene aperte) per aggiungere la scena corrente alle scene. Nell'elenco Build (Compilazione) fare clic sul _*_pulsante Build_*_ (Compila) per aprire la finestra Build Universal Windows Platform (Compilazione UWP):
+Nella finestra Build Settings (Impostazioni di compilazione) fare clic sul pulsante ***Add Open Scenes** _ (Aggiungi scene aperte) per aggiungere la scena corrente alle scene. Nell'elenco compilazione fare clic sul *_pulsante _ compila_* per aprire la finestra di piattaforma UWP (Universal Windows Platform) compilazione:
 
 ![Finestra Build Settings di Unity con la scena aggiunta](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-1.png)
 
-Nella finestra Build Universal Windows Platform (Compilazione UWP) scegliere un percorso adatto per archiviare la compilazione, ad esempio Documenti\MixedRealityLearning. Creare una nuova cartella e assegnarle un nome appropriato, ad esempio PCHolographicRemoting. Fare quindi clic sul pulsante _*_Select Folder_*_ (Seleziona cartella) per avviare il processo di compilazione:
+Nella finestra Build Universal Windows Platform (Compilazione UWP) scegliere un percorso adatto per archiviare la compilazione, ad esempio Documenti\MixedRealityLearning. Creare una nuova cartella e assegnarle un nome appropriato, ad esempio PCHolographicRemoting. Fare quindi clic sul pulsante ***Select Folder*** (Seleziona cartella) per avviare il processo di compilazione:
 
 ![Finestra Build Settings di Unity con la finestra di prompt Select Folder](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-2.png)
 
@@ -78,7 +78,7 @@ Configurare Visual Studio per PC selezionando la configurazione Release, l'archi
 
 ![Visual Studio configurato per Computer locale](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step3-2.png)
 
-Fare clic sul pulsante _*_Computer locale_*_. Viene avviata la compilazione e la distribuzione dell'applicazione nel PC. L'applicazione verrà installata nel PC per impostazione predefinita.
+Fare clic sul pulsante ***Local Machine*** (Computer locale). Viene avviata la compilazione e la distribuzione dell'applicazione nel PC. L'applicazione verrà installata nel PC per impostazione predefinita.
 
 ## <a name="testing-holographic-remoting-remote-application"></a>Test di un'applicazione remota Holographic Remoting
 
@@ -86,7 +86,7 @@ Per connettere l'applicazione PC a HoloLens 2, seguire questa procedura:
 
 ### <a name="1-install-the-remoting-player-application-on-hololens-2-device"></a>1. Installare l'applicazione Remoting Player nel dispositivo HoloLens 2
 
-_ In HoloLens 2 aprire l'app dello Store e cercare "**Remoting Player**".
+* In HoloLens 2 visitare l'app dello Store e cercare "**Remoting Player**".
 * Selezionare l'app **Remoting Player**.
 * Toccare **Install** (Installa) per scaricare e installare l'app.
 

@@ -3,16 +3,16 @@ title: Uso dei comandi vocali
 description: Questa esercitazione illustra come configurare, creare e usare i comandi vocali nelle app di realtà mista con Mixed Reality Toolkit (MRTK).
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, comandi vocali, input vocale
 ms.localizationpriority: high
-ms.openlocfilehash: c052c3501ab34811f33f1f6464c8394669eebe77
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: bb238ee6ca4c657d7e2cb8e3c41f2cdebc7fc0de
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98669483"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590393"
 ---
 # <a name="9-using-speech-commands"></a>9. Uso dei comandi vocali
 
@@ -59,7 +59,7 @@ Nella sezione **Speech Commands** (Comandi vocali) fare clic sul pulsante **+ Ad
 
 ## <a name="controlling-speech-commands"></a>Controllo dei comandi vocali
 
-Nella finestra Project (Progetto) passare alla cartella **Assets** (Asset)  > **MRTK** > **SDK** > **Features** (Funzionalità)  > **UX** > **Prefabs** (Prefab)  > **ToolTip** (Descrizione comando) per individuare i prefab relativi alle descrizioni comando:
+Nella finestra del progetto passare alla cartella **Package**  >  **mixed reality Toolkit Foundation**  >  **SDK**  >  **features**  >    >    >   per individuare le prefabbricate ToolTip:
 
 ![Apertura della cartella delle descrizioni comando](images/mr-learning-base/base-09-section3-step1-1.png)
 

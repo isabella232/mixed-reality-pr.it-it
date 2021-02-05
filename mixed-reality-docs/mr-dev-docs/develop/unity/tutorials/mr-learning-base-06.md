@@ -3,16 +3,16 @@ title: Creazione delle interfacce utente
 description: Questa esercitazione illustra come usare Mixed Reality Toolkit (MRTK) per creare interfacce utente statiche e dinamiche.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, prefab, ologrammi, descrizioni comandi
 ms.localizationpriority: high
-ms.openlocfilehash: 4fe4b016be36e04abffeb415f690cc0c01a6f767
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 3b32faab4be13d42f228659285244c206680466e
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98669514"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590553"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Creazione delle interfacce utente
 
@@ -86,7 +86,7 @@ e il pulsante **Explode** per attivare e disattivare la visualizzazione esplosa:
 
 ## <a name="creating-a-dynamic-menu-that-follows-the-user"></a>Creazione di un menu dinamico che segue l'utente
 
-Nella finestra Project (Progetto) passare alla cartella **Assets** (Asset)  > **MRTK** > **SDK** > **Features** (Funzionalità)  > **UX** > **Prefabs** (Prefab)  > **Menus** (Menu), fare clic e trascinare il prefab **NearMenu4x1** nella finestra Hierarchy (Gerarchia), impostare il campo **Position** (Posizione) della trasformazione su X = 0, Y = -0.4, Z = 0 e configurare il prefab come indicato di seguito:
+Nella finestra del progetto passare alla cartella **packages**  >  **mixed reality Toolkit Foundation**  >  **SDK**  >  **features** UX Predicates  >    >    >  **Menus** , fare clic e trascinare **NearMenu4x1** prefabbricate nella finestra gerarchia, impostare la relativa **posizione** Transform su X = 0, Y =-0,4, Z = 0 e configurarla come indicato di seguito:
 
 * Verifica che per **Tracked Target Type** (Tipo destinazione tracciata) del componente **SolverHandler** sia impostato il valore **Head** (Testa)
 * Seleziona la casella di controllo accanto al componente **RadialView** in modo che sia abilitato per impostazione predefinita
@@ -162,7 +162,7 @@ Quindi configura il componente **TextMeshPro - Text** (TextMeshPro - Testo) come
 
 ## <a name="adding-tooltips"></a>Aggiunta di descrizioni comandi
 
-Nella finestra Project (Progetto) passa alla cartella **Assets** (Asset)  > **MRTK** > **SDK** > **Features** (Funzionalità)  > **UX** > **Prefabs** (Prefab)  > **ToolTip** (Descrizione comando) per individuare i prefab relativi alle descrizioni comandi:
+Nella finestra del progetto passare alla cartella **packages**  >  **mixed reality Toolkit Foundation**  >  **SDK**  >  **features**  >    >    >   per individuare le prefabbricate ToolTip:
 
 ![Finestra Project di Unity con la cartella ToolTips selezionata](images/mr-learning-base/base-06-section4-step1-1.png)
 

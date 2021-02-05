@@ -3,16 +3,16 @@ title: Aggiunta di una modalità offline per la traduzione locale da voce a test
 description: In questo corso viene illustrato come aggiungere la modalità offline per la conversione locale della voce in testo scritto in applicazioni di realtà mista.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 06/27/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, riconoscimento vocale, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: db495d6cdfa99721e68b4004535a5411bde9b17d
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 2e7a48dc4bb64eb177e6fa290f4918345c3d642f
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010081"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590153"
 ---
 # <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a>2. Aggiunta di una modalità offline per la conversione locale della voce in testo scritto
 

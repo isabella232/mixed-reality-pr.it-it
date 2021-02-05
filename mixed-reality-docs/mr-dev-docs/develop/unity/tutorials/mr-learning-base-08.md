@@ -3,16 +3,16 @@ title: Uso del tracciamento oculare
 description: Questa esercitazione illustra come usare il tracciamento oculare nelle app di realtà mista con Mixed Reality Toolkit (MRTK).
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, tracciamento oculare
 ms.localizationpriority: high
-ms.openlocfilehash: 5efe1c54d9e3b4096dfec4221e4ce04e7370ca47
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: e4104dfd0d7b27425217c8cb92fa36c807053081
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98669508"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590373"
 ---
 # <a name="8-using-eye-tracking"></a>8. Uso del tracciamento oculare
 

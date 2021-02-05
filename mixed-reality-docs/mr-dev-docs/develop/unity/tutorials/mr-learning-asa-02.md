@@ -3,16 +3,16 @@ title: Introduzione ad Ancoraggi nello spazio di Azure
 description: In questo corso viene illustrato come usare Ancoraggi nello spazio di Azure per ancorare oggetti in un'applicazione di realtà mista.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 60d4ae99629f0caf7e5cc7e73b05ed35ee3f4ac4
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: a0621403ec3c4d8d0fa6f13672530756bcb6da39
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699215"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590748"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Introduzione ad Ancoraggi nello spazio di Azure
 
@@ -58,7 +58,7 @@ Scarica e **importa** i pacchetti personalizzati di Unity seguenti, **nell'ordin
 
 
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.5.3/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage)
 
 Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progetto) avrà un aspetto simile al seguente:
 
@@ -68,7 +68,7 @@ Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progett
 > Se vengono visualizzati avvisi CS0618 che indicano che 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' è obsoleto, è possibile ignorare questi avvisi.
 
 > [!TIP]
-> Per rivedere la procedura di importazione di un pacchetto personalizzato di Unity, puoi fare riferimento alle istruzioni contenute in [Importazione di Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit).
+> Per un promemoria su come importare un pacchetto personalizzato Unity, è possibile fare riferimento alle istruzioni relative all' [importazione delle risorse dell'esercitazione](mr-learning-base-04.md#importing-the-tutorial-assets) .
 
 ## <a name="preparing-the-scene"></a>Preparazione della scena
 
@@ -140,6 +140,7 @@ Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **ParentAnchor** e quin
 
 * Nel campo **Spatial Anchors Account ID** (ID account Ancoraggi nello spazio) incolla il valore di **Account ID** (ID account) del tuo account di Ancoraggi nello spazio di Azure
 * Nel campo **Spatial Anchors Account Key** (Chiave account Ancoraggi nello spazio) incolla il valore di **Access Key** (Chiave di accesso) primario o secondario del tuo account di Ancoraggi nello spazio di Azure
+* Nel campo del **dominio dell'account ancoraggi spaziali** incollare il **dominio dell'account** dall'account degli ancoraggi spaziali di Azure
 
 ![Unity con Spatial Anchor Manager configurato](images/mr-learning-asa/asa-02-section6-step1-1.png)
 

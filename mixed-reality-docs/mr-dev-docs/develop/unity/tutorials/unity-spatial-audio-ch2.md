@@ -3,15 +3,15 @@ title: Esercitazioni audio spaziali-2. Spazializzazione dei suoni di interazione
 description: Aggiungere un pulsante al progetto e spatialize i suoni di interazione dei pulsanti.
 author: kegodin
 ms.author: v-hferrone
-ms.date: 12/01/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, Unity, esercitazione, hololens2, audio spaziale, MRTK, Toolkit per realtà mista, UWP, Windows 10, HRTF, funzione di trasferimento correlato alla testa, riverbero, Microsoft Spatializer, prefabbricati, curva del volume
-ms.openlocfilehash: e4b2ed99f56fea82b1c72e4fce5205c14e1d3533
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 12d159cb162cbf136483f7be94b0d297319a0737
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578492"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590763"
 ---
 # <a name="2-spatializing-button-interaction-sounds"></a>2. Spazializzazione dei suoni di interazione del pulsante
 
@@ -25,7 +25,7 @@ In questa esercitazione si apprenderà come spatialize i suoni di interazione de
 
 ## <a name="add-a-button"></a>Aggiungere un pulsante
 
-Per aggiungere il prefabbricato dei pulsanti, nella finestra del **progetto** selezionare **Asset** e digitare "PressableButtonHoloLens2" nella barra di ricerca.
+Per aggiungere il prefabbricato dei pulsanti, nella finestra del **progetto** selezionare **pacchetti** e digitare "PressableButtonHoloLens2" nella barra di ricerca.
 
 ![Prefabbricato Button negli asset](images/spatial-audio/spatial-audio-02-section1-step1-1.png)
 

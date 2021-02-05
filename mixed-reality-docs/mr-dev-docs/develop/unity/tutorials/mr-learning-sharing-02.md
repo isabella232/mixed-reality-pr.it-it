@@ -3,16 +3,16 @@ title: Configurazione di Photon Unity Networking
 description: In questo corso viene illustrato come implementare Photon Unity Network in un'applicazione di realtà mista per HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, funzionalità multiutente, Photon, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 1c47da28b3ccdc706f372749f265ac0329a2327b
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 372cb7c9516a994cb7c3da1efb6cade792e862d1
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699145"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590313"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Configurazione di Photon Unity Networking
 
@@ -82,7 +82,7 @@ Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progett
 ![Finestre Hierarchy, Scene e Project di Unity dopo l'importazione degli asset dell'esercitazione](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
 
 > [!TIP]
-> Per rivedere la procedura di importazione di un pacchetto personalizzato di Unity, è possibile fare riferimento alle istruzioni riportate in [Importazione di Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit).
+> Per un promemoria su come importare un pacchetto personalizzato Unity, è possibile fare riferimento alle istruzioni relative all' [importazione delle risorse dell'esercitazione](mr-learning-base-04.md#importing-the-tutorial-assets) .
 
 > [!NOTE]
 > Dopo aver importato il pacchetto di asset dell'esercitazione MultiUserCapabilities, nella finestra della console verranno visualizzati alcuni errori [CS0246](/dotnet/csharp/language-reference/compiler-messages/cs0246) che indicano che manca il tipo o lo spazio dei nomi. Si tratta di un comportamento previsto, che verrà risolto nella prossima sezione quando verranno importati gli asset di PUN.
