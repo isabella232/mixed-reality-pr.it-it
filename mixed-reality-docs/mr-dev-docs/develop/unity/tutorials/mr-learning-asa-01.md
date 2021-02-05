@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, ios, android, Windows 10, ARCore, macOS, Android Build Support, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 9529b12968c5cbc985f4af8eb0053d277eb00c03
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: d973b114e87d060f66ff2033ffb1e54b027b2cf7
+ms.sourcegitcommit: d9f87635c87627adba7db37834e4627c149f9a28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699030"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99570244"
 ---
 # <a name="1-introduction-to-the-azure-spatial-anchors-tutorials"></a>1. Introduzione alle esercitazioni su Ancoraggi nello spazio di Azure
 
@@ -50,7 +50,7 @@ Esercitazioni di questa serie:
   * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub Unity</a> con unity 2019 LTS installato e il modulo di supporto Build iOS aggiunto
 
 > [!CAUTION]
-> La versione consigliata del Toolkit per la realtà mista per questa serie di esercitazioni è MRTK 2.5.1.
+> La versione consigliata del Toolkit per la realtà mista per questa serie di esercitazioni è MRTK 2.5.3.
 
 > [!CAUTION]
 > La versione consigliata di Unity per questa serie di esercitazioni è Unity 2019 LTS, che sostituisce tutti i requisiti di versione di Unity indicati nei prerequisiti collegati in precedenza.

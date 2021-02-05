@@ -7,12 +7,12 @@ ms.date: 01/27/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: aggiornamento, strumenti, attività iniziali, nozioni di base, unity, visual studio, toolkit, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, installazione, Windows, HoloLens, emulatore, unreal, openxr
-ms.openlocfilehash: b9d54edb251cfe22d4f5fbea6fa8c923f6ff2d69
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: 0aad81ddd625467dd9159232d590b1a4bf68d06b
+ms.sourcegitcommit: d9f87635c87627adba7db37834e4627c149f9a28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99244610"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99570254"
 ---
 # <a name="welcome-to-the-mixed-reality-feature-tool"></a>Strumento per la funzionalità di realtà mista
 
@@ -33,9 +33,11 @@ Prima di poter eseguire lo strumento per la funzionalità di realtà mista, è n
 > [!NOTE]
 > Lo strumento per le funzionalità di realtà mista attualmente viene eseguito solo in Windows, ma il supporto MacOS sarà presto disponibile.
 
+## <a name="download"></a>Scarica 
+
 Dopo aver configurato l'ambiente:
 
-* Scaricare la versione più recente dello strumento per le funzionalità di realtà mista dall' [area download Microsoft](https://aka.ms/MRFeatureTool).
+* [Scaricare la versione più recente dello strumento per le funzionalità di realtà mista](https://aka.ms/MRFeatureTool) dall'area download Microsoft.
 * Al termine del download, decomprimere il file e salvarlo sul desktop
     * Si consiglia di creare un collegamento al file eseguibile per un accesso più rapido
 
