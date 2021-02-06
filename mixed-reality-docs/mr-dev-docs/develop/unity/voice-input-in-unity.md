@@ -6,37 +6,40 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Input vocale, KeywordRecognizer, GrammarRecognizer, microfono, dettatura, voce, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare realtà virtuale, MRTK, Toolkit realtà mista
-ms.openlocfilehash: c6364b190ca90c5e6faf7fb8ef79314134e93cfc
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 7268a4df9c7fce03029937c72540ed274574067d
+ms.sourcegitcommit: 8c3af63fb49494f75c8ab46236fc3dd8533c1e9d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583728"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99606116"
 ---
 # <a name="voice-input-in-unity"></a>Input vocale in Unity
 
->[!NOTE]
->Anziché le informazioni riportate di seguito, si consiglia di usare il plug-in di Unity per l'SDK cognitive Speech Services che offre risultati di accuratezza vocale molto migliori e consente di accedere facilmente a decodifica di sintesi vocale e funzionalità avanzate di riconoscimento vocale, ad esempio dialogo, interazione basata su finalità, traduzione, sintesi vocale e riconoscimento vocale linguaggio naturale. Trovare l'esempio e la documentazione qui: https://docs.microsoft.com//azure/cognitive-services/speech-service/quickstart-csharp-unity   
+> [!CAUTION]
+> Prima di iniziare, provare a usare il plug-in di Unity per cognitive Speech Services SDK. Il plug-in offre risultati di accuratezza del riconoscimento vocale e accesso facile alla decodifica di sintesi vocale, oltre a funzionalità avanzate di riconoscimento vocale come finestre di dialogo, interazione basata su finalità, traduzione, sintesi di sintesi vocale e riconoscimento vocale in linguaggio naturale. Per iniziare, vedere l' [esempio e la documentazione](https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-csharp-unity).
 
-Unity espone tre modi per aggiungere [input vocale](../../design/voice-input.md) all'applicazione Unity.
+Unity espone tre modi per aggiungere [input vocale](../../design/voice-input.md) all'applicazione Unity, i primi due dei quali sono i tipi di PhraseRecognizer:
+* `KeywordRecognizer`Fornisce all'app una matrice di comandi stringa da ascoltare
+* `GrammarRecognizer`Fornisce all'app un file SRGS che definisce una grammatica specifica da ascoltare
+* `DictationRecognizer`Consente all'app di restare in ascolto di qualsiasi parola e fornire all'utente una nota o un'altra visualizzazione del riconoscimento vocale
 
-Con KeywordRecognizer (uno dei due tipi di PhraseRecognizers), all'app può essere assegnata una matrice di comandi stringa da ascoltare. Con GrammarRecognizer (l'altro tipo di PhraseRecognizer), all'app può essere assegnato un file SRGS che definisce una grammatica specifica per l'ascolto. Con la DictationRecognizer, l'app può restare in ascolto di qualsiasi parola e fornire all'utente una nota o un'altra visualizzazione del riconoscimento vocale.
-
->[!NOTE]
->Solo i riconoscimenti di dettatura o di frase possono essere gestiti in una sola volta. Ciò significa che se GrammarRecognizer o KeywordRecognizer è attivo, un DictationRecognizer non può essere attivo e viceversa.
+> [!NOTE]
+> La dettatura e il riconoscimento di frasi non possono essere gestiti contemporaneamente. Se GrammarRecognizer o KeywordRecognizer è attivo, un DictationRecognizer non può essere attivo e viceversa.
 
 ## <a name="enabling-the-capability-for-voice"></a>Abilitazione della funzionalità per la voce
 
 Per usare l'input vocale, è necessario dichiarare la funzionalità **Microphone** per un'app.
-1. Nell'editor di Unity passare a Impostazioni lettore passando a "modifica > impostazioni progetto > lettore"
-2. Selezionare nella scheda "Windows Store"
-3. Nella sezione "impostazioni di pubblicazione > funzionalità" controllare la funzionalità del **microfono**
+1. Nell'editor di Unity passare a **modifica > impostazioni progetto > lettore**
+2. Selezionare la scheda **Windows Store**
+3. Nella sezione **impostazioni di pubblicazione > funzionalità** selezionare la funzionalità del **microfono**
+4. Concedere le autorizzazioni all'app per l'accesso al microfono nel dispositivo HoloLens
+    * Verrà richiesto di eseguire questa operazione all'avvio del dispositivo, ma se è stato fatto clic su "No" è possibile modificare le autorizzazioni nelle impostazioni del dispositivo
 
 ## <a name="phrase-recognition"></a>Riconoscimento di frasi
 
 Per consentire all'app di restare in ascolto di frasi specifiche pronunciate dall'utente, è necessario eseguire le operazioni seguenti:
-1. Specificare le frasi da ascoltare tramite KeywordRecognizer o GrammarRecognizer
-2. Gestire l'evento OnPhraseRecognized ed eseguire un'azione corrispondente alla frase riconosciuta
+1. Specificare le frasi da ascoltare tramite `KeywordRecognizer` o `GrammarRecognizer`
+2. Gestire l' `OnPhraseRecognized` evento ed eseguire un'azione corrispondente alla frase riconosciuta
 
 ### <a name="keywordrecognizer"></a>KeywordRecognizer
 
@@ -58,7 +61,7 @@ KeywordRecognizer keywordRecognizer;
 Dictionary<string, System.Action> keywords = new Dictionary<string, System.Action>();
 ```
 
-Aggiungere ora una parola chiave al dizionario, ad esempio in un metodo Start (). In questo esempio viene aggiunta la parola chiave "Activate":
+Aggiungere ora una parola chiave al dizionario, ad esempio in un `Start()` metodo. In questo esempio viene aggiunta la parola chiave "Activate":
 
 ```
 //Create keywords for keyword recognizer
@@ -74,7 +77,7 @@ Creare la parola chiave Recognizer e indicare cosa si vuole riconoscere:
 keywordRecognizer = new KeywordRecognizer(keywords.Keys.ToArray());
 ```
 
-Registrati ora per l'evento OnPhraseRecognized
+Ora registrarsi per l' `OnPhraseRecognized` evento
 
 ```
 keywordRecognizer.OnPhraseRecognized += KeywordRecognizer_OnPhraseRecognized;
@@ -113,20 +116,20 @@ Una volta completata la grammatica SRGS, questa si trova nel progetto in una [ca
 <PROJECT_ROOT>/Assets/StreamingAssets/SRGS/myGrammar.xml
 ```
 
-Creare un GrammarRecognizer e passargli il percorso del file SRGS:
+Creare un oggetto `GrammarRecognizer` e passargli il percorso del file SRGS:
 
 ```
 private GrammarRecognizer grammarRecognizer;
 grammarRecognizer = new GrammarRecognizer(Application.streamingDataPath + "/SRGS/myGrammar.xml");
 ```
 
-Registrati ora per l'evento OnPhraseRecognized
+Ora registrarsi per l' `OnPhraseRecognized` evento
 
 ```
 grammarRecognizer.OnPhraseRecognized += grammarRecognizer_OnPhraseRecognized;
 ```
 
-Si otterrà un callback contenente le informazioni specificate nella grammatica SRGS, che è possibile gestire in modo appropriato. La maggior parte delle informazioni importanti verranno fornite nella matrice semanticMeanings.
+Si otterrà un callback contenente le informazioni specificate nella grammatica SRGS, che è possibile gestire in modo appropriato. La maggior parte delle informazioni importanti verranno fornite nell' `semanticMeanings` Array.
 
 ```
 private void Grammar_OnPhraseRecognized(PhraseRecognizedEventArgs args)
@@ -147,19 +150,22 @@ grammarRecognizer.Start();
 **Spazio dei nomi:** *UnityEngine. Windows. Speech*<br>
 **Tipi**: *DictationRecognizer*, *SpeechError*, *SpeechSystemStatus*
 
-Usare DictationRecognizer per convertire il riconoscimento vocale dell'utente in testo. DictationRecognizer espone la funzionalità di [Dettatura](../../design/voice-input.md#dictation) e supporta la registrazione e l'ascolto di eventi di ipotesi completati e frasi completate, in modo che sia possibile inviare commenti e suggerimenti all'utente sia durante la loro pronuncia che in seguito. I metodi Start () e stop () rispettivamente abilitano e disabilitano il riconoscimento della dettatura. Una volta terminato con il riconoscimento, è necessario eliminarlo utilizzando il metodo Dispose () per rilasciare le risorse utilizzate. Queste risorse verranno rilasciate automaticamente durante Garbage Collection a un costo aggiuntivo in termini di prestazioni, se non vengono rilasciate prima.
+Usare `DictationRecognizer` per convertire il riconoscimento vocale dell'utente in testo. DictationRecognizer espone la funzionalità di [Dettatura](../../design/voice-input.md#dictation) e supporta la registrazione e l'ascolto di eventi di ipotesi completati e frasi completate, in modo che sia possibile inviare commenti e suggerimenti all'utente sia durante la loro pronuncia che in seguito. `Start()` i `Stop()` metodi e consentono rispettivamente di abilitare e disabilitare il riconoscimento della dettatura. Una volta terminato con il riconoscimento, è necessario eliminarlo utilizzando `Dispose()` per rilasciare le risorse utilizzate. Queste risorse verranno rilasciate automaticamente durante Garbage Collection a un costo aggiuntivo in termini di prestazioni, se non vengono rilasciate prima.
 
 Per iniziare a usare la dettatura sono necessari solo alcuni passaggi:
-1. Creare un nuovo DictationRecognizer
+1. Crea nuovo `DictationRecognizer`
 2. Gestisci eventi di dettatura
 3. Avviare il DictationRecognizer
 
 ### <a name="enabling-the-capability-for-dictation"></a>Abilitazione della funzionalità per la dettatura
 
-La funzionalità "client Internet", insieme alla funzionalità "microfono" indicata in precedenza, deve essere dichiarata per poter sfruttare la dettatura per un'app.
-1. Nell'editor di Unity passare alle impostazioni del lettore passando alla pagina "Edit > Project Settings > Player"
-2. Selezionare nella scheda "Windows Store"
-3. Nella sezione "impostazioni di pubblicazione > funzionalità" controllare la funzionalità **internetClient**
+Le funzionalità client e **microfono** **Internet** devono essere dichiarate affinché un'app usi la dettatura:
+1. Nell'editor di Unity passare a **Edit > Project Settings > Player**
+2. Selezionare nella scheda **Windows Store**
+3. Nella sezione **impostazioni di pubblicazione > funzionalità** selezionare la funzionalità **internetClient**
+    * Facoltativamente, se non è già stato abilitato il microfono, controllare la funzionalità del **microfono**
+4. Concedere all'app le autorizzazioni per l'accesso al microfono nel dispositivo HoloLens, se non è già stato fatto
+    * Verrà richiesto di eseguire questa operazione all'avvio del dispositivo, ma se è stato fatto clic su "No" è possibile modificare le autorizzazioni nelle impostazioni del dispositivo
 
 ### <a name="dictationrecognizer"></a>DictationRecognizer
 
@@ -170,16 +176,16 @@ dictationRecognizer = new DictationRecognizer();
 ```
 
 Sono disponibili quattro eventi di dettatura che è possibile sottoscrivere e gestire per implementare il comportamento di dettatura.
-1. DictationResult
-2. DictationComplete
-3. DictationHypothesis
-4. DictationError
+1. `DictationResult`
+2. `DictationComplete`
+3. `DictationHypothesis`
+4. `DictationError`
 
 **DictationResult**
 
 Questo evento viene generato dopo la sospensione dell'utente, in genere alla fine di una frase. La stringa riconosciuta completa viene restituita qui.
 
-Prima di tutto, sottoscrivere l'evento DictationResult:
+Prima di tutto, sottoscrivere l' `DictationResult` evento:
 
 ```
 dictationRecognizer.DictationResult += DictationRecognizer_DictationResult;
@@ -198,7 +204,7 @@ private void DictationRecognizer_DictationResult(string text, ConfidenceLevel co
 
 Questo evento viene generato continuamente mentre l'utente sta parlando. Quando il riconoscimento è in ascolto, fornisce il testo di ciò che è stato udito finora.
 
-Prima di tutto, sottoscrivere l'evento DictationHypothesis:
+Prima di tutto, sottoscrivere l' `DictationHypothesis` evento:
 
 ```
 dictationRecognizer.DictationHypothesis += DictationRecognizer_DictationHypothesis;
@@ -217,7 +223,7 @@ private void DictationRecognizer_DictationHypothesis(string text)
 
 Questo evento viene generato quando il riconoscimento viene arrestato, da Stop () chiamato, da un timeout che si verifica o da un altro errore.
 
-Prima di tutto, sottoscrivere l'evento DictationComplete:
+Prima di tutto, sottoscrivere l' `DictationComplete` evento:
 
 ```
 dictationRecognizer.DictationComplete += DictationRecognizer_DictationComplete;
@@ -236,7 +242,7 @@ private void DictationRecognizer_DictationComplete(DictationCompletionCause caus
 
 Questo evento viene generato quando si verifica un errore.
 
-Prima di tutto, sottoscrivere l'evento DictationError:
+Prima di tutto, sottoscrivere l' `DictationError` evento:
 
 ```
 dictationRecognizer.DictationError += DictationRecognizer_DictationError;
@@ -268,9 +274,9 @@ dictationRecognizer.Dispose();
 ```
 
 **Suggerimenti**
-* I metodi Start () e stop () rispettivamente abilitano e disabilitano il riconoscimento della dettatura.
-* Una volta terminato con il riconoscimento, è necessario eliminarlo utilizzando il metodo Dispose () per rilasciare le risorse utilizzate. Queste risorse verranno rilasciate automaticamente durante Garbage Collection a un costo aggiuntivo in termini di prestazioni, se non vengono rilasciate prima.
-* I timeout si verificano dopo un determinato periodo di tempo. È possibile verificare questi timeout nell'evento DictationComplete. È necessario tenere presenti due timeout:
+* `Start()` i `Stop()` metodi e consentono rispettivamente di abilitare e disabilitare il riconoscimento della dettatura.
+* Una volta terminato con il riconoscimento, è necessario eliminarlo utilizzando `Dispose()` per rilasciare le risorse utilizzate. Queste risorse verranno rilasciate automaticamente durante Garbage Collection a un costo aggiuntivo in termini di prestazioni, se non vengono rilasciate prima.
+* I timeout si verificano dopo un determinato periodo di tempo. È possibile verificare la presenza di questi timeout nell' `DictationComplete` evento. È necessario tenere presenti due timeout:
    1. Se il riconoscimento viene avviato e non viene sentito alcun audio per i primi cinque secondi, si verifica il timeout.
    2. Se il riconoscimento ha dato un risultato, ma in questo caso rileva il silenzio per 20 secondi, si verifichi un timeout.
 
@@ -282,7 +288,7 @@ Se si vuole usare sia il riconoscimento delle frasi che la dettatura nell'app, �
 PhraseRecognitionSystem.Shutdown();
 ```
 
-Per ripristinare lo stato precedente di tutti i riconoscitori, dopo l'arresto di DictationRecognizer, è possibile chiamare:
+È possibile chiamare `Restart()` per ripristinare lo stato precedente di tutti i riconoscitori dopo l'arresto di DictationRecognizer:
 
 ```
 PhraseRecognitionSystem.Restart();
@@ -290,16 +296,11 @@ PhraseRecognitionSystem.Restart();
 
 È anche possibile avviare solo un KeywordRecognizer, che riavvia anche il PhraseRecognitionSystem.
 
-## <a name="using-the-microphone-helper"></a>Uso dell'helper del microfono
-
-Il Toolkit di realtà mista in GitHub contiene una classe helper del microfono per suggerire agli sviluppatori se è presente un microfono utilizzabile nel sistema. Uno di questi casi è quello in cui si vuole controllare se è presente il microfono nel sistema prima di visualizzare gli hint di interazione vocale nell'applicazione.
-
-Lo script Helper Microphone è disponibile nella [cartella input/script/Utilities](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/MicrophoneHelper.cs). Il repository GitHub contiene anche un [piccolo esempio](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scripts/MicrophoneHelperSample.cs) che illustra come usare l'helper.
-
 ## <a name="voice-input-in-mixed-reality-toolkit"></a>Input vocale nel Toolkit per realtà mista
-È possibile trovare gli esempi dell'input vocale in questa scena.
 
-- [HoloToolkit-Examples/input/Scenes/SpeechInputSource. Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scenes/SpeechInputSource.unity)
+Gli esempi di MRTK per l'input vocale sono disponibili nelle scene demo seguenti:
+* [Dettatura](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/Input/Scenes/Dictation)
+* [Voce](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/Input/Scenes/Speech)
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 

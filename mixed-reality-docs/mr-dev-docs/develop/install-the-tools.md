@@ -7,20 +7,22 @@ ms.date: 01/13/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: aggiornamento, strumenti, attività iniziali, nozioni di base, unity, visual studio, toolkit, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, installazione, Windows, HoloLens, emulatore, unreal, openxr
-ms.openlocfilehash: c45fa347768e5d35441f2c1fd59da815a80ec707
-ms.sourcegitcommit: 4b6815605e2ea3830052baed38df21af354d2f9b
-ms.translationtype: HT
+ms.openlocfilehash: 0b952922c7723bf0e2c87ddb7fed9a896d65e833
+ms.sourcegitcommit: 8c3af63fb49494f75c8ab46236fc3dd8533c1e9d
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98166776"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99606126"
 ---
 # <a name="install-the-tools"></a>Installare gli strumenti
 
 Acquisisci gli strumenti necessari per creare applicazioni per visori VR immersive di Windows Mixed Reality e Microsoft HoloLens. Non è disponibile un SDK separato per lo sviluppo Windows Mixed Reality. Userai Visual Studio con Windows 10 SDK.
 
-Non disponi di un dispositivo di realtà mista? Puoi installare l'[emulatore di HoloLens](platform-capabilities-and-apis/using-the-hololens-emulator.md) per testare alcune funzionalità delle app di realtà mista senza HoloLens. Puoi anche usare il [simulatore Windows Mixed Reality](platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) per testare le tue app di realtà mista per visori VR immersive. Se si usa Unity, è possibile usare la simulazione di input di [Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity) per testare vari tipi di interazioni di input, ad esempio attraverso il tracciamento della mano e il tracciamento oculare.
+Non disponi di un dispositivo di realtà mista? Puoi installare l'[emulatore di HoloLens](platform-capabilities-and-apis/using-the-hololens-emulator.md) per testare alcune funzionalità delle app di realtà mista senza HoloLens. Puoi anche usare il [simulatore Windows Mixed Reality](platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) per testare le tue app di realtà mista per visori VR immersive. 
 
-Il modo più semplice per iniziare a creare app di realtà mista consiste nell'installare il motore di gioco Unity. Se invece vuoi usare un motore personalizzato, puoi anche creare app in DirectX.
+Si consiglia di installare il motore di gioco Unity o Unreal come modo più semplice per iniziare a creare app per realtà miste. Se invece vuoi usare un motore personalizzato, puoi anche creare app in DirectX.
+
+Se si usa Unity, è possibile usare il [Toolkit di realtà mista per](https://github.com/Microsoft/MixedRealityToolkit-Unity)la simulazione di input di Unity per testare vari tipi di interazioni di input, ad esempio il rilevamento manuale e l'input di rilevamento degli occhi. Per i progetti Unreal, usare il [plug-in degli strumenti UX](https://github.com/microsoft/MixedReality-UXTools-Unreal) per testare le interazioni di input comuni e le funzionalità dell'esperienza utente.
 
 >[!TIP]
 >Contrassegna questa pagina e controllala periodicamente per tenerti aggiornato sulla versione più recente di ogni strumento consigliato per lo sviluppo della realtà mista.
