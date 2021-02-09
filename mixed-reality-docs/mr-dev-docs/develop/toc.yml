@@ -116,54 +116,56 @@
                   href: unity/tutorials/mr-learning-pc-holographic-remoting-02.md
         - name: Esercitazioni per HoloLens (prima generazione) e per i visori VR immersive
           items:
-            - name: 'MR Basics 100: Introduzione a Unity'
-              href: unity/tutorials/holograms-100.md
-            - name: 'MR Basics 101: Progetto completo con dispositivo'
-              href: unity/tutorials/holograms-101.md
-            - name: 'MR Basics 101E: Progetto completo con emulatore'
-              href: unity/tutorials/holograms-101e.md
-            - name: 'MR Input 210: Sguardo fisso'
-              href: unity/tutorials/holograms-210.md
-            - name: 'MR Input 211: Gesto'
-              href: unity/tutorials/holograms-211.md
-            - name: 'MR Input 212: Voce'
-              href: unity/tutorials/holograms-212.md
-            - name: 'MR Spatial 220: Audio spaziale'
-              href: unity/tutorials/holograms-220.md
-            - name: 'MR Spatial 230: Mapping spaziale'
-              href: unity/tutorials/holograms-230.md
-            - name: 'MR Sharing 240: Più dispositivi HoloLens'
-              href: unity/tutorials/holograms-240.md
-        - name: Esercitazioni per realtà mista e servizi di Azure
-          items:
-            - name: 'MR and Azure 301: Traduzione'
-              href: unity/tutorials/mr-azure-301.md
-            - name: 'MR and Azure 302: Visione artificiale'
-              href: unity/tutorials/mr-azure-302.md
-            - name: 'MR and Azure 302b: Visione personalizzata'
-              href: unity/tutorials/mr-azure-302b.md
-            - name: 'MR and Azure 303: Comprensione del linguaggio naturale'
-              href: unity/tutorials/mr-azure-303.md
-            - name: 'MR and Azure 304: Riconoscimento volto'
-              href: unity/tutorials/mr-azure-304.md
-            - name: 'MR and Azure 305: Funzioni e Archiviazione'
-              href: unity/tutorials/mr-azure-305.md
-            - name: 'MR and Azure 306: Streaming di video'
-              href: unity/tutorials/mr-azure-306.md
-            - name: 'MR and Azure 307: Machine Learning'
-              href: unity/tutorials/mr-azure-307.md
-            - name: 'MR and Azure 308: Notifiche tra più dispositivi'
-              href: unity/tutorials/mr-azure-308.md
-            - name: 'MR and Azure 309: Application Insights'
-              href: unity/tutorials/mr-azure-309.md
-            - name: 'MR and Azure 310: Rilevamento oggetti'
-              href: unity/tutorials/mr-azure-310.md
-            - name: 'MR and Azure 311: Microsoft Graph'
-              href: unity/tutorials/mr-azure-311.md
-            - name: 'MR and Azure 312: Integrazione di bot'
-              href: unity/tutorials/mr-azure-312.md
-            - name: 'MR and Azure 313: Servizio hub IoT'
-              href: unity/tutorials/mr-azure-301.md
+            - name: Funzionalità della realtà mista
+              items:
+                - name: 'MR Basics 100: Introduzione a Unity'
+                  href: unity/tutorials/holograms-100.md
+                - name: 'MR Basics 101: Progetto completo con dispositivo'
+                  href: unity/tutorials/holograms-101.md
+                - name: 'MR Basics 101E: Progetto completo con emulatore'
+                  href: unity/tutorials/holograms-101e.md
+                - name: 'MR Input 210: Sguardo fisso'
+                  href: unity/tutorials/holograms-210.md
+                - name: 'MR Input 211: Gesto'
+                  href: unity/tutorials/holograms-211.md
+                - name: 'MR Input 212: Voce'
+                  href: unity/tutorials/holograms-212.md
+                - name: 'MR Spatial 220: Audio spaziale'
+                  href: unity/tutorials/holograms-220.md
+                - name: 'MR Spatial 230: Mapping spaziale'
+                  href: unity/tutorials/holograms-230.md
+                - name: 'MR Sharing 240: Più dispositivi HoloLens'
+                  href: unity/tutorials/holograms-240.md
+            - name: Realtà mista e servizi di Azure
+              items:
+                - name: 'MR and Azure 301: Traduzione'
+                  href: unity/tutorials/mr-azure-301.md
+                - name: 'MR and Azure 302: Visione artificiale'
+                  href: unity/tutorials/mr-azure-302.md
+                - name: 'MR and Azure 302b: Visione personalizzata'
+                  href: unity/tutorials/mr-azure-302b.md
+                - name: 'MR and Azure 303: Comprensione del linguaggio naturale'
+                  href: unity/tutorials/mr-azure-303.md
+                - name: 'MR and Azure 304: Riconoscimento volto'
+                  href: unity/tutorials/mr-azure-304.md
+                - name: 'MR and Azure 305: Funzioni e Archiviazione'
+                  href: unity/tutorials/mr-azure-305.md
+                - name: 'MR and Azure 306: Streaming di video'
+                  href: unity/tutorials/mr-azure-306.md
+                - name: 'MR and Azure 307: Machine Learning'
+                  href: unity/tutorials/mr-azure-307.md
+                - name: 'MR and Azure 308: Notifiche tra più dispositivi'
+                  href: unity/tutorials/mr-azure-308.md
+                - name: 'MR and Azure 309: Application Insights'
+                  href: unity/tutorials/mr-azure-309.md
+                - name: 'MR and Azure 310: Rilevamento oggetti'
+                  href: unity/tutorials/mr-azure-310.md
+                - name: 'MR and Azure 311: Microsoft Graph'
+                  href: unity/tutorials/mr-azure-311.md
+                - name: 'MR and Azure 312: Integrazione di bot'
+                  href: unity/tutorials/mr-azure-312.md
+                - name: 'MR and Azure 313: Servizio hub IoT'
+                  href: unity/tutorials/mr-azure-301.md
     - name: Configurazione del progetto
       items:
         - name: Introduzione a MRKT

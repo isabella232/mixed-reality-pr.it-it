@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realtà mista, sviluppare, sviluppo, HoloLens, servizi cloud, Azure, rendering remoto, ancoraggi nello spazio, servizi cognitivi, cognizione, unity, machine learning, traduzione vocale, visione artificiale, Microsoft Graph
-ms.openlocfilehash: e4ddfd5951945cc6a5bc9d7b71cad86a296fe725
-ms.sourcegitcommit: cd2987467044fde1e2eb227e6c25d00e744aabfc
+ms.openlocfilehash: abd1515b587842dbccb1747b606059e190559480
+ms.sourcegitcommit: 07d6a5c19c9f6ffd0316bce5629ab0e185e1d542
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98923814"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99973071"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Panoramica dei servizi cloud di realtà mista di Azure
 
@@ -47,9 +47,9 @@ Come ulteriore vantaggio, ARR non limita il tipo di interfaccia utente che è po
 
 ### <a name="azure-spatial-anchors"></a>Ancoraggi nello spazio di Azure
 
-[Azure Spatial Anchors](https://docs.microsoft.com /azure/spatial-anchors/), o ASA, è un servizio multipiattaforma che consente di compilare applicazioni di realtà miste che rilevano lo spazio. Con gli ancoraggi nello spazio di Azure è possibile eseguire il mapping, mantenere in modo permanente e condividere contenuto olografico tra più dispositivi in scala reale. 
+Gli [ancoraggi spaziali di Azure](https://docs.microsoft.com /azure/spatial-anchors/), è un servizio multipiattaforma che consente di creare applicazioni per realtà miste che rilevano lo spazio. Con gli ancoraggi nello spazio di Azure è possibile eseguire il mapping, mantenere in modo permanente e condividere contenuto olografico tra più dispositivi in scala reale. 
 
-ASA è una soluzione personalizzata in modo esclusivo per casi d'uso comuni in realtà mista, tra cui:
+Gli ancoraggi spaziali di Azure sono una soluzione personalizzata per i casi d'uso comuni in realtà mista, tra cui:
 * **Way-finding**: due o più ancoraggi nello spazio possono essere collegati per creare un elenco di attività o punti di interesse con cui un utente può interagire.
 * **Esperienze multiutente**: gli utenti possono effettuare spostamenti avanti e indietro interagendo con oggetti nello stesso spazio virtuale.
 * **Contenuto virtuale permanente nel mondo reale**: gli utenti possono posizionare nel mondo reale oggetti virtuali visualizzabili da altri dispositivi supportati.
