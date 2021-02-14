@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, sviluppo di azure, ancoraggi nello spazio, realtà mista, sviluppo, funzionalità, nuovo progetto, emulatore, documentazione, guide, ologrammi, sviluppo di giochi, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 5797cd48198b163b55f3724685126b1d4d85c69c
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 01d7217f038519d68eabfbf4f273c7ff8cbe7193
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583021"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496195"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Ancoraggi nello spazio di Azure in Unreal
 
@@ -44,6 +44,12 @@ Per altre informazioni, vedere la documentazione relativa all'[autenticazione di
 
 > [!NOTE]
 > Ancoraggi nello spazio di Azure in Unreal 4.25 non supporta i token di autenticazione di Azure AD. Il supporto per questa funzionalità, tuttavia, sarà disponibile in una versione successiva.
+
+## <a name="enabling-internet-access"></a>Abilitazione dell'accesso a Internet
+
+Aprire **Impostazioni progetto > HoloLens** e abilitare la funzionalità **client Internet** :
+
+![Impostazioni del progetto HoloLens con funzionalità evidenziate](images/asa-enable-wifi-connection.jpg)
 
 ## <a name="adding-azure-spatial-anchors-plugins"></a>Aggiunta di plug-in di Ancoraggi nello spazio di Azure
 

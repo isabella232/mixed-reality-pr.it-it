@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, realtà mista, MRTK, Toolkit per realtà mista, realtà aumentata, realtà virtuale, cuffie con realtà mista, informazioni, esercitazione, introduzione
-ms.openlocfilehash: 09067498d33fb2c96da53aa54c0449959355d809
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: bad18c5f30465120bce370aa91c13ff3f229bef6
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583517"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496144"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Realtà mista OpenXR le funzionalità supportate in Unity
 
-Il pacchetto di plug-in OpenXR per la **realtà mista** è un'estensione del plug-in **OpenXR** di Unity e supporta una suite di funzionalità per gli auricolari per la realtà mista HoloLens 2 e Windows. Prima di continuare, assicurarsi di avere installato **unity 2020,2** o versione successiva, la versione del plug-in **OpenXR 0.1.2 o versione** successiva e che il progetto Unity sia [configurato per OpenXR](openxr-getting-started.md).
+Il pacchetto di plug-in OpenXR per la **realtà mista** è un'estensione del plug-in **OpenXR** di Unity e supporta una suite di funzionalità per gli auricolari per la realtà mista HoloLens 2 e Windows. Prima di continuare, assicurarsi di avere installato **unity 2020,2** o versione successiva, la versione del plug-in **OpenXR 0.1.3 o versione** successiva e che il progetto Unity sia [configurato per OpenXR](openxr-getting-started.md).
 
 ## <a name="whats-supported"></a>Attività supportate
 
@@ -32,24 +32,28 @@ Attualmente sono supportate le funzionalità seguenti:
 * Acquisizione di realtà mista tramite il rendering di 3 occhi attraverso la fotocamera FV.
 * Supporta ["Play" in HoloLens 2 con l'app di comunicazione remota olografica](#holographic-remoting-in-unity-editor-play-mode), consentendo agli sviluppatori di eseguire il debug degli script senza compilare e distribuire nel dispositivo.
 * Compatibile con MRTK Unity 2.5.3 e versioni successive tramite il [supporto del provider OpenXR MRTK](openxr-getting-started.md#using-mrtk-with-openxr-support).
-* Compatibile con Unity [ARFoundation 4,0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) o versione successiva
+* Compatibile con Unity [ARFoundation 4,0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) o versione successiva.
+* (Aggiunto in 0.1.3) Supporta la [comunicazione remota olografica dell'app desktop](#holographic-remoting-in-desktop-app) da un'app autonoma Windows compilata e distribuita.
 
-## <a name="holographic-remoting-in-unity-editor-play-mode"></a>Comunicazione remota olografica in modalità di riproduzione dell'editor Unity
+## <a name="holographic-remoting-setup"></a>Configurazione della comunicazione remota olografica
 
-La creazione di un progetto Unity UWP nel progetto di Visual Studio e quindi la creazione del pacchetto e la distribuzione in un dispositivo HoloLens 2 possono richiedere del tempo. Una soluzione consiste nell'abilitare la comunicazione remota dell'editor olografica, che consente di eseguire il debug dello script C# usando la modalità "Play" direttamente in un dispositivo HoloLens 2 sulla rete. Questo scenario consente di evitare il sovraccarico dovuto alla creazione e alla distribuzione di un pacchetto UWP nel dispositivo remoto.
-
-1. Per prima cosa, è necessario [installare l'app del lettore di comunicazione remota olografica](https://www.microsoft.com/store/productId/9NBLGGH4SV40) dallo Store nel HoloLens 2
+1. Per prima cosa, è necessario [installare l'app del lettore di comunicazione remota olografica](https://www.microsoft.com/store/productId/9NBLGGH4SV40) dal Microsoft Store nel HoloLens 2
 2. Eseguire l'app del lettore di comunicazione remota olografica in HoloLens 2 per visualizzare il numero di versione e l'indirizzo IP per la connessione
     * Per usare il plug-in OpenXR, è necessario usare la versione 2.4 o successiva.
 
     ![Screenshot del lettore di comunicazione remota olografico in esecuzione in HoloLens](images/openxr-features-img-01.png)
 
-3. Aprire la finestra di dialogo **modifica-> impostazioni progetto**, passare alla **Gestione plug-in XR** e selezionare la casella **set di funzionalità di realtà mista di Windows** :
+## <a name="holographic-remoting-in-unity-editor-play-mode"></a>Comunicazione remota olografica in modalità di riproduzione dell'editor Unity
+
+La creazione di un progetto Unity UWP nel progetto di Visual Studio e quindi la creazione del pacchetto e la distribuzione in un dispositivo HoloLens 2 possono richiedere del tempo. Una soluzione consiste nell'abilitare la funzionalità di comunicazione remota dell'editor olografica, che consente di eseguire il debug dello script C# usando la modalità "Play" direttamente in un dispositivo HoloLens 2 sulla rete. Questo scenario consente di evitare il sovraccarico dovuto alla creazione e alla distribuzione di un pacchetto UWP nel dispositivo remoto.
+
+1. Seguire i passaggi dell' [installazione di comunicazione remota olografica](#holographic-remoting-setup)
+2. Aprire la finestra di dialogo **modifica-> impostazioni progetto**, passare alla **Gestione plug-in XR** e selezionare la casella **set di funzionalità di realtà mista di Windows** :
 
     ![Screenshot del pannello Impostazioni progetto aperto nell'editor di Unity con la gestione dei plug-in di XR evidenziata](images/openxr-features-img-02.png)
 
-4. Espandere la sezione **funzionalità** in **OpenXR** e selezionare **Mostra tutto**
-5. Controllare la casella di controllo **Remote editor olografico** e immettere l'indirizzo IP ottenuto dall'app di comunicazione remota olografica:
+3. Espandere la sezione **funzionalità** in **OpenXR** e selezionare **Mostra tutto**
+4. Controllare la casella di controllo **Remote editor olografico** e immettere l'indirizzo IP ottenuto dall'app di comunicazione remota olografica:
 
     ![Screenshot del pannello Impostazioni progetto aperto nell'editor di Unity con le funzionalità evidenziate](images/openxr-features-img-03.png)
 
@@ -57,6 +61,56 @@ A questo punto è possibile fare clic sul pulsante "Riproduci" per riprodurre l'
 
 > [!NOTE]
 > A partire dalla versione 0.1.0, il runtime di comunicazione remota olografica non supporta ancoraggi e le funzionalità di ARAnchorManager non funzioneranno tramite la comunicazione remota.  Questa funzionalità è disponibile nelle versioni future.
+
+## <a name="holographic-remoting-in-desktop-app"></a>Comunicazione remota olografica nell'app desktop
+
+> [!NOTE]
+> Il supporto per la comunicazione remota delle app autonome di Windows è stato aggiunto nella versione del pacchetto 0.1.3.
+> A partire dalla versione 0.1.3, questa funzionalità non supporta le compilazioni UWP.
+
+1. Seguire i passaggi dell' [installazione di comunicazione remota olografica](#holographic-remoting-setup)
+2. Aprire **le impostazioni del progetto Edit->**, passare a **Gestione plug-in XR** e selezionare la casella **set di funzionalità di realtà mista di Windows** . Deselezionare anche **Initialize XR all'avvio**:
+
+    ![Screenshot del pannello Impostazioni progetto aperto nell'editor di Unity con Initialize XR all'avvio deselezionato](images/openxr-features-img-02-app.png)
+
+3. Espandere la sezione **funzionalità** in **OpenXR** e selezionare **Mostra tutto**
+4. Selezionare la casella di controllo **Remote app Remoting** :
+
+    ![Screenshot del pannello Impostazioni progetto aperto nell'editor di Unity con la comunicazione remota delle app abilitata](images/openxr-features-img-03-app.png)
+
+5. Scrivere quindi del codice per impostare la configurazione remota e attivare l'inizializzazione di XR. L'app di esempio distribuita con il plug-in di [OpenXR realtà mista](openxr-getting-started.md#hololens-2-samples) contiene AppRemoting.cs, che mostra uno scenario di esempio per la connessione a un indirizzo IP specifico in fase di esecuzione. Se si distribuisce l'app di esempio in un computer locale, in questa fase verrà visualizzato un campo di input dell'indirizzo IP con un pulsante Connetti. Digitando un indirizzo IP e facendo clic su Connetti verrà inizializzato XR e si tenterà di connettersi al dispositivo di destinazione:
+
+    ![Screenshot dell'app di esempio che Visualizza l'interfaccia utente remota dell'app di esempio](images/openxr-sample-app-remoting.png)
+
+6. Per scrivere codice di connessione personalizzato, chiamare `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Connect` con un oggetto compilato `RemotingConfiguration` . L'app di esempio espone questo oggetto nel controllo e Mostra come compilare l'indirizzo IP da un campo di testo. La chiamata a `Connect` imposterà la configurazione e inizializza automaticamente XR, motivo per cui deve essere chiamata come coroutine:
+
+    ``` cs
+    StartCoroutine(Remoting.AppRemoting.Connect(remotingConfiguration));
+    ```
+
+7. Durante l'esecuzione, è possibile ottenere lo stato di connessione corrente con l' `AppRemoting.TryGetConnectionState` API e, facoltativamente, disconnettere e deinizializzare XR usando `AppRemoting.Disconnect()` . Questa operazione può essere usata per disconnettersi e riconnettersi a un dispositivo diverso all'interno della stessa sessione dell'app. L'app di esempio fornisce un cubo selezionabile che consente di disconnettere la sessione remota, se toccata.
+
+### <a name="migration-from-previous-apis"></a>Migrazione da API precedenti
+
+#### <a name="unityenginexrwsaholographicremoting"></a>UnityEngine. XR. WSA. HolographicRemoting
+
+Dal codice di esempio sui [documenti di Unity](https://docs.unity3d.com/2018.4/Documentation/ScriptReference/XR.WSA.HolographicRemoting.html):
+
+| XR. WSA. HolographicRemoting | OpenXR. Remoting. AppRemoting |
+| ---- | ---- |
+| `HolographicRemoting.Connect(String)` | `AppRemoting.Connect(RemotingConfiguration)` |
+| `HolographicRemoting.ConnectionState` | `AppRemoting.TryGetConnectionState(out ConnectionState, out DisconnectReason)`|
+| `StartCoroutine(LoadDevice("WindowsMR"))`| [N/A: si verifica automaticamente quando si chiama `AppRemoting.Connect` ]  |
+
+#### <a name="unityenginexrwindowsmrwindowsmrremoting"></a>UnityEngine. XR. WindowsMR. WindowsMRRemoting
+
+| XR. WindowsMR.WindowsMRRemoting | OpenXR. Remoting. AppRemoting |
+| ---- | ---- |
+| `WindowsMRRemoting.Connect()` | `AppRemoting.Connect(RemotingConfiguration)` |
+| `WindowsMRRemoting.Disconnect()` | `AppRemoting.Disconnect()` |
+| `WindowsMRRemoting.TryGetConnectionState(out ConnectionState)` e `WindowsMRRemoting.TryGetConnectionFailureReason(out ConnectionFailureReason)`| `AppRemoting.TryGetConnectionState(out ConnectionState, out DisconnectReason)`|
+| `WindowsMRRemoting.isAudioEnabled`, `WindowsMRRemoting.maxBitRateKbps`, `WindowsMRRemoting.remoteMachineName` | Passato in `AppRemoting.Connect` tramite lo `RemotingConfiguration` struct |
+| `WindowsMRRemoting.isConnected` | `AppRemoting.TryGetConnectionState(out ConnectionState state, out _) && state == ConnectionState.Connected`
 
 ## <a name="anchors-and-anchor-persistence"></a>Ancoraggi e persistenza di ancoraggio
 
@@ -164,4 +218,5 @@ I problemi e le funzionalità mancanti seguenti sono noti con la versione del pl
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
 Quando si sospende e si riprende un'app Unity in HoloLens 2, l'app non può essere ripresa correttamente, il che comporta 4 puntini di rotazione nella visualizzazione HoloLens.
+
 * Impostare la **modalità di invio di profondità** su **None** nelle impostazioni del progetto OpenXR come soluzione alternativa

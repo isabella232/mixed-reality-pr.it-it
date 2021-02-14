@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
 keywords: OpenXR, Khronos, BasicXRApp, realtà mista di Windows, OpenXR Strumenti di sviluppo, DirectX, nativo, app nativa, motore personalizzato, middleware, Guida introduttiva, 101, estensioni di anteprima, versione runtime di OpenXR, stato del sistema
-ms.openlocfilehash: 918dfb1f336598548735b1699c61d1b350fed293
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 99bf2e19c0bd7708f8c2421d7a466e77a6a75d84
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613195"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496069"
 ---
 # <a name="getting-started-with-openxr"></a>Informazioni di base su OpenXR
 
@@ -35,7 +35,7 @@ Per iniziare a sviluppare applicazioni OpenXR per cuffie di realtà miste di Win
 1. Assicurarsi che sia in esecuzione almeno l'aggiornamento 2019 di Windows 10 (1903), che è il requisito minimo per gli utenti finali di Windows Mixed Reality per eseguire le applicazioni OpenXR.  Se si usa una versione precedente di Windows 10, è possibile eseguire l'aggiornamento con <a href="https://www.microsoft.com/software-download/windows10" target="_blank">Windows 10 Update Assistant</a>.
 2. Configurare un auricolare di realtà mista di Windows o seguire le istruzioni per [abilitare il simulatore di realtà mista di Windows](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md).
 
-Ecco fatto!  Il runtime di OpenXR per la realtà mista di Windows viene installato e reso attivo automaticamente per tutti gli utenti della realtà mista di Windows.  Il Microsoft Store mantiene il runtime aggiornato.
+Questo è tutto.  Il runtime di OpenXR per la realtà mista di Windows viene installato e reso attivo automaticamente per tutti gli utenti della realtà mista di Windows.  Il Microsoft Store mantiene il runtime aggiornato.
 
 Per attivare di nuovo il runtime di OpenXR per la realtà mista di Windows, avviare il portale di realtà mista dal menu Start e selezionare "Correggi" nella parte superiore della finestra.  Se il pulsante non è presente, il runtime di OpenXR è già attivo.<br>
 

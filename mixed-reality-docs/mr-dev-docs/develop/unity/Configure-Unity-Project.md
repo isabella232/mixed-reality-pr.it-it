@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, realtà mista, sviluppo, Guida introduttiva, nuovo progetto, realtà mista di Windows, UWP, XR, prestazioni
-ms.openlocfilehash: 70df0314cb714d78c2eeb17335f67d6d90134770
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: 6a9bc0d9a565de1d25e1906c439e39773cb99244
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226450"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496079"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>Configurazione del progetto senza MRTK
 
@@ -125,7 +125,7 @@ Ora che il progetto è pronto, è possibile iniziare a sviluppare l'esperienza d
 
 * Aggiungi [blocchi predefiniti principali](unity-development-overview.md#2-core-building-blocks)
 * Scopri le [funzionalità della piattaforma disponibili e le API](unity-development-overview.md#3-advanced-features)
-* Informazioni su come [distribuire l'app](../platform-capabilities-and-apis/using-visual-studio.md#deploying-an-app-to-your-local-pc---immersive-headset)
+* Informazioni su come [distribuire l'app](../platform-capabilities-and-apis/using-visual-studio.md#)
 * Usare il [simulatore di realtà mista](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 
 ## <a name="see-also"></a>Vedere anche
