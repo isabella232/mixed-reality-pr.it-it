@@ -1,17 +1,17 @@
 ---
-title: MRTK_Documentation
-description: Pagina della documentazione introduttiva di MRTK
+title: Documentazione per sviluppatori MRTK-Unity
+description: Informazioni sul Toolkit di realtà mista per Unity.
 author: polar-kev
 ms.author: kesemple
-ms.date: 03/02/2021
+ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK
-ms.openlocfilehash: eee7ab759b13a11f0d4b0ef0ab51fa020c5fbf39
-ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
+ms.openlocfilehash: e763b603d7cbc1c0c07518126c26ad4efc8dbcc0
+ms.sourcegitcommit: fd19bf57607c7ed94a849d4cf606bba2bb93e668
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "101883352"
+ms.locfileid: "102117675"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>Che cos'è il Toolkit di realtà mista
 
@@ -41,13 +41,13 @@ MRTK-Unity è un progetto gestito da Microsoft che fornisce un set di componenti
 
 ## <a name="getting-started-with-mrtk"></a>Introduzione a MRTK
 
-Se non si ha familiarità con MRTK o lo sviluppo di realtà mista in Unity, è consigliabile installare gli strumenti necessari e quindi seguire il percorso per gli sviluppatori di Unity.
+Se non si ha familiarità con MRTK o lo sviluppo di realtà mista in Unity, è consigliabile installare gli strumenti necessari e quindi seguire la serie di esercitazioni HoloLens 2.
 
 > [!div class="nextstepaction"]
 > [Installare gli strumenti](install-the-tools.md)
 
 > [!div class="nextstepaction"]
-> [Viaggio per sviluppatori Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
+> [Serie di esercitazioni su HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
 
 Per vedere cosa succede dietro le quinte?
 > [!div class="nextstepaction"]

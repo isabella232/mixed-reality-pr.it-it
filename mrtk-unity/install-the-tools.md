@@ -1,17 +1,17 @@
 ---
 title: Installare gli strumenti
-description: MRTK installare la pagina della documentazione degli strumenti
+description: MRTK-Unity, installare la pagina della documentazione degli strumenti
 author: polar-kev
 ms.author: kesemple
 ms.date: 03/02/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, Toolkit per realtà mista, installazione, aggiornamento, strumenti, introduzione, nozioni di base, Unity, Visual Studio, Toolkit, auricolare in realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, installazione, Windows, HoloLens, emulatore
-ms.openlocfilehash: 4192b8e033b5d5e5234dc03ad9a0f624d0692567
-ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
+ms.openlocfilehash: 313362d6257bf67da45e9b6b175855d49231941a
+ms.sourcegitcommit: fd19bf57607c7ed94a849d4cf606bba2bb93e668
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "101883246"
+ms.locfileid: "102117615"
 ---
 # <a name="install-the-tools"></a>Installare gli strumenti
 
@@ -19,7 +19,7 @@ Acquisisci gli strumenti necessari per creare applicazioni per visori VR immersi
 
 Non disponi di un dispositivo di realtà mista? È possibile installare l' [emulatore di HoloLens](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)  per testare alcune funzionalità di app realtà miste senza HoloLens. È anche possibile usare il [simulatore di realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator)  per testare le app per realtà mista per auricolari immersivi.
 
-Si consiglia di installare Unity come modo più semplice per iniziare a creare app per realtà mista.
+Questa pagina consente di installare gli strumenti necessari per usare MRTK con Unity. Se si è interessati a esplorare altre piattaforme di sviluppo di realtà miste, vedere la pagina [Introduzione allo sviluppo di realtà mista](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity) .
 
 È possibile usare il [Toolkit di realtà mista per](https://github.com/Microsoft/MixedRealityToolkit-Unity)la simulazione di input di Unity per testare vari tipi di interazioni di input, ad esempio il rilevamento manuale e l'input di rilevamento degli occhi. 
 
@@ -53,8 +53,6 @@ Lo [strumento per la funzionalità di realtà mista](https://docs.microsoft.com/
 È possibile cercare i pacchetti in base al nome o alla categoria, visualizzarne le dipendenze e persino visualizzare le modifiche proposte al file manifesto del progetto prima dell'importazione. Dopo aver convalidato i pacchetti desiderati, lo strumento per la funzionalità di realtà mista li scaricherà nel progetto Unity scelto.
 
 ##### <a name="importing-the-mixed-reality-toolkit"></a>Importazione di Mixed Reality Toolkit
-Per una guida dettagliata al download del MRTK e all'inizializzazione del primo progetto, è consigliabile seguire la sezione Introduzione nell'esercitazione dedicata a [HoloLens](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2#1-getting-started) .
-
 È possibile scaricare il pacchetto del Toolkit per la realtà mista seguendo le [istruzioni di installazione e utilizzo](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool#system-requirements) e selezionando il pacchetto di base per il Toolkit di realtà misto.
 
 Se si preferisce scaricare manualmente i pacchetti MRTK da GitHub, visitare la pagina relativa alla versione in [realtà mista Toolkit-Unity (GitHub)](https://github.com/microsoft/MixedRealityToolkit-Unity/releases).
@@ -115,3 +113,9 @@ Memory | 8 GB di RAM o superiore | Almeno 16 GB di RAM
 Archiviazione: | >10 GB di spazio disponibile aggiuntivo
 Porte USB | Porta USB disponibile 1x per visore VR (USB 3.0 Tipo A) Nota: USB deve fornire un minimo di 900mA
 Bluetooth | Bluetooth 4.0 (per la connettività degli accessori)
+
+## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
+
+Ora che sono stati installati gli strumenti, è consigliabile seguire la serie di esercitazioni MRTK HoloLens 2.
+> [!div class="nextstepaction"]
+> [Serie di esercitazioni su HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
