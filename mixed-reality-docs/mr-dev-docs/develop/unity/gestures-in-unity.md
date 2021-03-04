@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: movimenti, Unity, sguardo, input, auricolare realtà mista, auricolare di realtà mista di Windows, cuffia virtuale reale, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: 44c42abdd4628cacd6af334a916fb725da8bb022
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 4c3db98e3047cdc74663c5cbee1c4607b77008e0
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583897"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759082"
 ---
 # <a name="gestures-in-unity"></a>Movimenti in Unity
 
@@ -131,11 +131,11 @@ La generazione di oggetti in realtà virtuale è un problema più difficile risp
 
 La generazione continuerà a migliorare con gli aggiornamenti futuri di Windows e ci si aspetterà di trovare altre informazioni su di essa.
 
-## <a name="gesture-and-motion-controllers-in-mrtk-v2"></a>Controller movimento e movimento in MRTK V2
+## <a name="gesture-and-motion-controllers-in-mrtk"></a>Controller movimento e movimento in MRTK
 
 È possibile accedere a gesture e Motion controller dal gestore di input.
-* [Movimento in MRTK V2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Gestures.html)
-* [Controller di movimento in MRTK V2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Controllers.html)
+* [Movimento in MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/gestures.md)
+* [Controller di movimento in MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/controllers.md)
 
 
 ## <a name="follow-along-with-tutorials"></a>Seguire le esercitazioni

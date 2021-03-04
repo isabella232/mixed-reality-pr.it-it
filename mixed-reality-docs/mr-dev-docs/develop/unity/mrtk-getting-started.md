@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, Mixed Reality Toolkit, MRTK versione 2, MRTK, strumenti, SDK, HoloLens, HoloLens 2, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, multipiattaforma
-ms.openlocfilehash: 54ad49bbf4da577a398a0bfb12fbdc84cdff34d9
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: b2fdf1114e30afc3d34582ebb71dd24bb8bf324d
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99238118"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759707"
 ---
 # <a name="introducing-mrtk-for-unity"></a>Introduzione a MRKT per Unity
 
@@ -30,7 +30,7 @@ MRTK per Unity offre un sistema di input multipiattaforma, componenti fondamenta
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCG]
 
-Per altri dettagli sulle funzionalità, vedere la [documentazione di MRTK su GitHub](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html) .
+Per altri dettagli sulle funzionalità, vedere la [documentazione di MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/) .
 
 ## <a name="new-with-mrtk-v2"></a>Novità di MRTK v2
 
@@ -53,5 +53,5 @@ Dovendo lavorare con piattaforme mobili, abbiamo realizzato il toolkit tenendo s
 * [Installare gli strumenti](../install-the-tools.md)
 * [Strumento per la funzionalità di realtà mista](welcome-to-mr-feature-tool.md)
 * [Sviluppo con MRTK per Unity](unity-development-overview.md)
-* [MRTK - Home page della documentazione (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
-* [Porting da HoloToolkit/MRTK a MRTK versione 2 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
+* [MRTK-Home page della documentazione](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/)
+* [Porting da HoloToolkit/MRTK a MRTK versione 2 (GitHub)](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/updates-deployment/hrtk-to-mrtk-porting-guide.md)

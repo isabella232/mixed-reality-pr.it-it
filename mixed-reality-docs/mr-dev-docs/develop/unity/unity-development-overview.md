@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realtà mista, sviluppo, guida introduttiva, nuovo progetto, porting, funzionalità, fotocamera, simulazione, emulazione, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, mapping spaziale, input vocale, fotocamera individuabile, emulatore, Azure, esercitazioni
-ms.openlocfilehash: 59bb269bfb8d7e0a9cfd6963cf144ddb0e070c5f
-ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
+ms.openlocfilehash: a7d291e66fa65f17b0cd37caedfa25a821cc99c5
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99421410"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759927"
 ---
 # <a name="unity-development-for-hololens"></a>Sviluppo di Unity per HoloLens
 
@@ -104,7 +104,7 @@ Prima di entrare nel mondo della realtà mista in totale autonomia, è consiglia
 | --- | --- |
 | [Panoramica dell'architettura MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Architecture/Overview.html) | Acquisire una conoscenza più approfondita del funzionamento di MRTK SDK nei progetti |
 | [Impostazioni e prestazioni](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html) | Profilare l'app, aggiornare le impostazioni di Unity e ottenere le migliori prestazioni di stabilizzazione olografica disponibili |
-| [Introduzione a MRTK + XR](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html) | Eseguire il trasferimento alla pipeline XR alternativa fornita da Unity |
+| [Introduzione a MRTK + XR](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/getting-started-with-mrtk-and-xrsdk.md) | Eseguire il trasferimento alla pipeline XR alternativa fornita da Unity |
 
 ### <a name="unity-resources"></a>Risorse di Unity
 

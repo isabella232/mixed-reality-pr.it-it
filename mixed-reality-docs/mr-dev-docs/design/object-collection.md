@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, controlli, progettazione, cuffie per realtà mista, cuffie per realtà mista di Windows, headset di realtà virtuale, HoloLens, raccolta di oggetti, 2D, 3D, MRTK, Toolkit reality
-ms.openlocfilehash: a459d03246b8df4c17d523f57ece54997849c209
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 53ec99b998f1c65fdd3ca8b5d935b43ff0070500
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847211"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759152"
 ---
 # <a name="object-collection"></a>Raccolta di oggetti
 
@@ -48,7 +48,7 @@ La raccolta di oggetti è un controllo di layout che consente di disporre una ma
 
 ## <a name="object-collection-in-mrtk-mixed-reality-toolkit-for-unity"></a>Raccolta di oggetti in MRTK (Mixed Reality Toolkit) per Unity
 
-* [MRTK-raccolta di oggetti](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)
+* [MRTK-raccolta di oggetti](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/object-collection.md)
 
 <br>
 

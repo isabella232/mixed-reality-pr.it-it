@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, cuffie per realtà mista, cuffie con realtà mista di Windows, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, pulsante
-ms.openlocfilehash: b4e8388c4e3ea855c191cbdfc06621018274ff86
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9e4d0637d8c10c3cd23bd2ee1369fd57137af795
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847594"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759427"
 ---
 # <a name="button"></a>Button
 
@@ -46,13 +46,13 @@ Un pulsante consente agli utenti di attivare azioni immediate in un'esperienza d
 ---
 
 ## <a name="button-in-mrtkmixed-reality-toolkit-for-unity"></a>Pulsante in MRTK (Mixed Reality Toolkit) per Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornisce vari tipi di prefabbricati di pulsanti, inclusi i pulsanti di tipo Shell per HoloLens 2 e HoloLens (1a generazione). Il prefabbricato di HoloLens 2 Button contiene diversi affordances dettagliati che consentono di migliorare la confidenza degli utenti:
+**[MRTK per Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)** offre diversi tipi di prefabbricati di pulsanti, inclusi i pulsanti di tipo Shell per HoloLens 2 e HoloLens (1a generazione). Il prefabbricato di HoloLens 2 Button contiene diversi affordances dettagliati che consentono di migliorare la confidenza degli utenti:
 
 * Evidenziazione basata su prossimità
 * Compressione della gabbia anteriore
 * Effetto impulsi sul trigger.
 
-* Per altre istruzioni ed esempi personalizzati, vedere il [pulsante MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) .
+* Per altre istruzioni ed esempi personalizzati, vedere il [pulsante MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md) .
 
 <br>
 

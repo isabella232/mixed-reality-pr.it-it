@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, CUE, interfaccia utente, UX, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, audio
-ms.openlocfilehash: d0dc8ce6425d597d04b47a6c8b08f72534488594
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b93092b597d0267c1169cf823b1a5c1fa03c3c3f
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007201"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759877"
 ---
 # <a name="interactable-object"></a>Oggetto che supporta interazioni
 
@@ -41,19 +41,19 @@ Per tutti gli oggetti che gli utenti possono interagire con lo sguardo, il raggi
 
 :::row:::
     :::column:::
-       ![interactibleobject-stati-predefinito](images/interactibleobject-states-default.jpg)<br>
+       ![Oggetto interactabile con stato predefinito](images/interactibleobject-states-default.jpg)<br>
        **Stato predefinito (osservazione)**<br>
         Stato inattivo predefinito dell'oggetto.
     Il cursore non è presente nell'oggetto. La mano non è stata rilevata.
     :::column-end:::
     :::column:::
-       ![interactibleobject-stati di destinazione](images/interactibleobject-states-targeted.jpg)<br>
+       ![Oggetto interactabile con stato di destinazione e passaggio del mouse](images/interactibleobject-states-targeted.jpg)<br>
         **Stato di destinazione (hover)**<br>
         Quando l'oggetto è destinato a un cursore a sguardi, a una prossimità del dito o al puntatore del controller di movimento.
     Il cursore si trova sull'oggetto. La mano è stata rilevata, pronta.
     :::column-end:::
     :::column:::
-       ![interactibleobject-stati-premuto](images/interactibleobject-states-pressed.jpg)<br>
+       ![Oggetto interactabile con stato premuto](images/interactibleobject-states-pressed.jpg)<br>
        **Stato premuto**<br>
         Quando l'oggetto viene premuto con un movimento di tocco aereo, premere il pulsante Seleziona del controller di movimento o del dito.
     Il cursore si trova sull'oggetto. Viene rilevata una mano, aria toccata.
@@ -70,15 +70,15 @@ Ecco come appaiono questi stati in un **pulsante olografico**:
 
 :::row:::
     :::column:::
-       ![interactibleobject-stati-predefinito](images/MRTK_InteractableState-default.jpg)<br>
+       ![Pulsante olografico in stato predefinito](images/MRTK_InteractableState-default.jpg)<br>
        **Stato predefinito (osservazione)**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject-stati di destinazione](images/MRTK_InteractableState-targeted.jpg)<br>
+       ![Pulsante olografico nello stato di destinazione e passaggio del mouse](images/MRTK_InteractableState-targeted.jpg)<br>
         **Stato di destinazione (hover)**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject-stati-premuto](images/MRTK_InteractableState-pressed.jpg)<br>
+       ![Pulsante olografico nello stato premuto](images/MRTK_InteractableState-pressed.jpg)<br>
        **Stato premuto**<br>
     :::column-end:::
 :::row-end:::
@@ -264,12 +264,12 @@ Quando si creano i pulsanti per l'interazione diretta, si consiglia una dimensio
 
 In **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** è possibile usare lo script [**interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) per fare in modo che gli oggetti rispondano a diversi tipi di Stati di interazione di input. Supporta vari tipi di temi che consentono di definire gli Stati di visualizzazione controllando le proprietà dell'oggetto, ad esempio colore, dimensioni, materiale e shader.
 
-* [Con cui](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
-* [Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
+* [Con cui](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/interactable.md)
+* [Button](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md)
 * [Scena degli esempi di interazione della mano](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 Lo shader standard di MixedRealityToolkit offre diverse opzioni, ad esempio la **luce vicina** , che consente di creare suggerimenti visivi e audio.
-* [Shader standard MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Documentation/README_MRTKStandardShader.md)
+* [Shader standard MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
 
 
 <br>
@@ -277,7 +277,7 @@ Lo shader standard di MixedRealityToolkit offre diverse opzioni, ad esempio la *
 ---
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, app di esempio, controlli, MRTK, Toolkit per realtà mista, Unity, app di esempio, app di esempio, open source, Microsoft Store, HoloLens, auricolare per realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: fd525b0d41efa15ff55097456fb6b06dd3d60c25
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 19307b310d104f418e4f7739b0576c63407d83fd
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009361"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759737"
 ---
 # <a name="periodic-table-of-the-elements"></a>Tavola periodica degli elementi
 
@@ -55,13 +55,13 @@ L'utente può modificare il tipo di superficie per aria toccando i pulsanti nell
 
 ### <a name="interactable-object-button"></a>Oggetto interagibile (pulsante)
 
-L' [oggetto interagibile](../../design/interactable-object.md) è un oggetto che può rispondere agli input HoloLens di base. Viene fornito come prefabbricato/script, che è possibile applicare facilmente a qualsiasi oggetto. Ad esempio, è possibile rendere interattivo un caffè nella scena e rispondere a input come lo sguardo, il tocco aereo, la navigazione e i movimenti di manipolazione. [Altre informazioni](../../design/interactable-object.md)
+L' [oggetto interagibile](../../design/interactable-object.md) è un oggetto che può rispondere agli input HoloLens di base. Viene fornito come prefabbricato/script, che è possibile applicare facilmente a qualsiasi oggetto. Ad esempio, è possibile rendere interattivo un caffè nella scena e rispondere a input come lo sguardo, il tocco aereo, la navigazione e i movimenti di manipolazione. [Scopri di più](../../design/interactable-object.md)
 
 ![oggetto nteractable](images/640px-periodictable-interactableobject.jpg)
 
 ### <a name="object-collection"></a>Raccolta di oggetti
 
-La [raccolta](../../design/object-collection.md) di oggetti è un oggetto che consente di disporre più oggetti in varie forme. Supporta piani, cilindri, sfere e dispersione. È possibile configurare proprietà aggiuntive, ad esempio raggio, numero di righe e spaziatura. [Altre informazioni](../../design/object-collection.md)
+La [raccolta](../../design/object-collection.md) di oggetti è un oggetto che consente di disporre più oggetti in varie forme. Supporta piani, cilindri, sfere e dispersione. È possibile configurare proprietà aggiuntive, ad esempio raggio, numero di righe e spaziatura. [Scopri di più](../../design/object-collection.md)
 
 ![Raccolta di oggetti](images/640px-periodictable-collections.jpg)
 
@@ -87,9 +87,9 @@ Leggere la storia relativa alla modalità di aggiornamento della tabella periodi
 </tr>
 </table>
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-* [Hub di esempi MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(eseguire il download da Microsoft Store in HoloLens 2)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [Hub di esempi MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/example-scenes/example-hub.md) - [(eseguire il download da Microsoft Store in HoloLens 2)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Superfici](sampleapp-surfaces.md) - [(eseguire il download da Microsoft Store in HoloLens 2)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
 * [Tavola periodica degli elementi 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 * [Galaxy Explorer 2.0](galaxy-explorer-update.md)

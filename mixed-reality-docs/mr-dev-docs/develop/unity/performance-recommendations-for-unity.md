@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: grafica, cpu, gpu, rendering, garbage collection, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 738f9032b0e0500e0f5daa3b59cc1740ef570928
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: f8757e5a5f5c9163dc70d8c8d0e93848c49a6694
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583185"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759727"
 ---
 # <a name="performance-recommendations-for-unity"></a>Consigli sulle prestazioni per Unity
 
@@ -309,7 +309,7 @@ Perciò, la riduzione del numero di operazioni nello shader di frammento può in
 
 #### <a name="unity-standard-shader-alternatives"></a>Alternative agli shader standard di Unity
 
-Invece di usare un rendering fisico (PBR, Physically Based Rendering) o un altro shader di alta qualità, cerca di usare uno shader più efficiente e più economico. [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) offre lo [shader standard MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html) che è stato ottimizzato per i progetti di realtà mista.
+Invece di usare un rendering fisico (PBR, Physically Based Rendering) o un altro shader di alta qualità, cerca di usare uno shader più efficiente e più economico. [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) offre lo [shader standard MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md) che è stato ottimizzato per i progetti di realtà mista.
 
 Unity offre anche shader senza illuminazione, con illuminazione dei vertici, diffusi e altre opzioni di shader semplificate che sono molto più veloci rispetto allo shader standard di Unity. Per informazioni più dettagliate, vedi [Usage and Performance of Built-in Shaders](https://docs.unity3d.com/Manual/shader-Performance.html) (Utilizzo e prestazioni degli shader incorporati).
 

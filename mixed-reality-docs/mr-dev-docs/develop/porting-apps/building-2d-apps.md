@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: app 2D, UWP, app Flat, HoloLens, auricolare immersivo, modello di app, pulsante indietro, barra delle applicazioni, dpi, risoluzione, scalabilità, porting, HoloLens 1 gen, HoloLens 2, cuffia in realtà mista, cuffia a realtà mista di Windows, migrazione, Windows 10
-ms.openlocfilehash: 2d6b03a8cca70ac2db810209263139ebdf3c22a7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6e8e000f694b40f637c932ee9764415ec3a57698
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583537"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759797"
 ---
 # <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>Aggiornamento di app UWP 2D per Windows Mixed Reality
 
@@ -51,7 +51,7 @@ Se l'app 2D è stata distribuita in un computer desktop e ne è stata tentata l'
 
 ## <a name="targeting-both-immersive-headsets-and-hololens"></a>Per gli auricolari immersivi e HoloLens
 
-La procedura è stata completata. L'app usa ora Windows 10 piattaforma UWP (Universal Windows Platform) (UWP).
+Congratulazioni! L'app usa ora Windows 10 piattaforma UWP (Universal Windows Platform) (UWP).
 
 L'app è ora in grado di essere eseguita sui dispositivi Windows odierni, ad esempio desktop, dispositivi mobili, Xbox, Windows Mixed Reality, HoloLens e i futuri dispositivi Windows. Tuttavia, per fare in modo che tutti questi dispositivi siano destinati a tutti i dispositivi, è necessario verificare che l'app sia destinata a Windows. Famiglia di dispositivi universali.
 
@@ -175,7 +175,7 @@ L' [input vocale](../../design/voice-input.md) è una parte essenziale dell'espe
 
 Quando l'app è in esecuzione, creare un pacchetto dell'app per [inviarla al Microsoft Store](../../distribute/submitting-an-app-to-the-microsoft-store.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Modello di app](../../design/app-model.md)
 * [Puntamento con la testa e commit](../../design/gaze-and-commit.md)
 * [Controller del movimento](../../design/motion-controllers.md)

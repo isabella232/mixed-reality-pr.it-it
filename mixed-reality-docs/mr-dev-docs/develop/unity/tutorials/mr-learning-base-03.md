@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, consapevolezza spaziale
 ms.localizationpriority: high
-ms.openlocfilehash: 8a45037f7a73d9e74cd714ae4af49b58f44ce297
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 0a8beb647516ebcb5bc07cb58d0193e8fe71e9fc
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590473"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101760017"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. Configurazione dei profili di Mixed Reality Toolkit
 
@@ -20,11 +20,11 @@ ms.locfileid: "99590473"
 
 In questa esercitazione si apprenderà come personalizzare e configurare i profili di MRTK.
 
-I <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html" target="_blank">profili di MRTK</a> sono profili annidati in una struttura ad albero che costituiscono le informazioni di configurazione per la modalità di inizializzazione dei sistemi e delle funzionalità di MRTK. Il profilo di primo livello, quello di configurazione, contiene profili annidati per ognuno dei sistemi core principali. Ogni profilo annidato è progettato per la configurazione del comportamento del sistema corrispondente.
+I <a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/profiles/profiles.md" target="_blank">profili di MRTK</a> sono profili annidati in una struttura ad albero che costituiscono le informazioni di configurazione per la modalità di inizializzazione dei sistemi e delle funzionalità di MRTK. Il profilo di primo livello, quello di configurazione, contiene profili annidati per ognuno dei sistemi core principali. Ogni profilo annidato è progettato per la configurazione del comportamento del sistema corrispondente.
 
 Questo particolare esempio mostrerà come nascondere la mesh di consapevolezza spaziale cambiando le impostazioni dell'osservatore della mesh spaziale. Puoi comunque adottare gli stessi principi per personalizzare le impostazioni o i valori nei profili di MRTK.
 
-Come rilevato quando è stato distribuito il progetto in HoloLens 2 nell'[esercitazione precedente](mr-learning-base-02.md#congratulations), la mesh <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html" target="_blank">Spatial Awareness</a> è una raccolta di mesh che rappresentano la geometria dell'ambiente. Si tratta di una visualizzazione utile nella fase iniziale, ma che in genere è disabilitata per evitare distrazioni a livello visivo e l'impatto aggiuntivo che produrrebbe sulle prestazioni.
+Come rilevato quando è stato distribuito il progetto in HoloLens 2 nell'[esercitazione precedente](mr-learning-base-02.md#congratulations), la mesh <a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">Spatial Awareness</a> è una raccolta di mesh che rappresentano la geometria dell'ambiente. Si tratta di una visualizzazione utile nella fase iniziale, ma che in genere è disabilitata per evitare distrazioni a livello visivo e l'impatto aggiuntivo che produrrebbe sulle prestazioni.
 
 ## <a name="objectives"></a>Obiettivi
 
@@ -116,7 +116,7 @@ In **Spatial Mesh Observer Settings** (Impostazioni osservatore della mesh spazi
 > [!NOTE]
 > Anche se non è visibile, la mesh di mapping spaziale è comunque presente e funzionante. Ad esempio, gli ologrammi dietro la mesh di mapping spaziale, come nel caso di un ologramma dietro a un muro fisico, non saranno visibili.
 
-hai appreso come modificare un'impostazione nel profilo di MRTK. Come si può notare, per personalizzare le impostazioni di MRTK, è necessario prima creare copie dei profili predefiniti. Poiché i profili predefiniti non sono modificabili, saranno sempre presenti come riferimento in caso di ripristino delle impostazioni predefinite. Per altre informazioni sui profili di MRTK e sulla loro architettura, consultare la [guida alla configurazione dei profili di MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html) nel [portale della documentazione di MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+hai appreso come modificare un'impostazione nel profilo di MRTK. Come si può notare, per personalizzare le impostazioni di MRTK, è necessario prima creare copie dei profili predefiniti. Poiché i profili predefiniti non sono modificabili, saranno sempre presenti come riferimento in caso di ripristino delle impostazioni predefinite. Per altre informazioni sui profili di MRTK e sulla loro architettura, consultare la [guida alla configurazione dei profili di MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mixed-reality-configuration-guide.md) nel [portale della documentazione di MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs).
 
 ## <a name="congratulations"></a>Lezione completata
 

@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: GGV, voce, Cortana, sintesi vocale, input, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, sguardo
-ms.openlocfilehash: 079a3d457da9403611d2f825dd6e599a4e9f0353
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: cc1ecd7d236748c3c4de77678e6f67c69a2c1af1
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583225"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759142"
 ---
 # <a name="voice-input"></a>Input vocale
 
@@ -290,11 +290,11 @@ Per la versione 2017 di Windows Mixed Reality Developer Edition, la logica di ge
 ## <a name="voice-input-in-mrtk-mixed-reality-toolkit-for-unity"></a>Input vocale in MRTK (Mixed Reality Toolkit) per Unity
 Con **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, è possibile assegnare facilmente il comando Voice a tutti gli oggetti. Usare **il profilo di input vocale** di MRTK per definire le parole chiave. Assegnando lo script **SpeechInputHandler** , è possibile fare in modo che qualsiasi oggetto risponda alle parole chiave definite nel profilo di input vocale. SpeechInputHandler fornisce anche un'etichetta di conferma vocale per migliorare la confidenza dell'utente.
 
-* [Comando MRTK-Voice](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Speech.html)
+* [Comando MRTK-Voice](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/speech.md)
 
 ---
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Sguardo e commit](gaze-and-commit.md)
 * [Interazioni istintive](interaction-fundamentals.md)

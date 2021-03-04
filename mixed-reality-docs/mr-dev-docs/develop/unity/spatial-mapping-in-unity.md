@@ -6,12 +6,12 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, mapping spaziale, renderer, Collider, mesh, analisi, componente, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare realtà virtuale, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 841cc1fa2a37884545ae12865f9b7cf56338dc07
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: a713497e0c5f061e9e81bf66197b3e2116218219
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582548"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759747"
 ---
 # <a name="spatial-mapping-in-unity"></a>Mapping spaziale in Unity
 
@@ -480,7 +480,7 @@ La dll di informazioni archivia internamente il playspace come griglia di voxel 
 * Quando il rilevamento viene perso, l'evento OnSurfaceChanged successivo rimuoverà tutte le mesh.
 
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Mapping spaziale nel Toolkit per realtà mista
-Per altre informazioni sull'uso del mapping spaziale con Mixed Reality toolkit V2, vedere la <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html" target="_blank">sezione relativa alla conoscenza spaziale</a> della documentazione di MRTK.
+Per altre informazioni sull'uso del mapping spaziale con Mixed Reality toolkit V2, vedere la <a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">sezione relativa alla conoscenza spaziale</a> della documentazione di MRTK.
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 

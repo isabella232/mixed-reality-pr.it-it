@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: porting, Unity, middleware, motore, UWP, Win32
-ms.openlocfilehash: 268d98b45aa659614e0266bfd1add7c7ed2f684a
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 693891d67ae26098f0810a539059da8d34f4731c
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583579"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759112"
 ---
 # <a name="porting-overview"></a>Panoramica della conversione
 
@@ -35,7 +35,7 @@ L'attuale Consiglio per lo sviluppo di Unity con realtà mista è **unity 2019 L
 > [!CAUTION]
 > Sebbene l'SDK di XR sia disponibile con questa versione di Unity, gli ancoraggi spaziali di Azure non sono attualmente compatibili con questa configurazione. Questa raccomandazione verrà aggiornata con una versione futura del pacchetto di ancoraggi spaziali di Azure per Unity. 
 > 
-> * Se non sono necessari ancoraggi spaziali di Azure, è possibile [configurare il progetto Unity per XR](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) e iniziare [a usare MRTK e XR SDK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html).
+> * Se non sono necessari ancoraggi spaziali di Azure, è possibile [configurare il progetto Unity per XR](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) e iniziare [a usare MRTK e XR SDK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/getting-started-with-mrtk-and-xrsdk.md).
 > 
 > * Se attualmente si usa l'SDK XR nel progetto e si vogliono usare gli ancoraggi spaziali di Azure, disinstallare XR SDK e reinstallare il pacchetto XR legacy per ripristinare le impostazioni del progetto.
 

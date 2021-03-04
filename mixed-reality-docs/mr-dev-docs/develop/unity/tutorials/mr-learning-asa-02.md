@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure
 ms.localizationpriority: high
-ms.openlocfilehash: a0621403ec3c4d8d0fa6f13672530756bcb6da39
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: b2d3f29ad8ed50ee2a36302de9248837b6bac4c8
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590748"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759937"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Introduzione ad Ancoraggi nello spazio di Azure
 
@@ -129,7 +129,7 @@ Nella finestra Hierarchy (Gerarchia) seleziona il pulsante successivo denominato
 
 Nella finestra Hierarchy (Gerarchia) seleziona il pulsante successivo denominato **DeleteAzureAnchor** e quindi nella finestra Inspector (Controllo) configura l'evento **On Click ()** (Al clic) del componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
 
-* Assegnare l'oggetto **DeleteAzureAnchor** al campo **None (Object)** (Nessuno - Oggetto)
+* Assegna l'oggetto **ParentAnchor** al campo **None (Object)** (Nessuno - Oggetto)
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **AnchorModuleScript** > **DeleteAzureAnchor ()** per impostare questa funzione come l'azione da eseguire quando viene attivato l'evento
 
 ![Unity con l'evento OnClick del pulsante DeleteAzureAnchor configurato](images/mr-learning-asa/asa-02-section5-step1-6.png)

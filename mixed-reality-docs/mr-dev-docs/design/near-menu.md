@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, menu, cuffie per realtà mista, cuffie di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 3cba4452861f05a1ce921c1f18f6636661ee34b0
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 71e88ab94f9051d58b666f2b3c27c33564194e19
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009931"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759172"
 ---
 # <a name="near-menu"></a>Menu adiacente
 
@@ -26,13 +26,13 @@ Un menu vicino è una raccolta di pulsanti in un pannello che seguono gli utenti
 ## <a name="near-menu-in-mrtk-mixed-reality-toolkit-for-unity"></a>Near menu in MRTK (Mixed Reality Toolkit) per Unity
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** offre diversi esempi di prefabbricati di menu near.
 
-* [MRTK-menu vicino](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_NearMenu.html)
+* [MRTK-menu vicino](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/near-menu.md)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

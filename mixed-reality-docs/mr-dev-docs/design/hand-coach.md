@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, Coach mano, auricolare immersivo, MRTK, Hands, Hands, aiuto, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 69afe767e01c57535b79575e4f25fabe4a9f6f39
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: ca23617e18c84f592ebd0575195b6bf4a98e80e5
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582270"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759477"
 ---
 # <a name="hand-coach"></a>Coach mano
 
@@ -169,11 +169,11 @@ Una volta soddisfatta l'animazione
 * Le mani devono essere insegnate una sola volta. Il superamento dell'insegnamento può causare confusione e confusione
 *   Per portarla in Unity, scaricare la versione più recente di MRTK qui: https://github.com/microsoft/MixedRealityToolkit-Unity
     *   Materiale: Teaching_Hand2
-    *   Script: fare riferimento alle linee guida di MRTK per <a href= "https://github.com/MixedRealityToolkit-Unity/blob/'HandCoachUX'/Documentation/README_HandCoach.md"> MRTK Hand Coach </a>
+    *   Script: fare riferimento alle linee guida di MRTK per <a href= "https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/hand-coach.md"> MRTK Hand Coach </a>
     *   Impostazione per progetto
         *   Scenografia impostata su UWP: è possibile trovare l'istruzione nel [progetto di Unity](../develop/unity/Configure-Unity-Project.md) per la realtà mista di Windows
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Interazione-nozioni fondamentali](interaction-fundamentals.md)
 * [Processo di creazione dell'asset](asset-creation-process.md)

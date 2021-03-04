@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, Billboard, tag-along, cuffie per realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 92caa1bcd325cefecc6d3820b819cecfce6fc09c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f0a5c4fc66e287c04fe8fa42c0c671e895a26169
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009612"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759407"
 ---
 # <a name="billboarding-and-tag-along"></a>Billboarding e tag-along
 
@@ -49,7 +49,7 @@ Proprio come il contenuto con blocco principale, gli oggetti tag-along possono r
 ## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Billboard e tag-along in MRTK (Mixed Reality Toolkit) per Unity
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornisce script per il comportamento di Billboard e tag-along. Assegnare lo script Billboard.cs a qualsiasi oggetto per aggiungere il comportamento di Billboard e fare in modo che l'oggetto faccia sempre fronte all'utente. Per aggiungere un comportamento tag-along, usare lo script RadialView.cs. È possibile modificare varie opzioni, ad esempio lerping tempo, distanza e grado.
 
-* [MRTK-Risolutore viste radiali](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html#radialview)
+* [MRTK-Risolutore viste radiali](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md#radialview)
 * [MRTK-script Billboard](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
 
 
@@ -57,7 +57,7 @@ Proprio come il contenuto con blocco principale, gli oggetti tag-along possono r
 
 ---
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realtà mista, Sguardo fisso, selezione della destinazione con lo sguardo, interazione, progettazione, a portata di mano, HoloLens, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, MRTK, Mixed Reality Toolkit, pulsante, collisori, cubo di delimitazione, 2D, movimenti istintivi
-ms.openlocfilehash: 194212fd19196990eaf873299afbf1c11846946d
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8316452b8308e159612a81d097c352cf1d935362
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583411"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759323"
 ---
 # <a name="direct-manipulation-with-hands"></a>Manipolazione diretta con le mani
 
@@ -327,8 +327,7 @@ Se l'utente non ha guardato un ologramma per un periodo di tempo ma è stato ril
 ## <a name="manipulation-in-mrtk-mixed-reality-toolkit-for-unity"></a>Manipolazione in MRTK (Mixed Reality Toolkit) per Unity
 Con **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** è possibile ottenere facilmente un comportamento di manipolazione comune usando lo script **ObjectManipulator**. ObjectManipulator consente di afferrare e spostare gli oggetti direttamente con le mani o con il raggio della mano. Supporta anche la manipolazione a due mani per il ridimensionamento e la rotazione di un oggetto.
 
-* [MRTK - Manipolazione](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html)
-
+* [MRTK - Manipolazione](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/object-manipulator.md)
 
 ---
 

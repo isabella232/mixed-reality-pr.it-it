@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realtà mista, individuare, distribuire, indice, pagina di destinazione, progettazione, sviluppo, esercitazioni, app di esempio, nozioni di base, case study, risorse, guide pratiche per HoloLens, progetti open source, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 222c70882826e61d2b60e104c460156687f8b5df
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: b10cb385d28be68a539eedced269204b8a1ac4d3
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583349"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101760213"
 ---
 # <a name="get-started-with-mixed-reality"></a>Informazioni di base sulla realtà mista
 
@@ -154,6 +154,7 @@ Se si è interessati a vedere come funzionano i diversi servizi e dispositivi ha
 | [Hardware HoloLens](https://www.microsoft.com//hololens/hardware) | HoloLens 2 offre l'esperienza di realtà mista più comoda e immersiva possibile, con soluzioni leader del settore in grado di offrire valore velocemente, il tutto potenziato dall'affidabilità, dalla sicurezza e dalla scalabilità del cloud e dei servizi di intelligenza artificiale di Microsoft |
 | [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | È possibile esplorare una vasta gamma di prodotti, tra cui [Remote Assist](/dynamics365/mixed-reality/remote-assist/ra-overview), Layout e [Guides](/dynamics365/mixed-reality/guides/), che possono potenziare le capacità dei dipendenti e ottimizzare le operazioni con Dynamics 365. Una vera comprensione si acquisisce con la pratica su attività, dispositivi e utenti reali |
 | [Servizi cloud di Azure](../develop/mixed-reality-cloud-services.md) | È possibile creare esperienze immersive accattivanti su diverse piattaforme con consapevolezza spaziale, ancoraggi nello spazio e rendering di modelli 3D complessi |
+| [Microsoft mesh](/mesh/overview) | Il mesh consente agli utenti di connettersi con presenza, condividere lo spazio e collaborare tra loro, da qualsiasi parte del mondo, attraverso esperienze di realtà miste abilitate per la rete. Con mesh puoi migliorare le riunioni virtuali, condurre sessioni di progettazione virtuali, aiutare altri utenti in modalità remota e ospitare incontri virtuali |
 
 ## <a name="what-would-you-like-to-do-next"></a>Quali operazioni vuoi eseguire successivamente?
 

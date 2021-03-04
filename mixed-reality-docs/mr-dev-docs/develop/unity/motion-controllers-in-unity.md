@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: controller di movimento, Unity, input, cuffie per realtà mista, cuffie di realtà mista di Windows, headset di realtà virtuale, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: db103e674a369f13e62aac5e8c0513b2c2c17f9e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6dee5f03ab5fe84ac11a4eb10ef0483fea6e0083
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583499"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759062"
 ---
 # <a name="motion-controllers-in-unity"></a>Controller di movimento in Unity
 
@@ -434,9 +434,9 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 }
 ```
 
-## <a name="motion-controllers-in-mrtk-v2"></a>Controller di movimento in MRTK V2
+## <a name="motion-controllers-in-mrtk"></a>Controller di movimento in MRTK
 
-È possibile accedere a [gesture e Motion controller](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Controllers.html) dal gestore di input.
+È possibile accedere a [gesture e Motion controller](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/controllers.md) dal gestore di input.
 
 ## <a name="follow-along-with-tutorials"></a>Seguire le esercitazioni
 

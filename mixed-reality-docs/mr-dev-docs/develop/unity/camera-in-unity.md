@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, rendering olografico, olografico, immersivo, punto di messa a fuoco, buffer di profondità, solo orientamento, posizionale, opaco, trasparente, clip, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: ba42e8a384f62dddcf7b8e685859ddeff7b666bb
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 865d19482e5f612eab95fa2f74cb2bad59171496
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581124"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759767"
 ---
 # <a name="camera-in-unity"></a>Fotocamera in Unity
 
@@ -93,7 +93,7 @@ Un buffer di profondità può migliorare la qualità visiva, purché Windows pos
 
 ## <a name="automatic-scene-and-camera-setup-with-mixed-reality-toolkit"></a>Configurazione automatica della scena e della fotocamera con il Toolkit di realtà misto 
 
-Seguire la Guida [dettagliata](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) per aggiungere il Toolkit di reality misto al progetto Unity e il progetto verrà configurato automaticamente. È anche possibile configurare manualmente il progetto senza MRTK con la guida nella sezione seguente.
+Seguire la Guida [dettagliata](tutorials/mr-learning-base-01.md) per aggiungere il Toolkit di reality misto al progetto Unity e il progetto verrà configurato automaticamente. È anche possibile configurare manualmente il progetto senza MRTK con la guida nella sezione seguente.
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 

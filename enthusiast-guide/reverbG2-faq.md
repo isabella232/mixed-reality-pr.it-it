@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto tecnico, prestazioni
 appliesto:
 - Windows 10
-ms.openlocfilehash: 60854785d526c7abff6327ddbb8d39d4eef23ae4
-ms.sourcegitcommit: c904d47ab2ce03d433d5eff394ec4078f404a0f7
+ms.openlocfilehash: 9b477042ebed33600a007778cd534d3074e34770
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98242537"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759286"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Domande frequenti su HP Reverb G2
 
@@ -102,3 +102,8 @@ Verificare che il cavo collegato all'auricolare sia completamente posizionato. �
 ## <a name="how-can-i-power-down-the-headset-while-still-using-my-pc"></a>Come è possibile spegnere la cuffia e continuare a usare il PC
 
 Scollegare la scheda di connessione AC dalla casella di collegamento sul cavo auricolare per rimuovere l'alimentazione dall'auricolare.
+
+## <a name="the-image-of-the-displays-of-the-reverb-g2-is-smaller-and-only-in-the-upper-left"></a>L'immagine degli schermi di Reverb G2 è più piccola e solo in alto a sinistra
+
+Se si dispone di un processore AMD Power GPU, è necessario disabilitare il ridimensionamento automatico. Quando la cuffia è connessa, passare a impostazioni-> realtà mista-> > la risoluzione dell'auricolare.
+Nel menu a discesa selezionare l'opzione "4320 x 2160 (qualità migliore)". Quando è selezionata l'opzione "scalabilità automatica (prestazioni ottimali)", è possibile che si verifichi il problema relativo alla visualizzazione.

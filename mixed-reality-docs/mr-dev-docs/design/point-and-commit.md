@@ -7,12 +7,12 @@ ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realtà mista, interazione, progettazione, HoloLens, mani, da lontano, puntamento e commit, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens, raggi della mano, manipolazione degli oggetti, MRTK, Mixed Reality Toolkit, DoF
-ms.openlocfilehash: 3351a38cad99089a60555ffe450447fc5c356fdc
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8196b67f103bae346ba4da065ee6045ff231b004
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583206"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759867"
 ---
 # <a name="point-and-commit-with-hands"></a>Puntamento e commit con le mani
 
@@ -204,9 +204,9 @@ Il concetto di puntamento e commit per l'interazione da lontano è stato creato 
 
 Per impostazione predefinita, MRTK fornisce un file prefab relativo al raggio della mano ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) con lo stesso stato di visualizzazione del raggio della mano di sistema della shell. Tale file viene assegnato in Pointers (Puntatori) nel profilo di input di MRTK. In un visore VR immersive gli stessi raggi vengono usati per i controller del movimento.
 
-* [MRTK - Profilo del puntatore](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
-* [MRTK - Sistema di input](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)
-* [MRTK - Puntatori](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Pointers.html)
+* [MRTK - Profilo del puntatore](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mixed-reality-configuration-guide.md#pointer-configuration)
+* [MRTK - Sistema di input](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md)
+* [MRTK - Puntatori](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/pointers.md)
 
 ---
 

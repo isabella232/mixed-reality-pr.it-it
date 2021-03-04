@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens (1st Gen), HoloLens 2, realtà mista, cursori, targeting, sguardi, movimenti, cuffie per realtà mista, auricolare di realtà mista di Windows, auricolare in realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, raggi, input
-ms.openlocfilehash: 0525bb9b30dfe71fba7b8ebf2afd2c87a8c97a27
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 0b35c832e6d13ff10d14686909754de60b83fa23
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582401"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759417"
 ---
 # <a name="cursors"></a>Cursori
 
@@ -165,9 +165,9 @@ La progettazione senza cursore è consigliata quando il senso di immersione è u
 
 Per impostazione predefinita, [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) fornisce una precostruzione del cursore ([DefaultCursor. prefabbricate](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)) che ha lo stesso stato di visualizzazione del cursore di sistema della shell. Tale file viene assegnato in Pointers (Puntatori) nel profilo di input di MRTK. È possibile sostituire o personalizzare questo cursore per la propria esperienza. Per l'esperienza con l'input di rilevamento degli occhi, MRTK fornisce anche EyeGazeCursor, che presenta un oggetto visivo sottile per ridurre al minimo la distrazione.
 
-* [MRTK - Profilo del puntatore](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
-* [MRTK - Sistema di input](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)
-* [MRTK - Puntatori](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Pointers.html)
+* [MRTK - Profilo del puntatore](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/mixed-reality-configuration-guide.md#pointer-configuration)
+* [MRTK - Sistema di input](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md)
+* [MRTK - Puntatori](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/pointers.md)
 
 ---
 
