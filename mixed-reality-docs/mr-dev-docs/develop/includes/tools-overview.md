@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c205e3b812eeb7a85bfe361d4fd83f9aec7b7999
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: e8eb162b1d2d1e416ba90530f41d2724a960ca11
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99244888"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101882259"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -150,6 +150,9 @@ Se si segue il percorso in Unity per VR, l'attività successiva consiste nel con
 ### <a name="1-download-the-latest-version"></a>1. Scaricare la versione più recente
 
 È consigliabile installare [Unreal Engine versione 4.25](https://docs.unrealengine.com//GettingStarted/Installation/index.html) o versione successiva per sfruttare appieno il supporto di HoloLens incorporato.
+
+Passare alla scheda **libreria** dell'utilità di avvio Epic Games, selezionare la freccia a discesa accanto a **Avvia** e fare clic su **Opzioni**. In **Target Platforms** (Piattaforme di destinazione) seleziona **HoloLens 2** e fai clic su **Apply** (Applica).
+![MRTK](../../develop/images/Unreal_Install_Option_HoloLens2.png)
 
 ### <a name="2-import-mixed-reality-toolkit-mrtk"></a>2. Importare Mixed Reality Toolkit (MRTK)
 ![MRTK](../../design/images/MRTK_UX_Hero.png)

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c61fda885b6cffba2a16b368aa48ad1426fd9fa6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6bcbb5894af2bbd99a42ae4fb49a4d047355c0f0
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98605218"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101882735"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -35,6 +35,7 @@ Per la creazione di app di Realtà mista con Unity sono disponibili diverse opzi
 |  Strumento/SDK  |  Description  |
 | --- | --- |
 | [Mixed Reality Toolkit per Unity](../unity/mrtk-getting-started.md) | Mixed Reality Toolkit per Unity è un kit di sviluppo multipiattaforma open source studiato per accelerare lo sviluppo di applicazioni destinate a Microsoft HoloLens, visori VR immersive per Windows Mixed Reality e alla piattaforma OpenVR. |
+| [Microsoft mesh](/mesh/overview) Anteprima privata | Completare il modulo [Microsoft mesh Register interest](https://aka.ms/meshsignup) per rimanere sempre aggiornati sugli annunci e le notizie sulla rete. Con mesh è possibile migliorare le riunioni virtuali, eseguire sessioni di progettazione virtuali, aiutare altri utenti in remoto e ospitare incontri virtuali. |
 
 ## <a name="cloud-services"></a>Servizi cloud
 
