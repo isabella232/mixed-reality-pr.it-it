@@ -1,0 +1,218 @@
+---
+title: Guida all'installazione
+description: Guida per l'installazione di MRTK-Unity in un nuovo progetto.
+author: hferrone
+ms.author: v-hferrone
+ms.date: 09/8/2020
+ms.localizationpriority: high
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
+ms.openlocfilehash: 6de9291ab913517aa0e7c5f8f6068136ea6fbbc8
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101781978"
+---
+# <a name="installation-guide"></a><span data-ttu-id="f7fbd-104">Guida all'installazione</span><span class="sxs-lookup"><span data-stu-id="f7fbd-104">Installation Guide</span></span>
+
+> [!CAUTION]
+> <span data-ttu-id="f7fbd-105">Se non si ha familiarità con MRTK o lo sviluppo di realtà mista in Unity, è consigliabile iniziare dall'inizio del [percorso di sviluppo di Unity](https://docs.microsoft.com/windows/mixed-reality/unity-development-overview?tabs=mrtk%2Chl2).</span><span class="sxs-lookup"><span data-stu-id="f7fbd-105">If you're new to MRTK or Mixed Reality development in Unity, we recommend you start at the beginning of our [Unity development journey](https://docs.microsoft.com/windows/mixed-reality/unity-development-overview?tabs=mrtk%2Chl2).</span></span> <span data-ttu-id="f7fbd-106">Il percorso di sviluppo di Unity è il **punto di partenza consigliato per MRTK**, appositamente creato per illustrare l'installazione, i concetti di base e l'uso di MRTK in Unity.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-106">The Unity development journey is the **recommended starting point for MRTK**, specifically created to walk you through the installation, core concepts, and usage of MRTK in Unity.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="f7fbd-107">Prerequisiti</span><span class="sxs-lookup"><span data-stu-id="f7fbd-107">Prerequisites</span></span>
+
+<span data-ttu-id="f7fbd-108">Per iniziare a usare il Toolkit di realtà mista, è necessario:</span><span class="sxs-lookup"><span data-stu-id="f7fbd-108">To get started with the Mixed Reality Toolkit, you will need:</span></span>
+
+* [<span data-ttu-id="f7fbd-109">Visual Studio 2019</span><span class="sxs-lookup"><span data-stu-id="f7fbd-109">Visual Studio 2019</span></span>](https://visualstudio.microsoft.com/downloads/)
+* [<span data-ttu-id="f7fbd-110">Unity 2018.4. x, Unity 2019</span><span class="sxs-lookup"><span data-stu-id="f7fbd-110">Unity 2018.4.x, Unity 2019</span></span>](https://unity3d.com/get-unity/download/archive)
+
+  <span data-ttu-id="f7fbd-111">MRTK supporta entrambi i backend di script IL2CPP e .NET in Unity 2018</span><span class="sxs-lookup"><span data-stu-id="f7fbd-111">MRTK supports both IL2CPP and .NET scripting backends on Unity 2018</span></span>
+
+* <span data-ttu-id="f7fbd-112">[Windows SDK 18362 +](https://developer.microsoft.com/windows/downloads/windows-10-sdk).</span><span class="sxs-lookup"><span data-stu-id="f7fbd-112">[Windows SDK 18362+](https://developer.microsoft.com/windows/downloads/windows-10-sdk).</span></span>
+
+  <span data-ttu-id="f7fbd-113">Questa operazione è necessaria se si compila un'app UWP per WMR, HoloLens 1 o HoloLens 2.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-113">This is necessary if you are building a UWP app for WMR, HoloLens 1, or HoloLens 2.</span></span> <span data-ttu-id="f7fbd-114">Questa operazione non è necessaria quando si compila per OpenVR.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-114">This is not necessary when building for OpenVR.</span></span>
+
+## <a name="add-mrtk-to-your-unity-project"></a><span data-ttu-id="f7fbd-115">Aggiungere MRTK al progetto Unity</span><span class="sxs-lookup"><span data-stu-id="f7fbd-115">Add MRTK to your Unity project</span></span>
+
+### <a name="required"></a><span data-ttu-id="f7fbd-116">Necessario</span><span class="sxs-lookup"><span data-stu-id="f7fbd-116">Required</span></span>
+
+1. [<span data-ttu-id="f7fbd-117">Ottenere i pacchetti più recenti di MRTK Unity</span><span class="sxs-lookup"><span data-stu-id="f7fbd-117">Get the latest MRTK Unity packages</span></span>](#get-the-latest-mrtk-unity-packages)
+1. [<span data-ttu-id="f7fbd-118">Importare i pacchetti MRTK nel progetto Unity</span><span class="sxs-lookup"><span data-stu-id="f7fbd-118">Import MRTK packages into your Unity project</span></span>](#import-mrtk-packages-into-your-unity-project)
+1. [<span data-ttu-id="f7fbd-119">Passare il progetto Unity alla piattaforma di destinazione</span><span class="sxs-lookup"><span data-stu-id="f7fbd-119">Switch your Unity project to the target platform</span></span>](#switch-your-unity-project-to-the-target-platform)
+1. [<span data-ttu-id="f7fbd-120">Aggiungere MRTK a una nuova scena o a un nuovo progetto</span><span class="sxs-lookup"><span data-stu-id="f7fbd-120">Add MRTK to a new scene or new project</span></span>](#add-mrtk-to-a-new-scene-or-new-project)
+
+### <a name="optional"></a><span data-ttu-id="f7fbd-121">Facoltativo</span><span class="sxs-lookup"><span data-stu-id="f7fbd-121">Optional</span></span>
+
+* [<span data-ttu-id="f7fbd-122">Esercitazioni introduttive</span><span class="sxs-lookup"><span data-stu-id="f7fbd-122">Getting started tutorials</span></span>](#getting-started-tutorials)
+* <span data-ttu-id="f7fbd-123">[Guida introduttiva di XR SDK (unity 2019,3 o versione successiva)](configuration/GettingStartedWithMRTKAndXRSDK.md).</span><span class="sxs-lookup"><span data-stu-id="f7fbd-123">[XR SDK getting started guide (Unity 2019.3 or later)](configuration/GettingStartedWithMRTKAndXRSDK.md).</span></span>
+* [<span data-ttu-id="f7fbd-124">Informazioni sui componenti di base di MRTK</span><span class="sxs-lookup"><span data-stu-id="f7fbd-124">Learn about the core building blocks of MRTK</span></span>](#learn-about-the-core-building-blocks-of-mrtk)
+* [<span data-ttu-id="f7fbd-125">Eseguire la scena HandInteractionExamples nell'editor di Unity</span><span class="sxs-lookup"><span data-stu-id="f7fbd-125">Run the HandInteractionExamples scene in the Unity Editor</span></span>](#run-the-handinteractionexamples-scene-in-the-unity-editor)
+
+### <a name="get-the-latest-mrtk-unity-packages"></a><span data-ttu-id="f7fbd-126">Ottenere i pacchetti più recenti di MRTK Unity</span><span class="sxs-lookup"><span data-stu-id="f7fbd-126">Get the latest MRTK Unity packages</span></span>
+
+1. <span data-ttu-id="f7fbd-127">Passare alla <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/releases" target="_blank">pagina della versione MRTK</a>.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-127">Go to the <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/releases" target="_blank">MRTK release page</a>.</span></span>
+1. <span data-ttu-id="f7fbd-128">In asset scaricare:</span><span class="sxs-lookup"><span data-stu-id="f7fbd-128">Under Assets, download:</span></span>
+    * <span data-ttu-id="f7fbd-129">**Microsoft.MixedRealityToolkit.Unity.Foundation.unitypackage**</span><span class="sxs-lookup"><span data-stu-id="f7fbd-129">**Microsoft.MixedRealityToolkit.Unity.Foundation.unitypackage**</span></span>
+    * <span data-ttu-id="f7fbd-130">(**_Facoltativo_**) Microsoft. MixedRealityToolkit. Unity. Extensions. file unitypackage Tools</span><span class="sxs-lookup"><span data-stu-id="f7fbd-130">(**_Optional_**) Microsoft.MixedRealityToolkit.Unity.Extensions.unitypackage</span></span>
+    * <span data-ttu-id="f7fbd-131">(**_Facoltativo_**) Microsoft. MixedRealityToolkit. Unity. examples. file unitypackage Tools</span><span class="sxs-lookup"><span data-stu-id="f7fbd-131">(**_Optional_**) Microsoft.MixedRealityToolkit.Unity.Examples.unitypackage</span></span>
+    * <span data-ttu-id="f7fbd-132">(**_Necessario per gli aggiornamenti da versione a versione, in caso contrario facoltativo_**) Microsoft. MixedRealityToolkit. Unity. Tools. file unitypackage Tools</span><span class="sxs-lookup"><span data-stu-id="f7fbd-132">(**_Required for version-to-version upgrades, Optional otherwise_**) Microsoft.MixedRealityToolkit.Unity.Tools.unitypackage</span></span>
+
+<span data-ttu-id="f7fbd-133">Per informazioni sui contenuti del pacchetto, vedere [contenuti del pacchetto MRTK](reference-docs/MRTK_PackageContents.md).</span><span class="sxs-lookup"><span data-stu-id="f7fbd-133">For information on package contents, see [MRTK Package Contents](reference-docs/MRTK_PackageContents.md).</span></span>
+
+<span data-ttu-id="f7fbd-134">Il Toolkit per la realtà mista è disponibile anche per il download in NuGet.org; per informazioni dettagliate, vedere [pacchetti NuGet di MRTK](reference-docs/MRTKNuGetPackage.md).</span><span class="sxs-lookup"><span data-stu-id="f7fbd-134">The Mixed Reality Toolkit is also available for download on NuGet.org; for details see [MRTK NuGet Packages](reference-docs/MRTKNuGetPackage.md).</span></span>
+
+### <a name="import-mrtk-packages-into-your-unity-project"></a><span data-ttu-id="f7fbd-135">Importare i pacchetti MRTK nel progetto Unity</span><span class="sxs-lookup"><span data-stu-id="f7fbd-135">Import MRTK packages into your Unity project</span></span>
+
+1. <span data-ttu-id="f7fbd-136">Creare un nuovo progetto Unity o aprire un progetto esistente.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-136">Create a new Unity project, or open an existing project.</span></span> <span data-ttu-id="f7fbd-137">Quando si crea un progetto, assicurarsi di selezionare "3D" come tipo di modello.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-137">When creating a project, make sure to select "3D" as the template type.</span></span>
+1. <span data-ttu-id="f7fbd-138">Importare **Microsoft. MixedRealityToolkit. Unity. Foundation. file unitypackage Tools** scaricati passando a "Asset-> Import package-> Custom Package", selezionare il file con estensione file unitypackage Tools, verificare che tutti gli elementi da importare siano selezionati e quindi selezionare "Import" (importa).</span><span class="sxs-lookup"><span data-stu-id="f7fbd-138">Import the **Microsoft.MixedRealityToolkit.Unity.Foundation.unitypackage** you downloaded by going into "Asset -> Import Package -> Custom Package", select the .unitypackage file, ensure all items to import are checked, and then select "Import".</span></span>
+1. <span data-ttu-id="f7fbd-139">(**_Facoltativo_**) Importare **Microsoft. MixedRealityToolkit. Unity. Extensions. file unitypackage Tools** seguendo la stessa procedura del pacchetto di base.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-139">(**_Optional_**) Import the **Microsoft.MixedRealityToolkit.Unity.Extensions.unitypackage** following the same steps as the foundation package.</span></span> <span data-ttu-id="f7fbd-140">Il pacchetto Extensions fornisce un set di componenti facoltativi utili per MRTK.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-140">The extensions package provides a set of useful optional components for the MRTK.</span></span>
+1. <span data-ttu-id="f7fbd-141">(**_Facoltativo_**) Importare **Microsoft. MixedRealityToolkit. Unity. examples. file unitypackage Tools** seguendo la stessa procedura descritta in precedenza.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-141">(**_Optional_**) Import the **Microsoft.MixedRealityToolkit.Unity.Examples.unitypackage** following the same steps as above.</span></span> <span data-ttu-id="f7fbd-142">Il pacchetto degli esempi è facoltativo e contiene utili scenari di dimostrazione per le funzionalità MRTK correnti.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-142">The examples package is optional and contains useful demonstration scenes for current MRTK features.</span></span> <span data-ttu-id="f7fbd-143">**Si noti che il pacchetto di esempi richiede il pacchetto di estensioni.**</span><span class="sxs-lookup"><span data-stu-id="f7fbd-143">**Note that the Examples package requires the Extensions package.**</span></span>
+1. <span data-ttu-id="f7fbd-144">(**_Necessario per gli aggiornamenti da versione a versione, in caso contrario facoltativo_**) Importare **Microsoft. MixedRealityToolkit. Unity. Tools. file unitypackage Tools** seguendo la stessa procedura del pacchetto di base.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-144">(**_Required for version-to-version upgrades, Optional otherwise_**) Import the **Microsoft.MixedRealityToolkit.Unity.Tools.unitypackage** following the same steps as the foundation package.</span></span> <span data-ttu-id="f7fbd-145">Il pacchetto degli strumenti è facoltativo e contiene strumenti utili, ad esempio ExtensionServiceCreator, che migliorano l'esperienza MRTK Developer.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-145">The tools package is optional and contains useful tools, such as the ExtensionServiceCreator, that enhance the MRTK developer experience.</span></span>
+
+> [!Note]
+> <span data-ttu-id="f7fbd-146">Per lo sviluppo di Android e iOS sono necessarie installazioni aggiuntive per i pacchetti.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-146">Android and iOS development require additional package installations.</span></span> <span data-ttu-id="f7fbd-147">Per ulteriori informazioni, vedere [come configurare MRTK per iOS e Android](CrossPlatform/UsingARFoundation.md).</span><span class="sxs-lookup"><span data-stu-id="f7fbd-147">For more information, see [How to configure MRTK for iOS and Android](CrossPlatform/UsingARFoundation.md).</span></span>
+<span data-ttu-id="f7fbd-148">Dopo aver importato il pacchetto Foundation, è possibile che venga visualizzato un prompt simile al seguente:</span><span class="sxs-lookup"><span data-stu-id="f7fbd-148">After importing the Foundation package, you may see a prompt similar to the following:</span></span>
+
+![UnitySetupPrompt](features/Images/MRTK_UnitySetupPrompt.png)
+
+<span data-ttu-id="f7fbd-150">MRTK sta tentando di configurare il progetto per la compilazione di soluzioni di realtà mista effettuando le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="f7fbd-150">MRTK is attempting to set up your project for building Mixed Reality solutions by doing the following:</span></span>
+
+* <span data-ttu-id="f7fbd-151">Abilitare le impostazioni di XR per la piattaforma corrente (abilitando la casella di controllo XR).</span><span class="sxs-lookup"><span data-stu-id="f7fbd-151">Enable XR Settings for your current platform (enabling the XR checkbox).</span></span>
+* <span data-ttu-id="f7fbd-152">Forza la serializzazione del testo o i metadati visibili (scelta consigliata per i progetti Unity che usano il controllo del codice sorgente</span><span class="sxs-lookup"><span data-stu-id="f7fbd-152">Force Text Serialization / Visible Meta files (recommended for Unity projects using source control).</span></span>
+
+<span data-ttu-id="f7fbd-153">L'accettazione di queste opzioni è completamente facoltativa, ma consigliata.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-153">Accepting these options is completely optional, but recommended.</span></span>
+
+<span data-ttu-id="f7fbd-154">Per alcuni prefissi e risorse è necessario TextMesh Pro, vale a dire che è necessario che sia installato il pacchetto TextMesh Pro e gli asset nel progetto (Window-> TextMeshPro-> importare le risorse essenziali di TMP).</span><span class="sxs-lookup"><span data-stu-id="f7fbd-154">Some prefabs and assets require TextMesh Pro, meaning you need the TextMesh Pro package installed and the assets in your project (Window -> TextMeshPro -> Import TMP Essential Resources).</span></span> <span data-ttu-id="f7fbd-155">**Dopo aver importato le risorse di tmp Essentials, è necessario riavviare Unity per visualizzare le modifiche**.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-155">**After you import TMP Essentials Resources, you need to restart Unity to see changes**.</span></span>
+
+### <a name="switch-your-unity-project-to-the-target-platform"></a><span data-ttu-id="f7fbd-156">Passare il progetto Unity alla piattaforma di destinazione</span><span class="sxs-lookup"><span data-stu-id="f7fbd-156">Switch your Unity project to the target platform</span></span>
+
+<span data-ttu-id="f7fbd-157">Con i pacchetti importati, il passaggio successivo consiste nel selezionare la piattaforma corretta per l'applicazione.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-157">With the packages imported, the next step is to select the correct platform for the application.</span></span>
+
+<span data-ttu-id="f7fbd-158">Per creare un' **applicazione HoloLens**, passare al piattaforma UWP (Universal Windows Platform):</span><span class="sxs-lookup"><span data-stu-id="f7fbd-158">To create a **HoloLens application**, switch to the Universal Windows Platform:</span></span>
+
+1. <span data-ttu-id="f7fbd-159">Apri menu: file > impostazioni di compilazione</span><span class="sxs-lookup"><span data-stu-id="f7fbd-159">Open menu : File > Build Settings</span></span>
+1. <span data-ttu-id="f7fbd-160">Selezionare **piattaforma UWP (Universal Windows Platform)** nell'elenco **piattaforma**</span><span class="sxs-lookup"><span data-stu-id="f7fbd-160">Select **Universal Windows Platform** in the **Platform** list</span></span>
+1. <span data-ttu-id="f7fbd-161">Fare clic sul pulsante **Switch Platform**</span><span class="sxs-lookup"><span data-stu-id="f7fbd-161">Click the **Switch Platform** button</span></span>
+
+![Switch Platform](features/Images/getting_started/SwitchPlatform.png)
+
+>[!NOTE]
+> <span data-ttu-id="f7fbd-163">Il Toolkit di realtà mista chiederà di applicare le modifiche consigliate al progetto quando si seleziona la piattaforma.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-163">The Mixed Reality Toolkit will prompt to apply recommended changes to the project when the platform is selected.</span></span> <span data-ttu-id="f7fbd-164">Ogni volta che la piattaforma viene cambiata, le impostazioni appropriate verranno controllate e richieste, se necessario.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-164">Whenever the platform is switched, the appropriate settings will be checked and prompted, if necessary.</span></span>
+
+### <a name="add-mrtk-to-a-new-scene-or-new-project"></a><span data-ttu-id="f7fbd-165">Aggiungere MRTK a una nuova scena o a un nuovo progetto</span><span class="sxs-lookup"><span data-stu-id="f7fbd-165">Add MRTK to a new scene or new project</span></span>
+
+1. <span data-ttu-id="f7fbd-166">Creare un nuovo progetto Unity o avviare una nuova scena nel progetto corrente.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-166">Create a new Unity project, or start a new scene in your current project.</span></span>
+
+1. <span data-ttu-id="f7fbd-167">Assicurarsi di aver importato i pacchetti MRTK (si consiglia di basare ed esempi, sebbene gli esempi non siano necessari) attenendosi [alla procedura descritta sopra](#import-mrtk-packages-into-your-unity-project).</span><span class="sxs-lookup"><span data-stu-id="f7fbd-167">Make sure you have imported the MRTK packages (we recommend both Foundation and Examples, though Examples is not required) following [the steps above](#import-mrtk-packages-into-your-unity-project).</span></span>
+
+1. <span data-ttu-id="f7fbd-168">Dalla barra dei menu selezionare Mixed Reality Toolkit-> Aggiungi a scena e configura</span><span class="sxs-lookup"><span data-stu-id="f7fbd-168">From the menu bar, select Mixed Reality Toolkit -> Add to Scene and Configure</span></span>
+
+    ![Configura in scena](features/Images/MRTK_ConfigureScene.png)
+
+    <span data-ttu-id="f7fbd-170">Il controllo visualizzerà ora il profilo di configurazione MRTK attualmente attivo e l'elenco a discesa di selezione del profilo, in cui il profilo predefinito è già preselezionato.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-170">The inspector will now show the currently active MRTK configuration profile and the profile selection dropdown, where the default profile is already preselected.</span></span>
+    <span data-ttu-id="f7fbd-171">I profili configurano il comportamento dei componenti di base di MRTK e sono descritti in modo più dettagliato nell'articolo sui [profili](features/Profiles/Profiles.md) .</span><span class="sxs-lookup"><span data-stu-id="f7fbd-171">Profiles configure the behavior of MRTK core components and are described in more detail in the [profiles](features/Profiles/Profiles.md) article.</span></span>
+
+    > [!NOTE]
+    >
+    > * <span data-ttu-id="f7fbd-172">Se si usa l'SDK XR di Unity in Unity 2019,3 o versione successiva, è consigliabile scegliere "DefaultXRSDKConfigurationProfile".</span><span class="sxs-lookup"><span data-stu-id="f7fbd-172">If you're using Unity's XR SDK in Unity 2019.3 or later, you should choose the "DefaultXRSDKConfigurationProfile".</span></span> <span data-ttu-id="f7fbd-173">Questo profilo è configurato con i sistemi e i provider di MRTK XR SDK, ove necessario.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-173">This profile is set up with MRTK's XR SDK systems and providers, where needed.</span></span>  
+    > * <span data-ttu-id="f7fbd-174">Se si sta iniziando a usare HoloLens o HoloLens 2, è consigliabile scegliere invece "DefaultHoloLens1ConfigurationProfile" o DefaultHoloLens2ConfigurationProfile ".</span><span class="sxs-lookup"><span data-stu-id="f7fbd-174">If you're getting started on the HoloLens or HoloLens 2, you should choose the "DefaultHoloLens1ConfigurationProfile" or DefaultHoloLens2ConfigurationProfile" instead.</span></span>  
+    > * <span data-ttu-id="f7fbd-175">Per ulteriori informazioni sulle differenze tra DefaultMixedRealityToolkitConfigurationProfile e DefaultHoloLens2ConfigurationProfile, vedere i [profili](Profiles/Profiles.md#hololens-2-profile) .</span><span class="sxs-lookup"><span data-stu-id="f7fbd-175">See the [profiles](Profiles/Profiles.md#hololens-2-profile) for more information on the differences between DefaultMixedRealityToolkitConfigurationProfile and DefaultHoloLens2ConfigurationProfile.</span></span>
+
+    <span data-ttu-id="f7fbd-176">Nella gerarchia della scena verrà visualizzato quanto segue:</span><span class="sxs-lookup"><span data-stu-id="f7fbd-176">You will then see the following in your Scene hierarchy:</span></span>
+
+    ![Impostazione della scena MRTK](features/Images/MRTK_SceneSetup.png)
+
+    <span data-ttu-id="f7fbd-178">Che contiene gli elementi seguenti:</span><span class="sxs-lookup"><span data-stu-id="f7fbd-178">Which contains the following:</span></span>
+
+    * <span data-ttu-id="f7fbd-179">**Toolkit di realtà mista** : il Toolkit stesso, che fornisce il punto di ingresso di configurazione centrale per l'intero Framework.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-179">**Mixed Reality Toolkit** - The toolkit itself, providing the central configuration entry point for the entire framework.</span></span>
+    * <span data-ttu-id="f7fbd-180">**MixedRealityPlayspace** : l'oggetto padre per la cuffia, che garantisce che i controller e gli auricolari e gli altri sistemi necessari siano gestiti correttamente nella scena.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-180">**MixedRealityPlayspace** - The parent object for the headset, which ensures the headset / controllers and other required systems are managed correctly in the scene.</span></span>
+    * <span data-ttu-id="f7fbd-181">La fotocamera principale viene spostata come elemento figlio in playspace, che consente al playspace di gestire la fotocamera insieme agli SDK</span><span class="sxs-lookup"><span data-stu-id="f7fbd-181">The Main Camera is moved as a child to the Playspace - Which allows the playspace to manage the camera in conjunction with the SDKs</span></span>
+
+    >[!NOTE]
+    > <span data-ttu-id="f7fbd-182">Quando si lavora nella scena, non **spostare la fotocamera principale** (o il **MixedRealityPlayspace**) dall'origine della scena (0, 0, 0).</span><span class="sxs-lookup"><span data-stu-id="f7fbd-182">While working in your scene, **DO NOT move the Main Camera** (or the **MixedRealityPlayspace**) from the scene origin (0,0,0).</span></span>  <span data-ttu-id="f7fbd-183">Questa operazione è controllata da MRTK e da Active SDK.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-183">This is controlled by the MRTK and the active SDK.</span></span> <span data-ttu-id="f7fbd-184">Se è necessario spostare il punto iniziale dei giocatori, **spostare il contenuto della scena e non la fotocamera**.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-184">If you need to move the players start point, then **move the scene content and NOT the camera**!</span></span>
+
+1. <span data-ttu-id="f7fbd-185">Premere Play e testare la simulazione della mano premendo la **barra spaziatrice**.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-185">Press Play and test out hand simulation by pressing the **spacebar**.</span></span>
+
+<span data-ttu-id="f7fbd-186">A questo punto è possibile eseguire la compilazione e la distribuzione nel dispositivo.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-186">You are now ready to build and deploy to device!</span></span> <span data-ttu-id="f7fbd-187">Seguire le istruzioni riportate in [compilare e distribuire MRTK](updates-deployment/BuildAndDeploy.md).</span><span class="sxs-lookup"><span data-stu-id="f7fbd-187">Follow the steps instructions at [Build and Deploy MRTK](updates-deployment/BuildAndDeploy.md).</span></span>
+
+### <a name="getting-started-tutorials"></a><span data-ttu-id="f7fbd-188">Esercitazioni introduttive</span><span class="sxs-lookup"><span data-stu-id="f7fbd-188">Getting started tutorials</span></span>
+
+<span data-ttu-id="f7fbd-189">Se non si ha familiarità con MRTK o per lo sviluppo di MR, è consigliabile consultare le [esercitazioni introduttive](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-01) che usano MRTK V2.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-189">If you are new to MRTK, or MR development, we recommend you check out the [Getting started tutorials](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-01) which uses MRTK v2.</span></span>
+
+### <a name="learn-about-the-core-building-blocks-of-mrtk"></a><span data-ttu-id="f7fbd-190">Informazioni sui componenti di base di MRTK</span><span class="sxs-lookup"><span data-stu-id="f7fbd-190">Learn about the core building blocks of MRTK</span></span>
+
+<span data-ttu-id="f7fbd-191">Vedere [MRTK 101: come usare Mixed Reality Toolkit Unity per le interazioni di base (HoloLens 2, HoloLens, Windows Mixed Reality, Open VR)](https://docs.microsoft.com/windows/mixed-reality/mrtk-101) per informazioni sui blocchi predefiniti di base.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-191">Check out [MRTK 101: How to use Mixed Reality Toolkit Unity for Basic Interactions (HoloLens 2, HoloLens, Windows Mixed Reality, Open VR)](https://docs.microsoft.com/windows/mixed-reality/mrtk-101) to learn about core building blocks.</span></span>
+
+### <a name="run-the-handinteractionexamples-scene-in-the-unity-editor"></a><span data-ttu-id="f7fbd-192">Eseguire la scena HandInteractionExamples nell'editor di Unity</span><span class="sxs-lookup"><span data-stu-id="f7fbd-192">Run the HandInteractionExamples scene in the Unity Editor</span></span>
+
+<span data-ttu-id="f7fbd-193">L'articolo relativo alla [scena degli esempi di interazione della mano](features/README_HandInteractionExamples.md) è un ottimo punto per ottenere altre informazioni sui controlli e sulle interazioni di UX in MRTK.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-193">The [hand interaction examples scene](features/README_HandInteractionExamples.md) article is a great place to learn more about the UX controls and interactions in MRTK.</span></span>
+
+<span data-ttu-id="f7fbd-194">[![Scena HandInteractionExample](features/Images/MRTK_Examples.png)](README_HandInteractionExamples.md)</span><span class="sxs-lookup"><span data-stu-id="f7fbd-194">[![HandInteractionExample scene](features/Images/MRTK_Examples.png)](README_HandInteractionExamples.md)</span></span>
+
+<span data-ttu-id="f7fbd-195">Per provare la scena interazione della mano, seguire questa procedura.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-195">To try the hand interaction scene, do the following steps.</span></span>
+
+1. <span data-ttu-id="f7fbd-196">Aprire la scena **HandInteractionExamples** sotto `Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandInteractionExamples`</span><span class="sxs-lookup"><span data-stu-id="f7fbd-196">Open the **HandInteractionExamples** scene under `Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandInteractionExamples`</span></span>
+
+1. <span data-ttu-id="f7fbd-197">Potrebbe essere richiesta l'importazione di "TMP Essentials".</span><span class="sxs-lookup"><span data-stu-id="f7fbd-197">You may get a prompt asking you to import "TMP Essentials".</span></span>
+
+    ![TMP Essentials](features/Images/getting_started/MRTK_GettingStarted_TMPro.png)
+
+    <span data-ttu-id="f7fbd-199">Se viene richiesto, selezionare il pulsante "Importa TMP Essentials".</span><span class="sxs-lookup"><span data-stu-id="f7fbd-199">If you get such a prompt, select the "Import TMP essentials" button.</span></span> <span data-ttu-id="f7fbd-200">"TMP Essentials" si riferisce al plug-in text mesh Pro, che alcuni esempi di MRTK usano per il rendering del testo migliorato.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-200">"TMP Essentials" refers to Text Mesh Pro plugin, which some of the MRTK examples use for improved text rendering.</span></span> <span data-ttu-id="f7fbd-201">Per informazioni più dettagliate, vedere il [testo in Unity](https://docs.microsoft.com/windows/mixed-reality/text-in-unity) .</span><span class="sxs-lookup"><span data-stu-id="f7fbd-201">(See [Text in Unity](https://docs.microsoft.com/windows/mixed-reality/text-in-unity) for more detailed information)</span></span>
+
+1. <span data-ttu-id="f7fbd-202">Chiudere la finestra di dialogo TMP.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-202">Close the TMP dialog.</span></span> <span data-ttu-id="f7fbd-203">Dopo questa operazione è necessario ricaricare la scena.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-203">After this you need to reload the scene.</span></span> <span data-ttu-id="f7fbd-204">Questa operazione può essere eseguita facendo doppio clic sulla scena nella scheda progetto.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-204">You can do this by double-clicking the scene in the Project tab.</span></span>
+
+1. <span data-ttu-id="f7fbd-205">Deselezionare o ridurre le dimensioni delle icone 3D nella scheda gizmos della visualizzazione scena per ridurre il disordine della scena</span><span class="sxs-lookup"><span data-stu-id="f7fbd-205">Uncheck or shrink the size of the 3d icons under the Gizmos tab in the Scene view to reduce scene clutter</span></span>
+
+     ![Gizmo](https://user-images.githubusercontent.com/13754172/80819866-a8aed800-8b8a-11ea-8d7b-a3822fdfc907.png)
+
+1. <span data-ttu-id="f7fbd-207">Premere il pulsante Riproduci.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-207">Press the Play button.</span></span>
+
+## <a name="using-the-in-editor-hand-input-simulation-to-test-a-scene"></a><span data-ttu-id="f7fbd-208">Uso della simulazione di input manuale nell'editor per testare una scena</span><span class="sxs-lookup"><span data-stu-id="f7fbd-208">Using the in-editor hand input simulation to test a scene</span></span>
+
+<span data-ttu-id="f7fbd-209">La simulazione di input nell'editor consente di testare il comportamento degli oggetti virtuali in base a un tipo specifico di input, ad esempio [hands](features/InputSimulation/InputSimulationService.md#hand-simulation) o [Eyes](features/EyeTracking/EyeTracking_BasicSetup.md#simulating-eye-tracking-in-the-unity-editor).</span><span class="sxs-lookup"><span data-stu-id="f7fbd-209">The in-editor input simulation allows you to test virtual object behavior given a specific type of input such as [hands](features/InputSimulation/InputSimulationService.md#hand-simulation) or [eyes](features/EyeTracking/EyeTracking_BasicSetup.md#simulating-eye-tracking-in-the-unity-editor).</span></span>
+
+<span data-ttu-id="f7fbd-210">Come spostarsi nella scena:</span><span class="sxs-lookup"><span data-stu-id="f7fbd-210">How to move around in the scene:</span></span>
+
+* <span data-ttu-id="f7fbd-211">Usare i tasti **W/A/S/D** per spostare la telecamera in avanti, a sinistra, indietro e a destra.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-211">Use **W/A/S/D** keys to move the camera forward/left/back/right.</span></span>
+* <span data-ttu-id="f7fbd-212">Usare **Q/E** per spostare la telecamera verticalmente.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-212">Use **Q/E** to move the camera vertically.</span></span>
+* <span data-ttu-id="f7fbd-213">Premere e tenere premuto il **pulsante destro del mouse** per ruotare la telecamera.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-213">Press and hold the **right mouse button** to rotate the camera.</span></span>
+
+<span data-ttu-id="f7fbd-214">Come simulare l'input con mani:</span><span class="sxs-lookup"><span data-stu-id="f7fbd-214">How to simulate hand input:</span></span>
+
+* <span data-ttu-id="f7fbd-215">Premere e tenere premuto la **barra spaziatrice** per abilitare la mano destra.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-215">Press and hold the **spacebar** to enable the right hand.</span></span>
+* <span data-ttu-id="f7fbd-216">Tenendo premuta la barra spaziatrice, spostare il mouse per spostare la mano.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-216">While holding the space bar, move your mouse to move the hand.</span></span>
+* <span data-ttu-id="f7fbd-217">Utilizzare la **rotellina** del mouse per regolare la profondità della mano.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-217">Use the mouse **scroll wheel** to adjust the depth of the hand.</span></span>
+* <span data-ttu-id="f7fbd-218">Fare clic sul **pulsante sinistro del mouse** per simulare il gesto di avvicinamento delle dita.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-218">Click the **left mouse button** to simulate pinch gesture.</span></span>
+* <span data-ttu-id="f7fbd-219">Usare i tasti **T/Y** per rendere la mano persistente nella visualizzazione.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-219">Use **T/Y** keys to make the hand persistent in the view.</span></span>
+* <span data-ttu-id="f7fbd-220">Tenere premuto il tasto **CTRL** e spostare il mouse per ruotare la mano.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-220">Hold **CTRL** key and move the mouse to rotate the hand.</span></span>
+
+<span data-ttu-id="f7fbd-221">Divertiti a esplorare la scena!</span><span class="sxs-lookup"><span data-stu-id="f7fbd-221">Have fun exploring the scene!</span></span> <span data-ttu-id="f7fbd-222">Per ulteriori informazioni sui controlli dell'interfaccia utente, vedere [la guida degli esempi di interazione con la mano](features/README_HandInteractionExamples.md).</span><span class="sxs-lookup"><span data-stu-id="f7fbd-222">You can learn more about the UI controls [in the hand interaction examples guide](features/README_HandInteractionExamples.md).</span></span> <span data-ttu-id="f7fbd-223">Vedere anche la [documentazione sulla simulazione di input](features/InputSimulation/InputSimulationService.md) per altre informazioni sulla simulazione di input manuale nell'editor in MRTK.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-223">Also, read through [input simulation docs](features/InputSimulation/InputSimulationService.md) to learn more about in-editor hand input simulation in MRTK.</span></span>
+
+<span data-ttu-id="f7fbd-224">È stata appena usata la prima scena MRTK.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-224">Congratulations, you just used your first MRTK scene.</span></span> <span data-ttu-id="f7fbd-225">Ora è possibile creare esperienze personalizzate...</span><span class="sxs-lookup"><span data-stu-id="f7fbd-225">Now onto creating your own experiences...</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="f7fbd-226">Passaggi successivi</span><span class="sxs-lookup"><span data-stu-id="f7fbd-226">Next steps</span></span>
+
+<span data-ttu-id="f7fbd-227">Ecco alcuni passaggi successivi suggeriti:</span><span class="sxs-lookup"><span data-stu-id="f7fbd-227">Here are some suggested next steps:</span></span>
+
+* <span data-ttu-id="f7fbd-228">Vedere [MRTK 101: come usare Mixed Reality Toolkit Unity per le interazioni di base](https://docs.microsoft.com/windows/mixed-reality/mrtk-101) per ottenere informazioni su come ottenere interazioni spaziali comuni, ad esempio le operazioni di cattura, spostamento, ridimensionamento e rotazione.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-228">Check out [MRTK 101: How to use Mixed Reality Toolkit Unity for Basic Interactions](https://docs.microsoft.com/windows/mixed-reality/mrtk-101) to learn about how to achieve common spatial interactions such as grab, move, scale, and rotate.</span></span>
+* <span data-ttu-id="f7fbd-229">Informazioni sui controlli UX disponibili in MRTK nei [blocchi predefiniti dell'interfaccia utente e dell'interazione](features/Experimental/README.md#ux-building-blocks).</span><span class="sxs-lookup"><span data-stu-id="f7fbd-229">Learn about the UX controls available in MRTK in [UI and interaction building blocks](features/Experimental/README.md#ux-building-blocks).</span></span>
+* <span data-ttu-id="f7fbd-230">Provare l' [Hub esempi di MRTK](features/README_ExampleHub.md) (i pacchetti dell'app predefiniti sono inclusi nella pagina della versione per praticità)</span><span class="sxs-lookup"><span data-stu-id="f7fbd-230">Try [MRTK Examples Hub](features/README_ExampleHub.md) (pre-built app packages are included in the release page for your convenience)</span></span>
+* <span data-ttu-id="f7fbd-231">Informazioni su come usare il profilo di configurazione di MRTK nella [Guida alla configurazione della realtà mista](out-of-scope/MixedRealityConfigurationGuide.md).</span><span class="sxs-lookup"><span data-stu-id="f7fbd-231">Learn how to work with the MRTK Configuration profile in the [mixed reality configuration guide](out-of-scope/MixedRealityConfigurationGuide.md).</span></span>
+* <span data-ttu-id="f7fbd-232">Informazioni sull' [architettura di MRTK](architecture/Overview.md)</span><span class="sxs-lookup"><span data-stu-id="f7fbd-232">Learn about the [MRTK's Architecture](architecture/Overview.md)</span></span>
+* <span data-ttu-id="f7fbd-233">Informazioni sul [sistema di input di MRTK](features/input/Overview.md)</span><span class="sxs-lookup"><span data-stu-id="f7fbd-233">Learn about the [MRTK's Input System](features/input/Overview.md)</span></span>
+* <span data-ttu-id="f7fbd-234">Scopri gli [strumenti di MRTK](features/Experimental/README.md#tools) che consentiranno di migliorare la progettazione e lo sviluppo di realtà mista.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-234">Learn about the [MRTK's Tools](features/Experimental/README.md#tools) that will empower your mixed reality design and development.</span></span>
+* <span data-ttu-id="f7fbd-235">Leggere la [Guida alla simulazione di input](features/InputSimulation/InputSimulationService.md) per apprendere come simulare l'input manuale nell'editor.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-235">Read through [input simulation guide](features/InputSimulation/InputSimulationService.md) to learn how to simulate hand input in editor.</span></span>
+
+## <a name="getting-help"></a><span data-ttu-id="f7fbd-236">Risorse della Guida</span><span class="sxs-lookup"><span data-stu-id="f7fbd-236">Getting help</span></span>
+
+<span data-ttu-id="f7fbd-237">Se si verificano problemi causati da MRTK o in caso di domande su come eseguire un'operazione, sono disponibili alcune risorse che consentono di:</span><span class="sxs-lookup"><span data-stu-id="f7fbd-237">If you run into issues caused by MRTK or otherwise have questions about how to do something, there are a few resources that can help:</span></span>
+
+* <span data-ttu-id="f7fbd-238">Per le segnalazioni di bug, inviare [un problema](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/new/choose) nel repository GitHub.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-238">For bug reports, please [file an issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/new/choose) on the GitHub repo.</span></span>
+* <span data-ttu-id="f7fbd-239">Per domande, rivolgersi a [StackOverflow](https://stackoverflow.com/questions/tagged/mrtk) o al canale di [reality-Toolkit](https://holodevelopers.slack.com/messages/C2H4HT858) in slack.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-239">For questions, please reach out on either [StackOverflow](https://stackoverflow.com/questions/tagged/mrtk) or the [mixed-reality-toolkit channel](https://holodevelopers.slack.com/messages/C2H4HT858) on Slack.</span></span> <span data-ttu-id="f7fbd-240">È possibile partecipare alla community di Slack tramite il [mittente dell'invito automatico](https://holodevelopersslack.azurewebsites.net/).</span><span class="sxs-lookup"><span data-stu-id="f7fbd-240">You can join the Slack community via the [automatic invitation sender](https://holodevelopersslack.azurewebsites.net/).</span></span>
+
+## <a name="upgrading-from-the-holotoolkit-htkmrtk-v1"></a><span data-ttu-id="f7fbd-241">Aggiornamento da HoloToolkit (HTK/MRTK V1)</span><span class="sxs-lookup"><span data-stu-id="f7fbd-241">Upgrading from the HoloToolkit (HTK/MRTK v1)</span></span>
+
+<span data-ttu-id="f7fbd-242">Non esiste un percorso di aggiornamento diretto da HoloToolkit a Mixed Reality toolkit V2 a causa del Framework ricompilato.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-242">There is not a direct upgrade path from the HoloToolkit to Mixed Reality Toolkit v2 due to the rebuilt framework.</span></span> <span data-ttu-id="f7fbd-243">Tuttavia, è possibile importare il MRTK nel progetto HoloToolkit ed eseguire la migrazione dell'implementazione.</span><span class="sxs-lookup"><span data-stu-id="f7fbd-243">However, it is possible to import the MRTK into your HoloToolkit project and migrate your implementation.</span></span> <span data-ttu-id="f7fbd-244">Per ulteriori informazioni, vedere la [Guida al porting di HoloToolkit to Mixed Reality Toolkit](updates-deployment/HTKToMRTKPortingGuide.md)</span><span class="sxs-lookup"><span data-stu-id="f7fbd-244">For more information, see the [HoloToolkit to Mixed Reality Toolkit Porting Guide](updates-deployment/HTKToMRTKPortingGuide.md)</span></span>
+
+## <a name="getting-started-with-unitys-xr-sdk"></a><span data-ttu-id="f7fbd-245">Introduzione a XR SDK di Unity</span><span class="sxs-lookup"><span data-stu-id="f7fbd-245">Getting started with Unity's XR SDK</span></span>
+
+<span data-ttu-id="f7fbd-246">Istruzioni complete e informazioni sono disponibili nella [Guida introduttiva a XR SDK](configuration/GettingStartedWithMRTKAndXRSDK.md).</span><span class="sxs-lookup"><span data-stu-id="f7fbd-246">Complete instructions and information can be found in our [XR SDK getting started guide](configuration/GettingStartedWithMRTKAndXRSDK.md).</span></span>
