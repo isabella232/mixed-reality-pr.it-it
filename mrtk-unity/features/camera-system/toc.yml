@@ -1,0 +1,8 @@
+- name: Panoramica del sistema di fotocamere
+  href: camera-system-overview.md
+- name: Crea provider di impostazioni
+  href: create-settings-provider.md
+- name: Impostazioni della fotocamera AR Unity
+  href: unity-ar-camera-settings.md
+- name: Impostazioni della fotocamera per la realtà mista di Windows
+  href: windows-mixed-reality-camera-settings.md

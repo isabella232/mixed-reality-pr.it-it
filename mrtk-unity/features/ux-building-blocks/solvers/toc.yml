@@ -1,0 +1,4 @@
+- name: Panoramica dei risolutori
+  href: solver.md
+- name: Toccare per posizionare
+  href: tap-to-place.md
