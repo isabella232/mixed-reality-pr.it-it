@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, risolutori, tracciamento oculare, comandi vocali
 ms.localizationpriority: high
-ms.openlocfilehash: 8bae8b821e7ffe67b745bbbab763193612a58485
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 3cf29486f827421fcfefce5d513dd5916d44c634
+ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590413"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101883166"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1. Introduzione alle esercitazioni di MRTK
 
@@ -46,7 +46,7 @@ Le esercitazioni di questa serie sono sequenziali, consultarle quindi nell'ordin
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> con Unity 2019 LTS installato e il modulo di supporto per la compilazione UWP (Universal Windows Platform) aggiunto
 
 > [!CAUTION]
-> La versione consigliata di MRTK per questa serie di esercitazioni è MRTK 2.5.3.
+> La versione consigliata di MRTK per questa serie di esercitazioni è MRTK 2,6.
 
 > [!CAUTION]
 > La versione di Unity consigliata per questa serie di esercitazioni è Unity 2019 LTS. Questa istruzione sostituisce gli eventuali requisiti relativi alla versione di Unity indicati negli argomenti visualizzabili facendo clic sui collegamenti dei prerequisiti sopra riportati.

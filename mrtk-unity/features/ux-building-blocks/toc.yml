@@ -8,8 +8,12 @@
   href: button.md
 - name: Gestione vincoli
   href: constraint-manager.md
+- name: Finestra di dialogo
+  href: dialog.md
 - name: Visualizzazione a mano
   href: fingertip-visualization.md
+- name: Coach mano
+  href: hand-coach.md
 - name: Menu a mano
   href: hand-menu.md
 - name: Con cui

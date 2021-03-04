@@ -1,23 +1,23 @@
 ---
-title: ReleaseNotes
+title: Note sulla versione di MRTK 2,6
 description: Note sulla versione di MRTK versione 2,6
 author: polar-kev
 ms.author: kesemple
 ms.date: 02/28/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: a232543da9b53969cb38c52a9cbd04a84e131561
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 4d900686493d566e7c3af9d48c5f1e95f6017449
+ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782885"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101883411"
 ---
 # <a name="microsoft-mixed-reality-toolkit-260-release-notes"></a>Note sulla versione di Microsoft Mixed Reality Toolkit 2.6.0
 
 - [Novità](#whats-new)
 - [Modifiche di rilievo](#breaking-changes)
-- [Aggiornamento delle linee guida](Updating.md#upgrading-to-a-new-version-of-mrtk)
+- [Aggiornamento delle linee guida](../updates-deployment/updating.md#upgrading-to-a-new-version-of-mrtk)
 - [Problemi noti](#known-issues)
 
 > [!IMPORTANT]
@@ -27,7 +27,7 @@ ms.locfileid: "101782885"
 
 ### <a name="add-support-for-openxr"></a>Aggiungere il supporto per OpenXR
 
-È stato aggiunto il supporto iniziale per il pacchetto di anteprima OpenXR di Unity e il pacchetto OpenXR per la realtà mista Microsoft. Per altre informazioni, vedere la pagina introduttiva di [MRTK/XRSDK](configuration/getting-started-with-mrtk-and-xrsdk.md), [post del forum di Unity](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)o [documentazione di Microsoft](https://aka.ms/openxr-unity-install) .
+È stato aggiunto il supporto iniziale per il pacchetto di anteprima OpenXR di Unity e il pacchetto OpenXR per la realtà mista Microsoft. Per altre informazioni, vedere la pagina introduttiva di [MRTK/XRSDK](../configuration/getting-started-with-mrtk-and-xrsdk.md), [post del forum di Unity](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)o [documentazione di Microsoft](https://aka.ms/openxr-unity-install) .
 
 > [!IMPORTANT]
 > OpenXR in Unity è supportato solo in Unity 2020,2 e versioni successive.
@@ -40,13 +40,24 @@ I controller per i Riverb di HP G2 ora funzionano in modo nativo con MRTK.
 
 ### <a name="teleportation-with-the-teleport-gesture-now-supported-on-all-platforms"></a>Teleporting con il gesto Teleport ora supportato in tutte le piattaforme
 
-Gli utenti possono ora usare il gesto Teleport per spostarsi sullo spazio di riproduzione in tutte le piattaforme. Per teletrasportarsi con un controller nei dispositivi MR con configurazioni predefinite, usare levetta. Per teletrasportarsi con le mani articolate, creare un gesto con la Palma rivolto verso l'alto con l'indice e il pollice verso l'alto, completando il teletrasporto arricciando il dito dell'indice. Per teletrasportarsi con la simulazione di input, vedere la documentazione aggiornata del [servizio di simulazione di input](features/input-simulation/input-simulation-service.md).
+Gli utenti possono ora usare il gesto Teleport per spostarsi sullo spazio di riproduzione in tutte le piattaforme. Per teletrasportarsi con un controller nei dispositivi MR con configurazioni predefinite, usare levetta. Per teletrasportarsi con le mani articolate, creare un gesto con la Palma rivolto verso l'alto con l'indice e il pollice verso l'alto, completando il teletrasporto arricciando il dito dell'indice. Per teletrasportarsi con la simulazione di input, vedere la documentazione aggiornata del [servizio di simulazione di input](../features/input-simulation/input-simulation-service.md).
 
   ![Movimento Teleport](images/handteleport.gif)
 
+### <a name="scene-understanding-now-available-in-mrtk-as-an-experimental-spatial-awareness-observer"></a>Conoscenza della scena ora disponibile in MRTK come osservatore di consapevolezza spaziale sperimentale
+
+Il supporto sperimentale della [comprensione della scena](https://docs.microsoft.com/windows/mixed-reality/scene-understanding) è stato introdotto in MRTK 2,6. Gli utenti possono incorporare le funzionalità di comprensione della scena di HoloLens 2 come osservatore di consapevolezza spaziale nei progetti basati su MRTK. Per ulteriori informazioni, vedere la [documentazione relativa alla comprensione della scena](../features/spatial-awareness/scene-understanding.md) .
+
+> [!IMPORTANT]
+> La comprensione della scena è supportata solo in HoloLens 2 e Unity 2019,4 e versioni successive.
+>
+> Questa funzionalità richiede il pacchetto per la comprensione della scena, che ora è disponibile tramite lo strumento per la [funzionalità di realtà mista](https://aka.ms/MRFeatureTool).
+
+  ![Comprensione della scena](images/SceneUnderstanding.gif)
+
 ### <a name="runtime-profile-switching-support"></a>Supporto del cambio del profilo di runtime
 
-MRTK consente ora il cambio del profilo prima dell'inizializzazione dell'istanza di MRTK (ad esempio, l'opzione del profilo di inizializzazione pre-MRTK) e dopo che un profilo è stato usato in modo attivo (ad esempio, commutatore profilo attivo). Il cambio precedente può essere usato per abilitare i componenti selezionati in base alle funzionalità dell'hardware, mentre quest'ultimo può essere usato per modificare l'esperienza quando l'utente immette un sottoparte dell'applicazione. Per ulteriori informazioni ed esempi di codice, leggere la [documentazione relativa al cambio del profilo](configuration/mixed-reality-configuration-guide.md#changing-profiles-at-runtime) .
+MRTK consente ora il cambio del profilo prima dell'inizializzazione dell'istanza di MRTK (ad esempio, l'opzione del profilo di inizializzazione pre-MRTK) e dopo che un profilo è stato usato in modo attivo (ad esempio, commutatore profilo attivo). Il cambio precedente può essere usato per abilitare i componenti selezionati in base alle funzionalità dell'hardware, mentre quest'ultimo può essere usato per modificare l'esperienza quando l'utente immette un sottoparte dell'applicazione. Per ulteriori informazioni ed esempi di codice, leggere la [documentazione relativa al cambio del profilo](../configuration/mixed-reality-configuration-guide.md#changing-profiles-at-runtime) .
 
 ### <a name="directional-indicator-and-follow-solvers-graduated-from-experimental"></a>Indicatore direzionale e i risolutori seguono laureati da sperimentale
 
@@ -54,9 +65,15 @@ Due nuovi risolutori sono pronti per l'uso con MRTK principali.
 
   ![Risolutore indicatori direzionali](images/DirectionalIndicatorExampleScene.gif)
 
+### <a name="hand-coach-graduated-from-experimental"></a>Coach mano laureato da sperimentale
+
+La funzionalità di coaching a mano è ora pronta per l'uso con MRTK principali.
+  ![Esempio di coach della mano](https://docs.microsoft.com/windows/mixed-reality/design/images/handcoach/airtap.gif)
+
+
 ### <a name="input-recording-service-improvements"></a>Miglioramenti del servizio registrazione input
 
-`InputRecordingService` e `InputPlaybackService` ora possono registrare e riprodurre l'input dello sguardo. La registrazione è stata ottimizzata in modo da garantire un framerate coerente per tutto il periodo di registrazione durante la registrazione delle dimensioni del file e il tempo di risparmio viene ridotto del 50% circa. Il salvataggio e il caricamento dei file di registrazione possono ora essere eseguiti in modo asincrono. Si noti che il formato di file della registrazione è stato modificato in questa versione di MRTK. per ulteriori informazioni sulle nuove specifiche della versione 1,1, vedere [qui](InputSimulation/InputAnimationFileFormat.md) .
+`InputRecordingService` e `InputPlaybackService` ora possono registrare e riprodurre l'input dello sguardo. La registrazione è stata ottimizzata in modo da garantire un framerate coerente per tutto il periodo di registrazione durante la registrazione delle dimensioni del file e il tempo di risparmio viene ridotto del 50% circa. Il salvataggio e il caricamento dei file di registrazione possono ora essere eseguiti in modo asincrono. Si noti che il formato di file della registrazione è stato modificato in questa versione di MRTK. per ulteriori informazioni sulle nuove specifiche della versione 1,1, vedere [qui](../features/input-simulation/input-animation-file-format.md) .
 
 ### <a name="reading-mode"></a>Modalità di lettura
 
@@ -78,7 +95,7 @@ A causa di problemi correlati alla deserializzazione, alcuni campi degli oggetti
 
 ### <a name="input-animation-binary-file-has-an-updated-version-11-format"></a>Il file binario animazione input ha un formato versione 1,1 aggiornato
 
-Il file binario di animazione di input, usato da `InputRecordingService` e `InputPlaybackService` , dispone ora di un formato di file aggiornato per abilitare le ottimizzazioni apportate a questi due servizi. Per ulteriori informazioni sulle nuove specifiche della versione 1,1, vedere [qui](features/input-simulation/input-animation-file-format.md) .
+Il file binario di animazione di input, usato da `InputRecordingService` e `InputPlaybackService` , dispone ora di un formato di file aggiornato per abilitare le ottimizzazioni apportate a questi due servizi. Per ulteriori informazioni sulle nuove specifiche della versione 1,1, vedere [qui](../features/input-simulation/input-animation-file-format.md) .
 
 ### <a name="msbuild-for-unity-support"></a>Supporto di MSBuild per Unity
 
@@ -124,7 +141,7 @@ Questo errore è dovuto al fatto che il profilo di configurazione del servizio t
 - Se non è espanso, espandere `Scene Transition Service`
 - Impostare il valore di `Configuration Profile` su **MRTKExamplesHubSceneTransitionServiceProfile**
 
-<img src="Images/ReleaseNotes/FixSceneTransitionProfile.png" width="500px">
+![Correggi profilo transizione scena](images/FixSceneTransitionProfile.png)
 
 ### <a name="oculus-quest"></a>Oculus-ricerca
 

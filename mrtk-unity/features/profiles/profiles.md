@@ -6,24 +6,35 @@ ms.author: roliu
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, profili,
-ms.openlocfilehash: 322f2b800f62f42fa3d5e60dc6142b106c8a396a
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: eec2832d6113ba9452fa76d6bcf3e8620ac3f9ac
+ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782414"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101883396"
 ---
 # <a name="profiles"></a>Profiles
 
-Uno dei modi principali in cui è configurato il MRTK consiste nell'usare i molti profili disponibili nel pacchetto di base. L' [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) oggetto principale in una scena avrà il profilo attivo, che è essenzialmente un ScriptableObject. Il profilo di configurazione di MRTK di livello superiore contiene i dati di sottoprofilo per ogni core dei sistemi principali principali, ognuno dei quali è progettato per configurare il comportamento dei sottosistemi corrispondenti. Inoltre, questi sottoprofili sono anche oggetti gestibili tramite script e possono quindi contenere riferimenti ad altri oggetti profilo a un livello inferiore. Esiste essenzialmente un intero albero di profili connessi che costituiscono le informazioni di configurazione per l'inizializzazione dei sottosistemi e delle funzionalità di MRTK.
+Uno dei modi principali in cui è configurato il MRTK consiste nell'usare i profili disponibili nel pacchetto di base. L' [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) oggetto principale in una scena avrà il profilo attivo, che è un ScriptableObject. Il profilo di configurazione di MRTK di livello superiore contiene i dati di sottoprofilo per ogni core dei sistemi principali principali, ognuno dei quali è progettato per configurare il comportamento dei sottosistemi corrispondenti. Inoltre, questi profili secondari sono ScriptableObjects e possono quindi contenere riferimenti ad altri oggetti profilo, un livello sotto di essi. Esiste essenzialmente un intero albero di profili connessi che compongono le informazioni di configurazione per l'inizializzazione dei sottosistemi e delle funzionalità di MRTK.
 
-Il comportamento del sistema di input, ad esempio, è regolato da un profilo di sistema di input, ad esempio `DefaultMixedRealityInputSystemProfile` (assets/MRTK/SDK/Profiles). È consigliabile modificare sempre le risorse del profilo ScriptableObject tramite il controllo nell'editor.
+Il comportamento del sistema di input, ad esempio, è regolato da un profilo di sistema di input, ad esempio `DefaultMixedRealityInputSystemProfile` (assets/MRTK/SDK/Profiles).
 
 <img src="../images/profiles/input_profile.png" width="650px" alt="Input profile" style="display:block;">
 <sup>Controllo profilo</sup>
 
-> [!NOTE]
-> Sebbene sia previsto che i profili possano essere scambiati in fase di esecuzione, [attualmente non funziona](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/4289)
+## <a name="background"></a>Sfondo
+
+I profili sono destinati principalmente a supportare scenari specifici tra più dispositivi, che vengono gestiti tramite i provider di dati. In questo modo, un'app può essere progettata come il più possibile indipendentemente dal dispositivo e consentire a MRTK e ai provider di dati del profilo di gestire il supporto multipiattaforma.
+
+Sono inoltre disponibili profili basati sulle funzionalità di input di dispositivi specifici, ad esempio il profilo HoloLens 1, per impostazione predefinita le interazioni di tipo GGV.
+
+## <a name="xr-sdk"></a>SDK XR
+
+Attualmente sono disponibili due profili per XR SDK, `DefaultXRSDKConfigurationProfile` e `DefaultHoloLens2XRSDKConfigurationProfile` . Di conseguenza, non tutte le scene di esempio sono completamente supportate a causa di configurazioni specifiche dello scenario e della scena. Tutti gli esempi che usano `DefaultMixedRealityToolkitConfigurationProfile` e `DefaultHoloLens2ConfigurationProfile` _possono_ essere scambiati con i corrispondenti profili XR SDK. Se si usa OpenXR con XR SDK, usare `DefaultOpenXRConfigurationProfile` invece.
+
+Il lavoro aggiuntivo è stato intrapreso per semplificare la configurazione e supportare tutte le scene di esempio, consentendo di configurare side-by-side le versioni precedenti di XR e XR SDK. Vedere problemi [#9419](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9419) per il rilevamento.
+
+Vedere [configurazione di MRTK per la pipeline di XR SDK](../../configuration/getting-started-with-mrtk-and-xrsdk.md#configuring-mrtk-for-the-xr-sdk-pipeline) per altre informazioni sulla conversione di profili tra le versioni precedenti di XR e XR SDK.
 
 ## <a name="default-profile"></a>Profilo predefinito
 
@@ -39,19 +50,19 @@ Quando viene richiesto di scegliere un profilo per l'oggetto MixedRealityToolkit
 
 Le differenze principali tra il profilo HoloLens2 e il profilo predefinito sono:
 
-**Disabilitato** Funzionalità
+Funzionalità **disabilitate** :
 
 - [Sistema di limiti](../boundary/boundary-system-getting-started.md)
 - [Sistema Teleport](../teleport-system/teleport-system.md)
 - [Sistema di riconoscimento spaziale](../spatial-awareness/spatial-awareness-getting-started.md)
 - [Visualizzazione Mesh mano](../input/hand-tracking.md) (a causa dell'overhead delle prestazioni)
 
-**Abilitato** Sistemi
+Sistemi **abilitati** :
 
 - Il [provider di rilevamento degli occhi](../input/eye-tracking/eye-tracking-main.md)
 - Simulazione dell'input oculare
 
 Le impostazioni del profilo della fotocamera sono impostate in modo da corrispondere alla qualità dell'editor e alla qualità del lettore. Si tratta di un profilo diverso dal profilo della fotocamera predefinito, in cui le visualizzazioni opache sono impostate su una qualità superiore. Questa modifica significa che la qualità nell'Editor sarà inferiore, che corrisponderà più a quanto verrà visualizzato nel dispositivo.
-  
+
 > [!NOTE]
 > Il sistema di riconoscimento spaziale è disattivato per impostazione predefinita in base ai commenti e suggerimenti dei client. si tratta di una visualizzazione interessante per vedere inizialmente, ma in genere è disattivata per evitare la distrazione visiva e l'ulteriore impatto sulle prestazioni. Il sistema può essere riabilitato seguendo le istruzioni riportate [qui](../spatial-awareness/spatial-awareness-getting-started.md).

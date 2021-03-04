@@ -1,17 +1,17 @@
 ---
-title: MRTK_Pakages
-description: Pakages in MRTK che supportano l'hardware e le piattaforme a realtà mista.
+title: MRTK_Packages
+description: Pacchetti in MRTK che supportano l'hardware e le piattaforme a realtà mista.
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 ms.localizationpriority: high
-keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, Unity pakage Manager,
-ms.openlocfilehash: 6eacd65bf3a6d9fe819ff28172b244c71ce2a6a6
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, gestione pacchetti Unity,
+ms.openlocfilehash: 6bb0e63383822df9cbdd9ae39b7c49d57f1178ab
+ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101758977"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101883136"
 ---
 # <a name="mixed-reality-toolkit-packages"></a>Pacchetti Toolkit per realtà mista
 

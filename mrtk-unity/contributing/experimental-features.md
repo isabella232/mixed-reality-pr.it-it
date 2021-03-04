@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: fdd426c0f994a72cd3914f37332600b4133eb0fb
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: ba09b25bb4d4402375acf669e022d744af45fc70
+ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782114"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101883376"
 ---
 # <a name="experimental-features"></a>Funzionalità sperimentali
 
@@ -76,7 +76,7 @@ Aggiunta di un menu componenti:
 
 Per aggiungere la documentazione per la funzionalità sperimentale, attenersi alla procedura seguente:
 
-1. Qualsiasi documentazione relativa a una funzionalità sperimentale dovrebbe andare in un `readme.md` file nella cartella sperimentale. ad esempio [`MRTK/SDK/Experimental/PulseShader/readme.md`](../features/experimental/pulse-shader.md).
+1. Qualsiasi documentazione relativa a una funzionalità sperimentale dovrebbe andare in un `readme.md` file nella cartella sperimentale. Ad esempio, MRTK/SDK/Experimental/PulseShader/Leggimi. MD.
 
 1. In *Panoramica delle funzionalità* aggiungere un collegamento nella sezione *sperimentale* all'indirizzo [`Documentation/toc.yml`](../toc.yml) .
 

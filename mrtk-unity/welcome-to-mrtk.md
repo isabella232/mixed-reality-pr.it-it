@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/02/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK
-ms.openlocfilehash: 3d580dd1d61b3771fa9d30d329f5540dae59f429
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: eee7ab759b13a11f0d4b0ef0ab51fa020c5fbf39
+ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782532"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101883352"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>Che cos'è il Toolkit di realtà mista
 
@@ -39,9 +39,6 @@ MRTK-Unity è un progetto gestito da Microsoft che fornisce un set di componenti
   * Tracciamento della mano Ultraleap
   * Dispositivi mobili come iOS e Android
 
-> [!div class="nextstepaction"]
-> [Esplora MRTK su GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity)
-
 ## <a name="getting-started-with-mrtk"></a>Introduzione a MRTK
 
 Se non si ha familiarità con MRTK o lo sviluppo di realtà mista in Unity, è consigliabile installare gli strumenti necessari e quindi seguire il percorso per gli sviluppatori di Unity.
@@ -50,13 +47,16 @@ Se non si ha familiarità con MRTK o lo sviluppo di realtà mista in Unity, è c
 > [Installare gli strumenti](install-the-tools.md)
 
 > [!div class="nextstepaction"]
-> [Viaggio per sviluppatori Unity](https://github.com/microsoft/MixedRealityToolkit-Unity/releases)
+> [Viaggio per sviluppatori Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
 
+Per vedere cosa succede dietro le quinte?
+> [!div class="nextstepaction"]
+> [Esplora MRTK su GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity)
 
 ## <a name="documentation"></a>Documentazione
 
-| [![Note sulla versione](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-26-release-notes.md)<br/>[Note sulla versione](release-notes/mrtk-26-release-notes.md)| [![Riferimento API](features/images/MRTK_Icon_APIReference.png)](https://docs.microsoft.com/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[Riferimento API](https://docs.microsoft.com/dotnet/api/Microsoft.MixedReality.Toolkit)|
-|:---|:---|
+| [![Note sulla versione](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-26-release-notes.md)<br/>[Note sulla versione](release-notes/mrtk-26-release-notes.md)| [![Panoramica di MRTK](features/images/MRTK_Icon_ArchitectureOverview.png)](architecture/overview.md)<br/>[Panoramica di MRTK](architecture/overview.md)|[![Riferimento API](features/images/MRTK_Icon_APIReference.png)](https://docs.microsoft.com/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[Riferimento API](https://docs.microsoft.com/dotnet/api/Microsoft.MixedReality.Toolkit)|
+|:---|:---|:---|
 
 ## <a name="build-status"></a>Stato della compilazione
 
@@ -86,7 +86,7 @@ Se non si ha familiarità con MRTK o lo sviluppo di realtà mista in Unity, è c
        Rilevamento della mano [ ![ (Ultraleap)](features/images/MRTK_Icon_HandTracking.png)](features/cross-platform/leap-motion-mrtk.md) **[ <br/> (Ultraleap)](features/cross-platform/leap-motion-mrtk.md)**<br>
     :::column-end:::
     :::column:::
-        Controlli dell'interfaccia utente [ ![ 1](features/images/MRTK_Icon_UIControls.png)](#ux-building-blocks) **[controlli UI 1](#ux-building-blocks)**<br>
+        Controlli dell'interfaccia [ ![ utente controlli dell'](features/images/MRTK_Icon_UIControls.png)](#ux-building-blocks) interfaccia utente **[](#ux-building-blocks)**<br>
     :::column-end:::
     :::column:::
         Risolutori dei [ ![ risolutori](features/images/MRTK_Icon_Solver.png)](features/ux-building-blocks/solvers/solver.md) **[](features/ux-building-blocks/solvers/solver.md)**<br>
@@ -98,7 +98,7 @@ Se non si ha familiarità con MRTK o lo sviluppo di realtà mista in Unity, è c
 
 :::row:::
     :::column:::
-       Consapevolezza spaziale [ ![ 1](features/images/MRTK_Icon_SpatialUnderstanding.png)](features/spatial-awareness/spatial-awareness-getting-started.md) rilevamento **[spaziale <br/> 2](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
+       [ ![](features/images/MRTK_Icon_SpatialUnderstanding.png)](features/spatial-awareness/spatial-awareness-getting-started.md) **[ <br/> Consapevolezza](features/spatial-awareness/spatial-awareness-getting-started.md) spaziale**<br>
     :::column-end:::
     :::column:::
         Strumento di diagnostica strumento di [ ![ diagnostica](features/images/MRTK_Icon_Diagnostics.png)](features/diagnostics/diagnostics-system-getting-started.md) **[ <br/>](features/diagnostics/diagnostics-system-getting-started.md)**<br>
@@ -223,11 +223,11 @@ Se non si ha familiarità con MRTK o lo sviluppo di realtà mista in Unity, è c
         Indicatore visivo per la comunicazione del processo o dell'operazione dati
     :::column-end:::
     :::column:::
-        Finestra di [ ![ dialogo](features/images/Dialog/MRTK_UX_Dialog_Main.png)](features/experimental/dialog.md) **[[sperimentale]](features/experimental/dialog.md)**<br>
+        [ ![ Finestra di dialogo](features/images/Dialog/MRTK_UX_Dialog_Main.png)](features/ux-building-blocks/dialog.md) **[](features/ux-building-blocks/dialog.md)**<br>
         INTERFACCIA utente per la richiesta di conferma o riconoscimento da un utente
     :::column-end:::
     :::column:::
-        [ ![ Coach Hand Coach](features/images/hand-coach/MRTK_UX_HandCoach_Main.jpg)](features/experimental/hand-coach.md) **[[sperimentale]](features/experimental/hand-coach.md)**<br>
+        [ ![](features/images/hand-coach/MRTK_UX_HandCoach_Main.jpg)](features/ux-building-blocks/hand-coach.md) **[Coach](features/ux-building-blocks/hand-coach.md) Hand Coach**<br>
         Componente che consente di guidare l'utente quando il movimento non è stato insegnato
     :::column-end:::
 :::row-end:::

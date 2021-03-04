@@ -1,22 +1,22 @@
 ---
-title: ReleaseNotes
+title: Note sulla versione di MRTK 2,5
 description: Release abbiend della versione corrente di MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 00a6bc326469032fee52ae8817302500d50e583e
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: e2d93993ad6100adc0c9bb70067e6cb09d61c68b
+ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782222"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101883272"
 ---
 # <a name="microsoft-mixed-reality-toolkit-254-release-notes"></a>Note sulla versione di Microsoft Mixed Reality Toolkit 2.5.4
 
 - [Novità](#whats-new)
-- [Aggiornamento delle linee guida](updates-deployment/updating.md#upgrading-to-a-new-version-of-mrtk)
+- [Aggiornamento delle linee guida](../updates-deployment/updating.md#upgrading-to-a-new-version-of-mrtk)
 - [Problemi noti](#known-issues)
 
 > [!IMPORTANT]
@@ -40,7 +40,7 @@ in 2.5.2 è stato introdotto [un problema di compilazione durante l'integrazione
 
 ### <a name="add-support-for-openxr"></a>Aggiungere il supporto per OpenXR
 
-È stato aggiunto il supporto iniziale per il pacchetto di anteprima OpenXR di Unity e il pacchetto OpenXR per la realtà mista Microsoft. Per altre informazioni, vedere la pagina introduttiva di [MRTK/XRSDK](configuration/getting-started-with-mrtk-and-xrsdk.md), [post del forum di Unity](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)o [documentazione di Microsoft](https://aka.ms/openxr-unity-install) .
+È stato aggiunto il supporto iniziale per il pacchetto di anteprima OpenXR di Unity e il pacchetto OpenXR per la realtà mista Microsoft. Per altre informazioni, vedere la pagina introduttiva di [MRTK/XRSDK](../configuration/getting-started-with-mrtk-and-xrsdk.md), [post del forum di Unity](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)o [documentazione di Microsoft](https://aka.ms/openxr-unity-install) .
 
 > [!IMPORTANT]
 > OpenXR in Unity è supportato solo in Unity 2020,2 e versioni successive.
@@ -83,7 +83,7 @@ Per risolverlo, verificare quanto segue:
 - **Finestra**  >  di In **Gestione pacchetti** sono installati uno o più pacchetti XR
 - Toolkit per realtà **mista**  >  **Utilità**  >  di **Configurare il progetto Unity** ed effettuare una selezione per **Spatializer audio**
 
-  ![Seleziona Apatializer audio](features/images/release-notes/SpatializerSelection.png)
+  ![Seleziona Apatializer audio](images/SpatializerSelection.png)
 
 ### <a name="nullreferenceexception-object-reference-not-set-to-an-instance-of-an-object-scenetransitionserviceinitialize"></a>NullReferenceException: riferimento all'oggetto non impostato su un'istanza di un oggetto (SceneTransitionService.Initialize)
 
@@ -95,7 +95,7 @@ Questo errore è dovuto al fatto che il profilo di configurazione del servizio t
 - Se non è espanso, espandere `Scene Transition Service`
 - Impostare il valore di `Configuration Profile` su **MRTKExamplesHubSceneTransitionServiceProfile**
 
-<img src="features/images/release-notes/FixSceneTransitionProfile.png" width="500px" alt="Fix Scene Transition">
+![Correzione della transizione della scena](images/FixSceneTransitionProfile.png)
 
 ### <a name="oculus-quest"></a>Oculus-ricerca
 

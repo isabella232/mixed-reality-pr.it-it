@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 3a25e598f69b6b7206057deebe94c4bb88af000e
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: fcd1b644eca2f81d84f15ec852ea70387f33062b
+ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781500"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101883240"
 ---
 # <a name="updating-the-microsoft-mixed-reality-toolkit"></a>Aggiornamento di Microsoft Mixed Reality Toolkit
 
@@ -28,9 +28,12 @@ ms.locfileid: "101781500"
 
 Le istruzioni seguenti descrivono il percorso di aggiornamento da 2.4.0 a 2.5.0. Se il progetto si trova in 2.3.0 o versioni precedenti, leggere le modifiche [tra le versioni](#updating-230-to-240) per comprendere il percorso di aggiornamento o leggere le [istruzioni](https://microsoft.github.io/MixedRealityToolkit-Unity/version/releases/2.4.0/Documentation/Updating.html) della versione precedente per eseguire un aggiornamento versione per versione.
 
+### <a name="mixed-reality-feature-tool"></a>Strumento per la funzionalità di realtà mista
+Il modo più semplice per eseguire l'aggiornamento di MRTK a una versione più recente di MRTK consiste nell'usare lo strumento per la [funzionalità della realtà mista](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) per scaricare i pacchetti più recenti e caricarli direttamente nel progetto Unity.
+
 ### <a name="unity-asset-unitypackage-files"></a>File di asset Unity (con estensione file unitypackage Tools)
 
-Per il percorso di aggiornamento più semplice, seguire questa procedura.
+Un altro percorso di aggiornamento consiste nel scaricare manualmente i pacchetti MRTK Unity e applicarli al progetto. Vedere i passaggi seguenti:
 
 1. Salvare una copia del progetto corrente, nel caso in cui si riscontrino eventuali strappi in qualsiasi punto della procedura di aggiornamento.
 1. Chiudi Unity
@@ -309,7 +312,7 @@ La `NearInteractionTouchableSurface` classe è stata aggiunta e ora funge da cla
 
 La mesh mano e le visualizzazioni congiunte dispongono ora di impostazioni distinte per l'editor e il lettore. Il profilo di rilevamento della mano è stato aggiornato per consentire l'impostazione di queste visualizzazioni su; Niente, tutto, editor o lettore.
 
-![Modalità di visualizzazione mano](../features/images/release-notes/HandTrackingVisualizationModes.png)
+![Modalità di visualizzazione mano](../release-notes/images/HandTrackingVisualizationModes.png)
 
 Potrebbe essere necessario aggiornare i profili di rilevamento mano personalizzati per funzionare correttamente con la versione 2.1.0.
 
@@ -396,11 +399,11 @@ Se si utilizza la nuova classe CoreSystem, il codice dell'applicazione non richi
 
 Con l'aggiunta di IMixedRealityRaycastProvider, il profilo di configurazione del sistema di input è stato modificato. Se si dispone di un profilo personalizzato, è possibile che vengano visualizzati gli errori nell'immagine seguente quando si esegue l'applicazione.
 
-![Selezione del provider Raycast 1](../features/images/release-notes/UnableToRegisterRaycastProvider.png)
+![Selezione del provider Raycast 1](../release-notes/images/UnableToRegisterRaycastProvider.png)
 
 Per risolvere il problema, aggiungere un'istanza di IMixedRealityRaycastProvider al profilo di sistema di input.
 
-![Selezione del provider Raycast 2](../features/images/release-notes/SelectRaycastProvider.png)
+![Selezione del provider Raycast 2](../release-notes/images/SelectRaycastProvider.png)
 
 **Sistema di eventi**
 
