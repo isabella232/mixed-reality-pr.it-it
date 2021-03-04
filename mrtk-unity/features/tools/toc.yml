@@ -1,0 +1,16 @@
+- name: Strumento di mapping controller
+  href: controller-mapping-tool.md
+- name: Finestra dipendenze
+  href: dependency-window.md
+- name: Creazione guidata servizio di estensione
+  href: extension-service-creation-wizard.md
+- name: Holographic Remoting
+  href: holographic-remoting.md
+- name: Strumento utilizzo funzionalità di input
+  href: input-feature-usage-tool.md
+- name: Finestra di migrazione
+  href: migration-window.md
+- name: Ottimizza finestra
+  href: optimize-window.md
+- name: Utilità screenshot
+  href: screenshot-utility.md

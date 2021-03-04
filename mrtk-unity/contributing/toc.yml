@@ -1,0 +1,14 @@
+- name: Panoramica del contributo
+  href: contributing.md
+- name: Linee guida per la codifica
+  href: coding-guidelines.md
+- name: Scrittura ed esecuzione di test
+  href: unit-tests.md
+- name: Linee guida sulla documentazione
+  href: documentation-guide.md
+- name: Richieste pull
+  href: pull-requests.md
+- name: Funzionalità sperimentali
+  href: experimental-features.md
+- name: Modifiche di rilievo
+  href: breaking-changes.md

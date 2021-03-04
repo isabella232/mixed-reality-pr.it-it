@@ -1,0 +1,8 @@
+- name: Rilevamento delle funzionalità della piattaforma
+  href: detecting-platform-capabilities.md
+- name: MRTK movimento intercalare
+  href: leap-motion-mrtk.md
+- name: Oculus-ricerca-MRTK
+  href: oculus-quest-mrtk.md
+- name: Uso di AR Foundation
+  href: using-ar-foundation.md
