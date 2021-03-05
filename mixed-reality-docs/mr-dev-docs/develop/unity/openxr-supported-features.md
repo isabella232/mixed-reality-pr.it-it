@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, realtà mista, MRTK, Toolkit per realtà mista, realtà aumentata, realtà virtuale, cuffie con realtà mista, informazioni, esercitazione, introduzione
-ms.openlocfilehash: bad18c5f30465120bce370aa91c13ff3f229bef6
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: 0501abe5a417c17283347455ccea8ec6f49a6a45
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496144"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230742"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Realtà mista OpenXR le funzionalità supportate in Unity
 
@@ -34,6 +34,7 @@ Attualmente sono supportate le funzionalità seguenti:
 * Compatibile con MRTK Unity 2.5.3 e versioni successive tramite il [supporto del provider OpenXR MRTK](openxr-getting-started.md#using-mrtk-with-openxr-support).
 * Compatibile con Unity [ARFoundation 4,0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) o versione successiva.
 * (Aggiunto in 0.1.3) Supporta la [comunicazione remota olografica dell'app desktop](#holographic-remoting-in-desktop-app) da un'app autonoma Windows compilata e distribuita.
+* (Aggiunto in 0.1.4) Supporta il [rilevamento del codice](#qr-codes) a matrice in HoloLens2 tramite SpatialGraphNode
 
 ## <a name="holographic-remoting-setup"></a>Configurazione della comunicazione remota olografica
 
@@ -205,13 +206,19 @@ public static readonly InputFeatureUsage<Vector3> PointerPosition = new InputFea
 
 Per informazioni sull'uso di haptics nel sistema di input XR di Unity, è possibile trovare la documentazione nel [Manuale di Unity per Unity XR input-haptics](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics).
 
+## <a name="qr-codes"></a>Codici QR
+
+HoloLens 2 è in grado di rilevare i codici a matrice nell'ambiente attorno al visore VR, stabilendo un sistema di coordinate nella posizione reale di ciascun codice. Per ulteriori informazioni, vedere la documentazione relativa al [rilevamento del codice](../platform-capabilities-and-apis/qr-code-tracking.md) a matrice.  Quando si usa il plug-in OpenXR, estrarre l' [ `SpatialGraphNodeId` dall'API QR](../platform-capabilities-and-apis/qr-code-tracking.md#qr-api-reference) e usare l' `Microsoft.MixedReality.OpenXR.SpatialGraphNode` API per individuare il codice a matrice.
+
+Per riferimento, abbiamo un progetto di esempio di rilevamento a matrice [su GitHub](https://github.com/yl-msft/QRTracking) con una spiegazione dettagliata dell'utilizzo dell' [ `SpatialGraphNode` API](https://github.com/yl-msft/QRTracking/blob/main/SampleQRCodes/Assets/Scripts/SpatialGraphNodeTracker.cs).
+
 ## <a name="whats-coming-soon"></a>Presto disponibile
 
 I problemi e le funzionalità mancanti seguenti sono noti con la versione del plug-in OpenXR della realtà mista **0.1.0**. Stiamo lavorando a questi e verranno rilasciate correzioni e nuove funzionalità nelle prossime versioni.
 
 * **ARPlaneSubsystem** non è ancora supportato. Le API **ARPlaneManager**, **ARRaycastManager** e related, ad esempio **ARAnchorManager. AttachAnchor** , non sono supportate in HoloLens 2.
-* L' **ancoraggio** non è ancora supportato dalla comunicazione remota olografica, ma sarà disponibile a breve in futuro.
-* Il rilevamento della **mesh manuale** , i **codici QR** e **XRMeshSubsystem** non sono ancora supportati.
+* La **persistenza di ancoraggio** non è ancora supportata dalla comunicazione remota olografica, ma sarà disponibile a breve.
+* Il rilevamento della **mesh della mano** e **XRMeshSubsystem** non sono ancora supportati.
 * Il supporto di **ancoraggi spaziali di Azure** è disponibile in una versione futura.
 * **Arm64** è l'unica piattaforma supportata per le app HoloLens 2. La piattaforma **ARM** sarà disponibile in una versione futura.
 

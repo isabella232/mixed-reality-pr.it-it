@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: evento, calendario, Accademia, pianificazione, SF, San Francisco, Reactor
-ms.openlocfilehash: 2e7cb5d06cb0903e3dc3f850f452ded6597cd929
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: f534a170594eb26e0d7f56e8694b9112cb0acbac
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101760057"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230882"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Eventi di realtà mista Microsoft
 
@@ -30,5 +30,7 @@ Partecipa al team Microsoft Mixed Reality in questi prossimi eventi.
 | HoloLens & Meetup reality misto|8 settembre 2020|[Percezione umana e realtà mista](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Human-Perception-and-Mixed-Reality)|
 | Mixed Reality Speaker Series|22 settembre 2020|[Escape di Kippy: Introduzione a Unreal & MRTK per HoloLens 2](../develop/unreal/unreal-kippys-escape.md)|
 | Mixed Reality Speaker Series|22 ottobre 2020|[Introduzione a WebXR con BabylonJS](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
+| Mixed Reality Speaker Series|3 novembre 2020|[Effetti visivi in realtà mista](https://channel9.msdn.com/Shows/Mixed-Reality/Visual-Effects-in-Mixed-Reality)|
 | Mixed Reality Speaker Series|17 novembre 2020|[Creazione del futuro: novità di MRTK](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
 | Mixed Reality Speaker Series|1 dicembre 2020|[Progettazione di ologrammi](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Making-of-Designing-Holograms)|
+| Mixed Reality Speaker Series|11 febbraio 2021|[Un giorno in MR: come gli effetti spaziali computing si influiscono quotidianamente sul mondo](https://channel9.msdn.com/Shows/Mixed-Reality/One-Day-In-MR-How-Spatial-Computing-Effects-Every-Day-Life)|

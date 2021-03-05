@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, realtà mista, MRTK, Toolkit per realtà mista, realtà aumentata, realtà virtuale, cuffie con realtà mista, informazioni, esercitazione, introduzione
-ms.openlocfilehash: a4606eeb1fa6c8dc0858653a196c1e536ae473d4
-ms.sourcegitcommit: e2228b9585302eeff1d853ddb54be8421a21c954
+ms.openlocfilehash: 9b95a0978522fb9fefaca3c4b96189131b88d0ec
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "102189123"
+ms.locfileid: "102230857"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Uso del plug-in OpenXR per la realtà mista per Unity
 
@@ -20,7 +20,7 @@ A partire da Unity versione 2020,2, il pacchetto di plug-in per la realtà mista
 ## <a name="prerequisites"></a>Prerequisiti
 
 * Unity 2020,2 o versione successiva
-* Plug-in OpenXR Unity 0.1.3 o versione successiva
+* Plug-in OpenXR Unity 0.1.4 o versione successiva
 * Visual Studio 2019 o versione successiva
 * Installare il supporto della piattaforma **UWP** in Unity per le app HoloLens 2
 

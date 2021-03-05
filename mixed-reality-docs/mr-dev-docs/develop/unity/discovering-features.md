@@ -1,18 +1,18 @@
 ---
 title: Individuazione e acquisizione di funzionalità
-description: Scopri e Scarica le funzionalità della realtà mista.
+description: Individuare e scaricare le funzionalità della realtà mista.
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 01/27/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: aggiornamento, strumenti, attività iniziali, nozioni di base, unity, visual studio, toolkit, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, installazione, Windows, HoloLens, emulatore, unreal, openxr
-ms.openlocfilehash: 4da6b6fdfc0205d4fa7fb5bf4ae9e48993d7c1e6
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: 859abd0c8e538392a7ba2a1adbb4387956c50028
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99244599"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230717"
 ---
 # <a name="discovering-and-acquiring-features"></a>Individuazione e acquisizione di funzionalità
 
@@ -51,8 +51,7 @@ Le funzionalità sono elencate nella categoria appropriata. Da sinistra a destra
 
 ## <a name="refresh-the-feature-catalog"></a>Aggiornare il catalogo delle funzionalità
 
-Per verificare la presenza di funzionalità nuove e aggiornate, fare clic sull'aggiornamento ![pulsante Aggiorna](images/RefreshButton.png) . Questa operazione si connetterà al sito del catalogo e recupererà le informazioni più recenti.
-* Una volta che il catalogo è stato letto, verranno visualizzate la data e l'ora dell'ultimo aggiornamento.
+Per verificare la presenza di funzionalità nuove e aggiornate, fare clic sull'aggiornamento ![pulsante Aggiorna](images/RefreshButton.png) . Questa operazione si connetterà al sito del catalogo e recupererà le informazioni più recenti. Una volta che il catalogo è stato letto, verranno visualizzate la data e l'ora dell'ultimo aggiornamento.
 
 ## <a name="select-features"></a>Selezione delle funzionalità
 
@@ -73,7 +72,7 @@ Al termine del download, lo strumento per la funzionalità di realtà mista pass
 
 ## <a name="going-back-to-the-previous-step"></a>Tornando al passaggio precedente
 
-Dalle **funzionalità di individuazione**, lo strumento della funzionalità di realtà mista consente di tornare all'inizio. Selezionare torna **indietro** per avviare di nuovo.
+Dalle **funzionalità di individuazione**, lo strumento della funzionalità di realtà mista consente di tornare alla selezione del progetto. Selezionare torna **indietro** per avviare di nuovo.
 
 ## <a name="see-also"></a>Vedi anche
 

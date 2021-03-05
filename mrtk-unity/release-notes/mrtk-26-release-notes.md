@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 02/28/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 4d900686493d566e7c3af9d48c5f1e95f6017449
-ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
+ms.openlocfilehash: 41d7b2fd1f1991608a2e89b4c0d3f561fdb01660
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101883411"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230732"
 ---
 # <a name="microsoft-mixed-reality-toolkit-260-release-notes"></a>Note sulla versione di Microsoft Mixed Reality Toolkit 2.6.0
 
@@ -37,6 +37,16 @@ ms.locfileid: "101883411"
 ### <a name="hp-motion-controllers-now-supported-with-mrtk"></a>I controller di movimento HP sono ora supportati con MRTK
 
 I controller per i Riverb di HP G2 ora funzionano in modo nativo con MRTK.
+
+### <a name="experimental-interactive-element--state-visualizer"></a>Visualizzatore di stato e elemento interattivo sperimentale 
+
+L'elemento interattivo è un punto di ingresso centralizzato semplificato al sistema di input MRTK. Contiene i metodi di gestione dello stato, la gestione degli eventi e la logica di impostazione dello stato per gli Stati di interazione di base. Per ulteriori informazioni, vedere la [documentazione degli elementi interattivi](../features/experimental/interactive-element.md).
+
+![InteractiveElementAddCoreState](../features/images/interactive-element/InEditor/Gifs/InspectorHighlightEditor.gif)
+
+Il Visualizzatore di stato è un componente di animazione che dipende dall'elemento interattivo.  Questo componente crea clip di animazione, imposta fotogrammi chiave e genera una macchina a stati Animator. Per ulteriori informazioni, vedere la [documentazione relativa al Visualizzatore stato](../features/experimental/interactive-element.md#state-visualizer-experimental)
+
+![StateVisualizerColorChangeOnFocus](../features/images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
 
 ### <a name="teleportation-with-the-teleport-gesture-now-supported-on-all-platforms"></a>Teleporting con il gesto Teleport ora supportato in tutte le piattaforme
 
@@ -69,6 +79,12 @@ Due nuovi risolutori sono pronti per l'uso con MRTK principali.
 
 La funzionalità di coaching a mano è ora pronta per l'uso con MRTK principali.
   ![Esempio di coach della mano](https://docs.microsoft.com/windows/mixed-reality/design/images/handcoach/airtap.gif)
+
+### <a name="pulse-shader-graduated-from-experimental"></a>Pulse shader laureato da sperimentale 
+
+Gli script di Pulse shader sono laureati da sperimentale. Per altre informazioni, vedere la [documentazione di Pulse shader](../features/rendering/pulse-shader.md)
+
+![MRTK_SpatialMesh_Pulse](https://user-images.githubusercontent.com/13754172/68261851-3489e200-fff6-11e9-9f6c-5574a7dd8db7.gif)
 
 
 ### <a name="input-recording-service-improvements"></a>Miglioramenti del servizio registrazione input
