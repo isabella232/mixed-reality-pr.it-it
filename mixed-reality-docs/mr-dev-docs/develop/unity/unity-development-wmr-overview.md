@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realtà mista, sviluppo, guida introduttiva, nuovo progetto, conversione, funzionalità, fotocamera, simulazione, emulazione, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, input vocale, fotocamera individuabile, emulatore, Azure, esercitazioni
-ms.openlocfilehash: 65b45d448854f8903ed37466ebaa3c427dea3089
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 3a1914fc6bc35b2ec4fb7364818a21522e01c6e1
+ms.sourcegitcommit: 5694cc472bde67c940204ebe6671b0598501e62a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582942"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102126604"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>Sviluppo in Unity per VR e Windows Mixed Reality
 
@@ -74,7 +74,7 @@ Se si hanno a disposizione app di cui si vuole eseguire la conversione, sarà ut
 Prima di entrare nel mondo della realtà mista in totale autonomia, è consigliabile esaminare la documentazione aggiuntiva indicata di seguito. 
 
 * [Guida per appassionati di VR](/windows/mixed-reality/enthusiast-guide/vr-journey)
-* [Unity Asset Store](https://www.assetstore.unity3d.com)
+* [Unity Asset Store](https://assetstore.unity.com)
 
 ## <a name="see-also"></a>Vedere anche 
 

@@ -7,18 +7,18 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realtà mista, sviluppo, guida introduttiva, nuovo progetto, porting, funzionalità, fotocamera, simulazione, emulazione, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, mapping spaziale, input vocale, fotocamera individuabile, emulatore, Azure, esercitazioni
-ms.openlocfilehash: a7d291e66fa65f17b0cd37caedfa25a821cc99c5
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: ed0f27822ab83baa2c1de6575067bdbd6b00a5e6
+ms.sourcegitcommit: 5694cc472bde67c940204ebe6671b0598501e62a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759927"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102126614"
 ---
 # <a name="unity-development-for-hololens"></a>Sviluppo di Unity per HoloLens
 
 ![Logo banner di Unity](../images/unity_logo_banner.png)
 
-La soluzione più veloce per creare un'[app di realtà mista](../../design/app-views.md) per HoloLens in [Unity](https://unity.com) è rappresentata da Mixed Reality Toolkit. Se si usa Unity per la prima volta, prima di continuare è consigliabile esplorare le [esercitazioni](https://unity3d.com/learn/tutorials) di livello principiante nella piattaforma Unity Learn. È opportuno anche visitare l'[Asset Store](https://www.assetstore.unity3d.com/) completo e i [forum sulla realtà mista per Unity](https://forum.unity3d.com/forums/hololens.102/) per partecipare alla community online impegnata nella creazione di app di realtà mista. In questi ambienti si scoprono spesso risorse o soluzioni estremamente interessanti. Per iniziare a usare MRTK, passare ai checkpoint di sviluppo illustrati di seguito.
+La soluzione più veloce per creare un'[app di realtà mista](../../design/app-views.md) per HoloLens in [Unity](https://unity.com) è rappresentata da Mixed Reality Toolkit. Se si usa Unity per la prima volta, prima di continuare è consigliabile esplorare le [esercitazioni](https://unity3d.com/learn/tutorials) di livello principiante nella piattaforma Unity Learn. È opportuno anche visitare l'[Asset Store](https://assetstore.unity.com) completo e i [forum sulla realtà mista per Unity](https://forum.unity3d.com/forums/hololens.102/) per partecipare alla community online impegnata nella creazione di app di realtà mista. In questi ambienti si scoprono spesso risorse o soluzioni estremamente interessanti. Per iniziare a usare MRTK, passare ai checkpoint di sviluppo illustrati di seguito.
 
 > [!IMPORTANT]
 > Se si ha a disposizione un progetto Unity da trasferire in HoloLens 2, consultare le **[guide per il porting](../porting-apps/porting-overview.md)** . Sono disponibili guide per i progetti che usano HTK, MRTK V1 o SteamVR.

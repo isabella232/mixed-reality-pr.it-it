@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: fad990fec79e73d5b5a1224907d1d8772685ffe8
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: b67d21068a9d1e03e66b8c3f4121c11d6282790d
+ms.sourcegitcommit: 5694cc472bde67c940204ebe6671b0598501e62a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782332"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102126634"
 ---
 # <a name="holographic-remoting"></a>Holographic Remoting
 
@@ -73,7 +73,7 @@ A partire da MRTK versione 2.5.0, per motivi di prestazioni, questo #define non 
 
 ### <a name="removing-hololens-2-specific-remoting-support"></a>Rimozione del supporto per servizi remoti specifici di HoloLens 2
 
-Se si verificano conflitti o altri problemi causati dalla presenza dell'adattatore DotNetWinRT, contattare [una delle risorse della Guida](../../welcome-to-mrtk.md#getting-help).
+Se si verificano conflitti o altri problemi causati dalla presenza dell'adattatore DotNetWinRT, contattare [una delle risorse della Guida](../../index.md#getting-help).
 
 ## <a name="xr-sdk-setup-instructions"></a>Istruzioni di installazione di XR SDK
 
