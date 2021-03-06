@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Foto, video, hololens, fotocamera, Unity, locatable, PVC, videocamera video foto, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, webcam, acquisizione foto, acquisizione video
-ms.openlocfilehash: 8916b332774185e4453b514ca7b6916947bdcd81
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: ccf0c17a5f419341e64a87fb9ef04ef0a40c2a33
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226420"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236902"
 ---
 # <a name="locatable-camera-in-unity"></a>Fotocamera individuabile in Unity
 
@@ -26,7 +26,8 @@ Con la fotocamera può essere eseguita una sola operazione alla volta. È possib
 
 ## <a name="photo-capture"></a>Acquisizione foto
 
-**Spazio dei nomi:** *UnityEngine. XR. WSA. Webcam*<br>
+**Spazio dei nomi:**  
+*UnityEngine. XR. WSA. WebCam (Unity \~ 2018) UnityEngine. Windows. webcam (unity 2019 \~ )*<br>
 **Tipo:** *fotoacquisizione*
 
 Il tipo di *acquisizione* di foto consente di scattare fotografie con la fotocamera del video. Il modello generale per l'uso di *fotocapture* per scattare una foto è il seguente:

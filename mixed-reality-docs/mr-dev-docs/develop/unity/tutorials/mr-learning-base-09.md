@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, comandi vocali, input vocale
 ms.localizationpriority: high
-ms.openlocfilehash: bb238ee6ca4c657d7e2cb8e3c41f2cdebc7fc0de
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 65f989f6f587b236d7931c295e9375ad20a53218
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590393"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237217"
 ---
 # <a name="9-using-speech-commands"></a>9. Uso dei comandi vocali
 
@@ -49,8 +49,8 @@ Nella sezione **Speech Commands** (Comandi vocali) fare clic sul pulsante **+ Ad
 
 * Abilita indicatore
 * Abilita tocco per posizionare
-* Abilita rettangolo di selezione
-* Disabilita rettangolo di selezione
+* Abilita controllo limiti
+* Disabilitare il controllo dei limiti
 
 ![Aggiunta di nuovi comandi vocali](images/mr-learning-base/base-09-section2-step1-2.png)
 
@@ -88,10 +88,10 @@ Espandere **Element 0** e configurarlo come segue:
 
 Espandere **Element 1** e configurarlo come segue:
 
-* Nel campo **Keyword** (Parola chiave) immettere **Abilita rettangolo di selezione** per fare riferimento al comando vocale Abilita rettangolo di selezione creato nella sezione precedente
+* Nel campo della **parola chiave** immettere **Enable Bounds Control** per fare riferimento al comando Enable Bounds Control creato nella sezione precedente.
 * Fare clic sulla piccola icona **+** per aggiungere un evento
 * Nella finestra Hierarchy (Gerarchia) assegnare l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)
-* Nell'elenco a discesa **No Function** (Nessuna funzione) selezionare **BoundingBox** > **bool enabled** per aggiornare il valore di questa proprietà quando viene attivato l'evento
+* Nell'elenco a discesa **Nessuna funzione** selezionare **BoundsControl**  >  **bool Enabled** per aggiornare il valore della proprietà quando viene attivato l'evento
 * Assicurarsi che la casella di controllo dell'argomento sia **selezionata**
 * Fai clic sulla piccola icona **+** per aggiungere un altro evento
 * Nella finestra Hierarchy (Gerarchia) assegnare l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)
@@ -102,10 +102,10 @@ Espandere **Element 1** e configurarlo come segue:
 
 Espandere **Element 2** e configurarlo come segue:
 
-* Nel campo **Keyword** (Parola chiave) immettere **Disabilita rettangolo di selezione** per fare riferimento al comando vocale Disabilita rettangolo di selezione creato nella sezione precedente
+* Nel campo **parola chiave** immettere **Disable Bounds Control** per fare riferimento al comando Disable Bounds Control creato nella sezione precedente.
 * Fare clic sulla piccola icona **+** per aggiungere un evento
 * Nella finestra Hierarchy (Gerarchia) assegnare l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)
-* Nell'elenco a discesa **No Function** (Nessuna funzione) selezionare **BoundingBox** > **bool enabled** per aggiornare il valore di questa proprietà quando viene attivato l'evento
+* Nell'elenco a discesa **Nessuna funzione** selezionare **BoundsControl**  >  **bool Enabled** per aggiornare il valore della proprietà quando viene attivato l'evento
 * Verificare che la casella di controllo dell'argomento sia **deselezionata**
 * Fai clic sulla piccola icona **+** per aggiungere un altro evento
 * Nella finestra Hierarchy (Gerarchia) assegnare l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)

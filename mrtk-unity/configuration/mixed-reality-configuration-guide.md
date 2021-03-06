@@ -6,12 +6,12 @@ ms.author: roliu
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 0894eac3d1772d1d50c93b4ebe0da35301f7fea9
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 9b4db83af7236c78978cf329ebdf96d49c50afa6
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783671"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237002"
 ---
 # <a name="mixed-reality-toolkit-profile-configuration-guide"></a>Guida alla configurazione del profilo del Toolkit di realtà mista
 
@@ -67,7 +67,8 @@ Da qui è possibile passare a tutti i profili di configurazione per MRTK, tra cu
     - [Controlli servizio](#service-inspectors)
     - [Renderer buffer profondità](#depth-buffer-renderer)
   - [Modifica dei profili in fase di esecuzione](#changing-profiles-at-runtime)
-  - [Scambio di profili prima dell'inizializzazione di MRTK](#swapping-profiles-prior-to-mrtk-initialization)
+    - [Opzione del profilo di inizializzazione pre-MRTK](#pre-mrtk-initialization-profile-switch)
+    - [Opzione del profilo attivo](#active-profile-switch)
   - [Vedere anche](#see-also)
 
 Questi profili di configurazione sono descritti in dettaglio nelle sezioni pertinenti:
@@ -343,16 +344,15 @@ Per assicurarsi che una scena esegua il rendering di tutti i dati necessari nel 
 
 È possibile aggiornare i profili in fase di esecuzione e in genere esistono due diversi scenari e tempi in cui questo è utile:
 
-1. All'avvio, prima dell'inizializzazione di MRTK, lo scambio del profilo per abilitare o disabilitare funzionalità diverse in base alle funzionalità del dispositivo. Se, ad esempio, l'esperienza viene eseguita in VR senza hardware per il mapping spaziale, probabilmente non ha senso avere un componente di mapping spaziale abilitato.
-1. Dopo l'avvio, dopo l'inizializzazione di MRTK, lo scambio del profilo per modificare la modalità di funzionamento di determinate funzionalità. È ad esempio possibile che nell'applicazione sia presente un'esperienza secondaria specifica che desidera che i puntatori a distanza siano completamente rimossi. **Si noti** che questo tipo di scambio attualmente non funziona a causa di questo problema: [https://github.com/microsoft/MixedRealityToolkit-Unity/issues/4289](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/4289) .
+1. **Opzione del profilo di inizializzazione pre-MRTK**: all'avvio, prima dell'inizializzazione del MRTK e il profilo diventa attivo, sostituendo il profilo non ancora in uso per abilitare o disabilitare le funzionalità diverse in base alle funzionalità del dispositivo. Se, ad esempio, l'esperienza viene eseguita in VR senza hardware per il mapping spaziale, probabilmente non ha senso avere un componente di mapping spaziale abilitato.
+1. **Opzione del profilo attivo**: dopo l'avvio, dopo l'inizializzazione di MRTK e l'attivazione di un profilo, lo scambio del profilo attualmente in uso per modificare la modalità di funzionamento di determinate funzionalità. È ad esempio possibile che nell'applicazione sia presente un'esperienza secondaria specifica che desidera che i puntatori a distanza siano completamente rimossi.
 
-## <a name="swapping-profiles-prior-to-mrtk-initialization"></a>Scambio di profili prima dell'inizializzazione di MRTK
+### <a name="pre-mrtk-initialization-profile-switch"></a>Opzione del profilo di inizializzazione pre-MRTK
 
-Questa operazione può essere eseguita connettendo un monocomportamento (esempio riportato di seguito) che viene eseguito prima dell'inizializzazione di MRTK:
+Questa operazione può essere eseguita alleghindo un monocomportamento (esempio riportato di seguito) che viene eseguito prima dell'inizializzazione di MRTK (ad esempio, svegli ()). Si noti che lo script (ad esempio, chiamata a `SetProfileBeforeInitialization` ) deve essere eseguito prima dello `MixedRealityToolkit` script, operazione che può essere eseguita impostando [le impostazioni dell'ordine di esecuzione degli script](https://docs.unity3d.com/Manual/class-MonoManager.html).
 
 ```csharp
 using Microsoft.MixedReality.Toolkit;
-using UnityEditor;
 using UnityEngine;
 
 /// <summary>
@@ -365,19 +365,36 @@ using UnityEngine;
 /// to that of MixedRealityToolkit.cs. See https://docs.unity3d.com/Manual/class-MonoManager.html
 /// for more information on script execution order.
 /// </remarks>
-public class ProfileSwapper : MonoBehaviour
+public class PreInitProfileSwapper : MonoBehaviour
 {
-    void Start()
+
+    [SerializeField]
+    private MixedRealityToolkitConfigurationProfile profileToUse = null;
+
+    private void Awake()
     {
         // Here you could choose any arbitrary MixedRealityToolkitConfigurationProfile (for example, you could
         // add some platform checking code here to determine which profile to load).
-        var profile = AssetDatabase.LoadAssetAtPath<MixedRealityToolkitConfigurationProfile>("Assets/MixedRealityToolkit.Generated/CustomProfiles/RuntimeSwapparoo.asset");
-        MixedRealityToolkit.Instance.ActiveProfile = profile;
+        MixedRealityToolkit.SetProfileBeforeInitialization(profileToUse);
     }
 }
 ```
 
-Anziché "RuntimeSwapparoo. asset", è possibile avere un set arbitrario di profili che si applicano a piattaforme specifiche, ad esempio una per HoloLens 1, una per VR, una per HoloLens 2 e così via. È possibile usare diversi altri indicatori, ad esempio [https://docs.unity3d.com/ScriptReference/SystemInfo.html](https://docs.unity3d.com/ScriptReference/SystemInfo.html) o se la fotocamera è opaca o trasparente, per individuare il profilo da caricare.
+Anziché "profileToUse", è possibile avere un set di profili arbitrario che si applicano a piattaforme specifiche, ad esempio una per HoloLens 1, una per VR, una per HoloLens 2 e così via. È possibile usare diversi altri indicatori, ad esempio https://docs.unity3d.com/ScriptReference/SystemInfo.html o se la fotocamera è opaca o trasparente, per individuare il profilo da caricare.
+
+### <a name="active-profile-switch"></a>Opzione del profilo attivo
+
+Questa operazione può essere eseguita impostando la `MixedRealityToolkit.Instance.ActiveProfile` proprietà su un nuovo profilo che sostituisce il profilo attivo.
+
+```csharp
+MixedRealityToolkit.Instance.ActiveProfile = profileToUse;
+```
+
+Nota Quando si imposta in fase di `ActiveProfile` esecuzione, l'eliminazione dei servizi attualmente in esecuzione avverrà dopo l'ultimo LateUpdate () di tutti i servizi e la creazione di istanze e l'inizializzazione dei servizi associati al nuovo profilo avverranno prima del primo aggiornamento () di tutti i servizi.
+
+Durante questo processo è possibile che si verifichi un errore di applicazione evidente. Inoltre, qualsiasi script con priorità più elevata rispetto allo `MixedRealityToolkit` script può immettere il relativo aggiornamento prima che il nuovo profilo venga configurato correttamente. Per ulteriori informazioni sulla priorità degli script, vedere [impostazioni degli ordini di esecuzione degli script](https://docs.unity3d.com/Manual/class-MonoManager.html) .
+
+Nel processo di commutazione del profilo la fotocamera esistente dell'interfaccia utente rimarrà invariata, assicurando che i componenti dell'interfaccia utente di Unity che richiedono Canvas funzionino ancora dopo l'opzione.
 
 ## <a name="see-also"></a>Vedi anche
 

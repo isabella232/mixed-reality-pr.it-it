@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 07/31/2020
 ms.topic: article
 keywords: Modalità di ricerca, CV, RS4, visione artificiale, ricerca, HoloLens, HoloLens 2
-ms.openlocfilehash: c8e626969f87eda8b686ba759a167a2bf48e3277
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6737f9b668b73258e65f8d00e85dcd19c28ddfb5
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583130"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237132"
 ---
 # <a name="hololens-research-mode"></a>Modalità ricerca di HoloLens
 
@@ -104,7 +104,7 @@ Dopo aver riavviato il dispositivo, le applicazioni caricate tramite il **portal
 *Finestra modalità di ricerca nel portale per dispositivi HoloLens*
 
 > [!IMPORTANT]
-> La modalità di ricerca per HoloLens 2 è disponibile a partire dalla Build 19041,1356. Se è necessario accedere a una build precedente, iscriversi al programma di [Anteprima di insider](/hololens/hololens-insider) .
+> La modalità di ricerca per HoloLens 2 è disponibile a partire dalla Build 19041,1364. Se è necessario accedere a una build precedente, iscriversi al programma di [Anteprima di insider](/hololens/hololens-insider) . Per altri dettagli, vedere il [repository GitHub in modalità ricerca](https://github.com/microsoft/HoloLens2ForCV).
 
 ### <a name="using-sensor-data-in-your-apps"></a>Uso dei dati dei sensori nelle app
 
@@ -122,7 +122,7 @@ Per HoloLens (First Gen), usare lo strumento di [registrazione dei problemi](htt
 
 Per HoloLens 2, usare lo strumento di [registrazione dei problemi](https://github.com/microsoft/HoloLens2ForCV/issues) nel repository HoloLens2ForCV per inviare commenti e suggerimenti e per tenere traccia dei problemi noti.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Microsoft Media Foundation](/windows/win32/medfound/microsoft-media-foundation-sdk)
 * [Repository GitHub HoloLensForCV](https://github.com/Microsoft/HoloLensForCV)

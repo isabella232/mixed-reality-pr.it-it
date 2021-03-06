@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, risolutori
 ms.localizationpriority: high
-ms.openlocfilehash: d99e556dbfd1593a66b1cd90960c8fbaffdddee1
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 11d25a13e679308ef7f0f4302dd7df29e413a435
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101760007"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237064"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Creazione di contenuto dinamico tramite risolutori
 
@@ -82,6 +82,7 @@ Seleziona il pulsante Play (Riproduci) per attivare la modalità di gioco e tien
 Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto RoverExplorer > **RoverAssembly** e quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **Tap To Place (Script)** (Tocco per posizionamento - Script) e configuralo come indicato di seguito:
 
 * Verifica che per **Tracked Target Type** (Tipo destinazione tracciata) del componente **SolverHandler** sia impostato il valore **Head** (Testa)
+* Deselezionare la casella di controllo **Usa offset normale superficie predefinita** e verificare che **offset normale superficie** sia impostato su 0
 * Seleziona la casella di controllo **Keep Orientation Vertical** (Mantieni orientamento verticale)
 * Dall'elenco a discesa **Magnetic Surfaces (Superfici magnetiche)**  > **Element 0 (Elemento 0)** deseleziona tutte le opzioni tranne **Spatial Awareness** (Consapevolezza spaziale)
 

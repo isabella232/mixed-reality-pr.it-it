@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 02/28/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 41d7b2fd1f1991608a2e89b4c0d3f561fdb01660
-ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
+ms.openlocfilehash: b2518ff5c714afa62bf1e3adb82297e54994ae1a
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "102230732"
+ms.locfileid: "102236942"
 ---
 # <a name="microsoft-mixed-reality-toolkit-260-release-notes"></a>Note sulla versione di Microsoft Mixed Reality Toolkit 2.6.0
 
@@ -62,6 +62,7 @@ Il supporto sperimentale della [comprensione della scena](https://docs.microsoft
 > La comprensione della scena è supportata solo in HoloLens 2 e Unity 2019,4 e versioni successive.
 >
 > Questa funzionalità richiede il pacchetto per la comprensione della scena, che ora è disponibile tramite lo strumento per la [funzionalità di realtà mista](https://aka.ms/MRFeatureTool).
+> Quando si usa lo strumento della funzionalità di realtà mista o si importa in altro modo tramite UPM, importare l'esempio Demos-SpatialAwareness prima di importare l'esempio Experimental-SceneUnderstanding a causa di un problema di dipendenza. Per ulteriori informazioni, vedere [questo problema di GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) .
 
   ![Comprensione della scena](images/SceneUnderstanding.gif)
 

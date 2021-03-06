@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, Unity, esercitazione, hololens, MRTK, Toolkit realtà mista, UWP, interazioni tra oggetti, controlli dei limiti
 ms.localizationpriority: high
-ms.openlocfilehash: 6a74512500446d949b8c2adcc10a84f6ac657435
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 1ab7b3a334639be564717d77d3bbc478a25e8326
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759997"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237242"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interazione con oggetti 3D
 
@@ -132,9 +132,6 @@ Deselezionare quindi la casella di **controllo** accanto a tutti i componenti pe
 
 > [!NOTE]
 > La visualizzazione del controllo dei limiti viene creata in fase di esecuzione e, pertanto, non è visibile prima di immettere la modalità di gioco.
-
-> [!NOTE]
->Il componente BoundsControl aggiungerà automaticamente il componente NearInteractionGrabbable in fase di esecuzione. Non è necessario pertanto aggiungere questo componente per afferrare con le mani tracciate gli oggetti racchiusi.
 
 > [!NOTE]
 >Il manipolatore di oggetti (script) aggiunge automaticamente Gestione vincoli (script)

@@ -6,12 +6,12 @@ ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
 keywords: realtà mista, VR, LBE, posizione, cuffie per realtà mista, auricolare di realtà mista di Windows, auricolare di realtà virtuale, hardware, HoloLens, multiplayer, servizi cloud, Azure
-ms.openlocfilehash: 1cc54ad0ef4b9892c49e13c7437a4d5356093c79
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+ms.openlocfilehash: 49e96b99d3f74bd24a4a0e71f212018108148ad2
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810107"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236912"
 ---
 # <a name="location-based-entertainment-with-windows-mixed-reality"></a>Divertimenti location based con la realtà mista di Windows
 
@@ -68,7 +68,7 @@ Ignora l'installazione delle app dallo Store-il programma di installazione norma
 
 Mostra anteprima a schermo intero: il portale per la realtà mista visualizzerà automaticamente l'anteprima dell'auricolare a schermo intero nel PC desktop mentre è in uso l'auricolare.  
 
-Nascondi nuovo per il pannello laterale: impedisce l'espansione del nuovo per il pannello all'avvio del portale di realtà mista.  
+Nascondi nuovo per il pannello laterale: impedisce l'espansione del nuovo pannello per l'utente all'avvio del portale di realtà mista.  
 
 #### <a name="how-to-configure"></a>Modalità di configurazione:  
 

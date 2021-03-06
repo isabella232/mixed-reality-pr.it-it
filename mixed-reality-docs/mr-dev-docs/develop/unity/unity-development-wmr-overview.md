@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realtà mista, sviluppo, guida introduttiva, nuovo progetto, conversione, funzionalità, fotocamera, simulazione, emulazione, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, input vocale, fotocamera individuabile, emulatore, Azure, esercitazioni
-ms.openlocfilehash: 3a1914fc6bc35b2ec4fb7364818a21522e01c6e1
-ms.sourcegitcommit: 5694cc472bde67c940204ebe6671b0598501e62a
+ms.openlocfilehash: e80c5411c7d180e0d78e031599455235dabaceb7
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102126604"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237142"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>Sviluppo in Unity per VR e Windows Mixed Reality
 
@@ -29,7 +29,7 @@ Usare i checkpoint seguenti per trasferire i giochi e le applicazioni di Unity n
 
 ### <a name="1-getting-started"></a>1. Guida introduttiva
 
-È presente piccolo set di impostazioni di Unity da modificare manualmente per Windows Mixed Reality e lo sviluppo per VR. Le impostazioni sono suddivise in due categorie: per progetto e per scena. Al termine di questa sezione, saranno disponibili le impostazioni di progetto e gli strumenti necessari per iniziare a creare le app personali.
+È disponibile un piccolo set di impostazioni di Unity che è necessario modificare manualmente per lo sviluppo di realtà mista di Windows e di VR. Le impostazioni sono suddivise in due categorie: per progetto e per scena. Al termine di questa sezione, saranno disponibili le impostazioni di progetto e gli strumenti necessari per iniziare a creare le app personali.
 
 |  Checkpoint  |  Risultato  |
 | --- | --- |

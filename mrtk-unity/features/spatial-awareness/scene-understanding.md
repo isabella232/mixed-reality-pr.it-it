@@ -6,12 +6,12 @@ ms.author: wangmax
 ms.date: 03/02/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, comprensione della scena
-ms.openlocfilehash: c8f82de2418b199220261fbae034acb3e5640362
-ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
+ms.openlocfilehash: 622cdfebfe3f1356d0e8ced520cc355cc324d617
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101884062"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236932"
 ---
 # <a name="scene-understanding"></a>Comprensione della scena
 
@@ -31,6 +31,9 @@ Quando viene richiesto, [`WindowsSceneUnderstandingObserver`](xref:Microsoft.Mix
 
 ## <a name="setup"></a>Configurazione
 
+> [!IMPORTANT]
+> La comprensione della scena è supportata solo in HoloLens 2 e Unity 2019,4 e versioni successive.
+
 1. Verificare che la piattaforma sia impostata su UWP nelle impostazioni di compilazione.
 1. Acquisire la scena informazioni sul pacchetto tramite [lo strumento funzionalità di realtà mista](https://aka.ms/MRFeatureTool).
 
@@ -41,6 +44,9 @@ Il modo più rapido per iniziare a comprendere la scena è vedere la scena di es
 ### <a name="scene-understanding-sample-scene"></a>Scena di esempio per la comprensione della scena
 
 In Unity usare Esplora progetti per aprire il file della scena in `Examples/Experimental/SceneUnderstanding/Scenes/SceneUnderstandingExample.unity` e premere Play.
+
+> [!IMPORTANT]
+> Quando si usa lo strumento della funzionalità di realtà mista o si importa in altro modo tramite UPM, importare l'esempio Demos-SpatialAwareness prima di importare l'esempio Experimental-SceneUnderstanding a causa di un problema di dipendenza. Per ulteriori informazioni, vedere [questo problema di GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) .
 
 La scena mostra quanto segue:
 
@@ -56,9 +62,9 @@ La scena mostra quanto segue:
 
 Selezionare l'oggetto del gioco ' MixedRealityToolkit ' e controllare il controllo.
 
-![posizione di comprensione della scena in gerarchia](../images/spatial-awareness/MRTKHierarchy.png)
+![posizione di comprensione della scena nella gerarchia](../images/spatial-awareness/MRTKHierarchy.png)
 
-![posizione MRKT in Inspector](../images/spatial-awareness/MRTKLocation.png)
+![Posizione MRTK in Inspector](../images/spatial-awareness/MRTKLocation.png)
 
 Queste opzioni consentiranno di configurare il `WindowsSceneUnderstandingObserver` .
 
@@ -80,7 +86,7 @@ Quando si attiva la creazione di *un'istanza* dei predicati, viene illustrata la
 
 Compilare e distribuire in HoloLens in modo standard. Una volta eseguito, è necessario che venga visualizzato un numero di pulsanti per riprodurre le funzionalità.
 
-Si noti che sono presenti alcune cadute nell'esecuzione di query nell'Observer. La configurazione errata di una richiesta di recupero genera il payload dell'evento che non contiene i dati previsti. Se, ad esempio, un doesnt richiede quad, non saranno presenti trame della maschera di occlusione. Analogamente, non verrà visualizzata alcuna mesh mondiale se l'Observer non è configurato per richiedere mesh. Lo `DemoSceneUnderstandingController` script si occupa di alcune di queste dipendenze, ma non di tutte.
+Si noti che sono presenti alcune cadute nell'esecuzione di query nell'Observer. La configurazione errata di una richiesta di recupero genera il payload dell'evento che non contiene i dati previsti. Se, ad esempio, non è richiesta la presenza di quad, non sarà presente alcuna trama della maschera di occlusione. Analogamente, non verrà visualizzata alcuna mesh mondiale se l'Observer non è configurato per richiedere mesh. Lo `DemoSceneUnderstandingController` script si occupa di alcune di queste dipendenze, ma non di tutte.
 
 È possibile accedere ai file di scena salvati tramite il [portale del dispositivo](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) all'indirizzo `User Folders/LocalAppData/[APP_NAME]/LocalState/PREFIX_yyyyMMdd_hhmmss.bytes` . Questi file di scena possono essere usati nell'editor specificando tali file nel profilo Observer trovato nel controllo.
 

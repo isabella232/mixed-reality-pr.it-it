@@ -7,12 +7,12 @@ ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, esercitazione, guida introduttiva, mrtk, uxt, UX Tools, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: c26f5579aad29624c9a8f374caa4799423d0637e
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 2ceb16d31c793629e93c3dca00cb215fcbe38c6a
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98669485"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237152"
 ---
 # <a name="4-making-your-scene-interactive"></a>4. Rendere la scena interattiva
 
@@ -69,7 +69,7 @@ La finestra **Event Graph** (Grafico eventi) dovrebbe risultare analoga alla seg
 
 ![Generare attori di interazione manuale Uxt](images/unreal-uxt/4-spawnactor.PNG)
 
-Entrambi gli attori di interazione manuale Uxt devono avere proprietari e posizioni di trasformazione iniziale. La trasformazione iniziale non è rilevante in questo caso perché nel plug-in UX Tools sono inclusi attori di interazione manuale che passano alle mani virtuali non appena sono visibili. La funzione `SpawnActor`, tuttavia, richiede un input di trasformazione per evitare un errore del compilatore, quindi useremo i valori predefiniti.
+Entrambi gli attori di interazione manuale Uxt devono avere proprietari e posizioni di trasformazione iniziale. La trasformazione iniziale non è importante in questo caso, perché gli strumenti dell'esperienza utente avranno a disposizione gli attori di interazione diretta per passare alle mani virtuali non appena sono visibili. La funzione `SpawnActor`, tuttavia, richiede un input di trasformazione per evitare un errore del compilatore, quindi useremo i valori predefiniti.
 
 1. Trascina e rilascia il segnaposto fuori da uno dei segnaposto **Spawn Transform** (Genera trasformazione) per inserire un nuovo nodo.
     * Cerca il nodo **Make Transform** (Crea trasformazione) e quindi trascina **Return Value** (Valore restituito) su **Spawn Transform** (Genera trasformazione) dell'altra mano, in modo che entrambi i nodi **SpawnActor** (Genera attore) siano connessi.
