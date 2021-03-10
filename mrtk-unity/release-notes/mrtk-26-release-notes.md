@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 02/28/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: b2518ff5c714afa62bf1e3adb82297e54994ae1a
-ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
+ms.openlocfilehash: 34fc73589bb8bb2c34e4d4b6611ba535f2551f17
+ms.sourcegitcommit: ece91dbba40981720fe7e1a7c3b93e8b75ff71ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102236942"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102547220"
 ---
 # <a name="microsoft-mixed-reality-toolkit-260-release-notes"></a>Note sulla versione di Microsoft Mixed Reality Toolkit 2.6.0
 
@@ -33,6 +33,10 @@ ms.locfileid: "102236942"
 > OpenXR in Unity è supportato solo in Unity 2020,2 e versioni successive.
 >
 > Attualmente, supporta anche solo le compilazioni x64 e ARM64.
+
+### <a name="asset-swap-utility"></a>Utilità di scambio asset
+
+Scambia più asset in una scena Unity con la nuova [utilità di scambio di asset](../features/tools/asset-swap-utility.md).
 
 ### <a name="hp-motion-controllers-now-supported-with-mrtk"></a>I controller di movimento HP sono ora supportati con MRTK
 

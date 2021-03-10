@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: 847f6bfa0cc2906708effb29df655cae8b1dbbfe
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: ed644bf7d91c27e9583411d3b46f2786a3c5feca
+ms.sourcegitcommit: ece91dbba40981720fe7e1a7c3b93e8b75ff71ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101760037"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102547260"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. Inizializzazione del progetto e distribuzione della prima applicazione
 
@@ -149,7 +149,7 @@ Nella finestra MRTK Project Configurator (Configuratore del progetto MRTK) espan
 
 Dal menu di Unity scegli **Edit** (Modifica) > **Project Settings** (Impostazioni del progetto) per visualizzare la finestra corrispondente:
 
-Nella finestra Impostazioni progetto selezionare **lettore**  >  **XR impostazioni** e selezionare la casella di controllo **realtà virtuale supportata** , quindi fare clic sull' **+** icona e selezionare realtà mista di Windows per aggiungere l'SDK di realtà mista di Windows:
+Nella finestra Impostazioni progetto selezionare **Player**  >  **XR Settings** e selezionare la casella di controllo **Virtual Reality supported** , quindi fare clic sull' **+** icona e selezionare realtà mista di Windows per aggiungere Windows Mixed Reality SDK:
 
 ![Area XR Settings di Unity con Windows Mixed Reality SDK selezionato](images/mr-learning-base/base-02-section5-step2-4.png)
 

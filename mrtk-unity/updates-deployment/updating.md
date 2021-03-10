@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: fcd1b644eca2f81d84f15ec852ea70387f33062b
-ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
+ms.openlocfilehash: 27a790f0d711112122075bfff6eeed4b37c9ff4f
+ms.sourcegitcommit: ece91dbba40981720fe7e1a7c3b93e8b75ff71ba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101883240"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102547250"
 ---
 # <a name="updating-the-microsoft-mixed-reality-toolkit"></a>Aggiornamento di Microsoft Mixed Reality Toolkit
 
@@ -21,6 +21,20 @@ ms.locfileid: "101883240"
 - [da 2.1.0 a 2.2.0](#updating-210-to-220)
 - [2.0.0 a 2.1.0](#updating-200-to-210)
 - [Da RC2 a 2.0.0](#updating-rc2-to-200)
+
+## <a name="finding-the-current-version"></a>Ricerca della versione corrente 
+
+Seguire queste istruzioni per determinare la versione di MRTK attualmente in uso:
+
+1. Aprire il progetto MRTK in Unity
+2. Passare alla cartella "MixedRealityToolkit" nella finestra del progetto
+3. Aprire il file denominato "Version".
+
+Se il file e la cartella precedente non esistono, si è in una versione più recente di MRTK. In tal caso, provare a eseguire le operazioni seguenti:
+
+1. Passare alla cartella "Mixed Reality Toolkit Foundation"
+2. Fare clic su "package.json" per visualizzare un'anteprima in Unity o aprirla con un editor di testo
+3. Cerca la riga con la parola "Version:" 
 
 ## <a name="upgrading-to-a-new-version-of-mrtk"></a>Aggiornamento a una nuova versione di MRTK
 
