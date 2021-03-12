@@ -6,24 +6,35 @@ ms.author: kesemple
 ms.date: 02/28/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 8a97cef76fb1d93ab616888c2474904d7d14bb13
-ms.sourcegitcommit: 6ae047bf0d78819ee68681f7d9450961efbc8595
+ms.openlocfilehash: 274373db46b510453797dff7389bd09cbdcdf82e
+ms.sourcegitcommit: daad3dcce6381e2967fab634313dc7b2ea26d2bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103022863"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103234547"
 ---
-# <a name="microsoft-mixed-reality-toolkit-260-release-notes"></a>Note sulla versione di Microsoft Mixed Reality Toolkit 2.6.0
-
-- [Novità](#whats-new)
-- [Modifiche di rilievo](#breaking-changes)
-- [Aggiornamento delle linee guida](../updates-deployment/updating.md#upgrading-to-a-new-version-of-mrtk)
-- [Problemi noti](#known-issues)
+# <a name="microsoft-mixed-reality-toolkit-261-release-notes"></a>Note sulla versione di Microsoft Mixed Reality Toolkit 2.6.1
 
 > [!IMPORTANT]
 > Si è verificato un problema noto del compilatore che influisca sulle applicazioni compilate per Microsoft HoloLens 2 usando ARM64. Questo problema viene risolto aggiornando Visual Studio 2019 alla versione 16,8 o successiva. Se non è possibile aggiornare Visual Studio, importare il `com.microsoft.mixedreality.toolkit.tools` pacchetto per applicare una soluzione alternativa.
 
-## <a name="whats-new"></a>Novità
+## <a name="whats-new-in-261"></a>Novità di 2.6.1
+
+### <a name="fixes-openxr-not-running-on-hololens-2--uwp"></a>Corregge OpenXR non in esecuzione in HoloLens 2/UWP
+
+Corregge una regressione che ha impedito l'esecuzione del supporto OpenXR di MRTK in UWP.
+
+### <a name="fixes-leap-motion-objectmanipulator-not-rotating"></a>Correzione ObjectManipulator movimento non in rotazione
+
+Corregge una regressione in cui la rotazione della mano del movimento intercalare non è stata presa in considerazione dallo script ObjectManipulator.
+
+### <a name="sample-scene-updates"></a>Aggiornamenti della scena di esempio
+
+Aggiorna la scena di esempio di comprensione della scena per riflettere correttamente lo stato di spedizione del plug-in Unity. Aggiorna inoltre l'esempio in modo che non abbia più una dipendenza dalla scena di esempio di riconoscimento spaziale importata. Prima di eseguire l'aggiornamento a 2.6.1, è necessario eliminare gli esempi di comprensione della scena importata e di conoscenza spaziale se sono presenti nel progetto per evitare possibili conflitti. Se gli esempi non sono stati rimossi e si verificano conflitti correlati a quelli presenti nella console, rimuovere entrambi gli esempi (o la `Assets/Samples/Mixed Reality Toolkit Examples` cartella), quindi riprovare a eseguire l'importazione.
+
+Aggiorna la scena di esempio della finestra di dialogo per descrivere correttamente gli scenari correnti della finestra di dialogo.
+
+## <a name="whats-new-in-260"></a>Novità di 2.6.0
 
 ### <a name="add-support-for-openxr"></a>Aggiungere il supporto per OpenXR
 
@@ -42,7 +53,7 @@ Scambia più asset in una scena Unity con la nuova [utilità di scambio di asset
 
 I controller per i Riverb di HP G2 ora funzionano in modo nativo con MRTK.
 
-### <a name="experimental-interactive-element--state-visualizer"></a>Visualizzatore di stato e elemento interattivo sperimentale 
+### <a name="experimental-interactive-element--state-visualizer"></a>Visualizzatore di stato e elemento interattivo sperimentale
 
 L'elemento interattivo è un punto di ingresso centralizzato semplificato al sistema di input MRTK. Contiene i metodi di gestione dello stato, la gestione degli eventi e la logica di impostazione dello stato per gli Stati di interazione di base. Per ulteriori informazioni, vedere la [documentazione degli elementi interattivi](../features/experimental/interactive-element.md).
 
@@ -91,13 +102,11 @@ I controlli della finestra di dialogo sono ora pronti per l'uso con MRTK princip
 
   ![Controlli della finestra di dialogo](https://user-images.githubusercontent.com/13754172/101927792-3326e200-3c18-11eb-88d3-44b4b50c7f7d.png)
 
-
-### <a name="pulse-shader-graduated-from-experimental"></a>Pulse shader laureato da sperimentale 
+### <a name="pulse-shader-graduated-from-experimental"></a>Pulse shader laureato da sperimentale
 
 Gli script di Pulse shader sono laureati da sperimentale. Per altre informazioni, vedere la [documentazione di Pulse shader](../features/rendering/pulse-shader.md)
 
 ![MRTK_SpatialMesh_Pulse](https://user-images.githubusercontent.com/13754172/68261851-3489e200-fff6-11e9-9f6c-5574a7dd8db7.gif)
-
 
 ### <a name="input-recording-service-improvements"></a>Miglioramenti del servizio registrazione input
 

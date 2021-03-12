@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: ed644bf7d91c27e9583411d3b46f2786a3c5feca
-ms.sourcegitcommit: ece91dbba40981720fe7e1a7c3b93e8b75ff71ba
+ms.openlocfilehash: 8a1d93f4cd321c23410f537e0577192421ef3af1
+ms.sourcegitcommit: daad3dcce6381e2967fab634313dc7b2ea26d2bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102547260"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103234557"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. Inizializzazione del progetto e distribuzione della prima applicazione
 
@@ -95,6 +95,10 @@ Scaricare la versione più recente dello strumento per le funzionalità di realt
 
 > [!NOTE]
 > Lo strumento per la funzionalità di realtà mista attualmente viene eseguito solo in Windows. per MacOS, seguire questa [procedura](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html#1-get-the-latest-mrtk-unity-packages) per scaricare e importare il Toolkit di realtà mista nel progetto Unity.
+
+> [!NOTE]
+> È anche possibile scaricare manualmente i pacchetti MRTK dalla [pagina della versione di GitHub di MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases). Importare i pacchetti MRTK usando il pacchetto di importazione asset-> di Unity-> pacchetto personalizzato. 
+
 
 Aprire il file eseguibile **MixedRealityFeatureTool** dalla cartella scaricata per avviare lo strumento della funzionalità di realtà mista.  
 
