@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, apprendimento, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, traduzione, Azure, servizi cognitivi di Azure, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: f8188cc8c417b60864cd963120ad004d6169c3c2
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c4e068dda72c4dc2f22ca0a56a835b334d90c713
+ms.sourcegitcommit: a2b1c75f25adcd238b6a93b103a13aa898a62c76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583528"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102770329"
 ---
 # <a name="mixed-reality-learn-overview"></a>Panoramica di Learn sulla realtà mista
 
@@ -69,3 +69,15 @@ Al termine del modulo, si sarà in grado di:
 * Configurare un progetto Unity per il servizio Voce in Servizi cognitivi di Azure
 * Integrare il servizio Voce con un'applicazione di Windows Mixed Reality
 * Usare il riconoscimento vocale per tradurre testo
+
+### <a name="render-a-model-with-azure-remote-rendering"></a>[Eseguire il rendering di un modello con il rendering remoto di Azure](/learn/modules/render-model-azure-remote-rendering-unity/)
+
+Creare una sessione di rendering remoto di Azure ed eseguire il rendering di un modello 3D.
+
+**Obiettivi di apprendimento**
+
+Al termine del modulo, si sarà in grado di:
+
+* Creare una sessione di rendering remoto
+* Caricare un modello 3D
+* Eseguire il rendering di un modello 3D

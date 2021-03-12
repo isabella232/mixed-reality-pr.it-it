@@ -6,18 +6,18 @@ ms.author: cadia
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, risolutori,
-ms.openlocfilehash: dfc97c213aa5a672acf40cf5a851dd1e83fd5e36
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: a9ca6d025fa4261bb9b5398cb4c7b82a5f6ff8f0
+ms.sourcegitcommit: a2b1c75f25adcd238b6a93b103a13aa898a62c76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781506"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102770349"
 ---
 # <a name="solvers"></a>Risolutori
 
 ![Principale Risolutore](../../images/solver/MRTK_Solver_Main.png)
 
-I resolver sono componenti che facilitano il calcolo della posizione di un oggetto & orientamento in base a un algoritmo di predefinizione. Un esempio potrebbe essere l'inserimento di un oggetto sulla superficie a cui si riferisce lo sguardo Raycast dell'utente.  
+I resolver sono componenti che facilitano il calcolo della posizione di un oggetto & orientamento in base a un algoritmo predefinito. Un esempio potrebbe essere l'inserimento di un oggetto sulla superficie a cui si riferisce lo sguardo Raycast dell'utente.
 
 Inoltre, il sistema di Risolutore definisce in modo deterministico un ordine di operazioni per questi calcoli di trasformazione, perché non esiste un modo affidabile per specificare l'ordine di aggiornamento per i componenti in Unity.
 
@@ -35,9 +35,11 @@ La terza categoria è il Risolutore. I risolutori seguenti forniscono i blocchi 
 * [`Orbital`](#orbital): Blocca a una posizione e un offset specificati dall'oggetto a cui si fa riferimento.
 * [`ConstantViewSize`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.ConstantViewSize): Scala per mantenere una dimensione costante rispetto alla visualizzazione dell'oggetto a cui si fa riferimento.
 * [`RadialView`](#radialview): Mantiene l'oggetto all'interno di un cono di visualizzazione sottomesso a cast dall'oggetto a cui si fa riferimento.
-* [`SurfaceMagnetism`](#surfacemagnetism): esegue il cast dei raggi alle superfici del mondo e allinea l'oggetto alla superficie.
-* [`Momentum`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.Momentum): Applica accelerazione/velocità/attrito per simulare Momentum e Springiness per un oggetto spostato da altri resolver/componenti.
+* [`Follow`](#follow): Mantiene l'oggetto all'interno di un set di limiti definiti dall'utente dell'oggetto a cui si fa riferimento.
 * [`InBetween`](#inbetween): Mantiene un oggetto tra due oggetti rilevati.
+* [`SurfaceMagnetism`](#surfacemagnetism): esegue il cast dei raggi alle superfici del mondo e allinea l'oggetto alla superficie.
+* [`DirectionalIndicator`](#directionalindicator): Determina la posizione e l'orientamento di un oggetto come indicatore direzionale. Dal punto di riferimento della destinazione SolverHandler rilevata, questo indicatore verrà orientato verso il DirectionalTarget fornito.
+* [`Momentum`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.Momentum): Applica accelerazione/velocità/attrito per simulare Momentum e Springiness per un oggetto spostato da altri resolver/componenti.
 * [`HandConstraint`](#hand-menu-with-handconstraint-and-handconstraintpalmup): Vincola l'oggetto a seguire le mani in un'area che non interseca GameObject con le mani. Utile per contenuto interattivo vincolato a mano, ad esempio menu e così via. Il Risolutore è progettato per funzionare con [IMixedRealityHand](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand) , ma funziona anche con [IMixedRealityController](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityController).
 * [`HandConstraintPalmUp`](#hand-menu-with-handconstraint-and-handconstraintpalmup): Deriva da HandConstraint, ma include la logica per verificare se il Palm è rivolte all'utente prima dell'attivazione. Il Risolutore funziona solo con i controller [IMixedRealityHand](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand) , con altri tipi di controller che il Risolutore si comporterà esattamente come la classe di base.
 
@@ -61,8 +63,8 @@ La proprietà del *tipo di destinazione rilevata* del [`SolverHandler`](xref:Mic
 > [!NOTE]
 > Per i tipi *ControllerRay* e *HandJoint* , il gestore del Risolutore tenterà di fornire prima la trasformazione a sinistra del controller o della mano, quindi il diritto se il primo non è disponibile o a meno che la `TrackedHandedness` proprietà non specifichi diversamente.
 
-![Oggetto rilevato del Risolutore](../../images/solver/TrackedObjectType-Example.gif)  
-*Esempio di varie proprietà associate a ogni TrackedTargetType*
+![Esempio di oggetto rilevato da Risolutore ](../../images/solver/TrackedObjectType-Example.gif) 
+ *di varie proprietà associate a ogni TrackedTargetType*
 
 > [!IMPORTANT]
 > La maggior parte dei resolver usa il vettore di avanzamento della destinazione della trasformazione rilevata fornita da `SolverHandler` . Quando si usa un tipo di destinazione rilevata *congiuntamente* , il vettore di avanzamento del giunto della palma può puntare attraverso le dita e non attraverso il Palm. Questo dipende dalla piattaforma che fornisce i dati di giunzione. Per la simulazione di input e la realtà mista di Windows, è il *vettore up* che punta attraverso la Palma (ovvero il vettore verde è attivo, il vettore blu è in futuro.
@@ -144,6 +146,18 @@ In genere, [`RadialView`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.
 ![Esempio di RadialView](../../images/solver/RadialViewExample.png)  
 *Esempio di RadialView*
 
+### <a name="follow"></a>Segui
+
+La [`Follow`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.Follow) classe posiziona un elemento davanti all'oggetto della destinazione rilevata rispetto al relativo asse di avanzamento locale. L'elemento può essere vincolato vagamente (noto anche come Tag-Along) in modo che non venga seguito finché la destinazione rilevata non viene spostata oltre i limiti definiti dall'utente.
+
+Funziona in modo analogo al Risolutore RadialView, con controlli aggiuntivi per gestire il *numero massimo orizzontale & i gradi di visualizzazione verticali* e i meccanismi per modificare l' *orientamento* dell'oggetto.
+
+![Segui proprietà](../../images/solver/FollowExample.png)  
+*Segui proprietà*
+
+![Segui la scena di esempio](../../images/solver/FollowExampleScene.gif)  
+*Seguire la scena di esempio (assets/MRTK/examples/Demos/solvers/Sceness/FollowSolverExample. Unity)*
+
 ### <a name="inbetween"></a>InBetween
 
 La [`InBetween`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.InBetween) classe manterrà il GameObject collegato tra due trasformazioni. Questi due endpoint di trasformazione sono definiti dal [`SolverHandler`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.SolverHandler) *tipo di destinazione rilevata* di GameObject e dalla [`InBetween`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.InBetween) seconda proprietà del *tipo di destinazione rilevata* del componente. In genere, entrambi i tipi verranno impostati su [`CustomOverride`](xref:Microsoft.MixedReality.Toolkit.Utilities.TrackedObjectType.CustomOverride) e i `SolverHandler.TransformOverride` valori e risultante `InBetween.SecondTransformOverride` impostati sui due endpoint rilevati.
@@ -185,27 +199,20 @@ Viceversa, un [`SurfaceMagnetism`](xref:Microsoft.MixedReality.Toolkit.Utilities
 
 Infine, le superfici più lontane dell' `MaxRaycastDistance` impostazione della proprietà verranno ignorate da `SurfaceMagnetism` raycasts.
 
-### <a name="hand-menu-with-handconstraint-and-handconstraintpalmup"></a>Menu a mano con HandConstraint e HandConstraintPalmUp
+### <a name="directionalindicator"></a>DirectionalIndicator
 
-![Esempio di UX menu a mano](../../images/solver/MRTK_UX_HandMenu.png)
+La [`DirectionalIndicator`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.DirectionalIndicator) classe è un componente lungo tag che si orienta alla direzione di un punto desiderato nello spazio.
 
-Il [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) comportamento fornisce un risolutore che vincola l'oggetto rilevato a un'area sicura per il contenuto vincolato della mano, ad esempio l'interfaccia utente, i menu e così via. Le aree sicure sono considerate aree che non si intersecano con la mano. Viene inoltre inclusa una classe derivata di [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) chiamata [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) per illustrare un comportamento comune di attivazione dell'oggetto rilevato del Risolutore quando il Palm è rivolte all'utente.
-
-Per esempi relativi all'uso del Risolutore di vincoli di mano, [vedere la pagina del menu](../hand-menu.md) a mano per creare menu a mano.
-
-## <a name="experimental-solvers"></a>Risolutori sperimentali
-
-Questi resolver sono disponibili in MRTK, ma sono attualmente sperimentali. Le API e le funzionalità sono soggette a modifiche. L'affidabilità e la qualità possono inoltre essere inferiori alle funzionalità standard.
-
-### <a name="directional-indicator"></a>Indicatore direzionale
-
-La [`DirectionalIndicator`](xref:Microsoft.MixedReality.Toolkit.Experimental.Utilities.DirectionalIndicator) classe è un componente lungo tag che si orienta alla direzione di un punto desiderato nello spazio.
-
-Utilizzato più di frequente quando il *tipo di destinazione rilevato* di [`SolverHandler`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.SolverHandler) è impostato su [`Head`](xref:Microsoft.MixedReality.Toolkit.Utilities.TrackedObjectType.Head) . In questo modo, un componente UX con il [`DirectionalIndicator`](xref:Microsoft.MixedReality.Toolkit.Experimental.Utilities.DirectionalIndicator)  Risolutore consentirà all'utente di esaminare il punto desiderato nello spazio.
+Utilizzato più di frequente quando il *tipo di destinazione rilevato* di [`SolverHandler`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.SolverHandler) è impostato su [`Head`](xref:Microsoft.MixedReality.Toolkit.Utilities.TrackedObjectType.Head) . In questo modo, un componente UX con il [`DirectionalIndicator`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.DirectionalIndicator)  Risolutore consentirà all'utente di esaminare il punto desiderato nello spazio.
 
 Il punto desiderato nello spazio viene determinato tramite la proprietà di *destinazione direzionale* .
 
 Se la destinazione direzionale è visualizzabile dall'utente o qualsiasi frame di riferimento è impostato in, il [`SolverHandler`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.SolverHandler) Risolutore Disabilita tutti i [`Renderer`](https://docs.unity3d.com/ScriptReference/Renderer.html) componenti sottostanti. Se non visualizzabile, tutto verrà abilitato sull'indicatore.
+
+La dimensione dell'indicatore ridurrà più vicino l'utente a acquisire la *destinazione direzionale* nel relativo FOV.
+
+* *Scala indicatore min* : scala minima per l'oggetto indicatore
+* *Scala indicatore max* : scala massima per l'oggetto indicatore
 
 * *Fattore di scala visibilità* -moltiplicatore per aumentare o diminuire il FOV che determina se il punto di *destinazione direzionale* è visualizzabile o meno
 * *Offset visualizzazione* : dal punto di vista del frame di riferimento (ad esempio fotocamera possibilmente), questa proprietà definisce la distanza nella direzione dell'indicatore nell'oggetto dal centro del viewport.
@@ -213,9 +220,16 @@ Se la destinazione direzionale è visualizzabile dall'utente o qualsiasi frame d
 ![Proprietà indicatore direzionale](../../images/solver/DirectionalIndicatorExample.png)  
 *Proprietà indicatore direzionale*
 
-![Scena di esempio indicatore direzionale](../../images/solver/DirectionalIndicatorExampleScene.gif)
+![Scena di esempio indicatore direzionale](../../images/solver/DirectionalIndicatorExampleScene.gif)  
+*Scenario di esempio dell'indicatore direzionale (assets/MRTK/examples/Demos/solvers/Sceness/DirectionalIndicatorSolverExample. Unity)*
 
-*Scenario di esempio dell'indicatore direzionale (assets/MRTK/examples/Experimental/solvers/DirectionalIndicatorExample. Unity)*
+### <a name="hand-menu-with-handconstraint-and-handconstraintpalmup"></a>Menu a mano con HandConstraint e HandConstraintPalmUp
+
+![Esempio di UX menu a mano](../../images/solver/MRTK_UX_HandMenu.png)
+
+Il [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) comportamento fornisce un risolutore che vincola l'oggetto rilevato a un'area sicura per il contenuto vincolato della mano, ad esempio l'interfaccia utente, i menu e così via. Le aree sicure sono considerate aree che non si intersecano con la mano. Viene inoltre inclusa una classe derivata di [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) chiamata [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) per illustrare un comportamento comune di attivazione dell'oggetto rilevato del Risolutore quando il Palm è rivolte all'utente.
+
+Per esempi relativi all'uso del Risolutore di vincoli di mano, [vedere la pagina del menu](../hand-menu.md) a mano per creare menu a mano.
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -6,16 +6,20 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK
-ms.openlocfilehash: 3ac16a1aae6681ddd7e144679b76b4d2b778306f
-ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
+ms.openlocfilehash: a774a5c08cb2d8bbaeebeca19cec366504efba58
+ms.sourcegitcommit: 5c81c19905b26818882e49679bd71f5dd7bc6d3b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102237252"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103202783"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>Che cos'è il Toolkit di realtà mista
 
 ![Mixed Reality Toolkit](features/images/Logo_MRTK_Unity_Banner.png)
+
+<br>
+
+<iframe width="940" height="530" src="https://www.youtube.com/embed/qfONlUCSWdg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 MRTK-Unity è un progetto gestito da Microsoft che fornisce un set di componenti e funzionalità che consentono di accelerare lo sviluppo di app di realtà mista multipiattaforma in Unity. Ecco alcune delle sue funzioni:
 
@@ -68,58 +72,73 @@ Per vedere cosa succede dietro le quinte?
 
 :::row:::
     :::column:::
-       Sistema di input del [ ![ sistema di input](features/images/MRTK_Icon_InputSystem.png)](features/input/overview.md) **[](features/input/overview.md)**<br>
+       [![Sistema di input](features/images/MRTK_Icon_InputSystem.png)](features/input/overview.md)<br>
+        **[Sistema di input](features/input/overview.md)**<br>
     :::column-end:::
     :::column:::
-        Rilevamento della mano [ ![ (HoloLens 2)](features/images/MRTK_Icon_HandTracking.png)](features/input/overview.md) **[ <br> (HoloLens 2)](features/input/hand-tracking.md)**<br>
+        [![Rilevamento della mano (HoloLens 2)](features/images/MRTK_Icon_HandTracking.png)](features/input/overview.md)<br>
+        **[Rilevamento della mano <br> (HoloLens 2)](features/input/hand-tracking.md)**<br>
     :::column-end:::
     :::column:::
-        Eye [ ![ Tracking (HoloLens 2)](features/images/MRTK_Icon_EyeTracking.png)](features/input/eye-tracking/eye-tracking-Main.md) **[Eye Tracking <br/> (HoloLens 2)](features/input/eye-tracking/eye-tracking-Main.md)**<br>
+        [![Rilevamento degli occhi (HoloLens 2)](features/images/MRTK_Icon_EyeTracking.png)](features/input/eye-tracking/eye-tracking-Main.md)<br>
+        **[Rilevamento degli occhi <br/> (HoloLens 2)](features/input/eye-tracking/eye-tracking-Main.md)**<br>
     :::column-end:::
     :::column:::
-        [ ![ Profili profili](features/images/MRTK_Icon_Profiles.png)](configuration/mixed-reality-configuration-guide.md) **[](configuration/mixed-reality-configuration-guide.md)**<br>
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-       Rilevamento della mano [ ![ (Ultraleap)](features/images/MRTK_Icon_HandTracking.png)](features/cross-platform/leap-motion-mrtk.md) **[ <br/> (Ultraleap)](features/cross-platform/leap-motion-mrtk.md)**<br>
-    :::column-end:::
-    :::column:::
-        Controlli dell'interfaccia [ ![ utente controlli dell'](features/images/MRTK_Icon_UIControls.png)](#ux-building-blocks) interfaccia utente **[](#ux-building-blocks)**<br>
-    :::column-end:::
-    :::column:::
-        Risolutori dei [ ![ risolutori](features/images/MRTK_Icon_Solver.png)](features/ux-building-blocks/solvers/solver.md) **[](features/ux-building-blocks/solvers/solver.md)**<br>
-    :::column-end:::
-    :::column:::
-        [ ![](features/images/MRTK_Icon_SceneSystem.png)](features/scene-system/scene-system-getting-started.md) **[ <br/> Gestione multiscena](features/scene-system/scene-system-getting-started.md) di più scene**<br>
+        [![Profili](features/images/MRTK_Icon_Profiles.png)](configuration/mixed-reality-configuration-guide.md)<br>
+        **[Profili](configuration/mixed-reality-configuration-guide.md)**<br>
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [ ![](features/images/MRTK_Icon_SpatialUnderstanding.png)](features/spatial-awareness/spatial-awareness-getting-started.md) **[ <br/> Consapevolezza](features/spatial-awareness/spatial-awareness-getting-started.md) spaziale**<br>
+       [![Rilevamento della mano (Ultraleap)](features/images/MRTK_Icon_HandTracking.png)](features/cross-platform/leap-motion-mrtk.md)<br>
+        **[Rilevamento della mano <br/> (Ultraleap)](features/cross-platform/leap-motion-mrtk.md)**<br>
     :::column-end:::
     :::column:::
-        Strumento di diagnostica strumento di [ ![ diagnostica](features/images/MRTK_Icon_Diagnostics.png)](features/diagnostics/diagnostics-system-getting-started.md) **[ <br/>](features/diagnostics/diagnostics-system-getting-started.md)**<br>
+        [![Controlli dell'interfaccia utente](features/images/MRTK_Icon_UIControls.png)](#ux-building-blocks)<br>
+        **[Controlli dell'interfaccia utente](#ux-building-blocks)**<br>
     :::column-end:::
     :::column:::
-        Visualizzazione di esempio dello shader standard [ ![ MRTK per visualizzazione shader standard](features/images/MRTK_Icon_StandardShader.png)](features/rendering/mrtk-standard-shader.md?q=shader) **[MRTK](features/rendering/mrtk-standard-shader.md?q=shader)**<br>
+        [![Risolutori](features/images/MRTK_Icon_Solver.png)](features/ux-building-blocks/solvers/solver.md)<br>
+        **[Risolutori](features/ux-building-blocks/solvers/solver.md)**<br>
     :::column-end:::
     :::column:::
-        [ ![ Sintesi vocale & dettatura](features/images/MRTK_Icon_VoiceCommand.png)](features/scene-system/scene-system-getting-started.md) **[](features/input/speech.md) <br/>  &  [](features/input/dictation.md)**<br>
+        [![Gestione multiscena](features/images/MRTK_Icon_SceneSystem.png)](features/scene-system/scene-system-getting-started.md)<br>
+        **[Gestione multiscena <br/>](features/scene-system/scene-system-getting-started.md)**<br>
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       Sistema di limiti del [ ![ sistema di limiti](features/images/MRTK_Icon_Boundary.png)](features/boundary/boundary-system-getting-started.md) **[ <br/>](features/boundary/boundary-system-getting-started.md)**<br>
+       [![Consapevolezza spaziale](features/images/MRTK_Icon_SpatialUnderstanding.png)](features/spatial-awareness/spatial-awareness-getting-started.md)<br>
+        **[<br/>Consapevolezza spaziale](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
     :::column-end:::
     :::column:::
-        Simulazione in-editor [ ![ simulazione](features/images/MRTK_Icon_InputSystem.png)](features/diagnostics/diagnostics-system-getting-started.md) **[in- <br/>](features/diagnostics/diagnostics-system-getting-started.md) editor**<br>
+        [![Strumento di diagnostica](features/images/MRTK_Icon_Diagnostics.png)](features/diagnostics/diagnostics-system-getting-started.md)<br>
+        **[Strumento di diagnostica <br/>](features/diagnostics/diagnostics-system-getting-started.md)**<br>
     :::column-end:::
     :::column:::
-        [ ![ Funzionalità](features/images/MRTK_Icon_Experimental.png)](contributing/experimental-features.md) sperimentali funzionalità **[sperimentali <br/>](contributing/experimental-features.md)**<br>
+        [![Visualizzazione shader standard MRTK](features/images/MRTK_Icon_StandardShader.png)](features/rendering/mrtk-standard-shader.md?q=shader)<br>
+        **[Visualizzazione di esempio dello shader standard MRTK](features/rendering/mrtk-standard-shader.md?q=shader)**<br>
+    :::column-end:::
+    :::column:::
+        [![Dettatura di & vocale](features/images/MRTK_Icon_VoiceCommand.png)](features/scene-system/scene-system-getting-started.md)<br>
+        **[Sintesi vocale](features/input/speech.md) <br/>  &  [Dettatura](features/input/dictation.md)**<br>
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Sistema di limiti](features/images/MRTK_Icon_Boundary.png)](features/boundary/boundary-system-getting-started.md)<br>
+        **[Sistema di limiti <br/>](features/boundary/boundary-system-getting-started.md)**<br>
+    :::column-end:::
+    :::column:::
+        [![Simulazione in-Editor](features/images/MRTK_Icon_InputSystem.png)](features/diagnostics/diagnostics-system-getting-started.md)<br>
+        **[Simulazione in-editor <br/>](features/diagnostics/diagnostics-system-getting-started.md)**<br>
+    :::column-end:::
+    :::column:::
+        [![Funzionalità sperimentali](features/images/MRTK_Icon_Experimental.png)](contributing/experimental-features.md)<br>
+        **[Funzionalità sperimentali <br/>](contributing/experimental-features.md)**<br>
     :::column-end:::
     :::column:::
     :::column-end:::

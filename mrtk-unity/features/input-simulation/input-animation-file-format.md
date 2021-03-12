@@ -6,12 +6,12 @@ ms.author: cadia
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 5ec2b3f3ac83ee0ca1923cb62b36fe80edc22120
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: adc6bee83faacf20a1b8013bafb1cf50e1e3d419
+ms.sourcegitcommit: 210312f6be83745761eeb4f55827e1fc677d79ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782893"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103147416"
 ---
 # <a name="input-animation-binary-file-format-specification"></a>Specifica del formato file binario animazione input
 
@@ -29,6 +29,24 @@ Il resto del file viene occupato dai dati di animazione, che possono variare tra
 | Numero di versione principale | Int32 |
 | Numero di versione secondario | Int32 |
 | Dati di animazione | _vedere la sezione Version_ |
+
+## <a name="version-11"></a>Versione 1.1
+
+I dati di animazione di input sono costituiti da tre valori booleani che indicano se l'animazione contiene i dati della fotocamera, della mano e degli sguardi, seguiti da una sequenza di curve di animazione. Le curve presenti dipendono dai valori di questi valori booleani. Ogni curva può avere un numero diverso di fotogrammi chiave.
+
+| Sezione | Type | Note |
+|---------|------|------|
+| Con la fotocamera | Boolean | |
+| Con dati della mano | Boolean | |
+| Con sguardi occhi| Boolean | |
+| Fotocamera | [Pose curve](#pose-curves) | Solo se la fotocamera è impostata su true |
+| Mano rilevata a sinistra | [Curva booleana](#boolean-curve) | Solo se i dati della mano sono true |
+| Rilevamento a destra della mano | [Curva booleana](#boolean-curve) | Solo se i dati della mano sono true |
+| Mano pizzicata a sinistra | [Curva booleana](#boolean-curve) | Solo se i dati della mano sono true |
+| Pizzica a destra | [Curva booleana](#boolean-curve) | Solo se i dati della mano sono true |
+| Giunzioni a sinistra | [Curve di pose congiunte](#joint-pose-curves) | Solo se i dati della mano sono true |
+| Giunzioni a destra | [Curve di pose congiunte](#joint-pose-curves) | Solo se i dati della mano sono true |
+| Occhio | [Curve Ray](#ray-curves)] | Solo se ha lo sguardo a occhi è true |
 
 ## <a name="version-10"></a>Versione 1,0
 
@@ -91,6 +109,19 @@ Le curve pose sono una sequenza di 3 curve di animazione per il vettore di posiz
 | Rotazione Y | [Curva float](#float-curve) |
 | Rotazione Z | [Curva float](#float-curve) |
 | Rotazione W | [Curva float](#float-curve) |
+
+### <a name="ray-curves"></a>Curve Ray
+
+Le curve dei raggi sono una sequenza di 3 curve di animazione per il vettore di origine, seguite da 3 curve di animazione per il vettore di direzione.
+
+| Sezione | Tipo |
+|---------|------|
+| Origine X | [Curva float](#float-curve) |
+| Origine Y | [Curva float](#float-curve) |
+| Origine Z | [Curva float](#float-curve) |
+| Direzione X | [Curva float](#float-curve) |
+| Direzione Y | [Curva float](#float-curve) |
+| Direzione Z | [Curva float](#float-curve) |
 
 ### <a name="float-curve"></a>Curva float
 

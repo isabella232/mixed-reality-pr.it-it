@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 02/28/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 34fc73589bb8bb2c34e4d4b6611ba535f2551f17
-ms.sourcegitcommit: ece91dbba40981720fe7e1a7c3b93e8b75ff71ba
+ms.openlocfilehash: 8a97cef76fb1d93ab616888c2474904d7d14bb13
+ms.sourcegitcommit: 6ae047bf0d78819ee68681f7d9450961efbc8595
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102547220"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103022863"
 ---
 # <a name="microsoft-mixed-reality-toolkit-260-release-notes"></a>Note sulla versione di Microsoft Mixed Reality Toolkit 2.6.0
 
@@ -84,6 +84,13 @@ Due nuovi risolutori sono pronti per l'uso con MRTK principali.
 
 La funzionalità di coaching a mano è ora pronta per l'uso con MRTK principali.
   ![Esempio di coach della mano](https://docs.microsoft.com/windows/mixed-reality/design/images/handcoach/airtap.gif)
+
+### <a name="dialog-controls-graduated-from-experimental"></a>Controlli della finestra di dialogo graduati da sperimentale
+
+I controlli della finestra di dialogo sono ora pronti per l'uso con MRTK principale.
+
+  ![Controlli della finestra di dialogo](https://user-images.githubusercontent.com/13754172/101927792-3326e200-3c18-11eb-88d3-44b4b50c7f7d.png)
+
 
 ### <a name="pulse-shader-graduated-from-experimental"></a>Pulse shader laureato da sperimentale 
 
