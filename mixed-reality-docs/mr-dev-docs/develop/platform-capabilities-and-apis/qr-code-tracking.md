@@ -6,12 +6,12 @@ ms.author: dobrown
 ms.date: 01/21/2021
 ms.topic: article
 keywords: VR, LBE, location based Entertainment, VR Arcade, Arcade, immersive, QR, QR code, hololens2
-ms.openlocfilehash: 0f53b8def268b2d501c6efe3c3e40ea18f9323e0
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 2617d5f811b9d437ece0d5ba2e7dbc909eb16988
+ms.sourcegitcommit: e51e18e443d73a74a9c0b86b3ca5748652cd1b24
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635433"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103574947"
 ---
 # <a name="qr-code-tracking"></a>Rilevamento di codici a matrice
 
@@ -209,9 +209,10 @@ Il tempo esatto per rilevare i codici dipende non solo dalle dimensioni dei codi
 ### <a name="distance-and-angular-position-from-the-qr-code"></a>Posizione angolare e distanza dal codice a matrice
 Le videocamere di rilevamento possono rilevare solo un certo livello di dettaglio. Per i codici piccoli, < 10 cm lungo i lati, è necessario essere abbastanza vicini. Per un codice a matrice di versione 1 variabile da 10 cm a 25 cm di larghezza, la distanza di rilevamento minima varia da 0,15 metri a 0,5 metri. 
 
-La distanza di rilevamento per le dimensioni aumenta in modo lineare. 
+La distanza di rilevamento per le dimensioni aumenta in modo lineare, ma dipende anche dalla versione di QR o dalle dimensioni del modulo. Maggiore è la versione, minore è il numero di moduli, che possono essere rilevati solo da una posizione più vicina. Se si desidera che la distanza del rilevamento sia più lunga, è anche possibile provare a utilizzare i codici a matrice micro-QR. Il rilevamento a matrice funziona con un intervallo di angoli + = 45 deg per garantire la corretta risoluzione per il rilevamento del codice.
 
-Il rilevamento a matrice funziona con un intervallo di angoli + = 45 deg per garantire la corretta risoluzione per il rilevamento del codice.
+> [!IMPORTANT]
+> Assicurarsi sempre di avere un contrasto sufficiente e un bordo appropriato.
 
 ### <a name="qr-codes-with-logos"></a>Codici QR con logo
 I codici QR con logo non sono stati testati e non sono attualmente supportati.
