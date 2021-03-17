@@ -192,24 +192,24 @@
               href: unity/reviewing-changes.md
     - name: Blocchi predefiniti di base
       items:
-        - name: Fotocamera
+        - name: Impostazione della fotocamera
           href: unity/camera-in-unity.md
-        - name: Sistemi di coordinate
-          href: unity/coordinate-systems-in-unity.md
-        - name: Persistenza
-          href: unity/persistence-in-unity.md
-        - name: Puntamento con la testa
-          href: unity/gaze-in-unity.md
+        - name: Ancoraggi nello spazio
+          href: unity/spatial-anchors-in-unity.md
+        - name: Interazioni
+          items:
+            - name: Controller del movimento
+              href: unity/motion-controllers-in-unity.md
+            - name: Movimenti
+              href: unity/gestures-in-unity.md
+            - name: Tracciamento della mano e oculare
+              href: unity/hand-eye-in-unity.md
+            - name: Puntamento con la testa
+              href: unity/gaze-in-unity.md
+            - name: Input vocale
+              href: unity/voice-input-in-unity.md
         - name: Testo
           href: unity/text-in-unity.md
-        - name: Controller del movimento
-          href: unity/motion-controllers-in-unity.md
-        - name: Movimenti
-          href: unity/gestures-in-unity.md
-        - name: Tracciamento della mano e oculare
-          href: unity/hand-eye-in-unit.md
-        - name: Input vocale
-          href: unity/voice-input-in-unity.md
         - name: Mapping spaziale
           href: unity/spatial-mapping-in-unity.md
         - name: Audio spaziale
@@ -220,6 +220,8 @@
           href: unity/shared-experiences-in-unity.md
         - name: Fotocamera individuabile
           href: unity/locatable-camera-in-unity.md
+        - name: Comunicazione remota olografica nell'app desktop
+          href: unity/holographic-remoting-desktop.md
         - name: Punto di interesse
           href: unity/focus-point-in-unity.md
         - name: Perdita del tracciamento
