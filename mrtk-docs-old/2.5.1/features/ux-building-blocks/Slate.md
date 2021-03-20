@@ -4,56 +4,55 @@ description: Documentazione su Slate in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, Slate,
-ms.openlocfilehash: 0c75ddd46a1b89ca992ac1069f10f32ae86efd85
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 42cf595beb983b55dbbd82758266090019e01155
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781707"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104683694"
 ---
-# <a name="slate"></a><span data-ttu-id="988da-104">Slate</span><span class="sxs-lookup"><span data-stu-id="988da-104">Slate</span></span>
+# <a name="slate"></a><span data-ttu-id="94ee9-104">Slate</span><span class="sxs-lookup"><span data-stu-id="94ee9-104">Slate</span></span>
 
 ![Slate](../images/slate/MRTK_Slate_Main.png)
 
-<span data-ttu-id="988da-106">La prefabbricata dello Slate offre un controllo dello stile della finestra sottile per la visualizzazione di contenuto 2D, ad esempio testo normale o articoli che includono supporti.</span><span class="sxs-lookup"><span data-stu-id="988da-106">The Slate prefab offers a thin window style control for displaying 2D content, for example plain text or articles including media.</span></span> <span data-ttu-id="988da-107">Offre una barra del titolo afferrabile, oltre a *seguire* e *chiudere* la funzionalità.</span><span class="sxs-lookup"><span data-stu-id="988da-107">It offers a grabbable title bar as well as *Follow Me* and *Close* functionality.</span></span> <span data-ttu-id="988da-108">È possibile scorrere la finestra del contenuto tramite input della mano articolata.</span><span class="sxs-lookup"><span data-stu-id="988da-108">The content window can be scrolled via articulated hand input.</span></span>
+<span data-ttu-id="94ee9-106">La prefabbricata dello Slate offre un controllo dello stile della finestra sottile per la visualizzazione di contenuto 2D, ad esempio testo normale o articoli che includono supporti.</span><span class="sxs-lookup"><span data-stu-id="94ee9-106">The Slate prefab offers a thin window style control for displaying 2D content, for example plain text or articles including media.</span></span> <span data-ttu-id="94ee9-107">Offre una barra del titolo afferrabile, oltre a *seguire* e *chiudere* la funzionalità.</span><span class="sxs-lookup"><span data-stu-id="94ee9-107">It offers a grabbable title bar as well as *Follow Me* and *Close* functionality.</span></span> <span data-ttu-id="94ee9-108">È possibile scorrere la finestra del contenuto tramite input della mano articolata.</span><span class="sxs-lookup"><span data-stu-id="94ee9-108">The content window can be scrolled via articulated hand input.</span></span>
 
-## <a name="how-to-use-a-slate-control"></a><span data-ttu-id="988da-109">Come usare un controllo Slate</span><span class="sxs-lookup"><span data-stu-id="988da-109">How to use a slate control</span></span>
+## <a name="how-to-use-a-slate-control"></a><span data-ttu-id="94ee9-109">Come usare un controllo Slate</span><span class="sxs-lookup"><span data-stu-id="94ee9-109">How to use a slate control</span></span>
 
-<span data-ttu-id="988da-110">Un controllo Slate è costituito dagli elementi seguenti:</span><span class="sxs-lookup"><span data-stu-id="988da-110">A slate control is composed of the following elements:</span></span>
+<span data-ttu-id="94ee9-110">Un controllo Slate è costituito dagli elementi seguenti:</span><span class="sxs-lookup"><span data-stu-id="94ee9-110">A slate control is composed of the following elements:</span></span>
 
-* <span data-ttu-id="988da-111">**Barra** del titolo: l'intera barra del titolo nella parte superiore dello Slate.</span><span class="sxs-lookup"><span data-stu-id="988da-111">**TitleBar**: The entire title bar on top of the slate.</span></span>
-* <span data-ttu-id="988da-112">**Title**: area del titolo sul lato sinistro della barra del titolo.</span><span class="sxs-lookup"><span data-stu-id="988da-112">**Title**: The title area on the left side of the title bar.</span></span>
-* <span data-ttu-id="988da-113">**Buttons**: area del pulsante sul lato destro della barra del titolo.</span><span class="sxs-lookup"><span data-stu-id="988da-113">**Buttons**: The button area on the right side of the title bar.</span></span>
-* <span data-ttu-id="988da-114">**Backplate**: il lato posteriore dello Slate.</span><span class="sxs-lookup"><span data-stu-id="988da-114">**BackPlate**: The back side of the slate.</span></span>
-* <span data-ttu-id="988da-115">**ContentQuad**: il contenuto viene assegnato come materiale.</span><span class="sxs-lookup"><span data-stu-id="988da-115">**ContentQuad**: Content is assigned as material.</span></span> <span data-ttu-id="988da-116">Nell'esempio viene utilizzato un materiale di esempio ' PanContent '.</span><span class="sxs-lookup"><span data-stu-id="988da-116">The example uses a sample material 'PanContent'.</span></span>
+* <span data-ttu-id="94ee9-111">**Barra** del titolo: l'intera barra del titolo nella parte superiore dello Slate.</span><span class="sxs-lookup"><span data-stu-id="94ee9-111">**TitleBar**: The entire title bar on top of the slate.</span></span>
+* <span data-ttu-id="94ee9-112">**Title**: area del titolo sul lato sinistro della barra del titolo.</span><span class="sxs-lookup"><span data-stu-id="94ee9-112">**Title**: The title area on the left side of the title bar.</span></span>
+* <span data-ttu-id="94ee9-113">**Buttons**: area del pulsante sul lato destro della barra del titolo.</span><span class="sxs-lookup"><span data-stu-id="94ee9-113">**Buttons**: The button area on the right side of the title bar.</span></span>
+* <span data-ttu-id="94ee9-114">**Backplate**: il lato posteriore dello Slate.</span><span class="sxs-lookup"><span data-stu-id="94ee9-114">**BackPlate**: The back side of the slate.</span></span>
+* <span data-ttu-id="94ee9-115">**ContentQuad**: il contenuto viene assegnato come materiale.</span><span class="sxs-lookup"><span data-stu-id="94ee9-115">**ContentQuad**: Content is assigned as material.</span></span> <span data-ttu-id="94ee9-116">Nell'esempio viene utilizzato un materiale di esempio ' PanContent '.</span><span class="sxs-lookup"><span data-stu-id="94ee9-116">The example uses a sample material 'PanContent'.</span></span>
 
 <img src="../images/slate/MRTK_SlateStructure.jpg" width="650" alt="Slate Strucutures">
 
-## <a name="bounds-control"></a><span data-ttu-id="988da-117">Controllo dei limiti</span><span class="sxs-lookup"><span data-stu-id="988da-117">Bounds control</span></span>
+## <a name="bounds-control"></a><span data-ttu-id="94ee9-117">Controllo dei limiti</span><span class="sxs-lookup"><span data-stu-id="94ee9-117">Bounds control</span></span>
 
-<span data-ttu-id="988da-118">Un controllo Slate contiene uno script di controllo dei limiti per la scala e la rotazione.</span><span class="sxs-lookup"><span data-stu-id="988da-118">A slate control contains a bounds control script for scaling and rotating.</span></span> <span data-ttu-id="988da-119">Per ulteriori informazioni sul controllo dei limiti, vedere la pagina relativa al [controllo dei limiti](BoundsControl.md) .</span><span class="sxs-lookup"><span data-stu-id="988da-119">For more information on bounds control, please see the [bounds control](BoundsControl.md) page.</span></span>
+<span data-ttu-id="94ee9-118">Un controllo Slate contiene uno script di controllo dei limiti per la scala e la rotazione.</span><span class="sxs-lookup"><span data-stu-id="94ee9-118">A slate control contains a bounds control script for scaling and rotating.</span></span> <span data-ttu-id="94ee9-119">Per ulteriori informazioni sul controllo dei limiti, vedere la pagina relativa al [controllo dei limiti](BoundsControl.md) .</span><span class="sxs-lookup"><span data-stu-id="94ee9-119">For more information on bounds control, please see the [bounds control](BoundsControl.md) page.</span></span>
 
 <img src="../images/slate/MRTK_Slate_BB.jpg" width="650" alt="Slate BB">
 
-## <a name="buttons"></a><span data-ttu-id="988da-120">Pulsanti</span><span class="sxs-lookup"><span data-stu-id="988da-120">Buttons</span></span>
+## <a name="buttons"></a><span data-ttu-id="94ee9-120">Pulsanti</span><span class="sxs-lookup"><span data-stu-id="94ee9-120">Buttons</span></span>
 
-<span data-ttu-id="988da-121">Uno slate standard offre due pulsanti come predefiniti nella parte superiore destra della barra del titolo:</span><span class="sxs-lookup"><span data-stu-id="988da-121">A standard slate offers two buttons as default on the top right of the title bar:</span></span>
+<span data-ttu-id="94ee9-121">Uno slate standard offre due pulsanti come predefiniti nella parte superiore destra della barra del titolo:</span><span class="sxs-lookup"><span data-stu-id="94ee9-121">A standard slate offers two buttons as default on the top right of the title bar:</span></span>
 
-* <span data-ttu-id="988da-122">**Follow me**: Abilita o imposta i componenti del Risolutore orbitali per fare in modo che l'oggetto Slate segua l'utente.</span><span class="sxs-lookup"><span data-stu-id="988da-122">**Follow Me**: Toggles an orbital solver components to make the slate object follow the user.</span></span>
-* <span data-ttu-id="988da-123">**Close**: Disabilita l'oggetto Slate.</span><span class="sxs-lookup"><span data-stu-id="988da-123">**Close**: Disables the slate object.</span></span>
+* <span data-ttu-id="94ee9-122">**Follow me**: Abilita o imposta i componenti del Risolutore orbitali per fare in modo che l'oggetto Slate segua l'utente.</span><span class="sxs-lookup"><span data-stu-id="94ee9-122">**Follow Me**: Toggles an orbital solver components to make the slate object follow the user.</span></span>
+* <span data-ttu-id="94ee9-123">**Close**: Disabilita l'oggetto Slate.</span><span class="sxs-lookup"><span data-stu-id="94ee9-123">**Close**: Disables the slate object.</span></span>
 
 <img src="../images/slate/MRTK_Slate_Buttons.jpg" width="650" alt="Slate Buttons">
 
-## <a name="scripts"></a><span data-ttu-id="988da-124">Script</span><span class="sxs-lookup"><span data-stu-id="988da-124">Scripts</span></span>
+## <a name="scripts"></a><span data-ttu-id="94ee9-124">Script</span><span class="sxs-lookup"><span data-stu-id="94ee9-124">Scripts</span></span>
 
-<span data-ttu-id="988da-125">In generale, lo `NearInteractionTouchable.cs` script deve essere collegato a qualsiasi oggetto destinato a ricevere eventi di tocco da `IMixedRealityTouchHandler` .</span><span class="sxs-lookup"><span data-stu-id="988da-125">In general, the `NearInteractionTouchable.cs` script must be attached to any object that is intended to receive touch events from the `IMixedRealityTouchHandler`.</span></span>
+<span data-ttu-id="94ee9-125">In generale, lo `NearInteractionTouchable.cs` script deve essere collegato a qualsiasi oggetto destinato a ricevere eventi di tocco da `IMixedRealityTouchHandler` .</span><span class="sxs-lookup"><span data-stu-id="94ee9-125">In general, the `NearInteractionTouchable.cs` script must be attached to any object that is intended to receive touch events from the `IMixedRealityTouchHandler`.</span></span>
 
 <img src="../images/slate/MRTK_Slate_Scripts.png" alt="Slate Scripts">
 
-* <span data-ttu-id="988da-126">`HandInteractionPan.cs` Questo script gestisce l'input della mano articolata per toccare e muovere il contenuto nel *ContentQuad* dello Slate.</span><span class="sxs-lookup"><span data-stu-id="988da-126">`HandInteractionPan.cs` This script handles articulated hand input for touching and moving the content on the slate's *ContentQuad*.</span></span>
+* <span data-ttu-id="94ee9-126">`HandInteractionPan.cs` Questo script gestisce l'input della mano articolata per toccare e muovere il contenuto nel *ContentQuad* dello Slate.</span><span class="sxs-lookup"><span data-stu-id="94ee9-126">`HandInteractionPan.cs` This script handles articulated hand input for touching and moving the content on the slate's *ContentQuad*.</span></span>
 
-* <span data-ttu-id="988da-127">`HandInteractionPanZoom.cs`: Oltre all'interazione di panoramica, questo script supporta lo zoom a due bit.</span><span class="sxs-lookup"><span data-stu-id="988da-127">`HandInteractionPanZoom.cs`: In addition to the panning interaction, this script supports two-handed zooming.</span></span>
+* <span data-ttu-id="94ee9-127">`HandInteractionPanZoom.cs`: Oltre all'interazione di panoramica, questo script supporta lo zoom a due bit.</span><span class="sxs-lookup"><span data-stu-id="94ee9-127">`HandInteractionPanZoom.cs`: In addition to the panning interaction, this script supports two-handed zooming.</span></span>
 
 <img src="../images/slate/MRTK_Slate_PanZoom.png" width="500" alt="Slate PanZoom">

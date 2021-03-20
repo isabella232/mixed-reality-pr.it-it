@@ -4,23 +4,22 @@ description: Documentazione sul posizionamento del rilevamento degli occhi
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, EyeTracking,
-ms.openlocfilehash: b8997a560848262383bc1ff293288f04aeae0a65
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 7d46d07302d98660b5652b7c719233bc0bd5fc07
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783283"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104683254"
 ---
-# <a name="eye-supported-target-positioning-in-mrtk"></a><span data-ttu-id="965b2-104">Posizionamento della destinazione con supporto oculare in MRTK</span><span class="sxs-lookup"><span data-stu-id="965b2-104">Eye-supported target positioning in MRTK</span></span>
+# <a name="eye-supported-target-positioning-in-mrtk"></a><span data-ttu-id="475ff-104">Posizionamento della destinazione con supporto oculare in MRTK</span><span class="sxs-lookup"><span data-stu-id="475ff-104">Eye-supported target positioning in MRTK</span></span>
 
 ![Posizionamento di MRTK Eye traking](../images/eye-tracking/mrtk_et_positioning.png)
 
 <!-- TODO: Add content -->
-<span data-ttu-id="965b2-106">_Stiamo attualmente ristrutturando e migliorando la documentazione di MRTK. Il contenuto verrà aggiornato a breve. Per eventuali domande relative a questa sezione, pubblicare un post nel canale Slack MRTK._</span><span class="sxs-lookup"><span data-stu-id="965b2-106">_We're currently restructuring and improving the MRTK documentation. This content will be updated soon! If you have any questions regarding this section please post in our MRTK slack channel._</span></span>
+<span data-ttu-id="475ff-106">_Stiamo attualmente ristrutturando e migliorando la documentazione di MRTK. Il contenuto verrà aggiornato a breve. Per eventuali domande relative a questa sezione, pubblicare un post nel canale Slack MRTK._</span><span class="sxs-lookup"><span data-stu-id="475ff-106">_We're currently restructuring and improving the MRTK documentation. This content will be updated soon! If you have any questions regarding this section please post in our MRTK slack channel._</span></span>
 
 ![Posizionamento del dispositivo di scorrimento MRTK](../images/eye-tracking/mrtk_et_positioning_slider.png)
 
 ---
-[<span data-ttu-id="965b2-108">Torna a "Eye Tracking in the MixedRealityToolkit"</span><span class="sxs-lookup"><span data-stu-id="965b2-108">Back to "Eye tracking in the MixedRealityToolkit"</span></span>](EyeTracking_Main.md)
+[<span data-ttu-id="475ff-108">Torna a "Eye Tracking in the MixedRealityToolkit"</span><span class="sxs-lookup"><span data-stu-id="475ff-108">Back to "Eye tracking in the MixedRealityToolkit"</span></span>](EyeTracking_Main.md)

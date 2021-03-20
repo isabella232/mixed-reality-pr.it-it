@@ -8,51 +8,51 @@ ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, riconoscimento vocale, Windows 10
 ms.localizationpriority: high
 ms.openlocfilehash: 2e7a48dc4bb64eb177e6fa290f4918345c3d642f
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99590153"
 ---
-# <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a><span data-ttu-id="6fe40-104">2. Aggiunta di una modalità offline per la conversione locale della voce in testo scritto</span><span class="sxs-lookup"><span data-stu-id="6fe40-104">2. Adding an offline mode for local speech-to-text translation</span></span>
+# <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a><span data-ttu-id="c6fcb-104">2. Aggiunta di una modalità offline per la conversione locale della voce in testo scritto</span><span class="sxs-lookup"><span data-stu-id="c6fcb-104">2. Adding an offline mode for local speech-to-text translation</span></span>
 
-<span data-ttu-id="6fe40-105">In questa esercitazione aggiungerai la possibilità di eseguire comandi con il riconoscimento vocale di Azure, che consentirà di eseguire un evento in base alla parola o alla frase definita.</span><span class="sxs-lookup"><span data-stu-id="6fe40-105">In this tutorial, you will add the ability to execute commands using Azure speech recognition which will allow you to make something happen based on the word or phrase you define.</span></span>
+<span data-ttu-id="c6fcb-105">In questa esercitazione aggiungerai la possibilità di eseguire comandi con il riconoscimento vocale di Azure, che consentirà di eseguire un evento in base alla parola o alla frase definita.</span><span class="sxs-lookup"><span data-stu-id="c6fcb-105">In this tutorial, you will add the ability to execute commands using Azure speech recognition which will allow you to make something happen based on the word or phrase you define.</span></span>
 
-## <a name="objectives"></a><span data-ttu-id="6fe40-106">Obiettivi</span><span class="sxs-lookup"><span data-stu-id="6fe40-106">Objectives</span></span>
+## <a name="objectives"></a><span data-ttu-id="c6fcb-106">Obiettivi</span><span class="sxs-lookup"><span data-stu-id="c6fcb-106">Objectives</span></span>
 
-* <span data-ttu-id="6fe40-107">Imparare a usare il riconoscimento vocale di Azure per eseguire comandi</span><span class="sxs-lookup"><span data-stu-id="6fe40-107">Learn how Azure speech recognition can be used to execute commands</span></span>
+* <span data-ttu-id="c6fcb-107">Imparare a usare il riconoscimento vocale di Azure per eseguire comandi</span><span class="sxs-lookup"><span data-stu-id="c6fcb-107">Learn how Azure speech recognition can be used to execute commands</span></span>
 
-## <a name="instructions"></a><span data-ttu-id="6fe40-108">Istruzioni</span><span class="sxs-lookup"><span data-stu-id="6fe40-108">Instructions</span></span>
+## <a name="instructions"></a><span data-ttu-id="c6fcb-108">Istruzioni</span><span class="sxs-lookup"><span data-stu-id="c6fcb-108">Instructions</span></span>
 
-<span data-ttu-id="6fe40-109">Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **Lunarcom** e quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **Lunarcom Wake Word Recognizer (Script)** (Riconoscimento parola di attivazione Lunarcom - Script) all'oggetto Lunarcom e configuralo come indicato di seguito:</span><span class="sxs-lookup"><span data-stu-id="6fe40-109">In the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, use the **Add Component** button to add the **Lunarcom Wake Word Recognizer (Script)** component to the Lunarcom object and configure it as follows:</span></span>
+<span data-ttu-id="c6fcb-109">Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **Lunarcom** e quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **Lunarcom Wake Word Recognizer (Script)** (Riconoscimento parola di attivazione Lunarcom - Script) all'oggetto Lunarcom e configuralo come indicato di seguito:</span><span class="sxs-lookup"><span data-stu-id="c6fcb-109">In the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, use the **Add Component** button to add the **Lunarcom Wake Word Recognizer (Script)** component to the Lunarcom object and configure it as follows:</span></span>
 
-* <span data-ttu-id="6fe40-110">Nel campo **Wake Word** (Parola di attivazione) immetti una frase appropriata, ad esempio _Activate Terminal_.</span><span class="sxs-lookup"><span data-stu-id="6fe40-110">In the **Wake Word** field, enter a suitable phrase, for example, _Activate terminal_.</span></span>
-* <span data-ttu-id="6fe40-111">Nel campo **Dismiss Word** (Parola di eliminazione) immetti una frase appropriata, ad esempio _Dismiss Terminal_.</span><span class="sxs-lookup"><span data-stu-id="6fe40-111">In the **Dismiss Word** field, enter a suitable phrase, for example, _Dismiss terminal_.</span></span>
+* <span data-ttu-id="c6fcb-110">Nel campo **Wake Word** (Parola di attivazione) immetti una frase appropriata, ad esempio _Activate Terminal_.</span><span class="sxs-lookup"><span data-stu-id="c6fcb-110">In the **Wake Word** field, enter a suitable phrase, for example, _Activate terminal_.</span></span>
+* <span data-ttu-id="c6fcb-111">Nel campo **Dismiss Word** (Parola di eliminazione) immetti una frase appropriata, ad esempio _Dismiss Terminal_.</span><span class="sxs-lookup"><span data-stu-id="c6fcb-111">In the **Dismiss Word** field, enter a suitable phrase, for example, _Dismiss terminal_.</span></span>
 
 ![Editor di Unity con il componente Lunarcom Wake Word Recognizer (Script) evidenziato](images/mrlearning-speech/tutorial2-section1-step1-1.png)
 
 > [!NOTE]
-> <span data-ttu-id="6fe40-113">Il componente Lunarcom Wake Word Recognizer (Script) (Riconoscimento parola di attivazione Lunarcom - Script) non fa parte di MRTK.</span><span class="sxs-lookup"><span data-stu-id="6fe40-113">The Lunarcom Wake Word Recognizer (Script) component is not part of MRTK.</span></span> <span data-ttu-id="6fe40-114">È stato fornito con gli asset dell'esercitazione.</span><span class="sxs-lookup"><span data-stu-id="6fe40-114">It was provided with this tutorial's assets.</span></span>
+> <span data-ttu-id="c6fcb-113">Il componente Lunarcom Wake Word Recognizer (Script) (Riconoscimento parola di attivazione Lunarcom - Script) non fa parte di MRTK.</span><span class="sxs-lookup"><span data-stu-id="c6fcb-113">The Lunarcom Wake Word Recognizer (Script) component is not part of MRTK.</span></span> <span data-ttu-id="c6fcb-114">È stato fornito con gli asset dell'esercitazione.</span><span class="sxs-lookup"><span data-stu-id="c6fcb-114">It was provided with this tutorial's assets.</span></span>
 
-<span data-ttu-id="6fe40-115">Se ora attivi la modalità gioco, come nell'esercitazione precedente, il pannello del terminale viene abilitato per impostazione predefinita. Tuttavia, puoi ora disabilitarlo pronunciando la parola di eliminazione **Dismiss terminal**:</span><span class="sxs-lookup"><span data-stu-id="6fe40-115">If you now enter Game mode, as in the previous tutorial, the terminal panel is enabled by default, but you can now disable it by saying the Dismiss Word, **Dismiss terminal**:</span></span>
+<span data-ttu-id="c6fcb-115">Se ora attivi la modalità gioco, come nell'esercitazione precedente, il pannello del terminale viene abilitato per impostazione predefinita. Tuttavia, puoi ora disabilitarlo pronunciando la parola di eliminazione **Dismiss terminal**:</span><span class="sxs-lookup"><span data-stu-id="c6fcb-115">If you now enter Game mode, as in the previous tutorial, the terminal panel is enabled by default, but you can now disable it by saying the Dismiss Word, **Dismiss terminal**:</span></span>
 
 ![Editor di Unity in modalità di riproduzione con la funzionalità di riconoscimento vocale in uso](images/mrlearning-speech/tutorial2-section1-step1-2.png)
 
-<span data-ttu-id="6fe40-117">Puoi anche riabilitarlo pronunciando la parola di attivazione **Activate terminal**:</span><span class="sxs-lookup"><span data-stu-id="6fe40-117">And enable it again by saying the Wake Word, **Activate terminal**:</span></span>
+<span data-ttu-id="c6fcb-117">Puoi anche riabilitarlo pronunciando la parola di attivazione **Activate terminal**:</span><span class="sxs-lookup"><span data-stu-id="c6fcb-117">And enable it again by saying the Wake Word, **Activate terminal**:</span></span>
 
 ![Editor di Unity in modalità di riproduzione con il terminale attivo](images/mrlearning-speech/tutorial2-section1-step1-3.png)
 
 > [!CAUTION]
-> <span data-ttu-id="6fe40-119">Poiché l'applicazione deve connettersi ad Azure, assicurati che il computer o il dispositivo sia connesso a Internet.</span><span class="sxs-lookup"><span data-stu-id="6fe40-119">The application needs to connect to Azure, so make sure your computer/device is connected to the internet.</span></span>
+> <span data-ttu-id="c6fcb-119">Poiché l'applicazione deve connettersi ad Azure, assicurati che il computer o il dispositivo sia connesso a Internet.</span><span class="sxs-lookup"><span data-stu-id="c6fcb-119">The application needs to connect to Azure, so make sure your computer/device is connected to the internet.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="6fe40-120">Se si prevede di non essere spesso in grado di connettersi ad Azure, è possibile implementare i comandi vocali anche con MRTK seguendo le istruzioni contenute in [Uso dei comandi vocali](mr-learning-base-09.md).</span><span class="sxs-lookup"><span data-stu-id="6fe40-120">If you anticipate frequently not being able to connect to Azure, you can also implement speech commands using MRTK by following the [Using speech commands](mr-learning-base-09.md) instructions.</span></span>
+> <span data-ttu-id="c6fcb-120">Se si prevede di non essere spesso in grado di connettersi ad Azure, è possibile implementare i comandi vocali anche con MRTK seguendo le istruzioni contenute in [Uso dei comandi vocali](mr-learning-base-09.md).</span><span class="sxs-lookup"><span data-stu-id="c6fcb-120">If you anticipate frequently not being able to connect to Azure, you can also implement speech commands using MRTK by following the [Using speech commands](mr-learning-base-09.md) instructions.</span></span>
 
-## <a name="congratulations"></a><span data-ttu-id="6fe40-121">Lezione completata</span><span class="sxs-lookup"><span data-stu-id="6fe40-121">Congratulations</span></span>
+## <a name="congratulations"></a><span data-ttu-id="c6fcb-121">Lezione completata</span><span class="sxs-lookup"><span data-stu-id="c6fcb-121">Congratulations</span></span>
 
-<span data-ttu-id="6fe40-122">Hai implementato i comandi vocali basati su Azure.</span><span class="sxs-lookup"><span data-stu-id="6fe40-122">You have implemented speech commands powered by Azure.</span></span> <span data-ttu-id="6fe40-123">Esegui l'applicazione nel dispositivo per verificare che la funzionalità venga eseguita correttamente.</span><span class="sxs-lookup"><span data-stu-id="6fe40-123">Run the application on your device to ensure the feature is working properly.</span></span>
+<span data-ttu-id="c6fcb-122">Hai implementato i comandi vocali basati su Azure.</span><span class="sxs-lookup"><span data-stu-id="c6fcb-122">You have implemented speech commands powered by Azure.</span></span> <span data-ttu-id="c6fcb-123">Esegui l'applicazione nel dispositivo per verificare che la funzionalità venga eseguita correttamente.</span><span class="sxs-lookup"><span data-stu-id="c6fcb-123">Run the application on your device to ensure the feature is working properly.</span></span>
 
-<span data-ttu-id="6fe40-124">Nell'esercitazione successiva apprenderai come tradurre il parlato con la traduzione vocale di Azure.</span><span class="sxs-lookup"><span data-stu-id="6fe40-124">In the next tutorial, you will learn how to translate speech using Azure speech translation.</span></span>
+<span data-ttu-id="c6fcb-124">Nell'esercitazione successiva apprenderai come tradurre il parlato con la traduzione vocale di Azure.</span><span class="sxs-lookup"><span data-stu-id="c6fcb-124">In the next tutorial, you will learn how to translate speech using Azure speech translation.</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="6fe40-125">Esercitazione successiva: 3. Aggiunta del componente di traduzione vocale di Servizi cognitivi di Azure</span><span class="sxs-lookup"><span data-stu-id="6fe40-125">Next Tutorial: 3. Adding the Azure Cognitive Services speech translation component</span></span>](mrlearning-speechSDK-ch3.md)
+> [<span data-ttu-id="c6fcb-125">Esercitazione successiva: 3. Aggiunta del componente di traduzione vocale di Servizi cognitivi di Azure</span><span class="sxs-lookup"><span data-stu-id="c6fcb-125">Next Tutorial: 3. Adding the Azure Cognitive Services speech translation component</span></span>](mrlearning-speechSDK-ch3.md)

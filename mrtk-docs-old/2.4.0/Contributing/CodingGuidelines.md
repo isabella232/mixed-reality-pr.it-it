@@ -4,75 +4,75 @@ description: principi e convenzioni di codifica da seguire per contribuire a MRT
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, C#,
-ms.openlocfilehash: eb3a6f9f67cb754a60fb94d2ef98ba49a119b9fe
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: fb32f3330b9f53978de5cc06cccbc47b3dd4b6b6
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782719"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684434"
 ---
-# <a name="coding-guidelines"></a><span data-ttu-id="acdce-104">Linee guida sulla codifica</span><span class="sxs-lookup"><span data-stu-id="acdce-104">Coding guidelines</span></span>
+# <a name="coding-guidelines"></a><span data-ttu-id="831db-104">Linee guida sulla codifica</span><span class="sxs-lookup"><span data-stu-id="831db-104">Coding guidelines</span></span>
 
-<span data-ttu-id="acdce-105">Questo documento descrive i principi e le convenzioni di codifica da seguire per contribuire a MRTK.</span><span class="sxs-lookup"><span data-stu-id="acdce-105">This document outlines coding principles and conventions to follow when contributing to MRTK.</span></span>
+<span data-ttu-id="831db-105">Questo documento descrive i principi e le convenzioni di codifica da seguire per contribuire a MRTK.</span><span class="sxs-lookup"><span data-stu-id="831db-105">This document outlines coding principles and conventions to follow when contributing to MRTK.</span></span>
 
 ---
 
-## <a name="philosophy"></a><span data-ttu-id="acdce-106">Filosofia</span><span class="sxs-lookup"><span data-stu-id="acdce-106">Philosophy</span></span>
+## <a name="philosophy"></a><span data-ttu-id="831db-106">Filosofia</span><span class="sxs-lookup"><span data-stu-id="831db-106">Philosophy</span></span>
 
-### <a name="be-concise-and-strive-for-simplicity"></a><span data-ttu-id="acdce-107">Essere conciso e impegnarsi per semplicità</span><span class="sxs-lookup"><span data-stu-id="acdce-107">Be concise and strive for simplicity</span></span>
+### <a name="be-concise-and-strive-for-simplicity"></a><span data-ttu-id="831db-107">Essere conciso e impegnarsi per semplicità</span><span class="sxs-lookup"><span data-stu-id="831db-107">Be concise and strive for simplicity</span></span>
 
-<span data-ttu-id="acdce-108">La soluzione più semplice è spesso la scelta migliore.</span><span class="sxs-lookup"><span data-stu-id="acdce-108">The simplest solution is often the best.</span></span> <span data-ttu-id="acdce-109">Si tratta di un obiettivo sostitutivo di queste linee guida e dovrebbe essere l'obiettivo di tutte le attività di codifica.</span><span class="sxs-lookup"><span data-stu-id="acdce-109">This is an overriding aim of these guidelines and should be the goal of all coding activity.</span></span> <span data-ttu-id="acdce-110">Parte della semplicità è concisa e coerente con il codice esistente.</span><span class="sxs-lookup"><span data-stu-id="acdce-110">Part of being simple is being concise, and consistent with existing code.</span></span> <span data-ttu-id="acdce-111">Provare a semplificare il codice.</span><span class="sxs-lookup"><span data-stu-id="acdce-111">Try to keep your code simple.</span></span>
+<span data-ttu-id="831db-108">La soluzione più semplice è spesso la scelta migliore.</span><span class="sxs-lookup"><span data-stu-id="831db-108">The simplest solution is often the best.</span></span> <span data-ttu-id="831db-109">Si tratta di un obiettivo sostitutivo di queste linee guida e dovrebbe essere l'obiettivo di tutte le attività di codifica.</span><span class="sxs-lookup"><span data-stu-id="831db-109">This is an overriding aim of these guidelines and should be the goal of all coding activity.</span></span> <span data-ttu-id="831db-110">Parte della semplicità è concisa e coerente con il codice esistente.</span><span class="sxs-lookup"><span data-stu-id="831db-110">Part of being simple is being concise, and consistent with existing code.</span></span> <span data-ttu-id="831db-111">Provare a semplificare il codice.</span><span class="sxs-lookup"><span data-stu-id="831db-111">Try to keep your code simple.</span></span>
 
-<span data-ttu-id="acdce-112">I lettori devono rilevare solo gli elementi che forniscono informazioni utili.</span><span class="sxs-lookup"><span data-stu-id="acdce-112">Readers should only encounter artifacts that provide useful information.</span></span> <span data-ttu-id="acdce-113">Ad esempio, i commenti che riformulano gli elementi evidenti non forniscono informazioni aggiuntive e aumentano il rapporto tra rumore e segnale.</span><span class="sxs-lookup"><span data-stu-id="acdce-113">For example, comments that restate what is obvious provide no extra information and increase the noise to signal ratio.</span></span>
+<span data-ttu-id="831db-112">I lettori devono rilevare solo gli elementi che forniscono informazioni utili.</span><span class="sxs-lookup"><span data-stu-id="831db-112">Readers should only encounter artifacts that provide useful information.</span></span> <span data-ttu-id="831db-113">Ad esempio, i commenti che riformulano gli elementi evidenti non forniscono informazioni aggiuntive e aumentano il rapporto tra rumore e segnale.</span><span class="sxs-lookup"><span data-stu-id="831db-113">For example, comments that restate what is obvious provide no extra information and increase the noise to signal ratio.</span></span>
 
-<span data-ttu-id="acdce-114">Semplificare la logica del codice.</span><span class="sxs-lookup"><span data-stu-id="acdce-114">Keep code logic simple.</span></span> <span data-ttu-id="acdce-115">Si noti che non si tratta di un'istruzione sull'utilizzo del minor numero di righe, riducendo al minimo le dimensioni dei nomi degli identificatori o dello stile della parentesi graffa, ma per ridurre il numero di concetti e massimizzare la visibilità di tali linee tramite modelli noti.</span><span class="sxs-lookup"><span data-stu-id="acdce-115">Note that this is not a statement about using the fewest number of lines, minimizing the size of identifier names or brace style, but about reducing the number of concepts and maximizing the visibility of those through familiar patterns.</span></span>
+<span data-ttu-id="831db-114">Semplificare la logica del codice.</span><span class="sxs-lookup"><span data-stu-id="831db-114">Keep code logic simple.</span></span> <span data-ttu-id="831db-115">Si noti che non si tratta di un'istruzione sull'utilizzo del minor numero di righe, riducendo al minimo le dimensioni dei nomi degli identificatori o dello stile della parentesi graffa, ma per ridurre il numero di concetti e massimizzare la visibilità di tali linee tramite modelli noti.</span><span class="sxs-lookup"><span data-stu-id="831db-115">Note that this is not a statement about using the fewest number of lines, minimizing the size of identifier names or brace style, but about reducing the number of concepts and maximizing the visibility of those through familiar patterns.</span></span>
 
-### <a name="produce-consistent-readable-code"></a><span data-ttu-id="acdce-116">Produrre codice coerente e leggibile</span><span class="sxs-lookup"><span data-stu-id="acdce-116">Produce consistent, readable code</span></span>
+### <a name="produce-consistent-readable-code"></a><span data-ttu-id="831db-116">Produrre codice coerente e leggibile</span><span class="sxs-lookup"><span data-stu-id="831db-116">Produce consistent, readable code</span></span>
 
-<span data-ttu-id="acdce-117">La leggibilità del codice è correlata a frequenze di difetti ridotte.</span><span class="sxs-lookup"><span data-stu-id="acdce-117">Code readability is correlated with low defect rates.</span></span> <span data-ttu-id="acdce-118">Sforzarsi di creare codice facile da leggere.</span><span class="sxs-lookup"><span data-stu-id="acdce-118">Strive to create code that is easy to read.</span></span> <span data-ttu-id="acdce-119">Sforzarsi di creare codice con una logica semplice e riutilizzare i componenti esistenti, in quanto consente inoltre di garantire la correttezza.</span><span class="sxs-lookup"><span data-stu-id="acdce-119">Strive to create code that has simple logic and re-uses existing components as it will also help ensure correctness.</span></span>
+<span data-ttu-id="831db-117">La leggibilità del codice è correlata a frequenze di difetti ridotte.</span><span class="sxs-lookup"><span data-stu-id="831db-117">Code readability is correlated with low defect rates.</span></span> <span data-ttu-id="831db-118">Sforzarsi di creare codice facile da leggere.</span><span class="sxs-lookup"><span data-stu-id="831db-118">Strive to create code that is easy to read.</span></span> <span data-ttu-id="831db-119">Sforzarsi di creare codice con una logica semplice e riutilizzare i componenti esistenti, in quanto consente inoltre di garantire la correttezza.</span><span class="sxs-lookup"><span data-stu-id="831db-119">Strive to create code that has simple logic and re-uses existing components as it will also help ensure correctness.</span></span>
 
-<span data-ttu-id="acdce-120">Tutti i dettagli del codice prodotto, dai dettagli più semplici sulla correttezza allo stile e alla formattazione coerenti.</span><span class="sxs-lookup"><span data-stu-id="acdce-120">All details of the code you produce matter, from the most basic detail of correctness to consistent style and formatting.</span></span> <span data-ttu-id="acdce-121">Mantieni lo stile di codifica coerente con quello che esiste già, anche se non corrisponde alle tue preferenze.</span><span class="sxs-lookup"><span data-stu-id="acdce-121">Keep your coding style consistent with what already exists, even if it is not matching your preference.</span></span> <span data-ttu-id="acdce-122">Ciò aumenta la leggibilità della codebase complessiva.</span><span class="sxs-lookup"><span data-stu-id="acdce-122">This increases the readability of the overall codebase.</span></span>
+<span data-ttu-id="831db-120">Tutti i dettagli del codice prodotto, dai dettagli più semplici sulla correttezza allo stile e alla formattazione coerenti.</span><span class="sxs-lookup"><span data-stu-id="831db-120">All details of the code you produce matter, from the most basic detail of correctness to consistent style and formatting.</span></span> <span data-ttu-id="831db-121">Mantieni lo stile di codifica coerente con quello che esiste già, anche se non corrisponde alle tue preferenze.</span><span class="sxs-lookup"><span data-stu-id="831db-121">Keep your coding style consistent with what already exists, even if it is not matching your preference.</span></span> <span data-ttu-id="831db-122">Ciò aumenta la leggibilità della codebase complessiva.</span><span class="sxs-lookup"><span data-stu-id="831db-122">This increases the readability of the overall codebase.</span></span>
 
-### <a name="support-configuring-components-both-in-editor-and-at-run-time"></a><span data-ttu-id="acdce-123">Supportare la configurazione dei componenti sia nell'editor che in fase di esecuzione</span><span class="sxs-lookup"><span data-stu-id="acdce-123">Support configuring components both in editor and at run-time</span></span>
+### <a name="support-configuring-components-both-in-editor-and-at-run-time"></a><span data-ttu-id="831db-123">Supportare la configurazione dei componenti sia nell'editor che in fase di esecuzione</span><span class="sxs-lookup"><span data-stu-id="831db-123">Support configuring components both in editor and at run-time</span></span>
 
-<span data-ttu-id="acdce-124">MRTK supporta un set di utenti diversificato, ovvero persone che preferiscono configurare i componenti nell'editor di Unity e caricare i prefabbricati e gli utenti che devono creare istanze e configurare oggetti in fase di esecuzione.</span><span class="sxs-lookup"><span data-stu-id="acdce-124">MRTK supports a diverse set of users – people who prefer to configure components in the Unity editor and load prefabs, and people who need to instantiate and configure objects at run-time.</span></span>
+<span data-ttu-id="831db-124">MRTK supporta un set di utenti diversificato, ovvero persone che preferiscono configurare i componenti nell'editor di Unity e caricare i prefabbricati e gli utenti che devono creare istanze e configurare oggetti in fase di esecuzione.</span><span class="sxs-lookup"><span data-stu-id="831db-124">MRTK supports a diverse set of users – people who prefer to configure components in the Unity editor and load prefabs, and people who need to instantiate and configure objects at run-time.</span></span>
 
-<span data-ttu-id="acdce-125">Tutto il codice dovrebbe funzionare sia aggiungendo un componente a un GameObject in una scena salvata, sia creando un'istanza del componente nel codice.</span><span class="sxs-lookup"><span data-stu-id="acdce-125">All your code should work by BOTH adding a component to a GameObject in a saved scene, and by instantiating that component in code.</span></span> <span data-ttu-id="acdce-126">I test devono includere una test case sia per la creazione di un'istanza di prefabbricati che per la creazione di istanze, configurazione del componente in fase di esecuzione</span><span class="sxs-lookup"><span data-stu-id="acdce-126">Tests should include a test case both for instantiating prefabs and instantiating, configuring the component at runtime.</span></span>
+<span data-ttu-id="831db-125">Tutto il codice dovrebbe funzionare sia aggiungendo un componente a un GameObject in una scena salvata, sia creando un'istanza del componente nel codice.</span><span class="sxs-lookup"><span data-stu-id="831db-125">All your code should work by BOTH adding a component to a GameObject in a saved scene, and by instantiating that component in code.</span></span> <span data-ttu-id="831db-126">I test devono includere una test case sia per la creazione di un'istanza di prefabbricati che per la creazione di istanze, configurazione del componente in fase di esecuzione</span><span class="sxs-lookup"><span data-stu-id="831db-126">Tests should include a test case both for instantiating prefabs and instantiating, configuring the component at runtime.</span></span>
 
-### <a name="play-in-editor-is-your-first-and-primary-target-platform"></a><span data-ttu-id="acdce-127">Play-in-Editor è la prima piattaforma di destinazione principale</span><span class="sxs-lookup"><span data-stu-id="acdce-127">Play-in-editor is your first and primary target platform</span></span>
+### <a name="play-in-editor-is-your-first-and-primary-target-platform"></a><span data-ttu-id="831db-127">Play-in-Editor è la prima piattaforma di destinazione principale</span><span class="sxs-lookup"><span data-stu-id="831db-127">Play-in-editor is your first and primary target platform</span></span>
 
-<span data-ttu-id="acdce-128">Play-in-Editor è il modo più rapido per eseguire un'iterazione in Unity.</span><span class="sxs-lookup"><span data-stu-id="acdce-128">Play-In-Editor is the fastest way to iterate in Unity.</span></span> <span data-ttu-id="acdce-129">Fornire modi per consentire ai clienti di eseguire rapidamente l'iterazione consente loro di sviluppare soluzioni in modo più rapido e provare altre idee.</span><span class="sxs-lookup"><span data-stu-id="acdce-129">Providing ways for our customers to iterate quickly allows them to both develop solutions more quickly and try out more ideas.</span></span> <span data-ttu-id="acdce-130">In altre parole, l'ottimizzazione della velocità di iterazione consente ai clienti di ottenere maggiori risultati.</span><span class="sxs-lookup"><span data-stu-id="acdce-130">In other words, maximizing the speed of iteration empowers our customers to achieve more.</span></span>
+<span data-ttu-id="831db-128">Play-in-Editor è il modo più rapido per eseguire un'iterazione in Unity.</span><span class="sxs-lookup"><span data-stu-id="831db-128">Play-In-Editor is the fastest way to iterate in Unity.</span></span> <span data-ttu-id="831db-129">Fornire modi per consentire ai clienti di eseguire rapidamente l'iterazione consente loro di sviluppare soluzioni in modo più rapido e provare altre idee.</span><span class="sxs-lookup"><span data-stu-id="831db-129">Providing ways for our customers to iterate quickly allows them to both develop solutions more quickly and try out more ideas.</span></span> <span data-ttu-id="831db-130">In altre parole, l'ottimizzazione della velocità di iterazione consente ai clienti di ottenere maggiori risultati.</span><span class="sxs-lookup"><span data-stu-id="831db-130">In other words, maximizing the speed of iteration empowers our customers to achieve more.</span></span>
 
-<span data-ttu-id="acdce-131">Eseguire tutte le operazioni nell'editor, quindi fare in modo che funzioni in qualsiasi altra piattaforma.</span><span class="sxs-lookup"><span data-stu-id="acdce-131">Make everything work in editor, then make it work on any other platform.</span></span> <span data-ttu-id="acdce-132">Mantenerlo funzionante nell'editor.</span><span class="sxs-lookup"><span data-stu-id="acdce-132">Keep it working in the editor.</span></span> <span data-ttu-id="acdce-133">È facile aggiungere una nuova piattaforma a Play-in-Editor.</span><span class="sxs-lookup"><span data-stu-id="acdce-133">It is easy to add a new platform to Play-In-Editor.</span></span> <span data-ttu-id="acdce-134">È molto difficile ottenere il funzionamento di Play-in-Editor se l'app funziona solo in un dispositivo.</span><span class="sxs-lookup"><span data-stu-id="acdce-134">It is very difficult to get Play-In-Editor working if your app only works on a device.</span></span>
+<span data-ttu-id="831db-131">Eseguire tutte le operazioni nell'editor, quindi fare in modo che funzioni in qualsiasi altra piattaforma.</span><span class="sxs-lookup"><span data-stu-id="831db-131">Make everything work in editor, then make it work on any other platform.</span></span> <span data-ttu-id="831db-132">Mantenerlo funzionante nell'editor.</span><span class="sxs-lookup"><span data-stu-id="831db-132">Keep it working in the editor.</span></span> <span data-ttu-id="831db-133">È facile aggiungere una nuova piattaforma a Play-in-Editor.</span><span class="sxs-lookup"><span data-stu-id="831db-133">It is easy to add a new platform to Play-In-Editor.</span></span> <span data-ttu-id="831db-134">È molto difficile ottenere il funzionamento di Play-in-Editor se l'app funziona solo in un dispositivo.</span><span class="sxs-lookup"><span data-stu-id="831db-134">It is very difficult to get Play-In-Editor working if your app only works on a device.</span></span>
 
-### <a name="add-new-public-fields-properties-methods-and-serialized-private-fields-with-care"></a><span data-ttu-id="acdce-135">Aggiunta di nuovi campi pubblici, proprietà, metodi e campi privati serializzati con attenzione</span><span class="sxs-lookup"><span data-stu-id="acdce-135">Add new public fields, properties, methods and serialized private fields with care</span></span>
+### <a name="add-new-public-fields-properties-methods-and-serialized-private-fields-with-care"></a><span data-ttu-id="831db-135">Aggiunta di nuovi campi pubblici, proprietà, metodi e campi privati serializzati con attenzione</span><span class="sxs-lookup"><span data-stu-id="831db-135">Add new public fields, properties, methods and serialized private fields with care</span></span>
 
-<span data-ttu-id="acdce-136">Ogni volta che si aggiunge un metodo pubblico, Field, Property, diventa parte della superficie dell'API pubblica di MRTK.</span><span class="sxs-lookup"><span data-stu-id="acdce-136">Every time you add a public method, field, property, it becomes part of MRTK’s public API surface.</span></span> <span data-ttu-id="acdce-137">I campi privati contrassegnati con `[SerializeField]` espongono anche campi all'editor e fanno parte della superficie dell'API pubblica.</span><span class="sxs-lookup"><span data-stu-id="acdce-137">Private fields marked with `[SerializeField]` also expose fields to the editor and are part of the public API surface.</span></span> <span data-ttu-id="acdce-138">Altri utenti possono usare il metodo pubblico, configurare i prefabbricati personalizzati con il campo pubblico e assumere una dipendenza.</span><span class="sxs-lookup"><span data-stu-id="acdce-138">Other people might use that public method, configure custom prefabs with your public field, and take a dependency on it.</span></span>
+<span data-ttu-id="831db-136">Ogni volta che si aggiunge un metodo pubblico, Field, Property, diventa parte della superficie dell'API pubblica di MRTK.</span><span class="sxs-lookup"><span data-stu-id="831db-136">Every time you add a public method, field, property, it becomes part of MRTK’s public API surface.</span></span> <span data-ttu-id="831db-137">I campi privati contrassegnati con `[SerializeField]` espongono anche campi all'editor e fanno parte della superficie dell'API pubblica.</span><span class="sxs-lookup"><span data-stu-id="831db-137">Private fields marked with `[SerializeField]` also expose fields to the editor and are part of the public API surface.</span></span> <span data-ttu-id="831db-138">Altri utenti possono usare il metodo pubblico, configurare i prefabbricati personalizzati con il campo pubblico e assumere una dipendenza.</span><span class="sxs-lookup"><span data-stu-id="831db-138">Other people might use that public method, configure custom prefabs with your public field, and take a dependency on it.</span></span>
 
-<span data-ttu-id="acdce-139">È necessario esaminare attentamente i nuovi membri pubblici.</span><span class="sxs-lookup"><span data-stu-id="acdce-139">New public members should be carefully examined.</span></span> <span data-ttu-id="acdce-140">In futuro sarà necessario mantenere un campo pubblico.</span><span class="sxs-lookup"><span data-stu-id="acdce-140">Any public field will need to be maintained in the future.</span></span> <span data-ttu-id="acdce-141">Tenere presente che, se il tipo di un campo pubblico (o di un campo privato serializzato) cambia o viene rimosso da un monocomportamento, questo potrebbe comportare l'insorgere di altre persone.</span><span class="sxs-lookup"><span data-stu-id="acdce-141">Remember that if the type of a public field (or serialized private field) changes or gets removed from a MonoBehaviour, that could break other people.</span></span> <span data-ttu-id="acdce-142">Il campo deve essere prima deprecato per una versione e il codice per eseguire la migrazione delle modifiche per gli utenti che hanno eseguito dipendenze deve essere fornito.</span><span class="sxs-lookup"><span data-stu-id="acdce-142">The field will need to first be deprecated for a release, and code to migrate changes for people that have taken dependencies would need to be provided.</span></span>
+<span data-ttu-id="831db-139">È necessario esaminare attentamente i nuovi membri pubblici.</span><span class="sxs-lookup"><span data-stu-id="831db-139">New public members should be carefully examined.</span></span> <span data-ttu-id="831db-140">In futuro sarà necessario mantenere un campo pubblico.</span><span class="sxs-lookup"><span data-stu-id="831db-140">Any public field will need to be maintained in the future.</span></span> <span data-ttu-id="831db-141">Tenere presente che, se il tipo di un campo pubblico (o di un campo privato serializzato) cambia o viene rimosso da un monocomportamento, questo potrebbe comportare l'insorgere di altre persone.</span><span class="sxs-lookup"><span data-stu-id="831db-141">Remember that if the type of a public field (or serialized private field) changes or gets removed from a MonoBehaviour, that could break other people.</span></span> <span data-ttu-id="831db-142">Il campo deve essere prima deprecato per una versione e il codice per eseguire la migrazione delle modifiche per gli utenti che hanno eseguito dipendenze deve essere fornito.</span><span class="sxs-lookup"><span data-stu-id="831db-142">The field will need to first be deprecated for a release, and code to migrate changes for people that have taken dependencies would need to be provided.</span></span>
 
-### <a name="prioritize-writing-tests"></a><span data-ttu-id="acdce-143">Assegnare priorità ai test di scrittura</span><span class="sxs-lookup"><span data-stu-id="acdce-143">Prioritize writing tests</span></span>
+### <a name="prioritize-writing-tests"></a><span data-ttu-id="831db-143">Assegnare priorità ai test di scrittura</span><span class="sxs-lookup"><span data-stu-id="831db-143">Prioritize writing tests</span></span>
 
-<span data-ttu-id="acdce-144">MRTK è un progetto di community, modificato da un'ampia gamma di collaboratori.</span><span class="sxs-lookup"><span data-stu-id="acdce-144">MRTK is a community project, modified by a diverse range of contributors.</span></span> <span data-ttu-id="acdce-145">Questi collaboratori potrebbero non essere a conoscenza dei dettagli della correzione o della funzionalità di bug e interrompere accidentalmente la funzionalità.</span><span class="sxs-lookup"><span data-stu-id="acdce-145">These contributors may not know the details of your bug fix / feature, and accidentally break your feature.</span></span> <span data-ttu-id="acdce-146">[MRTK esegue i test di integrazione continua](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_build?definitionId=16) prima di completare ogni richiesta pull.</span><span class="sxs-lookup"><span data-stu-id="acdce-146">[MRTK runs continuous integration tests](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_build?definitionId=16) before completing every pull request.</span></span> <span data-ttu-id="acdce-147">Non è possibile archiviare le modifiche che interrompono i test.</span><span class="sxs-lookup"><span data-stu-id="acdce-147">Changes that break tests cannot be checked in.</span></span> <span data-ttu-id="acdce-148">Pertanto, i test rappresentano il modo migliore per garantire che altri utenti non interrompano la funzionalità.</span><span class="sxs-lookup"><span data-stu-id="acdce-148">Therefore, tests are the best way to ensure that other people do not break your feature.</span></span>
+<span data-ttu-id="831db-144">MRTK è un progetto di community, modificato da un'ampia gamma di collaboratori.</span><span class="sxs-lookup"><span data-stu-id="831db-144">MRTK is a community project, modified by a diverse range of contributors.</span></span> <span data-ttu-id="831db-145">Questi collaboratori potrebbero non essere a conoscenza dei dettagli della correzione o della funzionalità di bug e interrompere accidentalmente la funzionalità.</span><span class="sxs-lookup"><span data-stu-id="831db-145">These contributors may not know the details of your bug fix / feature, and accidentally break your feature.</span></span> <span data-ttu-id="831db-146">[MRTK esegue i test di integrazione continua](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_build?definitionId=16) prima di completare ogni richiesta pull.</span><span class="sxs-lookup"><span data-stu-id="831db-146">[MRTK runs continuous integration tests](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_build?definitionId=16) before completing every pull request.</span></span> <span data-ttu-id="831db-147">Non è possibile archiviare le modifiche che interrompono i test.</span><span class="sxs-lookup"><span data-stu-id="831db-147">Changes that break tests cannot be checked in.</span></span> <span data-ttu-id="831db-148">Pertanto, i test rappresentano il modo migliore per garantire che altri utenti non interrompano la funzionalità.</span><span class="sxs-lookup"><span data-stu-id="831db-148">Therefore, tests are the best way to ensure that other people do not break your feature.</span></span>
 
-<span data-ttu-id="acdce-149">Quando si corregge un bug, scrivere un test per assicurarsi che non venga regressione in futuro.</span><span class="sxs-lookup"><span data-stu-id="acdce-149">When you fix a bug, write a test to ensure it does not regress in the future.</span></span> <span data-ttu-id="acdce-150">Se si aggiunge una funzionalità, scrivere i test per verificare il funzionamento della funzionalità.</span><span class="sxs-lookup"><span data-stu-id="acdce-150">If adding a feature, write tests that verify your feature works.</span></span> <span data-ttu-id="acdce-151">Questa operazione è necessaria per tutte le funzionalità di UX ad eccezione delle funzionalità sperimentali.</span><span class="sxs-lookup"><span data-stu-id="acdce-151">This is required for all UX features except experimental features.</span></span>
+<span data-ttu-id="831db-149">Quando si corregge un bug, scrivere un test per assicurarsi che non venga regressione in futuro.</span><span class="sxs-lookup"><span data-stu-id="831db-149">When you fix a bug, write a test to ensure it does not regress in the future.</span></span> <span data-ttu-id="831db-150">Se si aggiunge una funzionalità, scrivere i test per verificare il funzionamento della funzionalità.</span><span class="sxs-lookup"><span data-stu-id="831db-150">If adding a feature, write tests that verify your feature works.</span></span> <span data-ttu-id="831db-151">Questa operazione è necessaria per tutte le funzionalità di UX ad eccezione delle funzionalità sperimentali.</span><span class="sxs-lookup"><span data-stu-id="831db-151">This is required for all UX features except experimental features.</span></span>
 
-## <a name="c-coding-conventions"></a><span data-ttu-id="acdce-152">Convenzioni di codifica C#</span><span class="sxs-lookup"><span data-stu-id="acdce-152">C# Coding conventions</span></span>
+## <a name="c-coding-conventions"></a><span data-ttu-id="831db-152">Convenzioni di codifica C#</span><span class="sxs-lookup"><span data-stu-id="831db-152">C# Coding conventions</span></span>
 
-### <a name="script-license-information-headers"></a><span data-ttu-id="acdce-153">Intestazioni delle informazioni di licenza per script</span><span class="sxs-lookup"><span data-stu-id="acdce-153">Script license information headers</span></span>
+### <a name="script-license-information-headers"></a><span data-ttu-id="831db-153">Intestazioni delle informazioni di licenza per script</span><span class="sxs-lookup"><span data-stu-id="831db-153">Script license information headers</span></span>
 
-<span data-ttu-id="acdce-154">Tutti i dipendenti Microsoft che contribuiscono ai nuovi file devono aggiungere l'intestazione di licenza standard seguente all'inizio di tutti i nuovi file, esattamente come mostrato di seguito:</span><span class="sxs-lookup"><span data-stu-id="acdce-154">All Microsoft employees contributing new files should add the following standard License header at the top of any new files, exactly as shown below:</span></span>
+<span data-ttu-id="831db-154">Tutti i dipendenti Microsoft che contribuiscono ai nuovi file devono aggiungere l'intestazione di licenza standard seguente all'inizio di tutti i nuovi file, esattamente come mostrato di seguito:</span><span class="sxs-lookup"><span data-stu-id="831db-154">All Microsoft employees contributing new files should add the following standard License header at the top of any new files, exactly as shown below:</span></span>
 
 ```c#
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 ```
 
-### <a name="function--method-summary-headers"></a><span data-ttu-id="acdce-155">Intestazioni di riepilogo funzione/metodo</span><span class="sxs-lookup"><span data-stu-id="acdce-155">Function / method summary headers</span></span>
+### <a name="function--method-summary-headers"></a><span data-ttu-id="831db-155">Intestazioni di riepilogo funzione/metodo</span><span class="sxs-lookup"><span data-stu-id="831db-155">Function / method summary headers</span></span>
 
-<span data-ttu-id="acdce-156">Tutte le classi, le strutture, le enumerazioni, le funzioni, le proprietà, i campi pubblicati in MRTK devono essere descritti in modo analogo allo scopo e all'uso, esattamente come mostrato di seguito:</span><span class="sxs-lookup"><span data-stu-id="acdce-156">All public classes, structs, enums, functions, properties, fields posted to the MRTK should be described as to its purpose and use, exactly as shown below:</span></span>
+<span data-ttu-id="831db-156">Tutte le classi, le strutture, le enumerazioni, le funzioni, le proprietà, i campi pubblicati in MRTK devono essere descritti in modo analogo allo scopo e all'uso, esattamente come mostrato di seguito:</span><span class="sxs-lookup"><span data-stu-id="831db-156">All public classes, structs, enums, functions, properties, fields posted to the MRTK should be described as to its purpose and use, exactly as shown below:</span></span>
 
 ```c#
 /// <summary>
@@ -87,45 +87,45 @@ public struct Controller
 }
 ```
 
-<span data-ttu-id="acdce-157">In questo modo la documentazione viene generata e divulgata correttamente per tutte le classi, i metodi e le proprietà.</span><span class="sxs-lookup"><span data-stu-id="acdce-157">This ensures documentation is properly generated and disseminated for all all classes, methods, and properties.</span></span>
+<span data-ttu-id="831db-157">In questo modo la documentazione viene generata e divulgata correttamente per tutte le classi, i metodi e le proprietà.</span><span class="sxs-lookup"><span data-stu-id="831db-157">This ensures documentation is properly generated and disseminated for all all classes, methods, and properties.</span></span>
 
-<span data-ttu-id="acdce-158">Eventuali file di script inviati senza tag di riepilogo appropriati verranno rifiutati.</span><span class="sxs-lookup"><span data-stu-id="acdce-158">Any script files submitted without proper summary tags will be rejected.</span></span>
+<span data-ttu-id="831db-158">Eventuali file di script inviati senza tag di riepilogo appropriati verranno rifiutati.</span><span class="sxs-lookup"><span data-stu-id="831db-158">Any script files submitted without proper summary tags will be rejected.</span></span>
 
-### <a name="mrtk-namespace-rules"></a><span data-ttu-id="acdce-159">Regole dello spazio dei nomi MRTK</span><span class="sxs-lookup"><span data-stu-id="acdce-159">MRTK namespace rules</span></span>
+### <a name="mrtk-namespace-rules"></a><span data-ttu-id="831db-159">Regole dello spazio dei nomi MRTK</span><span class="sxs-lookup"><span data-stu-id="831db-159">MRTK namespace rules</span></span>
 
-<span data-ttu-id="acdce-160">Il Toolkit di realtà mista Usa un modello di spazio dei nomi basato su funzionalità, in cui tutti gli spazi dei nomi fondamentali iniziano con "Microsoft. MixedReality. Toolkit".</span><span class="sxs-lookup"><span data-stu-id="acdce-160">The Mixed Reality Toolkit uses a feature based namespace model, where all foundational namespaces begin with "Microsoft.MixedReality.Toolkit".</span></span> <span data-ttu-id="acdce-161">In generale, non è necessario specificare il livello Toolkit (ad esempio Core, providers, servizi) negli spazi dei nomi.</span><span class="sxs-lookup"><span data-stu-id="acdce-161">In general, you need not specify the toolkit layer (ex: Core, Providers, Services) in your namespaces.</span></span>
+<span data-ttu-id="831db-160">Il Toolkit di realtà mista Usa un modello di spazio dei nomi basato su funzionalità, in cui tutti gli spazi dei nomi fondamentali iniziano con "Microsoft. MixedReality. Toolkit".</span><span class="sxs-lookup"><span data-stu-id="831db-160">The Mixed Reality Toolkit uses a feature based namespace model, where all foundational namespaces begin with "Microsoft.MixedReality.Toolkit".</span></span> <span data-ttu-id="831db-161">In generale, non è necessario specificare il livello Toolkit (ad esempio Core, providers, servizi) negli spazi dei nomi.</span><span class="sxs-lookup"><span data-stu-id="831db-161">In general, you need not specify the toolkit layer (ex: Core, Providers, Services) in your namespaces.</span></span>
 
-<span data-ttu-id="acdce-162">Gli spazi dei nomi attualmente definiti sono:</span><span class="sxs-lookup"><span data-stu-id="acdce-162">The currently defined namespaces are:</span></span>
+<span data-ttu-id="831db-162">Gli spazi dei nomi attualmente definiti sono:</span><span class="sxs-lookup"><span data-stu-id="831db-162">The currently defined namespaces are:</span></span>
 
-- <span data-ttu-id="acdce-163">Microsoft. MixedReality. Toolkit</span><span class="sxs-lookup"><span data-stu-id="acdce-163">Microsoft.MixedReality.Toolkit</span></span>
-- <span data-ttu-id="acdce-164">Microsoft. MixedReality. Toolkit. Boundary</span><span class="sxs-lookup"><span data-stu-id="acdce-164">Microsoft.MixedReality.Toolkit.Boundary</span></span>
-- <span data-ttu-id="acdce-165">Microsoft. MixedReality. Toolkit. Diagnostics</span><span class="sxs-lookup"><span data-stu-id="acdce-165">Microsoft.MixedReality.Toolkit.Diagnostics</span></span>
-- <span data-ttu-id="acdce-166">Microsoft. MixedReality. Toolkit. Editor</span><span class="sxs-lookup"><span data-stu-id="acdce-166">Microsoft.MixedReality.Toolkit.Editor</span></span>
-- <span data-ttu-id="acdce-167">Microsoft. MixedReality. Toolkit. input</span><span class="sxs-lookup"><span data-stu-id="acdce-167">Microsoft.MixedReality.Toolkit.Input</span></span>
-- <span data-ttu-id="acdce-168">Microsoft. MixedReality. Toolkit. SpatialAwareness</span><span class="sxs-lookup"><span data-stu-id="acdce-168">Microsoft.MixedReality.Toolkit.SpatialAwareness</span></span>
-- <span data-ttu-id="acdce-169">Microsoft. MixedReality. Toolkit. Teleport</span><span class="sxs-lookup"><span data-stu-id="acdce-169">Microsoft.MixedReality.Toolkit.Teleport</span></span>
-- <span data-ttu-id="acdce-170">Microsoft. MixedReality. Toolkit. Utilities</span><span class="sxs-lookup"><span data-stu-id="acdce-170">Microsoft.MixedReality.Toolkit.Utilities</span></span>
+- <span data-ttu-id="831db-163">Microsoft. MixedReality. Toolkit</span><span class="sxs-lookup"><span data-stu-id="831db-163">Microsoft.MixedReality.Toolkit</span></span>
+- <span data-ttu-id="831db-164">Microsoft. MixedReality. Toolkit. Boundary</span><span class="sxs-lookup"><span data-stu-id="831db-164">Microsoft.MixedReality.Toolkit.Boundary</span></span>
+- <span data-ttu-id="831db-165">Microsoft. MixedReality. Toolkit. Diagnostics</span><span class="sxs-lookup"><span data-stu-id="831db-165">Microsoft.MixedReality.Toolkit.Diagnostics</span></span>
+- <span data-ttu-id="831db-166">Microsoft. MixedReality. Toolkit. Editor</span><span class="sxs-lookup"><span data-stu-id="831db-166">Microsoft.MixedReality.Toolkit.Editor</span></span>
+- <span data-ttu-id="831db-167">Microsoft. MixedReality. Toolkit. input</span><span class="sxs-lookup"><span data-stu-id="831db-167">Microsoft.MixedReality.Toolkit.Input</span></span>
+- <span data-ttu-id="831db-168">Microsoft. MixedReality. Toolkit. SpatialAwareness</span><span class="sxs-lookup"><span data-stu-id="831db-168">Microsoft.MixedReality.Toolkit.SpatialAwareness</span></span>
+- <span data-ttu-id="831db-169">Microsoft. MixedReality. Toolkit. Teleport</span><span class="sxs-lookup"><span data-stu-id="831db-169">Microsoft.MixedReality.Toolkit.Teleport</span></span>
+- <span data-ttu-id="831db-170">Microsoft. MixedReality. Toolkit. Utilities</span><span class="sxs-lookup"><span data-stu-id="831db-170">Microsoft.MixedReality.Toolkit.Utilities</span></span>
 
-<span data-ttu-id="acdce-171">Per gli spazi dei nomi con una grande quantità di tipi, è accettabile creare un numero limitato di sottospazi dei nomi per facilitare l'utilizzo dell'ambito.</span><span class="sxs-lookup"><span data-stu-id="acdce-171">For namespaces with a large amount of types, it is acceptable to create a limited number of sub-namespaces to aid in scoping usage.</span></span>
+<span data-ttu-id="831db-171">Per gli spazi dei nomi con una grande quantità di tipi, è accettabile creare un numero limitato di sottospazi dei nomi per facilitare l'utilizzo dell'ambito.</span><span class="sxs-lookup"><span data-stu-id="831db-171">For namespaces with a large amount of types, it is acceptable to create a limited number of sub-namespaces to aid in scoping usage.</span></span>
 
-<span data-ttu-id="acdce-172">L'omissione dello spazio dei nomi per un'interfaccia, una classe o un tipo di dati provocherà il blocco della modifica.</span><span class="sxs-lookup"><span data-stu-id="acdce-172">Omitting the namespace for an interface, class or data type will cause your change to be blocked.</span></span>
+<span data-ttu-id="831db-172">L'omissione dello spazio dei nomi per un'interfaccia, una classe o un tipo di dati provocherà il blocco della modifica.</span><span class="sxs-lookup"><span data-stu-id="831db-172">Omitting the namespace for an interface, class or data type will cause your change to be blocked.</span></span>
 
-### <a name="adding-new-monobehaviour-scripts"></a><span data-ttu-id="acdce-173">Aggiunta di nuovi script monobehavior</span><span class="sxs-lookup"><span data-stu-id="acdce-173">Adding new MonoBehaviour scripts</span></span>
+### <a name="adding-new-monobehaviour-scripts"></a><span data-ttu-id="831db-173">Aggiunta di nuovi script monobehavior</span><span class="sxs-lookup"><span data-stu-id="831db-173">Adding new MonoBehaviour scripts</span></span>
 
-<span data-ttu-id="acdce-174">Quando si aggiungono nuovi script monobehavior con una richiesta pull, assicurarsi [`AddComponentMenu`](https://docs.unity3d.com/ScriptReference/AddComponentMenu.html) che l'attributo venga applicato a tutti i file applicabili.</span><span class="sxs-lookup"><span data-stu-id="acdce-174">When adding new MonoBehaviour scripts with a pull request, ensure the [`AddComponentMenu`](https://docs.unity3d.com/ScriptReference/AddComponentMenu.html) attribute is applied to all applicable files.</span></span> <span data-ttu-id="acdce-175">Ciò garantisce che il componente sia facilmente individuabile nell'editor sotto il pulsante *Aggiungi componente* .</span><span class="sxs-lookup"><span data-stu-id="acdce-175">This ensures the component is easily discoverable in the editor under the *Add Component* button.</span></span> <span data-ttu-id="acdce-176">Il flag di attributo non è necessario se il componente non può essere visualizzato nell'editor, ad esempio una classe astratta.</span><span class="sxs-lookup"><span data-stu-id="acdce-176">The attribute flag is not necessary if the component cannot show up in editor such as an abstract class.</span></span>
+<span data-ttu-id="831db-174">Quando si aggiungono nuovi script monobehavior con una richiesta pull, assicurarsi [`AddComponentMenu`](https://docs.unity3d.com/ScriptReference/AddComponentMenu.html) che l'attributo venga applicato a tutti i file applicabili.</span><span class="sxs-lookup"><span data-stu-id="831db-174">When adding new MonoBehaviour scripts with a pull request, ensure the [`AddComponentMenu`](https://docs.unity3d.com/ScriptReference/AddComponentMenu.html) attribute is applied to all applicable files.</span></span> <span data-ttu-id="831db-175">Ciò garantisce che il componente sia facilmente individuabile nell'editor sotto il pulsante *Aggiungi componente* .</span><span class="sxs-lookup"><span data-stu-id="831db-175">This ensures the component is easily discoverable in the editor under the *Add Component* button.</span></span> <span data-ttu-id="831db-176">Il flag di attributo non è necessario se il componente non può essere visualizzato nell'editor, ad esempio una classe astratta.</span><span class="sxs-lookup"><span data-stu-id="831db-176">The attribute flag is not necessary if the component cannot show up in editor such as an abstract class.</span></span>
 
-<span data-ttu-id="acdce-177">Nell'esempio seguente il *pacchetto* deve essere compilato con il percorso del pacchetto del componente.</span><span class="sxs-lookup"><span data-stu-id="acdce-177">In the example below, the *Package here* should be filled with the package location of the component.</span></span> <span data-ttu-id="acdce-178">Se si posiziona un elemento nella cartella *MRTK/SDK* , il pacchetto sarà *SDK*.</span><span class="sxs-lookup"><span data-stu-id="acdce-178">If placing an item in *MRTK/SDK* folder, then the package will be *SDK*.</span></span>
+<span data-ttu-id="831db-177">Nell'esempio seguente il *pacchetto* deve essere compilato con il percorso del pacchetto del componente.</span><span class="sxs-lookup"><span data-stu-id="831db-177">In the example below, the *Package here* should be filled with the package location of the component.</span></span> <span data-ttu-id="831db-178">Se si posiziona un elemento nella cartella *MRTK/SDK* , il pacchetto sarà *SDK*.</span><span class="sxs-lookup"><span data-stu-id="831db-178">If placing an item in *MRTK/SDK* folder, then the package will be *SDK*.</span></span>
 
 ```c#
 [AddComponentMenu("Scripts/MRTK/{Package here}/MyNewComponent")]
 public class MyNewComponent : MonoBehaviour
 ```
 
-### <a name="adding-new-unity-inspector-scripts"></a><span data-ttu-id="acdce-179">Aggiunta di nuovi script di Unity Inspector</span><span class="sxs-lookup"><span data-stu-id="acdce-179">Adding new Unity inspector scripts</span></span>
+### <a name="adding-new-unity-inspector-scripts"></a><span data-ttu-id="831db-179">Aggiunta di nuovi script di Unity Inspector</span><span class="sxs-lookup"><span data-stu-id="831db-179">Adding new Unity inspector scripts</span></span>
 
-<span data-ttu-id="acdce-180">In generale, provare a evitare di creare script di controllo personalizzati per i componenti di MRTK.</span><span class="sxs-lookup"><span data-stu-id="acdce-180">In general, try to avoid creating custom inspector scripts for MRTK components.</span></span> <span data-ttu-id="acdce-181">Aggiunge overhead e gestione aggiuntivi della codebase che potrebbero essere gestiti dal motore Unity.</span><span class="sxs-lookup"><span data-stu-id="acdce-181">It adds additional overhead and management of the codebase that could be handled by the Unity engine.</span></span>
+<span data-ttu-id="831db-180">In generale, provare a evitare di creare script di controllo personalizzati per i componenti di MRTK.</span><span class="sxs-lookup"><span data-stu-id="831db-180">In general, try to avoid creating custom inspector scripts for MRTK components.</span></span> <span data-ttu-id="831db-181">Aggiunge overhead e gestione aggiuntivi della codebase che potrebbero essere gestiti dal motore Unity.</span><span class="sxs-lookup"><span data-stu-id="831db-181">It adds additional overhead and management of the codebase that could be handled by the Unity engine.</span></span>
 
-<span data-ttu-id="acdce-182">Se è necessaria una classe Inspector, provare a usare Unity [`DrawDefaultInspector()`](https://docs.unity3d.com/ScriptReference/Editor.DrawDefaultInspector.html) .</span><span class="sxs-lookup"><span data-stu-id="acdce-182">If an inspector class is necessary, try to use Unity's [`DrawDefaultInspector()`](https://docs.unity3d.com/ScriptReference/Editor.DrawDefaultInspector.html).</span></span> <span data-ttu-id="acdce-183">Questa operazione semplifica di nuovo la classe Inspector e lascia gran parte del lavoro a Unity.</span><span class="sxs-lookup"><span data-stu-id="acdce-183">This again simplifies the inspector class and leaves much of the work to Unity.</span></span>
+<span data-ttu-id="831db-182">Se è necessaria una classe Inspector, provare a usare Unity [`DrawDefaultInspector()`](https://docs.unity3d.com/ScriptReference/Editor.DrawDefaultInspector.html) .</span><span class="sxs-lookup"><span data-stu-id="831db-182">If an inspector class is necessary, try to use Unity's [`DrawDefaultInspector()`](https://docs.unity3d.com/ScriptReference/Editor.DrawDefaultInspector.html).</span></span> <span data-ttu-id="831db-183">Questa operazione semplifica di nuovo la classe Inspector e lascia gran parte del lavoro a Unity.</span><span class="sxs-lookup"><span data-stu-id="831db-183">This again simplifies the inspector class and leaves much of the work to Unity.</span></span>
 
 ```c#
 public override void OnInspectorGUI()
@@ -136,11 +136,11 @@ public override void OnInspectorGUI()
 }
 ```
 
-<span data-ttu-id="acdce-184">Se nella classe Inspector è necessario il rendering personalizzato, provare a utilizzare [`SerializedProperty`](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) e [`EditorGUILayout.PropertyField`](https://docs.unity3d.com/ScriptReference/EditorGUILayout.PropertyField.html) .</span><span class="sxs-lookup"><span data-stu-id="acdce-184">If custom rendering is required in the inspector class, try to utilize [`SerializedProperty`](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) and [`EditorGUILayout.PropertyField`](https://docs.unity3d.com/ScriptReference/EditorGUILayout.PropertyField.html).</span></span> <span data-ttu-id="acdce-185">In questo modo Unity gestisce correttamente il rendering dei prefabbricati annidati e i valori modificati.</span><span class="sxs-lookup"><span data-stu-id="acdce-185">This will ensure Unity correctly handles rendering nested prefabs and modified values.</span></span>
+<span data-ttu-id="831db-184">Se nella classe Inspector è necessario il rendering personalizzato, provare a utilizzare [`SerializedProperty`](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) e [`EditorGUILayout.PropertyField`](https://docs.unity3d.com/ScriptReference/EditorGUILayout.PropertyField.html) .</span><span class="sxs-lookup"><span data-stu-id="831db-184">If custom rendering is required in the inspector class, try to utilize [`SerializedProperty`](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) and [`EditorGUILayout.PropertyField`](https://docs.unity3d.com/ScriptReference/EditorGUILayout.PropertyField.html).</span></span> <span data-ttu-id="831db-185">In questo modo Unity gestisce correttamente il rendering dei prefabbricati annidati e i valori modificati.</span><span class="sxs-lookup"><span data-stu-id="831db-185">This will ensure Unity correctly handles rendering nested prefabs and modified values.</span></span>
 
-<span data-ttu-id="acdce-186">Se [`EditorGUILayout.PropertyField`](https://docs.unity3d.com/ScriptReference/EditorGUILayout.PropertyField.html) non può essere usato a causa di un requisito nella logica personalizzata, assicurarsi che tutti i dati di utilizzo siano racchiusi in un oggetto [`EditorGUI.PropertyScope`](https://docs.unity3d.com/ScriptReference/EditorGUI.PropertyScope.html) .</span><span class="sxs-lookup"><span data-stu-id="acdce-186">If [`EditorGUILayout.PropertyField`](https://docs.unity3d.com/ScriptReference/EditorGUILayout.PropertyField.html) cannot be used due to a requirement in custom logic, ensure all usage is wrapped around a [`EditorGUI.PropertyScope`](https://docs.unity3d.com/ScriptReference/EditorGUI.PropertyScope.html).</span></span> <span data-ttu-id="acdce-187">In questo modo Unity esegue il rendering corretto del controllo per i prefabbricati annidati e i valori modificati con la proprietà specificata.</span><span class="sxs-lookup"><span data-stu-id="acdce-187">This will ensure Unity renders the inspector correctly for nested prefabs and modified values with the given property.</span></span>
+<span data-ttu-id="831db-186">Se [`EditorGUILayout.PropertyField`](https://docs.unity3d.com/ScriptReference/EditorGUILayout.PropertyField.html) non può essere usato a causa di un requisito nella logica personalizzata, assicurarsi che tutti i dati di utilizzo siano racchiusi in un oggetto [`EditorGUI.PropertyScope`](https://docs.unity3d.com/ScriptReference/EditorGUI.PropertyScope.html) .</span><span class="sxs-lookup"><span data-stu-id="831db-186">If [`EditorGUILayout.PropertyField`](https://docs.unity3d.com/ScriptReference/EditorGUILayout.PropertyField.html) cannot be used due to a requirement in custom logic, ensure all usage is wrapped around a [`EditorGUI.PropertyScope`](https://docs.unity3d.com/ScriptReference/EditorGUI.PropertyScope.html).</span></span> <span data-ttu-id="831db-187">In questo modo Unity esegue il rendering corretto del controllo per i prefabbricati annidati e i valori modificati con la proprietà specificata.</span><span class="sxs-lookup"><span data-stu-id="831db-187">This will ensure Unity renders the inspector correctly for nested prefabs and modified values with the given property.</span></span>
 
-<span data-ttu-id="acdce-188">Inoltre, provare a decorare la classe Inspector personalizzata con un oggetto [`CanEditMultipleObjects`](https://docs.unity3d.com/ScriptReference/CanEditMultipleObjects.html) .</span><span class="sxs-lookup"><span data-stu-id="acdce-188">Furthermore, try to decorate the custom inspector class with a [`CanEditMultipleObjects`](https://docs.unity3d.com/ScriptReference/CanEditMultipleObjects.html).</span></span> <span data-ttu-id="acdce-189">Questo tag assicura che più oggetti con questo componente nella scena possano essere selezionati e modificati insieme.</span><span class="sxs-lookup"><span data-stu-id="acdce-189">This tag ensure multiple objects with this component in the scene can be selected and modified together.</span></span> <span data-ttu-id="acdce-190">Tutte le nuove classi di controllo dovrebbero testare il funzionamento del codice in questa situazione nella scena.</span><span class="sxs-lookup"><span data-stu-id="acdce-190">Any new inspector classes should test that their code works in this situation in the scene.</span></span>
+<span data-ttu-id="831db-188">Inoltre, provare a decorare la classe Inspector personalizzata con un oggetto [`CanEditMultipleObjects`](https://docs.unity3d.com/ScriptReference/CanEditMultipleObjects.html) .</span><span class="sxs-lookup"><span data-stu-id="831db-188">Furthermore, try to decorate the custom inspector class with a [`CanEditMultipleObjects`](https://docs.unity3d.com/ScriptReference/CanEditMultipleObjects.html).</span></span> <span data-ttu-id="831db-189">Questo tag assicura che più oggetti con questo componente nella scena possano essere selezionati e modificati insieme.</span><span class="sxs-lookup"><span data-stu-id="831db-189">This tag ensure multiple objects with this component in the scene can be selected and modified together.</span></span> <span data-ttu-id="831db-190">Tutte le nuove classi di controllo dovrebbero testare il funzionamento del codice in questa situazione nella scena.</span><span class="sxs-lookup"><span data-stu-id="831db-190">Any new inspector classes should test that their code works in this situation in the scene.</span></span>
 
 ```c#
     // Example inspector class demonstrating usage of SerializedProperty & EditorGUILayout.PropertyField
@@ -183,28 +183,28 @@ public override void OnInspectorGUI()
     }
 ```
 
-### <a name="adding-new-scriptableobjects"></a><span data-ttu-id="acdce-191">Aggiunta di nuovi ScriptableObjects</span><span class="sxs-lookup"><span data-stu-id="acdce-191">Adding new ScriptableObjects</span></span>
+### <a name="adding-new-scriptableobjects"></a><span data-ttu-id="831db-191">Aggiunta di nuovi ScriptableObjects</span><span class="sxs-lookup"><span data-stu-id="831db-191">Adding new ScriptableObjects</span></span>
 
-<span data-ttu-id="acdce-192">Quando si aggiungono nuovi script ScriptableObject, assicurarsi [`CreateAssetMenu`](https://docs.unity3d.com/ScriptReference/CreateAssetMenu.html) che l'attributo venga applicato a tutti i file applicabili.</span><span class="sxs-lookup"><span data-stu-id="acdce-192">When adding new ScriptableObject scripts, ensure the [`CreateAssetMenu`](https://docs.unity3d.com/ScriptReference/CreateAssetMenu.html) attribute is applied to all applicable files.</span></span> <span data-ttu-id="acdce-193">Ciò garantisce che il componente sia facilmente individuabile nell'editor tramite i menu di creazione dell'asset.</span><span class="sxs-lookup"><span data-stu-id="acdce-193">This ensures the component is easily discoverable in the editor via the asset creation menus.</span></span> <span data-ttu-id="acdce-194">Il flag di attributo non è necessario se il componente non può essere visualizzato nell'editor, ad esempio una classe astratta.</span><span class="sxs-lookup"><span data-stu-id="acdce-194">The attribute flag is not necessary if the component cannot show up in editor such as an abstract class.</span></span>
+<span data-ttu-id="831db-192">Quando si aggiungono nuovi script ScriptableObject, assicurarsi [`CreateAssetMenu`](https://docs.unity3d.com/ScriptReference/CreateAssetMenu.html) che l'attributo venga applicato a tutti i file applicabili.</span><span class="sxs-lookup"><span data-stu-id="831db-192">When adding new ScriptableObject scripts, ensure the [`CreateAssetMenu`](https://docs.unity3d.com/ScriptReference/CreateAssetMenu.html) attribute is applied to all applicable files.</span></span> <span data-ttu-id="831db-193">Ciò garantisce che il componente sia facilmente individuabile nell'editor tramite i menu di creazione dell'asset.</span><span class="sxs-lookup"><span data-stu-id="831db-193">This ensures the component is easily discoverable in the editor via the asset creation menus.</span></span> <span data-ttu-id="831db-194">Il flag di attributo non è necessario se il componente non può essere visualizzato nell'editor, ad esempio una classe astratta.</span><span class="sxs-lookup"><span data-stu-id="831db-194">The attribute flag is not necessary if the component cannot show up in editor such as an abstract class.</span></span>
 
-<span data-ttu-id="acdce-195">Nell'esempio seguente, la *sottocartella* deve essere riempita con la sottocartella MRTK, se applicabile.</span><span class="sxs-lookup"><span data-stu-id="acdce-195">In the example below, the *Subfolder* should be filled with the MRTK subfolder, if applicable.</span></span> <span data-ttu-id="acdce-196">Se si posiziona un elemento nella cartella *MRTK/Providers* , il pacchetto sarà *providers*.</span><span class="sxs-lookup"><span data-stu-id="acdce-196">If placing an item in *MRTK/Providers* folder, then the package will be *Providers*.</span></span> <span data-ttu-id="acdce-197">Se si posiziona un elemento nella cartella *MRTK/Core* , impostarlo su "Profiles".</span><span class="sxs-lookup"><span data-stu-id="acdce-197">If placing an item in the *MRTK/Core* folder, set this to "Profiles".</span></span>
+<span data-ttu-id="831db-195">Nell'esempio seguente, la *sottocartella* deve essere riempita con la sottocartella MRTK, se applicabile.</span><span class="sxs-lookup"><span data-stu-id="831db-195">In the example below, the *Subfolder* should be filled with the MRTK subfolder, if applicable.</span></span> <span data-ttu-id="831db-196">Se si posiziona un elemento nella cartella *MRTK/Providers* , il pacchetto sarà *providers*.</span><span class="sxs-lookup"><span data-stu-id="831db-196">If placing an item in *MRTK/Providers* folder, then the package will be *Providers*.</span></span> <span data-ttu-id="831db-197">Se si posiziona un elemento nella cartella *MRTK/Core* , impostarlo su "Profiles".</span><span class="sxs-lookup"><span data-stu-id="831db-197">If placing an item in the *MRTK/Core* folder, set this to "Profiles".</span></span>
 
-<span data-ttu-id="acdce-198">Nell'esempio seguente *MyNewService | MyNewProvider* deve essere compilato con il nome della nuova classe, se applicabile.</span><span class="sxs-lookup"><span data-stu-id="acdce-198">In the example below, the *MyNewService | MyNewProvider* should be filled with the your new class' name, if applicable.</span></span> <span data-ttu-id="acdce-199">Se si posiziona un elemento nella cartella *MixedRealityToolkit* , lasciare questa stringa.</span><span class="sxs-lookup"><span data-stu-id="acdce-199">If placing an item in the *MixedRealityToolkit* folder, leave this string out.</span></span>
+<span data-ttu-id="831db-198">Nell'esempio seguente *MyNewService | MyNewProvider* deve essere compilato con il nome della nuova classe, se applicabile.</span><span class="sxs-lookup"><span data-stu-id="831db-198">In the example below, the *MyNewService | MyNewProvider* should be filled with the your new class' name, if applicable.</span></span> <span data-ttu-id="831db-199">Se si posiziona un elemento nella cartella *MixedRealityToolkit* , lasciare questa stringa.</span><span class="sxs-lookup"><span data-stu-id="831db-199">If placing an item in the *MixedRealityToolkit* folder, leave this string out.</span></span>
 
 ```c#
 [CreateAssetMenu(fileName = "MyNewProfile", menuName = "Mixed Reality Toolkit/{Subfolder}/{MyNewService | MyNewProvider}/MyNewProfile")]
 public class MyNewProfile : ScriptableObject
 ```
 
-### <a name="spaces-vs-tabs"></a><span data-ttu-id="acdce-200">Spazi vs schede</span><span class="sxs-lookup"><span data-stu-id="acdce-200">Spaces vs tabs</span></span>
+### <a name="spaces-vs-tabs"></a><span data-ttu-id="831db-200">Spazi vs schede</span><span class="sxs-lookup"><span data-stu-id="831db-200">Spaces vs tabs</span></span>
 
-<span data-ttu-id="acdce-201">Per contribuire a questo progetto, assicurarsi di usare 4 spazi anziché le schede.</span><span class="sxs-lookup"><span data-stu-id="acdce-201">Please be sure to use 4 spaces instead of tabs when contributing to this project.</span></span>
+<span data-ttu-id="831db-201">Per contribuire a questo progetto, assicurarsi di usare 4 spazi anziché le schede.</span><span class="sxs-lookup"><span data-stu-id="831db-201">Please be sure to use 4 spaces instead of tabs when contributing to this project.</span></span>
 
-### <a name="spacing"></a><span data-ttu-id="acdce-202">Spaziatura</span><span class="sxs-lookup"><span data-stu-id="acdce-202">Spacing</span></span>
+### <a name="spacing"></a><span data-ttu-id="831db-202">Spaziatura</span><span class="sxs-lookup"><span data-stu-id="831db-202">Spacing</span></span>
 
-<span data-ttu-id="acdce-203">Non aggiungere spazi aggiuntivi tra parentesi quadre e parentesi:</span><span class="sxs-lookup"><span data-stu-id="acdce-203">Do not to add additional spaces between square brackets and parenthesis:</span></span>
+<span data-ttu-id="831db-203">Non aggiungere spazi aggiuntivi tra parentesi quadre e parentesi:</span><span class="sxs-lookup"><span data-stu-id="831db-203">Do not to add additional spaces between square brackets and parenthesis:</span></span>
 
-#### <a name="dont"></a><span data-ttu-id="acdce-204">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="acdce-204">Don't</span></span>
+#### <a name="dont"></a><span data-ttu-id="831db-204">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="831db-204">Don't</span></span>
 
 ```c#
 private Foo()
@@ -215,7 +215,7 @@ private Foo()
 
 ```
 
-#### <a name="do"></a><span data-ttu-id="acdce-205">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="acdce-205">Do</span></span>
+#### <a name="do"></a><span data-ttu-id="831db-205">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="831db-205">Do</span></span>
 
 ```c#
 private Foo()
@@ -225,18 +225,18 @@ private Foo()
 }
 ```
 
-### <a name="naming-conventions"></a><span data-ttu-id="acdce-206">Convenzioni di denominazione</span><span class="sxs-lookup"><span data-stu-id="acdce-206">Naming conventions</span></span>
+### <a name="naming-conventions"></a><span data-ttu-id="831db-206">Convenzioni di denominazione</span><span class="sxs-lookup"><span data-stu-id="831db-206">Naming conventions</span></span>
 
-<span data-ttu-id="acdce-207">Usare sempre `PascalCase` per le proprietà.</span><span class="sxs-lookup"><span data-stu-id="acdce-207">Always use `PascalCase` for properties.</span></span> <span data-ttu-id="acdce-208">Usare `camelCase` per la maggior parte dei campi, ad eccezione `PascalCase` dell'uso dei `static readonly` `const` campi e.</span><span class="sxs-lookup"><span data-stu-id="acdce-208">Use `camelCase` for most fields, except use `PascalCase` for `static readonly` and `const` fields.</span></span> <span data-ttu-id="acdce-209">L'unica eccezione è rappresentata dalle strutture di dati che richiedono la serializzazione dei campi da parte di `JsonUtility` .</span><span class="sxs-lookup"><span data-stu-id="acdce-209">The only exception to this is for data structures that require the fields to be serialized by the `JsonUtility`.</span></span>
+<span data-ttu-id="831db-207">Usare sempre `PascalCase` per le proprietà.</span><span class="sxs-lookup"><span data-stu-id="831db-207">Always use `PascalCase` for properties.</span></span> <span data-ttu-id="831db-208">Usare `camelCase` per la maggior parte dei campi, ad eccezione `PascalCase` dell'uso dei `static readonly` `const` campi e.</span><span class="sxs-lookup"><span data-stu-id="831db-208">Use `camelCase` for most fields, except use `PascalCase` for `static readonly` and `const` fields.</span></span> <span data-ttu-id="831db-209">L'unica eccezione è rappresentata dalle strutture di dati che richiedono la serializzazione dei campi da parte di `JsonUtility` .</span><span class="sxs-lookup"><span data-stu-id="831db-209">The only exception to this is for data structures that require the fields to be serialized by the `JsonUtility`.</span></span>
 
-#### <a name="dont"></a><span data-ttu-id="acdce-210">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="acdce-210">Don't</span></span>
+#### <a name="dont"></a><span data-ttu-id="831db-210">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="831db-210">Don't</span></span>
 
 ```c#
 public string myProperty; // <- Starts with a lowercase letter
 private string MyField; // <- Starts with an uppercase letter
 ```
 
-#### <a name="do"></a><span data-ttu-id="acdce-211">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="acdce-211">Do</span></span>
+#### <a name="do"></a><span data-ttu-id="831db-211">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="831db-211">Do</span></span>
 
 ```c#
 public string MyProperty;
@@ -245,17 +245,17 @@ private static readonly string MyField;
 private string myField;
 ```
 
-### <a name="access-modifiers"></a><span data-ttu-id="acdce-212">Modificatori di accesso</span><span class="sxs-lookup"><span data-stu-id="acdce-212">Access modifiers</span></span>
+### <a name="access-modifiers"></a><span data-ttu-id="831db-212">Modificatori di accesso</span><span class="sxs-lookup"><span data-stu-id="831db-212">Access modifiers</span></span>
 
-<span data-ttu-id="acdce-213">Dichiarare sempre un modificatore di accesso per tutti i campi, le proprietà e i metodi.</span><span class="sxs-lookup"><span data-stu-id="acdce-213">Always declare an access modifier for all fields, properties and methods.</span></span>
+<span data-ttu-id="831db-213">Dichiarare sempre un modificatore di accesso per tutti i campi, le proprietà e i metodi.</span><span class="sxs-lookup"><span data-stu-id="831db-213">Always declare an access modifier for all fields, properties and methods.</span></span>
 
-- <span data-ttu-id="acdce-214">Tutti i metodi dell'API Unity devono essere `private` per impostazione predefinita, a meno che non sia necessario eseguirne l'override in una classe derivata.</span><span class="sxs-lookup"><span data-stu-id="acdce-214">All Unity API Methods should be `private` by default, unless you need to override them in a derived class.</span></span> <span data-ttu-id="acdce-215">In questo caso `protected` deve essere usato.</span><span class="sxs-lookup"><span data-stu-id="acdce-215">In this case `protected` should be used.</span></span>
+- <span data-ttu-id="831db-214">Tutti i metodi dell'API Unity devono essere `private` per impostazione predefinita, a meno che non sia necessario eseguirne l'override in una classe derivata.</span><span class="sxs-lookup"><span data-stu-id="831db-214">All Unity API Methods should be `private` by default, unless you need to override them in a derived class.</span></span> <span data-ttu-id="831db-215">In questo caso `protected` deve essere usato.</span><span class="sxs-lookup"><span data-stu-id="831db-215">In this case `protected` should be used.</span></span>
 
-- <span data-ttu-id="acdce-216">I campi devono essere sempre `private` , con le `public` funzioni di accesso alle proprietà o `protected` .</span><span class="sxs-lookup"><span data-stu-id="acdce-216">Fields should always be `private`, with `public` or `protected` property accessors.</span></span>
+- <span data-ttu-id="831db-216">I campi devono essere sempre `private` , con le `public` funzioni di accesso alle proprietà o `protected` .</span><span class="sxs-lookup"><span data-stu-id="831db-216">Fields should always be `private`, with `public` or `protected` property accessors.</span></span>
 
-- <span data-ttu-id="acdce-217">Usare [membri con corpo di espressione](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#expression-bodied-function-members) e [proprietà automatiche](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#auto-property-enhancements) laddove possibile</span><span class="sxs-lookup"><span data-stu-id="acdce-217">Use [expression-bodied members](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#expression-bodied-function-members) and [auto properties](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#auto-property-enhancements) where possible</span></span>
+- <span data-ttu-id="831db-217">Usare [membri con corpo di espressione](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#expression-bodied-function-members) e [proprietà automatiche](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#auto-property-enhancements) laddove possibile</span><span class="sxs-lookup"><span data-stu-id="831db-217">Use [expression-bodied members](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#expression-bodied-function-members) and [auto properties](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#auto-property-enhancements) where possible</span></span>
 
-#### <a name="dont"></a><span data-ttu-id="acdce-218">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="acdce-218">Don't</span></span>
+#### <a name="dont"></a><span data-ttu-id="831db-218">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="831db-218">Don't</span></span>
 
 ```c#
 // protected field should be private
@@ -269,7 +269,7 @@ void Foo() { }
 void Bar() { }
 ```
 
-#### <a name="do"></a><span data-ttu-id="acdce-219">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="acdce-219">Do</span></span>
+#### <a name="do"></a><span data-ttu-id="831db-219">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="831db-219">Do</span></span>
 
 ```c#
 public int MyVariable { get; protected set; } = 0;
@@ -279,11 +279,11 @@ public void Bar() { }
 protected virtual void FooBar() { }
 ```
 
-### <a name="use-braces"></a><span data-ttu-id="acdce-220">USA parentesi graffe</span><span class="sxs-lookup"><span data-stu-id="acdce-220">Use braces</span></span>
+### <a name="use-braces"></a><span data-ttu-id="831db-220">USA parentesi graffe</span><span class="sxs-lookup"><span data-stu-id="831db-220">Use braces</span></span>
 
-<span data-ttu-id="acdce-221">Usare sempre le parentesi graffe dopo ogni blocco di istruzioni e posizionarle nella riga successiva.</span><span class="sxs-lookup"><span data-stu-id="acdce-221">Always use braces after each statement block, and place them on the next line.</span></span>
+<span data-ttu-id="831db-221">Usare sempre le parentesi graffe dopo ogni blocco di istruzioni e posizionarle nella riga successiva.</span><span class="sxs-lookup"><span data-stu-id="831db-221">Always use braces after each statement block, and place them on the next line.</span></span>
 
-#### <a name="dont"></a><span data-ttu-id="acdce-222">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="acdce-222">Don't</span></span>
+#### <a name="dont"></a><span data-ttu-id="831db-222">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="831db-222">Don't</span></span>
 
 ```c#
 private Foo()
@@ -295,7 +295,7 @@ private Foo()
 }
 ```
 
-#### <a name="dont"></a><span data-ttu-id="acdce-223">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="acdce-223">Don't</span></span>
+#### <a name="dont"></a><span data-ttu-id="831db-223">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="831db-223">Don't</span></span>
 
 ```c#
 private Foo() { // <- Open bracket on same line
@@ -304,7 +304,7 @@ private Foo() { // <- Open bracket on same line
 }
 ```
 
-#### <a name="do"></a><span data-ttu-id="acdce-224">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="acdce-224">Do</span></span>
+#### <a name="do"></a><span data-ttu-id="831db-224">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="831db-224">Do</span></span>
 
 ```c#
 private Foo()
@@ -320,11 +320,11 @@ private Foo()
 }
 ```
 
-### <a name="public-classes-structs-and-enums-should-all-go-in-their-own-files"></a><span data-ttu-id="acdce-225">Le classi, gli struct e le enumerazioni pubbliche dovrebbero tutti entrare nei propri file</span><span class="sxs-lookup"><span data-stu-id="acdce-225">Public classes, structs, and enums should all go in their own files</span></span>
+### <a name="public-classes-structs-and-enums-should-all-go-in-their-own-files"></a><span data-ttu-id="831db-225">Le classi, gli struct e le enumerazioni pubbliche dovrebbero tutti entrare nei propri file</span><span class="sxs-lookup"><span data-stu-id="831db-225">Public classes, structs, and enums should all go in their own files</span></span>
 
-<span data-ttu-id="acdce-226">Se la classe, lo struct o l'enum può essere reso privato, è accettabile essere incluso nello stesso file.</span><span class="sxs-lookup"><span data-stu-id="acdce-226">If the class, struct, or enum can be made private then it's okay to be included in the same file.</span></span>  <span data-ttu-id="acdce-227">In questo modo si evitano i problemi di compilazione con Unity e si garantisce che si verifichi l'astrazione corretta del codice, ma anche i conflitti e le modifiche di rilievo quando il codice deve essere modificato</span><span class="sxs-lookup"><span data-stu-id="acdce-227">This avoids compilations issues with Unity and ensure that proper code abstraction occurs, it also reduces conflicts and breaking changes when code needs to change.</span></span>
+<span data-ttu-id="831db-226">Se la classe, lo struct o l'enum può essere reso privato, è accettabile essere incluso nello stesso file.</span><span class="sxs-lookup"><span data-stu-id="831db-226">If the class, struct, or enum can be made private then it's okay to be included in the same file.</span></span>  <span data-ttu-id="831db-227">In questo modo si evitano i problemi di compilazione con Unity e si garantisce che si verifichi l'astrazione corretta del codice, ma anche i conflitti e le modifiche di rilievo quando il codice deve essere modificato</span><span class="sxs-lookup"><span data-stu-id="831db-227">This avoids compilations issues with Unity and ensure that proper code abstraction occurs, it also reduces conflicts and breaking changes when code needs to change.</span></span>
 
-#### <a name="dont"></a><span data-ttu-id="acdce-228">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="acdce-228">Don't</span></span>
+#### <a name="dont"></a><span data-ttu-id="831db-228">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="831db-228">Don't</span></span>
 
 ```c#
 public class MyClass
@@ -335,7 +335,7 @@ public class MyClass
 }
 ```
 
-#### <a name="do"></a><span data-ttu-id="acdce-229">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="acdce-229">Do</span></span>
+#### <a name="do"></a><span data-ttu-id="831db-229">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="831db-229">Do</span></span>
 
 ```c#
  // Private references for use inside the class only
@@ -347,9 +347,9 @@ public class MyClass
 }
 ```
 
-#### <a name="do"></a><span data-ttu-id="acdce-230">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="acdce-230">Do</span></span>
+#### <a name="do"></a><span data-ttu-id="831db-230">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="831db-230">Do</span></span>
 
-<span data-ttu-id="acdce-231">MyStruct.cs</span><span class="sxs-lookup"><span data-stu-id="acdce-231">MyStruct.cs</span></span>
+<span data-ttu-id="831db-231">Struct. cs</span><span class="sxs-lookup"><span data-stu-id="831db-231">MyStruct.cs</span></span>
 
 ```c#
 // Public Struct / Enum definitions for use in your class.  Try to make them generic for reuse.
@@ -360,7 +360,7 @@ public struct MyStruct
 }
 ```
 
-<span data-ttu-id="acdce-232">MyEnumType.cs</span><span class="sxs-lookup"><span data-stu-id="acdce-232">MyEnumType.cs</span></span>
+<span data-ttu-id="831db-232">MyEnumType. cs</span><span class="sxs-lookup"><span data-stu-id="831db-232">MyEnumType.cs</span></span>
 
 ```c#
 public enum MuEnumType
@@ -370,7 +370,7 @@ public enum MuEnumType
 }
 ```
 
-<span data-ttu-id="acdce-233">MyClass.cs</span><span class="sxs-lookup"><span data-stu-id="acdce-233">MyClass.cs</span></span>
+<span data-ttu-id="831db-233">MyClass. cs</span><span class="sxs-lookup"><span data-stu-id="831db-233">MyClass.cs</span></span>
 
 ```c#
 public class MyClass
@@ -380,11 +380,11 @@ public class MyClass
 }
 ```
 
-### <a name="initialize-enums"></a><span data-ttu-id="acdce-234">Inizializzazione delle enumerazioni</span><span class="sxs-lookup"><span data-stu-id="acdce-234">Initialize enums</span></span>
+### <a name="initialize-enums"></a><span data-ttu-id="831db-234">Inizializzazione delle enumerazioni</span><span class="sxs-lookup"><span data-stu-id="831db-234">Initialize enums</span></span>
 
-<span data-ttu-id="acdce-235">Per assicurarsi che tutte le enumerazioni siano inizializzate correttamente a partire da 0, .NET fornisce un collegamento ordinato per inizializzare automaticamente l'enumerazione aggiungendo il primo valore (Starter).</span><span class="sxs-lookup"><span data-stu-id="acdce-235">To ensure all enums are initialized correctly starting at 0, .NET gives you a tidy shortcut to automatically initialize the enum by just adding the first (starter) value.</span></span> <span data-ttu-id="acdce-236">(ad esempio, il valore 1 = 0 valori rimanenti non sono obbligatori)</span><span class="sxs-lookup"><span data-stu-id="acdce-236">(e.g Value 1 = 0 Remaining values are not required)</span></span>
+<span data-ttu-id="831db-235">Per assicurarsi che tutte le enumerazioni siano inizializzate correttamente a partire da 0, .NET fornisce un collegamento ordinato per inizializzare automaticamente l'enumerazione aggiungendo il primo valore (Starter).</span><span class="sxs-lookup"><span data-stu-id="831db-235">To ensure all enums are initialized correctly starting at 0, .NET gives you a tidy shortcut to automatically initialize the enum by just adding the first (starter) value.</span></span> <span data-ttu-id="831db-236">(ad esempio, il valore 1 = 0 valori rimanenti non sono obbligatori)</span><span class="sxs-lookup"><span data-stu-id="831db-236">(e.g Value 1 = 0 Remaining values are not required)</span></span>
 
-#### <a name="dont"></a><span data-ttu-id="acdce-237">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="acdce-237">Don't</span></span>
+#### <a name="dont"></a><span data-ttu-id="831db-237">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="831db-237">Don't</span></span>
 
 ```c#
 public enum Value
@@ -395,7 +395,7 @@ public enum Value
 }
 ```
 
-#### <a name="do"></a><span data-ttu-id="acdce-238">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="acdce-238">Do</span></span>
+#### <a name="do"></a><span data-ttu-id="831db-238">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="831db-238">Do</span></span>
 
 ```c#
 public enum ValueType
@@ -406,11 +406,11 @@ public enum ValueType
 }
 ```
 
-### <a name="order-enums-for-appropriate-extension"></a><span data-ttu-id="acdce-239">Ordina enumerazioni per l'estensione appropriata</span><span class="sxs-lookup"><span data-stu-id="acdce-239">Order enums for appropriate extension</span></span>
+### <a name="order-enums-for-appropriate-extension"></a><span data-ttu-id="831db-239">Ordina enumerazioni per l'estensione appropriata</span><span class="sxs-lookup"><span data-stu-id="831db-239">Order enums for appropriate extension</span></span>
 
-<span data-ttu-id="acdce-240">È fondamentale che se è probabile che un'enumerazione venga estesa in futuro, per ordinare le impostazioni predefinite all'inizio dell'enumerazione, ciò garantisce che gli indici enum non siano interessati da nuove aggiunte.</span><span class="sxs-lookup"><span data-stu-id="acdce-240">It is critical that if an Enum is likely to be extended in the future, to order defaults at the top of the Enum, this ensures Enum indexes are not affected with new additions.</span></span>
+<span data-ttu-id="831db-240">È fondamentale che se è probabile che un'enumerazione venga estesa in futuro, per ordinare le impostazioni predefinite all'inizio dell'enumerazione, ciò garantisce che gli indici enum non siano interessati da nuove aggiunte.</span><span class="sxs-lookup"><span data-stu-id="831db-240">It is critical that if an Enum is likely to be extended in the future, to order defaults at the top of the Enum, this ensures Enum indexes are not affected with new additions.</span></span>
 
-#### <a name="dont"></a><span data-ttu-id="acdce-241">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="acdce-241">Don't</span></span>
+#### <a name="dont"></a><span data-ttu-id="831db-241">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="831db-241">Don't</span></span>
 
 ```c#
 public enum SDKType
@@ -423,7 +423,7 @@ public enum SDKType
 }
 ```
 
-#### <a name="do"></a><span data-ttu-id="acdce-242">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="acdce-242">Do</span></span>
+#### <a name="do"></a><span data-ttu-id="831db-242">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="831db-242">Do</span></span>
 
 ```c#
 /// <summary>
@@ -455,13 +455,13 @@ public enum SDKType
 }
 ```
 
-### <a name="review-enum-use-for-bitfields"></a><span data-ttu-id="acdce-243">Esaminare l'uso di enum per campi</span><span class="sxs-lookup"><span data-stu-id="acdce-243">Review enum use for bitfields</span></span>
+### <a name="review-enum-use-for-bitfields"></a><span data-ttu-id="831db-243">Esaminare l'uso di enum per campi</span><span class="sxs-lookup"><span data-stu-id="831db-243">Review enum use for bitfields</span></span>
 
-<span data-ttu-id="acdce-244">Se è possibile che un'enumerazione richieda più Stati come valore, ad esempio manualità = Left & right.</span><span class="sxs-lookup"><span data-stu-id="acdce-244">If there is a possibility for an enum to require multiple states as a value, e.g. Handedness = Left & Right.</span></span> <span data-ttu-id="acdce-245">L'enumerazione deve quindi essere decorata correttamente con flag per consentirne l'uso corretto</span><span class="sxs-lookup"><span data-stu-id="acdce-245">Then the Enum needs to be decorated correctly with BitFlags to enable it to be used correctly</span></span>
+<span data-ttu-id="831db-244">Se è possibile che un'enumerazione richieda più Stati come valore, ad esempio manualità = Left & right.</span><span class="sxs-lookup"><span data-stu-id="831db-244">If there is a possibility for an enum to require multiple states as a value, e.g. Handedness = Left & Right.</span></span> <span data-ttu-id="831db-245">L'enumerazione deve quindi essere decorata correttamente con flag per consentirne l'uso corretto</span><span class="sxs-lookup"><span data-stu-id="831db-245">Then the Enum needs to be decorated correctly with BitFlags to enable it to be used correctly</span></span>
 
-<span data-ttu-id="acdce-246">Il file Handedness.cs dispone di un'implementazione concreta per</span><span class="sxs-lookup"><span data-stu-id="acdce-246">The Handedness.cs file has a concrete implementation for this</span></span>
+<span data-ttu-id="831db-246">Il file Manuality. cs dispone di un'implementazione concreta per</span><span class="sxs-lookup"><span data-stu-id="831db-246">The Handedness.cs file has a concrete implementation for this</span></span>
 
-### <a name="dont"></a><span data-ttu-id="acdce-247">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="acdce-247">Don't</span></span>
+### <a name="dont"></a><span data-ttu-id="831db-247">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="831db-247">Don't</span></span>
 
 ```c#
 public enum Handedness
@@ -472,7 +472,7 @@ public enum Handedness
 }
 ```
 
-### <a name="do"></a><span data-ttu-id="acdce-248">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="acdce-248">Do</span></span>
+### <a name="do"></a><span data-ttu-id="831db-248">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="831db-248">Do</span></span>
 
 ```c#
 [Flags]
@@ -485,16 +485,16 @@ public enum Handedness
 }
 ```
 
-### <a name="hard-coded-file-paths"></a><span data-ttu-id="acdce-249">Percorsi di file hardcoded</span><span class="sxs-lookup"><span data-stu-id="acdce-249">Hard-coded file paths</span></span>
+### <a name="hard-coded-file-paths"></a><span data-ttu-id="831db-249">Percorsi di file hardcoded</span><span class="sxs-lookup"><span data-stu-id="831db-249">Hard-coded file paths</span></span>
 
-<span data-ttu-id="acdce-250">Quando si generano i percorsi dei file di stringa e, in particolare, si scrivono percorsi di stringa hardcoded, eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="acdce-250">When generating string file paths, and in particular writing hard-coded string paths, do the following:</span></span>
+<span data-ttu-id="831db-250">Quando si generano i percorsi dei file di stringa e, in particolare, si scrivono percorsi di stringa hardcoded, eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="831db-250">When generating string file paths, and in particular writing hard-coded string paths, do the following:</span></span>
 
-1. <span data-ttu-id="acdce-251">Usare le [ `Path` API](https://docs.microsoft.com/dotnet/api/system.io.path?view=netframework-4.8) di C#, laddove possibile, ad esempio `Path.Combine` o `Path.GetFullPath` .</span><span class="sxs-lookup"><span data-stu-id="acdce-251">Use C#'s [`Path` APIs](https://docs.microsoft.com/dotnet/api/system.io.path?view=netframework-4.8) whenever possible such as `Path.Combine` or `Path.GetFullPath`.</span></span>
-1. <span data-ttu-id="acdce-252">Utilizzare/o [`Path.DirectorySeparatorChar`](https://docs.microsoft.com/dotnet/api/system.io.path.directoryseparatorchar?view=netframework-4.8) anziché \ o \\ \\ .</span><span class="sxs-lookup"><span data-stu-id="acdce-252">Use / or [`Path.DirectorySeparatorChar`](https://docs.microsoft.com/dotnet/api/system.io.path.directoryseparatorchar?view=netframework-4.8) instead of \ or \\\\.</span></span>
+1. <span data-ttu-id="831db-251">Usare le [ `Path` API](https://docs.microsoft.com/dotnet/api/system.io.path?view=netframework-4.8) di C#, laddove possibile, ad esempio `Path.Combine` o `Path.GetFullPath` .</span><span class="sxs-lookup"><span data-stu-id="831db-251">Use C#'s [`Path` APIs](https://docs.microsoft.com/dotnet/api/system.io.path?view=netframework-4.8) whenever possible such as `Path.Combine` or `Path.GetFullPath`.</span></span>
+1. <span data-ttu-id="831db-252">Utilizzare/o [`Path.DirectorySeparatorChar`](https://docs.microsoft.com/dotnet/api/system.io.path.directoryseparatorchar?view=netframework-4.8) anziché \ o \\ \\ .</span><span class="sxs-lookup"><span data-stu-id="831db-252">Use / or [`Path.DirectorySeparatorChar`](https://docs.microsoft.com/dotnet/api/system.io.path.directoryseparatorchar?view=netframework-4.8) instead of \ or \\\\.</span></span>
 
-<span data-ttu-id="acdce-253">Questi passaggi assicurano che MRTK funzioni nei sistemi Windows e UNIX.</span><span class="sxs-lookup"><span data-stu-id="acdce-253">These steps ensure that MRTK works on both Windows and Unix-based systems.</span></span>
+<span data-ttu-id="831db-253">Questi passaggi assicurano che MRTK funzioni nei sistemi Windows e UNIX.</span><span class="sxs-lookup"><span data-stu-id="831db-253">These steps ensure that MRTK works on both Windows and Unix-based systems.</span></span>
 
-### <a name="dont"></a><span data-ttu-id="acdce-254">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="acdce-254">Don't</span></span>
+### <a name="dont"></a><span data-ttu-id="831db-254">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="831db-254">Don't</span></span>
 
 ```c#
 private const string FilePath = "MyPath\\to\\a\\file.txt";
@@ -503,7 +503,7 @@ private const string OtherFilePath = "MyPath\to\a\file.txt";
 string filePath = myVarRootPath + myRelativePath;
 ```
 
-### <a name="do"></a><span data-ttu-id="acdce-255">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="acdce-255">Do</span></span>
+### <a name="do"></a><span data-ttu-id="831db-255">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="831db-255">Do</span></span>
 
 ```c#
 private const string FilePath = "MyPath/to/a/file.txt";
@@ -515,18 +515,18 @@ string filePath = Path.Combine(myVarRootPath,myRelativePath);
 string cleanedFilePath = Path.GetFullPath(unknownSourceFilePath);
 ```
 
-## <a name="best-practices-including-unity-recommendations"></a><span data-ttu-id="acdce-256">Procedure consigliate, incluse le raccomandazioni Unity</span><span class="sxs-lookup"><span data-stu-id="acdce-256">Best practices, including Unity recommendations</span></span>
+## <a name="best-practices-including-unity-recommendations"></a><span data-ttu-id="831db-256">Procedure consigliate, incluse le raccomandazioni Unity</span><span class="sxs-lookup"><span data-stu-id="831db-256">Best practices, including Unity recommendations</span></span>
 
-<span data-ttu-id="acdce-257">Per alcune delle piattaforme di destinazione di questo progetto è necessario prendere in considerazione le prestazioni.</span><span class="sxs-lookup"><span data-stu-id="acdce-257">Some of the target platforms of this project require to take performance into consideration.</span></span> <span data-ttu-id="acdce-258">Tenendo presente questo aspetto, prestare attenzione quando si alloca la memoria in un codice denominato spesso in cicli o algoritmi di aggiornamento stretti.</span><span class="sxs-lookup"><span data-stu-id="acdce-258">With this in mind always be careful when allocating memory in frequently called code in tight update loops or algorithms.</span></span>
+<span data-ttu-id="831db-257">Per alcune delle piattaforme di destinazione di questo progetto è necessario prendere in considerazione le prestazioni.</span><span class="sxs-lookup"><span data-stu-id="831db-257">Some of the target platforms of this project require to take performance into consideration.</span></span> <span data-ttu-id="831db-258">Tenendo presente questo aspetto, prestare attenzione quando si alloca la memoria in un codice denominato spesso in cicli o algoritmi di aggiornamento stretti.</span><span class="sxs-lookup"><span data-stu-id="831db-258">With this in mind always be careful when allocating memory in frequently called code in tight update loops or algorithms.</span></span>
 
-### <a name="encapsulation"></a><span data-ttu-id="acdce-259">Incapsulamento</span><span class="sxs-lookup"><span data-stu-id="acdce-259">Encapsulation</span></span>
+### <a name="encapsulation"></a><span data-ttu-id="831db-259">Incapsulamento</span><span class="sxs-lookup"><span data-stu-id="831db-259">Encapsulation</span></span>
 
-<span data-ttu-id="acdce-260">Usare sempre i campi privati e le proprietà pubbliche se è necessario l'accesso al campo dall'esterno della classe o dello struct.</span><span class="sxs-lookup"><span data-stu-id="acdce-260">Always use private fields and public properties if access to the field is needed from outside the class or struct.</span></span>  <span data-ttu-id="acdce-261">Assicurarsi di condividere il percorso del campo privato e della proprietà pubblica.</span><span class="sxs-lookup"><span data-stu-id="acdce-261">Be sure to co-locate the private field and the public property.</span></span> <span data-ttu-id="acdce-262">In questo modo è più semplice visualizzare, a colpo d'occhio, le informazioni che consentono di eseguire il backup della proprietà e che il campo è modificabile dallo script.</span><span class="sxs-lookup"><span data-stu-id="acdce-262">This makes it easier to see, at a glance, what backs the property and that the field is modifiable by script.</span></span>
+<span data-ttu-id="831db-260">Usare sempre i campi privati e le proprietà pubbliche se è necessario l'accesso al campo dall'esterno della classe o dello struct.</span><span class="sxs-lookup"><span data-stu-id="831db-260">Always use private fields and public properties if access to the field is needed from outside the class or struct.</span></span>  <span data-ttu-id="831db-261">Assicurarsi di condividere il percorso del campo privato e della proprietà pubblica.</span><span class="sxs-lookup"><span data-stu-id="831db-261">Be sure to co-locate the private field and the public property.</span></span> <span data-ttu-id="831db-262">In questo modo è più semplice visualizzare, a colpo d'occhio, le informazioni che consentono di eseguire il backup della proprietà e che il campo è modificabile dallo script.</span><span class="sxs-lookup"><span data-stu-id="831db-262">This makes it easier to see, at a glance, what backs the property and that the field is modifiable by script.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="acdce-263">L'unica eccezione è rappresentata dalle strutture di dati che richiedono che i campi vengano serializzati da `JsonUtility` , in cui è necessario che una classe di dati disponga di tutti i campi pubblici affinché la serializzazione funzioni.</span><span class="sxs-lookup"><span data-stu-id="acdce-263">The only exception to this is for data structures that require the fields to be serialized by the `JsonUtility`, where a data class is required to have all public fields for the serialization to work.</span></span>
+> <span data-ttu-id="831db-263">L'unica eccezione è rappresentata dalle strutture di dati che richiedono che i campi vengano serializzati da `JsonUtility` , in cui è necessario che una classe di dati disponga di tutti i campi pubblici affinché la serializzazione funzioni.</span><span class="sxs-lookup"><span data-stu-id="831db-263">The only exception to this is for data structures that require the fields to be serialized by the `JsonUtility`, where a data class is required to have all public fields for the serialization to work.</span></span>
 
-#### <a name="dont"></a><span data-ttu-id="acdce-264">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="acdce-264">Don't</span></span>
+#### <a name="dont"></a><span data-ttu-id="831db-264">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="831db-264">Don't</span></span>
 
 ```c#
 private float myValue1;
@@ -545,7 +545,7 @@ public float MyValue2
 }
 ```
 
-#### <a name="do"></a><span data-ttu-id="acdce-265">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="acdce-265">Do</span></span>
+#### <a name="do"></a><span data-ttu-id="831db-265">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="831db-265">Do</span></span>
 
 ```c#
 // Enable field to be configurable in the editor and available externally to other scripts (field is correctly serialized in Unity)
@@ -579,11 +579,11 @@ public float AbsMyValue
 }
 ```
 
-### <a name="cache-values-and-serialize-them-in-the-sceneprefab-whenever-possible"></a><span data-ttu-id="acdce-266">Memorizzare nella cache i valori e serializzarli nella scena o nella prefabbricazione, quando possibile</span><span class="sxs-lookup"><span data-stu-id="acdce-266">Cache values and serialize them in the scene/prefab whenever possible</span></span>
+### <a name="cache-values-and-serialize-them-in-the-sceneprefab-whenever-possible"></a><span data-ttu-id="831db-266">Memorizzare nella cache i valori e serializzarli nella scena o nella prefabbricazione, quando possibile</span><span class="sxs-lookup"><span data-stu-id="831db-266">Cache values and serialize them in the scene/prefab whenever possible</span></span>
 
-<span data-ttu-id="acdce-267">Tenendo presente il HoloLens, è preferibile ottimizzare per le prestazioni e i riferimenti alla cache nella scena o nel prefabbricato per limitare le allocazioni di memoria di Runtime.</span><span class="sxs-lookup"><span data-stu-id="acdce-267">With the HoloLens in mind, it's best to optimize for performance and cache references in the scene or prefab to limit runtime memory allocations.</span></span>
+<span data-ttu-id="831db-267">Tenendo presente il HoloLens, è preferibile ottimizzare per le prestazioni e i riferimenti alla cache nella scena o nel prefabbricato per limitare le allocazioni di memoria di Runtime.</span><span class="sxs-lookup"><span data-stu-id="831db-267">With the HoloLens in mind, it's best to optimize for performance and cache references in the scene or prefab to limit runtime memory allocations.</span></span>
 
-#### <a name="dont"></a><span data-ttu-id="acdce-268">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="acdce-268">Don't</span></span>
+#### <a name="dont"></a><span data-ttu-id="831db-268">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="831db-268">Don't</span></span>
 
 ```c#
 void Update()
@@ -592,7 +592,7 @@ void Update()
 }
 ```
 
-#### <a name="do"></a><span data-ttu-id="acdce-269">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="acdce-269">Do</span></span>
+#### <a name="do"></a><span data-ttu-id="831db-269">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="831db-269">Do</span></span>
 
 ```c#
 [SerializeField] // To enable setting the reference in the inspector.
@@ -613,11 +613,11 @@ private void Update()
 }
 ```
 
-### <a name="cache-references-to-materials-do-not-call-the-material-each-time"></a><span data-ttu-id="acdce-270">Memorizzare nella cache i riferimenti ai materiali, non chiamare ogni volta il "materiale".</span><span class="sxs-lookup"><span data-stu-id="acdce-270">Cache references to materials, do not call the ".material" each time</span></span>
+### <a name="cache-references-to-materials-do-not-call-the-material-each-time"></a><span data-ttu-id="831db-270">Memorizzare nella cache i riferimenti ai materiali, non chiamare ogni volta il "materiale".</span><span class="sxs-lookup"><span data-stu-id="831db-270">Cache references to materials, do not call the ".material" each time</span></span>
 
-<span data-ttu-id="acdce-271">Unity creerà un nuovo materiale ogni volta che si usa ". Material", che causerà una perdita di memoria se non viene eseguita la pulizia corretta.</span><span class="sxs-lookup"><span data-stu-id="acdce-271">Unity will create a new material each time you use ".material", which will cause a memory leak if not cleaned up properly.</span></span>
+<span data-ttu-id="831db-271">Unity creerà un nuovo materiale ogni volta che si usa ". Material", che causerà una perdita di memoria se non viene eseguita la pulizia corretta.</span><span class="sxs-lookup"><span data-stu-id="831db-271">Unity will create a new material each time you use ".material", which will cause a memory leak if not cleaned up properly.</span></span>
 
-#### <a name="dont"></a><span data-ttu-id="acdce-272">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="acdce-272">Don't</span></span>
+#### <a name="dont"></a><span data-ttu-id="831db-272">Cosa non fare</span><span class="sxs-lookup"><span data-stu-id="831db-272">Don't</span></span>
 
 ```c#
 public class MyClass
@@ -630,7 +630,7 @@ public class MyClass
 }
 ```
 
-#### <a name="do"></a><span data-ttu-id="acdce-273">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="acdce-273">Do</span></span>
+#### <a name="do"></a><span data-ttu-id="831db-273">Cosa fare</span><span class="sxs-lookup"><span data-stu-id="831db-273">Do</span></span>
 
 ```c#
 // Private references for use inside the class only
@@ -656,34 +656,34 @@ public class MyClass
 ```
 
 > [!NOTE]
-> <span data-ttu-id="acdce-274">In alternativa, usare la proprietà "SharedMaterial" di Unity che non crea un nuovo materiale ogni volta che vi si fa riferimento.</span><span class="sxs-lookup"><span data-stu-id="acdce-274">Alternatively, use Unity's "SharedMaterial" property which does not create a new material each time it is referenced.</span></span>
+> <span data-ttu-id="831db-274">In alternativa, usare la proprietà "SharedMaterial" di Unity che non crea un nuovo materiale ogni volta che vi si fa riferimento.</span><span class="sxs-lookup"><span data-stu-id="831db-274">Alternatively, use Unity's "SharedMaterial" property which does not create a new material each time it is referenced.</span></span>
 
-### <a name="use-platform-dependent-compilation-to-ensure-the-toolkit-wont-break-the-build-on-another-platform"></a><span data-ttu-id="acdce-275">Usare la [compilazione dipendente dalla piattaforma](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) per assicurarsi che il Toolkit non interrompa la compilazione in un'altra piattaforma</span><span class="sxs-lookup"><span data-stu-id="acdce-275">Use [platform dependent compilation](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) to ensure the Toolkit won't break the build on another platform</span></span>
+### <a name="use-platform-dependent-compilation-to-ensure-the-toolkit-wont-break-the-build-on-another-platform"></a><span data-ttu-id="831db-275">Usare la [compilazione dipendente dalla piattaforma](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) per assicurarsi che il Toolkit non interrompa la compilazione in un'altra piattaforma</span><span class="sxs-lookup"><span data-stu-id="831db-275">Use [platform dependent compilation](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) to ensure the Toolkit won't break the build on another platform</span></span>
 
-- <span data-ttu-id="acdce-276">Usare per `WINDOWS_UWP` usare API specifiche di UWP e non Unity.</span><span class="sxs-lookup"><span data-stu-id="acdce-276">Use `WINDOWS_UWP` in order to use UWP-specific, non-Unity APIs.</span></span> <span data-ttu-id="acdce-277">In questo modo si eviterà di provare a eseguire nell'editor o su piattaforme non supportate.</span><span class="sxs-lookup"><span data-stu-id="acdce-277">This will prevent them from trying to run in the Editor or on unsupported platforms.</span></span> <span data-ttu-id="acdce-278">Equivale a `UNITY_WSA && !UNITY_EDITOR` e deve essere usato a favore di.</span><span class="sxs-lookup"><span data-stu-id="acdce-278">This is equivalent to `UNITY_WSA && !UNITY_EDITOR` and should be used in favor of.</span></span>
-- <span data-ttu-id="acdce-279">Usare `UNITY_WSA` per usare le API Unity specifiche di UWP, ad esempio lo `UnityEngine.XR.WSA` spazio dei nomi.</span><span class="sxs-lookup"><span data-stu-id="acdce-279">Use `UNITY_WSA` to use UWP-specific Unity APIs, such as the `UnityEngine.XR.WSA` namespace.</span></span> <span data-ttu-id="acdce-280">Questa operazione verrà eseguita nell'editor quando la piattaforma è impostata su UWP, oltre che nelle app UWP compilate.</span><span class="sxs-lookup"><span data-stu-id="acdce-280">This will run in the Editor when the platform is set to UWP, as well as in built UWP apps.</span></span>
+- <span data-ttu-id="831db-276">Usare per `WINDOWS_UWP` usare API specifiche di UWP e non Unity.</span><span class="sxs-lookup"><span data-stu-id="831db-276">Use `WINDOWS_UWP` in order to use UWP-specific, non-Unity APIs.</span></span> <span data-ttu-id="831db-277">In questo modo si eviterà di provare a eseguire nell'editor o su piattaforme non supportate.</span><span class="sxs-lookup"><span data-stu-id="831db-277">This will prevent them from trying to run in the Editor or on unsupported platforms.</span></span> <span data-ttu-id="831db-278">Equivale a `UNITY_WSA && !UNITY_EDITOR` e deve essere usato a favore di.</span><span class="sxs-lookup"><span data-stu-id="831db-278">This is equivalent to `UNITY_WSA && !UNITY_EDITOR` and should be used in favor of.</span></span>
+- <span data-ttu-id="831db-279">Usare `UNITY_WSA` per usare le API Unity specifiche di UWP, ad esempio lo `UnityEngine.XR.WSA` spazio dei nomi.</span><span class="sxs-lookup"><span data-stu-id="831db-279">Use `UNITY_WSA` to use UWP-specific Unity APIs, such as the `UnityEngine.XR.WSA` namespace.</span></span> <span data-ttu-id="831db-280">Questa operazione verrà eseguita nell'editor quando la piattaforma è impostata su UWP, oltre che nelle app UWP compilate.</span><span class="sxs-lookup"><span data-stu-id="831db-280">This will run in the Editor when the platform is set to UWP, as well as in built UWP apps.</span></span>
 
-<span data-ttu-id="acdce-281">Questo grafico può essere utile per decidere quale `#if` usare, a seconda dei casi d'uso e delle impostazioni di compilazione previsti.</span><span class="sxs-lookup"><span data-stu-id="acdce-281">This chart can help you decide which `#if` to use, depending on your use cases and the build settings you expect.</span></span>
+<span data-ttu-id="831db-281">Questo grafico può essere utile per decidere quale `#if` usare, a seconda dei casi d'uso e delle impostazioni di compilazione previsti.</span><span class="sxs-lookup"><span data-stu-id="831db-281">This chart can help you decide which `#if` to use, depending on your use cases and the build settings you expect.</span></span>
 
-| | <span data-ttu-id="acdce-282">IL2CPP UWP</span><span class="sxs-lookup"><span data-stu-id="acdce-282">UWP IL2CPP</span></span> | <span data-ttu-id="acdce-283">UWP .NET</span><span class="sxs-lookup"><span data-stu-id="acdce-283">UWP .NET</span></span> | <span data-ttu-id="acdce-284">Editor</span><span class="sxs-lookup"><span data-stu-id="acdce-284">Editor</span></span> |
+| | <span data-ttu-id="831db-282">IL2CPP UWP</span><span class="sxs-lookup"><span data-stu-id="831db-282">UWP IL2CPP</span></span> | <span data-ttu-id="831db-283">UWP .NET</span><span class="sxs-lookup"><span data-stu-id="831db-283">UWP .NET</span></span> | <span data-ttu-id="831db-284">Editor</span><span class="sxs-lookup"><span data-stu-id="831db-284">Editor</span></span> |
 | --- | --- | --- | --- |
-| `UNITY_EDITOR` | <span data-ttu-id="acdce-285">False</span><span class="sxs-lookup"><span data-stu-id="acdce-285">False</span></span> | <span data-ttu-id="acdce-286">False</span><span class="sxs-lookup"><span data-stu-id="acdce-286">False</span></span> | <span data-ttu-id="acdce-287">True</span><span class="sxs-lookup"><span data-stu-id="acdce-287">True</span></span> |
-| `UNITY_WSA` | <span data-ttu-id="acdce-288">True</span><span class="sxs-lookup"><span data-stu-id="acdce-288">True</span></span> | <span data-ttu-id="acdce-289">True</span><span class="sxs-lookup"><span data-stu-id="acdce-289">True</span></span> | <span data-ttu-id="acdce-290">True</span><span class="sxs-lookup"><span data-stu-id="acdce-290">True</span></span> |
-| `WINDOWS_UWP` | <span data-ttu-id="acdce-291">True</span><span class="sxs-lookup"><span data-stu-id="acdce-291">True</span></span> | <span data-ttu-id="acdce-292">True</span><span class="sxs-lookup"><span data-stu-id="acdce-292">True</span></span> | <span data-ttu-id="acdce-293">False</span><span class="sxs-lookup"><span data-stu-id="acdce-293">False</span></span> |
-| `UNITY_WSA && !UNITY_EDITOR` | <span data-ttu-id="acdce-294">True</span><span class="sxs-lookup"><span data-stu-id="acdce-294">True</span></span> | <span data-ttu-id="acdce-295">True</span><span class="sxs-lookup"><span data-stu-id="acdce-295">True</span></span> | <span data-ttu-id="acdce-296">False</span><span class="sxs-lookup"><span data-stu-id="acdce-296">False</span></span> |
-| `ENABLE_WINMD_SUPPORT` | <span data-ttu-id="acdce-297">True</span><span class="sxs-lookup"><span data-stu-id="acdce-297">True</span></span> | <span data-ttu-id="acdce-298">True</span><span class="sxs-lookup"><span data-stu-id="acdce-298">True</span></span> | <span data-ttu-id="acdce-299">False</span><span class="sxs-lookup"><span data-stu-id="acdce-299">False</span></span> |
-| `NETFX_CORE` | <span data-ttu-id="acdce-300">False</span><span class="sxs-lookup"><span data-stu-id="acdce-300">False</span></span> | <span data-ttu-id="acdce-301">True</span><span class="sxs-lookup"><span data-stu-id="acdce-301">True</span></span> | <span data-ttu-id="acdce-302">Falso</span><span class="sxs-lookup"><span data-stu-id="acdce-302">False</span></span> |
+| `UNITY_EDITOR` | <span data-ttu-id="831db-285">False</span><span class="sxs-lookup"><span data-stu-id="831db-285">False</span></span> | <span data-ttu-id="831db-286">False</span><span class="sxs-lookup"><span data-stu-id="831db-286">False</span></span> | <span data-ttu-id="831db-287">True</span><span class="sxs-lookup"><span data-stu-id="831db-287">True</span></span> |
+| `UNITY_WSA` | <span data-ttu-id="831db-288">True</span><span class="sxs-lookup"><span data-stu-id="831db-288">True</span></span> | <span data-ttu-id="831db-289">True</span><span class="sxs-lookup"><span data-stu-id="831db-289">True</span></span> | <span data-ttu-id="831db-290">True</span><span class="sxs-lookup"><span data-stu-id="831db-290">True</span></span> |
+| `WINDOWS_UWP` | <span data-ttu-id="831db-291">True</span><span class="sxs-lookup"><span data-stu-id="831db-291">True</span></span> | <span data-ttu-id="831db-292">True</span><span class="sxs-lookup"><span data-stu-id="831db-292">True</span></span> | <span data-ttu-id="831db-293">False</span><span class="sxs-lookup"><span data-stu-id="831db-293">False</span></span> |
+| `UNITY_WSA && !UNITY_EDITOR` | <span data-ttu-id="831db-294">True</span><span class="sxs-lookup"><span data-stu-id="831db-294">True</span></span> | <span data-ttu-id="831db-295">True</span><span class="sxs-lookup"><span data-stu-id="831db-295">True</span></span> | <span data-ttu-id="831db-296">False</span><span class="sxs-lookup"><span data-stu-id="831db-296">False</span></span> |
+| `ENABLE_WINMD_SUPPORT` | <span data-ttu-id="831db-297">True</span><span class="sxs-lookup"><span data-stu-id="831db-297">True</span></span> | <span data-ttu-id="831db-298">True</span><span class="sxs-lookup"><span data-stu-id="831db-298">True</span></span> | <span data-ttu-id="831db-299">False</span><span class="sxs-lookup"><span data-stu-id="831db-299">False</span></span> |
+| `NETFX_CORE` | <span data-ttu-id="831db-300">False</span><span class="sxs-lookup"><span data-stu-id="831db-300">False</span></span> | <span data-ttu-id="831db-301">True</span><span class="sxs-lookup"><span data-stu-id="831db-301">True</span></span> | <span data-ttu-id="831db-302">Falso</span><span class="sxs-lookup"><span data-stu-id="831db-302">False</span></span> |
 
-### <a name="prefer-datetimeutcnow-over-datetimenow"></a><span data-ttu-id="acdce-303">Preferisci DateTime. UtcNow su DateTime. Now</span><span class="sxs-lookup"><span data-stu-id="acdce-303">Prefer DateTime.UtcNow over DateTime.Now</span></span>
+### <a name="prefer-datetimeutcnow-over-datetimenow"></a><span data-ttu-id="831db-303">Preferisci DateTime. UtcNow su DateTime. Now</span><span class="sxs-lookup"><span data-stu-id="831db-303">Prefer DateTime.UtcNow over DateTime.Now</span></span>
 
-<span data-ttu-id="acdce-304">DateTime. UtcNow è più veloce di DateTime. Now.</span><span class="sxs-lookup"><span data-stu-id="acdce-304">DateTime.UtcNow is faster than DateTime.Now.</span></span> <span data-ttu-id="acdce-305">Nelle analisi delle prestazioni precedenti è stato rilevato che l'utilizzo di DateTime. ora aggiunge un sovraccarico significativo soprattutto se utilizzato nel ciclo Update ().</span><span class="sxs-lookup"><span data-stu-id="acdce-305">In previous performance investigations we've found that using DateTime.Now adds significant overhead especially when used in the Update() loop.</span></span> <span data-ttu-id="acdce-306">[Altri hanno raggiunto lo stesso problema](https://stackoverflow.com/questions/1561791/optimizing-alternatives-to-datetime-now).</span><span class="sxs-lookup"><span data-stu-id="acdce-306">[Others have hit the same issue](https://stackoverflow.com/questions/1561791/optimizing-alternatives-to-datetime-now).</span></span>
+<span data-ttu-id="831db-304">DateTime. UtcNow è più veloce di DateTime. Now.</span><span class="sxs-lookup"><span data-stu-id="831db-304">DateTime.UtcNow is faster than DateTime.Now.</span></span> <span data-ttu-id="831db-305">Nelle analisi delle prestazioni precedenti è stato rilevato che l'utilizzo di DateTime. ora aggiunge un sovraccarico significativo soprattutto se utilizzato nel ciclo Update ().</span><span class="sxs-lookup"><span data-stu-id="831db-305">In previous performance investigations we've found that using DateTime.Now adds significant overhead especially when used in the Update() loop.</span></span> <span data-ttu-id="831db-306">[Altri hanno raggiunto lo stesso problema](https://stackoverflow.com/questions/1561791/optimizing-alternatives-to-datetime-now).</span><span class="sxs-lookup"><span data-stu-id="831db-306">[Others have hit the same issue](https://stackoverflow.com/questions/1561791/optimizing-alternatives-to-datetime-now).</span></span>
 
-<span data-ttu-id="acdce-307">Preferire l'uso di DateTime. UtcNow, a meno che non siano effettivamente necessarie le ore localizzate (un motivo legittimo potrebbe essere quello di visualizzare l'ora corrente nel fuso orario dell'utente).</span><span class="sxs-lookup"><span data-stu-id="acdce-307">Prefer using DateTime.UtcNow unless you actually need the localized times (a legitimate reason may be you wanting to show the current time in the user's time zone).</span></span> <span data-ttu-id="acdce-308">Se si gestiscono le ore relative (ad esempio, il delta tra un ultimo aggiornamento e ora), è preferibile usare DateTime. UtcNow per evitare il sovraccarico dovuto alla conversione del fuso orario.</span><span class="sxs-lookup"><span data-stu-id="acdce-308">If you are dealing with relative times (i.e. the delta between some last update and now), it's best to use DateTime.UtcNow to avoid the overhead of doing timezone conversions.</span></span>
+<span data-ttu-id="831db-307">Preferire l'uso di DateTime. UtcNow, a meno che non siano effettivamente necessarie le ore localizzate (un motivo legittimo potrebbe essere quello di visualizzare l'ora corrente nel fuso orario dell'utente).</span><span class="sxs-lookup"><span data-stu-id="831db-307">Prefer using DateTime.UtcNow unless you actually need the localized times (a legitimate reason may be you wanting to show the current time in the user's time zone).</span></span> <span data-ttu-id="831db-308">Se si gestiscono le ore relative (ad esempio, il delta tra un ultimo aggiornamento e ora), è preferibile usare DateTime. UtcNow per evitare il sovraccarico dovuto alla conversione del fuso orario.</span><span class="sxs-lookup"><span data-stu-id="831db-308">If you are dealing with relative times (i.e. the delta between some last update and now), it's best to use DateTime.UtcNow to avoid the overhead of doing timezone conversions.</span></span>
 
-## <a name="powershell-coding-conventions"></a><span data-ttu-id="acdce-309">Convenzioni di codifica di PowerShell</span><span class="sxs-lookup"><span data-stu-id="acdce-309">PowerShell coding conventions</span></span>
+## <a name="powershell-coding-conventions"></a><span data-ttu-id="831db-309">Convenzioni di codifica di PowerShell</span><span class="sxs-lookup"><span data-stu-id="831db-309">PowerShell coding conventions</span></span>
 
-<span data-ttu-id="acdce-310">Un subset della codebase MRTK USA PowerShell per l'infrastruttura della pipeline e vari script e utilità.</span><span class="sxs-lookup"><span data-stu-id="acdce-310">A subset of the MRTK codebase uses PowerShell for pipeline infrastructure and various scripts and utilities.</span></span> <span data-ttu-id="acdce-311">Il nuovo codice PowerShell deve seguire lo [stile PoshCode](https://poshcode.gitbooks.io/powershell-practice-and-style/).</span><span class="sxs-lookup"><span data-stu-id="acdce-311">New PowerShell code should follow the [PoshCode style](https://poshcode.gitbooks.io/powershell-practice-and-style/).</span></span>
+<span data-ttu-id="831db-310">Un subset della codebase MRTK USA PowerShell per l'infrastruttura della pipeline e vari script e utilità.</span><span class="sxs-lookup"><span data-stu-id="831db-310">A subset of the MRTK codebase uses PowerShell for pipeline infrastructure and various scripts and utilities.</span></span> <span data-ttu-id="831db-311">Il nuovo codice PowerShell deve seguire lo [stile PoshCode](https://poshcode.gitbooks.io/powershell-practice-and-style/).</span><span class="sxs-lookup"><span data-stu-id="831db-311">New PowerShell code should follow the [PoshCode style](https://poshcode.gitbooks.io/powershell-practice-and-style/).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="acdce-312">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="acdce-312">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="831db-312">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="831db-312">See also</span></span>
 
- [<span data-ttu-id="acdce-313">Convenzioni di codifica C# da MSDN</span><span class="sxs-lookup"><span data-stu-id="acdce-313">C# coding conventions from MSDN</span></span>](https://docs.microsoft.com/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)
+ [<span data-ttu-id="831db-313">Convenzioni di codifica C# da MSDN</span><span class="sxs-lookup"><span data-stu-id="831db-313">C# coding conventions from MSDN</span></span>](https://docs.microsoft.com/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)

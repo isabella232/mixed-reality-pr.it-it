@@ -4,28 +4,27 @@ description: Panoramica dell'indicatore di stato in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 86d5f3a28c0ee76c454a263b00ac87fbe8cb9f77
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: fb21c06bba122c1f8ad81b4ff6f4454d1472f7e0
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781709"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104683764"
 ---
-# <a name="progress-indicators"></a><span data-ttu-id="9475f-104">Indicatori di stato</span><span class="sxs-lookup"><span data-stu-id="9475f-104">Progress Indicators</span></span>
+# <a name="progress-indicators"></a><span data-ttu-id="333dc-104">Indicatori di stato</span><span class="sxs-lookup"><span data-stu-id="333dc-104">Progress Indicators</span></span>
 
 ![Indicatori di stato](../images/progress-indicator/MRTK_ProgressIndicator_Main.png)
 
-## <a name="example-scene"></a><span data-ttu-id="9475f-106">Scena di esempio</span><span class="sxs-lookup"><span data-stu-id="9475f-106">Example scene</span></span>
+## <a name="example-scene"></a><span data-ttu-id="333dc-106">Scena di esempio</span><span class="sxs-lookup"><span data-stu-id="333dc-106">Example scene</span></span>
 
-<span data-ttu-id="9475f-107">Esempi di come usare gli indicatori di stato sono disponibili nella `ProgressIndicatorExamples` scena.</span><span class="sxs-lookup"><span data-stu-id="9475f-107">Examples of how to use progress indicators can be found in the `ProgressIndicatorExamples` scene.</span></span> <span data-ttu-id="9475f-108">In questa scena viene illustrato ogni prefabbricato indicatore di stato incluso nell'SDK.</span><span class="sxs-lookup"><span data-stu-id="9475f-108">This scene demonstrates each of the progress indicator prefabs included in the SDK.</span></span>
+<span data-ttu-id="333dc-107">Esempi di come usare gli indicatori di stato sono disponibili nella `ProgressIndicatorExamples` scena.</span><span class="sxs-lookup"><span data-stu-id="333dc-107">Examples of how to use progress indicators can be found in the `ProgressIndicatorExamples` scene.</span></span> <span data-ttu-id="333dc-108">In questa scena viene illustrato ogni prefabbricato indicatore di stato incluso nell'SDK.</span><span class="sxs-lookup"><span data-stu-id="333dc-108">This scene demonstrates each of the progress indicator prefabs included in the SDK.</span></span>
 
 <img src="../images/progress-indicator/MRTK_ProgressIndicator_Examples.png" alt="Progress Indicator Example Scene">
 
-## <a name="example-open-update--close-a-progress-indicator"></a><span data-ttu-id="9475f-109">Esempio: apertura, aggiornamento & chiusura di un indicatore di stato</span><span class="sxs-lookup"><span data-stu-id="9475f-109">Example: Open, update & close a progress indicator</span></span>
+## <a name="example-open-update--close-a-progress-indicator"></a><span data-ttu-id="333dc-109">Esempio: apertura, aggiornamento & chiusura di un indicatore di stato</span><span class="sxs-lookup"><span data-stu-id="333dc-109">Example: Open, update & close a progress indicator</span></span>
 
-<span data-ttu-id="9475f-110">Gli indicatori di stato implementano l' [`IProgressIndicator`](xref:Microsoft.MixedReality.Toolkit.UI.IProgressIndicator) interfaccia.</span><span class="sxs-lookup"><span data-stu-id="9475f-110">Progress indicators implement the [`IProgressIndicator`](xref:Microsoft.MixedReality.Toolkit.UI.IProgressIndicator) interface.</span></span> <span data-ttu-id="9475f-111">Questa interfaccia può essere recuperata da un GameObject usando `GetComponent` .</span><span class="sxs-lookup"><span data-stu-id="9475f-111">This interface can be retrieved from a GameObject using `GetComponent`.</span></span>
+<span data-ttu-id="333dc-110">Gli indicatori di stato implementano l' [`IProgressIndicator`](xref:Microsoft.MixedReality.Toolkit.UI.IProgressIndicator) interfaccia.</span><span class="sxs-lookup"><span data-stu-id="333dc-110">Progress indicators implement the [`IProgressIndicator`](xref:Microsoft.MixedReality.Toolkit.UI.IProgressIndicator) interface.</span></span> <span data-ttu-id="333dc-111">Questa interfaccia può essere recuperata da un GameObject usando `GetComponent` .</span><span class="sxs-lookup"><span data-stu-id="333dc-111">This interface can be retrieved from a GameObject using `GetComponent`.</span></span>
 
 ```c#
 [SerializedField]
@@ -38,9 +37,9 @@ private void Start()
 }
 ```
 
-<span data-ttu-id="9475f-112">I `IProgressIndicator.OpenAsync()` `IProgressIndicator.CloseAsync()` metodi e restituiscono [attività](xref:System.Threading.Tasks.Task).</span><span class="sxs-lookup"><span data-stu-id="9475f-112">The `IProgressIndicator.OpenAsync()` and `IProgressIndicator.CloseAsync()` methods return [Tasks](xref:System.Threading.Tasks.Task).</span></span> <span data-ttu-id="9475f-113">Si consiglia di attendere queste attività in un metodo asincrono.</span><span class="sxs-lookup"><span data-stu-id="9475f-113">We recommend awaiting these Tasks in an async method.</span></span>
+<span data-ttu-id="333dc-112">I `IProgressIndicator.OpenAsync()` `IProgressIndicator.CloseAsync()` metodi e restituiscono [attività](xref:System.Threading.Tasks.Task).</span><span class="sxs-lookup"><span data-stu-id="333dc-112">The `IProgressIndicator.OpenAsync()` and `IProgressIndicator.CloseAsync()` methods return [Tasks](xref:System.Threading.Tasks.Task).</span></span> <span data-ttu-id="333dc-113">Si consiglia di attendere queste attività in un metodo asincrono.</span><span class="sxs-lookup"><span data-stu-id="333dc-113">We recommend awaiting these Tasks in an async method.</span></span>
 
-<span data-ttu-id="9475f-114">Impostare la proprietà dell'indicatore `Progress` su un valore compreso tra 0-1 per aggiornare lo stato di avanzamento visualizzato.</span><span class="sxs-lookup"><span data-stu-id="9475f-114">Set the indicator's `Progress` property to a value from 0-1 to update its displayed progress.</span></span> <span data-ttu-id="9475f-115">Impostarne la `Message` proprietà per aggiornare il messaggio visualizzato.</span><span class="sxs-lookup"><span data-stu-id="9475f-115">Set its `Message` property to update its displayed message.</span></span> <span data-ttu-id="9475f-116">Implementazioni diverse possono visualizzare questo contenuto in modi diversi.</span><span class="sxs-lookup"><span data-stu-id="9475f-116">Different implementations may display this content in different ways.</span></span>
+<span data-ttu-id="333dc-114">Impostare la proprietà dell'indicatore `Progress` su un valore compreso tra 0-1 per aggiornare lo stato di avanzamento visualizzato.</span><span class="sxs-lookup"><span data-stu-id="333dc-114">Set the indicator's `Progress` property to a value from 0-1 to update its displayed progress.</span></span> <span data-ttu-id="333dc-115">Impostarne la `Message` proprietà per aggiornare il messaggio visualizzato.</span><span class="sxs-lookup"><span data-stu-id="333dc-115">Set its `Message` property to update its displayed message.</span></span> <span data-ttu-id="333dc-116">Implementazioni diverse possono visualizzare questo contenuto in modi diversi.</span><span class="sxs-lookup"><span data-stu-id="333dc-116">Different implementations may display this content in different ways.</span></span>
 
 ```c#
 private async void OpenProgressIndicator()
@@ -60,18 +59,18 @@ private async void OpenProgressIndicator()
 }
 ```
 
-## <a name="indicator-states"></a><span data-ttu-id="9475f-117">Stati indicatore</span><span class="sxs-lookup"><span data-stu-id="9475f-117">Indicator states</span></span>
+## <a name="indicator-states"></a><span data-ttu-id="333dc-117">Stati indicatore</span><span class="sxs-lookup"><span data-stu-id="333dc-117">Indicator states</span></span>
 
-<span data-ttu-id="9475f-118">La proprietà di un indicatore `State` determina quali operazioni sono valide.</span><span class="sxs-lookup"><span data-stu-id="9475f-118">An indicator's `State` property determines which operations are valid.</span></span> <span data-ttu-id="9475f-119">La chiamata a un metodo non valido genererà l'indicatore per segnalare un errore e non eseguire alcuna azione.</span><span class="sxs-lookup"><span data-stu-id="9475f-119">Calling an invalid method will typically cause the indicator to report an error and take no action.</span></span>
+<span data-ttu-id="333dc-118">La proprietà di un indicatore `State` determina quali operazioni sono valide.</span><span class="sxs-lookup"><span data-stu-id="333dc-118">An indicator's `State` property determines which operations are valid.</span></span> <span data-ttu-id="333dc-119">La chiamata a un metodo non valido genererà l'indicatore per segnalare un errore e non eseguire alcuna azione.</span><span class="sxs-lookup"><span data-stu-id="333dc-119">Calling an invalid method will typically cause the indicator to report an error and take no action.</span></span>
 
-<span data-ttu-id="9475f-120">State</span><span class="sxs-lookup"><span data-stu-id="9475f-120">State</span></span> | <span data-ttu-id="9475f-121">Operazioni valide</span><span class="sxs-lookup"><span data-stu-id="9475f-121">Valid Operations</span></span>
+<span data-ttu-id="333dc-120">State</span><span class="sxs-lookup"><span data-stu-id="333dc-120">State</span></span> | <span data-ttu-id="333dc-121">Operazioni valide</span><span class="sxs-lookup"><span data-stu-id="333dc-121">Valid Operations</span></span>
 --- | ---
 `ProgressIndicatorState.Opening` | `AwaitTransitionAsync()`
 `ProgressIndicatorState.Open` | `CloseAsync()`
 `ProgressIndicatorState.Closing` | `AwaitTransitionAsync()`
 `ProgressIndicatorState.Closed` | `OpenAsync()`
 
-<span data-ttu-id="9475f-122">`AwaitTransitionAsync()` può essere usato per assicurarsi che un indicatore sia completamente aperto o chiuso prima di usarlo.</span><span class="sxs-lookup"><span data-stu-id="9475f-122">`AwaitTransitionAsync()` can be used to be sure an indicator is fully opened or closed before using it.</span></span>
+<span data-ttu-id="333dc-122">`AwaitTransitionAsync()` può essere usato per assicurarsi che un indicatore sia completamente aperto o chiuso prima di usarlo.</span><span class="sxs-lookup"><span data-stu-id="333dc-122">`AwaitTransitionAsync()` can be used to be sure an indicator is fully opened or closed before using it.</span></span>
 
 ```c#
 private async void ToggleIndicator(IProgressIndicator indicator)

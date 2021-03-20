@@ -4,51 +4,50 @@ description: Esempi di interazione della mano in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, interazioni Hand, controllo dei limiti, pulsanti stampabili,
-ms.openlocfilehash: 1019c80a1681422278a48202285e478e40d3285b
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 4a24cb2a10180bfe37054e2d963f1ffeaa5704fa
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783545"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104685964"
 ---
-# <a name="hand-interaction-examples-scene"></a><span data-ttu-id="95a90-104">Scena degli esempi di interazione della mano</span><span class="sxs-lookup"><span data-stu-id="95a90-104">Hand interaction examples scene</span></span>
+# <a name="hand-interaction-examples-scene"></a><span data-ttu-id="62f3b-104">Scena degli esempi di interazione della mano</span><span class="sxs-lookup"><span data-stu-id="62f3b-104">Hand interaction examples scene</span></span>
 
 ![Esempi di interazione della mano 1](../images/MRTK_Examples.png)
 
-<span data-ttu-id="95a90-106">La `HandInteractionExamples` scena di esempio (assets/MRTK/examples/Demos/HandTracking/Scenes/HandInteractionExamples. Unity) contiene vari tipi di interazioni e controlli dell'interfaccia utente che evidenziano l'input della mano articolata.</span><span class="sxs-lookup"><span data-stu-id="95a90-106">The `HandInteractionExamples` (Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandInteractionExamples.unity) example scene contains various types of interactions and UI controls that highlight articulated hand input.</span></span>
+<span data-ttu-id="62f3b-106">La `HandInteractionExamples` scena di esempio (assets/MRTK/examples/Demos/HandTracking/Scenes/HandInteractionExamples. Unity) contiene vari tipi di interazioni e controlli dell'interfaccia utente che evidenziano l'input della mano articolata.</span><span class="sxs-lookup"><span data-stu-id="62f3b-106">The `HandInteractionExamples` (Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandInteractionExamples.unity) example scene contains various types of interactions and UI controls that highlight articulated hand input.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="95a90-107">In questa scena di esempio viene usato *TextMesh Pro*.</span><span class="sxs-lookup"><span data-stu-id="95a90-107">This example scene uses *TextMesh Pro*.</span></span> <span data-ttu-id="95a90-108">Per aprire la scena, fare clic su *' importa tmp Essentials '* quando viene visualizzata la richiesta corrispondente durante l'importazione della scena.</span><span class="sxs-lookup"><span data-stu-id="95a90-108">To open the scene, click *'Import TMP Essentials'* when the respective prompt is shown during the import of the scene.</span></span> <span data-ttu-id="95a90-109">Unity importerà quindi i pacchetti TextMesh Pro.</span><span class="sxs-lookup"><span data-stu-id="95a90-109">Unity will then import TextMesh Pro packages.</span></span>
+> <span data-ttu-id="62f3b-107">In questa scena di esempio viene usato *TextMesh Pro*.</span><span class="sxs-lookup"><span data-stu-id="62f3b-107">This example scene uses *TextMesh Pro*.</span></span> <span data-ttu-id="62f3b-108">Per aprire la scena, fare clic su *' importa tmp Essentials '* quando viene visualizzata la richiesta corrispondente durante l'importazione della scena.</span><span class="sxs-lookup"><span data-stu-id="62f3b-108">To open the scene, click *'Import TMP Essentials'* when the respective prompt is shown during the import of the scene.</span></span> <span data-ttu-id="62f3b-109">Unity importerà quindi i pacchetti TextMesh Pro.</span><span class="sxs-lookup"><span data-stu-id="62f3b-109">Unity will then import TextMesh Pro packages.</span></span>
 
 <img src="../images/hand-interaction-examples/MRTK_Examples_TMP2.png" width="450" alt="Example TMP2">
 
-<span data-ttu-id="95a90-110">Se dopo l'importazione TextMesh Pro viene visualizzato un testo di grandi dimensioni, aprire un'altra scena Unity e quindi riaprire la scena di esempio.</span><span class="sxs-lookup"><span data-stu-id="95a90-110">If you see large text after the TextMesh Pro import, open another Unity scene and then open the example scene again.</span></span>
+<span data-ttu-id="62f3b-110">Se dopo l'importazione TextMesh Pro viene visualizzato un testo di grandi dimensioni, aprire un'altra scena Unity e quindi riaprire la scena di esempio.</span><span class="sxs-lookup"><span data-stu-id="62f3b-110">If you see large text after the TextMesh Pro import, open another Unity scene and then open the example scene again.</span></span>
 
 <img src="../images/hand-interaction-examples/MRTK_Examples_TMP1.png" width="350" alt="Example TMP1">
 
-## <a name="pressable-button"></a><span data-ttu-id="95a90-111">Pulsante a pressione</span><span class="sxs-lookup"><span data-stu-id="95a90-111">Pressable button</span></span>
+## <a name="pressable-button"></a><span data-ttu-id="62f3b-111">Pulsante a pressione</span><span class="sxs-lookup"><span data-stu-id="62f3b-111">Pressable button</span></span>
 
-<span data-ttu-id="95a90-112">Per informazioni dettagliate, vedere la pagina dei [pulsanti](../ux-building-blocks/button.md) .</span><span class="sxs-lookup"><span data-stu-id="95a90-112">See [button](../ux-building-blocks/button.md) page for the details.</span></span>
-<span data-ttu-id="95a90-113">![Esempi di interazione della mano 2](../images/hand-interaction-examples/MRTK_Examples_PressTouch.png)</span><span class="sxs-lookup"><span data-stu-id="95a90-113">![Hand Interaction Examples 2](../images/hand-interaction-examples/MRTK_Examples_PressTouch.png)</span></span>
+<span data-ttu-id="62f3b-112">Per informazioni dettagliate, vedere la pagina dei [pulsanti](../ux-building-blocks/button.md) .</span><span class="sxs-lookup"><span data-stu-id="62f3b-112">See [button](../ux-building-blocks/button.md) page for the details.</span></span>
+<span data-ttu-id="62f3b-113">![Esempi di interazione della mano 2](../images/hand-interaction-examples/MRTK_Examples_PressTouch.png)</span><span class="sxs-lookup"><span data-stu-id="62f3b-113">![Hand Interaction Examples 2](../images/hand-interaction-examples/MRTK_Examples_PressTouch.png)</span></span>
 
-## <a name="bounds-control"></a><span data-ttu-id="95a90-114">Controllo dei limiti</span><span class="sxs-lookup"><span data-stu-id="95a90-114">Bounds Control</span></span>
+## <a name="bounds-control"></a><span data-ttu-id="62f3b-114">Controllo dei limiti</span><span class="sxs-lookup"><span data-stu-id="62f3b-114">Bounds Control</span></span>
 
-<span data-ttu-id="95a90-115">Per informazioni dettagliate, vedere la pagina di [controllo dei limiti](../ux-building-blocks/bounds-control.md) .</span><span class="sxs-lookup"><span data-stu-id="95a90-115">See [bounds control](../ux-building-blocks/bounds-control.md) page for the details.</span></span>
-<span data-ttu-id="95a90-116">![Esempi di interazione della mano 3](../images/hand-interaction-examples/MRTK_Examples_BoundingBox.png)</span><span class="sxs-lookup"><span data-stu-id="95a90-116">![Hand Interaction Examples 3](../images/hand-interaction-examples/MRTK_Examples_BoundingBox.png)</span></span>
+<span data-ttu-id="62f3b-115">Per informazioni dettagliate, vedere la pagina di [controllo dei limiti](../ux-building-blocks/bounds-control.md) .</span><span class="sxs-lookup"><span data-stu-id="62f3b-115">See [bounds control](../ux-building-blocks/bounds-control.md) page for the details.</span></span>
+<span data-ttu-id="62f3b-116">![Esempi di interazione della mano 3](../images/hand-interaction-examples/MRTK_Examples_BoundingBox.png)</span><span class="sxs-lookup"><span data-stu-id="62f3b-116">![Hand Interaction Examples 3](../images/hand-interaction-examples/MRTK_Examples_BoundingBox.png)</span></span>
 
-## <a name="manipulation-handler"></a><span data-ttu-id="95a90-117">Gestore di manipolazione</span><span class="sxs-lookup"><span data-stu-id="95a90-117">Manipulation handler</span></span>
+## <a name="manipulation-handler"></a><span data-ttu-id="62f3b-117">Gestore di manipolazione</span><span class="sxs-lookup"><span data-stu-id="62f3b-117">Manipulation handler</span></span>
 
-<span data-ttu-id="95a90-118">Per informazioni dettagliate, vedere la pagina relativa al [gestore di manipolazione](../ux-building-blocks/manipulation-handler.md) .</span><span class="sxs-lookup"><span data-stu-id="95a90-118">See [manipulation handler](../ux-building-blocks/manipulation-handler.md) page for the details.</span></span>
-<span data-ttu-id="95a90-119">![Esempi di interazione della mano](../images/hand-interaction-examples/MRTK_Examples_Manipulation.png)</span><span class="sxs-lookup"><span data-stu-id="95a90-119">![Hand Interaction Examples](../images/hand-interaction-examples/MRTK_Examples_Manipulation.png)</span></span>
+<span data-ttu-id="62f3b-118">Per informazioni dettagliate, vedere la pagina relativa al [gestore di manipolazione](../ux-building-blocks/manipulation-handler.md) .</span><span class="sxs-lookup"><span data-stu-id="62f3b-118">See [manipulation handler](../ux-building-blocks/manipulation-handler.md) page for the details.</span></span>
+<span data-ttu-id="62f3b-119">![Esempi di interazione della mano](../images/hand-interaction-examples/MRTK_Examples_Manipulation.png)</span><span class="sxs-lookup"><span data-stu-id="62f3b-119">![Hand Interaction Examples](../images/hand-interaction-examples/MRTK_Examples_Manipulation.png)</span></span>
 
-## <a name="slate"></a><span data-ttu-id="95a90-120">Slate</span><span class="sxs-lookup"><span data-stu-id="95a90-120">Slate</span></span>
+## <a name="slate"></a><span data-ttu-id="62f3b-120">Slate</span><span class="sxs-lookup"><span data-stu-id="62f3b-120">Slate</span></span>
 
-<span data-ttu-id="95a90-121">Per informazioni dettagliate, vedere la pagina [Slate](../ux-building-blocks/slate.md) .</span><span class="sxs-lookup"><span data-stu-id="95a90-121">See [slate](../ux-building-blocks/slate.md) page for the details.</span></span>
-<span data-ttu-id="95a90-122">![Ardesia esempi di interazione della mano](../images/hand-interaction-examples/MRTK_Examples_Slate.png)</span><span class="sxs-lookup"><span data-stu-id="95a90-122">![Hand Interaction Examples Slate](../images/hand-interaction-examples/MRTK_Examples_Slate.png)</span></span>
+<span data-ttu-id="62f3b-121">Per informazioni dettagliate, vedere la pagina [Slate](../ux-building-blocks/slate.md) .</span><span class="sxs-lookup"><span data-stu-id="62f3b-121">See [slate](../ux-building-blocks/slate.md) page for the details.</span></span>
+<span data-ttu-id="62f3b-122">![Ardesia esempi di interazione della mano](../images/hand-interaction-examples/MRTK_Examples_Slate.png)</span><span class="sxs-lookup"><span data-stu-id="62f3b-122">![Hand Interaction Examples Slate](../images/hand-interaction-examples/MRTK_Examples_Slate.png)</span></span>
 
-## <a name="system-keyboard"></a><span data-ttu-id="95a90-123">Tastiera di sistema</span><span class="sxs-lookup"><span data-stu-id="95a90-123">System keyboard</span></span>
+## <a name="system-keyboard"></a><span data-ttu-id="62f3b-123">Tastiera di sistema</span><span class="sxs-lookup"><span data-stu-id="62f3b-123">System keyboard</span></span>
 
-<span data-ttu-id="95a90-124">Per informazioni dettagliate, vedere la pagina della [tastiera di sistema](../ux-building-blocks/system-keyboard.md) .</span><span class="sxs-lookup"><span data-stu-id="95a90-124">See [system keyboard](../ux-building-blocks/system-keyboard.md) page for the details.</span></span>
-<span data-ttu-id="95a90-125">![Tastiera degli esempi di interazione della mano](../images/hand-interaction-examples/MRTK_Examples_Keyboard.png)</span><span class="sxs-lookup"><span data-stu-id="95a90-125">![Hand Interaction Examples Keyboard](../images/hand-interaction-examples/MRTK_Examples_Keyboard.png)</span></span>
+<span data-ttu-id="62f3b-124">Per informazioni dettagliate, vedere la pagina della [tastiera di sistema](../ux-building-blocks/system-keyboard.md) .</span><span class="sxs-lookup"><span data-stu-id="62f3b-124">See [system keyboard](../ux-building-blocks/system-keyboard.md) page for the details.</span></span>
+<span data-ttu-id="62f3b-125">![Tastiera degli esempi di interazione della mano](../images/hand-interaction-examples/MRTK_Examples_Keyboard.png)</span><span class="sxs-lookup"><span data-stu-id="62f3b-125">![Hand Interaction Examples Keyboard](../images/hand-interaction-examples/MRTK_Examples_Keyboard.png)</span></span>

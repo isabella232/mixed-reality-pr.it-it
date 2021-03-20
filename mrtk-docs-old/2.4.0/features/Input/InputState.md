@@ -4,24 +4,24 @@ description: Documentazione sugli stati di input in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, InputState,
-ms.openlocfilehash: 2895645bd2fa9afdd641b4c7e0e535d893109a6d
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 55cd7ce3dd6f89c26fc07519fd60a3798eb4b358
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783152"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104682724"
 ---
-# <a name="accessing-input-state-in-mrtk"></a><span data-ttu-id="16800-104">Accesso allo stato di input in MRTK</span><span class="sxs-lookup"><span data-stu-id="16800-104">Accessing input state in MRTK</span></span>
+# <a name="accessing-input-state-in-mrtk"></a><span data-ttu-id="26d5c-104">Accesso allo stato di input in MRTK</span><span class="sxs-lookup"><span data-stu-id="26d5c-104">Accessing input state in MRTK</span></span>
 
-<span data-ttu-id="16800-105">È possibile eseguire una query direttamente sullo stato di tutti gli input in MRTK scorrendo i controller collegati alle origini di input.</span><span class="sxs-lookup"><span data-stu-id="16800-105">It's possible to directly query the state of all inputs in MRTK by iterating over the controllers attached to the input sources.</span></span> <span data-ttu-id="16800-106">MRTK fornisce anche metodi pratici per accedere alla posizione e alla rotazione degli occhi, delle mani, della testa e del controller di movimento.</span><span class="sxs-lookup"><span data-stu-id="16800-106">MRTK also provides convenience methods for accessing the position and rotation of the eyes, hands, head, and motion controller.</span></span>
+<span data-ttu-id="26d5c-105">È possibile eseguire una query direttamente sullo stato di tutti gli input in MRTK scorrendo i controller collegati alle origini di input.</span><span class="sxs-lookup"><span data-stu-id="26d5c-105">It's possible to directly query the state of all inputs in MRTK by iterating over the controllers attached to the input sources.</span></span> <span data-ttu-id="26d5c-106">MRTK fornisce anche metodi pratici per accedere alla posizione e alla rotazione degli occhi, delle mani, della testa e del controller di movimento.</span><span class="sxs-lookup"><span data-stu-id="26d5c-106">MRTK also provides convenience methods for accessing the position and rotation of the eyes, hands, head, and motion controller.</span></span>
 
-<span data-ttu-id="16800-107">Vedere la scena InputDataExample per un esempio di esecuzione di query sull'input tramite iterazione sui controller e tramite la [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) classe.</span><span class="sxs-lookup"><span data-stu-id="16800-107">See the InputDataExample scene for an example of querying input both via iterating over controllers, and by using the [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) class.</span></span>
+<span data-ttu-id="26d5c-107">Vedere la scena InputDataExample per un esempio di esecuzione di query sull'input tramite iterazione sui controller e tramite la [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) classe.</span><span class="sxs-lookup"><span data-stu-id="26d5c-107">See the InputDataExample scene for an example of querying input both via iterating over controllers, and by using the [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) class.</span></span>
 
-## <a name="example-access-position-rotation-of-head-hands-eyes-in-mrtk"></a><span data-ttu-id="16800-108">Esempio: posizione di accesso, rotazione di Head, Hands, Eyes in MRTK</span><span class="sxs-lookup"><span data-stu-id="16800-108">Example: Access position, rotation of head, hands, eyes in MRTK</span></span>
+## <a name="example-access-position-rotation-of-head-hands-eyes-in-mrtk"></a><span data-ttu-id="26d5c-108">Esempio: posizione di accesso, rotazione di Head, Hands, Eyes in MRTK</span><span class="sxs-lookup"><span data-stu-id="26d5c-108">Example: Access position, rotation of head, hands, eyes in MRTK</span></span>
 
-<span data-ttu-id="16800-109">[`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils)La classe di MRTK fornisce metodi pratici per accedere al raggio di mano, al raggio principale, al raggio d'occhio e ai raggi del controller di movimento.</span><span class="sxs-lookup"><span data-stu-id="16800-109">MRTK's [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) class provides convenience methods for accessing the hand ray, head ray, eye gaze ray, and motion controller rays.</span></span>
+<span data-ttu-id="26d5c-109">[`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils)La classe di MRTK fornisce metodi pratici per accedere al raggio di mano, al raggio principale, al raggio d'occhio e ai raggi del controller di movimento.</span><span class="sxs-lookup"><span data-stu-id="26d5c-109">MRTK's [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) class provides convenience methods for accessing the hand ray, head ray, eye gaze ray, and motion controller rays.</span></span>
 
 ```c#
 // Get the head ray
@@ -39,7 +39,7 @@ else
 }
 ```
 
-## <a name="example-access-position-rotation-of-all-6dof-controllers-active-in-scene"></a><span data-ttu-id="16800-110">Esempio: posizione di accesso, rotazione di tutti i controller 6DOF attivi nella scena</span><span class="sxs-lookup"><span data-stu-id="16800-110">Example: Access position, rotation of all 6DOF controllers active in scene</span></span>
+## <a name="example-access-position-rotation-of-all-6dof-controllers-active-in-scene"></a><span data-ttu-id="26d5c-110">Esempio: posizione di accesso, rotazione di tutti i controller 6DOF attivi nella scena</span><span class="sxs-lookup"><span data-stu-id="26d5c-110">Example: Access position, rotation of all 6DOF controllers active in scene</span></span>
 
 ```c#
 foreach(var controller in CoreServices.InputSystem.DetectedControllers)
@@ -64,8 +64,8 @@ foreach(var controller in CoreServices.InputSystem.DetectedControllers)
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="16800-111">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="16800-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="26d5c-111">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="26d5c-111">See also</span></span>
 
-- [<span data-ttu-id="16800-112">InputEvents</span><span class="sxs-lookup"><span data-stu-id="16800-112">InputEvents</span></span>](InputEvents.md)
-- [<span data-ttu-id="16800-113">Pointers</span><span class="sxs-lookup"><span data-stu-id="16800-113">Pointers</span></span>](Pointers.md)
-- [<span data-ttu-id="16800-114">HandTracking</span><span class="sxs-lookup"><span data-stu-id="16800-114">HandTracking</span></span>](HandTracking.md)
+- [<span data-ttu-id="26d5c-112">InputEvents</span><span class="sxs-lookup"><span data-stu-id="26d5c-112">InputEvents</span></span>](InputEvents.md)
+- [<span data-ttu-id="26d5c-113">Pointers</span><span class="sxs-lookup"><span data-stu-id="26d5c-113">Pointers</span></span>](Pointers.md)
+- [<span data-ttu-id="26d5c-114">HandTracking</span><span class="sxs-lookup"><span data-stu-id="26d5c-114">HandTracking</span></span>](HandTracking.md)

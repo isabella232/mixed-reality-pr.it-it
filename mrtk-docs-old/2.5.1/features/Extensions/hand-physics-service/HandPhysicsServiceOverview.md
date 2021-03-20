@@ -4,51 +4,50 @@ description: documentazione per usare il servizio di estensione della fisica del
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 3ad1770746e9b7c829aa26ab9e301a38b2baf1ce
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 8fd949a48964a542ee00aae0bf8c08a591af3f91
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782363"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104682524"
 ---
-# <a name="hand-physics-extension-service"></a><span data-ttu-id="8f68c-104">Servizio di estensione fisica della mano</span><span class="sxs-lookup"><span data-stu-id="8f68c-104">Hand physics extension service</span></span>
+# <a name="hand-physics-extension-service"></a><span data-ttu-id="32bc0-104">Servizio di estensione fisica della mano</span><span class="sxs-lookup"><span data-stu-id="32bc0-104">Hand physics extension service</span></span>
 
-<span data-ttu-id="8f68c-105">Il servizio di fisica della mano Abilita gli eventi di collisione corpo rigidi e le interazioni con le mani articolate.</span><span class="sxs-lookup"><span data-stu-id="8f68c-105">The hand physics service enables rigid body collision events and interactions with articulated hands.</span></span>
+<span data-ttu-id="32bc0-105">Il servizio di fisica della mano Abilita gli eventi di collisione corpo rigidi e le interazioni con le mani articolate.</span><span class="sxs-lookup"><span data-stu-id="32bc0-105">The hand physics service enables rigid body collision events and interactions with articulated hands.</span></span>
 
-## <a name="enabling-the-extension"></a><span data-ttu-id="8f68c-106">Abilitazione dell'estensione</span><span class="sxs-lookup"><span data-stu-id="8f68c-106">Enabling the extension</span></span>
+## <a name="enabling-the-extension"></a><span data-ttu-id="32bc0-106">Abilitazione dell'estensione</span><span class="sxs-lookup"><span data-stu-id="32bc0-106">Enabling the extension</span></span>
 
-<span data-ttu-id="8f68c-107">Per abilitare l'estensione, aprire il profilo RegisteredServiceProvider.</span><span class="sxs-lookup"><span data-stu-id="8f68c-107">To enable the extension, open your RegisteredServiceProvider profile.</span></span> <span data-ttu-id="8f68c-108">Fare clic `Register a new Service Provider` per aggiungere una nuova configurazione.</span><span class="sxs-lookup"><span data-stu-id="8f68c-108">Click `Register a new Service Provider` to add a new configuration.</span></span> <span data-ttu-id="8f68c-109">Nel campo tipo di componente selezionare HandPhysicsService.</span><span class="sxs-lookup"><span data-stu-id="8f68c-109">In the component type field, select HandPhysicsService.</span></span> <span data-ttu-id="8f68c-110">Nel campo profilo di configurazione selezionare il profilo fisico della mano predefinito incluso nell'estensione.</span><span class="sxs-lookup"><span data-stu-id="8f68c-110">In the configuration Profile field, select the default hand physics profile included with the extension.</span></span>
+<span data-ttu-id="32bc0-107">Per abilitare l'estensione, aprire il profilo RegisteredServiceProvider.</span><span class="sxs-lookup"><span data-stu-id="32bc0-107">To enable the extension, open your RegisteredServiceProvider profile.</span></span> <span data-ttu-id="32bc0-108">Fare clic `Register a new Service Provider` per aggiungere una nuova configurazione.</span><span class="sxs-lookup"><span data-stu-id="32bc0-108">Click `Register a new Service Provider` to add a new configuration.</span></span> <span data-ttu-id="32bc0-109">Nel campo tipo di componente selezionare HandPhysicsService.</span><span class="sxs-lookup"><span data-stu-id="32bc0-109">In the component type field, select HandPhysicsService.</span></span> <span data-ttu-id="32bc0-110">Nel campo profilo di configurazione selezionare il profilo fisico della mano predefinito incluso nell'estensione.</span><span class="sxs-lookup"><span data-stu-id="32bc0-110">In the configuration Profile field, select the default hand physics profile included with the extension.</span></span>
 
-## <a name="profile-options"></a><span data-ttu-id="8f68c-111">Opzioni profilo</span><span class="sxs-lookup"><span data-stu-id="8f68c-111">Profile options</span></span>
+## <a name="profile-options"></a><span data-ttu-id="32bc0-111">Opzioni profilo</span><span class="sxs-lookup"><span data-stu-id="32bc0-111">Profile options</span></span>
 
-### <a name="hand-physics-layer"></a><span data-ttu-id="8f68c-112">Livello di fisica della mano</span><span class="sxs-lookup"><span data-stu-id="8f68c-112">Hand physics layer</span></span>
+### <a name="hand-physics-layer"></a><span data-ttu-id="32bc0-112">Livello di fisica della mano</span><span class="sxs-lookup"><span data-stu-id="32bc0-112">Hand physics layer</span></span>
 
-<span data-ttu-id="8f68c-113">Controlla il livello a cui verranno indirizzati i giunti a cui è stata creata un'istanza.</span><span class="sxs-lookup"><span data-stu-id="8f68c-113">Controls the layer the instantiated hand joints will go to.</span></span>
+<span data-ttu-id="32bc0-113">Controlla il livello a cui verranno indirizzati i giunti a cui è stata creata un'istanza.</span><span class="sxs-lookup"><span data-stu-id="32bc0-113">Controls the layer the instantiated hand joints will go to.</span></span>
 
-<span data-ttu-id="8f68c-114">Mentre per il servizio viene usato per impostazione predefinita il livello "default" (0), è consigliabile usare un livello separato per gli oggetti fisici della mano.</span><span class="sxs-lookup"><span data-stu-id="8f68c-114">While the service defaults to the "default" layer (0), it is recommended to use a separate layer for hand physics objects.</span></span> <span data-ttu-id="8f68c-115">In caso contrario, potrebbero verificarsi collisioni indesiderate e/o raycasts non accurati.</span><span class="sxs-lookup"><span data-stu-id="8f68c-115">Otherwise there may be unwanted collisions and/or inaccurate raycasts.</span></span>
+<span data-ttu-id="32bc0-114">Mentre per il servizio viene usato per impostazione predefinita il livello "default" (0), è consigliabile usare un livello separato per gli oggetti fisici della mano.</span><span class="sxs-lookup"><span data-stu-id="32bc0-114">While the service defaults to the "default" layer (0), it is recommended to use a separate layer for hand physics objects.</span></span> <span data-ttu-id="32bc0-115">In caso contrario, potrebbero verificarsi collisioni indesiderate e/o raycasts non accurati.</span><span class="sxs-lookup"><span data-stu-id="32bc0-115">Otherwise there may be unwanted collisions and/or inaccurate raycasts.</span></span>
 
-### <a name="finger-tip-kinematic-body-prefab"></a><span data-ttu-id="8f68c-116">Prefabbricato del corpo cinematica del finger tip</span><span class="sxs-lookup"><span data-stu-id="8f68c-116">Finger tip kinematic body prefab</span></span>
+### <a name="finger-tip-kinematic-body-prefab"></a><span data-ttu-id="32bc0-116">Prefabbricato del corpo cinematica del finger tip</span><span class="sxs-lookup"><span data-stu-id="32bc0-116">Finger tip kinematic body prefab</span></span>
 
-<span data-ttu-id="8f68c-117">Controlla la creazione di un'istanza del prefabbricato a portata di mano.</span><span class="sxs-lookup"><span data-stu-id="8f68c-117">Controls which prefab is instantiated on fingertips.</span></span> <span data-ttu-id="8f68c-118">Affinché il servizio funzioni come previsto, il prefabbricato richiede:</span><span class="sxs-lookup"><span data-stu-id="8f68c-118">In order for the service to work as expected, the prefab requires:</span></span>
+<span data-ttu-id="32bc0-117">Controlla la creazione di un'istanza del prefabbricato a portata di mano.</span><span class="sxs-lookup"><span data-stu-id="32bc0-117">Controls which prefab is instantiated on fingertips.</span></span> <span data-ttu-id="32bc0-118">Affinché il servizio funzioni come previsto, il prefabbricato richiede:</span><span class="sxs-lookup"><span data-stu-id="32bc0-118">In order for the service to work as expected, the prefab requires:</span></span>
 
-- <span data-ttu-id="8f68c-119">Un componente rigidbody con l'abilitazione della funzionalità cinematica</span><span class="sxs-lookup"><span data-stu-id="8f68c-119">A rigidbody component, with isKinematic enabled</span></span>
-- <span data-ttu-id="8f68c-120">Un Collider</span><span class="sxs-lookup"><span data-stu-id="8f68c-120">A collider</span></span>
-- <span data-ttu-id="8f68c-121">Componente `JointKinematicBody`</span><span class="sxs-lookup"><span data-stu-id="8f68c-121">`JointKinematicBody` component</span></span>
+- <span data-ttu-id="32bc0-119">Un componente rigidbody con l'abilitazione della funzionalità cinematica</span><span class="sxs-lookup"><span data-stu-id="32bc0-119">A rigidbody component, with isKinematic enabled</span></span>
+- <span data-ttu-id="32bc0-120">Un Collider</span><span class="sxs-lookup"><span data-stu-id="32bc0-120">A collider</span></span>
+- <span data-ttu-id="32bc0-121">Componente `JointKinematicBody`</span><span class="sxs-lookup"><span data-stu-id="32bc0-121">`JointKinematicBody` component</span></span>
 
-### <a name="use-palm-kinematic-body"></a><span data-ttu-id="8f68c-122">USA corpo cinematica Palm</span><span class="sxs-lookup"><span data-stu-id="8f68c-122">Use palm kinematic body</span></span>
+### <a name="use-palm-kinematic-body"></a><span data-ttu-id="32bc0-122">USA corpo cinematica Palm</span><span class="sxs-lookup"><span data-stu-id="32bc0-122">Use palm kinematic body</span></span>
 
-<span data-ttu-id="8f68c-123">Controlla se il servizio tenterà di creare un'istanza di una prefabbricata sul giunto di Palm.</span><span class="sxs-lookup"><span data-stu-id="8f68c-123">Controls whether the service will attempt to instantiate a prefab on the palm joint.</span></span>
+<span data-ttu-id="32bc0-123">Controlla se il servizio tenterà di creare un'istanza di una prefabbricata sul giunto di Palm.</span><span class="sxs-lookup"><span data-stu-id="32bc0-123">Controls whether the service will attempt to instantiate a prefab on the palm joint.</span></span>
 
-### <a name="palm-kinematic-body-prefab"></a><span data-ttu-id="8f68c-124">Prefabbricato del corpo di Palm cinematico</span><span class="sxs-lookup"><span data-stu-id="8f68c-124">Palm kinematic body prefab</span></span>
+### <a name="palm-kinematic-body-prefab"></a><span data-ttu-id="32bc0-124">Prefabbricato del corpo di Palm cinematico</span><span class="sxs-lookup"><span data-stu-id="32bc0-124">Palm kinematic body prefab</span></span>
 
-<span data-ttu-id="8f68c-125">Quando `UsePalmKinematicBody` è abilitato, si tratta della prefabbricata di cui verrà creata un'istanza.</span><span class="sxs-lookup"><span data-stu-id="8f68c-125">When `UsePalmKinematicBody` is enabled, this is the prefab it will instantiate.</span></span> <span data-ttu-id="8f68c-126">Analogamente a `FingerTipKinematicBodyPrefab` questa prefabbricata è necessario:</span><span class="sxs-lookup"><span data-stu-id="8f68c-126">Just like `FingerTipKinematicBodyPrefab`, this prefab requires:</span></span>
+<span data-ttu-id="32bc0-125">Quando `UsePalmKinematicBody` è abilitato, si tratta della prefabbricata di cui verrà creata un'istanza.</span><span class="sxs-lookup"><span data-stu-id="32bc0-125">When `UsePalmKinematicBody` is enabled, this is the prefab it will instantiate.</span></span> <span data-ttu-id="32bc0-126">Analogamente a `FingerTipKinematicBodyPrefab` questa prefabbricata è necessario:</span><span class="sxs-lookup"><span data-stu-id="32bc0-126">Just like `FingerTipKinematicBodyPrefab`, this prefab requires:</span></span>
 
-- <span data-ttu-id="8f68c-127">Un componente rigidbody con l'abilitazione della funzionalità cinematica</span><span class="sxs-lookup"><span data-stu-id="8f68c-127">A rigidbody component, with isKinematic enabled</span></span>
-- <span data-ttu-id="8f68c-128">Un Collider</span><span class="sxs-lookup"><span data-stu-id="8f68c-128">A collider</span></span>
-- <span data-ttu-id="8f68c-129">Componente `JointKinematicBody`</span><span class="sxs-lookup"><span data-stu-id="8f68c-129">`JointKinematicBody` component</span></span>
+- <span data-ttu-id="32bc0-127">Un componente rigidbody con l'abilitazione della funzionalità cinematica</span><span class="sxs-lookup"><span data-stu-id="32bc0-127">A rigidbody component, with isKinematic enabled</span></span>
+- <span data-ttu-id="32bc0-128">Un Collider</span><span class="sxs-lookup"><span data-stu-id="32bc0-128">A collider</span></span>
+- <span data-ttu-id="32bc0-129">Componente `JointKinematicBody`</span><span class="sxs-lookup"><span data-stu-id="32bc0-129">`JointKinematicBody` component</span></span>
 
-## <a name="how-to-use-the-service"></a><span data-ttu-id="8f68c-130">Come usare il servizio</span><span class="sxs-lookup"><span data-stu-id="8f68c-130">How to use the service</span></span>
+## <a name="how-to-use-the-service"></a><span data-ttu-id="32bc0-130">Come usare il servizio</span><span class="sxs-lookup"><span data-stu-id="32bc0-130">How to use the service</span></span>
 
-<span data-ttu-id="8f68c-131">Una volta abilitata, usare la proprietà di qualsiasi Collider `IsTrigger` per ricevere eventi di collisione da tutte le 10 cifre (e Palms se sono abilitate).</span><span class="sxs-lookup"><span data-stu-id="8f68c-131">Once enabled, use any collider's `IsTrigger` property to receive collision events from all 10 digits (and palms if they're enabled).</span></span>
+<span data-ttu-id="32bc0-131">Una volta abilitata, usare la proprietà di qualsiasi Collider `IsTrigger` per ricevere eventi di collisione da tutte le 10 cifre (e Palms se sono abilitate).</span><span class="sxs-lookup"><span data-stu-id="32bc0-131">Once enabled, use any collider's `IsTrigger` property to receive collision events from all 10 digits (and palms if they're enabled).</span></span>
