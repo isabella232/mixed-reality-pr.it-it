@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Tracciamento oculare, Realtà mista, Input, Sguardo fisso, Selezione oculare della destinazione, HoloLens 2, Selezione con gli occhi, Attesa, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, progettazione
 ms.openlocfilehash: 78f8dcec3c8368128ec5904df36ce1391aa8b879
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98007711"
 ---
 # <a name="eye-gaze-and-dwell"></a>Sguardo fisso e attesa

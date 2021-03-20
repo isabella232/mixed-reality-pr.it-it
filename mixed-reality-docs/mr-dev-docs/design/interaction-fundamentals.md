@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Realtà mista, Sguardo fisso, selezione della destinazione con lo sguardo, interazione, progettazione, hololens, MMR, multimodale, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens
 ms.openlocfilehash: 37ac7475172977c8741c17817568cc9b5ad2a4e5
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
-ms.translationtype: HT
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97847295"
 ---
 # <a name="introducing-instinctual-interactions"></a>Introduzione alle interazioni istintive

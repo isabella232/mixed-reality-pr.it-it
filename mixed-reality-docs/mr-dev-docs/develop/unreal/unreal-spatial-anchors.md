@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, ancoraggi nello spazio, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
 ms.openlocfilehash: d44610ea0632dbc93941096007e60e4ae7be53e1
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98009981"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Ancoraggi nello spazio locali in Unreal

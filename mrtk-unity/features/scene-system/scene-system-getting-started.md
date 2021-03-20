@@ -4,14 +4,13 @@ description: Pagina di destinazione per il sistema di scena con MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 92b0fa8df5e48d4a03ea168f18a77a49add255df
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: e43bb401ea3c3175b5cb3805e7edf00d361eb4b6
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783203"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104680634"
 ---
 # <a name="scene-system-overview"></a>Panoramica del sistema di scena
 

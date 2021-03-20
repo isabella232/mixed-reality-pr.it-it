@@ -8,10 +8,10 @@ ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, learn, esempi, MRTK, research mode, HoloLens 2, codici a matrice, WebRTC, acquisizione realtà mista, holographic remoting, UX Tools
 ms.localizationpriority: high
 ms.openlocfilehash: 78cfc726bdffdb461a83bd1e9805d8f0e64b0f01
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98583189"
 ---
 # <a name="samples-and-feature-apps"></a>Esempi e app di funzionalità

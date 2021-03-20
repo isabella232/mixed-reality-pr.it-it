@@ -4,14 +4,13 @@ description: Documentazione su near Interaction in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, near Interaction,
-ms.openlocfilehash: fed8846e4157240e38abf862f804f2311eb26dd5
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 4d74320c70a1d8228998a260986cd5d6a275529d
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782439"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104680654"
 ---
 # <a name="how-to-add-near-interaction-in-mrtk"></a>Come aggiungere near Interaction in MRTK
 

@@ -4,14 +4,13 @@ description: Documentazione per creare azioni di input in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, InputActions,
-ms.openlocfilehash: f46cb9ee6e4571e077963c1bc52d4f639549eb98
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 5c48d54353bac7013ced4a155014b06a2278d2d9
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782438"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104680679"
 ---
 # <a name="input-actions"></a>Azioni di input
 

@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, documentazione, guide, funzionalità, visore VR realtà mista, visore VR di windows mixed reality, visore VR per realtà virtuale, porting, aggiornamento
 ms.openlocfilehash: 27fb726bc0ca9c51b4e7b68ad28b76f89312262e
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98010051"
 ---
 # <a name="upgrading-projects-in-unreal"></a>Aggiornamento di progetti in Unreal

@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal Engine 4, estensioni dell'editor, Unreal Editor, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, documentazione, guide, funzionalità, cuffie per la realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale, porting, aggiornamento
 ms.openlocfilehash: ee0ba5d1d60b83dc334204e12283c76a877b4ec8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98584922"
 ---
 # <a name="editor-extensions-in-unreal"></a>Estensioni dell'editor in Unreal

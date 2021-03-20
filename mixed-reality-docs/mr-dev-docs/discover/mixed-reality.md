@@ -8,10 +8,10 @@ ms.topic: article
 keywords: Realtà mista, olografica, AR, VR, MR, XR, realtà aumentata, realtà virtuale, spiegazione, case study, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata
 ms.localizationpriority: high
 ms.openlocfilehash: 2eac20b85ceeb9413dfc0b6820cceda2ddf335c5
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98583010"
 ---
 # <a name="what-is-mixed-reality"></a>Che cos'è Realtà mista?
