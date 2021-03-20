@@ -4,14 +4,13 @@ description: Come usare i controller in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, controller,
-ms.openlocfilehash: 7acfffb0bba852b7ac63a5b22349a11c73e223e0
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: ac8f48b59207f948bc2ddde7b8c97eb4eb82e552
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783344"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694158"
 ---
 # <a name="controllers"></a>Controllers
 

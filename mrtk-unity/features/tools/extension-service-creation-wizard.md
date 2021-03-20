@@ -4,14 +4,13 @@ description: Documentazione sulla procedura guidata per eseguire la transizione 
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: eb47880abf0f7c9f2bfd477431dab94f02e65ff9
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 5ba857096605508df1173daa29736a5d2279acf8
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782336"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695958"
 ---
 # <a name="extension-service-creation-wizard"></a>Creazione guidata servizio di estensione
 
@@ -27,28 +26,30 @@ Per impostazione predefinita, i nuovi asset di script verranno generati nella `M
 
 Gli script di servizio generati includono alcuni prompt simili a quelli dei nuovi script monobehavior. Che forniranno informazioni su dove inizializzare e aggiornare il servizio.
 
-    namespace Microsoft.MixedReality.Toolkit.Extensions
+```csharp
+namespace Microsoft.MixedReality.Toolkit.Extensions
+{
+    [MixedRealityExtensionService(SupportedPlatforms.WindowsStandalone|SupportedPlatforms.MacStandalone|SupportedPlatforms.LinuxStandalone|SupportedPlatforms.WindowsUniversal)]
+    public class NewService : BaseExtensionService, INewService, IMixedRealityExtensionService
     {
-        [MixedRealityExtensionService(SupportedPlatforms.WindowsStandalone|SupportedPlatforms.MacStandalone|SupportedPlatforms.LinuxStandalone|SupportedPlatforms.WindowsUniversal)]
-        public class NewService : BaseExtensionService, INewService, IMixedRealityExtensionService
+        private NewServiceProfile newServiceProfile;
+
+        public NewService(IMixedRealityServiceRegistrar registrar,  string name,  uint priority,  BaseMixedRealityProfile profile) : base(registrar, name, priority, profile) 
         {
-            private NewServiceProfile newServiceProfile;
-    
-            public NewService(IMixedRealityServiceRegistrar registrar,  string name,  uint priority,  BaseMixedRealityProfile profile) : base(registrar, name, priority, profile) 
-            {
-                newServiceProfile = (NewServiceProfile)profile;
-            }
-    
-            public override void Initialize()
-            {
-                // Do service initialization here.
-            }
-    
-            public override void Update()
-            {
-                // Do service updates here.
-            }
+            newServiceProfile = (NewServiceProfile)profile;
+        }
+
+        public override void Initialize()
+        {
+            // Do service initialization here.
+        }
+
+        public override void Update()
+        {
+            // Do service updates here.
         }
     }
+}
+```
 
 Se si sceglie di registrare il servizio nella procedura guidata, è sufficiente modificare questo script e il servizio verrà aggiornato automaticamente. In caso contrario, è possibile leggere la pagina relativa [alla registrazione del nuovo servizio qui](../../configuration/mixed-reality-configuration-guide.md).

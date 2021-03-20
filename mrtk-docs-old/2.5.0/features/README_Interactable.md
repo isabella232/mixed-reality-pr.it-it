@@ -4,14 +4,13 @@ description: Panoramica sul componente script interactable in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, interactable, eventi,
-ms.openlocfilehash: 7b45181571dfc48fd3defa8847ba9ebe568d73c6
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 1d6a4a995b7db52f0b29dda373cfe5d05b27e283
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781654"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695068"
 ---
 # <a name="interactable"></a>Con cui
 

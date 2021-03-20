@@ -4,14 +4,13 @@ description: Panoramica sul controllo dei limiti in MRTK
 author: thalbern
 ms.author: bethalha
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, controllo dei limiti,
-ms.openlocfilehash: bdf9130e9d68a68a975ac20f83420d6569f8bb68
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: a99a18f37a981e977d16b84eaa45b27b957d68ec
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783341"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695248"
 ---
 # <a name="bounds-control"></a>Controllo dei limiti
 

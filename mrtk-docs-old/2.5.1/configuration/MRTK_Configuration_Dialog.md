@@ -4,14 +4,13 @@ description: Configurare MRTK nel progetto Unity
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, Unity
-ms.openlocfilehash: deab4d5e5a4dd125e503cf8674b238a6db71b16b
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: b8984c81bf76268aa6643c918cb2acf0fac7f184
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782011"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694147"
 ---
 # <a name="mrtk-project-configuration-dialog"></a>Finestra di dialogo di configurazione del progetto MRTK
 

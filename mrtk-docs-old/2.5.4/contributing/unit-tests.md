@@ -4,14 +4,13 @@ description: UnitTests per controllare reliablity di MRTK.
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, UnitTest,
-ms.openlocfilehash: 273edf23eb739e1fb52852df8bd275f1cf379f29
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 4dc8931b924fcadbc1e9b7b2a5a01a96623cc477
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781805"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104693688"
 ---
 # <a name="writing-and-running-tests-in-mrtk"></a>Scrittura ed esecuzione di test in MRTK
 

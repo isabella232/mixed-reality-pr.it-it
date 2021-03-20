@@ -4,14 +4,13 @@ description: Documentazione sulla specifica del formato di file binario di anima
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: adc6bee83faacf20a1b8013bafb1cf50e1e3d419
-ms.sourcegitcommit: 210312f6be83745761eeb4f55827e1fc677d79ca
+ms.openlocfilehash: 25af173b911897bc10e632d0be418c89f01fda6f
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103147416"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104702417"
 ---
 # <a name="input-animation-binary-file-format-specification"></a>Specifica del formato file binario animazione input
 

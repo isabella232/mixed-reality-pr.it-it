@@ -4,14 +4,13 @@ description: Documentazione su come eseguire la migrazione a un aggiornamento in
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: ee0c154b1c40b013c3446f0c870321ecb8c50c5c
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 1ea4e46c5b7d7d3d2d33affbd0811c93e29da11f
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783254"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694708"
 ---
 # <a name="migration-window"></a>Finestra di migrazione
 

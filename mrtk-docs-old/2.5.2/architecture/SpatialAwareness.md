@@ -4,14 +4,13 @@ description: Awarness spaziali in un'applicazione di realtà mista.
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 9462afb1f42c5d2f1c5cf4b9f1e3baf9a1db1332
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 8092f92d2a0ffd054a8dc76edc97ebdba50c8683
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783735"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694588"
 ---
 # <a name="spatial-awareness"></a>Consapevolezza spaziale
 

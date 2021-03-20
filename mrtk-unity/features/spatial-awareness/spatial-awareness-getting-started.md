@@ -4,14 +4,13 @@ description: descrive la conoscenza spaziale in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 7a27f5eb63150b2521ea3471f50c2bbdeb886d90
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: b47224bb28b18592692cdf450c7ce571929403b9
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782172"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104696098"
 ---
 # <a name="spatial-awareness"></a>Consapevolezza spaziale
 
@@ -22,7 +21,7 @@ Il sistema di riconoscimento spaziale fornisce una reale consapevolezza ambienta
 > [!NOTE]
 > A questo punto, il Toolkit di realtà mista non viene fornito con gli algoritmi di comprensione spaziale come originariamente confezionato in HoloToolkit. La comprensione spaziale comporta in genere la trasformazione dei dati di rete spaziale per creare dati di mesh semplificati e/o raggruppati, ad esempio piani, muri, piani, soffitti e così via.
 
-## <a name="getting-started"></a>Guida introduttiva
+## <a name="getting-started"></a>Introduzione
 
 L'aggiunta del supporto per la consapevolezza spaziale richiede due componenti chiave del Toolkit di realtà mista: il sistema di riconoscimento spaziale e un provider di piattaforme supportato.
 

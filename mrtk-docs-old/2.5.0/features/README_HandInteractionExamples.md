@@ -4,14 +4,13 @@ description: Esempi di interazione della mano in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, interazioni Hand, controllo dei limiti, pulsanti stampabili,
-ms.openlocfilehash: 28f9e6b70898c08f7a918b2c7284c2c0605b64dd
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 91e020366f87483b8e9060c2b3625c38bd412ce9
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782650"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695118"
 ---
 # <a name="hand-interaction-examples-scene"></a>Scena degli esempi di interazione della mano
 

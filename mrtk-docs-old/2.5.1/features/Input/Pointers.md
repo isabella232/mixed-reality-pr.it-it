@@ -4,14 +4,13 @@ description: Documentazione sui puntatori in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, puntatori,
-ms.openlocfilehash: 0ac0b9ab6684ca14a8eaa76037e86e4e2043f3eb
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: ba6f5510aec6364ed05e1b94fa410e689d3a3bba
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783647"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694038"
 ---
 # <a name="pointers"></a>Pointers
 

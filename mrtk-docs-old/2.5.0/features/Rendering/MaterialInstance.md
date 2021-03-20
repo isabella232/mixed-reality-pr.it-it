@@ -4,14 +4,13 @@ description: Documentazione sull'istanza del materiale e sui relativi usi in MRT
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, MaterialInstance,
-ms.openlocfilehash: da68cdb960ae01c9aff91ad7d4429b076e266e26
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 594120308dd483d6660106136a8533744ce83fc0
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783650"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694728"
 ---
 # <a name="material-instance"></a>Istanza del materiale
 

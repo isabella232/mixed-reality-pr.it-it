@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, realtà mista, debug, distribuzione
 ms.openlocfilehash: 2ab89311163a48ee3c14511446a1498ce883a232
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100496094"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>Uso di Visual Studio per la distribuzione e il debug

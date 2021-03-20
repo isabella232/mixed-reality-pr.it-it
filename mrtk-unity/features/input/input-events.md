@@ -4,14 +4,13 @@ description: Documentazione per InputEvents in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, eventi,
-ms.openlocfilehash: 2fa16d44a7658b7f55c8352b67bcd074b937f9cf
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 7723ea65a8dfc174c90b83bb3c1a62474176796f
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782862"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694328"
 ---
 # <a name="input-events"></a>Eventi di input
 
@@ -185,6 +184,6 @@ Per arrestare la propagazione di un evento di input attraverso l'esecuzione [com
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Puntatori](pointers.md)
+- [Pointers](pointers.md)
 - [Voce](speech.md)
 - [Stato input](input-state.md)

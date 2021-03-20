@@ -4,14 +4,13 @@ description: Documentazione su diversi tipi di provider di input in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: bf0ed3623f1361ab1e98b02655eaf36352cb63b5
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: fdaec584849d6b609a2f6105d36cab3d83388a9e
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782891"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694288"
 ---
 # <a name="input-providers"></a>Provider di input
 

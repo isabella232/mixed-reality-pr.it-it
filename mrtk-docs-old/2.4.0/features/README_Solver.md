@@ -4,14 +4,14 @@ description: Panoramica dei risolutori in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, risolutori,
-ms.openlocfilehash: 3410207c6c83d82e0edbd3def127000e65680b5c
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: d328e91be7cdfdee53e477eb8fa11c9043699e2c
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782839"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695698"
 ---
 # <a name="solvers"></a>Risolutori
 

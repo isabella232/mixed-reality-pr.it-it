@@ -4,14 +4,13 @@ description: Panoramica del sistema di input in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: ec8ebced1f7faea04e88068612cd642e15fb165f
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 2cacd681c699b1af9c5acd612e3f906e599351ce
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782051"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694278"
 ---
 # <a name="input-overview"></a>Cenni preliminari sull'input
 

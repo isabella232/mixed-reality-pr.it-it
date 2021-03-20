@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, emulatore
 ms.openlocfilehash: 866a6f169627b26c4c935e6799c17ece76cd1fd2
-ms.sourcegitcommit: 55dab2b9f2d9b98fdb1cb9f26d3d075bb8f95dcd
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "102526028"
 ---
 # <a name="using-the-hololens-emulator"></a>Uso dell'emulatore HoloLens

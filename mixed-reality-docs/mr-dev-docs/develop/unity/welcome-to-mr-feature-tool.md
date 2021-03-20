@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: aggiornamento, strumenti, attività iniziali, nozioni di base, unity, visual studio, toolkit, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, installazione, Windows, HoloLens, emulatore, unreal, openxr
 ms.openlocfilehash: 0244c3de51a44ed6d37137a3206b61ca4911f622
-ms.sourcegitcommit: ece91dbba40981720fe7e1a7c3b93e8b75ff71ba
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "102547240"
 ---
 # <a name="welcome-to-the-mixed-reality-feature-tool"></a>Strumento per la funzionalità di realtà mista
@@ -63,7 +63,7 @@ In questa versione sono state aggiunte le funzionalità seguenti:
 
 Avviare lo strumento della funzionalità di realtà mista dal file eseguibile, che visualizza la pagina iniziale al primo avvio:
 
-![Guida introduttiva](images/FeatureToolStart.png)
+![Introduzione](images/FeatureToolStart.png)
 
 Dalla pagina iniziale è possibile:
 

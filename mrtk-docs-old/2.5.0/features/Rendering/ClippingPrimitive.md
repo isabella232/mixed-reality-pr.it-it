@@ -4,14 +4,13 @@ description: Documentazione sulle primitive di ritaglio con esempi in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, primitiva di ritaglio,
-ms.openlocfilehash: a251942ac39e478b780a387096510b9e9b172de5
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 859002c1b8e63df66ebf3a05df940b274008df22
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783096"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694748"
 ---
 # <a name="clipping-primitive"></a>Primitiva di ritaglio
 

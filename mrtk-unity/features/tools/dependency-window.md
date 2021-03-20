@@ -4,14 +4,13 @@ description: Documentazione sull'utilizzo della finestra di dipendenza in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 59a06f5bf639be31f78302d432325ead23939600
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: c53989151123f61988160b74fa876b907264bdd4
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782223"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104696018"
 ---
 # <a name="dependency-window"></a>Finestra dipendenze
 

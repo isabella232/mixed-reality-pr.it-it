@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Realtà mista di Windows, Tracking manuale, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, sviluppo di giochi, cuffie per realtà mista, cuffia a realtà mista di Windows, headset di realtà virtuale
-ms.openlocfilehash: ea4ba3ad5905e899eae474e4d571585fef77c0c2
-ms.sourcegitcommit: fd19bf57607c7ed94a849d4cf606bba2bb93e668
+ms.openlocfilehash: 415a0773586ab232e925fd0f18a3a8e6f8217e88
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102117655"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695803"
 ---
 # <a name="hand-tracking-in-unreal"></a>Tracciamento mano in Unreal
 
@@ -21,7 +21,8 @@ Il sistema di rilevamento manuale usa le palme e le dita di una persona come inp
 
 Hand Pose consente di tenere traccia e di usare le mani e le dita degli utenti come input, a cui è possibile accedere sia nei progetti sia in C++. L'API Unreal invia i dati come sistema di coordinate, con segni di selezione sincronizzati con il motore irreale.
 
-![Scheletro mano](images/hand-tracking-skeleton-update.png)
+![Icona a mano con la struttura della ](images/hand-tracking-img-02.png)
+ ![ mano sovrapposta](images/hand-tracking-skeleton-update.png)
 
 [!INCLUDE[](includes/tabs-tracking-hand-pose.md)]
 

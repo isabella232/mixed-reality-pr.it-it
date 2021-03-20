@@ -4,14 +4,13 @@ description: configurazione dell'input vocale in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, sintesi vocale,
-ms.openlocfilehash: da3f79ace9524452e12e263dc98d35c3fba5ff99
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: d86b81a707c7ca47d9c98991a56e63531add4847
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782979"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695338"
 ---
 # <a name="speech"></a>Voce
 

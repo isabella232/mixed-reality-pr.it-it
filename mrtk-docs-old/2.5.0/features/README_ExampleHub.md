@@ -4,14 +4,13 @@ description: Panoramica su scene di esempio in MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 3a74e30fdfe2261df487472b145338ec1fc57adc
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: ed3d14022ab3594714178698f8ef27f49381583f
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781659"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695138"
 ---
 # <a name="mrtk-examples-hub"></a>MRTK Examples Hub
 

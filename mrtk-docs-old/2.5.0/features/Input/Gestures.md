@@ -4,14 +4,13 @@ description: Docummentation sui movimenti e sui relativi eventi in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, movimenti,
-ms.openlocfilehash: 2c83727684faf981ecd3b18ed5554f9d701360fb
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: ddb43e58c017766cb73845384f2819e0a154dbea
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783232"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695548"
 ---
 # <a name="gestures"></a>Movimenti
 

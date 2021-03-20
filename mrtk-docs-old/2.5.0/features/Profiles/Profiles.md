@@ -4,14 +4,13 @@ description: Profili di documentazione in MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, profili,
-ms.openlocfilehash: badb1e1b5d20633922a8ff04b08ac98953cea559
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: fb9f6b2e0e02741ad77bae3b1d9ba37334cf630c
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783342"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695288"
 ---
 # <a name="profiles"></a>Profiles
 

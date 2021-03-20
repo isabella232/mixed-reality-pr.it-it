@@ -1,19 +1,19 @@
 ---
-title: 'MR and Azure 308: Notifiche tra più dispositivi'
+title: HoloLens (1a generazione) e Azure 308-notifiche tra dispositivi
 description: Completare questo corso per apprendere come implementare Hub di notifica di Azure, funzioni di Azure e archiviazione di Azure e tabelle in un'applicazione di realtà mista.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realtà mista, Accademia, Unity, esercitazione, API, notifiche, funzioni, tabelle, hub di notifica, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 5bf6720fe7be178bf4fb15ae2b87f4ff502afe9b
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8fef7fe2da76e228264037ca51daa57662fbc554
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581273"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730588"
 ---
-# <a name="mr-and-azure-308-cross-device-notifications"></a>MR e Azure 308: Notifiche tra più dispositivi
+# <a name="hololens-1st-gen-and-azure-308-cross-device-notifications"></a>HoloLens (1a generazione) e Azure 308: notifiche tra dispositivi
 
 <br>
 
@@ -124,22 +124,22 @@ Con le credenziali delle app recuperate, sarà necessario accedere al portale di
     > [!NOTE] 
     > Se non si dispone già di un account Azure, sarà necessario crearne uno. Se si segue questa esercitazione in una classe o in una situazione di laboratorio, rivolgersi all'insegnante o a uno dei Proctor per ottenere assistenza nella configurazione del nuovo account.
 
-2.  Una volta effettuato l'accesso, fare clic su **nuovo** nell'angolo in alto a sinistra e cercare **Hub di notifica** e quindi fare clic su **_invio_* _.
+2.  Una volta effettuato l'accesso, fare clic su **nuovo** nell'angolo in alto a sinistra e cercare **Hub di notifica** e quindi premere **_invio_**.
 
     ![ricerca di hub di notifica](images/AzureLabs-Lab8-06.png)
 
     > [!NOTE] 
-    > La parola _*_New_*_ potrebbe essere stata sostituita con _ * creare una risorsa * *, nei portali più recenti.
+    > La parola ***New** _ potrebbe essere stata sostituita con _ * creare una risorsa * *, nei portali più recenti.
 
 3.  La nuova pagina fornirà una descrizione del servizio *Hub di notifica* . Nella parte inferiore sinistra di questo prompt selezionare il pulsante **Crea** per creare un'associazione con il servizio.
 
     ![creare un'istanza di hub di notifica](images/AzureLabs-Lab8-07.png)
 
-4.  Dopo aver fatto clic su **_Crea_* _:
+4.  Una volta fatto clic su ***Crea***:
 
     1.  Inserire il nome desiderato per l'istanza del servizio.
 
-    2.  Fornire uno *spazio dei nomi* _ * che sarà possibile associare a questa app.
+    2.  Fornire uno **spazio dei nomi** che sarà possibile associare a questa app.
 
     3.  Selezionare una **località.**
 
@@ -151,7 +151,7 @@ Con le credenziali delle app recuperate, sarà necessario accedere al portale di
 
     6.  Sarà inoltre necessario confermare di aver compreso i termini e le condizioni applicati a questo servizio.
 
-    7. Selezionare **Create** (Crea).
+    7. Selezionare **Crea**.
 
         ![dettagli del servizio di riempimento](images/AzureLabs-Lab8-08.png)
 
@@ -182,7 +182,7 @@ Dopo aver creato l'istanza del servizio Hub di notifica, tornare al portale di A
 2.  Una volta effettuato l'accesso, fare clic su **nuovo** nell'angolo in alto a sinistra e cercare **account di archiviazione** e premere **invio**.
 
     > [!NOTE] 
-    > La parola **_New_*_ potrebbe essere stata sostituita con _* crea una risorsa**, nei portali più recenti.
+    > La parola ***New** _ potrebbe essere stata sostituita con _ * creare una risorsa * *, nei portali più recenti.
 
 3.  Selezionare **account di archiviazione: BLOB, file, tabella e coda** dall'elenco.
 
@@ -734,9 +734,9 @@ Per importare l'SDK nel progetto, assicurarsi di aver scaricato la versione più
 
     ![Importa nel pacchetto](images/AzureLabs-Lab8-61.png)
 
-3.  Fare clic sul pulsante **_Importa_* _ per aggiungere gli elementi al progetto.
+3.  Fare clic sul pulsante ***Importa*** per aggiungere gli elementi al progetto.
 
-4.  Passare alla cartella _ *storage** in **plug** -in nella visualizzazione del progetto e selezionare *solo* i plug-in seguenti:
+4.  Passare alla cartella **archiviazione** in **plug** -in nella visualizzazione del progetto e selezionare *solo* i plug-in seguenti:
 
     -   Microsoft.Data.Edm
     -   Microsoft.Data.OData
@@ -759,7 +759,7 @@ Per importare l'SDK nel progetto, assicurarsi di aver scaricato la versione più
 
         ![impostazione non elabora per le dll](images/AzureLabs-Lab8-64.png)
 
-7.  Selezionare la casella **non elaborare** in **Impostazioni piattaforma** e fare clic su **_applica_* _.
+7.  Selezionare la casella **non elaborare** in **Impostazioni piattaforma** e fare clic su **_applica_**.
 
     ![non applicare alcuna elaborazione](images/AzureLabs-Lab8-65.png)
 
@@ -770,7 +770,7 @@ Per importare l'SDK nel progetto, assicurarsi di aver scaricato la versione più
 
 È ora necessario creare gli script contenenti il codice per eseguire questa applicazione.
 
-Il primo script che è necessario creare è _ * TableToScene * *, responsabile di:
+Il primo script che è necessario creare è **TableToScene**, responsabile di:
 
 -   Lettura di entità all'interno della tabella di Azure.
 -   Utilizzando i dati della tabella, determinare gli oggetti da generare e in quale posizione.
@@ -1216,8 +1216,8 @@ Di seguito è riportata una configurazione tipica per lo sviluppo con la realtà
     1.  Nella scheda **altre impostazioni** :
 
         1.  La **versione di runtime di scripting** deve essere **sperimentale** (equivalente a .NET 4,6)
-        2.  Il **back-end di scripting** deve essere **_.NET_* _
-        3.  _ *Livello di compatibilità API** deve essere **.NET 4,6**
+        2.  Il **back-end di scripting** deve essere **_.NET_**
+        3.  Il **livello di compatibilità API** deve essere **.NET 4,6**
 
             ![compatibilità API](images/AzureLabs-Lab8-87.png)
 
@@ -1487,9 +1487,9 @@ Questo capitolo è identico al processo di compilazione per il progetto preceden
 
 1.  Passare a **impostazioni di compilazione** (impostazioni di   >  **compilazione** file).
 
-2.  Dal menu **impostazioni di compilazione** verificare che **Unity Projects C# Projects** _ sia selezionato (che consente di modificare gli script in questo progetto, dopo la compilazione).
+2.  Dal menu **impostazioni di compilazione** verificare che **Unity progetti C#*** sia selezionato (che consente di modificare gli script in questo progetto, dopo la compilazione).
 
-3.  Al termine, fare clic su _ * compila * *.
+3.  Al termine, fare clic su **Compila**.
 
     ![Compila progetto](images/AzureLabs-Lab8-99.png)
 
@@ -1523,7 +1523,7 @@ Per importare il pacchetto NuGet:
 
     ![Apri Gestione NuGet](images/AzureLabs-Lab8-102.png)
 
-3.  Selezionare la ***scheda Sfoglia _ e cercare _* WindowsAzure. Messaging. Managed**.
+3.  Selezionare la scheda ***Browse** _ e cercare _ * WindowsAzure. Messaging. managed * *.
 
     ![trovare il pacchetto di messaggistica di Windows Azure](images/AzureLabs-Lab8-103.png)
 

@@ -4,14 +4,13 @@ description: Docummentation sui tipi di sguardo in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, sguardo,
-ms.openlocfilehash: 8f3f7317cd0bc2bb120328453f1fedf8e27025ca
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 02f13c54aca6cf3d67bf8e3dce87dada96f42623
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781962"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695538"
 ---
 # <a name="gaze"></a>Sguardo fisso
 

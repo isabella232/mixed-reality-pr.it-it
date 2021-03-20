@@ -4,14 +4,13 @@ description: Panoramica su Gestione vincoli in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: a52566afbc868cc2e76fdb219a90ae3b15666445
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 2baba2ff50331918b4b795fc76c2843859aa8341
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782959"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104693768"
 ---
 # <a name="constraint-manager"></a>Gestione vincoli
 

@@ -4,14 +4,13 @@ description: Introduzione a MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: b72c6a86383875948accb494ff7c238966df1273
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 93d559b5ee36ad95379371ca9e1c290d2677edf0
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781881"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694638"
 ---
 # <a name="how-to-download-the-mixed-reality-toolkit"></a>Come scaricare il Toolkit di realtà mista
 

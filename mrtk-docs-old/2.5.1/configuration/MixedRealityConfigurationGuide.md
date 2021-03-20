@@ -4,14 +4,13 @@ description: Documentazione per la configurazione di MRTK in Unity.
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 7b5dfd71869ba0470e9c14b1d0db4fc9d94840ef
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: dc89c5b09a05fc41e801a2620a8282fb2c61cbb9
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782010"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694078"
 ---
 # <a name="mixed-reality-toolkit-profile-configuration-guide"></a>Guida alla configurazione del profilo del Toolkit di realtà mista
 

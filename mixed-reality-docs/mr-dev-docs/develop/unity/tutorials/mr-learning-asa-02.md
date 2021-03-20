@@ -8,10 +8,10 @@ ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure
 ms.localizationpriority: high
 ms.openlocfilehash: ab216fc89c7161e4b3e7ee6fd9bcf9022b83c7fa
-ms.sourcegitcommit: e51e18e443d73a74a9c0b86b3ca5748652cd1b24
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "103574957"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Introduzione ad Ancoraggi nello spazio di Azure

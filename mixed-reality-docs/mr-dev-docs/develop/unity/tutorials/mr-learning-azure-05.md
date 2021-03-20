@@ -8,10 +8,10 @@ ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, hololens 2, servizio azure bot, luis, linguaggio naturale, bot conversazione, servizi cloud di azure, visione personalizzata di azure, Windows 10
 ms.localizationpriority: high
 ms.openlocfilehash: 66737f798ef87e756cf1935b12a368bbd22a3423
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99590583"
 ---
 # <a name="5-integrating-azure-bot-service"></a>5. Integrazione del servizio Azure Bot

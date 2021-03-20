@@ -8,10 +8,10 @@ ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, sviluppo di azure, ancoraggi nello spazio, realtà mista, sviluppo, funzionalità, nuovo progetto, emulatore, documentazione, guide, ologrammi, sviluppo di giochi, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
 ms.openlocfilehash: 01d7217f038519d68eabfbf4f273c7ff8cbe7193
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "100496195"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Ancoraggi nello spazio di Azure in Unreal

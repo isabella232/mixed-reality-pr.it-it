@@ -4,14 +4,13 @@ description: Documentazione per la configurazione del movimento intercalare
 author: CDiaz-ms
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, Leap Motion,
-ms.openlocfilehash: b588052121176ec3e981ccd64bea27fb8f081a8b
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 8c9bae12cfb3285ab807e584f13834aca530c3cb
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782065"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694608"
 ---
 # <a name="how-to-configure-leap-motion-by-ultraleap-hand-tracking-in-mrtk"></a>Come configurare il rilevamento manuale a salto (by Ultraleap) in MRTK
 

@@ -4,14 +4,13 @@ description: Documentazione sul servizio di simulazione di input in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 8b11fbbaba30b6ba1126bc1e09a1ea5a277b1a1c
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: a2ff5e30db2d4c8e7d36dcf7faa3297b50f38fdc
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781529"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104693948"
 ---
 # <a name="input-simulation-service"></a>Servizio di simulazione di input
 

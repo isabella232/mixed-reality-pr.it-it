@@ -4,14 +4,13 @@ description: Documento relativo alle funzionalità sperimentali in MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: fdd426c0f994a72cd3914f37332600b4133eb0fb
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: c2810f6f1f90b32ee7621f52e3911da23a86a983
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783003"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104693748"
 ---
 # <a name="experimental-features"></a>Funzionalità sperimentali
 

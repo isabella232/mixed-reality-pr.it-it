@@ -4,14 +4,13 @@ description: descrive la comprensione della scena in MRTK
 author: MaxWang-MS
 ms.author: wangmax
 ms.date: 03/02/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, comprensione della scena
-ms.openlocfilehash: 622cdfebfe3f1356d0e8ced520cc355cc324d617
-ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
+ms.openlocfilehash: 991c8152baa138d241b0454d08de267eeaefcb05
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102236932"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104696158"
 ---
 # <a name="scene-understanding"></a>Comprensione della scena
 
@@ -70,7 +69,7 @@ Queste opzioni consentiranno di configurare il `WindowsSceneUnderstandingObserve
 
 ### <a name="example-script"></a>Script di esempio
 
-Lo script di esempio _DemoSceneUnderstandingController.cs_ illustra i principali concetti relativi all'uso del servizio di informazioni sulla scena.
+Lo script di esempio _DemoSceneUnderstandingController. cs_ illustra i principali concetti relativi all'uso del servizio di informazioni sulla scena.
 
 * Sottoscrizione degli eventi di comprensione della scena
 * Gestione degli eventi di comprensione della scena

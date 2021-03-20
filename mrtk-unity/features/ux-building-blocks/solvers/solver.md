@@ -7,10 +7,10 @@ ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, risolutori,
 ms.openlocfilehash: a9ca6d025fa4261bb9b5398cb4c7b82a5f6ff8f0
-ms.sourcegitcommit: a2b1c75f25adcd238b6a93b103a13aa898a62c76
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "102770349"
 ---
 # <a name="solvers"></a>Risolutori
