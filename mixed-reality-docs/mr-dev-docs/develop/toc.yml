@@ -118,53 +118,53 @@
           items:
             - name: Funzionalità della realtà mista
               items:
-                - name: 'MR Basics 100: Introduzione a Unity'
+                - name: Nozioni di base di HoloLens (1st Gen) 100-Introduzione a Unity
                   href: unity/tutorials/holograms-100.md
-                - name: 'MR Basics 101: Progetto completo con dispositivo'
+                - name: Nozioni di base su HoloLens (1a Gen) 101-progetto completo con dispositivo
                   href: unity/tutorials/holograms-101.md
-                - name: 'MR Basics 101E: Progetto completo con emulatore'
+                - name: Nozioni di base su HoloLens (1st Gen) 101E-completa progetto con emulatore
                   href: unity/tutorials/holograms-101e.md
-                - name: 'MR Input 210: Sguardo fisso'
+                - name: Input di HoloLens (1st Gen) 210-sguardi
                   href: unity/tutorials/holograms-210.md
-                - name: 'MR Input 211: Gesto'
+                - name: HoloLens (1a Gen) input 211-gesture
                   href: unity/tutorials/holograms-211.md
-                - name: 'MR Input 212: Voce'
+                - name: Input di HoloLens (1a generazione) 212-Voice
                   href: unity/tutorials/holograms-212.md
-                - name: 'MR Spatial 220: Audio spaziale'
+                - name: HoloLens (1a Gen) Spatial 220-audio spaziale
                   href: unity/tutorials/holograms-220.md
-                - name: 'MR Spatial 230: Mapping spaziale'
+                - name: HoloLens (1a Gen) Spatial 230-mapping spaziale
                   href: unity/tutorials/holograms-230.md
-                - name: 'MR Sharing 240: Più dispositivi HoloLens'
+                - name: HoloLens (1a generazione) che condivide 240-più dispositivi HoloLens
                   href: unity/tutorials/holograms-240.md
             - name: Realtà mista e servizi di Azure
               items:
-                - name: 'MR and Azure 301: Traduzione'
+                - name: HoloLens (1a generazione) e Azure 301-traduzione in lingua
                   href: unity/tutorials/mr-azure-301.md
-                - name: 'MR and Azure 302: Visione artificiale'
+                - name: HoloLens (1a generazione) e Azure 302-visione artificiale
                   href: unity/tutorials/mr-azure-302.md
-                - name: 'MR and Azure 302b: Visione personalizzata'
+                - name: HoloLens (1a generazione) e Azure 302B-visione personalizzata
                   href: unity/tutorials/mr-azure-302b.md
-                - name: 'MR and Azure 303: Comprensione del linguaggio naturale'
+                - name: HoloLens (1a generazione) e Azure 303-comprensione del linguaggio naturale
                   href: unity/tutorials/mr-azure-303.md
-                - name: 'MR and Azure 304: Riconoscimento volto'
+                - name: HoloLens (1st Gen) e Azure 304-Face Recognition
                   href: unity/tutorials/mr-azure-304.md
-                - name: 'MR and Azure 305: Funzioni e Archiviazione'
+                - name: HoloLens (1a generazione) e Azure 305-funzioni e archiviazione
                   href: unity/tutorials/mr-azure-305.md
-                - name: 'MR and Azure 306: Streaming di video'
+                - name: HoloLens (1a generazione) e Azure 306-video di streaming
                   href: unity/tutorials/mr-azure-306.md
-                - name: 'MR and Azure 307: Machine Learning'
+                - name: HoloLens (1a generazione) e Azure 307-formazione maching
                   href: unity/tutorials/mr-azure-307.md
-                - name: 'MR and Azure 308: Notifiche tra più dispositivi'
+                - name: HoloLens (1a generazione) e Azure 308-notifiche tra dispositivi
                   href: unity/tutorials/mr-azure-308.md
-                - name: 'MR and Azure 309: Application Insights'
+                - name: HoloLens (1a generazione) e Azure 309-Applicaiton Insights
                   href: unity/tutorials/mr-azure-309.md
-                - name: 'MR and Azure 310: Rilevamento oggetti'
+                - name: HoloLens (1a generazione) e Azure 310-rilevamento oggetti
                   href: unity/tutorials/mr-azure-310.md
-                - name: 'MR and Azure 311: Microsoft Graph'
+                - name: HoloLens (1a generazione) e Azure 311-Microsoft Graph
                   href: unity/tutorials/mr-azure-311.md
-                - name: 'MR and Azure 312: Integrazione di bot'
+                - name: HoloLens (1st Gen) e Azure 312-bot Integration
                   href: unity/tutorials/mr-azure-312.md
-                - name: 'MR and Azure 313: Servizio hub IoT'
+                - name: HoloLens (1a generazione) e servizio Hub Azure 313-Internet
                   href: unity/tutorials/mr-azure-301.md
     - name: Configurazione del progetto
       items:

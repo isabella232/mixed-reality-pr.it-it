@@ -4,22 +4,22 @@ description: Panoramica della lavagna delle chiavi di sistema in MRTK
 author: maxwang-ms
 ms.author: wangmax
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, tastiera di sistema,
-ms.openlocfilehash: 5c823829b14edf392ee28f77f8bba4a451ee5d69
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 31bb7eee40420f101bf029c3677c9003c943e2aa
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782838"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695678"
 ---
-# <a name="system-keyboard"></a><span data-ttu-id="e220b-104">Tastiera di sistema</span><span class="sxs-lookup"><span data-stu-id="e220b-104">System keyboard</span></span>
+# <a name="system-keyboard"></a><span data-ttu-id="70da3-104">Tastiera di sistema</span><span class="sxs-lookup"><span data-stu-id="70da3-104">System keyboard</span></span>
 
 ![Tastiera di sistema](Images/SystemKeyboard/MRTK_SystemKeyboard_Main.png)
 
-<span data-ttu-id="e220b-106">Un'applicazione Unity può richiamare la tastiera di sistema in qualsiasi momento.</span><span class="sxs-lookup"><span data-stu-id="e220b-106">A Unity application can invoke the system keyboard at any time.</span></span> <span data-ttu-id="e220b-107">Si noti che la tastiera di sistema si comporterà in base alle funzionalità della piattaforma di destinazione, ad esempio la tastiera in HoloLens 2 supporterà le interazioni con la mano diretta, mentre la tastiera su HoloLens (1a generazione) supporterà GGV (sguardi, movimenti e voce)<sup>[1](https://docs.microsoft.com/windows/mixed-reality/gaze)</sup>.</span><span class="sxs-lookup"><span data-stu-id="e220b-107">Note that the system keyboard will behave according to the target platform's capabilities, for example the keyboard on HoloLens 2 would support direct hand interactions, while the keyboard on HoloLens (1st gen) would support GGV (Gaze, Gesture, and Voice)<sup>[1](https://docs.microsoft.com/windows/mixed-reality/gaze)</sup>.</span></span> <span data-ttu-id="e220b-108">Inoltre, la tastiera di sistema non viene visualizzata quando si esegue la [comunicazione remota di Unity](Tools/HolographicRemoting.md) dall'editor a un HoloLens.</span><span class="sxs-lookup"><span data-stu-id="e220b-108">Additionally, the system keyboard will not show up when performing [Unity Remoting](Tools/HolographicRemoting.md) from the editor to a HoloLens.</span></span>
+<span data-ttu-id="70da3-106">Un'applicazione Unity può richiamare la tastiera di sistema in qualsiasi momento.</span><span class="sxs-lookup"><span data-stu-id="70da3-106">A Unity application can invoke the system keyboard at any time.</span></span> <span data-ttu-id="70da3-107">Si noti che la tastiera di sistema si comporterà in base alle funzionalità della piattaforma di destinazione, ad esempio la tastiera in HoloLens 2 supporterà le interazioni con la mano diretta, mentre la tastiera su HoloLens (1a generazione) supporterà GGV (sguardi, movimenti e voce)<sup>[1](https://docs.microsoft.com/windows/mixed-reality/gaze)</sup>.</span><span class="sxs-lookup"><span data-stu-id="70da3-107">Note that the system keyboard will behave according to the target platform's capabilities, for example the keyboard on HoloLens 2 would support direct hand interactions, while the keyboard on HoloLens (1st gen) would support GGV (Gaze, Gesture, and Voice)<sup>[1](https://docs.microsoft.com/windows/mixed-reality/gaze)</sup>.</span></span> <span data-ttu-id="70da3-108">Inoltre, la tastiera di sistema non viene visualizzata quando si esegue la [comunicazione remota di Unity](Tools/HolographicRemoting.md) dall'editor a un HoloLens.</span><span class="sxs-lookup"><span data-stu-id="70da3-108">Additionally, the system keyboard will not show up when performing [Unity Remoting](Tools/HolographicRemoting.md) from the editor to a HoloLens.</span></span>
 
-## <a name="how-to-invoke-the-system-keyboard"></a><span data-ttu-id="e220b-109">Come richiamare la tastiera di sistema</span><span class="sxs-lookup"><span data-stu-id="e220b-109">How to invoke the system keyboard</span></span>
+## <a name="how-to-invoke-the-system-keyboard"></a><span data-ttu-id="70da3-109">Come richiamare la tastiera di sistema</span><span class="sxs-lookup"><span data-stu-id="70da3-109">How to invoke the system keyboard</span></span>
 
 ```c#
 public TouchScreenKeyboard keyboard;
@@ -32,7 +32,7 @@ public void OpenSystemKeyboard()
 }
 ```
 
-## <a name="how-to-read-the-input"></a><span data-ttu-id="e220b-110">Come leggere l'input</span><span class="sxs-lookup"><span data-stu-id="e220b-110">How to read the input</span></span>
+## <a name="how-to-read-the-input"></a><span data-ttu-id="70da3-110">Come leggere l'input</span><span class="sxs-lookup"><span data-stu-id="70da3-110">How to read the input</span></span>
 
 ```c#
 public TouchScreenKeyboard keyboard;
@@ -49,10 +49,10 @@ private void Update()
 }
 ```
 
-## <a name="system-keyboard-example"></a><span data-ttu-id="e220b-111">Esempio di tastiera di sistema</span><span class="sxs-lookup"><span data-stu-id="e220b-111">System keyboard example</span></span>
+## <a name="system-keyboard-example"></a><span data-ttu-id="70da3-111">Esempio di tastiera di sistema</span><span class="sxs-lookup"><span data-stu-id="70da3-111">System keyboard example</span></span>
 
-<span data-ttu-id="e220b-112">È possibile vedere un semplice esempio di come visualizzare la tastiera di sistema in `MixedRealityKeyboard.cs` (assets/MRTK/SDK/Experimental/Features/UX/MixedRealityKeyboard. cs)</span><span class="sxs-lookup"><span data-stu-id="e220b-112">You can see a simple example of how to bring up system keyboard in `MixedRealityKeyboard.cs` (Assets/MRTK/SDK/Experimental/Features/UX/MixedRealityKeyboard.cs)</span></span>
+<span data-ttu-id="70da3-112">È possibile vedere un semplice esempio di come visualizzare la tastiera di sistema in `MixedRealityKeyboard.cs` (assets/MRTK/SDK/Experimental/Features/UX/MixedRealityKeyboard. cs)</span><span class="sxs-lookup"><span data-stu-id="70da3-112">You can see a simple example of how to bring up system keyboard in `MixedRealityKeyboard.cs` (Assets/MRTK/SDK/Experimental/Features/UX/MixedRealityKeyboard.cs)</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="e220b-113">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="e220b-113">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="70da3-113">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="70da3-113">See Also</span></span>
 
-- [<span data-ttu-id="e220b-114">Classi helper della tastiera a realtà mista</span><span class="sxs-lookup"><span data-stu-id="e220b-114">Mixed Reality Keyboard Helper Classes</span></span>](Experimental/MixedRealityKeyboard/README_MixedRealityKeyboard.md)
+- [<span data-ttu-id="70da3-114">Classi helper della tastiera a realtà mista</span><span class="sxs-lookup"><span data-stu-id="70da3-114">Mixed Reality Keyboard Helper Classes</span></span>](Experimental/MixedRealityKeyboard/README_MixedRealityKeyboard.md)
