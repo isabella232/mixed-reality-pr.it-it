@@ -4,14 +4,13 @@ description: principi e convenzioni di codifica da seguire per contribuire a MRT
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, C#,
-ms.openlocfilehash: 12fbf24f5cc75abb6fd9dd7e4c5564f053b06f6d
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: b849afb61afd83e637227ad90f959db6335d992b
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783719"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104683594"
 ---
 # <a name="coding-guidelines"></a>Linee guida sulla codifica
 
@@ -365,7 +364,7 @@ public class MyClass
 
 #### <a name="do"></a>Cosa fare
 
-MyStruct.cs
+Struct. cs
 
 ```c#
 // Public Struct / Enum definitions for use in your class.  Try to make them generic for reuse.
@@ -376,7 +375,7 @@ public struct MyStruct
 }
 ```
 
-MyEnumType.cs
+MyEnumType. cs
 
 ```c#
 public enum MuEnumType
@@ -386,7 +385,7 @@ public enum MuEnumType
 }
 ```
 
-MyClass.cs
+MyClass. cs
 
 ```c#
 public class MyClass
@@ -475,7 +474,7 @@ public enum SDKType
 
 Se è possibile che un'enumerazione richieda più Stati come valore, ad esempio manualità = Left & right. L'enumerazione deve quindi essere decorata correttamente con flag per consentirne l'uso corretto
 
-Il file Handedness.cs dispone di un'implementazione concreta per
+Il file Manuality. cs dispone di un'implementazione concreta per
 
 ### <a name="dont"></a>Cosa non fare
 

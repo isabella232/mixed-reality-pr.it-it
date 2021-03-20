@@ -4,14 +4,13 @@ description: Descrizione servizi di estensione della fisica della mano.
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 86c94d5f036f4f0919f53049a90d70b3ec8018e0
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: f958f964fcfd4880770dad3952ce69621c7dd931
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781965"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104685874"
 ---
 # <a name="hand-physics-extension-services"></a>Servizi di estensione della fisica della mano
 

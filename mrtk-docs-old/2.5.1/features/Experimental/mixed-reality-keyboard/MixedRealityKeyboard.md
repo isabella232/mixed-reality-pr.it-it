@@ -4,14 +4,13 @@ description: Descrizione su come usare la tastiera a realtà mista
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 4f4a70008b2e7d11330a8238697b1d044d077b48
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: f7b6ba131786c5c06a13a3819deef2eaac87f8b1
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782912"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104682604"
 ---
 # <a name="mixed-reality-and-hololens-keyboard-helper-classes"></a>Realtà mista e classi helper della tastiera HoloLens
 

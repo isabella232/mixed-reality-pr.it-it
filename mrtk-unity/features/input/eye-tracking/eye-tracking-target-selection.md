@@ -4,14 +4,13 @@ description: Come accedere ai dati degli occhi e agli eventi specifici degli sgu
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, EyeTracking,
-ms.openlocfilehash: 4663ee4716b8e7bb4dd5844a20299f84d23943fe
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: f2a775bf0d76ef9c2a20b2e3d6802ee4d284066c
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782249"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684714"
 ---
 # <a name="eye-supported-target-selection"></a>Selezione della destinazione supportata dagli occhi
 
@@ -44,7 +43,7 @@ Gli sviluppatori desiderano fornire una soluzione flessibile che consenta all'ut
 - Come destinazione del pulsante usando un raggio di mano ed eseguendo un pizzicotto in questo caso, la soluzione più flessibile consiste nell'usare il gestore dello stato attivo primario, in quanto invierà una notifica ogni volta che il puntatore di stato attivo primario con priorità corrente attiva un evento. Si noti che se sono abilitati i raggi di mano, il puntatore a capo o a occhio è disabilitato non appena vengono visualizzate le lancette.
 
 > [!IMPORTANT]
-> Si noti che se sono abilitati i raggi di mano, il puntatore a capo o a occhio è disabilitato non appena vengono visualizzate le lancette. Se si vuole supportare un'interazione [ _"look and Pinch"_ , è necessario disabilitare il raggio di mano](eye-tracking-eyes-and-hands.md#how-to-disable-the-hand-ray). Nelle scene di esempio di analisi degli occhi è stato disabilitato il raggio della mano per consentire la presentazione di interazioni più ricche con gli occhi e i movimenti di mano. vedere ad esempio [posizionamento con supporto oculare](eye-tracking-positioning.md).
+> Si noti che se sono abilitati i raggi di mano, il puntatore a capo o a occhio è disabilitato non appena vengono visualizzate le lancette. Se si vuole supportare un'interazione [ _"look and Pinch"_ , è necessario disabilitare il raggio di mano](eye-tracking-eyes-and-hands.md#how-to-disable-the-hand-ray). Nelle scene di esempio di analisi degli occhi è stato disabilitato il raggio della mano per consentire la presentazione di interazioni più ricche con gli occhi e i movimenti di mano. vedere ad esempio [posizionamento con supporto oculare](eye-tracking-eyes-and-hands.md).
 
 [**2. utilizzare lo stato attivo per gli occhi e i raggi della mano contemporaneamente:**](#2-independent-eye-gaze-specific-eyetrackingtarget)
 
@@ -62,7 +61,7 @@ Se la verifica degli occhi è configurata correttamente (vedere il [programma di
 
 Per rilevare quando un ologramma è concentrato, usare l'interfaccia _' IMixedRealityFocusHandler '_ che fornisce due membri di interfaccia: _OnFocusEnter_ e _OnFocusExit_.
 
-Ecco un semplice esempio di [ColorTap.cs](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ColorTap) per modificare il colore di un ologramma quando si esamina.
+Ecco un semplice esempio di [ColorTap. cs](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ColorTap) per modificare il colore di un ologramma quando si esamina.
 
 ```c#
 public class ColorTap : MonoBehaviour, IMixedRealityFocusHandler
@@ -222,7 +221,7 @@ In caso contrario, questa operazione può essere estremamente travolgente.
 
 Analogamente a #1 di esempio, è possibile creare facilmente un feedback del passaggio del mouse per le gemme olografiche in una `EyeTrackingDemo-02-TargetSelection` scena (assets/MRTK/examples/Demos/eyetracking/scenes) che verrà ruotata lentamente in una direzione costante e a una velocità costante (contrariamente all'esempio di rotazione precedente) quando viene esaminato. È sufficiente attivare la rotazione della gemma olografica dall'evento _WhileLookingAtTarget ()_ di _EyeTrackingTarget_. Ecco alcuni dettagli:
 
-1. Creare uno script generico che includa una funzione pubblica per ruotare il GameObject a cui è collegato. Di seguito è riportato un esempio di _RotateWithConstSpeedDir.cs_ in cui è possibile modificare la direzione e la velocità di rotazione dall'editor di Unity.
+1. Creare uno script generico che includa una funzione pubblica per ruotare il GameObject a cui è collegato. Di seguito è riportato un esempio di _RotateWithConstSpeedDir. cs_ in cui è possibile modificare la direzione e la velocità di rotazione dall'editor di Unity.
 
     ```c#
     using UnityEngine;

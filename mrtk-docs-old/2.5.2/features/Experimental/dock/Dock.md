@@ -4,14 +4,13 @@ description: Descrizione per i controlli di ancoraggio.
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 4b3717820fb5230300bdbb30748136213017a2c6
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 3c1235e972de18686800b3dfcd7c7deee194957d
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782205"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104681404"
 ---
 # <a name="dock"></a>Ancora
 

@@ -4,14 +4,13 @@ description: Descrizione su Pulse shader in MRTK.
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 3ee6c80f647569305b9dadbf81262156c3faf008
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: b9c9e9191b72efd05c7cb11396ec5b202ad051a1
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782217"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104682574"
 ---
 # <a name="pulse-shader"></a>Pulse shader
 
@@ -27,7 +26,7 @@ ms.locfileid: "101782217"
 
 Aprire la scena **PulseShaderExamples. Unity** e osservare l'effetto pulsato sulle sfere, sulla ricostruzione della superficie e sulla mesh a mano articolata.
 
-Usare lo script SurfacePulse.cs per animare l'effetto di impulso sul materiale assegnato oppure attivare "Pulse automatico" nel materiale stesso.
+Usare lo script SurfacePulse. cs per animare l'effetto di impulso sul materiale assegnato oppure attivare "Pulse automatico" nel materiale stesso.
 
 ## <a name="prerequisites"></a>Prerequisiti
 

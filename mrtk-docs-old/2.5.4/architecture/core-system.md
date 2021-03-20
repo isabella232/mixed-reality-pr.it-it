@@ -4,14 +4,13 @@ description: Sistema di input, gestione dispositivi e provider di dati in MRTK
 author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, eventi
-ms.openlocfilehash: 7469a9764a88e5a431f7c270ee17caa7b0bc2119
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: ea298911a6e93368a7ecd978b396cce7cadeef9a
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783795"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104685664"
 ---
 # <a name="core-system"></a>Sistema principale
 

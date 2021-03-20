@@ -4,14 +4,14 @@ description: Documentazione su prossimità Light con esempi in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: e50db18eb48841fd910dc68c29a17cbf951406cb
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: e55c7cdbc99d53b8227000dec18acda74962540d
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782388"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104681214"
 ---
 # <a name="proximity-light"></a>Luce vicina
 

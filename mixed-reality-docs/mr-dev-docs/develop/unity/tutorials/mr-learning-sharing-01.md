@@ -8,10 +8,10 @@ ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, funzionalità multiutente, Photon, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure
 ms.localizationpriority: high
 ms.openlocfilehash: 97778dfb002a7313e08a65a20abd7c3bd6d046a4
-ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101883316"
 ---
 # <a name="1-introduction-to-the-multi-user-capabilities-tutorials"></a>1. Introduzione alle esercitazioni sulle funzionalità multiutente

@@ -4,14 +4,13 @@ description: vengono descritti i meccanismi e le API principali per configurare 
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 4b863acb7af4c731bff1aed0a28532f804bdf4e1
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: f1fd6620934c3936aa596eda52bab300a84a1acb
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782851"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104685054"
 ---
 # <a name="configuring-mesh-observers-via-code"></a>Configurazione di osservatori mesh tramite codice
 

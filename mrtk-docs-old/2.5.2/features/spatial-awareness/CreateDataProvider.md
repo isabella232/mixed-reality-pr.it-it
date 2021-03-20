@@ -4,14 +4,13 @@ description: viene descritto come creare provider di dati personalizzati in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 6ac0367a6ac55024d7a07f23c97564e3e61e811e
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: f51746475676885102121365b8f458633c1d8a20
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782420"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104686971"
 ---
 # <a name="creating-a-spatial-awareness-system-data-provider"></a>Creazione di un provider di dati di sistema di riconoscimento spaziale
 

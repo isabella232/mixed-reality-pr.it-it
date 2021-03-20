@@ -4,14 +4,13 @@ description: Come usare la destinazione degli occhi per la navigazione in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, EyeTracking,
-ms.openlocfilehash: 9f19acb6929636be28e02d8f4290f516dfe1c7eb
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 6a44a74338a32b8d41503daac9b181402c3f2429
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781541"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104687251"
 ---
 # <a name="eye-supported-navigation-in-mrtk"></a>Navigazione con supporto oculistico in MRTK
 

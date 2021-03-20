@@ -4,14 +4,13 @@ description: documentazione relativa alla simulazione di elastici in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, ElasticsSystem,
-ms.openlocfilehash: 4538ad9df6bfd5e65ff0c91c61a24b17740da649
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: c605bc59bb47ca30042911afb895ab0ff9a507ab
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781888"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684694"
 ---
 # <a name="elastic-system-experimental"></a>Sistema elastico (sperimentale)
 

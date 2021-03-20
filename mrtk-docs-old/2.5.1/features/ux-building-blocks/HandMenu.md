@@ -4,14 +4,13 @@ description: Scena di esempio del menu a mano in MRTK
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, HandMenu,
-ms.openlocfilehash: ab241d6b6462be524dcecb85622757c5e628794c
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 92935a83e045309776d298589b9496353867f9de
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782587"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684814"
 ---
 # <a name="hand-menu"></a>Menu a mano
 

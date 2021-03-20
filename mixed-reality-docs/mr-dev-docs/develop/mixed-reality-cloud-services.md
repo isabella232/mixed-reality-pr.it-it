@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realtà mista, sviluppare, sviluppo, HoloLens, servizi cloud, Azure, rendering remoto, ancoraggi nello spazio, servizi cognitivi, cognizione, unity, machine learning, traduzione vocale, visione artificiale, Microsoft Graph
-ms.openlocfilehash: 0c123c2bca412589086799c41b183eb6f9364d0c
-ms.sourcegitcommit: ece91dbba40981720fe7e1a7c3b93e8b75ff71ba
+ms.openlocfilehash: 5668a849653e0b3319f10423eafb922cececde47
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102547230"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684479"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Panoramica dei servizi cloud di realtà mista di Azure
 
@@ -27,7 +27,7 @@ I servizi cloud di Realtà mista come **Rendering remoto di Azure** e **Ancoragg
 
 ### <a name="azure-remote-rendering"></a>Rendering remoto di Azure
 
-Il [rendering remoto di Azure](https://docs.microsoft.com/azure/remote-rendering/), o arr, è un servizio che consente di eseguire il rendering di modelli 3D estremamente complessi in tempo reale e di inviarli a un dispositivo. ARR è attualmente disponibile in anteprima pubblica e può essere aggiunto a progetti Unity o C++ nativi destinati a HoloLens 2 o PC desktop Windows.
+Il [rendering remoto di Azure](https://docs.microsoft.com/azure/remote-rendering/), o arr, è un servizio che consente di eseguire il rendering di modelli 3D estremamente complessi in tempo reale e di inviarli a un dispositivo. ARR è ora disponibile a livello generale e può essere aggiunto a progetti di Unity o C++ nativi destinati a HoloLens 2 o a PC desktop Windows.
 
 <br>
 
@@ -47,7 +47,7 @@ Come ulteriore vantaggio, ARR non limita il tipo di interfaccia utente che è po
 
 ### <a name="azure-spatial-anchors"></a>Ancoraggi nello spazio di Azure
 
-Gli [ancoraggi spaziali di Azure](https://docs.microsoft.com/azure/spatial-anchors/), è un servizio multipiattaforma che consente di creare applicazioni per realtà miste che rilevano lo spazio. Con gli ancoraggi nello spazio di Azure è possibile eseguire il mapping, mantenere in modo permanente e condividere contenuto olografico tra più dispositivi in scala reale. 
+[Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/), o ASA, è un servizio multipiattaforma che consente di compilare applicazioni di realtà miste che rilevano lo spazio. Con gli ancoraggi nello spazio di Azure è possibile eseguire il mapping, mantenere in modo permanente e condividere contenuto olografico tra più dispositivi in scala reale. AOA è ora disponibile in anteprima pubblica per provare le tue app.
 
 Gli ancoraggi spaziali di Azure sono una soluzione personalizzata per i casi d'uso comuni in realtà mista, tra cui:
 * **Way-finding**: due o più ancoraggi nello spazio possono essere collegati per creare un elenco di attività o punti di interesse con cui un utente può interagire.
@@ -65,6 +65,17 @@ Il servizio può essere sviluppato in numerosi ambienti e distribuito a una vast
 * C++/WinRT e DirectX per HoloLens
 * Xamarin per iOS
 * Xamarin per Android
+
+### <a name="azure-object-anchors"></a>Ancoraggi degli oggetti di Azure
+
+Gli [ancoraggi degli oggetti di Azure](https://docs.microsoft.com/azure/object-anchors/), o AOA, sono un servizio di realtà mista che consente di creare esperienze immersive avanzate allineando automaticamente il contenuto 3D a oggetti fisici. Ottenere informazioni contestuali sugli oggetti senza la necessità di marcatori o di allineamento manuale. Consente di salvare un lavoro sensibile, ridurre gli errori di allineamento e migliorare l'esperienza utente compilando applicazioni di realtà miste con ancoraggi di oggetti.
+
+Gli ancoraggi degli oggetti di Azure sono appositamente personalizzati per i casi d'uso comuni di realtà mista, tra cui:
+* **Formazione**: creare esperienze di formazione in realtà mista per i dipendenti, senza la necessità di inserire marcatori o di dedicare tempo a modificare manualmente l'allineamento degli ologrammi.
+* **Linee guida** per le attività: i dipendenti con una serie di attività possono essere molto semplificate quando si usa la realtà mista.
+* **Ricerca di asset**: se si dispone già di un modello 3D di un oggetto nello spazio fisico, gli ancoraggi degli oggetti di Azure consentono di individuare e tenere traccia delle istanze dell'oggetto nell'ambiente fisico.
+
+![Sovrapposizione virtuale di ancoraggi di oggetti di Azure in un motore auto aperto](images/aoa-img-01.png)
 
 ## <a name="cognitive-services"></a>Servizi cognitivi
 

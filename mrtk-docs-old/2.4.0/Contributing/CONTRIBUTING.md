@@ -4,14 +4,14 @@ description: Community che contribuisce a MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, report sui bug,
-ms.openlocfilehash: 608e2bfd31cf25241de3aa0617fde5c9dce1f424
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 45a4919cfdefc15dc32a6a0db0a4d83a7da51bcf
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782720"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684444"
 ---
 # <a name="contributing"></a>Contributo
 

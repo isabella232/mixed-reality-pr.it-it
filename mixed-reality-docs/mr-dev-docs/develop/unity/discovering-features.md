@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: aggiornamento, strumenti, attività iniziali, nozioni di base, unity, visual studio, toolkit, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, installazione, Windows, HoloLens, emulatore, unreal, openxr
 ms.openlocfilehash: 859abd0c8e538392a7ba2a1adbb4387956c50028
-ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "102230717"
 ---
 # <a name="discovering-and-acquiring-features"></a>Individuazione e acquisizione di funzionalità

@@ -4,14 +4,13 @@ description: Come usare la destinazione degli occhi come puntatore principale in
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, EyeTracking,
-ms.openlocfilehash: 75ca0289dcac86dc68043c4deceaea2b85e2a236
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: dcd6f373fc10c7510ca2b18ccc41192f39c9ccba
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783288"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104683264"
 ---
 # <a name="eyes--hand-interaction"></a>Interazione tra occhi e mano
 

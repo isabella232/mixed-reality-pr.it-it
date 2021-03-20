@@ -7,10 +7,10 @@ ms.date: 03/02/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, Toolkit per realtà mista, installazione, aggiornamento, strumenti, introduzione, nozioni di base, Unity, Visual Studio, Toolkit, auricolare in realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, installazione, Windows, HoloLens, emulatore
 ms.openlocfilehash: a22a032261f3734167b229618f40db112b43c0f7
-ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "102236962"
 ---
 # <a name="install-the-tools"></a>Installare gli strumenti

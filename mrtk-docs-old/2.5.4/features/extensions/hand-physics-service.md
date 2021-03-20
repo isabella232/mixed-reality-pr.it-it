@@ -4,14 +4,13 @@ description: documentazione per usare il servizio di estensione della fisica del
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 89b457833d797abb34bd4dedf8bfc6953d50187d
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: d897c9ab3e85aa38edfbc6f3bd3bff6b6c1b2627
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783262"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104685524"
 ---
 # <a name="hand-physics-extension-service"></a>Servizio di estensione fisica della mano
 

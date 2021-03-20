@@ -4,14 +4,13 @@ description: Documentazione per MRTKStandardShader
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, Material shader
-ms.openlocfilehash: 9daf60109bc9ac105abb0255df0ed75e6022e9d7
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 8ea7f59da043a7b3706733f7ee66fbfb780b4943
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782264"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104687131"
 ---
 # <a name="mrtk-standard-shader"></a>Shader standard MRTK
 

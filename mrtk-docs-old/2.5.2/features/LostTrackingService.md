@@ -4,14 +4,13 @@ description: Panoramica sul servizio LostTracking in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 775e7cd9cffad1deeb5fe5a10b3fb80d5a26b091
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: da56623317fa917252f5d5b3ee18e8c60d145b4c
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782869"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104687181"
 ---
 # <a name="lost-tracking-visualization"></a>Visualizzazione di rilevamento persa
 

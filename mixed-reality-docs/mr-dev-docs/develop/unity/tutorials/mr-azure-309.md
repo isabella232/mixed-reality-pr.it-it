@@ -1,19 +1,19 @@
 ---
-title: MR e Azure 309-Application Insights
+title: HoloLens (1a generazione) e Azure 309-Application Insights
 description: Completare questo corso per informazioni su come raccogliere i dati analitici sul comportamento dell'utente all'interno di un'applicazione di realtà mista usando il servizio applicazione Azure Insights.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realtà mista, Accademia, Unity, esercitazione, API, Application Insights, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 5d599e7c3c6f887675bf010a10fb8841e80143db
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: efd6a3f8bf526dcf6a7eaee199f5c22ffa1dd639
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582959"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730378"
 ---
-# <a name="mr-and-azure-309-application-insights"></a>MR e Azure 309: Application Insights
+# <a name="hololens-1st-gen-and-azure-309-application-insights"></a>HoloLens (1a generazione) e Azure 309: Application Insights
 
 <br>
 
@@ -108,7 +108,7 @@ Per usare *Application Insights*, è necessario creare e configurare un servizio
 
     6.  Sarà inoltre necessario confermare di aver compreso i termini e le condizioni applicati a questo servizio.
 
-    7.  Selezionare **Create** (Crea).
+    7.  Selezionare **Crea**.
 
         ![Portale di Azure](images/AzureLabs-Lab309-03.png)
 

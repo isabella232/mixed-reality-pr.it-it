@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realtà mista, sviluppo, guida introduttiva, nuovo progetto, porting, funzionalità, fotocamera, simulazione, emulazione, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, mapping spaziale, input vocale, fotocamera individuabile, emulatore, Azure, esercitazioni
 ms.openlocfilehash: ed0f27822ab83baa2c1de6575067bdbd6b00a5e6
-ms.sourcegitcommit: 5694cc472bde67c940204ebe6671b0598501e62a
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "102126614"
 ---
 # <a name="unity-development-for-hololens"></a>Sviluppo di Unity per HoloLens

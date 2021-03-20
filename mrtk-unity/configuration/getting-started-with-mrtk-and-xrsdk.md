@@ -4,14 +4,13 @@ description: Pagina di destinazione per MRTK con XRSDK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, XRSDK,
-ms.openlocfilehash: 14ba4a9a8137f49e0aff29417c769e880607995f
-ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
+ms.openlocfilehash: dfdc5ca9a4e2d610f47660568ce6d4aabc0956b9
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101883256"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104701937"
 ---
 # <a name="getting-started-with-mrtk-and-xr-sdk"></a>Introduzione a MRTK e XR SDK
 

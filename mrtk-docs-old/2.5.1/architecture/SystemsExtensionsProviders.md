@@ -4,14 +4,13 @@ description: Estensioni MRTK e provider di dati
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, estensioni di sistema,
-ms.openlocfilehash: ef288e5fc7f002800e29065d1035300ed9844071
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: f6be834937d6d2a5bd542050700b20f740d01168
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782013"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104680864"
 ---
 # <a name="systems-extension-services-and-data-providers"></a>Sistemi, servizi di estensione e provider di dati
 

@@ -4,14 +4,14 @@ description: Panoramica della descrizione comando in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, descrizione comando,
-ms.openlocfilehash: 92c49761dca4b3fa58853dfced2c556454c9d2b6
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 3d17769322cd2d04ed22aed662965f2f296005bc
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782391"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104681254"
 ---
 # <a name="tooltip"></a>Descrizione comando
 

@@ -4,14 +4,13 @@ description: Pagina di destinazione del rilevamento degli occhi in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, EyeTracking,
-ms.openlocfilehash: 94527d710e308a625235ea65664d45027659c34a
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 10a7cae3a6020548ead8d63259841b3ab5e607f4
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783773"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104702197"
 ---
 # <a name="eye-tracking-in-the-mixed-reality-toolkit"></a>Rilevamento degli occhi nel Toolkit per la realtà mista
 

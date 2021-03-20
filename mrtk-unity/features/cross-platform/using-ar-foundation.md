@@ -4,14 +4,13 @@ description: Documentazione per l'uso di ARFoundation in Unity
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, AR core, AR Kit
-ms.openlocfilehash: c2cafe6e8133dfd6970ba9d5e8f824dea37783f1
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 4a0e57fa3f8b00ac9867689b9c8fe49a560dbe11
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783597"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104685954"
 ---
 # <a name="how-to-configure-mrtk-for-ios-and-android-experimental"></a>Come configurare MRTK per iOS e Android [sperimentale]
 

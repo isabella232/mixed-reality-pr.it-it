@@ -8,10 +8,10 @@ ms.topic: article
 keywords: realtà mista, Unity, esercitazione, hololens, MRTK, Toolkit realtà mista, UWP, interazioni tra oggetti, controlli dei limiti
 ms.localizationpriority: high
 ms.openlocfilehash: 1ab7b3a334639be564717d77d3bbc478a25e8326
-ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "102237242"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interazione con oggetti 3D

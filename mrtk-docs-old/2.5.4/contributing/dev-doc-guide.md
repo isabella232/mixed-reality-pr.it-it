@@ -4,14 +4,13 @@ description: Portale per sviluppatori gudie per MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, GitHub
-ms.openlocfilehash: 29956570e88b6bfbdcc06721bfd2cf9e43769c17
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 543b65017770337a2e9d6156ca067c1cbdfbe9b9
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782945"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104686444"
 ---
 # <a name="developer-portal-generation-guide"></a>Guida alla generazione del portale per sviluppatori
 

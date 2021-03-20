@@ -4,14 +4,13 @@ description: Pagina di destinazione per il sito della documentazione MRTK-Unity.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/9/2020
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 98b7566bb30f889800772b5aac9818b14a94cfe1
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 1bf4395cfbcd27d3c58f211d475bf2eea264c345
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781997"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104681514"
 ---
 # <a name="welcome-to-mrtk"></a>Benvenuti in MRTK
 

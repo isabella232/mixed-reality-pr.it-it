@@ -4,14 +4,13 @@ description: linee guida e standard per la documentazione per MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: bce53ed065d187096bddaab33d93eafa5996d3c0
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 20ad691744498fc2e386e9193d4d32c7ab011ef1
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782221"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104687595"
 ---
 # <a name="documentation-guidelines"></a>Linee guida sulla documentazione
 

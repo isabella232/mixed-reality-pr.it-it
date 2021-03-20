@@ -4,14 +4,13 @@ description: Dettagli per configurare il sistema di limiti in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, sistema di limiti,
-ms.openlocfilehash: e118359bf5faf4f198d1ed2a59329e585c547fad
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 36e8ac69a76f3ec1483d8dd0404900972a8caee7
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782104"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104681934"
 ---
 # <a name="configuring-the-boundary-visualization"></a>Configurazione della visualizzazione dei limiti
 

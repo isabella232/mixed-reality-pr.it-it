@@ -4,14 +4,14 @@ description: Documentazione su Slate in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, Slate,
-ms.openlocfilehash: 45d9923bb4d4d532ac81ed9d81baaeca02cc97a2
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: ac0c10a50ed3114150ede0988bf39c2c7696ea20
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782243"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104682644"
 ---
 # <a name="slate"></a>Slate
 

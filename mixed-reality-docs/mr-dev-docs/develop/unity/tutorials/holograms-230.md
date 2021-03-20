@@ -1,19 +1,19 @@
 ---
-title: 'MR Spatial 230: Mapping spaziale'
+title: HoloLens (1a Gen) Spatial 230-mapping spaziale
 description: Seguire questa procedura dettagliata di codifica usando Unity, Visual Studio e HoloLens per informazioni dettagliate sui concetti relativi al mapping spaziale.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, esercitazione, mapping spaziale, superficie di ricostruzione, mesh, HoloLens, Reality Academy, Unity, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare di realtà virtuale, Windows 10
-ms.openlocfilehash: 6b218de239da04190fbf08ff8668fa16009df949
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 933b5d331e814cdb2ced2689e06e0c8508f2d68a
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582931"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730138"
 ---
-# <a name="mr-spatial-230-spatial-mapping"></a>Spaziale MR 230: Mapping spaziale
+# <a name="hololens-1st-gen-spatial-230-spatial-mapping"></a>HoloLens (1a Gen) Spatial 230: mapping spaziale
 
 >[!NOTE]
 >Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](./mr-learning-base-01.md).
@@ -151,7 +151,7 @@ Si analizzerà ora il modo in cui il mapping spaziale può influire sulle presta
 * Fare clic su **Connect** (Connetti).
 * Osservare il numero di millisecondi impiegato dalla GPU per eseguire il rendering di un frame.
 * Arrestare l'esecuzione dell'applicazione nel dispositivo.
-* Tornare a Visual Studio e aprire **SpatialMappingObserver.cs**. Si troverà nella cartella HoloToolkit\SpatialMapping del progetto Assembly-CSharp (Windows universale).
+* Tornare a Visual Studio e aprire **SpatialMappingObserver. cs**. Si troverà nella cartella HoloToolkit\SpatialMapping del progetto Assembly-CSharp (Windows universale).
 * Trovare la funzione **sveglie ()** e aggiungere la riga di codice seguente: **TrianglesPerCubicMeter = 1200;**
 * Ridistribuire il progetto nel dispositivo e quindi **riconnettere il profiler**. Osservare la modifica del numero di millisecondi per il rendering di un frame.
 * Arrestare l'esecuzione dell'applicazione nel dispositivo.
@@ -231,15 +231,15 @@ Unity è un ottimo lavoro di anteprima dei materiali, ma è sempre una buona ide
 * Nel pannello del **progetto** di Unity, nella cartella **ologrammi** , trovare l'oggetto **SpatialProcessing** .
 * Trascinare & rilasciare l'oggetto **SpatialProcessing** nel pannello **gerarchia** .
 
-Il preprocessore SpatialProcessing include componenti per l'elaborazione dei dati di mapping spaziali. **SurfaceMeshesToPlanes.cs** troverà e genererà i piani in base ai dati di mapping spaziali. Microsoft utilizzerà i piani nell'applicazione per rappresentare i muri, i piani e i tetti. Questa prefabbricata include anche **RemoveSurfaceVertices.cs** che possono rimuovere i vertici dalla mesh di mapping spaziale. Questo può essere usato per creare buchi nella mesh o per rimuovere i triangoli superflui che non sono più necessari, perché è invece possibile usare i piani.
+Il preprocessore SpatialProcessing include componenti per l'elaborazione dei dati di mapping spaziali. **SurfaceMeshesToPlanes. cs** troverà e genererà piani basati sui dati di mapping spaziali. Microsoft utilizzerà i piani nell'applicazione per rappresentare i muri, i piani e i tetti. Questa prefabbricata include anche **RemoveSurfaceVertices. cs** che può rimuovere i vertici dalla mesh di mapping spaziale. Questo può essere usato per creare buchi nella mesh o per rimuovere i triangoli superflui che non sono più necessari, perché è invece possibile usare i piani.
 
 * Nel pannello del **progetto** di Unity, cartella **olografici** , trovare l'oggetto **Spacecollection** .
 * Trascinare e rilasciare l'oggetto **spaziatore** nel pannello **gerarchia** .
 * Nel pannello **gerarchia** selezionare l'oggetto **SpatialProcessing** .
 * Nel pannello **Inspector** trovare il componente **Play Space Manager (script)** .
-* Fare doppio clic su **PlaySpaceManager.cs** per aprirlo in Visual Studio.
+* Fare doppio clic su **PlaySpaceManager. cs** per aprirlo in Visual Studio.
 
-PlaySpaceManager.cs contiene codice specifico dell'applicazione. Si aggiungeranno funzionalità a questo script per abilitare il comportamento seguente:
+PlaySpaceManager. cs contiene codice specifico dell'applicazione. Si aggiungeranno funzionalità a questo script per abilitare il comportamento seguente:
 
 1. Interrompere la raccolta dei dati di mapping spaziali dopo il superamento del limite di tempo di analisi (10 secondi).
 2. Elaborare i dati di mapping spaziale:
@@ -247,7 +247,7 @@ PlaySpaceManager.cs contiene codice specifico dell'applicazione. Si aggiungerann
     2. Usare RemoveSurfaceVertices per rimuovere i triangoli di superficie che rientrano nei limiti del piano.
 3. Generare una raccolta di ologrammi in tutto il mondo e posizionarli sui piani di parete e di piano vicino all'utente.
 
-Completare gli esercizi di codifica contrassegnati in PlaySpaceManager.cs o sostituire lo script con la soluzione completa riportata di seguito:
+Completare gli esercizi di codifica contrassegnati in PlaySpaceManager. cs oppure sostituire lo script con la soluzione completa riportata di seguito:
 
 ```cs
 using System.Collections.Generic;
@@ -470,7 +470,7 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 * Nel pannello **Inspector** trovare il componente **Surface Meshs to Planes (script)** .
 * Per cancellare la selezione, modificare la proprietà **piani di estrazione** in **Nessun** elemento.
 * Modificare la proprietà dei **piani di disegna** su **Wall**, in modo che venga eseguito il rendering solo dei piani di muro.
-* Nel pannello **progetto** , cartella **script** , fare doppio clic su **Placeable.cs** per aprirlo in Visual Studio.
+* Nel pannello **progetto** , cartella **script** , fare doppio clic su **posizionabile. cs** per aprirlo in Visual Studio.
 
 Lo script **posizionabile** è già collegato ai manifesti e alla casella di proiezione creati al termine della ricerca del piano. È sufficiente rimuovere il commento dal codice e questo script consentirà di ottenere i risultati seguenti:
 
@@ -482,7 +482,7 @@ Lo script **posizionabile** è già collegato ai manifesti e alla casella di pro
 6. Riorientare l'ologramma per allinearlo al tipo di superficie (verticale o orizzontale) con affinità.
 7. Posizionare in modo uniforme l'ologramma sulla superficie selezionata per evitare il comportamento di salto o blocco.
 
-Rimuovere il commento dal codice nell'esercizio di codifica riportato di seguito oppure usare questa soluzione completata in **Placeable.cs**:
+Rimuovere il commento dal codice nell'esercizio di codifica riportato di seguito oppure usare questa soluzione completata in **Placeable. cs**:
 
 ```cs
 using System.Collections.Generic;
@@ -1098,13 +1098,13 @@ Successivamente, si aggiungerà un comportamento speciale a Earth, in modo che a
 * Nel pannello **Inspector** trovare il materiale della terra (componente inferiore).
 * Nell' **elenco a discesa shader** impostare lo shader su **Custom > OcclusionRim**. Verrà eseguito il rendering di un'evidenziazione blu attorno alla terra ogni volta che viene nascosto da un altro oggetto.
 
-Infine, si Abilita un effetto di visione x-ray per i pianeti nel nostro sistema solare. È necessario modificare **PlanetOcclusion.cs** (presente nella cartella Scripts\SolarSystem) per ottenere i risultati seguenti:
+Infine, si Abilita un effetto di visione x-ray per i pianeti nel nostro sistema solare. È necessario modificare **PlanetOcclusion. cs** (presente nella cartella Scripts\SolarSystem) per ottenere i risultati seguenti:
 
 1. Determinare se un pianeta è bloccato dal livello SpatialMapping (maglie e piani della stanza).
 2. Mostra la rappresentazione wireframe di un pianeta ogni volta che viene bloccato dal livello SpatialMapping.
 3. Nascondere la rappresentazione wireframe di un pianeta quando non è bloccata dal livello SpatialMapping.
 
-Seguire l'esercizio di codifica in PlanetOcclusion.cs o usare la soluzione seguente:
+Seguire l'esercizio di codifica in PlanetOcclusion. cs oppure usare la soluzione seguente:
 
 ```cs
 using UnityEngine;
@@ -1208,7 +1208,7 @@ public class PlanetOcclusion : MonoBehaviour
 
 ## <a name="the-end"></a>La fine
 
-La procedura è stata completata. A questo punto è stato completato il **mapping spaziale 230: mapping spaziale**.
+Congratulazioni! A questo punto è stato completato il **mapping spaziale 230: mapping spaziale**.
 
 * Si sa come analizzare l'ambiente e caricare i dati di mapping spaziale in Unity.
 * Si conoscono le nozioni di base degli shader e il modo in cui è possibile usare i materiali per visualizzare nuovamente il mondo.

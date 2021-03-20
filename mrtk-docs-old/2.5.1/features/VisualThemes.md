@@ -4,14 +4,13 @@ description: Panoramica dei temi visivi controllo flessibile degli asset UX in M
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, MRTK temi,
-ms.openlocfilehash: 6be2e621f8ea7f5a0003cdf04e5cc3fe77ba6cfc
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 04a1b69b32846e235f8095c9018b7919971ab907
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783739"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104683904"
 ---
 # <a name="visual-themes"></a>Temi visivi
 

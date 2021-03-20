@@ -4,14 +4,13 @@ description: Descrive la componentizzazione in MRTK.
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 2e95051672c9909d446516c0ad4b78c19b1a4a2a
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 7d8c78e3b6f6e119fcf767c9280ec276a3933d68
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781570"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104686044"
 ---
 # <a name="mixed-reality-toolkit-componentization"></a>Componentizzazione del Toolkit di realtà mista
 

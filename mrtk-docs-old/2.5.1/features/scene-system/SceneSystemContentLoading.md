@@ -4,14 +4,13 @@ description: Sistema di scena per il caricamento di documentazione con MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 833cf13fecdbb6a4b666c3fa158e04381c372996
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: e9fd606a6269bced8f09a73a62021eab9c5a24ea
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781528"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684834"
 ---
 # <a name="content-scene-loading"></a>Caricamento della scena del contenuto
 

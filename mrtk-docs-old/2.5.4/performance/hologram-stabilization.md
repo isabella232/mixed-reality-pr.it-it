@@ -4,14 +4,13 @@ description: Prestazioni degli ologrammi in diversi ambienti e condizioni di fre
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, rilevamento dell'ambiente, TMP,
-ms.openlocfilehash: a0f0b99cc0d37eb3a3dc4a106aebed389ed5011d
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 9b2a79ea92912d0e02365aeaff78e7008e3e20c5
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781568"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104685994"
 ---
 # <a name="hologram-stabilization"></a>Stabilizzazione ologramma
 

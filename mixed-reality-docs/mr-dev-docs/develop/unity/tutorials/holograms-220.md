@@ -1,19 +1,19 @@
 ---
-title: 'MR Spatial 220: Audio spaziale'
+title: HoloLens (1a Gen) Spatial 220-audio spaziale
 description: Seguire questa procedura dettagliata di codifica usando Unity, Visual Studio e HoloLens per informazioni dettagliate sui concetti relativi ai suoni spaziali.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, esercitazione, spazio audio, HoloLens, realtà mista Academy, Unity, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale, Windows 10
-ms.openlocfilehash: da130a5a93ec261d2e767874faa31dbc50d51b12
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: aea093aa8f5e6c983cd66acf8cec89d8e7ecf52d
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582760"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730308"
 ---
-# <a name="mr-spatial-220-spatial-sound"></a>Spaziale MR 220: Audio spaziale
+# <a name="hololens-1st-gen-spatial-220-spatial-sound"></a>HoloLens (1a Gen) Spatial 220: audio spaziale
 
 >[!NOTE]
 >Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](./mr-learning-base-01.md).
@@ -512,6 +512,6 @@ Il Sottomondo verrà nascosto e verranno nuovamente visualizzati gli ologrammi n
 
 ## <a name="the-end"></a>La fine
 
-La procedura è stata completata. A questo punto è stato completato il comportamento di **spatial 220: Spatial**.
+Congratulazioni! A questo punto è stato completato il comportamento di **spatial 220: Spatial**.
 
 Ascolta il mondo e fai vivere le tue esperienze con i suoni.

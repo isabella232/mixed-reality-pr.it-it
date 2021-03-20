@@ -4,14 +4,13 @@ description: Suggerimenti per i consumer di MRTK con progetti di grandi dimensio
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 7cd5648de4e61fe977dc6f0eea5799f79d79da3c
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 8beb11876eab01d0d4f448e39128b09ec24da4fe
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782135"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104681984"
 ---
 # <a name="using-mrtk-in-large-projects"></a>Utilizzo di MRTK in progetti di grandi dimensioni
 

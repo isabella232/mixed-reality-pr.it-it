@@ -4,14 +4,13 @@ description: Tipi di menu Panoramica MRTK
 author: vaoliva
 ms.author: vaolivaa
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, oggetto scorrevole
-ms.openlocfilehash: 7ac0fc8b832f8dd50f9d3dc915fdfdf0fc1bdac4
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 86d0d79c2b9230beb84b8beda4ba488d857828a1
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781708"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104683724"
 ---
 # <a name="scrolling-object-collection"></a>Scorrimento della raccolta di oggetti
 

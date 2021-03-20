@@ -4,14 +4,13 @@ description: Documentazione per la configurazione di Oculus quest in MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, Oculus quest,
-ms.openlocfilehash: ac56cbe3c7e9e1e02ec7d50405834a33a77381d5
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: ad8d65d5331fc30b068c31a403bfbc4a88ab0964
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782236"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104687011"
 ---
 # <a name="how-to-configure-oculus-quest-in-mrtk-using-the-xrsdk-pipeline"></a>Come configurare Oculus quest in MRTK usando la pipeline XRSDK
 

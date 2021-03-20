@@ -4,14 +4,14 @@ description: documentazione per abilitare e disabilitare la diagnostica in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: e32a74bc7b5bd33f18ba608a6e634ff6c7d913b9
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 184a299a2a711aa791055856ab668583df3881b2
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782775"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684264"
 ---
 # <a name="diagnostic-system"></a>Sistema di diagnostica
 
@@ -19,7 +19,7 @@ Il sistema di diagnostica del Toolkit di realtà mista fornisce strumenti di dia
 
 Il primo rilascio del sistema di diagnostica contiene il [Profiler visivo](UsingVisualProfiler.md) che consente di analizzare i problemi di prestazioni durante l'uso dell'applicazione.
 
-## <a name="getting-started"></a>Guida introduttiva
+## <a name="getting-started"></a>Introduzione
 
 > [!IMPORTANT]
 > È consigliabile **_che_** il sistema di diagnostica sia abilitato nell'intero ciclo di sviluppo del prodotto e sia disabilitato come Ultima modifica prima della compilazione e del rilascio della versione finale.

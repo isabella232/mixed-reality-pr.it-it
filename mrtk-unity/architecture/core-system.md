@@ -4,14 +4,13 @@ description: Sistema di input, gestione dispositivi e provider di dati in MRTK
 author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, eventi
-ms.openlocfilehash: 7469a9764a88e5a431f7c270ee17caa7b0bc2119
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 4206e63eebb9989ccb85d945001fe1da2f77e269
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782348"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104701977"
 ---
 # <a name="core-system"></a>Sistema principale
 
@@ -42,9 +41,9 @@ Questa operazione viene eseguita utilizzando [ExecuteHierarchy](https://docs.uni
 
 ### <a name="global-listeners"></a>Listener globali
 
-Gli eventi possono essere inviati a listener globali. È possibile registrare tutti gli eventi di input usando l'interfaccia del sistema di input [`IMixedRealityEventSystem`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem) . È consigliabile usare il metodo [RegisterHandler](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem.RegisterHandler``1(IEventSystemHandler)) per la registrazione per gli eventi globali. la funzione deprecata provocherà la `Register` notifica di tutti gli eventi di input da parte dei listener, anziché solo eventi di input di un determinato tipo (in cui il tipo è definito dall'interfaccia eventi).
+Gli eventi possono essere inviati a listener globali. È possibile registrare tutti gli eventi di input usando l'interfaccia del sistema di input [`IMixedRealityEventSystem`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem) . È consigliabile usare il metodo [RegisterHandler](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem.RegisterHandler%2A) per la registrazione per gli eventi globali. la funzione deprecata provocherà la `Register` notifica di tutti gli eventi di input da parte dei listener, anziché solo eventi di input di un determinato tipo (in cui il tipo è definito dall'interfaccia eventi).
 
-Si noti che i [listener di fallback](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystem.PushFallbackInputHandler(GameObject)) sono un altro tipo di listener globali che sono sconsigliati perché riceveranno ogni singolo evento di input che non è stato gestito altrove nella scena.
+Si noti che i [listener di fallback](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystem.PushFallbackInputHandler%2A) sono un altro tipo di listener globali che sono sconsigliati perché riceveranno ogni singolo evento di input che non è stato gestito altrove nella scena.
 
 ### <a name="order-of-event-dispatch"></a>Ordine di invio eventi
 

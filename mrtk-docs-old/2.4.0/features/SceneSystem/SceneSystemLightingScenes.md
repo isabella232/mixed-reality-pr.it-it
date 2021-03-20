@@ -4,14 +4,14 @@ description: Documentazione sull'illuminazione nella scena.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 753738d8ac1404bb4d959ede108bfd8f4ec4749b
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 52c065257e1b5a3f4405670aa97ab1413966d752
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783831"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104681094"
 ---
 # <a name="lighting-scene-operations"></a>Operazioni di illuminazione della scena
 

@@ -4,14 +4,13 @@ description: Documentazione per il provider di sguardi con occhio in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, EyeTracking, EyeGaze,
-ms.openlocfilehash: d00f7891c45c1b21a87584e17217b27b4049efd5
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 27b888ddcb9f6897da78b22e3d9fd486951366d0
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782750"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104683304"
 ---
 # <a name="accessing-eye-tracking-data-in-your-unity-script"></a>Accesso ai dati di rilevamento degli occhi nello script Unity
 
@@ -46,7 +45,7 @@ Anche in questo caso, se `IsEyeGazeValid` è false, questo sarà basato sullo sg
 
 ## <a name="examples-for-using-coreservicesinputsystemeyegazeprovider"></a>Esempi per l'uso di CoreServices. InputSystem. EyeGazeProvider
 
-Di seguito è riportato un esempio di [FollowEyeGaze.cs](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.FollowEyeGaze):
+Di seguito è riportato un esempio di [FollowEyeGaze. cs](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.FollowEyeGaze):
 
 - Ottenere il punto di un ologramma esaminato dall'utente:
 

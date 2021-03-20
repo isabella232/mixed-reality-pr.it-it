@@ -4,14 +4,13 @@ description: Documentazione di TapToPlace MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, tocco a posto,
-ms.openlocfilehash: 8f14b70ae9e736072cfc8da55e6a4accc259a18b
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: c1ec395cc8f2e2f0e7592c3dd9a65d2ec5c00236
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781574"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104686154"
 ---
 # <a name="tap-to-place"></a>Toccare per posizionare
 

@@ -4,14 +4,13 @@ description: Esempio per compilare eyetracking in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, EyeTracking,
-ms.openlocfilehash: 85b4cd12baff512933ec2111e3c280ecfd60025b
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 2b9d373363bee8d7ad3482fc234c8966f6258706
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782501"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104683364"
 ---
 # <a name="eye-tracking-examples"></a>Esempi di rilevamento degli occhi
 

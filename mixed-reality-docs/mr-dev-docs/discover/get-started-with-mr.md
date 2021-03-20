@@ -8,10 +8,10 @@ ms.topic: overview
 ms.localizationpriority: high
 keywords: Realtà mista, individuare, distribuire, indice, pagina di destinazione, progettazione, sviluppo, esercitazioni, app di esempio, nozioni di base, case study, risorse, guide pratiche per HoloLens, progetti open source, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
 ms.openlocfilehash: b10cb385d28be68a539eedced269204b8a1ac4d3
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101760213"
 ---
 # <a name="get-started-with-mixed-reality"></a>Informazioni di base sulla realtà mista

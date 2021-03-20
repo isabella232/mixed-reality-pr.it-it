@@ -4,14 +4,13 @@ description: Documentazione su Hopw per usare lo strumento screenshot in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: a1f5e6503244852d79abaf143f8e922ceb1b489c
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 4fbd5457dd0af502ddedf30a10482690cd8e1a1d
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783084"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104702227"
 ---
 # <a name="screenshot-utility"></a>Utilità screenshot
 

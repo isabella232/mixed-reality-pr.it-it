@@ -4,14 +4,13 @@ description: Migrazione da HTK a MRTK.
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, HTK,
-ms.openlocfilehash: 6a70fa5877992f62a24b5498c869aec67ca38e82
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 6e6304e66fd7d26055327683aa11f16f340b9c07
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783217"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104681584"
 ---
 # <a name="porting-guide"></a>Guida alla conversione
 

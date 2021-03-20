@@ -4,14 +4,13 @@ description: Panoramica dei dispositivi di scorrimento MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, dispositivi di scorrimento,
-ms.openlocfilehash: 75bc0199bcb0e0da8e244f5eeb7aab0047483ce6
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: d0ef491c25383e3a192c3e76d6d4ae38ffa075ce
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781741"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104686664"
 ---
 # <a name="sliders"></a>Dispositivi di scorrimento
 

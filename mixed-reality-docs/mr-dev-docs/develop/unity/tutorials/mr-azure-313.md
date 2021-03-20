@@ -1,19 +1,19 @@
 ---
-title: 'MR and Azure 313: Servizio hub IoT'
+title: HoloLens (1a generazione) e servizio Hub Azure 313-Internet
 description: Informazioni su come implementare il servizio Hub Azure Internet in una macchina virtuale che esegue Ubuntu 16,4 e visualizzare i dati del messaggio usando l'auricolare Microsoft HoloLens o VR.
 author: drneil
 ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
 keywords: Azure, realtà mista, Academy, Edge, Internet delle cose, esercitazione, API, notifiche, funzioni, tabelle, hololens, immersive, VR, Internet delle cose, macchine virtuali, Ubuntu, Python, Windows 10, Visual Studio
-ms.openlocfilehash: f23a9bf5bcdb0868ef9b0e6f77fbdb7a15dfdce1
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: f4306e7940e2447fe31afb8c7071c00abc98dd34
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582815"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730498"
 ---
-# <a name="mr-and-azure-313-iot-hub-service"></a>MR e Azure 313: Servizio Hub IoT
+# <a name="hololens-1st-gen-and-azure-313-iot-hub-service"></a>HoloLens (1a generazione) e Azure 313: servizio hub Internet
 
 >[!NOTE]
 >Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. In futuro sarà disponibile una nuova serie di esercitazioni che illustrano come sviluppare per HoloLens 2.  Questo avviso verrà aggiornato con un collegamento a queste esercitazioni quando vengono pubblicate.

@@ -4,14 +4,13 @@ description: Documentazione su HoverLight con esempi in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, hover Light,
-ms.openlocfilehash: af99c84684dd8b50e81ecd27b86e2be5f473e954
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: b0b47002ae7dd8a5d905a1d6913497f1b2ec8a35
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782754"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684184"
 ---
 # <a name="hover-light"></a>Luce al passaggio del mouse
 

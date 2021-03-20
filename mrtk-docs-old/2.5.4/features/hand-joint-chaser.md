@@ -4,14 +4,13 @@ description: Chaser joint Hand in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: b7e25c544ecb6980e021f2006502c8f25bbfe0ac
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 4e95f5a6f6019bed617bac55064c8c3984d9386e
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783172"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104702097"
 ---
 # <a name="hand-joint-chaser-example"></a>Esempio di intercettore misto mano
 

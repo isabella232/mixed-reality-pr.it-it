@@ -4,14 +4,13 @@ description: Come usare il manipolatore di oggetti in MRTK
 author: thalbern
 ms.author: bethalha
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, manipolazione degli oggetti,
-ms.openlocfilehash: e5d54e2d4972ddd930efbe7e1006579531cb1722
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 3797bb1938b137d319bdc6454f0aba9a352221bc
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781940"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104686254"
 ---
 # <a name="object-manipulator"></a>Manipolatore di oggetti
 

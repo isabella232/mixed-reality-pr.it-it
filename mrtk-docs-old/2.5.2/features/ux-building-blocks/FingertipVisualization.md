@@ -4,14 +4,13 @@ description: Panoramica sulla visualizzazione a portata di mano in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, a portata di mano
-ms.openlocfilehash: f3c9ced90f1dafe44453fa62067e2f8d9575add7
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: a44a1e821ede1ec790846bf279816682698c1015
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782194"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104683221"
 ---
 # <a name="fingertip-visualization"></a>Visualizzazione a mano
 

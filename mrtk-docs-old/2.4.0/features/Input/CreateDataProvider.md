@@ -4,14 +4,14 @@ description: documentazione per creare il sistema di input e il provider di dati
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 220cbb52c31fb1a2e188187d924f6953c9e3036e
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: eb8394b641a665a738deeca7caa46f8baf90e918
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781856"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104682844"
 ---
 # <a name="creating-an-input-system-data-provider"></a>Creazione di un provider di dati di sistema di input
 
@@ -107,9 +107,9 @@ Il passaggio successivo consiste nell'aggiungere la logica per la gestione dei d
 
 > Il codice sorgente per ognuna di queste classi è reperibile nella cartella MRTK/Providers/WindowsMixedReality.
 
-- WindowsMixedRealityArticulatedHand.cs
-- WindowsMixedRealityController.cs
-- WindowsMixedRealityGGVHand.cs
+- WindowsMixedRealityArticulatedHand. cs
+- WindowsMixedRealityController. cs
+- WindowsMixedRealityGGVHand. cs
 
 > [!Note]
 > Non tutte le gestioni dispositivi supportano più tipi di controller.

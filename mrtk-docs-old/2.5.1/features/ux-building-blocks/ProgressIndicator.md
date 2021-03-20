@@ -4,14 +4,13 @@ description: Panoramica dell'indicatore di stato in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 86d5f3a28c0ee76c454a263b00ac87fbe8cb9f77
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: fb21c06bba122c1f8ad81b4ff6f4454d1472f7e0
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781709"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104683764"
 ---
 # <a name="progress-indicators"></a>Indicatori di stato
 

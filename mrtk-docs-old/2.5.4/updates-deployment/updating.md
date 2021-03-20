@@ -4,14 +4,13 @@ description: Documentazione per la migrazione da una versione precedente di MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: dfd764062827d85fe87aab26e7b0b53772bb3814
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 4d1b6921e1f5c55555b6fae448a88dbd0c3a31d7
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781932"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104702027"
 ---
 # <a name="updating-the-microsoft-mixed-reality-toolkit"></a>Aggiornamento di Microsoft Mixed Reality Toolkit
 

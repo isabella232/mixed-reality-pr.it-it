@@ -1,19 +1,19 @@
 ---
-title: 'MR Basics 101: Progetto completo con dispositivo'
+title: Nozioni di base su HoloLens (1a Gen) 101-progetto completo con dispositivo
 description: Segui questa procedura dettagliata di codifica usando Unity, Visual Studio e HoloLens per apprendere le nozioni di base della realtà mista di Windows.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: realtà mista, realtà mista di Windows, HoloLens, ologramma, Accademia, esercitazione, HoloLens, Accademia realtà mista, Unity, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale, Windows 10
-ms.openlocfilehash: 4ca16542060e1cee746ba5095a7bf68ca8136267
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5015dff1487dce9ff761a4ca606657eca6f75406
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583710"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730338"
 ---
-# <a name="mr-basics-101-complete-project-with-device"></a>Nozioni di base MR 101: Progetto completo con dispositivo
+# <a name="hololens-1st-gen-basics-101-complete-project-with-device"></a>Nozioni di base di HoloLens (1st Gen) 101: completare il progetto con il dispositivo
 
 <br>
 
@@ -150,7 +150,7 @@ In questo capitolo, verranno introdotti i primi tre modi per interagire con gli 
 * Selezionare l'oggetto **cursore** nel **Pannello gerarchia**.
 * Trascinare e rilasciare lo script **WorldCursor** nel **pannello Inspector**.
 * Fare doppio clic sullo script **WorldCursor** per aprirlo in Visual Studio.
-* Copiare e incollare questo codice in **WorldCursor.cs** e **salvare tutti**.
+* Copiare e incollare il codice in **WorldCursor. cs** e **salvare tutti**.
 
 ```cs
 using UnityEngine;
@@ -330,7 +330,7 @@ In questo capitolo verrà aggiunto il supporto per due [comandi vocali](../../..
 * Nella cartella **Scripts** creare uno script denominato **SpeechManager**.
 * Trascinare lo script **SpeechManager** sull'oggetto **Origamicollection** nella gerarchia
 * Aprire lo script **SpeechManager** in Visual Studio.
-* Copiare e incollare questo codice in **SpeechManager.cs** e **salvare tutti**:
+* Copiare e incollare il codice in **SpeechManager. cs** e **salvare tutti**:
 
 ```cs
 using System.Collections.Generic;
@@ -695,7 +695,7 @@ Sono stati appresi i concetti seguenti:
 
 A questo punto è possibile iniziare a creare una propria esperienza olografica.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Nozioni di base MR 101E: Progetto completo con emulatore](holograms-101e.md)
 * [Sguardo fisso](../../../design/gaze-and-commit.md)

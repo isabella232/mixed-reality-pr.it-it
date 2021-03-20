@@ -4,14 +4,13 @@ description: Come accedere ai dati degli occhi e agli eventi specifici degli sgu
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, EyeTracking,
-ms.openlocfilehash: d4ec5e472316f3871ebed85f0a81988d3207132b
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: a0131c882ee1677cfb2404208cfe8abb28a3c799
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781531"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684904"
 ---
 # <a name="eye-supported-target-selection"></a>Selezione della destinazione supportata dagli occhi
 
@@ -62,7 +61,7 @@ Se la verifica degli occhi è configurata correttamente (vedere il [programma di
 
 Per rilevare quando un ologramma è concentrato, usare l'interfaccia _' IMixedRealityFocusHandler '_ che fornisce due membri di interfaccia: _OnFocusEnter_ e _OnFocusExit_.
 
-Ecco un semplice esempio di [ColorTap.cs](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ColorTap) per modificare il colore di un ologramma quando si esamina.
+Ecco un semplice esempio di [ColorTap. cs](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ColorTap) per modificare il colore di un ologramma quando si esamina.
 
 ```c#
 public class ColorTap : MonoBehaviour, IMixedRealityFocusHandler
@@ -222,7 +221,7 @@ In caso contrario, questa operazione può essere estremamente travolgente.
 
 Analogamente a #1 di esempio, è possibile creare facilmente un feedback del passaggio del mouse per le gemme olografiche in una `EyeTrackingDemo-02-TargetSelection` scena (assets/MRTK/examples/Demos/eyetracking/scenes) che verrà ruotata lentamente in una direzione costante e a una velocità costante (contrariamente all'esempio di rotazione precedente) quando viene esaminato. È sufficiente attivare la rotazione della gemma olografica dall'evento _WhileLookingAtTarget ()_ di _EyeTrackingTarget_. Ecco alcuni dettagli:
 
-1. Creare uno script generico che includa una funzione pubblica per ruotare il GameObject a cui è collegato. Di seguito è riportato un esempio di _RotateWithConstSpeedDir.cs_ in cui è possibile modificare la direzione e la velocità di rotazione dall'editor di Unity.
+1. Creare uno script generico che includa una funzione pubblica per ruotare il GameObject a cui è collegato. Di seguito è riportato un esempio di _RotateWithConstSpeedDir. cs_ in cui è possibile modificare la direzione e la velocità di rotazione dall'editor di Unity.
 
     ```c#
     using UnityEngine;

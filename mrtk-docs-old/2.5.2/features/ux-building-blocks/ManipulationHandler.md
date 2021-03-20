@@ -4,14 +4,13 @@ description: Documentazione sul gestore di manipolazione in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, manipolazione,
-ms.openlocfilehash: dc19d2c819d5c36914366ccf7d89372999cb5199
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 01ce9f0460482814b19bc29a5ee77146d5cf06d6
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782191"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104686851"
 ---
 # <a name="manipulation-handler"></a>Gestore di manipolazione
 

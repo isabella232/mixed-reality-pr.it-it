@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, risolutori, tracciamento oculare, comandi vocali
 ms.localizationpriority: high
-ms.openlocfilehash: 22d4eddc9a3b6d4b175a9d92af1b36b5cd96055a
-ms.sourcegitcommit: daad3dcce6381e2967fab634313dc7b2ea26d2bd
+ms.openlocfilehash: 7fd4a641c87b13d09a25926cfe65fa7b8c66c2f0
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103234537"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104681704"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1. Introduzione alle esercitazioni di MRTK
 
@@ -44,6 +44,16 @@ Le esercitazioni di questa serie sono sequenziali, consultarle quindi nell'ordin
 * Un dispositivo HoloLens 2 [configurato per lo sviluppo](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
 
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub Unity</a> con unity 2019 LTS (attualmente 2019.4. x) installato e aggiunta del modulo di supporto piattaforma UWP (Universal Windows Platform) Build
+
+Quando si installa Unity, assicurarsi di controllare i componenti seguenti in **"Platforms"**.
+* **Supporto di piattaforma UWP (Universal Windows Platform) Build** 
+* **Supporto per Windows Build (IL2CPP)**
+
+![Opzione di supporto per Unity piattaforma UWP (Universal Windows Platform) Build](../../../develop/images/Unity_Install_Option_UWP.png)
+
+Se Unity è stata installata senza queste opzioni, è possibile aggiungerle tramite il menu **' Aggiungi moduli '** nell'hub Unity.
+
+![Opzione di supporto build di Windows Unity](../../../develop/images/Unity_Install_Option_UWP2.png)
 
 > [!CAUTION]
 > La versione consigliata di MRTK per questa serie di esercitazioni è MRTK 2,6.

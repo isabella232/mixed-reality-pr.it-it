@@ -4,14 +4,13 @@ description: Documentazione sul posizionamento del rilevamento degli occhi
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, EyeTracking,
-ms.openlocfilehash: f53a8d8afca632fdd4011e5fb1fc6f872d969c1e
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: a59dd8dde9709c1e60ebf62bcb362f6f2f65e901
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781536"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104687241"
 ---
 # <a name="eye-supported-target-positioning-in-mrtk"></a>Posizionamento della destinazione con supporto oculare in MRTK
 

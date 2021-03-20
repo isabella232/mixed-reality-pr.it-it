@@ -4,14 +4,13 @@ description: Release abbiend della versione corrente di MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: da70601a0e1d2fc2b383a9cbcfcb4b9dd2de4323
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 08f3c7cb3baacc74f65723de9a74fe2c56829804
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782821"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684924"
 ---
 # <a name="microsoft-mixed-reality-toolkit-250-release-notes"></a>Note sulla versione di Microsoft Mixed Reality Toolkit 2.5.0
 

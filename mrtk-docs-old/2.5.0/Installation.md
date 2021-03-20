@@ -4,14 +4,13 @@ description: Guida per l'installazione di MRTK-Unity in un nuovo progetto.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/9/2020
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 09bd4d2ee090a84f8694f4d36540533440e20790
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: d87a19862dba9a50c963421fb9378f9befbe30c9
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781835"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104687481"
 ---
 # <a name="installation-guide"></a>Guida all'installazione
 

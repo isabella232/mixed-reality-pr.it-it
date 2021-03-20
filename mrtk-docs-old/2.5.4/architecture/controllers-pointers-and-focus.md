@@ -4,14 +4,13 @@ description: Interazione con i controller, i puntatori e lo stato attivo.
 author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, puntatori, controller
-ms.openlocfilehash: d35334672ba2b012c7f2040c94cfc7172cdb0cbb
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: f656089b8ecd78e0f847c777baf63ae67f957802
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783331"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104685674"
 ---
 # <a name="controllers-pointers-and-focus"></a>Controller, puntatori e stato attivo
 

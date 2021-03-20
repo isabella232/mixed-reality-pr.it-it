@@ -4,14 +4,13 @@ description: Sistema di input diversa in MRTK.
 author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, input,
-ms.openlocfilehash: 555f84b10e35e905b1c05a640f075c7d0394fad4
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: d06e37185b44796d2a95645f78c735e849bab7b4
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783733"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104682404"
 ---
 # <a name="input-system"></a>Sistema di input
 

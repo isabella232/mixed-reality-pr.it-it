@@ -4,14 +4,13 @@ description: Descrizione per i controlli della finestra di dialogo.
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: b6c3e8b64fd0c85a54408f99b230526ef38a1bf5
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: aa054e304640ece2ee7346fc573ef869946c8905
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782155"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104681414"
 ---
 # <a name="dialog"></a>Finestra di dialogo
 

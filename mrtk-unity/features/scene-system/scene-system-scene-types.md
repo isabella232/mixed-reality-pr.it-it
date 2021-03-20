@@ -4,14 +4,13 @@ description: Documentazione su diversi tipi di scena in MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 957369a32daca32cd091d5acd976f80c236679ae
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 0187219a01e9cd31803ded2bd30a4f78c1802d5f
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782890"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104702357"
 ---
 # <a name="scene-types"></a>Tipi di scena
 
@@ -51,7 +50,7 @@ Per abilitare questa funzionalità, archiviare il `Use Lighting Scene` profilo e
 
 Il profilo archivia le copie memorizzate nella cache delle impostazioni di illuminazione mantenute nelle scene di illuminazione. Se queste impostazioni cambiano nelle scene di illuminazione, sarà necessario aggiornare la cache per assicurarsi che l'illuminazione venga visualizzata come previsto in modalità di riproduzione. Nel profilo verrà visualizzato un avviso quando si sospetta che le impostazioni memorizzate nella cache non siano aggiornate. Se si fa clic su `Update Cached Lighting Settings` , si caricherà ogni scena di illuminazione, si estraggono le impostazioni e quindi le si archivia nel profilo.
 
-![Impostazioni di illuminazione del sistema di scena](../images/scene-system/MRTK_SceneSystemCachedLightingSettings.PNG)
+![Impostazioni di illuminazione della cache del sistema di scena](../images/scene-system/MRTK_SceneSystemCachedLightingSettings.PNG)
 
 ### <a name="editor-behavior"></a>Comportamento dell'editor
 

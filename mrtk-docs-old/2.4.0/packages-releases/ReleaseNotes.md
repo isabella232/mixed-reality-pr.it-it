@@ -4,14 +4,14 @@ description: Release abbiend della versione corrente di MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 850605855ff756939c334bf8116022a1340aa9f6
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 262beea344b7b6a73328e6987acb60610e814f60
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783133"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104687771"
 ---
 # <a name="microsoft-mixed-reality-toolkit-release-notes"></a>Note sulla versione di Microsoft Mixed Reality Toolkit
 
@@ -119,7 +119,7 @@ La [casella degli strumenti MRTK](../features/README_Toolbox.md) è un'utilità 
 
 **Miglioramenti del menu a mano**
 
-Il menu a mano è stato adattato in molte applicazioni. Uno dei principali problemi riscontrati è la falsa attivazione accidentale durante la manipolazione degli oggetti o l'interazione con altri contenuti e così via. È stata aggiunta una nuova opzione di attivazione dello sguardo a HandConstraintPalmUp.cs per impedire l'attivazione di false. Con questa opzione, il menu non viene visualizzato accidentalmente, fino a quando l'utente non guarda la mano.<br/>
+Il menu a mano è stato adattato in molte applicazioni. Uno dei principali problemi riscontrati è la falsa attivazione accidentale durante la manipolazione degli oggetti o l'interazione con altri contenuti e così via. È stata aggiunta una nuova opzione di attivazione dello sguardo a HandConstraintPalmUp. cs per impedire l'attivazione di false. Con questa opzione, il menu non viene visualizzato accidentalmente, fino a quando l'utente non guarda la mano.<br/>
 ![0416_HandMenu_02](https://user-images.githubusercontent.com/13754172/79507261-4aabbd80-7fec-11ea-95c4-6e3f4bd18c11.gif)
 
 **Aggiornamento degli esempi di menu a mano**

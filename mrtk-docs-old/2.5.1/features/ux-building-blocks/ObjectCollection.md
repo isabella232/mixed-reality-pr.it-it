@@ -1,18 +1,14 @@
 ---
-title: ObjectCollection
-description: Panoramica della raccolta di oggetti in MRTK
-author: CDiaz-MS
-ms.author: cadia
-ms.date: 01/12/2021
-ms.localizationpriority: high
-keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, raccolta di oggetti,
-ms.openlocfilehash: db4622da96c074a41d1042be6570b0d67bce2859
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 61b8a1a78152399e71bec86e60d079c1d1957812
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782210"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104683794"
 ---
+media---title: ObjectCollection Description: Panoramica della raccolta di oggetti in MRTK Author: CDiaz-MS MS. Author: Cadia ms. Date: 01/12/2021 parole chiave: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, raccolta di oggetti,
+---
+
 # <a name="object-collection"></a>Raccolta di oggetti
 
 ![Raccolta oggetti-principale](../images/object-collection/MRTK_ObjectCollection_Main.jpg)

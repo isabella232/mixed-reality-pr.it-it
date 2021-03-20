@@ -4,14 +4,14 @@ description: Documentazione per InputEvents in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, eventi,
-ms.openlocfilehash: b08461d0e17bdbe14748d26d1f5b62e849521ea5
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 7e2e9fa162a97fe73b6d335c0c129eb50442dedb
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781839"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104682774"
 ---
 # <a name="input-events"></a>Eventi di input
 

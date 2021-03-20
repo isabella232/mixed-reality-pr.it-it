@@ -1,19 +1,19 @@
 ---
-title: 'MR Input 210: Sguardo fisso'
+title: Input di HoloLens (1st Gen) 210-sguardi
 description: Seguire questa procedura dettagliata di codifica usando Unity, Visual Studio e HoloLens per informazioni dettagliate sui concetti relativi a sguardi.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, esercitazione, sguardo, HoloLens, realtà mista Academy, Unity, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale, Windows 10
-ms.openlocfilehash: 7e8d72bc4d37d76f8f9ec40956cb85591e237ac8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 99c0d2ae00416f5d26e99e6d7d00c73ea07e5fb3
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583859"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730328"
 ---
-# <a name="mr-input-210-gaze"></a>Input MR 210: Sguardo fisso
+# <a name="hololens-1st-gen-input-210-gaze"></a>Input HoloLens (1st Gen) 210: sguardo
 
 >[!NOTE]
 >Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](./mr-learning-base-01.md).
@@ -206,8 +206,8 @@ Il nostro lavoro verrà basato sui principi di progettazione dei cursori, vale a
 ### <a name="instructions"></a>Istruzioni
 
 1. Nel pannello **gerarchia** espandere l'oggetto **astror** -> **GEO_G** -> **Back_Center** .
-2. Fare doppio clic su **Interactible.cs** per aprirlo in Visual Studio.
-3. Rimuovere il commento dalle righe nei callback **IFocusable. OnFocusEnter ()** e **IFocusable. OnFocusExit ()** in **Interactible.cs**. Questi vengono chiamati dal InputManager del Toolkit di realtà mista quando lo stato attivo (tramite sguardo o con il puntatore del controller) entra e esce dall'oggetto Collider di GameObject specifico.
+2. Fare doppio clic su **Interactible. cs** per aprirlo in Visual Studio.
+3. Rimuovere il commento dalle righe nei callback **IFocusable. OnFocusEnter ()** e **IFocusable. OnFocusExit ()** in **Interactible. cs**. Questi vengono chiamati dal InputManager del Toolkit di realtà mista quando lo stato attivo (tramite sguardo o con il puntatore del controller) entra e esce dall'oggetto Collider di GameObject specifico.
 
 ```cs
 /* TODO: DEVELOPER CODING EXERCISE 2.d */
@@ -265,7 +265,7 @@ void IFocusable.OnFocusExit()
 
 ### <a name="instructions"></a>Istruzioni
 
-Verrà usato il file **DirectionIndicator.cs** che:
+Verrà usato il file **DirectionIndicator. cs** che:
 
 1. Mostra l'indicatore direzionale se l'utente non sta guardando gli ologrammi.
 2. Nascondere l'indicatore direzionale se l'utente sta guardando gli ologrammi.
@@ -290,7 +290,7 @@ A questo punto, procedere con l'esercitazione.
 
 * Usare il tabellone per fare in modo che gli ologrammi siano sempre volti verso l'utente.
 
-Verrà usato il file **Billboard.cs** per tenere un GameObject orientato in modo che sia sempre attivo per l'utente.
+Verrà usato il file **Billboard. cs** per tenere un GameObject orientato in modo che sia sempre in funzione dell'utente.
 
 1. Nel pannello **gerarchia** selezionare l'oggetto **Astron** .
 2. Nel pannello **Inspector** fare clic sul pulsante **Add Component** .
@@ -318,15 +318,15 @@ La soluzione usata in questo articolo prevede l'uso di un approccio "tag-along".
 
 Un oggetto tag-along non lascia completamente la visualizzazione dell'utente. È possibile considerare un tag come un oggetto collegato alla testa dell'utente tramite bande di gomma. Quando l'utente si sposta, il contenuto rimarrà in una semplice occhiata scorrendo verso il bordo della visualizzazione senza uscire completamente. Quando l'utente guarda l'oggetto tag-along, viene visualizzato in modo più completo.
 
-Verrà usato il file **SimpleTagalong.cs** che:
+Verrà usato il file **SimpleTagalong. cs** che:
 
 1. Determinare se l'oggetto Tag-Along si trova all'interno dei limiti della fotocamera.
 2. Se non è presente nella vista tronco, posizionare il Tag-Along su parzialmente all'interno della vista tronco.
 3. In caso contrario, posizionare il Tag-Along su una distanza predefinita dall'utente.
 
-Per eseguire questa operazione, è necessario prima di tutto modificare lo script **Interactible.cs** per chiamare **TagalongAction**.
+A tale scopo, è necessario innanzitutto modificare lo script **Interactible. cs** per chiamare **TagalongAction**.
 
-1. Modificare **Interactible.cs** completando il codice esercizio 6. a (rimuovendo il commento dalle righe da 84 a 87).
+1. Modificare **Interactible. cs** completando il codice esercizio 6. a (rimuovendo il commento dalle righe da 84 a 87).
 
 ```cs
 /* TODO: DEVELOPER CODING EXERCISE 6.a */
@@ -337,9 +337,9 @@ if (interactibleAction != null)
 }
 ```
 
-Lo script **InteractibleAction.cs** , associato a **Interactible.cs** , esegue azioni personalizzate quando si toccano gli ologrammi. In questo caso, verrà usato uno specifico per il tag-along.
+Lo script **InteractibleAction. cs** , associato a **Interactible. cs** , esegue azioni personalizzate quando si toccano gli ologrammi. In questo caso, verrà usato uno specifico per il tag-along.
 
-* Nella cartella **Scripts** fare clic su **TagalongAction.cs** asset per aprirlo in Visual Studio.
+* Nella cartella **Scripts** fare clic su **TagalongAction. cs** asset per aprirlo in Visual Studio.
 * Completare l'esercizio di codifica o sostituirlo con il seguente:
   * Nella parte superiore della **gerarchia**, nella barra di ricerca digitare **ChestButton_Center** e selezionare il risultato.
   * Nel pannello **Inspector** fare clic sul pulsante **Add Component** .
@@ -357,7 +357,7 @@ Lo script **InteractibleAction.cs** , associato a **Interactible.cs** , esegue a
 * Aggiungere il tabellone all'oggetto guardato su e impostare l'asse pivot su XY.
 * Aggiungere quindi Tag-Along semplici all'oggetto.
 
-Ecco la nostra soluzione, di **TagalongAction.cs**:
+Ecco la nostra soluzione, di **TagalongAction. cs**:
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
