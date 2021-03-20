@@ -9,10 +9,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, esercitazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, unity, unreal, HoloLens, ancoraggi nello spazio di Azure, servizi vocali di Azure
 ms.openlocfilehash: 76c8cdcddd9617df8e823b4967593c37fa1e6bb9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98006521"
 ---
 # <a name="tutorials"></a>Esercitazioni
