@@ -4,81 +4,80 @@ description: UnitTests per controllare reliablity di MRTK.
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, UnitTest,
-ms.openlocfilehash: 958f6ae59736003141d0cc96a6706d211be5709c
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 1a09406eac09a2905bce1b9a7b9d0987a49905d0
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783043"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690798"
 ---
-# <a name="writing-and-running-tests-in-mrtk"></a><span data-ttu-id="dfd93-104">Scrittura ed esecuzione di test in MRTK</span><span class="sxs-lookup"><span data-stu-id="dfd93-104">Writing and running tests in MRTK</span></span>
+# <a name="writing-and-running-tests-in-mrtk"></a><span data-ttu-id="e7129-104">Scrittura ed esecuzione di test in MRTK</span><span class="sxs-lookup"><span data-stu-id="e7129-104">Writing and running tests in MRTK</span></span>
 
-<span data-ttu-id="dfd93-105">Per assicurarsi che MRTK sia affidabile, MRTK dispone di un set di test per garantire che le modifiche apportate al codice non regressionino il comportamento esistente.</span><span class="sxs-lookup"><span data-stu-id="dfd93-105">To ensure MRTK is reliable, MRTK has a set of tests to ensure that changes to the code does not regress existing behavior.</span></span> <span data-ttu-id="dfd93-106">Un ottimo code coverage dei test in una codebase di grandi dimensioni come MRTK è fondamentale per la stabilità e la sicurezza quando si apportano modifiche.</span><span class="sxs-lookup"><span data-stu-id="dfd93-106">Having good test coverage in a big codebase like MRTK is crucial for stability and having confidence when making changes.</span></span>
+<span data-ttu-id="e7129-105">Per assicurarsi che MRTK sia affidabile, MRTK dispone di un set di test per garantire che le modifiche apportate al codice non regressionino il comportamento esistente.</span><span class="sxs-lookup"><span data-stu-id="e7129-105">To ensure MRTK is reliable, MRTK has a set of tests to ensure that changes to the code does not regress existing behavior.</span></span> <span data-ttu-id="e7129-106">Un ottimo code coverage dei test in una codebase di grandi dimensioni come MRTK è fondamentale per la stabilità e la sicurezza quando si apportano modifiche.</span><span class="sxs-lookup"><span data-stu-id="e7129-106">Having good test coverage in a big codebase like MRTK is crucial for stability and having confidence when making changes.</span></span>
 
-<span data-ttu-id="dfd93-107">MRTK usa il [Test Runner Unity](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) che usa un'integrazione di Unity di [NUnit](https://nunit.org/).</span><span class="sxs-lookup"><span data-stu-id="dfd93-107">MRTK uses the [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) which uses a Unity integration of [NUnit](https://nunit.org/).</span></span> <span data-ttu-id="dfd93-108">Questa guida fornirà un punto di partenza per l'aggiunta di test a MRTK.</span><span class="sxs-lookup"><span data-stu-id="dfd93-108">This guide will provide a starting point on how to add tests to MRTK.</span></span> <span data-ttu-id="dfd93-109">Non verranno illustrati [unit test runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) e [NUnit](https://nunit.org/) che possono essere cercati nei collegamenti forniti.</span><span class="sxs-lookup"><span data-stu-id="dfd93-109">It will not explain the [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) and [NUnit](https://nunit.org/) which can be looked up in the links provided.</span></span>
+<span data-ttu-id="e7129-107">MRTK usa il [Test Runner Unity](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) che usa un'integrazione di Unity di [NUnit](https://nunit.org/).</span><span class="sxs-lookup"><span data-stu-id="e7129-107">MRTK uses the [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) which uses a Unity integration of [NUnit](https://nunit.org/).</span></span> <span data-ttu-id="e7129-108">Questa guida fornirà un punto di partenza per l'aggiunta di test a MRTK.</span><span class="sxs-lookup"><span data-stu-id="e7129-108">This guide will provide a starting point on how to add tests to MRTK.</span></span> <span data-ttu-id="e7129-109">Non verranno illustrati [unit test runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) e [NUnit](https://nunit.org/) che possono essere cercati nei collegamenti forniti.</span><span class="sxs-lookup"><span data-stu-id="e7129-109">It will not explain the [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) and [NUnit](https://nunit.org/) which can be looked up in the links provided.</span></span>
 
-<span data-ttu-id="dfd93-110">Prima di inviare una richiesta pull, assicurarsi di:</span><span class="sxs-lookup"><span data-stu-id="dfd93-110">Before submitting a pull request, make sure to:</span></span>
+<span data-ttu-id="e7129-110">Prima di inviare una richiesta pull, assicurarsi di:</span><span class="sxs-lookup"><span data-stu-id="e7129-110">Before submitting a pull request, make sure to:</span></span>
 
-1. <span data-ttu-id="dfd93-111">Eseguire i test in locale, in modo che le modifiche non regressionino il comportamento esistente (il completamento delle richieste pull non sarà consentito in caso di esito negativo</span><span class="sxs-lookup"><span data-stu-id="dfd93-111">Run the tests locally so your changes don't regress existing behavior (completing PRs won't be allowed if any tests fail).</span></span>
+1. <span data-ttu-id="e7129-111">Eseguire i test in locale, in modo che le modifiche non regressionino il comportamento esistente (il completamento delle richieste pull non sarà consentito in caso di esito negativo</span><span class="sxs-lookup"><span data-stu-id="e7129-111">Run the tests locally so your changes don't regress existing behavior (completing PRs won't be allowed if any tests fail).</span></span>
 
-1. <span data-ttu-id="dfd93-112">Se si corregge un bug, scrivere un test per testare la correzione e assicurarsi che le future modifiche al codice non lo interrompano nuovamente.</span><span class="sxs-lookup"><span data-stu-id="dfd93-112">If fixing a bug, write a test to test the fix and ensure that future code modifications won't break it again.</span></span>
+1. <span data-ttu-id="e7129-112">Se si corregge un bug, scrivere un test per testare la correzione e assicurarsi che le future modifiche al codice non lo interrompano nuovamente.</span><span class="sxs-lookup"><span data-stu-id="e7129-112">If fixing a bug, write a test to test the fix and ensure that future code modifications won't break it again.</span></span>
 
-1. <span data-ttu-id="dfd93-113">Se si scrive una funzionalità, scrivere nuovi test per impedire che le modifiche al codice imminenti comportano l'esecuzione di questa funzionalità</span><span class="sxs-lookup"><span data-stu-id="dfd93-113">If writing a feature, write new tests to prevent upcoming code changes breaking this feature.</span></span>
+1. <span data-ttu-id="e7129-113">Se si scrive una funzionalità, scrivere nuovi test per impedire che le modifiche al codice imminenti comportano l'esecuzione di questa funzionalità</span><span class="sxs-lookup"><span data-stu-id="e7129-113">If writing a feature, write new tests to prevent upcoming code changes breaking this feature.</span></span>
 
-<span data-ttu-id="dfd93-114">Attualmente i test di PlayMode devono essere eseguiti in Unity 2018,4 e possono avere esito negativo in altre versioni di Unity</span><span class="sxs-lookup"><span data-stu-id="dfd93-114">Currently playmode tests are meant to be run in Unity 2018.4 and may fail in other versions of Unity</span></span>
+<span data-ttu-id="e7129-114">Attualmente i test di PlayMode devono essere eseguiti in Unity 2018,4 e possono avere esito negativo in altre versioni di Unity</span><span class="sxs-lookup"><span data-stu-id="e7129-114">Currently playmode tests are meant to be run in Unity 2018.4 and may fail in other versions of Unity</span></span>
 
-## <a name="running-tests"></a><span data-ttu-id="dfd93-115">Esecuzione di test</span><span class="sxs-lookup"><span data-stu-id="dfd93-115">Running tests</span></span>
+## <a name="running-tests"></a><span data-ttu-id="e7129-115">Esecuzione di test</span><span class="sxs-lookup"><span data-stu-id="e7129-115">Running tests</span></span>
 
-### <a name="unity-editor"></a><span data-ttu-id="dfd93-116">Editor Unity</span><span class="sxs-lookup"><span data-stu-id="dfd93-116">Unity editor</span></span>
+### <a name="unity-editor"></a><span data-ttu-id="e7129-116">Editor Unity</span><span class="sxs-lookup"><span data-stu-id="e7129-116">Unity editor</span></span>
 
-<span data-ttu-id="dfd93-117">[Unit test runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) si trova in **finestra**  >  **generale**  >  **Test Runner** e Mostra tutti i test disponibili in modalità di riproduzione e modifica MRTK.</span><span class="sxs-lookup"><span data-stu-id="dfd93-117">The [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) can be found under **Window** > **General** > **Test Runner** and will show all available MRTK play and edit mode tests.</span></span>
+<span data-ttu-id="e7129-117">[Unit test runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) si trova in **finestra**  >  **generale**  >  **Test Runner** e Mostra tutti i test disponibili in modalità di riproduzione e modifica MRTK.</span><span class="sxs-lookup"><span data-stu-id="e7129-117">The [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) can be found under **Window** > **General** > **Test Runner** and will show all available MRTK play and edit mode tests.</span></span>
 
-### <a name="command-line"></a><span data-ttu-id="dfd93-118">Riga di comando</span><span class="sxs-lookup"><span data-stu-id="dfd93-118">Command line</span></span>
+### <a name="command-line"></a><span data-ttu-id="e7129-118">Riga di comando</span><span class="sxs-lookup"><span data-stu-id="e7129-118">Command line</span></span>
 
-<span data-ttu-id="dfd93-119">I test possono essere eseguiti anche da uno script di [PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-6add&preserve-view=true) che si trova in `Scripts\test\run_playmode_tests.ps1` .</span><span class="sxs-lookup"><span data-stu-id="dfd93-119">Tests can also be run by a [powershell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-6add&preserve-view=true) script located at `Scripts\test\run_playmode_tests.ps1`.</span></span> <span data-ttu-id="dfd93-120">Verranno eseguiti i test PlayMode esattamente come vengono eseguiti in GitHub/CI (vedere di seguito) e i risultati di stampa.</span><span class="sxs-lookup"><span data-stu-id="dfd93-120">This will run the playmode tests exactly as they are executed on github / CI (see below), and print results.</span></span> <span data-ttu-id="dfd93-121">Di seguito sono riportati alcuni esempi di come eseguire lo script</span><span class="sxs-lookup"><span data-stu-id="dfd93-121">Here are some examples of how to run the script</span></span>
+<span data-ttu-id="e7129-119">I test possono essere eseguiti anche da uno script di [PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-6add&preserve-view=true) che si trova in `Scripts\test\run_playmode_tests.ps1` .</span><span class="sxs-lookup"><span data-stu-id="e7129-119">Tests can also be run by a [powershell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-6add&preserve-view=true) script located at `Scripts\test\run_playmode_tests.ps1`.</span></span> <span data-ttu-id="e7129-120">Verranno eseguiti i test PlayMode esattamente come vengono eseguiti in GitHub/CI (vedere di seguito) e i risultati di stampa.</span><span class="sxs-lookup"><span data-stu-id="e7129-120">This will run the playmode tests exactly as they are executed on github / CI (see below), and print results.</span></span> <span data-ttu-id="e7129-121">Di seguito sono riportati alcuni esempi di come eseguire lo script</span><span class="sxs-lookup"><span data-stu-id="e7129-121">Here are some examples of how to run the script</span></span>
 
-<span data-ttu-id="dfd93-122">Eseguire i test nel progetto situato in H:\mrtk.dev, con Unity 2018,4 (ad esempio Unity 2018.4.26 F1)</span><span class="sxs-lookup"><span data-stu-id="dfd93-122">Run the tests on the project located at H:\mrtk.dev, with Unity 2018.4 (for example Unity 2018.4.26f1)</span></span>
+<span data-ttu-id="e7129-122">Eseguire i test nel progetto situato in H:\mrtk.dev, con Unity 2018,4 (ad esempio Unity 2018.4.26 F1)</span><span class="sxs-lookup"><span data-stu-id="e7129-122">Run the tests on the project located at H:\mrtk.dev, with Unity 2018.4 (for example Unity 2018.4.26f1)</span></span>
 
 ```ps
 .\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe"
 ```
 
-<span data-ttu-id="dfd93-123">Eseguire i test nel progetto situato in H:\mrtk.dev, con Unity 2018,4, output results to C:\ playmode_test_out</span><span class="sxs-lookup"><span data-stu-id="dfd93-123">Run the tests on the project located at H:\mrtk.dev, with Unity 2018.4, output results to C:\playmode_test_out</span></span>
+<span data-ttu-id="e7129-123">Eseguire i test nel progetto situato in H:\mrtk.dev, con Unity 2018,4, output results to C:\ playmode_test_out</span><span class="sxs-lookup"><span data-stu-id="e7129-123">Run the tests on the project located at H:\mrtk.dev, with Unity 2018.4, output results to C:\playmode_test_out</span></span>
 
 ```ps
 .\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe" -outFolder "C:\playmode_test_out\"
 ```
 
-<span data-ttu-id="dfd93-124">È anche possibile eseguire i test di PlayMode più volte tramite lo `run_repeat_tests.ps1` script.</span><span class="sxs-lookup"><span data-stu-id="dfd93-124">It's also possible to run the playmode tests multiple times via the `run_repeat_tests.ps1` script.</span></span> <span data-ttu-id="dfd93-125">È possibile utilizzare tutti i parametri utilizzati in `run_playmode_tests.ps1` .</span><span class="sxs-lookup"><span data-stu-id="dfd93-125">All parameters used in `run_playmode_tests.ps1` may be used.</span></span>
+<span data-ttu-id="e7129-124">È anche possibile eseguire i test di PlayMode più volte tramite lo `run_repeat_tests.ps1` script.</span><span class="sxs-lookup"><span data-stu-id="e7129-124">It's also possible to run the playmode tests multiple times via the `run_repeat_tests.ps1` script.</span></span> <span data-ttu-id="e7129-125">È possibile utilizzare tutti i parametri utilizzati in `run_playmode_tests.ps1` .</span><span class="sxs-lookup"><span data-stu-id="e7129-125">All parameters used in `run_playmode_tests.ps1` may be used.</span></span>
 
 ```ps
 .\run_repeat_tests.ps1 -Times 5
 ```
 
-### <a name="pull-request-validation"></a><span data-ttu-id="dfd93-126">Convalida richiesta pull</span><span class="sxs-lookup"><span data-stu-id="dfd93-126">Pull request validation</span></span>
+### <a name="pull-request-validation"></a><span data-ttu-id="e7129-126">Convalida richiesta pull</span><span class="sxs-lookup"><span data-stu-id="e7129-126">Pull request validation</span></span>
 
-<span data-ttu-id="dfd93-127">CI compilerà MRTK in tutte le configurazioni ed eseguirà tutti i test in modalità di modifica e riproduzione.</span><span class="sxs-lookup"><span data-stu-id="dfd93-127">MRTK's CI will build MRTK in all configurations and run all edit and play mode tests.</span></span> <span data-ttu-id="dfd93-128">CI può essere attivato inviando un commento in GitHub pull `/azp run mrtk_pr` se l'utente dispone di diritti sufficienti.</span><span class="sxs-lookup"><span data-stu-id="dfd93-128">CI can be triggered by posting a comment on the github PR `/azp run mrtk_pr` if the user has sufficient rights.</span></span> <span data-ttu-id="dfd93-129">Le esecuzioni CI possono essere visualizzate nella scheda ' verifiche ' della richiesta pull.</span><span class="sxs-lookup"><span data-stu-id="dfd93-129">CI runs can be seen in the 'checks' tab of the PR.</span></span>
+<span data-ttu-id="e7129-127">CI compilerà MRTK in tutte le configurazioni ed eseguirà tutti i test in modalità di modifica e riproduzione.</span><span class="sxs-lookup"><span data-stu-id="e7129-127">MRTK's CI will build MRTK in all configurations and run all edit and play mode tests.</span></span> <span data-ttu-id="e7129-128">CI può essere attivato inviando un commento in GitHub pull `/azp run mrtk_pr` se l'utente dispone di diritti sufficienti.</span><span class="sxs-lookup"><span data-stu-id="e7129-128">CI can be triggered by posting a comment on the github PR `/azp run mrtk_pr` if the user has sufficient rights.</span></span> <span data-ttu-id="e7129-129">Le esecuzioni CI possono essere visualizzate nella scheda ' verifiche ' della richiesta pull.</span><span class="sxs-lookup"><span data-stu-id="e7129-129">CI runs can be seen in the 'checks' tab of the PR.</span></span>
 
-<span data-ttu-id="dfd93-130">Solo dopo che tutti i test sono stati superati, è possibile eseguire il merge della richiesta pull in mrtk_development.</span><span class="sxs-lookup"><span data-stu-id="dfd93-130">Only after all of the tests have passed successfully can the PR be merged into mrtk_development.</span></span>
+<span data-ttu-id="e7129-130">Solo dopo che tutti i test sono stati superati, è possibile eseguire il merge della richiesta pull in mrtk_development.</span><span class="sxs-lookup"><span data-stu-id="e7129-130">Only after all of the tests have passed successfully can the PR be merged into mrtk_development.</span></span>
 
-### <a name="stress-tests--bulk-tests"></a><span data-ttu-id="dfd93-131">Test di stress/test bulk</span><span class="sxs-lookup"><span data-stu-id="dfd93-131">Stress tests / bulk tests</span></span>
+### <a name="stress-tests--bulk-tests"></a><span data-ttu-id="e7129-131">Test di stress/test bulk</span><span class="sxs-lookup"><span data-stu-id="e7129-131">Stress tests / bulk tests</span></span>
 
-<span data-ttu-id="dfd93-132">A volte i test avranno esito negativo solo occasionalmente, che può essere frustrante per eseguire il debug.</span><span class="sxs-lookup"><span data-stu-id="dfd93-132">Sometimes tests will only fail occasionally which can be frustrating to debug.</span></span>
+<span data-ttu-id="e7129-132">A volte i test avranno esito negativo solo occasionalmente, che può essere frustrante per eseguire il debug.</span><span class="sxs-lookup"><span data-stu-id="e7129-132">Sometimes tests will only fail occasionally which can be frustrating to debug.</span></span>
 
-<span data-ttu-id="dfd93-133">Per eseguire più test in locale, modificare gli script di test in base a.</span><span class="sxs-lookup"><span data-stu-id="dfd93-133">To have multiple test runs locally, modify the according test scripts.</span></span> <span data-ttu-id="dfd93-134">Lo script Python seguente dovrebbe rendere questo scenario più pratico.</span><span class="sxs-lookup"><span data-stu-id="dfd93-134">The following python script should make this scenario more convenient.</span></span>
+<span data-ttu-id="e7129-133">Per eseguire più test in locale, modificare gli script di test in base a.</span><span class="sxs-lookup"><span data-stu-id="e7129-133">To have multiple test runs locally, modify the according test scripts.</span></span> <span data-ttu-id="e7129-134">Lo script Python seguente dovrebbe rendere questo scenario più pratico.</span><span class="sxs-lookup"><span data-stu-id="e7129-134">The following python script should make this scenario more convenient.</span></span>
 
-<span data-ttu-id="dfd93-135">Il prerequisito per l'esecuzione dello script Python è che [Python 3. X è installato](https://www.python.org/downloads/).</span><span class="sxs-lookup"><span data-stu-id="dfd93-135">Prerequisite for running the python script is having [Python 3.X installed](https://www.python.org/downloads/).</span></span>
+<span data-ttu-id="e7129-135">Il prerequisito per l'esecuzione dello script Python è che [Python 3. X è installato](https://www.python.org/downloads/).</span><span class="sxs-lookup"><span data-stu-id="e7129-135">Prerequisite for running the python script is having [Python 3.X installed](https://www.python.org/downloads/).</span></span>
 
-<span data-ttu-id="dfd93-136">Per un singolo test che deve essere eseguito più volte:</span><span class="sxs-lookup"><span data-stu-id="dfd93-136">For a single test that needs to be executed multiple times:</span></span>
+<span data-ttu-id="e7129-136">Per un singolo test che deve essere eseguito più volte:</span><span class="sxs-lookup"><span data-stu-id="e7129-136">For a single test that needs to be executed multiple times:</span></span>
 
 ```c#
 [UnityTest]
 public IEnumerator MyTest() {...}
 ```
 
-<span data-ttu-id="dfd93-137">Eseguire il comando seguente da una riga di comando (si consiglia[PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-6#powershell-coreadd&preserve-view=true) )</span><span class="sxs-lookup"><span data-stu-id="dfd93-137">Run the following from a command line ([PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-6#powershell-coreadd&preserve-view=true) is recommended)</span></span>
+<span data-ttu-id="e7129-137">Eseguire il comando seguente da una riga di comando (si consiglia[PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-6#powershell-coreadd&preserve-view=true) )</span><span class="sxs-lookup"><span data-stu-id="e7129-137">Run the following from a command line ([PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-6#powershell-coreadd&preserve-view=true) is recommended)</span></span>
 
 ```powershell
 cd scripts\tests
@@ -86,7 +85,7 @@ cd scripts\tests
 python .\generate_repeat_tests.py -n 5 -t MyTest
 ```
 
-<span data-ttu-id="dfd93-138">Copiare e incollare l'output nel file di test.</span><span class="sxs-lookup"><span data-stu-id="dfd93-138">Copy and paste the output into your test file.</span></span> <span data-ttu-id="dfd93-139">Lo script seguente è per l'esecuzione di più test in sequenza:</span><span class="sxs-lookup"><span data-stu-id="dfd93-139">The following script is for running multiple tests in sequence:</span></span>
+<span data-ttu-id="e7129-138">Copiare e incollare l'output nel file di test.</span><span class="sxs-lookup"><span data-stu-id="e7129-138">Copy and paste the output into your test file.</span></span> <span data-ttu-id="e7129-139">Lo script seguente è per l'esecuzione di più test in sequenza:</span><span class="sxs-lookup"><span data-stu-id="e7129-139">The following script is for running multiple tests in sequence:</span></span>
 
 ```powershell
 cd scripts\tests
@@ -94,7 +93,7 @@ cd scripts\tests
 python .\generate_repeat_tests.py -n 5 -t MyTest MySecondTest
 ```
 
-<span data-ttu-id="dfd93-140">Il nuovo file di test dovrebbe ora contenere</span><span class="sxs-lookup"><span data-stu-id="dfd93-140">The new test file should now contain</span></span>
+<span data-ttu-id="e7129-140">Il nuovo file di test dovrebbe ora contenere</span><span class="sxs-lookup"><span data-stu-id="e7129-140">The new test file should now contain</span></span>
 
 ```c#
 [UnityTest]
@@ -109,26 +108,26 @@ public IEnumerator A4MyTest0(){ yield return MyTest();}
 public IEnumerator MyTest() {...}
 ```
 
-<span data-ttu-id="dfd93-141">Aprire Test Runner e osservare i nuovi test che ora possono essere chiamati ripetutamente.</span><span class="sxs-lookup"><span data-stu-id="dfd93-141">Open the test runner and observe the new tests that can now be called repeatedly.</span></span>
+<span data-ttu-id="e7129-141">Aprire Test Runner e osservare i nuovi test che ora possono essere chiamati ripetutamente.</span><span class="sxs-lookup"><span data-stu-id="e7129-141">Open the test runner and observe the new tests that can now be called repeatedly.</span></span>
 
-## <a name="writing-tests"></a><span data-ttu-id="dfd93-142">Scrittura di test</span><span class="sxs-lookup"><span data-stu-id="dfd93-142">Writing tests</span></span>
+## <a name="writing-tests"></a><span data-ttu-id="e7129-142">Scrittura di test</span><span class="sxs-lookup"><span data-stu-id="e7129-142">Writing tests</span></span>
 
-<span data-ttu-id="dfd93-143">Esistono due tipi di test che è possibile aggiungere per il nuovo codice</span><span class="sxs-lookup"><span data-stu-id="dfd93-143">There are two types of tests that can be added for new code</span></span>
+<span data-ttu-id="e7129-143">Esistono due tipi di test che è possibile aggiungere per il nuovo codice</span><span class="sxs-lookup"><span data-stu-id="e7129-143">There are two types of tests that can be added for new code</span></span>
 
-* <span data-ttu-id="dfd93-144">Test in modalità di riproduzione</span><span class="sxs-lookup"><span data-stu-id="dfd93-144">Play mode tests</span></span>
-* <span data-ttu-id="dfd93-145">Test in modalità di modifica</span><span class="sxs-lookup"><span data-stu-id="dfd93-145">Edit mode tests</span></span>
+* <span data-ttu-id="e7129-144">Test in modalità di riproduzione</span><span class="sxs-lookup"><span data-stu-id="e7129-144">Play mode tests</span></span>
+* <span data-ttu-id="e7129-145">Test in modalità di modifica</span><span class="sxs-lookup"><span data-stu-id="e7129-145">Edit mode tests</span></span>
 
-### <a name="play-mode-tests"></a><span data-ttu-id="dfd93-146">Test in modalità di riproduzione</span><span class="sxs-lookup"><span data-stu-id="dfd93-146">Play mode tests</span></span>
+### <a name="play-mode-tests"></a><span data-ttu-id="e7129-146">Test in modalità di riproduzione</span><span class="sxs-lookup"><span data-stu-id="e7129-146">Play mode tests</span></span>
 
-<span data-ttu-id="dfd93-147">I test in modalità di riproduzione MRTK sono in grado di testare il modo in cui la nuova funzionalità risponde a diverse origini di input, ad esempio mani o occhi.</span><span class="sxs-lookup"><span data-stu-id="dfd93-147">MRTK play mode tests have the ability to test how your new feature responds to different input sources such as hands or eyes.</span></span>
+<span data-ttu-id="e7129-147">I test in modalità di riproduzione MRTK sono in grado di testare il modo in cui la nuova funzionalità risponde a diverse origini di input, ad esempio mani o occhi.</span><span class="sxs-lookup"><span data-stu-id="e7129-147">MRTK play mode tests have the ability to test how your new feature responds to different input sources such as hands or eyes.</span></span>
 
-<span data-ttu-id="dfd93-148">I nuovi test in modalità di riproduzione possono ereditare [BasePlayModeTests](xref:Microsoft.MixedReality.Toolkit.Tests.BasePlayModeTests) o la struttura seguente può essere usata.</span><span class="sxs-lookup"><span data-stu-id="dfd93-148">New play mode tests can inherit [BasePlayModeTests](xref:Microsoft.MixedReality.Toolkit.Tests.BasePlayModeTests) or the skeleton below can be used.</span></span>
+<span data-ttu-id="e7129-148">I nuovi test in modalità di riproduzione possono ereditare [BasePlayModeTests](xref:Microsoft.MixedReality.Toolkit.Tests.BasePlayModeTests) o la struttura seguente può essere usata.</span><span class="sxs-lookup"><span data-stu-id="e7129-148">New play mode tests can inherit [BasePlayModeTests](xref:Microsoft.MixedReality.Toolkit.Tests.BasePlayModeTests) or the skeleton below can be used.</span></span>
 
-<span data-ttu-id="dfd93-149">Per creare un nuovo test in modalità di riproduzione:</span><span class="sxs-lookup"><span data-stu-id="dfd93-149">To create a new play mode test:</span></span>
+<span data-ttu-id="e7129-149">Per creare un nuovo test in modalità di riproduzione:</span><span class="sxs-lookup"><span data-stu-id="e7129-149">To create a new play mode test:</span></span>
 
-* <span data-ttu-id="dfd93-150">Passare a Asset > MRTK > test > PlayModeTests</span><span class="sxs-lookup"><span data-stu-id="dfd93-150">Navigate to Assets > MRTK > Tests > PlayModeTests</span></span>
-* <span data-ttu-id="dfd93-151">Fare clic con il pulsante destro del mouse su Crea > test > script di test C#</span><span class="sxs-lookup"><span data-stu-id="dfd93-151">Right click, Create > Testing > C# Test Script</span></span>
-* <span data-ttu-id="dfd93-152">Sostituire il modello predefinito con lo scheletro riportato di seguito</span><span class="sxs-lookup"><span data-stu-id="dfd93-152">Replace the default template with the skeleton below</span></span>
+* <span data-ttu-id="e7129-150">Passare a Asset > MRTK > test > PlayModeTests</span><span class="sxs-lookup"><span data-stu-id="e7129-150">Navigate to Assets > MRTK > Tests > PlayModeTests</span></span>
+* <span data-ttu-id="e7129-151">Fare clic con il pulsante destro del mouse su Crea > test > script di test C#</span><span class="sxs-lookup"><span data-stu-id="e7129-151">Right click, Create > Testing > C# Test Script</span></span>
+* <span data-ttu-id="e7129-152">Sostituire il modello predefinito con lo scheletro riportato di seguito</span><span class="sxs-lookup"><span data-stu-id="e7129-152">Replace the default template with the skeleton below</span></span>
 
 ```c#
 #if !WINDOWS_UWP
@@ -220,10 +219,10 @@ namespace Microsoft.MixedReality.Toolkit.Tests
 #endif
 ```
 
-### <a name="edit-mode-tests"></a><span data-ttu-id="dfd93-153">Test in modalità di modifica</span><span class="sxs-lookup"><span data-stu-id="dfd93-153">Edit mode tests</span></span>
+### <a name="edit-mode-tests"></a><span data-ttu-id="e7129-153">Test in modalità di modifica</span><span class="sxs-lookup"><span data-stu-id="e7129-153">Edit mode tests</span></span>
 
-<span data-ttu-id="dfd93-154">I test in modalità di modifica vengono eseguiti in modalità di modifica di Unity e possono essere aggiunti nella  >  cartella **test** MRTK  >  **EditModeTests** nel repository del Toolkit di realtà mista.</span><span class="sxs-lookup"><span data-stu-id="dfd93-154">Edit mode tests are executed in Unity's edit mode and can be added under the **MRTK** > **Tests** > **EditModeTests** folder in the Mixed Reality Toolkit repo.</span></span>
-<span data-ttu-id="dfd93-155">Per creare un nuovo test è possibile usare il modello seguente:</span><span class="sxs-lookup"><span data-stu-id="dfd93-155">To create a new test the following template can be used:</span></span>
+<span data-ttu-id="e7129-154">I test in modalità di modifica vengono eseguiti in modalità di modifica di Unity e possono essere aggiunti nella  >  cartella **test** MRTK  >  **EditModeTests** nel repository del Toolkit di realtà mista.</span><span class="sxs-lookup"><span data-stu-id="e7129-154">Edit mode tests are executed in Unity's edit mode and can be added under the **MRTK** > **Tests** > **EditModeTests** folder in the Mixed Reality Toolkit repo.</span></span>
+<span data-ttu-id="e7129-155">Per creare un nuovo test è possibile usare il modello seguente:</span><span class="sxs-lookup"><span data-stu-id="e7129-155">To create a new test the following template can be used:</span></span>
 
 ```c#
 // Copyright (c) Microsoft Corporation.
@@ -245,10 +244,10 @@ namespace Microsoft.MixedReality.Toolkit.Tests
 }
 ```
 
-### <a name="test-naming-conventions"></a><span data-ttu-id="dfd93-156">Testare le convenzioni di denominazione</span><span class="sxs-lookup"><span data-stu-id="dfd93-156">Test naming conventions</span></span>
+### <a name="test-naming-conventions"></a><span data-ttu-id="e7129-156">Testare le convenzioni di denominazione</span><span class="sxs-lookup"><span data-stu-id="e7129-156">Test naming conventions</span></span>
 
-<span data-ttu-id="dfd93-157">I test devono essere in genere denominati in base alla classe da testare o allo scenario che sta testando.</span><span class="sxs-lookup"><span data-stu-id="dfd93-157">Tests should generally be named based on the class they are testing, or the scenario that they are testing.</span></span>
-<span data-ttu-id="dfd93-158">Ad esempio, data una classe da sottoporre a test:</span><span class="sxs-lookup"><span data-stu-id="dfd93-158">For example, given a to-be-tested class:</span></span>
+<span data-ttu-id="e7129-157">I test devono essere in genere denominati in base alla classe da testare o allo scenario che sta testando.</span><span class="sxs-lookup"><span data-stu-id="e7129-157">Tests should generally be named based on the class they are testing, or the scenario that they are testing.</span></span>
+<span data-ttu-id="e7129-158">Ad esempio, data una classe da sottoporre a test:</span><span class="sxs-lookup"><span data-stu-id="e7129-158">For example, given a to-be-tested class:</span></span>
 
 ```c#
 namespace Microsoft.MixedReality.Toolkit.Input
@@ -259,7 +258,7 @@ namespace Microsoft.MixedReality.Toolkit.Input
 }
 ```
 
-<span data-ttu-id="dfd93-159">Prendere in considerazione la denominazione del test</span><span class="sxs-lookup"><span data-stu-id="dfd93-159">Consider naming the test</span></span>
+<span data-ttu-id="e7129-159">Prendere in considerazione la denominazione del test</span><span class="sxs-lookup"><span data-stu-id="e7129-159">Consider naming the test</span></span>
 
 ```c#
 namespace Microsoft.MixedReality.Toolkit.Tests.Input
@@ -270,36 +269,36 @@ namespace Microsoft.MixedReality.Toolkit.Tests.Input
 }
 ```
 
-<span data-ttu-id="dfd93-160">Provare a collocare il test in una gerarchia di cartelle simile al file non di test corrispondente.</span><span class="sxs-lookup"><span data-stu-id="dfd93-160">Consider placing the test in a folder hierarchy that is similar to its corresponding non-test file.</span></span>
-<span data-ttu-id="dfd93-161">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="dfd93-161">For example:</span></span>
+<span data-ttu-id="e7129-160">Provare a collocare il test in una gerarchia di cartelle simile al file non di test corrispondente.</span><span class="sxs-lookup"><span data-stu-id="e7129-160">Consider placing the test in a folder hierarchy that is similar to its corresponding non-test file.</span></span>
+<span data-ttu-id="e7129-161">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="e7129-161">For example:</span></span>
 
 ```md
 Non-Test: Assets/MRTK/Core/Utilities/InterestingUtilityClass.cs
 Test: Assets/MRTK/Tests/EditModeTests/Core/Utilities/InterestingUtilityClassTest.cs
 ```
 
-<span data-ttu-id="dfd93-162">Ciò consente di verificare che esista un modo ovvio per trovare la classe di test corrispondente di ogni classe, se tale classe di test esiste.</span><span class="sxs-lookup"><span data-stu-id="dfd93-162">This is to ensure that there's a clear an obvious way of finding each class's corresponding test class, if such a test class exists.</span></span>
+<span data-ttu-id="e7129-162">Ciò consente di verificare che esista un modo ovvio per trovare la classe di test corrispondente di ogni classe, se tale classe di test esiste.</span><span class="sxs-lookup"><span data-stu-id="e7129-162">This is to ensure that there's a clear an obvious way of finding each class's corresponding test class, if such a test class exists.</span></span>
 
-<span data-ttu-id="dfd93-163">Il posizionamento dei test basati sullo scenario è meno definito: se il test esercita il sistema di input globale, ad esempio, è consigliabile inserirlo in una cartella "InputSystem" nella cartella di test della modalità di modifica o della modalità di riproduzione corrispondente.</span><span class="sxs-lookup"><span data-stu-id="dfd93-163">Placement of scenario based tests is less defined - if the test exercises the overall input system, for example, consider putting it into an "InputSystem" folder in the corresponding edit mode or play mode test folder.</span></span>
+<span data-ttu-id="e7129-163">Il posizionamento dei test basati sullo scenario è meno definito: se il test esercita il sistema di input globale, ad esempio, è consigliabile inserirlo in una cartella "InputSystem" nella cartella di test della modalità di modifica o della modalità di riproduzione corrispondente.</span><span class="sxs-lookup"><span data-stu-id="e7129-163">Placement of scenario based tests is less defined - if the test exercises the overall input system, for example, consider putting it into an "InputSystem" folder in the corresponding edit mode or play mode test folder.</span></span>
 
-### <a name="test-script-icons"></a><span data-ttu-id="dfd93-164">Icone script di test</span><span class="sxs-lookup"><span data-stu-id="dfd93-164">Test script icons</span></span>
+### <a name="test-script-icons"></a><span data-ttu-id="e7129-164">Icone script di test</span><span class="sxs-lookup"><span data-stu-id="e7129-164">Test script icons</span></span>
 
-<span data-ttu-id="dfd93-165">Quando si aggiunge un nuovo test, modificare lo script in modo che abbia l'icona MRTK corretta.</span><span class="sxs-lookup"><span data-stu-id="dfd93-165">When adding a new test, please modify the script to have the correct MRTK icon.</span></span> <span data-ttu-id="dfd93-166">A tale scopo, è disponibile uno strumento MRTK semplice:</span><span class="sxs-lookup"><span data-stu-id="dfd93-166">There's an easy MRTK tool to do so:</span></span>
+<span data-ttu-id="e7129-165">Quando si aggiunge un nuovo test, modificare lo script in modo che abbia l'icona MRTK corretta.</span><span class="sxs-lookup"><span data-stu-id="e7129-165">When adding a new test, please modify the script to have the correct MRTK icon.</span></span> <span data-ttu-id="e7129-166">A tale scopo, è disponibile uno strumento MRTK semplice:</span><span class="sxs-lookup"><span data-stu-id="e7129-166">There's an easy MRTK tool to do so:</span></span>
 
-1. <span data-ttu-id="dfd93-167">Vai alla voce di menu del Toolkit per realtà mista</span><span class="sxs-lookup"><span data-stu-id="dfd93-167">Go go the Mixed Reality Toolkit menu item</span></span>
-1. <span data-ttu-id="dfd93-168">Fare clic su utilità, quindi su Aggiorna e quindi su icone</span><span class="sxs-lookup"><span data-stu-id="dfd93-168">Click on Utilities, then Update, then Icons</span></span>
-1. <span data-ttu-id="dfd93-169">Fare clic su test e l'aggiornamento verrà eseguito automaticamente, aggiornando gli script di test privi di icone</span><span class="sxs-lookup"><span data-stu-id="dfd93-169">Click on Tests, and the updater will run automatically, updating any test scripts missing their icons</span></span>
+1. <span data-ttu-id="e7129-167">Vai alla voce di menu del Toolkit per realtà mista</span><span class="sxs-lookup"><span data-stu-id="e7129-167">Go go the Mixed Reality Toolkit menu item</span></span>
+1. <span data-ttu-id="e7129-168">Fare clic su utilità, quindi su Aggiorna e quindi su icone</span><span class="sxs-lookup"><span data-stu-id="e7129-168">Click on Utilities, then Update, then Icons</span></span>
+1. <span data-ttu-id="e7129-169">Fare clic su test e l'aggiornamento verrà eseguito automaticamente, aggiornando gli script di test privi di icone</span><span class="sxs-lookup"><span data-stu-id="e7129-169">Click on Tests, and the updater will run automatically, updating any test scripts missing their icons</span></span>
 
-### <a name="mrtk-utility-methods"></a><span data-ttu-id="dfd93-170">Metodi di utilità MRTK</span><span class="sxs-lookup"><span data-stu-id="dfd93-170">MRTK Utility methods</span></span>
+### <a name="mrtk-utility-methods"></a><span data-ttu-id="e7129-170">Metodi di utilità MRTK</span><span class="sxs-lookup"><span data-stu-id="e7129-170">MRTK Utility methods</span></span>
 
-<span data-ttu-id="dfd93-171">Questa sezione illustra alcuni dei frammenti di codice/metodi di uso comune durante la scrittura di test per MRTK.</span><span class="sxs-lookup"><span data-stu-id="dfd93-171">This section shows some of the commonly used code snippets / methods when writing tests for MRTK.</span></span>
+<span data-ttu-id="e7129-171">Questa sezione illustra alcuni dei frammenti di codice/metodi di uso comune durante la scrittura di test per MRTK.</span><span class="sxs-lookup"><span data-stu-id="e7129-171">This section shows some of the commonly used code snippets / methods when writing tests for MRTK.</span></span>
 
-<span data-ttu-id="dfd93-172">Sono disponibili due classi di utilità che semplificano la configurazione di MRTK e il test delle interazioni con i componenti in MRTK</span><span class="sxs-lookup"><span data-stu-id="dfd93-172">There are two Utility classes that help with setting up MRTK and testing interactions with components in MRTK</span></span>
+<span data-ttu-id="e7129-172">Sono disponibili due classi di utilità che semplificano la configurazione di MRTK e il test delle interazioni con i componenti in MRTK</span><span class="sxs-lookup"><span data-stu-id="e7129-172">There are two Utility classes that help with setting up MRTK and testing interactions with components in MRTK</span></span>
 
 * [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities)
 * [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities)
 
-<span data-ttu-id="dfd93-173">TestUtilities fornisce i metodi seguenti per configurare la scena MRTK e GameObject:</span><span class="sxs-lookup"><span data-stu-id="dfd93-173">TestUtilities provide the following methods to set up your MRTK scene and GameObjects:</span></span>
+<span data-ttu-id="e7129-173">TestUtilities fornisce i metodi seguenti per configurare la scena MRTK e GameObject:</span><span class="sxs-lookup"><span data-stu-id="e7129-173">TestUtilities provide the following methods to set up your MRTK scene and GameObjects:</span></span>
 
 ```c#
 /// creates the mrtk GameObject and sets the default profile if passed param is true
@@ -315,8 +314,8 @@ TestUtilities.InitializePlayspace();
 TestUtilities.ShutdownMixedRealityToolkit();
 ```
 
-<span data-ttu-id="dfd93-174">Vedere la documentazione dell'API di [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities) e [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities) per altri metodi di queste classi util Man mano che vengono estese a intervalli regolari mentre vengono aggiunti nuovi test a MRTK.</span><span class="sxs-lookup"><span data-stu-id="dfd93-174">Please refer to the API docs of [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities) and [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities) for further methods of these util classes as they're extended on a regular basis while new tests get added to MRTK.</span></span>
+<span data-ttu-id="e7129-174">Vedere la documentazione dell'API di [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities) e [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities) per altri metodi di queste classi util Man mano che vengono estese a intervalli regolari mentre vengono aggiunti nuovi test a MRTK.</span><span class="sxs-lookup"><span data-stu-id="e7129-174">Please refer to the API docs of [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities) and [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities) for further methods of these util classes as they're extended on a regular basis while new tests get added to MRTK.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="dfd93-175">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="dfd93-175">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e7129-175">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="e7129-175">See also</span></span>
 
-* [<span data-ttu-id="dfd93-176">Guida alla generazione del portale della documentazione</span><span class="sxs-lookup"><span data-stu-id="dfd93-176">Documentation portal generation guide</span></span>](DevDocGuide.md)
+* [<span data-ttu-id="e7129-176">Guida alla generazione del portale della documentazione</span><span class="sxs-lookup"><span data-stu-id="e7129-176">Documentation portal generation guide</span></span>](DevDocGuide.md)

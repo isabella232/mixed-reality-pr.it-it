@@ -4,118 +4,117 @@ description: Dettagli per configurare il sistema di limiti in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, sistema di limiti,
-ms.openlocfilehash: 075ba4805d1f792b678c4da6ad67bb0f91798cf4
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 8af3b540504aeded36d5000411d78b27e73e27a8
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783041"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690758"
 ---
-# <a name="configuring-the-boundary-visualization"></a><span data-ttu-id="842b0-104">Configurazione della visualizzazione dei limiti</span><span class="sxs-lookup"><span data-stu-id="842b0-104">Configuring the boundary visualization</span></span>
+# <a name="configuring-the-boundary-visualization"></a><span data-ttu-id="eb946-104">Configurazione della visualizzazione dei limiti</span><span class="sxs-lookup"><span data-stu-id="eb946-104">Configuring the boundary visualization</span></span>
 
-<span data-ttu-id="842b0-105">Il *profilo di visualizzazione dei limiti* fornisce opzioni per la configurazione dell'estetica visiva e di altri parametri correlati per il sistema di limiti.</span><span class="sxs-lookup"><span data-stu-id="842b0-105">The *Boundary Visualization Profile* provides options for configuring the visual aesthetics and other related parameters for the Boundary system.</span></span> <span data-ttu-id="842b0-106">Le visualizzazioni dei limiti sono collegate all'oggetto playspace della realtà mista nella scena e si teletrasportano con l'utente.</span><span class="sxs-lookup"><span data-stu-id="842b0-106">Boundary visualizations are attached to the Mixed Reality Playspace object in the scene and teleport with the user.</span></span>
+<span data-ttu-id="eb946-105">Il *profilo di visualizzazione dei limiti* fornisce opzioni per la configurazione dell'estetica visiva e di altri parametri correlati per il sistema di limiti.</span><span class="sxs-lookup"><span data-stu-id="eb946-105">The *Boundary Visualization Profile* provides options for configuring the visual aesthetics and other related parameters for the Boundary system.</span></span> <span data-ttu-id="eb946-106">Le visualizzazioni dei limiti sono collegate all'oggetto playspace della realtà mista nella scena e si teletrasportano con l'utente.</span><span class="sxs-lookup"><span data-stu-id="eb946-106">Boundary visualizations are attached to the Mixed Reality Playspace object in the scene and teleport with the user.</span></span>
 
-## <a name="general-settings"></a><span data-ttu-id="842b0-107">Impostazioni generali</span><span class="sxs-lookup"><span data-stu-id="842b0-107">General settings</span></span>
+## <a name="general-settings"></a><span data-ttu-id="eb946-107">Impostazioni generali</span><span class="sxs-lookup"><span data-stu-id="eb946-107">General settings</span></span>
 
 ![Impostazioni generali visualizzazione limite](../images/boundary/BoundaryVisualizationGeneralSettings.png)
 
-### <a name="boundary-height"></a><span data-ttu-id="842b0-109">Altezza limite</span><span class="sxs-lookup"><span data-stu-id="842b0-109">Boundary height</span></span>
+### <a name="boundary-height"></a><span data-ttu-id="eb946-109">Altezza limite</span><span class="sxs-lookup"><span data-stu-id="eb946-109">Boundary height</span></span>
 
-<span data-ttu-id="842b0-110">L'altezza del limite indica la distanza al di sopra del piano di pavimento in corrispondenza della quale deve essere eseguito il rendering del limite massimo.</span><span class="sxs-lookup"><span data-stu-id="842b0-110">The boundary height indicates the distance above the floor plane at which the boundary ceiling should be rendered.</span></span> <span data-ttu-id="842b0-111">Il valore predefinito è 3 metri.</span><span class="sxs-lookup"><span data-stu-id="842b0-111">The default value is 3 meters.</span></span>
+<span data-ttu-id="eb946-110">L'altezza del limite indica la distanza al di sopra del piano di pavimento in corrispondenza della quale deve essere eseguito il rendering del limite massimo.</span><span class="sxs-lookup"><span data-stu-id="eb946-110">The boundary height indicates the distance above the floor plane at which the boundary ceiling should be rendered.</span></span> <span data-ttu-id="eb946-111">Il valore predefinito è 3 metri.</span><span class="sxs-lookup"><span data-stu-id="eb946-111">The default value is 3 meters.</span></span>
 
-## <a name="floor-settings"></a><span data-ttu-id="842b0-112">Impostazioni del piano</span><span class="sxs-lookup"><span data-stu-id="842b0-112">Floor settings</span></span>
+## <a name="floor-settings"></a><span data-ttu-id="eb946-112">Impostazioni del piano</span><span class="sxs-lookup"><span data-stu-id="eb946-112">Floor settings</span></span>
 
 ![Impostazioni del piano visualizzazione limite](../images/boundary/BoundaryVisualizationFloorSettings.png)
 
-<span data-ttu-id="842b0-114">**Mostra**</span><span class="sxs-lookup"><span data-stu-id="842b0-114">**Show**</span></span>
+<span data-ttu-id="eb946-114">**Mostra**</span><span class="sxs-lookup"><span data-stu-id="eb946-114">**Show**</span></span>
 
-<span data-ttu-id="842b0-115">Indica se un piano di piano deve essere creato e aggiunto alla scena.</span><span class="sxs-lookup"><span data-stu-id="842b0-115">Indicates whether or not a floor plane is to be created and added to the scene.</span></span> <span data-ttu-id="842b0-116">Il valore predefinito è true.</span><span class="sxs-lookup"><span data-stu-id="842b0-116">The default value is true.</span></span>
+<span data-ttu-id="eb946-115">Indica se un piano di piano deve essere creato e aggiunto alla scena.</span><span class="sxs-lookup"><span data-stu-id="eb946-115">Indicates whether or not a floor plane is to be created and added to the scene.</span></span> <span data-ttu-id="eb946-116">Il valore predefinito è true.</span><span class="sxs-lookup"><span data-stu-id="eb946-116">The default value is true.</span></span>
 
-<span data-ttu-id="842b0-117">**Materiale**</span><span class="sxs-lookup"><span data-stu-id="842b0-117">**Material**</span></span>
+<span data-ttu-id="eb946-117">**Materiale**</span><span class="sxs-lookup"><span data-stu-id="eb946-117">**Material**</span></span>
 
-<span data-ttu-id="842b0-118">Indica il materiale da utilizzare durante la creazione del piano di piano.</span><span class="sxs-lookup"><span data-stu-id="842b0-118">Indicates the material that should be used when creating the floor plane.</span></span>
+<span data-ttu-id="eb946-118">Indica il materiale da utilizzare durante la creazione del piano di piano.</span><span class="sxs-lookup"><span data-stu-id="eb946-118">Indicates the material that should be used when creating the floor plane.</span></span>
 
-<span data-ttu-id="842b0-119">**Ridimensiona**</span><span class="sxs-lookup"><span data-stu-id="842b0-119">**Scale**</span></span>
+<span data-ttu-id="eb946-119">**Ridimensiona**</span><span class="sxs-lookup"><span data-stu-id="eb946-119">**Scale**</span></span>
 
-<span data-ttu-id="842b0-120">Indica la dimensione, in metri, del piano del piano da creare.</span><span class="sxs-lookup"><span data-stu-id="842b0-120">Indicates the size, in meters, of the floor plane to be created.</span></span> <span data-ttu-id="842b0-121">La scala predefinita è un quadrato da 3 metri x 3 metri.</span><span class="sxs-lookup"><span data-stu-id="842b0-121">The default scale is a 3 meter x 3 meter square.</span></span>
+<span data-ttu-id="eb946-120">Indica la dimensione, in metri, del piano del piano da creare.</span><span class="sxs-lookup"><span data-stu-id="eb946-120">Indicates the size, in meters, of the floor plane to be created.</span></span> <span data-ttu-id="eb946-121">La scala predefinita è un quadrato da 3 metri x 3 metri.</span><span class="sxs-lookup"><span data-stu-id="eb946-121">The default scale is a 3 meter x 3 meter square.</span></span>
 
-<span data-ttu-id="842b0-122">**Livello di fisica**</span><span class="sxs-lookup"><span data-stu-id="842b0-122">**Physics Layer**</span></span>
+<span data-ttu-id="eb946-122">**Livello di fisica**</span><span class="sxs-lookup"><span data-stu-id="eb946-122">**Physics Layer**</span></span>
 
-<span data-ttu-id="842b0-123">Livello sul quale deve essere impostato il piano del piano.</span><span class="sxs-lookup"><span data-stu-id="842b0-123">The layer on which the floor plane should be set.</span></span> <span data-ttu-id="842b0-124">Il valore predefinito è il livello *predefinito* .</span><span class="sxs-lookup"><span data-stu-id="842b0-124">The default value is the *Default* layer.</span></span>
+<span data-ttu-id="eb946-123">Livello sul quale deve essere impostato il piano del piano.</span><span class="sxs-lookup"><span data-stu-id="eb946-123">The layer on which the floor plane should be set.</span></span> <span data-ttu-id="eb946-124">Il valore predefinito è il livello *predefinito* .</span><span class="sxs-lookup"><span data-stu-id="eb946-124">The default value is the *Default* layer.</span></span>
 
-## <a name="play-area-settings"></a><span data-ttu-id="842b0-125">Impostazioni area di riproduzione</span><span class="sxs-lookup"><span data-stu-id="842b0-125">Play area settings</span></span>
+## <a name="play-area-settings"></a><span data-ttu-id="eb946-125">Impostazioni area di riproduzione</span><span class="sxs-lookup"><span data-stu-id="eb946-125">Play area settings</span></span>
 
 ![Impostazioni dell'area di riproduzione della visualizzazione limite](../images/boundary/BoundaryVisualizationPlayAreaSettings.png)
 
-<span data-ttu-id="842b0-127">**Mostra**</span><span class="sxs-lookup"><span data-stu-id="842b0-127">**Show**</span></span>
+<span data-ttu-id="eb946-127">**Mostra**</span><span class="sxs-lookup"><span data-stu-id="eb946-127">**Show**</span></span>
 
-<span data-ttu-id="842b0-128">Indica se un rettangolo area di riproduzione viene creato e aggiunto alla scena.</span><span class="sxs-lookup"><span data-stu-id="842b0-128">Indicates whether or not a play area rectangle is be created and added to the scene.</span></span> <span data-ttu-id="842b0-129">Il valore predefinito è true.</span><span class="sxs-lookup"><span data-stu-id="842b0-129">The default value is true.</span></span>
+<span data-ttu-id="eb946-128">Indica se un rettangolo area di riproduzione viene creato e aggiunto alla scena.</span><span class="sxs-lookup"><span data-stu-id="eb946-128">Indicates whether or not a play area rectangle is be created and added to the scene.</span></span> <span data-ttu-id="eb946-129">Il valore predefinito è true.</span><span class="sxs-lookup"><span data-stu-id="eb946-129">The default value is true.</span></span>
 
-<span data-ttu-id="842b0-130">**Materiale**</span><span class="sxs-lookup"><span data-stu-id="842b0-130">**Material**</span></span>
+<span data-ttu-id="eb946-130">**Materiale**</span><span class="sxs-lookup"><span data-stu-id="eb946-130">**Material**</span></span>
 
-<span data-ttu-id="842b0-131">Indica il materiale da utilizzare quando si crea l'oggetto area di riproduzione.</span><span class="sxs-lookup"><span data-stu-id="842b0-131">Indicates the material that should be used when creating the play area object.</span></span>
+<span data-ttu-id="eb946-131">Indica il materiale da utilizzare quando si crea l'oggetto area di riproduzione.</span><span class="sxs-lookup"><span data-stu-id="eb946-131">Indicates the material that should be used when creating the play area object.</span></span>
 
-<span data-ttu-id="842b0-132">**Livello di fisica**</span><span class="sxs-lookup"><span data-stu-id="842b0-132">**Physics Layer**</span></span>
+<span data-ttu-id="eb946-132">**Livello di fisica**</span><span class="sxs-lookup"><span data-stu-id="eb946-132">**Physics Layer**</span></span>
 
-<span data-ttu-id="842b0-133">Il livello in cui deve essere impostata l'area di riproduzione.</span><span class="sxs-lookup"><span data-stu-id="842b0-133">The layer on which the play area should be set.</span></span> <span data-ttu-id="842b0-134">Il valore predefinito è il livello *Ignora Raycast* .</span><span class="sxs-lookup"><span data-stu-id="842b0-134">The default value is the *Ignore Raycast* layer.</span></span>
+<span data-ttu-id="eb946-133">Il livello in cui deve essere impostata l'area di riproduzione.</span><span class="sxs-lookup"><span data-stu-id="eb946-133">The layer on which the play area should be set.</span></span> <span data-ttu-id="eb946-134">Il valore predefinito è il livello *Ignora Raycast* .</span><span class="sxs-lookup"><span data-stu-id="eb946-134">The default value is the *Ignore Raycast* layer.</span></span>
 
-## <a name="tracked-area-settings"></a><span data-ttu-id="842b0-135">Impostazioni area rilevata</span><span class="sxs-lookup"><span data-stu-id="842b0-135">Tracked area settings</span></span>
+## <a name="tracked-area-settings"></a><span data-ttu-id="eb946-135">Impostazioni area rilevata</span><span class="sxs-lookup"><span data-stu-id="eb946-135">Tracked area settings</span></span>
 
 ![Impostazioni area rilevate visualizzazione limite](../images/boundary/BoundaryVisualizationTrackedAreaSettings.png)
 
-<span data-ttu-id="842b0-137">**Mostra**</span><span class="sxs-lookup"><span data-stu-id="842b0-137">**Show**</span></span>
+<span data-ttu-id="eb946-137">**Mostra**</span><span class="sxs-lookup"><span data-stu-id="eb946-137">**Show**</span></span>
 
-<span data-ttu-id="842b0-138">Indica se il contorno dell'area rilevata viene creato e aggiunto alla scena.</span><span class="sxs-lookup"><span data-stu-id="842b0-138">Indicates whether or not the outline of the tracked area is be created and added to the scene.</span></span> <span data-ttu-id="842b0-139">Il valore predefinito è true.</span><span class="sxs-lookup"><span data-stu-id="842b0-139">The default value is true.</span></span>
+<span data-ttu-id="eb946-138">Indica se il contorno dell'area rilevata viene creato e aggiunto alla scena.</span><span class="sxs-lookup"><span data-stu-id="eb946-138">Indicates whether or not the outline of the tracked area is be created and added to the scene.</span></span> <span data-ttu-id="eb946-139">Il valore predefinito è true.</span><span class="sxs-lookup"><span data-stu-id="eb946-139">The default value is true.</span></span>
 
-<span data-ttu-id="842b0-140">**Materiale**</span><span class="sxs-lookup"><span data-stu-id="842b0-140">**Material**</span></span>
+<span data-ttu-id="eb946-140">**Materiale**</span><span class="sxs-lookup"><span data-stu-id="eb946-140">**Material**</span></span>
 
-<span data-ttu-id="842b0-141">Indica il materiale da usare quando si crea il contorno dell'area rilevata.</span><span class="sxs-lookup"><span data-stu-id="842b0-141">Indicates the material that should be used when creating the tracked area outline.</span></span>
+<span data-ttu-id="eb946-141">Indica il materiale da usare quando si crea il contorno dell'area rilevata.</span><span class="sxs-lookup"><span data-stu-id="eb946-141">Indicates the material that should be used when creating the tracked area outline.</span></span>
 
-<span data-ttu-id="842b0-142">**Livello di fisica**</span><span class="sxs-lookup"><span data-stu-id="842b0-142">**Physics Layer**</span></span>
+<span data-ttu-id="eb946-142">**Livello di fisica**</span><span class="sxs-lookup"><span data-stu-id="eb946-142">**Physics Layer**</span></span>
 
-<span data-ttu-id="842b0-143">Il livello in cui deve essere impostata l'area rilevata.</span><span class="sxs-lookup"><span data-stu-id="842b0-143">The layer on which the tracked area should be sets.</span></span> <span data-ttu-id="842b0-144">Il valore predefinito è il livello *Ignora Raycast* .</span><span class="sxs-lookup"><span data-stu-id="842b0-144">The default value is the *Ignore Raycast* layer.</span></span>
+<span data-ttu-id="eb946-143">Il livello in cui deve essere impostata l'area rilevata.</span><span class="sxs-lookup"><span data-stu-id="eb946-143">The layer on which the tracked area should be sets.</span></span> <span data-ttu-id="eb946-144">Il valore predefinito è il livello *Ignora Raycast* .</span><span class="sxs-lookup"><span data-stu-id="eb946-144">The default value is the *Ignore Raycast* layer.</span></span>
 
-## <a name="boundary-wall-settings"></a><span data-ttu-id="842b0-145">Impostazioni muro limite</span><span class="sxs-lookup"><span data-stu-id="842b0-145">Boundary wall settings</span></span>
+## <a name="boundary-wall-settings"></a><span data-ttu-id="eb946-145">Impostazioni muro limite</span><span class="sxs-lookup"><span data-stu-id="eb946-145">Boundary wall settings</span></span>
 
 ![Impostazioni parete limite visualizzazione limite](../images/boundary/BoundaryVisualizationWallSettings.png)
 
-<span data-ttu-id="842b0-147">**Mostra**</span><span class="sxs-lookup"><span data-stu-id="842b0-147">**Show**</span></span>
+<span data-ttu-id="eb946-147">**Mostra**</span><span class="sxs-lookup"><span data-stu-id="eb946-147">**Show**</span></span>
 
-<span data-ttu-id="842b0-148">Indica se devono essere creati e aggiunti alla scena i piani della parete limite.</span><span class="sxs-lookup"><span data-stu-id="842b0-148">Indicates whether or not boundary wall planes are to be created and added to the scene.</span></span> <span data-ttu-id="842b0-149">Il valore predefinito è false.</span><span class="sxs-lookup"><span data-stu-id="842b0-149">The default value is false.</span></span>
+<span data-ttu-id="eb946-148">Indica se devono essere creati e aggiunti alla scena i piani della parete limite.</span><span class="sxs-lookup"><span data-stu-id="eb946-148">Indicates whether or not boundary wall planes are to be created and added to the scene.</span></span> <span data-ttu-id="eb946-149">Il valore predefinito è false.</span><span class="sxs-lookup"><span data-stu-id="eb946-149">The default value is false.</span></span>
 
-<span data-ttu-id="842b0-150">**Materiale**</span><span class="sxs-lookup"><span data-stu-id="842b0-150">**Material**</span></span>
+<span data-ttu-id="eb946-150">**Materiale**</span><span class="sxs-lookup"><span data-stu-id="eb946-150">**Material**</span></span>
 
-<span data-ttu-id="842b0-151">Indica il materiale da usare quando si creano i piani della barriera limite.</span><span class="sxs-lookup"><span data-stu-id="842b0-151">Indicates the material that should be used when creating the boundary wall planes.</span></span>
+<span data-ttu-id="eb946-151">Indica il materiale da usare quando si creano i piani della barriera limite.</span><span class="sxs-lookup"><span data-stu-id="eb946-151">Indicates the material that should be used when creating the boundary wall planes.</span></span>
 
-<span data-ttu-id="842b0-152">**Livello di fisica**</span><span class="sxs-lookup"><span data-stu-id="842b0-152">**Physics Layer**</span></span>
+<span data-ttu-id="eb946-152">**Livello di fisica**</span><span class="sxs-lookup"><span data-stu-id="eb946-152">**Physics Layer**</span></span>
 
-<span data-ttu-id="842b0-153">Livello su cui devono essere impostati i muri limite.</span><span class="sxs-lookup"><span data-stu-id="842b0-153">The layer on which the boundary walls should be set.</span></span> <span data-ttu-id="842b0-154">Il valore predefinito è il livello *Ignora Raycast* .</span><span class="sxs-lookup"><span data-stu-id="842b0-154">The default value is the *Ignore Raycast* layer.</span></span>
+<span data-ttu-id="eb946-153">Livello su cui devono essere impostati i muri limite.</span><span class="sxs-lookup"><span data-stu-id="eb946-153">The layer on which the boundary walls should be set.</span></span> <span data-ttu-id="eb946-154">Il valore predefinito è il livello *Ignora Raycast* .</span><span class="sxs-lookup"><span data-stu-id="eb946-154">The default value is the *Ignore Raycast* layer.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="842b0-155">L'impostazione del componente della parete limite su un livello di fisica diverso da *Ignore Raycast* può impedire agli utenti di interagire con gli oggetti all'interno della scena.</span><span class="sxs-lookup"><span data-stu-id="842b0-155">Setting the boundary wall component to a physics layer other than *Ignore Raycast* may prevent users from interacting with objects within the scene.</span></span>
+> <span data-ttu-id="eb946-155">L'impostazione del componente della parete limite su un livello di fisica diverso da *Ignore Raycast* può impedire agli utenti di interagire con gli oggetti all'interno della scena.</span><span class="sxs-lookup"><span data-stu-id="eb946-155">Setting the boundary wall component to a physics layer other than *Ignore Raycast* may prevent users from interacting with objects within the scene.</span></span>
 
-## <a name="boundary-ceiling-settings"></a><span data-ttu-id="842b0-156">Impostazioni Ceiling limite</span><span class="sxs-lookup"><span data-stu-id="842b0-156">Boundary ceiling settings</span></span>
+## <a name="boundary-ceiling-settings"></a><span data-ttu-id="eb946-156">Impostazioni Ceiling limite</span><span class="sxs-lookup"><span data-stu-id="eb946-156">Boundary ceiling settings</span></span>
 
 ![Impostazioni limite massimo limite visualizzazione limite](../images/boundary/BoundaryVisualizationCeilingSettings.png)
 
-<span data-ttu-id="842b0-158">**Mostra**</span><span class="sxs-lookup"><span data-stu-id="842b0-158">**Show**</span></span>
+<span data-ttu-id="eb946-158">**Mostra**</span><span class="sxs-lookup"><span data-stu-id="eb946-158">**Show**</span></span>
 
-<span data-ttu-id="842b0-159">Indica se è necessario creare un piano di limite massimo e aggiungerlo alla scena.</span><span class="sxs-lookup"><span data-stu-id="842b0-159">Indicates whether or not a boundary ceiling plane is to be created and added to the scene.</span></span> <span data-ttu-id="842b0-160">Il valore predefinito è false.</span><span class="sxs-lookup"><span data-stu-id="842b0-160">The default value is false.</span></span>
+<span data-ttu-id="eb946-159">Indica se è necessario creare un piano di limite massimo e aggiungerlo alla scena.</span><span class="sxs-lookup"><span data-stu-id="eb946-159">Indicates whether or not a boundary ceiling plane is to be created and added to the scene.</span></span> <span data-ttu-id="eb946-160">Il valore predefinito è false.</span><span class="sxs-lookup"><span data-stu-id="eb946-160">The default value is false.</span></span>
 
-<span data-ttu-id="842b0-161">**Materiale**</span><span class="sxs-lookup"><span data-stu-id="842b0-161">**Material**</span></span>
+<span data-ttu-id="eb946-161">**Materiale**</span><span class="sxs-lookup"><span data-stu-id="eb946-161">**Material**</span></span>
 
-<span data-ttu-id="842b0-162">Indica il materiale da usare quando si crea il piano limite massimo.</span><span class="sxs-lookup"><span data-stu-id="842b0-162">Indicates the material that should be used when creating the boundary ceiling plane.</span></span>
+<span data-ttu-id="eb946-162">Indica il materiale da usare quando si crea il piano limite massimo.</span><span class="sxs-lookup"><span data-stu-id="eb946-162">Indicates the material that should be used when creating the boundary ceiling plane.</span></span>
 
-<span data-ttu-id="842b0-163">**Livello di fisica**</span><span class="sxs-lookup"><span data-stu-id="842b0-163">**Physics Layer**</span></span>
+<span data-ttu-id="eb946-163">**Livello di fisica**</span><span class="sxs-lookup"><span data-stu-id="eb946-163">**Physics Layer**</span></span>
 
-<span data-ttu-id="842b0-164">Livello su cui devono essere impostati i muri limite.</span><span class="sxs-lookup"><span data-stu-id="842b0-164">The layer on which the boundary walls should be set.</span></span> <span data-ttu-id="842b0-165">Il valore predefinito è il livello *Ignora Raycast* .</span><span class="sxs-lookup"><span data-stu-id="842b0-165">The default value is the *Ignore Raycast* layer.</span></span>
+<span data-ttu-id="eb946-164">Livello su cui devono essere impostati i muri limite.</span><span class="sxs-lookup"><span data-stu-id="eb946-164">The layer on which the boundary walls should be set.</span></span> <span data-ttu-id="eb946-165">Il valore predefinito è il livello *Ignora Raycast* .</span><span class="sxs-lookup"><span data-stu-id="eb946-165">The default value is the *Ignore Raycast* layer.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="842b0-166">Impostando il componente Ceiling limite su un livello di fisica diverso da *Ignore Raycast* , è possibile impedire agli utenti di interagire con gli oggetti all'interno della scena.</span><span class="sxs-lookup"><span data-stu-id="842b0-166">Setting the boundary ceiling component to a physics layer other than *Ignore Raycast* may prevent users from interacting with objects within the scene.</span></span>
+> <span data-ttu-id="eb946-166">Impostando il componente Ceiling limite su un livello di fisica diverso da *Ignore Raycast* , è possibile impedire agli utenti di interagire con gli oggetti all'interno della scena.</span><span class="sxs-lookup"><span data-stu-id="eb946-166">Setting the boundary ceiling component to a physics layer other than *Ignore Raycast* may prevent users from interacting with objects within the scene.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="842b0-167">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="842b0-167">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="eb946-167">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="eb946-167">See also</span></span>
 
-- [<span data-ttu-id="842b0-168">Documentazione dell'API limite</span><span class="sxs-lookup"><span data-stu-id="842b0-168">Boundary API documentation</span></span>](xref:Microsoft.MixedReality.Toolkit.Boundary)
-- [<span data-ttu-id="842b0-169">Sistema di limiti</span><span class="sxs-lookup"><span data-stu-id="842b0-169">Boundary System</span></span>](BoundarySystemGettingStarted.md)
+- [<span data-ttu-id="eb946-168">Documentazione dell'API limite</span><span class="sxs-lookup"><span data-stu-id="eb946-168">Boundary API documentation</span></span>](xref:Microsoft.MixedReality.Toolkit.Boundary)
+- [<span data-ttu-id="eb946-169">Sistema di limiti</span><span class="sxs-lookup"><span data-stu-id="eb946-169">Boundary System</span></span>](BoundarySystemGettingStarted.md)
