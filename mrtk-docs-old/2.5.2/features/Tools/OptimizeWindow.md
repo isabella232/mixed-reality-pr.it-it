@@ -4,14 +4,13 @@ description: Finestra di ottimizzazione della documentazione in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 4908877a4c81f4b54f059a941148250980761984
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: cbd92fcf75c6686c68cf7f1acb37e534f40f1793
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783640"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104689371"
 ---
 # <a name="optimize-window"></a>Ottimizza finestra
 

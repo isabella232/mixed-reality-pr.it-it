@@ -4,14 +4,13 @@ description: Come usare il manipolatore di oggetti in MRTK
 author: thalbern
 ms.author: bethalha
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, manipolazione degli oggetti,
-ms.openlocfilehash: e5d54e2d4972ddd930efbe7e1006579531cb1722
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 1c65076c1e2bc97d5b3ed72fcfe2afcaafef0736
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782161"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104689171"
 ---
 # <a name="object-manipulator"></a>Manipolatore di oggetti
 
@@ -31,7 +30,7 @@ Il comportamento fisico può essere abilitato per il manipolatore di oggetti agg
 
 Inoltre, la manipolazione può essere vincolata dall'aggiunta di componenti di [vincoli di manipolazione](constraint-manager.md#transform-constraints) all'oggetto. Si tratta di componenti speciali che funzionano con la manipolazione e modificano in qualche modo il comportamento di manipolazione.
 
-![Gestore di manipolazione](../images/object-manipulator/MRTK_ObjectManipulator_Howto.png)
+![Uso del gestore di manipolazione nell'editor di Unity](../images/object-manipulator/MRTK_ObjectManipulator_Howto.png)
 
 ## <a name="inspector-properties-and-fields"></a>Proprietà e campi di Inspector
 

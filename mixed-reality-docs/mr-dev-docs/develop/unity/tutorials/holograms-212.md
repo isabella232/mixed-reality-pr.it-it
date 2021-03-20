@@ -1,19 +1,19 @@
 ---
-title: 'MR Input 212: Voce'
+title: Input di HoloLens (1a generazione) 212-Voice
 description: Seguire questa procedura dettagliata di codifica usando Unity, Visual Studio e HoloLens per informazioni dettagliate sui concetti vocali.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, tutorial, Voice, HoloLens, Mixed Reality Academy, Unity, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale, Windows 10
-ms.openlocfilehash: 6fb3e10cb440fdda941a6d68b106da1bbaaedbc9
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 3218585c8c485e05fc511cf06b32542709027493
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583685"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730448"
 ---
-# <a name="mr-input-212-voice"></a>Input MR 212: Voce
+# <a name="hololens-1st-gen-input-212-voice"></a>Input 212 di HoloLens (1a generazione): voce
 
 >[!NOTE]
 >Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](./mr-learning-base-01.md).
@@ -149,7 +149,7 @@ In questo capitolo verrà illustrato come progettare comandi vocali. Quando si c
     3. Strumento zoom
     4. Strumento di trascinamento
     5. Regolare
-    6. Rimuovere
+    6. Rimuovi
 * Usare suoni simili. Provare a evitare di usare comandi vocali che fanno rima. Se si dispone di un'applicazione di acquisto che supporta *"Mostra archivio"* e *"Mostra più"* come comandi vocali, è necessario disabilitare uno dei comandi mentre l'altro è in uso. Ad esempio, è possibile usare il pulsante *"Mostra archivio"* per aprire l'archivio e quindi disabilitare il comando quando l'archivio è stato visualizzato in modo che il comando *"Mostra più"* possa essere usato per l'esplorazione.
 
 ### <a name="instructions"></a>Istruzioni
@@ -159,7 +159,7 @@ In questo capitolo verrà illustrato come progettare comandi vocali. Quando si c
 * Nel pannello **Inspector** individuare il componente di **origine input vocale (script)** .
 * Espandere la sezione **Keywords (parole chiave** ) per visualizzare il comando Voice supportato: **Open Communicator**.
 * Fare clic sull'ingranaggio a destra, quindi selezionare **Modifica script**.
-* Esplorare **SpeechInputSource.cs** per comprendere in che modo Usa **KeywordRecognizer** per aggiungere comandi vocali.
+* Esplorare **SpeechInputSource. cs** per comprendere come viene usato il **KeywordRecognizer** per aggiungere comandi vocali.
 
 ### <a name="build-and-deploy"></a>Compilazione e distribuzione
 
@@ -203,9 +203,9 @@ Se il progetto è già stato compilato o distribuito in Visual Studio durante la
 * Si noti che l'oggetto **Communicator** dispone di un componente del **gestore di input vocale (script)** per rispondere al comando **Send Message** .
 * Esaminare il componente **Communicator (script)** e fare doppio clic sullo script per aprirlo in Visual Studio.
 
-Communicator.cs è responsabile dell'impostazione degli Stati dei pulsanti appropriati sul dispositivo Communicator. Questo consentirà agli utenti di registrare un messaggio, riprodurlo e inviare il messaggio all'astronauta. Verrà avviato e arrestato anche un modulo Wave animato, per confermare all'utente che la voce è stata ascoltata.
+Communicator. cs è responsabile dell'impostazione degli Stati dei pulsanti appropriati sul dispositivo Communicator. Questo consentirà agli utenti di registrare un messaggio, riprodurlo e inviare il messaggio all'astronauta. Verrà avviato e arrestato anche un modulo Wave animato, per confermare all'utente che la voce è stata ascoltata.
 
-* In **Communicator.cs** eliminare le righe seguenti (81 e 82) dal metodo **Start** . In questo modo verrà abilitato il pulsante "record" in Communicator.
+* In **Communicator. cs** eliminare le righe seguenti (81 e 82) dal metodo **Start** . In questo modo verrà abilitato il pulsante "record" in Communicator.
 
 ```cs
 // TODO: 2.a Delete the following two lines:
@@ -250,7 +250,7 @@ In questo capitolo verrà usato il riconoscimento di dettatura per creare un mes
 
 ### <a name="instructions"></a>Istruzioni
 
-**MicrophoneManager.cs** verrà modificato in modo da usare il riconoscimento della dettatura. Questo è ciò che verrà aggiunto:
+**MicrophoneManager. cs** verrà modificato per l'uso del riconoscimento di dettatura. Questo è ciò che verrà aggiunto:
 
 1. Quando si preme il **pulsante record** , si **avvierà il DictationRecognizer**.
 2. Mostra l' **ipotesi** di ciò che DictationRecognizer ha compreso.
@@ -259,7 +259,7 @@ In questo capitolo verrà usato il riconoscimento di dettatura per creare un mes
 5. Quando si preme il **pulsante Interrompi** oppure si verifica il timeout della sessione MIC, **arrestare il DictationRecognizer**.
 6. Riavviare il **KeywordRecognizer**, che resterà in attesa del comando **Send Message** .
 
-A questo punto, procedere con l'esercitazione. Completare tutti gli esercizi di codifica per 3. a in **MicrophoneManager.cs** oppure copiare e incollare il codice finito riportato di seguito:
+A questo punto, procedere con l'esercitazione. Completare tutti gli esercizi di codifica per 3. a in **MicrophoneManager. cs** oppure copiare e incollare il codice finito riportato di seguito:
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -500,7 +500,7 @@ Nel file SRGS sono disponibili tre tipi di regole:
 
 ## <a name="the-end"></a>La fine
 
-La procedura è stata completata. A questo punto è stato completato il **sig. Input 212: Voice**.
+Congratulazioni! A questo punto è stato completato il **sig. Input 212: Voice**.
 
 * Si conosce il DOS e non i comandi vocali.
 * Sono state illustrate le modalità di utilizzo delle descrizioni comando per consentire agli utenti di riconoscere i comandi vocali.

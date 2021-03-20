@@ -4,14 +4,13 @@ description: Uso di MRTK in Unity pakage Manager
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK pakages,
-ms.openlocfilehash: 7868612d02d9ed0e5d944768de9dd7356912b5b1
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: bd8b4c3a828a5d5fd89d6a1fb0281c13e8fd9e4a
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782370"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104692188"
 ---
 # <a name="mixed-reality-toolkit-and-unity-package-manager"></a>Toolkit per realtà mista e gestione pacchetti Unity
 

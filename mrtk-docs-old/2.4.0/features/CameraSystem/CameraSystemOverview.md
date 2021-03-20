@@ -4,14 +4,14 @@ description: Pagina di destinazione per il sistema della fotocamera in MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, fotocamera,
-ms.openlocfilehash: bdd9bea3900a89d962b7a903cfdeef544335c263
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: cfdbe3a151394fc319ce86e13117519d66e56dd4
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782285"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104688221"
 ---
 # <a name="camera-system"></a>Sistema fotocamera
 

@@ -4,14 +4,13 @@ description: Documentazione per usare la fotocamera di realtà mista di Windows 
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, fotocamera,
-ms.openlocfilehash: 54f84b8aba82f49f5015c2b27f62f42771f4bbac
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 988907ae91b5190066d257f771853261ef05de04
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782922"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104692068"
 ---
 # <a name="windows-mixed-reality-camera-settings-provider"></a>Provider di impostazioni della fotocamera per la realtà mista di Windows
 

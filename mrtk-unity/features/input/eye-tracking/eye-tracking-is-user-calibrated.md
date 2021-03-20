@@ -4,14 +4,13 @@ description: Come configurare la calibrazione degli occhi degli utenti in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, EyeTracking, calibrazione,
-ms.openlocfilehash: afb8d4f89c8950abc72348e008f5fba03bacda56
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 5b0a3a2c6da8f8b561c156b007b92018ef0f2719
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782607"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104688441"
 ---
 # <a name="eye-calibration"></a>Calibrazione degli occhi
 

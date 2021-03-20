@@ -4,14 +4,13 @@ description: Pagina di destinazione per il sistema di limiti in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, sistema di limiti,
-ms.openlocfilehash: 7c3e9e7a65a636bbd2efac651f42608f13a0a562
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 041a2f89de7347f2edd41a53f784d1e6a1ab755a
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782369"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104692168"
 ---
 # <a name="boundary-system"></a>Sistema di limiti
 
@@ -19,7 +18,7 @@ Il sistema di limiti fornisce il supporto per la visualizzazione dei componenti 
 
 Molte piattaforme di realtà virtuale forniscono una visualizzazione automatica, ad esempio un contorno bianco sovrapposto al mondo virtuale quando l'utente o il controller si avvicina al limite. Il sistema di limiti del Toolkit di realtà mista estende questa funzionalità per consentire la visualizzazione di una struttura dell'area rilevata, un piano di piano e altre funzionalità che possono essere usate per fornire informazioni aggiuntive agli utenti.
 
-## <a name="getting-started"></a>Guida introduttiva
+## <a name="getting-started"></a>Introduzione
 
 L'aggiunta del supporto per i limiti richiede due componenti chiave del Toolkit di realtà mista: il sistema di limiti e una piattaforma di realtà virtuale configurata con un limite.
 

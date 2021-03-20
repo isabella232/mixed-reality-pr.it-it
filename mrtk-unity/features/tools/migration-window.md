@@ -4,14 +4,13 @@ description: Documentazione su come eseguire la migrazione a un aggiornamento in
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 0a69765d7cbb51d60d33ae104fd9ddf806bccd7e
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 86598ae88291337cec4b5226e6db556a1e930c23
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782325"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104693088"
 ---
 # <a name="migration-window"></a>Finestra di migrazione
 
@@ -50,5 +49,5 @@ Quando si preme il pulsante *migra* , il componente di destinazione dell'impleme
 ## <a name="see-also"></a>Vedi anche
 
 - [Aggiornamento da versioni precedenti](../../updates-deployment/updating.md)
-- [Versioni di Microsoft Mixed Reality Toolkit](../../release-notes.md)
+- [Versioni di Microsoft Mixed Reality Toolkit](../../release-notes/mrtk-26-release-notes.md)
 - [Roadmap MRTK](../../roadmap.md)

@@ -1,19 +1,19 @@
 ---
-title: 'MR and Azure 302b: Visione personalizzata'
+title: HoloLens (1a generazione) e Azure 302B-visione personalizzata
 description: Completare questo corso per apprendere come eseguire il training di un modello di apprendimento automatico e quindi usare il modello sottoposto a training per riconoscere oggetti simili in un'applicazione di realtà mista.
 author: drneil
 ms.author: jemccull
 ms.date: 07/03/2018
 ms.topic: article
 keywords: Azure, realtà mista, Accademia, Unity, esercitazione, API, visione personalizzata, hololens, immersiva, VR, Windows 10, Visual Studio
-ms.openlocfilehash: cba2df5841911df6d60a7060a70f835975a21f62
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 97fd0ae72401b67a83752cb2cf6799fa2b1ccc0c
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583402"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730528"
 ---
-# <a name="mr-and-azure-302b-custom-vision"></a>MR e Azure 302b: Visione artificiale personalizzata
+# <a name="hololens-1st-gen-and-azure-302b-custom-vision"></a>HoloLens (1a generazione) e Azure 302B: visione personalizzata
 
 <br>
 
@@ -1697,7 +1697,7 @@ Per cambiare la funzionalità dell'app tra la modalità di *Training* e la modal
         // Change this flag to switch between Analysis mode and Training mode 
         AppMode = AppModes.Training;
 ```
-o
+oppure
 ```
         // Change this flag to switch between Analysis mode and Training mode 
         AppMode = AppModes.Analysis;

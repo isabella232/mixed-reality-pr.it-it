@@ -4,14 +4,13 @@ description: Documentazione sulla procedura guidata per eseguire la transizione 
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: eb47880abf0f7c9f2bfd477431dab94f02e65ff9
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: cebec9c529d70b7d1a1c563473a464943a8b72d1
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782809"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104691138"
 ---
 # <a name="extension-service-creation-wizard"></a>Creazione guidata servizio di estensione
 

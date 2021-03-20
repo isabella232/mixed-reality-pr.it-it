@@ -4,14 +4,14 @@ description: Descrizione che scorre la raccolta di oggetti in MRTK.
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: dea20e9df9c00207b2a9b1c6b5a893fa357de755
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: a8c81be94d155a125366a390e0032a099e2d80b9
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781552"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104692688"
 ---
 # <a name="scrolling-object-collection"></a>Scorrimento della raccolta di oggetti
 

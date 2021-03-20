@@ -1,19 +1,19 @@
 ---
-title: 'MR Basics 100: Introduzione a Unity'
+title: Nozioni di base di HoloLens (1st Gen) 100-Introduzione a Unity
 description: Informazioni su come creare la prima applicazione "Hello World" della realtà mista di base per i dispositivi HoloLens e Windows Mixed Reality.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: realtà mista, realtà mista di Windows, HoloLens, immersiva, VR, Mr, introduzione, ologramma, Accademia, esercitazione, Accademia di realtà mista, Unity, auricolare in realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 86ac759cb73e39f88d62db5dab0c38108bb17d55
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 999ab7dc87a639f10aad9eaf2a7ef8de2cf92633
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583730"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730358"
 ---
-# <a name="mr-basics-100-getting-started-with-unity"></a>Nozioni di base MR 100: Introduzione a Unity
+# <a name="hololens-1st-gen-basics-100-getting-started-with-unity"></a>Nozioni di base su HoloLens (1st Gen) 100: Introduzione a Unity
 
 >[!IMPORTANT]
 >Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](mrlearning-base.md).
@@ -223,7 +223,7 @@ Verificare che il dispositivo sia collegato tramite il cavo USB.
 
 Ora che l'app è stata distribuita, provare a spostarsi in tutto il cubo e osservare che rimane nel mondo davanti all'utente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Panoramica dello sviluppo per Unity](../unity-development-overview.md)
 * [Procedure consigliate per l'uso con Unity e Visual Studio](../best-practices-for-working-with-unity-and-visual-studio.md)

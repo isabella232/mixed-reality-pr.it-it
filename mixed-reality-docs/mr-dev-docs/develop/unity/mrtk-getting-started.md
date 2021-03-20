@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, Mixed Reality Toolkit, MRTK versione 2, MRTK, strumenti, SDK, HoloLens, HoloLens 2, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, multipiattaforma
-ms.openlocfilehash: 58290169f1d6e9ccc4ad758d518e0be5009b007b
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: a4c9af016aaa65c6449801d838544b409d564c8e
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237022"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730388"
 ---
 # <a name="introducing-mrtk-for-unity"></a>Introduzione a MRKT per Unity
 
@@ -30,7 +30,10 @@ MRTK per Unity offre un sistema di input multipiattaforma, componenti fondamenta
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCG]
 
-Per altri dettagli sulle funzionalità, vedere la [documentazione di MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/) .
+> [!div class="nextstepaction"]
+> [Prova le nostre esercitazioni su MRTK](tutorials/mr-learning-base-01.md)
+
+Per altri dettagli sulle funzionalità, vedere la [documentazione di MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity) .
 
 ## <a name="new-with-mrtk-v2"></a>Novità di MRTK v2
 

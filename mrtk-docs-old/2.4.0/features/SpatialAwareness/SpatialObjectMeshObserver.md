@@ -4,20 +4,20 @@ description: Documentazione sull'osservatore mesh spaziale in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 7caa1109b6074d1df565a0fdf15223706b684f9d
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 0ac419313c474f4dfe5d1a9da4dea1dea1ee755f
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781838"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104692478"
 ---
 # <a name="configuring-mesh-observers-for-the-editor"></a>Configurazione degli osservatori mesh per l'editor
 
 Un modo pratico per fornire i dati di rete dell'ambiente nell'editor di Unity consiste nell'usare la [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) classe. L' *osservatore mesh di oggetti spaziali* è un provider di dati solo editor per il [sistema di riconoscimento spaziale](SpatialAwarenessGettingStarted.md) che consente di importare i dati del modello 3D per rappresentare una mesh spaziale. Un uso comune dell' *osservatore mesh di oggetti spaziali* consiste nell'importare i dati analizzati tramite un HoloLens Microsoft per testare il modo in cui un'esperienza si adatta a diversi ambienti da Unity.
 
-## <a name="getting-started"></a>Guida introduttiva
+## <a name="getting-started"></a>Introduzione
 
 In questa guida viene illustrata la configurazione di un *Observer mesh di oggetti spaziali*. Per abilitare questa funzionalità, è necessario eseguire tre passaggi principali.
 

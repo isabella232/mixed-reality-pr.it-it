@@ -1,19 +1,19 @@
 ---
-title: 'MR and Azure 304: Riconoscimento volto'
+title: HoloLens (1st Gen) e Azure 304-Face Recognition
 description: Completa questo corso per informazioni su come implementare il riconoscimento volto di Azure in un'applicazione di realtà mista.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realtà mista, Accademia, Unity, esercitazione, API, riconoscimento viso, hololens, immersiva, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 6cdb8b7af9988bbfbc6670d0ef79f00487db7f3c
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6266cb206a0686745bcd7a92f64d78436c71a228
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583377"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730508"
 ---
-# <a name="mr-and-azure-304-face-recognition"></a>MR e Azure 304: Riconoscimento del volto
+# <a name="hololens-1st-gen-and-azure-304-face-recognition"></a>HoloLens (1a generazione) e Azure 304: riconoscimento viso
 
 <br>
 

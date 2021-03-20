@@ -4,14 +4,13 @@ description: Panoramica dell'architettura di MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, architettura MRTK
-ms.openlocfilehash: 569486924190de6e0310fff875fc6583053cfa74
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: e3c883354e3e8c2be67237c941bede693ad821a6
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783128"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104692298"
 ---
 # <a name="architecture-overview"></a>Panoramica dell'architettura
 

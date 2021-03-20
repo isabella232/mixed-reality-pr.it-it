@@ -4,14 +4,13 @@ description: documentazione per la struttura della roadmap di MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 03/03/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK
-ms.openlocfilehash: 53cf7ffe786ea5cb650bfd04ff8d42d5bdd7cf09
-ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
+ms.openlocfilehash: 0a3089d272542e4021bc77b324255830c7cb9c6a
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101883126"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690141"
 ---
 # <a name="roadmap"></a>Roadmap
 

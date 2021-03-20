@@ -4,14 +4,13 @@ description: Documentazione su Slate in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, Slate,
-ms.openlocfilehash: c4f902b762b3ce3e11d9616a6f53b769d7741438
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 3275cfdb96416be10853e4fdad98f406da677194
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783197"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104689131"
 ---
 # <a name="slate"></a>Slate
 
@@ -29,7 +28,7 @@ Un controllo Slate è costituito dagli elementi seguenti:
 * **Backplate**: il lato posteriore dello Slate.
 * **ContentQuad**: il contenuto viene assegnato come materiale. Nell'esempio viene utilizzato un materiale di esempio ' PanContent '.
 
-<img src="../images/slate/MRTK_SlateStructure.jpg" width="650" alt="Slate Structure">
+<img src="../images/slate/MRTK_SlateStructure.jpg" width="650" alt="Slate Structure in the Unity editor">
 
 ## <a name="bounds-control"></a>Controllo dei limiti
 

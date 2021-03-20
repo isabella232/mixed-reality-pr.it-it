@@ -4,14 +4,13 @@ description: Panoramica sui pulsanti in MRTK
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, MRTK pulsanti
-ms.openlocfilehash: 8566c33dad223b8382ebbc50fe8b71feab20b70a
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 92c9b01e9f58165b0bd127e3ff6796c3974c152a
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783356"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104689431"
 ---
 # <a name="button"></a>Pulsante
 
@@ -114,7 +113,7 @@ L'effetto di impulso sottile viene attivato dal pulsante stampabile, che cerca *
 
 **Origine audio** Origine audio Unity per i clip di feedback audio.
 
-*NearInteractionTouchable.cs* necessario per rendere qualsiasi oggetto ritoccabile con input mano articolato.
+*NearInteractionTouchable. cs* necessario per rendere qualsiasi oggetto ritoccabile con input della mano articolata.
 
 ## <a name="prefab-layout"></a>Layout prefabbricato
 

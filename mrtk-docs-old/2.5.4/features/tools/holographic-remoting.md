@@ -4,14 +4,13 @@ description: Documentazione di comunicazione remota olografica MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 8e7a2bcbadd8f07ceb9c9bba5391a93aec51d903
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: c5b48a58cef73293992543e14b93003284e47b0e
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782807"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104691088"
 ---
 # <a name="holographic-remoting"></a>Holographic Remoting
 

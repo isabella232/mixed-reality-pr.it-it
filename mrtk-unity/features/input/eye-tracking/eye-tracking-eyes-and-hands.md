@@ -4,14 +4,13 @@ description: Come usare la destinazione degli occhi come puntatore principale in
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, EyeTracking,
-ms.openlocfilehash: 68381bec6f6b8d52b39ed94d0c0200cccc4d1d10
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 2d339e292dbd227bce42ae7ea59d57741dd77317
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782610"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104688481"
 ---
 # <a name="eyes--hand-interaction"></a>Interazione tra occhi e mano
 
@@ -21,7 +20,7 @@ Questa pagina illustra come usare la destinazione degli occhi come puntatore pri
 Nelle [demo di MRTK Eye Tracking](../../example-scenes/eye-tracking-examples-overview.md)sono descritti diversi esempi per l'uso di Eyes + Hands, ad esempio:
 
 - [Selezione](eye-tracking-target-selection.md): visualizzazione di un pulsante olografico distante e semplice esecuzione di un gesto di pizzico per selezionarlo rapidamente.
-- [Posizionamento](eye-tracking-positioning.md): spostare in modo scorrevole un ologramma nella scena semplicemente cercandolo, pizzicando il dito dell'indice e il pollice insieme per spostarlo e spostarlo in un secondo momento.
+- **Posizionamento (questo articolo)**: spostare in modo scorrevole un ologramma nella scena semplicemente cercandolo, pizzicando il dito dell'indice e il pollice insieme per recuperarlo, quindi spostarlo in qualsiasi momento usando la mano.
 - [Navigazione](eye-tracking-navigation.md): è sufficiente esaminare la posizione in cui si vuole eseguire lo zoom, pizzicare il dito dell'indice e il pollice insieme e _tirare_ la mano verso lo zoom avanti.
 
 Si noti che MRTK è attualmente progettato in modo che i raggi a distanza agiscono da puntatori di interesse con priorità.

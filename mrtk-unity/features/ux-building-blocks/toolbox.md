@@ -4,14 +4,13 @@ description: Panoramica della casella degli strumenti in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, casella degli strumenti MRTK
-ms.openlocfilehash: 3e870572d8a12c23c225f630fc669383489a1431
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: cddd18dbba2acad532a9fd86b6e4a67c10243575
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781557"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104689001"
 ---
 # <a name="toolbox-ui"></a>Interfaccia utente della casella degli strumenti
 

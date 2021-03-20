@@ -4,14 +4,13 @@ description: Note sulla versione di MRTK versione 2,6
 author: polar-kev
 ms.author: kesemple
 ms.date: 02/28/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 274373db46b510453797dff7389bd09cbdcdf82e
-ms.sourcegitcommit: daad3dcce6381e2967fab634313dc7b2ea26d2bd
+ms.openlocfilehash: ab0928a0d919c4d3be13f25342f2244cf6afbc32
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103234547"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690181"
 ---
 # <a name="microsoft-mixed-reality-toolkit-261-release-notes"></a>Note sulla versione di Microsoft Mixed Reality Toolkit 2.6.1
 
@@ -147,7 +146,7 @@ Inoltre, le scene di esempio per la verifica degli occhi non sono attualmente co
 
 ### <a name="some-mixed-reality-toolkit-standard-shader-features-require-the-foundation-package"></a>Alcune funzionalità dello shader standard del Toolkit di realtà mista richiedono il pacchetto di base
 
-Quando viene importato tramite Gestione pacchetti Unity, gli script MRTK standard shader Utilities (ad esempio: HoverLight.cs) non sono condivisi con lo shader nel pacchetto di asset standard. Per accedere a questa funzionalità, le applicazioni richiedono l'importazione del pacchetto di base.
+Quando viene importato tramite Gestione pacchetti Unity, gli script MRTK standard shader Utilities (ad esempio: HoverLight. cs) non sono collocati con lo shader nel pacchetto di asset standard. Per accedere a questa funzionalità, le applicazioni richiedono l'importazione del pacchetto di base.
 
 ### <a name="cameracache-may-create-a-new-camera-on-shutdown"></a>CameraCache può creare una nuova fotocamera alla chiusura
 

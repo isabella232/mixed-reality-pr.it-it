@@ -4,14 +4,13 @@ description: Strumento InputFeatureUsage della documentazione in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 61c57b51d82c16771fd58666b816638c004210c5
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: f25e30ee37f3e4d0449ea653d32366f5d7f46e86
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782327"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104693118"
 ---
 # <a name="inputfeatureusage-tool"></a>Strumento InputFeatureUsage
 

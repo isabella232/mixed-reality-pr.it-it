@@ -1,19 +1,19 @@
 ---
-title: MR e Azure 307-Machine Learning
+title: HoloLens (1a generazione) e Azure 307-Machine Learning
 description: Completare questo corso per apprendere come implementare Azure Machine Learning Studio (classico) in un'applicazione di realtà mista.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realtà mista, Accademia, Unity, esercitazione, API, Machine Learning, ml, Machine Learning Studio, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 95213c3d17bbe0f0f81438d4808db142ad21c595
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c9d6408d41340b1c0fcb1f41b61d84ba115258c3
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583391"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730518"
 ---
-# <a name="mr-and-azure-307-machine-learning"></a>MR e Azure 307: Machine Learning
+# <a name="hololens-1st-gen-and-azure-307-machine-learning"></a>HoloLens (1a generazione) e Azure 307: Machine Learning
 
 <br>
 
@@ -242,7 +242,7 @@ Per iniziare a creare un esperimento:
 
     ![Il Machine Learning Studio (classico): esperimento](images/AzureLabs-Lab7-20.png)
 
-8.  Dalla parte **_inferiore sinistra_*dell'elemento _* Split data** trascinare una connessione all' **angolo superiore destro** dell'elemento **Train Model** . La prima divisione del 70% dal set di dati verrà utilizzata dal modello Train per eseguire il training dell'algoritmo.
+8.  Dal * in **basso a sinistra** dell'elemento _ *Split data** trascinare una connessione nella **parte superiore destra** dell'elemento **Train Model** . La prima divisione del 70% dal set di dati verrà utilizzata dal modello Train per eseguire il training dell'algoritmo.
 
     ![Il Machine Learning Studio (classico): esperimento](images/AzureLabs-Lab7-21.png)
 
@@ -338,11 +338,11 @@ Configurare e testare l'auricolare immersiva della realtà mista.
 
 2.  Con Unity aperto, vale la pena controllare che l' **editor di script** predefinito sia impostato su **Visual Studio**. Passare a **modifica**  >  **Preferenze** e quindi dalla nuova finestra passare a **strumenti esterni**. Modificare l' **editor di script esterno** in **Visual Studio 2017**. Chiudere la finestra delle **Preferenze** .
 
-3.  Passare quindi a   >  **impostazioni di compilazione** file e passare alla piattaforma **piattaforma UWP (Universal Windows Platform)** facendo clic sul pulsante **_Switch Platform_* _.
+3.  Passare quindi a   >  **impostazioni di compilazione** file e passare alla piattaforma **piattaforma UWP (Universal Windows Platform)**, facendo clic sul pulsante **_Switch Platform_** .
 
 4.  Assicurarsi inoltre che:
 
-    1.  _ *Destinazione dispositivo** è impostato su **qualsiasi dispositivo**.
+    1.  Il **dispositivo di destinazione** è impostato su **qualsiasi dispositivo**.
 
         > Per Microsoft HoloLens, impostare **dispositivo di destinazione** su *HoloLens*.
 
@@ -368,9 +368,9 @@ Configurare e testare l'auricolare immersiva della realtà mista.
 
         1.  La **versione di runtime** di **Scripting** deve essere **sperimentale** (equivalente a .NET 4,6)
 
-        2. Il **back-end di scripting** deve essere **_.NET_* _
+        2. Il **back-end di scripting** deve essere **_.NET_**
 
-        3. _ *Livello di compatibilità API** deve essere **.NET 4,6**
+        3. Il **livello di compatibilità API** deve essere **.NET 4,6**
 
             ![Configurazione del progetto Unity](images/AzureLabs-Lab7-36.png)
 

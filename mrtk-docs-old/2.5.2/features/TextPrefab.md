@@ -4,14 +4,13 @@ description: Panoramica di TextPrefab in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, TMP,
-ms.openlocfilehash: 96d4e78d8765d77228f464ca18eb26d94be131b8
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: e2a5e4bb6dd524ac8dcc89db46352938dec1927c
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782261"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104691278"
 ---
 # <a name="text-prefab"></a>Prefabbricato di testo
 

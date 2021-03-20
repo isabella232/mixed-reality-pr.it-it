@@ -4,14 +4,13 @@ description: Docummentation su come registrare clip audio e ottenere una trascri
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: a4f996791e0bc8ac9bcbbe91bc711dd2336f1413
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 26aaa6ceab029a42716afa6157ebf95011d4753b
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782621"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104693158"
 ---
 # <a name="dictation"></a>Dettatura
 

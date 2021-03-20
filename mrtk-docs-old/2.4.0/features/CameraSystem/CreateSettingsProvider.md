@@ -4,14 +4,14 @@ description: provider di dati per le impostazioni della fotocamera in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 744bb150d58f9d38f4735f6d3948c41c0a93a6cd
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: f28c411c80955e9a2c7e2cd4074ee534b302cfee
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782284"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104688231"
 ---
 # <a name="creating-a-camera-settings-provider"></a>Creazione di un provider di impostazioni della fotocamera
 

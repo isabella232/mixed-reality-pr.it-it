@@ -4,14 +4,13 @@ description: documentazione per l'uso di Visual Profiler in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 8356b404416ffc7b9818ed7fb79e1c0f36d76a59
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 49e706c7cc55a8cda9a0d24de14a2730d0e236b3
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782695"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104691918"
 ---
 # <a name="using-the-visual-profiler"></a>Uso di Visual Profiler
 

@@ -4,14 +4,14 @@ description: Pagina della documentazione introduttiva di MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: c83a3b0a5b47d944981f3d50db46e9a2dd3dbefd
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 5a377570c52e68f22b3e14750e280b87dd53825a
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783658"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690908"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>Che cos'è il Toolkit di realtà mista
 

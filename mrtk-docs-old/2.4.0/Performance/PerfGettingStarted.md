@@ -4,18 +4,18 @@ description: Documentazione per comprendere e modificare la conformità in MRTK.
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: d64b1f242b07ea1c7c8475848e29a98ef16e41f7
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 83174dba8247f573f69363f757f5a9edd6ccdb26
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782930"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690988"
 ---
 # <a name="performance"></a>Prestazioni
 
-## <a name="getting-started"></a>Guida introduttiva
+## <a name="getting-started"></a>Introduzione
 
 Il modo più semplice per razionalizzare le prestazioni è tramite framerate o il numero di volte in cui l'applicazione può eseguire il rendering di un'immagine al secondo. È importante soddisfare il framerate di destinazione, come indicato dalla piattaforma di destinazione (ad esempio [Realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/understanding-performance-for-mixed-reality), [Oculus](https://developer.oculus.com/documentation/pcsdk/latest/concepts/dg-performance-guidelines/)e così via. Ad esempio, in HoloLens, il framerate di destinazione è 60 FPS. Le applicazioni con framerate ridotto possono comportare esperienze utente deteriorate, come la [stabilizzazione olografica](hologram-stabilization.md)peggiorata, il rilevamento del mondo, il rilevamento manuale e altro ancora. Per aiutare gli sviluppatori a tenere traccia e ottenere la framerate di qualità, il Toolkit di realtà mista offre un'ampia gamma di strumenti e script.
 

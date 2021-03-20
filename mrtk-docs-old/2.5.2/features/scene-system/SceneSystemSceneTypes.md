@@ -4,14 +4,13 @@ description: Documentazione su diversi tipi di scena in MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: c40c1b36082fc0d464ef4962210954590408b66d
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 1bb4def91b88db17002695104ec85c69f8d3fd69
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783174"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690491"
 ---
 # <a name="scene-types"></a>Tipi di scena
 

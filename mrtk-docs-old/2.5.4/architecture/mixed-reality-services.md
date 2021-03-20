@@ -4,14 +4,13 @@ description: Servizi correlati a MRTK in Unity.
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 6aad5591878e0df9b5642da25b18051ae4f9128d
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: c23c16e7dac54ff209beca24bd8b8b857967f697
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783793"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690371"
 ---
 # <a name="what-makes-a-mixed-reality-feature"></a>Cosa rende una funzionalità di realtà mista
 

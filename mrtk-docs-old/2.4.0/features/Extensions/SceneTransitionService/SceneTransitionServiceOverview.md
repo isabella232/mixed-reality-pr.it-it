@@ -4,14 +4,14 @@ description: documentazione per la transizione della scena in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, SceneTransition,
-ms.openlocfilehash: bbaff0ab64db19a5518b6e286dafa0274fd246b7
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: a722b18b63193efffdffde7bd8806920c68929ec
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782847"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690888"
 ---
 # <a name="scene-transition-service"></a>Servizio transizione scena
 

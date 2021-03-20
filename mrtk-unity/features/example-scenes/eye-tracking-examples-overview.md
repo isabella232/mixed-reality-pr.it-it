@@ -4,14 +4,13 @@ description: Esempio per compilare eyetracking in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, EyeTracking,
-ms.openlocfilehash: 5b02e6cd171c1e13db21d02fa770db6284d32de3
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 636536627dd327a4a83a66167734870cef7b1723
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781688"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104693278"
 ---
 # <a name="eye-tracking-examples"></a>Esempi di rilevamento degli occhi
 
@@ -47,7 +46,7 @@ Inoltre, è disponibile un esempio per la rotazione senza mani di ologrammi 3D, 
 
 **Riepilogo**: scorrimento, panoramica, zoom, rotazione 3D con una combinazione di occhi, input vocale e manuale.
 
-### <a name="eye-supported-positioning"></a>[**Posizionamento con supporto per gli occhi**](../input/eye-tracking/eye-tracking-positioning.md)
+### <a name="eye-supported-positioning"></a>[**Posizionamento con supporto per gli occhi**](../input/eye-tracking/eye-tracking-eyes-and-hands.md)
 
 Questa esercitazione illustra uno scenario di input denominato [put-that-](https://youtu.be/CbIn8p4_4CQ) here risalendo alla ricerca dal MIT Media Lab nel primo 1980 con input Eye, hand e Voice.
 L'idea è semplice: trarre vantaggio dagli occhi per la selezione e il posizionamento rapidi delle destinazioni.

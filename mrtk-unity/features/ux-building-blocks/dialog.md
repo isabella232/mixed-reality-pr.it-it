@@ -4,14 +4,13 @@ description: Descrizione per i controlli della finestra di dialogo.
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 7c381cfd000d2f939889cffa8c4f2a47f0b4a2fe
-ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
+ms.openlocfilehash: d1728d3e0efd30138697c4c2488e8f488f681242
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101884068"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104689301"
 ---
 # <a name="dialog"></a>Finestra di dialogo
 
@@ -37,16 +36,16 @@ Usare dialog. Open () per aprire una nuova finestra di dialogo. Specificare la f
 public static Dialog Open(GameObject dialogPrefab, DialogButtonType buttons, string title, string message, bool placeForNearInteraction, System.Object variable = null)
 ```
 
-### <a name="example-of-opening-large-dialog-with-single-ok-button-placed-at-far-interaction-range-gaze-hand-ray-motion-controller"></a>Esempio di apertura di una finestra di dialogo di grandi dimensioni con il pulsante singolo ' OK ', posizionato in corrispondenza dell'intervallo di interazione (sguardo, raggio di mano, controller di movimento)
+### <a name="example-of-opening-a-large-dialog-with-a-single-ok-button-placed-at-far-interaction-range-gaze-hand-ray-motion-controller"></a>Esempio di apertura di una finestra di dialogo di grandi dimensioni con un singolo pulsante ' OK ', posizionato in corrispondenza dell'intervallo di interazione (sguardo, raggio di mano, controller di movimento)
 
 ```c#
 Dialog.Open(DialogPrefabLarge, DialogButtonType.OK, "Confirmation Dialog, Large, Far", "This is an example of a large dialog with only one button, placed at far interaction range", false);
 ```
 
-### <a name="example-of-opening-small-dialog-with-single-ok-button-placed-at-near-interaction-range-direct-hand-interaction"></a>Esempio di apertura di una finestra di dialogo di piccole dimensioni con il pulsante "OK", posizionata nell'intervallo di interazione near (interazione diretta)
+### <a name="example-of-opening-a-small-dialog-containing-a-choice-message-for-the-user-placed-at-near-interaction-range-direct-hand-interaction"></a>Esempio di apertura di una finestra di dialogo di piccole dimensioni contenente un messaggio di scelta per l'utente, posizionata nell'intervallo di interazione near (interazione diretta con la mano diretta)
 
 ```c#
-Dialog.Open(DialogPrefabSmall, DialogButtonType.Yes | DialogButtonType.No, "Confirmation Dialog, Small, Far", "This is an example of a small dialog with a choice message, placed at near interaction range", true);
+Dialog.Open(DialogPrefabSmall, DialogButtonType.Yes | DialogButtonType.No, "Confirmation Dialog, Small, Near", "This is an example of a small dialog with a choice message, placed at near interaction range", true);
 ```
 
 Per altri dettagli, vedere `DialogExampleController.cs` nella scena DialogExample. Unity.

@@ -4,14 +4,13 @@ description: Come configurare l'osservatore della rete spaziale predefinita in M
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 755ccb2bcd0ea968209da12c9691670d94c2a2ab
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: ecb3dd73c62215bdce6b70b550d7105e435c29d6
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781762"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104689781"
 ---
 # <a name="configuring-mesh-observers-for-device"></a>Configurazione degli osservatori mesh per il dispositivo
 

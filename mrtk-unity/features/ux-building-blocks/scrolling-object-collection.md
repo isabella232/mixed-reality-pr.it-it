@@ -4,14 +4,13 @@ description: Tipi di menu Panoramica MRTK
 author: vaoliva
 ms.author: vaolivaa
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, oggetto scorrevole
-ms.openlocfilehash: 3035ebedfdbd8b2219dafa9864594e9d98b3c623
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 8b2a726019b474603988390c3132b2e5429e131e
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782402"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104689141"
 ---
 # <a name="scrolling-object-collection"></a>Scorrimento della raccolta di oggetti
 
@@ -98,7 +97,7 @@ public class ScrollablePagination : MonoBehaviour
 
 ## <a name="scrolling-object-collection-properties"></a>Scorrimento delle proprietà della raccolta di oggetti
 
-| Generale                      |                                                                                                                                                                                                     |
+| Generale                                                                                                                                                                                                     |
 |:-----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Direzione scorrimento             | Direzione di scorrimento del contenuto.|
 

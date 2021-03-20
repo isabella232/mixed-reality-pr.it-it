@@ -4,14 +4,13 @@ description: Panoramica vicino ai tipi di menu in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, menu near,
-ms.openlocfilehash: 02710b711015a5fecdda3c1969844738444f951c
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 59725765d880f614890676ad4f97f0e2c9d6ddeb
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781981"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104689191"
 ---
 # <a name="near-menu"></a>Menu adiacente
 

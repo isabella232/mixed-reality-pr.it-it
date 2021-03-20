@@ -4,14 +4,14 @@ description: Documentazione per usare la fotocamera AR in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, videocamera AR,
-ms.openlocfilehash: 22483fcd23c43fa0a558642948459c07409bd648
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: b5547d800fcae78138554d5998b37738770ab16c
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782283"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104688211"
 ---
 # <a name="unity-ar-camera-settings-provider"></a>Provider di impostazioni della fotocamera AR Unity
 
@@ -68,7 +68,7 @@ Le opzioni disponibili sono descritte nella tabella seguente.
 | Opzione | Descrizione |
 | --- | --- |
 | Prima del rendering | Appena prima del rendering. |
-| Aggiorna | Durante la fase di aggiornamento del frame. |
+| Aggiornamento | Durante la fase di aggiornamento del frame. |
 | Aggiornare e prima del rendering | Durante la fase di aggiornamento e immediatamente prima del rendering. |
 
 Il valore predefinito per il tipo di rilevamento è **Update e before render** per abilitare la latenza di rilevamento più bassa.

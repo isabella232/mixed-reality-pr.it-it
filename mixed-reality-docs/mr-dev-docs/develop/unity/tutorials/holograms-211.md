@@ -1,19 +1,19 @@
 ---
-title: 'MR Input 211: Gesto'
+title: HoloLens (1a Gen) input 211-gesture
 description: Seguire questa procedura dettagliata di codifica usando Unity, Visual Studio e HoloLens per informazioni dettagliate sui concetti di movimento.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, esercitazione, movimento, HoloLens, realtà mista, Unity, Headset per la realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale, Windows 10
-ms.openlocfilehash: dfb31901001f760abd60bda3022902267b7c05cf
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: fe5d3d736c3ad460feeb7aaf66597344618bc1cb
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583702"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730458"
 ---
-# <a name="mr-input-211-gesture"></a>Input MR 211: Movimento
+# <a name="hololens-1st-gen-input-211-gesture"></a>HoloLens (1a Gen) input 211: gesto
 
 >[!NOTE]
 >Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](./mr-learning-base-01.md).
@@ -129,7 +129,7 @@ Se si esegue la distribuzione in un auricolare immersivo:
 * Nel pannello **gerarchia** espandere l'oggetto **InputManager** .
 * Cercare e selezionare l'oggetto **GesturesInput** .
 
-Lo script **InteractionInputSource.cs** esegue i passaggi seguenti:
+Lo script **InteractionInputSource. cs** esegue i passaggi seguenti:
 
 1. Sottoscrive gli eventi InteractionSourceDetected e InteractionSourceLost.
 2. Imposta lo stato HandDetected.
@@ -172,7 +172,7 @@ I **dati relativi allo stato del cursore** funzionano come segue:
 
 ### <a name="instructions"></a>Istruzioni
 
-Per usare i movimenti di navigazione nell'app, è necessario modificare **GestureAction.cs** per ruotare gli oggetti quando si verifica il movimento di navigazione. Inoltre, verranno aggiunti commenti e suggerimenti al cursore da visualizzare quando è disponibile la navigazione.
+Per usare i movimenti di navigazione nell'app, **GestureAction. cs** verrà modificato per ruotare gli oggetti quando si verifica il movimento di navigazione. Inoltre, verranno aggiunti commenti e suggerimenti al cursore da visualizzare quando è disponibile la navigazione.
 
 1. Nel pannello **gerarchia** espandere **CursorWithFeedback**.
 2. Nella cartella **ologrammi** trovare l'asset **ScrollFeedback** .
@@ -185,7 +185,7 @@ Per usare i movimenti di navigazione nell'app, è necessario modificare **Gestur
 9. Nel pannello **Inspector** fare clic sul pulsante **Add Component** .
 10. Nel menu digitare l' **azione di movimento** della casella di ricerca. Selezionare il risultato della ricerca.
 
-Successivamente, aprire **GestureAction.cs** in Visual Studio. Nel codice esercizio 2. c, modificare lo script per eseguire le operazioni seguenti:
+Successivamente, aprire **GestureAction. cs** in Visual Studio. Nel codice esercizio 2. c, modificare lo script per eseguire le operazioni seguenti:
 
 1. **Ruotare l'oggetto astror** ogni volta che viene eseguito un movimento di navigazione.
 2. Calcolare **rotationFactor** per controllare la quantità di rotazione applicata all'oggetto.
@@ -341,7 +341,7 @@ Si noterà che gli altri eventi di navigazione sono già stati compilati con alc
 
 ### <a name="instructions"></a>Istruzioni
 
-GestureManager.cs e AstronautManager.cs ci consentiranno di eseguire le operazioni seguenti:
+GestureManager. cs e AstronautManager. cs ci consentiranno di eseguire le operazioni seguenti:
 
 1. Usare la parola chiave Speech "**Move Astronaut**" per abilitare i movimenti di **manipolazione** e la "**ruota astronauta**" per disabilitarli.
 2. Passa a rispondere al **riconoscitore del movimento di manipolazione**.
@@ -361,7 +361,7 @@ Verranno ora aggiunti i comandi vocali necessari per controllare lo stato di int
 3. Digitare la parola chiave come **Move Astronaut**. Se lo si desidera, è possibile aggiungere un tasto di scelta rapida.
 4. Fare clic sul **+** lato destro per aggiungere una nuova parola chiave.
 5. Digitare la parola chiave come **ruota astronauta**. Se lo si desidera, è possibile aggiungere un tasto di scelta rapida.
-6. Il codice del gestore corrispondente si trova in **GestureAction.cs** nel gestore **ISpeechHandler. OnSpeechKeywordRecognized** .
+6. Il codice del gestore corrispondente si trova in **GestureAction. cs** nel gestore **ISpeechHandler. OnSpeechKeywordRecognized** .
 
 ![Come configurare l'origine di input vocale per il capitolo 4](images/holograms211-speech.png)
 
@@ -372,13 +372,13 @@ Successivamente, verrà configurato il feedback di manipolazione sul cursore.
 3. Nel pannello **gerarchia** fare clic su **CursorWithFeedback**.
 4. Trascinare e rilasciare l'oggetto **PathingFeedback** dalla **gerarchia** alla proprietà dell' **oggetto del gioco rilevato nel percorso** nel componente **feedback del cursore** del **controllo**.
 
-A questo punto è necessario aggiungere il codice a **GestureAction.cs** per abilitare gli elementi seguenti:
+A questo punto è necessario aggiungere il codice a **GestureAction. cs** per abilitare gli elementi seguenti:
 
 1. Aggiungere codice alla funzione **IManipulationHandler. OnManipulationUpdated** che sposta l'astronauta quando viene rilevato un movimento di **manipolazione** .
 2. Calcolare il **vettore di spostamento** per determinare il punto in cui deve essere spostato l'astronauta in base alla posizione della mano.
 3. **Spostare** l'astronauta nella nuova posizione.
 
-Completare il codice esercizio 4. a in **GestureAction.cs** o usare la soluzione completa seguente:
+Completare il codice esercizio 4. a in **GestureAction. cs** oppure usare la soluzione completa seguente:
 
 ```cs
 using HoloToolkit.Unity.InputModule;
@@ -543,7 +543,7 @@ A tale scopo, aggiungere altre due parole chiave all'origine di input vocale del
 
 ## <a name="the-end"></a>La fine
 
-La procedura è stata completata. A questo punto è stato completato il **movimento Mr Input 211:**.
+Congratulazioni! A questo punto è stato completato il **movimento Mr Input 211:**.
 
 * Si è in grado di rilevare e rispondere agli eventi di rilevamento, spostamento e manipolazione della mano.
 * Si comprende la differenza tra i movimenti di spostamento e manipolazione.

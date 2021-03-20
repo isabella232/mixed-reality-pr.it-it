@@ -4,14 +4,13 @@ description: Come configurare la gestione degli occhi in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, monitoraggio degli occhi,
-ms.openlocfilehash: daa15ee6966c9e26be45a3918ee585dc42b00610
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 0a603ca293d66fea51b8fc22615f99324edeaca6
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782614"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104693138"
 ---
 # <a name="getting-started-with-eye-tracking-in-mrtk"></a>Introduzione a Eye Tracking in MRTK
 

@@ -4,14 +4,13 @@ description: Modifica dei profili in MRTK.
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, profilo MRTK
-ms.openlocfilehash: 3c2c76e60fd6f8ad8b09ea5e4f6bea6bde78b132
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 1dd5192050b054295dc1ba7fcb9b4770d53e0505
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783757"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104692378"
 ---
 # <a name="configuration-and-profiles"></a>Configurazione e profili
 

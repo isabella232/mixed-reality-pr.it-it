@@ -1,19 +1,19 @@
 ---
-title: MR e Azure 303-LUIS (Natural Language Understanding)
+title: HoloLens (1a generazione) e Azure 303-comprensione del linguaggio naturale (LUIS)
 description: Completare questo corso per apprendere come implementare Azure Language Understanding Intelligence Service (LUIS) in un'applicazione di realtà mista.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realtà mista, Accademia, Unity, esercitazione, API, Language Understanding Intelligence Service, Luis, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: a91fcd2e20ce1e1731bd398fa72923f6ff5e8406
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 663ac44dbf15ce2db63d7ffe0ecc605d3555857f
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583431"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730558"
 ---
-# <a name="mr-and-azure-303-natural-language-understanding-luis"></a>MR e Azure 303: LUIS (Natural Language Understanding)
+# <a name="hololens-1st-gen-and-azure-303-natural-language-understanding-luis"></a>HoloLens (1a generazione) e Azure 303: conoscenza del linguaggio naturale (LUIS)
 
 <br>
 
@@ -109,7 +109,7 @@ Per usare il servizio *Language Understanding* in Azure, sarà necessario config
 
     5. Determinare il **percorso** del gruppo di risorse (se si sta creando un nuovo gruppo di risorse). Il percorso dovrebbe trovarsi idealmente nell'area in cui verrà eseguita l'applicazione. Alcune risorse di Azure sono disponibili solo in determinate aree geografiche.
     6. Sarà inoltre necessario confermare di aver compreso i termini e le condizioni applicati a questo servizio.
-    7. Selezionare **Create** (Crea).
+    7. Selezionare **Crea**.
 
         ![Crea servizio LUIS-input utente](images/AzureLabs-Lab3-03.png)
  

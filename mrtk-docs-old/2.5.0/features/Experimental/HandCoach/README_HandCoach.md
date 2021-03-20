@@ -4,14 +4,13 @@ description: Descrizione ed esempi per Hand Coach.
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: d67d9cf24164719ef359fcf89aa02982f72dd795
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 5132033372b30af49a08d618c0154659e9ab2768
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782681"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104691838"
 ---
 # <a name="hand-coach"></a>Coach mano
 
@@ -88,7 +87,7 @@ L'animatore e lo script sono stati configurati in modo da semplificare il più p
 
 ### <a name="movetotarget"></a>MoveToTarget
 
-Lo script MoveToTarget.cs fornisce la funzionalità per spostare l'hint di mano da una posizione di rilevamento a una posizione di destinazione nel tempo.
+Lo script MoveToTarget. cs fornisce funzionalità per spostare l'hint di mano da una posizione di rilevamento a una posizione di destinazione nel tempo.
 
 #### <a name="how-to-set-up-movetotarget"></a>Come configurare MoveToTarget
 
@@ -113,7 +112,7 @@ Nell'animazione che deve essere spostata, impostare due eventi: uno con una chia
 
 ### <a name="rotatearoundpoint"></a>RotateAroundPoint
 
-Lo script RotateAroundPoint.cs fornisce la funzionalità per ruotare l'hint di mano intorno a un punto pivot nel tempo.
+Lo script RotateAroundPoint. cs fornisce funzionalità per ruotare l'hint di mano intorno a un punto pivot nel tempo.
 
 #### <a name="how-to-set-up-rotatearoundpoint"></a>Come configurare RotateAroundPoint
 

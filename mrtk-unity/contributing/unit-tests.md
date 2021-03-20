@@ -4,14 +4,13 @@ description: UnitTests per controllare reliablity di MRTK.
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, UnitTest,
-ms.openlocfilehash: 273edf23eb739e1fb52852df8bd275f1cf379f29
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 7da98d44abf1d99cf22dc7f2782bba0849eadbf8
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782112"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104693258"
 ---
 # <a name="writing-and-running-tests-in-mrtk"></a>Scrittura ed esecuzione di test in MRTK
 
@@ -122,7 +121,7 @@ Esistono due tipi di test che è possibile aggiungere per il nuovo codice
 
 I test in modalità di riproduzione MRTK sono in grado di testare il modo in cui la nuova funzionalità risponde a diverse origini di input, ad esempio mani o occhi.
 
-I nuovi test in modalità di riproduzione possono ereditare [BasePlayModeTests](xref:Microsoft.MixedReality.Toolkit.Tests.BasePlayModeTests) o la struttura seguente può essere usata.
+I nuovi test in modalità di riproduzione possono ereditare [BasePlayModeTests](xref:Microsoft.MixedReality.Toolkit.Tests) o la struttura seguente può essere usata.
 
 Per creare un nuovo test in modalità di riproduzione:
 
@@ -317,6 +316,3 @@ TestUtilities.ShutdownMixedRealityToolkit();
 
 Vedere la documentazione dell'API di [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities) e [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities) per altri metodi di queste classi util Man mano che vengono estese a intervalli regolari mentre vengono aggiunti nuovi test a MRTK.
 
-## <a name="see-also"></a>Vedi anche
-
-* [Guida alla generazione del portale della documentazione](../contributing/dev-doc-guide.md)

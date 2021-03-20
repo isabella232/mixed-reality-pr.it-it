@@ -1,19 +1,19 @@
 ---
-title: 'MR and Azure 310: Rilevamento oggetti'
+title: HoloLens (1a generazione) e Azure 310-rilevamento oggetti
 description: Completare questo corso per apprendere come eseguire il training e usare un modello di apprendimento automatico per riconoscere oggetti simili e la relativa posizione nel mondo reale.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, visione personalizzata, rilevamento di oggetti, realtà mista, Accademia, Unity, esercitazione, API, hololens, Windows 10, Visual Studio
-ms.openlocfilehash: edbd583c5361f8074dc57fedb66d6ab01df16de8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 29b3622e510a0d97ee3f1dea04661b7d6ab51f9f
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583477"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730348"
 ---
-# <a name="mr-and-azure-310-object-detection"></a>Mr e Azure 310: rilevamento di oggetti
+# <a name="hololens-1st-gen-and-azure-310-object-detection"></a>HoloLens (1a generazione) e Azure 310: rilevamento oggetti
 
 >[!NOTE]
 >Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. In futuro sarà disponibile una nuova serie di esercitazioni che illustrano come sviluppare per HoloLens 2.  Questo avviso verrà aggiornato con un collegamento a queste esercitazioni quando vengono pubblicate.

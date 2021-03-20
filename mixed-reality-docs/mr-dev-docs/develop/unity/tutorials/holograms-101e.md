@@ -1,19 +1,19 @@
 ---
-title: 'MR Basics 101E: Progetto completo con emulatore'
+title: Nozioni di base su HoloLens (1st Gen) 101E-completa progetto con emulatore
 description: Seguire questa procedura dettagliata di codifica usando Unity, Visual Studio e l'emulatore HoloLens per apprendere le nozioni di base di un'applicazione olografica.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: realtà mista, realtà mista di Windows, ologramma, Accademia, esercitazione, emulatore, HoloLens, Accademia di realtà mista, Unity, Headset per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, Windows 10, sguardo, movimenti, input vocale, suono spaziale, mapping spaziale
-ms.openlocfilehash: afe62dbc3385b41d08011bf7893672272f25485b
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8d75ee610f352d11ac8396ad50c336b541a062a2
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583696"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730288"
 ---
-# <a name="mr-basics-101e-complete-project-with-emulator"></a>Nozioni di base MR 101E: Progetto completo con emulatore
+# <a name="hololens-1st-gen-basics-101e-complete-project-with-emulator"></a>Nozioni di base di HoloLens (1st Gen) 101E: completare il progetto con l'emulatore
 
 >[!NOTE]
 >Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](mrlearning-base.md).
@@ -141,7 +141,7 @@ In questo capitolo, verranno introdotti i primi tre modi per interagire con gli 
 * Selezionare l'oggetto **cursore** nel **Pannello gerarchia**.
 * Trascinare e rilasciare lo script **WorldCursor** nel **pannello Inspector**.
 * Fare doppio clic sullo script **WorldCursor** per aprirlo in Visual Studio.
-* Copiare e incollare questo codice in **WorldCursor.cs** e **salvare tutti**.
+* Copiare e incollare il codice in **WorldCursor. cs** e **salvare tutti**.
 
 ```cs
 using UnityEngine;
@@ -321,7 +321,7 @@ In questo capitolo, verrà aggiunto il supporto per due [comandi vocali](../../.
 * Nella cartella **Scripts** creare uno script denominato **SpeechManager**.
 * Trascinare lo script **SpeechManager** sull'oggetto **Origamicollection** nella gerarchia
 * Aprire lo script **SpeechManager** in Visual Studio.
-* Copiare e incollare questo codice in **SpeechManager.cs** e **salvare tutti**:
+* Copiare e incollare il codice in **SpeechManager. cs** e **salvare tutti**:
 
 ```cs
 using System.Collections.Generic;
@@ -638,7 +638,7 @@ Sono stati appresi i concetti seguenti:
 
 A questo punto è possibile iniziare a creare le proprie app olografiche.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Nozioni di base MR 101: Progetto completo con dispositivo](holograms-101.md)
 * [Sguardo fisso](../../../design/gaze-and-commit.md)

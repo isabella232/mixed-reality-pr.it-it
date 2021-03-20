@@ -1,19 +1,19 @@
 ---
-title: 'MR and Azure 312: Integrazione di bot'
+title: HoloLens (1st Gen) e Azure 312-bot Integration
 description: Completare questo corso per apprendere come creare e distribuire un bot, usando Microsoft bot Framework V4 e comunicare con esso in un'applicazione di realtà mista.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realtà mista, Accademia, Unity, esercitazione, API, visione artificiale, hololens, immersiva, VR, Microsoft bot Framework V4, bot app Web, bot Framework, Microsoft bot, Windows 10, Visual Studio
-ms.openlocfilehash: 6b8b4624615a3c3f62800b396803572b0b67ad1a
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5bef129b9ccbbba6bf2bce835bd1567d4f596932
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582463"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730318"
 ---
-# <a name="mr-and-azure-312-bot-integration"></a>MR e Azure 312: Integrazione di bot
+# <a name="hololens-1st-gen-and-azure-312-bot-integration"></a>HoloLens (1a generazione) e Azure 312: integrazione bot
 
 >[!NOTE]
 >Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. In futuro sarà disponibile una nuova serie di esercitazioni che illustrano come sviluppare per HoloLens 2.  Questo avviso verrà aggiornato con un collegamento a queste esercitazioni quando vengono pubblicate.
@@ -98,7 +98,7 @@ Il primo passaggio consiste nel creare il bot come applicazione Web ASP.Net Core
 
 7.  Ripetere il punto precedente per creare un'altra classe denominata **ConversationContext**. 
 
-8.  Fare clic con il pulsante destro del mouse su **wwwroot** nel **Esplora soluzioni** e fare clic su **Aggiungi** **|** **nuovo elemento**. Selezionare la  **pagina HTML** (si troverà nella sottosezione Web). Denominare il file **default.html**. Scegliere **Aggiungi**.
+8.  Fare clic con il pulsante destro del mouse su **wwwroot** nel **Esplora soluzioni** e fare clic su **Aggiungi** **|** **nuovo elemento**. Selezionare la  **pagina HTML** (si troverà nella sottosezione Web). Denominare il file **default.html**. Fare clic su **Aggiungi**.
 
     ![Creare l'applicazione bot](images/AzureLabs-Lab312-06.png)
 

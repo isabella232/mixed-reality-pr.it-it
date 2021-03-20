@@ -1,17 +1,16 @@
 ---
-title: PARTECIPANTI
-description: Community che contribuisce a MRTK.
+title: Contributo
+description: Come contribuire al Toolkit di realtà mista
 author: polar-kev
 ms.author: kesemple
-ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.date: 03/17/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, report sui bug,
-ms.openlocfilehash: a6c54e828db711c31cb6b58ed222c0bc953457f5
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: ccfacf87a4b3bad3adca965533b73ee50a51385f
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782118"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104693358"
 ---
 # <a name="contributing"></a>Contributo
 
@@ -57,5 +56,5 @@ Quando si aggiunge una correzione di bug o una funzionalità, attenersi alla seg
 1. Se si aggiunge una funzionalità sperimentale, non è necessario scrivere test e documentazione. Seguire invece le [linee guida per le funzionalità sperimentali](../contributing/experimental-features.md).
 1. Aggiungere i test per verificare la correzione di bug/funzionalità. Le istruzioni per la scrittura e l'esecuzione di test si trovano in [UnitTests](../contributing/unit-tests.md).
 1. Verificare che il codice e le funzionalità siano documentati come descritto nelle [linee guida della documentazione](../contributing/documentation-guide.md).
-1. Verificare che il codice funzioni come previsto in tutte le piattaforme. Per l'elenco delle piattaforme supportate, vedere le [Note sulla versione](../release-notes.md) . Per i progetti UWP Windows, il codice deve essere [conforme](https://developer.microsoft.com/windows/develop/app-certification-kit). A tale scopo, generare una soluzione di Visual Studio, fare clic con il pulsante destro del mouse su progetto; **Archivio**  >  di **Creare pacchetti dell'applicazione**. Seguire le istruzioni ed eseguire i test. Assicurarsi che tutti abbiano esito positivo.
+1. Verificare che il codice funzioni come previsto in tutte le piattaforme. Per l'elenco delle piattaforme supportate, vedere le [Note sulla versione](../release-notes/mrtk-26-release-notes.md) . Per i progetti UWP Windows, il codice deve essere [conforme](https://developer.microsoft.com/windows/develop/app-certification-kit). A tale scopo, generare una soluzione di Visual Studio, fare clic con il pulsante destro del mouse su progetto; **Archivio**  >  di **Creare pacchetti dell'applicazione**. Seguire le istruzioni ed eseguire i test. Assicurarsi che tutti abbiano esito positivo.
 1. Seguire le istruzioni in [richieste pull](../contributing/pull-requests.md) quando si effettua una richiesta pull.

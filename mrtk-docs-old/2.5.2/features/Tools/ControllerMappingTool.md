@@ -4,14 +4,13 @@ description: Documentazione sullo strumento di mapping del controller in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 7f863a9bcb603950ef5eb84085f34b2661ca926a
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 4e874429d99bdaee869e7c88447aedd505817e73
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782260"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104691268"
 ---
 # <a name="controller-mapping-tool"></a>Strumento di mapping controller
 

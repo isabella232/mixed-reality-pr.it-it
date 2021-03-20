@@ -4,14 +4,13 @@ description: Panoramica sulla barra dell'app in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, barra dell'app,
-ms.openlocfilehash: c02d2c851b9bc1cec5154ea6ef89772a686c5e08
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: ecf6886713565243f08227a1ad4f097fb1fb121e
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782969"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104691148"
 ---
 # <a name="app-bar"></a>Barra dell'app
 

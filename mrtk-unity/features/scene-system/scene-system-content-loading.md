@@ -4,14 +4,13 @@ description: Sistema di scena per il caricamento di documentazione con MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: ffa6d27e4f19357af663800cc6ec49e3475ece62
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: d2b1ec55c4dc715ade68e5c04981c252e6dc7b3a
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782782"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690211"
 ---
 # <a name="content-scene-loading"></a>Caricamento della scena del contenuto
 
@@ -52,7 +51,7 @@ await sceneSystem.LoadContent("SingleContentScene", LoadSceneMode.Single);
 
 Il contenuto può essere caricato singolarmente in ordine di indice di compilazione. Questa operazione è utile per le applicazioni di presentazione che consentono agli utenti di eseguire una serie di scene dimostrative una alla volta.
 
-![MRTK_SceneSystemBuildSettings](../images/scene-system/MRTK_SceneSystemBuildSettings.png)
+![Scene correnti in Build nelle impostazioni del lettore](../images/scene-system/MRTK_SceneSystemBuildSettings.png)
 
 Si noti che il caricamento del contenuto successivo/precedente USA LoadSceneMode. Single per impostazione predefinita per garantire che il contenuto precedente venga scaricato.
 
@@ -90,7 +89,7 @@ if (prevSceneRequested)
 
 ## <a name="loading-by-tag"></a>Caricamento per tag
 
-![MRTK_SceneSystemLoadingByTag](../images/scene-system/MRTK_SceneSystemLoadingByTag.png)
+![Caricamento di scene di contenuto per tag](../images/scene-system/MRTK_SceneSystemLoadingByTag.png)
 
 A volte è consigliabile caricare le scene di contenuto nei gruppi. Ad esempio, una fase di un'esperienza può essere costituita da più scene, che devono essere caricate simultaneamente per funzionare. Per semplificare questa operazione, è possibile contrassegnare le scene e quindi caricarle o scaricarle con tale tag.
 
@@ -143,4 +142,4 @@ Trees | Vegetazione | •
 
 È possibile eseguire tutte queste operazioni in Editor e in modalità di riproduzione usando il [controllo del servizio](../../configuration/mixed-reality-configuration-guide.md#editor-utilities) del sistema di scena. In modalità di modifica i caricamenti della scena saranno istantanei, mentre in modalità di riproduzione è possibile osservare lo stato di avanzamento del caricamento e usare i [token di attivazione.](scene-system-load-progress.md)
 
-![MRTK_SceneSystemServiceInspector](../images/scene-system/MRTK_SceneSystemServiceInspector.PNG)
+![Sistema di scena nel controllo con caricamento contenuto evidenziato](../images/scene-system/MRTK_SceneSystemServiceInspector.PNG)

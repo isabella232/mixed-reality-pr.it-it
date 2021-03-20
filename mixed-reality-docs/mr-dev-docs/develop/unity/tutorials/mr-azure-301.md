@@ -1,19 +1,19 @@
 ---
-title: 'MR and Azure 301: Traduzione'
+title: HoloLens (1a generazione) e Azure 301-traduzione in lingua
 description: Completare questo corso per apprendere come implementare il API Traduzione testuale di Azure in un'applicazione di realtà mista.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, realtà mista, Accademia, Unity, esercitazione, API, traduzione testuale, hololens, immersiva, VR, traduzione in lingua, Windows 10, Visual Studio
-ms.openlocfilehash: 0b7e7c2e4146d3c60e62c25764aae48260fdf3ef
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: d02b86b6e62a46cd3ed4ebe7e6188cfda18e0d49
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583289"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730578"
 ---
-# <a name="mr-and-azure-301-language-translation"></a>MR e Azure 301: Traduzione
+# <a name="hololens-1st-gen-and-azure-301-language-translation"></a>HoloLens (1a generazione) e Azure 301: traduzione in lingua
 
 <br>
 
@@ -110,7 +110,7 @@ Per usare l'API di Azure translator, sarà necessario configurare un'istanza del
 
     5. Determinare il **percorso** del gruppo di risorse (se si sta creando un nuovo gruppo di risorse). Il percorso dovrebbe trovarsi idealmente nell'area in cui verrà eseguita l'applicazione. Alcune risorse di Azure sono disponibili solo in determinate aree geografiche.
     6. Sarà inoltre necessario confermare di aver compreso i termini e le condizioni applicati a questo servizio.
-    7. Selezionare **Create** (Crea).
+    7. Selezionare **Crea**.
 
         ![Fare clic sul pulsante Crea.](images/AzureLabs-Lab1-04.png)
 

@@ -4,14 +4,13 @@ description: Panoramica della lavagna delle chiavi di sistema in MRTK
 author: maxwang-ms
 ms.author: wangmax
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, tastiera di sistema,
-ms.openlocfilehash: 8a2ce95d05cb8f82c3c430b46a14f838d0874f8d
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 87193f62da8aacd83bc212ff17e9d48a1c94b0ba
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782909"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104691378"
 ---
 # <a name="system-keyboard"></a>Tastiera di sistema
 

@@ -4,14 +4,13 @@ description: Documentazione sul gestore di manipolazione in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, manipolazione,
-ms.openlocfilehash: f294516b7446934f4f390055644b32c99a564426
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: bd5a073aa763da2c13e64436f8a4785db1219690
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101782482"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104689231"
 ---
 # <a name="manipulation-handler"></a>Gestore di manipolazione
 
@@ -25,7 +24,7 @@ Aggiungere il `ManipulationHandler` componente script a un GameObject. Assicurar
 
 Per fare in modo che l'oggetto risponda all'input della mano quasi articolato, aggiungere `NearInteractionGrabbable` anche lo script.
 
-![Gestore di manipolazione](../images/manipulation-handler/MRTK_ManipulationHandler_Howto.png)
+![Uso del gestore di manipolazione nell'editor di Unity](../images/manipulation-handler/MRTK_ManipulationHandler_Howto.png)
 
 ## <a name="inspector-properties"></a>Proprietà di Inspector
 

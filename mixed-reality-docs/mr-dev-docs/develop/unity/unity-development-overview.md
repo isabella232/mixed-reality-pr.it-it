@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realtà mista, sviluppo, guida introduttiva, nuovo progetto, porting, funzionalità, fotocamera, simulazione, emulazione, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, mapping spaziale, input vocale, fotocamera individuabile, emulatore, Azure, esercitazioni
-ms.openlocfilehash: ed0f27822ab83baa2c1de6575067bdbd6b00a5e6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 4979c6f0f88544b4f00cd0859e5c807ddef137e5
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102126614"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730488"
 ---
 # <a name="unity-development-for-hololens"></a>Sviluppo di Unity per HoloLens
 
@@ -27,7 +27,7 @@ La soluzione più veloce per creare un'[app di realtà mista](../../design/app-v
 
 Usare i checkpoint seguenti per trasferire i giochi e le applicazioni di Unity nel mondo della realtà mista. Se non è stata ancora esplorata l'[applicazione di esempio Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd), è consigliabile scaricarla e usarla per acquisire familiarità con i concetti di base dell'esperienza utente in realtà mista.
 
-### <a name="1-getting-started"></a>1. Guida introduttiva
+## <a name="1-getting-started"></a>1. Guida introduttiva
 
 Il modo più semplice per sviluppare in Unity è quello di usare Mixed Reality Toolkit. MRTK consentirà di configurare automaticamente un progetto per la realtà mista e fornirà un set di funzionalità utili per accelerare il processo di sviluppo. Alla fine di questa sezione, si avrà una conoscenza di base su Mixed Reality Toolkit, un ambiente di sviluppo configurato correttamente per le app di realtà mista e un progetto MRTK funzionante in Unity creato dall'utente.
 
@@ -44,13 +44,13 @@ Il modo più semplice per sviluppare in Unity è quello di usare Mixed Reality T
 > [!NOTE]
 > Dopo aver configurato MRTK V2 nel progetto, gli oggetti di gioco Unity standard, ad esempio la fotocamera, si illumineranno immediatamente per un'esperienza da seduti. Per istruzioni sulla modifica della scala di esperienza dell'applicazione, vedere la pagina relativa ai [sistemi di coordinate](coordinate-systems-in-unity.md).
 
-### <a name="2-core-building-blocks"></a>2. Componenti fondamentali
+## <a name="2-core-building-blocks"></a>2. Componenti fondamentali
 
 Tutti i componenti di base per le applicazioni di realtà mista sono esposti in modo coerente con altre API di Unity Questi blocchi predefiniti sono disponibili come funzionalità autonome e tramite il Mixed Reality Toolkit. Potrebbero non essere tutti necessari nell'immediato, ma è bene esaminarli nella fase iniziale. Dopo aver esaminato i blocchi predefiniti fondamentali indicati di seguito, si avrà a disposizione un insieme completo di funzionalità da integrare in un progetto di realtà mista autonomamente o tramite MRTK.
 
 [!INCLUDE[](../includes/unity-building-blocks.md)]
 
-### <a name="3-advanced-features"></a>3. Funzionalità avanzate
+## <a name="3-advanced-features"></a>3. Funzionalità avanzate
 
 Altre funzionalità chiave per le applicazioni di realtà mista sono disponibili tramite le API di Unity senza la necessità di ulteriori pacchetti o configurazioni. Queste funzionalità possono essere aggiunte ai progetti Unity anche senza aver installato MRTK. Dopo aver esaminato le funzionalità più avanzate offerte da Unity, sarà possibile creare app di realtà mista più complesse.
 
@@ -62,7 +62,7 @@ Altre funzionalità chiave per le applicazioni di realtà mista sono disponibili
 | [Perdita del tracciamento](tracking-loss-in-unity.md) | Gestire gli scenari in cui il dispositivo non è in grado di individuare la propria posizione nello spazio globale dell'applicazione |
 | [Input da tastiera](keyboard-input-in-unity.md) | Ottenere input nelle app da tastiere reali e di realtà mista |
 
-### <a name="4-deploying-to-a-device-or-emulator"></a>4. Distribuzione in un dispositivo o un emulatore
+## <a name="4-deploying-to-a-device-or-emulator"></a>4. Distribuzione in un dispositivo o un emulatore
 
 Non appena il progetto Unity olografico è pronto per il test, il passaggio successivo è quello di esportare e compilare una soluzione Unity di Visual Studio. Con questa soluzione di Visual Studio è possibile eseguire l'applicazione in uno dei tre modi seguenti, usando un dispositivo reale o simulato. Al termine di questa sezione, sarà possibile distribuire l'applicazione in qualsiasi dispositivo o emulatore in base alle esigenze di sviluppo.
 
@@ -70,7 +70,7 @@ Non appena il progetto Unity olografico è pronto per il test, il passaggio succ
 * [Emulatore HoloLens](../platform-capabilities-and-apis/using-the-hololens-emulator.md)
 * [Simulatore di visore VR immersive di Windows Mixed Reality](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 
-### <a name="5-adding-services"></a>5. Aggiunta di servizi
+## <a name="5-adding-services"></a>5. Aggiunta di servizi
 
 A questo punto del percorso di sviluppo, potrebbe essere necessario aggiungere servizi o ricevere supporto per una distribuzione commerciale. L'integrazione di [Servizi cloud di Azure](../mixed-reality-cloud-services.md) e funzionalità di Dynamics 365 può migliorare notevolmente i progetti. Sono stati definiti alcuni punti di partenza per consentire di esplorare e ampliare le conoscenze relative alla realtà mista.
 
