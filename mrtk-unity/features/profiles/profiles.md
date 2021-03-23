@@ -5,14 +5,16 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, profili,
-ms.openlocfilehash: c2f24360bc89b035f033c110dee021c5d73e7a65
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 384614f27c099af197ea8a9aedc72c711f0c099e
+ms.sourcegitcommit: f74d33d50c1fbfebe8571695d631ce78dd599f74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702297"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104881228"
 ---
 # <a name="profiles"></a>Profiles
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Introduction-to-MRTK-Profiles/player]
 
 Uno dei modi principali in cui è configurato il MRTK consiste nell'usare i profili disponibili nel pacchetto di base. L' [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) oggetto principale in una scena avrà il profilo attivo, che è un ScriptableObject. Il profilo di configurazione di MRTK di livello superiore contiene i dati di sottoprofilo per ogni core dei sistemi principali principali, ognuno dei quali è progettato per configurare il comportamento dei sottosistemi corrispondenti. Inoltre, questi profili secondari sono ScriptableObjects e possono quindi contenere riferimenti ad altri oggetti profilo, un livello sotto di essi. Esiste essenzialmente un intero albero di profili connessi che compongono le informazioni di configurazione per l'inizializzazione dei sottosistemi e delle funzionalità di MRTK.
 

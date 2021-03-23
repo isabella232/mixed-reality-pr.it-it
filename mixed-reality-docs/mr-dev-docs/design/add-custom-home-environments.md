@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, Home, ambienti personalizzati, luoghi, scogliere, Skyloft, utente, creazione, auricolare in realtà mista, auricolare di realtà mista di Windows, Headset della realtà virtuale, HoloLens, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: ca6a41f8388a767b1191ddc3b377822567a603a6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 2a626b91b79eadb49c9da95c9d61f92a375015a0
+ms.sourcegitcommit: f74d33d50c1fbfebe8571695d631ce78dd599f74
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583308"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104881218"
 ---
 # <a name="design-your-own-immersive-environments"></a>Progettare ambienti immersivi personalizzati
 
@@ -82,7 +82,7 @@ La realtà mista di Windows si basa su Binary glTF (. glb) come formato di distr
 
 Il primo passaggio nell'esportazione degli asset da usare come ambienti Home personalizzati è la generazione di un modello glTF 2,0. Il gruppo di lavoro glTF gestisce un [elenco degli esportatori e dei convertitori supportati](https://github.com/KhronosGroup/glTF/blob/master/README.md#converters-and-exporters) per la creazione di un modello glTF 2,0. Per iniziare, usare uno dei programmi elencati in questa pagina per creare ed esportare un modello glTF 2,0 o convertire un modello esistente usando uno dei convertitori supportati.
 
-Vedere anche [questo articolo utile, che offre una panoramica di un flusso di lavoro artistico per l'esportazione diretta di modelli glTF da Blender e 3DS Max. 
+<!-- Additionally, check out [this helpful article, which provides an overview of an art workflow for exporting glTF models from Blender and 3DS Max directly.  -->
 
 ### <a name="environment-limits"></a>Limiti di ambiente
 
@@ -149,5 +149,5 @@ Il percorso di generazione predefinito si trova a 0, 0, 0 nell'ambiente. Attualm
 
 Quando si crea l'ambiente personalizzato, verrà usata una simulazione di rendering acustico che non corrisponde allo spazio fisico creato. Il suono può provenire dalle direzioni errate e può sembrare ovattato. 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Microsoft Mixed Reality asset Converter (su GitHub)](https://github.com/Microsoft/glTF-Toolkit/releases)
