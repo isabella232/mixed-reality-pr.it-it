@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 08/24/2019
 ms.topic: overview
 keywords: Realtà mista di Windows, HoloLens, case study, visione, scenari, case study, cuffie per la realtà mista, cuffie per la realtà mista, cuffie per realtà virtuale
-ms.openlocfilehash: 7d3e2f3bbbc6a89bf4f136e2657f8a9abe7b9560
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 696223d2c5d122a1b1c092a2769d27ac0e94046c
+ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757649"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895159"
 ---
 # <a name="case-study-gallery"></a>Raccolta di case study
 
@@ -19,23 +19,28 @@ Storie, informazioni ed esperienze che il team di realtà misto ha trovato e but
 
 :::row:::
     :::column:::
-       [ ![ 3 HoloStudio UI and Interaction Design Learning](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md) **[3 HoloStudio UI and interazioni design Learns](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
-        HoloStudio è stata una delle prime app per HoloLens. Per questo motivo, era necessario creare nuove procedure consigliate per la progettazione dell'interfaccia utente e dell'interazione 3D. Questa operazione è stata approvata tramite test ed errori degli utenti.<br>
-        *Luglio 2016*
+       Ford [ ![ GT40 Experience](../develop/unreal/images/ford-gt40-img-01.jpg)](../develop/unreal/unreal-ford-gt40.md) **[Ford GT40 Experience](../develop/unreal/unreal-ford-gt40.md)**<br>
+        Questo case study ti permette di iniziare subito a usare la leggendaria macchina da corsa che ha sconfitto Ferrari nelle ore 1966 24 di Le Mans Race, in quanto la Ford GT40 è in grado di far fronte alla tabella.<br>
+        *2021 febbraio*
+    :::column-end:::
+    :::column:::
+       [ ![ Ridimensionamento di DataScape tra dispositivi con diverse](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md) prestazioni di **[ridimensionamento delle prestazioni in dispositivi con prestazioni diverse](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
+        Questo case study offre informazioni sul modo in cui gli sviluppatori Microsoft hanno ottimizzato l'app DataScape per offrire un'esperienza accattivante tra i dispositivi con una gamma di funzionalità di prestazioni.<br>
+        *Agosto 2017*
     :::column-end:::
     :::column:::
        [ ![ Compilazione di HoloSketch, un layout spaziale e un'app per lo sketch di UX per la compilazione di HoloLens](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md) **[HoloSketch, un layout spaziale e un'app per lo sketch di UX per HoloLens](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
         HoloSketch è un layout spaziale su dispositivo e uno strumento di schizzo UX per HoloLens per aiutare a creare esperienze olografiche.<br>
          *Luglio 2017*
     :::column-end:::
-    :::column:::
-       [ ![ Creazione di un'esperienza immersiva nei frammenti](images/surfacereconstruction.jpg)](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md) **[creazione di un'esperienza immersiva nei frammenti](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)**<br>
-        I frammenti sono un dramma Interactive Crime per Microsoft HoloLens, in cui si seguono gli indizi per risolvere un mistero che si verifica nello spazio reale.<br>
-        *Agosto 2016*
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+       [ ![ Uso del piano di stabilizzazione per ridurre la turbolenza olografica](images/holotour-stabilization-plane-500px.jpg)](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) **[usando il piano di stabilizzazione per ridurre la turbolenza](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)**<br>
+        L'uso di ologrammi può risultare complesso. Il fatto che sia possibile spostarsi nello spazio e visualizzare gli ologrammi da tutti gli angoli diversi fornisce un livello di immersione che non è possibile ottenere con un normale schermo del computer.<br>
+        *Aprile 2017*
+    :::column-end:::
     :::column:::
        [ ![ Ampliamento delle funzionalità di mapping spaziale di HoloLens](images/away-from-camera-position-500px.png)](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md) **[espansione delle funzionalità di mapping spaziale di HoloLens](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)**<br>
         Quando si creano le prime app per Microsoft HoloLens, siamo ansiosi di vedere come è possibile eseguire il push dei limiti del mapping spaziale sul dispositivo.<br>
@@ -46,20 +51,18 @@ Storie, informazioni ed esperienze che il team di realtà misto ha trovato e but
         Il team di HoloLens desidera condividere alcune delle procedure consigliate derivate dal progetto HoloLens di Lowe.<br>
         *Settembre 2016*
     :::column-end:::
-    :::column:::
-       [ ![ Uso del piano di stabilizzazione per ridurre la turbolenza olografica](images/holotour-stabilization-plane-500px.jpg)](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) **[usando il piano di stabilizzazione per ridurre la turbolenza](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)**<br>
-        L'uso di ologrammi può risultare complesso. Il fatto che sia possibile spostarsi nello spazio e visualizzare gli ologrammi da tutti gli angoli diversi fornisce un livello di immersione che non è possibile ottenere con un normale schermo del computer.<br>
-        *Aprile 2017*
-    :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [ ![ Ridimensionamento di DataScape tra dispositivi con diverse](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md) prestazioni di **[ridimensionamento delle prestazioni in dispositivi con prestazioni diverse](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
-        Questo case study offre informazioni sul modo in cui gli sviluppatori Microsoft hanno ottimizzato l'app DataScape per offrire un'esperienza accattivante tra i dispositivi con una gamma di funzionalità di prestazioni.<br>
-        *Agosto 2017*
+       [ ![ Creazione di un'esperienza immersiva nei frammenti](images/surfacereconstruction.jpg)](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md) **[creazione di un'esperienza immersiva nei frammenti](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)**<br>
+        I frammenti sono un dramma Interactive Crime per Microsoft HoloLens, in cui si seguono gli indizi per risolvere un mistero che si verifica nello spazio reale.<br>
+        *Agosto 2016*
     :::column-end:::
     :::column:::
+       [ ![ 3 HoloStudio UI and Interaction Design Learning](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md) **[3 HoloStudio UI and interazioni design Learns](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
+        HoloStudio è stata una delle prime app per HoloLens. Per questo motivo, era necessario creare nuove procedure consigliate per la progettazione dell'interfaccia utente e dell'interazione 3D. Questa operazione è stata approvata tramite test ed errori degli utenti.<br>
+        *Luglio 2016*
     :::column-end:::
     :::column:::
     :::column-end:::

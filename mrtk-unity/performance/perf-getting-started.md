@@ -1,16 +1,16 @@
 ---
-title: PefGettingStarted
+title: PerfGettingStarted
 description: Documentazione per comprendere e modificare la conformità in MRTK.
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 83c18e1e5c994f41818065e813e4ccdc7f2fda47
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 385188c37d02a3efd1c6782fbfdff443c9890d21
+ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702347"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895144"
 ---
 # <a name="performance"></a>Prestazioni
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6bcbb5894af2bbd99a42ae4fb49a4d047355c0f0
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1efce2eff4694626f913ef403427ef6eef0f66d6
+ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101882735"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104987741"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -107,7 +107,7 @@ La funzionalità Ancoraggi nello spazio di Azure viene illustrata durante il [pe
 
 ![Web](../images/javascript_logo_banner.png)
 
-L'API per dispositivi WebXR è una specifica aperta che consente di provare le app di Realtà mista nel browser su qualsiasi piattaforma. Per iniziare a creare app di realtà mista per qualsiasi piattaforma, vedere [Panoramica dello sviluppo con JavaScript](../web/javascript-development-overview.md).
+L'API per dispositivi WebXR è una specifica aperta che consente di provare le app di Realtà mista nel browser su qualsiasi piattaforma. Per iniziare a creare app di realtà mista per qualsiasi piattaforma, vedere [Panoramica dello sviluppo con JavaScript](../javascript/javascript-development-overview.md).
 
 
 # <a name="native-openxr"></a>[Nativo (OpenXR)](#tab/native)

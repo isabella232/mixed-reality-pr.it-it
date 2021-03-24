@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 465229efca35a5ac3e254ac60481a447c8708ea1
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: cd8a8229c7f70891a8f01d39ee1d6315c47429f6
+ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102244994"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104988126"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -38,6 +38,7 @@ Un subset degli esempi usa componenti UX interattivi, quali pulsanti e dispositi
 
 * [App di scacchi](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/ChessApp)
 * [Kippy's Escape](../unreal/unreal-kippys-escape.md): scaricare dal [Microsoft Store](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) in HoloLens 2
+* [Ford GT40](../unreal/unreal-ford-gt40.md) -Download dal [Microsoft Store](https://www.microsoft.com/p/ford-gt40/9p4vllktfvfp)
 
 ### <a name="made-by-epic-games"></a>Creato da Epic Games
 
