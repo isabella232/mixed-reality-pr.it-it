@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: 93514e025f60d70db6a0983c5de0e382d602512e
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: da1c61abab70ae30ba187c6ee255923a552f3562
+ms.sourcegitcommit: b01be2046d1e6728259568cb3e4ac7c677407b4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104681769"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104890813"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. Inizializzazione del progetto e distribuzione della prima applicazione
 
@@ -241,6 +241,9 @@ Al termine del processo di compilazione, Unity richiederà a Esplora file di Win
 
 Configura Visual Studio per HoloLens selezionando la configurazione **Master** o **Release**, l'architettura **ARM64** e **Dispositivo** come destinazione:
 
+> [!NOTE]
+> Scegliere la destinazione a seconda del metodo di distribuzione.
+
 ![Visual Studio configurato per la distribuzione in HoloLens 2](images/mr-learning-base/base-02-section8-step1-2.png)
 
 > [!TIP]
@@ -252,7 +255,7 @@ Configura Visual Studio per HoloLens selezionando la configurazione **Master** o
 > [!NOTE]
 > Se non viene visualizzata l'opzione Dispositivo come destinazione, potresti dover modificare il progetto di avvio per la soluzione di Visual Studio passando dal progetto IL2CPP al progetto UWP. A tale scopo, in Esplora soluzioni fai clic con il pulsante destro del mouse su NomeProgetto (Windows universale) e scegli **Imposta come progetto di avvio**.
 
-Connetti HoloLens al computer e quindi seleziona **Debug** > **Avvia senza eseguire il debug** per eseguire la compilazione e la distribuzione nel dispositivo:
+Connettere il HoloLens al computer usando un cavo USB-C, quindi selezionare **debug**  >  **Avvia senza eseguire debug** per compilare e distribuire nel dispositivo:
 
 ![Percorso del menu di avvio di Visual Studio senza debug](images/mr-learning-base/base-02-section8-step1-3.png)
 

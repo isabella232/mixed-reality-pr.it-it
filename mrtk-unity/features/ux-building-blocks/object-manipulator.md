@@ -5,12 +5,12 @@ author: thalbern
 ms.author: bethalha
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, manipolazione degli oggetti,
-ms.openlocfilehash: 1c65076c1e2bc97d5b3ed72fcfe2afcaafef0736
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: e610d6fa812f51d085064a3879be65ee8ec5bf8f
+ms.sourcegitcommit: b01be2046d1e6728259568cb3e4ac7c677407b4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104689171"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104890833"
 ---
 # <a name="object-manipulator"></a>Manipolatore di oggetti
 
@@ -19,6 +19,8 @@ ms.locfileid: "104689171"
 *ObjectManipulator* è il nuovo componente per il comportamento di manipolazione, disponibile in precedenza in *ManipulationHandler*. Il manipolatore di oggetti apporta diversi miglioramenti e semplificazioni. Questo componente sostituisce il gestore di manipolazione, che verrà deprecato.
 
 Lo script *ObjectManipulator* rende un oggetto mobile, scalabile e girevole usando uno o due mani. Il manipolatore di oggetti può essere configurato per controllare la modalità di risposta dell'oggetto a diversi input. Lo script dovrebbe funzionare con la maggior parte delle forme di interazione, ad esempio HoloLens 2, a mano articolata, HoloLens 2, raggi mano, HoloLens 1 sguardo e movimenti e input del controller di movimento dell'auricolare.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Using-Object-Manipulator-in-Mixed-Reality-Toolkit/player]
 
 ## <a name="how-to-use-the-object-manipulator"></a>Come utilizzare il manipolatore di oggetti
 
