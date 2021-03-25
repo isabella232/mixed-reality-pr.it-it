@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 1efce2eff4694626f913ef403427ef6eef0f66d6
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+ms.openlocfilehash: 5b99eda2ca8bc2ba48a46513b867e94c45b198c1
+ms.sourcegitcommit: 919bdc3e46325f3c44a022c8852cd38ffec33d33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104987741"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105104488"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -50,9 +50,10 @@ Tutti questi servizi vengono illustrati durante il [percorso di sviluppo con Uni
 ## <a name="examples"></a>Esempi
 
 Esistono diverse [app di esempio](../features-and-samples.md) open source da poter scaricare e provare per farsi un'idea di un prodotto finale di Realtà mista in Unity. Sono disponibili anche scene di esempio MRTK per testare funzionalità specifiche:
-* [Scena con esempi di interazioni della mano (MRTK) per Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor): la scena di esempio HandInteractionExamples.unity include diversi tipi di interazioni e controlli dell'interfaccia utente che evidenziano l'input effettuato con la mano articolata.
 
-* [Esempi di tracciamento oculare (MRTK) per Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html): questa pagina illustra come iniziare rapidamente a usare il tracciamento oculare in MRTK partendo dagli specifici esempi forniti per MRTK.
+* [Scena con esempi di interazioni della mano (MRTK) per Unity](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples): la scena di esempio HandInteractionExamples.unity include diversi tipi di interazioni e controlli dell'interfaccia utente che evidenziano l'input effettuato con la mano articolata.
+
+* [Esempi di tracciamento oculare (MRTK) per Unity](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/eye-tracking-examples-overview): questa pagina illustra come iniziare rapidamente a usare il tracciamento oculare in MRTK partendo dagli specifici esempi forniti per MRTK.
 
 >[!NOTE]
 >Per entrambe le scene di esempio di MRTK è necessario installare i pacchetti MRTK Foundation ed Example Unity.
