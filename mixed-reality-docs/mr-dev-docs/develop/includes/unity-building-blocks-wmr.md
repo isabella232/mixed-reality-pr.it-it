@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: 2327eae53e5fb921feeed127f38592770634575e
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1fa9e05b96de1ae73c0983de210effdfb97872c5
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98195318"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105582437"
 ---
 # <a name="available-in-mrtk"></a>[Disponibile in MRTK](#tab/mrtk)
 
 |  Funzionalità  |  Capabilities  |
 | --- | --- |
-| [Interazioni di base](../unity/mrtk-101.md) | Nozioni fondamentali sull'interazione con gli oggetti nello spazio immersivo |
+| [Interazioni di base](../../out-of-scope/mrtk-101.md) | Nozioni fondamentali sull'interazione con gli oggetti nello spazio immersivo |
 | [Fotocamera](../unity/camera-in-unity.md) | Ottimizzare pienamente la qualità visiva e la stabilità degli ologrammi nelle app di realtà mista |
 | [Controller del movimento](../unity/motion-controllers-in-unity.md) | Aggiungere azioni nello spazio alle app di realtà mista |
 | [Movimenti](../unity/gestures-in-unity.md) | Usare i movimenti della mano come input nelle esperienze di realtà mista |
@@ -29,5 +29,3 @@ ms.locfileid: "98195318"
 | [Audio spaziale](../unity/spatial-sound-in-unity.md) | Migliorare le app con audio 3D immersivo |
 | [Text](../unity/text-in-unity.md) | Ottenere testo nitido e di alta qualità di dimensioni gestibili e con un rendering di qualità |
 | [Input vocale](../unity/voice-input-in-unity.md) | Acquisire parole chiave, frasi e dettature pronunciate degli utenti|
-
-

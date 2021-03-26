@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: acba10baa64a535f36aca7aef8aeb0702304e7a1
-ms.sourcegitcommit: 4be6f36df9063ccfdce2662e299accc7406b6779
+ms.openlocfilehash: 16f8ad6de5b806630bb676e87a082f9acb825d63
+ms.sourcegitcommit: 14456a4f37ee3bfd122ae8b3110f0f18f8166685
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "105555562"
+ms.locfileid: "105556869"
 ---
 # <a name="input-simulation-service"></a>Servizio di simulazione di input
 
@@ -86,7 +86,7 @@ Usare gli assi verticali sposta **orizzontali** /  per spostare la fotocamera (i
 
 Gli angoli di rotazione e posizione della fotocamera possono essere impostati in modo esplicito anche nella finestra degli strumenti. È possibile ripristinare il valore predefinito della fotocamera utilizzando il pulsante **Reimposta** .
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Z7L4I1ET7GU" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z7L4I1ET7GU" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## <a name="controller-simulation"></a>Simulazione del controller
 
@@ -132,7 +132,7 @@ Per ruotare i controller con il mouse, tenere premuto il tasto di **manipolazion
 * La **distanza del controller predefinita** è la distanza iniziale dei controller dalla fotocamera. Se si fa clic sui controller dei pulsanti di **reimpostazione** , i controller vengono posizionati a distanza.
 * La **quantità di jitter del controller** aggiunge un movimento casuale ai controller. Questa funzionalità può essere usata per simulare un rilevamento del controller non accurato nel dispositivo e garantire che le interazioni funzionino correttamente con l'input rumoroso.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uRYfwuqsjBQ" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uRYfwuqsjBQ" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### <a name="hand-gestures"></a>Movimenti della mano
 
@@ -155,7 +155,7 @@ Per ruotare i controller con il mouse, tenere premuto il tasto di **manipolazion
 4. Usare il mouse per spostare l'oggetto
 5. Rilasciare il pulsante del mouse per arrestare l'interazione
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rM0xaHam6wM" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rM0xaHam6wM" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### <a name="two-hand-manipulation"></a>Manipolazione a due mano
 
@@ -170,7 +170,7 @@ Per la modifica di oggetti con due mani allo stesso tempo, è consigliabile usar
 1. Ripetere il processo con l'altra parte, afferrando lo stesso oggetto in una seconda posizione.
 1. Ora che entrambe le mani stanno afferrando lo stesso oggetto, è possibile spostarle per eseguire una manipolazione a due mani.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Qol5OFNfN14" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qol5OFNfN14" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### <a name="ggv-gaze-gesture-and-voice-interaction"></a>Interazione tra GGV (sguardi, movimenti e voce)
 
@@ -191,7 +191,7 @@ Inoltre, è possibile usare le mani simulate per l'interazione GGV
 1. Usare il mouse per spostare l'oggetto
 1. Rilasciare il pulsante del mouse per arrestare l'interazione
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6841rRMdqWw" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6841rRMdqWw" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### <a name="raising-teleport-events"></a>Generazione di eventi Teleport
 
