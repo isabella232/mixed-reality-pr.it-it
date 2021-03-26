@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, C#,
-ms.openlocfilehash: 35f45966279f4e34609e4ea7eb40b801b4073682
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 46508a11c75caebd382993246b0ed56c3c4eeffb
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693348"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550651"
 ---
 # <a name="coding-guidelines"></a>Linee guida sulla codifica
 
@@ -504,8 +504,8 @@ public enum Handedness
 
 Quando si generano i percorsi dei file di stringa e, in particolare, si scrivono percorsi di stringa hardcoded, eseguire le operazioni seguenti:
 
-1. Usare le [ `Path` API](https://docs.microsoft.com/dotnet/api/system.io.path?view=netframework-4.8&preserve-view=true) di C#, laddove possibile, ad esempio `Path.Combine` o `Path.GetFullPath` .
-1. Utilizzare/o [`Path.DirectorySeparatorChar`](https://docs.microsoft.com/dotnet/api/system.io.path.directoryseparatorchar?view=netframework-4.8&preserve-view=true) anziché \ o \\ \\ .
+1. Usare le [ `Path` API](/dotnet/api/system.io.path?preserve-view=true&view=netframework-4.8) di C#, laddove possibile, ad esempio `Path.Combine` o `Path.GetFullPath` .
+1. Utilizzare/o [`Path.DirectorySeparatorChar`](/dotnet/api/system.io.path.directoryseparatorchar?preserve-view=true&view=netframework-4.8) anziché \ o \\ \\ .
 
 Questi passaggi assicurano che MRTK funzioni nei sistemi Windows e UNIX.
 
@@ -701,4 +701,4 @@ Un subset della codebase MRTK USA PowerShell per l'infrastruttura della pipeline
 
 ## <a name="see-also"></a>Vedi anche
 
- [Convenzioni di codifica C# da MSDN](https://docs.microsoft.com/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)
+ [Convenzioni di codifica C# da MSDN](/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)

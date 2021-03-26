@@ -6,17 +6,17 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Input vocale, KeywordRecognizer, GrammarRecognizer, microfono, dettatura, voce, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare realtà virtuale, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 7268a4df9c7fce03029937c72540ed274574067d
-ms.sourcegitcommit: 8c3af63fb49494f75c8ab46236fc3dd8533c1e9d
+ms.openlocfilehash: c062289a1a26365528a86761b6b68a9a24041f7c
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99606116"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550381"
 ---
 # <a name="voice-input-in-unity"></a>Input vocale in Unity
 
 > [!CAUTION]
-> Prima di iniziare, provare a usare il plug-in di Unity per cognitive Speech Services SDK. Il plug-in offre risultati di accuratezza del riconoscimento vocale e accesso facile alla decodifica di sintesi vocale, oltre a funzionalità avanzate di riconoscimento vocale come finestre di dialogo, interazione basata su finalità, traduzione, sintesi di sintesi vocale e riconoscimento vocale in linguaggio naturale. Per iniziare, vedere l' [esempio e la documentazione](https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-csharp-unity).
+> Prima di iniziare, provare a usare il plug-in di Unity per cognitive Speech Services SDK. Il plug-in offre risultati di accuratezza del riconoscimento vocale e accesso facile alla decodifica di sintesi vocale, oltre a funzionalità avanzate di riconoscimento vocale come finestre di dialogo, interazione basata su finalità, traduzione, sintesi di sintesi vocale e riconoscimento vocale in linguaggio naturale. Per iniziare, vedere l' [esempio e la documentazione](/azure/cognitive-services/speech-service/quickstart-csharp-unity).
 
 Unity espone tre modi per aggiungere [input vocale](../../design/voice-input.md) all'applicazione Unity, i primi due dei quali sono i tipi di PhraseRecognizer:
 * `KeywordRecognizer`Fornisce all'app una matrice di comandi stringa da ascoltare

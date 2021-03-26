@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 26aaa6ceab029a42716afa6157ebf95011d4753b
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: c273059310c380333700d0b588ee74d9e2ecabe2
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693158"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550541"
 ---
 # <a name="dictation"></a>Dettatura
 
@@ -21,7 +21,7 @@ La dettatura consente agli utenti di registrare clip audio e ottenere una trascr
 Il sistema di dettatura USA [DictationRecognizer](https://docs.unity3d.com/ScriptReference/Windows.Speech.DictationRecognizer.html) di Unity, che a sua volta usa le API di riconoscimento vocale di Windows sottostanti per gestire la dettatura. Si noti che questo implica che questa funzionalità è presente solo nelle piattaforme basate su Windows.
 
 L'utilizzo del sistema di dettatura richiede le funzionalità dell'applicazione "client Internet" e "microfono" nella [sezione PlayerSettings-capabilities](https://docs.unity3d.com/Manual/class-PlayerSettingsWSA.html#Capabilities).
-Vedere la [documentazione di realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/voice-input-in-unity#dictation) per altri dettagli sull'input vocale in Unity.
+Vedere la [documentazione di realtà mista di Windows](/windows/mixed-reality/voice-input-in-unity#dictation) per altri dettagli sull'input vocale in Unity.
 
 ## <a name="configuration"></a>Configurazione
 

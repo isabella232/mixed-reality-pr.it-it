@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: dc06973112f21e4a88784586f20c872d6f49ec24
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 4d16707ab09fda3cbc511fc96bb2d385c21e3898
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104695948"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550911"
 ---
 # <a name="microsoft-mixed-reality-toolkit-254-release-notes"></a>Note sulla versione di Microsoft Mixed Reality Toolkit 2.5.4
 
@@ -39,7 +39,7 @@ in 2.5.2 è stato introdotto [un problema di compilazione durante l'integrazione
 
 ### <a name="add-support-for-openxr"></a>Aggiungere il supporto per OpenXR
 
-È stato aggiunto il supporto iniziale per il pacchetto di anteprima OpenXR di Unity e il pacchetto OpenXR per la realtà mista Microsoft. Per altre informazioni, vedere la pagina introduttiva di [MRTK/XRSDK](../configuration/getting-started-with-mrtk-and-xrsdk.md), [post del forum di Unity](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)o [documentazione di Microsoft](https://aka.ms/openxr-unity-install) .
+È stato aggiunto il supporto iniziale per il pacchetto di anteprima OpenXR di Unity e il pacchetto OpenXR per la realtà mista Microsoft. Per altre informazioni, vedere la pagina introduttiva di [MRTK/XRSDK](../configuration/getting-started-with-mrtk-and-xrsdk.md), [post del forum di Unity](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)o [documentazione di Microsoft](/windows/mixed-reality/develop/unity/openxr-getting-started) .
 
 > [!IMPORTANT]
 > OpenXR in Unity è supportato solo in Unity 2020,2 e versioni successive.

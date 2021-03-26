@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, movimenti,
-ms.openlocfilehash: 8a91b2b79410809cde15cf3016d6d18f0ca95b57
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: a26c7b9f51db2162daf2176e6d2125ffb6061c27
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104684704"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550931"
 ---
 # <a name="gestures"></a>Movimenti
 
@@ -18,7 +18,7 @@ I movimenti sono eventi di input basati su mani umane. Esistono due tipi di disp
 
 - Dispositivi di realtà mista di Windows, ad esempio HoloLens. Questo descrive i movimenti di pizzicotto ("rubinetto aereo") e i movimenti di tocco e mantenimento.
 
-  Per ulteriori informazioni sui movimenti HoloLens, vedere la [documentazione sui movimenti di realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/gestures).
+  Per ulteriori informazioni sui movimenti HoloLens, vedere la [documentazione sui movimenti di realtà mista di Windows](/windows/mixed-reality/gestures).
 
   [`WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager) esegue il wrapping di [Unity XR. WSA. Input. GestureRecognizer](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.GestureRecognizer.html) per utilizzare gli eventi di movimento di Unity dai dispositivi HoloLens.
 

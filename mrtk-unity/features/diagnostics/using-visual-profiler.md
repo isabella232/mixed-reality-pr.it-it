@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: f268bfe18cf44129f88ebdaf4cd56e442c458b59
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 3ff0a386248b50458788c59666be7e056139f284
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104695768"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550811"
 ---
 # <a name="using-the-visual-profiler"></a>Uso di Visual Profiler
 
@@ -47,7 +47,7 @@ La piattaforma e la configurazione hardware specifiche giocheranno un ruolo sign
 - Realtà mista di Windows Ultra: 90
 
 > [!NOTE]
-> A causa della [limitazione delle richieste di frequenza dei fotogrammi in HoloLens quando è attiva la fase MRC predefinita](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens), il Profiler visivo si nasconde mentre vengono acquisiti video e foto. È possibile eseguire l'override di questa impostazione nel profilo di sistema di diagnostica.
+> A causa della [limitazione delle richieste di frequenza dei fotogrammi in HoloLens quando è attiva la fase MRC predefinita](/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens), il Profiler visivo si nasconde mentre vengono acquisiti video e foto. È possibile eseguire l'override di questa impostazione nel profilo di sistema di diagnostica.
 
 ### <a name="frame-time"></a>Durata fotogramma
 

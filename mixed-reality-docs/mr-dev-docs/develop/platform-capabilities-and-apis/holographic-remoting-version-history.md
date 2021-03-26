@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, comunicazione remota, comunicazione remota olografica, cronologia delle versioni, auricolare in realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 8fa1671657a7cb057f88da24fe4cfe68b0401397
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: 101061f69fcd4bd3885aa265f32ba2a8f93bf3dc
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496039"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550131"
 ---
 # <a name="holographic-remoting-version-history"></a>Cronologia delle versioni remota olografica
 
@@ -25,7 +25,7 @@ ms.locfileid: "100496039"
   * Canali di dati personalizzati come parte dell'estensione XR_MSFT_holographic_remoting. Un esempio per è illustrato nell' [esempio remoto OpenXR](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 * Sincronizzazione migliorata tra il lettore e il lato remoto. In questo modo è possibile modificare dinamicamente la posizione e il buffering dei frame, per garantire che il contenuto sottoposto a rendering remoto raggiunga correttamente gli schermi nella frequenza dei fotogrammi di destinazione prevista
 * Miglioramento delle prestazioni del lettore di comunicazione remota olografico disponibile tramite il Microsoft Store. In HoloLens 2 il giocatore esegue ora il solido su 60 fotogrammi al secondo.
-* Trasmissione ottimizzata di mesh di superficie spaziale su cui è possibile eseguire query tramite [SpatialSurfaceObserver](https://docs.microsoft.com/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) da un'app remota.
+* Trasmissione ottimizzata di mesh di superficie spaziale su cui è possibile eseguire query tramite [SpatialSurfaceObserver](/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) da un'app remota.
 * È stato risolto un problema per cui la chiamata di metodi SpatialAnchorManager o il rilascio di ancoraggi causava eccezioni alla disconnessione.
 * Correzione del problema di threading che causava arresti anomali durante la chiusura di istanze di PlayerContext o RemoteContext.
 * Molte altre correzioni di bug e miglioramenti alla stabilità.

@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, Coach mano, auricolare immersivo, MRTK, Hands, Hands, aiuto, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: ca23617e18c84f592ebd0575195b6bf4a98e80e5
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 56a56893a7c5bc772268ab9980f25327eae83af5
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759477"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550071"
 ---
 # <a name="hand-coach"></a>Coach mano
 
@@ -169,7 +169,7 @@ Una volta soddisfatta l'animazione
 * Le mani devono essere insegnate una sola volta. Il superamento dell'insegnamento può causare confusione e confusione
 *   Per portarla in Unity, scaricare la versione più recente di MRTK qui: https://github.com/microsoft/MixedRealityToolkit-Unity
     *   Materiale: Teaching_Hand2
-    *   Script: fare riferimento alle linee guida di MRTK per <a href= "https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/hand-coach.md"> MRTK Hand Coach </a>
+    *   Script: fare riferimento alle linee guida di MRTK per <a href= "/windows/mixed-reality/mrtk-docs/features/experimental/hand-coach.md"> MRTK Hand Coach </a>
     *   Impostazione per progetto
         *   Scenografia impostata su UWP: è possibile trovare l'istruzione nel [progetto di Unity](../develop/unity/Configure-Unity-Project.md) per la realtà mista di Windows
 
@@ -181,4 +181,4 @@ Una volta soddisfatta l'animazione
 * [Installare gli strumenti](../develop/install-the-tools.md)
 * [Configurare il progetto Unity](../develop/unity/Configure-Unity-Project.md)
 * [Panoramica dello sviluppo per Unity](../develop/unity/unity-development-overview.md)
-* [MRTK 101](../develop/unity/mrtk-101.md)
+* [MRTK 101](../out-of-scope/mrtk-101.md)

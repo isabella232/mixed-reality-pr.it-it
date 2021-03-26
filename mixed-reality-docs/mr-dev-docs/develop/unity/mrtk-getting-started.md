@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, Mixed Reality Toolkit, MRTK versione 2, MRTK, strumenti, SDK, HoloLens, HoloLens 2, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, multipiattaforma
-ms.openlocfilehash: a4c9af016aaa65c6449801d838544b409d564c8e
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 9e816f0e10416fb5b5103d4fd98b47738ed156d6
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730388"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105549931"
 ---
 # <a name="introducing-mrtk-for-unity"></a>Introduzione a MRKT per Unity
 
@@ -33,7 +33,7 @@ MRTK per Unity offre un sistema di input multipiattaforma, componenti fondamenta
 > [!div class="nextstepaction"]
 > [Prova le nostre esercitazioni su MRTK](tutorials/mr-learning-base-01.md)
 
-Per altri dettagli sulle funzionalità, vedere la [documentazione di MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity) .
+Per altri dettagli sulle funzionalità, vedere la [documentazione di MRTK](/windows/mixed-reality/mrtk-unity) .
 
 ## <a name="new-with-mrtk-v2"></a>Novità di MRTK v2
 
@@ -56,5 +56,5 @@ Dovendo lavorare con piattaforme mobili, abbiamo realizzato il toolkit tenendo s
 * [Installare gli strumenti](../install-the-tools.md)
 * [Strumento per la funzionalità di realtà mista](welcome-to-mr-feature-tool.md)
 * [Sviluppo con MRTK per Unity](unity-development-overview.md)
-* [MRTK-Home page della documentazione](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/)
-* [Porting da HoloToolkit/MRTK a MRTK versione 2](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/updates-deployment/htk-to-mrtk-porting-guide)
+* [MRTK-Home page della documentazione](/windows/mixed-reality/mrtk-unity/)
+* [Porting da HoloToolkit/MRTK a MRTK versione 2](/windows/mixed-reality/mrtk-unity/updates-deployment/htk-to-mrtk-porting-guide)

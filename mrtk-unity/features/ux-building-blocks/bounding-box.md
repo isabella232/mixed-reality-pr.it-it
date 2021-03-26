@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, rettangolo di delimitazione
-ms.openlocfilehash: 864432349d31c5d0e8b8032a7ed0939e345521df
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1c5e0e4a03aa31d9df4f78613a05643840d70501
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702257"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550001"
 ---
 # <a name="bounding-box"></a>Rettangolo di selezione
 
@@ -21,7 +21,7 @@ ms.locfileid: "104702257"
 
 Lo [`BoundingBox.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundingBox) script fornisce funzionalità di base per la trasformazione di oggetti in realtà mista. Un rettangolo di delimitazione mostrerà un cubo intorno all'ologramma per indicare che è possibile interagire con. Gli handle sugli angoli e sui bordi del cubo consentono di ridimensionare o ruotare l'oggetto. Il rettangolo di delimitazione reagisce anche all'input dell'utente. In HoloLens 2, ad esempio, il rettangolo di delimitazione risponde alla prossimità del dito, fornendo commenti visivi per facilitare la percezione della distanza dall'oggetto. Tutte le interazioni e gli oggetti visivi possono essere facilmente personalizzati.
 
-Per ulteriori informazioni, vedere il [riquadro delimitatore e la barra delle applicazioni](https://docs.microsoft.com/windows/mixed-reality/app-bar-and-bounding-box) in Windows Dev Center.
+Per ulteriori informazioni, vedere il [riquadro delimitatore e la barra delle applicazioni](/windows/mixed-reality/app-bar-and-bounding-box) in Windows Dev Center.
 
 ## <a name="example-scene"></a>Scena di esempio
 

@@ -6,12 +6,12 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, mapping spaziale, renderer, Collider, mesh, analisi, componente, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare realtà virtuale, MRTK, Toolkit realtà mista
-ms.openlocfilehash: a713497e0c5f061e9e81bf66197b3e2116218219
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: e2ef6ac43e81ff2b8e66a4bd197ea41c198a1626
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759747"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105549951"
 ---
 # <a name="spatial-mapping-in-unity"></a>Mapping spaziale in Unity
 
@@ -311,7 +311,7 @@ struct TopologyResult
 ```
 
 > [!NOTE]
-> Nell'esempio Unity ogni query è collegata a un pulsante nel pannello dell'interfaccia utente virtuale. L'esempio codifica in modo rigido i parametri per ognuna di queste query in valori ragionevoli. Per altri esempi, vedere SpaceVisualizer.cs nel codice di esempio.
+> Nell'esempio Unity ogni query è collegata a un pulsante nel pannello dell'interfaccia utente virtuale. L'esempio codifica in modo rigido i parametri per ognuna di queste query in valori ragionevoli. Per altri esempi, vedere SpaceVisualizer. cs nel codice di esempio.
 
 ### <a name="shape-queries"></a>Query di forma
 
@@ -319,7 +319,7 @@ Nella dll, l'analizzatore di forme ("ShapeAnalyzer_W") utilizza l'analizzatore d
 
 L'analisi delle forme funziona solo su superfici orizzontali. Un divano, ad esempio, viene definito dalla superficie della postazione piatta e dalla parte superiore piatta del divano. La query Shape cerca due superfici di dimensioni, altezze e intervalli di aspetto specifici, con le due superfici allineate e connesse. Con la terminologia relativa alle API, il divano e la parte superiore sono componenti di forma e i requisiti di allineamento sono vincoli dei componenti della forma.
 
-Di seguito è riportata una query di esempio definita nell'esempio Unity (ShapeDefinition.cs) per gli oggetti "SitTable".
+Di seguito è riportata una query di esempio definita nell'esempio Unity (ShapeDefinition. cs) per gli oggetti "SitTable".
 
 ```cs
 shapeComponents = new List<ShapeComponent>()
@@ -350,7 +350,7 @@ shapeConstraints = new List<ShapeConstraint>()
 };
 ```
 
-Le funzioni wrapper sono disponibili nel modulo Unity per semplificare la creazione di definizioni di forme personalizzate. L'elenco completo dei vincoli relativi a componenti e forme si trova in "SpatialUnderstandingDll.cs" all'interno delle strutture "ShapeComponentConstraint" e "ShapeConstraint".
+Le funzioni wrapper sono disponibili nel modulo Unity per semplificare la creazione di definizioni di forme personalizzate. L'elenco completo dei vincoli relativi a componenti e forme si trova in "SpatialUnderstandingDll. cs" all'interno delle strutture "ShapeComponentConstraint" e "ShapeConstraint".
 
 ![Forma rettangolo individuata in questa superficie](images/su-shapequery-300px.jpg)<br>
 *Forma rettangolo individuata in questa superficie*
@@ -421,7 +421,7 @@ Solver_PlaceObject(
     UnderstandingDLL.GetStaticObjectPlacementResultPtr());
 ```
 
-In caso di esito positivo, viene restituita una struttura "ObjectPlacementResult" che contiene la posizione, le dimensioni e l'orientamento del posizionamento. Inoltre, la selezione host viene aggiunta all'elenco interno della dll degli oggetti inseriti. Questo oggetto verrà preso in considerazione dalle query di posizionamento successive. Il file "LevelSolver.cs" nell'esempio Unity contiene altre query di esempio.
+In caso di esito positivo, viene restituita una struttura "ObjectPlacementResult" che contiene la posizione, le dimensioni e l'orientamento del posizionamento. Inoltre, la selezione host viene aggiunta all'elenco interno della dll degli oggetti inseriti. Questo oggetto verrà preso in considerazione dalle query di posizionamento successive. Il file "LevelSolver. cs" nell'esempio Unity contiene altre query di esempio.
 
 ![Risultati del posizionamento degli oggetti](images/su-objectplacement-1000px.jpg)<br>
 *Figura 3: le caselle blu come il risultato di tre posizioni nelle query sul pavimento con le regole di posizione della fotocamera*
@@ -441,7 +441,7 @@ One-time scan process –
     Query functions will not function until after the scan has been finalized.
 ```
 
-"Disegno" di playspace basato sull'utente: durante la fase di analisi, l'utente si sposta ed esamina la velocità di riproduzione, disegnando in modo efficace le aree, che devono essere incluse. La mesh generata è importante per fornire commenti e suggerimenti degli utenti durante questa fase. Installazione domestica o di Office: le funzioni di query sono progettate per le superfici piane e i muri con angoli corretti. Si tratta di una limitazione flessibile. Tuttavia, durante la fase di analisi, viene completata un'analisi dell'asse primaria per ottimizzare lo schema a mosaico mesh lungo l'asse principale e secondario. Il file SpatialUnderstanding.cs incluso gestisce il processo della fase di analisi. Chiama le funzioni seguenti.
+"Disegno" di playspace basato sull'utente: durante la fase di analisi, l'utente si sposta ed esamina la velocità di riproduzione, disegnando in modo efficace le aree, che devono essere incluse. La mesh generata è importante per fornire commenti e suggerimenti degli utenti durante questa fase. Installazione domestica o di Office: le funzioni di query sono progettate per le superfici piane e i muri con angoli corretti. Si tratta di una limitazione flessibile. Tuttavia, durante la fase di analisi, viene completata un'analisi dell'asse primaria per ottimizzare lo schema a mosaico mesh lungo l'asse principale e secondario. Il file SpatialUnderstanding. cs incluso gestisce il processo della fase di analisi. Chiama le funzioni seguenti.
 
 ```
 SpatialUnderstanding_Init – Called once at the start.
@@ -480,7 +480,7 @@ La dll di informazioni archivia internamente il playspace come griglia di voxel 
 * Quando il rilevamento viene perso, l'evento OnSurfaceChanged successivo rimuoverà tutte le mesh.
 
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Mapping spaziale nel Toolkit per realtà mista
-Per altre informazioni sull'uso del mapping spaziale con Mixed Reality toolkit V2, vedere la <a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">sezione relativa alla conoscenza spaziale</a> della documentazione di MRTK.
+Per altre informazioni sull'uso del mapping spaziale con Mixed Reality toolkit V2, vedere la <a href="/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">sezione relativa alla conoscenza spaziale</a> della documentazione di MRTK.
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 

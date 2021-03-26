@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 02/28/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: ab0928a0d919c4d3be13f25342f2244cf6afbc32
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 4332f167b2cb532e858d8906654d008ea0dbb88d
+ms.sourcegitcommit: 4be6f36df9063ccfdce2662e299accc7406b6779
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104690181"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105555532"
 ---
 # <a name="microsoft-mixed-reality-toolkit-261-release-notes"></a>Note sulla versione di Microsoft Mixed Reality Toolkit 2.6.1
 
@@ -37,7 +37,7 @@ Aggiorna la scena di esempio della finestra di dialogo per descrivere correttame
 
 ### <a name="add-support-for-openxr"></a>Aggiungere il supporto per OpenXR
 
-È stato aggiunto il supporto iniziale per il pacchetto di anteprima OpenXR di Unity e il pacchetto OpenXR per la realtà mista Microsoft. Per altre informazioni, vedere la pagina introduttiva di [MRTK/XRSDK](../configuration/getting-started-with-mrtk-and-xrsdk.md), [post del forum di Unity](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)o [documentazione di Microsoft](https://aka.ms/openxr-unity-install) .
+È stato aggiunto il supporto iniziale per il pacchetto di anteprima OpenXR di Unity e il pacchetto OpenXR per la realtà mista Microsoft. Per altre informazioni, vedere la pagina introduttiva di [MRTK/XRSDK](../configuration/getting-started-with-mrtk-and-xrsdk.md), [post del forum di Unity](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)o [documentazione di Microsoft](/windows/mixed-reality/develop/unity/openxr-getting-started) .
 
 > [!IMPORTANT]
 > OpenXR in Unity è supportato solo in Unity 2020,2 e versioni successive.
@@ -66,11 +66,11 @@ Il Visualizzatore di stato è un componente di animazione che dipende dall'eleme
 
 Gli utenti possono ora usare il gesto Teleport per spostarsi sullo spazio di riproduzione in tutte le piattaforme. Per teletrasportarsi con un controller nei dispositivi MR con configurazioni predefinite, usare levetta. Per teletrasportarsi con le mani articolate, creare un gesto con la Palma rivolto verso l'alto con l'indice e il pollice verso l'alto, completando il teletrasporto arricciando il dito dell'indice. Per teletrasportarsi con la simulazione di input, vedere la documentazione aggiornata del [servizio di simulazione di input](../features/input-simulation/input-simulation-service.md).
 
-  ![Movimento Teleport](images/handteleport.gif)
+  ![Movimento Teleport](../features/images/teleport/handteleport.gif)
 
 ### <a name="scene-understanding-now-available-in-mrtk-as-an-experimental-spatial-awareness-observer"></a>Conoscenza della scena ora disponibile in MRTK come osservatore di consapevolezza spaziale sperimentale
 
-Il supporto sperimentale della [comprensione della scena](https://docs.microsoft.com/windows/mixed-reality/scene-understanding) è stato introdotto in MRTK 2,6. Gli utenti possono incorporare le funzionalità di comprensione della scena di HoloLens 2 come osservatore di consapevolezza spaziale nei progetti basati su MRTK. Per ulteriori informazioni, vedere la [documentazione relativa alla comprensione della scena](../features/spatial-awareness/scene-understanding.md) .
+Il supporto sperimentale della [comprensione della scena](/windows/mixed-reality/scene-understanding) è stato introdotto in MRTK 2,6. Gli utenti possono incorporare le funzionalità di comprensione della scena di HoloLens 2 come osservatore di consapevolezza spaziale nei progetti basati su MRTK. Per ulteriori informazioni, vedere la [documentazione relativa alla comprensione della scena](../features/spatial-awareness/scene-understanding.md) .
 
 > [!IMPORTANT]
 > La comprensione della scena è supportata solo in HoloLens 2 e Unity 2019,4 e versioni successive.
@@ -93,7 +93,7 @@ Due nuovi risolutori sono pronti per l'uso con MRTK principali.
 ### <a name="hand-coach-graduated-from-experimental"></a>Coach mano laureato da sperimentale
 
 La funzionalità di coaching a mano è ora pronta per l'uso con MRTK principali.
-  ![Esempio di coach della mano](https://docs.microsoft.com/windows/mixed-reality/design/images/handcoach/airtap.gif)
+  ![Esempio di coach della mano](/windows/mixed-reality/design/images/handcoach/airtap.gif)
 
 ### <a name="dialog-controls-graduated-from-experimental"></a>Controlli della finestra di dialogo graduati da sperimentale
 
@@ -113,13 +113,13 @@ Gli script di Pulse shader sono laureati da sperimentale. Per altre informazioni
 
 ### <a name="reading-mode"></a>Modalità di lettura
 
-Aggiunta del supporto per la [modalità di lettura](https://docs.microsoft.com/hololens/hololens2-display#what-improvements-are-coming-that-will-improve-hololens-2-image-quality) su HoloLens 2. La modalità di lettura riduce il campo di visualizzazione del sistema, ma elimina la scalabilità dell'output di Unity. Un pixel sottoposto a rendering da Unity corrisponderà a un pixel proiettato in HoloLens 2. Gli autori di applicazioni devono eseguire test con più utenti per assicurarsi che questo sia un compromesso che desiderano nell'app.
+Aggiunta del supporto per la [modalità di lettura](/hololens/hololens2-display#what-improvements-are-coming-that-will-improve-hololens-2-image-quality) su HoloLens 2. La modalità di lettura riduce il campo di visualizzazione del sistema, ma elimina la scalabilità dell'output di Unity. Un pixel sottoposto a rendering da Unity corrisponderà a un pixel proiettato in HoloLens 2. Gli autori di applicazioni devono eseguire test con più utenti per assicurarsi che questo sia un compromesso che desiderano nell'app.
 
   ![Modalità di lettura della realtà mista di Windows](images/WMRReadingMode.gif)
 
 ### <a name="support-for-3d-app-launchers-on-uwp"></a>Supporto per i lanci di app 3D in UWP
 
-Aggiunge la possibilità di impostare un [utilità di avvio delle app 3D](https://docs.microsoft.com/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) per UWP. Questa impostazione viene esposta sia nella finestra di compilazione MRTK che nelle impostazioni del progetto MRTK, in impostazioni di compilazione. Viene scritto automaticamente nel progetto durante la compilazione in Unity.
+Aggiunge la possibilità di impostare un [utilità di avvio delle app 3D](/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) per UWP. Questa impostazione viene esposta sia nella finestra di compilazione MRTK che nelle impostazioni del progetto MRTK, in impostazioni di compilazione. Viene scritto automaticamente nel progetto durante la compilazione in Unity.
 
   ![Impostazioni di compilazione](images/ProjectBuildSettings.png)
 

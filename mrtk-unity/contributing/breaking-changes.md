@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 264be443544b51f453ed0001945b488698fb46f9
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 579c22f1081b552a8e16d6d474b9133ba81b051f
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104696238"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550721"
 ---
 # <a name="breaking-changes"></a>Modifiche che causano un'interruzione
 
@@ -81,6 +81,6 @@ Una delle cose che abbiamo già fatto è il concetto di una funzionalità "speri
 
 ### <a name="other-examples-of-things-that-could-help-in-the-future"></a>Altri esempi di elementi che potrebbero essere utili in futuro
 
-- Utilizzo della [parola chiave internal](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/internal).
+- Utilizzo della [parola chiave internal](/dotnet/csharp/language-reference/keywords/internal).
   Questo consentirebbe di avere codice condiviso all'interno degli assembly (per ridurre la duplicazione del codice) senza rendere le cose pubbliche a utenti esterni.
 - Creazione di uno spazio dei nomi "interno" (ad esempio Microsoft. MixedReality. Toolkit. Internal. Utilities), in cui viene documentato pubblicamente che qualsiasi elemento contenuto in tale spazio dei nomi interno è soggetto a modifiche in qualsiasi momento e potrebbe essere rimosso e così via. Questa operazione è simile alla modalità con cui le librerie di intestazioni C++ utilizzeranno gli spazi dei nomi:: interni per nascondere i dettagli di implementazione.

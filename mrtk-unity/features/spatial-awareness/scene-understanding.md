@@ -5,16 +5,16 @@ author: MaxWang-MS
 ms.author: wangmax
 ms.date: 03/02/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, comprensione della scena
-ms.openlocfilehash: 991c8152baa138d241b0454d08de267eeaefcb05
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 404145b37a97eb9bd67d39f3db4060762044f772
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104696158"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550951"
 ---
 # <a name="scene-understanding"></a>Comprensione della scena
 
-La [comprensione della scena](https://docs.microsoft.com/windows/mixed-reality/scene-understanding) restituisce una rappresentazione semantica delle entità della scena, oltre ai moduli geometrici in __HoloLens 2__ (HoloLens 1st Gen non è supportata).
+La [comprensione della scena](/windows/mixed-reality/scene-understanding) restituisce una rappresentazione semantica delle entità della scena, oltre ai moduli geometrici in __HoloLens 2__ (HoloLens 1st Gen non è supportata).
 
 Alcuni casi d'uso previsti di questa tecnologia sono:
 * Posizionare oggetti sulla superficie più vicina di un determinato tipo (ad esempio, Wall e floor)
@@ -87,7 +87,7 @@ Compilare e distribuire in HoloLens in modo standard. Una volta eseguito, è nec
 
 Si noti che sono presenti alcune cadute nell'esecuzione di query nell'Observer. La configurazione errata di una richiesta di recupero genera il payload dell'evento che non contiene i dati previsti. Se, ad esempio, non è richiesta la presenza di quad, non sarà presente alcuna trama della maschera di occlusione. Analogamente, non verrà visualizzata alcuna mesh mondiale se l'Observer non è configurato per richiedere mesh. Lo `DemoSceneUnderstandingController` script si occupa di alcune di queste dipendenze, ma non di tutte.
 
-È possibile accedere ai file di scena salvati tramite il [portale del dispositivo](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) all'indirizzo `User Folders/LocalAppData/[APP_NAME]/LocalState/PREFIX_yyyyMMdd_hhmmss.bytes` . Questi file di scena possono essere usati nell'editor specificando tali file nel profilo Observer trovato nel controllo.
+È possibile accedere ai file di scena salvati tramite il [portale del dispositivo](/windows/mixed-reality/using-the-windows-device-portal) all'indirizzo `User Folders/LocalAppData/[APP_NAME]/LocalState/PREFIX_yyyyMMdd_hhmmss.bytes` . Questi file di scena possono essere usati nell'editor specificando tali file nel profilo Observer trovato nel controllo.
 
 ![Percorso del file di byte del portale del dispositivo](../images/spatial-awareness/BytesInDevicePortal.png)
 

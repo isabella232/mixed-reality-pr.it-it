@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, EyeTracking, EyeGaze,
-ms.openlocfilehash: c696bb6ad6b7ecd0239ca5c50c27c44735ee685d
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 59bb981748eff5b50c10c74e346b7b3413e25843
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104688471"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550571"
 ---
 # <a name="accessing-eye-tracking-data-in-your-unity-script"></a>Accesso ai dati di rilevamento degli occhi nello script Unity
 
@@ -68,4 +68,4 @@ CoreServices.InputSystem.EyeGazeProvider.GazeDirection.normalized * defaultDista
 - [Panoramica di MRTK Eye Tracking](eye-tracking-main.md)
 - [Configurazione di MRTK Eye Tracking](eye-tracking-basic-setup.md)
 - [Calibrazione di MRTK Eye Tracking](eye-tracking-is-user-calibrated.md)
-- [Documentazione di HoloLens 2 Eye Tracking](https://docs.microsoft.com/windows/mixed-reality/eye-tracking)
+- [Documentazione di HoloLens 2 Eye Tracking](/windows/mixed-reality/eye-tracking)

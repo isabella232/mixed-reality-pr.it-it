@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, comandi vocali, input vocale
 ms.localizationpriority: high
-ms.openlocfilehash: 65f989f6f587b236d7931c295e9375ad20a53218
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: c87f3bb801b2fc32ed1aa42f2a4754bc83320587
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237217"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550251"
 ---
 # <a name="9-using-speech-commands"></a>9. Uso dei comandi vocali
 
@@ -144,6 +144,6 @@ Nelle prossime due serie di esercitazioni, [Esercitazioni su Ancoraggi nello spa
 Se si sta seguendo il percorso di checkpoint per lo sviluppo con Unity che abbiamo delineato, il passaggio successivo consiste nell'acquisire familiarità con i blocchi predefiniti fondamentali delle app di realtà mista.
 
 > [!div class="nextstepaction"]
-> [Interazioni di base](../mrtk-101.md)
+> [Interazioni di base](../../../out-of-scope/mrtk-101.md)
 
 È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](../unity-development-overview.md#1-getting-started) in qualsiasi momento.

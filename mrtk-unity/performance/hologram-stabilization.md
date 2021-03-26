@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, rilevamento dell'ambiente, TMP,
-ms.openlocfilehash: 9b2a79ea92912d0e02365aeaff78e7008e3e20c5
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ae41135b8c27c8cef5ceef20573a7c8503c14b91
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702247"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550551"
 ---
 # <a name="hologram-stabilization"></a>Stabilizzazione ologramma
 
@@ -20,11 +20,11 @@ Per ottenere risultati ottimali, è importante che la piattaforma e il dispositi
 
 ## <a name="environment-tracking"></a>Rilevamento dell'ambiente
 
-Il rendering olografico stabile si basa in modo significativo sul rilevamento della parte principale della piattaforma & dispositivo. Unity eseguirà il rendering della scena per ogni fotogramma dalla fotocamera, che viene stimato e fornito dalla piattaforma sottostante. Se il rilevamento non segue correttamente lo spostamento Head effettivo, gli ologrammi non verranno visualizzati in modo accurato. Questo è particolarmente evidente ed importante per i dispositivi AR come HoloLens, in cui gli utenti possono correlare gli ologrammi virtuali al mondo reale. Le prestazioni sono significative per il rilevamento Head affidabile, ma possono essere presenti anche [altre importanti funzionalità](https://docs.microsoft.com/windows/mixed-reality/environment-considerations-for-hololens). I tipi di elementi di ambiente che influiscano sull'esperienza utente dipenderanno dalle specifiche della piattaforma di destinazione.
+Il rendering olografico stabile si basa in modo significativo sul rilevamento della parte principale della piattaforma & dispositivo. Unity eseguirà il rendering della scena per ogni fotogramma dalla fotocamera, che viene stimato e fornito dalla piattaforma sottostante. Se il rilevamento non segue correttamente lo spostamento Head effettivo, gli ologrammi non verranno visualizzati in modo accurato. Questo è particolarmente evidente ed importante per i dispositivi AR come HoloLens, in cui gli utenti possono correlare gli ologrammi virtuali al mondo reale. Le prestazioni sono significative per il rilevamento Head affidabile, ma possono essere presenti anche [altre importanti funzionalità](/windows/mixed-reality/environment-considerations-for-hololens). I tipi di elementi di ambiente che influiscano sull'esperienza utente dipenderanno dalle specifiche della piattaforma di destinazione.
 
 ## <a name="windows-mixed-reality"></a>Windows Mixed Reality
 
-La piattaforma di realtà mista di Windows fornisce un [materiale di riferimento](https://docs.microsoft.com/windows/mixed-reality/hologram-stability) per la stabilizzazione di ologrammi sulla piattaforma. Sono disponibili alcuni strumenti chiave che possono essere usati dagli sviluppatori per migliorare l'esperienza visiva degli ologrammi per gli utenti.
+La piattaforma di realtà mista di Windows fornisce un [materiale di riferimento](/windows/mixed-reality/hologram-stability) per la stabilizzazione di ologrammi sulla piattaforma. Sono disponibili alcuni strumenti chiave che possono essere usati dagli sviluppatori per migliorare l'esperienza visiva degli ologrammi per gli utenti.
 
 ### <a name="depth-buffer-sharing"></a>Condivisione buffer di profondità
 
@@ -36,7 +36,7 @@ Al termine del rendering di un frame, la piattaforma per la realtà mista di Win
 
 #### <a name="per-pixel-vs-stabilization-plane-lsr"></a>LSR piano di stabilizzazione confronto per pixel
 
-A seconda dell'endpoint del dispositivo e della versione del sistema operativo in esecuzione su un dispositivo di realtà mista Windows, l'algoritmo di riproiezione Late-Stage verrà eseguito per pixel o tramite un [piano di stabilizzazione](https://docs.microsoft.com/windows/mixed-reality/hologram-stability#stabilization-plane).
+A seconda dell'endpoint del dispositivo e della versione del sistema operativo in esecuzione su un dispositivo di realtà mista Windows, l'algoritmo di riproiezione Late-Stage verrà eseguito per pixel o tramite un [piano di stabilizzazione](/windows/mixed-reality/hologram-stability#stabilization-plane).
 
 ##### <a name="per-pixel-depth-based"></a>Basato sulla profondità per pixel
 
@@ -44,7 +44,7 @@ La riproiezione basata sulla profondità per pixel comporta l'utilizzo del buffe
 
 ##### <a name="stabilization-plane"></a>Piano di stabilizzazione
 
-Se non è possibile creare un buffer di profondità preciso da condividere con la piattaforma, un altro tipo di LSR usa un piano di stabilizzazione. Tutti gli ologrammi in una scena riceveranno una certa stabilizzazione, ma gli ologrammi che si trovano nel piano desiderato riceveranno la massima stabilizzazione hardware. Il punto e il normale per il piano possono essere forniti alla piattaforma tramite l'API *HolographicSettings. SetFocusPointForFrame* [fornita da Unity](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity).
+Se non è possibile creare un buffer di profondità preciso da condividere con la piattaforma, un altro tipo di LSR usa un piano di stabilizzazione. Tutti gli ologrammi in una scena riceveranno una certa stabilizzazione, ma gli ologrammi che si trovano nel piano desiderato riceveranno la massima stabilizzazione hardware. Il punto e il normale per il piano possono essere forniti alla piattaforma tramite l'API *HolographicSettings. SetFocusPointForFrame* [fornita da Unity](/windows/mixed-reality/focus-point-in-unity).
 
 #### <a name="depth-buffer-format"></a>Formato buffer profondità
 
@@ -111,7 +111,7 @@ Se i metodi precedenti non funzionano per uno scenario specifico, ad esempio usa
 
 Oltre a garantire che siano soddisfatte le configurazioni corrette per garantire la stabilità visiva, è importante assicurarsi che gli ologrammi rimangano stabili nei percorsi fisici corretti. Per informare la piattaforma su posizioni importanti in uno spazio fisico, gli sviluppatori possono sfruttare [WorldAnchors](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) in GameObject che devono rimanere in un'unica posizione. Un [WorldAnchor](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) è un componente aggiunto a un GameObject che assume il controllo assoluto sulla trasformazione di tale oggetto.
 
-I dispositivi, ad esempio HoloLens, eseguono costantemente l'analisi e l'apprendimento dell'ambiente. Di conseguenza, poiché il HoloLens tiene traccia dello spostamento & posizione nello spazio, le stime verranno aggiornate e il [sistema di coordinate Unity verrà regolato](https://docs.microsoft.com/windows/mixed-reality/coordinate-systems-in-unity). Ad esempio, se un GameObject viene posizionato 1m dalla fotocamera all'avvio, poiché il HoloLens tiene traccia dell'ambiente, può realizzare il punto fisico in cui si trova la GameObject è effettivamente 1,1 m. Questo comporterebbe la dispersione dell'ologramma. L'applicazione di un WorldAnchor a una GameObject consentirà all'ancoraggio di controllare la trasformazione dell'oggetto in modo che l'oggetto rimanga nella posizione fisica corretta, ad esempio eseguire l'aggiornamento a 1,1 m, anziché 1 milione al runtime. Per salvare in modo permanente [WorldAnchors](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) tra le sessioni dell'app, gli sviluppatori possono usare il [WorldAnchorStore](https://docs.unity3d.com/ScriptReference/XR.WSA.Persistence.WorldAnchorStore.html) per [salvare e caricare WorldAnchors](https://docs.microsoft.com/windows/mixed-reality/persistence-in-unity).
+I dispositivi, ad esempio HoloLens, eseguono costantemente l'analisi e l'apprendimento dell'ambiente. Di conseguenza, poiché il HoloLens tiene traccia dello spostamento & posizione nello spazio, le stime verranno aggiornate e il [sistema di coordinate Unity verrà regolato](/windows/mixed-reality/coordinate-systems-in-unity). Ad esempio, se un GameObject viene posizionato 1m dalla fotocamera all'avvio, poiché il HoloLens tiene traccia dell'ambiente, può realizzare il punto fisico in cui si trova la GameObject è effettivamente 1,1 m. Questo comporterebbe la dispersione dell'ologramma. L'applicazione di un WorldAnchor a una GameObject consentirà all'ancoraggio di controllare la trasformazione dell'oggetto in modo che l'oggetto rimanga nella posizione fisica corretta, ad esempio eseguire l'aggiornamento a 1,1 m, anziché 1 milione al runtime. Per salvare in modo permanente [WorldAnchors](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) tra le sessioni dell'app, gli sviluppatori possono usare il [WorldAnchorStore](https://docs.unity3d.com/ScriptReference/XR.WSA.Persistence.WorldAnchorStore.html) per [salvare e caricare WorldAnchors](/windows/mixed-reality/persistence-in-unity).
 
 > [!NOTE]
 > Una volta aggiunto un componente WorldAnchor a un GameObject, non è possibile modificare la trasformazione di GameObject (ad esempio Transform. Position = x). Uno sviluppatore deve rimuovere WorldAnchor per modificare la trasformazione.
@@ -133,10 +133,10 @@ public void RemoveAnchor()
 ## <a name="see-also"></a>Vedere anche
 
 - [Prestazioni](../performance/perf-getting-started.md)
-- [Considerazioni sull'ambiente per HoloLens](https://docs.microsoft.com/windows/mixed-reality/environment-considerations-for-hololens)
-- [Realtà mista di Windows per la stabilità olografica](https://docs.microsoft.com/windows/mixed-reality/hologram-stability)
-- [Punto focale in Unity](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity)
-- [Sistemi di coordinate in Unity](https://docs.microsoft.com/windows/mixed-reality/coordinate-systems-in-unity)
-- [Persistenza in Unity](https://docs.microsoft.com/windows/mixed-reality/persistence-in-unity)
-- [Informazioni sulle prestazioni per la realtà mista](https://docs.microsoft.com/windows/mixed-reality/understanding-performance-for-mixed-reality)
-- [Consigli sulle prestazioni per Unity](https://docs.microsoft.com/windows/mixed-reality/performance-recommendations-for-unity)
+- [Considerazioni sull'ambiente per HoloLens](/windows/mixed-reality/environment-considerations-for-hololens)
+- [Realtà mista di Windows per la stabilità olografica](/windows/mixed-reality/hologram-stability)
+- [Punto focale in Unity](/windows/mixed-reality/focus-point-in-unity)
+- [Sistemi di coordinate in Unity](/windows/mixed-reality/coordinate-systems-in-unity)
+- [Persistenza in Unity](/windows/mixed-reality/persistence-in-unity)
+- [Informazioni sulle prestazioni per la realtà mista](/windows/mixed-reality/understanding-performance-for-mixed-reality)
+- [Consigli sulle prestazioni per Unity](/windows/mixed-reality/performance-recommendations-for-unity)

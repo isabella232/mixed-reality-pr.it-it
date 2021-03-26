@@ -7,12 +7,12 @@ ms.date: 02/09/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: aggiornamento, strumenti, attività iniziali, nozioni di base, unity, visual studio, toolkit, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, installazione, Windows, HoloLens, emulatore, unreal, openxr
-ms.openlocfilehash: ac8e4dab8b9d9021c834e0a9d673c81ac3b7f1dc
-ms.sourcegitcommit: f74d33d50c1fbfebe8571695d631ce78dd599f74
+ms.openlocfilehash: 28546e751d3d8001eb2fe69a74624215a6619d4c
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104881238"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550041"
 ---
 # <a name="install-the-tools"></a>Installare gli strumenti
 
@@ -42,7 +42,6 @@ Se si usa Unity, è possibile usare il [Toolkit di realtà mista per](https://gi
 
 Ora che si dispone di Windows 10, Visual Studio e Windows 10 SDK pronto per l'uso, è possibile installare e configurare il motore di propria scelta. 
 
-Se è ancora necessario scegliere un motore, vedere Introduzione allo [sviluppo di realtà mista](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity#what-technology-path-are-you-interested-in). 
+Se è ancora necessario scegliere un motore, vedere Introduzione allo [sviluppo di realtà mista](./development.md?tabs=unity#what-technology-path-are-you-interested-in). 
 
 [!INCLUDE[](includes/tools-overview.md)]
-

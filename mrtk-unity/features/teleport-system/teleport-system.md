@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, sistema Teleport,
-ms.openlocfilehash: 2dfccc009510183f6c6b60d46ef4df312d2dc046
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ff24ec720211e02071242f79260bd608fd1a02aa
+ms.sourcegitcommit: 4be6f36df9063ccfdce2662e299accc7406b6779
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104696068"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105555547"
 ---
 # <a name="teleport-system"></a>Sistema Teleport
 
@@ -88,3 +88,9 @@ public class TeleportHandlerExample : MonoBehaviour, IMixedRealityTeleportHandle
     }
 }
 ```
+
+## <a name="teleporting-on-mrtk"></a>Teleporting su MRTK
+
+Per teletrasportarsi con un controller nei dispositivi MR con configurazioni predefinite, usare levetta. Per teletrasportarsi con le mani articolate, creare un gesto con la Palma rivolto verso l'alto con l'indice e il pollice verso l'alto, completando il teletrasporto arricciando il dito dell'indice. Per teletrasportarsi con la simulazione di input, vedere la documentazione aggiornata del [servizio di simulazione di input](../input-simulation/input-simulation-service.md).
+
+  ![Movimento Teleport](../images/teleport/handteleport.gif)

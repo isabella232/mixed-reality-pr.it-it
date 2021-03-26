@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: bc5a0e286a8be588e14b469b965a216cedca4df5
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ba3ace347a34b477a9ba17a276feb0f639b1caf4
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104701927"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550841"
 ---
 # <a name="mixed-reality-toolkit-profile-configuration-guide"></a>Guida alla configurazione del profilo del Toolkit di realtà mista
 
@@ -77,7 +77,7 @@ Questi profili di configurazione sono descritti in dettaglio nelle sezioni perti
 
 ## <a name="experience-settings"></a>Impostazioni esperienza
 
-Situato nella pagina di configurazione principale del Toolkit di realtà mista, questa impostazione definisce l'operazione predefinita della [scala dell'ambiente di realtà mista](https://docs.microsoft.com/windows/mixed-reality/coordinate-systems-in-unity) per il progetto.
+Situato nella pagina di configurazione principale del Toolkit di realtà mista, questa impostazione definisce l'operazione predefinita della [scala dell'ambiente di realtà mista](/windows/mixed-reality/coordinate-systems-in-unity) per il progetto.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_ExperienceSettings.png" width="650px" alt="Experiance settings" style="display:block;">
 

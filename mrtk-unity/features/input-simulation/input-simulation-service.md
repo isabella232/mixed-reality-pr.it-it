@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 40863752e9c2d07100d2fa2ef6b5140d8cd2aeeb
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: acba10baa64a535f36aca7aef8aeb0702304e7a1
+ms.sourcegitcommit: 4be6f36df9063ccfdce2662e299accc7406b6779
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702427"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105555562"
 ---
 # <a name="input-simulation-service"></a>Servizio di simulazione di input
 
@@ -104,7 +104,7 @@ Nella [finestra strumenti di simulazione input](#input-simulation-tools-window) 
 
 * *Movimenti della mano*: simula un modello a mano semplificato con tocchi aria e movimenti di base.
 
-   Emula il [modello di interazione HoloLens](https://docs.microsoft.com/windows/mixed-reality/gestures).
+   Emula il [modello di interazione HoloLens](/windows/mixed-reality/gestures).
 
    Lo stato attivo è controllato tramite il puntatore a sguardi. Il gesto del *rubinetto d'aria* viene usato per interagire con i pulsanti.
 
@@ -192,6 +192,14 @@ Inoltre, è possibile usare le mani simulate per l'interazione GGV
 1. Rilasciare il pulsante del mouse per arrestare l'interazione
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6841rRMdqWw" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+
+### <a name="raising-teleport-events"></a>Generazione di eventi Teleport
+
+Per generare l'evento Teleport nella simulazione di input, configurare le impostazioni del movimento della mano nel profilo di simulazione di input in modo che uno esegua il movimento di **avvio Teleport** mentre l'altro esegue il movimento **finale Teleport** . Il gesto di **avvio Teleport** apre il puntatore Teleport, mentre l' **estremità Teleport** gesure completa l'azione Teleport e sposta l'utente.
+
+La posizione y del Teleport risultante dipende dallo spostamento della fotocamera lungo l'asse y. Nell'editor è 0 per impostazione predefinita, quindi utilizzare le chiavi **Q** ed **e** per adattarle all'altezza appropriata.
+
+![Impostazioni della simulazione di input Teleport](../images/input-simulation/InputSimulationTeleport.gif)
 
 ### <a name="motion-controller-interaction"></a>Interazione del controller di movimento
 

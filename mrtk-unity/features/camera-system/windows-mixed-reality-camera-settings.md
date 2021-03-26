@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, fotocamera,
-ms.openlocfilehash: a5d261d7ccadcd47b1697dd78f74013a343d1bbc
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 717d0f63cd20f85303b6da3779aaeb06beb0a0d5
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104681874"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550011"
 ---
 # <a name="windows-mixed-reality-camera-settings-provider"></a>Provider di impostazioni della fotocamera per la realtà mista di Windows
 
@@ -66,5 +66,5 @@ Questa operazione deve essere aggiornata solo una volta e il valore viene riutil
 
 - [Panoramica del sistema di fotocamere](camera-system-overview.md)
 - [Creazione di un provider di impostazioni della fotocamera](create-settings-provider.md)
-- [Rendering dell'acquisizione di realtà mista dalla fotocamera PV](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-capture-for-developers#render-from-the-pv-camera-opt-in)
-- [Riproiezione olografica](https://docs.microsoft.com/windows/mixed-reality/hologram-stability#reprojection)
+- [Rendering dell'acquisizione di realtà mista dalla fotocamera PV](/windows/mixed-reality/mixed-reality-capture-for-developers#render-from-the-pv-camera-opt-in)
+- [Riproiezione olografica](/windows/mixed-reality/hologram-stability#reprojection)

@@ -5,12 +5,12 @@ author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, puntatori, controller
-ms.openlocfilehash: 1331da1b9d42f6ae7a356c632176c18784de74fb
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 0d0e31a84de37b2caabfb073e3ccb7b7df982cab
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104701997"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550751"
 ---
 # <a name="controllers-pointers-and-focus"></a>Controller, puntatori e stato attivo
 
@@ -20,7 +20,7 @@ I controller, i puntatori e lo stato attivo sono concetti di livello più alto c
 
 I controller sono rappresentazioni di un controller fisico (6 gradi di libertà, mano articolata e così via). Sono creati da Gestione dispositivi e sono responsabili della comunicazione con il sistema sottostante corrispondente e della conversione dei dati in eventi e dati a forma di MRTK.
 
-Nella piattaforma di realtà mista di Windows, ad esempio, [`WindowsMixedRealityArticulatedHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityArticulatedHand) è un controller responsabile dell'interazione con le [API di rilevamento manuale](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) di Windows sottostanti per ottenere informazioni sui giunti, sulla posa e su altre proprietà della mano. È responsabile della trasformazione di questi dati in eventi MRTK rilevanti, ad esempio chiamando RaisePoseInputChanged o RaiseHandJointsUpdated, e aggiornando il proprio stato interno in modo che le query per [`TryGetJointPose`](xref:Microsoft.MixedReality.Toolkit.Input.HandJointUtils.TryGetJointPose%2A) restituiscano i dati corretti.
+Nella piattaforma di realtà mista di Windows, ad esempio, [`WindowsMixedRealityArticulatedHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityArticulatedHand) è un controller responsabile dell'interazione con le [API di rilevamento manuale](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) di Windows sottostanti per ottenere informazioni sui giunti, sulla posa e su altre proprietà della mano. È responsabile della trasformazione di questi dati in eventi MRTK rilevanti, ad esempio chiamando RaisePoseInputChanged o RaiseHandJointsUpdated, e aggiornando il proprio stato interno in modo che le query per [`TryGetJointPose`](xref:Microsoft.MixedReality.Toolkit.Input.HandJointUtils.TryGetJointPose%2A) restituiscano i dati corretti.
 
 In genere, il ciclo di vita di un controller implica:
 

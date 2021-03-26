@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, UnitTest,
-ms.openlocfilehash: 7da98d44abf1d99cf22dc7f2782bba0849eadbf8
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1c72306bd1026bc4692be6f10283eeefcedf2a53
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693258"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550791"
 ---
 # <a name="writing-and-running-tests-in-mrtk"></a>Scrittura ed esecuzione di test in MRTK
 
@@ -36,7 +36,7 @@ Attualmente i test di PlayMode devono essere eseguiti in Unity 2018,4 e possono 
 
 ### <a name="command-line"></a>Riga di comando
 
-I test possono essere eseguiti anche da uno script di [PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-6&preserve-view=true) che si trova in `Scripts\test\run_playmode_tests.ps1` . Verranno eseguiti i test PlayMode esattamente come vengono eseguiti in GitHub/CI (vedere di seguito) e i risultati di stampa. Di seguito sono riportati alcuni esempi di come eseguire lo script
+I test possono essere eseguiti anche da uno script di [PowerShell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6) che si trova in `Scripts\test\run_playmode_tests.ps1` . Verranno eseguiti i test PlayMode esattamente come vengono eseguiti in GitHub/CI (vedere di seguito) e i risultati di stampa. Di seguito sono riportati alcuni esempi di come eseguire lo script
 
 Eseguire i test nel progetto situato in H:\mrtk.dev, con Unity 2018,4 (ad esempio Unity 2018.4.26 F1)
 
@@ -77,7 +77,7 @@ Per un singolo test che deve essere eseguito più volte:
 public IEnumerator MyTest() {...}
 ```
 
-Eseguire il comando seguente da una riga di comando (si consiglia[PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-6#powershell-core&preserve-view=true) )
+Eseguire il comando seguente da una riga di comando (si consiglia[PowerShell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6#powershell-core) )
 
 ```powershell
 cd scripts\tests
@@ -315,4 +315,3 @@ TestUtilities.ShutdownMixedRealityToolkit();
 ```
 
 Vedere la documentazione dell'API di [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities) e [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities) per altri metodi di queste classi util Man mano che vengono estese a intervalli regolari mentre vengono aggiunti nuovi test a MRTK.
-

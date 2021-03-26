@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 03/03/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK
-ms.openlocfilehash: 0a3089d272542e4021bc77b324255830c7cb9c6a
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 767fd41287c68812d51826d32a99296b9cd33018
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104690141"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550901"
 ---
 # <a name="roadmap"></a>Roadmap
 
@@ -73,11 +73,11 @@ Stiamo ascoltando i tuoi commenti e suggerimenti su MRTK e abbiamo continuato a 
 **Formazione per sviluppatori**
 
 È stata eseguita la migrazione della documentazione per gli sviluppatori da GitHub a una nuova piattaforma docs. Microsoft vuole ricevere commenti e suggerimenti per poter continuare a migliorare l'esperienza di documentazione per gli sviluppatori.
-Attualmente sono disponibili [esercitazioni di MRTK](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials) che si trovano in una sezione diversa di docs realtà mista. Queste esercitazioni verranno migrate per vivere con il resto della documentazione di MRTK. 
+Attualmente sono disponibili [esercitazioni di MRTK](/windows/mixed-reality/develop/unity/tutorials) che si trovano in una sezione diversa di docs realtà mista. Queste esercitazioni verranno migrate per vivere con il resto della documentazione di MRTK. 
 
 **Packaging**
 
-Lo [strumento per la funzionalità di realtà mista](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) è un nuovo modo per gli sviluppatori di individuare, aggiornare e aggiungere pacchetti di funzionalità di realtà mista in progetti Unity. È possibile cercare i pacchetti in base al nome o alla categoria, visualizzarne le dipendenze e persino visualizzare le modifiche proposte al file manifesto del progetto prima dell'importazione. Si prevede di apportare aggiornamenti allo strumento per le funzionalità di realtà mista quando si rispondono alle richieste di funzionalità e ai bug.
+Lo [strumento per la funzionalità di realtà mista](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) è un nuovo modo per gli sviluppatori di individuare, aggiornare e aggiungere pacchetti di funzionalità di realtà mista in progetti Unity. È possibile cercare i pacchetti in base al nome o alla categoria, visualizzarne le dipendenze e persino visualizzare le modifiche proposte al file manifesto del progetto prima dell'importazione. Si prevede di apportare aggiornamenti allo strumento per le funzionalità di realtà mista quando si rispondono alle richieste di funzionalità e ai bug.
 
 ## <a name="backlog"></a>Backlog
 

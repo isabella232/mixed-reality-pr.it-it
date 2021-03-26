@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 6d3804134d4b6c0a21aa62468aa39c446de52101
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: d9e470e7ad5a6229994c59e81615a6b90561b022
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685084"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105549941"
 ---
 # <a name="holographic-remoting"></a>Holographic Remoting
 
@@ -56,7 +56,7 @@ Questi problemi sono particolarmente rilevanti quando vengono eseguiti in **unit
 
     ![Selezionare il pacchetto DotNetWinRT](../images/tools/remoting/SelectDotNetWinRT.png)
 
-1. Fare clic su **Ottieni funzionalità** e continuare a [importare il pacchetto](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool#3-importing-feature-packages).
+1. Fare clic su **Ottieni funzionalità** e continuare a [importare il pacchetto](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool#3-importing-feature-packages).
 
 #### <a name="dotnetwinrt_present-define-written-into-player-settings"></a>DOTNETWINRT_PRESENT definire scritte in Impostazioni lettore
 
@@ -120,5 +120,5 @@ Al termine della sessione, uscire dalla modalità di riproduzione.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Limitazioni e risoluzione dei problemi di comunicazione remota olografica](https://docs.microsoft.com/windows/mixed-reality/holographic-remoting-troubleshooting)
-- [Condizioni di licenza del software Microsoft olografico Remoting](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+- [Limitazioni e risoluzione dei problemi di comunicazione remota olografica](/windows/mixed-reality/holographic-remoting-troubleshooting)
+- [Condizioni di licenza del software Microsoft olografico Remoting](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, XRSDK,
-ms.openlocfilehash: dfdc5ca9a4e2d610f47660568ce6d4aabc0956b9
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: fa37535f3a01dbba76c99c3114ac23a03d75ec3a
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104701937"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105549971"
 ---
 # <a name="getting-started-with-mrtk-and-xr-sdk"></a>Introduzione a MRTK e XR SDK
 
@@ -50,7 +50,7 @@ La pipeline dell'SDK XR supporta attualmente 3 piattaforme: realtà mista di Win
 >
 > Attualmente, supporta anche solo le compilazioni x64 e ARM64.
 
-1. Per installare il plug-in di OpenXR nel progetto, seguire la guida per l'uso del plug-in [reality OpenXR per Unity](https://aka.ms/openxr-unity-install) , inclusi i passaggi per la configurazione della gestione dei plug-in XR e dell'ottimizzazione. Verificare che siano stati installati i seguenti elementi:
+1. Per installare il plug-in di OpenXR nel progetto, seguire la guida per l'uso del plug-in [reality OpenXR per Unity](/windows/mixed-reality/develop/unity/openxr-getting-started) , inclusi i passaggi per la configurazione della gestione dei plug-in XR e dell'ottimizzazione. Verificare che siano stati installati i seguenti elementi:
    1. Gestione dei plug-in XR
    1. Plug-in OpenXR
    1. Plug-in OpenXR realtà mista

@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: b47224bb28b18592692cdf450c7ce571929403b9
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 47f74b66e597186b43354de6503d48f45eb9ede4
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104696098"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550641"
 ---
 # <a name="spatial-awareness"></a>Consapevolezza spaziale
 
@@ -78,7 +78,7 @@ Il sistema di riconoscimento spaziale è simile in quanto i provider di dati for
 Quando il sistema di riconoscimento spaziale viene configurato con gli osservatori desiderati, il progetto può essere compilato e distribuito nella piattaforma di destinazione.
 
 > [!IMPORTANT]
-> Se la destinazione è la piattaforma di realtà mista di Windows (ad esempio, HoloLens), è importante assicurarsi che la [funzionalità di percezione spaziale](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping-in-unity) sia abilitata per poter usare il sistema di riconoscimento spaziale sul dispositivo.
+> Se la destinazione è la piattaforma di realtà mista di Windows (ad esempio, HoloLens), è importante assicurarsi che la [funzionalità di percezione spaziale](/windows/mixed-reality/spatial-mapping-in-unity) sia abilitata per poter usare il sistema di riconoscimento spaziale sul dispositivo.
 
 > [!WARNING]
 > Alcune piattaforme, tra cui Microsoft HoloLens, forniscono supporto per l'esecuzione remota dall'interno di Unity. Questa funzionalità consente lo sviluppo e i test rapidi senza richiedere la fase di compilazione e distribuzione. Assicurarsi di eseguire test di accettazione finali usando una versione compilata e distribuita dell'applicazione, in esecuzione nell'hardware e nella piattaforma di destinazione.
@@ -100,5 +100,5 @@ Informazioni per il controllo e l'estensione degli osservatori tramite codice:
 ## <a name="see-also"></a>Vedi anche
 
 - [Documentazione dell'API di riconoscimento spaziale](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness)
-- [Panoramica del mapping spaziale WMR](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping)
-- [Mapping spaziale in Unity WMR](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping-in-unity)
+- [Panoramica del mapping spaziale WMR](/windows/mixed-reality/spatial-mapping)
+- [Mapping spaziale in Unity WMR](/windows/mixed-reality/spatial-mapping-in-unity)

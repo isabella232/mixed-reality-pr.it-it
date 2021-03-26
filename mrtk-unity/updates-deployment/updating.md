@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 71d9202f6d4f75d53554a5a5fb6221d7b86077e0
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 0cad7b2cf2b9c2afc386467966bfe536e23891b2
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685074"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550821"
 ---
 # <a name="updating-the-microsoft-mixed-reality-toolkit"></a>Aggiornamento di Microsoft Mixed Reality Toolkit
 
@@ -42,7 +42,7 @@ Se il file e la cartella precedente non esistono, si è in una versione più rec
 Le istruzioni seguenti descrivono il percorso di aggiornamento da 2.4.0 a 2.5.0. Se il progetto si trova in 2.3.0 o versioni precedenti, leggere le modifiche [tra le versioni](#updating-230-to-240) per comprendere il percorso di aggiornamento o leggere le [istruzioni](https://microsoft.github.io/MixedRealityToolkit-Unity/version/releases/2.4.0/Documentation/Updating.html) della versione precedente per eseguire un aggiornamento versione per versione.
 
 ### <a name="mixed-reality-feature-tool"></a>Strumento per la funzionalità di realtà mista
-Il modo più semplice per eseguire l'aggiornamento di MRTK a una versione più recente di MRTK consiste nell'usare lo strumento per la [funzionalità della realtà mista](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) per scaricare i pacchetti più recenti e caricarli direttamente nel progetto Unity.
+Il modo più semplice per eseguire l'aggiornamento di MRTK a una versione più recente di MRTK consiste nell'usare lo strumento per la [funzionalità della realtà mista](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) per scaricare i pacchetti più recenti e caricarli direttamente nel progetto Unity.
 
 ### <a name="unity-asset-unitypackage-files"></a>File di asset Unity (con estensione file unitypackage Tools)
 

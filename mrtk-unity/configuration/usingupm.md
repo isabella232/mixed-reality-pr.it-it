@@ -5,20 +5,20 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK pakages,
-ms.openlocfilehash: a231ae1d286541ae66ba4576b6eb11142a38170f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 8a3752f6b8c3554aea32da347a4b7334fb1bd951
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104701817"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550731"
 ---
 # <a name="mixed-reality-toolkit-and-unity-package-manager"></a>Toolkit per realtà mista e gestione pacchetti Unity
 
-A partire dalla versione 2.5.0, usando lo strumento per la [funzionalità di realtà mista](https://aka.ms/MRFeatureToolDocs), Microsoft Mixed Reality Toolkit si integra con gestione pacchetti Unity (UPM) quando si usa unity 2019,4 e versioni successive.
+A partire dalla versione 2.5.0, usando lo strumento per la [funzionalità di realtà mista](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool), Microsoft Mixed Reality Toolkit si integra con gestione pacchetti Unity (UPM) quando si usa unity 2019,4 e versioni successive.
 
 ## <a name="using-the-mixed-reality-feature-tool"></a>Uso dello strumento funzionalità per la realtà mista
 
-Come descritto in [Introduzione allo strumento per la funzionalità di realtà mista](https://aka.ms/MRFeatureToolDocs) , è possibile scaricare lo strumento usando [questo collegamento](https://aka.ms/MRFeatureTool).
+Come descritto in [Introduzione allo strumento per la funzionalità di realtà mista](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) , è possibile scaricare lo strumento usando [questo collegamento](https://aka.ms/MRFeatureTool).
 
 > [!IMPORTANT]
 > Se nel manifesto del progetto è `Microsoft Mixed Reality` presente una voce nella `scopedRegistries` sezione, è consigliabile rimuoverla.

@@ -5,16 +5,16 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, sguardo,
-ms.openlocfilehash: cd778f5986d6c6fcf186a3c1e7904ff0064705a5
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 7587a89b5784b4e1c2a0d8a858ffa0e84f1e86af
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104688371"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550941"
 ---
 # <a name="gaze"></a>Sguardo fisso
 
-[Sguardi](https://docs.microsoft.com/windows/mixed-reality/gaze) è un tipo di input che interagisce con il mondo in base alla posizione dell'utente. Lo sguardo esiste in due diverse varianti
+[Sguardi](/windows/mixed-reality/gaze) è un tipo di input che interagisce con il mondo in base alla posizione dell'utente. Lo sguardo esiste in due diverse varianti
 
 ## <a name="head-gaze"></a>Puntamento con la testa
 

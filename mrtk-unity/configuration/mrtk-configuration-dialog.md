@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, Unity
-ms.openlocfilehash: 74c7f411f0be5ac4ecc2d70767335fb3a20ce8f4
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 6b0bad2322f70e0a5adbc0c34c1343d9213bde4c
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104701827"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550741"
 ---
 # <a name="mrtk-project-configuration-dialog"></a>Finestra di dialogo di configurazione del progetto MRTK
 
@@ -62,7 +62,7 @@ Microsoft ha fornito Spatializer che supporta l'utilizzo dell'accelerazione hard
 
 Questo Spatializer è disponibile tramite [NuGet](https://www.nuget.org/packages/Microsoft.SpatialAudio.Spatializer.Unity/) e [GitHub](https://github.com/microsoft/spatialaudio-unity).
 
-Per ulteriori informazioni su Microsoft Spatializer, vedere la [documentazione relativa al suono spaziale](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-in-unity).
+Per ulteriori informazioni su Microsoft Spatializer, vedere la [documentazione relativa al suono spaziale](/windows/mixed-reality/spatial-sound-in-unity).
 
 - MS HRTF Spatializer
 

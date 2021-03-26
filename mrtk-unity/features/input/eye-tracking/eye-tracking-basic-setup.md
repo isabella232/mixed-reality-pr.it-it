@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, monitoraggio degli occhi,
-ms.openlocfilehash: 0a603ca293d66fea51b8fc22615f99324edeaca6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 24e389ad86d1544d7d05e0febf7633701009c616
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693138"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550161"
 ---
 # <a name="getting-started-with-eye-tracking-in-mrtk"></a>Introduzione a Eye Tracking in MRTK
 
@@ -41,7 +41,7 @@ Questo strumento consente di trovare il manifesto di AppX dopo il completamento 
 Prima di Unity 2019, quando si usa la finestra di compilazione di Unity, è necessario aggiungere manualmente la funzionalità dopo la compilazione Unity, come indicato di seguito:
 
 1. Aprire il progetto di Visual Studio compilato e quindi aprire il _pacchetto "Package. appxmanifest"_ nella soluzione.
-2. Assicurarsi di selezionare la casella di controllo _' GazeInput '_ in _funzionalità_. Se non viene visualizzata la funzionalità _' GazeInput '_ , verificare che il sistema soddisfi i [prerequisiti per l'uso di MRTK](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools) (in particolare la versione Windows SDK).
+2. Assicurarsi di selezionare la casella di controllo _' GazeInput '_ in _funzionalità_. Se non viene visualizzata la funzionalità _' GazeInput '_ , verificare che il sistema soddisfi i [prerequisiti per l'uso di MRTK](/windows/mixed-reality/develop/install-the-tools) (in particolare la versione Windows SDK).
 
 _Nota:_ È necessario eseguire questa operazione solo se si compila in una nuova cartella di compilazione.
 Ciò significa che se è già stato compilato il progetto Unity e si configura il appxmanifest prima e ora la destinazione della stessa cartella, non sarà necessario riapplicare le modifiche.

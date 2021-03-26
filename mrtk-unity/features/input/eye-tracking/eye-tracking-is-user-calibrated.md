@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, EyeTracking, calibrazione,
-ms.openlocfilehash: 5b0a3a2c6da8f8b561c156b007b92018ef0f2719
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 608625ba5a9a1b94b9660be7c5caa0bb3f0c305b
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104688441"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550531"
 ---
 # <a name="eye-calibration"></a>Calibrazione degli occhi
 
@@ -92,4 +92,4 @@ Quando la notifica viene rilasciata, diminuisce lentamente le sue dimensioni e s
 - [Panoramica di MRTK Eye Tracking](eye-tracking-main.md)
 - [Configurazione di MRTK Eye Tracking](eye-tracking-basic-setup.md)
 - [MRTK la verifica degli occhi tramite codice](eye-tracking-eye-gaze-provider.md)
-- [Documentazione di HoloLens 2 Eye Tracking](https://docs.microsoft.com/windows/mixed-reality/eye-tracking)
+- [Documentazione di HoloLens 2 Eye Tracking](/windows/mixed-reality/eye-tracking)

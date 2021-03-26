@@ -5,27 +5,27 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 385188c37d02a3efd1c6782fbfdff443c9890d21
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+ms.openlocfilehash: d95a794c2f02ccc50f0a00dc0123921b8fd6177c
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104895144"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550181"
 ---
 # <a name="performance"></a>Prestazioni
 
 ## <a name="getting-started"></a>Introduzione
 
-Il modo più semplice per razionalizzare le prestazioni è tramite framerate o il numero di volte in cui l'applicazione può eseguire il rendering di un'immagine al secondo. È importante soddisfare il framerate di destinazione, come indicato dalla piattaforma di destinazione (ad esempio [Realtà mista di Windows](https://docs.microsoft.com/windows/mixed-reality/understanding-performance-for-mixed-reality), [Oculus](https://developer.oculus.com/documentation/pcsdk/latest/concepts/dg-performance-guidelines/)e così via. Ad esempio, in HoloLens, il framerate di destinazione è 60 FPS. Le applicazioni con framerate ridotto possono comportare esperienze utente deteriorate, come la [stabilizzazione olografica](../performance/hologram-stabilization.md)peggiorata, il rilevamento del mondo, il rilevamento manuale e altro ancora. Per aiutare gli sviluppatori a tenere traccia e ottenere la framerate di qualità, il Toolkit di realtà mista offre un'ampia gamma di strumenti e script.
+Il modo più semplice per razionalizzare le prestazioni è tramite framerate o il numero di volte in cui l'applicazione può eseguire il rendering di un'immagine al secondo. È importante soddisfare il framerate di destinazione, come indicato dalla piattaforma di destinazione (ad esempio [Realtà mista di Windows](/windows/mixed-reality/understanding-performance-for-mixed-reality), [Oculus](https://developer.oculus.com/documentation/pcsdk/latest/concepts/dg-performance-guidelines/)e così via. Ad esempio, in HoloLens, il framerate di destinazione è 60 FPS. Le applicazioni con framerate ridotto possono comportare esperienze utente deteriorate, come la [stabilizzazione olografica](../performance/hologram-stabilization.md)peggiorata, il rilevamento del mondo, il rilevamento manuale e altro ancora. Per aiutare gli sviluppatori a tenere traccia e ottenere la framerate di qualità, il Toolkit di realtà mista offre un'ampia gamma di strumenti e script.
 
 ### <a name="visual-profiler"></a>Visual Profiler
 
 Per tenere traccia continuamente delle prestazioni per il ciclo di vita dello sviluppo, è consigliabile visualizzare sempre un oggetto visivo framerate durante l'esecuzione & il debug di un'applicazione. Il Toolkit di realtà mista fornisce lo strumento di diagnostica di [Visual Profiler](../features/diagnostics/using-visual-profiler.md) che fornisce informazioni in tempo reale sugli fps correnti e sull'utilizzo della memoria nella visualizzazione dell'applicazione. È possibile configurare Visual Profiler tramite le [impostazioni del sistema di diagnostica](../features/diagnostics/diagnostics-system-getting-started.md) nel [controllo profili MRTK](../configuration/mixed-reality-configuration-guide.md).
 
-Inoltre, è particolarmente importante usare Visual Profiler per tenere traccia del framerate durante l'esecuzione nel dispositivo anziché nell'editor di Unity o in un emulatore. I risultati più accurati delle prestazioni verranno rappresentati quando vengono eseguiti nel dispositivo con [Build di configurazione di rilascio](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations?view=vs-2019&preserve-view=true).
+Inoltre, è particolarmente importante usare Visual Profiler per tenere traccia del framerate durante l'esecuzione nel dispositivo anziché nell'editor di Unity o in un emulatore. I risultati più accurati delle prestazioni verranno rappresentati quando vengono eseguiti nel dispositivo con [Build di configurazione di rilascio](/visualstudio/debugger/how-to-set-debug-and-release-configurations?preserve-view=true&view=vs-2019).
 
 > [!NOTE]
-> Se si compila per la realtà mista di Windows, eseguire la distribuzione con [Build di configurazione Master](https://docs.microsoft.com/windows/mixed-reality/exporting-and-building-a-unity-visual-studio-solution#building_and_deploying_a_unity_visual_studio_solution)
+> Se si compila per la realtà mista di Windows, eseguire la distribuzione con [Build di configurazione Master](/windows/mixed-reality/exporting-and-building-a-unity-visual-studio-solution#building_and_deploying_a_unity_visual_studio_solution)
 
 ![Interfaccia di Visual Profiler](../features/images/Diagnostics/VisualProfiler.png)
 
@@ -227,9 +227,9 @@ Esempio di statistiche shader standard MRTK
 
 ### <a name="windows-mixed-reality"></a>Windows Mixed Reality
 
-- [Impostazioni consigliate per Unity](https://docs.microsoft.com/windows/mixed-reality/recommended-settings-for-unity)
-- [Informazioni sulle prestazioni per la realtà mista](https://docs.microsoft.com/windows/mixed-reality/understanding-performance-for-mixed-reality)
-- [Consigli sulle prestazioni per Unity](https://docs.microsoft.com/windows/mixed-reality/performance-recommendations-for-unity)
+- [Impostazioni consigliate per Unity](/windows/mixed-reality/recommended-settings-for-unity)
+- [Informazioni sulle prestazioni per la realtà mista](/windows/mixed-reality/understanding-performance-for-mixed-reality)
+- [Consigli sulle prestazioni per Unity](/windows/mixed-reality/performance-recommendations-for-unity)
 - [Guida a Unity Event Tracing for Windows](https://docs.unity3d.com/uploads/ExpertGuides/Analyzing_your_game_performance_using_Event_Tracing_for_Windows.pdf)
 
 ### <a name="oculus"></a>Oculus
@@ -239,5 +239,5 @@ Esempio di statistiche shader standard MRTK
 
 ### <a name="mesh-optimization"></a>Ottimizzazione mesh
 
-- [Ottimizzare i modelli 3D](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
-- [Procedure consigliate per la conversione e l'ottimizzazione di modelli 3D in tempo reale](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/best-practices)
+- [Ottimizzare i modelli 3D](/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
+- [Procedure consigliate per la conversione e l'ottimizzazione di modelli 3D in tempo reale](/dynamics365/mixed-reality/import-tool/best-practices)

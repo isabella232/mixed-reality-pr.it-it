@@ -7,12 +7,12 @@ ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: aggiornamento, strumenti, attività iniziali, nozioni di base, unity, visual studio, toolkit, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, installazione, Windows, HoloLens, emulatore, unreal, openxr
-ms.openlocfilehash: 0244c3de51a44ed6d37137a3206b61ca4911f622
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 990119b25aeffcb4ce786120659af8f290a6fde2
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102547240"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550201"
 ---
 # <a name="welcome-to-the-mixed-reality-feature-tool"></a>Strumento per la funzionalità di realtà mista
 
@@ -42,7 +42,7 @@ Dopo aver configurato l'ambiente:
     * Si consiglia di creare un collegamento al file eseguibile per un accesso più rapido
 
 > [!NOTE]
-> Se non si ha familiarità con l'uso di gestione pacchetti Unity, seguire le [istruzioni di UPM](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/usingupm#managing-mixed-reality-features-with-the-unity-package-manager).
+> Se non si ha familiarità con l'uso di gestione pacchetti Unity, seguire le [istruzioni di UPM](/windows/mixed-reality/mrtk-unity/configuration/usingupm#managing-mixed-reality-features-with-the-unity-package-manager).
 
 ## <a name="changes-in-this-release"></a>Modifiche in questa versione
 

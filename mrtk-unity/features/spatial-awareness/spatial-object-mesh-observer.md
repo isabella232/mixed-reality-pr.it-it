@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: ed88f677088b1e4194865e90db7c35bb58e3ecf0
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 149d1226c6cfd18eebbe30e6dbc62adde9d4a91e
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104696088"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105549961"
 ---
 # <a name="configuring-mesh-observers-for-the-editor"></a>Configurazione degli osservatori mesh per l'editor
 
@@ -67,7 +67,7 @@ In questa sezione vengono descritte informazioni aggiuntive per la creazione e l
 
 ### <a name="windows-device-portal"></a>Portale di dispositivi di Windows
 
-Il [portale per dispositivi Windows](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) può essere usato per scaricare la mesh spaziale, come file con estensione obj, da un dispositivo HoloLens Microsoft.
+Il [portale per dispositivi Windows](/windows/mixed-reality/using-the-windows-device-portal) può essere usato per scaricare la mesh spaziale, come file con estensione obj, da un dispositivo HoloLens Microsoft.
 
 1. Eseguire un'analisi semplicemente e visualizzare l'ambiente desiderato con un HoloLens
 1. Connettersi a HoloLens tramite il portale del dispositivo Windows
@@ -87,4 +87,4 @@ Il [portale per dispositivi Windows](https://docs.microsoft.com/windows/mixed-re
 - [Introduzione a consapevolezza spaziale](spatial-awareness-getting-started.md)
 - [Configurazione degli osservatori mesh nel dispositivo](configuring-spatial-awareness-mesh-observer.md)
 - [Configurazione di osservatori mesh tramite codice](usage-guide.md)
-- [Avviare il Portale di dispositivi di Windows](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)
+- [Avviare il Portale di dispositivi di Windows](/windows/mixed-reality/using-the-windows-device-portal)
