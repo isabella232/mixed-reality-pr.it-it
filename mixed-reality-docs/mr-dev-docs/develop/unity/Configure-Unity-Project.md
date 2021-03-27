@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, realtà mista, sviluppo, Guida introduttiva, nuovo progetto, realtà mista di Windows, UWP, XR, prestazioni
-ms.openlocfilehash: 47ca4041e997d623d08fa1732f7039c655810bfc
-ms.sourcegitcommit: b0fb5497bf9f280ba5610c30e4b9e5aa1cda52c9
+ms.openlocfilehash: 5889a76941c36e24f600df5a459440d93bdd4c64
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104837418"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636393"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>Configurazione del progetto senza MRTK
 
@@ -117,7 +117,7 @@ Se l'app è destinata a HoloLens in modo specifico, è necessario modificare alc
 2. Nel pannello **Inspector** impostare la **posizione** di trasformazione su 0, 0 **, 0,** in modo che la posizione della testa dell'utente inizi in corrispondenza dell'origine mondiale di Unity.
 3. Modificare i **flag cancellati** in **colore a tinta unita**.
 4. Modificare il colore di **sfondo** in **RGBA 0**, 0, 0, 0. Il nero viene visualizzato come trasparente in HoloLens.
-5. Modificare i **piani di ritaglio in prossimità** del [HoloLens consigliato](camera-in-unity.md#clip-planes) 0,85 (contatori).
+5. Modificare i **piani di ritaglio in prossimità** del [HoloLens consigliato](camera-in-unity.md#using-clipping-planes) 0,85 (contatori).
 
 ![Screenshot della scheda di controllo aperta nell'editor di Unity](images/wmr-config-img-11.png)<br>
 *Impostazioni della fotocamera Unity*

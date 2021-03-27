@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, punto focale, piano di messa a fuoco, piano di stabilizzazione, punto di stabilizzazione, riproiezione, LSR, buffer di profondità, auricolare realtà mista, auricolare della realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 2ceb5f2b58cbd1571b2d9f4de79acfe45779bfea
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: 16f359e1742b86c5f12c0c5965ac9e818ea76aee
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226400"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636223"
 ---
 # <a name="focus-point-in-unity"></a>Punto focale in Unity
 
@@ -49,7 +49,7 @@ void Update()
 ```
 
 > [!NOTE]
-> Il semplice codice precedente può ridurre la stabilità dell'ologramma se l'oggetto con stato attivo termina dietro l'utente. È in genere consigliabile impostare **[Abilita condivisione buffer di profondità](camera-in-unity.md#sharing-your-depth-buffers-with-windows)** anziché specificare manualmente un punto di interesse.
+> Il semplice codice precedente può ridurre la stabilità dell'ologramma se l'oggetto con stato attivo termina dietro l'utente. È in genere consigliabile impostare **[Abilita condivisione buffer di profondità](camera-in-unity.md#sharing-depth-buffers)** anziché specificare manualmente un punto di interesse.
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 

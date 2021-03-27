@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, MRTK, MRTK versione 2, HoloLens 2, unity, porting, HoloLens 1a generazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, migrazione, procedure consigliate, ARM
-ms.openlocfilehash: 6f3c12bf54a4f4339c54908a47369746e0d743a4
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 52055f35df05c2cc69e960c681598adac7bd6f1c
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101759132"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636233"
 ---
 # <a name="porting-hololens-1st-gen-apps-to-hololens-2"></a>Conversione di app HoloLens (prima generazione) in HoloLens 2
 
@@ -107,7 +107,7 @@ Per informazioni sulle differenze di API specifiche tra HTK/MRTK e MRTK v2, vedi
     - Questa azione semplifica inserimenti e aggiornamenti MRTK futuri.
 - Esamina ed esplora le scene di esempio fornite in MRTK (soprattutto *HandInteractionExamples.scene*).
 - Ricrea l'interfaccia utente basata su aree di disegno con quadrilateri, collisori e testo TextMeshPro.
-- Abilita la [condivisione dei buffer di intensità](../unity/camera-in-unity.md#sharing-your-depth-buffers-with-windows) o [imposta il punto di messa a fuoco](../unity/focus-point-in-unity.md); usa un buffer di intensità di 16 bit per prestazioni migliori. Quando esegui il rendering del colore, assicurati di farlo anche per la profondità. Unity in genere non scrive la profondità per oggetti gioco trasparenti e di testo. 
+- Abilita la [condivisione dei buffer di intensità](../unity/camera-in-unity.md#sharing-depth-buffers) o [imposta il punto di messa a fuoco](../unity/focus-point-in-unity.md); usa un buffer di intensità di 16 bit per prestazioni migliori. Quando esegui il rendering del colore, assicurati di farlo anche per la profondità. Unity in genere non scrive la profondità per oggetti gioco trasparenti e di testo. 
 - Imposta il percorso di rendering con istanze a singolo passaggio.
 - Usare il [profilo di configurazione di HoloLens 2 per MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/profiles/profiles.md#hololens-2-profile).
 

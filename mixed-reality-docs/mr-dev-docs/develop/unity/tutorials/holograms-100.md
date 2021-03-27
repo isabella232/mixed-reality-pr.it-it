@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: realtà mista, realtà mista di Windows, HoloLens, immersiva, VR, Mr, introduzione, ologramma, Accademia, esercitazione, Accademia di realtà mista, Unity, auricolare in realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 999ab7dc87a639f10aad9eaf2a7ef8de2cf92633
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: c764c28cea812314d9c83136fe771c5b4077adc5
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730358"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636173"
 ---
 # <a name="hololens-1st-gen-basics-100-getting-started-with-unity"></a>Nozioni di base su HoloLens (1st Gen) 100: Introduzione a Unity
 
@@ -77,7 +77,7 @@ In secondo luogo, lo sfondo predefinito della fotocamera richiede un certo pensi
 
 In terzo luogo, consideriamo il piano di ritaglio vicino in Unity, evitando che gli oggetti vengano visualizzati troppo vicino agli occhi degli utenti quando un utente si avvicina a un oggetto o a un oggetto che si avvicina a un utente.
 
-**Per le applicazioni HoloLens**, il piano di ritaglio vicino può essere impostato su HoloLens 0,85 metri [consigliati](../camera-in-unity.md#clip-planes) .
+**Per le applicazioni HoloLens**, il piano di ritaglio vicino può essere impostato su HoloLens 0,85 metri [consigliati](../camera-in-unity.md#using-clipping-planes) .
 
 1. Con la **fotocamera principale** ancora selezionata nel pannello **gerarchia** , trovare il componente della **fotocamera** nel pannello **Inspector** e modificare il campo **near Clip Plane** dal valore predefinito **0,3** a HoloLens consigliato **0,85**.
 
