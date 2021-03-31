@@ -1,16 +1,16 @@
 ---
-title: Butons
+title: Pulsanti
 description: Panoramica sui pulsanti in MRTK
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, MRTK pulsanti
-ms.openlocfilehash: 92c9b01e9f58165b0bd127e3ff6796c3974c152a
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 6a1c6da0883bea4dba5dafbb64506a899fb90a2c
+ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104689431"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105937487"
 ---
 # <a name="button"></a>Pulsante
 

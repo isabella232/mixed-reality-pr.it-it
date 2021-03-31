@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, realtà mista, MRTK, Toolkit per realtà mista, realtà aumentata, realtà virtuale, cuffie con realtà mista, informazioni, esercitazione, introduzione
-ms.openlocfilehash: 1c9e185c63d3efef66cdc2782d8d8d4e3692c705
-ms.sourcegitcommit: d5e4eb94c87b86a7774a639f11cd9e35a7050107
+ms.openlocfilehash: 1fbc03fe446d9e9619348618c6d0b9aab828fe1a
+ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103623631"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105937427"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Realtà mista OpenXR le funzionalità supportate in Unity
 
-Il pacchetto di plug-in OpenXR per la **realtà mista** è un'estensione del plug-in **OpenXR** di Unity e supporta una suite di funzionalità per gli auricolari per la realtà mista HoloLens 2 e Windows. Prima di continuare, assicurarsi di avere installato **unity 2020,2** o versione successiva, la versione del plug-in **OpenXR 0.1.3 o versione** successiva e che il progetto Unity sia [configurato per OpenXR](openxr-getting-started.md).
+Il pacchetto di plug-in OpenXR per la **realtà mista** è un'estensione del plug-in **OpenXR** di Unity e supporta una suite di funzionalità per gli auricolari per la realtà mista HoloLens 2 e Windows. Prima di continuare, verificare che il progetto Unity sia [configurato per OpenXR](openxr-getting-started.md).
 
 ## <a name="whats-supported"></a>Attività supportate
 
@@ -35,6 +35,9 @@ Attualmente sono supportate le funzionalità seguenti:
 * Compatibile con Unity [ARFoundation 4,0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) o versione successiva.
 * (Aggiunto in 0.1.3) Supporta la [comunicazione remota olografica dell'app desktop](holographic-remoting-desktop.md) da un'app autonoma Windows compilata e distribuita.
 * (Aggiunto in 0.1.4) Supporta il [rilevamento del codice](#qr-codes) a matrice in HoloLens2 tramite SpatialGraphNode
+* (Aggiunto in 0.2.0) Supporta l' **ancoraggio** nella comunicazione remota olografica
+* (Aggiunto in 0.2.0) Supporta sia **le giunzioni a mano che il rilevamento della mesh**
+* (Aggiunto in 0.2.0) Supporta **ARPlaneSubsystems** per il rilevamento del piano e posiziona l'ologramma usando **ARRaycastManager**.
 
 ## <a name="holographic-remoting-setup"></a>Configurazione della comunicazione remota olografica
 
@@ -112,9 +115,6 @@ Per riferimento, abbiamo un progetto di esempio di rilevamento a matrice [su Git
 
 I problemi e le funzionalità mancanti seguenti sono noti con la versione del plug-in OpenXR della realtà mista **0.1.0**. Stiamo lavorando a questi e verranno rilasciate correzioni e nuove funzionalità nelle prossime versioni.
 
-* **ARPlaneSubsystem** non è ancora supportato. Le API **ARPlaneManager**, **ARRaycastManager** e related, ad esempio **ARAnchorManager. AttachAnchor** , non sono supportate in HoloLens 2.
-* La **persistenza di ancoraggio** non è ancora supportata dalla comunicazione remota olografica, ma sarà disponibile a breve.
-* Il rilevamento della **mesh della mano** e **XRMeshSubsystem** non sono ancora supportati.
 * Il supporto di **ancoraggi spaziali di Azure** è disponibile in una versione futura.
 * **Arm64** è l'unica piattaforma supportata per le app HoloLens 2. La piattaforma **ARM** sarà disponibile in una versione futura.
 
