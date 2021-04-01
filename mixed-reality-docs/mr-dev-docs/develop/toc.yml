@@ -168,11 +168,13 @@
                   href: unity/tutorials/mr-azure-301.md
     - name: Configurazione del progetto
       items:
-        - name: Introduzione a MRKT
-          href: unity/mrtk-getting-started.md
-        - name: Configurazione del progetto senza MRTK
-          href: unity/configure-unity-project.md
-        - name: Uso del plug-in Mixed Reality OpenXR
+        - name: Scelta di una versione di Unity e plug-in XR
+          href: unity/choosing-unity-version.md
+        - name: Uso del supporto di XR incorporato legacy
+          href: unity/legacy-xr-support.md
+        - name: Uso del plug-in Windows XR
+          href: unity/windows-xr-plugin.md
+        - name: Uso del plug-in OpenXR
           href: unity/openxr-getting-started.md
         - name: Funzionalità supportate per il plug-in OpenXR
           href: unity/openxr-supported-features.md

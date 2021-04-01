@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: ceef0ce4d62201bfa961a7a181c9083a6f1882e1
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: d7e248788d4c4976acbb9ff23177d354894f57dd
+ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730234"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105958274"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -17,13 +17,10 @@ La versione consigliata corrente per lo sviluppo di realtà mista è **unity 201
 > [!NOTE]
 >  Se si usa Unity 2020 LTS, è disponibile il supporto per la realtà mista per lo sviluppo HoloLens 2. Tuttavia, esistono attualmente alcuni problemi noti. Questa diventerà la versione di Unity consigliata più avanti nell'anno. 
 
-<!-- See [Choosing a Unity version and XR plugin](../unity/choosing-unity-version-xr.md) to learn what Mixed Reality support is available in different Unity engine and XR plugin versions.  -->
+Vedere [scelta di una versione Unity e di un plug](../unity/choosing-unity-version.md) -in XR per informazioni sul supporto di realtà mista disponibile in diverse versioni del motore di Unity e del plug-in
 
 > [!div class="nextstepaction"]
 > [Scarica Hub Unity](https://unity3d.com/get-unity/download)
-
-> [!div class="nextstepaction"]
-> [Scarica Unity 2019,4 LTS](https://unity3d.com/unity/qa/lts-releases?version=2019.4)
 
 Quando si installa Unity, assicurarsi di controllare i componenti seguenti in **"Platforms"**.
 * **Supporto di piattaforma UWP (Universal Windows Platform) Build** 
