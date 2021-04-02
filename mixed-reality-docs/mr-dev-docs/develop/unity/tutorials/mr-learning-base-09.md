@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, comandi vocali, input vocale
 ms.localizationpriority: high
-ms.openlocfilehash: c87f3bb801b2fc32ed1aa42f2a4754bc83320587
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 3aea23d5a259e555f47ca9ea41d77f345c977aeb
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550251"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982939"
 ---
 # <a name="9-using-speech-commands"></a>9. Uso dei comandi vocali
 
@@ -23,14 +23,7 @@ In questa esercitazione verrà spiegato come creare comandi vocali e come contro
 * Imparare a creare comandi vocali
 * Imparare a controllare i comandi vocali a livello globale e locale
 
-## <a name="ensuring-the-microphone-capability-is-enabled"></a>Verificare che la funzionalità Microfono sia abilitata
-
-Nel menu di Unity selezionare Mixed Reality Toolkit > Utilities > **Configure Unity Project** (Mixed Reality Toolkit > Utilità > Configura progetto Unity) per aprire la finestra **MRTK Project Configurator** (Configuratore del progetto MRTK) e quindi, nella sezione **UWP Capabilities** (Funzionalità UWP), verificare che l'opzione **Enable Microphone Capability** (Abilita la funzionalità Microfono) sia disattivata:
-
-![Abilitare la funzionalità microfono](images/mr-learning-base/base-09-section1-step1-1.png)
-
-> [!NOTE]
-> La funzionalità Microfono dovrebbe essere stata abilitata durante la procedura illustrata in [Applicare le impostazioni di MRTK Project Configurator (Configuratore del progetto MRTK)](mr-learning-base-02.md#creating-and-configuring-the-scene) quando è stato configurato il progetto Unity all'inizio di questa serie di esercitazioni. Se, tuttavia, non è abilitata, assicurarsi di farlo ora.
+[!INCLUDE[](includes/ensuring-microphone-capabality.md)]
 
 ## <a name="creating-speech-commands"></a>Creazione di comandi vocali
 

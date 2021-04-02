@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, tracciamento oculare
 ms.localizationpriority: high
-ms.openlocfilehash: 08793622917ca977c51be56267d8710e5abb78e8
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: bf7bd266eb471193979c588d97d14dd37aed175e
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237177"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982889"
 ---
 # <a name="8-using-eye-tracking"></a>8. Uso del tracciamento oculare
 
@@ -26,14 +26,7 @@ In questa esercitazione si apprenderà come abilitare il tracciamento oculare pe
 * Imparare ad abilitare il tracciamento oculare per HoloLens 2
 * Imparare a usare il tracciamento oculare per attivare un'azione
 
-## <a name="ensuring-the-eye-gaze-input-capability-is-enabled"></a>Verifica dell'abilitazione della funzionalità di input mediante sguardo fisso
-
-Nel menu di Unity selezionare Mixed Reality Toolkit > Utilities > **Configure Unity Project** (Mixed Reality Toolkit > Utilità > Configura progetto Unity) per aprire la finestra **MRTK Project Configurator** (Configuratore del progetto MRTK) e quindi, nella sezione **UWP Capabilities** (Funzionalità UWP), verificare che l'opzione **Enable Eye Gaze Input Capability** (Abilita la funzionalità di input mediante sguardo fisso) sia disattivata:
-
-![Finestra MRTK Project Configurator di Unity](images/mr-learning-base/base-08-section1-step1-1.png)
-
-> [!NOTE]
-> La funzionalità di input mediante sguardo fisso dovrebbe essere stata abilitata durante la configurazione delle istruzioni riportate in [Apply the MRTK Project Configurator settings](mr-learning-base-02.md#creating-and-configuring-the-scene) (Applicare le impostazioni del Configuratore del progetto MRTK) quando è stato configurato il progetto Unity all'inizio di questa serie di esercitazioni. Se, tuttavia, non è abilitata, assicurarsi di farlo ora.
+[!INCLUDE[](includes/ensuring-eye-gaze-capabality.md)]
 
 ## <a name="enabling-eye-based-gaze-in-the-gaze-provider"></a>Abilitazione dello sguardo fisso nel provider di dati per lo sguardo fisso
 

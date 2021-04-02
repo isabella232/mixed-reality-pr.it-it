@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realtà mista, sviluppo, guida introduttiva, nuovo progetto, porting, funzionalità, fotocamera, simulazione, emulazione, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, mapping spaziale, input vocale, fotocamera individuabile, emulatore, Azure, esercitazioni
-ms.openlocfilehash: 4979c6f0f88544b4f00cd0859e5c807ddef137e5
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 52c6fb57473255e440d9c2f795cc228cca44ea32
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730488"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982784"
 ---
 # <a name="unity-development-for-hololens"></a>Sviluppo di Unity per HoloLens
 
@@ -102,9 +102,9 @@ Prima di entrare nel mondo della realtà mista in totale autonomia, è consiglia
 
 |  Argomento  |  Descrizione  |
 | --- | --- |
-| [Panoramica dell'architettura MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Architecture/Overview.html) | Acquisire una conoscenza più approfondita del funzionamento di MRTK SDK nei progetti |
-| [Impostazioni e prestazioni](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html) | Profilare l'app, aggiornare le impostazioni di Unity e ottenere le migliori prestazioni di stabilizzazione olografica disponibili |
-| [Introduzione a MRTK + XR](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/getting-started-with-mrtk-and-xrsdk.md) | Eseguire il trasferimento alla pipeline XR alternativa fornita da Unity |
+| [Panoramica dell'architettura MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/architecture/overview) | Acquisire una conoscenza più approfondita del funzionamento di MRTK SDK nei progetti |
+| [Impostazioni e prestazioni](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started) | Profilare l'app, aggiornare le impostazioni di Unity e ottenere le migliori prestazioni di stabilizzazione olografica disponibili |
+| [Introduzione a MRTK + XR](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk) | Eseguire il trasferimento alla pipeline XR alternativa fornita da Unity |
 
 ### <a name="unity-resources"></a>Risorse di Unity
 

@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, Oculus quest,
-ms.openlocfilehash: 7d7be79926b75acb00f18d7f36be7abb7172366a
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ba24acac19a46f899224cf4354bf9738c4d05d39
+ms.sourcegitcommit: 21265a99c47f8e6c76365fa04ab12d0940e9179a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104691098"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106172848"
 ---
 # <a name="how-to-configure-oculus-quest-in-mrtk-using-the-xr-sdk-pipeline"></a>Come configurare Oculus quest in MRTK usando la pipeline di XR SDK
 
@@ -61,7 +61,7 @@ Questo provider di dati **non usa la** pipeline **XR** di Unity o la **pipeline 
 
 1. Configurare il profilo per l'uso di **Oculus XR SDK provider di dati**
     - Se non si intende modificare i profili di configurazione
-        - Modificare il profilo in DefaultXRSDKInputSystemProfile e passare a [compilare e distribuire il progetto in Oculus quest](oculus-quest-mrtk.md#build-and-deploy-your-project-to-oculus-quest)
+        - Modificare il profilo in DefaultMixedRealityToolkitConfigurationProfile e passare a [compilare e distribuire il progetto in Oculus quest](oculus-quest-mrtk.md#build-and-deploy-your-project-to-oculus-quest)
 
     - In caso contrario, seguire questa procedura:
         - Selezionare l'oggetto gioco MixedRealityToolkit nella gerarchia e selezionare **copia e Personalizza** per clonare il profilo di realtà mista predefinito.
