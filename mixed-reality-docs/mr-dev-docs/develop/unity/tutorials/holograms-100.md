@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: realtà mista, realtà mista di Windows, HoloLens, immersiva, VR, Mr, introduzione, ologramma, Accademia, esercitazione, Accademia di realtà mista, Unity, auricolare in realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: c764c28cea812314d9c83136fe771c5b4077adc5
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 68939eda0a18e2d49948d2a87b9f709389857bf3
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636173"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269977"
 ---
 # <a name="hololens-1st-gen-basics-100-getting-started-with-unity"></a>Nozioni di base su HoloLens (1st Gen) 100: Introduzione a Unity
 
 >[!IMPORTANT]
->Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](mrlearning-base.md).
+>Le esercitazioni miste di reality Academy sono state progettate con HoloLens (1st Gen), Unity 2017 e la realtà mista di auricolari immersivi.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi. Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2 e potrebbero non essere compatibili con le versioni più recenti di Unity.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](mrlearning-base.md).
 
 Questa esercitazione illustra come creare un'app di base per realtà mista compilata con Unity.
 

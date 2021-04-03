@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: evento, calendario, Accademia, pianificazione, SF, San Francisco, Reactor
-ms.openlocfilehash: f534a170594eb26e0d7f56e8694b9112cb0acbac
-ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
+ms.openlocfilehash: 17db5ecac5953326eeb30c33693be18243579869
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102230882"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106270017"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Eventi di realtà mista Microsoft
 
@@ -21,6 +21,7 @@ Partecipa al team Microsoft Mixed Reality in questi prossimi eventi.
 
 |Evento|Data|Tema|
 |-------------|-------------|-----|
+| Mixed Reality Speaker Series|6 aprile, 2021 @10 pst|[Creazione di app per realtà mista con Microsoft PowerApps](https://www.meetup.com/hololens-mr/events/277257132)|
 | Mixed Reality Speaker Series|23 aprile 2020|[Aumento del Web](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Augmenting-WebXR-Standards)|
 | Mixed Reality Speaker Series|22 giugno 2020|[Creazione di esperienze didattiche con MR](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Educational-Experiences-in-MR)|
 | [Evento della realtà virtuale Microsoft](https://www.meetup.com/hololens-mr/events/272364822/)|20 agosto 2020|Mini picco VR|

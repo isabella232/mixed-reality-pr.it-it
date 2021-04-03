@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, esercitazione, sguardo, HoloLens, realtà mista Academy, Unity, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale, Windows 10
-ms.openlocfilehash: 99c0d2ae00416f5d26e99e6d7d00c73ea07e5fb3
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 7598e6f6822c86fa34ac526fbe7468d535f7fba7
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730328"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269967"
 ---
 # <a name="hololens-1st-gen-input-210-gaze"></a>Input HoloLens (1st Gen) 210: sguardo
 
->[!NOTE]
->Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](./mr-learning-base-01.md).
+>[!IMPORTANT]
+>Le esercitazioni miste di reality Academy sono state progettate con HoloLens (1st Gen), Unity 2017 e la realtà mista di auricolari immersivi.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi. Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2 e potrebbero non essere compatibili con le versioni più recenti di Unity.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](mrlearning-base.md).
 
 Lo [sguardo](../../../design/gaze-and-commit.md) è la prima forma di input e rivela le finalità e la consapevolezza dell'utente. MR input 210 (noto anche come Project Explorer) è un approfondimento dei concetti correlati a sguardi per la realtà mista di Windows. Verrà aggiunta la consapevolezza contestuale al cursore e agli ologrammi, sfruttando appieno i vantaggi offerti dall'app per quanto riguarda lo sguardo dell'utente.
 

@@ -13,12 +13,12 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: 372321a445be99bba7a69993eb53f6ff23ffa6dd
-  ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+  ms.openlocfilehash: d77fe45fe3bfcca9635ddcd8c2aef0e869615b6b
+  ms.sourcegitcommit: 31eae5ab8241f2ed63e99bbe4c835c4b4b83ff9b
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 03/30/2021
-  ms.locfileid: "105982854"
+  ms.lasthandoff: 04/01/2021
+  ms.locfileid: "106113700"
 highlightedContent:
   items:
   - title: Che cos'è Realtà mista?
@@ -44,7 +44,7 @@ highlightedContent:
     url: /mesh/overview
   - title: AltspaceVR
     itemType: whats-new
-    url: https://docs.microsoft.com/windows/mixed-reality/altspace-vr/
+    url: https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey
 productDirectory:
   title: Approfondimenti su Realtà mista
   summary: Qualunque sia il tuo ruolo, progettista, sviluppatore o professionista IT, ti offriamo il percorso adatto per iniziare a muovere i primi passi e imparare a correre.

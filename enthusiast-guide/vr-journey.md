@@ -1,19 +1,19 @@
 ---
-title: Iniziare il percorso VR
+title: Inizia il tuo percorso VR
 description: Esplora i nostri Checkpoint curati per guidare i nuovi utenti del dispositivo attraverso la configurazione e l'uso dei dispositivi VR immersivi.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR,
-ms.openlocfilehash: 711c1b74b79ba510d29c17de0ec21270946ceb61
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f373e0a55557fe38dfa598912296252293fa6d34
+ms.sourcegitcommit: b8a3367bf6dfed01de1ffa10f635385a92ca06b5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007061"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106223932"
 ---
-# <a name="start-your-vr-journey"></a>Iniziare il percorso VR
+# <a name="start-your-vr-journey"></a>Inizia il tuo percorso VR
 
 ![Immagine predefinita dell'ambiente di sovrapposizione VR](images/mr-win32-slates-pinspanel.png)
 
@@ -60,7 +60,7 @@ Sono disponibili diverse funzionalità e servizi tramite la realtà mista di Win
 
 <br>
 
-|  Checkpoint  |  Feature  |
+|  Checkpoint  |  Funzionalità  |
 | --- | --- |
 | [Esercitazione per la realtà mista](learn-mixed-reality.md) | Informazioni su come usare lo sguardo, la voce, i controller e gli input da tastiera e mouse |
 | [Esplora la Home realtà mista di Windows](your-mixed-reality-home.md) | Esplora l'ambiente virtuale della Home realtà mista di Windows  |
@@ -76,12 +76,13 @@ Per trovare giochi coinvolgenti, applicazioni desktop e contenuti VR, vedere le 
 
 <br>
 
-|  Checkpoint  |  Feature  |
+|  Checkpoint  |  Funzionalità  |
 | --- | --- |
 | [Giochi, video di 360 e app](using-games-and-apps-in-windows-mixed-reality.md) | Inizia a usare il tuo primo gioco immersivo, lavagne di archivi 2D, applicazioni desktop ed esperienze WebVR |
 | [Uso di SteamVR](using-steamvr-with-windows-mixed-reality.md) | Connetti il tuo dispositivo e giochi SteamVR e Scopri di più sul programma Windows Insider |
 | [Uso di Microsoft Edge](using-microsoft-edge.md) | Installare la versione più recente di Microsoft Edge nel dispositivo immersivo |
 | [Uso di WebVR](webvr.md) | Ottenere la configurazione per sperimentare VR nell'ambiente del browser |
+| [Esplora AltspaceVR](https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey) | Scopri il mondo in espansione degli eventi VR con AltspaceVR |
 
 ## <a name="troubleshooting-tips--resources"></a>Risoluzione dei problemi, suggerimenti & risorse
 

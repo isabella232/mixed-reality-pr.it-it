@@ -6,16 +6,21 @@ ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, prestazioni, ottimizzazione, CPU, GPU
-ms.openlocfilehash: eabc151382652bc2588249ef78d2f9f3b0f8cd99
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: d0218902864586e678f6d51dfade58bd567bcc02
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550121"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269957"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>Informazioni sulle prestazioni per la realtà mista
 
 Questo articolo è un'introduzione alla comprensione del significato delle prestazioni per l'app per realtà mista.  L'esperienza utente può essere notevolmente degradata se l'applicazione non viene eseguita con una frequenza di fotogrammi ottimale. Gli ologrammi appariranno instabile e il rilevamento delle intestazioni dell'ambiente non sarà accurato, causando una scarsa esperienza per l'utente. Le prestazioni devono essere considerate una funzionalità di prima classe per lo sviluppo di realtà mista e non per le attività polacche.
+
+Abbiamo rilasciato di recente un'applicazione denominata nozioni di base sulla qualità che copre problemi comuni di prestazioni, progettazione e ambiente e soluzioni per le app HoloLens 2. Questa app è un'ottima dimostrazione visiva per il contenuto che segue.
+
+> [!div class="nextstepaction"]
+> [Scaricare l'app nozioni fondamentali sulla qualità](https://www.microsoft.com/en-us/p/quality-fundamentals/9mwz852q88fw)
 
 Di seguito sono elencati i valori di framerate a prestazioni per ogni piattaforma di destinazione.
 

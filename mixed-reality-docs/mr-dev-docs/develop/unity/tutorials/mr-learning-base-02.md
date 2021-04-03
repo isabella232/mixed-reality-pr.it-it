@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: a723de277d5ec07594db2c3e0b77b980ea1d9b9c
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 4363d3280036ef2cd93e75233005c00db17eb59b
+ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105983197"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106088664"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. Inizializzazione del progetto e distribuzione della prima applicazione
 
@@ -57,21 +57,7 @@ Attendi che Unity crei il progetto:
 
 ## <a name="switching-the-build-platform"></a>Passaggio a un'altra piattaforma di compilazione
 
-Dal menu di Unity scegli **File** > **Build Settings** (Impostazioni di compilazione) per visualizzare la finestra corrispondente:
-
-![Percorso del menu Build Settings... di Unity](images/mr-learning-base/base-02-section2-step1-1.png)
-
-Nella finestra Build Settings (Impostazioni di compilazione), seleziona **Universal Windows Platform** e fai clic sul pulsante **Switch Platform** (Cambia piattaforma):
-
-![Finestra Build Settings di Unity con la piattaforma UWP selezionata in sostituzione della piattaforma Standalone](images/mr-learning-base/base-02-section2-step1-2.png)
-
-Attendi che Unity completi il passaggio all'altra piattaforma:
-
-![Passaggio di Unity all'altra piattaforma in corso](images/mr-learning-base/base-02-section2-step1-3.png)
-
-Una volta completato il passaggio all'altra piattaforma, fai clic sull'icona **x** di colore rosso per chiudere la finestra Build Settings (Impostazioni di compilazione):
-
-![Finestra Build Settings di Unity con l'icona di chiusura evidenziata](images/mr-learning-base/base-02-section2-step1-4.png)
+[!INCLUDE[](includes/switching-build-platform.md)]
 
 ## <a name="importing-the-textmeshpro-essential-resources"></a>Importazione delle risorse essenziali TextMeshPro
 
@@ -102,32 +88,8 @@ Aprire il file eseguibile **MixedRealityFeatureTool** dalla cartella scaricata p
 
 ![Apertura di MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-1.png)
 
-Dopo aver aperto **MixedRealityFeatureTool** , fare clic su Start per iniziare a usare lo strumento per le funzionalità di realtà mista.
 
-![MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-2.png)
-
-Le funzionalità sono raggruppate per categoria per semplificare la ricerca, fare clic sull'elenco a discesa del **Toolkit per realtà mista** per trovare i pacchetti relativi al Toolkit di realtà mista.
-
-![Finestra MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-3.png)
-
-controllare **mixed reality Toolkit Foundation**, quindi fare clic sull'elenco a discesa accanto per selezionare la versione richiesta di MRTK. per questa serie di esercitazioni selezionare **2.5.3**. Fare quindi clic sul pulsante **Ottieni funzionalità** per scaricare i pacchetti selezionati.
-
-![Selezione della realtà mista](images/mr-learning-base/base-02-section4-step1-4.png)
-
-Viene presentato il pacchetto selezionato **mixed reality Toolkit Foundation 2.5.3** , insieme al relativo pacchetto di dipendenza **mixed reality Toolkit standard 2.5.3** nella finestra di **importazione delle funzionalità** .
-
-È anche necessario impostare il percorso del progetto Unity di destinazione in modo da fornire il **percorso del progetto**, fare clic sui **tre puntini** di sospensione accanto al percorso del progetto e passare alla cartella del progetto nella finestra di esplorazione, ad esempio le _esercitazioni di D:\MixedRealityLearning\MRTK_.
-
-> [!NOTE]
-> La finestra di dialogo visualizzata quando si Esplora la cartella del progetto Unity contiene ' _' come nome file. Per abilitare la selezione della cartella, è necessario specificare un valore per il nome del file.
-
-Fare quindi clic sul pulsante **convalida** per convalidare il pacchetto selezionato. verrà visualizzata una finestra popup con un messaggio in cui **non sono stati rilevati problemi di convalida** fare clic su **OK** per chiudere la finestra popup e fare clic sul pulsante **Importa** .
-
-![Convalida della realtà mista](images/mr-learning-base/base-02-section4-step1-5.png)
-
-Fare clic sul pulsante **approva** per aggiungere il **Toolkit di realtà misto** al progetto.
-
-![Approva la realtà mista](images/mr-learning-base/base-02-section4-step1-6.png)
+[!INCLUDE[](includes/importing-mrtk.md)]
 
 ## <a name="configuring-the-unity-project"></a>Configurazione del progetto Unity
 
@@ -144,7 +106,7 @@ Nella finestra MRTK Project Configurator (Configuratore del progetto MRTK) espan
 > [!TIP]
 > L'applicazione delle impostazioni predefinite di MRTK è facoltativa ma fortemente consigliata, poiché consente di configurare alcune impostazioni consigliate di Unity:
 
-> * Set Single Pass Instanced rendering path (Imposta il percorso di rendering con istanze a singolo passaggio): migliora le prestazioni grafiche eseguendo la pipeline di rendering per entrambi gli occhi nella stessa chiamata di disegno. Per altre informazioni su questo argomento, è possibile fare riferimento alla sezione sul [rendering con istanze a singolo passaggio](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started.md#single-pass-instanced-rendering) della documentazione di MRTK relativa alle [prestazioni](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started.md#single-pass-instanced-rendering).
+> * Set Single Pass Instanced rendering path (Imposta il percorso di rendering con istanze a singolo passaggio): migliora le prestazioni grafiche eseguendo la pipeline di rendering per entrambi gli occhi nella stessa chiamata di disegno. Per altre informazioni su questo argomento, è possibile fare riferimento alla sezione sul [rendering con istanze a singolo passaggio](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering) della documentazione di MRTK relativa alle [prestazioni](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering).
 > * Set default Spatial Awareness layer (Imposta livello di consapevolezza spaziale predefinito): crea un livello di Unity denominato Spatial Awareness e configura MRTK per l'uso di questo livello per la mesh di consapevolezza spaziale. Per altre informazioni sui livelli di Unity, vedere la documentazione relativa alla <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">personalizzazione dell'area di lavoro</a> di Unity.
 
 ### <a name="2-configure-additional-project-settings"></a>2. Configurare impostazioni di progetto aggiuntive
@@ -180,19 +142,19 @@ Scaricare il pacchetto personalizzato Unity seguente:
 
 Per importare un pacchetto personalizzato Unity, nel menu Unity selezionare **Asset**  >  **Import Package**  >  **Custom Package..** . per aprire il pacchetto di importazione... finestra
 
-![Finestre Hierarchy, Scene e Project di Unity dopo l'importazione degli asset dell'esercitazione](images/mr-learning-base/base-02-section7-step1-1.png)
+![Importazione di un pacchetto personalizzato](images/mr-learning-base/base-02-section7-step1-1.png)
 
 Nel pacchetto di importazione... Selezionare il **MRTK. HoloLens2. Unity. Tutorials. assets. GettingStarted. 2.5.0.1. file unitypackage Tools** è stato scaricato e si fa clic sul pulsante Apri:
 
-![Finestre Hierarchy, Scene e Project di Unity dopo l'importazione degli asset dell'esercitazione](images/mr-learning-base/base-02-section7-step1-2.png)
+![Selezione di un pacchetto di asset](images/mr-learning-base/base-02-section7-step1-2.png)
 
 Nella finestra Import Unity Package (Importa il pacchetto Unity), fai clic sul pulsante All (Tutti) per assicurarti che vengano selezionati tutti gli asset e quindi fai clic sul pulsante Import (Importa) per importare gli asset:
 
-![Finestre Hierarchy, Scene e Project di Unity dopo l'importazione degli asset dell'esercitazione](images/mr-learning-base/base-02-section7-step1-3.png)
+![Selezione di tutti gli asset da importare](images/mr-learning-base/base-02-section7-step1-3.png)
 
 Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progetto) avrà un aspetto simile al seguente:
 
-![Finestre Hierarchy, Scene e Project di Unity dopo l'importazione degli asset dell'esercitazione](images/mr-learning-base/base-02-section7-step1-4.png)
+![Finestra del progetto Unity dopo l'importazione di asset](images/mr-learning-base/base-02-section7-step1-4.png)
 
 ## <a name="configuring-the-scene"></a>Configurazione della scena
 

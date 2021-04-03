@@ -10,12 +10,12 @@ metadata:
   ms.technology: enthusiast-guide
   author: mattwojo
   ms.author: mattwoj
-  ms.openlocfilehash: ebe77df574235b7ddee2a4b65392836a39642d6c
-  ms.sourcegitcommit: 753f0ee94cf86be645cad8efd60f1b43ac529c96
-  ms.translationtype: HT
+  ms.openlocfilehash: b589b064aa598acd431909b8cb31a73fd8f757bc
+  ms.sourcegitcommit: b8a3367bf6dfed01de1ffa10f635385a92ca06b5
+  ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 01/25/2021
-  ms.locfileid: "98758365"
+  ms.lasthandoff: 04/02/2021
+  ms.locfileid: "106223922"
 highlightedContent:
   items:
   - title: Informazioni su VR di Windows Mixed Reality
@@ -33,9 +33,9 @@ highlightedContent:
   - title: Indicazioni sull'integrità e sulla sicurezza
     itemType: concept
     url: wmr-health-safety-comfort.md
-  - title: Panoramica e cronologia delle versioni del software Realtà mista
-    itemType: concept
-    url: mixed-reality-software.md
+  - title: Esplora AltspaceVR
+    itemType: whats-new
+    url: https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey?tabs=application
 conceptualContent:
   title: Iniziare a usare Windows Mixed Reality
   summary: Sono disponibili informazioni aggiuntive sul software, sull'hardware e sulla risoluzione dei problemi di Windows Mixed Reality.

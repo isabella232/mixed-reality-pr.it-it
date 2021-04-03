@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, realtà mista, MRTK, Toolkit per realtà mista, realtà aumentata, realtà virtuale, cuffie con realtà mista, informazioni, esercitazione, introduzione
-ms.openlocfilehash: 6e300c6117e04e2a49b060bcd7a6d268204f14da
-ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
+ms.openlocfilehash: ebe7d32b236e28259b2ed9a7915bd337f84f8762
+ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105937476"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106088510"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Uso del plug-in OpenXR per la realtà mista per Unity
 
@@ -27,14 +27,14 @@ A partire da Unity versione 2020,2, il pacchetto di plug-in per la realtà mista
 > [!NOTE]
 > Se si stanno compilando applicazioni VR in PC Windows, il plug-in OpenXR per realtà mista non è necessariamente obbligatorio. Tuttavia, è necessario installare il plug-in se si sta personalizzando il mapping del controller per i controller HP Reverb G2 o la creazione di app che funzionano sia con le cuffie HoloLens 2 sia con le cuffie VR.
 
-<!-- ## Setting up your project with MRTK
+## <a name="setting-up-your-project-with-mrtk"></a>Impostazione del progetto con MRTK
 
-MRTK for Unity provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. MRTK version 2 intends to speed up application development for Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and OpenVR platform. The project is aimed at reducing barriers to entry, creating mixed reality applications, and contributing back to the community as we all grow.
+MRTK per Unity offre un sistema di input multipiattaforma, componenti fondamentali e blocchi predefiniti comuni per le interazioni spaziali. MRTK versione 2 intende accelerare lo sviluppo di applicazioni per Microsoft HoloLens, i visori VR immersive di Windows Mixed Reality e la piattaforma OpenVR. Il progetto mira a ridurre le barriere di accesso, creare applicazioni di realtà mista e restituire contributi alla community per continuare a crescere insieme.
 
 > [!div class="nextstepaction"]
-> [Set up your project using MRTK](tutorials/mr-learning-base-01.md)
+> [Configurare il progetto con MRTK](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=openxr)
 
-Take a look at [MRTK's documentation](/windows/mixed-reality/mrtk-unity) for more feature details. -->
+Per altri dettagli sulle funzionalità, vedere la [documentazione di MRTK](/windows/mixed-reality/mrtk-unity) .
 
 ## <a name="manual-setup-without-mrtk"></a>Installazione manuale senza MRTK
 
@@ -80,7 +80,7 @@ Se si sta sviluppando per HoloLens 2, passare a **realtà mista> OpenXR > applic
 ![Screenshot della voce di menu della realtà mista aperta con OpenXR selezionato](images/openxr-img-08.png)
 
 > [!IMPORTANT]
-> Se viene visualizzata un'icona di avviso rossa accanto a plug-in **OpenXR (anteprima)**, fare clic sull'icona e selezionare **Correggi tutto** prima di continuare. Per rendere effettive le modifiche, potrebbe essere necessario riavviare l'editor di Unity.
+> Se viene visualizzata un'icona di avviso rossa accanto a plug-in **OpenXR**, fare clic sull'icona e selezionare **Correggi tutto** prima di continuare. Per rendere effettive le modifiche, potrebbe essere necessario riavviare l'editor di Unity.
 
 ![Screenshot della finestra di convalida del progetto OpenXR](images/openxr-img-06.png)
 

@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, condivisione, rete, Accademia, esercitazione, HoloLens, realtà mista, Unity, Headset per la realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale, Windows 10
-ms.openlocfilehash: 8e3631c80702f04e9f7e50c98bed91d92c332841
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 446f82558781e47b5381ee3f59af70953954ad2a
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730148"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269917"
 ---
 # <a name="hololens-1st-gen-sharing-240-multiple-hololens-devices"></a>HoloLens (1a Gen) sharing 240: più dispositivi HoloLens
 
->[!NOTE]
->Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](./mr-learning-base-01.md).
+>[!IMPORTANT]
+>Le esercitazioni miste di reality Academy sono state progettate con HoloLens (1st Gen), Unity 2017 e la realtà mista di auricolari immersivi.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi. Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2 e potrebbero non essere compatibili con le versioni più recenti di Unity.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](mrlearning-base.md).
 
 Gli ologrammi ricevono una presenza nel nostro mondo rimanendo al posto mentre ci si sposta nello spazio. HoloLens mantiene gli ologrammi sul posto usando vari [sistemi di coordinate](../../../design/coordinate-systems.md) per tenere traccia della posizione e dell'orientamento degli oggetti. Quando si condividono questi sistemi di coordinate tra i dispositivi, è possibile creare un'esperienza condivisa che ci consenta di partecipare a un mondo olografico condiviso.
 

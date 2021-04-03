@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, esercitazione, movimento, HoloLens, realtà mista, Unity, Headset per la realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale, Windows 10
-ms.openlocfilehash: fe5d3d736c3ad460feeb7aaf66597344618bc1cb
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 1431c9b53657e2cec1bd6ade1a3629e628e15917
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730458"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269987"
 ---
 # <a name="hololens-1st-gen-input-211-gesture"></a>HoloLens (1a Gen) input 211: gesto
 
->[!NOTE]
->Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](./mr-learning-base-01.md).
+>[!IMPORTANT]
+>Le esercitazioni miste di reality Academy sono state progettate con HoloLens (1st Gen), Unity 2017 e la realtà mista di auricolari immersivi.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi. Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2 e potrebbero non essere compatibili con le versioni più recenti di Unity.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](mrlearning-base.md).
 
 I [movimenti](../../../design/gaze-and-commit.md#composite-gestures) attivano l'azione dell'utente. Grazie ai movimenti, gli utenti possono interagire con gli ologrammi. In questo corso si apprenderà come tenere traccia delle mani dell'utente, rispondere all'input dell'utente e fornire commenti e suggerimenti all'utente in base allo stato e alla posizione della mano.
 

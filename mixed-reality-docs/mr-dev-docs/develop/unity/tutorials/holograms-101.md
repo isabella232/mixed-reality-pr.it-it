@@ -6,19 +6,19 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: realtà mista, realtà mista di Windows, HoloLens, ologramma, Accademia, esercitazione, HoloLens, Accademia realtà mista, Unity, auricolare realtà mista, cuffia a realtà mista di Windows, auricolare della realtà virtuale, Windows 10
-ms.openlocfilehash: 5015dff1487dce9ff761a4ca606657eca6f75406
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 0ebfeb017271b7f98093a8ba6cac59dccae2a440
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730338"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269947"
 ---
 # <a name="hololens-1st-gen-basics-101-complete-project-with-device"></a>Nozioni di base di HoloLens (1st Gen) 101: completare il progetto con il dispositivo
 
 <br>
 
->[!NOTE]
->Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](mrlearning-base.md).
+>[!IMPORTANT]
+>Le esercitazioni miste di reality Academy sono state progettate con HoloLens (1st Gen), Unity 2017 e la realtà mista di auricolari immersivi.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi. Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2 e potrebbero non essere compatibili con le versioni più recenti di Unity.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](mrlearning-base.md).
 
 <br>
 

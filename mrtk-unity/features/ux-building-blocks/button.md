@@ -5,12 +5,12 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, MRTK pulsanti
-ms.openlocfilehash: 6a1c6da0883bea4dba5dafbb64506a899fb90a2c
-ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
+ms.openlocfilehash: b0e8e9f8f3a04d467c389bb99f29ddc7dfde930c
+ms.sourcegitcommit: e5bd72d8b92976a6590e0f59706a88e66374934c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105937487"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106098293"
 ---
 # <a name="button"></a>Pulsante
 
@@ -238,6 +238,14 @@ Quando si seleziona il cubo, nell'oggetto vengono visualizzati più livelli colo
 Quando si preme il pulsante, si spostano e generano eventi appropriati esposti nello `PressableButton.cs` script, ad esempio TouchBegin (), TouchEnd (), ButtonPressed (), ButtonReleased ().
 
 <img src="../images/button/MRTK_PressableButtonCubeRun1.jpg" alt="Pressable button cube run 1">
+
+#### <a name="troubleshooting"></a>Risoluzione dei problemi
+
+Se il pulsante esegue una doppia pressione, assicurarsi che la proprietà **Imponi front push** sia attiva e che il piano **Start push distance** sia posizionata davanti al piano **toccabile near Interaction** . Il piano **toccabile near Interaction** è indicato dal piano blu situato davanti all'origine della freccia bianca nel gif seguente:
+
+![Componente script del pulsante stampabile con la proprietà Imponi front push evidenziata](../images/button/MRTK_Button_Enforce_Push.png)
+
+![Esempio animato di spostamento della distanza del push di avvio davanti al piano toccabile near Interaction](../images/button/MRTK_Button_Front_Touch.gif)
 
 ### <a name="2-adding-visual-feedback-to-the-basic-cube-button"></a>2. aggiunta di commenti visivi al pulsante di base del cubo
 

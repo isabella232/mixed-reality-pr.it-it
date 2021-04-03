@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, tutorial, Voice, HoloLens, Mixed Reality Academy, Unity, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare della realtà virtuale, Windows 10
-ms.openlocfilehash: 3218585c8c485e05fc511cf06b32542709027493
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 8e36233ff4abd3ac91670dd7d04b6675bec045ff
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730448"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269927"
 ---
 # <a name="hololens-1st-gen-input-212-voice"></a>Input 212 di HoloLens (1a generazione): voce
 
->[!NOTE]
->Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](./mr-learning-base-01.md).
+>[!IMPORTANT]
+>Le esercitazioni miste di reality Academy sono state progettate con HoloLens (1st Gen), Unity 2017 e la realtà mista di auricolari immersivi.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi. Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2 e potrebbero non essere compatibili con le versioni più recenti di Unity.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](mrlearning-base.md).
 
 L' [input vocale](../../../design/voice-input.md) ci offre un altro modo per interagire con gli ologrammi. I comandi vocali funzionano in modo molto naturale e semplice. Progettare i comandi vocali in modo che siano:
 

@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, esercitazione, mapping spaziale, superficie di ricostruzione, mesh, HoloLens, Reality Academy, Unity, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare di realtà virtuale, Windows 10
-ms.openlocfilehash: 933b5d331e814cdb2ced2689e06e0c8508f2d68a
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 24814925bfc154989822e326d2f088fe459c7aa0
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730138"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269908"
 ---
 # <a name="hololens-1st-gen-spatial-230-spatial-mapping"></a>HoloLens (1a Gen) Spatial 230: mapping spaziale
 
->[!NOTE]
->Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](./mr-learning-base-01.md).
+>[!IMPORTANT]
+>Le esercitazioni miste di reality Academy sono state progettate con HoloLens (1st Gen), Unity 2017 e la realtà mista di auricolari immersivi.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi. Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2 e potrebbero non essere compatibili con le versioni più recenti di Unity.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](mrlearning-base.md).
 
 Il [mapping spaziale](../../../design/spatial-mapping.md) combina il mondo reale e il mondo virtuale insegnando gli ologrammi sull'ambiente. In MR Spatial 230 (Project Planetarium) si apprenderà come:
 
