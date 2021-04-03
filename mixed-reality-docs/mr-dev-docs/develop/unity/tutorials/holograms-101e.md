@@ -6,142 +6,142 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: realtà mista, realtà mista di Windows, ologramma, Accademia, esercitazione, emulatore, HoloLens, Accademia di realtà mista, Unity, Headset per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, Windows 10, sguardo, movimenti, input vocale, suono spaziale, mapping spaziale
-ms.openlocfilehash: 8d75ee610f352d11ac8396ad50c336b541a062a2
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: b1099c7db8c320c456c8eb726caef44cb5b52def
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730288"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269937"
 ---
-# <a name="hololens-1st-gen-basics-101e-complete-project-with-emulator"></a><span data-ttu-id="4308b-104">Nozioni di base di HoloLens (1st Gen) 101E: completare il progetto con l'emulatore</span><span class="sxs-lookup"><span data-stu-id="4308b-104">HoloLens (1st gen) Basics 101E: Complete project with emulator</span></span>
+# <a name="hololens-1st-gen-basics-101e-complete-project-with-emulator"></a><span data-ttu-id="39a77-104">Nozioni di base di HoloLens (1st Gen) 101E: completare il progetto con l'emulatore</span><span class="sxs-lookup"><span data-stu-id="39a77-104">HoloLens (1st gen) Basics 101E: Complete project with emulator</span></span>
 
->[!NOTE]
-><span data-ttu-id="4308b-105">Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.</span><span class="sxs-lookup"><span data-stu-id="4308b-105">The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.</span></span>  <span data-ttu-id="4308b-106">Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.</span><span class="sxs-lookup"><span data-stu-id="4308b-106">As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.</span></span>  <span data-ttu-id="4308b-107">Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.</span><span class="sxs-lookup"><span data-stu-id="4308b-107">These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.</span></span>  <span data-ttu-id="4308b-108">Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati.</span><span class="sxs-lookup"><span data-stu-id="4308b-108">They will be maintained to continue working on the supported devices.</span></span> <span data-ttu-id="4308b-109">Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](mrlearning-base.md).</span><span class="sxs-lookup"><span data-stu-id="4308b-109">[A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.</span></span>
+>[!IMPORTANT]
+><span data-ttu-id="39a77-105">Le esercitazioni miste di reality Academy sono state progettate con HoloLens (1st Gen), Unity 2017 e la realtà mista di auricolari immersivi.</span><span class="sxs-lookup"><span data-stu-id="39a77-105">The Mixed Reality Academy tutorials were designed with HoloLens (1st gen), Unity 2017, and Mixed Reality Immersive Headsets in mind.</span></span>  <span data-ttu-id="39a77-106">Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.</span><span class="sxs-lookup"><span data-stu-id="39a77-106">As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.</span></span> <span data-ttu-id="39a77-107">Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2 e potrebbero non essere compatibili con le versioni più recenti di Unity.</span><span class="sxs-lookup"><span data-stu-id="39a77-107">These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2 and may not be compatible with newer versions of Unity.</span></span>  <span data-ttu-id="39a77-108">Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati.</span><span class="sxs-lookup"><span data-stu-id="39a77-108">They will be maintained to continue working on the supported devices.</span></span> <span data-ttu-id="39a77-109">Per HoloLens 2 è stata pubblicata [una nuova serie di esercitazioni](mrlearning-base.md).</span><span class="sxs-lookup"><span data-stu-id="39a77-109">[A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.</span></span>
 
 <br>
 
  >[!VIDEO https://www.youtube.com/embed/Xzm8_s05mm8]
 
-<span data-ttu-id="4308b-110">Questa esercitazione illustra in dettaglio un progetto completo, integrato in Unity, che illustra le funzionalità di base della realtà mista di Windows su HoloLens, tra cui lo [sguardo](../../../design/gaze-and-commit.md), i [movimenti](../../../design/gaze-and-commit.md#composite-gestures), l' [input vocale](../../../design/voice-input.md), il [mapping](../../../design/spatial-mapping.md)spaziale e del [suono](../../../design/spatial-sound.md) spaziale.</span><span class="sxs-lookup"><span data-stu-id="4308b-110">This tutorial will walk you through a complete project, built in Unity, that demonstrates core Windows Mixed Reality features on HoloLens including [gaze](../../../design/gaze-and-commit.md), [gestures](../../../design/gaze-and-commit.md#composite-gestures), [voice input](../../../design/voice-input.md), [spatial sound](../../../design/spatial-sound.md) and [spatial mapping](../../../design/spatial-mapping.md).</span></span> <span data-ttu-id="4308b-111">Il completamento dell'esercitazione richiede circa 1 ora.</span><span class="sxs-lookup"><span data-stu-id="4308b-111">The tutorial will take approximately 1 hour to complete.</span></span>
+<span data-ttu-id="39a77-110">Questa esercitazione illustra in dettaglio un progetto completo, integrato in Unity, che illustra le funzionalità di base della realtà mista di Windows su HoloLens, tra cui lo [sguardo](../../../design/gaze-and-commit.md), i [movimenti](../../../design/gaze-and-commit.md#composite-gestures), l' [input vocale](../../../design/voice-input.md), il [mapping](../../../design/spatial-mapping.md)spaziale e del [suono](../../../design/spatial-sound.md) spaziale.</span><span class="sxs-lookup"><span data-stu-id="39a77-110">This tutorial will walk you through a complete project, built in Unity, that demonstrates core Windows Mixed Reality features on HoloLens including [gaze](../../../design/gaze-and-commit.md), [gestures](../../../design/gaze-and-commit.md#composite-gestures), [voice input](../../../design/voice-input.md), [spatial sound](../../../design/spatial-sound.md) and [spatial mapping](../../../design/spatial-mapping.md).</span></span> <span data-ttu-id="39a77-111">Il completamento dell'esercitazione richiede circa 1 ora.</span><span class="sxs-lookup"><span data-stu-id="39a77-111">The tutorial will take approximately 1 hour to complete.</span></span>
 
-## <a name="device-support"></a><span data-ttu-id="4308b-112">Supporto di dispositivi</span><span class="sxs-lookup"><span data-stu-id="4308b-112">Device support</span></span>
+## <a name="device-support"></a><span data-ttu-id="39a77-112">Supporto di dispositivi</span><span class="sxs-lookup"><span data-stu-id="39a77-112">Device support</span></span>
 
 <table>
 <tr>
-<th><span data-ttu-id="4308b-113">Corso</span><span class="sxs-lookup"><span data-stu-id="4308b-113">Course</span></span></th><th style="width:150px"> <span data-ttu-id="4308b-114"><a href="/hololens/hololens1-hardware">HoloLens</a></span><span class="sxs-lookup"><span data-stu-id="4308b-114"><a href="/hololens/hololens1-hardware">HoloLens</a></span></span></th><th style="width:150px"> <span data-ttu-id="4308b-115"><a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></span><span class="sxs-lookup"><span data-stu-id="4308b-115"><a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></span></span></th>
+<th><span data-ttu-id="39a77-113">Corso</span><span class="sxs-lookup"><span data-stu-id="39a77-113">Course</span></span></th><th style="width:150px"> <span data-ttu-id="39a77-114"><a href="/hololens/hololens1-hardware">HoloLens</a></span><span class="sxs-lookup"><span data-stu-id="39a77-114"><a href="/hololens/hololens1-hardware">HoloLens</a></span></span></th><th style="width:150px"> <span data-ttu-id="39a77-115"><a href="../../../discover/immersive-headset-hardware-details.md">Visori VR immersive</a></span><span class="sxs-lookup"><span data-stu-id="39a77-115"><a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></span></span></th>
 </tr><tr>
-<td><span data-ttu-id="4308b-116">Nozioni di base MR 101E: Progetto completo con emulatore</span><span class="sxs-lookup"><span data-stu-id="4308b-116">MR Basics 101E: Complete project with emulator</span></span></td><td style="text-align: center;"> <span data-ttu-id="4308b-117">✔️</span><span class="sxs-lookup"><span data-stu-id="4308b-117">✔️</span></span></td><td style="text-align: center;"> </td>
+<td><span data-ttu-id="39a77-116">Nozioni di base MR 101E: Progetto completo con emulatore</span><span class="sxs-lookup"><span data-stu-id="39a77-116">MR Basics 101E: Complete project with emulator</span></span></td><td style="text-align: center;"> <span data-ttu-id="39a77-117">✔️</span><span class="sxs-lookup"><span data-stu-id="39a77-117">✔️</span></span></td><td style="text-align: center;"> </td>
 </tr>
 </table>
 
-## <a name="before-you-start"></a><span data-ttu-id="4308b-118">Prima di iniziare</span><span class="sxs-lookup"><span data-stu-id="4308b-118">Before you start</span></span>
+## <a name="before-you-start"></a><span data-ttu-id="39a77-118">Prima di iniziare</span><span class="sxs-lookup"><span data-stu-id="39a77-118">Before you start</span></span>
 
-### <a name="prerequisites"></a><span data-ttu-id="4308b-119">Prerequisiti</span><span class="sxs-lookup"><span data-stu-id="4308b-119">Prerequisites</span></span>
+### <a name="prerequisites"></a><span data-ttu-id="39a77-119">Prerequisiti</span><span class="sxs-lookup"><span data-stu-id="39a77-119">Prerequisites</span></span>
 
-* <span data-ttu-id="4308b-120">Un PC Windows 10 configurato con gli [strumenti corretti installati](../../install-the-tools.md).</span><span class="sxs-lookup"><span data-stu-id="4308b-120">A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md).</span></span>
+* <span data-ttu-id="39a77-120">Un PC Windows 10 configurato con gli [strumenti corretti installati](../../install-the-tools.md).</span><span class="sxs-lookup"><span data-stu-id="39a77-120">A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md).</span></span>
 
-### <a name="project-files"></a><span data-ttu-id="4308b-121">File di progetto</span><span class="sxs-lookup"><span data-stu-id="4308b-121">Project files</span></span>
+### <a name="project-files"></a><span data-ttu-id="39a77-121">File di progetto</span><span class="sxs-lookup"><span data-stu-id="39a77-121">Project files</span></span>
 
-* <span data-ttu-id="4308b-122">Scaricare i [file](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-101.zip) richiesti dal progetto.</span><span class="sxs-lookup"><span data-stu-id="4308b-122">Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-101.zip) required by the project.</span></span> <span data-ttu-id="4308b-123">Richiede Unity 2017,2 o versione successiva.</span><span class="sxs-lookup"><span data-stu-id="4308b-123">Requires Unity 2017.2 or later.</span></span>
-  * <span data-ttu-id="4308b-124">Se è ancora necessario il supporto per Unity 5,6, usare [questa versione](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-101.zip).</span><span class="sxs-lookup"><span data-stu-id="4308b-124">If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-101.zip).</span></span>
-  * <span data-ttu-id="4308b-125">Se è ancora necessario il supporto per Unity 5,5, usare [questa versione](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-101.zip).</span><span class="sxs-lookup"><span data-stu-id="4308b-125">If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-101.zip).</span></span>
-  * <span data-ttu-id="4308b-126">Se è ancora necessario il supporto per Unity 5,4, usare [questa versione](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-101.zip).</span><span class="sxs-lookup"><span data-stu-id="4308b-126">If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-101.zip).</span></span>
-* <span data-ttu-id="4308b-127">Annullare l'archiviazione dei file sul desktop o in un'altra posizione facile da raggiungere.</span><span class="sxs-lookup"><span data-stu-id="4308b-127">Un-archive the files to your desktop or other easy to reach location.</span></span> <span data-ttu-id="4308b-128">Mantiene il nome della cartella come **origami**.</span><span class="sxs-lookup"><span data-stu-id="4308b-128">Keep the folder name as **Origami**.</span></span>
+* <span data-ttu-id="39a77-122">Scaricare i [file](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-101.zip) richiesti dal progetto.</span><span class="sxs-lookup"><span data-stu-id="39a77-122">Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-101.zip) required by the project.</span></span> <span data-ttu-id="39a77-123">Richiede Unity 2017,2 o versione successiva.</span><span class="sxs-lookup"><span data-stu-id="39a77-123">Requires Unity 2017.2 or later.</span></span>
+  * <span data-ttu-id="39a77-124">Se è ancora necessario il supporto per Unity 5,6, usare [questa versione](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-101.zip).</span><span class="sxs-lookup"><span data-stu-id="39a77-124">If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-101.zip).</span></span>
+  * <span data-ttu-id="39a77-125">Se è ancora necessario il supporto per Unity 5,5, usare [questa versione](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-101.zip).</span><span class="sxs-lookup"><span data-stu-id="39a77-125">If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-101.zip).</span></span>
+  * <span data-ttu-id="39a77-126">Se è ancora necessario il supporto per Unity 5,4, usare [questa versione](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-101.zip).</span><span class="sxs-lookup"><span data-stu-id="39a77-126">If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-101.zip).</span></span>
+* <span data-ttu-id="39a77-127">Annullare l'archiviazione dei file sul desktop o in un'altra posizione facile da raggiungere.</span><span class="sxs-lookup"><span data-stu-id="39a77-127">Un-archive the files to your desktop or other easy to reach location.</span></span> <span data-ttu-id="39a77-128">Mantiene il nome della cartella come **origami**.</span><span class="sxs-lookup"><span data-stu-id="39a77-128">Keep the folder name as **Origami**.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="4308b-129">Se si vuole esaminare il codice sorgente prima del download, è [disponibile in GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-101).</span><span class="sxs-lookup"><span data-stu-id="4308b-129">If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-101).</span></span>
+><span data-ttu-id="39a77-129">Se si vuole esaminare il codice sorgente prima del download, è [disponibile in GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-101).</span><span class="sxs-lookup"><span data-stu-id="39a77-129">If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-101).</span></span>
 
-## <a name="chapter-1---holo-world"></a><span data-ttu-id="4308b-130">Capitolo 1-"Holo" World</span><span class="sxs-lookup"><span data-stu-id="4308b-130">Chapter 1 - "Holo" world</span></span>
+## <a name="chapter-1---holo-world"></a><span data-ttu-id="39a77-130">Capitolo 1-"Holo" World</span><span class="sxs-lookup"><span data-stu-id="39a77-130">Chapter 1 - "Holo" world</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/qotpUpIQxVU]
 
-<span data-ttu-id="4308b-131">In questo capitolo verrà configurato il primo progetto Unity ed eseguiamo il processo di compilazione e distribuzione.</span><span class="sxs-lookup"><span data-stu-id="4308b-131">In this chapter, we'll setup our first Unity project and step through the build and deploy process.</span></span>
+<span data-ttu-id="39a77-131">In questo capitolo verrà configurato il primo progetto Unity ed eseguiamo il processo di compilazione e distribuzione.</span><span class="sxs-lookup"><span data-stu-id="39a77-131">In this chapter, we'll setup our first Unity project and step through the build and deploy process.</span></span>
 
-### <a name="objectives"></a><span data-ttu-id="4308b-132">Obiettivi</span><span class="sxs-lookup"><span data-stu-id="4308b-132">Objectives</span></span>
+### <a name="objectives"></a><span data-ttu-id="39a77-132">Obiettivi</span><span class="sxs-lookup"><span data-stu-id="39a77-132">Objectives</span></span>
 
-* <span data-ttu-id="4308b-133">Configurare Unity per lo sviluppo olografico.</span><span class="sxs-lookup"><span data-stu-id="4308b-133">Set up Unity for holographic development.</span></span>
-* <span data-ttu-id="4308b-134">Creare un ologramma.</span><span class="sxs-lookup"><span data-stu-id="4308b-134">Make a hologram.</span></span>
-* <span data-ttu-id="4308b-135">Vedere un ologramma creato.</span><span class="sxs-lookup"><span data-stu-id="4308b-135">See a hologram that you made.</span></span>
+* <span data-ttu-id="39a77-133">Configurare Unity per lo sviluppo olografico.</span><span class="sxs-lookup"><span data-stu-id="39a77-133">Set up Unity for holographic development.</span></span>
+* <span data-ttu-id="39a77-134">Creare un ologramma.</span><span class="sxs-lookup"><span data-stu-id="39a77-134">Make a hologram.</span></span>
+* <span data-ttu-id="39a77-135">Vedere un ologramma creato.</span><span class="sxs-lookup"><span data-stu-id="39a77-135">See a hologram that you made.</span></span>
 
-### <a name="instructions"></a><span data-ttu-id="4308b-136">Istruzioni</span><span class="sxs-lookup"><span data-stu-id="4308b-136">Instructions</span></span>
+### <a name="instructions"></a><span data-ttu-id="39a77-136">Istruzioni</span><span class="sxs-lookup"><span data-stu-id="39a77-136">Instructions</span></span>
 
-* <span data-ttu-id="4308b-137">Riavviare Unity.</span><span class="sxs-lookup"><span data-stu-id="4308b-137">Start Unity.</span></span>
-* <span data-ttu-id="4308b-138">Selezionare **Open** (Apri).</span><span class="sxs-lookup"><span data-stu-id="4308b-138">Select **Open**.</span></span>
-* <span data-ttu-id="4308b-139">Immettere il percorso come cartella **origami** precedentemente non archiviata.</span><span class="sxs-lookup"><span data-stu-id="4308b-139">Enter location as the **Origami** folder you previously un-archived.</span></span>
-* <span data-ttu-id="4308b-140">Selezionare **origami** e fare clic su **Seleziona cartella**.</span><span class="sxs-lookup"><span data-stu-id="4308b-140">Select **Origami** and click **Select Folder**.</span></span>
-* <span data-ttu-id="4308b-141">Salvare la nuova scena: **file**  /  **Salva scena con nome**.</span><span class="sxs-lookup"><span data-stu-id="4308b-141">Save the new scene: **File** / **Save Scene As**.</span></span>
-* <span data-ttu-id="4308b-142">Assegnare un nome alla scena **origami** e premere il pulsante **Salva** .</span><span class="sxs-lookup"><span data-stu-id="4308b-142">Name the scene **Origami** and press the **Save** button.</span></span>
+* <span data-ttu-id="39a77-137">Riavviare Unity.</span><span class="sxs-lookup"><span data-stu-id="39a77-137">Start Unity.</span></span>
+* <span data-ttu-id="39a77-138">Selezionare **Open** (Apri).</span><span class="sxs-lookup"><span data-stu-id="39a77-138">Select **Open**.</span></span>
+* <span data-ttu-id="39a77-139">Immettere il percorso come cartella **origami** precedentemente non archiviata.</span><span class="sxs-lookup"><span data-stu-id="39a77-139">Enter location as the **Origami** folder you previously un-archived.</span></span>
+* <span data-ttu-id="39a77-140">Selezionare **origami** e fare clic su **Seleziona cartella**.</span><span class="sxs-lookup"><span data-stu-id="39a77-140">Select **Origami** and click **Select Folder**.</span></span>
+* <span data-ttu-id="39a77-141">Salvare la nuova scena: **file**  /  **Salva scena con nome**.</span><span class="sxs-lookup"><span data-stu-id="39a77-141">Save the new scene: **File** / **Save Scene As**.</span></span>
+* <span data-ttu-id="39a77-142">Assegnare un nome alla scena **origami** e premere il pulsante **Salva** .</span><span class="sxs-lookup"><span data-stu-id="39a77-142">Name the scene **Origami** and press the **Save** button.</span></span>
 
-#### <a name="setup-the-main-camera"></a><span data-ttu-id="4308b-143">Configurare la fotocamera principale</span><span class="sxs-lookup"><span data-stu-id="4308b-143">Setup the main camera</span></span>
+#### <a name="setup-the-main-camera"></a><span data-ttu-id="39a77-143">Configurare la fotocamera principale</span><span class="sxs-lookup"><span data-stu-id="39a77-143">Setup the main camera</span></span>
 
-* <span data-ttu-id="4308b-144">Nel **Pannello di gerarchia**, selezionare **Fotocamera principale**.</span><span class="sxs-lookup"><span data-stu-id="4308b-144">In the **Hierarchy Panel**, select **Main Camera**.</span></span>
-* <span data-ttu-id="4308b-145">Nel **controllo** impostare la relativa posizione di trasformazione su **0, 0, 0**.</span><span class="sxs-lookup"><span data-stu-id="4308b-145">In the **Inspector** set its transform position to **0,0,0**.</span></span>
-* <span data-ttu-id="4308b-146">Trovare la proprietà **Clear Flags** e modificare l'elenco a discesa da **SKYBOX** a **tinta unita**.</span><span class="sxs-lookup"><span data-stu-id="4308b-146">Find the **Clear Flags** property, and change the dropdown from **Skybox** to **Solid color**.</span></span>
-* <span data-ttu-id="4308b-147">Fare clic sul campo **Sfondo** per aprire un editor dei colori.</span><span class="sxs-lookup"><span data-stu-id="4308b-147">Click on the **Background** field to open a color picker.</span></span>
-* <span data-ttu-id="4308b-148">Impostare **R, G, B e A** su **0**.</span><span class="sxs-lookup"><span data-stu-id="4308b-148">Set **R, G, B, and A** to **0**.</span></span>
+* <span data-ttu-id="39a77-144">Nel **Pannello di gerarchia**, selezionare **Fotocamera principale**.</span><span class="sxs-lookup"><span data-stu-id="39a77-144">In the **Hierarchy Panel**, select **Main Camera**.</span></span>
+* <span data-ttu-id="39a77-145">Nel **controllo** impostare la relativa posizione di trasformazione su **0, 0, 0**.</span><span class="sxs-lookup"><span data-stu-id="39a77-145">In the **Inspector** set its transform position to **0,0,0**.</span></span>
+* <span data-ttu-id="39a77-146">Trovare la proprietà **Clear Flags** e modificare l'elenco a discesa da **SKYBOX** a **tinta unita**.</span><span class="sxs-lookup"><span data-stu-id="39a77-146">Find the **Clear Flags** property, and change the dropdown from **Skybox** to **Solid color**.</span></span>
+* <span data-ttu-id="39a77-147">Fare clic sul campo **Sfondo** per aprire un editor dei colori.</span><span class="sxs-lookup"><span data-stu-id="39a77-147">Click on the **Background** field to open a color picker.</span></span>
+* <span data-ttu-id="39a77-148">Impostare **R, G, B e A** su **0**.</span><span class="sxs-lookup"><span data-stu-id="39a77-148">Set **R, G, B, and A** to **0**.</span></span>
 
-#### <a name="setup-the-scene"></a><span data-ttu-id="4308b-149">Configurare la scena</span><span class="sxs-lookup"><span data-stu-id="4308b-149">Setup the scene</span></span>
+#### <a name="setup-the-scene"></a><span data-ttu-id="39a77-149">Configurare la scena</span><span class="sxs-lookup"><span data-stu-id="39a77-149">Setup the scene</span></span>
 
-* <span data-ttu-id="4308b-150">Nel **Pannello gerarchia** fare clic su **Crea** e **Crea vuoto**.</span><span class="sxs-lookup"><span data-stu-id="4308b-150">In the **Hierarchy Panel**, click on **Create** and **Create Empty**.</span></span>
-* <span data-ttu-id="4308b-151">Fare clic con il pulsante destro del mouse sul nuovo **GameObject** e scegliere Rinomina.</span><span class="sxs-lookup"><span data-stu-id="4308b-151">Right-click the new **GameObject** and select Rename.</span></span> <span data-ttu-id="4308b-152">Rinominare GameObject in **origamicollection**.</span><span class="sxs-lookup"><span data-stu-id="4308b-152">Rename the GameObject to **OrigamiCollection**.</span></span>
-* <span data-ttu-id="4308b-153">Dalla cartella **ologrammi** nel pannello del **progetto**:</span><span class="sxs-lookup"><span data-stu-id="4308b-153">From the **Holograms** folder in the **Project Panel**:</span></span>
-  * <span data-ttu-id="4308b-154">Trascinare la **fase** nella gerarchia in modo che sia un elemento figlio di **origamicollection**.</span><span class="sxs-lookup"><span data-stu-id="4308b-154">Drag **Stage** into the Hierarchy to be a child of **OrigamiCollection**.</span></span>
-  * <span data-ttu-id="4308b-155">Trascinare **Sphere1** nella gerarchia in modo che sia un elemento figlio di **origamicollection**.</span><span class="sxs-lookup"><span data-stu-id="4308b-155">Drag **Sphere1** into the Hierarchy to be a child of **OrigamiCollection**.</span></span>
-  * <span data-ttu-id="4308b-156">Trascinare **Sphere2** nella gerarchia in modo che sia un elemento figlio di **origamicollection**.</span><span class="sxs-lookup"><span data-stu-id="4308b-156">Drag **Sphere2** into the Hierarchy to be a child of **OrigamiCollection**.</span></span>
-* <span data-ttu-id="4308b-157">Fare clic con il pulsante destro del mouse sull'oggetto **direzionale chiaro** nel **Pannello gerarchia** e scegliere **Elimina**.</span><span class="sxs-lookup"><span data-stu-id="4308b-157">Right-click the **Directional Light** object in the **Hierarchy Panel** and select **Delete**.</span></span>
-* <span data-ttu-id="4308b-158">Dalla cartella **ologrammi** trascinare le **spie** nella radice del **Pannello gerarchia**.</span><span class="sxs-lookup"><span data-stu-id="4308b-158">From the **Holograms** folder, drag **Lights** into the root of the **Hierarchy Panel**.</span></span>
-* <span data-ttu-id="4308b-159">Nella **gerarchia** selezionare **origamicollection**.</span><span class="sxs-lookup"><span data-stu-id="4308b-159">In the **Hierarchy**, select the **OrigamiCollection**.</span></span>
-* <span data-ttu-id="4308b-160">Nel **controllo** impostare la posizione di trasformazione su **0,-0,5, 2,0**.</span><span class="sxs-lookup"><span data-stu-id="4308b-160">In the **Inspector**, set the transform position to **0, -0.5, 2.0**.</span></span>
-* <span data-ttu-id="4308b-161">Premere il pulsante **Play** in Unity per visualizzare l'anteprima degli ologrammi.</span><span class="sxs-lookup"><span data-stu-id="4308b-161">Press the **Play** button in Unity to preview your holograms.</span></span>
-* <span data-ttu-id="4308b-162">Nella finestra di anteprima verranno visualizzati gli oggetti origami.</span><span class="sxs-lookup"><span data-stu-id="4308b-162">You should see the Origami objects in the preview window.</span></span>
-* <span data-ttu-id="4308b-163">Premere **Riproduci** una seconda volta per arrestare la modalità di anteprima.</span><span class="sxs-lookup"><span data-stu-id="4308b-163">Press **Play** a second time to stop preview mode.</span></span>
+* <span data-ttu-id="39a77-150">Nel **Pannello gerarchia** fare clic su **Crea** e **Crea vuoto**.</span><span class="sxs-lookup"><span data-stu-id="39a77-150">In the **Hierarchy Panel**, click on **Create** and **Create Empty**.</span></span>
+* <span data-ttu-id="39a77-151">Fare clic con il pulsante destro del mouse sul nuovo **GameObject** e scegliere Rinomina.</span><span class="sxs-lookup"><span data-stu-id="39a77-151">Right-click the new **GameObject** and select Rename.</span></span> <span data-ttu-id="39a77-152">Rinominare GameObject in **origamicollection**.</span><span class="sxs-lookup"><span data-stu-id="39a77-152">Rename the GameObject to **OrigamiCollection**.</span></span>
+* <span data-ttu-id="39a77-153">Dalla cartella **ologrammi** nel pannello del **progetto**:</span><span class="sxs-lookup"><span data-stu-id="39a77-153">From the **Holograms** folder in the **Project Panel**:</span></span>
+  * <span data-ttu-id="39a77-154">Trascinare la **fase** nella gerarchia in modo che sia un elemento figlio di **origamicollection**.</span><span class="sxs-lookup"><span data-stu-id="39a77-154">Drag **Stage** into the Hierarchy to be a child of **OrigamiCollection**.</span></span>
+  * <span data-ttu-id="39a77-155">Trascinare **Sphere1** nella gerarchia in modo che sia un elemento figlio di **origamicollection**.</span><span class="sxs-lookup"><span data-stu-id="39a77-155">Drag **Sphere1** into the Hierarchy to be a child of **OrigamiCollection**.</span></span>
+  * <span data-ttu-id="39a77-156">Trascinare **Sphere2** nella gerarchia in modo che sia un elemento figlio di **origamicollection**.</span><span class="sxs-lookup"><span data-stu-id="39a77-156">Drag **Sphere2** into the Hierarchy to be a child of **OrigamiCollection**.</span></span>
+* <span data-ttu-id="39a77-157">Fare clic con il pulsante destro del mouse sull'oggetto **direzionale chiaro** nel **Pannello gerarchia** e scegliere **Elimina**.</span><span class="sxs-lookup"><span data-stu-id="39a77-157">Right-click the **Directional Light** object in the **Hierarchy Panel** and select **Delete**.</span></span>
+* <span data-ttu-id="39a77-158">Dalla cartella **ologrammi** trascinare le **spie** nella radice del **Pannello gerarchia**.</span><span class="sxs-lookup"><span data-stu-id="39a77-158">From the **Holograms** folder, drag **Lights** into the root of the **Hierarchy Panel**.</span></span>
+* <span data-ttu-id="39a77-159">Nella **gerarchia** selezionare **origamicollection**.</span><span class="sxs-lookup"><span data-stu-id="39a77-159">In the **Hierarchy**, select the **OrigamiCollection**.</span></span>
+* <span data-ttu-id="39a77-160">Nel **controllo** impostare la posizione di trasformazione su **0,-0,5, 2,0**.</span><span class="sxs-lookup"><span data-stu-id="39a77-160">In the **Inspector**, set the transform position to **0, -0.5, 2.0**.</span></span>
+* <span data-ttu-id="39a77-161">Premere il pulsante **Play** in Unity per visualizzare l'anteprima degli ologrammi.</span><span class="sxs-lookup"><span data-stu-id="39a77-161">Press the **Play** button in Unity to preview your holograms.</span></span>
+* <span data-ttu-id="39a77-162">Nella finestra di anteprima verranno visualizzati gli oggetti origami.</span><span class="sxs-lookup"><span data-stu-id="39a77-162">You should see the Origami objects in the preview window.</span></span>
+* <span data-ttu-id="39a77-163">Premere **Riproduci** una seconda volta per arrestare la modalità di anteprima.</span><span class="sxs-lookup"><span data-stu-id="39a77-163">Press **Play** a second time to stop preview mode.</span></span>
 
-#### <a name="export-the-project-from-unity-to-visual-studio"></a><span data-ttu-id="4308b-164">Esportare il progetto da Unity a Visual Studio</span><span class="sxs-lookup"><span data-stu-id="4308b-164">Export the project from Unity to Visual Studio</span></span>
+#### <a name="export-the-project-from-unity-to-visual-studio"></a><span data-ttu-id="39a77-164">Esportare il progetto da Unity a Visual Studio</span><span class="sxs-lookup"><span data-stu-id="39a77-164">Export the project from Unity to Visual Studio</span></span>
 
-* <span data-ttu-id="4308b-165">In Unity selezionare **File > impostazioni di compilazione**.</span><span class="sxs-lookup"><span data-stu-id="4308b-165">In Unity select **File > Build Settings**.</span></span>
-* <span data-ttu-id="4308b-166">Selezionare **Windows Store** nell'elenco **piattaforma** e fare clic su **Cambia piattaforma**.</span><span class="sxs-lookup"><span data-stu-id="4308b-166">Select **Windows Store** in the **Platform** list and click **Switch Platform**.</span></span>
-* <span data-ttu-id="4308b-167">Impostare **SDK** su **Universal 10** e **tipo di compilazione** su **D3D**.</span><span class="sxs-lookup"><span data-stu-id="4308b-167">Set **SDK** to **Universal 10** and **Build Type** to **D3D**.</span></span>
-* <span data-ttu-id="4308b-168">Controllare i **progetti C# di Unity**.</span><span class="sxs-lookup"><span data-stu-id="4308b-168">Check **Unity C# Projects**.</span></span>
-* <span data-ttu-id="4308b-169">Fare clic su **Aggiungi scene aperte** per aggiungere la scena.</span><span class="sxs-lookup"><span data-stu-id="4308b-169">Click **Add Open Scenes** to add the scene.</span></span>
-* <span data-ttu-id="4308b-170">Fare clic su **Impostazioni lettore...**.</span><span class="sxs-lookup"><span data-stu-id="4308b-170">Click **Player Settings...**.</span></span>
-* <span data-ttu-id="4308b-171">Nel pannello Inspector selezionare il **logo di Windows Store**.</span><span class="sxs-lookup"><span data-stu-id="4308b-171">In the Inspector Panel select the **Windows Store logo**.</span></span> <span data-ttu-id="4308b-172">Quindi selezionare **impostazioni di pubblicazione**.</span><span class="sxs-lookup"><span data-stu-id="4308b-172">Then select **Publishing Settings**.</span></span>
-* <span data-ttu-id="4308b-173">Nella sezione **funzionalità** selezionare le funzionalità **Microphone** e **SpatialPerception** .</span><span class="sxs-lookup"><span data-stu-id="4308b-173">In the **Capabilities** section, select the **Microphone** and **SpatialPerception** capabilities.</span></span>
-* <span data-ttu-id="4308b-174">Tornare alla finestra Impostazioni compilazione, fare clic su **Compila**.</span><span class="sxs-lookup"><span data-stu-id="4308b-174">Back in the Build Settings window, click **Build**.</span></span>
-* <span data-ttu-id="4308b-175">Creare una **nuova cartella** denominata "app".</span><span class="sxs-lookup"><span data-stu-id="4308b-175">Create a **New Folder** named "App".</span></span>
-* <span data-ttu-id="4308b-176">Fare clic sulla **cartella dell'app**.</span><span class="sxs-lookup"><span data-stu-id="4308b-176">Single click the **App Folder**.</span></span>
-* <span data-ttu-id="4308b-177">Premere **Seleziona cartella**.</span><span class="sxs-lookup"><span data-stu-id="4308b-177">Press **Select Folder**.</span></span>
-* <span data-ttu-id="4308b-178">Quando si esegue Unity, viene visualizzata una finestra Esplora file.</span><span class="sxs-lookup"><span data-stu-id="4308b-178">When Unity is done, a File Explorer window will appear.</span></span>
-* <span data-ttu-id="4308b-179">Aprire la cartella dell' **app** .</span><span class="sxs-lookup"><span data-stu-id="4308b-179">Open the **App** folder.</span></span>
-* <span data-ttu-id="4308b-180">Aprire la **soluzione origami di Visual Studio**.</span><span class="sxs-lookup"><span data-stu-id="4308b-180">Open the **Origami Visual Studio Solution**.</span></span>
-* <span data-ttu-id="4308b-181">Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x86**.</span><span class="sxs-lookup"><span data-stu-id="4308b-181">Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **X86**.</span></span>
-  * <span data-ttu-id="4308b-182">Fare clic sulla freccia accanto al pulsante Device (dispositivo) e selezionare **HoloLens Emulator (emulatore**).</span><span class="sxs-lookup"><span data-stu-id="4308b-182">Click on the arrow next to the Device button, and select **HoloLens Emulator**.</span></span>
-  * <span data-ttu-id="4308b-183">Fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5**.</span><span class="sxs-lookup"><span data-stu-id="4308b-183">Click **Debug -> Start Without debugging** or press **Ctrl + F5**.</span></span>
-  * <span data-ttu-id="4308b-184">Dopo un po' di tempo l'emulatore inizierà con il progetto origami.</span><span class="sxs-lookup"><span data-stu-id="4308b-184">After some time the emulator will start with the Origami project.</span></span> <span data-ttu-id="4308b-185">Quando l' [emulatore](../../platform-capabilities-and-apis/using-the-hololens-emulator.md)viene avviato per la prima volta, possono essere necessari fino a 15 minuti per l'avvio dell'emulatore.</span><span class="sxs-lookup"><span data-stu-id="4308b-185">When first launching the [emulator](../../platform-capabilities-and-apis/using-the-hololens-emulator.md), it can take as long as 15 minutes for the emulator to start up.</span></span> <span data-ttu-id="4308b-186">Una volta avviata, non chiuderla.</span><span class="sxs-lookup"><span data-stu-id="4308b-186">Once it starts, do not close it.</span></span>
+* <span data-ttu-id="39a77-165">In Unity selezionare **File > impostazioni di compilazione**.</span><span class="sxs-lookup"><span data-stu-id="39a77-165">In Unity select **File > Build Settings**.</span></span>
+* <span data-ttu-id="39a77-166">Selezionare **Windows Store** nell'elenco **piattaforma** e fare clic su **Cambia piattaforma**.</span><span class="sxs-lookup"><span data-stu-id="39a77-166">Select **Windows Store** in the **Platform** list and click **Switch Platform**.</span></span>
+* <span data-ttu-id="39a77-167">Impostare **SDK** su **Universal 10** e **tipo di compilazione** su **D3D**.</span><span class="sxs-lookup"><span data-stu-id="39a77-167">Set **SDK** to **Universal 10** and **Build Type** to **D3D**.</span></span>
+* <span data-ttu-id="39a77-168">Controllare i **progetti C# di Unity**.</span><span class="sxs-lookup"><span data-stu-id="39a77-168">Check **Unity C# Projects**.</span></span>
+* <span data-ttu-id="39a77-169">Fare clic su **Aggiungi scene aperte** per aggiungere la scena.</span><span class="sxs-lookup"><span data-stu-id="39a77-169">Click **Add Open Scenes** to add the scene.</span></span>
+* <span data-ttu-id="39a77-170">Fare clic su **Impostazioni lettore...**.</span><span class="sxs-lookup"><span data-stu-id="39a77-170">Click **Player Settings...**.</span></span>
+* <span data-ttu-id="39a77-171">Nel pannello Inspector selezionare il **logo di Windows Store**.</span><span class="sxs-lookup"><span data-stu-id="39a77-171">In the Inspector Panel select the **Windows Store logo**.</span></span> <span data-ttu-id="39a77-172">Quindi selezionare **impostazioni di pubblicazione**.</span><span class="sxs-lookup"><span data-stu-id="39a77-172">Then select **Publishing Settings**.</span></span>
+* <span data-ttu-id="39a77-173">Nella sezione **funzionalità** selezionare le funzionalità **Microphone** e **SpatialPerception** .</span><span class="sxs-lookup"><span data-stu-id="39a77-173">In the **Capabilities** section, select the **Microphone** and **SpatialPerception** capabilities.</span></span>
+* <span data-ttu-id="39a77-174">Tornare alla finestra Impostazioni compilazione, fare clic su **Compila**.</span><span class="sxs-lookup"><span data-stu-id="39a77-174">Back in the Build Settings window, click **Build**.</span></span>
+* <span data-ttu-id="39a77-175">Creare una **nuova cartella** denominata "app".</span><span class="sxs-lookup"><span data-stu-id="39a77-175">Create a **New Folder** named "App".</span></span>
+* <span data-ttu-id="39a77-176">Fare clic sulla **cartella dell'app**.</span><span class="sxs-lookup"><span data-stu-id="39a77-176">Single click the **App Folder**.</span></span>
+* <span data-ttu-id="39a77-177">Premere **Seleziona cartella**.</span><span class="sxs-lookup"><span data-stu-id="39a77-177">Press **Select Folder**.</span></span>
+* <span data-ttu-id="39a77-178">Quando si esegue Unity, viene visualizzata una finestra Esplora file.</span><span class="sxs-lookup"><span data-stu-id="39a77-178">When Unity is done, a File Explorer window will appear.</span></span>
+* <span data-ttu-id="39a77-179">Aprire la cartella dell' **app** .</span><span class="sxs-lookup"><span data-stu-id="39a77-179">Open the **App** folder.</span></span>
+* <span data-ttu-id="39a77-180">Aprire la **soluzione origami di Visual Studio**.</span><span class="sxs-lookup"><span data-stu-id="39a77-180">Open the **Origami Visual Studio Solution**.</span></span>
+* <span data-ttu-id="39a77-181">Usando la barra degli strumenti superiore in Visual Studio, modificare la destinazione da debug a **Release** e da ARM a **x86**.</span><span class="sxs-lookup"><span data-stu-id="39a77-181">Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **X86**.</span></span>
+  * <span data-ttu-id="39a77-182">Fare clic sulla freccia accanto al pulsante Device (dispositivo) e selezionare **HoloLens Emulator (emulatore**).</span><span class="sxs-lookup"><span data-stu-id="39a77-182">Click on the arrow next to the Device button, and select **HoloLens Emulator**.</span></span>
+  * <span data-ttu-id="39a77-183">Fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5**.</span><span class="sxs-lookup"><span data-stu-id="39a77-183">Click **Debug -> Start Without debugging** or press **Ctrl + F5**.</span></span>
+  * <span data-ttu-id="39a77-184">Dopo un po' di tempo l'emulatore inizierà con il progetto origami.</span><span class="sxs-lookup"><span data-stu-id="39a77-184">After some time the emulator will start with the Origami project.</span></span> <span data-ttu-id="39a77-185">Quando l' [emulatore](../../platform-capabilities-and-apis/using-the-hololens-emulator.md)viene avviato per la prima volta, possono essere necessari fino a 15 minuti per l'avvio dell'emulatore.</span><span class="sxs-lookup"><span data-stu-id="39a77-185">When first launching the [emulator](../../platform-capabilities-and-apis/using-the-hololens-emulator.md), it can take as long as 15 minutes for the emulator to start up.</span></span> <span data-ttu-id="39a77-186">Una volta avviata, non chiuderla.</span><span class="sxs-lookup"><span data-stu-id="39a77-186">Once it starts, do not close it.</span></span>
 
-## <a name="chapter-2---gaze"></a><span data-ttu-id="4308b-187">Capitolo 2: sguardo</span><span class="sxs-lookup"><span data-stu-id="4308b-187">Chapter 2 - Gaze</span></span>
+## <a name="chapter-2---gaze"></a><span data-ttu-id="39a77-187">Capitolo 2: sguardo</span><span class="sxs-lookup"><span data-stu-id="39a77-187">Chapter 2 - Gaze</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/BPWTbAC210k]
 
-<span data-ttu-id="4308b-188">In questo capitolo, verranno introdotti i primi tre modi per interagire con gli ologrammi [.](../../../design/gaze-and-commit.md)</span><span class="sxs-lookup"><span data-stu-id="4308b-188">In this chapter, we are going to introduce the first of three ways of interacting with your holograms -- [gaze](../../../design/gaze-and-commit.md).</span></span>
+<span data-ttu-id="39a77-188">In questo capitolo, verranno introdotti i primi tre modi per interagire con gli ologrammi [.](../../../design/gaze-and-commit.md)</span><span class="sxs-lookup"><span data-stu-id="39a77-188">In this chapter, we are going to introduce the first of three ways of interacting with your holograms -- [gaze](../../../design/gaze-and-commit.md).</span></span>
 
-### <a name="objectives"></a><span data-ttu-id="4308b-189">Obiettivi</span><span class="sxs-lookup"><span data-stu-id="4308b-189">Objectives</span></span>
+### <a name="objectives"></a><span data-ttu-id="39a77-189">Obiettivi</span><span class="sxs-lookup"><span data-stu-id="39a77-189">Objectives</span></span>
 
-* <span data-ttu-id="4308b-190">Visualizza lo sguardo usando un cursore con blocco globale.</span><span class="sxs-lookup"><span data-stu-id="4308b-190">Visualize your gaze using a world-locked cursor.</span></span>
+* <span data-ttu-id="39a77-190">Visualizza lo sguardo usando un cursore con blocco globale.</span><span class="sxs-lookup"><span data-stu-id="39a77-190">Visualize your gaze using a world-locked cursor.</span></span>
 
-### <a name="instructions"></a><span data-ttu-id="4308b-191">Istruzioni</span><span class="sxs-lookup"><span data-stu-id="4308b-191">Instructions</span></span>
+### <a name="instructions"></a><span data-ttu-id="39a77-191">Istruzioni</span><span class="sxs-lookup"><span data-stu-id="39a77-191">Instructions</span></span>
 
-* <span data-ttu-id="4308b-192">Tornare al progetto Unity e chiudere la finestra impostazioni di compilazione se è ancora aperta.</span><span class="sxs-lookup"><span data-stu-id="4308b-192">Go back to your Unity project, and close the Build Settings window if it's still open.</span></span>
-* <span data-ttu-id="4308b-193">Selezionare la cartella **ologrammi** nel **Pannello del progetto**.</span><span class="sxs-lookup"><span data-stu-id="4308b-193">Select the **Holograms** folder in the **Project panel**.</span></span>
-* <span data-ttu-id="4308b-194">Trascinare l'oggetto **cursore** nel **Pannello gerarchia** a livello di radice.</span><span class="sxs-lookup"><span data-stu-id="4308b-194">Drag the **Cursor** object into the **Hierarchy panel** at the root level.</span></span>
-* <span data-ttu-id="4308b-195">Fare doppio clic sull'oggetto **cursore** per esaminarlo più da vicino.</span><span class="sxs-lookup"><span data-stu-id="4308b-195">Double-click on the **Cursor** object to take a closer look at it.</span></span>
-* <span data-ttu-id="4308b-196">Fare clic con il pulsante destro del mouse sulla cartella **Scripts** nel pannello Project.</span><span class="sxs-lookup"><span data-stu-id="4308b-196">Right-click on the **Scripts** folder in the Project panel.</span></span>
-* <span data-ttu-id="4308b-197">Fare clic sul sottomenu **Crea** .</span><span class="sxs-lookup"><span data-stu-id="4308b-197">Click the **Create** sub-menu.</span></span>
-* <span data-ttu-id="4308b-198">Selezionare **lo script C#**.</span><span class="sxs-lookup"><span data-stu-id="4308b-198">Select **C# Script**.</span></span>
-* <span data-ttu-id="4308b-199">Denominare lo script **WorldCursor**.</span><span class="sxs-lookup"><span data-stu-id="4308b-199">Name the script **WorldCursor**.</span></span> <span data-ttu-id="4308b-200">Nota: il nome fa distinzione tra maiuscole e minuscole.</span><span class="sxs-lookup"><span data-stu-id="4308b-200">Note: The name is case-sensitive.</span></span> <span data-ttu-id="4308b-201">Non è necessario aggiungere l'estensione. cs.</span><span class="sxs-lookup"><span data-stu-id="4308b-201">You do not need to add the .cs extension.</span></span>
-* <span data-ttu-id="4308b-202">Selezionare l'oggetto **cursore** nel **Pannello gerarchia**.</span><span class="sxs-lookup"><span data-stu-id="4308b-202">Select the **Cursor** object in the **Hierarchy panel**.</span></span>
-* <span data-ttu-id="4308b-203">Trascinare e rilasciare lo script **WorldCursor** nel **pannello Inspector**.</span><span class="sxs-lookup"><span data-stu-id="4308b-203">Drag and drop the **WorldCursor** script into the **Inspector panel**.</span></span>
-* <span data-ttu-id="4308b-204">Fare doppio clic sullo script **WorldCursor** per aprirlo in Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="4308b-204">Double-click the **WorldCursor** script to open it in Visual Studio.</span></span>
-* <span data-ttu-id="4308b-205">Copiare e incollare il codice in **WorldCursor. cs** e **salvare tutti**.</span><span class="sxs-lookup"><span data-stu-id="4308b-205">Copy and paste this code into **WorldCursor.cs** and **Save All**.</span></span>
+* <span data-ttu-id="39a77-192">Tornare al progetto Unity e chiudere la finestra impostazioni di compilazione se è ancora aperta.</span><span class="sxs-lookup"><span data-stu-id="39a77-192">Go back to your Unity project, and close the Build Settings window if it's still open.</span></span>
+* <span data-ttu-id="39a77-193">Selezionare la cartella **ologrammi** nel **Pannello del progetto**.</span><span class="sxs-lookup"><span data-stu-id="39a77-193">Select the **Holograms** folder in the **Project panel**.</span></span>
+* <span data-ttu-id="39a77-194">Trascinare l'oggetto **cursore** nel **Pannello gerarchia** a livello di radice.</span><span class="sxs-lookup"><span data-stu-id="39a77-194">Drag the **Cursor** object into the **Hierarchy panel** at the root level.</span></span>
+* <span data-ttu-id="39a77-195">Fare doppio clic sull'oggetto **cursore** per esaminarlo più da vicino.</span><span class="sxs-lookup"><span data-stu-id="39a77-195">Double-click on the **Cursor** object to take a closer look at it.</span></span>
+* <span data-ttu-id="39a77-196">Fare clic con il pulsante destro del mouse sulla cartella **Scripts** nel pannello Project.</span><span class="sxs-lookup"><span data-stu-id="39a77-196">Right-click on the **Scripts** folder in the Project panel.</span></span>
+* <span data-ttu-id="39a77-197">Fare clic sul sottomenu **Crea** .</span><span class="sxs-lookup"><span data-stu-id="39a77-197">Click the **Create** sub-menu.</span></span>
+* <span data-ttu-id="39a77-198">Selezionare **lo script C#**.</span><span class="sxs-lookup"><span data-stu-id="39a77-198">Select **C# Script**.</span></span>
+* <span data-ttu-id="39a77-199">Denominare lo script **WorldCursor**.</span><span class="sxs-lookup"><span data-stu-id="39a77-199">Name the script **WorldCursor**.</span></span> <span data-ttu-id="39a77-200">Nota: il nome fa distinzione tra maiuscole e minuscole.</span><span class="sxs-lookup"><span data-stu-id="39a77-200">Note: The name is case-sensitive.</span></span> <span data-ttu-id="39a77-201">Non è necessario aggiungere l'estensione. cs.</span><span class="sxs-lookup"><span data-stu-id="39a77-201">You do not need to add the .cs extension.</span></span>
+* <span data-ttu-id="39a77-202">Selezionare l'oggetto **cursore** nel **Pannello gerarchia**.</span><span class="sxs-lookup"><span data-stu-id="39a77-202">Select the **Cursor** object in the **Hierarchy panel**.</span></span>
+* <span data-ttu-id="39a77-203">Trascinare e rilasciare lo script **WorldCursor** nel **pannello Inspector**.</span><span class="sxs-lookup"><span data-stu-id="39a77-203">Drag and drop the **WorldCursor** script into the **Inspector panel**.</span></span>
+* <span data-ttu-id="39a77-204">Fare doppio clic sullo script **WorldCursor** per aprirlo in Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="39a77-204">Double-click the **WorldCursor** script to open it in Visual Studio.</span></span>
+* <span data-ttu-id="39a77-205">Copiare e incollare il codice in **WorldCursor. cs** e **salvare tutti**.</span><span class="sxs-lookup"><span data-stu-id="39a77-205">Copy and paste this code into **WorldCursor.cs** and **Save All**.</span></span>
 
 ```cs
 using UnityEngine;
@@ -188,29 +188,29 @@ public class WorldCursor : MonoBehaviour
 }
 ```
 
-* <span data-ttu-id="4308b-206">Ricompilare l'app da **File > impostazioni di compilazione**.</span><span class="sxs-lookup"><span data-stu-id="4308b-206">Rebuild the app from **File > Build Settings**.</span></span>
-* <span data-ttu-id="4308b-207">Tornare alla soluzione di Visual Studio usata in precedenza per la distribuzione nell'emulatore.</span><span class="sxs-lookup"><span data-stu-id="4308b-207">Return to the Visual Studio solution previously used to deploy to the emulator.</span></span>
-* <span data-ttu-id="4308b-208">Quando richiesto, selezionare "ricarica tutto".</span><span class="sxs-lookup"><span data-stu-id="4308b-208">Select 'Reload All' when prompted.</span></span>
-* <span data-ttu-id="4308b-209">Fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5**.</span><span class="sxs-lookup"><span data-stu-id="4308b-209">Click **Debug -> Start Without debugging** or press **Ctrl + F5**.</span></span>
-* <span data-ttu-id="4308b-210">Usare il controller Xbox per esaminare la scena.</span><span class="sxs-lookup"><span data-stu-id="4308b-210">Use the Xbox controller to look around the scene.</span></span> <span data-ttu-id="4308b-211">Si noti come il cursore interagisce con la forma degli oggetti.</span><span class="sxs-lookup"><span data-stu-id="4308b-211">Notice how the cursor interacts with the shape of objects.</span></span>
+* <span data-ttu-id="39a77-206">Ricompilare l'app da **File > impostazioni di compilazione**.</span><span class="sxs-lookup"><span data-stu-id="39a77-206">Rebuild the app from **File > Build Settings**.</span></span>
+* <span data-ttu-id="39a77-207">Tornare alla soluzione di Visual Studio usata in precedenza per la distribuzione nell'emulatore.</span><span class="sxs-lookup"><span data-stu-id="39a77-207">Return to the Visual Studio solution previously used to deploy to the emulator.</span></span>
+* <span data-ttu-id="39a77-208">Quando richiesto, selezionare "ricarica tutto".</span><span class="sxs-lookup"><span data-stu-id="39a77-208">Select 'Reload All' when prompted.</span></span>
+* <span data-ttu-id="39a77-209">Fare clic su **debug-> avvia senza eseguire debug** o premere **CTRL + F5**.</span><span class="sxs-lookup"><span data-stu-id="39a77-209">Click **Debug -> Start Without debugging** or press **Ctrl + F5**.</span></span>
+* <span data-ttu-id="39a77-210">Usare il controller Xbox per esaminare la scena.</span><span class="sxs-lookup"><span data-stu-id="39a77-210">Use the Xbox controller to look around the scene.</span></span> <span data-ttu-id="39a77-211">Si noti come il cursore interagisce con la forma degli oggetti.</span><span class="sxs-lookup"><span data-stu-id="39a77-211">Notice how the cursor interacts with the shape of objects.</span></span>
 
-## <a name="chapter-3---gestures"></a><span data-ttu-id="4308b-212">Capitolo 3-movimenti</span><span class="sxs-lookup"><span data-stu-id="4308b-212">Chapter 3 - Gestures</span></span>
+## <a name="chapter-3---gestures"></a><span data-ttu-id="39a77-212">Capitolo 3-movimenti</span><span class="sxs-lookup"><span data-stu-id="39a77-212">Chapter 3 - Gestures</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/6d-0RHeKHq4]
 
-<span data-ttu-id="4308b-213">In questo capitolo verrà aggiunto il supporto per i [movimenti](../../../design/gaze-and-commit.md#composite-gestures).</span><span class="sxs-lookup"><span data-stu-id="4308b-213">In this chapter, we'll add support for [gestures](../../../design/gaze-and-commit.md#composite-gestures).</span></span> <span data-ttu-id="4308b-214">Quando l'utente seleziona una sfera della carta, la sfera viene ricadeta attivando la gravità usando il motore di fisica di Unity.</span><span class="sxs-lookup"><span data-stu-id="4308b-214">When the user selects a paper sphere, we'll make the sphere fall by turning on gravity using Unity's physics engine.</span></span>
+<span data-ttu-id="39a77-213">In questo capitolo verrà aggiunto il supporto per i [movimenti](../../../design/gaze-and-commit.md#composite-gestures).</span><span class="sxs-lookup"><span data-stu-id="39a77-213">In this chapter, we'll add support for [gestures](../../../design/gaze-and-commit.md#composite-gestures).</span></span> <span data-ttu-id="39a77-214">Quando l'utente seleziona una sfera della carta, la sfera viene ricadeta attivando la gravità usando il motore di fisica di Unity.</span><span class="sxs-lookup"><span data-stu-id="39a77-214">When the user selects a paper sphere, we'll make the sphere fall by turning on gravity using Unity's physics engine.</span></span>
 
-### <a name="objectives"></a><span data-ttu-id="4308b-215">Obiettivi</span><span class="sxs-lookup"><span data-stu-id="4308b-215">Objectives</span></span>
+### <a name="objectives"></a><span data-ttu-id="39a77-215">Obiettivi</span><span class="sxs-lookup"><span data-stu-id="39a77-215">Objectives</span></span>
 
-* <span data-ttu-id="4308b-216">Controllare gli ologrammi con il gesto di selezione.</span><span class="sxs-lookup"><span data-stu-id="4308b-216">Control your holograms with the Select gesture.</span></span>
+* <span data-ttu-id="39a77-216">Controllare gli ologrammi con il gesto di selezione.</span><span class="sxs-lookup"><span data-stu-id="39a77-216">Control your holograms with the Select gesture.</span></span>
 
-### <a name="instructions"></a><span data-ttu-id="4308b-217">Istruzioni</span><span class="sxs-lookup"><span data-stu-id="4308b-217">Instructions</span></span>
+### <a name="instructions"></a><span data-ttu-id="39a77-217">Istruzioni</span><span class="sxs-lookup"><span data-stu-id="39a77-217">Instructions</span></span>
 
-<span data-ttu-id="4308b-218">Si inizierà creando uno script che può rilevare il gesto di selezione.</span><span class="sxs-lookup"><span data-stu-id="4308b-218">We'll start by creating a script than can detect the Select gesture.</span></span>
+<span data-ttu-id="39a77-218">Si inizierà creando uno script che può rilevare il gesto di selezione.</span><span class="sxs-lookup"><span data-stu-id="39a77-218">We'll start by creating a script than can detect the Select gesture.</span></span>
 
-* <span data-ttu-id="4308b-219">Nella cartella **Scripts** creare uno script denominato **GazeGestureManager**.</span><span class="sxs-lookup"><span data-stu-id="4308b-219">In the **Scripts** folder, create a script named **GazeGestureManager**.</span></span>
-* <span data-ttu-id="4308b-220">Trascinare lo script **GazeGestureManager** sull'oggetto **origamicollection** nella gerarchia.</span><span class="sxs-lookup"><span data-stu-id="4308b-220">Drag the **GazeGestureManager** script onto the **OrigamiCollection** object in the Hierarchy.</span></span>
-* <span data-ttu-id="4308b-221">Aprire lo script **GazeGestureManager** in Visual Studio e aggiungere il codice seguente:</span><span class="sxs-lookup"><span data-stu-id="4308b-221">Open the **GazeGestureManager** script in Visual Studio and add the following code:</span></span>
+* <span data-ttu-id="39a77-219">Nella cartella **Scripts** creare uno script denominato **GazeGestureManager**.</span><span class="sxs-lookup"><span data-stu-id="39a77-219">In the **Scripts** folder, create a script named **GazeGestureManager**.</span></span>
+* <span data-ttu-id="39a77-220">Trascinare lo script **GazeGestureManager** sull'oggetto **origamicollection** nella gerarchia.</span><span class="sxs-lookup"><span data-stu-id="39a77-220">Drag the **GazeGestureManager** script onto the **OrigamiCollection** object in the Hierarchy.</span></span>
+* <span data-ttu-id="39a77-221">Aprire lo script **GazeGestureManager** in Visual Studio e aggiungere il codice seguente:</span><span class="sxs-lookup"><span data-stu-id="39a77-221">Open the **GazeGestureManager** script in Visual Studio and add the following code:</span></span>
 
 ```cs
 using UnityEngine;
@@ -277,11 +277,11 @@ public class GazeGestureManager : MonoBehaviour
 }
 ```
 
-* <span data-ttu-id="4308b-222">Creare un altro script nella cartella Scripts, questa volta denominata **SphereCommands**.</span><span class="sxs-lookup"><span data-stu-id="4308b-222">Create another script in the Scripts folder, this time named **SphereCommands**.</span></span>
-* <span data-ttu-id="4308b-223">Espandere l'oggetto **origamicollection** nella visualizzazione gerarchia.</span><span class="sxs-lookup"><span data-stu-id="4308b-223">Expand the **OrigamiCollection** object in the Hierarchy view.</span></span>
-* <span data-ttu-id="4308b-224">Trascinare lo script **SphereCommands** sull'oggetto **Sphere1** nel pannello gerarchia.</span><span class="sxs-lookup"><span data-stu-id="4308b-224">Drag the **SphereCommands** script onto the **Sphere1** object in the Hierarchy panel.</span></span>
-* <span data-ttu-id="4308b-225">Trascinare lo script **SphereCommands** sull'oggetto **Sphere2** nel pannello gerarchia.</span><span class="sxs-lookup"><span data-stu-id="4308b-225">Drag the **SphereCommands** script onto the **Sphere2** object in the Hierarchy panel.</span></span>
-* <span data-ttu-id="4308b-226">Aprire lo script in Visual Studio per la modifica e sostituire il codice predefinito con il codice seguente:</span><span class="sxs-lookup"><span data-stu-id="4308b-226">Open the script in Visual Studio for editing, and replace the default code with this:</span></span>
+* <span data-ttu-id="39a77-222">Creare un altro script nella cartella Scripts, questa volta denominata **SphereCommands**.</span><span class="sxs-lookup"><span data-stu-id="39a77-222">Create another script in the Scripts folder, this time named **SphereCommands**.</span></span>
+* <span data-ttu-id="39a77-223">Espandere l'oggetto **origamicollection** nella visualizzazione gerarchia.</span><span class="sxs-lookup"><span data-stu-id="39a77-223">Expand the **OrigamiCollection** object in the Hierarchy view.</span></span>
+* <span data-ttu-id="39a77-224">Trascinare lo script **SphereCommands** sull'oggetto **Sphere1** nel pannello gerarchia.</span><span class="sxs-lookup"><span data-stu-id="39a77-224">Drag the **SphereCommands** script onto the **Sphere1** object in the Hierarchy panel.</span></span>
+* <span data-ttu-id="39a77-225">Trascinare lo script **SphereCommands** sull'oggetto **Sphere2** nel pannello gerarchia.</span><span class="sxs-lookup"><span data-stu-id="39a77-225">Drag the **SphereCommands** script onto the **Sphere2** object in the Hierarchy panel.</span></span>
+* <span data-ttu-id="39a77-226">Aprire lo script in Visual Studio per la modifica e sostituire il codice predefinito con il codice seguente:</span><span class="sxs-lookup"><span data-stu-id="39a77-226">Open the script in Visual Studio for editing, and replace the default code with this:</span></span>
 
 ```cs
 using UnityEngine;
@@ -301,27 +301,27 @@ public class SphereCommands : MonoBehaviour
 }
 ```
 
-* <span data-ttu-id="4308b-227">Esportare, compilare e distribuire l'app nell'emulatore di HoloLens.</span><span class="sxs-lookup"><span data-stu-id="4308b-227">Export, build and deploy the app to the HoloLens emulator.</span></span>
-* <span data-ttu-id="4308b-228">Osservare la scena e centrare su una delle sfere.</span><span class="sxs-lookup"><span data-stu-id="4308b-228">Look around the scene, and center on one of the spheres.</span></span>
-* <span data-ttu-id="4308b-229">Premere il **pulsante a del controller** Xbox o premere la barra spaziatrice per simulare il movimento di selezione.</span><span class="sxs-lookup"><span data-stu-id="4308b-229">Press the **A** button on the Xbox controller or press the Spacebar to simulate the Select gesture.</span></span>
+* <span data-ttu-id="39a77-227">Esportare, compilare e distribuire l'app nell'emulatore di HoloLens.</span><span class="sxs-lookup"><span data-stu-id="39a77-227">Export, build and deploy the app to the HoloLens emulator.</span></span>
+* <span data-ttu-id="39a77-228">Osservare la scena e centrare su una delle sfere.</span><span class="sxs-lookup"><span data-stu-id="39a77-228">Look around the scene, and center on one of the spheres.</span></span>
+* <span data-ttu-id="39a77-229">Premere il **pulsante a del controller** Xbox o premere la barra spaziatrice per simulare il movimento di selezione.</span><span class="sxs-lookup"><span data-stu-id="39a77-229">Press the **A** button on the Xbox controller or press the Spacebar to simulate the Select gesture.</span></span>
 
-## <a name="chapter-4---voice"></a><span data-ttu-id="4308b-230">Capitolo 4-Voice</span><span class="sxs-lookup"><span data-stu-id="4308b-230">Chapter 4 - Voice</span></span>
+## <a name="chapter-4---voice"></a><span data-ttu-id="39a77-230">Capitolo 4-Voice</span><span class="sxs-lookup"><span data-stu-id="39a77-230">Chapter 4 - Voice</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/LxbOhnd2_GM]
 
-<span data-ttu-id="4308b-231">In questo capitolo, verrà aggiunto il supporto per due [comandi vocali](../../../design/voice-input.md): "Reimposta mondo" per restituire le sfere eliminate alla posizione originale e "drop Sphere" per far precipitare la sfera.</span><span class="sxs-lookup"><span data-stu-id="4308b-231">In this chapter, we'll add support for two [voice commands](../../../design/voice-input.md): "Reset world" to returns the dropped spheres to their original location, and "Drop sphere" to make the sphere fall.</span></span>
+<span data-ttu-id="39a77-231">In questo capitolo, verrà aggiunto il supporto per due [comandi vocali](../../../design/voice-input.md): "Reimposta mondo" per restituire le sfere eliminate alla posizione originale e "drop Sphere" per far precipitare la sfera.</span><span class="sxs-lookup"><span data-stu-id="39a77-231">In this chapter, we'll add support for two [voice commands](../../../design/voice-input.md): "Reset world" to returns the dropped spheres to their original location, and "Drop sphere" to make the sphere fall.</span></span>
 
-### <a name="objectives"></a><span data-ttu-id="4308b-232">Obiettivi</span><span class="sxs-lookup"><span data-stu-id="4308b-232">Objectives</span></span>
+### <a name="objectives"></a><span data-ttu-id="39a77-232">Obiettivi</span><span class="sxs-lookup"><span data-stu-id="39a77-232">Objectives</span></span>
 
-* <span data-ttu-id="4308b-233">Aggiungere i comandi vocali che sono sempre in ascolto in background.</span><span class="sxs-lookup"><span data-stu-id="4308b-233">Add voice commands that always listen in the background.</span></span>
-* <span data-ttu-id="4308b-234">Creare un ologramma che reagisca a un comando Voice.</span><span class="sxs-lookup"><span data-stu-id="4308b-234">Create a hologram that reacts to a voice command.</span></span>
+* <span data-ttu-id="39a77-233">Aggiungere i comandi vocali che sono sempre in ascolto in background.</span><span class="sxs-lookup"><span data-stu-id="39a77-233">Add voice commands that always listen in the background.</span></span>
+* <span data-ttu-id="39a77-234">Creare un ologramma che reagisca a un comando Voice.</span><span class="sxs-lookup"><span data-stu-id="39a77-234">Create a hologram that reacts to a voice command.</span></span>
 
-### <a name="instructions"></a><span data-ttu-id="4308b-235">Istruzioni</span><span class="sxs-lookup"><span data-stu-id="4308b-235">Instructions</span></span>
+### <a name="instructions"></a><span data-ttu-id="39a77-235">Istruzioni</span><span class="sxs-lookup"><span data-stu-id="39a77-235">Instructions</span></span>
 
-* <span data-ttu-id="4308b-236">Nella cartella **Scripts** creare uno script denominato **SpeechManager**.</span><span class="sxs-lookup"><span data-stu-id="4308b-236">In the **Scripts** folder, create a script named **SpeechManager**.</span></span>
-* <span data-ttu-id="4308b-237">Trascinare lo script **SpeechManager** sull'oggetto **Origamicollection** nella gerarchia</span><span class="sxs-lookup"><span data-stu-id="4308b-237">Drag the **SpeechManager** script onto the **OrigamiCollection** object in the Hierarchy</span></span>
-* <span data-ttu-id="4308b-238">Aprire lo script **SpeechManager** in Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="4308b-238">Open the **SpeechManager** script in Visual Studio.</span></span>
-* <span data-ttu-id="4308b-239">Copiare e incollare il codice in **SpeechManager. cs** e **salvare tutti**:</span><span class="sxs-lookup"><span data-stu-id="4308b-239">Copy and paste this code into **SpeechManager.cs** and **Save All**:</span></span>
+* <span data-ttu-id="39a77-236">Nella cartella **Scripts** creare uno script denominato **SpeechManager**.</span><span class="sxs-lookup"><span data-stu-id="39a77-236">In the **Scripts** folder, create a script named **SpeechManager**.</span></span>
+* <span data-ttu-id="39a77-237">Trascinare lo script **SpeechManager** sull'oggetto **Origamicollection** nella gerarchia</span><span class="sxs-lookup"><span data-stu-id="39a77-237">Drag the **SpeechManager** script onto the **OrigamiCollection** object in the Hierarchy</span></span>
+* <span data-ttu-id="39a77-238">Aprire lo script **SpeechManager** in Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="39a77-238">Open the **SpeechManager** script in Visual Studio.</span></span>
+* <span data-ttu-id="39a77-239">Copiare e incollare il codice in **SpeechManager. cs** e **salvare tutti**:</span><span class="sxs-lookup"><span data-stu-id="39a77-239">Copy and paste this code into **SpeechManager.cs** and **Save All**:</span></span>
 
 ```cs
 using System.Collections.Generic;
@@ -372,8 +372,8 @@ public class SpeechManager : MonoBehaviour
 }
 ```
 
-* <span data-ttu-id="4308b-240">Aprire lo script **SphereCommands** in Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="4308b-240">Open the **SphereCommands** script in Visual Studio.</span></span>
-* <span data-ttu-id="4308b-241">Aggiornare lo script in modo da leggere:</span><span class="sxs-lookup"><span data-stu-id="4308b-241">Update the script to read as follows:</span></span>
+* <span data-ttu-id="39a77-240">Aprire lo script **SphereCommands** in Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="39a77-240">Open the **SphereCommands** script in Visual Studio.</span></span>
+* <span data-ttu-id="39a77-241">Aggiornare lo script in modo da leggere:</span><span class="sxs-lookup"><span data-stu-id="39a77-241">Update the script to read as follows:</span></span>
 
 ```cs
 using UnityEngine;
@@ -424,36 +424,36 @@ public class SphereCommands : MonoBehaviour
 }
 ```
 
-* <span data-ttu-id="4308b-242">Esportare, compilare e distribuire l'app nell'emulatore di HoloLens.</span><span class="sxs-lookup"><span data-stu-id="4308b-242">Export, build and deploy the app to the HoloLens emulator.</span></span>
-* <span data-ttu-id="4308b-243">L'emulatore supporterà il microfono del PC e risponderà alla voce: modificare la visualizzazione in modo che il cursore si trovi in una delle sfere e pronunciare "drop Sphere".</span><span class="sxs-lookup"><span data-stu-id="4308b-243">The emulator will support your PC's microphone and respond to your voice: adjust the view so the cursor is on one of the spheres, and say "Drop Sphere".</span></span>
-* <span data-ttu-id="4308b-244">Pronunciare "**Reimposta tutto il mondo**" per riportare le posizioni iniziali.</span><span class="sxs-lookup"><span data-stu-id="4308b-244">Say "**Reset World**" to bring them back to their initial positions.</span></span>
+* <span data-ttu-id="39a77-242">Esportare, compilare e distribuire l'app nell'emulatore di HoloLens.</span><span class="sxs-lookup"><span data-stu-id="39a77-242">Export, build and deploy the app to the HoloLens emulator.</span></span>
+* <span data-ttu-id="39a77-243">L'emulatore supporterà il microfono del PC e risponderà alla voce: modificare la visualizzazione in modo che il cursore si trovi in una delle sfere e pronunciare "drop Sphere".</span><span class="sxs-lookup"><span data-stu-id="39a77-243">The emulator will support your PC's microphone and respond to your voice: adjust the view so the cursor is on one of the spheres, and say "Drop Sphere".</span></span>
+* <span data-ttu-id="39a77-244">Pronunciare "**Reimposta tutto il mondo**" per riportare le posizioni iniziali.</span><span class="sxs-lookup"><span data-stu-id="39a77-244">Say "**Reset World**" to bring them back to their initial positions.</span></span>
 
-## <a name="chapter-5---spatial-sound"></a><span data-ttu-id="4308b-245">Capitolo 5-audio spaziale</span><span class="sxs-lookup"><span data-stu-id="4308b-245">Chapter 5 - Spatial sound</span></span>
+## <a name="chapter-5---spatial-sound"></a><span data-ttu-id="39a77-245">Capitolo 5-audio spaziale</span><span class="sxs-lookup"><span data-stu-id="39a77-245">Chapter 5 - Spatial sound</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/Xc3C4VA10w4]
 
-<span data-ttu-id="4308b-246">In questo capitolo verrà aggiunta la musica all'app e quindi verranno generati effetti acustici su determinate azioni.</span><span class="sxs-lookup"><span data-stu-id="4308b-246">In this chapter, we'll add music to the app, and then trigger sound effects on certain actions.</span></span> <span data-ttu-id="4308b-247">Verrà usato il [suono spaziale](../../../design/spatial-sound.md) per dare un suono a una posizione specifica nello spazio 3D.</span><span class="sxs-lookup"><span data-stu-id="4308b-247">We'll be using [spatial sound](../../../design/spatial-sound.md) to give sounds a specific location in 3D space.</span></span>
+<span data-ttu-id="39a77-246">In questo capitolo verrà aggiunta la musica all'app e quindi verranno generati effetti acustici su determinate azioni.</span><span class="sxs-lookup"><span data-stu-id="39a77-246">In this chapter, we'll add music to the app, and then trigger sound effects on certain actions.</span></span> <span data-ttu-id="39a77-247">Verrà usato il [suono spaziale](../../../design/spatial-sound.md) per dare un suono a una posizione specifica nello spazio 3D.</span><span class="sxs-lookup"><span data-stu-id="39a77-247">We'll be using [spatial sound](../../../design/spatial-sound.md) to give sounds a specific location in 3D space.</span></span>
 
-### <a name="objectives"></a><span data-ttu-id="4308b-248">Obiettivi</span><span class="sxs-lookup"><span data-stu-id="4308b-248">Objectives</span></span>
+### <a name="objectives"></a><span data-ttu-id="39a77-248">Obiettivi</span><span class="sxs-lookup"><span data-stu-id="39a77-248">Objectives</span></span>
 
-* <span data-ttu-id="4308b-249">Ascolta gli ologrammi nel tuo mondo.</span><span class="sxs-lookup"><span data-stu-id="4308b-249">Hear holograms in your world.</span></span>
+* <span data-ttu-id="39a77-249">Ascolta gli ologrammi nel tuo mondo.</span><span class="sxs-lookup"><span data-stu-id="39a77-249">Hear holograms in your world.</span></span>
 
-### <a name="instructions"></a><span data-ttu-id="4308b-250">Istruzioni</span><span class="sxs-lookup"><span data-stu-id="4308b-250">Instructions</span></span>
+### <a name="instructions"></a><span data-ttu-id="39a77-250">Istruzioni</span><span class="sxs-lookup"><span data-stu-id="39a77-250">Instructions</span></span>
 
-* <span data-ttu-id="4308b-251">In Unity selezionare dal menu in alto **modificare > impostazioni progetto > audio**</span><span class="sxs-lookup"><span data-stu-id="4308b-251">In the Unity select from the top menu **Edit > Project Settings > Audio**</span></span>
-* <span data-ttu-id="4308b-252">Trovare l'impostazione del plug-in **Spatializer** e selezionare **MS HRTF Spatializer**.</span><span class="sxs-lookup"><span data-stu-id="4308b-252">Find the **Spatializer Plugin** setting and select **MS HRTF Spatializer**.</span></span>
-* <span data-ttu-id="4308b-253">Dalla cartella **ologrammi** trascinare l'oggetto **ambiente** nell'oggetto **origamicollection** nel pannello gerarchia.</span><span class="sxs-lookup"><span data-stu-id="4308b-253">From the **Holograms** folder, drag the **Ambience** object onto the **OrigamiCollection** object in the Hierarchy Panel.</span></span>
-* <span data-ttu-id="4308b-254">Selezionare **origamicollection** e trovare il componente di **origine audio** .</span><span class="sxs-lookup"><span data-stu-id="4308b-254">Select **OrigamiCollection** and find the **Audio Source** component.</span></span> <span data-ttu-id="4308b-255">Modificare le proprietà seguenti:</span><span class="sxs-lookup"><span data-stu-id="4308b-255">Change these properties:</span></span>
-  * <span data-ttu-id="4308b-256">Controllare la proprietà **Spatialize** .</span><span class="sxs-lookup"><span data-stu-id="4308b-256">Check the **Spatialize** property.</span></span>
-  * <span data-ttu-id="4308b-257">Verificare la **riproduzione**.</span><span class="sxs-lookup"><span data-stu-id="4308b-257">Check the **Play On Awake**.</span></span>
-  * <span data-ttu-id="4308b-258">Modificare **Blend spaziali** in **3D** trascinando il dispositivo di scorrimento a destra.</span><span class="sxs-lookup"><span data-stu-id="4308b-258">Change **Spatial Blend** to **3D** by dragging the slider all the way to the right.</span></span>
-  * <span data-ttu-id="4308b-259">Controllare la proprietà del **ciclo** .</span><span class="sxs-lookup"><span data-stu-id="4308b-259">Check the **Loop** property.</span></span>
-  * <span data-ttu-id="4308b-260">Espandere **impostazioni audio 3D** e immettere **0,1** per **livello Doppler**.</span><span class="sxs-lookup"><span data-stu-id="4308b-260">Expand **3D Sound Settings**, and enter **0.1** for **Doppler Level**.</span></span>
-  * <span data-ttu-id="4308b-261">Impostare **volume attenuazione** su **attenuazione logaritmico**.</span><span class="sxs-lookup"><span data-stu-id="4308b-261">Set **Volume Rolloff** to **Logarithmic Rolloff**.</span></span>
-  * <span data-ttu-id="4308b-262">Impostare la **distanza massima** su **20**.</span><span class="sxs-lookup"><span data-stu-id="4308b-262">Set **Max Distance** to **20**.</span></span>
-* <span data-ttu-id="4308b-263">Nella cartella **Scripts** creare uno script denominato **SphereSounds**.</span><span class="sxs-lookup"><span data-stu-id="4308b-263">In the **Scripts** folder, create a script named **SphereSounds**.</span></span>
-* <span data-ttu-id="4308b-264">Trascinare **SphereSounds** negli oggetti **Sphere1** e **Sphere2** della gerarchia.</span><span class="sxs-lookup"><span data-stu-id="4308b-264">Drag **SphereSounds** to the **Sphere1** and **Sphere2** objects in the Hierarchy.</span></span>
-* <span data-ttu-id="4308b-265">Aprire **SphereSounds** in Visual Studio, aggiornare il codice seguente e **salvare tutto**.</span><span class="sxs-lookup"><span data-stu-id="4308b-265">Open **SphereSounds** in Visual Studio, update the following code and **Save All**.</span></span>
+* <span data-ttu-id="39a77-251">In Unity selezionare dal menu in alto **modificare > impostazioni progetto > audio**</span><span class="sxs-lookup"><span data-stu-id="39a77-251">In the Unity select from the top menu **Edit > Project Settings > Audio**</span></span>
+* <span data-ttu-id="39a77-252">Trovare l'impostazione del plug-in **Spatializer** e selezionare **MS HRTF Spatializer**.</span><span class="sxs-lookup"><span data-stu-id="39a77-252">Find the **Spatializer Plugin** setting and select **MS HRTF Spatializer**.</span></span>
+* <span data-ttu-id="39a77-253">Dalla cartella **ologrammi** trascinare l'oggetto **ambiente** nell'oggetto **origamicollection** nel pannello gerarchia.</span><span class="sxs-lookup"><span data-stu-id="39a77-253">From the **Holograms** folder, drag the **Ambience** object onto the **OrigamiCollection** object in the Hierarchy Panel.</span></span>
+* <span data-ttu-id="39a77-254">Selezionare **origamicollection** e trovare il componente di **origine audio** .</span><span class="sxs-lookup"><span data-stu-id="39a77-254">Select **OrigamiCollection** and find the **Audio Source** component.</span></span> <span data-ttu-id="39a77-255">Modificare le proprietà seguenti:</span><span class="sxs-lookup"><span data-stu-id="39a77-255">Change these properties:</span></span>
+  * <span data-ttu-id="39a77-256">Controllare la proprietà **Spatialize** .</span><span class="sxs-lookup"><span data-stu-id="39a77-256">Check the **Spatialize** property.</span></span>
+  * <span data-ttu-id="39a77-257">Verificare la **riproduzione**.</span><span class="sxs-lookup"><span data-stu-id="39a77-257">Check the **Play On Awake**.</span></span>
+  * <span data-ttu-id="39a77-258">Modificare **Blend spaziali** in **3D** trascinando il dispositivo di scorrimento a destra.</span><span class="sxs-lookup"><span data-stu-id="39a77-258">Change **Spatial Blend** to **3D** by dragging the slider all the way to the right.</span></span>
+  * <span data-ttu-id="39a77-259">Controllare la proprietà del **ciclo** .</span><span class="sxs-lookup"><span data-stu-id="39a77-259">Check the **Loop** property.</span></span>
+  * <span data-ttu-id="39a77-260">Espandere **impostazioni audio 3D** e immettere **0,1** per **livello Doppler**.</span><span class="sxs-lookup"><span data-stu-id="39a77-260">Expand **3D Sound Settings**, and enter **0.1** for **Doppler Level**.</span></span>
+  * <span data-ttu-id="39a77-261">Impostare **volume attenuazione** su **attenuazione logaritmico**.</span><span class="sxs-lookup"><span data-stu-id="39a77-261">Set **Volume Rolloff** to **Logarithmic Rolloff**.</span></span>
+  * <span data-ttu-id="39a77-262">Impostare la **distanza massima** su **20**.</span><span class="sxs-lookup"><span data-stu-id="39a77-262">Set **Max Distance** to **20**.</span></span>
+* <span data-ttu-id="39a77-263">Nella cartella **Scripts** creare uno script denominato **SphereSounds**.</span><span class="sxs-lookup"><span data-stu-id="39a77-263">In the **Scripts** folder, create a script named **SphereSounds**.</span></span>
+* <span data-ttu-id="39a77-264">Trascinare **SphereSounds** negli oggetti **Sphere1** e **Sphere2** della gerarchia.</span><span class="sxs-lookup"><span data-stu-id="39a77-264">Drag **SphereSounds** to the **Sphere1** and **Sphere2** objects in the Hierarchy.</span></span>
+* <span data-ttu-id="39a77-265">Aprire **SphereSounds** in Visual Studio, aggiornare il codice seguente e **salvare tutto**.</span><span class="sxs-lookup"><span data-stu-id="39a77-265">Open **SphereSounds** in Visual Studio, update the following code and **Save All**.</span></span>
 
 ```cs
 using UnityEngine;
@@ -533,39 +533,39 @@ public class SphereSounds : MonoBehaviour
 }
 ```
 
-* <span data-ttu-id="4308b-266">Salvare lo script e tornare a Unity.</span><span class="sxs-lookup"><span data-stu-id="4308b-266">Save the script, and return to Unity.</span></span>
-* <span data-ttu-id="4308b-267">Esportare, compilare e distribuire l'app nell'emulatore di HoloLens.</span><span class="sxs-lookup"><span data-stu-id="4308b-267">Export, build and deploy the app to the HoloLens emulator.</span></span>
-* <span data-ttu-id="4308b-268">Indossa le cuffie per ottenere l'effetto completo e passa da una fase all'altra in modo da essere in grado di sentire la variazione dei suoni.</span><span class="sxs-lookup"><span data-stu-id="4308b-268">Wear headphones to get the full effect, and move closer and further from the Stage to hear the sounds change.</span></span>
+* <span data-ttu-id="39a77-266">Salvare lo script e tornare a Unity.</span><span class="sxs-lookup"><span data-stu-id="39a77-266">Save the script, and return to Unity.</span></span>
+* <span data-ttu-id="39a77-267">Esportare, compilare e distribuire l'app nell'emulatore di HoloLens.</span><span class="sxs-lookup"><span data-stu-id="39a77-267">Export, build and deploy the app to the HoloLens emulator.</span></span>
+* <span data-ttu-id="39a77-268">Indossa le cuffie per ottenere l'effetto completo e passa da una fase all'altra in modo da essere in grado di sentire la variazione dei suoni.</span><span class="sxs-lookup"><span data-stu-id="39a77-268">Wear headphones to get the full effect, and move closer and further from the Stage to hear the sounds change.</span></span>
 
-## <a name="chapter-6---spatial-mapping"></a><span data-ttu-id="4308b-269">Capitolo 6-mapping spaziale</span><span class="sxs-lookup"><span data-stu-id="4308b-269">Chapter 6 - Spatial mapping</span></span>
+## <a name="chapter-6---spatial-mapping"></a><span data-ttu-id="39a77-269">Capitolo 6-mapping spaziale</span><span class="sxs-lookup"><span data-stu-id="39a77-269">Chapter 6 - Spatial mapping</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/S-517Y63Cnk]
 
-<span data-ttu-id="4308b-270">Ora verrà usato il [mapping spaziale](../../../design/spatial-mapping.md) per collocare la lavagna del gioco su un oggetto reale nel mondo reale.</span><span class="sxs-lookup"><span data-stu-id="4308b-270">Now we are going to use [spatial mapping](../../../design/spatial-mapping.md) to place the game board on a real object in the real world.</span></span>
+<span data-ttu-id="39a77-270">Ora verrà usato il [mapping spaziale](../../../design/spatial-mapping.md) per collocare la lavagna del gioco su un oggetto reale nel mondo reale.</span><span class="sxs-lookup"><span data-stu-id="39a77-270">Now we are going to use [spatial mapping](../../../design/spatial-mapping.md) to place the game board on a real object in the real world.</span></span>
 
-### <a name="objectives"></a><span data-ttu-id="4308b-271">Obiettivi</span><span class="sxs-lookup"><span data-stu-id="4308b-271">Objectives</span></span>
+### <a name="objectives"></a><span data-ttu-id="39a77-271">Obiettivi</span><span class="sxs-lookup"><span data-stu-id="39a77-271">Objectives</span></span>
 
-* <span data-ttu-id="4308b-272">Usa il mondo reale nel mondo virtuale.</span><span class="sxs-lookup"><span data-stu-id="4308b-272">Bring your real world into the virtual world.</span></span>
-* <span data-ttu-id="4308b-273">Posizionare gli ologrammi in cui è importante.</span><span class="sxs-lookup"><span data-stu-id="4308b-273">Place your holograms where they matter most to you.</span></span>
+* <span data-ttu-id="39a77-272">Usa il mondo reale nel mondo virtuale.</span><span class="sxs-lookup"><span data-stu-id="39a77-272">Bring your real world into the virtual world.</span></span>
+* <span data-ttu-id="39a77-273">Posizionare gli ologrammi in cui è importante.</span><span class="sxs-lookup"><span data-stu-id="39a77-273">Place your holograms where they matter most to you.</span></span>
 
-### <a name="instructions"></a><span data-ttu-id="4308b-274">Istruzioni</span><span class="sxs-lookup"><span data-stu-id="4308b-274">Instructions</span></span>
+### <a name="instructions"></a><span data-ttu-id="39a77-274">Istruzioni</span><span class="sxs-lookup"><span data-stu-id="39a77-274">Instructions</span></span>
 
-* <span data-ttu-id="4308b-275">Fare clic sulla cartella **olografici** nel pannello del progetto.</span><span class="sxs-lookup"><span data-stu-id="4308b-275">Click on the **Holograms** folder in the Project panel.</span></span>
-* <span data-ttu-id="4308b-276">Trascinare l'asset di **mapping spaziale** nella radice della **gerarchia**.</span><span class="sxs-lookup"><span data-stu-id="4308b-276">Drag the **Spatial Mapping** asset into the root of the **Hierarchy**.</span></span>
-* <span data-ttu-id="4308b-277">Fare clic sull'oggetto **mapping spaziale** nella gerarchia.</span><span class="sxs-lookup"><span data-stu-id="4308b-277">Click on the **Spatial Mapping** object in the Hierarchy.</span></span>
-* <span data-ttu-id="4308b-278">Nel **pannello Inspector** modificare le proprietà seguenti:</span><span class="sxs-lookup"><span data-stu-id="4308b-278">In the **Inspector panel**, change the following properties:</span></span>
-  * <span data-ttu-id="4308b-279">Selezionare la casella per la **visualizzazione dei mesh** .</span><span class="sxs-lookup"><span data-stu-id="4308b-279">Check the **Draw Visual Meshes** box.</span></span>
-  * <span data-ttu-id="4308b-280">Individuare il **materiale di estrazione** e fare clic sul cerchio a destra.</span><span class="sxs-lookup"><span data-stu-id="4308b-280">Locate **Draw Material** and click the circle on the right.</span></span> <span data-ttu-id="4308b-281">Digitare "**wireframe**" nel campo di ricerca nella parte superiore.</span><span class="sxs-lookup"><span data-stu-id="4308b-281">Type "**wireframe**" into the search field at the top.</span></span> <span data-ttu-id="4308b-282">Fare clic sul risultato, quindi chiudere la finestra.</span><span class="sxs-lookup"><span data-stu-id="4308b-282">Click on the result and then close the window.</span></span>
-* <span data-ttu-id="4308b-283">Esportare, compilare e distribuire l'app nell'emulatore di HoloLens.</span><span class="sxs-lookup"><span data-stu-id="4308b-283">Export, build and deploy the app to the HoloLens emulator.</span></span>
-* <span data-ttu-id="4308b-284">Quando viene eseguita l'app, viene eseguito il rendering in wireframe di una rete di una stanza reale di una stanza reale sottoposta a scansione.</span><span class="sxs-lookup"><span data-stu-id="4308b-284">When the app runs, a mesh of a previously scanned real-world living room will be rendered in wireframe.</span></span>
-* <span data-ttu-id="4308b-285">Guarda in che modo una sfera in sequenza ricade sulla fase e sul pavimento!</span><span class="sxs-lookup"><span data-stu-id="4308b-285">Watch how a rolling sphere will fall off the stage, and onto the floor!</span></span>
+* <span data-ttu-id="39a77-275">Fare clic sulla cartella **olografici** nel pannello del progetto.</span><span class="sxs-lookup"><span data-stu-id="39a77-275">Click on the **Holograms** folder in the Project panel.</span></span>
+* <span data-ttu-id="39a77-276">Trascinare l'asset di **mapping spaziale** nella radice della **gerarchia**.</span><span class="sxs-lookup"><span data-stu-id="39a77-276">Drag the **Spatial Mapping** asset into the root of the **Hierarchy**.</span></span>
+* <span data-ttu-id="39a77-277">Fare clic sull'oggetto **mapping spaziale** nella gerarchia.</span><span class="sxs-lookup"><span data-stu-id="39a77-277">Click on the **Spatial Mapping** object in the Hierarchy.</span></span>
+* <span data-ttu-id="39a77-278">Nel **pannello Inspector** modificare le proprietà seguenti:</span><span class="sxs-lookup"><span data-stu-id="39a77-278">In the **Inspector panel**, change the following properties:</span></span>
+  * <span data-ttu-id="39a77-279">Selezionare la casella per la **visualizzazione dei mesh** .</span><span class="sxs-lookup"><span data-stu-id="39a77-279">Check the **Draw Visual Meshes** box.</span></span>
+  * <span data-ttu-id="39a77-280">Individuare il **materiale di estrazione** e fare clic sul cerchio a destra.</span><span class="sxs-lookup"><span data-stu-id="39a77-280">Locate **Draw Material** and click the circle on the right.</span></span> <span data-ttu-id="39a77-281">Digitare "**wireframe**" nel campo di ricerca nella parte superiore.</span><span class="sxs-lookup"><span data-stu-id="39a77-281">Type "**wireframe**" into the search field at the top.</span></span> <span data-ttu-id="39a77-282">Fare clic sul risultato, quindi chiudere la finestra.</span><span class="sxs-lookup"><span data-stu-id="39a77-282">Click on the result and then close the window.</span></span>
+* <span data-ttu-id="39a77-283">Esportare, compilare e distribuire l'app nell'emulatore di HoloLens.</span><span class="sxs-lookup"><span data-stu-id="39a77-283">Export, build and deploy the app to the HoloLens emulator.</span></span>
+* <span data-ttu-id="39a77-284">Quando viene eseguita l'app, viene eseguito il rendering in wireframe di una rete di una stanza reale di una stanza reale sottoposta a scansione.</span><span class="sxs-lookup"><span data-stu-id="39a77-284">When the app runs, a mesh of a previously scanned real-world living room will be rendered in wireframe.</span></span>
+* <span data-ttu-id="39a77-285">Guarda in che modo una sfera in sequenza ricade sulla fase e sul pavimento!</span><span class="sxs-lookup"><span data-stu-id="39a77-285">Watch how a rolling sphere will fall off the stage, and onto the floor!</span></span>
 
-<span data-ttu-id="4308b-286">Ora verrà illustrato come spostare l'oggetto Origamicollection in una nuova posizione:</span><span class="sxs-lookup"><span data-stu-id="4308b-286">Now we'll show you how to move the OrigamiCollection to a new location:</span></span>
+<span data-ttu-id="39a77-286">Ora verrà illustrato come spostare l'oggetto Origamicollection in una nuova posizione:</span><span class="sxs-lookup"><span data-stu-id="39a77-286">Now we'll show you how to move the OrigamiCollection to a new location:</span></span>
 
-* <span data-ttu-id="4308b-287">Nella cartella **Scripts** creare uno script denominato **TapToPlaceParent**.</span><span class="sxs-lookup"><span data-stu-id="4308b-287">In the **Scripts** folder, create a script named **TapToPlaceParent**.</span></span>
-* <span data-ttu-id="4308b-288">Nella **gerarchia** espandere **origamicollection** e selezionare l'oggetto **stage** .</span><span class="sxs-lookup"><span data-stu-id="4308b-288">In the **Hierarchy**, expand the **OrigamiCollection** and select the **Stage** object.</span></span>
-* <span data-ttu-id="4308b-289">Trascinare lo script **TapToPlaceParent** nell'oggetto Stage.</span><span class="sxs-lookup"><span data-stu-id="4308b-289">Drag the **TapToPlaceParent** script onto the Stage object.</span></span>
-* <span data-ttu-id="4308b-290">Aprire lo script **TapToPlaceParent** in Visual Studio e aggiornarlo come segue:</span><span class="sxs-lookup"><span data-stu-id="4308b-290">Open the **TapToPlaceParent** script in Visual Studio, and update it to be the following:</span></span>
+* <span data-ttu-id="39a77-287">Nella cartella **Scripts** creare uno script denominato **TapToPlaceParent**.</span><span class="sxs-lookup"><span data-stu-id="39a77-287">In the **Scripts** folder, create a script named **TapToPlaceParent**.</span></span>
+* <span data-ttu-id="39a77-288">Nella **gerarchia** espandere **origamicollection** e selezionare l'oggetto **stage** .</span><span class="sxs-lookup"><span data-stu-id="39a77-288">In the **Hierarchy**, expand the **OrigamiCollection** and select the **Stage** object.</span></span>
+* <span data-ttu-id="39a77-289">Trascinare lo script **TapToPlaceParent** nell'oggetto Stage.</span><span class="sxs-lookup"><span data-stu-id="39a77-289">Drag the **TapToPlaceParent** script onto the Stage object.</span></span>
+* <span data-ttu-id="39a77-290">Aprire lo script **TapToPlaceParent** in Visual Studio e aggiornarlo come segue:</span><span class="sxs-lookup"><span data-stu-id="39a77-290">Open the **TapToPlaceParent** script in Visual Studio, and update it to be the following:</span></span>
 
 ```cs
 using UnityEngine;
@@ -623,26 +623,26 @@ public class TapToPlaceParent : MonoBehaviour
 }
 ```
 
-* <span data-ttu-id="4308b-291">Esportare, compilare e distribuire l'app.</span><span class="sxs-lookup"><span data-stu-id="4308b-291">Export, build and deploy the app.</span></span>
-* <span data-ttu-id="4308b-292">A questo punto dovrebbe essere possibile collocare il gioco in una posizione specifica guardandolo, usando il gesto selezionato (**a** o barra spaziatrice), quindi passando a una nuova posizione e usando di nuovo il movimento di selezione.</span><span class="sxs-lookup"><span data-stu-id="4308b-292">Now you should now be able to place the game in a specific location by gazing at it, using the Select gesture (**A** or Spacebar) and then moving to a new location, and using the Select gesture again.</span></span>
+* <span data-ttu-id="39a77-291">Esportare, compilare e distribuire l'app.</span><span class="sxs-lookup"><span data-stu-id="39a77-291">Export, build and deploy the app.</span></span>
+* <span data-ttu-id="39a77-292">A questo punto dovrebbe essere possibile collocare il gioco in una posizione specifica guardandolo, usando il gesto selezionato (**a** o barra spaziatrice), quindi passando a una nuova posizione e usando di nuovo il movimento di selezione.</span><span class="sxs-lookup"><span data-stu-id="39a77-292">Now you should now be able to place the game in a specific location by gazing at it, using the Select gesture (**A** or Spacebar) and then moving to a new location, and using the Select gesture again.</span></span>
 
-## <a name="the-end"></a><span data-ttu-id="4308b-293">La fine</span><span class="sxs-lookup"><span data-stu-id="4308b-293">The end</span></span>
+## <a name="the-end"></a><span data-ttu-id="39a77-293">La fine</span><span class="sxs-lookup"><span data-stu-id="39a77-293">The end</span></span>
 
-<span data-ttu-id="4308b-294">Questa è la fine di questa esercitazione.</span><span class="sxs-lookup"><span data-stu-id="4308b-294">And that's the end of this tutorial!</span></span>
+<span data-ttu-id="39a77-294">Questa è la fine di questa esercitazione.</span><span class="sxs-lookup"><span data-stu-id="39a77-294">And that's the end of this tutorial!</span></span>
 
-<span data-ttu-id="4308b-295">Sono stati appresi i concetti seguenti:</span><span class="sxs-lookup"><span data-stu-id="4308b-295">You learned:</span></span>
+<span data-ttu-id="39a77-295">Sono stati appresi i concetti seguenti:</span><span class="sxs-lookup"><span data-stu-id="39a77-295">You learned:</span></span>
 
-* <span data-ttu-id="4308b-296">Come creare un'app olografica in Unity.</span><span class="sxs-lookup"><span data-stu-id="4308b-296">How to create a holographic app in Unity.</span></span>
-* <span data-ttu-id="4308b-297">Come usare lo sguardo, il movimento, la voce, i suoni e il mapping spaziale.</span><span class="sxs-lookup"><span data-stu-id="4308b-297">How to make use of gaze, gesture, voice, sounds, and spatial mapping.</span></span>
-* <span data-ttu-id="4308b-298">Come compilare e distribuire un'app con Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="4308b-298">How to build and deploy an app using Visual Studio.</span></span>
+* <span data-ttu-id="39a77-296">Come creare un'app olografica in Unity.</span><span class="sxs-lookup"><span data-stu-id="39a77-296">How to create a holographic app in Unity.</span></span>
+* <span data-ttu-id="39a77-297">Come usare lo sguardo, il movimento, la voce, i suoni e il mapping spaziale.</span><span class="sxs-lookup"><span data-stu-id="39a77-297">How to make use of gaze, gesture, voice, sounds, and spatial mapping.</span></span>
+* <span data-ttu-id="39a77-298">Come compilare e distribuire un'app con Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="39a77-298">How to build and deploy an app using Visual Studio.</span></span>
 
-<span data-ttu-id="4308b-299">A questo punto è possibile iniziare a creare le proprie app olografiche.</span><span class="sxs-lookup"><span data-stu-id="4308b-299">You are now ready to start creating your own holographic apps!</span></span>
+<span data-ttu-id="39a77-299">A questo punto è possibile iniziare a creare le proprie app olografiche.</span><span class="sxs-lookup"><span data-stu-id="39a77-299">You are now ready to start creating your own holographic apps!</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="4308b-300">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="4308b-300">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="39a77-300">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="39a77-300">See also</span></span>
 
-* [<span data-ttu-id="4308b-301">Nozioni di base MR 101: Progetto completo con dispositivo</span><span class="sxs-lookup"><span data-stu-id="4308b-301">MR Basics 101: Complete project with device</span></span>](holograms-101.md)
-* [<span data-ttu-id="4308b-302">Sguardo fisso</span><span class="sxs-lookup"><span data-stu-id="4308b-302">Gaze</span></span>](../../../design/gaze-and-commit.md)
-* [<span data-ttu-id="4308b-303">Puntamento con la testa e commit</span><span class="sxs-lookup"><span data-stu-id="4308b-303">Head-gaze and commit</span></span>](../../../design/gaze-and-commit.md)
-* [<span data-ttu-id="4308b-304">Input vocale</span><span class="sxs-lookup"><span data-stu-id="4308b-304">Voice input</span></span>](../../../design/voice-input.md)
-* [<span data-ttu-id="4308b-305">Audio spaziale</span><span class="sxs-lookup"><span data-stu-id="4308b-305">Spatial sound</span></span>](../../../design/spatial-sound.md)
-* [<span data-ttu-id="4308b-306">Mapping spaziale</span><span class="sxs-lookup"><span data-stu-id="4308b-306">Spatial mapping</span></span>](../../../design/spatial-mapping.md)
+* [<span data-ttu-id="39a77-301">Nozioni di base MR 101: Progetto completo con dispositivo</span><span class="sxs-lookup"><span data-stu-id="39a77-301">MR Basics 101: Complete project with device</span></span>](holograms-101.md)
+* [<span data-ttu-id="39a77-302">Sguardo fisso</span><span class="sxs-lookup"><span data-stu-id="39a77-302">Gaze</span></span>](../../../design/gaze-and-commit.md)
+* [<span data-ttu-id="39a77-303">Puntamento con la testa e commit</span><span class="sxs-lookup"><span data-stu-id="39a77-303">Head-gaze and commit</span></span>](../../../design/gaze-and-commit.md)
+* [<span data-ttu-id="39a77-304">Input vocale</span><span class="sxs-lookup"><span data-stu-id="39a77-304">Voice input</span></span>](../../../design/voice-input.md)
+* [<span data-ttu-id="39a77-305">Audio spaziale</span><span class="sxs-lookup"><span data-stu-id="39a77-305">Spatial sound</span></span>](../../../design/spatial-sound.md)
+* [<span data-ttu-id="39a77-306">Mapping spaziale</span><span class="sxs-lookup"><span data-stu-id="39a77-306">Spatial mapping</span></span>](../../../design/spatial-mapping.md)
