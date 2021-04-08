@@ -5,12 +5,12 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, MRTK pulsanti
-ms.openlocfilehash: b0e8e9f8f3a04d467c389bb99f29ddc7dfde930c
-ms.sourcegitcommit: e5bd72d8b92976a6590e0f59706a88e66374934c
+ms.openlocfilehash: 43570c225f25b9ea73c9d1fc4cc9b6c92b8c2dfc
+ms.sourcegitcommit: 848b4b7bb8514c2e088a3a55512b1a8075d29093
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106098293"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "107003112"
 ---
 # <a name="button"></a>Pulsante
 
@@ -31,19 +31,138 @@ Esempi di prefabbricati dei pulsanti nella ``MRTK/SDK/Features/UX/Interactable/P
 
 ### <a name="collider-based-buttons"></a>Pulsanti basati su Collider
 
-|  ![PressableButtonHoloLens2](../images/button/MRTK_Button_Prefabs_HoloLens2.png) PressableButtonHoloLens2 | ![PressableButtonHoloLens2Unplated](../images/button/MRTK_Button_Prefabs_HoloLens2Unplated.png) PressableButtonHoloLens2Unplated | ![PressableButtonHoloLens2Circular](../images/button/MRTK_Button_Prefabs_HoloLens2Circular.png) PressableButtonHoloLens2Circular |
-|:--- | :--- | :--- |
-| Pulsante di tipo Shell di HoloLens 2 con backplate che supporta vari commenti visivi, ad esempio la luce del bordo, la luce di prossimità e il pannello anteriore compresso | Pulsante di tipo Shell di HoloLens 2 senza backplat  | Pulsante di tipo Shell di HoloLens 2 con forma circolare  |
-|  ![PressableButtonHoloLens2_32x96 ](../images/button/MRTK_Button_Prefabs_HoloLens2_32x96.png) **PressableButtonHoloLens2_32x96** | ![](../images/button/MRTK_Button_Prefabs_HoloLens2BarH.png) **PressableButtonHoloLens2Bar3H** PressableButtonHoloLens2Bar3H | ![](../images/button/MRTK_Button_Prefabs_HoloLens2BarV.png) **PressableButtonHoloLens2Bar3V** PressableButtonHoloLens2Bar3V |
-| Pulsante di tipo Shell HoloLens 2 Wide 32x96mm | Barra del pulsante orizzontale HoloLens 2 con backplate condiviso | Barra dei pulsanti verticale HoloLens 2 con backplate condiviso |
-|  ![PressableButtonHoloLens2ToggleCheckBox_32x32 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Checkbox.png) **PressableButtonHoloLens2ToggleCheckBox_32x32** | ![PressableButtonHoloLens2ToggleSwitch_32x32 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Switch.png) **PressableButtonHoloLens2ToggleSwitch_32x32** | ![PressableButtonHoloLens2ToggleRadio_32x32 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Radio.png) **PressableButtonHoloLens2ToggleRadio_32x32** |
-| Casella di controllo di tipo Shell di HoloLens 2 32x32mm | 32x32mm switch di tipo Shell di HoloLens 2 | 32x32mm radio in stile shell di HoloLens 2 |
-|  ![PressableButtonHoloLens2ToggleCheckBox_32x96 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Checkbox_32x96.png) **PressableButtonHoloLens2ToggleCheckBox_32x96** | ![PressableButtonHoloLens2ToggleSwitch_32x96 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Switch_32x96.png) **PressableButtonHoloLens2ToggleSwitch_32x96** | ![PressableButtonHoloLens2ToggleRadio_32x96 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Radio_32x96.png) **PressableButtonHoloLens2ToggleRadio_32x96** |
-| Casella di controllo di tipo Shell di HoloLens 2 32x96mm | 32x96mm switch di tipo Shell di HoloLens 2 | 32x96mm radio in stile shell di HoloLens 2 |
-|  ![](../images/button/MRTK_Button_Radial.png) **Radiale** radiale | ![Casella di controllo](../images/button/MRTK_Button_Checkbox.png) **Casella di controllo** | ![](../images/button/MRTK_Button_ToggleSwitch.png) **ToggleSwitch** ToggleSwitch |
-| Pulsante radiale | Casella di controllo  | Interruttore Attiva/Disattiva |
-|  ![](../images/button/MRTK_Button_HoloLens1.png) **ButtonHoloLens1** ButtonHoloLens1 | ![](../images/button/MRTK_Button_Round.png) **PressableRoundButton** PressableRoundButton | ![](../images/button/MRTK_Button_Base.png)  Pulsante base pulsante |
-| Pulsante dello stile della shell di HoloLens 1st Gen | Pulsante di push forma arrotondata | Pulsante di base |
+:::row:::
+    :::column:::
+    ![PressableButtonHoloLens2](../images/button/MRTK_Button_Prefabs_HoloLens2.png) PressableButtonHoloLens2 
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2Unplated](../images/button/MRTK_Button_Prefabs_HoloLens2Unplated.png) PressableButtonHoloLens2Unplated 
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2Circular](../images/button/MRTK_Button_Prefabs_HoloLens2Circular.png) PressableButtonHoloLens2Circular 
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column::: 
+    Pulsante di tipo Shell di HoloLens 2 con backplate che supporta vari commenti visivi, ad esempio la luce del bordo, la luce di prossimità e il pannello anteriore compresso
+    :::column-end:::
+    :::column:::
+    Pulsante di tipo Shell di HoloLens 2 senza backplat
+    :::column-end:::
+    :::column:::
+    Pulsante di tipo Shell di HoloLens 2 con forma circolare
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column::: 
+    ![PressableButtonHoloLens2_32x96 ](../images/button/MRTK_Button_Prefabs_HoloLens2_32x96.png) **PressableButtonHoloLens2_32x96**
+    :::column-end:::
+    :::column:::
+    ![](../images/button/MRTK_Button_Prefabs_HoloLens2BarH.png) **PressableButtonHoloLens2Bar3H** PressableButtonHoloLens2Bar3H
+    :::column-end:::
+    :::column:::
+    ![](../images/button/MRTK_Button_Prefabs_HoloLens2BarV.png) **PressableButtonHoloLens2Bar3V** PressableButtonHoloLens2Bar3V
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column::: 
+    Pulsante di tipo Shell HoloLens 2 Wide 32x96mm
+    :::column-end:::
+    :::column:::
+    Barra del pulsante orizzontale HoloLens 2 con backplate condiviso
+    :::column-end:::
+    :::column:::
+    Barra dei pulsanti verticale HoloLens 2 con backplate condiviso
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::     
+    ![PressableButtonHoloLens2ToggleCheckBox_32x32 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Checkbox.png) **PressableButtonHoloLens2ToggleCheckBox_32x32** 
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2ToggleSwitch_32x32 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Switch.png) **PressableButtonHoloLens2ToggleSwitch_32x32**
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2ToggleRadio_32x32 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Radio.png) **PressableButtonHoloLens2ToggleRadio_32x32**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::     
+    Casella di controllo di tipo Shell di HoloLens 2 32x32mm
+    :::column-end:::
+    :::column:::
+    32x32mm switch di tipo Shell di HoloLens 2 
+    :::column-end:::
+    :::column:::
+    32x32mm radio in stile shell di HoloLens 2
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::     
+    ![PressableButtonHoloLens2ToggleCheckBox_32x96 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Checkbox_32x96.png) **PressableButtonHoloLens2ToggleCheckBox_32x96**
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2ToggleSwitch_32x96 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Switch_32x96.png) **PressableButtonHoloLens2ToggleSwitch_32x96** 
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2ToggleRadio_32x96 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Radio_32x96.png) **PressableButtonHoloLens2ToggleRadio_32x96** 
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::  
+    Casella di controllo di tipo Shell di HoloLens 2 32x96mm
+    :::column-end:::
+    :::column:::
+    32x96mm switch di tipo Shell di HoloLens 2
+    :::column-end:::
+    :::column:::
+    32x96mm radio in stile shell di HoloLens 2
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::  
+    ![](../images/button/MRTK_Button_Radial.png) **Radiale** radiale
+    :::column-end:::
+    :::column:::
+    ![Casella di controllo](../images/button/MRTK_Button_Checkbox.png) **Casella di controllo**
+    :::column-end:::
+    :::column:::
+    ![](../images/button/MRTK_Button_ToggleSwitch.png) **ToggleSwitch** ToggleSwitch
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::  
+    Pulsante radiale 
+    :::column-end:::
+    :::column:::
+    Casella di controllo 
+    :::column-end:::
+    :::column:::
+    Interruttore Attiva/Disattiva
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::  
+    ![](../images/button/MRTK_Button_HoloLens1.png) **ButtonHoloLens1** ButtonHoloLens1
+    :::column-end:::
+    :::column:::
+    ![](../images/button/MRTK_Button_Round.png) **PressableRoundButton** PressableRoundButton 
+    :::column-end:::
+    :::column:::
+    ![](../images/button/MRTK_Button_Base.png)  Pulsante base pulsante
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::  
+    Pulsante dello stile della shell di HoloLens 1st Gen
+    :::column-end:::
+    :::column:::
+    Pulsante di push forma arrotondata
+    :::column-end:::
+    :::column:::
+    Pulsante di base
+    :::column-end:::
+:::row-end:::
 
 Il `Button` (assets/MRTK/SDK/features/UX/Interactive/precases/Button. prefabbricate) si basa sul concetto di [interazione](interactable.md) per fornire semplici controlli dell'interfaccia utente per i pulsanti o altri tipi di superfici interattive. Il pulsante Baseline supporta tutti i metodi di input disponibili, tra cui l'input manuale articolato per le interazioni near, nonché lo sguardo e il tocco aereo per le interazioni. Per attivare il pulsante, è anche possibile usare il comando Voice.
 
@@ -284,11 +403,11 @@ Nella [scena HandInteractionExample](../example-scenes/hand-interaction-examples
 
 <img src="../images/button/MRTK_Button_Custom1.png" width="450" alt="Pressable Custom1">
 
-<img src = ".. /images/Button/MRTK_Button_Custom2.png "width =" 450 "Alt =" pulsante stampabile Custom2>
+<img src="../images/button/MRTK_Button_Custom2.png" width="450" alt="Pressable Custom2">
 
 A ogni chiave del piano sono `PressableButton` assegnati un e uno `NearInteractionTouchable` script. È importante verificare che la direzione *in avanti locale* di `NearInteractionTouchable` sia corretta. È rappresentato da una freccia bianca nell'editor. Assicurarsi che la freccia si trovi fuori dalla faccia anteriore del pulsante:
 
-<img src = ".. /images/Button/MRTK_Button_Custom3.png "width =" 450 "Alt =" pulsante stampabile Custom3>
+<img src="../images/button/MRTK_Button_Custom3.png" width="450" alt="Pressable Custom3">
 
 ## <a name="see-also"></a>Vedi anche
 
