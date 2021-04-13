@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realtà mista, individuare, distribuire, indice, pagina di destinazione, progettazione, sviluppo, esercitazioni, app di esempio, nozioni di base, case study, risorse, guide pratiche per HoloLens, progetti open source, concetti di base, interazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: f4a4ea50c45263f18079da76dd8dfd5f31e2af44
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 36af6b1c439c47eef2126408d1185ecfe151cf8b
+ms.sourcegitcommit: e9a0ba97fd288479ad324cdaabee9b6abc9f4dc2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98110449"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107221563"
 ---
 # <a name="start-designing-and-prototyping"></a>Iniziare a progettare e a creare prototipi
 
@@ -40,6 +40,7 @@ Come tutti i percorsi, anche quello che riguarda la progettazione di applicazion
 | [Tipi di app di realtà mista](types-of-mixed-reality-apps.md) | Decidere in quale punto dello spettro della realtà mista si colloca l'esperienza dell'app |
 | [App Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Apprendere le nozioni di base relative alla progettazione dell'esperienza utente in realtà mista sperimentando comportamenti, suggerimenti e raccomandazioni per la creazione di straordinarie app HoloLens (disponibile per il download da Microsoft Store in HoloLens 2) |
 | [MRTK Examples Hub](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | Sperimentare comuni interazioni spaziali e blocchi predefiniti per Realtà mista (disponibile per il download da Microsoft Store in HoloLens 2) |
+| Download **facoltativo** [di Figma Toolkit](figma-toolkit.md) | Figma Toolkit fornisce le risorse da usare per lo sketch e il layout dell'interfaccia utente in base ai componenti disponibili in MRTK |
 
 ### <a name="2-core-concepts"></a>2. Concetti di base
 
