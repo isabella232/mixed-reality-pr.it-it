@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, auricolare realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, dispositivo di scorrimento, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 29a10389e476fcb40edd97619796a56cbb579c89
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: e3a50ea617beac6b341ebdf27cad333168222c07
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759827"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299706"
 ---
 # <a name="slider"></a>Slider
 
@@ -25,13 +25,13 @@ Un dispositivo di scorrimento è un componente dell'interfaccia utente usato per
 
 ## <a name="slider-in-mrtk-mixed-reality-toolkit-for-unity"></a>Dispositivo di scorrimento in MRTK (Mixed Reality Toolkit) per Unity
 
-* [MRTK-Slider](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/sliders.md)
+* [MRTK-Slider](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/sliders)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

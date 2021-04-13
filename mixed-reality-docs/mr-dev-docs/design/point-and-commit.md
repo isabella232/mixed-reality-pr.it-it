@@ -7,12 +7,12 @@ ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realtà mista, interazione, progettazione, HoloLens, mani, da lontano, puntamento e commit, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens, raggi della mano, manipolazione degli oggetti, MRTK, Mixed Reality Toolkit, DoF
-ms.openlocfilehash: 8196b67f103bae346ba4da065ee6045ff231b004
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 78a3ff87a48bbff838df4ee8baab7f8ea80203c0
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101759867"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299806"
 ---
 # <a name="point-and-commit-with-hands"></a>Puntamento e commit con le mani
 
@@ -202,15 +202,16 @@ Il concetto di puntamento e commit per l'interazione da lontano è stato creato 
 
 ## <a name="hand-ray-in-mrtk-mixed-reality-toolkit-for-unity"></a>Raggio della mano in MRTK (Mixed Reality Toolkit) per Unity
 
-Per impostazione predefinita, MRTK fornisce un file prefab relativo al raggio della mano ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) con lo stesso stato di visualizzazione del raggio della mano di sistema della shell. Tale file viene assegnato in Pointers (Puntatori) nel profilo di input di MRTK. In un visore VR immersive gli stessi raggi vengono usati per i controller del movimento.
+Per impostazione predefinita, MRTK fornisce un file prefab relativo al raggio della mano ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) con lo stesso stato di visualizzazione del raggio della mano di sistema della shell. Tale file viene assegnato in Pointers (Puntatori) nel profilo di input di MRTK. In un visore VR immersive gli stessi raggi vengono usati per i controller del movimento.
 
-* [MRTK - Profilo del puntatore](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mixed-reality-configuration-guide.md#pointer-configuration)
-* [MRTK - Sistema di input](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md)
-* [MRTK - Puntatori](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/pointers.md)
+* [MRTK - Profilo del puntatore](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
+* [MRTK - Sistema di input](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview)
+* [MRTK - Puntatori](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/pointers)
 
 ---
 
 ## <a name="see-also"></a>Vedi anche
+
 * [Manipolazione diretta con le mani](direct-manipulation.md)
 * [Sguardo e commit](gaze-and-commit.md)
 * [Mani - Manipolazione diretta](direct-manipulation.md)

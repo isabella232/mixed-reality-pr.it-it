@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: GGV, voce, Cortana, sintesi vocale, input, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, sguardo
-ms.openlocfilehash: cc1ecd7d236748c3c4de77678e6f67c69a2c1af1
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 3f178442d892e284ed3e3454d2d54ed68c732313
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759142"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300296"
 ---
 # <a name="voice-input"></a>Input vocale
 
@@ -23,9 +23,9 @@ L'input vocale è alimentato dallo [stesso motore](/windows/uwp/design/input/spe
 
 <br>
 
-## <a name="voice-and-gaze"></a>Voice and sguardi
+## <a name="voice-and-gaze&quot;></a>Voice and sguardi
 
-Quando si usano i comandi vocali, è il tipico meccanismo di destinazione, con un cursore a "Select" o per il canale del comando a un'applicazione che si sta esaminando. Potrebbe non essere necessario visualizzare alcun cursore _("vedere il cursore")_. Alcuni comandi vocali non richiedono una destinazione, ad esempio "go to Start" o "Hey Cortana".
+Quando si usano i comandi vocali, è il tipico meccanismo di destinazione, con un cursore a &quot;Select&quot; o per il canale del comando a un'applicazione che si sta esaminando. Potrebbe non essere necessario visualizzare alcun cursore _(&quot;vedere il cursore")_. Alcuni comandi vocali non richiedono una destinazione, ad esempio "go to Start" o "Hey Cortana".
 
 <br>
 
@@ -290,11 +290,11 @@ Per la versione 2017 di Windows Mixed Reality Developer Edition, la logica di ge
 ## <a name="voice-input-in-mrtk-mixed-reality-toolkit-for-unity"></a>Input vocale in MRTK (Mixed Reality Toolkit) per Unity
 Con **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, è possibile assegnare facilmente il comando Voice a tutti gli oggetti. Usare **il profilo di input vocale** di MRTK per definire le parole chiave. Assegnando lo script **SpeechInputHandler** , è possibile fare in modo che qualsiasi oggetto risponda alle parole chiave definite nel profilo di input vocale. SpeechInputHandler fornisce anche un'etichetta di conferma vocale per migliorare la confidenza dell'utente.
 
-* [Comando MRTK-Voice](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/speech.md)
+* [Comando MRTK-Voice](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/speech)
 
 ---
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Sguardo e commit](gaze-and-commit.md)
 * [Interazioni istintive](interaction-fundamentals.md)

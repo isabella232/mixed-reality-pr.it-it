@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, auricolare realtà mista, auricolare di realtà misto di Windows, auricolare di realtà virtuale, HoloLens, tastiera, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 9f42940b689a8fef77c9cf2f269100fccccfe6e0
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: d20fabb2536b028ce4c48aac84592bbdc3a0c291
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759857"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300436"
 ---
 # <a name="keyboard"></a>Tastiera
 
@@ -25,7 +25,7 @@ L'applicazione di realtà mista può richiamare la tastiera di sistema in qualsi
 
 ## <a name="system-keyboard-in-mrtk-mixed-reality-toolkit-for-unity"></a>Tastiera di sistema in MRTK (Mixed Reality Toolkit) per Unity
 
-* [MRTK-tastiera di sistema](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/system-keyboard.md)
+* [MRTK-tastiera di sistema](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/system-keyboard)
 
 <br>
 
@@ -33,12 +33,12 @@ L'applicazione di realtà mista può richiamare la tastiera di sistema in qualsi
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di sviluppo di Unity, l'attività successiva consiste nel distribuire l'applicazione in un dispositivo o in un emulatore. 
+Se si sta seguendo il percorso di sviluppo di Unity, l'attività successiva consiste nel distribuire l'applicazione in un dispositivo o in un emulatore.
 
 > [!div class="nextstepaction"]
 > [Eseguire la distribuzione in HoloLens o in modalità mista di Windows per la realtà mista](../develop/platform-capabilities-and-apis/using-visual-studio.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

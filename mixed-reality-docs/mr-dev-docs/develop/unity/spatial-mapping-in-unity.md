@@ -6,18 +6,19 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, mapping spaziale, renderer, Collider, mesh, analisi, componente, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare realtà virtuale, MRTK, Toolkit realtà mista
-ms.openlocfilehash: e2ef6ac43e81ff2b8e66a4bd197ea41c198a1626
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: f7fe6e86f9672f36a34f9d7c32d25fccd7760f5e
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105549951"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300166"
 ---
 # <a name="spatial-mapping-in-unity"></a>Mapping spaziale in Unity
 
 il [mapping spaziale](../../design/spatial-mapping.md) consente di recuperare mesh triangolari che rappresentano le superfici del mondo intorno a un dispositivo HoloLens. È possibile usare i dati di superficie per l'analisi di posizionamento, occlusione e chat room per offrire ai progetti Unity una dose aggiuntiva di immersione.
 
 Unity include il supporto completo per il mapping spaziale, esposto agli sviluppatori nei modi seguenti:
+
 1. Componenti di mapping spaziale disponibili in MixedRealityToolkit, che offrono un percorso pratico e rapido per iniziare a usare il mapping spaziale
 2. API di mapping spaziale di basso livello, che offrono il controllo completo e consentono una personalizzazione più sofisticata specifica dell'applicazione
 
@@ -51,6 +52,7 @@ Per usare il mapping spaziale nell'app, è necessario impostare la funzionalità
 Per consentire a un'app di utilizzare i dati di mapping spaziale, è necessario abilitare la funzionalità SpatialPerception.
 
 Come abilitare la funzionalità SpatialPerception:
+
 1. Nell'editor di Unity aprire il riquadro **"Impostazioni lettore"** (modificare > impostazioni progetto > lettore)
 2. Selezionare nella scheda **"Windows Store"**
 3. Espandere **"impostazioni di pubblicazione"** e selezionare la funzionalità **"SpatialPerception"** nell'elenco **"funzionalità"**
@@ -59,6 +61,7 @@ Come abilitare la funzionalità SpatialPerception:
 > Se il progetto Unity è già stato esportato in una soluzione di Visual Studio, sarà necessario eseguire l'esportazione in una nuova cartella o [impostare manualmente questa funzionalità in appxmanifest in Visual Studio](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
 
 Il mapping spaziale richiede anche un MaxVersionTested di almeno 10.0.10586.0:
+
 1. In Visual Studio fare clic con il pulsante destro del mouse su **Package. appxmanifest** nel Esplora soluzioni e selezionare **Visualizza codice** .
 2. Trovare la riga che specifica **TargetDeviceFamily** e modificare **MaxVersionTested = "10.0.10240.0"** in **MaxVersionTested = "10.0.10586.0"**
 3. **Salvare** il pacchetto. appxmanifest.
@@ -84,6 +87,7 @@ Il mapping spaziale Collider consente l'interazione di contenuto (o carattere) o
 È possibile aggiungere entrambi i componenti all'app se si vuole visualizzare e interagire con le superfici fisiche.
 
 Per usare questi due componenti nell'app Unity:
+
 1. Selezionare un GameObject al centro dell'area in cui si desidera rilevare le mesh della superficie spaziale.
 2. Nella finestra di controllo **aggiungere Component**  >  **XR**  >  **Spatial mapping Spatial** o renderer di **mapping spaziale**.
 
@@ -92,6 +96,7 @@ Per altre informazioni su come usare questi componenti, vedere il sito della <a 
 ### <a name="going-beyond-the-built-in-spatial-mapping-components"></a>Superamento dei componenti predefiniti di mapping spaziale
 
 Questi componenti rendono semplice il trascinamento della selezione per iniziare a usare il mapping spaziale.  Quando si vuole proseguire, è possibile esplorare due percorsi principali:
+
 * Per eseguire l'elaborazione della mesh di livello inferiore, vedere la sezione seguente sull'API script per il mapping spaziale di basso livello.
 * Per eseguire un'analisi della rete di livello superiore, vedere la sezione seguente sulla libreria SpatialUnderstanding in <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">MixedRealityToolkit</a>.
 
@@ -137,6 +142,7 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
 ### <a name="handling-surface-changes"></a>Gestione delle modifiche di superficie
 
 Esistono diversi casi principali per la gestione dell'aggiunta e dell'aggiornamento, che possono utilizzare lo stesso percorso di codice e rimossi.
+
 * Nei casi aggiunti e aggiornati, si aggiunge o si ottiene il GameObject che rappresenta la mesh dal dizionario, si crea uno struct SurfaceData con i componenti necessari, quindi si chiama RequestMeshDataAsync per popolare il GameObject con i dati della mesh e la posizione nella scena.
 * Nel caso rimosso, viene rimosso il GameObject che rappresenta il mesh dal dizionario ed eliminarlo.
 
@@ -268,7 +274,7 @@ Nell'esempio Unity il cursore esegue il cast di un raggio per ogni fotogramma. I
 
 ### <a name="topology-queries"></a>Query sulla topologia
 
-All'interno della DLL, Gestione topologia gestisce l'assegnazione di etichette all'ambiente. Come indicato in precedenza, gran parte dei dati viene archiviata in surfels, contenuta in un volume voxel. Inoltre, la struttura "PlaySpaceInfos" viene usata per archiviare le informazioni relative a playspace, incluso l'allineamento internazionale (altre informazioni su questo argomento), il piano e l'altezza del soffitto. Vengono usate le regole euristiche per determinare il piano, il soffitto e i muri. Ad esempio, la superficie orizzontale più grande e più bassa con una superficie di attacco maggiore di 1-m2 viene considerata il piano. 
+All'interno della DLL, Gestione topologia gestisce l'assegnazione di etichette all'ambiente. Come indicato in precedenza, gran parte dei dati viene archiviata in surfels, contenuta in un volume voxel. Inoltre, la struttura "PlaySpaceInfos" viene usata per archiviare le informazioni relative a playspace, incluso l'allineamento internazionale (altre informazioni su questo argomento), il piano e l'altezza del soffitto. Vengono usate le regole euristiche per determinare il piano, il soffitto e i muri. Ad esempio, la superficie orizzontale più grande e più bassa con una superficie di attacco maggiore di 1-m2 viene considerata il piano.
 
 > [!NOTE]
 > Il percorso della fotocamera durante il processo di analisi viene usato anche in questo processo.
@@ -470,21 +476,23 @@ Il flusso di analisi, determinato dal comportamento "SpatialUnderstanding", chia
 
 ### <a name="understanding-mesh"></a>Informazioni su mesh
 
-La dll di informazioni archivia internamente il playspace come griglia di voxel cubi di dimensioni 8 cm. Durante la fase iniziale di analisi, viene completata un'analisi del componente principale per determinare gli assi della stanza. Internamente, archivia lo spazio voxel allineato a questi assi. Una mesh viene generata approssimativamente ogni secondo estraendo oggetto isosurface dal volume voxel. 
+La dll di informazioni archivia internamente il playspace come griglia di voxel cubi di dimensioni 8 cm. Durante la fase iniziale di analisi, viene completata un'analisi del componente principale per determinare gli assi della stanza. Internamente, archivia lo spazio voxel allineato a questi assi. Una mesh viene generata approssimativamente ogni secondo estraendo oggetto isosurface dal volume voxel.
 
 ![Mesh generata prodotta dal volume voxel](images/su-custommesh.jpg)<br>
 *Mesh generata prodotta dal volume voxel*
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
+
 * Assicurarsi di aver impostato la funzionalità [SpatialPerception](#setting-the-spatialperception-capability)
 * Quando il rilevamento viene perso, l'evento OnSurfaceChanged successivo rimuoverà tutte le mesh.
 
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Mapping spaziale nel Toolkit per realtà mista
-Per altre informazioni sull'uso del mapping spaziale con Mixed Reality toolkit V2, vedere la <a href="/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">sezione relativa alla conoscenza spaziale</a> della documentazione di MRTK.
+
+Per altre informazioni sull'uso del mapping spaziale con Mixed Reality toolkit V2, vedere la <a href="/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started" target="_blank">sezione relativa alla conoscenza spaziale</a> della documentazione di MRTK.
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo: 
+Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)
@@ -497,6 +505,7 @@ In alternativa, passare alle API e funzionalità della piattaforma di realtà mi
 È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](unity-development-overview.md#2-core-building-blocks) in qualsiasi momento.
 
 ## <a name="see-also"></a>Vedere anche
+
 * [Sistemi di coordinate](../../design/coordinate-systems.md)
 * [Sistemi di coordinate in Unity](coordinate-systems-in-unity.md)
 * <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>

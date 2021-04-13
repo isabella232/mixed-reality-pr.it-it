@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, shader, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, effetti visivi
-ms.openlocfilehash: 046969d1d16c2bddcf5b0a392d721c291b945a94
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 4bf8205ac9dfbd22a0deb9ffe796fd4e33a96f89
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759122"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300386"
 ---
 # <a name="shader"></a>Shader
 
@@ -38,13 +38,13 @@ Poiché gli oggetti olografici sono combinati con quelli fisici nell'ambiente re
 
 ## <a name="standard-shader-in-mrtk-for-unity"></a>Shader standard in MRTK per Unity
 
-* [MRTK-standard shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
+* [MRTK-standard shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, impostazioni, realtà mista, HoloLens, cuffie per realtà mista, cuffie per la realtà mista di Windows, auricolare di realtà virtuale, prestazioni, impostazioni di qualità, impostazioni di illuminazione, buffer di profondità, XR, perdita di rilevamento
-ms.openlocfilehash: cc1d2692a172c84274299580a0ce580264f65fcf
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: b8da51bdc57d8586706d11e86ca3b7543023c119
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759697"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300126"
 ---
 # <a name="recommended-settings-for-unity"></a>Impostazioni consigliate per Unity
 
@@ -68,7 +68,7 @@ Si consiglia inoltre di selezionare la **profondità a 16 bit** nell'impostazion
 
 Per ottimizzare la stabilità dell'ologramma, la piattaforma per la realtà mista di Windows si basa sul buffer di profondità, che corrisponde a tutti gli ologrammi sottoposti a rendering sullo schermo. Pertanto, con la condivisione del buffer di profondità in, è importante quando si esegue il rendering del colore, per eseguire anche il rendering della profondità. In Unity, la maggior parte dei materiali opachi o TransparentCutout eseguirà il rendering per impostazione predefinita, ma gli oggetti trasparenti e di testo non eseguiranno il rendering della profondità sebbene questo sia dipendente dallo shader e così via.
 
-Se si usa il [Toolkit di realtà misto standard shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md), per eseguire il rendering della profondità per gli oggetti trasparenti:
+Se si usa il [Toolkit di realtà misto standard shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader), per eseguire il rendering della profondità per gli oggetti trasparenti:
 
 1) Selezionare il materiale trasparente che usa lo shader standard MRTK e aprire la finestra Editor di controllo
 2) Selezionare il pulsante **Correggi ora** nell'avviso di condivisione del buffer di profondità. Questa operazione può essere eseguita anche manualmente impostando la **modalità di rendering** su **personalizzata**; Impostare quindi **mode** su **Transparent** e infine impostare **Depth Write** **su on**
@@ -114,9 +114,9 @@ Per abilitare o disabilitare la schermata iniziale olografica:
 
 |  Mostra schermata iniziale Unity  |  Immagine Splash olografica  |  Comportamento |
 |----------|----------|----------|
-|  On  |  nessuno  |  Mostra la schermata iniziale di Unity predefinita per 5 secondi o fino a quando non viene caricata l'app, a seconda del valore più lungo |
+|  On  |  Nessuno  |  Mostra la schermata iniziale di Unity predefinita per 5 secondi o fino a quando non viene caricata l'app, a seconda del valore più lungo |
 |  On  |  Personalizzato  |  Mostra la schermata iniziale personalizzata per 5 secondi o fino al caricamento dell'app, a seconda di quale sia il più lungo. |
-|  Off  |  nessuno  |  Mostra il nero trasparente (Nothing) finché l'app non viene caricata. |
+|  Off  |  Nessuno  |  Mostra il nero trasparente (Nothing) finché l'app non viene caricata. |
 |  Off  |  Personalizzato  |  Mostra la schermata iniziale personalizzata per 5 secondi o fino al caricamento dell'app, a seconda di quale sia il più lungo. |
 
 Per altre informazioni, vedere [la documentazione della schermata iniziale di Unity](https://docs.unity3d.com/Manual/class-PlayerSettingsSplashScreen.html) .
@@ -167,7 +167,7 @@ Le funzionalità applicabili per l'abilitazione delle API di uso comune per le a
 |  Microfono  |  VideoCapture (durante l'acquisizione dell'audio), DictationRecognizer, GrammarRecognizer e KeywordRecognizer |
 |  InternetClient  |  DictationRecognizer (e per usare Unity Profiler) |
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Panoramica dello sviluppo per Unity](unity-development-overview.md)
 * [Informazioni sulle prestazioni per la realtà mista](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)

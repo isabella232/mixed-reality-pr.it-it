@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, auricolare realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, descrizione comando, MRTK, Toolkit realtà mista
-ms.openlocfilehash: ac8d12dbf681fb02df6fe70f3fd7b67615f4a5d6
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 1ab3c00557329fbe53161cbb58c06ee7ede0b66b
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759777"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300316"
 ---
 # <a name="tooltip"></a>Descrizione comando
 
@@ -25,13 +25,13 @@ Una descrizione comando è una breve descrizione collegata a un altro controllo 
 
 ## <a name="tooltip-in-mrtk-mixed-reality-toolkit-for-unity"></a>Descrizione comando in MRTK (Mixed Reality Toolkit) per Unity
 
-* [MRTK-descrizione comando](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/tooltip.md)
+* [MRTK-descrizione comando](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/tooltip)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

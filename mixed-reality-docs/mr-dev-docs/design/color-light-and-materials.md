@@ -6,12 +6,12 @@ ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, colore, luce, materiali, cuffie per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 6e5857436b0325537d0ea5d0321d296c58c09eae
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: b3ee769208bdcd0d86beb05760de377f2a776a47
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759266"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299746"
 ---
 # <a name="color-light-and-materials"></a>Colore, luce e materiali
 
@@ -88,7 +88,7 @@ Luce e colore possono aiutare gli ologrammi a comparire più naturalmente nell'a
     :::column:::
 I materiali sono elementi fondamentali per la creazione di ologrammi realistici. Fornendo caratteristiche visive appropriate, è possibile creare oggetti olografici accattivanti che possono essere perfettamente combinati con l'ambiente fisico. I materiali sono anche importanti per fornire feedback visivo per i vari tipi di interazioni di input utente.  
 
-[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) fornisce uno shader standard MRTK con varie opzioni di effetto visivo che possono essere usate per il feedback visivo. Ad esempio, è possibile usare la proprietà "prossimità Light" per fornire un effetto di illuminazione quando il dito dell'utente si avvicina alla superficie dell'oggetto. Altre informazioni su [MRTK standard shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
+[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) fornisce uno shader standard MRTK con varie opzioni di effetto visivo che possono essere usate per il feedback visivo. Ad esempio, è possibile usare la proprietà "prossimità Light" per fornire un effetto di illuminazione quando il dito dell'utente si avvicina alla superficie dell'oggetto. Altre informazioni su [MRTK standard shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
     :::column-end:::
         :::column:::
     *Ciclo video: esempio di feedback visivo basato sulla prossimità a un rettangolo di delimitazione* 
@@ -100,7 +100,7 @@ I materiali sono elementi fondamentali per la creazione di ologrammi realistici.
 
 ---
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Progettazione di contenuto per la visualizzazione olografica](designing-content-for-holographic-display.md)
 * [Separazione dei colori](../develop/platform-capabilities-and-apis/hologram-stability.md#color-separation)
 * [Ologrammi](../discover/hologram.md)

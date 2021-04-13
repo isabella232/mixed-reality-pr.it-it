@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: movimenti, Unity, sguardo, input, auricolare realtà mista, auricolare di realtà mista di Windows, cuffia virtuale reale, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: 4c3db98e3047cdc74663c5cbee1c4607b77008e0
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 523f05f9b3dd05a140bb40168b654a2dc0b00bb5
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759082"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299716"
 ---
 # <a name="gestures-in-unity"></a>Movimenti in Unity
 
@@ -134,9 +134,9 @@ La generazione continuerà a migliorare con gli aggiornamenti futuri di Windows 
 ## <a name="gesture-and-motion-controllers-in-mrtk"></a>Controller movimento e movimento in MRTK
 
 È possibile accedere a gesture e Motion controller dal gestore di input.
-* [Movimento in MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/gestures.md)
-* [Controller di movimento in MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/controllers.md)
 
+* [Movimento in MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/gestures)
+* [Controller di movimento in MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/controllers)
 
 ## <a name="follow-along-with-tutorials"></a>Seguire le esercitazioni
 

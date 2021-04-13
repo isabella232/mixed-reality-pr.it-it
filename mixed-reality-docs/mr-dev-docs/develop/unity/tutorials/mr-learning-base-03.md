@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, consapevolezza spaziale
 ms.localizationpriority: high
-ms.openlocfilehash: 3b44ba6c4eac3cf7b42d15c8fb19d42676b10a4a
-ms.sourcegitcommit: 5017f309827c1d20df4ce656d105a1a49ba7942c
+ms.openlocfilehash: f6c17dc361846808ec10f1d94932e3089072e642
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106011140"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300456"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. Configurazione dei profili di Mixed Reality Toolkit
 
@@ -20,11 +20,11 @@ ms.locfileid: "106011140"
 
 In questa esercitazione si apprenderà come personalizzare e configurare i profili di MRTK.
 
-I <a href="/windows/mixed-reality/mrtk-unity/features/profiles/profiles.md" target="_blank">profili di MRTK</a> sono profili annidati in una struttura ad albero che costituiscono le informazioni di configurazione per la modalità di inizializzazione dei sistemi e delle funzionalità di MRTK. Il profilo di primo livello, quello di configurazione, contiene profili annidati per ognuno dei sistemi core principali. Ogni profilo annidato è progettato per la configurazione del comportamento del sistema corrispondente.
+I <a href="/windows/mixed-reality/mrtk-unity/features/profiles/profiles" target="_blank">profili di MRTK</a> sono profili annidati in una struttura ad albero che costituiscono le informazioni di configurazione per la modalità di inizializzazione dei sistemi e delle funzionalità di MRTK. Il profilo di primo livello, quello di configurazione, contiene profili annidati per ognuno dei sistemi core principali. Ogni profilo annidato è progettato per la configurazione del comportamento del sistema corrispondente.
 
 Questo particolare esempio mostrerà come nascondere la mesh di consapevolezza spaziale cambiando le impostazioni dell'osservatore della mesh spaziale. Puoi comunque adottare gli stessi principi per personalizzare le impostazioni o i valori nei profili di MRTK.
 
-Come rilevato quando è stato distribuito il progetto in HoloLens 2 nell'[esercitazione precedente](mr-learning-base-02.md#congratulations), la mesh <a href="/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">Spatial Awareness</a> è una raccolta di mesh che rappresentano la geometria dell'ambiente. Si tratta di una visualizzazione utile nella fase iniziale, ma che in genere è disabilitata per evitare distrazioni a livello visivo e l'impatto aggiuntivo che produrrebbe sulle prestazioni.
+Come rilevato quando è stato distribuito il progetto in HoloLens 2 nell'[esercitazione precedente](mr-learning-base-02.md#congratulations), la mesh <a href="/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started" target="_blank">Spatial Awareness</a> è una raccolta di mesh che rappresentano la geometria dell'ambiente. Si tratta di una visualizzazione utile nella fase iniziale, ma che in genere è disabilitata per evitare distrazioni a livello visivo e l'impatto aggiuntivo che produrrebbe sulle prestazioni.
 
 ## <a name="objectives"></a>Obiettivi
 

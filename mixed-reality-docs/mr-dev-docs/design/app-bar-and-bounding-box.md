@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
 keywords: Realtà mista di Windows, barra delle applicazioni, rettangolo di delimitazione, cuffie per realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: aba2e318439fec2bbb9e986c2ff7cac7a8a5fb3a
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 0ccec5240854de9a7db6a79d5b90b97f1e6b81de
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759437"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299906"
 ---
 # <a name="bounding-box-and-app-bar"></a>Rettangolo di selezione e barra dell'app
 ![Il delimitatore è l'interfaccia standard per la manipolazione di oggetti in realtà mista.](images/UX_Hero_BoundingBox.jpg)<br>
@@ -93,9 +93,9 @@ La barra dell'app è un menu a livello di oggetto che contiene una serie di puls
 
 
 ## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a>Rettangolo di delimitazione in MRTK (Mixed Reality Toolkit) per Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornisce script e prefabbricati per il rettangolo di delimitazione e la barra dell'app. È possibile aggiungere un rettangolo di delimitazione assegnando lo script BoundingBox.cs su qualsiasi oggetto.
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornisce script e prefabbricati per il rettangolo di delimitazione e la barra dell'app. È possibile aggiungere un rettangolo di delimitazione assegnando lo script BoundingBox. cs su qualsiasi oggetto.
 
-* [MRTK-rettangolo di delimitazione](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/bounding-box.md)
+* [MRTK-rettangolo di delimitazione](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box)
 
 
 <br>
@@ -103,7 +103,7 @@ La barra dell'app è un menu a livello di oggetto che contiene una serie di puls
 ---
 
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Realtà mista di Windows, progettazione, Coach mano, auricolare immersivo, MRTK, Hands, Hands, aiuto, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 56a56893a7c5bc772268ab9980f25327eae83af5
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: ec302cecb106b339828adf1c8777c2ea7ec7fa30
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550071"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300046"
 ---
 # <a name="hand-coach"></a>Coach mano
 
@@ -157,7 +157,7 @@ Una volta soddisfatta l'animazione
 *   Se è stato insegnato almeno una volta, ripetere il gesto solo se è stato rilevato che l'utente è bloccato.
 *   Se sono critiche posizioni specifiche per Finger/Hand, assicurarsi che gli utenti possano vedere chiaramente queste sfumature nell'animazione. Provare a pescare le mani in modo che le parti più importanti siano chiaramente visibili. 
 * Se si nota la distorsione delle mani, è necessario passare alle impostazioni di qualità di Unity per aumentare il numero di ossa. 
- Passare alle impostazioni del progetto modifica > di Unity > qualità > altri pesi > Blend. Assicurarsi che siano selezionate "4 ossa" per visualizzare le giunzioni uniformi. 
+ Passare alle impostazioni del progetto modifica > di Unity > qualità > altri pesi > Blend. Assicurarsi che siano selezionate "4 ossa" per visualizzare le giunzioni uniformi.
 
    ![Esempio: finestra Impostazioni progetto](images/HandCoach/ProjectSettings.png)<br>
 
@@ -167,13 +167,13 @@ Una volta soddisfatta l'animazione
 * Ridimensionamento delle mani troppo grandi
 * Posizionare le mani troppo vicino all'utente
 * Le mani devono essere insegnate una sola volta. Il superamento dell'insegnamento può causare confusione e confusione
-*   Per portarla in Unity, scaricare la versione più recente di MRTK qui: https://github.com/microsoft/MixedRealityToolkit-Unity
-    *   Materiale: Teaching_Hand2
-    *   Script: fare riferimento alle linee guida di MRTK per <a href= "/windows/mixed-reality/mrtk-docs/features/experimental/hand-coach.md"> MRTK Hand Coach </a>
-    *   Impostazione per progetto
-        *   Scenografia impostata su UWP: è possibile trovare l'istruzione nel [progetto di Unity](../develop/unity/Configure-Unity-Project.md) per la realtà mista di Windows
+* Per portarla in Unity, scaricare la versione più recente di MRTK qui: https://github.com/microsoft/MixedRealityToolkit-Unity
+  * Materiale: Teaching_Hand2
+  * Script: fare riferimento alle linee guida di MRTK per <a href= "/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-coach"> MRTK Hand Coach </a>
+  * Impostazione per progetto
+    * Scenografia impostata su UWP: è possibile trovare l'istruzione nel [progetto di Unity](../develop/unity/Configure-Unity-Project.md) per la realtà mista di Windows
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Interazione-nozioni fondamentali](interaction-fundamentals.md)
 * [Processo di creazione dell'asset](asset-creation-process.md)

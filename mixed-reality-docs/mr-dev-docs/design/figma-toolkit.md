@@ -6,24 +6,33 @@ ms.author: dongpark
 ms.date: 03/29/2021
 ms.topic: article
 keywords: Figma, sketch, Adobe XD, progettazione, progettazione, file di progettazione, progettazione UX, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 4e5b28a08d52ddc0b3a1311e51d71581a31cb0c0
-ms.sourcegitcommit: e9a0ba97fd288479ad324cdaabee9b6abc9f4dc2
+ms.openlocfilehash: 1386ce6238a406c2e2b45c9a6a551ae57c52cc59
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "107222045"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299951"
 ---
 # <a name="figma-toolkit"></a>Toolkit Figma
 
-![Toolkit Figma](images/UX_Tools_FigmaToolkit_Hero.png)<br>
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Figma-Toolkit-MRTK/player]
 
 Figma Toolkit fornisce le risorse che possono essere usate per lo sketch e il layout dell'interfaccia utente. Tutti i controlli dell'interfaccia utente sono basati sui componenti disponibili in MRTK. 
 
 > [!div class="nextstepaction"]
-> [Scarica Figma Toolkit](https://1drv.ms/u/s!ArqCGDZ4bpk7gRIA9QbpoQ5ln90B?e=qgc6YX)
+> [Visualizza Figma Toolkit](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Mixed-Reality-Toolkit-for-Figma?node-id=116%3A4)
 
 ## <a name="how-to-use-figma-toolkit"></a>Come usare Figma Toolkit
-Importare il file scaricato (. fig) in figma usando il pulsante **Import (importa** ) nell'angolo superiore destro.
+Usare **Duplica nel menu bozze** per creare una copia.
+<img src="images/UX_Figma_Use1.png" width="500px" alt="Menu duplicate 1"><br>
+
+Fare clic su **Torna ai file** per visualizzare la copia duplicata. Questa copia può essere usata per la creazione.
+
+<img src="images/UX_Figma_Use2.png" width="400px" alt="Menu duplicate 2"><br>
+
+<img src="images/UX_Figma_Use3.png" width="300px" alt="Menu duplicate 3"><br>
+
+Per scaricare e lavorare localmente, usare il menu **File > Salva copia locale** . Importare il file scaricato (. fig) in figma usando il pulsante **Import (importa** ) nell'angolo superiore destro.
 
 <img src="images/UX_FigmaToolkit_Import.png" width="200px" alt="Import menu"><br>
 
@@ -57,7 +66,7 @@ Gli asset possono essere usati per gli storyboard.
 ![Esempio di Figma Toolkit-storyboard](images/UX_FigmaToolkit_Examples_Storyboarding.png)<br>
 
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

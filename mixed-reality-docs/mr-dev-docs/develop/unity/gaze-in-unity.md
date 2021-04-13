@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: occhi, sguardi, Unity, ologramma, realtà mista, cuffie per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: 7602eb27da19dc77e4eab1c1a428dc9a1cf8b252
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 98eb4445d04b236dea74917d9c51108b66d6df3b
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759687"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300366"
 ---
 # <a name="head-gaze-in-unity"></a>Sguardo da capo in Unity
 
@@ -51,8 +51,9 @@ Mentre l'esempio precedente genera una singola Raycast dal ciclo di aggiornament
 
 Analogamente a quanto avviene con un puntatore del mouse su un computer, è necessario implementare un [cursore](../../design/cursors.md) che rappresenti l'Head-sguardi dell'utente. Conoscere il contenuto di destinazione di un utente aumenta la fiducia nell'interazione con.
 
-## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Head-sguardi nel Toolkit per la realtà mista 
-È possibile accedere a Head-sguardi da [Gestione input](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md) in MRTK.
+## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Head-sguardi nel Toolkit per la realtà mista
+
+È possibile accedere a Head-sguardi da [Gestione input](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview) in MRTK.
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 

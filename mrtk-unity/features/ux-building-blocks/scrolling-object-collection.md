@@ -1,16 +1,16 @@
 ---
-title: ScrolingObjectCollection
+title: Scorrimento della raccolta di oggetti
 description: Tipi di menu Panoramica MRTK
 author: vaoliva
 ms.author: vaolivaa
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, oggetto scorrevole
-ms.openlocfilehash: 8b2a726019b474603988390c3132b2e5429e131e
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 0ed1d61aed203a5daa45c5d89990e66115cc3abb
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104689141"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300116"
 ---
 # <a name="scrolling-object-collection"></a>Scorrimento della raccolta di oggetti
 
@@ -152,7 +152,7 @@ Per praticità, sono disponibili due prefabbricati per la raccolta di oggetti di
 
 ![Scorrimento delle prefabbricati della raccolta di oggetti](../images/scrolling-collection/ScrollingObjectCollection_Prefabs.png)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Primitiva di ritaglio](../rendering/clipping-primitive.md)
 * [Istanza del materiale](../rendering/material-instance.md)

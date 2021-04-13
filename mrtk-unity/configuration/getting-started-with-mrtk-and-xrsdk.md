@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, XRSDK,
-ms.openlocfilehash: fa37535f3a01dbba76c99c3114ac23a03d75ec3a
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: d5ab9bf51828c84759b72e87e1c41f885c7d6738
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105549971"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300416"
 ---
 # <a name="getting-started-with-mrtk-and-xr-sdk"></a>Introduzione a MRTK e XR SDK
 
@@ -26,18 +26,24 @@ La pipeline dell'SDK XR supporta attualmente 3 piattaforme: realtà mista di Win
 
 ### <a name="windows-mixed-reality"></a>Windows Mixed Reality
 
-1. Passare a gestione pacchetti di Unity e installare il pacchetto di plug-in di Windows XR, che aggiunge il supporto per la realtà mista di Windows in XR SDK. Verrà anche effettuato il pull di alcuni pacchetti di dipendenze. Verificare che tutti gli elementi seguenti siano stati installati correttamente:
-   1. Gestione dei plug-in XR
-   1. Plug-in Windows XR
-   1. Helper di input legacy XR
-1. Passare a modifica > impostazioni progetto.
-1. Fare clic sulla scheda Gestione plug-in XR nella finestra Impostazioni progetto.
-1. Passare alle impostazioni piattaforma UWP (Universal Windows Platform) e verificare che la realtà mista di Windows sia selezionata in provider plug-in.
-1. Assicurarsi che l'opzione Inizializza XR all'avvio sia selezionata.
-1. (**_Obbligatorio per la comunicazione remota HoloLens nell'editor, in caso contrario facoltativo_**) Passare alle impostazioni autonome e verificare che la realtà mista di Windows sia selezionata in provider plug-in. Assicurarsi anche che Initialize XR all'avvio sia selezionato.
-1. (**_Facoltativo_**) Fare clic sulla scheda realtà mista di Windows in Gestione plug-in XR e creare un profilo delle impostazioni personalizzate per modificare le impostazioni predefinite. Se l'elenco delle impostazioni è già presente, non è necessario creare alcun profilo.
+Passare a **Gestione pacchetti di Unity** e installare il pacchetto di plug-in di Windows XR, che aggiunge il supporto per la realtà mista di Windows in XR SDK. Verrà anche effettuato il pull di alcuni pacchetti di dipendenze. 
 
-![Gestione dei plug-in](../features/images/xrsdk/PluginManagement.png)
+1. Verificare che tutti gli elementi seguenti siano stati installati correttamente:
+   * Gestione dei plug-in XR
+   * Plug-in Windows XR
+   * Helper di input legacy XR
+
+2. Passa a **Edit > Project Settings** (Modifica > Impostazioni progetto).
+3. Fare clic sulla scheda Gestione plug-in XR nella finestra Impostazioni progetto.
+4. Passare alle impostazioni piattaforma UWP (Universal Windows Platform) e verificare che la realtà mista di Windows sia selezionata in provider plug-in.
+5. Assicurarsi che l'opzione Inizializza XR all'avvio sia selezionata.
+6. (**_Obbligatorio per la comunicazione remota HoloLens nell'editor, in caso contrario facoltativo_**) Passare alle impostazioni autonome e verificare che la realtà mista di Windows sia selezionata in provider plug-in. Assicurarsi anche che Initialize XR all'avvio sia selezionato.
+
+![Gestione dei plug-in XR con scheda autonoma selezionata](images/xr-management-img-02.png)
+
+7. (**_Facoltativo_**) Fare clic sulla scheda realtà mista di Windows in Gestione plug-in XR e creare un profilo delle impostazioni personalizzate per modificare le impostazioni predefinite. Se l'elenco delle impostazioni è già presente, non è necessario creare alcun profilo.
+
+![Gestione dei plug-in XR con la scheda Windows selezionata](images/xr-management-img-01.png)
 
 ### <a name="oculus"></a>Oculus
 
@@ -145,7 +151,7 @@ in
 
 Se si usano profili di mapping del controller personalizzato, aprire uno di essi ed eseguire la voce di menu Mixed Reality Toolkit-> Utilities-> Update-> controller mapping del controller per assicurarsi che siano definiti i nuovi tipi di controller di XR SDK.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Introduzione allo sviluppo AR in Unity](https://docs.unity3d.com/Manual/AROverview.html)
 * [Introduzione allo sviluppo per VR in Unity](https://docs.unity3d.com/Manual/VROverview.html)

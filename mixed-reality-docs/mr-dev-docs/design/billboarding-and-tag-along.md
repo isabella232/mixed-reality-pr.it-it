@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Realtà mista di Windows, Billboard, tag-along, cuffie per realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: f0a5c4fc66e287c04fe8fa42c0c671e895a26169
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 48c7aa28217a38c6c226b65a6e16ed7c950cec59
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759407"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299886"
 ---
 # <a name="billboarding-and-tag-along"></a>Billboarding e tag-along
 
@@ -47,9 +47,9 @@ Proprio come il contenuto con blocco principale, gli oggetti tag-along possono r
 ---
 
 ## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Billboard e tag-along in MRTK (Mixed Reality Toolkit) per Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornisce script per il comportamento di Billboard e tag-along. Assegnare lo script Billboard.cs a qualsiasi oggetto per aggiungere il comportamento di Billboard e fare in modo che l'oggetto faccia sempre fronte all'utente. Per aggiungere un comportamento tag-along, usare lo script RadialView.cs. È possibile modificare varie opzioni, ad esempio lerping tempo, distanza e grado.
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornisce script per il comportamento di Billboard e tag-along. Assegnare lo script Billboard. cs a qualsiasi oggetto per aggiungere il comportamento di Billboard e fare in modo che l'oggetto sia sempre in faccia. Per aggiungere un comportamento tag-along, usare lo script RadialView. cs. È possibile modificare varie opzioni, ad esempio lerping tempo, distanza e grado.
 
-* [MRTK-Risolutore viste radiali](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md#radialview)
+* [MRTK-Risolutore viste radiali](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#radialview)
 * [MRTK-script Billboard](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
 
 
@@ -57,7 +57,7 @@ Proprio come il contenuto con blocco principale, gli oggetti tag-along possono r
 
 ---
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

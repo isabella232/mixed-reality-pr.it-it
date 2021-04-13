@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: grafica, cpu, gpu, rendering, garbage collection, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: f8757e5a5f5c9163dc70d8c8d0e93848c49a6694
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 2ff766c3fb2c9f8a91c3c8cc81bb21adae9956e8
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101759727"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300156"
 ---
 # <a name="performance-recommendations-for-unity"></a>Consigli sulle prestazioni per Unity
 
@@ -301,15 +301,15 @@ Una semplice approssimazione per confrontare gli shader in termini di prestazion
 
 #### <a name="optimize-pixel-shaders"></a>Ottimizzare i pixel shader
 
-Esaminando i risultati statistici compilati con il metodo sopra descritto, lo [ shader di frammento](https://en.wikipedia.org/wiki/Shader#Pixel_shaders) eseguirà in genere più operazioni rispetto al [vertex shader](https://en.wikipedia.org/wiki/Shader#Vertex_shaders) in media. Lo shader di frammento (noto anche come pixel shader) viene eseguito per pixel nell'output su schermo, mentre il vertex shader viene eseguito solo per vertice di tutte le mesh disegnate sullo schermo. 
+Esaminando i risultati statistici compilati con il metodo sopra descritto, lo [ shader di frammento](https://en.wikipedia.org/wiki/Shader#Pixel_shaders) eseguirà in genere più operazioni rispetto al [vertex shader](https://en.wikipedia.org/wiki/Shader#Vertex_shaders) in media. Lo shader di frammento (noto anche come pixel shader) viene eseguito per pixel nell'output su schermo, mentre il vertex shader viene eseguito solo per vertice di tutte le mesh disegnate sullo schermo.
 
-Pertanto, oltre ad avere più istruzioni rispetto ai vertex shader a causa di tutti i calcoli per l'illuminazione, gli shader di frammento vengono quasi sempre eseguiti su un set di dati più grande. Ad esempio, se l'output su schermo è un'immagine 2 K per 2 K, lo shader di frammento può venire eseguito 2000*2000 = 4 milioni di volte. Se viene eseguito il rendering di due occhi, questo numero raddoppia perché le schermate sono due. Se un'applicazione di realtà mista prevede più passaggi, effetti di post-elaborazione a schermo intero o il rendering di più mesh sullo stesso pixel, questo numero aumenterà in modo considerevole. 
+Pertanto, oltre ad avere più istruzioni rispetto ai vertex shader a causa di tutti i calcoli per l'illuminazione, gli shader di frammento vengono quasi sempre eseguiti su un set di dati più grande. Ad esempio, se l'output su schermo è un'immagine 2 K per 2 K, lo shader di frammento può venire eseguito 2000*2000 = 4 milioni di volte. Se viene eseguito il rendering di due occhi, questo numero raddoppia perché le schermate sono due. Se un'applicazione di realtà mista prevede più passaggi, effetti di post-elaborazione a schermo intero o il rendering di più mesh sullo stesso pixel, questo numero aumenterà in modo considerevole.
 
 Perciò, la riduzione del numero di operazioni nello shader di frammento può in genere assicurare un miglioramento delle prestazioni notevolmente superiore rispetto alle ottimizzazioni nel vertex shader.
 
 #### <a name="unity-standard-shader-alternatives"></a>Alternative agli shader standard di Unity
 
-Invece di usare un rendering fisico (PBR, Physically Based Rendering) o un altro shader di alta qualità, cerca di usare uno shader più efficiente e più economico. [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) offre lo [shader standard MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md) che è stato ottimizzato per i progetti di realtà mista.
+Invece di usare un rendering fisico (PBR, Physically Based Rendering) o un altro shader di alta qualità, cerca di usare uno shader più efficiente e più economico. [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) offre lo [shader standard MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) che è stato ottimizzato per i progetti di realtà mista.
 
 Unity offre anche shader senza illuminazione, con illuminazione dei vertici, diffusi e altre opzioni di shader semplificate che sono molto più veloci rispetto allo shader standard di Unity. Per informazioni più dettagliate, vedi [Usage and Performance of Built-in Shaders](https://docs.unity3d.com/Manual/shader-Performance.html) (Utilizzo e prestazioni degli shader incorporati).
 

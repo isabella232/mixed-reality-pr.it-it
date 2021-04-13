@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: f25e30ee37f3e4d0449ea653d32366f5d7f46e86
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 35b28557df37abee19a0c950b362117eb6a120b0
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693118"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300201"
 ---
 # <a name="inputfeatureusage-tool"></a>Strumento InputFeatureUsage
 
@@ -39,11 +39,11 @@ Per esaminare i mapping di Unity per un controller:
 
 ### <a name="panels"></a>Pannelli
 
-I pannelli visualizzano lo stato corrente di tutti i InputFeatureUsages segnalati nelle prime due origini di input Unite rilevate.
+I pannelli visualizzano lo stato corrente di tutti i InputFeatureUsages segnalati in tutte le origini di input Unity rilevate.
 
 Il pannello più piccolo lungo la parte superiore elenca i nomi di tutte le origini rilevate.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Creazione di un provider di dati di sistema di input](../input/create-data-provider.md)
 - [Strumento di mapping controller](controller-mapping-tool.md)

@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, auricolare realtà mista, auricolare di realtà mista di Windows, auricolare realtà virtuale, HoloLens, ardesia, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 444116b8946c763b284cdc83d45f5de118e965aa
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 30d5e63eecb45aa8eb1a59d1a288f084a6937764
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759837"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299686"
 ---
 # <a name="slate"></a>Slate
 
@@ -25,13 +25,13 @@ Uno Slate è un controllo di stile della finestra sottile per la visualizzazione
 
 ## <a name="slate-in-mrtk-mixed-reality-toolkit-for-unity"></a>Slate in MRTK (Mixed Reality Toolkit) per Unity
 
-* [MRTK-Slate](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/slate.md)
+* [MRTK-Slate](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/slate)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

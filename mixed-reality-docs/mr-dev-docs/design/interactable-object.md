@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, CUE, interfaccia utente, UX, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, audio
-ms.openlocfilehash: b93092b597d0267c1169cf823b1a5c1fa03c3c3f
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 0e9f4dc09e3c4a4c38ffeb1a9042f39996918e36
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759877"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300466"
 ---
 # <a name="interactable-object"></a>Oggetto che supporta interazioni
 
@@ -214,13 +214,11 @@ Per le interazioni dirette, il feedback audio appropriato può migliorare notevo
 
 ---
 
-
-## <a name="sizing-recommendations"></a>Consigli sul ridimensionamento 
+## <a name="sizing-recommendations"></a>Consigli sul ridimensionamento
 
 Per assicurarsi che tutti gli oggetti interagibili possano essere facilmente modificati, è consigliabile assicurarsi che l'interoperabilità soddisfi le dimensioni minime in base alla distanza che viene effettuata dall'utente. L'angolo visivo è spesso misurato in gradi di Visual Arc. L'angolo visivo è basato sulla distanza tra gli occhi dell'utente e l'oggetto e rimane costante, mentre la dimensione fisica della destinazione può variare a seconda della distanza tra le modifiche apportate dall'utente. Per determinare le dimensioni fisiche necessarie di un oggetto in base alla distanza dall'utente, provare a usare un calcolo dell'angolo visivo come [questo](https://elvers.us/perception/visualAngle/).
 
 Di seguito sono riportati i consigli per le dimensioni minime del contenuto interactabile.
-
 
 ### <a name="target-size-for-direct-hand-interaction"></a>Dimensioni di destinazione per l'interazione diretta con la mano
 
@@ -254,30 +252,27 @@ Quando si creano i pulsanti per l'interazione diretta, si consiglia una dimensio
 ![Dimensioni di destinazione per l'interazione con raggio o sguardo](images/TargetSizingFar.jpg)<br>
 *Dimensioni di destinazione per l'interazione con raggio o sguardo*
 
-
 <br>
 
 ---
-
 
 ## <a name="interactable-object-in-mrtk-mixed-reality-toolkit-for-unity"></a>Oggetto interactabile in MRTK (Mixed Reality Toolkit) per Unity
 
 In **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** è possibile usare lo script [**interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) per fare in modo che gli oggetti rispondano a diversi tipi di Stati di interazione di input. Supporta vari tipi di temi che consentono di definire gli Stati di visualizzazione controllando le proprietà dell'oggetto, ad esempio colore, dimensioni, materiale e shader.
 
-* [Con cui](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/interactable.md)
-* [Button](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md)
+* [Con cui](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable)
+* [Button](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button)
 * [Scena degli esempi di interazione della mano](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 Lo shader standard di MixedRealityToolkit offre diverse opzioni, ad esempio la **luce vicina** , che consente di creare suggerimenti visivi e audio.
-* [Shader standard MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
 
+* [Shader standard MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
 
 <br>
 
 ---
 
-
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

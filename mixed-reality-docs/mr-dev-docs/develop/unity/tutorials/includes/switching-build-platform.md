@@ -1,12 +1,12 @@
 ---
-ms.openlocfilehash: 78605b17e93429ad974e1ca21e7859035f38d615
-ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
+ms.openlocfilehash: 2a2dcb6ec9133eb5efa0dc04e4d757cabd48461a
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106088717"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107327164"
 ---
-# <a name="unity-20192020--windows-xr-plugin"></a>[Plug-in Unity 2019/2020 + Windows XR](#tab/winxr)
+# <a name="unity-20192020--windows-xr-plugin"></a>[Unity 2019/2020 + Plug-in Windows XR](#tab/winxr)
 
 Dal menu di Unity scegli **File** > **Build Settings** (Impostazioni di compilazione) per visualizzare la finestra corrispondente:
 
@@ -30,21 +30,21 @@ Dal menu di Unity scegli **File** > **Build Settings** (Impostazioni di compilaz
 
 ![Percorso del menu Build Settings... di Unity](../images/mr-learning-base/base-02-section2-step1-1.png)
 
-Nella finestra Impostazioni compilazione selezionare **piattaforma UWP (Universal Windows Platform)** e:
-1.  Impostare il **dispositivo di destinazione** su **HoloLens**
-2.  Impostare l' **architettura** su **ARM 64**
-3.  Imposta **tipo di compilazione** su **D3D**
-4.  Imposta la **versione minima della piattaforma** su **10.2.18362**
-5.  Impostare **UWP SDK** sull' **ultima versione installata**
-6.  Impostare la **configurazione della compilazione** su **Release** a causa di problemi noti relativi alle prestazioni con debug
-7.  Fare clic sul pulsante switch Platform
+Nella finestra Build Settings (Impostazioni di **compilazione) piattaforma UWP (Universal Windows Platform)** e:
+1.  Impostare **Dispositivo di destinazione** su **HoloLens**
+2.  Impostare **Architettura** su **ARM 64**
+3.  Impostare **Tipo di compilazione** su **D3D**
+4.  Impostare **versione minima della piattaforma** su **10.0.18362**
+5.  Impostare **UWP SDK su** Latest installed **(Versione più recente installata)**
+6.  Impostare **Build configuration (Configurazione build)** **su Release (Versione)** perché sono presenti problemi di prestazioni noti con Debug
+7.  Fare clic sul pulsante Cambia piattaforma
 
 
-![Impostazioni di compilazione Unity con impostazioni di piattaforma UWP (Universal Windows Platform) impostate](../images/mr-learning-base/base-02-section2-step1-2-openxr.png)
+![Impostazioni di compilazione unity con piattaforma UWP (Universal Windows Platform) impostazioni predefinite](../images/mr-learning-base/base-02-section2-step1-2-openxr.png)
 
-Al termine del cambio della piattaforma Unity, fare clic sull'icona **x** rossa per chiudere la finestra impostazioni di compilazione.
+Dopo che Unity ha terminato di cambiare piattaforma, fare clic sull'icona **x** rossa per chiudere la finestra Build Settings (Impostazioni compilazione).
 
-# <a name="legacy-wsa"></a>[WSA legacy](#tab/wsa)
+# <a name="legacy-wsa"></a>[Legacy WSA](#tab/wsa)
 
 Dal menu di Unity scegli **File** > **Build Settings** (Impostazioni di compilazione) per visualizzare la finestra corrispondente:
 
