@@ -6,48 +6,48 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, auricolare realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, dispositivo di scorrimento, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 29a10389e476fcb40edd97619796a56cbb579c89
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: e3a50ea617beac6b341ebdf27cad333168222c07
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759827"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299706"
 ---
-# <a name="slider"></a><span data-ttu-id="a4230-104">Slider</span><span class="sxs-lookup"><span data-stu-id="a4230-104">Slider</span></span>
+# <a name="slider"></a><span data-ttu-id="7ddd3-104">Slider</span><span class="sxs-lookup"><span data-stu-id="7ddd3-104">Slider</span></span>
 
 ![Slider](images/UX_Hero_Slider.jpg)
 
-<span data-ttu-id="a4230-106">Un dispositivo di scorrimento è un componente dell'interfaccia utente usato per impostare un valore.</span><span class="sxs-lookup"><span data-stu-id="a4230-106">A slider is a UI component used to set a value.</span></span> <span data-ttu-id="a4230-107">Fornisce un'indicazione visiva del contenuto regolabile e l'impostazione corrente nell'intervallo totale di contenuto.</span><span class="sxs-lookup"><span data-stu-id="a4230-107">It provides a visual indication of adjustable content, and the current setting in the total range of content.</span></span> <span data-ttu-id="a4230-108">Viene visualizzato come track con le opzioni su entrambi i lati.</span><span class="sxs-lookup"><span data-stu-id="a4230-108">It's displayed as a track with options on either side.</span></span> <span data-ttu-id="a4230-109">Una manopola o una levetta viene trascinata in un'estremità o nell'altra per scegliere, che indica il valore corrente.</span><span class="sxs-lookup"><span data-stu-id="a4230-109">A knob or lever is dragged to one end or the other to make the choice, indicating the current value.</span></span> <span data-ttu-id="a4230-110">Il dispositivo di scorrimento del pizzico può essere spostato afferrando direttamente il dispositivo di scorrimento, direttamente o a distanza.</span><span class="sxs-lookup"><span data-stu-id="a4230-110">The Pinch Slider can be moved by directly grabbing the slider, either directly or at a distance.</span></span> <span data-ttu-id="a4230-111">I dispositivi di scorrimento funzionano con vari tipi di input, ad esempio lo sguardo e il tocco aereo e un controller di movimento.</span><span class="sxs-lookup"><span data-stu-id="a4230-111">Sliders work with various input types such as gaze and air-tap and a motion controller.</span></span>
+<span data-ttu-id="7ddd3-106">Un dispositivo di scorrimento è un componente dell'interfaccia utente usato per impostare un valore.</span><span class="sxs-lookup"><span data-stu-id="7ddd3-106">A slider is a UI component used to set a value.</span></span> <span data-ttu-id="7ddd3-107">Fornisce un'indicazione visiva del contenuto regolabile e l'impostazione corrente nell'intervallo totale di contenuto.</span><span class="sxs-lookup"><span data-stu-id="7ddd3-107">It provides a visual indication of adjustable content, and the current setting in the total range of content.</span></span> <span data-ttu-id="7ddd3-108">Viene visualizzato come track con le opzioni su entrambi i lati.</span><span class="sxs-lookup"><span data-stu-id="7ddd3-108">It's displayed as a track with options on either side.</span></span> <span data-ttu-id="7ddd3-109">Una manopola o una levetta viene trascinata in un'estremità o nell'altra per scegliere, che indica il valore corrente.</span><span class="sxs-lookup"><span data-stu-id="7ddd3-109">A knob or lever is dragged to one end or the other to make the choice, indicating the current value.</span></span> <span data-ttu-id="7ddd3-110">Il dispositivo di scorrimento del pizzico può essere spostato afferrando direttamente il dispositivo di scorrimento, direttamente o a distanza.</span><span class="sxs-lookup"><span data-stu-id="7ddd3-110">The Pinch Slider can be moved by directly grabbing the slider, either directly or at a distance.</span></span> <span data-ttu-id="7ddd3-111">I dispositivi di scorrimento funzionano con vari tipi di input, ad esempio lo sguardo e il tocco aereo e un controller di movimento.</span><span class="sxs-lookup"><span data-stu-id="7ddd3-111">Sliders work with various input types such as gaze and air-tap and a motion controller.</span></span>
 
 <br>
 
 ---
 
-## <a name="slider-in-mrtk-mixed-reality-toolkit-for-unity"></a><span data-ttu-id="a4230-112">Dispositivo di scorrimento in MRTK (Mixed Reality Toolkit) per Unity</span><span class="sxs-lookup"><span data-stu-id="a4230-112">Slider in MRTK (Mixed Reality Toolkit) for Unity</span></span>
+## <a name="slider-in-mrtk-mixed-reality-toolkit-for-unity"></a><span data-ttu-id="7ddd3-112">Dispositivo di scorrimento in MRTK (Mixed Reality Toolkit) per Unity</span><span class="sxs-lookup"><span data-stu-id="7ddd3-112">Slider in MRTK (Mixed Reality Toolkit) for Unity</span></span>
 
-* [<span data-ttu-id="a4230-113">MRTK-Slider</span><span class="sxs-lookup"><span data-stu-id="a4230-113">MRTK - Slider</span></span>](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/sliders.md)
+* [<span data-ttu-id="7ddd3-113">MRTK-Slider</span><span class="sxs-lookup"><span data-stu-id="7ddd3-113">MRTK - Slider</span></span>](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/sliders)
 
 <br>
 
 ---
 
-## <a name="see-also"></a><span data-ttu-id="a4230-114">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="a4230-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7ddd3-114">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="7ddd3-114">See also</span></span>
 
-* [<span data-ttu-id="a4230-115">Cursori</span><span class="sxs-lookup"><span data-stu-id="a4230-115">Cursors</span></span>](cursors.md)
-* [<span data-ttu-id="a4230-116">Raggio della mano</span><span class="sxs-lookup"><span data-stu-id="a4230-116">Hand ray</span></span>](point-and-commit.md)
-* [<span data-ttu-id="a4230-117">Button</span><span class="sxs-lookup"><span data-stu-id="a4230-117">Button</span></span>](button.md)
-* [<span data-ttu-id="a4230-118">Oggetto che supporta interazioni</span><span class="sxs-lookup"><span data-stu-id="a4230-118">Interactable object</span></span>](interactable-object.md)
-* [<span data-ttu-id="a4230-119">Rettangolo di selezione e barra dell'app</span><span class="sxs-lookup"><span data-stu-id="a4230-119">Bounding box and App bar</span></span>](app-bar-and-bounding-box.md)
-* [<span data-ttu-id="a4230-120">Manipolazione</span><span class="sxs-lookup"><span data-stu-id="a4230-120">Manipulation</span></span>](direct-manipulation.md)
-* [<span data-ttu-id="a4230-121">Menu a mano</span><span class="sxs-lookup"><span data-stu-id="a4230-121">Hand menu</span></span>](hand-menu.md)
-* [<span data-ttu-id="a4230-122">Menu adiacente</span><span class="sxs-lookup"><span data-stu-id="a4230-122">Near menu</span></span>](near-menu.md)
-* [<span data-ttu-id="a4230-123">Raccolta di oggetti</span><span class="sxs-lookup"><span data-stu-id="a4230-123">Object collection</span></span>](object-collection.md)
-* [<span data-ttu-id="a4230-124">Comando vocale</span><span class="sxs-lookup"><span data-stu-id="a4230-124">Voice command</span></span>](voice-input.md)
-* [<span data-ttu-id="a4230-125">Tastiera</span><span class="sxs-lookup"><span data-stu-id="a4230-125">Keyboard</span></span>](keyboard.md)
-* [<span data-ttu-id="a4230-126">Descrizione comando</span><span class="sxs-lookup"><span data-stu-id="a4230-126">Tooltip</span></span>](tooltip.md)
-* [<span data-ttu-id="a4230-127">Slate</span><span class="sxs-lookup"><span data-stu-id="a4230-127">Slate</span></span>](slate.md)
-* [<span data-ttu-id="a4230-128">Dispositivo di scorrimento</span><span class="sxs-lookup"><span data-stu-id="a4230-128">Slider</span></span>](slider.md)
-* [<span data-ttu-id="a4230-129">Shader</span><span class="sxs-lookup"><span data-stu-id="a4230-129">Shader</span></span>](shader.md)
-* [<span data-ttu-id="a4230-130">Billboarding e tag-along</span><span class="sxs-lookup"><span data-stu-id="a4230-130">Billboarding and tag-along</span></span>](billboarding-and-tag-along.md)
-* [<span data-ttu-id="a4230-131">Visualizzazione dello stato</span><span class="sxs-lookup"><span data-stu-id="a4230-131">Displaying progress</span></span>](progress.md)
-* [<span data-ttu-id="a4230-132">Magnetismo di superficie</span><span class="sxs-lookup"><span data-stu-id="a4230-132">Surface magnetism</span></span>](surface-magnetism.md)
+* [<span data-ttu-id="7ddd3-115">Cursori</span><span class="sxs-lookup"><span data-stu-id="7ddd3-115">Cursors</span></span>](cursors.md)
+* [<span data-ttu-id="7ddd3-116">Raggio della mano</span><span class="sxs-lookup"><span data-stu-id="7ddd3-116">Hand ray</span></span>](point-and-commit.md)
+* [<span data-ttu-id="7ddd3-117">Button</span><span class="sxs-lookup"><span data-stu-id="7ddd3-117">Button</span></span>](button.md)
+* [<span data-ttu-id="7ddd3-118">Oggetto che supporta interazioni</span><span class="sxs-lookup"><span data-stu-id="7ddd3-118">Interactable object</span></span>](interactable-object.md)
+* [<span data-ttu-id="7ddd3-119">Rettangolo di selezione e barra dell'app</span><span class="sxs-lookup"><span data-stu-id="7ddd3-119">Bounding box and App bar</span></span>](app-bar-and-bounding-box.md)
+* [<span data-ttu-id="7ddd3-120">Manipolazione</span><span class="sxs-lookup"><span data-stu-id="7ddd3-120">Manipulation</span></span>](direct-manipulation.md)
+* [<span data-ttu-id="7ddd3-121">Menu a mano</span><span class="sxs-lookup"><span data-stu-id="7ddd3-121">Hand menu</span></span>](hand-menu.md)
+* [<span data-ttu-id="7ddd3-122">Menu adiacente</span><span class="sxs-lookup"><span data-stu-id="7ddd3-122">Near menu</span></span>](near-menu.md)
+* [<span data-ttu-id="7ddd3-123">Raccolta di oggetti</span><span class="sxs-lookup"><span data-stu-id="7ddd3-123">Object collection</span></span>](object-collection.md)
+* [<span data-ttu-id="7ddd3-124">Comando vocale</span><span class="sxs-lookup"><span data-stu-id="7ddd3-124">Voice command</span></span>](voice-input.md)
+* [<span data-ttu-id="7ddd3-125">Tastiera</span><span class="sxs-lookup"><span data-stu-id="7ddd3-125">Keyboard</span></span>](keyboard.md)
+* [<span data-ttu-id="7ddd3-126">Descrizione comando</span><span class="sxs-lookup"><span data-stu-id="7ddd3-126">Tooltip</span></span>](tooltip.md)
+* [<span data-ttu-id="7ddd3-127">Slate</span><span class="sxs-lookup"><span data-stu-id="7ddd3-127">Slate</span></span>](slate.md)
+* [<span data-ttu-id="7ddd3-128">Dispositivo di scorrimento</span><span class="sxs-lookup"><span data-stu-id="7ddd3-128">Slider</span></span>](slider.md)
+* [<span data-ttu-id="7ddd3-129">Shader</span><span class="sxs-lookup"><span data-stu-id="7ddd3-129">Shader</span></span>](shader.md)
+* [<span data-ttu-id="7ddd3-130">Billboarding e tag-along</span><span class="sxs-lookup"><span data-stu-id="7ddd3-130">Billboarding and tag-along</span></span>](billboarding-and-tag-along.md)
+* [<span data-ttu-id="7ddd3-131">Visualizzazione dello stato</span><span class="sxs-lookup"><span data-stu-id="7ddd3-131">Displaying progress</span></span>](progress.md)
+* [<span data-ttu-id="7ddd3-132">Magnetismo di superficie</span><span class="sxs-lookup"><span data-stu-id="7ddd3-132">Surface magnetism</span></span>](surface-magnetism.md)
