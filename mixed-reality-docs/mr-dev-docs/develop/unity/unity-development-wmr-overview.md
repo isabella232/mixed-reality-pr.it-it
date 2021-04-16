@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realtà mista, sviluppo, guida introduttiva, nuovo progetto, conversione, funzionalità, fotocamera, simulazione, emulazione, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, input vocale, fotocamera individuabile, emulatore, Azure, esercitazioni
-ms.openlocfilehash: e80c5411c7d180e0d78e031599455235dabaceb7
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 50300ff08dd06c5fc250bc93979d537e10b38044
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237142"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107528718"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>Sviluppo in Unity per VR e Windows Mixed Reality
 
@@ -29,18 +29,28 @@ Usare i checkpoint seguenti per trasferire i giochi e le applicazioni di Unity n
 
 ### <a name="1-getting-started"></a>1. Guida introduttiva
 
-È disponibile un piccolo set di impostazioni di Unity che è necessario modificare manualmente per lo sviluppo di realtà mista di Windows e di VR. Le impostazioni sono suddivise in due categorie: per progetto e per scena. Al termine di questa sezione, saranno disponibili le impostazioni di progetto e gli strumenti necessari per iniziare a creare le app personali.
+È necessario modificare manualmente un piccolo set di impostazioni di Unity per lo sviluppo di Windows Mixed Reality vr. Le impostazioni sono suddivise in due categorie: per progetto e per scena. Al termine di questa sezione, saranno disponibili le impostazioni di progetto e gli strumenti necessari per iniziare a creare le app personali.
 
 |  Checkpoint  |  Risultato  |
 | --- | --- |
 | [Installare gli ultimi aggiornamenti](../install-the-tools.md) | Scaricare e installare il pacchetto Unity più recente e configurare il progetto per la realtà mista |
-| [Configurazione del progetto per WMR](configure-unity-project.md) | Vedere le informazioni su come creare applicazioni che eseguono il rendering di contenuto digitale in dispositivi di visualizzazione olografici e VR |
+| [Configurazione del progetto per WMR](windows-xr-plugin.md) | Vedere le informazioni su come creare applicazioni che eseguono il rendering di contenuto digitale in dispositivi di visualizzazione olografici e VR |
+
+> [!IMPORTANT]
+> Per altre informazioni sulla configurazione dei [progetti,](choosing-unity-version.md) vedere la guida alla configurazione del progetto Unity.
 
 ### <a name="2-core-building-blocks"></a>2. Componenti fondamentali
 
 Dopo aver avviato un nuovo progetto immersivo, sono necessari alcuni blocchi predefiniti di base per sviluppare app immersive. Tutti i componenti di base per le applicazioni di realtà mista sono esposti in modo coerente con altre API di Unity Potrebbero non essere tutti necessari nell'immediato, ma è bene esaminarli nella fase iniziale. Dopo aver esaminato i blocchi predefiniti fondamentali indicati di seguito, si avrà a disposizione un insieme completo di funzionalità che è possibile integrare nei progetti VR.
 
-[!INCLUDE[](../includes/unity-building-blocks-wmr.md)]
+|  Funzionalità  |  Capabilities  |
+| --- | --- |
+| [Fotocamera](../unity/camera-in-unity.md) | Ottimizzare pienamente la qualità visiva e la stabilità degli ologrammi nelle app di realtà mista |
+| [Blocco del mondo e ancoraggi spaziali](spatial-anchors-in-unity.md) | Risolvere i problemi di stabilizzazione, regolazione della fotocamera e integrare una soluzione di sistema di coordinate stabile || [Controller del movimento](../unity/motion-controllers-in-unity.md) | Aggiungere azioni nello spazio alle app di realtà mista |
+| [Movimenti](../unity/gestures-in-unity.md) | Usare i movimenti della mano come input nelle esperienze di realtà mista |
+| [Audio spaziale](../unity/spatial-sound-in-unity.md) | Migliorare le app con audio 3D immersivo |
+| [Text](../unity/text-in-unity.md) | Ottenere testo nitido e di alta qualità di dimensioni gestibili e con un rendering di qualità |
+| [Input vocale](../unity/voice-input-in-unity.md) | Acquisire parole chiave, frasi e dettature pronunciate degli utenti|
 
 ### <a name="3-advanced-features"></a>3. Funzionalità avanzate
 

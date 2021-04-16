@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realtà mista, sviluppo, guida introduttiva, nuovo progetto, porting, funzionalità, fotocamera, simulazione, emulazione, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, mapping spaziale, input vocale, fotocamera individuabile, emulatore, Azure, esercitazioni
-ms.openlocfilehash: 52c6fb57473255e440d9c2f795cc228cca44ea32
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: ba68c3d74f58fc43af3de039e5eba1712d195cc0
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982784"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107528740"
 ---
 # <a name="unity-development-for-hololens"></a>Sviluppo di Unity per HoloLens
 
@@ -33,22 +33,34 @@ Il modo più semplice per sviluppare in Unity è quello di usare Mixed Reality T
 
 |  Checkpoint  |  Risultato  |
 | --- | --- |
-| [Che cos'è MRTK?](mrtk-getting-started.md) | Per iniziare, acquisire familiarità con Mixed Reality Toolkit e imparare a conoscere i vantaggi che offre |
-| [Installare gli strumenti più recenti](../install-the-tools.md) | Scaricare e installare il pacchetto Unity più recente e configurare il progetto per la realtà mista |
-| [Serie di esercitazioni su HoloLens 2](tutorials/mr-learning-base-01.md) | Seguire le esercitazioni su MRTK di livello principiante per l'hardware HoloLens 2 |
-| Scaricare **facoltativamente** [lo strumento per la funzionalità di realtà mista](welcome-to-mr-feature-tool.md) | Un nuovo strumento di sviluppo per l'individuazione, l'aggiornamento e l'aggiunta di pacchetti di funzionalità di realtà mista ai progetti Unity |
+| [Introduzione a Mixed Reality Toolkit](mrtk-getting-started.md) | Per iniziare, acquisire familiarità con Mixed Reality Toolkit e imparare a conoscere i vantaggi che offre |
+| [Scaricare lo strumento di funzionalità di realtà mista](welcome-to-mr-feature-tool.md) | Nuovo strumento di sviluppo per l'individuazione, l'aggiornamento e l'aggiunta di pacchetti di funzionalità di realtà mista ai progetti Unity |
+| [Configurare l'ambiente di sviluppo](../install-the-tools.md) | Scaricare e installare il pacchetto Unity più recente e configurare il progetto per la realtà mista |
+| [Completare la serie HoloLens 2 tutorial](tutorials/mr-learning-base-01.md) | Seguire le esercitazioni su MRTK di livello principiante per l'hardware HoloLens 2 |
 
 > [!IMPORTANT]
-> Se vuoi creare un nuovo progetto Unity senza importare Mixed Reality Toolkit, devi modificare manualmente un piccolo set di impostazioni di Unity per Windows Mixed Reality. Le impostazioni sono suddivise in due categorie: per progetto e per scena. Per la procedura dettagliata, vedere la [guida alla configurazione](configure-unity-project.md).
+> Se vuoi creare un nuovo progetto Unity senza importare Mixed Reality Toolkit, devi modificare manualmente un piccolo set di impostazioni di Unity per Windows Mixed Reality. Per altre informazioni, [vedere la guida](choosing-unity-version.md) alla configurazione.
 
 > [!NOTE]
-> Dopo aver configurato MRTK V2 nel progetto, gli oggetti di gioco Unity standard, ad esempio la fotocamera, si illumineranno immediatamente per un'esperienza da seduti. Per istruzioni sulla modifica della scala di esperienza dell'applicazione, vedere la pagina relativa ai [sistemi di coordinate](coordinate-systems-in-unity.md).
+> Dopo aver impostato MRTK nel progetto, gli oggetti di gioco Unity standard come la fotocamera si acceleranno immediatamente per un'esperienza su larga scala. Per istruzioni sulla modifica della scala di esperienza dell'applicazione, vedere la pagina relativa ai [sistemi di coordinate](coordinate-systems-in-unity.md).
 
 ## <a name="2-core-building-blocks"></a>2. Componenti fondamentali
 
 Tutti i componenti di base per le applicazioni di realtà mista sono esposti in modo coerente con altre API di Unity Questi blocchi predefiniti sono disponibili come funzionalità autonome e tramite il Mixed Reality Toolkit. Potrebbero non essere tutti necessari nell'immediato, ma è bene esaminarli nella fase iniziale. Dopo aver esaminato i blocchi predefiniti fondamentali indicati di seguito, si avrà a disposizione un insieme completo di funzionalità da integrare in un progetto di realtà mista autonomamente o tramite MRTK.
 
-[!INCLUDE[](../includes/unity-building-blocks.md)]
+|  Funzionalità  |  Capabilities  |
+| --- | --- |
+| [Fotocamera](../unity/camera-in-unity.md) | Ottimizzare pienamente la qualità visiva e la stabilità degli ologrammi nelle app di realtà mista |
+| [Blocco del mondo e ancoraggi spaziali](spatial-anchors-in-unity.md) | Risolvere i problemi di stabilizzazione, regolazione della fotocamera e integrare una soluzione di sistema di coordinate stabile |
+| [Esperienze condivise](shared-experiences-in-unity.md) | Visualizzare e interagire collettivamente con lo stesso ologramma in un punto fisso nello spazio usando la condivisione degli ancoraggi nello spazio |
+| [Sguardo fisso](../unity/gaze-in-unity.md) | Consentire agli utenti di puntare agli ologrammi fissandoli con lo sguardo |
+| [Controller del movimento](../unity/motion-controllers-in-unity.md) | Aggiungere azioni nello spazio alle app di realtà mista |
+| [Movimenti](../unity/gestures-in-unity.md) | Usare i movimenti della mano come input nelle esperienze di realtà mista |
+| [Tracciamento della mano e oculare](../unity/hand-eye-in-unity.md) | Integrare l'input di tracciamento della mano articolata e oculare nell'esperienza utente |
+| [Mapping spaziale](../unity/spatial-mapping-in-unity.md) | Mappare lo spazio fisico con una mesh virtuale sovrapposta per contrassegnare i limiti dell'ambiente |
+| [Audio spaziale](../unity/spatial-sound-in-unity.md) | Migliorare le app con audio 3D immersivo |
+| [Text](../unity/text-in-unity.md) | Ottenere testo nitido e di alta qualità di dimensioni gestibili e con un rendering di qualità |
+| [Input vocale](../unity/voice-input-in-unity.md) | Acquisire parole chiave, frasi e dettature pronunciate degli utenti|
 
 ## <a name="3-advanced-features"></a>3. Funzionalità avanzate
 
@@ -56,8 +68,7 @@ Altre funzionalità chiave per le applicazioni di realtà mista sono disponibili
 
 |  Funzionalità  |  Capabilities  |
 | --- | --- |
-| [Esperienze condivise](shared-experiences-in-unity.md) | Visualizzare e interagire collettivamente con lo stesso ologramma in un punto fisso nello spazio usando la condivisione degli ancoraggi nello spazio |
-| [Fotocamera individuabile](locatable-camera-in-unity.md) | Acquisire foto e contenuti video nell'applicazione di realtà mista |
+| [Fotocamera con foto](locatable-camera-in-unity.md) | Acquisire foto e contenuti video nell'applicazione di realtà mista |
 | [Punto di interesse](focus-point-in-unity.md) | Suggerire a HoloLens il modo ottimale per eseguire la stabilizzazione degli ologrammi attualmente visualizzati |
 | [Perdita del tracciamento](tracking-loss-in-unity.md) | Gestire gli scenari in cui il dispositivo non è in grado di individuare la propria posizione nello spazio globale dell'applicazione |
 | [Input da tastiera](keyboard-input-in-unity.md) | Ottenere input nelle app da tastiere reali e di realtà mista |
