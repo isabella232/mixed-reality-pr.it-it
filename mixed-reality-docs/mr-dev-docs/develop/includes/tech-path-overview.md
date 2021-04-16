@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5b99eda2ca8bc2ba48a46513b867e94c45b198c1
-ms.sourcegitcommit: 919bdc3e46325f3c44a022c8852cd38ffec33d33
+ms.openlocfilehash: ab95f0c89a4b77c6ea69fefa331bfbdccf35f79d
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105104488"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107564448"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -35,7 +35,8 @@ Per la creazione di app di Realtà mista con Unity sono disponibili diverse opzi
 |  Strumento/SDK  |  Description  |
 | --- | --- |
 | [Mixed Reality Toolkit per Unity](../unity/mrtk-getting-started.md) | Mixed Reality Toolkit per Unity è un kit di sviluppo multipiattaforma open source studiato per accelerare lo sviluppo di applicazioni destinate a Microsoft HoloLens, visori VR immersive per Windows Mixed Reality e alla piattaforma OpenVR. |
-| [Microsoft mesh](/mesh/overview) Anteprima privata | Completare il modulo [Microsoft mesh Register interest](https://aka.ms/meshsignup) per rimanere sempre aggiornati sugli annunci e le notizie sulla rete. Con mesh è possibile migliorare le riunioni virtuali, eseguire sessioni di progettazione virtuali, aiutare altri utenti in remoto e ospitare incontri virtuali. |
+| [Microsoft World Locking Tools](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/GettingStartedWithWorldLocking.html) | Fornisce un sistema di coordinate stabile e una regolazione della fotocamera che riduce al minimo le incoerenze visibili. |
+| [Microsoft Mesh](/mesh/overview) Anteprima privata | Completare [il modulo Microsoft Mesh Register Interest](https://aka.ms/meshsignup) per rimanere aggiornati con gli annunci e le notizie di Mesh. Con Mesh è possibile migliorare le riunioni virtuali, condurre sessioni di progettazione virtuale, aiutare altri utenti in remoto e ospitare riunioni virtuali. |
 
 ## <a name="cloud-services"></a>Servizi cloud
 
@@ -86,8 +87,8 @@ Per la creazione di app di Realtà mista con il motore Unreal sono disponibili d
 
 |  Strumento/SDK  |  Description  |
 | --- | --- |
-| [Strumenti UX per Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) | Gli strumenti UX sono il primo plug-in da rilasciare ed è attualmente supportato solo in HoloLens 2. Il plug-in include codice C++, progetti e asset di esempio di funzionalità di UX comuni per la simulazione di input, le interazioni con le mani, il magnetismo della superficie e altro ancora. |
-| [Strumenti di grafica per Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) | Strumenti di grafica è un plug-in di gioco UE con codice, progetti e asset di esempio creati per contribuire a migliorare la fedeltà visiva delle applicazioni di realtà miste pur rimanendo nel budget delle prestazioni. |
+| [Strumenti dell'esperienza utente per Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) | UX Tools è il primo plug-in che viene rilasciato ed è attualmente supportato solo in HoloLens 2. Il plug-in include codice C++, progetti e asset di esempio di funzionalità di UX comuni per la simulazione di input, le interazioni con le mani, il magnetismo della superficie e altro ancora. |
+| [Strumenti di grafica per Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) | Strumenti di grafica è un plug-in di gioco UE con codice, progetti e asset di esempio creati per migliorare la fedeltà visiva delle applicazioni di realtà mista mantenendo i budget delle prestazioni. |
 
 ## <a name="cloud-services"></a>Servizi cloud
 
