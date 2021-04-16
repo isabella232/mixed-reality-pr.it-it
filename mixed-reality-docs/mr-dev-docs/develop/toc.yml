@@ -116,71 +116,71 @@
                   href: unity/tutorials/mr-learning-pc-holographic-remoting-02.md
         - name: Esercitazioni per HoloLens (prima generazione) e per i visori VR immersive
           items:
-            - name: Funzionalità della realtà mista
+            - name: Funzionalità di realtà mista
               items:
-                - name: Nozioni di base di HoloLens (1st Gen) 100-Introduzione a Unity
+                - name: HoloLens (prima generazione) Nozioni di base 100 - Introduzione a Unity
                   href: unity/tutorials/holograms-100.md
-                - name: Nozioni di base su HoloLens (1a Gen) 101-progetto completo con dispositivo
+                - name: HoloLens (prima generazione) Nozioni di base 101 - Progetto completo con dispositivo
                   href: unity/tutorials/holograms-101.md
-                - name: Nozioni di base su HoloLens (1st Gen) 101E-completa progetto con emulatore
+                - name: HoloLens (prima generazione) Nozioni di base 101E - Progetto completo con emulatore
                   href: unity/tutorials/holograms-101e.md
-                - name: Input di HoloLens (1st Gen) 210-sguardi
+                - name: Input di HoloLens (prima generazione) 210 - Sguardo fisso
                   href: unity/tutorials/holograms-210.md
-                - name: HoloLens (1a Gen) input 211-gesture
+                - name: Input di HoloLens (prima generazione) 211 - Movimento
                   href: unity/tutorials/holograms-211.md
-                - name: Input di HoloLens (1a generazione) 212-Voice
+                - name: Input HoloLens (prima generazione) 212 - Voce
                   href: unity/tutorials/holograms-212.md
-                - name: HoloLens (1a Gen) Spatial 220-audio spaziale
+                - name: HoloLens (prima generazione) Spaziale 220 - Audio spaziale
                   href: unity/tutorials/holograms-220.md
-                - name: HoloLens (1a Gen) Spatial 230-mapping spaziale
+                - name: HoloLens (prima generazione) Spaziale 230 - Mapping spaziale
                   href: unity/tutorials/holograms-230.md
-                - name: HoloLens (1a generazione) che condivide 240-più dispositivi HoloLens
+                - name: HoloLens (prima generazione) Condivisione di 240 - Più dispositivi HoloLens
                   href: unity/tutorials/holograms-240.md
             - name: Realtà mista e servizi di Azure
               items:
-                - name: HoloLens (1a generazione) e Azure 301-traduzione in lingua
+                - name: HoloLens (prima generazione) e Azure 301 - Traduzione in lingua
                   href: unity/tutorials/mr-azure-301.md
-                - name: HoloLens (1a generazione) e Azure 302-visione artificiale
+                - name: HoloLens (prima generazione) e Azure 302 - Visione computer
                   href: unity/tutorials/mr-azure-302.md
-                - name: HoloLens (1a generazione) e Azure 302B-visione personalizzata
+                - name: HoloLens (prima generazione) e Azure 302b - Visione personalizzata
                   href: unity/tutorials/mr-azure-302b.md
-                - name: HoloLens (1a generazione) e Azure 303-comprensione del linguaggio naturale
+                - name: HoloLens (prima generazione) e Azure 303 - Comprensione del linguaggio naturale
                   href: unity/tutorials/mr-azure-303.md
-                - name: HoloLens (1st Gen) e Azure 304-Face Recognition
+                - name: HoloLens (prima generazione) e Azure 304 - Riconoscimento volto
                   href: unity/tutorials/mr-azure-304.md
-                - name: HoloLens (1a generazione) e Azure 305-funzioni e archiviazione
+                - name: HoloLens (prima generazione) e Azure 305 - Funzioni e archiviazione
                   href: unity/tutorials/mr-azure-305.md
-                - name: HoloLens (1a generazione) e Azure 306-video di streaming
+                - name: HoloLens (prima generazione) e Azure 306 - Streaming video
                   href: unity/tutorials/mr-azure-306.md
-                - name: HoloLens (1a generazione) e Azure 307-formazione maching
+                - name: HoloLens (prima generazione) e Azure 307 - Apprendimento maching
                   href: unity/tutorials/mr-azure-307.md
-                - name: HoloLens (1a generazione) e Azure 308-notifiche tra dispositivi
+                - name: HoloLens (prima generazione) e Azure 308 - Notifiche tra dispositivi
                   href: unity/tutorials/mr-azure-308.md
-                - name: HoloLens (1a generazione) e Azure 309-Applicaiton Insights
+                - name: HoloLens (prima generazione) e Azure 309 - Informazioni dettagliate su Applicaiton
                   href: unity/tutorials/mr-azure-309.md
-                - name: HoloLens (1a generazione) e Azure 310-rilevamento oggetti
+                - name: HoloLens (prima generazione) e Azure 310 - Rilevamento oggetti
                   href: unity/tutorials/mr-azure-310.md
-                - name: HoloLens (1a generazione) e Azure 311-Microsoft Graph
+                - name: HoloLens (prima generazione) e Azure 311 - Microsoft Graph
                   href: unity/tutorials/mr-azure-311.md
-                - name: HoloLens (1st Gen) e Azure 312-bot Integration
+                - name: HoloLens (prima generazione) e Azure 312 - Integrazione del bot
                   href: unity/tutorials/mr-azure-312.md
-                - name: HoloLens (1a generazione) e servizio Hub Azure 313-Internet
+                - name: HoloLens (prima generazione) e Azure 313 - Servizio hub IoT
                   href: unity/tutorials/mr-azure-301.md
     - name: Configurazione del progetto
       items:
-        - name: Scelta di una versione di Unity e plug-in XR
+        - name: Scelta di una versione di Unity e di un plug-in XR
           href: unity/choosing-unity-version.md
-        - name: Uso del supporto di XR incorporato legacy
+        - name: Uso del supporto XR incorporato legacy
           href: unity/legacy-xr-support.md
         - name: Uso del plug-in Windows XR
           href: unity/windows-xr-plugin.md
         - name: Uso del plug-in OpenXR
           href: unity/openxr-getting-started.md
-        - name: Funzionalità supportate per il plug-in OpenXR
+        - name: Funzionalità supportate dal plug-in OpenXR
           href: unity/openxr-supported-features.md
         - name: Strumento per la funzionalità di realtà mista
           items:
-            - name: Strumento per la funzionalità MR
+            - name: Introduzione a MR Feature Tool
               href: unity/welcome-to-mr-feature-tool.md
             - name: Configurare
               href: unity/configuring-feature-tool.md
@@ -196,8 +196,10 @@
       items:
         - name: Impostazione della fotocamera
           href: unity/camera-in-unity.md
-        - name: Ancoraggi nello spazio
+        - name: Ancoraggi spaziali e di blocco del mondo
           href: unity/spatial-anchors-in-unity.md
+        - name: Esperienze condivise
+          href: unity/shared-experiences-in-unity.md
         - name: Interazioni
           items:
             - name: Controller del movimento
@@ -218,9 +220,7 @@
           href: unity/spatial-sound-in-unity.md
     - name: Funzionalità avanzate
       items:
-        - name: Esperienze condivise
-          href: unity/shared-experiences-in-unity.md
-        - name: Fotocamera video foto in Unity
+        - name: Fotocamera con foto in Unity
           href: unity/locatable-camera-in-unity.md
         - name: Comunicazione remota olografica nell'app desktop
           href: unity/holographic-remoting-desktop.md
@@ -350,7 +350,7 @@
       items:
         - name: Kippy's Escape
           href: unreal/unreal-kippys-escape.md
-        - name: Esperienza di Ford GT40
+        - name: Esperienza Ford GT40
           href: unreal/unreal-ford-gt40.md
     - name: Distribuzione e pubblicazione
       items:
@@ -372,7 +372,7 @@
               href: javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md
             - name: 2. Preparare una scena con un oggetto 3D di base
               href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
-            - name: 3. Interagire con l'oggetto 3D
+            - name: 3. Interagire con un oggetto 3D
               href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
 - name: Nativo
   items:
