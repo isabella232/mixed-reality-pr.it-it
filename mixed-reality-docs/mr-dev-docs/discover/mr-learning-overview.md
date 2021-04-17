@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, apprendimento, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, traduzione, Azure, servizi cognitivi di Azure, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: c4e068dda72c4dc2f22ca0a56a835b334d90c713
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1dee5448448cca83d96eee352765ddc33b37d606
+ms.sourcegitcommit: 47c402dc8e588817ce60229bf019170fa36f3045
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102770329"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107581553"
 ---
 # <a name="mixed-reality-learn-overview"></a>Panoramica di Learn sulla realtà mista
 
@@ -20,7 +20,10 @@ Microsoft Learn è l'area dedicata all'apprendimento. È possibile scoprire nuov
 
 Durante lo sviluppo di soluzioni per la realtà mista, maggiore è il numero di strumenti disponibili, meglio è. Sebbene la documentazione e le esercitazioni scritte siano fondamentali, gli sviluppatori con maggiori capacità di apprendimento a livello visivo potranno avvalersi dei contenuti video disponibili in Microsoft Learn. Poiché vengono costantemente aggiunti nuovi moduli, è opportuno verificare ogni volta se sono presenti altri aggiornamenti.
 
-I moduli di Learn consentono di diventare sviluppatori esperti di soluzioni di realtà mista, fornendo una struttura basata su moduli che permette di iniziare a usare strumenti chiave come Mixed Reality Toolkit, Unity e i servizi di Realtà mista di Azure. Con la definizione degli obiettivi di apprendimento e dei requisiti e l'impostazione dell'intervallo di tempo previsto per il completamento in un'unica interfaccia, l'uso di Hello World è più facile che mai. È possibile iniziare subito a usare i moduli di Learn relativi alla realtà mista o guardare il [video](https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Microsoft-Learn) introduttivo a Microsoft Learn.
+I moduli di Learn consentono di diventare sviluppatori esperti di soluzioni di realtà mista, fornendo una struttura basata su moduli che permette di iniziare a usare strumenti chiave come Mixed Reality Toolkit, Unity e i servizi di Realtà mista di Azure. Con la definizione degli obiettivi di apprendimento e dei requisiti e l'impostazione dell'intervallo di tempo previsto per il completamento in un'unica interfaccia, l'uso di Hello World è più facile che mai. 
+
+> [!div class="nextstepaction"]
+> [Introduzione al percorso di apprendimento sulla realtà mista](https://docs.microsoft.com/learn/browse/?terms=mixed%20reality)
 
 ## <a name="general-modules"></a>Moduli generali
 
@@ -70,14 +73,14 @@ Al termine del modulo, si sarà in grado di:
 * Integrare il servizio Voce con un'applicazione di Windows Mixed Reality
 * Usare il riconoscimento vocale per tradurre testo
 
-### <a name="render-a-model-with-azure-remote-rendering"></a>[Eseguire il rendering di un modello con il rendering remoto di Azure](/learn/modules/render-model-azure-remote-rendering-unity/)
+### <a name="render-a-model-with-azure-remote-rendering"></a>[Eseguire il rendering di un modello con Rendering remoto di Azure](/learn/modules/render-model-azure-remote-rendering-unity/)
 
-Creare una sessione di rendering remoto di Azure ed eseguire il rendering di un modello 3D.
+Creare una sessione di Rendering remoto di Azure ed eseguire il rendering di un modello 3D.
 
 **Obiettivi di apprendimento**
 
 Al termine del modulo, si sarà in grado di:
 
-* Creare una sessione di rendering remoto
+* Creare una sessione di Rendering remoto
 * Caricare un modello 3D
 * Eseguire il rendering di un modello 3D

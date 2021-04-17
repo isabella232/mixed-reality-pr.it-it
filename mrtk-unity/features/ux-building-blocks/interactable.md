@@ -1,132 +1,132 @@
 ---
-title: Con cui
+title: Interagibile
 description: Panoramica sul componente script interactable in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, interactable, eventi,
-ms.openlocfilehash: 52e37fd127bc2c50e3627b18c80657150841ec2b
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, interagiscibile, eventi,
+ms.openlocfilehash: f141a394ec9395e0a27cc964caeb66654fb6fe08
+ms.sourcegitcommit: 47c402dc8e588817ce60229bf019170fa36f3045
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104689241"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107581563"
 ---
-# <a name="interactable"></a>Con cui
+# <a name="interactable"></a>Interagibile
 
-![Con cui](../images/interactable/InteractableExamples.png)
+![Interagibile](../images/interactable/InteractableExamples.png)
 
-Il [`Interactable`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) componente è un contenitore All-in-One per rendere qualsiasi oggetto facilmente *interactabile* e reattivo all'input. Interactable funge da catch-all per tutti i tipi di input, tra cui il tocco, i raggi di mano, il parlato e così via, e l'imbuto di queste interazioni negli [eventi](#events) e nelle risposte del [tema](visual-themes.md) Questo componente fornisce un modo semplice per creare pulsanti, modificare il colore degli oggetti con lo stato attivo e altro ancora.
+Il [`Interactable`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) componente è un contenitore all-in-one per rendere qualsiasi oggetto facilmente *intervienibile* e reattivo all'input. Interactable funge da catch-all per tutti i tipi di input, tra cui tocco, raggi della mano, voce e così via, e incanalare queste interazioni in eventi e risposte [del](visual-themes.md) tema visivo. [](#events) Questo componente offre un modo semplice per creare pulsanti, modificare il colore degli oggetti con lo stato attivo e altro ancora.
 
-## <a name="how-to-configure-interactable"></a>Come configurare interactable
+## <a name="how-to-configure-interactable"></a>Come configurare Interactable
 
-Il componente consente tre sezioni principali della configurazione:
+Il componente consente tre sezioni principali di configurazione:
 
 1) [Configurazione di input generale](#general-input-settings)
-1) [Temi visivi](visual-themes.md) destinati a più GameObject
+1) [Temi visivi destinati](visual-themes.md) a più GameObject
 1) [Gestori eventi](#events)
 
 ### <a name="general-input-settings"></a>Impostazioni di input generali
 
-![Impostazioni generali per l'interazione](../images/interactable/InputFeatures_short.png)
+![Impostazioni generali interagiscibili](../images/interactable/InputFeatures_short.png)
 
 **Stati**
 
-*States* è un parametro [ScriptableObject](https://docs.unity3d.com/Manual/class-ScriptableObject.html) che definisce le fasi di interazione, ad esempio premere o osservato, per i profili e i [temi visivi](visual-themes.md) [interagibili](#interactable-profiles) .
+*States* è un [parametro ScriptableObject](https://docs.unity3d.com/Manual/class-ScriptableObject.html) che definisce le fasi di interazione, ad esempio press o observed, per i profili [interagiscibili](#interactable-profiles) e i [temi visivi.](visual-themes.md)
 
-**DefaultInteractableStates** (assets/MRTK/SDK/features/UX/interactable/States/DefaultInteractableStates. asset) viene fornito con MRTK predefinito ed è il parametro predefinito per i componenti *interagibili* .
+**DefaultInteractableStates** (Assets/MRTK/SDK/Features/UX/Interactable/States/DefaultInteractableStates.asset) viene fornito con MRTK predefinito ed è  il parametro predefinito per i componenti interagiscibili.
 
-![Esempio di ScriptableObject di stati in Inspector](../images/interactable/DefaultInteractableStates.png)
+![Esempio di ScriptableObject di stati nel controllo](../images/interactable/DefaultInteractableStates.png)
 
-L'asset *DefaultInteractableStates* contiene quattro Stati e usa l' [`InteractableStates`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableStates) implementazione del modello di stato.
+*L'asset DefaultInteractableStates* contiene quattro stati e usa l'implementazione [`InteractableStates`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableStates) del modello di stato.
 
-* **Impostazione predefinita**: non viene eseguita alcuna operazione. si tratta dello stato di base più isolato.
+* **Impostazione** predefinita: non accade nulla, si tratta dello stato di base più isolato.
 
-* **Focus**: l'oggetto a cui si fa riferimento. Si tratta di uno stato singolo, nessun altro stato è attualmente impostato, ma il valore predefinito è rango.
+* **Stato attivo:** l'oggetto viene puntato a . Si tratta di un singolo stato, non sono attualmente impostati altri stati, ma il valore predefinito sarà il più alto.
 
-* **Premere**: viene fatto riferimento all'oggetto e viene premuto un pulsante o una mano. Per impostazione predefinita, lo stato viene impostato su Allinea e lo stato attivo. Questo stato verrà inoltre impostato come fallback per la pressione fisica.
+* **Premere**: l'oggetto viene puntato e viene premuto un pulsante o una mano. Lo stato Press out (Stato di pressione) classifica Default (Predefinito) e Focus (Stato attivo). Questo stato verrà impostato anche come fallback alla pressione fisica.
 
-* **Disabilitato**: il pulsante non deve essere interattivo e il feedback visivo consente all'utente di verificare se per qualche motivo questo pulsante non è utilizzabile in questo momento. In teoria, lo stato disabilitato potrebbe contenere tutti gli altri Stati, ma se abilitato è disattivato, lo stato disabilitato trionferà su tutti gli altri Stati.
+* **Disabilitato:** il pulsante non deve essere interattivo e il feedback visivo invierà all'utente se per qualche motivo questo pulsante non è utilizzabile al momento. In teoria, lo stato disabilitato può contenere tutti gli altri stati, ma quando l'opzione Abilitato è disattivata, lo stato Disabilitato non è attivo per tutti gli altri stati.
 
-A seconda dell'ordine nell'elenco, viene assegnato un valore di bit (#) allo stato.
+Un valore di bit (#) viene assegnato allo stato a seconda dell'ordine nell'elenco.
 
 > [!NOTE]
-> È in genere consigliabile usare **DefaultInteractableStates** (assets/MRTK/SDK/features/UX/interactable/States/DefaultInteractableStates. asset) quando si creano componenti *interagibili* .
+> È in genere consigliabile usare **DefaultInteractableStates** (Assets/MRTK/SDK/Features/UX/Interactable/States/DefaultInteractableStates.asset) durante la creazione di componenti *interattivi.*
 >
-> Tuttavia, sono disponibili 17 Stati interagibili che possono essere usati per guidare i temi, anche se alcuni sono pensati per essere gestiti da altri componenti. Di seguito è riportato un elenco di quelli con funzionalità predefinite.
+> Tuttavia, sono disponibili 17 stati con interazione che possono essere usati per la guida dei temi, anche se alcuni sono destinati a essere guidati da altri componenti. Di seguito è riportato un elenco di quelli con funzionalità incorporate.
 >
-> * Visitata: è stato fatto clic su interactable.
-> * Attivato/disattivato: il pulsante è in uno stato o un indice della dimensione disattivato è un numero dispari.
-> * Gesto: la mano o il controller è stato premuto ed è stato spostato dalla posizione originale.
-> * VoiceCommand: è stato usato un comando per la sintesi vocale per attivare l'interazione.
-> * PhysicalTouch: è attualmente rilevato un input tocco, [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) da usare per abilitare.
-> * Acquisisci: una mano è attualmente in fase di acquisizione nei limiti dell'oggetto, usare [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable) per abilitare
+> * Visitato: è stato fatto clic su Interactable.
+> * Attiva/Disattiva: il pulsante si trova in uno stato attivato/disattivato o l'indice dimensione è un numero dispari.
+> * Movimento: la mano o il controller è stato premuto ed è stato spostato dalla posizione originale.
+> * VoiceCommand: è stato usato un comando vocale per attivare Interactable.
+> * PhysicalTouch: è attualmente rilevato un input tocco, usare [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) per abilitare.
+> * Afferra: una mano sta attualmente afferrando i limiti dell'oggetto, usare [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable) per abilitare
 
 **Enabled**
 
-Consente di attivare o meno l'abilitazione di un oggetto che interagisce. Corrisponde al [`Interactable.IsEnabled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsEnabled) nel codice.
+Attiva o disattiva l'attivazione di un oggetto Interactable. Corrisponde a [`Interactable.IsEnabled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsEnabled) nel codice.
 
-Una proprietà abilitata per *Interact* è diversa dalla proprietà Enabled configurata tramite GameObject/Component (ovvero Seattivo e così via). La disabilitazione di GameObject *o di* monobehavior interattivi comporta la disabilitazione di tutti gli elementi nella classe, inclusi input, temi visivi, eventi e così via. La disabilitazione [`Interactable.IsEnabled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsEnabled) di via Disabilita la maggior parte della gestione degli input, reimpostando gli Stati di input correlati. Tuttavia, la classe continuerà a eseguire tutti i frame e a ricevere eventi di input che verranno ignorati. Questa operazione è utile per visualizzare lo stato interattivo in uno stato disabilitato, che può essere eseguito tramite temi visivi. Un esempio tipico è costituito da un pulsante di invio in attesa del completamento di tutti i campi di input necessari.
+La *proprietà abilitata di un oggetto Interactable* è diversa dalla proprietà abilitata configurata tramite GameObject/Component ,ad esempio SetActive e così via). La disabilitazione di GameObject o *Interactable* MonoBehaviour disabilita l'esecuzione di tutti gli elementi della classe, inclusi input, temi visivi, eventi e così via. La disabilitazione tramite [`Interactable.IsEnabled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsEnabled) disabilita la maggior parte della gestione dell'input, reimpostando gli stati di input correlati. Tuttavia, la classe eseguirà comunque ogni frame e riceverà eventi di input che verranno ignorati. Ciò è utile per visualizzare l'oggetto Interactable in uno stato disabilitato che può essere eseguito tramite temi visivi. Un esempio tipico è un pulsante di invio in attesa del completamento di tutti i campi di input necessari.
 
 **Azioni di input**
 
-Consente di selezionare l' [azione di input](../input/input-actions.md) dal profilo di configurazione di input o di mapping del controller a cui il componente *interagibile* deve rispondere.
+Selezionare [l'azione di input](../input/input-actions.md) dal profilo di mapping della configurazione di input o del controller a cui deve reagire il componente *Interactable.*
 
 Questa proprietà può essere configurata in fase di esecuzione nel codice tramite [`Interactable.InputAction`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.InputAction) .
 
 **IsGlobal**
 
-Se true, il componente viene contrassegnato come listener di input globale per l'azione di [input](../input/input-actions.md)selezionata. Il comportamento predefinito è false che consente di limitare l'input solo a questo Collider/GameObject di *interazione* .
+Se true, il componente verrà contrassegnato come listener di input globale per l'azione [di input selezionata.](../input/input-actions.md) Il comportamento predefinito è false,  che limita l'input solo a questo collisore interactable/GameObject.
 
 Questa proprietà può essere configurata in fase di esecuzione nel codice tramite [`Interactable.IsGlobal`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsGlobal) .
 
-**Comando sintesi vocale**
+**Comando Voce**
 
-[Comando di sintesi vocale](../input/speech.md), dal profilo dei comandi di sintesi vocale MRTK, per attivare un evento OnClick per l'interazione vocale.
+[Comando voce](../input/speech.md), dal profilo comandi vocali MRTK, per attivare un evento OnClick per l'interazione vocale.
 
 Questa proprietà può essere configurata in fase di esecuzione nel codice tramite [`Interactable.VoiceCommand`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.VoiceCommand) .
 
 **Richiede lo stato attivo**
 
-Se true, il comando Voice attiverà solo l'interoperabilità *solo se è* già stato attivato da un puntatore. Se false, l' *interfaccia* interoperabile fungerà da listener globale per il comando Voice selezionato. Il comportamento predefinito è true, in quanto più listener di riconoscimento vocale globale possono essere difficili da organizzare in una scena.
+Se true, il comando vocale attiverà *l'oggetto Interactable* solo se e solo se ha già lo stato attivo da un puntatore. Se false, *interactable* fungerà da listener globale per il comando vocale selezionato. Il comportamento predefinito è true, perché più listener vocali globali possono essere difficili da organizzare in una scena.
 
 Questa proprietà può essere configurata in fase di esecuzione nel codice tramite [`Interactable.VoiceRequiresFocus`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.VoiceRequiresFocus) .
 
 **Modalità di selezione**
 
-Questa proprietà definisce la logica di selezione. Quando si fa clic su un oggetto *interactable* , viene iterato in un livello di *dimensione* successivo. *Dimensions* è simile a Rank e definisce uno stato al di fuori degli input (ad esempio concentrarsi, premere e così via. Sono utili per definire gli Stati di attivazione/disattivazione o altri Stati con più livelli associati a un pulsante. Il livello della dimensione corrente viene rilevato da `Interactable.DimensionIndex` .
+Questa proprietà definisce la logica di selezione. Quando si *fa clic* su un oggetto Interactable, esegue l'iterazione in un livello *dimensione* successivo. *Le* dimensioni sono simili alla classificazione e definiscono uno stato all'esterno degli input ,ad esempio stato attivo, premere e così via). Sono utili per definire gli stati toggle o altri stati a più classifica associati a un pulsante. Il livello dimensione corrente viene monitorato da `Interactable.DimensionIndex` .
 
 Le modalità di selezione disponibili sono:
 
-* **Pulsante**  -  *Dimensioni* = 1, semplice e *interattivo* selezionabile
-* **Imposta/Nascondi**  -  *Dimensioni* = *2,* alternanze  / *interattive* tra lo stato disattivato
-* **MULTIDIMENSIONE**  -  *Dimensions* >= 3, ogni clic aumenta il livello della dimensione corrente + 1. Utile per definire lo stato di un pulsante in un elenco e così via.
+* **Pulsante**  -  *Dimensions* = 1, simple clickable *Interactable*
+* **Attiva/Disattiva**  -  *Dimensioni* = 2, *alternabile con* interazione tra *lo stato on* / *off*
+* **Più dimensioni**  -  *Dimensioni* >= 3, ogni clic aumenta il livello di dimensione corrente + 1. Utile per definire lo stato di un pulsante in un elenco e così via.
 
-*Interactable* consente inoltre di definire più temi per *dimensione*. Ad esempio, quando *SelectionMode = interruttore*, un tema può essere applicato quando l'elemento *Interagisci* viene *deselezionato* e un altro tema viene applicato quando il componente è *selezionato*.
+*L'interazione* consente anche di definire più temi per ogni *dimensione.* Ad esempio, quando *SelectionMode=Toggle* è possibile applicare  un tema quando *interactable* è deselezionato e un altro tema applicato quando il componente è *selezionato.*
 
-La modalità di selezione corrente può essere sottoposta a query in fase di esecuzione tramite [`Interactable.ButtonMode`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.ButtonMode) . L'aggiornamento della modalità in fase di esecuzione può essere eseguito impostando la  [`Interactable.Dimensions`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.Dimensions) Proprietà in modo che corrisponda alla funzionalità desiderata. Inoltre, è possibile accedere alla dimensione corrente, utile per le modalità di *attivazione/disattivazione* e *MULTIDIMENSIONE* , tramite [`Interactable.CurrentDimension`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.CurrentDimension) .
+È possibile eseguire query sulla modalità di selezione corrente in fase di esecuzione tramite [`Interactable.ButtonMode`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.ButtonMode) . L'aggiornamento della modalità in fase di esecuzione può essere ottenuto impostando la  [`Interactable.Dimensions`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.Dimensions) proprietà in modo che corrisponda alla funzionalità desiderata. Inoltre, è possibile accedere alla dimensione corrente, utile per le modalità *Toggle* e *Multi-Dimension,* tramite [`Interactable.CurrentDimension`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.CurrentDimension) .
 
-### <a name="interactable-profiles"></a>Profili interagibili
+### <a name="interactable-profiles"></a>Profili con interazione
 
-I *profili* sono elementi che creano una relazione tra un GameObject e un [tema visivo](visual-themes.md). Il profilo definisce il contenuto che verrà modificato da un tema quando [si verifica una modifica dello stato](#general-input-settings).
+*I* profili sono elementi che creano una relazione tra un GameObject e un [tema visivo.](visual-themes.md) Il profilo definisce il contenuto che verrà modificato da un tema quando si verifica [una modifica dello stato.](#general-input-settings)
 
-I temi funzionano in modo molto simile ai materiali. Sono oggetti configurabili tramite script che contengono un elenco di proprietà che verranno assegnate a un oggetto in base allo stato corrente. Anche i temi sono riutilizzabili e possono essere assegnati tra più oggetti UX di *interazione* .
+I temi funzionano molto come i materiali. Sono oggetti che possono essere creati da script che contengono un elenco di proprietà che verranno assegnate a un oggetto in base allo stato corrente. I temi sono anche riutilizzabili e possono essere assegnati a più *oggetti dell'esperienza utente* interagibili.
 
-**Reimposta in eliminazione**
+**Reimposta in base all'eliminazione**
 
-I temi visivi modificano varie proprietà in un GameObject di destinazione, a seconda della classe e del tipo di motore di tema selezionato. Se *Reset on Destroy* è true quando il componente interactable viene eliminato definitivamente, il componente Reimposta tutte le proprietà modificate dai temi attivi ai valori originali. In caso contrario, quando viene distrutta, il componente interactable lascerà le proprietà modificate così come sono. In quest'ultimo caso, l'ultimo stato dei valori verrà mantenuto a meno che non venga modificato da un altro componente esterno. Il valore predefinito è false.
+I temi visivi modificano varie proprietà in un GameObject di destinazione, a seconda della classe e del tipo di motore del tema selezionato. Se *Reset On Destroy è* true quando il componente Interactable viene eliminato, il componente reimposta tutte le proprietà modificate dai temi attivi ai valori originali. In caso contrario, quando viene eliminato, il componente Interactable lascia tutte le proprietà modificate così come sono. In quest'ultimo caso, l'ultimo stato dei valori verrà mantenuto a meno che non venga modificato da un altro componente esterno. Il valore predefinito è false.
 
 <img src="../images/interactable/Profiles_Themes.png" width="450" alt="Profile theams">
 
 ## <a name="events"></a>Eventi
 
-Ogni componente *interagibile* ha un evento *OnClick* che viene attivato quando il componente viene semplicemente selezionato. Tuttavia, *è* possibile utilizzare Interoperable per rilevare eventi di input diversi da solo *OnClick*.
+Ogni *componente interactable* ha un *evento OnClick* che viene generato quando il componente viene semplicemente selezionato. È tuttavia *possibile usare Interactable* per rilevare eventi di input diversi da *OnClick.*
 
-Fare clic sul pulsante *Aggiungi evento* per aggiungere un nuovo tipo di definizione del ricevitore di eventi. Una volta aggiunto, selezionare il tipo di evento desiderato.
+Fare clic *sul pulsante Aggiungi* evento per aggiungere un nuovo tipo di definizione del ricevitore di eventi. Dopo l'aggiunta, selezionare il tipo di evento desiderato.
 
 ![Esempio di eventi](../images/interactable/Events.png))
 
-Esistono diversi tipi di destinatari di eventi per rispondere a diversi tipi di input. MRTK viene fornito con il seguente set di ricevitori predefiniti.
+Esistono diversi tipi di ricevitori di eventi per rispondere a diversi tipi di input. MRTK viene fornito con il set predefinito di ricevitori seguente.
 
 * [`InteractableAudioReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableAudioReceiver)
 * [`InteractableOnClickReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnClickReceiver)
@@ -137,33 +137,33 @@ Esistono diversi tipi di destinatari di eventi per rispondere a diversi tipi di 
 * [`InteractableOnToggleReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnToggleReceiver)
 * [`InteractableOnTouchReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnTouchReceiver)
 
-Per creare un ricevitore personalizzato, è possibile creare una nuova classe che estenda [`ReceiverBase`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase) .
+È possibile creare un ricevitore personalizzato tramite una nuova classe che estende [`ReceiverBase`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase) .
 
-![Esempio di ricevitore interruttore evento](../images/interactable/Event_toggle.png)
+![Esempio di ricevitore di attivazione/disattivazione eventi](../images/interactable/Event_toggle.png)
 
-*Esempio di ricevitore di eventi di attivazione/disattivione*
+*Esempio di un ricevitore di eventi Toggle*
 
-### <a name="interactable-receivers"></a>Ricevitori interagiscono
+### <a name="interactable-receivers"></a>Ricevitori interagibili
 
- Il [`InteractableReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableReceiver) componente consente di definire gli eventi all'esterno del componente *interactabile* di origine. *InteractableReceiver* resterà in ascolto di un tipo di evento filtrato generato da un altro *interactable*. Se la proprietà *interagibile* non viene assegnata direttamente, la proprietà dell' *ambito di ricerca* definisce la direzione in cui *InteractableReceiver* è in ascolto per gli eventi che si trova su se stesso, in un elemento padre o in un GameObject figlio.
+ Il [`InteractableReceiver`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableReceiver) componente consente di definire eventi all'esterno del componente *interactable di* origine. *InteractableReceiver rimane* in ascolto di un tipo di evento filtrato attivato da un *altro oggetto Interactable.* Se la proprietà *Interactable* non è  assegnata direttamente, la proprietà Ambito di ricerca definisce la direzione in cui *InteractableReceiver* è in ascolto di eventi che si verificano su se stesso, in un elemento padre o in un GameObject figlio.
 
 [`InteractableReceiverList`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableReceiverList) funziona in modo simile, ma per un elenco di eventi corrispondenti.
 
 <img src="../images/interactable/InteractableReceiver.png" width="450" alt="Interactable reciver">
 
-### <a name="create-custom-events"></a>Creazione di eventi personalizzati
+### <a name="create-custom-events"></a>Creare eventi personalizzati
 
-Analogamente ai [temi visivi](visual-themes.md#custom-theme-engines), gli eventi possono essere estesi per rilevare qualsiasi modello di stato o per esporre la funzionalità.
+Come [i temi visivi,](visual-themes.md#custom-theme-engines)gli eventi possono essere estesi per rilevare qualsiasi modello di stato o esporre funzionalità.
 
 Gli eventi personalizzati possono essere creati in due modi principali:
 
-1) Estendere la [`ReceiverBase`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase) classe per creare un evento personalizzato che sarà visualizzato nell'elenco a discesa dei tipi di evento. Per impostazione predefinita viene fornito un evento Unity, ma è possibile aggiungere altri eventi Unity oppure è possibile impostare l'evento in modo da nascondere gli eventi Unity. Questa funzionalità consente a una finestra di progettazione di collaborare con un tecnico di un progetto per creare un evento personalizzato che la finestra di progettazione può configurare nell'editor.
+1) Estendere la [`ReceiverBase`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase) classe per creare un evento personalizzato che verrà visualizzato nell'elenco a discesa dei tipi di evento. Per impostazione predefinita, viene fornito un evento Unity, ma è possibile aggiungere altri eventi di Unity oppure impostare l'evento in modo da nascondere gli eventi di Unity. Questa funzionalità consente a una finestra di progettazione di lavorare con un tecnico su un progetto per creare un evento personalizzato che la finestra di progettazione può configurare nell'editor.
 
-1) Estendere la [`ReceiverBaseMonoBehavior`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBaseMonoBehavior) classe per creare un componente evento completamente personalizzato che può risiedere in  un altro oggetto. Il [`ReceiverBaseMonoBehavior`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBaseMonoBehavior) fa riferimento a *interactable* per rilevare le modifiche di stato.
+1) Estendere la [`ReceiverBaseMonoBehavior`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBaseMonoBehavior) classe per creare un componente dell'evento completamente personalizzato che può risiedere nell'oggetto *Interactable* o in un altro oggetto. [`ReceiverBaseMonoBehavior`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBaseMonoBehavior)L'oggetto farà riferimento a *Interactable* per rilevare le modifiche di stato.
 
 #### <a name="example-of-extending-receiverbase"></a>Esempio di estensione `ReceiverBase`
 
-La [`CustomInteractablesReceiver`](xref:Microsoft.MixedReality.Toolkit.UI) classe Visualizza informazioni sullo stato di un' *interfaccia interactabile* ed è un esempio di creazione di un ricevitore di eventi personalizzato.
+La classe visualizza informazioni sullo stato di un oggetto Interactable ed è un esempio di [`CustomInteractablesReceiver`](xref:Microsoft.MixedReality.Toolkit.UI) come creare un ricevitore di eventi  personalizzato.
 
 ```c#
 public CustomInteractablesReceiver(UnityEvent ev) : base(ev, "CustomEvent")
@@ -172,7 +172,7 @@ public CustomInteractablesReceiver(UnityEvent ev) : base(ev, "CustomEvent")
 }
 ```
 
-I metodi seguenti sono utili per eseguire l'override o l'implementazione durante la creazione di un ricevitore di eventi personalizzato. [`ReceiverBase.OnUpdate()`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase) è un metodo astratto che può essere utilizzato per rilevare le transizioni/modelli di stato. Inoltre, i [`ReceiverBase.OnVoiceCommand()`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase) [`ReceiverBase.OnClick()`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase) metodi e sono utili per la creazione di una logica di evento personalizzata quando si seleziona *interactabile* .
+I metodi seguenti sono utili per eseguire l'override o l'implementazione quando si crea un ricevitore di eventi personalizzato. [`ReceiverBase.OnUpdate()`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase) è un metodo astratto che può essere usato per rilevare i modelli/transizioni di stato. Inoltre, i [`ReceiverBase.OnVoiceCommand()`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase) metodi e sono utili per la creazione di logica di eventi personalizzata quando si seleziona [`ReceiverBase.OnClick()`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase) *Interactable.*
 
 ```c#
 public override void OnUpdate(InteractableStates state, Interactable source)
@@ -203,37 +203,37 @@ public virtual void OnClick(InteractableStates state,
 
 ##### <a name="displaying-custom-event-receiver-fields-in-the-inspector"></a>Visualizzazione dei campi del ricevitore di eventi personalizzati nel controllo
 
-Gli script *ReceiverBase* usano [`InspectorField`](xref:Microsoft.MixedReality.Toolkit.Utilities.Editor.InspectorField) gli attributi per esporre le proprietà personalizzate nel controllo. Di seguito è riportato un esempio di Vector3, una proprietà personalizzata con le informazioni sull'etichetta e la descrizione comando. Questa proprietà viene visualizzata come configurabile nel controllo quando è selezionato *un GameObject* interoperabile e il tipo di *ricevitore di eventi* associato è stato aggiunto.
+*Gli script ReceiverBase* [`InspectorField`](xref:Microsoft.MixedReality.Toolkit.Utilities.Editor.InspectorField) usano gli attributi per esporre le proprietà personalizzate nel controllo. Ecco un esempio di Vector3, una proprietà personalizzata con informazioni su descrizione comando ed etichetta. Questa proprietà verrà mostrata come configurabile nel controllo quando viene selezionato un *oggetto GameObject* interagiscibile con il tipo *di* ricevitore di eventi associato aggiunto.
 
 ```c#
 [InspectorField(Label = "<Property label>",Tooltip = "<Insert tooltip info>",Type = InspectorField.FieldTypes.Vector3)]
 public Vector3 EffectOffset = Vector3.zero;
 ```
 
-## <a name="how-to-use-interactable"></a>Come usare interactable
+## <a name="how-to-use-interactable"></a>Come usare Interactable
 
-### <a name="building-a-simple-button"></a>Creazione di un pulsante semplice
+### <a name="building-a-simple-button"></a>Compilazione di un pulsante semplice
 
-È possibile creare un pulsante semplice aggiungendo il componente *Interactabile* a un GameObject configurato per la ricezione di eventi di input. Può avere un Collider o un elemento figlio per ricevere input. Se si usa l'interfaccia *interagibile* con un GameObject basato sull'interfaccia utente di Unity, deve trovarsi sotto il GameObject Canvas.
+È possibile creare un pulsante semplice aggiungendo il *componente Interactable* a un GameObject configurato per ricevere eventi di input. Può avere un collisore su di esso o su un figlio per ricevere l'input. Se si *usa Interactable* con un GameObject basato sull'interfaccia utente di Unity, deve essere in Canvas GameObject.
 
-Prendere il pulsante più avanti creando un nuovo profilo, assegnando il GameObject stesso e creando un nuovo tema. Inoltre, utilizzare l'evento *OnClick* per eseguire un'operazione.
+Fare un ulteriore passo avanti con il pulsante, creando un nuovo profilo, assegnando lo stesso GameObject e creando un nuovo tema. Usare anche *l'evento OnClick* per eseguire un'altra verifica.
 
 > [!NOTE]
-> Per rendere la pressione di un [pulsante](button.md) è necessario il [`PressableButton`](xref:Microsoft.MixedReality.Toolkit.UI.PressableButton) componente. Inoltre, il [`PhysicalPressEventRouter`](xref:Microsoft.MixedReality.Toolkit.PhysicalPressEventRouter) componente è necessario per l'imbuto degli eventi di pressione nel componente *interactabile* .
+> La pressione [di un pulsante](button.md) richiede il componente [`PressableButton`](xref:Microsoft.MixedReality.Toolkit.UI.PressableButton) . Inoltre, il componente è necessario per incanalare gli eventi [`PhysicalPressEventRouter`](xref:Microsoft.MixedReality.Toolkit.PhysicalPressEventRouter) di pressione nel componente *Interactable.*
 
-### <a name="creating-toggle-and-multi-dimension-buttons"></a>Creazione di pulsanti di attivazione/disattivazione e MULTIDIMENSIONE
+### <a name="creating-toggle-and-multi-dimension-buttons"></a>Creazione di pulsanti di attivazione/disattivazione e multi-dimensione
 
 #### <a name="toggle-button"></a>Interruttore
 
-Per impostare un pulsante in modo da attivarlo, impostare il [`Selection Mode`](xref:Microsoft.MixedReality.Toolkit.UI.SelectionModes) campo su tipo `Toggle` . Nella sezione *profili* viene aggiunto un nuovo tema attivato per ogni profilo che viene usato quando il controllo *interattivo* è attivato.
+Per rendere attiva/disattiva un pulsante, modificare il [`Selection Mode`](xref:Microsoft.MixedReality.Toolkit.UI.SelectionModes) campo in digitare `Toggle` . Nella sezione *Profili* viene aggiunto un nuovo tema attivato/disattivato per ogni profilo usato quando l'elemento *Interactable* è attivato.
 
-Mentre l'oggetto [`SelectionMode`](xref:Microsoft.MixedReality.Toolkit.UI.SelectionModes) è impostato su interruttore, è  possibile utilizzare la casella di controllo attivato per impostare il valore predefinito del controllo in fase di inizializzazione in fase di esecuzione.
+Mentre è [`SelectionMode`](xref:Microsoft.MixedReality.Toolkit.UI.SelectionModes) impostata su Toggle, la casella di controllo *IsToggled* può essere usata per impostare il valore predefinito del controllo in fase di inizializzazione di runtime.
 
-*CanSelect* significa che *interagisce* può passare dall' *esterno* a *on* mentre il *CanDeselect* indica l'inverso.
+*CanSelect* indica che *l'oggetto Interactable* può andare da *un'opzione* all'altro *mentre* *CanDeselect* indica l'inverso.
 
-![Esempio di profilatura di elementi visivi](../images/interactable/Profile_toggle.png)
+![Esempio di attivazione/disattivazione dei temi visivi del profilo](../images/interactable/Profile_toggle.png)
 
-Gli sviluppatori possono utilizzare le [`SetToggled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) [`IsToggled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) interfacce e per ottenere/impostare lo stato di attivazione/disinstallazione di un codice *interattivo* tramite codice.
+Gli sviluppatori possono usare le [`SetToggled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) interfacce e per ottenere/impostare lo stato di [`IsToggled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) attivazione/disattivazione di *un oggetto Interactable* tramite codice.
 
 ```c#
 // If using SelectionMode = Toggle (i.e Dimensions == 2)
@@ -245,33 +245,33 @@ myInteractable.IsToggled = true;
 bool isSelected = myInteractable.IsToggled;
 ```
 
-##### <a name="toggle-button-collection"></a>Imposta/Rimuovi pulsante
+##### <a name="toggle-button-collection"></a>Attivare/disattivare la raccolta di pulsanti
 
-È comune avere un elenco di pulsanti di attivazione, in cui solo uno può essere attivo in qualsiasi momento, anche noto come un set radiale o pulsanti di opzione e così via.
+È comune avere un elenco di pulsanti di attivazione/disattivazione in cui solo uno può essere attivo in un determinato momento, noto anche come set radiale o pulsanti di opzione e così via.
 
-Utilizzare il [`InteractableToggleCollection`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableToggleCollection) componente per abilitare questa funzionalità. Questo controllo garantisce che venga attivato un solo *Interactabile* in un determinato momento. Il *RadialSet* (assets/MRTK/SDK/features/UX/interactable/prefabrics/RadialSet. prefabbricate) è anche un ottimo punto di partenza.
+Usare il [`InteractableToggleCollection`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableToggleCollection) componente per abilitare questa funzionalità. Questo controllo garantisce l'attivazione di un solo elemento *Interactable* in un determinato momento. *RadialSet* (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/RadialSet.prefab) è anche un ottimo punto di partenza predefinito.
 
-Per creare un gruppo di pulsanti radiali personalizzati:
+Per creare un gruppo di pulsanti radiali personalizzato:
 
-1) Crea più GameObject/pulsanti *Interagiscabili*
-1) Impostare ogni *interagire* con *SelectionMode* = interruttore, *CanSelect* = true e *CanDeselect* = false
-1) Creare un GameObject padre vuoto su tutti i *Interactables* e aggiungere il componente *InteractableToggleCollection*
-1) Aggiungere tutti *Interactables* a *ToggleList* in *InteractableToggleCollection*
-1) Impostare la proprietà *InteractableToggleCollection. CurrentIndex* per determinare quale pulsante è selezionato per impostazione predefinita all'avvio
+1) Creare più *GameObject/pulsanti* con supporto per l'interazione
+1) Impostare ogni *oggetto Interactable* *con SelectionMode* = Toggle, *CanSelect* = true e *CanDeselect* = false
+1) Creare un GameObject padre vuoto su tutti *gli oggetti Interactable e* aggiungere il componente *InteractableToggleCollection*
+1) Aggiungere tutti *gli oggetti Interactable* a *ToggleList* in *InteractableToggleCollection*
+1) Impostare la *proprietà InteractableToggleCollection.CurrentIndex* per determinare quale pulsante è selezionato per impostazione predefinita all'inizio
 
 <img src="../images/interactable/InteractableToggleCollection.png" width="450" alt="Toggle collection">
 
 #### <a name="multi-dimensional-button"></a>Pulsante multidimensionale
 
-La modalità di selezione MULTIDIMENSIONE viene utilizzata per creare pulsanti sequenziali o un pulsante che include più di due passaggi, ad esempio il controllo della velocità con tre valori, veloce (1x), più veloce (2x) o più veloce (3x).
+La modalità di selezione multi-dimensione viene usata per creare pulsanti sequenziali o un pulsante con più di due passaggi, ad esempio il controllo della velocità con tre valori, Veloce (1x), Più veloce (2x) o Più veloce (3x).
 
-Con le dimensioni che costituiscono un valore numerico, è possibile aggiungere fino a 9 temi per controllare l'etichetta di testo o la trama del pulsante per ogni impostazione di velocità, usando un tema diverso per ogni passaggio.
+Con le dimensioni come valore numerico, è possibile aggiungere fino a 9 temi per controllare l'etichetta di testo o la trama del pulsante per ogni impostazione di velocità, usando un tema diverso per ogni passaggio.
 
-Ogni evento Click anticiperà la `DimensionIndex` di 1 in fase di esecuzione fino a quando non `Dimensions` viene raggiunto il valore. Il ciclo verrà quindi reimpostato su 0.
+Ogni evento click avanza di `DimensionIndex` 1 in fase di esecuzione fino a quando non `Dimensions` viene raggiunto il valore . Il ciclo verrà quindi reimpostato su 0.
 
 ![Esempio di profilo multidimensionale](../images/interactable/Profile_multiDimensions.png)
 
-Gli sviluppatori possono valutare [`DimensionIndex`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) per determinare la dimensione attualmente attiva.
+Gli sviluppatori possono valutare [`DimensionIndex`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) per determinare quale dimensione è attualmente attiva.
 
 ```c#
 // If using SelectionMode = Multi-dimension (i.e Dimensions >= 3)
@@ -286,9 +286,9 @@ myInteractable.CurrentDimension = 2;
 myInteractable.IncreaseDimension();
 ```
 
-### <a name="create-interactable-at-runtime"></a>Crea interactabile in fase di esecuzione
+### <a name="create-interactable-at-runtime"></a>Creare oggetti interactable in fase di esecuzione
 
-È possibile aggiungere facilmente *interactable* a qualsiasi GameObject in fase di esecuzione. Nell'esempio seguente viene illustrato come assegnare un profilo con un [tema visivo](visual-themes.md).
+*È possibile aggiungere* facilmente oggetti Interactable a qualsiasi GameObject in fase di esecuzione. Nell'esempio seguente viene illustrato come assegnare un profilo con un [tema visivo](visual-themes.md).
 
 ```c#
 var interactableObject = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
@@ -322,7 +322,7 @@ interactable.Profiles = new List<InteractableProfileItem>()
 interactable.TriggerOnClick()
 ```
 
-### <a name="interactable-events-via-code"></a>Eventi interactabili tramite codice
+### <a name="interactable-events-via-code"></a>Eventi con interazione tramite codice
 
 È possibile aggiungere un'azione all'evento di base [`Interactable.OnClick`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.OnClick) tramite codice con l'esempio seguente.
 
@@ -333,9 +333,9 @@ public static void AddOnClick(Interactable interactable)
 }
 ```
 
-Usare la [`Interactable.AddReceiver<T>()`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) funzione per aggiungere i ricevitori di eventi in modo dinamico in fase di esecuzione.
+Usare la [`Interactable.AddReceiver<T>()`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) funzione per aggiungere ricevitori di eventi in modo dinamico in fase di esecuzione.
 
-Il codice di esempio riportato di seguito illustra come aggiungere un [InteractableOnFocusReceiver](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver), che rimane in attesa di invio/uscita dello stato attivo, nonché definire il codice dell'azione da eseguire quando vengono attivate le istanze dell'evento.
+Il codice di esempio seguente illustra come aggiungere [un oggetto InteractableOnFocusReceiver](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver), che rimane in ascolto dell'attivazione/uscita dello stato attivo e definisce inoltre il codice azione da eseguire quando vengono create le istanze dell'evento.
 
 ```c#
 public static void AddFocusEvents(Interactable interactable)
@@ -347,7 +347,7 @@ public static void AddFocusEvents(Interactable interactable)
 }
 ```
 
-Il codice di esempio riportato di seguito illustra come aggiungere un [InteractableOnToggleReceiver](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver), che rimane in attesa delle transizioni di stato selezionate/deselezionate in *Interactables* abilitati per l'attivazione/disattivazione e definisce inoltre il codice dell'azione da eseguire quando vengono attivate le istanze di evento.
+Il codice di esempio seguente illustra come aggiungere un [oggetto InteractableOnToggleReceiver](xref:Microsoft.MixedReality.Toolkit.UI.InteractableOnFocusReceiver), che rimane in ascolto delle transizioni di stato selezionate/deselezionate in *interactables* attivabili e definisce inoltre il codice azione da eseguire quando vengono attivate le istanze dell'evento.
 
 ```c#
 public static void AddToggleEvents(Interactable interactable)
@@ -371,4 +371,4 @@ public static void AddToggleEvents(Interactable interactable)
 * [Azioni di input](../input/input-actions.md)
 * [Comandi vocali](../input/speech.md)
 * [Pulsanti](button.md)
-* [Shader standard MRTK](../rendering/MRTK-standard-shader.md)
+* [MRTK Standard Shader](../rendering/MRTK-standard-shader.md)
