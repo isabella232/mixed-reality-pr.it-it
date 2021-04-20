@@ -1,57 +1,64 @@
 ---
 title: Individuazione e acquisizione di funzionalità
-description: Individuare e scaricare le funzionalità della realtà mista.
+description: Scoprire e scaricare le funzionalità di realtà mista.
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 03/04/2021
+ms.date: 04/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: aggiornamento, strumenti, attività iniziali, nozioni di base, unity, visual studio, toolkit, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, installazione, Windows, HoloLens, emulatore, unreal, openxr
-ms.openlocfilehash: 859abd0c8e538392a7ba2a1adbb4387956c50028
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 9f12a1eba0c28b89000f1541ba62747a03e3564b
+ms.sourcegitcommit: 286384e6e255135939bce2ab0267a62558837562
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102230717"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107732009"
 ---
 # <a name="discovering-and-acquiring-features"></a>Individuazione e acquisizione di funzionalità
 
-Le sezioni di questo articolo descrivono come trovare i pacchetti di funzionalità nello strumento per le funzionalità di realtà mista. Se è necessario un riferimento per una sezione specifica, fare riferimento alla schermata seguente:
+Le sezioni di questo articolo descrivono come trovare i pacchetti di funzionalità nello strumento di funzionalità di realtà mista. Fare riferimento alla schermata seguente se è necessario un riferimento per una determinata sezione:
 
 ![Individuazione delle funzionalità](images/FeatureToolDiscovery.png)
 
 ## <a name="available-features"></a>Funzionalità disponibili
 
-### <a name="category"></a>Category
+### <a name="category"></a>Categoria
 
-Lo strumento per la funzionalità di realtà mista Visualizza una raccolta di categorie di funzionalità che semplificano l'individuazione delle informazioni desiderate. Espandere una delle categorie per visualizzare la raccolta delle funzionalità disponibili.
+Lo strumento funzionalità realtà mista visualizza una raccolta di categorie di funzionalità per semplificare l'individuazione di ciò che si vuole. Espandere una delle categorie per visualizzare la raccolta di funzionalità disponibili.
 
 > [!NOTE]
-> Se non si riesce a trovare la funzionalità cercata, controllare **altre funzionalità**.
+> Se non è possibile trovare la funzionalità che si sta cercando, selezionare **Altre funzionalità**.
 
 ![Categoria funzionalità](images/FeatureCategory.png)
 
-L'intestazione Category dello screenshot precedente contiene le proprietà seguenti, da sinistra a destra:
+L'intestazione della categoria nello screenshot precedente contiene le proprietà seguenti, da sinistra a destra:
 
-- Pulsante Espandi e Comprimi
-- Nome della categoria (ad esempio, Toolkit di realtà mista)
-- Numero di funzionalità selezionate
-- Numero di funzionalità disponibili
+- Pulsante Espandi e comprimi
+- Nome della categoria (ad esempio: Mixed Reality Toolkit)
+- Conteggio delle funzionalità selezionate
+- Conteggio delle funzionalità disponibili
+- Pulsanti di sezione
+
+> [!NOTE]
+> I pulsanti di selezione sono sensibili al contesto. In base allo stato di selezione delle funzionalità all'interno della categoria, verranno visualizzati uno o più pulsanti `Select All` `Select None` e .
 
 ### <a name="feature"></a>Funzionalità
 
-![Voce della funzionalità](images/FeatureEntry.png)
+![Voce di funzionalità](images/FeatureEntry.png)
 
-Le funzionalità sono elencate nella categoria appropriata. Da sinistra a destra nella schermata precedente, le voci di funzionalità contengono:
+Le funzionalità sono elencate nella categoria appropriata. Da sinistra a destra nello screenshot precedente, le voci di funzionalità contengono:
 
-- Casella di controllo selezione
-- Nome della funzionalità (ad esempio, Mixed Reality Toolkit Foundation)
+- Casella di controllo Di selezione
+- Nome della funzionalità (ad esempio Mixed Reality Toolkit Foundation)
 - Elenco delle versioni disponibili
-- Collegamento ai [Dettagli del pacchetto di funzionalità](viewing-package-details.md)
+- Collegamento ai dettagli [del pacchetto di funzionalità](viewing-package-details.md)
+
+> [!NOTE]
+> Se una funzionalità viene fornita da un programma di accesso anticipato (detto anche anteprima privata), verrà visualizzata un'icona indicatore di ![ ](images/EarlyAccess.png) accesso anticipato.
 
 ## <a name="refresh-the-feature-catalog"></a>Aggiornare il catalogo delle funzionalità
 
-Per verificare la presenza di funzionalità nuove e aggiornate, fare clic sull'aggiornamento ![pulsante Aggiorna](images/RefreshButton.png) . Questa operazione si connetterà al sito del catalogo e recupererà le informazioni più recenti. Una volta che il catalogo è stato letto, verranno visualizzate la data e l'ora dell'ultimo aggiornamento.
+Per verificare la presenza di funzionalità nuove e aggiornate, fare clic sull'aggiornamento ![pulsante di aggiornamento](images/RefreshButton.png) . Questa operazione si connetterà al sito del catalogo e recupererà le informazioni più recenti. Dopo aver letto il catalogo, verranno visualizzate la data e l'ora dell'ultimo aggiornamento.
 
 ## <a name="select-features"></a>Selezione delle funzionalità
 
@@ -59,24 +66,26 @@ Le funzionalità vengono selezionate espandendo una categoria, selezionando una 
 
 ![Funzionalità selezionate](images/SelectedFeatures.png)
 
-Ogni categoria con una o più funzionalità selezionate viene aggiornata per visualizzare il conteggio.
+Per selezionare ogni pacchetto all'interno di una categoria, viene `Select All` fornito un pulsante. `Select None` deseleziona tutti i pacchetti selezionati. 
+
+Ogni categoria con una o più funzionalità selezionate verrà aggiornato per visualizzare il conteggio.
 
 ## <a name="acquiring-features"></a>Acquisizione di funzionalità
 
-Dopo aver scelto le funzionalità, selezionare **Ottieni funzionalità** per avviare il download dei file del pacchetto di funzionalità selezionato.
+Dopo aver scelto le funzionalità, selezionare **Ottieni** funzionalità per avviare il download dei file del pacchetto di funzionalità selezionato.
 
 > [!NOTE]
-> Per impostazione predefinita, i file del pacchetto di funzionalità acquisiti in precedenza non verranno scaricati di nuovo. Per modificare questo comportamento, vedere [configurazione dello strumento per le funzionalità](configuring-feature-tool.md).
+> Per impostazione predefinita, i file dei pacchetti di funzionalità acquisiti in precedenza non verranno scaricati nuovamente. Per modificare questo comportamento, vedere configurazione [dello strumento di funzionalità](configuring-feature-tool.md).
 
-Al termine del download, lo strumento per la funzionalità di realtà mista passerà al passaggio delle [funzionalità di importazione](importing-features.md) .
+Al termine del download, lo strumento per le funzionalità di realtà mista passa al passaggio [di importazione delle](importing-features.md) funzionalità.
 
-## <a name="going-back-to-the-previous-step"></a>Tornando al passaggio precedente
+## <a name="going-back-to-the-previous-step"></a>Tornare al passaggio precedente
 
-Dalle **funzionalità di individuazione**, lo strumento della funzionalità di realtà mista consente di tornare alla selezione del progetto. Selezionare torna **indietro** per avviare di nuovo.
+Da **Individua funzionalità,** lo strumento funzionalità realtà mista consente di tornare alla selezione del progetto. Selezionare **Torna indietro** per iniziare di nuovo.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Strumento per la funzionalità di realtà mista](welcome-to-mr-feature-tool.md)
-- [Configurazione dello strumento funzionalità](configuring-feature-tool.md)
+- [Introduzione a Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md)
+- [Configurazione dello strumento di funzionalità](configuring-feature-tool.md)
 - [Visualizzazione dei dettagli del pacchetto di funzionalità](viewing-package-details.md)
-- [Importazione dei pacchetti selezionati](importing-features.md)
+- [Importazione di pacchetti selezionati](importing-features.md)
