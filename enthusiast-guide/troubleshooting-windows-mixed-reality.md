@@ -1,62 +1,62 @@
 ---
-title: Risoluzione dei problemi relativi a realtà mista di Windows
-description: È possibile rimanere sempre aggiornati sulla risoluzione dei problemi di Microsoft Mixed Reality che va oltre la documentazione del supporto clienti standard.
+title: Risoluzione dei problemi Windows Mixed Reality
+description: Tenersi aggiornati sulla risoluzione dei Windows Mixed Reality che va oltre la documentazione di supporto standard per gli utenti.
 ms.topic: article
-keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto
-ms.openlocfilehash: 6e685aac0919d920f47c2bd8954706da79dbc8c4
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: Windows Mixed Reality, Realtà mista, Realtà virtuale, REALTÀ VIRTUALE, MR, Risoluzione dei problemi, Errori, Guida, Supporto
+ms.openlocfilehash: 2fbdb434eb3ccc0a327af990b4f4854faafbdf85
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009481"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944642"
 ---
-# <a name="troubleshooting-windows-mixed-reality-faqs"></a><span data-ttu-id="9f6b2-104">Risoluzione dei problemi relativi alla realtà mista di Windows (domande frequenti)</span><span class="sxs-lookup"><span data-stu-id="9f6b2-104">Troubleshooting Windows Mixed Reality (FAQs)</span></span>
+# <a name="troubleshooting-windows-mixed-reality-faqs"></a><span data-ttu-id="c245d-104">Risoluzione dei Windows Mixed Reality (domande frequenti)</span><span class="sxs-lookup"><span data-stu-id="c245d-104">Troubleshooting Windows Mixed Reality (FAQs)</span></span>
 
 ![Logo dell'intestazione per la risoluzione dei problemi](images/1050px-Mixedrealityportal.png)
 
-## <a name="whats-new"></a><span data-ttu-id="9f6b2-106">Novità</span><span class="sxs-lookup"><span data-stu-id="9f6b2-106">What's new!</span></span>
+## <a name="whats-new"></a><span data-ttu-id="c245d-106">Novità</span><span class="sxs-lookup"><span data-stu-id="c245d-106">What's new!</span></span>
 
-<span data-ttu-id="9f6b2-107">Per quanto riguarda il nuovo auricolare e i controller di HP reverbi G2, è stata compilata una [pagina di domande frequenti dedicata](reverbG2-faq.md) per tutti gli elementi G2.</span><span class="sxs-lookup"><span data-stu-id="9f6b2-107">In honor of the newly released HP Reverb G2 headset and controllers, we've compiled a [dedicated FAQ page](reverbG2-faq.md) for all things G2.</span></span> <span data-ttu-id="9f6b2-108">In questo articolo vengono illustrati tutti i problemi di connessione e la chiarezza delle immagini ai controller di movimento che eseguono la realtà mista.</span><span class="sxs-lookup"><span data-stu-id="9f6b2-108">This article covers everything from connection problems and image clarity to motion controllers issues and running Mixed Reality.</span></span>
+<span data-ttu-id="c245d-107">In riconoscimento del visore VR e dei controller HP Reverb G2 appena rilasciati, è stata compilata una pagina dedicata di domande [frequenti](reverbG2-faq.yml) per tutti gli aspetti G2.</span><span class="sxs-lookup"><span data-stu-id="c245d-107">In honor of the newly released HP Reverb G2 headset and controllers, we've compiled a [dedicated FAQ page](reverbG2-faq.yml) for all things G2.</span></span> <span data-ttu-id="c245d-108">Questo articolo illustra tutti gli aspetti, dai problemi di connessione e chiarezza delle immagini ai problemi dei controller del movimento e all'esecuzione della realtà mista.</span><span class="sxs-lookup"><span data-stu-id="c245d-108">This article covers everything from connection problems and image clarity to motion controllers issues and running Mixed Reality.</span></span>
 
-## <a name="troubleshooting-topics"></a><span data-ttu-id="9f6b2-109">Argomenti sulla risoluzione dei problemi</span><span class="sxs-lookup"><span data-stu-id="9f6b2-109">Troubleshooting topics</span></span>
+## <a name="troubleshooting-topics"></a><span data-ttu-id="c245d-109">Argomenti relativi alla risoluzione dei problemi</span><span class="sxs-lookup"><span data-stu-id="c245d-109">Troubleshooting topics</span></span>
 
-<span data-ttu-id="9f6b2-110">Quando si verificano problemi con l'hardware immersivo, è importante diagnosticare l'area dei problemi generali e quindi fare riferimento agli articoli seguenti per una guida più dettagliata.</span><span class="sxs-lookup"><span data-stu-id="9f6b2-110">When you run into trouble with your immersive hardware, it's important to diagnose the general issue area and then refer to the following articles for more detailed help.</span></span> 
+<span data-ttu-id="c245d-110">Quando si verificano problemi con l'hardware immersive, è importante diagnosticare l'area dei problemi generale e quindi fare riferimento agli articoli seguenti per informazioni più dettagliate.</span><span class="sxs-lookup"><span data-stu-id="c245d-110">When you run into trouble with your immersive hardware, it's important to diagnose the general issue area and then refer to the following articles for more detailed help.</span></span> 
 
-### <a name="installation-and-setup-issues"></a><span data-ttu-id="9f6b2-111">Problemi di installazione e configurazione</span><span class="sxs-lookup"><span data-stu-id="9f6b2-111">Installation and setup issues</span></span>
+### <a name="installation-and-setup-issues"></a><span data-ttu-id="c245d-111">Problemi di installazione e installazione</span><span class="sxs-lookup"><span data-stu-id="c245d-111">Installation and setup issues</span></span>
 
-<span data-ttu-id="9f6b2-112">Per problemi di installazione, esecuzione di realtà mista di Windows, errori di installazione, requisiti minimi per il PC o autorizzazioni di amministratore, consultare queste due domande frequenti:</span><span class="sxs-lookup"><span data-stu-id="9f6b2-112">For issues with installation, running Windows Mixed Reality, setup errors, minimum PC requirements, or admin permissions, check out these two FAQs:</span></span>
+<span data-ttu-id="c245d-112">Per problemi relativi all'installazione, all'Windows Mixed Reality, agli errori di configurazione, ai requisiti minimi del PC o alle autorizzazioni di amministratore, vedere queste due domande frequenti:</span><span class="sxs-lookup"><span data-stu-id="c245d-112">For issues with installation, running Windows Mixed Reality, setup errors, minimum PC requirements, or admin permissions, check out these two FAQs:</span></span>
 
-- [<span data-ttu-id="9f6b2-113">Errori di installazione</span><span class="sxs-lookup"><span data-stu-id="9f6b2-113">Installation errors</span></span>](installation_errors.md)
-- [<span data-ttu-id="9f6b2-114">Configurazione</span><span class="sxs-lookup"><span data-stu-id="9f6b2-114">Setup</span></span>](wmr-setup-faq.md)
+- [<span data-ttu-id="c245d-113">Errori di installazione</span><span class="sxs-lookup"><span data-stu-id="c245d-113">Installation errors</span></span>](installation_errors.md)
+- [<span data-ttu-id="c245d-114">Configurazione</span><span class="sxs-lookup"><span data-stu-id="c245d-114">Setup</span></span>](wmr-setup-faq.yml)
 
-### <a name="hardware-issues"></a><span data-ttu-id="9f6b2-115">Problemi hardware</span><span class="sxs-lookup"><span data-stu-id="9f6b2-115">Hardware issues</span></span>
+### <a name="hardware-issues"></a><span data-ttu-id="c245d-115">Problemi hardware</span><span class="sxs-lookup"><span data-stu-id="c245d-115">Hardware issues</span></span>
 
-<span data-ttu-id="9f6b2-116">Per problemi con il dispositivo auricolare fisico, le connessioni cablate, gli errori di connessione, l'avvio del portale per la realtà mista e la visualizzazione di cuffie nere o vuote, vedere gli articoli seguenti:</span><span class="sxs-lookup"><span data-stu-id="9f6b2-116">For problems with your physical headset device, cable connections, connection errors, launching the Mixed Reality Portal, and black or blank headset displays, check out the following articles:</span></span>
+<span data-ttu-id="c245d-116">Per problemi con il dispositivo VR fisico, le connessioni dei cavi, gli errori di connessione, l'avvio del Portale realtà mista e i visori VR neri o vuoti, vedere gli articoli seguenti:</span><span class="sxs-lookup"><span data-stu-id="c245d-116">For problems with your physical headset device, cable connections, connection errors, launching the Mixed Reality Portal, and black or blank headset displays, check out the following articles:</span></span>
 
-- [<span data-ttu-id="9f6b2-117">Connettività del visore VR</span><span class="sxs-lookup"><span data-stu-id="9f6b2-117">Headset connectivity</span></span>](headset-connectivity.md)
-- [<span data-ttu-id="9f6b2-118">Display del visore VR</span><span class="sxs-lookup"><span data-stu-id="9f6b2-118">Headset display</span></span>](headset-display.md)
-- [<span data-ttu-id="9f6b2-119">Controller del movimento</span><span class="sxs-lookup"><span data-stu-id="9f6b2-119">Motion controllers</span></span>](motion-controller-problems.md)
+- [<span data-ttu-id="c245d-117">Connettività del visore VR</span><span class="sxs-lookup"><span data-stu-id="c245d-117">Headset connectivity</span></span>](headset-connectivity.md)
+- [<span data-ttu-id="c245d-118">Display del visore VR</span><span class="sxs-lookup"><span data-stu-id="c245d-118">Headset display</span></span>](headset-display.md)
+- [<span data-ttu-id="c245d-119">Controller del movimento</span><span class="sxs-lookup"><span data-stu-id="c245d-119">Motion controllers</span></span>](motion-controller-problems.md)
 
-### <a name="core-experience-issues"></a><span data-ttu-id="9f6b2-120">Problemi relativi all'esperienza principale</span><span class="sxs-lookup"><span data-stu-id="9f6b2-120">Core experience issues</span></span>
+### <a name="core-experience-issues"></a><span data-ttu-id="c245d-120">Problemi relativi all'esperienza di base</span><span class="sxs-lookup"><span data-stu-id="c245d-120">Core experience issues</span></span>
 
-<span data-ttu-id="9f6b2-121">Se si verificano problemi durante la creazione di limiti, l'udito o la mancata acustica, l'audio Bluetooth o il rilevamento delle cuffie, consultare le domande frequenti seguenti:</span><span class="sxs-lookup"><span data-stu-id="9f6b2-121">If you're experiencing issues with creating boundaries, hearing or not hearing sound, Bluetooth audio, or headset tracking, check out the following FAQs:</span></span>
+<span data-ttu-id="c245d-121">Se si verificano problemi con la creazione di limiti, l'udito o il rilevamento di suoni non uditi, audio Bluetooth o visori VR, vedere le domande frequenti seguenti:</span><span class="sxs-lookup"><span data-stu-id="c245d-121">If you're experiencing issues with creating boundaries, hearing or not hearing sound, Bluetooth audio, or headset tracking, check out the following FAQs:</span></span>
 
-- [<span data-ttu-id="9f6b2-122">Limiti</span><span class="sxs-lookup"><span data-stu-id="9f6b2-122">Boundaries</span></span>](boundary-questions.md)
-- [<span data-ttu-id="9f6b2-123">Voce e audio</span><span class="sxs-lookup"><span data-stu-id="9f6b2-123">Speech and audio</span></span>](speech-and-audio.md)
-- [<span data-ttu-id="9f6b2-124">Sistema di tracciamento</span><span class="sxs-lookup"><span data-stu-id="9f6b2-124">Tracking system</span></span>](tracking.md)
+- [<span data-ttu-id="c245d-122">Limiti</span><span class="sxs-lookup"><span data-stu-id="c245d-122">Boundaries</span></span>](boundary-questions.md)
+- [<span data-ttu-id="c245d-123">Voce e audio</span><span class="sxs-lookup"><span data-stu-id="c245d-123">Speech and audio</span></span>](speech-and-audio.md)
+- [<span data-ttu-id="c245d-124">Sistema di tracciamento</span><span class="sxs-lookup"><span data-stu-id="c245d-124">Tracking system</span></span>](tracking.md)
 
-### <a name="vr-experience-issues"></a><span data-ttu-id="9f6b2-125">Problemi relativi all'esperienza VR</span><span class="sxs-lookup"><span data-stu-id="9f6b2-125">VR experience issues</span></span>
+### <a name="vr-experience-issues"></a><span data-ttu-id="c245d-125">Problemi relativi all'esperienza di realtà virtuale</span><span class="sxs-lookup"><span data-stu-id="c245d-125">VR experience issues</span></span>
 
-<span data-ttu-id="9f6b2-126">Se si verificano problemi con i giochi SteamVR, si installa la modalità sviluppatore di Windows o si visualizzano i contenuti di WebVR in un browser, gli articoli seguenti sono il posto ideale:</span><span class="sxs-lookup"><span data-stu-id="9f6b2-126">If you're having issues with SteamVR games, installing Windows Developer Mode, or viewing WebVR content in a browser, the articles below are the place to be:</span></span>
+<span data-ttu-id="c245d-126">Se si verificano problemi con i giochi Dirvr, l'installazione della modalità sviluppatore Di Windows o la visualizzazione di contenuto WebVR in un browser, gli articoli seguenti sono i seguenti:</span><span class="sxs-lookup"><span data-stu-id="c245d-126">If you're having issues with SteamVR games, installing Windows Developer Mode, or viewing WebVR content in a browser, the articles below are the place to be:</span></span>
 
-- [<span data-ttu-id="9f6b2-127">SteamVR</span><span class="sxs-lookup"><span data-stu-id="9f6b2-127">SteamVR</span></span>](steamvr-questions.md)
-- [<span data-ttu-id="9f6b2-128">WebVR</span><span class="sxs-lookup"><span data-stu-id="9f6b2-128">WebVR</span></span>](webvr-questions.md)
+- [<span data-ttu-id="c245d-127">SteamVR</span><span class="sxs-lookup"><span data-stu-id="c245d-127">SteamVR</span></span>](steamvr-questions.md)
+- [<span data-ttu-id="c245d-128">WebVR</span><span class="sxs-lookup"><span data-stu-id="c245d-128">WebVR</span></span>](webvr-questions.md)
 
-### <a name="performance-issues"></a><span data-ttu-id="9f6b2-129">Problemi di prestazioni</span><span class="sxs-lookup"><span data-stu-id="9f6b2-129">Performance issues</span></span> 
+### <a name="performance-issues"></a><span data-ttu-id="c245d-129">Problemi di prestazioni</span><span class="sxs-lookup"><span data-stu-id="c245d-129">Performance issues</span></span> 
 
-<span data-ttu-id="9f6b2-130">Se il computer è in esecuzione lento, è troppo caldo dietro le quinte o se si stanno riscontrando semplici oggetti visivi, è possibile eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="9f6b2-130">If you're PC is running slow, getting too warm under the hood, or just experiencing choppy visuals, we've got you covered:</span></span>
+<span data-ttu-id="c245d-130">Se il PC è lento, è troppo caldo sotto le quinte o si riscontrano solo oggetti visivi di grande impatto, sono stati trattati gli argomenti seguenti:</span><span class="sxs-lookup"><span data-stu-id="c245d-130">If you're PC is running slow, getting too warm under the hood, or just experiencing choppy visuals, we've got you covered:</span></span>
 
-- [<span data-ttu-id="9f6b2-131">Prestazioni</span><span class="sxs-lookup"><span data-stu-id="9f6b2-131">Performance</span></span>](performance-questions.md)
+- [<span data-ttu-id="c245d-131">Prestazioni</span><span class="sxs-lookup"><span data-stu-id="c245d-131">Performance</span></span>](performance-questions.md)
 
-## <a name="see-also"></a><span data-ttu-id="9f6b2-132">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="9f6b2-132">See also</span></span>
-- [<span data-ttu-id="9f6b2-133">Altre domande</span><span class="sxs-lookup"><span data-stu-id="9f6b2-133">Other questions</span></span>](other-questions.md)
+## <a name="see-also"></a><span data-ttu-id="c245d-132">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="c245d-132">See also</span></span>
+- [<span data-ttu-id="c245d-133">Altre domande</span><span class="sxs-lookup"><span data-stu-id="c245d-133">Other questions</span></span>](other-questions.md)

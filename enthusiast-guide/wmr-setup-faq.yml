@@ -1,0 +1,207 @@
+### YamlMime:FAQ
+metadata:
+  title: Domande frequenti sulla configurazione di Windows Mixed Reality
+  description: Risposte alle domande frequenti sulla configurazione quando si lavora con Windows Mixed Reality applicazioni e dispositivi.
+  author: hferrone
+  ms.author: v-hferrone
+  ms.date: 09/15/2020
+  ms.topic: article
+  keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback Hub, bugs
+  appliesto:
+  - Windows 10
+  ms.openlocfilehash: 5b9e3e1e2967884d2d783b5b8e0cd944f20fadae
+  ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 04/24/2021
+  ms.locfileid: "107953771"
+title: Domande frequenti sulla configurazione di Windows Mixed Reality
+summary: Ecco alcune informazioni utili per risolvere i problemi che possono verificarsi durante la configurazione del visore VR Windows Mixed Reality immersive.
+sections:
+- name: Ignorato
+  questions:
+  - question: >
+      Viene visualizzato il messaggio "Non è stato possibile scaricare il software Windows Mixed Reality" o la configurazione è bloccata nella pagina "Blocco durante il download"
+    answer: >
+      Attenersi alla procedura seguente:
+
+
+      * Passare a **Impostazioni > aggiorna & sicurezza > Windows Update** e assicurarsi che Windows Update sia attivato. Scaricare e installare quindi gli aggiornamenti in attesa di essere installati.
+
+      * Assicurarsi che il PC sia connesso a Internet e abbia almeno 2 GB di spazio di archiviazione disponibile.
+
+      * Riavviare il PC e riprovare. Potrebbe essere necessario ripetere più volte o eseguire lo strumento di risoluzione dei Windows Update per cancellare gli aggiornamenti in sospeso.
+
+
+      > [!NOTE]
+
+      > * Se si è in una rete gestita dall'organizzazione, rivolgersi all'amministratore. Potrebbe essere necessario abilitare le Windows Mixed Reality. Per istruzioni per i professionisti IT, Vedere **[questo articolo.](/windows/application-management/manage-windows-mixed-reality)**
+
+      > * Se la Wi-Fi di rete è impostata su a consumo, impostarla su non misurata. **[Scopri di più](https://support.microsoft.com/help/4028458)**
+  - question: >
+      Viene visualizzato un messaggio che indica che si è verificato un errore e non è stato possibile Windows Mixed Reality.
+    answer: >
+      Attenersi alla procedura seguente:
+
+
+      1. Scollegare il visore VR dal computer (entrambi i cavi).
+
+      2. Riavviare il computer.
+
+      3. Passare **a Impostazioni > aggiorna & sicurezza > Windows Update** e assicurarsi che Windows Update sia attivato. Scaricare e installare quindi tutti gli aggiornamenti in attesa di essere installati.
+
+      4. Riconnettere il visore VR al computer, quindi riprovare a eseguire l'installazione.
+
+
+      Se i passaggi precedenti non funzionano, provare a disinstallare e quindi reinstallare Windows Mixed Reality. Passare a **Impostazioni > realtà mista > Disinstalla e** selezionare **Disinstalla.** Riavviare quindi il computer. Per avviare di nuovo il processo di configurazione, è sufficiente collegare il visore al PC.
+  - question: >
+      Il Portale realtà mista non si apre quando si collega il visore
+    answer: >
+      Portale realtà mista, l'app che consente di Windows Mixed Reality configurazione, è progettata per l'apertura automatica quando si collega un visore compatibile. Se non si apre, passare a Start e digitare "Portale realtà mista" nella casella di ricerca per aprire l'app. Potrebbe essere necessario [eseguire l'aggiornamento](https://support.microsoft.com/en-us/help/12373/windows-update-faq) alla versione più recente di Windows se non è possibile trovare il Portale realtà mista.
+  - question: >
+      Viene visualizzato un messaggio che indica che il PC non può essere eseguito Windows Mixed Reality
+    answer: >
+      Se viene visualizzato questo messaggio, il PC non soddisfa i requisiti [minimi necessari](https://support.microsoft.com/help/4039260) per eseguire Windows Mixed Reality. La configurazione hardware del computer potrebbe non essere compatibile con Windows Mixed Reality oppure potrebbe essere necessario eseguire l'aggiornamento alla [versione più recente di Windows.](https://support.microsoft.com/help/12373)
+
+
+      Note sulle schede grafiche:
+
+
+      * Se Windows Mixed Reality configurazione indica che la scheda grafica non soddisfa i requisiti e si pensa che lo sia, assicurarsi che il visore sia collegato alla scheda corretta.
+
+      * Rivolgersi al produttore della scheda grafica per l'aggiornamento più recente del driver. Windows Mixed Reality richiede un driver di scheda grafica che supporta almeno WDDM 2.2.
+  - question: >
+      Viene visualizzato un messaggio che indica che il PC non soddisfa i requisiti minimi necessari per eseguire Windows Mixed Reality.
+    answer: >
+      Se viene visualizzato questo messaggio, il PC non soddisfa i requisiti minimi necessari per la migliore esperienza Windows Mixed Reality. Il PC può eseguire un visore vr immersivo, ma potrebbe non essere in grado di eseguire determinate app o potrebbero verificarsi problemi di prestazioni.
+  - question: >
+      Il controller Xbox non funziona
+    answer: >
+      Attenersi alla procedura seguente:
+
+
+      * Assicurarsi che il controller sia acceso, completamente addebitato e connesso al PC.
+
+      * Sostituire le batterie del controller.
+
+      * Se si usa un controller Bluetooth, passare a Impostazioni > Dispositivi **> Bluetooth &** altri dispositivi nel PC e verificare che sia associato (verrà visualizzato nell'elenco nella pagina).
+
+
+      [Altre informazioni sui controller Xbox](https://support.xbox.com/xbox-on-windows/accessories/connect-xbox-one-controller-to-pc)
+  - question: >
+      I controller del movimento non funzionano
+    answer: >
+      Attenersi alla procedura seguente:
+
+
+      * Assicurarsi che i controller siano accesi e completamente addebitati.
+
+      * Sostituire le batterie dei controller.
+
+      * Spegnere e riattivare i controller tenendoli davanti all'utente. Tenere premuto il pulsante di Windows per 4 secondi per disattivare un controller, quindi tenere premuto di nuovo per 2 secondi per attivarlo.
+
+      * Passare a Impostazioni > dispositivi **> Bluetooth &** altri dispositivi nel PC e assicurarsi che siano associati (dovrebbero essere elencati nella pagina).
+
+
+      [Altre informazioni sui controller del movimento](controllers-in-wmr.md)
+  - question: >
+      Viene visualizzato il messaggio "Connect your headset" (Connetti il visore VR) anche se è stato collegato il visore VR
+    answer: >
+      Attenersi alla procedura seguente:
+
+
+      - Assicurarsi che il visore VR sia connesso alle porte corrette del computer. Deve essere collegato alla scheda grafica discreta del PC e a una porta USB 3.0. Ecco come identificare le porte corrette:
+          - Le porte USB 3.0 hanno un logo speciale con un contrassegno "SS" (che indica "SuperSpeed"). La parte interna della porta è in genere blu, ma le porte USB 2.0 meno recenti sono in genere nere o bianchi all'interno.
+          - Se il computer ha due porte HDMI, usare quella che si connette alla scheda grafica, non alla scheda madre del computer. Non è sempre ovvio, ovvero, anche se le porte discrete si trovano spesso in uno slot di espansione nel computer. Se si prova una porta e non funziona, provare l'altra.
+      - Passare al sito Web del produttore del visore VR e aggiornare i driver e il firmware del visore VR.
+  - question: >
+      Durante l'avvio della realtà mista, sono bloccato su "Turn your head side to side, and then at the floor" (Ruota la testa da un lato all'altro e poi a terra)
+    answer: >
+      Questo passaggio consente al visore VR di riconoscere lo spazio e ripristinare qualsiasi limite e piano virtuale esistente. Quando si mette il visore VR, questo processo di analisi può richiedere fino a 10 secondi. Al termine, si sarà in Windows Mixed Reality oppure verrà richiesto di configurare nuovamente il limite.
+
+
+      Se il processo di analisi richiede più di 10 secondi, potrebbe verificarsi un problema con il sensore di prossimità nel visore:
+
+
+      1. Verificare che l'sticker sia stato rimosso dal sensore di prossimità. Il sensore di prossimità si trova all'interno del visore approssimativamente dove si trova il centro della fronte.
+
+      2. Verificare che il sensore di prossimità invii l'input al visore: con il dito, coprire e scoprire il sensore di prossimità alcune volte per verificare che l'input passi al visore. Nella parte superiore del PC dovrebbe essere visualizzato il banner **Tasto Windows** + Y. È possibile passare manualmente l'input al visore in qualsiasi momento digitando **tasto Windows + Y** sulla tastiera.
+  - question: >
+      Il piano della mia Windows Mixed Reality non sembra essere all'altezza corretta
+    answer: >
+      Selezionare **Avvia > regolazione** del pavimento, che verrà avviata dopo aver posto l'app nel mondo, per apportare modifiche mentre si indossa il visore. In questa app verrà richiesto di usare il touch pad (controller di movimento) o il pad di direzione (gamepad) per regolare l'altezza del pavimento. Quando il pavimento è corretto, usare il pulsante Windows per tornare a casa.
+  - question: >
+      Non è possibile visualizzare un'anteprima di ciò che viene visualizzato nel visore sul desktop
+    answer: >
+      Windows Mixed Reality portale ha **un** pulsante Riproduci nella parte inferiore dello schermo che consente di visualizzare in anteprima ciò che si sta visualizzando nel visore sullo schermo del desktop. Per motivi di prestazioni, questa funzionalità è disponibile solo nei PC in esecuzione Windows Mixed Reality Ultra (90 Hz).
+  - question: >
+      Come è possibile ottenere una visualizzazione più chiara nel visore
+    answer: >
+      Provare a regolare la misura del visore. Regolarne la posizione sul viso spostandolo su e giù o a sinistra e a destra e regolando le cinghie in modo che si senta aderente.
+
+
+      Se l'headset lo supporta, è anche possibile modificare le impostazioni di calibrazione. Se il visore ha una manopola per regolare la calibrazione, usarla. In caso contrario, passare a Impostazioni > **realtà mista** > qualità visiva e regolare la calibrazione. Per altre informazioni sulla calibrazione per il dispositivo specifico, rivolgersi al produttore del visore VR.
+  - question: >
+      Quando si collega il visore VR, non accade nulla Portale realtà mista non si apre
+    answer: >
+      Portale realtà mista, l'app che consente di eseguire Windows Mixed Reality configurazione, è progettata per essere aperta automaticamente quando si collega un visore VR compatibile. Se non si apre, passare a **Start** e digitare  **Portale realtà mista** nella casella Cerca per aprire l'app da questa pagina. Se non è possibile trovare Portale realtà mista, potrebbe essere necessario eseguire l'aggiornamento alla versione più recente di [Windows](https://support.microsoft.com/help/12373) o che il visore VR non è connesso correttamente al PC.
+  - question: >
+      Il display di montaggio head non funziona dopo l'arresto e l'avvio rapido
+    answer: >
+      Provare a eseguire quanto segue:
+
+
+      * Scollegare il cavo di visualizzazione e il cavo USB dal display del montaggio head e quindi collegarli nuovamente.
+  - question: >
+      Il Wi-Fi rallenta quando si usa Windows Mixed Reality
+    answer: >
+      Se si usa una connessione Wi-Fi a 2,4 GHz, i controller del movimento potrebbero rallentare il Wi-Fi. Provare a eseguire una delle operazioni seguenti:
+
+
+      * Passare a una connessione Wi-Fi 5 GHz, se disponibile. Altre informazioni
+
+      * Usare un adattatore Bluetooth separato per connettere i controller del movimento al PC. [Vedere gli adapter consigliati](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+
+
+      > [!NOTE]
+
+      > I visori VR più nuovi si associano direttamente ai controller tramite un chip Bluetooth integrato e non dovrebbero verificarsi questo problema.
+  - question: >
+      Viene visualizzato il messaggio di errore "Si è verificato un errore" o si verificano problemi nel Portale realtà mista
+    answer: >
+      Per altre informazioni su un codice di errore specifico, vedere [qui](error-codes.md). È anche possibile provare a:
+
+
+      Riavviare Windows Mixed Reality:
+
+
+      1. Disconnettere entrambi i cavi del visore VR dal PC.
+
+      2. Riavvia il PC.
+
+      3. Riconnettere il visore VR.
+
+
+      Assicurarsi che il PC riconosca il visore:
+
+
+      1. Selezionare Avvia.
+
+      2. Digitare "Gestione dispositivi" nella casella di ricerca e selezionarlo nell'elenco.
+
+      3. Espandere "Dispositivi di realtà mista" e verificare se il visore è elencato.
+
+
+      Se non è elencato:
+
+
+      1. Collegare il visore a porte diverse nel PC, se disponibile.
+
+      2. Verificare la disponibilità degli aggiornamenti software più recenti Windows Update.
+
+      3. Disinstallare e reinstallare Windows Mixed Reality:
+          1. Scollegare entrambi i cavi del visore dal PC.
+          2. Selezionare **Impostazioni > realtà mista > Disinstalla**.
+          3. Se i controller di movimento sono associati al PC, selezionare Impostazioni **> dispositivi > Bluetooth & altri** dispositivi per annullare l'associazione. Selezionare ogni controller e "Rimuovi dispositivo". Se i controller sono associati al visore, è possibile ignorare questo passaggio.
+          4. Collegare di nuovo il visore al PC per reinstallare Windows Mixed Reality.
+additionalContent: "\n## <a name=\"see-also\"></a>Vedi anche\n\n* [Contattare la community](https://answers.microsoft.com)\n* [Per assistenza, contattare Microsoft](https://support.microsoft.com/contactus/)\n* [Risoluzione dei problemi](troubleshooting-windows-mixed-reality.md)"

@@ -1,0 +1,100 @@
+### YamlMime:FAQ
+metadata:
+  title: Domande frequenti sull'uso di Windows Mixed Reality
+  description: Trovare le risorse per domande comuni quando si lavora con Windows Mixed Reality applicazioni e hardware.
+  author: hferrone
+  ms.author: v-hferrone
+  ms.date: 09/15/2020
+  ms.topic: article
+  keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback Hub, bugs
+  appliesto:
+  - Windows 10
+  ms.openlocfilehash: 2369f44eab8717e94d86cb62dabfe45dfbc32646
+  ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 04/24/2021
+  ms.locfileid: "107953780"
+title: Domande frequenti sull'uso di Windows Mixed Reality
+summary: >
+  Per assistenza sull'uso del visore VR immersive Windows Mixed Reality, consultare questi argomenti per informazioni generali e risoluzione dei problemi.
+
+
+  Serve ancora assistenza? Per la risoluzione dei problemi avanzata, vedere questo articolo.
+sections:
+- name: Ignorato
+  questions:
+  - question: >
+      Viene visualizzato un messaggio che indica "Rilevamento perso" o "Non è disponibile un limite per questo spazio".
+    answer: "Selezionare **Avvia > Portale realtà mista** sul desktop. Selezionare **Menu** e quindi Selezionare **Esegui installazione** per creare un nuovo limite. Windows Mixed Reality supporta più posizioni e identificherà lo spazio disponibile all'avvio, purché la stanza non sia cambiata.  \n"
+  - question: >
+      Non è possibile ascoltare alcun suono o il suono proviene dal computer anziché dal visore VR
+    answer: "Se il visore VR immersive non include le cuffi integrate, è necessario connettere le cuffi al jack audio sul visore VR. Il jack si trova spesso dietro il visore VR o le lenti. Contattare il produttore del visore VR in caso di problemi di individuazione. \n\nAlcuni visori VR audio hanno pulsanti fisici per controllare il volume. Se l'audio non funziona, controllare se il volume è disattivato o disattivato.\n\nWindows Mixed Reality è progettato per riprodurre l'audio tramite il visore VR immersive quando lo si indossa e sono collegate le cuffi. Quando si spegne il visore VR o si capovolge il visore, l'audio passa al dispositivo di riproduzione Windows predefinito. È possibile modificare questa impostazione in **Impostazioni > realtà mista > audio e voce.**\n\n> [!NOTE]\n> * Windows Mixed Reality'audio spaziale funziona meglio con le cuffi integrate o connesse direttamente al visore VR immersive. Gli altoparlanti o le cuffi del PC connessi al PC potrebbero non funzionare correttamente per l'audio spaziale.\n> * Windows Mixed Reality non supporta i visori VR audio Bluetooth.\n"
+  - question: >
+      I comandi vocali non funzionano
+    answer: >
+      Per usare i comandi vocali, le impostazioni vocali e della lingua del PC devono essere impostate su un'area [Windows Mixed Reality lingua supportata.](other-questions.md#what-languages-are-supported-in-windows-mixed-reality) Per controllare l'area e la lingua di Windows, selezionare Impostazioni **> ora & lingua > lingua & lingua**. Per controllare la lingua del riconoscimento vocale, selezionare **Impostazioni > ora & lingua > voce**.
+
+
+      Se l'headset non ha un microfono incorporato, collegare un paio di cuffia con un microfono al visore o al PC. Selezionare **Impostazioni > realtà mista > audio** e voce per passare automaticamente l'input del microfono al visore quando le cuffia sono connesse. Assicurarsi che Quando **indossi il visore, passa al microfono visore** acceso.
+
+
+      Alcuni visori audio hanno un pulsante fisico per disattivare e riattivare il microfono. Se i comandi vocali non funzionano, controllare se il microfono è disattivato.
+  - question: >
+      Il limite è sempre visibile. Come è possibile farlo andare via?
+    answer: "Quando si è vicini al limite, viene visualizzato. Se il limite include sezioni con una forma stretta o irregolare, è possibile che ci si avvicina e che venga visualizzato più spesso di quanto si desideri. Per risolvere il problema, provare a creare di nuovo il limite usando una forma più grande e regolare. Selezionare **Avvia > Portale realtà mista** sul desktop, quindi selezionare Esegui **configurazione**. \n\nÈ anche possibile disattivare temporaneamente il limite Portale realtà mista: selezionare **Menu** e quindi usare l'interruttore per disattivare il limite. Quando il limite è disattivato, è necessario rimanere in un punto per evitare ostacoli.\n"
+  - question: >
+      I'm having trouble with my motion controllers (Problemi con i controller di movimento)
+    answer: "Se i controller di movimento non funzionano correttamente, non si connettono o se non viene visualizzata un'immagine dei controller quando si indossa il visore:\n\n* Assicurarsi che i controller siano accesi. Per attivarli, tenere premuto il pulsante **Windows** per 2 secondi.\n* Selezionare **Avvia > Portale realtà mista** sul PC e quindi selezionare **Menu** Dovrebbero essere elencati i controller di movimento, insieme a un messaggio di stato:\n    * Pronto: i controller sono tutti impostati.\n    * Rilevamento perso: Portale realtà mista non è in grado di trovare i controller. Tenere i dispositivi davanti al visore VR e riavviarli premendo il pulsante **Windows** per 4 secondi, quindi di nuovo per 2 secondi.\n    * Batteria in esaurimento: sostituire le batterie del controller.\n* Se si usa il Wi-Fi, provare a connettere il PC a una rete Wi-Fi 5 GHz per ridurre l'interferenza wireless. \n* Per i visori VR più nuovi che si associano direttamente ai controller, selezionare **\"...\"** **nell'Portale realtà mista** e **scegliere Configura controller.** Verrà visualizzato l'app visore VR per associare i controller al visore VR.  \n* Per i visori VR meno recenti che non dispongono di Bluetooth incorporato per l'associazione diretta dei controller:  \n    * Selezionare Impostazioni > dispositivi > Bluetooth & altri dispositivi nel PC e assicurarsi che i controller siano elencati come associati.In caso contrario, sarà necessario associarli. \n    * Se si dispone di altri dispositivi Bluetooth associati al PC, ad esempio le cuffi o i game pad, provare a rimuoverli. Selezionare **Impostazioni > dispositivi > Bluetooth & altri** dispositivi nel PC, selezionare i dispositivi e quindi selezionare Rimuovi **dispositivo.**\n    * Rimuovere le cuffi e gli altoparlanti Bluetooth in Impostazioni **> dispositivi > Bluetooth &** altri dispositivi e disattivare i dispositivi. \n    * Se si usa un adattatore Bluetooth USB, assicurarsi che sia collegato a una porta USB 2.0 nera. Assicurarsi anche che l'adattatore sia collegato il più lontano possibile da qualsiasi altro trasmettitore wireless o unità flash USB, incluso il connettore USB per il visore VR. \n    * Se il PC dispone di Bluetooth integrato e si verificano problemi di connessione, provare a usare invece un adattatore Bluetooth USB. A tale scopo, è necessario disattivare anche la radio Bluetooth predefinita in [Gestione](https://support.microsoft.com/help/4026149)dispositivi e quindi associare gli altri dispositivi Bluetooth alla nuova scheda.\n* Se l'app Impostazioni è aperta nella pagina Bluetooth & altri dispositivi, chiuderla.\n"
+  - question: >
+      Quando si usa il visore VR si riscontra disagi
+    answer: >
+      Per informazioni generali sul comfort in Windows Mixed Reality, vedere Windows Mixed Reality [visore immersivo,](wmr-health-safety-comfort.md)sicurezza e comfort. Per informazioni dettagliate sul visore specifico, contattare il produttore del visore.
+  - question: >
+      Gli oggetti visivi sono insoddettati, vengono caricati lentamente o non hanno un aspetto positivo
+    answer: >
+      Se gli oggetti visivi di realtà mista non hanno un aspetto ottimale:
+
+
+      * Assicurarsi che il visore sia collegato alla scheda grafica corretta nel PC. Alcuni PC hanno schede grafiche sia integrate che discrete. La scheda discreta offre in genere prestazioni ottimali. [Altre informazioni sull'hardware del PC.](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
+
+      * Chiudere le app inutilizzate sul desktop.
+
+      * Regolare l'adattamento del visore: spostarlo in basso e in alto o a sinistra e a destra e assicurarsi che si adatti perfettamente.
+
+      * Modificare le impostazioni visive del visore (**Impostazioni > realtà mista > visore**). Quando **Qualità visiva** è impostata su **Automatico,** si sceglierà la migliore esperienza di realtà mista per il PC. Per un'esperienza con più dettagli visivi, impostare **Qualità visiva** su **Alta.** Se gli oggetti visivi sono snodato, è possibile selezionare un'impostazione inferiore.
+
+      * Provare a regolare la calibrazione del visore. Le lenti devono essere regolate in modo che corrispondano alla distanza interpupillaria (IPD), alla distanza tra gli studenti. Se non si conosce l'IPD, un optometrista può misurarlo automaticamente. Sono disponibili anche siti Web progettati per misurare l'IPD. Quando si conosce l'IPD, usare la manopola di calibrazione del visore per apportare modifiche. Se il visore non ha una manopola di calibrazione, selezionare Impostazioni > realtà mista > **visore** e regolare il controllo Calibrazione.
+  - question: >
+      Domande sull'hardware del visore VR
+    answer: >
+      Per informazioni dettagliate sul visore VR, rivolgersi al produttore. Potrebbe essere presente una guida al prodotto oppure è possibile provare il sito Web del produttore.
+  - question: >
+      Il piano nella realtà mista sembra essere nel punto errato
+    answer: >
+      Se il piano è spento(ad esempio, si ha l'aspetto **di essere mobile),** selezionare Start > Room adjustment (Avvia regolazione della stanza) mentre si porta il visore VR per apportare modifiche.
+  - question: >
+      Viene visualizzato un messaggio che indica di collegare e caricare il PC. Perché?
+    answer: >
+      Se si usa un portatile, Windows Mixed Reality funziona meglio quando il PC è completamente caricato e collegato.
+  - question: >
+      Ricerca per categorie disinstallare Windows Mixed Reality?
+    answer: "Selezionare **Start > Settings (Impostazioni > realtà mista),** quindi selezionare Uninstall **(Disinstalla).** Assicurarsi di disconnettere il visore VR dal PC e Portale realtà mista prima della disinstallazione.\n\nQuando si è pronti per iniziare a usare di nuovo il visore VR, collegarlo e Portale realtà mista la configurazione.\n\n> [!NOTE]\n> Se viene visualizzato il messaggio \"Non è stato possibile completare la rimozione di Windows Mixed Reality\", significa che alcuni file, incluse le informazioni sull'ambiente, potrebbero essere ancora nel computer. Ciò può causare problemi se si decide di reinstallare Windows Mixed Reality in un secondo momento.\n> \n> Per informazioni su come rimuovere manualmente le informazioni Windows Mixed Reality dal PC, vedi **[questo articolo.](installation_errors.md)**\n"
+  - question: >
+      Il Wi-Fi rallenta quando si usa Windows Mixed Reality
+    answer: >
+      Se si usa una connessione Wi-Fi 2,4 GHz, i controller del movimento potrebbero rallentare il Wi-Fi:
+
+
+      <!-- TODO: Use Windows Mixed Reality PC hardware guidelines interlink -->
+
+      * Passare a una connessione Wi-Fi 5 GHz, se disponibile. [Altre informazioni](https://support.microsoft.com/help/4000461)
+
+      * Usare un adattatore Bluetooth separato per connettere i controller del movimento al PC. [Vedere gli adapter consigliati](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+  - question: >
+      Che cos'è l'impostazione Opzioni esperienza?
+    answer: "L'impostazione Opzioni esperienza ( Impostazioni > realtà mista **> visore** visualizzato > Opzioni esperienza ) consente di modificare le impostazioni Windows Mixed Reality prestazioni. In questo modo è possibile scegliere la migliore esperienza possibile per la configurazione hardware in un'ampia gamma di contenuti. L'esperienza a 90 Hz è disponibile per tutti i sistemi, ma è consigliabile provare prima Automatico per vedere quale impostazione si preferisce.\n\nDi seguito sono disponibili le opzioni seguenti:\n\n* Automatico o Consenti a Windows di decidere: Windows Mixed Reality l'esperienza migliore per la configurazione hardware. Per la maggior parte delle persone, questa è la scelta migliore per iniziare.\n* 60 Hz: imposta la frequenza di aggiornamento su 60 Hz e disattiva determinate funzionalità, ad esempio l'acquisizione video e l'anteprima Portale realtà mista.\n* 90 Hz: imposta la frequenza di aggiornamento su 90 Hz se il visore è in grado di funzionare a tale velocità. Se i problemi del cavo impediscono l'esecuzione del visore a 90 Hz, è possibile che venga visualizzato un errore all'avvio con questa modalità selezionata. \n"
+  - question: >
+      Viene visualizzato il messaggio "Put on your headset" (Mettere il visore con il visore) anche se il visore è in stato
+    answer: "Quando si mette il visore, Windows Mixed Reality un po' di tempo per ricaricare lo spazio. Questa operazione potrebbe richiedere alcuni secondi. Se questo messaggio non viene visualizzato, assicurarsi che l'sticker di protezione sia stato rimosso dal sensore di prossimità, che si trova all'interno del visore, tra le lenti. Se l'sticker è stato rimosso e si verificano ancora problemi, contattare il produttore del visore. Premendo **Win+Y** sulla tastiera, l'esecuzione del visore viene attivata manualmente se il sensore di prossimità non viene attivato automaticamente. \n\nServe ancora assistenza? Per la risoluzione avanzata dei problemi, vedere [questo articolo.](troubleshooting-windows-mixed-reality.md)\n"
+additionalContent: "\n## <a name=\"see-also\"></a>Vedi anche\n\n* [Contattare la community](https://answers.microsoft.com)\n* [Per assistenza, contattare Microsoft](https://support.microsoft.com/contactus/)"
