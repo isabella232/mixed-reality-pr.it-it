@@ -1,37 +1,37 @@
 ---
-title: Home realtà mista
-description: Come navigare e teletrasportarsi all'interno della Home realtà mista di Windows, avviare app e giochi, personalizzare la Home page e modificare le impostazioni visive, audio e vocali.
+title: Il ambiente iniziale
+description: Come spostarsi e teletrasportarsi all'interno della Windows Mixed Reality, avviare app e giochi, personalizzare la home page e modificare le impostazioni visive, audio e voce.
 ms.topic: article
-keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, Home, esplorazione, app, giochi
-ms.openlocfilehash: 4fd4fb70edf9aadb9b34187f4d8fd421ca1e8a95
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+keywords: Windows Mixed Reality, Realtà mista, Realtà virtuale, VR, MR, Home, Navigate, Get around, apps, games
+ms.openlocfilehash: 440660b12b92e0c818cd3601be486d6fd1dfdb92
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725542"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944692"
 ---
 # <a name="your-windows-mixed-reality-home"></a>Ambiente iniziale di Windows Mixed Reality
 
-## <a name="what-is-the-windows-mixed-reality-home"></a>Che cos'è la Home realtà mista di Windows
+## <a name="what-is-the-windows-mixed-reality-home"></a>Qual è la Windows Mixed Reality principale
 
-La realtà mista di Windows è il primo sistema operativo spaziale. Invece di usare una schermata piatta e un'interfaccia 2D, usa la nostra capacità istintiva di spostarsi tra gli spazi tridimensionali. Ogni posizione ha uno scopo e il contenuto ha un contesto. Proprio come il PC inizia dall'interfaccia desktop e il telefono inizia con una schermata iniziale, la realtà mista di Windows inizia dalla Home realtà mista. Si tratta di un ambiente che è possibile esplorare e personalizzare per crearne uno personalizzato. Si tratta dell'area di disegno per le migliaia di app disponibili nella Microsoft Store o SteamVR. È possibile eseguire il multitasking con queste app come mai prima, in 3D in cui lo spazio è quasi illimitato.
+Windows Mixed Reality è il primo sistema operativo spaziale. Invece di usare uno schermo flat e un'interfaccia 2D, usa la capacità istintiva di spostarsi nello spazio tridimensionale. Ogni luogo ha uno scopo e il contenuto ha un contesto. Proprio come il PC inizia dall'interfaccia desktop e il telefono inizia con una schermata iniziale, Windows Mixed Reality dalla home page di Realtà mista. Si tratta di un ambiente che è possibile esplorare e personalizzare per renderlo personalizzato. È l'area di disegno per le migliaia di app disponibili nel Microsoft Store o in SteamVR. È possibile eseguire operazioni multitasking con queste app come mai prima d'ora, in 3D dove lo spazio è quasi illimitato.
 
-## <a name="move-through-the-windows-mixed-reality-home"></a>Spostarsi attraverso la Home realtà mista di Windows
+## <a name="move-through-the-windows-mixed-reality-home"></a>Spostarsi all'interno della Windows Mixed Reality iniziale
 
-* **Camminamento fisico:** Se l'auricolare è stato configurato con un limite di spazio e lo spazio disponibile è stato cancellato per aggirare la sicurezza, è possibile adottare misure fisiche per spostare le brevi distanze nella Home page. Un passaggio nel mondo reale è approssimativamente un passaggio nell'esperienza virtuale.
-* **Teleporting (usando i controller di movimento):** È possibile passare rapidamente a una posizione tramite il Teleporting. Usando i controller di movimento, è possibile teletrasportarsi spostando verso destra o verso sinistra levetta avanti, puntando verso la direzione desiderata e quindi rilasciando il levetta.
-* **Teleporting (tramite gamepad):** Usando un gamepad, è possibile effettuare il teletrasporto premendo il levetta di sinistra in futuro.
-* **Teleporting (tramite mouse):** Tenendo premuto il pulsante destro del mouse, fare clic con il pulsante destro del mouse e rilasciare il pulsante del mouse nella posizione desiderata.
-  * È possibile modificare la direzione di teletrasporto per tutti gli input precedenti ruotando levetta (per i controller di movimento e Gamepad) o usando la rotellina del mouse.
-  * Una funzionalità utile è detta "blocca all'app", che consente di passare alla posizione ideale per interagire con le finestre delle app. Puntare l'arco di teleportazione a una finestra e lasciarla andare. Il sistema si posiziona automaticamente nella posizione ideale per sfruttare il contenuto di tale finestra di destinazione.
-* Esplorazione **virtuale:** È possibile spostarsi in modo continuo deselezionando il levetta (è necessario fare clic) sui controller di movimento o sul gamepad e quindi spostarsi nella direzione desiderata.
+* **Fisicamente a piedi:** Se il visore è stato creato con un limite di stanza e lo spazio disponibile è stato cancellato per spostarsi in modo sicuro, è possibile eseguire passaggi fisici per spostarsi a brevi distanze nella propria casa. Un passaggio nel mondo reale è circa un passaggio nell'esperienza virtuale.
+* **Teletrasporto (con controller di movimento):** È possibile passare rapidamente a una posizione teletrasportando. Usando i controller di movimento, è possibile teletrasportare premendo la levetta destra o sinistra in avanti, puntando verso la direzione desiderata e quindi rilasciando la levetta.
+* **Teletrasporto (con gamepad):** Usando un gamepad, è possibile teletrasportare premendo la levetta sinistra in avanti.
+* **Teletrasporto (usando il mouse):** Con il mouse, tenere premuto il pulsante destro del mouse e rilasciare nella posizione desiderata.
+  * È possibile modificare la direzione di teletrasporto per tutti gli input precedenti ruotando la levetta (per i controller di movimento e il gamepad) o usando la rotellina di scorrimento del mouse.
+  * Una funzionalità pratica è denominata "Blocca sull'app" che consente di passare alla posizione ideale per interagire con le finestre dell'app. Puntare l'arco di teletrasporto a una finestra e lasciare andare. Il sistema posiziona automaticamente l'utente nella posizione ideale per usufruire del contenuto della finestra di destinazione.
+* **Virtualmente a piedi:** È possibile spostarsi praticamente continuamente con la levetta (si dovrebbe fare clic) sui controller del movimento o sul game pad e quindi spostandosi nella direzione desiderata.
 
 ## <a name="launch-an-app"></a>Avviare un'app
 
-1. Dalla Home realtà mista di Windows, premere il pulsante Windows sul controller per avviare il menu Start.
+1. Dalla home Windows Mixed Reality, premere il pulsante Windows sul controller per avviare il menu Start.
 2. Selezionare l'app che si vuole avviare.
-3. Inserire l'app in cui si vuole usarla e verrà avviata.
-4. Da questo momento in poi, è possibile fare clic sul modello 3D per avviare l'app.
+3. Posizionare l'app nel punto in cui si vuole usarla e verrà avviata.
+4. Da questo momento in avanti, è possibile fare clic sul modello 3D per avviare l'app.
 
 ## <a name="browse-the-web"></a>Esplorare il Web
 
@@ -41,53 +41,53 @@ La realtà mista di Windows è il primo sistema operativo spaziale. Invece di us
 ## <a name="play-music"></a>Riprodurre musica
 
 1. Premere il pulsante Windows sul controller per aprire il menu Start.
-2. Avviare Groove Music.
+2. Avviare Music Disas.
 
 ## <a name="download-an-app"></a>Scaricare un'app
 
 1. Premere il pulsante Windows sul controller per aprire il menu Start.
 2. Avviare Microsoft Store.
-3. Cercare un'app o un gioco desiderato, quindi selezionare "Get" o "Buy".
+3. Cercare un'app o un gioco e quindi selezionare "Ottieni" o "Acquista".
 
-È anche possibile usare l'app "nuovo per l'utente" per cercare il contenuto, che viene visualizzato come un elenco di acquisti nella Home della realtà mista di Windows.
+È anche possibile usare l'app "Nuovo per te" per cercare il contenuto, che viene visualizzato come un carrello nella Windows Mixed Reality home.
 
-## <a name="what-is-the-new-for-you-app"></a>Qual è l'app "nuova per te"
+## <a name="what-is-the-new-for-you-app"></a>Novità dell'app
 
-È possibile notare che è presente un Microsoft Store Bag nella Home realtà mista di Windows. Facendo clic su di essa verrà visualizzata la nuova e interessante app che è possibile scaricare o acquistare.
+È possibile notare che è presente un contenitore Microsoft Store nella Windows Mixed Reality casa. Facendo clic su di esso verranno mostrate le app nuove ed interessanti che è possibile scaricare o acquistare.
 
-## <a name="personalize-my-home"></a>Personalizzare la Home page
+## <a name="personalize-my-home"></a>Personalizzare la home page
 
-Puoi decorare la tua casa con le app e gli ologrammi. Le app possono essere scaricate dal Microsoft Store. È anche possibile usare l'app olografici per inserire gli oggetti nella Home page.
+È possibile decorare la propria casa con app e ologrammi. Le app possono essere scaricate dal Microsoft Store. È anche possibile usare l'app Holograms per posizionare gli oggetti nella propria casa.
 
-È possibile modificare la posizione e le dimensioni degli elementi di casa usando il pulsante modifica. È anche possibile usare due controller di movimento per spostare rapidamente e ridimensionare gli elementi puntando a qualsiasi parte di un ologramma o la barra dei menu di una finestra dell'app, con entrambi i controller e quindi spostarli più vicini o più lontani.
+È possibile modificare la posizione e le dimensioni degli elementi nella home page usando il pulsante Regola. È anche possibile usare due controller di movimento per spostare rapidamente e ridimensionare gli elementi puntando a qualsiasi parte di un ologramma o alla barra dei menu di una finestra dell'app, con entrambi i controller e quindi spostandoli più vicini o più distanti.
 
-## <a name="reset-my-homes-furniture-and-app-placement-back-to-default"></a>Reimposta il posizionamento dell'app e la mobilia della Home page sul valore predefinito
+## <a name="reset-my-homes-furniture-and-app-placement-back-to-default"></a>Ripristinare l'impostazione predefinita per il posizionamento di mobili e app di casa
 
-Passare a **impostazioni > ambiente di realtà misto > > Reimposta il** ![ Pannello impostazioni Windows Home per reimpostare la Home page](images/1050px-environmentreset.png)
+Passare a **Impostazioni > realtà mista > ambiente > Pannello** Impostazioni di Windows home per reimpostare la home ![ page](images/1050px-environmentreset.png)
 
-## <a name="uninstall-windows-mixed-reality"></a>Disinstalla realtà mista di Windows
+## <a name="uninstall-windows-mixed-reality"></a>Disinstallare Windows Mixed Reality
 
-1. Scollegare l'auricolare
-2. Chiudere il portale di realtà mista di Windows
-3. Passare a **impostazioni > realtà mista > disinstalla > disinstallare** il ![ Pannello impostazioni di Windows per disinstallare realtà mista](images/1050px-uninstall2.png)
+1. Scollegare il visore
+2. Chiudere Windows Mixed Reality portale
+3. Passare a **Impostazioni > realtà mista > disinstalla > pannello Disinstalla** impostazioni di Windows per ![ disinstallare la realtà mista](images/1050px-uninstall2.png)
 
 ## <a name="turn-off-the-boundary"></a>Disattivare il limite
 
-Passare al portale per la realtà mista e aprire il menu in alto a sinistra nella schermata. Selezionare **Esegui configurazione > limite della stanza**. Impostare l'interruttore su disattivato. Se si disattiva il limite, è necessario rimanere seduti alla propria scrivania.
+Passare a Portale realtà mista e aprire il menu in alto a sinistra nella schermata. Selezionare **Run Set up > Room Boundary (Esegui configura > room boundary).** Impostare l'interruttore su OFF. Se si disattiva il limite, è consigliabile rimanere seduti alla scrivania.
 
-## <a name="spatial-sound-in-the-windows-mixed-reality-home"></a>Audio spaziale nella Home realtà mista di Windows
+## <a name="spatial-sound-in-the-windows-mixed-reality-home"></a>Suono spaziale nella Windows Mixed Reality iniziale
 
-La Home realtà mista di Windows include una simulazione di suoni spaziali in cui i suoni di ogni app provengono dalla posizione dell'app. Man mano che si gira o si avvicina all'app, la direzione del suono e il volume cambiano, proprio come nel mondo reale. 
+La Windows Mixed Reality home include una simulazione di suoni spaziali in cui il suono di ogni app deriva dalla posizione dell'app. Quando ci si sposta o ci si avvicina o si avvicina all'app, la direzione del suono e il volume cambiano, proprio come nella vita reale. 
 
 > [!NOTE]
-> Questa funzionalità è disabilitata nei PC con grafica integrata a causa del carico applicato sulla GPU.
+> Questa funzionalità è disabilitata nei PC con grafica integrata a causa del carico posizionato sulla GPU.
 
 ## <a name="see-also"></a>Vedi anche
 
-* [Risoluzione dei problemi relativi alla Home realtà mista di Windows](wmr-setup-faq.md#my-motion-controllers-arent-working)
-* [Uso di giochi e app in realtà mista di Windows](using-games-and-apps-in-windows-mixed-reality.md)
+* [Risoluzione dei problemi Windows Mixed Reality home page](wmr-setup-faq.yml#my-motion-controllers-aren-t-working)
+* [Uso di giochi e app in Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)
 * [Funzionamento del tracciamento dall'interno verso l'esterno](tracking-system.md)
 * [Funzionamento dei controller del movimento](controllers-in-wmr.md)
-* [Uso di WebVR con la realtà mista di Windows](webvr.md)
-* [Uso di SteamVR con la realtà mista di Windows](using-steamvr-with-windows-mixed-reality.md)
+* [Uso di WebVR con Windows Mixed Reality](webvr.md)
+* [Uso di SteamVR con Windows Mixed Reality](using-steamvr-with-windows-mixed-reality.md)
 * [Registrazione di bug e feedback](filing-feedback.md)
