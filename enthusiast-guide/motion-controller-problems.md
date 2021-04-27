@@ -1,209 +1,207 @@
 ---
-title: Domande frequenti sul controller di movimento
-description: Controller per la risoluzione dei problemi della realtà mista di Windows che va oltre la documentazione standard del supporto clienti.
+title: Domande frequenti sul controller del movimento
+description: I controller Windows Mixed Reality risoluzione dei problemi che vanno oltre la documentazione di supporto consumer standard.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
-keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto tecnico, controller di movimento
+keywords: Windows Mixed Reality, Realtà mista, Realtà virtuale, REALTÀ VIRTUALE, MR, Risoluzione dei problemi, Errori, Guida, Supporto, Controller del movimento
 appliesto:
 - Windows 10
-ms.openlocfilehash: 372e9ca294e7b65d3450e76b1dbd826a7b5b736b
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: cf45794d5c5c6c790578e76be4b222d851b5a73c
+ms.sourcegitcommit: 229c33afab7c70341982f48962028aad13956356
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726032"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "108069195"
 ---
-# <a name="motion-controller-faqs"></a>Domande frequenti sul controller di movimento
+# <a name="motion-controller-faqs"></a>Domande frequenti sul controller del movimento
 
 ## <a name="what-do-the-vibrations-and-lights-mean"></a>Cosa significano le vibrazioni e le luci
 
-L'anello della costellazione LED e haptics indicano lo stato del controller di movimento.
+L'anello di costellazione del LED e gli aptici indicano lo stato del controller del movimento.
 
 | State    | Comportamento associato allo stato | Come ottenere/uscire dallo stato |
 |----------------------------|-----------------------------|----------------------------------------------------------------------|
-| **Accendere**               | I LED accendono e il controller vibra una volta. | Premere e tenere premuto il pulsante Windows sul controller per due secondi per accendere il controller.  |
-| **Spegnimento**              |  I LED si spengono e il controller viene vibrato due volte. | Premere e tenere premuto il pulsante Windows sul controller per quattro secondi per disattivare il controller.   |
-| **Sospeso**               |  I LED si spengono e lampeggiano ogni tre secondi in stato di sospensione. | Il controller passa automaticamente allo stato di sospensione quando non è in movimento per 30 secondi. Il controller viene riattivato quando rileva il movimento, tranne nel caso in cui il dispositivo non sia associato al PC host. Premere il pulsante per riattivarlo. |
-| **Abbinamento**                |  I LED passano lentamente in modalità di associazione e diventano solidi quando si esce dalla modalità di associazione. Il controller vibra una volta se l'associazione ha avuto esito positivo o tre volte se l'associazione ha esito negativo e si verifica il timeout. | Premere e tenere premuto il pulsante di associazione nel caso della batteria per tre secondi.     |
-| **Connessione/disconnessione del controller dal PC** |  Il controller vibra una volta sulla connessione del PC o sulla disconnessione. | Si verifica quando il controller si connette correttamente al PC dopo averlo acceso o se il controller si disconnette dal PC durante l'uso.|
-| **Livello batteria basso**      | Haptics sono disabilitati quando la batteria è bassa (non è presente alcuna indicazione LED). L'icona indicatore batteria sulla maniglia del controller in cuffia Visualizza 1/4 quando la batteria è insufficiente. | Sostituire le batterie. | 
-| **Livello di batteria critico** |  Il controller vibra tre volte quando lo si accende e quindi si disattiva automaticamente. L'icona dell'indicatore della batteria diventa rossa. | Sostituire le batterie. Se il problema persiste, [ripristinare le impostazioni di fabbrica del dispositivo](motion-controller-problems.md#how-can-i-restore-the-controllers-to-factory-settings)|
+| **Accendere**               | I LED si attivano e il controller vibra una sola volta. | Tenere premuto il pulsante Windows sul controller per due secondi per accendere il controller.  |
+| **Spegnimento**              |  I LED si spegnino e il controller vibra due volte. | Tenere premuto il pulsante Windows sul controller per quattro secondi per disattivare il controller.   |
+| **Sospeso**               |  I LED si spegnino e lampeggiano ogni tre secondi mentre sono in stato di sospensione. | Il controller entra automaticamente nello stato di sospensione quando è senza movimento per 30 secondi. Il controller si riattiva quando rileva il movimento, tranne se il dispositivo non è associato al PC host. Premere il pulsante per riattivarlo in questo caso. |
+| **Abbinamento**                |  I LED si pulsa lentamente mentre sono in modalità di associazione ed esci dalla modalità di associazione. Il controller vibra una volta se l'associazione ha avuto esito positivo o tre volte se l'associazione ha esito negativo e quindi si verifica il timeout. | Tenere premuto il pulsante di associazione all'interno della batteria per tre secondi.     |
+| **Il controller si connette/disconnette dal PC** |  Il controller vibra una volta alla connessione o alla disconnessione del PC. | Si verifica quando il controller si connette correttamente al PC dopo l'attivazione o se il controller si disconnette dal PC durante l'uso.|
+| **Livello di batteria in esaurimento**      | Gli aptici sono disabilitati quando la batteria è in esaurimento (non sono presenti indicazioni led). L'icona dell'indicatore della batteria sul handle del controller nel visore visualizza 1/4 pieno quando la batteria è scarica. | Sostituire le batterie. | 
+| **Livello critico della batteria** |  Il controller vibra tre volte quando lo si accende e quindi si spegne automaticamente. L'icona dell'indicatore della batteria sarà rossa. | Sostituire le batterie. Se il problema persiste, [ripristinare le impostazioni predefinite del dispositivo](motion-controller-problems.md#how-can-i-restore-the-controllers-to-factory-settings)|
 
 ## <a name="my-motion-controllers-arent-working-properly"></a>I controller di movimento non funzionano correttamente
 
-Se i [controller di movimento](controllers-in-wmr.md) non funzionano, si connettono o visualizzano un'immagine dei controller quando si indossa la cuffia:
+Se i [controller di movimento](controllers-in-wmr.md) non funzionano, si connettono o mostrano un'immagine dei controller quando si indossa il visore:
 
-1. Verificare che i controller siano accesi. Per attivarli, tenere premuto il pulsante Windows per due secondi.
-2. Verificare che i controller siano completamente addebitati e sostituire le batterie se non lo sono.
-3. Spegnere e riaccendere i controller tenendoli davanti all'utente. Premere e tenere premuto il pulsante Windows per quattro secondi per disattivare un controller. Premere e tenere premuto di nuovo per due secondi per attivarlo.
-4. Controllare se i controller di movimento sono [abbinati correttamente](controllers-in-wmr.md#pair-motion-controllers).
-5. Controllare i LED dei controller di movimento: i controller con illuminazione luminosa sono abbinati e connessi, i controller debolmente illuminati non sono connessi.
-6. Passare a **Start > portale per la realtà mista** nel PC e selezionare "menu". Verranno visualizzati i controller di movimento, insieme a un messaggio di stato:
-    * Pronto: tutti i controller sono impostati.
-    * Rilevamento perso: il portale per la realtà mista non riesce a trovare i controller. Tenerli davanti all'auricolare e riavviarli premendo il pulsante Windows per quattro secondi, quindi di nuovo per due secondi.
-    * Batteria insufficiente: sostituire le batterie del controller.
-7. Se si usa un adattatore Bluetooth USB esterno, assicurarsi che sia collegato a una porta USB 2,0 (spesso ma non sempre nero). Deve anche essere collegato per quanto possibile da qualsiasi altro trasmettitore wireless o unità flash USB, incluso il connettore USB per la cuffia. 
-8. Passare a **Device Manager > Bluetooth** e cercare una scheda per verificare che sia presente una sola radio Bluetooth nel PC. Se si usa la configurazione di desktop PC con la radio predefinita, controllare se è connessa un'antenna esterna. Se non è presente alcuna antenna esterna connessa, può causare problemi di rilevamento. In alternativa, usare un dongle Bluetooth esterno (USB), disabilitare la funzionalità Bluetooth interna e ritentare l'associazione e la connessione.
-9. Se la finestra Impostazioni Bluetooth è aperta in background, vengono effettuate molte chiamate aggiuntive al protocollo Bluetooth. Chiuderlo.
-10. Controllare il livello di batteria virtuale sul controller di movimento trasformando i controller in realtà mista per visualizzare l'icona della batteria. Attendere circa 15 secondi prima di leggere il livello, perché il livello segnalato è superiore al livello effettivo immediatamente dopo la connessione di un controller. Sostituire le batterie se l'icona è rossa.
-11. Rimuovere cuffie e altoparlanti Bluetooth in **impostazioni > dispositivi > bluetooth & altri dispositivi** e spegnere i dispositivi. Usare i jack per la cuffia o i relatori incorporati in un auricolare a realtà mista per ottenere la migliore esperienza audio.
-12. Rimuovere gli altri dispositivi Bluetooth che possono essere associati al PC, ad esempio cuffie o gamepad. Passare a **impostazioni > dispositivi > Bluetooth & altri dispositivi**, selezionare i dispositivi e quindi "Rimuovi dispositivo".
-13. Scollegare il cavo USB sulla cuffia e collegarlo di nuovo al PC per riavviare la realtà mista di Windows.
-14. Il controller lampeggia quando è in fase di aggiornamento del firmware. Attendere il completamento dell'aggiornamento e i controller dovrebbero essere visualizzati in realtà mista.
-15. Verificare che il PC sia connesso a una rete Wi-Fi da 5 GHz. Se il computer portatile è connesso a una rete Wi-Fi da 2,4 GHz, in genere condivide la connessione Bluetooth. Questo potrebbe influire negativamente sulle prestazioni di Wi-Fi o Bluetooth, a seconda della progettazione del prodotto. Modificare la banda preferita a 5 GHz nelle impostazioni della scheda di rete. Se la rete non supporta 5 GHz, è possibile usare un dongle Bluetooth al posto della funzionalità Bluetooth interna.
-16. Se le impostazioni Bluetooth sono già associate ai controller di movimento, Windows non individuerà i nuovi dispositivi fino a quando non vengono rimossi. Se sono stati aggiunti usando un dongle specifico, è possibile rimuoverli solo con tale dongle.
-17. Se il PC dispone di Bluetooth integrato e si verificano problemi di connessione, provare a usare una scheda Bluetooth USB. A tale scopo, disattivare la radio Bluetooth incorporata in Device Manager, quindi abbinare gli altri dispositivi Bluetooth con la nuova scheda.
+1. Assicurarsi che i controller siano accesi. Per attivarli, tenere premuto il pulsante Windows per due secondi.
+2. Assicurarsi che i controller siano completamente caricati e sostituire le batterie in caso di insodd di carica.
+3. Spegnere e riattivare i controller tenendoli davanti all'utente. Tenere premuto il pulsante di Windows per quattro secondi per disattivare un controller. Premere e tenere premuto di nuovo per due secondi per attivarlo.
+4. Controllare se i controller del movimento sono [associati correttamente.](controllers-in-wmr.md#pair-motion-controllers)
+5. Controllare i LED dei controller del movimento: i controller accesi sono associati e connessi, i controller poco accesi non sono connessi.
+6. Passare a **Start > Portale realtà mista** sul PC e selezionare "Menu". Dovrebbero essere elencati i controller del movimento, insieme a un messaggio di stato:
+    * Pronto: i controller sono tutti impostati.
+    * Rilevamento perso: Portale realtà mista non è in grado di trovare i controller. Tenere i dispositivi davanti al visore VR e riavviarli premendo il pulsante Windows per quattro secondi, quindi di nuovo per due secondi.
+    * Batteria in esaurimento: sostituire le batterie del controller.
+7. Se si usa un adattatore Bluetooth USB esterno, assicurarsi che sia collegato a una porta USB 2.0 (spesso ma non sempre nera). Deve anche essere collegato il più possibile da qualsiasi altro trasmettitore wireless o unità flash USB, incluso il connettore USB per il visore VR. 
+8. Passare a **Gestione dispositivi > Bluetooth** e cercare un adattatore per verificare che nel PC sia presente una sola radio Bluetooth. Se si usa la configurazione del PC desktop con radio incorporata, verificare se un'antenna esterna è connessa. Se non è presente un'antenna esterna connessa, può causare problemi di tracciamento. In caso contrario, usare un dongle Bluetooth esterno (USB), disabilitare la funzionalità Bluetooth interna e ripetere l'associazione e la connessione.
+9. Se la finestra impostazioni Bluetooth è aperta in background, vengono effettuate molte chiamate aggiuntive al protocollo Bluetooth. Chiuderlo.
+10. Controllare il livello della batteria virtuale nel controller del movimento ruotando i controller nella realtà mista per visualizzare l'icona della batteria. Attendere circa 15 secondi prima di leggere il livello, poiché il livello segnalato è superiore al livello effettivo immediatamente dopo la connessione di un controller. Sostituire le batterie se l'icona è rossa.
+11. Rimuovere le cuffi e gli altoparlanti Bluetooth in Impostazioni **> dispositivi > Bluetooth &** altri dispositivi e disattivare i dispositivi. Usare il jack per le cuffi o gli altoparlanti integrati nel visore VR di realtà mista per un'esperienza audio ottimale.
+12. Rimuovere altri dispositivi Bluetooth che possono essere associati al PC, ad esempio le cuffia o i gamepad. Passare a **Impostazioni > dispositivi > Bluetooth & altri** dispositivi, selezionare i dispositivi e quindi "Rimuovi dispositivo".
+13. Scollegare il cavo USB sul visore e collegarlo di nuovo al PC per riavviare il Windows Mixed Reality.
+14. Le luci del controller lampeggiano quando vengono sottoposte a un aggiornamento del firmware. Attendere il completamento dell'aggiornamento e i controller dovrebbero essere visualizzati in Realtà mista.
+15. Assicurarsi che il PC sia connesso a una rete Wi-Fi 5 GHz. Se il portatile è connesso a una rete Wi-Fi 2,4 GHz, in genere condivide la connessione Bluetooth. Ciò può influire negativamente sulle prestazioni Wi-Fi o Bluetooth, a seconda della progettazione del prodotto. Impostare la banda preferita su 5 GHz nelle impostazioni della scheda di rete. Se la rete non supporta 5 GHz, è possibile usare un dongle Bluetooth invece della funzionalità Bluetooth interna.
+16. Se alle impostazioni Bluetooth sono già associati controller di movimento, Windows non individua i nuovi dispositivi finché non vengono rimossi. Se sono stati aggiunti usando un dongle specifico, possono essere rimossi solo con tale dongle.
+17. Se il PC ha bluetooth integrato e si verificano problemi di connessione, provare a usare un adattatore Bluetooth USB. A tale scopo, disattivare la radio Bluetooth predefinita in Gestione dispositivi e quindi associare gli altri dispositivi Bluetooth alla nuova scheda.
 
-## <a name="my-controllers-jitter-get-stuck-or-flicker-and-disappear-in-mixed-reality"></a>I miei controller si nervosano, si bloccano o sfarfallano e scompaiono in realtà mista
+## <a name="my-controllers-jitter-get-stuck-or-flicker-and-disappear-in-mixed-reality"></a>I controller si instabilità, si bloccano o sfarfallio e scompaiono nella realtà mista
 
-* Se il PC è in esecuzione su Wi-Fi 2,4 GHz, passare a un Wi-Fi a 5 GHz. 
-* Se si usa una scheda Bluetooth esterna, assicurarsi che sia collegata a una porta USB 2,0 (che è spesso, ma non sempre, nero), lontano da altri trasduttori wireless o unità flash USB.
-* Eseguire lo strumento di risoluzione dei problemi Bluetooth in **impostazioni > aggiornamento & sicurezza > risolvere i problemi > Bluetooth**.
+* Se il PC è in esecuzione su wifi a 2,4 GHz, passare al wifi a 5 GHz. 
+* Se si usa un adattatore Bluetooth esterno, assicurarsi che sia collegato a una porta USB 2.0 (spesso, ma non sempre nera), lontano da altri trasmettitori wireless o unità flash USB.
+* Eseguire lo strumento di risoluzione dei problemi Bluetooth in **Impostazioni > aggiornamento & sicurezza > risolvere > Bluetooth**.
 
 ## <a name="my-controller-is-stuck-in-an-infinite-reboot"></a>Il controller è bloccato in un riavvio infinito
 
-Si tratta di un indicatore di batteria essenziale. Inserire batterie aggiornate nel dispositivo. se il problema persiste, [ripristinare le impostazioni predefinite del controller](motion-controller-problems.md#how-can-i-restore-the-controllers-to-factory-settings).
+Si tratta di un indicatore critico della batteria. Inserire batterie nuove nel dispositivo e, se il problema persiste, ripristinare le [impostazioni di fabbrica del controller.](motion-controller-problems.md#how-can-i-restore-the-controllers-to-factory-settings)
 
-## <a name="the-mixed-reality-portal-is-working-but-my-controllers-are-tracking-poorly-flying-away-shaking-etc"></a>Il portale per la realtà mista funziona, ma i miei controller si rilevano male (in volo, tremando e così via).
+## <a name="the-mixed-reality-portal-is-working-but-my-controllers-are-tracking-poorly-flying-away-shaking-etc"></a>Il Portale realtà mista funziona, ma i controller sono insodamente (allontanarsi, afferrare e così via)
 
-1. Le condizioni di illuminazione possono influire sul rilevamento. Assicurarsi di non essere esposti alla luce solare diretta e avere fonti di luce puntiformi minime visibili ai HMD (ad esempio, stringhe di luci come un albero di Natale).
-2. Questi sintomi sono causati da errori di comunicazione tra il controller e il PC host e indicano una scarsa qualità del collegamento Bluetooth. Vedere le [domande su Bluetooth](motion-controller-problems.md#how-can-i-tell-if-im-using-bluetooth-technology).
+1. Le condizioni di illuminazione possono influire sul rilevamento. Assicurarsi di non essere esposti a luce diretta e avere sorgenti di luce punto minime visibili per l'HMD(ad esempio, stringhe di luci come un albero di albero).
+2. Questi sintomi sono causati da errori di comunicazione tra il controller e il PC host e indicano una qualità del collegamento Bluetooth scadente. Vedere [le domande su Bluetooth.](motion-controller-problems.md#how-can-i-tell-if-im-using-bluetooth-technology)
 
-## <a name="motion-controller-leds-are-not-lit-but-the-buttons-and-thumbstick-still-work-in-mixed-reality-portal"></a>I LED del controller di movimento non sono accesi, ma i pulsanti e levetta funzionano ancora nel portale di realtà mista
+## <a name="motion-controller-leds-are-not-lit-but-the-buttons-and-thumbstick-still-work-in-mixed-reality-portal"></a>I LED del controller del movimento non sono accesi, ma i pulsanti e la levetta funzionano ancora Portale realtà mista
 
-La cache di calibrazione del controller di movimento potrebbe essere danneggiata. Per eliminare la cache, eseguire il comando seguente in un prompt dei comandi dell'amministratore:
+La cache di calibrazione del controller del movimento potrebbe essere danneggiata. Per eliminare la cache, eseguire il comando seguente in un prompt dei comandi dell'amministratore:
 
 `rmdir /S /Q C:\Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Windows\MotionController\Calibration`
 
-Questa cartella non è accessibile in Esplora risorse e può essere modificata solo da un prompt dei comandi dell'amministratore. Dopo aver eliminato la cartella, riavviare il computer e riconnettere i controller di movimento per ripristinare i file di calibrazione.
+Questa cartella non è accessibile in Esplora risorse e può essere modificata solo da un prompt dei comandi dell'amministratore. Dopo aver eliminato la cartella, riavviare il PC e riconnettere i controller del movimento per ripristinare i file di calibrazione.
 
-## <a name="my-controller-looks-like-a-viveoculus-has-strange-orientation-or-the-buttons-are-incorrectly-mapped"></a>Il mio controller ha un aspetto di vive/Oculus, presenta un orientamento strano oppure i pulsanti sono mappati in modo errato
+## <a name="my-controller-looks-like-a-viveoculus-has-strange-orientation-or-the-buttons-are-incorrectly-mapped"></a>Il controller ha l'aspetto di Vive/Oculus, ha un orientamento strano o i pulsanti sono mappati in modo errato
 
-Il sito Web probabilmente non dispone del supporto per il controller di movimento completo.
+È probabile che il sito Web non abbia il supporto completo per il controller del movimento.
 
-## <a name="my-motion-controllers-do-not-appear-in-steamvr-apps-and-games"></a>I controller di movimento non vengono visualizzati nelle app e nei giochi di SteamVR
+## <a name="my-motion-controllers-do-not-appear-in-steamvr-apps-and-games"></a>I controller del movimento non vengono visualizzati nelle app e nei giochi di SteamVR
 
-Prima di tutto, assicurarsi che vengano addebitate le batterie del controller. I controller non funzionano se le batterie sono inattivi o non sono più presenti
+Prima di tutto, assicurarsi che le batterie del controller siano caricate. I controller non funzionano se le batterie sono in stato di dead o dead
 
-Se è possibile visualizzare i controller nella casa scogliera ma non nelle app e nei giochi SteamVR, il driver del modello di motion controller potrebbe non essere installato correttamente. Per verificare che il driver del modello del controller di movimento sia installato correttamente:
+Se è possibile visualizzare i controller nel Casa sulla scogliera ma non nelle app e nei giochi Dirvr, il driver del modello di controller del movimento potrebbe non essere installato correttamente. Per verificare che il driver del modello di controller del movimento sia installato correttamente:
 
-1. Attivare entrambi i controller di movimento. Controllare se i controller di movimento sono [abbinati correttamente](controllers-in-wmr.md#pair-motion-controllers).
-2. Passare a **Device Manager > Bluetooth** e cercare "motion controller".
-3. Selezionare il dispositivo e quindi fare clic su **visualizza > dispositivi per connessione**.
-4. Passare a **impostazioni di sistema > dispositivi > Bluetooth & altri dispositivi > altri dispositivi** per verificare se sono visibili. Ci saranno due dispositivi "dispositivo HID Bluetooth" e in ogni dispositivo HID Bluetooth dovrebbero essere i dispositivi denominati "motion controller" (con icone grigio) nello stesso nodo del controller di movimento.
-5. Fare doppio clic su ogni dispositivo "motion controller" e passare alla scheda "driver". Verificare che la versione del driver elencata corrisponda a una di [queste versioni](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history).
-6. In caso contrario, eseguire Windows Update, che consente di scaricare e installare automaticamente il driver. Se si usa un PC con criteri aziendali o se Windows Update è diversamente limitato, potrebbe essere necessario installare manualmente il driver del modello di motion controller. A tale scopo, visitare [Questa pagina](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history) e cercare la versione del driver corrispondente alla versione di Windows 10. Le istruzioni di installazione sono disponibili nella pagina di download.
+1. Attivare entrambi i controller del movimento. Controllare se i controller del movimento sono [associati correttamente.](controllers-in-wmr.md#pair-motion-controllers)
+2. Passare a **Gestione dispositivi > dispositivi dell'interfaccia umana** e cercare "Controller di movimento".
+3. Fare doppio clic su ogni dispositivo "Controller di movimento" e passare alla scheda "Driver". Verificare che la versione del driver elencata corrisponda a una [di queste versioni.](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history)
+4. Se la versione del driver non corrisponde o non è possibile trovare un dispositivo denominato "Controller di movimento", eseguire Windows Update.  Il driver verrà scaricato e installato automaticamente. Se si è in un PC con criteri aziendali o se Windows Update è altrimenti limitato, potrebbe essere necessario installare manualmente il driver del modello di controller di movimento. A tale scopo, visitare [questa pagina e](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history) cercare la versione del driver corrispondente all'hardware del controller. Le istruzioni di installazione sono disponibili nella pagina di download.
 
 ## <a name="the-controller-firmware-update-takes-longer-than-two-minutes"></a>L'aggiornamento del firmware del controller richiede più di due minuti
 
-Vedere la [sezione domande sul Bluetooth](motion-controller-problems.md#how-can-i-tell-if-im-using-bluetooth-technology). Una scarsa qualità dei collegamenti Bluetooth causa in genere questi problemi.
+Controllare la [sezione Domande Bluetooth](motion-controller-problems.md#how-can-i-tell-if-im-using-bluetooth-technology). La scarsa qualità del collegamento Bluetooth causa in genere questi problemi.
 
-## <a name="i-inserted-fresh-batteries-but-the-controller-virtual-battery-level-does-not-indicate-full-level"></a>Sono state inserite batterie aggiornate, ma il livello di batteria virtuale del controller non indica il livello completo
+## <a name="i-inserted-fresh-batteries-but-the-controller-virtual-battery-level-does-not-indicate-full-level"></a>Ho inserito batterie nuove, ma il livello della batteria virtuale del controller non indica il livello completo
 
-Il livello di batteria del controller di movimento viene ottimizzato per le batterie AA. Alcune batterie ricaricabili a bassa tensione potrebbero non essere segnalate come complete anche se sono completamente addebitate.
+Il livello della batteria del controller di movimento è ottimizzato per le batterie AA. Alcune batterie ricaricabili a bassa tensione potrebbero non essere segnalate come complete anche se sono completamente caricate.
 
-## <a name="my-samsung-motion-controllers-touchpad-is-off-center-or-has-a-dead-spot"></a>Il touchpad di Samsung Motion controller è esterno al centro o ha un punto morto
+## <a name="my-samsung-motion-controllers-touchpad-is-off-center-or-has-a-dead-spot"></a>Il touchpad del controller di movimento Samsung è spento al centro o ha un punto di inattivi
 
-Si tratta probabilmente di un difetto hardware ed è necessario tornare al rivenditore o al produttore dell'apparecchiatura per un sostituto o uno scambio.
+Si tratta probabilmente di un difetto hardware e si dovrebbe tornare al rivenditore o al produttore di apparecchiature per una sostituzione o uno scambio.
 
-## <a name="how-can-i-restore-the-controllers-to-factory-settings"></a>Come è possibile ripristinare le impostazioni predefinite dei controller
+## <a name="how-can-i-restore-the-controllers-to-factory-settings"></a>Come ripristinare le impostazioni predefinite dei controller
 
-Ripristinare le condizioni di fabbrica (sono necessarie batterie aggiornate):
+Ripristinarlo in condizioni di fabbrica (saranno necessarie batterie nuove):
 
 1. Scollegare e spegnere i controller.
 2. Aprire il coperchio della batteria.
 3. Inserire le nuove batterie.
-4. Premere e tenere premuto il pulsante di associazione (la scheda nella parte inferiore sotto le batterie).
-5. Tenendo premuto il pulsante di associazione, accendere il controller premendo e tenendo premuto il pulsante Windows per cinque secondi (tenere premuto entrambi i pulsanti).
-6. Rilasciare i pulsanti e attendere l'accensione del controller. Questa operazione richiede fino a 15 secondi e non ci sono indicatori quando si verifica il ripristino del dispositivo. Se il dispositivo attiva immediatamente il rilascio del pulsante, la sequenza del pulsante di ripristino non viene registrata ed è necessario riprovare.
-7. Se i controller sono stati abbinati al PC, passare a **impostazioni > Bluetooth > altri dispositivi** e selezionare "motion controller" e "Rimuovi dispositivo" per rimuovere le associazioni del controller da impostazioni Bluetooth.
-8. [Associare nuovamente i controller](controllers-in-wmr.md#pair-motion-controllers) alla cuffia o al PC.
-9. Dopo la connessione con l'host e l'auricolare, il dispositivo viene aggiornato al firmware più recente disponibile.
+4. Tenere premuto il pulsante di associazione (la scheda nella parte inferiore sotto le batterie).
+5. Tenendo premuto il pulsante di associazione, azionare il controller premendo e tenendo premuto il pulsante di Windows per cinque secondi (mantenere entrambi i pulsanti premuto).
+6. Rilasciare i pulsanti e attendere l'accensione del controller. Questa operazione richiede fino a 15 secondi e non sono presenti indicatori quando è in corso il ripristino del dispositivo. Se il dispositivo si alimenta immediatamente al rilascio del pulsante, la sequenza del pulsante di ripristino non è stata registrata ed è necessario riprovare.
+7. Se i controller sono stati associati al PC, passare a Impostazioni **> Bluetooth >** altri dispositivi e selezionare "Controller del movimento" e "Rimuovi dispositivo" per rimuovere le associazioni del controller dalle impostazioni Bluetooth.
+8. [Associare nuovamente i controller](controllers-in-wmr.md#pair-motion-controllers) al visore VR o al PC.
+9. Dopo la connessione con l'host e il visore VR, il dispositivo verrà aggiornato all'ultimo firmware disponibile.
 
-## <a name="can-i-pair-my-xbox-controller-to-my-pc-so-i-can-use-it-in-headset"></a>È possibile associare il controller Xbox al PC per poterlo usare in cuffia
+## <a name="can-i-pair-my-xbox-controller-to-my-pc-so-i-can-use-it-in-headset"></a>È possibile associare il controller Xbox al PC in modo da poterlo usare nel visore VR?
 
-È possibile associare un controller Xbox Bluetooth per usarlo con l'auricolare seguendo [queste istruzioni](https://support.xbox.com/help/hardware-network/accessories/connect-and-troubleshoot-xbox-one-bluetooth-issues).
+È possibile associare un controller Xbox Bluetooth per usarlo con il visore VR seguendo [queste istruzioni.](https://support.xbox.com/help/hardware-network/accessories/connect-and-troubleshoot-xbox-one-bluetooth-issues)
 
 Se si dispone di un controller Xbox cablato, collegarlo al PC.
 
-Alcuni giochi e app usano il controller Xbox in modo diverso rispetto a quello usato in realtà mista. Per usare il controller per un gioco o un'app, selezionare "USA come gamepad" sulla barra dell'app o "USA come gamepad". Per riportare il controller alla realtà mista, selezionare di nuovo "USA come gamepad" oppure "USA con lo sguardo". 
+Alcuni giochi e app usano il controller Xbox in modo diverso rispetto a quello usato nella realtà mista. Per usare il controller per un gioco o un'app, selezionare "Usa come game pad" sulla barra dell'app o pronunciare "Usa come game pad". Per tornare alla realtà mista del controller, selezionare di nuovo "Usa come game pad" o pronunciare "Usa con sguardo fisso". 
 
-## <a name="how-do-i-pair-new-controllers-if-windows-mixed-reality-is-already-set-up-on-my-pc"></a>Ricerca per categorie associare nuovi controller se la realtà mista di Windows è già configurata nel PC
+## <a name="how-do-i-pair-new-controllers-if-windows-mixed-reality-is-already-set-up-on-my-pc"></a>Ricerca per categorie associare nuovi controller se Windows Mixed Reality è già configurato nel PC
 
-Se si abbinano i controller alla cuffia, usare l'app complementare (il [portale per la realtà mista](install-windows-mixed-reality.md#launch-mixed-reality-portal) può aiutare a trovare un'app complementare per avviare o fornire un elenco di app complementari che è possibile selezionare).
+Se si associano i controller al visore VR, usare l'app complementare (il [Portale realtà mista](install-windows-mixed-reality.md#launch-mixed-reality-portal) consente di trovare un'app complementare da avviare o fornire un elenco di app complementari tra cui è possibile selezionare).
 
-## <a name="how-can-i-return-my-controllers-to-their-factory-pairing"></a>Come è possibile ripristinare i controller nell'associazione di Factory
+## <a name="how-can-i-return-my-controllers-to-their-factory-pairing"></a>Come è possibile restituire i controller all'associazione di factory
 
-Per riportare i controller di movimento alla propria associazione di fabbrica o per associarli a un headset di realtà mista di Windows con la radio Bluetooth incorporata, eseguire l'app Companion per dispositivi dell'auricolare e seguire le istruzioni per l'associazione del controller di movimento. Ad esempio, l'app "Acer" 500 "o" Samsung HMD Odyssey + Setup "viene installata automaticamente la prima volta che l'auricolare viene collegato.
+Per restituire i controller del movimento all'associazione di fabbrica o per associarli a un visore VR Windows Mixed Reality con la radio Bluetooth incorporata, eseguire l'app complementare del dispositivo del visore VR e seguire le istruzioni per l'associazione del controller del movimento. Ad esempio, l'app "Acer OJO 500" o l'app "Samsung HMD Odyssey+ Setup" viene installata automaticamente la prima volta che il visore è collegato.
 
 ## <a name="my-motion-controllers-are-not-pairing-to-my-pc"></a>I controller di movimento non sono associati al PC
 
-* Se i controller non vengono attivati, inserire batterie aggiornate. Se il problema persiste, ripristinare le impostazioni di fabbrica del dispositivo accendendo il dispositivo tenendo premuto i pulsanti di associazione. Per ulteriori informazioni, vedere la [procedura di ripristino del dispositivo](motion-controller-problems.md#how-can-i-restore-the-controllers-to-factory-settings).
-* Se i controller vengono accesi mentre si usa una scheda Bluetooth esterna, verificare che la scheda sia collegata a una porta USB 2,0 (spesso, ma non sempre, nero), lontano da altri trasduttori wireless o unità flash USB. Se il problema persiste, eseguire lo strumento di risoluzione dei problemi Bluetooth in impostazioni > aggiornamento & sicurezza > risolvere i problemi > Bluetooth.
-* Se si usa una scheda Qualcomm e il PC si è arrestato in modo anomalo, riavviare il computer.
-* Provare a riavviare i controller di movimento che non sono associati, uno alla volta, quindi riavviare il computer.
-* La cache del controller di movimento potrebbe essere danneggiata. Per risolvere il problema, vedere questi [passaggi](motion-controller-problems.md#motion-controller-leds-are-not-lit-but-the-buttons-and-thumbstick-still-work-in-mixed-reality-portal).
-* Se la procedura risolve il problema, contattare il produttore.
+* Se i controller non si attivano, inserire batterie nuove. Se il problema non viene risolto, ripristinare le impostazioni predefinite del dispositivo tramite l'accensione del dispositivo tenendo premuto i pulsanti di associazione. Per altre informazioni, vedere la procedura [di ripristino del dispositivo](motion-controller-problems.md#how-can-i-restore-the-controllers-to-factory-settings).
+* Se i controller si attivano mentre si usa un adattatore Bluetooth esterno, assicurarsi che l'adattatore sia collegato a una porta USB 2.0 (spesso, ma non sempre, nera), lontano da altri trasmettitori wireless o unità flash USB. Se non funziona ancora, eseguire lo strumento di risoluzione dei problemi Bluetooth in Impostazioni > Aggiornamento & sicurezza > risoluzione dei problemi > Bluetooth.
+* Se si usa un adattatore Qualcomm e il PC si è appena in arresto anomalo, riavviare il PC.
+* Provare a riavviare i controller di movimento che non sono associati, uno alla volta, quindi riavviare il PC.
+* La cache del controller di movimento potrebbe essere danneggiata. Per risolvere questo problema, vedere questi [passaggi.](motion-controller-problems.md#motion-controller-leds-are-not-lit-but-the-buttons-and-thumbstick-still-work-in-mixed-reality-portal)
+* Se la procedura consente di risolvere il problema, contattare il produttore.
 
-## <a name="my-paired-controllers-dont-show-up-in-the-mixed-reality-portal"></a>I controller associati non vengono visualizzati nel portale per la realtà mista
+## <a name="my-paired-controllers-dont-show-up-in-the-mixed-reality-portal"></a>I controller associati non vengono visualizzati nel Portale realtà mista
 
-* Mantenere i controller davanti alla cuffia e riavviarli premendo il pulsante Windows per quattro secondi, quindi di nuovo per due secondi.
-* Se i controller vengono visualizzati come connessi, non è possibile associarli ed eseguire di nuovo il [processo di associazione](controllers-in-wmr.md#pair-motion-controllers) .
-* Se i LED del controller eseguono il ciclo con un quadrante di luci accese e spente alla volta, è in fase di aggiornamento del firmware. Attendere il completamento dell'aggiornamento e i controller dovrebbero essere visualizzati in realtà mista.
-* Se viene usata una scheda Bluetooth esterna, verificare che la scheda sia collegata a una porta USB 2,0 (che è nera), a partire da altri trasduttori wireless o dispositivi USB 3,0.
-* Se il PC si è arrestato in modo anomalo e viene usata una scheda Qualcomm, una reimpostazione potrebbe non funzionare. Per risolvere questo problema, scollegare l'alimentazione dal retro del computer (o, se si è in un computer portatile, tenendo premuto il pulsante di alimentazione per 10 secondi) e riavviare il computer.
-* Eseguire lo strumento di risoluzione dei problemi Bluetooth in **impostazioni > aggiornamento & sicurezza > risolvere i problemi > Bluetooth**.  
+* Tenere i controller davanti al visore e riavviarli premendo il pulsante Windows per quattro secondi, quindi di nuovo per due secondi.
+* Se i controller vengono visualizzati come connessi, annullare l'associazione e ripartire il [processo di associazione.](controllers-in-wmr.md#pair-motion-controllers)
+* Se i LED del controller sono in bicicletta con un quadrante di luci accese e spente alla volta, vengono sottoposti a un aggiornamento del firmware. Attendere il completamento dell'aggiornamento e i controller dovrebbero essere visualizzati in Realtà mista.
+* Se si usa un adattatore Bluetooth esterno, assicurarsi che l'adattatore sia collegato a una porta USB 2.0 (nera), lontano da altri trasmettitori wireless o dispositivi USB 3.0.
+* Se il PC si arresta in modo anomalo e viene usato un adattatore Qualcomm, la reimpostazione potrebbe non funzionare. Per risolvere questo problema, scollegare l'alimentazione dalla parte posteriore del computer (o, se su un portatile, tenere premuto il pulsante di alimentazione per 10 secondi) e riavviare il PC.
+* Eseguire lo strumento di risoluzione dei problemi Bluetooth in **Impostazioni > Aggiornamento & sicurezza > risoluzione dei > Bluetooth**.  
 
-## <a name="im-trying-to-pair-my-controllers-but-they-never-show-up-in-the-add-a-new-device-menu-in-bluetooth-settings"></a>Sto tentando di associare i controller, ma non vengono mai visualizzati nel menu "Aggiungi un nuovo dispositivo" nelle impostazioni Bluetooth
+## <a name="im-trying-to-pair-my-controllers-but-they-never-show-up-in-the-add-a-new-device-menu-in-bluetooth-settings"></a>Sto provando ad associare i controller, ma non vengono mai visualizzati nel menu "Aggiungi un nuovo dispositivo" nelle impostazioni Bluetooth
 
-Verificare che non siano già stati associati controller. In caso contrario, rimuoverli e riprovare. Riavviare il computer se il problema persiste. Se il tentativo non riesce, vedere altre [informazioni su Bluetooth](motion-controller-problems.md#how-can-i-tell-if-im-using-bluetooth-technology).
+Verificare che i controller non siano già associati. In caso contrario, rimuoverli e riprovare. Riavviare il PC se il problema persiste. Se l'operazione non riesce, vedere [altre informazioni su Bluetooth.](motion-controller-problems.md#how-can-i-tell-if-im-using-bluetooth-technology)
 
-Nota: se un altro set di controller di movimento è associato al PC, sarà necessario disaccoppiare tali controller prima di associarne di nuovi. Se un set di controller di movimento è stato associato al PC corrente e quindi abbinato a un secondo PC, sarà necessario disaccoppiarli e riassociarli al PC corrente prima di riutilizzarli.
+Nota: se un altro set di controller del movimento è associato al PC, dovrai annullare l'associazione di tali controller prima di associarli a quelli nuovi. Se hai associato un set di controller del movimento al PC corrente e quindi li hai associati a un secondo PC, dovrai annullare l'associazione e rias associarli al PC corrente prima di usarli di nuovo.
 
-## <a name="how-can-i-tell-if-im-using-bluetooth-technology"></a>Come è possibile stabilire se si usa la tecnologia Bluetooth
+## <a name="how-can-i-tell-if-im-using-bluetooth-technology"></a>Come è possibile determinare se si usa la tecnologia Bluetooth?
 
-I controller di movimento usano la stessa tecnologia Bluetooth disponibile in molti dispositivi consumer e sono progettati per funzionare con la funzionalità Bluetooth inclusa in tutti i PC recenti. Il PC deve avere la radio Bluetooth se ha superato il controllo di compatibilità della realtà mista. Da verificare:
+I controller del movimento usano la stessa tecnologia Bluetooth presente in molti dispositivi consumer e sono progettati per funzionare con la funzionalità Bluetooth inclusa in qualsiasi PC recente. Il PC deve avere la radio Bluetooth se ha superato il controllo di compatibilità della realtà mista. Da verificare:
 
-* Aprire "Device Manager".
-* Espandere la sezione Bluetooth e cercare un adapter.
+* Aprire "Gestione dispositivi".
+* Espandere la sezione Bluetooth e cercare un adattatore.
 
-![Screenshot di un esempio Device Manager. L'adapter è la radio Bluetooth.](images/devicemanagerbtadapterpic.png)
+![Screenshot di un esempio di Gestione dispositivi. Adapter è la radio Bluetooth.](images/devicemanagerbtadapterpic.png)
 
-Se il PC non ha Bluetooth, usare la scheda micro USB Bluetooth 4,0 per basso consumo di energia.
+Se il PC non dispone di Bluetooth, usare pluggable USB Bluetooth 4.0 Low Energy Micro Adapter(Micro adapter Bluetooth 4.0 a basso consumo).
 
-## <a name="wi-fi-slows-down-on-my-notebook-when-motion-controllers-are-turned-on"></a>Wi-Fi rallenta il notebook quando i controller di movimento sono accesi
+## <a name="wi-fi-slows-down-on-my-notebook-when-motion-controllers-are-turned-on"></a>Wi-Fi rallenta nel notebook quando i controller del movimento sono attivati
 
-Il notebook può condividere l'antenna Wi-Fi con Bluetooth quando si è connessi a un punto di accesso di 2,4 GHz. Archiviare Device Manager se è possibile cambiare la preferenza della banda a 5 GHz. Se una rete da 5 GHz non è disponibile e le prestazioni sono influenzate gravemente, provare a usare un dongle Bluetooth.
+Il notebook può condividere la propria antenna Wi-Fi bluetooth quando è connesso a un punto di accesso a 2,4 GHz. Controllare in Gestione dispositivi se è possibile impostare la preferenza di banda su 5 GHz. Se una rete a 5 GHz non è disponibile e le prestazioni sono gravemente interessate, è consigliabile usare un dongle Bluetooth.
 
-![È possibile trovare le impostazioni di selezione banda Wi-Fi tramite Gestione dispositivi](images/wifi5ghz.png)
+![Le impostazioni di selezione della banda Wi-Fi sono disponibili tramite Gestione dispositivi](images/wifi5ghz.png)
 
-## <a name="my-pc-has-bluetooth-technology-but-im-having-problems-with-my-controllers"></a>Il PC ha la tecnologia Bluetooth ma si verificano problemi con i controller
+## <a name="my-pc-has-bluetooth-technology-but-im-having-problems-with-my-controllers&quot;></a>Il PC ha la tecnologia Bluetooth, ma si verificano problemi con i controller
 
-I controller di movimento dovrebbero funzionare con altre tastiere, topi e controller di gioco Bluetooth. L'esperienza varia a seconda del modello di tastiera, mouse o controller di gioco usato. Ecco alcune operazioni che è possibile eseguire per migliorare le prestazioni:
+I controller di movimento devono funzionare con altre tastiere Bluetooth, mouse e controller di gioco. L'esperienza varia a seconda del modello di tastiera, mouse o controller di gioco in uso. Ecco alcune operazioni che è possibile eseguire per migliorare le prestazioni:
 
-* Se il computer dispone di Bluetooth ma si verificano ancora problemi con i controller di movimento, sostituire la radio Bluetooth con una scheda Bluetooth esterna collegabile collegata a USB. È possibile disporre di un solo adattatore radio Bluetooth attivo alla volta. Se si collega un'altra radio insieme a una radio esistente, è necessario disabilitare la radio Bluetooth esistente in Device Manager. Fare clic con il pulsante destro del mouse sulla scheda e selezionare "Disabilita dispositivo" e disaccoppiare/associare tutti i dispositivi Bluetooth precedenti.
-* Se si usa una scheda Bluetooth USB, connetterla a una porta USB 2,0 (2,0 porte sono spesso nere e non sono etichettate "SS"), se disponibile. La porta deve essere fisicamente separata da:
+* Se il computer dispone di Bluetooth ma si verificano ancora problemi con i controller di movimento, valutare la possibilità di sostituire la radio Bluetooth con un adattatore Bluetooth esterno collegabile collegato a USB. È possibile avere un solo adattatore radio Bluetooth attivo alla volta. Se si collega una radio esterna insieme a una radio esistente, è necessario disabilitare la radio Bluetooth esistente in Gestione dispositivi. Fare clic con il pulsante destro del mouse sulla scheda e scegliere &quot;Disabilita dispositivo&quot; e annullare l'associazione/riasscoma tutti i dispositivi Bluetooth precedenti.
+* Se si usa un adattatore Bluetooth USB, collegarlo a una porta USB 2.0 (le porte 2.0 sono spesso nere e non sono etichettate come &quot;SS"), se disponibili. La porta deve essere fisicamente separata da:
     - connettore USB HMD
     - unità flash
-    - unità disco rigido
-    - i ricevitori USB wireless come quelli per tastiere/topi sono idealmente collegati al più possibile da questi altri connettori per collegare la scheda Bluetooth USB al lato opposto del computer.
-* Chiudere la finestra Impostazioni Bluetooth se è aperta. Lasciarla aperta in background significa che vengono effettuate molte chiamate aggiuntive al protocollo Bluetooth.
-* Se l'auricolare è associato al PC, usare lo stack di driver Bluetooth di Windows e non installare gli stack di driver Bluetooth di terze parti. Il software di terze parti potrebbe non funzionare correttamente.
-* Disabilitare l'impostazione "Mostra notifica per la connessione tramite una coppia Swift" in "Bluetooth & altri dispositivi" per ridurre l'attività di analisi radio host.
-* Se si usa una scheda Bluetooth interna, assicurarsi che si stia usando un'antenna Bluetooth esterna o che si verifichino problemi di rilevamento. Se questa operazione non funziona, usare un dongle Bluetooth esterno (USB) dopo aver disattivato il Bluetooth interno.
-* Il dispositivo dovrebbe essere visualizzato sotto la categoria "mouse, tastiera & Pen" nelle impostazioni Bluetooth. Se si trova in "altri dispositivi", disaccoppiare e associare il dispositivo.
-* Rimuovere, rimuovere le coppie e spegnere cuffie e altoparlanti Bluetooth. Questi non sono supportati con la realtà mista di Windows. Usare i jack per la cuffia o i relatori incorporati in un auricolare a realtà mista per ottenere la migliore esperienza audio.
+    - dischi rigidi
+    - Ricevitori USB wireless come quelli per tastiere/mouse Idealmente, collegare l'adattatore Bluetooth USB sul lato opposto del computer il più possibile da questi altri connettori.
+* Chiudere la finestra Impostazioni Bluetooth, se aperta. Lasciarlo aperto in background significa che vengono effettuate molte chiamate aggiuntive al protocollo Bluetooth.
+* Se il visore è associato al PC, usare lo stack di driver Bluetooth di Windows e non installare stack di driver Bluetooth di terze parti. Il software di terze parti potrebbe non funzionare correttamente.
+* Disabilitare l'impostazione "Show notification to connect using Swift Pair" (Mostra notifica per la connessione tramite coppia Swift) in "Bluetooth & altri dispositivi" per ridurre l'attività di scansione radio dell'host.
+* Se si usa una scheda Bluetooth interna, assicurarsi di usare un'antenna Bluetooth esterna o che si verifichino problemi di rilevamento. Se non funziona, usare un dongle Bluetooth esterno (USB) dopo aver disabilitato il Bluetooth interno.
+* Il dispositivo dovrebbe essere visualizzato nella categoria "Mouse, & penna" nelle impostazioni Bluetooth. Se si trova in "Altri dispositivi", annullare l'associazione e associare il dispositivo.
+* Rimuovere, disassociare e spegnere le cuffi e gli altoparlanti Bluetooth. Questi non sono supportati con Windows Mixed Reality. Usare il jack per le cuffi o gli altoparlanti integrati nel visore VR di realtà mista per ottenere un'esperienza audio ottimale.
 
-## <a name="my-second-controller-takes-a-long-time-to-reconnect"></a>Il secondo controller impiega molto tempo per la riconnessione
+## <a name="my-second-controller-takes-a-long-time-to-reconnect"></a>La riconnessione del secondo controller richiede molto tempo
 
-Alcune versioni precedenti di Intel radio hanno riscontrato questo problema se i controller di movimento sono accesi nello stesso momento. Evitare di accendere i controller allo stesso tempo.
+Questo problema si verifica in alcune radio Intel meno recenti se i controller del movimento sono acceso contemporaneamente. Evitare l'accensione dei controller contemporaneamente.
 
-## <a name="my-qualcomm-bluetooth-radio-cannot-pair-controllers-after-a-pc-crash"></a>Non è possibile associare i controller a un arresto anomalo del PC
+## <a name="my-qualcomm-bluetooth-radio-cannot-pair-controllers-after-a-pc-crash"></a>La radio Bluetooth Qualcomm non può associare controller dopo un arresto anomalo del PC
 
-I driver radio del dispositivo Qualcomm (QCA) prima di 10.0.0.448 potrebbero finire in uno stato non valido dopo un arresto anomalo di Windows. Spegnere completamente il PC per aggirare questo problema.
+I driver radio Bluetooth Qualcomm (QCA) precedenti alla versione 10.0.0.448 potrebbero non essere corretti dopo un arresto anomalo di Windows. Spegnere completamente il PC per risolvere questo problema.
 
-## <a name="im-experiencing-poor-controller-tracking-with-marvell-radio"></a>Si verificano problemi di rilevamento del controller con la radio Marvell
+## <a name="im-experiencing-poor-controller-tracking-with-marvell-radio"></a>Si è verificato un monitoraggio del controller insod toto con la radio DiLlol
 
-Passare a **Device Manager > bluetooth > Marvell avastr bluetooth > proprietà > driver** e verificare che sia in uso driver 15.68.9210.47 o versione successiva.
+Passare **a Device Manager > Bluetooth > Bluetooth > Bluetooth Radio Adapter > Properties > Driver** (Proprietà > Driver) e assicurarsi di usare il driver 15.68.9210.47 o versione successiva.
