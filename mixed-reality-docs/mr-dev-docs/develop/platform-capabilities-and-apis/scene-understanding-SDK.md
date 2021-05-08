@@ -1,57 +1,53 @@
 ---
-title: Scenario di comprensione dell'SDK
-description: Informazioni su come installare e usare la scena Understanding SDK, inclusi componenti, mesh e oggetti nelle app per realtà mista.
+title: SDK di comprensione della scena
+description: Informazioni su come installare e usare Scene Understanding SDK, inclusi componenti, mesh e oggetti nelle app di realtà mista.
 author: szymons
 ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
-keywords: Comprensione della scena, mapping spaziale, realtà mista di Windows, Unity
-ms.openlocfilehash: 2a1bf87ae4ce13b47d373f44e398d02382674fe7
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+keywords: Comprensione della scena, mapping spaziale, Windows Mixed Reality, Unity
+ms.openlocfilehash: 2f6e0c9d0370caed2b2bc01399b9e4fc00836556
+ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810140"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644837"
 ---
-# <a name="scene-understanding-sdk-overview"></a>Panoramica dell'SDK per la comprensione della scena
+# <a name="scene-understanding-sdk-overview"></a>Panoramica dell'SDK di comprensione della scena
 
-La comprensione della scena trasforma i dati dei sensori di ambiente non strutturati che il dispositivo della realtà mista acquisisce e li converte in una rappresentazione astratta potente. L'SDK funge da livello di comunicazione tra l'applicazione e la scena che comprende il Runtime. Ha lo scopo di simulare costrutti standard esistenti, ad esempio grafici della scena 3D per le rappresentazioni 3D e rettangoli e pannelli 2D per le applicazioni 2D. Mentre la scena dei costrutti che comprendono le simulazioni verrà mappata a Framework concreti, in generale SceneUnderstanding è un Framework agnostico che consente l'interoperabilità tra diversi Framework che interagiscono con essa. Poiché la comprensione della scena evolve il ruolo dell'SDK è garantire che le nuove rappresentazioni e funzionalità continuino a essere esposte in un framework unificato. In questo documento si introdurranno innanzitutto concetti di alto livello che consentiranno di acquisire familiarità con l'ambiente di sviluppo o l'utilizzo e quindi fornire una documentazione più dettagliata per classi e costrutti specifici.
+La comprensione della scena trasforma i dati dei sensori dell'ambiente non strutturati che il dispositivo di realtà mista acquisisce e converte in una potente rappresentazione astratta. L'SDK funge da livello di comunicazione tra l'applicazione e il runtime scene understanding. Ha lo scopo di simulare i costrutti standard esistenti, ad esempio grafici di scena 3D per rappresentazioni 3D e rettangoli e pannelli 2D per le applicazioni 2D. Anche se i costrutti simulare Scene Understanding verranno mappati a framework concreti, in generale SceneUnderstanding è indipendente dal framework, consentendo l'interoperabilità tra diversi framework che interagiscono con esso. Con l'evoluzione di Scene Understanding, il ruolo dell'SDK è garantire che le nuove rappresentazioni e funzionalità continuino a essere esposte all'interno di un framework unificato. In questo documento verranno presentati prima di tutto concetti generali che consentono di acquisire familiarità con l'ambiente/utilizzo di sviluppo e quindi fornire una documentazione più dettagliata per classi e costrutti specifici.
 
 ## <a name="where-do-i-get-the-sdk"></a>Dove è possibile ottenere l'SDK?
 
-SceneUnderstanding SDK è scaricabile tramite NuGet.
+SceneUnderstanding SDK è scaricabile tramite lo strumento [di funzionalità di realtà mista](../unity/welcome-to-mr-feature-tool.md).
 
-[SDK di SceneUnderstanding](https://www.nuget.org/packages/Microsoft.MixedReality.SceneUnderstanding/)
+**Nota:** la versione più recente dipende dai pacchetti di anteprima e sarà necessario abilitare i pacchetti in versione non definitiva per visualizzarla.
 
-**Nota:** la versione più recente dipende dai pacchetti di anteprima ed è necessario abilitare i pacchetti in versione non definitiva per visualizzarli.
-
-Per la versione 0.5.2022-RC e versioni successive, la comprensione della scena supporta le proiezioni di linguaggio per C# e C++ che consentono alle applicazioni di sviluppare applicazioni per piattaforme Win32 o UWP. A partire da questa versione, SceneUnderstanding supporta Unity support in-Editor, che blocca SceneObserver, usato esclusivamente per la comunicazione con HoloLens2. 
+Per la versione 0.5.2022-rc e versioni successive, Scene Understanding supporta le proiezioni del linguaggio per C# e C++ consentendo alle applicazioni di sviluppare applicazioni per piattaforme Win32 o UWP. A questa versione, SceneUnderstanding supporta unity nell'editor, a parte SceneObserver, che viene usato esclusivamente per comunicare con HoloLens2. 
 
 SceneUnderstanding richiede Windows SDK versione 18362 o successiva. 
-
-Se si usa l'SDK in un progetto Unity, usare [NuGet per Unity](https://github.com/GlitchEnzo/NuGetForUnity) per installare il pacchetto nel progetto.
 
 ## <a name="conceptual-overview"></a>Panoramica dei concetti
 
 ### <a name="the-scene"></a>Scena
 
-Il dispositivo di realtà mista sta integrando costantemente le informazioni relative a ciò che viene visualizzato nell'ambiente in uso. La comprensione della scena incanala tutte queste origini dati e produce un'unica astrazione coesiva. La comprensione della scena genera scene, ovvero una composizione di [SceneObjects](scene-understanding-SDK.md#sceneobjects) che rappresenta un'istanza di un singolo elemento, ad esempio una parete/soffitto/piano. Gli oggetti scena stessi sono una composizione di [SceneComponents, che rappresenta parti più granulari che compongono questo SceneObject. Esempi di componenti sono i quad e i mesh, ma in futuro potrebbero rappresentare i rettangoli di delimitazione, le mesh dei conflitti, i metadati e così via.
+Il dispositivo di realtà mista integra costantemente informazioni su ciò che vede nell'ambiente. Scene Understanding incanala tutte queste origini dati e produce un'unica astrazione coesiva. La comprensione della scena genera scene, che sono una composizione di [SceneObject che](scene-understanding-SDK.md#sceneobjects) rappresentano un'istanza di una singola cosa, ad esempio una parete,un controsoffitto/un piano. Gli oggetti scena stessi sono una composizione di [SceneComponents, che rappresentano parti più granulari che costituiscono questo SceneObject. Esempi di componenti sono quad e mesh, ma in futuro potrebbero rappresentare recinti di delimitazione, mesh di collisione, metadati e così via.
 
-Il processo di conversione dei dati dei sensori non elaborati in una scena è un'operazione potenzialmente costosa che può richiedere secondi per spazi medi (~ 10x10m) a minuti per spazi di grandi dimensioni (~ 50x50m) e pertanto non è un elemento che viene calcolato dal dispositivo senza richiesta di applicazione. La generazione della scena viene invece attivata dall'applicazione su richiesta. La classe SceneObserver dispone di metodi statici che consentono di calcolare o deserializzare una scena, con cui è possibile enumerare/interagire. L'azione "calcolo" viene eseguita su richiesta ed eseguita sulla CPU, ma in un processo separato (il driver della realtà mista). Tuttavia, mentre si esegue il calcolo in un altro processo, i dati della scena risultanti vengono archiviati e conservati nell'applicazione nell'oggetto scena. 
+Il processo di conversione dei dati del sensore non elaborato in una scena è un'operazione potenzialmente costosa che potrebbe richiedere secondi per spazi medi (~10x10m) in minuti per spazi di grandi dimensioni (~50x50m) e quindi non è un'operazione calcolata dal dispositivo senza richiesta dell'applicazione. La generazione della scena viene invece attivata dall'applicazione su richiesta. La classe SceneObserver include metodi statici che consentono di calcolare o deserializzare una scena, che è quindi possibile enumerare o interagire. L'azione "Calcolo" viene eseguita su richiesta ed eseguita sulla CPU, ma in un processo separato (Mixed Reality Driver). Tuttavia, mentre si esegue il calcolo in un altro processo, i dati della scena risultanti vengono archiviati e gestiti nell'applicazione nell'oggetto Scene. 
 
-Di seguito è riportato un diagramma che illustra il flusso del processo e Mostra esempi di due applicazioni che si confrontano con la scena Understanding Runtime. 
+Di seguito è riportato un diagramma che illustra questo flusso di processo e mostra esempi di due applicazioni che si interfacciano con il runtime scene understanding. 
 
 ![Diagramma di processo](images/SU-ProcessFlow.png)
 
-Sul lato sinistro è presente un diagramma del runtime di realtà mista, che è sempre attivo e in esecuzione nel proprio processo. Questo runtime è responsabile dell'esecuzione del rilevamento dei dispositivi, del mapping spaziale e di altre operazioni che la comprensione della scena USA per comprendere e ragionare in tutto il mondo. Sul lato destro del diagramma sono illustrate due applicazioni teoriche che fanno uso della comprensione della scena. La prima interfaccia dell'applicazione con MRTK, che usa la scena Understanding SDK internamente, la seconda app calcola e usa due istanze separate della scena. Tutte e tre le scene in questo diagramma generano istanze distinte delle scene, il driver non tiene traccia dello stato globale condiviso tra le applicazioni e gli oggetti scena in un'unica scena non è stato trovato in un altro. La comprensione della scena fornisce un meccanismo per tenere traccia nel tempo, ma questa operazione viene eseguita tramite l'SDK. Il codice di rilevamento è già in esecuzione nell'SDK nel processo dell'app.
+Sul lato sinistro è riportato un diagramma del runtime di realtà mista, che è sempre in esecuzione nel proprio processo. Questo runtime è responsabile dell'esecuzione del rilevamento dei dispositivi, del mapping spaziale e di altre operazioni utilizzate da Scene Understanding per comprendere e comprendere il mondo che ti circonda. Sul lato destro del diagramma vengono mostrate due applicazioni teoriche che usano La comprensione della scena. La prima interfaccia dell'applicazione con MRTK, che usa Scene Understanding SDK internamente, la seconda app calcola e usa due istanze di scena separate. Tutte e tre le scene in questo diagramma generano istanze distinte delle scene, il driver non verifica lo stato globale condiviso tra le applicazioni e gli oggetti scena in una scena non vengono trovati in un'altra. Scene Understanding fornisce un meccanismo per tenere traccia nel tempo, ma questa operazione viene eseguita usando l'SDK. Il codice di rilevamento è già in esecuzione nell'SDK nel processo dell'app.
 
-Poiché ogni scena archivia i dati nello spazio di memoria dell'applicazione, si può presupporre che tutte le funzioni dell'oggetto scene o dei dati interni vengano sempre eseguite nel processo dell'applicazione.
+Poiché ogni scena archivia i dati nello spazio di memoria dell'applicazione, è possibile presupporre che tutte le funzioni dell'oggetto Scene o i dati interni siano sempre eseguiti nel processo dell'applicazione.
 
 ### <a name="layout"></a>Layout
 
-Per lavorare con la comprensione della scena, può essere utile conoscere e comprendere il modo in cui il runtime rappresenta i componenti in modo logico e fisico. La scena rappresenta i dati con un layout specifico che è stato scelto per essere semplice mantenendo una struttura sottostante flessibile per soddisfare i requisiti futuri senza che siano necessarie revisioni principali. Questa operazione viene eseguita archiviando tutti i componenti (elementi di base per tutti gli oggetti della scena) in un elenco semplice e definendo la gerarchia e la composizione tramite riferimenti in cui componenti specifici fanno riferimento ad altri.
+Per usare Scene Understanding, può essere utile conoscere e comprendere in che modo il runtime rappresenta i componenti in modo logico e fisico. La scena rappresenta i dati con un layout specifico che è stato scelto per essere semplice mantenendo una struttura sottostante che è responsabile di soddisfare i requisiti futuri senza richiedere revisioni importanti. La scena esegue questa operazione archiviando tutti i componenti (blocchi predefiniti per tutti gli oggetti scena) in un elenco semplice e definendo la gerarchia e la composizione tramite riferimenti in cui componenti specifici fanno riferimento ad altri.
 
-Di seguito viene presentato un esempio di una struttura sia nel formato flat che nella forma logica.
+Di seguito è riportato un esempio di una struttura in forma flat e logica.
 
 <table>
 <tr><th>Layout logico</th><th>Layout fisico</th></tr>
@@ -95,67 +91,67 @@ Di seguito viene presentato un esempio di una struttura sia nel formato flat che
 </tr>
 </table>
 
-In questa illustrazione viene evidenziata la differenza tra il layout fisico e logico della scena. A sinistra viene visualizzato il layout gerarchico dei dati visualizzati dall'applicazione durante l'enumerazione della scena. A destra si noterà che la scena è costituita da 12 componenti distinti, se necessario, accessibili singolarmente. Quando si elabora una nuova scena, si prevede che le applicazioni analizzino logicamente questa gerarchia. Tuttavia, durante il rilevamento tra gli aggiornamenti della scena, alcune applicazioni potrebbero essere interessate solo a specifici componenti condivisi tra due scene.
+Questa figura evidenzia la differenza tra il layout fisico e logico della scena. A sinistra è visualizzato il layout gerarchico dei dati visualizzati dall'applicazione durante l'enumerazione della scena. A destra si può vedere che la scena è costituita da 12 componenti distinti accessibili singolarmente, se necessario. Quando si elabora una nuova scena, si prevede che le applicazioni passino logicamente a questa gerarchia, tuttavia quando si esegue il rilevamento tra gli aggiornamenti della scena, alcune applicazioni potrebbero essere interessate solo a componenti specifici condivisi tra due scene.
 
 ## <a name="api-overview"></a>Panoramica delle API
 
-Nella sezione seguente viene fornita una panoramica di alto livello dei costrutti nella comprensione della scena. Leggendo questa sezione si apprenderà a comprendere come vengono rappresentate le scene e quali sono i vari componenti usati per. La sezione successiva fornirà esempi di codice concreti e dettagli aggiuntivi che verranno descritti in questa panoramica.
+La sezione seguente offre una panoramica generale dei costrutti in Informazioni sulla scena. La lettura di questa sezione consente di comprendere come vengono rappresentate le scene e cosa fanno o vengono usati i vari componenti. La sezione successiva fornirà esempi di codice concreti e dettagli aggiuntivi che verranno illustrati in questa panoramica.
 
-Tutti i tipi descritti di seguito si trovano nello `Microsoft.MixedReality.SceneUnderstanding` spazio dei nomi.
+Tutti i tipi descritti di seguito si trovano nello spazio `Microsoft.MixedReality.SceneUnderstanding` dei nomi .
 
 ### <a name="scenecomponents"></a>SceneComponents
 
-Dopo aver compreso il layout logico delle scene, è ora possibile presentare il concetto di SceneComponents e il modo in cui vengono usate per comporre la gerarchia. SceneComponents sono le scomposizione più granulari in SceneUnderstanding che rappresentano una singola cosa principale, ad esempio una mesh o un quad o un rettangolo di delimitazione. SceneComponents sono elementi che possono essere aggiornati in modo indipendente ed è possibile farvi riferimento da altri SceneComponents, di conseguenza hanno un'unica proprietà globale un ID univoco, che consente questo tipo di meccanismo di rilevamento/riferimento. Gli ID vengono usati per la composizione logica della gerarchia della scena e per la persistenza degli oggetti, ovvero l'operazione di aggiornamento di una scena rispetto a un'altra. 
+Ora che si comprende il layout logico delle scene, è ora possibile presentare il concetto di SceneComponents e il modo in cui vengono usate per comporre la gerarchia. SceneComponents è la scomposizione più granulare in SceneUnderstanding che rappresenta un singolo elemento di base, ad esempio una mesh, un quad o un rettangolo di selezione. SceneComponents sono elementi che possono essere aggiornati in modo indipendente e possono essere referenziati da altri SceneComponent, quindi hanno una singola proprietà globale un ID univoco, che consentono questo tipo di meccanismo di rilevamento/riferimento. Gli ID vengono usati per la composizione logica della gerarchia della scena e per la persistenza degli oggetti (l'atto di aggiornare una scena rispetto a un'altra). 
 
-Se si tratta di una nuova scena calcolata come distinta e si sta semplicemente enumerando tutti i dati al suo interno, gli ID sono in gran parte trasparenti. Tuttavia, se si prevede di tenere traccia dei componenti in diversi aggiornamenti, si useranno gli ID per indicizzare e trovare SceneComponents tra gli oggetti scena.
+Se si considera ogni scena appena calcolata come distinta e si semplicemente enumerano tutti i dati al suo interno, gli ID sono in gran parte trasparenti per l'utente. Tuttavia, se si prevede di tenere traccia dei componenti su diversi aggiornamenti, userai gli ID per indicizzare e trovare SceneComponents tra gli oggetti Scene.
 
-### <a name="sceneobjects"></a>SceneObjects
+### <a name="sceneobjects"></a>Oggetti SceneObject
 
-Un SceneObject è un SceneComponent che rappresenta un'istanza di un elemento "Thing", ad esempio un muro, un piano, un soffitto e così via... espressa dalla relativa proprietà Kind. SceneObjects sono geometriche e quindi hanno funzioni e proprietà che rappresentano la loro posizione nello spazio, ma non contengono alcuna struttura geometrica o logica. SceneObjects, invece, fanno riferimento ad altri SceneComponents, in particolare SceneQuads e SceneMeshes, che forniscono le varie rappresentazioni supportate dal sistema. Quando viene calcolata una nuova scena, l'applicazione enumera in modo più probabile la SceneObjects della scena per elaborare gli elementi interessati.
+SceneObject è un oggetto SceneComponent che rappresenta un'istanza di un elemento, ad esempio una barriera, un piano, un controsoffitto e così via. espresso dalla relativa proprietà Kind. Gli oggetti SceneObject sono geometrici e pertanto hanno funzioni e proprietà che rappresentano la posizione nello spazio, ma non contengono strutture geometriche o logiche. SceneObjects fa invece riferimento ad altri oggetti SceneComponents, in particolare SceneQuads e SceneMeshes, che forniscono le varie rappresentazioni supportate dal sistema. Quando viene calcolata una nuova scena, è molto probabile che l'applicazione enumeri gli Oggetti Scena della scena per elaborare gli elementi a cui è interessata.
 
-SceneObjects può avere uno dei seguenti elementi:
+SceneObjects può avere uno degli elementi seguenti:
 
 <table>
 <tr>
 <th>SceneObjectKind</th> <th>Descrizione</th>
 </tr>
-<tr><td>Sfondo</td><td>Il SceneObject <b>non</b> è noto come uno degli altri tipi di oggetto scena riconosciuti. Questa classe non deve essere confusa con uno sconosciuto, in cui lo sfondo non è a parete/piano/soffitto e così via... mentre Unknown non è ancora stato categorizzato.</b></td></tr>
-<tr><td>Parete</td><td>Una parete fisica. Si presuppone che i muri siano strutture ambientali non mobili.</td></tr>
-<tr><td>Piano</td><td>I piani sono superfici in cui è possibile spostarsi. Nota: le scale non sono piani. Si noti inoltre che le pavimentazioni presuppongono una superficie a cui è possibile spostarsi e pertanto non esiste alcun presupposto esplicito di un pavimento singolare. Strutture a più livelli, rampe e così via... deve essere classificata come floor.</td></tr>
-<tr><td>Ceiling</td><td>Superficie superiore di una stanza.</td></tr>
-<tr><td>Piattaforma</td><td>Una superficie piana grande su cui posizionare gli ologrammi. Che tendono a rappresentare tabelle, piani di ridimensionamento e altre superfici orizzontali di grandi dimensioni.</td></tr>
-<tr><td>World</td><td>Etichetta riservata per i dati geometrici indipendenti dall'assegnazione di etichette. La mesh generata impostando il flag di aggiornamento EnableWorldMesh verrebbe classificato come World.</td></tr>
-<tr><td>Sconosciuto</td><td>Questo oggetto scena deve ancora essere classificato e assegnato un tipo. Questa operazione non deve essere confusa con background, perché questo oggetto può essere qualsiasi cosa, il sistema non ha ancora una classificazione sufficientemente sicura.</td></tr>
+<tr><td>Sfondo</td><td>SceneObject è noto per non <b>essere uno</b> degli altri tipi riconosciuti di oggetto scena. Questa classe non deve essere confusa con Unknown, dove Background non è noto come wall/floor/ceiling e così via. mentre unknown non è ancora stato categorizzato.</b></td></tr>
+<tr><td>Parete</td><td>Una barriera fisica. Si presuppone che le pareti siano strutture ambientali mobili.</td></tr>
+<tr><td>Piano</td><td>I piani sono superfici su cui si può andare. Nota: i piedini non sono piani. Si noti anche che i piani presuppongono qualsiasi superficie raggiungibile e pertanto non esiste alcun presupposto esplicito di un piano singolare. Strutture multi-livello, rampe e così via deve essere classificata come floor.</td></tr>
+<tr><td>Ceiling</td><td>La superficie superiore di una stanza.</td></tr>
+<tr><td>Piattaforma</td><td>Una superficie piana di grandi dimensioni su cui è possibile posizionare gli ologrammi. In genere rappresentano tabelle, controsoffi e altre superfici orizzontali di grandi dimensioni.</td></tr>
+<tr><td>World</td><td>Etichetta riservata per i dati geometrici indipendente dall'etichettatura. La mesh generata impostando il flag di aggiornamento EnableWorldMesh verrà classificata come mondo.</td></tr>
+<tr><td>Sconosciuto</td><td>Questo oggetto scena deve ancora essere classificato e assegnato a un tipo. Questo non deve essere confuso con Background, poiché questo oggetto potrebbe essere qualsiasi cosa, il sistema non ha ancora creato una classificazione sufficientemente solida per questo oggetto.</td></tr>
 </tr>
 </table>
 
 ### <a name="scenemesh"></a>SceneMesh
 
-Un SceneMesh è un SceneComponent che approssima la geometria degli oggetti geometrici arbitrari usando un elenco di triangolo. SceneMeshes vengono usati in diversi contesti, possono rappresentare i componenti della struttura di celle stagne o come WorldMesh, che rappresenta la mesh di mapping spaziale senza limiti associata alla scena. I dati relativi a indici e vertici forniti con ogni mesh utilizzano lo stesso layout familiare dei [buffer di vertice e di indice](/windows/win32/direct3d9/rendering-from-vertex-and-index-buffers) utilizzati per il rendering di mesh triangolari in tutte le moderne API di rendering. Nella comprensione della scena, le maglie usano indici a 32 bit e potrebbero dover essere suddivise in blocchi per determinati motori di rendering.
+SceneMesh è un oggetto SceneComponent che approssima la geometria di oggetti geometrici arbitrari usando un elenco di triangoli. SceneMeshes vengono usati in diversi contesti, possono rappresentare i componenti della struttura delle celle a tenuta stagna o come WorldMesh, che rappresenta la mesh di mapping spaziale non associato associata alla scena. I dati di indice e vertice forniti con ogni mesh utilizzano lo stesso layout familiare dei [buffer](/windows/win32/direct3d9/rendering-from-vertex-and-index-buffers) di vertice e indice usati per il rendering delle mesh triangolo in tutte le MODERNE API di rendering. In Scene Understanding le mesh usano indici a 32 bit e possono essere suddivise in blocchi per determinati motori di rendering.
 
 #### <a name="winding-order-and-coordinate-systems"></a>Ordine di avvolgimento e sistemi di coordinate
 
-Tutte le mesh prodotte dalla comprensione della scena dovrebbero restituire mesh in un sistema di coordinate Right-Handed usando l'ordine di avvolgimento in senso orario. 
+Tutte le mesh prodotte da Scene Understanding dovrebbero restituire mesh in un Right-Handed di coordinate usando l'ordine di avvolgimento in senso orario. 
 
-Nota: le compilazioni del sistema operativo precedenti a. 191105 possono avere un bug noto in cui le mesh "World" stavano restituendo in Counter-Clockwise ordine di avvolgimento, che in seguito è stato risolto.
+Nota: le build del sistema operativo precedenti Counter-Clockwise .191105 potrebbero avere un bug noto in cui le mesh "World" venivano restituite Counter-Clockwise ordine di avvolgimento, che è stato successivamente risolto.
 
 ### <a name="scenequad"></a>SceneQuad
 
-Un SceneQuad è un SceneComponent che rappresenta le superfici 2D che occupano il mondo 3D. SceneQuads può essere usato in modo analogo ai piani ARKit ARPlaneAnchor o ARCore, ma offre funzionalità più avanzate come Canvas 2D da usare con le app flat o UX potenziato. sono disponibili API specifiche 2D per i quad che semplificano l'uso del posizionamento e del layout e lo sviluppo (ad eccezione del rendering) con i quad dovrebbe essere più simile all'utilizzo di Canvas 2D rispetto alle mesh 3D.
+SceneQuad è un oggetto SceneComponent che rappresenta le superfici 2d che occupano il mondo 3D. SceneQuads può essere usato in modo simile a ARKit ARPlaneAnchor o ARCore Planes, ma offre funzionalità di alto livello come canvas 2d da usare dalle app flat o dall'esperienza utente aumentata. Vengono fornite API specifiche 2D per quad che rendono il posizionamento e il layout semplici da usare e lo sviluppo (ad eccezione del rendering) con quad dovrebbe essere più simile all'uso di aree di disegno 2d rispetto alle mesh 3D.
 
 #### <a name="scenequad-shape"></a>Forma SceneQuad
 
-SceneQuads definire una superficie rettangolare delimitata in 2D. Tuttavia, SceneQuads rappresentano le superfici con forme arbitrarie e potenzialmente complesse, ad esempio una tabella con forma di anello. Per rappresentare la forma complessa della superficie di un quad, è possibile usare l'API GetSurfaceMask per eseguire il rendering della forma della superficie in un buffer di immagine fornito. Se anche il SceneObject con il quad ha una mesh, i triangoli di mesh devono essere equivalenti a questa immagine sottoposta a rendering, entrambi rappresentano la geometria reale della superficie, in coordinate 2D o 3D.
+SceneQuads definisce una superficie rettangolare delimitata in 2d. SceneQuads, tuttavia, rappresenta superfici con forme arbitrarie e potenzialmente complesse, ad esempio una tabella a forma di ciambella. Per rappresentare la forma complessa della superficie di un quad, è possibile usare l'API GetSurfaceMask per eseguire il rendering della forma della superficie in un buffer di immagini specificato. Se anche l'oggetto SceneObject con il quad ha una mesh, i triangoli della mesh devono essere equivalenti a questa immagine sottoposta a rendering, entrambi rappresentano la geometria reale della superficie, in coordinate 2D o 3D.
 
-## <a name="scene-understanding-sdk-details-and-reference"></a>Informazioni dettagliate e informazioni di riferimento sull'SDK della scena
+## <a name="scene-understanding-sdk-details-and-reference"></a>Informazioni di riferimento e dettagli sull'SDK di comprensione della scena
 
-La sezione seguente consente di acquisire familiarità con le nozioni di base di SceneUnderstanding. In questa sezione vengono fornite le nozioni di base, a questo punto è necessario disporre di un contesto sufficiente per esplorare le applicazioni di esempio per vedere come SceneUnderstanding viene usato in modo olistico.
+La sezione seguente consente di acquisire familiarità con le nozioni di base di SceneUnderstanding. Questa sezione contiene le nozioni di base e a questo punto è necessario avere un contesto sufficiente per esplorare le applicazioni di esempio per vedere come viene usato SceneUnderstanding in modo olistico.
 
 ### <a name="initialization"></a>Inizializzazione
 
-Il primo passaggio per lavorare con SceneUnderstanding è che l'applicazione ottenga un riferimento a un oggetto scena. Questa operazione può essere eseguita in uno dei due modi seguenti, una scena può essere calcolata dal driver o una scena esistente calcolata in passato può essere deserializzata. Quest'ultimo è utile per lavorare con SceneUnderstanding durante lo sviluppo, in cui le applicazioni e le esperienze possono essere prototipate rapidamente senza un dispositivo di realtà mista.
+Il primo passaggio per lavorare con SceneUnderstanding consiste nell'ottenere un riferimento a un oggetto Scene da parte dell'applicazione. Questa operazione può essere eseguita in uno dei due modi seguenti: una scena può essere calcolata dal driver o una scena esistente calcolata in passato può essere de serializzata. Quest'ultimo è utile per lavorare con SceneUnderstanding durante lo sviluppo, in cui le applicazioni e le esperienze possono essere prototipate rapidamente senza un dispositivo di realtà mista.
 
-Le scene vengono calcolate usando un SceneObserver. Prima di creare una scena, l'applicazione deve eseguire una query sul dispositivo per assicurarsi che supporti SceneUnderstanding, oltre a richiedere l'accesso utente per le informazioni necessarie a SceneUnderstanding.
+Le scene vengono calcolate usando sceneObserver. Prima di creare una scena, l'applicazione deve eseguire una query sul dispositivo per assicurarsi che supporti SceneUnderstanding, nonché per richiedere l'accesso utente per le informazioni necessarie a SceneUnderstanding.
 
 ```cs
 if (!SceneObserver.IsSupported())
@@ -167,7 +163,7 @@ if (!SceneObserver.IsSupported())
 await SceneObserver.RequestAccessAsync();
 ```
 
-Se RequestAccessAsync () non viene chiamato, il calcolo di una nuova scena avrà esito negativo. Successivamente, verrà calcolata una nuova scena che è radicata intorno all'auricolare della realtà mista e ha un raggio di 10 metri.
+Se RequestAccessAsync() non viene chiamato, il calcolo di una nuova scena avrà esito negativo. Verrà quindi calcolata una nuova scena basata sul visore VR di realtà mista e con un raggio di 10 metri.
 
 ```cs
 // Create Query settings for the scene update
@@ -183,9 +179,9 @@ querySettings.RequestedMeshLevelOfDetail = SceneMeshLevelOfDetail.Fine;         
 Scene myScene = SceneObserver.ComputeAsync(querySettings, 10.0f).GetAwaiter().GetResult();
 ```
 
-### <a name="initialization-from-data-also-known-as-the-pc-path"></a>Inizializzazione dai dati, nota anche come. Percorso PC)
+### <a name="initialization-from-data-also-known-as-the-pc-path"></a>Inizializzazione dai dati (nota anche come . il percorso del PC)
 
-Mentre le scene possono essere calcolate per il consumo diretto, possono anche essere calcolate in formato serializzato per un uso successivo. Questo è risultato utile per lo sviluppo in quanto consente agli sviluppatori di lavorare e testare la comprensione della scena senza la necessità di un dispositivo. L'azione di serializzazione di una scena è quasi identica a quella di elaborazione. i dati vengono restituiti all'applicazione anziché essere deserializzati localmente dall'SDK. Sarà quindi possibile deserializzarlo manualmente o salvarlo per un uso futuro.
+Anche se le scene possono essere calcolate per l'utilizzo diretto, possono anche essere calcolate in formato serializzato per un uso successivo. Ciò si è dimostrato utile per lo sviluppo perché consente agli sviluppatori di lavorare e testare Scene Understanding senza la necessità di un dispositivo. L'azione di serializzazione di una scena è quasi identica al calcolo, i dati vengono restituiti all'applicazione anziché essere deserializzati localmente dall'SDK. È quindi possibile deserializzarlo manualmente o salvarlo per un uso futuro.
 
 ```cs
 // Create Query settings for the scene update
@@ -204,7 +200,7 @@ Scene mySceneDeSerialized = Scene.Deserialize(newSceneData);
 
 ### <a name="sceneobject-enumeration"></a>Enumerazione SceneObject
 
-Ora che l'applicazione ha una scena, l'applicazione verrà esaminata e interagirà con SceneObjects. Questa operazione viene eseguita accedendo alla proprietà **SceneObjects** :
+Ora che l'applicazione ha una scena, l'applicazione esamina e interagisce con SceneObjects. Questa operazione viene eseguita accedendo alla **proprietà SceneObjects:**
 
 ```cs
 SceneObject firstFloor = null;
@@ -220,9 +216,9 @@ foreach (var sceneObject in myScene.SceneObjects)
 }
 ```
 
-### <a name="component-update-and-refinding-components"></a>Componenti di aggiornamento e riricerca dei componenti
+### <a name="component-update-and-refinding-components"></a>Componenti di aggiornamento e perfezionamento dei componenti
 
-Esiste un'altra funzione che recupera i componenti nella scena denominata **_findComponent_* _. Questa funzione è utile quando si aggiornano gli oggetti di rilevamento e li si trova nelle scene successive. Il codice seguente consente di calcolare una nuova scena rispetto a una scena precedente e quindi di trovare il piano nella nuova scena.
+È presente un'altra funzione che recupera i componenti nella scena denominata ***FindComponent***. Questa funzione è utile quando si aggiornano gli oggetti di rilevamento e li si trova nelle scene successive. Il codice seguente calcola una nuova scena rispetto a una scena precedente e quindi trova il piano nella nuova scena.
 
 ```cs
 // Compute a new scene, and tell the system that we want to compute relative to the previous scene
@@ -237,9 +233,9 @@ if (firstFloor != null)
 }
 ```
 
-## <a name="accessing-meshes-and-quads-from-scene-objects"></a>Accesso a mesh e quad da oggetti scene
+## <a name="accessing-meshes-and-quads-from-scene-objects"></a>Accesso a mesh e quad da oggetti scena
 
-Una volta rilevate SceneObjects, è probabile che l'applicazione acceda ai dati contenuti nei Quad/mesh di cui è composta. Questi dati sono accessibili con le proprietà _*_Quad_*_ e _*_mesh_*_ . Il codice seguente enumera tutti i quad e le maglie dell'oggetto Floor.
+Dopo aver individuato SceneObjects, è molto probabile che l'applicazione voglia accedere ai dati contenuti nei quad/mesh di cui è composta. Questi dati sono accessibili con le proprietà ***Quads** _ e _ *_Meshes_**. Il codice seguente enumera tutti i quad e le mesh dell'oggetto floor.
 
 ```cs
 
@@ -259,13 +255,13 @@ foreach (var mesh in firstFloor.Meshes)
 }
 ```
 
-Si noti che si tratta del SceneObject con la trasformazione rispetto all'origine della scena. Ciò è dovuto al fatto che SceneObject rappresenta un'istanza di una "cosa" ed è locatable nello spazio, i quad e le mesh rappresentano la geometria che viene trasformata in relazione all'elemento padre. È possibile che SceneObjects separate facciano riferimento allo stesso SceneMesh/SceneQuad SceneComponents ed è anche possibile che un SceneObject disponga di più di un SceneMesh/SceneQuad.
+Si noti che è l'oggetto SceneObject con la trasformazione relativa all'origine della scena. Ciò è dovuto al fatto che SceneObject rappresenta un'istanza di una "cosa" ed è localizzato nello spazio, i quad e le mesh rappresentano la geometria trasformata rispetto al relativo elemento padre. È possibile che sceneobject separati fanno riferimento allo stesso SceneMesh/SceneQuad SceneComponents ed è anche possibile che un oggetto SceneObject abbia più sceneMesh/SceneQuad.
 
 ### <a name="dealing-with-transforms"></a>Gestione delle trasformazioni
 
-La comprensione della scena ha effettuato un tentativo intenzionale di allinearsi alle rappresentazioni tradizionali della scena 3D quando si gestiscono le trasformazioni. Ogni scena è quindi confinata a un singolo sistema di coordinate, in modo analogo alla maggior parte delle rappresentazioni ambientali 3D. SceneObjects forniscono il percorso relativo al sistema di coordinate. Se l'applicazione sta affrontando scenari che estendono il limite di una singola origine, può ancorare SceneObjects a SpatialAnchors o generare diverse scene e unirle, ma per semplicità si presuppone che esistano scene ermetiche nella propria origine localizzata da un NodeId definito da scene. OriginSpatialGraphNodeId.
+La comprensione della scena ha tentato intenzionalmente di allinearsi alle rappresentazioni tradizionali della scena 3D quando si gestiscono le trasformazioni. Ogni scena è quindi limitata a un singolo sistema di coordinate molto simile alle rappresentazioni ambientali 3D più comuni. SceneObjects ognuno fornisce la propria posizione rispetto al sistema di coordinate. Se l'applicazione ha a che fare con scene che estendono il limite di ciò che fornisce una singola origine, può ancorare SceneObject a SpatialAnchors o generare diverse scene e unirle tra loro, ma per semplicità si presuppone che le scene con dimensioni mance siano presenti nella propria origine localizzata da un NodeId definito da Scene.OriginSpatialGraphNodeId.
 
-Il codice Unity seguente, ad esempio, Mostra come usare la percezione di Windows e le API Unity per allineare i sistemi di coordinate. Vedere [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) e [SpatialGraphInteropPreview](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) per informazioni dettagliate sulle API di percezione di Windows e sugli [oggetti nativi della realtà mista in Unity](/windows/mixed-reality/unity-xrdevice-advanced) per informazioni dettagliate su come ottenere un SpatialCoordinateSystem che corrisponda all'origine mondiale di Unity.
+Il codice Unity seguente, ad esempio, illustra come usare Windows Perception e le API Unity per allineare i sistemi di coordinate. Vedere [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) e [SpatialGraphInteropPreview](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) per informazioni dettagliate sulle API Di percezione di Windows e Oggetti nativi di realtà mista [in Unity](/windows/mixed-reality/unity-xrdevice-advanced) per informazioni dettagliate su come ottenere un SpatialCoordinateSystem corrispondente all'origine del mondo di Unity.
 
 ```cs
 private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnderstanding.Scene scene)
@@ -292,7 +288,7 @@ private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnde
 }
 ```
 
-Ogni `SceneObject` ha una trasformazione, che viene quindi applicata a tale oggetto. In Unity si converte in coordinate corrette e si assegnano trasformazioni locali come segue:
+Ogni `SceneObject` oggetto ha una trasformazione, che viene quindi applicata a tale oggetto. In Unity si esegue la conversione in coordinate della mano destra e si assegnano trasformazioni locali nel modo seguente:
 
 ```cs
 private System.Numerics.Matrix4x4 ConvertRightHandedMatrix4x4ToLeftHanded(System.Numerics.Matrix4x4 matrix)
@@ -349,14 +345,14 @@ SetUnityTransformFromMatrix4x4(unityObject.transform, converted4x4LocationMatrix
 
 ### <a name="quad"></a>Quad
 
-I quad sono stati progettati per aiutare gli scenari di selezione host 2D e dovrebbero essere considerati estensioni per gli elementi UX di Canvas 2D. Mentre i quad sono componenti di SceneObjects e possono essere sottoposti a rendering in 3D, le API quadre presuppongono quad sono strutture 2D. Offrono informazioni come extent, Shape e forniscono API per la selezione host.
+I quad sono stati progettati per aiutare gli scenari di posizionamento 2D e devono essere pensati come estensioni agli elementi UX canvas 2D. Anche se i quad sono componenti di SceneObject e possono essere sottoposti a rendering in 3D, le API Quad presuppongono che i quad siano strutture 2D. Offrono informazioni come extent, forma e api per il posizionamento.
 
-I quad hanno extent rettangolari, ma rappresentano superfici 2D a forma arbitraria. Per abilitare la selezione host in queste superfici 2D che interagiscono con i quad dell'ambiente 3D offrono utilità per rendere possibile questa interazione. Attualmente la comprensione della scena fornisce due funzioni di questo tipo: _ *FindCentermostPlacement** e **GetSurfaceMask**. FindCentermostPlacement è un'API di alto livello che individua una posizione nel quad in cui è possibile posizionare un oggetto e tenterà di individuare la posizione migliore per l'oggetto, garantendo che il rettangolo di delimitazione fornito rimarrà sulla superficie sottostante.
+I quad hanno extent rettangolari, ma rappresentano superfici 2D a forma arbitraria. Per abilitare il posizionamento su queste superfici 2D che interagiscono con i quad dell'ambiente 3D, sono disponibili utilità che rendono possibile questa interazione. Scene Understanding offre attualmente due funzioni di questo tipo, **FindCentermostPlacement** **e GetSurfaceMask.** FindCentermostPlacement è un'API di alto livello che individua una posizione sul quad in cui è possibile posizionare un oggetto e tenterà di trovare la posizione migliore per l'oggetto assicurando che il rettangolo di selezione fornito rimanga sulla superficie sottostante.
 
 > [!NOTE]
-> Le coordinate dell'output sono relative al quad in "Quad Space" con l'angolo superiore sinistro (x = 0, y = 0), esattamente come per gli altri tipi Rect di Windows. Assicurarsi di tenere conto di questo quando si lavora con le origini dei propri oggetti. 
+> Le coordinate dell'output sono relative al quad nello "spazio quad" con l'angolo superiore sinistro (x = 0, y = 0), esattamente come con altri tipi windows Rect. Assicurarsi di prendere in considerazione questo problema quando si lavora con le origini dei propri oggetti. 
 
-Nell'esempio seguente viene illustrato come trovare la posizione posizionabile effettuare e come ancorare un ologramma al quad.
+L'esempio seguente mostra come trovare la posizione più posizionata al centro e ancorare un ologramma al quad.
 
 ```cs
 // This code assumes you already have a "Root" object that attaches the Scene's Origin.
@@ -386,7 +382,7 @@ foreach (var sceneObject in myScene.SceneObjects)
 }
 ```
 
-I passaggi 1-4 dipendono in modo estremamente da un particolare Framework/implementazione, ma i temi dovrebbero essere simili. È importante notare che il quad rappresenta semplicemente un piano 2D con binding localizzato nello spazio. Se il motore/Framework sa dove si trova il quad e si radicano gli oggetti rispetto al quad, gli ologrammi saranno posizionati correttamente rispetto al mondo reale. 
+I passaggi da 1 a 4 dipendono fortemente dal framework/implementazione specifico, ma i temi devono essere simili. È importante notare che il quad rappresenta semplicemente un piano 2D delimitato localizzato nello spazio. Facendo in modo che il motore/framework sappia dove si trova il quad e radicando gli oggetti rispetto al quad, gli ologrammi verranno posizionati correttamente rispetto al mondo reale. 
 
 <!-- 
 // TODO: Add sample link when released
@@ -395,14 +391,14 @@ For more detailed information please see our samples on quads which show specifi
 
 ### <a name="mesh"></a>Mesh
 
-Le mesh rappresentano rappresentazioni geometriche di oggetti o ambienti. In modo analogo al [mapping spaziale](../../design/spatial-mapping.md), i dati relativi a indici mesh e vertici forniti con ogni mesh di superficie spaziale utilizzano lo stesso layout familiare dei vertex buffer e degli indici utilizzati per il rendering di mesh triangolari in tutte le moderne API per il rendering. Le posizioni dei vertici sono disponibili nel sistema di coordinate di `Scene` . Le API specifiche usate per fare riferimento a questi dati sono le seguenti:
+Le mesh rappresentano rappresentazioni geometriche di oggetti o ambienti. Analogamente al [mapping](../../design/spatial-mapping.md)spaziale, i dati dell'indice mesh e dei vertici forniti con ogni mesh di superficie spaziale utilizzano lo stesso layout familiare dei buffer di vertice e indice usati per il rendering delle mesh triangolo in tutte le MODERNE API di rendering. Le posizioni dei vertici vengono fornite nel sistema di coordinate di `Scene` . Le API specifiche usate per fare riferimento a questi dati sono le seguenti:
 
 ```cs
 void GetTriangleIndices(int[] indices);
 void GetVertices(System.Numerics.Vector3[] vertices);
 ```
 
-Il codice seguente fornisce un esempio di generazione di un elenco di triangolo dalla struttura mesh:
+Il codice seguente fornisce un esempio di generazione di un elenco di triangoli dalla struttura mesh:
 
 ```cs
 uint[] indices = new uint[mesh.TriangleIndexCount];
@@ -412,27 +408,27 @@ mesh.GetTriangleIndices(indices);
 mesh.GetVertexPositions(positions);
 ```
 
-I buffer di indice/vertice devono essere >= i conteggi di indice/vertice, ma in caso contrario possono essere dimensionati arbitrariamente, consentendo un utilizzo efficiente della memoria.
+I buffer indice/vertice devono essere >= conteggi di indici/vertici, ma in caso contrario possono essere ridimensionati in modo arbitrario consentendo un riutilizzo efficiente della memoria.
 
 ### <a name="collidermesh"></a>ColliderMesh
 
-Gli oggetti scena consentono di accedere ai dati mesh mesh e Collider mesh tramite le proprietà mesh e ColliderMeshes. Queste mesh corrisponderanno sempre, ovvero l'indice volto della della proprietà Meshes rappresenta la stessa geometria dell'indice volto della della proprietà ColliderMeshes. Se il runtime/oggetto supporta le mesh di Collider, si ha la certezza di ottenere il poligono più basso, l'approssimazione dell'ordine più elevato ed è consigliabile usare ColliderMeshes laddove l'applicazione userà i Collider. Se il sistema non supporta i Collider, l'oggetto mesh restituito in ColliderMeshes sarà lo stesso oggetto della mesh che riduce i vincoli di memoria.
+Gli oggetti scena forniscono l'accesso ai dati mesh e collider mesh tramite le proprietà Meshes e ColliderMeshes. Queste mesh corrisponderanno sempre, vale a dire che l'indice i'esimo della proprietà Meshes rappresenta la stessa geometria dell'indice i'esimo della proprietà ColliderMeshes. Se il runtime/oggetto supporta le mesh di collisore, è garantito che si otterrà il poligono più basso, l'approssimazione dell'ordine più alto ed è buona norma usare ColliderMeshes ovunque l'applicazione usi collider. Se il sistema non supporta collisori, l'oggetto Mesh restituito in ColliderMeshes sarà lo stesso oggetto della mesh riducendo i vincoli di memoria.
 
 ## <a name="developing-with-scene-understanding"></a>Sviluppo con comprensione della scena
 
-A questo punto, è necessario comprendere i componenti di base della scena Understanding Runtime and SDK. La maggior parte della potenza e della complessità si basa sui modelli di accesso, sull'interazione con i framework 3D e sugli strumenti che possono essere scritti su queste API per eseguire attività più avanzate, come la pianificazione spaziale, l'analisi delle stanze, la navigazione, la fisica e così via. Ci auguriamo che questi esempi vengano acquisiti in esempi che dovrebbero guidare l'utente nella direzione corretta per rendere più brillanti gli scenari. Se sono presenti esempi o scenari che non sono stati indirizzati, è possibile inviarli e provare a documentare/prototipare gli elementi necessari.
+A questo punto, è necessario comprendere i blocchi predefiniti principali del runtime di comprensione della scena e dell'SDK. La maggior parte della potenza e della complessità si trova nei modelli di accesso, nell'interazione con framework 3D e in strumenti che possono essere scritti su queste API per eseguire attività più avanzate, ad esempio pianificazione spaziale, analisi delle camere, navigazione, fisica e così via. Ci auguriamo di acquisire questi esempi che dovrebbero guidare l'utente nella direzione corretta per rendere i tuoi scenari più luminosi. Se sono presenti esempi o scenari che non vengono affrontati, è possibile contattarci e proveremo a documentare/creare un prototipo di ciò che serve.
 
-### <a name="where-can-i-get-sample-code"></a>Dove è possibile ottenere il codice di esempio?
+### <a name="where-can-i-get-sample-code"></a>Dove è possibile ottenere codice di esempio?
 
-Scenario per informazioni sul codice di esempio per Unity, vedere la pagina di [esempio Unity](https://github.com/sceneunderstanding-microsoft/unitysample) . Questa applicazione consente di comunicare con il dispositivo ed eseguire il rendering dei vari oggetti scena, oppure di caricare una scena serializzata nel PC e di sperimentare la comprensione della scena senza un dispositivo.
+Il codice di esempio di Scene Understanding per Unity è disponibile nella pagina [di esempio di Unity.](https://github.com/sceneunderstanding-microsoft/unitysample) Questa applicazione consente di comunicare con il dispositivo ed eseguire il rendering dei vari oggetti scena oppure di caricare una scena serializzata nel PC e di provare Scene Understanding senza un dispositivo.
 
 ### <a name="where-can-i-get-sample-scenes"></a>Dove è possibile ottenere scene di esempio?
 
-Se si dispone di un HoloLens2, è possibile salvare qualsiasi scena acquisita salvando l'output di ComputeSerializedAsync in file e deserializzarlo in base alla propria convenienza. 
+Se hai holoLens2, puoi salvare qualsiasi scena acquisita salvando l'output di ComputeSerializedAsync nel file e deserializzandolo per comodità. 
 
-Se non si ha un dispositivo HoloLens2 ma si vuole giocare con la comprensione della scena, è necessario scaricare una scena pre-acquisita. L'esempio di comprensione della scena è attualmente fornito con scene serializzate che possono essere scaricate e usate con facilità. È possibile trovarli qui:
+Se non hai un dispositivo HoloLens2 ma vuoi riprodurre con Scene Understanding, dovrai scaricare una scena pre-acquisita. L'esempio Scene Understanding viene attualmente fornito con scene serializzate che possono essere scaricate e usate in base alle proprie esigenze. È possibile trovarli qui:
 
-[Scene di esempio sulla comprensione della scena](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples)
+[Scene di esempio per la comprensione della scena](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples)
 
 ## <a name="see-also"></a>Vedere anche
 

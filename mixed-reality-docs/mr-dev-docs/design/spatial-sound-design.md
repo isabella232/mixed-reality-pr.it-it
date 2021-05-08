@@ -1,128 +1,128 @@
 ---
-title: Usare il suono spaziale nelle applicazioni di realtà mista
-description: Il suono spaziale è uno strumento potente per l'immersione, l'accessibilità e la progettazione dell'esperienza utente nelle applicazioni a realtà mista.
+title: Usare l'audio spaziale nelle applicazioni di realtà mista
+description: L'audio spaziale è uno strumento potente per la progettazione di accessibilità, accessibilità e esperienza utente nelle applicazioni di realtà mista.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 11/02/2019
 ms.topic: article
-keywords: Realtà mista di Windows, audio spaziale, progettazione, stile, auricolare realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, movimenti, interazioni, attenuazione
-ms.openlocfilehash: fe77d62bcdfc67579deee619fc7f4949676aaed6
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+keywords: Windows Mixed Reality, audio spaziale, progettazione, stile, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, movimenti, interazioni, attenuazione
+ms.openlocfilehash: d51fbdf16d7186c386f124c773f75dacc8c157fd
+ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848185"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "109489211"
 ---
-# <a name="how-to-use-sound-in-mixed-reality-applications"></a>Come usare un suono in applicazioni in realtà mista
+# <a name="how-to-use-sound-in-mixed-reality-applications"></a>Come usare i suoni nelle applicazioni di realtà mista
 
-È possibile usare il suono per informare e rafforzare il modello mentale dell'utente dello stato dell'applicazione. Usare la spazializzazione, quando appropriato, per inserire i suoni nel mondo della realtà mista. Quando si connettono i revisori e l'oggetto visivo in questo modo, si approfondisce la natura intuitiva delle interazioni e si aumenta la confidenza degli utenti.
+È possibile usare il suono per informare e rafforzare il modello psichiico dell'utente dello stato dell'applicazione. Usare la spazializzazione, quando appropriato, per inserire suoni nel mondo della realtà mista. Quando si connette il revisore e l'oggetto visivo in questo modo, si approfondirà la natura intuitiva delle interazioni e si aumenterà la fiducia degli utenti.
 <br><br>
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/aB3TDjYklmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## <a name="when-to-add-sounds"></a>Quando aggiungere suoni
 
-Le applicazioni a realtà mista hanno spesso una necessità maggiore di suoni rispetto alle app 2D, a causa della mancanza di un'interfaccia tattile. Aggiungere i suoni quando informano l'utente o rinforzano le interazioni.
+Le applicazioni di realtà mista hanno spesso una maggiore necessità di audio rispetto alle app 2D, a causa della mancanza di un'interfaccia tattile. Aggiungere suoni quando informano l'utente o per rinforzare le interazioni.
 
 ### <a name="inform-and-reinforce"></a>Informare e rafforzare
 
-* Per gli eventi che non vengono avviati dall'utente, ad esempio le notifiche, utilizzare il suono per informare l'utente che è stata apportata una modifica.
-* Le interazioni possono avere diverse fasi. Usare il suono per rinforzare le transizioni di fase.
+* Per gli eventi che non vengono avviati dall'utente, ad esempio le notifiche, usare il suono per informare l'utente che si è verificata una modifica.
+* Le interazioni possono avere diverse fasi. Usare il suono per rafforzare le transizioni di fase.
 
-Vedere gli esempi seguenti di interazioni, eventi e caratteristiche del suono suggerite.
+Vedere gli esempi seguenti di interazioni, eventi e caratteristiche sonore suggerite.
 
-### <a name="exercise-restraint"></a>Esercizio vincolato
+### <a name="exercise-restraint"></a>Esercizio di base
 
 Gli utenti non hanno una capacità illimitata per le informazioni audio.
-* Ogni suono deve comunicare informazioni importanti e specifiche.
+* Ogni suono deve comunicare informazioni specifiche e preziose.
 * Quando l'app riproduce un suono per informare l'utente, ridurre temporaneamente il volume di altri suoni.
-* Per i suoni del passaggio del mouse (vedere le informazioni seguenti), aggiungere un ritardo di tempo per impedire l'attivazione di un suono eccessivo.
+* Per i suoni al passaggio del mouse sui pulsanti (vedere le informazioni seguenti), aggiungere un ritardo di tempo per impedire l'attivazione di un suono eccessivo.
 
-### <a name="dont-rely-solely-on-sounds"></a>Non fare affidamento esclusivamente su suoni
+### <a name="dont-rely-solely-on-sounds"></a>Non affidarsi esclusivamente ai suoni
 
-I suoni usati correttamente sono utili per gli utenti. Verificare tuttavia che l'applicazione sia utilizzabile anche con il suono disattivato.
-* È possibile che gli utenti abbiano problemi di udito.
+I suoni usati sono utili per gli utenti. Assicurarsi tuttavia che l'applicazione sia utilizzabile anche con il suono spento.
+* Gli utenti possono essere ipoudenti.
 * L'applicazione può essere usata in un ambiente ad alta voce.
 * Gli utenti possono avere problemi di privacy o altri motivi per disabilitare l'audio del dispositivo.
 
-## <a name="how-to-sonify-interactions"></a>Come Sonify le interazioni
+## <a name="how-to-sonify-interactions"></a>Come sonificare le interazioni
 
-I tipi di interazione in realtà mista includono movimenti, manipolazione diretta e voce. Usare le caratteristiche suggerite seguenti per selezionare o progettare i suoni per queste interazioni.
+I tipi di interazione nella realtà mista includono movimento, manipolazione diretta e voce. Usare le caratteristiche suggerite seguenti per selezionare o progettare suoni per queste interazioni.
 
-### <a name="gesture-interactions"></a>Interazioni tra movimenti
+### <a name="gesture-interactions"></a>Interazioni con i movimenti
 
-In realtà mista, gli utenti possono interagire con i pulsanti usando il mouse. Le azioni dei pulsanti si verificano in genere quando l'utente rilascia invece di premere il pulsante per dare all'utente la possibilità di annullare l'interazione. Usare i suoni per rafforzare queste fasi. Per aiutare gli utenti a usare i pulsanti distanti, considerare anche l'uso di un suono del passaggio del puntatore.
-* Il pulsante-premere suoni dovrebbe essere un breve "clic" tattile.<br/>Esempio: [MRTK_ButtonPress. wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
-* Il pulsante: i suoni "non stampati" devono avere un aspetto tattile simile. Un passo più elevato rispetto al suono della stampa rinforza il senso del completamento.<br/>Esempio: [MRTK_ButtonUnpress. wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
-* Per i suoni del passaggio del mouse, provare a usare un suono sottile e non minaccioso, ad esempio un tonfo o un urto a bassa frequenza.
+In realtà mista, gli utenti possono interagire con i pulsanti usando un mouse. Le azioni dei pulsanti si verificano in genere quando l'utente rilascia anziché premere il pulsante per offrire all'utente la possibilità di annullare l'interazione. Usare i suoni per rafforzare queste fasi. Per aiutare gli utenti a scegliere come destinazione pulsanti distanti, è anche consigliabile usare un suono al passaggio del puntatore del mouse.
+* I suoni di pressione del pulsante devono essere un breve clic tattile.<br/>Esempio: [MRTK_ButtonPress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
+* I suoni button-"unpress" dovrebbero avere un aspetto tattile simile. Un passo più alto rispetto al suono della stampa rinforza il senso di completamento.<br/>Esempio: [MRTK_ButtonUnpress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
+* Per i suoni al passaggio del mouse, è consigliabile usare un suono sottile e non minaccioso, ad esempio un tonfo o un urto a bassa frequenza.
 
 ### <a name="direct-manipulation"></a>Manipolazione diretta
 
-In HoloLens 2, il rilevamento a mano articolata supporta la manipolazione diretta degli elementi dell'interfaccia utente. I suoni sono importanti quando non sono presenti altri commenti fisici.
+In HoloLens 2, il tracciamento delle mani articolato supporta la manipolazione diretta degli elementi dell'interfaccia utente. I suoni sono importanti quando non sono presenti altri commenti e suggerimenti fisici.
 
-Un suono di pressione di un *pulsante* è importante perché l'utente non ottiene altre indicazioni quando raggiunge la fine del tratto della chiave. Gli indicatori audio del viaggio di chiave possono essere piccoli, sottili e bloccati. Come per le interazioni con i movimenti, le pressioni dei pulsanti dovrebbero avere un breve suono tattile come un clic. Le dispressioni dovrebbero avere un suono di clic simile ma con un passo elevato.
-* Esempio: [MRTK_ButtonPress. wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
-* Esempio: [MRTK_ButtonUnpress. wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
+Un *suono di pressione* del pulsante è importante perché l'utente non ottiene altre indicazioni quando raggiunge la parte inferiore del tratto del tasto. Gli indicatori sonori del viaggio chiave possono essere piccoli, piccoli e occluded. Come per le interazioni con movimenti, le pressione dei pulsanti dovrebbero ottenere un suono breve e tattile come un clic. Le depressione devono avere un suono di clic simile, ma con tono in rilievo.
+* Esempio: [MRTK_ButtonPress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
+* Esempio: [MRTK_ButtonUnpress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
 
-È difficile confermare visivamente un'azione di recupero o rilascio. Spesso l'utente sarà in grado di qualsiasi effetto visivo, mentre gli oggetti con corpo rigido non hanno una analogia visiva reale di "grabbing". I suoni possono comunicare efficacemente le interazioni di recupero e rilascio.
-* Le azioni di recupero dovrebbero avere un breve suono tattile, leggermente ovattato, che richiede l'idea di una chiusura delle dita intorno a un oggetto. A volte è presente anche un suono "fruscio" che conduce al suono accattivante per comunicare il movimento della mano.<br/>Esempio: [MRTK_Move_Start. wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_Move_Start.wav)
-* Le azioni di rilascio dovrebbero ottenere un suono simile breve e tattile. Si tratta in genere di un tono inferiore rispetto al suono della pinza e in ordine inverso, con un effetto e quindi un "fruscio" per comunicare che l'oggetto sta per essere risolto.<br/>Esempio: [MRTK_Move_End. wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_Move_End.wav)
+È difficile confermare visivamente un'azione di cattura o rilascio. La mano dell'utente sarà spesso in linea con qualsiasi effetto visivo e gli oggetti hard-bodied non hanno un'analogia visiva reale di "afferramento". I suoni possono comunicare in modo efficace interazioni di cattura e rilascio.
+* Le azioni di cattura devono avere un suono tattile breve e leggermente muffled che chiede l'idea di chiudere le dita intorno a un oggetto. A volte è presente anche un suono "whoosh" che porta al suono di afferramento per comunicare il movimento della mano.<br/>Esempio: [MRTK_Move_Start.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_Move_Start.wav)
+* Le azioni di rilascio dovrebbero ottenere un suono simile breve e tattile. È in genere più bassa del suono di afferramento e in ordine inverso, con un impatto e quindi un "whoosh" per comunicare che l'oggetto si sta sistemando sul posto.<br/>Esempio: [MRTK_Move_End.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_Move_End.wav)
 
-Un'interazione del *disegno* deve ottenere un suono di loop persistente con volume determinato dallo spostamento della mano dell'utente. Dovrebbe rimanere invisibile quando la mano dell'utente è ancora e più forte quando la mano si muove rapidamente.
+*Un'interazione* di disegno dovrebbe ottenere un suono persistente a ciclo continuo con il volume determinato dal movimento della mano dell'utente. Dovrebbe essere invisibile quando la mano dell'utente è ancora e più alta quando la mano si sposta rapidamente.
 
 ### <a name="voice-interactions"></a>Interazioni vocali
 
-Le interazioni vocali hanno spesso elementi visivi sottili. Usare i suoni per rafforzare le fasi di interazione. Si consiglia di usare suoni più tonali per distinguerli dai suoni movimento e manipolazione diretta.
+Le interazioni vocali hanno spesso elementi visivi sottili. Usare i suoni per rafforzare le fasi di interazione. È possibile usare suoni più tonali per distinguerli dai suoni di movimento e di manipolazione diretta.
 
-* Usare un segnale acustico positivo per le *conferme* dei comandi vocali. I toni crescenti e gli intervalli musicali principali sono validi.
-* Usare un tono più breve e meno positivo per gli *errori* dei comandi vocali. Evitare i suoni negativi. Usare invece un suono più a percussione, neutro per comunicare che l'applicazione sta procedendo dall'interazione.
-* Se l'applicazione ha una parola di riattivazione, usare un tono breve e gentile quando il dispositivo *inizia l'ascolto*. Usare un suono di loop delicato mentre l'applicazione *è* in ascolto.
+* Usare un segnale acustico positivo per le conferme *dei comandi vocali.* L'aumento dei toni e dei principali intervalli musicali è efficace.
+* Usare un tono più breve e meno positivo per gli errori dei comandi *vocali.* Evitare suoni negativi. Usare invece un suono più percussivo e neutro per comunicare che l'applicazione sta passando dall'interazione.
+* Se l'applicazione ha una parola di riattivazione, usare un tono breve e leggero quando il dispositivo inizia ad *ascoltare*. Usare un suono a ciclo sottile mentre l'applicazione *è in* ascolto.
 
 ### <a name="notifications"></a>Notifiche
 
-Notifiche segnalano le modifiche dello stato dell'applicazione e altri eventi non avviati dall'utente. Le modifiche di stato possono includere i completamenti dei processi, i messaggi e le chiamate telefoniche.
+Le notifiche segnalano le modifiche dello stato dell'applicazione e altri eventi che l'utente non ha avviato. Le modifiche dello stato possono includere completamenti del processo, messaggi e chiamate telefoniche.
 
-In realtà mista, gli oggetti talvolta si spostano fuori dal campo di visualizzazione dell'utente. Associa *gli oggetti animati* allo spostamento con un suono spaziale che dipende dal tipo di oggetto e dalla velocità di movimento.
-* Consente di riprodurre un suono spaziali alla fine di un'animazione per informare l'utente della nuova posizione dell'oggetto.
-* Per i movimenti graduali, un suono "fruscio" durante lo spostamento consente all'utente di tenere traccia dell'oggetto.
+In realtà mista, gli oggetti a volte si spostano fuori dal campo di visualizzazione dell'utente. Associare *oggetti animati in* movimento a un suono spazializzato che dipende dal tipo di oggetto e dalla velocità del movimento.
+* Consente di riprodurre un suono spazializzato alla fine di un'animazione per informare l'utente della nuova posizione dell'oggetto.
+* Per i movimenti graduali, un suono "whoosh" durante il movimento consente all'utente di tenere traccia dell'oggetto.
 
-I suoni di *notifica del messaggio* possono essere ripetuti ripetutamente, a volte in rapida successione. È importante che non si trovino o siano troppo difficili. I suoni tonali positivi a metà intervallo sono validi.
+*I suoni di* notifica dei messaggi possono essere uditi ripetutamente, talvolta in rapida successione. È importante non distinguersi o sembrare difficili. I suoni tonali positivi a medio raggio sono efficaci.
 
-* I suoni per le chiamate in ingresso devono avere qualità simili a una suoneria del telefono cellulare. Questi suoni sono frasi musicali in loop che giocano fino a quando l'utente non risponde alla chiamata.
-* La connessione e la disconnessione vocale dovrebbero avere un suono tonale breve. Il suono della connessione deve essere un tono positivo per indicare una connessione corretta. Il suono di disconnessione dovrebbe essere un suono neutro per indicare il completamento della chiamata.
+* I suoni delle chiamate in ingresso devono avere qualità simili a quelle di una suoneria del telefono cellulare. Questi suoni riproduceno a ciclo continuo frasi che vengono riprodotte fino a quando l'utente non risponde alla chiamata.
+* La connessione e la disconnessione della comunicazione vocale devono avere un suono tonale breve. Il suono della connessione deve essere un tono positivo per indicare una connessione riuscita. Il suono di disconnessione deve essere un suono neutro per indicare il completamento della chiamata.
 
 ## <a name="handle-spatialization"></a>Gestire la spazializzazione
 
-La spazializzazione USA cuffie stereo o altoparlanti per inserire i suoni nel mondo in realtà mista.
+La spazializzazione usa le cuffi stereo o gli altoparlanti per inserire suoni nel mondo della realtà mista.
 
-### <a name="which-sounds-to-spatialize"></a>Che suoni spatialize
+### <a name="which-sounds-to-spatialize"></a>Quali suoni spazializzare
 
-Un suono deve essere spaziali quando è associato a un evento che ha una posizione spaziale. Sono incluse l'interfaccia utente, le voci di intelligenza artificiale incarnate e gli indicatori visivi.
+Un suono deve essere spazializzato quando è associato a un evento con una posizione spaziale. Sono inclusi l'interfaccia utente, le voci di intelligenza artificiale e gli indicatori visivi.
 
-Gli elementi dell' *interfaccia utente* di Spatialize consentono di declutterare lo spazio "Sonic" dell'utente limitando il numero di suoni stereo che sentono. Le interazioni di manipolazione, ad esempio il tocco, l'acquisizione e il rilascio, si sentono più naturali quando il feedback audio è spaziale. Prendere in considerazione le seguenti informazioni sull'attenuazione della distanza per questi elementi.
+Spazializzare *gli elementi dell'interfaccia* utente per ingombrare lo "spazio" acustico dell'utente limitando il numero di suoni stereo che ascoltano. Le interazioni di manipolazione, ad esempio il tocco, l'afferramento e il rilascio, sono più naturali quando il feedback audio è spazializzato. Si considerino le informazioni seguenti sull'attenuazione della distanza per questi elementi.
 
-Spatialize gli *indicatori visivi* e le *voci di intelligenza artificiale* per informare in modo intuitivo gli utenti quando questi elementi non rientrano nel campo di visualizzazione.
+Spazializzare *gli indicatori visivi* e le voci di *intelligenza* artificiale incorporate per informare in modo intuitivo gli utenti quando questi elementi sono esterni al campo visivo.
     
-Al contrario, evitare la spazializzazione per le *voci di intelligenza artificiale senza facet* e altri elementi che non dispongono di una posizione spaziale ben definita. La spazializzazione senza un elemento visivo correlato può distrarre gli utenti in quanto è presente un elemento visivo che non è in grado di trovare.
+Al contrario, evitare la spazializzazione *per voci di intelligenza* artificiale senza viso e altri elementi che non dispongono di una posizione spaziale ben definita. La spazializzazione senza un elemento visivo correlato può distrarre gli utenti a pensare che c'è un elemento visivo che non possono trovare.
 
-La spazializzazione viene eseguita con un costo della CPU. Molte applicazioni hanno al massimo due suoni contemporaneamente. Il costo della spazializzazione in tal caso è probabilmente irrilevante. È possibile utilizzare il monitoraggio della frequenza dei fotogrammi MRTK per valutare l'effetto dell'aggiunta della spazializzazione.
+La spazializzazione ha un costo della CPU. Molte applicazioni hanno al massimo due suoni riprodotti contemporaneamente. Il costo della spazializzazione in questo caso è probabilmente trascurabile. È possibile usare il monitoraggio della frequenza dei fotogrammi MRTK per valutare l'impatto dell'aggiunta della spazializzazione.
 
-### <a name="when-and-how-to-apply-distance-based-attenuation"></a>Quando e come applicare un'attenuazione basata sulla distanza
+### <a name="when-and-how-to-apply-distance-based-attenuation"></a>Quando e come applicare l'attenuazione basata sulla distanza
 
-Nel mondo fisico, i suoni più lontani sono più tranquilli. Il motore audio può modellare questa attenuazione in base alla distanza di origine. Utilizzare l'attenuazione basata sulla distanza per la comunicazione di informazioni rilevanti.
+Nel mondo fisico, i suoni più lontani sono più silenziosi. Il motore audio può modellare questa attenuazione in base alla distanza di origine. Usare l'attenuazione basata sulla distanza quando comunica informazioni pertinenti.
 
-Le distanze per gli *indicatori visivi*, gli *ologrammi animati* e altri suoni informativi sono rilevanti per l'utente. Usare l'attenuazione basata sulla distanza per fornire i segnali in modo intuitivo.
+Le distanze degli *indicatori visivi,* *degli ologrammi* animati e di altri suoni informativi sono rilevanti per l'utente. Usare l'attenuazione basata sulla distanza per fornire suggerimenti in modo intuitivo.
 
-Regolare la curva di attenuazione per ogni origine per adattarla alle dimensioni degli spazi del mondo in realtà mista. La curva predefinita del motore audio è spesso destinata a spazi di grandi dimensioni (fino a metà chilometro).
+Regolare la curva di attenuazione per ogni origine in base alle dimensioni degli spazi del mondo di realtà mista. La curva predefinita del motore audio è spesso destinata a spazi di grandi dimensioni (fino a mezzo chilometro).
 
-I suoni che rinforzano le *fasi progressive delle azioni dei pulsanti* e altre interazioni non devono essere applicati all'attenuazione. Gli effetti di questi suoni sono più importanti rispetto alla comunicazione della distanza al pulsante. Le variazioni possono essere distracting, soprattutto con le tastiere, quando è possibile che molti clic sui pulsanti vengano uditi in successione.
+I suoni che *rinforzano le fasi progressive delle azioni dei pulsanti* e di altre interazioni non devono essere applicati all'attenuazione. Gli effetti di rinforzo di questi suoni sono più importanti della comunicazione della distanza dal pulsante. Le variazioni possono distrarre, in particolare con le tastiere, quando molti clic sui pulsanti possono essere uditi in successione.
 
-### <a name="which-spatialization-technology-to-use"></a>Quale tecnologia di spazializzazione usare
+### <a name="which-spatialization-technology-to-use"></a>Tecnologia di spazializzazione da usare
 
-Con le cuffie o i relatori HoloLens, usare le tecnologie di spazializzazione basate su HRTF (Head-Related Transfer Function). Queste tecnologie modellano la propagazione sonora intorno all'Head nel mondo fisico. Anche quando un'origine audio si trova all'estrema parte della testa, l'audio si propaga all'orecchio distanti con alcune attenuazioni e ritardo. La panoramica degli speaker si basa solo sull'attenuazione e applica l'attenuazione totale nell'orecchio sinistro quando i suoni si trovano sul lato destro e viceversa. Questa tecnica può risultare scomoda per i listener "normale udito" e inaccessibile per i listener che hanno problemi di udito in un orecchio.
+Con le cuffia o gli altoparlanti HoloLens, usare tecnologie di spazializzazione basate sulla funzione di trasferimento della testa (HRTF). Queste tecnologie modellano la propagazione del suono intorno alla testa nel mondo fisico. Anche quando una sorgente sonora si trova sul lato più lontano della testa, il suono si propaga all'orecchino lontano con qualche attenuazione e ritardo. La panoramica del parlante si basa solo sull'attenuazione e applica l'attenuazione totale nell'orecchio sinistro quando i suoni sono sul lato destro e al contrario. Questa tecnica può essere scomoda per i listener "ascolto normale" e inaccessibile per gli ascoltatori che hanno problemi udibili in un solo udito.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-* [Usare un suono spaziale in Unity](../develop/unity/spatial-sound-in-unity.md)
-* [Case Study di Roboraid](case-study-using-spatial-sound-in-roboraid.md)
-* [Case Study di HoloTour](case-study-spatial-sound-design-for-holotour.md)
+* [Usare il suono spaziale in Unity](../develop/unity/spatial-sound-in-unity.md)
+* [Case study di Roboraid](case-study-using-spatial-sound-in-roboraid.md)
+* [Case study di HoloTour](case-study-spatial-sound-design-for-holotour.md)
