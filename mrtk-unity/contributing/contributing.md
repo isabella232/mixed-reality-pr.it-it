@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 03/17/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, report sui bug,
-ms.openlocfilehash: 525e704ae2f09580c8c19ca7e8a25dad4aed2647
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.openlocfilehash: 11a62708b4cb1a5acc3d230f933be2e88e0ac87b
+ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489261"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109850367"
 ---
 # <a name="contributing"></a>Contributo
 
@@ -25,7 +25,7 @@ Sono disponibili diversi percorsi per consentire agli sviluppatori di contribuir
 
 <img src="../features/images/contributing/SelectIssueType.png" width="600" alt="Select Issue Type">
 
-Da qui è possibile file:
+Da qui si file:
 
 - **Report sui bug:** problema di funzionalità con uno dei componenti di Mixed Reality Toolkit
 - **Problema della documentazione** - Problema con la documentazione di Mixed Reality [Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity)
@@ -33,12 +33,12 @@ Da qui è possibile file:
 
 ## <a name="proposing-feature-requests"></a>Richieste di funzionalità di richiesta
 
-Quando si richiede una nuova funzionalità di Mixed Reality Toolkit, è importante documentare il vantaggio/problema da risolvere per i clienti. Una volta inviata, una richiesta di funzionalità verrà esaminata e discussa in GitHub. Si consiglia di discutere apertamente e concisa di ogni proposta di funzionalità per garantire che il lavoro sia vantaggioso per un ampio segmento di clienti.
+Quando si richiede una nuova funzionalità di Mixed Reality Toolkit, è importante documentare il vantaggio/problema da risolvere per i clienti. Una volta inviata, una richiesta di funzionalità verrà esaminata e discussa in GitHub. Si consiglia di discutere apertamente e concisamente di ogni proposta di funzionalità per garantire che il lavoro sia vantaggioso per un ampio segmento di clienti.
 
 Per evitare di dover rielaborare la funzionalità, è in genere consigliabile che lo sviluppo della funzionalità non inizi durante la fase di revisione. In molti casi, il processo di revisione della community individua uno o più problemi che potrebbero richiedere modifiche significative nell'implementazione proposta.
 
 > [!NOTE]
-> Se si vuole lavorare su un elemento già esistente nel backlog, è possibile usare tale elemento di lavoro come proposta. Assicurarsi anche di commentare l'attività notificando ai maintainer che si sta lavorando per completarla.
+> Se si vuole lavorare su un elemento già esistente nel backlog, è possibile usare tale elemento di lavoro come proposta. Assicurarsi anche di commentare l'attività notificando ai mantenitori che si sta lavorando per completarla.
 
 ## <a name="contribution-process"></a>Processo di contributo
 
@@ -51,7 +51,7 @@ Se non si ha una nuova versione del flusso di lavoro Git, [vedere questa introdu
 
 Quando si aggiunge una correzione di bug o una funzionalità, seguire questa procedura:
 
-1. Implementare la funzionalità o la correzione di bug. Le istruzioni per la compilazione e la distribuzione di MRTK sono disponibili in [BuildAndDeploy](../updates-deployment/build-and-deploy.md). Ricordarsi di seguire [le linee guida per la codifica](../contributing/coding-guidelines.md).
+1. Implementare la funzionalità o la correzione di bug. Le istruzioni per la compilazione e la distribuzione di MRTK sono disponibili in [Deploying to Hololens and WMR devices (Distribuzione in dispositivi Hololens e WMR).](../supported-devices/wmr-mrtk.md) Ricordarsi di seguire [le linee guida per la codifica](../contributing/coding-guidelines.md).
 1. Se si aggiunge una funzionalità, aggiungere anche una scena di esempio che ne illustra la funzionalità.
 1. Se si aggiunge una funzionalità sperimentale, la scrittura di test e documentazione non è necessaria. Seguire invece le linee [guida per le funzionalità sperimentali.](../contributing/experimental-features.md)
 1. Aggiungere test per verificare la funzionalità o la correzione di bug. Le istruzioni per la scrittura e l'esecuzione di test sono disponibili in [UnitTests](../contributing/unit-tests.md).

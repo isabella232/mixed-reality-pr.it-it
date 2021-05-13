@@ -4,84 +4,84 @@ description: Pagina di destinazione per MRTK con XRSDK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, XRSDK,
-ms.openlocfilehash: d5ab9bf51828c84759b72e87e1c41f885c7d6738
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, XRSDK,
+ms.openlocfilehash: fe50de31ae24b415738db64073822b2aff061636
+ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300416"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109850427"
 ---
 # <a name="getting-started-with-mrtk-and-xr-sdk"></a>Introduzione a MRTK e XR SDK
 
-XR SDK è la [nuova pipeline XR di Unity in unity 2019,3 e versioni successive](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/). In Unity 2019, fornisce un'alternativa alla pipeline XR esistente. In Unity 2020, diventerà l'unica pipeline XR in Unity.
+XR SDK è la nuova pipeline XR di [Unity in Unity 2019.3 e oltre.](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/) In Unity 2019 offre un'alternativa alla pipeline XR esistente. In Unity 2020 diventerà l'unica pipeline XR in Unity.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Per iniziare a usare il Toolkit di realtà mista, seguire [i passaggi forniti](../install-the-tools.md#importing-the-mixed-reality-toolkit) per aggiungere MRTK a un progetto.
+Per iniziare a usare Mixed Reality Toolkit, seguire [la](../install-the-tools.md#importing-the-mixed-reality-toolkit) procedura fornita per aggiungere MRTK a un progetto.
 
 ## <a name="configuring-unity-for-the-xr-sdk-pipeline"></a>Configurazione di Unity per la pipeline di XR SDK
 
-La pipeline dell'SDK XR supporta attualmente 3 piattaforme: realtà mista di Windows, Oculus e OpenXR. Le sezioni seguenti illustrano i passaggi necessari per configurare XR SDK per ogni piattaforma.
+La pipeline XR SDK supporta attualmente 3 piattaforme: Windows Mixed Reality, Oculus e OpenXR. Le sezioni seguenti illustrano i passaggi necessari per configurare XR SDK per ogni piattaforma.
 
 ### <a name="windows-mixed-reality"></a>Windows Mixed Reality
 
-Passare a **Gestione pacchetti di Unity** e installare il pacchetto di plug-in di Windows XR, che aggiunge il supporto per la realtà mista di Windows in XR SDK. Verrà anche effettuato il pull di alcuni pacchetti di dipendenze. 
+Passare alla **versione di Unity Gestione pacchetti** installare il pacchetto plug-in Windows XR, che aggiunge il supporto per Windows Mixed Reality in XR SDK. Verrà visualizzato anche alcuni pacchetti di dipendenze. 
 
-1. Verificare che tutti gli elementi seguenti siano stati installati correttamente:
-   * Gestione dei plug-in XR
-   * Plug-in Windows XR
+1. Assicurarsi che tutti gli elementi seguenti siano stati installati correttamente:
+   * Gestione plug-in XR
+   * Plug-in XR di Windows
    * Helper di input legacy XR
 
 2. Passa a **Edit > Project Settings** (Modifica > Impostazioni progetto).
 3. Fare clic sulla scheda Gestione plug-in XR nella finestra Impostazioni progetto.
-4. Passare alle impostazioni piattaforma UWP (Universal Windows Platform) e verificare che la realtà mista di Windows sia selezionata in provider plug-in.
+4. Passare alle impostazioni piattaforma UWP (Universal Windows Platform) e verificare che Windows Mixed Reality sia selezionato in Provider di plug-in.
 5. Assicurarsi che l'opzione Inizializza XR all'avvio sia selezionata.
-6. (**_Obbligatorio per la comunicazione remota HoloLens nell'editor, in caso contrario facoltativo_**) Passare alle impostazioni autonome e verificare che la realtà mista di Windows sia selezionata in provider plug-in. Assicurarsi anche che Initialize XR all'avvio sia selezionato.
+6. (**_Obbligatorio per la comunicazione remota di HoloLens nell'editor, in caso contrario facoltativo_**) Passare a Impostazioni autonome e verificare che Windows Mixed Reality sia selezionata in Provider di plug-in. Assicurarsi inoltre che l'opzione Initialize XR on Startup (Inizializza XR all'avvio) sia selezionata.
 
-![Gestione dei plug-in XR con scheda autonoma selezionata](images/xr-management-img-02.png)
+![Gestione del plug-in XR con la scheda Autonomo selezionata](images/xr-management-img-02.png)
 
-7. (**_Facoltativo_**) Fare clic sulla scheda realtà mista di Windows in Gestione plug-in XR e creare un profilo delle impostazioni personalizzate per modificare le impostazioni predefinite. Se l'elenco delle impostazioni è già presente, non è necessario creare alcun profilo.
+7. (**_Facoltativo_**) Fare clic sulla Windows Mixed Reality in XR Plug-in Management (Gestione plug-in XR) e creare un profilo di impostazioni personalizzate per modificare le impostazioni predefinite. Se l'elenco delle impostazioni è già presente, non è necessario creare alcun profilo.
 
-![Gestione dei plug-in XR con la scheda Windows selezionata](images/xr-management-img-01.png)
+![Gestione del plug-in XR con la scheda Windows selezionata](images/xr-management-img-01.png)
 
 ### <a name="oculus"></a>Oculus
 
-1. Seguire la [procedura come configurare Oculus quest in MRTK usando la guida alla pipeline dell'SDK XR](../features/cross-platform/oculus-quest-mrtk.md) alla fine. La guida descrive i passaggi necessari per configurare Unity e MRTK per l'uso della pipeline di XR SDK per l'Oculus quest.
+1. Seguire la guida alla fine [come configurare Oculus Quest in MRTK usando la pipeline XR SDK.](../supported-devices/oculus-quest-mrtk.md) La guida illustra i passaggi necessari per configurare Unity e MRTK per l'uso della pipeline XR SDK per Oculus Quest.
 
 ### <a name="openxr-preview"></a>OpenXR (anteprima)
 
 > [!IMPORTANT]
-> OpenXR in Unity è supportato solo in Unity 2020,2 e versioni successive.
+> OpenXR in Unity è supportato solo in Unity 2020.2 e versioni successive.
 >
-> Attualmente, supporta anche solo le compilazioni x64 e ARM64.
+> Attualmente supporta solo le build x64 e ARM64.
 
-1. Per installare il plug-in di OpenXR nel progetto, seguire la guida per l'uso del plug-in [reality OpenXR per Unity](/windows/mixed-reality/develop/unity/openxr-getting-started) , inclusi i passaggi per la configurazione della gestione dei plug-in XR e dell'ottimizzazione. Verificare che siano stati installati i seguenti elementi:
+1. Seguire la guida [Using the Mixed Reality OpenXR Plugin for Unity](/windows/mixed-reality/develop/unity/openxr-getting-started) (Uso del plug-in OpenXR di Realtà mista per Unity), inclusi i passaggi per configurare la gestione e l'ottimizzazione dei plug-in XR per installare il plug-in OpenXR nel progetto. Verificare che gli elementi seguenti siano stati installati correttamente:
    1. Gestione dei plug-in XR
    1. Plug-in OpenXR
-   1. Plug-in OpenXR realtà mista
-1. Passare a modifica > impostazioni progetto.
-1. Fare clic sulla scheda Gestione plug-in XR nella finestra Impostazioni progetto.
-1. Assicurarsi che l'opzione Inizializza XR all'avvio sia selezionata.
-1. (**_Facoltativo_**) Se la destinazione è HoloLens 2, assicurarsi di trovarsi nella piattaforma UWP e selezionare il set di funzionalità di Microsoft HoloLens
+   1. Plug-in OpenXR per realtà mista
+1. Passare a Modifica impostazioni > progetto.
+1. Fare clic sulla scheda XR Plug-in Management (Gestione plug-in XR) nella finestra Project Settings (Impostazioni progetto).
+1. Assicurarsi che l'opzione Initialize XR on Startup (Inizializza XR all'avvio) sia selezionata.
+1. (**_Facoltativo_**) Se la destinazione HoloLens 2, assicurarsi di essere nella piattaforma UWP e selezionare Microsoft HoloLens set di funzionalità
 
-![Gestione plug-in aperto XR](../features/images/xrsdk/PluginManagementOpenXR.png)
+![Gestione dei plug-in Open XR](../features/images/xrsdk/PluginManagementOpenXR.png)
 
 > [!NOTE]
-> Se si dispone di un progetto preesistente che usa MRTK da UPM, assicurarsi che la riga seguente si trovi nel file **link.xml** che si trova nella cartella MixedRealityToolkit. generated.
+> Se si dispone di un progetto preesistibile che usa MRTK da UPM, assicurarsi che la riga seguente si trovi nel file **link.xml** che si trova nella cartella MixedRealityToolkit.Generated.
 
 `<assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>`
 
 > [!NOTE]
-> Per la versione iniziale di MRTK e OpenXR, sono supportati in modo nativo solo i controller di movimento per la realtà mista HoloLens 2 e Windows. Il supporto per hardware aggiuntivo verrà aggiunto nelle prossime versioni.
+> Per la versione iniziale di MRTK e OpenXR, sono supportati in modo nativo HoloLens 2 mani articolate e Windows Mixed Reality di movimento. Nelle prossime versioni verrà aggiunto il supporto per hardware aggiuntivo.
 
 ## <a name="configuring-mrtk-for-the-xr-sdk-pipeline"></a>Configurazione di MRTK per la pipeline di XR SDK
 
-Se si usa OpenXR, scegliere "DefaultOpenXRConfigurationProfile" come profilo attivo o clonarlo per apportare le personalizzazioni.
+Se si usa OpenXR, scegliere "DefaultOpenXRConfigurationProfile" come profilo attivo o clonarlo per apportare personalizzazioni.
 
-Se si usano altri runtime XR nella configurazione di gestione plug-in XR, ad esempio realtà mista di Windows o Oculus, scegliere "DefaultXRSDKConfigurationProfile" come profilo attivo o clonarlo per apportare le personalizzazioni.
+Se si usano altri runtime XR nella configurazione di Gestione plug-in XR, ad esempio Windows Mixed Reality o Oculus, scegliere "DefaultXRSDKConfigurationProfile" come profilo attivo o clonarlo per apportare personalizzazioni.
 
-Questi profili sono configurati con i sistemi e i provider corretti, ove necessario. Per ulteriori informazioni sul profilo e sul supporto di esempio con XR SDK, vedere [la documentazione](../features/profiles/profiles.md#xr-sdk) relativa ai profili.
+Questi profili vengono impostati con i sistemi e i provider corretti, se necessario. Per [altre informazioni sul profilo e](../features/profiles/profiles.md#xr-sdk) sul supporto di esempio con XR SDK, vedere la documentazione sui profili.
 
 Per eseguire la migrazione di un profilo esistente a XR SDK, è necessario aggiornare i servizi e i provider di dati seguenti:
 
@@ -113,9 +113,9 @@ in
 
 __OpenXR__:
 
-![Impostazioni di input di OpenXR](../features/images/xrsdk/InputSystemOpenXR.png)
+![Impostazioni di input OpenXR](../features/images/xrsdk/InputSystemOpenXR.png)
 
-__Realtà mista di Windows__:
+__Windows Mixed Reality__:
 
 ![Impostazioni di input di XR SDK](../features/images/xrsdk/InputSystemWMRXRSDK.png)
 
@@ -123,7 +123,7 @@ __Realtà mista di Windows__:
 
 Da [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem)
 
-![Impostazioni limite legacy](../features/images/xrsdk/BoundarySystemLegacy.png)
+![Impostazioni dei limiti legacy](../features/images/xrsdk/BoundarySystemLegacy.png)
 
 in
 
@@ -131,7 +131,7 @@ in
 |--------|-----------------------|
 | [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) | [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) |
 
-![Impostazioni limite SDK XR](../features/images/xrsdk/BoundarySystemXRSDK.png)
+![Impostazioni dei limiti di XR SDK](../features/images/xrsdk/BoundarySystemXRSDK.png)
 
 ### <a name="spatial-awareness"></a>Consapevolezza spaziale
 
@@ -145,13 +145,13 @@ in
 |--------|-----------------------|
 | In corso | [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver) |
 
-![Impostazioni di sensibilizzazione spaziale di XR SDK](../features/images/xrsdk/SpatialAwarenessXRSDK.png)
+![Impostazioni di consapevolezza spaziale di XR SDK](../features/images/xrsdk/SpatialAwarenessXRSDK.png)
 
 ### <a name="controller-mappings"></a>Mapping dei controller
 
-Se si usano profili di mapping del controller personalizzato, aprire uno di essi ed eseguire la voce di menu Mixed Reality Toolkit-> Utilities-> Update-> controller mapping del controller per assicurarsi che siano definiti i nuovi tipi di controller di XR SDK.
+Se si usano profili di mapping del controller personalizzati, aprirne uno ed eseguire la voce di menu Mixed Reality Toolkit -> Utilities -> Update -> Controller Mapping Profiles per assicurarsi che siano definiti i nuovi tipi di controller XR SDK.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-* [Introduzione allo sviluppo AR in Unity](https://docs.unity3d.com/Manual/AROverview.html)
-* [Introduzione allo sviluppo per VR in Unity](https://docs.unity3d.com/Manual/VROverview.html)
+* [Introduzione allo sviluppo ar in Unity](https://docs.unity3d.com/Manual/AROverview.html)
+* [Introduzione allo sviluppo della realtà virtuale in Unity](https://docs.unity3d.com/Manual/VROverview.html)
