@@ -1,34 +1,34 @@
 ---
-title: DependencyWindow
-description: Documentazione sull'utilizzo della finestra di dipendenza in MRTK
+title: Finestra Dipendenze
+description: Documentazione sull'utilizzo della finestra delle dipendenze in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: c53989151123f61988160b74fa876b907264bdd4
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 22ecbb09ebf759e15f1f21085a7b7696cb24bc6e
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104696018"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144446"
 ---
-# <a name="dependency-window"></a>Finestra dipendenze
+# <a name="dependency-window"></a>Finestra Dipendenze
 
-In Unity, spesso è difficile brillare quali asset vengono usati e quali sono i riferimenti. L'opzione "trova riferimenti in scena" è molto interessante quando si è interessati solo alla scena corrente, ma all'intero progetto Unity? Questo è il punto in cui la **finestra di dipendenza** (assets/MRTK/Tools/DependencyWindow) può essere utile.
+In Unity è spesso difficile capire quali asset vengono usati e cosa vi fa riferimento. L'opzione "Trova riferimenti nella scena" è molto utile quando si è interessati solo alla scena corrente, ma per quanto riguarda l'intero progetto Unity? Qui può essere **utile la finestra Delle** dipendenze (Assets/MRTK/Tools/DependencyWindow).
 
-Nella finestra dipendenza viene visualizzato il modo in cui gli asset fanno riferimento e dipendono tra loro. Le dipendenze vengono calcolate analizzando i GUID all'interno dei file YAML del progetto. Nota: le dipendenze di script per script non vengono considerate.
+Nella finestra Dipendenza viene visualizzato il modo in cui gli asset fanno riferimento e dipendono l'uno dall'altro. Le dipendenze vengono calcolate analizzando i GUID all'interno dei file YAML del progetto (si noti che le dipendenze da script a script non vengono considerate).
 
 ## <a name="usage"></a>Utilizzo
 
-Per aprire la finestra, selezionare *mixed reality Toolkit->Utilities->finestra delle dipendenze* che apre la finestra e inizia automaticamente a compilare il grafico delle dipendenze del progetto. Una volta compilato il grafico delle dipendenze, è possibile selezionare Asset nella scheda progetto per esaminarne le dipendenze.
+Per aprire la finestra, seleziona *Mixed Reality Toolkit->Utilities->Dependency Window* (Finestra dipendenze di Mixed Reality Toolkit->Utilities->), che aprirà la finestra e inizierà automaticamente a compilare il grafico delle dipendenze del progetto. Dopo aver compilato il grafico delle dipendenze, è possibile selezionare gli asset nella scheda del progetto per esaminarne le dipendenze.
 
-![Finestra dipendenze](../images/dependency-window/MRTK_Dependency_Window.png)
+![Finestra Dipendenze](../images/dependency-window/MRTK_Dependency_Window.png)
 
-La finestra Visualizza un elenco di asset da cui dipende l'asset attualmente selezionato e un elenco gerarchico di asset che dipendono da esso. Se non dipende dall'asset attualmente selezionato, è possibile eliminarlo dal progetto (si noti che alcune risorse vengono caricate a livello di codice tramite API come shader. Find () e che potrebbero non essere rilevate dallo strumento di rilevamento delle dipendenze.
+Nella finestra viene visualizzato un elenco di asset da cui dipende l'asset attualmente selezionato e un elenco gerarchico di asset che dipendono da esso. Se non dipende dall'asset attualmente selezionato, è possibile eliminarlo dal progetto (si noti che alcuni asset vengono caricati a livello di codice tramite API come Shader.Find() e potrebbero non essere intercettate dallo tracker delle dipendenze).
 
-La finestra può anche visualizzare solo un elenco di tutti gli asset a cui non viene fatto riferimento da altri asset e che potrebbero essere presi in considerazione per l'eliminazione:
+La finestra può anche visualizzare solo un elenco di tutti gli asset a cui non fanno riferimento altri asset e che possono essere considerati per l'eliminazione:
 
-![Finestra di dipendenza che Mostra risorse senza riferimenti](../images/dependency-window/MRTK_Dependency_Window_Unreferenced.png)
+![Finestra delle dipendenze con asset senza riferimenti](../images/dependency-window/MRTK_Dependency_Window_Unreferenced.png)
 
 > [!NOTE]
-> Se le risorse vengono modificate, aggiunte o rimosse mentre è in uso la finestra di dipendenza, è consigliabile aggiornare il grafico delle dipendenze per i risultati più aggiornati.
+> Se gli asset vengono modificati, aggiunti o rimossi mentre la finestra delle dipendenze è in uso, è consigliabile aggiornare il grafico delle dipendenze per ottenere i risultati più "aggiornati".

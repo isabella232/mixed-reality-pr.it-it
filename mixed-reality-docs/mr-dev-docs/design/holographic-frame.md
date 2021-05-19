@@ -1,43 +1,43 @@
 ---
 title: Frame olografico
-description: Scopri in che modo gli utenti vedono il mondo della realtà mista tramite il frame olografico e come progettare meglio l'esperienza.
+description: Informazioni su come gli utenti vedono il mondo della realtà mista tramite il frame olografico e come progettare al meglio l'esperienza.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
-keywords: HoloLens, realtà mista di Windows, frame olografico, campo di visualizzazione, FOV, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit per realtà mista, interazioni, navigazione, menu
-ms.openlocfilehash: 5898f98054afadb58fb059ff54be23f015232d55
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: HoloLens, Windows Mixed Reality, frame olografico, campo di visualizzazione, FOV, visore per realtà mista, visore windows mixed reality, visore di realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, interazioni, navigazione, menu
+ms.openlocfilehash: fee6af6370f9f3d166768144e689e09fd3fda2db
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009591"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143256"
 ---
 # <a name="holographic-frame"></a>Frame olografico
 
-Gli utenti vedono il mondo della realtà mista attraverso un riquadro di visualizzazione rettangolare controllato tramite il visore VR. In HoloLens quest'area rettangolare è detta frame olografico e consente agli utenti di visualizzare il contenuto digitale sovrapposto al mondo reale circostante. La progettazione di esperienze ottimizzate per il frame olografico consente di creare opportunità, attenuare le esigenze e migliorare l'esperienza utente di applicazioni di realtà miste.
+Gli utenti vedono il mondo della realtà mista attraverso un riquadro di visualizzazione rettangolare controllato tramite il visore VR. In HoloLens quest'area rettangolare è detta frame olografico e consente agli utenti di visualizzare il contenuto digitale sovrapposto al mondo reale circostante. La progettazione di esperienze ottimizzate per il frame olografico crea opportunità, mitiga le sfide e migliora l'esperienza utente delle applicazioni di realtà mista.
 
 ## <a name="designing-for-content"></a>Progettazione per il contenuto
 
-Spesso gli sviluppatori hanno la necessità di limitare l'ambito della propria esperienza a ciò che l'utente può visualizzare immediatamente, sacrificando la scalabilità reale per garantire che l'utente visualizzi un oggetto nel suo complesso. Analogamente, le finestre di progettazione con applicazioni complesse spesso sovraccaricano il frame olografico con contenuto, sovraccaricando gli utenti con interazioni difficili e interfacce ingombranti. I progettisti che creano contenuto di realtà mista non devono limitare l'esperienza a direttamente davanti all'utente e all'interno della loro immediata visualizzazione. Se il mondo fisico intorno all'utente è mappato, tutte queste superfici dovrebbero essere considerate come un'area di disegno potenziale per il contenuto digitale e le interazioni. La corretta progettazione di interazioni e contenuto all'interno di un'esperienza deve incoraggiare l'utente a spostarsi nello spazio, indirizzando la loro attenzione ai contenuti chiave e aiutando a vedere il potenziale completo della realtà mista.
+Spesso i progettisti sentono la necessità di limitare l'ambito della propria esperienza a ciò che l'utente può vedere immediatamente, sacrificando la scalabilità reale per garantire che l'utente veda un oggetto nella sua interezza. Analogamente, le finestre di progettazione con applicazioni complesse spesso sovraccaricano il frame olografico con contenuto, sovraccarico degli utenti con interazioni difficili e interfacce ingombranti. I progettisti che creano contenuto di realtà mista non devono limitare l'esperienza a direttamente davanti all'utente e all'interno della visualizzazione immediata. Se viene eseguito il mapping del mondo fisico intorno all'utente, tutte queste superfici devono essere considerate un potenziale canvas per il contenuto digitale e le interazioni. Una corretta progettazione delle interazioni e dei contenuti all'interno di un'esperienza deve invitare l'utente a spostarsi nel proprio spazio, indirizzando l'attenzione sui contenuti chiave e consentendo di vedere il potenziale completo della realtà mista.
 
-Forse la tecnica più importante per incoraggiare lo spostamento e l'esplorazione all'interno di un'app è **consentire agli utenti di adattarsi all'esperienza**. Fornire agli utenti un breve periodo di tempo "senza attività" con il dispositivo. Questa operazione può essere semplice quanto inserire un oggetto nello spazio e consentire agli utenti di spostarsi all'interno o raccontare un'introduzione all'esperienza. Questa volta dovrebbe essere privo di attività critiche o di movimenti specifici come il tocco di aria. Lo scopo è consentire agli utenti di adattarsi alla visualizzazione del contenuto tramite il dispositivo prima di richiedere interattività o avanzare attraverso l'app. Questo è particolarmente importante per gli utenti che si occupano della prima volta quando si familiarizzano con la visualizzazione dei contenuti attraverso la cornice olografica e la natura degli ologrammi.
+Forse la tecnica più importante per favorire lo spostamento e l'esplorazione all'interno di un'app consiste nel consentire agli **utenti di adattarsi all'esperienza**. Concedere agli utenti un breve periodo di tempo "senza attività" con il dispositivo. Questo può essere semplice come posizionare un oggetto nello spazio e consentire agli utenti di spostarsi all'esterno o di raccontare un'introduzione all'esperienza. Questo tempo deve essere privo di attività critiche o movimenti specifici, ad esempio il tocco in aria. Lo scopo è consentire agli utenti di visualizzare il contenuto tramite il dispositivo prima di richiedere interattività o procedere con l'app. Ciò è particolarmente importante per gli utenti che hanno familiarità con la visualizzazione del contenuto attraverso la cornice olografica e la natura degli ologrammi.
 
 ### <a name="large-objects"></a>Oggetti di grandi dimensioni
 
-Spesso il contenuto che un'esperienza richiede, in particolare il contenuto reale, sarà maggiore del frame olografico. Gli oggetti che in genere non rientrano nel frame olografico devono essere compattati quando vengono introdotti per la prima volta (a una scala ridotta o a distanza). La chiave **consente agli utenti di visualizzare le dimensioni complete dell'oggetto** prima che la scala sovraccarica il frame. Ad esempio, deve essere visualizzato un elefante olografico per adattarlo completamente all'interno del frame. In questo modo gli utenti possono formare una conoscenza spaziale della forma complessiva dell'animale, prima di ridimensionarla alla [scalabilità reale](scale.md) in prossimità dell'utente.
+Spesso il contenuto che un'esperienza richiede, in particolare il contenuto reale, sarà più grande del frame olografico. Gli oggetti che normalmente non possono rientrare nel frame olografico devono essere ridotti per adattarsi alla prima introduzione (su scala più piccola o a distanza). La chiave è consentire **agli utenti di visualizzare le dimensioni complete dell'oggetto** prima che la scala sovraccarici il frame. Ad esempio, deve essere visualizzato un elemento olografico per adattarsi completamente all'interno del fotogramma. In questo modo gli utenti possono ottenere una comprensione spaziale della forma complessiva dell'animale, prima di ridimensionarla in scala reale [vicino](scale.md) all'utente.
 
-Con la massima dimensione dell'oggetto, gli utenti hanno la speranza di dove spostarsi e cercare parti specifiche di tale oggetto. In un'esperienza con contenuto immersivo, è utile avere un modo per fare riferimento alla dimensione completa del contenuto. Se, ad esempio, l'esperienza implica l'esplorazione di un modello di una casa virtuale, può essere utile disporre di una versione più piccola delle dimensioni della casa bambola per individuare il punto in cui si trovano all'interno della casa.
+Con le dimensioni complete dell'oggetto, gli utenti hanno l'aspettativa di dove spostarsi e cercare parti specifiche di tale oggetto. In un'esperienza con contenuto immersivo, è utile avere un modo per fare riferimento alle dimensioni complete di tale contenuto. Ad esempio, se l'esperienza implica la descrizione di un modello di una casa virtuale, è utile avere una versione più piccola dell'esperienza per individuare dove si trova all'interno della casa.
 
-Per un esempio di progettazione di oggetti di grandi dimensioni, vedere [Volvo Cars](holographic-frame.md#volvo-cars).
+Per un esempio di progettazione per oggetti di grandi dimensioni, [vedere Automobili Automobili automobili.](holographic-frame.md#volvo-cars)
 
 ### <a name="many-objects"></a>Molti oggetti
 
-Le esperienze con molti oggetti o componenti dovrebbero prendere in considerazione l'uso dello spazio completo per l'utente per evitare di ingombrare il frame olografico direttamente davanti all'utente. È consigliabile rallentare l'introduzione di contenuto a un'esperienza, soprattutto con esperienze che prevedono la gestione di molti oggetti per l'utente. La chiave consiste nel **consentire agli utenti di comprendere il layout del contenuto** nell'esperienza, che consente loro di ottenere una conoscenza spaziale di come gli aggiornamenti del contenuto.
+Le esperienze con molti oggetti o componenti devono considerare l'uso dello spazio completo intorno all'utente per evitare confusione nella cornice olografica direttamente davanti all'utente. È consigliabile rallentare l'introduzione del contenuto a un'esperienza, soprattutto con esperienze che pianificano la distribuzione di molti oggetti all'utente. La chiave è consentire **agli utenti** di comprendere il layout del contenuto nell'esperienza, che consente di acquisire una comprensione spaziale degli elementi che li circondano durante l'aggiornamento del contenuto.
 
-Una tecnica per ottenere questo risultato è fornire punti persistenti (noti anche come punti di riferimento) nell'esperienza che ancora il contenuto al mondo reale. Ad esempio, un riferimento può essere un oggetto fisico nel mondo reale, ad esempio una tabella in cui viene visualizzato contenuto digitale, o un oggetto digitale, ad esempio un set di schermate digitali in cui viene visualizzato spesso il contenuto. Gli oggetti possono anche essere posizionati nella periferia del frame olografico per incoraggiare l'utente a esaminare il contenuto della chiave. L'individuazione del contenuto oltre la periferia può essere facilitata dai [direttori di attenzione](holographic-frame.md#attention-directors).
+Una tecnica per ottenere questo risultato consiste nel fornire punti persistenti (noti anche come punti di riferimento) nell'esperienza che ancora il contenuto al mondo reale. Ad esempio, un punto di riferimento può essere un oggetto fisico nel mondo reale, ad esempio una tabella in cui viene visualizzato il contenuto digitale, o un oggetto digitale, ad esempio un set di schermate digitali in cui il contenuto viene visualizzato di frequente. Gli oggetti possono anche essere posizionati nella periferia del frame olografico per invitare l'utente a cercare il contenuto chiave. L'individuazione del contenuto oltre la periferia può essere aiutata dai responsabili [dell'attenzione.](holographic-frame.md#attention-directors)
 
-L'inserimento di oggetti nella periferia può incoraggiare gli utenti a esaminare il lato e questo può essere assistito dai direttori di attenzione, come descritto di seguito. Per ulteriori informazioni sulle considerazioni sui frame olografici, vedere la documentazione di [comfort](comfort.md#holographic-frame-considerations) .
+L'inserimento di oggetti nella periferia può invitare gli utenti a guardare al lato e ciò può essere aiutato dai responsabili dell'attenzione, come descritto di seguito. Per altre informazioni sulle considerazioni sui frame olografici, vedere la documentazione [relativa al comfort.](comfort.md#holographic-frame-considerations)
 
 <br>
 
@@ -45,25 +45,29 @@ L'inserimento di oggetti nella periferia può incoraggiare gli utenti a esaminar
 
 ## <a name="interaction-considerations"></a>Considerazioni sull'interazione
 
-Come per il contenuto, le interazioni in un'esperienza di realtà mista non devono essere limitate a ciò che l'utente può visualizzare immediatamente. Le interazioni possono essere inserite in qualsiasi punto dello spazio reale intorno all'utente. Queste interazioni possono aiutare gli utenti a spostarsi ed esplorare le esperienze.
+Come per il contenuto, le interazioni in un'esperienza di realtà mista non devono essere limitate a ciò che l'utente può visualizzare immediatamente. Le interazioni possono avere luogo ovunque nello spazio reale intorno all'utente. Queste interazioni possono aiutare gli utenti a spostarsi ed esplorare le esperienze.
 
-### <a name="attention-directors"></a>Direttori di attenzione
+### <a name="attention-directors"></a>Responsabili dell'attenzione
 
-L'indicazione di punti di interesse o di interazioni chiave può essere fondamentale per progredire gli utenti attraverso un'esperienza. L'attenzione degli utenti e lo spostamento del frame olografico possono essere indirizzati in modi delicati o pesanti. Ricordarsi di bilanciare i direttori di attenzione con periodi di esplorazione gratuita in realtà mista, in particolare all'inizio di un'esperienza, per evitare di sovraccaricare l'utente. In generale, esistono due tipi di amministratori di attenzione:
-* **Amministratori visivi:** Il modo più semplice per informare l'utente che deve spostarsi in una direzione specifica è fornire un'indicazione visiva. Questa operazione può essere eseguita tramite un effetto visivo, ad esempio un percorso che l'utente può seguire visivamente verso la parte successiva dell'esperienza, o anche come frecce direzionali semplici. Tutti gli indicatori visivi devono essere presenti all'interno dell'ambiente dell'utente, non ' Attached ' al frame olografico o al cursore.
-* **Registi audio:** il [suono spaziale](spatial-sound-design.md) può fornire un modo efficace per stabilire gli oggetti in una scena. È possibile avvisare gli utenti degli oggetti che accedono a un'esperienza o rivolgersi a un punto specifico nello spazio spostando la visualizzazione dell'utente verso gli oggetti chiave. Usare i direttori audio per guidare l'attenzione dell'utente può essere più sottile e meno intrusivo rispetto ai direttori visivi. In alcuni casi, può essere preferibile iniziare con un direttore audio, quindi passare a un oggetto visivo se l'utente non riconosce il segnale. I direttori audio possono anche essere abbinati ai direttori visivi per un'ulteriore enfasi.
+L'indicazione dei punti di interesse o delle interazioni chiave può essere fondamentale per l'avanzamento degli utenti attraverso un'esperienza. L'attenzione dell'utente e il movimento della cornice olografica possono essere indirizzati in modi sottili o pesanti. Ricordarsi di bilanciare i responsabili dell'attenzione con i periodi di esplorazione gratuita nella realtà mista (soprattutto all'inizio di un'esperienza) per evitare di travolgente l'utente. In generale, esistono due tipi di responsabili dell'attenzione:
+* **Amministratori visivi:** Il modo più semplice per indicare all'utente che deve spostarsi in una direzione specifica è fornire un'indicazione visiva. Questa operazione può essere eseguita tramite un effetto visivo (ad esempio, un percorso che l'utente può seguire visivamente verso la parte successiva dell'esperienza) o anche come semplici frecce direzionali. Qualsiasi indicatore visivo deve essere posizionato all'interno dell'ambiente dell'utente, non "collegato" al frame olografico o al cursore.
+* **Audio director:** [il suono](spatial-sound-design.md) spaziale può fornire un modo efficace per stabilire gli oggetti in una scena. È possibile avvisare gli utenti in caso di oggetti che entrano in un'esperienza o indirizzare l'attenzione su un punto specifico nello spazio spostando la visualizzazione dell'utente verso gli oggetti chiave. L'uso dell'audio per guidare l'attenzione dell'utente può essere più sottile e meno intrusivo rispetto all'attenzione visiva. In alcuni casi, può essere meglio iniziare con un audio director e quindi passare a un direttore visivo se l'utente non riconosce il segnale. È anche possibile associare audio a elementi visivi per un'enfasi maggiore.
 
-### <a name="commanding-navigation-and-menus"></a>Comandi, navigazione e menu
+### <a name="commanding-navigation-and-menus"></a>Esecuzione di comandi, navigazione e menu
 
-Le interfacce in situazioni di realtà mista idealmente sono abbinate strettamente al contenuto digitale che controllano. Di conseguenza, i menu 2D a virgola mobile non sono spesso ideali per l'interazione e possono essere difficili anche per gli utenti con l'interno del frame olografico. Per le esperienze che richiedono elementi di interfaccia quali menu o campi di testo, è consigliabile usare un [metodo tag-along](billboarding-and-tag-along.md) per seguire il frame olografico dopo un breve ritardo. Evitare di bloccare il contenuto al frame come una visualizzazione Heads-up, in quanto questo può essere disorientato per l'utente e suddividere il senso di immersione per altri oggetti digitali nella scena.
+Le interfacce nelle esperienze di realtà mista idealmente sono strettamente associate al contenuto digitale che controllano. Di conseguenza, i menu 2D a virgola mobile libero spesso non sono ideali per l'interazione e possono essere difficili per gli utenti che si trovano troppo comodamente all'interno della cornice olografica. Per le esperienze che richiedono elementi di interfaccia, ad esempio menu o campi di testo, è consigliabile usare un metodo [tag-along](billboarding-and-tag-along.md) per seguire il frame olografico dopo un breve ritardo. Evitare di bloccare il contenuto della cornice come una visualizzazione a testa in su, perché ciò può disorientare l'utente e interrompere il senso diorientamento per altri oggetti digitali nella scena.
 
-È anche possibile posizionare gli elementi dell'interfaccia direttamente sul contenuto specifico che controllano, consentendo alle interazioni di verificarsi naturalmente intorno allo spazio fisico dell'utente. Ad esempio, suddividere un menu complesso in parti separate, con ogni pulsante o gruppo di controlli collegato all'oggetto specifico interessato dall'interazione. Per adottare ulteriormente questo concetto, considerare l'uso di [oggetti interagibili](interactable-object.md).
+È anche possibile posizionare gli elementi dell'interfaccia direttamente sul contenuto specifico che controllano, consentendo interazioni naturali intorno allo spazio fisico dell'utente. Ad esempio, suddividere un menu complesso in parti separate, con ogni pulsante o gruppo di controlli associato all'oggetto specifico su cui influisce l'interazione. Per approfondire questo concetto, prendere in considerazione l'uso di [oggetti che possono interagire.](interactable-object.md)
 
-### <a name="gaze-and-gaze-targeting"></a>Selezione mirata e sguardo
+### <a name="gaze-and-gaze-targeting"></a>Targeting sguardo fisso e sguardo fisso
 
-Il frame olografico presenta uno strumento che consente allo sviluppatore di attivare le interazioni e di valutare la posizione dell'attenzione di un utente. [Sguardi](gaze-and-commit.md) è una delle [interazioni chiave in HoloLens, in](interaction-fundamentals.md)cui lo sguardo può essere abbinato a [movimenti](gaze-and-commit.md#composite-gestures) (ad esempio con il tocco di aria) o [voce](voice-input.md) (che consente interazioni vocali più brevi e più naturali). In questo modo, il frame olografico diventa uno spazio per osservare il contenuto digitale e interagire con esso. Se l'esperienza richiede l'interazione con più oggetti intorno allo spazio dell'utente (ad esempio, la selezione multipla di oggetti intorno allo spazio dell'utente con lo sguardo + movimento), provare a portare tali oggetti nella visualizzazione dell'utente o limitare la quantità di movimento Head necessario per promuovere la [comodità dell'utente](comfort.md).
+La cornice olografica presenta uno strumento che consente allo sviluppatore di attivare le interazioni e valutare dove si trova l'attenzione dell'utente. [Lo](gaze-and-commit.md) sguardo fisso è una delle interazioni principali in [HoloLens,](interaction-fundamentals.md)in cui lo sguardo può essere associato a movimenti [(ad](gaze-and-commit.md#composite-gestures) esempio con tocco d'aria) o alla voce [(consentendo](voice-input.md) interazioni più brevi e più naturali basate sulla voce). Di conseguenza, questo rende il fotogramma olografico uno spazio per l'osservazione del contenuto digitale e l'interazione con esso. Se l'esperienza richiede l'interazione con più oggetti intorno allo spazio dell'utente (ad esempio, la selezione multipla di oggetti intorno allo spazio dell'utente con sguardo e movimento), è consigliabile portare tali oggetti nella visualizzazione dell'utente o limitare la quantità di spostamento della testa necessaria per promuovere il [comfort](comfort.md)dell'utente.
 
-Lo sguardo può essere usato anche per tenere traccia dell'attenzione degli utenti attraverso un'esperienza e per individuare gli oggetti o le parti della scena a cui l'utente ha fatto la massima attenzione. Questo può essere usato in particolare per il debug di un'esperienza, consentendo a strumenti analitici come Heatmaps di vedere dove gli utenti spendono la maggior parte del tempo o mancano alcuni oggetti o interazioni. Il rilevamento degli sguardi può anche fornire uno strumento potente per i facilitatori delle esperienze (vedere l'esempio [di cucina di Lowe](holographic-frame.md#lowes-kitchen) ).
+Lo sguardo fisso può essere usato anche per tenere traccia dell'attenzione dell'utente attraverso un'esperienza e vedere a quali oggetti o parti della scena l'utente ha fatto più attenzione. Ciò può essere particolarmente utile per eseguire il debug di un'esperienza, consentendo agli strumenti analitici come le mappe termica di vedere dove gli utenti stanno passando la maggior parte del tempo o mancano determinati oggetti o interazioni. Il rilevamento dello sguardo fisso può anche offrire un potente strumento per i facilitatori nelle esperienze (vedere [l'esempio della cucina di Lowe).](holographic-frame.md#lowes-kitchen)
+
+Per vedere i concetti di progettazione della testa e del tracciamento oculare in azione, vedere la demo video Progettazione di [ologrammi - Tracciamento]() testa e tracciamento oculare di seguito:
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
 
 <br>
 
@@ -71,40 +75,40 @@ Lo sguardo può essere usato anche per tenere traccia dell'attenzione degli uten
 
 ## <a name="performance"></a>Prestazioni
 
-L'uso corretto del frame olografico è fondamentale per l'esperienza di [qualità delle prestazioni](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) . Un problema tecnico e di usabilità comune è l'overload del frame dell'utente con contenuto digitale, causando un peggioramento delle prestazioni di rendering. Si consiglia invece di usare lo spazio completo per l'utente per disporre il contenuto digitale, usando le tecniche descritte in precedenza, per ridurre il carico di rendering e garantire una qualità di visualizzazione ottimale.
+L'uso corretto del fotogramma olografico è fondamentale per le esperienze [di qualità delle](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) prestazioni. Una sfida tecnica (e usabilità) comune è l'overload del frame dell'utente con contenuto digitale, causando una riduzione delle prestazioni di rendering. Prendere invece in considerazione l'uso dello spazio completo intorno all'utente per disporre il contenuto digitale, usando le tecniche descritte in precedenza, per ridurre il carico di rendering e garantire una qualità di visualizzazione ottimale.
 
-Il contenuto digitale all'interno del frame olografico della HoloLens può anche essere abbinato al [piano di stabilizzazione](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) per ottenere prestazioni ottimali e [stabilità olografica](../develop/platform-capabilities-and-apis/hologram-stability.md).
+Il contenuto digitale all'interno del frame olografico di HoloLens può anche essere associato al piano di [stabilizzazione](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) per ottenere prestazioni ottimali e [stabilità dell'ologramma.](../develop/platform-capabilities-and-apis/hologram-stability.md)
 
 <br>
 
 ---
 
-## <a name="examples"></a>Esempi
+## <a name="examples"></a>Esempio
 
-### <a name="volvo-cars"></a>Automobili Volvo
+### <a name="volvo-cars"></a>Auto Disas 20
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/DilzwF90vec" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Nell'esperienza showroom di Volvo Cars i clienti sono invitati a conoscere le nuove funzionalità di un'auto in un'esperienza HoloLens guidata da un associo Volvo. Volvo ha affrontato una sfida con il frame olografico: un'auto di dimensioni eccessive è troppo grande per essere posizionata immediatamente accanto a un utente. La soluzione consisteva nell'iniziare l'esperienza con un punto di interesse fisico, una tabella centrale nello showroom, con un modello digitale più piccolo dell'auto posizionata sopra la tabella. In questo modo si garantisce che l'utente visualizzi l'intera automobile quando viene introdotta, consentendo un senso di comprensione spaziale una volta che l'auto raggiunge la scalabilità reale in un secondo momento nell'esperienza.
+Nell'esperienza di showroom di Cars, i clienti sono invitati a conoscere le funzionalità di una nuova auto in un'esperienza HoloLens guidata da un associato DiNo. Un'auto di grandi dimensioni è troppo grande per essere messa accanto a un utente. La soluzione consisteva nell'iniziare l'esperienza con un punto di riferimento fisico, un tavolo centrale nello showroom, con un modello digitale più piccolo dell'auto posizionato sopra il tavolo. Ciò garantisce che l'utente veda l'auto completa quando viene introdotta, consentendo un senso di comprensione spaziale quando l'auto cresce fino alla scala reale in un secondo momento nell'esperienza.
 
-L'esperienza di Volvo USA anche i direttori visivi, creando un effetto visivo lungo dal modello di auto su scala ridotta sulla tabella a un muro della stanza show. Questo comporta un effetto "Magic Window", che mostra la visualizzazione completa dell'auto a distanza, illustrando altre funzionalità dell'auto su scala reale. Il movimento Head è orizzontale, senza alcuna interazione diretta dell'utente (raccogliendo invece i segnali visivi e dalla narrazione dell'esperienza dell'associazione di Volvo).
+L'esperienza di Dio usa anche la confetto visivo, creando un effetto visivo lungo dal modello di auto su scala ridotta sul tavolo a una barriera nello show room. Ciò comporta un effetto "finestra magica", che mostra la visualizzazione completa dell'auto a distanza, illustrando altre caratteristiche dell'auto su scala reale. Il movimento della testa è orizzontale, senza alcuna interazione diretta da parte dell'utente ,raccogliendo invece segnali visivamente e dalla narrazione dell'esperienza da parte dell'associato Dia.
 
 <br>
 
 ---
 
-### <a name="lowes-kitchen"></a>Cucina di Lowe
+### <a name="lowes-kitchen"></a>Lowe's Kitchen
 
-Un'esperienza di archiviazione di Lowe invita i clienti a un modello a scalabilità completa di una cucina per presentare diverse opportunità di rimodellazione, come illustrato nella HoloLens. La cucina nello Store fornisce uno sfondo fisico per gli oggetti digitali, un'area di disegno vuota di appliance, piani di appoggio e cabinet per l'esperienza di realtà mista.
+Un'esperienza di store di Lowe invita i clienti a un mockup su larga scala di una cucina per presentare diverse opportunità di rimodellamento, come si può vedere tramite HoloLens. La cucina nel negozio offre un ambiente fisico per gli oggetti digitali, un'area di disegno vuota di elettrodomestici, controsoffitti e mobili per l'esperienza di realtà mista da dispiegare.
 
-Le superfici fisiche fungono da punti di riferimento statici per l'utente nell'esperienza, in quanto l'associazione di un Lowe guida l'utente attraverso diverse opzioni di prodotto e termina. In questo modo, l'associazione può indirizzare verbalmente l'attenzione dell'utente a "frigorifero" o "centro della cucina" per presentare contenuti digitali.
+Le superfici fisiche fungono da punti di riferimento statici in modo che l'utente si basi nell'esperienza, in quanto un associato di Lowe guida l'utente attraverso diverse opzioni di prodotto e termina. In questo modo, l'associato può indirizzare verbalmente l'attenzione dell'utente al "refrigeratore" o al "centro della cucina" per presentare il contenuto digitale.
 
-![L'associazione di un Lowe usa un tablet per guidare i clienti nell'esperienza HoloLens.](images/loweskitchen-750px.jpg)<br>
-*L'associazione di un Lowe usa un tablet per guidare i clienti nell'esperienza HoloLens.*
+![Un associato di Lowe usa un tablet per guidare i clienti nell'esperienza HoloLens.](images/loweskitchen-750px.jpg)<br>
+*Un associato di Lowe usa un tablet per guidare i clienti nell'esperienza HoloLens.*
 
-L'esperienza dell'utente è gestita, in parte, da un'esperienza tablet controllata dall'associazione di Lowe. In questo caso parte del ruolo di associazione potrebbe anche limitare un movimento di testa eccessivo, indirizzando la loro attenzione in modo uniforme nei punti di interesse della cucina. L'esperienza di tablet fornisce anche l'associazione Lowe ai dati di sguardi sotto forma di una vista mappa termica della cucina, per comprendere dove si trova l'utente, ad esempio in un'area specifica del cabinet, per fornire più accuratamente le linee guida per la rimodellazione.
+L'esperienza dell'utente è in parte gestita da un'esperienza di tablet controllata dall'associato di Lowe. Parte del ruolo dell'associato in questo caso sarebbe anche limitare il movimento eccessivo della testa, indirizzando l'attenzione senza problemi tra i punti di interesse nella cucina. L'esperienza del tablet fornisce anche l'associazione di Lowe ai dati dello sguardo fisso sotto forma di una mappa termica della cucina, consentendo di comprendere dove si trova l'utente (ad esempio, in una specifica area di cablaggio) per fornire loro indicazioni più accurate per il rimodellamento.
 
-Per informazioni più approfondite sull'esperienza di cucina di Lowe, vedere l'intervento [di Microsoft a ignite 2016](https://www.youtube.com/watch?v=gC_4JxF0e_k).
+Per un'analisi più approfondita dell'esperienza della cucina di Lowe, vedere la nota chiave di [Microsoft in Ignite 2016.](https://www.youtube.com/watch?v=gC_4JxF0e_k)
 
 <br>
 
@@ -112,14 +116,14 @@ Per informazioni più approfondite sull'esperienza di cucina di Lowe, vedere l'i
 
 ### <a name="fragments"></a>Frammenti
 
-Nei frammenti di gioco HoloLens, lo spazio di lavoro è trasformato in una scena di criminalità virtuale che mostra indizi ed evidenze e una sala riunioni virtuale, in cui si parla con i caratteri che si siedono sulle poltrone e si poggiano sulle pareti.
+Nel gioco HoloLens Fragments, il tuo ambiente si trasforma in una scena virtuale del delitto che mostra indizi ed prove e in una sala riunioni virtuale, in cui si parla con i caratteri che siedono sulle pareti e si inclinano sulle pareti.
 
-![I frammenti sono stati progettati per essere utilizzati nella Home page di un utente, con caratteri che interagiscono con oggetti e superfici reali.](images/fragments-750px.jpg)<br>
-*I frammenti sono stati progettati per essere utilizzati nella Home page di un utente, con caratteri che interagiscono con oggetti e superfici reali.*
+![I frammenti sono stati progettati per l'esecuzione nella casa di un utente, con i caratteri che interagiscono con oggetti e superfici reali.](images/fragments-750px.jpg)<br>
+*I frammenti sono stati progettati per l'esecuzione nella casa di un utente, con i caratteri che interagiscono con oggetti e superfici reali.*
 
-Quando gli utenti iniziano inizialmente l'esperienza, ricevono un breve periodo di adattamento senza alcuna interazione. Al contrario, sono invitati a esaminare e orientarsi in modo corretto e garantisce che la chat sia mappata correttamente per il contenuto interattivo del gioco.
+Quando gli utenti iniziano inizialmente l'esperienza, viene assegnato loro un breve periodo di regolazione senza alcuna interazione. Sono invece invitati a guardarsi attorno e orientarsi e assicurarsi che la stanza sia mappata correttamente per il contenuto interattivo del gioco.
 
-In tutta l'esperienza, i caratteri diventano punti focali e fungono da direttori visivi (movimenti Head tra i caratteri, che si rivelano o eseguono movimenti verso aree di interesse). Il gioco si basa anche su segnali visivi più evidenti quando un utente impiega troppo tempo per trovare un oggetto o un evento e USA in modo intensivo l'audio spaziale, specialmente con le voci dei caratteri quando si immette una scena.
+Nel corso dell'esperienza, i caratteri diventano punti focali e fungono da disagi visivi (movimenti della testa tra i caratteri, per guardare o gestirsi verso le aree di interesse). Il gioco si basa anche su segnali visivi più importanti quando un utente impiega troppo tempo per trovare un oggetto o un evento e fa un uso intenso dell'audio spaziale (soprattutto con voci di caratteri quando entrano in una scena).
 
 <br>
 
@@ -127,21 +131,21 @@ In tutta l'esperienza, i caratteri diventano punti focali e fungono da direttori
 
 ### <a name="destination-mars"></a>Destinazione: Mars
 
-Nella destinazione: esperienza Mars in primo piano nel [centro di Kennedy del NASA](https://blogs.windows.com/devices/2016/09/19/hololens-experience-destination-mars-now-open-at-kennedy-space-center-visitor-complex/), i visitatori sono stati invitati a un viaggio immersivo alla superficie di Marte, guidato dalla rappresentazione virtuale del leggendario Astronaut Buzz Aldrin.
+Nell'esperienza Destination: Mars in primo piano presso il [Space Center della NASA,](https://blogs.windows.com/devices/2016/09/19/hololens-experience-destination-mars-now-open-at-kennedy-space-center-visitor-complex/)i visitatori sono stati invitati in una gita immersiva sulla superficie di Mars, guidata da una rappresentazione virtuale dell'astronauta astronauta Diodrin.
 
-![Un Buzz virtuale di Buzz diventa il punto focale per gli utenti della destinazione: Mars.](images/destinationmars-750px.png)<br>
-*Un Buzz virtuale di Buzz diventa il punto focale per gli utenti della destinazione: Mars.*
+![Un'istanza virtuale di Aldrin diventa il punto focale per gli utenti in Destinazione: Mars.](images/destinationmars-750px.png)<br>
+*Un'istanza virtuale di Aldrin diventa il punto focale per gli utenti in Destinazione: Mars.*
 
-Come esperienza immersiva, questi utenti erano invitati a cercare, spostando il capo in tutte le direzioni per vedere il panorama marziano virtuale. Anche se per garantire la comodità degli utenti, la narrazione e la presenza virtuale di Buzz Aldrin hanno fornito un punto focale nell'intera esperienza. Questa registrazione virtuale di Buzz (creata da [Microsoft Mixed Reality Capture Studios](https://www.microsoft.com/mixed-reality/capture-studios)) si trovava in una reale dimensione umana, nell'angolo della stanza, consentendo agli utenti di visualizzarla in una visualizzazione quasi completa. La narrazione di Buzz indirizza gli utenti a concentrarsi su punti diversi dell'ambiente (ad esempio, un set di rocce marziane al piano o un intervallo di Mountain a distanza) con modifiche di scena specifiche o oggetti introdotti da lui.
+Come esperienza immersiva, questi utenti sono stati invitati a guardarsi intorno, spostando la testa in tutte le direzioni per vedere il panorama marziano virtuale. Anche se per garantire la comodità degli utenti, la narrazione e la presenza virtuale di Ron Aldrin hanno fornito un punto focale in tutta l'esperienza. Questa registrazione virtuale di Ronzio (creata da Microsoft Acquisizione realtà mista Studios) era reale e di dimensioni umane, [nell'angolo](https://www.microsoft.com/mixed-reality/capture-studios)della stanza consentendo agli utenti di visualizzarlo in una visualizzazione quasi completa. La narrazione di Ronde ha indirizzato gli utenti a concentrarsi su diversi punti dell'ambiente (ad esempio, un set di rocce marziane sul pavimento o un'area montuosa in lontananza) con modifiche specifiche della scena o oggetti introdotti da lui.
 
-![I narratori virtuali si attiverà per seguire lo spostamento di un utente, creando un punto focale potente nell'intera esperienza.](images/gazereset-750px.png)<br>
-*I narratori virtuali si attiverà per seguire lo spostamento di un utente, creando un punto focale potente nell'intera esperienza.*
+![Gli narratori virtuali si voltano per seguire lo spostamento di un utente, creando un potente punto focale in tutta l'esperienza.](images/gazereset-750px.png)<br>
+*Gli narratori virtuali si voltano per seguire lo spostamento di un utente, creando un potente punto focale in tutta l'esperienza.*
 
-La rappresentazione realistica di Buzz ha fornito un punto focale potente, completando tecniche sottili per trasformare il ronzio verso l'utente come se fosse presente, parlando con te. Man mano che l'utente si sposta sull'esperienza, Buzz si sposta verso una soglia prima di tornare a uno stato neutro se l'utente si sposta troppo oltre la periferia. Se l'utente ha l'aspetto di Buzz completamente (ad esempio, per esaminare qualcosa altrove nella scena), quindi torna a Buzz, la posizione direzionale dell'Assistente vocale sarà ancora una volta incentrata sull'utente. Le tecniche come questa forniscono un potente senso di immersione e creano un punto focale all'interno del frame olografico, riducendo lo spostamento di un'intestazione e la promozione della [comodità degli utenti](comfort.md).
+La rappresentazione realistica di Ronzio ha fornito un punto focale potente, completo di tecniche sottili per trasformare Ronzio verso l'utente in modo che si senta come se fosse presente, parlando con l'utente. Man mano che l'utente passa all'esperienza, Ronzio passa a una soglia prima di tornare a uno stato neutro se l'utente si sposta troppo oltre la sua periferia. Se l'utente guarda completamente da Ronzio (ad esempio, per esaminare qualcosa altrove nella scena), torna a Ronzio, la posizione direzionale dell'assistente vocale sarà ancora una volta incentrata sull'utente. Tecniche come questa offrono un potente senso di immersione e creano un punto focale all'interno della cornice olografica, riducendo il movimento eccessivo della testa e promuovendo il [comfort dell'utente.](comfort.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Interazioni istintive](interaction-fundamentals.md)
 * [Comodità](comfort.md)
-* [Ridimensionamento](scale.md)
+* [Scalabilità](scale.md)
 * [Puntamento con la testa e attesa](gaze-and-dwell.md)
 * [Stabilità degli ologrammi](../develop/platform-capabilities-and-apis/hologram-stability.md)

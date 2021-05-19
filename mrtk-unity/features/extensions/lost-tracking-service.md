@@ -1,25 +1,25 @@
 ---
-title: LostTrackingService
-description: Panoramica sul servizio LostTracking in MRTK
+title: Servizio di rilevamento della perdita
+description: Panoramica del servizio LostTracking in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 7544479c773f646d1422272a148739144eeb7415
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 96090b05c60cfaa6ff5d8c5e1dc7a58cc2658b71
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693238"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144526"
 ---
-# <a name="lost-tracking-visualization"></a>Visualizzazione di rilevamento persa
+# <a name="lost-tracking-visualization"></a>Visualizzazione del rilevamento della perdita
 
-![Rilevamento perso](../images/lost-tracking/LostTrackingVisualization.jpg)
+![Rilevamento della perdita](../images/lost-tracking/LostTrackingVisualization.jpg)
 
-Il servizio di estensione rilevamento perso fornisce l'oggetto visivo animato in stile shell HoloLens per lo stato di rilevamento perso.
+Il servizio di estensione per il rilevamento della perdita fornisce un oggetto visivo animato in stile shell HoloLens per lo stato di rilevamento della perdita.
 
-## <a name="how-to-use-lost-tracking-extensions"></a>Come usare le estensioni di rilevamento perdute
+## <a name="how-to-use-lost-tracking-extensions"></a>Come usare le estensioni per il rilevamento della perdita
 
-In profilo MRTK aggiungere il **servizio di rilevamento perso** alle estensioni. Assegnare **DefaultLostTrackingServiceProfile** che include **LostTrackingVisualPrefab**.
+In Profilo MRTK aggiungere **Lost Tracking Service** alle estensioni. Assegnare **DefaultLostTrackingServiceProfile** che include **LostTrackingVisualPrefab.**
 
 <img src="../images/lost-tracking/LostTracking_Extensions.png" width="550" alt="Lost Tracking Extension">

@@ -1,36 +1,36 @@
 ---
-title: ProximityLight
-description: Documentazione su prossimità Light con esempi in MRTK
+title: Luce di prossimità
+description: Documentazione sulla luce di prossimità con esempi in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 0bfffc8e6b95bb93cd37ec9060a22b1d044ebf8c
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK,
+ms.openlocfilehash: 1adf4d1d70313c917d63224b91a14d995d1888c1
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702377"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110145006"
 ---
-# <a name="proximity-light"></a>Luce vicina
+# <a name="proximity-light"></a>Luce di prossimità
 
-Un [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) è un paradigma del [sistema di progettazione Fluent](https://www.microsoft.com/design/fluent/) che simula una "sfumatura del punto inverso della sfumatura" accanto alla superficie di un oggetto. Spesso usato per le interazioni near, l'applicazione può controllare le proprietà di una luce di prossimità tramite il [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) componente.
+Un [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) è un [paradigma Fluent Design System](https://www.microsoft.com/design/fluent/) che simula una "luce del punto inverso della sfumatura" che si sposta vicino alla superficie di un oggetto. Spesso usata per le interazioni near, l'applicazione può controllare le proprietà di una luce di prossimità tramite il [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) componente .
 
-Affinché un materiale venga influenzato da un [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) Toolkit di *realtà mista o* da un shader standard, è necessario che sia abilitata la proprietà *prossimità luce* .
+Perché un materiale sia influenzato da uno [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) shader *Mixed Reality Toolkit/Standard,* è necessario che sia abilitata la proprietà *Proximity Light.*
 
 > [!NOTE]
-> Per [`ProximityLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) impostazione predefinita, sono supportati fino a due.
+> Per impostazione [`ProximityLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) predefinita, sono supportate fino a due.
 
 ## <a name="examples"></a>Esempio
 
-La maggior parte delle scene all'interno della MRTK utilizza un [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) . Il caso d'uso più comune è reperibile in MRTK/SDK/features/UX/prefabrics/Cursors/FingerCursor. prefabrical
+La maggior parte delle scene all'interno di MRTK usa un [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) oggetto . Il caso d'uso più comune è disponibile in MRTK/SDK/Features/UX/Prefabs/Cursors/FingerCursor.prefab
 
 ## <a name="advanced-usage"></a>Utilizzo avanzato
 
-Per impostazione predefinita, solo due [`ProximityLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) possono illuminare un [materiale](https://docs.unity3d.com/ScriptReference/Material.html) alla volta. Se il progetto richiede più di due [`ProximityLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) per influenzare un [materiale](https://docs.unity3d.com/ScriptReference/Material.html) , nel codice di esempio riportato di seguito viene illustrato come ottenere questo risultato.
+Per impostazione predefinita, [`ProximityLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) solo due possono [illuminare un materiale](https://docs.unity3d.com/ScriptReference/Material.html) alla volta. Se il progetto richiede più di due elementi per influenzare un materiale, il codice di esempio seguente [`ProximityLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) illustra come ottenere questo risultato. [](https://docs.unity3d.com/ScriptReference/Material.html)
 
 > [!NOTE]
-> La presenza [`ProximityLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) di molti [materiali](https://docs.unity3d.com/ScriptReference/Material.html) illuminati aumenterà pixel shader istruzioni e influirà sulle prestazioni. Per profilare queste modifiche all'interno del progetto.
+> La presenza [`ProximityLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) di molti elementi che [illuminano un](https://docs.unity3d.com/ScriptReference/Material.html) materiale aumenta pixel shader istruzioni e influisce sulle prestazioni. Profilare queste modifiche all'interno del progetto.
 
 *Come aumentare il numero di disponibili [`ProximityLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) da due a quattro.*
 
@@ -53,10 +53,10 @@ private const int proximityLightCount = 4;
 ```
 
 > [!NOTE]
-> Se Unity registra un avviso simile a quello riportato di seguito, è necessario riavviare Unity prima che le modifiche siano effettive.
+> Se Unity registra un avviso simile al seguente, è necessario riavviare Unity prima che le modifiche avranno effetto.
 >
 >`Property (_ProximityLightData) exceeds previous array size (24 vs 12). Cap to previous size.`
 
 ## <a name="see-also"></a>Vedi anche
 
-* [Shader standard MRTK](mrtk-standard-shader.md)
+* [MRTK Standard Shader](mrtk-standard-shader.md)

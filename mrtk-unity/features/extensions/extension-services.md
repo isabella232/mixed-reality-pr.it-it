@@ -1,58 +1,58 @@
 ---
-title: ExtensionServices
-description: documentazione per la funzionalità estesa in MRTK
+title: Servizi di estensione
+description: documentazione per le funzionalità estese in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: cde5f92d8a85ad8161f0f549a9a98edd644cb183
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: a39616a091a3f6800c429dc797ec2f3130e96f40
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104694368"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144540"
 ---
 # <a name="extension-services"></a>Servizi di estensione
 
-I servizi di estensione sono componenti che estendono le funzionalità del Toolkit di realtà mista. Questi servizi possono essere forniti da MRTK o da altre parti.
+I servizi di estensione sono componenti che estendono le funzionalità di Mixed Reality Toolkit. Questi servizi possono essere forniti da MRTK o da altre parti.
 
 ## <a name="creating-an-extension-service"></a>Creazione di un servizio di estensione
 
-Il modo più efficiente per creare un servizio di estensione consiste nell'utilizzare la [procedura guidata di creazione del servizio di estensione](../tools/extension-service-creation-wizard.md).
-Per avviare la creazione guidata del servizio di estensione, selezionare **mixed reality Toolkit > Utilities > creare un servizio di estensione**.
+Il modo più efficiente per creare un servizio di estensione è usare la creazione [guidata del servizio di estensione](../tools/extension-service-creation-wizard.md).
+Per avviare la creazione guidata del servizio di estensione, selezionare **Mixed Reality Toolkit > Utilities > Create Extension Service (Crea servizio di estensione).**
 
-![Creazione guidata servizio di estensione](../images/extension-wizard/ExtensionServiceCreationWizard.png)
+![Creazione guidata del servizio di estensione](../images/extension-wizard/ExtensionServiceCreationWizard.png)
 
-La procedura guidata automatizza la creazione dei componenti del servizio e garantisce l'ereditarietà corretta dell'interfaccia.
+La procedura guidata automatizza la creazione dei componenti del servizio e garantisce l'ereditarietà dell'interfaccia appropriata.
 
-![Componenti creati dalla creazione guidata servizio di estensione](../images/extension-wizard/ExtensionServiceComponents.png)
+![Componenti creati dalla creazione guidata del servizio di estensione](../images/extension-wizard/ExtensionServiceComponents.png)
 
 > [!Note]
-> In MRTK versione 2.0.0 si verifica un problema nella procedura guidata del servizio di estensione in cui è necessario generare il controllo del servizio e il profilo del servizio. Per ulteriori informazioni, vedere il problema [5654](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/5654) .
+> In MRTK versione 2.0.0 si è verificato un problema nella procedura guidata del servizio di estensione a causa del quale è necessario generare il controllo del servizio e il profilo del servizio. Per altre informazioni, vedere il [problema 5654.](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/5654)
 
-Al termine della procedura guidata, è possibile implementare la funzionalità del servizio.
+Al termine della procedura guidata, la funzionalità del servizio può essere implementata.
 
 ## <a name="registering-an-extension-service"></a>Registrazione di un servizio di estensione
 
-Per essere accessibile da parte di un'applicazione, il nuovo servizio di estensione deve essere registrato con il Toolkit di realtà mista.
+Per essere accessibile da un'applicazione, il nuovo servizio di estensione deve essere registrato con Mixed Reality Toolkit.
 
-Per registrare il servizio è possibile utilizzare la procedura guidata di creazione del servizio di estensione.
+La creazione guidata del servizio di estensione può essere usata per registrare il servizio.
 
-![Registrazione della creazione guidata servizio di estensione](../images/extension-wizard/ExtensionServiceWizardRegister.png)
+![Registrazione guidata del servizio di estensione](../images/extension-wizard/ExtensionServiceWizardRegister.png)
 
 Il servizio può anche essere registrato manualmente usando il controllo di configurazione di Mixed Reality Toolkit.
 
-![Registrazione del servizio di estensione manuale](../images/profiles/RegisterExtensionService.png)
+![Registrazione manuale del servizio di estensione](../images/profiles/RegisterExtensionService.png)
 
-Se il servizio di estensione usa un profilo, assicurarsi che sia specificato nel controllo.
+Se il servizio di estensione usa un profilo, assicurarsi che sia specificato nel controllo .
 
 ![Servizio di estensione configurato](../images/profiles/ConfiguredExtensionService.png)
 
-È inoltre possibile modificare il nome e la priorità di un componente.
+È anche possibile modificare il nome e la priorità del componente.
 
 ## <a name="accessing-an-extension-service"></a>Accesso a un servizio di estensione
 
-Per accedere ai servizi di estensione, usare il codice, [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry) come illustrato nell'esempio riportato di seguito.
+È possibile accedere ai servizi di estensione nel codice usando [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry) come illustrato nell'esempio seguente.
 
 ```c#
 INewService service = null;

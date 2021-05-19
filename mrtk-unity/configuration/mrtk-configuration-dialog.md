@@ -1,27 +1,27 @@
 ---
-title: MRTK_Configuration_Dialog
+title: Finestra di dialogo di configurazione MRTK
 description: Configurare MRTK nel progetto Unity
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, Unity
-ms.openlocfilehash: 6b0bad2322f70e0a5adbc0c34c1343d9213bde4c
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, Unity
+ms.openlocfilehash: ef326a4e4c9e34479cebacf3f3f575cd902ff24e
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550741"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144838"
 ---
 # <a name="mrtk-project-configuration-dialog"></a>Finestra di dialogo di configurazione del progetto MRTK
 
-La finestra di dialogo di configurazione MRTK viene visualizzata quando Unity carica un progetto ed è determinato che una o più opzioni di configurazione richiedono l'attenzione dello sviluppatore.
+La finestra di dialogo di configurazione MRTK viene visualizzata quando Unity carica un progetto ed è determinato che una o più opzioni di configurazione devono essere attenzioni dello sviluppatore.
 
 ![Applica in seguito Ignora](../features/images/configuration-dialog/ConfigurationDialogHeader.png)
 
-Per applicare le modifiche, fare clic sul pulsante **applica** . Il pulsante **più avanti** rinvia le modifiche finché il progetto non viene ricaricato in un momento successivo.
+Per applicare le modifiche, fare clic **sul pulsante** Applica. Il **pulsante** In seguito posticiperà le modifiche fino a quando il progetto non verrà ricaricato in un momento futuro.
 
 > [!NOTE]
-> Se una o più delle impostazioni consigliate non sono state controllate, verrà visualizzata nuovamente la finestra di dialogo di configurazione. Per evitare che ciò accada, applicare le opzioni desiderate, quindi riavviare la finestra di dialogo tramite le utilità del **Toolkit di realtà mista**  >    >  **configurare il progetto Unity** e fare clic su **Ignora**. In questo modo si impedisce la visualizzazione automatica della finestra di dialogo di configurazione.
+> La finestra di dialogo di configurazione verrà visualizzata di nuovo se una o più impostazioni consigliate non vengono deselezionate. Per evitare questo problema, applicare le opzioni desiderate, quindi riavviare la finestra di dialogo tramite **Mixed Reality Toolkit** Utilities Configure Unity Project e  >    >   fare clic su **Ignora**. In questo modo la finestra di dialogo di configurazione non verrà visualizzata automaticamente.
 
 ## <a name="common-settings"></a>Impostazioni comuni
 
@@ -29,64 +29,64 @@ Tutte le destinazioni di compilazione condividono una raccolta di opzioni comuni
 
 ![Impostazioni comuni](../features/images/configuration-dialog/ConfigurationDialogCommonSettings.png)
 
-### <a name="force-text-asset-serialization-and-enable-visible-meta-files"></a>Forza la serializzazione degli asset di testo e Abilita i metadati visibili
+### <a name="force-text-asset-serialization-and-enable-visible-meta-files"></a>Forzare la serializzazione degli asset di testo e abilitare i metafile visibili
 
-Queste impostazioni consentono di semplificare l'uso dei progetti Unity e dei sistemi di controllo del codice sorgente (ad esempio, git).
+Queste impostazioni consentono di semplificare l'uso dei progetti Unity e dei sistemi di controllo del codice sorgente (ad esempio Git).
 
-### <a name="enable-vr-supported"></a>Abilitazione di VR supportata
+### <a name="enable-vr-supported"></a>Abilitare la realtà virtuale supportata
 
 **Unity 2018**
 
-Configura le opzioni Virtual Reality supported e Virtual Reality SDK in **Impostazioni lettore**  >  **XR impostazioni**.
+Configura le opzioni Virtual Reality Supported e Virtual Reality SDK in **Player Settings**  >  XR Settings (Impostazioni **lettore XR Settings XR).**
 
-### <a name="set-single-pass-instanced-rendering-path"></a>Imposta il percorso di rendering con istanza Single Pass
+### <a name="set-single-pass-instanced-rendering-path"></a>Impostare il percorso di rendering con istanza a passaggio singolo
 
-Configura le impostazioni del **lettore impostazioni**  >  **XR**  >  **modalità di rendering stereo** per **singolo passaggio istanza**.
+Configura le impostazioni **del lettore**  >  **XR Settings** Stereo Rendering  >  **Mode** su Single Pass **Instanced**.
 
-### <a name="set-default-spatial-awareness-layer"></a>Imposta livello di riconoscimento spaziale predefinito
+### <a name="set-default-spatial-awareness-layer"></a>Impostare il livello di consapevolezza spaziale predefinito
 
-Registra la consapevolezza spaziale come livello 31 per consentire una configurazione semplice e coerente delle opzioni di Raycast e fisica.
+Registra la consapevolezza spaziale come livello 31 per consentire la configurazione semplice e coerente delle opzioni di raycast e fisica.
 
-### <a name="audio-spatializer"></a>Spatializer audio
+### <a name="audio-spatializer"></a>Spazializzatore audio
 
-Spatializers audio sono i componenti che sbloccano la potenza del suono spaziale e dell'audio posizionale per rendere realmente immersive le esperienze di realtà miste.
+Gli spazializzatori audio sono i componenti che sbloccano la potenza del suono spaziale e dell'audio posizionale per rendere realmente immersive le esperienze di realtà mista.
 
 > [!NOTE]
-> Se si imposta Spatializer audio su None, le funzionalità audio posizionali non vengono disabilitate.
+> L'impostazione dello spazializzatore audio su Nessuno disabilita le funzionalità audio posizionali.
 
-#### <a name="common-spatializers"></a>Spatializers comuni
+#### <a name="common-spatializers"></a>Spazializzatori comuni
 
-- Microsoft Spatializer
+- Spazializzatore Microsoft
 
-Microsoft ha fornito Spatializer che supporta l'utilizzo dell'accelerazione hardware in HoloLens 2.
+Microsoft ha fornito un spazializzatore che supporta l'utilizzo dell'accelerazione hardware HoloLens 2.
 
-Questo Spatializer è disponibile tramite [NuGet](https://www.nuget.org/packages/Microsoft.SpatialAudio.Spatializer.Unity/) e [GitHub](https://github.com/microsoft/spatialaudio-unity).
+Questo spazializzatore è disponibile tramite [NuGet](https://www.nuget.org/packages/Microsoft.SpatialAudio.Spatializer.Unity/) e [GitHub.](https://github.com/microsoft/spatialaudio-unity)
 
-Per ulteriori informazioni su Microsoft Spatializer, vedere la [documentazione relativa al suono spaziale](/windows/mixed-reality/spatial-sound-in-unity).
+Per altre informazioni su Microsoft Spatializer, vedere la documentazione [relativa al suono spaziale](/windows/mixed-reality/spatial-sound-in-unity).
 
-- MS HRTF Spatializer
+- Spazializzatore MS HRTF
 
-Microsoft Windows Spatializer fornito da Unity come parte della realtà mista di Windows e dei pacchetti della piattaforma Windows XR.
+Spazializzatore di Microsoft Windows fornito da Unity come parte dei pacchetti Windows Mixed Reality e della piattaforma Windows XR.
 
-- Audio risonanza
+- Audio di risonazione
 
-Spatializer multipiattaforma di Google fornito da Unity.
+Spazializzatore multipiattaforma di Google fornito da Unity.
 
-Altre informazioni sono reperibili nel sito di [documentazione audio risonanza](https://resonance-audio.github.io/resonance-audio/develop/unity/getting-started) .
+Altre informazioni sono disponibili nel sito [della documentazione di Resonance Audio.](https://resonance-audio.github.io/resonance-audio/develop/unity/getting-started)
 
-## <a name="universal-windows-platform-settings"></a>Impostazioni piattaforma UWP (Universal Windows Platform)
+## <a name="universal-windows-platform-settings"></a>piattaforma UWP (Universal Windows Platform) impostazioni
 
 ![Impostazioni UWP](../features/images/configuration-dialog/ConfigurationDialogUWPSettings.png)
 
 ### <a name="uwp-capabilities"></a>Funzionalità UWP
 
-Abilita funzionalità specifiche dell'applicazione per piattaforma UWP (Universal Windows Platform) applicazione. Queste funzionalità consentono alla piattaforma di informare e richiedere l'autorizzazione per abilitare funzionalità specifiche.
+Abilita funzionalità specifiche dell'applicazione per piattaforma UWP (Universal Windows Platform)appalta. Queste funzionalità consentono alla piattaforma di informare e richiedere l'autorizzazione per abilitare funzionalità specifiche.
 
 - Microfono
 
-  Abilita l'acquisizione di suoni tramite il microfono.
+  Abilita l'acquisizione dell'audio tramite il microfono.
 
-- Client Internet
+- Internet Client
 
   Abilita il supporto per l'accesso alle risorse su Internet.
 
@@ -94,18 +94,18 @@ Abilita funzionalità specifiche dell'applicazione per piattaforma UWP (Universa
 
   Abilita il supporto per l'uso dell'ambiente reale.
 
-- Occhio
+- Sguardo fisso
 
-  **Unity 2019,3 e versioni successive**
+  **Unity 2019.3 e versione più recente**
 
-  Abilita il supporto per tenere traccia degli sguardi dell'utente.
+  Abilita il supporto per tenere traccia dello sguardo fisso dell'utente.
 
-### <a name="avoid-unity-playersettingsgraphicsjob-crash"></a>Evitare l'arresto anomalo di Unity ' PlayerSettings. graphicsJob '
+### <a name="avoid-unity-playersettingsgraphicsjob-crash"></a>Evitare l'arresto anomalo di 'PlayerSettings.graphicsJob' di Unity
 
-**Unity 2019,3 e versioni successive**
+**Unity 2019.3 e versione più recente**
 
-Nella versione più recente di Unity 2019, quando è abilitato "processi grafici", l'app si arresterà in modo anomalo quando viene distribuita in un HoloLens 2.
-Questa impostazione è abilitata per impostazione predefinita in Unity. questo bug è disponibile (vedere il [bug Unity](https://issuetracker.unity3d.com/issues/enabling-graphics-jobs-in-2019-dot-3-x-results-in-a-crash-or-nothing-rendering-on-hololens-2)). per impostazione predefinita, lo strumento di configurazione imposta i processi grafici su' false ', consentendo così alle app distribuite in HoloLens 2 di non arrestarsi in modo anomalo.
+Nella versione più recente di Unity 2019, quando è abilitato "Processi di grafica", l'app si arresta in modo anomalo quando viene distribuita in un HoloLens 2.
+Questa impostazione è abilitata per impostazione predefinita in Unity. Anche se questo bug esiste (vedere il bug di [Unity),](https://issuetracker.unity3d.com/issues/enabling-graphics-jobs-in-2019-dot-3-x-results-in-a-crash-or-nothing-rendering-on-hololens-2)lo configuratore imposta per impostazione predefinita Processi grafici su "false", consentendo così alle app distribuite di HoloLens 2 di non bloccarsi.
 
 ## <a name="android-settings"></a>Impostazioni Android
 
@@ -113,28 +113,28 @@ Impostazioni di configurazione per supportare le applicazioni AR nei dispositivi
 
 ![Impostazioni Android](../features/images/configuration-dialog/ConfigurationDialogAndroidSettings.png)
 
-### <a name="disable-multi-threaded-rendering"></a>Disabilitare il rendering multithread
+### <a name="disable-multi-threaded-rendering"></a>Disabilitare il rendering multi-thread
 
-Disabilita **le impostazioni del lettore**  >  **altre impostazioni**  >  di **rendering multithreading** come richiesto dal supporto AR di Android.
+Disabilita le impostazioni **del**  >  **lettore Altre impostazioni** Rendering  >  **multithreading** come richiesto dal supporto AR di Android.
 
-### <a name="set-minimum-api-level"></a>Imposta il livello API minimo
+### <a name="set-minimum-api-level"></a>Impostare il livello API minimo
 
-Imposta il valore delle **impostazioni del lettore**  >  **altre impostazioni**  >  **livello API minimo** per applicare i requisiti del sistema operativo per le applicazioni AR.
+Imposta il valore di **Player Settings Other Settings** Minimum API Level per applicare i requisiti del sistema operativo per le applicazioni  >    >   AR.
 
 ## <a name="ios-settings"></a>Impostazioni iOS
 
-Impostazioni di configurazione per supportare le applicazioni AR nei dispositivi con tecnologia iOS.
+Impostazioni di configurazione per supportare le applicazioni AR nei dispositivi iOS.
 
 ![Impostazioni iOS](../features/images/configuration-dialog/ConfigurationDialogiOSSettings.png)
 
-### <a name="set-required-os-version"></a>Imposta la versione richiesta del sistema operativo
+### <a name="set-required-os-version"></a>Impostare la versione del sistema operativo richiesta
 
-Imposta il valore delle **impostazioni del lettore**  >  **altre impostazioni** di  >  **destinazione della versione minima di iOS** per applicare i requisiti del sistema operativo per le applicazioni AR.
+Imposta il valore di **Player Settings Other Settings** Target minimum iOS Version per applicare i requisiti del sistema operativo per le applicazioni  >    >   AR.
 
-### <a name="set-required-architecture"></a>Imposta architettura necessaria
+### <a name="set-required-architecture"></a>Impostare l'architettura richiesta
 
-Imposta il valore dell'   >  architettura di **altre impostazioni** del lettore  >   per applicare i requisiti di piattaforma per le applicazioni AR.
+Imposta il valore di **Impostazioni lettore Altre**  >  **impostazioni**  >  **Architettura per** applicare i requisiti della piattaforma per le applicazioni ar.
 
-### <a name="set-camera-usage-descriptions"></a>Imposta descrizioni utilizzo della fotocamera
+### <a name="set-camera-usage-descriptions"></a>Impostare le descrizioni di utilizzo della fotocamera
 
-Imposta il valore di **Impostazioni lettore**  >  **altre impostazioni**  >  **Descrizione utilizzo fotocamera** usato per richiedere l'autorizzazione per l'uso della fotocamera del dispositivo.
+Imposta il valore di **Impostazioni lettore Altre impostazioni** Descrizione utilizzo fotocamera usata per richiedere  >    >   l'autorizzazione per l'uso della fotocamera del dispositivo.

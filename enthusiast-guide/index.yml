@@ -1,99 +1,93 @@
 ### YamlMime:Hub
 title: Documentazione su VR di Windows Mixed Reality
-summary: È possibile scoprire il brivido della realtà virtuale con giochi, viaggi e streaming. Qui sono disponibili tutte le informazioni per principianti e utenti esperti di VR in Windows Mixed Reality.
+summary: 'È possibile scoprire il brivido della realtà virtuale con giochi, viaggi e streaming. Qui sono disponibili tutte le informazioni per principianti e utenti esperti di VR in Windows Mixed Reality.'
 brand: windows
 metadata:
   title: Documentazione su VR di Windows Mixed Reality
-  description: È possibile scoprire il brivido della realtà virtuale con giochi, viaggi e streaming. Qui sono disponibili tutte le informazioni per principianti e utenti esperti di VR in Windows Mixed Reality
+  description: 'È possibile scoprire il brivido della realtà virtuale con giochi, viaggi e streaming. Qui sono disponibili tutte le informazioni per principianti e utenti esperti di VR in Windows Mixed Reality'
   ms.topic: hub-page
   ms.prod: mixed-reality
   ms.technology: enthusiast-guide
   author: mattwojo
   ms.author: mattwoj
-  ms.openlocfilehash: b589b064aa598acd431909b8cb31a73fd8f757bc
-  ms.sourcegitcommit: b8a3367bf6dfed01de1ffa10f635385a92ca06b5
-  ms.translationtype: MT
-  ms.contentlocale: it-IT
-  ms.lasthandoff: 04/02/2021
-  ms.locfileid: "106223922"
 highlightedContent:
   items:
-  - title: Informazioni su VR di Windows Mixed Reality
-    itemType: overview
-    url: vr-journey.md
-  - title: Come acquistare un visore VR
-    itemType: learn
-    url: https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?rtc=1
-  - title: Informazioni sui requisiti hardware
-    itemType: learn
-    url: windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md
-  - title: Introduzione alla realtà virtuale
-    itemType: get-started
-    url: set-up-windows-mixed-reality.md
-  - title: Indicazioni sull'integrità e sulla sicurezza
-    itemType: concept
-    url: wmr-health-safety-comfort.md
-  - title: Esplora AltspaceVR
-    itemType: whats-new
-    url: https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey?tabs=application
+    - title: Informazioni su VR di Windows Mixed Reality
+      itemType: overview
+      url: vr-journey.md
+    - title: Come acquistare un visore VR
+      itemType: learn
+      url: 'https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?rtc=1'
+    - title: Informazioni sui requisiti hardware
+      itemType: learn
+      url: windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md
+    - title: Introduzione alla realtà virtuale
+      itemType: get-started
+      url: set-up-windows-mixed-reality.md
+    - title: Indicazioni sull'integrità e sulla sicurezza
+      itemType: concept
+      url: wmr-health-safety-comfort.md
+    - title: Esplorare AltspaceVR
+      itemType: whats-new
+      url: 'https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey?tabs=application'
 conceptualContent:
   title: Iniziare a usare Windows Mixed Reality
-  summary: Sono disponibili informazioni aggiuntive sul software, sull'hardware e sulla risoluzione dei problemi di Windows Mixed Reality.
+  summary: 'Sono disponibili informazioni aggiuntive sul software, sull''hardware e sulla risoluzione dei problemi di Windows Mixed Reality.'
   items:
-  - title: Procedure
-    links:
-    - url: plug-in-your-headset.md
-      itemType: quickstart
-      text: Collegare il visore VR
-    - url: install-windows-mixed-reality.md
-      itemType: quickstart
-      text: Installare il software Windows Mixed Reality
-    - url: learn-mixed-reality.md
-      itemType: quickstart
-      text: Eseguire l'esperienza di apprendimento
-    - url: using-games-and-apps-in-windows-mixed-reality.md
-      itemType: quickstart
-      text: Usare giochi e app
-  - title: Riferimenti
-    links:
-    - url: your-mixed-reality-home.md
-      itemType: concept
-      text: Ambiente iniziale
-    - url: controllers-in-wmr.md
-      itemType: concept
-      text: Controller del movimento in Windows Mixed Reality
-    - url: using-steamvr-with-windows-mixed-reality.md
-      itemType: concept
-      text: SteamVR con Windows Mixed Reality
-    - url: using-speech-in-wmr.md
-      itemType: concept
-      text: Voce in Windows Mixed Reality
-  - title: Risoluzione dei problemi
-    links:
-    - url: troubleshooting-windows-mixed-reality.md
-      itemType: concept
-      text: Domande frequenti di carattere generale
-    - url: filing-feedback.md
-      itemType: concept
-      text: Registrazione di bug e feedback
-    - url: error-codes.md
-      itemType: concept
-      text: Codici di errore
-    - url: installation_errors.md
-      itemType: concept
-      text: Errori di installazione
+    - title: Procedure
+      links:
+        - url: plug-in-your-headset.md
+          itemType: quickstart
+          text: Collegare il visore VR
+        - url: install-windows-mixed-reality.md
+          itemType: quickstart
+          text: Installare il software Windows Mixed Reality
+        - url: learn-mixed-reality.md
+          itemType: quickstart
+          text: Eseguire l'esperienza di apprendimento
+        - url: using-games-and-apps-in-windows-mixed-reality.md
+          itemType: quickstart
+          text: Usare giochi e app
+    - title: Riferimenti
+      links:
+        - url: your-mixed-reality-home.md
+          itemType: concept
+          text: Ambiente iniziale
+        - url: controllers-in-wmr.md
+          itemType: concept
+          text: Controller del movimento in Windows Mixed Reality
+        - url: using-steamvr-with-windows-mixed-reality.md
+          itemType: concept
+          text: SteamVR con Windows Mixed Reality
+        - url: using-speech-in-wmr.md
+          itemType: concept
+          text: Voce in Windows Mixed Reality
+    - title: Risoluzione dei problemi
+      links:
+        - url: troubleshooting-windows-mixed-reality.md
+          itemType: concept
+          text: Domande frequenti di carattere generale
+        - url: filing-feedback.md
+          itemType: concept
+          text: Registrazione di bug e feedback
+        - url: error-codes.md
+          itemType: concept
+          text: Codici di errore
+        - url: installation_errors.md
+          itemType: concept
+          text: Errori di installazione
 additionalContent:
   sections:
-  - title: Altre risorse
-    summary: Sono disponibili collegamenti a risorse aggiuntive, documentazione relativa allo sviluppo e forum.
-    items:
-    - title: Tracciamento dall'interno verso l'esterno
-      summary: Informazioni sul funzionamento del tracciamento dall'interno verso l'esterno
-      url: tracking-system.md
-    - title: Panoramica del software Windows Mixed Reality
-      summary: Panoramica e cronologia delle versioni del software Realtà mista
-      url: mixed-reality-software.md
-    - title: Sviluppare in Windows Mixed Reality
-      summary: Documentazione relativa allo sviluppo e alla progettazione
-      url: /windows/mixed-reality/develop/development?tabs=unity
-  footer: Sono stati riscontrati problemi nel sito? [Invia le tue segnalazioni](https://forums.hololens.com/categories/using-windows-mixed-reality)
+    - title: Altre risorse
+      summary: 'Sono disponibili collegamenti a risorse aggiuntive, documentazione relativa allo sviluppo e forum.'
+      items:
+        - title: Tracciamento dall'interno verso l'esterno
+          summary: Informazioni sul funzionamento del tracciamento dall'interno verso l'esterno
+          url: tracking-system.md
+        - title: Panoramica del software Windows Mixed Reality
+          summary: Panoramica e cronologia delle versioni del software Realtà mista
+          url: mixed-reality-software.md
+        - title: Sviluppare in Windows Mixed Reality
+          summary: Documentazione relativa allo sviluppo e alla progettazione
+          url: /windows/mixed-reality/develop/development?tabs=unity
+  footer: 'Found a problem on our site? [Let us know!](https://forums.hololens.com/categories/using-windows-mixed-reality)'

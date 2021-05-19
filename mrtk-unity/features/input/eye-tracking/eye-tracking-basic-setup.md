@@ -1,137 +1,137 @@
 ---
-title: EyeTracking_BasicSetup
-description: Come configurare la gestione degli occhi in MRTK
+title: Configurazione di base del tracciamento oculare
+description: Come configurare Eye Tracking in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, monitoraggio degli occhi,
-ms.openlocfilehash: 24e389ad86d1544d7d05e0febf7633701009c616
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, Eye Tracking,
+ms.openlocfilehash: 0513161bf8151069296c39612cbcacd15cc5c6c1
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550161"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144095"
 ---
-# <a name="getting-started-with-eye-tracking-in-mrtk"></a>Introduzione a Eye Tracking in MRTK
+# <a name="getting-started-with-eye-tracking-in-mrtk"></a>Introduzione al tracciamento oculare in MRTK
 
-Questa pagina illustra come configurare la scena MRTK Unity per l'uso della traccia degli occhi nell'app.
+Questa pagina illustra come configurare la scena di Unity MRTK per usare il tracciamento oculare nell'app.
 Di seguito si presuppone che si inizi con una nuova scena.
-In alternativa, è possibile consultare gli [esempi di MRTK Eye Tracking](../../example-scenes/eye-tracking-examples-overview.md) già configurati con numerosi esempi eccezionali che è possibile compilare direttamente in.
+In alternativa, è possibile consultare gli esempi di tracciamento oculare [MRTK](../../example-scenes/eye-tracking-examples-overview.md) già configurati con moltissimi esempi di cui è possibile basarsi direttamente.
 
-## <a name="eye-tracking-requirements-checklist"></a>Elenco di controllo dei requisiti di rilevamento degli occhi
+## <a name="eye-tracking-requirements-checklist"></a>Elenco di controllo dei requisiti di tracciamento oculare
 
-Per il corretto funzionamento del rilevamento degli occhi, è necessario soddisfare i requisiti seguenti.
-Se non si ha familiarità con la registrazione degli occhi su HoloLens 2 e il modo in cui la verifica degli occhi è configurata in MRTK, non è un problema.
-Verranno illustrati in dettaglio come indirizzarli a ognuno di essi.
+Per il corretto funzionamento del tracciamento oculare, è necessario soddisfare i requisiti seguenti.
+Se non si ha di che HoloLens 2 e come è configurato il tracciamento oculare in MRTK, non preoccuparsi.
+Verranno fornite informazioni dettagliate su come risolvere ognuno di essi più avanti.
 
-1. È necessario aggiungere al sistema di input un _"provider di dati occhio a occhio"_ . Che fornisce i dati di rilevamento degli occhi dalla piattaforma.
-2. La funzionalità _' GazeInput '_ deve essere abilitata nel manifesto dell'applicazione.
+1. È _necessario aggiungere un provider di dati 'Eye Gaze'_ al sistema di input. In questo modo vengono forniti i dati di tracciamento oculare dalla piattaforma.
+2. La _funzionalità 'GazeInput'_ deve essere abilitata nel manifesto dell'applicazione.
    **Questa funzionalità può essere impostata in Unity 2019, ma in Unity 2018 e versioni precedenti questa funzionalità è disponibile solo in Visual Studio e tramite lo strumento di compilazione MRTK**
-3. Il HoloLens **deve** essere a occhio calibrato per l'utente corrente. Vedere l' [esempio per rilevare se un utente è calibrato o meno a occhio](eye-tracking-is-user-calibrated.md).
+3. HoloLens deve **essere calibrato** con gli occhi per l'utente corrente. Vedere [l'esempio per rilevare se un utente è calibrato dagli occhi o meno.](eye-tracking-is-user-calibrated.md)
 
-### <a name="a-note-on-the-gazeinput-capability"></a>Una nota sulla funzionalità GazeInput
+### <a name="a-note-on-the-gazeinput-capability"></a>Nota sulla funzionalità GazeInput
 
-Gli strumenti di compilazione forniti da MRTK, ad esempio il Toolkit di realtà mista-> Utilities-> finestra di compilazione, possono abilitare automaticamente la funzionalità GazeInput. Per eseguire questa operazione, è necessario assicurarsi che la funzionalità di input di sguardi sia selezionata nella scheda ' appx Build Options ' (opzioni di compilazione):
+Gli strumenti di compilazione forniti da MRTK (ad esempio Mixed Reality Toolkit -> Utilities -> Build Window) possono abilitare automaticamente la funzionalità GazeInput. A tale scopo, è necessario assicurarsi che la "Funzionalità di input sguardo fisso" sia selezionata nella scheda "Opzioni di compilazione Appx":
 
 ![Strumenti di compilazione MRTK](../../images/eye-tracking/mrtk_et_buildsetup.png)
 
-Questo strumento consente di trovare il manifesto di AppX dopo il completamento della compilazione Unity e di aggiungere manualmente la funzionalità GazeInput.
-**Prima di unity 2019, questi strumenti non sono attivi quando si usa la finestra di compilazione incorporata di Unity** (ad esempio, le impostazioni di compilazione di file >).
+Questi strumenti troveranno il manifesto AppX dopo il completamento della compilazione di Unity e aggiungeranno manualmente la funzionalità GazeInput.
+**Prima di Unity 2019,** questo strumento NON è attivo quando si usa la finestra di compilazione predefinita di Unity, ad esempio File -> Build Settings (Impostazioni di compilazione file-> compilazione).
 
-Prima di Unity 2019, quando si usa la finestra di compilazione di Unity, è necessario aggiungere manualmente la funzionalità dopo la compilazione Unity, come indicato di seguito:
+Prima di Unity 2019, quando si usa la finestra di compilazione di Unity, la funzionalità dovrà essere aggiunta manualmente dopo la compilazione di Unity, come indicato di seguito:
 
-1. Aprire il progetto di Visual Studio compilato e quindi aprire il _pacchetto "Package. appxmanifest"_ nella soluzione.
-2. Assicurarsi di selezionare la casella di controllo _' GazeInput '_ in _funzionalità_. Se non viene visualizzata la funzionalità _' GazeInput '_ , verificare che il sistema soddisfi i [prerequisiti per l'uso di MRTK](/windows/mixed-reality/develop/install-the-tools) (in particolare la versione Windows SDK).
+1. Aprire il progetto Visual Studio e quindi aprire _'Package.appxmanifest'_ nella soluzione.
+2. Assicurarsi di selezionare la casella _di controllo "GazeInput"_ in _Capabilities (Funzionalità)._ Se non viene visualizzata una funzionalità _"GazeInput",_ verificare che il sistema soddisfi i prerequisiti per l'uso di [MRTK](/windows/mixed-reality/develop/install-the-tools) (in particolare la Windows SDK precedente.
 
-_Nota:_ È necessario eseguire questa operazione solo se si compila in una nuova cartella di compilazione.
-Ciò significa che se è già stato compilato il progetto Unity e si configura il appxmanifest prima e ora la destinazione della stessa cartella, non sarà necessario riapplicare le modifiche.
+_Si noti che:_ È necessario eseguire questa operazione solo se si compila in una nuova cartella di compilazione.
+Ciò significa che se il progetto Unity è già stato compilato e si è configurato appxmanifest in precedenza e ora è stata impostata di nuovo come destinazione la stessa cartella, non sarà necessario riapplicare le modifiche.
 
-## <a name="setting-up-eye-tracking-step-by-step"></a>Procedura dettagliata per la configurazione del monitoraggio degli occhi
+## <a name="setting-up-eye-tracking-step-by-step"></a>Configurazione dettagliata del tracciamento oculare
 
-### <a name="setting-up-the-scene"></a>Impostazione della scena
+### <a name="setting-up-the-scene"></a>Configurazione della scena
 
-Per configurare il _MixedRealityToolkit_ , è sufficiente fare clic su _' mixed reality Toolkit-> configure.. .'_ nella barra dei menu.
+Configurare _MixedRealityToolkit_ semplicemente facendo clic su _"Mixed Reality Toolkit -> Configura"._ nella barra dei menu.
 
 ![Configurazione di MRTK](../../images/eye-tracking/mrtk_setup_configure.jpg)
 
-### <a name="setting-up-the-mrtk-profiles-required-for-eye-tracking"></a>Configurazione dei profili MRTK necessari per la verifica degli occhi
+### <a name="setting-up-the-mrtk-profiles-required-for-eye-tracking"></a>Configurazione dei profili MRTK necessari per il tracciamento oculare
 
-Dopo aver configurato la scena MRTK, verrà richiesto di scegliere un profilo per MRTK.
-È sufficiente selezionare _DefaultMixedRealityToolkitConfigurationProfile_ e quindi selezionare l'opzione _"copia & Personalizza"_ .
+Dopo aver impostato la scena MRTK, ti verrà chiesto di scegliere un profilo per MRTK.
+È sufficiente selezionare _DefaultMixedRealityToolkitConfigurationProfile_ e quindi selezionare l'opzione _"Copia_ & Personalizza".
 
 ![Profilo MRTK](../../images/eye-tracking/mrtk_setup_configprofile.jpg)
 
-### <a name="create-an-eye-gaze-data-provider"></a>Creare un "provider di dati con occhio sguardo"
+### <a name="create-an-eye-gaze-data-provider"></a>Creare un "provider di dati di sguardo fisso"
 
-- Fare clic sulla scheda _"input"_ nel profilo MRTK.
-- Per modificare quello predefinito ( _"DefaultMixedRealityInputSystemProfile"_ ), fare clic sul pulsante _"Clona"_ accanto. Verrà visualizzato il menu _' clona profilo '_ . È sufficiente fare clic su _' clone '_ nella parte inferiore del menu.
-- Fare doppio clic sul nuovo profilo di input, espandere _"provider di dati di input"_ e selezionare _"+ Aggiungi provider di dati"_.
+- Fare clic sulla _scheda "Input"_ nel profilo MRTK.
+- Per modificare quello predefinito ( _'DefaultMixedRealityInputSystemProfile'),_ fare clic sul _pulsante "Clona"_ accanto. Viene visualizzato il menu _"Clone Profile" (Clona_ profilo). È sufficiente fare _clic su "Clone" (Clona)_ nella parte inferiore del menu.
+- Fare doppio clic sul nuovo profilo di input, espandere _"Provider di dati di input"_ e selezionare _"+ Aggiungi provider di dati"._
 - Creare un nuovo provider di dati:
-  - In **tipo** selezionare _' Microsoft. MixedReality. Toolkit. WindowsMixedReality. input '_  ->  _' WindowsMixedRealityEyeGazeDataProvider '_
-  - Per le **piattaforme** selezionare _"universale di Windows"_.
+  - In **Tipo** selezionare _'Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input'_  ->  _'WindowsMixedRealityEyeGazeDataProvider'_
+  - Per **Piattaforme selezionare** _"Universale di Windows"._
 
 ![Provider di dati MRTK](../../images/eye-tracking/mrtk_setup_eyes_dataprovider.jpg)
 
-### <a name="simulating-eye-tracking-in-the-unity-editor"></a>Simulazione del rilevamento degli occhi nell'editor di Unity
+### <a name="simulating-eye-tracking-in-the-unity-editor"></a>Simulazione del tracciamento oculare nell'editor di Unity
 
-È possibile simulare l'input di rilevamento degli occhi nell'editor di Unity per assicurarsi che gli eventi vengano attivati correttamente prima di distribuire l'app in HoloLens 2.
-Il segnale di sguardi occhi viene simulato semplicemente usando la posizione della fotocamera come origine dello sguardo oculare e il vettore di avanzamento della fotocamera come direzione degli sguardi oculari.
-Sebbene questo sia ideale per i test iniziali, tenere presente che non si tratta di un'imitazione efficace per i movimenti rapidi degli occhi.
-A tale fine, è preferibile garantire i test frequenti delle interazioni basate sugli occhi in HoloLens 2.
+È possibile simulare l'input del tracciamento oculare nell'editor di Unity per assicurarsi che gli eventi vengano attivati correttamente prima di distribuire l'app nel HoloLens 2.
+Il segnale dello sguardo fisso viene simulato semplicemente usando la posizione della fotocamera come origine dello sguardo e il vettore in avanti della fotocamera come direzione dello sguardo fisso.
+Anche se è ideale per i test iniziali, si noti che non è una buona idea per i movimenti oculari rapidi.
+A questo scopo, è meglio garantire test frequenti delle interazioni basate sugli occhi sul HoloLens 2.
 
-1. **Abilita rilevamento occhi simulato**:
-    - Fare clic sulla scheda _"input"_ nel profilo di configurazione di MRTK.
-    - Passare a _"provider di dati di input"_  ->  _"servizio di simulazione input_".
-    - Clonare l'oggetto _' DefaultMixedRealityInputSimpulationProfile '_ per apportare modifiche.
-    - Selezionare la casella di controllo _"simula posizione occhio"_ .
+1. **Abilitare il tracciamento oculare simulato:**
+    - Fare clic sulla _scheda "Input"_ nel profilo di configurazione di MRTK.
+    - Da qui passare a _"Input Data Providers" (Provider di dati di_  ->  _input) "Input Simulation Service" (Servizio simulazione input)._
+    - Clonare _'DefaultMixedRealityInputSimpulationProfile'_ per apportare modifiche.
+    - Selezionare la _casella di controllo "Simulate Eye Position" (Simula posizione_ oculare).
 
-    ![MRTK Eyes simulate](../../images/eye-tracking/mrtk_setup_eyes_simulate.jpg)
+    ![MrTK eyes simulate (Simulazione occhi MRTK)](../../images/eye-tracking/mrtk_setup_eyes_simulate.jpg)
 
-2. **Disabilitare il cursore per lo sguardo a capo predefinito**: in generale, è consigliabile evitare di visualizzare un cursore con lo sguardo d'occhio o, se necessario, per renderlo _estremamente_ sottile.
-Per impostazione predefinita, è consigliabile nascondere il cursore predefinito per lo sguardo a capo associato al profilo del puntatore MRTK per impostazione predefinita.
-    - Passare al profilo di configurazione di MRTK-> _' input '_  ->  _' puntatori '_
-    - Clonare l'oggetto _' DefaultMixedRealityInputPointerProfile '_ per apportare modifiche.
-    - Nella parte superiore di _' Pointer Settings '_ è necessario assegnare un cursore invisibile prefabbricato a _' GazeCursor '_. Questa operazione può essere eseguita selezionando la prefabbricata _' EyeGazeCursor '_ di MRTK Foundation.
+2. **Disabilitare il cursore predefinito** per lo sguardo fisso con la testa: in generale, è consigliabile evitare di visualizzare un cursore con sguardo fisso o se assolutamente necessario per renderlo _molto_ sottile.
+È consigliabile nascondere il cursore dello sguardo fisso predefinito associato al profilo del puntatore dello sguardo fisso MRTK per impostazione predefinita.
+    - Passare al profilo di configurazione MRTK -> _'Input'_  ->  _'Pointers'_
+    - Clonare _'DefaultMixedRealityInputPointerProfile'_ per apportare modifiche.
+    - Nella parte superiore di _"Impostazioni puntatore"_ è necessario assegnare un prefab del cursore invisibile a _'GazeCursor'._ A tale scopo, selezionare il prefab _"EyeGazeCursor"_ da MRTK Foundation.
 
-### <a name="enabling-eye-based-gaze-in-the-gaze-provider"></a>Abilitazione dello sguardo basato sull'occhio nel provider di sguardi
+### <a name="enabling-eye-based-gaze-in-the-gaze-provider"></a>Abilitazione dello sguardo oculare nel provider di sguardo
 
-In HoloLens V1, il primo sguardo è stato usato come tecnica di puntamento principale.
-Mentre lo sguardo a capo è ancora disponibile tramite _GazeProvider_ in MRTK, che è collegato alla [fotocamera](https://docs.unity3d.com/ScriptReference/Camera.html), è possibile selezionare l'opzione per l'uso degli occhi, selezionando la casella di controllo _' IsEyeTrackingEnabled '_ nelle impostazioni dello sguardo del profilo del puntatore di input.
+In HoloLens v1, lo sguardo rivolto verso la testa è stato usato come tecnica di puntamento principale.
+Mentre lo sguardo della testa è ancora disponibile tramite _GazeProvider_ in MRTK collegato alla [fotocamera,](https://docs.unity3d.com/ScriptReference/Camera.html)è possibile controllare di usare lo sguardo fisso selezionando invece la casella di controllo _"IsEyeTrackingEnabled"_ nelle impostazioni dello sguardo fisso del profilo del puntatore di input.
 
 >[!NOTE]
->Gli sviluppatori possono passare da un sguardo a un occhio basato sull'occhio a quello basato su Head nel codice modificando la proprietà _' IsEyeTrackingEnabled '_ di _' GazeProvider '_.  
+>Gli sviluppatori possono alternare lo sguardo visivo e lo sguardo con la testa nel codice modificando la proprietà _'IsEyeTrackingEnabled'_ di _'GazeProvider'._  
 
 >[!IMPORTANT]
->Se non vengono soddisfatti i requisiti di rilevamento degli occhi, l'applicazione eseguirà automaticamente il fallback allo sguardo basato su Head.
+>Se uno dei requisiti di tracciamento oculare non viene soddisfatto, l'applicazione torna automaticamente alla vista basata sulla testa.
 
-### <a name="accessing-eye-gaze-data"></a>Accesso ai dati di Eye sguardi
+### <a name="accessing-eye-gaze-data"></a>Accesso ai dati dello sguardo fisso
 
-Ora che la scena è configurata in modo da usare la verifica degli occhi, esaminiamo come accedervi negli script: [accesso ai dati di rilevamento degli occhi tramite EyeGazeProvider](eye-tracking-eye-gaze-provider.md) e [selezioni di destinazione supportate dagli occhi](eye-tracking-target-selection.md).
+Ora che la scena è stata impostata per l'uso del tracciamento oculare, è possibile esaminare come accedervi negli script: Accesso ai dati di tracciamento oculare tramite [EyeGazeProvider](eye-tracking-eye-gaze-provider.md) e selezioni di destinazione supportate dagli [occhi.](eye-tracking-target-selection.md)
 
 ### <a name="testing-your-unity-app-on-a-hololens-2"></a>Test dell'app Unity in un HoloLens 2
 
-La compilazione dell'app con la verifica degli occhi dovrebbe essere simile a quella di altre app MRTK HoloLens 2. Assicurarsi di aver abilitato la funzionalità di *"input dello sguardo"* , come descritto in precedenza nella sezione [*una nota sulla funzionalità GazeInput*](#a-note-on-the-gazeinput-capability).
+La compilazione dell'app con il tracciamento oculare dovrebbe essere simile alla compilazione di altre app HoloLens 2 MRTK. Assicurarsi di aver abilitato la funzionalità *"Gaze Input"* come descritto in precedenza nella sezione Nota sulla [*funzionalità GazeInput*](#a-note-on-the-gazeinput-capability).
 
-#### <a name="eye-calibration"></a>Calibrazione degli occhi
+#### <a name="eye-calibration"></a>Calibrazione oculare
 
-Infine, non dimenticare di eseguire la taratura degli occhi sulla HoloLens 2.
-Il sistema di rilevamento degli occhi non restituirà alcun input se l'utente non è calibrato.
-Il modo più semplice per ottenere la calibrazione consiste nell'instradare la visiera e viceversa.
-Una notifica di sistema dovrebbe essere visualizzata come un nuovo utente e chiedere di esaminare la calibrazione degli occhi.
-In alternativa, è possibile trovare la calibrazione degli occhi nelle impostazioni di sistema: impostazioni > sistema > la calibrazione > eseguire la calibrazione degli occhi.
+Infine, non dimenticare di eseguire la calibrazione dell'occhio sul HoloLens 2.
+Il sistema di tracciamento oculare non restituirà alcun input se l'utente non è calibrato.
+Il modo più semplice per ottenere la calibrazione è capovolgere la visiera e tornare indietro.
+Verrà visualizzata una notifica di sistema che indica l'utente come nuovo utente e chiede di eseguire la calibrazione oculare.
+In alternativa, è possibile trovare la calibrazione oculare nelle impostazioni di sistema: Impostazioni > sistema > calibrazione > Calibrazione oculare.
 
-#### <a name="eye-tracking-permission"></a>Autorizzazione per la verifica degli occhi
+#### <a name="eye-tracking-permission"></a>Autorizzazione di tracciamento oculare
 
-Quando si avvia l'app in HoloLens 2 per la prima volta, viene visualizzato un messaggio che richiede all'utente l'autorizzazione per l'uso di Eye Tracking.
-Se non viene visualizzato, indica in genere che non è stata impostata la funzionalità _' GazeInput '_ .
+Quando si avvia l'app nel HoloLens 2 per la prima volta, viene visualizzata una richiesta che richiede all'utente l'autorizzazione per usare il tracciamento oculare.
+Se non viene visualizzato, in genere si tratta di un'indicazione che la funzionalità _'GazeInput'_ non è stata impostata.
 
-Una volta visualizzata la richiesta di autorizzazione, questa non verrà visualizzata di nuovo automaticamente.
-Se è stata _negata l'autorizzazione per la verifica degli occhi_, è possibile reimpostarla in impostazioni-> Privacy-> app.
-
----
-
-Questa operazione dovrebbe iniziare a usare la verifica degli occhi nell'app MRTK Unity.
-Non dimenticare di consultare [le esercitazioni e gli esempi di MRTK Eye Tracking](../../example-scenes/eye-tracking-examples-overview.md) che illustrano come usare l'input di rilevamento degli occhi e fornire facilmente gli script che è possibile riutilizzare nei progetti.
+Dopo che la richiesta di autorizzazione è stata visualizzata una sola volta, non verrà visualizzata di nuovo automaticamente.
+Se si _"nega l'autorizzazione di_ tracciamento oculare", è possibile reimpostarla in Impostazioni -> Privacy -> App.
 
 ---
-[Torna a "Eye Tracking in the MixedRealityToolkit"](eye-tracking-main.md)
+
+Questo dovrebbe iniziare a usare il tracciamento oculare nell'app MRTK Unity.
+Non dimenticare di consultare le esercitazioni e gli esempi sul tracciamento oculare [di MRTK](../../example-scenes/eye-tracking-examples-overview.md) che illustrano come usare l'input di tracciamento oculare e forniscono in modo pratico script che è possibile riutilizzare nei progetti.
+
+---
+[Tornare a "Tracciamento oculare in MixedRealityToolkit"](eye-tracking-main.md)

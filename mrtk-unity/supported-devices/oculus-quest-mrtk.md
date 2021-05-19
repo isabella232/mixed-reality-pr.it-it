@@ -1,16 +1,16 @@
 ---
-title: OculusQuestMRTK
+title: Oculus Quest MRTK
 description: Documentazione da configurare per Oculus Quest in MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, Oculus Quest,
-ms.openlocfilehash: 9350ed7c8426c3bb31cf41493056fb6fc1e26107
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: c0eccd0b366d39529eafc51d23031fc30144b1ae
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109852436"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143962"
 ---
 # <a name="how-to-configure-oculus-quest-in-mrtk-using-the-xr-sdk-pipeline"></a>Come configurare Oculus Quest in MRTK usando la pipeline XR SDK
 
@@ -22,13 +22,13 @@ La [pipeline XR di Unity consente l'uso](https://docs.unity3d.com/Manual/XR.html
 Questa pipeline è lo standard per lo sviluppo di applicazioni XR in Unity 2019.3 e versioni diverse. Per usare questa pipeline, assicurarsi di usare **Unity 2019.3 o versione più recente.**
 
 Il [pacchetto Oculus Integration Unity](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) consente l'uso del **tracciamento delle** mani con Oculus Quest.
-Questo provider  di dati NON usa la pipeline XR o la pipeline **XR** legacy di Unity, ma poiché i controller e il headtracking vengono gestiti dalla pipeline XR di Unity, è necessario seguire i passaggi descritti in Configurazione del progetto per **Oculus Quest** per assicurarsi di usare la pipeline **XR** e non la pipeline XR legacy **deprecata.** 
+Questo provider  di dati NON usa la pipeline **XR** o la **pipeline XR** legacy di Unity, ma poiché i controller e il headtracking vengono gestiti dalla pipeline XR di Unity, è necessario seguire i passaggi descritti in Configurazione del progetto per **Oculus Quest** per assicurarsi di usare la pipeline **XR** e non la pipeline XR legacy **deprecata.**
 
 ## <a name="setting-up-project-for-the-oculus-quest"></a>Configurazione del progetto per Oculus Quest
 
 1. Seguire [questa procedura](https://developer.oculus.com/documentation/unity/book-unity-gsg/) per assicurarsi che il progetto sia pronto per la distribuzione in Oculus Quest.
 
-1. Assicurarsi che [nel dispositivo sia](https://developer.oculus.com/documentation/native/android/mobile-device-setup/) abilitata la modalità sviluppatore. L'installazione dei driver Oculus ADB è facoltativa.
+1. Assicurarsi che [la modalità sviluppatore](https://developer.oculus.com/documentation/native/android/mobile-device-setup/) sia abilitata nel dispositivo. L'installazione dei driver Oculus ADB è facoltativa.
 
 ## <a name="setting-up-the-xr-pipeline-for-oculus-quest"></a>Configurazione della pipeline XR per Oculus Quest
 
@@ -40,28 +40,28 @@ Questo provider  di dati NON usa la pipeline XR o la pipeline **XR** legacy di U
 
     ![Provider di plug-in Oculus](../images/cross-platform/oculus-quest/OculusPluginProvider.png)
 
-## <a name="setting-up-the-oculus-integration-unity-package-to-enable-handtracking"></a>Configurazione del pacchetto Oculus Integration Unity per abilitare il handtracking
+## <a name="setting-up-the-oculus-integration-unity-package-to-enable-handtracking"></a>Configurazione del pacchetto Oculus Integration Unity per abilitare il tracciamento delle mani
 
 1. Scaricare e [importare Oculus Integration](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) da Unity Asset Store. La versione più recente testata per il funzionamento è 20.0.0. Le versioni precedenti sono disponibili in questo [archivio](https://developer.oculus.com/downloads/package/unity-integration-archive/)
 
-1. Passare a Mixed Reality Toolkit > Utilities > Oculus > Integrate Oculus Integration Unity Modules (Integra moduli di Oculus Integration Unity). Questa operazione aggiornerà gli asmdef con le definizioni e i riferimenti necessari per il funzionamento del codice Oculus Quest pertinente. Aggiornerà anche il file csc per filtrare gli avvisi obsoleti prodotti dagli asset di Oculus Integration. Il repo MRTK contiene un file csc che converte gli avvisi in errori. Questa conversione interrompe il MRTK-Quest di configurazione.
+1. Passare a Mixed Reality Toolkit > Utilities > Oculus > Integrate Oculus Integration Unity Modules (Integrazione moduli Unity di Oculus Integration). In questo modo gli asmdef verranno aggiornati con le definizioni e i riferimenti necessari per il funzionamento del codice Oculus Quest pertinente. Aggiorna anche il file csc per filtrare gli avvisi obsoleti generati dagli asset di Oculus Integration. Il repo MRTK contiene un file csc che converte gli avvisi in errori. Questa conversione interrompe il MRTK-Quest configurazione.
 
-    ![Oculus Integration Asmdef](../images/cross-platform/oculus-quest/OculusIntegrationAsmdef.png)
+    ![Asmdef di integrazione oculus](../images/cross-platform/oculus-quest/OculusIntegrationAsmdef.png)
 
-1. Nella cartella Oculus importata (si trova in Assets/Oculus) è presente un oggetto che può essere creato tramite script denominato OculusProjectConfig. In questo file di configurazione è necessario impostare HandTrackingSupport su "Controllers and Hands".
+1. Nella cartella Oculus importata (si trova in Assets/Oculus) è presente un oggetto gestibile tramite script denominato OculusProjectConfig. In questo file di configurazione è necessario impostare HandTrackingSupport su "Controllers and Hands".
 
-    ![Oculus Integration Controller And Hands](../images/cross-platform/oculus-quest/OculusIntegrationControllerAndHands.png)
+    ![Controller di integrazione Oculus e mani](../images/cross-platform/oculus-quest/OculusIntegrationControllerAndHands.png)
 
 ## <a name="setting-up-the-scene"></a>Configurazione della scena
 
-1. Creare una nuova scena unity o aprire una scena preesiste, ad esempio HandInteractionExamples
-1. Aggiungere MRTK alla scena passando a **Mixed Reality Toolkit** Aggiungi alla scena e  >  **configura**
+1. Creare una nuova scena Unity o aprire una scena preesistnte come HandInteractionExamples
+1. Aggiungere MRTK alla scena passando a **Mixed Reality Toolkit** Add to Scene and Configure (Aggiungi alla scena e  >  **configura)**
 
 ## <a name="using-the-oculus-xr-sdk-data-provider"></a>Uso di Oculus XR SDK provider di dati
 
 1. Configurare il profilo per l'uso di **Oculus XR SDK provider di dati**
     - Se non si intende modificare i profili di configurazione
-        - Modificare il profilo in DefaultXRSDKConfigurationProfile e passare a Compilare e [distribuire il progetto in Oculus Quest](oculus-quest-mrtk.md#build-and-deploy-your-project-to-oculus-quest)
+        - Modificare il profilo in DefaultXRSDKConfigurationProfile e passare a Build and deploy your project to Oculus Quest (Compila e [distribuisci il progetto in Oculus Quest)](oculus-quest-mrtk.md#build-and-deploy-your-project-to-oculus-quest)
 
     - In caso contrario, seguire questa procedura:
         - Selezionare l'oggetto gioco MixedRealityToolkit nella gerarchia e selezionare Copia e **personalizza** per clonare il profilo di realtà mista predefinito.

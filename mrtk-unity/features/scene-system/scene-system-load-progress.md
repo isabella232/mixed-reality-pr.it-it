@@ -1,26 +1,26 @@
 ---
-title: SceneSystemLoadProgress
-description: Documentazione sul caricamento del contenuto di scene in MRTK
+title: Stato di caricamento del sistema della scena
+description: Documentazione sul caricamento del contenuto delle scene in MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: d54349461583241d19f260964528786e58baf54d
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 51b5d4d00d65491a0476068bbdc256ffce67412b
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104688351"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144406"
 ---
 # <a name="monitoring-content-loading"></a>Monitoraggio del caricamento del contenuto
 
-## <a name="scene-operation-progress"></a>Stato operazione scena
+## <a name="scene-operation-progress"></a>Stato dell'operazione della scena
 
-Quando il contenuto viene caricato o scaricato, la `SceneOperationInProgress` proprietà restituirà true. È possibile monitorare lo stato di avanzamento di questa operazione tramite la `SceneOperationProgress` Proprietà.
+Quando il contenuto viene caricato o scaricato, la `SceneOperationInProgress` proprietà restituirà true. È possibile monitorare lo stato di avanzamento di questa operazione tramite la `SceneOperationProgress` proprietà .
 
-Il `SceneOperationProgress` valore è la media di tutte le operazioni di scena asincrone correnti. All'inizio di un carico di contenuto, `SceneOperationProgress` sarà zero. Una volta completata `SceneOperationProgress` l'operazione, verrà impostata su 1 e rimarrà su 1 fino a quando non verrà eseguita l'operazione successiva. Si noti che solo le operazioni della scena del contenuto influiscono su queste proprietà.
+Il `SceneOperationProgress` valore è la media di tutte le operazioni correnti della scena asincrona. All'inizio di un caricamento del contenuto, `SceneOperationProgress` sarà zero. Al termine, `SceneOperationProgress` verrà impostato su 1 e rimarrà su 1 fino a quando non verrà eseguita l'operazione successiva. Si noti che solo le operazioni della scena di contenuto influiscono su queste proprietà.
 
-Queste proprietà riflettono lo stato di un' *intera operazione* dall'inizio alla fine, anche se tale operazione include più passaggi:
+Queste proprietà riflettono lo stato di *un'intera operazione* dall'inizio alla fine, anche se tale operazione include più passaggi:
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -63,7 +63,7 @@ public class FooManager : MonoBehaviour
 }
 ```
 
-`SceneOperationProgress` consente di visualizzare le finestre di dialogo dello stato di avanzamento:
+`SceneOperationProgress` può essere usato per visualizzare le finestre di dialogo di stato:
 
 ```c#
 public class ProgressDialog : MonoBehaviour
@@ -89,30 +89,30 @@ public class ProgressDialog : MonoBehaviour
 
 ## <a name="monitoring-with-actions"></a>Monitoraggio con azioni
 
-Il sistema di scena fornisce diverse azioni che consentono di stabilire quando vengono caricate o scaricate scene. Ogni azione inoltra il nome della scena interessata.
+Scene System (Sistema scena) fornisce diverse azioni per sapere quando le scene vengono caricate o scaricate. Ogni azione inoltra il nome della scena interessata.
 
-Se un'operazione di caricamento o scaricamento prevede più scene, le azioni rilevanti verranno richiamate una volta per ogni scena interessata. Vengono richiamati tutti contemporaneamente quando l'operazione di caricamento o scaricamento viene *completata completamente.* Per questo motivo è consigliabile usare le azioni *OnWillUnload* per rilevare il contenuto che *verrà* eliminato definitivamente, invece di usare le azioni *OnUnloaded* per rilevare il contenuto distrutto dopo il fatto.
+Se un'operazione di caricamento o scaricamento include più scene, le azioni pertinenti verranno richiamate una volta per ogni scena interessata. Vengono inoltre richiamati tutti contemporaneamente quando l'operazione di caricamento o scaricamento è *stata completata completamente.* Per questo motivo è consigliabile usare le azioni *OnWillUnload* per rilevare il contenuto che verrà eliminato in modo eliminato, anziché usare le azioni *OnUnloaded* per rilevare il contenuto eliminato dopo il fatto. 
 
-Sul lato flip, poiché le azioni *OnLoaded* vengono richiamate solo quando tutte le scene sono attivate e completamente caricate, l'uso di azioni *OnLoaded* per rilevare e usare nuovi contenuti è sicuramente sicuro.
+Sul lato opposto, poiché le azioni *OnLoaded* vengono richiamate solo quando tutte le scene sono attivate e caricate completamente, l'uso delle azioni *OnLoaded* per rilevare e usare il nuovo contenuto è garantito come sicuro.
 
 Azione | Quando viene richiamato | Scene di contenuto | Scene di illuminazione | Scene di gestione
 --- | --- | --- | --- | --- | ---
-`OnWillLoadContent` | Appena prima del caricamento di una scena del contenuto | • | |  
+`OnWillLoadContent` | Poco prima del caricamento di una scena di contenuto | • | |  
 `OnContentLoaded` | Dopo che tutte le scene di contenuto in un'operazione di caricamento sono state completamente caricate e attivate | • | |
-`OnWillUnloadContent` | Appena prima di un'operazione di scaricamento della scena del contenuto | • | |
-`OnContentUnloaded` | Dopo che tutte le scene di contenuto in un'operazione di scaricamento sono state completamente scaricate | • | |
-`OnWillLoadLighting` | Appena prima del caricamento di una scena di illuminazione | | • |
+`OnWillUnloadContent` | Poco prima di un'operazione di scaricamento di una scena di contenuto | • | |
+`OnContentUnloaded` | Dopo che tutte le scene di contenuto in un'operazione di scaricamento sono state scaricate completamente | • | |
+`OnWillLoadLighting` | Poco prima del caricamento di una scena di illuminazione | | • |
 `OnLightingLoaded` | Dopo che una scena di illuminazione è stata completamente caricata e attivata| | • |
-`OnWillUnloadLighting` | Immediatamente prima dello scaricamento di una scena di illuminazione | | • |
-`OnLightingUnloaded` | Dopo che una scena di illuminazione è stata completamente scaricata | | • |
-`OnWillLoadScene` | Appena prima del caricamento di una scena | • | • | •
-`OnSceneLoaded` | Dopo che tutte le scene in un'operazione sono state completamente caricate e attivate | • | • | •
-`OnWillUnloadScene` | Immediatamente prima dello scaricamento di una scena | • | • | •
-`OnSceneUnloaded` | Quando una scena è completamente scaricata |  • | • | •
+`OnWillUnloadLighting` | Poco prima dello scaricamento di una scena di illuminazione | | • |
+`OnLightingUnloaded` | Dopo che una scena di illuminazione è stata scaricata completamente | | • |
+`OnWillLoadScene` | Poco prima del caricamento di una scena | • | • | •
+`OnSceneLoaded` | Dopo che tutte le scene di un'operazione sono state caricate e attivate | • | • | •
+`OnWillUnloadScene` | Poco prima dello scaricamento di una scena | • | • | •
+`OnSceneUnloaded` | Dopo che una scena è stata scaricata completamente |  • | • | •
 
-### <a name="action-examples"></a>Esempi di azione
+### <a name="action-examples"></a>Esempi di azioni
 
-Un altro esempio di finestra di dialogo di stato usando le azioni e una coroutine anziché Update:
+Un altro esempio di finestra di dialogo di stato che usa azioni e una coroutine invece di Update:
 
 ```c#
 public class ProgressDialog : MonoBehaviour
@@ -161,7 +161,7 @@ public class ProgressDialog : MonoBehaviour
 
 ## <a name="controlling-scene-activation"></a>Controllo dell'attivazione della scena
 
-Per impostazione predefinita, le scene di contenuto sono impostate per l'attivazione al caricamento. Se si desidera controllare manualmente l'attivazione della scena, è possibile passare un oggetto `SceneActivationToken` a qualsiasi metodo di caricamento del contenuto. Se più scene di contenuto vengono caricate da una singola operazione, questo token di attivazione verrà applicato a tutte le scene.
+Per impostazione predefinita, le scene di contenuto sono impostate per l'attivazione quando vengono caricate. Se si vuole controllare manualmente l'attivazione della scena, è possibile passare a `SceneActivationToken` qualsiasi metodo di caricamento del contenuto. Se più scene di contenuto vengono caricate da una singola operazione, questo token di attivazione verrà applicato a tutte le scene.
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -191,9 +191,9 @@ while (sceneSystem.SceneOperationInProgress)
 
 ---
 
-## <a name="checking-which-content-is-loaded"></a>Verifica del contenuto caricato
+## <a name="checking-which-content-is-loaded"></a>Controllo del contenuto caricato
 
-La `ContentSceneNames` proprietà fornisce una matrice di scene di contenuto disponibili nell'ordine dell'indice di compilazione. È possibile verificare se queste scene sono state caricate tramite `IsContentLoaded(string contentName)` .
+La `ContentSceneNames` proprietà fornisce una matrice di scene di contenuto disponibili in ordine di indice di compilazione. È possibile controllare se queste scene vengono caricate tramite `IsContentLoaded(string contentName)` .
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();

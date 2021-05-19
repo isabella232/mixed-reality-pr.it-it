@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realtà mista, Sguardo fisso, selezione della destinazione con lo sguardo, interazione, progettazione, a portata di mano, HoloLens, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, MRTK, Mixed Reality Toolkit, pulsante, collisori, cubo di delimitazione, 2D, movimenti istintivi
-ms.openlocfilehash: 555b27764d077332a2d8618672e6aed7def1dd3f
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 9d572064f1c7ba02d8e739d1b731fae61e95d2df
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300096"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143411"
 ---
 # <a name="direct-manipulation-with-hands"></a>Manipolazione diretta con le mani
 
@@ -50,6 +50,12 @@ La manipolazione diretta è un modello di input principale in HoloLens 2 che usa
 <br>
 
 ---
+
+## <a name="basic-hand-tracking-and-instinctual-interactions-demo"></a>Demo di base sul tracciamento delle mani e sulle interazioni istintivi
+
+Per vedere i concetti di progettazione della testa e del tracciamento oculare in azione, vedere la demo di video Progettazione di [ologrammi - Tracciamento]() testa e tracciamento oculare di seguito. Al termine, continuare per un approfondimento più dettagliato su argomenti specifici.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
 
 ## <a name="collidable-fingertip"></a>Punta del dito di collisione
 

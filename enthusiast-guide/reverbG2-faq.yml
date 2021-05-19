@@ -1,57 +1,57 @@
 ### YamlMime:FAQ
 metadata:
   title: Domande frequenti su HP Reverb G2
-  description: Rimanere aggiornati con le domande frequenti sull'uso del visore VR HP Reverb G2 con Windows Mixed Reality visori VR immersive.
+  description: Rimanere aggiornati con le domande frequenti sull'uso di visori HP Reverb G2 con Windows Mixed Reality visori immersivi.
   ms.author: v-hferrone
   ms.date: 09/15/2020
   ms.topic: article
   keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Performance
   appliesto:
   - Windows 10
-  ms.openlocfilehash: 7715af5f2a94378a0c56ddcdcb83d1d21fc83700
-  ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+  ms.openlocfilehash: a15a29f36d4ad053f9f76016239c94365695d7c3
+  ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 04/24/2021
-  ms.locfileid: "107953791"
+  ms.lasthandoff: 05/19/2021
+  ms.locfileid: "110143262"
 title: Domande frequenti su HP Reverb G2
 summary: ''
 sections:
 - name: Ignorato
   questions:
   - question: >
-      È necessario seguire un ordine specifico per collegare i cavi del visore VR a un PC?
+      È necessario seguire un ordine specifico per connettere i cavi del visore a un PC
     answer: >
       HP consiglia:
 
 
-      - Collegare il cavo da 6 metri al visore VR prima di connettersi al PC o all'alimentatore.
+      - Collegare il cavo da 6 metri al visore prima di connettersi al PC o all'alimentatore.
 
-      - Lasciare il cavo a 6 metri connesso al visore VR dopo l'installazione iniziale.
+      - Lasciare il cavo da 6 metri connesso al visore dopo l'installazione iniziale.
 
-      - Quando il visore VR non è in uso, disconnettere l'adattatore di alimentazione dal cavo a 6 metri.
+      - Quando il visore non è in uso, scollegare l'adattatore di alimentazione dal cavo da 6 metri.
   - question: >
-      Cosa fare per ottenere un'immagine più chiara
+      Cosa fare per ottenere un'immagine più nitida
     answer: >
-      Se si ha l'aspetto sfocato dello schermo, è possibile provare a eseguire alcune operazioni:
+      È possibile provare alcune operazioni se si ha l'aspetto leggermente sfocato dello schermo:
 
 
-      - Assicurarsi che il visore VR sia in testa correttamente con gli occhi centrati sulle lenti.
+      - Assicurarsi che il visore sia in testa correttamente con gli occhi centrati sulle lenti.
 
-      - Provare a modificare l'IPD (distanza interpupry). Il riverbero G2 usa un IPD hardware. Per modificarlo, cercare la regolazione ipd sul visore VR.
+      - Provare a regolare l'IPD (distanza interpupillare). Reverb G2 usa un IPD hardware. Per modificarlo, cercare la regolazione IPD sul visore.
 
-      - Se sono necessari occhiali o contatti, è necessario usarli quando si usa il dispositivo.
+      - Se sono necessari occhiali o contatti, è necessario indossarli quando si usa il dispositivo.
 
-      - Verificare che le lenti siano pulite (solo microfibri, senza fluidi).
+      - Verificare che le lenti siano pulite (solo microfibra, senza fluidi).
 
-      - A causa della progettazione avanzata del visore VR, potrebbe verificarsi un fantasma delle immagini secondarie nei primi minuti quando si avvia il dispositivo mentre è a freddo fino a quando le LCD non hanno la possibilità di riscaldamento.
+      - A causa della progettazione avanzata del visore, potrebbe verificarsi un fantasma delle immagini secondarie nei primi minuti quando si avvia il dispositivo a freddo fino a quando i led non hanno la possibilità di riscaldarsi.
   - question: >
-      Viene visualizzato un errore 7-14 "Si è verificato un errore" quando si collega il visore VR
+      Viene visualizzato un errore 7-14 "Si è verificato un errore" quando si collega il visore
     answer: >
-      Il codice 7-14 Something Went Wrong indica che alcuni dei componenti USB2 necessari non sono stati trovati.  A causa del cavo molto lungo di HP Reverb G2, alcune delle tolleranze per i segnali USB sono più rigide.  Ciò significa che una porta nel computer può funzionare in modo più affidabile rispetto a un'altra.
+      Il codice 7-14 Something Went Wrong indica che alcuni componenti USB2 necessari non sono stati trovati.  A causa del cavo extra-lungo di HP Reverb G2, alcune delle tolleranze per i segnali USB sono più rigide.  Ciò significa che una porta nel computer può funzionare in modo più affidabile rispetto a un'altra.
 
 
-      Se viene visualizzato un errore 7-14 "si è verificato un errore", provare la procedura seguente:
+      Se viene visualizzato un errore 7-14 "si è verificato un errore", provare a seguire questa procedura:
 
 
       - Assicurarsi di avere installato i driver più recenti per il visore e il controller USB.
@@ -67,8 +67,6 @@ sections:
 
       > [!NOTE]
 
-      > HP consiglia di usare solo controller USB incorporati nella scheda madre con dispositivi Reverb G2.
-
       > Se non è possibile connettere il dispositivo, contattare il supporto [tecnico HP](https://support.hp.com/us-en)
   - question: >
       Viene visualizzato un errore 13-14 "Si è verificato un errore" quando il PC riprende dall'ibernazione (S4)
@@ -81,7 +79,7 @@ sections:
   - question: >
       Altri lo stato sono forti o che l'audio viene ritagliato mentre si usa il microfono con alcune applicazioni
     answer: >
-      I livelli di volume di input vengono impostati automaticamente su 100% quando il microfono HP Reverb G2 viene riconosciuto per la prima volta da un PC Windows. A causa dei microfoni di alta qualità di Reverb G2, la sensibilità dell'input è molto più elevata rispetto alle impostazioni predefinite Windows 10 predefinite. È consigliabile impostare il livello di input del microfono Reverb G2 a partire dal 50% e aumentare le dimensioni da qui. Un'impostazione ottimale è specifica per l'utente, soprattutto quando si usano applicazioni che non hanno un'impostazione del microfono "auto-gain". Esempi di applicazioni con "guadagno automatico" sono Skype, Zoom, Teams e Cisco WebEx, ma non tutte le applicazioni di social network virtuale o di trasmissione hanno questa funzionalità.
+      I livelli di volume di input vengono impostati automaticamente su 100% quando il microfono HP Reverb G2 viene riconosciuto per la prima volta da un PC Windows. A causa dei microfoni di alta qualità di Reverb G2, la sensibilità dell'input è molto più elevata rispetto alle impostazioni predefinite Windows 10 predefinite. È consigliabile impostare il livello di input del microfono Reverb G2 a partire dal 50% e aumentare le dimensioni da qui. Un'impostazione ottimale è specifica per l'utente, soprattutto quando si usano applicazioni che non hanno un'impostazione del microfono "auto-gain". Esempi di applicazioni con "guadagno automatico" sono Skype, Zoom, Teams e Cisco WebEx, ma non tutte le applicazioni di social network o di trasmissione vr hanno questa funzionalità.
   - question: >
       Il Portale realtà mista "Can't run mixed reality on this headset" (Non è possibile eseguire la realtà mista su questo visore VR), ma questa operazione è stata eseguita correttamente con il visore VR WMR precedente
     answer: >
@@ -89,7 +87,7 @@ sections:
   - question: >
       Sembra che lo schermo sinistro sia allungato e che lo schermo destro sia non centrato e mezzo nero
     answer: >
-      Questo problema può verificarsi quando il visore VR non è in esecuzione alla risoluzione nativa. A causa della natura degli schermi ad alta risoluzione nell'HMD HP Reverb G2, non tutti i sistemi possono eseguire il rendering della risoluzione nativa. È disponibile una correzione in futuro Windows Update che risolverà il problema di rendering quando il visore VR non è nella risoluzione nativa.
+      Questo problema può verificarsi quando il visore VR non è in esecuzione alla risoluzione nativa. A causa della natura degli schermi ad alta risoluzione nell'HMD HP Reverb G2, non tutti i sistemi possono eseguire il rendering della risoluzione nativa. È disponibile una correzione in una versione futura Windows Update che risolverà il problema di rendering quando il visore VR non è nella risoluzione nativa.
 
 
       Esistono alcuni motivi per cui il sistema non è in grado di eseguire il rendering alla risoluzione nativa:
@@ -107,37 +105,37 @@ sections:
   - question: >
       I giochi Dirvr non sembrano funzionare correttamente con i controller HP Motion
     answer: >
-      Anche se gli sviluppatori stanno lavorando per aggiornare i giochi per la compatibilità con HP Motion Controller, sono stati forniti binding di controller personalizzati per molti dei giochi più diffusi su Steam. Con "Windows Mixed Reality for SteamVR" completamente aggiornato alla versione 1.2.444, queste associazioni devono essere prese automaticamente quando il gioco è in esecuzione. Tuttavia, se il gioco non sembra registrare le azioni in questo momento, è possibile cercare manualmente i profili di associazione personalizzati usando il menu Impostazioni di SteamVR.
+      Anche se gli sviluppatori stanno lavorando per aggiornare i giochi per la compatibilità con HP Motion Controller, sono stati forniti binding di controller personalizzati per molti dei giochi più diffusi su Steam. Con "Windows Mixed Reality for SteamVR" completamente aggiornato alla versione 1.2.444, questi binding devono essere prelevati automaticamente quando il gioco è in esecuzione. Tuttavia, se il gioco non sembra registrare le azioni in questo momento, è possibile cercare manualmente profili di binding personalizzati usando il menu Delle impostazioni di SteamVR.
 
       Per
 
 
-      - Aprire il menu di SteamVR premendo il pulsante di menu del controller di movimento destro
+      - Aprire il menu MotionVR premendo il pulsante di menu del controller del movimento destro
 
-      - Selezionare l'icona "Impostazioni" nell'angolo inferiore destro del menu di SteamVR
+      - Selezionare l'icona "Settings" (Impostazioni) nell'angolo in basso a destra del menu di SteamVR
 
       - Selezionare la scheda "Controller"
 
-      - Selezionare l'opzione "Gestisci associazioni controller"
+      - Selezionare l'opzione "Gestisci binding controller"
 
 
-      Da qui è possibile modificare l'associazione del controller attivo in "Personalizzata", che aprirà l'opzione per provare le associazioni di gioco condivise dalla community.
+      Da qui è possibile modificare il binding del controller attivo in "Personalizzato", che aprirà l'opzione per provare i binding di gioco condivisi dalla community.
 
-      Se non sono ancora state condivise associazioni di giochi personalizzate per questo gioco (o se non si è completamente soddisfatti di quelli che si è provato), è anche possibile creare associazioni di gioco personalizzate e persino aiutare il resto della community condividendole dopo alcune sessioni di gioco.
+      Se non sono ancora stati condivisi binding di gioco personalizzati per questo gioco (o se non si è completamente soddisfatti di quelli provati), è anche possibile creare binding di gioco personalizzati e persino aiutare il resto della community condividendoli dopo alcune sessioni di gioco.
   - question: >
-      Tutti i cavi sono collegati al visore e al PC, ma non si accende
+      Tutti i cavi sono collegati al visore VR e al PC, ma non si accende
     answer: >
-      Verificare che il cavo collegato al visore sia completamente seduti. Nella parte superiore del cavo è presente un piccolo punto che si allinea accanto al bordo superiore del visore quando è stato inserito completamente:
+      Verificare che il cavo collegato al visore VR sia completamente collegato. Nella parte superiore del cavo è presente un piccolo punto che si allinea accanto al bordo superiore del visore VR quando è stato inserito completamente:
 
 
-      ![Piccolo punto nella parte superiore del cavo](images/small-dot.jpg)
+      ![Punto piccolo nella parte superiore del cavo](images/small-dot.jpg)
   - question: >
-      Come è possibile alimentare il visore mentre si usa ancora il PC
+      Come è possibile alimentare il visore VR mentre si usa ancora il PC?
     answer: >
-      Scollegare l'adattatore di connessione AC dalla casella di collegamento sul cavo del visore per rimuovere l'alimentazione al visore.
+      Scollegare l'adattatore di connessione CA dalla casella di collegamento sul cavo del visore VR per rimuovere l'alimentazione al visore VR.
   - question: >
-      L'immagine dei display del riverbero G2 è più piccola e solo in alto a sinistra
+      L'immagine delle schermi del riverbero G2 è più piccola e solo in alto a sinistra
     answer: >-
-      Se si dispone di una GPU di alimentazione AMD, è necessario disabilitare la scalabilità automatica. Mentre il visore è connesso, passare a Impostazioni -> Realtà mista -> visore -> risoluzione.
+      Se si dispone di una GPU di alimentazione AMD, è necessario disabilitare l'upscaling automatico. Mentre il visore VR è connesso, passare a Settings -> Mixed Reality -> Headset -> Resolution (Impostazioni -> Realtà mista -> Visore VR -> risoluzione).
 
-      Nel menu a discesa selezionare l'opzione "4320 x 2160 (migliore qualità)". Quando è selezionata l'opzione "Scalabilità automatica (prestazioni ottimali)", è possibile che si verifichi il problema con la visualizzazione.
+      Nel menu a discesa selezionare l'opzione "4320 x 2160 (qualità migliore)". Quando è selezionata l'opzione "Ridimensionamento automatico (prestazioni ottimali)", è possibile che si verifichi il problema con la visualizzazione.

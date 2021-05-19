@@ -1,22 +1,22 @@
 ---
-title: Uso diARFoundation
+title: Uso di AR Foundation
 description: Documentazione per l'uso di ARFoundation in Unity
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, AR Core, AR Kit
-ms.openlocfilehash: d96c5cab2439b581c0de9d59a1a349abccf34fb5
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, AR Core, AR Kit
+ms.openlocfilehash: 1c39950e8b64968e182ddc551ef344dee42060e9
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109852429"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143939"
 ---
-# <a name="how-to-configure-mrtk-for-ios-and-android-experimental"></a>Come configurare MRTK per iOS e Android [Sperimentale]
+# <a name="how-to-configure-mrtk-for-ios-and-android-experimental"></a>Come configurare MRTK per iOS e Android [sperimentale]
 
 ## <a name="install-required-packages"></a>Installare i pacchetti necessari
 
-1. Scaricare e importare il **pacchetto Microsoft.MixedReality.Toolkit.Unity.Foundation** da [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0) o [unity Gestione pacchetti](../configuration/usingupm.md)
+1. Scaricare e importare **il pacchetto Microsoft.MixedReality.Toolkit.Unity.Foundation** da [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0) o [dal](../configuration/usingupm.md) Gestione pacchetti
 
 1. In Unity Gestione pacchetti (UPM) installare i pacchetti seguenti:
 
@@ -41,15 +41,15 @@ ms.locfileid: "109852429"
     | AR Foundation  <br/> Versione: 3.1.3 |  AR Foundation  <br/> Versione: 3.1.3 |
     | Plug-in ARCore XR <br/> Versione: 3.1.4 | Plug-in ARKit XR <br/> Versione: 3.1.3 |
 
-1. Aggiornare le definizione di scripting unityAR di MRTK richiamando la voce di menu: **Mixed Reality Toolkit > Utilities > UnityAR > Update Scripting Defines (Mixed Reality Toolkit > Utilities > UnityAR > Update Scripting Defines**
+1. Aggiornare le regole di scripting di MRTK UnityAR richiamando la voce di menu: **Mixed Reality Toolkit > Utilities > UnityAR > Update Scripting Defines**
 
-## <a name="enabling-the-unity-ar-camera-settings-provider"></a>Abilitazione del provider di impostazioni della fotocamera UNITY AR
+## <a name="enabling-the-unity-ar-camera-settings-provider"></a>Abilitazione del provider di impostazioni della fotocamera Unity AR
 
 La procedura seguente presuppone l'uso dell'oggetto MixedRealityToolkit. I passaggi necessari per altri registrar del servizio possono essere diversi.
 
 1. Selezionare l'oggetto MixedRealityToolkit nella gerarchia della scena.
 
-    ![Gerarchia della scena configurata di MRTK](../features/images/MRTK_ConfiguredHierarchy.png)
+    ![Gerarchia della scena configurata MRTK](../features/images/MRTK_ConfiguredHierarchy.png)
 
 1. Selezionare **Copia e personalizza** per clonare il profilo MRTK per abilitare la configurazione personalizzata.
 
@@ -86,21 +86,21 @@ La procedura seguente presuppone l'uso dell'oggetto MixedRealityToolkit. I passa
 
     Quando si cambia piattaforma, verrà visualizzata la finestra del configuratore di progetto MRTK con le impostazioni per la piattaforma scelta.  Fare clic su Applica per abilitare le impostazioni specifiche della piattaforma.
 
-    Impostazioni dello configuratore di progetti iOS
+    Impostazioni del configuratore di progetti iOS
 
     ![Configuratore di progetti iOS](../features/images/camera-system/MRTKProjectConfigurator.png)
 
-1. Non sono necessari passaggi aggiuntivi dopo il passaggio alla piattaforma per Android.
+1. Non sono necessari passaggi aggiuntivi dopo il passaggio della piattaforma per Android.
 
-1. Se la piattaforma è iOS, > Impostazioni progetto > Player > Altre impostazioni, nell'intestazione Ottimizzazione deselezionare **Strip** Engine Code (Rimuove il codice motore)
+1. Se la piattaforma è iOS, modificare > impostazioni del progetto > Player > Altre impostazioni, sotto l'intestazione Ottimizzazione **deselezionare** Strip Engine Code (Strip Engine Code)
 
     ![Impostazioni iOS](../features/images/camera-system/UncheckStripEngineCodeiOS.png)
 
     > [!NOTE]
-    > Deselezionare Strip Engine Code è la soluzione a breve termine a un errore in Xcode [#6646](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6646).  Stiamo lavorando a una soluzione a lungo termine.
+    > Deselezionare Strip Engine Code è la soluzione a breve termine per un errore in Xcode [#6646](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6646).  Stiamo lavorando a una soluzione a lungo termine.
 
 1. Compilare ed eseguire la scena
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Impostazioni della fotocamera AR unity](../features/camera-system/unity-ar-camera-settings.md)
+- [Impostazioni della fotocamera unity AR](../features/camera-system/unity-ar-camera-settings.md)

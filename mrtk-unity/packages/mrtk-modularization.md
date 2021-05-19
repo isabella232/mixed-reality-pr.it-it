@@ -1,82 +1,82 @@
 ---
-title: MRTK_Modularization
+title: Modularizzazione di MRTK
 description: Descrive la componentizzazione in MRTK.
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 7d8c78e3b6f6e119fcf767c9280ec276a3933d68
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 04b2e6155e591a918b95aed20961a0450afe5f43
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104682964"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144422"
 ---
-# <a name="mixed-reality-toolkit-componentization"></a>Componentizzazione del Toolkit di realtà mista
+# <a name="mixed-reality-toolkit-componentization"></a>Componentizzazione di Mixed Reality Toolkit
 
-Una delle nuove eccezionali funzionalità di Mixed Reality toolkit V2 è il miglioramento della componentizzazione. Laddove possibile, i singoli componenti sono isolati da tutti i livelli di base della base.
+Una delle nuove funzionalità principali di Mixed Reality Toolkit v2 è la componentizzazione migliorata. Laddove possibile, i singoli componenti sono isolati da tutti i componenti, ad esempio il livello principale della base.
 
-## <a name="minimized-dependencies"></a>Dipendenze minime
+## <a name="minimized-dependencies"></a>Dipendenze ridotte a icona
 
-MRTK V2 è stato intenzionalmente sviluppato per essere modulare e per ridurre al minimo le dipendenze tra i servizi di sistema (ad esempio, la consapevolezza spaziale).
+MRTK v2 è stato intenzionalmente sviluppato per essere modulare e per ridurre al minimo le dipendenze tra i servizi di sistema (ad esempio, la consapevolezza spaziale).
 
-A causa della natura di alcuni servizi di sistema (ad esempio, input e Teleportation), esiste un numero ridotto di dipendenze.
+A causa della natura di alcuni servizi di sistema (ad esempio, input e teletrasporto), esiste un numero ridotto di dipendenze.
 
-Sebbene sia previsto che i servizi necessitino di uno o più componenti del provider di dati, non vi sono collegamenti diretti tra di essi. Lo stesso vale per le funzionalità SDK (ad esempio, i componenti dell'interfaccia utente).
+Anche se è previsto che i servizi necessitino di uno o più componenti provider di dati, non sono presenti collegamenti diretti tra di essi. Lo stesso vale per le funzionalità dell'SDK (ad esempio, Interfaccia utente componenti).
 
-## <a name="component-communication"></a>Comunicazione componenti
+## <a name="component-communication"></a>Comunicazione dei componenti
 
-Per assicurarsi che non vi siano collegamenti diretti tra i componenti, MRTK V2 usa le interfacce per la comunicazione tra servizi, provider di dati e codice dell'applicazione. Queste interfacce sono definite in e tutte le comunicazioni vengono instradate tramite il componente principale del Toolkit di realtà mista.
+Per assicurarsi che non siano presenti collegamenti diretti tra i componenti, MRTK v2 usa le interfacce per comunicare tra servizi, provider di dati e codice dell'applicazione. Queste interfacce sono definite in e tutte le comunicazioni vengono indirizzate tramite il componente principale di Mixed Reality Toolkit.
 
-![Uso del sistema di riconoscimento spaziale tramite le interfacce](../features/images/packaging/AccessingViaInterfaces.png)
+![Uso del sistema di consapevolezza spaziale tramite interfacce](../features/images/packaging/AccessingViaInterfaces.png)
 
-## <a name="minimizing-mrtk-import-footprint"></a>Riduzione del footprint di importazione MRTK
+## <a name="minimizing-mrtk-import-footprint"></a>Riduzione al minimo del footprint di importazione di MRTK
 
-A questo punto, il MRTK viene importato come singolo pacchetto di base (ignorando per un momento l'esistenza del pacchetto di esempi, che è un pacchetto completamente facoltativo). È possibile ridurre questo footprint riducendo manualmente i file importati, anche se si tratta di un processo estremamente manuale senza una guida ben definita.
+A questo punto, MRTK viene importato come pacchetto di base singolo(ignorando per un momento l'esistenza del pacchetto examples, che è un pacchetto completamente facoltativo). È possibile ridurre questo footprint riducendo manualmente i file importati, anche se si tratta di un processo altamente manuale che non ha una guida ben definita.
 
-È possibile deselezionare gli elementi arbitrari durante l'importazione del pacchetto di base. Tuttavia, non è consigliabile eseguire questa operazione in una fase iniziale dello sviluppo perché potrebbe interrompere la funzionalità. Dopo aver individuato il set di funzionalità finali di un'app, è possibile eliminare i provider e i servizi non necessari nelle cartelle seguenti:
+È possibile deselezionare elementi arbitrari durante l'importazione del pacchetto Foundation. Tuttavia, non è consigliabile eseguire questa operazione in una fase iniziale dello sviluppo perché potrebbe interrompere la funzionalità. Dopo aver calcolato il set di funzionalità finale di un'app, è possibile eliminare i provider e i servizi non necessari nelle cartelle seguenti:
 
-- MRTK/servizi
-- MRTK/provider
-- MRTK/SDK/funzionalità
+- MRTK/Services
+- MRTK/Providers
+- MRTK/SDK/Funzionalità
 
 > [!NOTE]
-> MRTK V2. x **_richiede_** il contenuto della cartella assets/MRTK/core.
+> MRTK v2.x **_richiede_** il contenuto della cartella Assets/MRTK/Core.
 
 ## <a name="upcoming-features"></a>Funzionalità future
 
 ### <a name="application-architecture"></a>Architettura dell'applicazione
 
-MRTK avrà il supporto per consentire la compilazione di applicazioni con un'ampia gamma di architetture, tra cui:
+MRTK includerà il supporto per consentire la costruzione di applicazioni con un'ampia gamma di architetture, tra cui:
 
-- [Localizzatore del servizio MixedRealityToolkit](#mixedrealitytoolkit-service-locator)
+- [Localizzatore di servizi MixedRealityToolkit](#mixedrealitytoolkit-service-locator)
 - [Singoli servizi](#individual-service-components)
-- [Localizzatore servizio personalizzato](#custom-service-locator)
+- [Localizzatore di servizi personalizzato](#custom-service-locator)
 - [Architettura ibrida](#hybrid-architecture)
 
-Quando si seleziona un'architettura di applicazione, è importante considerare la flessibilità di progettazione e le prestazioni dell'applicazione. Le architetture descritte di seguito non sono adatte per ogni applicazione.
+Quando si seleziona un'architettura dell'applicazione, è importante considerare la flessibilità di progettazione e le prestazioni dell'applicazione. Le architetture descritte di seguito non sono adatte per ogni applicazione.
 
-#### <a name="mixedrealitytoolkit-service-locator"></a>Localizzatore del servizio MixedRealityToolkit
+#### <a name="mixedrealitytoolkit-service-locator"></a>Localizzatore di servizi MixedRealityToolkit
 
-Il MRTK Abilita (e configura automaticamente) le scene dell'applicazione per usare il [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) componente di localizzazione del servizio predefinito. Questo componente include il supporto per la configurazione di sistemi e provider di dati MRTK tramite i controlli di configurazione e gestisce le durate dei componenti e i comportamenti principali (ad esempio, quando aggiornare).
+MRTK abilita (e configura automaticamente) le scene dell'applicazione per l'uso del componente [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) del localizzatore di servizi predefinito. Questo componente include il supporto per la configurazione di sistemi e provider di dati MRTK tramite controlli di configurazione e gestisce la durata dei componenti e i comportamenti principali (ad esempio, quando eseguire l'aggiornamento).
 
-Tutti i sistemi sono rappresentati nel controllo configurazione principale, indipendentemente dal fatto che siano presenti o non siano abilitati nel progetto. Per ulteriori informazioni, vedere la [Guida alla configurazione della realtà mista](../configuration/mixed-reality-configuration-guide.md) .
+Tutti i sistemi sono rappresentati nel controllo della configurazione principale, indipendentemente dal fatto che siano presenti o abilitati nel progetto. Per altre [informazioni, vedi la Guida alla](../configuration/mixed-reality-configuration-guide.md) configurazione della realtà mista.
 
 #### <a name="individual-service-components"></a>Singoli componenti del servizio
 
-Alcuni sviluppatori hanno espresso il desiderio di includere singoli componenti del servizio nella gerarchia della scena dell'applicazione. Per abilitare questo utilizzo, i servizi dovranno essere incapsulati in un registrar personalizzato o essere autofirmati o autogestiti.
+Alcuni sviluppatori hanno espresso il desiderio di includere singoli componenti del servizio nella gerarchia della scena dell'applicazione. Per abilitare questo utilizzo, i servizi dovranno essere incapsulati in un registrar personalizzato o essere autoregistrati/autogestiti.
 
-Un servizio di registrazione automatica implementa [`IMixedRealityServiceRegistrar`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) e registra se stesso in modo che il codice dell'applicazione possa individuare l'istanza del servizio tramite un registro di sistema.
+Un servizio autoregistrato implementa e registra se stesso in modo che il codice dell'applicazione possa individuare l'istanza del servizio [`IMixedRealityServiceRegistrar`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) tramite un registro.
 
-Un servizio di gestione automatica può essere implementato come un oggetto singleton nella gerarchia della scena. Questo oggetto fornisce una proprietà di istanza che può essere utilizzata dal codice dell'applicazione per accedere direttamente alle funzionalità del servizio.
+Un servizio self-managing può essere implementato come oggetto singleton nella gerarchia della scena. Questo oggetto fornisce e la proprietà dell'istanza che il codice dell'applicazione può usare per accedere direttamente alle funzionalità del servizio.
 
-#### <a name="custom-service-locator"></a>Localizzatore servizio personalizzato
+#### <a name="custom-service-locator"></a>Localizzatore del servizio personalizzato
 
-Alcuni sviluppatori hanno richiesto la possibilità di creare un componente del localizzatore di servizi personalizzato. I localizzatori di servizi personalizzati implementano l' [`IMixedRealityServiceRegistrar`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) interfaccia e gestiscono il ciclo di vita e i comportamenti principali dei servizi attivi.
+Alcuni sviluppatori hanno richiesto la possibilità di creare un componente del localizzatore di servizi personalizzato. I localizzatori di servizi personalizzati implementano l'interfaccia e gestiscono il ciclo di vita e [`IMixedRealityServiceRegistrar`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) i comportamenti principali dei servizi attivi.
 
 #### <a name="hybrid-architecture"></a>Architettura ibrida
 
-MRTK supporterà un'architettura ibrida in cui gli sviluppatori possono combinare gli approcci precedenti in base alle esigenze o alle esigenze. Ad esempio, uno sviluppatore può iniziare con il [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) localizzatore del servizio e aggiungere un servizio di registrazione automatica.
+MrTK supporterà un'architettura ibrida in cui gli sviluppatori possono combinare gli approcci precedenti in base alle esigenze o alle esigenze. Ad esempio, uno sviluppatore può iniziare con [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) il localizzatore del servizio e aggiungere un servizio di registrazione autonoma.
 
 > [!NOTE]
-> Quando si opta per un'architettura ibrida, è importante tenere presente qualsiasi duplicazione del lavoro (ad esempio, l'acquisizione dei dati del controller da più componenti).
+> Quando si sceglie un'architettura ibrida, è importante tenere presente qualsiasi duplicazione del lavoro ,ad esempio l'acquisizione dei dati del controller da più componenti.

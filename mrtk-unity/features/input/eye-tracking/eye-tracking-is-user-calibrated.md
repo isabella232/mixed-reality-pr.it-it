@@ -1,62 +1,62 @@
 ---
-title: EyeTracking_IsUserCalibrated
-description: Come configurare la calibrazione degli occhi degli utenti in MRTK
+title: Calibrazione oculare
+description: Come configurare la calibrazione dell'occhio utente in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, EyeTracking, calibrazione,
-ms.openlocfilehash: 608625ba5a9a1b94b9660be7c5caa0bb3f0c305b
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, EyeTracking, Calibrazione,
+ms.openlocfilehash: d7ae9885b77798b44b3d63bb7f92283658e05411
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550531"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144005"
 ---
-# <a name="eye-calibration"></a>Calibrazione degli occhi
+# <a name="eye-calibration"></a>Calibrazione oculare
 
-![Screenshot della notifica di calibrazione degli occhi](../../images/eye-tracking/mrtk_et_calibration_notification_example.jpg)
+![Screenshot della notifica di calibrazione oculare](../../images/eye-tracking/mrtk_et_calibration_notification_example.jpg)
 
 ## <a name="overview"></a>Panoramica
 
-Se il rilevamento degli occhi è una parte fondamentale dell'esperienza dell'app, è possibile che si voglia assicurarsi che la calibrazione degli occhi dell'utente sia valida.
-Il motivo principale per cui non è valido è che l'utente ha scelto di ignorare la calibrazione del rilevamento degli occhi quando si inserisce il dispositivo.
+Se il tracciamento oculare è una parte fondamentale dell'esperienza dell'app, è possibile assicurarsi che la calibrazione oculare dell'utente sia valida.
+Il motivo principale per cui non è valido è che l'utente ha scelto di ignorare la calibrazione del tracciamento oculare durante l'inserimento del dispositivo.
 
-In questa pagina vengono illustrati gli elementi seguenti:
+Questa pagina illustra quanto segue:
 
-- Viene descritto come rilevare che un utente è a occhio calibrato
-- Fornisce un esempio su come attivare una notifica utente per indicare all'utente di esaminare la calibrazione degli occhi
-  - Ignora automaticamente la notifica se la calibrazione dell'occhio diventa valida
-  - Ignora manualmente la notifica se l'utente sceglie di continuare senza calibrazione
+- Descrive come rilevare che un utente è calibrato dagli occhi
+- Fornisce un esempio di come attivare una notifica utente per indicare all'utente di eseguire la calibrazione oculare
+  - Ignora automaticamente la notifica se la calibrazione oculare diventa valida
+  - Ignorare manualmente la notifica se l'utente sceglie di continuare senza calibrazione
 
-### <a name="how-to-detect-the-eye-calibration-state"></a>Come rilevare lo stato della taratura degli occhi
+### <a name="how-to-detect-the-eye-calibration-state"></a>Come rilevare lo stato di calibrazione oculare
 
-La configurazione di rilevamento degli occhi in MRTK viene configurata tramite l' [`IMixedRealityEyeGazeProvider`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityEyeGazeProvider) interfaccia.
+La configurazione del tracciamento oculare in MRTK viene configurata tramite [`IMixedRealityEyeGazeProvider`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityEyeGazeProvider) l'interfaccia .
 
-L'uso di [CoreServices. InputSystem. EyeGazeProvider](eye-tracking-eye-gaze-provider.md) fornisce l'implementazione predefinita del provider di sguardi registrata nel Toolkit in fase di esecuzione. `IMixedRealityEyeGazeProvider.IsEyeGazeValid` Restituisce un `bool?` valore che è null se non sono ancora disponibili informazioni dallo strumento di analisi degli occhi.
-Una volta ricevuti i dati, verrà restituito true o false per indicare che la calibrazione del rilevamento occhi dell'utente è valida o non valida.
+[L'uso di CoreServices.InputSystem.EyeGazeProvider fornisce](eye-tracking-eye-gaze-provider.md) l'implementazione predefinita del provider gaze registrato nel toolkit in fase di esecuzione. `IMixedRealityEyeGazeProvider.IsEyeGazeValid` restituisce un valore null se non sono ancora disponibili informazioni dal `bool?` tracciamento oculare.
+Dopo la ricezione, i dati restituiranno true o false per indicare che la calibrazione del tracciamento oculare dell'utente è valida o non valida.
 
-### <a name="sample-eye-calibration-notification---step-by-step"></a>Esempio di notifica di calibrazione degli occhi-procedura dettagliata
+### <a name="sample-eye-calibration-notification---step-by-step"></a>Notifica di calibrazione oculare di esempio - procedura dettagliata
 
-1. Aprire il pacchetto di esempio di rilevamento degli occhi di MRTK (assets/MRTK/examples/Demos/EyeTracking)
+1. Aprire il pacchetto di esempio di tracciamento oculare MRTK (Assets/MRTK/Examples/Demos/EyeTracking)
 
-2. Caricare la scena _EyeTrackingDemo-00-RootScene. Unity_
+2. Caricare _la scena EyeTrackingDemo-00-RootScene.unity_
 
-3. Vedere _EyeCalibrationChecker_:
-   - In questa scena è già presente un esempio per rilevare se l'utente corrente è calibrato nell' *oggetto del gioco _EyeCalibrationChecker_*.
-Si tratta semplicemente di un numero ridotto di mesh di testo che include alcuni trigger aggiuntivi per la fusione della notifica. Sono incluse le dimensioni e l'opacità che aumentano all'attivazione.
-Quando la notifica viene rilasciata, diminuisce lentamente le sue dimensioni e si dissolve in uscita.
+3. Vedere _EyeCalibrationChecker:_
+   - In questa scena è già disponibile un esempio per rilevare se l'utente corrente è calibrato nell'oggetto gioco *_EyeCalibrationChecker_*.
+Contiene semplicemente alcune mesh di testo e include alcuni trigger aggiuntivi per la fusione della notifica in e in uscita. Ciò include l'aumento lento delle dimensioni e dell'opacità all'attivazione.
+Una volta chiusa, la notifica diminuisce lentamente le dimensioni e si dissolve in uscita.
 
-   - Collegato all' *oggetto gioco _EyeCalibrationChecker_* è lo script [EyeCalibrationChecker](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.EyeCalibrationChecker) che espone due eventi Unity:
+   - Associato *_all'oggetto gioco EyeCalibrationChecker_* è lo script [EyeCalibrationChecker](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.EyeCalibrationChecker) che espone due eventi unity:
       - `OnEyeCalibrationDetected()`
       - `OnNoEyeCalibrationDetected()`
 
-   - Questi eventi vengono attivati solo se lo stato della calibrazione viene modificato. Di conseguenza, se un utente sceglie di ignorare la notifica, la notifica non verrà più visualizzata fino a quando non
+   - Questi eventi verranno attivati solo se lo stato di calibrazione cambia. Di conseguenza, se un utente sceglie di ignorare la notifica, la notifica non verrà visualizzata di nuovo fino a quando
       - L'app viene riavviata
-      - È stato rilevato un utente valido e quindi un nuovo utente non calibrato ha inserito il dispositivo
+      - È stato rilevato un utente valido e quindi un nuovo utente non certificato ha inserito il dispositivo
 
-   - Per verificare se le animazioni e gli eventi vengono attivati correttamente, lo script EyeCalibrationChecker possiede un `bool editorTestUserIsCalibrated` flag. Ad esempio, in caso di esecuzione nell'editor di Unity, è possibile eseguire un test:
-      1. Indica se la notifica viene visualizzata automaticamente quando lo stato della calibrazione passa da true a false
-      1. Indica se la notifica viene rilasciata automaticamente quando lo stato viene modificato da false a true.
+   - Per verificare se le animazioni e gli eventi vengono attivati correttamente, lo script EyeCalibrationChecker possiede un `bool editorTestUserIsCalibrated` flag. Ad esempio, quando si esegue nell'editor di Unity, è possibile testare:
+      1. Indica se la notifica viene visualizzata automaticamente quando lo stato di calibrazione cambia da true a false
+      1. Indica se la notifica viene chiusa automaticamente quando lo stato cambia da false a true.
 
 ```c#
     private bool? prevCalibrationStatus = null;
@@ -89,7 +89,7 @@ Quando la notifica viene rilasciata, diminuisce lentamente le sue dimensioni e s
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Panoramica di MRTK Eye Tracking](eye-tracking-main.md)
-- [Configurazione di MRTK Eye Tracking](eye-tracking-basic-setup.md)
-- [MRTK la verifica degli occhi tramite codice](eye-tracking-eye-gaze-provider.md)
-- [Documentazione di HoloLens 2 Eye Tracking](/windows/mixed-reality/eye-tracking)
+- [Panoramica del tracciamento oculare di MRTK](eye-tracking-main.md)
+- [Configurazione del tracciamento oculare di MRTK](eye-tracking-basic-setup.md)
+- [Tracciamento oculare MRTK tramite codice](eye-tracking-eye-gaze-provider.md)
+- [HoloLens 2 di tracciamento oculare](/windows/mixed-reality/eye-tracking)

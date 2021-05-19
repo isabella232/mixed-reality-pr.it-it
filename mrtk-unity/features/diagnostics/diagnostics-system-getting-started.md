@@ -1,59 +1,59 @@
 ---
-title: DiagnosticsSystemGettingStarted
+title: Sistema di diagnostica Attività iniziali
 description: documentazione per abilitare e disabilitare la diagnostica in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: ff8ee7bc50da66477544677d57b8d7c75bf0a1cd
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 66d68902dd9ffa36a5b30c1130a8640d154ac5e1
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104681334"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144726"
 ---
 # <a name="diagnostic-system"></a>Sistema di diagnostica
 
-Il sistema di diagnostica del Toolkit di realtà mista fornisce strumenti di diagnostica che vengono eseguiti all'interno dell'applicazione per consentire l'analisi dei problemi dell'applicazione.
+Mixed Reality Toolkit Diagnostic System fornisce strumenti di diagnostica che vengono eseguiti all'interno dell'applicazione per consentire l'analisi dei problemi dell'applicazione.
 
-Il primo rilascio del sistema di diagnostica contiene il [Profiler visivo](using-visual-profiler.md) che consente di analizzare i problemi di prestazioni durante l'uso dell'applicazione.
+La prima versione del sistema di diagnostica contiene [Visual Profiler](using-visual-profiler.md) per consentire l'analisi dei problemi di prestazioni durante l'uso dell'applicazione.
 
-## <a name="getting-started"></a>Introduzione
+## <a name="getting-started"></a>Per iniziare
 
 > [!IMPORTANT]
-> È consigliabile **_che_** il sistema di diagnostica sia abilitato nell'intero ciclo di sviluppo del prodotto e sia disabilitato come Ultima modifica prima della compilazione e del rilascio della versione finale.
+> È **_consigliabile che_** il sistema di diagnostica sia abilitato per tutto il ciclo di sviluppo del prodotto e disabilitato come ultima modifica prima di compilare e rilasciare la versione finale.
 
-Per iniziare a usare il sistema di diagnostica, è necessario eseguire due passaggi principali.
+Esistono due passaggi chiave per iniziare a usare il sistema di diagnostica.
 
 1. [Abilitare](#enable-diagnostics) il sistema di diagnostica
-2. [Configurare](#configure-diagnostic-options) le opzioni di diagnostica
+2. [Configurare le](#configure-diagnostic-options) opzioni di diagnostica
 
 ### <a name="enable-diagnostics"></a>Abilitare la diagnostica
 
-Il sistema di diagnostica è gestito dall'oggetto MixedRealityToolkit (o da un altro componente di [registrazione del servizio](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) ).
+Il sistema di diagnostica è gestito dall'oggetto MixedRealityToolkit (o da un altro [componente registrar](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) del servizio).
 
-I passaggi seguenti presuppongono l'uso dell'oggetto MixedRealityToolkit. I passaggi necessari per altri registrar di servizi potrebbero essere diversi.
+La procedura seguente presuppone l'uso dell'oggetto MixedRealityToolkit. I passaggi necessari per altri registrar del servizio possono essere diversi.
 
 1. Selezionare l'oggetto MixedRealityToolkit nella gerarchia della scena.
 
-    ![Gerarchia della scena configurata MRTK](../images/MRTK_ConfiguredHierarchy.png)
+    ![Gerarchia della scena configurata di MRTK](../images/MRTK_ConfiguredHierarchy.png)
 
-1. Passare al pannello di controllo nella sezione del sistema di diagnostica e selezionare Abilita.
+1. Passare al pannello Inspector (Controllo) alla sezione Diagnostics System (Sistema di diagnostica) e selezionare Enable (Abilita)
 1. Selezionare l'implementazione del sistema di diagnostica
 
     ![Selezionare l'implementazione del sistema di diagnostica](../images/diagnostics/DiagnosticsSelectSystemType.png)
 
 > [!NOTE]
-> Gli utenti del profilo predefinito, `DefaultMixedRealityToolkitConfigurationProfile` (assets/MRTK/SDK/Profiles), avranno il sistema di diagnostica preconfigurato per l'uso dell' [`MixedRealityDiagnosticsSystem`](xref:Microsoft.MixedReality.Toolkit.Diagnostics.MixedRealityDiagnosticsSystem) oggetto.
+> Gli utenti del profilo predefinito `DefaultMixedRealityToolkitConfigurationProfile` (Assets/MRTK/SDK/Profiles) avranno il sistema di diagnostica preconfigurato per l'uso [`MixedRealityDiagnosticsSystem`](xref:Microsoft.MixedReality.Toolkit.Diagnostics.MixedRealityDiagnosticsSystem) dell'oggetto.
 
 ### <a name="configure-diagnostic-options"></a>Configurare le opzioni di diagnostica
 
-Il sistema di diagnostica utilizza un profilo di configurazione per specificare i componenti da visualizzare e per configurarne le impostazioni. Per ulteriori informazioni relative alle impostazioni del componente disponibili, vedere [configurazione del sistema di diagnostica](configuring-diagnostics.md) .
+Il sistema di diagnostica usa un profilo di configurazione per specificare i componenti da visualizzare e per configurarne le impostazioni. Per altre [informazioni relative alle impostazioni dei](configuring-diagnostics.md) componenti disponibili, vedere Configurazione del sistema di diagnostica.
 
 > [!IMPORTANT]
-> Sebbene sia possibile usare la modalità di riproduzione di Unity durante lo sviluppo di applicazioni senza la necessità di eseguire la procedura di compilazione e distribuzione, è importante valutare i risultati del sistema di diagnostica usando un'applicazione compilata in esecuzione nell'hardware e nella piattaforma di destinazione.
+> Sebbene sia possibile usare la modalità di riproduzione di Unity durante lo sviluppo di applicazioni senza richiedere i passaggi di compilazione e distribuzione, è importante valutare i risultati del sistema di diagnostica usando un'applicazione compilata in esecuzione nell'hardware e nella piattaforma di destinazione.
 >
-> La diagnostica delle prestazioni, ad esempio il [Profiler visuale](using-visual-profiler.md), potrebbe non riflettere accuratamente le prestazioni effettive delle applicazioni quando vengono eseguite dall'interno dell'editor.
+> La diagnostica delle prestazioni, ad esempio [Visual Profiler,](using-visual-profiler.md)potrebbe non riflettere in modo accurato le prestazioni effettive dell'applicazione quando viene eseguita dall'editor.
 
 ## <a name="see-also"></a>Vedi anche
 

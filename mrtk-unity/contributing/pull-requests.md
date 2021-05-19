@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, richiesta pull,
-ms.openlocfilehash: 008e719cd2fd3c854cbbe6876090b2de96f369be
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.openlocfilehash: 7fb0dea4616acbf91b0459397f4a05f05a167947
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489231"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144741"
 ---
 # <a name="pull-requests"></a>Richieste pull
 
@@ -20,7 +20,7 @@ Se non si è mai contribuito a un progetto Microsoft in precedenza, potrebbe ess
 Un commento nella richiesta pull consente di sapere se lo si desidera.
 
 > [!IMPORTANT]
-> Se si è un dipendente Microsoft e non si è membri dell'organizzazione Microsoft in [GitHub,](https://github.com/Microsoft)collegare gli account Microsoft e GitHub sulla rete virtuale visitando [Open Source](https://opensource.microsoft.com/) in Microsoft prima di iniziare la richiesta pull. Ci sono alcune cose da fare in anticipo.
+> Se si è un dipendente Microsoft e non si è membri dell'organizzazione Microsoft in [GitHub,](https://github.com/Microsoft)collegare gli account Microsoft e GitHub sulla rete virtuale visitando [Open Source](https://opensource.microsoft.com/) in Microsoft prima di iniziare la richiesta pull. È necessario eseguire alcune cose da eseguire in anticipo.
 
 ## <a name="creating-a-pull-request"></a>Creazione di una richiesta pull
 
@@ -30,14 +30,14 @@ Leggere le linee guida e assicurarsi che la richiesta pull soddisfi le linee gui
 
 * Assicurarsi di fare riferimento a qualsiasi problema/richiesta di funzionalità o attività a cui è correlata la richiesta pull.
 * Controllare che la richiesta pull contenga solo file/modifiche correlate alla richiesta pull.
-* Controllare che la documentazione sia aggiornata e inclusa. Controllare che tutti i campi pubblici hanno commenti.
+* Verificare che la documentazione sia aggiornata e inclusa. Verificare che tutti i campi pubblici hanno commenti.
 * Se si aggiunge una nuova funzionalità, verificare che i test siano inclusi per convalidare la funzionalità (vedere [UnitTests).](../contributing/unit-tests.md)
 * Se si corregge un bug, scrivere un test per verificare la correzione di bug.
 
-I revisori del progetto esaminano le modifiche. L'obiettivo è esaminare tutte le modifiche entro tre giorni lavorativi. Risolvere eventuali commenti di revisione, eseguire il push nel ramo dell'argomento e pubblicare un commento per informarci che ci sono nuovi contenuti da rivedere.
+I revisori del progetto esaminano le modifiche. L'obiettivo è esaminare tutte le modifiche entro tre giorni lavorativi. Risolvere eventuali commenti di revisione, eseguire il push nel ramo dell'argomento e pubblicare un commento per informarci che ci sono nuovi commenti da rivedere.
 
 > [!NOTE]
-> Tutte le richieste pull inviate al progetto verranno anche esaminate in base alla guida agli standard di codifica [MRTK,](../contributing/coding-guidelines.md)quindi è necessario esaminarne le informazioni prima di inviare la richiesta pull per garantire un processo uniforme.
+> Tutte le richieste pull inviate al progetto verranno esaminate anche in base alla guida agli standard di codifica [MRTK,](../contributing/coding-guidelines.md)quindi è necessario esaminarne le informazioni prima di inviare la richiesta pull per garantire un processo uniforme.
 
 ## <a name="pull-request-guidelines"></a>Linee guida per le richieste pull
 
@@ -45,7 +45,7 @@ Queste linee guida si basano sulle [procedure di progettazione di Google.](https
 
 ### <a name="keep-pull-requests-small"></a>Mantenere piccole le richieste pull
 
-Le PR più piccole vengono esaminate in modo più rapido e approfondito, hanno meno probabilità di introdurre bug, sono più facili da eseguire il rollback e più facili da unire.
+Le PR più piccole vengono esaminate in modo più rapido e approfondito, hanno meno probabilità di introdurre bug, più facile da eseguire il rollback e più facili da unire.
 
 Le richieste pull devono essere sufficientemente piccole da poter essere esaminate da un tecnico in meno di 30 minuti. Provare a apportare una modifica minima che indirizzi solo una cosa. Se è necessario creare una richiesta pull di grandi dimensioni, suddividerla in più PR che vanno nel ramo locale o in un ramo di funzionalità di MRTK. Evitare di aggiungere nuovi asset (ad esempio fbx, file obj) e invece di usare di nuovo gli asset esistenti.
 

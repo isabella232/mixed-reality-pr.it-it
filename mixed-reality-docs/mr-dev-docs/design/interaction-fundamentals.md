@@ -7,12 +7,12 @@ ms.date: 04/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realtà mista, Sguardo fisso, selezione della destinazione con lo sguardo, interazione, progettazione, hololens, MMR, multimodale, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens
-ms.openlocfilehash: 37ac7475172977c8741c17817568cc9b5ad2a4e5
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: cd879ff94896f503f70873f37a5c18866b0dbac7
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97847295"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143535"
 ---
 # <a name="introducing-instinctual-interactions"></a>Introduzione alle interazioni istintive
 
@@ -28,6 +28,12 @@ Anche se riconosciamo che possono esistere migliaia di interazioni efficaci, coi
 * Materiale specifico incentrato sui tre principali modelli di interazione e sui componenti e schemi necessari per ciascun modello.
 * Istruzioni supplementari su altri vantaggi offerti dalla piattaforma.
 * Indicazioni di carattere generale, utili per selezionare il modello di interazione appropriato per uno scenario di sviluppo specifico.
+
+## <a name="basic-hand-tracking-and-instinctual-interactions-demo"></a>Demo di base del rilevamento delle mani e delle interazioni istintiva
+
+Vedere di seguito la demo video [Designing Holograms - Head Tracking and Eye Tracking]() (Progettazione di ologrammi - Rilevamento testina e tracciamento oculare) e passare ad argomenti più specifici:
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
 
 ## <a name="multimodal-interaction-models"></a>Modelli di interazione multimodale
 
