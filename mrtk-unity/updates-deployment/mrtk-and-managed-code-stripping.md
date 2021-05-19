@@ -1,27 +1,27 @@
 ---
-title: MRTK_and_managed_code_stripping
-description: Rimozione del codice in MRTK e Unity
+title: MRTK e stripping del codice gestito
+description: Stripping del codice in MRTK e Unity
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 7e80f25f6e5af7fe851bf9106ebbd07dece5dbad
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 09e5140fd9585c19eacac5ba937eaf4ea8f2a8ea
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104695908"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143736"
 ---
-# <a name="mrtk-and-unity-managed-code-stripping"></a><span data-ttu-id="d2922-104">Rimozione del codice gestito di MRTK e Unity</span><span class="sxs-lookup"><span data-stu-id="d2922-104">MRTK and Unity managed code stripping</span></span>
+# <a name="mrtk-and-unity-managed-code-stripping"></a><span data-ttu-id="3fafe-104">Stripping del codice gestito MRTK e Unity</span><span class="sxs-lookup"><span data-stu-id="3fafe-104">MRTK and Unity managed code stripping</span></span>
 
-<span data-ttu-id="d2922-105">Quando si usa il back-end di scripting IL2CPP di Unity (facoltativo in Unity 2018,4, richiesto in 2019 e versioni successive), si verifica la [rimozione del codice gestito](https://docs.unity3d.com/Manual/ManagedCodeStripping.html) .</span><span class="sxs-lookup"><span data-stu-id="d2922-105">When using Unity's IL2CPP scripting backend (optional in Unity 2018.4, required in 2019 and newer), [managed code stripping](https://docs.unity3d.com/Manual/ManagedCodeStripping.html) occurs.</span></span>
-<span data-ttu-id="d2922-106">Il linker di Unity esegue questo processo per ridurre le dimensioni binarie e per ridurre i tempi di compilazione.</span><span class="sxs-lookup"><span data-stu-id="d2922-106">Unity's linker performs this process to reduce binary size as well as to decrease build times.</span></span>
+<span data-ttu-id="3fafe-105">Quando si usa il back-end di scripting IL2CPP di Unity (facoltativo in Unity 2018.4, obbligatorio nella versione 2019 e nelle più recente), si verifica lo [stripping](https://docs.unity3d.com/Manual/ManagedCodeStripping.html) del codice gestito.</span><span class="sxs-lookup"><span data-stu-id="3fafe-105">When using Unity's IL2CPP scripting backend (optional in Unity 2018.4, required in 2019 and newer), [managed code stripping](https://docs.unity3d.com/Manual/ManagedCodeStripping.html) occurs.</span></span>
+<span data-ttu-id="3fafe-106">Il linker di Unity esegue questo processo per ridurre le dimensioni binarie e per ridurre i tempi di compilazione.</span><span class="sxs-lookup"><span data-stu-id="3fafe-106">Unity's linker performs this process to reduce binary size as well as to decrease build times.</span></span>
 
-<span data-ttu-id="d2922-107">Il Toolkit di realtà mista Usa un file, `link.xml` , per influenzare il modo in cui il linker di Unity elabora gli assembly MRTK.</span><span class="sxs-lookup"><span data-stu-id="d2922-107">The Mixed Reality Toolkit uses a file, `link.xml`, to influence how Unity's linker processes MRTK assemblies.</span></span> <span data-ttu-id="d2922-108">Questo file, descritto nella documentazione completa di [Unity](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML), fornisce al linker istruzioni su come mantenere il codice quando non è possibile dedurre l'utilizzo (ad esempio, usato tramite Reflection).</span><span class="sxs-lookup"><span data-stu-id="d2922-108">This file, described in full in [Unity's documentation](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML), provides the linker with instructions on how to preserve code when its usage cannot be inferred (ex: used via reflection).</span></span>
+<span data-ttu-id="3fafe-107">Mixed Reality Toolkit usa un file, , per influenzare il modo in cui il linker di `link.xml` Unity elabora gli assembly MRTK.</span><span class="sxs-lookup"><span data-stu-id="3fafe-107">The Mixed Reality Toolkit uses a file, `link.xml`, to influence how Unity's linker processes MRTK assemblies.</span></span> <span data-ttu-id="3fafe-108">Questo file, descritto in modo completo nella documentazione di Unity, fornisce al linker istruzioni su come mantenere il codice quando non è possibile dedurne [l'utilizzo](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML)(ad esempio, usato tramite reflection).</span><span class="sxs-lookup"><span data-stu-id="3fafe-108">This file, described in full in [Unity's documentation](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML), provides the linker with instructions on how to preserve code when its usage cannot be inferred (ex: used via reflection).</span></span>
 
-<span data-ttu-id="d2922-109">Come piattaforma flessibile e personalizzabile, MRTK crea il `link.xml` file in in `Assets/MixedRealityToolkit.Generated` caso di importazione, se non è presente.</span><span class="sxs-lookup"><span data-stu-id="d2922-109">As a flexible and customizable platform, MRTK creates the `link.xml` file in `Assets/MixedRealityToolkit.Generated` on import, if it is found to not exist.</span></span> <span data-ttu-id="d2922-110">I file di link.xml preesistenti non vengono sovrascritti.</span><span class="sxs-lookup"><span data-stu-id="d2922-110">Pre-existing link.xml files are not overwritten.</span></span> <span data-ttu-id="d2922-111">È consigliabile `link.xml` `link.xml.meta` aggiungere e al controllo della versione.</span><span class="sxs-lookup"><span data-stu-id="d2922-111">It is recommended that `link.xml` and `link.xml.meta` be added to version control.</span></span> <span data-ttu-id="d2922-112">Gli sviluppatori devono essere in grado di personalizzare `Assets/MixedRealityToolkit.Generated/link.xml` per soddisfare le esigenze del progetto.</span><span class="sxs-lookup"><span data-stu-id="d2922-112">Developers should feel free to customize `Assets/MixedRealityToolkit.Generated/link.xml` to meet the needs of the project.</span></span>
+<span data-ttu-id="3fafe-109">Come piattaforma flessibile e personalizzabile, MRTK crea il file in durante l'importazione, se non `link.xml` `Assets/MixedRealityToolkit.Generated` esiste.</span><span class="sxs-lookup"><span data-stu-id="3fafe-109">As a flexible and customizable platform, MRTK creates the `link.xml` file in `Assets/MixedRealityToolkit.Generated` on import, if it is found to not exist.</span></span> <span data-ttu-id="3fafe-110">I file di link.xml non vengono sovrascritti.</span><span class="sxs-lookup"><span data-stu-id="3fafe-110">Pre-existing link.xml files are not overwritten.</span></span> <span data-ttu-id="3fafe-111">È consigliabile aggiungere `link.xml` e al controllo della `link.xml.meta` versione.</span><span class="sxs-lookup"><span data-stu-id="3fafe-111">It is recommended that `link.xml` and `link.xml.meta` be added to version control.</span></span> <span data-ttu-id="3fafe-112">Gli sviluppatori devono essere in grado di `Assets/MixedRealityToolkit.Generated/link.xml` personalizzare per soddisfare le esigenze del progetto.</span><span class="sxs-lookup"><span data-stu-id="3fafe-112">Developers should feel free to customize `Assets/MixedRealityToolkit.Generated/link.xml` to meet the needs of the project.</span></span>
 
-<span data-ttu-id="d2922-113">Per impostazione predefinita, il file link.xml creato da MRTK conserva l'intero assembly illustrato nei dati seguenti.</span><span class="sxs-lookup"><span data-stu-id="d2922-113">By default, the link.xml file created by MRTK preserves the entirety of the assemblies shown in the following data.</span></span>
+<span data-ttu-id="3fafe-113">Per impostazione predefinita, link.xml file creato da MRTK mantiene l'intero assembly mostrato nei dati seguenti.</span><span class="sxs-lookup"><span data-stu-id="3fafe-113">By default, the link.xml file created by MRTK preserves the entirety of the assemblies shown in the following data.</span></span>
 
 ``` xml
 <linker> 
@@ -61,9 +61,9 @@ ms.locfileid: "104695908"
 </linker>
 ```
 
-<span data-ttu-id="d2922-114">Per ulteriori informazioni sul formato di file link.xml, consultare la documentazione di Unity.</span><span class="sxs-lookup"><span data-stu-id="d2922-114">For more information on the link.xml file format, please refer to the Unity documentation.</span></span>
+<span data-ttu-id="3fafe-114">Per altre informazioni sul formato link.xml file, vedere la documentazione di Unity.</span><span class="sxs-lookup"><span data-stu-id="3fafe-114">For more information on the link.xml file format, please refer to the Unity documentation.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="d2922-115">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="d2922-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3fafe-115">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="3fafe-115">See also</span></span>
 
-- [<span data-ttu-id="d2922-116">Unity: rimozione di codice gestito</span><span class="sxs-lookup"><span data-stu-id="d2922-116">Unity: Managed Code Stripping</span></span>](https://docs.unity3d.com/Manual/ManagedCodeStripping.html)
-- [<span data-ttu-id="d2922-117">Unity: collega file XML</span><span class="sxs-lookup"><span data-stu-id="d2922-117">Unity: Link XML file</span></span>](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML)
+- [<span data-ttu-id="3fafe-116">Unity: stripping del codice gestito</span><span class="sxs-lookup"><span data-stu-id="3fafe-116">Unity: Managed Code Stripping</span></span>](https://docs.unity3d.com/Manual/ManagedCodeStripping.html)
+- [<span data-ttu-id="3fafe-117">Unity: collegare un file XML</span><span class="sxs-lookup"><span data-stu-id="3fafe-117">Unity: Link XML file</span></span>](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML)
