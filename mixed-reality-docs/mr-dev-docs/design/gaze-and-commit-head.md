@@ -1,21 +1,21 @@
 ---
 title: Puntamento con la testa e commit
-description: Introduzione al modello di input Head-sguardi e commit, inclusi il ridimensionamento, la posizione e la stabilizzazione della destinazione.
+description: Introduzione al modello di input head-gaze e commit, tra cui ridimensionamento, posizionamento e stabilizzazione della destinazione.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
-keywords: Realtà mista, sguardo, targeting, interazione, progettazione, cuffie per realtà mista, cuffie di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, target, Focus, smoothing
-ms.openlocfilehash: a69b855e2246327affeeb0f771f565b94ea65cb2
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Realtà mista, sguardo, targeting dello sguardo, interazione, progettazione, visore per realtà mista, visore per realtà mista windows, visore per realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, destinazione, messa a fuoco, smoothing
+ms.openlocfilehash: 74f963a6b450d1fb7f1302886a01c12cf79ce28a
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582281"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196516"
 ---
 # <a name="head-gaze-and-commit"></a>Puntamento con la testa e commit
 
-_Head-sguardi e commit_ sono un caso speciale del modello di input [sguardo e commit](gaze-and-commit.md) che prevede la destinazione di un oggetto con la direzione di un utente. È possibile agire sulla destinazione con un input secondario, ad esempio il tocco di movimento della mano o il comando vocale "Select". 
+_Head-gaze and commit_ è un caso speciale del modello di input [gaze and commit](gaze-and-commit.md) che prevede la destinazione di un oggetto con una direzione di testa degli utenti. È possibile agire sulla destinazione con un input secondario, ad esempio il tocco dell'aria del movimento della mano o il comando vocale "Seleziona". 
 
 ## <a name="device-support"></a>Supporto di dispositivi
 
@@ -42,12 +42,20 @@ _Head-sguardi e commit_ sono un caso speciale del modello di input [sguardo e co
 
 ---
 
+## <a name="head-and-eye-tracking-design-concepts-demo"></a>Demo dei concetti di progettazione del rilevamento oculare e della testa
+
+Se si desidera vedere i concetti di progettazione di Head e Eye Tracking in azione, vedere la demo video **Designing Holograms - Head Tracking and Eye Tracking** (Progettazione di ologrammi - Rilevamento della testa e tracciamento oculare) di seguito. Al termine, continuare per un'analisi più dettagliata di argomenti specifici.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*Questo video è stato tratto dall'app "Designing Holograms" (Progettazione di ologrammi) HoloLens 2 app. Scaricare e usufruire dell'esperienza completa [qui.](https://aka.ms/dhapp)*
+
 ## <a name="target-sizing-and-feedback"></a>Dimensioni della destinazione e feedback
 
-Il vettore di sguardi a capo è stato visualizzato ripetutamente per poter essere usato per obiettivi mirati, ma spesso funziona meglio per il targeting lordo, acquisendo obiettivi più grandi. Le dimensioni di destinazione minime di 1 grado a 1,5 gradi consentono azioni utente riuscite nella maggior parte degli scenari, sebbene le destinazioni di 3 gradi consentano spesso una maggiore velocità. La dimensione che l'utente ha come destinazione è in realtà un'area 2D anche per gli elementi 3D, a seconda che la proiezione sia rivolta a tali elementi sia l'area di destinazione. Fornire un segnale saliente che un elemento è "attivo" (che è destinato all'utente) è utile. Questo può includere trattamenti quali effetti "hover" visibili, evidenziazioni audio o clic oppure un chiaro allineamento di un cursore con un elemento.
+Il vettore dello sguardo fisso della testa è stato ripetutamente indicato come utilizzabile per la destinazione fine, ma spesso funziona meglio per il targeting lordo, acquisendo obiettivi più grandi. Le dimensioni minime di destinazione da 1 a 1,5 gradi consentono azioni utente riuscite nella maggior parte degli scenari, anche se le destinazioni di 3 gradi spesso consentono una maggiore velocità. Le dimensioni di destinazione dell'utente sono effettivamente un'area 2D anche per gli elementi 3D, a seconda della proiezione che li sta affrontando, deve essere l'area di destinazione. È utile fornire un segnale saliente che un elemento è "attivo" (che l'utente sta indicando come destinazione). Può trattarsi di effetti visibili di "hover", evidenziazioni audio o clic o di un allineamento chiaro di un cursore con un elemento.
 
 ![Dimensioni ottimali della destinazione a una distanza di 2 metri](images/gazetargeting-size-1000px.jpg)<br>
-*Dimensioni di destinazione ottimali a distanza di 2 metri*
+*Dimensioni ottimali della destinazione a 2 metri di distanza*
 
 <br>
 
@@ -56,40 +64,40 @@ Il vettore di sguardi a capo è stato visualizzato ripetutamente per poter esser
 
 ## <a name="target-placement"></a>Posizionamento della destinazione
 
-Spesso gli utenti non riescono a trovare gli elementi dell'interfaccia utente che si trovano troppo alta o bassa nel campo di visualizzazione. La maggior parte delle loro attenzioni si basa su aree intorno al proprio obiettivo principale, che è approssimativamente a livello di occhio. Può pertanto rivelarsi utile posizionare la maggior parte delle destinazioni in una fascia ragionevole attorno al livello degli occhi. Data la tendenza per gli utenti a concentrarsi su un'area visiva relativamente piccola in qualsiasi momento (il cono di attenzione della visione è approssimativamente di 10 gradi), raggruppare gli elementi dell'interfaccia in modo che siano correlati concettualmente possono usare comportamenti di concatenamento dell'attenzione da elemento a elemento quando un utente sposta il proprio sguardo attraverso un'area. Quando progetti l'interfaccia utente, tieni presente la grande differenza potenziale di campo visivo tra i visori HoloLens e i visori VR immersive.
+Gli utenti spesso non riescono a trovare gli elementi dell'interfaccia utente che si trovano troppo in alto o in basso nel campo di visualizzazione. La maggior parte della loro attenzione finisce sulle aree intorno alla loro attenzione principale, che è approssimativamente a livello oculare. Può pertanto rivelarsi utile posizionare la maggior parte delle destinazioni in una fascia ragionevole attorno al livello degli occhi. Data la tendenza degli utenti a concentrarsi su un'area visiva relativamente piccola in qualsiasi momento (il cono di vista attento è di circa 10 gradi), il raggruppamento degli elementi dell'interfaccia utente nella misura concettuale in cui sono correlati può usare comportamenti di concatenamento dell'attenzione da elemento a elemento quando un utente sposta lo sguardo fisso in un'area. Quando progetti l'interfaccia utente, tieni presente la grande differenza potenziale di campo visivo tra i visori HoloLens e i visori VR immersive.
 
 ![Esempio di elementi dell'interfaccia utente raggruppati per facilitare la selezione della destinazione con lo sguardo fisso in Galaxy Explorer](images/gazetargeting-grouping-1000px.jpg)<br>
 *Esempio di elementi dell'interfaccia utente raggruppati per facilitare la selezione della destinazione con lo sguardo fisso in Galaxy Explorer*
 
-## <a name="improving-targeting-behaviors"></a>Miglioramento dei comportamenti di selezione della destinazione
+## <a name="improving-targeting-behaviors&quot;></a>Miglioramento dei comportamenti di selezione della destinazione
 
-Se è possibile determinare o approssimarsi in modo accurato gli obiettivi dell'utente, può essere utile accettare i tentativi di interazione Near Miss come se fossero destinati correttamente. Ecco alcuni metodi efficaci che possono essere incorporati in esperienze di realtà mista:
+Se l'intento dell'utente di specificare come destinazione un elemento può essere determinato o approssimato in modo molto approssimativo, può essere utile accettare tentativi di interazione quasi non riusciti come se fossero stati indirizzati correttamente. Ecco alcuni metodi di successo che possono essere incorporati nelle esperienze di realtà mista:
 
-### <a name="head-gaze-stabilization-gravity-wells"></a>Stabilizzazione del puntamento con la testa ("pozzi di gravità")
+### <a name=&quot;head-gaze-stabilization-gravity-wells&quot;></a>Stabilizzazione del puntamento con la testa (&quot;pozzi di gravità")
 
-Questa operazione deve essere attivata la maggior parte o tutto il tempo. Questa tecnica consente di rimuovere le instabilità naturale e del collo che possono essere spostate dagli utenti a causa dei comportamenti di ricerca e di pronuncia.
+Questa opzione deve essere attivata per la maggior parte o per tutto il tempo. Questa tecnica rimuove gli instabilità naturali della testa e del collo che gli utenti potrebbero avere anche il movimento a causa dei comportamenti di aspetto e di pronuncia.
 
 ### <a name="closest-link-algorithms"></a>Algoritmi di collegamento più vicino
 
-Questi algoritmi funzionano meglio in aree con contenuto interattivo sparse. Se c'è una probabilità elevata che è possibile determinare ciò che un utente ha tentato di interagire, è possibile integrare le proprie capacità di destinazione supponendo un certo livello di INTENTITà.
+Questi algoritmi funzionano meglio nelle aree con contenuto interattivo di tipo sparse. Se esiste un'alta probabilità che sia possibile determinare con quale elemento un utente sta tentando di interagire, è possibile integrare le capacità di destinazione presupponendo un certo livello di finalità.
 
-### <a name="backdating-and-postdating-actions"></a>Azioni di Ridata e di backdating
+### <a name="backdating-and-postdating-actions"></a>Backdating e postdating actions
 
-Questo meccanismo è utile per le attività che richiedono velocità. Quando un utente passa attraverso una serie di manovre mirate e di attivazione alla velocità, è utile presupporre un certo scopo. È utile anche per consentire la mancata procedura di azione sulle destinazioni in cui l'utente si è concentrato leggermente prima o leggermente dopo il tocco (50 ms prima/dopo è stato efficace nei test iniziali).
+Questo meccanismo è utile per le attività che richiedono velocità. Quando un utente sta passando attraverso una serie di richieste di destinazione e attivazione a velocità elevata, è utile presupporre una certa finalità. È anche utile consentire ai passaggi non esigibili di agire sulle destinazioni che l'utente aveva in stato di interesse leggermente prima o dopo il tocco (50 ms prima/dopo erano efficaci nei primi test).
 
 ### <a name="smoothing"></a>Definizione di movimenti uniformi
 
-Questo meccanismo è utile per i movimenti di percorso, riducendo il lieve jitter e le oscillazioni a causa delle caratteristiche di movimento della testa naturale. Quando si smussano i movimenti del tracciato, è necessario arrotondare le dimensioni e la distanza dei movimenti anziché nel tempo.
+Questo meccanismo è utile per il pathing dei movimenti, riducendo i lievi instabilità e gli instabilità a causa delle caratteristiche naturali del movimento della testa. Quando si smussa sui movimenti tracciati, smussare in base alle dimensioni e alla distanza dei movimenti anziché nel tempo.
 
 ### <a name="magnetism"></a>Magnetismo
 
-Questo meccanismo può essere considerato come una versione più generale degli algoritmi di collegamento più vicini, ovvero disegnare un cursore verso una destinazione o semplicemente aumentare hitboxes, in modo visibile o meno, perché gli utenti si avvicinano a destinazioni potenziali usando una certa conoscenza del layout interattivo per migliorare l'approccio degli utenti. Questo può essere potente per le destinazioni di piccole dimensioni.
+Questo meccanismo può essere pensato come una versione più generale degli algoritmi di collegamento più vicini: il disegno di un cursore verso una destinazione o semplicemente l'aumento di hitbox, in modo visibile o meno, quando gli utenti si avvicinano alle destinazioni più probabili usando una certa conoscenza del layout interattivo per approcciare meglio la finalità dell'utente. Ciò può essere efficace per destinazioni di piccole dimensioni.
 
 ### <a name="focus-stickiness"></a>Spostamento dello stato attivo in base all'elemento di interesse corrente
 
-Quando si determinano gli elementi interattivi adiacenti da assegnare, lo stato attivo alla viscosità dello stato attivo fornisce una distorsione all'elemento attualmente attivo. Questo consente di ridurre i comportamenti di cambio dello stato attivo quando si esegue il mobile a un punto medio tra due elementi con rumore naturale.
+Quando si determinano gli elementi interattivi vicini a cui assegnare lo stato attivo, l'aderenza dello stato attivo fornisce una distorsione all'elemento attualmente attivo. Ciò consente di ridurre i comportamenti di cambio dello stato attivo irregolare quando si fluttua a un punto intermedio tra due elementi con disturbo naturale.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Interazione basata sullo sguardo](eye-gaze-interaction.md)
 * [Sguardo fisso e attesa](gaze-and-dwell.md)

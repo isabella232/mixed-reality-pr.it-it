@@ -5,23 +5,23 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: mapping spaziale, HoloLens, realtà mista, surface reality, mesh, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, comprensione della scena, mesh del mondo, occlusione, fisica, navigazione, surface observer, rendering, elaborazione mesh
-ms.openlocfilehash: 941e72b441771849e48e8ebc4924605750804831
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: mapping spaziale, HoloLens, realtà mista, ricostruzione della superficie, mesh, visore di realtà mista, visore windows di realtà mista, visore di realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, comprensione della scena, world mesh, occlusione, fisica, navigazione, osservatore di superficie, rendering, elaborazione mesh
+ms.openlocfilehash: 3268f25f86cdfea3aa1ae0b77c4fbeb9aa0ce1b9
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143720"
+ms.locfileid: "110196426"
 ---
 # <a name="spatial-mapping"></a>Mapping spaziale
 
-Il mapping spaziale offre una rappresentazione dettagliata delle superfici reali nell'ambiente intorno a HoloLens, consentendo agli sviluppatori di creare un'esperienza di realtà mista straordinaria. Unendo il mondo reale con il mondo virtuale, un'applicazione può far sembrare reali gli ologrammi. Le applicazioni possono anche essere allineate in modo più naturale alle aspettative dell'utente fornendo comportamenti e interazioni reali familiari.
+Il mapping spaziale offre una rappresentazione dettagliata delle superfici reali nell'ambiente intorno a HoloLens, consentendo agli sviluppatori di creare un'esperienza di realtà mista convincente. Unendo il mondo reale con il mondo virtuale, un'applicazione può rendere gli ologrammi reali. Le applicazioni possono anche essere allineate in modo più naturale alle aspettative dell'utente fornendo comportamenti e interazioni reali familiari.
 
 <br>
 
 >[!VIDEO https://www.youtube.com/embed/zff2aQ1RaVo]
 
-## <a name="device-supports"></a>Supporto del dispositivo
+## <a name="device-supports"></a>Il dispositivo supporta
 
 <table>
     <colgroup>
@@ -47,9 +47,9 @@ Il mapping spaziale offre una rappresentazione dettagliata delle superfici reali
 
 ## <a name="why-is-spatial-mapping-important"></a>Perché il mapping spaziale è importante?
 
-Il mapping spaziale consente di posizionare gli oggetti su superfici reali. In questo modo è possibile ancorare gli oggetti nel mondo dell'utente e sfruttare i segnali di profondità reali. Occluding degli ologrammi in base ad altri ologrammi e oggetti reali consente di convincire l'utente che questi ologrammi sono effettivamente nel proprio spazio. Gli ologrammi che si spostano nello spazio o che si spostano con l'utente non saranno reali. Quando possibile, posizionare gli elementi per il comfort.
+Il mapping spaziale consente di posizionare gli oggetti su superfici reali. In questo modo è possibile ancorare gli oggetti nel mondo dell'utente e sfruttare i segnali di profondità reali. Occluding your holograms based on other holograms and real world objects helps convince the user that these holograms are actually in their space. Gli ologrammi che fluttuano nello spazio o si spostano con l'utente non saranno reali. Quando possibile, posizionare gli elementi per comodità.
 
-Visualizzare le superfici durante il posizionamento o lo spostamento di ologrammi (usare una griglia proiettata). Ciò consente agli utenti di sapere dove possono posizionare al meglio gli ologrammi e indica se il punto in cui sta tentando di posizionare l'ologramma non è mappato. È possibile "elementi di gruppo" verso l'utente se finisce con un angolo troppo grande.
+Visualizzare le superfici durante il posizionamento o lo spostamento di ologrammi (usare una griglia proiettata). Ciò consente agli utenti di sapere dove possono posizionare meglio gli ologrammi e indica se il punto in cui sta tentando di posizionare l'ologramma non è mappato. È possibile "creare un manifesto" verso l'utente se finisce con un angolo troppo alto.
 
 ## <a name="conceptual-overview"></a>Panoramica dei concetti
 
@@ -58,7 +58,7 @@ Visualizzare le superfici durante il posizionamento o lo spostamento di ologramm
 
 I due tipi di oggetto principali usati per il mapping spaziale sono "Spatial Surface Observer" e "Spatial Surface".
 
-L'applicazione fornisce a Spatial Surface Observer uno o più volumi di delimitazione per definire le aree di spazio in cui l'applicazione desidera ricevere i dati di mapping spaziale. Per ognuno di questi volumi, il mapping spaziale fornirà all'applicazione un set di superfici spaziali.
+L'applicazione fornisce a Spatial Surface Observer uno o più volumi di delimitazione per definire le aree di spazio in cui l'applicazione vuole ricevere i dati di mapping spaziale. Per ognuno di questi volumi, il mapping spaziale fornirà all'applicazione un set di superfici spaziali.
 
 Questi volumi possono essere fissi (in una posizione fissa basata sul mondo reale) o essere collegati a HoloLens (si spostano, ma non ruotano, con HoloLens mentre si sposta nell'ambiente). Ogni superficie spaziale descrive le superfici reali in un volume ridotto di spazio, rappresentato come una mesh triangolare collegata a un sistema di coordinate spaziali [bloccato a livello mondiale.](coordinate-systems.md)
 
@@ -66,11 +66,13 @@ Quando HoloLens raccoglie nuovi dati sull'ambiente e quando vengono apportate mo
 
 ## <a name="spatial-awareness-design-concepts-demo"></a>Demo dei concetti di progettazione della consapevolezza spaziale
 
-Per vedere i concetti di progettazione della consapevolezza spaziale in azione, vedere la demo di video [Progettazione di ologrammi -]() Consapevolezza spaziale di seguito. Al termine, continuare per un'analisi più dettagliata di argomenti specifici.
+Per vedere i concetti di progettazione della consapevolezza spaziale in azione, vedere la demo di video **Progettazione di ologrammi -** Consapevolezza spaziale di seguito. Al termine, continuare per un approfondimento più dettagliato su argomenti specifici.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
-## <a name="spatial-mapping-vs-scene-understanding-worldmesh"></a>Mapping spaziale e informazioni sulla scena WorldMesh
+*Questo video è stato tratto dall'app "Progettazione di ologrammi" HoloLens 2 app. Scaricare e usufruire dell'esperienza completa [qui.](https://aka.ms/dhapp)*
+
+## <a name="spatial-mapping-vs-scene-understanding-worldmesh"></a>Mapping spaziale e Informazioni sulla scena WorldMesh
 
 Ad HoloLens 2, è possibile eseguire una query su una versione statica dei dati di mapping spaziale usando [Scene Understanding SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md) (impostazione EnableWorldMesh). Ecco le differenze tra due modi per accedere ai dati di mapping spaziale:
 * API Mapping spaziale:
@@ -82,21 +84,21 @@ Ad HoloLens 2, è possibile eseguire una query su una versione statica dei dati 
    * Fornisce uno snapshot statico dei dati di mapping spaziale. Per ottenere i dati di mapping spaziale aggiornati è necessario eseguire una nuova query per l'intera mesh.
    * Livello coerente di dettagli controllato dall'impostazione RequestedMeshLevelOfDetail.
 
-## <a name="what-influences-spatial-mapping-quality"></a>Che cosa influisce sulla qualità del mapping spaziale?
+## <a name="what-influences-spatial-mapping-quality"></a>Cosa influisce sulla qualità del mapping spaziale?
 
 Diversi fattori, qui [dettagliati,](/hololens/hololens-environment-considerations)possono influire sulla frequenza e sulla gravità di questi errori.  È tuttavia consigliabile progettare l'applicazione in modo che l'utente possa raggiungere i propri obiettivi anche in presenza di errori nei dati di mapping spaziale.
 
 ## <a name="common-usage-scenarios"></a>Scenari di utilizzo comuni
 
-![Illustrazioni degli scenari di utilizzo comuni del mapping spaziale: posizionamento, occlusione, fisica e navigazione](images/sm-concepts-1000px.png)
+![Illustrazioni di scenari di utilizzo comuni del mapping spaziale: posizionamento, occlusione, fisica e navigazione](images/sm-concepts-1000px.png)
 
 ### <a name="placement"></a>Selezione host
 
-Il mapping spaziale offre alle applicazioni la possibilità di presentare forme di interazione naturali e familiari all'utente; cosa potrebbe essere più naturale rispetto all'inserimento del telefono sulla desk?
+La mappatura spaziale offre alle applicazioni la possibilità di presentare forme di interazione naturali e familiari all'utente; cosa potrebbe essere più naturale rispetto all'inserimento del telefono sulla scrivania?
 
-Vincolare il posizionamento degli ologrammi (o, più in generale, qualsiasi selezione di posizioni spaziali) in modo che si trovano sulle superfici fornisce un mapping naturale da 3D (punto nello spazio) a 2D (punto su superficie). In questo modo si riduce la quantità di informazioni che l'utente deve fornire all'applicazione e le interazioni dell'utente sono più veloci, più semplici e precise. Questo vale perché la distanza non è un elemento usato per comunicare fisicamente con altri utenti o con i computer. Quando si punta con il dito, si specifica una direzione, ma non una distanza.
+Vincolare il posizionamento degli ologrammi (o, più in generale, qualsiasi selezione di posizioni spaziali) su superfici offre un mapping naturale da 3D (punto nello spazio) a 2D (punto sulla superficie). In questo modo si riduce la quantità di informazioni che l'utente deve fornire all'applicazione e rende le interazioni dell'utente più veloci, più semplici e precise. Questo è vero perché "distanza" non è qualcosa che viene usato per comunicare fisicamente con altre persone o con i computer. Quando si punta con il dito, si specifica una direzione ma non una distanza.
 
-Un'avvertenza importante è che quando un'applicazione deduce la distanza dalla direzione (ad esempio eseguendo un raycast lungo la direzione dello sguardo dell'utente per trovare la superficie spaziale più vicina), questo deve produrre risultati che l'utente può stimare in modo affidabile. In caso contrario, l'utente perderà il senso del controllo e ciò può diventare rapidamente frustrante. Un metodo utile a questo scopo è eseguire più raycast anziché uno solo. I risultati aggregati devono essere più uniformi e più prevedibili, meno soggetti all'influenza dei risultati temporanei di "outlier", come può essere causato da raggi che passano attraverso piccoli fori o che toccano piccoli bit di geometria di cui l'utente non è a conoscenza. L'aggregazione o l'arrotondamento possono essere eseguiti anche nel tempo. Ad esempio, è possibile limitare la velocità massima alla quale un ologramma può variare a distanza dall'utente. La semplice limitazione del valore della distanza minima e massima può essere utile, in modo che l'ologramma spostato non venga improvvisamente spostato in distanza o si arresti in modo anomalo nel viso dell'utente.
+Un'importante avvertenza è che quando un'applicazione deduce la distanza dalla direzione (ad esempio eseguendo un raycast lungo la direzione dello sguardo dell'utente per trovare la superficie spaziale più vicina), questo deve produrre risultati che l'utente può stimare in modo affidabile. In caso contrario, l'utente perderà il controllo e questo può diventare rapidamente frustrante. Un metodo utile per questo scopo è eseguire più raycast anziché uno solo. I risultati dell'aggregazione devono essere più fluidi e prevedibili, meno soggetti all'influenza dei risultati temporanei di "outlier", come può essere causato da raggi che passano attraverso piccoli fori o che toccano piccole porzioni di geometria che l'utente non conosce. L'aggregazione o l'arrotondamento possono essere eseguiti anche nel tempo. Ad esempio, è possibile limitare la velocità massima a cui un ologramma può variare a distanza dall'utente. La semplice limitazione del valore della distanza minima e massima può essere utile, in modo che l'ologramma spostato non venga improvvisamente spostato in distanza o si arresti in modo anomalo nel viso dell'utente.
 
 Le applicazioni possono anche usare la forma e la direzione delle superfici per guidare il posizionamento degli ologrammi. Un recintino olografico non deve penetrare attraverso le pareti e deve essere allineato con il piano anche se è leggermente non uniforme. Questo tipo di funzionalità probabilmente si baserebbe sull'uso di collisioni fisiche anziché di raycast, tuttavia si applicano problemi simili. Se l'ologramma posizionato ha molti poligoni di piccole dimensioni che si espandono, ad esempio gli slittamenti su una superficie spaziale, può essere opportuno espandere la rappresentazione fisica di tali poligoni in modo che siano più larghi e uniformi, in modo che possano scorrere sulle superfici spaziali senza instagliarsi.
 
@@ -110,21 +112,21 @@ Il feedback visivo per l'utente è di importanza fondamentale durante il posizio
 
 Uno degli usi principali delle superfici di mapping spaziale è semplicemente occludere gli ologrammi. Questo comportamento semplice ha un impatto enorme sul realistico percepito degli ologrammi, contribuendo a creare un senso viscerale che in realtà si annida nello stesso spazio fisico dell'utente.
 
-Occlusion fornisce anche informazioni all'utente. Quando un ologramma sembra essere occluso da una superficie reale, questo fornisce un feedback visivo aggiuntivo sulla posizione spaziale di tale ologramma nel mondo. Al contrario, l'occlusione può anche nascondere in modo *utile* le informazioni all'utente. Occluding ologrammi dietro le pareti può ridurre il disordine visivo in modo intuitivo. Per nascondere o rivelare un ologramma, l'utente deve semplicemente spostare la testa.
+Occlusion fornisce anche informazioni all'utente. Quando un ologramma sembra essere occluso da una superficie reale, questo fornisce un feedback visivo aggiuntivo sulla posizione spaziale di tale ologramma nel mondo. Al contrario, l'occlusione può anche nascondere in modo utile *le* informazioni all'utente. Ologrammi occluding dietro le pareti possono ridurre l'ingombro visivo in modo intuitivo. Per nascondere o rivelare un ologramma, l'utente deve semplicemente spostare la testa.
 
-L'occlusione può essere usata anche per creare aspettative per un'interfaccia utente naturale basata su interazioni fisiche familiari. Se un ologramma è occluso da una superficie, è perché tale superficie è solida, quindi l'utente deve aspettarsi che l'ologramma *colliderà* con tale superficie e non passerà attraverso di essa.
+L'occlusione può essere usata anche per creare aspettative per un'interfaccia utente naturale basata su interazioni fisiche familiari. Se un ologramma è occluso da una superficie, è perché tale superficie è solida, quindi l'utente deve aspettarsi che l'ologramma *collida* con tale superficie e non la passi attraverso di essa.
 
 A volte, l'occlusione degli ologrammi non è desiderabile. Se un utente deve interagire con un ologramma, deve vederlo, anche se si trova dietro una superficie reale. In questi casi, è in genere opportuno eseguire il rendering di un ologramma in modo diverso quando è occluso (ad esempio, riducendone la luminosità). In questo modo, l'utente può individuare visivamente l'ologramma, ma saprà comunque che si trova dietro qualcosa.
 
 ### <a name="physics"></a>Fisica
 
-L'uso della simulazione fisica è un altro modo  in cui il mapping spaziale può essere usato per rafforzare la presenza di ologrammi nello spazio fisico dell'utente. Quando la palla a gomito olografico si lancia realisticamente dalla mia scriva, si butta sul piano e scompare sotto il divano, potrebbe essere difficile pensare che non ci sia.
+L'uso della simulazione fisica è un altro modo  in cui il mapping spaziale può essere usato per rafforzare la presenza di ologrammi nello spazio fisico dell'utente. Quando la palla a gomito olografica si lancia realisticamente dalla mia scriva, si butta sul piano e scompare sotto il divano, potrebbe essere difficile pensare che non ci sia.
 
 La simulazione fisica offre anche a un'applicazione la possibilità di usare interazioni naturali e familiari basate sulla fisica. Spostare un elemento di elementi olografici sul piano sarà probabilmente più semplice per l'utente se risponde come se scorresse sul piano con l'inerzia e l'attrito appropriati.
 
 Per generare comportamenti fisici realistici, è probabile [](spatial-mapping.md#mesh-processing) che sia necessario eseguire alcune elaborazioni mesh, ad esempio riempire i fori, rimuovere le allucinazioni mobili e smussare le superfici approssimative.
 
-È anche necessario considerare il modo in cui l'esperienza di analisi [dell'applicazione](spatial-mapping.md#the-environment-scanning-experience) influisce sulla simulazione fisica. In primo luogo, le superfici mancanti non entra in conflitto con nulla. cosa accade quando la palla di lancio si lancia verso il basso e fuori dalla fine del mondo noto? In secondo luogo, è necessario decidere se si continuerà a rispondere alle modifiche nell'ambiente nel tempo. In alcuni casi, è necessario rispondere il più rapidamente possibile. ad esempio se l'utente usa porte e mobili come barricate mobili in difesa contro una tempesta di frecce romane in ingresso. In altri casi, tuttavia, è possibile ignorare i nuovi aggiornamenti. guidando l'auto olografica per la corsa sul terreno, improvvisamente non è così divertente se il cane decide di sedersi al centro della strada.
+È anche necessario considerare il modo in cui l'esperienza di analisi [dell'applicazione](spatial-mapping.md#the-environment-scanning-experience) influisce sulla simulazione fisica. In primo luogo, le superfici mancanti non entra in conflitto con nulla. cosa accade quando la palla da lancio si lancia verso il basso e fuori dalla fine del mondo noto? In secondo luogo, è necessario decidere se si continuerà a rispondere alle modifiche nell'ambiente nel tempo. In alcuni casi, è necessario rispondere il più rapidamente possibile. ad esempio se l'utente usa porte e mobili come barricate mobili in difesa contro una tempesta di frecce romane in ingresso. In altri casi, tuttavia, è possibile ignorare i nuovi aggiornamenti. guidando l'auto olografica per la corsa sul terreno, improvvisamente il cane decide di sedersi al centro della strada potrebbe non essere così divertente.
 
 ### <a name="navigation"></a>Spostamento
 
@@ -132,28 +134,28 @@ Le applicazioni possono usare i dati di mapping spaziale per concedere ai caratt
 
 Le funzionalità di navigazione possono essere utili anche per gli utenti. Dopo che una mappa di navigazione è stata compilata in una determinata area, può essere condivisa per fornire indicazioni olografiche per i nuovi utenti che non hanno familiarità con tale posizione. Questa mappa può essere progettata per mantenere fluido il flusso del traffico pedonale o per evitare incidenti in posizioni pericolose come i cantiere.
 
-Le principali sfide tecniche coinvolte nell'implementazione della funzionalità di navigazione saranno il rilevamento affidabile delle superfici a piedi (gli esseri umani non si adattano alle tabelle) e l'adattamento alle modifiche dell'ambiente (gli esseri umani non attraversano porte chiuse). La mesh può richiedere alcune [elaborazioni](spatial-mapping.md#mesh-processing) prima che sia utilizzabile per la pianificazione del percorso e la navigazione da parte di un carattere virtuale. L'arrotondamento della mesh e la rimozione delle allucinazioni possono aiutare a evitare che i caratteri si bloccano. È anche possibile semplificare drasticamente la mesh per velocizzare la pianificazione del percorso e i calcoli di navigazione del personaggio. Queste sfide hanno ricevuto una grande attenzione nello sviluppo della tecnologia dei videogiochi e sono disponibili numerose pubblicazioni di ricerca su questi argomenti.
+Le principali sfide tecniche legate all'implementazione della funzionalità di navigazione saranno il rilevamento affidabile delle superfici a piedi (gli esseri umani non passano sulle tabelle) e l'adattamento alle modifiche dell'ambiente (gli esseri umani non attraversano porte chiuse). La mesh può richiedere alcune [elaborazioni](spatial-mapping.md#mesh-processing) prima che sia utilizzabile per la pianificazione del percorso e la navigazione da parte di un carattere virtuale. Smussare la mesh e rimuovere le allucinazioni può aiutare a evitare che i caratteri si bloccano. È anche possibile semplificare drasticamente la mesh per velocizzare la pianificazione del percorso e i calcoli di navigazione del carattere. Queste sfide hanno ricevuto una grande attenzione nello sviluppo della tecnologia dei videogiochi e sono disponibili numerose pubblicazioni di ricerca su questi argomenti.
 
-La funzionalità NavMesh incorporata in Unity non può essere usata con le superfici di mapping spaziale. Ciò è dovuto al fatto che le superfici di mapping spaziale non sono note fino all'avvio dell'applicazione, ma i file di dati NavMesh devono essere generati in anticipo dagli asset di origine. Si noti anche che il sistema di mapping spaziale non fornirà informazioni sulle superfici [lontano](spatial-mapping.md#the-environment-scanning-experience) dalla posizione corrente dell'utente. L'applicazione deve quindi "ricordare" se stessa se si tratta di creare una mappa di un'area di grandi dimensioni.
+La funzionalità NavMesh incorporata in Unity non può essere usata con le superfici di mapping spaziale. Ciò è dovuto al fatto che le superfici di mapping spaziale non sono note fino all'avvio dell'applicazione, ma i file di dati NavMesh devono essere generati in anticipo dagli asset di origine. Si noti anche che il sistema [](spatial-mapping.md#the-environment-scanning-experience) di mapping spaziale non fornirà informazioni sulle superfici lontano dalla posizione corrente dell'utente. L'applicazione deve quindi "ricordare" se stessa se si tratta di creare una mappa di un'area di grandi dimensioni.
 
 ### <a name="visualization"></a>Visualizzazione
 
-Nella maggior parte dei casi è appropriato che le superfici spaziali siano invisibili; per ridurre al minimo il disordine visivo e consentire al mondo reale di parlare da solo. Tuttavia, a volte è utile visualizzare direttamente le superfici di mapping spaziale, nonostante le controparti reali siano visibili.
+Nella maggior parte dei casi è appropriato che le superfici spaziali siano invisibili. per ridurre al minimo la confusione visiva e lasciare che il mondo reale parla da solo. Tuttavia, a volte è utile visualizzare direttamente le superfici di mapping spaziale, nonostante le controparti reali siano visibili.
 
-Ad esempio, quando l'utente sta tentando di posizionare un ologramma su una superficie (ad esempio, posizionando un mobiletto olografico sulla parete), può essere utile "mettere a terra" l'ologramma proiettando un'ombreggiatura sulla superficie. In questo modo l'utente ha un senso molto più chiaro della prossimità fisica esatta tra l'ologramma e la superficie. Questo è anche un esempio della pratica più generale di "visualizzare in anteprima" visivamente una modifica prima che l'utente eserciti il commit.
+Ad esempio, quando l'utente sta provando a posizionare un ologramma su una superficie (ad esempio posizionando un mobile olografico sulla superficie), può essere utile "terra" l'ologramma proiettando un'ombreggiatura sulla superficie. In questo modo l'utente ha un'idea molto più chiara della prossimità fisica esatta tra l'ologramma e la superficie. Questo è anche un esempio della procedura più generale di "anteprima" di una modifica prima che l'utente eserciti il commit.
 
-Visualizzando le superfici, l'applicazione può condividere con l'utente la comprensione dell'ambiente. Ad esempio, un gioco da tavolo olografico potrebbe visualizzare le superfici orizzontali identificate come "tabelle", in modo che l'utente sappia dove deve interagire.
+Visualizzando le superfici, l'applicazione può condividere con l'utente la comprensione dell'ambiente. Ad esempio, un gioco da tavolo olografico potrebbe visualizzare le superfici orizzontali identificate come "tabelle", in modo che l'utente sappia dove deve andare per interagire.
 
-La visualizzazione delle superfici può essere un modo utile per visualizzare gli spazi vicini dell'utente nascosti alla visualizzazione. Questo potrebbe fornire un modo per consentire all'utente di accedere alla propria cucina (e a tutti gli ologrammi contenuti) dal proprio living.
+La visualizzazione delle superfici può essere un modo utile per visualizzare gli spazi vicini dell'utente nascosti. In questo modo è possibile concedere all'utente l'accesso alla cucina (e a tutti gli ologrammi contenuti) dal proprio ambiente.
 
-Le mesh di superficie fornite dal mapping spaziale potrebbero non essere particolarmente "pulite". È importante visualizzarle in modo appropriato. I calcoli dell'illuminazione tradizionali possono evidenziare gli errori nelle normali della superficie in modo visivamente distratto, mentre le trame "pulite" proiettate sulla superficie possono contribuire a dare un aspetto più ordinato. È anche possibile eseguire l'elaborazione [della mesh](spatial-mapping.md#mesh-processing) per migliorare le proprietà della mesh, prima del rendering delle superfici.
+Le mesh di superficie fornite dal mapping spaziale potrebbero non essere particolarmente "pulite". È importante visualizzarle in modo appropriato. I calcoli di illuminazione tradizionali possono evidenziare gli errori nelle normali della superficie in modo visivamente distrazione, mentre le trame "pulite" proiettate sulla superficie possono contribuire a dare un aspetto più ordinato. È anche possibile eseguire l'elaborazione [mesh](spatial-mapping.md#mesh-processing) per migliorare le proprietà della mesh, prima che venga eseguito il rendering delle superfici.
 
 > [!NOTE]
-> HoloLens 2 implementa un nuovo [runtime scene understanding](scene-understanding.md)che fornisce agli sviluppatori di realtà mista una rappresentazione dell'ambiente strutturata di alto livello progettata per semplificare l'implementazione di posizionamento, occlusione, fisica e navigazione.
+> HoloLens 2 implementa un nuovo runtime [scene understanding,](scene-understanding.md)che offre agli sviluppatori di realtà mista una rappresentazione strutturata e di alto livello dell'ambiente progettata per semplificare l'implementazione di posizionamento, occlusione, fisica e navigazione.
 
 ## <a name="using-the-surface-observer"></a>Uso di Surface Observer
 
-Il punto di partenza per il mapping spaziale è l'osservatore di superficie. Il flusso del programma è il seguente:
+Il punto iniziale per il mapping spaziale è l'osservatore di superficie. Il flusso del programma è il seguente:
 * Creare un oggetto osservatore di superficie
    * Specificare uno o più volumi spaziali per definire le aree di interesse in cui l'applicazione desidera ricevere i dati di mapping spaziale. Un volume spaziale è semplicemente una forma che definisce un'area di spazio, ad esempio una sfera o una casella.
    * Usare un volume spaziale con un sistema di coordinate spaziali bloccato dal mondo per identificare un'area fissa del mondo fisico.
@@ -200,34 +202,34 @@ Ogni applicazione può quindi effettuare le scelte seguenti:
    * Anche se esiste una superficie spaziale, se non è più utile per l'esperienza dell'utente, deve essere eliminata. Ad esempio, se l'applicazione "sostituisce" la stanza sull'altro lato di una porta con uno spazio virtuale alternativo, le superfici spaziali in tale stanza non sono più importanti.
 
 Ecco un esempio di strategia di memorizzazione nella cache mesh, che usa l'isteria spaziale e temporale:
-* Si consideri un'applicazione che vuole usare un volume spaziale a forma di frustum di interesse che segue lo sguardo dell'utente mentre si guarda intorno e si aggira.
-* Una superficie spaziale può scomparire temporaneamente da questo volume semplicemente perché l'utente si allontana dalla superficie o si allontana da esso... solo per guardare indietro o avvicinarsi di nuovo un momento dopo. In questo caso, l'eliminazione e la nuova creazione della mesh per questa superficie rappresentano molte elaborazioni ridondanti.
-* Per ridurre il numero di modifiche elaborate, l'applicazione usa due osservatori della superficie spaziale, uno contenuto all'interno dell'altro. Il volume più grande è sferico e segue l'utente "lazily"; si sposta solo quando necessario per assicurarsi che il centro si trova entro 2,0 metri dall'utente.
-* Le mesh di superficie spaziale nuove e aggiornate vengono sempre elaborate dall'osservatore della superficie interna più piccola, ma le mesh vengono memorizzate nella cache fino a quando non scompaiono dall'osservatore della superficie esterna più grande. Ciò consente all'applicazione di evitare l'elaborazione di molte modifiche ridondanti a causa dello spostamento dell'utente locale.
-* Poiché una superficie spaziale può anche scomparire temporaneamente a causa della perdita di rilevamento, l'applicazione rinvia anche la rimozione delle superfici spaziali rimosse durante la perdita di rilevamento.
-* In generale, un'applicazione deve valutare il compromesso tra una riduzione dell'elaborazione degli aggiornamenti e un maggiore utilizzo della memoria per determinare la strategia di memorizzazione nella cache ideale.
+* Si consideri un'applicazione che vuole usare un volume spaziale a forma di frustum di interesse che segue lo sguardo dell'utente mentre guarda e si aggira.
+* Una superficie spaziale potrebbe scomparire temporaneamente da questo volume semplicemente perché l'utente si allontana dalla superficie o si allontana da esso... solo per guardare indietro o si avvicina di nuovo un momento dopo. In questo caso, l'eliminazione e la nuova creazione della mesh per questa superficie rappresentano molte elaborazioni ridondanti.
+* Per ridurre il numero di modifiche elaborate, l'applicazione usa due osservatori della superficie spaziale, uno contenuto all'interno dell'altro. Il volume più grande è sferico e segue l'utente in modo "lazily"; si sposta solo quando necessario per assicurarsi che il centro si trova entro 2,0 metri dall'utente.
+* Le mesh di superficie spaziale nuove e aggiornate vengono sempre elaborate dall'osservatore della superficie interna più piccola, ma le mesh vengono memorizzate nella cache fino a quando non scompaiono dall'osservatore della superficie esterna più grande. Ciò consente all'applicazione di evitare di elaborare molte modifiche ridondanti a causa dello spostamento dell'utente locale.
+* Poiché una superficie spaziale può anche scomparire temporaneamente a causa di una perdita di tracciamento, l'applicazione rinvia anche la rimozione delle superfici spaziali rimosse durante la perdita di rilevamento.
+* In generale, un'applicazione deve valutare il compromesso tra riduzione dell'elaborazione degli aggiornamenti e aumento dell'utilizzo della memoria per determinare la strategia di memorizzazione nella cache ideale.
 
 ## <a name="rendering"></a>Rendering
 
 Esistono tre modi principali in cui le mesh di mapping spaziale tendono a essere usate per il rendering:
 * Per la visualizzazione della superficie
-   * Spesso è utile visualizzare direttamente le superfici spaziali. Ad esempio, la trasmissione di "ombreggiature" da oggetti su superfici spaziali può fornire un utile feedback visivo all'utente mentre posiziona ologrammi sulle superfici.
-   * Un aspetto da tenere presente è che le mesh spaziali sono diverse dal tipo di mesh che un artista 3D potrebbe creare. La topologia a triangolo non sarà così pulita come la topologia creata dall'utente e la mesh sarà erta [da vari errori.](spatial-mapping.md#what-influences-spatial-mapping-quality)
+   * Spesso è utile visualizzare direttamente le superfici spaziali. Ad esempio, il cast di "ombreggiature" da oggetti su superfici spaziali può fornire un feedback visivo utile all'utente mentre posiziona ologrammi sulle superfici.
+   * Un aspetto da tenere presente è che le mesh spaziali sono diverse dal tipo di mesh che un artista 3D potrebbe creare. La topologia a triangolo non sarà "pulita" come la topologia creata dall'utente e la mesh subirà [vari errori.](spatial-mapping.md#what-influences-spatial-mapping-quality)
    * Per creare un aspetto visivo piacevole, è possibile eseguire alcune operazioni di elaborazione della [mesh,](spatial-mapping.md#mesh-processing)ad esempio per riempire fori o normali della superficie levigata. È anche possibile usare uno shader per proiettare trame progettate dall'artista sulla mesh anziché visualizzare direttamente la topologia della mesh e le normali.
-* Per occluding di ologrammi dietro le superfici reali
+* Per occluding ologrammi dietro superfici reali
    * È possibile eseguire il rendering delle superfici spaziali in un passaggio di solo profondità, che influisce solo sul [buffer](/windows/win32/direct3d9/depth-buffers) di profondità e non sulle destinazioni di rendering dei colori.
    * In questo modo il buffer di profondità viene in primo piano per occludere gli ologrammi sottoposti a rendering successivamente dietro le superfici spaziali. L'occlusione accurata degli ologrammi migliora il senso che gli ologrammi esistono realmente all'interno dello spazio fisico dell'utente.
    * Per abilitare il rendering solo profondità, aggiornare lo stato di fusione per impostare [RenderTargetWriteMask](/windows/win32/api/d3d11_1/ns-d3d11_1-d3d11_render_target_blend_desc1) su zero per tutte le destinazioni di rendering dei colori.
-* Per modificare l'aspetto degli ologrammi occluded da superfici reali
-   * La geometria di cui viene in genere eseguito il rendering è nascosta quando è occluded. A tale scopo, impostare la funzione di profondità nello stato [depth-stencil](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc) su "minore o uguale", in modo che la geometria sia visibile solo dove è più vicina alla fotocamera rispetto a tutte le geometrie sottoposte a rendering in precedenza. 
+* Per modificare l'aspetto degli ologrammi occlusi da superfici reali
+   * La geometria di cui viene in genere eseguito il rendering è nascosta quando è occlusa. A tale scopo, impostare la funzione di profondità nello stato [depth-stencil](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc) su "minore o uguale", in modo che la geometria sia visibile solo dove è più vicina alla fotocamera rispetto a tutte le geometrie sottoposte a rendering in precedenza. 
    * Tuttavia, può essere utile mantenere visibile una determinata geometria anche quando è occlusa e modificarne l'aspetto quando occluded come modo per fornire feedback visivo all'utente. Ad esempio, ciò consente all'applicazione di mostrare all'utente la posizione di un oggetto, pur chiarendo che si trova dietro una superficie reale.
    * A tale scopo, eseguire il rendering della geometria una seconda volta con uno shader diverso che crea l'aspetto "occluded" desiderato. Prima di eseguire il rendering della geometria per la seconda volta, apportare due modifiche allo [stato depth-stencil](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc). Per prima cosa, impostare la funzione di profondità su "maggiore o uguale"  in modo che la geometria sia visibile solo dove si trova più lontano dalla fotocamera rispetto a tutte le geometrie di cui è stato eseguito il rendering in precedenza. In secondo momento, impostare DepthWriteMask su zero, in modo che il buffer di profondità non  verrà modificato (il buffer di profondità deve continuare a rappresentare la profondità della geometria più vicina alla fotocamera).
 
-[Le prestazioni](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) sono un problema importante quando si esegue il rendering di mesh di mapping spaziale. Ecco alcune tecniche di prestazioni di rendering specifiche per il rendering di mesh di mapping spaziale:
+[Le prestazioni](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) sono un aspetto importante quando si esegue il rendering di mesh di mapping spaziale. Ecco alcune tecniche di prestazioni di rendering specifiche per il rendering di mesh di mapping spaziale:
 * Regolare la densità del triangolo
    * Quando si richiedono mesh di superficie spaziale all'osservatore di superficie, richiedere la densità più bassa di mesh triangolare che saranno sufficiente per le proprie esigenze.
    * Può essere opportuno variare la densità del triangolo su una superficie in base alla superficie, a seconda della distanza della superficie dall'utente e della pertinenza dell'esperienza utente.
-   * La riduzione del numero di triangoli ridurrà l'utilizzo della memoria e i costi di elaborazione dei vertici nella GPU, anche se non influiranno sui costi di elaborazione dei pixel.
+   * La riduzione del numero di triangoli ridurrà l'utilizzo della memoria e i costi di elaborazione dei vertici nella GPU, anche se non influirà sui costi di elaborazione dei pixel.
 * Usare il frustum culling
    * Il frustum culling ignora gli oggetti di disegno che non possono essere visualizzati perché sono esterni al frustum di visualizzazione corrente. In questo modo si riducono sia i costi di elaborazione della CPU che della GPU.
    * Poiché il culling viene eseguito in base alla mesh e le superfici spaziali possono essere grandi, suddividere ogni mesh di superficie spaziale in blocchi più piccoli può comportare un culling più efficiente (in quanto viene eseguito il rendering di un minor numero di triangoli fuori schermo). Esiste tuttavia un compromesso. Maggiore è il numero di mesh, maggiore è il numero di chiamate di disegno che è necessario effettuare, che possono aumentare i costi della CPU. In casi estremi, i calcoli di frustum culling potrebbero anche avere un costo misurabile della CPU.
@@ -247,10 +249,10 @@ Poiché ogni osservatore di superficie può fornire più superfici spaziali non 
 
 Per consentire a un'API fisica (ad esempio [Havok)](https://www.havok.com/)di fornire a un'applicazione funzionalità di raycasting e collisione per le superfici spaziali, l'applicazione deve fornire mesh di superficie spaziale all'API fisica. Le mesh usate per la fisica hanno spesso le proprietà seguenti:
 * Contengono solo un numero ridotto di triangoli. Le operazioni fisiche sono più a elevato utilizzo di calcolo rispetto alle operazioni di rendering.
-* Sono "molto rigidi". Le superfici destinate a essere solide non devono contenere piccoli fori. anche fori troppo piccoli per essere visibili possono causare problemi.
+* Sono "molto compatte". Le superfici destinate a essere solide non devono contenere piccoli fori. anche fori troppo piccoli per essere visibili possono causare problemi.
 * Vengono convertiti in scafi convessi. Gli scafi convessi hanno pochi poligoni e sono senza fori e sono molto più efficienti dal punto di vista computazionale rispetto alle mesh di triangoli non elaborati.
 
-Quando si esetterano raycast su superfici spaziali, tenere presente che queste superfici sono spesso complesse, forme ingombrate e con pochi dettagli, proprio come la propria scriva. Ciò significa che un singolo raycast spesso non è sufficiente per fornire informazioni sufficienti sulla forma della superficie e sulla forma dello spazio vuoto nelle vicinanze. È in genere una buona idea eseguire molti raycast all'interno di una piccola area e usare i risultati aggregati per ottenere una comprensione più affidabile della superficie. Ad esempio, se si usa la media di 10 raycast per guidare il posizionamento degli ologrammi su una superficie, si otterranno risultati molto più uniformi e meno "instabilità" rispetto all'uso di un singolo raycast.
+Quando si esetterano raycast su superfici spaziali, tenere presente che queste superfici sono spesso complesse e ingombrate con pochi dettagli, proprio come la tua scriva! Ciò significa che un singolo raycast spesso non è sufficiente per fornire informazioni sufficienti sulla forma della superficie e sulla forma dello spazio vuoto nelle vicinanze. È in genere una buona idea eseguire molti raycast all'interno di una piccola area e usare i risultati aggregati per ottenere una comprensione più affidabile della superficie. Ad esempio, l'uso della media di 10 raycast per guidare il posizionamento degli ologrammi su una superficie produce un risultato molto più uniforme e meno "instabilità" che usando un solo raycast.
 
 Tenere tuttavia presente che ogni raycast può avere un costo di calcolo elevato. A seconda dello scenario di utilizzo, è consigliabile trovare un compromesso tra il costo di calcolo dei raycast aggiuntivi (eseguito ogni fotogramma) e il costo di calcolo dell'elaborazione delle [mesh](spatial-mapping.md#mesh-processing) per uniformare e rimuovere i fori nelle superfici spaziali (operazione eseguita quando vengono aggiornate le mesh spaziali).
 
@@ -273,8 +275,8 @@ Per progettare la giusta esperienza di analisi, considerare quale delle seguenti
    * Un'applicazione può funzionare perfettamente senza alcuna esperienza di analisi guidata; apprenderà le superfici osservate nel corso del movimento naturale dell'utente.
    * Ad esempio, un'applicazione che consente all'utente di disegnare su superfici con una coloratura a spray olografico richiede solo la conoscenza delle superfici attualmente visibili all'utente.
    * L'ambiente potrebbe essere già analizzato se è già stato utilizzato dall'utente con HoloLens.
-   * Tenere tuttavia presente che la fotocamera usata dalla mappatura spaziale può vedere solo 3,1 m davanti all'utente, quindi il mapping spaziale non saprà alcuna superficie più distante, a meno che l'utente non le abbia osservate da una distanza più vicina in passato.
-   * Pertanto, l'utente comprende quali superfici sono state analizzate, l'applicazione deve fornire feedback visivo a questo effetto, ad esempio proiettare ombreggiature virtuali su superfici analizzate può aiutare l'utente a posizionare ologrammi su tali superfici.
+   * Tenere tuttavia presente che la fotocamera usata dalla mappatura spaziale può vedere solo 3,1 m davanti all'utente, quindi il mapping spaziale non saprà alcuna superficie più distante a meno che l'utente non le abbia osservate da una distanza più vicina in passato.
+   * Pertanto, l'utente comprende quali superfici sono state analizzate, l'applicazione deve fornire un feedback visivo a questo effetto, ad esempio proiettare ombreggiature virtuali su superfici analizzate può aiutare l'utente a posizionare ologrammi su tali superfici.
    * In questo caso, i volumi di delimitazione dell'osservatore della superficie spaziale devono essere aggiornati a un sistema di [coordinate](coordinate-systems.md)spaziali bloccato dal corpo, in modo che seguano l'utente.
 
 * **Trovare una posizione appropriata**
@@ -341,7 +343,7 @@ Ecco alcuni esempi di diversi tipi di elaborazione mesh che possono risultare ut
    * Le allucinazioni influiscono sull'occlusione: le allucinazioni possono diventare visibili quando forme scure si spostano davanti e occludono altri ologrammi.
    * Le allucinazioni influiscono sui raycast: se si usano raycast per aiutare gli utenti a interagire con le superfici, questi raggi potrebbero avere un'allucinazione anziché la superficie dietro di essa. Come per i buchi, una mitigazione è l'uso di molti raycast invece di un singolo raycast, ma anche in questo caso ciò avrà un costo di calcolo.
    * Le allucinazioni influiscono sulle collisioni fisiche: un oggetto controllato dalla simulazione fisica può rimanere bloccato contro un'allucinazione e non essere in grado di spostarsi attraverso un'area di spazio apparentemente chiara.
-   * È possibile filtrare tali allucinazioni dalla mesh di superficie. Tuttavia, come per i fori, è necessario ottimizzare l'algoritmo in modo che gli oggetti di piccole dimensioni reali, ad esempio le lampadine e i punti di controllo delle porte, non venga rimosso.
+   * È possibile filtrare tali allucinazioni dalla mesh di superficie. Tuttavia, come per i fori, è necessario ottimizzare l'algoritmo in modo che gli oggetti di piccole dimensioni reali, ad esempio i paralumi e le maniglie delle porte, non venga rimosso.
 
 * **Definizione di movimenti uniformi**
    * Il mapping spaziale può restituire superfici che sembrano essere approssimative o "rumorose" rispetto alle controparti reali.
@@ -353,7 +355,7 @@ Ecco alcuni esempi di diversi tipi di elaborazione mesh che possono risultare ut
 * **Ricerca di piani**
    * Esistono molte forme di analisi che un'applicazione potrebbe voler eseguire sulle superfici fornite dal mapping spaziale.
    * Un semplice esempio è la ricerca di piani. identificazione delle aree delimitate, principalmente planari delle superfici.
-   * Le aree planari possono essere usate come superfici di lavoro olografiche, aree in cui il contenuto olografico può essere posizionato automaticamente dall'applicazione.
+   * Le aree planari possono essere usate come superfici di lavoro olografiche, aree in cui il contenuto olografico può essere inserito automaticamente dall'applicazione.
    * Le aree planari possono vincolare l'interfaccia utente per guidare gli utenti a interagire con le superfici più adatte alle proprie esigenze.
    * Le aree planari possono essere usate come nel mondo reale, per controparti olografiche di oggetti funzionali come schermi LCD, tabelle o lavagne.
    * Le aree planari possono definire aree di riproduzione, che formano la base dei livelli dei videogiochi.
@@ -376,7 +378,7 @@ Ecco alcuni esempi di diversi tipi di elaborazione mesh che possono risultare ut
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-* Per orientare correttamente le mesh di superficie, ogni GameObject deve essere attivo prima di essere inviato a SurfaceObserver per costruire la mesh. In caso contrario, le mesh verranno mostrate nello spazio, ma ruotate con angoli strano.
+* Per orientare correttamente le mesh di superficie, ogni GameObject deve essere attivo prima di essere inviato a SurfaceObserver per costruire la mesh. In caso contrario, le mesh verranno mostrate nello spazio, ma ruotate in angolazioni strane.
 * L'oggetto GameObject che esegue lo script che comunica con SurfaceObserver deve essere impostato sull'origine. In caso contrario, tutti gli oggetti GameObject creati e inviati a SurfaceObserver per costruire le mesh avranno un offset uguale all'offset dell'oggetto gioco padre. In questo modo le mesh possono essere mostrate a diversi metri di distanza, il che rende difficile eseguire il debug di ciò che sta succedendo.
 
 ## <a name="see-also"></a>Vedi anche
@@ -384,7 +386,7 @@ Ecco alcuni esempi di diversi tipi di elaborazione mesh che possono risultare ut
 * [Sistemi di coordinate](coordinate-systems.md)
 * [Mapping spaziale in DirectX](../develop/native/spatial-mapping-in-directx.md)
 * [Mapping spaziale in Unity](../develop/unity/spatial-mapping-in-unity.md)
-* [Informazioni sulla scena](scene-understanding.md)
+* [Comprensione della scena](scene-understanding.md)
 * [Visualizzazione della scansione dello spazio](room-scan-visualization.md)
 * [Progettazione dell'audio spaziale](spatial-sound-design.md)
 * [Case study - Guardare attraverso fori nella realtà](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Portale di dispositivi di Windows, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 83bc2183d40f9dbfb00799475522606ff59ccfa0
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: f0e025a9d0346a152271e65af4a40d1e46fb9afc
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102117645"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196446"
 ---
 # <a name="using-the-windows-device-portal"></a>Uso del Portale di dispositivi di Windows
 
@@ -381,6 +381,8 @@ Selezionare o toccare **Enable** (Abilita) per avviare il processo di traccia. I
 Ti permette di registrare e riprodurre dati di input per il testing.
 * **Capture room** (Ambiente acquisizione): opzione usata per scaricare il file di un ambiente simulato che contiene la mesh di mapping spaziale per l'ambiente circostante dell'utente. Assegnare un nome alla stanza e quindi fare clic su **Capture** (Acquisisci) per salvare i data come file con estensione xef nel PC. Questo file può essere caricato nell'emulatore di HoloLens.
 * **Recording** (Registrazione): consente di controllare i flussi da registrare e di assegnare un nome alla registrazione. Tocca o fai clic su **Record** (Registra) per avviare la registrazione. Eseguire le azioni con HoloLens e quindi fare clic su **Stop** (Arresta) per salvare i dati come file con estensione xef nel PC. Questo file può essere caricato nell'emulatore di HoloLens o nel dispositivo stesso.
+>[!NOTE]
+>Questa funzionalità è disponibile solo nella prima generazione di HoloLens.
 * **Playback** (Riproduzione): tocca o fai clic su **Upload recording** (Carica registrazione) per selezionare un file XEF nel PC e inviare i dati a HoloLens.
 * **Control mode** (Modalità di controllo): seleziona **Default** (Predefinita) o **Simulation** (Simulazione) dall'elenco a discesa e quindi tocca o fai clic sul pulsante **Set** (Imposta) per selezionare la modalità in HoloLens. Scegliendo "Simulation" vengono disabilitati i sensori reali in HoloLens e al loro posto vengono usati i dati di simulazione caricati. Se si passa alla modalità "Simulation" (Simulazione), HoloLens non risponderà all'utente reale fino a quando non verrà ripristinata la modalità "Default" (Predefinita).
 

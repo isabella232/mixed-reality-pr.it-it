@@ -7,12 +7,12 @@ ms.date: 05/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Tracciamento oculare, Realtà mista, Input, Sguardo fisso, Selezione oculare della destinazione, HoloLens 2, Selezione con gli occhi, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, sguardo
-ms.openlocfilehash: 1f337d3cbc1f82b4f69194d4b903687be067f9d6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1dff0ded282678a695070feca2b578004610d2c7
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97847876"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196466"
 ---
 # <a name="eye-gaze-and-commit"></a>Sguardo fisso e commit
 
@@ -26,8 +26,18 @@ Con HoloLens 2 hai l'incredibile opportunità di eseguire la sequenza _sguardo e
    - Comando vocale (ad esempio, "Seleziona")
    - Attesa (ovvero l'utente deve semplicemente continuare a guardare la destinazione da selezionare)
 
-Lo sguardo fisso tuttavia ha un comportamento diverso da quello del puntamento con la testa per vari aspetti e presenta alcune problematiche specifiche. Nelle [linee guida di progettazione per l'uso dello sguardo fisso](eye-tracking.md) vengono riepilogati i vantaggi generali e le problematiche dell'uso del tracciamento oculare come input nell'app olografica. In questa sezione vengono trattate le considerazioni relative alla progettazione specifiche per l'uso di _sguardo fisso e commit_.
+Lo sguardo fisso tuttavia ha un comportamento diverso da quello del puntamento con la testa per vari aspetti e presenta alcune problematiche specifiche. 
+
+Nelle [linee guida di progettazione per l'uso dello sguardo fisso](eye-tracking.md) vengono riepilogati i vantaggi generali e le problematiche dell'uso del tracciamento oculare come input nell'app olografica. In questa sezione vengono trattate le considerazioni relative alla progettazione specifiche per l'uso di _sguardo fisso e commit_.
 Prima di tutto i nostri occhi si muovono con una rapidità incredibile e sono un mezzo straordinario per individuare velocemente una destinazione all'interno della visualizzazione. Lo sguardo fisso è la soluzione ideale per eseguire rapide azioni di sguardo fisso e commit, soprattutto se combinate con commit rapidi come quelli effettuati tramite simulazione del tocco o pressione di un pulsante.
+
+## <a name="head-and-eye-tracking-design-concepts-demo"></a>Demo dei concetti di progettazione del rilevamento oculare e della testa
+
+Se si desidera vedere i concetti di progettazione di Head e Eye Tracking in azione, vedere la demo video **Designing Holograms - Head Tracking and Eye Tracking** (Progettazione di ologrammi - Rilevamento della testa e tracciamento oculare) di seguito. Al termine, continuare per un'analisi più dettagliata di argomenti specifici.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*Questo video è stato tratto dall'app "Designing Holograms" (Progettazione di ologrammi) HoloLens 2 app. Scaricare e usufruire dell'esperienza completa [qui.](https://aka.ms/dhapp)*
    
 ## <a name="design-guidelines-for-eye-gaze-and-commit"></a>Linee guida di progettazione per sguardo fisso e commit
 

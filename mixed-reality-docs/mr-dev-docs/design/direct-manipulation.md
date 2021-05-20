@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realtà mista, Sguardo fisso, selezione della destinazione con lo sguardo, interazione, progettazione, a portata di mano, HoloLens, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, MRTK, Mixed Reality Toolkit, pulsante, collisori, cubo di delimitazione, 2D, movimenti istintivi
-ms.openlocfilehash: 9d572064f1c7ba02d8e739d1b731fae61e95d2df
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: f5b332b49b9c7f93b66a621675748ede51d08e60
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143411"
+ms.locfileid: "110196656"
 ---
 # <a name="direct-manipulation-with-hands"></a>Manipolazione diretta con le mani
 
@@ -51,11 +51,13 @@ La manipolazione diretta è un modello di input principale in HoloLens 2 che usa
 
 ---
 
-## <a name="basic-hand-tracking-and-instinctual-interactions-demo"></a>Demo di base sul tracciamento delle mani e sulle interazioni istintivi
+## <a name="basic-hand-tracking-and-instinctual-interactions-demo"></a>Demo di base del rilevamento delle mani e delle interazioni istintiva
 
-Per vedere i concetti di progettazione della testa e del tracciamento oculare in azione, vedere la demo di video Progettazione di [ologrammi - Tracciamento]() testa e tracciamento oculare di seguito. Al termine, continuare per un approfondimento più dettagliato su argomenti specifici.
+Se si desidera vedere i concetti di progettazione di Head e Eye Tracking in azione, vedere la demo video Designing Holograms - Head Tracking and Eye Tracking (Progettazione di **ologrammi - Tracciamento** testina e tracciamento oculare) riportata di seguito. Al termine, continuare per un'analisi più dettagliata di argomenti specifici.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
+
+*Questo video è stato tratto dall'app "Designing Holograms" (Progettazione di ologrammi) HoloLens 2 app. Scaricare e usufruire dell'esperienza completa [qui.](https://aka.ms/dhapp)*
 
 ## <a name="collidable-fingertip"></a>Punta del dito di collisione
 
