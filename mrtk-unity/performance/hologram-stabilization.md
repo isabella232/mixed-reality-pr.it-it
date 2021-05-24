@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, rilevamento dell'ambiente, TMP,
-ms.openlocfilehash: e2c83e7e4ca909e31803d55aabbc0c2344e89139
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 338ae2719764b84b7c58c1422e08fe02176eccf0
+ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143897"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110333433"
 ---
 # <a name="hologram-stabilization"></a>Stabilizzazione dell'ologramma
 
@@ -133,7 +133,7 @@ public void RemoveAnchor()
 Se si vuole un'alternativa all'uso manuale degli ancoraggi, vedere Microsoft World Locking Tools. 
 
 > [!div class="nextstepaction"]
-> [Instal con lo strumento di funzionalità MR](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLTviaMRFeatureTool.html)
+> [Eseguire l'installazione con lo strumento di funzionalità MR](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLTviaMRFeatureTool.html)
 
 ## <a name="see-also"></a>Vedere anche
 
