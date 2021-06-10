@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realtà mista, sviluppare, sviluppo, HoloLens, unity, unreal, directx, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, sviluppo di realtà virtuale, sviluppo di realtà aumentata
-ms.openlocfilehash: fb470fe0ec146346d18b353b5d359956d2fd28ac
-ms.sourcegitcommit: 728f4523188628950478cc03ec7145e89569e0d3
+ms.openlocfilehash: 0ff9c5bbf4c7da7c3d2c40d825ab92058b3eb3b1
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108172543"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743404"
 ---
 # <a name="introduction-to-mixed-reality-development"></a>Introduzione allo sviluppo di app di Realtà mista
 
@@ -25,7 +25,7 @@ Realtà mista è un vasto spazio, un nesso in cui il mondo reale e quello virtua
 
 **Unity**: Unity è una delle principali piattaforme di sviluppo in tempo reale disponibili sul mercato, con codice runtime sottostante scritto in C++ e in cui tutti gli script di sviluppo vengono eseguiti in C#. Unity offre l'infrastruttura necessaria per supportare qualsiasi utente per la creazione di giochi, filmati e animazioni o anche per il rendering di concetti architettonici o ingegneristici in un mondo virtuale.
 
-**Unreal**: Unreal Engine 4 è un potente motore di creazione open source con supporto completo per la realtà mista in C++ e Blueprints. A partire da Unreal Engine 4.25, il supporto per HoloLens è completo e pronto per la produzione. Grazie a funzionalità quali il sistema flessibile Blueprints Visual Scripting, i progettisti possono usare praticamente tutta la gamma di concetti e strumenti disponibili in genere solo per i programmatori. Autori di tutti i settori possono sfruttare la libertà e il controllo per offrire contenuti all'avanguardia, esperienze interattive e mondi virtuali immersivi.
+**Unreal** - Unreal Engine è un potente motore di creazione di open source con supporto completo per la realtà mista sia in C++ che nel Progetto Visual Scripting System di Unreal. A partire da Unreal Engine 4.25, il supporto per HoloLens è completo e pronto per la produzione. Con le funzionalità fornite dal flessibile Progetto Visual Scripting System, i progettisti non devono scrivere codice per usare la gamma completa di concetti e strumenti disponibili a livello generale solo per i programmatori. Autori di tutti i settori possono sfruttare la libertà e il controllo per offrire contenuti all'avanguardia, esperienze interattive e mondi virtuali immersivi.
 
 **Nativo (OpenXR)** : OpenXR è uno standard API aperto, concesso a titolo gratuito da Khronos, che fornisce ai motori l'accesso nativo a un'ampia gamma di dispositivi di fornitori che operano nell'ambito della realtà mista. È possibile sviluppare app usando OpenXR in un visore VR immersive di HoloLens 2 o Windows Mixed Reality sul desktop. Se non è possibile accedere a un visore VR, sono disponibili emulatori per visori VR di HoloLens 2 e Windows Mixed Reality.
 

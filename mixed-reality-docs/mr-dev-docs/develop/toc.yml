@@ -128,13 +128,13 @@
                   href: unity/tutorials/holograms-210.md
                 - name: Input di HoloLens (prima generazione) 211 - Movimento
                   href: unity/tutorials/holograms-211.md
-                - name: Input HoloLens (prima generazione) 212 - Voce
+                - name: Input Di HoloLens (prima generazione) 212 - Voce
                   href: unity/tutorials/holograms-212.md
                 - name: HoloLens (prima generazione) Spaziale 220 - Audio spaziale
                   href: unity/tutorials/holograms-220.md
                 - name: HoloLens (prima generazione) Spaziale 230 - Mapping spaziale
                   href: unity/tutorials/holograms-230.md
-                - name: HoloLens (prima generazione) Condivisione di 240 - Più dispositivi HoloLens
+                - name: HoloLens (prima generazione) Condivisione 240 - Più dispositivi HoloLens
                   href: unity/tutorials/holograms-240.md
             - name: Realtà mista e servizi di Azure
               items:
@@ -156,13 +156,13 @@
                   href: unity/tutorials/mr-azure-307.md
                 - name: HoloLens (prima generazione) e Azure 308 - Notifiche tra dispositivi
                   href: unity/tutorials/mr-azure-308.md
-                - name: HoloLens (prima generazione) e Azure 309 - Informazioni dettagliate su Applicaiton
+                - name: HoloLens (prima generazione) e Azure 309 - Informazioni dettagliate sull'applicazione
                   href: unity/tutorials/mr-azure-309.md
                 - name: HoloLens (prima generazione) e Azure 310 - Rilevamento oggetti
                   href: unity/tutorials/mr-azure-310.md
                 - name: HoloLens (prima generazione) e Azure 311 - Microsoft Graph
                   href: unity/tutorials/mr-azure-311.md
-                - name: HoloLens (prima generazione) e Azure 312 - Integrazione del bot
+                - name: HoloLens (prima generazione) e Azure 312 - Integrazione di bot
                   href: unity/tutorials/mr-azure-312.md
                 - name: HoloLens (prima generazione) e Azure 313 - Servizio hub IoT
                   href: unity/tutorials/mr-azure-301.md
@@ -196,7 +196,7 @@
       items:
         - name: Impostazione della fotocamera
           href: unity/camera-in-unity.md
-        - name: Ancoraggi spaziali e di blocco del mondo
+        - name: Blocco del mondo e ancoraggi nello spaziale
           href: unity/spatial-anchors-in-unity.md
         - name: Esperienze condivise
           href: unity/shared-experiences-in-unity.md
@@ -234,7 +234,7 @@
           href: unity/udp-packets-in-unity.md
         - name: Uso dello spazio dei nomi Windows con le app Unity per HoloLens
           href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
-        - name: Oggetti nativi di realtà mista
+        - name: Interoperabilità nativa di realtà mista in Unity
           href: unity/unity-xrdevice-advanced.md
         - name: Uso di Vuforia
           href: unity/vuforia-development-overview.md
@@ -372,7 +372,7 @@
               href: javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md
             - name: 2. Preparare una scena con un oggetto 3D di base
               href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
-            - name: 3. Interagire con un oggetto 3D
+            - name: 3. Interagire con l'oggetto 3D
               href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
 - name: Nativo
   items:
@@ -469,9 +469,9 @@
         - name: Condizioni di licenza software per Holographic Remoting
           href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
         - name: Holographic Remoting per HoloLens (prima generazione)
-          href: null
-        - name: Aggiunta di Holographic Remoting
-          href: platform-capabilities-and-apis/add-holographic-remoting.md
+          items:
+            - name: Aggiunta di Holographic Remoting
+              href: platform-capabilities-and-apis/add-holographic-remoting.md
     - name: Test e qualità delle app
       items:
         - name: Criteri di qualità delle app

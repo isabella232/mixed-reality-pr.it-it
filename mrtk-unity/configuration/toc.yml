@@ -1,8 +1,8 @@
-- name: Uso di gestione pacchetti Unity
+- name: Uso del Gestione pacchetti Unity
   href: usingupm.md
 - name: Finestra di dialogo di configurazione di MRTK
   href: mrtk-configuration-dialog.md
-- name: Introduzione con MRTK e XRSDK
+- name: Introduzione a MRTK e XR SDK
   href: getting-started-with-mrtk-and-xrsdk.md
-- name: Guida alla configurazione della realtà mista
+- name: Guida alla configurazione del profilo MRTK
   href: mixed-reality-configuration-guide.md

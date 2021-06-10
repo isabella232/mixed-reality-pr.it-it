@@ -1,10 +1,12 @@
-- name: Panoramica del contributo
+- name: Autori
+  href: authors.md
+- name: Panoramica dei contributi
   href: contributing.md
 - name: Linee guida per la codifica
   href: coding-guidelines.md
 - name: Scrittura ed esecuzione di test
   href: unit-tests.md
-- name: Linee guida sulla documentazione
+- name: Linee guida per la documentazione
   href: documentation-guide.md
 - name: Richieste pull
   href: pull-requests.md

@@ -1,25 +1,14 @@
 ---
-ms.openlocfilehash: 905208a27e89f23e2ed7d755eede6a8e3d4ea181
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 2ee305da9fda9416ed833202b3e2cad8bc344802
+ms.sourcegitcommit: 62e5909b837c9c7ecedd040164f2308868db4723
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98580056"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111741993"
 ---
-# <a name="azure-spatial-anchors"></a>[<span data-ttu-id="ad1a6-101">Ancoraggi nello spazio di Azure</span><span class="sxs-lookup"><span data-stu-id="ad1a6-101">Azure Spatial Anchors</span></span>](#tab/asa)
+# <a name="azure-spatial-anchors"></a>[<span data-ttu-id="3525d-101">Ancoraggi nello spazio di Azure</span><span class="sxs-lookup"><span data-stu-id="3525d-101">Azure Spatial Anchors</span></span>](#tab/asa)
 
-<span data-ttu-id="ad1a6-102">Ancoraggi nello spazio di Azure (ASA) è un servizio multipiattaforma che consente di creare applicazioni di realtà mista con riconoscimento dello spazio.</span><span class="sxs-lookup"><span data-stu-id="ad1a6-102">Azure Spatial Anchors (ASA) is a cross-platform service that allows you to build spatially aware mixed reality applications.</span></span> <span data-ttu-id="ad1a6-103">Con Ancoraggi nello spazio di Azure è possibile eseguire il mapping, mantenere in modo permanente e condividere contenuto olografico tra più dispositivi in scala reale.</span><span class="sxs-lookup"><span data-stu-id="ad1a6-103">With Azure Spatial Anchors, you can map, persist, and share holographic content across multiple devices, at real-world scale.</span></span>
+<span data-ttu-id="3525d-102">Ancoraggi nello spazio di Azure (ASA) è un servizio multipiattaforma che consente di creare applicazioni di realtà mista con riconoscimento dello spazio.</span><span class="sxs-lookup"><span data-stu-id="3525d-102">Azure Spatial Anchors (ASA) is a cross-platform service that allows you to build spatially aware mixed reality applications.</span></span> <span data-ttu-id="3525d-103">Con Ancoraggi nello spazio di Azure è possibile eseguire il mapping, mantenere in modo permanente e condividere contenuto olografico tra più dispositivi in scala reale.</span><span class="sxs-lookup"><span data-stu-id="3525d-103">With Azure Spatial Anchors, you can map, persist, and share holographic content across multiple devices, at real-world scale.</span></span>
 
-* [<span data-ttu-id="ad1a6-104">Overview</span><span class="sxs-lookup"><span data-stu-id="ad1a6-104">Overview</span></span>](/azure/spatial-anchors/overview) 
-* [<span data-ttu-id="ad1a6-105">Ancoraggi nello spazio in Unreal</span><span class="sxs-lookup"><span data-stu-id="ad1a6-105">Spatial Anchors in Unreal</span></span>](../unreal/unreal-azure-spatial-anchors.md) 
-
-# <a name="dynamics-365"></a>[<span data-ttu-id="ad1a6-106">Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="ad1a6-106">Dynamics 365</span></span>](#tab/D365)
-
-<span data-ttu-id="ad1a6-107">Microsoft Dynamics 365 Guides è un'applicazione di realtà mista per Microsoft HoloLens che consente agli operatori di apprendere durante il lavoro offrendo istruzioni olografiche quando e dove sono necessarie.</span><span class="sxs-lookup"><span data-stu-id="ad1a6-107">Microsoft Dynamics 365 Guides is a mixed-reality application for Microsoft HoloLens that lets operators learn during the flow of work by providing holographic instructions when and where they are needed.</span></span> <span data-ttu-id="ad1a6-108">Queste schede di istruzioni sono collegate visivamente al luogo in cui deve essere svolto il lavoro e possono includere immagini, video e modelli olografici 3D.</span><span class="sxs-lookup"><span data-stu-id="ad1a6-108">These instruction cards are visually tethered to the place where the work must be done, and can include images, videos, and 3D holographic models.</span></span>
-
-* [<span data-ttu-id="ad1a6-109">Overview</span><span class="sxs-lookup"><span data-stu-id="ad1a6-109">Overview</span></span>](/dynamics365/mixed-reality/guides/) 
-* [<span data-ttu-id="ad1a6-110">Operazioni preliminari</span><span class="sxs-lookup"><span data-stu-id="ad1a6-110">Get started</span></span>](/dynamics365/mixed-reality/guides/get-started) 
-* [<span data-ttu-id="ad1a6-111">Sono un amministratore</span><span class="sxs-lookup"><span data-stu-id="ad1a6-111">I'm an Admin</span></span>](/dynamics365/mixed-reality/guides/setup)
-* [<span data-ttu-id="ad1a6-112">Sono un autore</span><span class="sxs-lookup"><span data-stu-id="ad1a6-112">I'm an Author</span></span>](/dynamics365/mixed-reality/guides/authoring-overview) 
-* [<span data-ttu-id="ad1a6-113">Sono un operatore</span><span class="sxs-lookup"><span data-stu-id="ad1a6-113">I'm an Operator</span></span>](/dynamics365/mixed-reality/guides/operator-overview) 
-* [<span data-ttu-id="ad1a6-114">Riferimento alle entità per sviluppatori</span><span class="sxs-lookup"><span data-stu-id="ad1a6-114">Entity reference for developers</span></span>](/dynamics365/mixed-reality/guides/developer-entity-reference)
+* [<span data-ttu-id="3525d-104">Overview</span><span class="sxs-lookup"><span data-stu-id="3525d-104">Overview</span></span>](/azure/spatial-anchors/overview) 
+* [<span data-ttu-id="3525d-105">Ancoraggi nello spazio in Unreal</span><span class="sxs-lookup"><span data-stu-id="3525d-105">Spatial Anchors in Unreal</span></span>](../unreal/unreal-azure-spatial-anchors.md) 

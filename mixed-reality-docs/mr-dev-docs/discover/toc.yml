@@ -8,29 +8,29 @@
   href: mr-learning-overview.md
 - name: Espandere il processo di progettazione
   href: case-study-expanding-the-design-process-for-mixed-reality.md
-- name: Esecuzione dell'Hub di esempi MRTK
-  href: 'https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/running-examples-hub'
 - name: Designing Holograms
   href: designing-holograms.md
 - name: Panoramica sui case study
   href: case-studies-overview.md
-- name: Hardware HoloLens
+- name: Hardware
   items:
-    - name: Dettagli sull'hardware HoloLens 2
-      href: /hololens/hololens2-hardware
-    - name: Dettagli sull'hardware HoloLens (prima generazione)
-      href: /hololens/hololens1-hardware
-- name: Visori VR immersive
-  items:
-    - name: Dettagli sull'hardware dei visori VR immersive
-      href: immersive-headset-hardware-details.md
-    - name: Esplorazione dello spazio iniziale di Windows Mixed Reality
-      href: navigating-the-windows-mixed-reality-home.md
-    - name: Guida per appassionati di VR
-      href: /windows/mixed-reality/enthusiast-guide/
-    - name: Intrattenimento basato sulla posizione
-      href: location-based-experiences.md
+    - name: HoloLens
+      items:
+        - name: Dettagli sull'hardware HoloLens 2
+          href: /hololens/hololens2-hardware
+        - name: Dettagli sull'hardware HoloLens (prima generazione)
+          href: /hololens/hololens1-hardware
+    - name: Visori VR immersive
+      items:
+        - name: Dettagli sull'hardware dei visori VR immersive
+          href: immersive-headset-hardware-details.md
+        - name: Esplorazione dello spazio iniziale di Windows Mixed Reality
+          href: navigating-the-windows-mixed-reality-home.md
+        - name: Guida per appassionati di VR
+          href: /windows/mixed-reality/enthusiast-guide/
+        - name: Intrattenimento basato sulla posizione
+          href: location-based-experiences.md
+    - name: Accessori
+      href: hardware-accessories.md
 - name: Risorse della community
   href: community.md
-- name: Accessori hardware
-  href: hardware-accessories.md

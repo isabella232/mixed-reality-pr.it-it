@@ -141,7 +141,7 @@
     - name: Informazioni su Unity
       href: 'https://learn.unity.com/'
     - name: Mixed Reality Toolkit
-      href: 'https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/'
+      href: /windows/mixed-reality/mrtk-unity/
     - name: Laboratori di progettazione di realtà mista
       href: 'https://github.com/microsoft/MixedRealityDesignLabs_Unity'
     - name: Microsoft Maquette
