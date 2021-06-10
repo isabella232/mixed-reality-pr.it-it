@@ -2,11 +2,13 @@
   href: index.md
 - name: Provare l'hub esempi
   href: running-examples-hub.md
+- name: Scene di esempio
+  href: running-example-scenes.md
 - name: Configurazione
   href: configuration/toc.yml
 - name: Panoramica dei dispositivi supportati
   href: supported-devices/toc.yml
-- name: Architettura
+- name: Architecture
   href: architecture/toc.yml
 - name: Cenni preliminari sulle funzionalità
   href: features/toc.yml

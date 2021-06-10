@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK
-ms.openlocfilehash: 4d00d9e94ad4e4a300fead30b52b9a78253885c3
-ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
+ms.openlocfilehash: fa2338545186f4eeb56ed6689d30f21f765064e2
+ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111772434"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111908425"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>Informazioni su Mixed Reality Toolkit
 
@@ -25,7 +25,7 @@ MRTK-Unity è un progetto gestito da Microsoft che fornisce un set di componenti
 
 * Fornisce il **sistema di input multipiattaforma e i blocchi predefiniti per le interazioni spaziali e l'interfaccia utente.**
 * Abilita **la creazione rapida di prototipi** tramite simulazione nell'editor che consente di visualizzare immediatamente le modifiche.
-* Opera come un **framework estendibile che** offre agli sviluppatori la possibilità di sostituire i componenti di base.
+* Funziona come un **framework estendibile che** offre agli sviluppatori la possibilità di sostituire i componenti di base.
 * **Supporta un'ampia gamma di piattaforme:**
 
 ::: moniker range=">= mrtkunity-2021-05"
@@ -77,7 +77,7 @@ Si vuole vedere cosa succede in un secondo tempo?
 
 | Ramo | Stato ci | Stato della documentazione |
 |---|---|---|
-| `main` |[![Stato CI](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_apis/build/status/public/mrtk_CI?branchName=main)](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_build/latest?definitionId=15)|[![Stato della documentazione](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_apis/build/status/public/mrtk_docs?branchName=main)](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_build/latest?definitionId=7)
+| `main` |[![Stato ci](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_apis/build/status/public/mrtk_CI?branchName=main)](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_build/latest?definitionId=15)|[![Stato della documentazione](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_apis/build/status/public/mrtk_docs?branchName=main)](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_build/latest?definitionId=7)
 
 ## <a name="feature-areas"></a>Aree di funzionalità
 
@@ -159,23 +159,23 @@ Si vuole vedere cosa succede in un secondo tempo?
 
 :::row:::
     :::column:::
-       [ ![ Pulsante](features/images/Button/MRTK_Button_Main.png)](features/ux-building-blocks/button.md) **[](features/ux-building-blocks/button.md)**<br>
-        Controllo pulsante che supporta vari metodi di input, HoloLens 2 la mano articolata di un pulsante
+       [ ![ Pulsante](features/images/Button/MRTK_Button_Main.png)](features/ux-building-blocks/button.md) **[Pulsante](features/ux-building-blocks/button.md)**<br>
+        Controllo pulsante che supporta vari metodi di input, incluso HoloLens 2 mano articolata del controllo
     :::column-end:::
     :::column:::
-        [ ![ Controllo Bounds Control](features/images/bounds-control/MRTK_BoundsControl_Main.png)](features/ux-building-blocks/bounds-control.md) **[Bounds](features/ux-building-blocks/bounds-control.md)**<br>
+        [ ![ Controllo Limiti del](features/images/bounds-control/MRTK_BoundsControl_Main.png)](features/ux-building-blocks/bounds-control.md) controllo **[Bounds](features/ux-building-blocks/bounds-control.md)**<br>
         Interfaccia utente standard per la modifica di oggetti nello spazio 3D
     :::column-end:::
     :::column:::
-        [ ![ Manipolatore di oggetti](features/images/manipulation-handler/MRTK_Manipulation_Main.png)](features/ux-building-blocks/object-manipulator.md) **[manipolatore di oggetti](features/ux-building-blocks/object-manipulator.md)**<br>
-        Script per la modifica di oggetti con una o due mani
+        [ ![ Manipolatore di oggetti](features/images/manipulation-handler/MRTK_Manipulation_Main.png)](features/ux-building-blocks/object-manipulator.md) **[Manipolatore di oggetti](features/ux-building-blocks/object-manipulator.md)**<br>
+        Script per la manipolazione di oggetti con una o due mani
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
        [ ![ Slate](features/images/slate/MRTK_Slate_Main.png)](features/ux-building-blocks/slate.md) **[Slate](features/ux-building-blocks/slate.md)**<br>
-        Piano di stile 2D che supporta lo scorrimento con input manuale articolato
+        Piano di stile 2D che supporta lo scorrimento con input con mano articolata
     :::column-end:::
     :::column:::
         [ ![ Tastiera di sistema tastiera](features/images/system-keyboard/MRTK_SystemKeyboard_Main.png)](features/ux-building-blocks/system-keyboard.md) di **[sistema](features/ux-building-blocks/system-keyboard.md)**<br>
@@ -190,74 +190,74 @@ Si vuole vedere cosa succede in un secondo tempo?
 :::row:::
     :::column:::
        [ ![ Risolutore](features/images/solver/MRTK_Solver_Main.png)](features/ux-building-blocks/solvers/solver.md) **[di risolutore](features/ux-building-blocks/solvers/solver.md)**<br>
-        Vari comportamenti di posizionamento degli oggetti, ad esempio tag-along, body-lock, constant view size e surface magnetism
+        Vari comportamenti di posizionamento degli oggetti, ad esempio tag lungo, blocco del corpo, dimensione costante della visualizzazione e magnetismo della superficie
     :::column-end:::
     :::column:::
-        [ ![ Raccolta di oggetti della](features/images/object-collection/MRTK_ObjectCollection_Main.jpg)](features/ux-building-blocks/object-collection.md) raccolta di **[oggetti](features/ux-building-blocks/object-collection.md)**<br>
+        [ ![ Raccolta di oggetti Raccolta](features/images/object-collection/MRTK_ObjectCollection_Main.jpg)](features/ux-building-blocks/object-collection.md) **[oggetti](features/ux-building-blocks/object-collection.md)**<br>
         Script per il layout di una matrice di oggetti in una forma tridimensionale
     :::column-end:::
     :::column:::
-        [ ![ Descrizione](features/images/tooltip/MRTK_Tooltip_Main.png)](features/ux-building-blocks/tooltip.md) **[comando](features/ux-building-blocks/tooltip.md)**<br>
-        Interfaccia utente delle annotazioni con un sistema flessibile di ancoraggio/pivot, che può essere usato per l'etichettatura di controller di movimento e oggetti
+        [ ![ Descrizione comando](features/images/tooltip/MRTK_Tooltip_Main.png)](features/ux-building-blocks/tooltip.md) **[](features/ux-building-blocks/tooltip.md)**<br>
+        Interfaccia utente di annotazione con un sistema di ancoraggio/pivot flessibile, che può essere usato per l'etichettatura di controller del movimento e oggetti
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
        [ ![ Dispositivo di](features/images/slider/MRTK_UX_Slider_Main.jpg)](features/ux-building-blocks/sliders.md) **[scorrimento](features/ux-building-blocks/sliders.md)**<br>
-        Interfaccia utente del dispositivo di scorrimento per la regolazione dei valori che supportano l'interazione di rilevamento diretto della mano
+        Interfaccia utente del dispositivo di scorrimento per la modifica dei valori che supportano l'interazione con il tracciamento diretto della mano
     :::column-end:::
     :::column:::
-        [ ![ MrTK Standard Shader](features/images/mrtk-standard-shader/MRTK_StandardShader.jpg)](features/rendering/mrtk-standard-shader.md) **[MRTK Standard Shader](features/rendering/mrtk-standard-shader.md)**<br>
-        Lo shader Standard di MRTK supporta vari elementi di progettazione Fluent con prestazioni elevate
+        Shader [ ![ MRTK Standard](features/images/mrtk-standard-shader/MRTK_StandardShader.jpg)](features/rendering/mrtk-standard-shader.md) **[MRTK Standard Shader](features/rendering/mrtk-standard-shader.md)**<br>
+        Lo shader Standard di MRTK supporta vari elementi di progettazione Fluent con prestazioni
     :::column-end:::
     :::column:::
-        [ ![ Menu a mano](features/images/solver/MRTK_UX_HandMenu.png)](features/ux-building-blocks/hand-menu.md) a **[mano](features/ux-building-blocks/hand-menu.md)**<br>
-        Interfaccia utente bloccata a mano per l'accesso rapido con il risolutore di vincoli della mano
+        [ ![ Menu a mano](features/images/solver/MRTK_UX_HandMenu.png)](features/ux-building-blocks/hand-menu.md) Menu **[mano](features/ux-building-blocks/hand-menu.md)**<br>
+        Interfaccia utente bloccata a mano per l'accesso rapido con il risolutore di vincoli di mano
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [ ![ Barra dell'app Barra](features/images/app-bar/MRTK_AppBar_Main.png)](features/ux-building-blocks/app-bar.md) **[delle app](features/ux-building-blocks/app-bar.md)**<br>
+       [ ![ Barra dell'app barra](features/images/app-bar/MRTK_AppBar_Main.png)](features/ux-building-blocks/app-bar.md) **[dell'app](features/ux-building-blocks/app-bar.md)**<br>
         Interfaccia utente per l'attivazione manuale del controllo Bounds
     :::column-end:::
     :::column:::
-        [ ![ Puntatori](features/images/Pointers/MRTK_Pointer_Main.png)](features/input/pointers.md) **[puntatori](features/input/pointers.md)**<br>
+        [ ![ Puntatori](features/images/Pointers/MRTK_Pointer_Main.png)](features/input/pointers.md) **[](features/input/pointers.md)**<br>
         Informazioni sui vari tipi di puntatori
     :::column-end:::
     :::column:::
-        [ ![ Visualizzazione della punta delle dita](features/images/fingertip/MRTK_FingertipVisualization_Main.png)](features/ux-building-blocks/fingertip-visualization.md) **[Visualizzazione punta del dito](features/ux-building-blocks/fingertip-visualization.md)**<br>
-        Convenienza visiva sulla punta delle dita che migliora la confidenza per l'interazione diretta
+        [ ![ Visualizzazione punta del dito](features/images/fingertip/MRTK_FingertipVisualization_Main.png)](features/ux-building-blocks/fingertip-visualization.md) **[Visualizzazione punta del dito](features/ux-building-blocks/fingertip-visualization.md)**<br>
+        L'affordance visivo sulla punta del dito che migliora la confidenza per l'interazione diretta
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       Near Menu Near Menu Near Menu [ ![ (Vicino al](features/images/near-menu/MRTK_UX_NearMenu.png)](features/ux-building-blocks/near-menu.md) **[menu vicino)](features/ux-building-blocks/near-menu.md)**<br>
-        Interfaccia utente del menu mobile per le interazioni vicine
+       [ ![ Near Menu](features/images/near-menu/MRTK_UX_NearMenu.png)](features/ux-building-blocks/near-menu.md) Near **[Menu (Menu vicino al menu vicino)](features/ux-building-blocks/near-menu.md)**<br>
+        Interfaccia utente a menu mobile per le interazioni da vicino
     :::column-end:::
     :::column:::
-        [ ![ Visualizzazione di consapevolezza spaziale Introduzione](features/images/spatial-awareness/MRTK_SpatialAwareness_Main.png)](features/spatial-awareness/spatial-awareness-getting-started.md) alla **[consapevolezza spaziale](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
+        [ ![ Spatial Awareness Getting Started](features/images/spatial-awareness/MRTK_SpatialAwareness_Main.png)](features/spatial-awareness/spatial-awareness-getting-started.md) Spatial Awareness View (Introduzione alla **[consapevolezza spaziale)](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
         Fare in modo che gli oggetti olografici interagiscano con gli ambienti fisici
     :::column-end:::
     :::column:::
-        [ ![ Comando vocale Comando](features/images/input/MRTK_Input_Speech.png)](features/input/speech.md) **[vocale](features/input/speech.md)**<br>
+        [ ![ Comando vocale](features/images/input/MRTK_Input_Speech.png)](features/input/speech.md) **[Comando vocale](features/input/speech.md)**<br>
         Script ed esempi per l'integrazione dell'input vocale
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [ ![ Indicatore di stato indicatore](features/images/progress-indicator/MRTK_ProgressIndicator_Main.png)](features/ux-building-blocks/progress-indicator.md) di **[stato](features/ux-building-blocks/progress-indicator.md)**<br>
+       [ ![ Indicatore di stato Indicatore](features/images/progress-indicator/MRTK_ProgressIndicator_Main.png)](features/ux-building-blocks/progress-indicator.md) di **[stato](features/ux-building-blocks/progress-indicator.md)**<br>
         Indicatore visivo per la comunicazione del processo o dell'operazione dei dati
     :::column-end:::
     :::column:::
         [ ![ Finestra di](features/images/Dialog/MRTK_UX_Dialog_Main.png)](features/ux-building-blocks/dialog.md) **[dialogo](features/ux-building-blocks/dialog.md)**<br>
-        Interfaccia utente per la richiesta di conferma o conferma dell'utente
+        Interfaccia utente per richiedere la conferma o l'acknowledgement dell'utente
     :::column-end:::
     :::column:::
-        [ ![ Hand Coach](features/images/hand-coach/MRTK_UX_HandCoach_Main.jpg)](features/ux-building-blocks/hand-coach.md) **[Hand Coach](features/ux-building-blocks/hand-coach.md)**<br>
+        [ ![ Hand Hand Hand](features/images/hand-coach/MRTK_UX_HandCoach_Main.jpg)](features/ux-building-blocks/hand-coach.md) **[Hand](features/ux-building-blocks/hand-coach.md)**<br>
         Componente che consente di guidare l'utente quando il movimento non è stato insegnato
     :::column-end:::
 :::row-end:::
@@ -265,51 +265,51 @@ Si vuole vedere cosa succede in un secondo tempo?
 :::row:::
     :::column:::
        [ ![ Hand Physics Service](features/images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)](features/experimental/hand-physics-service.md) Hand Physics Service **[[Sperimentale]](features/experimental/hand-physics-service.md)**<br>
-        Il servizio di fisica della mano consente eventi rigidi di collisione del corpo e interazioni con mani articolate
+        Il servizio di fisica della mano consente eventi rigidi di collisione del corpo e interazioni con le mani articolate
     :::column-end:::
     :::column:::
-        [ ![ Raccolta di scorrimento](features/images/scrolling-collection/ScrollingCollection_Main.jpg)](features/ux-building-blocks/scrolling-object-collection.md) **[raccolta a scorrimento](features/ux-building-blocks/scrolling-object-collection.md)**<br>
+        [ ![ Raccolta Scrolling Collection](features/images/scrolling-collection/ScrollingCollection_Main.jpg)](features/ux-building-blocks/scrolling-object-collection.md) **[Scrolling](features/ux-building-blocks/scrolling-object-collection.md)**<br>
         Raccolta di oggetti che scorre in modo nativo gli oggetti 3D
     :::column-end:::
     :::column:::
-        [ ![ Dock](features/images/Dock/MRTK_UX_Dock_Main.png)](features/experimental/dock.md) **[Dock [Sperimentale]](features/experimental/dock.md)**<br>
-        Dock consente agli oggetti di essere spostati in e fuori da posizioni predeterminate
+        [ ![ Dock](features/images/Dock/MRTK_UX_Dock_Main.png)](features/experimental/dock.md) **[[Sperimentale]](features/experimental/dock.md)**<br>
+        Dock consente di spostare gli oggetti da e verso posizioni predeterminate
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [ ![ Tracciamento oculare: Tracciamento oculare](features/images/eye-tracking/mrtk_et_targetselect.png)](features/input/eye-tracking/eye-tracking-target-selection.md) **[selezione destinazione: Selezione destinazione](features/input/eye-tracking/eye-tracking-target-selection.md)**<br>
-        Combinare gli occhi, la voce e l'input delle mani per selezionare rapidamente e senza sforzo gli ologrammi nella scena
+       [ ![ Tracciamento oculare: Selezione della destinazione](features/images/eye-tracking/mrtk_et_targetselect.png)](features/input/eye-tracking/eye-tracking-target-selection.md) **[Tracciamento oculare: selezione della destinazione](features/input/eye-tracking/eye-tracking-target-selection.md)**<br>
+        Combina gli occhi, la voce e l'input delle mani per selezionare in modo semplice e rapido gli ologrammi nella scena
     :::column-end:::
     :::column:::
-        [ ![ Tracciamento oculare: Tracciamento](features/images/eye-tracking/mrtk_et_navigation.png)](features/input/eye-tracking/eye-tracking-navigation.md) **[oculare di navigazione: Navigazione](features/input/eye-tracking/eye-tracking-navigation.md)**<br>
-        Informazioni su come scorrere automaticamente il testo o ingrandire fluentemente il contenuto con stato attivo in base a ciò che si sta esaminando
+        [ ![ Tracciamento oculare: navigazione](features/images/eye-tracking/mrtk_et_navigation.png)](features/input/eye-tracking/eye-tracking-navigation.md) **[tracciamento oculare: navigazione](features/input/eye-tracking/eye-tracking-navigation.md)**<br>
+        Informazioni su come scorrere automaticamente il testo o ingrandire fluently il contenuto con stato attivo in base a ciò che si sta esaminando
     :::column-end:::
     :::column:::
-        [ ![ Tracciamento oculare: Tracciamento oculare](features/images/eye-tracking/mrtk_et_heatmaps.png)](features/example-scenes/eye-tracking-examples-overview.md#visualization-of-visual-attention) **[mappa termica: Mappa termica](features/example-scenes/eye-tracking-examples-overview.md#visualization-of-visual-attention)**<br>
+        [ ![ Tracciamento oculare: Tracciamento](features/images/eye-tracking/mrtk_et_heatmaps.png)](features/example-scenes/eye-tracking-examples-overview.md#visualization-of-visual-attention) **[oculare mappa termica: mappa termica](features/example-scenes/eye-tracking-examples-overview.md#visualization-of-visual-attention)**<br>
         Esempi per la registrazione, il caricamento e la visualizzazione di ciò che gli utenti hanno visto nell'app
     :::column-end:::
 :::row-end:::
 
 ## <a name="tools"></a>Strumenti
 
-|  [ ![ Ottimizzare la finestra](features/images/MRTK_Icon_OptimizeWindow.png)](features/tools/optimize-window.md) di [Ottimizzazione finestra](features/tools/optimize-window.md) | [ ![ Finestra Dipendenze finestra](features/images/MRTK_Icon_DependencyWindow.png)](features/tools/dependency-window.md) [dipendenze](features/tools/dependency-window.md) | [ ![ Finestra di compilazione della](features/images/MRTK_Icon_BuildWindow.png)](features/tools/build-window.md) finestra di [compilazione](features/tools/build-window.md) | [ ![ Registrazione di input](features/images/MRTK_Icon_InputRecording.png)](features/input-simulation/input-animation-recording.md) Registrazione [input](features/input-simulation/input-animation-recording.md) |
+|  [ ![ Ottimizza finestra Ottimizza](features/images/MRTK_Icon_OptimizeWindow.png)](features/tools/optimize-window.md) [finestra](features/tools/optimize-window.md) | [ ![ Finestra dipendenze finestra](features/images/MRTK_Icon_DependencyWindow.png)](features/tools/dependency-window.md) [dipendenze](features/tools/dependency-window.md) | [ ![ Finestra di compilazione della](features/images/MRTK_Icon_BuildWindow.png)](features/tools/build-window.md) finestra di [compilazione](features/tools/build-window.md) | [ ![ Registrazione di input](features/images/MRTK_Icon_InputRecording.png)](features/input-simulation/input-animation-recording.md) Registrazione di [input](features/input-simulation/input-animation-recording.md) |
 |:--- | :--- | :--- | :--- |
-| Automatizzare la configurazione dei progetti di realtà mista per le ottimizzazioni delle prestazioni | Analizzare le dipendenze tra asset e identificare gli asset inutilizzati |  Configurare ed eseguire un processo di compilazione end-to-end per applicazioni di realtà mista | Registrare e riprodurre i dati di spostamento della testa e rilevamento della mano nell'editor |
+| Automatizzare la configurazione dei progetti di realtà mista per ottimizzare le prestazioni | Analizzare le dipendenze tra asset e identificare gli asset inutilizzati |  Configurare ed eseguire un processo di compilazione end-to-end per le applicazioni di realtà mista | Registrare e riprodurre i dati relativi al movimento della testa e al tracciamento della mano nell'editor |
 
 ## <a name="example-scenes"></a>Scene di esempio
 
-Esplorare i vari tipi di interazioni e controlli dell'interfaccia utente di MRTK in [questa scena di esempio.](features/example-scenes/hand-interaction-examples.md)
+MRTK fornisce scene di esempio che illustrano come usare le funzionalità di MRTK. È possibile trovare le scene di esempio nella cartella Assets/MRTK/Examples/Demos. Leggere la [pagina Scene di](running-example-scenes.md) esempio per informazioni su come acquisire ed eseguire scene di esempio. [La scena Hand Interaction Examples (Esempi](features/example-scenes/hand-interaction-examples.md) di interazione manuale) è un ottimo punto di partenza per iniziare a sperimentare i blocchi predefiniti di MRTK per le interazioni e l'interfaccia utente.
 
 [![Scena di esempio 2](features/images/MRTK_Examples.png)](features/example-scenes/hand-interaction-examples.md)
 
-## <a name="mrtk-examples-hub"></a>Hub degli esempi MRTK
+## <a name="mrtk-examples-hub"></a>Hub degli esempi di MRTK
 
-Con l'hub degli esempi MRTK è possibile provare diverse scene di esempio in MRTK.
-È possibile scaricare pacchetti di app predefiniti per HoloLens(x86), HoloLens 2(ARM) e visori immersivi Windows Mixed Reality (x64) selezionando il pacchetto "Esempi di Mixed Reality Toolkit" in [MR Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool). Assicurarsi di usare [il Portale di dispositivi di Windows per installare le app in HoloLens (prima generazione).](/hololens/hololens-install-apps#use-the-windows-device-portal-to-install-apps-on-hololens) In HoloLens 2, è possibile scaricare e installare [l'hub esempi MRTK tramite l'app Microsoft Store .](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4)
+Con l'hub degli esempi di MRTK è possibile provare varie scene di esempio in MRTK senza compilare e distribuire ogni scena.
+Puoi scaricare pacchetti di app predefiniti per HoloLens(x86), HoloLens 2 (ARM) e visori VR immersive (x64) di Windows Mixed Reality selezionando il pacchetto "Mixed Reality Toolkit Examples" (Esempi di Mixed Reality Toolkit) nello strumento per le funzionalità [MR.](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) Assicurarsi di usare [il Portale di dispositivi di Windows per installare le app in HoloLens (prima generazione).](/hololens/hololens-install-apps#use-the-windows-device-portal-to-install-apps-on-hololens) In HoloLens 2 possibile scaricare e installare [l'hub di esempi mrtk tramite l'app Microsoft Store](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4).
 
-Per [informazioni dettagliate sulla](features/example-scenes/example-hub.md) creazione di un hub a più scene con il sistema di scena e il servizio di transizione della scena di MRTK, vedere la pagina README dell'hub degli esempi.
+Per informazioni dettagliate sulla creazione di un hub a più scene con il sistema di scena e il servizio di transizione della scena di MRTK, vedere la pagina [Examples Hub README](features/example-scenes/example-hub.md) (File LEGGIMI dell'hub di esempi).
 
 [![Hub scena di esempio](features/images/MRTK_ExamplesHub.png)](features/example-scenes/hand-interaction-examples.md)
 
@@ -317,15 +317,15 @@ Per [informazioni dettagliate sulla](features/example-scenes/example-hub.md) cre
 
 | [![Tavola periodica degli elementi](features/images/MRDL_PeriodicTable.jpg)](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)| [![Galaxy Explorer](features/images/MRTK_GalaxyExplorer.jpg)](/windows/mixed-reality/galaxy-explorer-update)| [![App di esempio Surfaces](features/images/MRDL_Surfaces.jpg)](/windows/mixed-reality/sampleapp-surfaces)|
 |:--- | :--- | :--- |
-| [La tabella periodica degli](https://github.com/Microsoft/MRDL_Unity_PeriodicTable) elementi è un'app di esempio open source che illustra come usare il sistema di input e i blocchi predefiniti di MRTK per creare un'esperienza app per visori HoloLens e Immersive. Leggere la storia di porting: Portare la tabella periodica dell'app Elements HoloLens 2 [con MRTK v2](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158) |[Galaxy Explorer](https://github.com/Microsoft/GalaxyExplorer) è un'app di esempio open source originariamente sviluppata a marzo 2016 nell'ambito della campagna "Condividi la tua idea" di HoloLens. Galaxy Explorer è stato aggiornato con nuove funzionalità per HoloLens 2, usando MRTK v2. Leggere la storia: [The Making of Galaxy Explorer for HoloLens 2](/windows/mixed-reality/galaxy-explorer-update) |[Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces) è un'app di esempio open source per HoloLens 2 che esplora come creare una emozione tattile con l'oggetto visivo, l'audio e il tracciamento della mano completamente articolato. Per informazioni dettagliate sulla progettazione e sullo sviluppo, vedere la sessione Microsoft MR Dev Days [Learnings dell'app Surfaces.](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App) |
+| [La tabella](https://github.com/Microsoft/MRDL_Unity_PeriodicTable) periodica degli elementi è un'app open source di esempio che illustra come usare il sistema di input e i blocchi predefiniti di MRTK per creare un'esperienza app per HoloLens e visori VR immersive. Leggere la storia della portabilità: Portare la tabella [periodica dell'app Elements HoloLens 2 con MRTK v2](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158) |[Galaxy Explorer](https://github.com/Microsoft/GalaxyExplorer) è un'app di esempio open source sviluppata originariamente nel mese di marzo 2016 come parte della campagna "Condividi la tua idea" di HoloLens. Galaxy Explorer è stato aggiornato con nuove funzionalità per HoloLens 2, usando MRTK v2. Leggere la storia: [The Making of Galaxy Explorer for HoloLens 2](/windows/mixed-reality/galaxy-explorer-update) |[Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces) è un'app di esempio open source per HoloLens 2 che illustra come è possibile creare un tattile con elementi visivi, audio e tracciamento delle mani completamente articolati. Per informazioni dettagliate sulla progettazione e lo sviluppo, vedere la sessione Microsoft MR Dev Days [Learnings from the Surfaces app](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App) (Apprendimento della sessione di Microsoft MR Dev Days dall'app Surfaces). |
 
 ## <a name="session-videos-from-mixed-reality-dev-days-2020"></a>Video di sessione di Mixed Reality Dev Days 2020
 
 | [![MRDevDays 1](features/images/MRDevDays_Session1.png)](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-MRTK-Unity)| [![MRDevDays 3](features/images/MRDevDays_Session2.png)](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/MRTKs-UX-Building-Blocks)| [![MRDevDays 2](features/images/MRDevDays_Session3.png)](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/MRTK-Performance-and-Shaders)|
 |:--- | :--- | :--- |
-| Esercitazione su come creare una semplice app MRTK dall'inizio alla fine. Informazioni sui concetti di interazione e sulle funzionalità multipiattaforma di MRTK. | Approfondimenti sui blocchi predefiniti dell'esperienza utente di MRTK che consentono di creare esperienze di realtà mista eccezionali. | Introduzione agli strumenti per le prestazioni, sia in MRTK che esterna, nonché una panoramica dello shader STANDARD MRTK. |
+| Esercitazione su come creare una semplice app MRTK dall'inizio alla fine. Informazioni sui concetti di interazione e sulle funzionalità multipiattaforma di MRTK. | Approfondimento sui blocchi predefiniti dell'esperienza utente di MRTK che consentono di creare esperienze di realtà mista di qualità. | Introduzione agli strumenti per le prestazioni, sia in MRTK che esterni, nonché una panoramica dello shader standard MRTK. |
 
-Vedere [Mixed Reality Dev Days](/windows/mixed-reality/mr-dev-days-sessions) per esplorare altri video di sessione.
+Vedi [Mixed Reality Dev Days per](/windows/mixed-reality/mr-dev-days-sessions) esplorare altri video di sessione.
 
 ## <a name="engage-with-the-community"></a>Interagire con la community
 
