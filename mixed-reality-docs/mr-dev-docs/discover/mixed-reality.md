@@ -1,18 +1,18 @@
 ---
-title: Che cos'è Realtà mista?
-description: Questo articolo definisce la realtà mista e spiega in quale punto dello spettro della realtà mista si collocano i dispositivi AR e VR.
+title: Realtà mista?
+description: Discussione sulla realtà mista, demomstrating dell'uso di dispositivi AR e VR nello spettro della realtà mista.
 author: brandonbray
 ms.author: branbray
 ms.date: 08/26/2020
 ms.topic: article
 keywords: Realtà mista, olografica, AR, VR, MR, XR, realtà aumentata, realtà virtuale, spiegazione, case study, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata
 ms.localizationpriority: high
-ms.openlocfilehash: 2eac20b85ceeb9413dfc0b6820cceda2ddf335c5
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 0ff9fcd79c778c2b056cd0c6035ddf8cb005273a
+ms.sourcegitcommit: 5617575cf550dd03fba0bfd5263e97972dcc646b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98583010"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "111547114"
 ---
 # <a name="what-is-mixed-reality"></a>Che cos'è Realtà mista?
 

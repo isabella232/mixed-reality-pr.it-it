@@ -1,62 +1,62 @@
 ---
 title: Panoramica della conversione
-description: Panoramica delle varie opzioni di porting per l'uso delle applicazioni esistenti per la realtà mista per HoloLens e VR.
+description: Panoramica delle varie opzioni di porting per portare le applicazioni esistenti in Realtà mista per HoloLens e VR.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
-keywords: porting, Unity, middleware, motore, UWP, Win32
-ms.openlocfilehash: 5b89d3448a7baf12cc76dd3677140fcf6e297ee2
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: porting, unity, middleware, motore, UWP, Win32
+ms.openlocfilehash: 9b056bd81a725fea23c1e7f3bfcd9844680086c6
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299786"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600500"
 ---
 # <a name="porting-overview"></a>Panoramica della conversione
 
-Quando si tratta di eseguire il porting o l'aggiornamento dei progetti esistenti per la realtà mista, il percorso di porting dipende dal fatto che l'app venga compilata con Unity o Unreal Engine e abbia come destinazione HoloLens (1st Gen) o HoloLens 2 o SteamVR. Questa pagina di panoramica contiene le raccomandazioni correnti per ogni piattaforma e dispositivo. Assicurarsi di controllare quando questi processi cambiano sempre.
+Quando si tratta di eseguire il porting o l'aggiornamento dei progetti esistenti per la realtà mista, il percorso di porting dipende dal fatto che l'app sia compilata con Unity o Unreal Engine e che sia destinata a HoloLens (prima generazione) o HoloLens 2 o a SteamVR. Questa pagina di panoramica contiene le raccomandazioni correnti per ogni piattaforma e dispositivo. Assicurarsi di controllare di nuovo perché questi processi cambiano sempre.
 
-Per prima cosa, configurare la destinazione del progetto in base a [Unity](#unity) e ai consigli non [reali](#unreal) , quindi seguire uno o più dei nostri scenari di porting:
+Prima di tutto, configurare la destinazione del progetto in base alle raccomandazioni [di Unity](#unity) e [Unreal,](#unreal) quindi seguire uno o più scenari di porting:
 
-- [HoloLens (1a generazione) a HoloLens 2](#hololens-1st-gen-unity-apps-to-hololens-2)
+- [HoloLens (prima generazione) per HoloLens 2](#hololens-1st-gen-unity-apps-to-hololens-2)
 - [Visori VR di Windows Mixed Reality](#windows-mixed-reality-headsets)
-- [App SteamVR](#steamvr-applications)
-- [app UWP 2D](#2d-universal-windows-applications)
+- [App di SteamVR](#steamvr-applications)
+- [App UWP 2D](#2d-universal-windows-applications)
 
-## <a name="recommended-project-targets"></a>Destinazioni progetto consigliate
+## <a name="recommended-project-targets"></a>Destinazioni del progetto consigliate
 
-È importante lasciare aggiornati i progetti, sia che si tratti di trasferire un'app a un altro dispositivo di destinazione. Per le raccomandazioni correnti, fare riferimento alle risorse basate su motore elencate di seguito.
+È importante mantenere aggiornati i progetti, indipendentemente dal fatto che si trasla un'app in un altro dispositivo di destinazione. Per le raccomandazioni correnti, vedere le risorse basate sul motore elencate di seguito.
 
 ### <a name="unity"></a>Unity
 
-L'attuale Consiglio per lo sviluppo di Unity con realtà mista è **unity 2019 LTS che usa il pacchetto XR legacy**. Se il progetto usa il Toolkit per la realtà mista, verificare che sia disponibile la versione più recente, che attualmente è **MRTK-unity 2,5**.
+La raccomandazione corrente per lo sviluppo di Unity con Realtà mista **è Unity 2019 LTS usando il pacchetto XR legacy.** Se il progetto usa Mixed Reality Toolkit, verificare di avere la versione più recente, attualmente **MRTK-Unity 2.5.**
 
 > [!CAUTION]
-> Sebbene l'SDK di XR sia disponibile con questa versione di Unity, gli ancoraggi spaziali di Azure non sono attualmente compatibili con questa configurazione. Questa raccomandazione verrà aggiornata con una versione futura del pacchetto di ancoraggi spaziali di Azure per Unity.
+> Anche se XR SDK è disponibile con questa versione di Unity, Ancoraggi nello spazio di Azure non è attualmente compatibile con questa configurazione. Questa raccomandazione verrà aggiornata con una versione futura del pacchetto Ancoraggi nello stato di Azure per Unity.
 > 
-> * Se non sono necessari ancoraggi spaziali di Azure, è possibile [configurare il progetto Unity per XR](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) e iniziare [a usare MRTK e XR SDK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk).
+> * Se non sono necessari ancoraggi nello stato di Azure, è possibile configurare il progetto Unity per [XR](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) e iniziare a usare [MRTK e XR SDK.](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk)
 > 
-> * Se attualmente si usa l'SDK XR nel progetto e si vogliono usare gli ancoraggi spaziali di Azure, disinstallare XR SDK e reinstallare il pacchetto XR legacy per ripristinare le impostazioni del progetto.
+> * Se si usa XR SDK nel progetto e si vuole usare Ancoraggi nello spaziali di Azure, disinstallare XR SDK e reinstallare il pacchetto XR legacy per ripristinare le impostazioni del progetto.
 
 ### <a name="unreal"></a>Unreal
 
-Il nostro Consiglio attuale per lo sviluppo non reale con realtà mista è **Unreal Engine 4,26**. Se il progetto usa gli strumenti UX reality Toolkit, assicurarsi di usare la versione più recente, attualmente **UXT 0,10**.
+La raccomandazione corrente per lo sviluppo unreal con realtà mista **è Unreal Engine 4.26.** Se il progetto usa Mixed Reality Toolkit UX Tools, assicurarsi di usare la versione più recente, attualmente **UXT 0.10.**
 
 ## <a name="porting-scenarios"></a>Scenari di porting
 
-### <a name="hololens-1st-gen-unity-apps-to-hololens-2"></a>HoloLens (1st Gen) Unity Apps to HoloLens 2
+### <a name="hololens-1st-gen-unity-apps-to-hololens-2"></a>App Unity holoLens (prima generazione) da HoloLens 2
 
-Se si dispone di un'applicazione HoloLens (1st Gen) Unity esistente che si desidera trasferire a un HoloLens 2, seguire le istruzioni contenute nell'articolo relativo al [porting di HoloLens](./porting-hl1-hl2.md).
+Se si dispone di un'applicazione Unity HoloLens (prima generazione) che si desidera convertire in un HoloLens 2, seguire le istruzioni nell'articolo sulla portabilità di [HoloLens.](./porting-hl1-hl2.md)
 
 ### <a name="windows-mixed-reality-headsets"></a>Visori VR di Windows Mixed Reality
 
-Se è stato compilato contenuto per altri dispositivi, ad esempio Oculus Rift o HP Reverb G2, sarà necessario ridestinare gli SDK VR specifici del fornitore e le API di mapping di input. È possibile trovare informazioni per gli scenari Unity e Unreal porting nella [Guida alla portabilità delle app immersive](porting-guides.md).
+Se hai creato contenuto per altri dispositivi, ad esempio Oculus Rift o HP Reverb G2, dovrai ridestinare gli SDK VR specifici del fornitore e potenzialmente le API di mapping dell'input. Le informazioni per gli scenari di porting Unity e Unreal sono disponibili nella guida alla porting delle [app immersive.](porting-guides.md)
 
-### <a name="steamvr-applications"></a>Applicazioni SteamVR
+### <a name="steamvr-applications"></a>Applicazioni di SteamVR
 
-Per qualsiasi esperienza SteamVR che si vuole aggiornare per gli auricolari di realtà mista di Windows, vedere la [Guida all'aggiornamento di SteamVR](updating-your-steamvr-application-for-windows-mixed-reality.md).
+Per tutte le esperienze di SteamVR che si vuole aggiornare per Windows Mixed Reality visori, vedere la guida all'aggiornamento di [SteamVR.](updating-your-steamvr-application-for-windows-mixed-reality.md)
 
-### <a name="2d-universal-windows-applications"></a>applicazioni Windows universali 2D
+### <a name="2d-universal-windows-applications"></a>Applicazioni 2D universali di Windows
 
-Se si dispone di un'app UWP 2D esistente che si desidera trasferire a un auricolare o a un HoloLens per la realtà mista di Windows, seguire le istruzioni [per il porting di UWP 2D per la realtà mista di Windows](building-2d-apps.md) .
+Se si ha un'app UWP 2D esistente che si desidera convertire in un visore vr immersivo Windows Mixed Reality o HoloLens, seguire le istruzioni per il porting delle app [UWP 2D](building-2d-apps.md) per Windows Mixed Reality video.

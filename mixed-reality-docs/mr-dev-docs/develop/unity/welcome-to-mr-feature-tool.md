@@ -1,146 +1,146 @@
 ---
-title: Strumento per la funzionalità di realtà mista
-description: Informazioni sulle nozioni di base dello strumento per la funzionalità MR per lo sviluppo di HoloLens e VR.
+title: Introduzione a Mixed Reality Feature Tool
+description: Informazioni di base sullo strumento di funzionalità MR per lo sviluppo di HoloLens e realtà virtuale.
 author: davidkline-ms
 ms.author: v-hferrone
 ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: aggiornamento, strumenti, attività iniziali, nozioni di base, unity, visual studio, toolkit, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, installazione, Windows, HoloLens, emulatore, unreal, openxr
-ms.openlocfilehash: 990119b25aeffcb4ce786120659af8f290a6fde2
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 4e822f2dda2a314ce06bc394a4d92b1aa6953af3
+ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550201"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111772414"
 ---
-# <a name="welcome-to-the-mixed-reality-feature-tool"></a>Strumento per la funzionalità di realtà mista
+# <a name="welcome-to-the-mixed-reality-feature-tool"></a>Introduzione a Mixed Reality Feature Tool
 
-![Immagine del banner dello strumento della funzionalità di realtà mista](images/feature-tool-banner.png)
+![Immagine del banner dello strumento di funzionalità di realtà mista](images/feature-tool-banner.png)
 
 > [!IMPORTANT]
-> Lo strumento per la funzionalità di realtà mista è disponibile solo per Unity al momento. Se si sta sviluppando in Unreal, fare riferimento alla documentazione di [installazione degli strumenti](../install-the-tools.md) .
+> Lo strumento di funzionalità di realtà mista è attualmente disponibile solo per Unity. Se si sviluppa in Unreal, vedere la documentazione [sull'installazione degli](../install-the-tools.md) strumenti.
 
-Lo strumento per la funzionalità di realtà mista è un nuovo modo per gli sviluppatori di individuare, aggiornare e aggiungere pacchetti di funzionalità di realtà mista in progetti Unity. È possibile cercare i pacchetti in base al nome o alla categoria, visualizzarne le dipendenze e persino visualizzare le modifiche proposte al file manifesto del progetto prima dell'importazione. Se non si è mai usato un file manifesto prima, si tratta di un file JSON contenente tutti i pacchetti di progetti. Dopo aver convalidato i pacchetti desiderati, lo strumento per la funzionalità di realtà mista li scaricherà nel progetto di propria scelta.
+Lo strumento di funzionalità di realtà mista è un nuovo modo per gli sviluppatori di individuare, aggiornare e aggiungere pacchetti di funzionalità di realtà mista nei progetti Unity. È possibile cercare i pacchetti in base al nome o alla categoria, visualizzarne le dipendenze e persino visualizzare le modifiche proposte al file manifesto del progetto prima dell'importazione. Se non si è mai usato un file manifesto prima, si tratta di un file JSON contenente tutti i pacchetti di progetti. Dopo aver convalidato i pacchetti desiderati, lo strumento per la funzionalità di realtà mista li scaricherà nel progetto di propria scelta.
 
 ## <a name="system-requirements"></a>Requisiti di sistema
 
-Prima di poter eseguire lo strumento per la funzionalità di realtà mista, è necessario:
+Prima di poter eseguire lo strumento di funzionalità di realtà mista, è necessario:
 
-* [Runtime .NET 5,0](https://dotnet.microsoft.com/download/dotnet/5.0)
+* [Runtime di .NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
 * [Windows 10](https://www.microsoft.com/software-download/windows10ISO)
 
 > [!NOTE]
-> Lo strumento per le funzionalità di realtà mista attualmente viene eseguito solo in Windows, ma il supporto MacOS sarà presto disponibile.
+> Lo strumento per le funzionalità di realtà mista attualmente viene eseguito solo in Windows, ma il supporto per MacOS sarà presto disponibile.
 
 ## <a name="download"></a>Scarica
 
 Dopo aver configurato l'ambiente:
 
-* [Scaricare la versione più recente dello strumento per le funzionalità di realtà mista](https://aka.ms/MRFeatureTool) dall'area download Microsoft.
+* [Scaricare la versione più recente di Mixed Reality Feature Tool dall'Area](https://aka.ms/MRFeatureTool) download Microsoft.
 * Al termine del download, decomprimere il file e salvarlo sul desktop
-    * Si consiglia di creare un collegamento al file eseguibile per un accesso più rapido
+    * È consigliabile creare un collegamento al file eseguibile per un accesso più rapido
 
 > [!NOTE]
-> Se non si ha familiarità con l'uso di gestione pacchetti Unity, seguire le [istruzioni di UPM](/windows/mixed-reality/mrtk-unity/configuration/usingupm#managing-mixed-reality-features-with-the-unity-package-manager).
+> Se non si ha di nuovo la versione di Unity Gestione pacchetti, seguire le [istruzioni upm](/windows/mixed-reality/mrtk-unity/configuration/usingupm#managing-mixed-reality-features-with-the-unity-package-manager).
 
 ## <a name="changes-in-this-release"></a>Modifiche in questa versione
 
-La versione beta di 1.0.2103 include le correzioni seguenti:
+La versione 1.0.2103 Beta include le correzioni seguenti:
 
-* Miglioramenti per il download del rilevamento degli errori.
-* Aggiornamenti sulla modalità di scrittura dei manifesti per evitare errori di aggiornamento corretti.
-* Escpaing è stato rimosso da percorsi di file nel manifesto del progetto.
+* Miglioramenti al rilevamento degli errori di download.
+* Aggiornamenti sulla modalità di scrittura dei manifesti per evitare che l'aggiornamento non venga eseguito correttamente.
+* Il deposito è stato rimosso dai percorsi di file nel manifesto del progetto.
 
 In questa versione sono state aggiunte le funzionalità seguenti:
 
-* Il catalogo delle funzionalità è ora memorizzato nella cache. Per verificare la disponibilità di nuove funzionalità e aggiornamenti, usare il pulsante Aggiorna nell'individuazione.
-* Spostare la selezione del progetto dal passaggio importa a prima dell'individuazione.
-* I pacchetti disponibili vengono filtrati in base alla versione di Unity specificata dal progetto.
-* Nella visualizzazione individuazione sono ora visualizzati i pacchetti attualmente installati.
+* Il catalogo di funzionalità è ora memorizzato nella cache. Per verificare la disponibilità di nuove funzionalità e aggiornamenti, usare il pulsante di aggiornamento in Individuazione.
+* Spostare la selezione del progetto dal passaggio Importa a prima dell'individuazione.
+* I pacchetti disponibili vengono filtrati in base alla versione unity specificata del progetto.
+* Nella visualizzazione di individuazione vengono ora visualizzati i pacchetti attualmente installati.
 
 ## <a name="1-getting-started"></a>1. Guida introduttiva
 
-Avviare lo strumento della funzionalità di realtà mista dal file eseguibile, che visualizza la pagina iniziale al primo avvio:
+Avviare Mixed Reality Feature Tool dal file eseguibile, che visualizza la pagina iniziale al primo avvio:
 
-![Introduzione](images/FeatureToolStart.png)
+![Guida introduttiva](images/FeatureToolStart.png)
 
 Dalla pagina iniziale è possibile:
 
-* [Configurare](configuring-feature-tool.md) le impostazioni dello strumento usando il pulsante dell' **icona dell'ingranaggio**
-* Usare il pulsante **punto interrogativo** per avviare il Web browser predefinito e visualizzare la documentazione
-* Selezionare **inizia** per iniziare a individuare i pacchetti di funzionalità
+* [Configurare le](configuring-feature-tool.md) impostazioni dello strumento usando il **pulsante icona a forma di** ingranaggio
+* Usare il **pulsante punto interrogativo** per avviare il Web browser predefinito e visualizzare la documentazione
+* Selezionare **Avvia per** iniziare a individuare i pacchetti di funzionalità
 
-## <a name="2-selecting-your-unity-project"></a>2. selezione del progetto Unity
+## <a name="2-selecting-your-unity-project"></a>2. Selezione del progetto Unity
 
-Per assicurarsi che tutte le funzionalità individuate siano supportate nella versione di Unity del progetto, il primo passaggio consiste nel puntare lo strumento della funzionalità di realtà mista al progetto usando il pulsante con i **puntini** di sospensione (a sinistra del campo percorso progetto).
+Per assicurarsi che tutte le funzionalità individuate siano supportate nella versione del progetto di Unity, il  passaggio principale consiste nell'puntare lo strumento di funzionalità di realtà mista al progetto usando il pulsante con i puntini di sospensione (a destra del campo del percorso del progetto).
 
 ![Selezionare il progetto Unity](images/FeatureToolSelectUnityProject.png)
 
 > [!NOTE]
-> La finestra di dialogo visualizzata quando si Esplora la cartella del progetto Unity contiene ' _' come nome file. Per abilitare la selezione della cartella, è necessario specificare un valore per il nome del file.
+> La finestra di dialogo visualizzata quando si esplora la cartella del progetto Unity contiene "_" come nome del file. Per consentire la selezione della cartella, è necessario che sia presente un valore per il nome del file.
 
-Dopo aver individuato la cartella del progetto, fare clic sul pulsante Apri per tornare allo strumento funzionalità per la realtà mista.
+Dopo aver individuato la cartella del progetto, fai clic sul pulsante Apri per tornare a Mixed Reality Feature Tool (Strumento per le funzionalità di realtà mista).
 
 > [!IMPORTANT]
-> Lo strumento per la funzionalità di realtà mista esegue la convalida per assicurarsi che sia stato indirizzato a una cartella di progetto Unity. La cartella deve contenere `Assets` le `Packages` cartelle, e `Project Settings` .
+> Lo strumento di funzionalità di realtà mista esegue la convalida per assicurarsi che sia stato indirizzato a una cartella di progetto Unity. La cartella deve `Assets` contenere `Packages` le cartelle , `Project Settings` e .
 
-## <a name="3-discovering-and-acquiring-feature-packages"></a>3. individuazione e acquisizione dei pacchetti di funzionalità
+## <a name="3-discovering-and-acquiring-feature-packages"></a>3. Individuazione e acquisizione di pacchetti di funzionalità
 
 > [!NOTE]
-> La versione beta di 1.0.2103 ora memorizza nella cache il contenuto del catalogo funzionalità ogni volta che viene eseguito l'accesso al server. Questa modifica consente di accedere rapidamente alle funzionalità disponibili, a scapito della visualizzazione dei dati più recenti assoluti. Per aggiornare il catalogo, usare il pulsante **Aggiorna** .
+> La versione 1.0.2103 Beta ora memorizza nella cache il contenuto del catalogo di funzionalità ogni volta che si accede al server. Questa modifica consente l'accesso rapido alle funzionalità disponibili, a scapito della visualizzazione dei dati più recenti assoluti. Per aggiornare il catalogo, usare il **pulsante** Aggiorna.
 
-Le funzionalità sono raggruppate per categoria per semplificare la ricerca. Ad esempio, la categoria del **Toolkit di realtà mista** offre diverse funzionalità per scegliere:
+Le funzionalità sono raggruppate per categoria per semplificare l'individuazione. Ad esempio, la **categoria Mixed Reality Toolkit** include diverse funzionalità tra cui scegliere:
 
 ![Individuazione e acquisizione](images/FeatureToolDiscovery.png)
 
-Quando lo strumento della funzionalità di realtà mista riconosce le funzionalità importate in precedenza, Visualizza un messaggio di notifica per ogni.
+Quando lo strumento di funzionalità di realtà mista riconosce una o più funzionalità importate in precedenza, visualizza un messaggio di notifica per ognuna.
 
 ![Notifica della funzionalità importata](images/feature-tool-imported-note.png)
 
 
-Una volta effettuate le scelte, selezionare **Recupera funzionalità** per recuperare tutti i pacchetti necessari dal catalogo. Per ulteriori informazioni, vedere [individuazione e acquisizione di funzionalità](discovering-features.md).
+Dopo aver effettuato le scelte, selezionare **Recupera funzionalità** per recuperare tutti i pacchetti necessari dal catalogo. Per altre informazioni, vedere Individuazione [e acquisizione delle funzionalità.](discovering-features.md)
 
-## <a name="4-importing-feature-packages"></a>4. importazione di pacchetti di funzionalità
+## <a name="4-importing-feature-packages"></a>4. Importazione di pacchetti di funzionalità
 
-Dopo l'acquisizione viene presentato il set completo di pacchetti, insieme a un elenco di dipendenze obbligatorie. Se è necessario modificare le selezioni delle funzionalità o dei pacchetti, questo è il momento:
+Dopo l'acquisizione, viene presentato il set completo di pacchetti, insieme a un elenco delle dipendenze necessarie. Se è necessario modificare le funzionalità o le selezioni dei pacchetti, questo è il momento seguente:
 
 ![Importazione di pacchetti](images/FeatureToolImport.png)
 
-Si consiglia vivamente di usare il pulsante **Validate** per assicurarsi che il progetto Unity possa importare correttamente le funzionalità selezionate. Dopo la convalida, verrà visualizzata una finestra di dialogo popup con un messaggio di operazione completata o un elenco di problemi identificati.
+È consigliabile usare il **pulsante Convalida** per assicurarsi che il progetto Unity possa importare correttamente le funzionalità selezionate. Dopo la convalida, verrà visualizzata una finestra di dialogo popup con un messaggio di operazione riuscita o un elenco di problemi identificati.
 
 Selezionare **Importa** per continuare.
 
 > [!NOTE]
-> Dopo aver fatto clic sul pulsante **Importa** , se eventuali problemi rimangono, verrà visualizzato un messaggio semplice. È consigliabile fare clic su No e utilizzare il pulsante **Validate** per visualizzare e risolvere i problemi.
+> Dopo aver fatto **clic sul** pulsante Importa, se permangono problemi verrà visualizzato un semplice messaggio. È consigliabile fare clic su No e usare il **pulsante** Convalida per visualizzare e risolvere i problemi.
 
-Per ulteriori informazioni, vedere [importazione di funzionalità](importing-features.md).
+Per altre informazioni, vedere Importazione [di funzionalità.](importing-features.md)
 
 ## <a name="5-reviewing-and-approving-project-changes"></a>5. Revisione e approvazione delle modifiche del progetto
 
-Il passaggio finale consiste nell'esaminare e approvare le modifiche proposte al manifesto e ai file di progetto:
+Il passaggio finale consiste nell'esaminare e approvare le modifiche proposte ai file manifesto e di progetto:
 
 * Le modifiche proposte al manifesto vengono visualizzate a sinistra
 * I file da aggiungere al progetto sono elencati a destra
-* Il pulsante **Confronta** consente di visualizzare side-by-side del manifesto corrente e delle modifiche proposte
+* Il **pulsante** Confronta consente la visualizzazione affiancata del manifesto corrente e delle modifiche proposte
 
 ![Autorizzazione](images/FeatureToolApprovalRequest.png)
 
-Per ulteriori informazioni, vedere [revisione e approvazione delle modifiche del progetto](reviewing-changes.md).
+Per altre informazioni, vedere [Revisione e approvazione delle modifiche del progetto.](reviewing-changes.md)
 
-## <a name="6-project-updated"></a>6. progetto aggiornato
+## <a name="6-project-updated"></a>6. Progetto aggiornato
 
-Quando vengono approvate le modifiche proposte, il progetto Unity di destinazione viene aggiornato in modo da fare riferimento alle funzionalità della realtà mista selezionate.
+Quando le modifiche proposte vengono approvate, il progetto Unity di destinazione viene aggiornato per fare riferimento alle funzionalità di realtà mista selezionate.
 
 ![Progetto aggiornato](images/FeatureToolProjectUpdated.png)
 
-La cartella **packages** del progetto Unity dispone ora di una sottocartella **MixedReality** con i file del pacchetto di funzionalità e il manifesto conterrà i riferimenti appropriati.
+La cartella Packages  del progetto Unity include ora una sottocartella **MixedReality** con i file del pacchetto di funzionalità e il manifesto conterrà i riferimenti appropriati.
 
-Tornare a Unity, attendere il caricamento delle nuove funzionalità selezionate e iniziare la compilazione.
+Tornare a Unity, attendere il caricamento delle nuove funzionalità selezionate e iniziare a compilare.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Configurazione dello strumento funzionalità](configuring-feature-tool.md)
+- [Configurazione dello strumento di funzionalità](configuring-feature-tool.md)
 - [Individuazione e acquisizione](discovering-features.md)
 - [Visualizzazione dei dettagli del pacchetto di funzionalità](viewing-package-details.md)
 - [Importazione dei pacchetti selezionati](importing-features.md)

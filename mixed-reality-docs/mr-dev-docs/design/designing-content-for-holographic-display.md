@@ -1,97 +1,97 @@
 ---
 title: Progettazione di contenuto per la visualizzazione olografica
-description: Informazioni sulle linee guida di progettazione e sulle procedure consigliate per la visualizzazione olografica sui dispositivi HoloLens.
+description: Informazioni sulle linee guida di progettazione e sulle procedure consigliate per la visualizzazione olografica nei dispositivi HoloLens.
 author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
-keywords: Progettazione dell'interfaccia utente, schermo olografico, progettazione del contenuto, tema scuro, tema chiaro, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, progettazione, pixel
-ms.openlocfilehash: 325b7bf6318d1b54c4b4c33aa58faea7388e0864
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: progettazione dell'interfaccia utente, visualizzazione olografica, progettazione del contenuto, tema scuro, tema chiaro, visore VR di realtà mista, visore VR windows di realtà mista, visore VR di realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, progettazione, pixel
+ms.openlocfilehash: 2c68acb5478bfbd438c8bbb9dd2f8d9686bcefc5
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300036"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600320"
 ---
 # <a name="designing-content-for-holographic-display"></a>Progettazione di contenuto per la visualizzazione olografica
 
-![Posizione della mano del lato ulnare](images/UX_Hero_DarkTheme.jpg)
+![Posizione sul lato Ulnar](images/UX_Hero_DarkTheme.jpg)
 
-Quando si progettano contenuti per le visualizzazioni olografiche, è necessario prendere in considerazione diversi elementi per ottenere un'esperienza ottimale. Di seguito sono elencate alcune delle raccomandazioni ed è possibile ottenere altre informazioni sulle caratteristiche delle visualizzazioni olografiche nella pagina [colore, luce e materiali](color-light-and-materials.md) .
+Quando si progettano contenuti per schermi olografici, è necessario prendere in considerazione diversi elementi per ottenere un'esperienza ottimale. Di seguito sono elencate alcune raccomandazioni. Per altre informazioni sulle caratteristiche degli schermi olografici, vedere la pagina [Colore, luce e](color-light-and-materials.md) materiali.
 
 <br>
 
-## <a name="challenges-with-bright-color-on-a-large-surface"></a>Problemi con colore luminoso su larga superficie 
+## <a name="challenges-with-bright-color-on-a-large-surface"></a>Problemi con il colore chiaro su una superficie di grandi dimensioni 
 
-In base alla ricerca e al test dell'esperienza HoloLens, abbiamo scoperto che l'uso di colori luminosi in un'area di grandi dimensioni della visualizzazione può causare diversi problemi: 
+In base alle ricerche e ai test dell'esperienza HoloLens, è stato rilevato che l'uso di colori chiari in un'area di grandi dimensioni dello schermo può causare diversi problemi: 
 
-**Affaticamento degli occhi** 
+**Affaticamento oculare** 
 
-Poiché la visualizzazione olografica è additiva, gli ologrammi con colori luminosi usano una maggiore luminosità. Un colore chiaro e a tinta unita in un'area di grandi dimensioni dello schermo può causare la fatica degli occhi per l'utente. 
+Poiché la visualizzazione olografica è additiva, gli ologrammi con colori chiari usano più luce. Un colore chiaro e a tinta unita in un'area di grandi dimensioni dello schermo può causare facilmente affaticamento oculare per l'utente. 
 
-**Occlusione mano** 
+**Occlusione manuale** 
 
-Il colore luminoso rende difficile per l'utente vedere le proprie mani quando si interagisce direttamente con gli oggetti. Poiché l'utente non può visualizzare le loro mani, diventa difficile percepire la profondità o la distanza tra la mano/il dito e la superficie di destinazione. Il cursore del dito aiuta a compensare questo problema, ma può comunque essere difficile su una superficie bianca luminosa. 
+Il colore chiaro rende difficile per l'utente visualizzare le mani quando interagisce direttamente con gli oggetti. Poiché l'utente non può vedere le mani, diventa difficile percepirne la profondità/distanza tra la mano e il dito rispetto alla superficie di destinazione. Il cursore del dito consente di compensare questo problema, ma può comunque risultare complesso su una superficie bianca. 
 
-![Occlusione di colore e mano ](images/color_handocclusion.jpg)
- *difficili da visualizzare la mano sul Backplate del contenuto colorato*
+![Colore e occlusione della mano ](images/color_handocclusion.jpg)
+ *Difficile vedere la mano sul backplate del contenuto* di colore chiaro
 
-**Uniformità del colore**
+**Uniformità dei colori**
 
-A causa delle caratteristiche delle visualizzazioni olografiche, una grande area luminosa sullo schermo può diventare chiazzata. Con le combinazioni di colori scure è possibile ridurre il problema. 
+A causa delle caratteristiche degli schermi olografici, un'area di grandi dimensioni sullo schermo può diventare di tipo blotchy. L'uso di combinazioni di colori scuri consente di ridurre al minimo questo problema. 
 
-## <a name="design-guidelines-for-color-choices"></a>Linee guida di progettazione per le scelte cromatiche
+## <a name="design-guidelines-for-color-choices"></a>Linee guida di progettazione per le scelte di colore
 
-**Usa colore scuro per lo sfondo dell'interfaccia utente**
+**Usare il colore scuro per lo sfondo dell'interfaccia utente**
 
-Utilizzando la combinazione di colori scura, è possibile ridurre al minimo l'affaticamento degli occhi e migliorare la confidenza sulle interazioni con la mano diretta. 
+Usando la combinazione colori scura, è possibile ridurre al minimo l'affaticamento oculare e migliorare l'attendibilità delle interazioni dirette con la mano. 
 
-![Esempi di colore scuro usato per gli ](images/color_dark_examples.jpg)
- *esempi di sfondo del contenuto del colore scuro usato per lo sfondo del contenuto*
+![Esempi di colore scuro usato per lo sfondo del contenuto ](images/color_dark_examples.jpg)
+ *Esempi di colore scuro usato per lo sfondo del contenuto*
 
-**USA SemiBold o spessore carattere grassetto**
+**Usare lo spessore del carattere semibold o bold**
 
-HoloLens consente alla tua esperienza di mostrare un bel testo ad alta risoluzione. Tuttavia, si consiglia di evitare i pesi dei tipi di carattere sottili, ad esempio Light o Semilight, perché i tratti verticali possono ingrandire le dimensioni del tipo di carattere ridotto. 
+HoloLens consente all'esperienza di visualizzare testo ad alta risoluzione. Tuttavia, è consigliabile evitare spessori del carattere leggeri o semi-leggeri, perché i tratti verticali possono instabilità nelle dimensioni ridotte del carattere. 
 
-![Spessore carattere grassetto o semi-grassetto (pannello superiore) migliora la leggibilità ](images/color_font_examples.jpg)
- *o il peso del carattere semi-grassetto (pannello superiore) migliora la leggibilità*
+![Lo spessore del carattere in grassetto o semi grassetto (pannello superiore) migliora la leggibilità Del carattere grassetto o semi ](images/color_font_examples.jpg)
+ *grassetto (pannello superiore)* migliora la leggibilità
 
-**Usa il materiale HolographicBackplate di MRTK**
+**Usare il materiale HolographicBackplate di MRTK**
 
-Il materiale HolographicBackplate viene applicato a diversi pannelli dell'interfaccia utente nella shell di HoloLens. Una delle sue funzionalità è un effetto iridescenza che è visibile agli utenti mentre spostano la loro posizione in base al pannello. Il colore del backplate si sposta leggermente in uno spettro predefinito, creando un effetto visivo accattivante e dinamico senza interferire con la leggibilità del contenuto. Questo piccolo cambiamento di colore serve anche per compensare eventuali irregolarità dei colori minori. 
+Il materiale HolographicBackplate viene applicato a diversi pannelli dell'interfaccia utente nella shell di HoloLens. Una delle funzionalità è un effetto di iridescenza visibile agli utenti quando si spostano in base al pannello. Il colore del backplate si sposta in modo secondario in uno spettro predefinito, creando un effetto visivo coinvolgente e dinamico senza interferire con la leggibilità del contenuto. Questo lieve cambiamento di colore serve anche a compensare eventuali piccole irregolarità di colore. 
 
 
-## <a name="challenges-with-transparent-or-translucent-ui-backplate"></a>Problemi con la contropiastra dell'interfaccia utente trasparente o traslucida 
+## <a name="challenges-with-transparent-or-translucent-ui-backplate"></a>Problemi con backplate dell'interfaccia utente trasparente o traslucido 
 
-![Esempi di interfaccia utente trasparente ](images/color_transparent_examples.jpg)
- *esempi di backplating dell'interfaccia utente trasparente*
+![Esempi di interfaccia utente ](images/color_transparent_examples.jpg)
+ *trasparente Esempi di backplate dell'interfaccia utente trasparente*
 
 **Complessità visiva e accessibilità**
 
-Poiché gli oggetti olografici si fondono con l'ambiente fisico, la leggibilità del contenuto o dell'interfaccia utente nelle finestre trasparenti o trasparenti potrebbe essere degradata. Inoltre, quando gli oggetti olografici trasparenti sono sovrapposti l'uno sull'altro, potrebbe rendere difficile per l'utente interagire a causa del livello di confusione.
+Poiché gli oggetti olografici si integrano con l'ambiente fisico, il contenuto o la leggibilità dell'interfaccia utente nelle finestre trasparenti o traslucidi potrebbero essere ridotte. Inoltre, quando gli oggetti olografici trasparenti sono sovrapposti l'uno all'altro, potrebbe rendere difficile l'interazione dell'utente a causa della profondità confusa.
 
 **Prestazioni**
 
-Per eseguire il rendering corretto degli oggetti trasparenti o traslucidi, è necessario ordinarli e combinarli con tutti gli oggetti esistenti in background. L'ordinamento degli oggetti trasparenti presenta un modesto costo della CPU, mentre la fusione ha un notevole costo della GPU, perché non consente alla GPU di eseguire la rimozione della superficie nascosta tramite l'abbattimento z, ovvero test di profondità). Non consentire la rimozione della superficie nascosta aumenta il numero di operazioni necessarie per il pixel finale sottoposto a rendering. In questo modo, vengono applicati più vincoli di velocità di riempimento della pressione.
+Per eseguire correttamente il rendering degli oggetti trasparenti o traslucidi, è necessario ordinare e unire gli oggetti esistenti sullo sfondo. L'ordinamento degli oggetti trasparenti ha un costo medio della CPU, la fusione ha un costo notevole per la GPU perché non consente alla GPU di eseguire la rimozione della superficie nascosta tramite z-culling (ad esempio test di profondità). Se non si consente la rimozione della superficie nascosta, aumenta il numero di operazioni necessarie per il pixel finale sottoposto a rendering. In questo modo si imposta una maggiore pressione fill rate vincoli.
 
-**Problema di stabilità degli ologrammi con tecnologia Depth LSR**
+**Problema di stabilità dell'ologramma con la tecnologia Depth LSR**
 
-Per migliorare la riproiezione olografica o la stabilità dell'ologramma, un'applicazione può inviare un buffer di profondità al sistema per ogni frame sottoposto a rendering. Quando si usa il buffer di profondità per la riproiezione, è necessario scrivere un buffer di profondità per ogni pixel di cui viene eseguito il rendering in una profondità corrispondente. Qualsiasi pixel con un valore di profondità deve avere anche un valore di colore. Se il materiale sussidiario sopra indicato non viene seguito, le aree dell'immagine di cui è stato eseguito il rendering che non dispongono di informazioni di profondità valide possono essere riproiettate in modo da produrre artefatti, che sono spesso visibili come distorsioni di tipo Wave.
+Per migliorare la proiezione olografica o la stabilità dell'ologramma, un'applicazione può inviare un buffer di profondità al sistema per ogni frame sottoposto a rendering. Quando si usa il buffer di profondità per la riepilazione, è necessario scrivere un buffer di profondità per ogni pixel di cui è stato eseguito il rendering di colore a una profondità corrispondente. Anche i pixel con un valore di profondità devono avere un valore di colore. Se le indicazioni precedenti non vengono seguite, le aree dell'immagine di cui è stato eseguito il rendering che non dispongono di informazioni di profondità valide possono essere riposizionate in modo da produrre artefatti, spesso visibili come distorsioni simili a onde.
 
 
-## <a name="design-guidelines-for-transparent-elements"></a>Linee guida per la progettazione di elementi trasparenti
+## <a name="design-guidelines-for-transparent-elements"></a>Linee guida di progettazione per gli elementi trasparenti
 
-**Usa sfondo interfaccia utente opaco**
+**Usare lo sfondo opaco dell'interfaccia utente**
 
-Per impostazione predefinita, gli oggetti trasparenti o traslucidi non scrivono la profondità per consentire una corretta fusione. I modi per attenuare questo problema includono l'utilizzo di oggetti opachi, assicurando che gli oggetti translucidi siano visualizzati vicino a oggetti opachi, ad esempio un pulsante traslucido davanti a un Backplate opaco, forzando gli oggetti traslucidi a scrivere profondità (non applicabile in tutti gli scenari) o eseguendo il rendering di oggetti proxy che contribuiscono solo a valori di profondità alla fine del frame.
+Per impostazione predefinita, gli oggetti trasparenti o traslucidi non scrivono profondità per consentire la fusione corretta. I modi per attenuare questo problema includono l'uso di oggetti opachi, la garanzia che gli oggetti traslucidi vengano visualizzati vicino agli oggetti opachi (ad esempio un pulsante traslucido davanti a un backplate opaco), la forzatura degli oggetti traslucidi alla profondità di scrittura (non applicabile in tutti gli scenari) o il rendering di oggetti proxy, che contribuiscono solo ai valori di profondità alla fine del frame.
 
-Soluzioni in MRTK-Unity: https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/hologram-stabilization#depth-buffer-sharing-in-unity  
+Soluzioni all'interno di MRTK-Unity: /windows/mixed-reality/mrtk-unity/performance/ologram-stabilization#depth-buffer-sharing-in-unity  
 
-Grazie a una contropiastra solida e opaca, possiamo proteggere la leggibilità e la confidenza dell'interazione.
+Usando un backplate solido e opaco, è possibile proteggere la leggibilità e l'attendibilità dell'interazione.
 
 **Ridurre al minimo il numero di pixel interessati**
 
-Se il progetto deve usare oggetti trasparenti, provare a ridurre al minimo il numero di pixel interessati. Se, ad esempio, un oggetto è visibile solo in determinate condizioni (ad esempio un effetto di bagliore additivo), disabilitare l'oggetto quando è completamente invisibile, anziché impostare il colore additivo su nero. Per le semplici forme 2D create usando un quad con una maschera alfa, provare a creare una rappresentazione mesh della forma con uno shader opaco. 
+Se il progetto deve usare oggetti trasparenti, provare a ridurre al minimo il numero di pixel interessati. Ad esempio, se un oggetto è visibile solo in determinate condizioni (ad esempio un effetto di alone additivo), disabilitare l'oggetto quando è completamente invisibile (invece di impostare il colore additivo su nero). Per le forme 2D semplici create usando un quad con una maschera alfa, prendere in considerazione la creazione di una rappresentazione mesh della forma con uno shader opaco. 
 
 <br/>
 
@@ -101,17 +101,17 @@ Se il progetto deve usare oggetti trasparenti, provare a ridurre al minimo il nu
 
 ## <a name="dark-ui-examples-in-mrtk-mixed-reality-toolkit-for-unity"></a>Esempi di interfaccia utente scura in MRTK (Mixed Reality Toolkit) per Unity
 
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornisce molti esempi di blocchi di compilazione dell'interfaccia utente basati sulle combinazioni di colori oscuri.
+**[MRTK offre molti](https://github.com/Microsoft/MixedRealityToolkit-Unity)** esempi di blocchi predefiniti dell'interfaccia utente basati sulle combinazioni di colori scuri.
 
-* [Menu vicino](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/near-menu)
-* [Finestra di dialogo](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/dialog)
-* [Menu a mano](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
+* [Menu vicino](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/near-menu)
+* [Finestra di dialogo](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/dialog)
+* [Menu mano](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Colore, luce e materiali](color-light-and-materials.md)
 * [Cursori](cursors.md)

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, consapevolezza spaziale
 ms.localizationpriority: high
-ms.openlocfilehash: f6c17dc361846808ec10f1d94932e3089072e642
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 676d5c1b96a8b216f9da094c21b546d178a85999
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300456"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110711669"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. Configurazione dei profili di Mixed Reality Toolkit
 
@@ -44,7 +44,67 @@ Di seguito sono elencati i passaggi principali da eseguire per nascondere la mes
 > [!NOTE]
 > per impostazione predefinita, i profili di MRTK non sono modificabili. Si tratta di modelli di profilo predefiniti che devono essere clonati prima di poter essere modificati. Sono disponibili diversi livelli annidati di profili. È quindi normale clonare e modificare diversi profili quando una o più impostazioni vengono configurate.
 
+### <a name="1-clone-the-default-configuration-profile"></a>1. Clonare il profilo di configurazione predefinito
+
+> [!NOTE]
+> Il profilo di configurazione è il profilo di primo livello. Di conseguenza, prima di modificare altri profili, devi clonare il profilo di configurazione.
+
+Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **MixedRealityToolkit** e quindi nella finestra Inspector (Controllo) impostare **Configuration Profile** (Profilo di configurazione) di Mixed Reality Toolkit su **DefaultHoloLens2ConfigurationProfile**:
+
+![Componente MixedRealityToolkit di Unity con DefaultHoloLens2ConfigurationProfile selezionato](images/mr-learning-base/base-03-section1-step1-1.png)
+
+Con **l'oggetto MixedRealityToolkit** ancora selezionato, nella finestra Inspector (Controllo) fare clic sul pulsante **Clone** (Clona) per aprire la finestra Clone Profile (Clona profilo):
+
+![Pulsante Copy & Customize del componente MixedRealityToolkit di Unity](images/mr-learning-base/base-03-section1-step1-2.png)
+
+Nella finestra Clone Profile (Clona profilo) immettere un **nome di profilo** appropriato, ad esempio _GettingStarted_HoloLens2ConfigurationProfile_ e quindi fare clic sul pulsante **Clone** (Clona) per creare una copia modificabile di **DefaultHololens2ConfigurationProfile**:
+
+![Finestra popup per clonare il profilo di configurazione di MixedRealityToolkit di Unity](images/mr-learning-base/base-03-section1-step1-3.png)
+
+Il profilo di configurazione appena creato viene ora assegnato come profilo di configurazione per la scena:
+
+![Componente MixedRealityToolkit di Unity con l'elemento HoloLens2ConfigurationProfile personalizzato appena creato applicato](images/mr-learning-base/base-03-section1-step1-4.png)
+
+Nel menu di Unity scegli **File** > **Save** (Salva) per salvare la scena.
+
+> [!TIP]
+> Ricordarsi di salvare il lavoro durante l'esercitazione.
+
+### <a name="2-enable-the-spatial-awareness-system"></a>2. Abilitare il sistema di consapevolezza spaziale
+
+Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **MixedRealityToolkit** e quindi nella finestra Inspector (Controllo) selezionare la scheda **Spatial Awareness** (Consapevolezza spaziale), infine la casella di controllo **Enable Spatial Awareness System** (Abilita sistema di consapevolezza spaziale):
+
+![Componente MixedRealityToolkit di Unity con il sistema Spatial Awareness abilitato](images/mr-learning-base/base-03-section1-step2-1.png)
+
+> [!NOTE]
+> Per i progetti futuri, se non è necessario che l'app risponda o interagisca con l'ambiente, è consigliabile che il sistema Spatial Awareness rimanga disabilitato per ridurre l'impatto in termini di prestazioni.
+
+### <a name="3-clone-the-default-spatial-awareness-system-profile"></a>3. Clonare il profilo predefinito del sistema di consapevolezza spaziale
+
+Nella scheda **Spatial Awareness** (Consapevolezza spaziale) fai clic sul pulsante **Clone** (Clona) per aprire la finestra Clone Profile (Clona profilo):
+
+![Componente MixedRealityToolkit di Unity con la scheda Spatial Awareness selezionata](images/mr-learning-base/base-03-section1-step3-1.png)
+
+Nella finestra Clone Profile (Clona profilo) immettere un **nome di profilo** appropriato, ad esempio _GettingStarted_MixedRealitySpatialAwarenessSystemProfile_ e quindi fare clic sul pulsante **Clone** (Clona) per creare una copia modificabile di **DefaultMixedRealitySpatialAwarenessSystemProfile**:
+
+![Finestra popup per clonare il profilo del sistema Spatial Awareness di MixedRealityToolkit di Unity](images/mr-learning-base/base-03-section1-step3-2.png)
+
+Il profilo del sistema di consapevolezza spaziale appena creato viene ora assegnato automaticamente al profilo di configurazione:
+
+![Componente MixedRealityToolkit di Unity con l'elemento MixedRealitySpatialAwarenessSystemProfile personalizzato appena creato applicato](images/mr-learning-base/base-03-section1-step3-3.png)
+
 [!INCLUDE[](includes/configuring-profile.md)]
+
+### <a name="5-change-the-visibility-of-the-spatial-awareness-mesh"></a>5. Modificare la visibilità della mesh di consapevolezza spaziale
+
+In **Spatial Mesh Observer Settings** (Impostazioni osservatore della mesh spaziale) impostare **Display Option** (Opzione di visualizzazione) su **Occlusion** (Occlusione) per rendere invisibile la mesh di mapping spaziale mentre è ancora funzionante:
+
+![Componente MixedRealityToolkit di Unity con l'opzione Display Option di Spatial Mesh Observer impostata su Occlusion](images/mr-learning-base/base-03-section1-step5-1.png)
+
+> [!NOTE]
+> Anche se non è visibile, la mesh di mapping spaziale è comunque presente e funzionante. Ad esempio, gli ologrammi dietro la mesh di mapping spaziale, come nel caso di un ologramma dietro a un muro fisico, non saranno visibili.
+
+hai appreso come modificare un'impostazione nel profilo di MRTK. Come si può notare, per personalizzare le impostazioni di MRTK, è necessario prima creare copie dei profili predefiniti. Poiché i profili predefiniti non sono modificabili, saranno sempre presenti come riferimento in caso di ripristino delle impostazioni predefinite. Per altre informazioni sui profili di MRTK e sulla loro architettura, consultare la [guida alla configurazione dei profili di MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide) nel [portale della documentazione di MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity).
 
 ## <a name="congratulations"></a>Lezione completata
 

@@ -1,62 +1,62 @@
 ---
 title: Oggetto che supporta interazioni
-description: Informazioni su come attivare gli eventi, fornire segnali visivi e interagire con gli oggetti nelle applicazioni di realtà mista.
+description: Informazioni su come attivare eventi, fornire segnali visivi e interagire con gli oggetti nelle applicazioni di realtà mista.
 author: cre8ivepark
 ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
-keywords: Realtà mista, controlli, interazione, CUE, interfaccia utente, UX, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, audio
-ms.openlocfilehash: 0e9f4dc09e3c4a4c38ffeb1a9042f39996918e36
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: Realtà mista, controlli, interazione, segnali, interfaccia utente, esperienza utente, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, audio
+ms.openlocfilehash: 8a68006d68b985f8d26a3d1a11e4d52fcfb5acb5
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300466"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600440"
 ---
 # <a name="interactable-object"></a>Oggetto che supporta interazioni
 
-![Oggetti Interactible](images/UX_Hero_Interactable.jpg)
+![Oggetti interactible](images/UX_Hero_Interactable.jpg)
 
-Un pulsante è a lungo una metafora usata per attivare un evento nel mondo astratto 2D. Nel mondo della realtà mista tridimensionale, non dobbiamo più limitarci a questo mondo dell'astrazione. Qualsiasi elemento può essere un **oggetto interagibile** che attiva un evento. Un oggetto interactabile può essere qualsiasi elemento da un Coffee Cup in una tabella a un fumetto a mezz'aria. Si usano ancora i pulsanti tradizionali in determinate situazioni, ad esempio nell'interfaccia utente della finestra di dialogo. La rappresentazione visiva del pulsante dipende dal contesto.
-
-<br>
-
----
-
-## <a name="important-properties-of-the-interactable-object"></a>Proprietà importanti dell'oggetto interagibile
-
-### <a name="visual-cues"></a>Segnali visivi
-
-I segnali visivi sono segnali sensoriali della luce, ricevuti dall'occhio e elaborati dal sistema visivo durante la percezione visiva. Poiché il sistema visivo è dominante in molte specie, in particolare gli esseri umani, i segnali visivi rappresentano una grande fonte di informazioni in merito alla percezione del mondo.
-
-Poiché gli oggetti olografici vengono combinati con l'ambiente reale in realtà mista, potrebbe essere difficile comprendere quali oggetti è possibile interagire. Per tutti gli oggetti interagibili nell'esperienza, è importante fornire segnali visivi differenziati per ogni stato di input. Ciò consente all'utente di comprendere quale parte dell'esperienza è interactabile e rende l'utente affidabile usando un metodo di interazione coerente.
+Un pulsante è da tempo una metafora usata per attivare un evento nel mondo astratto 2D. Nel mondo della realtà mista tridimensionale non è più necessario limitarsi a questo mondo di astrazione. Qualsiasi elemento può essere **un oggetto che può** interagire che attiva un evento. Un oggetto che può interagire può essere qualsiasi cosa, da una tazzina da caffè su un tavolo a un balloon in midair. I pulsanti tradizionali vengono comunque utilizzati in determinate situazioni, ad esempio nell'interfaccia utente della finestra di dialogo. La rappresentazione visiva del pulsante dipende dal contesto.
 
 <br>
 
 ---
 
-### <a name="far-interactions"></a>Interazioni a distanza
+## <a name="important-properties-of-the-interactable-object"></a>Proprietà importanti dell'oggetto con interazione
 
-Per tutti gli oggetti che gli utenti possono interagire con lo sguardo, il raggio di mano e il raggio del controller di movimento, è consigliabile avere un segnale visivo diverso per questi tre stati di input:
+### <a name="visual-cues"></a>Visivi
+
+I segnali visivi sono segnali sensoriali provenienti dalla luce, ricevuti dall'occhio ed elaborati dal sistema visivo durante la percezione visiva. Poiché il sistema visivo è dominante in molte specie, in particolare gli esseri umani, i segnali visivi sono una grande fonte di informazioni sul modo in cui viene percepito il mondo.
+
+Poiché gli oggetti olografici vengono misti con l'ambiente reale nella realtà mista, potrebbe essere difficile comprendere con quali oggetti è possibile interagire. Per tutti gli oggetti che possono interagire nell'esperienza, è importante fornire segnali visivi differenziati per ogni stato di input. Ciò consente all'utente di comprendere quale parte dell'esperienza può interagire e rende l'utente sicuro usando un metodo di interazione coerente.
+
+<br>
+
+---
+
+### <a name="far-interactions"></a>Interazioni da lontano
+
+Per tutti gli oggetti che l'utente può interagire con lo sguardo fisso, il raggio della mano e il raggio del controller del movimento, è consigliabile avere un segnale visivo diverso per questi tre stati di input:
 
 :::row:::
     :::column:::
-       ![Oggetto interactabile con stato predefinito](images/interactibleobject-states-default.jpg)<br>
+       ![Oggetto con interazione con stato predefinito](images/interactibleobject-states-default.jpg)<br>
        **Stato predefinito (osservazione)**<br>
-        Stato inattivo predefinito dell'oggetto.
-    Il cursore non è presente nell'oggetto. La mano non è stata rilevata.
+        Stato di inattività predefinito dell'oggetto.
+    Il cursore non si trova sull'oggetto. La mano non viene rilevata.
     :::column-end:::
     :::column:::
-       ![Oggetto interactabile con stato di destinazione e passaggio del mouse](images/interactibleobject-states-targeted.jpg)<br>
-        **Stato di destinazione (hover)**<br>
-        Quando l'oggetto è destinato a un cursore a sguardi, a una prossimità del dito o al puntatore del controller di movimento.
-    Il cursore si trova sull'oggetto. La mano è stata rilevata, pronta.
+       ![Oggetto con interazione con stato di destinazione e passaggio del mouse](images/interactibleobject-states-targeted.jpg)<br>
+        **Stato di destinazione (passaggio del mouse)**<br>
+        Quando l'oggetto è indirizzato con il cursore sguardo fisso, la prossimità del dito o il puntatore del controller del movimento.
+    Il cursore si trova sull'oggetto . La mano viene rilevata, pronta.
     :::column-end:::
     :::column:::
-       ![Oggetto interactabile con stato premuto](images/interactibleobject-states-pressed.jpg)<br>
+       ![Oggetto con interazione con stato premuto](images/interactibleobject-states-pressed.jpg)<br>
        **Stato premuto**<br>
-        Quando l'oggetto viene premuto con un movimento di tocco aereo, premere il pulsante Seleziona del controller di movimento o del dito.
-    Il cursore si trova sull'oggetto. Viene rilevata una mano, aria toccata.
+        Quando l'oggetto viene premuto con un movimento di tocco, la pressione del dito o il pulsante di selezione del controller del movimento.
+    Il cursore si trova sull'oggetto . Viene rilevata la mano, viene toccata l'aria.
     :::column-end:::
 :::row-end:::
 
@@ -64,18 +64,18 @@ Per tutti gli oggetti che gli utenti possono interagire con lo sguardo, il raggi
 
 ---
 
-È possibile usare tecniche come l'evidenziazione o il ridimensionamento per fornire segnali visivi per lo stato di input dell'utente. In realtà mista, è possibile trovare esempi di visualizzazione di diversi Stati di input nel menu Start e con i pulsanti della barra delle applicazioni. 
+È possibile usare tecniche come l'evidenziazione o il ridimensionamento per fornire segnali visivi per lo stato di input dell'utente. Nella realtà mista è possibile trovare esempi di visualizzazione di stati di input diversi nel menu Start e con i pulsanti della barra dell'app. 
 
-Ecco come appaiono questi stati in un **pulsante olografico**:
+Ecco l'aspetto di questi stati su un **pulsante olografico:**
 
 :::row:::
     :::column:::
-       ![Pulsante olografico in stato predefinito](images/MRTK_InteractableState-default.jpg)<br>
+       ![Pulsante olografico nello stato predefinito](images/MRTK_InteractableState-default.jpg)<br>
        **Stato predefinito (osservazione)**<br>
     :::column-end:::
     :::column:::
        ![Pulsante olografico nello stato di destinazione e passaggio del mouse](images/MRTK_InteractableState-targeted.jpg)<br>
-        **Stato di destinazione (hover)**<br>
+        **Stato di destinazione (passaggio del mouse)**<br>
     :::column-end:::
     :::column:::
        ![Pulsante olografico nello stato premuto](images/MRTK_InteractableState-pressed.jpg)<br>
@@ -87,17 +87,17 @@ Ecco come appaiono questi stati in un **pulsante olografico**:
 
 ---
 
-### <a name="near-interactions-direct"></a>Near Interactions (Direct) 
+### <a name="near-interactions-direct"></a>Interazioni near (diretta) 
 
-HoloLens 2 supporta l'input di rilevamento a mano articolato, che consente di interagire con gli oggetti. Senza commenti e suggerimenti tattili e una profonda percezione della profondità, può essere difficile indicare la distanza della mano da un oggetto o se si sta toccando. È importante fornire segnali visivi sufficienti per comunicare lo stato dell'oggetto, in particolare lo stato delle mani in base a tale oggetto.
+HoloLens 2 supporta l'input di tracciamento delle mani articolato, che consente di interagire con gli oggetti. Senza feedback attico e percezione della profondità perfetta, può essere difficile stabilire quanto la mano è distante da un oggetto o se lo si sta toccando. È importante fornire segnali visivi sufficienti per comunicare lo stato dell'oggetto, in particolare lo stato delle mani in base a tale oggetto.
 
-Usare il feedback visivo per comunicare gli Stati seguenti:
-* **Impostazione predefinita (osservazione)**: stato inattivo predefinito dell'oggetto.
-* **Hover**: quando una mano si avvicina a un ologramma, modificare gli oggetti visivi per comunicare che la mano è destinata a ologrammi. 
-* **Distanza e punto di interazione**: la mano si avvicina a un ologramma, progetta commenti e suggerimenti per comunicare il punto di interazione proiettato e la distanza dall'oggetto del dito
-* **Inizio contatto**: modificare gli oggetti visivi (chiaro, colore) per comunicare che si è verificato un tocco
-* **Colto**: modificare gli oggetti visivi (chiaro, colore) quando l'oggetto viene afferrato
-* **Estremità del contatto**: modificare gli oggetti visivi (chiaro, colore) al termine del tocco
+Usare il feedback visivo per comunicare gli stati seguenti:
+* **Predefinito (osservazione):** stato di inattività predefinito dell'oggetto.
+* **Passaggio** del mouse: quando una mano si trova vicino a un ologramma, modificare gli oggetti visivi per comunicare che la mano è la destinazione dell'ologramma. 
+* **Distanza e punto di interazione:** quando la mano si avvicina a un ologramma, progettare il feedback per comunicare il punto di interazione proiettato e la distanza dall'oggetto del dito
+* **Inizio contatto:** modifica gli oggetti visivi (luce, colore) per comunicare che si è verificato un tocco
+* **Afferrato:** modifica gli oggetti visivi (luce, colore) quando l'oggetto viene afferrato
+* **Fine contatto:** modifica gli oggetti visivi (chiaro, colore) al termine del tocco
 
 <br>
 
@@ -107,12 +107,12 @@ Usare il feedback visivo per comunicare gli Stati seguenti:
     :::column:::
         ![Passaggio del mouse (lontano)](images/640px-interactibleobject-states-near-hover.jpg)<br>
         **Passaggio del mouse (lontano)**<br>
-        Evidenziazione basata sulla prossimità del manuale.
+        Evidenziazione basata sulla prossimità della mano.
     :::column-end:::
     :::column:::
         ![Passaggio del mouse (vicino)](images/640px-interactibleobject-states-near-hovernear.jpg)<br>
         **Passaggio del mouse (vicino)**<br>
-        Evidenziare le modifiche delle dimensioni in base alla distanza della mano.
+        Le dimensioni dell'evidenziazione cambiano in base alla distanza dalla mano.
     :::column-end:::
 :::row-end:::
 
@@ -120,12 +120,12 @@ Usare il feedback visivo per comunicare gli Stati seguenti:
     :::column:::
         ![Tocco/pressione](images/640px-interactibleobject-states-near-press.jpg)<br>
         **Tocco/pressione**<br>
-        Commenti visivi e audio.
+        Feedback visivo e audio.
     :::column-end:::
     :::column:::
-        ![Comprendere](images/640px-interactibleobject-states-near-grasp.jpg)<br>
-        **Comprendere**<br>
-        Commenti visivi e audio.
+        ![Afferrare](images/640px-interactibleobject-states-near-grasp.jpg)<br>
+        **Afferrare**<br>
+        Feedback visivo e audio.
     :::column-end:::
 :::row-end:::
 
@@ -135,7 +135,7 @@ Usare il feedback visivo per comunicare gli Stati seguenti:
 
 ---
 
-Un [pulsante in HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) è un esempio di visualizzazione dei diversi Stati di interazione di input:
+Un [pulsante in HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) è un esempio di visualizzazione dei diversi stati di interazione di input:
 
 :::row:::
     :::column:::
@@ -145,7 +145,7 @@ Un [pulsante in HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unit
     :::column:::
         ![Passaggio del mouse](images/640px-interactibleobject-pressablebutton-hover.jpg)<br>
         **Passaggio del mouse**<br>
-        Rivelare un effetto di illuminazione basato su prossimità.
+        Rivela un effetto di illuminazione basato sulla prossimità.
     :::column-end:::
 :::row-end:::
 
@@ -153,7 +153,7 @@ Un [pulsante in HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unit
     :::column:::
         ![Tocco](images/640px-interactibleobject-pressablebutton-touch.jpg)<br>
         **Tocco**<br>
-        Mostra effetto Ripple.
+        Mostra effetto ondulato.
     :::column-end:::
     :::column:::
         ![Premere](images/640px-interactibleobject-pressablebutton-press.jpg)<br>
@@ -168,14 +168,14 @@ Un [pulsante in HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unit
 
 :::row:::
     :::column:::
-        ### <a name="the-ring-visual-cue-on-hololens-2br"></a>Il segnale visivo "Ring" su HoloLens 2<br>
-        In HoloLens 2 è presente un segnale visivo aggiuntivo che può aiutare la percezione dell'utente della profondità. Un anello vicino alla loro parte viene visualizzato e ridimensionato quando il dito si avvicina all'oggetto. L'anello alla fine converge in un punto quando viene raggiunto lo stato premuto. Questa convenienza visiva consente all'utente di comprendere la distanza dall'oggetto.<br>
+        ### <a name="the-ring-visual-cue-on-hololens-2br"></a>Segnale visivo "anello" su HoloLens 2<br>
+        In HoloLens 2 è presente un segnale visivo aggiuntivo che può aiutare la percezione della profondità da parte dell'utente. Un anello vicino alla punta del dito viene visualizzato e ridimensionato man mano che la punta del dito si avvicina all'oggetto. L'anello converge infine in un punto quando viene raggiunto lo stato premuto. Questo oggetto visivo consente all'utente di comprendere quanto sono distasi dall'oggetto.<br>
         <br>
-        *Ciclo video: esempio di feedback visivo basato sulla prossimità a un rettangolo di delimitazione*
+        *Ciclo video: esempio di feedback visivo basato sulla prossimità a un rettangolo di selezione*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![Feedback visivo sulla prossimità della mano](images/HoloLens2_Proximity.gif)<br>
+       ![Feedback visivo sulla prossimità manuale](images/HoloLens2_Proximity.gif)<br>
     :::column-end:::
 :::row-end:::
 
@@ -187,11 +187,11 @@ Un [pulsante in HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unit
 
 ### <a name="audio-cues"></a>Segnali audio
 
-Per le interazioni dirette, il feedback audio appropriato può migliorare notevolmente l'esperienza utente. Usare il feedback audio per comunicare i segnali seguenti:
-* **Inizio contatto**: riprodurre un suono quando inizia il tocco
-* **Terminazione contatto**: riprodurre un suono al termine del tocco
-* **Inizio** avvio: riprodurre un suono quando viene avviata la cattura
-* **Estremità** di chiusura: riprodurre un suono quando termina la cattura
+Per le interazioni con la mano diretta, un feedback audio appropriato può migliorare notevolmente l'esperienza utente. Usare il feedback audio per comunicare i segnali seguenti:
+* **Inizio contatto:** riproduce l'audio all'inizio del tocco
+* **Fine contatto:** riprodurre l'audio all'estremità del tocco
+* **Inizia a afferrare:** riproduci l'audio all'avvio della cattura
+* **Grab ends (Fine afferra):** riproduci l'audio al termine dell'afferrare
 
 <br>
 
@@ -200,12 +200,12 @@ Per le interazioni dirette, il feedback audio appropriato può migliorare notevo
 :::row:::
     :::column:::
         ### <a name="voice-commandingbr"></a>Esecuzione di comandi vocali<br>
-        Per tutti gli oggetti interagibili, è importante supportare opzioni di interazione alternative. Per impostazione predefinita, è consigliabile che i [comandi vocali](../out-of-scope/voice-design.md) siano supportati per gli oggetti che possono interagire. Per migliorare l'individuabilità, è anche possibile fornire una descrizione comando durante lo stato del passaggio del mouse.<br>
+        Per tutti gli oggetti che possono interagire, è importante supportare opzioni di interazione alternative. Per impostazione predefinita, è consigliabile [che l'esecuzione di comandi vocali](../out-of-scope/voice-design.md) sia supportata per tutti gli oggetti che possono interagire. Per migliorare l'individuabilità, è anche possibile fornire una descrizione comando durante lo stato del passaggio del mouse.<br>
         <br>
-        *Image: descrizione comando per il comando Voice*
+        *Immagine: Descrizione comando vocale*
     :::column-end:::
         :::column:::
-       ![comando vocale](images/640px-interactibleobject-voicecommand.png)<br>
+       ![comandi vocali](images/640px-interactibleobject-voicecommand.png)<br>
     :::column-end:::
 :::row-end:::
 
@@ -216,15 +216,15 @@ Per le interazioni dirette, il feedback audio appropriato può migliorare notevo
 
 ## <a name="sizing-recommendations"></a>Consigli sul ridimensionamento
 
-Per assicurarsi che tutti gli oggetti interagibili possano essere facilmente modificati, è consigliabile assicurarsi che l'interoperabilità soddisfi le dimensioni minime in base alla distanza che viene effettuata dall'utente. L'angolo visivo è spesso misurato in gradi di Visual Arc. L'angolo visivo è basato sulla distanza tra gli occhi dell'utente e l'oggetto e rimane costante, mentre la dimensione fisica della destinazione può variare a seconda della distanza tra le modifiche apportate dall'utente. Per determinare le dimensioni fisiche necessarie di un oggetto in base alla distanza dall'utente, provare a usare un calcolo dell'angolo visivo come [questo](https://elvers.us/perception/visualAngle/).
+Per garantire che tutti gli oggetti interagiscibili possano essere facilmente toccati, è consigliabile assicurarsi che l'oggetto interagiscibile soddisfi le dimensioni minime in base alla distanza che viene posta dall'utente. L'angolo visivo viene spesso misurato in gradi di arco visivo. L'angolo visivo si basa sulla distanza tra gli occhi dell'utente e l'oggetto e rimane costante, mentre le dimensioni fisiche della destinazione possono cambiare quando cambia la distanza dall'utente. Per determinare le dimensioni fisiche necessarie di un oggetto in base alla distanza dall'utente, provare a usare un calcolatore dell'angolo visivo come [questo](https://elvers.us/perception/visualAngle/).
 
-Di seguito sono riportati i consigli per le dimensioni minime del contenuto interactabile.
+Di seguito sono riportate le raccomandazioni per le dimensioni minime del contenuto interagiscibile.
 
 ### <a name="target-size-for-direct-hand-interaction"></a>Dimensioni di destinazione per l'interazione diretta con la mano
 
 | Distanza | Angolo di visualizzazione | Dimensione |
 |---------|---------|---------|
-| 45 cm  | non inferiore a 2 ° | 1,6 x 1,6 cm |
+| 45 cm  | non inferiore a 2° | 1,6 x 1,6 cm |
 
 ![Dimensioni di destinazione per l'interazione diretta con la mano](images/TargetSizingNear.jpg)<br>
 *Dimensioni di destinazione per l'interazione diretta con la mano*
@@ -233,7 +233,7 @@ Di seguito sono riportati i consigli per le dimensioni minime del contenuto inte
 
 ### <a name="target-size-for-buttons"></a>Dimensioni di destinazione per i pulsanti
 
-Quando si creano i pulsanti per l'interazione diretta, si consiglia una dimensione minima maggiore di 3,2 x 3,2 cm per assicurarsi che lo spazio disponibile sia sufficiente per contenere un'icona e potenzialmente un testo.
+Quando si creano pulsanti per l'interazione diretta, è consigliabile avere dimensioni minime maggiori di 3,2 x 3,2 cm per assicurarsi che sia disponibile spazio sufficiente per contenere un'icona e potenzialmente del testo.
 
 | Distanza | Dimensione minima |
 |---------|---------|
@@ -244,35 +244,35 @@ Quando si creano i pulsanti per l'interazione diretta, si consiglia una dimensio
 
 <br>
 
-### <a name="target-size-for-hand-ray-or-gaze-interaction"></a>Dimensioni di destinazione per l'interazione con raggio o sguardo
+### <a name="target-size-for-hand-ray-or-gaze-interaction"></a>Dimensioni di destinazione per l'interazione con il raggio della mano o lo sguardo
 | Distanza | Angolo di visualizzazione | Dimensione |
 |---------|---------|---------|
-| 2 m  | non minore di 1 ° | 3,5 x 3,5 cm |
+| 2 m  | non inferiore a 1° | 3,5 x 3,5 cm |
 
-![Dimensioni di destinazione per l'interazione con raggio o sguardo](images/TargetSizingFar.jpg)<br>
-*Dimensioni di destinazione per l'interazione con raggio o sguardo*
-
-<br>
-
----
-
-## <a name="interactable-object-in-mrtk-mixed-reality-toolkit-for-unity"></a>Oggetto interactabile in MRTK (Mixed Reality Toolkit) per Unity
-
-In **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** è possibile usare lo script [**interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) per fare in modo che gli oggetti rispondano a diversi tipi di Stati di interazione di input. Supporta vari tipi di temi che consentono di definire gli Stati di visualizzazione controllando le proprietà dell'oggetto, ad esempio colore, dimensioni, materiale e shader.
-
-* [Con cui](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable)
-* [Button](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button)
-* [Scena degli esempi di interazione della mano](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
-
-Lo shader standard di MixedRealityToolkit offre diverse opzioni, ad esempio la **luce vicina** , che consente di creare suggerimenti visivi e audio.
-
-* [Shader standard MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
+![Dimensioni di destinazione per l'interazione con il raggio della mano o lo sguardo](images/TargetSizingFar.jpg)<br>
+*Dimensioni di destinazione per l'interazione con il raggio della mano o lo sguardo*
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Vedere anche
+## <a name="interactable-object-in-mrtk-mixed-reality-toolkit-for-unity"></a>Oggetto interagiscibile in MRTK (Mixed Reality Toolkit) per Unity
+
+In **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** è possibile usare lo script [**Interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) per fare in modo che gli oggetti rispondano a vari tipi di stati di interazione di input. Supporta vari tipi di temi che consentono di definire gli stati di visualizzazione controllando le proprietà dell'oggetto, ad esempio colore, dimensioni, materiale e shader.
+
+* [Interagibile](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable)
+* [Button](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button)
+* [Scena degli esempi di interazione manuale](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
+
+Lo shader Standard di MixedRealityToolkit  offre varie opzioni, ad esempio la luce di prossimità, che consente di creare segnali visivi e audio.
+
+* [MRTK Standard Shader](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
+
+<br>
+
+---
+
+## <a name="see-also"></a>Vedi anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

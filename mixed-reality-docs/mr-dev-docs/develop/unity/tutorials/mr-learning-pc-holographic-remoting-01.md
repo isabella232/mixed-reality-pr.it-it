@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, holographic remoting per PC, descrizioni comandi, tracciamento oculare
 ms.localizationpriority: high
-ms.openlocfilehash: 3c564c28485ca7e0595b9fd438af961dc5bc5986
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 95a11ce855091a3711152f2c4147d835d10edb8f
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982964"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110713720"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Introduzione a Holographic Remoting per PC
 
@@ -54,11 +54,9 @@ A questo scopo, segui prima l'esercitazione [Inizializzazione del progetto e pri
 
 3. [Importazione delle risorse essenziali TextMeshPro](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 
-4. [Importazione di Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+4. [Importazione di Mixed Reality Toolkit e configurazione del progetto Unity](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 
-5. [Configurazione del progetto Unity](mr-learning-base-02.md#configuring-the-unity-project)
-
-6. [Creazione e impostazione della scena](mr-learning-base-02.md#creating-and-configuring-the-scene) e assegnazione di un nome appropriato, ad esempio **PC Holographic Remoting**
+5. [Creazione e configurazione della scena e](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) assegnare alla scena un nome appropriato, ad esempio PC *Holographic Remoting*
 
 Segui quindi le istruzioni riportate in [Modifica delle opzioni di visualizzazione di consapevolezza spaziale](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) per impostare **DefaultHoloLens2ConfigurationProfile** come profilo di configurazione MRTK per la scena. Modifica le opzioni di visualizzazione per la mesh di consapevolezza spaziale impostando **Occlusion** (Occlusione).
 
@@ -67,7 +65,7 @@ Segui quindi le istruzioni riportate in [Modifica delle opzioni di visualizzazio
 Scarica e **importa** [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage).
 
 >[!TIP]
-> Per un promemoria su come importare un pacchetto personalizzato Unity, è possibile fare riferimento alle istruzioni relative all' [importazione delle risorse dell'esercitazione](mr-learning-base-02.md#importing-the-tutorial-assets) .
+> Per un promemoria su come importare un pacchetto personalizzato di Unity, è possibile fare riferimento alle istruzioni relative all'importazione [degli asset dell'esercitazione.](mr-learning-base-02.md#importing-the-tutorial-assets)
 
 Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progetto) avrà un aspetto simile al seguente:
 
@@ -169,7 +167,7 @@ In questa sezione esaminerai come abilitare il tracciamento oculare nel tuo prog
 
 ### <a name="1-identify-target-objects-and-associated-tooltips"></a>1. Identificare gli oggetti di destinazione e le descrizioni comandi associate
 
-Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto ModelParent. Espandere ***MarsCuriosity-> Rover** _ per trovare cinque parti principali del MarsCuriosityRover: _ * PDI-camera * *, **poi-Wheels**, **PDI-Antena**, **PDI-spettrometro**, **poi-RUHF antenna**.
+Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto ModelParent. Espandere ***MarsCuriosity -> Rover** _ per trovare cinque parti principali di MarsCuriosityRover: _*POI-Camera**, **POI-Wheels,** **POI-Antena,** **POI-Spectrometer,** **POI-RUHF Antenna**.
 
 * Osserva cinque oggetti descrizione comando corrispondenti associati a parti di MarsCuriosityRover nella finestra Hierarchy (Gerarchia).
 * Configurerai questi oggetti per evidenziare l'esperienza quando guardi le parti di MarsCuriosityRover.

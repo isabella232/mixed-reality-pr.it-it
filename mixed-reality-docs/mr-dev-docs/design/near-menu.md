@@ -1,38 +1,38 @@
 ---
 title: Menu adiacente
-description: Informazioni su come usare near menus, ovvero una raccolta di pulsanti in un pannello che seguono il comportamento di tag-along in un ambiente di realtà mista.
+description: Informazioni su come usare i menu vicini, ovvero una raccolta di pulsanti in un pannello che seguono il comportamento basato su tag in un ambiente di realtà mista.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, menu, cuffie per realtà mista, cuffie di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 2536652f78c0643f8b527878565c1a4f0328ce9a
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: Realtà mista, controlli, interazione, interfaccia utente, ux, menu, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: ecee6182d64ab1c843a9948984565d49ae313923
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299696"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600170"
 ---
 # <a name="near-menu"></a>Menu adiacente
 
 ![Menu adiacente](images/UX_Hero_NearMenu.jpg)
 
-Un menu vicino è una raccolta di pulsanti in un pannello che seguono gli utenti con il [comportamento di tag-along](billboarding-and-tag-along.md#what-is-a-tag-along). Il pannello rimane all'interno di un intervallo di distanza e un angolo impostati, che consente agli utenti di interagire comodamente con il contenuto. Se è necessario bloccare o disabilitare il comportamento dei tag del pannello, usare il pulsante Aggiungi o selezionare e posizionare il menu. L'aggiunta del pannello consente agli utenti di concentrarsi sul contenuto di destinazione senza distrazioni. È possibile riabilitare il comportamento del tag insieme in qualsiasi momento premendo il pulsante Aggiungi per fare in modo che il menu segua di nuovo l'utente.
+Un menu vicino è una raccolta di pulsanti in un pannello che seguono gli utenti con [un comportamento basato su tag.](billboarding-and-tag-along.md#what-is-a-tag-along) Il pannello rimane entro un intervallo e un angolo di distanza impostati, che consentono agli utenti di interagire con il contenuto in modo a distorsio. Se devi bloccare il mondo o disabilitare il comportamento del tag lungo il pannello, usa il pulsante aggiungi o afferra e posiziona il menu. L'aggiunta del pannello consente agli utenti di concentrarsi sul contenuto di destinazione senza distrazioni. È possibile ri abilitare il comportamento di aggiunta di tag in qualsiasi momento premendo il pulsante aggiungi per fare in modo che il menu segua di nuovo l'utente.
 
 <br>
 
 ---
 
-## <a name="near-menu-in-mrtk-mixed-reality-toolkit-for-unity"></a>Near menu in MRTK (Mixed Reality Toolkit) per Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** offre diversi esempi di prefabbricati di menu near.
+## <a name="near-menu-in-mrtk-mixed-reality-toolkit-for-unity"></a>Menu vicino in MRTK (Mixed Reality Toolkit) per Unity
+**[MRTK offre](https://github.com/Microsoft/MixedRealityToolkit-Unity)** vari esempi di prefab di menu nelle vicinanze.
 
-* [MRTK-menu vicino](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/near-menu)
+* [MRTK - Menu Vicino](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/near-menu)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

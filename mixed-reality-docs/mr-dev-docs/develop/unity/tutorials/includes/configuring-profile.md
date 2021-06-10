@@ -1,141 +1,16 @@
 ---
-ms.openlocfilehash: 5d3f5b1dd0600404e534023e3bf7b6fcaf7fe8f6
-ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
+ms.openlocfilehash: e7a04b0d5beb6f5901c07d0cfa721d9b9546a557
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106097790"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111430533"
 ---
-# <a name="unity-20192020--windows-xr-plugin"></a>[Plug-in Unity 2019/2020 + Windows XR](#tab/winxr)
-
-### <a name="1-clone-the-default-configuration-profile"></a>1. Clonare il profilo di configurazione predefinito
-
-> [!NOTE]
-> Il profilo di configurazione è il profilo di primo livello. Di conseguenza, prima di modificare altri profili, devi clonare il profilo di configurazione.
-
-Nella finestra gerarchia selezionare l'oggetto **MixedRealityToolkit** , quindi nella finestra di controllo verificare che il profilo di configurazione **MixedRealityToolkit** sia impostato su **DefaultXRSDKConfigurationProfile**:
-
-![Componente MixedRealityToolkit di Unity con DefaultHoloLens2ConfigurationProfile selezionato](../images/mr-learning-base/base-03-section1-step1-1xrsdk.png)
-
-Con l'oggetto **MixedRealityToolkit** ancora selezionato, nella finestra Inspector (Controllo) fai clic sul pulsante **Copy & Customize** (Copia e personalizza) per aprire la finestra Clone Profile (Clona profilo):
-
-![Pulsante Copy & Customize del componente MixedRealityToolkit di Unity](../images/mr-learning-base/base-03-section1-step1-2xrsdk.png)
-
-Nella finestra profilo clone immettere un **nome di profilo** adatto, ad esempio _GettingStarted_XRSDKConfigurationProfile_, quindi fare clic sul pulsante **clona** per creare una copia modificabile del **DefaultXRSDKConfigurationProfile**:
-
-![Finestra popup per clonare il profilo di configurazione di MixedRealityToolkit di Unity](../images/mr-learning-base/base-03-section1-step1-3xrsdk.png)
-
-Il profilo di configurazione appena creato viene ora assegnato come profilo di configurazione per la scena:
-
-![Componente MixedRealityToolkit di Unity con l'elemento HoloLens2ConfigurationProfile personalizzato appena creato applicato](../images/mr-learning-base/base-03-section1-step1-4xrsdk.png)
-
-Nel menu di Unity scegli **File** > **Save** (Salva) per salvare la scena.
-
-> [!TIP]
-> Ricordarsi di salvare il lavoro durante l'esercitazione.
-
-### <a name="2-enable-the-spatial-awareness-system"></a>2. Abilitare il sistema di consapevolezza spaziale
-
-Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **MixedRealityToolkit** e quindi nella finestra Inspector (Controllo) selezionare la scheda **Spatial Awareness** (Consapevolezza spaziale), infine la casella di controllo **Enable Spatial Awareness System** (Abilita sistema di consapevolezza spaziale):
-
-![Componente MixedRealityToolkit di Unity con il sistema Spatial Awareness abilitato](../images/mr-learning-base/base-03-section1-step2-1xrsdk.png)
-
-> [!NOTE]
-> Per i progetti futuri, se non è necessario che l'app risponda o interagisca con l'ambiente, è consigliabile che il sistema Spatial Awareness rimanga disabilitato per ridurre l'impatto in termini di prestazioni.
-
-### <a name="3-clone-the-default-spatial-awareness-system-profile"></a>3. Clonare il profilo predefinito del sistema di consapevolezza spaziale
-
-Nella scheda **Spatial Awareness** (Consapevolezza spaziale) fai clic sul pulsante **Clone** (Clona) per aprire la finestra Clone Profile (Clona profilo):
-
-![Componente MixedRealityToolkit di Unity con la scheda Spatial Awareness selezionata](../images/mr-learning-base/base-03-section1-step3-1xrsdk.png)
-
-Nella finestra profilo clone immettere un **nome di profilo** adatto, ad esempio _GettingStarted_XRSDKSpatialAwarenessSystemProfile_, quindi fare clic sul pulsante **clona** per creare una copia modificabile del **DefaultXRSDKSpatialAwarenessSystemProfile**:
-
-![Finestra popup per clonare il profilo del sistema Spatial Awareness di MixedRealityToolkit di Unity](../images/mr-learning-base/base-03-section1-step3-2xrsdk.png)
-
-Il profilo del sistema di consapevolezza spaziale appena creato viene ora assegnato automaticamente al profilo di configurazione:
-
-![Componente MixedRealityToolkit di Unity con l'elemento MixedRealitySpatialAwarenessSystemProfile personalizzato appena creato applicato](../images/mr-learning-base/base-03-section1-step3-3xrsdk.png)
-
-### <a name="4-clone-the-default-spatial-awareness-mesh-observer-profile"></a>4. Clonare il profilo predefinito dell'osservatore della mesh di consapevolezza spaziale
-
-Con la scheda **consapevolezza spaziale** ancora selezionata, espandere la sezione **Observer SDK Windows Mixed Reality Spatial mesh** , quindi fare clic sul pulsante **clona** per aprire la finestra profilo Clone:
-
-![Componente MixedRealityToolkit di Unity con la sezione Windows Mixed Reality Spatial Mesh Observer espansa](../images/mr-learning-base/base-03-section1-step4-1xrsdk.png)
-
-Nella finestra Clone Profile (Clona profilo) immettere un **nome di profilo** appropriato, ad esempio _GettingStarted_MixedRealitySpatialAwarenessMeshObserverProfile_ e quindi fare clic sul pulsante **Clone** (Clona) per creare una copia modificabile di **DefaultMixedRealitySpatialAwarenessMeshObserverProfile**:
-
-![Finestra popup per clonare il profilo di Spatial Mesh Observer di MixedRealityToolkit di Unity](../images/mr-learning-base/base-03-section1-step4-2xrsdk.png)
-
-Il profilo dell'osservatore della mesh di consapevolezza spaziale appena creato viene ora assegnato automaticamente al profilo del sistema di consapevolezza spaziale:
-
-![Componente MixedRealityToolkit di Unity con l'elemento MixedRealitySpatialAwarenessMeshObserverProfile personalizzato appena creato applicato](../images/mr-learning-base/base-03-section1-step4-3xrsdk.png)
-
-### <a name="5-change-the-visibility-of-the-spatial-awareness-mesh"></a>5. Modificare la visibilità della mesh di consapevolezza spaziale
-
-In **Spatial Mesh Observer Settings** (Impostazioni osservatore della mesh spaziale) impostare **Display Option** (Opzione di visualizzazione) su **Occlusion** (Occlusione) per rendere invisibile la mesh di mapping spaziale mentre è ancora funzionante:
-
-![Componente MixedRealityToolkit di Unity con l'opzione Display Option di Spatial Mesh Observer impostata su Occlusion](../images/mr-learning-base/base-03-section1-step5-1xrsdk.png)
-
-> [!NOTE]
-> Anche se non è visibile, la mesh di mapping spaziale è comunque presente e funzionante. Ad esempio, gli ologrammi dietro la mesh di mapping spaziale, come nel caso di un ologramma dietro a un muro fisico, non saranno visibili.
-
-hai appreso come modificare un'impostazione nel profilo di MRTK. Come si può notare, per personalizzare le impostazioni di MRTK, è necessario prima creare copie dei profili predefiniti. Poiché i profili predefiniti non sono modificabili, saranno sempre presenti come riferimento in caso di ripristino delle impostazioni predefinite. Per altre informazioni sui profili di MRTK e sulla loro architettura, consultare la [guida alla configurazione dei profili di MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide) nel [portale della documentazione di MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity).
-
 # <a name="unity-2020--openxr"></a>[Unity 2020 + OpenXR](#tab/openxr)
 
-### <a name="1-clone-the-default-configuration-profile"></a>1. Clonare il profilo di configurazione predefinito
-
-> [!NOTE]
-> Il profilo di configurazione è il profilo di primo livello. Di conseguenza, prima di modificare altri profili, devi clonare il profilo di configurazione.
-
-Nella finestra gerarchia selezionare l'oggetto **MixedRealityToolkit** , quindi nella finestra di controllo verificare che il profilo di configurazione **MixedRealityToolkit** sia impostato su **DefaultOpenXRConfigurationProfile**:
-
-![Componente MixedRealityToolkit Unity con profilo openXR predefinito selezionato](../images/mr-learning-base/base-03-section1-step1-1openxr.png)
-
-Con l'oggetto **MixedRealityToolkit** ancora selezionato, nella finestra Inspector (Controllo) fai clic sul pulsante **Copy & Customize** (Copia e personalizza) per aprire la finestra Clone Profile (Clona profilo):
-
-![Copia del componente MixedRealityToolkit di Unity & pulsante Personalizza per il profilo openxr](../images/mr-learning-base/base-03-section1-step1-2openxr.png)
-
-Nella finestra profilo clone immettere un **nome di profilo** adatto, ad esempio _GettingStarted_OpenXRConfigurationProfile_, quindi fare clic sul pulsante **clona** per creare una copia modificabile del **DefaultOpenXRConfigurationProfile**:
-
-![Finestra popup del profilo di configurazione di Unity MixedRealityToolkit Clone per profilo openxr](../images/mr-learning-base/base-03-section1-step1-3openxr.png)
-
-Il profilo di configurazione appena creato viene ora assegnato come profilo di configurazione per la scena:
-
-![Componente MixedRealityToolkit Unity con OpenXR personalizzato appena creato applicato](../images/mr-learning-base/base-03-section1-step1-4openxr.png)
-
-Nel menu di Unity scegli **File** > **Save** (Salva) per salvare la scena.
-
-> [!TIP]
-> Ricordarsi di salvare il lavoro durante l'esercitazione.
-
-### <a name="2-enable-the-spatial-awareness-system"></a>2. Abilitare il sistema di consapevolezza spaziale
-
-Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **MixedRealityToolkit** e quindi nella finestra Inspector (Controllo) selezionare la scheda **Spatial Awareness** (Consapevolezza spaziale), infine la casella di controllo **Enable Spatial Awareness System** (Abilita sistema di consapevolezza spaziale):
-
-![Componente MixedRealityToolkit di Unity con il sistema Spatial Awareness abilitato](../images/mr-learning-base/base-03-section1-step2-1xrsdk.png)
-
-> [!NOTE]
-> Per i progetti futuri, se non è necessario che l'app risponda o interagisca con l'ambiente, è consigliabile che il sistema Spatial Awareness rimanga disabilitato per ridurre l'impatto in termini di prestazioni.
-
-### <a name="3-clone-the-default-spatial-awareness-system-profile"></a>3. Clonare il profilo predefinito del sistema di consapevolezza spaziale
-
-Nella scheda **Spatial Awareness** (Consapevolezza spaziale) fai clic sul pulsante **Clone** (Clona) per aprire la finestra Clone Profile (Clona profilo):
-
-![Componente MixedRealityToolkit di Unity con la scheda Spatial Awareness selezionata](../images/mr-learning-base/base-03-section1-step3-1xrsdk.png)
-
-Nella finestra profilo clone immettere un **nome di profilo** adatto, ad esempio GettingStarted_OpenXRSpatialAwarenessSystemProfile, quindi fare clic sul pulsante **clona** per creare una copia modificabile del **DefaultXRSDKSpatialAwarenessSystemProfile**:
-
-![Finestra popup per clonare il profilo del sistema Spatial Awareness di MixedRealityToolkit di Unity](../images/mr-learning-base/base-03-section1-step3-2xrsdk.png)
-
-Il profilo del sistema di consapevolezza spaziale appena creato viene ora assegnato automaticamente al profilo di configurazione:
-
-![Componente MixedRealityToolkit di Unity con l'elemento MixedRealitySpatialAwarenessSystemProfile personalizzato appena creato applicato](../images/mr-learning-base/base-03-section1-step3-3xrsdk.png)
-
 ### <a name="4-clone-the-default-spatial-awareness-mesh-observer-profile"></a>4. Clonare il profilo predefinito dell'osservatore della mesh di consapevolezza spaziale
 
-Con la scheda **consapevolezza spaziale** ancora selezionata, espandere la sezione **Observer SDK Windows Mixed Reality Spatial mesh** , quindi fare clic sul pulsante **clona** per aprire la finestra profilo Clone:
+Con la **scheda Consapevolezza** spaziale ancora selezionata, espandere la sezione **XR SDK Windows Mixed Reality Spatial Mesh Observer** e quindi fare clic sul pulsante **Clone** (Clona) per aprire la finestra Clone Profile (Clona profilo):
 
 ![Componente MixedRealityToolkit di Unity con la sezione Windows Mixed Reality Spatial Mesh Observer espansa](../images/mr-learning-base/base-03-section1-step4-1xrsdk.png)
 
@@ -147,72 +22,30 @@ Il profilo dell'osservatore della mesh di consapevolezza spaziale appena creato 
 
 ![Componente MixedRealityToolkit di Unity con l'elemento MixedRealitySpatialAwarenessMeshObserverProfile personalizzato appena creato applicato](../images/mr-learning-base/base-03-section1-step4-3xrsdk.png)
 
-### <a name="5-change-the-visibility-of-the-spatial-awareness-mesh"></a>5. Modificare la visibilità della mesh di consapevolezza spaziale
-
-In **Spatial Mesh Observer Settings** (Impostazioni osservatore della mesh spaziale) impostare **Display Option** (Opzione di visualizzazione) su **Occlusion** (Occlusione) per rendere invisibile la mesh di mapping spaziale mentre è ancora funzionante:
-
-![Componente MixedRealityToolkit di Unity con l'opzione Display Option di Spatial Mesh Observer impostata su Occlusion](../images/mr-learning-base/base-03-section1-step5-1xrsdk.png)
-
-> [!NOTE]
-> Anche se non è visibile, la mesh di mapping spaziale è comunque presente e funzionante. Ad esempio, gli ologrammi dietro la mesh di mapping spaziale, come nel caso di un ologramma dietro a un muro fisico, non saranno visibili.
-
-hai appreso come modificare un'impostazione nel profilo di MRTK. Come si può notare, per personalizzare le impostazioni di MRTK, è necessario prima creare copie dei profili predefiniti. Poiché i profili predefiniti non sono modificabili, saranno sempre presenti come riferimento in caso di ripristino delle impostazioni predefinite. Per altre informazioni sui profili di MRTK e sulla loro architettura, consultare la [guida alla configurazione dei profili di MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide) nel [portale della documentazione di MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity).
-
-
-# <a name="legacy-wsa"></a>[WSA legacy](#tab/wsa)
-
-### <a name="1-clone-the-default-configuration-profile"></a>1. Clonare il profilo di configurazione predefinito
-
-> [!NOTE]
-> Il profilo di configurazione è il profilo di primo livello. Di conseguenza, prima di modificare altri profili, devi clonare il profilo di configurazione.
-
-Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **MixedRealityToolkit** e quindi nella finestra Inspector (Controllo) impostare **Configuration Profile** (Profilo di configurazione) di Mixed Reality Toolkit su **DefaultHoloLens2ConfigurationProfile**:
-
-![Componente MixedRealityToolkit di Unity con DefaultHoloLens2ConfigurationProfile selezionato](../images/mr-learning-base/base-03-section1-step1-1.png)
-
-Con l'oggetto **MixedRealityToolkit** ancora selezionato, nella finestra Inspector (Controllo) fai clic sul pulsante **Copy & Customize** (Copia e personalizza) per aprire la finestra Clone Profile (Clona profilo):
-
-![Pulsante Copy & Customize del componente MixedRealityToolkit di Unity](../images/mr-learning-base/base-03-section1-step1-2.png)
-
-Nella finestra Clone Profile (Clona profilo) immettere un **nome di profilo** appropriato, ad esempio _GettingStarted_HoloLens2ConfigurationProfile_ e quindi fare clic sul pulsante **Clone** (Clona) per creare una copia modificabile di **DefaultHololens2ConfigurationProfile**:
-
-![Finestra popup per clonare il profilo di configurazione di MixedRealityToolkit di Unity](../images/mr-learning-base/base-03-section1-step1-3.png)
-
-Il profilo di configurazione appena creato viene ora assegnato come profilo di configurazione per la scena:
-
-![Componente MixedRealityToolkit di Unity con l'elemento HoloLens2ConfigurationProfile personalizzato appena creato applicato](../images/mr-learning-base/base-03-section1-step1-4.png)
-
-Nel menu di Unity scegli **File** > **Save** (Salva) per salvare la scena.
-
-> [!TIP]
-> Ricordarsi di salvare il lavoro durante l'esercitazione.
-
-### <a name="2-enable-the-spatial-awareness-system"></a>2. Abilitare il sistema di consapevolezza spaziale
-
-Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto **MixedRealityToolkit** e quindi nella finestra Inspector (Controllo) selezionare la scheda **Spatial Awareness** (Consapevolezza spaziale), infine la casella di controllo **Enable Spatial Awareness System** (Abilita sistema di consapevolezza spaziale):
-
-![Componente MixedRealityToolkit di Unity con il sistema Spatial Awareness abilitato](../images/mr-learning-base/base-03-section1-step2-1.png)
-
-> [!NOTE]
-> Per i progetti futuri, se non è necessario che l'app risponda o interagisca con l'ambiente, è consigliabile che il sistema Spatial Awareness rimanga disabilitato per ridurre l'impatto in termini di prestazioni.
-
-### <a name="3-clone-the-default-spatial-awareness-system-profile"></a>3. Clonare il profilo predefinito del sistema di consapevolezza spaziale
-
-Nella scheda **Spatial Awareness** (Consapevolezza spaziale) fai clic sul pulsante **Clone** (Clona) per aprire la finestra Clone Profile (Clona profilo):
-
-![Componente MixedRealityToolkit di Unity con la scheda Spatial Awareness selezionata](../images/mr-learning-base/base-03-section1-step3-1.png)
-
-Nella finestra Clone Profile (Clona profilo) immettere un **nome di profilo** appropriato, ad esempio _GettingStarted_MixedRealitySpatialAwarenessSystemProfile_ e quindi fare clic sul pulsante **Clone** (Clona) per creare una copia modificabile di **DefaultMixedRealitySpatialAwarenessSystemProfile**:
-
-![Finestra popup per clonare il profilo del sistema Spatial Awareness di MixedRealityToolkit di Unity](../images/mr-learning-base/base-03-section1-step3-2.png)
-
-Il profilo del sistema di consapevolezza spaziale appena creato viene ora assegnato automaticamente al profilo di configurazione:
-
-![Componente MixedRealityToolkit di Unity con l'elemento MixedRealitySpatialAwarenessSystemProfile personalizzato appena creato applicato](../images/mr-learning-base/base-03-section1-step3-3.png)
+# <a name="unity-20192020--windows-xr-plugin"></a>[Unity 2019/2020 + Plug-in Windows XR](#tab/winxr)
 
 ### <a name="4-clone-the-default-spatial-awareness-mesh-observer-profile"></a>4. Clonare il profilo predefinito dell'osservatore della mesh di consapevolezza spaziale
 
-Con la scheda **Spatial Awareness** (Consapevolezza spaziale) ancora selezionata, espandi la sezione **Windows Mixed Reality Spatial Mesh Observer** (Osservatore mesh spaziale Windows Mixed Reality) e quindi fai clic sul pulsante **Clone** (Clona) per aprire la finestra Clone Profile (Clona profilo):
+Con la **scheda Consapevolezza** spaziale ancora selezionata, espandere la sezione **XR SDK Windows Mixed Reality Spatial Mesh Observer** e quindi fare clic sul pulsante **Clone** (Clona) per aprire la finestra Clone Profile (Clona profilo):
+
+![Componente MixedRealityToolkit di Unity con la sezione Windows Mixed Reality Spatial Mesh Observer espansa](../images/mr-learning-base/base-03-section1-step4-1xrsdk.png)
+
+> [!NOTE]
+> Lo screenshot precedente è di **Unity 2020** Se si usa **Unity 2019,** saranno presenti due schede, una per Legacy XR e una per XRSDK, assicurarsi di essere nella scheda XRSDK e clonare **XR SDK Windows Mixed Reality Spatial Mesh Observer.**
+
+Nella finestra Clone Profile (Clona profilo) immettere un **nome di profilo** appropriato, ad esempio _GettingStarted_MixedRealitySpatialAwarenessMeshObserverProfile_ e quindi fare clic sul pulsante **Clone** (Clona) per creare una copia modificabile di **DefaultMixedRealitySpatialAwarenessMeshObserverProfile**:
+
+![Finestra popup per clonare il profilo di Spatial Mesh Observer di MixedRealityToolkit di Unity](../images/mr-learning-base/base-03-section1-step4-2xrsdk.png)
+
+Il profilo dell'osservatore della mesh di consapevolezza spaziale appena creato viene ora assegnato automaticamente al profilo del sistema di consapevolezza spaziale:
+
+![Componente MixedRealityToolkit di Unity con l'elemento MixedRealitySpatialAwarenessMeshObserverProfile personalizzato appena creato applicato](../images/mr-learning-base/base-03-section1-step4-3xrsdk.png)
+
+# <a name="legacy-wsa"></a>[Legacy WSA](#tab/wsa)
+
+### <a name="4-clone-the-default-spatial-awareness-mesh-observer-profile"></a>4. Clonare il profilo predefinito dell'osservatore della mesh di consapevolezza spaziale
+
+Con  la scheda Consapevolezza spaziale ancora selezionata, assicurarsi di essere nella scheda **Legacy XR (XR** legacy) ed espandere la sezione **Windows Mixed Reality Spatial Mesh Observer (Osservatore** mesh spaziale di Windows Mixed Reality), quindi fare clic sul pulsante **Clone** (Clona) per aprire la finestra Clone Profile (Clona profilo):
 
 ![Componente MixedRealityToolkit di Unity con la sezione Windows Mixed Reality Spatial Mesh Observer espansa](../images/mr-learning-base/base-03-section1-step4-1.png)
 
@@ -223,14 +56,3 @@ Nella finestra Clone Profile (Clona profilo) immettere un **nome di profilo** ap
 Il profilo dell'osservatore della mesh di consapevolezza spaziale appena creato viene ora assegnato automaticamente al profilo del sistema di consapevolezza spaziale:
 
 ![Componente MixedRealityToolkit di Unity con l'elemento MixedRealitySpatialAwarenessMeshObserverProfile personalizzato appena creato applicato](../images/mr-learning-base/base-03-section1-step4-3.png)
-
-### <a name="5-change-the-visibility-of-the-spatial-awareness-mesh"></a>5. Modificare la visibilità della mesh di consapevolezza spaziale
-
-In **Spatial Mesh Observer Settings** (Impostazioni osservatore della mesh spaziale) impostare **Display Option** (Opzione di visualizzazione) su **Occlusion** (Occlusione) per rendere invisibile la mesh di mapping spaziale mentre è ancora funzionante:
-
-![Componente MixedRealityToolkit di Unity con l'opzione Display Option di Spatial Mesh Observer impostata su Occlusion](../images/mr-learning-base/base-03-section1-step5-1.png)
-
-> [!NOTE]
-> Anche se non è visibile, la mesh di mapping spaziale è comunque presente e funzionante. Ad esempio, gli ologrammi dietro la mesh di mapping spaziale, come nel caso di un ologramma dietro a un muro fisico, non saranno visibili.
-
-hai appreso come modificare un'impostazione nel profilo di MRTK. Come si può notare, per personalizzare le impostazioni di MRTK, è necessario prima creare copie dei profili predefiniti. Poiché i profili predefiniti non sono modificabili, saranno sempre presenti come riferimento in caso di ripristino delle impostazioni predefinite. Per altre informazioni sui profili di MRTK e sulla loro architettura, consultare la [guida alla configurazione dei profili di MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide) nel [portale della documentazione di MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity).

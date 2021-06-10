@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, risolutori
 ms.localizationpriority: high
-ms.openlocfilehash: b2d23601419c36f2a79a0c6e19d06eda6dc54d09
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 1d148fc31d2009c6843882bf9b9cd9fc99c3322a
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300396"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743678"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Creazione di contenuto dinamico tramite risolutori
 
@@ -26,14 +26,14 @@ In questa esercitazione verrà analizzato come posizionare in modo dinamico gli 
 
 ## <a name="location-of-solvers-in-the-mrtk"></a>Posizione dei risolutori in MRTK
 
- I risolutori di MRTK si trovano nella cartella MRTK SDK. Per visualizzare i resolver disponibili nel progetto, nella finestra del progetto passare a **packages**  >  **mixed reality Toolkit Foundation**  >  **SDK**  >  **features**  >    >  **risolutori** utilità:
+ I risolutori di MRTK si trovano nella cartella MRTK SDK. Per visualizzare i risolutori disponibili nel progetto, nella finestra Progetto passare a **Pacchetti**  >  **Mixed Reality Toolkit Foundation**  >  **SDK**  >  **Features**  >  **Utilities**  >  **Solvers**:
 
 ![Finestra Project di Unity con la cartella Solvers selezionata](images/mr-learning-base/base-05-section1-step1-1.png)
 
-In questa esercitazione verrà esaminata l'implementazione dei risolutori Directional Indicator (Indicatore direzionale) e Tap To Place (Tocco per posizionamento). Per altre informazioni sull'intera gamma di risolutori disponibili in MRTK, puoi fare riferimento alla guida [Risolutori](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver) nel [portale della documentazione di MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity).
+In questa esercitazione verrà esaminata l'implementazione dei risolutori Directional Indicator (Indicatore direzionale) e Tap To Place (Tocco per posizionamento). Per altre informazioni sull'intera gamma di risolutori disponibili in MRTK, puoi fare riferimento alla guida [Risolutori](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver) nel [portale della documentazione di MRTK](/windows/mixed-reality/mrtk-unity).
 
 > [!NOTE]
-> Il Risolutore di indicatori direzionali non si trova nelle cartelle dei risolutori a cui si fa riferimento sopra, ma nei pacchetti > Mixed Reality Toolkit Foundation > SDK > le funzionalità di > sperimentali > le cartelle delle utilità, perché si tratta di una funzionalità sperimentale.
+> Il risolutore indicatore direzionale non si trova nelle cartelle risolutori a cui si fa riferimento in precedenza, ma nelle cartelle Pacchetti > Mixed Reality Toolkit Foundation > SDK > Experimental > Features > Utilities, perché si tratta di una funzionalità sperimentale.
 
 ## <a name="using-the-directional-indicator-solver-to-direct-the-user-to-objects"></a>Uso del risolutore Directional Indicator (Indicatore direzionale) per indirizzare l'utente verso gli oggetti
 
@@ -44,15 +44,12 @@ Nella finestra Project (Progetto) passa alla cartella **Assets (Asset)**  > **MR
 > [!TIP]
 > Se ritieni che la fotocamera o altre icone nella scena nascondano gli oggetti o siano elementi di distrazione, puoi nasconderli <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">disattivando il menu Gizmos</a> come illustrato nell'immagine precedente. Per altre informazioni sul menu Gizmos e su come è possibile usarlo per ottimizzare la vista della scena, puoi fare riferimento alla documentazione relativa al <a href="https://docs.unity3d.com/Manual/GizmosMenu.html" target="_blank">menu Gizmos</a> di Unity.
 
-Rinominare l'oggetto Chevron **Indicator** (Indicatore) appena aggiunto, quindi nella finestra Inspector (Controllo) usare il pulsante **Add Component** (Aggiungi componente) per aggiungere **DirectionalIndicator**:
+Rinominare l'oggetto Chevron appena aggiunto in **Indicator**, quindi nella finestra Inspector (Controllo) usare il pulsante **Add Component** (Aggiungi componente) per aggiungere **DirectionalIndicator**:
 
 ![Unity con il componente risolutore DirectionalIndicator aggiunto](images/mr-learning-base/base-05-section2-step1-2.png)
 
 > [!NOTE]
 > Quando aggiungi un risolutore, in questo caso il componente DirectionalIndicator, viene aggiunto automaticamente il componente SolverHandler perché è richiesto dai risolutori.
-
-> [!NOTE]
-> Directional Indicator Controller (Script) (Controllo indicatore direzionale - script) non fa parte di MRTK, ma è stato incluso negli asset dell'esercitazione.
 
 Configura i componenti DirectionalIndicator e SolverHandler nel modo seguente:
 
@@ -72,7 +69,7 @@ Seleziona il pulsante Play (Riproduci) per attivare la modalità di gioco e tien
 > Se il raggio della fotocamera non è visibile nella finestra della scena, verifica che sia attivato il menu Gizmos, come mostrato nell'immagine precedente.
 
 > [!TIP]
-> Per informazioni sulla procedura di simulazione di input nell'editor, puoi fare riferimento alla guida [Uso della simulazione di input manuale nell'editor per testare una scena](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene) nel [portale della documentazione di MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity).
+> Per informazioni sulla procedura di simulazione di input nell'editor, puoi fare riferimento alla guida [Uso della simulazione di input manuale nell'editor per testare una scena](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene) nel [portale della documentazione di MRTK](/windows/mixed-reality/mrtk-unity).
 
 > [!TIP]
 > Se il computer è dotato di un microfono, puoi impostare facilmente lo stato attivo del pannello di diagnostica visualizzato nella finestra di gioco usando il comando di riconoscimento vocale "toggle diagnostics" (Attiva/disattiva diagnostica). In alternativa, puoi disabilitarlo in MRTK Configuration Profile (Profilo di configurazione di MRTK) > Diagnostics (Diagnostica) > Enable Diagnostics System (Abilita sistema di diagnostica). Tuttavia, è consigliabile in genere lasciare il sistema di diagnostica attivo durante lo sviluppo.
@@ -82,7 +79,7 @@ Seleziona il pulsante Play (Riproduci) per attivare la modalità di gioco e tien
 Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto RoverExplorer > **RoverAssembly** e quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **Tap To Place (Script)** (Tocco per posizionamento - Script) e configuralo come indicato di seguito:
 
 * Verifica che per **Tracked Target Type** (Tipo destinazione tracciata) del componente **SolverHandler** sia impostato il valore **Head** (Testa)
-* Deselezionare la casella di controllo **Usa offset normale superficie predefinita** e verificare che **offset normale superficie** sia impostato su 0
+* Deselezionare **l'opzione Usa offset normale della** superficie predefinita e assicurarsi che **l'opzione Offset** normale della superficie sia impostata su 0
 * Seleziona la casella di controllo **Keep Orientation Vertical** (Mantieni orientamento verticale)
 * Dall'elenco a discesa **Magnetic Surfaces (Superfici magnetiche)**  > **Element 0 (Elemento 0)** deseleziona tutte le opzioni tranne **Spatial Awareness** (Consapevolezza spaziale)
 
@@ -91,7 +88,7 @@ Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto RoverExplorer > **Rover
 > [!NOTE]
 > L'impostazione Magnetic Surfaces (Superfici magnetiche) determina quali oggetti possono essere rilevati dal componente Tap To Place (Script) (Tocco per posizionamento - script) quando viene posizionato un oggetto. Modificando l'impostazione in modo da definire solo Spatial Awareness (Consapevolezza spaziale), il componente Tap To Place (Script) (Tocco per posizionamento - script) potrà posizionare Rover solo su oggetti del livello di Unity denominato Spatial Awareness (Consapevolezza spaziale), che per impostazione predefinita è la mesh di consapevolezza spaziale generata da HoloLens.
 >
->Per altre informazioni sui livelli, puoi fare riferimento alla documentazione di Unity relativa ai <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">livelli</a>.
+> Per altre informazioni sui livelli, puoi fare riferimento alla documentazione di Unity relativa ai <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">livelli</a>.
 
 > [!TIP]
 > Se vuoi visualizzare la mesh di consapevolezza spaziale quando testi la funzionalità Tap To Place (Tocco per posizionamento) in HoloLens, puoi impostare temporaneamente l'opzione di visualizzazione dell'osservatore della mesh spaziale come visibile. Per un promemoria su come modificare l'opzione di visualizzazione, puoi fare riferimento alle istruzioni [Modifica dell'opzione di visualizzazione di consapevolezza spaziale](mr-learning-base-03.md#changing-the-spatial-awareness-display-option).
@@ -140,7 +137,7 @@ Dopo aver testato la funzionalità in modalità di gioco, fai clic con il pulsan
 
 In questa esercitazione hai appreso come usare il risolutore Directional Indicator (Indicatore direzionale) di MRTK per fare in modo che un elemento dell'interfaccia utente indirizzi intuitivamente l'utente verso gli oggetti. Hai appreso inoltre come usare il risolutore Tap To Place (Tocco per posizionamento) per riposizionare facilmente gli oggetti.
 
-Per altre informazioni su questi e altri risolutori inclusi in MRTK, puoi fare riferimento alla guida [Risolutori](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver) nel [portale della documentazione di MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
+Per altre informazioni su questi e altri risolutori inclusi in MRTK, puoi fare riferimento alla guida [Risolutori](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver) nel [portale della documentazione di MRTK](/windows/mixed-reality/mrtk-unity/).
 
 > [!div class="nextstepaction"]
->[Esercitazione successiva: 6. Creazione delle interfacce utente](mr-learning-base-06.md)
+> [Esercitazione successiva: 6. Creazione delle interfacce utente](mr-learning-base-06.md)

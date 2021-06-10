@@ -22,7 +22,7 @@
 ### [Informazioni su WebVR](webvr.md)
 ### [Domande frequenti sull'uso di Windows Mixed Reality](using-wmr-faq.yml)
 
-## Opzioni di supporto tecnico e assistenza
+## Risoluzione dei problemi e domande frequenti
 ### [Risolvere i problemi in Windows Mixed Reality](troubleshooting-windows-mixed-reality.md)
 ### [Registrazione di bug e feedback](filing-feedback.md)
 ### [Codici di errore](error-codes.md)
@@ -37,10 +37,11 @@
 ### [SteamVR](steamvr-questions.md)
 ### [Sistema di tracciamento](tracking.md)
 ### [WebVR](webvr-questions.md)
-### [Domande frequenti sull'hardware immersivo](other-questions.md)
+### [Domande frequenti sull'hardware immersive](other-questions.md)
 ### [Domande frequenti su HP Reverb G2](reverbG2-faq.yml)
 
 ## Risorse
+### [Ottenere informazioni sulle Windows Mixed Reality](get-wmr-info.md)
 ### [Salute, sicurezza e comfort con il visore VR immersive](wmr-health-safety-comfort.md)
 ### [Panoramica e cronologia delle versioni del software Realtà mista](mixed-reality-software.md)
 ### [Funzionamento del tracciamento dall'interno verso l'esterno](tracking-system.md)

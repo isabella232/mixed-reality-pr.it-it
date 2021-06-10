@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, prefab, ologrammi, descrizioni comandi
 ms.localizationpriority: high
-ms.openlocfilehash: 4400ce669863b719b409e11076ceb5689e21893e
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 1d5a86ca87b8d65254607c787ac9f01c007c2b4b
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982974"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743648"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Creazione delle interfacce utente
 
@@ -67,7 +67,7 @@ Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto pulsante **Hints**, q
 ![Unity con l'evento OnClick dell'oggetto pulsante Hints configurato](images/mr-learning-base/base-06-section1-step1-5.png)
 
 > [!TIP]
-> Il componente Interactable è un contenitore all-in-one che consente a tutti gli oggetti di interagire con facilità e rispondere all'input. Interactable agisce come un catch-all per tutti i tipi di input, tra cui il tocco, i raggi della mano, il riconoscimento vocale e così via e incanala tali interazioni in eventi e risposte con temi visivi. Per informazioni su come configurarlo per diversi tipi di input e personalizzarne il tema visivo, è possibile fare riferimento all'argomento [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) nel [portale della documentazione di MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
+> Il componente Interactable è un contenitore all-in-one che consente a tutti gli oggetti di interagire con facilità e rispondere all'input. Interactable agisce come un catch-all per tutti i tipi di input, tra cui il tocco, i raggi della mano, il riconoscimento vocale e così via e incanala tali interazioni in eventi e risposte con temi visivi. Per informazioni su come configurarlo per diversi tipi di input e personalizzarne il tema visivo, è possibile fare riferimento all'argomento [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) nel [portale della documentazione di MRTK](/windows/mixed-reality/mrtk-unity/).
 
 Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto pulsante **Explode**, quindi nella finestra Inspector (Controllo) configurare l'evento **Interactable.OnClick ()** come indicato di seguito:
 
@@ -86,7 +86,7 @@ e il pulsante **Explode** per attivare e disattivare la visualizzazione esplosa:
 
 ## <a name="creating-a-dynamic-menu-that-follows-the-user"></a>Creazione di un menu dinamico che segue l'utente
 
-Nella finestra del progetto passare alla cartella **packages**  >  **mixed reality Toolkit Foundation**  >  **SDK**  >  **features** UX Predicates  >    >    >  **Menus** , fare clic e trascinare **NearMenu4x1** prefabbricate nella finestra gerarchia, impostare la relativa **posizione** Transform su X = 0, Y =-0,4, Z = 0 e configurarla come indicato di seguito:
+Nella finestra Project (Progetto) passa alla cartella **Packages**  >  **Mixed Reality Toolkit Foundation** SDK Features UX Prefabs Menus (Menu prefab UX), fai clic e trascina il prefab NearMenu4x1 nella finestra Hierarchy (Gerarchia), imposta la relativa posizione di trasformazione su  >    >    >    >    >   X = 0, Y = -0.4, Z = 0   e configurala come segue:
 
 * Verifica che per **Tracked Target Type** (Tipo destinazione tracciata) del componente **SolverHandler** sia impostato il valore **Head** (Testa)
 * Seleziona la casella di controllo accanto al componente **RadialView** in modo che sia abilitato per impostazione predefinita
@@ -97,17 +97,17 @@ Nella finestra Hierarchy (Gerarchia) rinomina l'oggetto come **Menu**, quindi es
 
 ![Unity con l'oggetto Menu selezionato e l'oggetto ButtonCollection espanso](images/mr-learning-base/base-06-section2-step1-2.png)
 
-Rinominare il primo pulsante nell'indicatore Buttoncollection in, quindi nella finestra Inspector configurare il componente helper config (script) del pulsante come indicato di seguito:
+Rinominare il primo pulsante in ButtonCollection in Indicator, quindi nella finestra Inspector (Controllo) configurare il componente Button Config Helper (Script) (Helper configurazione pulsanti - Script) come indicato di seguito:
 
 * Modifica il contenuto di **Main Label Text** (Testo etichetta principale) in modo che corrisponda al nome del pulsante
-* Assegnare l'oggetto indicatore simile a una freccia di espansione al campo None (Object).
+* Assegnare l'oggetto Indicator simile a una scacchistica al campo None (Object) (Nessuno - Oggetto)
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **GameObject** > **SetActive (bool)** per impostare questa funzione come l'azione da eseguire quando viene attivato l'evento
 * Verifica che la casella di controllo dell'argomento sia **selezionata**
 * Imposta **Icon** (Icona) sull'icona di ricerca
 
 ![Unity con il componente Button Config Helper dell'oggetto pulsante Indicator configurato](images/mr-learning-base/base-06-section2-step1-3.png)
 
-Per disabilitare l'oggetto indicatore Chevron, nella finestra gerarchia selezionare l'oggetto indicatore simile a Chevron, quindi nella finestra di controllo:
+Per disabilitare l'oggetto Indicatore di avanzamento, nella finestra Hierarchy (Gerarchia) selezionare l'oggetto Indicator simile a chevron e quindi nella finestra Inspector (Controllo):
 
 * Deseleziona la casella di controllo accanto al nome per rendere inattivo il componente per impostazione predefinita
 * Usare il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **Directional Indicator Controller (Script)** (Controller destinazione direzionale - Script)
@@ -115,7 +115,10 @@ Per disabilitare l'oggetto indicatore Chevron, nella finestra gerarchia selezion
 ![Unity con l'oggetto Indicator selezionato e disabilitato e il componente DirectionalIndicatorController aggiunto](images/mr-learning-base/base-06-section2-step1-4.png)
 
 > [!NOTE]
-> A questo punto, all'avvio dell'app, l'indicatore della freccia di espansione è disabilitato per impostazione predefinita e può essere abilitato premendo il pulsante dell'indicatore.
+> A questo punto, all'avvio dell'app, l'indicatore di avanzamento è disabilitato per impostazione predefinita e può essere abilitato premendo il pulsante Indicatore.
+
+> [!NOTE]
+> Directional Indicator Controller (Script) (Controllo indicatore direzionale - script) non fa parte di MRTK, ma è stato incluso negli asset dell'esercitazione.
 
 Rinomina il secondo pulsante come **TapToPlace**, quindi nella finestra Inspector (Controllo) configura il componente **Button Config Helper (Script)** (Helper configurazione pulsanti - Script) come indicato di seguito:
 
@@ -162,20 +165,20 @@ Quindi configura il componente **TextMeshPro - Text** (TextMeshPro - Testo) come
 
 ## <a name="adding-tooltips"></a>Aggiunta di descrizioni comandi
 
-Nella finestra del progetto passare alla cartella **packages**  >  **mixed reality Toolkit Foundation**  >  **SDK**  >  **features**  >    >    >   per individuare le prefabbricate ToolTip:
+Nella finestra Project (Progetto) passa alla cartella **Packages**  >  Mixed Reality Toolkit Foundation SDK Features  >    >    >  **UX**  >  Prefabs ToolTip (Descrizione comando UX **Prefabs)**  >   per individuare i prefab di descrizione comando:
 
 ![Finestra Project di Unity con la cartella ToolTips selezionata](images/mr-learning-base/base-06-section4-step1-1.png)
 
 Nella finestra Hierarchy (Gerarchia) espandi l'oggetto RoverExplorer > **RoverParts** e seleziona tutti i relativi oggetti parte rover figlio, quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **ToolTipSpawner** e configuralo come indicato di seguito:
 
 * Verifica che la casella di controllo **Focus Enabled** (Stato attivo abilitato) sia selezionata per richiedere all'utente di guardare la parte per visualizzare la descrizione comando
-* Assegnare la **Descrizione comando della riga semplice** prefabbricata dalla finestra del progetto al campo **prefabbricato**
+* Assegnare il prefab **Descrizione** comando Riga semplice dalla finestra Progetto al **campo Prefab**
 * Imposta ToolTip Override Settings (Impostazioni di override descrizione comando) > **Settings Mode** (Modalità impostazioni) su **Override**
 * Imposta ToolTip Override Settings (Impostazioni di override descrizione comando) > **Manual Pivot Local Position Y** (Posizione Y locale pivot manuale) su **1.5**
 
 ![Unity con tutti gli oggetti parte rover selezionati e il componente ToolTipSpawner aggiunto e configurato](images/mr-learning-base/base-06-section4-step1-2.png)
 
-Nella finestra Hierarchy (Gerarchia) seleziona la prima parte rover, RoverParts > **Camera_Part**, e configura il componente **ToolTipSpawner** come indicato di seguito:
+Nella finestra Hierarchy (Gerarchia) seleziona Camera_Part RoverParts > **Camera_Part** e configura il **componente ToolTipSpawner** come indicato di seguito:
 
 * Modifica **Tool Tip Text** (Testo descrizione comando) in modo che rifletta il nome della parte, ovvero **Camera**
 
@@ -197,4 +200,4 @@ Seleziona il pulsante Play (Riproduci) per attivare la modalità di gioco, quind
 In questa esercitazione hai appreso come creare un'interfaccia utente semplice usando i prefab per pulsanti e menu forniti da MRTK insieme al componente TextMeshPro di Unity e come configurare i pulsanti per attivare eventi quando vengono premuti. Hai inoltre appreso come aggiungere elementi descrizione comando dinamici per l'interfaccia utente per fornire all'utente informazioni aggiuntive.
 
 > [!div class="nextstepaction"]
->[Esercitazione successiva: 7. Interazione con oggetti 3D](mr-learning-base-07.md)
+> [Esercitazione successiva: 7. Interazione con oggetti 3D](mr-learning-base-07.md)

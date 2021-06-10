@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 5f16d3c12e6dbb977ecedc1598a28073cfb39222
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 6b317afd4be6ed58a6e5ff7fe7075b5379a1caa1
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105983144"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403506"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Introduzione ad Ancoraggi nello spazio di Azure
 
@@ -32,42 +32,14 @@ Seguire prima l'esercitazione [Inizializzazione del progetto e distribuzione del
 1. [Creazione del progetto Unity](mr-learning-base-02.md#creating-the-unity-project) e assegnazione di un nome appropriato, ad esempio *MRTK Tutorials*
 2. [Passaggio a un'altra piattaforma di compilazione](mr-learning-base-02.md#switching-the-build-platform)
 3. [Importazione delle risorse essenziali TextMeshPro](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-4. [Importazione di Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Configurazione del progetto Unity](mr-learning-base-02.md#configuring-the-unity-project)
-6. [Creazione e configurazione della scena](mr-learning-base-02.md#creating-and-configuring-the-scene) e assegnazione di un nome appropriato, ad esempio *AzureSpatialAnchors*
+4. [Importazione di Mixed Reality Toolkit e configurazione del progetto Unity](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [Creazione e configurazione della scena](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) e assegnazione di un nome appropriato, ad esempio *AzureSpatialAnchors*
 
-Segui quindi le istruzioni riportate in [Modifica delle opzioni di visualizzazione di consapevolezza spaziale](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) per:
+Segui quindi [](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) le istruzioni riportate in Modifica dell'opzione di visualizzazione della consapevolezza spaziale per assicurarti che il profilo di configurazione di MRTK per la scena sia **DefaultHoloLens2ConfigurationProfile** e modifica le opzioni di visualizzazione per la mesh di consapevolezza spaziale in **Occlusion**.
 
-1. Impostare **MRTK configuration profile** (Profilo di configurazione di MRTK) su **DefaultHoloLens2ConfigurationProfile**
-1. Modificare le **opzioni di visualizzazione mesh di consapevolezza spaziale** impostando **Occlusion** (Occlusione).
+## <a name="installing-inbuilt-unity-packages-and-importing-the-tutorial-assets"></a>Installazione di pacchetti Unity predefiniti e importazione degli asset dell'esercitazione
 
-## <a name="installing-inbuilt-unity-packages"></a>Installazione di pacchetti di Unity incorporati
-
-Scegliere **Window** > **Package Manager** (Finestra > Gestione pacchetti) dal menu Unity per aprire la finestra Package Manager(Gestione pacchetti) e quindi selezionare **AR Foundation** e fare clic sul pulsante **Install** (Installa) per installare il pacchetto:
-
-![Package Manager di Unity con AR Foundation selezionato](images/mr-learning-asa/asa-02-section2-step1-1.png)
-
-> [!NOTE]
-> Stai installando il pacchetto AR Foundation perché è richiesto da Azure Spatial Anchors SDK, che verrà importato nella sezione successiva.
-
-## <a name="importing-the-tutorial-assets"></a>Importazione degli asset dell'esercitazione
-
-Aggiungere AzurespatialAnchors SDK V 2.7.1 nel progetto Unity, per aggiungere i pacchetti, seguire questa [esercitazione](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
-
-Scarica e **importa** i pacchetti personalizzati di Unity seguenti, **nell'ordine in cui sono elencati**:
-
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
-* [MRTK. HoloLens2. Unity. Esercitations. assets. AzureSpatialAnchors. 2.5.3. file unitypackage Tools](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.5.3/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage)
-
-Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progetto) avrà un aspetto simile al seguente:
-
-![Finestre Hierarchy, Scene e Project di Unity dopo l'importazione degli asset dell'esercitazione](images/mr-learning-asa/asa-02-section3-step1-1.png)
-
-> [!NOTE]
-> Se vengono visualizzati avvisi CS0618 che indicano che 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' è obsoleto, è possibile ignorare questi avvisi.
-
-> [!TIP]
-> Per un promemoria su come importare un pacchetto personalizzato Unity, è possibile fare riferimento alle istruzioni relative all' [importazione delle risorse dell'esercitazione](mr-learning-base-02.md#importing-the-tutorial-assets) .
+[!INCLUDE[](includes/installing-packages-for-asa.md)]
 
 ## <a name="preparing-the-scene"></a>Preparazione della scena
 
@@ -84,6 +56,20 @@ Nella finestra Project (Progetto) passa ad **Assets (Asset)**  > **MRTK.Tutorial
 
 > [!TIP]
 > Se trovi che le icone grandi nella scena, come quelle a forma di "T", siano motivo di distrazione, puoi nasconderle <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">disattivando il menu Gizmos</a>, come mostrato nell'immagine precedente.
+
+Selezionare **l'oggetto MixedRealityToolkit** nella finestra Hierarchy (Gerarchia) e usare il pulsante **Add Component** (Aggiungi componente) nella finestra Inspector (Controllo) per aggiungere i componenti seguenti:
+
+* AR Anchor Manager (Script)
+* DisableDiagnosticsSystem (Script)
+
+![Oggetto MixedRealityToolkit di Unity con i componenti AR Anchor Manager e DisableDiagnosticsSystem aggiunti ](images/mr-learning-asa/asa-02-section4-step1-2.PNG)
+
+> [!WARNING]
+> Si è verificato un problema noto con Asa v2.9.0 e v2.10.0-preview.1 che richiede l'iposti di due oggetti aggiuntivi nella scena. Usa il **pulsante Aggiungi** componente nella finestra di controllo per aggiungere ar Camera Manager (Script) e una sessione AR (Script) all'oggetto **MixedRealityToolkit.** Assicurati di disabilitare la fotocamera creata automaticamente durante l'aggiunta di AR Camera Manager (Script) deselezionando la casella di controllo accanto all'oggetto Camera nella finestra di controllo. Questo problema verrà risolto nella versione completa di Asa v2.10.0.
+> 
+
+> [!NOTE]
+> Quando aggiungi il componente AR Anchor Manager (Script), il componente AR Session Origin (Script) (Origine sessione AR - Script) viene aggiunto automaticamente perché è richiesto dal componente AR Anchor Manager (Script) (Gestione ancoraggi AR - Script).
 
 ## <a name="configuring-the-buttons-to-operate-the-scene"></a>Configurazione dei pulsanti per il funzionamento della scena
 
@@ -139,7 +125,7 @@ Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **ParentAnchor** e quin
 
 * Nel campo **Spatial Anchors Account ID** (ID account Ancoraggi nello spazio) incolla il valore di **Account ID** (ID account) del tuo account di Ancoraggi nello spazio di Azure
 * Nel campo **Spatial Anchors Account Key** (Chiave account Ancoraggi nello spazio) incolla il valore di **Access Key** (Chiave di accesso) primario o secondario del tuo account di Ancoraggi nello spazio di Azure
-* Nel campo del **dominio dell'account ancoraggi spaziali** incollare il **dominio dell'account** dall'account degli ancoraggi spaziali di Azure
+* Nel campo **Spatial Anchors Account Domain (Dominio account ancoraggi** nello stato spaziale) incollare il dominio **dell'account** di Ancoraggi nello stato di Azure
 
 ![Unity con Spatial Anchor Manager configurato](images/mr-learning-asa/asa-02-section6-step1-1.png)
 
@@ -153,15 +139,15 @@ Poiché non è possibile eseguire ancoraggi nello spazio di Azure in Unity, per 
 Quando l'app è in esecuzione nel dispositivo, segui le istruzioni visualizzate nel pannello Azure Spatial Anchor Tutorial Instructions (Istruzioni per l'esercitazione su ancoraggi nello spazio di Azure):
 
 1. Sposta il cubo in un'altra posizione
-1. Avvia la sessione di Azure
-1. Crea l'ancoraggio di Azure (viene creato un ancoraggio nella posizione del cubo)
-1. Arresta la sessione di Azure
-1. Rimuovi l'ancoraggio locale (consente all'utente di spostare il cubo)
-1. Sposta il cubo altrove
-1. Avvia la sessione di Azure
-1. Trova l'ancoraggio di Azure (il cubo viene collocato nella posizione del passaggio 3)
-1. Elimina l'ancoraggio di Azure
-1. Arresta la sessione di Azure
+2. Avvia la sessione di Azure
+3. Crea l'ancoraggio di Azure (viene creato un ancoraggio nella posizione del cubo)
+4. Arresta la sessione di Azure
+5. Rimuovi l'ancoraggio locale (consente all'utente di spostare il cubo)
+6. Sposta il cubo altrove
+7. Avvia la sessione di Azure
+8. Trova l'ancoraggio di Azure (il cubo viene collocato nella posizione del passaggio 3)
+9. Elimina l'ancoraggio di Azure
+10. Arresta la sessione di Azure
 
 ![Unity con l'oggetto Instructions selezionato](images/mr-learning-asa/asa-02-section7-step1-1.png)
 
@@ -190,7 +176,7 @@ Con l'oggetto RoverModule_Complete appena aggiunto ancora selezionato nella fine
 Se ora ricompili il progetto e distribuisci l'app nel dispositivo, puoi riposizionare l'intera esperienza Rover Explorer (Esplora rover) spostando il cubo ridimensionato.
 
 > [!TIP]
-> Per le esperienze di riposizionamento, tra cui l'uso di un oggetto di riposizionamento, ad esempio il cubo usato in questa esercitazione, è possibile usare un pulsante per alternare un controllo dei limiti che racchiude l'esperienza, l'uso di gizmo di posizione e di rotazione e altro ancora.
+> Un'ampia gamma di flussi di esperienza utente per il riposizionamento delle esperienze, tra cui l'uso di un oggetto di riposizionamento (ad esempio il cubo usato in questa esercitazione), l'uso di un pulsante per attivare o disattivare un controllo dei limiti che circonda l'esperienza, l'uso di gizmo di posizione e rotazione e altro ancora.
 
 ## <a name="congratulations"></a>Lezione completata
 

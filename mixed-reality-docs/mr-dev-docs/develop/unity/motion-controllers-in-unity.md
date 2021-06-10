@@ -1,78 +1,78 @@
 ---
-title: Controller di movimento in Unity
-description: Informazioni su come intervenire sullo sguardo in Unity con l'input del controller di movimento usando XR e le API dei pulsanti e degli assi comuni.
+title: Controller del movimento in Unity
+description: Informazioni su come intervenire sullo sguardo fisso in Unity con l'input del controller del movimento usando XR e api comuni per pulsanti e assi.
 author: hferrone
 ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
-keywords: controller di movimento, Unity, input, cuffie per realtà mista, cuffie di realtà mista di Windows, headset di realtà virtuale, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: d3df49c2f6c626e9f4eb47c38f4a8e61059a8438
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: controller del movimento, unity, input, visore VR di realtà mista, visore VR windows di realtà mista, visore VR di realtà virtuale, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: ff1eedcc337edd2d7edfe8d961bb88bcb859cd23
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300476"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743479"
 ---
-# <a name="motion-controllers-in-unity"></a>Controller di movimento in Unity
+# <a name="motion-controllers-in-unity"></a>Controller del movimento in Unity
 
-Ci sono due modi principali per agire sullo [sguardo in Unity](gaze-in-unity.md), [movimenti della mano](../../design/gaze-and-commit.md#composite-gestures) e [controller di movimento](../../design/motion-controllers.md) in HoloLens e HMD immersivi. È possibile accedere ai dati per entrambe le origini dell'input spaziale tramite le stesse API in Unity.
+Esistono due modi chiave per intervenire sullo [](../../design/gaze-and-commit.md#composite-gestures) sguardo [fisso in Unity,](gaze-in-unity.md)i movimenti della mano e i controller del movimento [in](../../design/motion-controllers.md) HoloLens e HMD immersive. È possibile accedere ai dati per entrambe le origini di input spaziale tramite le stesse API in Unity.
 
-Unity offre due modi principali per accedere ai dati di input spaziali per la realtà mista di Windows. Le API *input. GetButton/input. getaxis* comuni sono compatibili con più SDK di Unity XR, mentre l'API *InteractionManager/GestureRecognizer* specifica di Windows Mixed Reality espone il set completo di dati di input spaziali.
+Unity offre due modi principali per accedere ai dati di input spaziali per Windows Mixed Reality. Le API *comuni Input.GetButton/Input.GetAxis* funzionano in più SDK XR unity, mentre l'API *InteractionManager/GestureRecognizer* specifica di Windows Mixed Reality espone il set completo di dati di input spaziali.
 
-## <a name="unity-xr-input-apis"></a>API di input di Unity XR
+## <a name="unity-xr-input-apis"></a>API di input XR unity
 
 Per i nuovi progetti, è consigliabile usare le nuove API di input XR dall'inizio. 
 
-Altre informazioni sulle [API XR](https://docs.unity3d.com/Manual/xr_input.html)sono disponibili qui.
+Altre informazioni sulle [API XR sono](https://docs.unity3d.com/Manual/xr_input.html)disponibili qui.
 
-## <a name="unity-buttonaxis-mapping-table"></a>Pulsante Unity/tabella di mapping asse
+## <a name="unity-buttonaxis-mapping-table"></a>Tabella di mapping di pulsanti/assi unity
 
-Il gestore di input di Unity per i controller di movimento per la realtà mista di Windows supporta gli ID dei pulsanti e degli assi elencati di seguito tramite le API *input. GetButton/getaxis* . La colonna "Windows specific" si riferisce alle proprietà disponibili al di sotto del tipo *InteractionSourceState* . Ognuna di queste API è descritta in dettaglio nelle sezioni riportate di seguito.
+Gestione input di Unity per i controller del movimento Windows Mixed Reality supporta gli ID pulsante e asse elencati di seguito tramite le API *Input.GetButton/GetAxis.* La colonna "Specifica di Windows MR" fa riferimento alle proprietà disponibili al di fuori del *tipo InteractionSourceState.* Ognuna di queste API è descritta in dettaglio nelle sezioni seguenti.
 
-I mapping degli ID di pulsanti/assi per la realtà mista di Windows in genere corrispondono agli ID dell'asse o del pulsante Oculus.
+I mapping degli ID pulsante/asse per Windows Mixed Reality corrispondono in genere all'ID pulsante/asse Oculus.
 
-I mapping degli ID di pulsanti/assi per la realtà mista di Windows differiscono dai mapping di OpenVR in due modi:
-1. Il mapping USA ID touchpad distinti da levetta per supportare i controller con ThumbSticks e touchpad.
-2. Il mapping evita l'overload degli ID dei pulsanti A e X per i pulsanti di menu in modo da lasciarli disponibili per i pulsanti ABXY fisici.
+I mapping degli ID pulsante/asse per Windows Mixed Reality sono diversi dai mapping di OpenVR in due modi:
+1. Il mapping usa ID touchpad distinti dalla levetta personale per supportare i controller con le levette e i touchpad.
+2. Il mapping evita l'overload degli ID dei pulsanti A e X per i pulsanti menu per lasciarli disponibili per i pulsanti ABXY fisici.
 
 <table>
 <tr>
-<th rowspan="2">Input </th><th colspan="2"><a href="motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis">API Unity comuni</a><br />(Input. GetButton/getaxis) </th><th rowspan="2"><a href="motion-controllers-in-unity.md#windows-specific-apis-xrwsainput">API di input specifica di Windows</a><br />XR. WSA. Input</th>
+<th rowspan="2">Input </th><th colspan="2"><a href="motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis">API Unity comuni</a><br />(Input.GetButton/GetAxis) </th><th rowspan="2"><a href="motion-controllers-in-unity.md#windows-specific-apis-xrwsainput">API di input specifica di Windows MR</a><br />(XR. Wsa. Input)</th>
 </tr><tr>
-<th> Mano sinistra </th><th> A destra</th>
+<th> Mano sinistra </th><th> Mano destra</th>
 </tr><tr>
-<td> Seleziona trigger premuto </td><td> AXIS 9 = 1,0 </td><td> Asse 10 = 1,0 </td><td> selectPressed</td>
+<td> Selezionare il trigger premuto </td><td> Asse 9 = 1,0 </td><td> Asse 10 = 1,0 </td><td> selectPressed</td>
 </tr><tr>
-<td> Selezionare il trigger valore analogico </td><td> Asse 9 </td><td> Asse 10 </td><td> selectPressedAmount</td>
+<td> Selezionare il valore analogo del trigger </td><td> Asse 9 </td><td> Asse 10 </td><td> selectPressedAmount</td>
 </tr><tr>
-<td> Selezione trigger parzialmente premuto </td><td> Pulsante 14 <i>(gamepad compat)</i> </td><td> Pulsante 15 <i>(gamepad compat)</i> </td><td> selectPressedAmount &gt; 0,0</td>
+<td> Selezionare il trigger parzialmente premuto </td><td> Pulsante 14 <i>(compatibilità del game pad)</i> </td><td> Pulsante 15 <i>(compatibilità del game pad)</i> </td><td> selectPressedAmount &gt; 0.0</td>
 </tr><tr>
-<td> Pulsante di menu premuto </td><td> Pulsante 6 * </td><td> Pulsante 7 * </td><td> menuPressed</td>
+<td> Pulsante di menu premuto </td><td> Pulsante 6* </td><td> Pulsante 7* </td><td> menuPressed</td>
 </tr><tr>
-<td> Pulsante grip premuto </td><td> Asse 11 = 1,0 (nessun valore analogo)<br />Pulsante 4 <i>(gamepad compat)</i> </td><td> Asse 12 = 1,0 (nessun valore analogo)<br />Pulsante 5 <i>(gamepad compat)</i> </td><td> afferrato</td>
+<td> Pulsante di controllo premuto </td><td> Asse 11 = 1,0 (nessun valore analogo)<br />Pulsante 4 <i>(compatibilità del game pad)</i> </td><td> Asse 12 = 1,0 (nessun valore analogo)<br />Pulsante 5 <i>(compatibilità del game pad)</i> </td><td> Afferrato</td>
 </tr><tr>
-<td> Levetta X <i>(Left:-1,0, right: 1,0)</i> </td><td> Asse 1 </td><td> Asse 4 </td><td> thumbstickPosition. x</td>
+<td> Levetta X <i>(sinistra: -1.0, destra: 1.0)</i> </td><td> Asse 1 </td><td> Asse 4 </td><td> thumbstickPosition.x</td>
 </tr><tr>
-<td> Levetta Y <i>(Top:-1,0, bottom: 1,0)</i> </td><td> Asse 2 </td><td> Asse 5 </td><td> thumbstickPosition. y</td>
+<td> Levetta Y <i>(in alto: -1.0, in basso: 1.0)</i> </td><td> Asse 2 </td><td> Asse 5 </td><td> thumbstickPosition.y</td>
 </tr><tr>
-<td> Levetta premuto </td><td> Pulsante 8 </td><td> Pulsante 9 </td><td> thumbstickPressed</td>
+<td> Levetta premuta </td><td> Pulsante 8 </td><td> Pulsante 9 </td><td> thumbstickPressed</td>
 </tr><tr>
-<td> Touchpad X <i>(Left:-1,0, right: 1,0)</i> </td><td> Asse 17 * </td><td> Asse 19 * </td><td> touchpadPosition. x</td>
+<td> Touchpad X <i>(a sinistra: -1.0, a destra: 1.0)</i> </td><td> Asse 17* </td><td> Asse 19* </td><td> touchpadPosition.x</td>
 </tr><tr>
-<td> Touchpad Y <i>(Top:-1,0, bottom: 1,0)</i> </td><td> Asse 18 * </td><td> Asse 20 * </td><td> touchpadPosition. y</td>
+<td> Touchpad Y <i>(superiore: -1.0, inferiore: 1.0)</i> </td><td> Asse 18* </td><td> Asse 20* </td><td> touchpadPosition.y</td>
 </tr><tr>
-<td> Tocco touchpad </td><td> Pulsante 18 * </td><td> Pulsante 19 * </td><td> touchpadTouched</td>
+<td> Touchpad toccato </td><td> Pulsante 18* </td><td> Pulsante 19* </td><td> touchpadTouched</td>
 </tr><tr>
-<td> Touchpad premuto </td><td> Pulsante 16 * </td><td> Pulsante 17 * </td><td> touchpadPressed</td>
+<td> Touchpad premuto </td><td> Pulsante 16* </td><td> Pulsante 17* </td><td> touchpadPressed</td>
 </tr><tr>
-<td> 6DoF della posa o del puntatore del grip </td><td colspan="2"> Solo <i>grip</i> per la posa: <a href="https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalPosition.html">XR. InputTracking. GetLocalPosition</a><br /><a href="https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalRotation.html">XR. InputTracking.GetLocalRotation</a></td><td> Passare il <i>grip</i> o il <i>puntatore</i> come argomento: SourceState. sourcePose. TryGetPosition<br />sourceState.sourcePose.TryGetRotation<br /></td>
+<td> 6Resotto del punto di controllo o posizione dell'indicatore di misura </td><td colspan="2"> <i>Solo posizione</i> del controllo: <a href="https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalPosition.html">XR. InputTracking.GetLocalPosition</a><br /><a href="https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalRotation.html">Xr. InputTracking.GetLocalRotation</a></td><td> Passare <i>Il controllo</i> o <i>il</i> puntatore come argomento: sourceState.sourcePose.TryGetPosition<br />sourceState.sourcePose.TryGetRotation<br /></td>
 </tr><tr>
-<td> Stato di rilevamento </td><td colspan="2"> <i>Accuratezza della posizione e rischi per la perdita di codice sorgente solo tramite API specifiche del sig.</i> </td><td> <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionSourcePose-positionAccuracy.html">sourceState.sourcePose.positionAccuracy</a><br /><a href="https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionSourceProperties-sourceLossRisk.html">sourceState. Properties. sourceLossRisk</a></td>
+<td> Stato di rilevamento </td><td colspan="2"> <i>Accuratezza della posizione e rischio di perdita di origine disponibili solo tramite l'API specifica di MR</i> </td><td> <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionSourcePose-positionAccuracy.html">sourceState.sourcePose.positionAccuracy</a><br /><a href="https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionSourceProperties-sourceLossRisk.html">sourceState.properties.sourceLossRisk</a></td>
 </tr>
 </table>
 
 >[!NOTE]
->Questi ID di pulsanti/assi sono diversi dagli ID usati da Unity per OpenVR a causa di conflitti nei mapping usati dai gamepad, Oculus touch e OpenVR.
+>Questi ID pulsante/asse differiscono dagli ID usati da Unity per OpenVR a causa di collisioni nei mapping usati da game pad, Oculus Touch e OpenVR.
 
 <!-- ### Using HP Reverb G2 controllers
 
@@ -102,89 +102,89 @@ If you're using the HP Reverb G2 controllers, refer to the table below for butto
 </table> -->
 
 
-## <a name="grip-pose-vs-pointing-pose"></a>Posa del grip e puntamento
+## <a name="grip-pose-vs-pointing-pose"></a>Posizione del mantenimento e posizione di puntamento
 
-La realtà mista di Windows supporta i controller di movimento in diversi fattori di forma. La progettazione di ogni controller differisce dalla propria relazione tra la posizione della mano dell'utente e la direzione naturale "Avanti" che le app devono usare per puntare durante il rendering del controller.
+Windows Mixed Reality supporta i controller del movimento in un'ampia gamma di fattori di forma. La progettazione di ogni controller differisce nella relazione tra la posizione della mano dell'utente e la direzione "avanti" naturale che le app devono usare per puntare durante il rendering del controller.
 
-Per rappresentare meglio questi controller, esistono due tipi di pose che è possibile esaminare per ogni origine interazione, la **posizione del grip** e la **posizione del puntatore**. Sia le coordinate della formula del grip che del puntatore sono espresse da tutte le API Unity nelle coordinate globali di Unity.
+Per rappresentare meglio questi controller, è possibile esaminare due tipi di  posizioni per ogni origine di interazione, la posizione del controllo e la posizione dell'indicatore **di misura.** Entrambe le coordinate di posizione del punto di controllo e di posizione dell'indicatore di misura sono espresse da tutte le API unity nelle coordinate globali del mondo Unity.
 
-### <a name="grip-pose"></a>Pose di grip
+### <a name="grip-pose"></a>Posizione del controllo
 
-La posizione del **grip** rappresenta il percorso della palma degli utenti, rilevata da un HoloLens o che contiene un controller di movimento.
+La **posizione del manopolo** rappresenta la posizione del palmo degli utenti, rilevata da un dispositivo HoloLens o che contiene un controller del movimento.
 
-Negli auricolari immersivi la disposizione dei grip è la scelta migliore per eseguire **il rendering della mano dell'utente** o di **un oggetto contenuto nella mano dell'utente**. La richiesta di grip viene usata anche durante la visualizzazione di un controller di movimento. Il **modello di rendering** fornito da Windows per un controller di movimento usa la posizione del grip come origine e centro di rotazione.
+Nei visori VR immersive, la posizione del pannello è più adatta per eseguire il rendering della mano **dell'utente** o di un oggetto **mantenuto nella mano dell'utente.** La posizione del controllo viene usata anche durante la visualizzazione di un controller del movimento. Il **modello di cui è possibile eseguire** il rendering fornito da Windows per un controller del movimento usa la posizione del riquadro come origine e centro di rotazione.
 
-Il grip viene definito in modo specifico come segue:
-* **Posizione del grip**: il centro della palma quando si tiene il controller in modo naturale, regolato a sinistra o a destra per centrare la posizione all'interno del grip. Sul controller di movimento per la realtà mista di Windows, questa posizione viene in genere allineata con il pulsante afferra.
-* L' **asse destro dell'orientamento del grip**: quando si apre completamente la mano per formare una formula a 5 dita piatta, il raggio normale per la Palma (in avanti dal palmo sinistro e viceversa)
-* **Asse di avanzamento dell'orientamento del grip**: quando si chiude parzialmente la mano (come se si utilizzasse il controller), il raggio che punta "in poi" attraverso il tubo formato dalle dita non Thumb.
-* **Asse verticale dell'orientamento del grip**: l'asse verso l'alto implicato dalle definizioni di destra e di avanzamento.
+La posizione del manopolo è definita in modo specifico come segue:
+* Posizione **del riquadro:** centroide del palmo quando si tiene il controller in modo naturale, regolato a sinistra o a destra per centrare la posizione all'interno del riquadro. Nel controller Windows Mixed Reality movimento questa posizione è in genere allineata al pulsante Afferra.
+* Asse destro dell'orientamento del riquadro: quando si apre completamente la mano per formare una posizione piana con 5 dita, il raggio normale al palmo (in avanti dal palmo sinistro, **all'indietro** dal palmo destro)
+* Asse avanti **dell'orientamento** del grip: quando si chiude parzialmente la mano (come se si tiene il controller), il raggio che punta in avanti attraverso il canale formato dalle dita non del pollice.
+* Asse **su dell'orientamento del** grip: asse Su implicito dalle definizioni Right e Forward.
 
-È possibile accedere al grip con l'API di input tra fornitori di Unity (*[XR). InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/Rotation*) o tramite l'API specifica di Windows (*SourceState. SourcePose. TryGetPosition/Rotation*, che richiede i dati di post per il nodo **grip** ).
+È possibile accedere alla posizione del grip tramite l'API di input tra fornitori di Unity *[(XR). InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/Rotation*) o tramite l'API specifica di Windows MR (*sourceState.sourcePose.TryGetPosition/Rotation,* che richiede dati di posizione per il **nodo Grip).**
 
-### <a name="pointer-pose"></a>Posa puntatore
+### <a name="pointer-pose"></a>Posizione del puntatore
 
-Il **puntatore** posizionato rappresenta il suggerimento del controller che punta in futuro.
+La **posizione del puntatore** rappresenta la punta del controller che punta in avanti.
 
-La disposizione del puntatore fornita dal sistema è ideale per Raycast quando si esegue **il rendering del modello di controller**. Se si esegue il rendering di un altro oggetto virtuale al posto del controller, ad esempio una pistola virtuale, è necessario puntare con un raggio più naturale per tale oggetto virtuale, ad esempio un raggio che viaggia lungo il barilotto del modello Gun definito dall'app. Poiché gli utenti possono visualizzare l'oggetto virtuale e non il controller fisico, puntare con l'oggetto virtuale sarà probabilmente più naturale per quelli che usano l'app.
+La posizione del puntatore fornita dal sistema è più adatta per eseguire il raycast quando si esegue il **rendering del modello controller stesso.** Se si esegue il rendering di un altro oggetto virtuale al posto del controller, ad esempio una mitragliatrice virtuale, è consigliabile puntare con un raggio più naturale per tale oggetto virtuale, ad esempio un raggio che viaggia lungo la canna del modello di mitra definito dall'app. Poiché gli utenti possono visualizzare l'oggetto virtuale e non il controller fisico, puntare all'oggetto virtuale sarà probabilmente più naturale per gli utenti che usano l'app.
 
-Attualmente, la posa del puntatore è disponibile in Unity solo tramite l'API specifica di Windows, *sourceState. sourcePose. TryGetPosition/Rotation*, passando *InteractionSourceNode. pointer* come argomento.
+Attualmente, la posizione del puntatore è disponibile in Unity solo tramite l'API specifica di Windows MR, *sourceState.sourcePose.TryGetPosition/Rotation,* passando *InteractionSourceNode.Pointer* come argomento.
 
 ## <a name="controller-tracking-state"></a>Stato di rilevamento del controller
 
-Come gli auricolari, il controller di movimento di realtà mista di Windows non richiede l'installazione di sensori di rilevamento esterni. Il controller viene invece rilevato dai sensori nell'auricolare.
+Come i visori, il controller Windows Mixed Reality movimento non richiede la configurazione di sensori di rilevamento esterni. I controller vengono invece monitorati dai sensori nel visore stesso.
 
-Se l'utente sposta i controller fuori dal campo di visualizzazione dell'auricolare, Windows continua a dedurre le posizioni del controller nella maggior parte dei casi. Quando il controller ha perso il rilevamento visivo per un periodo di tempo sufficiente, le posizioni del controller vengono rilasciate a posizioni di accuratezza approssimativa.
+Se l'utente sposta i controller fuori dal campo di visualizzazione del visore, Windows continua a dedurre le posizioni del controller nella maggior parte dei casi. Quando il controller ha perso il rilevamento visivo per un tempo sufficiente, le posizioni del controller scenderanno a posizioni di accuratezza approssimativa.
 
-A questo punto, il sistema bloccherà il controller all'utente, tenendo traccia della posizione dell'utente mentre si spostano, esponendo comunque il vero orientamento del controller usando i sensori di orientamento interni. Molte app che usano i controller per puntare e attivare gli elementi dell'interfaccia utente possono funzionare normalmente con una precisione approssimativa senza che l'utente abbia notato.
+A questo punto, il sistema bloczzerà il controller all'utente, tenendo traccia della posizione dell'utente mentre si sposta, pur esponendo il vero orientamento del controller usando i sensori di orientamento interni. Molte app che usano i controller per puntare e attivare gli elementi dell'interfaccia utente possono funzionare normalmente con accuratezza approssimativa senza che l'utente se ne sia abiliti.
 
-Il modo migliore per ottenere questo aspetto è provare a eseguire l'operazione. Vedere questo video con esempi di contenuti immersivi che funzionano con i controller di movimento in diversi Stati di rilevamento:
+<!-- The best way to get a feel for this is to try it yourself. Check out this video with examples of immersive content that works with motion controllers across various tracking states:
 
 <br>
 
- >[!VIDEO https://www.youtube.com/embed/QK_fOFDHj0g]
+ >[!VIDEO https://www.youtube.com/embed/QK_fOFDHj0g] -->
 
-### <a name="reasoning-about-tracking-state-explicitly"></a>Ragionamento sullo stato di rilevamento in modo esplicito
+### <a name="reasoning-about-tracking-state-explicitly"></a>Ragionamento sul rilevamento dello stato in modo esplicito
 
-Le app che desiderano gestire le posizioni in modo diverso in base allo stato di rilevamento possono andare oltre e controllare le proprietà nello stato del controller, ad esempio *SourceLossRisk* e *PositionAccuracy*:
+Le app che vogliono trattare le posizioni in modo diverso in base allo stato di rilevamento possono andare oltre ed esaminare le proprietà sullo stato del controller, ad esempio *SourceLossRisk* e *PositionAccuracy:*
 
 <table>
 <tr>
 <th> Stato di rilevamento </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>Accuratezza elevata</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Alto </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Accuratezza elevata</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> Alto </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Accuratezza elevata (a rischio di perdita)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Alto </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Accuratezza elevata (a rischio di perdita)</b> </td><td style="background-color: orange"> == 1,0 </td><td style="background-color: green; color: white"> Alto </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Accuratezza approssimativa</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Con approssimazione </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Accuratezza approssimativa</b> </td><td style="background-color: orange"> == 1,0 </td><td style="background-color: orange"> Con approssimazione </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Nessuna posizione</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Con approssimazione </td><td style="background-color: orange"> false</td>
+<td> <b>Nessuna posizione</b> </td><td style="background-color: orange"> == 1,0 </td><td style="background-color: orange"> Con approssimazione </td><td style="background-color: orange"> false</td>
 </tr>
 </table>
 
 Questi stati di rilevamento del controller di movimento sono definiti come segue:
-* **Accuratezza elevata:** Mentre il controller di movimento si trova all'interno del campo di visualizzazione dell'auricolare, in genere fornisce posizioni con accuratezza elevata, in base al rilevamento visivo. Un controller che sposta temporaneamente il campo di visualizzazione o è temporaneamente nascosto dai sensori dell'auricolare (ad esempio, da parte dell'utente) continuerà a restituire le pose con precisione elevata per un breve periodo di tempo, in base al rilevamento inerziale del controller stesso.
-* **Accuratezza elevata (a rischio di perdita):** Quando l'utente sposta il controller di movimento oltre il bordo del campo di visualizzazione dell'auricolare, l'auricolare non sarà presto in grado di rilevare visivamente la posizione del controller. L'app sa quando il controller ha raggiunto questo limite FOV visualizzando il **SourceLossRisk** REACH 1,0. A questo punto, l'app può scegliere di sospendere i movimenti del controller che richiedono un flusso costante di pose di alta qualità.
-* **Accuratezza approssimativa:** Quando il controller ha perso il rilevamento visivo per un periodo di tempo sufficiente, le posizioni del controller vengono rilasciate a posizioni di accuratezza approssimativa. A questo punto, il sistema bloccherà il controller all'utente, tenendo traccia della posizione dell'utente mentre si spostano, esponendo comunque il vero orientamento del controller usando i sensori di orientamento interni. Molte app che usano i controller per puntare e attivare gli elementi dell'interfaccia utente possono funzionare normalmente con una precisione approssimativa senza che l'utente ne abbia notato. Le app con requisiti di input più pesanti possono scegliere di comprendere questo calo dall'accuratezza **elevata** all'accuratezza **approssimativa** controllando la proprietà **PositionAccuracy** , ad esempio per dare all'utente un hitbox più generoso sulle destinazioni fuori schermo durante questo periodo di tempo.
-* **Nessuna posizione:** Mentre il controller può funzionare con una precisione approssimativa per molto tempo, a volte il sistema sa che anche una posizione bloccata dal corpo non è significativa al momento. Ad esempio, un controller attivato potrebbe non essere mai stato osservato visivamente oppure un utente potrebbe mettere a disposizione un controller che viene quindi prelevato da qualcun altro. In questi casi, il sistema non fornirà alcuna posizione all'app e *TryGetPosition* restituirà false.
+* **Accuratezza elevata:** Mentre il controller di movimento si trova all'interno del campo visivo del visore, in genere fornirà posizioni di accuratezza elevata, in base al rilevamento visivo. Un controller in movimento che lascia momentaneamente il campo di visualizzazione o viene momentaneamente nascosto dai sensori del visore (ad esempio, dall'altra mano dell'utente) continuerà a restituire pose ad alta accuratezza per un breve periodo di tempo, in base al rilevamento inerziale del controller stesso.
+* **Accuratezza elevata (a rischio di perdita):** Quando l'utente sposta il controller di movimento oltre il bordo del campo visivo del visore, il visore non sarà presto in grado di rilevare visivamente la posizione del controller. L'app sa quando il controller ha raggiunto questo limite FOV, verificando che **SourceLossRisk** raggiunga la versione 1.0. A questo punto, l'app può scegliere di sospendere i movimenti del controller che richiedono un flusso costante di pose di alta qualità.
+* **Accuratezza approssimativa:** Quando il controller ha perso il rilevamento visivo per un tempo sufficiente, le posizioni del controller scenderanno a posizioni di accuratezza approssimativa. A questo punto, il sistema bloczzerà il controller all'utente, tenendo traccia della posizione dell'utente mentre si sposta, pur esponendo il vero orientamento del controller usando i sensori di orientamento interni. Molte app che usano controller per puntare e attivare gli elementi dell'interfaccia utente possono funzionare normalmente con accuratezza approssimativa senza che l'utente se ne sia abiliti. Le app con requisiti di input più  elevati  possono scegliere di percepire questo calo da Accuratezza elevata a Accuratezza approssimativa controllando la **proprietà PositionAccuracy,** ad esempio per offrire all'utente un hitbox più ampio sulle destinazioni fuori schermo durante questo periodo.
+* **Nessuna posizione:** Anche se il controller può operare a un'accuratezza approssimativa per molto tempo, a volte il sistema sa che anche una posizione bloccata dal corpo non è significativa al momento. Ad esempio, un controller che è stato attivato potrebbe non essere mai stato osservato visivamente o un utente può disattivare un controller che viene quindi prelevato da un altro utente. In questi casi, il sistema non fornirà alcuna posizione all'app e *TryGetPosition* restituirà false.
 
-## <a name="common-unity-apis-inputgetbuttongetaxis"></a>API Unity comuni (input. GetButton/getaxis)
+## <a name="common-unity-apis-inputgetbuttongetaxis"></a>API Comuni di Unity (Input.GetButton/GetAxis)
 
-**Spazio dei nomi:** *UnityEngine*, *UnityEngine. XR*<br>
-**Tipi**: *input*, *XR. InputTracking*
+**Spazio dei nomi:** *UnityEngine,* *UnityEngine.XR*<br>
+**Tipi**: *Input*, *XR. InputTracking*
 
-Unity usa attualmente le API *input. GetButton/input. getaxis* per esporre l'input per [Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html), [l'SDK di OpenVR e la](https://docs.unity3d.com/Manual/OpenVRControllers.html) realtà mista di Windows, inclusi i controller hands e Motion. Se l'app usa queste API per l'input, può supportare facilmente i controller di movimento tra più SDK XR, inclusa la realtà mista di Windows.
+Unity attualmente usa le API *Input.GetButton/Input.GetAxis* generali per esporre l'input per [Oculus SDK,](https://docs.unity3d.com/Manual/OculusControllers.html) [OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html) e Windows Mixed Reality, inclusi mani e controller di movimento. Se l'app usa queste API per l'input, può supportare facilmente i controller di movimento in più SDK XR, inclusi Windows Mixed Reality.
 
 ### <a name="getting-a-logical-buttons-pressed-state"></a>Recupero dello stato premuto di un pulsante logico
 
-Per usare le API di input di Unity generale, si inizia in genere collegando pulsanti e assi ai nomi logici in [Gestione input Unity](https://docs.unity3d.com/Manual/ConventionalGameInput.html), associando un pulsante o gli ID dell'asse a ogni nome. È quindi possibile scrivere codice che fa riferimento a tale nome di pulsante/asse logico.
+Per usare le API di input di Unity generali, in genere si inizierà cablando pulsanti e assi ai nomi logici in [Unity Input Manager,](https://docs.unity3d.com/Manual/ConventionalGameInput.html)associando un ID pulsante o asse a ogni nome. È quindi possibile scrivere codice che faccia riferimento al nome logico del pulsante o dell'asse.
 
-Ad esempio, per eseguire il mapping del pulsante trigger del controller di movimento sinistro all'azione Invia, passare a **modifica > impostazioni progetto > input** in Unity ed espandere le proprietà della sezione Submit in assi. Modificare il pulsante **positivo** o la proprietà **pulsante Alt positivo** per leggere il **pulsante del joystick 14**, in questo modo:
+Ad esempio, per eseguire il mapping del pulsante trigger del controller del movimento sinistro all'azione Invia, passare > Modifica impostazioni progetto **> Input in** Unity ed espandere le proprietà della sezione Invia in Assi. Modificare la **proprietà Pulsante positivo** o Alt **Pulsante** positivo in modo da leggere il pulsante con **il joystick 14,** come illustrato di codice seguente:
 
 ![InputManager di Unity](images/unity-input-manager.png)<br>
 *Unity InputManager*
 
-Lo script può quindi verificare la presenza di un'azione di invio tramite *input. GetButton*:
+Lo script può quindi verificare l'azione Submit usando *Input.GetButton*:
 
 ```cs
 if (Input.GetButton("Submit"))
@@ -192,11 +192,11 @@ if (Input.GetButton("Submit"))
   // ...
 }
 ```
-È possibile aggiungere più pulsanti logici modificando la proprietà **size** in **assi**.
+È possibile aggiungere altri pulsanti logici modificando la **proprietà Size** in **Axes**.
 
-### <a name="getting-a-physical-buttons-pressed-state-directly"></a>Ottenere direttamente lo stato premuto di un pulsante fisico
+### <a name="getting-a-physical-buttons-pressed-state-directly"></a>Recupero diretto dello stato premuto di un pulsante fisico
 
-È anche possibile accedere manualmente ai pulsanti con il nome completo, usando *input. GetKey*:
+È anche possibile accedere manualmente ai pulsanti in base al nome completo usando *Input.GetKey*:
 
 ```cs
 if (Input.GetKey("joystick button 8"))
@@ -205,7 +205,7 @@ if (Input.GetKey("joystick button 8"))
 }
 ```
 
-### <a name="getting-a-hand-or-motion-controllers-pose"></a>Acquisizione di una mano o di un controller di movimento
+### <a name="getting-a-hand-or-motion-controllers-pose"></a>Ottenere la posizione di una mano o di un controller di movimento
 
 È possibile accedere alla posizione e alla rotazione del controller usando *XR. InputTracking*:
 
@@ -215,23 +215,23 @@ Quaternion leftRotation = InputTracking.GetLocalRotation(XRNode.LeftHand);
 ```
 
 > [!NOTE] 
-> Il codice precedente rappresenta la posizione del grip del controller (dove l'utente possiede il controller), che è utile per il rendering di una spada o di un'arma a mano dell'utente o di un modello del controller stesso.
+> Il codice precedente rappresenta la posizione di presa del controller (in cui l'utente tiene il controller), che è utile per il rendering di una mama o di una mitragliatrice nella mano dell'utente o di un modello del controller stesso.
 > 
-> La relazione tra la posizione del grip e la posizione del puntatore (dove la punta del controller sta puntando) può variare tra i controller. Al momento, l'accesso alla posizione del puntatore del controller è possibile solo tramite l'API di input specifica del sig, descritta nelle sezioni riportate di seguito.
+> La relazione tra la posizione del grip e la posizione del puntatore (in cui la punta del controller è puntata) può differire tra i controller. In questo momento, l'accesso alla posizione del puntatore del controller è possibile solo tramite l'API di input specifica di MR, descritta nelle sezioni seguenti.
 
-## <a name="windows-specific-apis-xrwsainput"></a>API specifiche di Windows (XR. WSA. Input
+## <a name="windows-specific-apis-xrwsainput"></a>API specifiche di Windows (XR. Wsa. Input)
 
 > [!CAUTION]
-> Se il progetto usa uno dei XR. Le API WSA vengono gradualmente eliminate a favore di XR SDK in future versioni di Unity. Per i nuovi progetti, è consigliabile usare XR SDK dall'inizio. Altre informazioni sul [sistema di input e sulle API di XR](https://docs.unity3d.com/Manual/xr_input.html)sono disponibili qui.
+> Se il progetto usa una delle versioni XR. API WSA, che verranno gradualmente sfasati a favore di XR SDK nelle versioni future di Unity. Per i nuovi progetti, è consigliabile usare XR SDK fin dall'inizio. Altre informazioni sul sistema [di input XR e sulle API](https://docs.unity3d.com/Manual/xr_input.html)sono disponibili qui.
 
-**Spazio dei nomi:** *UnityEngine. XR. WSA. input*<br>
-**Tipi**: *InteractionManager*, *InteractionSourceState*, *InteractionSource*, *InteractionSourceProperties*, *InteractionSourceKind*, *InteractionSourceLocation*
+**Spazio dei nomi:** *UnityEngine.XR.WSA.Input*<br>
+**Tipi:** *InteractionManager,* *InteractionSourceState,* *InteractionSource,* *InteractionSourceProperties,* *InteractionSourceKind,* *InteractionSourceLocation*
 
-Per ottenere informazioni più dettagliate sull'input della realtà mista di Windows (per HoloLens) e sui controller di movimento, è possibile scegliere di usare le API di input spaziali specifiche di Windows nello spazio dei nomi *UnityEngine. XR. WSA. input* . In questo modo è possibile accedere a informazioni aggiuntive, come l'accuratezza della posizione o il tipo di origine, che consentono di distinguere le mani e i controller.
+Per ottenere informazioni più dettagliate sull'input manuale Windows Mixed Reality (per HoloLens) e sui controller di movimento, è possibile scegliere di usare le API di input spaziale specifiche di Windows nello spazio dei nomi *UnityEngine.XR.WSA.Input.* In questo modo è possibile accedere a informazioni aggiuntive, ad esempio l'accuratezza della posizione o il tipo di origine, consentendo di distogliere mani e controller.
 
-### <a name="polling-for-the-state-of-hands-and-motion-controllers"></a>Polling dello stato di hands and Motion Controllers
+### <a name="polling-for-the-state-of-hands-and-motion-controllers"></a>Polling per lo stato delle mani e dei controller di movimento
 
-È possibile eseguire il polling dello stato di questo frame per ogni origine interazione (controller di movimento o mano) usando il metodo *GetCurrentReading* .
+È possibile eseguire il polling dello stato di questo frame per ogni origine di interazione (mano o controller di movimento) usando il *metodo GetCurrentReading.*
 
 ```cs
 var interactionSourceStates = InteractionManager.GetCurrentReading();
@@ -240,15 +240,15 @@ foreach (var interactionSourceState in interactionSourceStates) {
 }
 ```
 
-Ogni *InteractionSourceState* restituito rappresenta un'origine interazione nel momento corrente. *InteractionSourceState* espone informazioni come:
-* Quali [tipi di presse](../../design/motion-controllers.md) si verificano (Select/menu/afferrare/touchpad/levetta)
+Ogni *InteractionSourceState che* si ottiene rappresenta un'origine di interazione nel momento corrente. *InteractionSourceState espone* informazioni come:
+* Quali [tipi di pressione si](../../design/motion-controllers.md) verificano (Select/Menu/Grasp/Touchpad/Thumbstick)
 
    ```cs
    if (interactionSourceState.selectPressed) {
        // ...
    }
    ```
-* Altri dati specifici per i controller di movimento, come le coordinate XY di touchpad e/o levetta e lo stato toccato
+* Altri dati specifici per i controller di movimento, ad esempio le coordinate XY del touchpad e/o del pollice e lo stato toccato
 
    ```cs
    if (interactionSourceState.touchpadTouched && interactionSourceState.touchpadPosition.x > 0.5) {
@@ -256,7 +256,7 @@ Ogni *InteractionSourceState* restituito rappresenta un'origine interazione nel 
    }
    ```
 
-* InteractionSourceKind per verificare se l'origine è una mano o un controller di movimento
+* InteractionSourceKind per sapere se l'origine è una mano o un controller di movimento
 
    ```cs
    if (interactionSourceState.source.kind == InteractionSourceKind.Hand) {
@@ -264,9 +264,9 @@ Ogni *InteractionSourceState* restituito rappresenta un'origine interazione nel 
    }
    ```
 
-### <a name="polling-for-forward-predicted-rendering-poses"></a>Polling per le pose di rendering con stima avanzata
+### <a name="polling-for-forward-predicted-rendering-poses"></a>Polling per le posizioni di rendering stimate in avanti
 
-* Quando si esegue il polling per i dati di origine dell'interazione da mani e controller, le pose ricevute sono le pose stimate in avanti per il momento in cui i fotoni del frame raggiungono gli occhi dell'utente.  Per il **rendering** del controller o di un oggetto mantenuto ogni frame, è consigliabile utilizzare le pose con stima avanzata.  Se la destinazione è una determinata pressione o rilascio con il controller, questo sarà più accurato se si usano le API degli eventi cronologici descritte di seguito.
+* Quando si esegue il polling dei dati di origine dell'interazione da mani e controller, le pose che si ottengono sono pose stimate in avanti per il momento in cui i fotoni di questo fotogramma raggiungeranno gli occhi dell'utente.  Le pose stimate in avanti sono più usate per **il rendering** del controller o di un oggetto mantenuto per ogni fotogramma.  Se si usa come destinazione una determinata pressa o rilascio con il controller, ciò sarà più accurato se si usano le API di eventi cronologiche descritte di seguito.
 
    ```cs
    var sourcePose = interactionSourceState.sourcePose;
@@ -278,7 +278,7 @@ Ogni *InteractionSourceState* restituito rappresenta un'origine interazione nel 
    }
    ```
 
-* È anche possibile ottenere la formula Head con stima avanzata per il frame corrente.  Come per la posa di origine, questa operazione è utile per il **rendering** di un cursore, anche se la scelta di una determinata pressione o rilascio sarà più accurata se si usano le API degli eventi cronologici descritte di seguito.
+* È anche possibile ottenere la posizione della testa stimata in avanti per questo frame corrente.  Come per la posizione di origine, questa operazione è utile per il **rendering** di un cursore, anche se la destinazione di una determinata pressione o rilascio sarà più accurata se si usano le API di eventi cronologiche descritte di seguito.
 
    ```cs
    var headPose = interactionSourceState.headPose;
@@ -290,18 +290,18 @@ Ogni *InteractionSourceState* restituito rappresenta un'origine interazione nel 
    }
    ```
 
-### <a name="handling-interaction-source-events"></a>Gestione degli eventi di origine interazione
+### <a name="handling-interaction-source-events"></a>Gestione degli eventi di origine dell'interazione
 
-Per gestire gli eventi di input Man mano che si verificano con i dati di posa cronologici accurati, è possibile gestire gli eventi di origine interazione anziché il polling.
+Per gestire gli eventi di input quando si verificano con i dati di posizione cronologici accurati, è possibile gestire gli eventi di origine dell'interazione anziché il polling.
 
-Per gestire gli eventi di origine interazione:
-* Eseguire la registrazione per un evento di input *InteractionManager* . Per ogni tipo di evento di interazione a cui si è interessati, è necessario sottoscriverlo.
+Per gestire gli eventi di origine dell'interazione:
+* Registrarsi per un evento di input *InteractionManager.* Per ogni tipo di evento di interazione a cui si è interessati, è necessario sottoscriverlo.
 
    ```cs
    InteractionManager.InteractionSourcePressed += InteractionManager_InteractionSourcePressed;
    ```
 
-* Gestire l'evento. Una volta effettuata la sottoscrizione a un evento di interazione, si otterrà il callback quando appropriato. Nell'esempio *SourcePressed* , questo sarà dopo che l'origine è stata rilevata e prima che venga rilasciata o persa.
+* Gestire l'evento . Dopo aver sottoscritto un evento di interazione, si otterrà il callback quando appropriato. *Nell'esempio SourcePressed* questo si verifica dopo che l'origine è stata rilevata e prima che venga rilasciata o persa.
 
    ```cs
    void InteractionManager_InteractionSourceDetected(InteractionSourceDetectedEventArgs args)
@@ -317,33 +317,33 @@ Per gestire gli eventi di origine interazione:
 
 ### <a name="how-to-stop-handling-an-event"></a>Come interrompere la gestione di un evento
 
-È necessario arrestare la gestione di un evento quando non si è più interessati all'evento o si sta eliminando l'oggetto che ha sottoscritto l'evento. Per arrestare la gestione dell'evento, annullare la sottoscrizione all'evento.
+È necessario interrompere la gestione di un evento quando non si è più interessati all'evento o si elimina l'oggetto che ha sottoscritto l'evento. Per interrompere la gestione dell'evento, annullare la sottoscrizione all'evento.
 
 ```cs
 InteractionManager.InteractionSourcePressed -= InteractionManager_InteractionSourcePressed;
 ```
 
-### <a name="list-of-interaction-source-events"></a>Elenco di eventi di origine interazione
+### <a name="list-of-interaction-source-events"></a>Elenco di eventi di origine dell'interazione
 
-Gli eventi di origine interazione disponibili sono:
+Gli eventi di origine dell'interazione disponibili sono:
 * *InteractionSourceDetected* (l'origine diventa attiva)
 * *InteractionSourceLost* (diventa inattivo)
-* *InteractionSourcePressed* (toccare, premere il pulsante o "Select")
-* *InteractionSourceReleased* (fine di un tocco, pulsante rilasciato o fine di "Select" pronunciata)
-* *InteractionSourceUpdated* (sposta o modifica in altro modo lo stato)
+* *InteractionSourcePressed* (tocco, pressione di un pulsante o espressione "Seleziona")
+* *InteractionSourceReleased* (fine di un tocco, un pulsante rilasciato o la fine dell'espressione "Seleziona")
+* *InteractionSourceUpdated* (sposta o modifica in altro modo uno stato)
 
-### <a name="events-for-historical-targeting-poses-that-most-accurately-match-a-press-or-release"></a>Gli eventi per il targeting cronologico rappresentano la corrispondenza più accurata tra una stampa o una versione
+### <a name="events-for-historical-targeting-poses-that-most-accurately-match-a-press-or-release"></a>Eventi per posizioni di destinazione cronologiche che corrispondono in modo più accurato a una stampa o a un rilascio
 
-Le API di polling descritte in precedenza forniscono le pose previste dall'app.  Anche se queste pose stimate sono ideali per il rendering del controller o di un oggetto palmare virtuale, le pose future non sono ottimali per la destinazione, per due motivi principali:
-* Quando l'utente preme un pulsante su un controller, potrebbero essere presenti circa 20 ms di latenza wireless su Bluetooth prima che il sistema riceva la pressione.
-* Quindi, se si usa una formula con stima di avanzamento, è possibile applicare un altro 10-20 ms di stima in diretta per individuare l'ora in cui i fotoni del frame corrente raggiungono gli occhi dell'utente.
+Le API di polling descritte in precedenza forniscono all'app posizioni previste in avanti.  Anche se queste posizioni stimate sono ottimali per il rendering del controller o di un oggetto portatile virtuale, le posizioni future non sono ottimali per la destinazione, per due motivi chiave:
+* Quando l'utente preme un pulsante su un controller, possono essere presenti circa 20 ms di latenza wireless su Bluetooth prima che il sistema riceva la pressione.
+* Quindi, se si usa una posizione stimata in avanti, saranno applicati altri 10-20 ms di stima in avanti per raggiungere l'ora in cui i fotoni del fotogramma corrente raggiungeranno gli occhi dell'utente.
 
-Questo significa che il polling fornisce una posizione di origine o una posizione iniziale che è 30-40 ms in poi da dove si è verificata l'intestazione e le mani dell'utente.  Per l'input della mano HoloLens, anche se non si verifica alcun ritardo di trasmissione wireless, si verifica un ritardo di elaborazione simile per rilevare la pressione.
+Ciò significa che il polling offre una posizione di origine o una posizione della testa di 30-40 ms in avanti da dove la testa e le mani dell'utente erano effettivamente tornati quando si è verificata la pressione o il rilascio.  Per l'input manuale di HoloLens, anche se non è presente alcun ritardo di trasmissione wireless, si verifica un ritardo di elaborazione simile per rilevare la pressione.
 
-Per definire la destinazione in modo accurato in base all'intento originale dell'utente per la pressione di un controller o una mano, è necessario usare la funzione di origine o di intestazione di origine cronologica da tale evento di input *InteractionSourcePressed* o *InteractionSourceReleased* .
+Per definire in modo accurato la destinazione in base alla finalità originale dell'utente per una pressione della mano o del controller, devi usare la posizione di origine o la posizione della testa cronologica dell'evento di input *InteractionSourcePressed* o *InteractionSourceReleased.*
 
-È possibile fare riferimento a una stampa o a una versione con dati di posa cronologici dall'Head dell'utente o dal controller:
-* Il primo posto nel momento in cui [si è verificato](../../design/gaze-and-commit.md) un movimento o un controller, che può essere **usato per definire** la scelta dell'utente:
+È possibile specificare come destinazione una stampa o un rilascio con dati cronologici sulla posizione dalla testa dell'utente o dal relativo controller:
+* La posizione della testa nel momento in cui si è verificato  un movimento o una pressione del controller, che può essere usata per la destinazione per determinare ciò che l'utente stava [guardando:](../../design/gaze-and-commit.md)
 
    ```cs
    void InteractionManager_InteractionSourcePressed(InteractionSourcePressedEventArgs args) {
@@ -357,7 +357,7 @@ Per definire la destinazione in modo accurato in base all'intento originale dell
    }
    ```
 
-* La posizione di origine nel momento in cui si è verificata la pressione di un controller di movimento, che può essere **usata per determinare** l'elemento che l'utente stava puntando al controller.  Si tratta dello stato del controller che ha riscontrato la pressione.  Se si esegue il rendering del controller stesso, è possibile richiedere la presenza del puntatore anziché il grip, per sparare al raggio di destinazione da quello che l'utente considererà il suggerimento naturale del controller sottoposto a rendering:
+* Posizione di origine nel momento in cui si è verificata  la pressione di un controller del movimento, che può essere usata per la destinazione per determinare a cosa puntava il controller.  Questo sarà lo stato del controller che ha riscontrato la pressione.  Se si esegue il rendering del controller stesso, è possibile richiedere la posizione dell'indicatore di misura anziché la posizione del punto di controllo, per afferrare il raggio di destinazione da ciò che l'utente considererà la punta naturale del controller sottoposto a rendering:
 
    ```cs
    void InteractionManager_InteractionSourcePressed(InteractionSourcePressedEventArgs args)
@@ -434,23 +434,23 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 }
 ```
 
-## <a name="motion-controllers-in-mrtk"></a>Controller di movimento in MRTK
+## <a name="motion-controllers-in-mrtk"></a>Controller del movimento in MRTK
 
-È possibile accedere a [gesture e Motion controller](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/controllers) dal gestore di input.
+È possibile accedere al [movimento e al controller del movimento](/windows/mixed-reality/mrtk-unity/features/input/controllers) da Gestione input.
 
 ## <a name="follow-along-with-tutorials"></a>Seguire le esercitazioni
 
-Le esercitazioni dettagliate, con esempi di personalizzazione più dettagliati, sono disponibili in Mixed Reality Academy:
+Esercitazioni dettagliate, con esempi di personalizzazione più dettagliati, sono disponibili in Mixed Reality Academy:
 
 - [Input MR 211: Movimento](tutorials/holograms-211.md)
 - [Input MR 213: Controller del movimento](../../deprecated/mixed-reality-213.md)
 
-[![Input MR 213-controller di movimento](images/mr213-main-600px.jpg)](/windows/mixed-reality/mixed-reality-213)<br>
-*Input MR 213-controller di movimento*
+[![Input MR 213 - Controller del movimento](images/mr213-main-600px.jpg)](/windows/mixed-reality/mixed-reality-213)<br>
+*Input MR 213 - Controller del movimento*
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo:
+Se si sta seguendo il percorso di sviluppo di Unity che è stato strutturato, si stanno esplorando i blocchi predefiniti principali di MRTK. Da qui è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Tracciamento della mano e oculare](./hand-eye-in-unity.md)

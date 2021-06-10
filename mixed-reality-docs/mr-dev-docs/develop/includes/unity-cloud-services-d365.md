@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: ee466c65bd6de166b15042f93989b5d8829c8d59
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 2f7424bc25e358bd368e651af7d906930afe6ccc
+ms.sourcegitcommit: 62e5909b837c9c7ecedd040164f2308868db4723
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98583006"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111741964"
 ---
 # <a name="azure-remote-rendering"></a>[Rendering remoto di Azure](#tab/arr)
 
@@ -27,14 +27,3 @@ Ancoraggi nello spazio di Azure (ASA) è un servizio multipiattaforma che consen
 * [Individuare ancoraggi nelle vicinanze](/azure/spatial-anchors/how-tos/set-up-coarse-reloc-unity)
 * [Esercitazione: Condivisione di ancoraggi tra più sessioni e dispositivi](/azure/spatial-anchors/tutorials/tutorial-share-anchors-across-devices?tabs=VS%2cAndroid)  
 * [Esempi di Ancoraggi nello spazio di Azure (GitHub)](https://github.com/Azure/azure-spatial-anchors-samples) 
-
-# <a name="dynamics-365"></a>[Dynamics 365](#tab/D365)
-
-Microsoft Dynamics 365 Guides è un'applicazione di realtà mista per Microsoft HoloLens che consente agli operatori di apprendere durante il lavoro offrendo istruzioni olografiche quando e dove sono necessarie. Queste schede di istruzioni sono collegate visivamente al luogo in cui deve essere svolto il lavoro e possono includere immagini, video e modelli olografici 3D.
-
-* [Overview](/dynamics365/mixed-reality/guides/) 
-* [Operazioni preliminari](/dynamics365/mixed-reality/guides/get-started) 
-* [Sono un amministratore](/dynamics365/mixed-reality/guides/setup)
-* [Sono un autore](/dynamics365/mixed-reality/guides/authoring-overview) 
-* [Sono un operatore](/dynamics365/mixed-reality/guides/operator-overview) 
-* [Riferimento alle entità per sviluppatori](/dynamics365/mixed-reality/guides/developer-entity-reference)

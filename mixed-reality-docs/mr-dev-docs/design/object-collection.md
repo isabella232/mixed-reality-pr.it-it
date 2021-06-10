@@ -1,46 +1,46 @@
 ---
 title: Raccolta di oggetti
-description: La raccolta di oggetti è un controllo di layout che consente di disporre una matrice di oggetti in una forma tridimensionale predefinita.
+description: La raccolta di oggetti è un controllo di layout che consente di definire il layout di una matrice di oggetti in una forma tridimensionale predefinita.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realtà mista di Windows, controlli, progettazione, cuffie per realtà mista, cuffie per realtà mista di Windows, headset di realtà virtuale, HoloLens, raccolta di oggetti, 2D, 3D, MRTK, Toolkit reality
-ms.openlocfilehash: 109dcd59a2b52a8eec82096c5aa88cd1070f5649
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: Windows Mixed Reality, controlli, progettazione, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, HoloLens, raccolta di oggetti, 2D, 3D, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 9648f3bd22a09c53de2f903ed8ba0274c634db7c
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299726"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600200"
 ---
 # <a name="object-collection"></a>Raccolta di oggetti
 
-![Raccolta di oggetti usata nella tabella periodica dell'app elementi](images/UX_Hero_ObjectCollection.jpg)<br>
+![Raccolta di oggetti usata nella tabella periodica dell'app Elements](images/UX_Hero_ObjectCollection.jpg)<br>
 
-La raccolta di oggetti è un controllo di layout che consente di disporre una matrice di oggetti in una forma tridimensionale predefinita. Supporta diversi stili di superficie: * * piano, cilindro, sfera e **radiale**. È possibile regolare il raggio e le dimensioni degli oggetti e lo spazio tra di essi. La raccolta di oggetti supporta qualsiasi oggetto da Unity, sia 2D che 3D. Nel **[Toolkit di realtà mista](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)** abbiamo creato script Unity ed esempi che consentiranno di creare una raccolta di oggetti.
+La raccolta di oggetti è un controllo di layout che consente di definire il layout di una matrice di oggetti in una forma tridimensionale predefinita. Supporta vari stili di superficie: **piano, cilindro, sfera e **radiale.** È possibile regolare il raggio e le dimensioni degli oggetti e lo spazio tra di essi. La raccolta di oggetti supporta qualsiasi oggetto di Unity, sia 2D che 3D. In **[Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)** sono stati creati script ed esempi di Unity che consentono di creare una raccolta di oggetti.
 
-## <a name="object-collection-examples"></a>Esempi di raccolta di oggetti
+## <a name="object-collection-examples"></a>Esempi di raccolte di oggetti
 
-[La tabella periodica degli elementi](../develop/unity/periodic-table-of-the-elements.md) è un'applicazione di esempio che illustra il funzionamento della raccolta di oggetti. Usa la raccolta di oggetti per disporre le caselle di elementi chimici 3D in forme diverse.
+[La tabella periodica degli elementi è un'app](../develop/unity/periodic-table-of-the-elements.md) di esempio che illustra il funzionamento della raccolta di oggetti. Usa la raccolta di oggetti per creare il sistema di caselle degli elementi chimica 3D in forme diverse.
 
-![Esempi di raccolta di oggetti illustrati nella tabella periodica dell'app elementi](images/periodictable-collections-1000px.jpg)<br>
+![Esempi di raccolta di oggetti illustrati nella tabella periodica dell'app Elements](images/periodictable-collections-1000px.jpg)<br>
 *Esempi di raccolta di oggetti illustrati nella tabella periodica dell'app di esempio Elements*
 
-### <a name="3d-objects"></a>oggetti 3D
+### <a name="3d-objects"></a>Oggetti 3D
 
-È possibile usare la raccolta di oggetti per il layout degli oggetti 3D importati. Nell'esempio seguente viene illustrato un piano e un layout cilindrico di alcuni oggetti della poltrona 3D.
+È possibile usare La raccolta di oggetti per impostare il timeout degli oggetti 3D importati. L'esempio seguente mostra un piano e un layout a cilindro di alcuni oggetti 3D.
 
-![Esempi di layout piano e cilindrico degli oggetti 3D](images/objectcollection-3dobjects-1000px.jpg)<br>
-*Esempi di layout piano e cilindrico degli oggetti 3D*
+![Esempi di layout di piano e ciclici di oggetti 3D](images/objectcollection-3dobjects-1000px.jpg)<br>
+*Esempi di layout di piano e ciclici di oggetti 3D*
 
-### <a name="2d-objects"></a>oggetti 2D
+### <a name="2d-objects"></a>Oggetti 2D
 
-È anche possibile usare immagini 2D con la raccolta di oggetti. Gli esempi seguenti illustrano in che modo le immagini 2D possono essere visualizzate in una griglia.
+È anche possibile usare immagini 2D con La raccolta di oggetti. Gli esempi seguenti illustrano come visualizzare le immagini 2D in una griglia.
 
 ![Esempio di immagini 2D con raccolta di oggetti](images/940px-layout-3dobjects-3.jpg)
 
-![Esempi di utilizzo della raccolta di oggetti con immagini 2D](images/940px-layout-2dimages.jpg)<br>
-*Esempi di utilizzo della raccolta di oggetti con immagini 2D*
+![Esempi di uso della raccolta di oggetti con immagini 2D](images/940px-layout-2dimages.jpg)<br>
+*Esempi di uso della raccolta di oggetti con immagini 2D*
 
 <br>
 
@@ -48,13 +48,13 @@ La raccolta di oggetti è un controllo di layout che consente di disporre una ma
 
 ## <a name="object-collection-in-mrtk-mixed-reality-toolkit-for-unity"></a>Raccolta di oggetti in MRTK (Mixed Reality Toolkit) per Unity
 
-* [MRTK-raccolta di oggetti](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection)
+* [MRTK - Raccolta di oggetti](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

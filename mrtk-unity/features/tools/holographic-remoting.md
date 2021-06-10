@@ -1,41 +1,41 @@
 ---
 title: Holographic Remoting
-description: Documentazione Holographic Remoting MRTK
+description: Documentazione di Holographic Remoting MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 637f68e5ad5f360aea4b5c0603a682d61d152a89
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
+ms.openlocfilehash: 196bbb7027389ea75ddc577e4efc397ca779d550
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144585"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647179"
 ---
 # <a name="holographic-remoting"></a>Holographic Remoting
 
-La comunicazione remota olografica trasmettere contenuto olografico da un PC al Microsoft HoloLens in tempo reale, usando una Wi-Fi o una connessione via cavo USB. Questa funzionalità può aumentare significativamente la produttività degli sviluppatori quando si sviluppano applicazioni di realtà mista.
+Holographic Remoting streaming il contenuto olografico da un PC al Microsoft HoloLens in tempo reale, usando una connessione Wi-Fi o un cavo USB. Questa funzionalità può aumentare significativamente la produttività degli sviluppatori quando si sviluppano applicazioni di realtà mista.
 
-XR SDK come indicato di seguito fa riferimento alla nuova [pipeline XR di Unity in Unity 2019.3 e versioni seguenti.](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/) Vedere [qui](../../configuration/getting-started-with-mrtk-and-xrsdk.md) per altre informazioni sull'uso di XR SDK con MRTK. XR legacy si riferisce alla pipeline XR esistente inclusa in Unity 2018, deprecata in Unity 2019.3 e rimossa in Unity 2020.
+XR SDK come indicato di seguito fa riferimento alla nuova [pipeline XR di Unity in Unity 2019.3 e versioni seguenti.](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/) Per [altre](../../configuration/getting-started-with-mrtk-and-xrsdk.md) informazioni sull'uso di XR SDK con MRTK, vedere qui. XR legacy fa riferimento alla pipeline XR esistente inclusa in Unity 2018, deprecata in Unity 2019.3 e rimossa in Unity 2020.
 
 ## <a name="initial-setup"></a>Configurazione iniziale
 
-Per abilitare la comunicazione remota a un holoLens, è importante assicurarsi che il progetto utilizzi i componenti remoti più recenti.
+Per abilitare la comunicazione remota con HoloLens, è importante assicurarsi che il progetto utilizzi i componenti remoti più recenti.
 
 1. Apri **finestra > Gestione pacchetti**
     - Se si usa XR legacy: verificare che sia installata la versione più **recente Windows Mixed Reality** pacchetto.
-    - Se si usa XR SDK: verificare che sia installata la versione più recente del pacchetto **plug-in Windows XR.**
-1. Assicurarsi che l'applicazione Holographic Remoting più recente sia installata in HoloLens tramite il Microsoft Store.
+    - Se si usa XR SDK: verificare che sia installata la versione più recente del pacchetto **windows XR Plugin.**
+1. Verificare che l'applicazione Holographic Remoting più recente sia installata in HoloLens tramite il Microsoft Store.
 
-Continuare con le [istruzioni di configurazione di XR legacy](#legacy-xr-setup-instructions) o le istruzioni di configurazione di [XR SDK](#xr-sdk-setup-instructions) a seconda della pipeline usata nel progetto.
+Continuare con le [istruzioni di installazione legacy di XR](#legacy-xr-setup-instructions) o [XR SDK](#xr-sdk-setup-instructions) a seconda della pipeline usata nel progetto.
 
-## <a name="legacy-xr-setup-instructions"></a>Istruzioni di configurazione XR legacy
+## <a name="legacy-xr-setup-instructions"></a>Istruzioni di configurazione di XR legacy
 
-Le istruzioni seguenti si applicano solo alla comunicazione remota con HoloLens 2. Se si esegue la comunicazione remota solo con HoloLens (prima generazione), passare a [Connessione a HoloLens con Wi-Fi.](#connecting-to-the-hololens-with-wi-fi)
+Le istruzioni seguenti si applicano solo alla comunicazione remota con HoloLens 2. Se esegui la comunicazione remota solo con HoloLens (prima generazione), passa a Connecting [to the HoloLens with Wi-Fi (Connessione a HoloLens con Wi-Fi).](#connecting-to-the-hololens-with-wi-fi)
 
-Quando si usa un HoloLens 2, è stato aggiunto il supporto per i dati di tracciamento oculare e mano articolati remoti a MRTK. Per abilitare queste funzionalità, seguire la procedura descritta in [Importare DotNetWinRT nel progetto](#import-dotnetwinrt-into-the-project).
+Quando si usa un HoloLens 2, a MRTK è stato aggiunto il supporto per i dati di tracciamento oculare e mano articolati remoti. Per abilitare queste funzionalità, seguire i passaggi documentati in [Importare DotNetWinRT nel progetto](#import-dotnetwinrt-into-the-project).
 
-Dopo l'importazione, il passaggio successivo consiste nel selezionare **Mixed Reality Toolkit**  >  **Utilities**  >  **Windows Mixed Reality** Check Configuration  >  **(Controlla configurazione).** Questo passaggio aggiunge una definizione di scripting che abilita la dipendenza DotNetWinRT.
+Dopo l'importazione, il passaggio successivo consiste nel selezionare **Mixed Reality**  >  **Toolkit**  >  **Utilities**  >  **Windows Mixed Reality**  >  **Check Configuration (Controlla configurazione).** Questo passaggio aggiunge una definizione di scripting che abilita la dipendenza DotNetWinRT.
 
 > [!NOTE]
 > Quando si usa Unity 2019.4 e versione più recente, non è necessario eseguire l'utilità Controlla configurazione.
@@ -44,7 +44,7 @@ Per abilitare il tracciamento delle giunzioni delle mani e il tracciamento ocula
 
 ### <a name="debugging-hololens-2-remoting-via-unity-package-import"></a>Debug di HoloLens 2 remota tramite l'importazione di pacchetti Unity
 
-Se HoloLens 2 le giunzioni delle mani e il tracciamento oculare non funzionano con la comunicazione remota, esistono alcuni punti comuni di potenziali problemi. Sono elencati di seguito nell'ordine in cui devono essere controllati.
+Se HoloLens 2 mani e il tracciamento oculare non funzionano con la comunicazione remota, esistono alcuni punti comuni di potenziali problemi. Sono elencati di seguito nell'ordine in cui devono essere controllati.
 
 Questi problemi sono particolarmente rilevanti quando vengono eseguiti **in Unity 2019.3** o versioni successive.
 

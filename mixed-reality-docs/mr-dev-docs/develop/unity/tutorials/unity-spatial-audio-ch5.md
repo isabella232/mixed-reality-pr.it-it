@@ -1,71 +1,71 @@
 ---
-title: Esercitazioni audio spaziali-5. Uso del riverbero per aggiungere distanza all'audio spaziale
-description: Aggiungere un effetto di riverbero per migliorare il senso della variazione della distanza nell'audio spaziale.
+title: Esercitazioni sull'audio spaziale - 5. Uso del riverbero per aggiungere distanza all'audio spaziale
+description: Aggiungere un effetto di riverbero per migliorare il senso di variazione della distanza nell'audio spaziale.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
-keywords: realtà mista, Unity, esercitazione, hololens2, audio spaziale, MRTK, Toolkit per realtà mista, UWP, Windows 10, HRTF, funzione di trasferimento correlato alla testa, riverbero, Microsoft Spatializer, mixer audio, riverbero SFX
-ms.openlocfilehash: f7a5270d969f2e462db0244bd6c68b99347ae1a7
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+keywords: mixed reality, unity, tutorial, hololens2, spatial audio, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head-related transfer function, reverb, Microsoft Spatializer, audio mixer, SFX reverb
+ms.openlocfilehash: 6f41fe904c21591915e0ef13b61dc6bff04527fe
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590723"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110712688"
 ---
 # <a name="5-using-reverb-to-add-distance-to-spatial-audio"></a>5. Uso del riverbero per aggiungere distanza all'audio spaziale
 
 ## <a name="overview"></a>Panoramica
 
-Nell'esercitazione precedente è stata aggiunta la spazializzazione per i suoni, per dare loro un senso di direzione in questa esercitazione, si aggiungerà un effetto di riverbero per dare un senso di distanza ai suoni.
+Nell'esercitazione precedente è stata aggiunta la spazializzazione per i suoni per dare loro un senso di direzione in questa esercitazione si aggiungerà un effetto riverbero per dare ai suoni un senso di distanza.
 
 ## <a name="objectives"></a>Obiettivi
 
-* Migliorare la distanza percepita delle origini audio aggiungendo Reverb.
-* Controllare la distanza percepita del suono usando la distanza del listener con l'ologramma.
+* Migliorare la distanza percepita delle origini sonore aggiungendo il riverbero.
+* Controllare la distanza percepita del suono usando la distanza dell'ascoltatore dall'ologramma.
 
 ## <a name="add-a-mixer-group-and-a-reverb-effect"></a>Aggiungere un gruppo di mixer e un effetto di riverbero
 
-Nell' [esercitazione sull'interazione con il pulsante Spatializing](unity-spatial-audio-ch2.md)è stato aggiunto un mixer. Il mixer include un **gruppo** per impostazione predefinita denominato **Master**. Poiché si vuole applicare un effetto di riverbero solo ad alcuni suoni, aggiungere un secondo gruppo per i suoni. Per aggiungere un gruppo, fare clic con il pulsante destro del mouse sul gruppo master nel **mixer audio** scegliere **Aggiungi gruppo figlio** e assegnare un nome appropriato per l' _effetto spazio_ di esempio:
+In [Spatializing button interaction sounds Tutorial (Esercitazione)](unity-spatial-audio-ch2.md)è stato aggiunto un mixer. Il mixer include un **gruppo per** impostazione predefinita denominato **Master.** Poiché si vuole applicare solo un effetto riverbero ad alcuni suoni, si aggiungerà un secondo gruppo per tali suoni. Per aggiungere un gruppo, fare clic con il  pulsante destro del mouse sul gruppo Master nel **mixer audio** e scegliere Aggiungi gruppo figlio e assegnare un nome appropriato, ad esempio _Effetto stanza:_
 
-![Aggiungi gruppo figlio](images/spatial-audio/spatial-audio-05-section1-step1-1.png)
+![Aggiungere un gruppo figlio](images/spatial-audio/spatial-audio-05-section1-step1-1.PNG)
 
-Ogni **gruppo** ha un proprio set di effetti. Aggiungere un effetto del riverbero al nuovo gruppo facendo clic su **Aggiungi...** nel nuovo gruppo e scegliendo il **riverbero SFX**:
+Ogni **gruppo** ha un proprio set di effetti. Aggiungere un effetto di riverbero al nuovo gruppo facendo clic su **Aggiungi...** nel nuovo gruppo e scegliendo **SFX Reverb**:
 
-![Aggiungi Riverb SFX](images/spatial-audio/spatial-audio-05-section1-step1-2.png)
+![Aggiungere il riverbero SFX](images/spatial-audio/spatial-audio-05-section1-step1-2.PNG)
 
-Nella terminologia audio, l'audio originale, non riverberato, viene chiamato _percorso asciutto_ e l'audio dopo l'applicazione di filtri con il filtro del riverbero viene chiamato _percorso bagnato_. Entrambi i percorsi vengono inviati all'output audio e i relativi punti di forza relativi in questa combinazione sono detti _mix bagnato/secco_. La combinazione Wet/Dry influiscono fortemente sul senso della distanza.
+Nella terminologia audio, l'audio originale non riverberato viene chiamato percorso arido e l'audio dopo il filtro con il filtro riverbero viene chiamato _percorso umido._  Entrambi i percorsi vengono inviati all'output audio e i relativi punti di forza in questa combinazione sono denominati _combinazione umida/asciutta._ La combinazione umida/asciutta influisce fortemente sul senso della distanza.
 
-Il **riverbero SFX** include i controlli per regolare la combinazione di Wet/Dry nell'effetto. Poiché il plug-in **Microsoft Spatializer** gestisce il percorso asciutto, verrà usato il **riverbero SFX** solo per il percorso bagnato. Nel riquadro Inspector del **riverbero SFX**:
+Il **riverbero SFX include** controlli per regolare la combinazione umida/asciutta all'interno dell'effetto. Poiché il **plug-in Microsoft Spatializer** gestisce il percorso secco, si usa **il riverbero SFX** solo per il percorso umido. Nel riquadro Inspector (Controllo) del **riverbero SFX**:
 
-* Impostare la proprietà **livello secco** sull'impostazione più bassa (-10000 MB)
-* Imposta la **Proprietà room** sull'impostazione massima (0 MB)
+* Impostare la **proprietà Dry Level** sull'impostazione più bassa (-10000 mB)
+* Impostare la **proprietà Room** sull'impostazione più alta (0 mB)
 
-![Proprietà del riverbero SFX](images/spatial-audio/spatial-audio-05-section1-step1-3.png)
+![Proprietà del riverbero SFX](images/spatial-audio/spatial-audio-05-section1-step1-3.PNG)
 
-Le altre impostazioni controllano l'aspetto della stanza simulata. In particolare, il **tempo di decadimento** è correlato alla dimensione della stanza percepita.
+Le altre impostazioni controllano l'aspetto della stanza simulata. In particolare, **il tempo di decadimento** è correlato alle dimensioni percepite della stanza.
 
-## <a name="enable-reverb-on-the-video-playback"></a>Abilitare il riverbero per la riproduzione video
+## <a name="enable-reverb-on-the-video-playback"></a>Abilitare il riverbero nella riproduzione video
 
-Per abilitare il riverbero in un'origine audio sono necessari due passaggi:
+Esistono due passaggi per abilitare il riverbero in un'origine audio:
 
-* Indirizzare l' **origine audio** al **gruppo** appropriato
-* Impostare il plug-in **Microsoft Spatializer** per passare l'audio al **gruppo** per l'elaborazione
+* Instradare **l'origine** audio al gruppo **appropriato**
+* Impostare il **plug-in Microsoft Spatializer** per passare l'audio al **gruppo per** l'elaborazione
 
-Nei passaggi seguenti si modificherà lo script per controllare il routing audio e si collegherà uno script di controllo fornito con il plug-in **Microsoft Spatializer** per inserire i dati nel Reverbo.
+Nei passaggi seguenti si regola lo script per controllare il routing audio e si allega uno script di controllo fornito con il plug-in **Microsoft Spatializer** per alimentare i dati nel riverbero.
 
-Con il **Quad** selezionato nella gerarchia fare clic su **Aggiungi componente** nella finestra di controllo e aggiungere il **livello di invio dell'effetto spazio (script)**:
+Con il **quad selezionato** nella gerarchia fare clic su **Aggiungi componente** nella finestra Inspector (Controllo) e aggiungere Room Effect Send Level (Script) (Livello di invio **dell'effetto stanza(Script)**:
 
-![Aggiungi script del livello di trasmissione](images/spatial-audio/spatial-audio-05-section2-step1-1.png)
+![Aggiungere uno script a livello di invio](images/spatial-audio/spatial-audio-05-section2-step1-1.PNG)
 
 > [!NOTE]
-> A meno che non si abiliti la funzionalità di **trasmissione dell'effetto spazio** del plug-in **Microsoft Spatializer** , non viene inviato alcun audio al motore audio Unity per l'elaborazione degli effetti.
+> A meno che non **si abiliti** la funzionalità Livello di invio effetto stanza del plug-in **Microsoft Spatializer,** non invia audio al motore audio Unity per l'elaborazione degli effetti.
 
-Il componente del **livello di invio dell'effetto chat** include un controllo grafico che imposta il livello dell'audio inviato al motore audio di Unity per l'elaborazione dei verbi. Per aprire il controllo grafico, fare clic sul **livello di invio dell'effetto chat room**.  Fare clic e trascinare la curva verde verso il basso per impostare il livello su about-30dB:
+Il **componente Livello di invio effetto** stanza include un controllo grafico che imposta il livello dell'audio inviato al motore audio Unity per l'elaborazione del riverbero. Per aprire il controllo grafico, fare clic su **Livello di invio effetto stanza**.  Fare clic e trascinare la curva verde verso il basso per impostare il livello su circa -30dB:
 
-![Modificare la curva del riverbero](images/spatial-audio/spatial-audio-05-section2-step1-2.png)
+![Regolare la curva di riverbero](images/spatial-audio/spatial-audio-05-section2-step1-2.PNG)
 
-Rimuovere quindi il commento dalle 4 righe commentate nello script **SpatializeOnOff** . Lo script sarà ora simile al seguente:
+Rimuovere quindi il commento delle 4 righe commentate nello script **SpatializeOnOff.** Lo script avrà ora un aspetto simile al seguente:
 
 ```c#
 using System.Collections;
@@ -122,18 +122,18 @@ public class SpatializeOnOff : MonoBehaviour
 }
 ```
 
-Una volta che queste righe sono state annullate, vengono aggiunte due proprietà al controllo dello **script SpatializeOnOff**. assegnare questi elementi nella finestra di controllo del componente **SpatializeOnOff** del **Quad**.
+Dopo aver decommentato queste righe, vengono aggiunte due proprietà al controllo dello **script SpatializeOnOff.** assegnarli nella finestra Inspector del **componente SpatializeOnOff** del **quad**.
 
-Con l'oggetto Quad ancora selezionato nella gerarchia, nella finestra di controllo individuare il componente **script SpatializeOnOff** e:
+Con l'oggetto Quad ancora selezionato nella gerarchia , nella finestra Inspector individuare il **componente SpatializeOnOff Script** e :
 
-* Impostare la proprietà **gruppo effetti Room** sul nuovo gruppo di mixer effetti della stanza
-* Impostare la proprietà **gruppo Master** sul gruppo di mixer Master
+* Impostare la **proprietà Gruppo effetti stanza** sul nuovo gruppo di mixer effetto stanza
+* Impostare la **proprietà Gruppo master** sul gruppo mixer master
 
-![Spatialize su off esteso](images/spatial-audio/spatial-audio-05-section2-step1-3.png)
+![Spatialize On Off Extended](images/spatial-audio/spatial-audio-05-section2-step1-3.PNG)
 
 ## <a name="congratulations"></a>Lezione completata
 
-Sono state completate le esercitazioni audio spaziali HoloLens 2 per Unity. Provare l'app in un HoloLens 2 o Unity. Quando si fa clic sul pulsante nell'app per attivare la spazializzazione, lo script instrada l'audio del video al gruppo di effetti della stanza per aggiungere Reverb. Quando si passa a stereo, l'audio viene indirizzato al gruppo Master ed è possibile evitare di aggiungere Reverb.
+Sono stati completati i HoloLens 2 di audio spaziale per Unity. Provare l'app in un HoloLens 2 o Unity. Quando si fa clic sul pulsante nell'app per attivare la spazializzazione, lo script instraderà l'audio del video al gruppo di effetti della stanza per aggiungere il riverbero. Quando si passa allo stereo, instraderà l'audio al gruppo Master ed eviterà di aggiungere riverbero.
 
 > [!TIP]
 > Per rivedere la procedura di compilazione e distribuzione di un progetto Unity in HoloLens 2, fare riferimento alle istruzioni riportate in [Compilazione dell'app nel dispositivo HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2).

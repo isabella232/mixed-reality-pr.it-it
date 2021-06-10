@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, funzionalità multiutente, Photon, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 58ea52332485a3e0ca460322f6af60266b119ede
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 976593fd2f107d456da4f04da19621dd253f2ae1
+ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590193"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111772424"
 ---
 # <a name="3-connecting-multiple-users"></a>3. Connessione di più utenti
 
@@ -63,13 +63,13 @@ Nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi
 
 Nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **Photon View (Script)** (Visualizzazione Photon - Script) all'oggetto PhotonUser e configura l'oggetto nel modo seguente:
 
-* Verificare che il campo **componenti osservati** sia assegnato con il componente **generico di sincronizzazione rete (script)**
+* Assicurarsi che il **campo Componenti osservati** sia assegnato con il **componente Generic Net Sync (Script)**
 
 ![Unity con il componente Photon View aggiunto e configurato](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
 
 ### <a name="2-create-the-avatar"></a>2. Creare l'avatar
 
-Nella finestra del progetto passare alla cartella **packages**  >  **mixed reality Toolkit Foundation**  >  **SDK**  >  **StandardAssets**  >  **Materials** per individuare i materiali MRTK.
+Nella finestra Progetto passare alla cartella **Packages** Mixed Reality Toolkit Standard  >  **Assets** Materials per  >   individuare i materiali MRTK.
 
 Nella finestra Hierarchy (Gerarchia) fare quindi clic con il pulsante destro del mouse sull'oggetto **PhotonUser** e selezionare **3D Object** > **Sphere** (Oggetto 3D > Sfera) per creare un oggetto sfera come elemento figlio dell'oggetto PhotonUser e configuralo nel modo seguente:
 

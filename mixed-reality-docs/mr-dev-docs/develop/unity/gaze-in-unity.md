@@ -1,29 +1,29 @@
 ---
 title: Sguardo fisso in Unity
-description: Informazioni su come usare l'input di sguardi come un modo principale per consentire agli utenti di individuare gli ologrammi creati dall'app in realtà mista.
+description: Informazioni su come usare l'input dello sguardo fisso come modo principale per gli utenti di usare come destinazione gli ologrammi creati dall'app nella realtà mista.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: occhi, sguardi, Unity, ologramma, realtà mista, cuffie per realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: 98eb4445d04b236dea74917d9c51108b66d6df3b
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: sguardo fisso, sguardo fisso, unity, ologramma, realtà mista, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: f10079d36f737e5d8a2ee74a88ca0f8b2b3d791c
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300366"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600150"
 ---
-# <a name="head-gaze-in-unity"></a>Sguardo da capo in Unity
+# <a name="head-gaze-in-unity"></a>Sguardo fisso con la testa in Unity
 
-Lo [sguardo](../../design/gaze-and-commit.md) è il modo principale per consentire agli utenti di individuare gli [ologrammi](../../discover/hologram.md) creati dall'app in [realtà mista](../../discover/mixed-reality.md).
+[Lo](../../design/gaze-and-commit.md) sguardo fisso è il modo principale per gli utenti di impostare come destinazione [gli ologrammi](../../discover/hologram.md) creati dall'app in [Realtà mista.](../../discover/mixed-reality.md)
 
-## <a name="implementing-head-gaze"></a>Implementazione dell'Head-sguardi
+## <a name="implementing-head-gaze"></a>Implementazione dello sguardo fisso con la testa
 
-A livello concettuale, è possibile determinare lo [sguardo a capo](../../design/gaze-and-commit.md) proiettando un raggio dall'auricolare dell'utente per verificarne il risultato. In Unity, la posizione e la direzione della testa dell'utente vengono esposte tramite la [fotocamera](camera-in-unity.md), in particolare [UnityEngine. camera. Main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [Transform. inoltr](https://docs.unity3d.com/ScriptReference/Transform-forward.html) e [UnityEngine. camera. Main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [Transform. Position](https://docs.unity3d.com/ScriptReference/Transform-position.html).
+Concettualmente, è possibile [determinare lo sguardo](../../design/gaze-and-commit.md) con la testa proiettando un raggio in avanti dal visore VR dell'utente per vedere cosa raggiunge. In Unity la posizione e la direzione della testa dell'utente vengono esposte tramite [la fotocamera,](camera-in-unity.md)in particolare [UnityEngine.Camera.main.](https://docs.unity3d.com/ScriptReference/Camera-main.html) [transform.forward](https://docs.unity3d.com/ScriptReference/Transform-forward.html) e [UnityEngine.Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [transform.position](https://docs.unity3d.com/ScriptReference/Transform-position.html).
 
-La chiamata a [Physics. RayCast](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) fornisce un [RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) che contiene informazioni sulla collisione, tra cui il punto di collisione 3D e l'altro GameObject il raggio d'occhio.
+La [chiamata a Physics.RayCast](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) offre un [RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) contenente informazioni sulla collisione, tra cui il punto di collisione 3D e l'altro GameObject in cui è stato raggiunto il raggio dello sguardo con la testa.
 
-### <a name="example-implement-head-gaze"></a>Esempio: implementare l'Head-sguardi
+### <a name="example-implement-head-gaze"></a>Esempio: Implementare lo sguardo fisso con la testa
 
 ```cs
 void Update()
@@ -45,19 +45,19 @@ void Update()
 
 ### <a name="best-practices"></a>Procedure consigliate
 
-Mentre l'esempio precedente genera una singola Raycast dal ciclo di aggiornamento per trovare la destinazione a cui punta l'utente, si consiglia di usare un singolo oggetto per gestire tutti i processi con lo sguardo a capo. Combinando la logica di puntamento, la potenza di elaborazione dell'app viene salvata e il Raycasting viene limitato a uno per fotogramma.
+Anche se l'esempio precedente genera un singolo raycast dal ciclo di aggiornamento per trovare la destinazione in cui punta la testa dell'utente, è consigliabile usare un singolo oggetto per gestire tutti i processi di puntamenti con la testa. La combinazione della logica del sguardo fisso con la testa consente di risparmiare potenza di elaborazione di valore per l'app e limitare il raycasting a uno per fotogramma.
 
-## <a name="visualizing-head-gaze"></a>Visualizzazione dell'Head-sguardi
+## <a name="visualizing-head-gaze"></a>Visualizzazione dello sguardo fisso con la testa
 
-Analogamente a quanto avviene con un puntatore del mouse su un computer, è necessario implementare un [cursore](../../design/cursors.md) che rappresenti l'Head-sguardi dell'utente. Conoscere il contenuto di destinazione di un utente aumenta la fiducia nell'interazione con.
+Proprio come con un puntatore del mouse in un computer, è necessario implementare un [cursore](../../design/cursors.md) che rappresenta lo sguardo con la testa dell'utente. Conoscere il contenuto di destinazione di un utente aumenta la fiducia nel contenuto con cui sta per interagire.
 
-## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Head-sguardi nel Toolkit per la realtà mista
+## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Sguardo fisso con la testa in Mixed Reality Toolkit
 
-È possibile accedere a Head-sguardi da [Gestione input](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview) in MRTK.
+È possibile accedere al controllo con la testa da [Input Manager](/windows/mixed-reality/mrtk-unity/features/input/overview) in MRTK.
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di sviluppo di Unity, si sta per esplorare i blocchi predefiniti di MRTK core. Da qui è possibile passare al blocco predefinito successivo:
+Se si sta seguendo il percorso di sviluppo di Unity che è stato strutturato, si stanno esplorando i blocchi predefiniti principali di MRTK. Da qui è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Controller del movimento](motion-controllers-in-unity.md)

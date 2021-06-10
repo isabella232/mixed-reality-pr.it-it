@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: grafica, cpu, gpu, rendering, garbage collection, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 2ff766c3fb2c9f8a91c3c8cc81bb21adae9956e8
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 7d672af0c9309e4dd2965cc3cb315671a720a58a
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300156"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743429"
 ---
 # <a name="performance-recommendations-for-unity"></a>Consigli sulle prestazioni per Unity
 
@@ -309,7 +309,7 @@ Perciò, la riduzione del numero di operazioni nello shader di frammento può in
 
 #### <a name="unity-standard-shader-alternatives"></a>Alternative agli shader standard di Unity
 
-Invece di usare un rendering fisico (PBR, Physically Based Rendering) o un altro shader di alta qualità, cerca di usare uno shader più efficiente e più economico. [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) offre lo [shader standard MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) che è stato ottimizzato per i progetti di realtà mista.
+Invece di usare un rendering fisico (PBR, Physically Based Rendering) o un altro shader di alta qualità, cerca di usare uno shader più efficiente e più economico. [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) offre lo [shader standard MRTK](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) che è stato ottimizzato per i progetti di realtà mista.
 
 Unity offre anche shader senza illuminazione, con illuminazione dei vertici, diffusi e altre opzioni di shader semplificate che sono molto più veloci rispetto allo shader standard di Unity. Per informazioni più dettagliate, vedi [Usage and Performance of Built-in Shaders](https://docs.unity3d.com/Manual/shader-Performance.html) (Utilizzo e prestazioni degli shader incorporati).
 

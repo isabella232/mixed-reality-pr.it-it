@@ -1,37 +1,37 @@
 ---
-ms.openlocfilehash: d9b8bc79859ab74c799188326731b3c8722bc49a
-ms.sourcegitcommit: b9d0155ae0d37a9f55f2cf0bcd954a2b148a26e0
+ms.openlocfilehash: 3f65fa90279e9a10c1aad9bd46f02233808936b8
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98181738"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647010"
 ---
 ![Colibrì virtuale con mano umana](mixed-reality-docs/mr-dev-docs/discover/images/01_MixedReality.png)
 
-Benvenuti nella documentazione della realtà mista, il posto di tutti gli aspetti di Microsoft, VR e AR presso Microsoft!
+Benvenuti nella documentazione di Realtà mista, il posto ideale per mr, VR e AR di Microsoft.
 
 ## <a name="contributing"></a>Contributo
 
-Se stai contribuendo o aggiornando il contenuto di docs, fai in modo che le tue richieste pull siano destinate al sottoscrittore corretto (Mr-dev-docs, entusiasta-guide e così via). I nuovi collaboratori dovrebbero consultare le linee guida per i contributi più dettagliati per ogni sottodocs:
+Se si stanno apportando contributi o si aggiorna il contenuto della documentazione, assicurarsi che le richieste pull siano relative al sotto docset corretto (mr-dev-docs, guide per appassionati e così via). I nuovi collaboratori devono consultare le linee guida per i contributi più dettagliate per ogni sottodocset:
 
-* [Collaboratori in realtà mista](mixed-reality-docs/mr-dev-docs/CONTRIBUTING.md)
-* [Collaboratori della guida entusiasta di VR](mixed-reality-docs/enthusiast-guide/CONTRIBUTING.md)
+* [Collaboratori di Realtà mista](mixed-reality-docs/mr-dev-docs/CONTRIBUTING.md)
+* [Collaboratori della Guida per gli appassionati di realtà virtuale](enthusiast-guide/CONTRIBUTING.md)
 
-Per i problemi correlati a docs, usare i piè di pagina nella parte inferiore di ogni documento oppure inviare direttamente a [MicrosoftDocs/mixed-Real/issues](https://github.com/MicrosoftDocs/mixed-reality/issues).
+Per i problemi relativi alla documentazione, usare i piè di pagina nella parte inferiore di ogni documento o inviarli direttamente a [MicrosoftDocs/mixed-reality/issues.](https://github.com/MicrosoftDocs/mixed-reality/issues)
 
-È possibile inviare eventuali domande sui criteri di contributo o sui processi a Harrison Ferrone o Sean Kerawala tramite team o posta elettronica. 
+È possibile inviare qualsiasi domanda sui criteri o i processi per i contributi a DlpNe o Sean Kerawala tramite Teams o posta elettronica. 
 
-## <a name="getting-started"></a>Introduzione 
+## <a name="getting-started"></a>Guida introduttiva 
 
-Ogni percorso attraverso la documentazione ha un percorso curato che consente di trovare il proprio piede. Che tu sia la progettazione, lo sviluppo o la distribuzione delle tue app in tutto il mondo, ti offriamo la tua copertura. 
+Ogni percorso attraverso la documentazione ha un percorso curato che consente di trovare il proprio punto di accesso. Indipendentemente dal fatto che si tratta di progettazione, sviluppo o distribuzione delle app in tutto il mondo, l'utente è in grado di farlo. 
 
 ### <a name="mixed-reality-for-hololens"></a>Realtà mista per HoloLens
 
-Si consiglia di iniziare con le **nozioni di base della realtà mista** e di procedere da qui:
+È consigliabile iniziare con le **nozioni di base sulla** realtà mista e passare da qui:
 
 * [Introduzione alla realtà mista](mixed-reality-docs/mr-dev-docs/discover/get-started-with-mr.md)
 
-Se si è interessati al lato della **progettazione** :
+Se si è interessati al lato **della progettazione:**
 
 * [Iniziare a progettare e creare prototipi](mixed-reality-docs/mr-dev-docs/design/design.md)
 
@@ -43,19 +43,19 @@ Per il contenuto specifico del motore, scegliere uno dei percorsi seguenti:
 
 * [Panoramica dello sviluppo per Unity](mixed-reality-docs/mr-dev-docs/develop/unity/unity-development-overview.md)
 * [Panoramica dello sviluppo con Unreal](mixed-reality-docs/mr-dev-docs/develop/unreal/unreal-development-overview.md)
-* [Panoramica sullo sviluppo nativo (OpenXR)](mixed-reality-docs/mr-dev-docs/develop/native/directx-development-overview.md)
+* [Panoramica dello sviluppo nativo (OpenXR)](mixed-reality-docs/mr-dev-docs/develop/native/directx-development-overview.md)
 
-Quando si è pronti per ottenere l'app per gli utenti:
+Quando si è pronti a far uscire l'app agli utenti:
 
 * [Distribuzione delle app](mixed-reality-docs/mr-dev-docs/distribute/distribute-overview.md)
 
 ### <a name="vr-enthusiast-guide"></a>Guida per appassionati di VR
 
-Se non si ha familiarità con i dispositivi VR, è consigliabile iniziare con la guida per principianti:
+Se non si ha esperienza con i dispositivi VR, è consigliabile iniziare con la guida per principianti:
 
 * [Iniziare il percorso VR](enthusiast-guide/vr-journey.md)
 
-## <a name="contributor-license-agreement-cla"></a>Contratto di licenza con collaboratore (CLA)
+## <a name="contributor-license-agreement-cla"></a>Contratto di licenza per i collaboratori
 
 In questo progetto sono benvenuti i contributi e i suggerimenti. Per la maggior parte dei contenuti è necessario sottoscrivere un contratto di licenza di collaborazione (CLA, Contributor License Agreement) che stabilisce che l'utente ha il diritto di concedere, e di fatto concede a Microsoft i diritti d'uso del suo contributo. Per informazioni dettagliate, vedere [https://cla.opensource.microsoft.com](https://cla.opensource.microsoft.com).
 

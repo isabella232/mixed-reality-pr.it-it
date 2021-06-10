@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, comandi vocali, input vocale
 ms.localizationpriority: high
-ms.openlocfilehash: 3aea23d5a259e555f47ca9ea41d77f345c977aeb
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 9422c16781af33fa3d68d7f6046e3a86c4b36b44
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982939"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403372"
 ---
 # <a name="9-using-speech-commands"></a>9. Uso dei comandi vocali
 
@@ -23,7 +23,14 @@ In questa esercitazione verrà spiegato come creare comandi vocali e come contro
 * Imparare a creare comandi vocali
 * Imparare a controllare i comandi vocali a livello globale e locale
 
-[!INCLUDE[](includes/ensuring-microphone-capabality.md)]
+## <a name="ensuring-the-microphone-capability-is-enabled"></a>Verificare che la funzionalità Microfono sia abilitata
+
+Nel menu Unity selezionare Mixed Reality > Toolkit > Utilities > **Configure Project for MRTK** per aprire la finestra **MRTK Project Configurator**  e quindi nella sezione **Funzionalità UWP** verificare che Abilita funzionalità microfono sia disattivata:
+
+![Abilitare la funzionalità microfono](images/mr-learning-base/base-09-section1-step1-1.png)
+
+> [!NOTE]
+> La funzionalità Microfono dovrebbe essere stata abilitata durante la procedura illustrata in [Applicare le impostazioni di MRTK Project Configurator (Configuratore del progetto MRTK)](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) quando è stato configurato il progetto Unity all'inizio di questa serie di esercitazioni. Se, tuttavia, non è abilitata, assicurarsi di farlo ora.
 
 ## <a name="creating-speech-commands"></a>Creazione di comandi vocali
 
@@ -42,8 +49,8 @@ Nella sezione **Speech Commands** (Comandi vocali) fare clic sul pulsante **+ Ad
 
 * Abilita indicatore
 * Abilita tocco per posizionare
-* Abilita controllo limiti
-* Disabilitare il controllo dei limiti
+* Abilitare il controllo Bounds
+* Disabilitare il controllo Bounds
 
 ![Aggiunta di nuovi comandi vocali](images/mr-learning-base/base-09-section2-step1-2.png)
 
@@ -52,7 +59,7 @@ Nella sezione **Speech Commands** (Comandi vocali) fare clic sul pulsante **+ Ad
 
 ## <a name="controlling-speech-commands"></a>Controllo dei comandi vocali
 
-Nella finestra del progetto passare alla cartella **Package**  >  **mixed reality Toolkit Foundation**  >  **SDK**  >  **features**  >    >    >   per individuare le prefabbricate ToolTip:
+Nella finestra Progetto passare alla cartella **Package**  >  **Mixed Reality Toolkit Foundation**  >  **SDK**  >  **Features**  >  **UX**  >  **Prefabs ToolTip** per individuare i  >   prefab della descrizione comando:
 
 ![Apertura della cartella delle descrizioni comando](images/mr-learning-base/base-09-section3-step1-1.png)
 
@@ -81,10 +88,10 @@ Espandere **Element 0** e configurarlo come segue:
 
 Espandere **Element 1** e configurarlo come segue:
 
-* Nel campo della **parola chiave** immettere **Enable Bounds Control** per fare riferimento al comando Enable Bounds Control creato nella sezione precedente.
+* Nel campo **Parola** chiave immettere **Abilita controllo limiti** per fare riferimento al comando Abilita controllo limiti creato nella sezione precedente
 * Fare clic sulla piccola icona **+** per aggiungere un evento
 * Nella finestra Hierarchy (Gerarchia) assegnare l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)
-* Nell'elenco a discesa **Nessuna funzione** selezionare **BoundsControl**  >  **bool Enabled** per aggiornare il valore della proprietà quando viene attivato l'evento
+* **Nell'elenco a discesa Nessuna** funzione selezionare **BoundsControl**  >  **bool enabled** per aggiornare il valore della proprietà quando viene attivato l'evento
 * Assicurarsi che la casella di controllo dell'argomento sia **selezionata**
 * Fai clic sulla piccola icona **+** per aggiungere un altro evento
 * Nella finestra Hierarchy (Gerarchia) assegnare l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)
@@ -95,10 +102,10 @@ Espandere **Element 1** e configurarlo come segue:
 
 Espandere **Element 2** e configurarlo come segue:
 
-* Nel campo **parola chiave** immettere **Disable Bounds Control** per fare riferimento al comando Disable Bounds Control creato nella sezione precedente.
+* Nel campo **Parola** chiave immettere **Disabilita controllo** limiti per fare riferimento al comando Disabilita controllo limiti creato nella sezione precedente
 * Fare clic sulla piccola icona **+** per aggiungere un evento
 * Nella finestra Hierarchy (Gerarchia) assegnare l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)
-* Nell'elenco a discesa **Nessuna funzione** selezionare **BoundsControl**  >  **bool Enabled** per aggiornare il valore della proprietà quando viene attivato l'evento
+* **Nell'elenco a discesa Nessuna** funzione selezionare **BoundsControl**  >  **bool enabled** per aggiornare il valore della proprietà quando viene attivato l'evento
 * Verificare che la casella di controllo dell'argomento sia **deselezionata**
 * Fai clic sulla piccola icona **+** per aggiungere un altro evento
 * Nella finestra Hierarchy (Gerarchia) assegnare l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)
@@ -137,6 +144,6 @@ Nelle prossime due serie di esercitazioni, [Esercitazioni su Ancoraggi nello spa
 Se si sta seguendo il percorso di checkpoint per lo sviluppo con Unity che abbiamo delineato, il passaggio successivo consiste nell'acquisire familiarità con i blocchi predefiniti fondamentali delle app di realtà mista.
 
 > [!div class="nextstepaction"]
-> [Interazioni di base](../../../out-of-scope/mrtk-101.md)
+> [Interazioni di base](/windows/mixed-reality/mrtk-unity/)
 
 È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](../unity-development-overview.md#1-getting-started) in qualsiasi momento.

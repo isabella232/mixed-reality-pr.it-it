@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, riconoscimento vocale, Windows 10, LUIS, portale LUIS, finalità, entità, espressioni, comprensione del linguaggio naturale
 ms.localizationpriority: high
-ms.openlocfilehash: 49e2b44000add22e924d9552f60b63ac1ac30288
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ab9c1db7ca90a59e4ef688a8faa3d294e433cff6
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590363"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403462"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4. Configurazione della comprensione delle finalità e del linguaggio naturale
 
@@ -27,18 +27,18 @@ In questa esercitazione esplorerai il riconoscimento delle finalità del servizi
 
 Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **Lunarcom**, quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **Lunarcom Intent Recognizer (Script)** (Riconoscimento finalità Lunarcom - Script) all'oggetto Lunarcom:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section1-step1-1.png)
+![mrlearning-speech 1](images/mrlearning-speech/tutorial4-section1-step1-1.png)
 
 Nella finestra Project (Progetto) passa alla cartella **Assets (Asset)**  > **MRTK.Tutorials.GettingStarted** > **Prefabs (Prefab)**  > **RocketLauncher**, trascina il prefab **RocketLauncher_Complete** nella finestra Hierarchy (Gerarchia) e quindi posizionalo in un punto appropriato davanti alla fotocamera, ad esempio:
 
 * Trasforma la **posizione** X = 0, Y = -0.4, Z = 1
 * Trasforma la **rotazione** X = 0, Y = 90, Z = 0
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section1-step1-2.png)
+![mrlearning-speech 2](images/mrlearning-speech/tutorial4-section1-step1-2.png)
 
 Nella finestra Hierarchy (Gerarchia) seleziona di nuovo l'oggetto **Lunarcom**, quindi espandi l'oggetto **RocketLauncher_Complete** > **Button** e assegna ognuno degli oggetti figlio dell'oggetto **Buttons** al campo **Lunar Launcher Buttons** (Pulsanti lancio lunare) corrispondente:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section1-step1-3.png)
+![mrlearning-speech 3](images/mrlearning-speech/tutorial4-section1-step1-3.png)
 
 ## <a name="creating-the-azure-language-understanding-resource"></a>Creazione della risorsa Azure Language Understanding
 
@@ -46,18 +46,18 @@ In questa sezione creerai una risorsa di stima di Azure per l'app LUIS (Language
 
 Accedi ad <a href="https://portal.azure.com" target="_blank">Azure</a> e fai clic su **Crea una risorsa**. Cerca quindi e seleziona **Language Understanding**:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-1.png)
+![mrlearning-speech 4](images/mrlearning-speech/tutorial4-section2-step1-1.png)
 
 Fai clic sul pulsante **Create** (Crea) per creare un'istanza del servizio:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-2.png)
+![mrlearning-speech 5](images/mrlearning-speech/tutorial4-section2-step1-2.png)
 
 Nella pagina Create (Crea) fai clic sull'opzione **Prediction** (Stima) e immetti i valori seguenti:
 
 * In **Subscription** (Sottoscrizione) seleziona **Free Trail** (Prova gratuita) se disponi di una sottoscrizione di prova gratuita, altrimenti seleziona una delle altre sottoscrizioni
-* Per il **gruppo di risorse**, fare clic sul collegamento **Crea nuovo** , immettere un nome appropriato, ad esempio *MRKT-esercitazioni*, quindi fare clic su **OK** .
+* Per il **gruppo di risorse** fare clic sul collegamento Crea nuovo, immettere un nome appropriato, ad esempio *MRKT-Tutorials,* e quindi fare clic su **OK** 
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-3.png)
+![mrlearning-speech 6](images/mrlearning-speech/tutorial4-section2-step1-3.png)
 
 > [!NOTE]
 > Al momento della stesura di questo articolo, non è necessario creare una risorsa di creazione perché quando viene creata l'app LUIS (Language Understanding Intelligent Service) nella sezione successiva viene generata automaticamente una chiave di prova per la creazione in LUIS.
@@ -71,18 +71,18 @@ Sempre nella pagina Create (Crea) immetti i valori seguenti:
 * In **Prediction location** (Posizione di stima) scegli una posizione vicina alla posizione fisica degli utenti dell'app, ad esempio *(US) West US* (Stati Uniti occidentali)
 * Ai fini di questa esercitazione, in **Prediction pricing tier** (Piano tariffario di stima) seleziona **F0 (5 Calls per second, 10K Calls per month)** (F0 - 5 chiamate al secondo, 10.000 chiamate al mese)
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-4.png)
+![mrlearning-speech 7](images/mrlearning-speech/tutorial4-section2-step1-4.png)
 
-Fare quindi clic su **Verifica + crea** , esaminare i dettagli, quindi fare clic sul pulsante **Crea** , che si trova nella parte inferiore della pagina, per creare la risorsa e il nuovo gruppo di risorse se ne è stato configurato uno per la creazione:
+Fare quindi  clic sulla scheda Rivedi e crea,  esaminare i dettagli e quindi fare clic sul pulsante Crea nella parte inferiore della pagina per creare la risorsa, nonché il nuovo gruppo di risorse, se ne è stato configurato uno da creare:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-5.png)
+![mrlearning-speech 8](images/mrlearning-speech/tutorial4-section2-step1-5.png)
 
 > [!NOTE]
 > Dopo aver fatto clic sul pulsante Create (Crea), dovrai attendere alcuni minuti per la creazione del servizio.
 
 Al termine del processo di creazione delle risorse, visualizzerai il messaggio **Your deployment is complete** (Distribuzione completata):
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-6.png)
+![mrlearning-speech 9](images/mrlearning-speech/tutorial4-section2-step1-6.png)
 
 ## <a name="creating-the-language-understanding-intelligent-service-luis"></a>Creazione di un'app LUIS (Language Understanding Intelligent Service)
 
@@ -109,37 +109,37 @@ Con lo stesso account utente usato durante la creazione della risorsa di Azure n
 > [!NOTE]
 > Se hai già effettuato l'iscrizione a LUIS e la chiave di prova per la creazione è scaduta, puoi fare riferimento alla documentazione [Eseguire la migrazione a una chiave di creazione delle risorse di Azure](/azure/cognitive-services/luis/luis-migration-authoring) per passare ad Azure per la risorsa di creazione LUIS.
 
-Dopo aver eseguito l'accesso, fare clic su **nuova app** e immettere i valori seguenti nella finestra popup **Crea nuova app** :
+Dopo aver eseguito l'accesso, fare clic su **Nuova app** e immettere i valori seguenti nella finestra popup Crea **nuova app:**
 
 * In **Name** (Nome) immetti un nome appropriato, ad esempio *MRTK Tutorials - AzureSpeechServices*
 * In **Culture** (Impostazioni cultura) seleziona **English** (Inglese)
 * In **Description** (Descrizione) immetti facoltativamente una descrizione appropriata
-* Per **risorsa di stima** selezionare l'elenco a discesa risorsa di stima in base a cui è stato creato il portale di Azure.
+* Per **Risorsa stima** selezionare l'elenco a discesa della risorsa di stima per che è stato creato nel portale di Azure.
 
 Fai quindi clic sul pulsante **Done** (Fine) per creare la nuova app:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step1-1.png)
+![mrlearning-speech 10](images/mrlearning-speech/tutorial4-section3-step1-1.png)
 
 Al termine della creazione della nuova app, visualizzerai la pagina **Dashboard** dell'app:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step1-2.png)
+![mrlearning-speech 11](images/mrlearning-speech/tutorial4-section3-step1-2.png)
 
 ### <a name="2-create-intents"></a>2. Creare finalità
 
-Dalla pagina Dashboard passare alla pagina Compila > app assets > **Intents** , quindi fare clic su **Crea** e immettere il valore seguente nella finestra popup **Crea nuovo preventivo** :
+Dalla pagina Dashboard passare alla pagina Build > App Assets > **Intents** (Finalità dell'app build > app), quindi fare clic su **Create** (Crea) e immettere il valore seguente nella finestra popup **Create new intent** (Crea nuova finalità):
 
 * In **Intent name** (Nome finalità) immetti **PressButton**
 
 Fai quindi clic sul pulsante **Done** (Fine) per creare la nuova finalità:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step2-1.png)
+![mrlearning-speech 12](images/mrlearning-speech/tutorial4-section3-step2-1.png)
 
 > [!CAUTION]
 > Ai fini di questa esercitazione, il progetto Unity farà riferimento a questa finalità in base al nome, ad esempio 'PressButton'. Di conseguenza, è estremamente importante assegnare alla finalità esattamente lo stesso nome.
 
 Al termine della creazione della nuova finalità, visualizzerai la pagina corrispondente:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step2-2.png)
+![mrlearning-speech 14](images/mrlearning-speech/tutorial4-section3-step2-2.png)
 
 ### <a name="3-create-example-utterances"></a>3. Creare espressioni di esempio
 
@@ -158,25 +158,25 @@ Aggiungi le espressioni di esempio seguenti all'elenco **Example utterance** (Es
 
 Dopo aver aggiunto tutte le espressioni di esempio, la pagina della finalità PressButton dovrebbe essere simile alla seguente:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step3-1.png)
+![mrlearning-speech 15](images/mrlearning-speech/tutorial4-section3-step3-1.png)
 
 > [!CAUTION]
 > Ai fini di questa esercitazione, il progetto Unity farà riferimento alle parole 'hint' (suggerimento), 'hints' (suggerimenti), 'reset' (reimpostazione) e 'launch' (lancia). Di conseguenza, è estremamente importante che le parole vengano scritte esattamente nello stesso modo.
 
 ### <a name="4-create-entities"></a>4. Creare entità
 
-Dalla pagina PressButton Intent, passare alla pagina Build > app assets > **Entities** , quindi fare clic su **Crea** e immettere i valori seguenti nella finestra popup **Crea nuova entità** :
+Dalla pagina finalità PressButton passare alla pagina Build > App Assets > Entities (Crea asset app > **Entities),** quindi fare clic su **Create** (Crea) e immettere i valori seguenti nella finestra popup **Create new entity** (Crea nuova entità):
 
 * In **Entity name** (Nome entità) immetti **Action** (Azione)
-* Per **tipo di entità** selezionare **computer learned**
+* Per **Tipo di entità** selezionare Machine **learned**
 
-Fare quindi clic sul pulsante **Crea** per creare la nuova entità:
+Fare quindi clic **sul pulsante** Crea per creare la nuova entità:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step4-1.png)
+![mrlearning-speech 16](images/mrlearning-speech/tutorial4-section3-step4-1.png)
 
 **Ripeti** il passaggio precedente per creare un'altra entità denominata **Target**, in modo da avere due entità denominate Action (Azione) e Target:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step4-2.png)
+![mrlearning-speech 17](images/mrlearning-speech/tutorial4-section3-step4-2.png)
 
 > [!CAUTION]
 > Ai fini di questa esercitazione, il progetto Unity farà riferimento a queste entità in base al nome, ad esempio 'Action' (Azione) e 'Target'. Di conseguenza, è estremamente importante assegnare alle entità esattamente lo stesso nome.
@@ -187,22 +187,22 @@ Dalla pagina Entities (Entità) torna alla pagina della finalità **PressButton*
 
 Dopo essere tornato alla pagina della finalità PressButton, fai clic sulla parola **go** (vai) e quindi sulla parola **ahead** (avanti) e infine scegli **Action (Simple)** (Azione - Semplice) dal menu popup contestuale per etichettare **go ahead** (vai avanti) come valore dell'entità **Action** (Azione):
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-1.png)
+![mrlearning-speech 18](images/mrlearning-speech/tutorial4-section3-step5-1.png)
 
-La frase **go ahead** (vai avanti) è ora definita come valore dell'entità **Action** (Azione). A questo punto è possibile notare il valore dell'entità Action sotto la parola Go Ahead:
+La frase **go ahead** (vai avanti) è ora definita come valore dell'entità **Action** (Azione). È ora possibile notare il valore dell'entità azione sotto la parola andare avanti:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-2.png)
+![mrlearning-speech 19](images/mrlearning-speech/tutorial4-section3-step5-2.png)
 
 > [!NOTE]
 > La linea rossa visualizzata sotto l'etichetta nell'immagine precedente indica che il valore dell'entità non è stato stimato. Questa operazione verrà risolta quando esegui il training del modello nella sezione successiva.
 
 Fai quindi clic sulla parola **launch** (lancia) e infine scegli **Target (Simple)** (Target - Semplice) dal menu popup contestuale per etichettare **launch** (lancia) come valore dell'entità **Target**:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-3.png)
+![mrlearning-speech 20](images/mrlearning-speech/tutorial4-section3-step5-3.png)
 
-La parola di **avvio** è ora definita come valore di entità di **destinazione** . A questo punto è possibile notare il valore dell'entità di destinazione sotto la parola Launch:
+La **parola** di avvio è ora definita come valore **dell'entità** Target. È ora possibile notare il valore dell'entità Target sotto la parola launch :
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-4.png)
+![mrlearning-speech 21](images/mrlearning-speech/tutorial4-section3-step5-4.png)
 
 L'espressione di esempio della finalità PressButton 'go ahead and launch the rocket' (vai avanti e lancia il missile) è ora configurata per essere stimata come indicato di seguito:
 
@@ -219,20 +219,20 @@ L'espressione di esempio della finalità PressButton 'go ahead and launch the ro
 
 Dopo aver etichettato tutte le espressioni di esempio, la pagina della finalità PressButton dovrebbe essere simile alla seguente:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-5.png)
+![mrlearning-speech 22](images/mrlearning-speech/tutorial4-section3-step5-5.png)
 
 ### <a name="6-train-test-and-publish-the-app"></a>6. Eseguire il training, il test e la pubblicazione dell'app
 
 Per eseguire il training dell'app, fai clic sul pulsante **Train** (Esegui training) e attendi il completamento del processo di training:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-1.png)
+![mrlearning-speech 23](images/mrlearning-speech/tutorial4-section3-step6-1.png)
 
 > [!NOTE]
 > Come puoi vedere nell'immagine precedente, le linee rosse sotto tutte le etichette sono state rimosse, a indicare che tutti i valori delle entità sono stati stimati. Osserva inoltre che l'icona di stato a sinistra del pulsante Train (Esegui training) ha cambiato colore da rosso a verde.
 
 Al termine dell'elaborazione del training, fai clic sul pulsante **Test**, quindi digita **go ahead and launch the rocket** (vai avanti e lancia il missile) e premi INVIO:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-2.png)
+![mrlearning-speech 24](images/mrlearning-speech/tutorial4-section3-step6-2.png)
 
 Dopo l'elaborazione dell'espressione di test, fai clic su **Inspect** (Ispeziona) per visualizzare il risultato del test:
 
@@ -240,41 +240,41 @@ Dopo l'elaborazione dell'espressione di test, fai clic su **Inspect** (Ispeziona
 * Entità Action (Azione): go ahead (vai avanti)
 * Entità Target: launch (lancia)
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-3.png)
+![mrlearning-speech 25](images/mrlearning-speech/tutorial4-section3-step6-3.png)
 
-Per pubblicare l'app, fare clic sul pulsante **pubblica** in alto a destra, quindi nella finestra popup **scegliere lo slot di pubblicazione e le impostazioni** Selezionare **produzione** e fare clic sul pulsante **fine** :
+Per pubblicare l'app, fare clic sul pulsante Pubblica in alto a destra, quindi nella finestra popup Scegliere lo **slot** di pubblicazione e le impostazioni selezionare Produzione e fare clic **sul pulsante** Fine:  
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-4.png)
+![mrlearning-speech 26](images/mrlearning-speech/tutorial4-section3-step6-4.png)
 
 Attendi il completamento del processo di pubblicazione:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-5.png)
+![mrlearning-speech 27](images/mrlearning-speech/tutorial4-section3-step6-5.png)
 
-Passare alla pagina Gestisci impostazioni applicazione > > **risorse di Azure** . la pagina risorse di Azure dovrebbe essere simile alla seguente:
+Passare alla pagina Gestisci > applicazione > risorse di **Azure.** La pagina Risorse di Azure dovrebbe essere simile alla seguente:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-6.png)
+![mrlearning-speech 28](images/mrlearning-speech/tutorial4-section3-step6-6.png)
 
 ## <a name="connecting-the-unity-project-to-the-luis-app"></a>Connessione del progetto Unity all'app LUIS
 
 Nella pagina Manage (Gestisci) > Application Settings (Impostazioni applicazione) **Azure Resources** (Risorse di Azure) fai clic sull'icona di **copia** per copiare il contenuto di **Example Query** (Query di esempio):
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section4-step1-1.png)
+![mrlearning-speech 29](images/mrlearning-speech/tutorial4-section4-step1-1.png)
 
 Tornato nel progetto Unity, nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **Lunarcom**, quindi nella finestra Inspector (Controllo) individua il componente **Lunarcom Intent Recognizer (Script)** (Riconoscimento finalità Lunarcom - Script) e configuralo come indicato di seguito:
 
 * Nel campo **LUIS Endpoint** (Endpoint LUIS) incolla il contenuto di **Example Query** (Query di esempio) copiato nel passaggio precedente:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section4-step1-2.png)
+![mrlearning-speech 30](images/mrlearning-speech/tutorial4-section4-step1-2.png)
 
 ## <a name="testing-and-improving-the-intent-recognition"></a>Test e miglioramento del riconoscimento delle finalità
 
 Per usare il riconoscimento delle finalità direttamente nell'editor di Unity, devi consentire al computer di sviluppo di usare la dettatura. Per verificare questa impostazione, apri **Impostazioni** di Windows, quindi scegli **Privacy** > **Comandi vocali** e assicurati che sia attivato **Riconoscimento vocale online**:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section5-step1-1.png)
+![mrlearning-speech 31](images/mrlearning-speech/tutorial4-section5-step1-1.png)
 
 Se ora attivi la modalità di gioco, puoi testare il riconoscimento delle finalità selezionando prima il pulsante relativo al missile. Supponendo quindi che il computer disponga di un microfono, quando pronunci la prima espressione di esempio, **go ahead and launch the rocket** (vai avanti e lancia il missile) potrai osservare il lancio del modulo lunare LunarModule nello spazio:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section5-step1-2.png)
+![mrlearning-speech 32](images/mrlearning-speech/tutorial4-section5-step1-2.png)
 
 Prova tutte le **espressioni di esempio**, quindi alcune **varianti delle espressioni di esempio**, nonché alcune **espressioni casuali**.
 
@@ -286,7 +286,7 @@ Torna quindi a <a href="https://www.luis.ai" target="_blank">LUIS</a> e passa al
 
 Dopo aver esaminato tutte le espressioni desiderate, fai clic sul pulsante **Train** (Esegui training) per ripetere il training del modello e quindi sul pulsante **Publish** (Pubblica) per ripubblicare l'app aggiornata:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section5-step1-3.png)
+![mrlearning-speech 33](images/mrlearning-speech/tutorial4-section5-step1-3.png)
 
 > [!NOTE]
 > Se un'espressione dell'endpoint non è allineata alla finalità PressButton, ma vuoi indicare al modello che l'espressione non ha finalità, puoi modificare Aligned intent (Finalità allineata) impostando None (Nessuna).

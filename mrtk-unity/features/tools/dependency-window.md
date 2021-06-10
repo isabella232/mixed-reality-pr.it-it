@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 22ecbb09ebf759e15f1f21085a7b7696cb24bc6e
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: fd17db3f365d8bd97b8cd9c43a6111e2b82a61fe
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144446"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647028"
 ---
 # <a name="dependency-window"></a>Finestra Dipendenze
 
@@ -20,7 +20,7 @@ Nella finestra Dipendenza viene visualizzato il modo in cui gli asset fanno rife
 
 ## <a name="usage"></a>Utilizzo
 
-Per aprire la finestra, seleziona *Mixed Reality Toolkit->Utilities->Dependency Window* (Finestra dipendenze di Mixed Reality Toolkit->Utilities->), che aprirà la finestra e inizierà automaticamente a compilare il grafico delle dipendenze del progetto. Dopo aver compilato il grafico delle dipendenze, è possibile selezionare gli asset nella scheda del progetto per esaminarne le dipendenze.
+Per aprire la finestra, selezionare Mixed Reality Toolkit Utilities Dependency Window (Finestra dipendenza utilità **Mixed Reality** Toolkit) che aprirà la finestra e inizierà automaticamente a compilare il grafico delle  >    >    >   dipendenze del progetto. Dopo aver compilato il grafico delle dipendenze, è possibile selezionare gli asset nella scheda del progetto per esaminarne le dipendenze.
 
 ![Finestra Dipendenze](../images/dependency-window/MRTK_Dependency_Window.png)
 

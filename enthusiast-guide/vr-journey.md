@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, Realtà mista, Realtà virtuale, REALTÀ VIRTUALE, MR,
-ms.openlocfilehash: c238ec41c75e565cc3eb2bb8bcb9b68eff015f59
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: 88aab47a943fd004ef0a90a8c6749da1a403ff2f
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944652"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600510"
 ---
 # <a name="start-your-vr-journey"></a>Iniziare il percorso di realtà virtuale
 
@@ -40,35 +40,35 @@ Il PC deve gestire l'hardware VR acquistato per ottenere la migliore esperienza 
 
 ### <a name="2-getting-started"></a>2. Introduzione
 
-Dopo aver creato il dispositivo, sarà necessario configurarlo e configurarlo correttamente per l'uso. Alla fine di questa sezione saranno installati tutti i requisiti software e sarà possibile iniziare a usare Windows Mixed Reality.
+Dopo aver creato il dispositivo, è necessario configurarlo correttamente per l'uso. Al termine di questa sezione saranno installati tutti i requisiti software e sarà possibile iniziare a usare Windows Mixed Reality.
 
 <br>
 
 |  Checkpoint  |  Risultato  |
 | --- | --- |
-| [Configurare Windows Mixed Reality](set-up-windows-mixed-reality.md) | Sii a tuo agio con i controller, i limiti della stanza, l'input vocale e Microsoft Edge nel nuovo dispositivo VR |
+| [Configurare Windows Mixed Reality](set-up-windows-mixed-reality.md) | Ottieni familiarità con controller, limiti della stanza, input vocale e Microsoft Edge dispositivo VR |
 | [Windows Mixed Reality domande frequenti sulla configurazione](wmr-setup-faq.yml) | Ottenere risposte e assistenza per la risoluzione dei problemi noti durante la configurazione Windows Mixed Reality |
-| [Linee guida per la salute, la sicurezza e il comfort](wmr-health-safety-comfort.md) | Raccomandazioni per rimanere al sicuro durante l'Windows Mixed Reality prima di usare il visore  |
+| [Linee guida per la salute, la sicurezza e il comfort](wmr-health-safety-comfort.md) | Raccomandazioni per rimanere al sicuro durante l'Windows Mixed Reality prima di usare il visore VR  |
 
 ### <a name="3-using-windows-mixed-reality"></a>3. Uso di Windows Mixed Reality
 
-Sono disponibili diverse funzionalità e servizi tramite visori VR Windows Mixed Reality vr immersiva. Alla fine di questa sezione, si sarà a proprio agio:
+Sono disponibili funzionalità e servizi diversi tramite visori VR Windows Mixed Reality e immersive. Al termine di questa sezione, si sarà a proprio agio:
 
 * Esplorazione dell'ambiente domestico virtuale
-* Uso di controller e voce come input
+* Uso di controller e riconoscimento vocale come input
 * Integrazione di servizi e applicazioni come SteamVR e WebVR.
 
 <br>
 
-|  Checkpoint  |  Caratteristica  |
+|  Checkpoint  |  Funzionalità  |
 | --- | --- |
-| [Esercitazione per la realtà mista](learn-mixed-reality.md) | Informazioni su come usare lo sguardo, la voce, i controller e gli input da tastiera/mouse |
-| [Passare alla Windows Mixed Reality iniziale](your-mixed-reality-home.md) | Esplorare l'ambiente virtuale della Windows Mixed Reality home  |
-| [Uso dei controller](controllers-in-wmr.md) | Configurare, comprendere e usare i controller di movimento |
-| [Uso dell'input vocale](using-speech-in-wmr.md) | Acquisire familiarità con i diversi comandi vocali che possono interagire con oggetti 3D, la barra dell'app, menu Start e Cortana |
+| [Esercitazione per la realtà mista](learn-mixed-reality.md) | Informazioni su come usare lo sguardo fisso, la voce, i controller e gli input da tastiera/mouse |
+| [Passare alla home Windows Mixed Reality home page](your-mixed-reality-home.md) | Esplorare l'ambiente virtuale della Windows Mixed Reality home  |
+| [Uso dei controller](controllers-in-wmr.md) | Configurare, comprendere e usare i controller del movimento |
+| [Uso dell'input vocale](using-speech-in-wmr.md) | Acquisire familiarità con diversi comandi vocali che possono interagire con oggetti 3D, la barra dell'app, menu Start e Cortana |
 
 > [!NOTE]
-> Se si verificano problemi con una delle funzionalità precedenti, vedere le domande frequenti **[sull'Windows Mixed Reality utilizzo.](using-wmr-faq.yml)**
+> Se si verificano problemi con una delle funzionalità precedenti, vedere Le domande frequenti **[sull'uso Windows Mixed Reality funzionalità](using-wmr-faq.yml)**.
 
 ## <a name="4-discover-apps-and-content"></a>4. Individuare app e contenuto
 
@@ -76,13 +76,13 @@ Nelle risorse seguenti sono disponibili giochi immersive, applicazioni desktop e
 
 <br>
 
-|  Checkpoint  |  Caratteristica  |
+|  Checkpoint  |  Funzionalità  |
 | --- | --- |
 | [Giochi, video 360 e app](using-games-and-apps-in-windows-mixed-reality.md) | Inizia a usare il primo gioco immersive, gli slate 2D dello store, le applicazioni desktop e le esperienze WebVR |
 | [Uso di SteamVR](using-steamvr-with-windows-mixed-reality.md) | Connetti il tuo dispositivo e riproduci i giochi di SteamVR e scopri le Programma Windows Insider |
 | [Uso di Microsoft Edge](using-microsoft-edge.md) | Installare la versione più recente di Microsoft Edge nel dispositivo immersive |
 | [Uso di WebVR](webvr.md) | Configurazione per l'esperienza di realtà virtuale nell'ambiente del browser |
-| [Esplorare AltspaceVR](https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey) | Esplorare il mondo in espansione degli eventi di realtà virtuale con AltspaceVR |
+| [Esplorare AltspaceVR](/windows/mixed-reality/altspace-vr/journey) | Esplorare il mondo in espansione degli eventi di realtà virtuale con AltspaceVR |
 
 ## <a name="troubleshooting-tips--resources"></a>Risoluzione dei problemi, suggerimenti & risorse
 

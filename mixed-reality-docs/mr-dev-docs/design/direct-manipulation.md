@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realtà mista, Sguardo fisso, selezione della destinazione con lo sguardo, interazione, progettazione, a portata di mano, HoloLens, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, MRTK, Mixed Reality Toolkit, pulsante, collisori, cubo di delimitazione, 2D, movimenti istintivi
-ms.openlocfilehash: f5b332b49b9c7f93b66a621675748ede51d08e60
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+ms.openlocfilehash: 7a689f887bfd358b0d6e0826d41ef409bf887042
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196656"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600470"
 ---
 # <a name="direct-manipulation-with-hands"></a>Manipolazione diretta con le mani
 
@@ -51,13 +51,13 @@ La manipolazione diretta è un modello di input principale in HoloLens 2 che usa
 
 ---
 
-## <a name="basic-hand-tracking-and-instinctual-interactions-demo"></a>Demo di base del rilevamento delle mani e delle interazioni istintiva
+## <a name="basic-hand-tracking-and-instinctual-interactions-demo"></a>Demo di base sul tracciamento delle mani e sulle interazioni istintivi
 
-Se si desidera vedere i concetti di progettazione di Head e Eye Tracking in azione, vedere la demo video Designing Holograms - Head Tracking and Eye Tracking (Progettazione di **ologrammi - Tracciamento** testina e tracciamento oculare) riportata di seguito. Al termine, continuare per un'analisi più dettagliata di argomenti specifici.
+Per vedere i concetti di progettazione della testa e del tracciamento oculare in azione, vedere la demo di video Progettazione di **ologrammi - Tracciamento** testa e tracciamento oculare di seguito. Al termine, continuare per un approfondimento più dettagliato su argomenti specifici.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
 
-*Questo video è stato tratto dall'app "Designing Holograms" (Progettazione di ologrammi) HoloLens 2 app. Scaricare e usufruire dell'esperienza completa [qui.](https://aka.ms/dhapp)*
+*Questo video è stato tratto dall'app "Progettazione di ologrammi" HoloLens 2 app. Scaricare e usufruire dell'esperienza completa [qui.](https://aka.ms/dhapp)*
 
 ## <a name="collidable-fingertip"></a>Punta del dito di collisione
 
@@ -335,7 +335,7 @@ Se l'utente non ha guardato un ologramma per un periodo di tempo ma è stato ril
 ## <a name="manipulation-in-mrtk-mixed-reality-toolkit-for-unity"></a>Manipolazione in MRTK (Mixed Reality Toolkit) per Unity
 Con **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** è possibile ottenere facilmente un comportamento di manipolazione comune usando lo script **ObjectManipulator**. ObjectManipulator consente di afferrare e spostare gli oggetti direttamente con le mani o con il raggio della mano. Supporta anche la manipolazione a due mani per il ridimensionamento e la rotazione di un oggetto.
 
-* [MRTK - Manipolazione](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-manipulator)
+* [MRTK - Manipolazione](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-manipulator)
 
 ---
 

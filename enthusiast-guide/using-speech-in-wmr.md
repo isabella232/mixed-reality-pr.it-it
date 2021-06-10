@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Realtà mista, Realtà virtuale, VR, MR, Feedback, Hub di Feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 0254b7c4ac6a9602517adb3d9e5c024ebd69db4e
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: 23e3ea9014612d5df8935552d7b767454b9eefa7
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944678"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647023"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Uso del riconoscimento vocale in Windows Mixed Reality
 
@@ -38,17 +38,17 @@ Usare i comandi vocali seguenti in Windows Mixed Reality per spostarsi più velo
 
 | Per | Pronunciare questo |
 | --- | --- |
-| Select | Pronunciare "select" per visualizzare il cursore sguardo fisso. Quindi, ruotare la testa per posizionare il cursore sull'oggetto che si vuole selezionare e pronunciare di nuovo "select". |
+| Seleziona | Pronunciare "select" per visualizzare il cursore dello sguardo. Quindi, ruotare la testa per posizionare il cursore sull'oggetto da selezionare e pronunciare di nuovo "seleziona". |
 | Aprire il menu Start | Vai a Start |
-| Uscire da un'app immersiva | Pronunciare "Vai a Start" per visualizzare il menu delle azioni rapide e quindi pronunciare "Mixed reality home". |
-| Attivare/disattivare Torcia | Pronunciare "Vai a Start" per visualizzare il menu delle azioni rapide e quindi pronunciare "Mixed reality home". |
-| Teletrasporto | Ruotare la testa verso il punto in cui si vuole andare e quindi pronunciare "teletrasporto". Per una destinazione più precisa, pronunciare prima di tutto "select" per visualizzare il cursore dello sguardo fisso e quindi "teletrasporto". |
-| Ruotare a sinistra o a destra | Ruota a sinistra/a destra |
+| Lasciare un'app immersiva | Pronunciare "Vai a Start" per visualizzare il menu delle azioni rapide e quindi "Home della realtà mista". |
+| Attivare/disattivare torcia | Torcia spenta/torcia spenta |
+| Teletrasporto | Ruotare la testa verso il luogo in cui si vuole andare e quindi pronunciare "teletrasporto". Per una destinazione più precisa, prima di tutto pronunciare "select" per visualizzare il cursore dello sguardo fisso e quindi dire "teletrasporto". |
+| Svoltare a sinistra o a destra | Svolta a sinistra/a destra |
 | Ruotare di 180 gradi | Girati |
-| Sposta avanti | Andare avanti/procedere |
-| Eseguire il backup | Torna indietro/torna indietro |
-| Sposta a sinistra | Sposta a sinistra/passa a sinistra |
-| Sposta a destra | Spostarsi a destra/a destra |
+| Andare avanti | Andare avanti/andare avanti |
+| Eseguire il backup | Tornare indietro/tornare indietro |
+| Spostarsi a sinistra | Spostarsi a sinistra/a sinistra |
+| Spostarsi a destra | Spostarsi a destra/a destra |
 
 ## <a name="3d-object-commands"></a>Comandi per oggetti 3D
 
@@ -56,9 +56,9 @@ Osservare un oggetto 3D, un ologramma o una finestra dell'app per usare questi c
 
 | Per | Pronunciare questo |
 | --- | --- |
-| Aumenta le dimensioni | Grande |
+| Ingrandirla | Grande |
 | Renderlo più piccolo | Piccoli |
-| Ruotarlo per affrontare l'utente | Guardami |
+| Ruotarlo per viso | Guardami |
 | Prepararsi per lo spostamento: seguirà lo sguardo | Sposta |
 | Posizionarlo al termine dell'operazione di spostamento | Posizione |
 
@@ -72,10 +72,10 @@ Osservare una finestra dell'app o un oggetto 3D per usare questi comandi:
 | Modificare un elemento (ridimensionamento o spostamento) | Regolare |
 | Interrompi regolazione | Fine |
 | Nascondere la barra dell'app in un oggetto 3D | Nascondi menu |
-| Visualizzare la barra dell'app in un oggetto 3D | Mostra menu |
+| Visualizzare la barra dell'app su un oggetto 3D | Mostra menu |
 | Tornare alla schermata o alla pagina precedente in un'app con un pulsante Torna indietro  | Indietro |
-| Usa il controller Xbox come game pad, anziché come controller di realtà mista, nell'app che stai esaminando | Usa come game pad |
-| Usa il controller Xbox come controller di realtà mista (quando lo usi come game pad) | Usa con sguardo fisso |
+| Usare il controller Xbox come gamepad, anziché come controller di realtà mista, nell'app che si sta esaminando | Usa come game pad |
+| Usare il controller Xbox come controller di realtà mista (quando è stato utilizzato come gamepad) | Usa con sguardo fisso |
 
 ## <a name="start-menu-commands"></a>menu Start comandi
 
@@ -84,11 +84,11 @@ Osservare l'menu Start per usare questi comandi:
 | Per | Pronunciare questo |
 | --- | --- |
 | Passare all'elenco Tutte le app | Tutte le app |
-| Spostarsi verso l'alto o verso il basso nel menu Start o in Tutte le app | Pagina su/giù |
-| Tornare alla menu Start tutte le app | Indietro |
+| Spostarsi verso l'alto o verso il basso in Start o Tutte le app | Pagina su/giù |
+| Tornare alla menu Start da Tutte le app | Indietro |
 | Scatta una foto | Fotocamera |
-| Eseguire un video | Video |
-| Visualizzare il visore VR Portale realtà mista sul desktop | Anteprima |
+| Creare un video | Video |
+| Visualizzare la visualizzazione visore Portale realtà mista sul desktop | Anteprima |
 | Aprire il controllo del volume all'avvio | Cambiare il volume |
 | Disattiva audio | Disattiva audio |
 | Unmute | Unmute |
@@ -103,9 +103,9 @@ Pronunciare "Hey Cortana", quindi usare uno dei comandi seguenti:
 | Scoprire cosa si può dire a Cortana | What can I say? |
 | Aumentare/ridurre il volume | Attivare/disattivare il volume |
 | Disattivare/riattivare l'audio | Disattivare/riattivare l'audio |
-| Avviare un'app | Avviare [nome app] |
-| Aprire un sito Web in Microsoft Edge | Aprire [nome sito Web] (ad esempio, "open bing.com") |
-| Scatta una foto | Creare un'immagine |
+| Avviare un'app | Avvio [nome app] |
+| Aprire un sito Web in Microsoft Edge | Aprire [nome del sito Web] (ad esempio, "open bing.com") |
+| Scatta una foto | Immagine |
 | Avviare la registrazione di un video | Avvia registrazione |
 | Interrompere la registrazione di un video | Arrestare registrazione |
 | Visualizzare l'ora | Che ora è? |
@@ -114,16 +114,16 @@ Pronunciare "Hey Cortana", quindi usare uno dei comandi seguenti:
 | Impostare un promemoria | Impostare un promemoria |
 
 > [!NOTE]
-> * Cortana non è disponibile in tutte le aree e le lingue. [Altre informazioni](https://support.microsoft.com/help/4026948)
+> * Cortana non è disponibile in tutte le aree e lingue. [Altre informazioni](https://support.microsoft.com/help/4026948)
 > * Se Cortana non risponde a "Hey Cortana", selezionare Impostazioni > **Privacy > Voce** e attivare il riconoscimento vocale online.
 > * Se si disattiva Cortana, i comandi vocali "Hey Cortana" non saranno disponibili, ma sarà comunque possibile usare altri comandi,ad esempio "select" e "teleport"
 
 ## <a name="keyboard-dictation"></a>Dettatura da tastiera
 
-Passare alla modalità dettatura ogni volta che la tastiera è attiva per un modo semplice di digitare. Selezionare il microfono sulla tastiera o semplicemente pronunciare "avvia dettatura" per iniziare.
+Passare alla modalità dettatura ogni volta che la tastiera è attiva per un modo semplice di digitare. Selezionare il microfono sulla tastiera o semplicemente pronunciare "inizia a dettare" per iniziare.
 
 > [!NOTE]
-> La tastiera di realtà mista è disponibile solo in inglese, ma è possibile usare la dettatura in una qualsiasi delle lingue [Windows Mixed Reality supportate.](other-questions.md#what-languages-are-supported-in-windows-mixed-reality)
+> La tastiera di realtà mista è disponibile solo in inglese, ma è possibile usare la dettatura in una delle lingue [Windows Mixed Reality supportate.](other-questions.md#what-languages-are-supported-in-windows-mixed-reality)
 
 ### <a name="keyboard-dictation-commands"></a>Comandi di dettatura da tastiera
 
@@ -148,11 +148,11 @@ Ecco le parole chiave di punteggiatura che è possibile usare:
 * Hashtag, smiley/smiley face, frowny, winky
 * Dollaro, percentuale
 
-A volte è utile scrivere parole come gli indirizzi di posta elettronica. Ad esempio, per example@outlook.com dettare , si direbbe "E X A M P L E at outlook dot-com".
+In alcuni casi è utile formulare alcune informazioni, ad esempio gli indirizzi di posta elettronica. Ad esempio, per indicare example@outlook.com , si pronuncia "E X A M P L E at outlook dot-com".
 
 Per interrompere la dettatura, selezionare **Fine.**
 
 ## <a name="see-also"></a>Vedi anche
 
 * [Contattare la community](https://answers.microsoft.com)
-* [Per assistenza, contattare Microsoft](https://support.microsoft.com/contactus/)
+* [Contattaci per assistenza](https://support.microsoft.com/contactus/)

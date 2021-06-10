@@ -3,16 +3,16 @@ title: Esempi e app di funzionalità
 description: Aggiornamenti costanti su tutti gli esempi Microsoft disponibili e le app di funzionalità di realtà mista per HoloLens.
 author: hferrone
 ms.author: jemccull
-ms.date: 12/3/2020
+ms.date: 6/7/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, learn, esempi, MRTK, research mode, HoloLens 2, codici a matrice, WebRTC, acquisizione realtà mista, holographic remoting, UX Tools
 ms.localizationpriority: high
-ms.openlocfilehash: 78cfc726bdffdb461a83bd1e9805d8f0e64b0f01
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 5738c26366b3c1aafd86b20dc70a4d078fbffb1f
+ms.sourcegitcommit: 62e5909b837c9c7ecedd040164f2308868db4723
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98583189"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111741943"
 ---
 # <a name="samples-and-feature-apps"></a>Esempi e app di funzionalità
 
@@ -27,6 +27,17 @@ Ogni percorso di sviluppo ha inizio con un'indagine retrospettiva su ciò che è
 ## <a name="feature-samples"></a>Esempi di funzionalità
 
 Gli esempi di funzionalità elencati di seguito corrispondono a implementazioni specifiche illustrate nella documentazione Microsoft e riguardano una vasta gamma di piattaforme di sviluppo e dispositivi hardware.
+
+### <a name="openxr"></a>OpenXR
+
+Per gli sviluppatori che hanno come destinazione Unity 2020 la creazione di applicazioni HoloLens 2 o realtà mista, è possibile usare il plug-in OpenXR invece del plug-in WindowsXR per una migliore compatibilità multipiattaforma. Il plug-in OpenXR di realtà mista funziona bene anche con la versione più recente di Mixed Reality Toolkit 2.7.
+
+<br>
+
+| Articolo di riferimento | Esempio |
+| --- | --- |
+| [Uso del plug-in OpenXR](unity/openxr-getting-started.md) | [Esempi di Mixed Reality OpenXR con Unity](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) |
+| N/D | [Progetto Unity di base di OpenXR MRTK](https://github.com/microsoft/UnityOpenXRMRTKBase) |
 
 ### <a name="research-mode"></a>Research Mode
 
@@ -47,7 +58,17 @@ HoloLens 2 è in grado di rilevare i codici a matrice nell'ambiente attorno al v
 
 | Articolo di riferimento | Esempio |
 | --- | --- |
-| [Codici QR](platform-capabilities-and-apis/qr-code-tracking.md) | [Rilevamento di codici a matrice in Unity](https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes) |
+| [Codici QR](platform-capabilities-and-apis/qr-code-tracking.md) | [Rilevamento di codici a matrice in Unity](https://github.com/microsoft/MixedReality-QRCode-Sample) |
+
+### <a name="scene-understanding"></a>Informazioni sulle scene
+
+La comprensione della scena offre agli sviluppatori di realtà mista una rappresentazione strutturata di alto livello dell'ambiente progettata per rendere intuitivo lo sviluppo per applicazioni con consapevolezza ambientale. La comprensione della scena combina la potenza dei runtime di realtà mista esistenti, ad esempio il mapping spaziale estremamente accurato ma meno strutturato e i nuovi runtime di intelligenza artificiale.
+
+<br>
+
+| Articolo di riferimento | Esempio |
+| --- | --- |
+| [Informazioni sulle scene](../design/scene-understanding.md) | [Esempi di comprensione della scena di realtà mista](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples) |
 
 ### <a name="webrtc"></a>WebRTC
 

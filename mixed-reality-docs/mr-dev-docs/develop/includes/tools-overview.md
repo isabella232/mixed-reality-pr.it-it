@@ -1,41 +1,41 @@
 ---
-ms.openlocfilehash: d7e248788d4c4976acbb9ff23177d354894f57dd
-ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
+ms.openlocfilehash: 41d87aa3bbf65ddb743c17d9d1f86a41e8dae876
+ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105958274"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111772340"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
 ![Banner con logo di Unity](../images/unity_logo_banner.png)<br>
 
-### <a name="1-download-the-recommended-unity-version"></a>1. scaricare la versione consigliata di Unity 
+### <a name="1-download-the-recommended-unity-version"></a>1. Scaricare la versione di Unity consigliata 
 
-La versione consigliata corrente per lo sviluppo di realtà mista è **unity 2019,4 LTS (supporto a lungo termine)**. Il modo migliore per installare e gestire Unity è tramite l' **Hub Unity**. 
+La versione corrente consigliata per lo sviluppo di realtà mista **è Unity 2020.3 LTS (supporto a lungo termine).** Il modo migliore per installare e gestire Unity è tramite **Unity Hub.** 
 
 > [!NOTE]
->  Se si usa Unity 2020 LTS, è disponibile il supporto per la realtà mista per lo sviluppo HoloLens 2. Tuttavia, esistono attualmente alcuni problemi noti. Questa diventerà la versione di Unity consigliata più avanti nell'anno. 
+>  Se si usa Unity 2020 LTS, il supporto di Realtà mista è disponibile per HoloLens 2 sviluppo. Esistono tuttavia attualmente alcuni problemi noti. Questa diventerà la versione di Unity consigliata più avanti nel corso dell'anno. 
 
-Vedere [scelta di una versione Unity e di un plug](../unity/choosing-unity-version.md) -in XR per informazioni sul supporto di realtà mista disponibile in diverse versioni del motore di Unity e del plug-in
+Vedere [Scelta di una versione di Unity e plug-in XR](../unity/choosing-unity-version.md) per informazioni sul supporto di Realtà mista disponibile nelle diverse versioni del motore Unity e del plug-in XR.
 
 > [!div class="nextstepaction"]
-> [Scarica Hub Unity](https://unity3d.com/get-unity/download)
+> [Scaricare Unity Hub](https://unity3d.com/get-unity/download)
 
-Quando si installa Unity, assicurarsi di controllare i componenti seguenti in **"Platforms"**.
-* **Supporto di piattaforma UWP (Universal Windows Platform) Build** 
-* **Supporto per Windows Build (IL2CPP)**
+Quando si installa Unity, assicurarsi di controllare i componenti seguenti in **"Piattaforme".**
+* **piattaforma UWP (Universal Windows Platform) di compilazione** 
+* **Supporto per la compilazione di Windows (IL2CPP)**
 
-![Opzione di supporto per Unity piattaforma UWP (Universal Windows Platform) Build](../../develop/images/Unity_Install_Option_UWP.png)
+![Opzione supporto piattaforma UWP (Universal Windows Platform) compilazione di Unity](../../develop/images/Unity_Install_Option_UWP.png)
 
-Se Unity è stata installata senza queste opzioni, è possibile aggiungerle tramite il menu **' Aggiungi moduli '** nell'hub Unity.
+Se Unity è stato installato senza queste opzioni, è possibile aggiungerlo tramite il menu **"Aggiungi moduli"** in Unity Hub.
 
-![Opzione di supporto build di Windows Unity](../../develop/images/Unity_Install_Option_UWP2.png)
+![Opzione Unity Windows Build Support (Supporto per la compilazione di Windows in Unity)](../../develop/images/Unity_Install_Option_UWP2.png)
 
 
-### <a name="2-install-the-mixed-reality-feature-tool"></a>2. installare lo strumento per la funzionalità di realtà mista
+### <a name="2-install-the-mixed-reality-feature-tool"></a>2. Installare lo strumento di funzionalità di realtà mista
 
-Lo [strumento per la funzionalità di realtà mista](../unity/welcome-to-mr-feature-tool.md) è un nuovo modo per gli sviluppatori di individuare e aggiungere pacchetti di funzionalità di realtà mista in progetti Unity. 
+Lo [strumento di funzionalità di realtà mista](../unity/welcome-to-mr-feature-tool.md) è un nuovo modo per gli sviluppatori di individuare e aggiungere pacchetti di funzionalità di realtà mista nei progetti Unity. 
 
 È possibile cercare i pacchetti in base al nome o alla categoria, visualizzarne le dipendenze e persino visualizzare le modifiche proposte al file manifesto del progetto prima dell'importazione. Dopo aver convalidato i pacchetti desiderati, lo strumento per la funzionalità di realtà mista li scaricherà nel progetto di propria scelta.
 
@@ -45,15 +45,15 @@ Lo [strumento per la funzionalità di realtà mista](../unity/welcome-to-mr-feat
 
 [Mixed Reality Toolkit](../unity/mrtk-getting-started.md) (MRTK) è un kit di sviluppo multipiattaforma open source per applicazioni di realtà mista. 
 
-* Installare il pacchetto del Toolkit per la realtà mista seguendo le [istruzioni di installazione e utilizzo](../unity/welcome-to-mr-feature-tool.md#system-requirements) e selezionando il pacchetto di **mixed reality Toolkit Foundation** .
+* Installare il pacchetto Mixed Reality Toolkit seguendo le istruzioni di installazione [e utilizzo](../unity/welcome-to-mr-feature-tool.md#system-requirements) e selezionando il pacchetto Mixed Reality **Toolkit Foundation.**
 
-Si consiglia di completare la sezione introduttiva nei percorsi di sviluppo [HoloLens](../unity/unity-development-overview.md#1-getting-started) o [VR](../unity/unity-development-wmr-overview.md#1-getting-started) . Se si sta già seguendo il percorso di sviluppo con Unity per HoloLens, completare i rimanenti passaggi di configurazione elencati di seguito e proseguire con le [esercitazioni introduttive su HoloLens 2](../unity/tutorials/mr-learning-base-01.md).
+È consigliabile completare la sezione introduttiva nei percorsi di [sviluppo di HoloLens](../unity/unity-development-overview.md#1-getting-started) o [VR](../unity/unity-development-wmr-overview.md#1-getting-started) curati. Se si sta già seguendo il percorso di sviluppo con Unity per HoloLens, completare i rimanenti passaggi di configurazione elencati di seguito e proseguire con le [esercitazioni introduttive su HoloLens 2](../unity/tutorials/mr-learning-base-01.md).
 
 > [!IMPORTANT]
-> Si noti che le istruzioni di installazione sono destinate alla più recente combinazione stabile di versioni di MRTK e Unity, ovvero **MRTK 2.6.1** e **Unity 2019,4 LTS**.
+> Si noti che le istruzioni di installazione sono destinate alla combinazione stabile più recente di versioni di MRTK e Unity, ovvero **MRTK 2.7** e **Unity 2020.3 LTS.**
 
 > [!NOTE]
-> Se non si vuole usare MRTK per Unity, è necessario [creare script per tutte le interazioni e i comportamenti](../unity/configure-unity-project.md).
+> Se non si vuole usare MRTK per Unity, è necessario creare manualmente script per tutte le interazioni [e i comportamenti.](../unity/configure-unity-project.md)
 
 :::row:::
     :::column:::
@@ -168,7 +168,7 @@ Se si segue il percorso in Unity per VR, l'attività successiva consiste nel con
 
 È consigliabile installare [Unreal Engine versione 4.25](https://docs.unrealengine.com//GettingStarted/Installation/index.html) o versione successiva per sfruttare appieno il supporto di HoloLens incorporato.
 
-Passare alla scheda **libreria** dell'utilità di avvio Epic Games, selezionare la freccia a discesa accanto a **Avvia** e fare clic su **Opzioni**. In **Target Platforms** (Piattaforme di destinazione) seleziona **HoloLens 2** e fai clic su **Apply** (Applica).
+Passare alla scheda **Library (Libreria)** nell'utilità di avvio di Epic Games, selezionare la freccia a discesa accanto **a Launch (Avvia)** e fare clic su **Options (Opzioni).** In **Target Platforms** (Piattaforme di destinazione) seleziona **HoloLens 2** e fai clic su **Apply** (Applica).
 ![Opzione di installazione Unreal HoloLens 2](../../develop/images/Unreal_Install_Option_HoloLens2.png)
 
 ### <a name="2-import-mixed-reality-toolkit-mrtk"></a>2. Importare Mixed Reality Toolkit (MRTK)

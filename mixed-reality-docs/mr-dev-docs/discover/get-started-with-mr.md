@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realtà mista, individuare, distribuire, indice, pagina di destinazione, progettazione, sviluppo, esercitazioni, app di esempio, nozioni di base, case study, risorse, guide pratiche per HoloLens, progetti open source, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: b10cb385d28be68a539eedced269204b8a1ac4d3
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: e3c30429109de367993357701092154741ca571b
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101760213"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403382"
 ---
 # <a name="get-started-with-mixed-reality"></a>Informazioni di base sulla realtà mista
 
@@ -20,35 +20,12 @@ ms.locfileid: "101760213"
 
 L'ecosistema della realtà mista è un ambito in crescita costituito da interazioni fisiche e digitali, limitato solo dall'immaginazione. Per gli sviluppatori di qualsiasi livello, esperti o neofiti, è consigliabile cominciare il viaggio nella realtà mista con le risorse definite di seguito. Gli argomenti da affrontare sono molti ed è quindi opportuno iniziare subito. 
 
-## <a name="choose-your-track"></a>Scegli il percorso
-
-Se si ha già in mente l'area della realtà mista che si vuole esplorare, è possibile imboccare direttamente uno dei percorsi seguenti. Mantenere tuttavia questa pagina tra i segnalibri in modo da poter fare riferimento al contenuto concettuale di base in un secondo momento.
-
-:::row:::
-    :::column:::
-       [![Non ho familiarità con la realtà mista](images/Tile-New.jpg)](#understand-the-basics)<br>
-        **[Non ho familiarità con la realtà mista](#understand-the-basics)**<br>
-        Comprendere i concetti di base
-    :::column-end:::
-    :::column:::
-       [![Sono un progettista](images/Tile-Create.jpg)](../design/design.md)<br>
-        **[Sono un progettista](../design/design.md)**<br>
-        Iniziare a progettare e a creare prototipi
-    :::column-end:::
-    :::column:::
-       [![Sono uno sviluppatore](images/Tile-Develop.jpg)](../develop/development.md)<br>
-        **[Sono uno sviluppatore](../develop/development.md)**<br>
-        ottieni informazioni sugli strumenti e sull'architettura
-    :::column-end:::
-:::row-end:::
-
-<br>
-
----
-
 ## <a name="understand-the-basics"></a>Comprendere i concetti di base
 
-Se non si ha familiarità con la realtà mista, è importante iniziare dalle basi e procedere elaborando con i propri tempi i concetti di base, le esperienze e le funzionalità. È stata creata una specie di percorso sequenziale per aiutare a creare una solida base per la progettazione e lo sviluppo di idee personalizzate in realtà mista.
+Se non si ha familiarità con la realtà mista, è importante iniziare dalle basi e procedere elaborando con i propri tempi i concetti di base, le esperienze e le funzionalità. Sono disponibili due opzioni: è disponibile un modulo incentrato sul Microsoft Learn che ti permetterà di accelerare in tempi non lunghi oppure puoi esplorare il percorso a-la-carte che abbiamo configurato di seguito. Entrambi questi percorsi consentono di definire una solida base per la progettazione e lo sviluppo di idee in realtà mista.
+
+> [!div class="nextstepaction"]
+> [Introduzione al modulo Realtà mista](/learn/modules/intro-to-mixed-reality)
 
 ### <a name="what-is-mixed-reality"></a>Ce cos'è la realtà mista?
 
@@ -154,17 +131,17 @@ Se si è interessati a vedere come funzionano i diversi servizi e dispositivi ha
 | [Hardware HoloLens](https://www.microsoft.com//hololens/hardware) | HoloLens 2 offre l'esperienza di realtà mista più comoda e immersiva possibile, con soluzioni leader del settore in grado di offrire valore velocemente, il tutto potenziato dall'affidabilità, dalla sicurezza e dalla scalabilità del cloud e dei servizi di intelligenza artificiale di Microsoft |
 | [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | È possibile esplorare una vasta gamma di prodotti, tra cui [Remote Assist](/dynamics365/mixed-reality/remote-assist/ra-overview), Layout e [Guides](/dynamics365/mixed-reality/guides/), che possono potenziare le capacità dei dipendenti e ottimizzare le operazioni con Dynamics 365. Una vera comprensione si acquisisce con la pratica su attività, dispositivi e utenti reali |
 | [Servizi cloud di Azure](../develop/mixed-reality-cloud-services.md) | È possibile creare esperienze immersive accattivanti su diverse piattaforme con consapevolezza spaziale, ancoraggi nello spazio e rendering di modelli 3D complessi |
-| [Microsoft mesh](/mesh/overview) | Il mesh consente agli utenti di connettersi con presenza, condividere lo spazio e collaborare tra loro, da qualsiasi parte del mondo, attraverso esperienze di realtà miste abilitate per la rete. Con mesh puoi migliorare le riunioni virtuali, condurre sessioni di progettazione virtuali, aiutare altri utenti in modalità remota e ospitare incontri virtuali |
+| [Microsoft Mesh](/mesh/overview) | Mesh consente alle persone di connettersi con la presenza, condividere lo spazio e collaborare tra loro, da qualsiasi parte del mondo, tramite esperienze di realtà mista abilitate per Mesh. Con Mesh è possibile migliorare le riunioni virtuali, condurre sessioni di progettazione virtuale, aiutare altri utenti in remoto e ospitare riunioni virtuali |
 
 ## <a name="what-would-you-like-to-do-next"></a>Quali operazioni vuoi eseguire successivamente?
 
 :::row:::
     :::column:::
-        [![Diventa un autore](images/icon-design.png)](../design/design.md)<br>
-        **[Diventare un autore](../design/design.md)**<br>
+        [![Iniziare a progettare](images/icon-design.png)](../design/design.md)<br>
+        **[Iniziare a progettare](../design/design.md)**<br>
         Di seguito vengono illustrati i concetti di base che ti serviranno per iniziare a progettare e a creare prototipi.
     :::column-end:::
-        :::column:::
+    :::column:::
         [![Inizia a sviluppare](images/icon-developer.png)](../develop/development.md)<br>
         **[Inizia a sviluppare](../develop/development.md)**<br>
         Scegli un percorso di sviluppo in base al tuo livello di competenza, al tuo stile di lavoro o all'interesse per le piattaforme.
@@ -175,9 +152,6 @@ Se si è interessati a vedere come funzionano i diversi servizi e dispositivi ha
         Vieni a vedere l'hardware e partecipa all'esercitazione pratica per creare la tua prima applicazione HoloLens 2.
     :::column-end:::
 :::row-end:::
-
-
-<br>
 
 <br>
 

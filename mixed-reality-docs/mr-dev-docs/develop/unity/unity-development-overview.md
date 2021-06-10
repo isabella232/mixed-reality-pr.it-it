@@ -7,18 +7,23 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realtà mista, sviluppo, guida introduttiva, nuovo progetto, porting, funzionalità, fotocamera, simulazione, emulazione, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, mapping spaziale, input vocale, fotocamera individuabile, emulatore, Azure, esercitazioni
-ms.openlocfilehash: ba68c3d74f58fc43af3de039e5eba1712d195cc0
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: 7ecc111f6dfe2cc66091b0ed8fc959819c4da897
+ms.sourcegitcommit: 62e5909b837c9c7ecedd040164f2308868db4723
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528740"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111741965"
 ---
 # <a name="unity-development-for-hololens"></a>Sviluppo di Unity per HoloLens
 
 ![Logo banner di Unity](../images/unity_logo_banner.png)
 
-La soluzione più veloce per creare un'[app di realtà mista](../../design/app-views.md) per HoloLens in [Unity](https://unity.com) è rappresentata da Mixed Reality Toolkit. Se si usa Unity per la prima volta, prima di continuare è consigliabile esplorare le [esercitazioni](https://unity3d.com/learn/tutorials) di livello principiante nella piattaforma Unity Learn. È opportuno anche visitare l'[Asset Store](https://assetstore.unity.com) completo e i [forum sulla realtà mista per Unity](https://forum.unity3d.com/forums/hololens.102/) per partecipare alla community online impegnata nella creazione di app di realtà mista. In questi ambienti si scoprono spesso risorse o soluzioni estremamente interessanti. Per iniziare a usare MRTK, passare ai checkpoint di sviluppo illustrati di seguito.
+Il percorso più rapido per creare un'app di realtà mista HoloLens in Unity è con Mixed Reality Toolkit (MRTK). Se si usa Unity per la prima volta, prima di continuare è consigliabile esplorare le [esercitazioni](https://unity3d.com/learn/tutorials) di livello principiante nella piattaforma Unity Learn. 
+
+Se non si ha una nuova versione dello sviluppo di realtà mista in Unity e si vuole iniziare a usare un progetto con MRTK, vedere il modulo Microsoft Learn. È sempre possibile tornare qui per argomenti più intermedi e avanzati quando si ottiene il blocco delle cose.
+
+> [!div class="nextstepaction"]
+> [Configurare un progetto Unity di realtà mista con MRTK](/learn/modules/mixed-reality-toolkit-project-unity)
 
 > [!IMPORTANT]
 > Se si ha a disposizione un progetto Unity da trasferire in HoloLens 2, consultare le **[guide per il porting](../porting-apps/porting-overview.md)** . Sono disponibili guide per i progetti che usano HTK, MRTK V1 o SteamVR.
@@ -51,7 +56,7 @@ Tutti i componenti di base per le applicazioni di realtà mista sono esposti in 
 |  Funzionalità  |  Capabilities  |
 | --- | --- |
 | [Fotocamera](../unity/camera-in-unity.md) | Ottimizzare pienamente la qualità visiva e la stabilità degli ologrammi nelle app di realtà mista |
-| [Blocco del mondo e ancoraggi spaziali](spatial-anchors-in-unity.md) | Risolvere i problemi di stabilizzazione, regolazione della fotocamera e integrare una soluzione di sistema di coordinate stabile |
+| [Blocco del mondo e ancoraggi spaziali](spatial-anchors-in-unity.md) | Risolvere i problemi di stabilizzazione, la regolazione della fotocamera e integrare una soluzione di sistema di coordinate stabile |
 | [Esperienze condivise](shared-experiences-in-unity.md) | Visualizzare e interagire collettivamente con lo stesso ologramma in un punto fisso nello spazio usando la condivisione degli ancoraggi nello spazio |
 | [Sguardo fisso](../unity/gaze-in-unity.md) | Consentire agli utenti di puntare agli ologrammi fissandoli con lo sguardo |
 | [Controller del movimento](../unity/motion-controllers-in-unity.md) | Aggiungere azioni nello spazio alle app di realtà mista |
@@ -83,11 +88,15 @@ Non appena il progetto Unity olografico è pronto per il test, il passaggio succ
 
 ## <a name="5-adding-services"></a>5. Aggiunta di servizi
 
-A questo punto del percorso di sviluppo, potrebbe essere necessario aggiungere servizi o ricevere supporto per una distribuzione commerciale. L'integrazione di [Servizi cloud di Azure](../mixed-reality-cloud-services.md) e funzionalità di Dynamics 365 può migliorare notevolmente i progetti. Sono stati definiti alcuni punti di partenza per consentire di esplorare e ampliare le conoscenze relative alla realtà mista.
+A questo punto del percorso di sviluppo, potrebbe essere necessario aggiungere servizi o ricevere supporto per una distribuzione commerciale. [L'Servizi cloud di Azure](../mixed-reality-cloud-services.md) può livellare i progetti in modo importante. Sono stati definiti alcuni punti di partenza per consentire di esplorare e ampliare le conoscenze relative alla realtà mista.
 
 [!INCLUDE[](../includes/unity-cloud-services-d365.md)]
 
 È anche disponibile un [elenco completo della documentazione di supporto per altri servizi di Azure](../mixed-reality-cloud-services.md#standalone-unity-services) che è possibile aggiungere ai progetti Unity in modo autonomo.
+
+## <a name="6-low-code-alternatives"></a>6. Alternative a basso codice
+
+[!INCLUDE[](../includes/unity-low-code.md)]
 
 ## <a name="whats-next"></a>Passaggi successivi
 
@@ -113,9 +122,9 @@ Prima di entrare nel mondo della realtà mista in totale autonomia, è consiglia
 
 |  Argomento  |  Descrizione  |
 | --- | --- |
-| [Panoramica dell'architettura MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/architecture/overview) | Acquisire una conoscenza più approfondita del funzionamento di MRTK SDK nei progetti |
-| [Impostazioni e prestazioni](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started) | Profilare l'app, aggiornare le impostazioni di Unity e ottenere le migliori prestazioni di stabilizzazione olografica disponibili |
-| [Introduzione a MRTK + XR](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk) | Eseguire il trasferimento alla pipeline XR alternativa fornita da Unity |
+| [Panoramica dell'architettura MRTK](/windows/mixed-reality/mrtk-unity/architecture/overview) | Acquisire una conoscenza più approfondita del funzionamento di MRTK SDK nei progetti |
+| [Impostazioni e prestazioni](/windows/mixed-reality/mrtk-unity/performance/perf-getting-started) | Profilare l'app, aggiornare le impostazioni di Unity e ottenere le migliori prestazioni di stabilizzazione olografica disponibili |
+| [Introduzione a MRTK + XR](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk) | Eseguire il trasferimento alla pipeline XR alternativa fornita da Unity |
 
 ### <a name="unity-resources"></a>Risorse di Unity
 

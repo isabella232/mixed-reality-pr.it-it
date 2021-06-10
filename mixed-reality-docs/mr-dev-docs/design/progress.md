@@ -1,17 +1,17 @@
 ---
 title: Visualizzazione dello stato
-description: Informazioni sul modo in cui i controlli di stato forniscono all'utente feedback sull'esecuzione di un'operazione di lunga durata nelle app per realtà mista.
+description: Informazioni su come i controlli di stato forniscono un feedback all'utente che è in corso un'operazione a esecuzione lunga nelle app di realtà mista.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realtà mista di Windows, progettazione, controlli, interfaccia utente, UX, indicatore di stato, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: e949d8805446429d3853a3fedb1b776c50c710dd
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: Windows Mixed Reality, progettazione, controlli, interfaccia utente, ux, indicatore di stato, visore di realtà mista, visore windows di realtà mista, visore di realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 01f032efb887ecfc6f8d66683fb954cd0574a4f3
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299736"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600550"
 ---
 # <a name="progress-indicator"></a>Indicatore di stato
 
@@ -19,7 +19,7 @@ ms.locfileid: "107299736"
 
 <img src="images/MRTK_ProgressIndicator.gif" alt="Progress ring example in HoloLens" width="940px">
 
-Un controllo progress fornisce il feedback che è in corso un'operazione a esecuzione prolungata. Quando un indicatore di stato è visibile, gli utenti possono visualizzare il tempo di attesa e non possono interagire con l'app.
+Un controllo di stato fornisce il feedback che un'operazione a esecuzione lunga è in corso. Quando un indicatore di stato è visibile, gli utenti possono visualizzare il tempo di attesa e non possono interagire con l'app.
 
 <br>
 
@@ -27,14 +27,14 @@ Un controllo progress fornisce il feedback che è in corso un'operazione a esecu
 
 ## <a name="types-of-progress"></a>Tipi di stato
 
-È importante fornire le informazioni sull'utente su ciò che accade. In realtà mista, gli utenti possono essere facilmente distratti dall'ambiente fisico o dagli oggetti se l'app non ha un feedback visivo valido. Per le situazioni in cui sono necessari alcuni secondi, ad esempio quando i dati vengono caricati o una scena viene aggiornata, è consigliabile mostrare un indicatore visivo. Sono disponibili due opzioni per indicare all'utente che è in corso un'operazione, ovvero un indicatore di **stato** o un **anello di avanzamento**.
+È importante fornire all'utente informazioni su ciò che accade. In realtà mista, gli utenti possono essere facilmente distratti dall'ambiente fisico o dagli oggetti se l'app non ha un buon feedback visivo. In situazioni che possono richiedere alcuni secondi, ad esempio durante il caricamento dei dati o l'aggiornamento di una scena, è buona idea visualizzare un indicatore visivo. Sono disponibili due opzioni per mostrare all'utente che è in corso un'operazione: un indicatore **di** stato o un **anello di stato**.
 
 :::row:::
     :::column:::
         ### <a name="progress-barbr"></a>Barra di stato<br>
-        Un indicatore di stato Mostra la percentuale di completamento di un'attività. Deve essere usato durante un'operazione la cui durata è nota (determinata), ma lo stato di avanzamento non dovrebbe bloccare l'interazione dell'utente con l'app.<br>
+        Un indicatore di stato mostra la percentuale di completamento di un'attività. Deve essere usato durante un'operazione la cui durata è nota (determinata), ma lo stato di avanzamento non deve bloccare l'interazione dell'utente con l'app.<br>
         <br>
-        *Image: esempio di indicatore di stato in HoloLens*
+        *Immagine: Esempio di indicatore di stato in HoloLens*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
@@ -49,9 +49,9 @@ Un controllo progress fornisce il feedback che è in corso un'operazione a esecu
 :::row:::
     :::column:::
         ### <a name="progress-ringbr"></a>Anello di stato<br>
-        Un anello di avanzamento ha uno stato indeterminato e deve essere usato quando l'interazione dell'utente viene bloccata fino al completamento dell'operazione.<br>
+        Un anello Di stato ha solo uno stato indeterminato e deve essere usato quando l'interazione dell'utente viene bloccata fino al completamento dell'operazione.<br>
         <br>
-        *Immagine: esempio di anello di stato in HoloLens*
+        *Immagine: Esempio di anello di stato in HoloLens*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
@@ -65,14 +65,14 @@ Un controllo progress fornisce il feedback che è in corso un'operazione a esecu
 
 :::row:::
     :::column:::
-        ### <a name="progress-with-a-custom-objectbr"></a>Stato di avanzamento con un oggetto personalizzato<br>
-        È possibile aggiungere la personalità e l'identità del marchio dell'app personalizzando il controllo dello stato di avanzamento con oggetti 2D/3D personalizzati.<br>
+        ### <a name="progress-with-a-custom-objectbr"></a>Avanzamento con un oggetto personalizzato<br>
+        È possibile aggiungere alla personalità e all'identità del marchio dell'app personalizzando il controllo Stato con i propri oggetti 2D/3D personalizzati.<br>
         <br>
-        *Immagine: esempio di avanzamento con mesh personalizzato in HoloLens*
+        *Immagine: Stato dell'esempio di mesh personalizzata in HoloLens*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![Esempio di avanzamento con mesh personalizzato in HoloLens](images/640px-progresscustom.jpg)<br>
+       ![Avanzamento con l'esempio di mesh personalizzata in HoloLens](images/640px-progresscustom.jpg)<br>
     :::column-end:::
 :::row-end:::
 
@@ -82,8 +82,8 @@ Un controllo progress fornisce il feedback che è in corso un'operazione a esecu
 
 ## <a name="best-practices"></a>Procedure consigliate
 
-* È strettamente correlato alla visualizzazione dello stato di avanzamento [, in quanto](billboarding-and-tag-along.md) l'utente può facilmente spostarne l'intestazione in uno spazio vuoto e perdere il contesto. È possibile che l'app si trovi in modo anomalo se l'utente non è in grado di visualizzare alcun elemento. Il tabellone e i tag-along sono incorporati nella prefabbrica di avanzamento.
-* È sempre opportuno fornire informazioni sullo stato relative a ciò che accade all'utente. Il prefabbricato di avanzamento fornisce vari stili visivi, tra cui lo stato di avanzamento del tipo di anello standard di Windows. È anche possibile usare una mesh personalizzata con un'animazione se si vuole che lo stile dello stato di avanzamento sia allineato al marchio dell'app.
+* Coppia stretta di [manifesti o tag-along](billboarding-and-tag-along.md) per la visualizzazione di Progress poiché l'utente può spostare facilmente la testa nello spazio vuoto e perdere il contesto. L'app potrebbe sembrare che si sia verificata in modo anomalo se l'utente non riesce a visualizzare alcun elemento. I tag e i tag sono incorporati nel prefab Stato di avanzamento.
+* È sempre bene fornire informazioni sullo stato di ciò che accade all'utente. Il prefab Stato fornisce vari stili di visualizzazione, tra cui lo stato di avanzamento del tipo di anello standard di Windows per fornire lo stato. È anche possibile usare una mesh personalizzata con un'animazione se si vuole che lo stile dello stato di avanzamento sia allineato al marchio dell'app.
 
 <br>
 
@@ -91,15 +91,15 @@ Un controllo progress fornisce il feedback che è in corso un'operazione a esecu
 
 ## <a name="progress-indicator-in-mrtk-mixed-reality-toolkit-for-unity"></a>Indicatore di stato in MRTK (Mixed Reality Toolkit) per Unity
 
-* [MRTK-prefabbricati indicatore di stato](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/Features/UX/Prefabs/ProgressIndicators)
-* [MRTK-servizio di transizione della scena](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/extensions/scene-transition-service)
+* [MRTK - Prefab indicatore di stato](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/Features/UX/Prefabs/ProgressIndicators)
+* [MRTK - Servizio di transizione della scena](/windows/mixed-reality/mrtk-unity/features/extensions/scene-transition-service)
 
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

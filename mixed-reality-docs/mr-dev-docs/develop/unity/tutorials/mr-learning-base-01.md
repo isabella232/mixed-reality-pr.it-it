@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, risolutori, tracciamento oculare, comandi vocali
 ms.localizationpriority: high
-ms.openlocfilehash: 7fd4a641c87b13d09a25926cfe65fa7b8c66c2f0
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 0af75341aa1c90f38ac679dd1ff2db6ab2796839
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104681704"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403342"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1. Introduzione alle esercitazioni di MRTK
 
@@ -43,23 +43,24 @@ Le esercitazioni di questa serie sono sequenziali, consultarle quindi nell'ordin
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 o versioni successive
 * Un dispositivo HoloLens 2 [configurato per lo sviluppo](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
 
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Hub Unity</a> con unity 2019 LTS (attualmente 2019.4. x) installato e aggiunta del modulo di supporto piattaforma UWP (Universal Windows Platform) Build
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> con Unity 2020 LTS (attualmente 2020.3.x) o Unity 2019 LTS (attualmente 2019.4.x) installato e il modulo piattaforma UWP (Universal Windows Platform) Build Support aggiunto
 
-Quando si installa Unity, assicurarsi di controllare i componenti seguenti in **"Platforms"**.
-* **Supporto di piattaforma UWP (Universal Windows Platform) Build** 
-* **Supporto per Windows Build (IL2CPP)**
+Quando si installa Unity, assicurarsi di controllare i componenti seguenti in **"Piattaforme".**
 
-![Opzione di supporto per Unity piattaforma UWP (Universal Windows Platform) Build](../../../develop/images/Unity_Install_Option_UWP.png)
+* **piattaforma UWP (Universal Windows Platform) di compilazione**
+* **Supporto per la compilazione di Windows (IL2CPP)**
 
-Se Unity è stata installata senza queste opzioni, è possibile aggiungerle tramite il menu **' Aggiungi moduli '** nell'hub Unity.
+![Opzione supporto piattaforma UWP (Universal Windows Platform) compilazione di Unity](../../../develop/images/Unity_Install_Option_UWP.png)
 
-![Opzione di supporto build di Windows Unity](../../../develop/images/Unity_Install_Option_UWP2.png)
+Se Unity è stato installato senza queste opzioni, è possibile aggiungerlo tramite il menu **"Aggiungi moduli"** in Unity Hub.
 
-> [!CAUTION]
-> La versione consigliata di MRTK per questa serie di esercitazioni è MRTK 2,6.
+![Opzione Unity Windows Build Support (Supporto per la compilazione di Windows in Unity)](../../../develop/images/Unity_Install_Option_UWP2.png)
 
-> [!CAUTION]
-> La versione consigliata di Unity per questa serie di esercitazioni è Unity 2019 LTS (attualmente 2019.4. x). Questa istruzione sostituisce gli eventuali requisiti relativi alla versione di Unity indicati negli argomenti visualizzabili facendo clic sui collegamenti dei prerequisiti sopra riportati.
+> [!Important]
+> La versione consigliata di MRTK per questa serie di esercitazioni è MRTK 2.7.
+
+> [!Important]
+> Questa serie di esercitazioni supporta Unity 2020 LTS (attualmente 2020.3.x) se si usa Open XR o Windows XR Plugin e anche Unity 2019 LTS (attualmente 2019.4.x) se si usa WSA legacy o Windows XR Plugin. Questa istruzione sostituisce gli eventuali requisiti relativi alla versione di Unity indicati negli argomenti visualizzabili facendo clic sui collegamenti dei prerequisiti sopra riportati.
 
 > [!div class="nextstepaction"]
 > [Esercitazione successiva: 2. Inizializzazione del progetto e distribuzione della prima applicazione](mr-learning-base-02.md)

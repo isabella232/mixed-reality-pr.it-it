@@ -3,14 +3,14 @@ title: Informazioni sulla scena
 description: descrive Scene Understanding in MRTK
 author: MaxWang-MS
 ms.author: wangmax
-ms.date: 03/02/2021
+ms.date: 05/27/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, Scene Understanding
-ms.openlocfilehash: ac90359a71267dc64e659f446f35ec2510c42599
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 1ed6f93216fc90e7c6332f2b9c40911d25d96d2a
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143884"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743555"
 ---
 # <a name="scene-understanding"></a>Informazioni sulla scena
 
@@ -22,7 +22,10 @@ Di seguito sono riportati alcuni casi d'uso previsti di questa tecnologia:
 * Fornire la geometria descrittiva del motore di fisica come quad
 * Accelerare lo sviluppo evitando la necessità di scrivere algoritmi simili
 
-Scene Understanding è disponibile come funzionalità __sperimentale__ a partire da MRTK 2.6. È integrato in MRTK come [osservatore spaziale](spatial-awareness-getting-started.md#register-observers) denominato [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) . Scene Understanding funziona sia con la pipeline XR legacy che con la pipeline XR SDK. In entrambi i casi `WindowsSceneUnderstandingObserver` viene usato .
+Scene Understanding è stato introdotto come __funzionalità sperimentale__ in MRTK 2.6. È integrato in MRTK come [osservatore spaziale](spatial-awareness-getting-started.md#register-observers) denominato [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) . Scene Understanding funziona sia con la pipeline legacy XR che con la pipeline XR SDK (sia OpenXR (a partire da MRTK 2.7) che con il plug-in Windows XR). In entrambi i casi `WindowsSceneUnderstandingObserver` viene usato .
+
+> [!NOTE] 
+> L'uso di Scene Understanding nella comunicazione remota non è supportato.
 
 ## <a name="observer-overview"></a>Panoramica dell'osservatore
 
@@ -44,9 +47,11 @@ Il modo più rapido per iniziare a usare Scene Understanding è vedere la scena 
 
 In Unity usare Project Explorer (Esplora progetti) per aprire il file della scena in `Examples/Experimental/SceneUnderstanding/Scenes/SceneUnderstandingExample.unity` e premere play!
 
+::: moniker range="< mrtkunity-2021-05"
 > [!IMPORTANT]
-> Quando si usa lo strumento di funzionalità di realtà mista o si esegue un'importazione tramite UPM, importare l'esempio Demos - SpatialAwareness prima di importare l'esempio Experimental - SceneUnderstanding a causa di un problema di dipendenza. Per altre informazioni, vedere questo problema di [GitHub.](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431)
+> Si applica solo a MRTK 2.6.0: quando si usa lo strumento di funzionalità di realtà mista o si importa in altro modo tramite UPM, importare l'esempio Demos - SpatialAwareness prima di importare l'esempio Experimental - SceneUnderstanding a causa di un problema di dipendenza. Per altre informazioni, vedere questo problema di [GitHub.](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431)
 
+::: moniker-end
 La scena illustra quanto segue:
 
 * Visualizzazione degli oggetti scena osservati con nell'interfaccia utente dell'applicazione per la configurazione dell'osservatore
@@ -54,8 +59,18 @@ La scena illustra quanto segue:
 * Salvataggio dei dati della scena nel dispositivo per lo sviluppo offline
 * Caricamento dei dati della scena salvati in precedenza (file con estensione bytes) per supportare il flusso di lavoro di sviluppo nell'editor
 
+> [!IMPORTANT]
+> Per impostazione `ShouldLoadFromFile` predefinita, la proprietà dell'osservatore è impostata su false. Per visualizzare una stanza di esempio serializzata, vedere [](#configuring-the-observer-service) la sezione configurazione del servizio osservatore riportata di seguito e impostare la proprietà su true nell'editor.
+::: moniker range="< mrtkunity-2021-05"
+
 > [!NOTE] 
-> La scena di esempio è basata sulla pipeline XR legacy. Se si usa la pipeline XR SDK, è necessario modificare i profili di conseguenza. Il profilo scene Understanding Spatial Awareness System ( ) e `DemoSceneUnderstandingSystemProfile` i profili Scene Understanding Observer ( e ) funzionano per `DefaultSceneUnderstandingObserverProfile` `DemoSceneUnderstandingObserverProfile` entrambe le pipeline.
+> La scena di esempio è basata sulla pipeline XR legacy. Se si usa la pipeline XR SDK, è necessario modificare i profili di conseguenza. Il profilo Scene Understanding Spatial Awareness System ( ) e i profili `DemoSceneUnderstandingSystemProfile` Scene Understanding Observer ( e ) funzionano per `DefaultSceneUnderstandingObserverProfile` `DemoSceneUnderstandingObserverProfile` entrambe le pipeline.
+::: moniker-end
+::: moniker range="= mrtkunity-2021-05"
+
+> [!NOTE] 
+> La scena di esempio registra un avviso in determinate circostanze a `There is no active AsyncCoroutineRunner when an action is posted.` causa dell'ordine di inizializzazione/esecuzione del thread. Se puoi verificare che il componente sia collegato al GameObject "Demo Controller" e che il componente/GameObject rimanga abilitato/attivo nella scena (caso predefinito), l'avviso può essere tranquillamente `AsyncCoroutineRunner` ignorato.
+::: moniker-end
 
 #### <a name="configuring-the-observer-service"></a>Configurazione del servizio observer
 
@@ -69,7 +84,7 @@ Queste opzioni consentiranno a un utente di configurare `WindowsSceneUnderstandi
 
 ### <a name="example-script"></a>Script di esempio
 
-Lo script di _esempio DemoSceneUnderstandingController.cs_ illustra i concetti principali relativi all'uso del servizio Scene Understanding.
+Lo script di _esempio DemoSceneUnderstandingController.cs_ illustra i concetti principali dell'uso del servizio Scene Understanding.
 
 * Sottoscrizione di eventi scene understanding
 * Gestione degli eventi di comprensione della scena
@@ -77,7 +92,7 @@ Lo script di _esempio DemoSceneUnderstandingController.cs_ illustra i concetti p
 
 Gli interruttori sul pannello nella scena modificano il comportamento dell'osservatore di comprensione della scena chiamando le funzioni pubbliche di questo script di esempio.
 
-L'attivazione di Instantiate Prefabs (Crea istanze di *prefab)* illustra la creazione di oggetti che si adattano a tutti [gli spatialAwarenessSceneObject,](xref:Microsoft.MixedReality.Toolkit.Experimental.SpatialAwareness.SpatialAwarenessSceneObject)raccolti in modo accurato in un oggetto padre.
+Attivando *Instantiate Prefabs*, verrà illustrata la creazione di oggetti che si adattano a tutti [gli SpatialAwarenessSceneObject,](xref:Microsoft.MixedReality.Toolkit.Experimental.SpatialAwareness.SpatialAwarenessSceneObject)raccolti in modo accurato in un oggetto padre.
 
 ![opzioni del controller demo](../images/spatial-awareness/Controller.png)
 
@@ -95,5 +110,5 @@ I file di scena salvati sono accessibili tramite il [portale dei dispositivi all
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Panoramica del mapping spaziale WMR](/windows/mixed-reality/scene-understanding)
-* [Panoramica del mapping spaziale WMR](/windows/mixed-reality/scene-understanding-sdk)
+* [Cenni preliminari sulla comprensione della scena](/windows/mixed-reality/scene-understanding)
+* [Panoramica di Scene Understanding SDK](/windows/mixed-reality/scene-understanding-sdk)

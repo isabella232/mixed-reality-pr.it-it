@@ -7,12 +7,12 @@ ms.date: 04/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, realtà mista, debug, distribuzione
-ms.openlocfilehash: 2ab89311163a48ee3c14511446a1498ce883a232
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 5510646c058f683babff5e9e34dd296f88cd06c3
+ms.sourcegitcommit: b4bdac2c4d7315902712ce74fd909fb8383d4bfd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100496094"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110543227"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>Uso di Visual Studio per la distribuzione e il debug
 
@@ -37,7 +37,7 @@ Per iniziare, abilita **Modalità sviluppatore** sul tuo dispositivo per consent
 3. Seleziona il riquadro **Impostazioni** per avviare l'app nell'ambiente in uso.
 4. Scegli la voce di menu **Aggiorna**.
 5. Scegli la voce di menu **Per gli sviluppatori**.
-6. Abilitare **Modalità sviluppatore** per distribuire le app da Visual Studio al dispositivo HoloLens.
+6. Abilitare **Usa le funzionalità per sviluppatori** per distribuire le app Visual Studio in HoloLens. Se il dispositivo esegue Windows Holographic versione 21H1 o successiva, abilitare anche **Individuazione dispositivi**.
 7. Facoltativo: scorrere verso il basso e abilitare anche il **Portale di dispositivi**, che consente di connettersi al [Portale di dispositivi di Windows](using-the-windows-device-portal.md) in HoloLens da un Web browser.
 
 ### <a name="windows-pc"></a>PC Windows
@@ -48,18 +48,18 @@ Se si usa un visore VR di Windows Mixed Reality connesso al PC, è necessario ab
 3. Seleziona **Per gli sviluppatori**
 4. Abilitare **Modalità sviluppatore**, leggere la dichiarazione di non responsabilità relativa all'impostazione scelta e quindi selezionare Sì per accettare la modifica.
 
-## <a name="deploying-a-hololens-app-over-wi-fi"></a>Distribuzione di un'app HoloLens tramite Wi-Fi 
+## <a name="deploying-a-hololens-app-over-wi-fi"></a>Distribuzione di un'app HoloLens Wi-Fi 
 
-Configurare il progetto di Visual Studio con le proprietà seguenti:
+Configurare il Visual Studio progetto con le proprietà seguenti:
 
 1. Selezionare le opzioni di compilazione delle app
-    * Per i progetti Unity, scegliere **versione** o **Master** 
-    * Per tutti gli altri progetti, scegliere **versione**
+    * Per i progetti Unity scegliere **Versione o** **Master** 
+    * Per tutti gli altri progetti, scegliere **Versione**
 
 > [!NOTE]
-> È possibile trovare definizioni complete per ogni opzione di compilazione nell' [esportazione e nella compilazione di soluzioni di Visual Studio](../unity/exporting-and-building-a-unity-visual-studio-solution.md#building-and-deploying-a-unity-visual-studio-solution).
+> È possibile trovare definizioni complete per ogni opzione di compilazione nell'esportazione e nella [Visual Studio soluzioni](../unity/exporting-and-building-a-unity-visual-studio-solution.md#building-and-deploying-a-unity-visual-studio-solution).
 
-2. Selezionare la configurazione della build in base al dispositivo
+2. Selezionare la configurazione di compilazione in base al dispositivo
 
 [!INCLUDE[](includes/vs-wifi-hl-include.md)]
 
@@ -67,41 +67,41 @@ Configurare il progetto di Visual Studio con le proprietà seguenti:
 
 ![Destinazione di distribuzione computer remoto in Visual Studio](images/remotemachinesetting_arm64.png)
 
-Successivamente, è necessario impostare la connessione remota. Per i progetti C++ e JavaScript, vai a **Progetto > Proprietà > Proprietà di configurazione > Debug**. Se si sta lavorando in un progetto C#, viene visualizzata automaticamente una finestra di dialogo.
+Successivamente, è necessario impostare la connessione remota. Per i progetti C++ e JavaScript, vai a **Progetto > Proprietà > Proprietà di configurazione > Debug**. Se si lavora in un progetto C#, verrà visualizzata automaticamente una finestra di dialogo.
 
 > [!NOTE]
-> Se la finestra di dialogo connessione remota non viene visualizzata nel progetto C#, è possibile aprirla manualmente da **proprietà > debug**.
+> Se la finestra di dialogo di connessione remota non viene visualizzata nel progetto C#, è possibile aprirla manualmente da **Proprietà > Debug**.
 
 1. Immetti l'indirizzo IP del tuo dispositivo nel campo **Indirizzo** o **Nome computer**. 
-    * È possibile trovare l'indirizzo IP nella HoloLens in **impostazioni > rete & Internet > opzioni avanzate**
-    * Si consiglia sempre di immettere manualmente l'indirizzo IP anziché a seconda della funzionalità di rilevamento automatico
+    * È possibile trovare l'indirizzo IP in HoloLens in Impostazioni **> rete & Internet > opzioni avanzate**
+    * È sempre consigliabile immettere manualmente l'indirizzo IP anziché a seconda della funzionalità Rilevata automaticamente
 
-2. Impostare la **modalità di autenticazione** su **universale (protocollo non crittografato)**
+2. Impostare la **modalità di autenticazione** su Universale **(protocollo non crittografato)**
 
   ![Finestra di dialogo connessione remota in Visual Studio](images/remotedeploy.png)
 
-3. Crea, Distribuisci ed Esegui il debug dell'app in base alle tue esigenze
+3. Compilare, distribuire ed eseguire il debug dell'app in base alle esigenze
     * Seleziona **Debug > Avvia debug** per distribuire l'app e avviare il debug
-    * Selezionare **compila > Distribuisci** per compilare e distribuire senza debug
+    * Selezionare **Compila > Distribuisci** per compilare e distribuire senza eseguire il debug
 
 ![Avvia senza eseguire debug in Visual Studio](images/deploywithdebugging.png)
 
 4. La prima volta che viene distribuita un'app in HoloLens dal PC, verrà chiesto di specificare un PIN. Segui le istruzioni riportate di seguito in **Associazione del dispositivo**.
 
-## <a name="deploying-a-hololens-app-over-usb"></a>Distribuzione di un'app HoloLens su USB 
+## <a name="deploying-a-hololens-app-over-usb"></a>Distribuzione di un'app HoloLens tramite USB 
 
 <br>
 
 >[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Deploying-your-HoloLens-2-application/player?format=ny]
 
 1. Selezionare le opzioni di compilazione delle app
-    * Per i progetti Unity, scegliere **versione** o **Master** 
-    * Per tutti gli altri progetti, scegliere **versione**
+    * Per i progetti Unity scegliere **Versione o** **Master** 
+    * Per tutti gli altri progetti, scegliere **Versione**
 
 > [!NOTE]
-> È possibile trovare definizioni complete per ogni opzione di compilazione nell' [esportazione e nella compilazione di soluzioni di Visual Studio](../unity/exporting-and-building-a-unity-visual-studio-solution.md#building-and-deploying-a-unity-visual-studio-solution).
+> È possibile trovare definizioni complete per ogni opzione di compilazione nell'esportazione e nella [Visual Studio soluzioni](../unity/exporting-and-building-a-unity-visual-studio-solution.md#building-and-deploying-a-unity-visual-studio-solution).
 
-2. Selezionare la configurazione della build in base al dispositivo
+2. Selezionare la configurazione di compilazione in base al dispositivo
 
 [!INCLUDE[](includes/vs-wifi-hl-include.md)]
 
@@ -109,27 +109,27 @@ Successivamente, è necessario impostare la connessione remota. Per i progetti C
 
 ![Distribuzione dispositivi in Visual Studio](images/buildsettingsusbdeploy_arm64.png)
 
-4. Crea, Distribuisci ed Esegui il debug dell'app in base alle tue esigenze
+4. Compilare, distribuire ed eseguire il debug dell'app in base alle esigenze
     * Seleziona **Debug > Avvia debug** per distribuire l'app e avviare il debug
-    * Selezionare **compila > Distribuisci** per compilare e distribuire senza debug
+    * Selezionare **Compila > Distribuisci** per compilare e distribuire senza eseguire il debug
 
 ![Avvia senza eseguire debug in Visual Studio](images/deploywithdebugging.png)</br>
 
 5. La prima volta che viene distribuita un'app in HoloLens dal PC, verrà chiesto di specificare un PIN. Segui le istruzioni riportate di seguito in **Associazione del dispositivo**.
 
 > [!NOTE]
-> Se si osserva un tempo di ritardo notevole con la distribuzione delle app su USB, è consigliabile usare le [istruzioni del computer remoto](#deploying-a-hololens-app-over-wi-fi) nella sezione precedente.
+> Se si verifica un ritardo notevole con la distribuzione delle app tramite USB, è consigliabile usare le istruzioni del [computer](#deploying-a-hololens-app-over-wi-fi) remoto nella sezione precedente.
 
-## <a name="deploying-an-app-to-the-hololens-emulator"></a>Distribuzione di un'app nell'emulatore di HoloLens
+## <a name="deploying-an-app-to-the-hololens-emulator"></a>Distribuzione di un'app nell'emulatore HoloLens
 
-1. Assicurarsi **[di aver installato l'emulatore HoloLens 2 o HoloLens (1st Gen)](../install-the-tools.md#installation-checklist)**
-2. Selezionare la configurazione della build e l'emulatore in base al dispositivo
+1. Assicurarsi di aver installato **[l'emulatore HoloLens 2 o HoloLens (prima generazione)](../install-the-tools.md#installation-checklist)**
+2. Selezionare la configurazione di compilazione e l'emulatore in base al dispositivo
 
 [!INCLUDE[](includes/vs-wifi-hl-include.md)]
 
-3. Crea, Distribuisci ed Esegui il debug dell'app in base alle tue esigenze
+3. Compilare, distribuire ed eseguire il debug dell'app in base alle esigenze
     * Seleziona **Debug > Avvia debug** per distribuire l'app e avviare il debug
-    * Selezionare **compila > Distribuisci** per compilare e distribuire senza debuggingg
+    * Selezionare **Compila > Distribuisci** per compilare e distribuire senza eseguire il debugg
 
 ![Avvia senza eseguire debug in Visual Studio](images/deploywithdebugging.png)
 
@@ -138,9 +138,9 @@ Successivamente, è necessario impostare la connessione remota. Per i progetti C
 Per usare un visore VR immersive di Windows Mixed Reality che si connette al PC o al [simulatore di realtà mista](using-the-windows-mixed-reality-simulator.md):
 1. Seleziona una configurazione di build **x86** o **x64** per l'app
 2. Seleziona **Computer locale** nel menu a discesa delle destinazioni di distribuzione
-3. Crea, Distribuisci ed Esegui il debug dell'app in base alle tue esigenze
+3. Compilare, distribuire ed eseguire il debug dell'app in base alle esigenze
     * Seleziona **Debug > Avvia debug** per distribuire l'app e avviare il debug
-    * Selezionare **compila > Distribuisci** per compilare e distribuire senza debug
+    * Selezionare **Compila > Distribuisci** per compilare e distribuire senza eseguire il debug
 
 ## <a name="pairing-your-device"></a>Associazione del dispositivo
 

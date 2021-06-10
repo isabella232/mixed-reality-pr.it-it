@@ -5,32 +5,32 @@ author: radicalad
 ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
-keywords: Realtà mista di Windows, barra delle applicazioni, rettangolo di delimitazione, cuffie per realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 0ccec5240854de9a7db6a79d5b90b97f1e6b81de
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: Windows Mixed Reality, barra dell'app, rettangolo di selezione, visore per realtà mista, visore windows mixed reality, visore per realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 750fb238e5b7f22998a86f71607498c8f6982076
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299906"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600520"
 ---
 # <a name="bounding-box-and-app-bar"></a>Rettangolo di selezione e barra dell'app
-![Il delimitatore è l'interfaccia standard per la manipolazione di oggetti in realtà mista.](images/UX_Hero_BoundingBox.jpg)<br>
+![Il delimitazione è l'interfaccia standard per la manipolazione degli oggetti in realtà mista.](images/UX_Hero_BoundingBox.jpg)<br>
 <br>
 
-## <a name="what-is-the-bounding-box"></a>Che cos'è il rettangolo di delimitazione?
+## <a name="what-is-the-bounding-box"></a>Che cos'è il rettangolo di selezione?
 
-Il delimitatore è l'interfaccia standard per la manipolazione di oggetti in realtà mista. Questa funzionalità fornisce all'utente un segnale visivo che l'oggetto è attualmente modificabile. In HoloLens 2 il rettangolo di delimitazione funziona con la manipolazione diretta della mano e risponde alla vicinanza finger's dell'utente. Mostra commenti visivi per aiutare l'utente a percepire la distanza dall'oggetto.
+Il delimitazione è l'interfaccia standard per la manipolazione degli oggetti in realtà mista. Questa funzionalità fornisce all'utente un segnale visivo che indica che l'oggetto è attualmente regolabile. Al HoloLens 2, il rettangolo di selezione funziona con la manipolazione diretta della mano e risponde alla prossimità del dito dell'utente. Mostra un feedback visivo per aiutare l'utente a percepire la distanza dall'oggetto.
 
 :::row:::
     :::column:::
         ### <a name="scaling-an-objectbr"></a>Ridimensionamento di un oggetto<br>
-        Gli angoli del rettangolo di delimitazione indicano all'utente che l'oggetto può essere ridimensionato. Gli handle seguono un modello molto noto per la regolazione della scala. Questo segnale visivo Mostra agli utenti l'area totale dell'oggetto, anche se non è visibile al di fuori di una modalità di regolazione. Senza questa funzionalità, un oggetto bloccato a un altro oggetto o a una superficie può sembrare un comportamento simile a quello di uno spazio che non dovrebbe essere presente.<br>
+        Gli angoli del rettangolo di selezione indicano all'utente che l'oggetto può essere ridimensionato. Gli handle seguono un modello ampiamente noto per la regolazione della scala. Questo segnale visivo mostra agli utenti l'area totale dell'oggetto, anche se non è visibile all'esterno di una modalità di regolazione. Senza questa funzionalità, un oggetto agganciato a un altro oggetto o superficie può sembrare comportarsi come se ci fosse spazio intorno a esso che non dovrebbe essere presente.<br>
         <br>
-        *Ciclo video: ridimensionamento di un oggetto tramite il rettangolo di delimitazione*
+        *Ciclo video: Ridimensionamento di un oggetto tramite rettangolo di selezione*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![HoloLens punto di vista della scalabilità di un oggetto tramite il rettangolo di delimitazione](images/HoloLens2_BoundingBox.gif)<br>
+       ![Punto di visualizzazione di HoloLens per ridimensionare un oggetto tramite rettangolo di selezione](images/HoloLens2_BoundingBox.gif)<br>
     :::column-end:::
 :::row-end:::
 
@@ -39,13 +39,13 @@ Il delimitatore è l'interfaccia standard per la manipolazione di oggetti in rea
 :::row:::
     :::column:::
         ### <a name="rotating-an-objectbr"></a>Rotazione di un oggetto<br>
-        Il affordances rettangolare verticale sui bordi del rettangolo di delimitazione sono indicatori di rotazione. In questo modo l'utente garantisce una maggiore regolazione degli ologrammi posizionati. Non solo è possibile modificare e ridimensionare, ma ora ruotare anche.<br>
+        Gli affordance rettangolari verticali sui bordi del rettangolo di selezione sono indicatori di rotazione. In questo modo, l'utente può regolare in modo più fine gli ologrammi posizionati. Non solo possono regolare e ridimensionare, ma anche ruotare.<br>
         <br>
-        *Ciclo video: rotazione di un oggetto tramite il rettangolo di delimitazione*
+        *Ciclo video: Rotazione di un oggetto tramite rettangolo di selezione*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![HoloLens punto di visualizzazione della rotazione di un oggetto tramite il rettangolo di delimitazione](images/HoloLens2_BoundingBox_Rotate.gif)<br>
+       ![Punto di visualizzazione di HoloLens per la rotazione di un oggetto tramite rettangolo di selezione](images/HoloLens2_BoundingBox_Rotate.gif)<br>
     :::column-end:::
 :::row-end:::
 
@@ -53,10 +53,10 @@ Il delimitatore è l'interfaccia standard per la manipolazione di oggetti in rea
 
 :::row:::
     :::column:::
-        ### <a name="visual-feedback-on-hand-proximity-on-hololens-2br"></a>Feedback visivo sulle prossimità della mano su HoloLens 2<br>
-        In HoloLens 2 è presente un segnale visivo aggiuntivo che può aiutare la percezione dell'utente della profondità. Un anello vicino alla loro parte viene visualizzato e ridimensionato quando il dito si avvicina all'oggetto. L'anello alla fine converge in un punto quando viene raggiunto lo stato premuto. Questa convenienza visiva consente all'utente di comprendere la distanza dall'oggetto.<br>
+        ### <a name="visual-feedback-on-hand-proximity-on-hololens-2br"></a>Feedback visivo sulla prossimità della mano HoloLens 2<br>
+        In HoloLens 2, c'è un ulteriore segnale visivo, che può aiutare la percezione della profondità dell'utente. Un anello vicino alla punta del dito viene visualizzato e ridimensionato man mano che la punta del dito si avvicina all'oggetto. L'anello converge infine in un punto quando viene raggiunto lo stato premuto. Questo affordance visivo consente all'utente di comprendere la distanza dall'oggetto.<br>
         <br>
-        *Ciclo video: esempio di feedback visivo basato sulla prossimità a un rettangolo di delimitazione*
+        *Ciclo video: esempio di feedback visivo in base alla prossimità a un rettangolo di selezione*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
@@ -66,7 +66,7 @@ Il delimitatore è l'interfaccia standard per la manipolazione di oggetti in rea
 
 <br>
 
-**Per lo sviluppo di app Unity, vedere [il riquadro delimitatore in Mixed Reality Toolkit-Unity.](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)**
+**Per lo sviluppo di app Unity, vedere [Rettangolo di selezione in Mixed Reality Toolkit-Unity.](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)**
 
 <br>
 
@@ -74,28 +74,28 @@ Il delimitatore è l'interfaccia standard per la manipolazione di oggetti in rea
 
 ## <a name="what-is-the-app-bar"></a>Che cos'è la barra dell'app?
 
-La barra dell'app è un menu a livello di oggetto che contiene una serie di pulsanti visualizzati sul bordo inferiore dei limiti di un ologramma. Questo modello viene in genere usato per consentire agli utenti di rimuovere e modificare gli ologrammi. La barra dell'app è stata progettata principalmente per gestire gli oggetti posizionati nell'ambiente di un utente. Insieme al rettangolo di delimitazione, un utente ha il controllo completo sulla posizione e sulla modalità di orientamento degli oggetti in realtà mista.
+La barra dell'app è un menu a livello di oggetto, che contiene una serie di pulsanti visualizzati sul bordo inferiore dei limiti di un ologramma. Questo modello viene comunemente usato per consentire agli utenti di rimuovere e regolare gli ologrammi. La barra dell'app è stata progettata principalmente come modo per gestire gli oggetti posizionati nell'ambiente di un utente. Insieme al rettangolo di selezione, un utente ha il controllo completo su dove e come gli oggetti sono orientati nella realtà mista.
 
 :::row:::
     :::column:::
         ### <a name="the-app-bar-follows-the-userbr"></a>La barra dell'app segue l'utente<br>
-        Poiché questo modello viene usato con oggetti bloccati dal mondo, quando un utente si sposta intorno all'oggetto, la barra dell'app verrà sempre visualizzata sul lato degli oggetti più vicino all'utente. Anche se non si tratta tecnicamente di un tabellone, questa funzionalità consente di ottenere lo stesso risultato. Impedire la posizione di un utente per occludere o bloccare la funzionalità che altrimenti sarebbe disponibile da una posizione diversa nell'ambiente. <br>
+        Poiché questo modello viene usato con oggetti bloccati a livello mondiale, quando un utente si sposta intorno all'oggetto, la barra dell'app verrà sempre visualizzata sul lato degli oggetti più vicino all'utente. Anche se non tecnicamente, questa funzionalità ottiene in modo efficace lo stesso risultato. Impedire la posizione di un utente per occludere o bloccare funzionalità altrimenti disponibili da una posizione diversa nel proprio ambiente. <br>
         <br>
-        *Ciclo video: aggirare un ologramma, la barra dell'app segue*
+        *Ciclo video: in giro per un ologramma, la barra dell'app segue*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![Aggirare un ologramma. Segue la barra dell'app.](images/HoloLens2_AppBarFollowing.gif)<br>
+       ![In giro per un ologramma. Segue la barra dell'app.](images/HoloLens2_AppBarFollowing.gif)<br>
     :::column-end:::
 :::row-end:::
 
 <br>
 
 
-## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a>Rettangolo di delimitazione in MRTK (Mixed Reality Toolkit) per Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** fornisce script e prefabbricati per il rettangolo di delimitazione e la barra dell'app. È possibile aggiungere un rettangolo di delimitazione assegnando lo script BoundingBox. cs su qualsiasi oggetto.
+## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a>Rettangolo di selezione in MRTK (Mixed Reality Toolkit) per Unity
+**[MRTK fornisce](https://github.com/Microsoft/MixedRealityToolkit-Unity)** script e prefab per il rettangolo di selezione e la barra dell'app. È possibile aggiungere un rettangolo di selezione assegnando lo script BoundingBox.cs a qualsiasi oggetto.
 
-* [MRTK-rettangolo di delimitazione](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box)
+* [MRTK - Rettangolo di selezione](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box)
 
 
 <br>
@@ -103,7 +103,7 @@ La barra dell'app è un menu a livello di oggetto che contiene una serie di puls
 ---
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

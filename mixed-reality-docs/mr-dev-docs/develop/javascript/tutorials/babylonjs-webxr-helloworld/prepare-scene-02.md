@@ -1,18 +1,18 @@
 ---
 title: Babylon.js per preparare una scena con oggetti 3D di base
-description: Informazioni su come usare babylon.js e aggiungere oggetti 3D di base a una scena.
+description: Informazioni su come usare babylon.js aggiungere oggetti 3D di base a una scena.
 author: bogenera
 ms.author: ayyonet
 ms.date: 03/05/2021
 ms.topic: article
 keywords: realtà mista, javascript, esercitazione, BabylonJS, hololens, realtà mista, UWP, Windows 10, WebXR, web immersive
 ms.localizationpriority: high
-ms.openlocfilehash: 963589cb221b7dba1c197fff06ccb8926e12f89c
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 8213c445da9c1bbf0eeb591b7995fb61bc6d5b5f
+ms.sourcegitcommit: 29a43366d5969f1a895bd184ebe272168d9be1e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143681"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110584506"
 ---
 # <a name="tutorial-prepare-a-scene"></a>Esercitazione: Preparare una scena
 
@@ -47,7 +47,7 @@ Nel passaggio precedente dell'esercitazione è stata creata una pagina Web di ba
 
 ## <a name="create-a-scene"></a>Creare una scena
 
-In una scena verranno visualizzati tutti i contenuti. Potrebbero essere presenti più scene ed è possibile passare da una scena all'altro. Altre informazioni su [babylon.js scene.](https://doc.babylonjs.com/divingDeeper/scene)
+Una scena è la posizione in cui verrà visualizzato tutto il contenuto. Potrebbero essere presenti più scene ed è possibile passare da una scena all'altro. Altre informazioni su [babylon.js scene.](https://doc.babylonjs.com/divingDeeper/scene)
 
 1. Aggiungere il tag di script dopo l'elemento HTML canvas e aggiungere il codice seguente per creare una scena color nero:
 
@@ -90,15 +90,27 @@ In una scena verranno visualizzati tutti i contenuti. Potrebbero essere presenti
 
 ## <a name="add-a-camera"></a>Aggiungere una fotocamera
 
-1. Per consentire l'input dell'utente, è necessario collegare una fotocamera all'area di disegno. Aggiungere la fotocamera di tipo [BABYLON. ArcRotateCamera,](https://doc.babylonjs.com/divingDeeper/cameras/camera_introduction#arc-rotate-camera) che consente di guardarsi attorno, ad esempio può essere ruotato intorno all'oggetto appena aggiunto alla scena. I parametri necessari per creare un'istanza della fotocamera sono nome, alfa (rotazione lungo l'asse longitudinale), beta (rotazione lungo l'asse latitudine), raggio (distanza dalla destinazione) e destinazione (destinazione che deve essere osservata dalla fotocamera). Aggiungere il codice seguente alla *funzione createScene:*
+1. Per visualizzare il mondo virtuale e interagire con esso, è necessario collegare una fotocamera all'area di disegno. Aggiungere la fotocamera di tipo [BABYLON. ArcRotateCamera,](https://doc.babylonjs.com/divingDeeper/cameras/camera_introduction#arc-rotate-camera)che può essere ruotato intorno a una destinazione. I parametri necessari per creare un'istanza della fotocamera sono:
+    1. **name:** nome della fotocamera
+    1. **alpha:** posizione angolare lungo l'asse longitudinale (in radianti)
+    1. **beta:** posizione angolare lungo l'asse latitudine (in radianti)
+    1. **radius:** distanza dalla destinazione
+    1. **target:** il punto verso cui la fotocamera deve sempre essere puntata verso (definito dalle coordinate x-y-z)
+    1. **scene:** la scena in cui si trova la fotocamera
+
+    Alfa, beta, raggio e destinazione definiscono insieme la posizione della fotocamera nello spazio, come illustrato nel diagramma seguente:
+
+    ![Camera Alpha Beta Radius](../images/camera-alpha-beta-radius.jpg)
+
+    Aggiungere il codice seguente alla *funzione createScene:*
 
     ```javascript
-    const alpha =  Math.PI;
-    const beta = Math.PI;
-    const radius = 5;
+    const alpha =  Math.PI/4;
+    const beta = Math.PI/3;
+    const radius = 8;
+    const target = new BABYLON.Vector3(0, 0, 0);
     
-    const camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 0);
-    camera.setPosition(new BABYLON.Vector3(alpha, beta, radius));
+    const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
     camera.attachControl(canvas, true);
     ```
 
@@ -132,12 +144,12 @@ In una scena verranno visualizzati tutti i contenuti. Potrebbero essere presenti
                 const scene = new BABYLON.Scene(engine);
                 scene.clearColor = new BABYLON.Color3.Black;
                 
-                const alpha =  Math.PI;
-                const beta = Math.PI;
-                const radius = 5;
+                const alpha =  Math.PI/4;
+                const beta = Math.PI/3;
+                const radius = 8;
+                const target = new BABYLON.Vector3(0, 0, 0);
                 
-                const camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 0);
-                camera.setPosition(new BABYLON.Vector3(alpha, beta, radius));
+                const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
                 camera.attachControl(canvas, true);
                 
                 const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));

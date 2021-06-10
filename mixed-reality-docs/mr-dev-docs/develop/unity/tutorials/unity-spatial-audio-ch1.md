@@ -1,35 +1,35 @@
 ---
-title: Esercitazioni audio spaziali-1. Aggiunta di audio spaziale al progetto
-description: Aggiungere il plug-in Microsoft Spatializer al progetto Unity per accedere a HoloLens 2 HRTF hardware offload.
+title: Esercitazioni sull'audio spaziale - 1. Aggiunta di audio spaziale al progetto
+description: Aggiungere il plug-in Microsoft Spatializer al progetto Unity per accedere HoloLens 2 offload hardware HRTF.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
-keywords: realtà mista, Unity, esercitazione, hololens2, audio spaziale, MRTK, Toolkit per realtà mista, UWP, Windows 10, HRTF, funzione di trasferimento relativa alla testa, Reverb, Microsoft Spatializer
-ms.openlocfilehash: 7964ecdc8adee7c61c4c7086b8d04983f6e3903f
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+keywords: realtà mista, unity, esercitazione, hololens2, audio spaziale, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, funzione di trasferimento correlata alla testa, riverbero, Spazialista Microsoft
+ms.openlocfilehash: 112531a3248461a5b380ad4b93de34545a2f2c3f
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982794"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403362"
 ---
-# <a name="1-adding-spatial-audio-to-your-unity-project"></a>1. aggiunta di audio spaziale al progetto Unity
+# <a name="1-adding-spatial-audio-to-your-unity-project"></a>1. Aggiunta di audio spaziale al progetto Unity
 
 ## <a name="overview"></a>Panoramica
 
-Benvenuti nell'esercitazione sull'audio spaziale per Unity in HoloLens2. Con questa serie di esercitazioni si apprenderà come usare l'offload della funzione di trasferimento Head-Related (HRTF) in HoloLens 2 e come abilitare il riverbero quando si usa l'offload HRTF.
+Benvenuti nell'esercitazione sull'audio spaziale per Unity in HoloLens2. In questa serie di esercitazioni si apprenderà come usare l'offload della funzione di trasferimento correlato alla testa (HRTF) in HoloLens 2 e Come abilitare il riverbero quando si usa l'offload HRTF.
 
-Il [repository GitHub Microsoft Spatializer](https://github.com/microsoft/spatialaudio-unity) include un progetto Unity completato di questa sequenza di esercitazione.
+Il [repository GitHub di Microsoft Spatializer](https://github.com/microsoft/spatialaudio-unity) include un progetto Unity completato di questa sequenza di esercitazioni.
 
-Per informazioni su ciò che significa spatialize i suoni usando le tecnologie di spazializzazione basate su HRTF e consigli per quando può essere utile, vedere [progettazione di suoni spaziali](/windows/mixed-reality/spatial-sound-design).
+Per comprendere cosa significa spazializzare i suoni usando tecnologie di spazializzazione basate su HRTF e consigli su quando può essere utile, vedere Spatial Sound Design (Progettazione dei suoni [spaziali).](/windows/mixed-reality/spatial-sound-design)
 
-## <a name="what-is-hrtf-offload"></a>Che cos'è HRTF offload?
+## <a name="what-is-hrtf-offload"></a>Che cos'è l'offload HRTF?
 
-L'elaborazione di audio con algoritmi basati su HRTF richiede una grande quantità di calcoli specializzati. HoloLens 2 include hardware dedicato che può essere utilizzato per evitare di sovraccaricare il processore di applicazioni, quindi "offload" dell'elaborazione degli algoritmi basati su HRTF.  Il plug-in Microsoft Spatializer offre un modo semplice per consentire all'applicazione di sfruttare i vantaggi dell'hardware HRTF dedicato, in modo che l'applicazione possa usare più processori di applicazioni per operazioni diverse dall'audio spaziale.
+L'elaborazione audio con algoritmi basati su HRTF richiede una grande quantità di calcoli specializzati. HoloLens 2 include hardware dedicato che può essere utilizzato per evitare il carico di lavoro del processore dell'applicazione, "offload" dell'elaborazione di algoritmi basati su HRTF.  Il plug-in microsoft spatializer offre un modo semplice per l'applicazione di sfruttare l'hardware HRTF dedicato, in modo che l'applicazione possa usare più processori dell'applicazione per operazioni diverse dall'audio spaziale.
 
 ## <a name="objectives"></a>Obiettivi
 
-* Importazione e abilitazione del plug-in Microsoft Spatializer
+* Importazione e abilitazione del plug-in microsoft spatializer
 * Abilitazione dell'audio spaziale nella workstation per sviluppatori
 
 ## <a name="prerequisites"></a>Prerequisiti
@@ -37,13 +37,12 @@ L'elaborazione di audio con algoritmi basati su HRTF richiede una grande quantit
 * Un PC Windows 10 configurato in cui siano [installati gli strumenti](../../install-the-tools.md) corretti
 * Conoscenza della programmazione C# di base
 * Un dispositivo HoloLens 2 [configurato per lo sviluppo](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> con Unity 2019 LTS installato e il modulo di supporto per la compilazione UWP (Universal Windows Platform) aggiunto
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> con Unity 2020/2019 LTS montato e il modulo piattaforma UWP (Universal Windows Platform) Build Support aggiunto
 
-Prima di continuare, è **consigliabile** completare la serie di esercitazioni [introduttive](mr-learning-base-01.md) oppure avere un'esperienza di base precedente con Unity e MRTK.
+È **consigliabile** completare la serie [di](mr-learning-base-01.md) esercitazioni introduttive o avere un'esperienza di base precedente con Unity e MRTK prima di continuare.
 
-> [!IMPORTANT]
->
-> * La versione di Unity consigliata per questa serie di esercitazioni è Unity 2019 LTS. Questa istruzione sostituisce gli eventuali requisiti o suggerimenti relativi alla versione di Unity indicati negli argomenti visualizzabili facendo clic sui collegamenti dei prerequisiti sopra riportati.
+> [!Important]
+> Questa serie di esercitazioni supporta Unity 2020 LTS (attualmente 2020.3.x) se si usa Open XR o Windows XR Plugin e anche Unity 2019 LTS (attualmente 2019.4.x) se si usa WSA legacy o Windows XR Plugin. Questa istruzione sostituisce gli eventuali requisiti relativi alla versione di Unity indicati negli argomenti visualizzabili facendo clic sui collegamenti dei prerequisiti sopra riportati.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Creazione e preparazione del progetto Unity
 
@@ -57,40 +56,42 @@ A questo scopo, segui prima l'esercitazione [Inizializzazione del progetto e pri
 
 1. [Importazione delle risorse essenziali TextMeshPro](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 
-1. [Importazione di Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+1. [Importazione di Mixed Reality Toolkit e configurazione del progetto Unity](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 
-1. [Configurazione del progetto Unity](mr-learning-base-02.md#configuring-the-unity-project)
+1. [Creazione e configurazione della scena e](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) assegnare alla scena un nome appropriato, ad esempio *SpatialAudio*
 
-1. [Creazione e impostazione della scena](mr-learning-base-02.md#creating-and-configuring-the-scene) e assegnare alla scena un nome appropriato, ad esempio *SpatialAudio*
-
-Quindi, seguire le istruzioni per la [modifica delle opzioni di visualizzazione di riconoscimento spaziale](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) per verificare che il profilo di configurazione MRTK per la scena sia **DefaultHoloLens2ConfigurationProfile** e modificare le opzioni di visualizzazione per la mesh di riconoscimento spaziale in **occlusione**.
+Segui quindi [](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) le istruzioni riportate in Modifica dell'opzione di visualizzazione della consapevolezza spaziale per assicurarti che il profilo di configurazione di MRTK per la scena sia **DefaultHoloLens2ConfigurationProfile** e modifica le opzioni di visualizzazione per la mesh di consapevolezza spaziale in **Occlusion**.
 
 ## <a name="adding-microsoft-spatializer-to-the-project"></a>Aggiunta di Microsoft Spatializer al progetto
 
-Scaricare e importare Microsoft Spatializer  <a href="https://github.com/microsoft/spatialaudio-unity/releases/download/v1.0.18/Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage" target="_blank">Microsoft. SpatialAudio. Spatializer. Unity. 1.0.18. file unitypackage Tools </a>
+Scaricare e importare  <a href="https://github.com/microsoft/spatialaudio-unity/releases/download/v1.0.18/Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage" target="_blank">Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage </a>
 
 >[!TIP]
-> Per un promemoria su come importare un pacchetto personalizzato Unity, è possibile fare riferimento alle istruzioni relative all' [importazione delle risorse dell'esercitazione](mr-learning-base-02.md#importing-the-tutorial-assets) .
+> Per un promemoria su come importare un pacchetto personalizzato di Unity, vedere le istruzioni relative all'importazione degli [asset dell'esercitazione.](mr-learning-base-02.md#importing-the-tutorial-assets)
 
 ## <a name="enable-the-microsoft-spatializer-plugin"></a>Abilitare il plug-in Microsoft Spatializer
 
-Dopo aver importato **Microsoft Spatializer** , è necessario abilitarlo. Aprire **modifica-> impostazioni progetto-> audio** e modificare il **plug** -in Spatializer in "Microsoft Spatializer".
+Dopo aver importato Microsoft **Spatializer** nel progetto Unity, verrà visualizzata la finestra **MRTK Project Configurator(Configuratore progetto MRTK),** usare l'elenco a discesa **Spazializzatore audio** per selezionare l'utilità di spazializzatore Microsoft e quindi fare clic sul pulsante Applica per applicare l'impostazione:
 
-![Impostazioni del progetto che mostrano il plug-in Spatializer](images/spatial-audio/spatial-audio-01-section3-step1-1.png)
+![Configuratore di progetti MRTK](images/spatial-audio/spatial-audio-01-section3-step1-1.PNG)
+
+È anche possibile abilitare manualmente Microsoft Spatializer: Open **Edit -> Project Settings -> Audio** e modificare **Spatializer Plugin (Plug-in** spazializzatore Microsoft) in "Microsoft Spatializer".
+
+![Impostazioni del progetto che mostra il plug-in dello spazializzatore](images/spatial-audio/spatial-audio-01-section3-step1-2.PNG)
 
 ## <a name="enable-spatial-audio-on-your-workstation"></a>Abilitare l'audio spaziale nella workstation
 
-Nelle versioni desktop di Windows, l'audio spaziale è disabilitato per impostazione predefinita. Per abilitarla, fare clic con il pulsante destro del mouse sull'icona del volume sulla barra delle applicazioni. Per ottenere la migliore rappresentazione di ciò che è possibile sentire in HoloLens 2, scegliere **audio spaziale > Windows Sonic per le cuffie**.
+Nelle versioni desktop di Windows l'audio spaziale è disabilitato per impostazione predefinita. Abilitarla facendo clic con il pulsante destro del mouse sull'icona del volume nella barra delle applicazioni. Per ottenere la migliore rappresentazione di ciò che si HoloLens 2, scegliere Audio spaziale **-> Windows Sonic per cuffie**.
 
-![Impostazioni audio spaziali desktop](images/spatial-audio/spatial-audio-01-section4-step1-1.png)
+![Impostazioni audio spaziali del desktop](images/spatial-audio/spatial-audio-01-section4-step1-1.PNG)
 
 > [!NOTE]
 > Questa impostazione è necessaria solo se si prevede di testare il progetto nell'editor di Unity.
 
 ## <a name="congratulations"></a>Lezione completata
 
-In questa esercitazione è stato illustrato come importare e abilitare il plug-in Microsoft Spatializer e anche per abilitare l'audio spaziale nella workstation.
+In questa esercitazione si è appreso come importare e abilitare il plug-in Microsoft Spatializer e come abilitare l'audio spaziale nella workstation.
 Nell'esercitazione successiva si apprenderà come aggiungere audio spaziale nel progetto Unity.
 
 > [!div class="nextstepaction"]
-> [Esercitazione successiva: 2. suoni di interazione con il pulsante Spatializing](unity-spatial-audio-ch2.md)
+> [Esercitazione successiva: 2. Spazializzazione dei suoni di interazione dei pulsanti](unity-spatial-audio-ch2.md)

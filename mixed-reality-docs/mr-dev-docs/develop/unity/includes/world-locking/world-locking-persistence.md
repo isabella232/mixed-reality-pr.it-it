@@ -1,22 +1,22 @@
 ---
-ms.openlocfilehash: 25e42ba872764a98d4cb966b5a4922cc1dea0dc9
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: 96da41f28533c227fb106d8842907747f34098ec
+ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528818"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110349767"
 ---
 # <a name="world-locking-tools-recommended"></a>[Strumenti di blocco del mondo (scelta consigliata)](#tab/wlt)
 
 Per impostazione predefinita, World Locking Tools ripristina il sistema di coordinate di Unity rispetto al mondo fisico tra le sessioni. Ciò significa che per fare in modo che un ologramma venga visualizzato nello stesso posto nel mondo fisico dopo la chiusura e la ri-esecuzione dell'applicazione, l'ologramma deve avere di nuovo la stessa posizione.
 
-![Componente del contesto di blocco del mondo nel controllo Unity](../../images/world-locking-tools-img-02.png)
+![Componente del contesto di blocco del mondo in Unity Inspector](../../images/world-locking-tools-img-02.png)
 
-Se l'applicazione richiede un controllo  più **fine,** il salvataggio automatico e il caricamento automatico possono essere disabilitati nel controllo e la persistenza gestita da uno script, come descritto nella sezione relativa alla persistenza [della documentazione](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html).
+Se l'applicazione richiede un controllo  più **fine,** il salvataggio automatico e il caricamento automatico possono essere disabilitati nel controllo e la persistenza gestita da uno script come descritto nella sezione relativa alla persistenza della [documentazione](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html).
 
 # <a name="aranchormanager"></a>[ARAnchorManager](#tab/anchorstore)
 
-Un'API aggiuntiva denominata **XRAnchorStore consente** di rendere persistenti gli ancoraggi tra le sessioni. XRAnchorStore è una rappresentazione degli ancoraggi salvati in un dispositivo. Gli ancoraggi possono essere resi persistenti dagli **ARAnchor** nella scena Unity, caricati dall'archiviazione in nuovi **ARAnchor** o eliminati dall'archiviazione.
+Un'API aggiuntiva denominata **XRAnchorStore consente** di rendere persistenti gli ancoraggi tra le sessioni. XRAnchorStore è una rappresentazione degli ancoraggi salvati in un dispositivo. Gli ancoraggi possono essere resi persistenti dagli **ARAnchor** nella scena Unity, caricati dall'archiviazione in nuovi **ARAnchors** o eliminati dall'archiviazione.
 
 > [!NOTE]
 > Questi ancoraggi devono essere salvati e caricati nello stesso dispositivo. L'archiviazione tra dispositivi di ancoraggio sarà supportata tramite Ancoraggi nello spazio di Azure in una versione futura.
@@ -80,7 +80,7 @@ public static Task<XRAnchorStore> TryGetAnchorStoreAsync(this XRAnchorSubsystem 
 
 ### <a name="loading-an-anchor-store"></a>Caricamento di un archivio di ancoraggio
 
-Per caricare un archivio di ancoraggio in **Unity 2020 e OpenXR,** accedervi dal sottosistema aranchorManager come segue:
+Per caricare un archivio di ancoraggio in **Unity 2020 e OpenXR,** accedervi dal sottosistema ARAnchorManager come indicato di seguito:
 
 ``` cs
 ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
@@ -99,32 +99,32 @@ ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
 XRAnchorStore anchorStore = await arAnchorManager.subsystem.TryGetAnchorStoreAsync();
 ```
 
-Per un esempio completo di ancoraggi persistenti/non persistenti, vedi lo script Anchors -> Anchors Sample GameObject e AnchorsSample.cs nella scena di esempio del plug-in [OpenXR](../../openxr-getting-started.md#hololens-2-samples)di Realtà mista:
+Per un esempio completo di ancoraggi persistenti/non persistenti, vedere lo script Di esempio Ancoraggi -> Anchors GameObject e AnchorsSample.cs nella scena di esempio del plug-in [OpenXR](../../openxr-getting-started.md#unity-sample-projects-for-openxr-and-hololens-2)di realtà mista:
 
 ![Screenshot del pannello della gerarchia aperto nell'editor di Unity con l'esempio di ancoraggi evidenziato](../../images/openxr-features-img-04.png)
 
-![Screenshot del pannello di controllo aperto nell'editor di Unity con lo script di esempio degli ancoraggi evidenziato](../../images/openxr-features-img-05.png)
+![Screenshot del pannello inspector aperto nell'editor unity con lo script di esempio anchors evidenziato](../../images/openxr-features-img-05.png)
 
 # <a name="worldanchor"></a>[WorldAnchor](#tab/worldanchor)
 
-**WorldAnchorStore è** la chiave per creare esperienze olografiche in cui gli ologrammi rimangono in posizioni reali specifiche tra le istanze dell'applicazione. Gli utenti possono quindi aggiungere singoli ologrammi dove vogliono e trovarli in un secondo momento nello stesso punto in molti usi dell'app.
+**WorldAnchorStore è** la chiave per creare esperienze olografiche in cui gli ologrammi rimangono in posizioni reali specifiche tra istanze dell'applicazione. Gli utenti possono quindi aggiungere singoli ologrammi dove vogliono e trovarli in un secondo momento nello stesso punto per molti usi dell'app.
 
 **Spazio dei nomi:** *UnityEngine.XR.WSA.Persistence*<br>
 **Classe:** *WorldAnchorStore*
 
-WorldAnchorStore consente di rendere persistente la posizione di WorldAnchor tra le sessioni. Per rendere effettivamente persistenti gli ologrammi tra le sessioni, dovrai tenere traccia separatamente dei GameObject che usano un ancoraggio mondo specifico. Spesso è opportuno creare una radice GameObject con un ancoraggio del mondo e fare in modo che gli ologrammi figlio vi ancoraggio con un offset di posizione locale.
+WorldAnchorStore consente di rendere persistente la posizione di WorldAnchor tra le sessioni. Per rendere persistenti gli ologrammi tra le sessioni, è necessario tenere traccia separatamente degli oggetti GameObject che usano un ancoraggio mondo specifico. Spesso è opportuno creare una radice GameObject con un ancoraggio mondo e avere ologrammi figlio ancorati con un offset di posizione locale.
 
-Per caricare gli ologrammi dalle sessioni precedenti:
+Per caricare ologrammi dalle sessioni precedenti:
 
 1. Ottenere WorldAnchorStore
 2. Caricare i dati dell'app relativi all'ancoraggio del mondo, che fornisce l'ID dell'ancoraggio del mondo
-3. Caricare un ancoraggio del mondo dal relativo ID
+3. Caricare un ancoraggio mondo dal relativo ID
 
-Per salvare gli ologrammi per sessioni future:
+Per salvare gli ologrammi per le sessioni future:
 
 1. Ottenere WorldAnchorStore
 2. Salvare un ancoraggio mondo specificando un ID
-3. Salvare i dati dell'app relativi all'ancoraggio del mondo insieme a un ID
+3. Salvare i dati dell'app relativi all'ancoraggio mondiale insieme a un ID
 
 ### <a name="getting-the-worldanchorstore"></a>Recupero di WorldAnchorStore
 
@@ -193,8 +193,8 @@ for (int index = 0; index < ids.Length; index++)
 
 ## <a name="persisting-holograms-for-multiple-devices"></a>Salvataggio permanente di ologrammi per più dispositivi
 
-È possibile usare <a href="/azure/spatial-anchors/overview" target="_blank">Ancoraggi</a> nello stato di Azure per creare un ancoraggio cloud durevole da un WorldAnchor locale, che l'app può quindi individuare in più dispositivi HoloLens, iOS e Android, anche se questi dispositivi non sono presenti contemporaneamente.  Poiché gli ancoraggi cloud sono persistenti, più dispositivi nel tempo possono visualizzare il rendering del contenuto relativo all'ancoraggio nella stessa posizione fisica.
+È possibile usare <a href="/azure/spatial-anchors/overview" target="_blank">Ancoraggi</a> nello stato di Azure per creare un ancoraggio cloud durevole da un WorldAnchor locale, che l'app può quindi individuare in più dispositivi HoloLens, iOS e Android, anche se questi dispositivi non sono presenti contemporaneamente.  Poiché gli ancoraggi cloud sono persistenti, più dispositivi nel tempo possono visualizzare il rendering del contenuto relativo a tale ancoraggio nella stessa posizione fisica.
 
 Per iniziare a creare esperienze condivise in Unity, provare le guide introduttive di <a href="/azure/spatial-anchors/unity-overview" target="_blank">Azure Spatial Anchors Unity di</a>5 minuti.
 
-Dopo aver eseguito le attività con Ancoraggi nello spazio di Azure, è possibile creare e individuare ancoraggi <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">in Unity.</a>
+Dopo aver eseguito l'esecuzione con Ancoraggi nello spazio di Azure, è possibile creare e individuare <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">ancoraggi in Unity.</a>

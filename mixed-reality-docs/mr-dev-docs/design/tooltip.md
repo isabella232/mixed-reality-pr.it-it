@@ -1,23 +1,23 @@
 ---
 title: Descrizione comando
-description: Informazioni su come usare le descrizioni comandi nelle applicazioni di realtà mista, che sono descrizioni brevi collegate a un altro controllo o oggetto.
+description: Informazioni su come usare le descrizioni comando nelle applicazioni di realtà mista, ovvero brevi descrizioni collegate a un altro controllo o oggetto.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Realtà mista, controlli, interazione, interfaccia utente, UX, auricolare realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, descrizione comando, MRTK, Toolkit realtà mista
-ms.openlocfilehash: 1ab3c00557329fbe53161cbb58c06ee7ede0b66b
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: Realtà mista, controlli, interazione, interfaccia utente, esperienza utente, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, HoloLens, descrizione comando, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: cd490a260c5caedc3f315d72f9a47bce563695a0
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300316"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600591"
 ---
 # <a name="tooltip"></a>Descrizione comando
 
 ![Descrizione comando](images/UX_Hero_Tooltip.jpg)
 
-Una descrizione comando è una breve descrizione collegata a un altro controllo o oggetto. Sono usati per fornire un suggerimento o informazioni aggiuntive su un controllo più approfondito. Le descrizioni comandi consentono agli utenti di comprendere oggetti sconosciuti nell'ambiente fisico che non sono descritti direttamente. 
+Una descrizione comando è una breve descrizione collegata a un altro controllo o oggetto. Vengono usati per comunicare un suggerimento o informazioni aggiuntive dopo un'analisi più vicina. Le descrizioni comando consentono agli utenti di comprendere gli oggetti non noti nell'ambiente fisico che non sono descritti direttamente. 
 
 <br>
 
@@ -25,13 +25,13 @@ Una descrizione comando è una breve descrizione collegata a un altro controllo 
 
 ## <a name="tooltip-in-mrtk-mixed-reality-toolkit-for-unity"></a>Descrizione comando in MRTK (Mixed Reality Toolkit) per Unity
 
-* [MRTK-descrizione comando](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/tooltip)
+* [MRTK - Descrizione comando](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/tooltip)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Cursori](cursors.md)
 * [Raggio della mano](point-and-commit.md)

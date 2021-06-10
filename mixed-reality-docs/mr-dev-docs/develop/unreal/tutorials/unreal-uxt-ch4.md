@@ -7,12 +7,12 @@ ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, esercitazione, guida introduttiva, mrtk, uxt, UX Tools, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 2ceb16d31c793629e93c3dca00cb215fcbe38c6a
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 771dd4028adfacb27544e632aa0f355d3bc91c66
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237152"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110712606"
 ---
 # <a name="4-making-your-scene-interactive"></a>4. Rendere la scena interattiva
 
@@ -20,26 +20,28 @@ Nell'esercitazione precedente sono stati aggiunti un asset ARSession, il pedone 
 
 ## <a name="objectives"></a>Obiettivi
 
-* Installazione del plug-in UX Tools di Mixed Reality Toolkit da GitHub
+* Installazione del plug-in Mixed Reality UX Tools
 * Aggiunta di attori di interazione manuale sulla punta delle dita
 * Creazione e aggiunta di manipolatori agli oggetti nella scena
 * Uso della simulazione dell'input per convalidare il progetto
 
 ## <a name="downloading-the-mixed-reality-ux-tools-plugin"></a>Download del plug-in UX Tools di Mixed Reality Toolkit
-Prima di iniziare a usare l'input dell'utente, è necessario aggiungere il plug-in al progetto.
+Prima di iniziare a lavorare con l'input dell'utente, devi aggiungere il plug-in Mixed Reality UX Tools al progetto. Per altre informazioni su UX Tools, è possibile vedere il progetto in [GitHub.](https://aka.ms/uxt-unreal)
 
-1. Nella [pagina delle versioni](https://github.com/microsoft/MixedReality-UXTools-Unreal/releases) del plug-in UX Tools di Mixed Reality Toolkit su GitHub passare alla versione UX Tools for Unreal v0.10.0 e scaricare **UXTools.0.10.0.zip**. Decomprimere i file.
+1. Aprire l'utilità di avvio Epic Games. Passare a Unreal Engine Marketplace e cercare "[Mixed Reality UX Tools".](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools) Installare il plug-in nel motore.
 
-2.  Crea una nuova cartella denominata **Plugins** (Plug-in) nella cartella radice del progetto. Copia il plug-in UXTools decompresso in questa cartella e riavvia l'editor Unreal.
+![Unreal Marketplace](images/unreal-uxt/2-uxt-plugin.PNG)
 
-![Creare una cartella dei plug-in del progetto](images/unreal-uxt/4-plugins.PNG)
+2. Nell'editor di Unreal passare a **Project Settings**  >  **Plugins (Plug-in** impostazioni progetto) e cercare "Mixed Reality UX Tools". Verificare che il plug-in sia abilitato e riavviare l'editor, se richiesto.
 
-3.  Il plug-in UX Tools include una cartella Content (Contenuto) con sottocartelle per i componenti, tra cui **Buttons** (Pulsanti), **Input Simulation** (Simulatori di input) e **Pointers** (Puntatori), oltre a una cartella C++ Classes (Classi C++) con codice aggiuntivo.  
+![Abilitazione del plug-in UX Tools per realtà mista](images/unreal-uxt/2-enable-uxt.PNG)
+
+3.  Il plug-in UXTools include una cartella Content con sottocartelle per i componenti, tra cui **Buttons,** **XR Simulation** e **Pointers,** e una cartella Classes di C++ con codice aggiuntivo.  
 
 > [!NOTE]
-> Se non viene visualizzata la sezione **UXTools Content** (Contenuto UXTools) in **Content Browser** (Browser contenuto), fai clic su **View Options > Show Plugin Content** (Opzioni visualizzazione > Mostra contenuto plug-in).
+> Se la sezione **UXTools Content (Contenuto UXTools)** in **Content Browser (Browser** contenuto) non è visualizzata, fare clic su View Options (Opzioni di **visualizzazione) > Engine Content (Mostra contenuto motore).**
 
-![Mostra contenuto plug-in](images/unreal-uxt/4-showplugincontent.PNG)
+![Visualizzare il contenuto del motore](images/unreal-uxt/4-showenginecontent.PNG)
 
 La documentazione aggiuntiva per il plug-in è reperibile nel [repository](https://aka.ms/uxt-unreal) Mixed Reality UX Tools su GitHub.
 
@@ -69,7 +71,7 @@ La finestra **Event Graph** (Grafico eventi) dovrebbe risultare analoga alla seg
 
 ![Generare attori di interazione manuale Uxt](images/unreal-uxt/4-spawnactor.PNG)
 
-Entrambi gli attori di interazione manuale Uxt devono avere proprietari e posizioni di trasformazione iniziale. La trasformazione iniziale non è importante in questo caso, perché gli strumenti dell'esperienza utente avranno a disposizione gli attori di interazione diretta per passare alle mani virtuali non appena sono visibili. La funzione `SpawnActor`, tuttavia, richiede un input di trasformazione per evitare un errore del compilatore, quindi useremo i valori predefiniti.
+Entrambi gli attori di interazione manuale Uxt devono avere proprietari e posizioni di trasformazione iniziale. La trasformazione iniziale non è importante in questo caso perché UX Tools avrà gli attori di interazione manuale che passano alle mani virtuali non appena sono visibili. La funzione `SpawnActor`, tuttavia, richiede un input di trasformazione per evitare un errore del compilatore, quindi useremo i valori predefiniti.
 
 1. Trascina e rilascia il segnaposto fuori da uno dei segnaposto **Spawn Transform** (Genera trasformazione) per inserire un nuovo nodo.
     * Cerca il nodo **Make Transform** (Crea trasformazione) e quindi trascina **Return Value** (Valore restituito) su **Spawn Transform** (Genera trasformazione) dell'altra mano, in modo che entrambi i nodi **SpawnActor** (Genera attore) siano connessi.

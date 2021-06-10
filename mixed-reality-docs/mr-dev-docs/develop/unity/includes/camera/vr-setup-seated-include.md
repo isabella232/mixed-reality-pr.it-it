@@ -1,74 +1,74 @@
 ---
-ms.openlocfilehash: c7e5be36420ef14fe5aaeaafb49c0a990942339f
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 3bffb5db8f4a36d04c2b408c939cbd2010a7def7
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636381"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110748475"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-Usare la classe [MixedRealityPlayspace](https://docs.microsoft.com/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) da MRTK per Unity e impostare la **scala di destinazione** su **Seated**:
+Usare la [classe MixedRealityPlayspace](/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) di MRTK per Unity e impostare **Scala di** destinazione **su Seated:**
 
-![Finestra Impostazioni MRTK](../../images/mrtk-target-scale.png)
+![Finestra delle impostazioni MRTK](../../images/mrtk-target-scale.png)
 
-MRTK deve gestire automaticamente la posizione dei playspace e della fotocamera, ma è consigliabile eseguire il doppio controllo:
+MRTK deve gestire automaticamente la posizione dello spazio di riproduzione e della fotocamera, ma è consigliabile eseguire un doppio controllo:
 
-![Playspace MRTK](../../images/mrtk-playspace.png)
+![Spazio di riproduzione MRTK](../../images/mrtk-playspace.png)
 
-1. Nel pannello **gerarchia** espandere il GameObject **MixedRealityPlayspace** e trovare l'oggetto figlio della **fotocamera principale**
-2. Nel pannello **Inspector** trovare il componente **Transform** e modificare la **posizione** in **(X: 0, Y: 0, Z: 0)**
+1. Nel pannello **Gerarchia** espandere **MixedRealityPlayspace** GameObject e trovare l'oggetto **figlio Main Camera**
+2. Nel pannello **Inspector** (Controllo) trovare **il componente Transform** (Trasforma) e impostare Position **(Posizione)** su **(X: 0, Y: 0, Z: 0)**
 
-# <a name="xr-sdk"></a>[SDK XR](#tab/xr)
+# <a name="xr-sdk"></a>[XR SDK](#tab/xr)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-Impostare la modalità di origine del rilevamento su [XRInputSubsystem](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.html). Dopo aver ottenuto il sottosistema, chiamare [TrySetTrackingOriginMode](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.TrySetTrackingOriginMode.html):
+Impostare la modalità di origine di rilevamento in [XRInputSubsystem](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.html). Dopo aver ottenuto il sottosistema, chiamare [TrySetTrackingOriginMode](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.TrySetTrackingOriginMode.html):
 
 ```cs
 xrInputSubsystem.TrySetTrackingOriginMode(TrackingOriginModeFlags.Device);
 ```
 
-E collaborano con [XRRig](https://docs.unity3d.com/Manual/configuring-project-for-xr.html)di Unity.
+E usare [XRRig](https://docs.unity3d.com/Manual/configuring-project-for-xr.html)di Unity.
 
 ![Rig XR nella gerarchia](../../images/xrsdk-xrrig.png)
 
-# <a name="legacy-wsa"></a>[WSA legacy](#tab/wsa)
+# <a name="legacy-wsa"></a>[Legacy WSA](#tab/wsa)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-1. Passare ad **altre impostazioni** sezione delle **impostazioni di Windows Store Player**
-2. Scegliere la **realtà mista di Windows** come dispositivo, che può essere elencato come **Windows olografico** nelle versioni precedenti di Unity
-3. Selezione della **realtà virtuale supportata**
+1. Passare alla **sezione Altre impostazioni** delle impostazioni di Windows Store **Player**
+2. Scegliere **Windows Mixed Reality** come dispositivo, che potrebbe essere elencato come **Windows Holographic** nelle versioni precedenti di Unity
+3. Selezionare **Realtà virtuale supportata**
 
-Poiché l'oggetto fotocamera principale viene contrassegnato automaticamente come fotocamera, Unity è in tutto lo spostamento e la traduzione.
+Poiché l'oggetto Fotocamera principale viene contrassegnato automaticamente come fotocamera, Unity alimenta tutti i movimenti e la traduzione.
 
 >[!NOTE]
 >Queste impostazioni devono essere applicate alla fotocamera in ogni scena dell'app.
 >
->Per impostazione predefinita, quando si crea una nuova scena in Unity, questa conterrà una fotocamera principale GameObject nella gerarchia che include il componente della fotocamera, ma le impostazioni non sono state applicate correttamente.
+>Per impostazione predefinita, quando si crea una nuova scena in Unity, questa conterrà un oggetto GameObject della fotocamera principale nella gerarchia che include il componente Fotocamera, ma non avrà le impostazioni seguenti applicate correttamente.
 
-**Spazio dei nomi:** *UnityEngine. XR*<br>
+**Spazio dei nomi:** *UnityEngine.XR*<br>
 **Tipo:** *XRDevice*
 
-Per creare un'esperienza di **solo orientamento** o **scalabilità**, è necessario impostare Unity sul tipo di spazio di rilevamento stazionario. Lo spazio di rilevamento fisso imposta il sistema di Coordinate internazionali di Unity per tenere traccia del [frame di riferimento fisso](../../../../design/coordinate-systems.md#spatial-coordinate-systems). Nella modalità di rilevamento fisso, il contenuto inserito nell'editor appena davanti alla posizione predefinita della fotocamera (avanti è-Z) verrà visualizzato davanti all'utente all'avvio dell'app.
+Per creare **un'esperienza solo orientamento** o su scala da seduti, è necessario impostare Unity sul tipo di spazio di rilevamento stazionario.  Lo spazio di rilevamento stazionario imposta il sistema di coordinate del mondo di Unity per tenere traccia [del fotogramma stazionario di riferimento.](../../../../design/coordinate-systems.md#spatial-coordinate-systems) Nella modalità di rilevamento stazionario, il contenuto posizionato nell'editor proprio davanti alla posizione predefinita della fotocamera (forward è -Z) verrà visualizzato davanti all'utente all'avvio dell'app.
 
 ```cs
 XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
 ```
 
-**Spazio dei nomi:** *UnityEngine. XR*<br>
+**Spazio dei nomi:** *UnityEngine.XR*<br>
 **Tipo:** *InputTracking*
 
-Per un' **esperienza solo con orientamento** puro, ad esempio un visualizzatore video di 360 gradi (dove gli aggiornamenti delle intestazioni posizionali potrebbero rovinare l'illusione), è possibile impostare [XR. InputTracking. disablePositionalTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking-disablePositionalTracking.html) su true:
+Per **un'esperienza** pura solo con orientamento, ad esempio un visualizzatore video a 360 gradi (in cui gli aggiornamenti della testa posizionale avrebbero distrutto l'illusione), è quindi possibile impostare [XR. InputTracking.disablePositionalTracking su](https://docs.unity3d.com/ScriptReference/XR.InputTracking-disablePositionalTracking.html) true:
 
 ```cs
 InputTracking.disablePositionalTracking = true;
 ```
 
-Per un' **esperienza a scalabilità verticale**, per consentire all'utente di ricentrare l'origine in un secondo momento, è possibile chiamare [XR. Metodo InputTracking. recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html) :
+Per **un'esperienza su larga scala,** per consentire all'utente di eseguire in seguito una versione più recente dell'origine da seduti, è possibile chiamare [il metodo XR. Metodo InputTracking.Recenter:](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html)
 
 ```cs
 InputTracking.Recenter();
 ```
 
-Se si sta creando un' [esperienza a scalabilità verticale](../../../../design/coordinate-systems.md), è possibile ricentrare l'origine del mondo di Unity nella posizione Head corrente dell'utente chiamando **[XR. Metodo InputTracking. recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html)** .
+Se si sta creando un'esperienza su larga [scala,](../../../../design/coordinate-systems.md)è possibile visualizzare di recente l'origine del mondo di Unity nella posizione head corrente dell'utente chiamando **[XR. Metodo InputTracking.Recenter.](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html)**

@@ -1,22 +1,22 @@
 ---
-title: Uso di AR Foundation
-description: Documentazione per l'uso di ARFoundation in Unity
+title: Configurazione MRTK per Android e iOS (ARFoundation)
+description: Documentazione per configurare MRTK per Android e iOS (ARFoundation) in Unity
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, AR Core, AR Kit, iOS, IOS, Android, AR Foundation
-ms.openlocfilehash: 0f02eb94d95c2900348adaa9e1a02c3e54832a96
-ms.sourcegitcommit: 62beb626b2db6ce7df86014bd22bf1946b8906b9
+keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, AR Core, AR Kit, iOS, IOS, Android, AR Foundation
+ms.openlocfilehash: 9f621008db76e3f8e443545b795db442d7c17dda
+ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "110207453"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110345134"
 ---
-# <a name="how-to-configure-mrtk-for-ios-and-android-experimental"></a>Come configurare MRTK per iOS e Android [sperimentale]
+# <a name="how-to-configure-mrtk-for-ios-and-android-experimental"></a>Come configurare MRTK per iOS e Android [Sperimentale]
 
 ## <a name="install-required-packages"></a>Installare i pacchetti necessari
 
-1. Scaricare e importare **il pacchetto Microsoft.MixedReality.Toolkit.Unity.Foundation** da [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0) o [dal](../configuration/usingupm.md) Gestione pacchetti
+1. Scaricare e importare il **pacchetto Microsoft.MixedReality.Toolkit.Unity.Foundation** da [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0) o [unity Gestione pacchetti](../configuration/usingupm.md)
 
 1. In Unity Gestione pacchetti (UPM) installare i pacchetti seguenti:
 
@@ -52,34 +52,34 @@ La procedura seguente presuppone l'uso dell'oggetto MixedRealityToolkit. I passa
 
 1. Selezionare l'oggetto MixedRealityToolkit nella gerarchia della scena.
 
-    ![Gerarchia della scena configurata di MRTK](../features/images/MRTK_ConfiguredHierarchy.png)
+    ![Gerarchia della scena configurata MRTK](../features/images/MRTK_ConfiguredHierarchy.png)
 
 1. Selezionare **Copia e personalizza** per clonare il profilo MRTK per abilitare la configurazione personalizzata.
 
     ![Clonare il profilo MRTK](../features/images/camera-system/CloneProfileARFoundation.png)
 
-1. Selezionare **Clone (Clona)** accanto a Camera Profile (Profilo fotocamera).
+1. Selezionare **Clona** accanto al profilo della fotocamera.
 
     ![Clonare il profilo della fotocamera MRTK](../features/images/camera-system/CloneCameraProfileARFoundation.png)
 
-1. Passare al pannello Inspector (Controllo) alla sezione camera system (Sistema fotocamera) ed espandere la **sezione Camera Settings Providers (Provider di impostazioni** fotocamera).
+1. Passare al pannello Inspector (Controllo) nella sezione camera system (Sistema fotocamera) ed espandere la **sezione Camera Settings Providers (Provider di impostazioni** fotocamera).
 
     ![Espandere i provider di impostazioni](../features/images/camera-system/ExpandProviders.png)
 
-1. Fare **clic su Add Camera Settings Provider (Aggiungi provider** di impostazioni fotocamera) ed espandere la voce New camera settings **(Nuove impostazioni fotocamera) appena** aggiunta.
+1. Fare **clic su Add Camera Settings Provider (Aggiungi provider** di impostazioni fotocamera) ed espandere la voce New camera settings **(Nuove impostazioni fotocamera)** appena aggiunta.
 
     ![Espandere il nuovo provider di impostazioni](../features/images/camera-system/ExpandNewProvider.png)
 
-1. Selezionare il provider Unity AR Camera Settings (Impostazioni fotocamera AR Unity)
+1. Selezionare il provider di impostazioni fotocamera UNITY AR
 
     ![Selezionare il provider di impostazioni di Unity AR](../features/images/camera-system/SelectUnityArSettings.png)
 
-    Per altre informazioni sulla configurazione del provider di impostazioni della fotocamera AR unity: Provider [di impostazioni della fotocamera AR Unity.](../features/camera-system/unity-ar-camera-settings.md)
+    Per altre informazioni sulla configurazione del provider di impostazioni della fotocamera Unity AR: Provider [di impostazioni fotocamera Unity AR.](../features/camera-system/unity-ar-camera-settings.md)
 
 > [!NOTE]
-> Questa installazione controlla (all'avvio dell'applicazione) se i componenti AR Foundation sono nella scena. In caso contrario, vengono aggiunti automaticamente per il funzionamento con ARCore e ARKit.
-> Se è necessario impostare un comportamento specifico, è necessario aggiungere manualmente i componenti necessari.
-> Per altre informazioni sui componenti ar Foundation e sull'installazione, vedere questa [documentazione.](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@2.2/manual/index.html#samples)
+> Questa installazione controlla (all'avvio dell'applicazione) se i componenti ar Foundation sono nella scena. In caso contrario, vengono aggiunti automaticamente per farlo funzionare con ARCore e ARKit.
+> Se è necessario impostare un comportamento specifico, è necessario aggiungere i componenti necessari da soli.
+> Per altre informazioni sui componenti di AR Foundation e sull'installazione, vedere questa [documentazione.](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@2.2/manual/index.html#samples)
 
 ## <a name="building-a-scene-for-android-and-ios-devices"></a>Creazione di una scena per dispositivi Android e iOS
 
@@ -95,4 +95,4 @@ La procedura seguente presuppone l'uso dell'oggetto MixedRealityToolkit. I passa
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Impostazioni della fotocamera unity AR](../features/camera-system/unity-ar-camera-settings.md)
+- [Impostazioni fotocamera Unity AR](../features/camera-system/unity-ar-camera-settings.md)
