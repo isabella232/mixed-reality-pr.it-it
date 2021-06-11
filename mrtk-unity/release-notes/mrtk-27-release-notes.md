@@ -4,15 +4,15 @@ description: Note sulla versione di MRTK versione 2.7
 author: RogPodge
 ms.author: roliu
 ms.date: 05/27/2021
-ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, XRSDK, Legacy XR, Leap Motion, Ultraleap
+ms.localizationpriority: high
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: 92c8705c70a2a6c1e25f1ed6b1f87eac1e5726e0
-ms.sourcegitcommit: 11d5d7c3fdd59c1ebcfca34dbb6d84c05b481e5f
+ms.openlocfilehash: 782cf9de11e1535b79a861306e45300b8e4c1f25
+ms.sourcegitcommit: 1e2a6ae0e03124ce4de1df1249e0d65f3d5abfd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111897404"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112008490"
 ---
 # <a name="microsoft-mixed-reality-toolkit-27-release-notes"></a>Note sulla versione di Microsoft Mixed Reality Toolkit 2.7
 
@@ -127,7 +127,7 @@ Aggiunta del supporto per lo sguardo fisso quando si usano le versioni minime de
 
 ### <a name="audio-demos-are-missing-an-asmdef-file-upm-package"></a>Nelle demo audio manca un file asmdef (pacchetto UPM)
 
-Quando si importa MRTK tramite Mixed Reality Feature Tool, gli esempi e le demo vengono aggiunti al progetto usando l'interfaccia utente Gestione pacchetti Unity. Dopo aver importato le demo audio, la `WindowsMicrophoneStreamDemo.unity` scena non si comporterà correttamente. Questo è il risultato di un file asmdef mancante per l'esempio.
+Quando si importa MRTK tramite lo strumento di funzionalità di realtà mista, esempi e demo vengono aggiunti al progetto usando l'interfaccia utente Gestione pacchetti Unity. Dopo l'importazione delle demo audio, `WindowsMicrophoneStreamDemo.unity` la scena non si comporterà correttamente. Questo è il risultato di un file asmdef mancante per l'esempio.
 
 Per risolvere questo [problema,](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9908)seguire questa procedura:
 
@@ -138,13 +138,13 @@ Per risolvere questo [problema,](https://github.com/microsoft/MixedRealityToolki
 - Fare clic su Applica
 - Eseguire la compilazione e la distribuzione
 
-Questo problema verrà risolto in una versione futura di MRTK.
+Questo problema verrà risolto in una prossima versione di MRTK.
 
-### <a name="mrtk-build-window-triggers-indefinite-importing-assets-dialog-in-unity-20203"></a>La finestra di compilazione di MRTK attiva una finestra di dialogo "Importazione di asset" illimitata in Unity 2020.3
+### <a name="mrtk-build-window-triggers-indefinite-importing-assets-dialog-in-unity-20203"></a>La finestra di compilazione MRTK attiva la finestra di dialogo indefinita "Importazione di asset" in Unity 2020.3
 
-Esiste un [](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9723) problema noto con la finestra di compilazione di MRTK in Unity 2020.3 in cui dopo aver eseguito correttamente una compilazione UWP, la finestra di dialogo "Importazione di asset" non viene completata. Questo problema viene analizzato in collaborazione con Unity.
+Si è [](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9723) verificato un problema noto con la finestra di compilazione MRTK in Unity 2020.3 in cui dopo aver eseguito correttamente una compilazione UWP, la finestra di dialogo "Importazione di asset" non viene completata. Questo problema viene analizzato in collaborazione con Unity.
 
-### <a name="text-mesh-pro-canvas-renderer-warnings-in-unity-2020"></a>Avvisi del renderer canvas di Text Mesh Pro in Unity 2020
+### <a name="text-mesh-pro-canvas-renderer-warnings-in-unity-2020"></a>Avvisi del renderer Canvas Di Text Mesh Pro in Unity 2020
 
 L'avviso seguente viene registrato nella maggior parte delle scene di esempio di MRTK durante l'uso di Unity 2020:
 
@@ -152,4 +152,4 @@ L'avviso seguente viene registrato nella maggior parte delle scene di esempio di
 Please remove the CanvasRenderer component from the [TextMeshPro] GameObject as this component is no longer necessary.
 ```
 
-L'avviso del renderer canvas è stato aggiunto in [TextMeshPro versione 3.0.3.](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/changelog/CHANGELOG.html#changes-3)  Questi avvisi non influiscono sulle scene di esempio di MRTK e possono essere cancellati dalla console. Per [altri dettagli, vedere il problema 9811.](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9811)
+L'avviso del renderer canvas è stato aggiunto in [TextMeshPro versione 3.0.3.](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/changelog/CHANGELOG.html#changes-3)  Questi avvisi non influiscono sulle scene di esempio di MRTK e possono essere cancellati dalla console. Per altre informazioni, vedere Problema [9811.](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9811)
