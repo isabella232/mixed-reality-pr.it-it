@@ -1,14 +1,14 @@
 ---
-ms.openlocfilehash: cd8a8229c7f70891a8f01d39ee1d6315c47429f6
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+ms.openlocfilehash: 464b65e2e66d283a825eaed43c60050ac016ef2f
+ms.sourcegitcommit: 1e2a6ae0e03124ce4de1df1249e0d65f3d5abfd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104988126"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112041755"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
-Le app di esempio open source sono state create dai team per consentire all'utente di ottenere un handle di primo livello per lo sviluppo di realtà mista. I progetti e il codice sorgente completo sono stati forniti come riferimento per l'apprendimento.
+Le open source di esempio sono state create dai team per aiutare a gestire lo sviluppo di realtà mista in prima mano. I progetti e il codice sorgente completo sono stati forniti come riferimento per l'apprendimento.
 
 ### <a name="hololens-2-open-source-sample-apps"></a>App di esempio open source per HoloLens 2
 
@@ -38,7 +38,7 @@ Un subset degli esempi usa componenti UX interattivi, quali pulsanti e dispositi
 
 * [App di scacchi](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/ChessApp)
 * [Kippy's Escape](../unreal/unreal-kippys-escape.md): scaricare dal [Microsoft Store](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) in HoloLens 2
-* [Ford GT40](../unreal/unreal-ford-gt40.md) -Download dal [Microsoft Store](https://www.microsoft.com/p/ford-gt40/9p4vllktfvfp)
+* [Ford GT40](../unreal/unreal-ford-gt40.md) - Download dalla [Microsoft Store](https://www.microsoft.com/p/ford-gt40/9p4vllktfvfp)
 
 ### <a name="made-by-epic-games"></a>Creato da Epic Games
 
