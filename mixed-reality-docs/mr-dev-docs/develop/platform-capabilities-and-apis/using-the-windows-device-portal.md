@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Portale di dispositivi di Windows, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: e15d77e32168bbc165f78ee3b12cec19fd6e922b
-ms.sourcegitcommit: b4bdac2c4d7315902712ce74fd909fb8383d4bfd
+ms.openlocfilehash: e8c592c50cd0b820c09f3fe95b32472fee4d52ce
+ms.sourcegitcommit: cf1c1a7cb67c850c61d3907a2519b51cd890a392
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110543257"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112022828"
 ---
 # <a name="using-the-windows-device-portal"></a>Uso del Portale di dispositivi di Windows
 
@@ -59,13 +59,22 @@ Questa documentazione è specifica del Portale di dispositivi di Windows per Hol
 
 ## <a name="connecting-over-usb"></a>Connessione tramite USB
 
-1. [Installare gli strumenti](../install-the-tools.md) necessari in modo da avere Visual Studio con gli strumenti di sviluppo per Windows 10 installati nel PC per abilitare la connettività USB.
-
 > [!IMPORTANT]
-> In caso di problemi relativi alla connettività USB, verificare che il componente facoltativo Connettività dispositivi USB sia installato come parte del **[pacchetto di strumenti di Visual Studio](../install-the-tools.md#installation-checklist)** .
+> IpOverUsb non è più consigliato per i nuovi standard del browser perché richiede l'uso della porta 10080. Se si vuole comunque usare IpOverUsb, selezionare la casella "Connettività dispositivo USB" durante l'installazione Visual Studio, che non è selezionata per impostazione predefinita. È invece consigliabile connettersi con UsbNcm, che è supportato per impostazione predefinita HoloLens 2. Se si usa HoloLens 1, è consigliabile connettersi al PC tramite Wi-Fi.
 
-2. Connetti HoloLens al PC con un cavo micro USB per HoloLens (prima generazione) o USB-C per HoloLens 2.
-3. Da un Web browser nel PC vai a [http://127.0.0.1:10080](http://127.0.0.1:10080).
+1. Se il HoloLens 2 esegue Windows Holographic versione 21H1 o successiva, passare a "Per gli sviluppatori" nell'app Impostazioni e verificare che l'opzione "Individuazione dispositivi" sia attivata. 
+2. Connettere il HoloLens 2 al PC con un cavo USB-C.
+3. Trovare l'indirizzo IP UsbNcm. A questo scopo è possibile procedere in due modi:
+  * Nell'app Impostazioni nel dispositivo (questo metodo funziona solo per HoloLenses che esegue Windows Holographic versione 21H1 o successiva, con l'opzione "Individuazione dispositivi" attivata.)
+    1. Passare all'app Impostazioni nel dispositivo.
+    2. Passare a "Aggiorna & sicurezza" > "Per gli sviluppatori". Si tratta della stessa posizione in cui è stata abilitata Portale di dispositivi.
+    3. Nella parte inferiore della pagina copiare l'indirizzo IP Ethernet. Si tratta dell'indirizzo IP UsbNcm. 
+  * In Portale di dispositivi 
+    1. Nel dispositivo aprire il Portale di dispositivi usando l'indirizzo Wi-Fi di HoloLens. Se non si conosce l'indirizzo Wi-Fi di HoloLens, è possibile usare il comando vocale "Qual è l'indirizzo IP?"
+    2. Passare a Rete > sistema
+    3. All'estrema destra della pagina nel pannello "Configurazione IP" individuare la sezione che inizia con "Descrizione: Funzione UsbNcm".
+    4. L'indirizzo IP UsbNcm è la riga "Indirizzo IPv4". È possibile copiare l'indirizzo o semplicemente fare clic sull'indirizzo. Si tratta di un collegamento ipertestuale che verrà riaperto Portale di dispositivi'indirizzo IP UsbNcm. 
+4. Se l'indirizzo IP UsbNcm è stato copiato, da un Web browser nel PC passare a https:// seguito dall'indirizzo IP UsbNcm.
 
 ### <a name="moving-files-over-usb"></a>Spostamento di file tramite USB
 

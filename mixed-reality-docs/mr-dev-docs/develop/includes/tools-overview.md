@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 41d87aa3bbf65ddb743c17d9d1f86a41e8dae876
-ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
+ms.openlocfilehash: 1dc5f548df0c7628ade629c4b384c4d6144941eb
+ms.sourcegitcommit: cf1c1a7cb67c850c61d3907a2519b51cd890a392
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111772340"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112022814"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -12,7 +12,7 @@ ms.locfileid: "111772340"
 
 ### <a name="1-download-the-recommended-unity-version"></a>1. Scaricare la versione di Unity consigliata 
 
-La versione corrente consigliata per lo sviluppo di realtà mista **è Unity 2020.3 LTS (supporto a lungo termine).** Il modo migliore per installare e gestire Unity è tramite **Unity Hub.** 
+La versione corrente consigliata per lo sviluppo di realtà mista **è Unity 2019.4 LTS (supporto a lungo termine).** Il modo migliore per installare e gestire Unity è tramite **Unity Hub.** 
 
 > [!NOTE]
 >  Se si usa Unity 2020 LTS, il supporto di Realtà mista è disponibile per HoloLens 2 sviluppo. Esistono tuttavia attualmente alcuni problemi noti. Questa diventerà la versione di Unity consigliata più avanti nel corso dell'anno. 
@@ -168,8 +168,8 @@ Se si segue il percorso in Unity per VR, l'attività successiva consiste nel con
 
 È consigliabile installare [Unreal Engine versione 4.25](https://docs.unrealengine.com//GettingStarted/Installation/index.html) o versione successiva per sfruttare appieno il supporto di HoloLens incorporato.
 
-Passare alla scheda **Library (Libreria)** nell'utilità di avvio di Epic Games, selezionare la freccia a discesa accanto **a Launch (Avvia)** e fare clic su **Options (Opzioni).** In **Target Platforms** (Piattaforme di destinazione) seleziona **HoloLens 2** e fai clic su **Apply** (Applica).
-![Opzione di installazione Unreal HoloLens 2](../../develop/images/Unreal_Install_Option_HoloLens2.png)
+Passare alla scheda **Libreria in Epic** Games Launcher, selezionare la freccia a discesa accanto a Launch **(Avvia)** e fare clic su **Options (Opzioni).** In **Target Platforms** (Piattaforme di destinazione) seleziona **HoloLens 2** e fai clic su **Apply** (Applica).
+![Opzione di installazione unreal HoloLens 2](../../develop/images/Unreal_Install_Option_HoloLens2.png)
 
 ### <a name="2-import-mixed-reality-toolkit-mrtk"></a>2. Importare Mixed Reality Toolkit (MRTK)
 ![MRTK](../../design/images/MRTK_UX_Hero.png)
