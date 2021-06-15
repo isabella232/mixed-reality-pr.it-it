@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK
-ms.openlocfilehash: fa2338545186f4eeb56ed6689d30f21f765064e2
-ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
+ms.openlocfilehash: bf0a97547aa482e5c206916faea2b2de41d28a7b
+ms.sourcegitcommit: 65f58055c831d58a3d38fb333f09b323ee2ac9b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111908425"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112064146"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>Informazioni su Mixed Reality Toolkit
 
@@ -25,13 +25,13 @@ MRTK-Unity è un progetto gestito da Microsoft che fornisce un set di componenti
 
 * Fornisce il **sistema di input multipiattaforma e i blocchi predefiniti per le interazioni spaziali e l'interfaccia utente.**
 * Abilita **la creazione rapida di prototipi** tramite simulazione nell'editor che consente di visualizzare immediatamente le modifiche.
-* Funziona come un **framework estendibile che** offre agli sviluppatori la possibilità di sostituire i componenti di base.
+* Opera come un **framework estendibile che** offre agli sviluppatori la possibilità di sostituire i componenti di base.
 * **Supporta un'ampia gamma di piattaforme:**
 
 ::: moniker range=">= mrtkunity-2021-05"
 | Piattaforma | Dispositivi supportati |
 |---|---|
-| OpenXR (Unity 2020.3) | Microsoft HoloLens 2 <br> Visori VR di Windows Mixed Reality |
+| OpenXR (Unity 2020.3.8+) | Microsoft HoloLens 2 <br> Visori VR di Windows Mixed Reality |
 | Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Visori VR di Windows Mixed Reality  |
 | Oculus (Unity 2019.3 o versione più recente) | Oculus Quest |
 | OpenVR |  Visori VR di Windows Mixed Reality <br> PIÙ VIVE Vive <br> Oculus Rift |
@@ -41,7 +41,7 @@ MRTK-Unity è un progetto gestito da Microsoft che fornisce un set di componenti
 ::: moniker range="< mrtkunity-2021-05"
 | Piattaforma | Dispositivi supportati |
 |---|---|
-| OpenXR (anteprima in MRTK 2.6, Unity 2020.3) | Microsoft HoloLens 2 <br> Visori VR di Windows Mixed Reality |
+| OpenXR (anteprima in MRTK 2.6, Unity 2020.3.8+) | Microsoft HoloLens 2 <br> Visori VR di Windows Mixed Reality |
 | Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Visori VR di Windows Mixed Reality  |
 | Oculus (Unity 2019.3 o versione più recente) | Oculus Quest |
 | OpenVR |  Visori VR di Windows Mixed Reality <br> PIÙ VIVE Vive <br> Oculus Rift |
@@ -54,9 +54,9 @@ MRTK-Unity è un progetto gestito da Microsoft che fornisce un set di componenti
 Se non si ha disatteso lo sviluppo di MRTK o realtà mista in Unity, è consigliabile installare ed esplorare l'applicazione di esempio MRTK Examples Hub nel dispositivo o [nell'emulatore.](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator) 
 
 > [!div class="nextstepaction"]
-> [Scaricare l'app hub di esempi MRTK](running-examples-hub.md)
+> [Scaricare l'app hub degli esempi di MRTK](running-examples-hub.md)
 
-Dopo aver ottenuto il blocco di ciò che Realtà mista e MRTK hanno da offrire, installare gli strumenti necessari e seguire la serie di esercitazioni di livello HoloLens 2 principiante.
+Dopo aver ottenuto il blocco delle offerte offerte da Realtà mista e MRTK, installare gli strumenti necessari e seguire la serie di esercitazioni HoloLens 2 per principianti.
 
 > [!div class="nextstepaction"]
 > [Installare gli strumenti](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
@@ -160,7 +160,7 @@ Si vuole vedere cosa succede in un secondo tempo?
 :::row:::
     :::column:::
        [ ![ Pulsante](features/images/Button/MRTK_Button_Main.png)](features/ux-building-blocks/button.md) **[Pulsante](features/ux-building-blocks/button.md)**<br>
-        Controllo pulsante che supporta vari metodi di input, incluso HoloLens 2 mano articolata del controllo
+        Controllo pulsante che supporta vari metodi di input, inclusa HoloLens 2 mano articolata del controllo
     :::column-end:::
     :::column:::
         [ ![ Controllo Limiti del](features/images/bounds-control/MRTK_BoundsControl_Main.png)](features/ux-building-blocks/bounds-control.md) controllo **[Bounds](features/ux-building-blocks/bounds-control.md)**<br>
@@ -189,8 +189,8 @@ Si vuole vedere cosa succede in un secondo tempo?
 
 :::row:::
     :::column:::
-       [ ![ Risolutore](features/images/solver/MRTK_Solver_Main.png)](features/ux-building-blocks/solvers/solver.md) **[di risolutore](features/ux-building-blocks/solvers/solver.md)**<br>
-        Vari comportamenti di posizionamento degli oggetti, ad esempio tag lungo, blocco del corpo, dimensione costante della visualizzazione e magnetismo della superficie
+       [ ![ Risolutore](features/images/solver/MRTK_Solver_Main.png)](features/ux-building-blocks/solvers/solver.md) **[](features/ux-building-blocks/solvers/solver.md)**<br>
+        Vari comportamenti di posizionamento degli oggetti, ad esempio tag lungo, blocco del corpo, dimensioni della visualizzazione costanti e magnetismo della superficie
     :::column-end:::
     :::column:::
         [ ![ Raccolta di oggetti Raccolta](features/images/object-collection/MRTK_ObjectCollection_Main.jpg)](features/ux-building-blocks/object-collection.md) **[oggetti](features/ux-building-blocks/object-collection.md)**<br>
@@ -238,7 +238,7 @@ Si vuole vedere cosa succede in un secondo tempo?
         Interfaccia utente a menu mobile per le interazioni da vicino
     :::column-end:::
     :::column:::
-        [ ![ Spatial Awareness Getting Started](features/images/spatial-awareness/MRTK_SpatialAwareness_Main.png)](features/spatial-awareness/spatial-awareness-getting-started.md) Spatial Awareness View (Introduzione alla **[consapevolezza spaziale)](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
+        [ ![ Spatial Awareness Getting Started](features/images/spatial-awareness/MRTK_SpatialAwareness_Main.png)](features/spatial-awareness/spatial-awareness-getting-started.md) Spatial Awareness View **[(Introduzione alla consapevolezza spaziale)](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
         Fare in modo che gli oggetti olografici interagiscano con gli ambienti fisici
     :::column-end:::
     :::column:::
@@ -254,7 +254,7 @@ Si vuole vedere cosa succede in un secondo tempo?
     :::column-end:::
     :::column:::
         [ ![ Finestra di](features/images/Dialog/MRTK_UX_Dialog_Main.png)](features/ux-building-blocks/dialog.md) **[dialogo](features/ux-building-blocks/dialog.md)**<br>
-        Interfaccia utente per richiedere la conferma o l'acknowledgement dell'utente
+        Interfaccia utente per chiedere conferma o acknowledgement dell'utente
     :::column-end:::
     :::column:::
         [ ![ Hand Hand Hand](features/images/hand-coach/MRTK_UX_HandCoach_Main.jpg)](features/ux-building-blocks/hand-coach.md) **[Hand](features/ux-building-blocks/hand-coach.md)**<br>
@@ -264,7 +264,7 @@ Si vuole vedere cosa succede in un secondo tempo?
 
 :::row:::
     :::column:::
-       [ ![ Hand Physics Service](features/images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)](features/experimental/hand-physics-service.md) Hand Physics Service **[[Sperimentale]](features/experimental/hand-physics-service.md)**<br>
+       [ ![ Hand Physics Service](features/images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)](features/experimental/hand-physics-service.md) Hand Physics Service **[[Experimental]](features/experimental/hand-physics-service.md)**<br>
         Il servizio di fisica della mano consente eventi rigidi di collisione del corpo e interazioni con le mani articolate
     :::column-end:::
     :::column:::
@@ -279,7 +279,7 @@ Si vuole vedere cosa succede in un secondo tempo?
 
 :::row:::
     :::column:::
-       [ ![ Tracciamento oculare: Selezione della destinazione](features/images/eye-tracking/mrtk_et_targetselect.png)](features/input/eye-tracking/eye-tracking-target-selection.md) **[Tracciamento oculare: selezione della destinazione](features/input/eye-tracking/eye-tracking-target-selection.md)**<br>
+       [ ![ Tracciamento oculare: Tracciamento](features/images/eye-tracking/mrtk_et_targetselect.png)](features/input/eye-tracking/eye-tracking-target-selection.md) **[oculare della selezione della destinazione: selezione della destinazione](features/input/eye-tracking/eye-tracking-target-selection.md)**<br>
         Combina gli occhi, la voce e l'input delle mani per selezionare in modo semplice e rapido gli ologrammi nella scena
     :::column-end:::
     :::column:::
@@ -288,13 +288,13 @@ Si vuole vedere cosa succede in un secondo tempo?
     :::column-end:::
     :::column:::
         [ ![ Tracciamento oculare: Tracciamento](features/images/eye-tracking/mrtk_et_heatmaps.png)](features/example-scenes/eye-tracking-examples-overview.md#visualization-of-visual-attention) **[oculare mappa termica: mappa termica](features/example-scenes/eye-tracking-examples-overview.md#visualization-of-visual-attention)**<br>
-        Esempi per la registrazione, il caricamento e la visualizzazione di ciò che gli utenti hanno visto nell'app
+        Esempi per la registrazione, il caricamento e la visualizzazione di ciò che gli utenti hanno cercato nell'app
     :::column-end:::
 :::row-end:::
 
 ## <a name="tools"></a>Strumenti
 
-|  [ ![ Ottimizza finestra Ottimizza](features/images/MRTK_Icon_OptimizeWindow.png)](features/tools/optimize-window.md) [finestra](features/tools/optimize-window.md) | [ ![ Finestra dipendenze finestra](features/images/MRTK_Icon_DependencyWindow.png)](features/tools/dependency-window.md) [dipendenze](features/tools/dependency-window.md) | [ ![ Finestra di compilazione della](features/images/MRTK_Icon_BuildWindow.png)](features/tools/build-window.md) finestra di [compilazione](features/tools/build-window.md) | [ ![ Registrazione di input](features/images/MRTK_Icon_InputRecording.png)](features/input-simulation/input-animation-recording.md) Registrazione di [input](features/input-simulation/input-animation-recording.md) |
+|  [ ![ Ottimizza finestra Ottimizza](features/images/MRTK_Icon_OptimizeWindow.png)](features/tools/optimize-window.md) [finestra](features/tools/optimize-window.md) | [ ![ Finestra Dipendenze finestra](features/images/MRTK_Icon_DependencyWindow.png)](features/tools/dependency-window.md) [dipendenze](features/tools/dependency-window.md) | [ ![ Finestra di compilazione della](features/images/MRTK_Icon_BuildWindow.png)](features/tools/build-window.md) finestra di [compilazione](features/tools/build-window.md) | [ ![ Registrazione di input](features/images/MRTK_Icon_InputRecording.png)](features/input-simulation/input-animation-recording.md) Registrazione di [input](features/input-simulation/input-animation-recording.md) |
 |:--- | :--- | :--- | :--- |
 | Automatizzare la configurazione dei progetti di realtà mista per ottimizzare le prestazioni | Analizzare le dipendenze tra asset e identificare gli asset inutilizzati |  Configurare ed eseguire un processo di compilazione end-to-end per le applicazioni di realtà mista | Registrare e riprodurre i dati relativi al movimento della testa e al tracciamento della mano nell'editor |
 
@@ -317,7 +317,7 @@ Per informazioni dettagliate sulla creazione di un hub a più scene con il siste
 
 | [![Tavola periodica degli elementi](features/images/MRDL_PeriodicTable.jpg)](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)| [![Galaxy Explorer](features/images/MRTK_GalaxyExplorer.jpg)](/windows/mixed-reality/galaxy-explorer-update)| [![App di esempio Surfaces](features/images/MRDL_Surfaces.jpg)](/windows/mixed-reality/sampleapp-surfaces)|
 |:--- | :--- | :--- |
-| [La tabella](https://github.com/Microsoft/MRDL_Unity_PeriodicTable) periodica degli elementi è un'app open source di esempio che illustra come usare il sistema di input e i blocchi predefiniti di MRTK per creare un'esperienza app per HoloLens e visori VR immersive. Leggere la storia della portabilità: Portare la tabella [periodica dell'app Elements HoloLens 2 con MRTK v2](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158) |[Galaxy Explorer](https://github.com/Microsoft/GalaxyExplorer) è un'app di esempio open source sviluppata originariamente nel mese di marzo 2016 come parte della campagna "Condividi la tua idea" di HoloLens. Galaxy Explorer è stato aggiornato con nuove funzionalità per HoloLens 2, usando MRTK v2. Leggere la storia: [The Making of Galaxy Explorer for HoloLens 2](/windows/mixed-reality/galaxy-explorer-update) |[Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces) è un'app di esempio open source per HoloLens 2 che illustra come è possibile creare un tattile con elementi visivi, audio e tracciamento delle mani completamente articolati. Per informazioni dettagliate sulla progettazione e lo sviluppo, vedere la sessione Microsoft MR Dev Days [Learnings from the Surfaces app](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App) (Apprendimento della sessione di Microsoft MR Dev Days dall'app Surfaces). |
+| [La tabella](https://github.com/Microsoft/MRDL_Unity_PeriodicTable) periodica degli elementi è un'app di esempio open source che illustra come usare il sistema di input e i blocchi predefiniti di MRTK per creare un'esperienza app per HoloLens e visori VR immersive. Leggere la storia della portabilità: Portare la tabella [periodica dell'app Elements HoloLens 2 con MRTK v2](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158) |[Galaxy Explorer](https://github.com/Microsoft/GalaxyExplorer) è un'app di esempio open source sviluppata originariamente nel mese di marzo 2016 come parte della campagna "Condividi la tua idea" di HoloLens. Galaxy Explorer è stato aggiornato con nuove funzionalità per HoloLens 2, usando MRTK v2. Leggere la storia: [The Making of Galaxy Explorer for HoloLens 2](/windows/mixed-reality/galaxy-explorer-update) |[Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces) è un'app di esempio open source per HoloLens 2 che illustra come è possibile creare un tattile con elementi visivi, audio e tracciamento delle mani completamente articolati. Per informazioni dettagliate sulla progettazione e lo sviluppo, vedere la sessione Microsoft MR Dev Days [Learnings from the Surfaces app](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App) (Apprendimento della sessione di Microsoft MR Dev Days dall'app Surfaces). |
 
 ## <a name="session-videos-from-mixed-reality-dev-days-2020"></a>Video di sessione di Mixed Reality Dev Days 2020
 
