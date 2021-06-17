@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, risolutori
 ms.localizationpriority: high
-ms.openlocfilehash: 1d148fc31d2009c6843882bf9b9cd9fc99c3322a
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: 8398c4d6fdc69801beff1b7c6de5e4c3847dd5e4
+ms.sourcegitcommit: adbe3baa6b1c284ed1c4fd796d8b5612c3ca3f42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743678"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112270426"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Creazione di contenuto dinamico tramite risolutori
 
@@ -69,7 +69,7 @@ Seleziona il pulsante Play (Riproduci) per attivare la modalità di gioco e tien
 > Se il raggio della fotocamera non è visibile nella finestra della scena, verifica che sia attivato il menu Gizmos, come mostrato nell'immagine precedente.
 
 > [!TIP]
-> Per informazioni sulla procedura di simulazione di input nell'editor, puoi fare riferimento alla guida [Uso della simulazione di input manuale nell'editor per testare una scena](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene) nel [portale della documentazione di MRTK](/windows/mixed-reality/mrtk-unity).
+> Per informazioni sulla procedura di simulazione di input nell'editor, puoi fare riferimento alla guida [Uso della simulazione di input manuale nell'editor per testare una scena](/windows/mixed-reality/mrtk-unity/features/input-simulation/input-simulation-service) nel [portale della documentazione di MRTK](/windows/mixed-reality/mrtk-unity).
 
 > [!TIP]
 > Se il computer è dotato di un microfono, puoi impostare facilmente lo stato attivo del pannello di diagnostica visualizzato nella finestra di gioco usando il comando di riconoscimento vocale "toggle diagnostics" (Attiva/disattiva diagnostica). In alternativa, puoi disabilitarlo in MRTK Configuration Profile (Profilo di configurazione di MRTK) > Diagnostics (Diagnostica) > Enable Diagnostics System (Abilita sistema di diagnostica). Tuttavia, è consigliabile in genere lasciare il sistema di diagnostica attivo durante lo sviluppo.
