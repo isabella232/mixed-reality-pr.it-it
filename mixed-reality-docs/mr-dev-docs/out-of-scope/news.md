@@ -1,17 +1,17 @@
 ---
 title: Notizie sulla realtà mista
-description: Siamo lieti di condividere notizie sulla realtà mista. Ci auguriamo di ricevere commenti e suggerimenti e invitare gli utenti a partecipare alla conversazione.
+description: Siamo entusiasti di condividere notizie di realtà mista con l'utente. Non vediamo l'ora di ricevere commenti e suggerimenti e di invitare l'utente a partecipare alla conversazione.
 author: grbury
 ms.author: grbury
 ms.date: 10/21/2019
 ms.topic: article
 keywords: Realtà mista, sviluppo, sviluppo, progettazione, HoloLens, servizi di Azure, notizie, HoloLens 2
-ms.openlocfilehash: d0955d85c3f7496c28f858657cafeebbb7dbb146
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 8fc2f7c54cdc941150558aac59dd240ee293d1f8
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683040"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110081"
 ---
 # <a name="mixed-reality-news-and-notes"></a>Notizie e note sulla realtà mista
 
@@ -27,24 +27,24 @@ Come promesso, siamo lieti di condividere altre novità sulla realtà mista. Il 
 
 <table>
 <tr>
-<th style="width: 400px; text-align:left;">Contenuto</th><th style="width: 125px; text-align:left;">Recapito</th><th style="width: 125px; text-align:left;">ORA DISPONIBILE</th>
+<th style="width: 400px; text-align:left;">Content</th><th style="width: 125px; text-align:left;">Recapito</th><th style="width: 125px; text-align:left;">ORA DISPONIBILE</th>
 </tr> 
 <tr>
-<td><b>Guide al porting</b> <br>1. Da HoloToolKit (HTK)/Mixed Reality Toolkit (MRTK) a MRTK versione 2
+<td><b>Guide alla portabilità</b> <br>1. Da HoloToolKit (HTK)/Mixed Reality Toolkit (MRTK) a MRTK versione 2
 <br>2. Da HoloLens (prima generazione) a HoloLens 2 (da x86 ad ARM, consigli per le interazioni e la progettazione)
-</td></td><td>Maggio 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrtk-porting-guide>Preparare un'applicazione esistente per HoloLens 2</a><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html>Da HoloToolKit ad API MRTK</a></td>
+</td></td><td>Maggio 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrtk-porting-guide>Preparare un'applicazione esistente per HoloLens 2</a><li><a href=/windows/mixed-reality/mrtk-unity/updates-deployment/htk-to-mrtk-porting-guide>Da HoloToolKit ad API MRTK</a></td>
 </tr>
 <tr>
 <td>Moduli per sviluppatori open source mensili (esercitazioni/app di esempio)</td><td>Giugno 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1>Modulo di apprendimento di base sulla realtà mista</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrlearning-asa-ch1>Esercitazioni su Ancoraggi nello spazio di Azure</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrlearning-speechsdk-ch1>Esercitazioni sui servizi Voce di Azure</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrlearning-sharing(photon)-ch1>Esercitazioni sulle funzionalità multiutente</a></td>
 </tr>
 <tr>
-<td>MRTK per HoloLens 2</td><td>Ottobre 2019</td><td> <ul><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html>Documentazione su MRTK</a><li><a href=https://github.com/Microsoft/MixedRealityToolkit-Unity/releases>MRTK versione 2.1.0</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrtk-getting-started>Introduzione a MRTK v2</a></td>
+<td>MRTK per HoloLens 2</td><td>Ottobre 2019</td><td> <ul><li><a href=/windows/mixed-reality/mrtk-unity>Documentazione su MRTK</a><li><a href=https://github.com/Microsoft/MixedRealityToolkit-Unity/releases>MRTK versione 2.1.0</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrtk-getting-started>Introduzione a MRTK v2</a></td>
 </tr>
 <tr>
-<td>Utilità per app multiutente</td><td>Ottobre 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/spectator-view>SpectatorView per le demo</a><li><a href=https://github.com/microsoft/MixedReality-WebRTC>WebRTC ottimizzato per HoloLens</a>></td>
+<td>Utilità per app multiuter</td><td>Ottobre 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/spectator-view>SpectatorView per demo</a><li><a href=https://github.com/microsoft/MixedReality-WebRTC>WebRTC ottimizzato per HoloLens</a>></td>
 </tr>
 <tr>
-<td>Linee guida per la progettazione e lo sviluppo per HoloLens 2</td><td>Ottobre 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/>Panoramica della realtà mista</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/design>Progettazione e creazione di prototipi</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/development>Strumenti e architettura per sviluppatori</a></td>
+<td>Linee guida per la progettazione e lo sviluppo per HoloLens 2</td><td>Ottobre 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/>Panoramica della realtà mista</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/design>Progettazione e creazione di prototipi</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/development>Strumenti di sviluppo e architettura</a></td>
 </tr>
 <tr>
   <td>Nuove informazioni su Unreal</td><td>Ottobre 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview>Panoramica dello sviluppo con Unreal</a></td>

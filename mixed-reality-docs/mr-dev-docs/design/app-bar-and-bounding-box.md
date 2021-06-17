@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
 keywords: Windows Mixed Reality, barra dell'app, rettangolo di selezione, visore per realtà mista, visore windows mixed reality, visore per realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 750fb238e5b7f22998a86f71607498c8f6982076
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: 5c437b303ec5462179a1ddf43687aa1653419b08
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600520"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110090"
 ---
 # <a name="bounding-box-and-app-bar"></a>Rettangolo di selezione e barra dell'app
 ![Il delimitazione è l'interfaccia standard per la manipolazione degli oggetti in realtà mista.](images/UX_Hero_BoundingBox.jpg)<br>
@@ -66,7 +66,7 @@ Il delimitazione è l'interfaccia standard per la manipolazione degli oggetti in
 
 <br>
 
-**Per lo sviluppo di app Unity, vedere [Rettangolo di selezione in Mixed Reality Toolkit-Unity.](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)**
+**Per lo sviluppo di app Unity, vedere [Rettangolo di selezione in Mixed Reality Toolkit-Unity.](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box)**
 
 <br>
 

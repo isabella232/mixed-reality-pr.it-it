@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: c04776dae1c063a679838c80ebbe9a4023680da6
-ms.sourcegitcommit: 5617575cf550dd03fba0bfd5263e97972dcc646b
+ms.openlocfilehash: fad4b389dc1aef2085b212404c7e17dfcf017701
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "111547118"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110290"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. Inizializzazione del progetto e distribuzione della prima applicazione
 
@@ -74,17 +74,17 @@ Nella finestra Import Unity Package (Importa il pacchetto Unity), fai clic sul p
 
 ## <a name="importing-the-mixed-reality-toolkit-and-configuring-the-unity-project"></a>Importazione di Mixed Reality Toolkit e configurazione del progetto Unity
 
-Per importare Mixed Reality Toolkit nel progetto Unity, devi usare [mixed reality feature tool](../welcome-to-mr-feature-tool.md) che consente agli sviluppatori di individuare, aggiornare e aggiungere pacchetti di funzionalità di realtà mista nei progetti Unity. È possibile cercare i pacchetti in base al nome o alla categoria, visualizzarne le dipendenze e persino visualizzare le modifiche proposte al file manifesto del progetto prima dell'importazione.
+Per importare Mixed Reality Toolkit nel progetto Unity, è necessario usare lo strumento [funzionalità](../welcome-to-mr-feature-tool.md) realtà mista che consente agli sviluppatori di individuare, aggiornare e aggiungere pacchetti di funzionalità di realtà mista nei progetti Unity. È possibile cercare i pacchetti in base al nome o alla categoria, visualizzarne le dipendenze e persino visualizzare le modifiche proposte al file manifesto del progetto prima dell'importazione.
 
-Scaricare la versione più recente di Mixed Reality Feature Tool dall'Area download [Microsoft.](https://aka.ms/MRFeatureTool)Al termine del download, decomprimere il file e salvarlo sul desktop.
-
-> [!NOTE]
-> Prima di poter eseguire Mixed Reality Feature Tool, installare [il runtime di .NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
+Scaricare la versione più recente di Mixed Reality Feature Tool dall'Area download [Microsoft](https://aka.ms/MRFeatureTool). Al termine del download, decomprimere il file e salvarlo sul desktop.
 
 > [!NOTE]
-> Mixed Reality Feature Tool attualmente viene eseguito solo in [](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html#1-get-the-latest-mrtk-unity-packages) Windows. Per MacOS, segui questa procedura per scaricare e importare Mixed Reality Toolkit nel progetto Unity.
+> Prima di poter eseguire lo strumento di funzionalità di realtà mista, installare [il runtime di .NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
 
-Aprire il file **eseguibile MixedRealityFeatureTool** dalla cartella scaricata per avviare mixed reality feature tool.  
+> [!NOTE]
+> Lo strumento di funzionalità realtà mista attualmente viene [](/windows/mixed-reality/mrtk-unity/configuration/usingupm) eseguito solo in Windows. Per MacOS seguire questa procedura per scaricare e importare Mixed Reality Toolkit nel progetto unity.
+
+Aprire il file eseguibile **MixedRealityFeatureTool** dalla cartella scaricata per avviare Mixed Reality Feature Tool.  
 
 ![Apertura di MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-1.png)
 
@@ -92,18 +92,18 @@ Aprire il file **eseguibile MixedRealityFeatureTool** dalla cartella scaricata p
 
 ## <a name="creating-the-scene-and-configuring-mrtk"></a>Creazione della scena e configurazione di MRTK
 
-Nel menu di Unity selezionare **File**  >  **New Scene (File nuova scena):**
+Nel menu Unity selezionare **File**  >  **Nuova scena**:
 
 ![Percorso del menu New Scene di Unity](images/mr-learning-base/base-02-section6-step1-1.png)
 
-Nella finestra **Nuova scena** selezionare Di **base (incorporata)** e fare clic su **Crea** per creare una nuova scena:
+Nella finestra **Nuova scena** selezionare **Basic (incorporato)** e fare clic su **Crea** per creare una nuova scena:
 
 ![Finestra Nuova scena di Unity](images/mr-learning-base/base-02-section6-step1-1-newscene.png)
 
 > [!NOTE]
-> Lo screenshot precedente deriva dalla versione 2020 di Unity, se si  usa Unity 2019 quando si fa clic su Crea verrà creata una nuova scena vuota.
+> Lo screenshot precedente è della versione 2020 di Unity, se si  usa Unity 2019 quando si fa clic su Crea una nuova scena vuota.
 
-Nel menu di Unity seleziona **Mixed Reality** Toolkit Add to Scene and Configure ( Aggiungi alla scena e  >    >  **configura)** per aggiungere MRTK alla scena corrente:
+Nel menu Unity selezionare **Mixed Reality** Toolkit Add to Scene (Aggiungi alla scena)  >    >  **e Configure (Configura)** per aggiungere MRTK alla scena corrente:
 
 ![Percorso del menu Add to Scene and Configure... di Unity](images/mr-learning-base/base-02-section6-step1-2.png)
 
@@ -115,7 +115,7 @@ Dal menu di Unity scegli **File** > **Save As** (Salva con nome) per visualizzar
 
 ![Percorso del menu Save As... di Unity](images/mr-learning-base/base-02-section6-step1-4.png)
 
-Salvare la scena nel progetto in Asset Scenes **(Scene**  >  **asset).**
+Salvare la scena nel progetto in **Asset**  >  **Scenes**.
 
 ![Finestra Save Scene di Unity con il prompt di salvataggio](images/mr-learning-base/base-02-section6-step1-5.png)
 
@@ -125,27 +125,27 @@ Scaricare il pacchetto personalizzato Unity seguente:
 
 * [MRTK. HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.5.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage)
 
-Per importare un pacchetto personalizzato di Unity, nel menu di Unity selezionare **Assets** Import Package Custom Package ( Importa pacchetto personalizzato pacchetto) per  >    >   aprire il menu Import package (Importa pacchetto). Finestra:
+Per importare un pacchetto personalizzato unity, nel menu Unity selezionare **Asset Importa** pacchetto personalizzato  >    >  **pacchetto...** per aprire Importa pacchetto. Finestra:
 
 ![Importazione di un pacchetto personalizzato](images/mr-learning-base/base-02-section7-step1-1.png)
 
-In Importa pacchetto... selezionare **MRTK. HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage** scaricato e fare clic sul pulsante Apri:
+Nel pacchetto Di importazione... , selezionare **MRTK. HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage** scaricato e fare clic sul pulsante Apri:
 
 ![Selezione di un pacchetto di asset](images/mr-learning-base/base-02-section7-step1-2.png)
 
-Nella finestra Import Unity Package (Importa pacchetto Unity) fare clic sul pulsante All (Tutti) per assicurarsi che tutti gli asset siano selezionati, quindi fare clic sul pulsante Import (Importa) per importare gli asset:
+Nella finestra Importa pacchetto Unity fare clic sul pulsante Tutti per assicurarsi che siano selezionati tutti gli asset, quindi fare clic sul pulsante Importa per importare gli asset:
 
 ![Selezione di tutti gli asset da importare](images/mr-learning-base/base-02-section7-step1-3.png)
 
 Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progetto) avrà un aspetto simile al seguente:
 
-![Finestra del progetto Unity dopo l'importazione degli asset](images/mr-learning-base/base-02-section7-step1-4.png)
+![Finestra del progetto Unity dopo l'importazione di asset](images/mr-learning-base/base-02-section7-step1-4.png)
 
 ## <a name="configuring-the-scene"></a>Configurazione della scena
 
 Nella finestra Project (Progetto) passare alla cartella **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** (Prefab):
 
-Dalla finestra Project (Progetto) fai clic e trascina il prefab **Cube** (Cubo) nella finestra Hierarchy (Gerarchia), quindi nella finestra Inspector (Controllo) configura il relativo componente **Transform (Trasforma)** come indicato di seguito
+Dalla finestra Progetto fare clic e trascinare il **prefab** Cubo nella finestra Gerarchia, quindi nella finestra Controllo configurare il componente Trasforma come indicato di seguito. 
 
 * **Posizione:** X = 0, Y = 0, Z = 0,5
 * **Rotation** (Rotazione): X = 0, Y = 0, Z = 0
@@ -153,25 +153,25 @@ Dalla finestra Project (Progetto) fai clic e trascina il prefab **Cube** (Cubo) 
 
 ![Aggiunta di un cubo alla scena](images/mr-learning-base/base-02-section8-step1-1.PNG)
 
-Per concentrarsi sugli oggetti nella scena, è possibile fare doppio clic sull'oggetto **Cube** e quindi fare di nuovo leggermente zoom avanti:
+Per concentrarsi sugli oggetti nella scena, è possibile fare doppio clic **sull'oggetto Cubo** e quindi eseguire di nuovo lo zoom avanti leggermente:
 
-Per interagire e afferrare un oggetto con le mani tracciate, l'oggetto deve avere un componente Collisore, ad esempio un componente **Box Collider** **,Object Manipulator (Script)** e **nearInteractionGrabbable(Script).**
+Per interagire e afferrare un oggetto con le mani rilevate, l'oggetto deve avere un componente Collisore, ad esempio un componente **Box Collider**, **Object Manipulator (Script)** e **NearInteractionGrabbable(Script).**
 
-Con **il** cubo ancora selezionato nella finestra Hierarchy (Gerarchia), nella finestra Inspector (Controllo) fare clic sul pulsante **Add Component** (Aggiungi componente), quindi cercare e selezionare Object Manipulator script (Manipolatore oggetti) per aggiungere lo script Object **Manipulator** (Manipolatore oggetti) all'oggetto cubo.
+Con il **cubo** ancora selezionato nella finestra Hierarchy (Gerarchia), nella finestra Inspector (Controllo) fare clic sul pulsante **Add Component** (Aggiungi componente), quindi cercare e selezionare **Object Manipulator** script (Manipolatore di oggetti) per aggiungere lo script Object Manipulator all'oggetto cubo.
 
-![aggiunta di Object Manupulator al cubo](images/mr-learning-base/base-02-section8-step1-2.PNG)
+![aggiunta dell'oggetto manupulator al cubo](images/mr-learning-base/base-02-section8-step1-2.PNG)
 
 Ripetere la stessa operazione per aggiungere **lo script Near Interaction Grabbable** al cubo
 
 ![aggiunta di Near Interaction Grabable al cubo](images/mr-learning-base/base-02-section8-step1-3.PNG)
 
 > [!NOTE]
-> Quando si aggiunge un manipolatore di oggetti (script), in questo caso, gestione vincoli (script) viene aggiunto automaticamente perché il manipolatore di oggetti (script) dipende da esso.
+> Quando si aggiunge un manipolatore di oggetti (script), in questo caso, Gestione vincoli (script) viene aggiunto automaticamente perché il manipolatore di oggetti (script) dipende da esso.
 
 > [!NOTE]
 > Ai fini di questa esercitazione, i collisori sono già stati aggiunti all'oggetto cubo. Per altre informazioni sui collisori, puoi visitare la documentazione <a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">corrispondente</a> di Unity.
 
-Per testarlo nell'editor di Unity, è possibile  attivare la  modalità di riproduzione e tenere premuto il tasto SINISTRO o BARRA SPAZIATRICE per abilitare il controller. Il movimento del mouse sposterà il controller e potrà anche essere spostato più o più vicino alla fotocamera usando la rotellina del mouse. Quando il puntatore si trova sul cubo, tenere premuto **il pulsante sinistro** del mouse per spostare l'oggetto Cube.
+Per testarlo nell'editor di Unity, è possibile attivare la modalità di riproduzione e tenere premuto il tasto **LeftShift** o **Space** per abilitare il controller, lo spostamento del mouse sposterà il controller e può anche essere spostato più o più vicino alla fotocamera usando la rotellina del mouse. Quando il puntatore si trova sul cubo, premere e tenere premuto **il pulsante sinistro del mouse** per spostare l'oggetto Cubo.
 
 ![Modalità di gioco](images/mr-learning-base/base-02-section8-step1-4.PNG)
 

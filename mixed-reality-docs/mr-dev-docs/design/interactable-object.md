@@ -6,18 +6,18 @@ ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, segnali, interfaccia utente, esperienza utente, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, audio
-ms.openlocfilehash: 8a68006d68b985f8d26a3d1a11e4d52fcfb5acb5
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: b25c25a6dd48bcc85a556787099734d147d18df2
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600440"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110218"
 ---
 # <a name="interactable-object"></a>Oggetto che supporta interazioni
 
 ![Oggetti interactible](images/UX_Hero_Interactable.jpg)
 
-Un pulsante è da tempo una metafora usata per attivare un evento nel mondo astratto 2D. Nel mondo della realtà mista tridimensionale non è più necessario limitarsi a questo mondo di astrazione. Qualsiasi elemento può essere **un oggetto che può** interagire che attiva un evento. Un oggetto che può interagire può essere qualsiasi cosa, da una tazzina da caffè su un tavolo a un balloon in midair. I pulsanti tradizionali vengono comunque utilizzati in determinate situazioni, ad esempio nell'interfaccia utente della finestra di dialogo. La rappresentazione visiva del pulsante dipende dal contesto.
+Un pulsante è da tempo una metafora usata per attivare un evento nel mondo astratto 2D. Nel mondo della realtà mista tridimensionale non è più necessario limitarsi a questo mondo di astrazione. Qualsiasi elemento può essere **un oggetto intervienibile** che attiva un evento. Un oggetto che può interagire può essere qualsiasi cosa, da una tazzina da caffè su un tavolo a un balloon in midair. I pulsanti tradizionali vengono comunque utilizzati in determinate situazioni, ad esempio nell'interfaccia utente della finestra di dialogo. La rappresentazione visiva del pulsante dipende dal contesto.
 
 <br>
 
@@ -97,7 +97,7 @@ Usare il feedback visivo per comunicare gli stati seguenti:
 * **Distanza e punto di interazione:** quando la mano si avvicina a un ologramma, progettare il feedback per comunicare il punto di interazione proiettato e la distanza dall'oggetto del dito
 * **Inizio contatto:** modifica gli oggetti visivi (luce, colore) per comunicare che si è verificato un tocco
 * **Afferrato:** modifica gli oggetti visivi (luce, colore) quando l'oggetto viene afferrato
-* **Fine contatto:** modifica gli oggetti visivi (chiaro, colore) al termine del tocco
+* **Fine contatto:** modifica gli oggetti visivi (luce, colore) al termine del tocco
 
 <br>
 
@@ -135,7 +135,7 @@ Usare il feedback visivo per comunicare gli stati seguenti:
 
 ---
 
-Un [pulsante in HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) è un esempio di visualizzazione dei diversi stati di interazione di input:
+Un [pulsante in HoloLens 2](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button) è un esempio di visualizzazione dei diversi stati di interazione di input:
 
 :::row:::
     :::column:::
@@ -188,7 +188,7 @@ Un [pulsante in HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unit
 ### <a name="audio-cues"></a>Segnali audio
 
 Per le interazioni con la mano diretta, un feedback audio appropriato può migliorare notevolmente l'esperienza utente. Usare il feedback audio per comunicare i segnali seguenti:
-* **Inizio contatto:** riproduce l'audio all'inizio del tocco
+* **Inizio contatto:** riprodurre l'audio all'inizio del tocco
 * **Fine contatto:** riprodurre l'audio all'estremità del tocco
 * **Inizia a afferrare:** riproduci l'audio all'avvio della cattura
 * **Grab ends (Fine afferra):** riproduci l'audio al termine dell'afferrare
@@ -200,7 +200,7 @@ Per le interazioni con la mano diretta, un feedback audio appropriato può migli
 :::row:::
     :::column:::
         ### <a name="voice-commandingbr"></a>Esecuzione di comandi vocali<br>
-        Per tutti gli oggetti che possono interagire, è importante supportare opzioni di interazione alternative. Per impostazione predefinita, è consigliabile [che l'esecuzione di comandi vocali](../out-of-scope/voice-design.md) sia supportata per tutti gli oggetti che possono interagire. Per migliorare l'individuabilità, è anche possibile fornire una descrizione comando durante lo stato del passaggio del mouse.<br>
+        Per qualsiasi oggetto con interazione, è importante supportare opzioni di interazione alternative. Per impostazione predefinita, è consigliabile [che l'esecuzione di comandi vocali](../out-of-scope/voice-design.md) sia supportata per tutti gli oggetti che possono interagire. Per migliorare l'individuabilità, è anche possibile fornire una descrizione comando durante lo stato del passaggio del mouse.<br>
         <br>
         *Immagine: Descrizione comando vocale*
     :::column-end:::
@@ -216,9 +216,9 @@ Per le interazioni con la mano diretta, un feedback audio appropriato può migli
 
 ## <a name="sizing-recommendations"></a>Consigli sul ridimensionamento
 
-Per garantire che tutti gli oggetti interagiscibili possano essere facilmente toccati, è consigliabile assicurarsi che l'oggetto interagiscibile soddisfi le dimensioni minime in base alla distanza che viene posta dall'utente. L'angolo visivo viene spesso misurato in gradi di arco visivo. L'angolo visivo si basa sulla distanza tra gli occhi dell'utente e l'oggetto e rimane costante, mentre le dimensioni fisiche della destinazione possono cambiare quando cambia la distanza dall'utente. Per determinare le dimensioni fisiche necessarie di un oggetto in base alla distanza dall'utente, provare a usare un calcolatore dell'angolo visivo come [questo](https://elvers.us/perception/visualAngle/).
+Per garantire che tutti gli oggetti che è possibile interagire possano essere facilmente toccati, è consigliabile assicurarsi che l'oggetto interagiscibile soddisfi le dimensioni minime in base alla distanza dall'utente. L'angolo visivo viene spesso misurato in gradi di arco visivo. L'angolo visivo è basato sulla distanza tra gli occhi dell'utente e l'oggetto e rimane costante, mentre le dimensioni fisiche della destinazione possono cambiare quando cambia la distanza dall'utente. Per determinare le dimensioni fisiche necessarie di un oggetto in base alla distanza dall'utente, provare a usare una calcolatrice dell'angolo visivo come [questa.](https://elvers.us/perception/visualAngle/)
 
-Di seguito sono riportate le raccomandazioni per le dimensioni minime del contenuto interagiscibile.
+Di seguito sono riportati i consigli per le dimensioni minime del contenuto che è possibile interagire.
 
 ### <a name="target-size-for-direct-hand-interaction"></a>Dimensioni di destinazione per l'interazione diretta con la mano
 
@@ -233,7 +233,7 @@ Di seguito sono riportate le raccomandazioni per le dimensioni minime del conten
 
 ### <a name="target-size-for-buttons"></a>Dimensioni di destinazione per i pulsanti
 
-Quando si creano pulsanti per l'interazione diretta, è consigliabile avere dimensioni minime maggiori di 3,2 x 3,2 cm per assicurarsi che sia disponibile spazio sufficiente per contenere un'icona e potenzialmente del testo.
+Quando si creano pulsanti per l'interazione diretta, è consigliabile una dimensione minima maggiore di 3,2 x 3,2 cm per assicurarsi che sia disponibile spazio sufficiente per contenere un'icona e potenzialmente del testo.
 
 | Distanza | Dimensione minima |
 |---------|---------|
@@ -244,27 +244,27 @@ Quando si creano pulsanti per l'interazione diretta, è consigliabile avere dime
 
 <br>
 
-### <a name="target-size-for-hand-ray-or-gaze-interaction"></a>Dimensioni di destinazione per l'interazione con il raggio della mano o lo sguardo
+### <a name="target-size-for-hand-ray-or-gaze-interaction"></a>Dimensioni di destinazione per l'interazione con raggio della mano o sguardo fisso
 | Distanza | Angolo di visualizzazione | Dimensione |
 |---------|---------|---------|
 | 2 m  | non inferiore a 1° | 3,5 x 3,5 cm |
 
-![Dimensioni di destinazione per l'interazione con il raggio della mano o lo sguardo](images/TargetSizingFar.jpg)<br>
-*Dimensioni di destinazione per l'interazione con il raggio della mano o lo sguardo*
+![Dimensioni di destinazione per l'interazione con raggio della mano o sguardo fisso](images/TargetSizingFar.jpg)<br>
+*Dimensioni di destinazione per l'interazione con raggio della mano o sguardo fisso*
 
 <br>
 
 ---
 
-## <a name="interactable-object-in-mrtk-mixed-reality-toolkit-for-unity"></a>Oggetto interagiscibile in MRTK (Mixed Reality Toolkit) per Unity
+## <a name="interactable-object-in-mrtk-mixed-reality-toolkit-for-unity"></a>Oggetto con interazione in MRTK (Mixed Reality Toolkit) per Unity
 
-In **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** è possibile usare lo script [**Interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) per fare in modo che gli oggetti rispondano a vari tipi di stati di interazione di input. Supporta vari tipi di temi che consentono di definire gli stati di visualizzazione controllando le proprietà dell'oggetto, ad esempio colore, dimensioni, materiale e shader.
+In **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** è possibile usare lo script [**Interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) per fare in modo che gli oggetti rispondano a vari tipi di stati di interazione di input. Supporta vari tipi di temi che consentono di definire gli stati di visualizzazione controllando le proprietà degli oggetti, ad esempio colore, dimensioni, materiale e shader.
 
-* [Interagibile](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable)
+* [Con interazione](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable)
 * [Button](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button)
-* [Scena degli esempi di interazione manuale](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
+* [Scena di esempi di interazione manuale](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
-Lo shader Standard di MixedRealityToolkit  offre varie opzioni, ad esempio la luce di prossimità, che consente di creare segnali visivi e audio.
+Lo shader Standard di MixedRealityToolkit  offre diverse opzioni, ad esempio la luce di prossimità, che consente di creare segnali visivi e audio.
 
 * [MRTK Standard Shader](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
 

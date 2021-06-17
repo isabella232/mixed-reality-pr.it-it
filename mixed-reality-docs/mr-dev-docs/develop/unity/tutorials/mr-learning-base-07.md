@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, interazioni tra oggetti, controlli limiti
 ms.localizationpriority: high
-ms.openlocfilehash: 1c90abe0b3b41694b6e1e826d86161cc189b60cd
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: cbf2bbf78a34cfdd4856b7b8d192e4ac7c2f0154
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743666"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110269"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interazione con oggetti 3D
 
@@ -59,7 +59,7 @@ Nella finestra Hierarchy (Gerarchia) espandi l'oggetto RoverExplorer > **RoverPa
 > Per selezionare più oggetti non adiacenti, tieni premuto CTRL mentre usi il mouse per selezionare un oggetto.
 
 > [!NOTE]
-> Quando si aggiunge un manipolatore di oggetti (script), in questo caso, gestione vincoli (script) viene aggiunto automaticamente perché il manipolatore di oggetti (script) dipende da esso.
+> Quando si aggiunge un manipolatore di oggetti (script), in questo caso, Gestione vincoli (script) viene aggiunto automaticamente perché il manipolatore di oggetti (script) dipende da esso.
 
 > [!NOTE]
 > Ai fini di questa esercitazione, i collisori sono già stati aggiunti alle parti rover. Per altre informazioni sui collisori, puoi visitare la documentazione <a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">corrispondente</a> di Unity.
@@ -113,7 +113,7 @@ Se attivi ora la modalità di gioco, puoi usare l'interazione da vicino o da lon
 
 ![Visualizzazione suddivisa della modalità di riproduzione in Unity con il pulsante Reset selezionato](images/mr-learning-base/base-07-section1-step1-7.png)
 
-Per altre informazioni sul componente Object Manipulator (Manipolatore oggetti) e sulle relative proprietà associate, puoi visitare la guida su [tale componente](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) nel [portale della documentazione di MRTK](/windows/mixed-reality/mrtk-unity/).
+Per altre informazioni sul componente Object Manipulator (Manipolatore oggetti) e sulle relative proprietà associate, puoi visitare la guida su [tale componente](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-manipulator) nel [portale della documentazione di MRTK](/windows/mixed-reality/mrtk-unity/).
 
 ## <a name="adding-bounds-control"></a>Aggiunta del controllo Bounds
 
@@ -168,11 +168,11 @@ Se ora si passa alla modalità di gioco e si abilita il controllo limiti facendo
 
 ![Doppia visualizzazione della modalità di riproduzione unity con il controllo Bounds modificato](images/mr-learning-base/base-07-section2-step1-4.png)
 
-Per altre informazioni sul componente Bounds Control e sulle proprietà associate, è possibile visitare la guida [Bounds Control](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html) (Controllo limiti) nel portale [della documentazione di MRTK.](/windows/mixed-reality/mrtk-unity/)
+Per altre informazioni sul componente Bounds Control e sulle proprietà associate, è possibile visitare la guida [Bounds Control](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounds-control) (Controllo limiti) nel portale [della documentazione di MRTK.](/windows/mixed-reality/mrtk-unity/)
 
 ## <a name="congratulations"></a>Lezione completata
 
-In questa esercitazione hai appreso come abilitare la manipolazione da vicino e da lontano degli oggetti 3D e limitare i tipi di manipolazione consentiti. Si è anche appreso come aggiungere il controllo dei limiti intorno agli oggetti 3D per semplificare il controllo della manipolazione degli oggetti.
+In questa esercitazione hai appreso come abilitare la manipolazione da vicino e da lontano degli oggetti 3D e limitare i tipi di manipolazione consentiti. Si è anche appreso come aggiungere il controllo Bounds intorno agli oggetti 3D per semplificare il controllo della manipolazione degli oggetti.
 
 > [!div class="nextstepaction"]
 > [Esercitazione successiva: 8. Uso del tracciamento oculare](mr-learning-base-08.md)

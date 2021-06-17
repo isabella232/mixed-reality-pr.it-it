@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, prefab, ologrammi, descrizioni comandi
 ms.localizationpriority: high
-ms.openlocfilehash: 1d5a86ca87b8d65254607c787ac9f01c007c2b4b
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: 0abfb4ea2fac3a2e50837c219a465c4ab002e69d
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743648"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110272"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Creazione delle interfacce utente
 
@@ -67,7 +67,7 @@ Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto pulsante **Hints**, q
 ![Unity con l'evento OnClick dell'oggetto pulsante Hints configurato](images/mr-learning-base/base-06-section1-step1-5.png)
 
 > [!TIP]
-> Il componente Interactable è un contenitore all-in-one che consente a tutti gli oggetti di interagire con facilità e rispondere all'input. Interactable agisce come un catch-all per tutti i tipi di input, tra cui il tocco, i raggi della mano, il riconoscimento vocale e così via e incanala tali interazioni in eventi e risposte con temi visivi. Per informazioni su come configurarlo per diversi tipi di input e personalizzarne il tema visivo, è possibile fare riferimento all'argomento [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) nel [portale della documentazione di MRTK](/windows/mixed-reality/mrtk-unity/).
+> Il componente Interactable è un contenitore all-in-one che consente a tutti gli oggetti di interagire con facilità e rispondere all'input. Interactable agisce come un catch-all per tutti i tipi di input, tra cui il tocco, i raggi della mano, il riconoscimento vocale e così via e incanala tali interazioni in eventi e risposte con temi visivi. Per informazioni su come configurarlo per diversi tipi di input e personalizzarne il tema visivo, è possibile fare riferimento all'argomento [Interactable](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable) nel [portale della documentazione di MRTK](/windows/mixed-reality/mrtk-unity/).
 
 Nella finestra Hierarchy (Gerarchia) selezionare l'oggetto pulsante **Explode**, quindi nella finestra Inspector (Controllo) configurare l'evento **Interactable.OnClick ()** come indicato di seguito:
 
@@ -86,7 +86,7 @@ e il pulsante **Explode** per attivare e disattivare la visualizzazione esplosa:
 
 ## <a name="creating-a-dynamic-menu-that-follows-the-user"></a>Creazione di un menu dinamico che segue l'utente
 
-Nella finestra Project (Progetto) passa alla cartella **Packages**  >  **Mixed Reality Toolkit Foundation** SDK Features UX Prefabs Menus (Menu prefab UX), fai clic e trascina il prefab NearMenu4x1 nella finestra Hierarchy (Gerarchia), imposta la relativa posizione di trasformazione su  >    >    >    >    >   X = 0, Y = -0.4, Z = 0   e configurala come segue:
+Nella finestra Project (Progetto) passa alla cartella **Packages**  >  **Mixed Reality Toolkit Foundation** SDK Features UX Prefabs Menus (Menu prefab UX), fai clic e trascina il prefab NearMenu4x1 nella finestra Hierarchy (Gerarchia), imposta transform position (Posizione trasformazione) su  >    >    >    >    >   X = 0, Y = -0.4, Z = 0   e configuralo come segue:
 
 * Verifica che per **Tracked Target Type** (Tipo destinazione tracciata) del componente **SolverHandler** sia impostato il valore **Head** (Testa)
 * Seleziona la casella di controllo accanto al componente **RadialView** in modo che sia abilitato per impostazione predefinita
@@ -172,13 +172,13 @@ Nella finestra Project (Progetto) passa alla cartella **Packages**  >  Mixed Rea
 Nella finestra Hierarchy (Gerarchia) espandi l'oggetto RoverExplorer > **RoverParts** e seleziona tutti i relativi oggetti parte rover figlio, quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **ToolTipSpawner** e configuralo come indicato di seguito:
 
 * Verifica che la casella di controllo **Focus Enabled** (Stato attivo abilitato) sia selezionata per richiedere all'utente di guardare la parte per visualizzare la descrizione comando
-* Assegnare il prefab **Descrizione** comando Riga semplice dalla finestra Progetto al **campo Prefab**
+* Assegnare il prefab **della descrizione comando** Riga semplice dalla finestra Progetto al **campo Prefab**
 * Imposta ToolTip Override Settings (Impostazioni di override descrizione comando) > **Settings Mode** (Modalità impostazioni) su **Override**
 * Imposta ToolTip Override Settings (Impostazioni di override descrizione comando) > **Manual Pivot Local Position Y** (Posizione Y locale pivot manuale) su **1.5**
 
 ![Unity con tutti gli oggetti parte rover selezionati e il componente ToolTipSpawner aggiunto e configurato](images/mr-learning-base/base-06-section4-step1-2.png)
 
-Nella finestra Hierarchy (Gerarchia) seleziona Camera_Part RoverParts > **Camera_Part** e configura il **componente ToolTipSpawner** come indicato di seguito:
+Nella finestra Hierarchy (Gerarchia) selezionare Camera_Part, RoverParts **> Camera_Part** e configurare il componente **ToolTipSpawner** come indicato di seguito:
 
 * Modifica **Tool Tip Text** (Testo descrizione comando) in modo che rifletta il nome della parte, ovvero **Camera**
 
