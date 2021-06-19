@@ -3,15 +3,15 @@ title: Scelta di una versione di Unity e di un plug-in XR
 description: Rimanere aggiornati sulle raccomandazioni più recenti dei plug-in Unity e XR per lo sviluppo di applicazioni HoloLens.
 author: hferrone
 ms.author: v-hferrone
-ms.date: 03/26/2021
+ms.date: 06/18/2021
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, visore di realtà mista, visore windows mixed reality, visore per realtà virtuale, unity
-ms.openlocfilehash: da171db41e508fe556d8645b23f12f6f437446a1
-ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
+ms.openlocfilehash: 452692b1be98459cc242833149b1cfd91f0f4d4a
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111908232"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394420"
 ---
 # <a name="choosing-a-unity-version-and-xr-plugin"></a>Scelta di una versione di Unity e di un plug-in XR
 
@@ -26,22 +26,22 @@ Il modo migliore per installare e gestire Unity è <a href="https://unity3d.com/
 1. Selezionare la **scheda Installazioni** e scegliere **AGGIUNGI**
 2. Selezionare Unity 2019.4 LTS e fare clic su **Avanti**
 
-![Unity hub instal new version](images/unity-hub-img-01.png)
+![Nuova versione dell'hub Unity](images/unity-hub-img-2019.png)
 
 3. Controllare i componenti seguenti in **"Piattaforme"**
     * **piattaforma UWP (Universal Windows Platform) di compilazione** 
     * **Supporto per la compilazione di Windows (IL2CPP)**
 
-![Opzione supporto piattaforma UWP (Universal Windows Platform) compilazione di Unity](../images/Unity_Install_Option_UWP.png)
+![Opzione supporto piattaforma UWP (Universal Windows Platform) compilazione di Unity](images/Unity_Install_Option_UWP_2019.png)
 
 4. Se Unity è stato installato senza queste opzioni, è possibile aggiungerle tramite il menu **"Aggiungi moduli"** in Unity Hub:
 
-![Opzione supporto compilazione Di Unity per Windows](../images/Unity_Install_Option_UWP2.png)
+![Opzione supporto compilazione Di Unity per Windows](images/Unity_Install_Option_UWP2_2019.png)
 
 Per iniziare a usare Legacy Built-in XR in Unity 2019.4 LTS, fare clic qui:
 
 > [!div class="nextstepaction"]
-> [Configurare la versione XR incorporata legacy](legacy-xr-support.md)
+> [Configurare la versione XR incorporata legacy](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=legacy)
 
 > [!NOTE]
 > Unity ha deprecato il supporto XR incorporato legacy a data di Unity 2019.  Anche se Unity 2019 offre un nuovo framework plug-in XR, Microsoft attualmente non consiglia questo percorso in Unity 2019 a causa delle incompatibilità di Ancoraggi nello stato di Azure con AR Foundation 2.  In Unity 2020, Ancoraggi nello spaziali di Azure è supportato all'interno del framework plug-in XR.
@@ -50,28 +50,18 @@ Se si sviluppano app per HoloLens (prima generazione), questi visori rimangono s
 
 ## <a name="unity-20203-lts"></a>Unity 2020.3 LTS 
 
-Se si usa **Unity 2020.3 LTS,** è possibile usare il **plug-in Windows XR** per sviluppare applicazioni HoloLens 2 e Windows Mixed Reality applicazioni.
+Se si usa **Unity 2020.3 LTS,** la raccomandazione corrente di Microsoft è il plug-in **OpenXR di realtà mista più recente.** È NECESSARIO usare la patch unity versione 2020.3.8f1 o successiva per evitare problemi di prestazioni noti con le build precedenti della versione 2020.3.
 
-Esistono tuttavia problemi noti che influiscono sulla stabilità dell'ologramma e su altre funzionalità HoloLens 2: 
+Il plug-in OpenXR di realtà mista supporta completamente AR Foundation 4.0, fornendo implementazioni arPlaneManager e ARRaycastManager. In questo modo è possibile scrivere codice di hit testing una volta che si estende su HoloLens 2 telefoni e tablet ARCore/ARKit.
 
-* Le applicazioni di comunicazione remota delle app olografiche piattaforma UWP (Universal Windows Platform) destinazione di compilazione non funzionano.
-* Il sistema dei processi di grafica unity è stato utilizzato per impostazione predefinita, anche se non è compatibile con i progetti HoloLens.
+Esistono tuttavia problemi noti che interessano i progetti Unity 2020 LTS:
 
-Se si sceglie di avviare un nuovo progetto in Unity 2020 oggi stesso, assicurarsi di seguire nei prossimi mesi le compilazioni di Unity aggiornate e le compilazioni del plug-in Windows XR prima di compilare l'app.  In questo modo si garantisce che gli utenti sperimentino una corretta stabilità dell'ologramma.
+* La pipeline di rendering universale (URP) 10.5.0 o versione precedente presenta penalità per le prestazioni HoloLens 2 dispositivi.
 
-> [!div class="nextstepaction"]
-> [Uso del plug-in Windows XR](windows-xr-plugin.md)
-
-### <a name="using-openxr"></a>Uso di OpenXR
-
-Unity 2020.3 LTS supporta anche un'anteprima pubblica del **plug-in OpenXR di realtà mista.**
-
-Il plug-in OpenXR di realtà mista supporta completamente AR Foundation 4.0, fornendo implementazioni arPlaneManager e ARRaycastManager. In questo modo è possibile scrivere codice di hit testing una volta che si estende su HoloLens 2 telefoni e tablet ARCore/ARKit. 
-
-Più avanti quest'anno, **Unity 2020.3 LTS** con il plug-in OpenXR diventerà la configurazione di Unity consigliata e le future funzionalità HoloLens 2 in Unity verranno esposte solo tramite questo plug-in.
+Se si sceglie di avviare un nuovo progetto in Unity 2020 oggi stesso, assicurarsi di seguire le prossime settimane per le compilazioni Unity aggiornate e i pacchetti URP prima di spedire l'app.  In questo modo si garantisce agli utenti una corretta stabilità dell'ologramma.
 
 > [!div class="nextstepaction"]
-> [Uso del plug-in OpenXR](openxr-getting-started.md)
+> [Uso del plug-in OpenXR](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=openxr)
 
 ## <a name="unity-20211"></a>Unity 2021.1
 
@@ -79,4 +69,4 @@ Se si provano le prime build **di Unity 2021.1,** è consigliabile passare al **
 
 ## <a name="unity-20184-lts"></a>Unity 2018.4 LTS
 
-Se si ha già un progetto che usa Unity 2018.4 LTS, il motore unity continuerà a essere supportato per 2 anni dopo il rilascio.  Unity 2018 LTS raggiungerà la fine del servizio nella primavera del 2021.
+Se si ha già un progetto che usa Unity 2018.4 LTS, il motore unity continua a essere supportato per 2 anni dopo il rilascio.  Unity 2018 LTS raggiungerà la fine del servizio nella primavera del 2021.

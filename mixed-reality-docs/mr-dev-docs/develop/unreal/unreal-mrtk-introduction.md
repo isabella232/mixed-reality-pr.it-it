@@ -7,16 +7,16 @@ ms.date: 01/08/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, Mixed Reality Toolkit, MRTK versione 2, MRTK, strumenti, SDK, HoloLens, HoloLens 2, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, multipiattaforma
-ms.openlocfilehash: bb690cf4770924e9627f25bf0ff47472582535d3
-ms.sourcegitcommit: 62e5909b837c9c7ecedd040164f2308868db4723
+ms.openlocfilehash: 3d46b92dbf3182ca5a50a8e106d2b947e4f7120f
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "111741933"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394285"
 ---
 # <a name="introducing-mrtk-for-unreal"></a>Introduzione a MRTK per Unreal
 
-![MRTK](../../design/images/MRTK_UX_Hero.png)
+![Immagine del banner MRTK](../../design/images/MRTK_UX_Hero.png)
 
 ## <a name="what-is-mixed-reality-toolkit-mrtk"></a>Che cos'è Mixed Reality Toolkit (MRTK)?
 
@@ -30,11 +30,16 @@ Esaminare la documentazione [di MRTK](https://microsoft.github.io/MixedReality-U
 
 ### <a name="modular"></a>Modularità
 
-MrTK Unreal è stato creato in modo modulare, quindi non è necessario importare ogni parte del toolkit nel progetto. È possibile selezionare e scegliere i plug-in necessari e aggiungerli o rimuoverli ogni volta che lo si desidera. Questo approccio mantiene le dimensioni del progetto più piccole e semplifica la gestione.  
+È stato creato MRTK Unreal in modo modulare, quindi non è necessario importare tutti i componenti del toolkit nel progetto. È possibile selezionare e scegliere i plug-in necessari e aggiungerli o rimuoverli ogni volta che lo si desidera. Questo approccio mantiene le dimensioni del progetto più piccole e semplifica la gestione.  
 
 ### <a name="performant"></a>Ottime prestazioni
 
 Lavorando con le piattaforme mobili, è stato creato MRTK Unreal con le prestazioni in considerazione. Si tratta di un aspetto estremamente importante e si è voluto garantire che gli strumenti non funzionino con l'utente.
+
+## <a name="project-setup"></a>Configurazione del progetto
+
+> [!div class="nextstepaction"]
+> [Scaricare un motore Unreal e MRTK](unreal-project-setup.md)
 
 ## <a name="see-also"></a>Vedere anche
 

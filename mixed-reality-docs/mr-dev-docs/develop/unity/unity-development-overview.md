@@ -7,23 +7,18 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realtà mista, sviluppo, guida introduttiva, nuovo progetto, porting, funzionalità, fotocamera, simulazione, emulazione, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, mapping spaziale, input vocale, fotocamera individuabile, emulatore, Azure, esercitazioni
-ms.openlocfilehash: 7ecc111f6dfe2cc66091b0ed8fc959819c4da897
-ms.sourcegitcommit: 62e5909b837c9c7ecedd040164f2308868db4723
+ms.openlocfilehash: b6d8d44851813f340997c41b2f25104b51dee2fa
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "111741965"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394295"
 ---
 # <a name="unity-development-for-hololens"></a>Sviluppo di Unity per HoloLens
 
 ![Logo banner di Unity](../images/unity_logo_banner.png)
 
-Il percorso più rapido per creare un'app di realtà mista HoloLens in Unity è con Mixed Reality Toolkit (MRTK). Se si usa Unity per la prima volta, prima di continuare è consigliabile esplorare le [esercitazioni](https://unity3d.com/learn/tutorials) di livello principiante nella piattaforma Unity Learn. 
-
-Se non si ha una nuova versione dello sviluppo di realtà mista in Unity e si vuole iniziare a usare un progetto con MRTK, vedere il modulo Microsoft Learn. È sempre possibile tornare qui per argomenti più intermedi e avanzati quando si ottiene il blocco delle cose.
-
-> [!div class="nextstepaction"]
-> [Configurare un progetto Unity di realtà mista con MRTK](/learn/modules/mixed-reality-toolkit-project-unity)
+Unity è una delle principali piattaforme di sviluppo in tempo reale sul mercato, con il codice di runtime sottostante scritto in C++ e tutto lo scripting di sviluppo viene eseguito in C#. Unity offre l'infrastruttura necessaria per supportare qualsiasi utente per la creazione di giochi, filmati e animazioni o anche per il rendering di concetti architettonici o ingegneristici in un mondo virtuale. Quando si è pronti per iniziare, vedere i checkpoint di sviluppo riportati di seguito.
 
 > [!IMPORTANT]
 > Se si ha a disposizione un progetto Unity da trasferire in HoloLens 2, consultare le **[guide per il porting](../porting-apps/porting-overview.md)** . Sono disponibili guide per i progetti che usano HTK, MRTK V1 o SteamVR.
@@ -39,15 +34,15 @@ Il modo più semplice per sviluppare in Unity è quello di usare Mixed Reality T
 |  Checkpoint  |  Risultato  |
 | --- | --- |
 | [Introduzione a Mixed Reality Toolkit](mrtk-getting-started.md) | Per iniziare, acquisire familiarità con Mixed Reality Toolkit e imparare a conoscere i vantaggi che offre |
-| [Scaricare lo strumento di funzionalità di realtà mista](welcome-to-mr-feature-tool.md) | Nuovo strumento di sviluppo per l'individuazione, l'aggiornamento e l'aggiunta di pacchetti di funzionalità di realtà mista ai progetti Unity |
+| [Scaricare lo strumento di funzionalità di realtà mista](welcome-to-mr-feature-tool.md) | Un nuovo strumento di sviluppo per l'individuazione, l'aggiornamento e l'aggiunta di pacchetti di funzionalità di realtà mista ai progetti Unity |
 | [Configurare l'ambiente di sviluppo](../install-the-tools.md) | Scaricare e installare il pacchetto Unity più recente e configurare il progetto per la realtà mista |
-| [Completare la serie HoloLens 2 tutorial](tutorials/mr-learning-base-01.md) | Seguire le esercitazioni su MRTK di livello principiante per l'hardware HoloLens 2 |
+| [Completare la HoloLens 2 di esercitazioni](tutorials/mr-learning-base-01.md) | Seguire le esercitazioni su MRTK di livello principiante per l'hardware HoloLens 2 |
 
 > [!IMPORTANT]
 > Se vuoi creare un nuovo progetto Unity senza importare Mixed Reality Toolkit, devi modificare manualmente un piccolo set di impostazioni di Unity per Windows Mixed Reality. Per altre informazioni, [vedere la guida](choosing-unity-version.md) alla configurazione.
 
 > [!NOTE]
-> Dopo aver impostato MRTK nel progetto, gli oggetti di gioco Unity standard come la fotocamera si acceleranno immediatamente per un'esperienza su larga scala. Per istruzioni sulla modifica della scala di esperienza dell'applicazione, vedere la pagina relativa ai [sistemi di coordinate](coordinate-systems-in-unity.md).
+> Dopo aver impostato MRTK nel progetto, gli oggetti gioco Unity standard come la fotocamera si acceleranno immediatamente per un'esperienza su larga scala. Per istruzioni sulla modifica della scala di esperienza dell'applicazione, vedere la pagina relativa ai [sistemi di coordinate](coordinate-systems-in-unity.md).
 
 ## <a name="2-core-building-blocks"></a>2. Componenti fondamentali
 
@@ -56,7 +51,7 @@ Tutti i componenti di base per le applicazioni di realtà mista sono esposti in 
 |  Funzionalità  |  Capabilities  |
 | --- | --- |
 | [Fotocamera](../unity/camera-in-unity.md) | Ottimizzare pienamente la qualità visiva e la stabilità degli ologrammi nelle app di realtà mista |
-| [Blocco del mondo e ancoraggi spaziali](spatial-anchors-in-unity.md) | Risolvere i problemi di stabilizzazione, la regolazione della fotocamera e integrare una soluzione di sistema di coordinate stabile |
+| [Blocco del mondo e ancoraggi nello spaziale](spatial-anchors-in-unity.md) | Risolvere i problemi di stabilizzazione, regolazione della fotocamera e integrare una soluzione di sistema di coordinate stabile |
 | [Esperienze condivise](shared-experiences-in-unity.md) | Visualizzare e interagire collettivamente con lo stesso ologramma in un punto fisso nello spazio usando la condivisione degli ancoraggi nello spazio |
 | [Sguardo fisso](../unity/gaze-in-unity.md) | Consentire agli utenti di puntare agli ologrammi fissandoli con lo sguardo |
 | [Controller del movimento](../unity/motion-controllers-in-unity.md) | Aggiungere azioni nello spazio alle app di realtà mista |
@@ -73,7 +68,7 @@ Altre funzionalità chiave per le applicazioni di realtà mista sono disponibili
 
 |  Funzionalità  |  Capabilities  |
 | --- | --- |
-| [Fotocamera con foto](locatable-camera-in-unity.md) | Acquisire foto e contenuti video nell'applicazione di realtà mista |
+| [Fotocamera](locatable-camera-in-unity.md) | Acquisire foto e contenuti video nell'applicazione di realtà mista |
 | [Punto di interesse](focus-point-in-unity.md) | Suggerire a HoloLens il modo ottimale per eseguire la stabilizzazione degli ologrammi attualmente visualizzati |
 | [Perdita del tracciamento](tracking-loss-in-unity.md) | Gestire gli scenari in cui il dispositivo non è in grado di individuare la propria posizione nello spazio globale dell'applicazione |
 | [Input da tastiera](keyboard-input-in-unity.md) | Ottenere input nelle app da tastiere reali e di realtà mista |
@@ -146,7 +141,7 @@ Oltre a questa documentazione disponibile in docs.microsoft.com, è disponibile 
 * Windows Mixed Reality
 * OpenXR
 * XRSDK
-* XR legacy 
+* XR legacy
 
 ## <a name="see-also"></a>Vedere anche
 

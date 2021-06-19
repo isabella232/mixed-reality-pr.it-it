@@ -7,18 +7,18 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicazione remota, realtà mista, sviluppo, guida introduttiva, funzionalità, nuovo progetto, emulatore, documentazione, guide, caratteristiche, ologrammi, sviluppo di giochi, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, OpenXR
-ms.openlocfilehash: 1b5959db028e78670a933188101084e6035805fc
-ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
+ms.openlocfilehash: 1225c507ec46c6f42c2fc10582a7920802860ad0
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111772324"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394315"
 ---
 # <a name="unreal-development-overview"></a>Panoramica dello sviluppo con Unreal
 
 ![Logo banner Unreal](../images/unreal_logo_banner.png)
 
-Muovere i primi passi nelle <a href="https://docs.microsoft.com/windows/mixed-reality" target="_blank" title="Documentazione sulla realtà mista">applicazioni in realtà mista</a> è un'attività complessa. Nuovi concetti, nuove piattaforme e hardware all'avanguardia possono sembrare ostacoli difficili da superare. Gli sviluppatori che usano Unreal, però, hanno un asso nella manica. In Unreal Engine 4 è incluso il supporto per <a href="https://www.microsoft.com/windows/windows-mixed-reality" target="_blank" title="Documentazione su Windows Mixed Reality">Windows Mixed Reality</a> (VR) e <a href="https://www.microsoft.com/hololens/hardware" target="_blank" title="Documentazione sui dispositivi HoloLens 2">HoloLens 2</a> (AR).
+Muovere i primi passi nelle <a href="/windows/mixed-reality" target="_blank" title="Documentazione sulla realtà mista">applicazioni in realtà mista</a> è un'attività complessa. Nuovi concetti, nuove piattaforme e hardware all'avanguardia possono sembrare ostacoli difficili da superare. Gli sviluppatori che usano Unreal, però, hanno un asso nella manica. In Unreal Engine 4 è incluso il supporto per <a href="https://www.microsoft.com/windows/windows-mixed-reality" target="_blank" title="Documentazione su Windows Mixed Reality">Windows Mixed Reality</a> (VR) e <a href="https://www.microsoft.com/hololens/hardware" target="_blank" title="Documentazione sui dispositivi HoloLens 2">HoloLens 2</a> (AR).
 
 [!INCLUDE[](includes/tabs-unreal-features.md)]
 
@@ -38,7 +38,8 @@ Prima di tutto, è necessario installare gli strumenti per lo sviluppo di app pe
 |  Checkpoint  |  Risultato  |
 | --- | --- |
 | [Installare gli ultimi aggiornamenti](../install-the-tools.md) | Scaricare e installare la versione più recente di Unreal Engine e configurare il progetto per la realtà mista |
-| [Creazione della prima applicazione HoloLens Unreal](unreal-quickstart.md) | Inizia il percorso di sviluppo di Unreal e HoloLens creando un'applicazione di realtà mista di base |
+| [Configurare il progetto](unreal-project-setup.md) | Ottenere la versione più recente di Unreal Engine e MRTK |
+| [Creazione della prima applicazione HoloLens Unreal](unreal-quickstart.md) | Iniziare il percorso di sviluppo di Unreal e HoloLens creando un'applicazione di realtà mista di base |
 | [Serie di esercitazioni su HoloLens 2](tutorials/unreal-uxt-ch1.md) | Acquisire le informazioni necessarie per sviluppare app di realtà mista in Unreal, compilare la prima app con MRTK e distribuire l'app in HoloLens 2 |
 | Introduzione a [OpenXR](../native/openxr.md) in Unreal | Installare e abilitare il plug-in seguente da Unreal Engine Marketplace:<ul><li> [Microsoft OpenXR](https://www.unrealengine.com/marketplace/en-US/product/ef8930ca860148c498b46887da196239)</li></ul>Assicurarsi che il plug-Windows Mixed Reality Microsoft sia disabilitato.<br><br>L'elenco completo delle funzionalità attualmente supportate in OpenXR è [riportato di seguito](#supported-features).|
 
@@ -50,7 +51,7 @@ Ci sono diverse funzionalità chiave per la realtà mista che non vengono tratta
 
 * [UX Tools for Unreal](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools) è il primo plug-in rilasciato ed è attualmente supportato solo su HoloLens 2. Il plug-in include codice C++, progetti e asset di esempio di funzionalità di UX comuni per la simulazione di input, le interazioni con le mani, il magnetismo della superficie e altro ancora.
 
-* [Strumenti di grafica per Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) è un plug-in di gioco UE con codice, progetti e asset di esempio creati per migliorare la fedeltà visiva delle applicazioni di realtà mista, mantenendo al tempo stesso i budget per le prestazioni.
+* [Strumenti di grafica per Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) è un plug-in di gioco UE con codice, progetti e asset di esempio creati per migliorare la fedeltà visiva delle applicazioni di realtà mista mantenendo i budget delle prestazioni.
 
 [!INCLUDE[](../includes/unreal-building-blocks.md)]
 
@@ -115,7 +116,7 @@ Lo sviluppo per la realtà mista prevede punti di controllo delle prestazioni ch
 | Mobile Multi-View: prestazioni fino a 60 fps | 4.25 | ✔️ |
 | Rendering della terza fotocamera | 4.25 | ✔️ |
 | Streaming da un'app desktop in pacchetto | 4.25.1 | ✔️ |
-| Ancoraggi nello HoloLens 2 | 4.25 | ✔️ |
+| Ancoraggi nello stato di Azure per HoloLens 2 | 4.25 | ✔️ |
 | Supporto del plug-in UX Tools di Mixed Reality Toolkit | 4.25 | ✔️ |
 | Documentazione ed esercitazioni per sviluppatori | 4.25 | ✔️ |
 | Tastiera di sistema | 4.26 | ✔️ |
