@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 05/21/2021
 ms.topic: article
 keywords: Unity, comunicazione remota, comunicazione remota olografica, lettore di comunicazione remota olografica, HoloLens, visore per realtà mista, visore windows mixed reality, visore di realtà virtuale, modalità di gioco unity
-ms.openlocfilehash: caa9d7bf11104ee168fda24fc369de490feb7817
-ms.sourcegitcommit: 5617575cf550dd03fba0bfd5263e97972dcc646b
+ms.openlocfilehash: b998233fda34beee0c98795a1efa2c86a53541ba
+ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "111547102"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112392293"
 ---
 # <a name="unity-play-mode"></a>Modalità di gioco Unity
 
@@ -24,24 +24,6 @@ Un modo rapido per lavorare al progetto Unity è usare la "modalità di riproduz
     * Per usare il plug-in OpenXR è necessaria la versione 2.4 o successiva
 
     ![Screenshot di Holographic Remoting Player in esecuzione in HoloLens](images/openxr-features-img-01.png)
-
-## <a name="holographic-remoting-in-unity-editor-play-mode"></a>Comunicazione remota olografica in modalità di riproduzione dell'editor unity
-
-La compilazione di un progetto Unity UWP Visual Studio progetto e quindi la creazione del pacchetto e la distribuzione in un dispositivo HoloLens 2 può richiedere del tempo. Una soluzione consiste nell'abilitare la funzionalità comunicazione remota di Holographic Editor, che consente di eseguire il debug dello script C# usando la modalità "Play" direttamente in un dispositivo HoloLens 2 rete. Questo scenario evita il sovraccarico della compilazione e della distribuzione di un pacchetto UWP nel dispositivo remoto.
-
-1. Seguire la procedura descritta in [Holographic Remoting setup (Configurazione di Holographic Remoting)](#holographic-remoting-setup)
-2. Aprire Windows > XR > comunicazione remota **dell'editor OpenXR:**
-
-    ![Screenshot del pannello delle impostazioni del progetto aperto nell'editor di Unity con la gestione dei plug-in XR evidenziata](images/openxr-features-img-02.png)
-
-3. Immettere l'indirizzo IP che si ottiene dall'app Holographic Remoting e selezionare Abilita comunicazione remota **dell'editor**
-
-    ![Screenshot del pannello delle impostazioni del progetto aperto nell'editor di Unity con funzionalità evidenziate](images/openxr-features-img-03.png)
-
-È ora possibile fare clic sul pulsante "Play" (Riproduci) per riprodurre l'app Unity nell'app Holographic Remoting in HoloLens. È anche possibile [collegare Visual Studio a Unity per](/visualstudio/gamedev/unity/get-started/using-visual-studio-tools-for-unity?pivots=windows) eseguire il debug di script C# in modalità di riproduzione.
-
-> [!NOTE]
-> A causa della versione 0.1.0, il runtime di Holographic Remoting non supporta ancoraggi e le funzionalità di ARAnchorManager non funzioneranno tramite la comunicazione remota.  Questa funzionalità sarà disponibile nelle versioni future.
 
 ## <a name="unity-play-mode-with-holographic-remoting"></a>Modalità di riproduzione Unity con Holographic Remoting
 
