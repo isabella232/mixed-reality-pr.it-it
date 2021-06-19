@@ -1,11 +1,15 @@
 - name: Introduzione allo sviluppo di app di Realtà mista
-  href: development.md
+  items:
+    - name: Guida introduttiva
+      href: development.md
+    - name: Installare gli strumenti
+      href: install-the-tools.md
+    - name: Scelta di un motore
+      href: choosing-an-engine.md
 - name: Panoramica dei servizi cloud di realtà mista di Azure
   href: mixed-reality-cloud-services.md
 - name: Esempi e app di funzionalità
   href: features-and-samples.md
-- name: Installare gli strumenti
-  href: install-the-tools.md
 - name: Conversione di app
   items:
     - name: Panoramica della conversione
@@ -170,14 +174,8 @@
       items:
         - name: Scelta di una versione di Unity e di un plug-in XR
           href: unity/choosing-unity-version.md
-        - name: Uso del supporto XR incorporato legacy
-          href: unity/legacy-xr-support.md
-        - name: Uso del plug-in Windows XR
-          href: unity/windows-xr-plugin.md
-        - name: Uso del plug-in OpenXR
-          href: unity/openxr-getting-started.md
-        - name: Funzionalità supportate dal plug-in OpenXR
-          href: unity/openxr-supported-features.md
+        - name: Configurazione di XR
+          href: unity/xr-project-setup.md
         - name: Strumento per la funzionalità di realtà mista
           items:
             - name: Introduzione a MR Feature Tool
@@ -262,7 +260,7 @@
               href: unity/lunar-module.md
     - name: Debug e prestazioni
       items:
-        - name: Debug gestito con Unity IL2CPP
+        - name: Debug gestito con Unity
           href: unity/managed-debugging-with-unity-il2cpp.md
         - name: Impostazioni consigliate per Unity
           href: unity/recommended-settings-for-unity.md
@@ -274,12 +272,18 @@
           href: unity/exporting-and-building-a-unity-visual-studio-solution.md
         - name: Procedure consigliate per l'uso con Unity e Visual Studio
           href: unity/best-practices-for-working-with-unity-and-visual-studio.md
+    - name: Note sulla versione
+      items:
+        - name: Plug-in OpenXR di realtà mista
+          href: unity/openxr-release-notes.md
 - name: Unreal
   items:
     - name: Panoramica dello sviluppo con Unreal
       href: unreal/unreal-development-overview.md
     - name: Introduzione a MRKT
       href: unreal/unreal-mrtk-introduction.md
+    - name: Configurazione del progetto
+      href: unreal/unreal-project-setup.md
     - name: Aggiornamento di progetti in Unreal
       href: unreal/unreal-porting.md
     - name: Avvi rapidi
@@ -361,12 +365,10 @@
 - name: JavaScript
   items:
     - name: Panoramica dello sviluppo con JavaScript
-      href: javascript/javascript-development-overview.md
-    - name: WebXR
       href: javascript/webxr-overview.md
     - name: Esercitazioni
       items:
-        - name: Hello World uso di BabylonJS
+        - name: Vr Hello World uso di BabylonJS
           items:
             - name: 1. Introduzione
               href: javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md
@@ -374,9 +376,9 @@
               href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
             - name: 3. Interagire con l'oggetto 3D
               href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
-- name: Nativo
+- name: Motore personalizzato
   items:
-    - name: Panoramica dello sviluppo nativo
+    - name: Panoramica dello sviluppo di motori personalizzati
       href: native/directx-development-overview.md
     - name: OpenXR
       items:

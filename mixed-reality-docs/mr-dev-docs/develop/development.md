@@ -1,5 +1,4 @@
 ---
-layout: LandingPage
 title: Informazioni sugli strumenti e sull'architettura
 description: Informazioni sugli strumenti di sviluppo di realtà mista necessari per iniziare a creare app per HoloLens e visori VR immersive.
 author: grbury
@@ -8,40 +7,43 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realtà mista, sviluppare, sviluppo, HoloLens, unity, unreal, directx, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, sviluppo di realtà virtuale, sviluppo di realtà aumentata
-ms.openlocfilehash: 0ff9c5bbf4c7da7c3d2c40d825ab92058b3eb3b1
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: b47970de15451ea3bd0c121edd7dc61438fa115c
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743404"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394325"
 ---
-# <a name="introduction-to-mixed-reality-development"></a>Introduzione allo sviluppo di app di Realtà mista
+# <a name="introduction-to-mixed-reality-development"></a><span data-ttu-id="4dcaa-104">Introduzione allo sviluppo di app di Realtà mista</span><span class="sxs-lookup"><span data-stu-id="4dcaa-104">Introduction to Mixed Reality development</span></span>
 
 ![Sfera 3D astratta](images/development-hero-image.png)
 
-Realtà mista è un vasto spazio, un nesso in cui il mondo reale e quello virtuale si scontrano fragorosamente. Le possibilità sono infinite e dipendono dall'utente. Si tratta di scegliere il motore, scaricare gli strumenti e spolverare la tastiera. Realtà mista è un ecosistema che consente di iniziare subito a creare.
+<span data-ttu-id="4dcaa-106">Realtà mista è un vasto spazio, un nesso in cui il mondo reale e quello virtuale si scontrano fragorosamente.</span><span class="sxs-lookup"><span data-stu-id="4dcaa-106">Mixed Reality is a big place, a nexus where real and virtual worlds collide with a bang.</span></span> <span data-ttu-id="4dcaa-107">Le possibilità sono infinite e dipendono dall'utente.</span><span class="sxs-lookup"><span data-stu-id="4dcaa-107">The possibilities are endless, and it starts with you.</span></span> <span data-ttu-id="4dcaa-108">Si tratta di scegliere il motore, scaricare gli strumenti e spolverare la tastiera.</span><span class="sxs-lookup"><span data-stu-id="4dcaa-108">Choose your engine, download your tools, and dust off your keyboard.</span></span> <span data-ttu-id="4dcaa-109">Realtà mista è un ecosistema che consente di iniziare subito a creare.</span><span class="sxs-lookup"><span data-stu-id="4dcaa-109">Welcome to the Mixed Reality ecosystem - it's time to create.</span></span>
 
-## <a name="development-options"></a>Opzioni di sviluppo
+<span data-ttu-id="4dcaa-110">Sono disponibili tre possibili percorsi per iniziare lo sviluppo in realtà mista, ognuno dei quali è descritto nella sezione seguente:</span><span class="sxs-lookup"><span data-stu-id="4dcaa-110">We have three possible paths for starting out in mixed reality development, each of which is described in it's own section below:</span></span>
+* [<span data-ttu-id="4dcaa-111">Microsoft Learn</span><span class="sxs-lookup"><span data-stu-id="4dcaa-111">Microsoft Learn</span></span>](#microsoft-learn)
+* [<span data-ttu-id="4dcaa-112">Serie di esercitazioni su Mixed Reality Toolkit</span><span class="sxs-lookup"><span data-stu-id="4dcaa-112">Mixed Reality Toolkit tutorial series</span></span>](#mixed-reality-toolkit-tutorials)
+* [<span data-ttu-id="4dcaa-113">Esplorazione self-guided</span><span class="sxs-lookup"><span data-stu-id="4dcaa-113">Self-guided exploration</span></span>](#self-guided-exploration)
 
-**Unity**: Unity è una delle principali piattaforme di sviluppo in tempo reale disponibili sul mercato, con codice runtime sottostante scritto in C++ e in cui tutti gli script di sviluppo vengono eseguiti in C#. Unity offre l'infrastruttura necessaria per supportare qualsiasi utente per la creazione di giochi, filmati e animazioni o anche per il rendering di concetti architettonici o ingegneristici in un mondo virtuale.
+## <a name="microsoft-learn"></a><span data-ttu-id="4dcaa-114">Microsoft Learn</span><span class="sxs-lookup"><span data-stu-id="4dcaa-114">Microsoft Learn</span></span>
 
-**Unreal** - Unreal Engine è un potente motore di creazione di open source con supporto completo per la realtà mista sia in C++ che nel Progetto Visual Scripting System di Unreal. A partire da Unreal Engine 4.25, il supporto per HoloLens è completo e pronto per la produzione. Con le funzionalità fornite dal flessibile Progetto Visual Scripting System, i progettisti non devono scrivere codice per usare la gamma completa di concetti e strumenti disponibili a livello generale solo per i programmatori. Autori di tutti i settori possono sfruttare la libertà e il controllo per offrire contenuti all'avanguardia, esperienze interattive e mondi virtuali immersivi.
+<span data-ttu-id="4dcaa-115">Microsoft Learn è l'area dedicata all'apprendimento.</span><span class="sxs-lookup"><span data-stu-id="4dcaa-115">Microsoft Learn is where everyone comes to learn.</span></span> <span data-ttu-id="4dcaa-116">È possibile scoprire nuove competenze, trovare certificazioni e fare progressi in pochi minuti grazie a percorsi di apprendimento pratici interattivi.</span><span class="sxs-lookup"><span data-stu-id="4dcaa-116">Discover new skills, find certifications, and advance your career in minutes with interactive, hands-on learning paths.</span></span>
 
-**Nativo (OpenXR)** : OpenXR è uno standard API aperto, concesso a titolo gratuito da Khronos, che fornisce ai motori l'accesso nativo a un'ampia gamma di dispositivi di fornitori che operano nell'ambito della realtà mista. È possibile sviluppare app usando OpenXR in un visore VR immersive di HoloLens 2 o Windows Mixed Reality sul desktop. Se non è possibile accedere a un visore VR, sono disponibili emulatori per visori VR di HoloLens 2 e Windows Mixed Reality.
-
-## <a name="what-technology-path-are-you-interested-in"></a>A quale tecnologia sei interessato? 
-
-Sono disponibili diversi percorsi di sviluppo che è possibile seguire attraverso la documentazione. Il primo passaggio consiste nell'individuare la tecnologia più adatta alle specifiche esigenze. Se se ne è già individuata una, è possibile passare direttamente alla rispettiva scheda riportata di seguito. Se ci si affaccia a questo ambiente per la prima volta o si è appena iniziato, è opportuno esaminare tutte le possibilità e comprendere cosa offrono, le piattaforme e gli strumenti disponibili e solo dopo iniziare a creare.
-
-> [!IMPORTANT]
-> Se si hanno a disposizione progetti da trasferire in HoloLens 2 o visori VR immersive come Reverb G2, consultare la **[panoramica delle guide per il porting](porting-apps/porting-overview.md)** . Sono disponibili guide per progetti che usano HTK, MRTK v1, SteamVR o che sono stati sviluppati per visori VR immersive, ad esempio Oculus Rift o HTC Vive.
-
-[!INCLUDE[](includes/tech-path-overview.md)]
-
-## <a name="whats-next"></a>Passaggi successivi
-
-Dopo aver individuato una tecnologia, si procede dotandosi degli strumenti necessari per iniziare a operare.
+<span data-ttu-id="4dcaa-117">I moduli di Learn consentono di diventare sviluppatori esperti di soluzioni di realtà mista, fornendo una struttura basata su moduli che permette di iniziare a usare strumenti chiave come Mixed Reality Toolkit, Unity e i servizi di Realtà mista di Azure.</span><span class="sxs-lookup"><span data-stu-id="4dcaa-117">Our Learn modules help you become proficient in Mixed Reality development, offering a module-based structure to get you started with key tools like Mixed Reality Toolkit, Unity, and Azure mixed reality services.</span></span> <span data-ttu-id="4dcaa-118">Con la definizione degli obiettivi di apprendimento e dei requisiti e l'impostazione dell'intervallo di tempo previsto per il completamento in un'unica interfaccia, l'uso di Hello World è più facile che mai.</span><span class="sxs-lookup"><span data-stu-id="4dcaa-118">Getting to Hello World has never been clearer, as we lay out the Learning Objectives, Prerequisites, and set time to completion expectations all in one interface.</span></span>
 
 > [!div class="nextstepaction"]
-> [Installare gli strumenti](install-the-tools.md)
+> [<span data-ttu-id="4dcaa-119">Introduzione alla realtà mista in Microsoft Learn</span><span class="sxs-lookup"><span data-stu-id="4dcaa-119">Introduction to Mixed Reality on Microsoft Learn</span></span>](/learn/modules/intro-to-mixed-reality)
 
+## <a name="mixed-reality-toolkit-tutorials"></a><span data-ttu-id="4dcaa-120">Esercitazioni su Mixed Reality Toolkit</span><span class="sxs-lookup"><span data-stu-id="4dcaa-120">Mixed Reality Toolkit tutorials</span></span>
+
+<span data-ttu-id="4dcaa-121">Se sei più un utente che apprende, consulta la serie di esercitazioni su Mixed Reality Toolkit (MRTK).</span><span class="sxs-lookup"><span data-stu-id="4dcaa-121">If you're more of a learn-by-doing user, check out our Mixed Reality Toolkit (MRTK) tutorial series.</span></span> <span data-ttu-id="4dcaa-122">Verrà compilata un'esperienza di realtà mista in cui l'utente può esplorare un ologramma modellato sulla base di Mars Più Rover della NASA e ottenere una solida comprensione di MRTK e di come può velocizzare il processo di sviluppo.</span><span class="sxs-lookup"><span data-stu-id="4dcaa-122">You'll build a mixed reality experience where the user can explore a hologram modeled after NASA's Mars Curiosity Rover and get a firm grasp of MRTK and how it can speed up your development process.</span></span>
+
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="4dcaa-123">Esercitazioni su MRTK</span><span class="sxs-lookup"><span data-stu-id="4dcaa-123">MRTK tutorials</span></span>](unity/tutorials/mr-learning-base-01.md)
+
+## <a name="self-guided-exploration"></a><span data-ttu-id="4dcaa-124">Esplorazione self-guided</span><span class="sxs-lookup"><span data-stu-id="4dcaa-124">Self-guided exploration</span></span>
+
+<span data-ttu-id="4dcaa-125">Per gli sviluppatori avanzati che vogliono accedere direttamente alla documentazione, iniziare installando gli strumenti necessari.</span><span class="sxs-lookup"><span data-stu-id="4dcaa-125">If you're a seasoned developer and want to get right into our docs, start by installing the required tools.</span></span> <span data-ttu-id="4dcaa-126">Da qui, scegliere la configurazione di sviluppo unity e seguire il percorso di sviluppo di Unity curato con HoloLens o esplorare la raccolta contenuto.</span><span class="sxs-lookup"><span data-stu-id="4dcaa-126">From there, choose your Unity development setup and follow our curated Unity development path with HoloLens or browse around our content library.</span></span>
+
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="4dcaa-127">Installare gli strumenti</span><span class="sxs-lookup"><span data-stu-id="4dcaa-127">Install the tools</span></span>](install-the-tools.md)
