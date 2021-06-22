@@ -1,22 +1,22 @@
 ---
-title: Configurazione MRTK per Android e iOS (ARFoundation)
+title: Compilazione e distribuzione in Android e iOS tramite AR Foundation
 description: Documentazione per configurare MRTK per Android e iOS (ARFoundation) in Unity
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, AR Core, AR Kit, iOS, IOS, Android, AR Foundation
-ms.openlocfilehash: 9f621008db76e3f8e443545b795db442d7c17dda
-ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
+ms.openlocfilehash: 352afbbc11c7cc6fcd2557395c5dd36d956f396d
+ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110345134"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112449740"
 ---
-# <a name="how-to-configure-mrtk-for-ios-and-android-experimental"></a>Come configurare MRTK per iOS e Android [Sperimentale]
+# <a name="building-and-deploying-to-android-and-ios-via-ar-foundation-experimental"></a>Compilazione e distribuzione in Android e iOS tramite AR Foundation [Sperimentale]
 
 ## <a name="install-required-packages"></a>Installare i pacchetti necessari
 
-1. Scaricare e importare il **pacchetto Microsoft.MixedReality.Toolkit.Unity.Foundation** da [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0) o [unity Gestione pacchetti](../configuration/usingupm.md)
+1. Scaricare e importare **il pacchetto Microsoft.MixedReality.Toolkit.Unity.Foundation** da [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/) o [unity Gestione pacchetti](../configuration/usingupm.md)
 
 1. In Unity Gestione pacchetti (UPM) installare i pacchetti seguenti:
 
@@ -34,12 +34,12 @@ ms.locfileid: "110345134"
     | AR Foundation  <br/> Versione: 2.1.8 |  AR Foundation  <br/> Versione: 2.1.8 |
     | Plug-in ARCore XR <br/> Versione: 2.1.11 | Plug-in ARKit XR <br/> Versione: 2.1.9 |
 
-    **Unity 2020.1.x (attualmente non supportato formalmente, incluso solo a scopo informativo)**
+    **Unity 2020.3.x**
 
     | **Android** | **iOS** |
     | --- | --- |
-    | AR Foundation  <br/> Versione: 3.1.3 |  AR Foundation  <br/> Versione: 3.1.3 |
-    | Plug-in ARCore XR <br/> Versione: 3.1.4 | Plug-in ARKit XR <br/> Versione: 3.1.3 |
+    | AR Foundation  <br/> Versione: 3.1.3 |  AR Foundation  <br/> Versione: 4.0.12 |
+    | Plug-in ARCore XR <br/> Versione: 3.1.4 | Plug-in ARKit XR <br/> Versione: 4.1.7 |
 
 1. Aggiornare le regole di scripting di MRTK UnityAR richiamando la voce di menu: **Mixed Reality > Toolkit > Utilities > UnityAR > Update Scripting Defines**
 
@@ -54,11 +54,11 @@ La procedura seguente presuppone l'uso dell'oggetto MixedRealityToolkit. I passa
 
     ![Gerarchia della scena configurata MRTK](../features/images/MRTK_ConfiguredHierarchy.png)
 
-1. Selezionare **Copia e personalizza** per clonare il profilo MRTK per abilitare la configurazione personalizzata.
+1. Selezionare **Copia e personalizza per** clonare il profilo MRTK per abilitare la configurazione personalizzata.
 
     ![Clonare il profilo MRTK](../features/images/camera-system/CloneProfileARFoundation.png)
 
-1. Selezionare **Clona** accanto al profilo della fotocamera.
+1. Selezionare **Clona** accanto a Profilo fotocamera.
 
     ![Clonare il profilo della fotocamera MRTK](../features/images/camera-system/CloneCameraProfileARFoundation.png)
 
@@ -74,7 +74,7 @@ La procedura seguente presuppone l'uso dell'oggetto MixedRealityToolkit. I passa
 
     ![Selezionare il provider di impostazioni di Unity AR](../features/images/camera-system/SelectUnityArSettings.png)
 
-    Per altre informazioni sulla configurazione del provider di impostazioni della fotocamera Unity AR: Provider [di impostazioni fotocamera Unity AR.](../features/camera-system/unity-ar-camera-settings.md)
+    Per altre informazioni sulla configurazione del provider di impostazioni della fotocamera Unity AR: [Provider di impostazioni fotocamera Unity AR.](../features/camera-system/unity-ar-camera-settings.md)
 
 > [!NOTE]
 > Questa installazione controlla (all'avvio dell'applicazione) se i componenti ar Foundation sono nella scena. In caso contrario, vengono aggiunti automaticamente per farlo funzionare con ARCore e ARKit.
@@ -95,4 +95,4 @@ La procedura seguente presuppone l'uso dell'oggetto MixedRealityToolkit. I passa
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Impostazioni fotocamera Unity AR](../features/camera-system/unity-ar-camera-settings.md)
+- [Impostazioni della fotocamera unity AR](../features/camera-system/unity-ar-camera-settings.md)
