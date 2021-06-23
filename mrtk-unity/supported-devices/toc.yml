@@ -1,12 +1,12 @@
-- name: Distribuzione in Hololens e WMR
+- name: Distribuzione in HoloLens e WMR
   href: wmr-mrtk.md
 - name: Distribuzione in Oculus Quest
   href: oculus-quest-mrtk.md
+- name: Distribuzione in Android e iOS (AR Foundation)
+  href: using-ar-foundation.md
 - name: Uso del movimento intercalare
   href: leap-motion-mrtk.md
 - name: Rilevamento dei controller in MRTK
   href: controllers-mrtk.md
-- name: Uso di AR Foundation
-  href: using-ar-foundation.md
 - name: Rilevamento delle funzionalità della piattaforma
   href: detecting-platform-capabilities.md
