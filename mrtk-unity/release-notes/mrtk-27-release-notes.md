@@ -4,15 +4,15 @@ description: Note sulla versione di MRTK versione 2.7
 author: RogPodge
 ms.author: roliu
 ms.date: 06/16/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, XRSDK, Legacy XR, Leap Motion, Ultraleap
+keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, XRSDK, Legacy XR, Leap Motion, Ultraleap, OpenXR
 ms.localizationpriority: high
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: 7e4ddc4b97a6e580a7832ff2e86ee267246cce0d
-ms.sourcegitcommit: c9d52f9529cabeaf912fffa6efc6599a9041a929
+ms.openlocfilehash: d8fe446f99a4969e684bb4d2041c4ad4364c2eba
+ms.sourcegitcommit: 72ddda03b13abc02bcea951a371ab4e4ccee3147
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112305244"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "112536786"
 ---
 # <a name="microsoft-mixed-reality-toolkit-27-release-notes"></a>Note sulla versione di Microsoft Mixed Reality Toolkit 2.7
 
@@ -35,14 +35,20 @@ Il menu contiene ora una voce che esamina il pacchetto Mixed Reality Toolkit Fou
 
 A partire da MRTK 2.7.1, il file di elenco degli autori è incluso nel pacchetto Mixed Reality Toolkit Foundation.
 
+### <a name="integrated-openxr-project-setup-into-the-configurator-setup-flow"></a>Configurazione integrata del progetto OpenXR nel flusso di configurazione di Configurator
+
+A partire da MRTK 2.7.1, gli utenti del plug-in OpenXR di realtà mista riceveranno istruzioni su come configurare il plug-in con MRTK. È disponibile un'opzione per gli utenti che HoloLens 2 applicare automaticamente le impostazioni consigliate.
+
+![Finestra configuratore con istruzioni di configurazione openXR](images/configuratorMROpenXR.png)
+
 ### <a name="notable-bugfixes-and-changes"></a>Correzioni di bug e modifiche di cui si può fare di più
 
-- Contrassegnato Unity Joystick Manager come supportato nella pipeline di XR SDK [#9954](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9954)
+- Contrassegnato Come supportato in XR SDK pipeline [#9954](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9954), [#9994](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9994)
 - Sono stati aggiunti controlli al codice del controllo interagibile per evitare errori [null #9943](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9943)
 - Aggiungere il provider di mesh OpenXR per la scena di esempio pulse shader [#9902](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9902)
 - Ripristinare il profilo di fisica della mano in scenari di [esempio #9915](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9915)
 - Alcune operazioni di pulizia per gli script HandConstraint* [#9935](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9935)
-- Il profilo Impostazioni esperienza può ora essere impostato su [Nessuna #9982](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9982)
+- Correzione di alcuni bug che interessano la creazione e la clonazione [di profili #9982](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9982)
 
 
 ## <a name="whats-new-in-270"></a>Novità della versione 2.7.0
@@ -105,7 +111,7 @@ Grazie per @jackyangzzh aver contribuito alla nuova scena LeapMotionOrientationE
 
 ### <a name="targeted-speech-events-raised-no-longer-restricted-to-gaze-pointers"></a>Gli eventi di riconoscimento vocale di destinazione generati non sono più limitati ai puntatori dello sguardo
 
-In precedenza, gli eventi di riconoscimento vocale di destinazione potevano essere generati solo su oggetti incentrati sul puntatore dello sguardo. A questo punto, gli oggetti possono ricevere eventi vocali se sono incentrati su qualsiasi puntatore.
+In precedenza, gli eventi di riconoscimento vocale mirati potevano essere generati solo su oggetti incentrati sul puntatore dello sguardo. A questo punto, gli oggetti possono ricevere eventi vocali se sono incentrati su qualsiasi puntatore.
 
 ![Eventi voce con puntatori lontano](https://user-images.githubusercontent.com/39840334/117516612-6fa00500-af4e-11eb-94ba-d5fb2ed4e7de.gif)
 
@@ -142,15 +148,15 @@ Aggiunta del supporto per lo sguardo fisso quando si usano le versioni minime de
 - Gli script correlati alla tastiera sono stati modificati per allinearsi al comportamento nelle versioni più recenti di Unity (2019.4.25+ & 2020.3.2+). Al rilascio sono ancora presenti un bug di completamento automatico e un bug del campo di input TMP (entrambi esterni a MRTK) che influiscono su HoloLens. Per altre informazioni, [vedere](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9056) #9056 e [#9724](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9724).
 - Miglioramento delle prestazioni di Scrolling Object Collection. È stato risolto anche un problema che causava la perdita di materiale da parte di GameObject all'interno della raccolta in caso di duplicazione. [#9813](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9813), [#9718](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9718)
 - Nello script demo Scene Understanding è stata aggiunta la funzione per recuperare tutti gli oggetti scena `GetSceneObjectsOfType` osservati di un determinato tipo. [#9524](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9524), [#9744](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9744)
-- Nello strumento di compilazione da riga di comando, nella compilazione verranno incluse solo le scene specificate dai flag o (quando è presente `sceneList` `sceneListFile` un flag). [#9695](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9695)
+- Nello strumento di compilazione da riga di comando solo le scene specificate dai flag o (quando è presente un `sceneList` `sceneListFile` flag) verranno incluse nella compilazione. [#9695](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9695)
 - Nello strumento di compilazione è disponibile una nuova opzione per specificare un percorso e usarlo per eseguire il ripristino del pacchetto anziché `nuget.exe` `msbuild` usare (opzione predefinita). [#9556](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9556)
-- È stato risolto un problema a causa del quale l'uso del plug-in XR di Windows potrebbe causare giunzioni della mano non stantie e mesh a mano doppia. [#9890](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9890)
-- È stato risolto un problema per cui l'uso della funzionalità di comunicazione remota automatica del plug-in XR di Windows causava la mancanza di input e interazioni. [#9868](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9868)
-- È stato risolto un problema a causa del quale BuildDeployWindow tentava di eseguire una query su una chiave reg non valida per il Windows SDK percorso. [#9664](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9664)
-- Gli importatori glTF di MRTK sono ora facoltativi. Se sono presenti più utilità di importazione glTF, è possibile disabilitate le funzioni MRTK aggiungendo `MRTK_GLTF_IMPORTER_OFF` simboli di definizione di scripting personalizzati. [#9658](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9658)
-- È stato risolto un problema a causa del quale i controller Knuckles in OpenVR non vengono rilevati correttamente. [#9881](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9881)
-- Ridurre il numero di allocazioni per frame quando si visualizza la mesh [manuale #9756](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9756)
-- Aggiunta di una voce di menu per avviare il pacchetto esempi MRTK (in Unity Gestione pacchetti) per semplificare l'importazione di esempi [#9798](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9798)
+- È stato risolto un problema per cui l'uso del plug-in Windows XR poteva causare giunzioni delle mani non datate e mesh a mano doppie. [#9890](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9890)
+- Risolto un problema per cui l'uso della funzionalità di comunicazione remota automatica del plug-in Windows XR causava la mancanza di input e interazioni. [#9868](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9868)
+- Risolto un problema per cui BuildDeployWindow tentava di eseguire una query su una chiave reg non valida per Windows SDK percorso. [#9664](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9664)
+- Le utilità di importazione glTF di MRTK sono ora facoltative. Se sono presenti più utilità di importazione glTF, è possibile disabilitare mrtk aggiungendo ai `MRTK_GLTF_IMPORTER_OFF` simboli di definizione di scripting personalizzati. [#9658](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9658)
+- È stato risolto un problema a causa del quale i controller Diruckles in OpenVR non vengono rilevati correttamente. [#9881](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9881)
+- Ridurre il numero di allocazioni per fotogramma quando si visualizza la mesh [mano #9756](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9756)
+- Aggiunta di una voce di menu per avviare il pacchetto di esempi MRTK (in Unity Gestione pacchetti) per semplificare l'importazione di esempi [#9798](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9798)
 - Riduzione del numero di avvisi in fase di caricamento quando si usa Unity 2020.3.
 - Aggiunta della documentazione della funzionalità Finestra di compilazione: [visitare la pagina](/windows/mixed-reality/mrtk-unity/features/tools/build-window)
 
@@ -158,7 +164,7 @@ Aggiunta del supporto per lo sguardo fisso quando si usano le versioni minime de
 
 ### <a name="audio-demos-are-missing-an-asmdef-file-upm-package"></a>Nelle demo audio manca un file asmdef (pacchetto UPM)
 
-Quando si importa MRTK tramite lo strumento di funzionalità di realtà mista, esempi e demo vengono aggiunti al progetto usando l'interfaccia utente Gestione pacchetti Unity. Dopo l'importazione delle demo audio, `WindowsMicrophoneStreamDemo.unity` la scena non si comporterà correttamente. Questo è il risultato di un file asmdef mancante per l'esempio.
+Quando si importa MRTK tramite Mixed Reality Feature Tool, gli esempi e le demo vengono aggiunti al progetto usando l'interfaccia utente Gestione pacchetti Unity. Dopo aver importato le demo audio, la `WindowsMicrophoneStreamDemo.unity` scena non si comporterà correttamente. Questo è il risultato di un file asmdef mancante per l'esempio.
 
 Per risolvere questo [problema,](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9908)seguire questa procedura:
 
@@ -169,11 +175,11 @@ Per risolvere questo [problema,](https://github.com/microsoft/MixedRealityToolki
 - Fare clic su Applica
 - Eseguire la compilazione e la distribuzione
 
-Questo problema verrà risolto in una prossima versione di MRTK.
+Questo problema verrà risolto in una versione futura di MRTK.
 
-### <a name="mrtk-build-window-triggers-indefinite-importing-assets-dialog-in-unity-20203"></a>La finestra di compilazione MRTK attiva la finestra di dialogo indefinita "Importazione di asset" in Unity 2020.3
+### <a name="mrtk-build-window-triggers-indefinite-importing-assets-dialog-in-unity-20203"></a>La finestra di compilazione di MRTK attiva una finestra di dialogo "Importazione di asset" illimitata in Unity 2020.3
 
-Si è [](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9723) verificato un problema noto con la finestra di compilazione MRTK in Unity 2020.3 in cui dopo aver eseguito correttamente una compilazione UWP, la finestra di dialogo "Importazione di asset" non viene completata. Questo problema viene analizzato in collaborazione con Unity.
+Esiste un [](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9723) problema noto con la finestra di compilazione di MRTK in Unity 2020.3 in cui dopo aver eseguito correttamente una compilazione UWP, la finestra di dialogo "Importazione di asset" non viene completata. Questo problema viene analizzato in collaborazione con Unity.
 
 ### <a name="text-mesh-pro-canvas-renderer-warnings-in-unity-2020"></a>Avvisi del renderer canvas di Text Mesh Pro in Unity 2020
 
@@ -183,4 +189,4 @@ L'avviso seguente viene registrato nella maggior parte delle scene di esempio di
 Please remove the CanvasRenderer component from the [TextMeshPro] GameObject as this component is no longer necessary.
 ```
 
-L'avviso del renderer canvas è stato aggiunto in [TextMeshPro versione 3.0.3.](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/changelog/CHANGELOG.html#changes-3)  Questi avvisi non influiscono sulle scene di esempio di MRTK e possono essere cancellati dalla console. Per altre informazioni, vedere Problema [9811.](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9811)
+L'avviso del renderer canvas è stato aggiunto in [TextMeshPro versione 3.0.3.](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/changelog/CHANGELOG.html#changes-3)  Questi avvisi non influiscono sulle scene di esempio di MRTK e possono essere cancellati dalla console. Per [altri dettagli, vedere il problema 9811.](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9811)
