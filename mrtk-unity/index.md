@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK
-ms.openlocfilehash: bf0a97547aa482e5c206916faea2b2de41d28a7b
-ms.sourcegitcommit: 65f58055c831d58a3d38fb333f09b323ee2ac9b7
+ms.openlocfilehash: 4339349bd6b9d2dabf9fcbdbb276e2a7265a7f23
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112064146"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906993"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>Informazioni su Mixed Reality Toolkit
 
@@ -51,7 +51,7 @@ MRTK-Unity è un progetto gestito da Microsoft che fornisce un set di componenti
 
 ## <a name="getting-started-with-mrtk"></a>Introduzione a MRTK
 
-Se non si ha disatteso lo sviluppo di MRTK o realtà mista in Unity, è consigliabile installare ed esplorare l'applicazione di esempio MRTK Examples Hub nel dispositivo o [nell'emulatore.](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator) 
+Se non si ha disatteso lo sviluppo di MRTK o realtà mista in Unity, è consigliabile installare ed esplorare l'applicazione di esempio MRTK Examples Hub nel dispositivo o [nell'emulatore.](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator) 
 
 > [!div class="nextstepaction"]
 > [Scaricare l'app hub degli esempi di MRTK](running-examples-hub.md)
@@ -175,7 +175,7 @@ Si vuole vedere cosa succede in un secondo tempo?
 :::row:::
     :::column:::
        [ ![ Slate](features/images/slate/MRTK_Slate_Main.png)](features/ux-building-blocks/slate.md) **[Slate](features/ux-building-blocks/slate.md)**<br>
-        Piano di stile 2D che supporta lo scorrimento con input con mano articolata
+        Piano di stile 2D che supporta lo scorrimento con input della mano articolato
     :::column-end:::
     :::column:::
         [ ![ Tastiera di sistema tastiera](features/images/system-keyboard/MRTK_SystemKeyboard_Main.png)](features/ux-building-blocks/system-keyboard.md) di **[sistema](features/ux-building-blocks/system-keyboard.md)**<br>
@@ -198,7 +198,7 @@ Si vuole vedere cosa succede in un secondo tempo?
     :::column-end:::
     :::column:::
         [ ![ Descrizione comando](features/images/tooltip/MRTK_Tooltip_Main.png)](features/ux-building-blocks/tooltip.md) **[](features/ux-building-blocks/tooltip.md)**<br>
-        Interfaccia utente di annotazione con un sistema di ancoraggio/pivot flessibile, che può essere usato per l'etichettatura di controller del movimento e oggetti
+        Interfaccia utente delle annotazioni con un sistema di ancoraggio/pivot flessibile, che può essere usato per etichettare oggetti e controller del movimento
     :::column-end:::
 :::row-end:::
 
@@ -219,7 +219,7 @@ Si vuole vedere cosa succede in un secondo tempo?
 
 :::row:::
     :::column:::
-       [ ![ Barra dell'app barra](features/images/app-bar/MRTK_AppBar_Main.png)](features/ux-building-blocks/app-bar.md) **[dell'app](features/ux-building-blocks/app-bar.md)**<br>
+       [ ![ Barra dell'app Barra](features/images/app-bar/MRTK_AppBar_Main.png)](features/ux-building-blocks/app-bar.md) **[dell'app](features/ux-building-blocks/app-bar.md)**<br>
         Interfaccia utente per l'attivazione manuale del controllo Bounds
     :::column-end:::
     :::column:::
@@ -254,7 +254,7 @@ Si vuole vedere cosa succede in un secondo tempo?
     :::column-end:::
     :::column:::
         [ ![ Finestra di](features/images/Dialog/MRTK_UX_Dialog_Main.png)](features/ux-building-blocks/dialog.md) **[dialogo](features/ux-building-blocks/dialog.md)**<br>
-        Interfaccia utente per chiedere conferma o acknowledgement dell'utente
+        Interfaccia utente per richiedere la conferma o l'acknowledgement dell'utente
     :::column-end:::
     :::column:::
         [ ![ Hand Hand Hand](features/images/hand-coach/MRTK_UX_HandCoach_Main.jpg)](features/ux-building-blocks/hand-coach.md) **[Hand](features/ux-building-blocks/hand-coach.md)**<br>
@@ -307,7 +307,7 @@ MRTK fornisce scene di esempio che illustrano come usare le funzionalità di MRT
 ## <a name="mrtk-examples-hub"></a>Hub degli esempi di MRTK
 
 Con l'hub degli esempi di MRTK è possibile provare varie scene di esempio in MRTK senza compilare e distribuire ogni scena.
-Puoi scaricare pacchetti di app predefiniti per HoloLens(x86), HoloLens 2 (ARM) e visori VR immersive (x64) di Windows Mixed Reality selezionando il pacchetto "Mixed Reality Toolkit Examples" (Esempi di Mixed Reality Toolkit) nello strumento per le funzionalità [MR.](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) Assicurarsi di usare [il Portale di dispositivi di Windows per installare le app in HoloLens (prima generazione).](/hololens/hololens-install-apps#use-the-windows-device-portal-to-install-apps-on-hololens) In HoloLens 2 possibile scaricare e installare [l'hub di esempi mrtk tramite l'app Microsoft Store](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4).
+Puoi scaricare i pacchetti di app predefiniti per HoloLens(x86), HoloLens 2 (ARM) e i visori VR immersive di Windows Mixed Reality (x64) selezionando il pacchetto "Mixed Reality Toolkit Examples" (Esempi di Mixed Reality Toolkit) in [MR Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool). Assicurarsi di usare [il Portale di dispositivi di Windows per installare le app in HoloLens (prima generazione).](/hololens/hololens-install-apps#use-the-windows-device-portal-to-install-apps-on-hololens) In HoloLens 2 possibile scaricare e installare [l'hub di esempi MRTK tramite l'app Microsoft Store](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4).
 
 Per informazioni dettagliate sulla creazione di un hub a più scene con il sistema di scena e il servizio di transizione della scena di MRTK, vedere la pagina [Examples Hub README](features/example-scenes/example-hub.md) (File LEGGIMI dell'hub di esempi).
 
@@ -317,13 +317,13 @@ Per informazioni dettagliate sulla creazione di un hub a più scene con il siste
 
 | [![Tavola periodica degli elementi](features/images/MRDL_PeriodicTable.jpg)](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)| [![Galaxy Explorer](features/images/MRTK_GalaxyExplorer.jpg)](/windows/mixed-reality/galaxy-explorer-update)| [![App di esempio Surfaces](features/images/MRDL_Surfaces.jpg)](/windows/mixed-reality/sampleapp-surfaces)|
 |:--- | :--- | :--- |
-| [La tabella](https://github.com/Microsoft/MRDL_Unity_PeriodicTable) periodica degli elementi è un'app di esempio open source che illustra come usare il sistema di input e i blocchi predefiniti di MRTK per creare un'esperienza app per HoloLens e visori VR immersive. Leggere la storia della portabilità: Portare la tabella [periodica dell'app Elements HoloLens 2 con MRTK v2](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158) |[Galaxy Explorer](https://github.com/Microsoft/GalaxyExplorer) è un'app di esempio open source sviluppata originariamente nel mese di marzo 2016 come parte della campagna "Condividi la tua idea" di HoloLens. Galaxy Explorer è stato aggiornato con nuove funzionalità per HoloLens 2, usando MRTK v2. Leggere la storia: [The Making of Galaxy Explorer for HoloLens 2](/windows/mixed-reality/galaxy-explorer-update) |[Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces) è un'app di esempio open source per HoloLens 2 che illustra come è possibile creare un tattile con elementi visivi, audio e tracciamento delle mani completamente articolati. Per informazioni dettagliate sulla progettazione e lo sviluppo, vedere la sessione Microsoft MR Dev Days [Learnings from the Surfaces app](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App) (Apprendimento della sessione di Microsoft MR Dev Days dall'app Surfaces). |
+| [La tabella](https://github.com/Microsoft/MRDL_Unity_PeriodicTable) periodica degli elementi è un'app open source di esempio che illustra come usare il sistema di input e i blocchi predefiniti di MRTK per creare un'esperienza app per HoloLens e visori VR immersive. Leggere la storia della portabilità: Portare la tabella [periodica dell'app Elements HoloLens 2 con MRTK v2](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158) |[Galaxy Explorer](https://github.com/Microsoft/GalaxyExplorer) è un'app di esempio open source sviluppata originariamente nel mese di marzo 2016 come parte della campagna "Condividi la tua idea" di HoloLens. Galaxy Explorer è stato aggiornato con nuove funzionalità per HoloLens 2, usando MRTK v2. Leggere la storia: [The Making of Galaxy Explorer for HoloLens 2](/windows/mixed-reality/galaxy-explorer-update) |[Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces) è un'app di esempio open source per HoloLens 2 che illustra come è possibile creare un tattile con elementi visivi, audio e tracciamento delle mani completamente articolati. Per informazioni dettagliate sulla progettazione e lo sviluppo, vedere la sessione Microsoft MR Dev Days [Learnings from the Surfaces app](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App) (Apprendimento della sessione di Microsoft MR Dev Days dall'app Surfaces). |
 
 ## <a name="session-videos-from-mixed-reality-dev-days-2020"></a>Video di sessione di Mixed Reality Dev Days 2020
 
 | [![MRDevDays 1](features/images/MRDevDays_Session1.png)](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-MRTK-Unity)| [![MRDevDays 3](features/images/MRDevDays_Session2.png)](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/MRTKs-UX-Building-Blocks)| [![MRDevDays 2](features/images/MRDevDays_Session3.png)](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/MRTK-Performance-and-Shaders)|
 |:--- | :--- | :--- |
-| Esercitazione su come creare una semplice app MRTK dall'inizio alla fine. Informazioni sui concetti di interazione e sulle funzionalità multipiattaforma di MRTK. | Approfondimento sui blocchi predefiniti dell'esperienza utente di MRTK che consentono di creare esperienze di realtà mista di qualità. | Introduzione agli strumenti per le prestazioni, sia in MRTK che esterni, nonché una panoramica dello shader standard MRTK. |
+| Esercitazione su come creare una semplice app MRTK dall'inizio alla fine. Informazioni sui concetti di interazione e sulle funzionalità multipiattaforma di MRTK. | Approfondimenti sui blocchi predefiniti per l'esperienza utente di MRTK che consentono di creare esperienze di realtà mista eccezionali. | Introduzione agli strumenti per le prestazioni, sia in MRTK che esterni, nonché una panoramica dello shader standard MRTK. |
 
 Vedi [Mixed Reality Dev Days per](/windows/mixed-reality/mr-dev-days-sessions) esplorare altri video di sessione.
 
@@ -333,14 +333,14 @@ Vedi [Mixed Reality Dev Days per](/windows/mixed-reality/mr-dev-days-sessions) e
 
 * Porre domande sull'uso di MRTK [Stack Overflow](https://stackoverflow.com/questions/tagged/mrtk) il tag **MRTK.**
 
-* Cercare i [problemi noti o](https://github.com/Microsoft/MixedRealityToolkit-Unity/issues) determinare un nuovo [problema](https://github.com/Microsoft/MixedRealityToolkit-Unity/issues) se si verificano problemi nel codice MRTK.
+* Cercare i [problemi noti o](https://github.com/Microsoft/MixedRealityToolkit-Unity/issues) determinare un nuovo problema [se](https://github.com/Microsoft/MixedRealityToolkit-Unity/issues) si verificano problemi nel codice MRTK.
 
 * Per domande sul contributo a MRTK, passare al canale [mixed-reality-toolkit](https://holodevelopers.slack.com/messages/C2H4HT858) su Slack.
 
 Questo progetto ha adottato il [Codice di comportamento di Microsoft per l'open source](https://opensource.microsoft.com/codeofconduct/).
 Per altre informazioni, vedere le [Domande frequenti sul codice di comportamento](https://opensource.microsoft.com/codeofconduct/faq/) o scrivere a [opencode@microsoft.com](mailto:opencode@microsoft.com) per domande aggiuntive o commenti.
 
-## <a name="useful-resources-on-the-mixed-reality-dev-center"></a>Risorse utili per l'ambiente di Dev Center
+## <a name="useful-resources-on-the-mixed-reality-dev-center"></a>Risorse utili per la realtà mista Dev Center
 
 | ![Individuazione ](features/images/mrdevcenter/icon-discover.png) [individuazione](/windows/mixed-reality/)| ![Progettazione ](features/images/mrdevcenter/icon-design.png) [](/windows/mixed-reality/design)| ![Sviluppare ](features/images/mrdevcenter/icon-develop.png) [lo sviluppo](/windows/mixed-reality/development)| ![Distribuisci) ](features/images/mrdevcenter/icon-distribute.png) [Distribuisci](/windows/mixed-reality/implementing-3d-app-launchers)|
 | :--------------------- | :----------------- | :------------------ | :------------------------ |
@@ -350,7 +350,7 @@ Per altre informazioni, vedere le [Domande frequenti sul codice di comportamento
 
 | ![Ancoraggi nello spazio](features/images/mrdevcenter/icon-azurespatialanchors.png)<br> [Ancoraggi nello spazio](/azure/spatial-anchors/)| ![Servizi voce ](features/images/mrdevcenter/icon-azurespeechservices.png) [di Servizi di riconoscimento vocale](/azure/cognitive-services/speech-service/)| ![Servizi di ](features/images/mrdevcenter/icon-azurevisionservices.png) [visione vision](/azure/cognitive-services/computer-vision/)|
 | :------------------------| :--------------------- | :---------------------- |
-| Ancoraggi nello spaziali è un servizio multipiattaforma che consente di creare esperienze di realtà mista usando oggetti che persistono la loro posizione tra dispositivi nel tempo.| Individuare e integrare nell'applicazione le funzionalità vocali di Azure, come il riconoscimento vocale, il riconoscimento del parlante o la traduzione vocale.| Identificare e analizzare il contenuto di immagini o video con i servizi di visione artificiale come il rilevamento dei volti, il riconoscimento delle emozioni o Video Indexer. |
+| Ancoraggi nello spaziali è un servizio multipiattaforma che consente di creare esperienze di realtà mista usando oggetti che persistono la posizione tra dispositivi nel tempo.| Individuare e integrare nell'applicazione le funzionalità vocali di Azure, come il riconoscimento vocale, il riconoscimento del parlante o la traduzione vocale.| Identificare e analizzare il contenuto di immagini o video con i servizi di visione artificiale come il rilevamento dei volti, il riconoscimento delle emozioni o Video Indexer. |
 
 ## <a name="how-to-contribute"></a>Come contribuire
 

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/26/2021
 ms.topic: article
 keywords: Unity, realtà mista, sviluppo, introduzione, nuovo progetto, Windows Mixed Reality, UWP, XR, prestazioni, legacy, mrtk, windows
-ms.openlocfilehash: c9733d58236d97db370ce4f58dc1760bdf4eda86
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: 5d2d27a7ac5ea30515907a08eab6f6bfe70e6686
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110231"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906957"
 ---
 # <a name="using-windows-xr-plugin"></a>Uso del plug-in Windows XR
 
@@ -30,7 +30,7 @@ Per altri dettagli sulle funzionalità, vedere la documentazione di [MRTK.](/win
 
 ## <a name="manual-setup-without-mrtk"></a>Configurazione manuale senza MRTK
 
-Se si usa la realtà virtuale desktop come destinazione, è consigliabile usare la piattaforma pc autonoma selezionata per impostazione predefinita in un nuovo progetto Unity:
+Se si usa la realtà virtuale desktop come destinazione, è consigliabile usare la piattaforma PC autonoma selezionata per impostazione predefinita in un nuovo progetto Unity:
 
 ![Screenshot della finestra Build Settings (Impostazioni di compilazione) aperta nell'editor di Unity con PC, Mac & piattaforma autonoma evidenziata](images/wmr-config-img-3.png)
 
@@ -38,7 +38,7 @@ Se la destinazione è HoloLens 2, è necessario passare al piattaforma UWP (Univ
 
 1.  Selezionare **Impostazioni > file...**
 2.  Selezionare **piattaforma UWP (Universal Windows Platform)** nell'elenco Piattaforma e selezionare **Cambia piattaforma**
-3.  Impostare **Architecture (Architettura)** **su ARM 64**
+3.  Impostare **Architettura** su **ARM 64**
 4.  Impostare **Dispositivo di destinazione** su **HoloLens**
 5.  Impostare **Tipo di compilazione** su **D3D**
 6.  Impostare **UWP SDK su** Latest installed **(Versione più recente installata)**
@@ -60,10 +60,10 @@ Dopo aver impostato la piattaforma, è necessario invii a Unity una visualizzazi
 
 4. Espandere la **sezione XR Plug-in Management (Gestione plug-in XR)** e selezionare **la scheda Univeral Windows Platform Settings (Impostazioni piattaforma Windows univeral)**
 5. Se si usa Unity 2020 o versione successiva, verranno visualizzati i controlli **OpenXR** **o Windows Mixed Reality**. 
-    * È possibile scegliere uno dei due runtime.  Se si sviluppa specificamente per il HoloLens 2 o HP Reverb G2 e si decide di provare **OpenXR,** selezionare la casella OpenXR ed esaminare la guida Uso del plug-in [OpenXR](openxr-getting-started.md) di Realtà mista per Unity per configurare correttamente questi dispositivi prima di tornare a questa esercitazione
+    * È possibile scegliere uno dei due runtime.  Se si sviluppa specificamente per il HoloLens 2 o HP Reverb G2 e si decide di provare **OpenXR,** selezionare la casella OpenXR ed esaminare la guida Uso del plug-in [OpenXR](./xr-project-setup.md) di Realtà mista per Unity per configurare correttamente questi dispositivi prima di tornare a questa esercitazione
 
 > [!NOTE]
-> A partire da Unity 2020 LTS, Microsoft sta iniziando lo sviluppo con OpenXR.  Durante la migrazione a questo percorso, in Unity 2021.1 il plug-in Windows XR verrà deprecato e rimosso nella versione 2021.2 rendendo OpenXR l'unico percorso supportato. Per altre informazioni, vedere [Using the Mixed Reality OpenXR plugin (Uso del plug-in OpenXR di Realtà mista).](openxr-getting-started.md)
+> A partire da Unity 2020 LTS, Microsoft sta iniziando lo sviluppo con OpenXR.  Durante la migrazione a questo percorso, in Unity 2021.1 il plug-in Windows XR verrà deprecato e rimosso nella versione 2021.2 rendendo OpenXR l'unico percorso supportato. Per altre informazioni, vedere [Using the Mixed Reality OpenXR plugin (Uso del plug-in OpenXR di Realtà mista).](./xr-project-setup.md)
 
 6. Se si decide di scegliere il **plug-Windows Mixed Reality,** selezionare tutte le caselle e impostare Modalità di invio **profondità** **su Depth 16 Bit (Profondità 16 bit)**
 

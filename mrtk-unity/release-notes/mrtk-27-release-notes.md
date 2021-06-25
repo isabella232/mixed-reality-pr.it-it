@@ -7,12 +7,12 @@ ms.date: 06/16/2021
 keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, XRSDK, Legacy XR, Leap Motion, Ultraleap, OpenXR
 ms.localizationpriority: high
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: e257fd95d01eab249201a0f412842d20164e7e5c
-ms.sourcegitcommit: f7839221c9549e60a2c3ac2dbd39f07a6851dcd2
+ms.openlocfilehash: 8f6c68c067df735761dd9c162c71fd85f1f3e132
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "112562481"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906977"
 ---
 # <a name="microsoft-mixed-reality-toolkit-27-release-notes"></a>Note sulla versione di Microsoft Mixed Reality Toolkit 2.7
 
@@ -52,7 +52,7 @@ A partire da MRTK 2.7.1, gli utenti del plug-in OpenXR di Realtà mista ricevera
 
 - Contrassegnato Unity UnityStick Manager come supportato nella pipeline XR SDK [#9954](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9954), [#9994](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9994)
 - Aggiunta di controlli al codice di controllo interagiscibile per evitare errori [null #9943](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9943)
-- Aggiungere il provider di mesh OpenXR per l'uso della scena di esempio pulse shader [#9902](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9902)
+- Aggiungere il provider di mesh OpenXR alla scena di esempio pulse shader [#9902](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9902)
 - Ripristinare il profilo di fisica della mano in esempi di [#9915](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9915)
 - Alcune operazioni di pulizia per gli script HandConstraint* [#9935](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9935)
 - Correzione di alcuni bug che interessano la creazione e la clonazione [di profili #9982](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9982)
@@ -100,15 +100,15 @@ Il nuovo configuratore MRTK fornisce agli utenti istruzioni dettagliate per conf
 
 ### <a name="graduated-teleport-hotspot"></a>Hotspot di teletrasporto dismersi
 
-È stato creato [un nuovo componente hotspot di teletrasporto.](../features/teleport-system/teleport-hotspot.md) Puoi aggiungere un hotspot di teletrasporto al GameObject per assicurarti che l'utente si trova in una determinata posizione e orientamento quando si teletrasporta in tale posizione.
+È stato creato [un nuovo componente hotspot di teletrasporto.](../features/teleport-system/teleport-hotspot.md) È possibile aggiungere un hotspot di teletrasporto al GameObject per assicurarsi che l'utente si trova in una determinata posizione e orientamento quando si teletrasporta in tale posizione.
 
 ![Esempio di hotspot di teletrasporto](images/TeleportHotspot.gif)
 
 ### <a name="graduated-dwell"></a>Tempo di insoddamento graduale
 
-La funzionalità e l'esempio di dwell sono stati ora gradualmente esempleriti dalla fase sperimentale. Nella scena di esempio sono inclusi HoloLens 2 di stile volumetrici.
+La funzionalità e l'esempio di dwell sono stati ora emersi dalla fase sperimentale. Nella scena di esempio sono inclusi HoloLens 2 di stile volumetrici.
 
-![Dwell hero](../features/images/dwell/MRTK_UX_Dwell.png)
+![Hero di dwell](../features/images/dwell/MRTK_UX_Dwell.png)
 
 ### <a name="added-support-for-leap-motion-unity-modules-version-460-470-471-and-480"></a>Aggiunta del supporto per i moduli Leap Motion Unity versione 4.6.0, 4.7.0, 4.7.1 e 4.8.0
 
@@ -161,11 +161,11 @@ Aggiunta del supporto per lo sguardo fisso quando si usano le versioni minime 2.
 - È stato risolto un problema per cui l'uso della funzionalità di comunicazione remota automatica del plug-in XR di Windows causava la mancanza di input e interazioni. [#9868](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9868)
 - È stato risolto un problema a causa del quale BuildDeployWindow tentava di eseguire una query su una chiave reg non valida per il Windows SDK percorso. [#9664](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9664)
 - Gli importatori glTF di MRTK sono ora facoltativi. Se sono presenti più utilità di importazione glTF, è possibile disabilitate le funzioni MRTK aggiungendo `MRTK_GLTF_IMPORTER_OFF` simboli di definizione di scripting personalizzati. [#9658](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9658)
-- Correzione del problema per cui i controller Knuckles in OpenVR non sono stati rilevati correttamente. [#9881](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9881)
+- È stato risolto un problema a causa del quale i controller Knuckles in OpenVR non vengono rilevati correttamente. [#9881](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9881)
 - Ridurre il numero di allocazioni per frame quando si visualizza la mesh [manuale #9756](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9756)
 - Aggiunta di una voce di menu per avviare il pacchetto esempi MRTK (in Unity Gestione pacchetti) per semplificare l'importazione di esempi [#9798](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9798)
 - Riduzione del numero di avvisi in fase di caricamento quando si usa Unity 2020.3.
-- Aggiunta della documentazione della funzionalità Finestra di compilazione: [visitare la pagina](/windows/mixed-reality/mrtk-unity/features/tools/build-window)
+- Aggiunta della documentazione della funzionalità Finestra di compilazione: [visitare la pagina](../features/tools/build-window.md)
 
 ## <a name="known-issues"></a>Problemi noti
 
@@ -188,7 +188,7 @@ Questo problema verrà risolto in una prossima versione di MRTK.
 
 Si è [](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9723) verificato un problema noto con la finestra di compilazione MRTK in Unity 2020.3 in cui dopo aver eseguito correttamente una compilazione UWP, la finestra di dialogo "Importazione di asset" non viene completata. Questo problema viene analizzato in collaborazione con Unity.
 
-### <a name="text-mesh-pro-canvas-renderer-warnings-in-unity-2020"></a>Avvisi del renderer Canvas Di Text Mesh Pro in Unity 2020
+### <a name="text-mesh-pro-canvas-renderer-warnings-in-unity-2020"></a>Avvisi del renderer canvas di Text Mesh Pro in Unity 2020
 
 L'avviso seguente viene registrato nella maggior parte delle scene di esempio di MRTK durante l'uso di Unity 2020:
 

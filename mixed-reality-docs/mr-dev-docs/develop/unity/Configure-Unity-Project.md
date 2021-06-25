@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, realtà mista, sviluppo, introduzione, nuovo progetto, Windows Mixed Reality, UWP, XR, prestazioni
-ms.openlocfilehash: c496dc415ff09eea3015b5195e131554c43a98f1
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: 12c3272708c6375b550d87eac86fe13a60c1f36d
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110259"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906887"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>Configurazione del progetto senza MRTK
 
@@ -58,10 +58,10 @@ Dopo aver impostato la piattaforma, è necessario invii a Unity una visualizzazi
 
 4. Espandere la **sezione XR Plug-in Management (Gestione plug-in XR)** e selezionare **la scheda Univeral Windows Platform Settings (Impostazioni piattaforma Windows univeral)**
 5. Se si usa Unity 2020 o versione successiva, verranno visualizzati i controlli **OpenXR** **o Windows Mixed Reality**. 
-    * È possibile scegliere uno dei due runtime.  Se si sviluppa specificamente per il HoloLens 2 o HP Reverb G2 e si decide di provare **OpenXR,** selezionare la casella OpenXR ed esaminare la guida Using [the Mixed Reality OpenXR Plugin for Unity](openxr-getting-started.md) (Uso del plug-in OpenXR di Realtà mista per Unity) per configurare correttamente questi dispositivi prima di tornare a questa esercitazione
+    * È possibile scegliere uno dei due runtime.  Se si sviluppa specificamente per il HoloLens 2 o HP Reverb G2 e si decide di provare **OpenXR,** selezionare la casella OpenXR ed esaminare la guida Uso del plug-in [OpenXR](./xr-project-setup.md) di Realtà mista per Unity per configurare correttamente questi dispositivi prima di tornare a questa esercitazione
 
 > [!NOTE]
-> A partire da Unity 2020 LTS, Microsoft sta iniziando lo sviluppo con OpenXR.  Durante la migrazione a questo percorso, in Unity 2021.1 il plug-in Windows XR verrà deprecato e rimosso nella versione 2021.2, rendendo OpenXR l'unico percorso supportato. Per altre informazioni, vedere [Using the Mixed Reality OpenXR plugin (Uso del plug-in OpenXR di Realtà mista).](openxr-getting-started.md)
+> A partire da Unity 2020 LTS, Microsoft sta iniziando lo sviluppo con OpenXR.  Durante la migrazione a questo percorso, in Unity 2021.1 il plug-in Windows XR verrà deprecato e rimosso nella versione 2021.2 rendendo OpenXR l'unico percorso supportato. Per altre informazioni, vedere [Using the Mixed Reality OpenXR plugin (Uso del plug-in OpenXR di Realtà mista).](./xr-project-setup.md)
 
 6. Se si decide di scegliere il **plug-Windows Mixed Reality,** selezionare tutte le caselle e impostare Modalità di invio **profondità** **su Depth 16 Bit (Profondità 16 bit)**
 
@@ -72,7 +72,7 @@ Dopo aver impostato la piattaforma, è necessario invii a Unity una visualizzazi
 > [!CAUTION]
 > XR legacy è deprecato in Unity 2019 e rimosso in Unity 2020.
 
-1. Aprire **Player Settings (Impostazioni lettore)** da Build Settings **(Impostazioni compilazione) ed** espandere il **gruppo XR Settings (Impostazioni XR)**
+1. Aprire **Player Settings (Impostazioni lettore)** da Build Settings **(Impostazioni di compilazione) ed** espandere il **gruppo XR Settings (Impostazioni XR)**
 2. Nella sezione **XR Settings (Impostazioni XR)** selezionare **Virtual Reality Supported (Realtà virtuale supportata)** per aggiungere l'elenco Virtual Reality Devices (Dispositivi di realtà virtuale)
 3. Impostare **Depth Format (Formato profondità)** su **Depth (Profondità) a 16 bit** e abilitare Depth Buffer Sharing **(Condivisione buffer di profondità)**
 4. Impostare **La modalità di rendering stereo** su Istanza a passaggio **singolo**
@@ -84,7 +84,7 @@ Dopo aver impostato la piattaforma, è necessario invii a Unity una visualizzazi
 
 L'app può ora gestire il rendering olografico e l'input spaziale. Tuttavia, l'app deve dichiarare le funzionalità appropriate nel manifesto per sfruttare determinate funzionalità. È possibile trovare le funzionalità dei progetti selezionando **Player Settings (Impostazioni lettore) > Settings for piattaforma UWP (Universal Windows Platform) > Publishing Settings (Impostazioni di pubblicazione) > Capabilities (Funzionalità).** 
 
-È consigliabile creare le dichiarazioni del manifesto in Unity per includerle in tutti i progetti futuri esportati. Le funzionalità applicabili per l'abilitazione delle API Unity di uso comune per la realtà mista sono:
+È consigliabile creare le dichiarazioni del manifesto in Unity per includerle in tutti i progetti futuri esportati. Le funzionalità applicabili per abilitare le API Unity di uso comune per la realtà mista sono:
 
 |  Funzionalità  |  API che richiedono funzionalità | 
 |----------|----------|
