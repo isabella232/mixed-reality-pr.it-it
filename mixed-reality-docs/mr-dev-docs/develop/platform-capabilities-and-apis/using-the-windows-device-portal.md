@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Portale di dispositivi di Windows, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 30d0e9295bd58eceb784eeeda8d548bafba8a756
-ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
+ms.openlocfilehash: d772175683208ac0e3ed4b3163ca561da416c1cf
+ms.sourcegitcommit: 593e8f80297ac0b5eccb2488d3f333885eab9adf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112392308"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112919812"
 ---
 # <a name="using-the-windows-device-portal"></a>Uso del Portale di dispositivi di Windows
 
@@ -49,8 +49,9 @@ Questa documentazione è specifica del Portale di dispositivi di Windows per Hol
 
 1. [Connetti HoloLens alla rete Wi-Fi](/hololens/hololens-network).
 2. Cerca l'indirizzo IP del dispositivo in uno di questi modi:
-   * Passa a **Impostazioni > Rete e Internet > Wi-Fi > Opzioni avanzate**.
-   * Passa a **Impostazioni > Rete e Internet** e seleziona **Proprietà hardware**.
+  * Passa a **Impostazioni > Rete e Internet > Wi-Fi > Opzioni avanzate**.
+  * Passa a **Impostazioni > Rete e Internet** e seleziona **Proprietà hardware**.
+  * Usando il messaggio "Qual è l'indirizzo IP?" comando vocale.
 
 ![Impostazioni HoloLens 2](images/using-windows-portal-img-02.jpg)
 
@@ -75,7 +76,7 @@ Questa documentazione è specifica del Portale di dispositivi di Windows per Hol
     1. Nel dispositivo aprire il Portale di dispositivi usando l'indirizzo Wi-Fi di HoloLens. Se non si conosce l'indirizzo Wi-Fi di HoloLens, è possibile usare il comando vocale "Qual è l'indirizzo IP?"
     2. Passare a Rete > sistema
     3. All'estrema destra della pagina nel pannello "Configurazione IP" individuare la sezione che inizia con "Descrizione: Funzione UsbNcm".
-    4. L'indirizzo IP di UsbNcm è la riga "Indirizzo IPv4". È possibile copiare l'indirizzo o fare semplicemente clic sull'indirizzo. Si tratta di un collegamento ipertestuale che verrà riaperto Portale di dispositivi'indirizzo IP UsbNcm.
+    4. L'indirizzo IP UsbNcm è la riga "Indirizzo IPv4". È possibile copiare l'indirizzo o fare semplicemente clic sull'indirizzo. Si tratta di un collegamento ipertestuale che verrà riaperto Portale di dispositivi'indirizzo IP UsbNcm.
   
   * In un prompt dei comandi
     1. In qualsiasi prompt dei comandi passare alla cartella bin \x86 in cui è installato Windows 10 SDK, ad esempio \<SDK version> C:\Programmi (x86)\Windows Kits\10\bin\10.0.19041.0\x86.
