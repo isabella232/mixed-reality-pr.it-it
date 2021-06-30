@@ -1,78 +1,78 @@
 ---
-title: Impostazioni della fotocamera unity AR
+title: Impostazioni della fotocamera di Unity AR
 description: Documentazione per l'uso della fotocamera AR in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, fotocamera AR,
-ms.openlocfilehash: baa54f4a7c6238b136a108cf5adcbddd29c3ee1b
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: e1c032805bc4b733cfcc51e1ceac5096c73715cf
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143467"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121199"
 ---
-# <a name="unity-ar-camera-settings-provider"></a><span data-ttu-id="66ca2-104">Provider di impostazioni della fotocamera Unity AR</span><span class="sxs-lookup"><span data-stu-id="66ca2-104">Unity AR camera settings provider</span></span>
+# <a name="unity-ar-camera-settings-provider"></a><span data-ttu-id="5c0c0-104">Provider di impostazioni della fotocamera Unity AR</span><span class="sxs-lookup"><span data-stu-id="5c0c0-104">Unity AR camera settings provider</span></span>
 
-<span data-ttu-id="66ca2-105">Il provider di impostazioni della fotocamera Unity AR è un componente MRTK sperimentale che consente l'esecuzione di applicazioni di realtà mista nei dispositivi Android e iOS.</span><span class="sxs-lookup"><span data-stu-id="66ca2-105">The Unity AR camera settings provider is an experimental MRTK component that enables mixed reality applications to run on Android and iOS devices.</span></span>
+<span data-ttu-id="5c0c0-105">Il provider di impostazioni della fotocamera Unity AR è un componente MRTK sperimentale che consente l'esecuzione di applicazioni di realtà mista nei dispositivi Android e iOS.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-105">The Unity AR camera settings provider is an experimental MRTK component that enables mixed reality applications to run on Android and iOS devices.</span></span>
 
-## <a name="unity-ar-camera-settings-provider-options"></a><span data-ttu-id="66ca2-106">Opzioni del provider di impostazioni della fotocamera Unity AR</span><span class="sxs-lookup"><span data-stu-id="66ca2-106">Unity AR camera settings provider options</span></span>
+## <a name="unity-ar-camera-settings-provider-options"></a><span data-ttu-id="5c0c0-106">Opzioni del provider di impostazioni della fotocamera Unity AR</span><span class="sxs-lookup"><span data-stu-id="5c0c0-106">Unity AR camera settings provider options</span></span>
 
-![Configurazione delle impostazioni della fotocamera Unity AR](../images/camera-system/UnityArSettingsConfiguration.png)
+![Configurazione delle impostazioni della fotocamera di Unity AR](../images/camera-system/UnityArSettingsConfiguration.png)
 
-<span data-ttu-id="66ca2-108">Per una guida su come aggiungere il provider alla scena: [Come configurare MRTK per iOS e Android](../../supported-devices/using-ar-foundation.md)</span><span class="sxs-lookup"><span data-stu-id="66ca2-108">For a guide on how to add the provider to your scene: [How to configure MRTK for iOS and Android](../../supported-devices/using-ar-foundation.md)</span></span>
+<span data-ttu-id="5c0c0-108">Per una guida su come aggiungere il provider alla scena: [Come configurare MRTK per iOS e Android](../../supported-devices/using-ar-foundation.md)</span><span class="sxs-lookup"><span data-stu-id="5c0c0-108">For a guide on how to add the provider to your scene: [How to configure MRTK for iOS and Android](../../supported-devices/using-ar-foundation.md)</span></span>
 
-### <a name="tracking-settings"></a><span data-ttu-id="66ca2-109">Impostazioni di rilevamento</span><span class="sxs-lookup"><span data-stu-id="66ca2-109">Tracking settings</span></span>
+### <a name="tracking-settings"></a><span data-ttu-id="5c0c0-109">Impostazioni di rilevamento</span><span class="sxs-lookup"><span data-stu-id="5c0c0-109">Tracking settings</span></span>
 
-<span data-ttu-id="66ca2-110">Il provider di impostazioni della fotocamera Unity AR consente le opzioni di configurazione per l'esecuzione del rilevamento.</span><span class="sxs-lookup"><span data-stu-id="66ca2-110">The Unity AR camera settings provider allows configuration options for how tracking is performed.</span></span> <span data-ttu-id="66ca2-111">Queste impostazioni sono specifiche dell'implementazione del provider di impostazioni della fotocamera Unity AR.</span><span class="sxs-lookup"><span data-stu-id="66ca2-111">These settings are specific to the Unity AR camera settings provider implementation.</span></span>
+<span data-ttu-id="5c0c0-110">Il provider di impostazioni della fotocamera Unity AR consente le opzioni di configurazione per l'esecuzione del rilevamento.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-110">The Unity AR camera settings provider allows configuration options for how tracking is performed.</span></span> <span data-ttu-id="5c0c0-111">Queste impostazioni sono specifiche dell'implementazione del provider di impostazioni della fotocamera Unity AR.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-111">These settings are specific to the Unity AR camera settings provider implementation.</span></span>
 
-<span data-ttu-id="66ca2-112">**Origine della posizione**</span><span class="sxs-lookup"><span data-stu-id="66ca2-112">**Pose Source**</span></span>
+<span data-ttu-id="5c0c0-112">**Origine della posizione**</span><span class="sxs-lookup"><span data-stu-id="5c0c0-112">**Pose Source**</span></span>
 
-<span data-ttu-id="66ca2-113">L'origine della posizione definisce i tipi disponibili di pose di rilevamento della realtà aumentata.</span><span class="sxs-lookup"><span data-stu-id="66ca2-113">The pose source defines the available types of augmented reality tracking poses.</span></span> <span data-ttu-id="66ca2-114">In generale, questi valori vengono mappati a un componente del dispositivo in cui è in esecuzione l'applicazione.</span><span class="sxs-lookup"><span data-stu-id="66ca2-114">In general, these values map to a component of the device on which the application is running.</span></span>
+<span data-ttu-id="5c0c0-113">L'origine della posizione definisce i tipi disponibili di pose di rilevamento della realtà aumentata.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-113">The pose source defines the available types of augmented reality tracking poses.</span></span> <span data-ttu-id="5c0c0-114">In generale, questi valori vengono mappati a un componente del dispositivo in cui è in esecuzione l'applicazione.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-114">In general, these values map to a component of the device on which the application is running.</span></span>
 
-<span data-ttu-id="66ca2-115">Le opzioni disponibili sono descritte nella tabella seguente.</span><span class="sxs-lookup"><span data-stu-id="66ca2-115">The available options are described in the following table.</span></span>
+<span data-ttu-id="5c0c0-115">Le opzioni disponibili sono descritte nella tabella seguente.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-115">The available options are described in the following table.</span></span>
 
-| <span data-ttu-id="66ca2-116">Opzione</span><span class="sxs-lookup"><span data-stu-id="66ca2-116">Option</span></span> | <span data-ttu-id="66ca2-117">Descrizione</span><span class="sxs-lookup"><span data-stu-id="66ca2-117">Description</span></span> |
+| <span data-ttu-id="5c0c0-116">Opzione</span><span class="sxs-lookup"><span data-stu-id="5c0c0-116">Option</span></span> | <span data-ttu-id="5c0c0-117">Descrizione</span><span class="sxs-lookup"><span data-stu-id="5c0c0-117">Description</span></span> |
 | --- | --- |
-| <span data-ttu-id="66ca2-118">Center</span><span class="sxs-lookup"><span data-stu-id="66ca2-118">Center</span></span> | <span data-ttu-id="66ca2-119">L'occhio centrale di un dispositivo montato sulla testa.</span><span class="sxs-lookup"><span data-stu-id="66ca2-119">The center eye of a head mounted device.</span></span> |
-| <span data-ttu-id="66ca2-120">Fotocamera a colori</span><span class="sxs-lookup"><span data-stu-id="66ca2-120">Color Camera</span></span> | <span data-ttu-id="66ca2-121">Fotocamera a colori di un dispositivo mobile.</span><span class="sxs-lookup"><span data-stu-id="66ca2-121">The color camera of a mobile device.</span></span> |
-| <span data-ttu-id="66ca2-122">Head</span><span class="sxs-lookup"><span data-stu-id="66ca2-122">Head</span></span> | <span data-ttu-id="66ca2-123">L'occhio della testa di un dispositivo montato sulla testa, spesso leggermente sopra l'occhio centrale.</span><span class="sxs-lookup"><span data-stu-id="66ca2-123">The head eye of a head mounted device, often slightly above the center eye.</span></span> |
-| <span data-ttu-id="66ca2-124">Occhio sinistro</span><span class="sxs-lookup"><span data-stu-id="66ca2-124">Left Eye</span></span> | <span data-ttu-id="66ca2-125">L'occhio sinistro di un dispositivo montato con la testa.</span><span class="sxs-lookup"><span data-stu-id="66ca2-125">The left eye of a head mounted device.</span></span> |
-| <span data-ttu-id="66ca2-126">Posizione sinistra</span><span class="sxs-lookup"><span data-stu-id="66ca2-126">Left Pose</span></span> | <span data-ttu-id="66ca2-127">Posizione del controller a sinistra.</span><span class="sxs-lookup"><span data-stu-id="66ca2-127">The left hand controller pose.</span></span> |
-| <span data-ttu-id="66ca2-128">Occhio destro</span><span class="sxs-lookup"><span data-stu-id="66ca2-128">Right Eye</span></span> | <span data-ttu-id="66ca2-129">L'occhio destro di un dispositivo montato con la testa.</span><span class="sxs-lookup"><span data-stu-id="66ca2-129">The right eye of a head mounted device.</span></span> |
-| <span data-ttu-id="66ca2-130">Posizione destra</span><span class="sxs-lookup"><span data-stu-id="66ca2-130">Right Pose</span></span> | <span data-ttu-id="66ca2-131">Posizione del controller della mano destra.</span><span class="sxs-lookup"><span data-stu-id="66ca2-131">The right hand controller pose.</span></span> |
+| <span data-ttu-id="5c0c0-118">Center</span><span class="sxs-lookup"><span data-stu-id="5c0c0-118">Center</span></span> | <span data-ttu-id="5c0c0-119">L'occhio centrale di un dispositivo montato sulla testa.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-119">The center eye of a head mounted device.</span></span> |
+| <span data-ttu-id="5c0c0-120">Fotocamera a colori</span><span class="sxs-lookup"><span data-stu-id="5c0c0-120">Color Camera</span></span> | <span data-ttu-id="5c0c0-121">Fotocamera a colori di un dispositivo mobile.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-121">The color camera of a mobile device.</span></span> |
+| <span data-ttu-id="5c0c0-122">Head</span><span class="sxs-lookup"><span data-stu-id="5c0c0-122">Head</span></span> | <span data-ttu-id="5c0c0-123">L'occhio della testa di un dispositivo montato sulla testa, spesso leggermente sopra l'occhio centrale.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-123">The head eye of a head mounted device, often slightly above the center eye.</span></span> |
+| <span data-ttu-id="5c0c0-124">Occhio sinistro</span><span class="sxs-lookup"><span data-stu-id="5c0c0-124">Left Eye</span></span> | <span data-ttu-id="5c0c0-125">L'occhio sinistro di un dispositivo montato sulla testa.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-125">The left eye of a head mounted device.</span></span> |
+| <span data-ttu-id="5c0c0-126">Posizione sinistra</span><span class="sxs-lookup"><span data-stu-id="5c0c0-126">Left Pose</span></span> | <span data-ttu-id="5c0c0-127">Posizione del controller della mano sinistra.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-127">The left hand controller pose.</span></span> |
+| <span data-ttu-id="5c0c0-128">Occhio destro</span><span class="sxs-lookup"><span data-stu-id="5c0c0-128">Right Eye</span></span> | <span data-ttu-id="5c0c0-129">L'occhio destro di un dispositivo montato sulla testa.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-129">The right eye of a head mounted device.</span></span> |
+| <span data-ttu-id="5c0c0-130">Posizione a destra</span><span class="sxs-lookup"><span data-stu-id="5c0c0-130">Right Pose</span></span> | <span data-ttu-id="5c0c0-131">La posizione del controller destro.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-131">The right hand controller pose.</span></span> |
 
-<span data-ttu-id="66ca2-132">Il valore predefinito per l'origine della posizione è **Fotocamera** a colori, per abilitare una visualizzazione trasparente nei dispositivi mobili, ad esempio un telefono o un tablet.</span><span class="sxs-lookup"><span data-stu-id="66ca2-132">The default value for pose source is **Color Camera**, to enable a transparent display on mobile devices, such as a phone or tablet.</span></span>
+<span data-ttu-id="5c0c0-132">Il valore predefinito per l'origine della posizione è **Fotocamera** a colori , per abilitare una visualizzazione trasparente nei dispositivi mobili, ad esempio un telefono o un tablet.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-132">The default value for pose source is **Color Camera**, to enable a transparent display on mobile devices, such as a phone or tablet.</span></span>
 
-<span data-ttu-id="66ca2-133">**Tipo di rilevamento**</span><span class="sxs-lookup"><span data-stu-id="66ca2-133">**Tracking Type**</span></span>
+<span data-ttu-id="5c0c0-133">**Tipo di rilevamento**</span><span class="sxs-lookup"><span data-stu-id="5c0c0-133">**Tracking Type**</span></span>
 
-<span data-ttu-id="66ca2-134">Il tipo di rilevamento definisce le parti della posizione che verranno usate per il rilevamento.</span><span class="sxs-lookup"><span data-stu-id="66ca2-134">The tracking type defines the portion(s) of the pose that will be used for tracking.</span></span>
+<span data-ttu-id="5c0c0-134">Il tipo di rilevamento definisce le parti della posizione che verranno usate per il rilevamento.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-134">The tracking type defines the portion(s) of the pose that will be used for tracking.</span></span>
 
-<span data-ttu-id="66ca2-135">Le opzioni disponibili sono descritte nella tabella seguente.</span><span class="sxs-lookup"><span data-stu-id="66ca2-135">The available options are described in the following table.</span></span>
+<span data-ttu-id="5c0c0-135">Le opzioni disponibili sono descritte nella tabella seguente.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-135">The available options are described in the following table.</span></span>
 
-| <span data-ttu-id="66ca2-136">Opzione</span><span class="sxs-lookup"><span data-stu-id="66ca2-136">Option</span></span> | <span data-ttu-id="66ca2-137">Descrizione</span><span class="sxs-lookup"><span data-stu-id="66ca2-137">Description</span></span> |
+| <span data-ttu-id="5c0c0-136">Opzione</span><span class="sxs-lookup"><span data-stu-id="5c0c0-136">Option</span></span> | <span data-ttu-id="5c0c0-137">Descrizione</span><span class="sxs-lookup"><span data-stu-id="5c0c0-137">Description</span></span> |
 | --- | --- |
-| <span data-ttu-id="66ca2-138">Posizione</span><span class="sxs-lookup"><span data-stu-id="66ca2-138">Position</span></span> | <span data-ttu-id="66ca2-139">Posizione del dispositivo.</span><span class="sxs-lookup"><span data-stu-id="66ca2-139">The position of the device.</span></span> |
-| <span data-ttu-id="66ca2-140">Rotazione</span><span class="sxs-lookup"><span data-stu-id="66ca2-140">Rotation</span></span> | <span data-ttu-id="66ca2-141">Rotazione del dispositivo.</span><span class="sxs-lookup"><span data-stu-id="66ca2-141">The rotation of the device.</span></span> |
-| <span data-ttu-id="66ca2-142">Rotazione e posizione</span><span class="sxs-lookup"><span data-stu-id="66ca2-142">Rotation And Position</span></span> | <span data-ttu-id="66ca2-143">Posizione e rotazione del dispositivo.</span><span class="sxs-lookup"><span data-stu-id="66ca2-143">The position and rotation of the device.</span></span> |
+| <span data-ttu-id="5c0c0-138">Posizione</span><span class="sxs-lookup"><span data-stu-id="5c0c0-138">Position</span></span> | <span data-ttu-id="5c0c0-139">Posizione del dispositivo.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-139">The position of the device.</span></span> |
+| <span data-ttu-id="5c0c0-140">Rotazione</span><span class="sxs-lookup"><span data-stu-id="5c0c0-140">Rotation</span></span> | <span data-ttu-id="5c0c0-141">Rotazione del dispositivo.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-141">The rotation of the device.</span></span> |
+| <span data-ttu-id="5c0c0-142">Rotazione e posizione</span><span class="sxs-lookup"><span data-stu-id="5c0c0-142">Rotation And Position</span></span> | <span data-ttu-id="5c0c0-143">Posizione e rotazione del dispositivo.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-143">The position and rotation of the device.</span></span> |
 
-<span data-ttu-id="66ca2-144">Il valore predefinito per il tipo di rilevamento è **Rotazione e Posizione** per abilitare l'esperienza di rilevamento più completa.</span><span class="sxs-lookup"><span data-stu-id="66ca2-144">The default value for tracking type is **Rotation And Position**, to enable the richest tracking experience.</span></span>
+<span data-ttu-id="5c0c0-144">Il valore predefinito per tipo di rilevamento è **Rotazione e posizione**, per abilitare l'esperienza di rilevamento più completa.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-144">The default value for tracking type is **Rotation And Position**, to enable the richest tracking experience.</span></span>
 
-<span data-ttu-id="66ca2-145">**Tipo di aggiornamento**</span><span class="sxs-lookup"><span data-stu-id="66ca2-145">**Update Type**</span></span>
+<span data-ttu-id="5c0c0-145">**Tipo di aggiornamento**</span><span class="sxs-lookup"><span data-stu-id="5c0c0-145">**Update Type**</span></span>
 
-<span data-ttu-id="66ca2-146">Il tipo di aggiornamento definisce in quali punti, durante l'elaborazione dei fotogrammi, verranno campionati i dati di posizione.</span><span class="sxs-lookup"><span data-stu-id="66ca2-146">The update type defines at what points, during frame processing, the pose data will be sampled.</span></span>
+<span data-ttu-id="5c0c0-146">Il tipo di aggiornamento definisce in quali punti, durante l'elaborazione dei frame, verranno campionati i dati di posizione.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-146">The update type defines at what points, during frame processing, the pose data will be sampled.</span></span>
 
-<span data-ttu-id="66ca2-147">Le opzioni disponibili sono descritte nella tabella seguente.</span><span class="sxs-lookup"><span data-stu-id="66ca2-147">The available options are described in the following table.</span></span>
+<span data-ttu-id="5c0c0-147">Le opzioni disponibili sono descritte nella tabella seguente.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-147">The available options are described in the following table.</span></span>
 
-| <span data-ttu-id="66ca2-148">Opzione</span><span class="sxs-lookup"><span data-stu-id="66ca2-148">Option</span></span> | <span data-ttu-id="66ca2-149">Descrizione</span><span class="sxs-lookup"><span data-stu-id="66ca2-149">Description</span></span> |
+| <span data-ttu-id="5c0c0-148">Opzione</span><span class="sxs-lookup"><span data-stu-id="5c0c0-148">Option</span></span> | <span data-ttu-id="5c0c0-149">Descrizione</span><span class="sxs-lookup"><span data-stu-id="5c0c0-149">Description</span></span> |
 | --- | --- |
-| <span data-ttu-id="66ca2-150">Prima del rendering</span><span class="sxs-lookup"><span data-stu-id="66ca2-150">Before Render</span></span> | <span data-ttu-id="66ca2-151">Subito prima del rendering.</span><span class="sxs-lookup"><span data-stu-id="66ca2-151">Just before rendering.</span></span> |
-| <span data-ttu-id="66ca2-152">Aggiornamento</span><span class="sxs-lookup"><span data-stu-id="66ca2-152">Update</span></span> | <span data-ttu-id="66ca2-153">Durante la fase di aggiornamento del frame.</span><span class="sxs-lookup"><span data-stu-id="66ca2-153">During the update phase of the frame.</span></span> |
-| <span data-ttu-id="66ca2-154">Aggiornamento e prima del rendering</span><span class="sxs-lookup"><span data-stu-id="66ca2-154">Update And Before Render</span></span> | <span data-ttu-id="66ca2-155">Durante la fase di aggiornamento e subito prima del rendering.</span><span class="sxs-lookup"><span data-stu-id="66ca2-155">During the update phase and just before rendering.</span></span> |
+| <span data-ttu-id="5c0c0-150">Prima del rendering</span><span class="sxs-lookup"><span data-stu-id="5c0c0-150">Before Render</span></span> | <span data-ttu-id="5c0c0-151">Subito prima del rendering.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-151">Just before rendering.</span></span> |
+| <span data-ttu-id="5c0c0-152">Aggiornamento</span><span class="sxs-lookup"><span data-stu-id="5c0c0-152">Update</span></span> | <span data-ttu-id="5c0c0-153">Durante la fase di aggiornamento del frame.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-153">During the update phase of the frame.</span></span> |
+| <span data-ttu-id="5c0c0-154">Aggiornamento e prima del rendering</span><span class="sxs-lookup"><span data-stu-id="5c0c0-154">Update And Before Render</span></span> | <span data-ttu-id="5c0c0-155">Durante la fase di aggiornamento e subito prima del rendering.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-155">During the update phase and just before rendering.</span></span> |
 
-<span data-ttu-id="66ca2-156">Il valore predefinito per tipo di rilevamento è **Update And Before Render**, per abilitare la latenza di rilevamento più bassa.</span><span class="sxs-lookup"><span data-stu-id="66ca2-156">The default value for tracking type is **Update And Before Render**, to enable the lowest tracking latency.</span></span>
+<span data-ttu-id="5c0c0-156">Il valore predefinito per tipo di rilevamento è **Update And Before Render**, per abilitare la latenza di rilevamento più bassa.</span><span class="sxs-lookup"><span data-stu-id="5c0c0-156">The default value for tracking type is **Update And Before Render**, to enable the lowest tracking latency.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="66ca2-157">Vedi anche</span><span class="sxs-lookup"><span data-stu-id="66ca2-157">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5c0c0-157">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="5c0c0-157">See also</span></span>
 
-- [<span data-ttu-id="66ca2-158">Panoramica del sistema di fotocamera</span><span class="sxs-lookup"><span data-stu-id="66ca2-158">Camera System Overview</span></span>](camera-system-overview.md)
-- [<span data-ttu-id="66ca2-159">Creazione di un provider di impostazioni della fotocamera</span><span class="sxs-lookup"><span data-stu-id="66ca2-159">Creating a Camera Settings Provider</span></span>](create-settings-provider.md)
+- [<span data-ttu-id="5c0c0-158">Panoramica del sistema di fotocamera</span><span class="sxs-lookup"><span data-stu-id="5c0c0-158">Camera System Overview</span></span>](camera-system-overview.md)
+- [<span data-ttu-id="5c0c0-159">Creazione di un provider di impostazioni della fotocamera</span><span class="sxs-lookup"><span data-stu-id="5c0c0-159">Creating a Camera Settings Provider</span></span>](create-settings-provider.md)

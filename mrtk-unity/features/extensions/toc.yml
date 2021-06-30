@@ -1,8 +1,8 @@
 - name: Servizi di estensione
   href: extension-services.md
-- name: Servizio fisico della mano
+- name: Servizio di fisica delle mani
   href: hand-physics-service.md
-- name: Servizio transizione scena
+- name: Servizio di transizione della scena
   href: scene-transition-service.md
 - name: Servizio di rilevamento perso
   href: lost-tracking-service.md

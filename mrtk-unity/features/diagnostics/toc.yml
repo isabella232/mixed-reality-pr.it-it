@@ -1,6 +1,6 @@
-- name: Configurazione di Diagnostica
+- name: Configurazione della diagnostica
   href: configuring-diagnostics.md
-- name: Introduzione del sistema di diagnostica
+- name: Panoramica del sistema di diagnostica
   href: diagnostics-system-getting-started.md
-- name: Uso di Visual Profiler
+- name: Uso del profiler visivo
   href: using-visual-profiler.md
