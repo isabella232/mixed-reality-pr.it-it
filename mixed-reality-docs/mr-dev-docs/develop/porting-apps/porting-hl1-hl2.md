@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, MRTK, MRTK versione 2, HoloLens 2, unity, porting, HoloLens 1a generazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, migrazione, procedure consigliate, ARM
-ms.openlocfilehash: 7789e9207f3c4fec7a0bbd6a824a4ae48a5741cd
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: 512bd3e841d40ffd606d59ee4bb4d955306cc2d0
+ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600540"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113042252"
 ---
 # <a name="porting-hololens-1st-gen-apps-to-hololens-2"></a>Conversione di app HoloLens (prima generazione) in HoloLens 2
 
@@ -36,26 +36,13 @@ Prima di iniziare il processo di conversione, è **consigliabile** usare il cont
 
 ## <a name="migrate-project-to-the-latest-version-of-unity"></a>Eseguire la migrazione del progetto all'ultima versione di Unity
 
-Se si usa [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), [Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases) è il percorso di supporto a lungo termine ottimale senza modifiche di rilievo in Unity o in MRTK. Valutare tutte le [dipendenze da plug-in](https://docs.unity3d.com/Manual/Plugins.html) attualmente esistenti nel progetto e stabilire se è possibile creare le DLL per ARM64. Per i progetti con un plug-in fortemente dipendente da ARM64, può essere necessario continuare a creare l'app per ARM.
-
-<!-- MRTK v2 always guarantees support for Unity 2018 LTS, but does not necessarily guarantee support for every iteration of Unity 2019.x.
-
-To help clarify additional differences between [Unity 2018 LTS](https://unity3d.com/unity/qa/lts-releases) and Unity 2019.x, the following table outlines the trade-offs between the two versions. The primary difference between the two is the ability to compile for ARM64 in Unity 2019.
-
-| Unity 2018 LTS | Unity 2019.x |
-|----------|-------------------|
-| ARM32 build support | ARM32 and ARM64 build support |
-| Stable LTS build release | Beta stability |
-| [.NET Scripting back-end](https://docs.unity3d.com/2018.4/Documentation/Manual/windowsstore-dotnet.html) *deprecated* | [.NET Scripting back-end](https://docs.unity3d.com/2018.4/Documentation/Manual/windowsstore-dotnet.html) *removed* |
-| UNET Networking *deprecated* | UNET Networking *deprecated* |
-
--->
+Se si usa [MRTK v2,](https://github.com/microsoft/MixedRealityToolkit-Unity)è consigliabile eseguire l'aggiornamento a MRTK 2.7 prima di aggiornare il progetto a [Unity 2020.3 LTS.](../unity/choosing-unity-version.md) MRTK 2.7 supporta Unity 2018, 2019 e 2020, consentendo di assicurarsi che il progetto sia pronto per Unity 2020 anche prima di aggiornare Unity. Valutare tutte le [dipendenze da plug-in](https://docs.unity3d.com/Manual/Plugins.html) attualmente esistenti nel progetto e stabilire se è possibile creare le DLL per ARM64. Per i progetti con un plug-in fortemente dipendente da ARM64, può essere necessario continuare a creare l'app per ARM.
 
 ## <a name="update-sceneproject-settings-in-unity"></a>Aggiornare le impostazioni di scena o progetto in Unity
 
-Dopo l'aggiornamento a [Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases), è consigliabile aggiornare specifiche impostazioni di Unity per ottenere risultati ottimali nel dispositivo. Queste impostazioni sono descritte in dettaglio nella sezione [Impostazioni consigliate per Unity](../unity/Recommended-settings-for-Unity.md).
+Dopo l'aggiornamento [a Unity 2020.3 LTS,](https://unity3d.com/unity/qa/lts-releases)è consigliabile aggiornare determinate impostazioni in Unity per ottenere risultati ottimali nel dispositivo. Queste impostazioni sono descritte in dettaglio nella sezione [Impostazioni consigliate per Unity](../unity/Recommended-settings-for-Unity.md).
 
-Si ribadisce che il [back-end di scripting .NET](https://docs.unity3d.com/Manual/windowsstore-dotnet.html) è stato deprecato in Unity 2018 e **rimosso** in Unity 2019. Per gli sviluppatori è consigliabile passare a [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html) per il loro progetto.
+Per ribadire, il [back-end](https://docs.unity3d.com/Manual/windowsstore-dotnet.html) di scripting .NET è deprecato in Unity 2018 e rimosso a data di Unity 2019.  Per gli sviluppatori è consigliabile passare a [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html) per il loro progetto.
 
 > [!NOTE]
 > Il back-end di scripting IL2CPP può comportare tempi di compilazione da Unity a Visual Studio più lunghi, quindi gli sviluppatori devono configurare i computer di sviluppo in modo da [ottimizzare i tempi di compilazione di IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html).
@@ -65,7 +52,7 @@ Dopo aver gestito tutte le modifiche di rilievo derivanti dal passaggio alla ver
 
 ## <a name="compile-dependenciesplugins-for-arm-processor"></a>Compilare dipendenze/plug-in per il processore ARM
 
-HoloLens (prima generazione) esegue le applicazioni su un processore x86, mentre HoloLens 2 si basa su un processore ARM. Le applicazioni HoloLens esistenti devono essere convertite per supportare ARM. Come indicato in precedenza, Unity 2018 LST supporta la compilazione per app ARM32, mentre Unity 2019.x supporta la compilazione per app ARM32 e ARM64. Lo sviluppo per le applicazioni ARM64 è preferibile in quanto esiste una differenza sostanziale nelle prestazioni. Tuttavia, in questo modo è necessario creare tutte le [dipendenze da plug-in](https://docs.unity3d.com/Manual/Plugins.html) anche per ARM64.
+HoloLens (prima generazione) esegue le applicazioni su un processore x86, mentre HoloLens 2 si basa su un processore ARM. Le applicazioni HoloLens esistenti devono essere convertite per supportare ARM. Come illustrato in precedenza, Unity 2018 LTS supporta la compilazione di app ARM32, mentre Unity 2019 e versioni successive supportano la compilazione di app ARM32 e ARM64. Lo sviluppo per le applicazioni ARM64 è preferibile in quanto esiste una differenza sostanziale nelle prestazioni. Tuttavia, in questo modo è necessario creare tutte le [dipendenze da plug-in](https://docs.unity3d.com/Manual/Plugins.html) anche per ARM64.
 
 Esamina tutte le dipendenze da DLL dell'applicazione. È consigliabile rimuovere le dipendenze che non sono più necessarie per il progetto. Per i plug-in rimanenti che sono necessari, inserisci i rispettivi file binari ARM32 o ARM64 nel progetto Unity.
 
@@ -82,7 +69,7 @@ Per altre informazioni sull'uso di MRTK versione 2, vedere le risorse seguenti:
 
 - [MRTK - Home page della documentazione](/windows/mixed-reality/mrtk-unity)
 - [Guida all'installazione](/windows/mixed-reality/mrtk-unity/install-the-tools)
-- [MRTK - Tracciamento delle mani](/windows/mixed-reality/mrtk-unity/features/input/hand-tracking)
+- [MRTK - Tracciamento manuale](/windows/mixed-reality/mrtk-unity/features/input/hand-tracking)
 - [MRTK - Tracciamento oculare](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
 
 ### <a name="prepare-for-the-migration"></a>Prepararsi per la migrazione
@@ -104,7 +91,7 @@ Per informazioni sulle differenze di API specifiche tra HTK/MRTK e MRTK v2, vedi
 - Esegui il test dopo ogni modifica e usa il controllo del codice sorgente.
 - Quando possibile, usare l'esperienza utente MRTK predefinita (pulsanti, slate e così via).
 - Evita di modificare direttamente i file MRTK e crea invece wrapper intorno ai componenti MRTK.
-  - Questa azione semplifica l'inserimento e gli aggiornamenti futuri di MRTK.
+  - Questa azione facilita l'inserimento e gli aggiornamenti MRTK futuri.
 - Esamina ed esplora le scene di esempio fornite in MRTK (soprattutto *HandInteractionExamples.scene*).
 - Ricrea l'interfaccia utente basata su aree di disegno con quadrilateri, collisori e testo TextMeshPro.
 - Abilita la [condivisione dei buffer di intensità](../unity/camera-in-unity.md#sharing-depth-buffers) o [imposta il punto di messa a fuoco](../unity/focus-point-in-unity.md); usa un buffer di intensità di 16 bit per prestazioni migliori. Quando esegui il rendering del colore, assicurati di farlo anche per la profondità. Unity in genere non scrive la profondità per oggetti gioco trasparenti e di testo.

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: ologrammi, stabilità, hololens, visore per realtà mista, visore windows mixed reality, visore per realtà virtuale, frequenza fotogrammi, rendering, riproiezione, separazione dei colori
 appliesto:
 - HoloLens
-ms.openlocfilehash: 560b1551b153f1735b0106869c6a82c977693968
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: a4a22221d3238bb7dfed711e6ee1f11edc70238e
+ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110107"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113042292"
 ---
 # <a name="hologram-stability"></a>Stabilità degli ologrammi
 
@@ -97,8 +97,8 @@ Le applicazioni devono eseguire azioni specifiche per abilitare i diversi tipi d
 
 Tipo di stabilizzazione |    Visori immersivi |    HoloLens di generazione 1 | HoloLens 2
 --- | --- | --- | ---
-Riprogettazione della profondità |    Consigliato |   N/D |   Consigliato<br/><br/>Le applicazioni Unity devono usare Unity 2018.4.12 o versione successiva o Unity 2019.3 o versione successiva. In caso contrario, usare la riproiezione planare automatica.
-Riprogettazione planare automatica | N/D |   Impostazione predefinita consigliata |   Consigliato se la riproiezione della profondità non dà i risultati migliori<br/><br/>Per le applicazioni Unity è consigliabile usare Unity 2018.4.12 o versione successiva o Unity 2019.3 o versione successiva.  Le versioni precedenti di Unity funzioneranno con risultati di riproiezione leggermente danneggiati.
+Riprogettazione della profondità |    Consigliato |   N/D |   Consigliato<br/><br/>Le applicazioni Unity devono usare Unity 2018.4.12+, Unity 2019.3+ o Unity 2020.3+. In caso contrario, usare la riproiezione planare automatica.
+Riprogettazione planare automatica | N/D |   Impostazione predefinita consigliata |   Consigliato se la riproiezione della profondità non dà i risultati migliori<br/><br/>Per le applicazioni Unity è consigliabile usare Unity 2018.4.12+, Unity 2019.3+ o Unity 2020.3+.  Le versioni precedenti di Unity funzioneranno con risultati di riproiezione leggermente danneggiati.
 Riprogettazione planare |   Non consigliato |   Consigliato se l'opzione Planar automatico non dà i risultati migliori | Usare se nessuna delle opzioni di profondità consente di ottenere i risultati desiderati    
 
 ### <a name="verifying-depth-is-set-correctly"></a>Verifica della corretta impostazione della profondità
@@ -168,20 +168,20 @@ A causa della natura dei display HoloLens, talvolta può essere percepito un art
 Anche se è difficile evitare completamente la separazione dei colori, sono disponibili diverse tecniche per attenuarla.
 
 **La separazione dei colori può essere osservata in:**
-* Oggetti che si spostano rapidamente, inclusi gli oggetti bloccati con la testa, ad esempio il [cursore](../../design/cursors.md).
+* Oggetti che si spostano rapidamente, inclusi gli oggetti con la testa bloccata, ad esempio il [cursore](../../design/cursors.md).
 * Oggetti sostanzialmente lontano dal piano [di stabilizzazione.](hologram-stability.md#reprojection)
 
 **Per attenuare gli effetti della separazione dei colori:**
 * Impostare l'oggetto come ritardo dello sguardo dell'utente. Dovrebbe apparire come se presentasse un'inerzia e fosse collegata al sguardo fisso "on affezionato". Questo approccio rallenta il cursore (riducendo la distanza di separazione) e lo posiziona dietro il probabile punto di sguardo fisso dell'utente. Finché si raggiunge rapidamente quando l'utente smette di spostare lo sguardo, sembra naturale.
-* Se si vuole spostare un ologramma, provare a mantenere la velocità di movimento al di sotto di 5 gradi al secondo se si prevede che l'utente lo segua con gli occhi.
-* Usare *la luce* anziché la *geometria* per il cursore. Un'origine di illuminazione virtuale collegata al sguardo fisso verrà percepita come un puntatore interattivo, ma non causerà la separazione dei colori.
+* Se si vuole spostare un ologramma, provare a mantenerne la velocità di movimento al di sotto di 5 gradi al secondo se si prevede che l'utente lo segua con gli occhi.
+* Usare *la luce* anziché la geometria *per* il cursore. Un'origine di illuminazione virtuale collegata al sguardo fisso verrà percepita come un puntatore interattivo, ma non causerà la separazione dei colori.
 * Regolare il piano di stabilizzazione in modo che corrisponda agli ologrammi che l'utente sta guardando.
 * Rendere l'oggetto rosso, verde o blu.
 * Passare a una versione sfocata del contenuto. Ad esempio, un cursore bianco rotondo può essere modificato in una linea leggermente sfocata orientata nella direzione del movimento.
 
 Come in precedenza, il rendering a 60 FPS e l'impostazione del piano di stabilizzazione sono le tecniche più importanti per la stabilità degli ologrammi. In caso di netta separazione dei colori, assicurarsi prima di tutto che la frequenza dei fotogrammi soddisfi le aspettative.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 * [Informazioni sulle prestazioni per la realtà mista](understanding-performance-for-mixed-reality.md)
 * [Colore, luce e materiali](../../design/color-light-and-materials.md)
 * [Interazioni istintive](../../design/interaction-fundamentals.md)

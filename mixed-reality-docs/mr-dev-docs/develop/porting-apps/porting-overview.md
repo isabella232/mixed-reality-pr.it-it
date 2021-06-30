@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: porting, unity, middleware, motore, UWP, Win32
-ms.openlocfilehash: 9b056bd81a725fea23c1e7f3bfcd9844680086c6
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: 167559d69cc4e65f971a8970b56e41e6e3ca8b22
+ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600500"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113042272"
 ---
 # <a name="porting-overview"></a>Panoramica della conversione
 
@@ -20,8 +20,7 @@ Quando si tratta di eseguire il porting o l'aggiornamento dei progetti esistenti
 Prima di tutto, configurare la destinazione del progetto in base alle raccomandazioni [di Unity](#unity) e [Unreal,](#unreal) quindi seguire uno o più scenari di porting:
 
 - [HoloLens (prima generazione) per HoloLens 2](#hololens-1st-gen-unity-apps-to-hololens-2)
-- [Visori VR di Windows Mixed Reality](#windows-mixed-reality-headsets)
-- [App di SteamVR](#steamvr-applications)
+- [Visori VR immersive](#immersive-vr-headsets)
 - [App UWP 2D](#2d-universal-windows-applications)
 
 ## <a name="recommended-project-targets"></a>Destinazioni del progetto consigliate
@@ -30,18 +29,11 @@ Prima di tutto, configurare la destinazione del progetto in base alle raccomanda
 
 ### <a name="unity"></a>Unity
 
-La raccomandazione corrente per lo sviluppo di Unity con Realtà mista **è Unity 2019 LTS usando il pacchetto XR legacy.** Se il progetto usa Mixed Reality Toolkit, verificare di avere la versione più recente, attualmente **MRTK-Unity 2.5.**
-
-> [!CAUTION]
-> Anche se XR SDK è disponibile con questa versione di Unity, Ancoraggi nello spazio di Azure non è attualmente compatibile con questa configurazione. Questa raccomandazione verrà aggiornata con una versione futura del pacchetto Ancoraggi nello stato di Azure per Unity.
-> 
-> * Se non sono necessari ancoraggi nello stato di Azure, è possibile configurare il progetto Unity per [XR](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) e iniziare a usare [MRTK e XR SDK.](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk)
-> 
-> * Se si usa XR SDK nel progetto e si vuole usare Ancoraggi nello spaziali di Azure, disinstallare XR SDK e reinstallare il pacchetto XR legacy per ripristinare le impostazioni del progetto.
+Per informazioni aggiornate sulle versioni [consigliate](../unity/choosing-unity-version.md) di Unity e MRTK, vedere la pagina Scelta di una versione di Unity.
 
 ### <a name="unreal"></a>Unreal
 
-La raccomandazione corrente per lo sviluppo unreal con realtà mista **è Unreal Engine 4.26.** Se il progetto usa Mixed Reality Toolkit UX Tools, assicurarsi di usare la versione più recente, attualmente **UXT 0.10.**
+Per informazioni aggiornate sulle versioni consigliate di Unreal e MRTK, vedere la pagina Configurazione del progetto [Unreal.](../unreal/unreal-project-setup.md)
 
 ## <a name="porting-scenarios"></a>Scenari di porting
 
@@ -49,13 +41,11 @@ La raccomandazione corrente per lo sviluppo unreal con realtà mista **è Unreal
 
 Se si dispone di un'applicazione Unity HoloLens (prima generazione) che si desidera convertire in un HoloLens 2, seguire le istruzioni nell'articolo sulla portabilità di [HoloLens.](./porting-hl1-hl2.md)
 
-### <a name="windows-mixed-reality-headsets"></a>Visori VR di Windows Mixed Reality
+### <a name="immersive-vr-headsets"></a>Visori VR immersive
 
-Se hai creato contenuto per altri dispositivi, ad esempio Oculus Rift o HP Reverb G2, dovrai ridestinare gli SDK VR specifici del fornitore e potenzialmente le API di mapping dell'input. Le informazioni per gli scenari di porting Unity e Unreal sono disponibili nella guida alla porting delle [app immersive.](porting-guides.md)
+Se hai creato contenuto per altri dispositivi VR, dovrai ridestinare gli SDK VR specifici del fornitore e le API di mapping degli input potenzialmente. Le informazioni per gli scenari di porting Unity e Unreal sono disponibili nella guida alla porting delle [app immersive.](porting-guides.md)
 
-### <a name="steamvr-applications"></a>Applicazioni di SteamVR
-
-Per tutte le esperienze di SteamVR che si vuole aggiornare per Windows Mixed Reality visori, vedere la guida all'aggiornamento di [SteamVR.](updating-your-steamvr-application-for-windows-mixed-reality.md)
+Per le esperienze di SteamVR da aggiornare per Windows Mixed Reality visori, vedere la guida all'aggiornamento [di SteamVR.](updating-your-steamvr-application-for-windows-mixed-reality.md)
 
 ### <a name="2d-universal-windows-applications"></a>Applicazioni 2D universali di Windows
 
