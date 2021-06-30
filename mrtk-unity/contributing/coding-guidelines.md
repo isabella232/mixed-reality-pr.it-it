@@ -1,16 +1,16 @@
 ---
-title: Linee guida per la codifica
-description: principi e convenzioni di codifica da seguire quando si contribuisce a MRTK.
+title: Linee guida sulla codifica
+description: Principi e convenzioni di codifica da seguire quando si contribuisce a MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, C#,
-ms.openlocfilehash: 8887e248bd550bdd7a59f19c16df1ec3647ceff7
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 122c51962c55796c037302c7b79cc4df643a47b7
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145242"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121439"
 ---
 # <a name="coding-guidelines"></a>Linee guida sulla codifica
 
@@ -30,7 +30,7 @@ Mantenere semplice la logica del codice. Si noti che non si tratta di un'istruzi
 
 ### <a name="produce-consistent-readable-code"></a>Produrre codice coerente e leggibile
 
-La leggibilità del codice è correlata alle basse percentuali di difetti. Cercare di creare codice di facile lettura. Cercare di creare codice con logica semplice e di usare nuovamente i componenti esistenti, in quanto consente anche di garantire la correttezza.
+La leggibilità del codice è correlata alle basse percentuali di difetti. Cercare di creare codice di facile lettura. Cercare di creare codice con logica semplice e di ri-usare i componenti esistenti perché consente anche di garantire la correttezza.
 
 Tutti i dettagli del codice prodotto sono importanti, dal dettaglio più semplice della correttezza allo stile e alla formattazione coerenti. Mantenere lo stile di codifica coerente con ciò che esiste già, anche se non corrisponde alle proprie preferenze. Ciò aumenta la leggibilità della codebase complessiva.
 
@@ -52,17 +52,17 @@ Ogni volta che si aggiunge un metodo pubblico, un campo, una proprietà, questo 
 
 I nuovi membri pubblici devono essere esaminati con attenzione. Qualsiasi campo pubblico dovrà essere gestito in futuro. Tenere presente che se il tipo di un campo pubblico (o di un campo privato serializzato) cambia o viene rimosso da un oggetto MonoBehaviour, ciò potrebbe interrompere altri utenti. Il campo dovrà prima essere deprecato per una versione e il codice per eseguire la migrazione delle modifiche per gli utenti che hanno assunto dipendenze dovrà essere fornito.
 
-### <a name="prioritize-writing-tests"></a>Assegnare priorità alla scrittura dei test
+### <a name="prioritize-writing-tests"></a>Assegnare priorità alla scrittura di test
 
-MRTK è un progetto della community, modificato da una vasta gamma di collaboratori. Questi collaboratori potrebbero non conoscere i dettagli della funzionalità o della correzione di bug e interrompere accidentalmente la funzionalità. [MRTK esegue test di integrazione continua](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_build?definitionId=16) prima di completare ogni richiesta pull. Le modifiche che interrompno i test non possono essere archiviate. Pertanto, i test sono il modo migliore per assicurarsi che altri utenti non interrompano la funzionalità.
+MRTK è un progetto della community, modificato da una vasta gamma di collaboratori. Questi collaboratori potrebbero non conoscere i dettagli della correzione/funzionalità dei bug e interrompere accidentalmente la funzionalità. [MRTK esegue test di integrazione continua](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_build?definitionId=16) prima di completare ogni richiesta pull. Le modifiche che interrompno i test non possono essere archiviate. Pertanto, i test sono il modo migliore per garantire che altri utenti non interrompano la funzionalità.
 
-Quando si corregge un bug, scrivere un test per assicurarsi che non regredi in futuro. Se si aggiunge una funzionalità, scrivere test che verificano il funzionamento della funzionalità. Questa operazione è necessaria per tutte le funzionalità dell'esperienza utente, ad eccezione delle funzionalità sperimentali.
+Quando si corregge un bug, scrivere un test per assicurarsi che non regredisca in futuro. Se si aggiunge una funzionalità, scrivere test che verificano il funzionamento della funzionalità. Questa operazione è necessaria per tutte le funzionalità dell'esperienza utente, ad eccezione delle funzionalità sperimentali.
 
-## <a name="c-coding-conventions"></a>Convenzioni di scrittura del codice C#
+## <a name="c-coding-conventions"></a>Convenzioni di codifica C#
 
-### <a name="script-license-information-headers"></a>Intestazioni delle informazioni sulle licenze di script
+### <a name="script-license-information-headers"></a>Intestazioni delle informazioni sulla licenza di script
 
-Tutti i dipendenti Microsoft che contribuiscono a nuovi file devono aggiungere l'intestazione License standard seguente all'inizio di tutti i nuovi file, esattamente come illustrato di seguito:
+Tutti i dipendenti Microsoft che contribuiscono a nuovi file devono aggiungere l'intestazione Licenza standard seguente nella parte superiore di tutti i nuovi file, esattamente come illustrato di seguito:
 
 ```c#
 // Copyright (c) Microsoft Corporation.
@@ -86,13 +86,13 @@ public struct Controller
 }
 ```
 
-Ciò garantisce che la documentazione venga generata e diffusa correttamente per tutte le classi, i metodi e le proprietà.
+In questo modo la documentazione viene generata e diffusa correttamente per tutte le classi, i metodi e le proprietà.
 
-Tutti i file di script inviati senza tag di riepilogo adeguati verranno rifiutati.
+Tutti i file script inviati senza tag di riepilogo adeguati verranno rifiutati.
 
 ### <a name="mrtk-namespace-rules"></a>Regole dello spazio dei nomi MRTK
 
-Mixed Reality Toolkit usa un modello di spazio dei nomi basato su funzionalità, in cui tutti gli spazi dei nomi di base iniziano con "Microsoft.MixedReality.Toolkit". In generale, non è necessario specificare il livello del toolkit (ad esempio, Core, Provider, Servizi) negli spazi dei nomi.
+Mixed Reality Toolkit usa un modello di spazio dei nomi basato su funzionalità, in cui tutti gli spazi dei nomi di base iniziano con "Microsoft.MixedReality.Toolkit". In generale, non è necessario specificare il livello del toolkit (ad esempio Core, Provider, Servizi) negli spazi dei nomi.
 
 Gli spazi dei nomi attualmente definiti sono:
 
@@ -105,15 +105,15 @@ Gli spazi dei nomi attualmente definiti sono:
 - Microsoft.MixedReality.Toolkit.Teleport
 - Microsoft.MixedReality.Toolkit.Utilities
 
-Per gli spazi dei nomi con una grande quantità di tipi, è accettabile creare un numero limitato di sotto-spazi dei nomi per facilitare l'ambito di utilizzo.
+Per gli spazi dei nomi con una grande quantità di tipi, è accettabile creare un numero limitato di sotto-spazi dei nomi per facilitare l'utilizzo dell'ambito.
 
 Se si omette lo spazio dei nomi per un'interfaccia, una classe o un tipo di dati, la modifica verrà bloccata.
 
 ### <a name="adding-new-monobehaviour-scripts"></a>Aggiunta di nuovi script MonoBehaviour
 
-Quando si aggiungono nuovi script MonoBehaviour con una richiesta pull, assicurarsi che [`AddComponentMenu`](https://docs.unity3d.com/ScriptReference/AddComponentMenu.html) l'attributo sia applicato a tutti i file applicabili. Ciò garantisce che il componente sia facilmente individuabile nell'editor sotto il *pulsante Aggiungi* componente. Il flag di attributo non è necessario se il componente non può essere visualizzato nell'editor, ad esempio una classe astratta.
+Quando si aggiungono nuovi script MonoBehaviour con una richiesta pull, assicurarsi che [`AddComponentMenu`](https://docs.unity3d.com/ScriptReference/AddComponentMenu.html) l'attributo sia applicato a tutti i file applicabili. In questo modo il componente è facilmente individuabile nell'editor sotto il *pulsante Aggiungi* componente. Il flag di attributo non è necessario se il componente non può essere visualizzato nell'editor, ad esempio una classe astratta.
 
-Nell'esempio seguente il *pacchetto deve* essere compilato con il percorso del pacchetto del componente. Se si inserisce un elemento *nella cartella MRTK/SDK,* il pacchetto sarà *SDK.*
+Nell'esempio seguente il *pacchetto* deve essere compilato con il percorso del pacchetto del componente. Se si inserisce un *elemento nella cartella MRTK/SDK,* il pacchetto sarà *SDK.*
 
 ```c#
 [AddComponentMenu("Scripts/MRTK/{Package here}/MyNewComponent")]
@@ -122,7 +122,7 @@ public class MyNewComponent : MonoBehaviour
 
 ### <a name="adding-new-unity-inspector-scripts"></a>Aggiunta di nuovi script di controllo unity
 
-In generale, provare a evitare di creare script di controllo personalizzati per i componenti MRTK. Aggiunge ulteriore sovraccarico e gestione della codebase che può essere gestita dal motore unity.
+In generale, provare a evitare di creare script di controllo personalizzati per i componenti MRTK. Aggiunge un sovraccarico aggiuntivo e la gestione della codebase che può essere gestita dal motore unity.
 
 Se è necessaria una classe inspector, provare a usare . [`DrawDefaultInspector()`](https://docs.unity3d.com/ScriptReference/Editor.DrawDefaultInspector.html) Questo semplifica di nuovo la classe inspector e lascia gran parte del lavoro a Unity.
 
@@ -184,7 +184,7 @@ Provare inoltre a decorare la classe inspector personalizzata con un [`CanEditMu
 
 ### <a name="adding-new-scriptableobjects"></a>Aggiunta di nuovi oggetti ScriptableObject
 
-Quando si aggiungono nuovi script ScriptableObject, assicurarsi che [`CreateAssetMenu`](https://docs.unity3d.com/ScriptReference/CreateAssetMenu.html) l'attributo sia applicato a tutti i file applicabili. Ciò garantisce che il componente sia facilmente individuabile nell'editor tramite i menu di creazione dell'asset. Il flag dell'attributo non è necessario se il componente non può essere visualizzato nell'editor, ad esempio una classe astratta.
+Quando si aggiungono nuovi script ScriptableObject, assicurarsi che [`CreateAssetMenu`](https://docs.unity3d.com/ScriptReference/CreateAssetMenu.html) l'attributo sia applicato a tutti i file applicabili. Ciò garantisce che il componente sia facilmente individuabile nell'editor tramite i menu di creazione dell'asset. Il flag di attributo non è necessario se il componente non può essere visualizzato nell'editor, ad esempio una classe astratta.
 
 Nell'esempio seguente la *sottocartella* deve essere compilata con la sottocartella MRTK, se applicabile. Se si inserisce un *elemento nella cartella MRTK/Providers,* il pacchetto sarà *Providers*. Se si inserisce un elemento nella *cartella MRTK/Core,* impostarla su "Profiles".
 
@@ -197,9 +197,9 @@ public class MyNewProfile : ScriptableObject
 
 ### <a name="logging"></a>Registrazione
 
-Quando si aggiungono nuove funzionalità o si aggiornano le funzionalità esistenti, è consigliabile aggiungere log DebugUtilities.LogVerbose a codice interessante che potrebbe essere utile per il debug futuro. C'è un compromesso tra l'aggiunta della registrazione e il rumore aggiunto e la registrazione non sufficiente (il che rende difficile la diagnosi).
+Quando si aggiungono nuove funzionalità o si aggiornano le funzionalità esistenti, è consigliabile aggiungere i log DebugUtilities.LogVerbose a codice interessante che potrebbe essere utile per il debug futuro. Esiste un compromesso tra l'aggiunta di registrazione e il rumore aggiunto e la registrazione non sufficiente (il che rende difficile la diagnosi).
 
-Un esempio interessante in cui la registrazione è utile (insieme al payload interessante):
+Un esempio interessante in cui la registrazione è utile (insieme a payload interessante):
 
 ```c#
 DebugUtilities.LogVerboseFormat("RaiseSourceDetected: Source ID: {0}, Source Type: {1}", source.SourceId, source.SourceType);
@@ -397,7 +397,7 @@ public class MyClass
 
 ### <a name="initialize-enums"></a>Inizializzare enumerazioni
 
-Per assicurarsi che tutte le enumerazioni vengano inizializzate correttamente a partire da 0, .NET offre un collegamento ordinato per inizializzare automaticamente l'enumerazione aggiungendo semplicemente il primo valore (iniziale). (ad esempio, il valore 1 = 0 I valori rimanenti non sono obbligatori)
+Per assicurarsi che tutte le enumerazioni vengano inizializzate correttamente a partire da 0, .NET offre un collegamento ordinato per inizializzare automaticamente l'enumerazione aggiungendo semplicemente il primo valore (iniziale). (ad esempio, il valore 1 = 0 i valori rimanenti non sono obbligatori)
 
 #### <a name="dont"></a>Cosa non fare
 
@@ -423,7 +423,7 @@ public enum ValueType
 
 ### <a name="order-enums-for-appropriate-extension"></a>Ordinare le enumerazioni per l'estensione appropriata
 
-È fondamentale che, se è probabile che un'enumerazione sia estesa in futuro, per ordinare le impostazioni predefinite all'inizio dell'enumerazione, questo garantisce che gli indici Enum non siano interessati dalle nuove aggiunte.
+È fondamentale che, se è probabile che un'enumerazione sia estesa in futuro, per ordinare i valori predefiniti all'inizio dell'enumerazione, ciò garantisce che gli indici Enum non siano interessati dalle nuove aggiunte.
 
 #### <a name="dont"></a>Cosa non fare
 
@@ -507,7 +507,7 @@ Quando si generano percorsi di file di stringa e in particolare si scrivono perc
 1. Usare le API di C# [ `Path` quando](/dotnet/api/system.io.path?preserve-view=true&view=netframework-4.8) possibile, ad esempio `Path.Combine` o `Path.GetFullPath` .
 1. Usare / o [`Path.DirectorySeparatorChar`](/dotnet/api/system.io.path.directoryseparatorchar?preserve-view=true&view=netframework-4.8) invece di \ o \\ \\ .
 
-Questi passaggi garantiscono che MRTK funzioni sia nei sistemi windows che in sistemi basati su Unix.
+Questi passaggi assicurano il funzionamento di MRTK nei sistemi basati su Windows e Unix.
 
 ### <a name="dont"></a>Cosa non fare
 
@@ -532,14 +532,14 @@ string cleanedFilePath = Path.GetFullPath(unknownSourceFilePath);
 
 ## <a name="best-practices-including-unity-recommendations"></a>Procedure consigliate, incluse le raccomandazioni di Unity
 
-Alcune delle piattaforme di destinazione di questo progetto richiedono di prendere in considerazione le prestazioni. A questo scopo, prestare sempre attenzione quando si alloca memoria nel codice chiamato di frequente in algoritmi o cicli di aggiornamento ristretti.
+Alcune delle piattaforme di destinazione di questo progetto richiedono di prendere in considerazione le prestazioni. A questo scopo, prestare sempre attenzione quando si alloca memoria nel codice chiamato di frequente in cicli di aggiornamento o algoritmi rigidi.
 
 ### <a name="encapsulation"></a>Incapsulamento
 
 Usare sempre campi privati e proprietà pubbliche se l'accesso al campo è necessario dall'esterno della classe o dello struct.  Assicurarsi di individuare il campo privato e la proprietà pubblica. In questo modo è più semplice vedere a colpo d'occhio il contenuto della proprietà e che il campo è modificabile tramite script.
 
 > [!NOTE]
-> L'unica eccezione è per le strutture di dati che richiedono che i campi siano serializzati da , dove una classe di dati deve avere tutti i campi pubblici per il funzionamento della `JsonUtility` serializzazione.
+> L'unica eccezione è per le strutture di dati che richiedono che i campi siano serializzati da , dove una classe di dati deve avere tutti i campi pubblici per il funzionamento `JsonUtility` della serializzazione.
 
 #### <a name="dont"></a>Cosa non fare
 
@@ -675,7 +675,7 @@ public class MyClass
 
 ### <a name="use-platform-dependent-compilation-to-ensure-the-toolkit-wont-break-the-build-on-another-platform"></a>Usare [la compilazione dipendente dalla](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) piattaforma per assicurarsi che il Toolkit non interrompa la compilazione in un'altra piattaforma
 
-- Usare per usare API non Unity specifiche della `WINDOWS_UWP` UWP. Questo impedirà loro di provare a eseguire nell'editor o in piattaforme non supportate. È equivalente a `UNITY_WSA && !UNITY_EDITOR` e deve essere usato a favore di .
+- Usare per usare API non Unity specifiche della `WINDOWS_UWP` UWP. Ciò impedirà loro di provare a eseguire nell'editor o in piattaforme non supportate. È equivalente a `UNITY_WSA && !UNITY_EDITOR` e deve essere usato a favore di .
 - Usare `UNITY_WSA` per usare api Unity specifiche della UWP, ad esempio lo spazio dei nomi `UnityEngine.XR.WSA` . Verrà eseguito nell'editor quando la piattaforma è impostata su UWP, nonché nelle app UWP compilate.
 
 Questo grafico consente di decidere quale usare, a seconda dei casi d'uso `#if` e delle impostazioni di compilazione previste.
@@ -691,14 +691,14 @@ Questo grafico consente di decidere quale usare, a seconda dei casi d'uso `#if` 
 
 ### <a name="prefer-datetimeutcnow-over-datetimenow"></a>Preferisci DateTime.UtcNow rispetto a DateTime.Now
 
-DateTime.UtcNow è più veloce di DateTime.Now. Nelle indagini sulle prestazioni precedenti è stato rilevato che l'uso di DateTime.Now aggiunge un overhead significativo soprattutto se usato nel ciclo Update(). [Altri hanno raggiunto lo stesso problema.](https://stackoverflow.com/questions/1561791/optimizing-alternatives-to-datetime-now)
+DateTime.UtcNow è più veloce di DateTime.Now. Nelle analisi delle prestazioni precedenti è stato rilevato che l'uso di DateTime.Now aggiunge un sovraccarico significativo, soprattutto se usato nel ciclo Update(). [Altri hanno raggiunto lo stesso problema.](https://stackoverflow.com/questions/1561791/optimizing-alternatives-to-datetime-now)
 
-Preferire l'uso di DateTime.UtcNow a meno che non siano effettivamente necessari gli orari localizzati (un motivo legittimo potrebbe essere che si vuole visualizzare l'ora corrente nel fuso orario dell'utente). Se si hanno a che fare con orari relativi(ad esempio, il delta tra l'ultimo aggiornamento e ora), è meglio usare DateTime.UtcNow per evitare il sovraccarico delle conversioni del fuso orario.
+Preferire l'uso di DateTime.UtcNow a meno che non siano effettivamente necessarie le ore localizzate (un motivo legittimo potrebbe essere la necessità di visualizzare l'ora corrente nel fuso orario dell'utente). Se si hanno a che fare con orari relativi ,ad esempio il delta tra l'ultimo aggiornamento e il momento corrente, è meglio usare DateTime.UtcNow per evitare il sovraccarico delle conversioni del fuso orario.
 
-## <a name="powershell-coding-conventions"></a>Convenzioni di codifica di PowerShell
+## <a name="powershell-coding-conventions"></a>Convenzioni di scrittura del codice di PowerShell
 
 Un subset della codebase MRTK usa PowerShell per l'infrastruttura della pipeline e vari script e utilità. Il nuovo codice di PowerShell deve seguire lo [stile PoshCode](https://poshcode.gitbooks.io/powershell-practice-and-style/).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
- [Convenzioni di codifica C# da MSDN](/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)
+ [Convenzioni di scrittura del codice C# da MSDN](/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)

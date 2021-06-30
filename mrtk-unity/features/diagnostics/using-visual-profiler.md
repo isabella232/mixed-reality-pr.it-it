@@ -1,16 +1,16 @@
 ---
-title: Uso di Visual Profiler
+title: Uso del profiler visivo
 description: documentazione per l'uso di Visual Profiler in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 4830615fd55a39614dd775dd7628938ee3af1c3b
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: c3238aed60f6bbf824c74c034ddf506f49f436c7
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143710"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121649"
 ---
 # <a name="using-the-visual-profiler"></a>Uso del profiler visivo
 
@@ -47,38 +47,38 @@ La piattaforma e la configurazione hardware specifiche avranno un ruolo signific
 - Windows Mixed Reality Ultra: 90
 
 > [!NOTE]
-> A causa della limitazione della frequenza dei fotogrammi in [HoloLens](/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens)quando mrC predefinito è attivo, il profiler visivo si nasconde mentre vengono acquisiti video e foto. Questa impostazione può essere sostituita nel profilo di sistema di diagnostica.
+> A causa della limitazione della frequenza dei fotogrammi in [HoloLens](/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens)quando mrC predefinito è attivo, il profiler visivo si nasconde mentre vengono acquisiti video e foto. Questa impostazione può essere sostituita nel profilo del sistema di diagnostica.
 
 ### <a name="frame-time"></a>Durata fotogramma
 
-A destra della frequenza dei fotogrammi si trova il tempo di fotogramma, in millisecondi, impiegato per la CPU. Per ottenere la frequenza dei fotogrammi di destinazione indicata in precedenza, un'applicazione può impiegare la quantità di tempo seguente per ogni fotogramma:
+A destra della frequenza dei fotogrammi si trova il tempo in millisecondi impiegato per la CPU. Per ottenere la frequenza dei fotogrammi di destinazione indicata in precedenza, un'applicazione può impiegare la quantità di tempo seguente per fotogramma:
 
 - 60 fps: 16,6 ms
 - 90 fps: 11,1 ms
 
-L'ora della GPU è pianificata per essere aggiunta in una versione futura.
+È previsto che l'ora della GPU verrà aggiunta in una versione futura.
 
-### <a name="frame-graph"></a>Grafico a cornice
+### <a name="frame-graph"></a>Grafico dei frame
 
-Il grafico dei frame fornisce una visualizzazione grafica della cronologia della frequenza dei fotogrammi dell'applicazione.
+Il grafico dei frame offre una visualizzazione grafica della cronologia della frequenza dei fotogrammi dell'applicazione.
 
 ![Grafico dei fotogrammi persi di Visual Profiler](../images/diagnostics/VisualProfilerMissedFrames.png)
 
-Quando si usa l'applicazione, cercare i fotogrammi persi che indicano che l'applicazione non sta toccando la frequenza dei fotogrammi di destinazione e potrebbe essere necessaria un'operazione di ottimizzazione.
+Quando si usa l'applicazione, cercare i fotogrammi persi che indicano che l'applicazione non sta per raggiungere la frequenza dei fotogrammi di destinazione e potrebbe richiedere operazioni di ottimizzazione.
 
 ### <a name="memory-utilization"></a>Utilizzo della memoria
 
-La visualizzazione dell'utilizzo della memoria consente di comprendere facilmente in che modo la visualizzazione corrente influisce sul consumo di memoria di un'applicazione.
+La visualizzazione dell'utilizzo della memoria consente di comprendere facilmente l'impatto della visualizzazione corrente sul consumo di memoria di un'applicazione.
 
 ![Grafico della memoria di Visual Profiler](../images/diagnostics/VisualProfilerMemory.png)
 
-Quando si usa l'applicazione, cercare l'utilizzo totale della memoria. Gli indicatori chiave includono la prossimità del limite di memoria e i rapidi cambiamenti nell'utilizzo.
+Quando si usa l'applicazione, cercare l'utilizzo totale della memoria. Gli indicatori chiave includono il prossimità del limite di memoria e modifiche rapide nell'utilizzo.
 
 ## <a name="customizing-the-visual-profiler"></a>Personalizzazione del profiler visivo
 
-L'aspetto e il comportamento di Visual Profiler sono personalizzabili tramite il profilo di sistema di diagnostica. Per altre [informazioni, vedere Configurazione del sistema](configuring-diagnostics.md) di diagnostica.
+L'aspetto e il comportamento di Visual Profiler sono personalizzabili tramite il profilo del sistema di diagnostica. Per altre [informazioni, vedere Configurazione del sistema](configuring-diagnostics.md) di diagnostica.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Sistema di diagnostica](diagnostics-system-getting-started.md)
 - [Configurazione del sistema di diagnostica](configuring-diagnostics.md)

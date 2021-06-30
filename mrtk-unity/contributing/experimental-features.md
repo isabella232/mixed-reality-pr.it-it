@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 705b7ab96d22c5c94c04476de30e5524095c1ce2
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 341ba0ee3e5900cc52f1ef715232f49064102309
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144786"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121379"
 ---
 # <a name="experimental-features"></a>Funzionalità sperimentali
 
@@ -46,7 +46,7 @@ Tenere le scene in una cartella della scena nella parte superiore: `MRTK/Example
 
 ### <a name="experimental-code-should-be-in-a-special-namespace"></a>Il codice sperimentale deve essere in uno spazio dei nomi speciale
 
-Assicurarsi che il codice sperimentale si trova in uno spazio dei nomi sperimentale corrispondente alla posizione non sperimentale. Ad esempio, se il componente fa parte di risolutori in `Microsoft.MixedReality.Toolkit.Utilities.Solvers` , il relativo spazio dei nomi deve essere `Microsoft.MixedReality.Toolkit.Experimental.Utilities.Solvers` .
+Assicurarsi che il codice sperimentale si trova in uno spazio dei nomi sperimentale corrispondente alla posizione non sperimentale. Ad esempio, se il componente fa parte dei risolutori in `Microsoft.MixedReality.Toolkit.Utilities.Solvers` , il relativo spazio dei nomi deve essere `Microsoft.MixedReality.Toolkit.Experimental.Utilities.Solvers` .
 
 Per [un esempio, vedere](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/4532) questa richiesta pull.
 
@@ -84,21 +84,21 @@ Seguire questa procedura per aggiungere la documentazione per la funzionalità s
 Anche se la modifica di MRTK potrebbe far funzionare l'esperimento, potrebbe influire su altre persone in modi non previsti.
 Eventuali regressioni apportate al codice principale di MRTK comportano il ripristino della richiesta pull.
 
-L'obiettivo è avere zero modifiche nelle cartelle diverse da quelle sperimentali. Ecco un elenco di cartelle che possono avere modifiche sperimentali:
+Mirare a non apportare modifiche alle cartelle diverse da quelle sperimentali. Ecco un elenco di cartelle che possono avere modifiche sperimentali:
 
 - MRTK/SDK/Sperimentale
 - MRTK/SDK/Inspectors/Experimental
 - MRTK/Examples/Experimental
 
-Le modifiche all'esterno di queste cartelle devono essere considerate con attenzione. Se la funzionalità sperimentale deve includere modifiche al codice principale MRTK, provare a suddividere le modifiche MRTK in una richiesta pull separata che include test e documentazione.
+Le modifiche all'esterno di queste cartelle devono essere trattate con attenzione. Se la funzionalità sperimentale deve includere modifiche al codice principale di MRTK, valuta la possibilità di suddividere le modifiche di MRTK in una richiesta pull separata che include test e documentazione.
 
 ### <a name="using-your-experimental-feature-should-not-impact-peoples-ability-to-use-core-controls"></a>L'uso della funzionalità sperimentale non dovrebbe influire sulla capacità degli utenti di usare i controlli di base
 
-La maggior parte delle persone usa componenti principali dell'esperienza utente come il pulsante ManipulationHandler e Interactable molto frequentemente. È probabile che non usino la funzionalità sperimentale se impedisce loro di usare i pulsanti.
+La maggior parte delle persone usa componenti principali dell'esperienza utente come il pulsante, ManipulationHandler e Interactable molto spesso. Probabilmente non useranno la funzionalità sperimentale se impedisce loro di usare i pulsanti.
 
-L'uso del componente non deve interrompere pulsanti, ManipulationHandler, BoundingBox o interactable.
+L'uso del componente non deve interrompere i pulsanti, ManipulationHandler, BoundingBox o interagire.
 
-In questa richiesta pull [ScrollableObjectCollection,](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6001)ad esempio, l'aggiunta di un oggetto ScrollableObjectCollection ha causato la non possibilità di usare i prefab del pulsante HoloLens. Anche se questo non è stato causato da un bug nella richiesta pull (ma piuttosto ha esposto un bug esistente), ha impedito l'accesso alla richiesta pull.
+Ad esempio, in questa richiesta pull [ScrollableObjectCollection,](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6001)l'aggiunta di un oggetto ScrollableObjectCollection ha causato la non possibilità di usare i prefab del pulsante HoloLens. Anche se questo non è stato causato da un bug nella richiesta pull (ma piuttosto da un bug esistente), ha impedito l'accesso alla richiesta pull.
 
 ### <a name="provide-an-example-scene-that-demonstrates-how-to-use-the-feature"></a>Fornire una scena di esempio che illustra come usare la funzionalità
 
@@ -106,9 +106,9 @@ Gli utenti devono vedere come usare la funzionalità e come testarla.
 
 Fornire un esempio in MRTK/Examples/Experimental/YOUR_FEATURE
 
-### <a name="minimize-user-visible-flaws-in-experimental-features"></a>Ridurre al minimo i difetti visibili dell'utente nelle funzionalità sperimentali
+### <a name="minimize-user-visible-flaws-in-experimental-features"></a>Ridurre al minimo i difetti visibili all'utente nelle funzionalità sperimentali
 
-Altri utenti non useranno la funzionalità sperimentale se non funziona, non si diplondono a una funzionalità.
+Altri utenti non useranno la funzionalità sperimentale se non funziona, non rilasseranno a una funzionalità.
 
 Testare la scena di esempio nella piattaforma di destinazione, assicurarsi che funzioni come previsto. Assicurarsi che la funzionalità funzioni anche nell'editor, in modo che gli utenti possano eseguire rapidamente l'iterazione e visualizzare la funzionalità anche se non hanno la piattaforma di destinazione.
 

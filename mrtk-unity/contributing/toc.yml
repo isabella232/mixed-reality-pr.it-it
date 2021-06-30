@@ -2,7 +2,7 @@
   href: authors.md
 - name: Panoramica dei contributi
   href: contributing.md
-- name: Linee guida per la codifica
+- name: Linee guida sulla codifica
   href: coding-guidelines.md
 - name: Scrittura ed esecuzione di test
   href: unit-tests.md
@@ -12,5 +12,5 @@
   href: pull-requests.md
 - name: Funzionalità sperimentali
   href: experimental-features.md
-- name: Modifiche di rilievo
+- name: Modifiche che causano un'interruzione
   href: breaking-changes.md

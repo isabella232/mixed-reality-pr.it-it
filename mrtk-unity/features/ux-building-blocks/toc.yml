@@ -1,8 +1,8 @@
 - name: Barra dell'app
   href: app-bar.md
-- name: Riquadro
+- name: Rettangolo di selezione
   href: bounding-box.md
-- name: Controllo Bounds
+- name: Controllo Limiti
   href: bounds-control.md
 - name: Pulsante
   href: button.md
@@ -12,17 +12,17 @@
   href: dialog.md
 - name: Abitare
   href: dwell.md
-- name: Visualizzazione punta del dito
+- name: Visualizzazione della punta delle dita
   href: fingertip-visualization.md
-- name: Hand Coach
+- name: Coach mano
   href: hand-coach.md
-- name: Menu mano
+- name: Menu a mano
   href: hand-menu.md
-- name: Con interazione
+- name: Interagibile
   href: interactable.md
 - name: Gestore di manipolazione
   href: manipulation-handler.md
-- name: Menu vicino
+- name: Menu adiacente
   href: near-menu.md
 - name: Raccolta di oggetti
   href: object-collection.md
@@ -30,7 +30,7 @@
   href: object-manipulator.md
 - name: Indicatore di stato
   href: progress-indicator.md
-- name: Raccolta di oggetti scrolling
+- name: Scorrimento della raccolta di oggetti
   href: scrolling-object-collection.md
 - name: Slate
   href: slate.md
@@ -44,7 +44,7 @@
   href: tooltip.md
 - name: Prefab di testo
   href: text-prefab.md
-- name: Temi degli oggetti visivi
+- name: Temi visivi
   href: visual-themes.md
 - name: Risolutori
   href: solvers/toc.yml

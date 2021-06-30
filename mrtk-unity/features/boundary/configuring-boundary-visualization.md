@@ -1,32 +1,32 @@
 ---
 title: Configurazione della visualizzazione dei limiti
-description: Dettagli per configurare il sistema boundary in MRTK
+description: Dettagli per configurare il sistema di limiti in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, sistema di limiti,
-ms.openlocfilehash: 36717493107b129a7200dd3f912bcbdc3337b9a1
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 0f1a9edd9f9a31e7ba20f630406b299909a4864c
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144492"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121249"
 ---
 # <a name="configuring-the-boundary-visualization"></a>Configurazione della visualizzazione dei limiti
 
-Profilo *di visualizzazione dei limiti* offre opzioni per la configurazione dell'aspetto visivo e di altri parametri correlati per il sistema Boundary. Le visualizzazioni dei limiti vengono collegate all'oggetto Playspace di realtà mista nella scena e teletrasportate con l'utente.
+Il *profilo di visualizzazione dei* limiti offre opzioni per la configurazione dell'aspetto visivo e di altri parametri correlati per il sistema di limiti. Le visualizzazioni dei limiti vengono collegate all'oggetto Playspace di realtà mista nella scena e teletrasportate con l'utente.
 
 ## <a name="general-settings"></a>Impostazioni generali
 
-![Impostazioni generali per la visualizzazione dei limiti](../images/boundary/BoundaryVisualizationGeneralSettings.png)
+![Impostazioni generali di visualizzazione dei limiti](../images/boundary/BoundaryVisualizationGeneralSettings.png)
 
 ### <a name="boundary-height"></a>Altezza limite
 
-L'altezza del limite indica la distanza sopra il piano terra in cui deve essere eseguito il rendering del controsoffitto limite. Il valore predefinito è 3 metri.
+L'altezza limite indica la distanza sopra il piano del piano in corrispondenza della quale deve essere eseguito il rendering del limite massimo. Il valore predefinito è 3 metri.
 
 ## <a name="floor-settings"></a>Impostazioni del piano
 
-![Impostazioni del piano di visualizzazione dei limiti](../images/boundary/BoundaryVisualizationFloorSettings.png)
+![Impostazioni del piano per la visualizzazione dei limiti](../images/boundary/BoundaryVisualizationFloorSettings.png)
 
 **Mostra**
 
@@ -34,15 +34,15 @@ Indica se un piano piano deve essere creato e aggiunto alla scena. Il valore pre
 
 **Materiale**
 
-Indica il materiale da usare durante la creazione del piano terra.
+Indica il materiale da usare durante la creazione del piano piano.
 
 **Scalabilità**
 
-Indica le dimensioni, in metri, del piano da creare. La scala predefinita è un quadrato di 3 metri x 3 metri.
+Indica le dimensioni, in metri, del piano piano da creare. La scala predefinita è 3 metri x 3 metri quadrati.
 
 **Livello fisico**
 
-Livello su cui deve essere impostato il piano terra. Il valore predefinito è *Livello* predefinito.
+Livello su cui deve essere impostato il piano piano. Il valore predefinito è *Il livello* predefinito.
 
 ## <a name="play-area-settings"></a>Impostazioni dell'area di riproduzione
 
@@ -66,7 +66,7 @@ Livello su cui deve essere impostata l'area di riproduzione. Il valore predefini
 
 **Mostra**
 
-Indica se il contorno dell'area tracciata deve essere creato e aggiunto alla scena. Il valore predefinito è true.
+Indica se la struttura dell'area tracciata deve essere creata e aggiunta alla scena. Il valore predefinito è true.
 
 **Materiale**
 
@@ -93,28 +93,28 @@ Indica il materiale da usare durante la creazione dei piani delle pareti limite.
 Livello su cui devono essere impostate le pareti limite. Il valore predefinito è *Ignora raycast.*
 
 > [!NOTE]
-> L'impostazione del componente della parete limite su un livello fisico diverso da *Ignora Raycast* può impedire agli utenti di interagire con gli oggetti all'interno della scena.
+> L'impostazione del componente della barriera limite su un livello fisico diverso da *Ignora Raycast* può impedire agli utenti di interagire con gli oggetti all'interno della scena.
 
-## <a name="boundary-ceiling-settings"></a>Impostazioni del limite massimo
+## <a name="boundary-ceiling-settings"></a>Impostazioni limite massimo
 
-![Impostazioni limite limite visualizzazione limiti](../images/boundary/BoundaryVisualizationCeilingSettings.png)
+![Boundary Visualization Boundary Ceiling Settings](../images/boundary/BoundaryVisualizationCeilingSettings.png)
 
 **Mostra**
 
-Indica se un piano limite deve essere creato e aggiunto alla scena. Il valore predefinito è false.
+Indica se un piano limite del limite deve essere creato e aggiunto alla scena. Il valore predefinito è false.
 
 **Materiale**
 
-Indica il materiale che deve essere usato durante la creazione del piano del controsoffitto limite.
+Indica il materiale da usare durante la creazione del piano limite del limite.
 
 **Livello fisico**
 
-Livello su cui devono essere impostati i limiti. Il valore predefinito è *Il livello Ignora Raycast.*
+Livello su cui devono essere impostate le pareti limite. Il valore predefinito è *Ignora raycast.*
 
 > [!NOTE]
 > L'impostazione del componente limite massimo su un livello fisico diverso da *Ignora Raycast* può impedire agli utenti di interagire con gli oggetti all'interno della scena.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
-- [Documentazione dell'API Boundary](xref:Microsoft.MixedReality.Toolkit.Boundary)
+- [Documentazione dell'API Limite](xref:Microsoft.MixedReality.Toolkit.Boundary)
 - [Sistema di limiti](boundary-system-getting-started.md)

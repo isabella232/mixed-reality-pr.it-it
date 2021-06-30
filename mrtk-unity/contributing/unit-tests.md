@@ -1,16 +1,16 @@
 ---
 title: Unit test
-description: UnitTest per verificare l'autenticità di MRTK.
+description: Unit test per verificare l'affidabilità di MRTK.
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, UnitTest,
-ms.openlocfilehash: 76d246634cf190787fcfd78c849a0bd6da3a2135
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: a915b005a69de1864a5674bbb0363f18d1c74b19
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144710"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121349"
 ---
 # <a name="writing-and-running-tests-in-mrtk"></a>Scrittura ed esecuzione di test in MRTK
 
@@ -32,7 +32,7 @@ Attualmente i test della modalità di riproduzione devono essere eseguiti in Uni
 
 ### <a name="unity-editor"></a>Editor Unity
 
-Il [Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) Unity è disponibile in Finestra Generale Test Runner e mostrerà tutti i test disponibili in modalità di riproduzione e modifica  >    >   di MRTK.
+[L'Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) Unity è disponibile in Finestra Generale Test Runner e mostrerà tutti i test disponibili in modalità di riproduzione e modifica  >    >   di MRTK.
 
 ### <a name="command-line"></a>Riga di comando
 
@@ -44,7 +44,7 @@ Eseguire i test sul progetto che si trova in H:\mrtk.dev, con Unity 2018.4 (ad e
 .\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe"
 ```
 
-Eseguire i test sul progetto che si trova in H:\mrtk.dev, con Unity 2018.4, per ottenere i risultati in C:\playmode_test_out
+Eseguire i test sul progetto che si trova in H:\mrtk.dev, con Unity 2018.4, per visualizzare i risultati in C:\playmode_test_out
 
 ```ps
 .\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe" -outFolder "C:\playmode_test_out\"
@@ -58,7 +58,7 @@ Eseguire i test sul progetto che si trova in H:\mrtk.dev, con Unity 2018.4, per 
 
 ### <a name="pull-request-validation"></a>Convalida delle richieste pull
 
-L'interfaccia utente di MRTK compila MRTK in tutte le configurazioni ed esegue tutti i test in modalità di modifica e riproduzione. L'interfaccia utente continua può essere attivata pubblicando un commento nella richiesta pull di GitHub `/azp run mrtk_pr` se l'utente dispone di diritti sufficienti. Le esecuzioni ci sono visibili nella scheda "controlli" della richiesta pull.
+L'interfaccia utente di MRTK compila MRTK in tutte le configurazioni ed esegue tutti i test in modalità di modifica e riproduzione. L'cid può essere attivata pubblicando un commento nella richiesta pull di GitHub `/azp run mrtk_pr` se l'utente dispone di diritti sufficienti. Le esecuzioni ci sono visibili nella scheda "controlli" della richiesta pull.
 
 Solo dopo che tutti i test sono stati superati correttamente, la richiesta pull può essere unita in main.
 
@@ -121,12 +121,12 @@ Esistono due tipi di test che è possibile aggiungere per il nuovo codice
 
 I test della modalità di riproduzione MRTK hanno la possibilità di testare il modo in cui la nuova funzionalità risponde a diverse origini di input, ad esempio mani o occhi.
 
-I nuovi test della modalità di riproduzione possono [ereditare BasePlayModeTests](xref:Microsoft.MixedReality.Toolkit.Tests) oppure è possibile usare lo scheletro seguente.
+I nuovi test in modalità di riproduzione possono [ereditare BasePlayModeTests](xref:Microsoft.MixedReality.Toolkit.Tests) oppure è possibile usare lo scheletro seguente.
 
 Per creare un nuovo test della modalità di riproduzione:
 
-* Passare ad Assets > MRTK > Tests > PlayModeTests
-* Fare clic con il pulsante destro del mouse su Crea > test > script di test C#
+* Passare ad Asset > test > MRTK > PlayModeTests
+* Fare clic con il pulsante destro del mouse > test > script di test C#
 * Sostituire il modello predefinito con lo scheletro seguente
 
 ```c#
@@ -221,7 +221,7 @@ namespace Microsoft.MixedReality.Toolkit.Tests
 
 ### <a name="edit-mode-tests"></a>Test in modalità di modifica
 
-I test in modalità di modifica vengono eseguiti in modalità di modifica di Unity e possono essere aggiunti nella cartella EditModeTests dei test **MRTK** nel  >    >   repo Mixed Reality Toolkit.
+I test in modalità di modifica vengono eseguiti in modalità di modifica di Unity e possono essere aggiunti nella cartella  >    >  **EditModeTests** dei test MRTK nel repo di Mixed Reality Toolkit.
 Per creare un nuovo test, è possibile usare il modello seguente:
 
 ```c#
@@ -258,7 +258,7 @@ namespace Microsoft.MixedReality.Toolkit.Input
 }
 ```
 
-Provare a assegnare un nome al test
+Provare a denominare il test
 
 ```c#
 namespace Microsoft.MixedReality.Toolkit.Tests.Input
@@ -269,36 +269,36 @@ namespace Microsoft.MixedReality.Toolkit.Tests.Input
 }
 ```
 
-Provare a inserire il test in una gerarchia di cartelle simile al file non di test corrispondente.
-Esempio:
+Valutare la possibilità di inserire il test in una gerarchia di cartelle simile al file non di test corrispondente.
+Ad esempio:
 
 ```md
 Non-Test: Assets/MRTK/Core/Utilities/InterestingUtilityClass.cs
 Test: Assets/MRTK/Tests/EditModeTests/Core/Utilities/InterestingUtilityClassTest.cs
 ```
 
-Ciò consente di verificare che sia disponibile un modo ovvio per trovare la classe di test corrispondente di ogni classe, se esiste una classe di test di questo tipo.
+In questo modo si garantisce che sia disponibile un modo chiaro per trovare la classe di test corrispondente di ogni classe, se esiste una classe di test di questo tipo.
 
-Il posizionamento dei test basati su scenario è meno definito. Se il test esegue l'esercizio del sistema di input complessivo, ad esempio, è consigliabile inserire il test in una cartella "InputSystem" nella cartella di test della modalità di modifica o di riproduzione corrispondente.
+Il posizionamento dei test basati su scenario è meno definito. Se il test esegue l'esercizio del sistema di input complessivo, ad esempio, è consigliabile inserire il test in una cartella "InputSystem" nella cartella di test corrispondente della modalità di modifica o di riproduzione.
 
 ### <a name="test-script-icons"></a>Icone dello script di test
 
-Quando si aggiunge un nuovo test, modificare lo script in modo che abbia l'icona MRTK corretta. A tale scopo, è possibile usare uno strumento MRTK semplice:
+Quando si aggiunge un nuovo test, modificare lo script in modo che abbia l'icona corretta di MRTK. A tale scopo, è possibile usare un semplice strumento MRTK:
 
 1. Passare alla voce di menu Mixed Reality Toolkit
 1. Fare clic su Utilità, quindi su Aggiorna e infine su Icone
-1. Fare clic su Test e lo updater verrà eseguito automaticamente, aggiornando tutti gli script di test senza le relative icone
+1. Fare clic su Test. Lo updater verrà eseguito automaticamente, aggiornando tutti gli script di test senza le relative icone
 
 ### <a name="mrtk-utility-methods"></a>Metodi dell'utilità MRTK
 
-Questa sezione illustra alcuni dei frammenti di codice/metodi usati comunemente durante la scrittura di test per MRTK.
+Questa sezione illustra alcuni dei frammenti di codice/metodi di uso comune durante la scrittura di test per MRTK.
 
-Esistono due classi di utilità che consentono di configurare MRTK e testare le interazioni con i componenti in MRTK
+Sono disponibili due classi di utilità che consentono di configurare MRTK e testare le interazioni con i componenti in MRTK
 
 * [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities)
 * [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities)
 
-TestUtilities fornisce i metodi seguenti per configurare la scena MRTK e GameObjects:
+TestUtilities offre i metodi seguenti per configurare la scena MRTK e i GameObject:
 
 ```c#
 /// creates the mrtk GameObject and sets the default profile if passed param is true
@@ -314,4 +314,4 @@ TestUtilities.InitializePlayspace();
 TestUtilities.ShutdownMixedRealityToolkit();
 ```
 
-Fare riferimento alla documentazione dell'API di e per altri metodi di queste classi util poiché vengono estese regolarmente mentre vengono aggiunti nuovi test [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities) [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities) a MRTK.
+Per altri metodi di queste classi util, vedere la documentazione dell'API di e perché vengono estese a intervalli regolari mentre vengono aggiunti nuovi test [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities) [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities) a MRTK.

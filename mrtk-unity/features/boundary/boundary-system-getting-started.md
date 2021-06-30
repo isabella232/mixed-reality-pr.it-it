@@ -1,40 +1,40 @@
 ---
-title: Sistema di limiti Attività iniziali
+title: Panoramica del sistema di limiti
 description: Pagina di destinazione per il sistema di limiti in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, sistema di limiti,
-ms.openlocfilehash: 2858b770fb49a44d1e2d704e8d3a81affe74d272
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 405a2d06be5d929d5c276fc8cd7ab36b6b3cf68c
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144730"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121359"
 ---
 # <a name="boundary-system"></a>Sistema di limiti
 
-Il sistema Boundary fornisce il supporto per la visualizzazione dei componenti limite della realtà virtuale nelle applicazioni di realtà mista. I limiti definiscono l'area in cui gli utenti possono spostarsi in modo sicuro mentre indossano un visore VR. I limiti sono un componente importante di un'esperienza di realtà mista per aiutare gli utenti a evitare ostacoli nonvisibile mentre indossano un visore VR.
+Il sistema di limiti fornisce il supporto per la visualizzazione dei componenti limite di Realtà virtuale nelle applicazioni di realtà mista. I limiti definiscono l'area in cui gli utenti possono spostarsi in modo sicuro mentre si indossano i visori VR. I limiti sono un componente importante di un'esperienza di realtà mista per aiutare gli utenti a evitare ostacoli imprevisti durante l'uso di un visore VR.
 
-Molte piattaforme di realtà virtuale offrono una visualizzazione automatica, ad esempio un contorno bianco sovrapposto al mondo virtuale quando l'utente o il controller si avvicina al limite. Mixed Reality Toolkit's Boundary System estende questa funzionalità per consentire la visualizzazione di un contorno dell'area tracciata, di un piano terra e di altre funzionalità che possono essere usate per fornire informazioni aggiuntive agli utenti.
+Molte piattaforme di realtà virtuale offrono uno schermo automatico, ad esempio un contorno bianco sovrapposto al mondo virtuale quando l'utente o il controller si avvicina al limite. Il sistema di limiti di Mixed Reality Toolkit estende questa funzionalità per consentire la visualizzazione di una struttura dell'area tracciata, di un piano piano e di altre funzionalità che possono essere usate per fornire informazioni aggiuntive agli utenti.
 
-## <a name="getting-started"></a>Per iniziare
+## <a name="getting-started"></a>Guida introduttiva
 
 L'aggiunta del supporto per i limiti richiede due componenti chiave di Mixed Reality Toolkit: il sistema di limiti e una piattaforma di realtà virtuale configurata con un limite.
 
 1. [Abilitare](#enable-boundary-system) il sistema di limiti
 2. [Configurare la](#configure-boundary-visualization) visualizzazione dei limiti
-3. [Compilare e distribuire](#build-and-deploy) in una piattaforma VR con un limite configurato
+3. [Compilare e distribuire](#build-and-deploy) in una piattaforma di realtà virtuale con un limite configurato
 
 ## <a name="enable-boundary-system"></a>Abilitare il sistema di limiti
 
-Il sistema di limiti è gestito dall'oggetto MixedRealityToolkit (o da un altro [componente del registrar](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) del servizio).
+Il sistema di limiti è gestito dall'oggetto MixedRealityToolkit (o da un altro [componente registrar](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) del servizio).
 
 La procedura seguente presuppone l'uso dell'oggetto MixedRealityToolkit. I passaggi necessari per altri registrar del servizio possono essere diversi.
 
 1. Selezionare l'oggetto MixedRealityToolkit nella gerarchia della scena.
 
-    ![Gerarchia della scena configurata MRTK](../images/MRTK_ConfiguredHierarchy.png)
+    ![Gerarchia della scena configurata da MRTK](../images/MRTK_ConfiguredHierarchy.png)
 
 1. Passare al pannello Inspector (Controllo) nella sezione Boundary System (Sistema limite) e selezionare Enable (Abilita)
 
@@ -49,7 +49,7 @@ La procedura seguente presuppone l'uso dell'oggetto MixedRealityToolkit. I passa
 
 ## <a name="configure-boundary-visualization"></a>Configurare la visualizzazione dei limiti
 
-Il [sistema di limiti usa un profilo di](configuring-boundary-visualization.md) configurazione per specificare quali componenti limite devono essere visualizzati e per configurarne l'aspetto.
+Il [sistema di limiti usa un profilo di](configuring-boundary-visualization.md) configurazione per specificare i componenti limite da visualizzare e per configurarne l'aspetto.
 
 ![Opzioni di visualizzazione dei limiti](../images/boundary/BoundaryVisualizationProfile.png)
 
@@ -65,7 +65,7 @@ Dopo aver configurato il sistema di limiti con le opzioni di visualizzazione des
 
 ## <a name="accessing-boundary-system-via-code"></a>Accesso al sistema di limiti tramite codice
 
-Se abilitata e configurata, è possibile accedere al sistema di limiti tramite la classe helper statica CoreServices. Il riferimento può quindi essere usato per modificare dinamicamente i parametri Boundary e accedere ai GameObject correlati gestiti dal sistema.
+Se abilitata e configurata, è possibile accedere al sistema di limiti tramite la classe helper statica CoreServices. Il riferimento può quindi essere usato per modificare dinamicamente i parametri boundary e accedere ai GameObject correlati gestiti dal sistema.
 
 ```c#
 // Hide Boundary Walls at runtime
@@ -75,7 +75,7 @@ CoreServices.BoundarySystem.ShowBoundaryWalls = false;
 GameObject floorVisual = CoreServices.BoundarySystem.GetFloorVisualization();
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Documentazione dell'API Limite](xref:Microsoft.MixedReality.Toolkit.Boundary)
 - [Configurazione della visualizzazione dei limiti](configuring-boundary-visualization.md)

@@ -1,8 +1,8 @@
 - name: Ancora
   href: dock.md
-- name: Servizio fisico della mano
+- name: Servizio di fisica manuale
   href: hand-physics-service.md
-- name: Elemento interattivo
+- name: Interactive - elemento
   href: interactive-element.md
-- name: Tastiera di realtà mista
+- name: Tastiera realtà mista
   href: mixed-reality-keyboard.md

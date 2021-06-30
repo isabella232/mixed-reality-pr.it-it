@@ -1,16 +1,16 @@
 ---
 title: Richieste pull
-description: Dettagli relativi alle richieste pull.
+description: Dettagli relativi alle richieste pull di GitHub.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, richiesta pull,
-ms.openlocfilehash: 7fb0dea4616acbf91b0459397f4a05f05a167947
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 580a57972f3356143fa796ae6ff4b08db2eb447a
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144741"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121369"
 ---
 # <a name="pull-requests"></a>Richieste pull
 
@@ -20,7 +20,7 @@ Se non si è mai contribuito a un progetto Microsoft in precedenza, potrebbe ess
 Un commento nella richiesta pull consente di sapere se lo si desidera.
 
 > [!IMPORTANT]
-> Se si è un dipendente Microsoft e non si è membri dell'organizzazione Microsoft in [GitHub,](https://github.com/Microsoft)collegare gli account Microsoft e GitHub sulla rete virtuale visitando [Open Source](https://opensource.microsoft.com/) in Microsoft prima di iniziare la richiesta pull. È necessario eseguire alcune cose da eseguire in anticipo.
+> Se si è un dipendente Microsoft e non si è membri dell'organizzazione Microsoft in [GitHub,](https://github.com/Microsoft)collegare gli account Microsoft e GitHub sulla rete virtuale visitando [Open Source](https://opensource.microsoft.com/) in Microsoft prima di iniziare la richiesta pull. Ci sono alcune cose da fare in anticipo.
 
 ## <a name="creating-a-pull-request"></a>Creazione di una richiesta pull
 
@@ -45,21 +45,21 @@ Queste linee guida si basano sulle [procedure di progettazione di Google.](https
 
 ### <a name="keep-pull-requests-small"></a>Mantenere piccole le richieste pull
 
-Le PR più piccole vengono esaminate in modo più rapido e approfondito, hanno meno probabilità di introdurre bug, più facile da eseguire il rollback e più facili da unire.
+Le PR più piccole vengono esaminate più rapidamente e accuratamente, hanno meno probabilità di introdurre bug, sono più facili da eseguire il rollback e più facili da unire.
 
-Le richieste pull devono essere sufficientemente piccole da poter essere esaminate da un tecnico in meno di 30 minuti. Provare a apportare una modifica minima che indirizzi solo una cosa. Se è necessario creare una richiesta pull di grandi dimensioni, suddividerla in più PR che vanno nel ramo locale o in un ramo di funzionalità di MRTK. Evitare di aggiungere nuovi asset (ad esempio fbx, file obj) e invece di usare di nuovo gli asset esistenti.
+Le richieste pull devono essere sufficientemente piccole da essere esaminate da un tecnico in meno di 30 minuti. Provare a apportare una modifica minima che indirizzi solo un elemento. Se è necessario creare una richiesta pull di grandi dimensioni, suddividerla in più richiesta pull che passano nel ramo locale o in un ramo di funzionalità di MRTK. Evitare di aggiungere nuovi asset (ad esempio file fbx, obj) e di usare di nuovo gli asset esistenti.
 
 ### <a name="tests-should-be-added-in-the-same-pr-as-your-fix--feature-except-for-emergencies"></a>I test devono essere aggiunti nella stessa richiesta pull della correzione/funzionalità, ad eccezione delle emergenze
 
-I test sono il modo migliore per garantire che le modifiche non regredino il codice esistente, ma è anche facile dimenticare i test quando si inviano richieste pull. Richiedere che i test esercitino la richiesta pull è un ottimo modo per garantire che i test siano scritti.
+I test sono il modo migliore per garantire che le modifiche non regredino nel codice esistente, ma è anche facile dimenticare i test quando si inviano richieste pull. Richiedere l'intervento dell'utente con la richiesta pull è un ottimo modo per assicurarsi che i test siano scritti.
 
 A ogni funzionalità e correzione di bug devono essere associati test. Se non si ha la competenza o il tempo necessario per scrivere un test, creare un problema per scrivere i test e contrassegnarli con l'etichetta Considera per **iterazione corrente**.
 
-### <a name="documentation-should-be-added-in-the-same-pull-request-as-a-fix--feature"></a>La documentazione deve essere aggiunta nella stessa richiesta pull di una correzione/funzionalità
+### <a name="documentation-should-be-added-in-the-same-pull-request-as-a-fix--feature"></a>La documentazione deve essere aggiunta nella stessa richiesta pull di una funzionalità/correzione
 
-La maggior parte degli sviluppatori cerca prima di tutto la documentazione, non il codice, quando si comprende come usare una funzionalità. Assicurarsi che la documentazione sia aggiornata rende molto più semplice per gli utenti usare e affidarsi a MRTK.  La documentazione deve sempre essere in bundle con il pull correlato per garantire che gli elementi rimangano aggiornati e coerenti.
+La maggior parte degli sviluppatori cerca prima di tutto la documentazione, non il codice, quando si comprende come usare una funzionalità. Assicurarsi che la documentazione sia aggiornata rende molto più semplice per gli utenti usare e usare MRTK.  La documentazione deve sempre essere in bundle con il pull correlato per garantire che gli elementi rimangano aggiornati e coerenti.
 
-Assicurarsi che ogni campo pubblico, metodo, proprietà abbia commenti di riepilogo con tripla barra, in modo che il sito docfx possa generare descrizioni per campi/metodi. [](https://dotnet.github.io/docfx/spec/triple_slash_comments_spec.html) Se necessario, aggiornare i file markdown nella cartella Documentazione.
+Assicurarsi che ogni campo pubblico, metodo, proprietà abbia commenti di riepilogo con barra tripla, in modo che il sito docfx possa generare descrizioni per campi/metodi. [](https://dotnet.github.io/docfx/spec/triple_slash_comments_spec.html) Se necessario, aggiornare i file markdown nella cartella Documentazione.
 
 ### <a name="pull-request-descriptions-should-clearly-and-completely-describe-changes"></a>Le descrizioni delle richieste pull devono descrivere in modo chiaro e completo le modifiche
 

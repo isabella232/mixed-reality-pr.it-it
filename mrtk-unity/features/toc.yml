@@ -22,7 +22,7 @@
   href: profiles/toc.yml
 - name: Rendering
   href: rendering/toc.yml
-- name: Sistema di scena
+- name: Sistema della scena
   href: scene-system/toc.yml
 - name: Utilità di servizio
   href: service-utilities/toc.yml

@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: cc5572e65540fa40cb1b8db56afbdd0986c467b9
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 37233141bd43f27db47935574bac7630b8bea8d7
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144790"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121389"
 ---
 # <a name="documentation-guidelines"></a>Linee guida per la documentazione
 
@@ -57,7 +57,7 @@ Quando si cita il codice all'interno di una frase `use a single backtick` .
 
 ### <a name="todos"></a>Todos
 
-Evitare di usare gli oggetti TODO nella documentazione, perché nel corso del tempo questi todo (ad esempio gli elementi TOTOD del codice) tendono ad accumularsi e a ottenere informazioni su come devono essere aggiornati e sul motivo per cui si perdono.
+Evitare di usare gli oggetti TODO nella documentazione, perché nel corso del tempo questi todo (ad esempio gli elementi TOTOD del codice) tendono ad accumularsi e a ottenere informazioni su come devono essere aggiornati e perché andare persi.
 
 Se è assolutamente necessario aggiungere un todo, seguire questa procedura:
 
@@ -91,7 +91,7 @@ Usare titoli a due e tre livelli per strutturare il resto.
 
 **Mini sezioni**
 
-Usare una riga di testo in grassetto per i blocchi che devono distinguersi. A un certo punto, è possibile sostituirlo con titoli in quattro livelli.
+Usare una riga di testo in grassetto per i blocchi che devono distinguersi. Questo potrebbe essere sostituito da titoli in quattro livelli a un certo punto.
 
 ### <a name="see-also-section"></a>Sezione "Vedere anche"
 
@@ -119,53 +119,53 @@ Regola generale: provare a sembrare **professionale.** Ciò significa in genere 
 ### <a name="capitalization"></a>Uso delle maiuscole
 
 - Usare **la distinzione tra maiuscole e minuscole per i titoli**. Ad esempio: in maiuscolo la prima lettera e i nomi, ma non altro.
-- Usare l'inglese normale per tutti gli altri elementi. Ciò significa **che le parole arbitrarie non** vengono maiuscole, anche se contengono un significato speciale in tale contesto. Preferire *il testo in corsivo* per l'evidenziazione di determinate parole, vedere di [seguito.](#emphasis-and-highlighting)
-- Quando un collegamento è incorporato in una frase (metodo preferito), il nome del capitolo standard usa sempre lettere maiuscole, interrompendo così la regola di nessuna combinazione arbitraria di maiuscole e minuscole all'interno del testo. Usare quindi un nome di collegamento personalizzato per correggere l'uso di maiuscole e minuscole. Di seguito è riportato, ad esempio, un collegamento alla [documentazione relativa al controllo dei](../features/ux-building-blocks/bounds-control.md) limiti.
+- Usare l'inglese normale per tutti gli altri elementi. Ciò significa **che le parole arbitrarie non vengono** maiuscole, anche se contengono un significato speciale in tale contesto. Preferire *il testo in corsivo* per l'evidenziazione di determinate parole, vedere di [seguito.](#emphasis-and-highlighting)
+- Quando un collegamento è incorporato in una frase (che è il metodo preferito), il nome del capitolo standard usa sempre lettere maiuscole, interrompendo così la regola dell'assenza di maiuscole/minuscole arbitrarie all'interno del testo. Usare quindi un nome di collegamento personalizzato per correggere l'uso di maiuscole e minuscole. Di seguito è riportato, ad esempio, un collegamento alla documentazione [relativa al controllo dei](../features/ux-building-blocks/bounds-control.md) limiti.
 - Non convertire in lettere maiuscole i nomi, ad *esempio Unity.*
 - NON scrivere in maiuscolo l'"editor" quando si scrive *l'editor di Unity.*
 
 ### <a name="emphasis-and-highlighting"></a>Enfasi ed evidenziazione
 
-Esistono due modi per evidenziare o evidenziare le parole, rendendole in grassetto o corsivo. L'effetto del testo  in grassetto è che il testo in grassetto viene visualizzato e pertanto può essere facilmente notato durante lo scorrimento di una parte di testo o anche semplicemente lo scorrimento su una pagina. Il grassetto è ideale per evidenziare le frasi che gli utenti devono ricordare. Tuttavia, **usare raramente il testo in grassetto** perché in genere distrae.
+Esistono due modi per evidenziare o evidenziare le parole, rendendole in grassetto o corsivo. L'effetto del testo  in grassetto è che il testo in grassetto viene visualizzato e pertanto può essere facilmente notato durante lo scorrimento di una parte di testo o anche semplicemente lo scorrimento su una pagina. Il grassetto è ideale per evidenziare le frasi che gli utenti devono ricordare. Tuttavia, **usare raramente il testo in grassetto** perché in genere è distrazione.
 
-Spesso si vuole "raggruppare" qualcosa che appartiene logicamente insieme o evidenziare un termine specifico, perché ha un significato speciale. Non è necessario che tali elementi si distinguono dal testo complessivo. Usare il testo in corsivo come *metodo leggero per* evidenziare qualcosa.
+Spesso si vuole "raggruppare" un elemento che appartiene logicamente o evidenziare un termine specifico, perché ha un significato speciale. Non è necessario che tali elementi si distinguono dal testo complessivo. Usare il testo in corsivo *come metodo leggero per* evidenziare un elemento.
 
-Analogamente, quando un nome file, un percorso o una voce di menu viene indicato nel testo, preferisce renderlo corsivo per raggrupparlo in modo logico, senza distrarre.
+Analogamente, quando un nome file, un percorso o una voce di menu viene menzionato nel testo, preferisce renderlo corsivo per raggrupparlo in modo logico, senza distrarlo.
 
-In generale, provare a evitare **l'evidenziazione del testo non necessaria.** I termini speciali possono essere evidenziati una sola volta per rendere il lettore consapevole, non ripetere tale evidenziazione in tutto il testo, quando non serve più a scopo e distrae solo.
+In generale, provare a evitare **l'evidenziazione del testo non necessaria.** I termini speciali possono essere evidenziati una sola volta per rendere il lettore consapevole, non ripetere tale evidenziazione in tutto il testo, quando non serve più a nessuno scopo e si distrae solo.
 
 ### <a name="mentioning-menu-entries"></a>Menzione delle voci di menu
 
-Quando si fa riferimento a una voce di menu su cui un utente deve fare clic, la convenzione corrente è: Project *> Files > Create > Leaf*
+Quando si cita una voce di menu su cui un utente deve fare clic, la convenzione corrente è: *Project > Files > Create > Leaf*
 
 ### <a name="links"></a>Collegamenti
 
 Inserire il maggior numero possibile di collegamenti utili ad altre pagine, ma ogni collegamento viene inserito una sola volta. Si supponga che un lettore fa clic su ogni collegamento nella pagina e pensi a quanto sarebbe fastidioso, se la stessa pagina si apre 20 volte.
 
-Preferire i collegamenti incorporati in una frase:
+Preferisce collegamenti incorporati in una frase:
 
-- BAD: le linee guida sono utili. Per [informazioni dettagliate, vedere](../contributing/documentation-guide.md) questo capitolo.
+- BAD: le linee guida sono utili. Per [informazioni dettagliate,](../contributing/documentation-guide.md) vedere questo capitolo.
 - BUONA: [le linee guida](documentation-guide.md) sono utili.
 
-Evitare collegamenti esterni, possono diventare obsoleti o contenere contenuti protetti da copyright.
+Evitare collegamenti esterni, che possono diventare obsoleti o contenere contenuti protetti da copyright.
 
-Quando si aggiunge un collegamento, valutare se deve essere elencato anche nella [sezione](#see-also) Vedere anche. Analogamente, controllare se alla pagina collegata deve essere aggiunto un collegamento alla nuova pagina.
+Quando si aggiunge un collegamento, valutare se deve essere elencato anche nella [sezione Vedere](#see-also) anche. Analogamente, controllare se è necessario aggiungere un collegamento alla nuova pagina alla pagina collegata.
 
 ### <a name="images--screenshots"></a>Immagini/screenshot
 
-**Usare gli screenshot con parsimonio.** La gestione delle immagini nella documentazione è molto lavoro, le piccole modifiche all'interfaccia utente possono rendere molti screenshot obsoleti. Le regole seguenti ridurranno le attività di manutenzione:
+**Usare gli screenshot con moderamento.** La gestione delle immagini nella documentazione è molto lavoro, le piccole modifiche all'interfaccia utente possono rendere obsoleti molti screenshot. Le regole seguenti ridurranno le attività di manutenzione:
 
 1. Non usare screenshot per elementi che possono essere descritti in testo. In particolare, **non creare mai screenshot di una griglia delle** proprietà al solo scopo di visualizzare i nomi e i valori delle proprietà.
 2. Non includere elementi in uno screenshot irrilevanti per quanto visualizzato. Ad esempio, quando viene visualizzato un effetto di rendering, creare uno screenshot del viewport, ma escludere qualsiasi interfaccia utente che lo circonda. Mostrando un'interfaccia utente, provare a spostare le finestre in modo che solo la parte importante sia presente nell'immagine.
 3. Quando si include l'interfaccia utente dello screenshot, vengono mostrate solo le parti importanti. Ad esempio, quando si parla di pulsanti in una barra degli strumenti, creare una piccola immagine che mostra i pulsanti importanti della barra degli strumenti, ma escludere tutto ciò che la circonda.
 4. Usare solo immagini facili da riprodurre. Ciò significa che non disegnare marcatori o evidenziazioni negli screenshot. In primo luogo, non esistono regole coerenti sull'aspetto che dovrebbero avere. In secondo momento, riprodurre uno screenshot di questo tipo è un'attività aggiuntiva. Descrivere invece le parti importanti del testo. Esistono eccezioni a questa regola, ma sono rare.
-5. Ovviamente, è molto più necessario ricreare una GIF animata. Si prevede di essere responsabile di ricrearlo fino alla fine del tempo o di aspettarsi che gli utenti lo scartino, se non vogliono dedicare tale tempo.
+5. Ovviamente, è molto più necessario ricreare un'immagine GIF animata. Si prevede di essere responsabile di ricrearla fino alla fine del tempo o di aspettarsi che gli utenti lo scartino, se non vogliono dedicare tale tempo.
 6. Mantenere basso il numero di immagini in un articolo. Spesso un metodo efficace è creare uno screenshot complessivo di uno strumento, che mostra tutti gli elementi e quindi descrivere il resto nel testo. In questo modo è facile sostituire lo screenshot quando necessario.
 
 Altri aspetti:
 
-- L'interfaccia utente dell'editor per gli screenshot deve usare l'editor del tema grigio chiaro perché non tutti gli utenti hanno accesso al tema scuro e si desidera mantenere le cose il più coerenti possibile.
-- La larghezza predefinita dell'immagine è di 500 pixel, perché viene visualizzata bene nella maggior parte dei monitor. Provare a non deviare troppo da esso. La larghezza massima deve essere di 800 pixel.
+- L'interfaccia utente dell'editor per gli screenshot deve usare l'editor del tema grigio chiaro perché non tutti gli utenti hanno accesso al tema scuro e si desidera mantenere gli elementi il più coerenti possibile.
+- La larghezza predefinita dell'immagine è 500 pixel, perché viene visualizzata bene nella maggior parte dei monitor. Provare a non deviare troppo da esso. La larghezza massima deve essere di 800 pixel.
 - Usare i PNG per gli screenshot dell'interfaccia utente.
 - Usare PNG o JPG per gli screenshot del viewport 3D. Preferisce la qualità rispetto al rapporto di compressione.
 
@@ -173,14 +173,14 @@ Altri aspetti:
 
 Quando si documenta un elenco di proprietà, usare il testo in grassetto per evidenziare il nome della proprietà, quindi le interruzioni di riga e il testo normale per descriverle. Non usare sottosezioni o elenchi puntati.
 
-Inoltre, non dimenticare di completare tutte le frasi con un punto.
+Non dimenticare inoltre di completare tutte le frasi con un punto.
 
 ## <a name="page-completion-checklist"></a>Elenco di controllo per il completamento della pagina
 
 1. Assicurarsi che siano state seguite le linee guida di questo documento.
-1. Esplorare la struttura del documento e verificare se il nuovo documento può essere menzionato nella [sezione Vedere](#see-also) anche di altre pagine.
-1. Se disponibile, fare in modo che qualcuno con conoscenza dell'argomento abbia letto la pagina per la correttezza tecnica.
-1. Fare in modo che qualcuno eseere in grado di leggere la pagina per lo stile e la formattazione. Può trattarsi di un utente che non ha familiarità con l'argomento, che è anche una buona idea per ottenere commenti e suggerimenti su quanto sia comprensibile la documentazione.
+1. Esplorare la struttura del documento e verificare se il nuovo documento può essere menzionato nella [sezione](#see-also) Vedere anche di altre pagine.
+1. Se disponibile, fare in modo che qualcuno con conoscenza dell'argomento leggi la pagina per la correttezza tecnica.
+1. Fare in modo che qualcuno letta la prova della pagina per lo stile e la formattazione. Può trattarsi di una persona che non ha familiarità con l'argomento, che è anche una buona idea per ottenere commenti e suggerimenti su quanto sia comprensibile la documentazione.
 
 ## <a name="source-documentation"></a>Documentazione di origine
 
@@ -237,7 +237,7 @@ Come parte di un blocco di riepilogo PME, sono necessari il significato e lo sco
 
 Come parte della documentazione di riepilogo dell'API, le informazioni relative alla versione di MRTK in cui è stata introdotta la funzionalità ed eventuali dipendenze devono essere documentate in un blocco note.
 
-Le dipendenze devono includere dipendenze di estensione e/o piattaforma.
+Le dipendenze devono includere le dipendenze di estensione e/o piattaforma.
 
 ```c#
 /// <remarks>
@@ -250,9 +250,9 @@ Le dipendenze devono includere dipendenze di estensione e/o piattaforma.
 
 ### <a name="serialized-fields"></a>Campi serializzati
 
-È consigliabile usare l'attributo della descrizione comando di Unity per fornire la documentazione di runtime per i campi di uno script nel controllo.
+È consigliabile usare l'attributo tooltip di Unity per fornire la documentazione di runtime per i campi di uno script nel controllo.
 
-In modo che le opzioni di configurazione siano incluse nella documentazione dell'API, gli script devono *includere* almeno il contenuto della descrizione comando in un blocco di riepilogo.
+In modo che le opzioni di configurazione siano  incluse nella documentazione dell'API, gli script devono includere almeno il contenuto della descrizione comando in un blocco di riepilogo.
 
 ```c#
 /// <summary>
@@ -263,7 +263,7 @@ In modo che le opzioni di configurazione siano incluse nella documentazione dell
 
 ### <a name="enumeration-values"></a>Valori di enumerazione
 
-Durante la definizione e l'enumerazione, il codice deve anche documentare il significato dei valori di enumerazione usando un blocco di riepilogo. I blocchi note possono essere usati facoltativamente per fornire dettagli aggiuntivi per migliorare la comprensione.
+Durante la definizione e l'enumerazione, il codice deve documentare anche il significato dei valori di enumerazione usando un blocco di riepilogo. Facoltativamente, i blocchi note possono essere usati per fornire dettagli aggiuntivi per migliorare la comprensione.
 
 ```c#
 /// <summary>
@@ -275,19 +275,19 @@ Durante la definizione e l'enumerazione, il codice deve anche documentare il sig
 /// </remarks>
 ```
 
-## <a name="how-to-documentation"></a>Documentazione dettagliata
+## <a name="how-to-documentation"></a>Documentazione delle procedura
 
 Molti utenti di Mixed Reality Toolkit potrebbero non dover usare la documentazione dell'API. Questi utenti sfufruiranno dei prefab e degli script predefiniti e riutilizzabili per creare le proprie esperienze.
 
 Ogni area di funzionalità conterrà uno o più file markdown (md) che descrivono a un livello piuttosto elevato, ciò che viene fornito. A seconda delle dimensioni e/o della complessità di una determinata area di funzionalità, potrebbe essere necessario disporre di file aggiuntivi, fino a uno per ogni funzionalità fornita.
 
-Quando viene aggiunta una funzionalità o viene modificato l'utilizzo, è necessario fornire la documentazione di panoramica.
+Quando viene aggiunta una funzionalità (o viene modificato l'utilizzo), è necessario fornire la documentazione di panoramica.
 
-Come parte di questa documentazione, è necessario fornire sezioni di procedura, incluse le illustrazioni, per assistere i clienti che non hanno una funzionalità o un concetto per iniziare.
+Come parte di questa documentazione, è consigliabile includere sezioni di procedura, incluse le illustrazioni, per assistere i clienti che non hanno mai iniziato a usare una funzionalità o un concetto.
 
 ## <a name="design-documentation"></a>Documentazione di progettazione
 
-La realtà mista offre l'opportunità di creare mondi completamente nuovi. Parte di questa operazione potrebbe comportare la creazione di asset personalizzati da usare con MRTK. Per rendere il più possibile privo di problemi per i clienti, i componenti devono fornire la documentazione di progettazione che descrive qualsiasi formattazione o altri requisiti per gli asset di grafica.
+La realtà mista offre l'opportunità di creare ambienti completamente nuovi. Parte di questo processo implica probabilmente la creazione di asset personalizzati da usare con MRTK. Per rendere questa operazione il più possibile gratuita per i clienti, i componenti devono fornire la documentazione di progettazione che descrive qualsiasi formattazione o altri requisiti per gli asset di grafica.
 
 Alcuni esempi in cui la documentazione di progettazione può essere utile:
 
@@ -295,7 +295,7 @@ Alcuni esempi in cui la documentazione di progettazione può essere utile:
 - Visualizzazioni di mapping spaziale
 - File dell'effetto sonoro
 
-Questo tipo di documentazione è **fortemente** consigliato e **può** essere richiesto come parte di una revisione della richiesta pull.
+Questo tipo di documentazione è **fortemente** consigliato **e** può essere richiesto come parte di una revisione della richiesta pull.
 
 Questo può essere diverso o meno dalla raccomandazione di progettazione nel [sito ms developer](/windows/mixed-reality/design)
 
@@ -303,22 +303,22 @@ Questo può essere diverso o meno dalla raccomandazione di progettazione nel [si
 
 Alcune funzionalità importanti hanno un costo in termini di prestazioni. Spesso questo codice dipende molto dalla modalità di configurazione.
 
-Esempio:
+Ad esempio:
 
 ```md
 When using the spatial mapping component, the performance impact will increase with the level of detail requested.  
 It is recommended to use the least detail possible for the desired experience.
 ```
 
-Le note sulle prestazioni sono consigliate per i componenti con utilizzo elevato della CPU e/o della GPU e possono **essere** richieste come parte di una revisione della richiesta pull. Eventuali note sulle prestazioni applicabili devono essere incluse nella documentazione dell'API **e** della panoramica.
+Le note sulle prestazioni sono consigliate per i componenti con utilizzo elevato della CPU e/o della GPU e possono **essere** richieste come parte di una revisione della richiesta pull. Eventuali note sulle prestazioni applicabili devono essere incluse nella documentazione di API **e** panoramica.
 
 ## <a name="breaking-changes"></a>Modifiche che causano un'interruzione
 
-La documentazione sulle modifiche che causano un'interruzione è costituita da un [file](../contributing/breaking-changes.md) di primo livello che si collega alle singole aree di breaking-changes.md.
+La documentazione relativa alle modifiche di rilievo è costituita da un [file](../contributing/breaking-changes.md) di primo livello che si collega alle singole aree di funzionalità breaking-changes.md.
 
-L'area breaking-changes.md file deve contenere l'elenco di tutte le  modifiche di rilievo note per una determinata versione, nonché la cronologia delle modifiche di rilievo rispetto alle versioni precedenti.
+L'area breaking-changes.md file devono contenere l'elenco di tutte le  modifiche di rilievo note per una determinata versione, nonché la cronologia delle modifiche di rilievo rispetto alle versioni precedenti.
 
-Esempio:
+Ad esempio:
 
 ```md
 Spatial sound breaking changes
@@ -334,22 +334,22 @@ No known breaking changes
 ...
 ```
 
-Le informazioni contenute nel livello di funzionalità breaking-changes.md file verranno aggregate alle note sulla versione per ogni nuova versione di MRTK.
+Le informazioni contenute nel livello di breaking-changes.md file verranno aggregate alle note sulla versione per ogni nuova versione di MRTK.
 
 Tutte le modifiche di rilievo che fanno parte di una modifica **devono** essere documentate come parte di una richiesta pull.
 
 ## <a name="tools-for-editing-markdown"></a>Strumenti per la modifica di MarkDown
 
-[Visual Studio Code](https://code.visualstudio.com/) è un ottimo strumento per la modifica di file markdown che fanno parte della documentazione di MRTK.
+[Visual Studio Code](https://code.visualstudio.com/) è un ottimo strumento per la modifica dei file markdown che fanno parte della documentazione di MRTK.
 
 Quando si scrive la documentazione, è consigliabile installare anche le due estensioni seguenti:
 
-- Estensione Docs Markdown per Visual Studio Code: usare ALT+M per visualizzare un menu di opzioni di creazione di documenti.
+- Estensione Docs Markdown per Visual Studio Code: usare ALT+M per visualizzare un menu di opzioni di creazione della documentazione.
 
-- Controllo ortografico del codice: le parole con errori di ortografia verranno sottolineate; Fare clic con il pulsante destro del mouse su una parola con errori di ortografia per modificarla o salvarla nel dizionario.
+- Controllo ortografico del codice: le parole con errori di ortografia verranno sottolineate. Fare clic con il pulsante destro del mouse su una parola con errori di ortografia per modificarla o salvarla nel dizionario.
 
 Entrambi i pacchetti sono in pacchetto in Docs Authoring Pack pubblicato da Microsoft.
 
-## <a name="see-also"></a>Vedi anche 
+## <a name="see-also"></a>Vedere anche 
 
 * [Collegamento di esempio](https://www.google.com)

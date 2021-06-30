@@ -1,22 +1,22 @@
 ---
 title: Sistema elastico
-description: documentazione correlata alla simulazione degli elastici in MRTK
+description: Documentazione correlata alla simulazione degli elastici in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, ElasticsSystem,
-ms.openlocfilehash: 01a4c4a337593252e0955c03e883e35e1329fc45
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 1f90864ee6d3b6756b863de600ade8423a44cacc
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145180"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121239"
 ---
 # <a name="elastic-system-experimental"></a>Sistema elastico (sperimentale)
 
 ![Sistema elastico](../images/elastics/Elastics_Main1.gif)
 
-MRTK è dotato di un sistema di simulazione elastico che include un'ampia gamma di sottoclassi estendibili e flessibili, offrendo associazioni per le molle quaternione 4-dimensionali, le molle a volume tridimensionale e i semplici sistemi a sorgente lineare.
+MRTK è dotato di un sistema di simulazione elastico che include un'ampia gamma di sottoclassi estendibili e flessibili, offrendo associazioni per molle quaternione 4-dimensionali, molle a volume tridimensionale e semplici sistemi a sorgente lineare.
 
 Attualmente i componenti MRTK seguenti che supportano il gestore [elastici](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager) possono sfruttare la funzionalità elastica:
 
@@ -68,30 +68,30 @@ Le impostazioni degli extent elastici variano a seconda del tipo di manipolazion
 
 #### <a name="volume-elastic-extent"></a>Extent elastico del volume
 
-Gli extent del volume definiscono uno spazio tridimensionale in cui è possibile spostare l'oscillatore armonico smorzato.
+Gli extent di volume definiscono uno spazio tridimensionale in cui l'oscillatore armonico smorzato è libero di spostarsi.
 
-![Limiti elastici di estensione del volume](../images/elastics/Elastics_Volume_Bounds.gif)
+![Limiti di estensione del volume elastico](../images/elastics/Elastics_Volume_Bounds.gif)
 
-- **StretchBounds:** rappresenta i limiti inferiori dello spazio elastico.
+- **StretchBounds**: rappresenta i limiti inferiori dello spazio elastico.
 - **UseBounds:** indica se i limiti di estensione devono essere rispettati dal sistema. Se true, quando l'iterazione corrente della posizione di destinazione non rientra nei limiti di estensione, verrà applicata la forza finale.
-- **SnapPoints:** punti all'interno dello spazio a cui verrà allineato il sistema.
-- **RepeatSnapPoints:** ripete i punti di ancoraggio all'infinito. I punti di allineamento esistenti fungeranno da modulo in cui i punti di allineamento effettivi vengono mappati ai multipli interi più vicini di ogni punto di allineamento.
-- **SnapRadius:** distanza da cui i punti di ancoraggio iniziano a forzare la spring.
+- **SnapPoints**: punti all'interno dello spazio a cui verrà allineato il sistema.
+- **RepeatSnapPoints**: ripete i punti di ancoraggio all'infinito. I punti di snap esistenti fungeranno da modulo in cui i punti di snap effettivi vengono mappati ai multipli interi più vicini di ogni punto di snap.
+- **SnapRadius:** distanza da cui i punti di snap iniziano a forzare la sorgente.
 
-![Griglia di allineamento del volume elastico](../images/elastics/Elastics_Volume_Snap.gif)
+![Griglia di snap del volume elastico](../images/elastics/Elastics_Volume_Snap.gif)
 
 #### <a name="quaternion-elastic-extent"></a>Extent elastico quaternione
 
-Gli extent quaternione definiscono uno spazio di rotazione quattrodimensionale in cui l'oscillatore arico smorzato è libero di ruotare.
+Gli extent quaternione definiscono uno spazio di rotazione quattro dimensionale in cui l'oscillatore armonico smorzato è libero di ruotare.
 
 ![Esempio di rotazione elastica](../images/elastics/Elastics_Rotation.gif)
 
-- **SnapPoints:** angoli euleri su cui verrà allineato il sistema.
-- **RepeatSnapPoints:** ripete i punti di ancoraggio. I punti di ancoraggio esistenti fungeranno da modulo in cui i punti di allineamento effettivi vengono mappati ai multipli interi più vicini di ogni punto di ancoraggio.
-- **SnapRadius:** angolo di arco in corrispondenza del quale i punti di allineamento iniziano forzando la spring in gradi euleri.
+- **SnapPoints**: angoli euleri a cui si aggancia il sistema.
+- **RepeatSnapPoints**: ripete i punti di ancoraggio. I punti di snap esistenti fungeranno da modulo in cui i punti di snap effettivi vengono mappati ai multipli interi più vicini di ogni punto di snap.
+- **SnapRadius:** arco angolare in corrispondenza del quale i punti di snap iniziano forzando la primavera in gradi eulero.
 
 ## <a name="elastics-example-scene"></a>Scena di esempio elastici
 
-È possibile trovare esempi di configurazioni elastiche nella `ElasticSystemExample` scena.
+Nella scena sono disponibili esempi di configurazioni `ElasticSystemExample` elastiche.
 
-![Scena di esempio di Elastics](../images/elastics/Elastics_Example_Scene.png)
+![Scena di esempio elastici](../images/elastics/Elastics_Example_Scene.png)

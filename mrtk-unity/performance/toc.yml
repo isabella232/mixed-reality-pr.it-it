@@ -1,6 +1,6 @@
 - name: Prestazioni
   href: perf-getting-started.md
-- name: Stabilizzazione ologramma
+- name: Stabilizzazione dell'ologramma
   href: hologram-stabilization.md
-- name: Utilizzo di MRTK in progetti di grandi dimensioni
+- name: Uso di MRTK in progetti di grandi dimensioni
   href: large-projects.md
