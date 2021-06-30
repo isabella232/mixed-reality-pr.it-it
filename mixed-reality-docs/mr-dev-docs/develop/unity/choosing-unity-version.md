@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/24/2021
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, visore di realtà mista, visore windows mixed reality, visore per realtà virtuale, unity
-ms.openlocfilehash: 646a0ec3b3b332b038509cba39caa085c1590c1a
-ms.sourcegitcommit: 593e8f80297ac0b5eccb2488d3f333885eab9adf
+ms.openlocfilehash: 11f930f014ff579db1f8845d52b7a2d65dd85d6b
+ms.sourcegitcommit: 4ea9ba1ca1cde426b016111c4176a4b0a9c17553
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112921426"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113080698"
 ---
 # <a name="choosing-a-unity-version-and-xr-plugin"></a>Scelta di una versione di Unity e di un plug-in XR
 
@@ -25,12 +25,9 @@ La configurazione di Unity consigliata di Microsoft per lo sviluppo HoloLens 2 e
 > Unity 2020 non supporta la destinazione di HoloLens (prima generazione). Questi visori rimangono supportati in **[Unity 2019 LTS](#unity-20194-lts)** con legacy built-in XR per l'intero ciclo di vita di Unity 2019 LTS fino a metà 2022.
 >
 > [!NOTE]
-> Alcuni pacchetti non sono ancora compatibili con progetti di realtà mista in Unity 2020 LTS:
-> 
-> * La pipeline di rendering universale (URP) 10.5.0 o versione precedente presenta un problema di prestazioni noto HoloLens 2 dispositivi. _(risolto nella versione URP successiva)_
-> * Rendering remoto di Azure non è ancora stata fornita una versione aggiornata che supporta Unity 2020.
+> Rendering remoto di Azure non è ancora stata fornita una versione aggiornata che supporta Unity 2020.
 >
-> Se il progetto Unity usa universal rendering pipeline o Rendering remoto di Azure, è consigliabile evitare di aggiornare il progetto a Unity 2020 fino a quando non sono disponibili pacchetti aggiornati.
+> Se il progetto Unity usa Rendering remoto di Azure, è consigliabile evitare di aggiornare il progetto a Unity 2020 fino a quando non è disponibile un pacchetto aggiornato.
 
 Il modo migliore per installare e gestire Unity è tramite <a href="https://unity3d.com/get-unity/download" target="_blank">l'hub unity.</a> Al termine dell'installazione, aprire Unity Hub:
 
