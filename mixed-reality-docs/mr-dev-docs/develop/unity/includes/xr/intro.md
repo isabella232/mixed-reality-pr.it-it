@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d39f6032eaf9a59ca52a6e7ae9b8e4d227175738
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: 550ad2b9fa92894cdf4dad86def4cd3a9b450fb1
+ms.sourcegitcommit: e9a1510984d00dc40ffd39239349e500f5737a0d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112906943"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113103901"
 ---
 # <a name="openxr"></a>[OpenXR](#tab/openxr)
 
@@ -23,8 +23,8 @@ Le istruzioni in questa pagina configurano i requisiti più recenti e più recen
 
 * Plug-in Unity OpenXR più recente (è consigliabile usare la versione 1.2 o successiva)
 * Plug-in OpenXR di realtà mista più recente (è consigliabile la versione 1.0.0 o successiva)
-* **(Facoltativo)** MRTK più recente (è consigliabile la versione 2.7 o successiva)
-* **(Facoltativo)** Pacchetto universal render pipeline più recente (è consigliabile la versione 10.5.1 o successiva)
+* Se il progetto usa MRTK, è consigliabile usare la versione 2.7.2 o successiva
+* Se il progetto usa un pacchetto URP (Universal Render Pipeline), è consigliabile usare la versione 10.5.1 o successiva
 
 <!-- ![Screenshot of the open xr unity basic sample running on a HoloLens](../../images/openxr-example.png) -->
 
@@ -42,4 +42,4 @@ Tuttavia, se si usa Unity 2019 ed è necessario AR Foundation 2.0 per la compati
 
 # <a name="legacy-xr"></a>[XR legacy](#tab/legacy)
 
-Se si è ancora in Unity 2019 o versioni precedenti, Microsoft consiglia di usare il supporto XR incorporato legacy. Anche se il plug-in Windows XR è funzionante in Unity 2019, non è consigliabile perché Ancoraggi nello stato di Azure non è supportato.
+Se si usa ancora Unity 2019 o versioni precedenti, Microsoft consiglia di usare il supporto XR incorporato legacy. Anche se il plug-in Windows XR è funzionante in Unity 2019, non è consigliabile perché Ancoraggi nello spaziali di Azure non è supportato.
