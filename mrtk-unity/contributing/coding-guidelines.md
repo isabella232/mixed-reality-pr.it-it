@@ -4,13 +4,13 @@ description: Principi e convenzioni di codifica da seguire quando si contribuisc
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, C#,
-ms.openlocfilehash: 122c51962c55796c037302c7b79cc4df643a47b7
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, C#,
+ms.openlocfilehash: c14f5f72d391c5474a01c798bfdaa5529700a509
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121439"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175330"
 ---
 # <a name="coding-guidelines"></a>Linee guida sulla codifica
 
@@ -32,7 +32,7 @@ Mantenere semplice la logica del codice. Si noti che non si tratta di un'istruzi
 
 La leggibilità del codice è correlata alle basse percentuali di difetti. Cercare di creare codice di facile lettura. Cercare di creare codice con logica semplice e di ri-usare i componenti esistenti perché consente anche di garantire la correttezza.
 
-Tutti i dettagli del codice prodotto sono importanti, dal dettaglio più semplice della correttezza allo stile e alla formattazione coerenti. Mantenere lo stile di codifica coerente con ciò che esiste già, anche se non corrisponde alle proprie preferenze. Ciò aumenta la leggibilità della codebase complessiva.
+Tutti i dettagli del codice prodotto sono importanti, dal dettaglio più semplice della correttezza allo stile e alla formattazione coerenti. Mantenere lo stile di codifica coerente con ciò che esiste già, anche se non corrisponde alle preferenze. Ciò aumenta la leggibilità della codebase complessiva.
 
 ### <a name="support-configuring-components-both-in-editor-and-at-run-time"></a>Supporto della configurazione dei componenti sia nell'editor che in fase di esecuzione
 
@@ -92,18 +92,18 @@ Tutti i file script inviati senza tag di riepilogo adeguati verranno rifiutati.
 
 ### <a name="mrtk-namespace-rules"></a>Regole dello spazio dei nomi MRTK
 
-Mixed Reality Toolkit usa un modello di spazio dei nomi basato su funzionalità, in cui tutti gli spazi dei nomi di base iniziano con "Microsoft.MixedReality.Toolkit". In generale, non è necessario specificare il livello del toolkit (ad esempio Core, Provider, Servizi) negli spazi dei nomi.
+L'Toolkit realtà mista usa un modello di spazio dei nomi basato su funzionalità, in cui tutti gli spazi dei nomi di base iniziano con "Microsoft.MixedReality. Toolkit". In generale, non è necessario specificare il livello del toolkit (ad esempio Core, Provider, Servizi) negli spazi dei nomi.
 
 Gli spazi dei nomi attualmente definiti sono:
 
-- Microsoft.MixedReality.Toolkit
-- Microsoft.MixedReality.Toolkit.Boundary
-- Microsoft.MixedReality.Toolkit.Diagnostics
-- Microsoft.MixedReality.Toolkit.Editor
-- Microsoft.MixedReality.Toolkit.Input
-- Microsoft.MixedReality.Toolkit.SpatialAwareness
-- Microsoft.MixedReality.Toolkit.Teleport
-- Microsoft.MixedReality.Toolkit.Utilities
+- Microsoft.MixedReality. Toolkit
+- Microsoft.MixedReality. Toolkit. Confine
+- Microsoft.MixedReality. Toolkit. Diagnostica
+- Microsoft.MixedReality. Toolkit. Editore
+- Microsoft.MixedReality. Toolkit. Input
+- Microsoft.MixedReality. Toolkit. SpatialAwareness
+- Microsoft.MixedReality. Toolkit. Teletrasporto
+- Microsoft.MixedReality. Toolkit. Utilità
 
 Per gli spazi dei nomi con una grande quantità di tipi, è accettabile creare un numero limitato di sotto-spazi dei nomi per facilitare l'utilizzo dell'ambito.
 
@@ -197,23 +197,23 @@ public class MyNewProfile : ScriptableObject
 
 ### <a name="logging"></a>Registrazione
 
-Quando si aggiungono nuove funzionalità o si aggiornano le funzionalità esistenti, è consigliabile aggiungere i log DebugUtilities.LogVerbose a codice interessante che potrebbe essere utile per il debug futuro. Esiste un compromesso tra l'aggiunta di registrazione e il rumore aggiunto e la registrazione non sufficiente (il che rende difficile la diagnosi).
+Quando si aggiungono nuove funzionalità o si aggiornano le funzionalità esistenti, è consigliabile aggiungere log DebugUtilities.LogVerbose a codice interessante che potrebbe essere utile per il debug futuro. C'è un compromesso tra l'aggiunta della registrazione e il rumore aggiunto e la registrazione non sufficiente (il che rende difficile la diagnosi).
 
-Un esempio interessante in cui la registrazione è utile (insieme a payload interessante):
+Un esempio interessante in cui la registrazione è utile (insieme a un payload interessante):
 
 ```c#
 DebugUtilities.LogVerboseFormat("RaiseSourceDetected: Source ID: {0}, Source Type: {1}", source.SourceId, source.SourceType);
 ```
 
-Questo tipo di registrazione consente di rilevare problemi come , causati da eventi di origine rilevata e di origine [https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016) persi non corrispondenti.
+Questo tipo di registrazione consente di rilevare problemi come , che sono stati causati da un'origine non corrispondente rilevata [https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016) e da eventi di origine persi.
 
-Evitare di aggiungere log per dati ed eventi che si verificano in ogni frame. Idealmente la registrazione dovrebbe coprire eventi "interessanti" generati da input utente distinti (ad esempio un "clic" da parte di un utente e il set di modifiche ed eventi provenienti da che sono interessanti da registrare). Lo stato in corso "l'utente tiene ancora un movimento" registrato in ogni fotogramma non è interessante e sovraccarica i log.
+Evitare di aggiungere log per dati ed eventi che si verificano in ogni frame. La registrazione ideale dovrebbe riguardare eventi "interessanti" generati da input utente distinti (ad esempio un "clic" da parte di un utente e il set di modifiche ed eventi provenienti da che sono interessanti da registrare). Lo stato in corso di "utente è ancora in possesso di un movimento" registrato ogni frame non è interessante e sovraccaricerà i log.
 
-Si noti che questa registrazione dettagliata non è attivata per impostazione predefinita (deve essere abilitata nelle impostazioni del sistema [di diagnostica)](../features/diagnostics/configuring-diagnostics.md#enable-verbose-logging)
+Si noti che questa registrazione dettagliata non è attivata per impostazione predefinita (deve essere abilitata nelle impostazioni [del sistema di diagnostica](../features/diagnostics/configuring-diagnostics.md#enable-verbose-logging))
 
 ### <a name="spaces-vs-tabs"></a>Spazi e tabulazioni
 
-Assicurarsi di usare 4 spazi anziché tabulazioni quando si contribuisce a questo progetto.
+Assicurarsi di usare 4 spazi invece di tabulazioni quando si contribuisce a questo progetto.
 
 ### <a name="spacing"></a>Spaziatura
 
@@ -242,7 +242,7 @@ private Foo()
 
 ### <a name="naming-conventions"></a>Convenzioni di denominazione
 
-Usare sempre `PascalCase` per le proprietà. Usare `camelCase` per la maggior parte dei campi, ad eccezione `PascalCase` `static readonly` dell'uso per i campi e `const` . L'unica eccezione è per le strutture di dati che richiedono la serializzazione dei campi da parte di `JsonUtility` .
+Usare sempre `PascalCase` per le proprietà. Usare `camelCase` per la maggior parte dei campi, ad eccezione di quelli per e `PascalCase` `static readonly` `const` . L'unica eccezione è per le strutture di dati che richiedono la serializzazione dei campi da parte di `JsonUtility` .
 
 #### <a name="dont"></a>Cosa non fare
 
@@ -264,11 +264,11 @@ private string myField;
 
 Dichiarare sempre un modificatore di accesso per tutti i campi, le proprietà e i metodi.
 
-- Tutti i metodi API unity devono essere per impostazione predefinita, a meno che non sia `private` necessario eseguirne l'override in una classe derivata. In questo caso `protected` è consigliabile usare .
+- Tutti i metodi API unity devono essere per impostazione predefinita, a meno che non sia necessario `private` eseguirne l'override in una classe derivata. In questo caso `protected` è consigliabile usare .
 
-- I campi devono essere sempre `private` , con le funzioni di accesso alle proprietà o `public` `protected` .
+- I campi devono essere sempre `private` , con o funzioni di accesso alle `public` `protected` proprietà.
 
-- Usare [membri con corpo di espressione e](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#expression-bodied-function-members) proprietà auto [laddove](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#auto-property-enhancements) possibile
+- Usare [i membri con corpo di espressione](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#expression-bodied-function-members) e le proprietà auto [laddove](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#auto-property-enhancements) possibile
 
 #### <a name="dont"></a>Cosa non fare
 
@@ -337,7 +337,7 @@ private Foo()
 
 ### <a name="public-classes-structs-and-enums-should-all-go-in-their-own-files"></a>Le classi, gli struct e le enumerazioni pubbliche devono essere tutti presenti nei propri file
 
-Se la classe, lo struct o l'enumerazione possono essere resi privati, è possibile essere inclusi nello stesso file.  In questo modo si evitano problemi di compilazione con Unity e si garantisce che si verifichi un'astrazione corretta del codice, riducendo anche i conflitti e le modifiche che causano un'interruzione quando il codice deve cambiare.
+Se la classe, lo struct o l'enumerazione possono essere resi privati, è possibile includere nello stesso file.  In questo modo si evitano problemi di compilazione con Unity e si garantisce che si verifichi un'astrazione corretta del codice, riducendo anche i conflitti e le modifiche che causano un'interruzione quando il codice deve cambiare.
 
 #### <a name="dont"></a>Cosa non fare
 
@@ -397,7 +397,7 @@ public class MyClass
 
 ### <a name="initialize-enums"></a>Inizializzare enumerazioni
 
-Per assicurarsi che tutte le enumerazioni vengano inizializzate correttamente a partire da 0, .NET offre un collegamento ordinato per inizializzare automaticamente l'enumerazione aggiungendo semplicemente il primo valore (iniziale). (ad esempio, il valore 1 = 0 i valori rimanenti non sono obbligatori)
+Per assicurarsi che tutte le enumerazioni vengano inizializzate correttamente a partire da 0, .NET offre un collegamento ordinato per inizializzare automaticamente l'enumerazione aggiungendo semplicemente il primo valore (iniziale). (ad esempio, il valore 1 = 0 I valori rimanenti non sono obbligatori)
 
 #### <a name="dont"></a>Cosa non fare
 
@@ -423,7 +423,7 @@ public enum ValueType
 
 ### <a name="order-enums-for-appropriate-extension"></a>Ordinare le enumerazioni per l'estensione appropriata
 
-È fondamentale che, se è probabile che un'enumerazione sia estesa in futuro, per ordinare i valori predefiniti all'inizio dell'enumerazione, ciò garantisce che gli indici Enum non siano interessati dalle nuove aggiunte.
+È fondamentale che, se è probabile che un'enumerazione sia estesa in futuro, per ordinare le impostazioni predefinite all'inizio dell'enumerazione, ciò garantisce che gli indici Enum non siano interessati dalle nuove aggiunte.
 
 #### <a name="dont"></a>Cosa non fare
 
@@ -507,7 +507,7 @@ Quando si generano percorsi di file di stringa e in particolare si scrivono perc
 1. Usare le API di C# [ `Path` quando](/dotnet/api/system.io.path?preserve-view=true&view=netframework-4.8) possibile, ad esempio `Path.Combine` o `Path.GetFullPath` .
 1. Usare / o [`Path.DirectorySeparatorChar`](/dotnet/api/system.io.path.directoryseparatorchar?preserve-view=true&view=netframework-4.8) invece di \ o \\ \\ .
 
-Questi passaggi assicurano il funzionamento di MRTK nei sistemi basati su Windows e Unix.
+Questi passaggi garantiscono che MRTK funzioni sia nei sistemi Windows e basati su Unix.
 
 ### <a name="dont"></a>Cosa non fare
 
@@ -532,14 +532,14 @@ string cleanedFilePath = Path.GetFullPath(unknownSourceFilePath);
 
 ## <a name="best-practices-including-unity-recommendations"></a>Procedure consigliate, incluse le raccomandazioni di Unity
 
-Alcune delle piattaforme di destinazione di questo progetto richiedono di prendere in considerazione le prestazioni. A questo scopo, prestare sempre attenzione quando si alloca memoria nel codice chiamato di frequente in cicli di aggiornamento o algoritmi rigidi.
+Alcune delle piattaforme di destinazione di questo progetto richiedono di prendere in considerazione le prestazioni. A questo scopo, prestare sempre attenzione quando si alloca memoria nel codice chiamato di frequente in algoritmi o cicli di aggiornamento ristretti.
 
 ### <a name="encapsulation"></a>Incapsulamento
 
-Usare sempre campi privati e proprietà pubbliche se l'accesso al campo è necessario dall'esterno della classe o dello struct.  Assicurarsi di individuare il campo privato e la proprietà pubblica. In questo modo è più semplice vedere a colpo d'occhio il contenuto della proprietà e che il campo è modificabile tramite script.
+Usare sempre campi privati e proprietà pubbliche se l'accesso al campo è necessario dall'esterno della classe o dello struct.  Assicurarsi di co-individuare il campo privato e la proprietà pubblica. In questo modo è più semplice vedere, a colpo d'occhio, ciò che sosporta la proprietà e che il campo è modificabile tramite script.
 
 > [!NOTE]
-> L'unica eccezione è per le strutture di dati che richiedono che i campi siano serializzati da , dove una classe di dati deve avere tutti i campi pubblici per il funzionamento `JsonUtility` della serializzazione.
+> L'unica eccezione è per le strutture di dati che richiedono la serializzazione dei campi da parte di , in cui una classe di dati deve avere tutti i campi pubblici per il funzionamento della `JsonUtility` serializzazione.
 
 #### <a name="dont"></a>Cosa non fare
 
@@ -596,7 +596,7 @@ public float AbsMyValue
 
 ### <a name="cache-values-and-serialize-them-in-the-sceneprefab-whenever-possible"></a>Memorizzare nella cache i valori e serializzarli nella scena/prefab quando possibile
 
-Tenere presente HoloLens, è meglio ottimizzare le prestazioni e i riferimenti alla cache nella scena o nel prefab per limitare le allocazioni di memoria di runtime.
+Con il HoloLens in mente, è meglio ottimizzare le prestazioni e i riferimenti alla cache nella scena o nel prefab per limitare le allocazioni di memoria di runtime.
 
 #### <a name="dont"></a>Cosa non fare
 
@@ -671,14 +671,14 @@ public class MyClass
 ```
 
 > [!NOTE]
-> In alternativa, usare la proprietà "SharedMaterial" di Unity che non crea un nuovo materiale ogni volta che vi viene fatto riferimento.
+> In alternativa, usare la proprietà "SharedMaterial" di Unity che non crea un nuovo materiale ogni volta che vi si fa riferimento.
 
-### <a name="use-platform-dependent-compilation-to-ensure-the-toolkit-wont-break-the-build-on-another-platform"></a>Usare [la compilazione dipendente dalla](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) piattaforma per assicurarsi che il Toolkit non interrompa la compilazione in un'altra piattaforma
+### <a name="use-platform-dependent-compilation-to-ensure-the-toolkit-wont-break-the-build-on-another-platform"></a>Usare [la compilazione dipendente dalla](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) piattaforma per assicurarsi che Toolkit non interrompa la compilazione in un'altra piattaforma
 
-- Usare per usare API non Unity specifiche della `WINDOWS_UWP` UWP. Ciò impedirà loro di provare a eseguire nell'editor o in piattaforme non supportate. È equivalente a `UNITY_WSA && !UNITY_EDITOR` e deve essere usato a favore di .
-- Usare `UNITY_WSA` per usare api Unity specifiche della UWP, ad esempio lo spazio dei nomi `UnityEngine.XR.WSA` . Verrà eseguito nell'editor quando la piattaforma è impostata su UWP, nonché nelle app UWP compilate.
+- Usare per usare API non Unity specifiche della `WINDOWS_UWP` UWP. Ciò impedirà loro di provare a eseguire nell'editor o in piattaforme non supportate. Equivale a `UNITY_WSA && !UNITY_EDITOR` e deve essere usato a favore di .
+- Usare per usare API Unity specifiche della `UNITY_WSA` UWP, ad esempio lo spazio dei `UnityEngine.XR.WSA` nomi . Verrà eseguito nell'editor quando la piattaforma è impostata su UWP, nonché nelle app UWP create.
 
-Questo grafico consente di decidere quale usare, a seconda dei casi d'uso `#if` e delle impostazioni di compilazione previste.
+Questo grafico consente di decidere quale usare, a seconda dei casi `#if` d'uso e delle impostazioni di compilazione previste.
 
 |Piattaforma | UWP IL2CPP | UWP .NET | Editor |
 | --- | --- | --- | --- |
@@ -689,16 +689,16 @@ Questo grafico consente di decidere quale usare, a seconda dei casi d'uso `#if` 
 | `ENABLE_WINMD_SUPPORT` | True | True | False |
 | `NETFX_CORE` | False | True | Falso |
 
-### <a name="prefer-datetimeutcnow-over-datetimenow"></a>Preferisci DateTime.UtcNow rispetto a DateTime.Now
+### <a name="prefer-datetimeutcnow-over-datetimenow"></a>Preferire DateTime.UtcNow rispetto a DateTime.Now
 
-DateTime.UtcNow è più veloce di DateTime.Now. Nelle analisi delle prestazioni precedenti è stato rilevato che l'uso di DateTime.Now aggiunge un sovraccarico significativo, soprattutto se usato nel ciclo Update(). [Altri hanno raggiunto lo stesso problema.](https://stackoverflow.com/questions/1561791/optimizing-alternatives-to-datetime-now)
+DateTime.UtcNow è più veloce di DateTime.Now. Nelle indagini sulle prestazioni precedenti è stato rilevato che l'uso di DateTime.Now aggiunge un overhead significativo soprattutto se usato nel ciclo Update(). [Altri hanno raggiunto lo stesso problema.](https://stackoverflow.com/questions/1561791/optimizing-alternatives-to-datetime-now)
 
-Preferire l'uso di DateTime.UtcNow a meno che non siano effettivamente necessarie le ore localizzate (un motivo legittimo potrebbe essere la necessità di visualizzare l'ora corrente nel fuso orario dell'utente). Se si hanno a che fare con orari relativi ,ad esempio il delta tra l'ultimo aggiornamento e il momento corrente, è meglio usare DateTime.UtcNow per evitare il sovraccarico delle conversioni del fuso orario.
+Preferire l'uso di DateTime.UtcNow a meno che non siano effettivamente necessari gli orari localizzati (un motivo legittimo potrebbe essere che si vuole visualizzare l'ora corrente nel fuso orario dell'utente). Se si hanno a che fare con orari relativi(ad esempio, il delta tra l'ultimo aggiornamento e ora), è meglio usare DateTime.UtcNow per evitare il sovraccarico delle conversioni del fuso orario.
 
-## <a name="powershell-coding-conventions"></a>Convenzioni di scrittura del codice di PowerShell
+## <a name="powershell-coding-conventions"></a>Convenzioni di codifica di PowerShell
 
 Un subset della codebase MRTK usa PowerShell per l'infrastruttura della pipeline e vari script e utilità. Il nuovo codice di PowerShell deve seguire lo [stile PoshCode](https://poshcode.gitbooks.io/powershell-practice-and-style/).
 
 ## <a name="see-also"></a>Vedere anche
 
- [Convenzioni di scrittura del codice C# da MSDN](/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)
+ [Convenzioni di codifica C# da MSDN](/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)

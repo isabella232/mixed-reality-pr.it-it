@@ -1,18 +1,18 @@
 ---
-title: Sistema di scena Attività iniziali
+title: Introduzione al sistema di scena
 description: Pagina di destinazione per il sistema di scena con MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 205b89d4defdeb5418a8a82896551d681cccde3d
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
+ms.openlocfilehash: 16adf431498f8146ca2cc60565e59dc8ae03fd92
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144303"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177571"
 ---
-# <a name="scene-system-overview"></a>Panoramica del sistema di scena
+# <a name="scene-system-getting-started"></a>Introduzione al sistema di scena
 
 ## <a name="when-to-use-the-scene-system"></a>Quando usare il sistema di scena
 
@@ -30,13 +30,13 @@ Per impostazione predefinita, scene system usa una coppia di oggetti scena (Defa
 
 ![Messaggio delle risorse predefinite](../images/scene-system/DefaultResourcesMessage.png)
 
->! [Nota] Se il progetto usa scene di gestione e illuminazione personalizzate, questo messaggio può essere ignorato.
+>! [Nota] Se il progetto usa scene di illuminazione e gestione personalizzate, questo messaggio può essere ignorato in tutta sicurezza.
 
-Le sezioni seguenti descrivono ora come risolvere questo messaggio, in base al metodo usato per importare Mixed Reality Toolkit.
+Le sezioni seguenti descrivono ora la risoluzione di questo messaggio, in base al metodo usato per importare la realtà mista Toolkit.
 
 ### <a name="unity-package-manager-upm"></a>Unity Gestione pacchetti (UPM)
 
-Nei pacchetti UPM di Mixed Reality Toolkit le risorse di sistema della scena vengono in pacchetto come esempio. Poiché i pacchetti UPM non sono modificabili, Unity non è in grado di aprire il file della scena necessario a meno che non vengano importati in modo esplicito nel progetto.
+In Realtà mista Toolkit pacchetti UPM, le risorse di sistema della scena vengono in pacchetto come esempio. Poiché i pacchetti UPM non sono modificabili, Unity non è in grado di aprire il file di scena necessario a meno che non vengano importati in modo esplicito nel progetto.
 
 Per importare, seguire questa procedura:
 
@@ -52,15 +52,15 @@ Per importare, seguire questa procedura:
 
 Se la cartella SceneSystemResources è stata eliminata o è stata deselezionata durante l'importazione, è possibile recuperarla seguendo questa procedura:
 
-- Selezionare **Assets** Import Package Custom Package  >  **(Importa pacchetto**  >  **personalizzato)**
-- Aprire il **pacchetto Microsoft.MixedReality.Toolkit.Foundation**
+- Selezionare **Il pacchetto personalizzato per l'importazione**  >    >  **di asset**
+- Aprire **Microsoft.MixedReality.Toolkit. Pacchetto Di** base
 - Assicurarsi che **Services/SceneSystem/SceneSystemResources** e tutte le opzioni figlio siano selezionate
 
   ![Reimportare le risorse di sistema della scena](../images/scene-system/ReimportSceneSystemResources.png)
 
 - Selezionare **Importa**
 
-## <a name="how-to-use-the-scene-system"></a>Come usare il sistema della scena
+## <a name="how-to-use-the-scene-system"></a>Come usare il sistema di scena
 
 - [Tipi di scena](scene-system-scene-types.md)
 - [Caricamento della scena di contenuto](scene-system-content-loading.md)
@@ -69,7 +69,7 @@ Se la cartella SceneSystemResources è stata eliminata o è stata deselezionata 
 
 ## <a name="editor-settings"></a>Impostazioni dell'editor
 
-Per impostazione predefinita, scene system applica diversi comportamenti nell'editor di Unity. Se si trova uno di questi comportamenti con la mano pesante, questi possono essere disabilitati nella sezione **Impostazioni editor** del profilo del sistema di scena.
+Per impostazione predefinita, scene system applica diversi comportamenti nell'editor di Unity. Se si trova uno di questi comportamenti con una mano pesante, questi possono essere disabilitati nella sezione **Editor Impostazioni** del profilo scene system.
 
 - `Editor Manage Build Settings:` Se true, il servizio aggiornerà automaticamente le impostazioni di compilazione, assicurando l'aggiunta di tutte le scene di gestione, illuminazione e contenuto. Disabilitare questa opzione se si vuole il controllo totale sulle impostazioni di compilazione.
 

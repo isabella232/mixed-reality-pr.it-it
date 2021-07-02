@@ -1,33 +1,33 @@
 ---
-title: Servizi di simulazione input
+title: Servizio di simulazione input
 description: Documentazione sul servizio di simulazione input in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 5420f3f2d20d07585007a58f5cf70d8e2027efc6
-ms.sourcegitcommit: c08997a75acfe4ac1d044c0fb9112e6817eb3d45
+ms.openlocfilehash: 66b79c14bbd0ea8c188aba684b9bd1034de31bf9
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112588831"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176960"
 ---
 # <a name="input-simulation-service"></a>Servizio di simulazione input
 
-![Simulazione dell'input MRTK](../images/input-simulation/MRTK_InputSimulation_Hero.jpg)
+![Simulazione input MRTK](../images/input-simulation/MRTK_InputSimulation_Hero.jpg)
 
 Con la simulazione di input di MRTK, è possibile testare vari tipi di interazioni nell'editor di Unity senza compilare e distribuire in un dispositivo. Ciò consente di eseguire rapidamente l'iterazione delle idee nel processo di progettazione e sviluppo. Usare combinazioni di tastiera e mouse per controllare gli input simulati.
 
 Il servizio di simulazione input emula il comportamento di dispositivi e piattaforme che potrebbero non essere disponibili nell'editor di Unity. Alcuni esempi:
 
-* Rilevamento della testa del dispositivo HoloLens o VR
-* Movimenti della mano di HoloLens
+* HoloLens o il rilevamento della testa del dispositivo VR
+* HoloLens movimenti della mano
 * HoloLens 2 tracciamento delle mani articolato
 * HoloLens 2 tracciamento oculare
 * Controller del dispositivo VR
 
 > [!WARNING]
-> Questa operazione non funziona quando si usa l'emulazione olografica XR di Unity > emulazione = "Simula nell'editor". La simulazione nell'editor di Unity prenderà il controllo dalla simulazione di input di MRTK. Per usare il servizio di simulazione dell'input MRTK, è necessario impostare XR Holographic Emulation (Emulazione olografica XR) su Emulation Mode = *"None"* (Modalità di emulazione = "Nessuno)
+> Questa operazione non funziona quando si usa l'emulazione olografica XR di Unity > emulazione = "Simula nell'editor". La simulazione nell'editor di Unity prenderà il controllo dalla simulazione di input di MRTK. Per usare il servizio di simulazione dell'input MRTK, è necessario impostare XR Holographic Emulation (Emulazione olografica XR) su Emulation Mode = *"None"*
 
 ## <a name="how-to-use-mrtk-input-simulation"></a>Come usare la simulazione di input MRTK 
 
@@ -52,8 +52,8 @@ Premere **CTRL SINISTRO + H** nella scena HandInteractionExamples per visualizza
 
 Nella configurazione del provider di dati del sistema di input, il servizio Simulazione input può essere configurato con quanto segue.
 
-* **Il** tipo deve *essere Microsoft.MixedReality.Toolkit.Input > InputSimulationService*.
-* **Le piattaforme supportate per impostazione predefinita** includono tutte le piattaforme *dell'editor,* poiché il servizio usa input da tastiera e mouse.
+* **Il** tipo deve *essere Microsoft.MixedReality.Toolkit. Input > InputSimulationService*.
+* **Le piattaforme supportate per impostazione predefinita** includono tutte le piattaforme *dell'editor,* poiché il servizio usa l'input da tastiera e mouse.
 
 > [!NOTE]
 > Il servizio Simulazione input può essere usato in altri  endpoint della piattaforma, ad esempio autonomi, modificando la proprietà Piattaforme supportate in modo da includere le destinazioni desiderate.
@@ -65,27 +65,27 @@ Lo spostamento della testa può essere emulato dal servizio di simulazione input
 
 ### <a name="rotating-the-camera"></a>Rotazione della fotocamera
 
-1. Passare il puntatore del mouse sulla finestra dell'editor del viewport.
+1. Passare il puntatore del mouse sulla finestra dell'editor del riquadro di visualizzazione.
     *Potrebbe essere necessario fare clic sulla finestra per assegnare lo stato attivo all'input se le pressione del pulsante non funzionano.*
-1. Tenere premuto il **pulsante Aspetto del mouse** (impostazione predefinita: pulsante destro del mouse).
+1. Tenere premuto il **pulsante Aspetto del mouse** (impostazione predefinita: Pulsante destro del mouse).
 1. Spostare il mouse nella finestra del viewport per ruotare la fotocamera.
 1. Usare la rotellina di scorrimento per ruotare la fotocamera intorno alla direzione di visualizzazione.
 
 La velocità di rotazione della fotocamera può essere configurata modificando l'impostazione **Mouse Look Speed (Velocità** dell'aspetto del mouse) nel profilo di simulazione di input.
 
-In alternativa, usare gli assi **Look Horizontal** Look Vertical (Look Horizontal Look Vertical) per ruotare la fotocamera /  (impostazione predefinita: levetta destra del controller di gioco).
+In alternativa, usare gli assi **Look Horizontal** Look Vertical (Aspetto orizzontale verticale) per ruotare la fotocamera /  (impostazione predefinita: levetta destra del controller di gioco).
 
 ### <a name="moving-the-camera"></a>Spostamento della videocamera
 
 Usare gli **assi Sposta spostamento** / **orizzontale Verticale** per spostare la fotocamera (impostazione predefinita: chiavi WASD o levetta sinistra del controller di gioco).
 
-Anche la posizione della fotocamera e gli angoli di rotazione possono essere impostati in modo esplicito nella finestra degli strumenti. La fotocamera può essere reimpostata sul valore predefinito usando il **pulsante** Reimposta.
+Anche la posizione della fotocamera e gli angoli di rotazione possono essere impostati in modo esplicito nella finestra degli strumenti. La fotocamera può essere reimpostata sul valore predefinito usando il **pulsante Reimposta.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z7L4I1ET7GU" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## <a name="controller-simulation"></a>Simulazione controller
 
-La simulazione di input supporta i dispositivi controller emulati,ad esempio controller del movimento e mani. Questi controller virtuali possono interagire con qualsiasi oggetto che supporta i controller normali, ad esempio pulsanti o oggetti afferrabili.
+La simulazione di input supporta i dispositivi controller emulati (ad esempio controller del movimento e mani). Questi controller virtuali possono interagire con qualsiasi oggetto che supporta i controller normali, ad esempio pulsanti o oggetti afferrabili.
 
 ### <a name="controller-simulation-mode"></a>Modalità di simulazione controller
 
@@ -97,9 +97,9 @@ Nella finestra degli [strumenti di simulazione dell'input](#input-simulation-too
 
    In questa modalità è possibile simulare interazioni basate sul posizionamento preciso della mano o sull'uso del tocco.
 
-* *Movimenti della mano:* simula un modello di mano semplificato con tocco d'aria e movimenti di base.
+* *Movimenti della mano:* simula un modello di mano semplificato con tocco e movimenti di base.
 
-   Emula [il modello di interazione di HoloLens.](/windows/mixed-reality/gestures)
+   Emula [HoloLens di interazione.](/windows/mixed-reality/gestures)
 
    Lo stato attivo viene controllato usando il puntatore Sguardo fisso. Il *movimento tocco viene* usato per interagire con i pulsanti.
 
@@ -125,7 +125,7 @@ Tutto il posizionamento della mano può essere modificato anche nella finestra [
 
 * **Il moltiplicatore di profondità del** controller controlla la sensibilità del movimento di profondità della rotellina del mouse. Un numero maggiore velocizza lo zoom del controller.
 * **Distanza controller predefinita** è la distanza iniziale dei controller dalla fotocamera. Facendo clic **sul pulsante Reimposta,** i controller verranno posizionati anche a questa distanza.
-* **Quantità di instabilità del** controller aggiunge movimento casuale ai controller. Questa funzionalità può essere usata per simulare un monitoraggio non accurato del controller nel dispositivo e garantire che le interazioni funzionino correttamente con l'input rumoroso.
+* **Quantità di instabilità del** controller aggiunge movimento casuale ai controller. Questa funzionalità può essere usata per simulare un monitoraggio del controller non accurato nel dispositivo e garantire che le interazioni funzionino correttamente con l'input rumoroso.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uRYfwuqsjBQ" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -169,9 +169,9 @@ Per la manipolazione di oggetti con due mani contemporaneamente, è consigliabil
 
 ### <a name="ggv-gaze-gesture-and-voice-interaction"></a>Interazione GGV (sguardo fisso, movimento e voce)
 
-Per impostazione predefinita, l'interazione GGV è abilitata nell'editor, mentre nella scena non sono presenti mani articolate.
+Per impostazione predefinita, l'interazione GGV è abilitata nell'editor mentre nella scena non sono presenti mani articolate.
 
-1. Ruotare la fotocamera in modo che punti il cursore dello sguardo fisso sull'oggetto che può interagire (pulsante destro del mouse)
+1. Ruotare la fotocamera in modo che punti il cursore dello sguardo fisso sull'oggetto intervienibile (pulsante destro del mouse)
 1. Fare clic e tenere **premuto il pulsante sinistro del mouse** per interagire
 1. Ruotare di nuovo la fotocamera per modificare l'oggetto
 
@@ -179,8 +179,8 @@ Per impostazione predefinita, l'interazione GGV è abilitata nell'editor, mentre
 
 È anche possibile usare le mani simulate per l'interazione GGV
 
-1. Abilitare la simulazione GGV impostando **Modalità simulazione manuale** su *Movimenti* nel profilo [di simulazione input](#enabling-the-input-simulation-service)
-1. Ruotare la fotocamera in modo che punti il cursore dello sguardo fisso sull'oggetto che può interagire (pulsante destro del mouse)
+1. Abilitare la simulazione GGV impostando **Modalità simulazione manuale** su *Movimenti* nel profilo di [simulazione input](#enabling-the-input-simulation-service)
+1. Ruotare la fotocamera in modo che punti il cursore dello sguardo fisso sull'oggetto intervienibile (pulsante destro del mouse)
 1. Tenere **premuto lo** spazio per controllare la mano destra
 1. Fare clic e tenere **premuto il pulsante sinistro del mouse** per interagire
 1. Usare il mouse per spostare l'oggetto
@@ -190,11 +190,11 @@ Per impostazione predefinita, l'interazione GGV è abilitata nell'editor, mentre
 
 ### <a name="raising-teleport-events"></a>Generazione di eventi di teletrasporto
 
-Per generare l'evento di teletrasporto nella simulazione di input, configurare le impostazioni del movimento della mano nel profilo di simulazione input in modo che uno esegua il movimento di inizio del **teletrasporto** mentre l'altro esegua il movimento di fine **teletrasporto.** Il **movimento Teleport Start (Inizio** teletrasporto) attiva l'indicatore di misura teletrasporto, mentre la gesure **Teleport End** (Fine teletrasporto) completa l'azione di teletrasporto e sposta l'utente.
+Per generare l'evento di teletrasporto nella simulazione di input, configurare l'Impostazioni Movimento mano nel profilo di simulazione input in modo che uno esegua il movimento di inizio del teletrasporto mentre l'altro esegua il movimento di fine **teletrasporto.**  Il **movimento Teleport Start (Inizio** teletrasporto) attiva l'indicatore di misura teletrasporto, mentre la gesure **Teleport End** (Fine teletrasporto) completa l'azione di teletrasporto e sposta l'utente.
 
-La posizione y del teletrasporto risultante dipende dall'spostamento della fotocamera lungo l'asse y. Nell'editor questo valore è 0 per impostazione predefinita, quindi usare i tasti **Q** ed **E** per adattarlo all'altezza appropriata.
+La posizione y del teletrasporto risultante dipende dall'spostamenti della fotocamera lungo l'asse y. Nell'editor questo valore è 0 per impostazione predefinita, quindi usare i tasti **Q** ed **E** per adattarlo all'altezza appropriata.
 
-![Impostazioni di teletrasporto simulazione input](../images/input-simulation/InputSimulationTeleport.gif)
+![Input Simulation Teleport Impostazioni](../images/input-simulation/InputSimulationTeleport.gif)
 
 ### <a name="motion-controller-interaction"></a>Interazione del controller del movimento
 
@@ -206,7 +206,7 @@ I controller del movimento simulati possono essere manipolati allo stesso modo d
 
 ## <a name="input-simulation-tools-window"></a>Finestra degli strumenti di simulazione dell'input
 
-Abilitare la finestra degli strumenti di simulazione dell'input dal menu Mixed Reality Toolkit Utilities Input Simulation   >    >    >  **(Simulazione input** utilità Mixed Reality Toolkit). Questa finestra consente di accedere allo stato della simulazione di input durante la modalità di riproduzione.
+Abilitare la finestra degli strumenti di simulazione dell'input dal menu **Mixed Reality**  >  **Toolkit** Utilities Input Simulation  >    >  **(Simulazione input** utilità di realtà mista). Questa finestra consente di accedere allo stato della simulazione di input durante la modalità di riproduzione.
 
 ## <a name="viewport-buttons-optional"></a>Pulsanti viewport (facoltativo)
 
@@ -218,7 +218,7 @@ Abilitare la finestra degli strumenti di simulazione dell'input dal menu Mixed R
 Le icone a mano mostrano lo stato delle mani simulate:
 
 * ![Icona mano non tracciata](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Untracked.png) La mano non viene tracciata. Fare clic per abilitare la mano.
-* ![Icona mano tracciata](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Tracked.png "Icona mano tracciata") La mano viene rilevata, ma non controllata dall'utente. Fare clic per nascondere la mano.
+* ![Icona mano tracciata](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Tracked.png "Icona mano tracciata") La mano viene tracciata, ma non controllata dall'utente. Fare clic per nascondere la mano.
 * ![Icona mano controllata](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Controlled.png "Icona mano controllata") La mano viene rilevata e controllata dall'utente. Fare clic per nascondere la mano.
 * ![Icona a forma di mano di reimpostazione](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Reset.png "Icona a forma di mano di reimpostazione") Fare clic per ripristinare la posizione predefinita della mano.
 

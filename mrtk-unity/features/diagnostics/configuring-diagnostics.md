@@ -1,28 +1,28 @@
 ---
-title: Configurazione della diagnostica
+title: Configurazione del sistema di diagnostica
 description: Documentazione per configurare la diagnostica in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 211ee2ed06ba9b13bd90169bcc7ee50da4594034
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
+ms.openlocfilehash: d81b441cd9bcd40846eb94320f6f7de1bbd2f0a8
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121799"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177257"
 ---
 # <a name="configuring-the-diagnostics-system"></a>Configurazione del sistema di diagnostica
 
 ## <a name="general-settings"></a>Impostazioni generali
 
-![Impostazioni generali di diagnostica](../images/diagnostics/DiagnosticsGeneralSettings.png)
+![Diagnostica generale Impostazioni](../images/diagnostics/DiagnosticsGeneralSettings.png)
 
 ### <a name="enable-verbose-logging"></a>Abilita la registrazione dettagliata
 
-Indica se la registrazione MRTK dettagliata verrà abilitata o meno. Questa impostazione predefinita è false, ma può essere attivata per eseguire tracce dettagliate che consentono al team MRTK di eseguire il debug o di risolvere i problemi. Ad esempio, quando si registra un problema, collegare i log del giocatore unity (dall'editor o dal lettore) può aiutare a restringere l'origine di bug e problemi.
+Indica se la registrazione MRTK dettagliata verrà abilitata o meno. L'impostazione predefinita è false, ma può essere attivata per eseguire tracce dettagliate che consentono al team MRTK di eseguire il debug o la ricerca dei problemi. Ad esempio, quando si registra un problema, collegare i log del giocatore unity (dall'editor o dal lettore) può aiutare a restringere l'origine di bug e problemi.
 
-Si noti che questa opzione è indipendente dal fatto che il sistema di diagnostica sia abilitato o meno. Questa opzione viene visualizzata nel sistema di diagnostica perché è un'opzione di registrazione, ma funziona a un livello superiore perché influisce sulla registrazione nell'intera codebase MRTK.
+Si noti che questa opzione è indipendente dal fatto che il sistema di diagnostica sia abilitato o meno. Questa opzione viene visualizzata nel sistema di diagnostica perché è un'opzione di registrazione, ma in definitiva funziona a un livello superiore perché influisce sulla registrazione nell'intera codebase MRTK.
 
 ### <a name="show-diagnostics"></a>Visualizza diagnostica
 
@@ -32,7 +32,7 @@ Se disabilitata, tutte le opzioni di diagnostica configurate verranno nascoste.
 
 ## <a name="profiler-settings"></a>Impostazioni del profiler
 
-![Impostazioni del profiler di diagnostica](../images/diagnostics/DiagnosticsProfilerSettings.png)
+![Diagnostica profiler Impostazioni](../images/diagnostics/DiagnosticsProfilerSettings.png)
 
 ### <a name="show-profiler"></a>Mostra profiler
 
@@ -60,7 +60,7 @@ Velocità alla quale spostare la finestra del profiler per mantenere la visibili
 
 ## <a name="programmatically-controlling-the-diagnostics-system"></a>Controllo del sistema di diagnostica a livello di codice
 
-È anche possibile attivare o disattivare la visibilità del sistema di diagnostica e del profiler in fase di esecuzione. Ad esempio, il codice seguente nasconderà il sistema di diagnostica e il profiler.
+È anche possibile attivare o disattivare la visibilità del sistema di diagnostica e del profiler in fase di esecuzione. Ad esempio, il codice seguente nasconde il sistema di diagnostica e il profiler.
 
 ```c#
 CoreServices.DiagnosticsSystem.ShowDiagnostics = false;

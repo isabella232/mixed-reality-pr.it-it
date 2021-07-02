@@ -4,25 +4,25 @@ description: Esempi di interazione manuale in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, interazioni con la mano, controllo limiti, pulsanti pressabili,
-ms.openlocfilehash: 229933dfd2414e485da6c1a77a2ffb08c9982249
-ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, interazioni con la mano, controllo limiti, pulsanti a pressione,
+ms.openlocfilehash: 7926c8bdd525af24a26e2f4c87257dca7628956a
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111908416"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177446"
 ---
-# <a name="hand-interaction-examples-scene"></a>Scena degli esempi di interazione manuale
+# <a name="hand-interaction-examples"></a>Esempi di interazione manuale
 
 ![Esempi di interazione manuale 1](../images/hand-interaction-examples/MRTK_HandInteractionExamples.png)
 
-La **scena di esempio HandInteractionExamples** contiene vari tipi di interazioni e controlli dell'interfaccia utente che evidenziano l'input articolato della mano. Con la simulazione di input di MRTK è possibile sperimentare interazioni di rilevamento manuale nell'editor di Unity. 
+La **scena di esempio HandInteractionExamples** contiene vari tipi di interazioni e controlli dell'interfaccia utente che evidenziano l'input della mano articolato. Con la simulazione di input di MRTK, è possibile sperimentare interazioni di tracciamento manuale nell'editor di Unity. 
 
-**La scena HandInteractionExamples** è inclusa nel pacchetto Examples di MRTK. È possibile scaricare e importare il **pacchetto esempi di Mixed Reality Toolkit** tramite Lo strumento di funzionalità di realtà [mista](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool)
+**La scena HandInteractionExamples** è inclusa nel pacchetto Examples di MRTK. Puoi scaricare e importare il **pacchetto Mixed Reality Toolkit Examples** tramite Mixed Reality Feature [Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool)
 
 <img src="../images/hand-interaction-examples/MRTK_Examples_Package_MRFT.png" width="550" alt="Example Package 1"><br/>
 
-In Unity usare il menu Window > Gestione pacchetti > In Project > Custom (Personalizzato) e selezionare Mixed Reality Toolkit Examples (Esempi di **Mixed Reality Toolkit).** Fare **clic sul pulsante Importa** nel progetto accanto a Demo - **HandTracking**. Sarà possibile trovare la **scena HandInteractionExamples** nella cartella Asset > Samples.
+In Unity usare il menu Window > Gestione pacchetti > In Project > Custom (In Project > personalizzato) e selezionare **Mixed Reality Toolkit Examples (Esempi di Toolkit realtà mista).** Fare **clic su Import into Project** (Importa in) accanto a **Demos - HandTracking (Demo - HandTracking).** Sarà possibile trovare la scena **HandInteractionExamples** nella cartella Assets > Samples.
 
 <img src="../images/hand-interaction-examples/MRTK_Examples_Package_2.png" width="300" alt="Example Package 2"><br/>
 
@@ -30,10 +30,10 @@ In Unity usare il menu Window > Gestione pacchetti > In Project > Custom (Person
 
 <img src="../images/hand-interaction-examples/MRTK_Examples_Package_4.png" width="650" alt="Example Package 4"><br/>
 
-* Se non si usa Mixed Reality Feature Tool, è possibile scaricare e importare **direttamente Microsoft.MixedReality.Toolkit.Unity.Examples.unitypackage** dalla pagina di rilascio di [MrTK GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases)
+* Se non si usa Mixed Reality Feature Tool, è possibile scaricare e importare **direttamente Microsoft.MixedReality.Toolkit. Unity.Examples.unitypackage** dalla [GitHub di rilascio di MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/releases)
 
 > [!NOTE]
-> Questa scena di esempio usa *TextMesh Pro.* Per aprire la scena, fare clic *su "Importa TMP Essentials"* quando viene visualizzata la richiesta corrispondente durante l'importazione della scena. Unity importerà quindi i pacchetti TextMesh Pro.
+> Questa scena di esempio usa *TextMesh Pro*. Per aprire la scena, fare clic *su "Import TMP Essentials" (Importa TMP Essentials)* quando viene visualizzata la richiesta corrispondente durante l'importazione della scena. Unity importerà quindi TextMesh Pro pacchetti.
 
 <img src="../images/hand-interaction-examples/MRTK_Examples_TMP2.png" width="450" alt="Example TMP2">
 

@@ -1,16 +1,16 @@
 ---
-title: TextPrefab
+title: Prefab di testo
 description: Panoramica di TextPrefab in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, TMP,
-ms.openlocfilehash: 7d50a35e3761cf2313a43fcc6ad43ed5bd3064a1
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.openlocfilehash: 1839109043cfad9a20697c5d6526b349fd7ea2e4
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489291"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175646"
 ---
 # <a name="text-prefab"></a>Prefab di testo
 
@@ -45,25 +45,25 @@ Tipi di carattere open source (Assets/MRTK/Core/StandardAssets/Fonts) inclusi in
 
 1. Assegnare Segoe UI tipo di carattere e materiale 3DTextSegoeUI ai componenti di testo nei prefab.
 
-    ![Assegnazione di file e materiale del tipo di carattere](../images/text-prefab/TextPrefabInstructions04.png)
+    ![Assegnazione di file e materiali dei tipi di carattere](../images/text-prefab/TextPrefabInstructions04.png)
 
 ### <a name="working-with-fonts-in-unity"></a>Uso dei tipi di carattere in Unity
 
-Quando si aggiunge un nuovo TextMesh 3D a una scena in Unity, esistono due problemi visivamente evidenti. Uno, il tipo di carattere appare molto grande e due, il tipo di carattere appare molto sfocato. È anche interessante notare che il valore predefinito Dimensione carattere è impostato su zero in Inspector. La sostituzione di questo valore zero con 13 non mostrerà alcuna differenza di dimensioni, perché 13 è effettivamente il valore predefinito.
+Quando si aggiunge un nuovo textmesh 3D a una scena in Unity, esistono due problemi visivamente evidenti. Uno, il tipo di carattere appare molto grande e due, il tipo di carattere appare molto sfocato. È anche interessante notare che il valore predefinito Dimensioni carattere è impostato su zero in Inspector. La sostituzione di questo valore zero con 13 non mostrerà alcuna differenza nelle dimensioni, perché 13 è effettivamente il valore predefinito.
 
-Unity presuppone che tutti i nuovi elementi aggiunti a una scena siano di dimensioni di 1 unità Unity o una scala di trasformazione al 100%, che si traduce in circa 1 metro in HoloLens. Nel caso dei tipi di carattere, il rettangolo di selezione per un oggetto TextMesh 3D entra in campo, per impostazione predefinita a circa 1 metro di altezza.
+Unity presuppone che tutti i nuovi elementi aggiunti a una scena siano di dimensioni di 1 unità Unity o una scala di trasformazione al 100%, che si traduce in circa 1 metro nella HoloLens. Nel caso dei tipi di carattere, viene visualizzato il rettangolo di selezione per un textmesh 3D, per impostazione predefinita a circa 1 metro di altezza.
 
 ### <a name="font-scale-and-font-sizes"></a>Scala dei caratteri e dimensioni dei caratteri
 
-La maggior parte dei progettisti di oggetti visivi usa Points per definire le dimensioni dei caratteri nel mondo reale, nonché i programmi di progettazione. Sono presenti circa 2835 punti (2.834.645666399962) in 1 metro. In base alla conversione del sistema di punti a 1 metro e alla dimensione del carattere TextMesh predefinita di Unity pari a 13, la matematica semplice di 13 divisa per 2835 equivale a 0,0046 (0,0045861111116 per l'esattezza) offre una scala standard buona da cui iniziare, anche se alcuni potrebbero voler arrotondare a 0,005.
+La maggior parte delle finestre di progettazione visiva usa Points per definire le dimensioni dei caratteri nel mondo reale, nonché i relativi programmi di progettazione. Sono presenti circa 2835 punti (2.834.645666399962) in 1 contatore. In base alla conversione del sistema di punti in 1 contatore e alle dimensioni del carattere TextMesh predefinite di Unity pari a 13, la semplice matematica di 13 divisa per 2835 equivale a 0,0046 (0,004586111116 per l'esattezza) offre una scala standard adatta per iniziare, anche se alcuni potrebbero voler arrotondare a 0,005.
 
-In entrambi i casi, il ridimensionamento dell'oggetto Text o del contenitore a questi valori non consentirà solo la conversione 1:1 delle dimensioni dei caratteri da un programma di progettazione, ma fornisce anche uno standard per mantenere la coerenza in tutta l'applicazione o nel gioco.
+In entrambi i casi, il ridimensionamento dell'oggetto o del contenitore Text a questi valori non solo consentirà la conversione 1:1 delle dimensioni dei caratteri da un programma di progettazione, ma fornisce anche uno standard per mantenere la coerenza in tutta l'applicazione o nel gioco.
 
 ### <a name="ui-text"></a>Testo interfaccia utente 
 
-Quando si aggiunge un elemento Text basato sull'interfaccia utente o su canvas a una scena, la differenza di dimensioni è maggiore. Le differenze nelle due dimensioni sono circa il 1000%, che porterebbe il fattore di scala per i componenti di testo basati sull'interfaccia utente a 0,00046 (0,00045861111116 per l'esatto) o 0,0005 per il valore arrotondato.
+Quando si aggiunge un elemento Text basato su interfaccia utente o area di disegno a una scena, la disparità di dimensioni è ancora maggiore. Le differenze nelle due dimensioni sono pari a circa il 1000%, che porterebbe il fattore di scala per i componenti di testo basati sull'interfaccia utente a 0,00046 (0,000458611116 per l'esatto) o 0,0005 per il valore arrotondato.
 
-**Dichiarazione di non responsabilità:** il valore predefinito di qualsiasi tipo di carattere può essere effetto delle dimensioni della trama del tipo di carattere o del modo in cui il tipo di carattere è stato importato in Unity. Questi test sono stati eseguiti in base al tipo di carattere Arial predefinito in Unity e a un altro tipo di carattere importato.
+**Dichiarazione di non responsabilità:** il valore predefinito di qualsiasi tipo di carattere può essere effetto delle dimensioni della trama del tipo di carattere o della modalità di importazione del tipo di carattere in Unity. Questi test sono stati eseguiti in base al tipo di carattere Arial predefinito in Unity e a un altro tipo di carattere importato.
 
 ![Dimensioni del carattere con fattori di ridimensionamento](../images/text-prefab/TextPrefabInstructions07.png)
 

@@ -1,20 +1,20 @@
 ---
-title: Registro del servizio realtà mista e IMixedRealityServiceRegistrar
+title: Registro del servizio realtà mista
 description: Documentazione su MixedRealityServiceRegistry e IMixedRealityServiceRegistrar
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 09b20537824af42d241b6c33496cedcb4f530bc7
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 061e4233d61de817b1aaed7faaa6d461427d6f07
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145238"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176702"
 ---
-# <a name="what-are-the-mixedrealityserviceregistry-and-imixedrealityserviceregistrar"></a>Che cosa sono MixedRealityServiceRegistry e IMixedRealityServiceRegistrar?
+# <a name="mixed-reality-service-registry"></a>Registro del servizio realtà mista
 
-Mixed Reality Toolkit include due componenti con nomi molto simili che eseguono attività correlate: MixedRealityServiceRegistry e IMixedRealityServiceRegistrar.
+L'Toolkit realtà mista include due componenti con nomi molto simili che eseguono attività correlate: MixedRealityServiceRegistry e IMixedRealityServiceRegistrar.
 
 ## <a name="mixedrealityserviceregistry"></a>MixedRealityServiceRegistry
 
@@ -55,7 +55,7 @@ Ognuno dei componenti precedenti, ad eccezione di InputSystemManager, è respons
 
 In generale, i metodi definiti da IMixedRealityServiceRegistrar vengono chiamati internamente dai componenti di gestione dei servizi o dai servizi che richiedono componenti del servizio aggiuntivi per funzionare correttamente. Il codice dell'applicazione in genere non deve chiamare questi metodi, perché in questo modo l'applicazione potrebbe comportarsi in modo imprevedibile (ad esempio, un'istanza del servizio memorizzata nella cache potrebbe diventare non valida).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Documentazione dell'API IMixedRealityServiceRegistrar](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar)
 - [Documentazione dell'API MixedRealityServiceRegistry](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry)

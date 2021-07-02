@@ -5,26 +5,26 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, eventi,
-ms.openlocfilehash: 450c6dbbed8fc9bbb1a648b7a22f0de66747cbaf
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: c8871aa575e2aa4507e9dbbdcc8bdf0fc0604633
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145222"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176778"
 ---
 # <a name="input-events"></a>Eventi di input
 
-L'elenco seguente illustra tutte le interfacce eventi di input disponibili che devono essere implementate da un componente MonoBehaviour personalizzato. Queste interfacce verranno chiamate dal sistema di input MRTK per gestire la logica dell'app personalizzata in base alle interazioni di input dell'utente. [Gli eventi di input del](pointers.md#pointer-event-interfaces) puntatore vengono gestiti in modo leggermente diverso rispetto ai tipi di evento di input standard riportati di seguito.
+L'elenco seguente descrive tutte le interfacce di eventi di input disponibili che devono essere implementate da un componente MonoBehaviour personalizzato. Queste interfacce verranno chiamate dal sistema di input MRTK per gestire la logica dell'app personalizzata in base alle interazioni di input dell'utente. [Gli eventi di input](pointers.md#pointer-event-interfaces) del puntatore vengono gestiti in modo leggermente diverso rispetto ai tipi di evento di input standard riportati di seguito.
 
 > [!IMPORTANT]
-> Per impostazione predefinita, uno script riceverà eventi di input solo se è l'oggetto GameObject attivo da un puntatore o da un elemento padre di un Oggetto GameObject nello stato attivo.
+> Per impostazione predefinita, uno script riceverà gli eventi di input solo se è il GameObject nello stato attivo da un puntatore o da un elemento padre di un GameObject nello stato attivo.
 
 | Gestore | Eventi | Descrizione |
 | --- | :---: | --- |
-| [`IMixedRealitySourceStateHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySourceStateHandler) | Origine rilevata/persa | Generato quando un'origine di input viene rilevata/persa, ad esempio quando viene rilevata o smarrita una mano articolata. |
-| [`IMixedRealitySourcePoseHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySourcePoseHandler) | Modifica della posizione di origine | Generato in base alle modifiche della posizione di origine. La posizione di origine rappresenta la posizione generale dell'origine di input. È possibile ottenere pose specifiche, ad esempio la presa o la posizione del puntatore in un controller DOF di sei, tramite `IMixedRealityInputHandler<MixedRealityPose>` . |
-| [`IMixedRealityInputHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler) | Input verso il basso/verso l'alto | Generato in base alle modifiche apportate agli input binari come i pulsanti. |
-| [`IMixedRealityInputHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) | Input modificato | Generato in base alle modifiche agli input del tipo specificato. **T** può assumere i valori seguenti: <br/> - *float* (ad esempio restituisce un trigger analogo)<br/> - *Vector2* (ad esempio restituisce la direzione della levetta del gamepad) <br/> - *Vector3* (ad esempio, la posizione restituita del dispositivo tracciato) <br/> - *Quaternione* (ad esempio restituisce l'orientamento del dispositivo tracciato)<br/> - [MixedRealityPose](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose) (ad esempio restituisce un dispositivo completamente monitorato) |
+| [`IMixedRealitySourceStateHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySourceStateHandler) | Origine rilevata/persa | Generato quando viene rilevata o persa un'origine di input, ad esempio quando viene rilevata o smarrita una mano articolata. |
+| [`IMixedRealitySourcePoseHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySourcePoseHandler) | Modifica della posizione di origine | Generato in base alle modifiche della posizione di origine. La posizione di origine rappresenta la posizione generale dell'origine di input. È possibile ottenere posizioni specifiche, ad esempio la manopola o la posizione dell'indicatore di misura in un controller DOF a sei, tramite `IMixedRealityInputHandler<MixedRealityPose>` . |
+| [`IMixedRealityInputHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler) | Input verso il basso o verso l'alto | Generato in base alle modifiche apportate agli input binari come i pulsanti. |
+| [`IMixedRealityInputHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) | Input modificato | Generato in base alle modifiche apportate agli input del tipo specificato. **T** può assumere i valori seguenti: <br/> - *float* (ad esempio restituisce un trigger analogo)<br/> - *Vector2* (ad esempio restituisce la direzione del levetta del game pad) <br/> - *Vector3* (ad esempio la posizione restituita del dispositivo tracciato) <br/> - *Quaternione* (ad esempio restituisce l'orientamento del dispositivo tracciato)<br/> - [MixedRealityPose](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose) (ad esempio restituisce un dispositivo completamente monitorato) |
 | [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) | Riconoscimento della parola chiave di Riconoscimento vocale | Generato al riconoscimento di una delle parole chiave configurate nel profilo *dei comandi vocali.* |
 | [`IMixedRealityDictationHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityDictationHandler) | Dettatura<br/> Hypothesis <br/> Result <br/> Operazione completata <br/> Errore | Generato dai sistemi di dettatura per segnalare i risultati di una sessione di dettatura. |
 | [`IMixedRealityGestureHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler) | Eventi di movimento in: <br/> Avviato <br/> Aggiornato <br/> Completato <br/> Cancellati | Generato al rilevamento dei movimenti. |
@@ -38,21 +38,21 @@ L'elenco seguente illustra tutte le interfacce eventi di input disponibili che d
 A livello di script, gli eventi di input possono essere utilizzati implementando una delle interfacce del gestore eventi illustrate nella tabella precedente. Quando un evento di input viene generato tramite un'interazione dell'utente, si verifica quanto segue:
 
 1. Il sistema di input MRTK riconosce che si è verificato un evento di input.
-1. Il sistema di input MRTK genera la funzione di interfaccia pertinente dell'evento di input a tutti [i gestori di input globali registrati](#register-for-global-input-events)
+1. Il sistema di input MRTK genera la funzione di interfaccia pertinente dell'evento di input per tutti [i gestori di input globali registrati](#register-for-global-input-events)
 1. Per ogni puntatore attivo registrato con il sistema di input:
     1. Il sistema di input determina quale GameObject è attivo per il puntatore corrente.
-    1. Il sistema di input usa il sistema di eventi di Unity per impostare la funzione di interfaccia pertinente per tutti i componenti corrispondenti [nell'oggetto](https://docs.unity3d.com/Manual/EventSystem.html) GameObject con stato attivo.
+    1. Il sistema di input usa il sistema di eventi [di Unity per](https://docs.unity3d.com/Manual/EventSystem.html) impostare la funzione di interfaccia pertinente per tutti i componenti corrispondenti nel GameObject con lo stato attivo.
     1. Se in qualsiasi momento un evento di input è stato contrassegnato come [usato,](#how-to-stop-input-events)il processo terminerà e nessun altro GameObject riceverà callback.
-        - Esempio: i componenti che implementano l'interfaccia verranno cercati quando [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) viene riconosciuto un comando vocale.
-        - Nota: il sistema di eventi Unity verrà visualizzato per cercare l'oggetto GameObject padre se non vengono trovati componenti corrispondenti all'interfaccia desiderata nell'oggetto GameObject corrente.
-1. Se non sono registrati gestori di input globali e non viene trovato alcun GameObject con un componente/interfaccia corrispondente, il sistema di input chiamerà ogni gestore di input registrato di fallback
+        - Esempio: i componenti che implementano [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) l'interfaccia verranno cercati quando viene riconosciuto un comando vocale.
+        - Nota: il sistema di eventi Unity verrà visualizzato per cercare il GameObject padre se non vengono trovati componenti corrispondenti all'interfaccia desiderata nell'oggetto GameObject corrente.
+1. Se non è registrato alcun gestore di input globale e non viene trovato alcun GameObject con un componente/interfaccia corrispondente, il sistema di input chiamerà ogni gestore di input registrato di fallback
 
 > [!NOTE]
-> [Gli eventi di input del](pointers.md#pointer-event-interfaces) puntatore vengono gestiti in modo leggermente diverso rispetto alle interfacce degli eventi di input elencate in precedenza. In particolare, gli eventi di input del puntatore vengono gestiti solo dal GameObject attivo dal puntatore che ha generato l'evento di input, nonché da qualsiasi gestore di input globale. Gli eventi di input regolari vengono gestiti da GameObjects nello stato attivo per tutti i puntatori attivi.
+> [Gli eventi di input](pointers.md#pointer-event-interfaces) del puntatore vengono gestiti in modo leggermente diverso rispetto alle interfacce degli eventi di input elencate in precedenza. In particolare, gli eventi di input del puntatore vengono gestiti solo dal GameObject nello stato attivo dal puntatore che ha attivato l'evento di input, nonché da qualsiasi gestore di input globale. Gli eventi di input regolari vengono gestiti da GameObject nello stato attivo per tutti i puntatori attivi.
 
 ### <a name="input-event-interface-example"></a>Esempio di interfaccia eventi di input
 
-Il codice seguente illustra l'uso [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) dell'interfaccia . Quando l'utente dice le parole "più piccole" o "più grandi" concentrandosi su un GameObject con questa classe, GameObject verrà ridimensionato della metà o del `ShowHideSpeechHandler` doppio.
+Il codice seguente illustra l'uso [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) dell'interfaccia . Quando l'utente dice le parole "più piccole" o "più grandi" concentrandosi su un GameObject con questa classe, il GameObject si ridimensiona dime o `ShowHideSpeechHandler` due volte.
 
 ```c#
 public class ShowHideSpeechHandler : MonoBehaviour, IMixedRealitySpeechHandler
@@ -74,13 +74,13 @@ public class ShowHideSpeechHandler : MonoBehaviour, IMixedRealitySpeechHandler
 ```
 
 > [!NOTE]
-> [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler)Gli eventi di input richiedono che le parole chiave desiderate siano pre-registrate nel profilo dei comandi vocali [MRTK.](speech.md)
+> [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler)Gli eventi di input richiedono che le parole chiave desiderate siano pre-registrate in [MRTK Speech Commands Profile.](speech.md)
 
 ## <a name="register-for-global-input-events"></a>Registrarsi per eventi di input globali
 
-Per creare un componente in ascolto di eventi di input globali, ignorando ciò che GameObject può essere attivo, un componente deve registrarsi con il sistema di input. Dopo la registrazione, tutte le istanze di questo Oggetto MonoBehaviour riceveranno eventi di input insieme a tutti gli oggetti GameObject attualmente in stato attivo e ad altri listener registrati globali.
+Per creare un componente che rimane in ascolto di eventi di input globali, ignorando il GameObject che potrebbe essere attivo, un componente deve registrarsi con il sistema di input. Dopo la registrazione, tutte le istanze di questo MonoBehaviour riceveranno gli eventi di input insieme a tutti i GameObject attualmente in stato attivo e ad altri listener registrati a livello globale.
 
-Se un evento di input è [stato contrassegnato come usato,](#how-to-stop-input-events)i gestori registrati globali riceveranno comunque tutti i callback. Tuttavia, nessun GameObject incentrato riceverà l'evento.
+Se un evento di input è stato [contrassegnato come usato,](#how-to-stop-input-events)i gestori registrati globali riceveranno comunque tutti i callback. Tuttavia, nessun GameObject con stato attivo riceverà l'evento.
 
 ### <a name="global-input-registration-example"></a>Esempio di registrazione dell'input globale
 
@@ -142,7 +142,7 @@ public class GlobalHandListenerExample : MonoBehaviour,
 
 ## <a name="register-for-fallback-input-events"></a>Registrarsi per gli eventi di input di fallback
 
-I gestori di input di fallback sono simili ai gestori di input globali registrati, ma vengono considerati come ultima risorsa per la gestione degli eventi di input. Solo se non sono stati trovati gestori di input globali e nessun GameObject è attivo, verrà sfruttato il fallback dei gestori di input.
+I gestori di input di fallback sono simili ai gestori di input globali registrati, ma vengono considerati come ultima risorsa per la gestione degli eventi di input. Solo se non sono stati trovati gestori di input globali e non sono presenti GameObject nello stato attivo, verranno sfruttati i gestori di input di fallback.
 
 ### <a name="fallback-input-handler-example"></a>Esempio di gestore di input di fallback
 
@@ -175,15 +175,15 @@ public class GlobalHandListenerExample : MonoBehaviour,
 
 ## <a name="how-to-stop-input-events"></a>Come arrestare gli eventi di input
 
-Ogni interfaccia dell'evento di input fornisce un [`BaseInputEventData`](xref:Microsoft.MixedReality.Toolkit.Input.BaseInputEventData) oggetto dati come parametro per ogni funzione nell'interfaccia. Questo oggetto dati dell'evento si estende dall'oggetto di [`AbstractEventData`](https://docs.unity3d.com/2019.1/Documentation/ScriptReference/EventSystems.AbstractEventData.html) Unity.
+Ogni interfaccia dell'evento di input [`BaseInputEventData`](xref:Microsoft.MixedReality.Toolkit.Input.BaseInputEventData) fornisce un oggetto dati come parametro a ogni funzione nell'interfaccia. Questo oggetto dati dell'evento si estende dall'oggetto di [`AbstractEventData`](https://docs.unity3d.com/2019.1/Documentation/ScriptReference/EventSystems.AbstractEventData.html) Unity.
 
-Per impedire la propagazione di un evento di input tramite la relativa esecuzione come [indicato,](#input-events-in-action)un componente può chiamare per contrassegnare l'evento [`AbstractEventData.Use()`](https://docs.unity3d.com/2019.1/Documentation/ScriptReference/EventSystems.AbstractEventData.Use.html) come usato. Questo impedirà a qualsiasi altro GameObject di ricevere l'evento di input corrente, ad eccezione dei gestori di input globali.
+Per arrestare la propagazione di un evento di input tramite la relativa esecuzione, come descritto [in](#input-events-in-action), un componente può chiamare per [`AbstractEventData.Use()`](https://docs.unity3d.com/2019.1/Documentation/ScriptReference/EventSystems.AbstractEventData.Use.html) contrassegnare l'evento come usato. In questo modo qualsiasi altro GameObject non riceverà l'evento di input corrente, ad eccezione dei gestori di input globali.
 
 > [!NOTE]
-> Un componente che chiama il `Use()` metodo impedirà ad altri GameObject di riceverlo. Tuttavia, altri componenti nell'oggetto GameObject corrente riceveranno comunque l'evento di input e generano eventuali funzioni di interfaccia correlate.
+> Un componente che chiama il `Use()` metodo impedirà ad altri GameObject di riceverlo. Tuttavia, gli altri componenti nell'oggetto GameObject corrente riceveranno comunque l'evento di input e generano le funzioni di interfaccia correlate.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
-- [Pointers](pointers.md)
+- [Puntatori](pointers.md)
 - [Voce](speech.md)
 - [Stato di input](input-state.md)

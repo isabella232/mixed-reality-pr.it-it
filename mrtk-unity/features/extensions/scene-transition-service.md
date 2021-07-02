@@ -1,22 +1,22 @@
 ---
-title: Panoramica del servizio di transizione della scena
-description: documentazione per la transizione di scena in MRTK
+title: Servizio di transizione della scena
+description: documentazione per la transizione della scena in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, SceneTransition,
-ms.openlocfilehash: 5ea76b572b3cddc097e8266d3c31f152b63a13aa
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, SceneTransition,
+ms.openlocfilehash: b645012a055f693fdac794b79e24fd20154fdb65
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144280"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176211"
 ---
 # <a name="scene-transition-service"></a>Servizio di transizione della scena
 
-Questa estensione semplifica l'attività di dissolversi di una scena, visualizzare un indicatore di stato, caricare una scena e quindi tornare indietro.
+Questa estensione semplifica l'attività di dissolversi in una scena, visualizzando un indicatore di stato, caricando una scena e quindi tornando indietro.
 
-Le operazioni della scena sono guidate dal servizio SceneSystem, ma qualsiasi operazione basata su attività può essere usata per guidare una transizione.
+Le operazioni della scena sono guidate dal servizio SceneSystem, ma qualsiasi operazione basata su attività può essere usata per una transizione.
 
 ## <a name="enabling-the-extension"></a>Abilitazione dell'estensione
 
@@ -24,40 +24,40 @@ Per abilitare l'estensione, aprire il profilo RegisteredServiceProvider. Fare cl
 
 ## <a name="profile-options"></a>Opzioni del profilo
 
-### <a name="use-default-progress-indicator"></a>Usare l'indicatore di stato predefinito
+### <a name="use-default-progress-indicator"></a>Usa indicatore di stato predefinito
 
-Se selezionata, il prefab dell'indicatore di stato predefinito verrà usato quando non viene fornito alcun oggetto indicatore di stato quando si chiama Se viene fornito un oggetto indicatore di stato, il valore predefinito `DoSceneTransition.` verrà ignorato.
+Se questa opzione è selezionata, il prefab dell'indicatore di stato predefinito verrà usato quando non viene fornito alcun oggetto indicatore di stato quando si chiama Se viene fornito un oggetto indicatore di stato, il valore predefinito `DoSceneTransition.` verrà ignorato.
 
 ### <a name="use-fade-color"></a>Usare il colore di dissolvenza
 
-Se l'opzione è selezionata, il servizio di transizione applierà una dissolvenza durante la transizione. Questa impostazione può essere modificata in fase di esecuzione tramite la proprietà del `UseFadeColor` servizio.
+Se selezionata, il servizio di transizione applierà una dissolvenza durante la transizione. Questa impostazione può essere modificata in fase di esecuzione tramite la proprietà del `UseFadeColor` servizio.
 
 ### <a name="fade-color"></a>Colore dissolvenza
 
-Controlla il colore dell'effetto di dissolvenza. Alpha viene ignorato. Questa impostazione può essere modificata in fase di esecuzione prima di una transizione tramite la proprietà del `FadeColor` servizio.
+Controlla il colore dell'effetto dissolvenza. Alfa viene ignorato. Questa impostazione può essere modificata in fase di esecuzione prima di una transizione tramite la proprietà del `FadeColor` servizio.
 
 ### <a name="fade-targets"></a>Destinazioni di dissolvenza
 
 Controlla le fotocamere a cui verrà applicato un effetto di dissolvenza. Questa impostazione può essere modificata in fase di esecuzione tramite la proprietà del `FadeTargets` servizio.
 
-Impostazione | Fotocamere di destinazione
+Impostazione | Fotocamere mirate
 --- | --- | ---
 Principale | Applica l'effetto dissolvenza alla fotocamera principale.
-Interfaccia utente | Applica l'effetto dissolvenza alle fotocamere nel livello dell'interfaccia utente. (Non influisce sull'interfaccia utente di sovrapposizione)
+Interfaccia utente | Applica l'effetto dissolvenza alle fotocamere sul livello dell'interfaccia utente. (Non influisce sull'interfaccia utente di sovrapposizione)
 Tutti | Si applica sia alle fotocamere principali che alle fotocamere dell'interfaccia utente.
 Personalizzato | Si applica a un set personalizzato di fotocamere fornite tramite `SetCustomFadeTargetCameras`
 
-### <a name="fade-out-time--fade-in-time"></a>Dissolvenza temporale/dissolvenza nel tempo
+### <a name="fade-out-time--fade-in-time"></a>Dissolvenza del tempo/dissolvenza nel tempo
 
 Impostazioni predefinite per la durata di una dissolvenza all'ingresso/uscita da una transizione. Queste impostazioni possono essere modificate in fase di esecuzione tramite le proprietà `FadeOutTime` e del `FadeInTime` servizio.
 
-### <a name="camera-fader-type"></a>Tipo di fader della fotocamera
+### <a name="camera-fader-type"></a>Tipo camera fader
 
-Classe `ICameraFader` da usare per applicare un effetto di dissolvenza alle fotocamere. La classe predefinita crea un'istanza di un quad con un materiale trasparente davanti alla fotocamera `CameraFaderQuad` di destinazione vicino al piano di ritaglio. Un altro approccio potrebbe consistere nell'usare un sistema di post-effetti.
+Classe `ICameraFader` da usare per applicare un effetto dissolvenza alle fotocamere. La classe `CameraFaderQuad` predefinita crea un'istanza di un quad con un materiale trasparente davanti alla fotocamera di destinazione vicino al piano di ritaglio. Un altro approccio potrebbe consistere nell'usare un sistema di post-effetti.
 
 ## <a name="using-the-extension"></a>Uso dell'estensione
 
-È possibile usare il servizio di transizione passando Le attività eseguite mentre la fotocamera è sfumare.
+Il servizio di transizione viene utilizzato passando le attività eseguite mentre la fotocamera è in dissolvenza.
 
 ### <a name="using-scene-system-tasks"></a>Uso delle attività di sistema della scena
 

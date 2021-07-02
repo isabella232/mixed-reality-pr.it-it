@@ -1,16 +1,16 @@
 ---
-title: Pulse Shader
+title: Pulse shader
 description: descrizione degli shader Pulse in MRTK.
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: e03c021689b6701b86ae25ba9fa253ece1368428
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 087806d48c7304d43f8383285cbaa2a12d8bf99a
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144946"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176309"
 ---
 # <a name="pulse-shader"></a>Pulse shader
 
@@ -29,22 +29,22 @@ I materiali seguenti usano **SR_Triangles** shader. È possibile configurare var
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Per l'esempio di mesh spaziale, assicurarsi che MRTK_Pulse_ArticulatedHandMeshBlue.mat o MRTK_Pulse_ArticulatedHandMeshPurple.mat sia assegnato in MrTK Settings -> Spatial Awareness -> Display Settings -> Visible Material (Impostazioni MRTK -> Spatial Awareness -> Display Settings -> Visible Material).
+Per l'esempio della mesh spaziale, assicurarsi che MRTK_Pulse_ArticulatedHandMeshBlue.mat o MRTK_Pulse_ArticulatedHandMeshPurple.mat sia assegnato in MRTK Impostazioni -> Spatial Awareness -> Display Impostazioni -> Visible Material (MrTK Impostazioni -> Spatial Awareness -> Display Impostazioni -> Visible Material).
 
-Per l'esempio della mesh manuale, assicurarsi che MRTK_Pulse_SpatialMeshBlue.mat o MRTK_Pulse_SpatialMeshPurple.mat sia assegnato in ArticulatedHandMesh.prefab, che a sua stesso deve essere assegnato in MRTK Settings -> Input -> Hand Tracking -> Hand Mesh Prefab (Impostazioni MRTK - Input -> Hand Tracking - > Hand Mesh Prefab).
+Per l'esempio della mesh manuale, assicurarsi che MRTK_Pulse_SpatialMeshBlue.mat o MRTK_Pulse_SpatialMeshPurple.mat sia assegnato in ArticulatedHandMesh.prefab, che a sua stessa deve essere assegnato nel prefab MRTK Impostazioni -> Input -> Hand Tracking -> Hand Mesh.
 
 ## <a name="how-it-works"></a>Funzionamento
 
-Lo shader con mesh manuale usa le UV per eseguire il mapping dell'pulse lungo la mesh della mano e per sfumare il corpo. Lo shader di ricorsiva della superficie usa le posizioni dei vertici per eseguire il mapping dell'pulse.
+Lo shader a mesh manuale usa le UV per eseguire il mapping dell'onda lungo la mesh mano e per dissolvere il corpo. Lo shader di ricorsiva della superficie usa le posizioni dei vertici per eseguire il mapping dell'pulse.
 
 ## <a name="spatial-mesh-example---pulseshaderspatialmeshexampleunity"></a>Esempio di mesh spaziale - PulseShaderSpatialMeshExample.unity
 
 Analogamente all'HoloLens 2 della shell, è possibile puntare e toccare con il raggio della mano per generare un effetto pulsante sulla mesh spaziale. La scena di esempio contiene l'oggetto ExampleSpatialMesh, che è un test dei dati della mesh spaziale per la modalità di gioco di Unity. Questo oggetto verrà disabilitato e nascosto nel dispositivo.
 
-Lo script **PulseShaderSpatialMeshHandler.cs** genera l'effetto pulse sulla mesh spaziale nella posizione del punto di hit se `PulseOnSelect` è true. La  `Auto Pulse` proprietà può anche essere impostata su true nel materiale stesso per un'animazione ripetuta.  Nella scena di esempio questo script è collegato al prefab PulseShaderSpatialMeshParent.  A questo prefab viene fatto riferimento nella proprietà Spatial Awareness Profile through Runtime Spatial Mesh Prefab . Durante il runtime, viene creata un'istanza del prefab PulseShaderSpatialMeshParent e viene aggiunta alla gerarchia della mesh spaziale (solo nel dispositivo questo comportamento non può essere osservato nell'editor).
+Lo script **PulseShaderSpatialMeshHandler.cs** genera l'effetto di pulsazione sulla mesh spaziale in corrispondenza della posizione del punto di hit, `PulseOnSelect` se è true. La  `Auto Pulse` proprietà può anche essere impostata su true nel materiale stesso per un'animazione ripetuta.  Nella scena di esempio questo script è collegato al prefab PulseShaderSpatialMeshParent.  A questo prefab viene fatto riferimento nella proprietà Spatial Awareness Profile through Runtime Spatial Mesh Prefab (Profilo di consapevolezza spaziale tramite la proprietà Runtime Spatial Mesh Prefab). Durante il runtime, viene creata un'istanza del prefab PulseShaderSpatialMeshParent e viene aggiunta alla gerarchia della mesh spaziale (solo nel dispositivo questo comportamento non può essere osservato nell'editor).
 
-## <a name="hand-mesh-example---pulseshaderhandmeshexampleunity"></a>Esempio di mesh manuale - PulseShaderHandMeshExample.unity
+## <a name="hand-mesh-example---pulseshaderhandmeshexampleunity"></a>Esempio di mesh mano - PulseShaderHandMeshExample.unity
 
-Questa scena di esempio illustra la visualizzazione della mesh della mano usando pulse shader. Quando viene rilevata una mano dal dispositivo HoloLens, l'animazione dell'impulso viene attivata una sola volta. Questo feedback visivo può aumentare l'attendibilità dell'interazione dell'utente. 
+Questa scena di esempio illustra la visualizzazione della mesh mano usando pulse shader. Quando viene rilevata una mano dal dispositivo HoloLens, l'animazione a pulsazione viene attivata una sola volta. Questo feedback visivo può aumentare l'attendibilità dell'interazione dell'utente. 
 
-Lo script **PulseShaderHandMeshHandler.cs** genera l'effetto pulse sul materiale assegnato. Per impostazione predefinita, l'opzione "Pulse On Hand Detected" è selezionata.
+Lo script **PulseShaderHandMeshHandler.cs** genera l'effetto di pulsazione sul materiale assegnato. Per impostazione predefinita, è selezionato "Pulse On Hand Detected".

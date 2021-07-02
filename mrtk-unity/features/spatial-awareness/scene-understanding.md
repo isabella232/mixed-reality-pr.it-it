@@ -1,20 +1,20 @@
 ---
-title: Informazioni sulla scena
+title: Osservatore di comprensione della scena
 description: descrive La comprensione della scena in MRTK
 author: MaxWang-MS
 ms.author: wangmax
 ms.date: 05/27/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, Scene Understanding
-ms.openlocfilehash: 67a8b99a281b6deecd621edb5600578806812d8a
-ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, comprensione della scena
+ms.openlocfilehash: d5430e7885055a550347c4ccebc1452f68125922
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "112449750"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176231"
 ---
-# <a name="scene-understanding"></a>Informazioni sulla scena
+# <a name="scene-understanding-observer"></a>Osservatore di comprensione della scena
 
-[Scene Understanding](/windows/mixed-reality/scene-understanding) restituisce una rappresentazione semantica delle entità della scena e delle relative forme geometriche __HoloLens 2__ (HoloLens 1° generazione non è supportato).
+[La comprensione della](/windows/mixed-reality/scene-understanding) scena restituisce una rappresentazione semantica delle entità della scena e delle __relative__ forme geometriche HoloLens 2 (HoloLens prima generazione non è supportata).
 
 Alcuni casi d'uso previsti di questa tecnologia sono:
 * Posizionare gli oggetti sulla superficie più vicina di un certo tipo (ad esempio, parete e pavimento)
@@ -22,16 +22,16 @@ Alcuni casi d'uso previsti di questa tecnologia sono:
 * Fornire la geometria descrittiva del motore di fisica come quad
 * Accelerare lo sviluppo evitando la necessità di scrivere algoritmi simili
 
-Scene Understanding è stato introdotto come __funzionalità sperimentale__ in MRTK 2.6. È integrato in MRTK come [osservatore spaziale](spatial-awareness-getting-started.md#register-observers) denominato [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) . Scene Understanding funziona sia con la pipeline XR legacy che con la pipeline XR SDK (sia OpenXR (a partire da MRTK 2.7) che con il plug-in Windows XR. In entrambi i casi viene `WindowsSceneUnderstandingObserver` usato .
+Scene Understanding è stata introdotta come __funzionalità sperimentale__ in MRTK 2.6. È integrato in MRTK come [osservatore spaziale](spatial-awareness-getting-started.md#register-observers) denominato [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) . Scene Understanding funziona sia con la pipeline XR legacy che con la pipeline XR SDK (sia OpenXR (a partire da MRTK 2.7) che con il plug-in XR Windows XR). In entrambi i casi viene `WindowsSceneUnderstandingObserver` usato .
 
 > [!NOTE] 
 > L'uso di Scene Understanding nella comunicazione remota non è supportato.
 
 ## <a name="observer-overview"></a>Panoramica dell'osservatore
 
-Quando richiesto, [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) restituirà [SpatialAwarenessSceneObject](xref:Microsoft.MixedReality.Toolkit.Experimental.SpatialAwareness.SpatialAwarenessSceneObject) con attributi utili per l'applicazione per comprenderne l'ambiente circostante. La frequenza di osservazione, il tipo di oggetto restituito (ad esempio parete, pavimento) e altri comportamenti dell'osservatore dipendono dalla configurazione dell'osservatore tramite profilo. Ad esempio, se si desidera la maschera di occlusione, l'osservatore deve essere configurato per generare quad. La scena osservata può essere salvata come file serializzato che può essere caricato in un secondo momento per ricreare la scena in modalità di riproduzione dell'editor.
+Quando richiesto, [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) restituirà [SpatialAwarenessSceneObject](xref:Microsoft.MixedReality.Toolkit.Experimental.SpatialAwareness.SpatialAwarenessSceneObject) con attributi utili per l'applicazione per comprenderne l'ambiente circostante. La frequenza di osservazione, il tipo di oggetto restituito (ad esempio parete, pavimento) e altri comportamenti dell'osservatore dipendono dalla configurazione dell'osservatore tramite profilo. Ad esempio, se si desidera utilizzare la maschera di occlusione, l'osservatore deve essere configurato per generare quad. La scena osservata può essere salvata come file serializzato che può essere caricato in un secondo momento per ricreare la scena in modalità di riproduzione dell'editor.
 
-## <a name="setup"></a>Eseguire la configurazione
+## <a name="setup"></a>Configurazione
 
 > [!IMPORTANT]
 > Scene Understanding è supportato solo in HoloLens 2 e Unity 2019.4 e versioni successive.
@@ -45,17 +45,17 @@ Il modo più rapido per iniziare a usare Scene Understanding è quello di contro
 
 ### <a name="scene-understanding-sample-scene"></a>Scena di esempio Di comprensione della scena
 
-In Unity usare Esplora progetti per aprire il file di scena in `Examples/Experimental/SceneUnderstanding/Scenes/SceneUnderstandingExample.unity` e premere play!
+In Unity usare il Project Explorer per aprire il file di scena in `Examples/Experimental/SceneUnderstanding/Scenes/SceneUnderstandingExample.unity` e premere play!
 
 ::: moniker range="< mrtkunity-2021-05"
 > [!IMPORTANT]
-> Si applica solo a MRTK 2.6.0: quando si usa lo strumento di funzionalità di realtà mista o in caso contrario si esegue l'importazione tramite UPM, importare l'esempio Demos - SpatialAwareness prima di importare l'esempio Experimental - SceneUnderstanding a causa di un problema di dipendenza. Per altre informazioni, vedere questo problema di [GitHub.](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431)
+> Si applica solo a MRTK 2.6.0: quando si usa lo strumento di funzionalità di realtà mista o in caso contrario si esegue l'importazione tramite UPM, importare l'esempio Demos - SpatialAwareness prima di importare l'esempio Experimental - SceneUnderstanding a causa di un problema di dipendenza. Per altre [informazioni, GitHub questo](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) problema.
 
 ::: moniker-end
 La scena illustra quanto segue:
 
 * Visualizzazione degli oggetti scena osservati con nell'interfaccia utente dell'applicazione per la configurazione dell'osservatore
-* Script `DemoSceneUnderstandingController` di esempio che illustra come modificare le impostazioni dell'osservatore e restare in ascolto degli eventi pertinenti
+* Script `DemoSceneUnderstandingController` di esempio che illustra come modificare le impostazioni dell'osservatore e restare in ascolto di eventi pertinenti
 * Salvataggio dei dati della scena nel dispositivo per lo sviluppo offline
 * Caricamento dei dati della scena salvati in precedenza (file con estensione bytes) per supportare il flusso di lavoro di sviluppo nell'editor
 
@@ -64,7 +64,7 @@ La scena illustra quanto segue:
 ::: moniker range="< mrtkunity-2021-05"
 
 > [!NOTE] 
-> La scena di esempio è basata sulla pipeline XR legacy. Se si usa la pipeline di XR SDK, è necessario modificare i profili di conseguenza. Il profilo del sistema di comprensione della scena ( ) e `DemoSceneUnderstandingSystemProfile` i profili scene understanding observer ( e ) funzionano per `DefaultSceneUnderstandingObserverProfile` `DemoSceneUnderstandingObserverProfile` entrambe le pipeline.
+> La scena di esempio è basata sulla pipeline XR legacy. Se si usa la pipeline di XR SDK, è necessario modificare i profili di conseguenza. Il profilo di sistema Scene Understanding Spatial Awareness System ( ) e `DemoSceneUnderstandingSystemProfile` i profili scene Understanding Observer ( e ) funzionano per `DefaultSceneUnderstandingObserverProfile` `DemoSceneUnderstandingObserverProfile` entrambe le pipeline.
 ::: moniker-end
 ::: moniker range="= mrtkunity-2021-05"
 

@@ -1,22 +1,22 @@
 ---
-title: Unit test
+title: Scrittura ed esecuzione di test
 description: Unit test per verificare l'affidabilità di MRTK.
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, UnitTest,
-ms.openlocfilehash: a915b005a69de1864a5674bbb0363f18d1c74b19
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: c8efb192982a1cb9ca07e91d29a69b11aaffc290
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121349"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177108"
 ---
-# <a name="writing-and-running-tests-in-mrtk"></a>Scrittura ed esecuzione di test in MRTK
+# <a name="writing-and-running-tests"></a>Scrittura ed esecuzione di test
 
 Per garantire l'affidabilità di MRTK, MRTK dispone di un set di test per garantire che le modifiche al codice non regredino nel comportamento esistente. Avere un code coverage di test valido in una grande codebase come MRTK è fondamentale per la stabilità e la certezza di apportare modifiche.
 
-MRTK usa [l'Test Runner Unity](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) che usa un'integrazione Unity di [NUnit](https://nunit.org/). Questa guida fornirà un punto di partenza su come aggiungere test a MRTK. Non verrà illustrata la [Test Runner Unity](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) e [NUnit](https://nunit.org/) che possono essere cercati nei collegamenti forniti.
+MRTK usa [l'Test Runner Unity](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) che usa un'integrazione Unity di [NUnit.](https://nunit.org/) Questa guida fornirà un punto di partenza su come aggiungere test a MRTK. Non verrà illustrata la [Test Runner Unity](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) e [NUnit](https://nunit.org/) che possono essere cercati nei collegamenti forniti.
 
 Prima di inviare una richiesta pull, assicurarsi di:
 
@@ -58,7 +58,7 @@ Eseguire i test sul progetto che si trova in H:\mrtk.dev, con Unity 2018.4, per 
 
 ### <a name="pull-request-validation"></a>Convalida delle richieste pull
 
-L'interfaccia utente di MRTK compila MRTK in tutte le configurazioni ed esegue tutti i test in modalità di modifica e riproduzione. L'cid può essere attivata pubblicando un commento nella richiesta pull di GitHub `/azp run mrtk_pr` se l'utente dispone di diritti sufficienti. Le esecuzioni ci sono visibili nella scheda "controlli" della richiesta pull.
+L'interfaccia utente di MRTK compila MRTK in tutte le configurazioni ed esegue tutti i test in modalità di modifica e riproduzione. L'interfaccia utente continua può essere attivata pubblicando un commento nella richiesta pull di GitHub `/azp run mrtk_pr` se l'utente dispone di diritti sufficienti. Le esecuzioni ci sono visibili nella scheda "controlli" della richiesta pull.
 
 Solo dopo che tutti i test sono stati superati correttamente, la richiesta pull può essere unita in main.
 
@@ -66,7 +66,7 @@ Solo dopo che tutti i test sono stati superati correttamente, la richiesta pull 
 
 In alcuni casi i test avranno esito negativo solo occasionalmente e ciò può risultare frustrante per il debug.
 
-Per eseguire più test in locale, modificare gli script di test in base a . Lo script Python seguente dovrebbe rendere questo scenario più pratico.
+Per eseguire più test in locale, modificare gli script di test in base a . Lo script Python seguente dovrebbe rendere più pratico questo scenario.
 
 Il prerequisito per l'esecuzione dello script Python [è l'installazione di Python 3.X.](https://www.python.org/downloads/)
 
@@ -221,7 +221,7 @@ namespace Microsoft.MixedReality.Toolkit.Tests
 
 ### <a name="edit-mode-tests"></a>Test in modalità di modifica
 
-I test in modalità di modifica vengono eseguiti in modalità di modifica di Unity e possono essere aggiunti nella cartella  >    >  **EditModeTests** dei test MRTK nel repo di Mixed Reality Toolkit.
+I test in modalità di modifica vengono eseguiti in modalità di modifica di Unity e possono essere aggiunti nella cartella  >    >  **EditModeTests** dei test MRTK nel Toolkit realtà mista.
 Per creare un nuovo test, è possibile usare il modello seguente:
 
 ```c#
@@ -285,8 +285,8 @@ Il posizionamento dei test basati su scenario è meno definito. Se il test esegu
 
 Quando si aggiunge un nuovo test, modificare lo script in modo che abbia l'icona corretta di MRTK. A tale scopo, è possibile usare un semplice strumento MRTK:
 
-1. Passare alla voce di menu Mixed Reality Toolkit
-1. Fare clic su Utilità, quindi su Aggiorna e infine su Icone
+1. Passare alla voce di menu Toolkit realtà mista
+1. Fare clic su Utilities (Utilità), quindi su Update (Aggiorna) e infine su Icons (Icone)
 1. Fare clic su Test. Lo updater verrà eseguito automaticamente, aggiornando tutti gli script di test senza le relative icone
 
 ### <a name="mrtk-utility-methods"></a>Metodi dell'utilità MRTK

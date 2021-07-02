@@ -1,17 +1,17 @@
 ---
-ms.openlocfilehash: 951c47d0e986fcf2691c75dac537bfd92ab6f98a
-ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
+ms.openlocfilehash: d12ef1cdf1d61ff362faa3fde09ba30674374d55
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112392446"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175430"
 ---
 # <a name="unity-2020--openxr"></a>[Unity 2020 + OpenXR](#tab/openxr)
 
 Scarica e **importa** [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.1/MRTK.Tutorials.PCHolographicRemoting.OpenXR.unitypackage).
 
 > [!TIP]
-> Per rivedere la procedura di importazione di un pacchetto personalizzato di Unity, puoi fare riferimento alle istruzioni contenute in [Importazione di Mixed Reality Toolkit](../mr-learning-base-02.md#importing-the-tutorial-assets).
+> Per rivedere la procedura di importazione di un pacchetto personalizzato di Unity, puoi fare riferimento alle istruzioni contenute in [Importazione di Mixed Reality Toolkit](../mr-learning-base-04.md#importing-the-tutorial-assets).
 
 Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progetto) avrà un aspetto simile al seguente:
 
@@ -22,7 +22,7 @@ Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progett
 Scarica e **importa** [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.1/MRTK.Tutorials.PCHolographicRemoting.LegacyWSA.unitypackage).
 
 > [!TIP]
-> Per rivedere la procedura di importazione di un pacchetto personalizzato di Unity, puoi fare riferimento alle istruzioni contenute in [Importazione di Mixed Reality Toolkit](../mr-learning-base-02.md#importing-the-tutorial-assets).
+> Per rivedere la procedura di importazione di un pacchetto personalizzato di Unity, puoi fare riferimento alle istruzioni contenute in [Importazione di Mixed Reality Toolkit](../mr-learning-base-04.md#importing-the-tutorial-assets).
 
 Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progetto) avrà un aspetto simile al seguente:
 

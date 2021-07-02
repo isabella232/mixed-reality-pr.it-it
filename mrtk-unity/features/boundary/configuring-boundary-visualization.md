@@ -5,20 +5,20 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, sistema di limiti,
-ms.openlocfilehash: 0f1a9edd9f9a31e7ba20f630406b299909a4864c
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 77bdaedb60700bac27643ae718c795c02e5ee7e7
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121249"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177093"
 ---
-# <a name="configuring-the-boundary-visualization"></a>Configurazione della visualizzazione dei limiti
+# <a name="configuring-boundary-visualization"></a>Configurazione della visualizzazione dei limiti
 
 Il *profilo di visualizzazione dei* limiti offre opzioni per la configurazione dell'aspetto visivo e di altri parametri correlati per il sistema di limiti. Le visualizzazioni dei limiti vengono collegate all'oggetto Playspace di realtà mista nella scena e teletrasportate con l'utente.
 
 ## <a name="general-settings"></a>Impostazioni generali
 
-![Impostazioni generali di visualizzazione dei limiti](../images/boundary/BoundaryVisualizationGeneralSettings.png)
+![Visualizzazione dei limiti Generale Impostazioni](../images/boundary/BoundaryVisualizationGeneralSettings.png)
 
 ### <a name="boundary-height"></a>Altezza limite
 
@@ -26,7 +26,7 @@ L'altezza limite indica la distanza sopra il piano del piano in corrispondenza d
 
 ## <a name="floor-settings"></a>Impostazioni del piano
 
-![Impostazioni del piano per la visualizzazione dei limiti](../images/boundary/BoundaryVisualizationFloorSettings.png)
+![Boundary Visualization Floor Impostazioni](../images/boundary/BoundaryVisualizationFloorSettings.png)
 
 **Mostra**
 
@@ -46,7 +46,7 @@ Livello su cui deve essere impostato il piano piano. Il valore predefinito è *I
 
 ## <a name="play-area-settings"></a>Impostazioni dell'area di riproduzione
 
-![Impostazioni dell'area di riproduzione per la visualizzazione dei limiti](../images/boundary/BoundaryVisualizationPlayAreaSettings.png)
+![Area di riproduzione per la visualizzazione dei limiti Impostazioni](../images/boundary/BoundaryVisualizationPlayAreaSettings.png)
 
 **Mostra**
 
@@ -62,11 +62,11 @@ Livello su cui deve essere impostata l'area di riproduzione. Il valore predefini
 
 ## <a name="tracked-area-settings"></a>Impostazioni dell'area rilevata
 
-![Impostazioni dell'area rilevata per la visualizzazione dei limiti](../images/boundary/BoundaryVisualizationTrackedAreaSettings.png)
+![Area tracciata per la visualizzazione dei limiti Impostazioni](../images/boundary/BoundaryVisualizationTrackedAreaSettings.png)
 
 **Mostra**
 
-Indica se la struttura dell'area tracciata deve essere creata e aggiunta alla scena. Il valore predefinito è true.
+Indica se il contorno dell'area tracciata deve essere creato e aggiunto alla scena. Il valore predefinito è true.
 
 **Materiale**
 
@@ -78,7 +78,7 @@ Livello su cui deve essere impostata l'area rilevata. Il valore predefinito è *
 
 ## <a name="boundary-wall-settings"></a>Impostazioni della barriera limite
 
-![Boundary Visualization Boundary Wall Settings](../images/boundary/BoundaryVisualizationWallSettings.png)
+![Limite limite di visualizzazione dei limiti Impostazioni](../images/boundary/BoundaryVisualizationWallSettings.png)
 
 **Mostra**
 
@@ -97,11 +97,11 @@ Livello su cui devono essere impostate le pareti limite. Il valore predefinito �
 
 ## <a name="boundary-ceiling-settings"></a>Impostazioni limite massimo
 
-![Boundary Visualization Boundary Ceiling Settings](../images/boundary/BoundaryVisualizationCeilingSettings.png)
+![Limite massimo limite di visualizzazione Impostazioni](../images/boundary/BoundaryVisualizationCeilingSettings.png)
 
 **Mostra**
 
-Indica se un piano limite del limite deve essere creato e aggiunto alla scena. Il valore predefinito è false.
+Indica se un piano limite deve essere creato e aggiunto alla scena. Il valore predefinito è false.
 
 **Materiale**
 

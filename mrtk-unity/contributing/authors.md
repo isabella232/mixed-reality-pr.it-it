@@ -1,139 +1,139 @@
 ---
 title: Autori
-description: Elenco di autori MRTK
+description: Elenco degli autori di MRTK
 author: cadia
 ms.author: cadia
 ms.date: 05/27/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, C#, Collaboratori, Community
-ms.openlocfilehash: e952926f067cb6be10621b2914372aaa47af5b7d
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, C#, collaboratori, Community
+ms.openlocfilehash: ae8cc8b1ab26a12188622a2c846dddd381491dc2
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647819"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177288"
 ---
 # <a name="authors"></a>Autori
 
-Microsoft Mixed Reality Toolkit è un progetto collaborativo che contiene contributi di singoli utenti in tutto il mondo. Grazie sincero a tutti coloro che hanno e continuano a contribuire.
+Microsoft Mixed Reality Toolkit è un progetto collaborativo che contiene i contributi di singoli utenti in tutto il mondo. Grazie sincero a tutti gli utenti che hanno e continuano a contribuire.
 
 - achaperon
-- Adam Mitchell (AdamMitchell-ms)
+- Adam Adam Adam Adam (AdamMitchell-ms)
 - Addison Linville (radicalad)
 - ADP-JoNeff
-- afarchy
+- afararchia
 - Against Lightning (AgainstLightning)
 - alandergrouse (alandergrouse)
 - Alex Floyd (elbuhofantasma)
 - Andrew Hall (ryzngard)
-- Antonio Zachesov (googlan)
+- Coro Zachesov (googlan)
 - Anuraag Puri (anuraag016)
-- artouflMS
-- Ben Godard (genbod)
-- Bernadette Thalhammer (thalbern)
-- Bertrand Oustriere (BertrandOustriere)
-- Ashley Gross (blgrossMS)
+- flouflMS
+- BenEstard (genbod)
+- Lateadette Thalhammer (thalbern)
+- Bertrand Oustrinico (BertrandOustriere)
+- Gross Gross (blgrossMS)
 - Brandon Furtwangler (brandf)
-- Bryan Truong (bhtruong93)
+- Truong Truong (ongtruong93)
 - C. M. Barth (chrisfromwork)
-- Davide (Cameron-Micka)
+- Frate (Frata-Micka)
 - cartwrightluke
 - Casey Crabb (ptc-ccrabb)
 - CDiaz-MS
-- cefoot
-- perimeazione
+- ce pedone
+- 10000
 - cihankurt98
 - CoPrez
-- Cristiano Carvalheiro (ccarvalheiro)
+- Kpi Carvalheiro (ccarvalheiro)
 - Daniel Hofmann (danielhofmann-ms)
 - David Evans (phosphoer)
-- David Johnson (djohnsomsft)
+- DavidDg (djohnsomsft)
 - David Kline (davidkline-ms)
 - deibich
 - deibu
-- Affressato (affresato)
-- Dino Fejzagić (FejZa)
+- Ffied (freed)
+- Dino Fejzagiji (FejZa)
 - Dirk Songür (DirkSonguer)
 - DominicAglialoro
-- Eric Carter (Ecnassianer)
+- Eric Eric Eric (Ecnassianer)
 - Eric Fiscus (MRW-Eric)
 - Eric O'Brien (ericob)
 - Eric Provencher (provencher)
 - etiennemargraff (meulta)
 - Eusebiu Marcu (eusebiu)
 - Evan Tice (in2dair)
-- Finn Sinclair (Zee2)
-- Fiorino Jasche (FlorianJa)
+- Park Sinclair (Zee2)
+- Jasche (JamianJa)
 - Forrest Trepte (ForrestTrepte)
-- Francesco Clasadonte (klasaf)
+- Clasadonte (klasaf)
 - gauravb4
-- George Johnston (gejohnst)
-- gilbdev (gibdev)
+- John johnston (gejohnst)
+- devbdev (devbdev)
 - Grace Lee (grayclee)
-- Graham Bury (grbury)
-- Harrison Ferrone (hferrone)
-- Julia Yu (harrisonyu)
+- Evasore (grbury)
+- Cernino (hferrone)
+- Yu Yu (yu)
 - hybridherbst
-- Hyung-il Kim (hyungilkim)
-- Jack Yang (jackyangzzh)
+- Hyung-il Jong (hyungilkim)
+- Jack Jack (jackyangzzh)
 - Jared Bienz [MSFT] (jbienzms)
 - Jarod (Jarodshow)
-- Jerome Humbert (djee-ms)
-- Lo fa Il disabile di Jesse Vander (FreakTheMighty)
+- JeromeBert (djee-ms)
+- In questo modo,Ndanda Vander fa (LasetheMighty)
 - John (johnppella)
-- Jon Palmer (JonPalmerGD)
+- Jon Palmer (PalmerGD)
 - Dana (Nakda)
-- Jonathan Palmer (JPalmerDev)
+- John Palmer (JPalmerDev)
 - Joost van Schaik (LocalJoost)
-- Josh Wittner (jwittner)
+- John Wittner (jwittner)
 - julesra
 - Julia Schwarz (julenka)
-- giulianoloehr-kg
+- kgloehr-kg
 - JungJik Lee (fnwinter)
-- Ken Jakubzak (KenJakubzak)
-- Kent1 (Kent1LG)
-- Kevin Kennedy (KevinKennedy)
+- Ken Jakububub (KenJakubub)
+- Lg1 (Lg1LG)
+- Kevin Kevin (KevinKennedy)
 - Kevin Semple (polar-kev)
-- kircher1
+- cher 1
 - kiyasu (holohiko)
-- Kjakubzak (Kjakubzak)
-- Curtosi (kevechy)
+- Kjakububub (Kjakububub)
+- Kpiis (keve kpi)
 - LaneMax
-- Lars Simkins (Railboy)
+- Lars Simkins (Railpag)
 - Luis Valverde (luval-microsoft)
 - Luis Valverde (luis-valverde-ms)
-- Lukas Tönne (lukastoenneMS)
+- Lsures Tönne (lsurestoenneMS)
 - Maciej Borowik (macborow)
-- Malcolm Tyrrell (MalcolmTyrrell)
-- Marek Stój (marek-stoj)
+- Malcolm Tycola (MalcolmTyezza)
+- Marek Stòj (marek-stoj)
 - Mark Finch (fast-slow-still)
-- Dino Valoriani (mvaloriani)
-- Matthejo
+- Valoriani (mvaloriani)
+- Uffizia (matthejo)
 - MaxWang-MS
 - mbeagley-MS
 - michael (insominx)
 - Michael House (michael-house)
-- Michael Kozlowski (mpkoz)
+- Michael Kozlsky (mpkoz)
 - ms738
 - Myranda (myrandaGoesToSpace)
-- Nathan Ostrander (naostranMS)
+- Credito Ostrander (naostranMS)
 - Niall Milsom (MenelvagorMilsom)
 - omanuke
-- Oscar Salandin (avalla)
+- Paolo Salandin (paese)
 - PatientEz
 - Patrick Cook (darax)
-- Philip (AllBecomesGood)
+- Paolo (AllBecomesGood)
 - ritijain
 - Robert Onulak (Ziugy)
 - Roberto Sonnino (robertos)
 - RogPodge
-- Roland Smeenk (consemeenk)
+- Scherma Smeenk (tutto)
 - Rosthouse (Rosthouse)
 - rwinj
 - SabinMGeorge
 - Sarah (SarahSexton)
-- Shawn Gwin (sgwin)
-- Shija Tachihara (decoc)
-- Simon (Darkside) Jackson (SimonDarksideJ)
+- Gwin (sgwin)
+- Shinette Tachitari (decoc)
+- Simon (Darkside) Michael (SimonDarksideJ)
 - sostel
 - Srinjoy Majumdar (srinjoym)
 - Stefan Wasserbauer (wassx)
@@ -142,12 +142,12 @@ Microsoft Mixed Reality Toolkit è un progetto collaborativo che contiene contri
 - Sue Loh [MS] (sloh-ms)
 - tarukosu (tarukosu)
 - Tim Gerken (timGerken)
-- Todd Williams (abile)
-- Troy Ferrell (Troy-Ferrell)
+- ToddZer (azerz)
+- Troy Fescher (Troy-Fescher)
 - Tux (NoTuxNoBux)
-- Vaoliva (Vaoliva)
-- Weasy (Weasy666)
+- Unava (Vaoliva)
+- W cheese (W più666)
 - Will (wiwei)
-- William Tian (witian)
+- Bill Tian (witian)
 - Yoon Park (cre8ivepark)
 - yoyo (Yoyozilla)

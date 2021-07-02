@@ -1,38 +1,38 @@
 ---
-title: Strumento di mapping dei controller
+title: Strumento di mapping del controller
 description: Documentazione sullo strumento di mapping dei controller in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: f00dc01555ef158dab21334761bd23ef6a70dba4
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
+ms.openlocfilehash: 8c1da7ae6a46bd00599a77b1c4cbb0b2f7baa632
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144083"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176174"
 ---
-# <a name="controller-mapping-tool"></a>Strumento di mapping dei controller
+# <a name="controller-mapping-tool"></a>Strumento di mapping del controller
 
-Lo strumento di mapping dei controller è uno strumento di runtime (nel dispositivo o nell'editor) che consente agli sviluppatori di determinare rapidamente l'asse di input di Unity e i mapping dei pulsanti per un controller hardware (ad esempio, controller di movimento).
+Lo strumento di mapping del controller è uno strumento di runtime (nel dispositivo o nell'editor) che consente agli sviluppatori di determinare rapidamente l'asse di input Unity e i mapping dei pulsanti per un controller hardware (ad esempio, un controller del movimento).
 
 Questo strumento è molto utile quando si sviluppa il supporto per un nuovo controller hardware. Può anche essere utile per confermare un sospetto problema di mapping dei controlli nella classe di supporto per un controller esistente.
 
-![Strumento di mapping dei controller](../images/controller-mapping-tool/ControllerMappingTool.png)
+![Strumento di mapping del controller](../images/controller-mapping-tool/ControllerMappingTool.png)
 
-## <a name="using-the-controller-mapping-tool"></a>Uso dello strumento di mapping dei controller
+## <a name="using-the-controller-mapping-tool"></a>Uso dello strumento di mapping del controller
 
-Per iniziare a usare lo strumento di mapping dei controller, passare a **MRTK/Tools/RuntimeTools/Tools/ControllerMappingTool** e aprire la **scena ControllerMappingTool.** Dopo aver caricato la scena, il progetto può essere eseguito nell'editor, usando la modalità di riproduzione o compilato ed eseguito in un dispositivo.
+Per iniziare a usare lo strumento di mapping del controller, passare a **MRTK/Tools/RuntimeTools/Tools/ControllerMappingTool** e aprire la **scena ControllerMappingTool.** Dopo che la scena è stata caricata, il progetto può essere eseguito nell'editor, usando la modalità di riproduzione o compilato ed eseguito in un dispositivo.
 
 Per esaminare i mapping di Unity per un controller:
 
-- Connettere il controller
+- Connessione il controller
 - Premere ogni pulsante e spostare ogni asse
-- Prendere nota dei mapping nella visualizzazione
+- Si notino i mapping nella visualizzazione
 - Aggiornare i mapping dei controlli nel provider di dati del sistema di input per il controller
 
 > [!NOTE]
-> Lo strumento di mapping dei controller non usa i componenti di Microsoft Mixed Reality Toolkit. Comunica direttamente con Unity per determinare e visualizzare i mapping dei controlli.
+> Lo strumento di mapping del controller non usa Microsoft Mixed Reality Toolkit componenti. Comunica direttamente con Unity per determinare e visualizzare i mapping dei controlli.
 
 ### <a name="all-controls-display"></a>Visualizzazione di tutti i controlli
 
@@ -46,7 +46,7 @@ Il pannello di visualizzazione più piccolo e ristretto mostra l'asse di input d
 
 ![Visualizzazione dei controlli attivi](../images/controller-mapping-tool/ActiveControls.png)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Creazione di un provider di dati del sistema di input](../input/create-data-provider.md)
 - [Strumento InputFeatureUsage](input-feature-usage-tool.md)

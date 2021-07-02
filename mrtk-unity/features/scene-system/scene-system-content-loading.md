@@ -1,20 +1,20 @@
 ---
 title: Caricamento del contenuto del sistema della scena
-description: Documentazione sul caricamento del sistema della scena con MRTK
+description: Documentazione sul caricamento del sistema scene con MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: f310b3687a6773404c7a998a3764163daf159857
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: c6bc6474afd50fe265853e53c0f29009d816cf51
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145141"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177581"
 ---
-# <a name="content-scene-loading"></a>Caricamento della scena di contenuto
+# <a name="scene-system-content-loading"></a>Caricamento del contenuto del sistema della scena
 
-Tutte le operazioni di caricamento del contenuto sono asincrone e, per impostazione predefinita, tutto il caricamento del contenuto è additivo. Le operazioni di caricamento del contenuto non hanno mai effetto sulle scene di gestione e di illuminazione. Per informazioni sul monitoraggio dello stato di avanzamento del caricamento e dell'attivazione della scena, vedere [Monitoraggio del caricamento del contenuto.](scene-system-load-progress.md)
+Tutte le operazioni di caricamento del contenuto sono asincrone e per impostazione predefinita tutto il caricamento del contenuto è additivo. Le operazioni di caricamento del contenuto non hanno mai effetto sulle scene di gestione e di illuminazione. Per informazioni sul monitoraggio dello stato di avanzamento del carico e dell'attivazione della scena, vedere [Monitoraggio del caricamento del contenuto](scene-system-load-progress.md).
 
 ## <a name="loading-content"></a>Caricamento del contenuto
 
@@ -32,7 +32,7 @@ await sceneSystem.LoadContent(new string[] { "MyContentScene1", "MyContentScene2
 
 ## <a name="single-scene-loading"></a>Caricamento di una singola scena
 
-L'equivalente di un singolo carico della scena può essere ottenuto tramite l'argomento `mode` facoltativo . `LoadSceneMode.Single` scarica tutte le scene di contenuto caricate prima di procedere con il caricamento.
+L'equivalente di un singolo carico di scena può essere ottenuto tramite l'argomento `mode` facoltativo . `LoadSceneMode.Single` scarica prima tutte le scene di contenuto caricato prima di procedere con il caricamento.
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -49,11 +49,11 @@ await sceneSystem.LoadContent("SingleContentScene", LoadSceneMode.Single);
 
 ## <a name="next--previous-scene-loading"></a>Caricamento della scena successiva/precedente
 
-Il contenuto può essere caricato in ordine di indice di compilazione. Ciò è utile per presentare le applicazioni che consentono agli utenti di eseguire una serie di scene dimostrativi una alla volta.
+Il contenuto può essere caricato in ordine di indice di compilazione. Ciò è utile per presentare le applicazioni che consentono agli utenti di eseguire una alla volta un set di scene dimostrativi.
 
 ![Scene correnti nella compilazione nelle impostazioni del lettore](../images/scene-system/MRTK_SceneSystemBuildSettings.png)
 
-Si noti che il caricamento del contenuto successivo/precedente usa LoadSceneMode.Single per impostazione predefinita per garantire che il contenuto precedente sia scaricato.
+Si noti che il caricamento del contenuto successivo/preliminare usa LoadSceneMode.Single per impostazione predefinita per garantire che il contenuto precedente sia scaricato.
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -71,7 +71,7 @@ if (prevSceneRequested && sceneSystem.PrevContentExists)
 
 `PrevContentExists` restituirà true se è presente almeno una scena di contenuto con un indice di compilazione inferiore rispetto all'indice di compilazione più basso attualmente caricato. `NextContentExists` restituirà true se è presente almeno una scena di contenuto con un indice di compilazione più alto rispetto all'indice di compilazione più alto attualmente caricato.
 
-Se `wrap` l'argomento è true, il contenuto torna all'indice della prima o dell'ultima compilazione. In questo modo non è più necessario verificare il contenuto successivo o precedente:
+Se `wrap` l'argomento è true, il contenuto torna all'indice di prima/ultima compilazione. In questo modo viene rimossa la necessità di controllare il contenuto successivo/precedente:
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -89,9 +89,9 @@ if (prevSceneRequested)
 
 ## <a name="loading-by-tag"></a>Caricamento in base al tag
 
-![Caricamento di scene di contenuto per tag](../images/scene-system/MRTK_SceneSystemLoadingByTag.png)
+![Caricamento di scene di contenuto in base al tag](../images/scene-system/MRTK_SceneSystemLoadingByTag.png)
 
-A volte è consigliabile caricare scene di contenuto in gruppi. Ad esempio, una fase di un'esperienza può essere costituita da più scene, che devono essere caricate contemporaneamente per funzionare. Per semplificare questa operazione, è possibile contrassegnare le scene e quindi caricarle o scaricarle con tale tag.
+A volte è preferibile caricare scene di contenuto in gruppi. Ad esempio, una fase di un'esperienza può essere costituita da più scene, tutte da caricare contemporaneamente per funzionare. Per semplificare questa operazione, è possibile contrassegnare le scene e quindi caricarle o scaricarle con tale tag.
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -116,11 +116,11 @@ await LoadContentByTag("Vegetation");
 
 ### <a name="testing-content"></a>Test del contenuto
 
-Nome scena | Tag scena | Caricato dallo script
+Nome scena | Tag della scena | Caricato da script
 ---|---|---
-DebugPhysics | Terreno | •
+DebugTerrainPhysics | Terreno | •
 StructureTesting | Strutture | •
-Strumenti Disastrumenti | Vegetazione | •
+Estrumenti di verde | Vegetazione | •
 Mountain | Terreno | •
 Cabina | Strutture | •
 Trees | Vegetazione | •

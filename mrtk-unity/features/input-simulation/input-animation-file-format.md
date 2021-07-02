@@ -4,15 +4,15 @@ description: Documentazione sulla specifica del formato di file binario dell'ani
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: ba232818c0a49d803ca6fae0b5adbc64e6deefa8
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
+ms.openlocfilehash: 400212d80833f5d8dfbb3c5265c755ed2e127131
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145127"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176999"
 ---
-# <a name="input-animation-binary-file-format-specification"></a>Specifica del formato di file binario dell'animazione di input
+# <a name="input-animation-file-format"></a>Formato del file di animazione di input
 
 ## <a name="overall-structure"></a>Struttura complessiva
 
@@ -35,17 +35,17 @@ I dati di animazione di input sono costituiti da tre valori booleani che indican
 
 | Sezione | Type | Note |
 |---------|------|------|
-| Ha la posizione della fotocamera | Booleano | |
-| Ha dati della mano | Booleano | |
-| Ha lo sguardo fisso| Booleano | |
-| Fotocamera | [Curve di posizione](#pose-curves) | Solo se La posizione della fotocamera è true |
-| Mano tracciata a sinistra | [Curva booleana](#boolean-curve) | Solo se Has Hand Data è true |
-| Mano tracciata a destra | [Curva booleana](#boolean-curve) | Solo se Has Hand Data è true |
-| Avvicinamento della mano verso sinistra | [Curva booleana](#boolean-curve) | Solo se Has Hand Data è true |
+| Ha la posizione della fotocamera | Boolean | |
+| Ha dati della mano | Boolean | |
+| Ha lo sguardo fisso| Boolean | |
+| Fotocamera | [Curve di pose](#pose-curves) | Solo se La posizione della fotocamera è true |
+| Tracciato a mano a sinistra | [Curva booleana](#boolean-curve) | Solo se Has Hand Data è true |
+| Tracciato a destra | [Curva booleana](#boolean-curve) | Solo se Has Hand Data è true |
+| Avvicinamento delle dita a sinistra | [Curva booleana](#boolean-curve) | Solo se Has Hand Data è true |
 | Avvicinamento delle dita a destra | [Curva booleana](#boolean-curve) | Solo se Has Hand Data è true |
-| Giunzioni della mano a sinistra | [Curve di posizione giunzione](#joint-pose-curves) | Solo se Has Hand Data è true |
-| Giunzioni della mano a destra | [Curve di posizione giunzione](#joint-pose-curves) | Solo se Has Hand Data è true |
-| Sguardo fisso | [Curve di raggio](#ray-curves)] | Solo se Ha sguardo fisso è true |
+| Giunzioni della mano a sinistra | [Curve di posizione congiunta](#joint-pose-curves) | Solo se Has Hand Data è true |
+| Giunzioni della mano a destra | [Curve di posizione congiunta](#joint-pose-curves) | Solo se Has Hand Data è true |
+| Sguardo fisso | [Curve di raggio](#ray-curves)] | Solo se ha lo sguardo fisso è true |
 
 ## <a name="version-10"></a>Versione 1.0
 
@@ -53,47 +53,47 @@ I dati di animazione di input sono costituiti da una sequenza di curve di animaz
 
 | Sezione | Tipo |
 |---------|------|
-| Fotocamera | [Curve di posizione](#pose-curves) |
-| Mano tracciata a sinistra | [Curva booleana](#boolean-curve) |
-| Mano tracciata a destra | [Curva booleana](#boolean-curve) |
-| Avvicinamento della mano verso sinistra | [Curva booleana](#boolean-curve) |
+| Fotocamera | [Curve di pose](#pose-curves) |
+| Tracciato a mano a sinistra | [Curva booleana](#boolean-curve) |
+| Tracciato a destra | [Curva booleana](#boolean-curve) |
+| Avvicinamento delle dita a sinistra | [Curva booleana](#boolean-curve) |
 | Avvicinamento delle dita a destra | [Curva booleana](#boolean-curve) |
-| Giunzioni della mano a sinistra | [Curve di posizione giunzione](#joint-pose-curves) |
-| Giunzioni della mano a destra | [Curve di posizione giunzione](#joint-pose-curves) |
+| Giunzioni della mano a sinistra | [Curve di posizione congiunta](#joint-pose-curves) |
+| Giunzioni della mano a destra | [Curve di posizione congiunta](#joint-pose-curves) |
 
-### <a name="joint-pose-curves"></a>Curve di posizione giunzione
+### <a name="joint-pose-curves"></a>Curve di posizione congiunta
 
-Per ogni mano viene archiviata una sequenza di curve di animazione congiunte. Il numero di giunzioni è fisso e viene archiviato un set di curve di posizione per ogni giunzione.
+Per ogni mano viene archiviata una sequenza di curve di animazione articolare. Il numero di giunzioni è fisso e un set di curve di posizione viene archiviato per ogni giunzione.
 
 | Sezione | Tipo |
 |---------|------|
-| Nessuno | [Curve di posizione](#pose-curves) |
-| Polso | [Curve di posizione](#pose-curves) |
-| Palm | [Curve di posizione](#pose-curves) |
-| ThumbMetacarpalJoint | [Curve di posizione](#pose-curves) |
-| ThumbProximalJoint | [Curve di posizione](#pose-curves) |
-| ThumbDistalJoint | [Curve di posizione](#pose-curves) |
-| Descrizione comando | [Curve di posizione](#pose-curves) |
-| IndexMetacarpal | [Curve di posizione](#pose-curves) |
-| IndexKnuckle | [Curve di posizione](#pose-curves) |
-| IndexMiddleJoint | [Curve di posizione](#pose-curves) |
-| IndexDistalJoint | [Curve di pose](#pose-curves) |
-| Suggerimento indice | [Curve di pose](#pose-curves) |
-| MiddleMetacarpal | [Curve di pose](#pose-curves) |
-| MiddleKnuckle | [Curve di pose](#pose-curves) |
-| MiddleMiddleJoint | [Curve di pose](#pose-curves) |
-| MiddleDistalJoint | [Curve di pose](#pose-curves) |
-| Suggerimento intermedio | [Curve di pose](#pose-curves) |
-| RingMetacarpal | [Curve di pose](#pose-curves) |
-| RingKnuckle | [Curve di pose](#pose-curves) |
-| RingMiddleJoint | [Curve di pose](#pose-curves) |
-| RingDistalJoint | [Curve di pose](#pose-curves) |
+| Nessuno | [Curve di pose](#pose-curves) |
+| Polso | [Curve di pose](#pose-curves) |
+| Palm | [Curve di pose](#pose-curves) |
+| ThumbMetacarpalJoint | [Curve di pose](#pose-curves) |
+| ThumbProximalJoint | [Curve di pose](#pose-curves) |
+| ThumbDistalJoint | [Curve di pose](#pose-curves) |
 | Descrizione comando | [Curve di pose](#pose-curves) |
-| PinkyMetacarpal | [Curve di pose](#pose-curves) |
-| PinkyKnuckle | [Curve di pose](#pose-curves) |
-| PinkyMiddleJoint | [Curve di pose](#pose-curves) |
-| PinkyDistalJoint | [Curve di pose](#pose-curves) |
-| PinkyTip | [Curve di pose](#pose-curves) |
+| IndexMetacarpal | [Curve di pose](#pose-curves) |
+| IndexKnuckle | [Curve di pose](#pose-curves) |
+| IndexMiddleJoint | [Curve di pose](#pose-curves) |
+| IndexDistalJoint | [Curve di posizione](#pose-curves) |
+| Suggerimento indice | [Curve di posizione](#pose-curves) |
+| MiddleMetacarpal | [Curve di posizione](#pose-curves) |
+| MiddleKnuckle | [Curve di posizione](#pose-curves) |
+| MiddleMiddleJoint | [Curve di posizione](#pose-curves) |
+| MiddleDistalJoint | [Curve di posizione](#pose-curves) |
+| Suggerimento intermedio | [Curve di posizione](#pose-curves) |
+| RingMetacarpal | [Curve di posizione](#pose-curves) |
+| RingKnuckle | [Curve di posizione](#pose-curves) |
+| RingMiddleJoint | [Curve di posizione](#pose-curves) |
+| RingDistalJoint | [Curve di posizione](#pose-curves) |
+| Descrizione comandi | [Curve di posizione](#pose-curves) |
+| RosaMetacarpal | [Curve di posizione](#pose-curves) |
+| PinkyKnuckle | [Curve di posizione](#pose-curves) |
+| Rosa MiddleJoint | [Curve di posizione](#pose-curves) |
+| RosadistalJoint | [Curve di posizione](#pose-curves) |
+| PinkyTip | [Curve di posizione](#pose-curves) |
 
 ### <a name="pose-curves"></a>Curve di posizione
 
@@ -101,8 +101,8 @@ Le curve di posizione sono una sequenza di 3 curve di animazione per il vettore 
 
 | Sezione | Tipo |
 |---------|------|
-| Posizione X | [Curva float](#float-curve) |
-| Posizione Y | [Curva float](#float-curve) |
+| Posizione X | [Float Curve](#float-curve) |
+| Posizione Y | [Float Curve](#float-curve) |
 | Posizione Z | [Float Curve](#float-curve) |
 | Rotazione X | [Float Curve](#float-curve) |
 | Rotazione Y | [Float Curve](#float-curve) |
@@ -119,17 +119,17 @@ Le curve di raggio sono una sequenza di 3 curve di animazione per il vettore di 
 | Origine Y | [Float Curve](#float-curve) |
 | Origine Z | [Float Curve](#float-curve) |
 | Direzione X | [Float Curve](#float-curve) |
-| Direzione Y | [Curva float](#float-curve) |
-| Direzione Z | [Curva float](#float-curve) |
+| Direzione Y | [Float Curve](#float-curve) |
+| Direzione Z | [Float Curve](#float-curve) |
 
 ### <a name="float-curve"></a>Curva float
 
-Le curve a virgola mobile sono curve Bézier completamente funzionanti con un numero variabile di fotogrammi chiave. Ogni fotogramma chiave archivia un tempo e un valore di curva, nonché tangenti e pesi sul lato sinistro e destro di ogni fotogramma chiave.
+Le curve a virgola mobile sono curve di Bézier completamente funzionanti con un numero variabile di fotogrammi chiave. Ogni fotogramma chiave archivia un tempo e un valore di curva, nonché tangenti e pesi sul lato sinistro e destro di ogni fotogramma chiave.
 
 | Sezione | Tipo |
 |---------|------|
-| Modalità di pre-ritorno a capo | Int32, [modalità di ritorno a capo](#wrap-mode) |
-| Modalità post-wrapping | Int32, [modalità di ritorno a capo](#wrap-mode) |
+| Modalità di pre-wrapping | Int32, [modalità wrap](#wrap-mode) |
+| Modalità post-wrapping | Int32, [modalità wrap](#wrap-mode) |
 | Numero di fotogrammi chiave | Int32 |
 | Fotogrammi chiave | [Fotogramma chiave float](#float-keyframe) |
 
@@ -140,7 +140,7 @@ Un fotogramma chiave float archivia i valori di tangente e peso insieme all'ora 
 | Sezione | Tipo |
 |---------|------|
 | Ora | Float32 |
-| valore | Float32 |
+| Valore | Float32 |
 | InTangent | Float32 |
 | OutTangent | Float32 |
 | InWeight | Float32 |
@@ -149,12 +149,12 @@ Un fotogramma chiave float archivia i valori di tangente e peso insieme all'ora 
 
 ### <a name="boolean-curve"></a>Curva booleana
 
-Le curve booleane sono semplici sequenze di valori on/off. In ogni fotogramma chiave il valore della curva viene capovolto immediatamente.
+Le curve booleane sono semplici sequenze di valori di on/off. In ogni fotogramma chiave il valore della curva viene capovolto immediatamente.
 
 | Sezione | Tipo |
 |---------|------|
-| Modalità di pre-wrapping | Int32, [modalità wrap](#wrap-mode) |
-| Modalità post-wrapping | Int32, [modalità wrap](#wrap-mode) |
+| Modalità di pre-ritorno a capo | Int32, [modalità di ritorno a capo](#wrap-mode) |
+| Modalità post-wrapping | Int32, [modalità di ritorno a capo](#wrap-mode) |
 | Numero di fotogrammi chiave | Int32 |
 | Fotogrammi chiave | [Fotogramma chiave booleano](#boolean-keyframe) |
 
@@ -165,13 +165,13 @@ Un fotogramma chiave booleano archivia solo un'ora e un valore.
 | Sezione | Tipo |
 |---------|------|
 | Ora | Float32 |
-| valore | Float32 |
+| Valore | Float32 |
 
 ### <a name="wrap-mode"></a>Modalità di ritorno a capo
 
 La semantica delle modalità Pre e Post-Wrap segue la [definizione WrapMode di Unity.](https://docs.unity3d.com/ScriptReference/WrapMode.html) Sono una combinazione dei bit seguenti:
 
-| valore | Significato |
+| Valore | Significato |
 |-------|---------|
 | 0 | Impostazione predefinita: legge la modalità di ripetizione predefinita impostata più in alto. |
 | 1 | Una volta: quando il tempo raggiunge la fine del clip di animazione, la riproduzione del clip viene interrotta automaticamente e l'ora viene reimpostata all'inizio del clip. |
@@ -183,7 +183,7 @@ La semantica delle modalità Pre e Post-Wrap segue la [definizione WrapMode di U
 
 La semantica della modalità Ponderata segue la [definizione di Unity WeightedMode.](https://docs.unity3d.com/ScriptReference/WeightedMode.html)
 
-| valore | Significato |
+| Valore | Significato |
 |-------|---------|
 | 0 | Nessuno: esclude sia inWeight che outWeight durante il calcolo dei segmenti della curva. |
 | 1 | In: Includere inWeight durante il calcolo del segmento della curva precedente. |

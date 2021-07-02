@@ -1,18 +1,18 @@
 ---
-title: Tracciamento oculare di occhi e mani
+title: Occhi e mani
 description: Come usare il targeting oculare come puntatore principale in combinazione con i movimenti della mano in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, EyeTracking,
-ms.openlocfilehash: c9d5f23610d821aa1e50a3217a4be736601dc14d
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: ff464c6f2381a9df020a9ccf807672d4463d662c
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143995"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175117"
 ---
-# <a name="eyes--hand-interaction"></a>Occhi e interazione con la mano
+# <a name="eyes-and-hands"></a>Occhi e mani
 
 ## <a name="how-to-support-_look--hand-motions_-eye-gaze--hand-gestures"></a>Come supportare _l'aspetto e i movimenti della mano_ (sguardo fisso & movimenti della mano)
 
@@ -29,7 +29,7 @@ Tuttavia, questo potrebbe non essere il modo in cui si vuole interagire a una di
 
 ### <a name="how-to-disable-the-hand-ray"></a>Come disabilitare il raggio della mano
 
-Per disabilitare l'indicatore di misura del raggio della mano, è sufficiente rimuovere _"DefaultControllerPointer"_ nell'impostazione di configurazione _Input -> POINTER_ MRTK.
+Per disabilitare l'indicatore di misura del raggio della mano, è sufficiente rimuovere _"DefaultControllerPointer"_ nell'impostazione di configurazione _Input -> pointer_ MRTK.
 Per usare occhi e mani come descritto in precedenza nell'app, assicurarsi anche di soddisfare tutti i requisiti per [l'uso del tracciamento oculare.](eye-tracking-basic-setup.md)
 
 ![Come rimuovere il raggio della mano](../../images/eye-tracking/mrtk_setup_removehandray.jpg)
@@ -38,7 +38,7 @@ Per usare occhi e mani come descritto in precedenza nell'app, assicurarsi anche 
 
 ### <a name="how-to-keep-gaze-pointer-always-on"></a>Come mantenere sempre l'indicatore di misura dello sguardo fisso
 
-Per evitare che i puntatori della testa o dello sguardo oculare siano automaticamente soppressi quando viene rilevata una mano, è possibile specificare lo sguardo per controllare se deve essere attivata [`PointerBehavior`](xref:Microsoft.MixedReality.Toolkit.Input.PointerBehavior) o disattivata.
+Per evitare che i puntatori con la testa o lo sguardo fisso siano soppressi automaticamente una volta rilevata una mano, è possibile specificare lo sguardo fisso per controllare se deve essere [`PointerBehavior`](xref:Microsoft.MixedReality.Toolkit.Input.PointerBehavior) attivata o disattivata.
 
 ```c#
 // Turn on gaze pointer
@@ -48,4 +48,4 @@ PointerUtils.SetGazePointerBehavior(PointerBehavior.AlwaysOn);
 Vedere [`Controllers Pointers and Focus`](../../../architecture/controllers-pointers-and-focus.md)
 
 ---
-[Tornare a "Tracciamento oculare in MixedRealityToolkit"](eye-tracking-main.md)
+[Torna a "Tracciamento oculare in MixedRealityToolkit"](eye-tracking-main.md)

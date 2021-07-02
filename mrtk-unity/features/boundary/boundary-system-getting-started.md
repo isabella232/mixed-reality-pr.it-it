@@ -5,22 +5,22 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, sistema di limiti,
-ms.openlocfilehash: 405a2d06be5d929d5c276fc8cd7ab36b6b3cf68c
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: fd70479e5183e9a7557de5c5a532cc87161be017
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121359"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177081"
 ---
-# <a name="boundary-system"></a>Sistema di limiti
+# <a name="boundary-system-overview"></a>Panoramica del sistema di limiti
 
 Il sistema di limiti fornisce il supporto per la visualizzazione dei componenti limite di Realtà virtuale nelle applicazioni di realtà mista. I limiti definiscono l'area in cui gli utenti possono spostarsi in modo sicuro mentre si indossano i visori VR. I limiti sono un componente importante di un'esperienza di realtà mista per aiutare gli utenti a evitare ostacoli imprevisti durante l'uso di un visore VR.
 
-Molte piattaforme di realtà virtuale offrono uno schermo automatico, ad esempio un contorno bianco sovrapposto al mondo virtuale quando l'utente o il controller si avvicina al limite. Il sistema di limiti di Mixed Reality Toolkit estende questa funzionalità per consentire la visualizzazione di una struttura dell'area tracciata, di un piano piano e di altre funzionalità che possono essere usate per fornire informazioni aggiuntive agli utenti.
+Molte piattaforme di realtà virtuale offrono uno schermo automatico, ad esempio un contorno bianco sovrapposto al mondo virtuale quando l'utente o il controller si avvicina al limite. Il sistema di limiti del Toolkit realtà mista estende questa funzionalità per consentire la visualizzazione di una struttura dell'area tracciata, di un piano piano e di altre funzionalità che possono essere usate per fornire informazioni aggiuntive agli utenti.
 
 ## <a name="getting-started"></a>Guida introduttiva
 
-L'aggiunta del supporto per i limiti richiede due componenti chiave di Mixed Reality Toolkit: il sistema di limiti e una piattaforma di realtà virtuale configurata con un limite.
+L'aggiunta del supporto per i limiti richiede due componenti chiave dell'Toolkit realtà mista: il sistema di limiti e una piattaforma di realtà virtuale configurata con un limite.
 
 1. [Abilitare](#enable-boundary-system) il sistema di limiti
 2. [Configurare la](#configure-boundary-visualization) visualizzazione dei limiti

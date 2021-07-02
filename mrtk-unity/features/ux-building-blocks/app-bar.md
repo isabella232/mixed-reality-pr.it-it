@@ -1,28 +1,28 @@
 ---
-title: README_AppBar
+title: Barra dell'app
 description: Panoramica sulla barra dell'app in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, barra dell'app,
-ms.openlocfilehash: 5bb7f780cf49486c68ca6dc3efa6c8cccd55ab65
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, barra delle app,
+ms.openlocfilehash: 3c8633d91b2c26f8bdc774a98b2cb48ffb276720
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693028"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175689"
 ---
 # <a name="app-bar"></a>Barra dell'app
 
 ![Barra dell'app](../images/app-bar/MRTK_AppBar_Main.png)
 
-La barra dell'app è un componente dell'interfaccia utente usato insieme allo script di [controllo dei limiti](bounds-control.md) . Aggiunge i controlli Button a un oggetto con l'intenzione di modificarlo. Utilizzando il pulsante ' Adjust ', l'interfaccia di controllo dei limiti per un oggetto può essere disattivata. Il pulsante "Rimuovi" deve rimuovere l'oggetto dalla scena.
+La barra dell'app è un componente dell'interfaccia utente che viene usato insieme allo script [di controllo dei](bounds-control.md) limiti. Aggiunge i controlli pulsante a un oggetto con la finalità di modificarlo. Usando il pulsante "Regola", l'interfaccia di controllo dei limiti per un oggetto può essere de-/attivata. Il pulsante "Rimuovi" dovrebbe rimuovere l'oggetto dalla scena.
 
 ## <a name="how-to-use-app-bar"></a>Come usare la barra dell'app
 
-Trascinare e rilasciare `AppBar` (assets/MRTK/SDK/features/UX/precasers/AppBar/AppBar. prefabricable) nella gerarchia della scena. Nel pannello Inspector del componente, assegnare un oggetto con un controllo Bounds come rettangolo di selezione di *destinazione* a cui aggiungere la barra dell'app.
+Trascinare `AppBar` (Assets/MRTK/SDK/Features/UX/Prefabs/AppBar/AppBar.prefab) nella gerarchia della scena. Nel pannello di controllo del componente assegnare qualsiasi oggetto con un controllo limiti come rettangolo di selezione di destinazione *per* aggiungere la barra dell'app.
 
-**Importante:** L'opzione di attivazione del controllo dei limiti per l'oggetto di destinazione deve essere ' Activate manually '.
+**Importante:** L'opzione di attivazione del controllo dei limiti per l'oggetto di destinazione deve essere "Attiva manualmente".
 
 <img src="../images/app-bar/MRTK_AppBar_Setup1.png" width="450" alt="Setup 1">
 

@@ -5,21 +5,21 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, MaterialInstance,
-ms.openlocfilehash: 216fa72af6bb6caaf47e30c156f7caf1b1dab71e
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: ecd8f9e14564cbd03cb6faa848b06ca55a024207
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145209"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176718"
 ---
 # <a name="material-instance"></a>Istanza material
 
 Il [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) comportamento consente di tenere traccia della durata del materiale dell'istanza e di eliminare automaticamente i materiali di istanza per l'utente. Questo componente dell'utilità può essere usato come sostituzione di [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) o [Renderer.materials.](https://docs.unity3d.com/ScriptReference/Renderer-materials.html)
 
 > [!NOTE]
-> [Gli oggetti MaterialPropertyBlock sono](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) preferibili rispetto alle istanze di materiale, ma non sono sempre disponibili in tutti gli scenari.
+> [Gli oggetti MaterialPropertyBlock sono](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) preferibili rispetto alle istanze dei materiali, ma non sono sempre disponibili in tutti gli scenari.
 
-Perché [l'uso di Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) può essere un problema? Se si aggiunge il codice seguente a una scena Unity e si preme l'uso della memoria di riproduzione, l'uso della memoria continuerà a essere molto familiare:
+Perché [l'uso di Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) può essere un problema? Se si aggiunge il codice seguente a una scena Unity e si preme l'utilizzo della memoria di riproduzione, l'uso della memoria continuerà a essere molto familiare:
 
 ```c#
 public class Leak : MonoBehaviour
@@ -105,6 +105,6 @@ public class MyBehaviour : MonoBehaviour,  IMaterialInstanceOwner
 
 Per altre informazioni, vedere l'esempio di utilizzo illustrato all'interno del [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) comportamento.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [MRTK Standard Shader](mrtk-standard-shader.md)

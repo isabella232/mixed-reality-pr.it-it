@@ -1,20 +1,20 @@
 ---
-title: Uso del Gestione pacchetti Unity
+title: Uso dell'Gestione pacchetti Unity
 description: Uso di MRTK in Unity Gestione pacchetti
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, pacchetti MRTK,
-ms.openlocfilehash: e3e7a2d06cd38d7a9e8daf579f1a312904a86280
-ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
+ms.openlocfilehash: 524783c48b82722aec26648ea54477a6c7bcd4ae
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110345074"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177323"
 ---
-# <a name="mixed-reality-toolkit-and-unity-package-manager"></a>Mixed Reality Toolkit e Unity Gestione pacchetti
+# <a name="using-the-unity-package-manager"></a>Uso dell'Gestione pacchetti Unity
 
-A partire dalla versione 2.5.0, con [lo](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool)strumento di funzionalità di realtà mista , Microsoft Mixed Reality Toolkit si integra con Unity Gestione pacchetti (UPM) quando si usa Unity 2019.4 e versioni più recente.
+A partire dalla versione 2.5.0, con lo strumento di funzionalità di realtà mista [,](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool)Microsoft Mixed Reality Toolkit si integra con Unity Gestione pacchetti (UPM) quando si usa Unity 2019.4 e versioni più nuove.
 
 ## <a name="using-the-mixed-reality-feature-tool"></a>Uso dello strumento di funzionalità di realtà mista
 
@@ -37,14 +37,14 @@ Quando si selezionano le funzionalità, non è necessario preoccuparsi delle dip
 
 ## <a name="managing-mixed-reality-features-with-the-unity-package-manager"></a>Gestione delle funzionalità di realtà mista con Unity Gestione pacchetti
 
-Dopo aver aggiunto un pacchetto mixed reality toolkit al manifesto del pacchetto, è possibile gestire il pacchetto usando l'interfaccia utente Gestione pacchetti Unity.
+Dopo che un pacchetto Toolkit realtà mista è stato aggiunto al manifesto del pacchetto, può essere gestito usando l'interfaccia utente Gestione pacchetti unity.
 
 ![Pacchetto UPM di MRTK Foundation](../features/images/packaging/MRTK_FoundationUPM.png)
 
 > [!NOTE]
-> Se un pacchetto mixed reality toolkit viene rimosso usando unity Gestione pacchetti, sarà necessario aggiungere di nuovo il pacchetto usando i [passaggi descritti in precedenza.](#using-the-mixed-reality-feature-tool)
+> Se un pacchetto Toolkit realtà mista viene rimosso usando unity Gestione pacchetti, sarà necessario aggiungere di nuovo il pacchetto usando i [passaggi descritti in precedenza.](#using-the-mixed-reality-feature-tool)
 
-### <a name="using-mixed-reality-toolkit-examples"></a>Uso di esempi di Mixed Reality Toolkit
+### <a name="using-mixed-reality-toolkit-examples"></a>Uso di esempi Toolkit realtà mista
 
 A differenza di quando si usano file di pacchetto asset (con estensione unitypackage) e non importare automaticamente le scene `com.microsoft.mixedreality.toolkit.examples` e gli asset di `com.microsoft.mixedreality.toolkit.handphysicsservice` esempio.
 
@@ -64,4 +64,4 @@ Quando viene aggiornato un pacchetto di esempio, Unity offre la possibilità di 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Pacchetti di Mixed Reality Toolkit](../packages/mrtk-packages.md)
+- [Pacchetti Toolkit realtà mista](../packages/mrtk-packages.md)

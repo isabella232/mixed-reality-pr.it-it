@@ -1,18 +1,18 @@
 ---
-title: Compilazione e distribuzione in Oculus Quest
+title: Distribuzione in Oculus Quest
 description: Documentazione da configurare per Oculus Quest in MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, Oculus Quest
-ms.openlocfilehash: 96b4b5b8a68c3b61d54b6796ba01c9e2516ba959
-ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, Oculus Quest
+ms.openlocfilehash: d910f26374b21be26377bd40b9be0d45872e007a
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "112449760"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177449"
 ---
-# <a name="building-and-deploying-to-oculus-quest-using-the-xr-sdk-pipeline"></a>Compilazione e distribuzione in Oculus Quest usando la pipeline di XR SDK
+# <a name="deploying-to-oculus-quest"></a>Distribuzione in Oculus Quest
 
 È [necessaria una oculus quest.](https://www.oculus.com/quest/)
 
@@ -35,7 +35,7 @@ Il [pacchetto Oculus Integration Unity](https://assetstore.unity.com/packages/to
 
     ![Pacchetto del plug-in Oculus XR](../images/cross-platform/oculus-quest/OculusXRPluginPackage.png)
 
-1. Assicurarsi che il provider di plug-in Oculus sia incluso nel progetto selezionando Modifica --impostazioni progetto **di > --> Gestione plug-in XR --provider plug-in >**
+1. Assicurarsi che il provider di plug-in Oculus sia incluso nel progetto selezionando Modifica **--> Project Impostazioni --> Gestione plug-in XR --> plug-in provider**
 
     ![Provider di plug-in Oculus](../images/cross-platform/oculus-quest/OculusPluginProvider.png)
 
@@ -54,7 +54,7 @@ Il [pacchetto Oculus Integration Unity](https://assetstore.unity.com/packages/to
 ## <a name="setting-up-the-scene"></a>Configurazione della scena
 
 1. Creare una nuova scena unity o aprire una scena preesiste, ad esempio HandInteractionExamples.
-1. Aggiungere MRTK alla scena passando a **Mixed Reality Toolkit** Add to Scene  >  **(Aggiungi alla scena) e Configure (Configura).**
+1. Aggiungere MRTK alla scena passando a **Realtà mista Toolkit**  >  **Aggiungi alla scena e Configura**.
 
 ## <a name="using-the-oculus-xr-sdk-data-provider"></a>Uso di Oculus XR SDK provider di dati
 
@@ -77,7 +77,7 @@ Il [pacchetto Oculus Integration Unity](https://assetstore.unity.com/packages/to
 
         ![Clonare il profilo di sistema di input](../images/cross-platform/CloneInputSystemProfile.png)
 
-        - Aprire la **sezione Provider di dati** di input, selezionare **Aggiungi** provider di dati nella parte superiore e il nuovo provider di dati verrà aggiunto alla fine dell'elenco.  Aprire il nuovo provider di dati e impostare **Type** su **Microsoft.MixedReality.Toolkit.XRSDK.Oculus > OculusXRSDKDeviceManager**.
+        - Aprire la **sezione Provider di** dati di input, selezionare **Aggiungi** provider di dati nella parte superiore e il nuovo provider di dati verrà aggiunto alla fine dell'elenco.  Aprire il nuovo provider di dati e impostare **Type** su **Microsoft.MixedReality.Toolkit. XRSDK. Oculus > OculusXRSDKDeviceManager**.
 
         ![Oculus Add XRSDK provider di dati](../images/cross-platform/oculus-quest/OculusAddDataXRSDKProvider.png)
 ::: moniker-end
@@ -100,17 +100,17 @@ Il [pacchetto Oculus Integration Unity](https://assetstore.unity.com/packages/to
 
         ![Clonare il profilo di sistema di input](../images/cross-platform/CloneInputSystemProfile.png)
 
-        - Aprire la **sezione Provider di dati** di input, selezionare **Aggiungi** provider di dati nella parte superiore e il nuovo provider di dati verrà aggiunto alla fine dell'elenco.  Aprire il nuovo provider di dati e impostare **Type** su **Microsoft.MixedReality.Toolkit.XRSDK.Oculus > OculusXRSDKDeviceManager**.
+        - Aprire la **sezione Provider di** dati di input, selezionare **Aggiungi** provider di dati nella parte superiore e il nuovo provider di dati verrà aggiunto alla fine dell'elenco.  Aprire il nuovo provider di dati e impostare **Type** su **Microsoft.MixedReality.Toolkit. XRSDK. Oculus > OculusXRSDKDeviceManager**.
 
         ![Oculus Add XRSDK provider di dati](../images/cross-platform/oculus-quest/OculusAddDataXRSDKProvider.png)
 ::: moniker-end
 
-1. Oculus XR SDK provider di dati un prefab del rig di telecamere OVR che configura automaticamente il progetto con un rig di fotocamera OVR e mani OVR per indirizzare correttamente l'input. L'aggiunta manuale di un rig fotocamera OVR alla scena richiederà la configurazione manuale delle impostazioni e dell'input.
+1. Oculus XR SDK provider di dati include un prefab OVR Camera Rig che configura automaticamente il progetto con un rig di fotocamera OVR e mani OVR per indirizzare correttamente l'input. L'aggiunta manuale di un rig di fotocamera OVR alla scena richiederà la configurazione manuale delle impostazioni e dell'input.
 
 ## <a name="build-and-deploy-your-project-to-oculus-quest"></a>Compilare e distribuire il progetto in Oculus Quest
 
 1. Collegare Oculus Quest tramite un cavo USB 3.0 -> USB C
-1. Passare a **Impostazioni di compilazione > file**
+1. Passare a **File > Build Impostazioni**
 1. Modificare la distribuzione in **Android**
 1. Assicurarsi che Oculus Quest sia selezionato come dispositivo di esecuzione applicabile
 
@@ -124,10 +124,10 @@ Il [pacchetto Oculus Integration Unity](https://assetstore.unity.com/packages/to
 1. Accettare la _richiesta Consenti debug USB_ dall'interno della ricerca
 1. Visualizzare la scena all'interno di Oculus Quest
 
-## <a name="removing-oculus-integration-from-the-project"></a>Rimozione dell'integrazione oculus dal progetto
+## <a name="removing-oculus-integration-from-the-project"></a>Rimozione di Oculus Integration dal Project
 
-1. Passare a Mixed Reality Toolkit > Oculus > Oculus Integration Unity Modules  ![ Oculus Separation Asmdef](../images/cross-platform/oculus-quest/OculusSeparationAsmdef.png)
-1. Consentire l'aggiornamento di Unity quando i riferimenti in Microsoft.MixedReality.Toolkit.Providers.Oculus.asmdef e altri file vengono modificati in questo passaggio
+1. Passare a Mixed Reality Toolkit > Oculus > Separate Oculus Integration Unity Modules ![ Oculus Separation Asmdef](../images/cross-platform/oculus-quest/OculusSeparationAsmdef.png)
+1. Consentire l'aggiornamento di Unity come riferimenti in Microsoft.MixedReality. Toolkit. Providers.Oculus.asmdef e altri file vengono modificati in questo passaggio
 1. Chiudere Unity
 1. Chiudere Visual Studio, se è aperto
 1. Aprire Esplora file e passare alla radice del progetto UNITY MRTK

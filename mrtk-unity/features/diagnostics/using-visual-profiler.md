@@ -5,16 +5,16 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: c3238aed60f6bbf824c74c034ddf506f49f436c7
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 018d6bf2087b73697a1e1f43e206c96ae25e1f21
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121649"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177220"
 ---
 # <a name="using-the-visual-profiler"></a>Uso del profiler visivo
 
-VisualProfiler offre una visualizzazione in-application facile da usare delle prestazioni di un'applicazione di realtà mista. Il profiler è supportato in tutte le piattaforme mixed reality toolkit, tra cui:
+VisualProfiler offre una visualizzazione in-application facile da usare delle prestazioni di un'applicazione di realtà mista. Il profiler è supportato in tutte le piattaforme Toolkit realtà mista, tra cui:
 
 - Microsoft HoloLens (prima generazione)
 - Microsoft HoloLens 2
@@ -34,20 +34,20 @@ L'interfaccia di Visual Profiler include i componenti seguenti:
 
 - [Frequenza dei fotogrammi](#frame-rate)
 - [Tempo dell'intervallo](#frame-time)
-- [Grafico dei frame](#frame-graph)
+- [Frame Graph](#frame-graph)
 - [Utilizzo della memoria](#memory-utilization)
 
 ### <a name="frame-rate"></a>Frequenza dei fotogrammi
 
 Nell'angolo superiore sinistro dell'interfaccia è presente la frequenza dei fotogrammi, misurata in fotogrammi al secondo. Per la migliore esperienza utente e il massimo comfort, questo valore deve essere il più alto possibile.
 
-La piattaforma e la configurazione hardware specifiche avranno un ruolo significativo nella frequenza dei fotogrammi massima ottenibile. Alcuni valori di destinazione comuni includono:
+La piattaforma e la configurazione hardware specifiche avranno un ruolo significativo nella frequenza massima dei fotogrammi ottenibile. Alcuni valori di destinazione comuni includono:
 
 - Microsoft HoloLens: 60
 - Windows Mixed Reality Ultra: 90
 
 > [!NOTE]
-> A causa della limitazione della frequenza dei fotogrammi in [HoloLens](/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens)quando mrC predefinito è attivo, il profiler visivo si nasconde mentre vengono acquisiti video e foto. Questa impostazione può essere sostituita nel profilo del sistema di diagnostica.
+> A causa [della limitazione della frequenza](/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens)dei fotogrammi HoloLens quando mrC predefinito è attivo, il profiler visivo si nasconde mentre vengono acquisiti video e foto. Questa impostazione può essere sostituita nel profilo del sistema di diagnostica.
 
 ### <a name="frame-time"></a>Durata fotogramma
 
@@ -62,7 +62,7 @@ A destra della frequenza dei fotogrammi si trova il tempo in millisecondi impieg
 
 Il grafico dei frame offre una visualizzazione grafica della cronologia della frequenza dei fotogrammi dell'applicazione.
 
-![Grafico dei fotogrammi persi di Visual Profiler](../images/diagnostics/VisualProfilerMissedFrames.png)
+![Frame persi di Visual Profiler Graph](../images/diagnostics/VisualProfilerMissedFrames.png)
 
 Quando si usa l'applicazione, cercare i fotogrammi persi che indicano che l'applicazione non sta per raggiungere la frequenza dei fotogrammi di destinazione e potrebbe richiedere operazioni di ottimizzazione.
 
@@ -70,7 +70,7 @@ Quando si usa l'applicazione, cercare i fotogrammi persi che indicano che l'appl
 
 La visualizzazione dell'utilizzo della memoria consente di comprendere facilmente l'impatto della visualizzazione corrente sul consumo di memoria di un'applicazione.
 
-![Grafico della memoria di Visual Profiler](../images/diagnostics/VisualProfilerMemory.png)
+![Memoria di Visual Profiler Graph](../images/diagnostics/VisualProfilerMemory.png)
 
 Quando si usa l'applicazione, cercare l'utilizzo totale della memoria. Gli indicatori chiave includono il prossimità del limite di memoria e modifiche rapide nell'utilizzo.
 

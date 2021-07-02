@@ -1,16 +1,16 @@
 ---
-title: Tracciamento manuale
+title: Tracciamento mano
 description: Documentazione su come usare HandTracking in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, tracciamento manuale,
-ms.openlocfilehash: 6cd55bc76d9fba42640954bcbf50e62f66454a94
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 68e936cb4121027008f37aae72496fe59445b636
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143358"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176888"
 ---
 # <a name="hand-tracking"></a>Tracciamento mano
 
@@ -35,7 +35,7 @@ Rappresentazione predefinita delle giunzione della mano |  Etichette congiunte
 
 ## <a name="hand-mesh-prefab"></a>Prefab della mesh manuale
 
-La mesh manuale viene usata se i dati della mesh completamente definiti vengono forniti dal dispositivo di rilevamento manuale. La mesh di cui è possibile eseguire il rendering nel prefab viene sostituita dai dati del dispositivo, quindi è sufficiente una mesh fittizia, ad esempio un cubo. Il materiale del prefab viene usato per la mesh manuale.
+La mesh manuale viene usata se i dati della mesh completamente definiti vengono forniti dal dispositivo di rilevamento manuale. La mesh di cui è possibile eseguire il rendering nel prefab viene sostituita dai dati del dispositivo, quindi è sufficiente una mesh fittizia, ad esempio un cubo. Il materiale del prefab viene usato per la mesh della mano.
 
 <img src="../images/input-simulation/MRTK_Core_Input_Hands_ArticulatedHandMesh.png" width="350px" alt="Input Hand Mesh"  style="display:block;">
 
@@ -43,28 +43,28 @@ La visualizzazione della mesh manuale può avere un impatto significativo sulle 
 
 ## <a name="hand-visualization-settings"></a>Impostazioni di visualizzazione manuale
 
-Le visualizzazioni della mesh mano e delle giunzioni delle mani possono essere disattivate o attivate rispettivamente tramite l'impostazione *Hand Mesh Visualization Modes* (Modalità di visualizzazione della mesh manuale) e Hand Joint Visualization Modes (Modalità di visualizzazione *mano* giunzione). Queste impostazioni sono specifiche della modalità applicazione, vale a dire che è possibile attivare alcune funzionalità nell'editor (per visualizzare i giunzioni con la simulazione nell'editor, ad esempio) e avere le stesse funzionalità disattivate quando vengono distribuite nel dispositivo (nelle build del lettore).
+Le visualizzazioni della mesh manuale e delle giunzioni della mano possono essere disattivate o attivate rispettivamente tramite l'impostazione *Modalità* di visualizzazione della mesh manuale e le modalità *di visualizzazione delle giunzioni* della mano. Queste impostazioni sono specifiche della modalità applicazione, vale a dire che è possibile attivare alcune funzionalità nell'editor (per visualizzare i giunzioni con la simulazione nell'editor, ad esempio) mentre le stesse funzionalità sono disattivate quando vengono distribuite nel dispositivo (nelle build del lettore).
 
-Si noti che in genere è consigliabile che la visualizzazione con giunzione della mano sia attivata nell'editor (in modo che la simulazione nell'editor mostri dove si trova la giunzione della mano) e che la visualizzazione delle giunzioni delle mani e la visualizzazione della mesh della mano siano disattivate nel lettore (perché comportano un miglioramento delle prestazioni).
+Si noti che è in genere consigliabile che la visualizzazione delle giunzioni delle mani sia attivata nell'editor (in modo che la simulazione nell'editor mostri dove si trovano le giunzioni della mano) e che sia la visualizzazione delle giunzioni della mano che la visualizzazione della mesh manuale siano disattivate nel lettore (perché comportano un miglioramento delle prestazioni).
 
 ## <a name="scripting"></a>Scripting
 
-La posizione e la rotazione possono essere richieste dal sistema di input per ogni singola giunzione della mano come [`MixedRealityPose`](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose) .
+La posizione e la rotazione possono essere richieste dal sistema di input per ogni singolo giunto della mano come [`MixedRealityPose`](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose) .
 
-In alternativa, il sistema consente [l'accesso ai GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html) che seguono le giunzioni. Ciò può essere utile se un altro GameObject deve tenere traccia continuamente di un congiunto.
+In alternativa, il sistema consente [l'accesso a GameObject che](https://docs.unity3d.com/ScriptReference/GameObject.html) seguono le giunzioni. Ciò può essere utile se un altro GameObject deve tenere traccia continuamente di un giunto.
 
 Le giunzioni disponibili sono elencate [`TrackedHandJoint`](xref:Microsoft.MixedReality.Toolkit.Utilities.TrackedHandJoint) nell'enumerazione .
 
 > [!NOTE]
-> L'oggetto congiunto viene eliminato quando si perde il tracciamento delle mani. Assicurarsi che tutti gli script che usano l'oggetto congiunto gestino correttamente il `null` caso per evitare errori.
+> L'oggetto congiunto viene eliminato quando il tracciamento manuale viene perso. Assicurarsi che tutti gli script che usano l'oggetto congiunto gestino correttamente il `null` caso per evitare errori.
 
-### <a name="accessing-a-given-hand-controller"></a>Accesso a un determinato controller della mano
+### <a name="accessing-a-given-hand-controller"></a>Accesso a un determinato controller manuale
 
-Spesso è disponibile un controller della mano specifico, ad esempio durante la gestione degli eventi di input. In questo caso i dati congiunti possono essere richiesti direttamente dal dispositivo, usando [`IMixedRealityHand`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand) l'interfaccia .
+Spesso è disponibile un controller della mano specifico, ad esempio quando si gestisce gli eventi di input. In questo caso i dati congiunti possono essere richiesti direttamente dal dispositivo, usando [`IMixedRealityHand`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand) l'interfaccia .
 
-#### <a name="polling-joint-pose-from-controller"></a>Posizione congiunta di polling dal controller
+#### <a name="polling-joint-pose-from-controller"></a>Polling della posizione congiunta dal controller
 
-La [`TryGetJoint`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand.TryGetJoint*) funzione restituisce se il `false` congiunto richiesto non è disponibile per qualche motivo. In tal caso, la posizione risultante sarà [`MixedRealityPose.ZeroIdentity`](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose.ZeroIdentity) .
+La [`TryGetJoint`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand.TryGetJoint*) funzione restituisce se il giunto richiesto non è disponibile per qualche `false` motivo. In tal caso, la posizione risultante sarà [`MixedRealityPose.ZeroIdentity`](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose.ZeroIdentity) .
 
 ```c#
 public void OnSourceDetected(SourceStateEventData eventData)
@@ -100,7 +100,7 @@ public void OnSourceDetected(SourceStateEventData eventData)
 
 ### <a name="simplified-joint-data-access"></a>Accesso semplificato ai dati congiunti
 
-Se non viene specificato alcun controller specifico, le classi di utilità vengono fornite per l'accesso pratico ai dati congiunti mano. Queste funzioni richiedono dati congiunti dal primo dispositivo a mano disponibile attualmente monitorato.
+Se non viene specificato alcun controller specifico, vengono fornite classi di utilità per un comodo accesso ai dati delle giunzione manuale. Queste funzioni richiedono dati congiunti dal primo dispositivo a mano disponibile attualmente monitorato.
 
 #### <a name="polling-joint-pose-from-handjointutils"></a>Posizione congiunta di polling da HandJointUtils
 
@@ -154,7 +154,7 @@ public class MyHandJointEventHandler : IMixedRealityHandJointHandler
 
 #### <a name="mesh-events"></a>Eventi mesh
 
-[`IMixedRealityHandMeshHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandMeshHandler) gestisce le modifiche della mesh articolata della mano.
+[`IMixedRealityHandMeshHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandMeshHandler) gestisce le modifiche della mesh della mano articolata.
 
 Si noti che le mesh a mano non sono abilitate per impostazione predefinita.
 
@@ -189,7 +189,7 @@ public class MyHandMeshEventHandler : IMixedRealityHandMeshHandler
 
 Esiste attualmente un problema noto con le compilazioni master che usano il back-end .NET. In .NET Native, non è possibile effettuare il marshalling dei puntatori da codice nativo `IInspectable` a codice gestito usando `Marshal.GetObjectForIUnknown` . MrTK usa questo oggetto per ottenere per ricevere i dati relativi a mani `SpatialCoordinateSystem` e occhi dalla piattaforma.
 
-L'origine DLL è stata fornita come soluzione alternativa per questo problema, nel [repo nativo di Mixed Reality Toolkit.](https://github.com/microsoft/MixedRealityToolkit/tree/master/DotNetNativeWorkaround) Seguire le istruzioni nel file LEGGIMI e copiare i file binari risultanti in una cartella Plugins negli asset di Unity. Successivamente, lo script WindowsMixedRealityUtilities fornito in MRTK risolverà automaticamente la soluzione alternativa.
+L'origine DLL è stata fornita come soluzione alternativa per questo problema, nel Toolkit di realtà [mista nativa.](https://github.com/microsoft/MixedRealityToolkit/tree/master/DotNetNativeWorkaround) Seguire le istruzioni nel file LEGGIMI e copiare i file binari risultanti in una cartella Plugins negli asset di Unity. Successivamente, lo script WindowsMixedRealityUtilities fornito in MRTK risolverà automaticamente la soluzione alternativa.
 
 Se si vuole creare una DLL personalizzata o includere questa soluzione alternativa in una esistente, il nucleo della soluzione alternativa è:
 

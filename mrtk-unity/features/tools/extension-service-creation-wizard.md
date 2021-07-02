@@ -4,13 +4,13 @@ description: Documentazione sulla procedura guidata per eseguire la transizione 
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 83797a9d6d465a150406b27162a5e84c157567f1
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
+ms.openlocfilehash: 4be9a58c7d63ab3bc93bcc326a90260cf6a3366b
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143542"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176617"
 ---
 # <a name="extension-service-creation-wizard"></a>Creazione guidata servizio di estensione
 
@@ -52,4 +52,4 @@ namespace Microsoft.MixedReality.Toolkit.Extensions
 }
 ```
 
-Se si è scelto di registrare il servizio nella procedura guidata, è necessario solo modificare questo script e il servizio verrà aggiornato automaticamente. In caso contrario, è possibile [leggere la registrazione del nuovo servizio qui.](../../configuration/mixed-reality-configuration-guide.md)
+Se si sceglie di registrare il servizio nella procedura guidata, è necessario solo modificare questo script e il servizio verrà aggiornato automaticamente. In caso contrario, è possibile [leggere la registrazione del nuovo servizio qui.](../../configuration/mixed-reality-configuration-guide.md)

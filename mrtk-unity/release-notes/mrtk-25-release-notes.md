@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 536a37b56b4c7de9875ce1e1642922bd363fecb1
-ms.sourcegitcommit: f7839221c9549e60a2c3ac2dbd39f07a6851dcd2
+ms.openlocfilehash: c9458e5236cc7de18eb27c3c3e13221a366c89a4
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "112562491"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177510"
 ---
 # <a name="microsoft-mixed-reality-toolkit-25-release-notes"></a>Note sulla versione di Microsoft Mixed Reality Toolkit 2.5
 
@@ -47,9 +47,9 @@ Nella versione 2.5.2 è stato [introdotto un problema di compilazione durante l'
 
 Le visualizzazioni dei limiti, ad esempio il piano o le pareti, saranno ora configurate correttamente e visibili in fase di esecuzione in base al profilo limite.
 
-### <a name="msbuild-for-unity-support"></a>Supporto di MSBuild per Unity
+### <a name="msbuild-for-unity-support"></a>MSBuild per il supporto unity
 
-Il supporto per MSBuild per Unity è stato rimosso dalla versione 2.5.2, per allinearsi alle nuove linee guida [per i pacchetti di Unity.](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/)
+Il supporto MSBuild per Unity è stato rimosso dalla versione 2.5.2, per allinearsi alle nuove linee guida per [i pacchetti di Unity.](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/)
 
 ## <a name="whats-new-in-251"></a>Novità nella versione 2.5.1
 
@@ -69,12 +69,12 @@ Questa versione corregge un problema [a causa del](https://github.com/microsoft/
 
 ### <a name="unity-package-manager-upm-support"></a>Supporto di Unity Gestione pacchetti (UPM)
 
-Mixed Reality Toolkit può ora essere gestito usando unity Gestione pacchetti.
+Il modello di Toolkit realtà mista può ora essere gestito usando unity Gestione pacchetti.
 
 ![Pacchetto UPM MRTK Foundation](../features/images/packaging/MRTK_FoundationUPM.png)
 
 > [!NOTE]
-> Per importare i pacchetti UPM di MRTK sono necessari alcuni passaggi manuali. Per altre [informazioni, vedere Mixed Reality Toolkit e Unity Gestione pacchetti](../configuration/usingupm.md) informazioni.
+> Per importare i pacchetti UPM di MRTK sono necessari alcuni passaggi manuali. Per altre [informazioni, Toolkit e Unity Gestione pacchetti](../configuration/usingupm.md) informazioni.
 
 ### <a name="oculus-quest-xr-sdk-support"></a>Supporto di Oculus Quest XR SDK
 
@@ -112,13 +112,13 @@ Gli utenti possono ora simulare il controller del movimento esattamente come le 
 
 ### <a name="conical-grab-pointer"></a>Puntatore di cattura conico
 
-È ora possibile configurare i puntatori di cattura per eseguire query per gli oggetti vicini usando un cono dal punto di cattura anziché una sfera. Questo comportamento è più simile al comportamento dell'interfaccia di HoloLens 2 predefinita, che esegue una query per gli oggetti nelle vicinanze usando un cono. Anche DefaultHoloLens2InputSystemProfile è stato modificato per usare il nuovo `ConicalGrabPointer` oggetto .
+È ora possibile configurare i puntatori di cattura per eseguire query per gli oggetti vicini usando un cono dal punto di cattura anziché una sfera. Questo comportamento è più simile al comportamento dell'interfaccia HoloLens 2 predefinita, che esegue una query per gli oggetti nelle vicinanze usando un cono. Anche DefaultHoloLens2InputSystemProfile è stato modificato per usare il nuovo `ConicalGrabPointer` oggetto .
 
 ![Puntatore di cattura conico](https://user-images.githubusercontent.com/39840334/82500569-72d58300-9aa8-11ea-8102-ec9a62832d4e.png)
 
 ### <a name="testutilities-package"></a>Pacchetto TestUtilities
 
-È ora disponibile un pacchetto (Microsoft.MixedReality.Toolkit.Unity.TestUtilities.2.5.0.unitypackage) che contiene l'infrastruttura di test PlayMode e TestMode che MRTK usa per creare test end-to-end. Questa infrastruttura è stata estremamente utile per il team di MRTK stesso e siamo molto contenti che i consumer lo usino per aggiungere la copertura dei test ai propri progetti.
+È ora disponibile un pacchetto (Microsoft.MixedReality.Toolkit. Unity.TestUtilities.2.5.0.unitypackage) che contiene l'infrastruttura di test PlayMode e TestMode che MRTK usa per creare test end-to-end. Questa infrastruttura è stata estremamente utile per il team di MRTK stesso e siamo molto contenti che i consumer lo usino per aggiungere la copertura dei test ai propri progetti.
 
 Il codice seguente illustra come creare una mano di test, mostrarla in una determinata posizione, spostarla e quindi avvicinarla e aprirla.
 
@@ -154,8 +154,8 @@ Altre informazioni sul file di link.xml MRTK sono disponibili nell'articolo [MRT
 
 ### <a name="unity-20193-mrtk-configuration-dialog-no-longer-attempts-to-enable-legacy-xr-support"></a>Unity 2019.3+: la finestra di dialogo di configurazione di MRTK non tenta più di abilitare il supporto XR legacy
 
-Per evitare potenziali conflitti quando si usa la piattaforma XR di Unity, l'opzione per abilitare il supporto XR legacy è stata rimossa dalla finestra di dialogo di configurazione di MRTK. Se si desidera, il supporto XR legacy può essere abilitato, in Unity 2019, usando **Edit**  >  **Project Settings**  >
- **Player**  >  **XR Settings** Virtual Reality  >  **Supported**.
+Per evitare potenziali conflitti quando si usa la piattaforma XR di Unity, l'opzione per abilitare il supporto XR legacy è stata rimossa dalla finestra di dialogo di configurazione di MRTK. Se si desidera, il supporto XR legacy può essere abilitato, in Unity 2019, usando **Edit**  >  **Project Impostazioni**  >
+ **Player**  >  **XR Impostazioni** Virtual Reality  >  **Supported**.
 
 ### <a name="reduction-in-initializeonload-overhead"></a>Riduzione del sovraccarico di InitializeOnLoad
 
@@ -168,7 +168,7 @@ In alcuni casi è stato necessario trovare un compromesso:
   Per i nuovi passaggi, vedere [ARFoundation.](../supported-devices/using-ar-foundation.md#install-required-packages)
 - Per gli utenti che usano [Holographic Remoting](../features/tools/holographic-remoting.md#legacy-xr-setup-instructions) con la pipeline XR legacy HoloLens 2, è ora disponibile un [passaggio](../features/tools/holographic-remoting.md#dotnetwinrt_present-define-written-into-player-settings) manuale da eseguire.
 
-### <a name="bounds-control-graduated"></a>Controllo dei limiti 3D
+### <a name="bounds-control-graduated"></a>Controllo dei limiti -1
 
 ![Controllo Limiti](../features/images/bounds-control/MRTK_BoundsControl_Main.png)
 
@@ -180,14 +180,14 @@ Di seguito è riportato un elenco delle caratteristiche principali di questo agg
 - ogni proprietà/proprietà configurabile da script è configurabile in fase di esecuzione
 - Il dispositivo di controllo bounds non viene più ricreato in base alle modifiche delle proprietà
 - supporto degli handle di conversione
-- supporto completo dei vincoli tramite Gestione vincoli
+- supporto completo dei vincoli tramite gestione vincoli
 - Integrazione del sistema elastics (sperimentale)
 
 Il vecchio rettangolo di selezione è ora deprecato e [](../features/tools/migration-window.md) gli oggetti gioco esistenti che usano il rettangolo di selezione possono essere aggiornati usando lo strumento di migrazione o il controllo [del rettangolo di selezione.](../features/ux-building-blocks/bounding-box.md#migrating-to-bounds-control)
 
 ### <a name="constraint-manager-component"></a>Componente Gestione vincoli
 
-I vincoli possono ora essere usati sia dal controllo dei limiti che dal manipolatore di oggetti tramite il nuovo [componente di gestione vincoli](../features/ux-building-blocks/constraint-manager.md). Entrambi i componenti creeranno una gestione vincoli per impostazione predefinita ed eelaborare automaticamente tutti i vincoli collegati.
+I vincoli possono ora essere usati sia dal controllo dei limiti che dal manipolatore di oggetti tramite il nuovo [componente di gestione vincoli](../features/ux-building-blocks/constraint-manager.md). Entrambi i componenti creeranno un gestore vincoli per impostazione predefinita ed eelaborare automaticamente tutti i vincoli collegati.
 
 Inoltre, la gestione vincoli di comportamento automatico include anche una modalità manuale che consente agli utenti di decidere quale vincolo elaborare.
 Per questo motivo, la modalità di visualizzazione dei vincoli nel controllo proprietà è cambiata leggermente.
@@ -211,7 +211,7 @@ Pannello di descrizione aggiornato. (SceneDescriptionPanelRev.prefab) Il nuovo p
 
 ### <a name="spatial-mesh-visualization---pulse-on-air-tap"></a>Visualizzazione della mesh spaziale: pulsazione dell'aria
 
-Aggiornamento dell'esempio di pulse shader per la mesh spaziale in modo HoloLens 2 comportamento della shell dell'utente.
+Aggiornamento dell'esempio di pulse shader per la mesh spaziale in HoloLens 2 comportamento della shell.
 
 ![Pulse on air-tap](https://user-images.githubusercontent.com/13754172/90310153-d0536180-df29-11ea-939a-e9572d4f5670.gif)
 
@@ -219,7 +219,7 @@ Aggiornamento dell'esempio di pulse shader per la mesh spaziale in modo HoloLens
 
 ![Elastic System2](../features/images/elastics/Elastics_Main.gif)
 
-MRTK include ora un sistema di simulazione [elastico](../features/elastics/elastic-system.md) che include un'ampia gamma di sottoclassi estendibili e flessibili, che offrono associazioni per quaternione 4-dimensionale, volume in 3 dimensioni e semplici sistemi a sorgente lineare.
+MRTK include ora un sistema di simulazione [elastico](../features/experimental/elastic-system.md) che include un'ampia gamma di sottoclassi estendibili e flessibili, che offrono associazioni per quaternione 4-dimensionale, volume in 3 dimensioni e semplici sistemi a sorgente lineare.
 
 Attualmente i componenti MRTK seguenti che supportano il gestore [elastici](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager) possono sfruttare le funzionalità elastiche:
 
@@ -257,7 +257,7 @@ Questa interfaccia è stata aggiornata per avere una nuova funzione:
 void SetPointerPreferences(IPointerPreferences pointerPreferences);
 ```
 
-Se si dispone di un mediatore puntatore personalizzato che non crea una sottoclasse di DefaultPointerMediator, è necessario implementare questa nuova funzione. Vedere [questo problema per](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8243) altre informazioni sul motivo per cui è stato aggiunto. Questa operazione è stata aggiunta per garantire che le preferenze del puntatore verrebbero passate in modo esplicito al mediatore, anziché essere eseguite in modo implicito in base alla presenza di un costruttore che accetta un oggetto IPointerPreferences.
+Se si dispone di un mediatore puntatore personalizzato che non sottoclassa DefaultPointerMediator, è necessario implementare questa nuova funzione. Vedere [questo problema per](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8243) altre informazioni sul motivo per cui è stato aggiunto. Questa operazione è stata aggiunta per garantire che le preferenze del puntatore verrebbero passate in modo esplicito al mediatore, anziché essere eseguite in modo implicito in base alla presenza di un costruttore che accetta un oggetto IPointerPreferences.
 
 ### <a name="rest--device-portal-api"></a>API REST/Portale di dispositivi
 
@@ -277,7 +277,7 @@ DevicePortal.UseSSL = true
 
 ### <a name="linkxml"></a>Link.xml
 
-Se un'applicazione usava in precedenza la distribuzione NuGet di MRTK, il `link.xml` file è stato rimosso dal pacchetto Foundation. Per ripristinare le regole di conservazione del codice, l'apertura del progetto in Unity una volta creerà un `link.xml` file predefinito in `Assets/MixedRealityToolkit.Generated` . È consigliabile aggiungere questo file (e `link.xml.meta` ) al controllo del codice sorgente.
+Se in precedenza un'applicazione usava NuGet distribuzione di MRTK, il file è stato `link.xml` rimosso dal pacchetto Foundation. Per ripristinare le regole di conservazione del codice, l'apertura del progetto in Unity una volta creerà un `link.xml` file predefinito in `Assets/MixedRealityToolkit.Generated` . È consigliabile aggiungere questo file (e `link.xml.meta` ) al controllo del codice sorgente.
 
 ### <a name="transform-constraint-changes"></a>Modifiche ai vincoli di trasformazione
 
@@ -315,39 +315,39 @@ A seconda della lunghezza del percorso del progetto, l'importazione di esempi tr
 
 ### <a name="no-spatializer-was-specified-the-application-will-not-support-spatial-sound"></a>Non è stato specificato alcun spazializzatore. L'applicazione non supporterà l'audio spaziale
 
-Se non è configurato un spazializzatore audio, viene visualizzato un avviso che indica che non è stato specificato alcun spazializzatore. Ciò può verificarsi se non è installato alcun pacchetto XR, perché Unity include spazializzatori in questi pacchetti.
+Se non è configurato un spazializzatore audio, viene visualizzato un avviso che indica che non è stato specificato alcun spazializzatore. Questo problema può verificarsi se non è installato alcun pacchetto XR, perché Unity include spazializzatori in questi pacchetti.
 
 Per risolvere il problema, assicurarsi che:
 
 - **Finestra**  >  **Gestione pacchetti** sono installati uno o più pacchetti XR
-- **Mixed Reality Toolkit**  >  **Utilità**  >  **Configurare Unity Project** ed effettuare una selezione per **Audio Spatializer**
+- **Realtà mista Toolkit**  >  **Utilità**  >  **Configurare l'Project** Unity ed effettuare una selezione per **Spazializzatore audio**
 
   ![Selezionare Spazializzatore audio](images/SpatializerSelection.png)
 
 ### <a name="nullreferenceexception-object-reference-not-set-to-an-instance-of-an-object-scenetransitionserviceinitialize"></a>NullReferenceException: riferimento all'oggetto non impostato su un'istanza di un oggetto (SceneTransitionService.Initialize)
 
-In alcuni casi, `EyeTrackingDemo-00-RootScene` l'apertura può causare un'eccezione NullReferenceException nel metodo Initialize della classe SceneTransitionService.
-Questo errore è dovuto all'annullamento dell'impostazione del profilo di configurazione del servizio di transizione scena. Per risolvere il problema, seguire questa procedura:
+In alcune situazioni, `EyeTrackingDemo-00-RootScene` l'apertura può causare un'eccezione NullReferenceException nel metodo Initialize della classe SceneTransitionService.
+Questo errore è dovuto all'annullamento dell'impostazione del profilo di configurazione del servizio di transizione della scena. Per risolvere il problema, seguire questa procedura:
 
 - Passare `MixedRealityToolkit` all'oggetto nella gerarchia
 - Nella finestra Inspector (Controllo) selezionare `Extensions`
-- Se non è espansa, espandere `Scene Transition Service`
+- Se non viene espansa, espandere `Scene Transition Service`
 - Impostare il valore di `Configuration Profile` su **MRTKExamplesHubSceneTransitionServiceProfile**
 
-![Correzione della transizione della scena](images/FixSceneTransitionProfile.png)
+![Correggere la transizione della scena](images/FixSceneTransitionProfile.png)
 
 ### <a name="oculus-quest"></a>Oculus Quest
 
-Esiste attualmente un problema noto per l'uso del [plug-in Oculus XR con quando si usano le piattaforme autonome.](https://forum.unity.com/threads/unable-to-start-oculus-xr-plugin.913883/) Per gli aggiornamenti, vedere oculus bug tracker/forums/release notes (Rilevamento bug Oculus/forums/note sulla versione).
+Esiste attualmente un problema noto per l'uso del plug-in [Oculus XR con quando](https://forum.unity.com/threads/unable-to-start-oculus-xr-plugin.913883/)la destinazione è piattaforme autonome . Per gli aggiornamenti, vedere lo strumento di rilevamento dei bug/forum/note sulla versione di Oculus.
 
-Il bug è indicato con questo set di 3 errori:
+Il bug è identificato con questo set di 3 errori:
 
 ![Errore del plug-in Oculus XR](https://forum.unity.com/attachments/erori-unity-png.644204/)
 
 ### <a name="unityui-and-textmeshpro"></a>UnityUI e TextMeshPro
 
-Esiste un problema noto per le versioni più recenti di TextMeshPro (1.5.0+ o 2.1.1+), in cui è stata modificata la dimensione del carattere predefinita per gli elenchi a discesa e la spaziatura dei caratteri in grassetto.
+Esiste un problema noto per le versioni più recenti di TextMeshPro (1.5.0+ o 2.1.1+), in cui sono state modificate le dimensioni del carattere predefinite per gli elenchi a discesa e la spaziatura dei caratteri in grassetto.
 
 ![Immagine TMP](https://user-images.githubusercontent.com/68253937/93158069-4d582f00-f6c0-11ea-87ad-94d0ba3ba6e5.png)
 
-Per risolvere questo problema, eseguire il downgrade a una versione precedente di TextMeshPro. Per [altri dettagli, vedere #8556](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8556) problema.
+Per risolvere questo problema, eseguire il downgrade a una versione precedente di TextMeshPro. Per [altri dettagli, #8556](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8556) problema.

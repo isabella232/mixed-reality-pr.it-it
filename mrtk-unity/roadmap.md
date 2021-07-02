@@ -5,45 +5,45 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 03/03/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK
-ms.openlocfilehash: 767fd41287c68812d51826d32a99296b9cd33018
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 7385d516e986c1602ad59e2825aa6d1262504727
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550901"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175580"
 ---
 # <a name="roadmap"></a>Roadmap
 
-Questo documento descrive la roadmap del Toolkit di realtà mista. Si noti che di seguito sono riportate le stime dei lavori nelle date di sviluppo e di destinazione.
+Questo documento illustra la roadmap del modello di realtà mista Toolkit. Si noti che quanto segue riflette il lavoro in fase di sviluppo e le date di destinazione riflettono le stime.
 
 ## <a name="current-release"></a>Versione corrente
 
-Microsoft Mixed Reality Toolkit v 2.6
+Microsoft Mixed Reality Toolkit v2.6
 
-## <a name="upcoming-releases"></a>Prossime versioni
+## <a name="upcoming-releases"></a>Versioni future
 
-| Prodotto | Descrizione | Sequenza temporale | Lavagna del progetto |
+| Prodotto | Descrizione | Sequenza temporale | Project scheda |
 | --- | --- | --- | --- |
-| [MRTK V 2.7](#270) | Iterazione successiva di MRTK | Maggio 2021 | https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/14 |
+| [MRTK V2.7](#270) | Iterazione successiva di MRTK | Maggio 2021 | https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/14 |
 
-Le versioni sono incentrate sui temi (ad esempio, aree funzionali di grandi dimensioni) e sono pianificati per essere eseguiti approssimativamente ogni 8-12 settimane.
+Le versioni sono centrate sui temi (ad esempio aree di funzionalità di grandi dimensioni) e sono pianificate per essere eseguite circa ogni 8-12 settimane.
 
-I dettagli della versione, inclusi gli elementi di backlog, sono reperibili nelle [pagine dell'attività cardine di GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity/milestones). Il set completo di problemi aperti è disponibile anche in [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/issues).
+I dettagli sulla versione, inclusi gli elementi di backlog, sono disponibili nelle pagine delle attività [cardine GitHub attività cardine.](https://github.com/Microsoft/MixedRealityToolkit-Unity/milestones) Il set completo di problemi aperti è disponibile anche in [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/issues).
 
-## <a name="mixed-reality-toolkit-mrtk-roadmap"></a>Guida di orientamento a Mixed Reality Toolkit (MRTK)
+## <a name="mixed-reality-toolkit-mrtk-roadmap"></a>Guida di orientamento Toolkit realtà mista (MRTK)
 
-Il Toolkit per la realtà mista è progettato per essere cross MR/AR/VR/XR Platform by Design. Il Toolkit supporta attualmente Unity 2019.4. x e Unity 2018.4. x.
+L'Toolkit di realtà mista è progettato per essere multipiattaforma MR/AR/VR/XR. Il toolkit attualmente supporta Unity 2019.4.x e Unity 2018.4.x.
 
-> Quando Unity rilascia un prodotto LTS (supporto a lungo termine), il Toolkit di realtà mista viene aggiornato alla versione LTS. Sebbene il Toolkit di realtà mista venga eseguito nella versione più recente del ramo Tech non beta (ad esempio, 2020,1), non è ufficialmente supportato.
+> Quando Unity rilascia un prodotto LTS (Supporto a lungo termine), l'Toolkit realtà mista verrà aggiornato alla versione LTS. Anche se l'Toolkit mixed reality viene eseguito nella versione tech branch più recente non beta (ad esempio, 2020.1) di Unity, non è ufficialmente supportata.
 
 ### <a name="270"></a>2.7.0
 
-Attualmente stiamo pianificando la versione 2.7.0 e avrai a disposizione più aggiornamenti.
-Per lo stato più recente della versione, visitare la pagina relativa all' [attività cardine](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/14).
+È in corso la pianificazione della versione 2.7.0 e presto saranno disponibili altri aggiornamenti.
+Per lo stato più recente della versione, visitare la pagina [attività cardine](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/14).
 
-Stato: pianificazione
+Stato: Pianificazione
 
-Sequenza temporale di destinazione: 2021 maggio
+Sequenza temporale di destinazione: maggio 2021
 
 Temi:
 
@@ -55,38 +55,38 @@ Temi:
 
 **Stabilità**
 
-La qualità e la stabilità sono la massima priorità per questo e tutte le versioni di Microsoft Mixed Reality Toolkit. Si continuerà ad assegnare una priorità ai problemi dei clienti e dei partner che influiscano sulla stabilità dei componenti di MRTK.
+La qualità e la stabilità sono la priorità principale per questa e tutte le versioni di Microsoft Mixed Reality Toolkit versioni. Microsoft continuerà a classificare in ordine di priorità i problemi relativi a clienti e partner che influiscono sulla stabilità dei componenti MRTK.
 
 **Espansione della piattaforma: OpenXR**
 
-Il team di MRTK supporta il futuro aperto della realtà mista tramite [OpenXR](https://techcommunity.microsoft.com/t5/mixed-reality-blog/moving-forward-to-openxr/ba-p/1825672). Il supporto per OpenXR è attualmente in fase di sviluppo, con supporto di anteprima iniziale rilasciato in MRTK 2.5.2.
+Il team MRTK supporta il futuro aperto della realtà mista tramite [OpenXR.](https://techcommunity.microsoft.com/t5/mixed-reality-blog/moving-forward-to-openxr/ba-p/1825672) Il supporto per OpenXR è attualmente in fase di sviluppo, con il supporto dell'anteprima iniziale rilasciato in MRTK 2.5.2.
 
 **Esperienza utente**
 
-Stiamo ascoltando i tuoi commenti e suggerimenti su MRTK e abbiamo continuato a pianificare:
+Stiamo ascoltando i commenti e suggerimenti su MRTK e sono stati continuati i piani per:
 
 - Correzioni di bug
-- Semplificazione della comprensione per i controlli UX MRTK
-- Parità della shell HoloLens
-- Test per garantire che le funzionalità non regressione
+- Semplificare la comprensione dei controlli dell'esperienza utente MRTK
+- HoloLens Parità della shell
+- Test per garantire che le funzionalità non regredino
 
 **Formazione per sviluppatori**
 
-È stata eseguita la migrazione della documentazione per gli sviluppatori da GitHub a una nuova piattaforma docs. Microsoft vuole ricevere commenti e suggerimenti per poter continuare a migliorare l'esperienza di documentazione per gli sviluppatori.
-Attualmente sono disponibili [esercitazioni di MRTK](/windows/mixed-reality/develop/unity/tutorials) che si trovano in una sezione diversa di docs realtà mista. Queste esercitazioni verranno migrate per vivere con il resto della documentazione di MRTK. 
+È stata eseguita la migrazione della documentazione per sviluppatori da GitHub a una nuova piattaforma di documentazione. Microsoft vuole ricevere commenti e suggerimenti in modo da poter continuare a migliorare l'esperienza della documentazione per gli sviluppatori.
+Attualmente sono disponibili [esercitazioni su MRTK](/windows/mixed-reality/develop/unity/tutorials) disponibili in un'altra sezione della documentazione sulla realtà mista. Verrà eseguita la migrazione di queste esercitazioni per l'esecuzione del resto della documentazione di MRTK. 
 
 **Packaging**
 
-Lo [strumento per la funzionalità di realtà mista](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) è un nuovo modo per gli sviluppatori di individuare, aggiornare e aggiungere pacchetti di funzionalità di realtà mista in progetti Unity. È possibile cercare i pacchetti in base al nome o alla categoria, visualizzarne le dipendenze e persino visualizzare le modifiche proposte al file manifesto del progetto prima dell'importazione. Si prevede di apportare aggiornamenti allo strumento per le funzionalità di realtà mista quando si rispondono alle richieste di funzionalità e ai bug.
+[Lo strumento funzionalità realtà mista](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) è un nuovo modo per consentire agli sviluppatori di individuare, aggiornare e aggiungere pacchetti di funzionalità di realtà mista nei progetti Unity. È possibile cercare i pacchetti in base al nome o alla categoria, visualizzarne le dipendenze e persino visualizzare le modifiche proposte al file manifesto del progetto prima dell'importazione. Microsoft intende apportare aggiornamenti a Mixed Reality Feature Tool in risposta alle richieste di funzionalità e ai bug.
 
 ## <a name="backlog"></a>Backlog
 
-Nell'elenco seguente sono illustrati alcuni degli investimenti principali che il team di MRTK intende adottare.
+L'elenco seguente evidenzia alcuni degli investimenti chiave che il team di MRTK intende intraprendere.
 
 - Espansione della piattaforma
 - Estendibilità
 - Modularità
-- Funzionalità di accesso facilitato
+- Funzionalità di accessibilità
 - Miglioramenti della globalizzazione
 - Supporto del servizio cloud
 - Strumenti

@@ -1,22 +1,22 @@
 ---
-title: Slider
+title: Dispositivi di scorrimento
 description: Panoramica dei dispositivi di scorrimento MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 06/18/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, dispositivi di scorrimento,
-ms.openlocfilehash: be19806e0202f6cb3ddcea1a80c2c40811aff4f2
-ms.sourcegitcommit: e9661d3bab061f9499134226ef3b87751ec56277
+ms.openlocfilehash: c8a2b6c377762918bfff79008ab34d3dfe4e20bb
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "112426877"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177502"
 ---
 # <a name="sliders"></a>Dispositivi di scorrimento
 
 ![Esempio di dispositivo di scorrimento](../images/slider/MRTK_UX_Slider_Main.jpg)
 
-I dispositivi di scorrimento sono componenti dell'interfaccia utente che consentono di modificare continuamente un valore spostando un dispositivo di scorrimento su una traccia. Attualmente il dispositivo di scorrimento avvicinamento delle dita può essere spostato afferrando direttamente il dispositivo di scorrimento, direttamente o a distanza. I dispositivi di scorrimento funzionano in AR e VR, usando controller del movimento, mani o movimenti e voce.
+I dispositivi di scorrimento sono componenti dell'interfaccia utente che consentono di modificare continuamente un valore spostando un dispositivo di scorrimento su una traccia. Attualmente il dispositivo di scorrimento avvicinamento delle dita può essere spostato afferrando direttamente il dispositivo di scorrimento, direttamente o a distanza. I dispositivi di scorrimento funzionano in AR e VR, usando controller del movimento, mani o movimenti + voce.
 
 ## <a name="example-scene"></a>Scena di esempio
 
@@ -33,7 +33,7 @@ Trascinare e rilasciare il prefab **PinchSlider** nella gerarchia della scena. S
 
 - PinchSlider: contiene sliderComponent
   - TouchCollider: collisore contenente l'intera area selezionabile del dispositivo di scorrimento. Abilita il comportamento Blocca sulla posizione.
-  - SliderThumb : contiene il cursore mobile
+  - SliderThumb: contiene il cursore mobile
   - TrackVisuals : contiene la traccia e qualsiasi altro oggetto visivo
   - OtherVisuals - Contenente qualsiasi altro oggetto visivo
 
@@ -45,7 +45,7 @@ I dispositivi di scorrimento espongono gli eventi seguenti:
 - OnInteractionStarted: chiamata quando l'utente afferra il dispositivo di scorrimento
 - OnInteractionEnded: chiamata quando l'utente rilascia il dispositivo di scorrimento
 - OnHoverEntered: viene chiamato quando la mano o il controller dell'utente passa il puntatore del mouse sul dispositivo di scorrimento, usando l'interazione da vicino o da lontano.
-- OnHoverExited: viene chiamato quando la mano o il controller dell'utente non si trova più vicino al dispositivo di scorrimento.
+- OnHoverExited: viene chiamato quando la mano/controller dell'utente non si trova più vicino al dispositivo di scorrimento.
 
 ## <a name="configuring-slider-bound-and-axis"></a>Configurazione del limite e dell'asse del dispositivo di scorrimento
 
@@ -79,7 +79,7 @@ Se non è possibile usare i quadratini di ridimensionamento, è invece possibile
 
 **Segni di graduazione** Gameobject che contiene i segni di graduazione desiderati lungo il dispositivo di scorrimento.
 
-**Oggetti visivi Thumb** Gameobject che contiene l'oggetto visivo thumb desiderato che si sposta lungo il dispositivo di scorrimento.
+**Oggetti visivi Thumb** Gameobject che contiene l'oggetto visivo thumb desiderato lungo il dispositivo di scorrimento.
 
 **Asse dispositivo di scorrimento** Asse lungo il dispositivo di scorrimento.
 

@@ -1,20 +1,20 @@
 ---
-title: Panoramica del sistema di teletrasporto
+title: Sistema di teletrasporto
 description: Panoramica sull'abilitazione e la disabilitazione del sistema di teletrasporto in MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, sistema di teletrasporto,
-ms.openlocfilehash: a44ad1827597dd0b27bc88a9420a3b251f934afd
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 7a49b1fea36eb1809c57abee4cede1216c07d5bf
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144142"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176179"
 ---
 # <a name="teleport-system"></a>Sistema di teletrasporto
 
-Il sistema di teletrasporto è un sottosistema di MRTK che gestisce il teletrasporto dell'utente quando l'applicazione usa uno schermo opaco. Per le esperienze AR (ad esempio HoloLens), il sistema di teletrasporto non è attivo. Per esperienze HMD immersive (OpenVR, WMR) è possibile abilitato il sistema di teletrasporto.
+Il sistema di teletrasporto è un sottosistema di MRTK che gestisce il teletrasporto dell'utente quando l'applicazione usa uno schermo opaco. Per le esperienze ar (ad HoloLens), il sistema di teletrasporto non è attivo. Per esperienze HMD immersive (OpenVR, WMR) è possibile abilitato il sistema di teletrasporto.
 
 ## <a name="enabling-and-disabling"></a>Abilitazione e disabilitazione
 
@@ -91,6 +91,6 @@ public class TeleportHandlerExample : MonoBehaviour, IMixedRealityTeleportHandle
 
 ## <a name="teleporting-on-mrtk"></a>Teletrasporto su MRTK
 
-Per teletrasportare con un controller nei dispositivi MR con configurazioni predefinite, usare la levetta. Per teletrasportarti con le mani articolate, fai un movimento con il palmo rivolto verso l'alto con l'indice e il pollice che si fiocchi verso l'esterno, completando il teletrasporto arricciando il dito indice. Per teletrasportare con la simulazione di input, vedere la documentazione aggiornata del [servizio di simulazione input](../input-simulation/input-simulation-service.md).
+Per teletrasportare con un controller nei dispositivi MR con configurazioni predefinite, usare la levetta. Per teletrasportarti con le mani articolate, fai un movimento con il palmo rivolto verso l'alto con l'indice e il pollice che si fiocchi verso l'esterno, completando il teletrasporto arricciando il dito indice. Per teletrasportare con la simulazione di input, vedere la documentazione aggiornata del [servizio di simulazione input.](../input-simulation/input-simulation-service.md)
 
   ![Movimento di teletrasporto](../images/teleport/handteleport.gif)

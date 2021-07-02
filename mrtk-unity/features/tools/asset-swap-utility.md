@@ -4,13 +4,13 @@ description: Documentazione sull'uso dell'utilità di scambio di asset in MRTK p
 author: hferrone
 ms.author: v-hferrone
 ms.date: 03/9/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK
-ms.openlocfilehash: c277cadffb356b93ffc359233b0b8307f43e8d57
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK
+ms.openlocfilehash: 50ef252913575988b5f377dd9ff92f9e9ade3a72
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144134"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176161"
 ---
 # <a name="asset-swap-utility"></a>Utilità di scambio di asset
 

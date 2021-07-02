@@ -4,13 +4,13 @@ description: Documentazione sulle primitive di ritaglio con esempi in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, primitiva di ritaglio,
-ms.openlocfilehash: 35b7166045986df34eaf2c23161efc6379160ead
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, primitiva di ritaglio,
+ms.openlocfilehash: c3331084f87ccc57208426910d84ed7bef457bc1
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145199"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176746"
 ---
 # <a name="clipping-primitive"></a>Primitiva di ritaglio
 
@@ -23,9 +23,9 @@ I comportamenti consentono il ritaglio delle forme performanti , e con la possib
 
 [`ClippingPlane.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane), [`ClippingSphere.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) e possono essere usati per controllare facilmente le proprietà [`ClippingBox.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) primitive di ritaglio. Usare questi componenti con gli shader seguenti per sfruttare gli scenari di ritaglio.
 
-- *Mixed Reality Toolkit/Standard*
-- *Mixed Reality Toolkit/TextMeshPro*
-- *Mixed Reality Toolkit/Text3DShader*
+- *Realtà mista Toolkit/Standard*
+- *Realtà mista Toolkit/TextMeshPro*
+- *Realtà mista Toolkit/Text3DShader*
 
 ## <a name="examples"></a>Esempio
 
@@ -33,12 +33,12 @@ Le **scene ClippingExamples** e **MaterialGallery** illustrano l'uso dei comport
 
 ## <a name="advanced-usage"></a>Utilizzo avanzato
 
-Per impostazione predefinita, solo [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) uno può ritagliare [un renderer](https://docs.unity3d.com/ScriptReference/Renderer.html) alla volta. Se il progetto richiede più di uno [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) per influire su un [renderer,](https://docs.unity3d.com/ScriptReference/Renderer.html)  il codice di esempio seguente illustra come ottenere questo risultato.
+Per impostazione predefinita, [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) solo uno può ritagliare un [renderer](https://docs.unity3d.com/ScriptReference/Renderer.html) alla volta. Se il progetto richiede più di uno [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) per influire su un [renderer,](https://docs.unity3d.com/ScriptReference/Renderer.html)  il codice di esempio seguente illustra come ottenere questo risultato.
 
 > [!NOTE]
 > La presenza [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) di più clip di un [renderer](https://docs.unity3d.com/ScriptReference/Renderer.html) aumenta pixel shader istruzioni e influisce sulle prestazioni. Profilare queste modifiche all'interno del progetto.
 
-*Come fare in modo che due [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) clip diversi eseere un rendering. Ad esempio, [`ClippingSphere`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) e [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) contemporaneamente:*
+*Come eseguire il rendering di [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) due clip diverse. Ad esempio, [`ClippingSphere`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) e [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) contemporaneamente:*
 
 ```C#
 // Within MRTK/Core/StandardAssets/Shaders/MixedRealityStandard.shader (or another MRTK shader) change:
@@ -123,6 +123,6 @@ public class SecondClippingBox : ClippingBox
 
 Infine, aggiungere un [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) componente e SecondClippingBox alla scena e specificare lo stesso renderer per entrambe le caselle. Il renderer dovrebbe ora essere ritagliato da entrambe le caselle contemporaneamente.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [MRTK Standard Shader](mrtk-standard-shader.md)
