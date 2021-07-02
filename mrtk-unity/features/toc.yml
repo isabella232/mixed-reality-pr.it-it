@@ -4,8 +4,6 @@
   href: camera-system/toc.yml
 - name: Diagnostica
   href: diagnostics/toc.yml
-- name: Elastici
-  href: elastics/toc.yml
 - name: Scene di esempio
   href: example-scenes/toc.yml
 - name: Impostazioni dell'esperienza
@@ -22,7 +20,7 @@
   href: profiles/toc.yml
 - name: Rendering
   href: rendering/toc.yml
-- name: Sistema della scena
+- name: Sistema di scena
   href: scene-system/toc.yml
 - name: Utilità di servizio
   href: service-utilities/toc.yml
