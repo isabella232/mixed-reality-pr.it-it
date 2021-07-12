@@ -1,55 +1,42 @@
 ---
-title: Configurazione di XR
-description: Rimanere aggiornati sulle raccomandazioni di configurazione di Unity XR più recenti per lo sviluppo di applicazioni HoloLens.
+title: Configurazione della configurazione XR
+description: Rimanere aggiornati sulle raccomandazioni di configurazione più recenti di Unity XR per lo HoloLens di applicazioni.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 04/22/2021
 ms.topic: article
-keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, visore VR di realtà mista, visore VR windows di realtà mista, visore VR di realtà virtuale, unity
-ms.openlocfilehash: d265725caf95379dfa01baa6dad1b7927fbeca5c
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, visore di realtà mista, visore windows mixed reality, visore per realtà virtuale, unity
+ms.openlocfilehash: d2904b9ea4771286b7091a8d5b7c599fcbd1244a
+ms.sourcegitcommit: e380d56f5504be4e4f069394a58cf0147eb33b66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112906942"
+ms.lasthandoff: 07/11/2021
+ms.locfileid: "113603727"
 ---
-# <a name="setting-up-your-xr-configuration"></a>Configurazione di XR
+# <a name="setting-up-your-xr-configuration"></a>Configurazione della configurazione XR
 
-Quando si avvia un nuovo progetto Unity, sono disponibili tre diverse opzioni per la gestione delle esigenze XR: 
-* Plug-in OpenXR
-* Plug-in Windows XR
-* Plug-in XR legacy
+Dopo aver scelto una [versione di Unity,](choosing-unity-version.md)il passaggio successivo consiste nel selezionare la configurazione XR che verrà utilizzata per creare l'app di realtà mista:
+
+## <a name="choosing-an-xr-configuration"></a>Scelta di una configurazione XR
+
+Quando si avvia un nuovo progetto Unity, è possibile selezionare diverse configurazioni XR: plug-in **OpenXR** di realtà mista, plug-in **XR Windows** e **XR legacy incorporato.**
 
 [!INCLUDE[](includes/xr/intro.md)]
 
 ## <a name="setting-up-your-project-with-mrtk"></a>Configurazione del progetto con MRTK
 
-MRTK per Unity offre un sistema di input multipiattaforma, componenti fondamentali e blocchi predefiniti comuni per le interazioni spaziali. MRTK versione 2 intende accelerare lo sviluppo di applicazioni per Microsoft HoloLens, i visori VR immersive di Windows Mixed Reality e la piattaforma OpenVR. Il progetto mira a ridurre le barriere di accesso, creare applicazioni di realtà mista e restituire contributi alla community per continuare a crescere insieme.
+Il modo più semplice per configurare il progetto Unity per la realtà mista è con l'Toolkit (MRTK).  MRTK per Unity è un kit di sviluppo multipiattaforma open source progettato per semplificare la creazione di straordinarie applicazioni di realtà mista.
 
-> [!div class="nextstepaction"]
-> [Provare le esercitazioni su MRTK](./tutorials/mr-learning-base-02.md?tabs=winxr)
+![MRTK](../../design/images/MRTK_UX_Hero.png)
 
-Per altri dettagli sulle funzionalità, vedere la documentazione di [MRTK.](/windows/mixed-reality/mrtk-unity)
+MRTK offre un sistema di input multipiattaforma, componenti di base e blocchi predefiniti comuni per le interazioni spaziali.  Con MRTK versione 2, è possibile velocizzare lo sviluppo di applicazioni per Microsoft HoloLens, visori vr immersivi Windows Mixed Reality e molti altri dispositivi VR/AR. Il progetto ha lo scopo di ridurre le barriere all'ingresso, consentendo a tutti di creare applicazioni di realtà mista e contribuire alla community con la crescita di tutti.
 
-### <a name="using-mrtk-with-openxr-support"></a>Uso di MRTK con il supporto di OpenXR
+[!INCLUDE[](includes/xr/mrtk-next-step.md)]
 
-MRTK-Unity versione 2.7 offre un supporto migliore per il plug-in OpenXR di Realtà mista.
-
-Aprire di [nuovo Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md) per installare Mixed Reality Toolkit, se non è già stato fatto. Il supporto di OpenXR è in pacchetto **Foundation.**
-
-Per informazioni più dettagliate sulla [migrazione a OpenXR,](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk#configuring-mrtk-for-the-xr-sdk-pipeline)vedere la documentazione di MRTK.
-
-> [!NOTE]
-> Quando si esegue l'aggiornamento da una versione precedente di MRTK precedente alla **2.5.3,** verificare che la riga seguente si trova nel file **Assets/MixedRealityToolkit.Generated/link.xml:**
->
-> ```xml
-> <assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>
-> ```
->
-> Questa riga verrà aggiunta per impostazione predefinita se si è iniziato con MRTK 2.5.4 o versione successiva.
+Per altre informazioni sul modello di realtà Toolkit, vedere la [documentazione di MRTK.](/windows/mixed-reality/mrtk-unity)
 
 ## <a name="manual-setup-without-mrtk"></a>Configurazione manuale senza MRTK
 
-Anche se Microsoft e la community hanno creato strumenti opensource come [Mixed Reality Toolkit (MRTK)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html) che configurano automaticamente l'ambiente WMR, molti sviluppatori vogliono creare le proprie esperienze da zero.
+Anche se Microsoft e la community hanno creato open source strumenti come Il Toolkit di realtà mista [(MRTK)](/windows/mixed-reality/mrtk-unity) che configura automaticamente l'ambiente per la realtà mista, alcuni sviluppatori potrebbero voler creare le proprie esperienze da zero.
 
 [!INCLUDE[](includes/xr/manual-setup.md)]

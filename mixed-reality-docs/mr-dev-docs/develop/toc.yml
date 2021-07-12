@@ -28,6 +28,8 @@
       href: unity/unity-development-overview.md
     - name: Sviluppo in Unity per VR
       href: unity/unity-development-wmr-overview.md
+    - name: Mixed Reality Toolkit (MRTK)
+      href: /windows/mixed-reality/mrtk-unity/
     - name: Esercitazioni
       items:
         - name: Panoramica
@@ -124,21 +126,21 @@
               items:
                 - name: HoloLens (prima generazione) Nozioni di base 100 - Introduzione a Unity
                   href: unity/tutorials/holograms-100.md
-                - name: HoloLens (prima generazione) Nozioni di base 101 - Progetto completo con dispositivo
+                - name: HoloLens (prima generazione) Nozioni di base 101 - Completare il progetto con il dispositivo
                   href: unity/tutorials/holograms-101.md
-                - name: HoloLens (prima generazione) Nozioni di base 101E - Progetto completo con emulatore
+                - name: HoloLens (prima generazione) Basics 101E - Completare il progetto con l'emulatore
                   href: unity/tutorials/holograms-101e.md
-                - name: Input di HoloLens (prima generazione) 210 - Sguardo fisso
+                - name: HoloLens (prima generazione) Input 210 - Gaze
                   href: unity/tutorials/holograms-210.md
-                - name: Input di HoloLens (prima generazione) 211 - Movimento
+                - name: HoloLens (prima generazione) Input 211 - Movimento
                   href: unity/tutorials/holograms-211.md
-                - name: Input Di HoloLens (prima generazione) 212 - Voce
+                - name: HoloLens (prima generazione) Input 212 - Voce
                   href: unity/tutorials/holograms-212.md
-                - name: HoloLens (prima generazione) Spaziale 220 - Audio spaziale
+                - name: HoloLens (prima generazione) Spaziale 220 - Suono spaziale
                   href: unity/tutorials/holograms-220.md
                 - name: HoloLens (prima generazione) Spaziale 230 - Mapping spaziale
                   href: unity/tutorials/holograms-230.md
-                - name: HoloLens (prima generazione) Condivisione 240 - Più dispositivi HoloLens
+                - name: HoloLens (prima generazione) Condivisione di 240 - Più HoloLens dispositivi
                   href: unity/tutorials/holograms-240.md
             - name: Realtà mista e servizi di Azure
               items:
@@ -150,13 +152,13 @@
                   href: unity/tutorials/mr-azure-302b.md
                 - name: HoloLens (prima generazione) e Azure 303 - Comprensione del linguaggio naturale
                   href: unity/tutorials/mr-azure-303.md
-                - name: HoloLens (prima generazione) e Azure 304 - Riconoscimento volto
+                - name: HoloLens (prima generazione) e Azure 304 - Riconoscimento del viso
                   href: unity/tutorials/mr-azure-304.md
                 - name: HoloLens (prima generazione) e Azure 305 - Funzioni e archiviazione
                   href: unity/tutorials/mr-azure-305.md
                 - name: HoloLens (prima generazione) e Azure 306 - Streaming video
                   href: unity/tutorials/mr-azure-306.md
-                - name: HoloLens (prima generazione) e Azure 307 - Apprendimento maching
+                - name: HoloLens (prima generazione) e Azure 307 - Apprendimento di Maching
                   href: unity/tutorials/mr-azure-307.md
                 - name: HoloLens (prima generazione) e Azure 308 - Notifiche tra dispositivi
                   href: unity/tutorials/mr-azure-308.md
@@ -166,7 +168,7 @@
                   href: unity/tutorials/mr-azure-310.md
                 - name: HoloLens (prima generazione) e Azure 311 - Microsoft Graph
                   href: unity/tutorials/mr-azure-311.md
-                - name: HoloLens (prima generazione) e Azure 312 - Integrazione di bot
+                - name: HoloLens (prima generazione) e Azure 312 - Integrazione del bot
                   href: unity/tutorials/mr-azure-312.md
                 - name: HoloLens (prima generazione) e Azure 313 - Servizio hub IoT
                   href: unity/tutorials/mr-azure-301.md
@@ -174,7 +176,7 @@
       items:
         - name: Scelta di una versione di Unity e di un plug-in XR
           href: unity/choosing-unity-version.md
-        - name: Configurazione di XR
+        - name: Configurazione della configurazione XR
           href: unity/xr-project-setup.md
         - name: Strumento per la funzionalità di realtà mista
           items:
@@ -184,7 +186,7 @@
               href: unity/configuring-feature-tool.md
             - name: Rilevazione
               href: unity/discovering-features.md
-            - name: Importa
+            - name: Comando Importa
               href: unity/importing-features.md
             - name: Dettagli del pacchetto
               href: unity/viewing-package-details.md
@@ -194,7 +196,7 @@
       items:
         - name: Impostazione della fotocamera
           href: unity/camera-in-unity.md
-        - name: Blocco del mondo e ancoraggi nello spaziale
+        - name: Ancoraggi spaziali e di blocco del mondo
           href: unity/spatial-anchors-in-unity.md
         - name: Esperienze condivise
           href: unity/shared-experiences-in-unity.md
