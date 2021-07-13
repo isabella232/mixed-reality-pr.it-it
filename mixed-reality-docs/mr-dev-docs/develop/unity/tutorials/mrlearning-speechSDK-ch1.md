@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, riconoscimento vocale, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: a728e3520539723c4b38849eeb60524995e572eb
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 39eaa8a17d4616dc9c044f9bff7522dde41cffb7
+ms.sourcegitcommit: fd1964ec6c645e8088ec120661f73739bb7775a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175449"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113656636"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1. Integrazione e uso del riconoscimento vocale e della trascrizione
 
@@ -37,7 +37,7 @@ In questa serie di esercitazioni creerai un'applicazione di Realtà mista per es
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> con Unity 2020/2019 LTS installato e il modulo Universal Windows Platform Build Support aggiunto
 
 > [!Important]
-> Questa serie di esercitazioni supporta unity 2020 LTS (attualmente 2020.3.x) se si usa Open XR o Windows XR Plugin e anche Unity 2019 LTS (attualmente 2019.4.x) se si usa Legacy WSA o Windows XR Plugin. Questa istruzione sostituisce gli eventuali requisiti relativi alla versione di Unity indicati negli argomenti visualizzabili facendo clic sui collegamenti dei prerequisiti sopra riportati.
+> Questa serie di esercitazioni supporta Unity 2020 LTS (attualmente 2020.3.x) se si usa Open XR o Windows XR Plugin e anche Unity 2019 LTS (attualmente 2019.4.x) se si usa Legacy WSA o Windows XR Plugin. Questa istruzione sostituisce gli eventuali requisiti relativi alla versione di Unity indicati negli argomenti visualizzabili facendo clic sui collegamenti dei prerequisiti sopra riportati.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Creazione e preparazione del progetto Unity
 
@@ -51,7 +51,7 @@ A questo scopo, segui prima l'esercitazione [Inizializzazione del progetto e pri
 4. [Importazione del progetto Toolkit realtà mista e configurazione del progetto Unity](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 5. [Creazione e configurazione della scena](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) e assegnazione di un nome appropriato, ad esempio *AzureSpeechServices*
 
-Seguire quindi [](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) le istruzioni relative alla modifica dell'opzione di visualizzazione della consapevolezza spaziale per assicurarsi che il profilo di configurazione MRTK per la scena sia **DefaultHoloLens2ConfigurationProfile** e modificare le opzioni di visualizzazione per la mesh di riconoscimento spaziale in **Occlusion**.
+Seguire quindi [](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) le istruzioni della modifica dell'opzione di visualizzazione della consapevolezza spaziale per assicurarsi che il profilo di configurazione MRTK per la scena sia **DefaultHoloLens2ConfigurationProfile** e modificare le opzioni di visualizzazione per la mesh di riconoscimento spaziale in **Occlusion**.
 
 ## <a name="configuring-the-speech-commands-start-behavior"></a>Configurazione del comportamento di avvio dei comandi vocali
 
@@ -166,4 +166,4 @@ Hai implementato il riconoscimento vocale basato su Azure. Esegui l'applicazione
 Nell'esercitazione successiva apprenderai come eseguire i comandi con il riconoscimento vocale di Azure.
 
 > [!div class="nextstepaction"]
-> [Esercitazione successiva: 2. Uso del riconoscimento vocale per l'esecuzione di comandi](mrlearning-speechSDK-ch2.md)
+> [Esercitazione successiva: 2. Eseguire comandi con il riconoscimento vocale di Azure](mrlearning-speechSDK-ch2.md)

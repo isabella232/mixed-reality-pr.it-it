@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure
 ms.localizationpriority: high
-ms.openlocfilehash: eddde9b827dcf2a2f054f48a50f38946e5d98533
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 9c3ae23c39bf4d0b32d8a5d82716f93fee48b6db
+ms.sourcegitcommit: fd1964ec6c645e8088ec120661f73739bb7775a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175577"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113656640"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Introduzione ad Ancoraggi nello spazio di Azure
 
@@ -35,7 +35,7 @@ Seguire prima l'esercitazione [Inizializzazione del progetto e distribuzione del
 4. [Importazione del progetto Toolkit realtà mista e configurazione del progetto Unity](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 5. [Creazione e configurazione della scena](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) e assegnazione di un nome appropriato, ad esempio *AzureSpatialAnchors*
 
-Seguire quindi [](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) le istruzioni relative alla modifica dell'opzione di visualizzazione della consapevolezza spaziale per assicurarsi che il profilo di configurazione MRTK per la scena sia **DefaultHoloLens2ConfigurationProfile** e modificare le opzioni di visualizzazione per la mesh di riconoscimento spaziale in **Occlusion**.
+Segui quindi [](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) le istruzioni riportate in Modifica dell'opzione di visualizzazione della consapevolezza spaziale per assicurarti che il profilo di configurazione di MRTK per la scena sia **DefaultHoloLens2ConfigurationProfile** e modifica le opzioni di visualizzazione per la mesh di consapevolezza spaziale in **Occlusion**.
 
 ## <a name="installing-inbuilt-unity-packages-and-importing-the-tutorial-assets"></a>Installazione di pacchetti Unity predefiniti e importazione degli asset dell'esercitazione
 
@@ -65,11 +65,11 @@ Selezionare **l'oggetto MixedRealityToolkit** nella finestra Hierarchy (Gerarchi
 ![Oggetto MixedRealityToolkit di Unity con i componenti AR Anchor Manager e DisableDiagnosticsSystem aggiunti ](images/mr-learning-asa/asa-02-section4-step1-2.PNG)
 
 > [!WARNING]
-> Si è verificato un problema noto con ASA v2.9.0 e v2.10.0-preview.1 che richiede che nella scena siano inseriti due oggetti aggiuntivi. Usare il pulsante **Aggiungi** componente nella finestra del controllo per aggiungere un ar Camera Manager (Script) e una sessione AR (Script) all'oggetto **MixedRealityToolkit.** Assicurarsi di disabilitare la fotocamera creata automaticamente durante l'aggiunta di AR Camera Manager (Script) deselezionando la casella di controllo accanto all'oggetto Camera nella finestra del controllo. Questo problema verrà risolto nella versione completa di ASA v2.10.0.
-> 
+> Esiste un problema noto con Asa v2.9.0 e v2.10.0-preview.1 che richiede che nella scena siano posizionati altri due oggetti. Usa il **pulsante Aggiungi componente** nella finestra di controllo per aggiungere ar Camera Manager (Script) e una sessione AR (Script) all'oggetto **MixedRealityToolkit.** Assicurati di disabilitare la fotocamera creata automaticamente durante l'aggiunta di AR Camera Manager (Script) deselezionando la casella di controllo accanto all'oggetto Camera nella finestra di controllo. Questo problema verrà risolto nella versione completa di Asa v2.10.0.
+>
 
 > [!NOTE]
-> Quando si aggiunge il componente AR Anchor Manager (Script), il componente AR Session Origin (Script) viene aggiunto automaticamente perché è richiesto dal componente AR Anchor Manager (Script).
+> Quando aggiungi il componente AR Anchor Manager (Script), il componente AR Session Origin (Script) (Origine sessione AR - Script) viene aggiunto automaticamente perché è richiesto dal componente AR Anchor Manager (Script) (Gestione ancoraggi AR - Script).
 
 ## <a name="configuring-the-buttons-to-operate-the-scene"></a>Configurazione dei pulsanti per il funzionamento della scena
 
@@ -77,21 +77,21 @@ In questa sezione aggiungerai script alla scena per creare una serie di eventi B
 
 Nella finestra Hierarchy (Gerarchia) espandi l'oggetto **ButtonParent** e seleziona il primo oggetto figlio denominato **StartAzureSession**. Nella finestra Inspector (Controllo) configura l'evento **On Click ()** (Al clic) del componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
 
-* Assegna l'oggetto **ParentAnchor** al campo **None (Object)** (Nessuno - Oggetto)
+* Assegnare **l'oggetto ParentAnchor** come listener per l'evento On Click () trascinandolo dalla finestra Hierarchy (Gerarchia) nel campo **None (Object) (Nessuno - Oggetto)**
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **AnchorModuleScript** > **StartAzureSession ()** per impostare questa funzione come l'azione da eseguire quando viene attivato l'evento
 
 ![Unity con l'evento OnClick del pulsante StartAzureSession configurato](images/mr-learning-asa/asa-02-section5-step1-1.png)
 
 Nella finestra Hierarchy (Gerarchia) seleziona il pulsante successivo denominato **StopAzureSession** e quindi nella finestra Inspector (Controllo) configura l'evento **On Click ()** (Al clic) del componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
 
-* Assegna l'oggetto **ParentAnchor** al campo **None (Object)** (Nessuno - Oggetto)
+* Assegnare **l'oggetto ParentAnchor** come listener per l'evento On Click () trascinandolo dalla finestra Hierarchy (Gerarchia) nel campo **None (Object) (Nessuno - Oggetto)**
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **AnchorModuleScript** > **StopAzureSession ()** per impostare questa funzione come l'azione da eseguire quando viene attivato l'evento
 
 ![Unity con l'evento OnClick del pulsante StopAzureSession configurato](images/mr-learning-asa/asa-02-section5-step1-2.png)
 
 Nella finestra Hierarchy (Gerarchia) seleziona il pulsante successivo denominato **CreateAzureAnchor** e quindi nella finestra Inspector (Controllo) configura l'evento **On Click ()** (Al clic) del componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
 
-* Assegna l'oggetto **ParentAnchor** al campo **None (Object)** (Nessuno - Oggetto)
+* Assegnare **l'oggetto ParentAnchor** come listener per l'evento On Click () trascinandolo dalla finestra Hierarchy (Gerarchia) nel campo **None (Object) (Nessuno - Oggetto)**
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **AnchorModuleScript** > **CreateAzureAnchor ()** per impostare questa funzione come l'azione da eseguire quando viene attivato l'evento
 * Assegna l'oggetto **ParentAnchor** al campo **None (Game Object)** (Nessuno - Oggetto gioco) vuoto per impostarlo come argomento della funzione CreateAzureAnchor ()
 
@@ -99,7 +99,7 @@ Nella finestra Hierarchy (Gerarchia) seleziona il pulsante successivo denominato
 
 Nella finestra Hierarchy (Gerarchia) seleziona il pulsante successivo denominato **RemoveLocalAnchor** e quindi nella finestra Inspector (Controllo) configura l'evento **On Click ()** (Al clic) del componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
 
-* Assegna l'oggetto **ParentAnchor** al campo **None (Object)** (Nessuno - Oggetto)
+* Assegnare **l'oggetto ParentAnchor** come listener per l'evento On Click () trascinandolo dalla finestra Hierarchy (Gerarchia) nel campo **None (Object) (Nessuno - Oggetto)**
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **AnchorModuleScript** > **RemoveLocalAnchor ()** per impostare questa funzione come l'azione da eseguire quando viene attivato l'evento
 * Assegna l'oggetto **ParentAnchor** al campo vuoto **None (Game Object)** (Nessuno - Oggetto gioco) per impostarlo come argomento della funzione RemoveLocalAnchor ()
 
@@ -107,14 +107,14 @@ Nella finestra Hierarchy (Gerarchia) seleziona il pulsante successivo denominato
 
 Nella finestra Hierarchy (Gerarchia) seleziona il pulsante successivo denominato **FindAzureAnchor** e quindi nella finestra Inspector (Controllo) configura l'evento **On Click ()** (Al clic) del componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
 
-* Assegna l'oggetto **ParentAnchor** al campo **None (Object)** (Nessuno - Oggetto)
+* Assegnare **l'oggetto ParentAnchor** come listener per l'evento On Click () trascinandolo dalla finestra Hierarchy (Gerarchia) nel campo **None (Object) (Nessuno - Oggetto)**
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **AnchorModuleScript** > **FindAzureAnchor ()** per impostare questa funzione come l'azione da eseguire quando viene attivato l'evento
 
 ![Unity con l'evento OnClick del pulsante FindAzureAnchor configurato](images/mr-learning-asa/asa-02-section5-step1-5.png)
 
 Nella finestra Hierarchy (Gerarchia) seleziona il pulsante successivo denominato **DeleteAzureAnchor** e quindi nella finestra Inspector (Controllo) configura l'evento **On Click ()** (Al clic) del componente **Button Config Helper (Script)** (Helper configurazione pulsanti - script) come indicato di seguito:
 
-* Assegna l'oggetto **ParentAnchor** al campo **None (Object)** (Nessuno - Oggetto)
+* Assegnare **l'oggetto ParentAnchor** come listener per l'evento On Click () trascinandolo dalla finestra Hierarchy (Gerarchia) nel campo **None (Object) (Nessuno - Oggetto)**
 * Dall'elenco a discesa **No Function** (Nessuna funzione) seleziona **AnchorModuleScript** > **DeleteAzureAnchor ()** per impostare questa funzione come l'azione da eseguire quando viene attivato l'evento
 
 ![Unity con l'evento OnClick del pulsante DeleteAzureAnchor configurato](images/mr-learning-asa/asa-02-section5-step1-6.png)
@@ -125,7 +125,7 @@ Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto **ParentAnchor** e quin
 
 * Nel campo **Spatial Anchors Account ID** (ID account Ancoraggi nello spazio) incolla il valore di **Account ID** (ID account) del tuo account di Ancoraggi nello spazio di Azure
 * Nel campo **Spatial Anchors Account Key** (Chiave account Ancoraggi nello spazio) incolla il valore di **Access Key** (Chiave di accesso) primario o secondario del tuo account di Ancoraggi nello spazio di Azure
-* Nel campo **Dominio account ancoraggi** nello stato spaziale incollare il dominio **dell'account** dall'account Ancoraggi nello stato di Azure
+* Nel campo **Spatial Anchors Account Domain (Dominio account ancoraggi** nello stato spaziale) incollare il dominio **dell'account** di Ancoraggi nello stato di Azure
 
 ![Unity con Spatial Anchor Manager configurato](images/mr-learning-asa/asa-02-section6-step1-1.png)
 

@@ -1,20 +1,20 @@
 ---
-title: Aggiunta di una modalità offline per la traduzione locale da voce a testo
-description: In questo corso viene illustrato come aggiungere la modalità offline per la conversione locale della voce in testo scritto in applicazioni di realtà mista.
+title: Eseguire comandi con il riconoscimento vocale di Azure
+description: Completare questo corso per informazioni su come eseguire comandi usando il riconoscimento vocale di Azure nelle applicazioni di realtà mista.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, riconoscimento vocale, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 2e7a48dc4bb64eb177e6fa290f4918345c3d642f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 8d031896a1725c0121272b68578016edf38a36cf
+ms.sourcegitcommit: fd1964ec6c645e8088ec120661f73739bb7775a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590153"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113656627"
 ---
-# <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a>2. Aggiunta di una modalità offline per la conversione locale della voce in testo scritto
+# <a name="2-execute-commands-using-azure-speech-recognition"></a>2. Eseguire comandi con il riconoscimento vocale di Azure
 
 In questa esercitazione aggiungerai la possibilità di eseguire comandi con il riconoscimento vocale di Azure, che consentirà di eseguire un evento in base alla parola o alla frase definita.
 
