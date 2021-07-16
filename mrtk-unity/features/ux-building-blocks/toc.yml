@@ -4,7 +4,7 @@
   href: bounding-box.md
 - name: Controllo Limiti
   href: bounds-control.md
-- name: Pulsante
+- name: Pulsanti
   href: button.md
 - name: Gestione vincoli
   href: constraint-manager.md

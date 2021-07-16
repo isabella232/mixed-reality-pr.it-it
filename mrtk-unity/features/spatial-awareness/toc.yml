@@ -1,6 +1,6 @@
 - name: Introduzione alla consapevolezza spaziale
   href: spatial-awareness-getting-started.md
-- name: Osservatore della mesh di consapevolezza spaziale
+- name: Configurazione degli osservatori mesh per il dispositivo
   href: configuring-spatial-awareness-mesh-observer.md
 - name: Osservatore della mesh di oggetti spaziali
   href: spatial-object-mesh-observer.md
@@ -8,5 +8,5 @@
   href: scene-understanding.md
 - name: Guida all'utilizzo
   href: usage-guide.md
-- name: Creare un provider di dati
+- name: Creazione di un provider di dati di consapevolezza spaziale
   href: create-data-provider.md

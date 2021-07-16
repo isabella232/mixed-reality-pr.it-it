@@ -1,6 +1,6 @@
-- name: Aggiornamento da HTK
+- name: Aggiornamento da HoloToolkit
   href: htk-to-mrtk-porting-guide.md
-- name: STRIPPING di MRTK e codice gestito
+- name: Stripping di MRTK e del codice gestito
   href: mrtk-and-managed-code-stripping.md
 - name: Aggiornamento da versioni precedenti
   href: updating.md

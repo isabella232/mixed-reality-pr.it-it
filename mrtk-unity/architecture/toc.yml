@@ -1,4 +1,4 @@
-- name: Panoramica
+- name: Panoramica dell'architettura
   href: overview.md
 - name: Framework e runtime
   href: framework-and-runtime.md

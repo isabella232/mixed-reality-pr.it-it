@@ -1,6 +1,6 @@
 - name: Benvenuti in MRTK
   href: index.md
-- name: Provare l'hub esempi
+- name: Provare l'hub degli esempi MRTK
   href: running-examples-hub.md
 - name: Scene di esempio
   href: running-example-scenes.md
@@ -8,9 +8,9 @@
   href: configuration/toc.yml
 - name: Panoramica dei dispositivi supportati
   href: supported-devices/toc.yml
-- name: Architecture
+- name: Architettura
   href: architecture/toc.yml
-- name: Panoramiche delle funzionalità
+- name: Panoramica delle funzionalità
   href: features/toc.yml
 - name: Prestazioni e procedure consigliate
   href: performance/toc.yml
@@ -24,5 +24,5 @@
   href: roadmap.md
 - name: Contributo
   href: contributing/toc.yml
-- name: Documenti archiviati (pre-2.6)
+- name: Documentazione archiviata (pre-2.6)
   href: 'https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/WelcomeToMRTK.html'
