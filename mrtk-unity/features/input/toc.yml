@@ -1,6 +1,6 @@
 - name: Controllers
   href: controllers.md
-- name: Creare un provider di dati
+- name: Creazione di un provider di dati del sistema di input
   href: create-data-provider.md
 - name: Dettatura
   href: dictation.md
@@ -10,7 +10,7 @@
   href: gestures.md
 - name: Tracciamento mano
   href: hand-tracking.md
-- name: Come aggiungere l'interattività da vicino
+- name: Come aggiungere l'interattività vicina
   href: how-to-add-near-interactivity.md
 - name: Azioni di input
   href: input-actions.md
@@ -24,7 +24,7 @@
   href: overview.md
 - name: Pointers
   href: pointers.md
-- name: Sintesi vocale
+- name: Voce
   href: speech.md
 - name: Tracciamento oculare
   href: eye-tracking/toc.yml

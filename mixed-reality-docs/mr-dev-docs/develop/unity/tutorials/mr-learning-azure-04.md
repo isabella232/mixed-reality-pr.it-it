@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, hololens 2, ancoraggi nello spazio di Azure, servizi cloud di azure, visione personalizzata di azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 0837ebd9d34ba12d660098fc765824da3c561d07
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ab5bcfe92e5de2149e844fc02164f5079e215142
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590543"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224284"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4. Integrazione di Ancoraggi nello spazio di Azure
 
@@ -39,9 +39,16 @@ Vedere come [creare una risorsa di Ancoraggi nello spazio](/azure/spatial-anchor
 
 In questa sezione verrà illustrato come configurare la scena e apportare le modifiche necessarie.
 
+Selezionare **l'oggetto MixedRealityToolkit** nella finestra Hierarchy **(Gerarchia)** e usare il pulsante Add **Component** (Aggiungi componente) nella finestra Inspector (Controllo) per aggiungere AR Anchor Manager (Script)
+
+![Oggetto Unity MixedRealityToolkit con componenti ar Anchor Manager aggiunti ](images/mr-learning-azure/tutorial4-section1-step1-1.png)
+
+> [!NOTE]
+> Quando si aggiunge il componente AR Anchor Manager (Script), il componente AR Session Origin (Script) viene aggiunto automaticamente perché è richiesto dal componente AR Anchor Manager (Script).
+
 Nella finestra Project (Progetto) passa a **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manager**
 
-![Unity con il prefab AnchorManager selezionato](images/mr-learning-azure/tutorial4-section1-step1-1.png)
+![Unity con il prefab AnchorManager selezionato](images/mr-learning-azure/tutorial4-section1-step1-2.png)
 
 Dalla cartella **Manager** trascinare e rilasciare il prefab **Anchor Manager** (Gestione ancoraggi) nella gerarchia della scena.
 

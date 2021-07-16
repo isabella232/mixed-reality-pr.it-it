@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, hololens 2, servizio azure bot, luis, linguaggio naturale, bot conversazione, servizi cloud di azure, visione personalizzata di azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 2e4637af1b1745a8d2394bc4b57706ac106ddd6b
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: bade124dff639e6f30fb67039debfddef54a22db
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550421"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224525"
 ---
 # <a name="5-integrating-azure-bot-service"></a>5. Integrazione del servizio Azure Bot
 
@@ -54,46 +54,53 @@ Scopri di più sulle [funzioni di Azure](/azure/azure-functions/functions-overvi
 
 La funzione **Count** esegue una query nell'**archivio tabelle** per recuperare tutti i **TrackedObject** dalla tabella: un concetto molto semplice. Dall'altra parte, la funzione **Find** accetta un parametro di query *name* dalla richiesta *GET*, esegue una query nell'**archivio tabelle** per trovare un **TrackedObject** corrispondente e restituisce un DTO come JSON.
 
-Per distribuire questa **funzione di Azure** direttamente da **Visual Studio**, aprire la cartella AzureFunction_TrackedObjectsService scaricata e aprire il file present **. sln** con Visual Studio ![ AzureFunction_TrackedObjectsService cartella](images/mr-learning-azure/tutorial5-section3-step1-1.png)
+Per distribuire questa **funzione di Azure** direttamente da **Visual Studio**, aprire la cartella AzureFunction_TrackedObjectsService scaricata e aprire il file con estensione **sln** corrente con la cartella AzureFunction_TrackedObjectsService visual ![ studio](images/mr-learning-azure/tutorial5-section3-step1-1.png)
 
-Al termine del caricamento del file in Visual Studio, fare clic con il pulsante destro del mouse sul **sevizio dell'oggetto rilevato** in Esplora soluzioni e selezionare pubblica ![ pubblicazione servizio oggetti rilevati](images/mr-learning-azure/tutorial5-section3-step1-2.png)
+Dopo aver caricato il file in Visual Studio, fare clic con il pulsante destro del mouse su **Tracked object sevice** (Oggetto tracciato) in Esplora soluzioni e selezionare Publish Publish Tracked object service (Pubblica servizio ![ oggetti tracciati)](images/mr-learning-azure/tutorial5-section3-step1-2.png)
 
-Verrà visualizzato il messaggio popup Publish (pubblica) e si richiede flatform di destinazione selezionare Azure e fare clic sul pulsante **Avanti** .
+Verrà visualizzato il popup di pubblicazione e verrà chiesto di selezionare azure come destinazione e fare clic sul **pulsante** Avanti
 
-![Seleziona piattaforma di destinazione](images/mr-learning-azure/tutorial5-section3-step1-3.png)
+![Selezionare la piattaforma di destinazione](images/mr-learning-azure/tutorial5-section3-step1-3.png)
 
-In destinazione specifica selezionare **Azure app per le funzioni (Windows)** e fare clic sul pulsante **Avanti** .
+Nella destinazione specifica selezionare **App per le funzioni di Azure (Windows)** e fare clic sul **pulsante** Avanti
 
-![Seleziona host di destinazione](images/mr-learning-azure/tutorial5-section3-step1-4.png)
+![Selezionare l'host di destinazione](images/mr-learning-azure/tutorial5-section3-step1-4.png)
 
-Se non si è connessi ad Azure, accedere a Visual Studio e la finestra sarà simile a
+Se non si è connessi ad Azure, accedere tramite Visual Studio e la finestra sarà simile a
 
 ![Selezionare o creare una funzione di Azure](images/mr-learning-azure/tutorial5-section3-step1-5.png)
 
-Fare clic sul pulsante pulse per creare nuove app per le funzioni nell'account Azure
+Fare clic sul pulsante pulse per creare una nuova app per le funzioni nell'account Azure
 
-![Crea nuovo app per le funzioni](images/mr-learning-azure/tutorial5-section3-step1-6.png)
+![Creare una nuova app per le funzioni](images/mr-learning-azure/tutorial5-section3-step1-6.png)
 
-* Per **nome** immettere un nome appropriato per il servizio, ad esempio *TrackedObjectsService*
-* Per **tipo di piano** scegliere consumo
-* Per **località**, scegliere una località vicina alla posizione fisica degli utenti dell'app, ad esempio *(Stati Uniti) Stati Uniti occidentali*
-* Per il **gruppo di risorse** e l' **archiviazione**, scegliere il rispettivo gruppo di Azure e l'account di archiviazione sono stati creati in precedente capitoli.
+* Per **Nome** immettere un nome appropriato per il servizio, ad esempio *TrackedObjectsService*
+* Per **Tipo di piano** scegliere consumo
+* Per **Località** scegliere una località vicina alla posizione fisica degli utenti dell'app, ad esempio *(Stati Uniti) Stati Uniti occidentali*
+* Per **Gruppo di risorse** e **Archiviazione**, scegliere il gruppo di Azure e l'account di archiviazione corrispondenti creati in capitoli successivi.
 
-Una volta creato app per le funzioni fare clic sul pulsante **fine** 
+Dopo aver creato l'app per le funzioni, **fare clic sul pulsante** Fine.
 
-![Fine della creazione app per le funzioni](images/mr-learning-azure/tutorial5-section3-step1-7.png)
+![Completare la creazione dell'app per le funzioni](images/mr-learning-azure/tutorial5-section3-step1-7.png)
 
-Al termine del processo, verrà aperto un popup di pubblicazione, fare clic sul pulsante **pubblica** per pubblicare la funzione e attendere la pubblicazione
+Per aggiornare la stringa di connessione, **fare clic su 3 puntini nella** scheda di **hosting** e selezionare Gestisci **Servizio app di Azure impostazioni**
 
-![Funzione Publish](images/mr-learning-azure/tutorial5-section3-step1-8.png)
+![aprire Impostazioni applicazione](images/mr-learning-azure/tutorial5-section3-step1-8.png)
 
-Al termine della pubblicazione, fare clic su **Gestisci in portale di Azure** sezione azioni è possibile passare a una funzione specifica nel portale di Azure e fare clic su **configurazione** nella sezione *Impostazioni* . In **Impostazioni applicazione** devi fornire la *stringa di connessione* all'**archivio di Azure** in cui si trovano gli **oggetti tracciati**. Fai clic su **Nuova impostazione applicazione**, quindi come nome usa **AzureStorageConnectionString** e come valore fornisci la *stringa di connessione* corretta. Fai quindi clic su **Salva**. La **funzione di Azure** è ora pronta a servire il *bot* che creerai più avanti.
+Si aprirà **la finestra Impostazioni** di connessione dell'applicazione e si udirà la sostituzione di AzureStorageConnectionString sia per **Local** che **per Remote** con AzureStorageConnectionString. Dopo la sostituzione, fare clic su OK.
 
-Per ottenere l'URL di Count e find, selezionare **funzioni** che si trovano nella sezione *Functions* . qui è possibile trovare la funzione Count e find, selezionare la funzione Count sul lato superiore. è possibile trovare il pulsante *Get Function URL* . Seguire la stessa procedura per ottenere l'URL della funzione Find.
+![aggiornare la stringa di connessione](images/mr-learning-azure/tutorial5-section3-step1-8a.png)
+
+A questo punto, fare **clic sul pulsante** Pubblica per pubblicare la funzione e attendere la pubblicazione.
+
+Al termine della pubblicazione, fare clic su Gestisci **in portale di Azure** nella sezione Azioni per  accedere a una funzione specifica nel portale di Azure e fare clic su Configurazione nella sezione *Impostazioni.* In **Impostazioni applicazione** devi fornire la *stringa di connessione* all'**archivio di Azure** in cui si trovano gli **oggetti tracciati**. Fai clic su **Nuova impostazione applicazione**, quindi come nome usa **AzureStorageConnectionString** e come valore fornisci la *stringa di connessione* corretta. Fai quindi clic su **Salva**. La **funzione di Azure** è ora pronta a servire il *bot* che creerai più avanti.
+
+Per ottenere l'URL di count e Find, **selezionare Funzioni** nella *sezione* Funzioni. Qui è possibile trovare sia la funzione Count che la funzione Find, selezionare La funzione Count nella parte superiore è possibile trovare il *pulsante Get Function Url (Ottieni URL funzione).*
+Seguire la stessa procedura per ottenere l'URL della funzione Find.
 
 ### <a name="creating-a-conversation-bot"></a>Creazione di un bot conversazionale
 
-Esistono diversi modi per sviluppare un bot di conversazione basato su bot Framework. In questa lezione userai l'applicazione desktop [Bot Framework Composer](/composer/), ovvero una finestra di progettazione visiva ideale per lo sviluppo rapido.
+Esistono diversi modi per sviluppare un bot Bot Framework basato su un bot di conversazione. In questa lezione userai l'applicazione desktop [Bot Framework Composer](/composer/), ovvero una finestra di progettazione visiva ideale per lo sviluppo rapido.
 
 Puoi scaricare le versioni più recenti dal [repository di GitHub](https://github.com/microsoft/BotFramework-Composer/releases). È disponibile per Windows, Mac e Linux.
 

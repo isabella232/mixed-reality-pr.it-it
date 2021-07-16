@@ -1,20 +1,20 @@
 ---
-title: Creazione di provider di dati di input
+title: Creazione di un provider di dati del sistema di input
 description: documentazione per creare il sistema di input e il provider di dati in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: c164fa406ae6822f4d889aff3bf615cf7fa76337
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 0b6012871a4d4988fdb70336a3c33455f479bcac
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144069"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114281921"
 ---
 # <a name="creating-an-input-system-data-provider"></a>Creazione di un provider di dati del sistema di input
 
-Il sistema di input mixed reality toolkit è un sistema estendibile per l'abilitazione del supporto dei dispositivi di input. Per aggiungere il supporto per una nuova piattaforma hardware, potrebbe essere necessario un provider di dati di input personalizzato.
+Il sistema di input Toolkit realtà mista è un sistema estendibile per abilitare il supporto dei dispositivi di input. Per aggiungere il supporto per una nuova piattaforma hardware, potrebbe essere necessario un provider di dati di input personalizzato.
 
 Questo articolo descrive come creare provider di dati personalizzati, detti anche gestori di dispositivi, per il sistema di input. Il codice di esempio illustrato di seguito è da [`WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager) .
 
@@ -25,7 +25,7 @@ Questo articolo descrive come creare provider di dati personalizzati, detti anch
 I provider di dati possono essere distribuiti come componenti aggiuntivi di terze parti o come parte di Microsoft Mixed Reality Toolkit. Il processo di approvazione per l'invio di nuovi provider di dati a MRTK varia caso per caso e verrà comunicato al momento della proposta iniziale.
 
 > [!Important]
-> Se un provider di dati del sistema di input  viene inviato al [repository mixed reality toolkit,](https://github.com/Microsoft/MixedRealityToolkit-Unity)lo spazio dei nomi deve iniziare con Microsoft.MixedReality.Toolkit (ad esempio: Microsoft.MixedReality.Toolkit.WindowsMixedReality) e il codice deve trovarsi in una cartella sotto MRTK/Providers (ad esempio: MRTK/Providers/WindowsMixedReality).
+> Se un provider di dati del sistema di input viene inviato al [repository mixed reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity), lo spazio dei nomi deve iniziare con Microsoft.MixedReality.  Toolkit (ad esempio: Microsoft.MixedReality.Toolkit. WindowsMixedReality) e il codice deve trovarsi in una cartella sotto MRTK/Providers (ad esempio: MRTK/Providers/WindowsMixedReality).
 
 ### <a name="namespace"></a>Spazio dei nomi
 
@@ -34,7 +34,7 @@ I provider di dati devono disporre di uno spazio dei nomi per ridurre i potenzia
 - Nome azienda
 - Area funzionale
 
-Ad esempio, un provider di dati di input creato dall'azienda Contoso può essere "Contoso.MixedReality.Toolkit.Input".
+Ad esempio, un provider di dati di input creato dalla società Contoso può essere "Contoso.MixedReality. Toolkit. Input".
 
 ### <a name="recommended-folder-structure"></a>Struttura di cartelle consigliata
 
@@ -127,7 +127,7 @@ Applicare quindi [`MixedRealityController`](xref:Microsoft.MixedReality.Toolkit.
 
 #### <a name="configure-the-interaction-mappings"></a>Configurare i mapping di interazione
 
-Il passaggio successivo consiste nel definire il set di mapping di interazione supportati dal controller. Per i dispositivi che ricevono i dati tramite la classe Input di Unity, lo strumento di mapping del [controller](../tools/controller-mapping-tool.md) è una risorsa utile per confermare i mapping degli assi e dei pulsanti corretti da assegnare alle interazioni.
+Il passaggio successivo consiste nel definire il set di mapping di interazione supportati dal controller. Per i dispositivi che ricevono i dati tramite la classe Input di Unity, lo strumento di mapping del [controller](../tools/controller-mapping-tool.md) è una risorsa utile per confermare i mapping di asse e pulsante corretti da assegnare alle interazioni.
 
 L'esempio seguente è abbreviato dalla classe `GenericOpenVRController` , che si trova nella cartella MRTK/Providers/OpenVR.
 
@@ -144,7 +144,7 @@ public override MixedRealityInteractionMapping[] DefaultLeftHandedInteractions =
 ```
 
 >[!Note]
->La [`ControllerMappingLibrary`](xref:Microsoft.MixedReality.Toolkit.Input.ControllerMappingLibrary) classe fornisce costanti simboliche per le definizioni di asse di input e pulsante di Unity.
+>La [`ControllerMappingLibrary`](xref:Microsoft.MixedReality.Toolkit.Input.ControllerMappingLibrary) classe fornisce costanti simboliche per le definizioni dell'asse di input e dei pulsanti di Unity.
 
 ### <a name="raise-notification-events"></a>Generare eventi di notifica
 
@@ -172,7 +172,7 @@ InputSystem?.RaisePositionInputChanged(InputSource, ControllerHandedness, intera
 
 ### <a name="add-unity-profiler-instrumentation"></a>Aggiungere la strumentazione del profiler Unity
 
-Le prestazioni sono fondamentali nelle applicazioni di realtà mista. Ogni componente aggiunge una certa quantità di overhead per cui le applicazioni devono essere gestite. A questo scopo, è importante che tutti i provider di dati di input contengano la strumentazione del profiler Unity nel ciclo interno e i percorsi di codice usati di frequente.
+Le prestazioni sono fondamentali nelle applicazioni di realtà mista. Ogni componente aggiunge una certa quantità di overhead di cui le applicazioni devono essere conto. A questo scopo, è importante che tutti i provider di dati di input contengano la strumentazione del profiler Unity nel ciclo interno e i percorsi di codice usati di frequente.
 
 È consigliabile implementare il modello utilizzato da MRTK durante la strumentazione di provider personalizzati.
 
@@ -197,7 +197,7 @@ Le prestazioni sono fondamentali nelle applicazioni di realtà mista. Ogni compo
 
 ## <a name="create-the-profile-and-inspector"></a>Creare il profilo e il controllo
 
-In Mixed Reality Toolkit i provider di dati vengono configurati usando [i profili](../profiles/profiles.md).
+Nel modello di realtà Toolkit, i provider di dati vengono configurati usando [i profili](../profiles/profiles.md).
 
 I provider di dati con opzioni di configurazione aggiuntive (ad [esempio, InputSimulationService](../input-simulation/input-simulation-service.md)) devono creare un profilo e un controllo per consentire ai clienti di modificare il comportamento in base alle esigenze dell'applicazione.
 
@@ -216,7 +216,7 @@ public class MixedRealityInputSimulationProfile : BaseMixedRealityProfile
 { }
 ```
 
-L'attributo può essere applicato alla classe del profilo per consentire ai clienti di creare un'istanza del profilo usando il menu Create > Assets > Mixed Reality Toolkit > Profiles (Crea asset > `CreateAssetMenu` Mixed Reality Toolkit > **profili).**
+L'attributo può essere applicato alla classe del profilo per consentire ai clienti di creare un'istanza del profilo usando il menu Create > Assets > Mixed Reality Toolkit > Profiles (Crea asset > realtà `CreateAssetMenu` **mista Toolkit > profili).**
 
 ### <a name="implement-the-inspector"></a>Implementare il controllo
 
@@ -232,20 +232,20 @@ public class MixedRealityInputSimulationProfileInspector : BaseMixedRealityToolk
 
 ## <a name="create-assembly-definitions"></a>Creare definizioni di assembly
 
-Mixed Reality Toolkit usa i file di definizione dell'assembly (con estensione[asmdef)](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)per specificare le dipendenze tra i componenti e per aiutare Unity a ridurre il tempo di compilazione.
+L'Toolkit realtà mista usa i file di definizione dell'assembly (con estensione[asmdef)](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)per specificare le dipendenze tra i componenti e per aiutare Unity a ridurre il tempo di compilazione.
 
 È consigliabile creare file di definizione dell'assembly per tutti i provider di dati e i relativi componenti dell'editor.
 
 Usando la [struttura di cartelle](#recommended-folder-structure) nell'esempio precedente, saranno presenti due file con estensione asmdef per il provider di dati ContosoInput.
 
 La prima definizione di assembly è per il provider di dati. Per questo esempio, verrà chiamato ContosoInput e si trova nella cartella ContosoInput dell'esempio.
-Questa definizione di assembly deve specificare una dipendenza da Microsoft.MixedReality.Toolkit e da qualsiasi altro assembly da cui dipende.
+Questa definizione di assembly deve specificare una dipendenza da Microsoft.MixedReality. Toolkit e qualsiasi altro assembly da cui dipende.
 
 La definizione dell'assembly ContosoInputEditor specificherà il controllo profilo e qualsiasi codice specifico dell'editor. Questo file deve trovarsi nella cartella radice del codice dell'editor. In questo esempio il file si trova nella cartella ContosoInput\Editor. Questa definizione di assembly conterrà un riferimento all'assembly ContosoInput, nonché:
 
-- Microsoft.MixedReality.Toolkit
-- Microsoft.MixedReality.Toolkit.Editor.Inspectors
-- Microsoft.MixedReality.Toolkit.Editor.Utilities
+- Microsoft.MixedReality. Toolkit
+- Microsoft.MixedReality. Toolkit. Editor.Inspectors
+- Microsoft.MixedReality. Toolkit. Editor.Utilities
 
 ## <a name="register-the-data-provider"></a>Registrare il provider di dati
 
@@ -255,7 +255,7 @@ Una volta creato, il provider di dati può essere registrato con il sistema di i
 
 ## <a name="packaging-and-distribution"></a>Creazione di pacchetti e distribuzione
 
-I provider di dati distribuiti come componenti di terze parti hanno i dettagli specifici della creazione dei pacchetti e della distribuzione lasciati alle preferenze dello sviluppatore. È probabile che la soluzione più comune sia generare un file con estensione unitypackage e distribuirsi tramite Unity Asset Store.
+I provider di dati distribuiti come componenti di terze parti hanno i dettagli specifici dei pacchetti e della distribuzione lasciati alle preferenze dello sviluppatore. È probabile che la soluzione più comune sia generare un file con estensione unitypackage e distribuirsi tramite Unity Asset Store.
 
 Se un provider di dati viene inviato e accettato come parte del pacchetto Microsoft Mixed Reality Toolkit, il team di Microsoft MRTK lo inserirà in un pacchetto e lo distribuirà come parte delle offerte di MRTK.
 

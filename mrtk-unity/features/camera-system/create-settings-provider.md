@@ -1,16 +1,16 @@
 ---
-title: Creare un provider di impostazioni
+title: Creazione di un provider di impostazioni della fotocamera
 description: Provider di dati per le impostazioni della fotocamera in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: d07b84c3cf550f9a235e58286b4cd239ac43b649
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
+ms.openlocfilehash: 2151887a6162239e993634d5d346065362f1c428
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121189"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114282032"
 ---
 # <a name="creating-a-camera-settings-provider"></a>Creazione di un provider di impostazioni della fotocamera
 
@@ -26,18 +26,18 @@ I provider di dati possono essere distribuiti in uno dei due modi seguenti:
 1. Componenti aggiuntivi di terze parti
 1. Parte di Microsoft Mixed Reality Toolkit
 
-Il processo di approvazione per l'invio di nuovi provider di dati al modulo MRTK varia caso per caso e verrà comunicato al momento della proposta iniziale. Le proposte possono essere inviate creando un nuovo problema relativo al [ *tipo di richiesta* di funzionalità](https://github.com/microsoft/MixedRealityToolkit-Unity/issues).
+Il processo di approvazione per l'invio di nuovi provider di dati a MRTK varia caso per caso e verrà comunicato al momento della proposta iniziale. Le proposte possono essere inviate creando un nuovo problema relativo al [ *tipo di richiesta* di funzionalità](https://github.com/microsoft/MixedRealityToolkit-Unity/issues).
 
 ### <a name="third-party-add-ons"></a>Componenti aggiuntivi di terze parti
 
 **Namespace**
 
-I provider di dati devono disporre di uno spazio dei nomi per attenuare potenziali conflitti di nomi. È consigliabile che lo spazio dei nomi includa i componenti seguenti.
+I provider di dati devono disporre di uno spazio dei nomi per ridurre i potenziali conflitti di nomi. È consigliabile che lo spazio dei nomi includa i componenti seguenti.
 
-- Nome dell'azienda che produce il componente aggiuntivo
+- Nome della società che produce il componente aggiuntivo
 - Area funzionale
 
-Ad esempio, un provider di impostazioni della fotocamera creato e fornito dalla società Contoso può essere *"Contoso.MixedReality.Toolkit.Camera".*
+Ad esempio, un provider di impostazioni della fotocamera creato e spedito dalla società Contoso può essere *"Contoso.MixedReality.Toolkit. Camera".*
 
 **Struttura di cartelle**
 
@@ -45,13 +45,13 @@ Ad esempio, un provider di impostazioni della fotocamera creato e fornito dalla 
 
 ![Esempio di struttura di cartelle](../images/camera-system/ExampleProviderFolderStructure.png)
 
-Dove la cartella *ContosoCamera* contiene l'implementazione del provider di dati, la cartella *Editor* contiene il controllo (e qualsiasi altro codice specifico dell'editor unity) e la cartella *Profiles* contiene uno o più oggetti pre-creati da script del profilo.
+Dove la cartella *ContosoCamera* contiene l'implementazione del provider di dati, la cartella *Editor* contiene il controllo (e qualsiasi altro codice specifico dell'editor unity) e la cartella *Profiles* contiene uno o più oggetti predefiniti del profilo che è possibile creare script.
 
 ### <a name="mrtk-submission"></a>Invio di MRTK
 
 **Namespace**
 
-Se un provider di impostazioni della fotocamera viene inviato  al [repository Mixed Reality Toolkit,](https://github.com/Microsoft/MixedRealityToolkit-Unity)lo spazio dei nomi deve iniziare con Microsoft.MixedReality.Toolkit (ad *esempio: Microsoft.MixedReality.Toolkit.CameraSystem).*
+Se un provider di impostazioni della fotocamera viene inviato al [repository mixed reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity), lo spazio dei nomi **deve** iniziare con Microsoft.MixedReality. Toolkit (ad *esempio: Microsoft.MixedReality.Toolkit. CameraSystem*).
 
 **Struttura di cartelle**
 
@@ -65,9 +65,9 @@ Tutti gli oggetti dati spaziali devono implementare [`IMixedRealityCameraSetting
 
 ## <a name="implement-the-settings-provider"></a>Implementare il provider di impostazioni
 
-### <a name="specify-interface-andor-base-class-inheritance"></a>Specificare l'ereditarietà dell'interfaccia e/o della classe di base
+### <a name="specify-interface-andor-base-class-inheritance"></a>Specificare l'ereditarietà dell'interfaccia e/o della classe base
 
-Tutti i provider di impostazioni della fotocamera devono implementare l'interfaccia , che [`IMixedRealityCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider) specifica la funzionalità minima richiesta dal sistema di fotocamera. La base MRTK include la [`BaseCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.BaseCameraSettingsProvider) classe che fornisce un'implementazione predefinita della funzionalità richiesta.
+Tutti i provider di impostazioni della fotocamera devono implementare l'interfaccia , che [`IMixedRealityCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider) specifica la funzionalità minima richiesta dal sistema di fotocamera. La base di MRTK include [`BaseCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.BaseCameraSettingsProvider) la classe che fornisce un'implementazione predefinita della funzionalità richiesta.
 
 ```c#
 namespace namespace Microsoft.MixedReality.Toolkit.Experimental.UnityAR
@@ -79,7 +79,7 @@ namespace namespace Microsoft.MixedReality.Toolkit.Experimental.UnityAR
 
 #### <a name="apply-the-mixedrealitydataprovider-attribute"></a>Applicare l'attributo MixedRealityDataProvider
 
-Un passaggio chiave per la creazione di un provider di impostazioni della fotocamera consiste nell'applicare [`MixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.MixedRealityDataProviderAttribute) l'attributo alla classe . Questo passaggio abilita l'impostazione del profilo e della piattaforma predefiniti per il provider di dati, se selezionato nel profilo camera system, nonché nel nome, nel percorso della cartella e altro ancora.
+Un passaggio chiave nella creazione di un provider di impostazioni della fotocamera consiste nell'applicare [`MixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.MixedRealityDataProviderAttribute) l'attributo alla classe . Questo passaggio abilita l'impostazione del profilo e delle piattaforme predefiniti per il provider di dati, se selezionato nel profilo Sistema fotocamera, nonché nome, percorso della cartella e altro ancora.
 
 ```c#
     [MixedRealityDataProvider(
@@ -94,7 +94,7 @@ Un passaggio chiave per la creazione di un provider di impostazioni della fotoca
 
 ### <a name="implement-the-imixedrealitydataprovider-methods"></a>Implementare i metodi IMixedRealityDataProvider
 
-Dopo aver definito la classe, il passaggio successivo consiste nel fornire l'implementazione [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) dell'interfaccia .
+Dopo aver definito la classe , il passaggio successivo consiste nel fornire l'implementazione [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) dell'interfaccia .
 
 > [!NOTE]
 > La [`BaseDataProvider`](xref:Microsoft.MixedReality.Toolkit.BaseDataProvider`1) classe , tramite la classe , fornisce [`BaseService`](xref:Microsoft.MixedReality.Toolkit.BaseService) implementazioni vuote per i metodi [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) . I dettagli di questi metodi sono in genere specifici del provider di dati.
@@ -109,7 +109,7 @@ I metodi che devono essere implementati dal provider di dati sono:
 - `Update()`
 
 > [!NOTE]
-> Non tutti i provider di impostazioni richiederanno implementazioni per tutti questi metodi. È consigliabile che `Destroy()` e `Initialize()` siano implementati come minimo.
+> Non tutti i provider di impostazioni richiedono implementazioni per tutti questi metodi. È consigliabile che `Destroy()` e `Initialize()` siano implementati come minimo.
 
 ### <a name="implement-the-data-provider-logic"></a>Implementare la logica del provider di dati
 
@@ -117,7 +117,7 @@ Il passaggio successivo consiste nell'aggiungere la logica del provider di impos
 
 ## <a name="create-the-profile-and-inspector"></a>Creare il profilo e il controllo
 
-In Mixed Reality Toolkit i provider di dati vengono configurati usando [i profili](../profiles/profiles.md).
+Nel modello di realtà Toolkit, i provider di dati vengono configurati usando [i profili](../profiles/profiles.md).
 
 ### <a name="define-the-profile"></a>Definire il profilo
 
@@ -164,11 +164,11 @@ namespace namespace Microsoft.MixedReality.Toolkit.Experimental.UnityAR
 }
 ```
 
-L'attributo può essere applicato alla classe del profilo per consentire ai clienti di creare un'istanza del profilo usando il menu Crea profili di `CreateAssetMenu`   >  **Assets**  >  **Mixed Reality Toolkit.**  >  
+L'attributo può essere applicato alla classe del profilo per consentire ai clienti di creare un'istanza del profilo usando il menu Create `CreateAssetMenu`   >  **Assets**  >  **Mixed Reality Toolkit** Profiles (Crea asset Toolkit  >  **profili).**
 
 ### <a name="implement-the-inspector"></a>Implementare il controllo
 
-I controlli profilo sono l'interfaccia utente per la configurazione e la visualizzazione del contenuto del profilo. Ogni controllo del profilo deve estendere la [`BaseMixedRealityToolkitConfigurationProfileInspector`](xref:Microsoft.MixedReality.Toolkit.Editor.BaseMixedRealityToolkitConfigurationProfileInspector) classe .
+I controlli profilo sono l'interfaccia utente per la configurazione e la visualizzazione del contenuto del profilo. Ogni controllo profilo deve estendere la [`BaseMixedRealityToolkitConfigurationProfileInspector`](xref:Microsoft.MixedReality.Toolkit.Editor.BaseMixedRealityToolkitConfigurationProfileInspector) classe .
 
 `CustomEditor`L'attributo indica a Unity il tipo di asset a cui si applica il controllo.
 
@@ -183,33 +183,33 @@ namespace namespace Microsoft.MixedReality.Toolkit.Experimental.UnityAR
 
 ## <a name="create-assembly-definitions"></a>Creare definizioni di assembly
 
-Mixed Reality Toolkit usa i file di definizione dell'assembly ([asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) per specificare le dipendenze tra i componenti e per aiutare Unity a ridurre il tempo di compilazione.
+L'Toolkit realtà mista usa i file di definizione dell'assembly (con estensione[asmdef)](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)per specificare le dipendenze tra i componenti e per aiutare Unity a ridurre il tempo di compilazione.
 
 È consigliabile creare file di definizione dell'assembly per tutti i provider di dati e i relativi componenti dell'editor.
 
-Usando la [struttura di](#namespace-and-folder-structure) cartelle nell'esempio precedente, saranno presenti due file asmdef per il provider di dati ContosoCamera.
+Usando la [struttura di cartelle](#namespace-and-folder-structure) nell'esempio precedente, saranno presenti due file con estensione asmdef per il provider di dati ContosoCamera.
 
-La prima definizione di assembly è per il provider di dati. Per questo esempio, si chiamerà ContosoCamera e si trova nella cartella *ContosoCamera* dell'esempio. Questa definizione di assembly deve specificare una dipendenza da Microsoft.MixedReality.Toolkit e da qualsiasi altro assembly da cui dipende.
+La prima definizione di assembly è per il provider di dati. Per questo esempio, si chiamerà ContosoCamera e si trova nella cartella *ContosoCamera* dell'esempio. Questa definizione di assembly deve specificare una dipendenza da Microsoft.MixedReality. Toolkit e qualsiasi altro assembly da cui dipende.
 
 La definizione dell'assembly ContosoCameraEditor specificherà il controllo del profilo e qualsiasi codice specifico dell'editor. Questo file deve trovarsi nella cartella radice del codice dell'editor. In questo esempio il file si trova nella *cartella ContosoCamera\Editor.* Questa definizione di assembly conterrà un riferimento all'assembly ContosoCamera, nonché:
 
-- Microsoft.MixedReality.Toolkit
-- Microsoft.MixedReality.Toolkit.Editor.Inspectors
-- Microsoft.MixedReality.Toolkit.Editor.Utilities
+- Microsoft.MixedReality. Toolkit
+- Microsoft.MixedReality. Toolkit. Editor.Inspectors
+- Microsoft.MixedReality. Toolkit. Editor.Utilities
 
 ## <a name="register-the-data-provider"></a>Registrare il provider di dati
 
-Dopo la creazione, il provider di dati può essere registrato con il sistema Camera da usare nell'applicazione.
+Una volta creato, il provider di dati può essere registrato con il sistema Camera da usare nell'applicazione.
 
 ![Selezione del provider di impostazioni della fotocamera](../images/camera-system/SelectUnityArSettings.png)
 
 ## <a name="packaging-and-distribution"></a>Creazione di pacchetti e distribuzione
 
-I provider di dati distribuiti come componenti di terze parti hanno i dettagli specifici della creazione di pacchetti e della distribuzione lasciati alle preferenze dello sviluppatore. È probabile che la soluzione più comune consiste nel generare un file con estensione unitypackage e distribuirsi tramite Unity Asset Store.
+I provider di dati distribuiti come componenti di terze parti hanno i dettagli specifici dei pacchetti e della distribuzione lasciati alle preferenze dello sviluppatore. È probabile che la soluzione più comune sia generare un file con estensione unitypackage e distribuirsi tramite Unity Asset Store.
 
-Se un provider di dati viene inviato e accettato come parte del pacchetto Microsoft Mixed Reality Toolkit, il team di Microsoft MRTK lo inserirà e distribuirà come parte delle offerte MRTK.
+Se un provider di dati viene inviato e accettato come parte del pacchetto Microsoft Mixed Reality Toolkit, il team di Microsoft MRTK lo inserirà in un pacchetto e lo distribuirà come parte delle offerte di MRTK.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica del sistema di fotocamera](camera-system-overview.md)
 - [Classe `BaseCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.BaseCameraSettingsProvider)

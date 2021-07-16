@@ -1,18 +1,18 @@
 ---
-title: Guida alla porting da HTK a MRTK
+title: Aggiornamento da HoloToolkit
 description: Migrazione da HoloLens Toolkit (HTK) a Mixed Reality Toolkit (MRTK).
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, HTK,
-ms.openlocfilehash: fbcb2863c894a4e4c1529e19112b33712f69e99f
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, HTK,
+ms.openlocfilehash: b54445dc5ca7a6c01c968929e243a1fc4ca2d107
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143759"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114281757"
 ---
-# <a name="porting-guide"></a>Guida alla conversione
+# <a name="upgrading-from-holotoolkit"></a>Aggiornamento da HoloToolkit
 
 Guida per la migrazione da HoloLens Toolkit (HTK) a Mixed Reality Toolkit (MRTK).
 
@@ -23,7 +23,7 @@ Guida per la migrazione da HoloLens Toolkit (HTK) a Mixed Reality Toolkit (MRTK)
 |         Metodi                  | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
 | Tipo                      | Eventi specifici per i pulsanti, con informazioni sul tipo di input quando pertinenti. | Input basato su azione/movimento, passato tramite eventi. |
-| Eseguire la configurazione                     | Inserire InputManager nella scena. | Abilitare il sistema di input nel profilo [di configurazione e](../configuration/mixed-reality-configuration-guide.md) specificare un tipo di sistema di input concreto. |
+| Configurazione                     | Posizionare InputManager nella scena. | Abilitare il sistema di input nel profilo [di configurazione e](../configuration/mixed-reality-configuration-guide.md) specificare un tipo di sistema di input concreto. |
 | Configurazione             | Configurato in Inspector, in ogni singolo script nella scena. | Configurata tramite il profilo del sistema di input di realtà mista e il profilo correlato, elencati di seguito. |
 
 Profili correlati:
@@ -62,8 +62,8 @@ Sistemi di input correlati:
 | `INavigationHandler` | [`IMixedRealityGestureHandler<Vector3>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler`1) | Mappato alla navigazione nel profilo movimenti |
 | `IPointerSpecificFocusable` | [`IMixedRealityFocusChangedHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusChangedHandler) | |
 | `ISelectHandler` | [`IMixedRealityInputHandler<float>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) | Mappato alla posizione del trigger |
-| `ISourcePositionHandler` | [`IMixedRealityInputHandler<Vector3>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) o [`IMixedRealityInputHandler<MixedRealityPose>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) | Mappato alla posizione del puntatore o al punto di aderenza |
-| `ISourceRotationHandler` | [`IMixedRealityInputHandler<Quaternion>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) o [`IMixedRealityInputHandler<MixedRealityPose>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) | Mappato alla posizione del puntatore o al punto di aderenza |
+| `ISourcePositionHandler` | [`IMixedRealityInputHandler<Vector3>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) o [`IMixedRealityInputHandler<MixedRealityPose>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) | Mappato alla posizione del puntatore o alla posizione del grip |
+| `ISourceRotationHandler` | [`IMixedRealityInputHandler<Quaternion>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) o [`IMixedRealityInputHandler<MixedRealityPose>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) | Mappato alla posizione del puntatore o alla posizione del grip |
 | `ISourceStateHandler` | [`IMixedRealitySourceStateHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySourceStateHandler) | |
 | `IXboxControllerHandler` | [`IMixedRealityInputHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler) E [`IMixedRealityInputHandler<Vector2>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) | Mappato ai vari pulsanti e puntini di identificazione personale del controller |
 
@@ -71,7 +71,7 @@ Sistemi di input correlati:
 
 |        Metodi                    | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| Eseguire la configurazione                     | Eliminare MainCamera, aggiungere il prefab MixedRealityCameraParent/MixedRealityCamera/HoloLensCamera alla scena o usare la voce di menu Mixed Reality Toolkit > Configure > Apply Mixed Reality Scene Settings (Applica impostazioni scena realtà mista).  | MainCamera padre in MixedRealityPlayspace tramite Mixed Reality Toolkit > Aggiungi alla scena e configura... |
+| Configurazione                     | Eliminare MainCamera, aggiungere il prefab MixedRealityCameraParent/MixedRealityCamera/HoloLensCamera alla scena o usare la voce di menu Toolkit > Configura > Applica scena di realtà mista Impostazioni.  | MainCamera con elementi padre in MixedRealityPlayspace via Mixed Reality Toolkit > Aggiungi alla scena e Configura... |
 | Configurazione             | Configurazione delle impostazioni della fotocamera eseguita nell'istanza di prefab. | Impostazioni della fotocamera configurate nel [profilo Fotocamera realtà mista.](xref:Microsoft.MixedReality.Toolkit.MixedRealityCameraProfile) |
 
 ## <a name="speech"></a>Voce
@@ -80,7 +80,7 @@ Sistemi di input correlati:
 
 |         Metodi                   | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| Eseguire la configurazione                     | Aggiungere un oggetto SpeechInputSource alla scena. | Il servizio parole chiave(ad esempio, Gestione input vocale Windows) deve essere aggiunto ai provider di dati del sistema di input. |
+| Configurazione                     | Aggiungere un oggetto SpeechInputSource alla scena. | Il servizio parole chiave (ad esempio, Windows Speech Input Manager) deve essere aggiunto ai provider di dati del sistema di input. |
 | Configurazione             | Le parole chiave riconosciute vengono configurate nel controllo SpeechInputSource. | Le parole chiave vengono configurate nel [profilo comandi vocali di realtà mista](../features/input/speech.md). |
 | Gestori eventi            | `ISpeechHandler` | [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) |
 
@@ -88,7 +88,7 @@ Sistemi di input correlati:
 
 |         Metodi                   | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| Eseguire la configurazione                     | Aggiungere un elemento DictationInputManager alla scena. | Il supporto per la dettatura richiede l'aggiunta del servizio (ad esempio Gestione input dettatura di Windows) ai provider di dati del sistema di input. |
+| Configurazione                     | Aggiungere un elemento DictationInputManager alla scena. | Il supporto per la dettatura richiede l'aggiunta del servizio (ad esempio, Windows Gestione input dettatura) ai provider di dati del sistema di input. |
 | Gestori eventi            | `IDictationHandler` | `IMixedRealityDictationHandler`[`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) |
 
 ## <a name="spatial-awareness--mapping"></a>Consapevolezza spaziale/mapping
@@ -97,34 +97,34 @@ Sistemi di input correlati:
 
 |         Metodi                   | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| Eseguire la configurazione                     | Aggiungere il prefab SpatialMapping alla scena. | Abilitare il sistema di consapevolezza spaziale nel profilo di configurazione e aggiungere un osservatore spaziale (ad esempio, Windows Mixed Reality Spatial Mesh Observer) ai provider di dati del sistema di consapevolezza spaziale. |
+| Configurazione                     | Aggiungere il prefab SpatialMapping alla scena. | Abilitare il sistema di consapevolezza spaziale nel profilo di configurazione e aggiungere un osservatore spaziale (ad esempio, Windows Mixed Reality Spatial Mesh Observer) ai provider di dati del sistema di consapevolezza spaziale. |
 | Configurazione             | Configurare l'istanza della scena nel controllo . | Configurare le impostazioni nel profilo di ogni osservatore spaziale. |
 
 ### <a name="planes"></a>Aerei
 
 |         Metodi                   | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| Eseguire la configurazione                     | Usare lo `SurfaceMeshesToPlanes` script . | Non ancora implementato. |
+| Configurazione                     | Usare lo `SurfaceMeshesToPlanes` script . | Non ancora implementato. |
 
 ### <a name="spatial-understanding"></a>Comprensione spaziale
 
 |       Metodi                      | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| Eseguire la configurazione                     | Aggiungere il prefab SpatialUnderstanding alla scena. | Non ancora implementato. |
-| Configurazione             | Configurare l'istanza della scena nel controllo . | Non ancora implementato. |
+| Configurazione                     | Aggiungere il prefab SpatialUnderstanding alla scena. | Non ancora implementato. |
+| Configurazione             | Configurare l'istanza della scena nel controllo. | Non ancora implementato. |
 
 ## <a name="boundary"></a>Limite
 
 |         Metodi                   | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| Eseguire la configurazione                     | Aggiungere lo `BoundaryManager` script alla scena. | Abilitare il sistema di limiti nel profilo di configurazione. |
-| Configurazione             | Configurare l'istanza della scena nel controllo . | Configurare le impostazioni nel profilo Visualizzazione limiti. |
+| Configurazione                     | Aggiungere `BoundaryManager` lo script alla scena. | Abilitare il sistema di limiti nel profilo di configurazione. |
+| Configurazione             | Configurare l'istanza della scena nel controllo. | Configurare le impostazioni nel profilo Visualizzazione limiti. |
 
 ## <a name="sharing"></a>Condivisione
 
 |             Metodi               | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| Eseguire la configurazione                     | Servizio di condivisione: aggiungere il prefab condivisione alla scena. UNet: usare l'esempio SharingWithUNET. | In corso |
+| Configurazione                     | Servizio di condivisione: aggiungere il prefab condivisione alla scena. UNet: usare l'esempio SharingWithUNET. | In corso |
 | Configurazione             | Configurare le istanze della scena nel controllo. | In corso |
 
 ## <a name="ux"></a>Ux
@@ -136,15 +136,15 @@ Sistemi di input correlati:
 | Riquadro             | [Riquadro](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [Riquadro](../features/ux-building-blocks/bounding-box.md) |
 | Barra dell'app             | [Barra dell'app](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [Barra dell'app](../features/ux-building-blocks/app-bar.md) |
 | Manipolazione di una mano (Grb e Move)   | [HandDraggable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/HandDraggable.cs) | [Gestore di manipolazione](../features/ux-building-blocks/manipulation-handler.md) |
-| Manipolazione a due mani (grab/move/rotate/scale)             | [TwoHandManipulatable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/TwoHandManipulatable.cs) | [Gestore di manipolazione](../features/ux-building-blocks/manipulation-handler.md) |
-| Tastiera             | [Prefab della tastiera]() | [Tastiera di sistema](../features/ux-building-blocks/system-keyboard.md) |
+| Manipolazione a due mani (afferrare/spostare/ruotare/ridimensionare)             | [TwoHandManipulatable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/TwoHandManipulatable.cs) | [Gestore di manipolazione](../features/ux-building-blocks/manipulation-handler.md) |
+| Tastiera             | [Prefab tastiera]() | [Tastiera di sistema](../features/ux-building-blocks/system-keyboard.md) |
 | Descrizione comando             | [Descrizione comando](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_TooltipExample.md) | [Descrizione comando](../features/ux-building-blocks/tooltip.md) |
 | Raccolta di oggetti             | [Raccolta di oggetti](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_ObjectCollection.md) | [Raccolta di oggetti](../features/ux-building-blocks/object-collection.md) |
 | Solver             | [Solver](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Utilities/Readme/README_SolverSystem.md) | [Solver](../features/ux-building-blocks/solvers/solver.md) |
 
 ## <a name="utilities"></a>Utilità
 
-Alcune utilità sono state riconciliate come duplicati con il sistema del risolutore. Se uno degli script necessari non è presente, determinare un problema.
+Alcune utilità sono state riconciliate come duplicati con il sistema risolutore. Se uno degli script necessari non è presente, mettere un problema.
 
 | HTK 2017 |  MRTK v2  |
 |----------|-----------|
@@ -152,4 +152,4 @@ Alcune utilità sono state riconciliate come duplicati con il sistema del risolu
 | Tagalong | [`RadialView`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.RadialView) o [`Orbital`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.Orbital) [Risolutore](../features/ux-building-blocks/solvers/Solver.md) |
 | FixedAngularSize | [`ConstantViewSize`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.ConstantViewSize)[Risolutore](../features/ux-building-blocks/solvers/solver.md) |
 | FpsDisplay | [Sistema di diagnostica](../features/diagnostics/diagnostics-system-getting-started.md) (nel profilo di configurazione) |
-| NearFade | Shader standard incorporato in [Mixed Reality Toolkit](../features/rendering/mrtk-standard-shader.md) |
+| NearFade | Shader standard integrato in [Mixed Reality Toolkit Standard](../features/rendering/mrtk-standard-shader.md) |

@@ -5,50 +5,53 @@ author: dongpark
 ms.author: dongpark
 ms.date: 03/29/2021
 ms.topic: article
-keywords: Figma, Sketch, Adobe XD, progettazione, progettazione, file di progettazione, progettazione dell'esperienza utente, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: a24f06b29accaa64a9095054f1e6f8df13a9162e
-ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
+keywords: Figma, Sketch, Adobe XD, progettazione, progettazione, file di progettazione, progettazione UX, HoloLens, MRTK, mixed reality Toolkit
+ms.openlocfilehash: ef36e68e7340bc0a1500a9468db35d1e0b417ed6
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108644857"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224329"
 ---
 # <a name="figma-toolkit"></a>Figma Toolkit
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Figma-Toolkit-MRTK/player]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGqke]
 
-Figma Toolkit fornisce gli asset che possono essere usati per disegnare e delineare l'interfaccia utente. Tutti i controlli dell'interfaccia utente sono basati sui componenti disponibili in MRTK. 
+MrTK Figma Toolkit fornisce versioni 2D dei controlli dell'interfaccia utente in stile HoloLens 2 disponibili in MRTK per Unity o MRTK per Unreal. È possibile usarlo nel processo di progettazione per la creazione di layout e storyboard dell'interfaccia utente.
 
 > [!div class="nextstepaction"]
-> [Visualizzare Figma Toolkit](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Mixed-Reality-Toolkit-for-Figma?node-id=116%3A4)
+> [Visualizzare Figma Toolkit](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Figma-Toolkit-for-MRTK-%2F-HoloLens%2C-Windows-Mixed-Reality?node-id=116%3A4)
 
 ## <a name="how-to-use-figma-toolkit"></a>Come usare Figma Toolkit
-Usare **il menu Duplica nelle bozze** per creare una copia.
+Usare **Duplica nel** menu bozze per crearne una copia.
 
 <img src="images/UX_Figma_Use1.png" width="500px" alt="Menu duplicate 1"><br>
 
-Fare **clic su Torna ai file** per visualizzare la copia duplicata. È possibile usare questa copia per la creazione.
+Fare **clic su Torna ai file** per visualizzare la copia duplicata. È possibile usare questa copia per la propria creazione.
 
 <img src="images/UX_Figma_Use2.png" width="400px" alt="Menu duplicate 2"><br>
 
 <img src="images/UX_Figma_Use3.png" width="300px" alt="Menu duplicate 3"><br>
 
-Per scaricare e lavorare in locale, usare **File > menu Salva copia** locale. Importare il file scaricato (con estensione fig) in Figma usando **il pulsante Importa** nell'angolo superiore destro.
+Per scaricare e lavorare in locale, usare **File > menu Salva copia** locale. Importare il file scaricato (.fig) in Figma usando **il pulsante Importa** nell'angolo superiore destro.
 
 <img src="images/UX_FigmaToolkit_Import.png" width="200px" alt="Import menu"><br>
 
-È possibile **usare** i menu Pagine a sinistra per aprire pagine diverse incluse nel file.
+È possibile usare i menu **Pagine** a sinistra per aprire pagine diverse incluse nel file.
 
 <img src="images/UX_FigmaToolkit_PageMenu.png" width="200px" alt="Page menu"><br>
 
 Aprire **la pagina** Introduzione per informazioni su come usare componenti e stati.
 
-## <a name="ui-gallery--components"></a>Componenti di & dell'interfaccia utente
-La pagina Ui Gallery and Components (Raccolta e componenti dell'interfaccia utente) mostra tutti i componenti disponibili per la progettazione.
+## <a name="ui-gallery--components"></a>Componenti & interfaccia utente
+La pagina Raccolta e componenti dell'interfaccia utente mostra tutti i componenti disponibili per la progettazione.
 
-![Esempio di Figma Toolkit - Interfaccia utente del menu 1](images/UX_FigmaToolkit_Components_Menu1.png)<br>
+![Esempio di Toolkit Figma - Interfaccia utente menu 1](images/UX_FigmaToolkit_Components_Menu1.png)<br>
 
-![Esempio di Figma Toolkit - Interfaccia utente del menu 2](images/UX_FigmaToolkit_Components_Menu2.png)<br>
+![Esempio di Toolkit Figma - Interfaccia utente menu 2](images/UX_FigmaToolkit_Components_Menu2.png)<br>
+
+
+![Esempio di Toolkit Figma - Interfaccia utente menu 4](images/UX_FigmaToolkit_Components_Menu3a.png)<br>
 
 Usando **la scheda Asset** è possibile esplorare questi componenti e trascinarli nella pagina.
 
@@ -59,12 +62,12 @@ Usando **la scheda Asset** è possibile esplorare questi componenti e trascinarl
 
 Figma Toolkit può essere utile per disegnare l'interfaccia utente del menu. 
 
-![Esempio di Figma Toolkit - Interfaccia utente menu 3](images/UX_FigmaToolkit_Examples_Menu.png)<br>
+![Esempio di Toolkit Figma - Interfaccia utente menu 5](images/UX_FigmaToolkit_Examples_Menu.png)<br>
 
 
 Gli asset possono essere usati per lo storyboard.
 
-![Esempio di Figma Toolkit - Storyboard](images/UX_FigmaToolkit_Examples_Storyboarding.png)<br>
+![Esempio di Toolkit Figma - Storyboard](images/UX_FigmaToolkit_Examples_Storyboarding.png)<br>
 
 
 ## <a name="see-also"></a>Vedi anche
