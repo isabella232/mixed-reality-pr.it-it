@@ -5,16 +5,19 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: f9f8ad638b8f7cb1007c923f6b568dffc4340360
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 8b8928e9c723ffa9fd08d22866b8ee5748e38ace
+ms.sourcegitcommit: 78746bef0e1ffe1480e89fed8cd30f6f8b389e8d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177559"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "114713578"
 ---
 # <a name="optimize-window"></a>Finestra Ottimizza
 
 MrTK Optimize Window è un'utilità che consente di automatizzare e informare nel processo di configurazione di un progetto di realtà mista per ottenere [prestazioni ottimali](../../performance/perf-getting-started.md) in Unity. Questo strumento si concentra in genere sulle configurazioni di rendering che, se impostate sul set di impostazioni corretto, possono risparmiare millisecondi di elaborazione.
+
+> [!NOTE]
+> È **possibile aprire la** finestra di Ottimizzazione passando alla finestra **Ottimizzazione** utilità di realtà mista dal  >    >   menu della barra superiore nell'editor di Unity.
 
 La *destinazione di compilazione attiva* è la piattaforma di compilazione attualmente [destinata](https://docs.unity3d.com/Manual/BuildSettings.html) al progetto per la compilazione.
 
@@ -49,7 +52,7 @@ Inoltre, per *i visori AR,* è consigliabile usare un formato di profondità a 1
 > [!NOTE]
 > Se si usa un formato di profondità a *16 bit,* gli effetti necessari per il buffer di stencil non funzioneranno perché Unity non crea un [buffer di stencil](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) in questa impostazione. Se si seleziona il formato di profondità a *24 bit,* in genere verrà creato un buffer di stencil a [8 bit,](https://docs.unity3d.com/Manual/SL-Stencil.html)se applicabile nella piattaforma grafica dell'endpoint.
 >
-> Se si usa un componente [Mask](https://docs.unity3d.com/Manual/script-Mask.html) che richiede il buffer di stencil, prendere in considerazione l'uso di [RectMask2D,](https://docs.unity3d.com/Manual/script-RectMask2D.html) che non richiede il buffer di stencil e quindi può essere usato in combinazione con un formato di profondità a *16 bit.*
+> Se si usa un componente [Mask](https://docs.unity3d.com/Manual/script-Mask.html) che richiede il buffer di stencil, prendere in considerazione l'uso di [RectMask2D,](https://docs.unity3d.com/Manual/script-RectMask2D.html) che non richiede il buffer di stencil e può quindi essere usato in combinazione con un formato di profondità a *16 bit.*
 
 ### <a name="real-time-global-illumination"></a>Illuminazione globale in tempo reale
 
@@ -74,15 +77,15 @@ Lo strumento fornisce anche statistiche sul conteggio dei poligoni. Può essere 
 
 ### <a name="unity-ui-raycast-analysis"></a>Analisi raycast dell'interfaccia utente di Unity
 
-Le operazioni di raycast della grafica vengono eseguite per ogni puntatore in MRTK per determinare se gli elementi dell'interfaccia utente di Unity sono nello stato attivo. Questi raycast possono essere piuttosto costosi e per migliorare le prestazioni, gli elementi dell'interfaccia utente che non devono essere restituiti nei risultati devono essere disabilitati come destinazioni raycast. Ogni [elemento Graphic](https://docs.unity3d.com/2018.4/Documentation/ScriptReference/UI.Graphic.html) ha una proprietà [`Graphic.raycastTarget`](https://docs.unity3d.com/2018.4/Documentation/ScriptReference/UI.Graphic-raycastTarget.html) . Questo strumento cerca gli elementi dell'interfaccia utente di testo con questa proprietà abilitata e pertanto è probabile che i candidati siano disabilitati.
+Le operazioni raycast grafiche vengono eseguite per ogni puntatore in MRTK per determinare se gli elementi dell'interfaccia utente di Unity sono nello stato attivo. Questi raycast possono essere piuttosto costosi e per migliorare le prestazioni, gli elementi dell'interfaccia utente che non devono essere restituiti nei risultati devono essere disabilitati come destinazioni raycast. Ogni [elemento Graphic](https://docs.unity3d.com/2018.4/Documentation/ScriptReference/UI.Graphic.html) ha una proprietà [`Graphic.raycastTarget`](https://docs.unity3d.com/2018.4/Documentation/ScriptReference/UI.Graphic-raycastTarget.html) . Questo strumento cerca gli elementi dell'interfaccia utente di testo con questa proprietà abilitata e pertanto è probabile che i candidati siano disabilitati.
 
 ## <a name="shader-analysis"></a>Analisi dello shader
 
-Lo [shader Unity Standard](https://docs.unity3d.com/Manual/shader-StandardShader.html) può produrre risultati visivi di qualità molto elevata per i giochi, ma non è in genere più adatto alle esigenze di prestazioni delle applicazioni di realtà mista, soprattutto perché tali applicazioni sono in genere vincolate da GPU. È quindi consigliabile agli sviluppatori usare lo [shader STANDARD MRTK](../rendering/mrtk-standard-shader.md) per bilanciare l'& delle funzionalità grafiche con le prestazioni.
+Lo [shader Unity Standard](https://docs.unity3d.com/Manual/shader-StandardShader.html) può produrre risultati visivi di qualità molto elevata per i giochi, ma non è in genere più adatto alle esigenze di prestazioni delle applicazioni di realtà mista, soprattutto perché tali applicazioni sono in genere vincolate da GPU. È quindi consigliabile agli sviluppatori usare lo [shader STANDARD MRTK](../rendering/mrtk-standard-shader.md) per bilanciare l'& funzionalità grafiche con le prestazioni.
 
 La *scheda Analisi* shader analizza la cartella Asset del progetto corrente per i materiali usando lo shader Unity Standard o, se lo si desidera, tutti i materiali che non usano realtà mista Toolkit shader forniti. Una volta individuati, gli sviluppatori possono convertire tutti i materiali o singolarmente usando i pulsanti appropriati.
 
-![Ottimizzazione della finestra MRTK Impostazioni'analisi shader](../images/performance/OptimizeWindow_ShaderAnalysis.png)
+![Finestra di ottimizzazione MRTK Impostazioni'analisi shader](../images/performance/OptimizeWindow_ShaderAnalysis.png)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, funzionalità multiutente, Photon, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 2b925457128989933615686ee45ffa6eaa7d20ef
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 28776e106b96d1265e435d60e7008b1d88c01060
+ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175419"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114702505"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Configurazione di Photon Unity Networking
 
@@ -28,7 +28,7 @@ In questa esercitazione si preparerà l'ambiente per la creazione di un'esperien
 
 In questa sezione creerai un nuovo progetto Unity per prepararti allo sviluppo con MRTK.
 
-Seguire prima di tutto l'inizializzazione del progetto e [](mr-learning-base-02.md#adding-hand-interaction-to-an-object) la distribuzione della [](mr-learning-base-02.md#building-your-application-to-your-hololens-2) prima [applicazione,](mr-learning-base-02.md)esclusa l'aggiunta dell'interazione manuale a un oggetto e la compilazione dell'applicazione alle istruzioni del dispositivo, che include i passaggi seguenti:
+Seguire prima di tutto [l'inizializzazione](mr-learning-base-02.md)del progetto e [](mr-learning-base-02.md#adding-hand-interaction-to-an-object) la distribuzione della [](mr-learning-base-02.md#building-your-application-to-your-hololens-2) prima applicazione, esclusa l'aggiunta dell'interazione manuale a un oggetto e la compilazione dell'applicazione alle istruzioni del dispositivo, che include i passaggi seguenti:
 
 1. [Creazione del progetto Unity](mr-learning-base-02.md#creating-the-unity-project) e assegnazione di un nome appropriato, ad esempio *MRTK Tutorials*
 2. [Passaggio a un'altra piattaforma di compilazione](mr-learning-base-02.md#switching-the-build-platform)
@@ -56,15 +56,6 @@ Abilitare quindi le funzionalità aggiuntive seguenti:
 
 ![Impostazione delle funzionalità di Unity](images/mr-learning-sharing/sharing-02-section2-step1-2.png)
 
-## <a name="installing-inbuilt-unity-packages"></a>Installazione di pacchetti di Unity incorporati
-
-Scegliere **Window** > **Package Manager** (Finestra > Gestione pacchetti) dal menu Unity per aprire la finestra Package Manager(Gestione pacchetti) e quindi selezionare **AR Foundation** e fare clic sul pulsante **Install** (Installa) per installare il pacchetto:
-
-![Package Manager di Unity con AR Foundation selezionato](images/mr-learning-sharing/sharing-02-section3-step1-1.png)
-
-> [!NOTE]
-> Si sta installando il pacchetto AR Foundation richiesto da Azure Spatial Anchors SDK, che verrà importato nella sezione successiva.
-
 ## <a name="importing-the-tutorial-assets"></a>Importazione degli asset dell'esercitazione
 
 Aggiungere AzurespatialAnchors SDK V2.7.1 al progetto Unity. Per aggiungere i pacchetti, seguire questa [esercitazione](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
@@ -72,9 +63,9 @@ Aggiungere AzurespatialAnchors SDK V2.7.1 al progetto Unity. Per aggiungere i pa
 
 Scarica e **importa** i pacchetti personalizzati di Unity seguenti, **nell'ordine in cui sono elencati**:
  
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.4.0.unitypackage)
+* [MRTK. HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.7.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.7.2/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.7.2.unitypackage)
+* [MRTK. HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.7.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.7.2/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.7.2.unitypackage)
+* [MRTK. HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.7.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.7.2/MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.7.2.unitypackage)
 
 Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progetto) avrà un aspetto simile al seguente:
 

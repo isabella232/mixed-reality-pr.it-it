@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, funzionalità multiutente, Photon, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure
 ms.localizationpriority: high
-ms.openlocfilehash: d4dc943c8ca57331b4916e40db67df3cd3d6d2e6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 4be0fc30b6d1b401bf137be4060704f54515ceb1
+ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590063"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114702484"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4. Condivisione dei movimenti di oggetti con più utenti
 
@@ -27,9 +27,17 @@ In questa esercitazione si apprenderà come condividere i movimenti degli oggett
 
 In questa sezione preparerai la scena aggiungendo il prefab dell'esercitazione.
 
+Nella finestra Hierarchy (Gerarchia) espandi l'oggetto **MixedRealityPlayspace** e seleziona l'oggetto figlio **Main Camera** (Fotocamera principale), quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente AR Camera Manager **(Script) (Gestione** fotocamera AR - Script) all'oggetto Main Camera **(Fotocamera** principale):
+
+![Unity con componente AR Camera Manager parzialmente configurato](images/mr-learning-sharing/sharing-04-section1-step1-0.png)
+
 Nella finestra Project (Progetto) passare alla cartella **Assets** (Asset) > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** (Prefab) e trascinare il prefab **TableAnchor** nell'oggetto **SharedPlayground** nella finestra Hierarchy (Gerarchia) per aggiungerlo alla scena come elemento figlio dell'oggetto SharedPlayground:
 
 ![Unity con il prefab TableAnchor appena aggiunto selezionato](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
+
+Nella finestra Hierarchy (Gerarchia) verifica che **l'oggetto MixedRealityPlayspace** sia espanso e che **l'oggetto TableAnchor** sia selezionato. Trascinare **il componente Main Camera** **(Fotocamera** principale) nel campo Camera (Fotocamera) del componente **AR Session Origin (Origine** sessione AR) di **TableAnchor:**
+
+![Unity con l'assegnazione della fotocamera principale dell'origine sessione AR configurata](images/mr-learning-sharing/sharing-04-section1-step1-2.png)
 
 ## <a name="configuring-pun-to-instantiate-the-objects"></a>Configurazione di PUN per creare un'istanza degli oggetti
 

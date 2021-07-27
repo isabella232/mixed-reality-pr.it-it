@@ -1,5 +1,5 @@
 ---
-title: Windows Mixed Reality di compatibilità dei PC
+title: Windows Mixed Reality Linee guida per la compatibilità dei PC
 description: Grafico di panoramica che delinea i requisiti minimi di sistema dei PC per la compatibilità con Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Realtà mista, Realtà virtuale, VR, MR, Ultra, compatibile, compatibilità, requisiti di sistema, PC
 appliesto:
 - Windows 10
-ms.openlocfilehash: e73b00dcf8d6974f06c22c3b0ab0771a8e1a5969
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 754110c3fa0b5e98508f843d251c24c04b8c0a89
+ms.sourcegitcommit: 78746bef0e1ffe1480e89fed8cd30f6f8b389e8d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143316"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "114713565"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>Windows Mixed Reality linee guida minime per la compatibilità hardware del PC
 
@@ -42,12 +42,12 @@ Tenere presente che le prestazioni variano a seconda della configurazione esatta
 
 Dopo aver eseguito l'app, si otterrà uno dei messaggi seguenti:
 
-* **È tutto a posto.**  Il PC è pronto per eseguire giochi ed esperienze di realtà mista.
+* **È possibile.**  Il PC è pronto per eseguire giochi ed esperienze di realtà mista.
 * **Supporta alcune funzionalità.** Il PC può eseguire alcune esperienze di realtà mista.
 * **Non è possibile eseguire la realtà mista.** Questo PC non soddisfa i requisiti minimi necessari per eseguire Windows Mixed Reality.
 
 Si otterrà quindi un'analisi del PC rispetto all'hardware, ai driver e al sistema operativo necessari.
-![Screenshot della Controllo PC Windows Mixed Reality](images/screenshot-mr-pc-check.jpg)
+![Screenshot di Windows Mixed Reality PC Check](images/screenshot-mr-pc-check.jpg)
 
 <table>
 <tr>
@@ -66,22 +66,22 @@ Si otterrà quindi un'analisi del PC rispetto all'hardware, ai driver e al siste
 ## <a name="compatibility-guidelines"></a>Linee guida per la compatibilità
 
 > [!IMPORTANT]
-> Verrà aggiornato, apportando aggiunte a e potrebbe essere necessario rivedere queste linee guida per Windows Mixed Reality sulla compatibilità dei PC. Consultare regolarmente le linee guida e i requisiti più recenti.
+> Verranno aggiornati, apportando aggiunte a e potrebbe essere necessario rivedere queste Windows Mixed Reality di compatibilità dei PC. Consultare regolarmente le linee guida e i requisiti più recenti.
 
-### <a name="high-resolution-headset-requirements"></a>Requisiti per visori VR ad alta risoluzione
+### <a name="high-resolution-headset-requirements"></a>Requisiti per visori ad alta risoluzione
 
 A causa della risoluzione più elevata, i requisiti seguenti si applicano alle linee di prodotti HP Reverb G1, G2 e Omnicept per garantire un'esperienza ottimale a 90 Hz con risoluzione completa:
 
 <ul>
-<li> Intel Core i5, i7, Intel Xenon E3-1240 v5, equivalente o migliore. AMD Ryzen 5 equivalente o migliore. </li>
+<li> Intel Core i5, i7, Intel Xeon E3-1240 v5, equivalente o migliore. AMD Ryzen 5 equivalente o migliore. </li>
 <li> NVIDIA GeForce GTX 1080, AMD Radeon RX 5700, equivalente o migliore </li>
 <li> Memoria: almeno 8 GB di RAM </li>
-<li> 1 x porta di visualizzazione 1.3 </li>
-<li> USB 3.0 1x Di tipo C con alimentatore (o alimentatore incluso)</li>
-<li> Windows 10 aggiornamento di maggio 2019 o versione successiva </li>
+<li> 1x Porta di visualizzazione 1.3 </li>
+<li> 1x USB 3.0 Type-C con alimentazione (o adattatore di alimentazione incluso)</li>
+<li> Windows 10 Aggiornamento di maggio 2019 o versione successiva </li>
 </ul>
 
-**Tutti gli altri visori VR compatibili con WMR** <br>
+**Tutti gli altri visori compatibili con WMR** <br>
 Per tutti gli altri HMD, fare riferimento ai requisiti seguenti:
 
 <table>
@@ -89,15 +89,15 @@ Per tutti gli altri HMD, fare riferimento ai requisiti seguenti:
     <th style="width:10%"></th><th style="vertical-align: middle; text-align: center; width:30%">Windows Mixed Reality PC a 90 Hz</th>
     <th style="vertical-align: middle; text-align: center; width:30%">Windows Mixed Reality PC a 60 Hz</th>
 </tr><tr>
-    <td style="vertical-align: middle">Sistema operativo</td><td colspan="2" style="vertical-align: middle; text-align: center;">Windows 10 Fall Creators Update (RS3) o versioni successive: Home, Pro, Business, Education.<br/>    <b>(Nota:</b>non supportato nelle versioni N o Windows 10 Pro in modalità S)</td>
+    <td style="vertical-align: middle">Sistema operativo</td><td colspan="2" style="vertical-align: middle; text-align: center;">Windows 10 Fall Creators Update (RS3) o versione successiva: Home, Pro, Business, Education.<br/>    (<b>Nota:</b>non supportato nelle versioni N o Windows 10 Pro in modalità S)</td>
 </tr><tr>
     <td style="vertical-align: middle">Processore</td>
     <td style="vertical-align: middle; text-align: center;">Intel Core i5 4590 (quarta generazione), quad-core (o versione successiva) <br>AMD Ryzen 5 1400 3.4Ghz (desktop), quad-core (o versione migliore)</td>
-    <td style="vertical-align: middle; text-align: center;">Intel Core i5 7200U (7a generazione mobile), dual-core con tecnologia Intel Hyper-Threading abilitata (o migliore) <br>AMD Ryzen 5 1400 3.4Ghz (desktop), quad-core (o versione migliore)</td>
+    <td style="vertical-align: middle; text-align: center;">Intel Core i5 7200U (7a generazione mobile), dual-core con intel Hyper-Threading Technology abilitato (o versione successiva) <br>AMD Ryzen 5 1400 3.4Ghz (desktop), quad-core (o versione migliore)</td>
 </tr><tr>
     <td style="vertical-align: middle">RAM</td>
     <td style="vertical-align: middle; text-align: center;">8 GB DDR3 (o versione migliore)</td>
-    <td style="vertical-align: middle; text-align: center;">Doppio canale DDR3 da 8 GB (o versione migliore)</td>
+    <td style="vertical-align: middle; text-align: center;">8 GB DDR3 a doppio canale (o versione migliore)</td>
 </tr><tr>
     <td style="vertical-align: middle">Spazio libero su disco</td>
     <td style="vertical-align: middle; text-align: center;">Almeno 10 GB</td>
@@ -106,22 +106,22 @@ Per tutti gli altri HMD, fare riferimento ai requisiti seguenti:
     <td style="vertical-align: middle">Scheda grafica</td>
     <td style="vertical-align: middle; text-align: middle;">
             <ul>
-            <li>GPU discreta con funzionalità DX12 NVIDIA GTX 1060 (o superiore)</li>
-            <li>GPU discreta con funzionalità DX12 amD RX 470/570 (o superiore) </li>
+            <li>GPU discreta NVIDIA GTX 1060 (o versione successiva) con funzionalità DX12</li>
+            <li>GPU discreta compatibile con AMD RX 470/570 (o versione successiva) </li>
             </ul>
-            <b>Nota:</b> La GPU deve essere ospitata in uno slot PCIe 3.0 x4+ Link </td>
+            <b>Nota:</b> La GPU deve essere ospitata in uno slot di collegamento PCIe 3.0 x4+ </td>
     <td style="vertical-align: middle; text-align: middle;">
-            <li>GPU integrata con supporto DX12 per Intel HD Graphics 620 (o versione <a href="https://en.wikipedia.org/wiki/List_of_Intel_graphics_processing_units">successiva) (controllare</a> se il modello è superiore)</li>
-        <li>GPU discreta NVIDIA MX150 (o superiore)</li>
+            <li>GPU integrata intel HD Graphics 620 (o versione successiva) con supporto DX12 (verificare se <a href="https://en.wikipedia.org/wiki/List_of_Intel_graphics_processing_units">il modello è maggiore)</a></li>
+        <li>GPU discreta NVIDIA MX150 (o versione successiva)</li>
         <li>GPU discreta Nvidia GeForce GTX 1050</li>
         <li>GPU discreta Nvidia 965M</li>
         <li>AMD Radeon RX 460/560</li>
         </ul>
-        <b>Nota:</b> Le GPU Intel meno recenti, ad esempio HD Graphics 4xx, 5xx, 2xxx, 3xxx, 4xxx, 5xxx e 6xxx, non sono supportate.
+        <b>Nota:</b> Le GPU Intel meno recenti, ad esempio HD Graphics 4xx, 5xx, 2xxx, 3xxx, 4xxx, 5xxx e 6xxx non sono supportate.
     </td>
 </tr><tr>
     <td style="vertical-align: middle">Driver di grafica</td>
-    <td colspan="3" td style="vertical-align: middle; text-align: center;">Windows Display Driver Model (WDDM) 2.2</td>
+    <td colspan="3" td style="vertical-align: middle; text-align: center;">Windows Modello di driver di visualizzazione (WDDM) 2.2</td>
 </tr><tr>
     <td style="vertical-align: middle"><a href="Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md">Porta di visualizzazione grafica</a></td>
     <td style="vertical-align: middle; text-align: center;">HDMI 2.0 o DisplayPort 1.2</td>
@@ -133,15 +133,15 @@ Per tutti gli altri HMD, fare riferimento ai requisiti seguenti:
     <td style="vertical-align: middle"><a href="Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md">Connettività USB</a></td>
     <td colspan="2" style="vertical-align: middle; text-align: center;">USB 3.0 </td>
 </tr><tr>
-    <td style="vertical-align: middle">Connettività Bluetooth (per <a href="controllers-in-wmr.md">i controller del movimento)</a></td>
+    <td style="vertical-align: middle">Bluetooth connettività (per <a href="controllers-in-wmr.md">i controller di movimento</a>)</td>
     <td colspan="3" style="vertical-align: middle; text-align: center;">Bluetooth 4.0</td>
 </tr><tr>
-    <td style="vertical-align: middle">Frequenza dei fotogrammi del visore VR prevista</td>
+    <td style="vertical-align: middle">Framerate del visore previsto</td>
     <td style="vertical-align: middle; text-align: center;">90 Hz</td>
     <td style="vertical-align: middle; text-align: center;">60hz</td>
 </tr>
 <tr>
-    <td style="vertical-align: middle">Potenza</td>
+    <td style="vertical-align: middle">Elettricità</td>
     <td style="vertical-align: middle; text-align: center;">Porte USB 3.0</td>
     <td style="vertical-align: middle; text-align: center;">Porte USB 3.0</td>
 </tr>
@@ -159,15 +159,15 @@ Per tutti gli altri HMD, fare riferimento ai requisiti seguenti:
 
 ## <a name="windows-mixed-reality-and-surface"></a>Windows Mixed Reality e Surface
 
-Per un'esperienza Windows Mixed Reality ottimale in un dispositivo Surface, è consigliabile l'ultimo SurfaceBook (15") configurato con almeno NVIDIA GeForce GTX 1060 GB e 16 GB di RAM.  Questa configurazione supporta tutte le Windows Mixed Reality ed è stata testata per Windows Mixed Reality.  Le versioni più recenti Surface Book (13,5"), Surface Studio, Surface Laptop e Surface Pro (2017) supporteranno tutte alcune funzionalità di Windows Mixed Reality se configurate con una CPU Intel Core i5 (o superiore) e almeno 8 GB di RAM.
+Per un'esperienza Windows Mixed Reality in un dispositivo Surface, è consigliabile usare la versione più recente di SurfaceBook (15") configurata con almeno NVIDIA GeForce GTX 1060 GB e 16 GB di RAM.  Questa configurazione supporta tutte le funzionalità Windows Mixed Reality ed è stata testata per Windows Mixed Reality.  Le versioni più recenti Surface Book (13,5"), Surface Studio, Surface Laptop e Surface Pro (2017) supporteranno tutte alcune funzionalità di Windows Mixed Reality se configurate con una CPU Intel Core i5 (o superiore) e almeno 8 GB di RAM.
 
 **Requisiti:**
 
-* I prodotti Surface richiedono che gli aggiornamenti dei driver siano compatibili con Windows Mixed Reality. Questi driver possono essere installati in Surface selezionando Impostazioni > aggiornamento e sicurezza > **controlla la disponibilità di aggiornamenti**.
-* I prodotti Surface richiedono un [adattatore](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) dalla porta video (Mini DisplayPort o USB-C, a seconda del PC Surface) a HDMI 2.0 per Windows Mixed Reality visori. La versione più recente dell'adattatore Surface Mini-DisplayPort hdmi AV è compatibile con HDMI 2.0 (la versione precedente non lo è). Analogamente, anche <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">l'adattatore Da USB-C</a> a HDMI di Surface è compatibile con HDMI 2.0.
+* I prodotti Surface richiedono la compatibilità degli aggiornamenti dei driver con Windows Mixed Reality. Questi driver possono essere installati in Surface selezionando Impostazioni > Aggiornamento e sicurezza > **controlla la disponibilità di aggiornamenti.**
+* I prodotti Surface richiedono un [adattatore](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) dalla porta video (Mini DisplayPort o USB-C, a seconda del PC Surface) a HDMI 2.0 per Windows Mixed Reality visori VR. La versione più recente dell'adattatore Surface Mini-DisplayPort a HDMI AV è compatibile con HDMI 2.0 (la versione precedente non lo è). Analogamente, anche <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">l'adattatore Surface USB-C</a> per HDMI è compatibile con HDMI 2.0.
 
 ## <a name="see-also"></a>Vedi anche
 
 * [Contattare la community](https://answers.microsoft.com)
-* [Per assistenza, contattare Microsoft](https://support.microsoft.com/contactus/)
-* [Schede consigliate per i WINDOWS MIXED REALITY compatibili](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+* [Contattaci per assistenza](https://support.microsoft.com/contactus/)
+* [Schede consigliate per i WINDOWS MIXED REALITY compatibili con le funzionalità di rete](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
