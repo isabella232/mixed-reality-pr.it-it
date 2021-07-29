@@ -8,14 +8,16 @@ ms.topic: article
 keywords: Windows Mixed Reality, Realtà mista, Realtà virtuale, VR, MR, Ultra, compatibile, compatibilità, requisiti di sistema, PC
 appliesto:
 - Windows 10
-ms.openlocfilehash: 754110c3fa0b5e98508f843d251c24c04b8c0a89
-ms.sourcegitcommit: 78746bef0e1ffe1480e89fed8cd30f6f8b389e8d
+ms.openlocfilehash: b7c2b4b84440e7cdd22c2c0cd7d5f9830d55625f
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "114713565"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757034"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>Windows Mixed Reality linee guida minime per la compatibilità hardware del PC
+
+![Immagine dell'hero per la compatibilità del PC](images/pc-comp-hero.png)
 
 ## <a name="features-and-experiences"></a>Funzionalità ed esperienze
 
@@ -150,7 +152,7 @@ Per tutti gli altri HMD, fare riferimento ai requisiti seguenti:
 **Altre informazioni:**
 
 * I portatili più grandi con schermi di almeno 15" fanno il meglio.
-* Le configurazioni grafiche ibride sono compatibili solo con Windows Mixed Reality 90Hz. La scheda grafica discreta in qualsiasi configurazione ibrida deve soddisfare tutti i requisiti elencati nelle linee guida Windows Mixed Reality per schede grafiche discrete.
+* Le configurazioni grafiche ibride sono compatibili solo con Windows Mixed Reality 90 Hz. La scheda grafica discreta in qualsiasi configurazione ibrida deve soddisfare tutti i requisiti elencati nelle linee guida Windows Mixed Reality per schede grafiche discrete.
 * Se si dispone di una scheda grafica discreta che deve essere eseguita Windows Mixed Reality 90 Hz, ma per impostazione predefinita ha una frequenza di aggiornamento di 60 Hz (60 fotogrammi al secondo), usare un adattatore DisplayPort to HDMI 2.0 di dimensioni complete per collegare il visore e abilitare una frequenza di aggiornamento a 90 Hz.
 * Visori diversi possono richiedere porte hardware diverse, quindi assicurarsi che il PC abbia le porte corrette o le schede [necessarie](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) per connettersi al visore.
 
@@ -159,15 +161,15 @@ Per tutti gli altri HMD, fare riferimento ai requisiti seguenti:
 
 ## <a name="windows-mixed-reality-and-surface"></a>Windows Mixed Reality e Surface
 
-Per un'esperienza Windows Mixed Reality in un dispositivo Surface, è consigliabile usare la versione più recente di SurfaceBook (15") configurata con almeno NVIDIA GeForce GTX 1060 GB e 16 GB di RAM.  Questa configurazione supporta tutte le funzionalità Windows Mixed Reality ed è stata testata per Windows Mixed Reality.  Le versioni più recenti Surface Book (13,5"), Surface Studio, Surface Laptop e Surface Pro (2017) supporteranno tutte alcune funzionalità di Windows Mixed Reality se configurate con una CPU Intel Core i5 (o superiore) e almeno 8 GB di RAM.
+Per un'esperienza di Windows Mixed Reality ottimale in un dispositivo Surface, è consigliabile usare la versione più recente di SurfaceBook (15") configurata con almeno NVIDIA GeForce GTX 1060 GB e 16 GB di RAM.  Questa configurazione supporta tutte le funzionalità Windows Mixed Reality ed è stata testata per Windows Mixed Reality.  Le versioni più recenti Surface Book (13,5"), Surface Studio, Surface Laptop e Surface Pro (2017) supporteranno tutte alcune funzionalità di Windows Mixed Reality se configurate con una CPU Intel Core i5 (o superiore) e almeno 8 GB di RAM.
 
 **Requisiti:**
 
-* I prodotti Surface richiedono la compatibilità degli aggiornamenti dei driver con Windows Mixed Reality. Questi driver possono essere installati in Surface selezionando Impostazioni > Aggiornamento e sicurezza > **controlla la disponibilità di aggiornamenti.**
+* I prodotti Surface richiedono la compatibilità degli aggiornamenti dei driver con Windows Mixed Reality. Questi driver possono essere installati in Surface selezionando Impostazioni > Update and Security > Check for Updates (Verifica **disponibilità aggiornamenti).**
 * I prodotti Surface richiedono un [adattatore](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) dalla porta video (Mini DisplayPort o USB-C, a seconda del PC Surface) a HDMI 2.0 per Windows Mixed Reality visori VR. La versione più recente dell'adattatore Surface Mini-DisplayPort a HDMI AV è compatibile con HDMI 2.0 (la versione precedente non lo è). Analogamente, anche <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">l'adattatore Surface USB-C</a> per HDMI è compatibile con HDMI 2.0.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Contattare la community](https://answers.microsoft.com)
 * [Contattaci per assistenza](https://support.microsoft.com/contactus/)
-* [Schede consigliate per i WINDOWS MIXED REALITY compatibili con le funzionalità di rete](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+* [Schede consigliate per i WINDOWS MIXED REALITY compatibili con i computer](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)

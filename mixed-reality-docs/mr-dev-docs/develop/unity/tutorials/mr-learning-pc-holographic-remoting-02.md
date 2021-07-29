@@ -2,36 +2,38 @@
 title: Creare un'applicazione Holographic Remoting per PC
 description: In questo corso viene illustrato come creare un'applicazione per PC per usare in remoto un'esperienza di realtà mista da PC a HoloLens 2.
 author: jessemcculloch
-ms.author: jemccull
-ms.date: 02/05/2021
+ms.author: v-vtieto
+ms.date: 07/26/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, holographic remoting per PC, Visual Studio
 ms.localizationpriority: high
-ms.openlocfilehash: ca0efe13acac4408a05ab89eb98b508e9993c5a4
-ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
+ms.openlocfilehash: 19c10ad0cdad70b38663f9da0f7d2a1f1702d94d
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112392540"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757233"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2. Creazione di un'applicazione Holographic Remoting per PC
 
-In questa esercitazione si apprenderà come creare un'app Holographic Remoting per PC e connettere HoloLens 2 in qualsiasi momento, offrendo un modo per visualizzare il contenuto 3D in realtà mista.
+In questa esercitazione si apprenderà come creare un'app per PC che usa Holographic Remoting per poter trasmettere il lavoro in corso al HoloLens e visualizzarlo senza doverlo compilare prima.
+
+[Informazioni di base su Holographic Remoting.](../../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 ## <a name="objectives"></a>Obiettivi
 
 * Configurare Unity per Holographic Remoting
 * Imparare a compilare e distribuire l'applicazione con Visual Studio
-* Sviluppare un'applicazione Holographic Remoting e connetterla a HoloLens
+* Sviluppo di un'applicazione Holographic Remoting e connessione a HoloLens
 
 ## <a name="configuring-the-capabilities"></a>Configurazione delle funzionalità
 
-Nella finestra **Impostazioni progetto** espandere Impostazioni di pubblicazione **,** scorrere verso il basso fino alla sezione Funzionalità e selezionare la casella di controllo funzionalità visualizzata di seguito oltre alle funzionalità esistenti.
+Nella finestra **Project Impostazioni** di pubblicazione espandere **l'Impostazioni** di pubblicazione , scorrere verso il basso fino alla sezione Funzionalità e selezionare la casella di controllo della funzionalità illustrata di seguito oltre alle funzionalità esistenti.
 
 * Client e server Internet
 * Client e server di rete privata
 
-![abilitazione delle funzionalità](images/mrlearning-pc-holographic-remoting/tutorial2-section0-step1-1.png)
+![abilitazione di funzionalità](images/mrlearning-pc-holographic-remoting/tutorial2-section0-step1-1.png)
 
 [!INCLUDE[](includes/configuring-scene-for-holographic-remoting.md)]
 

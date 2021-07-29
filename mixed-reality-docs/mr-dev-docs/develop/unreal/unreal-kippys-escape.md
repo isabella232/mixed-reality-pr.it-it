@@ -1,118 +1,125 @@
 ---
-title: Creazione dell'escape di Kippy
-description: Seguici durante l'esplorazione della creazione dell'applicazione di escape Mixed Reality Kippy per HoloLens 2 in Unreal Engine.
+title: La creazione della fuga di Kippy
+description: Seguici mentre esploriamo la creazione dell'applicazione di realtà mista Kippy's Escape per HoloLens 2 in Unreal Engine.
 author: sw5813
 ms.author: suwu
 ms.date: 9/4/2020
 ms.topic: article
-keywords: Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, distribuzione su dispositivo, PC, documentazione, auricolare realtà mista, headset di realtà mista di Windows, auricolare della realtà virtuale
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, deploy to device, PC, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: eca0b12cd9ba4e3d5d4033790184ffd770b44280
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 353df2f2f5bc9a1d70fc354fd3014f10c0ba95d9
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635399"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757114"
 ---
-# <a name="the-making-of-kippys-escape"></a>Creazione dell'escape di Kippy
+# <a name="the-making-of-kippys-escape"></a>La creazione di Kippy's Escape
+![Immagine dell'hero escape di Kippy](images/KippysEscape_1920.jpg)
 
-Kippy il robot si riattiva per trovarsi in un'isola. L'utente deve mettere in pratica il cappello per risolvere i problemi per trovare un percorso di ritorno alla propria astronave. È possibile [scaricare l'app](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) dal Microsoft Store o clonare il [repository](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) da GitHub e ottenere Kippy Home Safe.  
+Kippy il robot si sveglia per trovare se stesso bloccato su un'isola. Sta a te mettere il tuo hat per risolvere i problemi per trovare un percorso per tornare alla sua naVe di razzi. Aggiungere il HoloLens 2 e [scaricare l'app](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) dal Microsoft Store o clonare il [repository](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) da GitHub e ottenere Kippy a casa al sicuro.  
 
 > [!IMPORTANT]
-> Assicurarsi di usare **Unreal Engine 4,25 o versione successiva** se si sta creando l'escape di Kippy dal repository GitHub.
+> Assicurarsi di usare **Unreal Engine 4.25** o versione successiva se si sta creando Kippy's Escape dal repository GitHub.
 
-L'escape di Kippy è un'app di esempio [HoloLens 2](/hololens/hololens2-hardware) Open Source compilata con Unreal Engine 4 e [gli strumenti UX per la realtà mista per Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). In questo post verrà illustrata la procedura da seguire per i primi principi e la progettazione visiva per l'implementazione e l'ottimizzazione dell'esperienza. È possibile trovare altre informazioni sullo sviluppo di applicazioni di realtà miste con gli strumenti UX MRTK nella [Panoramica dello sviluppo non reale](unreal-development-overview.md).
+Kippy's Escape è un'app HoloLens 2 open [source](/hololens/hololens2-hardware) compilata con Unreal Engine 4 e [Mixed Reality UX Tools per Unreal.](https://github.com/microsoft/MixedReality-UXTools-Unreal) Questo post illustra il processo, dai primi principi e progettazione visiva all'implementazione e all'ottimizzazione dell'esperienza. Altre informazioni sullo sviluppo di applicazioni di realtà mista con MRTK UX Tools sono disponibili nella panoramica sullo sviluppo [di Unreal.](unreal-development-overview.md)
 
-## <a name="first-principles"></a>Principi iniziali 
+## <a name="download-app-from-microsoft-store-in-hololens-2"></a>Scaricare l'app Microsoft Store in HoloLens 2
+Se si dispone di HoloLens 2, è possibile scaricare e installare direttamente l'app nel dispositivo.
 
-Nell'impostazione di per creare l'escape di Kippy, il nostro obiettivo era quello di creare un'esperienza che evidenziasse il [supporto di HoloLens 2 di Unreal Engine](https://docs.unrealengine.com/Platforms/AR/HoloLens2/index.html), le funzionalità di HoloLens 2 e il Toolkit di realtà mista. Volevamo ispirare gli sviluppatori a immaginare cosa potessero creare con Unreal e HoloLens 2.  
+<a href='//www.microsoft.com/store/apps/9nbd7gl86vkd?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' width="284px" height="104px" style='width: 284px; height: 104px;'/></a>
 
-Sono stati rilevati tre principi guida per l'esperienza: che era necessario per essere divertenti, interattivi e avere un basso ostacolo all'ingresso. Volevamo che l'esperienza fosse abbastanza intuitiva che anche un utente di realtà mista per la prima volta non necessiti di un'esercitazione.  
+
+## <a name="first-principles"></a>Primi principi 
+
+Per creare l'escape di Kippy, l'obiettivo era creare un'esperienza che evidenziasse il supporto HoloLens 2 di [Unreal Engine,](https://docs.unrealengine.com/Platforms/AR/HoloLens2/index.html)le funzionalità del HoloLens 2 e l'Toolkit di realtà mista. Abbiamo voluto ispirare gli sviluppatori a immaginare cosa potevano creare con Unreal e HoloLens 2.  
+
+Sono stati emersi tre principi guida per l'esperienza: che doveva essere divertente, interattivo e avere una bassa barriera all'ingresso. L'esperienza era sufficientemente intuitiva che anche un utente di realtà mista per la prima volta non avrebbe bisogno di un'esercitazione.  
 
 ## <a name="designing-the-game"></a>Progettazione del gioco 
 
-HoloLens 2 ha accesso alle funzionalità di progettazione che non sono state trovate in nessun altro momento nei giochi. Gli oggetti possono essere direttamente spostati o modificati usando le mani o mirati al rilevamento a occhio. Queste funzionalità principali sono alla base di alcuni dei momenti di divertimento compilati nell'escape di Kippy.  
+Il HoloLens 2 ha accesso a funzionalità di progettazione che non si trovano in nessun'altra parte del gioco. Gli oggetti possono essere spinti o manipolati direttamente usando le mani o mirati con il tracciamento oculare. Queste funzionalità chiave sono alla base di alcuni dei momenti divertenti che abbiamo creato in Kippy's Escape.  
 
-Usando le funzionalità di HoloLens 2 univoche come linee guida per la progettazione di giochi, abbiamo definito alcuni scenari di ambiente di piccole dimensioni. Le isole hanno avuto senso perché possono essere modificate per diverse altezze dei giocatori e forniscono alcune interessanti idee sul Bridge. Siamo atterrati sul tema della civiltà antica che soddisfa la fantascienza, con l'idea che qualcuno ha creato macchinari su rovine che sfruttano una strana energia fornita da ogni isola. Le isole venivano ognuna con un aspetto specifico, un dettaglio che consentiva di creare un interesse visivo. Un giusto equilibrio tra la modellazione e la creazione di texturing consente di tenere le chiamate di traccia basse per le prestazioni di rendering, quindi un aspetto stilizzato è stato progettato tenendo presente questo aspetto. 
+Usando le funzionalità HoloLens 2 come indicazioni per la progettazione del gioco, sono stati descritti alcuni scenari di ambiente di piccole dimensioni. Le isole hanno senso perché possono essere regolate in base alle diverse altezze dei giocatori e hanno fornito alcune idee di bridge divertenti. Il tema dell'erezione moderna incontra la tecnologia sci-fi, con l'idea che qualcuno abbia costruito macchinari sopra le macerie sfruttando una energia sconosciuta fornita da ogni isola. Alle isole è stato assegnato il proprio aspetto, un dettaglio che ha contribuito a creare interesse visivo. Un buon equilibrio tra modellazione e texturing mantenerebbe le chiamate di disegno basse per le prestazioni di rendering, quindi un aspetto stilizzato è stato progettato in base a questo aspetto. 
 
-![La progettazione dei primi Giochi Disegna ](images/kippys-escape/kippys-escape-img-01.png)
- *alcuni schizzi iniziali per l'aspetto dell'esperienza*
+![Bozzetti di progettazione dei primi giochi ](images/kippys-escape/kippys-escape-img-01.png)
+ *Alcuni bozzetti iniziali per l'aspetto dell'esperienza*
 
-![Rendering dei rendering delle seconde isole ](images/kippys-escape/kippys-escape-img-02.png)
- *della seconda isola*
+![Rendering della seconda isola ](images/kippys-escape/kippys-escape-img-02.png)
+ *Rendering della seconda isola*
 
-Per rimanere entro la pianificazione di produzione breve, abbiamo stabilito che un carattere a virgola mobile potrebbe acquisire finalità ed emozioni senza cicli di animazione rigorosi. Quindi, Kippy è Nato! Emotes alcune espressioni diverse attraverso gli occhi e con gli effetti vocali di un suono minimalista per aiutare il lettore a eseguire l'intera esperienza. 
+Per rimanere entro la pianificazione di produzione breve, è stato concordato che un carattere mobile potrebbe acquisire finalità ed emozioni senza cicli di animazione rigorosi. E così è nato Kippy! Emotes alcune espressioni diverse attraverso i suoi occhi e attraverso effetti sonori vocali minimali per aiutare a guidare il giocatore durante l'esperienza. 
 
 ![Kippy che mostra espressioni diverse tramite gli occhi](images/kippys-escape/kippys-escape-img-03.gif)
 
 *Kippy che mostra espressioni diverse tramite gli occhi*
 
-![Se l'utente impiega troppo tempo per risolvere un rompicapo, Kippy fornirà all'utente un suggerimento](images/kippys-escape/kippys-escape-img-04.gif)
+![Se l'utente impiega troppo tempo per risolvere un rompicapo, Kippy offrirà all'utente un suggerimento](images/kippys-escape/kippys-escape-img-04.gif)
 
-*Se l'utente impiega troppo tempo per risolvere un rompicapo, Kippy fornirà all'utente un suggerimento*
+*Se l'utente impiega troppo tempo per risolvere un rompicapo, Kippy offrirà all'utente un suggerimento*
 
-Al di là della progettazione di caratteri e ambienti, abbiamo deciso di impegnarsi per far divertire il gioco. Il rilevamento degli occhi ci ha consentito di avviare gli attributi di materiali e suoni, che hanno evidenziato le parti principali del gioco. L'audio spaziale ha aiutato a far sentire i livelli a casa nell'ambiente del giocatore. La possibilità di acquisire oggetti, pulsanti di push e manipolare i dispositivi di scorrimento consente di coinvolgere i giocatori in modo innovativo. Era importante assicurarsi che questi punti di connessione fossero naturali. 
+Oltre alla progettazione del carattere e dell'ambiente, abbiamo fatto uno sforzo comune per far si che il gioco si senta divertente. Il tracciamento oculare ha consentito di spegnere gli attributi del materiale e del suono, che hanno evidenziato le parti chiave del gioco. L'audio spaziale ha contribuito a far si che i livelli si senta a casa nell'ambiente del lettore. La possibilità di afferrare oggetti, premere i pulsanti e manipolare i dispositivi di scorrimento determina interazioni innovative tra i giocatori. Era importante assicurarsi che questi punti di connessione si sentisse naturale. 
 
-![La fine del cavo del Bridge si illumina quando l'utente si avvicina](images/kippys-escape/kippys-escape-img-05.gif)
+![La fine del cavo del ponte si illumina quando la mano dell'utente si avvicina](images/kippys-escape/kippys-escape-img-05.gif)
 
-*La fine del cavo del Bridge si illumina quando l'utente si avvicina*
+*La fine del cavo del ponte si illumina quando la mano dell'utente si avvicina*
 
-## <a name="building-the-game-mechanics"></a>Creazione dei meccanismi di gioco 
+## <a name="building-the-game-mechanics"></a>Compilazione dei meccanismi di gioco 
 
-L'escape di Kippy si basa principalmente sui componenti degli strumenti UX della realtà mista per rendere il gioco interattivo, ovvero gli attori di interazione, i controlli dei limiti, i manipolatori, i dispositivi di scorrimento e i pulsanti.   
+Kippy's Escape si basa principalmente sui componenti degli strumenti dell'esperienza utente di realtà mista per rendere interattivo il gioco, ad esempio attori di interazione manuale, controlli limite, manipolatori, dispositivi di scorrimento e pulsanti.   
 
-L' [attore di interazione Hand](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html) consente la manipolazione diretta e distante degli ologrammi. All'inizio della sequenza di escape di Kippy, all'utente viene data la possibilità di impostare la posizione del gioco. I raggi mano che si estendono dalla palma dell'utente consentono di modificare facilmente gli ologrammi di grandi dimensioni, come illustrato nel gif riportato di seguito.  
+[L'attore di interazione manuale](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html) consente sia la manipolazione diretta che la manipolazione di lontano degli ologrammi. All'inizio di Kippy's Escape, l'utente ha la possibilità di impostare la posizione del gioco. I travi a mano che si estendono dal palmo dell'utente semplificano la manipolazione di ologrammi di grandi dimensioni che si estendono lontano, come illustrato nella gif seguente.  
 
-![Gif attore interazione mano](images/kippys-escape/kippys-escape-img-06.gif)
+![Gif dell'attore dell'interazione con la mano](images/kippys-escape/kippys-escape-img-06.gif)
 
-La scena segnaposto può essere trascinata e ruotata utilizzando il componente di [controllo dei limiti](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/BoundsControl.html) degli strumenti UX.  
+La scena segnaposto può essere trascinata e ruotata usando il componente di controllo dei limiti [di](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/BoundsControl.html) UX Tools.  
 
-Nella seconda isola è necessario che l'utente acquisisca le gemme e le inserisca negli slot corrispondenti. Le gemme hanno [manipolatori](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Manipulator.html) collegati che consentono all'utente di riprenderle e inserirle. 
+Nella seconda isola, l'utente deve raccogliere le gemme e posizionarle negli slot corrispondenti. Alle gemme sono [associati manipolatori](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Manipulator.html) che consentono all'utente di prelevarli e posizionarli. 
 
 ![Gif di esempio del manipolatore](images/kippys-escape/kippys-escape-img-07.gif)
 
-Un [pulsante stampabile](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PressableButton.html) è la chiave per attivare le bombe da usare sulla terza isola.  
+Un [pulsante pressabile](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PressableButton.html) è la chiave per far alzare le bombe per l'uso nella terza isola.  
 
-![Gif di esempio del pulsante stampabile](images/kippys-escape/kippys-escape-img-08.gif)
+![Gif di esempio del pulsante pressable](images/kippys-escape/kippys-escape-img-08.gif)
 
-Viene visualizzato un componente [Slider](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PinchSlider.html) sulla quarta isola, che attiva il Bridge finale da generare.  
+Un [componente dispositivo](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PinchSlider.html) di scorrimento viene visualizzato sulla quarta isola, attivando il bridge finale da alzare.  
 
 ![Gif di esempio del componente Slider](images/kippys-escape/kippys-escape-img-09.gif) 
 
 ## <a name="optimizing-for-hololens-2"></a>Ottimizzazione per HoloLens 2 
 
-Con qualsiasi esperienza compilata per l'esecuzione su un dispositivo mobile, è essenziale tenere sotto controllo le prestazioni. Unreal 4,25 include un aggiornamento principale per il supporto per la visualizzazione a più livelli per dispositivi mobili, riducendo significativamente il sovraccarico del rendering e aumentando la frequenza dei fotogrammi. È consigliabile consultare le altre [impostazioni di prestazioni consigliate](performance-recommendations-for-unreal.md) per lo sviluppo HoloLens 2 con Unreal quando si esegue l'ottimizzazione.  
+Con qualsiasi esperienza creata per l'esecuzione in un dispositivo mobile, tenere sotto controllo le prestazioni è fondamentale. Unreal 4.25 include un aggiornamento importante per il supporto della multi-visualizzazione per dispositivi mobili, che riduce significativamente l'overhead di rendering e aumenta la frequenza dei fotogrammi. È consigliabile controllare le altre impostazioni [di](performance-recommendations-for-unreal.md) prestazioni consigliate per HoloLens 2 sviluppo con Unreal durante l'ottimizzazione.  
 
-Gli oggetti fisici rimangono comunque costosi per le prestazioni, quindi sono state usate alcune soluzioni intelligenti. Il terzo "Bridge", ad esempio, deve saltare alcuni detriti che bloccano la scala. Invece di avere un impatto forzato sulle pietre come oggetti fisici, la detonazione della bomba attiva uno scambio, cambiando le pietre statiche per un effetto particellare esploso. 
+Gli oggetti fisici rimangono comunque costosi per le prestazioni, quindi sono state usate due soluzioni alternative intelligenti. Ad esempio, il terzo "ponte" richiede l'espianto di alcuni residui che bloccano la scala. Invece di avere una forza che influisce sulle rocce come oggetti fisici, la detonazione della bomba attiva uno scambio, scambiando le rocce statiche per un effetto di particella che esplode. 
 
 ![Esempio ottimizzato per HoloLens 2 gif](images/kippys-escape/kippys-escape-img-10.gif) 
 
-Si ritagliano anche le chiamate di estrazione da oltre 400 a ~ 260 da: 
+È anche possibile ridurre le chiamate di disegno da oltre 400 a ~260 per: 
 * Riduzione della complessità della mesh
 * Combinazione di mesh
 * Rimozione di alcuni elementi di illuminazione dinamica iniziali
 
-Anche se è probabile che si sia fatto di più, abbiamo pensato che era un giusto equilibrio tra prestazioni e qualità visiva.  
+Anche se probabilmente si sarebbe potuto fare di più, si è ritenuto che si trattasse di un buon equilibrio tra prestazioni e qualità visiva.  
 
 ## <a name="try-it-out"></a>Verifica 
 
-Avviare il HoloLens 2 e [scaricare](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) l'app dal Microsoft Store oppure clonare il [repository](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) da GitHub e compilare l'app.  
+Avviare il HoloLens 2 e [scaricare l'app](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) dal Microsoft Store oppure clonare il [repository](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) da GitHub e compilare l'app manualmente.  
 
 ## <a name="about-the-team"></a>Informazioni sul team
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60"><img alt="Picture of Jack Caron" width="60" height="60" src="images/kippys-escape/jack-caron.jpg"></td>
-<td style="border-style: none"><b>Jack Caron</b><br><i>Lead Game Designer</i><br>Jack attualmente funziona con esperienze di realtà mista per Microsoft, inclusi i progetti HoloLens 2 e AltspaceVR, e in precedenza era un progettista del team della piattaforma HoloLens.</td>
+<td style="border-style: none"><b>Jack Caron</b><br><i>Lead Game Designer</i><br>Jack attualmente lavora su esperienze di realtà mista per Microsoft, inclusi HoloLens 2 e AltspaceVR, ed è stato in precedenza designer nel team HoloLens platform.</td>
 </tr>
 </table>
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60"><img alt="Picture of Summer Wu" width="60" height="60" src="images/kippys-escape/summer-wu.jpg"></td>
-<td style="border-style: none"><b>Wu dell'estate</b><br><i>Producer</i><br>L'estate lavora sulla piattaforma di sviluppo di realtà mista e testa le attività relative ai motori non reali del team.</td>
+<td style="border-style: none"><b>Wu estivo</b><br><i>Producer</i><br>Summer lavora sulla piattaforma per sviluppatori di realtà mista e dirige gli sforzi correlati al motore Unreal del team.</td>
 </tr>
 </table>
 
-Grazie speciale per i nostri amici di [Framestore](https://www.framestore.com/) , che ci aiutano a portare la fuga di Kippy. Dallo sviluppo di caratteri, alla progettazione di asset, alla programmazione dei giochi, la loro collaborazione su questo progetto era fondamentale.
+Grazie speciale ai nostri amici di [Framestore per](https://www.framestore.com/) averci aiutati a dare vita a Kippy's Escape. Dallo sviluppo di personaggi, alla progettazione di asset, alla programmazione di giochi, la collaborazione su questo progetto è stata fondamentale.

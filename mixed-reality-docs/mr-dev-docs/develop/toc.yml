@@ -126,21 +126,21 @@
               items:
                 - name: HoloLens (prima generazione) Nozioni di base 100 - Introduzione a Unity
                   href: unity/tutorials/holograms-100.md
-                - name: HoloLens (prima generazione) Nozioni di base 101 - Progetto completo con dispositivo
+                - name: HoloLens (prima generazione) Nozioni di base 101 - Completare il progetto con il dispositivo
                   href: unity/tutorials/holograms-101.md
-                - name: HoloLens (prima generazione) Nozioni di base 101E - Progetto completo con emulatore
+                - name: HoloLens (prima generazione) Basics 101E - Completare il progetto con l'emulatore
                   href: unity/tutorials/holograms-101e.md
-                - name: HoloLens (prima generazione) Input 210 - Sguardo fisso
+                - name: HoloLens (prima generazione) Input 210 - Gaze
                   href: unity/tutorials/holograms-210.md
                 - name: HoloLens (prima generazione) Input 211 - Movimento
                   href: unity/tutorials/holograms-211.md
                 - name: HoloLens (prima generazione) Input 212 - Voce
                   href: unity/tutorials/holograms-212.md
-                - name: HoloLens (prima generazione) Spaziale 220 - Audio spaziale
+                - name: HoloLens (prima generazione) Spaziale 220 - Suono spaziale
                   href: unity/tutorials/holograms-220.md
                 - name: HoloLens (prima generazione) Spaziale 230 - Mapping spaziale
                   href: unity/tutorials/holograms-230.md
-                - name: HoloLens (prima generazione) Condivisione 240 - Più HoloLens mobili
+                - name: HoloLens (prima generazione) Condivisione di 240 - Più HoloLens dispositivi
                   href: unity/tutorials/holograms-240.md
             - name: Realtà mista e servizi di Azure
               items:
@@ -152,13 +152,13 @@
                   href: unity/tutorials/mr-azure-302b.md
                 - name: HoloLens (prima generazione) e Azure 303 - Comprensione del linguaggio naturale
                   href: unity/tutorials/mr-azure-303.md
-                - name: HoloLens (prima generazione) e Azure 304 - Riconoscimento volto
+                - name: HoloLens (prima generazione) e Azure 304 - Riconoscimento del viso
                   href: unity/tutorials/mr-azure-304.md
                 - name: HoloLens (prima generazione) e Azure 305 - Funzioni e archiviazione
                   href: unity/tutorials/mr-azure-305.md
                 - name: HoloLens (prima generazione) e Azure 306 - Streaming video
                   href: unity/tutorials/mr-azure-306.md
-                - name: HoloLens (prima generazione) e Azure 307 - Apprendimento maching
+                - name: HoloLens (prima generazione) e Azure 307 - Apprendimento di Maching
                   href: unity/tutorials/mr-azure-307.md
                 - name: HoloLens (prima generazione) e Azure 308 - Notifiche tra dispositivi
                   href: unity/tutorials/mr-azure-308.md
@@ -168,7 +168,7 @@
                   href: unity/tutorials/mr-azure-310.md
                 - name: HoloLens (prima generazione) e Azure 311 - Microsoft Graph
                   href: unity/tutorials/mr-azure-311.md
-                - name: HoloLens (prima generazione) e Azure 312 - Integrazione di bot
+                - name: HoloLens (prima generazione) e Azure 312 - Integrazione del bot
                   href: unity/tutorials/mr-azure-312.md
                 - name: HoloLens (prima generazione) e Azure 313 - Servizio hub IoT
                   href: unity/tutorials/mr-azure-301.md
@@ -176,7 +176,7 @@
       items:
         - name: Scelta di una versione di Unity e di un plug-in XR
           href: unity/choosing-unity-version.md
-        - name: Configurazione di XR
+        - name: Configurazione della configurazione XR
           href: unity/xr-project-setup.md
         - name: Strumento per la funzionalità di realtà mista
           items:
@@ -196,7 +196,7 @@
       items:
         - name: Impostazione della fotocamera
           href: unity/camera-in-unity.md
-        - name: Blocco del mondo e ancoraggi nello spaziale
+        - name: Ancoraggi spaziali e di blocco del mondo
           href: unity/spatial-anchors-in-unity.md
         - name: Esperienze condivise
           href: unity/shared-experiences-in-unity.md
@@ -222,8 +222,6 @@
       items:
         - name: Fotocamera video in Unity
           href: unity/locatable-camera-in-unity.md
-        - name: Holographic Remoting nell'app desktop
-          href: unity/holographic-remoting-desktop.md
         - name: Punto di interesse
           href: unity/focus-point-in-unity.md
         - name: Perdita del tracciamento
@@ -249,7 +247,7 @@
             - name: Superfici
               href: unity/sampleapp-surfaces.md
             - name: Tavola periodica degli elementi 2.0
-              href: 'https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158'
+              href: unity/periodic-table-of-the-elements-2.md
             - name: Galaxy Explorer 2.0
               href: unity/galaxy-explorer-update.md
             - name: Concetti fondamentali sulla qualità
@@ -268,8 +266,8 @@
           href: unity/managed-debugging-with-unity-il2cpp.md
         - name: Impostazioni consigliate per Unity
           href: unity/recommended-settings-for-unity.md
-        - name: Modalità di gioco Unity
-          href: unity/unity-play-mode.md
+        - name: Visualizzare in anteprima il lavoro con Holographic Remoting
+          href: unity/holographic-remoting-in-unity.md
     - name: Soluzioni di Visual Studio
       items:
         - name: Esportazione e creazione di una soluzione di Visual Studio Unity
@@ -454,7 +452,9 @@
           href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: Holographic Remoting
       items:
-        - name: Holographic Remoting Player
+        - name: Panoramica
+          href: platform-capabilities-and-apis/holographic-remoting-overview.md
+        - name: Lettore Holographic Remoting
           href: platform-capabilities-and-apis/holographic-remoting-player.md
         - name: Scrivere un'app remota Holographic Remoting
           items:
@@ -475,9 +475,7 @@
         - name: Condizioni di licenza software per Holographic Remoting
           href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
         - name: Holographic Remoting per HoloLens (prima generazione)
-          items:
-            - name: Aggiunta di Holographic Remoting
-              href: platform-capabilities-and-apis/add-holographic-remoting.md
+          href: platform-capabilities-and-apis/add-holographic-remoting.md
     - name: Test e qualità delle app
       items:
         - name: Criteri di qualità delle app

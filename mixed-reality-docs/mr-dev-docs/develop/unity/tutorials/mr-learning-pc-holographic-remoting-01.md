@@ -2,25 +2,27 @@
 title: Introduzione a Holographic Remoting per PC
 description: In questo corso viene illustrato come trasmettere in remoto le applicazioni di realtà mista da PC a HoloLens 2.
 author: jessemcculloch
-ms.author: jemccull
-ms.date: 02/05/2021
+ms.author: v-vtieto
+ms.date: 07/26/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, holographic remoting per PC, descrizioni comandi, tracciamento oculare
 ms.localizationpriority: high
-ms.openlocfilehash: 05831ff19a998bd5e99ab5d20c3fb045a09c55e9
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 53ede3db405e6f6f4ccaa20ff35847ecc9081dca
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175439"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757353"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Introduzione a Holographic Remoting per PC
 
-Queste sono le esercitazioni su HoloLens 2. In questa serie di esercitazioni in due parti verrà illustrato come creare una dimostrazione dell'esperienza di realtà mista e come creare un'app per PC per Holographic Remoting.
+Queste sono le esercitazioni su HoloLens 2. In questa serie di esercitazioni in due parti si apprenderà come creare una dimostrazione dell'esperienza di realtà mista e un'app per PC per Holographic Remoting.
+
+[Informazioni di base su Holographic Remoting.](../../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 In questa esercitazione verrà illustrato come creare un'esperienza di realtà mista. Verranno infatti illustrati gli elementi dell'interfaccia utente e le funzionalità di manipolazione del modello 3D, ritaglio del modello e tracciamento oculare.
 
-Nella seconda esercitazione, [Creare un'applicazione per Holographic Remoting](mr-learning-pc-holographic-remoting-02.md), apprenderai come creare un'app per PC per Holographic Remoting. Apprenderai inoltre come effettuare la connessione a HoloLens 2 in qualsiasi momento, fornendo un modo per visualizzare il contenuto 3D in realtà mista.
+Nella seconda esercitazione, Creare un'applicazione [Holographic Remoting,](mr-learning-pc-holographic-remoting-02.md)si apprenderà come creare un'app per PC che usa Holographic Remoting per poter trasmettere il lavoro in corso al HoloLens e visualizzarlo senza doverlo compilare prima.
 
 ## <a name="objectives"></a>Obiettivi
 
@@ -39,7 +41,7 @@ Nella seconda esercitazione, [Creare un'applicazione per Holographic Remoting](m
 Prima di proseguire, è **consigliabile** completare la serie di [Esercitazioni introduttive](mr-learning-base-01.md) o alcune esperienze pregresse di base con Unity e MRTK.
 
 > [!IMPORTANT]
-> * Questa serie di esercitazioni supporta Unity 2020 LTS (attualmente 2020.3.x) se si usano Open XR e Unity 2019 LTS (attualmente 2019.4.x) se si usa WSA legacy. In questo modo vengono sostituiti tutti i requisiti della versione di Unity indicati nei prerequisiti collegati in precedenza.
+> * Questa serie di esercitazioni supporta Unity 2020 LTS (attualmente 2020.3.x) se si usano Open XR e Unity 2019 LTS (attualmente 2019.4.x) se si usa WSA legacy. Questo sostituisce tutti i requisiti della versione di Unity indicati nei prerequisiti collegati in precedenza.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Creazione e preparazione del progetto Unity
 
