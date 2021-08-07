@@ -4,37 +4,37 @@ description: Documentazione su HoverLight con esempi in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, hover Light,
-ms.openlocfilehash: 60662245111abe39285b3b8ac2cfb9d71e1300ed
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, hover light,
+ms.openlocfilehash: c528de3aabab6339bd8b9d63eb808756a5a249238fbe5a0deb15ba34c9d961cf
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685254"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214403"
 ---
 # <a name="hover-light"></a>Luce al passaggio del mouse
 
-Un [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) è un paradigma del [sistema di progettazione Fluent](https://www.microsoft.com/design/fluent/) che simula una [luce puntiforme](https://docs.unity3d.com/Manual/Lighting.html) posizionata vicino alla superficie di un oggetto. Spesso usato per le interazioni lontane, l'applicazione può controllare le proprietà di una luce del passaggio del mouse tramite il [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) componente.
+Un è un paradigma Fluent Design System che simula una luce punto che passa il [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) puntatore del mouse vicino alla superficie di un oggetto. [](https://www.microsoft.com/design/fluent/) [](https://docs.unity3d.com/Manual/Lighting.html) Spesso usata per le interazioni da lontano, l'applicazione può controllare le proprietà di una luce al passaggio del mouse tramite il [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) componente .
 
-Affinché un materiale venga influenzato da un [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) Toolkit di *realtà mista o* da un shader standard, è necessario che sia abilitata la proprietà del *passaggio del mouse* .
+Perché un materiale sia influenzato da uno shader Toolkit/Standard di Realtà mista deve essere usato e la proprietà Luce al passaggio del mouse [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) deve essere  abilitata. 
 
 > [!Note]
-> Lo shader MRTK/standard supporta fino a due per [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) impostazione predefinita, ma viene scalato in modo da supportare quattro e poi dieci con l'aggiunta di più luci alla scena.
+> Lo shader MRTK/Standard supporta fino a due per impostazione predefinita, ma verrà ridimensionato per supportare quattro e dieci quando vengono aggiunte altre luci [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) alla scena.
 
 ## <a name="examples"></a>Esempio
 
-La maggior parte delle scene all'interno della MRTK utilizza un [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) . Il caso d'uso più comune è reperibile in MRTK/SDK/features/UX/prefabrics/Cursors/DefaultCursor. prefabrical
+La maggior parte delle scene all'interno di MRTK usa un [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) oggetto . Il caso d'uso più comune è disponibile in MRTK/SDK/Features/UX/Prefabs/Cursors/DefaultCursor.prefab
 
-La scena **HoverLightExamples** illustra anche l'uso dei [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) comportamenti ed è disponibile all'indirizzo: MRTK/examples/Demos/StandardShader/scenes/
+La **scena HoverLightExamples** illustra anche l'uso dei comportamenti ed è disponibile [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) in: MRTK/Examples/Demos/StandardShader/Scenes/
 
 ## <a name="advanced-usage"></a>Utilizzo avanzato
 
-Solo dieci [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) può illuminare un [materiale](https://docs.unity3d.com/ScriptReference/Material.html) alla volta. Se il progetto richiede più di dieci [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) per influenzare un [materiale](https://docs.unity3d.com/ScriptReference/Material.html) , nel codice di esempio riportato di seguito viene illustrato come ottenere questo risultato.
+Solo dieci [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) possono illuminare [un materiale](https://docs.unity3d.com/ScriptReference/Material.html) alla volta. Se il progetto richiede più di dieci elementi per influenzare un materiale, il codice di esempio [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) seguente illustra come ottenere questo risultato. [](https://docs.unity3d.com/ScriptReference/Material.html)
 
 > [!Note]
-> La presenza [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) di molti [materiali](https://docs.unity3d.com/ScriptReference/Material.html) illuminati aumenterà pixel shader istruzioni e influirà sulle prestazioni. **Per profilare queste modifiche all'interno del progetto.**
+> La presenza di [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) molti elementi che [illuminano un](https://docs.unity3d.com/ScriptReference/Material.html) materiale aumenterà pixel shader istruzioni e inciderà sulle prestazioni. **Profilare queste modifiche all'interno del progetto.**
 
-*Come aumentare il numero di disponibili [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) da dieci a dodici.*
+*Come aumentare il numero di disponibili da [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) dieci a dodici.*
 
 ```C#
 // 1) Within MRTK/Core/StandardAssets/Shaders/MixedRealityStandard.shader change:
@@ -57,10 +57,10 @@ private const int hoverLightCountHigh = 12;
 ```
 
 > [!NOTE]
-> Se Unity registra un avviso simile a quello riportato di seguito, è necessario riavviare Unity prima che le modifiche siano effettive.
+> Se Unity registra un avviso simile al seguente, è necessario riavviare Unity prima che le modifiche avranno effetto.
 >
 > `Property (_HoverLightData) exceeds previous array size (24 vs 20). Cap to previous >size.`
 
 ## <a name="see-also"></a>Vedi anche
 
-* [Shader standard MRTK](mrtk-standard-shader.md)
+* [MRTK Standard Shader](mrtk-standard-shader.md)

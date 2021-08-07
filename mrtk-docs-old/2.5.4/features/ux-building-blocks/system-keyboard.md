@@ -1,22 +1,22 @@
 ---
 title: SystemKeyBoard
-description: Panoramica della lavagna delle chiavi di sistema in MRTK
+description: Panoramica della scheda delle chiavi di sistema in MRTK
 author: maxwang-ms
 ms.author: wangmax
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, tastiera di sistema,
-ms.openlocfilehash: bade7d1774b331ae7d58587f2691b96187cc2c79
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: fed51da13a58f61c3b1d1ea9e99a23b124da81c6268d5da64e98e986f138a583
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104686124"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189239"
 ---
 # <a name="system-keyboard"></a>Tastiera di sistema
 
 ![Tastiera di sistema](../images/system-keyboard/MRTK_SystemKeyboard_Main.png)
 
-Un'applicazione Unity può richiamare la tastiera di sistema in qualsiasi momento. Si noti che la tastiera di sistema si comporterà in base alle funzionalità della piattaforma di destinazione, ad esempio la tastiera in HoloLens 2 supporterà le interazioni con la mano diretta, mentre la tastiera su HoloLens (1a generazione) supporterà GGV (sguardi, movimenti e voce)<sup>[1](https://docs.microsoft.com/windows/mixed-reality/gaze)</sup>. Inoltre, la tastiera di sistema non viene visualizzata quando si esegue la [comunicazione remota di Unity](../tools/holographic-remoting.md) dall'editor a un HoloLens.
+Un'applicazione Unity può richiamare la tastiera di sistema in qualsiasi momento. Si noti che la tastiera di sistema si comporterà in base alle funzionalità della piattaforma di destinazione, ad esempio la tastiera su HoloLens 2 supporterebbe le interazioni di mano diretta, mentre la tastiera in HoloLens (prima generazione) supporterebbe GGV (sguardo fisso, movimento e voce)<sup>[1.](https://docs.microsoft.com/windows/mixed-reality/gaze)</sup> Inoltre, la tastiera di sistema non verrà mostrata quando si esegue [Unity Remoting](../tools/holographic-remoting.md) dall'editor a un HoloLens.
 
 ## <a name="how-to-invoke-the-system-keyboard"></a>Come richiamare la tastiera di sistema
 
@@ -50,8 +50,8 @@ private void Update()
 
 ## <a name="system-keyboard-example"></a>Esempio di tastiera di sistema
 
-È possibile vedere un semplice esempio di come visualizzare la tastiera di sistema in `MixedRealityKeyboard.cs` (assets/MRTK/SDK/Experimental/Features/UX/MixedRealityKeyboard. cs)
+È possibile visualizzare un semplice esempio di come visualizzare la tastiera di sistema in `MixedRealityKeyboard.cs` (Assets/MRTK/SDK/Experimental/Features/UX/MixedRealityKeyboard.cs)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Classi helper della tastiera a realtà mista](../experimental/mixed-reality-keyboard.md)
+- [Classi helper tastiera di realtà mista](../experimental/mixed-reality-keyboard.md)

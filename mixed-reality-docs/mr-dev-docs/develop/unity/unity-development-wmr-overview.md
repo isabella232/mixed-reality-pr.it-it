@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, realtà mista, sviluppo, guida introduttiva, nuovo progetto, conversione, funzionalità, fotocamera, simulazione, emulazione, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, input vocale, fotocamera individuabile, emulatore, Azure, esercitazioni
-ms.openlocfilehash: 074f42fd077d888523c2cf0a7da5bcafcfadb0f0
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: 74ac1825d8b94ba65075ef96244759ec0c8dcf1891556e0a1f36f100b9615221
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112906967"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211689"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>Sviluppo in Unity per VR e Windows Mixed Reality
 
@@ -29,15 +29,15 @@ Usare i checkpoint seguenti per trasferire i giochi e le applicazioni di Unity n
 
 ### <a name="1-getting-started"></a>1. Guida introduttiva
 
-È necessario modificare manualmente un piccolo set di impostazioni di Unity per lo sviluppo di Windows Mixed Reality vr. Le impostazioni sono suddivise in due categorie: per progetto e per scena. Al termine di questa sezione, saranno disponibili le impostazioni di progetto e gli strumenti necessari per iniziare a creare le app personali.
+È necessario modificare manualmente un piccolo set di impostazioni di Unity per lo sviluppo Windows Mixed Reality virtuale. Le impostazioni sono suddivise in due categorie: per progetto e per scena. Al termine di questa sezione, saranno disponibili le impostazioni di progetto e gli strumenti necessari per iniziare a creare le app personali.
 
 |  Checkpoint  |  Risultato  |
 | --- | --- |
 | [Installare gli ultimi aggiornamenti](../install-the-tools.md) | Scaricare e installare il pacchetto Unity più recente e configurare il progetto per la realtà mista |
-| [Configurazione del progetto per vr e visori Windows Mixed Reality visori](./xr-project-setup.md?tabs=openxr) | Vedere le informazioni su come creare applicazioni che eseguono il rendering di contenuto digitale in dispositivi di visualizzazione olografici e VR |
+| [Configurazione del progetto per vr e visori VR Windows Mixed Reality visori VR](./xr-project-setup.md?tabs=openxr) | Vedere le informazioni su come creare applicazioni che eseguono il rendering di contenuto digitale in dispositivi di visualizzazione olografici e VR |
 
 > [!IMPORTANT]
-> Per altre informazioni sulla configurazione dei [progetti,](choosing-unity-version.md) vedere la guida alla configurazione del progetto Unity.
+> Per altre informazioni sulla configurazione [dei](choosing-unity-version.md) progetti, vedere la guida alla configurazione del progetto Unity.
 
 ### <a name="2-core-building-blocks"></a>2. Componenti fondamentali
 
@@ -46,7 +46,7 @@ Dopo aver avviato un nuovo progetto immersivo, sono necessari alcuni blocchi pre
 |  Funzionalità  |  Capabilities  |
 | --- | --- |
 | [Fotocamera](../unity/camera-in-unity.md) | Ottimizzare pienamente la qualità visiva e la stabilità degli ologrammi nelle app di realtà mista |
-| [Blocco del mondo e ancoraggi spaziali](spatial-anchors-in-unity.md) | Risolvere i problemi di stabilizzazione, regolazione della fotocamera e integrare una soluzione di sistema di coordinate stabile || [Controller del movimento](../unity/motion-controllers-in-unity.md) | Aggiungere azioni nello spazio alle app di realtà mista |
+| [Blocco del mondo e ancoraggi nello spaziale](spatial-anchors-in-unity.md) | Risolvere i problemi di stabilizzazione, regolazione della fotocamera e integrare una soluzione di sistema di coordinate stabile || [Controller del movimento](../unity/motion-controllers-in-unity.md) | Aggiungere azioni nello spazio alle app di realtà mista |
 | [Movimenti](../unity/gestures-in-unity.md) | Usare i movimenti della mano come input nelle esperienze di realtà mista |
 | [Audio spaziale](../unity/spatial-sound-in-unity.md) | Migliorare le app con audio 3D immersivo |
 | [Text](../unity/text-in-unity.md) | Ottenere testo nitido e di alta qualità di dimensioni gestibili e con un rendering di qualità |

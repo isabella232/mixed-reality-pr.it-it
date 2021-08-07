@@ -5,34 +5,34 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: b7ec8d9ca2213ff998f94a6a2d029900ff886a2f
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: e18695610b5e07c4f811e7c43bc13607857a9459407f9b16f39d4f7350f354e6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176411"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214924"
 ---
 # <a name="mrtk-profile-configuration-guide"></a>Guida alla configurazione del profilo MRTK
 
-L'Toolkit realtà mista centralizza la maggior parte della configurazione necessaria per gestire il toolkit ( ad eccezione dei veri "cose" di runtime).
+L'Toolkit realtà mista centralizza la maggior parte della configurazione necessaria per gestire il toolkit (ad eccezione dei veri "elementi" di runtime).
 
 Questa guida è una procedura dettagliata semplice per ognuna delle schermate del profilo di configurazione attualmente disponibili per il toolkit.
 
-## <a name="the-main-mixed-reality-toolkit-configuration-profile"></a>Profilo di configurazione principale Toolkit realtà mista
+## <a name="the-main-mixed-reality-toolkit-configuration-profile"></a>Profilo di configurazione Toolkit realtà mista principale
 
-Il profilo di configurazione principale, collegato al GameObject *MixedRealityToolkit* nella scena, fornisce il punto di ingresso principale per il Toolkit nel progetto.
+Il profilo di configurazione principale, collegato a *MixedRealityToolkit* GameObject nella scena, fornisce il punto di ingresso principale per il Toolkit nel progetto.
 
 > [!NOTE]
-> L'Toolkit realtà mista "blocca" le schermate di configurazione predefinite per assicurarsi di avere sempre un punto di partenza comune per il progetto ed è consigliato iniziare a definire impostazioni personalizzate con l'evolversi del progetto. La configurazione di MRTK non è modificabile durante la modalità di riproduzione.
+> La realtà mista Toolkit "blocca" le schermate di configurazione predefinite per assicurarsi di avere sempre un punto di partenza comune per il progetto ed è consigliato iniziare a definire le proprie impostazioni con l'evolversi del progetto. La configurazione di MRTK non è modificabile durante la modalità di riproduzione.
 
-![Profilo di configurazione di MRTK](../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_ActiveConfiguration.png)
+![Profilo di configurazione MRTK](../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_ActiveConfiguration.png)
 
-Tutti i profili "predefiniti" per l'Toolkit realtà mista sono disponibili nel progetto SDK nella cartella Assets/MRTK/SDK/Profiles.
+Tutti i profili "predefiniti" per Toolkit realtà mista sono disponibili nel progetto SDK nella cartella Assets/MRTK/SDK/Profiles.
 
 > [!IMPORTANT]
 > DefaultHoloLens2ConfigurationProfile è ottimizzato per HoloLens 2. Per [informazioni dettagliate,](../features/profiles/profiles.md) vedere Profili.
 
-Quando si apre il profilo di configurazione Toolkit realtà mista principale, verrà visualizzata la schermata seguente nel controllo:
+Quando si apre il profilo di configurazione Toolkit realtà mista principale, nel controllo verrà visualizzata la schermata seguente:
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_MixedRealityToolkitConfigurationScreen.png" width="650px" alt="MRTK configuration scene" style="display:block;">
 
@@ -43,39 +43,39 @@ In questo modo viene ospitata la configurazione di runtime attiva corrente per i
 Da qui è possibile passare a tutti i profili di configurazione per MRTK, tra cui:
 
 - [Guida alla configurazione Toolkit profilo di realtà mista](#mrtk-profile-configuration-guide)
-  - [Profilo di configurazione principale Toolkit realtà mista](#the-main-mixed-reality-toolkit-configuration-profile)
+  - [Profilo di configurazione Toolkit realtà mista principale](#the-main-mixed-reality-toolkit-configuration-profile)
   - [Impostazioni dell'esperienza](#experience-settings)
   - [Impostazioni della fotocamera](#camera-settings)
-  - [Impostazioni del sistema di input](#input-system-settings)
+  - [Impostazioni di sistema di input](#input-system-settings)
   - [Impostazioni di visualizzazione dei limiti](#boundary-visualization-settings)
   - [Selezione del sistema di teletrasporto](#teleportation-system-selection)
   - [Impostazioni di consapevolezza spaziale](#spatial-awareness-settings)
   - [Impostazioni di diagnostica](#diagnostics-settings)
   - [Impostazioni di sistema della scena](#scene-system-settings)
-  - [Impostazioni dei servizi aggiuntivi](#additional-services-settings)
+  - [Impostazioni aggiuntive dei servizi](#additional-services-settings)
   - [Impostazioni delle azioni di input](#input-actions-settings)
   - [Regole delle azioni di input](#input-actions-rules)
   - [Configurazione del puntatore](#pointer-configuration)
   - [Configurazione dei movimenti](#gestures-configuration)
   - [Comandi vocali](#speech-commands)
-  - [Configurazione del mapping del controller](#controller-mapping-configuration)
+  - [Configurazione del mapping dei controller](#controller-mapping-configuration)
   - [Impostazioni di visualizzazione del controller](#controller-visualization-settings)
   - [Utilità dell'editor](#editor-utilities)
     - [Controlli dei servizi](#service-inspectors)
-    - [Renderer buffer di profondità](#depth-buffer-renderer)
+    - [Renderer del buffer di profondità](#depth-buffer-renderer)
   - [Modifica dei profili in fase di esecuzione](#changing-profiles-at-runtime)
-    - [Opzione del profilo di inizializzazione di MRTK precedente](#pre-mrtk-initialization-profile-switch)
-    - [Cambio di profilo attivo](#active-profile-switch)
+    - [Opzione del profilo di inizializzazione MRTK precedente](#pre-mrtk-initialization-profile-switch)
+    - [Opzione del profilo attivo](#active-profile-switch)
   - [Vedere anche](#see-also)
 
-Questi profili di configurazione sono riportati di seguito nelle sezioni pertinenti:
+Questi profili di configurazione sono dettagliati di seguito nelle sezioni pertinenti:
 
 ---
 <a name="experience"></a>
 
 ## <a name="experience-settings"></a>Impostazioni dell'esperienza
 
-Disponibile nella pagina principale di configurazione Toolkit realtà mista, questa impostazione definisce il funzionamento predefinito della scalabilità dell'ambiente di realtà [mista](/windows/mixed-reality/coordinate-systems-in-unity) per il progetto.
+Nella pagina di configurazione principale Toolkit realtà mista, questa impostazione definisce il funzionamento predefinito della scalabilità dell'ambiente di realtà mista [per](/windows/mixed-reality/coordinate-systems-in-unity) il progetto.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_ExperienceSettings.png" width="650px" alt="Experiance settings" style="display:block;">
 
@@ -84,7 +84,7 @@ Disponibile nella pagina principale di configurazione Toolkit realtà mista, que
 
 ## <a name="camera-settings"></a>Impostazioni della fotocamera
 
-Le impostazioni della fotocamera definiscono come verrà impostata la fotocamera per il progetto di realtà mista, definendo le impostazioni generiche di ritaglio, qualità e trasparenza.
+Le impostazioni della fotocamera definiscono la modalità di configurazione della fotocamera per il progetto di realtà mista, definendo le impostazioni generiche di ritaglio, qualità e trasparenza.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_CameraProfile.png" width="650px" alt="Camera Profile" style="display:block;">
 
@@ -93,23 +93,23 @@ Le impostazioni della fotocamera definiscono come verrà impostata la fotocamera
 
 ## <a name="input-system-settings"></a>Impostazioni di sistema di input
 
-L'Project realtà mista offre un sistema di input affidabile e ben formato per il routing di tutti gli eventi di input intorno al progetto selezionato per impostazione predefinita.
+L'Project realtà mista offre un sistema di input affidabile e ben addestrato per il routing di tutti gli eventi di input intorno al progetto selezionato per impostazione predefinita.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputSystemSelection.png" width="650px" alt="Input System settings 1" style="display:block;">
 
-Dietro il sistema di input fornito da MRTK ci sono diversi altri sistemi, che consentono di gestire le complesse inter-tessere necessarie per astrarre le complessità di un framework multipiattaforma/realtà mista.
+Dietro il sistema di input fornito da MRTK sono presenti diversi altri sistemi, che consentono di gestire e gestire le complesse inter-tessitura necessarie per astrarre le complessità di un framework multipiattaforma/realtà mista.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputSystemProfile.png" width="650px" alt="Input System settings 2" style="display:block;">
 
 Ognuno dei singoli profili è descritto in dettaglio di seguito:
 
-- Stato attivo Impostazioni
+- Concentrarsi Impostazioni
 - [Impostazioni delle azioni di input](#input-actions-settings)
 - [Regole delle azioni di input](#input-actions-rules)
 - [Configurazione del puntatore](#pointer-configuration)
 - [Configurazione dei movimenti](#gestures-configuration)
 - [Comandi vocali](#speech-commands)
-- [Configurazione del mapping del controller](#controller-mapping-configuration)
+- [Configurazione del mapping dei controller](#controller-mapping-configuration)
 - [Impostazioni di visualizzazione del controller](#controller-visualization-settings)
 
 ---
@@ -117,7 +117,7 @@ Ognuno dei singoli profili è descritto in dettaglio di seguito:
 
 ## <a name="boundary-visualization-settings"></a>Impostazioni di visualizzazione dei limiti
 
-Il sistema di limiti trasla il limite percepito segnalato dal sistema di limiti/guardiani delle piattaforme sottostanti. La configurazione del visualizzatore di limiti consente di visualizzare automaticamente il limite registrato all'interno della scena rispetto alla posizione dell'utente. Il limite reagirà o si aggiornerà anche in base al punto in cui l'utente si teletrasporta all'interno della scena.
+Il sistema di limiti traduce il limite percepito segnalato dal sistema limite/guardiano delle piattaforme sottostanti. La configurazione del visualizzatore limite consente di visualizzare automaticamente il limite registrato all'interno della scena rispetto alla posizione dell'utente. Il limite reagirà o si aggiornerà anche in base al punto in cui l'utente teletrasporta all'interno della scena.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_BoundaryVisualizationProfile.png" width="650px" alt="Boundry Visualization Settings" style="display:block;">
 
@@ -126,7 +126,7 @@ Il sistema di limiti trasla il limite percepito segnalato dal sistema di limiti/
 
 ## <a name="teleportation-system-selection"></a>Selezione del sistema di teletrasporto
 
-L'Project realtà mista offre un sistema di teletrasporto completo per la gestione degli eventi di teletrasporto nel progetto, selezionato per impostazione predefinita.
+L'Project realtà mista offre un sistema di teletrasporto completo per la gestione degli eventi di teletrasporto nel progetto selezionato per impostazione predefinita.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_TeleportationSystemSelection.png" width="650px" alt="Teleport System settings" style="display:block;">
 
@@ -135,13 +135,13 @@ L'Project realtà mista offre un sistema di teletrasporto completo per la gestio
 
 ## <a name="spatial-awareness-settings"></a>Impostazioni di consapevolezza spaziale
 
-L'Project realtà mista offre un sistema di consapevolezza spaziale ricompilato per l'uso di sistemi di analisi spaziale nel progetto, selezionato per impostazione predefinita.
+L'Project realtà mista offre un sistema di consapevolezza spaziale ricompilato per l'uso dei sistemi di scansione spaziale nel progetto selezionato per impostazione predefinita.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SpatialAwarenessSystemSelection.png" width="650px" alt="Spatial Awareness settings 1" style="display:block;">
 
-La configurazione di consapevolezza spaziale Toolkit realtà mista consente di personalizzare la modalità di avvio del sistema, sia che sia automatica all'avvio dell'applicazione o in un secondo momento a livello di codice, nonché di impostare gli extent per il campo di visualizzazione.
+La configurazione di riconoscimento Toolkit realtà mista consente di personalizzare la modalità di avvio del sistema, sia che sia automaticamente all'avvio dell'applicazione o in un secondo momento a livello di codice, nonché di impostare gli extent per il campo di visualizzazione.
 
-Consente anche di configurare le impostazioni della mesh e della superficie, personalizzando ulteriormente il modo in cui il progetto comprende l'ambiente intorno all'utente.
+Consente anche di configurare le impostazioni di mesh e superficie, personalizzando ulteriormente il modo in cui il progetto comprende l'ambiente circostante.
 
 Questo è applicabile solo per i dispositivi che possono fornire un ambiente analizzato.
 
@@ -165,18 +165,18 @@ Il profilo di diagnostica offre diversi sistemi semplici da monitorare durante l
 
 ## <a name="scene-system-settings"></a>Impostazioni di sistema della scena
 
-MRTK fornisce questo servizio facoltativo che consente di gestire il caricamento/scaricamento di scene additive complesse. Per decidere se il sistema della scena è una scelta adatta al progetto, leggi la Guida al sistema [Attività iniziali scena.](../features/scene-system/scene-system-getting-started.md)
+MrTK fornisce questo servizio facoltativo che consente di gestire il caricamento/scaricamento di scene additive complesse. Per decidere se il sistema di scena è adatto per il progetto, leggere la Guida al Attività iniziali [scene.](../features/scene-system/scene-system-getting-started.md)
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SceneSystemProfile.png" width="650px" alt="Scene System settings 1" style="display:block;">
 
 ---
 <a name="services"></a>
 
-## <a name="additional-services-settings"></a>Impostazioni dei servizi aggiuntivi
+## <a name="additional-services-settings"></a>Impostazioni aggiuntive dei servizi
 
 Una delle aree più avanzate di Mixed Reality [](https://en.wikipedia.org/wiki/Service_locator_pattern) Toolkit è l'implementazione del modello di localizzatore di servizi che consente la registrazione di qualsiasi "servizio" con il framework. In questo modo il framework può essere esteso con facilità con nuove funzionalità/sistemi, ma consente anche ai progetti di sfruttare queste funzionalità per registrare i propri componenti di runtime.
 
-Qualsiasi servizio registrato ottiene comunque il vantaggio completo di tutti gli eventi unity, senza il sovraccarico e il costo dell'implementazione di modelli singleton MonoBehaviour o clunky. Ciò consente componenti C# puri senza overhead della scena per l'esecuzione di processi in primo piano e in background, ad esempio sistemi di generazione, logica di gioco di runtime o praticamente qualsiasi altro elemento.
+Qualsiasi servizio registrato ottiene comunque il massimo vantaggio di tutti gli eventi unity, senza il sovraccarico e il costo dell'implementazione di modelli singleton MonoBehaviour o clunky. Ciò consente componenti C# puri senza sovraccarico della scena per l'esecuzione di processi in primo piano e in background, ad esempio sistemi di generazione, logica di gioco di runtime o praticamente qualsiasi altra operazione.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_RegisteredServiceProvidersProfile.png" width="650px" alt="additional System settings" style="display:block;">
 
@@ -185,11 +185,11 @@ Qualsiasi servizio registrato ottiene comunque il vantaggio completo di tutti gl
 
 ## <a name="input-actions-settings"></a>Impostazioni delle azioni di input
 
-Le azioni di input consentono di astrarre eventuali interazioni fisiche e input da un progetto di runtime. Tutto l'input fisico (da controller/mani/mouse/e così via) viene convertito in un'azione di input logica da usare nel progetto di runtime. In questo modo, indipendentemente dall'origine dell'input, il progetto implementa semplicemente queste azioni come "Cose da fare" o "Interagisci" nelle scene.
+Le azioni di input consentono di astrarre eventuali interazioni fisiche e input da un progetto di runtime. Tutto l'input fisico (da controller/ mani/ mouse / e così via) viene convertito in un'azione di input logica da usare nel progetto di runtime. In questo modo, indipendentemente dalla posizione di origine dell'input, il progetto implementa semplicemente queste azioni come "Cose da fare" o "Interagisci con" nelle scene.
 
-Per creare una nuova azione di input, è sufficiente fare clic sul pulsante "Aggiungi una nuova azione" e immettere un nome di testo descrittivo per ciò che rappresenta. È quindi necessario selezionare solo un asse (il tipo di dati) a cui l'azione deve comunicare o, nel caso dei controller fisici, il tipo di input fisico a cui può essere collegata, ad esempio:
+Per creare una nuova azione di input, è sufficiente fare clic sul pulsante "Aggiungi una nuova azione" e immettere un nome di testo descrittivo per ciò che rappresenta. È quindi necessario selezionare solo un asse (il tipo di dati) a cui l'azione deve trasmettere o, nel caso dei controller fisici, il tipo di input fisico a cui può essere collegata, ad esempio:
 
-| Vincolo dell'asse | Tipo di dati | Descrizione | Esempio d'uso |
+| Vincolo dell'asse | Tipo di dati | Descrizione | Uso di esempio |
 | :--- | :--- | :--- | :--- |
 | Nessuno | Nessun dato | Usato per un'azione o un evento vuoto | Trigger di evento |
 | Non elaborato (riservato) | object | Riservate per utilizzo futuro | N/D |
@@ -346,7 +346,7 @@ Per assicurarsi che una scena eserciti il rendering di tutti i dati necessari ne
 
 ### <a name="pre-mrtk-initialization-profile-switch"></a>Opzione del profilo di inizializzazione MRTK precedente
 
-Questa operazione può essere eseguita collegando un oggetto MonoBehaviour (esempio seguente) che viene eseguito prima dell'inizializzazione di MRTK (ad esempio, Awake()). Si noti che lo script , ad esempio la chiamata a , deve essere eseguito prima dello script, che può essere ottenuto impostando le impostazioni dell'ordine di esecuzione `SetProfileBeforeInitialization` `MixedRealityToolkit` dello [script](https://docs.unity3d.com/Manual/class-MonoManager.html).
+Questa operazione può essere eseguita collegando un monobehaviour (esempio seguente) che viene eseguito prima dell'inizializzazione di MRTK (ad esempio, Awake()). Si noti che lo script (ad esempio, la chiamata a ) deve essere eseguito prima dello script, operazione che può essere ottenuta impostando le `SetProfileBeforeInitialization` `MixedRealityToolkit` impostazioni [dell'ordine di esecuzione dello script](https://docs.unity3d.com/Manual/class-MonoManager.html).
 
 ```csharp
 using Microsoft.MixedReality.Toolkit;
@@ -387,12 +387,12 @@ A tale scopo, impostare la `MixedRealityToolkit.Instance.ActiveProfile` propriet
 MixedRealityToolkit.Instance.ActiveProfile = profileToUse;
 ```
 
-Si noti che quando si imposta durante il runtime, l'eliminazione dei servizi attualmente in esecuzione verrà eseguita dopo l'ultimo LateUpdate() di tutti i servizi e la creazione e l'inizializzazione dei servizi associati al nuovo profilo verranno eseguite prima del primo Update() di tutti i `ActiveProfile` servizi.
+Si noti che quando si imposta durante il runtime, l'eliminazione dei servizi attualmente in esecuzione verrà eseguita dopo l'ultimo LateUpdate() di tutti i servizi e la creazione di istanze e l'inizializzazione dei servizi associati al nuovo profilo verranno eseguite prima del primo Update() di tutti i `ActiveProfile` servizi.
 
-Durante questo processo può verificarsi un'esitazione notevole dell'applicazione. Anche qualsiasi script con priorità più alta rispetto allo `MixedRealityToolkit` script può immettere il relativo aggiornamento prima che il nuovo profilo sia configurato correttamente. Per [altre informazioni sulla priorità dello script,](https://docs.unity3d.com/Manual/class-MonoManager.html) vedere Impostazioni dell'ordine di esecuzione dello script.
+Durante questo processo può verificarsi un'esitazione notevole dell'applicazione. Inoltre, qualsiasi script con priorità più alta rispetto allo `MixedRealityToolkit` script può immettere il relativo aggiornamento prima che il nuovo profilo sia configurato correttamente. Per [altre informazioni sulla priorità degli script,](https://docs.unity3d.com/Manual/class-MonoManager.html) vedere Impostazioni dell'ordine di esecuzione degli script.
 
-Nel processo di cambio profilo la fotocamera dell'interfaccia utente esistente rimarrà invariata, assicurando che i componenti dell'interfaccia utente di Unity che richiedono canvas funzionino ancora dopo il passaggio.
+Nel processo di cambio del profilo la fotocamera dell'interfaccia utente esistente rimarrà invariata, assicurando che i componenti dell'interfaccia utente di Unity che richiedono l'area di disegno funzionino ancora dopo il passaggio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Stabilizzazione dell'ologramma](../performance/hologram-stabilization.md)

@@ -1,23 +1,23 @@
 ---
 title: Slider
-description: Scopri come usare il componente Slider UI (Interfaccia utente dispositivo di scorrimento) per impostare un valore spostando una manopola o una leve su una traccia usando Mixed Reality Toolkit.
+description: Informazioni su come usare il componente Slider UI per impostare un valore spostando una manopola o una leve su una traccia usando l'interfaccia utente di realtà mista Toolkit.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Realtà mista, controlli, interazione, interfaccia utente, esperienza utente, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, HoloLens, dispositivo di scorrimento, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: c1619a90b7df1a34fa1541663a3f521ba5e75662
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Realtà mista, controlli, interazione, interfaccia utente, esperienza utente, visore per realtà mista, visore di realtà mista windows, visore di realtà virtuale, HoloLens, dispositivo di scorrimento, MRTK, realtà mista Toolkit
+ms.openlocfilehash: 5d07960566630afac0addd10585d885f33a80b46613c1a9f19374c9afa71bd7e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600160"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115186916"
 ---
 # <a name="slider"></a>Slider
 
 ![Slider](images/UX_Hero_Slider.jpg)
 
-Un dispositivo di scorrimento è un componente dell'interfaccia utente usato per impostare un valore. Fornisce un'indicazione visiva del contenuto modificabile e dell'impostazione corrente nell'intervallo totale di contenuto. Viene visualizzato come traccia con opzioni su entrambi i lati. Una manopola o una leve viene trascinata su un'estremità o sull'altra per effettuare la scelta, indicando il valore corrente. Il dispositivo di scorrimento avvicinamento delle dita può essere spostato afferrando direttamente il dispositivo di scorrimento, direttamente o a distanza. I dispositivi di scorrimento funzionano con vari tipi di input, ad esempio lo sguardo fisso e il tocco e un controller del movimento.
+Un dispositivo di scorrimento è un componente dell'interfaccia utente usato per impostare un valore. Fornisce un'indicazione visiva del contenuto regolabile e dell'impostazione corrente nell'intervallo totale di contenuto. Viene visualizzato come traccia con opzioni su entrambi i lati. Una manopola o una leve viene trascinata su un'estremità o sull'altra per effettuare la scelta, indicando il valore corrente. Il dispositivo di scorrimento delle dita può essere spostato afferrando direttamente il dispositivo di scorrimento, direttamente o a una distanza. I dispositivi di scorrimento funzionano con vari tipi di input, ad esempio lo sguardo fisso e il tocco dell'aria e un controller di movimento.
 
 <br>
 

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, android, ios, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 67bda33f8d2d0711c83791be2e76d91b53ff934f
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: 6e9ae377a11d74fd9cdfca7ddb0379542d365e3365bdf07319bc8580b2e87420
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111403438"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115215804"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5. Ancoraggi nello spazio di Azure per Android e iOS
 
@@ -50,7 +50,7 @@ Usando l'elenco a discesa **Type** (Tipo), cambiare il tipo in **Microsoft.Mixed
 
 ![Profilo ARCameraProfile di Unity con il percorso di selezione del tipo di provider di dati](images/mr-learning-asa/asa-05-section2-step1-4.png)
 
-Aggiornare le definizione di scripting unityAR di MRTK richiamando la voce di menu: **Mixed Reality**  >  **Toolkit**  >  **Utilities**  >  **UnityAR** > Update Scripting Defines
+Aggiornare le definizione di scripting unityAR di MRTK richiamando la voce di menu Mixed **Reality**  >  **Toolkit**  >  **Utilities**  >  **UnityAR** > Update Scripting Defines
 
 ## <a name="building-your-application-to-your-android-device"></a>Compilazione dell'applicazione in un dispositivo Android
 
@@ -65,7 +65,7 @@ Dal menu di Unity scegli **File** > **Build Settings** (Impostazioni di compilaz
 
 Chiudere la finestra Build Settings (Impostazioni di compilazione).
 
-Nel menu di Unity seleziona **Mixed Reality** Toolkit Utilities Configure Project for MRTK (Configura progetto per MRTK) per aprire la finestra  >    >    >   **MRTK Project Configurator (Configuratore progetto MRTK),**  verifica che tutte le opzioni siano selezionate e quindi fai clic sul pulsante Apply (Applica) per applicare le impostazioni:
+Nel menu di Unity selezionare **Mixed Reality** Toolkit Utilities Configure Project for MRTK (Configura Project realtà mista per MRTK) per aprire la finestra  >    >    >   **MRTK Project Configurator (Configuratore mrTK Project),**  verificare che tutte le opzioni siano selezionate e quindi fare clic sul pulsante Apply (Applica) per applicare le impostazioni:
 
 ![Unity MRTK Project Configurator 1](images/mr-learning-asa/asa-05-section3-step1-2.png)
 
@@ -106,7 +106,7 @@ Dal menu di Unity scegli **File** > **Build Settings** (Impostazioni di compilaz
 
 Chiudere la finestra Build Settings (Impostazioni di compilazione).
 
-Nel menu di Unity seleziona **Mixed Reality** Toolkit Utilities Configure Project for MRTK (Configura progetto per MRTK) per aprire la finestra  >    >    >   **MRTK Project Configurator (Configuratore progetto MRTK),**  verifica che tutte le opzioni siano selezionate e quindi fai clic sul pulsante Apply (Applica) per applicare le impostazioni:
+Nel menu di Unity selezionare **Mixed Reality** Toolkit Utilities Configure Project for MRTK (Configura Project realtà mista per MRTK) per aprire la finestra  >    >    >   **MRTK Project Configurator (Configuratore mrTK Project),**  verificare che tutte le opzioni siano selezionate e quindi fare clic sul pulsante Apply (Applica) per applicare le impostazioni:
 
 ![Finestra MRTK Project Configurator di Unity - iOS](images/mr-learning-asa/asa-05-section4-step1-2.png)
 

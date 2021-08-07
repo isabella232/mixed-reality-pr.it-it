@@ -1,43 +1,43 @@
 ---
 title: Perdita del rilevamento in Unity
-description: Informazioni su come gestire la perdita di rilevamento manuale e predefinita in un'app per realtà mista Unity.
+description: Informazioni su come gestire la perdita di rilevamento manuale e predefinita all'interno di un'app di realtà mista Unity.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, perdita di rilevamento, immagine della perdita del rilevamento, polling, auricolare a realtà mista, auricolare di realtà mista di Windows, auricolare di realtà virtuale
-ms.openlocfilehash: 39ce4e079886b27ed35c419a3b3913c6700e0d32
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: Unity, rilevamento della perdita, tracciamento dell'immagine di perdita, polling, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale
+ms.openlocfilehash: fe11c88bec60042901bd7ebb5c55116da97b6e28f0e44e889ef517a03d67245a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009851"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211353"
 ---
 # <a name="tracking-loss-in-unity"></a>Perdita del rilevamento in Unity
 
-Quando il dispositivo non è in grado di trovarsi nel mondo, l'app riscontra una "perdita di rilevamento". Per impostazione predefinita, Unity sospende il ciclo di aggiornamento e visualizza un'immagine iniziale per l'utente in qualsiasi momento in cui il rilevamento viene perso. Dopo che il rilevamento è stato recuperato, l'immagine iniziale viene rilasciata e il ciclo di aggiornamento continua.
+Quando il dispositivo non è in grado di individuarsi nel mondo, l'app verifica la perdita. Per impostazione predefinita, Unity sospende il ciclo di aggiornamento e visualizza un'immagine iniziale per l'utente ogni volta che viene perso il rilevamento. Una volta recuperato il rilevamento, l'immagine iniziale viene chiusa e il ciclo di aggiornamento continua.
 
-In alternativa, l'utente può gestire manualmente questa transizione scegliendo l'impostazione. Se non viene eseguita alcuna operazione per la gestione, tutto il contenuto sembrerà bloccato nel corpo durante la perdita del rilevamento.
+In alternativa, l'utente può gestire manualmente questa transizione rifiutando esplicitamente l'impostazione. Tutto il contenuto sembra essere bloccato durante la perdita di rilevamento se non viene eseguita alcuna operazione per gestirlo.
 
 ## <a name="default-handling"></a>Gestione predefinita
 
-Il ciclo di aggiornamento e tutti i messaggi e gli eventi si arresteranno per la durata della perdita del rilevamento per impostazione predefinita. Allo stesso tempo, all'utente verrà visualizzata un'immagine. È possibile personalizzare questa immagine scegliendo Modifica->impostazioni->Player, facendo clic su immagine iniziale e impostando l'immagine della perdita del rilevamento olografico.
+Per impostazione predefinita, il ciclo di aggiornamento e tutti i messaggi e gli eventi si arresteranno per la durata del rilevamento della perdita. Allo stesso tempo, verrà visualizzata un'immagine per l'utente. È possibile personalizzare questa immagine selezionando Edit->Impostazioni->Player (Modifica->Impostazioni->Player), facendo clic su Splash Image (Immagine iniziale) e impostando l'immagine Holographic Tracking Loss (Perdita di tracciamento olografico).
 
 ## <a name="manual-handling"></a>Gestione manuale
 
-Per gestire manualmente la perdita del rilevamento, è necessario passare a **modifica**  >  **Impostazioni progetto**  >  **Player**  >  **piattaforma UWP (Universal Windows Platform) impostazioni**  >  **immagine schermata iniziale**  >  **Windows olografico** e deselezionare "in rilevamento perdita sospensione e Mostra immagine". Successivamente, è necessario gestire le modifiche di rilevamento con le API specificate di seguito.
+Per gestire manualmente la perdita di rilevamento, è necessario passare alla scheda Impostazioni di **Edit** Project Impostazioni Player Universal Windows Platform (Modifica impostazioni della piattaforma Universal Windows di  >  **Project Impostazioni**  >  **Player)** Windows Holographic e deselezionare  >    >    >   "On Tracking Loss Pause and Show Image". Successivamente, è necessario gestire il rilevamento delle modifiche con le API specificate di seguito.
 
-**Spazio dei nomi:** *UnityEngine. XR. WSA*<br>
+**Spazio dei nomi:** *UnityEngine.XR.WSA*<br>
 **Tipo:** *WorldManager*
 
-* World Manager espone un evento per rilevare il rilevamento perso/acquisito (*WorldManager. OnPositionalLocatorStateChanged*) e una proprietà per eseguire una query sullo stato corrente (*WorldManager. state*)
-* Quando lo stato di rilevamento non è attivo, la fotocamera non sembra tradursi nel mondo virtuale anche quando l'utente si traduce. Gli oggetti non corrisponderanno più a una posizione fisica e tutti verranno visualizzati corpo bloccati.
+* World Manager espone un evento per rilevare il rilevamento di perdita/perdita *(WorldManager.OnPositionalLocatorStateChanged)* e una proprietà per eseguire una query sullo stato corrente (*WorldManager.state*)
+* Quando lo stato di rilevamento non è attivo, la fotocamera non apparirà traslata nel mondo virtuale anche quando l'utente traduce. Gli oggetti non corrisponderanno più ad alcuna posizione fisica e tutti gli oggetti appariranno bloccati.
 
-Quando si gestiscono le modifiche di rilevamento autonomamente, è necessario eseguire il polling per la proprietà state di ogni frame o gestire l'evento *OnPositionalLocatorStateChanged* .
+Quando si gestisce il rilevamento delle modifiche in modo personalizzato, è necessario eseguire il polling della proprietà di stato per ogni frame o gestire *l'evento OnPositionalLocatorStateChanged.*
 
 ### <a name="polling"></a>Polling
 
-Lo stato più importante è *PositionalLocatorState. Active*, che significa che il rilevamento è completamente funzionante. Qualsiasi altro stato comporterà solo Delta rotazionali alla fotocamera principale. Ad esempio:
+Lo stato più importante è *PositionalLocatorState.Active,* il che significa che il rilevamento è completamente funzionale. Qualsiasi altro stato comporta solo delta rotazionali per la fotocamera principale. Ad esempio:
 
 ```cs
 void Update()
@@ -60,7 +60,7 @@ void Update()
 
 ### <a name="handling-the-onpositionallocatorstatechanged-event"></a>Gestione dell'evento OnPositionalLocatorStateChanged
 
-Più facilmente, è anche possibile sottoscrivere *OnPositionalLocatorStateChanged* per gestire le transizioni:
+Più comodamente, è anche possibile sottoscrivere *OnPositionalLocatorStateChanged* per gestire le transizioni:
 
 ```cs
 void Start()
@@ -81,6 +81,6 @@ private void WorldManager_OnPositionalLocatorStateChanged(PositionalLocatorState
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Gestione della perdita di rilevamento in DirectX](../native/coordinate-systems-in-directx.md#handling-tracking-loss)

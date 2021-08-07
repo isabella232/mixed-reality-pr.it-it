@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens2, spatial audio, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head-related transfer function, reverb, Microsoft Spatializer, prefabs, volume curve
-ms.openlocfilehash: f3f2faf8220eaebcc674bcf02a45d99d58169076
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+ms.openlocfilehash: e0f916ecf8cd8da81e0738b082021c76c55a7f2031517a37b959575e1b21ce16
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110712808"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209838"
 ---
 # <a name="2-spatializing-button-interaction-sounds"></a>2. Spazializzazione dei suoni di interazione del pulsante
 
@@ -25,7 +25,7 @@ In questa esercitazione si apprenderà come spazializzare i suoni di interazione
 
 ## <a name="add-a-button"></a>Aggiungere un pulsante
 
-Per aggiungere il prefab pulsante, nella finestra **Progetto** selezionare **Pacchetti** e digitare "PressableButtonHoloLens2" nella barra di ricerca.
+Per aggiungere il prefab button, nella finestra Project **selezionare** **Pacchetti** e digitare "PressableButtonHoloLens2" nella barra di ricerca.
 
 ![Prefab dei pulsanti in Asset](images/spatial-audio/spatial-audio-02-section1-step1-1.PNG)
 
@@ -43,20 +43,20 @@ Per concentrarsi sugli oggetti nella scena, è possibile fare doppio clic sull'o
 
 In questo passaggio si spazializzerà il feedback audio per il pulsante. Per suggerimenti di progettazione correlati, vedere [Progettazione del suono spaziale.](../../../design/spatial-sound-design.md)
 
-Nella finestra **Mixer audio** si definiranno le destinazioni denominate **Gruppi mixer**, per la riproduzione audio dai **componenti origine** audio.
+Nella finestra **Mixer** audio si definiranno le destinazioni denominate **gruppi** Mixer , per la riproduzione audio dai **componenti origine** audio.
 
-Per aprire la **finestra Mixer** audio, nel menu Unity selezionare **Mixer** audio finestra  >    >  : Apri ![ finestra mixer audio](images/spatial-audio/spatial-audio-02-section2-step1-1.PNG)
+Per aprire la **finestra Audio Mixer,** nel menu Unity selezionare **Finestra**  >  **Audio**  >  **audio Mixer**: Apri audio Mixer ![ finestra](images/spatial-audio/spatial-audio-02-section2-step1-1.PNG)
 
- Creare un **mixer** facendo clic su "+" accanto a **Mixer** e immettendo un nome appropriato per il mixer, ad esempio _Mixer audio spaziale._ Il nuovo mixer includerà un gruppo **predefinito** denominato **Master**.
+ Creare un **Mixer** facendo clic su "+" accanto a **Mixer** e immettere un nome appropriato per il Mixer ad esempio, _Spatial Audio Mixer_. Il nuovo mixer includerà un gruppo **predefinito** denominato **Master**.
 
-![Pannello mixer con primo mixer](images/spatial-audio/spatial-audio-02-section2-step1-2.PNG)
+![Mixer pannello con il primo mixer](images/spatial-audio/spatial-audio-02-section2-step1-2.PNG)
 
 > [!NOTE]
 > Fino a quando il riverbero non viene abilitato nel [5° capitolo:](unity-spatial-audio-ch5.md)Uso del riverbero per aggiungere la distanza all'audio spaziale, il misuratore del volume del mixer non mostra l'attività per i suoni riprodotti tramite Microsoft Spatializer
 
 Nella finestra Hierarchy (Gerarchia) selezionare **PressableButtonHoloLens2** e quindi nella finestra Inspector (Controllo) trovare il componente Audio Source (Origine **audio)** e Configure the Audio Source component (Configura origine audio) come indicato di seguito:
 
-1. Per la **proprietà Output** fare clic sul selettore e scegliere il **mixer** creato.
+1. Per la **proprietà Output** fare clic sul selettore e scegliere il **Mixer** creato.
 2. Selezionare la **casella di controllo Spazializza.**
 3. Spostare il **dispositivo di scorrimento Fusione** spaziale su 3D (1).
 
@@ -71,7 +71,7 @@ Per impostazione predefinita, Unity attenua i suoni spazializzati quando si allo
 
 Per disabilitare questa attenuazione, è necessario regolare la **curva del volume** nel componente **Origine** audio.
 
-Nella finestra Hierarchy (Gerarchia) selezionare **PressableButtonHoloLens2** e quindi nella finestra Inspector (Controllo) passare a **Audio Source** 3D Sound Settings (Impostazioni audio  >  **3D)** e Configure (Configura) come indicato di seguito:
+Nella finestra Hierarchy (Gerarchia) selezionare **PressableButtonHoloLens2** e quindi nella finestra Inspector (Controllo) passare a **Audio Source**  >  **3D Sound (Audio Source 3D Sound) Impostazioni** e Configure (Configura) come indicato di seguito:
 
 1. Impostare la **proprietà Rolloff del** volume su Rolloff lineare
 2. Trascinare l'endpoint sulla **curva volume** (curva rossa) da "0" sull'asse y fino a "1"
@@ -88,7 +88,7 @@ In modalità di riproduzione spostare **l'oggetto PressableButtonHoloLens2** da 
 * Spostamento della **proprietà Spatial Blend** tra 0 e 1 (suono 2D non spazializzato e 3D spazializzato)
 * Controllo e deselezione della **proprietà Spatialize**
 
-Provare l'app HoloLens 2. Nell'app è possibile fare clic sul pulsante e ascoltare i suoni di interazione dei pulsanti spazializzati.
+Provare l'app in HoloLens 2. Nell'app è possibile fare clic sul pulsante e ascoltare i suoni di interazione dei pulsanti spazializzati.
 
 > [!TIP]
 > Per rivedere la procedura di compilazione e distribuzione di un progetto Unity in HoloLens 2, fare riferimento alle istruzioni riportate in [Compilazione dell'app nel dispositivo HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2).

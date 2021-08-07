@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, C#,
-ms.openlocfilehash: c14f5f72d391c5474a01c798bfdaa5529700a509
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: fe54a9fe1f906a31ac7ed0417dd3a57fee167314b4b2db29eadcd1eaa22f97b7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175330"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210737"
 ---
 # <a name="coding-guidelines"></a>Linee guida sulla codifica
 
@@ -30,9 +30,9 @@ Mantenere semplice la logica del codice. Si noti che non si tratta di un'istruzi
 
 ### <a name="produce-consistent-readable-code"></a>Produrre codice coerente e leggibile
 
-La leggibilità del codice è correlata alle basse percentuali di difetti. Cercare di creare codice di facile lettura. Cercare di creare codice con logica semplice e di ri-usare i componenti esistenti perché consente anche di garantire la correttezza.
+La leggibilità del codice è correlata alle basse percentuali di difetti. Cercare di creare codice di facile lettura. Cercare di creare codice con logica semplice e di usare nuovamente i componenti esistenti, in quanto consente anche di garantire la correttezza.
 
-Tutti i dettagli del codice prodotto sono importanti, dal dettaglio più semplice della correttezza allo stile e alla formattazione coerenti. Mantenere lo stile di codifica coerente con ciò che esiste già, anche se non corrisponde alle preferenze. Ciò aumenta la leggibilità della codebase complessiva.
+Tutti i dettagli del codice prodotto sono importanti, dal dettaglio più semplice della correttezza allo stile e alla formattazione coerenti. Mantenere lo stile di codifica coerente con ciò che esiste già, anche se non corrisponde alle proprie preferenze. Ciò aumenta la leggibilità della codebase complessiva.
 
 ### <a name="support-configuring-components-both-in-editor-and-at-run-time"></a>Supporto della configurazione dei componenti sia nell'editor che in fase di esecuzione
 
@@ -111,9 +111,9 @@ Se si omette lo spazio dei nomi per un'interfaccia, una classe o un tipo di dati
 
 ### <a name="adding-new-monobehaviour-scripts"></a>Aggiunta di nuovi script MonoBehaviour
 
-Quando si aggiungono nuovi script MonoBehaviour con una richiesta pull, assicurarsi che [`AddComponentMenu`](https://docs.unity3d.com/ScriptReference/AddComponentMenu.html) l'attributo sia applicato a tutti i file applicabili. In questo modo il componente è facilmente individuabile nell'editor sotto il *pulsante Aggiungi* componente. Il flag di attributo non è necessario se il componente non può essere visualizzato nell'editor, ad esempio una classe astratta.
+Quando si aggiungono nuovi script MonoBehaviour con una richiesta pull, assicurarsi che [`AddComponentMenu`](https://docs.unity3d.com/ScriptReference/AddComponentMenu.html) l'attributo sia applicato a tutti i file applicabili. In questo modo il componente è facilmente individuabile nell'editor sotto il *pulsante Aggiungi* componente. Il flag dell'attributo non è necessario se il componente non può essere visualizzato nell'editor, ad esempio una classe astratta.
 
-Nell'esempio seguente il *pacchetto* deve essere compilato con il percorso del pacchetto del componente. Se si inserisce un *elemento nella cartella MRTK/SDK,* il pacchetto sarà *SDK.*
+Nell'esempio seguente il *pacchetto deve* essere compilato con il percorso del pacchetto del componente. Se si inserisce un *elemento nella cartella MRTK/SDK,* il pacchetto sarà *SDK.*
 
 ```c#
 [AddComponentMenu("Scripts/MRTK/{Package here}/MyNewComponent")]
@@ -184,7 +184,7 @@ Provare inoltre a decorare la classe inspector personalizzata con un [`CanEditMu
 
 ### <a name="adding-new-scriptableobjects"></a>Aggiunta di nuovi oggetti ScriptableObject
 
-Quando si aggiungono nuovi script ScriptableObject, assicurarsi che [`CreateAssetMenu`](https://docs.unity3d.com/ScriptReference/CreateAssetMenu.html) l'attributo sia applicato a tutti i file applicabili. Ciò garantisce che il componente sia facilmente individuabile nell'editor tramite i menu di creazione dell'asset. Il flag di attributo non è necessario se il componente non può essere visualizzato nell'editor, ad esempio una classe astratta.
+Quando si aggiungono nuovi script ScriptableObject, assicurarsi che [`CreateAssetMenu`](https://docs.unity3d.com/ScriptReference/CreateAssetMenu.html) l'attributo sia applicato a tutti i file applicabili. Ciò garantisce che il componente sia facilmente individuabile nell'editor tramite i menu di creazione dell'asset. Il flag dell'attributo non è necessario se il componente non può essere visualizzato nell'editor, ad esempio una classe astratta.
 
 Nell'esempio seguente la *sottocartella* deve essere compilata con la sottocartella MRTK, se applicabile. Se si inserisce un *elemento nella cartella MRTK/Providers,* il pacchetto sarà *Providers*. Se si inserisce un elemento nella *cartella MRTK/Core,* impostarla su "Profiles".
 
@@ -689,16 +689,16 @@ Questo grafico consente di decidere quale usare, a seconda dei casi `#if` d'uso 
 | `ENABLE_WINMD_SUPPORT` | True | True | False |
 | `NETFX_CORE` | False | True | Falso |
 
-### <a name="prefer-datetimeutcnow-over-datetimenow"></a>Preferire DateTime.UtcNow rispetto a DateTime.Now
+### <a name="prefer-datetimeutcnow-over-datetimenow"></a>Preferisci DateTime.UtcNow rispetto a DateTime.Now
 
-DateTime.UtcNow è più veloce di DateTime.Now. Nelle indagini sulle prestazioni precedenti è stato rilevato che l'uso di DateTime.Now aggiunge un overhead significativo soprattutto se usato nel ciclo Update(). [Altri hanno raggiunto lo stesso problema.](https://stackoverflow.com/questions/1561791/optimizing-alternatives-to-datetime-now)
+DateTime.UtcNow è più veloce di DateTime.Now. Nelle analisi delle prestazioni precedenti è stato rilevato che l'uso di DateTime.Now aggiunge un sovraccarico significativo, soprattutto se usato nel ciclo Update(). [Altri hanno raggiunto lo stesso problema.](https://stackoverflow.com/questions/1561791/optimizing-alternatives-to-datetime-now)
 
-Preferire l'uso di DateTime.UtcNow a meno che non siano effettivamente necessari gli orari localizzati (un motivo legittimo potrebbe essere che si vuole visualizzare l'ora corrente nel fuso orario dell'utente). Se si hanno a che fare con orari relativi(ad esempio, il delta tra l'ultimo aggiornamento e ora), è meglio usare DateTime.UtcNow per evitare il sovraccarico delle conversioni del fuso orario.
+Preferire l'uso di DateTime.UtcNow a meno che non siano effettivamente necessarie le ore localizzate (un motivo legittimo potrebbe essere la necessità di visualizzare l'ora corrente nel fuso orario dell'utente). Se si hanno a che fare con orari relativi ,ad esempio il delta tra l'ultimo aggiornamento e il momento corrente, è meglio usare DateTime.UtcNow per evitare il sovraccarico delle conversioni del fuso orario.
 
-## <a name="powershell-coding-conventions"></a>Convenzioni di codifica di PowerShell
+## <a name="powershell-coding-conventions"></a>Convenzioni di scrittura del codice di PowerShell
 
 Un subset della codebase MRTK usa PowerShell per l'infrastruttura della pipeline e vari script e utilità. Il nuovo codice di PowerShell deve seguire lo [stile PoshCode](https://poshcode.gitbooks.io/powershell-practice-and-style/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
- [Convenzioni di codifica C# da MSDN](/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)
+ [Convenzioni di scrittura del codice C# da MSDN](/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)

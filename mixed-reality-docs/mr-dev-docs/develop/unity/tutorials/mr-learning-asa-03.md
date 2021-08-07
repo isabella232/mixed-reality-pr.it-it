@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, sessioni dell'app
 ms.localizationpriority: high
-ms.openlocfilehash: 4a435702e87dc34ed96d5493a67905b8ab372a38
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: 2f421a3c103e1e4679af3b9b94680b759b1e4403c7fa45e37bca20373a79a0cf
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111403352"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115215713"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3. Salvataggio, recupero e condivisione di ancoraggi nello spazio di Azure
 

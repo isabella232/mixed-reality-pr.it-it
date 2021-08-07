@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, TMP,
-ms.openlocfilehash: 1839109043cfad9a20697c5d6526b349fd7ea2e4
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 1969bc9e3054fec509e9f7d536cbfe4b97e43563e26ba5476601e78e65ad24f9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175646"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209058"
 ---
 # <a name="text-prefab"></a>Prefab di testo
 
@@ -45,13 +45,13 @@ Tipi di carattere open source (Assets/MRTK/Core/StandardAssets/Fonts) inclusi in
 
 1. Assegnare Segoe UI tipo di carattere e materiale 3DTextSegoeUI ai componenti di testo nei prefab.
 
-    ![Assegnazione di file e materiali dei tipi di carattere](../images/text-prefab/TextPrefabInstructions04.png)
+    ![Assegnazione di file e materiale dei tipi di carattere](../images/text-prefab/TextPrefabInstructions04.png)
 
 ### <a name="working-with-fonts-in-unity"></a>Uso dei tipi di carattere in Unity
 
 Quando si aggiunge un nuovo textmesh 3D a una scena in Unity, esistono due problemi visivamente evidenti. Uno, il tipo di carattere appare molto grande e due, il tipo di carattere appare molto sfocato. È anche interessante notare che il valore predefinito Dimensioni carattere è impostato su zero in Inspector. La sostituzione di questo valore zero con 13 non mostrerà alcuna differenza nelle dimensioni, perché 13 è effettivamente il valore predefinito.
 
-Unity presuppone che tutti i nuovi elementi aggiunti a una scena siano di dimensioni di 1 unità Unity o una scala di trasformazione al 100%, che si traduce in circa 1 metro nella HoloLens. Nel caso dei tipi di carattere, viene visualizzato il rettangolo di selezione per un textmesh 3D, per impostazione predefinita a circa 1 metro di altezza.
+Unity presuppone che tutti i nuovi elementi aggiunti a una scena siano di dimensioni di 1 unità Unity o una scala di trasformazione al 100%, che si traduce in circa 1 metro nella HoloLens. Nel caso dei tipi di carattere, viene visualizzato il rettangolo di selezione per un oggetto TextMesh 3D, per impostazione predefinita a circa 1 metro di altezza.
 
 ### <a name="font-scale-and-font-sizes"></a>Scala dei caratteri e dimensioni dei caratteri
 

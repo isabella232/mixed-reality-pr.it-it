@@ -1,63 +1,63 @@
 ---
 title: ExampleHub
-description: Panoramica su scene di esempio in MRTK
+description: Panoramica sulle scene di esempio in MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 4f55718e0fe9bebca2ff9e2850057e83a3f4b6bb
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: aedadb32b1520eb52d1fef0a19e06fe4e21e68d407830fc7bc8e11b5621f5090
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104684685"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208695"
 ---
 # <a name="mrtk-examples-hub"></a>MRTK Examples Hub
 
 ![MRTK Examples Hub](../images/examples-hub/MRTK_ExamplesHub.png)
 
-L'hub esempi di MRTK è una scena Unity che semplifica l'esperienza di più scene. Usa il sistema di scena di MRTK per caricare & scaricare le scene.
+MrTK Examples Hub è una scena Unity che semplifica l'esperienza di più scene. Usa il sistema scene di MRTK per caricare & scaricare le scene.
 
-**MRTKExamplesHub. Unity** è la scena del contenitore con componenti condivisi ``MixedRealityToolkit`` , tra cui e ``MixedRealityPlayspace`` . La scena **MRTKExamplesHubMainMenu. Unity** contiene i pulsanti del cubo.
+**MRTKExamplesHub.unity è** la scena del contenitore con componenti condivisi, tra cui ``MixedRealityToolkit`` e ``MixedRealityPlayspace`` . **La scena MRTKExamplesHubMainMenu.unity** include i pulsanti del cubo.
 
 ## <a name="prerequisite"></a>Prerequisito
 
-L'hub esempi di MRTK usa il [servizio di transizione della scena](../extensions/scene-transition-service.md) e gli script correlati. Se si usa MRTK tramite i pacchetti Unity, importare **Microsoft. MixedReality. Toolkit. Unity. Extensions. x** . x.x. x. file unitypackage Tools che fa parte dei [pacchetti di versione](https://github.com/microsoft/MixedRealityToolkit-Unity/releases). Se si usa MRTK tramite il clone del repository, è necessario che nel progetto sia già presente la cartella **MRTK/Extensions** .
+MrTK Examples Hub usa [scene transition service](../extensions/scene-transition-service.md) e script correlati. Se si usa MRTK tramite pacchetti Unity, **importare Microsoft.MixedReality.Toolkit. Unity.Extensions.x.x.x.unitypackage** che fa parte dei pacchetti [di versione](https://github.com/microsoft/MixedRealityToolkit-Unity/releases). Se si usa MRTK tramite il clone del repository, nel progetto dovrebbe essere già presente la cartella **MRTK/Extensions.**
 
-## <a name="mrtkexampleshub-scene-and-the-scene-system"></a>Scena MRTKExamplesHub e sistema di scena
+## <a name="mrtkexampleshub-scene-and-the-scene-system"></a>Scena MRTKExamplesHub e sistema della scena
 
-Aprire **MRTKExamplesHub. Unity** , che si trova in `MRTK/Examples/Experimental/Demos/ExamplesHub/Scenes/` una scena vuota con MixedRealityToolkit, MixedRealityPlayspace e LoadHubOnStartup. Questa scena è configurata per l'uso del sistema di scena di MRTK. Fare clic `MixedRealitySceneSystem` sotto MixedRealityToolkit. Visualizzerà le informazioni del sistema di scena nel pannello Inspector.
+Aprire **MRTKExamplesHub.unity** che si trova in È una scena vuota con `MRTK/Examples/Experimental/Demos/ExamplesHub/Scenes/` MixedRealityToolkit, MixedRealityPlayspace e LoadHubOnStartup. Questa scena è configurata per l'uso del sistema di scena di MRTK. Fare `MixedRealitySceneSystem` clic in MixedRealityToolkit. Verranno visualizzate le informazioni del sistema della scena nel pannello Inspector (Controllo).
 
 <br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_Hierarchy.png" width="300" alt="Example Hub Hierarchy">
 <br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_Inspector1.png" width="450" alt="Inspector 1">
 
-Nella parte inferiore del controllo viene visualizzato l'elenco delle scene definite nel profilo di sistema della scena. È possibile fare clic sui nomi delle scene per caricarli/scaricarli.
+Nella parte inferiore di Inspector (Controllo) viene visualizzato l'elenco delle scene definite in Scene System Profile (Profilo sistema scena). È possibile fare clic sui nomi delle scene per caricarle/scaricarle.
 
 <br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_Inspector2.png" width="550" alt="Inspector 2">
-<br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_SceneSystem3.png" alt="Scene system 3">Esempio di caricamento della scena _MRTKExamplesHub_ facendo clic sul nome della scena nell'elenco.
-<br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_SceneSystem4.png" alt="Scene system 4">Esempio di caricamento della scena _HandInteractionExamples_ .
+<br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_SceneSystem3.png" alt="Scene system 3">Esempio di caricamento _della scena MRTKExamplesHub_ facendo clic sul nome della scena nell'elenco.
+<br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_SceneSystem4.png" alt="Scene system 4">Esempio di caricamento _della scena HandInteractionExamples._
 <br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_SceneSystem5.png" alt="Scene system 5">
 Esempio di caricamento di più scene.
 
 ## <a name="running-the-scene"></a>Esecuzione della scena
 
-La scena funziona sia nella modalità di gioco di Unity che nel dispositivo. Eseguire la scena **MRTKExamplesHub** nell'editor di Unity e usare la simulazione di input di MRTK per interagire con il contenuto della scena. Per compilare e distribuire, è sufficiente compilare la scena **MRTKExamplesHub** con altre scene incluse nell'elenco del sistema di scena. Il controllo consente inoltre di aggiungere facilmente le scene alle impostazioni di compilazione. Nelle impostazioni di compilazione assicurarsi che la scena **MRTKExamplesHub** si trovi nella parte superiore dell'elenco in corrispondenza dell'indice 0.
+La scena funziona sia nella modalità di gioco di Unity che nel dispositivo. Eseguire la **scena MRTKExamplesHub** nell'editor di Unity e usare la simulazione di input di MRTK per interagire con il contenuto della scena. Per compilare e distribuire, è sufficiente compilare la scena **MRTKExamplesHub** con altre scene incluse nell'elenco del sistema di scena. Il controllo semplifica anche l'aggiunta di scene al Impostazioni. Nella finestra di Impostazioni assicurarsi che la scena **MRTKExamplesHub** si trova all'inizio dell'elenco in corrispondenza dell'indice 0.
 
 <img src="../images/examples-hub/MRTK_ExamplesHub_BuildSettings.png" width="450" alt="Build settings">
 
 ## <a name="how-mrtkexampleshub-loads-a-scene"></a>Come MRTKExamplesHub carica una scena
 
-Nella scena **MRTKExamplesHub** è possibile trovare il ``ExamplesHubButton`` prefabbricato.
-Nel prefabbricato è presente un oggetto **coperchio** che contiene ``Interactable`` .
-Utilizzando l'evento interactable ``OnClick()`` ``OnTouch()`` , viene attivata la funzione **LoadContent ()** dello script **LoadContentScene** .
+Nella **scena MRTKExamplesHub** è possibile trovare il ``ExamplesHubButton`` prefab.
+Nel prefab è presente un oggetto **FrontPlate** che contiene ``Interactable`` .
+Usando l'evento ``OnClick()`` e di Interactable, viene attivata la funzione ``OnTouch()`` LoadContent() dello script **LoadContent(** dello script **LoadContent).**
 Nel controllo dello script **LoadContentScene** è possibile definire il nome della scena da caricare.
 
 <br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_SceneSystem6.png" alt="Scene system 6">
 <br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_SceneSystem8.png" width="450" alt="Scene System 8">
 <br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_SceneSystem7.png" width="450" alt="Scene System 7">
 
-Lo script usa la funzione LoadContent () del sistema di scena per caricare la scena.
-Per altri dettagli, vedere la pagina del [sistema della scena](../scene-system/scene-system-getting-started.md) .
+Lo script usa la funzione LoadContent() del sistema della scena per caricare la scena.
+Per altri [dettagli, vedere](../scene-system/scene-system-getting-started.md) la pagina Scene System (Sistema scena).
 
 ```c#
 MixedRealityToolkit.SceneSystem.LoadContent(contentName, loadSceneMode);
@@ -65,17 +65,17 @@ MixedRealityToolkit.SceneSystem.LoadContent(contentName, loadSceneMode);
 
 ## <a name="returning-to-the-main-menu-scene"></a>Tornare alla scena del menu principale
 
-Per tornare alla scena del menu principale (scena MRTKExamplesHubMainMenu), è possibile usare lo stesso metodo di sistema della scena `LoadContent()` . Il **ToggleFeaturesPanelExamplesHub. prefabbricate** fornisce il pulsante "Home" che contiene lo script **LoadContentScene** . Usare questa prefabbricata o fornire un pulsante Home personalizzato in ogni scena per consentire all'utente di tornare alla scena principale. È possibile inserire il **ToggleFeaturesPanelExamplesHub. prefabric** nella scena **MRTKExamplesHub** per renderlo sempre visibile perché **MRTKExamplesHub** è una scena di contenitori condivisi. Assicurarsi di nascondere/disattivare **ToggleFeaturesPanel. prefabbricate** in ogni scena di esempio.
+Per tornare alla scena del menu principale (scena MRTKExamplesHubMainMenu), puoi usare lo stesso metodo Scene `LoadContent()` System. **ToggleFeaturesPanelExamplesHub.prefab** fornisce il pulsante "Home" che contiene lo script **LoadContentScene.** Usare questo prefab o fornire un pulsante Pagina iniziale personalizzato in ogni scena per consentire all'utente di tornare alla scena principale. È possibile inserire **ToggleFeaturesPanelExamplesHub.prefab** nella scena **MRTKExamplesHub** per renderlo sempre visibile perché **MRTKExamplesHub** è una scena contenitore condivisa. Assicurati di nascondere/disattivare **ToggleFeaturesPanel.prefab** in ogni scena di esempio.
 
 <img src="../images/examples-hub/MRTK_ExamplesHubToggleFeaturesPanel.png" alt="Toggle feature Panel">
 
 <img src="../images/examples-hub/MRTK_ExamplesHubHomeButton.png" width="450" alt="Example Hub home button">
 
-## <a name="adding-additional-buttons"></a>Aggiunta di pulsanti aggiuntivi
+## <a name="adding-additional-buttons"></a>Aggiunta di altri pulsanti
 
-Nell'oggetto **CubeCollection** duplicare (o aggiungere) i prefabbricati _ExampleHubButton_ e fare clic su **Aggiorna raccolta** in `GridObjectCollection` .
+**Nell'oggetto CubeCollection** duplicare (o aggiungere) i prefab _ExampleHubButton_ e fare clic su **Update Collection (Aggiorna** raccolta) in `GridObjectCollection` .
 Il layout del cilindro verrà aggiornato in base al nuovo numero totale di pulsanti.
-Per ulteriori informazioni, fare riferimento alla pagina [raccolta oggetti](../ux-building-blocks/object-collection.md) .
+Per altri [dettagli, vedere](../ux-building-blocks/object-collection.md) la pagina Raccolta di oggetti.
 
 <br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_SceneSystem9.png" alt="Scene System 9">
 <br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_SceneSystem10.png" alt="Scene System 10">

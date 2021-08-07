@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, Near Interaction,
-ms.openlocfilehash: 241425f0c158d684cad6dad8c88c8d692cbec42f
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 174623ebf340e800848c15e22dc2299aaf997b484a1329d67c28540acd79515a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176869"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212597"
 ---
 # <a name="how-to-add-near-interactivity"></a>Come aggiungere l'interattività vicina
 
@@ -202,7 +202,7 @@ public static void MakeNearDraggable(GameObject target)
 * [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler)
 * [`IMixedRealityPointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Cenni preliminari sull'input](overview.md)
 * [Puntatori](pointers.md)

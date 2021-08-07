@@ -5,16 +5,16 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, InputActions,
-ms.openlocfilehash: cf6ce2af304ee1cd706d0111d66a97018113fb09
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: ffa8f201097c8d85b1ea19613b608487529412f3686ddf077f1acc1c34e93c1f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176808"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211249"
 ---
 # <a name="input-actions"></a>Azioni di input
 
-[**Le azioni di**](input-actions.md) input sono astrazioni su input non elaborati che consentono di isolare la logica dell'applicazione dalle origini di input specifiche che producono un input. Può essere utile, ad esempio, definire un'azione *Select* e mapparla al pulsante sinistro del mouse, un pulsante in un game pad e un trigger in un controller DOF 6. È quindi possibile fare in modo che la logica dell'applicazione sia in ascolto degli eventi Select *input* action invece di dover conoscere tutti i diversi input che possono generarlo.
+[**Le azioni di**](input-actions.md) input sono astrazioni su input non elaborati che consentono di isolare la logica dell'applicazione dalle origini di input specifiche che producono un input. Può essere utile, ad esempio, definire un'azione *Select* e mapparla al pulsante sinistro del mouse, un pulsante in un game pad e un trigger in un controller DOF 6. È quindi possibile fare in modo che la logica dell'applicazione sia in ascolto degli eventi Di selezione dell'azione di *input* anziché essere a conoscenza di tutti i diversi input che possono generarli.
 
 ## <a name="creating-an-input-action"></a>Creazione di un'azione di input
 
@@ -29,13 +29,13 @@ Vincolo dell'asse | Descrizione
 Digitale | Input on/off come un pulsante binario in un game pad o mouse.
 Asse singolo | Input analogo a un asse singolo come un trigger analogico in un game pad.
 Asse doppio | Input analogo a doppio asse, ad esempio una levetta.
-Sei Dof | Posizione 3D con traslazione e rotazione come quella prodotta da 6 controller DOF.
+Six Dof | Posizione 3D con traslazione e rotazione come quella prodotta da 6 controller DOF.
 
 È possibile trovare l'elenco completo in [`AxisType`](xref:Microsoft.MixedReality.Toolkit.Utilities.AxisType) .
 
 ## <a name="mapping-input-to-actions"></a>Mapping dell'input alle azioni
 
-Il modo in cui si esegue il mapping di un input a un'azione e dipende dal tipo di origine di input:
+Il modo in cui si esegue il mapping di un input a un'azione e dipende dal tipo dell'origine di input:
 
 ### <a name="controller-input"></a>Input del controller
 

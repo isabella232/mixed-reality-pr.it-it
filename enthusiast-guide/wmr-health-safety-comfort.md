@@ -1,62 +1,62 @@
 ---
-title: Integrità e sicurezza dell'auricolare di realtà mista di Windows
-description: Informazioni su come rimanere integri, sicuri e comodi per gli utenti quando si usano app per la realtà mista di Windows.
+title: Windows Mixed Reality e sicurezza dei visori VR
+description: Informazioni su come mantenere integri, sicuri e a proprio agio se stessi e gli utenti quando si usano Windows Mixed Reality app.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
-keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, feedback, Hub feedback, bug
+keywords: Windows Mixed Reality, Realtà mista, Realtà virtuale, REALTÀ VIRTUALE, MR, Feedback, Hub di Feedback, bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 32b29d11585bae4e803e516ae3733e1165f45587
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 1c28a049c966cf50fd711da3e71cceff65cbbe8558769fc643f3e2065539caf4
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009001"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187811"
 ---
-# <a name="windows-mixed-reality-immersive-headset-health-safety-and-comfort"></a>Integrità mista di Windows, sicurezza e comodità per la realtà mista di Windows
+# <a name="windows-mixed-reality-immersive-headset-health-safety-and-comfort"></a>Windows Mixed Reality visore VR immersive, sicurezza e comfort
 
-## <a name="to-view-3d-content-more-comfortably"></a>Per visualizzare più facilmente il contenuto 3D
+## <a name="to-view-3d-content-more-comfortably"></a>Per visualizzare il contenuto 3D in modo più comoda
 
-Per visualizzare il contenuto stereoscopico 3D, è necessaria una visione binoculare efficace. Se si dispone di un disordine della visione binoculare, ad esempio strabismo (occhio errato, incrociato o vagante), la visualizzazione del contenuto 3D non sarà agevole. Una piccola percentuale di persone ha un disturbo della visione binoculare preesistente che potrebbero non essere consapevoli finché non provano a visualizzare il contenuto 3D. Si consiglia di consultare un oculista se non si è in grado di visualizzare il contenuto 3D in modo chiaro e comodo.
+Per visualizzare il contenuto 3D stereoscopico, è necessaria una buona visione binocolare. Se si ha una visione binografica, ad esempio strabismus (disallineamento oculare, occhio incrociato o esplorato), la visualizzazione del contenuto 3D non sarà comoda. Una piccola percentuale di persone ha una visione binocolare preesistenti che potrebbe non essere a conoscenza fino a quando non provano a visualizzare il contenuto 3D. È consigliabile consultare un oculare se non si è in grado di visualizzare contenuto 3D in modo chiaro e accattivante.
 
 ## <a name="warning"></a>WARNING
 
-Seguire tutte le istruzioni per l'installazione, le linee guida per gli utenti e le istruzioni fornite dai produttori di auricolari e del controller di movimento (ogni **dispositivo**) di Windows e dell'editore di qualsiasi applicazione software, contenuto 2D o 3D o esperienza (**contenuto**).
+Seguire tutte le configurazioni, le linee guida per l'utente e le istruzioni fornite dai produttori di visori VR e controller del movimento Windows Mixed Reality (ogni **dispositivo)** e l'editore di qualsiasi applicazione software o contenuto o esperienza 2D o 3D (**Contenuto**).
 
-La mancata configurazione, l'utilizzo e la cura corretta del dispositivo possono aumentare il rischio di gravi lesioni, morte, danni alle proprietà o danni al prodotto o agli accessori correlati.
+La mancata configurazione, l'uso e la corretta assistenza per il dispositivo possono aumentare il rischio di gravi ergomenti, decessi, danni alle proprietà o al prodotto o agli accessori correlati.
 
-**Se si consente a chiunque altro di usare il dispositivo**, assicurarsi di comprendere le informazioni sull'integrità e sulla sicurezza in questa guida e su altre istruzioni di sicurezza o utilizzo fornite dal dispositivo e dai provider di contenuti. Ogni persona che usa il dispositivo deve completare le procedure di impostazione/orientamento per acquisire familiarità con il sistema.
+**Se si consente a** chiunque altro di usare il dispositivo, assicurarsi che comprenda le informazioni sull'integrità e la sicurezza in questa guida e qualsiasi altra istruzione di sicurezza o utilizzo fornita dai provider di dispositivi e contenuti. Ogni persona che usa il dispositivo deve completare le procedure di configurazione/orientamento per acquisire familiarità con il sistema.
 
-## <a name="use-in-safe-surroundings"></a>USA in ambienti sicuri
+## <a name="use-in-safe-surroundings"></a>Uso in ambienti sicuri
 
-L'uso del dispositivo può distrarre l'utente e non visualizzare più l'ambiente circostante. Gli auricolari per la realtà mista di Windows possono impedire completamente la visualizzazione e il contenuto può essere visualizzato a distanza ma blocca la visualizzazione degli oggetti fisici adiacenti.
+L'uso del dispositivo può distrarre l'utente e non vedere l'ambiente circostante. Windows Mixed Reality visori VR immersive possono ostruire completamente la visualizzazione e il contenuto potrebbe apparire a una distanza, bloccando comunque la visualizzazione degli oggetti fisici nelle vicinanze.
 
-Usare solo in un luogo sicuro adatto alle proprie attività. Evitare rischi per i viaggi, scale, massimali Bassi, elementi fragili o preziosi che potrebbero essere danneggiati e così via, nonché situazioni in cui le persone o le cose potrebbero affrontare in modo imprevisto. Non usare il dispositivo quando è necessario disporre di una visualizzazione dell'area di lavoro e di attenzione per la sicurezza.
+Usare solo in un luogo sicuro appropriato per le attività. Evitare rischi per le gite, i viaggi, i bassi livelli, gli elementi di valore o di valore che potrebbero essere danneggiati e così via e le situazioni in cui persone o cose potrebbero approcciarsi in modo imprevisto. Non usare il dispositivo quando è necessaria una vista dell'ambiente circostante e l'attenzione necessaria per la sicurezza.
 
-Seguire tutte le indicazioni di configurazione per la realtà mista di Windows, tra cui l'uso dell'auricolare per creare un limite. La configurazione del PC e alcune applicazioni o esperienze potrebbero causare ritardi o errori nella visualizzazione dei limiti. Usare sempre cautela e tenere presente l'ambiente, anche se è stato creato un limite.
+Seguire tutte le raccomandazioni di configurazione per Windows Mixed Reality, incluso l'uso del visore VR per creare un limite. La configurazione del PC e alcune applicazioni o esperienze possono causare ritardi o errori nella visualizzazione dei limiti. Prestare sempre attenzione e prestare attenzione all'ambiente circostante, anche se è stato creato un limite.
 
-## <a name="using-windows-mixed-reality-comfortably"></a>Uso della realtà mista di Windows in modo confortevole
+## <a name="using-windows-mixed-reality-comfortably"></a>Uso Windows Mixed Reality funzionalità
 
-È **possibile che alcuni utenti riscontrino disagio** , ad esempio nausea, cinetosi, vertigini, disorientamento, cefalea, affaticamento o affaticamento degli occhi quando si usa la realtà mista di Windows, in particolare quando si adattano a usarla. La malattia del movimento e i sintomi correlati possono verificarsi in caso di mancata corrispondenza tra gli elementi visualizzati e l'aspetto del corpo. Se si è soggetti a una malattia di movimento, si ottengono emicranie, si verifica un disturbo interno dell'orecchio o altre condizioni di integrità, è possibile che si verifichi un rischio maggiore di disagio.
+ Alcune persone possono sperimentare disagi, ad esempio affaticamento, mal di movimento, vertigini, disorientamento, difficoltà, affaticamento o affaticamento oculare quando usano Windows Mixed Reality, in particolare quando si adattano all'uso. La malattia del movimento e i sintomi correlati possono verificarsi quando c'è una mancata corrispondenza tra ciò che viene visualizzato e ciò che il corpo percepirà. Se si è inclinati a una malattia del movimento, si ottengono problemi di emicrania, si ha un disturbo dell'udito interno o altre condizioni di salute, si potrebbe avere un rischio maggiore di disagi.
 
-**Determinate situazioni possono aumentare il rischio di disagio.** Ad esempio:
+**Alcune situazioni possono aumentare il rischio di disagi.** Ad esempio:
 
-* Essere un nuovo utente-i sintomi tendono a diminuire man mano che si acquisisce familiarità con la realtà mista di Windows.
-* I dispositivi possono funzionare meglio per gli utenti la cui interpupillare distanza (dpi) rientra in un determinato intervallo. Il dpi è la distanza tra il centro degli alunni dei due occhi. Gli utenti con un dpi al di fuori dell'intervallo ottimale per il dispositivo potrebbero riscontrare fastidio.
-* Alcuni tipi di contenuto, in particolare giochi o filmati, che ti permettono di passare allo spazio o a esaminare le informazioni precedenti oppure le interazioni che comportano il rilevamento degli oggetti in corso.
+* Essendo un nuovo utente, i sintomi tendono a diminuire man appena si è abituati a Windows Mixed Reality.
+* I dispositivi possono funzionare meglio per gli utenti la cui distanza interpuperire (IPD) rientra in un determinato intervallo. IPD è la distanza tra il centro della avariata dei due occhi. Gli utenti con un IPD non compreso nell'intervallo ottimale per il dispositivo possono sperimentare disagi.
+* Alcuni tipi di contenuto, in particolare i giochi o i film, che ti fanno provare a spostarsi nello spazio o a guardare verso il basso dall'alto o le interazioni che comportano il rilevamento dello spostamento di oggetti.
 * Uso del dispositivo per periodi prolungati senza interruzioni.
 
-**Mantieni brevi le prime sessioni**. Avvia lentamente. Per la maggior parte delle persone il disagio dovrebbe diminuire nelle prime sessioni.
+**Tenere brevi le prime sessioni.** Avvio lento. Per la maggior parte delle persone, la maggior parte delle persone dovrebbe diminuire nelle prime sessioni.
 
-**Interrompersi periodicamente** e arrestare e riposare se si riscontrano disagi. La tempistica e la lunghezza delle interruzioni possono dipendere dal singolo utente e dal modo in cui usano il dispositivo.
+**Se si verificano problemi,** è possibile interrompere le pause periodicamente e fermarsi e fermarsi. La durata e la durata delle interruzioni possono dipendere dal singolo utente e dal modo in cui usa il dispositivo.
 
-**Se si verificano** problemi, interrompere l'uso del dispositivo e REST fino a quando non si ha la migliore. Rimanere ancora in un ambiente ben illuminato può contribuire a velocizzare il ripristino dal disorientamento. Se si ritiene disorientati, evitare le attività che richiedono bilanciamento, coordinamento o altre funzionalità fino a quando non si esegue il ripristino. Prendere nota del tipo di contenuto visualizzato e di altri aspetti della situazione in cui si è verificato il disagio, in modo da poter modificare o semplificare la situazione in un secondo momento. Le persone differiscono nel tempo necessario per adattarsi. Prendere in considerazione l'utilizzo di interruzioni più frequenti o più lunghe.
+**Se si verificano disagi,** interrompere l'uso del dispositivo e dei dati in pausa fino a quando non si è più al meglio. Se ci si trova ancora in un ambiente ben acceso, è possibile accelerare il ripristino dalla disorientamento. Se si è disorientati, evitare attività che richiedono bilanciamento, coordinamento o altre funzionalità fino al ripristino. Prendere nota del tipo di contenuto visualizzato e di altri aspetti della situazione in cui si è verificato il disagi, in modo da potersi adattare o semplificare la situazione la volta successiva. Le persone si differenziano per il tempo necessario per l'adattamento. Prendere in considerazione interruzioni più frequenti o più lunghe.
 
-**Per semplificare la gestione dell'ambiente**, se disponibile e configurato, è possibile usare le funzionalità del dispositivo per configurare i limiti per l'uso dei dispositivi, in modo da evitare ostacoli.
+**Per facilitare la gestione** dell'ambiente circostante, se disponibile e configurato, è possibile usare le funzionalità del dispositivo per configurare i limiti per l'uso del dispositivo per evitare ostacoli.
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Contattare la community](https://answers.microsoft.com)
 * [Contattaci per assistenza](https://support.microsoft.com/contactus/)

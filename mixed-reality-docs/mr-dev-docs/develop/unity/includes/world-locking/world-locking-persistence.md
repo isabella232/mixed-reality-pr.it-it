@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: f937b705f10cc4a287600349283ecaed4ae44666
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: ad45cf8df4e51d17533c8e57b9ffe67738676d2af5398dd320cc86be469d5803
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112908113"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208851"
 ---
 # <a name="world-locking-tools-recommended"></a>[Strumenti di blocco del mondo (scelta consigliata)](#tab/wlt)
 
@@ -12,7 +12,7 @@ Per impostazione predefinita, World Locking Tools ripristina il sistema di coord
 
 ![Componente del contesto di blocco del mondo in Unity Inspector](../../images/world-locking-tools-img-02.png)
 
-Se l'applicazione richiede un controllo  più **fine,** il salvataggio automatico e il caricamento automatico possono essere disabilitati nel controllo e la persistenza può essere gestita da uno script come descritto nella sezione relativa alla persistenza della [documentazione](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html).
+Se l'applicazione richiede un controllo  più **fine,** il salvataggio automatico e il caricamento automatico possono essere disabilitati nel controllo e la persistenza può essere gestita da uno script come descritto nella sezione relativa alla persistenza della [documentazione](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html)di .
 
 # <a name="aranchormanager"></a>[ARAnchorManager](#tab/anchorstore)
 
@@ -29,7 +29,7 @@ Per **Unity 2020 e OpenXR:**
 using Microsoft.MixedReality.ARSubsystems.XRAnchorStore
 ```
 
-o **Unity 2019/2020 + Plug-in Windows XR:** 
+o **Unity 2019/2020 + Windows plug-in XR:** 
 
 ```cs 
 using UnityEngine.XR.WindowsMR.XRAnchorStore
@@ -60,7 +60,7 @@ using UnityEngine.XR.WindowsMR.XRAnchorStore
 }
 ```
 
-### <a name="getting-an-anchor-store-reference"></a>Recupero di un riferimento a un archivio di ancoraggi 
+### <a name="getting-an-anchor-store-reference"></a>Recupero di un riferimento all'archivio di ancoraggi 
 
 Per caricare XRAnchorStore con **Unity 2020 e OpenXR,** usare il metodo di estensione nel sottosistema XRAnchorSubsystem di un ARAnchorManager:
 
@@ -68,7 +68,7 @@ Per caricare XRAnchorStore con **Unity 2020 e OpenXR,** usare il metodo di esten
 public static Task<XRAnchorStore> LoadAnchorStoreAsync(this XRAnchorSubsystem anchorSubsystem)
 ```
 
-Per caricare XRAnchorStore con **Unity 2019/2020 e il plug-in Windows XR,** usare il metodo di estensione in XRReferencePointSubsystem (Unity 2019) o XRAnchorSubsystem (Unity 2020), il sottosistema di un ARReferencePointManager/ARAnchorManager:
+Per caricare XRAnchorStore con **Unity 2019/2020 e il plug-in Windows XR,** usare il metodo di estensione nel sottosistema XRReferencePointSubsystem (Unity 2019) o XRAnchorSubsystem (Unity 2020), il sottosistema di un ARReferencePointManager/ARAnchorManager:
 
 ```cs
 // Unity 2019 + Windows XR Plugin
@@ -80,14 +80,14 @@ public static Task<XRAnchorStore> TryGetAnchorStoreAsync(this XRAnchorSubsystem 
 
 ### <a name="loading-an-anchor-store"></a>Caricamento di un archivio di ancoraggio
 
-Per caricare un archivio di ancoraggio in **Unity 2020 e OpenXR,** accedervi dal sottosistema di arAnchorManager come indicato di seguito:
+Per caricare un archivio di ancoraggio in **Unity 2020 e OpenXR,** accedervi dal sottosistema di aranchorManager come indicato di seguito:
 
 ``` cs
 ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
 XRAnchorStore anchorStore = await arAnchorManager.subsystem.LoadAnchorStoreAsync();
 ```
 
-o con **Unity 2019/2020 e il plug-in Windows XR:**
+o con **Unity 2019/2020 e il Windows XR:**
 
 ``` cs
 // Unity 2019
@@ -99,7 +99,7 @@ ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
 XRAnchorStore anchorStore = await arAnchorManager.subsystem.TryGetAnchorStoreAsync();
 ```
 
-Per un esempio completo di ancoraggi persistenti/non persistenti, vedi lo script Anchors -> Anchors Sample GameObject e AnchorsSample.cs nella scena di esempio del plug-in [OpenXR](../../xr-project-setup.md#unity-sample-projects-for-openxr-and-hololens-2)di Realtà mista:
+Per un esempio completo di ancoraggi persistenti/non persistenti, vedi lo script Anchors -> Anchors Sample GameObject and AnchorsSample.cs (GameObject e AnchorsSample.cs di esempio di AnchorsSample.cs) nella scena di esempio del plug-in OpenXR di Realtà [mista:](../../xr-project-setup.md#unity-sample-projects-for-openxr-and-hololens-2)
 
 ![Screenshot del pannello della gerarchia aperto nell'editor di Unity con l'esempio di ancoraggi evidenziato](../../images/openxr-features-img-04.png)
 
@@ -107,7 +107,7 @@ Per un esempio completo di ancoraggi persistenti/non persistenti, vedi lo script
 
 # <a name="worldanchor"></a>[WorldAnchor](#tab/worldanchor)
 
-**WorldAnchorStore è** la chiave per creare esperienze olografiche in cui gli ologrammi rimangono in posizioni reali specifiche tra le istanze dell'applicazione. Gli utenti possono quindi aggiungere singoli ologrammi dove vogliono e trovarli in un secondo momento nello stesso punto in molti usi dell'app.
+**WorldAnchorStore è** la chiave per creare esperienze olografiche in cui gli ologrammi rimangono in posizioni specifiche del mondo reale tra le istanze dell'applicazione. Gli utenti possono quindi aggiungere singoli ologrammi dove vogliono e trovarli in un secondo momento nello stesso punto in molti usi dell'app.
 
 **Spazio dei nomi:** *UnityEngine.XR.WSA.Persistence*<br>
 **Classe:** *WorldAnchorStore*
@@ -177,11 +177,11 @@ private void LoadGame()
 }
 ```
 
-È anche possibile usare lo Store. Delete() per rimuovere un ancoraggio salvato e salvato in precedenza. Clear() per rimuovere tutti i dati salvati in precedenza.
+È anche possibile usare store. Delete() per rimuovere un ancoraggio salvato e salvato in precedenza. Clear() per rimuovere tutti i dati salvati in precedenza.
 
 ### <a name="enumerating-existing-anchors"></a>Enumerazione degli ancoraggi esistenti
 
-Per individuare gli ancoraggi archiviati in precedenza, chiamare GetAllIds.
+Per individuare ancoraggi archiviati in precedenza, chiamare GetAllIds.
 
 ```cs
 string[] ids = this.store.GetAllIds();
@@ -193,7 +193,7 @@ for (int index = 0; index < ids.Length; index++)
 
 ## <a name="persisting-holograms-for-multiple-devices"></a>Persistenza degli ologrammi per più dispositivi
 
-È possibile usare Ancoraggi nello stato di <a href="/azure/spatial-anchors/overview" target="_blank">Azure</a> per creare un ancoraggio cloud durevole da un WorldAnchor locale, che l'app può quindi individuare in più dispositivi HoloLens, iOS e Android, anche se questi dispositivi non sono presenti contemporaneamente.  Poiché gli ancoraggi nel cloud sono persistenti, più dispositivi nel tempo possono visualizzare il rendering del contenuto relativo a tale ancoraggio nella stessa posizione fisica.
+È possibile usare Ancoraggi nello stato di <a href="/azure/spatial-anchors/overview" target="_blank">Azure</a> per creare un ancoraggio cloud durevole da un WorldAnchor locale, che l'app può quindi individuare in più dispositivi HoloLens, iOS e Android, anche se tali dispositivi non sono presenti contemporaneamente.  Poiché gli ancoraggi nel cloud sono persistenti, più dispositivi nel tempo possono visualizzare il rendering del contenuto relativo a tale ancoraggio nella stessa posizione fisica.
 
 Per iniziare a creare esperienze condivise in Unity, provare le guide introduttive di Unity per Ancoraggi nello spazio di Azure di 5 <a href="/azure/spatial-anchors/unity-overview" target="_blank">minuti.</a>
 

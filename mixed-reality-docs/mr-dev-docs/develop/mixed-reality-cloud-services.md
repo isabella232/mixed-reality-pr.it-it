@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realtà mista, sviluppare, sviluppo, HoloLens, servizi cloud, Azure, rendering remoto, ancoraggi nello spazio, servizi cognitivi, cognizione, unity, machine learning, traduzione vocale, visione artificiale, Microsoft Graph
-ms.openlocfilehash: b9e89174f3f4b0aca268d81513ea7e3537f79629
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: ac4ce3d1bef426682450da69e9c8ffcd9e317e2a7853365e1af082a1913e1ecc
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550141"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189025"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Panoramica dei servizi cloud di realtà mista di Azure
 
@@ -27,7 +27,7 @@ I servizi cloud di Realtà mista come **Rendering remoto di Azure** e **Ancoragg
 
 ### <a name="azure-remote-rendering"></a>Rendering remoto di Azure
 
-Il [rendering remoto di Azure](/azure/remote-rendering/), o arr, è un servizio che consente di eseguire il rendering di modelli 3D estremamente complessi in tempo reale e di inviarli a un dispositivo. ARR è ora disponibile a livello generale e può essere aggiunto a progetti di Unity o C++ nativi destinati a HoloLens 2 o a PC desktop Windows.
+[Rendering remoto di Azure](/azure/remote-rendering/), o ARR, è un servizio che consente di eseguire il rendering di modelli 3D estremamente complessi in tempo reale e di trasmettere i modelli a un dispositivo. ARR è ora disponibile a livello generale e può essere aggiunto ai progetti Unity o C++ nativi per HoloLens 2 o Windows PC desktop.
 
 <br>
 
@@ -47,9 +47,9 @@ Come ulteriore vantaggio, ARR non limita il tipo di interfaccia utente che è po
 
 ### <a name="azure-spatial-anchors"></a>Ancoraggi nello spazio di Azure
 
-[Azure Spatial Anchors](/azure/spatial-anchors/), o ASA, è un servizio multipiattaforma che consente di compilare applicazioni di realtà miste che rilevano lo spazio. Con gli ancoraggi nello spazio di Azure è possibile eseguire il mapping, mantenere in modo permanente e condividere contenuto olografico tra più dispositivi in scala reale. AOA è ora disponibile in anteprima pubblica per provare le tue app.
+[Ancoraggi nello stato di Azure,](/azure/spatial-anchors/)o ASA, è un servizio multipiattaforma che consente di creare applicazioni di realtà mista con informazioni spaziali. Con gli ancoraggi nello spazio di Azure è possibile eseguire il mapping, mantenere in modo permanente e condividere contenuto olografico tra più dispositivi in scala reale. AOA è ora disponibile in anteprima pubblica e consente di provare le app.
 
-Gli ancoraggi spaziali di Azure sono una soluzione personalizzata per i casi d'uso comuni in realtà mista, tra cui:
+Ancoraggi nello stato di Azure è una soluzione personalizzata in modo univoco per i casi d'uso comuni in Realtà mista, tra cui:
 * **Way-finding**: due o più ancoraggi nello spazio possono essere collegati per creare un elenco di attività o punti di interesse con cui un utente può interagire.
 * **Esperienze multiutente**: gli utenti possono effettuare spostamenti avanti e indietro interagendo con oggetti nello stesso spazio virtuale.
 * **Contenuto virtuale permanente nel mondo reale**: gli utenti possono posizionare nel mondo reale oggetti virtuali visualizzabili da altri dispositivi supportati.
@@ -66,16 +66,16 @@ Il servizio può essere sviluppato in numerosi ambienti e distribuito a una vast
 * Xamarin per iOS
 * Xamarin per Android
 
-### <a name="azure-object-anchors"></a>Ancoraggi degli oggetti di Azure
+### <a name="azure-object-anchors"></a>Ancoraggi di oggetti di Azure
 
-Gli [ancoraggi degli oggetti di Azure](/azure/object-anchors/), o AOA, sono un servizio di realtà mista che consente di creare esperienze immersive avanzate allineando automaticamente il contenuto 3D a oggetti fisici. Ottenere informazioni contestuali sugli oggetti senza la necessità di marcatori o di allineamento manuale. Consente di salvare un lavoro sensibile, ridurre gli errori di allineamento e migliorare l'esperienza utente compilando applicazioni di realtà miste con ancoraggi di oggetti.
+[Ancoraggi di oggetti di Azure](/azure/object-anchors/), o AOA, è un servizio di realtà mista che consente di creare esperienze immersive e coinvolgenti allineando automaticamente il contenuto 3D agli oggetti fisici. Acquisire una comprensione contestuale degli oggetti senza la necessità di marcatori o l'allineamento manuale. È possibile risparmiare molto lavoro sul tocco, ridurre gli errori di allineamento e migliorare le esperienze utente creando applicazioni di realtà mista con Ancoraggi oggetti.
 
-Gli ancoraggi degli oggetti di Azure sono appositamente personalizzati per i casi d'uso comuni di realtà mista, tra cui:
-* **Formazione**: creare esperienze di formazione in realtà mista per i dipendenti, senza la necessità di inserire marcatori o di dedicare tempo a modificare manualmente l'allineamento degli ologrammi.
-* **Linee guida** per le attività: i dipendenti con una serie di attività possono essere molto semplificate quando si usa la realtà mista.
-* **Ricerca di asset**: se si dispone già di un modello 3D di un oggetto nello spazio fisico, gli ancoraggi degli oggetti di Azure consentono di individuare e tenere traccia delle istanze dell'oggetto nell'ambiente fisico.
+Ancoraggi di oggetti di Azure sono particolarmente adattati ai casi d'uso comuni della realtà mista, tra cui:
+* **Training:** crea esperienze di training di realtà mista per i tuoi dipendenti, senza la necessità di posizionare marcatori o dedicare tempo a regolare manualmente l'allineamento degli ologrammi.
+* **Linee guida per le** attività: l'esecuzione di un set di attività da parte dei dipendenti può essere notevolmente semplificata quando si usa la realtà mista.
+* Ricerca **di** asset: se si dispone già di un modello 3D di un oggetto nello spazio fisico, Ancoraggi di oggetti di Azure può consentire di individuare e tenere traccia delle istanze di tale oggetto nell'ambiente fisico.
 
-![Sovrapposizione virtuale di ancoraggi di oggetti di Azure in un motore auto aperto](images/aoa-img-01.png)
+![Sovrimpressione virtuale degli ancoraggi di oggetti di Azure su un motore di un'auto aperta](images/aoa-img-01.png)
 
 ## <a name="cognitive-services"></a>Servizi cognitivi
 

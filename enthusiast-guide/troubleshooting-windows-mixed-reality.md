@@ -1,15 +1,15 @@
 ---
-title: Risoluzione dei problemi Windows Mixed Reality
+title: Risoluzione dei Windows Mixed Reality
 description: Tenersi aggiornati sulla risoluzione dei Windows Mixed Reality che va oltre la documentazione di supporto standard per gli utenti.
 ms.topic: article
 ms.author: rajhawar
 keywords: Windows Mixed Reality, Realtà mista, Realtà virtuale, REALTÀ VIRTUALE, MR, Risoluzione dei problemi, Errori, Guida, Supporto
-ms.openlocfilehash: 24120e9c1bb34b8b32c00e2b677f530c4ba563ab
-ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
+ms.openlocfilehash: 2610ab12e19bd7011cba171b5acdaeed6a7834c358e9c4bae3ded301aa452353
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110345084"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212459"
 ---
 # <a name="troubleshooting-in-windows-mixed-reality"></a>Risoluzione dei problemi in Windows Mixed Reality
 
@@ -25,7 +25,7 @@ Qui sono disponibili le opzioni di supporto per le opzioni seguenti, in modo da 
 - [Ottenere le opzioni della Guida della community](#community-help-options)
 - [Ottenere le opzioni di self-help](#troubleshooting-topics)
 
-## <a name="community-help-options"></a>Opzioni della Guida della community
+## <a name="community-help-options"></a>Community della Guida
 
 Per le risposte alle domande degli sviluppatori dell'ecosistema di sviluppatori della community, porre una domanda Stack Overflow o Reddit.
 
@@ -49,7 +49,7 @@ Quando si verificano problemi con l'hardware immersive, è importante diagnostic
 
 ### <a name="installation-and-setup-issues"></a>Problemi di installazione e installazione
 
-Per problemi relativi all'installazione, all'Windows Mixed Reality, agli errori di configurazione, ai requisiti minimi del PC o alle autorizzazioni di amministratore, vedere queste due domande frequenti:
+Per problemi con l'installazione, l'Windows Mixed Reality, gli errori di installazione, i requisiti minimi del PC o le autorizzazioni di amministratore, vedere queste due domande frequenti:
 
 - [Errori di installazione](installation_errors.md)
 - [Problemi correlati all'installazione](wmr-setup-faq.yml)
@@ -64,7 +64,7 @@ Per problemi con il dispositivo VR fisico, le connessioni dei cavi, gli errori d
 
 ### <a name="core-experience-issues"></a>Problemi di esperienza di base
 
-Se si verificano problemi con la creazione di limiti, l'udito o il rilevamento di suoni non uditi, audio Bluetooth o visori VR, vedere le domande frequenti seguenti:
+Se si verificano problemi con la creazione di limiti, l'ascolto o l'audio non udito, l'audio Bluetooth o il rilevamento di visori VR, vedere le domande frequenti seguenti:
 
 - [Guida ai limiti](boundary-questions.md)
 - [Suppprt per i problemi più comuni relativi a voce e audio](speech-and-audio.md)
@@ -72,7 +72,7 @@ Se si verificano problemi con la creazione di limiti, l'udito o il rilevamento d
 
 ### <a name="vr-experience-issues"></a>Problemi relativi all'esperienza di realtà virtuale
 
-Se si verificano problemi con i giochi Dirvr, l'installazione della modalità sviluppatore Di Windows o la visualizzazione di contenuto WebVR in un browser, gli articoli seguenti sono i seguenti:
+Se si verificano problemi con i giochi di SteamVR, l'installazione di Windows Developer Mode o la visualizzazione di contenuto WebVR in un browser, gli articoli seguenti sono i seguenti:
 
 - [Supporto con SteamVR](steamvr-questions.md)
 - [Supporto con WebVR](webvr-questions.md)

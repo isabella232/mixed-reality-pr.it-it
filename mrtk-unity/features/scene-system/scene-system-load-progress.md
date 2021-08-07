@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 51b5d4d00d65491a0476068bbdc256ffce67412b
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 1d2382e11092b20aca5bf8480ade521ffb94a70a325540e70487d7f581e8cf15
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144406"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115186617"
 ---
 # <a name="monitoring-content-loading"></a>Monitoraggio del caricamento del contenuto
 
@@ -91,7 +91,7 @@ public class ProgressDialog : MonoBehaviour
 
 Scene System (Sistema scena) fornisce diverse azioni per sapere quando le scene vengono caricate o scaricate. Ogni azione inoltra il nome della scena interessata.
 
-Se un'operazione di caricamento o scaricamento include più scene, le azioni pertinenti verranno richiamate una volta per ogni scena interessata. Vengono inoltre richiamati tutti contemporaneamente quando l'operazione di caricamento o scaricamento è *stata completata completamente.* Per questo motivo è consigliabile usare le azioni *OnWillUnload* per rilevare il contenuto che verrà eliminato in modo eliminato, anziché usare le azioni *OnUnloaded* per rilevare il contenuto eliminato dopo il fatto. 
+Se un'operazione di caricamento o scaricamento include più scene, le azioni pertinenti verranno richiamate una volta per ogni scena interessata. Vengono inoltre richiamati tutti contemporaneamente quando l'operazione di caricamento o scaricamento è *stata completata completamente.* Per questo motivo è consigliabile usare le azioni *OnWillUnload* per rilevare il contenuto che verrà eliminato, anziché usare le azioni *OnUnloaded* per rilevare il contenuto eliminato dopo il fatto. 
 
 Sul lato opposto, poiché le azioni *OnLoaded* vengono richiamate solo quando tutte le scene sono attivate e caricate completamente, l'uso delle azioni *OnLoaded* per rilevare e usare il nuovo contenuto è garantito come sicuro.
 
@@ -99,7 +99,7 @@ Azione | Quando viene richiamato | Scene di contenuto | Scene di illuminazione |
 --- | --- | --- | --- | --- | ---
 `OnWillLoadContent` | Poco prima del caricamento di una scena di contenuto | • | |  
 `OnContentLoaded` | Dopo che tutte le scene di contenuto in un'operazione di caricamento sono state completamente caricate e attivate | • | |
-`OnWillUnloadContent` | Poco prima di un'operazione di scaricamento di una scena di contenuto | • | |
+`OnWillUnloadContent` | Poco prima di un'operazione di scaricamento della scena di contenuto | • | |
 `OnContentUnloaded` | Dopo che tutte le scene di contenuto in un'operazione di scaricamento sono state scaricate completamente | • | |
 `OnWillLoadLighting` | Poco prima del caricamento di una scena di illuminazione | | • |
 `OnLightingLoaded` | Dopo che una scena di illuminazione è stata completamente caricata e attivata| | • |
@@ -161,7 +161,7 @@ public class ProgressDialog : MonoBehaviour
 
 ## <a name="controlling-scene-activation"></a>Controllo dell'attivazione della scena
 
-Per impostazione predefinita, le scene di contenuto sono impostate per l'attivazione quando vengono caricate. Se si vuole controllare manualmente l'attivazione della scena, è possibile passare a `SceneActivationToken` qualsiasi metodo di caricamento del contenuto. Se più scene di contenuto vengono caricate da una singola operazione, questo token di attivazione verrà applicato a tutte le scene.
+Per impostazione predefinita, le scene di contenuto sono impostate per l'attivazione quando vengono caricate. Se si vuole controllare manualmente l'attivazione della scena, è possibile passare un oggetto a `SceneActivationToken` qualsiasi metodo di caricamento del contenuto. Se più scene di contenuto vengono caricate da una singola operazione, questo token di attivazione verrà applicato a tutte le scene.
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();

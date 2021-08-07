@@ -1,26 +1,26 @@
 ---
-title: Selezione del target di tracciamento oculare
+title: Selezione della destinazione del tracciamento oculare
 description: Come accedere ai dati dello sguardo fisso e agli eventi specifici dello sguardo fisso per selezionare le destinazioni in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, EyeTracking,
-ms.openlocfilehash: 229903e01c597aefbb3fc29de8a49d79cbbd42d0
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, EyeTracking,
+ms.openlocfilehash: aab2f35259db183f4f3edb4fffc2b3e7a066bccf9c69e492c90ee193388b8b7a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144197"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189601"
 ---
 # <a name="eye-supported-target-selection"></a>Selezione della destinazione supportata dagli occhi
 
 ![MRTK](../../images/eye-tracking/mrtk_et_targetselect.png)
 
-Questa pagina illustra diverse opzioni per l'accesso ai dati dello sguardo fisso e a eventi specifici dello sguardo fisso per selezionare le destinazioni in MRTK. Il tracciamento oculare consente selezioni di destinazione veloci e senza sforzo usando una combinazione di informazioni su ciò che un utente sta esaminando con input aggiuntivi come il rilevamento manuale e i _comandi vocali:_ 
+Questa pagina illustra le diverse opzioni per accedere ai dati dello sguardo fisso e agli eventi specifici dello sguardo fisso per selezionare le destinazioni in MRTK. Il tracciamento oculare consente selezioni di destinazione veloci e senza sforzo usando una combinazione di informazioni su ciò che un utente sta esaminando con input aggiuntivi come il rilevamento manuale e i _comandi vocali:_ 
 
 - Cercare & say _"Select"_ (comando vocale predefinito)
 - Cercare & _"Explode"_ o _"Pop"_ (comandi vocali personalizzati)
-- Cercare & Bluetooth
+- Pulsante & Bluetooth ricerca
 - Cercare & avvicinamento delle dita (ad esempio, tenere la mano davanti a te e avvicinare il pollice e l'indice)
   - Si noti che per il funzionamento, i [raggi della mano devono essere disabilitati](eye-tracking-eyes-and-hands.md#how-to-disable-the-hand-ray)
 
@@ -28,30 +28,30 @@ Per selezionare il contenuto olografico usando lo sguardo fisso, sono disponibil
 
 [**1. Usare il puntatore dello stato attivo primario:**](#1-use-generic-focus-and-pointer-handlers)
 
-Questo può essere inteso come cursore con priorità.
+Può essere inteso come cursore con priorità.
 Per impostazione predefinita, se le mani sono visualizzate, si tratta di raggi della mano.
-Se non sono presenti mani, il puntatore con priorità sarà la testa o lo sguardo fisso.
+Se non sono presenti mani, il puntatore con priorità sarà la testa o lo sguardo oculare.
 Di conseguenza, si noti che in base alla testa o lo sguardo oculare corrente viene eliminato come input del cursore se vengono usati i raggi della mano.
 
-Esempio:
+Ad esempio:
 
 Un utente vuole selezionare un pulsante olografico distante.
 Gli sviluppatori vogliono fornire una soluzione flessibile che consenta all'utente di eseguire queste attività in diverse condizioni:
 
 - Accedere al pulsante e fare clic su di esso
-- Guardarlo da una distanza e pronunciare "select"
-- Imposta come destinazione il pulsante usando un raggio della mano ed eseguendo un avvicinamento delle dita. In questo caso, la soluzione più flessibile consiste nell'usare il gestore dello stato attivo principale, in quanto invierà una notifica ogni volta che il puntatore dello stato attivo primario attualmente in ordine di priorità attiva un evento. Si noti che se i raggi della mano sono abilitati, il puntatore di messa a fuoco con la testa o lo sguardo fisso viene disabilitato non appena le mani vengono visualizzate.
+- Osservarlo da una distanza e pronunciare "select"
+- Scegliere come destinazione il pulsante usando un raggio della mano ed eseguendo un avvicinamento delle dita In questo caso, la soluzione più flessibile consiste nell'usare il gestore dello stato attivo primario, in quanto invia una notifica ogni volta che il puntatore a fuoco primario attualmente in ordine di priorità attiva un evento. Si noti che se i raggi della mano sono abilitati, il puntatore a fuoco della testa o dello sguardo oculare viene disabilitato non appena le mani vengono visualizzate.
 
 > [!IMPORTANT]
-> Si noti che se i raggi della mano sono abilitati, il puntatore di messa a fuoco della testa o dello sguardo fisso viene disabilitato non appena le mani vengono visualizzate. Se si vuole supportare [ _un'interazione "look and pinch",_ è necessario disabilitare il raggio della mano.](eye-tracking-eyes-and-hands.md#how-to-disable-the-hand-ray) Nelle scene di esempio del tracciamento oculare il raggio della mano è stato disabilitato per consentire interazioni più complesse con occhi e movimenti della mano. Vedere ad esempio Posizionamento supportato dagli [occhi.](eye-tracking-eyes-and-hands.md)
+> Si noti che se i raggi della mano sono abilitati, il puntatore a fuoco della testa o dello sguardo oculare viene disabilitato non appena le mani vengono visualizzate. Se si vuole supportare [ _un'interazione "look and pinch",_ è necessario disabilitare il raggio della mano.](eye-tracking-eyes-and-hands.md#how-to-disable-the-hand-ray) Nelle scene di esempio di tracciamento oculare il raggio della mano è stato disabilitato per consentire la visualizzazione di interazioni più complesse usando gli occhi e i movimenti della mano. Vedere ad esempio Il posizionamento supportato dagli [occhi](eye-tracking-eyes-and-hands.md).
 
-[**2. Usare contemporaneamente sia la messa a fuoco oculare che i raggi della mano:**](#2-independent-eye-gaze-specific-eyetrackingtarget)
+[**2. Usare sia la messa a fuoco oculare che i raggi della mano contemporaneamente:**](#2-independent-eye-gaze-specific-eyetrackingtarget)
 
-In alcuni casi può essere necessario essere più specifici del tipo di puntatore allo stato attivo che può attivare determinati eventi e consentire l'uso simultaneo di più tecniche di interazione da lontano.
+Potrebbero essere presenti casi in cui si vuole essere più specifici del tipo di puntatori allo stato attivo che possono attivare determinati eventi e consentire l'uso simultaneo di più tecniche di interazione lontano.
 
-Ad esempio: nell'app un utente può usare raggi della mano da lontano per manipolare alcune configurazioni meccaniche olografiche, ad esempio afferrare e tenere premute alcune parti del motore olografiche distanti e posizionarle sul posto. Durante questa operazione, l'utente deve eseguire una serie di istruzioni e registrare lo stato di avanzamento contrassegnando alcune caselle di controllo. Se l'utente ha le mani non occupate, sarebbe istintivo toccare semplicemente la casella di controllo o selezionarla usando un raggio della mano. Tuttavia, se l'utente ha le sue mani occupate, come nel nostro caso, tenendo presenti alcune parti del motore olografico, vuoi consentire all'utente di scorrere facilmente le istruzioni usando lo sguardo fisso e semplicemente guardare una casella di controllo e pronunciare "check it!".
+Ad esempio: nell'app un utente può usare raggi di mano lontano per manipolare alcune configurazioni meccaniche olografiche, ad esempio afferrare e tenere alcune parti del motore olografiche distanti e tenerle sul posto. In questo modo, l'utente deve seguire una serie di istruzioni e registrare lo stato di avanzamento contrassegnando alcune caselle di controllo. Se l'utente ha le mani non occupate, sarebbe istintivo toccare semplicemente la casella di controllo o selezionarla usando un raggio della mano. Tuttavia, se l'utente ha le mani occupate, come nel caso in cui sono presenti alcune parti del motore olografico, si vuole consentire all'utente di scorrere facilmente le istruzioni usando lo sguardo fisso e semplicemente osservare una casella di controllo e pronunciare "check it!".
 
-Per abilitare questa funzionalità, è necessario usare lo script EyeTrackingTarget specifico dell'occhio, indipendente dai FocusHandler di MRTK di base e che verrà illustrato più avanti.
+Per abilitare questa funzionalità, è necessario usare uno script EyeTrackingTarget specifico dell'occhio indipendente dai focusHandler MRTK principali e che verrà descritto più avanti.
 
 ## <a name="1-use-generic-focus-and-pointer-handlers"></a>1. Usare gestori generici dello stato attivo e del puntatore
 
@@ -126,7 +126,7 @@ Ecco un esempio da `EyeTrackingDemo-03-Navigation` (Assets/MRTK/Examples/Demos/E
 In questa demo sono presenti due ologrammi 3D che si attivano a seconda della parte dell'oggetto da guardare: se l'utente osserva il lato sinistro dell'ologramma, tale parte si sposterà lentamente verso la parte anteriore rivolta verso l'utente.
 Se viene esaminato il lato destro, tale parte si sposterà lentamente verso la parte anteriore.
 Si tratta di un comportamento che potrebbe non essere attivo in qualsiasi momento e anche qualcosa che potrebbe non essere necessario attivare accidentalmente con un raggio della mano o uno sguardo alla testa.
-Dopo [`OnLookAtRotateByEyeGaze`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.OnLookAtRotateByEyeGaze) l'associazione, un GameObject verrà ruotato mentre viene esaminato.
+Dopo [`OnLookAtRotateByEyeGaze`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.OnLookAtRotateByEyeGaze) l'associazione, gameObject verrà ruotato mentre viene esaminato.
 
 ```c#
 public class OnLookAtRotateByEyeGaze : BaseEyeFocusHandler
@@ -157,7 +157,7 @@ public class OnLookAtRotateByEyeGaze : BaseEyeFocusHandler
 
 Consultare la documentazione dell'API per un elenco completo degli eventi disponibili di [`BaseEyeFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.BaseEyeFocusHandler) :
 
-- **OnEyeFocusStart:** Attivato quando il raggio dello sguardo visivo *inizia* a intersecarsi con il collisore di questo obiettivo.
+- **OnEyeFocusStart:** Attivato quando il raggio dello sguardo *visivo inizia* a intersecarsi con il collisore di questo obiettivo.
 - **OnEyeFocusStay:** Attivato mentre *il* raggio dello sguardo oculare si interseca con il collisore di questo obiettivo.
 - **OnEyeFocusStop:** Attivato quando il raggio dello sguardo *fisso smette* di intersecarsi con il collisore di questo obiettivo.
 - **OnEyeFocusDwell:** Attivato dopo che il raggio dello sguardo oculare si è intersecato con il collisore di questo obiettivo per un periodo di tempo specificato.
@@ -169,15 +169,15 @@ Infine, è possibile offrire una soluzione che consente di trattare l'input basa
 Ciò offre tre _vantaggi:_
 
 - È possibile assicurarsi che l'ologramma reagisca solo con lo sguardo dell'utente.
-- È indipendente dall'input primario attualmente attivo. Di conseguenza, è possibile elaborare più input contemporaneamente, ad esempio combinando il targeting oculare veloce con i movimenti della mano.
-- Diversi eventi di Unity sono già stati impostati per rendere più veloce e pratico gestire e riutilizzare i comportamenti esistenti dall'interno dell'editor di Unity o tramite codice.
+- È indipendente dall'input primario attualmente attivo. Di conseguenza, è possibile elaborare più input contemporaneamente, ad esempio combinando il targeting rapido dell'occhio con i movimenti della mano.
+- Sono già stati impostati diversi eventi unity per semplificare la gestione e il riutilizzo dei comportamenti esistenti dall'interno dell'editor di Unity o tramite codice.
 
-Esistono anche _alcuni svantaggi:_
+Esistono anche alcuni _svantaggi:_
 
-- Maggiore impegno nella gestione di input separati singolarmente.
+- Maggiore impegno per gestire singoli input separati.
 - Nessuna degradazione elegante: supporta solo il targeting oculare. Se il tracciamento oculare non funziona, è necessario un fallback aggiuntivo.
 
-Analogamente a _BaseFocusHandler,_ _EyeTrackingTarget_ è pronto con diversi eventi Unity specifici dello sguardo fisso che è possibile ascoltare facilmente tramite l'editor di Unity (vedere l'esempio seguente) o usando _AddListener()_ nel codice:
+Analogamente a _BaseFocusHandler,_ _EyeTrackingTarget_ è pronto con diversi eventi Unity specifici dello sguardo visivo che è possibile ascoltare facilmente tramite l'editor unity (vedere l'esempio seguente) o usando _AddListener()_ nel codice:
 
 - OnLookAtStart()
 - WhileLookingAtTarget()
@@ -185,18 +185,18 @@ Analogamente a _BaseFocusHandler,_ _EyeTrackingTarget_ è pronto con diversi eve
 - OnDwell()
 - OnSelected()
 
-Di seguito vengono illustrati alcuni esempi di come usare _EyeTrackingTarget._
+Di seguito vengono illustrati alcuni esempi per l'uso di _EyeTrackingTarget._
 
 ### <a name="example-1-eye-supported-smart-notifications"></a>Esempio #1: Notifiche intelligenti supportate dagli occhi
 
-In `EyeTrackingDemo-02-TargetSelection` (Assets/MRTK/Examples/Demos/EyeTracking/Scenes) è possibile trovare un esempio di _notifiche_ intelligenti che reagiscono al sguardo fisso.
-Si tratta di caselle di testo 3D che possono essere posizionate nella scena e che vengono ingrandite e ruotate in modo uniforme verso l'utente quando viene esaminato per semplificare la leggibilità. Mentre l'utente legge la notifica, le informazioni continuano a essere visualizzate chiare e chiare. Dopo la lettura e l'allontanarsi dalla notifica, la notifica verrà automaticamente ignorata e si dissolverà. A tale scopo, esistono alcuni script di comportamento generici che non sono specifici del tracciamento oculare, ad esempio:
+In `EyeTrackingDemo-02-TargetSelection` (Assets/MRTK/Examples/Demos/EyeTracking/Scenes) è possibile trovare un esempio di "notifiche attente _intelligenti"_ che reagiscono all'occhio.
+Si tratta di caselle di testo 3D che possono essere posizionate nella scena e che si ingrandiranno e si ingrandiranno senza problemi verso l'utente quando vengono osservate per facilitare la leggibilità. Mentre l'utente legge la notifica, le informazioni continuano a essere visualizzate chiare e chiare. Dopo la lettura e l'allontanarsi dalla notifica, la notifica verrà automaticamente ignorata e dissolvenza. A tale scopo, esistono alcuni script di comportamento generici che non sono specifici del tracciamento oculare, ad esempio:
 
 - [`FaceUser`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.FaceUser)
 - [`ChangeSize`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ChangeSize)
 - [`BlendOut`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.BlendOut)
 
-Il vantaggio di questo approccio è che gli stessi script possono essere riutilizzati da vari eventi. Ad esempio, un ologramma può iniziare ad affrontare l'utente in base a comandi vocali o dopo aver premuto un pulsante virtuale. Per attivare questi eventi, è sufficiente fare riferimento ai metodi che devono essere eseguiti nello script associato [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) a GameObject.
+Il vantaggio di questo approccio è che gli stessi script possono essere riutilizzati da vari eventi. Ad esempio, un ologramma può iniziare a visualizzare l'utente in base a un comando vocale o dopo aver premuto un pulsante virtuale. Per attivare questi eventi, è sufficiente fare riferimento ai metodi che devono essere eseguiti nello script associato [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) a GameObject.
 
 Per l'esempio delle _"notifiche intelligenti e attente",_ si verifica quanto segue:
 
@@ -213,7 +213,7 @@ Per l'esempio delle _"notifiche intelligenti e attente",_ si verifica quanto seg
   - *BlendOut.Disengage:* ... inizia a confondersi: se _OnDwell()_ è stato attivato, si fondono completamente ed eliminano, in caso contrario torna allo stato inattivo.
 
 **Considerazioni sulla progettazione:** La chiave per un'esperienza piacevole è ottimizzare con attenzione la velocità di uno di questi comportamenti per evitare di causare disagio reagendo troppo rapidamente all'occhio dell'utente.
-In caso contrario, può essere estremamente difficile.
+In caso contrario, ciò può essere estremamente eccessivo.
 
 <img src="../../images/eye-tracking/mrtk_et_EyeTrackingTarget_Notification.jpg" width="750" alt="Target Notification">
 
@@ -221,7 +221,7 @@ In caso contrario, può essere estremamente difficile.
 
 Analogamente a Example #1, è possibile creare facilmente un feedback al passaggio del mouse per le gemme olografiche nella scena (Assets/MRTK/Examples/Demos/EyeTracking/Scenes) che ruota lentamente in una direzione costante e a una velocità costante (a differenza dell'esempio di rotazione dall'alto) quando viene `EyeTrackingDemo-02-TargetSelection` esaminato. È necessario attivare la rotazione della gemma olografica dall'evento _WhileLookingAtTarget()_ di _EyeTrackingTarget._ Ecco alcuni altri dettagli:
 
-1. Creare uno script generico che includa una funzione pubblica per ruotare l'oggetto GameObject a cui è collegata. Di seguito è riportato un esempio _di RotateWithConstSpeedDir.cs_ in cui è possibile modificare la direzione di rotazione e la velocità dall'editor di Unity.
+1. Creare uno script generico che includa una funzione pubblica per ruotare l'oggetto GameObject a cui è collegata. Di seguito è riportato un esempio di _RotateWithConstSpeedDir.cs_ in cui è possibile modificare la direzione di rotazione e la velocità dall'editor di Unity.
 
     ```c#
     using UnityEngine;
@@ -252,20 +252,20 @@ Analogamente a Example #1, è possibile creare facilmente un feedback al passagg
     }
     ```
 
-1. Aggiungere lo script al GameObject di destinazione [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) e fare riferimento alla funzione _RotateTarget()_ nel trigger UnityEvent, come illustrato nello screenshot seguente:
+1. Aggiungere lo script al GameObject di destinazione e fare riferimento alla [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) _funzione RotateTarget()_ nel trigger UnityEvent, come illustrato nello screenshot seguente:
 
     ![Esempio di EyeTrackingTarget](../../images/eye-tracking/mrtk_et_EyeTrackingTargetSample.jpg)
 
-### <a name="example-3-pop-those-gems-aka-_multi-modal-eye-gaze-supported-target-selection_"></a>Esempio #3: Selezionare le gemme come selezione di destinazione _multimodale supportata_ da sguardo fisso
+### <a name="example-3-pop-those-gems-aka-_multi-modal-eye-gaze-supported-target-selection_"></a>Esempio #3: pop queste gemme aka _multi-modal eye-gaze-supported target selection_
 
-Nell'esempio precedente è stato illustrato quanto sia facile rilevare se una destinazione viene osservata e come attivare una reazione a tale obiettivo. Ora le gemme esplodono usando _l'evento OnSelected()_ di [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) . La parte interessante è *il modo* in cui viene attivata la selezione. consente [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) di assegnare rapidamente diversi modi per richiamare una selezione:
+Nell'esempio precedente è stato illustrato come è facile rilevare se un obiettivo viene esaminato e come attivare una reazione a tale obiettivo. Ora le gemme esplodono usando _l'evento OnSelected()_ di [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) . La parte interessante è *il modo in* cui viene attivata la selezione. Consente [`EyeTrackingTarget`](xref:Microsoft.MixedReality.Toolkit.Input.EyeTrackingTarget) di assegnare rapidamente diversi modi per richiamare una selezione:
 
-- _Movimento di avvicinamento_ delle dita: l'impostazione di "Seleziona azione" su "Seleziona" usa il movimento della mano predefinito per attivare la selezione.
-Ciò significa che l'utente può semplicemente alzare la mano e avvicinare il pollice e il dito indice per confermare la selezione.
+- _Movimento di avvicinamento_ delle dita: l'impostazione di "Seleziona azione" su "Seleziona" usa il movimento manuale predefinito per attivare la selezione.
+Ciò significa che l'utente può semplicemente alzare la mano e avvicinare il pollice e l'indice per confermare la selezione.
 
 - Pronunciare _"Seleziona":_ usare il comando vocale _predefinito "Seleziona"_ per selezionare un ologramma.
 
-- Pronunciare _"Explode"_ _o "Pop":_ per usare comandi vocali personalizzati, è necessario seguire due passaggi:
+- Pronunciare _"Explode"_ o _"Pop":_ per usare i comandi vocali personalizzati, è necessario seguire due passaggi:
     1. Configurare un'azione personalizzata, ad esempio _"DestroyTarget"_
         - Passare a _MRTK -> Input -> Input Actions_
         - Fare clic su "Aggiungi una nuova azione"
@@ -274,15 +274,15 @@ Ciò significa che l'utente può semplicemente alzare la mano e avvicinare il po
         - Passare a _MRTK -> Input -> Voce_
         - Fare clic su "Aggiungi un nuovo comando vocale"
             - Associare l'azione appena creata
-            - Assegnare _un keycode_ per consentire l'attivazione dell'azione tramite la pressione di un pulsante
+            - Assegnare _un KeyCode_ per consentire l'attivazione dell'azione tramite un pulsante
 
-![Esempio di EyeTrackingTarget per i comandi vocali](../../images/eye-tracking/mrtk_et_voicecmdsample.jpg)
+![Esempio di comandi vocali EyeTrackingTarget](../../images/eye-tracking/mrtk_et_voicecmdsample.jpg)
 
-Quando viene selezionata una gemma, esplode, facendo un suono e scomparendo. Questa operazione viene gestita dallo [`HitBehaviorDestroyOnSelect`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.HitBehaviorDestroyOnSelect) script. Sono disponibili due opzioni:
+Quando si seleziona una gemma, esplode, facendo un suono e scomparendo. Questa operazione viene gestita dallo [`HitBehaviorDestroyOnSelect`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.HitBehaviorDestroyOnSelect) script. Sono disponibili due opzioni:
 
-- **Nell'editor di Unity:** È possibile collegare semplicemente lo script collegato a ognuno dei modelli di gemme all'evento Unity OnSelected() nell'editor di Unity.
-- **Nel codice:** Se non si vuole trascinare e rilasciare GameObject, è anche possibile aggiungere semplicemente un listener di eventi direttamente allo script.  
-Di seguito è riportato un esempio di come è stato eseguito nello [`HitBehaviorDestroyOnSelect`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.HitBehaviorDestroyOnSelect) script:
+- **Nell'editor unity:** È sufficiente collegare lo script collegato a ognuno dei modelli di gemme all'evento Unity OnSelected() nell'editor di Unity.
+- **Nel codice:** Se non si vuole trascinare GameObject, è anche possibile aggiungere un listener di eventi direttamente allo script.  
+Ecco un esempio di come è stato fatto nello [`HitBehaviorDestroyOnSelect`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.HitBehaviorDestroyOnSelect) script:
 
 ```c#
 /// <summary>
@@ -318,20 +318,20 @@ public class HitBehaviorDestroyOnSelect : MonoBehaviour
 }
 ```
 
-### <a name="example-4-use-hand-rays-and-eye-gaze-input-together"></a>Esempio #4: Usare i raggi della mano e l'input dello sguardo fisso insieme
+### <a name="example-4-use-hand-rays-and-eye-gaze-input-together"></a>Esempio #4: usare i raggi della mano e l'input dello sguardo fisso insieme
 
-I raggi della mano hanno la priorità rispetto alla destinazione della testa e dello sguardo fisso. Ciò significa che, se i raggi della mano sono abilitati, nel momento in cui le mani vengono visualizzate, il raggio della mano fungerà da indicatore di misura principale.
-Tuttavia, in alcune situazioni potrebbe essere necessario usare i raggi della mano pur continuando a rilevare se un utente sta esaminando un determinato ologramma. Facile! In sostanza sono necessari due passaggi:
+I raggi della mano hanno la priorità sul targeting della testa e dello sguardo oculare. Ciò significa che, se i raggi della mano sono abilitati, nel momento in cui le mani vengono visualizzate, il raggio della mano fungerà da puntatore primario.
+Tuttavia, possono verificarsi situazioni in cui si vogliono usare i raggi della mano pur continuando a rilevare se un utente sta osservando un determinato ologramma. Facile! Essenzialmente sono necessari due passaggi:
 
-**1. Abilitare il raggio** della mano: per abilitare il raggio della mano, passare a Mixed Reality Toolkit _-> Input -> Pointers (Puntatori di input -> realtà mista)._
-In _EyeTrackingDemo-00-RootScene,_ in cui Mixed Reality Toolkit è configurato una sola volta per tutte le scene demo di tracciamento oculare, dovrebbe essere visualizzato _EyeTrackingDemoPointerProfile._
-È possibile creare un nuovo profilo _di input_ da zero o adattare il tracciamento oculare corrente:
+**1. Abilitare il raggio** della mano: per abilitare il raggio della mano, passare a Realtà _mista Toolkit -> Input -> Puntatori_.
+In _EyeTrackingDemo-00-RootScene_ in cui l'Toolkit di realtà mista è configurato una sola volta per tutte le scene della demo di tracciamento oculare, dovrebbe essere visualizzato _EyeTrackingDemoPointerProfile._
+È possibile creare un nuovo profilo _di input_ da zero o adattare quello di tracciamento oculare corrente:
 
 - **Da zero:** Nella scheda _Puntatori_ selezionare _DefaultMixedRealityInputPointerProfile_ dal menu di scelta rapida.
-Questo è il profilo puntatore predefinito in cui è già abilitato il raggio della mano.
+Si tratta del profilo puntatore predefinito con il raggio della mano già abilitato.
 Per modificare il cursore predefinito (un punto bianco opaco), è sufficiente clonare il profilo e creare un profilo puntatore personalizzato.
-Sostituire quindi _DefaultCursor con_ _EyeGazeCursor_ in _Gaze Cursor Prefab (Prefab cursore sguardo fisso)._  
-- **In base all'elemento _EyeTrackingDemoPointerProfile_ esistente:** fare doppio clic su _EyeTrackingDemoPointerProfile_ e aggiungere la voce seguente in _Pointer Options (Opzioni puntatore):_
+Sostituire quindi _DefaultCursor con_ _EyeGazeCursor_ in _Gaze Cursor Prefab_.  
+- **In base al _profilo EyeTrackingDemoPointerProfile_ esistente:** fare doppio clic su _EyeTrackingDemoPointerProfile_ e aggiungere la voce seguente in _Opzioni puntatore_:
   - **Tipo di controller:** 'Articulated Hand', 'Windows Mixed Reality'
   - **Mania:** Qualsiasi
   - **Prefab puntatore:** DefaultControllerPointer

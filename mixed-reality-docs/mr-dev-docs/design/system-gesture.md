@@ -1,21 +1,21 @@
 ---
-title: Azione di avvio
-description: Informazioni su come usare il gesto di avvio per chiamare il menu Start in HoloLens e gli auricolari immersivi con la realtà mista di Windows.
+title: Movimento di avvio
+description: Informazioni su come usare il movimento di avvio per richiamare il menu Start HoloLens e Windows Mixed Reality visori VR immersive.
 author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
-keywords: Realtà mista, movimenti, interazione, progettazione, cuffie per realtà mista, cuffie con realtà mista di Windows, auricolare realtà virtuale, HoloLens, MRTK, Toolkit realtà mista, Bloom
-ms.openlocfilehash: d0f3bd81cab945a01a523806ebaf4546752d74c1
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Realtà mista, movimenti, interazione, progettazione, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, HoloLens, MRTK, realtà mista Toolkit, fiore
+ms.openlocfilehash: f3ad9309c7232f20a25060b1d98d7374272ceea00f24be18d7263b8ec7002fb3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583238"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213741"
 ---
-# <a name="start-gesture"></a>Azione di avvio
+# <a name="start-gesture"></a>Movimento di avvio
 
-Il gesto di avvio è un movimento della mano usato per richiamare il menu Start. È l'equivalente di premere il tasto Windows sulle tastiere, il pulsante Xbox nei controller Xbox o il pulsante Windows sui controller di movimento per le cuffie immersive. Prestare particolare attenzione ai movimenti del sistema riservati in ogni dispositivo di realtà mista per evitare conflitti durante la progettazione delle interazioni.
+Il movimento Start è un movimento della mano usato per richiamare il menu Start. Equivale a premere il tasto Windows tastiera, il pulsante Xbox nei controller Xbox o il pulsante Windows nei controller del movimento immersive del visore VR. Prestare particolare attenzione ai movimenti di sistema riservati in ogni dispositivo di realtà mista per evitare conflitti durante la progettazione delle interazioni.
 
 ## <a name="device-support"></a>Supporto di dispositivi
 
@@ -39,13 +39,13 @@ Il gesto di avvio è un movimento della mano usato per richiamare il menu Start.
         <td>❌</td>
     </tr>
      <tr>
-        <td>Pulsante polso</td>
+        <td>Pulsante a mano</td>
         <td>❌</td>
         <td>✔️</td>
         <td>❌</td>
     </tr>
     <tr>
-        <td>Occhio e palmare</td>
+        <td>Sguardo fisso e avvicinamento del palmo</td>
         <td>❌</td>
         <td>✔️</td>
         <td>❌</td>
@@ -54,16 +54,16 @@ Il gesto di avvio è un movimento della mano usato per richiamare il menu Start.
 
 ## <a name="bloom"></a>Fioritura
 
-Abbiamo progettato "Bloom" per visualizzare il menu Start in HoloLens (1st Gen), che è un gesto simbolico che simula un fiore fiorito. Si tratta di un'operazione distinta per l'interazione sicura, facile da usare e rapida da richiamare. Per usare il movimento, è possibile passare da una palma all'altra, quindi aprire la mano, diffondendo le dita.
+"Bloom" è stato progettato per visualizzare il menu Start in HoloLens (prima generazione), che è un movimento simbolico che simula un fiore. È distintivo per un'interazione sicura, facile da usare e veloce da richiamare. Per usare il movimento, tieni la mano con il palmo in su e la punta del dito insieme, quindi apri la mano stendendo le dita.
 
 :::row:::
     :::column:::
-        ![Bloom close](images/bloom-close.png)<br>
-        **Passaggio 1: palmare insieme**<br>
+        ![Chiusura di Bloom](images/bloom-close.png)<br>
+        **Passaggio 1: Palm up with fingertips together**<br>
     :::column-end:::
     :::column:::
-        ![Sbocciare aperto](images/bloom-open.png)<br>
-        **Passaggio 2: Palm up con la distribuzione a portata di mano**<br>
+        ![Bloom open](images/bloom-open.png)<br>
+        **Passaggio 2: Palm up with fingertips spread**<br>
     :::column-end:::
 :::row-end:::
 
@@ -71,18 +71,18 @@ Abbiamo progettato "Bloom" per visualizzare il menu Start in HoloLens (1st Gen),
 
 ---
 
-## <a name="start-gesture"></a>Azione di avvio
+## <a name="start-gesture"></a>Movimento di avvio
 
-In HoloLens 2, il movimento Bloom è stato sostituito con un pulsante di polso virtuale, che è più istintivo per gli utenti. Visualizzando gli utenti con il pulsante del polso, è possibile accedervi in modo intuitivo e premerlo con l'altra parte.
+In HoloLens 2 è stato sostituito il movimento Bloom con un pulsante di tocco virtuale, più istintivo per gli utenti. Mostrando agli utenti il pulsante sul lente, possono contattare intuitivamente e premere il pulsante con l'altra mano.
 
 :::row:::
     :::column:::
-        ![Pulsante del polso pronto](images/wrist-button-ready.png)<br>
-        **Passaggio 1: eseguire il Palm up per visualizzare il pulsante del polso**<br>
+        ![Pulsante di sospensione pronto](images/wrist-button-ready.png)<br>
+        **Passaggio 1: Palm up per visualizzare il pulsante di sospensione**<br>
     :::column-end:::
     :::column:::
-        ![Pressione del pulsante del polso](images/wrist-button-press.png)<br>
-        **Passaggio 2: premere il pulsante del polso**<br>
+        ![Pressione del pulsante a mano](images/wrist-button-press.png)<br>
+        **Passaggio 2: Premere il pulsante di sospensione**<br>
     :::column-end:::
 :::row-end:::
 
@@ -90,23 +90,23 @@ In HoloLens 2, il movimento Bloom è stato sostituito con un pulsante di polso v
 
 ---
 
-## <a name="one-handed-start-gesture"></a>Gesto iniziale a una mano
+## <a name="one-handed-start-gesture"></a>Movimento Start con una mano
 
 > [!IMPORTANT]
-> Per il funzionamento del movimento iniziale a una sola mano:
+> Per il funzionamento del movimento Start con una sola mano:
 >
-> 1. È necessario eseguire l'aggiornamento all'aggiornamento di novembre 2019 (Build 18363,1039) o versione successiva.
-> 1. È necessario calibrare gli occhi del dispositivo in modo che funzionino correttamente. Se non vengono visualizzati punti orbitanti intorno all'icona di avvio quando si esaminano i punti, gli occhi non vengono calibrati sul dispositivo.
+> 1. È necessario eseguire l'aggiornamento all'aggiornamento di novembre 2019 (build 18363.1039) o versione successiva.
+> 1. Gli occhi devono essere calibrati sul dispositivo in modo che il tracciamento oculare funzioni correttamente. Se non vengono visualizzati punti di ingrandimento intorno all'icona Start quando la si osserva, gli occhi non vengono calibrati sul dispositivo.
 
-È anche possibile usare il gesto di avvio con una sola mano. Si tenga presente che la Palma si trova in corrispondenza dell'icona di **avvio** sul polso interno. **Tenendo sempre d'occhio l'icona**, pizzicare il pollice e l'indice insieme.<br>
+È anche possibile usare il movimento Start con una sola mano. Tieni la mano con il palmo rivolto verso di te e osserva **l'icona Start** sul tuo sguardo interno. **Tenendo sotto controllo l'icona**, avvicinare le dita del pollice e dell'indice.<br>
 :::row:::
     :::column:::
-        ![Pulsante del polso pronto](images/wrist-button-ready.png)<br>
-        **Passaggio 1: eseguire il Palm up per visualizzare il pulsante del polso**<br>
+        ![Pulsante di sospensione pronto](images/wrist-button-ready.png)<br>
+        **Passaggio 1: Palm up per visualizzare il pulsante di sospensione**<br>
     :::column-end:::
     :::column:::
-        ![Pizzico pulsante polso](images/wrist-button-pinch.png)<br>
-        **Passaggio 2: osservare il pulsante e quindi pizzicare**<br>
+        ![Avvicinamento delle dita del pulsante a mano](images/wrist-button-pinch.png)<br>
+        **Passaggio 2: Sguardo fisso sul pulsante e quindi avvicinamento delle dita**<br>
     :::column-end:::
 :::row-end:::
 
@@ -114,8 +114,8 @@ In HoloLens 2, il movimento Bloom è stato sostituito con un pulsante di polso v
 
 ---
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Interazioni istintive](interaction-fundamentals.md)
-* [Sguardo attento](eye-tracking.md)
+* [Sguardo fisso](eye-tracking.md)
 * [Input vocale](voice-input.md)

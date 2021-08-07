@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, manipolazione,
-ms.openlocfilehash: 179ef40ba054b0fda3b13e9d578905eb064a58ab
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 24034c43bf8ce1f1ef463e894e9ca5293c2b0d2a146284535b161f8b4277dfa9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176628"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190211"
 ---
 # <a name="manipulation-handler"></a>Gestore di manipolazione
 
@@ -22,7 +22,7 @@ Lo script *ManipulationHandler* consente di impostare un oggetto in modo che sia
 
 Aggiungere il `ManipulationHandler` componente script a un GameObject. Assicurarsi anche di aggiungere un collisore all'oggetto, corrispondente ai limiti afferrabili.
 
-Per fare in modo che l'oggetto risponda all'input della mano quasi articolato, aggiungere `NearInteractionGrabbable` anche lo script .
+Per fare in modo che l'oggetto risponda all'input della mano quasi `NearInteractionGrabbable` articolato, aggiungere anche lo script .
 
 ![Uso del gestore di manipolazione nell'editor di Unity](../images/manipulation-handler/MRTK_ManipulationHandler_Howto.png)
 
@@ -58,10 +58,10 @@ Per fare in modo che l'oggetto risponda all'input della mano quasi articolato, a
 **Opzioni della modalità rotazione a una mano** Specifica la modalità di rotazione dell'oggetto quando viene afferrato con una mano.
 
 * *Mantieni rotazione originale:* non ruota l'oggetto mentre viene spostato
-* *Mantieni la rotazione per* l'utente: mantiene la rotazione originale dell'oggetto per l'asse X/Y per l'utente
-* *La gravità allineata mantiene la rotazione* all'utente: mantiene la rotazione originale dell'oggetto all'utente, ma rende l'oggetto verticale. Utile per gli oggetti con un controllo limiti.
-* *Utente viso:* garantisce che l'oggetto sia sempre di fronte all'utente. Utile per slate/pannelli.
-* *Face away from user (Viso lontano* dall'utente): garantisce che l'oggetto sia sempre lontano dall'utente. Utile per slate/pannelli configurati all'indietro.
+* *Mantieni la rotazione all'utente:* mantiene la rotazione originale dell'oggetto per l'asse X/Y per l'utente
+* *La gravità allineata mantiene la rotazione* all'utente: mantiene la rotazione originale dell'oggetto all'utente, ma rende l'oggetto verticale. Utile per gli oggetti con un controllo dei limiti.
+* *Utente viso:* assicura che l'oggetto sia sempre di fronte all'utente. Utile per slate/pannelli.
+* *Face away from user (Viso lontano* dall'utente): garantisce che l'oggetto sia sempre distorsi dall'utente. Utile per slate/pannelli configurati all'indietro.
 * *Ruotare intorno al centro dell'oggetto:* funziona solo per mani/controller articolati. Ruotare l'oggetto usando la rotazione della mano/controller, ma intorno al punto centrale dell'oggetto. Utile per ispezionare a distanza.
 * *Ruotare intorno al punto di* cattura: funziona solo per mani/controller articolati. Ruotare l'oggetto come se fosse in mano/controller. Utile per l'ispezione.
 
@@ -97,4 +97,4 @@ Il gestore di manipolazione fornisce gli eventi seguenti:
 * *OnManipulationStarted: generato* all'avvio della manipolazione.
 * *OnManipulationEnded:* viene generato al termine della manipolazione.
 * *OnHoverStarted:* viene attivato quando una mano/controller passa il puntatore del mouse sul manipolabile, vicino o lontano.
-* *OnHoverEnded:* viene attivato quando una mano/controller sposta il puntatore del mouse sul manipolabile, vicino o lontano.
+* *OnHoverEnded:* viene attivato quando una mano/controller annulla il passaggio del mouse sul manipolabile, vicino o lontano.

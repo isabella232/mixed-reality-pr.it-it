@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 3f65fa90279e9a10c1aad9bd46f02233808936b8
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+ms.openlocfilehash: 97ef4f466355f39e01ce0b916b4d0f45fb4c40f3fd6f0cb001b1bcccb35740eb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647010"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188021"
 ---
 ![Colibrì virtuale con mano umana](mixed-reality-docs/mr-dev-docs/discover/images/01_MixedReality.png)
 
@@ -12,14 +12,14 @@ Benvenuti nella documentazione di Realtà mista, il posto ideale per mr, VR e AR
 
 ## <a name="contributing"></a>Contributo
 
-Se si stanno apportando contributi o si aggiorna il contenuto della documentazione, assicurarsi che le richieste pull siano relative al sotto docset corretto (mr-dev-docs, guide per appassionati e così via). I nuovi collaboratori devono consultare le linee guida per i contributi più dettagliate per ogni sottodocset:
+Se si contribuisce o si aggiorna il contenuto della documentazione, assicurarsi che le richieste pull siano relative al sotto docset corretto (mr-dev-docs, guide per appassionati e così via). I nuovi collaboratori devono consultare le linee guida per i contributi più dettagliate per ogni sottodocset:
 
 * [Collaboratori di Realtà mista](mixed-reality-docs/mr-dev-docs/CONTRIBUTING.md)
 * [Collaboratori della Guida per gli appassionati di realtà virtuale](enthusiast-guide/CONTRIBUTING.md)
 
 Per i problemi relativi alla documentazione, usare i piè di pagina nella parte inferiore di ogni documento o inviarli direttamente a [MicrosoftDocs/mixed-reality/issues.](https://github.com/MicrosoftDocs/mixed-reality/issues)
 
-È possibile inviare qualsiasi domanda sui criteri o i processi per i contributi a DlpNe o Sean Kerawala tramite Teams o posta elettronica. 
+È possibile inviare qualsiasi domanda sui criteri o i processi per i contributi a DlpNe o Sean Kerawala tramite Teams posta elettronica. 
 
 ## <a name="getting-started"></a>Guida introduttiva 
 

@@ -7,12 +7,12 @@ ms.date: 06/18/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: aggiornamento, strumenti, attività iniziali, nozioni di base, unity, visual studio, toolkit, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, installazione, Windows, HoloLens, emulatore, unreal, openxr
-ms.openlocfilehash: c926fbb758d7cfaa2e73b5357cacdab7a5d15e27
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: 568d5f25eceed385a1331cd2cf5fe6e3adb6f8228e85d6d2d316749fc2ee431c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394647"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187623"
 ---
 # <a name="mixed-reality-openxr-plugin-release-notes"></a>Note sulla versione del plug-in OpenXR di Realtà mista
 
@@ -38,7 +38,7 @@ ms.locfileid: "112394647"
 ## <a name="095---2021-05-21"></a>0.9.5 - 2021-05-21
 
 * Dipende dal plug-in OpenXR 1.2.0 di Unity
-* Adattato alla nuova interfaccia utente della funzionalità (in OpenXR Plugin 1.2.0) per la configurazione.
+* Adattato alla nuova interfaccia utente della funzionalità (nel plug-in OpenXR 1.2.0) per la configurazione.
 * Correzione di un bug per cui il provider di fotocamere localizzate non annullava correttamente la registrazione.
 * Pulizia di alcuni utilizzi aggiuntivi di [Preserve].
 * Aggiornare il nome "HP Reverb G2 Controller (OpenXR)" nell'interfaccia utente del sistema di input.
@@ -49,9 +49,9 @@ ms.locfileid: "112394647"
 * Aggiunta della nuova API C# per ottenere il modello glTF del controller del movimento.
 * Aggiunta di una nuova API C# per ottenere le configurazioni di visualizzazione abilitate e impostare le impostazioni di nuova progetto.
 * Aggiunta di una nuova API C# per impostare impostazioni aggiuntive per il calcolo delle mesh con XRMeshSubsystem.
-* Aggiunta della nuova API C# per configurare e sottoscrivere gli eventi di riconoscimento dei movimenti.
-* Aggiunta della finestra di dialogo >comunicazione remota di XR->Editor di Windows.
-* Aggiunta del supporto ARM per le applicazioni UWP HoloLens.
+* Aggiunta di una nuova API C# per configurare e sottoscrivere gli eventi di riconoscimento dei movimenti.
+* Aggiunta Windows impostazioni di comunicazione remota >XR->Editor.
+* Aggiunta del supporto ARM per HoloLens applicazioni UWP.
 
 ## <a name="093---2021-04-29"></a>0.9.3 - 2021-04-29
 
@@ -60,8 +60,8 @@ ms.locfileid: "112394647"
 
 ## <a name="092---2021-04-21"></a>0.9.2 - 2021-04-21
 
-* Il rilevamento del piano HoloLens 2 nella versione del plug-in 0.9.1 funzionerà con la versione 105 del runtime di anteprima di Mixed Reality OpenXR.
-* Il rilevamento del piano HoloLens 2 nella versione del plug-in 0.9.2 funzionerà con la versione 106 del runtime di anteprima di Mixed Reality OpenXR.
+* Il rilevamento del piano HoloLens 2 nel plug-in versione 0.9.1 funzionerà con la versione 105 del runtime di anteprima di Mixed Reality OpenXR.
+* Il rilevamento del piano HoloLens 2 nel plug-in versione 0.9.2 funzionerà con la versione 106 del runtime di anteprima di Mixed Reality OpenXR.
 * Sono stati rimossi alcuni callback inutilizzati da InputProvider per impedire che chiamate come XRInputSubsystem.* GetTrackingOriginMode (che non sono gestite dal sistema di input) restituiranno esito positivo con valori fuorvianti.
 * Suddividere la versione deprecata di XRAnchorStore nel proprio file per evitare l'avviso della console unity.
 
@@ -75,8 +75,8 @@ ms.locfileid: "112394647"
 
 * Aggiunta del supporto per il mapping spaziale tramite XRMeshSubsystem e ARMeshManager.
 * Aggiunta di una nuova API C# per ottenere handle OpenXR per supportare altri pacchetti Unity che utilizzano estensioni OpenXR.
-* Aggiunta di una nuova API C# per l'interoperabilità con le API Windows.Perception per supportare altri pacchetti Unity che utilizzano le API WinRT perception.
-* Sono stati rimossi i profili di interazione dalle funzionalità Windows Mixed Reality set di funzionalità, in modo che gli sviluppatori possano scegliere i controller del movimento con cui hanno testato.
+* Aggiunta di una nuova API C# per l'interoperabilità con Windows. API Perception per supportare altri pacchetti Unity che utilizzano le API WinRT di Perception.
+* Sono stati rimossi i profili di interazione dalle funzionalità Windows Mixed Reality set di funzionalità, in modo che gli sviluppatori possano scegliere i controller del movimento con cui sono stati testati.
 * Aggiunta del validator della funzionalità di comunicazione remota dell'editor Holographic per consentire agli utenti di configurare correttamente la comunicazione remota dell'editor.
 * Correzione di un bug per cui l'editor di Unity si arresta in modo anomalo quando si esce dalla modalità remota dell'editor Holographic dopo un errore di connessione.
 * Correzione di un bug per cui trame alfa non premoltimulate comportano prestazioni non ottimali in HoloLens 2.

@@ -126,21 +126,21 @@
               items:
                 - name: HoloLens (prima generazione) Nozioni di base 100 - Introduzione a Unity
                   href: unity/tutorials/holograms-100.md
-                - name: HoloLens (prima generazione) Nozioni di base 101 - Completare il progetto con il dispositivo
+                - name: HoloLens (prima generazione) Nozioni di base 101 - Progetto completo con dispositivo
                   href: unity/tutorials/holograms-101.md
-                - name: HoloLens (prima generazione) Basics 101E - Completare il progetto con l'emulatore
+                - name: HoloLens (prima generazione) Nozioni di base 101E - Progetto completo con emulatore
                   href: unity/tutorials/holograms-101e.md
-                - name: HoloLens (prima generazione) Input 210 - Gaze
+                - name: HoloLens (prima generazione) Input 210 - Sguardo fisso
                   href: unity/tutorials/holograms-210.md
                 - name: HoloLens (prima generazione) Input 211 - Movimento
                   href: unity/tutorials/holograms-211.md
                 - name: HoloLens (prima generazione) Input 212 - Voce
                   href: unity/tutorials/holograms-212.md
-                - name: HoloLens (prima generazione) Spaziale 220 - Suono spaziale
+                - name: HoloLens (prima generazione) Spaziale 220 - Audio spaziale
                   href: unity/tutorials/holograms-220.md
                 - name: HoloLens (prima generazione) Spaziale 230 - Mapping spaziale
                   href: unity/tutorials/holograms-230.md
-                - name: HoloLens (prima generazione) Condivisione di 240 - Più HoloLens dispositivi
+                - name: HoloLens (prima generazione) Condivisione 240 - Più HoloLens dispositivi
                   href: unity/tutorials/holograms-240.md
             - name: Realtà mista e servizi di Azure
               items:
@@ -152,13 +152,13 @@
                   href: unity/tutorials/mr-azure-302b.md
                 - name: HoloLens (prima generazione) e Azure 303 - Comprensione del linguaggio naturale
                   href: unity/tutorials/mr-azure-303.md
-                - name: HoloLens (prima generazione) e Azure 304 - Riconoscimento del viso
+                - name: HoloLens (prima generazione) e Azure 304 - Riconoscimento volto
                   href: unity/tutorials/mr-azure-304.md
                 - name: HoloLens (prima generazione) e Azure 305 - Funzioni e archiviazione
                   href: unity/tutorials/mr-azure-305.md
                 - name: HoloLens (prima generazione) e Azure 306 - Streaming video
                   href: unity/tutorials/mr-azure-306.md
-                - name: HoloLens (prima generazione) e Azure 307 - Apprendimento di Maching
+                - name: HoloLens (prima generazione) e Azure 307 - Apprendimento maching
                   href: unity/tutorials/mr-azure-307.md
                 - name: HoloLens (prima generazione) e Azure 308 - Notifiche tra dispositivi
                   href: unity/tutorials/mr-azure-308.md
@@ -168,7 +168,7 @@
                   href: unity/tutorials/mr-azure-310.md
                 - name: HoloLens (prima generazione) e Azure 311 - Microsoft Graph
                   href: unity/tutorials/mr-azure-311.md
-                - name: HoloLens (prima generazione) e Azure 312 - Integrazione del bot
+                - name: HoloLens (prima generazione) e Azure 312 - Integrazione di bot
                   href: unity/tutorials/mr-azure-312.md
                 - name: HoloLens (prima generazione) e Azure 313 - Servizio hub IoT
                   href: unity/tutorials/mr-azure-301.md
@@ -176,7 +176,7 @@
       items:
         - name: Scelta di una versione di Unity e di un plug-in XR
           href: unity/choosing-unity-version.md
-        - name: Configurazione della configurazione XR
+        - name: Configurazione di XR
           href: unity/xr-project-setup.md
         - name: Strumento per la funzionalità di realtà mista
           items:
@@ -196,7 +196,7 @@
       items:
         - name: Impostazione della fotocamera
           href: unity/camera-in-unity.md
-        - name: Ancoraggi spaziali e di blocco del mondo
+        - name: Blocco del mondo e ancoraggi nello spaziale
           href: unity/spatial-anchors-in-unity.md
         - name: Esperienze condivise
           href: unity/shared-experiences-in-unity.md
@@ -220,7 +220,7 @@
           href: unity/spatial-sound-in-unity.md
     - name: Funzionalità avanzate
       items:
-        - name: Fotocamera video in Unity
+        - name: Fotocamera con foto in Unity
           href: unity/locatable-camera-in-unity.md
         - name: Punto di interesse
           href: unity/focus-point-in-unity.md
@@ -250,7 +250,7 @@
               href: unity/periodic-table-of-the-elements-2.md
             - name: Galaxy Explorer 2.0
               href: unity/galaxy-explorer-update.md
-            - name: Concetti fondamentali sulla qualità
+            - name: Nozioni fondamentali sulla qualità
               href: unity/quality-fundamentals.md
         - name: HoloLens (prima generazione)
           items:
@@ -276,7 +276,7 @@
           href: unity/best-practices-for-working-with-unity-and-visual-studio.md
     - name: Note sulla versione
       items:
-        - name: Plug-in OpenXR per Realtà mista
+        - name: Plug-in OpenXR di realtà mista
           href: unity/openxr-release-notes.md
 - name: Unreal
   items:
@@ -290,7 +290,7 @@
       href: unreal/unreal-porting.md
     - name: Avvi rapidi
       items:
-        - name: Creazione della prima HoloLens'applicazione Unreal
+        - name: Creazione della prima applicazione HoloLens Unreal
           href: unreal/unreal-quickstart.md
     - name: Esercitazioni
       items:
@@ -370,13 +370,13 @@
       href: javascript/webxr-overview.md
     - name: Esercitazioni
       items:
-        - name: Realtà Hello World virtuale con BabylonJS
+        - name: Vr Hello World uso di BabylonJS
           items:
             - name: 1. Introduzione
               href: javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md
             - name: 2. Preparare una scena con un oggetto 3D di base
               href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
-            - name: 3. Interagire con un oggetto 3D
+            - name: 3. Interagire con l'oggetto 3D
               href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
 - name: Motore personalizzato
   items:
@@ -454,7 +454,7 @@
       items:
         - name: Panoramica
           href: platform-capabilities-and-apis/holographic-remoting-overview.md
-        - name: Lettore Holographic Remoting
+        - name: Lettore holographic Remoting
           href: platform-capabilities-and-apis/holographic-remoting-player.md
         - name: Scrivere un'app remota Holographic Remoting
           items:

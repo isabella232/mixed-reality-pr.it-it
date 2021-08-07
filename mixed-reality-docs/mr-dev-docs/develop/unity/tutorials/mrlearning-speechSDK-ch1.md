@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, riconoscimento vocale, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 39eaa8a17d4616dc9c044f9bff7522dde41cffb7
-ms.sourcegitcommit: fd1964ec6c645e8088ec120661f73739bb7775a9
+ms.openlocfilehash: a12163dda0a6bf961c6c34ebc35b6e00f491d6ca59c08dfba7c5126e797d089a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "113656636"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214666"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1. Integrazione e uso del riconoscimento vocale e della trascrizione
 
@@ -37,7 +37,7 @@ In questa serie di esercitazioni creerai un'applicazione di Realtà mista per es
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> con Unity 2020/2019 LTS installato e il modulo Universal Windows Platform Build Support aggiunto
 
 > [!Important]
-> Questa serie di esercitazioni supporta Unity 2020 LTS (attualmente 2020.3.x) se si usa Open XR o Windows XR Plugin e anche Unity 2019 LTS (attualmente 2019.4.x) se si usa Legacy WSA o Windows XR Plugin. Questa istruzione sostituisce gli eventuali requisiti relativi alla versione di Unity indicati negli argomenti visualizzabili facendo clic sui collegamenti dei prerequisiti sopra riportati.
+> Questa serie di esercitazioni supporta Unity 2020 LTS (attualmente 2020.3.x) se si usa Open XR o Windows XR Plugin e anche Unity 2019 LTS (attualmente 2019.4.x) se si usa WSA legacy o Windows XR Plugin. Questa istruzione sostituisce gli eventuali requisiti relativi alla versione di Unity indicati negli argomenti visualizzabili facendo clic sui collegamenti dei prerequisiti sopra riportati.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Creazione e preparazione del progetto Unity
 
@@ -51,7 +51,7 @@ A questo scopo, segui prima l'esercitazione [Inizializzazione del progetto e pri
 4. [Importazione del progetto Toolkit realtà mista e configurazione del progetto Unity](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 5. [Creazione e configurazione della scena](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) e assegnazione di un nome appropriato, ad esempio *AzureSpeechServices*
 
-Seguire quindi [](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) le istruzioni della modifica dell'opzione di visualizzazione della consapevolezza spaziale per assicurarsi che il profilo di configurazione MRTK per la scena sia **DefaultHoloLens2ConfigurationProfile** e modificare le opzioni di visualizzazione per la mesh di riconoscimento spaziale in **Occlusion**.
+Seguire quindi [](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) le istruzioni riportate in Modifica dell'opzione di visualizzazione della consapevolezza spaziale per assicurarsi che il profilo di configurazione di MRTK per la scena sia **DefaultHoloLens2ConfigurationProfile** e modificare le opzioni di visualizzazione per la mesh di consapevolezza spaziale in **Occlusion**.
 
 ## <a name="configuring-the-speech-commands-start-behavior"></a>Configurazione del comportamento di avvio dei comandi vocali
 
@@ -67,7 +67,7 @@ Dal menu Unity scegli **Edit** > **Project Settings...** (Modifica > Impostazion
 
 ![mrlearning-speech 2](images/mrlearning-speech/tutorial1-section3-step1-1.png)
 
-Nel Impostazioni di pubblicazione scorrere verso  il basso fino alla sezione Funzionalità e verificare che le funzionalità **InternetClient**, **Microphone** e **SpatialPerception,** abilitate al momento della creazione del progetto all'inizio dell'esercitazione, siano abilitate. Abilita quindi le funzionalità **InternetClientServer** e **PrivateNetworkClientServer**:
+Nel Impostazioni di pubblicazione scorrere verso  il basso fino alla sezione Capabilities (Funzionalità) e verificare che le funzionalità **InternetClient**, **Microphone** e **SpatialPerception,** abilitate al momento della creazione del progetto all'inizio dell'esercitazione, siano abilitate. Abilita quindi le funzionalità **InternetClientServer** e **PrivateNetworkClientServer**:
 
 ![mrlearning-speech 3](images/mrlearning-speech/tutorial1-section3-step1-2.png)
 
@@ -86,11 +86,11 @@ Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progett
 
 ![mrlearning-speech 4](images/mrlearning-speech/tutorial1-section4-step1-1.png)
 
-È necessario configurare il progetto Unity per pubblicare i plug-in di Riconoscimento vocale di Azure per ARM64, a tale scopo nella finestra Project, passare a **Assets**  >  **SpeechSDK**  >  **Plugins**  >  **WSA** ARM64 e selezionare  >   **Microsoft.CognitiveServices.Speech.core** plugin.
+È necessario configurare il progetto Unity per pubblicare i plug-in di Riconoscimento vocale di Azure per ARM64. A tale scopo, nella finestra di Project passare ad **Assets**  >  **SpeechSDK**  >  **Plugins** WSA ARM64 (Plug-in SpeechSDK asset)  >  **WSA** ARM64 e selezionare  >   **Microsoft.CognitiveServices.Speech.core plugin (Plug-in Microsoft.CognitiveServices.Speech.core).**
 
 ![mrlearning-speech 5](images/mrlearning-speech/tutorial1-section4-step1-2.PNG)
 
-con il **plug-in Microsoft.CognitiveServices.Speech.core** ancora selezionato, nella  finestra di controllo Abilita **lettore WSA** selezionare **UWP** per SDK, **ARM64** per LA CPU e fare clic su Applica per applicare queste impostazioni al plug-in.
+Con il **plug-in Microsoft.CognitiveServices.Speech.core** ancora selezionato, nella  finestra di controllo abilitare **WSA Player,** quindi in Impostazioni piattaforma selezionare **UWP** per SDK, **ARM64** per la CPU e fare clic su Applica per applicare queste impostazioni al plug-in.
 
 ![mrlearning-speech 6](images/mrlearning-speech/tutorial1-section4-step1-3.PNG)
 

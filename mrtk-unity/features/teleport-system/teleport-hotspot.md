@@ -7,12 +7,12 @@ ms.date: 03/25/2021
 ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, sistema di teletrasporto, hotspot di teletrasporto
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: 01ae900800c4a13ca7bafc3391ff51b752a95ae0
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 755b0e8f53be2f393b52395309ed9ab0fad96cadc2e4289400cfff45a99aa6a7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176202"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189461"
 ---
 # <a name="teleport-hotspot"></a>Hotspot di teletrasporto
 

@@ -5,75 +5,75 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, HandMenu,
-ms.openlocfilehash: 4f59f218acb569a996d18f4cd458c634807e9929
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: caf30496c9bd98bc4cefd50c8be723ea9924b8683773867286ac4898cd637014
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104686354"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213395"
 ---
 # <a name="hand-menu"></a>Menu a mano
 
-![Esempio di UX menu a mano](../images/solver/MRTK_UX_HandMenu.png)
+![Esempio di esperienza utente del menu a mano](../images/solver/MRTK_UX_HandMenu.png)
 
-I menu a mano consentono agli utenti di visualizzare rapidamente l'interfaccia utente collegata manualmente per le funzioni usate di frequente. Per evitare l'attivazione di false durante l'interazione con altri oggetti, il menu a mano fornisce opzioni come ' Richiedi mano piatta ' è usa lo sguardo di attivazione '. È consigliabile usare queste opzioni per impedire l'attivazione indesiderata.
+I menu a mano consentono agli utenti di visualizzare rapidamente l'interfaccia utente collegata a mano per le funzioni usate di frequente. Per impedire l'attivazione falsa durante l'interazione con altri oggetti, il menu a forma di mano offre opzioni come "Richiedi mano piatta" e "Usa attivazione sguardo fisso". È consigliabile usare queste opzioni per impedire l'attivazione indesiderata.
 
 ## <a name="hand-menu-examples"></a>Esempi di menu a mano
 
-La scena **HandMenuExamples. Unity** si trova nella ``MRTK/Examples/Demos/HandTracking/Scenes`` cartella. Quando è in esecuzione, la scena attiverà solo il tipo di menu attualmente selezionato.
+**La scena HandMenuExamples.unity** si trova nella ``MRTK/Examples/Demos/HandTracking/Scenes`` cartella . Quando è in esecuzione, la scena attiverà solo il tipo di menu attualmente selezionato.
 <br/><img src="../images/hand-menu/MRTK_HandMenu_ExampleScene.png" width="600px" alt="HandMenu_ExampleScene">
 
-È possibile trovare questi prefabbricati di menu della mano in ``MRTK/Examples/Demos/HandTracking/Prefabs`` cartella.
+È possibile trovare questi prefab del menu a mano nella ``MRTK/Examples/Demos/HandTracking/Prefabs`` cartella .
 
 ### <a name="handmenu_small_hideonhanddrop-and-handmenu_medium_hideonhanddrop"></a>HandMenu_Small_HideOnHandDrop e HandMenu_Medium_HideOnHandDrop
 
-Questi due esempi attivano e disattivano semplicemente l'oggetto MenuContent per visualizzare e nascondere il menu in **OnFirstHandDetected ()** e l'evento **OnLastHandLost ()** .
+Questi due esempi semplicemente attivano e disattivano l'oggetto MenuContent per visualizzare e nascondere il menu negli eventi **OnFirstHandDetected()** e **OnLastHandLost().**
 <br/><img src="../images/hand-menu/MRTK_HandMenu_Example1.png" width="600" alt="HandMenu_ExampleScene 1">
 <br/><img src="../images/hand-menu/MRTK_HandMenu_Example2.png" width="600" alt="HandMenu_ExampleScene 2">
 
 ### <a name="handmenu_large_worldlock_on_grabandpull"></a>HandMenu_Large_WorldLock_On_GrabAndPull
 
-Per i menu più complessi che richiedono tempi di interazione più lunghi, è consigliabile bloccare il menu in modo globale. In questo esempio, l'utente può eseguire il pull e il pull in un blocco globale del menu, oltre ad attivare e disattivare gli eventi MenuContent in **OnFirstHandDetected ()** e **OnLastHandLost ()** .
+Per menu più complessi che richiedono tempi di interazione più lunghi, è consigliabile bloccare il menu. In questo esempio, l'utente può afferrare e selezionare il menu per bloccare il mondo, oltre ad attivare e disattivare MenuContent negli eventi **OnFirstHandDetected()** e **OnLastHandLost().**
 <br/><img src="../images/hand-menu/MRTK_HandMenu_Example3.png" width="600" alt="HandMenu_ExampleScene 3">
 
-Il backplating `ManipulationHandler` lo rende afferrabile e mobile. All'evento di **manipolazione avviata** , **SolverHandler. UpdateSolvers** viene disattivato per bloccare il menu in modo globale. Inoltre, viene visualizzato il **pulsante Chiudi** per consentire all'utente di chiudere il menu al termine dell'attività. All'evento di **modifica terminata** , chiama **HandConstraintPalmUp. StartWorldLockReattachCheckCoroutine** per consentire all'utente di riportare il menu tramite la generazione e l'analisi del Palm.
+Il backplate `ManipulationHandler` lo rende afferrabile e mobile. **In caso di evento Manipulation Started,** **SolverHandler.UpdateSolvers** viene disattivato per bloccare il menu. Viene inoltre visualizzato il pulsante **Chiudi per consentire** all'utente di chiudere il menu al termine dell'attività. Nell'evento **Manipulation Ended** chiama **HandConstraintPalmUp.StartWorldLockReattachCheckCoroutine** per consentire all'utente di riportare il menu a portata di mano alzando e osservando il palmo.
 <br/><img src="../images/hand-menu/MRTK_HandMenu_Example4.png" width="600" alt="HandMenu_ExampleScene 4">
 
-Il pulsante **Chiudi** riattiva **SolverHandler. UpdateSolvers** e nasconde il **MenuContent**.
+**Il** pulsante Chiudi riattiva **SolverHandler.UpdateSolvers** e nasconde **MenuContent.**
 <br/><img src="../images/hand-menu/MRTK_HandMenu_Example5.png" alt="HandMenu_ExampleScene 5">
 
 ### <a name="handmenu_large_autoworldlock_on_handdrop"></a>HandMenu_Large_AutoWorldLock_On_HandDrop
 
-Questo esempio è simile a HandMenu_Large_WorldLock_On_GrabAndPull. L'unica differenza è che il menu verrà automaticamente bloccato a mano. Questa operazione viene eseguita semplicemente non nascondendo l'evento MenuContent in **OnLastHandLost ()** . Il comportamento di pull & è uguale a quello HandMenu_Large_WorldLock_On_GrabAndPull esempio.
+Questo esempio è simile a HandMenu_Large_WorldLock_On_GrabAndPull. L'unica differenza è che il menu verrà bloccato automaticamente al rilascio manuale. Questa operazione viene eseguita semplicemente non nascondendo MenuContent **nell'evento OnLastHandLost().** Il & pull è uguale a quello HandMenu_Large_WorldLock_On_GrabAndPull esempio.
 
 ## <a name="scripts"></a>Script
 
-Il [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) comportamento fornisce un risolutore che vincola l'oggetto rilevato a un'area sicura per il contenuto vincolato della mano, ad esempio l'interfaccia utente, i menu e così via. Le aree sicure sono considerate aree che non si intersecano con la mano. Viene inoltre inclusa una classe derivata di [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) chiamata [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) per illustrare un comportamento comune di attivazione dell'oggetto rilevato del Risolutore quando il Palm è rivolte all'utente.
+Il comportamento fornisce un risolutore che vincola l'oggetto tracciato a un'area sicura per il contenuto vincolato a mano (ad esempio interfaccia utente [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) manuale, menu e così via). Cassaforte aree sono considerate aree che non si intersecano con la mano. È inclusa anche una classe derivata di denominata per illustrare un comportamento comune di attivazione dell'oggetto tracciato dal risolutore quando il [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) palmo è rivolto verso l'utente.
 
-Per ulteriori informazioni, vedere le descrizioni comandi disponibili per ogni [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) Proprietà. Alcune proprietà sono definite in modo più dettagliato di seguito.
+Per altre informazioni, vedere le descrizioni comandi disponibili [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) per ogni proprietà. Di seguito sono riportate alcune proprietà definite in modo più dettagliato.
 
 <img src="../images/solver/MRTK_Solver_HandConstraintPalmUp.png" width="450" alt="HandMenu_ExampleScene Palm up">
 
-* **Area sicura**: l'area sicura specifica il punto in cui vincolare il contenuto. È consigliabile posizionare il contenuto sul lato ulnare per evitare sovrapposizioni con la mano e una migliore qualità di interazione. Le zone sicure vengono calcolate impostando l'orientamento delle mani proiettato in un piano ortogonale alla visualizzazione della fotocamera e Raycasting in base a un rettangolo di delimitazione delle mani. Le zone sicure sono definite per funzionare con [`IMixedRealityHand`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand) ma anche con altri tipi di controller. Si consiglia di esaminare il significato di ogni zona sicura su diversi tipi di controller.
+* **Cassaforte:** la zona sicura specifica dove vincolare il contenuto. È consigliabile inserire il contenuto sul lato Ulnar per evitare sovrapposizioni con la mano e migliorare la qualità dell'interazione. Cassaforte le zone vengono calcolate prendendo l'orientamento delle mani proiettato in un ortogonale piano per la visualizzazione della fotocamera e il raycasting su un rettangolo di selezione intorno alle mani. Cassaforte le zone sono definite per funzionare con [`IMixedRealityHand`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand) , ma funzionano anche con altri tipi di controller. È consigliabile esplorare ciò che ogni zona sicura rappresenta in diversi tipi di controller.
 
-* **Segui manualmente fino alla videocamera** Con questo attivo, il Risolutore seguirà la rotazione della mano fino a quando il menu non sarà sufficientemente allineato con lo sguardo, a quel punto la fotocamera. Questa operazione può essere eseguita modificando SolverRotationBehavior in HandConstraintSolver, da LookAtTrackedObject a LookAtMainCamera come l'angolo GazeAlignment con il Risolutore varia.
+* **Follow Hand Until Facing Camera (Segui mano fino alla fotocamera rivolta verso)** Con questo oggetto attivo, il risolutore seguirà la rotazione della mano fino a quando il menu non è sufficientemente allineato allo sguardo fisso, a quel punto si trova di fronte alla fotocamera. A tale scopo, modificare SolverRotationBehavior in HandConstraintSolver, da LookAtTrackedObject a LookAtMainCamera man mano che l'angolo di GazeAlignment con il risolutore varia.
 
 <img src="../images/solver/MRTK_Solver_HandConstraintSafeZones.png" width="450" alt="HandMenu Safe Zones">
 
-* **Eventi di attivazione**: attualmente [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) Attiva quattro eventi di attivazione. Questi eventi possono essere usati in molte combinazioni diverse per creare comportamenti univoci [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) `MRTK/Examples/Demos/HandTracking/Scenes/` . per esempi di questi comportamenti, vedere la scena HandBasedMenuExample in.
+* **Eventi di attivazione:** attualmente [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) attiva quattro eventi di attivazione. Questi eventi possono essere usati in molte combinazioni diverse per creare comportamenti univoci. Per esempi di questi comportamenti, vedi la scena [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) HandBasedMenuExample in `MRTK/Examples/Demos/HandTracking/Scenes/` .
 
-  * *OnHandActivate*: viene attivato quando una mano soddisfa il metodo IsHandActive.
-  * *OnHandDeactivate*: viene attivato quando il metodo IsHandActive non è più soddisfatto.
-  * *OnFirstHandDetected*: si verifica quando lo stato di rilevamento della mano passa da nessuna mano alla visualizzazione, fino alla prima mano nella visualizzazione.
-  * *OnLastHandLost*: si verifica in seguito alla modifica dello stato di rilevamento della mano da almeno una mano nella visualizzazione.
+  * *OnHandActivate:* si attiva quando una mano soddisfa il metodo IsHandActive.
+  * *OnHandDeactivate:* si attiva quando il metodo IsHandActive non è più soddisfatto.
+  * *OnFirstHandDetected:* si verifica quando lo stato di tracciamento della mano cambia da nessuna mano nella visualizzazione, alla prima mano nella visualizzazione.
+  * *OnLastHandLost:* si verifica quando lo stato di tracciamento della mano cambia da almeno una mano nella visualizzazione a nessuna mano nella visualizzazione.
 
-* **Logica di attivazione/disattivazione del Risolutore**: attualmente la raccomandazione per l'attivazione e la disattivazione della [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) logica consiste nell'usare il valore UpdateSolver di SolverHandler, invece di disabilitare o abilitare l'oggetto. Questo può essere visualizzato nella scena di esempio tramite gli hook basati su Editor attivati dopo gli eventi ManipulationHandler "OnManipulationStarted/ended" del menu associato.
+* Logica di **attivazione/disattivazione** del risolutore: attualmente è consigliabile attivare e disattivare la logica usando il valore [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) UpdateSolver di SolverHandler anziché disabilitando/abilitando l'oggetto. Questo può essere visualizzato nella scena di esempio tramite gli hook basati sull'editor attivati dopo gli eventi ManipulationHandler "OnManipulationStarted/Ended" del menu associato.
 
-  * *Arresto della logica del vincolo di mano*: quando si tenta di impostare l'oggetto vincolato della mano su Stop (oltre a non eseguire la logica di attivazione/disattivazione), impostare UpdateSolver su false anziché disabilitare HandConstraintPalmUp.
-    * Se si vuole abilitare la logica di riassociazione basata sullo sguardo (o anche senza sguardo), questo viene seguito chiamando la funzione HandConstraintPalmUp. StartWorldLockReattachCheckCoroutine (). Verrà attivata una coroutine che continua a controllare se i criteri "IsValidController" sono soddisfatti e imposterà UpdateSolver su true una volta (oppure l'oggetto è disabilitato)
-  * *Avvio della logica del vincolo di mano*: quando si tenta di impostare l'oggetto vincolato Hand per iniziare a seguire di nuovo la mano (a seconda che soddisfi i criteri di attivazione), impostare UpdateSolver di SolverHandler su true.
+  * Arresto della logica del vincolo di *mano:* quando si tenta di impostare l'arresto dell'oggetto con vincoli di mano (nonché di non eseguire la logica di attivazione/disattivazione), impostare UpdateSolver su False anziché disabilitare HandConstraintPalmUp.
+    * Se si vuole abilitare la logica di ricollegare basata su sguardo fisso (o anche non basata su sguardo fisso), questa operazione viene quindi seguita dalla chiamata della funzione HandConstraintPalmUp.StartWorldLockReattachCheckCoroutine(). Verrà attivata una coroutine che continua a verificare se i criteri "IsValidController" sono soddisfatti e imposta UpdateSolver su True dopo che è stato (o l'oggetto è disabilitato)
+  * Avvio della logica del vincolo di *mano:* quando si tenta di impostare l'oggetto con vincoli di mano per iniziare di nuovo a seguire la mano (a seconda che soddisfi i criteri di attivazione), impostare UpdateSolver di SolverHandler su true.
 
-* **Logica di riconnessione**: attualmente [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) è in grado di allineare automaticamente l'oggetto di destinazione al punto di rilevamento, indipendentemente dal fatto che il UpdateSolver di SolverHandler sia true o meno. Questa operazione viene eseguita tramite la chiamata della funzione StartWorldLockReattachCheckCoroutine () di HandConstraintPalmUp, dopo che è stata bloccata in modo globale, in questo caso l'impostazione del UpdateSolver di SolverHandler su false.
+* **Logica** di ricollegare: attualmente è in grado di ricollegare automaticamente l'oggetto di destinazione al punto tracciato, indipendentemente dal fatto che UpdateSolver di SolverHandler sia True o [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) meno. Questa operazione viene eseguita chiamando la funzione StartWorldLockReattachCheckCoroutine() di HandConstraintPalmUp, dopo che è stata bloccata a livello mondiale (che in questo caso sta effettivamente impostando UpdateSolver di SolverHandler su False).
 
 ## <a name="see-also"></a>Vedi anche
 

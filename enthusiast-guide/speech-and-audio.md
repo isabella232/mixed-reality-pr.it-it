@@ -1,77 +1,77 @@
 ---
-title: Domande frequenti su sintesi vocale e audio
-description: Risoluzione dei problemi della realtà mista di Windows vocale e audio che va oltre la documentazione standard del supporto clienti.
+title: Domande frequenti su voce e audio
+description: Riconoscimento vocale e audio Windows Mixed Reality risoluzione dei problemi che vanno oltre la documentazione di supporto per i consumer standard.
 ms.topic: article
-keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, risoluzione dei problemi, errori, guida, supporto tecnico, problemi audio, problemi di sintesi vocale
-ms.openlocfilehash: fff5d661dbe61d4c9364c83e3bd0c6ddb8ab5cc6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality, Realtà mista, Realtà virtuale, VR, MR, Risoluzione dei problemi, Errori, Guida, Supporto, Problemi audio, Problemi vocali
+ms.openlocfilehash: d1d30cebb40d54d579e978013b9abc60981fa943d43b95a96f358092631b4d27
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581417"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208981"
 ---
-# <a name="speech-and-audio-faqs"></a>Domande frequenti su sintesi vocale e audio
+# <a name="speech-and-audio-faqs"></a>Domande frequenti su voce e audio
 
-## <a name="i-cant-hear-any-sound-in-my-headset-or-sound-is-playing-through-my-computer-instead-of-my-headset"></a>Non è possibile udire alcun suono nell'auricolare o riprodurre un suono nel computer anziché nell'auricolare
+## <a name="i-cant-hear-any-sound-in-my-headset-or-sound-is-playing-through-my-computer-instead-of-my-headset"></a>Non è possibile ascoltare alcun suono nel visore o il suono viene riprodotto tramite il computer anziché tramite il visore
 
-* Se la cuffia a immersione non include le cuffie predefinite, connettere le cuffie al jack audio sull'auricolare. Il Jack è spesso posizionato dietro o sotto la visiera o le lenti dell'auricolare. Se non è possibile trovarlo, rivolgersi al produttore dell'auricolare.
-* Alcune cuffie audio dispongono di pulsanti fisici per controllare il volume. Se l'audio non funziona, controllare per verificare se il volume è disattivato o disattivato.
-* Audio passerà al dispositivo Windows playback predefinito: 
-    * Se si toglie l'auricolare
+* Se il visore vr immersivo non include le cuffia incorporate, connettere le cuffia al jack audio sul visore. Il jack si trova spesso dietro o sotto la visiera o le lenti. Rivolgersi al produttore del visore se non è possibile trovarlo.
+* Alcuni visori audio hanno pulsanti fisici per controllare il volume. Se l'audio non funziona, verificare se il volume è disattivato o disattivato.
+* L'audio passa al dispositivo di riproduzione Windows predefinito: 
+    * Se si tola il visore
     * Capovolgere la visiera verso l'alto
-    * Chiudere l'app del portale per la realtà mista
-    * Quando un'app non è stata usata per 15 minuti. 
-    * È possibile modificare questa impostazione in **impostazioni > realtà mista > audio e sintesi vocale.**
-* Assicurarsi che la cuffia audio sia collegata all'audio Jack. In particolare, l'auricolare Acer potrebbe richiedere maggiore attenzione per assicurarsi che la cuffia audio sia collegata.
-* Verificare che la cuffia audio/microfono sia collegata all'auricolare e non al PC.
-* Il pannello di controllo audio in **impostazioni > sistema > audio** Mostra solo gli endpoint audio abilitati, non gli endpoint disabilitati. Il dispositivo audio Headset verrà disabilitato quando non si utilizza l'auricolare. Per visualizzarlo, fare clic con il pulsante destro del mouse nel pannello di controllo audio e scegliere "Mostra dispositivi disabilitati". Il nome del dispositivo è "Realtek USB 2.0 audio", che può essere rinominato nella pagina "Properties". Questa operazione può essere eseguita sia per le schede di riproduzione che di registrazione.
-* Se l'audio non funziona in app a realtà mista, ad esempio, con l'app Netflix. Questa situazione potrebbe essere causata da un problema noto in cui la realtà mista di Windows non viene aggiornata automaticamente in modo da corrispondere alla versione del sistema operativo. Per risolvere questo problema e ottenere la migliore esperienza di realtà mista, passare a **impostazioni > aggiorna & sicurezza > Windows Update > verificare la disponibilità di aggiornamenti**.
+    * Chiudere l'app Portale realtà mista app
+    * Quando un'app non viene usata per 15 minuti. 
+    * È possibile modificare questa impostazione in Impostazioni > **realtà mista > audio e voce.**
+* Assicurarsi che il visore audio sia collegato al jack audio. Il visore Acer, in particolare, può richiedere maggiore attenzione per assicurarsi che il visore audio sia collegato.
+* Verificare che il microfono/visore audio sia collegato al visore e non al PC.
+* L'Pannello di controllo audio in **Impostazioni > Sistema > audio** mostra solo gli endpoint audio abilitati, non gli endpoint disabilitati. Il dispositivo audio visore sarà disabilitato quando non si indossa il visore. Per visualizzarlo, fare clic con il pulsante destro del mouse nell'Pannello di controllo audio e scegliere "Mostra dispositivi disabilitati". Il nome del dispositivo è "Realtek USB2.0 Audio", che può essere rinominato nella pagina "Proprietà". È possibile eseguire questa operazione sia per le schede di riproduzione che per la registrazione.
+* Se l'audio non funziona nelle app di realtà mista, ad esempio con l'app Netflix. Questo problema può essere causato da un problema noto per cui Windows Mixed Reality non viene aggiornato automaticamente in modo che corrisponda alla versione del sistema operativo. Per risolvere questo problema e ottenere la migliore esperienza di realtà mista, passare a Impostazioni > **Update & Security > Windows Update > Check for Updates**.
 
 > [!NOTE]
-> * L'audio spaziale della realtà mista di Windows funziona meglio con le cuffie incorporate o connesse direttamente all'auricolare immersivo. Gli altoparlanti PC o le cuffie connesse al PC potrebbero non funzionare correttamente per l'audio spaziale.
-> * La realtà mista di Windows non supporta le cuffie audio Bluetooth.
+> * Windows Mixed Reality'audio spaziale funziona meglio con le cuffia integrate o connesse direttamente al visore immersivo. Gli altoparlanti o le cuffia del PC connessi al PC potrebbero non funzionare correttamente per l'audio spaziale.
+> * Windows Mixed Reality non supporta l'Bluetooth visore audio.
 
-## <a name="im-experiencing-sudden-volume-changes-lost-audio-or-buzzing"></a>Si verificano modifiche improvvise del volume, audio perso o ronzio
+## <a name="im-experiencing-sudden-volume-changes-lost-audio-or-buzzing"></a>Si verificano cambiamenti improvvisi del volume, audio perso o ronzio
 
-* Alcune app, come quelle avviate tramite SteamVR, possono perdere audio o bloccarsi quando il dispositivo audio cambia quando si avvia o si arresta il portale di realtà mista. Per risolvere il problema, riaprire il portale per la realtà mista e riavviare l'app.
-* Se un altro dispositivo USB multimediale, ad esempio una web cam, condivide lo stesso hub USB interno o esterno con l'auricolare della realtà mista di Windows, le cuffie o i jack audio della cuffia potrebbero occasionalmente avere un segnale acustico o nessun audio. Collegare la cuffia a una porta USB che usa un hub diverso oppure disconnettere/disabilitare l'altro dispositivo multimediale USB.
-* Se si nota un forte aumento del rumore dalle cuffie connesse, l'hub USB del PC potrebbe non essere in grado di fornire una potenza sufficiente per l'auricolare della realtà mista di Windows. In tal caso, archiviare un bug dell' [Hub di feedback](/hololens/hololens-feedback) e provare a:
+* Alcune app, come quelle avviate tramite SteamVR, possono perdere l'audio o bloccarsi quando il dispositivo audio cambia all'avvio o all'arresto del Portale realtà mista. Per risolvere il problema, riaprire il Portale realtà mista e riavviare l'app.
+* Se un altro dispositivo USB multimediale (ad esempio una web cam) condivide lo stesso hub USB interno o esterno con il visore Windows Mixed Reality, il jack o le cuffia dell'audio del visore possono occasionalmente avere un suono ronzante o nessun audio. Collegare il visore a una porta USB che usa un hub diverso o disconnettere/disabilitare l'altro dispositivo multimediale USB.
+* Se si nota un forte rumore dalle cuffia connesse, l'hub USB del PC potrebbe non essere in grado di fornire potenza sufficiente al visore Windows Mixed Reality telefono. In questo caso, determinare un bug [Hub di Feedback](/hololens/hololens-feedback) e provare:
     * rimozione di cavi di estensione
-    * uso di un HUB USB 3,0 Basato su esterno dedicato
-    * una porta USB diversa del PC
+    * usando un HUB USB 3.0 dedicato e alimentato esternamente
+    * una porta USB diversa nel PC
 
-## <a name="my-bluetooth-audio-headset-isnt-working-as-expected"></a>La cuffia audio Bluetooth non funziona come previsto
+## <a name="my-bluetooth-audio-headset-isnt-working-as-expected"></a>Il Bluetooth visore audio non funziona come previsto
 
-Microsoft non consiglia di usare cuffie audio Bluetooth con la realtà mista di Windows. Le periferiche audio Bluetooth non funzionano bene con le esperienze di audio e spaziali della realtà mista di Windows. Le cuffie audio Bluetooth non supportano l'input del microfono e l'output stereo allo stesso tempo, quindi non si riceverà un suono stereo o spaziale quando lo si usa per gamechat o altro input vocale. Le cuffie audio Bluetooth possono anche influire negativamente sull'esperienza del controller di movimento.
+Microsoft non consiglia di usare Bluetooth visori audio con Windows Mixed Reality. Bluetooth periferiche audio non funzionano correttamente con le esperienze Windows Mixed Reality voce e del suono spaziale. Bluetooth visori audio non possono supportare contemporaneamente l'input del microfono e l'output stereo, quindi non si ode un suono stereo o spazializzato quando lo si usa per gamechat o altri input vocali. Bluetooth visori audio possono influire negativamente sull'esperienza del controller di movimento.
 
-## <a name="sound-isnt-coming-from-expected-directions"></a>Il suono non è proveniente dalle direzioni previste
+## <a name="sound-isnt-coming-from-expected-directions"></a>Il suono non proviene dalle direzioni previste
 
-La Home realtà mista di Windows include il suono spaziale (audio che sembra provenga dalle applicazioni presenti nella Home Page). Man mano che ci si sposta e si passa da un'app all'altra, la direzione e il livello audio vengono modificati per aumentare il senso di realismo. Di seguito sono riportate alcune possibili cause di indicazioni non previste:
+La Windows Mixed Reality Home include il suono spaziale (audio che sembra derivare dalle applicazioni che si trovano nella home page). Quando ci si volta e ci si avvicina o si allontana da ogni app, la direzione e il livello del suono cambieranno per aumentare il senso di realistico. Di seguito sono riportati alcuni possibili motivi per indicazioni sonore impreviste:
 
-* Se si apre e si riproduce musica da un'app musicale in grado di supportare in background (ad esempio Groove Music) a casa e si apre un'esperienza di VR immersiva come un gioco, l'audio dalle dissolvenze delle app musicali da un suono spaziale a uno stereo. Potrebbe sembrare più rumoroso perché non c'è più nessuna distanza tra l'utente e il suono.
-* Se Cortana è stato abilitato nel PC prima di usare l'auricolare con la realtà mista di Windows, è possibile perdere il suono spaziale applicato alle app nella Home realtà mista di Windows. Per risolvere il problema, disattivare "Let Cortana rispondere a Hey Cortana" in **Settings > Cortana** sul desktop prima di avviare la realtà mista di Windows o abilitare "Windows Sonic per le cuffie":
-    1. Passare alla finestra app desktop nella Home page della realtà mista di Windows.
-    2. Fare clic sull'icona dell'altoparlante sulla barra delle applicazioni del desktop e selezionarla nell'elenco dei dispositivi audio.
-    3. Fare clic con il pulsante destro del mouse sull'icona dell'altoparlante sulla barra delle applicazioni del desktop e selezionare "Windows Sonic per le cuffie" nel menu "impostazione del relatore".
+* Se si apre e si riproduce musica da un'app di musica con supporto per il sottofondo (ad esempio Groove Musica) in casa e quindi si apre un'esperienza VR immersiva come un gioco, il suono dell'app per la musica si incrocia dal suono spaziale allo stereo. Potrebbe sembrare più forte perché non c'è più distanza tra l'utente e il suono.
+* Se l'Cortana è stata abilitata nel PC prima di usare il visore Windows Mixed Reality, è possibile che il suono spaziale applicato alle app nella Windows Mixed Reality home. Per risolvere questo problema, disattivare "Consenti Cortana di rispondere a Hey Cortana" in **Impostazioni > Cortana** sul desktop prima di avviare Windows Mixed Reality o abilitare "Windows Sonic per cuffie":
+    1. Passare alla finestra Dell'app desktop in Windows Mixed Reality home page.
+    2. Fare clic con il pulsante sinistro del mouse sull'icona del parlante sulla barra delle applicazioni desktop e selezionarla nell'elenco dei dispositivi audio.
+    3. Fare clic con il pulsante destro del mouse sull'icona del parlante sulla barra delle applicazioni desktop e scegliere "Windows Sonic per cuffie" nel menu "Configurazione del parlante".
     4. Ripetere questi passaggi per tutti i dispositivi audio (endpoint).
 
-## <a name="speech-commands-are-not-working-as-expected"></a>I comandi di sintesi vocale non funzionano come previsto
+## <a name="speech-commands-are-not-working-as-expected"></a>I comandi vocali non funzionano come previsto
 
-* Per usare i comandi vocali, le impostazioni vocali e della lingua del PC devono essere impostate su una [lingua supportata in realtà mista di Windows](https://support.microsoft.com/help/4039262/windows-10-mixed-reality-setup-faq#Languages). Per verificare le impostazioni relative alla lingua e al linguaggio Windows, selezionare **impostazioni > ora & lingua > area & lingua** e **Impostazioni > lingua & lingua > voce**.
-* Se la cuffia non ha un microfono incorporato, sarà necessario associare le cuffie con un microfono alla cuffia o al PC. Per fare in modo che l'input del microfono passa automaticamente all'auricolare quando lo si indossa, passare a **impostazioni > realtà mista > audio e vocale** e attivare "quando si indossa la cuffia, passare alla cuffia auricolare".
-* Alcune cuffie audio hanno un pulsante fisico per disattivare e disattivare il microfono. Se i comandi di sintesi vocale non funzionano, verificare se il microfono è disattivato.
-* Le cuffie audio con un microfono che penzola dal cavo di auricolari non vengono eseguite correttamente per i comandi vocali negli ambienti con rumore di ambiente.
-* Cortana può essere lento la prima volta che viene richiamato in una sessione del portale per realtà mista. Passare a **impostazioni > Cortana > comunicare con Cortana** e assicurarsi che "Let Cortana Rispondi a Hey Cortana" sia abilitato.
-* In alcuni PC, il guadagno predefinito di acquisizione voce per il microfono collegato all'auricolare può essere impostato su un valore troppo basso. Se si riscontrano comandi vocali o dettature non affidabili, eseguire la risoluzione dei problemi di installazione del microfono:
-    1. Passare all'app desktop nella Home realtà mista di Windows con la cuffia (per influire sul microfono usato per la realtà mista di Windows).
-    2. Passare a **impostazioni > ora & lingua > voce**.
-    3. Selezionare "Get Started" nella sezione "Microphone".
+* Per usare i comandi vocali, le impostazioni vocali e della lingua nel PC devono essere impostate su una lingua [supportata in Windows Mixed Reality](https://support.microsoft.com/help/4039262/windows-10-mixed-reality-setup-faq#Languages). Per controllare le impostazioni relative Windows voce e lingua, selezionare Impostazioni > **Time & language > Region & language** e Impostazioni > Time & language > **Speech**.
+* Se l'headset non ha un microfono incorporato, è necessario collegare le cuffia con un microfono al visore o al PC. Per fare in modo che l'input del microfono commuti automaticamente al visore quando lo si indossa, passare **a Impostazioni > Realtà** mista > Audio e voce e attivare "Quando indossi il visore, passa al microfono visore".
+* Alcuni visori audio hanno un pulsante fisico per disattivare e riattivare il microfono. Se i comandi vocali non funzionano, verificare se il microfono è disattivato.
+* I visori audio con un microfono che pentola dal cavo dell'auricolare non sono molto utilizzati per i comandi vocali in ambienti con rumore ambientale.
+* Cortana può essere lenta la prima volta che viene richiamata in una Portale realtà mista sessione. Passare a **Impostazioni > Cortana > Talk to Cortana** (Consenti Cortana rispondere a Hey Cortana) sia abilitato.
+* In alcuni PC, il guadagno di acquisizione vocale predefinito per il microfono connesso con visore potrebbe essere impostato su un valore troppo basso. Se si verificano comandi vocali o dettatura inaffidabili, eseguire lo strumento di risoluzione dei problemi di Configurazione microfono:
+    1. Passare all'app Desktop nella casa Windows Mixed Reality mentre si indossa il visore (per influire sul microfono che si usa per Windows Mixed Reality).
+    2. Passare a **Impostazioni > ora & lingua > voce**.
+    3. Selezionare "Informazioni di base" nella sezione "Microfono".
     4. Selezionare l'endpoint appropriato nella procedura guidata per la risoluzione dei problemi.
 
-## <a name="i-only-have-one-audio-headset-and-i-want-to-use-it-for-both-desktop-and-my-headset"></a>Ho una sola cuffia audio e voglio usarla sia per il desktop sia per la cuffia
+## <a name="i-only-have-one-audio-headset-and-i-want-to-use-it-for-both-desktop-and-my-headset"></a>Ho un solo visore audio e voglio usarlo sia per desktop che per il visore
 
-Se è presente una sola cuffia audio e non è presente una cuffia con cuffie predefinite, connettere la cuffia audio al PC anziché l'auricolare. Disattivare quindi "passa a audio cuffia" nelle impostazioni del portale per la realtà mista.
+Se si ha un solo visore audio e non si dispone di un visore con le cuffia incorporate, connettere il visore audio al PC anziché al visore. Disattivare quindi l'opzione "Passa all'audio del visore" nelle impostazioni Portale realtà mista video.
 
-## <a name="i-want-to-switch-to-dolby-atmos-for-headphones"></a>Desidero passare a Dolby Atmos per le cuffie
+## <a name="i-want-to-switch-to-dolby-atmos-for-headphones"></a>Si vuole passare a Dolby Atmos for Headphones
 
-Gli ambienti di realtà mista di Windows e le relative app utilizzano la tecnologia audio spaziale Windows Sonic per le cuffie, che è personalizzata per le esperienze di realtà miste. È possibile applicare altre tecnologie audio spaziali, ad esempio Dolby Atmos per le cuffie, per app a schermo intero come SteamVR, ma non per le app e gli ambienti della shell della realtà mista di Windows, ad esempio l'inserimento di un Web browser sul muro di Cliff House o Sky Loft, progettati con Windows Sonic per le cuffie acustiche e acustici spaziali.
+Windows Mixed Reality ambienti e le relative app usano Windows Sonic per cuffie audio spaziale, che è personalizzata per le esperienze di realtà mista. Altre tecnologie di audio spaziale, ad esempio Dolby Atmos for Headphones, possono essere applicate per app a schermo intero come giochi di SteamVR, ma non per gli ambienti e le app della shell di Windows Mixed Reality (ad esempio, l'inserimento di un Web browser sulla parete del Casa sulla scogliera o sky sky) progettate usando il suono spaziale e l'acustica di Windows Sonic per cuffie.

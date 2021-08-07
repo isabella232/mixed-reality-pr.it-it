@@ -5,18 +5,18 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 95af19b71a9fe06dabad058e75f78d951262ba4a
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: aa583876d4ca9e115d4ea4507638eebab838207230693cb7c24b781d8f0b020b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175350"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210722"
 ---
 # <a name="documentation-guidelines"></a>Linee guida per la documentazione
 
 <img src="../features/images/MRTK_Logo_Rev.png" alt="MRTK">
 
-Questo documento illustra le linee guida e gli standard della documentazione per l'Toolkit (MRTK) di realtà mista. Viene fornita un'introduzione agli aspetti tecnici della scrittura e della generazione della documentazione, per evidenziare le insidie comuni e per descrivere lo stile di scrittura consigliato.
+Questo documento illustra le linee guida e gli standard della documentazione per Mixed Reality Toolkit (MRTK). Viene fornita un'introduzione agli aspetti tecnici della scrittura e della generazione della documentazione, per evidenziare le insidie comuni e per descrivere lo stile di scrittura consigliato.
 
 La pagina stessa dovrebbe fungere da esempio, pertanto usa lo stile previsto e le funzionalità di markup più comuni della documentazione.
 
@@ -34,17 +34,17 @@ In questa sezione vengono descritte le funzionalità necessarie di frequente. Pe
 
 1. Elenchi numerati
    1. Elenchi numerati annidati con almeno 3 spazi vuoti iniziali
-   1. Il numero effettivo nel codice è irrilevante. l'analisi si occuperà di impostare il numero di elemento corretto.
+   1. Il numero effettivo nel codice è irrilevante. L'analisi si occuperà di impostare il numero di elemento corretto.
 
 - Elenchi puntati
-  - Elenchi puntati annidati
-- Testo in **grassetto con** \* \* doppio asterisco\*\*
-- _testo in_ *corsivo* con \_ carattere di \_ sottolineatura o \* asterisco singolo\*
+  - Elenchi di punti elenco annidati
+- Testo in **grassetto con** doppio \* \* asterisco\*\*
+- _testo in_ *corsivo* con carattere \_ di \_ sottolineatura o \* asterisco singolo\*
 - Testo `highlighted as code` all'interno di una \` frase usando le virgolette\`
-- Collegamenti alle pagine della documentazione [delle linee guida per la documentazione di MRTK](documentation-guide.md)
-- Collegamenti agli [ancoraggi all'interno di una pagina](#style). Gli ancoraggi vengono formati sostituendo gli spazi con trattini e convertendo in lettere minuscole
+- Collegamenti alle pagine della documentazione linee [guida per la documentazione di MRTK](documentation-guide.md)
+- Collegamenti agli [ancoraggi all'interno di una pagina;](#style) Gli ancoraggi vengono formati sostituendo gli spazi con trattini e convertendo in minuscolo
 
-Per gli esempi di codice si usano i blocchi con tre backtick e si specifica csharp come linguaggio per \` \` \` l'evidenziazione della sintassi: 
+Per gli esempi di codice si usano i blocchi con tre puntini di secondo e si specifica csharp come linguaggio per \` \` \` l'evidenziazione della sintassi: 
 
 ```c#
 int SampleFunction(int i)
@@ -57,18 +57,18 @@ Quando si cita il codice all'interno di una frase `use a single backtick` .
 
 ### <a name="todos"></a>Todos
 
-Evitare l'uso di TODO nella documentazione, perché nel corso del tempo questi TODO (ad esempio toDO di codice) tendono ad accumularsi e informazioni su come devono essere aggiornati e perché si perdono.
+Evitare di usare gli oggetti TODO nella documentazione, perché nel corso del tempo questi todo (ad esempio gli elementi TOTOD del codice) tendono ad accumularsi e a ottenere informazioni su come devono essere aggiornati e sul motivo per cui si perdono.
 
-Se è assolutamente necessario aggiungere un TODO, seguire questa procedura:
+Se è assolutamente necessario aggiungere un todo, seguire questa procedura:
 
-1. Creare un nuovo problema su Github che descrive il contesto alla base del TODO e fornire informazioni sufficienti che un altro collaboratore sarebbe in grado di comprendere e quindi risolvere il TODO.
+1. Descrizione del contesto alla base del TODO in GitHub e informazioni di base sufficienti per consentire a un altro collaboratore di comprendere e quindi risolvere il problema.
 2. Fare riferimento all'URL del problema nella todo nella documentazione.
 
 \<\!-- TODO[https://github.com/microsoft/MixedRealityToolkit-Unity/issues/ISSUE_NUMBER_HERE](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/ISSUE_NUMBER_HERE): A brief blurb on the issue --\>
 
 ### <a name="highlighted-sections"></a>Sezioni evidenziate
 
-Per evidenziare punti specifici per il lettore, *> [!NOTE]* usare , e per produrre gli stili *> [!WARNING]* *> [!IMPORTANT]* seguenti. È consigliabile usare le note per i punti generali e i punti di avviso/importanti solo per casi speciali rilevanti.
+Per evidenziare punti specifici del lettore, usare *> [!NOTE]* , e per produrre gli stili *> [!WARNING]* *> [!IMPORTANT]* seguenti. È consigliabile usare le note per i punti generali e i punti di avviso/importanti solo per casi speciali rilevanti.
 
 > [!NOTE]
 > Esempio di nota
@@ -83,7 +83,7 @@ Per evidenziare punti specifici per il lettore, *> [!NOTE]* usare , e per produr
 
 ### <a name="introduction"></a>Introduzione
 
-La parte subito dopo il titolo del capitolo principale deve fungere da breve introduzione sul capitolo. Non renderlo troppo lungo, ma aggiungere titoli secondari. Questi consentono di collegarsi alle sezioni e possono essere salvati come segnalibri.
+La parte subito dopo il titolo del capitolo principale deve essere una breve introduzione sul capitolo. Non rendere questa operazione troppo lunga, ma aggiungere titoli secondari. Questi consentono di collegarsi alle sezioni e possono essere salvati come segnalibri.
 
 ### <a name="main-body"></a>Corpo principale
 
@@ -91,52 +91,52 @@ Usare titoli a due e tre livelli per strutturare il resto.
 
 **Mini sezioni**
 
-Usare una riga di testo in grassetto per i blocchi che devono distinguersi. È possibile sostituirlo con titoli a quattro livelli a un certo punto.
+Usare una riga di testo in grassetto per i blocchi che devono distinguersi. Questo potrebbe essere sostituito da titoli in quattro livelli a un certo punto.
 
 ### <a name="see-also-section"></a>Sezione "Vedere anche"
 
-La maggior parte delle pagine deve terminare con un capitolo *denominato Vedere anche*. Questo capitolo è semplicemente un elenco puntato a un elenco puntato di collegamenti a pagine correlate a questo argomento. Questi collegamenti possono anche essere visualizzati all'interno del testo della pagina, se appropriato, ma non è obbligatorio. Analogamente, il testo della pagina può contenere collegamenti a pagine non correlate all'argomento principale, che non devono essere incluse *nell'elenco* Vedere anche. Vedere [il capitolo "Vedere anche"](#see-also) di questa pagina come esempio per la scelta dei collegamenti.
+La maggior parte delle pagine deve terminare con un capitolo denominato *Vedere anche*. Questo capitolo è semplicemente un elenco puntato di collegamenti a pagine correlate a questo argomento. Questi collegamenti possono anche essere visualizzati all'interno del testo della pagina, dove appropriato, ma questa operazione non è necessaria. Analogamente, il testo della pagina può contenere collegamenti a pagine non correlate all'argomento principale, che non devono essere incluse nell'elenco *Vedere* anche. Vedere [il capitolo "Vedere anche"](#see-also) di questa pagina come esempio per la scelta dei collegamenti.
 
 ## <a name="table-of-contents-toc"></a>Sommario
 
 I file toc vengono usati per generare le barre di spostamento nella documentazione github.io MRTK.
-Ogni volta che viene aggiunto un nuovo file di documentazione, assicurarsi che sia presente una voce per tale file in uno dei file toc.yml della cartella della documentazione. Solo gli articoli elencati nei file toc verranno visualizzati nel riquadro di spostamento della documentazione per sviluppatori. Può essere presente un file toc per ogni sottocartella nella cartella della documentazione che può essere collegata a qualsiasi file di sommario esistente per aggiungerlo come sottosezione alla parte corrispondente della navigazione.
+Ogni volta che viene aggiunto un nuovo file di documentazione, assicurarsi che sia presente una voce per tale file in uno dei file toc.yml della cartella della documentazione. Solo gli articoli elencati nei file di sommario verranno visualizzati nella navigazione della documentazione per sviluppatori. Può essere presente un file di sommario per ogni sottocartella nella cartella della documentazione che può essere collegato a qualsiasi file di sommario esistente per aggiungerlo come sottosezione alla parte corrispondente della navigazione.
 
 ## <a name="style"></a>Stile
 
 ### <a name="writing-style"></a>Stile di scrittura
 
-Regola generale: provare a sembrare **professionale.** Questo significa in genere evitare un "tono di conversazione". Provare anche a evitare iperboli e sensazionalismi.
+Regola generale: provare a sembrare **professionale.** Ciò significa in genere evitare un "tono colloquiale". Provare anche a evitare iperboli e emozionanti.
 
-1. Non provare a essere (e troppo) divertente.
+1. Non tentare di essere (e troppo) insoddrò.
 2. Non scrivere mai 'I'
-3. Evitare "we". Questo può essere in genere riformiedato facilmente, usando invece "MRTK". Esempio: "questa funzionalità è supportata" -> "MRTK supporta questa funzionalità" o "sono supportate le funzionalità seguenti...".
-4. Analogamente, provare a evitare 'you'. Esempio: "Con questa semplice modifica lo shader diventa configurabile!" -> "Gli shader possono essere resi configurabili con poco sforzo".
+3. Evitare "we". Questa operazione può essere in genere riformiedata facilmente, usando invece "MRTK". Esempio: "questa funzionalità è supportata" -> "MRTK supporta questa funzionalità" o "le funzionalità seguenti sono supportate...".
+4. Analogamente, provare a evitare "you". Esempio: "Con questa semplice modifica lo shader diventa configurabile!" -> "Gli shader possono essere resi configurabili con un minimo sforzo".
 5. Non usare "frasi sloppy".
-6. Evitare di sembrare troppo emozionati, non è necessario vendere nulla.
-7. Analogamente, evitare di essere troppo drastici. I punti esclamativi sono raramente necessari.
+6. Evitare di sembrare emozionati e non è necessario vendere nulla.
+7. Allo stesso modo, evitare di essere troppo erre. I punti esclamativi sono raramente necessari.
 
 ### <a name="capitalization"></a>Uso delle maiuscole
 
-- Usare **la distinzione tra maiuscole e minuscole per i titoli.** Ad esempio: in maiuscolo la prima lettera e i nomi, ma non altro.
-- Usare l'inglese normale per tutto il resto. Ciò significa **che le parole arbitrarie non** vengono maiuscole, anche se contengono un significato speciale in tale contesto. Preferire *il testo in corsivo* per evidenziare determinate parole, vedere di [seguito](#emphasis-and-highlighting).
-- Quando un collegamento viene incorporato in una frase (che è il metodo preferito), il nome del capitolo standard usa sempre lettere maiuscole, interrompendo così la regola di nessuna maiuscola arbitraria all'interno del testo. Usare quindi un nome di collegamento personalizzato per correggere le maiuscole e minuscole. Ad esempio, di seguito è riportato un collegamento alla documentazione [sul controllo bounds.](../features/ux-building-blocks/bounds-control.md)
-- Non utilizzare le maiuscole per i nomi, ad *esempio Unity.*
-- Non scrivere in maiuscolo "editor" durante la scrittura *dell'editor di Unity.*
+- Usare **la distinzione tra maiuscole e minuscole per i titoli**. Ad esempio: in maiuscolo la prima lettera e i nomi, ma non altro.
+- Usare l'inglese normale per tutti gli altri elementi. Ciò significa **che le parole arbitrarie non** vengono maiuscole, anche se contengono un significato speciale in tale contesto. Preferire *il testo in corsivo* per l'evidenziazione di determinate [parole, vedere di seguito.](#emphasis-and-highlighting)
+- Quando un collegamento è incorporato in una frase (metodo preferito), il nome del capitolo standard usa sempre lettere maiuscole, interrompendo così la regola di nessuna combinazione arbitraria di maiuscole e minuscole all'interno del testo. Usare quindi un nome di collegamento personalizzato per correggere l'uso di maiuscole e minuscole. Di seguito è riportato, ad esempio, un collegamento alla documentazione [relativa al controllo dei](../features/ux-building-blocks/bounds-control.md) limiti.
+- Non convertire in lettere maiuscole i nomi, ad *esempio Unity.*
+- NON scrivere in maiuscolo l'"editor" quando si scrive *l'editor di Unity.*
 
 ### <a name="emphasis-and-highlighting"></a>Enfasi ed evidenziazione
 
-Esistono due modi per evidenziare o evidenziare le parole, rendendole in grassetto o in corsivo. L'effetto del testo  in grassetto è che il testo in grassetto viene visualizzato in grassetto e quindi può essere notato facilmente durante lo scorrimento di una parte di testo o persino semplicemente lo scorrimento su una pagina. Il grassetto è ideale per evidenziare le frasi che gli utenti devono ricordare. Tuttavia, **usare raramente il testo in grassetto** perché in genere distrae.
+Esistono due modi per evidenziare o evidenziare le parole, rendendole in grassetto o corsivo. L'effetto del testo  in grassetto è che il testo in grassetto si disalva e pertanto può essere facilmente notato durante lo scorrimento di una parte di testo o anche solo lo scorrimento su una pagina. Il grassetto è ideale per evidenziare le frasi che gli utenti devono ricordare. Tuttavia, **utilizzare il testo in grassetto raramente**, perché in genere è fonte di distrazione.
 
-Spesso si vuole "raggruppare" qualcosa che appartiene logicamente insieme o evidenziare un termine specifico, perché ha un significato speciale. Non è necessario che tali elementi si distinguono dal testo complessivo. Usare il testo in corsivo come *metodo leggero per* evidenziare qualcosa.
+Spesso si vuole "raggruppare" un elemento che appartiene logicamente o evidenziare un termine specifico, perché ha un significato speciale. Non è necessario che tali elementi si distinguono dal testo complessivo. Usare il testo in corsivo come *metodo leggero per* evidenziare un elemento.
 
-Analogamente, quando un nome file, un percorso o una voce di menu è indicato nel testo, preferisce renderlo corsivo per raggrupparlo in modo logico, senza distrarre.
+Analogamente, quando un nome file, un percorso o una voce di menu viene menzionato nel testo, preferisce renderlo corsivo per raggrupparlo in modo logico, senza distrarlo.
 
-In generale, provare a evitare **l'evidenziazione del testo non necessaria.** I termini speciali possono essere evidenziati una sola volta per rendere il lettore consapevole, non ripetere tale evidenziazione in tutto il testo, quando non serve più a scopo e distrae solo.
+In generale, provare a evitare **l'evidenziazione del testo non necessaria.** I termini speciali possono essere evidenziati una sola volta per rendere il lettore consapevole, non ripetere tale evidenziazione in tutto il testo, quando non serve più a nessuno scopo e si distrae solo.
 
 ### <a name="mentioning-menu-entries"></a>Menzione delle voci di menu
 
-Quando si fa riferimento a una voce di menu su cui un utente deve fare clic, la convenzione corrente è: Project > *File > Crea > Foglia*
+Quando si cita una voce di menu su cui un utente deve fare clic, la convenzione corrente è: Project > *Files > Create > Leaf*
 
 ### <a name="links"></a>Collegamenti
 
@@ -310,11 +310,11 @@ When using the spatial mapping component, the performance impact will increase w
 It is recommended to use the least detail possible for the desired experience.
 ```
 
-Le note sulle prestazioni sono consigliate per i componenti con utilizzo elevato di CPU e/o GPU e possono **essere** richieste come parte di una revisione della richiesta pull. Eventuali note sulle prestazioni applicabili devono essere incluse nella documentazione di API **e** panoramica.
+Le note sulle prestazioni sono consigliate per i componenti con utilizzo elevato di CPU e/o GPU e possono **essere** richieste come parte di una revisione della richiesta pull. Eventuali note sulle prestazioni applicabili devono essere incluse nella documentazione dell'API **e** della panoramica.
 
 ## <a name="breaking-changes"></a>Modifiche che causano un'interruzione
 
-La documentazione relativa alle modifiche di rilievo è costituita da un [file](../contributing/breaking-changes.md) di primo livello che si collega alle singole aree di funzionalità breaking-changes.md.
+La documentazione sulle modifiche che causano un'interruzione è costituita da un [file](../contributing/breaking-changes.md) di primo livello che si collega alle singole aree di breaking-changes.md.
 
 L'area breaking-changes.md file deve contenere l'elenco di tutte le  modifiche di rilievo note per una determinata versione, nonché la cronologia delle modifiche di rilievo rispetto alle versioni precedenti.
 
@@ -334,7 +334,7 @@ No known breaking changes
 ...
 ```
 
-Le informazioni contenute nel livello di breaking-changes.md file verranno aggregate alle note sulla versione per ogni nuova versione di MRTK.
+Le informazioni contenute nel livello di funzionalità breaking-changes.md file verranno aggregate alle note sulla versione per ogni nuova versione di MRTK.
 
 Tutte le modifiche di rilievo che fanno parte di una modifica **devono** essere documentate come parte di una richiesta pull.
 
@@ -344,12 +344,12 @@ Tutte le modifiche di rilievo che fanno parte di una modifica **devono** essere 
 
 Quando si scrive la documentazione, è consigliabile installare anche le due estensioni seguenti:
 
-- Estensione Docs Markdown per Visual Studio Code: usare ALT+M per visualizzare un menu di opzioni di creazione della documentazione.
+- Estensione Docs Markdown per Visual Studio Code: usare ALT+M per visualizzare un menu di opzioni di creazione di documenti.
 
-- Controllo ortografico del codice: le parole con errori di ortografia verranno sottolineate. Fare clic con il pulsante destro del mouse su una parola con errori di ortografia per modificarla o salvarla nel dizionario.
+- Controllo ortografico del codice: le parole con errori di ortografia verranno sottolineate; Fare clic con il pulsante destro del mouse su una parola con errori di ortografia per modificarla o salvarla nel dizionario.
 
 Entrambi i pacchetti sono in pacchetto in Docs Authoring Pack pubblicato da Microsoft.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Collegamento "see also" di esempio per la documentazione](https://www.microsoft.com)
+- [Collegamento "vedere anche" di esempio per la documentazione](https://www.microsoft.com)

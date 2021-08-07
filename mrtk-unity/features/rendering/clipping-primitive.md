@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, primitiva di ritaglio,
-ms.openlocfilehash: c3331084f87ccc57208426910d84ed7bef457bc1
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 1feecbbd51eb80ff6113e66d053f032acb3005b9c7d1debbd5dfd46da0925798
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176746"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214414"
 ---
 # <a name="clipping-primitive"></a>Primitiva di ritaglio
 
@@ -123,6 +123,6 @@ public class SecondClippingBox : ClippingBox
 
 Infine, aggiungere un [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) componente e SecondClippingBox alla scena e specificare lo stesso renderer per entrambe le caselle. Il renderer dovrebbe ora essere ritagliato da entrambe le caselle contemporaneamente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [MRTK Standard Shader](mrtk-standard-shader.md)

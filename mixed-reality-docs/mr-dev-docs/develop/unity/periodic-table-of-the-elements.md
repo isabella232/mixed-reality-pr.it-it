@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, progettazione, app di esempio, controlli, MRTK, Mixed Reality Toolkit, Unity, app di esempio, app di esempio, open source, Microsoft Store, HoloLens, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale
-ms.openlocfilehash: 2856d9052f9e1d07b2f796cafeb96fb0cdef63e8
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: aab6789939823b8c6e200bb5456118002b848e3c2f166abe50d4788ac8e7430d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757308"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211886"
 ---
 # <a name="periodic-table-of-the-elements"></a>Tavola periodica degli elementi
 ![Tabella Period dell'app Elements](../images/MRDL_PeriodicTable_HL1.jpg)
@@ -36,7 +36,7 @@ La tabella periodica degli elementi visualizza gli elementi chimica e ognuna del
 
 ## <a name="background"></a>Sfondo
 
-Dopo aver provato HoloLens, ho provato a sperimentare con un'app di tabella periodica in realtà mista. Poiché ogni elemento ha molti punti dati visualizzati con testo, ho pensato che fosse un argomento molto importante per l'esplorazione della composizione tipografica in uno spazio 3D. Offrire agli utenti la possibilità di visualizzare il modello di elettroni dell'elemento è stata un'altra parte interessante di questo progetto.
+Dopo aver provato HoloLens, ho provato a sperimentare con un'app di tabella periodica in realtà mista. Poiché ogni elemento ha molti punti dati visualizzati con testo, ho pensato che fosse un argomento molto importante per esplorare la composizione tipografica in uno spazio 3D. Offrire agli utenti la possibilità di visualizzare il modello di elettroni dell'elemento è stata un'altra parte interessante di questo progetto.
 
 ## <a name="design"></a>Progettazione
 
@@ -52,7 +52,7 @@ Nella visualizzazione dettagli, si desidera visualizzare le informazioni di ogni
 ![Prototipi](images/640px-periodictable-prototypes.jpg)<br>
 *Prototipi di interazione*
 
-L'utente può modificare il tipo di superficie toccando i pulsanti nella parte inferiore della tabella, che possono passare da piano, cilindro, sfera e dispersione.
+L'utente può modificare il tipo di superficie toccando in aria i pulsanti nella parte inferiore del tavolo, che possono passare da piano, cilindro, sfera e dispersione.
 
 ## <a name="common-controls-and-patterns-used-in-this-app"></a>Controlli e modelli comuni usati in questa app
 
@@ -90,7 +90,7 @@ Leggere la storia su come la tabella periodica dell'app Elements è stata aggior
 </tr>
 </table>
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Hub di esempi MRTK](/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub) - [(eseguire il download da Microsoft Store in HoloLens 2)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Superfici](sampleapp-surfaces.md) - [(eseguire il download da Microsoft Store in HoloLens 2)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)

@@ -5,22 +5,22 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, InputState,
-ms.openlocfilehash: 8035da588b16ef8f2149fd91abe9c811d317c114
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 31a39c236f066cb0883cc3c84a9be75ccd32345f3114133233a1c738fea7a043
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685274"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209231"
 ---
 # <a name="accessing-input-state-in-mrtk"></a>Accesso allo stato di input in MRTK
 
-È possibile eseguire una query direttamente sullo stato di tutti gli input in MRTK scorrendo i controller collegati alle origini di input. MRTK fornisce anche metodi pratici per accedere alla posizione e alla rotazione degli occhi, delle mani, della testa e del controller di movimento.
+È possibile eseguire direttamente query sullo stato di tutti gli input in MRTK tramite l'iter sui controller collegati alle origini di input. MRTK fornisce anche metodi pratici per accedere alla posizione e alla rotazione di occhi, mani, testa e controller di movimento.
 
-Vedere la scena InputDataExample per un esempio di esecuzione di query sull'input tramite iterazione sui controller e tramite la [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) classe.
+Vedere la scena InputDataExample per un esempio di esecuzione di query sull'input sia tramite l'iterazione sui controller che tramite la [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) classe .
 
-## <a name="example-access-position-rotation-of-head-hands-eyes-in-mrtk"></a>Esempio: posizione di accesso, rotazione di Head, Hands, Eyes in MRTK
+## <a name="example-access-position-rotation-of-head-hands-eyes-in-mrtk"></a>Esempio: posizione di accesso, rotazione della testa, delle mani, degli occhi in MRTK
 
-[`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils)La classe di MRTK fornisce metodi pratici per accedere al raggio di mano, al raggio principale, al raggio d'occhio e ai raggi del controller di movimento.
+La classe MRTK fornisce metodi pratici per l'accesso al raggio della mano, al raggio della testa, al raggio dello sguardo fisso e ai raggi del [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) controller di movimento.
 
 ```c#
 // Get the head ray

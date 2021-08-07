@@ -1,39 +1,39 @@
 ---
-ms.openlocfilehash: 6b9223481ed909961dbb88d03e4b55ef68448525
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: fa21b1a5c3c89cf3c1c63c7ed8ebbdc3d8547661443853987ee3713e50c50e5c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97717915"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187413"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
 ### <a name="windows-mixed-reality"></a>Windows Mixed Reality
 
-![Progetto di inizio riproduzione connessione per la funzione configura movimenti](../images/unreal-hand-tracking-img-09.png)
+![Progetto di inizio riproduzione evento connesso per configurare la funzione dei movimenti](../images/unreal-hand-tracking-img-09.png)
 
-Quindi, è necessario aggiungere il codice per sottoscrivere gli eventi seguenti:
+È quindi necessario aggiungere il codice per sottoscrivere gli eventi seguenti:
 
-![Progetto dello screenshot dei movimenti di input di input spaziali Windows, tap e Left Manipulation ](../images/unreal/key-events.png)
- ![ delle opzioni dei movimenti di tocco di input spaziali di Windows nel pannello dei dettagli](../images/unreal/key-events2.png)
+![Progetto di Windows movimenti di tocco, tocco e manipolazione a sinistra dello Windows del tocco per l'input spaziale nel pannello ](../images/unreal/key-events.png)
+ ![ dei dettagli](../images/unreal/key-events2.png)
 
 ### <a name="openxr"></a>OpenXR
 
-In OpenXR, gli eventi di movimento vengono rilevati tramite la pipeline di input. Usando l'interazione manuale, il dispositivo può riconoscere automaticamente i movimenti Tap e di attesa, ma non gli altri. Sono denominati OpenXRMsftHandInteraction Select e i mapping del grip. Non è necessario abilitare la sottoscrizione, dichiarare gli eventi in impostazioni/motore/input del progetto, in modo analogo a quanto segue:
+In OpenXR gli eventi di movimento vengono registrati tramite la pipeline di input. Usando l'interazione manuale, il dispositivo può riconoscere automaticamente i movimenti Tocco e Tieni premuto, ma non gli altri. Sono denominati mapping OpenXRMsftHandInteraction Select e Grip. Non è necessario abilitare la sottoscrizione. È consigliabile dichiarare gli eventi in Project Impostazioni/Engine/Input, come illustrato di seguito:
 
 ![Screenshot dei mapping delle azioni OpenXR](../images/unreal-hand-tracking-img-12.png)
 
 # <a name="425"></a>[4.25](#tab/425)
 
-È possibile trovare la funzione Blueprint in **input spaziale di realtà mista di Windows** e la funzione C++ aggiungendo `WindowsMixedRealitySpatialInputFunctionLibrary.h` nel file di codice chiamante.
+È possibile trovare la funzione Blueprint in in **Windows Mixed Reality Spatial Input (Input** spaziale) e la funzione C++ aggiungendo `WindowsMixedRealitySpatialInputFunctionLibrary.h` nel file di codice chiamante.
 
-![Acquisisci movimenti](../images/unreal/capture-gestures.png)
+![Movimenti di acquisizione](../images/unreal/capture-gestures.png)
 
 ### <a name="enum"></a>Enumerazione
 <!-- Deprecated
 The `ESPatialInputAxisGestureType` enum describes spatial axis gestures and are [fully documented](../../out-of-scope/deprecated/holograms-211.md).
 -->
-Progetto
+Progetto:
 
 ![Tipo di movimento](../images/unreal/gesture-type.png)
 
@@ -49,11 +49,11 @@ enum class ESpatialInputAxisGestureType : uint8
 ```
 
 ### <a name="function"></a>Funzione
-È possibile abilitare e disabilitare l'acquisizione di movimenti con la `CaptureGestures` funzione. Quando un movimento abilitato genera eventi di input, la funzione restituisce `true` se l'acquisizione del movimento riesce e `false` se si verifica un errore.
+È possibile abilitare e disabilitare l'acquisizione movimenti con la `CaptureGestures` funzione . Quando un movimento abilitato attiva eventi di input, la funzione restituisce se l'acquisizione del movimento ha esito positivo e se `true` `false` si verifica un errore.
 
-Progetto
+Progetto:
 
-![Movimenti di acquisizione BP](../images/unreal/capture-gestures-bp.png)
+![Acquisizione movimenti BP](../images/unreal/capture-gestures-bp.png)
 
 C++:
 ```cpp
@@ -66,7 +66,7 @@ static bool UWindowsMixedRealitySpatialInputFunctionLibrary::CaptureGestures(
     bool NavigationAxisZ = true);
 ```
 
-Di seguito sono riportati gli eventi chiave che è possibile trovare in progetti e C++: ![ eventi chiave](../images/unreal/key-events.png)
+Di seguito sono riportati gli eventi chiave, disponibili in Blueprints e C++: Key Events (Progetti e C++: ![ Eventi chiave).](../images/unreal/key-events.png)
 
 ![Eventi chiave 2](../images/unreal/key-events2.png)
 ```cpp

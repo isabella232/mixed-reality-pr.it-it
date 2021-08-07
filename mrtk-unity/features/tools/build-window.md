@@ -5,12 +5,12 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 04/06/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, compilazione, finestra di compilazione, strumenti
-ms.openlocfilehash: b0b2bb1d06a561f5f647d01145fe88f562c53017
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: d01fefd09337e2639388a43d94bd8beb93716e3ef7f12a9c924b5755fb594447
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176151"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211389"
 ---
 # <a name="build-window"></a>Finestra Di compilazione
 ![Compilare & flusso di distribuzione](images/MRTK_BuildWindow0.png)

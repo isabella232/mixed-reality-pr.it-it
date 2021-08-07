@@ -4,38 +4,38 @@ description: Panoramica dell'architettura di MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, architettura MRTK
-ms.openlocfilehash: 1a8cf2e3e3290557e9e94a19519d4879cb82c88a
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, architettura MRTK,
+ms.openlocfilehash: ccd53805d4b0c13ef97123d7be9af863ac1299518d2b018bc5801279a9b4f369
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104690381"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187608"
 ---
 # <a name="architecture-overview"></a>Panoramica dell'architettura
 
-Per un'introduzione generale al contenuto di MRTK, le informazioni sull'architettura contenute in questo documento consentiranno di comprendere quanto segue:
+Per un'introduzione generale al contenuto di MRTK, le informazioni sull'architettura contenute in questo documento consentono di comprendere quanto segue:
 
-- Componenti di MRTK e modalità di connessione
+- Grandi parti di MRTK e come si connettono
 - Concetti introdotti da MRTK che potrebbero non esistere in Vanilla Unity
-- Come funzionano alcuni dei sistemi più grandi, ad esempio l'input.
+- Funzionamento di alcuni dei sistemi più grandi (ad esempio Input)
 
-Questa sezione non ha lo scopo di insegnare come eseguire le attività, ma piuttosto come strutturare tali attività e perché.
+Questa sezione non ha lo scopo di illustrare come eseguire le attività, ma piuttosto come tali attività sono strutturate e perché.
 
-## <a name="many-audiences-one-toolkit"></a>Molti destinatari, un Toolkit
+## <a name="many-audiences-one-toolkit"></a>Molti destinatari, un toolkit
 
-MRTK non dispone di un singolo gruppo di destinatari uniformi. È stato scritto per supportare casi di utilizzo compresi tra la prima volta gli hackathon, i singoli utenti che compilano esperienze condivise complesse per le aziende. È possibile che siano stati scritti codice e API che sono ottimizzati per uno più degli altri (ad esempio, alcune parti di MRTK sembrano più ottimizzate per "un solo clic su Configura"), ma è importante notare che alcune di queste sono più per motivi cronologici e di riapprovvigionamento. Man mano che MRTK si evolve, le funzionalità create devono essere progettate per la scalabilità in modo da supportare la gamma di casi d'uso.
+MRTK non ha un singolo pubblico uniforme. È stato scritto per supportare casi d'uso che vanno dagli hackathon per la prima volta ai singoli utenti che compilano esperienze complesse e condivise per l'azienda. È possibile che sia stato scritto codice e API ottimizzati per uno più dell'altro (ad esempio, alcune parti di MRTK sembrano più ottimizzate per la "configurazione con un clic"), ma è importante notare che alcune di queste sono più per motivi cronologici e di risorse. Con l'evolversi di MRTK, le funzionalità create devono essere progettate per la scalabilità per supportare la gamma di casi d'uso.
 
-MRTK dispone inoltre di requisiti per la scalabilità normale tra le esperienze VR e AR. Dovrebbe essere facile creare applicazioni che si riferiscono normalmente al comportamento quando vengono distribuite in un HoloLens 2 o HoloLens 1 e dovrebbe essere semplice compilare applicazioni destinate a OpenVR e WMR (e altre piattaforme). Sebbene a volte il team possa concentrare un'iterazione particolare su un sistema o una piattaforma specifica, l'obiettivo a lungo termine è creare un'ampia gamma di supporto per ogni persona che sviluppa esperienze di realtà miste.
+MRTK ha anche requisiti per ridimensionare correttamente le esperienze vr e AR. Dovrebbe essere facile compilare applicazioni che normalmente fallback nel comportamento quando vengono distribuite in un HoloLens 2 O un HoloLens 1 e dovrebbe essere semplice compilare applicazioni che hanno come destinazione OpenVR e WMR (e altre piattaforme). Anche se a volte il team può concentrarsi su un'iterazione specifica su un sistema o una piattaforma specifica, l'obiettivo a lungo termine è quello di creare un'ampia gamma di supporto per ogni luogo in cui le persone stanno creando esperienze di realtà mista.
 
 ## <a name="high-level-breakdown"></a>Suddivisione di alto livello
 
-MRTK è una raccolta di strumenti che consentono di ottenere rapidamente un'esperienza di realtà mista (MR), nonché un Framework applicazione con opinioni sul proprio Runtime, su come deve essere esteso e su come deve essere configurato.
+MRTK è sia una raccolta di strumenti per ottenere rapidamente esperienze di realtà mista (MR), sia un framework di applicazioni con opinioni sul proprio runtime, su come deve essere esteso e su come deve essere configurato.
 
-A un livello elevato, il MRTK può essere suddiviso nei modi seguenti:
+A livello elevato, il codice MRTK può essere suddiviso nei modi seguenti:
 
-![Diagramma della panoramica dell'architettura](../features/images/architecture/MRTK_Architecture.png)
+![Diagramma di panoramica dell'architettura](../features/images/architecture/MRTK_Architecture.png)
 
-Il MRTK contiene anche un altro set di utilità di recupero delle buste che non hanno dipendenze dal resto del MRTK (per elencarne alcune: strumenti di compilazione, risolutori, fattori di influenza audio, utilità di smussamento e renderer di riga)
+MrTK contiene anche un altro set di utilità grab-bag che hanno dipendenze da poco o nessuna sul resto di MRTK (per elencarne alcune: strumenti di compilazione, risolutori, fattori di influenza audio, utilità di smoothing e renderer di linea)
 
-Il resto della documentazione dell'architettura compilerà il massimo, a partire dal Framework e dal runtime, avanzando a sistemi più interessanti e complessi, ad esempio l'input. Per continuare con la panoramica dell'architettura, vedere il sommario.
+Il resto della documentazione dell'architettura verrà compilato in basso, a partire dal framework e dal runtime, procedendo verso sistemi più interessanti e complessi, ad esempio l'input. Per continuare con la panoramica dell'architettura, vedere il sommario.

@@ -1,92 +1,92 @@
 ---
-title: stabilizzazione olografica
-description: Prestazioni degli ologrammi in diversi ambienti e condizioni di frequenza dei fotogrammi.
+title: stabilizzazione dell'ologramma
+description: Prestazioni degli ologrammi in condizioni di ambiente e frequenza fotogrammi diverse.
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, rilevamento dell'ambiente, TMP,
-ms.openlocfilehash: 9b2a79ea92912d0e02365aeaff78e7008e3e20c5
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 2988bad2423f8cdb4a4027d6cc1e1aa8e49a0cdfb7b229051b2c3a62b1d5b19d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685994"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212767"
 ---
-# <a name="hologram-stabilization"></a>Stabilizzazione ologramma
+# <a name="hologram-stabilization"></a>Stabilizzazione dell'ologramma
 
 ## <a name="performance"></a>Prestazioni
 
-Per ottenere risultati ottimali, è importante che la piattaforma e il dispositivo della realtà mista sottostante ottengano risultati ottimali. Il framerate di destinazione (ad esempio, 60 FPS o 90 FPS) varierà tra le piattaforme e i dispositivi. Tuttavia, le applicazioni di realtà mista che soddisfano la frequenza framerate avranno ologrammi stabili, nonché un rilevamento accurato della testa, il monitoraggio della mano e altro ancora.  
+Per consentire alla piattaforma e al dispositivo di realtà mista sottostanti di produrre risultati ottimali, è importante ottenere la frequenza dei fotogrammi. Il framerate di destinazione (ad esempio, 60 FPS o 90 FPS) varia a seconda delle piattaforme e dei dispositivi. Tuttavia, le applicazioni di realtà mista che incornicieranno framerate avranno ologrammi stabili, oltre a un efficiente rilevamento della testa, al tracciamento delle mani e altro ancora.  
 
 ## <a name="environment-tracking"></a>Rilevamento dell'ambiente
 
-Il rendering olografico stabile si basa in modo significativo sul rilevamento della parte principale della piattaforma & dispositivo. Unity eseguirà il rendering della scena per ogni fotogramma dalla fotocamera, che viene stimato e fornito dalla piattaforma sottostante. Se il rilevamento non segue correttamente lo spostamento Head effettivo, gli ologrammi non verranno visualizzati in modo accurato. Questo è particolarmente evidente ed importante per i dispositivi AR come HoloLens, in cui gli utenti possono correlare gli ologrammi virtuali al mondo reale. Le prestazioni sono significative per il rilevamento Head affidabile, ma possono essere presenti anche [altre importanti funzionalità](https://docs.microsoft.com/windows/mixed-reality/environment-considerations-for-hololens). I tipi di elementi di ambiente che influiscano sull'esperienza utente dipenderanno dalle specifiche della piattaforma di destinazione.
+Il rendering olografico stabile si basa molto sul rilevamento della posizione della testa da parte della piattaforma & dispositivo. Unity eseguirà il rendering della scena di ogni fotogramma dalla posizione della fotocamera stimata e fornita dalla piattaforma sottostante. Se questo rilevamento non segue correttamente lo spostamento effettivo della testa, gli ologrammi appariranno visivamente non accurati. Ciò è particolarmente evidente e importante per i dispositivi ar come HoloLens in cui gli utenti possono correlare gli ologrammi virtuali al mondo reale. Le prestazioni sono significative per il rilevamento head affidabile, ma possono essere presenti [anche](https://docs.microsoft.com/windows/mixed-reality/environment-considerations-for-hololens)altre importanti funzionalità. I tipi di elementi dell'ambiente che influiscono sull'esperienza utente dipendono dalle specifiche della piattaforma di destinazione.
 
 ## <a name="windows-mixed-reality"></a>Windows Mixed Reality
 
-La piattaforma di realtà mista di Windows fornisce un [materiale di riferimento](https://docs.microsoft.com/windows/mixed-reality/hologram-stability) per la stabilizzazione di ologrammi sulla piattaforma. Sono disponibili alcuni strumenti chiave che possono essere usati dagli sviluppatori per migliorare l'esperienza visiva degli ologrammi per gli utenti.
+La Windows Mixed Reality fornisce un materiale [di riferimento per](https://docs.microsoft.com/windows/mixed-reality/hologram-stability) la stabilizzazione degli ologrammi nella piattaforma. Esistono tuttavia alcuni strumenti chiave che gli sviluppatori possono usare per migliorare l'esperienza visiva degli ologrammi per gli utenti.
 
 ### <a name="depth-buffer-sharing"></a>Condivisione buffer di profondità
 
-Gli sviluppatori di Unity hanno la possibilità di condividere il buffer di profondità dell'applicazione con la piattaforma. In questo modo vengono fornite informazioni, in cui sono presenti ologrammi per un frame corrente, che la piattaforma può utilizzare per stabilizzare gli ologrammi tramite un processo assistito da hardware noto come Late-Stage riproiezione.
+Gli sviluppatori unity hanno la possibilità di condividere il buffer di profondità dell'applicazione con la piattaforma. In questo modo vengono fornite informazioni, in cui sono presenti ologrammi per un frame corrente, che la piattaforma può usare per stabilizzare gli ologrammi tramite un processo assistito dall'hardware noto come Late-Stage reproiezione.
 
-#### <a name="late-stage-reprojection"></a>Riproiezione in fase ritardata
+#### <a name="late-stage-reprojection"></a>Riprogettazione in fase finale
 
-Al termine del rendering di un frame, la piattaforma per la realtà mista di Windows acquisisce le destinazioni di rendering del colore & profondità generate dall'applicazione e trasforma l'output finale della schermata in modo da tenere conto di eventuali movimenti di lieve entità rispetto alla stima dell'ultima posizione. Il ciclo di gioco di un'applicazione richiede tempo per l'esecuzione. Ad esempio, a 60 FPS, significa che l'applicazione sta prendendo ~ 16.667 MS per eseguire il rendering di un frame. Anche se questo può sembrare una quantità di tempo minuscola, la posizione e l'orientamento dell'utente della testa cambieranno con la conseguente generazione di nuove matrici di proiezione per la fotocamera nel rendering. La riproiezione in fase avanzata trasforma i pixel nell'immagine finale per tenere conto di questa nuova prospettiva.
+Al termine del rendering di un frame, la piattaforma Windows Mixed Reality accetta il colore & destinazioni di rendering di profondità prodotte dall'applicazione e trasforma l'output dello schermo finale per conto di qualsiasi leggero spostamento della testa dall'ultima stima della posizione della testa. L'esecuzione del ciclo di gioco di un'applicazione richiede tempo. Ad esempio, a 60 FPS, ciò significa che l'applicazione sta prendendo ~16.667 ms per eseguire il rendering di un frame. Anche se può sembrare una quantità di tempo minima, la posizione e l'orientamento dell'utente della testa cambieranno, determinando nuove matrici di proiezione per la fotocamera nel rendering. La riproiezione in fase tardiva trasforma i pixel nell'immagine finale per conto di questa nuova prospettiva.
 
-#### <a name="per-pixel-vs-stabilization-plane-lsr"></a>LSR piano di stabilizzazione confronto per pixel
+#### <a name="per-pixel-vs-stabilization-plane-lsr"></a>LSR per pixel rispetto al piano di stabilizzazione
 
-A seconda dell'endpoint del dispositivo e della versione del sistema operativo in esecuzione su un dispositivo di realtà mista Windows, l'algoritmo di riproiezione Late-Stage verrà eseguito per pixel o tramite un [piano di stabilizzazione](https://docs.microsoft.com/windows/mixed-reality/hologram-stability#stabilization-plane).
+A seconda dell'endpoint del dispositivo e della versione del sistema operativo in esecuzione in un dispositivo Windows Mixed Reality, l'algoritmo Late-Stage Reprojection verrà eseguito per pixel o tramite un piano [di stabilizzazione](https://docs.microsoft.com/windows/mixed-reality/hologram-stability#stabilization-plane).
 
-##### <a name="per-pixel-depth-based"></a>Basato sulla profondità per pixel
+##### <a name="per-pixel-depth-based"></a>Basata sulla profondità per pixel
 
-La riproiezione basata sulla profondità per pixel comporta l'utilizzo del buffer di profondità per modificare l'output dell'immagine per pixel e quindi stabilizzare gli ologrammi a diverse distanze. Una sfera, ad esempio, può trovarsi davanti a un pilastro che è di 10 metri. I pixel che rappresentano la sfera avranno una trasformazione diversa da quella dei pixel lontani che rappresentano la colonna se l'utente ha inclinato leggermente la testa. La riproiezione per pixel prenderà in considerazione questa differenza di distanza in ogni pixel per una riproiezione più accurata.
+La riproiezione basata sulla profondità per pixel comporta l'uso del buffer di profondità per modificare l'output dell'immagine per pixel e quindi stabilizzare gli ologrammi a varie distanze. Ad esempio, una sfera a 1 m di distanza può essere davanti a un pilastro a 10 metri di distanza. I pixel che rappresentano la sfera avranno una trasformazione diversa rispetto ai pixel più lontani che rappresentano il pilastro se l'utente ha leggermente inclinato la testa. La riproiezione per pixel prenderà in considerazione questa differenza di distanza in ogni pixel per una riprogettazione più accurata.
 
 ##### <a name="stabilization-plane"></a>Piano di stabilizzazione
 
-Se non è possibile creare un buffer di profondità preciso da condividere con la piattaforma, un altro tipo di LSR usa un piano di stabilizzazione. Tutti gli ologrammi in una scena riceveranno una certa stabilizzazione, ma gli ologrammi che si trovano nel piano desiderato riceveranno la massima stabilizzazione hardware. Il punto e il normale per il piano possono essere forniti alla piattaforma tramite l'API *HolographicSettings. SetFocusPointForFrame* [fornita da Unity](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity).
+Se non è possibile creare un buffer di profondità accurato da condividere con la piattaforma, un'altra forma di LSR usa un piano di stabilizzazione. Tutti gli ologrammi in una scena riceveranno una certa stabilizzazione, ma gli ologrammi che si trovano nel piano desiderato riceveranno la stabilizzazione hardware massima. Il punto e la normale per il piano possono essere forniti alla piattaforma tramite l'API *HolographicSettings.SetFocusPointForFrame* [fornita da Unity.](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity)
 
-#### <a name="depth-buffer-format"></a>Formato buffer profondità
+#### <a name="depth-buffer-format"></a>Formato del buffer di profondità
 
-Se la destinazione è HoloLens per lo sviluppo, è consigliabile utilizzare il formato di buffer di profondità a 16 bit rispetto a 24 bit. Questo può risparmiare notevolmente sulle prestazioni anche se i valori di profondità avranno una minore precisione. Per compensare la precisione inferiore ed evitare il superamento della [z](https://en.wikipedia.org/wiki/Z-fighting), è consigliabile ridurre il [piano di ritaglio](https://docs.unity3d.com/Manual/class-Camera.html) dal valore predefinito di 1000 m impostato da Unity.
+Se la destinazione HoloLens per lo sviluppo, è consigliabile usare il formato buffer di profondità a 16 bit rispetto a 24 bit. Ciò consente di risparmiare molto sulle prestazioni, anche se i valori di profondità avranno una precisione inferiore. Per compensare la precisione inferiore ed evitare [lo z-fighting,](https://en.wikipedia.org/wiki/Z-fighting)è consigliabile ridurre il piano di [ritaglio](https://docs.unity3d.com/Manual/class-Camera.html) lontano dal valore predefinito di 1000 metri impostato da Unity.
 
 > [!NOTE]
-> Se si utilizza il *formato di profondità a 16 bit*, gli effetti necessari sul buffer dello stencil non funzioneranno perché [Unity non crea un buffer di stencil](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) in questa impostazione. Se si seleziona il *formato di profondità a 24 bit* , in genere viene creato un [buffer di stencil a 8 bit](https://docs.unity3d.com/Manual/SL-Stencil.html), se applicabile sulla piattaforma grafica dell'endpoint.
+> Se si usa un formato di profondità a *16 bit,* gli effetti necessari per il buffer di stencil non funzioneranno perché Unity non crea un [buffer di stencil](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) in questa impostazione. Se si seleziona il formato di profondità a *24 bit,* in genere verrà creato un buffer di stencil a [8 bit,](https://docs.unity3d.com/Manual/SL-Stencil.html)se applicabile nella piattaforma grafica dell'endpoint.
 
 #### <a name="depth-buffer-sharing-in-unity"></a>Condivisione del buffer di profondità in Unity
 
-Per usare LSR basati sulla profondità, è necessario eseguire due passaggi importanti.
+Per usare l'LSR basato sulla profondità, gli sviluppatori devono eseguire due passaggi importanti.
 
-1. In **modifica**  >  **Impostazioni progetto**  >  **lettore**  >  **XR impostazioni**  >  **SDK realtà virtuale** > Abilita **condivisione buffer di profondità**
-    1. Se la destinazione è HoloLens, è consigliabile selezionare anche il **formato di profondità a 16 bit** .
-1. Quando si esegue il rendering del colore sullo schermo, viene visualizzato anche il livello di profondità
+1. In **Edit**  >  **Project Impostazioni**  >  **Player**  >  **XR Impostazioni** Virtual Reality  >  **SDK** > Enable Depth Buffer **Sharing**
+    1. Se la destinazione HoloLens, è consigliabile selezionare anche il formato di profondità **a 16 bit.**
+1. Quando si esegue il rendering del colore sullo schermo, anche la profondità di rendering
 
-Il [GameObject opaco](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html) in Unity verrà in genere scritto in profondità automaticamente. Tuttavia, per impostazione predefinita, gli oggetti di testo Transparent & non vengono in genere scritti in profondità. Se si usa MRTK standard shader o text mesh Pro, questo può essere facilmente risolvibile.
+[Gli oggetti GameObject opachi](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html) in Unity in genere scrivono automaticamente in profondità. Tuttavia, per impostazione & gli oggetti di testo trasparenti non scrivono in profondità per impostazione predefinita. Se si usa lo shader standard MRTK o la mesh Pro testo, è possibile risolvere questo problema facilmente.
 
 > [!NOTE]
-> Per determinare rapidamente quali oggetti di una scena non scrivono visivamente il buffer di profondità, è possibile usare l'utilità di [ *rendering del buffer di profondità*](../configuration/mixed-reality-configuration-guide.md#editor-utilities) sotto le impostazioni dell' *Editor* nel profilo di configurazione MRTK.
+> Per determinare rapidamente gli oggetti di una scena che non scrivono visivamente nel  buffer di profondità, è possibile usare l'utilità Buffer di profondità di rendering nel Impostazioni Editor nel profilo di configurazione MRTK. [  ](../configuration/mixed-reality-configuration-guide.md#editor-utilities)
 
-##### <a name="transparent-mrtk-standard-shader"></a>Shader standard MRTK trasparente
+##### <a name="transparent-mrtk-standard-shader"></a>Shader MRTK Standard trasparente
 
-Per i materiali Transparent con lo [shader standard MRTK](../features/rendering/MRTK-standard-shader.md), selezionare il materiale da visualizzare nella finestra di *controllo* . Fare quindi clic sul pulsante *Correggi ora* per convertire il materiale in scrittura in profondità, ad esempio Z-Write on).
+Per i materiali trasparenti che [usano lo shader MRTK Standard,](../features/rendering/MRTK-standard-shader.md)selezionare il materiale per visualizzarlo nella *finestra Inspector (Controllo).* Fare quindi clic *sul pulsante Correggi* ora per convertire il materiale in modo da scrivere in profondità,ad esempio Z-Write On).
 
 Prima
 
-![Buffer di profondità prima della correzione dello shader standard MRTK](../features/images/performance/DepthBufferFixNow_Before.PNG)
+![Buffer di profondità prima di correggere lo shader standard MRTK](../features/images/performance/DepthBufferFixNow_Before.PNG)
 
 After
 
-![Shader MRTK standard fisso buffer di profondità](../features/images/performance/DepthBufferFixNow_After.PNG)
+![Buffer di profondità fisso MRTK Standard Shader](../features/images/performance/DepthBufferFixNow_After.PNG)
 
-##### <a name="text-mesh-pro"></a>Testo mesh Pro
+##### <a name="text-mesh-pro"></a>Mesh di testo Pro
 
-Per oggetti di rete di testo, selezionare il GameObject TMP da visualizzare nel controllo. Nel componente materiale passare allo shader per il materiale assegnato per usare lo shader TextMeshPro di MRTK.
+Per Text Mesh Pro oggetti, selezionare TMP GameObject per visualizzarlo nel controllo. Nel componente materiale, cambiare lo shader per il materiale assegnato per usare lo shader TextMeshPro MRTK.
 
-![Correzione buffer profondità Pro mesh di testo](../features/images/performance/TextMeshPro-DepthBuffer-Fix.PNG)
+![Correzione del buffer Pro mesh di testo](../features/images/performance/TextMeshPro-DepthBuffer-Fix.PNG)
 
 ##### <a name="custom-shader"></a>Shader personalizzato
 
-Se si scrive uno shader personalizzato, aggiungere il [flag ZWrite](https://docs.unity3d.com/Manual/SL-CullAndDepth.html) all'inizio della definizione del blocco *pass* per configurare lo shader per la scrittura nel buffer di profondità.
+Se si scrive uno shader personalizzato, aggiungere il [flag ZWrite](https://docs.unity3d.com/Manual/SL-CullAndDepth.html) all'inizio della definizione del blocco *Pass* per configurare lo shader per la scrittura nel buffer di profondità.
 
 ```
 Shader "Custom/MyShader"
@@ -105,16 +105,16 @@ Shader "Custom/MyShader"
 
 ##### <a name="opaque-backings"></a>Backup opachi
 
-Se i metodi precedenti non funzionano per uno scenario specifico, ad esempio usando l'interfaccia utente di Unity, è possibile che un altro oggetto scriva nel buffer di profondità. Un esempio comune è l'uso del testo dell'interfaccia utente di Unity su un pannello mobile in una scena. Rendendo il pannello opaco o almeno scrivendo in profondità, il testo & il pannello verrà stabilizzato dalla piattaforma perché i valori z sono così vicini tra loro.
+Se i metodi precedenti non funzionano per un determinato scenario ,ad esempio usando l'interfaccia utente di Unity, è possibile fare in modo che un altro oggetto scrivo nel buffer di profondità. Un esempio comune è l'uso del testo dell'interfaccia utente di Unity in un pannello mobile in una scena. Rendendo il pannello opaco o almeno scrivendo in profondità, entrambi i valori del testo & il pannello verranno stabilizzati dalla piattaforma perché i valori z sono così vicini l'uno all'altro.
 
 ### <a name="worldanchors-hololens"></a>WorldAnchors (HoloLens)
 
-Oltre a garantire che siano soddisfatte le configurazioni corrette per garantire la stabilità visiva, è importante assicurarsi che gli ologrammi rimangano stabili nei percorsi fisici corretti. Per informare la piattaforma su posizioni importanti in uno spazio fisico, gli sviluppatori possono sfruttare [WorldAnchors](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) in GameObject che devono rimanere in un'unica posizione. Un [WorldAnchor](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) è un componente aggiunto a un GameObject che assume il controllo assoluto sulla trasformazione di tale oggetto.
+Oltre a garantire che siano soddisfatte le configurazioni corrette per garantire la stabilità visiva, è importante assicurarsi che gli ologrammi rimangano stabili nelle posizioni fisiche corrette. Per informare la piattaforma su posizioni importanti in uno spazio fisico, gli sviluppatori possono sfruttare [WorldAnchors](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) su GameObject che devono rimanere in un'unica posizione. [WorldAnchor è](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) un componente aggiunto a un GameObject che assume il controllo assoluto sulla trasformazione dell'oggetto.
 
-I dispositivi, ad esempio HoloLens, eseguono costantemente l'analisi e l'apprendimento dell'ambiente. Di conseguenza, poiché il HoloLens tiene traccia dello spostamento & posizione nello spazio, le stime verranno aggiornate e il [sistema di coordinate Unity verrà regolato](https://docs.microsoft.com/windows/mixed-reality/coordinate-systems-in-unity). Ad esempio, se un GameObject viene posizionato 1m dalla fotocamera all'avvio, poiché il HoloLens tiene traccia dell'ambiente, può realizzare il punto fisico in cui si trova la GameObject è effettivamente 1,1 m. Questo comporterebbe la dispersione dell'ologramma. L'applicazione di un WorldAnchor a una GameObject consentirà all'ancoraggio di controllare la trasformazione dell'oggetto in modo che l'oggetto rimanga nella posizione fisica corretta, ad esempio eseguire l'aggiornamento a 1,1 m, anziché 1 milione al runtime. Per salvare in modo permanente [WorldAnchors](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) tra le sessioni dell'app, gli sviluppatori possono usare il [WorldAnchorStore](https://docs.unity3d.com/ScriptReference/XR.WSA.Persistence.WorldAnchorStore.html) per [salvare e caricare WorldAnchors](https://docs.microsoft.com/windows/mixed-reality/persistence-in-unity).
+I dispositivi come HoloLens vengono costantemente a conoscenza dell'ambiente. Di conseguenza, man HoloLens tiene traccia & posizione nello spazio, le stime verranno aggiornate e il sistema [di coordinate Unity regolato](https://docs.microsoft.com/windows/mixed-reality/coordinate-systems-in-unity). Ad esempio, se un GameObject viene posizionato a 1 m dalla fotocamera all'inizio, poiché il HoloLens tiene traccia dell'ambiente, può rendersi conto che il punto fisico in cui si trova GameObject è effettivamente a 1,1 m di distanza. Ciò comporta la deriva dell'ologramma. L'applicazione di un oggetto WorldAnchor a un GameObject consentirà all'ancoraggio di controllare la trasformazione dell'oggetto in modo che rimanga nella posizione fisica corretta , ad esempio eseguire l'aggiornamento a 1,1 m anziché a 1 m in fase di esecuzione. Per salvare [in modo permanente WorldAnchors](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) tra le sessioni dell'app, gli sviluppatori possono usare [WorldAnchorStore](https://docs.unity3d.com/ScriptReference/XR.WSA.Persistence.WorldAnchorStore.html) per salvare e caricare [WorldAnchors.](https://docs.microsoft.com/windows/mixed-reality/persistence-in-unity)
 
 > [!NOTE]
-> Una volta aggiunto un componente WorldAnchor a un GameObject, non è possibile modificare la trasformazione di GameObject (ad esempio Transform. Position = x). Uno sviluppatore deve rimuovere WorldAnchor per modificare la trasformazione.
+> Dopo l'aggiunta di un componente WorldAnchor a un GameObject, non è possibile modificare la trasformazione di tale GameObject(ad esempio, transform.position = x). Uno sviluppatore deve rimuovere WorldAnchor per modificare la trasformazione.
 
 ```c#
 WorldAnchor m_anchor;
@@ -134,7 +134,7 @@ public void RemoveAnchor()
 
 - [Prestazioni](../performance/perf-getting-started.md)
 - [Considerazioni sull'ambiente per HoloLens](https://docs.microsoft.com/windows/mixed-reality/environment-considerations-for-hololens)
-- [Realtà mista di Windows per la stabilità olografica](https://docs.microsoft.com/windows/mixed-reality/hologram-stability)
+- [Ologramma Stability Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/hologram-stability)
 - [Punto focale in Unity](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity)
 - [Sistemi di coordinate in Unity](https://docs.microsoft.com/windows/mixed-reality/coordinate-systems-in-unity)
 - [Persistenza in Unity](https://docs.microsoft.com/windows/mixed-reality/persistence-in-unity)

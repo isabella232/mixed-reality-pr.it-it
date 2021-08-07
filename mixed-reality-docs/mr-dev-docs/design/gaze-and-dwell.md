@@ -1,33 +1,33 @@
 ---
 title: Sguardo fisso e attesa
-description: Ottenere una panoramica generale del modello di input occhi e Head per le applicazioni di realtà miste.
+description: Ottenere una panoramica generale del modello di input sguardo fisso e testa per applicazioni di realtà mista.
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
-keywords: Realtà mista, sguardo, abitazione, interazione, progettazione, rilevamento degli occhi, rilevamento Head, auricolare in realtà mista, auricolare di realtà mista di Windows, headset di realtà virtuale, HoloLens, MRTK, Toolkit di realtà mista
-ms.openlocfilehash: aa4fceeb8875da89fd7f84c3709ff6db07fd96f4
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Realtà mista, sguardo, sguardo, interazione, progettazione, tracciamento oculare, tracciamento della testa, visore per realtà mista, visore per realtà mista windows, visore per realtà virtuale, HoloLens, MRTK, realtà mista Toolkit
+ms.openlocfilehash: c65c13b06df70ed5471b283ad349dd72e1575018a98913177983d7a13571d666
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582135"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213675"
 ---
 # <a name="gaze-and-dwell"></a>Sguardo fisso e attesa
 
 Quando le mani sono occupate con gli attrezzi e le parti, i movimenti possono risultare difficili o addirittura impossibili.
-I comandi vocali possono anche essere inaffidabili in determinati contesti, ad esempio in condizioni troppo potenti.
-Sguardi e abitazioni offre un meccanismo familiare e facile da gestire per l'esecuzione di attività di Head-up e hands-free in HoloLens.
-Inoltre, lo sguardo e l'abitazione sono un ottimo fallback, indipendente dall'interferenza del rumore o dai vincoli di silenzio nell'ambiente operativo.
-Si distinguono due varianti di _sguardo e dimora_, ovvero lo [sguardo](gaze-and-dwell-head.md) e l'abitato e lo [sguardo e l'abitazione](gaze-and-dwell-eyes.md).
+I comandi vocali possono anche essere inaffidabili in determinati contesti, ad esempio in condizioni eccessivamente forti.
+Gaze and dwell offre un meccanismo familiare e facile da usare per lavorare con testa in su e senza HoloLens.
+Inoltre, lo sguardo e l'avarita sono un ottimo fallback, indipendente dalle interferenze acustiche o dai vincoli di silenzio nell'ambiente operativo.
+Distinguiamo due varianti di sguardo e _sguardo:_ [sguardo](gaze-and-dwell-head.md) a testa e sguardo e sguardo [fisso e sguardo fisso.](gaze-and-dwell-eyes.md)
 
 ## <a name="scenarios"></a>Scenari
 
-Lo sguardo e la permanenza si adattano a scenari in cui le mani di una persona sono occupate da altre attività e la voce non è del 100% affidabile o disponibile a causa di vincoli ambientali o sociali.
+Lo sguardo fisso e l'ambiente sono molto importanti in scenari in cui le mani di una persona sono occupate da altre attività e la voce non è affidabile al 100% o disponibile a causa di vincoli ambientali o sociali.
 Un buon esempio di questo tipo di situazioni è dato da una persona che indossa un dispositivo HoloLens per la sovrimpressione di informazioni di riferimento mentre ripara il motore di un'automobile.
 Le sue mani sono occupate con gli attrezzi o devono sostenere il corpo mentre la persona si protende sul vano motore.
 L'autofficina è rumorosa a causa dei colpi e del ronzio costanti degli attrezzi da lavoro, quindi l'uso dei comandi vocali risulterebbe particolarmente difficoltoso.
-Lo sguardo e l'abitazione consentono all'utente che usa HoloLens di esplorare in modo sicuro il materiale di riferimento senza interrompere il flusso di lavoro.
+Lo sguardo e l'allarme consentono alla persona che usa HoloLens di esplorare in modo sicuro il materiale di riferimento senza interrompere il flusso di lavoro.
 
 ## <a name="device-support"></a>Supporto di dispositivi
 
@@ -63,7 +63,7 @@ Lo sguardo e l'abitazione consentono all'utente che usa HoloLens di esplorare in
 
 ---
 
- ## <a name="see-also"></a>Vedere anche
+ ## <a name="see-also"></a>Vedi anche
 
 * [Interazione basata sullo sguardo](eye-gaze-interaction.md)
 * [Tracciamento oculare in HoloLens 2](eye-tracking.md)

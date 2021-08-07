@@ -1,91 +1,91 @@
 ---
 title: Prima di iniziare
-description: Scopri come verificare che il PC sia compatibile e pronto per un'ampia gamma di esperienze di applicazioni di realtà miste di Windows.
+description: Informazioni su come assicurarsi che il PC sia compatibile e pronto per un'ampia gamma di esperienze Windows Mixed Reality'applicazione.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
-keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, compatibilità, compatibilità, introduzione, configurazione, PC, requisiti di sistema
+keywords: Windows Mixed Reality, realtà mista, realtà virtuale, REALTÀ VIRTUALE, MR, compatibile, compatibilità, introduzione, configurazione, PC, requisiti di sistema
 appliesto:
 - Windows 10
-ms.openlocfilehash: b7e90477ed16170a5661f34798a5af822ad8e945
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 026f36caf3eebaee8f883235284a1beaf870bb89c5bb27eb565abbd89fcf4f21
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006881"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187961"
 ---
 # <a name="before-you-start"></a>Prima di iniziare
 
-## <a name="what-youll-need-to-run-windows-mixed-reality"></a>Cosa è necessario per eseguire la realtà mista di Windows
+## <a name="what-youll-need-to-run-windows-mixed-reality"></a>Elementi necessari per l'esecuzione Windows Mixed Reality
 
-* [Visualizzazione montata in realtà mista di Windows (HMD)](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices).
-* Un nuovo [PC pronto per la realtà mista di Windows](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) o un PC compatibile con Windows Mixed Reality che esegue Windows 10 versione 1709 o successiva.
+* Un Windows [HMD (Mixed Reality Head Mounted Display).](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices)
+* Un nuovo [PC Windows Mixed Reality o](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) un PC Windows Mixed Reality compatibile con Windows 10 versione 1709 o successiva.
 * Una connessione Internet
-* Schede di visualizzazione, USB e Bluetooth (se non incorporate in cuffia o computer)
-* Controller di movimento, controller Xbox o mouse e tastiera
-* Cuffie con microfono (se i HMD non sono stati incorporati)
-* Ampio spazio aperto
+* Adattatori video, USB e Bluetooth (se non sono incorporati nel visore VR o nel computer)
+* Controller del movimento, controller Xbox o mouse e tastiera
+* Cuffi con microfono (se l'HMD non li ha incorporati)
+* Uno spazio aperto di grandi dimensioni
 
-## <a name="make-sure-your-pc-is-compatible-with-windows-mixed-reality"></a>Verificare che il PC sia compatibile con la realtà mista di Windows
+## <a name="make-sure-your-pc-is-compatible-with-windows-mixed-reality"></a>Assicurarsi che il PC sia compatibile con Windows Mixed Reality
 
-Verificare i [requisiti hardware](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) per la realtà mista di Windows per il PC o eseguire il [portale di realtà mista di Windows](install-windows-mixed-reality.md#launch-mixed-reality-portal) nel PC per verificare la compatibilità con la realtà mista Windows.
+Controllare i [requisiti Windows Mixed Reality hardware minimo](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) del [](install-windows-mixed-reality.md#launch-mixed-reality-portal) PC o eseguire il portale di Windows Mixed Reality nel PC per verificare la compatibilità Windows Mixed Reality computer.
 
-Per informazioni dettagliate, vedere [problemi di compatibilità dei PC](https://support.microsoft.com/help/4045777/windows-10-get-help-with-pc-compatibility-in-windows-mixed-reality) .
+Per altre informazioni, [vedere Problemi di compatibilità](https://support.microsoft.com/help/4045777/windows-10-get-help-with-pc-compatibility-in-windows-mixed-reality) del PC.
 
-## <a name="make-sure-you-have-the-windows-10-version-1709-or-newer-installed"></a>Verificare che sia installato Windows 10 versione 1709 o versione successiva
+## <a name="make-sure-you-have-the-windows-10-version-1709-or-newer-installed"></a>Assicurarsi di avere installato Windows 10 versione 1709 o successiva
 
-Per usare la realtà mista di Windows, è necessario che sia in esecuzione Windows 10 versione 1903 o successiva. Le versioni compatibili di Windows 10 includono:
+È necessario eseguire il Windows 10 versione 1903 o successiva per usare Windows Mixed Reality. Le versioni compatibili di Windows 10 includono:
 
-* Windows 10 versione 1903
-* Windows 10 versione 1909
-* Windows 10 versione 2004
-* Versione di Windows 10 20H2
+* Windows 10 Versione 1903
+* Windows 10 Versione 1909
+* Windows 10 Versione 2004
+* Windows 10 Versione 20H2
 
-Per visualizzare la versione di Windows 10 attualmente in esecuzione nel dispositivo, selezionare il pulsante **Start** , quindi selezionare **impostazioni > sistema > informazioni su**.
+Per visualizzare la versione di Windows 10 il dispositivo è attualmente in esecuzione, selezionare il pulsante **Start,** quindi selezionare Impostazioni > **System > About (Informazioni su).**
 
-Per assicurarsi che Windows 10 sia aggiornato nel computer, fare clic sul pulsante **Start** , quindi selezionare **impostazioni > aggiorna & sicurezza > Windows Update**.  Selezionare **Verifica disponibilità aggiornamenti**. Se sono disponibili aggiornamenti, installarli.
+Per assicurarsi che Windows 10 sia aggiornato nel PC, selezionare il pulsante **Start** e quindi Impostazioni > Aggiorna & sicurezza **> Windows Aggiorna**.  Selezionare **Verifica disponibilità aggiornamenti**. Se sono disponibili aggiornamenti, installarli.
 
-Per ulteriori informazioni, consultare la pagina relativa [all'aggiornamento del computer](https://support.microsoft.com/help/12373/windows-update-faq) .
+Per altre [informazioni, vedere Mantenere aggiornato il PC.](https://support.microsoft.com/help/12373/windows-update-faq)
 
-## <a name="make-sure-your-pc-is-connected-to-the-internet"></a>Verificare che il PC sia connesso a Internet
+## <a name="make-sure-your-pc-is-connected-to-the-internet"></a>Assicurarsi che il PC sia connesso a Internet
 
-Verificare che il PC sia connesso a Internet e scaricare i driver ed eventuali software aggiuntivi per ottenere la realtà mista di Windows in esecuzione.
+Verificare che il PC sia connesso a Internet e scaricare i driver e qualsiasi software aggiuntivo per Windows Mixed Reality operativo.
 
-## <a name="make-sure-you-have-a-compatible-graphics-driver"></a>Assicurarsi di disporre di un driver della grafica compatibile
+## <a name="make-sure-you-have-a-compatible-graphics-driver"></a>Assicurarsi di avere un driver di grafica compatibile
 
-Per completare la configurazione di realtà mista di Windows, per il PC è necessario un driver di grafica WDDM 2,2 o versione successiva. Se non dispone già di un driver di grafica compatibile, provare le origini seguenti:
+Il PC necessita di un driver di grafica WDDM 2.2 o versione successiva per completare Windows Mixed Reality configurazione. Se non dispone già di un driver di grafica compatibile, provare queste origini:
 
-* Controllare gli aggiornamenti più recenti dei driver critici usando Windows Update (**avviare > impostazioni di Windows > aggiornamento e sicurezza > verifica della disponibilità di aggiornamenti**)
-* Verificare la disponibilità di aggiornamenti più recenti dei driver facoltativi:
-    1. Fare clic con il pulsante destro del mouse su **> Device Manager**.
-    2. Espandere **schede di visualizzazione**.
-    3. Fare clic con il pulsante destro del mouse sulla scheda grafica e scegliere **Aggiorna driver > cercare automaticamente il software driver aggiornato**.
-* Controllare il sito Web del produttore (OEM) del computer.
-* Controllare il sito Web del produttore della scheda grafica nel PC (ad esempio, AMD, Intel o NVIDIA).
+* Verificare la disponibilità degli ultimi aggiornamenti critici dei driver usando Windows Update (**Start > Windows Impostazioni > Update and Security > Check for Updates**)
+* Verificare la disponibilità degli ultimi aggiornamenti facoltativi dei driver:
+    1. Fare clic con il **pulsante destro del mouse > avviare Gestione dispositivi**.
+    2. Espandere **Adattatori schermo**.
+    3. Fare clic con il pulsante destro del mouse sulla scheda grafica e **scegliere Aggiorna driver > cercare automaticamente il software del driver aggiornato.**
+* Controllare il sito Web per il produttore (OEM) del PC.
+* Controllare il sito Web per il produttore della scheda grafica nel PC ,ad esempio AMD, Intel o NVIDIA.
 
-## <a name="make-sure-that-you-have-any-required-adapters"></a>Assicurarsi di disporre di tutti gli adapter necessari
+## <a name="make-sure-that-you-have-any-required-adapters"></a>Assicurarsi di avere tutti gli adattatori necessari
 
-Il PC compatibile con la realtà mista di Windows potrebbe non avere le porte HDMI e USB 3,0 di dimensioni complete necessarie per connettere l'auricolare immersivo. Potrebbe inoltre essere necessaria una scheda Bluetooth per soddisfare i requisiti del portale per la realtà mista di Windows.  In tal caso, sarà necessario disporre di adapter per connettere l'auricolare e i controller di movimento. Assicurarsi di esaminare l'elenco dei [tipi di adapter e le raccomandazioni per i modelli di adapter specifici](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
+Il Windows Mixed Reality pc compatibile potrebbe non avere le porte HDMI e USB 3.0 di dimensioni complete necessarie per connettere il visore VR immersive. Potrebbe anche essere necessario un adattatore Bluetooth per soddisfare i requisiti Windows Mixed Reality portale.  In questo caso, saranno necessari adattatori per connettere il visore VR e i controller del movimento. Assicurarsi di esaminare l'elenco dei tipi di adapter e [le raccomandazioni su modelli di adapter specifici.](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 ## <a name="make-sure-that-you-have-input-devices"></a>Assicurarsi di avere dispositivi di input
 
-La realtà mista di Windows è progettata per funzionare al meglio con i controller di movimento della realtà mista di Windows, che forniscono interazioni naturali e precise senza necessità di installare hardware sulle pareti. È anche possibile usare un controller Xbox o un mouse e una tastiera.
+Windows Mixed Reality è progettato per funzionare al meglio con i controller del movimento Windows Mixed Reality, che forniscono interazioni naturali e precise senza dover installare hardware sulle pareti. Ma è anche possibile usare un controller Xbox o un mouse e una tastiera.
 
-## <a name="make-sure-that-you-have-a-large-open-space"></a>Assicurarsi di disporre di una grande quantità di spazio aperto
+## <a name="make-sure-that-you-have-a-large-open-space"></a>Assicurarsi di avere uno spazio aperto di grandi dimensioni
 
-Se si desidera spostarsi quando si usa la realtà mista di Windows, è necessario avere uno spazio aperto di grandi dimensioni.  Durante l'installazione, verrà chiesto di scegliere tra "seduti e in piedi" o "tutte le esperienze". Scegliere "tutte le esperienze" e configurare un limite se si desidera spostarsi. Per comprendere i requisiti di spazio, rivedere le [linee guida per l'integrità, la sicurezza e la comodità dell'auricolare immersive](wmr-health-safety-comfort.md) .
+Se si vuole spostarsi durante l'uso Windows Mixed Reality è necessario avere uno spazio aperto di grandi dimensioni.  Durante l'installazione, verrà chiesto di scegliere tra "Seated and standing" o "All experiences" (Tutte le esperienze). Scegliere "Tutte le esperienze" e configurare un limite se si vuole spostarsi. Esaminare le linee [guida immersive per l'integrità, la sicurezza e il comfort](wmr-health-safety-comfort.md) dei visori VR per comprendere i requisiti di spazio.
 
-### <a name="seated-and-standing-no-boundary"></a>Seduto e in piedi (nessun limite)
+### <a name="seated-and-standing-no-boundary"></a>Posti in posizione e in piedi (nessun limite)
 
-Se si seleziona "seduto e in piedi", si userà l'auricolare senza un limite. Ciò significa che è necessario rimanere in una sola posizione quando si usa l'auricolare per evitare ostacoli fisici e rischi di intervento. È possibile rimanere in attesa, ma non è consigliabile spostarsi. Alcune app possono essere progettate per funzionare con un limite, quindi potrebbero non funzionare o fornire la stessa esperienza se vengono usate senza uno.
+Se si seleziona "Seated and standing", si usa il visore VR senza limiti. Ciò significa che è necessario rimanere in un'unica posizione quando si usa il visore VR per evitare ostacoli fisici e rischi di inciampo. È possibile sedersi o alzarsi, ma non è consigliabile spostarsi. Alcune app potrebbero essere progettate per funzionare con un limite, quindi potrebbero non funzionare o offrire la stessa esperienza se vengono usate senza un limite.
 
 ### <a name="all-experiences-boundary"></a>Tutte le esperienze (limite)
 
-Se si sceglie "tutte le esperienze", sarà possibile configurare un limite ed essere in grado di spostarsi tra le esperienze delle app che funzionano con un limite e quelle che non ne richiedono una. Preparare lo spazio assicurandosi che non ci siano ostacoli, rischi o elementi fragili nell'area che verrà usata, incluso sopra l'intestazione. Non impostare nella parte superiore di una scala o sotto una ventola a soffitto molto bassa. Rimuovere fragili e gli ostacoli dall'area e assicurarsi che tutti gli utenti usino l'auricolare leggano e conoscano le [linee guida](https://support.microsoft.com/en-us/help/4039969/windows-10-mixed-reality-immersive-headset-health-safety-comfort)per la sicurezza.
+Se si sceglie "Tutte le esperienze", si configura un limite ed è possibile spostarsi tra le esperienze delle app che funzionano con un limite e quelle che non ne richiedono uno. Preparare lo spazio assicurando che non siano presenti ostacoli, rischi o elementi inerti nell'area che si sta usando, anche sopra la testa. Non configurarlo nella parte superiore di una ventola a tutta altezza o sotto una ventola extra-bassa. Rimuovere i interruttori e gli ostacoli dall'area e assicurarsi che tutti gli utenti che usano il visore VR leggono e comprendino le linee guida [per la sicurezza.](https://support.microsoft.com/en-us/help/4039969/windows-10-mixed-reality-immersive-headset-health-safety-comfort)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-* [Collegare il HMD](plug-in-your-headset.md)
-* [Requisiti hardware minimi per il PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
+* [Collegare l'HMD](plug-in-your-headset.md)
+* [Requisiti hardware minimi del PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
 * [Adapter consigliati](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)

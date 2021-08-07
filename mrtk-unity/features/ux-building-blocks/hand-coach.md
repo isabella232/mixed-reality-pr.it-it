@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: f6042fce7c95c106de9c72adc854e2b7112da63c
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 3e5a56f7498288e79963acea6fca223421fee2607004a9a2bae639f81441e0d9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177154"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209026"
 ---
 # <a name="hand-coach"></a>Coach mano
 
@@ -33,7 +33,7 @@ Il modello di interazione corrente rappresenta un'ampia gamma di controlli di mo
 
 È possibile trovare esempi nella **scena HandCoachExample** in: [MixedRealityToolkit.Examples/Experimental/HandCoach/Scenes](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/HandCoach/Scenes)
 
-## <a name="hand-3d-assets"></a>Mano asset 3D
+## <a name="hand-3d-assets"></a>Hand 3D Assets
 
 È possibile trovare gli asset in: [MixedRealityToolkit.SDK/Experimental/HandCoach](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/HandCoach)
 
@@ -83,7 +83,7 @@ Le dissolvenze vengono usate per impostazione predefinita su 0,5 secondi, quindi
 
 Gli stati predefiniti di dissolvenza in entrata e in uscita, Fade_In e Fade_Out possono essere modificati modificando il timestamp del secondo fotogramma chiave per impostare la lunghezza della dissolvenza.
 
-L'animatore e lo script sono stati impostati in modo da rendere la configurazione il più semplice possibile. Per aggiungere nuovi stati di animazione, è sufficiente importare fbx, assicurarsi che il nome dell'animazione sia impostato con un nome distinto e trascinare l'animazione nell'animatore.
+L'animatore e lo script sono stati impostati in modo da semplificare il più possibile la configurazione. Per aggiungere nuovi stati di animazione, è sufficiente importare fbx, assicurarsi che il nome dell'animazione sia impostato con un nome distinto e trascinare l'animazione nell'animatore.
 
 ### <a name="movetotarget"></a>MoveToTarget
 
@@ -100,15 +100,15 @@ I prefab "MovingHandCoachRoot_L.prefab" e "MovingHandCoachRoot_R.prefab" forniti
 - **RootObject** Impostare questa proprietà su un elemento padre condiviso tra il rilevamento e l'oggetto di destinazione in modo che le posizioni relative possano essere calcolate correttamente. Il prefab incluso include sia oggetti di rilevamento che oggetti di destinazione nella gerarchia, ma è possibile impostare l'oggetto di destinazione come gameObject all'esterno del prefab e modificare l'oggetto radice in un elemento padre condiviso.
 - **Durata** Tempo necessario (in secondi) per passare da TrackingObject a TargetObject in secondi.
 - **TargetOffset** Offset regolabile per fare in modo che il GameObject arrivi alla posizione di destinazione corretta. Ciò è utile se l'animazione include un offset di posizione durante l'animazione.
-- **AnimationCurve** L'impostazione predefinita è una curva lineare, ma è possibile modificare la curva per consentire l'interpolazione all'avvio e all'arresto del percorso di movimento.
+- **AnimationCurve** Il valore predefinito è una curva lineare, ma è possibile modificare la curva per consentire l'interpolazione all'avvio e all'arresto del percorso di movimento.
 
 #### <a name="controlling-movetotarget-via-script"></a>Controllo di MoveToTarget tramite script
 
-Nello script personalizzato, effettuare una chiamata a Follow() mentre si vuole che il dispositivo mano segua TrackingObject, quindi effettuare una chiamata a MoveToTargetPosition() quando si vuole che il dispositivo di gestione della mano inizi il movimento verso TargetObject.
+Nello script personalizzato, effettuare una chiamata a Follow() mentre si vuole che il maniere segua TrackingObject, quindi effettuare una chiamata a MoveToTargetPosition() quando si vuole che il manicomio inizi il movimento verso TargetObject.
 
 #### <a name="controlling-movetotarget-via-animations"></a>Controllo di MoveToTarget tramite animazioni
 
-Nell'animazione che deve essere spostata, impostare due eventi: uno con una chiamata a Follow() e uno con una chiamata a MoveToTargetPosition(). Seguire deve essere impostato sul primo fotogramma chiave, perché fa sì che il dispositivo mano segua TrackingObject. MoveToTargetPosition deve essere impostato sul fotogramma chiave in cui si vuole che il rig inizi a passare alla destinazione. Ecco come viene usata la funzionalità di script nei prefab forniti.
+Nell'animazione che deve essere spostata, impostare due eventi: uno con una chiamata a Follow() e uno con una chiamata a MoveToTargetPosition(). Seguire deve essere impostato sul primo fotogramma chiave, perché fa sì che il dispositivo mano segua TrackingObject. MoveToTargetPosition deve essere impostato sul fotogramma chiave in cui si vuole che il dispositivo inizi a passare alla destinazione. Ecco come viene usata la funzionalità di script nei prefab forniti.
 
 ### <a name="rotatearoundpoint"></a>RotateAroundPoint
 
@@ -124,7 +124,7 @@ I prefab "RotatingHandCoachRoot_L.prefab" e "RotatingHandCoachRoot_R.prefab" con
 - **InverseParent** Impostarla con l'elemento padre per ruotare inversa su centeredParent per mantenere lo stesso orientamento della mano. In generale, si tratta dell'oggetto padre su cui è associato lo script InteractionHint.
 - **PivotPosition** Impostare su un punto in cui si vuole che l'hint inizi lo spostamento.
 - **Durata** Tempo necessario (in secondi) per ruotare intorno a CenteredParent.
-- **AnimationCurve** L'impostazione predefinita è una curva lineare, ma è possibile modificare la curva per consentire l'interpolazione all'avvio e all'arresto del percorso di movimento.
+- **AnimationCurve** Il valore predefinito è una curva lineare, ma è possibile modificare la curva per consentire l'interpolazione all'avvio e all'arresto del percorso di movimento.
 - **RotationVector** Quanti gradi ruotare lungo ogni asse.
 
 #### <a name="controlling-rotatearoundpoint-via-script"></a>Controllo di RotateAroundPoint tramite script

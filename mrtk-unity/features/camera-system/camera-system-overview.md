@@ -5,28 +5,28 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, fotocamera,
-ms.openlocfilehash: cfb40b00d81133ad40e0e4d7a7b2ad87ee645e36
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 3c9bdbc96688c4df6ee2f39be2c8bb2023817f9081b5366308ba8b4c2590568d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177046"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211468"
 ---
 # <a name="camera-system-overview"></a>Panoramica del sistema di fotocamera
 
-Il sistema di fotocamera consente a Microsoft Mixed Reality Toolkit di configurare e ottimizzare la fotocamera dell'applicazione per l'uso in applicazioni di realtà mista. Usando il sistema di fotocamera, le applicazioni possono essere scritte per supportare sia dispositivi opachi (ad esempio realtà virtuale) che trasparenti (ad esempio Microsoft HoloLens) senza dover scrivere codice per distinguere e supportare ogni tipo di visualizzazione.
+Il sistema di fotocamera consente a Microsoft Mixed Reality Toolkit di configurare e ottimizzare la fotocamera dell'applicazione per l'uso in applicazioni di realtà mista. Usando il sistema di fotocamera, le applicazioni possono essere scritte per supportare dispositivi opachi (ad esempio, la realtà virtuale) e trasparenti (ad esempio, Microsoft HoloLens) senza dover scrivere codice per distinguere e gestire ogni tipo di visualizzazione.
 
 ## <a name="enabling-the-camera-system"></a>Abilitazione del sistema di fotocamera
 
-Il sistema di fotocamera è gestito dall'oggetto MixedRealityToolkit (o da un altro componente del registrar del servizio).
+Il sistema di fotocamere è gestito dall'oggetto MixedRealityToolkit (o da un altro componente registrar del servizio).
 
 La procedura seguente presuppone l'uso dell'oggetto MixedRealityToolkit. I passaggi necessari per altri registrar del servizio possono essere diversi.
 
 1. Selezionare l'oggetto MixedRealityToolkit nella gerarchia della scena.
 
-    ![Gerarchia della scena configurata MRTK](../images/MRTK_ConfiguredHierarchy.png)
+    ![Gerarchia della scena configurata di MRTK](../images/MRTK_ConfiguredHierarchy.png)
 
-2. Passare al pannello Inspector (Controllo) nella sezione camera system (Sistema fotocamera) e verificare che **l'opzione Enable Camera System** (Abilita sistema fotocamera) sia selezionata.
+2. Passare al pannello Inspector (Controllo) alla sezione camera system (Sistema fotocamera) e verificare che **l'opzione Enable Camera System (Abilita** sistema fotocamera) sia selezionata.
 
     ![Abilitazione del sistema di fotocamera](../images/camera-system/EnableCameraSystem.png)
 
@@ -36,7 +36,7 @@ La procedura seguente presuppone l'uso dell'oggetto MixedRealityToolkit. I passa
 
 4. Selezionare il profilo di configurazione desiderato
 
-    ![Selezionare il profilo di sistema della fotocamera](../images/camera-system/SelectCameraProfile.png)
+    ![Selezionare il profilo del sistema di fotocamera](../images/camera-system/SelectCameraProfile.png)
 
 ## <a name="configuring-the-camera-system"></a>Configurazione del sistema di fotocamera
 
@@ -46,28 +46,28 @@ La procedura seguente presuppone l'uso dell'oggetto MixedRealityToolkit. I passa
 
 I provider di impostazioni della fotocamera abilitano la configurazione specifica della piattaforma della fotocamera. Queste impostazioni possono includere passaggi di configurazione personalizzati e/o componenti.
 
-È possibile aggiungere provider facendo clic sul **pulsante Add Camera Impostazioni Provider (Aggiungi Impostazioni provider).** Possono essere rimossi facendo clic **-** sul pulsante a destra del nome del provider.
+I provider possono essere aggiunti facendo clic **sul pulsante Add Camera Impostazioni Provider (Aggiungi camera Impostazioni provider).** Possono essere rimossi facendo clic **-** sul pulsante a destra del nome del provider.
 
 > [!Note]
 > Non tutte le piattaforme richiedono un provider di impostazioni della fotocamera. Se non sono presenti provider compatibili con la piattaforma in cui è in esecuzione l'applicazione, microsoft Mixed Reality Toolkit applica le impostazioni predefinite di base.
 
 ### <a name="display-settings"></a>Impostazioni schermo
 
-![Schermo fotocamera Impostazioni](../images/camera-system/CameraDisplaySettings.png)
+![Impostazioni di visualizzazione della fotocamera Impostazioni](../images/camera-system/CameraDisplaySettings.png)
 
-Le impostazioni di visualizzazione vengono specificate sia per i display opachi (ad esempio, realtà virtuale) che per i display trasparenti (ad esempio, Microsoft HoloLens). La fotocamera viene configurata, in fase di esecuzione, usando queste impostazioni.
+Le impostazioni di visualizzazione vengono specificate sia per gli schermi opachi (ad esempio, virtual reality) che per i display trasparenti (ad esempio, Microsoft HoloLens). La fotocamera viene configurata, in fase di esecuzione, usando queste impostazioni.
 
 **Near Clip**
 
-Il piano di ritaglio vicino è il più vicino, in metri, che un oggetto virtuale può essere alla fotocamera ed essere ancora sottoposto a rendering. Per maggiore comodità dell'utente, è consigliabile impostare questo valore su un valore maggiore di zero. L'immagine precedente contiene valori che si sono trovati a proprio agio in un'ampia gamma di dispositivi.
+Il piano di ritaglio vicino è il più vicino, in metri, che un oggetto virtuale può essere alla fotocamera ed essere ancora sottoposto a rendering. Per il massimo comfort dell'utente, è consigliabile rendere questo valore maggiore di zero. L'immagine precedente contiene valori che si sono trovati a proprio agio in un'ampia gamma di dispositivi.
 
-**Clip lontano**
+**Far Clip**
 
-Il piano di ritaglio lontano è il più lontano, in metri, in cui un oggetto virtuale può essere alla fotocamera ed essere ancora sottoposto a rendering. Per i dispositivi trasparenti, è consigliabile che questo valore sia relativamente vicino per non superare e troppo lo spazio reale e interrompere le qualità immersive dell'applicazione.
+Il piano di ritaglio lontano è il più lontano, in metri, in cui un oggetto virtuale può essere sulla fotocamera ed essere ancora sottoposto a rendering. Per i dispositivi trasparenti, è consigliabile che questo valore sia relativamente vicino, in quanto non deve superare e troppo lo spazio reale e interrompere le qualità immersive dell'applicazione.
 
 **Cancella flag**
 
-Il valore clear flags indica come viene cancellata la visualizzazione mentre viene disegnata. Per le esperienze di realtà virtuale, questo valore è molto spesso impostato su Skybox. Per gli schermi trasparenti, è consigliabile impostare questa opzione su Colore.
+Il valore dei flag di cancellazione indica come viene cancellata la visualizzazione mentre viene disegnata. Per le esperienze di realtà virtuale, questo valore è spesso impostato su Skybox. Per gli schermi trasparenti, è consigliabile impostare questa opzione su Colore.
 
 **Colore di sfondo**
 
@@ -75,9 +75,9 @@ Se i flag di cancellazione non sono impostati su Skybox, verrà visualizzata la 
 
 **Qualità Impostazioni**
 
-Il valore delle impostazioni di qualità indica la qualità grafica che Unity deve usare quando esegue il rendering della scena. Il livello di qualità è un'impostazione a livello di progetto e non è specifico di alcuna fotocamera. Per altre informazioni, vedere [l'articolo Qualità](https://docs.unity3d.com/Manual/class-QualitySettings.html) nella documentazione di Unity.
+Il valore delle impostazioni di qualità indica la qualità grafica che Unity deve usare quando esegue il rendering della scena. Il livello di qualità è un'impostazione a livello di progetto e non è specifico di alcuna fotocamera. Per altre informazioni, vedere [l'articolo Sulla](https://docs.unity3d.com/Manual/class-QualitySettings.html) qualità nella documentazione di Unity.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Documentazione dell'API Camera System](xref:Microsoft.MixedReality.Toolkit.CameraSystem)
 - [Creazione di un provider di Impostazioni fotocamera](create-settings-provider.md)

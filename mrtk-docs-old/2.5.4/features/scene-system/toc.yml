@@ -1,10 +1,10 @@
-- name: Caricamento del contenuto del sistema di scena
+- name: Caricamento del contenuto del sistema della scena
   href: scene-system-content-loading.md
-- name: Introduzione di sistema della scena
+- name: Sistema di scena Attività iniziali
   href: scene-system-getting-started.md
 - name: Scene di illuminazione del sistema di scena
   href: scene-system-lighting-scenes.md
-- name: Stato di caricamento del sistema di scena
+- name: Stato del caricamento del sistema della scena
   href: scene-system-load-progress.md
 - name: Tipi di scena del sistema di scena
   href: scene-system-scene-types.md

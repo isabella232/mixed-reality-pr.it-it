@@ -1,26 +1,26 @@
 ---
 title: Abilitare il posizionamento di modelli 3D nello spazio iniziale
-description: Scopri come inserire modelli 3D dal tuo sito Web o da un'applicazione nella Home realtà mista di Windows.
+description: Informazioni su come inserire modelli 3D dal sito Web o dall'applicazione nella Windows Mixed Reality home page.
 author: thmignon
 ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
-keywords: 3D, modello, posizione in casa, luogo, mondo, modellazione, Home realtà mista, Web, app, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 58da61add35546331ff8199fa20885f9869a9f43
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: 3D, modello, luogo in casa, luogo, mondo, modellazione, ambiente iniziale, Web, app, visore VR di realtà mista, visore VR windows di realtà mista, visore VR di realtà virtuale
+ms.openlocfilehash: 29761cb2a8725221a3be90187488cb13bf6643e4ff334a1edca73e633e7b1d4c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583799"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115186797"
 ---
 # <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Abilitare il posizionamento di modelli 3D nell'ambiente iniziale
 
 > [!NOTE]
-> Questa funzionalità è stata aggiunta come parte dell' [aggiornamento di Windows 10 aprile 2018](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). Le versioni precedenti di Windows non sono compatibili con questa funzionalità.
+> Questa funzionalità è stata aggiunta come parte [dell'Windows 10 di aprile 2018.](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) Le versioni precedenti Windows non sono compatibili con questa funzionalità.
 
-La [Home realtà mista di Windows](../discover/navigating-the-windows-mixed-reality-home.md) è il punto di partenza in cui gli utenti atterrano prima di avviare le applicazioni. In alcuni scenari, le app 2D, ad esempio l'app Olografics, consentono di posizionare i modelli 3D direttamente nella Home realtà mista come decorazioni o per un ulteriore controllo in 3D completo. Il *protocollo Aggiungi modello* consente di inviare un modello 3D dal sito Web o dall'applicazione direttamente nella Home realtà mista di Windows, in cui verrà mantenuto come i [lanci di app 3D](3d-app-launcher-design-guidance.md), le app 2D e gli ologrammi. 
+La [Windows Mixed Reality iniziale è il](../discover/navigating-the-windows-mixed-reality-home.md) punto di partenza da cui gli utenti atterrerà prima di avviare le applicazioni. In alcuni scenari, le app 2D(come l'app Ologrammi) consentono il posizionamento dei modelli 3D direttamente nel ambiente iniziale come decorazione o per un'ulteriore ispezione in 3D completo. Il  protocollo di aggiunta del modello consente di inviare un modello 3D dal sito Web o dall'applicazione direttamente nella home page di Windows Mixed Reality, dove verrà mantenuto come utilità di avvio di [app 3D,](3d-app-launcher-design-guidance.md)app 2D e ologrammi. 
 
-Se, ad esempio, si sta sviluppando un'applicazione che espone un catalogo di mobili 3D per la progettazione di uno spazio, usare il *protocollo Aggiungi modello* per consentire agli utenti di collocare i modelli di mobili 3D dal catalogo. Una volta inserite in tutto il mondo, gli utenti possono spostare, ridimensionare e rimuovere questi modelli 3D esattamente come altri ologrammi nella Home page. Questo articolo fornisce una panoramica dell'implementazione del *protocollo Add Model* per consentire agli utenti di decorare il proprio mondo con oggetti 3D dall'app o dal Web.
+Ad esempio, se si sta sviluppando un'applicazione che mette in primo piano  un catalogo di mobili 3D per la progettazione di uno spazio, usare il protocollo di aggiunta del modello per consentire agli utenti di inserire tali modelli di mobili 3D dal catalogo. Una volta inseriti nel mondo, gli utenti possono spostare, ridimensionare e rimuovere questi modelli 3D come altri ologrammi nella casa. Questo articolo offre una panoramica  dell'implementazione del protocollo di aggiunta del modello per consentire agli utenti di decorare il proprio mondo con oggetti 3D dall'app o dal Web.
 
 ## <a name="device-support"></a>Supporto di dispositivi
 
@@ -36,7 +36,7 @@ Se, ad esempio, si sta sviluppando un'applicazione che espone un catalogo di mob
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
     </tr>
      <tr>
-        <td>Aggiungi protocollo modello</td>
+        <td>Aggiungere il protocollo del modello</td>
         <td>✔️</td>
         <td>✔️</td>
     </tr>
@@ -44,21 +44,21 @@ Se, ad esempio, si sta sviluppando un'applicazione che espone un catalogo di mob
 
 ## <a name="the-basics"></a>Nozioni di base
 
-Per abilitare il posizionamento dei modelli 3D nella Home realtà mista di Windows sono necessari due passaggi:
-1. [Verificare che il modello 3D sia compatibile con la Home realtà mista di Windows](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md).
-2. Implementare il *protocollo Aggiungi modello* nell'applicazione o nella pagina Web (questo articolo).
+Esistono due passaggi per abilitare il posizionamento dei modelli 3D nella home Windows Mixed Reality home:
+1. [Verificare che il modello 3D sia compatibile con il Windows Mixed Reality home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md).
+2. Implementare *il protocollo di aggiunta del* modello nell'applicazione o nella pagina Web (questo articolo).
 
-## <a name="implementing-the-add-model-protocol"></a>Implementazione del *protocollo Add Model*
+## <a name="implementing-the-add-model-protocol"></a>Implementazione del *protocollo di aggiunta del modello*
 
-Quando si dispone di un [modello 3D compatibile](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md), è possibile implementare il *protocollo Add Model* attivando l'URI seguente da qualsiasi pagina Web o applicazione:
+Dopo aver creato un [modello 3D](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)compatibile, è possibile implementare il protocollo di aggiunta del modello attivando l'URI seguente da qualsiasi pagina Web o applicazione: 
 
 ```
 ms-mixedreality:addmodel?uri=<Path to a .glb 3D model either local or remote>
 ```
 
-Se l'URI punta a una risorsa remota, verrà automaticamente scaricato e inserito nella Home page. Le risorse locali verranno copiate nella cartella di dati dell'app della Home realtà mista prima di essere inserite nella Home page. Si consiglia di progettare un'esperienza per gli scenari in cui l'utente potrebbe eseguire una versione precedente di Windows che non supporta questa funzionalità nascondendo il pulsante o disabilitando l'operazione, se possibile. 
+Se l'URI punta a una risorsa remota, verrà automaticamente scaricato e inserito nella home page. Le risorse locali verranno copiate nella ambiente iniziale dei dati dell'app prima di essere posizionate nella home page. È consigliabile progettare l'esperienza per gli scenari in cui l'utente potrebbe eseguire una versione precedente di Windows che non supporta questa funzionalità nascondendo il pulsante o disabilitandolo, se possibile. 
 
-### <a name="invoking-the-add-model-protocol-from-a-universal-windows-platform-app"></a>Richiamo del *protocollo Add Model* da un'app piattaforma UWP (Universal Windows Platform):
+### <a name="invoking-the-add-model-protocol-from-a-universal-windows-platform-app"></a>Richiamo del protocollo *di aggiunta del modello* da un'app universal Windows Platform:
 
 ```C#
 private async void launchURI_Click(object sender, RoutedEventArgs e)
@@ -80,18 +80,18 @@ private async void launchURI_Click(object sender, RoutedEventArgs e)
 }
 ```
 
-### <a name="invoking-the-add-model-protocol-from-a-webpage"></a>Richiamo del *protocollo di aggiunta modello* da una pagina Web:
+### <a name="invoking-the-add-model-protocol-from-a-webpage"></a>Richiamo del protocollo *di aggiunta del modello* da una pagina Web:
 
 ```html
 <a class="btn btn-default" href="ms-mixedreality:addModel?uri=sample.glb"> Place 3D Model </a>
 ```
 
-## <a name="considerations-for-immersive-vr-headsets"></a>Considerazioni per auricolari immersivi (VR)
+## <a name="considerations-for-immersive-vr-headsets"></a>Considerazioni sui visori VR immersive
 
-* Per gli auricolari immersivi (VR), il portale per la realtà mista non deve essere in esecuzione prima di richiamare il *protocollo di aggiunta del modello*. In questo caso, il *protocollo Add Model* avvierà il portale di realtà mista e inserirà l'oggetto direttamente nel punto in cui l'auricolare sta cercando una volta arrivati nella Home realtà mista. 
-* Quando si richiama il *protocollo Aggiungi modello* dal desktop con il portale per la realtà mista già in esecuzione, assicurarsi che l'auricolare sia "sveglio". In caso contrario, la selezione host non riuscirà. 
+* Per i visori VR immersive, il Portale realtà mista non deve essere in esecuzione prima di richiamare il *protocollo di aggiunta del modello*. In questo caso, il protocollo di aggiunta del modello avvierà il Portale realtà mista e inserirà l'oggetto direttamente nel punto in cui il visore VR sta guardando quando si arriva al ambiente iniziale.  
+* Quando si richiama il *protocollo di* aggiunta del modello dal desktop con il Portale realtà mista già in esecuzione, assicurarsi che il visore VR sia "attivo". In caso contrario, il posizionamento non avrà esito positivo. 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-* [Creazione di modelli 3D per l'utilizzo nella Home realtà mista di Windows](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
+* [Creazione di modelli 3D da usare nella home page Windows Mixed Reality](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [Esplorazione dello spazio iniziale di Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md)

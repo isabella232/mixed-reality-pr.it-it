@@ -1,8 +1,8 @@
 - name: Compilazione e distribuzione
   href: build-and-deploy.md
-- name: Guida al porting di HRTK a MRTK
+- name: Guida alla portabilità da HRTK a MRTK
   href: hrtk-to-mrtk-porting-guide.md
-- name: Rimozione del codice gestito e MRTK
+- name: MRTK e stripping del codice gestito
   href: mrtk-and-managed-code-stripping.md
 - name: Aggiornamento
   href: updating.md

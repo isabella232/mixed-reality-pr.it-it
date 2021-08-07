@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens2, audio spaziale, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, funzione di trasferimento correlata alla testa, riverbero, Spazialista Microsoft
-ms.openlocfilehash: 9d0fa432f2e653cdd6820cb6c779cc1acc5c4b15
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+ms.openlocfilehash: 2599e2f360afa4518102ab9535608e9d378264ae87f84a36823d460f934d6a05
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110712756"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213225"
 ---
 # <a name="4-enabling-and-disabling-spatialization-at-run-time"></a>4. Abilitazione e disabilitazione della spazializzazione in fase di esecuzione
 
@@ -26,14 +26,14 @@ In questa esercitazione si apprenderà come abilitare e disabilitare la spaziali
 
 ## <a name="add-spatialization-control-script"></a>Aggiungere lo script di controllo della spazializzazione
 
- Fare clic con il pulsante destro del mouse nella finestra Progetto e scegliere Crea script C# per creare un nuovo script C#, immettere un nome appropriato per lo script, ad esempio  >   _SpatializeOnOff:_
+ Fare clic con il pulsante destro del mouse nella finestra Project e scegliere Crea script C# per creare un nuovo script C#, immettere un nome appropriato per lo script, ad esempio  >   _SpatializeOnOff:_
 
 ![Crea script](images/spatial-audio/spatial-audio-04-section1-step1-1.PNG)
 
-Fare doppio clic nello script nella finestra Progetto per aprirlo in Visual Studio. Sostituire il contenuto dello script predefinito con il codice seguente:
+Fare doppio clic nello script nella finestra Project per aprirlo in Visual Studio. Sostituire il contenuto dello script predefinito con quanto segue:
 
 > [!NOTE]
-> Diverse righe dello script sono commentate. Queste righe verranno decommentate in Next Chapter: Using reverb to add distance to spatial audio ( Capitolo successivo: Uso [del riverbero per aggiungere la distanza all'audio spaziale).](unity-spatial-audio-ch5.md)
+> Diverse righe dello script sono commentate. Queste righe verranno decommentate in Next Chapter: Using reverb to add distance to spatial audio ( Capitolo successivo: Uso del [riverbero per aggiungere la distanza all'audio spaziale).](unity-spatial-audio-ch5.md)
 
 ```c#
 using System.Collections;
@@ -92,7 +92,7 @@ public class SpatializeOnOff : MonoBehaviour
 
 > [!NOTE]
 > Per abilitare o disabilitare la spazializzazione, lo script regola solo la proprietà **spatialBlend,** lasciando abilitata **la proprietà spatialization.** In questa modalità Unity applica ancora la **curva volume.** In caso contrario, se l'utente deve disabilitare la spazializzazione quando è lontano dall'origine, il volume aumenta improvvisamente.
-> Se si preferisce disabilitare completamente la spazializzazione, modificare lo script per modificare anche la proprietà **booleana spatialization** della **variabile SourceObject.**
+> Se si preferisce disabilitare completamente la spazializzazione, modificare lo script per modificare anche la proprietà **booleana di** spazializzazione della **variabile SourceObject.**
 
 ## <a name="attach-your-script-and-drive-it-from-the-button"></a>Collegare lo script e guidarlo dal pulsante
 

@@ -1,17 +1,17 @@
 ---
 title: Cursori
-description: Un cursore, o indicatore del vettore di destinazione, fornisce un feedback continuo per l'utente per comprendere ciò che HoloLens comprende sulle proprie intenzioni.
+description: Un cursore, o indicatore del vettore di destinazione, fornisce un feedback continuo per l'utente per comprendere HoloLens informazioni sulle intenzioni.
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: HoloLens (prima generazione), HoloLens 2, realtà mista, cursori, destinazione, sguardo, movimenti, visore di realtà mista, visore di realtà mista windows, visore di realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, raggi, input
-ms.openlocfilehash: 829d7b3f766f848228946ee0a623f9f3013adca3
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: HoloLens (prima generazione), HoloLens 2, realtà mista, cursori, destinazione, sguardo, movimenti, visore di realtà mista, visore di realtà mista windows, visore per realtà virtuale, HoloLens, MRTK, Toolkit, raggi, input
+ms.openlocfilehash: 46e570328451078586109448bce28a7074bc9c2f791c15a284c85b845441fabe
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600380"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187058"
 ---
 # <a name="cursors"></a>Cursori
 
@@ -19,7 +19,7 @@ ms.locfileid: "110600380"
 
 Un cursore fornisce feedback continuo in base al punto in cui il visore ritiene che lo stato attivo corrente degli utenti sia in un determinato momento. Il feedback del cursore include l'area, l'ologramma o il punto nell'ambiente virtuale che risponde all'input. Anche se il cursore è una rappresentazione digitale di dove il dispositivo comprende l'attenzione dell'utente, questo non è lo stesso di determinare le intenzioni dell'utente. Il feedback del cursore consente inoltre agli utenti di conoscere le risposte del sistema previste. È possibile usare i commenti e suggerimenti per comunicare l'intenzione al dispositivo, in modo da aumentare l'attendibilità degli utenti.
 
-Sono disponibili tre tipi di cursori: **dito, raggio** e **sguardo alla testa.** Questi cursori di puntamento funzionano con diverse modalità di input in HoloLens, HoloLens 2 e visori immersivi. Di seguito sono riportate indicazioni sul tipo di cursore da usare per ogni tipo di visore e modello di interazione. In Mixed Reality Toolkit (MRTK) sono stati creati moduli di cursori di trascinamento della selezione per facilitare la creazione dell'esperienza di puntamento.
+Sono disponibili tre tipi di cursori: **dito, raggio** e **sguardo alla testa.** Questi cursori di puntamento funzionano con diverse modalità di input HoloLens, HoloLens 2 visori immersivi. Di seguito sono riportate indicazioni sul tipo di cursore da usare per ogni tipo di visore e modello di interazione. In Mixed Reality Toolkit (MRTK) sono stati creati moduli di cursori di trascinamento della selezione per creare l'esperienza di puntamento più utile.
 
 ## <a name="device-support"></a>Supporto di dispositivi
 
@@ -65,7 +65,7 @@ Il cursore del dito è disponibile solo nel HoloLens 2 per migliorare la modalit
 
 ## <a name="ray-cursor"></a>Cursore Ray
 
-I cursori di raggio si collegano alla fine dei raggi che puntano lontano per consentire la manipolazione di oggetti non raggiungibili. Nei visori immersivi, i raggi si distoglieno dai controller di movimento e terminano con cursori punto. In HoloLens 2, si applica il modello mentale di questi raggi controller del movimento e i raggi della mano progettati che provengono dai palmi e terminano in cursori a forma di anello coerenti con i cursori di dito usati nella manipolazione diretta. <br>
+I cursori di raggio si collegano alla fine dei raggi che puntano lontano per consentire la manipolazione di oggetti non raggiungibili. Nei visori immersivi, i raggi si distoglieno dai controller di movimento e terminano con cursori punto. In HoloLens 2, si applica il modello mentale di questi raggi controller del movimento e i raggi della mano progettati che provengono dai palmi e terminano in cursori a forma di anello coerenti con i cursori del dito usati nella manipolazione diretta. <br>
 :::row:::
     :::column:::
         ![Controller cursore Ray](images/ray-cursor-controller.png)<br>
@@ -83,7 +83,7 @@ I cursori di raggio si collegano alla fine dei raggi che puntano lontano per con
 
 ## <a name="head-gaze-cursor"></a>Cursore con sguardo rivolto verso la testa
 
-Il cursore con sguardo rivolto verso la testa è un punto che si collega alla fine di un vettore di punta invisibile che usa la posizione e la rotazione della testa verso il punto. Per eseguire azioni, questo cursore di puntamento è associato a vari input di commit, ad esempio il tocco dell'aria, i comandi vocali, la sospensione e la pressione del pulsante. In HoloLens 2, lo sguardo alla testa è abbinato meglio a qualsiasi input di commit che non sia un tocco dell'aria, in quanto si verifica un conflitto di interazione tra il tocco dell'aria e i raggi di estrema mano. <br>
+Il cursore con sguardo rivolto verso la testa è un punto che si collega alla fine di un vettore di punta invisibile che usa la posizione e la rotazione della testa verso il punto. Per eseguire azioni, questo cursore di puntamento è associato a vari input di commit, ad esempio il tocco dell'aria, i comandi vocali, la sospensione e la pressione del pulsante. In HoloLens 2, lo sguardo alla testa è meglio abbinato a qualsiasi input di commit che non sia un tocco dell'aria, in quanto si verifica un conflitto di interazione tra il tocco dell'aria e i raggi di estrema mano. <br>
 :::row:::
     :::column:::
         ![Mano del cursore con lo sguardo rivolto verso la testa](images/head-gaze-cursor-hand.png)<br>
@@ -108,7 +108,7 @@ Per personalizzare i comportamenti e gli aspetti del feedback del cursore, ecco 
 * Il cursore non deve essere più grande delle destinazioni disponibili, consentendo agli utenti di interagire facilmente con e visualizzare il contenuto.
 * A seconda dell'esperienza creata, anche il ridimensionamento del cursore quando l'utente guarda intorno è una considerazione importante. Ad esempio, man mano che l'utente guarda più lontano nell'esperienza, il cursore non deve diventare troppo piccolo in modo che sia perso.
 * Quando si ridimensiona il cursore, è consigliabile applicarvi un'animazione soft man mano che viene ridimensionata per dare un'emozione organica.
-* Evitare di ostruire il contenuto. Gli ologrammi sono ciò che rende l'esperienza facile da ricordare e il cursore non deve essere rimosso da essi.
+* Evitare di ostruire il contenuto. Ologrammi sono ciò che rende l'esperienza facile da ricordare e il cursore non deve essere rimosso da essi.
 
 ### <a name="directionless-cursor-shape"></a>Forma cursore senza direzione
 
@@ -128,7 +128,7 @@ Per personalizzare i comportamenti e gli aspetti del feedback del cursore, ecco 
 ### <a name="visual-cues"></a>Visivi
 
 * Se l'esperienza è incentrata su un singolo ologramma, il cursore deve allinearsi e abbracciare solo l'ologramma e cambiare forma quando si guarda lontano da tale ologramma. Questo può comunicare all'utente che l'ologramma è fattibile e può interagire con esso.
-* Se l'applicazione usa il mapping spaziale, il cursore potrebbe allinearsi e abbracciare ogni superficie visualizzata. Ciò fornisce feedback agli utenti che HoloLens e l'applicazione possono visualizzare il proprio spazio. Questo rinforza il fatto che gli ologrammi sono reali e nel nostro mondo e contribuisce a colmare il divario tra reale e virtuale.
+* Se l'applicazione usa il mapping spaziale, il cursore potrebbe allinearsi e abbracciare ogni superficie visualizzata. In questo modo si inviano commenti e suggerimenti agli utenti HoloLens l'applicazione può visualizzare il proprio spazio. Questo rinforza il fatto che gli ologrammi sono reali e nel nostro mondo e contribuisce a colmare il divario tra reale e virtuale.
 * Avere un'idea di cosa deve fare il cursore quando non sono presenti ologrammi o superfici in vista. Posizionarlo a una distanza predeterminata davanti all'utente è un'opzione.
 
 ### <a name="possible-actions"></a>Azioni possibili

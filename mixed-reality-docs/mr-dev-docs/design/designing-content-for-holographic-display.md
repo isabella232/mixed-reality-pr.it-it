@@ -1,29 +1,29 @@
 ---
 title: Progettazione di contenuto per la visualizzazione olografica
-description: Informazioni sulle linee guida di progettazione e sulle procedure consigliate per la visualizzazione olografica nei dispositivi HoloLens.
+description: Informazioni sulle linee guida di progettazione e sulle procedure consigliate per la visualizzazione olografica HoloLens dispositivi.
 author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
-keywords: progettazione dell'interfaccia utente, visualizzazione olografica, progettazione del contenuto, tema scuro, tema chiaro, visore VR di realtà mista, visore VR windows di realtà mista, visore VR di realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, progettazione, pixel
-ms.openlocfilehash: 2c68acb5478bfbd438c8bbb9dd2f8d9686bcefc5
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Progettazione dell'interfaccia utente, visualizzazione olografica, progettazione del contenuto, tema scuro, tema chiaro, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, progettazione, pixel
+ms.openlocfilehash: 1fab172f6d737b25e95b10a6dded2a5ab805e0086de8d0fae40c5a6a4ef7d805
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600320"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212949"
 ---
 # <a name="designing-content-for-holographic-display"></a>Progettazione di contenuto per la visualizzazione olografica
 
 ![Posizione sul lato Ulnar](images/UX_Hero_DarkTheme.jpg)
 
-Quando si progettano contenuti per schermi olografici, è necessario prendere in considerazione diversi elementi per ottenere un'esperienza ottimale. Di seguito sono elencate alcune raccomandazioni. Per altre informazioni sulle caratteristiche degli schermi olografici, vedere la pagina [Colore, luce e](color-light-and-materials.md) materiali.
+Quando si progettano contenuti per schermi olografici, è necessario prendere in considerazione diversi elementi per ottenere un'esperienza ottimale. Di seguito sono elencate alcune raccomandazioni. Per altre informazioni sulle caratteristiche degli schermi olografici, vedere la pagina [Color, light and materials (Colore,](color-light-and-materials.md) luce e materiali).
 
 <br>
 
 ## <a name="challenges-with-bright-color-on-a-large-surface"></a>Problemi con il colore chiaro su una superficie di grandi dimensioni 
 
-In base alle ricerche e ai test dell'esperienza HoloLens, è stato rilevato che l'uso di colori chiari in un'area di grandi dimensioni dello schermo può causare diversi problemi: 
+In base alle HoloLens di ricerca e test, è stato rilevato che l'uso di colori chiari in un'area di grandi dimensioni dello schermo può causare diversi problemi: 
 
 **Affaticamento oculare** 
 
@@ -31,7 +31,7 @@ Poiché la visualizzazione olografica è additiva, gli ologrammi con colori chia
 
 **Occlusione manuale** 
 
-Il colore chiaro rende difficile per l'utente visualizzare le mani quando interagisce direttamente con gli oggetti. Poiché l'utente non può vedere le mani, diventa difficile percepirne la profondità/distanza tra la mano e il dito rispetto alla superficie di destinazione. Il cursore del dito consente di compensare questo problema, ma può comunque risultare complesso su una superficie bianca. 
+Il colore chiaro rende difficile per l'utente visualizzare le mani quando interagisce direttamente con gli oggetti. Poiché l'utente non può vedere le mani, diventa difficile percepirne la profondità/distanza dalla superficie di destinazione. Il cursore del dito consente di compensare questo problema, ma può comunque risultare complesso su una superficie bianca. 
 
 ![Colore e occlusione della mano ](images/color_handocclusion.jpg)
  *Difficile vedere la mano sul backplate del contenuto* di colore chiaro
@@ -58,7 +58,7 @@ HoloLens consente all'esperienza di visualizzare testo ad alta risoluzione. Tutt
 
 **Usare il materiale HolographicBackplate di MRTK**
 
-Il materiale HolographicBackplate viene applicato a diversi pannelli dell'interfaccia utente nella shell di HoloLens. Una delle funzionalità è un effetto di iridescenza visibile agli utenti quando si spostano in base al pannello. Il colore del backplate si sposta in modo secondario in uno spettro predefinito, creando un effetto visivo coinvolgente e dinamico senza interferire con la leggibilità del contenuto. Questo lieve cambiamento di colore serve anche a compensare eventuali piccole irregolarità di colore. 
+Il materiale HolographicBackplate viene applicato a diversi pannelli dell'interfaccia utente nella HoloLens shell. Una delle funzionalità è un effetto di iridescenza visibile agli utenti quando si spostano in base al pannello. Il colore del backplate si sposta in modo secondario in uno spettro predefinito, creando un effetto visivo coinvolgente e dinamico senza interferire con la leggibilità del contenuto. Questo lieve cambiamento di colore serve anche a compensare eventuali piccole irregolarità di colore. 
 
 
 ## <a name="challenges-with-transparent-or-translucent-ui-backplate"></a>Problemi con backplate dell'interfaccia utente trasparente o traslucido 
@@ -72,11 +72,11 @@ Poiché gli oggetti olografici si integrano con l'ambiente fisico, il contenuto 
 
 **Prestazioni**
 
-Per eseguire correttamente il rendering degli oggetti trasparenti o traslucidi, è necessario ordinare e unire gli oggetti esistenti sullo sfondo. L'ordinamento degli oggetti trasparenti ha un costo medio della CPU, la fusione ha un costo notevole per la GPU perché non consente alla GPU di eseguire la rimozione della superficie nascosta tramite z-culling (ad esempio test di profondità). Se non si consente la rimozione della superficie nascosta, aumenta il numero di operazioni necessarie per il pixel finale sottoposto a rendering. In questo modo si imposta una maggiore pressione fill rate vincoli.
+Per il corretto rendering degli oggetti trasparenti o traslucidi, è necessario ordinare e unire gli oggetti esistenti sullo sfondo. L'ordinamento degli oggetti trasparenti ha un costo medio della CPU, la fusione ha un costo notevole per la GPU perché non consente alla GPU di eseguire la rimozione della superficie nascosta tramite z-culling (ad esempio test di profondità). Se non si consente la rimozione della superficie nascosta, aumenta il numero di operazioni necessarie per il pixel finale sottoposto a rendering. In questo modo si imposta una maggiore pressione fill rate vincoli.
 
 **Problema di stabilità dell'ologramma con la tecnologia Depth LSR**
 
-Per migliorare la proiezione olografica o la stabilità dell'ologramma, un'applicazione può inviare un buffer di profondità al sistema per ogni frame sottoposto a rendering. Quando si usa il buffer di profondità per la riepilazione, è necessario scrivere un buffer di profondità per ogni pixel di cui è stato eseguito il rendering di colore a una profondità corrispondente. Anche i pixel con un valore di profondità devono avere un valore di colore. Se le indicazioni precedenti non vengono seguite, le aree dell'immagine di cui è stato eseguito il rendering che non dispongono di informazioni di profondità valide possono essere riposizionate in modo da produrre artefatti, spesso visibili come distorsioni simili a onde.
+Per migliorare la proiezione olografica o la stabilità dell'ologramma, un'applicazione può inviare un buffer di profondità al sistema per ogni frame sottoposto a rendering. Quando si usa il buffer di profondità per la nuovaproiezione, è necessario scrivere un buffer di profondità per ogni pixel di cui è stato eseguito il rendering di colore a una profondità corrispondente. Anche i pixel con un valore di profondità devono avere un valore di colore. Se le indicazioni precedenti non vengono seguite, le aree dell'immagine di cui è stato eseguito il rendering che non dispongono di informazioni di profondità valide possono essere riposizionate in modo da produrre artefatti, spesso visibili come distorsioni simili a onde.
 
 
 ## <a name="design-guidelines-for-transparent-elements"></a>Linee guida di progettazione per gli elementi trasparenti

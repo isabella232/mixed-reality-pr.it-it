@@ -1,19 +1,19 @@
 ---
-ms.openlocfilehash: ea360c6aeb278f2afad76a54ed709c1126c55371
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: 3d9549ed936e3a6ab9ee8091e6455f38a762aff955c43a5265642c7c50b549ef
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111403429"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115215876"
 ---
-# <a name="unity-2020--windows-xr-plugin"></a>[Unity 2020 + Plug-in Windows XR](#tab/winxr)
+# <a name="unity-2020--windows-xr-plugin"></a>[Unity 2020 + Windows plug-in XR](#tab/winxr)
 
 In questa sezione verranno aggiornati o installati i pacchetti predefiniti seguenti:
 
-* Supporto del plug-in ARCore XR 4.0.12 per Android
+* Supporto di ARCore XR Plugin 4.0.12 per Android
 * ArKit XR plugin 4.0.12 for iOS support (Plug-in ARKit XR 4.0.12 per il supporto iOS)
 
-Aggiungere i pacchetti menzionati in precedenza da Gestione pacchetti Unity.
+Aggiungere i pacchetti indicati in precedenza dalla gestione pacchetti unity.
 
 > [!CAUTION]
 > Non tutte le versioni sono compatibili con MRTK e solo alcune versioni interagiscono tra loro, quindi è importante assicurarsi di installare le versioni esatte elencate sopra.
@@ -32,7 +32,7 @@ In questa sezione verranno aggiornati o installati i pacchetti predefiniti segue
 * ARCore XR Plugin 3.1.3 per il supporto Android
 * ARKit XR plugin 3.1.3 per il supporto iOS
 
-Aggiungere i pacchetti menzionati in precedenza da Gestione pacchetti Unity.
+Aggiungere i pacchetti indicati in precedenza dalla gestione pacchetti unity.
 
 > [!CAUTION]
 > Non tutte le versioni sono compatibili con MRTK e solo alcune versioni interagiscono tra loro, quindi è importante assicurarsi di installare le versioni esatte elencate sopra.

@@ -1,23 +1,23 @@
 ---
 title: Tastiera
-description: Informazioni su come richiamare e usare la tastiera di sistema usando Mixed Reality Toolkit.
+description: Informazioni su come richiamare e usare la tastiera di sistema usando l'Toolkit.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Realtà mista, controlli, interazione, interfaccia utente, esperienza utente, visore per realtà mista, visore windows mixed reality, visore per realtà virtuale, HoloLens, tastiera, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 096a408a8106ec5ee6a820865e158c3cd019f702
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Realtà mista, controlli, interazione, interfaccia utente, esperienza utente, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, HoloLens, tastiera, MRTK, realtà mista Toolkit
+ms.openlocfilehash: f0045f6008384f5ed709597d625dc4526723921df51a6a1c6d25641ac95f0b34
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600140"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208348"
 ---
 # <a name="keyboard"></a>Tastiera
 
 ![Tastiera](images/UX_Hero_Keyboard.jpg)
 
-L'applicazione di realtà mista può richiamare la tastiera di sistema in qualsiasi momento, che si comporta in base alle funzionalità della piattaforma di destinazione. Ad esempio, la tastiera HoloLens 2 supporta le interazioni dirette con la mano, mentre le tastiere HoloLens (prima generazione) supportano lo sguardo e i tocchi d'aria.
+L'applicazione di realtà mista può richiamare la tastiera di sistema in qualsiasi momento, che si comporta in base alle funzionalità della piattaforma di destinazione. Ad esempio, la tastiera HoloLens 2 supporta le interazioni dirette con la mano, mentre le tastiere di HoloLens (prima generazione) supportano lo sguardo fisso e i tocchi d'aria.
 
 <br>
 
@@ -33,10 +33,10 @@ L'applicazione di realtà mista può richiamare la tastiera di sistema in qualsi
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di sviluppo di Unity che è stato previsto, l'attività successiva è distribuire l'applicazione in un dispositivo o un emulatore.
+Se si sta seguendo il percorso di sviluppo di Unity che è stato strutturato, l'attività successiva è distribuire l'applicazione in un dispositivo o un emulatore.
 
 > [!div class="nextstepaction"]
-> [Distribuire in HoloLens o Windows Mixed Reality visori immersive](../develop/platform-capabilities-and-apis/using-visual-studio.md)
+> [Eseguire la distribuzione HoloLens o Windows Mixed Reality visori VR immersive](../develop/platform-capabilities-and-apis/using-visual-studio.md)
 
 ## <a name="see-also"></a>Vedi anche
 

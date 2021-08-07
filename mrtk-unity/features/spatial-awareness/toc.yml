@@ -2,7 +2,7 @@
   href: spatial-awareness-getting-started.md
 - name: Configurazione degli osservatori mesh per il dispositivo
   href: configuring-spatial-awareness-mesh-observer.md
-- name: Osservatore della mesh di oggetti spaziali
+- name: Osservatore di mesh di oggetti spaziali
   href: spatial-object-mesh-observer.md
 - name: Osservatore di comprensione della scena
   href: scene-understanding.md

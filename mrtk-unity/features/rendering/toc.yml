@@ -1,6 +1,6 @@
 - name: Primitiva di ritaglio
   href: clipping-primitive.md
-- name: Luce al passaggio del mouse
+- name: Luce del passaggio del mouse
   href: hover-light.md
 - name: Istanza material
   href: material-instance.md

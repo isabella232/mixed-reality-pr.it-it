@@ -5,38 +5,38 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, UnitTest,
-ms.openlocfilehash: c8efb192982a1cb9ca07e91d29a69b11aaffc290
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: d528b5c16ab39271f9984bdd9e23ebca091efd53ed563149f3933ed31ed656dd
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177108"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115216257"
 ---
 # <a name="writing-and-running-tests"></a>Scrittura ed esecuzione di test
 
-Per garantire l'affidabilità di MRTK, MRTK dispone di un set di test per garantire che le modifiche al codice non regredino nel comportamento esistente. Avere un code coverage di test valido in una grande codebase come MRTK è fondamentale per la stabilità e la certezza di apportare modifiche.
+Per garantire l'affidabilità di MRTK, MRTK dispone di un set di test per garantire che le modifiche al codice non regredino nel comportamento esistente. Avere un buon code coverage di test in una grande codebase come MRTK è fondamentale per la stabilità e la sicurezza quando si apportano modifiche.
 
-MRTK usa [l'Test Runner Unity](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) che usa un'integrazione Unity di [NUnit.](https://nunit.org/) Questa guida fornirà un punto di partenza su come aggiungere test a MRTK. Non verrà illustrata la [Test Runner Unity](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) e [NUnit](https://nunit.org/) che possono essere cercati nei collegamenti forniti.
+MRTK usa [l'Test Runner Unity](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) che usa un'integrazione unity di [NUnit](https://nunit.org/). Questa guida fornirà un punto di partenza per aggiungere test a MRTK. Non verranno illustrate le Test Runner [Unity](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) e [NUnit](https://nunit.org/) che possono essere cercate nei collegamenti forniti.
 
 Prima di inviare una richiesta pull, assicurarsi di:
 
-1. Eseguire i test in locale in modo che le modifiche non regrediscano nel comportamento esistente.Il completamento delle modifiche non sarà consentito se i test hanno esito negativo.
+1. Eseguire i test in locale in modo che le modifiche non regrediscano il comportamento esistente (il completamento delle PR non sarà consentito se i test hanno esito negativo).
 
 1. Se si corregge un bug, scrivere un test per testare la correzione e assicurarsi che le future modifiche al codice non lo interrompano di nuovo.
 
-1. Se si scrive una funzionalità, scrivere nuovi test per evitare modifiche imminenti del codice che interrompe questa funzionalità.
+1. Se si scrive una funzionalità, scrivere nuovi test per evitare che le prossime modifiche del codice infrangono questa funzionalità.
 
-Attualmente i test della modalità di riproduzione devono essere eseguiti in Unity 2018.4 e potrebbero non riuscire in altre versioni di Unity
+Attualmente i test playmode devono essere eseguiti in Unity 2018.4 e potrebbero non riuscire in altre versioni di Unity
 
 ## <a name="running-tests"></a>Esecuzione di test
 
 ### <a name="unity-editor"></a>Editor Unity
 
-[L'Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) Unity è disponibile in Finestra Generale Test Runner e mostrerà tutti i test disponibili in modalità di riproduzione e modifica  >    >   di MRTK.
+Il [Test Runner Unity](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) è disponibile in **Finestra** generale Test Runner e mostra tutti i test di riproduzione e modifica  >    >   MRTK disponibili.
 
 ### <a name="command-line"></a>Riga di comando
 
-I test possono essere eseguiti anche da uno script [di PowerShell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6) disponibile all'indirizzo `Scripts\test\run_playmode_tests.ps1` . Verranno eseguiti i test playmode esattamente come vengono eseguiti in GitHub/CI (vedere di seguito) e verranno stampati i risultati. Ecco alcuni esempi di come eseguire lo script
+I test possono essere eseguiti anche da uno script [di PowerShell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6) disponibile in `Scripts\test\run_playmode_tests.ps1` . Verranno eseguiti i test playmode esattamente come vengono eseguiti in GitHub/CI (vedere di seguito) e verranno stampati i risultati. Ecco alcuni esempi di come eseguire lo script
 
 Eseguire i test sul progetto che si trova in H:\mrtk.dev, con Unity 2018.4 (ad esempio Unity 2018.4.26f1)
 
@@ -44,31 +44,31 @@ Eseguire i test sul progetto che si trova in H:\mrtk.dev, con Unity 2018.4 (ad e
 .\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe"
 ```
 
-Eseguire i test sul progetto che si trova in H:\mrtk.dev, con Unity 2018.4, per visualizzare i risultati in C:\playmode_test_out
+Eseguire i test sul progetto che si trova in H:\mrtk.dev, con Unity 2018.4, restituisce i risultati a C:\playmode_test_out
 
 ```ps
 .\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe" -outFolder "C:\playmode_test_out\"
 ```
 
-È anche possibile eseguire i test della modalità di riproduzione più volte tramite lo `run_repeat_tests.ps1` script. È possibile usare tutti `run_playmode_tests.ps1` i parametri usati in .
+È anche possibile eseguire i test playmode più volte tramite lo `run_repeat_tests.ps1` script. È possibile usare tutti `run_playmode_tests.ps1` i parametri usati in .
 
 ```ps
 .\run_repeat_tests.ps1 -Times 5
 ```
 
-### <a name="pull-request-validation"></a>Convalida delle richieste pull
+### <a name="pull-request-validation"></a>Convalida della richiesta pull
 
-L'interfaccia utente di MRTK compila MRTK in tutte le configurazioni ed esegue tutti i test in modalità di modifica e riproduzione. L'interfaccia utente continua può essere attivata pubblicando un commento nella richiesta pull di GitHub `/azp run mrtk_pr` se l'utente dispone di diritti sufficienti. Le esecuzioni ci sono visibili nella scheda "controlli" della richiesta pull.
+L'CI di MRTK compila MRTK in tutte le configurazioni ed esegue tutti i test della modalità di modifica e riproduzione. L'attivazione continua può essere attivata pubblicando un commento nella richiesta pull di GitHub `/azp run mrtk_pr` se l'utente dispone di diritti sufficienti. Le esecuzioni ci-ci sono visibili nella scheda "controlli" della richiesta pull.
 
 Solo dopo che tutti i test sono stati superati correttamente, la richiesta pull può essere unita in main.
 
 ### <a name="stress-tests--bulk-tests"></a>Test di stress/test in blocco
 
-In alcuni casi i test avranno esito negativo solo occasionalmente e ciò può risultare frustrante per il debug.
+A volte i test avranno esito negativo solo occasionalmente, il che può risultare frustrante per il debug.
 
-Per eseguire più test in locale, modificare gli script di test in base a . Lo script Python seguente dovrebbe rendere più pratico questo scenario.
+Per avere più esecuzioni di test in locale, modificare gli script di test. Lo script Python seguente dovrebbe rendere questo scenario più pratico.
 
-Il prerequisito per l'esecuzione dello script Python [è l'installazione di Python 3.X.](https://www.python.org/downloads/)
+Il prerequisito per l'esecuzione dello script Python è [l'installazione di Python 3.X.](https://www.python.org/downloads/)
 
 Per un singolo test che deve essere eseguito più volte:
 
@@ -77,7 +77,7 @@ Per un singolo test che deve essere eseguito più volte:
 public IEnumerator MyTest() {...}
 ```
 
-Eseguire il comando seguente dalla riga di comando[(è consigliato PowerShell)](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6#powershell-core)
+Eseguire il comando seguente da una riga di comando[(è consigliabile utilizzare PowerShell)](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6#powershell-core)
 
 ```powershell
 cd scripts\tests
@@ -108,11 +108,11 @@ public IEnumerator A4MyTest0(){ yield return MyTest();}
 public IEnumerator MyTest() {...}
 ```
 
-Aprire il Test Runner e osservare i nuovi test che ora possono essere chiamati ripetutamente.
+Aprire il test runner e osservare i nuovi test che ora possono essere chiamati ripetutamente.
 
 ## <a name="writing-tests"></a>Scrittura di test
 
-Esistono due tipi di test che è possibile aggiungere per il nuovo codice
+Per il nuovo codice è possibile aggiungere due tipi di test
 
 * Test della modalità di riproduzione
 * Test in modalità di modifica
@@ -121,12 +121,12 @@ Esistono due tipi di test che è possibile aggiungere per il nuovo codice
 
 I test della modalità di riproduzione MRTK hanno la possibilità di testare il modo in cui la nuova funzionalità risponde a diverse origini di input, ad esempio mani o occhi.
 
-I nuovi test in modalità di riproduzione possono [ereditare BasePlayModeTests](xref:Microsoft.MixedReality.Toolkit.Tests) oppure è possibile usare lo scheletro seguente.
+I nuovi test della modalità di riproduzione possono [ereditare BasePlayModeTests](xref:Microsoft.MixedReality.Toolkit.Tests) oppure è possibile usare lo scheletro seguente.
 
 Per creare un nuovo test della modalità di riproduzione:
 
-* Passare ad Asset > test > MRTK > PlayModeTests
-* Fare clic con il pulsante destro del mouse > test > script di test C#
+* Passare ad Assets > MRTK > Tests > PlayModeTests
+* Fare clic con il pulsante destro del mouse su Crea > test > script di test C#
 * Sostituire il modello predefinito con lo scheletro seguente
 
 ```c#
@@ -258,7 +258,7 @@ namespace Microsoft.MixedReality.Toolkit.Input
 }
 ```
 
-Provare a denominare il test
+Provare a assegnare un nome al test
 
 ```c#
 namespace Microsoft.MixedReality.Toolkit.Tests.Input
@@ -269,7 +269,7 @@ namespace Microsoft.MixedReality.Toolkit.Tests.Input
 }
 ```
 
-Valutare la possibilità di inserire il test in una gerarchia di cartelle simile al file non di test corrispondente.
+Provare a inserire il test in una gerarchia di cartelle simile al file non di test corrispondente.
 Ad esempio:
 
 ```md
@@ -277,28 +277,28 @@ Non-Test: Assets/MRTK/Core/Utilities/InterestingUtilityClass.cs
 Test: Assets/MRTK/Tests/EditModeTests/Core/Utilities/InterestingUtilityClassTest.cs
 ```
 
-In questo modo si garantisce che sia disponibile un modo chiaro per trovare la classe di test corrispondente di ogni classe, se esiste una classe di test di questo tipo.
+Ciò consente di verificare che sia disponibile un modo ovvio per trovare la classe di test corrispondente di ogni classe, se esiste una classe di test di questo tipo.
 
-Il posizionamento dei test basati su scenario è meno definito. Se il test esegue l'esercizio del sistema di input complessivo, ad esempio, è consigliabile inserire il test in una cartella "InputSystem" nella cartella di test corrispondente della modalità di modifica o di riproduzione.
+Il posizionamento dei test basati su scenario è meno definito. Se il test esegue l'esercizio del sistema di input complessivo, ad esempio, è consigliabile inserire il test in una cartella "InputSystem" nella cartella di test della modalità di modifica o di riproduzione corrispondente.
 
 ### <a name="test-script-icons"></a>Icone dello script di test
 
-Quando si aggiunge un nuovo test, modificare lo script in modo che abbia l'icona corretta di MRTK. A tale scopo, è possibile usare un semplice strumento MRTK:
+Quando si aggiunge un nuovo test, modificare lo script in modo che abbia l'icona MRTK corretta. A tale scopo, è possibile usare uno strumento MRTK semplice:
 
 1. Passare alla voce di menu Toolkit realtà mista
-1. Fare clic su Utilities (Utilità), quindi su Update (Aggiorna) e infine su Icons (Icone)
-1. Fare clic su Test. Lo updater verrà eseguito automaticamente, aggiornando tutti gli script di test senza le relative icone
+1. Fare clic su Utilità, quindi su Aggiorna e infine su Icone
+1. Fare clic su Test e lo updater verrà eseguito automaticamente, aggiornando tutti gli script di test senza le relative icone
 
 ### <a name="mrtk-utility-methods"></a>Metodi dell'utilità MRTK
 
-Questa sezione illustra alcuni dei frammenti di codice/metodi di uso comune durante la scrittura di test per MRTK.
+Questa sezione illustra alcuni dei frammenti di codice/metodi usati comunemente durante la scrittura di test per MRTK.
 
-Sono disponibili due classi di utilità che consentono di configurare MRTK e testare le interazioni con i componenti in MRTK
+Esistono due classi di utilità che consentono di configurare MRTK e testare le interazioni con i componenti in MRTK
 
 * [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities)
 * [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities)
 
-TestUtilities offre i metodi seguenti per configurare la scena MRTK e i GameObject:
+TestUtilities fornisce i metodi seguenti per configurare la scena MRTK e GameObjects:
 
 ```c#
 /// creates the mrtk GameObject and sets the default profile if passed param is true
@@ -314,4 +314,4 @@ TestUtilities.InitializePlayspace();
 TestUtilities.ShutdownMixedRealityToolkit();
 ```
 
-Per altri metodi di queste classi util, vedere la documentazione dell'API di e perché vengono estese a intervalli regolari mentre vengono aggiunti nuovi test [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities) [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities) a MRTK.
+Fare riferimento alla documentazione api di e per altri metodi di queste classi util poiché vengono estese a intervalli regolari mentre vengono aggiunti nuovi test [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities) [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities) a MRTK.

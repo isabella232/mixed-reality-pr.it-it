@@ -5,12 +5,12 @@ author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, input,
-ms.openlocfilehash: 33f423fba286e9e85e6d0bedac82bff0b7aae81f
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 8046501fdab0a7594800a75ad0306a131adaaa6924ffa870c299571cbd4d8e13
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121459"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211158"
 ---
 # <a name="input-system"></a>Sistema di input
 
@@ -25,15 +25,15 @@ Il sistema di input ha una terminologia propria che vale la pena definire:
 
 - **Controller**
 
-    Rappresentazione di un controller fisico (che si tratta di un controller di 6 gradi di libertà, una mano in stile HoloLens 1 con supporto dei movimenti, una mano completamente articolata, un controller di movimento intercalare e così via). I controller vengono generati da gestori di dispositivi(ad esempio, gestione dispositivi WMR genera un controller e ne gestirà la durata quando viene visualizzata una mano articolata).
+    Rappresentazione di un controller fisico (che si tratta di un controller di 6 gradi di libertà, una mano HoloLens 1 stile con supporto dei movimenti, una mano completamente articolata, un controller di movimento intercalare e così via). I controller vengono generati da gestori di dispositivi(ad esempio, gestione dispositivi WMR genera un controller e ne gestisce la durata quando viene visualizzata una mano articolata).
 
 - **Puntatore**
 
-    I controller usano i puntatori per interagire con gli oggetti di gioco. Ad esempio, il puntatore di interazione vicino è responsabile del rilevamento quando la mano (che è un controller) è vicina agli oggetti che annunciano se stessi come supporto di "interazione vicina". Altri esempi per i puntatori sono i puntatori di teletrasporto o lontano (ad esempio, il puntatore a raggi della mano della shell) che usano raggi di distanza per interagire con contenuti più lunghi della lunghezza delle bracci dell'utente.
+    I controller usano i puntatori per interagire con gli oggetti di gioco. Ad esempio, il puntatore di interazione vicino è responsabile del rilevamento quando la mano (che è un controller) è vicina agli oggetti che annunciano se stessi come supporto di "interazione vicina". Altri esempi per i puntatori sono i puntatori di teletrasporto o lontano (ad esempio, il puntatore a raggi della mano della shell) che usano raggi di distanza per interagire con contenuto più lungo della lunghezza delle braci da parte dell'utente.
 
     I puntatori vengono creati da Gestione dispositivi e quindi collegati a un'origine di input. Per ottenere tutti i puntatori per un controller, eseguire le seguenti operazione: `controller.InputSource.Pointers`
 
-    Si noti che un controller può essere associato contemporaneamente a molti puntatori diversi. Per garantire che questo non si dedivi nel caos, esiste un mediatore di puntatori che controlla quali puntatori possono essere attivi (ad esempio, il mediatore disabilita i puntatori di interazione lontano quando viene rilevata l'interazione vicina).
+    Si noti che un controller può essere associato contemporaneamente a molti puntatori diversi. Per garantire che ciò non si dedivi nel caos, esiste un mediatore di puntatori che controlla quali puntatori possono essere attivi (ad esempio, il mediatore disabilita i puntatori di interazione lontano quando viene rilevata un'interazione vicina).
 
 - **Focus**
 

@@ -2,17 +2,17 @@
   href: app-bar.md
 - name: Riquadro
   href: bounding-box.md
-- name: Bounds-controllo
+- name: controllo dei limiti
   href: bounds-control.md
-- name: Pulsante
+- name: Button
   href: button.md
 - name: Gestione vincoli
   href: constraint-manager.md
-- name: Visualizzazione a mano
+- name: Visualizzazione punta delle dita
   href: fingertip-visualization.md
-- name: Menu a mano
+- name: Menu Mano
   href: hand-menu.md
-- name: Con cui
+- name: Interagibile
   href: interactable.md
 - name: Gestore di manipolazione
   href: manipulation-handler.md
@@ -24,7 +24,7 @@
   href: object-manipulator.md
 - name: Indicatore di stato
   href: progress-indicator.md
-- name: Scorrimento della raccolta di oggetti
+- name: Raccolta di oggetti di scorrimento
   href: scrolling-object-collection.md
 - name: Slate
   href: slate.md

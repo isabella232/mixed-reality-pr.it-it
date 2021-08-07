@@ -5,96 +5,96 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, manipolazione,
-ms.openlocfilehash: 2731e66c09a7c207a709f1073d9f3f09c59233b0
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 3e036883feb826f465f15d7926ff179ec02212e838438df30bc7ff8163fd54f7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104686314"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209455"
 ---
 # <a name="manipulation-handler"></a>Gestore di manipolazione
 
 ![Gestore di manipolazione](../images/manipulation-handler/MRTK_Manipulation_Main.png)
 
-Lo script *ManipulationHandler* consente a un oggetto di essere reso mobile, scalabile e girevole usando uno o due mani. La manipolazione può essere limitata in modo da consentire solo determinati tipi di trasformazione. Lo script funziona con vari tipi di input, tra cui l'input mano articolato HoloLens 2, l'input del movimento HoloLens (primo generazione) e l'input del controller di movimento per auricolari immersivi.
+Lo script *ManipulationHandler* consente di impostare un oggetto in modo che sia mobile, scalabile e ruotabile usando una o due mani. La manipolazione può essere limitata in modo da consentire solo determinati tipi di trasformazione. Lo script funziona con vari tipi di input, tra cui l'input della mano articolato HoloLens 2 i raggi della mano, l'input del movimento di HoloLens (prima generazione) e l'input del controller del movimento del visore VR immersive.
 
-## <a name="how-to-use-the-manipulation-handler"></a>Come utilizzare il gestore di manipolazione
+## <a name="how-to-use-the-manipulation-handler"></a>Come usare il gestore di manipolazione
 
-Aggiungere il `ManipulationHandler` componente script a un GameObject. Assicurarsi di aggiungere anche un Collider all'oggetto, associando i relativi limiti afferrabili.
+Aggiungere il `ManipulationHandler` componente script a un GameObject. Assicurarsi anche di aggiungere un collisore all'oggetto, corrispondente ai limiti afferrabili.
 
-Per fare in modo che l'oggetto risponda all'input della mano quasi articolato, aggiungere `NearInteractionGrabbable` anche lo script.
+Per fare in modo che l'oggetto risponda all'input della mano quasi `NearInteractionGrabbable` articolato, aggiungere anche lo script .
 
 ![Gestore di manipolazione](../images/manipulation-handler/MRTK_ManipulationHandler_Howto.png)
 
-## <a name="inspector-properties"></a>Proprietà di Inspector
+## <a name="inspector-properties"></a>Proprietà del controllo
 
 <img src="../images/manipulation-handler/MRTK_ManipulationHandler_Structure.png" width="450" alt="Manipulation Handler structure">
 
 **Trasformazione host** Trasformazione che verrà trascinata. Il valore predefinito è l'oggetto del componente.
 
-**Tipo di manipolazione** Specifica se l'oggetto può essere modificato usando una sola mano, due mani o entrambe.
+**Tipo di manipolazione** Specifica se l'oggetto può essere modificato usando una mano, due mani o entrambe.
 
-* *Una sola mano*
-* *Due solo mano*
-* *Una e due passate*
+* *Solo una mano*
+* *Solo a due mani*
+* *Una e due mani*
 
-**Tipo di manipolazione a due mano**
+**Tipo di manipolazione a due mani**
 
-* *Scala*: è consentita solo la scalabilità.
-* *Rotazione*: è consentita solo la rotazione.
-* *Sposta scala*: lo spostamento e il ridimensionamento sono consentiti.
-* *Spostamento ruotare*: lo spostamento e la rotazione sono consentiti.
-* *Ridimensiona scala*: è consentito ruotare e ridimensionare.
-* *Sposta scala ruota*: lo spostamento, la rotazione e il ridimensionamento sono consentiti.
+* *Scalabilità:* è consentito solo il ridimensionamento.
+* *Ruota:* è consentita solo la rotazione.
+* *Sposta scala:* lo spostamento e il ridimensionamento sono consentiti.
+* *Sposta rotazione:* lo spostamento e la rotazione sono consentiti.
+* *Ruotare la scala:* la rotazione e il ridimensionamento sono consentiti.
+* *Move Rotate Scale (Sposta scala* di rotazione): lo spostamento, la rotazione e il ridimensionamento sono consentiti.
 
 ![Gestore di manipolazione](../images/manipulation-handler/MRTK_ManipulationHandler_TwoHanded.jpg)
 
-**Consenti manipolazione a lungo** Specifica se è possibile eseguire la manipolazione utilizzando l'interazione con i puntatori.
+**Consenti manipolazione da lontano** Specifica se la manipolazione può essere eseguita usando l'interazione da lontano con i puntatori.
 
-**Modalità di rotazione a una mano vicino** Specifica come si comporterà l'oggetto quando viene afferrato con una mano o un controller vicino a.
+**Modalità di rotazione a una mano nelle vicinanze** Specifica il comportamento dell'oggetto quando viene afferrato con una mano o un controller vicino.
 
-**Modalità di rotazione a una mano** Specifica come si comporterà l'oggetto quando viene afferrato con una mano/controller a distanza.
+**Modalità di rotazione a una mano da lontano** Specifica il comportamento dell'oggetto quando viene afferrato con una mano/controller a distanza.
 
-**Opzioni modalità rotazione a mano singola** Specifica il modo in cui l'oggetto verrà ruotato quando viene afferrato con una sola mano.
+**Opzioni della modalità rotazione a una mano** Specifica la modalità di rotazione dell'oggetto quando viene afferrato con una mano.
 
-* *Mantieni rotazione originale*: non ruota l'oggetto durante lo spostamento
-* *Mantieni la rotazione per l'utente*: mantiene la rotazione originale dell'oggetto per l'asse X/Y per l'utente
-* *Allineamento di gravità mantenere la rotazione all'utente*: mantiene la rotazione originale dell'oggetto per l'utente, ma rende l'oggetto verticale. Utile per gli oggetti con un controllo Bounds.
-* *Utente viso*: assicura che l'oggetto faccia sempre fronte all'utente. Utile per gli slate o i pannelli.
-* *Faccia fuori dall'utente*: assicura che l'oggetto faccia sempre fronte all'utente. Utile per gli slate o i pannelli che sono configurati all'indietro.
-* *Ruota intorno al centro oggetti*: funziona solo per le mani o i controller articolati. Ruotare l'oggetto usando la rotazione della mano o del controller, ma il punto centrale dell'oggetto. Utile per il controllo a distanza.
-* *Ruota intorno al punto di* controllo: funziona solo per le mani e i controller articolati. Ruotare l'oggetto come se fosse gestito da mano/controller. Utile per l'ispezione.
+* *Mantieni rotazione originale:* non ruota l'oggetto mentre viene spostato
+* *Mantieni la rotazione all'utente:* mantiene la rotazione originale dell'oggetto per l'asse X/Y per l'utente
+* *La gravità allineata mantiene la rotazione* all'utente: mantiene la rotazione originale dell'oggetto all'utente, ma rende l'oggetto verticale. Utile per gli oggetti con un controllo dei limiti.
+* *Utente viso:* assicura che l'oggetto sia sempre di fronte all'utente. Utile per slate/pannelli.
+* *Face away from user (Viso lontano* dall'utente): garantisce che l'oggetto sia sempre distorsi dall'utente. Utile per slate/pannelli configurati all'indietro.
+* *Ruotare intorno al centro dell'oggetto:* funziona solo per mani/controller articolati. Ruotare l'oggetto usando la rotazione della mano/controller, ma intorno al punto centrale dell'oggetto. Utile per ispezionare a distanza.
+* *Ruotare intorno al punto di* cattura: funziona solo per mani/controller articolati. Ruotare l'oggetto come se fosse in mano/controller. Utile per l'ispezione.
 
-**Comportamento della versione** Quando viene rilasciato un oggetto, specificarne il comportamento di spostamento fisico. Richiede che un componente rigidbody sia su tale oggetto.
+**Comportamento di rilascio** Quando un oggetto viene rilasciato, specificarne il comportamento di spostamento fisico. Richiede che un componente rigidbody sia in tale oggetto.
 
 * *Nothing*
 * *Tutto*
-* *Mantieni velocità*
-* *Mantieni velocità angolare*
+* *Mantenere la velocità*
+* *Mantenere Angular velocità*
 
-**Vincoli sulla rotazione** Specifica su quale asse ruotare l'oggetto quando si interagisce con.
+**Vincoli sulla rotazione** Specifica l'asse con cui l'oggetto ruota quando interagisce.
 
 * *Nessuno*
 * *Solo asse X*
 * *Solo asse Y*
 * *Solo asse Z*
 
-**Usa spazio locale per il vincolo** Interruttore per passare tra l'applicazione di vincoli rispetto all'asse dello spazio globale o l'asse dello spazio locale.
+**Usare lo spazio locale per il vincolo** Interruttore per passare dall'applicazione di vincoli rispetto all'asse dello spazio del mondo o all'asse dello spazio locale.
 
 **Vincoli sullo spostamento**
 
 * *Nessuno*
-* *Correggi distanza da capo*
+* *Correggere la distanza dalla testa*
 
-**Smoothing attivo** Specifica se la smussatura è attiva.
+**Smoothing Active** Specifica se la smussazione è attiva.
 
-**Uniformità della quantità di una mano** Quantità di smussatura da applicare allo spostamento, alla scala, alla rotazione. L'uniformità di 0 significa nessuna smussatura. Il valore max significa nessuna modifica al valore.
+**Smoothing Amount One Hand** Quantità di smussamento da applicare a movimento, scala e rotazione. Smussamento di 0 significa nessuna smussamento. Il valore massimo indica che non viene apportata alcuna modifica al valore.
 
 ## <a name="events"></a>Eventi
 
 Il gestore di manipolazione fornisce gli eventi seguenti:
 
-* *OnManipulationStarted*: generato all'avvio della manipolazione.
-* *OnManipulationEnded*: viene attivato al termine della manipolazione.
-* *OnHoverStarted*: viene attivato quando una mano o un controller passa il mouse sul manipolabile, quasi o lontano.
-* *OnHoverEnded*: viene attivato quando una mano o un controller Annulla il passaggio del mouse sul manipolabile, quasi o lontano.
+* *OnManipulationStarted: generato* all'avvio della manipolazione.
+* *OnManipulationEnded:* viene generato al termine della manipolazione.
+* *OnHoverStarted:* viene attivato quando una mano/controller passa il puntatore del mouse sul manipolabile, vicino o lontano.
+* *OnHoverEnded:* viene attivato quando una mano/controller annulla il passaggio del mouse sul manipolabile, vicino o lontano.

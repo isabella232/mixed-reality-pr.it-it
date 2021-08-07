@@ -1,17 +1,17 @@
 ---
 title: Billboarding e tag-along
-description: Informazioni su come usare gli oggetti con la creazione di oggetti, che si orientano sempre per affrontare l'utente in applicazioni di realtà mista.
+description: Informazioni su come usare gli oggetti con la creazione di manifesti pubblicitari, che si orientano sempre per affrontare l'utente in applicazioni di realtà mista.
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, gioco di tag, tag, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 0bd1ac2168284d714240c6775468a61ed3e665b8
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Windows Mixed Reality, creazione di manifesti, tag-along, visore per realtà mista, visore windows mixed reality, visore per realtà virtuale, HoloLens, MRTK, realtà mista Toolkit
+ms.openlocfilehash: 7ffcbe1d3401601e92eb1ac81dfd84f2af9e8e79eeea809b01a1e943a85f0db9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600340"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214165"
 ---
 # <a name="billboarding-and-tag-along"></a>Billboarding e tag-along
 
@@ -20,37 +20,37 @@ ms.locfileid: "110600340"
 <img src="images/MRTK_TagAlong.gif" alt="HoloLens perspective of a menu system that always faces the user" width="940px">
 <br>
 
-## <a name="what-is-billboarding"></a>Che cos'è la distribuzione in più?
+## <a name="what-is-billboarding"></a>Che cos'è la pubblicità pubblicitaria?
 
-L'organizzazione è un concetto comportamentale che può essere applicato agli oggetti nella realtà mista. Gli oggetti con l'eserezione si orientano sempre verso l'utente. I sistemi di testo e menu sono casi d'uso comuni, in cui gli oggetti statici inseriti nell'ambiente dell'utente (bloccati nel mondo) verrebbero altrimenti nascosti o illeggibili quando gli utenti si spostano.
+La progettazione di manifesti pubblicitari è un concetto comportamentale che può essere applicato agli oggetti nella realtà mista. Gli oggetti con un manifesto orientano sempre se stessi ad affrontare l'utente. I sistemi di testo e menu sono casi d'uso comuni, in cui gli oggetti statici posizionati nell'ambiente dell'utente (bloccati in tutto il mondo) verrebbero altrimenti nascosti o illeggibili quando gli utenti si spostano.
 
-Gli oggetti con l'a capo automatico abilitato possono ruotare liberamente nell'ambiente dell'utente. Possono anche essere vincolati a un singolo asse a seconda delle considerazioni di progettazione. Tenere presente che gli oggetti con i recinti possono ritagliarsi o occludere se posizionati troppo vicini ad altri oggetti o in HoloLens, superfici analizzate troppo vicine. Per evitare questo problema, pensare al footprint totale che un oggetto può produrre quando viene ruotato sull'asse abilitato per la rotazione.
+Gli oggetti con la funzionalità di disposizione dei manifesti abilitata possono ruotare liberamente nell'ambiente dell'utente. Possono anche essere vincolati a un singolo asse a seconda delle considerazioni di progettazione. Tenere presente che gli oggetti posizionati in un manifesto possono ritagliarsi o occludere se sono troppo vicini ad altri oggetti o, in HoloLens, troppo vicine alle superfici analizzate. Per evitare questo problema, si pensi al footprint totale che un oggetto può produrre quando viene ruotato sull'asse abilitato per la creazione di manifesti.
 
 <br>
 
 ---
 ## <a name="what-is-a-tag-along"></a>Che cos'è un tag-along?
 
-Il tag-along è un concetto comportamentale che può essere aggiunto agli ologrammi. Un oggetto tag-along tenta di rimanere in un intervallo che consente all'utente di interagire comodamente.
+Tag-along è un concetto comportamentale che può essere aggiunto agli ologrammi. Un oggetto tag-along tenta di rimanere in un intervallo che consente all'utente di interagire comodamente.
 
-![Il pannello dei pin di HoloLens è un ottimo esempio del comportamento dell'aggiunta di tag](images/tagalong-1000px.jpg)<br>
-*L'menu Start HoloLens è un ottimo esempio di comportamento basato su tag*
+![Il HoloLens dei segnaposto è un ottimo esempio del comportamento del tag-along](images/tagalong-1000px.jpg)<br>
+*Il HoloLens menu Start è un ottimo esempio di comportamento di tag-along*
 
-Gli oggetti con tag hanno parametri che possono ottimizzare il comportamento. Il contenuto può essere in movimento all'esterno o all'esterno della linea di vista dell'utente mentre l'utente si sposta all'esterno dell'ambiente. Mentre ci si sposta, il contenuto tenta di rimanere all'interno della periferia dell'utente scorrendo verso il bordo della visualizzazione. Il contenuto potrebbe essere temporaneamente fuori visualizzazione a seconda della velocità di spostamento dell'utente. Quando l'utente guarda verso l'oggetto tag-along, viene visualizzato in modo più completo. Si pensi a un contenuto sempre "a colpo d'occhio", in modo che gli utenti non dimentichino mai la direzione in cui si trova il contenuto.
+Gli oggetti tag-along hanno parametri, che possono ottimizzare il comportamento. Il contenuto può essere in o all'esterno della linea di vista dell'utente mentre l'utente si sposta nel proprio ambiente. Durante lo spostamento, il contenuto tenta di rimanere all'interno della periferia dell'utente scorrendo verso il bordo della visualizzazione. Il contenuto potrebbe essere temporaneamente fuori visualizzazione a seconda della velocità di spostamento dell'utente. Quando l'utente guarda verso l'oggetto tag-along, viene visualizzato in modo più completo. Si pensi che il contenuto sia sempre "a colpo d'occhio", in modo che gli utenti non dimentichino mai la direzione in cui si trova il contenuto.
 
-Parametri aggiuntivi possono fare in modo che l'oggetto lungo il tag sia collegato alla testa dell'utente da una banda di gomma. La riduzione dell'accelerazione o della decelerazione dà peso all'oggetto rendendolo più fisicamente presente. Questo comportamento di spring è un affordance che consente all'utente di creare un modello psichiale accurato del funzionamento del tag-along. L'audio consente di fornire altri segnali quando gli utenti hanno oggetti in modalità tag-along. L'audio deve rafforzare la velocità di spostamento; Un turno rapido della testa dovrebbe fornire un effetto sonoro più evidente, mentre l'esecuzione a una velocità naturale dovrebbe avere effetti audio minimi o nessun effetto.
+I parametri aggiuntivi possono rendere l'oggetto tag-along collegato alla testa dell'utente da un elastico. L'accelerazione o la decelerazione di smorzamento dà peso all'oggetto rendendolo più fisicamente presente. Questo comportamento spring è un affordance che consente all'utente di creare un modello mentale accurato del funzionamento del tag-along. L'audio consente di fornire altri segnali quando gli utenti hanno oggetti in modalità tag-along. L'audio deve rafforzare la velocità di spostamento; un rapido turno della testa dovrebbe fornire un effetto sonoro più evidente, mentre la velocità di una velocità naturale dovrebbe avere effetti audio minimi o nessun effetto.
 
-Proprio come il contenuto effettivamente bloccato con la testa, gli oggetti tag-along possono risultare travolgenti o inaspriti se si spostano in modo severo o sono troppo grandi nella visualizzazione dell'utente. Quando un utente si guarda attorno, si arresta rapidamente e il suo senso indica di essersi arrestato. Il loro equilibrio informa che la testa ha smesso di ruotare e che la loro visione vede il mondo smettere di ruotare. Tuttavia, se il tag-along continua a spostarsi quando l'utente si è arrestato, potrebbe confondere i propri significati.
+Proprio come il contenuto effettivamente bloccato dalla testa, gli oggetti tag-along possono risultare travolgenti o insoddettabili se si spostano in modo severo o si spostano troppo nella visualizzazione dell'utente. Quando un utente si guarda intorno, quindi si arresta rapidamente, i sensi gli diranno di essersi arrestati. Il loro equilibrio li informa che la testa ha smesso di ruotare e che la visione vede il mondo smettere di ruotare. Tuttavia, se il tag-along continua a spostarsi quando l'utente si è arrestato, può confondere i sensi.
 
 <br>
 
 ---
 
-## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unione e tag-along in MRTK (Mixed Reality Toolkit) per Unity
-**[MRTK fornisce](https://github.com/Microsoft/MixedRealityToolkit-Unity)** script per il comportamento di etichettatura e tag. Assegnare lo script Manifesto.cs a qualsiasi oggetto per aggiungere un comportamento di controllo e fare in modo che l'oggetto si faccia sempre viso. Per aggiungere un comportamento basato su tag, usare lo script RadialView.cs. È possibile modificare varie opzioni, ad esempio il tempo di lerping, la distanza e il grado.
+## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Etichettatura e etichettatura in MRTK (Mixed Reality Toolkit) per Unity
+**[MRTK fornisce](https://github.com/Microsoft/MixedRealityToolkit-Unity)** script per il comportamento di creazione di tag e di creazione di tag. Assegnare lo script Disasp.cs a qualsiasi oggetto per aggiungere un comportamento di creazione di un manifesto pubblicitario e rendere l'oggetto sempre viso. Per aggiungere un comportamento di tag lungo, usare lo script RadialView.cs. È possibile modificare diverse opzioni, ad esempio il tempo di lerping, la distanza e il grado.
 
-* [MRTK - Risolutore di vista radiale](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#radialview)
-* [MRTK - Script di controllo](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
+* [MRTK - Risolutore visualizzazione radiale](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#radialview)
+* [MRTK - Script di Manifesto](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
 
 
 <br>

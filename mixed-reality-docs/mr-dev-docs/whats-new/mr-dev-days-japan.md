@@ -1,88 +1,88 @@
 ---
 title: Mixed Reality Dev Days Giappone
-description: Pagina di evento per i giorni di sviluppo in realtà mista Giappone
+description: Pagina degli eventi per Mixed Reality Dev Days Japan
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
-keywords: Realtà mista, conferenza, Summit, sviluppatore, HoloLens, HoloLens 2, Kinect
-ms.openlocfilehash: 93bafae605640a0576fd273f761eaec0a8994d86
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+keywords: Realtà mista, conferenza, vertice, sviluppatore, HoloLens, HoloLens 2, Kinect
+ms.openlocfilehash: 9ad907cef86a1fbdb1a9ff01cd01d88f88fadaa640f34d8f270073ce5446646a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757599"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190375"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Giappone
 
 ![Mixed Reality Dev Days](images/MRDD/MRDevDaysJapanBanner.png)
 
-Ci auguriamo che tu abbia partecipato al giorno dello sviluppo per la realtà mista. Prepararsi a conoscere i leader Microsoft, imparare dagli esperti e connettersi alla community di sviluppatori di realtà mista. Iscriviti subito all'esperienza digitale senza costi aggiuntivi.
+Non vediamo l'ora di partecipare al Mixed Reality Dev Day. Prepararsi a ricevere commenti dai leader Microsoft, apprendere dagli esperti e entrare in contatto con la community di sviluppatori di realtà mista. Registrarsi per l'esperienza digitale oggi stesso, senza costi aggiuntivi.
 
 ## <a name="important-details"></a>Dettagli importanti
 
-**Data-16 dicembre 2020**
+**Data - 16 dicembre 2020**
 
-**Località-eventi live di Microsoft Teams**
+**Località - Microsoft Teams eventi live**
 
-**Registrazione gratuita**
+**Registrazione - GRATUITO**
 
-**Lingua principale-giapponese**
+**Lingua primaria - Giapponese**
 
-## <a name="session-recordings"></a>Registrazioni della sessione
+## <a name="session-recordings"></a>Registrazioni di sessione
 
-[Guarda tutti i video-playlist di YouTube](https://www.youtube.com/playlist?list=PLQEKit6tfVVIZaQWKTuNMONjPiIKMuJRH)
+[Guardare tutti i video - Playlist di YouTube](https://www.youtube.com/playlist?list=PLQEKit6tfVVIZaQWKTuNMONjPiIKMuJRH)
 
-Grazie per aver partecipato al Giappone per lo sviluppo di realtà mista. Tutti i video vengono archiviati nel canale YouTube. In futuro,
+Grazie per essere stati uniti a Mixed Reality Dev Days Japan. Tutti i video vengono archiviati nel canale YouTube. Non vediamo l'ora di vederti di nuovo.
 
-## <a name="schedule---subject-to-change"></a>Pianificazione-soggetto a modifiche
+## <a name="schedule---subject-to-change"></a>Pianificazione - Soggetto a modifiche
 
-**Tutti gli orari sono ora solare Giappone (UTC + 9)** 
+**Tutti gli orari sono l'ora solare Giappone (UTC+9)** 
 
 ### <a name="december-16"></a>16 dicembre
 
-**È stata posticipata un'ora dalla pianificazione originale.**
+**È stato ritardato di un'ora rispetto alla pianificazione originale.**
 
-|**Time**|**Titolo sessione**|**Relatore**|**Lingua**|**Level**|
+|**Time**|**Titolo della sessione**|**Relatore**|**Lingua**|**Level**|
 |---------|---------|---------|---------|---------|
-|11:00-11:50am|[Apertura del discorso con un benvenuto speciale da Alex Kipman](https://youtu.be/MamMO11TnzY)|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/EN|N/D|
-|11:50am-12.00|**Interrompi (10 min)**||||
-|12:00-12:25pm|Introduzione della *sessione 1* [alla realtà mista](https://youtu.be/HqJy91y8Of0)|Atsushi Suzuki|JA|100|
-|12:18.30-12:55pm|*Sessione 2* [combinazione di tempo reale aziendale](https://youtu.be/fJJ9I8UGbio)|Tetsu Muranaka|JA|200|
-|1: pm-1:50pm|*Sessione di pranzo* Panel: discussione gratuita interattiva, domande e risposte, MRTK + Oculus quest 2 * Update in seguito|Madoka Chiyoda + Microsoft MVP|JA|200|
-|1:50pm-2:00|**Interrompi (10 min)**||||
-|2:00-2:25pm|Panoramica della *sessione 3* [sullo sviluppo di HoloLens 2](https://youtu.be/_z0CwAVkbiQ)|Madoka Chiyoda|JA|200|
-|2: pm-2:55pm|*Session 4* [MRTK UX Components v 2.5.0](https://youtu.be/If5R9diyF50)|Yoon Park|JA|300|
-|3: pm-3:25pm|*Sessione 5* [Introduzione a HoloLens 2 e Unreal Engine (MRTK-Unreal)](https://youtu.be/AsAuPx0iz3o)|Cameron Micka|IT|300|
-|3: pm-3:55pm|*Sessione 6* [creazione della progettazione di ologrammi](https://youtu.be/jHn9yydiRTw)|Daniel Escudero|IT|300|
-|3:55pm-4:14.15|**Interrompi (20 min)**||||
-|4:14.15-4:40pm|[Ancoraggi degli oggetti di Azure](https://youtu.be/dZCb6VJlaaU) della *sessione 7*|Jesse McCulloch|IT|300|
-|4:45PM-5:22:00|*Sessione 8* [rendering remoto di Azure](https://youtu.be/MEhL12WGOW0)|Atsushi Suzuki|JA|300|
-|5:14.15-5:40pm|*Sessione 9* [allineamento dell'ologramma e del mondo reale tramite ancoraggi spaziali di Azure](https://youtu.be/ApBd_jSHg9Q)|Yingguang Mei|IT|300|
-|5:45pm-6:22:00|*Sessione 10* [Unity + PiXYZ](https://youtu.be/ggRZRRN36VI)|Shinobu Takahashi (tecnologie Unity Giappone)|JA|200|
-|6:14.15-6:40pm|*Sessione 11* [di Azure Kinect dk Deep Dive, case study](https://youtu.be/C6gg2jBL3Tw)|Shinji Chiba|JA|400|
-|6:45pm-7:00|Chiusura|Madoka Chiyoda|JA|N/D|
+|11:00 - 11:50|[Apertura di Keynote con l'benvenuto speciale di Alex Kipman](https://youtu.be/MamMO11TnzY)|Madoka Chiyoda, McCulloch, Kaoru Nakacolaa, TetsuNtassinaka|JA/EN|N/D|
+|11:50 - 12:00|**Interruzione (10 min)**||||
+|12:00pm - 12:25pm|*Introduzione della sessione 1* [alla realtà mista](https://youtu.be/HqJy91y8Of0)|Atsushi Suzuki|JA|100|
+|12:30 - 12:55|*Sessione 2:* [Realtà mista - Realtà mista](https://youtu.be/fJJ9I8UGbio)|Tetsu Terzinaka|JA|200|
+|13:00 - 13:50|*Lunch Session* Pannello: Discussione interattiva gratuita, Q e A, MRTK + Oculus Quest 2 *aggiorna in un secondo momento|Madoka Chiyoda + Microsoft MVP|JA|200|
+|13:50 - 14:00|**Interruzione (10 min)**||||
+|14:00 - 14:25|*Session 3* [Overview of HoloLens 2 development](https://youtu.be/_z0CwAVkbiQ)|Madoka Chiyoda|JA|200|
+|14:30 - 14:55|*Sessione 4 Componenti* [dell'esperienza utente MRTK v2.5.0](https://youtu.be/If5R9diyF50)|Yoon Park|JA|300|
+|15:00 - 15:25|*Sessione 5* [Introduzione a HoloLens 2 e Unreal Engine (MRTK-Unreal)](https://youtu.be/AsAuPx0iz3o)|Cameron Micka|IT|300|
+|15:30 - 15:55|*Sessione 6 Progettazione* [di Ologrammi](https://youtu.be/jHn9yydiRTw)|Daniel Escudero|IT|300|
+|15:55 - 16:15|**Break (20 min)**||||
+|16:15 - 16:40|*Sessione 7* [Ancoraggi di oggetti di Azure](https://youtu.be/dZCb6VJlaaU)|Jesse McCulloch|IT|300|
+|16:45 - 17:10|*Sessione 8* [Rendering remoto di Azure](https://youtu.be/MEhL12WGOW0)|Atsushi Suzuki|JA|300|
+|17:15 - 17:40|*Session 9* [Aligning Hologram and Real World through Azure Spatial Anchors](https://youtu.be/ApBd_jSHg9Q)|Yingguang Mei|IT|300|
+|17:45 - 18:10|*Sessione 10* [Unity + PiXYZ](https://youtu.be/ggRZRRN36VI)|Shinobu Takahashi (Unity Technologies Japan)|JA|200|
+|18:15 - 18:40|*Sessione 11:* [Approfondimento Kinect DK di Azure, case study](https://youtu.be/C6gg2jBL3Tw)|Figji Chiba|JA|400|
+|18:45 - 19:00|Chiusura|Madoka Chiyoda|JA|N/D|
 
 #### <a name="contributors-technical-reviewers-for-the-subtitles"></a>Collaboratori (revisori tecnici per i sottotitoli)
 
-Futo Horio ( [@Futo_Horio](https://twitter.com/Futo_Horio) ), Takahiro Miyaura ( [@takabrz1](https://twitter.com/takabrz1) ), Akihiro Ueyama ( [@akihiro01051](https://twitter.com/akihiro01051) ), Kaoru Nakamura ( [@kaorun55](https://twitter.com/kaorun55) ), Shinya Tachihara ( [@deco_c_](https://twitter.com/deco_c_) )
+Futo Horio ( [@Futo_Horio](https://twitter.com/Futo_Horio) ), Takahiro Miyaura ( [@takabrz1](https://twitter.com/takabrz1) ), Akihiro Ueiya ( [@akihiro01051](https://twitter.com/akihiro01051) ), Kaoru Nakamura ( [@kaorun55](https://twitter.com/kaorun55) ), Shija Tachihara ( [@deco_c_](https://twitter.com/deco_c_) )
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
-Questa sezione verrà aggiornata di frequente perché si ottengono altre domande.
+Questa sezione verrà aggiornata di frequente quando si riceveranno altre domande da parte dell'utente.
 
-**Q** -chi deve partecipare al giorno di sviluppo della realtà mista
+**D-** Who partecipare al Mixed Reality Dev Day
 
-**R** : questo evento è incluso in tutti gli utenti che operano o svolgono nello spazio di realtà misto. Sebbene la maggior parte del contenuto presentato sia incentrato sugli sviluppatori, sappiamo anche che è disponibile contenuto interessante per un'ampia gamma di ruoli. Ricordarsi di controllare la pianificazione degli aggiornamenti per visualizzare il tipo di contenuto che verrà fornito.  
+**A:** questo evento include tutti gli utenti che lavorano o giocano nello spazio della realtà mista. Anche se la maggior parte del contenuto presentato è incentrata sugli sviluppatori, è anche noto che è disponibile contenuto interessante per un'ampia gamma di ruoli. Ricordarsi di controllare la pianificazione degli aggiornamenti per visualizzare il tipo di contenuto che verrà fornito.  
 
-**D** : non è possibile trovare l'evento negli eventi live del team
+**D:** Non è possibile trovare l'evento in Teams live
 
-**A: per** partecipare, selezionare il collegamento nel messaggio di posta elettronica che verrà visualizzato dopo la registrazione per l'evento. È consigliabile controllare nell'app teams PC ed è anche possibile partecipare all'app per dispositivi mobili teams o nel browser desktop.
+**A:** per partecipare, selezionare il collegamento nel messaggio di posta elettronica che si riceverà dopo la registrazione per l'evento. È consigliabile guardare l'app Teams PC ed è anche possibile partecipare all'app Teams per dispositivi mobili o al browser desktop.
 
-Se per qualche motivo non si è in grado di accedere ai team, controllare il canale YouTube in cui l'evento verrà trasmesso simultaneamente. Tuttavia, non è possibile partecipare al controllo di qualità con gli speaker.
+Se per qualche motivo non è possibile accedere a Teams, controllare il canale YouTube in cui l'evento verrà trasmesso contemporaneamente. Tuttavia, non è possibile partecipare al controllo di qualità con i parlanti.
 
-**D** : i materiali di presentazione e i video della sessione saranno disponibili dopo l'evento?
+**D:** i materiali di presentazione e i video di sessione saranno disponibili dopo l'evento?
 
-**R** : verrà rilasciata ogni sessione video, ma a causa del tempo richiesto, provare a partecipare a Microsoft Live, se possibile.
+**A:** verrà rilasciata ogni sessione video, ma a causa del tempo necessario, è consigliabile partecipare in tempo reale, se possibile.
 
 <!--  
 **Q** -  
@@ -95,12 +95,12 @@ Se per qualche motivo non si è in grado di accedere ai team, controllare il can
 **A** -  
 -->
 
-## <a name="code-of-conduct-and-microsoft-standard-event-guidelines"></a>Codice di comportamento e linee guida per gli eventi standard Microsoft
+## <a name="code-of-conduct-and-microsoft-standard-event-guidelines"></a>Linee guida per il codice di comportamento e gli eventi standard Microsoft
 
 ### <a name="code-of-conduct"></a>Codice di comportamento 
 
-L'obiettivo principale di Microsoft è quello di offrire a ogni utente e organizzazione i mezzi necessari a ottenere risultati sempre migliori. Sono inclusi tutti gli eventi e le raccolte Microsoft, tra cui le piattaforme digitali, in cui si cerca di creare un'esperienza intuitiva, semplice e intuitiva per tutti i partecipanti.
+L'obiettivo principale di Microsoft è quello di offrire a ogni utente e organizzazione i mezzi necessari a ottenere risultati sempre migliori. Sono inclusi tutti gli eventi e gli eventi Microsoft, anche sulle piattaforme digitali, in cui si vuole creare un'esperienza rispettosa, descrittiva, divertente e inclusiva per tutti i partecipanti.
 
-Si prevede che tutti i partecipanti agli eventi digitali rispettino i principi di questo codice di comportamento, che copre l'evento digitale principale e tutte le attività correlate. Il comportamento, i messaggi, le immagini o le interazioni non sono tollerabili da parte di qualsiasi partecipante, in qualsiasi forma, in qualsiasi aspetto del programma, incluse le attività aziendali e sociali, indipendentemente dalla posizione. Microsoft non tollererà molestie o discriminazioni in base a età, ascendenza, colore, identità del sesso o espressione, origine nazionale, disabilità fisica o mentale, religione, orientamento sessuale o qualsiasi altra caratteristica protetta da leggi locali, normative e ordinamenti applicabili.  
+Tutti i partecipanti all'evento digitale sono in grado di rispettare i principi di questo Codice di comportamento, che riguarda l'evento digitale principale e tutte le attività correlate. Non tolleriamo comportamenti, messaggi, immagini o interazioni dirompenti o irrispettosi da parte di qualsiasi partecipante di parte, in qualsiasi forma, in qualsiasi aspetto del programma, incluse le attività aziendali e sociali, indipendentemente dalla posizione. Microsoft non tollererà molestie o discriminazioni in base a età, origini, colore, identità o espressione di genere, origine nazionale, disabilità fisica o mentale, orientamento culturale, orientamento sessuale o qualsiasi altra caratteristica protetta da leggi, normative e ordinanze locali applicabili.  
 
-La fotografia, il video o la registrazione del contenuto della sessione o delle presentazioni in qualsiasi formato condiviso nei canali sociali è vietato. Invitiamo tutti gli utenti a contribuire alla creazione di un ambiente accogliente e sicuro. Segnala eventuali preoccupazioni, comportamenti molesti, sospetti o attività di disturbo per la hotline di condotta aziendale (1-877-320-MSFT o [buscond@microsoft.com](mailto:buscond@microsoft.com) ). Microsoft si riserva il diritto di rifiutare l'ammissione o rimuovere qualsiasi persona da giorni di sviluppo di realtà mista in qualsiasi momento a sua esclusiva discrezione. 
+Non è consentita la fotografia, il video o la registrazione di contenuti o presentazioni di sessioni in qualsiasi formato condiviso nei canali social. Invitiamo tutti a creare un ambiente di benvenuto e sicuro. Segnalare eventuali problemi, comportamenti molesti, attività sospette o dirompenti a Business Conduct Hotline (1-877-320-MSFT o [buscond@microsoft.com](mailto:buscond@microsoft.com) ). Microsoft si riserva il diritto di rifiutare o rimuovere qualsiasi persona da Mixed Reality Dev Days in qualsiasi momento a sua esclusiva discrezione. 

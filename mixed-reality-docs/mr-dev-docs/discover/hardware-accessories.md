@@ -1,69 +1,69 @@
 ---
 title: Accessori hardware
-description: Descrive i tipi di accessori disponibili per l'uso con la realtà mista di Windows e come configurarli.
+description: Descrive i tipi di accessori disponibili per l'uso con Windows Mixed Reality e come configurarli.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 05/20/2020
 ms.topic: article
-keywords: procedure, accessori, Bluetooth, BT, controller, gamepad, clicker, Xbox, hardware, cuffie per realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale, controller di movimento
-ms.openlocfilehash: b9a58a34a88de01d1d2351ff0a5efbe4f99298db
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: procedura, accessori, bluetooth, bt, controller, gamepad, clicker, xbox, hardware, visore VR di realtà mista, visore VR windows mixed reality, visore VR di realtà virtuale, controller del movimento
+ms.openlocfilehash: a6776df9374fce3f1399de944be06c93ff6fdcb3e6f4a38dcc92453556857376
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583327"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188456"
 ---
 # <a name="hardware-accessories"></a>Accessori hardware
 
-I dispositivi per la realtà mista di Windows supportano accessori. È possibile usare le porte Bluetooth o USB per abbinare gli accessori supportati a un auricolare immersivo dal PC.
+Windows Mixed Reality dispositivi supportano accessori. È possibile usare porte Bluetooth o USB per associare gli accessori supportati a un visore VR immersive dal PC.
 
-Per informazioni sull'uso di accessori Bluetooth con HoloLens, vedere [connettersi ai dispositivi Bluetooth e USB-C](/hololens/hololens-connect-devices).
+Per informazioni sull'uso Bluetooth accessori con HoloLens, vedere Connessione to Bluetooth and USB-C devices (Usare Bluetooth [dispositivi USB-C).](/hololens/hololens-connect-devices)
 
-Gli auricolari a realtà mista di Windows richiedono accessori per l'input oltre lo [sguardo](../design/gaze-and-commit.md) e la [voce](../design/voice-input.md). Gli accessori supportati includono **tastiera e mouse**, **Gamepad** e **[controller di movimento](../design/motion-controllers.md)**.
+Windows Mixed Reality visori VR immersive richiedono accessori per l'input oltre lo [sguardo fisso](../design/gaze-and-commit.md) e [la voce.](../design/voice-input.md) Gli accessori supportati includono **tastiera e mouse,** **game pad** e controller **[del movimento.](../design/motion-controllers.md)**
 
-## <a name="pairing-bluetooth-accessories"></a>Associazione di accessori Bluetooth
+## <a name="pairing-bluetooth-accessories"></a>Associazione Bluetooth accessori
 
-L'associazione di una periferica Bluetooth con un headset immersivo è simile all'associazione di una periferica Bluetooth con un dispositivo Windows 10 desktop o mobile:
+L'associazione di Bluetooth periferica con un visore VR immersive è simile all'associazione di una periferica Bluetooth con un dispositivo Windows 10 desktop o mobile:
 
-1. Dal menu Start aprire l'app **Settings (impostazioni** )
-2. Vai ai **dispositivi**
-3. Accendere la radio Bluetooth se è spenta usando il dispositivo di scorrimento
-4. Posizionare il dispositivo Bluetooth in modalità di associazione. Questo processo varia da dispositivo a dispositivo, ma nella maggior parte dei dispositivi Bluetooth premere e tenere premuto uno o più pulsanti.
-5. Attendere che il nome del dispositivo venga visualizzato nell'elenco dei dispositivi Bluetooth. In tal caso, selezionare il dispositivo e quindi fare clic sul pulsante **associa** . Se sono presenti molti dispositivi Bluetooth in prossimità, potrebbe essere necessario scorrere fino alla fine dell'elenco dei dispositivi Bluetooth per visualizzare il dispositivo che si sta tentando di associare.
-6. Quando si abbinano periferiche Bluetooth con funzionalità di input (ad esempio, tastiere Bluetooth), è possibile che venga visualizzato un pin di 6 o 8 cifre. Assicurarsi di digitare il pin sulla periferica e quindi premere INVIO per completare l'associazione con l'auricolare.
+1. Dal menu Start aprire l'app **Impostazioni** app
+2. Passare a **Dispositivi**
+3. Attivare la radio Bluetooth se è disattivata usando l'interruttore del dispositivo di scorrimento
+4. Posizionare il Bluetooth dispositivo in modalità di associazione. Questo processo varia da dispositivo a dispositivo, ma nella maggior parte Bluetooth dispositivi premuti uno o più pulsanti.
+5. Attendere che il nome del dispositivo sia visualizzato nell'elenco dei Bluetooth dispositivi. Al termine, selezionare il dispositivo e quindi selezionare il **pulsante** Associa. Se sono nelle vicinanze molti dispositivi Bluetooth, potrebbe essere necessario scorrere fino alla fine dell'elenco dei dispositivi Bluetooth per visualizzare il dispositivo che si sta tentando di associare.
+6. Quando si associano Bluetooth periferiche con funzionalità di input (ad esempio: tastiere Bluetooth), potrebbe essere visualizzato un pin di 6 o 8 cifre. Assicurarsi di digitare il segnaposto sulla periferica e quindi premere INVIO per completare l'associazione con il visore VR.
 
 ## <a name="motion-controllers"></a>Controller del movimento
 
-I controller di [movimento](../design/motion-controllers.md) di realtà mista di Windows sono supportati da auricolari immersivi, ma non da HoloLens. Questi controller offrono un rilevamento dello spostamento preciso e reattivo nel campo di visualizzazione. I sensori nell'auricolare immersivo eseguono il rilevamento, ovvero non è necessario installare hardware nei muri dello spazio. Ogni controller presenta diversi metodi di input.
+Windows Mixed Reality controller [del movimento sono](../design/motion-controllers.md) supportati da visori VR immersive, ma non HoloLens. Questi controller offrono un monitoraggio preciso e reattivo dello spostamento nel campo di visualizzazione. I sensori nel visore VR immersive ese tracciano il rilevamento, vale a dire che non è necessario installare hardware sulle pareti dello spazio. Ogni controller dispone di diversi metodi di input.
 
-![Controller di movimento per la realtà mista di Windows](../design/images/winmr-ck-1080x1080-350px.jpg)
+![Windows Mixed Reality controller del movimento](../design/images/winmr-ck-1080x1080-350px.jpg)
 
-## <a name="bluetooth-keyboards"></a>Tastiere Bluetooth
+## <a name="bluetooth-keyboards"></a>Bluetooth tastiere
 
-Le tastiere Bluetooth QWERTY della lingua inglese possono essere abbinate e usate ovunque sia possibile usare la tastiera olografica. Il recupero di una tastiera di qualità fa la differenza, quindi è consigliabile utilizzare la [tastiera Microsoft universale](https://www.microsoft.com/accessories/products/keyboards/universal-foldable-keyboard/gu5-00001) o il [Desktop Bluetooth di Microsoft designer](https://www.microsoft.com/accessories/products/keyboards/designer-bluetooth-desktop/7n9-00001).
+Le tastiere Qwerty Bluetooth possono essere abbinate e usate ovunque sia possibile usare la tastiera olografica. Ottenere una tastiera di qualità fa la differenza, quindi è consigliabile usare [Microsoft Universal Foldable Keyboard](https://www.microsoft.com/accessories/products/keyboards/universal-foldable-keyboard/gu5-00001) o Microsoft Designer Bluetooth [Desktop.](https://www.microsoft.com/accessories/products/keyboards/designer-bluetooth-desktop/7n9-00001)
 
-## <a name="bluetooth-gamepads"></a>Gamepad Bluetooth
+## <a name="bluetooth-gamepads"></a>Bluetooth game pad
 
-È possibile usare un controller con app e giochi che abilitano in modo specifico il supporto del gamepad. I gamepad non possono essere usati per controllare l'interfaccia utente di HoloLens.
+È possibile usare un controller con app e giochi che abilitano in modo specifico il supporto del game pad. I game pad non possono essere usati per controllare HoloLens'interfaccia utente.
 
-I controller wireless Xbox disponibili con Xbox One o sono stati venduti come accessori per la funzionalità Xbox One S per la connettività Bluetooth, in modo da poterli usare con HoloLens e auricolari immersivi. È [necessario aggiornare](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) il controller wireless Xbox prima di poterlo usare con HoloLens.
+Controller wireless Xbox che vengono con il Xbox One S o venduti come accessori per la funzionalità Xbox One S Bluetooth connettività, in modo da poterli usare con HoloLens e visori VR immersive. Il controller wireless Xbox [deve essere aggiornato](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) prima di poter essere usato con HoloLens.
 
-Altre marche di gamepad Bluetooth possono funzionare con i dispositivi di realtà mista di Windows, ma il supporto può variare in base all'applicazione.
+Altri marchi di Bluetooth game pad possono funzionare con Windows Mixed Reality dispositivi, ma il supporto varia in base all'applicazione.
 
-## <a name="other-bluetooth-accessories"></a>Altri accessori Bluetooth
+## <a name="other-bluetooth-accessories"></a>Altri Bluetooth accessori
 
-Fino a quando la periferica supporta i profili Bluetooth HID o GATT, può associarsi a HoloLens. Altri dispositivi Bluetooth HID e GATT oltre alla tastiera, ai topi e al Clicker HoloLens possono richiedere una completa operatività di un'applicazione complementare in Microsoft HoloLens.
+Purché la periferica supporti i profili HID Bluetooth o GATT, può essere associata a HoloLens. Altri Bluetooth HID e GATT oltre a tastiera, mouse e clicker HoloLens possono richiedere un'applicazione complementare Microsoft HoloLens essere completamente funzionante.
 
 Le periferiche non supportate includono:
 
-* Le periferiche nei profili audio Bluetooth non sono supportate.
-* I dispositivi audio Bluetooth quali altoparlanti e auricolari possono essere disponibili nell'app Impostazioni, ma non sono supportati con Microsoft HoloLens come endpoint audio.
-* Telefoni e PC abilitati per Bluetooth non sono supportati per l'associazione e il trasferimento di file.
+* Le periferiche nei Bluetooth profili audio non sono supportate.
+* Bluetooth dispositivi audio come altoparlanti e visori VR possono essere disponibili nell'app Impostazioni, ma non sono supportati con Microsoft HoloLens come endpoint audio.
+* Bluetooth pc e telefoni abilitati per l'associazione non sono supportati per l'associazione e i trasferimenti di file.
 
-## <a name="unpairing-a-bluetooth-peripheral"></a>Annullamento dell'associazione di una periferica Bluetooth
+## <a name="unpairing-a-bluetooth-peripheral"></a>Annullamento del pagamento di una Bluetooth periferica
 
-1. Dal menu Start aprire l'app **Settings (impostazioni** )
-2. Vai ai **dispositivi**
-3. Accendere la radio Bluetooth se è spenta
+1. Dal menu Start aprire l'app **Impostazioni** app
+2. Passare a **Dispositivi**
+3. Attivare la Bluetooth radio se è disattivata
 4. Trovare il dispositivo nell'elenco dei dispositivi Bluetooth disponibili
-5. Selezionare il dispositivo dall'elenco e quindi fare clic sul pulsante **Rimuovi** .
+5. Selezionare il dispositivo dall'elenco e quindi selezionare il **pulsante** Rimuovi

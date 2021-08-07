@@ -1,104 +1,104 @@
 ---
 title: LeapMotionMRTK
-description: Documentazione per la configurazione del movimento intercalare
+description: Documentazione da configurare per Leap Motion
 author: CDiaz-ms
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, Leap Motion,
-ms.openlocfilehash: 8c9bae12cfb3285ab807e584f13834aca530c3cb
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, Leap Motion,
+ms.openlocfilehash: 4b8c49979baec1dd32d9e90e4132add294dbc68690232880ed4708bfed503e0d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104686404"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209421"
 ---
-# <a name="how-to-configure-leap-motion-by-ultraleap-hand-tracking-in-mrtk"></a>Come configurare il rilevamento manuale a salto (by Ultraleap) in MRTK
+# <a name="how-to-configure-leap-motion-by-ultraleap-hand-tracking-in-mrtk"></a>Come configurare leap motion (by Ultraleap) Hand Tracking in MRTK
 
-Per utilizzare questo provider di dati, è necessario un [controller di movimento Leap](https://www.ultraleap.com/product/leap-motion-controller/) .
+Per [usare questo provider](https://www.ultraleap.com/product/leap-motion-controller/) di dati è necessario un leap motion controller.
 
-Il movimento intercalare provider di dati Abilita il rilevamento a mano articolato per VR e può essere utile per la prototipazione rapida nell'editor.  Il provider di dati può essere configurato in modo da usare il controller di movimento Leap montato su un auricolare o posizionato su una scrivania.
+La funzionalità Leap Motion provider di dati il tracciamento articolato della mano per la realtà virtuale e può essere utile per la creazione rapida di prototipi nell'editor.  Il provider di dati può essere configurato per l'uso del Leap Motion Controller montato su un visore o posizionato su un visore da tavolo.
 
 ![LeapMotionIntroGif](../images/cross-platform/leap-motion/LeapHandsGif3.gif)
 
-Questo provider può essere usato nell'editor e nel dispositivo mentre si trova nella piattaforma autonoma.  Può anche essere usato nell'editor mentre si trova nella piattaforma UWP, ma non in una compilazione UWP.
+Questo provider può essere usato nell'editor e nel dispositivo mentre si usa la piattaforma autonoma.  Può anche essere usato nell'editor nella piattaforma UWP, ma NON in una build UWP.
 
-|Versioni del modulo Leap Motion Unity supportate|
+|Versioni dei moduli Leap Motion Unity supportate|
 |---|
 |4.5.0|
 |4.5.1|
 
-## <a name="using-leap-motion-by-ultraleap-hand-tracking-in-mrtk"></a>Uso del rilevamento della mano Leap Motion (by Ultraleap) in MRTK
+## <a name="using-leap-motion-by-ultraleap-hand-tracking-in-mrtk"></a>Uso del tracciamento manuale leap motion (by Ultraleap) in MRTK
 
-1. Importazione dei moduli MRTK e LEAP Unity Motion Unity
+1. Importazione di moduli MRTK e Leap Motion Unity
     - Installare [Leap Motion SDK 4.0.0](https://developer.leapmotion.com/releases/?category=orion) se non è già installato
-    - Importare il pacchetto **Microsoft. MixedReality. Toolkit. Foundation** nel progetto Unity.
+    - Importare **Microsoft.MixedReality.Toolkit. Pacchetto di** base nel progetto Unity.
     - Scaricare e importare la versione più recente dei [moduli Leap Motion Unity](https://developer.leapmotion.com/unity) nel progetto
-        - Importa solo il pacchetto **principale** nei moduli Unity
+        - Importare solo il **pacchetto Core** all'interno dei moduli Unity
 
 1. Integrare i moduli Leap Motion Unity con MRTK
-    - Dopo che i moduli Unity sono presenti nel progetto, passare a **mixed reality Toolkit**  >  **Leap Motion** Integration  >  **modules di Leap Motion Unity**
+    - Dopo aver fatto parte del progetto, passare a **Mixed Reality Toolkit** Leap  >  **Motion** Integrate Leap  >  **Motion Unity Modules**
     > [!NOTE]
-    > L'integrazione dei moduli Unity in MRTK aggiunge 10 definizioni di assembly al progetto e aggiunge riferimenti alla definizione dell'assembly **Microsoft. MixedReality. Toolkit. Providers. LeapMotion** . Verificare che Visual Studio sia chiuso.
+    > L'integrazione dei moduli Unity in MRTK aggiunge 10 definizioni di assembly al progetto e aggiunge riferimenti a **Microsoft.MixedReality.Toolkit. Definizione dell'assembly Providers.LeapMotion.** Verificare che Visual Studio sia chiuso.
 
      ![LeapMotionIntegration](../images/cross-platform/leap-motion/LeapMotionIntegrateMenu.png)
 
-1. Aggiunta del provider di dati di movimento Leap
-    - Crea una nuova scena Unity
-    - Per aggiungere MRTK alla scena, passare a **mixed reality Toolkit**  >  **Aggiungi alla scena e configurare**
-    - Selezionare l'oggetto gioco MixedRealityToolkit nella gerarchia e selezionare **copia e Personalizza** per clonare il profilo di realtà mista predefinito.
+1. Aggiunta del movimento leap provider di dati
+    - Creare una nuova scena di Unity
+    - Aggiungere MRTK alla scena passando a **Realtà mista Toolkit**  >  **Aggiungi alla scena e configura**
+    - Selezionare l'oggetto gioco MixedRealityToolkit nella gerarchia e selezionare Copia e **personalizza** per clonare il profilo di realtà mista predefinito.
 
     ![LeapMotionProfileClone](../images/cross-platform/CloneProfile.png)
 
-    - Selezionare il profilo di configurazione di **input**
+    - Selezionare il **profilo di configurazione** di input
 
     ![Profilo di configurazione di input 1](../images/cross-platform/InputConfigurationProfile.png)
 
-    - Selezionare **clona** nel profilo di sistema di input per abilitare la modifica.
+    - Selezionare **Clona** nel profilo di sistema di input per abilitare la modifica.
 
     ![LeapMotionInputProfileClone](../images/cross-platform/CloneInputSystemProfile.png)
 
-    - Aprire la sezione **provider di dati di input** , selezionare **Aggiungi provider di dati** nella parte superiore, verrà aggiunto un nuovo provider di dati alla fine dell'elenco.  Aprire il nuovo provider di dati e impostare il **tipo** su **Microsoft. MixedReality. Toolkit. LeapMotion. input > LeapMotionDeviceManager**
+    - Aprire la **sezione Provider di** dati di input, selezionare **Aggiungi** provider di dati nella parte superiore, verrà aggiunto un nuovo provider di dati alla fine dell'elenco.  Aprire il nuovo provider di dati e impostare **Type** su **Microsoft.MixedReality.Toolkit. LeapMotion.Input > LeapMotionDeviceManager**
 
-    ![Aggiunta provider di dati di salto](../images/cross-platform/leap-motion/LeapAddDataProvider.png)
+    ![Leap Add provider di dati](../images/cross-platform/leap-motion/LeapAddDataProvider.png)
 
-    - Selezionare **clona** per modificare le impostazioni predefinite del movimento intercalare.
+    - Selezionare **Clona** per modificare le impostazioni predefinite di Leap Motion.
 
     ![LeapDataProviderPreClone](../images/cross-platform/leap-motion/LeapMotionDeviceManagerProfile.png)
 
-    - Il movimento intercalare provider di dati contiene la `LeapControllerOrientation` proprietà che rappresenta la posizione del controller di movimento LEAP. `LeapControllerOrientation.Headset` indica che il controller è montato su un auricolare. `LeapControllerOrientation.Desk` indica che il controller è posizionato sulla scrivania. Il valore predefinito è impostato su `LeapControllerOrientation.Headset` .
-    - Ogni orientamento del controller contiene proprietà offset:
-      - Le proprietà offset orientamento **auricolare** rispecchiano le proprietà offset nel componente LeapXRServiceProvider.  In `LeapVRDeviceOffsetMode` sono disponibili tre opzioni: predefinita, offset Head manuale e trasformazione.  Se la modalità offset è predefinita, un offset non verrà applicato al controller Leap Motion.  La modalità di offset Head manuale consente la modifica di tre proprietà: `LeapVRDeviceOffsetY` , `LeapVRDeviceOffsetZ` e `LeapVRDeviceTiltX` .  I valori della proprietà offset asse vengono quindi applicati al posizionamento predefinito del controller.  La modalità di offset della trasformazione contiene la `LeapVRDeviceOrigin` proprietà Transform che specifica una nuova origine per il controller di movimento LEAP.
-      - L'orientamento della **scrivania** contiene la `LeapControllerOffset` proprietà che definisce la posizione di ancoraggio delle lancette del banco intercalare.  L'offset viene calcolato in relazione alla posizione principale della fotocamera e il valore predefinito è (0,-0,2, 0,35) per assicurarsi che le lancette vengano visualizzate in primo piano e in visualizzazione della fotocamera.
+    - L'provider di dati Leap Motion contiene `LeapControllerOrientation` la proprietà che rappresenta la posizione del controller di movimento Leap. `LeapControllerOrientation.Headset` indica che il controller è montato su un visore. `LeapControllerOrientation.Desk` indica che il controller è posizionato piano sulla scrivania. Il valore predefinito è impostato su `LeapControllerOrientation.Headset` .
+    - Ogni orientamento del controller contiene le proprietà di offset:
+      - Le **proprietà di** offset dell'orientamento visore rispecchiano le proprietà di offset nel componente LeapXRServiceProvider.  Dispone `LeapVRDeviceOffsetMode` di tre opzioni: Predefinito, Offset testina manuale e Trasformazione.  Se la modalità di offset è Default, non verrà applicato un offset al Controller di movimento Leap.  La modalità Offset head manuale consente la modifica di tre proprietà: `LeapVRDeviceOffsetY` e `LeapVRDeviceOffsetZ` `LeapVRDeviceTiltX` .  I valori della proprietà offset dell'asse vengono quindi applicati al posizionamento predefinito del controller.  La modalità Offset trasformazione contiene la `LeapVRDeviceOrigin` proprietà Transform che specifica una nuova origine per Leap Motion Controller.
+      - **L'orientamento desk** contiene la `LeapControllerOffset` proprietà che definisce la posizione di ancoraggio delle mani intercalare della scrivania.  L'offset viene calcolato in relazione alla posizione principale della fotocamera e il valore predefinito è (0,-0,2, 0,35) per assicurarsi che le mani vengano visualizzate davanti e in vista della fotocamera.
 
         > [!NOTE]
-        > Le proprietà offset nel profilo vengono applicate una volta all'avvio dell'applicazione.  Per modificare i valori in fase di esecuzione, ottenere il provider di servizi di movimento Leap dal Gestione dispositivi di movimento intercalare:
+        > Le proprietà di offset nel profilo vengono applicate una volta all'avvio dell'applicazione.  Per modificare i valori durante il runtime, ottenere Leap Motion Service Provider da Leap Motion Device Manager:
         >```
         >LeapMotionDeviceManager leapMotionDeviceManager = CoreServices.GetInputSystemDataProvider<LeapMotionDeviceManager>();
         >LeapXRServiceProvider leapXRServiceProvider = leapMotionDeviceManager.LeapMotionServiceProvider as LeapXRServiceProvider; 
         >```
 
-    - `EnterPinchDistance` e `ExitPinchDistance` sono le soglie di distanza per il rilevamento del movimento del tocco di pizzico/aria.  Il gesto del pizzico viene calcolato misurando la distanza tra la punta del dito dell'indice e il suggerimento.  Per generare un evento su input inattivo, il valore predefinito `EnterPinchDistance` è impostato su 0,02.  Per generare un evento di input in uscita (uscendo dal pizzico), la distanza predefinita tra il suggerimento per il dito dell'indice e il suggerimento del pollice è 0,05.
+    - `EnterPinchDistance` e `ExitPinchDistance` sono le soglie di distanza per il rilevamento dei movimenti di tocco di avvicinamento/aria.  Il movimento di avvicinamento delle dita viene calcolato misurando la distanza tra la punta dell'indice e la punta del pollice.  Per generare un evento on input down, il valore `EnterPinchDistance` predefinito è 0,02.  Per generare un evento on input up (uscita dalla dita), la distanza predefinita tra la punta dell'indice e la punta del pollice è 0,05.
 
-    `LeapControllerOrientation`: Auricolare (impostazione predefinita) |  `LeapControllerOrientation`: Desk
+    `LeapControllerOrientation`: Visore (impostazione predefinita) |  `LeapControllerOrientation`: Desk
     :-------------------------:|:-------------------------:
     ![LeapHeadsetGif](../images/cross-platform/leap-motion/LeapHeadsetOrientationExampleMetacarpals.gif)  |  ![LeapDeskGif](../images/cross-platform/leap-motion/LeapDeskOrientationExampleMetacarpals.gif)
     ![LeapHeadsetInspector](../images/cross-platform/leap-motion/LeapMotionDeviceManagerHeadset.png) |     ![LeapDeskInspector](../images/cross-platform/leap-motion/LeapMotionDeviceManagerDesk.png)
 
-1. Test del provider di dati di movimento intercalare
-    - Dopo l'aggiunta del provider di dati di movimento Leap al profilo di sistema di input, premere Play, spostare la mano davanti a Leap Motion controller e visualizzare la rappresentazione congiunta della mano.
+1. Test del movimento leap provider di dati
+    - Dopo aver aggiunto leap motion provider di dati al profilo del sistema di input, premere play, spostare la mano davanti a Leap Motion Controller e si dovrebbe vedere la rappresentazione congiunta della mano.
 
 1. Compilazione del progetto
-    - Passa a **File > impostazioni di compilazione**
-    - Solo le compilazioni autonome sono supportate se si usa l'provider di dati Leap Motion.
-    - Per istruzioni su come usare un auricolare di realtà mista di Windows per le compilazioni autonome, vedere [compilazione e distribuzione](../../updates-deployment/build-and-deploy.md#building-and-deploying-mrtk-to-a-windows-mixed-reality-headset).
+    - Passare a **File > Build Impostazioni**
+    - Solo le compilazioni autonome sono supportate se si usa leap motion provider di dati.
+    - Per istruzioni su come usare un visore Windows Mixed Reality visore per le build autonome, vedere [Compilare e distribuire](../../updates-deployment/build-and-deploy.md#building-and-deploying-mrtk-to-a-windows-mixed-reality-headset).
 
-## <a name="getting-the-hand-joints"></a>Recupero delle giunzioni di mano
+## <a name="getting-the-hand-joints"></a>Ottenere le giunzioni della mano
 
-Il recupero di giunzioni tramite il provider di dati LEAP è identico a quello di una mano articolata MRTK.  Per ulteriori informazioni, vedere la pagina relativa al [rilevamento manuale](../input/hand-tracking.md#polling-joint-pose-from-handjointutils).
+Ottenere le giunzioni usando il provider di dati leap è identico al recupero delle giunzioni della mano per una mano articolata MRTK.  Per altre informazioni, vedere [Hand Tracking](../input/hand-tracking.md#polling-joint-pose-from-handjointutils).
 
-Con MRTK in una scena Unity e il movimento Leap provider di dati aggiunto come input provider di dati nel profilo di sistema di input, creare un oggetto gioco vuoto e alleghi lo script di esempio seguente.
+Con MRTK in una scena unity e leap motion provider di dati aggiunto come provider di dati di input nel profilo del sistema di input, creare un oggetto gioco vuoto e associare lo script di esempio seguente.
 
-Questo script è un semplice esempio di come recuperare la funzione del giunto di Palma in una mano di movimento.  Una sfera segue la mano intercalare sinistra mentre un cubo segue la mano intercalare a destra.
+Questo script è un semplice esempio di come recuperare la posizione della giunzione del palmo in un Leap Motion Hand.  Una sfera segue la mano intercalare sinistra mentre un cubo segue la mano di salto a destra.
 
 ```c#
 using Microsoft.MixedReality.Toolkit;
@@ -142,29 +142,29 @@ public class LeapHandJoints : MonoBehaviour, IMixedRealityHandJointHandler
     }
 ```
 
-## <a name="unity-editor-workflow-tip"></a>Suggerimento del flusso di lavoro dell'editor Unity
+## <a name="unity-editor-workflow-tip"></a>Suggerimento per il flusso di lavoro dell'editor unity
 
-L'uso di Leap Motion provider di dati non richiede un auricolare VR.  Le modifiche apportate a un'app MRTK possono essere testate nell'editor con la mano intercalare senza cuffie.
+L'uso di Leap Motion provider di dati non richiede un visore VR.  Le modifiche a un'app MRTK possono essere testate nell'editor con le mani Leap senza visore.
 
-Le lancette del movimento intercalare vengono visualizzate nell'editor, senza una cuffia VR collegata.  Se `LeapControllerOrientation` è impostato su **auricolare**, è necessario che il controller di movimento intercalare venga mantenuto da una mano con la fotocamera rivolte verso l'alto.
+Leap Motion Hands verrà visualizzato nell'editor, senza un visore VR collegato.  Se `LeapControllerOrientation` l'opzione è impostata su **Headset,** il controller Leap Motion dovrà essere tenuto in mano da una mano con la fotocamera rivolta in avanti.
 
 > [!NOTE]
-> Se la fotocamera viene spostata usando chiavi WASD nell'editor e l' `LeapControllerOrientation` **auricolare** è, le mani non seguiranno la fotocamera. Le lancette seguiranno solo lo spostamento della fotocamera se una cuffia VR è collegata mentre `LeapControllerOrientation` è impostata l' **auricolare**.  Se l'oggetto `LeapControllerOrientation` è impostato su **desk**, seguirà lo spostamento della fotocamera nell'editor.
+> Se la fotocamera viene spostata usando chiavi WASD nell'editor e l'oggetto è Headset, le mani `LeapControllerOrientation` non seguiranno la fotocamera.  Le mani seguiranno lo spostamento della fotocamera solo se un visore VR è collegato mentre `LeapControllerOrientation` l'opzione è impostata **su Headset**.  Le mani leap seguiranno lo spostamento della fotocamera nell'editor se `LeapControllerOrientation` è impostato su **Desk**.
 
-## <a name="removing-leap-motion-from-the-project"></a>Rimozione del movimento intercalare dal progetto
+## <a name="removing-leap-motion-from-the-project"></a>Rimozione del movimento leap dalla Project
 
-1. Passare al **Toolkit di realtà mista** per i moduli di movimento a  >    >  **balzo separato**
-    - Consentire l'aggiornamento di Unity come riferimento nel file **Microsoft. MixedReality. Toolkit. Providers. LeapMotion. asmdef** vengono modificati in questo passaggio
-1. Chiudi Unity
+1. Passare al modulo **Mixed Reality Toolkit** Leap  >  **Motion** Separate Leap  >  **Motion Unity**
+    - Consentire l'aggiornamento di Unity come riferimenti in **Microsoft.MixedReality.Toolkit. Il file Providers.LeapMotion.asmdef** viene modificato in questo passaggio
+1. Chiudere Unity
 1. Chiudere Visual Studio, se è aperto
-1. Aprire Esplora file e passare alla radice del progetto MRTK Unity
-    - Elimina la directory **UnityProjectName/Library**
-    - Elimina la directory **UnityProjectName/assets/plugins/LeapMotion**
-    - Eliminare il file **UnityProjectName/assets/plugins/LeapMotion. meta**
+1. Aprire Esplora file e passare alla radice del progetto UNITY MRTK
+    - Eliminare la directory **UnityProjectName/Library**
+    - Eliminare la directory **UnityProjectName/Assets/Plugins/LeapMotion**
+    - Eliminare il file **UnityProjectName/Assets/Plugins/LeapMotion.meta**
 1. Riaprire Unity
 
-In Unity 2018,4, è possibile notare che gli errori rimangono nella console dopo aver eliminato la libreria e le risorse di base del movimento intercalare.
-Se gli errori vengono registrati dopo la riapertura, riavviare Unity.
+In Unity 2018.4 è possibile notare che gli errori rimangono nella console dopo l'eliminazione della libreria e degli asset leap motion core.
+Se vengono registrati errori dopo la riapertura, riavviare di nuovo Unity.
 
 ## <a name="common-errors"></a>Errori comuni
 
@@ -172,16 +172,16 @@ Se gli errori vengono registrati dopo la riapertura, riavviare Unity.
 
 Per verificare se i moduli Leap Motion Unity sono integrati con MRTK:
 
-- Passare a **mixed reality Toolkit > Utilities > Leap Motion > controllare lo stato di integrazione**
-  - Verrà visualizzata una finestra popup con un messaggio che indica se i moduli Leap Motion Unity sono stati integrati con MRTK.
+- Passare a **Mixed Reality Toolkit > Utilities > Leap Motion > Check Integration Status**
+  - Verrà visualizzata una finestra popup con un messaggio che indica se i moduli Leap Motion Unity sono o meno integrati con MRTK.
 - Se il messaggio indica che gli asset non sono stati integrati:
   - Assicurarsi che i moduli Leap Motion Unity siano nel progetto
-  - Verificare che la versione aggiunta sia supportata, vedere la tabella nella parte superiore della pagina per le versioni supportate.
-  - Provare **mixed reality Toolkit > Utilities > Leap motion > integrare i moduli Leap Motion Unity**
+  - Assicurarsi che la versione aggiunta sia supportata, vedere la tabella nella parte superiore della pagina per le versioni supportate.
+  - Provare **Mixed Reality Toolkit > Utilities > Leap Motion > Integrare moduli Leap Motion Unity**
 
-### <a name="copying-assembly-multiplayer-hlapi-failed"></a>Copia HLAPI multiplayer assembly non riuscita
+### <a name="copying-assembly-multiplayer-hlapi-failed"></a>Copia dell'assembly multiplayer HLAPI non riuscita
 
-Durante l'importazione delle risorse di base di Leap Unity Motion, questo errore potrebbe essere registrato:
+Durante l'importazione di Leap Motion Unity Core Assets questo errore potrebbe essere registrato:
 
 ```
 Copying assembly from 'Temp/com.unity.multiplayer-hlapi.Runtime.dll' to 'Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll' failed
@@ -189,15 +189,15 @@ Copying assembly from 'Temp/com.unity.multiplayer-hlapi.Runtime.dll' to 'Library
 
 **Soluzione**
 
-- Una soluzione a breve termine prevede il riavvio di Unity. Per ulteriori informazioni, vedere il [problema 7761](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/7761) .
+- Una soluzione a breve termine consiste nel riavviare Unity. Per altre informazioni, vedere Problema [7761.](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/7761)
 
-## <a name="leap-motion-example-scene"></a>Scena di esempio Leap Motion
+## <a name="leap-motion-example-scene"></a>Scena di esempio di movimento intercalare
 
-La scena di esempio usa il profilo DefaultLeapMotionConfiguration e determina se il progetto Unity è stato configurato correttamente per l'uso del provider di dati di movimento LEAP.
+La scena di esempio usa il profilo DefaultLeapMotionConfiguration e determina se il progetto Unity è stato configurato correttamente per l'uso del provider di dati.
 
-La scena di esempio è contenuta nel pacchetto **Microsoft. MixedReality. Toolkit. examples** in **MRTK/examples/Demos/HandTracking/** directory.  
+La scena di esempio è contenuta in **Microsoft.MixedReality.Toolkit. Pacchetto** di esempi nella directory **MRTK/Examples/Demos/HandTracking/.**  
 
 ## <a name="see-also"></a>Vedi anche
 
--[Provider](../input/input-providers.md) 
-- di input [Rilevamento della mano](../input/hand-tracking.md)
+-[Provider di input](../input/input-providers.md) 
+- [Tracciamento manuale](../input/hand-tracking.md)

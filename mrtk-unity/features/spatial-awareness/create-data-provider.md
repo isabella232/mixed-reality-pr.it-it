@@ -4,13 +4,13 @@ description: descrive come creare provider di dati personalizzati in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 04a0cdbd18f666b6a99c120eb28966234cc8c92d
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
+ms.openlocfilehash: 05186c418a7b0b7b143abc58be6a6afb64cb69f5a1c90c73ed516d51c2a5d8ea
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145153"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188855"
 ---
 # <a name="creating-a-spatial-awareness-system-data-provider"></a>Creazione di un provider di dati del sistema di riconoscimento spaziale
 
@@ -39,7 +39,7 @@ I provider di dati devono disporre di uno spazio dei nomi per attenuare potenzia
 - Nome dell'azienda che produce il componente aggiuntivo
 - Area funzionale
 
-Ad esempio, un provider di dati Spatial Awareness creato e spedito dalla società Contoso può essere *"Contoso.MixedReality.Toolkit.SpatialAwareness".*
+Ad esempio, un provider di dati spatial awareness creato e spedito dalla società Contoso può essere *"Contoso.MixedReality.Toolkit. SpatialAwareness"*.
 
 **Struttura di cartelle**
 
@@ -53,7 +53,7 @@ Dove la *cartella ContosoSpatialAwareness* contiene l'implementazione del provid
 
 **Namespace**
 
-Se un provider di dati del sistema di riconoscimento spaziale  viene inviato al [repository Mixed Reality Toolkit,](https://github.com/Microsoft/MixedRealityToolkit-Unity)lo spazio dei nomi deve iniziare con Microsoft.MixedReality.Toolkit (ad *esempio: Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver*)
+Se un provider di dati del sistema di riconoscimento spaziale viene inviato [al repository Toolkit realtà](https://github.com/Microsoft/MixedRealityToolkit-Unity)mista, lo spazio dei nomi deve iniziare con Microsoft.MixedReality.  Toolkit (ad esempio: *Microsoft.MixedReality.Toolkit. SpatialObjectMeshObserver*)
 
  e il codice deve trovarsi in una cartella sotto MRTK/Providers (ad esempio: *MRTK/Providers/ObjectMeshObserver*).
 
@@ -67,7 +67,7 @@ Il primo passaggio per la creazione di un provider di dati spatial awareness con
 
 Tutti gli oggetti dati spaziali devono implementare [`IMixedRealitySpatialAwarenessObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObject) l'interfaccia .
 
-La base di Mixed Reality Toolkit fornisce gli oggetti spaziali seguenti che possono essere usati o estesi nei nuovi provider di dati.
+La base Toolkit realtà mista fornisce gli oggetti spaziali seguenti che possono essere usati o estesi nei nuovi provider di dati.
 
 - [`BaseSpatialAwarenessObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialAwarenessObject)
 - [`SpatialAwarenessMeshObject`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessMeshObject)
@@ -77,7 +77,7 @@ La base di Mixed Reality Toolkit fornisce gli oggetti spaziali seguenti che poss
 
 ### <a name="specify-interface-andor-base-class-inheritance"></a>Specificare l'ereditarietà dell'interfaccia e/o della classe di base
 
-Tutti i provider di dati di consapevolezza spaziale devono implementare l'interfaccia , che [`IMixedRealitySpatialAwarenessObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver) specifica la funzionalità minima richiesta dal sistema di consapevolezza spaziale. La base MRTK include la [`BaseSpatialObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver) classe che fornisce un'implementazione predefinita di questa funzionalità richiesta.
+Tutti i provider di dati di riconoscimento spaziale devono implementare l'interfaccia , che [`IMixedRealitySpatialAwarenessObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver) specifica la funzionalità minima richiesta dal sistema di consapevolezza spaziale. La base MRTK include la [`BaseSpatialObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver) classe che fornisce un'implementazione predefinita di questa funzionalità richiesta.
 
 ```c#
 public class SpatialObjectMeshObserver :
@@ -88,11 +88,11 @@ public class SpatialObjectMeshObserver :
 ```
 
 > [!NOTE]
-> [`IMixedRealityCapabilityCheck`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck)L'interfaccia viene usata dalla classe per indicare che fornisce il supporto per la funzionalità [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) SpatialAwarenessMesh.
+> [`IMixedRealityCapabilityCheck`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck)L'interfaccia viene utilizzata dalla classe per indicare che fornisce il supporto per la funzionalità [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) SpatialAwarenessMesh.
 
 #### <a name="apply-the-mixedrealitydataprovider-attribute"></a>Applicare l'attributo MixedRealityDataProvider
 
-Un passaggio chiave per la creazione di un provider di dati Spatial Awareness consiste nell'applicare [`MixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.MixedRealityDataProviderAttribute) l'attributo alla classe . Questo passaggio abilita l'impostazione del profilo e delle piattaforme predefiniti per il provider di dati, se selezionato nel profilo di consapevolezza spaziale, nonché nome, percorso della cartella e altro ancora.
+Un passaggio chiave per la creazione di un provider di dati Spatial Awareness consiste nell'applicare [`MixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.MixedRealityDataProviderAttribute) l'attributo alla classe . Questo passaggio abilita l'impostazione del profilo e della piattaforma predefiniti per il provider di dati, se selezionato nel profilo Di consapevolezza spaziale, nonché in Nome, percorso cartella e altro ancora.
 
 ```c#
 [MixedRealityDataProvider(
@@ -110,10 +110,10 @@ public class SpatialObjectMeshObserver :
 
 ### <a name="implement-the-imixedrealitydataprovider-methods"></a>Implementare i metodi IMixedRealityDataProvider
 
-Dopo aver definito la classe , il passaggio successivo consiste nel fornire l'implementazione [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) dell'interfaccia .
+Dopo aver definito la classe, il passaggio successivo consiste nel fornire l'implementazione [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) dell'interfaccia .
 
 > [!NOTE]
-> La [`BaseSpatialObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver) classe , tramite la classe , fornisce solo [`BaseService`](xref:Microsoft.MixedReality.Toolkit.BaseService) implementazioni vuote per i metodi [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) . I dettagli di questi metodi sono in genere specifici del provider di dati.
+> La [`BaseSpatialObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver) classe , tramite la classe , fornisce solo [`BaseService`](xref:Microsoft.MixedReality.Toolkit.BaseService) un'implementazione vuota per [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) i metodi . I dettagli di questi metodi sono in genere specifici del provider di dati.
 
 I metodi che devono essere implementati dal provider di dati sono:
 
@@ -130,13 +130,13 @@ Il passaggio successivo consiste nell'aggiungere la logica del provider di dati 
 
 ### <a name="observation-change-notifications"></a>Notifiche di modifica dell'osservazione
 
-Per consentire alle applicazioni di rispondere alle modifiche nella comprensione dell'ambiente del dispositivo, il provider di dati genera eventi di notifica come definito [`IMixedRealitySpatialAwarenessObservationtHandler<T>`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObservationHandler`1) nell'interfaccia .
+Per consentire alle applicazioni di rispondere alle modifiche nella comprensione dell'ambiente del dispositivo, il provider di dati genera eventi di notifica come definito [`IMixedRealitySpatialAwarenessObservationtHandler<T>`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObservationHandler`1) nell'interfaccia.
 
 - `OnObservationAdded()`
 - `OnObservationRemoved()`
 - `OnObservationUpdated()`
 
- Il codice seguente degli esempi illustra [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) la generazione e l'evento quando vengono aggiunti dati mesh.
+ Il codice seguente degli esempi [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) illustra la generazione e l'evento quando vengono aggiunti dati mesh.
 
 ```c#
 // The data to be sent when mesh observation events occur.
@@ -187,7 +187,7 @@ private void SendMeshObjects()
 
 ### <a name="add-unity-profiler-instrumentation"></a>Aggiungere la strumentazione del profiler Unity
 
-Le prestazioni sono fondamentali nelle applicazioni di realtà mista. Ogni componente aggiunge una certa quantità di overhead di cui le applicazioni devono essere conto. A questo scopo, è importante che tutti i provider di dati di consapevolezza spaziale contengano la strumentazione del profiler Unity nel ciclo interno e i percorsi di codice usati di frequente.
+Le prestazioni sono fondamentali nelle applicazioni di realtà mista. Ogni componente aggiunge una certa quantità di overhead di cui le applicazioni devono essere conto. A questo scopo, è importante che tutti i provider di dati di riconoscimento spaziale contengano strumentazione del profiler Unity nel ciclo interno e percorsi di codice usati di frequente.
 
 È consigliabile implementare il modello utilizzato da MRTK durante la strumentazione di provider personalizzati.
 
@@ -215,7 +215,7 @@ Le prestazioni sono fondamentali nelle applicazioni di realtà mista. Ogni compo
 
 ## <a name="create-the-profile-and-inspector"></a>Creare il profilo e il controllo
 
-In Mixed Reality Toolkit i provider di dati vengono configurati usando [i profili](../profiles/profiles.md).
+Nel modello di realtà mista Toolkit i provider di dati vengono configurati tramite [profili](../profiles/profiles.md).
 
 ### <a name="define-the-profile"></a>Definire il profilo
 
@@ -241,7 +241,7 @@ public class SpatialObjectMeshObserverProfile : MixedRealitySpatialAwarenessMesh
 }
 ```
 
-L'attributo può essere applicato alla classe del profilo per consentire ai clienti di creare un'istanza del profilo usando il menu Crea profili di `CreateAssetMenu`   >  **Assets**  >  **Mixed Reality Toolkit.**  >  
+L'attributo può essere applicato alla classe del profilo per consentire ai clienti di creare un'istanza del profilo usando il `CreateAssetMenu` menu Create   >  **Assets**  >  **Mixed Reality Toolkit** Profiles (Crea asset di realtà mista Toolkit  >  **profili).**
 
 ### <a name="implement-the-inspector"></a>Implementare il controllo
 
@@ -257,19 +257,19 @@ public class SpatialObjectMeshObserverProfileInspector : BaseMixedRealityToolkit
 
 ## <a name="create-assembly-definitions"></a>Creare definizioni di assembly
 
-Mixed Reality Toolkit usa i file di definizione dell'assembly ([asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) per specificare le dipendenze tra i componenti e per aiutare Unity a ridurre il tempo di compilazione.
+L'Toolkit di realtà mista usa i file di definizione dell'assembly ([asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) per specificare le dipendenze tra i componenti e per aiutare Unity a ridurre il tempo di compilazione.
 
 È consigliabile creare file di definizione dell'assembly per tutti i provider di dati e i relativi componenti dell'editor.
 
 Usando la [struttura di](#namespace-and-folder-structure) cartelle nell'esempio precedente, saranno presenti due file asmdef per il provider di dati ContosoSpatialAwareness.
 
-La prima definizione di assembly è per il provider di dati. Per questo esempio, sarà denominato ContosoSpatialAwareness e si trova nella cartella *ContosoSpatialAwareness* dell'esempio. Questa definizione di assembly deve specificare una dipendenza da Microsoft.MixedReality.Toolkit e da qualsiasi altro assembly da cui dipende.
+La prima definizione di assembly è per il provider di dati. Per questo esempio, sarà denominato ContosoSpatialAwareness e si trova nella cartella *ContosoSpatialAwareness* dell'esempio. Questa definizione di assembly deve specificare una dipendenza da Microsoft.MixedReality. Toolkit e qualsiasi altro assembly da cui dipende.
 
 La definizione dell'assembly ContosoInputEditor specificherà il controllo del profilo e qualsiasi codice specifico dell'editor. Questo file deve trovarsi nella cartella radice del codice dell'editor. In questo esempio il file si trova nella *cartella ContosoSpatialAwareness\Editor.* Questa definizione di assembly conterrà un riferimento all'assembly ContosoSpatialAwareness, nonché:
 
-- Microsoft.MixedReality.Toolkit
-- Microsoft.MixedReality.Toolkit.Editor.Inspectors
-- Microsoft.MixedReality.Toolkit.Editor.Utilities
+- Microsoft.MixedReality. Toolkit
+- Microsoft.MixedReality. Toolkit. Editor.Inspectors
+- Microsoft.MixedReality. Toolkit. Editor.Utilities
 
 ## <a name="register-the-data-provider"></a>Registrare il provider di dati
 
@@ -281,7 +281,7 @@ Dopo la creazione, il provider di dati può essere registrato con il sistema di 
 
 I provider di dati distribuiti come componenti di terze parti hanno i dettagli specifici della creazione di pacchetti e della distribuzione lasciati alle preferenze dello sviluppatore. È probabile che la soluzione più comune sia generare un file unitypackage e distribuirsi tramite Unity Asset Store.
 
-Se un provider di dati viene inviato e accettato come parte del pacchetto Microsoft Mixed Reality Toolkit, il team microsoft MRTK lo inserirà e distribuirà come parte delle offerte MRTK.
+Se un provider di dati viene inviato e accettato come parte del pacchetto Microsoft Mixed Reality Toolkit, il team di Microsoft MRTK lo inserirà e lo distribuirà come parte delle offerte MRTK.
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -12,13 +12,13 @@
   href: dialog.md
 - name: Abitare
   href: dwell.md
-- name: Visualizzazione della punta delle dita
+- name: Visualizzazione punta del dito
   href: fingertip-visualization.md
 - name: Coach mano
   href: hand-coach.md
 - name: Menu a mano
   href: hand-menu.md
-- name: Interagibile
+- name: Con interazione
   href: interactable.md
 - name: Gestore di manipolazione
   href: manipulation-handler.md
@@ -44,7 +44,7 @@
   href: tooltip.md
 - name: Prefab di testo
   href: text-prefab.md
-- name: Temi visivi
+- name: Temi degli oggetti visivi
   href: visual-themes.md
 - name: Risolutori
   href: solvers/toc.yml

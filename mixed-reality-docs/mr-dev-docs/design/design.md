@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realtà mista, individuare, distribuire, indice, pagina di destinazione, progettazione, sviluppo, esercitazioni, app di esempio, nozioni di base, case study, risorse, guide pratiche per HoloLens, progetti open source, concetti di base, interazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: c4d9f9b4c4be1c5012ac8dc84fb55e6c5fa9eaee
-ms.sourcegitcommit: 85ba3af69ec2a9056f759bab7b66f79f09a016b2
+ms.openlocfilehash: d106b295b72a3087461ccbe8818a7cc23c311f46e3ae20a748c8ce22ec4f89b9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111454768"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213363"
 ---
 # <a name="start-designing-and-prototyping"></a>Iniziare a progettare e a creare prototipi
 
@@ -40,7 +40,7 @@ Come tutti i percorsi, anche quello che riguarda la progettazione di applicazion
 | [Tipi di app di realtà mista](types-of-mixed-reality-apps.md) | Decidere in quale punto dello spettro della realtà mista si colloca l'esperienza dell'app |
 | [App Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Apprendere le nozioni di base relative alla progettazione dell'esperienza utente in realtà mista sperimentando comportamenti, suggerimenti e raccomandazioni per la creazione di straordinarie app HoloLens (disponibile per il download da Microsoft Store in HoloLens 2) |
 | [MRTK Examples Hub](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | Sperimentare comuni interazioni spaziali e blocchi predefiniti per Realtà mista (disponibile per il download da Microsoft Store in HoloLens 2) |
-| **Download** [facoltativo di Figma Toolkit](figma-toolkit.md) | Figma Toolkit fornisce asset da usare per disegnare e delineare l'interfaccia utente in base ai componenti disponibili in MRTK |
+| **Facoltativo** [Scaricare l'Toolkit Figma](figma-toolkit.md) | Il Toolkit Figma fornisce asset da usare per disegnare e delineare l'interfaccia utente in base ai componenti disponibili in MRTK |
 
 ### <a name="2-core-concepts"></a>2. Concetti di base
 
@@ -89,7 +89,7 @@ Il lavoro di un progettista non finisce mai, specialmente quando si tratta di im
 
 :::row:::   
     :::column:::    
-        [![MRTK Figma Toolkit](images/74-13.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        [![MrTK Figma Toolkit](images/74-13.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
         **[Figma Toolkit](figma-toolkit.md)**<br>   
         Figma Toolkit fornisce gli asset che possono essere usati per disegnare e delineare l'interfaccia utente. Tutti i controlli dell'interfaccia utente sono basati sui componenti disponibili in MRTK.
     :::column-end:::        

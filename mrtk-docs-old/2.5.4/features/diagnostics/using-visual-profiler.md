@@ -1,82 +1,82 @@
 ---
-title: UsingVisualProfiler
+title: Uso di VisualProfiler
 description: documentazione per l'uso di Visual Profiler in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: f268bfe18cf44129f88ebdaf4cd56e442c458b59
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 35d07cad7fe53f6e05da4e9338addda4233e1f9de7468654101df48839dd5e70
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104684664"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190137"
 ---
-# <a name="using-the-visual-profiler"></a>Uso di Visual Profiler
+# <a name="using-the-visual-profiler"></a>Uso del profiler visivo
 
-Il VisualProfiler offre una visualizzazione di facile utilizzo, in applicazioni, delle prestazioni di un'applicazione di realtà mista. Il profiler è supportato in tutte le piattaforme Toolkit per realtà miste, tra cui:
+VisualProfiler offre una visualizzazione in-application facile da usare delle prestazioni di un'applicazione di realtà mista. Il profiler è supportato in tutte le piattaforme Toolkit realtà mista, tra cui:
 
-- Microsoft HoloLens (1a generazione)
+- Microsoft HoloLens (prima generazione)
 - Microsoft HoloLens 2
 - Visori VR immersive di Windows Mixed Reality
 - OpenVR
 
-Durante lo sviluppo di un'applicazione, è possibile concentrarsi su più parti della scena perché Visual Profiler Visualizza i dati relativi alla visualizzazione corrente.
+Durante lo sviluppo di un'applicazione, concentrarsi su più parti della scena quando Visual Profiler visualizza i dati relativi alla visualizzazione corrente.
 
 > [!IMPORTANT]
-> Concentrare l'attenzione sulle parti della scena con oggetti complessi, effetti particellari o attività. Questi e altri fattori spesso contribuiscono a ridurre le prestazioni dell'applicazione e a un'esperienza utente inferiore a quella ideale.
+> Concentrare l'attenzione su parti della scena con oggetti complessi, effetti di particelle o attività. Questi e altri fattori contribuiscono spesso alla riduzione delle prestazioni dell'applicazione e a un'esperienza utente inferiore a quella ideale.
 
-## <a name="visual-profiler-interface"></a>Interfaccia di Visual Profiler
+## <a name="visual-profiler-interface"></a>Interfaccia del profiler visivo
 
 ![Interfaccia di Visual Profiler](../images/diagnostics/VisualProfiler.png)
 
 L'interfaccia di Visual Profiler include i componenti seguenti:
 
-- [Frequenza fotogrammi](#frame-rate)
-- [Tempo frame](#frame-time)
-- [Grafico frame](#frame-graph)
-- [Utilizzo memoria](#memory-utilization)
+- [Frequenza dei fotogrammi](#frame-rate)
+- [Tempo dell'intervallo](#frame-time)
+- [Frame Graph](#frame-graph)
+- [Utilizzo della memoria](#memory-utilization)
 
 ### <a name="frame-rate"></a>Frequenza dei fotogrammi
 
-Nell'angolo superiore sinistro dell'interfaccia è la frequenza dei fotogrammi, misurata in fotogrammi al secondo. Per ottimizzare l'esperienza utente e la comodità, questo valore dovrebbe essere il più elevato possibile.
+Nell'angolo superiore sinistro dell'interfaccia è presente la frequenza dei fotogrammi, misurata in fotogrammi al secondo. Per la migliore esperienza utente e il massimo comfort, questo valore deve essere il più alto possibile.
 
-La piattaforma e la configurazione hardware specifiche giocheranno un ruolo significativo nella frequenza massima ottenibile di frame. Alcuni valori di destinazione comuni includono:
+La piattaforma e la configurazione hardware specifiche avranno un ruolo significativo nella frequenza dei fotogrammi massima ottenibile. Alcuni valori di destinazione comuni includono:
 
 - Microsoft HoloLens: 60
-- Realtà mista di Windows Ultra: 90
+- Windows Mixed Reality Ultra: 90
 
 > [!NOTE]
-> A causa della [limitazione delle richieste di frequenza dei fotogrammi in HoloLens quando è attiva la fase MRC predefinita](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens), il Profiler visivo si nasconde mentre vengono acquisiti video e foto. È possibile eseguire l'override di questa impostazione nel profilo di sistema di diagnostica.
+> A causa [della limitazione della frequenza](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens)dei fotogrammi HoloLens quando mrC predefinito è attivo, il profiler visivo si nasconde mentre vengono acquisiti video e foto. Questa impostazione può essere sostituita nel profilo del sistema di diagnostica.
 
 ### <a name="frame-time"></a>Durata fotogramma
 
-A destra della frequenza dei fotogrammi è il tempo di frame, in millisecondi, dedicato alla CPU. Per ottenere le frequenze dei frame di destinazione citate in precedenza, un'applicazione può dedicare la quantità di tempo seguente per frame:
+A destra della frequenza dei fotogrammi si trova il tempo in millisecondi impiegato per la CPU. Per ottenere la frequenza dei fotogrammi di destinazione indicata in precedenza, un'applicazione può impiegare la quantità di tempo seguente per fotogramma:
 
 - 60 fps: 16,6 ms
 - 90 fps: 11,1 ms
 
-Il tempo GPU è pianificato per essere aggiunto in una versione futura.
+In una versione futura è prevista l'aggiunta del tempo per la GPU.
 
-### <a name="frame-graph"></a>Grafico frame
+### <a name="frame-graph"></a>Grafico dei frame
 
-Il grafico frame fornisce una visualizzazione grafica della cronologia della frequenza dei fotogrammi dell'applicazione.
+Il grafico dei frame offre una visualizzazione grafica della cronologia della frequenza dei fotogrammi dell'applicazione.
 
-![Grafico frame mancanti di Visual Profiler](../images/diagnostics/VisualProfilerMissedFrames.png)
+![Visual Profiler Missed Frame Graph](../images/diagnostics/VisualProfilerMissedFrames.png)
 
-Quando si usa l'applicazione, cercare i frame mancanti che indicano che l'applicazione non sta raggiungendo la frequenza dei fotogrammi di destinazione e potrebbe richiedere un lavoro di ottimizzazione.
+Quando si usa l'applicazione, cercare i fotogrammi persi che indicano che l'applicazione non sta per raggiungere la frequenza dei fotogrammi di destinazione e potrebbe richiedere operazioni di ottimizzazione.
 
 ### <a name="memory-utilization"></a>Utilizzo della memoria
 
-La visualizzazione utilizzo memoria consente di comprendere facilmente il modo in cui la visualizzazione corrente influisca sul consumo di memoria di un'applicazione.
+La visualizzazione dell'utilizzo della memoria consente di comprendere facilmente l'impatto della visualizzazione corrente sul consumo di memoria di un'applicazione.
 
-![Grafico della memoria di Visual Profiler](../images/diagnostics/VisualProfilerMemory.png)
+![Memoria di Visual Profiler Graph](../images/diagnostics/VisualProfilerMemory.png)
 
-Quando si usa l'applicazione, cercare l'utilizzo totale della memoria. Gli indicatori chiave sono vicini al limite di memoria e a modifiche rapide nell'utilizzo.
+Quando si usa l'applicazione, cercare l'utilizzo totale della memoria. Gli indicatori chiave includono l'avvicinamento del limite di memoria e modifiche rapide nell'utilizzo.
 
-## <a name="customizing-the-visual-profiler"></a>Personalizzazione di Visual Profiler
+## <a name="customizing-the-visual-profiler"></a>Personalizzazione del profiler visivo
 
-L'aspetto e il comportamento di Visual Profiler sono personalizzabili tramite il profilo di sistema di diagnostica. Per ulteriori informazioni, vedere [configurazione del sistema di diagnostica](configuring-diagnostics.md) .
+L'aspetto e il comportamento di Visual Profiler sono personalizzabili tramite il profilo del sistema di diagnostica. Per altre [informazioni, vedere Configurazione del sistema](configuring-diagnostics.md) di diagnostica.
 
 ## <a name="see-also"></a>Vedi anche
 

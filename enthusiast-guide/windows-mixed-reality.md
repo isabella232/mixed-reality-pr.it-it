@@ -1,18 +1,18 @@
 ---
-title: Che cos'è la realtà mista di Windows?
-description: Panoramica dei concetti chiave, delle funzionalità e dell'utilizzo di Windows Mixed Reality.
+title: Che cos'Windows Mixed Reality?
+description: Panoramica dei Windows Mixed Reality, delle funzionalità e dell'utilizzo principali.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
-keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR,
-ms.openlocfilehash: 7e4d1fd89047154ae91107aef5f86aa4164744e8
-ms.sourcegitcommit: 2cdc2e38990fff24972d98f9e74f0dabacbffa7d
+keywords: Windows Mixed Reality, Realtà mista, Realtà virtuale, VR, MR,
+ms.openlocfilehash: 66af3039c152330cfc9e5df933f86595b42e5d43c8a4a28d035c5e53d23c42c1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92156600"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187821"
 ---
-# <a name="what-is-windows-mixed-reality"></a>Che cos'è la realtà mista di Windows?
+# <a name="what-is-windows-mixed-reality"></a>Che cos'Windows Mixed Reality?
 
-[TODO: richiesta immagine intestazione]
+[TODO: Immagine dell'intestazione necessaria]

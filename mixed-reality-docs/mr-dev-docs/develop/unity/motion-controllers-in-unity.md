@@ -1,25 +1,25 @@
 ---
-title: Controller di movimento in Unity
-description: Informazioni su come intervenire sullo sguardo in Unity con l'input del controller di movimento usando XR e API comuni per pulsanti e assi.
+title: Controller del movimento in Unity
+description: Informazioni su come intervenire sullo sguardo fisso in Unity con l'input del controller del movimento usando XR e api comuni per pulsanti e assi.
 author: hferrone
 ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
-keywords: controller di movimento, unity, input, visore per realtà mista, visore windows mixed reality, visore per realtà virtuale, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: d8f9ce292c0ab1cfa89faf58f0e5b90322192b35
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+keywords: controller del movimento, unity, input, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, MRTK, realtà mista Toolkit
+ms.openlocfilehash: ccda5b11190e829ccc655989a6f679ef6ef647a920c01a3182548b23a3d85084
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394515"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115216242"
 ---
-# <a name="motion-controllers-in-unity"></a>Controller di movimento in Unity
+# <a name="motion-controllers-in-unity"></a>Controller del movimento in Unity
 
-Esistono due modi chiave per intervenire sullo [](../../design/gaze-and-commit.md#composite-gestures) sguardo [in Unity,](gaze-in-unity.md)movimenti della mano e controller del movimento [in](../../design/motion-controllers.md) HoloLens e immersive HMD. È possibile accedere ai dati per entrambe le origini di input spaziale tramite le stesse API in Unity.
+Esistono due modi chiave per intervenire sullo [](../../design/gaze-and-commit.md#composite-gestures) sguardo [fisso in Unity,](gaze-in-unity.md)i movimenti della mano e i controller del movimento [in](../../design/motion-controllers.md) HoloLens e immersive HMD. È possibile accedere ai dati per entrambe le origini di input spaziale tramite le stesse API in Unity.
 
-Unity offre due modi principali per accedere ai dati di input spaziali per Windows Mixed Reality. Le API *Comuni Input.GetButton/Input.GetAxis* funzionano in più SDK XR unity, mentre l'API *InteractionManager/GestureRecognizer* specifica per Windows Mixed Reality espone il set completo di dati di input spaziali.
+Unity offre due modi principali per accedere ai dati di input spaziali per Windows Mixed Reality. Le API *comuni Input.GetButton/Input.GetAxis* funzionano in più SDK XR unity, mentre l'API *InteractionManager/GestureRecognizer* specifica di Windows Mixed Reality espone il set completo di dati di input spaziali.
 
-## <a name="unity-xr-input-apis"></a>API di input XR di Unity
+## <a name="unity-xr-input-apis"></a>API di input XR unity
 
 Per i nuovi progetti, è consigliabile usare le nuove API di input XR dall'inizio. 
 
@@ -27,52 +27,52 @@ Altre informazioni sulle [API XR sono](https://docs.unity3d.com/Manual/xr_input.
 
 ## <a name="unity-buttonaxis-mapping-table"></a>Tabella di mapping di pulsanti/assi unity
 
-Gestione input di Unity per Windows Mixed Reality di movimento supporta gli ID pulsante e asse elencati di seguito tramite le API *Input.GetButton/GetAxis.* La colonna "Windows MR-specific" fa riferimento alle proprietà disponibili al di fuori del *tipo InteractionSourceState.* Ognuna di queste API è descritta in dettaglio nelle sezioni seguenti.
+Gestione input di Unity per i controller del movimento Windows Mixed Reality supporta gli ID pulsante e asse elencati di seguito tramite le API *Input.GetButton/GetAxis.* La colonna "Windows mr-specific" fa riferimento alle proprietà disponibili al di fuori del *tipo InteractionSourceState.* Ognuna di queste API è descritta in dettaglio nelle sezioni seguenti.
 
-I mapping degli ID pulsante/asse per Windows Mixed Reality in genere corrispondono al pulsante Oculus/ID asse.
+I mapping degli ID pulsante/asse per Windows Mixed Reality corrispondono in genere all'ID pulsante/asse Oculus.
 
-I mapping degli ID pulsante/asse per Windows Mixed Reality diversi dai mapping di OpenVR in due modi:
-1. Il mapping usa ID touchpad distinti dalla levetta personale, per supportare i controller sia con le leve che con i touchpad.
-2. Il mapping evita l'overload degli ID dei pulsanti A e X per i pulsanti di menu per lasciarli disponibili per i pulsanti ABXY fisici.
+I mapping degli ID pulsante/asse per Windows Mixed Reality sono diversi dai mapping di OpenVR in due modi:
+1. Il mapping usa ID touchpad distinti dalla levetta personale per supportare i controller con le levette e i touchpad.
+2. Il mapping evita l'overload degli ID dei pulsanti A e X per i pulsanti menu per lasciarli disponibili per i pulsanti ABXY fisici.
 
 <table>
 <tr>
-<th rowspan="2">Input </th><th colspan="2"><a href="motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis">API Unity comuni</a><br />(Input.GetButton/GetAxis) </th><th rowspan="2"><a href="motion-controllers-in-unity.md#windows-specific-apis-xrwsainput">API di input specifica di MR di Windows</a><br />(XR. Wsa. Input)</th>
+<th rowspan="2">Input </th><th colspan="2"><a href="motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis">API Unity comuni</a><br />(Input.GetButton/GetAxis) </th><th rowspan="2"><a href="motion-controllers-in-unity.md#windows-specific-apis-xrwsainput">Windows API di input specifica di MR</a><br />(XR. Wsa. Input)</th>
 </tr><tr>
 <th> Mano sinistra </th><th> Mano destra</th>
 </tr><tr>
 <td> Selezionare il trigger premuto </td><td> Asse 9 = 1,0 </td><td> Asse 10 = 1,0 </td><td> selectPressed</td>
 </tr><tr>
-<td> Selezionare il valore analogico del trigger </td><td> Asse 9 </td><td> Asse 10 </td><td> selectPressedAmount</td>
+<td> Selezionare il valore analogo del trigger </td><td> Asse 9 </td><td> Asse 10 </td><td> selectPressedAmount</td>
 </tr><tr>
-<td> Selezionare il trigger parzialmente premuto </td><td> Pulsante 14 <i>(gamepad compat)</i> </td><td> Pulsante 15 <i>(gamepad compat)</i> </td><td> selectPressedAmount &gt; 0.0</td>
+<td> Selezionare il trigger parzialmente premuto </td><td> Pulsante 14 <i>(compatibilità del game pad)</i> </td><td> Pulsante 15 <i>(compatibilità del game pad)</i> </td><td> selectPressedAmount &gt; 0.0</td>
 </tr><tr>
 <td> Pulsante di menu premuto </td><td> Pulsante 6* </td><td> Pulsante 7* </td><td> menuPressed</td>
 </tr><tr>
-<td> Pulsante di controllo premuto </td><td> Asse 11 = 1,0 (nessun valore analogo)<br />Pulsante 4 <i>(gamepad compat)</i> </td><td> Asse 12 = 1,0 (nessun valore analogo)<br />Pulsante 5 <i>(gamepad compat)</i> </td><td> Afferrato</td>
+<td> Pulsante di controllo premuto </td><td> Asse 11 = 1,0 (nessun valore analogo)<br />Pulsante 4 <i>(compatibilità del game pad)</i> </td><td> Asse 12 = 1,0 (nessun valore analogo)<br />Pulsante 5 <i>(compatibilità del game pad)</i> </td><td> Afferrato</td>
 </tr><tr>
-<td> Levetta X <i>(a sinistra: -1.0, a destra: 1.0)</i> </td><td> Asse 1 </td><td> Asse 4 </td><td> thumbstickPosition.x</td>
+<td> Levetta X <i>(sinistra: -1.0, destra: 1.0)</i> </td><td> Asse 1 </td><td> Asse 4 </td><td> thumbstickPosition.x</td>
 </tr><tr>
-<td> Thumbstick Y <i>(top: -1.0, bottom: 1.0)</i> </td><td> Asse 2 </td><td> Asse 5 </td><td> thumbstickPosition.y</td>
+<td> Levetta Y <i>(in alto: -1.0, in basso: 1.0)</i> </td><td> Asse 2 </td><td> Asse 5 </td><td> thumbstickPosition.y</td>
 </tr><tr>
 <td> Levetta premuta </td><td> Pulsante 8 </td><td> Pulsante 9 </td><td> thumbstickPressed</td>
 </tr><tr>
 <td> Touchpad X <i>(a sinistra: -1.0, a destra: 1.0)</i> </td><td> Asse 17* </td><td> Asse 19* </td><td> touchpadPosition.x</td>
 </tr><tr>
-<td> Touchpad Y <i>(in alto: -1.0, in basso: 1.0)</i> </td><td> Asse 18* </td><td> Asse 20* </td><td> touchpadPosition.y</td>
+<td> Touchpad Y <i>(superiore: -1.0, inferiore: 1.0)</i> </td><td> Asse 18* </td><td> Asse 20* </td><td> touchpadPosition.y</td>
 </tr><tr>
 <td> Touchpad toccato </td><td> Pulsante 18* </td><td> Pulsante 19* </td><td> touchpadTouched</td>
 </tr><tr>
 <td> Touchpad premuto </td><td> Pulsante 16* </td><td> Pulsante 17* </td><td> touchpadPressed</td>
 </tr><tr>
-<td> 6Sottosto aderenza o posizione del puntatore </td><td colspan="2"> <i>Solo</i> posizione di presa: <a href="https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalPosition.html">XR. InputTracking.GetLocalPosition</a><br /><a href="https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalRotation.html">Xr. InputTracking.GetLocalRotation</a></td><td> Passare <i>Grip</i> o <i>Pointer</i> come argomento: sourceState.sourcePose.TryGetPosition<br />sourceState.sourcePose.TryGetRotation<br /></td>
+<td> 6Resotto del punto di controllo o posizione dell'indicatore di misura </td><td colspan="2"> <i>Solo posizione</i> del controllo: <a href="https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalPosition.html">XR. InputTracking.GetLocalPosition</a><br /><a href="https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalRotation.html">Xr. InputTracking.GetLocalRotation</a></td><td> Passare <i>Il controllo</i> o <i>il</i> puntatore come argomento: sourceState.sourcePose.TryGetPosition<br />sourceState.sourcePose.TryGetRotation<br /></td>
 </tr><tr>
 <td> Stato di rilevamento </td><td colspan="2"> <i>Accuratezza della posizione e rischio di perdita di origine disponibili solo tramite l'API specifica di MR</i> </td><td> <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionSourcePose-positionAccuracy.html">sourceState.sourcePose.positionAccuracy</a><br /><a href="https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionSourceProperties-sourceLossRisk.html">sourceState.properties.sourceLossRisk</a></td>
 </tr>
 </table>
 
 >[!NOTE]
->Questi ID pulsante/asse sono diversi dagli ID usati da Unity per OpenVR a causa di collisioni nei mapping usati da gamepad, Oculus Touch e OpenVR.
+>Questi ID pulsante/asse differiscono dagli ID usati da Unity per OpenVR a causa di collisioni nei mapping usati da game pad, Oculus Touch e OpenVR.
 
 <!-- ### Using HP Reverb G2 controllers
 
@@ -103,14 +103,14 @@ If you're using the HP Reverb G2 controllers, refer to the table below for butto
 
 ### <a name="openxr"></a>OpenXR
 
-Per informazioni di base sulle interazioni di realtà mista in Unity, vedere il Manuale [di Unity per l'input XR di Unity.](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html) Questa documentazione di Unity illustra i mapping da input specifici del controller a input **più** generalizzabili, in che modo gli input XR disponibili possono essere identificati e categorizzati, come leggere i dati da questi input e altro ancora.
+Per informazioni di base sulle interazioni di realtà mista in Unity, visita il manuale [di Unity per l'input XR di Unity.](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html) Questa documentazione di Unity illustra i mapping dagli input specifici del controller a input **più** generalizzabili, il modo in cui gli input XR disponibili possono essere identificati e categorizzati, come leggere i dati da questi input e altro ancora.
 
-Il plug-in OpenXR di realtà mista offre profili di interazione di input aggiuntivi, mappati a **InputFeatureUsage** standard, come descritto di seguito:
+Il plug-in OpenXR di realtà mista fornisce profili di interazione di input aggiuntivi, mappati a **inputFeatureUsage** standard, come descritto di seguito:
 
-| InputFeatureUsage | Controller HP Reverb G2 (OpenXR) | Mano holoLens (OpenXR) |
+| InputFeatureUsage | Controller HP Reverb G2 (OpenXR) | HoloLens Hand (OpenXR) |
 | ---- | ---- | ---- |
 | primary2DAxis | Joystick | |
-| primary2DAxisClick | Joystick - Fare clic su | |
+| primary2DAxisClick | Azzarre - Clic | |
 | trigger | Trigger  | |
 | Presa | Presa | Tocco o compressione dell'aria |
 | primaryButton | [X/A] - Premere | Simulazione del tocco |
@@ -123,11 +123,11 @@ Il plug-in OpenXR di realtà mista offre profili di interazione di input aggiunt
 
 Windows Mixed Reality supporta i controller di movimento in un'ampia gamma di fattori di forma. La progettazione di ogni controller differisce nella relazione tra la posizione della mano dell'utente e la direzione naturale "avanti" che le app devono usare per puntare durante il rendering del controller.
 
-Per rappresentare meglio questi controller, è possibile analizzare due tipi di  pose per ogni origine di interazione, la posizione del grip e il **puntatore.** Entrambe le coordinate di posizione e di posizione del puntatore del puntatore sono espresse da tutte le API unity nelle coordinate globali del mondo unity.
+Per rappresentare meglio questi controller, è possibile analizzare due tipi di  pose per ogni origine di interazione, la posizione del grip e il **puntatore.** Entrambe le coordinate di posizione e di posizione del puntatore sono espresse da tutte le API unity nelle coordinate globali del mondo unity.
 
 ### <a name="grip-pose"></a>Posizione del grip
 
-La **posizione del grip** rappresenta la posizione del palmo degli utenti, rilevata da un HoloLens o che tiene in mano un controller di movimento.
+La **posizione del grip** rappresenta la posizione del palmo degli utenti, rilevata da un HoloLens o che tiene un controller di movimento.
 
 Nei visori immersivi, la posizione del grip è più adatta per eseguire il rendering della mano **dell'utente** o di un oggetto in mano **dell'utente.** La posizione del grip viene usata anche quando si visualizza un controller di movimento. Il **modello di rendering fornito** da Windows per un controller di movimento usa la posizione di presa come origine e centro di rotazione.
 
@@ -137,7 +137,7 @@ La posizione del grip è definita in modo specifico come segue:
 * Asse avanti **dell'orientamento** del grip: quando si chiude parzialmente la mano (come se si tiene il controller), il raggio che punta in avanti attraverso il canale formato dalle dita non del pollice.
 * Asse **su dell'orientamento del** grip: asse Su implicito dalle definizioni Right e Forward.
 
-È possibile accedere alla posizione del grip tramite l'API di input tra fornitori di Unity *[(XR). InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/Rotation*) o tramite l'API specifica di Windows MR (*sourceState.sourcePose.TryGetPosition/Rotation,* che richiede dati di posizione per il **nodo Grip).**
+È possibile accedere alla posizione del grip tramite l'API di input tra fornitori di Unity *[(XR). InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/Rotation*) o tramite l'API specifica Windows MR (*sourceState.sourcePose.TryGetPosition/Rotation*, che richiede i dati di posizione per il **nodo Grip).**
 
 ### <a name="pointer-pose"></a>Posizione del puntatore
 
@@ -174,7 +174,7 @@ Come i visori, il controller Windows Mixed Reality movimento non richiede la con
 
 Se l'utente sposta i controller fuori dal campo di visualizzazione del visore, Windows continua a dedurre le posizioni del controller nella maggior parte dei casi. Quando il controller ha perso il rilevamento visivo per un tempo sufficiente, le posizioni del controller scenderanno a posizioni di accuratezza approssimativa.
 
-A questo punto, il sistema bloczzerà il controller all'utente, tenendo traccia della posizione dell'utente mentre si sposta, pur esponendo il vero orientamento del controller usando i sensori di orientamento interni. Molte app che usano controller per puntare e attivare gli elementi dell'interfaccia utente possono funzionare normalmente con accuratezza approssimativa senza che l'utente se ne sia abiliti.
+A questo punto, il sistema bloczzerà il controller all'utente, tenendo traccia della posizione dell'utente mentre si sposta, pur esponendo il vero orientamento del controller usando i sensori di orientamento interni. Molte app che usano i controller per puntare e attivare gli elementi dell'interfaccia utente possono funzionare normalmente con accuratezza approssimativa senza che l'utente se ne sia abiliti.
 
 <!-- The best way to get a feel for this is to try it yourself. Check out this video with examples of immersive content that works with motion controllers across various tracking states:
 
@@ -211,13 +211,13 @@ Questi stati di rilevamento del controller di movimento sono definiti come segue
 **Spazio dei nomi:** *UnityEngine,* *UnityEngine.XR*<br>
 **Tipi**: *Input*, *XR. InputTracking*
 
-Unity attualmente usa le API *Input.GetButton/Input.GetAxis* generali per esporre l'input per [Oculus SDK,](https://docs.unity3d.com/Manual/OculusControllers.html) [OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html) e Windows Mixed Reality, inclusi mani e controller di movimento. Se l'app usa queste API per l'input, può supportare facilmente i controller di movimento in più SDK XR, inclusi Windows Mixed Reality.
+Unity attualmente usa le API *Input.GetButton/Input.GetAxis* generali per esporre l'input per [Oculus SDK,](https://docs.unity3d.com/Manual/OculusControllers.html) [OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html) e Windows Mixed Reality, inclusi mani e controller di movimento. Se l'app usa queste API per l'input, può supportare facilmente i controller di movimento in più SDK XR, incluso Windows Mixed Reality.
 
 ### <a name="getting-a-logical-buttons-pressed-state"></a>Recupero dello stato premuto di un pulsante logico
 
 Per usare le API di input di Unity generali, in genere si inizierà cablando pulsanti e assi ai nomi logici in [Unity Input Manager,](https://docs.unity3d.com/Manual/ConventionalGameInput.html)associando un ID pulsante o asse a ogni nome. È quindi possibile scrivere codice che faccia riferimento al nome logico del pulsante o dell'asse.
 
-Ad esempio, per eseguire il mapping del pulsante trigger del controller del movimento sinistro all'azione Invia, passare > Modifica impostazioni progetto **> Input in** Unity ed espandere le proprietà della sezione Invia in Assi. Modificare la **proprietà Pulsante positivo** o Alt **Pulsante** positivo in modo da leggere il pulsante con **il joystick 14,** come illustrato di codice seguente:
+Ad esempio, per eseguire il mapping del pulsante trigger del controller del movimento sinistro all'azione Invia, passare a Modifica **input > Project Impostazioni >** in Unity ed espandere le proprietà della sezione Invia in Assi. Modificare la **proprietà Pulsante positivo** o Alt **Pulsante** positivo in modo da leggere il pulsante con **il joystick 14,** come illustrato di codice seguente:
 
 ![InputManager di Unity](images/unity-input-manager.png)<br>
 *Unity InputManager*
@@ -253,11 +253,11 @@ Quaternion leftRotation = InputTracking.GetLocalRotation(XRNode.LeftHand);
 ```
 
 > [!NOTE] 
-> Il codice precedente rappresenta la posizione del punto di controllo del controller (in cui l'utente tiene il controller), utile per il rendering di un'avaria o di una minaccia nella mano dell'utente o di un modello del controller stesso.
+> Il codice precedente rappresenta la posizione del punto di controllo del controller (in cui l'utente tiene il controller), utile per il rendering di una mano o di una mano dell'utente o di un modello del controller stesso.
 > 
-> La relazione tra la posizione del controllo e la posizione dell'indicatore di misura (in cui la punta del controller punta) può variare tra i controller. Al momento, l'accesso alla posizione del puntatore del controller è possibile solo tramite l'API di input specifica di MR, descritta nelle sezioni seguenti.
+> La relazione tra la posizione del controllo e la posizione dell'indicatore di misura (in cui la punta del controller sta puntando) può variare tra i controller. Al momento, l'accesso alla posizione del puntatore del controller è possibile solo tramite l'API di input specifica di MR, descritta nelle sezioni seguenti.
 
-## <a name="windows-specific-apis-xrwsainput"></a>API specifiche di Windows (XR. Wsa. Input)
+## <a name="windows-specific-apis-xrwsainput"></a>Windows API specifiche del dispositivo (XR. Wsa. Input)
 
 > [!CAUTION]
 > Se il progetto usa una delle versioni XR. Le API WSA vengono gradualmente sfasati a favore di XR SDK nelle versioni future di Unity. Per i nuovi progetti, è consigliabile usare XR SDK dall'inizio. Altre informazioni sul sistema [di input XR e sulle API sono](https://docs.unity3d.com/Manual/xr_input.html)disponibili qui.
@@ -265,11 +265,11 @@ Quaternion leftRotation = InputTracking.GetLocalRotation(XRNode.LeftHand);
 **Spazio dei nomi:** *UnityEngine.XR.WSA.Input*<br>
 **Tipi:** *InteractionManager,* *InteractionSourceState,* *InteractionSource,* *InteractionSourceProperties,* *InteractionSourceKind,* *InteractionSourceLocation*
 
-Per ottenere informazioni più dettagliate sull'input manuale Windows Mixed Reality (per HoloLens) e sui controller del movimento, puoi scegliere di usare le API di input spaziale specifiche di Windows nello spazio dei nomi *UnityEngine.XR.WSA.Input.* Ciò consente di accedere a informazioni aggiuntive, ad esempio l'accuratezza della posizione o il tipo di origine, consentendo di distogliere mani e controller.
+Per ottenere informazioni più dettagliate sull'input manuale di Windows Mixed Reality (per HoloLens) e sui controller del movimento, è possibile scegliere di usare le API di input spaziale specifiche di Windows nello spazio dei nomi *UnityEngine.XR.WSA.Input.* Ciò consente di accedere a informazioni aggiuntive, ad esempio l'accuratezza della posizione o il tipo di origine, consentendo di distogliere mani e controller.
 
-### <a name="polling-for-the-state-of-hands-and-motion-controllers"></a>Polling dello stato delle mani e dei controller del movimento
+### <a name="polling-for-the-state-of-hands-and-motion-controllers"></a>Polling per lo stato delle mani e dei controller del movimento
 
-È possibile eseguire il polling dello stato di questo frame per ogni origine di interazione (mano o controller del movimento) usando *il metodo GetCurrentReading.*
+È possibile eseguire il polling dello stato di questo frame per ogni origine di interazione (mano o controller del movimento) usando il *metodo GetCurrentReading.*
 
 ```cs
 var interactionSourceStates = InteractionManager.GetCurrentReading();
@@ -363,20 +363,20 @@ InteractionManager.InteractionSourcePressed -= InteractionManager_InteractionSou
 
 ### <a name="list-of-interaction-source-events"></a>Elenco di eventi di origine dell'interazione
 
-Gli eventi di origine dell'interazione disponibili sono:
+Gli eventi di origine interazione disponibili sono:
 * *InteractionSourceDetected* (l'origine diventa attiva)
 * *InteractionSourceLost* (diventa inattivo)
 * *InteractionSourcePressed* (tocco, pressione di un pulsante o espressione "Seleziona")
-* *InteractionSourceReleased* (fine di un tocco, un pulsante rilasciato o la fine dell'espressione "Seleziona")
+* *InteractionSourceReleased* (fine di un tocco, un pulsante rilasciato o la fine dell'espressione "Select")
 * *InteractionSourceUpdated* (sposta o modifica in altro modo uno stato)
 
 ### <a name="events-for-historical-targeting-poses-that-most-accurately-match-a-press-or-release"></a>Eventi per posizioni di destinazione cronologiche che corrispondono in modo più accurato a una stampa o a un rilascio
 
 Le API di polling descritte in precedenza forniscono all'app posizioni previste in avanti.  Anche se queste posizioni stimate sono ottimali per il rendering del controller o di un oggetto portatile virtuale, le posizioni future non sono ottimali per la destinazione, per due motivi chiave:
-* Quando l'utente preme un pulsante su un controller, possono essere presenti circa 20 ms di latenza wireless su Bluetooth prima che il sistema riceva la pressione.
+* Quando l'utente preme un pulsante su un controller, possono verificarsi circa 20 ms di latenza wireless su Bluetooth prima che il sistema riceva la pressione.
 * Quindi, se si usa una posizione stimata in avanti, saranno applicati altri 10-20 ms di stima in avanti per raggiungere l'ora in cui i fotoni del fotogramma corrente raggiungeranno gli occhi dell'utente.
 
-Ciò significa che il polling offre una posizione di origine o una posizione della testa di 30-40 ms in avanti da dove la testa e le mani dell'utente erano effettivamente tornati quando si è verificata la pressione o il rilascio.  Per l'input manuale di HoloLens, anche se non è presente alcun ritardo di trasmissione wireless, si verifica un ritardo di elaborazione simile per rilevare la pressione.
+Ciò significa che il polling offre una posizione di origine o una posizione della testa di 30-40 ms in avanti da dove la testa e le mani dell'utente erano effettivamente tornati quando si è verificata la pressione o il rilascio.  Per HoloLens'input manuale, anche se non si verifica alcun ritardo di trasmissione wireless, si verifica un ritardo di elaborazione simile per rilevare la pressione.
 
 Per definire in modo accurato la destinazione in base alla finalità originale dell'utente per una pressione della mano o del controller, devi usare la posizione di origine o la posizione della testa cronologica dell'evento di input *InteractionSourcePressed* o *InteractionSourceReleased.*
 

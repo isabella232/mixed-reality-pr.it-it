@@ -7,12 +7,12 @@ ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, esercitazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, unity, unreal, HoloLens, ancoraggi nello spazio di Azure, servizi vocali di Azure
-ms.openlocfilehash: c64ceb918cfec31b7ac934d9a1f9c719a4dde244
-ms.sourcegitcommit: b8a3367bf6dfed01de1ffa10f635385a92ca06b5
+ms.openlocfilehash: 3dfe5c0243b0cfce58d3e00f60c3ab321dd6d293ec24e1e33751c6788b110fc7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106223942"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208747"
 ---
 # <a name="tutorials"></a>Esercitazioni
 
@@ -24,13 +24,13 @@ Attualmente, tutte le esercitazioni e le app di esempio sono basate su Unity o U
 
 Le esercitazioni su HoloLens 2 sono state studiate per insegnare le tecniche e le procedure ottimali per lo sviluppo di applicazioni di realtà mista. Le esercitazioni di Unity sono basate sul [Mixed Reality Toolkit 2.0 (MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity), l'esercitazione di Unreal è basata su [UX Tools for Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal).
 
-* Esercitazioni su MRTK per principianti- [Introduzione (1 di 9)](tutorials/mr-learning-base-01.md)
-* Esercitazioni sugli ancoraggi spaziali di Azure- [Introduzione (1 di 5)](tutorials/mr-learning-asa-01.md)
-* Esercitazioni sulle funzionalità multiutente- [Introduzione (1 di 5)](tutorials/mr-learning-sharing-01.md)
-* Esercitazioni su servizi vocali di Azure- [integrazione e utilizzo di riconoscimento vocale e trascrizione (1 di 4)](tutorials/mrlearning-speechSDK-ch1.md)
-* Esercitazioni audio spaziali- [aggiunta di audio spaziale (1 di 5)](tutorials/unity-spatial-audio-ch1.md)
-* Esercitazioni sui servizi cloud di Azure- [Introduzione (1 di 5)](tutorials/mr-learning-azure-01.md)
-* Esercitazioni Remote olografiche [per PC-Introduzione (1 di 2)](tutorials/mr-learning-pc-holographic-remoting-01.md)
+* Esercitazioni mrTK per principianti - [Introduzione (1 di 9)](tutorials/mr-learning-base-01.md)
+* Esercitazioni su Ancoraggi nello spaziale di Azure - [Introduzione (1 di 5)](tutorials/mr-learning-asa-01.md)
+* Esercitazioni sulle funzionalità multi-utente - [Introduzione (1 di 5)](tutorials/mr-learning-sharing-01.md)
+* Esercitazioni su Servizi di riconoscimento vocale di Azure - Integrazione e uso del riconoscimento vocale e della trascrizione [(1 di 4)](tutorials/mrlearning-speechSDK-ch1.md)
+* Esercitazioni sull'audio spaziale - [Aggiunta di audio spaziale (1 di 5)](tutorials/unity-spatial-audio-ch1.md)
+* Servizi cloud di Azure esercitazioni - [Introduzione (1 di 5)](tutorials/mr-learning-azure-01.md)
+* Esercitazioni su PC Holographic Remoting - [Introduzione (1 di 2)](tutorials/mr-learning-pc-holographic-remoting-01.md)
 
 ## <a name="mixed-reality-academy"></a>Mixed Reality Academy 
 

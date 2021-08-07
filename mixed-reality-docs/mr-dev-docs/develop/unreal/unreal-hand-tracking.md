@@ -1,85 +1,85 @@
 ---
 title: Tracciamento mano in Unreal
-description: Informazioni su come usare l'input per il rilevamento della mano, la posa, le mesh di mano e le animazioni dei collegamenti dinamici in app Real realtà miste.
+description: Informazioni su come usare l'input del tracciamento della mano, la posizione, le mesh delle mani e le animazioni con collegamento in tempo reale nelle app di realtà mista Unreal.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Realtà mista di Windows, Tracking manuale, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, sviluppo di giochi, cuffie per realtà mista, cuffia a realtà mista di Windows, headset di realtà virtuale
-ms.openlocfilehash: 415a0773586ab232e925fd0f18a3a8e6f8217e88
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+keywords: Windows Mixed Reality, tracciamento delle mani, Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, sviluppo di giochi, visore VR di realtà mista, visore VR windows mixed reality, visore VR di realtà virtuale
+ms.openlocfilehash: 4c3b86c842fc875ebedbdf2527bf962fd8afd4d19cef90d168293cc85b664f70
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104695803"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187265"
 ---
 # <a name="hand-tracking-in-unreal"></a>Tracciamento mano in Unreal
 
-Il sistema di rilevamento manuale usa le palme e le dita di una persona come input. I dati sulla posizione e sulla rotazione di ogni dito, l'intero palmo e i movimenti della mano sono disponibili. A partire da Unreal 4,26, il rilevamento manuale è basato sul plug-in HeadMountedDisplay non reale e usa un'API comune in tutti i dispositivi e le piattaforme XR. La funzionalità è la stessa per i sistemi OpenXR e di realtà mista di Windows.
+Il sistema di tracciamento delle mani usa le mani e le dita di una persona come input. Sono disponibili i dati sulla posizione e la rotazione di ogni dito, l'intero palmo e i movimenti della mano. A partire da Unreal 4.26, il tracciamento delle mani si basa sul plug-in Unreal HeadMountedDisplay e usa un'API comune in tutte le piattaforme e i dispositivi XR. La funzionalità è la stessa per i Windows Mixed Reality e OpenXR.
 
-## <a name="hand-pose"></a>Hand Pose
+## <a name="hand-pose"></a>Posizione della mano
 
-Hand Pose consente di tenere traccia e di usare le mani e le dita degli utenti come input, a cui è possibile accedere sia nei progetti sia in C++. L'API Unreal invia i dati come sistema di coordinate, con segni di selezione sincronizzati con il motore irreale.
+La posizione della mano consente di tenere traccia e usare le mani e le dita degli utenti come input, accessibili sia in Blueprints che in C++. L'API Unreal invia i dati come sistema di coordinate, con tick sincronizzati con Unreal Engine.
 
-![Icona a mano con la struttura della ](images/hand-tracking-img-02.png)
- ![ mano sovrapposta](images/hand-tracking-skeleton-update.png)
+![Immagine dello scheletro della mano con giunzioni sovrapposte ](images/hand-tracking-img-02.png)
+ ![ a Hand Skeleton](images/hand-tracking-skeleton-update.png)
 
 [!INCLUDE[](includes/tabs-tracking-hand-pose.md)]
 
-## <a name="hand-live-link-animation"></a>Animazione collegamento dinamico
+## <a name="hand-live-link-animation"></a>Animazione hand-live link
 
-Le pose della mano vengono esposte all'animazione usando il plug-in [Live link](https://docs.unrealengine.com/Engine/Animation/LiveLinkPlugin/index.html).
+Le posizioni della mano vengono esposte all'animazione usando il [plug-in Collegamento live.](https://docs.unrealengine.com/Engine/Animation/LiveLinkPlugin/index.html)
 
-Se sono abilitati i plug-in della realtà mista di Windows e dei collegamenti dinamici:
-1. Selezionare **finestra > collegamento Live** per aprire la finestra dell'editor di collegamento Live.
-2. Selezionare l' **origine** e abilitare l' **origine del rilevamento a mano della realtà mista di Windows**
+Se i Windows Mixed Reality e Live Link sono abilitati:
+1. Selezionare **Finestra > Collegamento live per** aprire la finestra dell'editor di Live Link.
+2. Selezionare **Source (Origine)** e abilitare **Windows Mixed Reality Hand Tracking Source (Origine tracciamento manuale)**
 
-![Origine collegamento dinamico](images/unreal/live-link-source.png)
+![Origine collegamento in tempo reale](images/unreal/live-link-source.png)
 
-Dopo aver abilitato l'origine e aperto un asset di animazione, espandere la sezione **animazione** nella scheda della **scena anteprima** . vedere anche opzioni aggiuntive.
+Dopo aver abilitato l'origine e aperto un asset di animazione, espandere la sezione **Animation** (Animazione) nella **scheda Preview Scene** (Anteprima scena) e visualizzare altre opzioni.
 
-![Animazione collegamento dinamico](images/unreal/live-link-animation.png)
+![Animazione collegamento in tempo reale](images/unreal/live-link-animation.png)
 
-La gerarchia di animazione della mano è identica a quella di `EWMRHandKeypoint` . L'animazione può essere ridestinata usando **WindowsMixedRealityHandTrackingLiveLinkRemapAsset**:
+La gerarchia dell'animazione manuale è la stessa di `EWMRHandKeypoint` . L'animazione può essere ridestinata **usando WindowsMixedRealityHandTrackingLiveLinkRemapAsset:**
 
-![Animazione collegamento dinamico 2](images/unreal/live-link-animation2.png)
+![Animazione collegamento in tempo reale 2](images/unreal/live-link-animation2.png)
 
-Può anche essere sottoclassato nell'Editor:
+Può anche essere sottoclassato nell'editor:
 
-![Modifica del mapping di Live link](images/unreal/live-link-remap.png)
+![Modifica del mapping dei collegamenti in tempo reale](images/unreal/live-link-remap.png)
 
-## <a name="hand-mesh"></a>Mesh mano
+## <a name="hand-mesh"></a>Hand Mesh
 
-### <a name="hand-mesh-as-a-tracked-geometry"></a>Mesh mano come geometria rilevata
+### <a name="hand-mesh-as-a-tracked-geometry"></a>Mesh mano come geometria tracciata
 
 > [!IMPORTANT]
-> Per ottenere le mesh della mano come geometria tracciata in OpenXR, è necessario chiamare **set Use Hand mesh** con la **geometria di rilevamento abilitata**.
+> Per ottenere mesh mano come geometria tracciata in OpenXR, è necessario chiamare **Set Use Hand Mesh** with Enabled Tracking Geometry (Imposta usa mesh mano con geometria di **tracciamento abilitata).**
 
-Per abilitare questa modalità, è necessario chiamare **set Use Hand mesh** con la **geometria di rilevamento abilitata**:
+Per abilitare tale modalità, è necessario chiamare Set Use Hand Mesh with Enabled Tracking Geometry **(Imposta usa mesh mano** **con geometria di rilevamento abilitata):**
 
-![Progetto di avvio dell'evento Play connesso per impostare Use Hand mesh Function con la modalità di rilevamento Geometry abilitata](images/unreal-hand-tracking-img-08.png)
+![Progetto dell'evento begin play connesso per impostare l'uso della funzione hand mesh con la modalità geometria di rilevamento abilitata](images/unreal-hand-tracking-img-08.png)
 
 > [!NOTE]
-> Non è possibile abilitare entrambe le modalità nello stesso momento. Se ne viene abilitato uno, l'altro viene disabilitato automaticamente.
+> Non è possibile che entrambe le modalità siano abilitate contemporaneamente. Se si abilita un'opzione, l'altra viene disabilitata automaticamente.
 
-### <a name="accessing-hand-mesh-data"></a>Accesso ai dati della rete a mano
+### <a name="accessing-hand-mesh-data"></a>Accesso ai dati della mesh manuale
 
-![Mesh mano](images/unreal/hand-mesh.png)
+![Hand Mesh](images/unreal/hand-mesh.png)
 
-Prima di poter accedere ai dati della mesh a mano, è necessario:
-- Selezionare l'asset **ARSessionConfig** , espandere impostazioni **AR-> Impostazioni mapping del mondo** e selezionare **genera dati mesh da geometria rilevata**.
+Prima di poter accedere ai dati della mesh manuale, è necessario:
+- Selezionare **l'asset ARSessionConfig,** espandere le impostazioni **AR Impostazioni -> World Mapping** e selezionare Generate Mesh Data from Tracked Geometry (Genera dati mesh da geometria **tracciata).**
 
 Di seguito sono riportati i parametri di mesh predefiniti:
 
 1.  Usare i dati mesh per l'occlusione
-2.  Genera collisione per i dati mesh
-3.  Genera la mesh NAV per i dati mesh
-4.  Eseguire il rendering dei dati mesh nel parametro wireframe-debug che mostra la mesh generata
+2.  Generare una collisione per i dati della mesh
+3.  Generare la mesh di spostamento per i dati della mesh
+4.  Eseguire il rendering dei dati della mesh in wireframe: parametro di debug che mostra la mesh generata
 
-Questi valori di parametro vengono usati come il mapping spaziale mesh e le impostazioni predefinite mesh a mano. È possibile modificarli in qualsiasi momento in progetti o codice per qualsiasi mesh.
+Questi valori di parametro vengono usati come valori predefiniti per mesh di mapping spaziale e mesh manuale. È possibile modificarli in qualsiasi momento in Blueprints o nel codice per qualsiasi mesh.
 
 ### <a name="c-api-reference"></a>Informazioni di riferimento sulle API C++
-Usare `EEARObjectClassification` per trovare i valori della mesh mano in tutti gli oggetti rilevabili.
+Usare `EEARObjectClassification` per trovare i valori della mesh manuale in tutti gli oggetti tracciabili.
 ```cpp
 enum class EARObjectClassification : uint8
 {
@@ -88,7 +88,7 @@ enum class EARObjectClassification : uint8
 };
 ```
 
-I delegati seguenti vengono chiamati quando il sistema rileva qualsiasi oggetto rilevabile, inclusa una mesh mano.
+I delegati seguenti vengono chiamati quando il sistema rileva qualsiasi oggetto tracciabile, inclusa una mesh mano.
 
 ```cpp
 class FARSupportInterface
@@ -101,63 +101,63 @@ class FARSupportInterface
 };
 ```
 
-Assicurarsi che i gestori del delegato seguano la firma della funzione seguente:
+Assicurarsi che i gestori delegati seguano la firma della funzione seguente:
 
 ```cpp
 void UARHandMeshComponent::OnTrackableAdded(UARTrackedGeometry* Added)
 ```
 
-È possibile accedere ai dati mesh tramite  `UARTrackedGeometry::GetUnderlyingMesh` :
+È possibile accedere ai dati della mesh tramite  `UARTrackedGeometry::GetUnderlyingMesh` :
 
 ```cpp
 UMRMeshComponent* UARTrackedGeometry::GetUnderlyingMesh()
 ```
 
-### <a name="blueprint-api-reference"></a>Riferimento all'API Blueprint
+### <a name="blueprint-api-reference"></a>Informazioni di riferimento sulle API di Blueprint
 
-Per lavorare con le mesh mano nei progetti:
-1. Aggiungere un componente **ARTrackableNotify** a un attore del progetto
+Per usare hand mesh in Blueprints:
+1. Aggiungere un **componente ARTrackableNotify** a un attore blueprint
 
-![Notifica ARTrackable](images/unreal/ar-trackable-notify.png)
+![ARTrackable Notify](images/unreal/ar-trackable-notify.png)
 
-2. Passare al pannello dei **Dettagli** ed espandere la sezione **eventi** .
+2. Passare al pannello **Dettagli** ed espandere la **sezione** Eventi.
 
-![Notifica ARTrackable 2](images/unreal/ar-trackable-notify2.png)
+![ARTrackable Notify 2](images/unreal/ar-trackable-notify2.png)
 
-3. Sovrascrivi in Aggiungi/Aggiorna/Rimuovi geometria rilevata con i nodi seguenti nel grafico eventi:
+3. Sovrascrivi in caso di aggiunta/aggiornamento/rimozione della geometria rilevata con i nodi seguenti nell'Graph:
 
-![In ARTrackable notifica](images/unreal/on-artrackable-notify.png)
+![On ARTrackable Notify](images/unreal/on-artrackable-notify.png)
 
-### <a name="hand-mesh-visualization-in-openxr"></a>Visualizzazione Mesh mano in OpenXR
+### <a name="hand-mesh-visualization-in-openxr"></a>Visualizzazione Hand Mesh in OpenXR
 
-Il metodo consigliato per visualizzare la mesh manuale consiste nell'usare il plug-in XRVisualization di Epic insieme al plug-in [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal). 
+Il modo consigliato per visualizzare la mesh manuale è usare il plug-in XRPop di Epic insieme al [plug-in Microsoft OpenXR.](https://github.com/microsoft/Microsoft-OpenXR-Unreal) 
 
-Nell'editor del progetto è quindi consigliabile usare la funzione di **configurazione Use Hand mesh** dal [plug-in Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal) con **XRVisualization abilitato** come parametro:
+Nell'editor del progetto è quindi necessario usare **la funzione Set Use Hand Mesh** del plug-in Microsoft [OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal) con **Enabled XR Plugin** come parametro:
 
-![Progetto di avvio dell'evento Play connesso per impostare Use Hand mesh Function con la modalità xrvisualization abilitata](images/unreal-hand-tracking-img-05.png)
+![Progetto dell'evento begin play connesso per impostare l'uso della funzione hand mesh con la modalità xrvisualizzazione abilitata](images/unreal-hand-tracking-img-05.png)
 
-Per gestire il processo di rendering, è necessario usare il **controller di movimento di rendering** da XRVisualization:
+Per gestire il processo di rendering, è necessario usare **render motion controller** da XRVisual:
 
-![Progetto della funzione Get Motion controller data connessa alla funzione di rendering del controller di movimento](images/unreal-hand-tracking-img-06.png)
+![Progetto di funzione get motion controller data connessa per eseguire il rendering della funzione controller del movimento](images/unreal-hand-tracking-img-06.png)
 
 Ecco il risultato:
 
 ![Immagine della mano digitale sovrapposta a una mano umana reale](images/unreal-hand-tracking-img-07.png) 
 
-Se sono necessarie altre operazioni più complesse, ad esempio il disegno di una mesh mano con uno shader personalizzato, è necessario ottenere le mesh come geometria rilevata. 
+Se è necessario qualcosa di più complicato, ad esempio disegnare una mesh manuale con uno shader personalizzato, è necessario ottenere le mesh come geometria tracciata. 
 
 ## <a name="hand-rays"></a>Raggi mano
 
-Il recupero della disposizione è adatto a interazioni di chiusura, ad esempio l'acquisizione di oggetti o la pressione di pulsanti. Tuttavia, a volte è necessario lavorare con ologrammi lontani dagli utenti. Questa operazione può essere eseguita con i raggi mano, che possono essere usati come dispositivi di puntamento sia in C++ che nei progetti. È possibile disegnare un raggio da una mano all'altra e, con alcuni aiuti dalla traccia del raggio non reale, selezionare un ologramma che altrimenti non sarà raggiungibile. 
+Ottenere la posizione della mano funziona per interazioni di chiusura, ad esempio afferrare oggetti o premere i pulsanti. Tuttavia, a volte è necessario lavorare con ologrammi molto disacconti dagli utenti. Questa operazione può essere eseguita con i raggi della mano, che possono essere usati come dispositivi di puntamento sia in C++ che in Blueprints. È possibile disegnare un raggio dalla mano fino a un punto lontano e, con l'aiuto di Unreal Ray Tracing, selezionare un ologramma che altrimenti sarebbe fuori portata. 
 
 > [!IMPORTANT]
-> Poiché tutti i risultati della funzione cambiano ogni frame, sono tutti resi richiamabili. Per ulteriori informazioni sulle funzioni pure e non pure o chiamabili, vedere il GUID utente del progetto nelle [funzioni](https://docs.unrealengine.com/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure).
+> Poiché tutti i risultati della funzione cambiano ogni fotogramma, vengono tutti resi chiamabili. Per altre informazioni sulle funzioni pure e impure o chiamabili, vedere il GUID utente di Blueprint sulle [funzioni](https://docs.unrealengine.com/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure).
 
 [!INCLUDE[](includes/tabs-tracking-hand-ray.md)]
 
 ## <a name="gestures"></a>Movimenti
 
-HoloLens 2 tiene traccia dei movimenti spaziali, il che significa che è possibile acquisire tali movimenti come input. Il rilevamento dei movimenti si basa su un modello di sottoscrizione. Utilizzare la funzione "Configura movimenti" per indicare al dispositivo quali movimenti si desidera rilevare.  Per ulteriori informazioni sui movimenti, vedere il documento [HoloLens 2 Basic Usage](/hololens/hololens2-basic-usage) .
+Il HoloLens 2 traccia i movimenti spaziali, il che significa che è possibile acquisire tali movimenti come input. Il rilevamento movimenti si basa su un modello di sottoscrizione. È consigliabile usare la funzione "Configura movimenti" per indicare al dispositivo i movimenti di cui si vuole tenere traccia.  Per altri dettagli sui movimenti, vedere il documento HoloLens 2 [Basic Usage (Uso di](/hololens/hololens2-basic-usage) base).
 
 [!INCLUDE[](includes/tabs-tracking-gestures.md)]
 

@@ -1,18 +1,18 @@
 ---
 title: Babylon.js per preparare una scena con oggetti 3D di base
-description: Informazioni su come usare babylon.js aggiungere oggetti 3D di base a una scena.
+description: Informazioni su come usare babylon.js e aggiungere oggetti 3D di base a una scena.
 author: bogenera
 ms.author: ayyonet
 ms.date: 03/05/2021
 ms.topic: article
 keywords: realtà mista, javascript, esercitazione, BabylonJS, hololens, realtà mista, UWP, Windows 10, WebXR, web immersive
 ms.localizationpriority: high
-ms.openlocfilehash: 8213c445da9c1bbf0eeb591b7995fb61bc6d5b5f
-ms.sourcegitcommit: 29a43366d5969f1a895bd184ebe272168d9be1e2
+ms.openlocfilehash: 9d74104924aa859f5ab18248a487a7e80392809adb09361e84c5ad386f1321c4
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110584506"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212389"
 ---
 # <a name="tutorial-prepare-a-scene"></a>Esercitazione: Preparare una scena
 
@@ -47,7 +47,7 @@ Nel passaggio precedente dell'esercitazione è stata creata una pagina Web di ba
 
 ## <a name="create-a-scene"></a>Creare una scena
 
-Una scena è la posizione in cui verrà visualizzato tutto il contenuto. Potrebbero essere presenti più scene ed è possibile passare da una scena all'altro. Altre informazioni su [babylon.js scene.](https://doc.babylonjs.com/divingDeeper/scene)
+In una scena verranno visualizzati tutti i contenuti. Potrebbero essere presenti più scene ed è possibile passare da una scena all'altro. Altre informazioni su [babylon.js scene.](https://doc.babylonjs.com/divingDeeper/scene)
 
 1. Aggiungere il tag di script dopo l'elemento HTML canvas e aggiungere il codice seguente per creare una scena color nero:
 

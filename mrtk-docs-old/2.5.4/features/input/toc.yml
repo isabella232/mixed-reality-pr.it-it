@@ -1,6 +1,6 @@
 - name: Controllers
   href: controllers.md
-- name: Crea provider di dati
+- name: Creare provider di dati
   href: create-data-provider.md
 - name: Dettatura
   href: dictation.md
@@ -8,9 +8,9 @@
   href: gaze.md
 - name: Movimenti
   href: gestures.md
-- name: Rilevamento della mano
+- name: Tracciamento manuale
   href: hand-tracking.md
-- name: Come aggiungere near interattività
+- name: Come aggiungere l'interattività vicina
   href: how-to-add-near-interactivity.md
 - name: Azioni di input
   href: input-actions.md
@@ -18,11 +18,11 @@
   href: input-events.md
 - name: Provider di input
   href: input-providers.md
-- name: Stato input
+- name: Stato di input
   href: input-state.md
 - name: Panoramica
   href: overview.md
-- name: Puntatori
+- name: Pointers
   href: pointers.md
 - name: Voce
   href: speech.md

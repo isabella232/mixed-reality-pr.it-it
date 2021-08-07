@@ -1,36 +1,36 @@
 ---
-title: Framework e Runtime
-description: Informazioni correlate a Framework e Runtime in MRTK.
+title: Framework e runtime
+description: Informazioni correlate a Framework e runtime in MRTK.
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 27247a6a6bf8cbe89417a794217da34fcf5e5e34
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ecdfc0c4c45dcf53198879efc181fcfd1340c6472206b2f640bdcae3dcee8ad6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104686474"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187631"
 ---
-# <a name="framework-and-runtime"></a>Framework e Runtime
+# <a name="framework-and-runtime"></a>Framework e runtime
 
 ## <a name="changes-to-the-scene"></a>Modifiche alla scena
 
-Per usare il Toolkit, un'istanza dello script MixedRealityToolkit deve trovarsi nella scena.
-Per aggiungerne uno, usare l'opzione di menu: Mixed Reality Toolkit-> aggiungere alla scena e configurare. Questa istanza è responsabile della registrazione, dell'aggiornamento e dello strappo dei servizi. È anche la scelta del profilo di configurazione.
+Per usare il toolkit, è necessario che nella scena sia presente un'istanza dello script MixedRealityToolkit.
+Per aggiungerne uno, usare l'opzione di menu: Realtà mista Toolkit -> Aggiungi a scena e Configura. Questa istanza è responsabile della registrazione, dell'aggiornamento e dell'operazione di rimozione dei servizi. È anche la posizione in cui viene scelto il profilo di configurazione.
 
-Oltre ad aggiungere il GameObject MRTK alla scena, l'opzione di menu consente anche di:
+Oltre ad aggiungere MRTK GameObject alla scena, l'opzione di menu include anche:
 
-- Aggiungere MixedRealityPlayspace, usato da molti altri componenti di MRTK per ragionare sulle trasformazioni di spazio globale e locale.
-- Spostare la fotocamera principale come elemento figlio di MixedRealityPlayspace (e aggiungere anche un input e guardare gli script correlati alla fotocamera principale, che consentono a Power UnityUI e di guardare le funzionalità di input correlate).
+- Aggiungere MixedRealityPlayspace, usato da molti altri componenti MRTK per eseguire trasformazioni dello spazio globale e locale.
+- Spostare la fotocamera principale come figlio di MixedRealityPlayspace (e aggiungere anche alcuni script correlati all'input e allo sguardo alla fotocamera principale, che consentono di alimentare UnityUI e la funzionalità di input correlata allo sguardo).
 
-## <a name="mixedrealitytoolkit-object-and-runtime"></a>Oggetto MixedRealityToolkit e Runtime
+## <a name="mixedrealitytoolkit-object-and-runtime"></a>Oggetto MixedRealityToolkit e runtime
 
-Il MRTK dispone di diversi servizi di base. Una coordinata tra loro; altre sono indipendenti.
-Tutti condividono lo stesso ciclo di vita, ovvero startup, registrazione, aggiornamento e teardown, e questo ciclo di vita si differenzia dal ciclo di vita monobehavior di Unity. Questo [post di medie dimensioni](https://medium.com/@stephen_hodgson/the-mixed-reality-framework-6fdb5c11feb2) illustra alcuni dei retroscena e la motivazione alla base di questo approccio. MRTK dispone di un singolo oggetto che gestisce la durata e il runtime dei servizi.
+MrTK ha diversi servizi di base. Alcune si coordinano tra loro; altri sono indipendenti.
+Tutti condividono lo stesso ciclo di vita, ad esempio avvio, registrazione, aggiornamento e teardown, e questo ciclo di vita si distingue dal ciclo di vita MonoBehaviour di Unity. Questo [post medio illustra](https://medium.com/@stephen_hodgson/the-mixed-reality-framework-6fdb5c11feb2) alcune delle informazioni di base e della motivazione alla base di questo approccio. MRTK ha un singolo oggetto che gestisce la durata e il runtime dei servizi.
 
 Questa entità garantisce che:
 
-- all'avvio del gioco, l'individuazione e l'inizializzazione dei servizi vengono eseguite in un ordine predefinito.
-- fornisce un meccanismo per la registrazione dei servizi (ad esempio "supporto di questo servizio!") e per altri chiamanti per ottenere i servizi.
-- fornisce le chiamate Update ()/LateUpdate () e le invia ai vari servizi, ad esempio tramite UpdateAllServices/LateUpdateAllServices.
+- all'avvio del gioco, l'individuazione e l'inizializzazione dei servizi avviene in un ordine predefinito.
+- fornisce un meccanismo che consente ai servizi di registrarsi (ad esempio"Supporto questo servizio!") e per altri chiamanti di ottenere informazioni su tali servizi.
+- fornisce le chiamate Update()/LateUpdate() e le inoltra ai vari servizi, ad esempio tramite UpdateAllServices/LateUpdateAllServices.

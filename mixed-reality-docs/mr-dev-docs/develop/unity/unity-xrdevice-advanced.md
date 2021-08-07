@@ -5,33 +5,33 @@ author: vladkol
 ms.author: vladkol
 ms.date: 02/25/2021
 ms.topic: article
-keywords: Unity, realtà mista, nativa, xrdevice, spatialcoordinatesystem, holographicframe, holographiccamera, ispatialcoordinatesystem, iholographicframe, iholographiccamera, getnativeptr, auricolare realtà mista, headset di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: c202c698fe55bcd3215850579166ebcb8d4b8910
-ms.sourcegitcommit: 441ef99e6090081c6cd3aa88ed21e13e941f0cc6
+keywords: unity, realtà mista, nativo, xrdevice, spatialcoordinatesystem, olographicframe, olographiccamera, ispatialcoordinatesystem, iholographicframe, iholographiccamera, getnativeptr, visore VR di realtà mista, visore VR windows mixed reality, visore VR di realtà virtuale
+ms.openlocfilehash: 63ee9c33a972cb918f141df3b4c1608a561b96dc5c37910deb77b089f7be69b8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102475075"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208403"
 ---
-# <a name="mixed-reality-native-interop-in-unity"></a>Interoperabilità nativa in realtà mista in Unity
+# <a name="mixed-reality-native-interop-in-unity"></a>Interoperabilità nativa di realtà mista in Unity
 
-Ogni app di realtà mista [ottiene un HolographicSpace prima di iniziare a](../native/getting-a-holographicspace.md) ricevere i dati della fotocamera e i frame di rendering. In Unity, il motore esegue automaticamente questi passaggi, gestendo gli oggetti olografici e aggiornando internamente come parte del ciclo di rendering.
+Ogni app di realtà [mista ottiene un holographicSpace prima](../native/getting-a-holographicspace.md) di iniziare a ricevere i dati della fotocamera e i fotogrammi di rendering. In Unity il motore si occupa automaticamente di questi passaggi, gestendo gli oggetti olografici e aggiornando internamente come parte del ciclo di rendering.
 
-Negli scenari avanzati potrebbe tuttavia essere necessario ottenere l'accesso agli oggetti nativi sottostanti, ad esempio <a href="/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> e <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>corrente.
+Tuttavia, negli scenari avanzati potrebbe essere necessario ottenere l'accesso agli oggetti nativi sottostanti, ad esempio <a href="/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> e <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame corrente.</a>
 
 [!INCLUDE[](includes/unity-native-ptrs.md)]
 
-### <a name="unmarshaling-native-pointers"></a>Unmarshalling di puntatori nativi
+### <a name="unmarshaling-native-pointers"></a>Unmarshaling dei puntatori nativi
 
-Dopo avere ottenuto `IntPtr` da uno dei metodi precedenti (non necessario per MRTK), usare i frammenti di codice seguenti per effettuare il marshalling degli oggetti gestiti.
+Dopo aver ottenuto da uno dei metodi precedenti (non necessario per MRTK), usare i frammenti di codice seguenti per effettuarne il `IntPtr` marshalling in oggetti gestiti.
 
-Se si usa [Microsoft. Windows. MixedReality. DotNetWinRT](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT), è possibile costruire un oggetto gestito da un puntatore nativo usando il `FromNativePtr()` Metodo:
+Se si usa [Microsoft.Windows. MixedReality.DotNetWinRT,](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT)è possibile costruire un oggetto gestito da un puntatore nativo usando il `FromNativePtr()` metodo :
 
 ```cs
 var worldOrigin = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(spatialCoordinateSystemPtr);
 ```
 
-In caso contrario, utilizzare `Marshal.GetObjectForIUnknown()` ed eseguire il cast al tipo desiderato:
+In caso contrario, `Marshal.GetObjectForIUnknown()` usare ed eseguire il cast al tipo desiderato:
 
 ```cs
 #if ENABLE_WINMD_SUPPORT
@@ -41,7 +41,7 @@ var worldOrigin = Marshal.GetObjectForIUnknown(spatialCoordinateSystemPtr) as Wi
 
 ### <a name="converting-between-coordinate-systems"></a>Conversione tra sistemi di coordinate
 
-Unity usa un sistema di coordinate di sinistra, mentre le API di percezione di Windows usano sistemi di coordinate di destra. Per eseguire la conversione tra queste due convenzioni, è possibile usare gli helper seguenti:
+Unity usa un sistema di coordinate mancino, mentre le WINDOWS Perception usano sistemi di coordinate destro. Per eseguire la conversione tra queste due convenzioni, è possibile usare gli helper seguenti:
 
 ```cs
 namespace NumericsConversion
@@ -67,14 +67,14 @@ namespace NumericsConversion
 }
 ```
 
-### <a name="using-holographicframe-native-data"></a>Uso di dati nativi HolographicFrame
+### <a name="using-holographicframe-native-data"></a>Uso dei dati nativi di HolographicFrame
 
 > [!NOTE]
-> La modifica dello stato degli oggetti nativi ricevuti tramite HolographicFrameNativeData può causare un comportamento imprevedibile e gli artefatti di rendering, soprattutto se Unity ne causa anche lo stesso stato.  Ad esempio, non è necessario chiamare HolographicFrame. UpdateCurrentPrediction. in caso contrario, la stima di pose che Unity esegue il rendering con tale frame non sarà sincronizzata con la funzione prevista da Windows, riducendo la [stabilità dell'ologramma](../platform-capabilities-and-apis/hologram-stability.md).
+> La modifica dello stato degli oggetti nativi ricevuti tramite HolographicFrameNativeData può causare un comportamento imprevedibile e artefatti di rendering, soprattutto se Unity ha anche motivi per lo stesso stato.  Ad esempio, non è consigliabile chiamare HolographicFrame.UpdateCurrentPrediction, altrimenti la stima della posizione di cui Unity esegue il rendering con tale frame non sarà sincronizzata con la posizione prevista da Windows, riducendo così la stabilità [dell'ologramma.](../platform-capabilities-and-apis/hologram-stability.md)
 
-Se è necessario accedere alle interfacce native a scopo di rendering o di debug, usare i dati di HolographicFrameNativeData nei plug-in nativi o nel codice C#.
+Se è necessario accedere alle interfacce native a scopo di rendering o debug, usare i dati di HolographicFrameNativeData nei plug-in nativi o nel codice C#.
 
-Di seguito è riportato un esempio di come è possibile usare HolographicFrameNativeData per ottenere la stima del frame corrente per il tempo del fotone usando le estensioni di XR SDK.
+Ecco un esempio di come è possibile usare HolographicFrameNativeData per ottenere la stima del fotogramma corrente per il tempo fotone usando le estensioni XR SDK.
 
 ```cs
 using System;

@@ -2,11 +2,11 @@
   href: dialog.md
 - name: Ancora
   href: dock.md
-- name: Coach mano
+- name: Hand Coach
   href: hand-coach.md
-- name: Servizio fisico della mano
+- name: Servizio di fisica delle mani
   href: hand-physics-service.md
 - name: Tastiera di realtà mista
   href: mixed-reality-keyboard.md
-- name: Pulse shader
+- name: Pulse Shader
   href: pulse-shader.md

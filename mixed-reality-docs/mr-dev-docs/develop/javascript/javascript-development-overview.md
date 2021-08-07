@@ -1,17 +1,17 @@
 ---
-title: Panoramica dello sviluppo javascript
+title: Panoramica dello sviluppo in JavaScript
 description: Panoramica dello sviluppo di realtà mista con JavaScript per visori VR immersive Web, per dispositivi mobili e Windows.
 author: yonet
 ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
 keywords: JavaScript, WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mixed reality, web vr, web xr, web mr, web ar, 360, 360 video, 360 video, 360 foto, 360 foto, 360 foto, 360 contenuti, web immersive, immersive-web, IW, immersiveweb
-ms.openlocfilehash: 311241d9dec6f5d086a45766c040b1b2b9eb4128
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: de6314b5651740eca23a9078d4b05e1d92344d1742ea433d7b924cbde4457b8c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394345"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210507"
 ---
 # <a name="javascript-development-overview"></a>Panoramica dello sviluppo con JavaScript
 

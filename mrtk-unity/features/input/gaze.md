@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, sguardo,
-ms.openlocfilehash: 95dad85ca8154d35f73906b53019d3a52ced546f
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: a9d97ef73a7014a46001cbd42281c5ab28f6cf425dfd7605ce5b3c8c7fc45198
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176911"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208434"
 ---
 # <a name="gaze"></a>Sguardo fisso
 
@@ -24,7 +24,7 @@ Lo sguardo della testa è in genere associato HoloLens interazioni di stile 1 ch
 
 ## <a name="eye-gaze"></a>Tracciamento oculare
 
-Questo tipo di sguardo si basa sul punto in cui gli occhi dell'utente guardano. Lo sguardo fisso è presente solo nei sistemi che supportano il tracciamento oculare. Per altri [dettagli su come](eye-tracking/eye-tracking-main.md) usare lo sguardo fisso, vedere la documentazione relativa al tracciamento oculare.
+Questo tipo di sguardo si basa sulla posizione in cui sono guardati gli occhi dell'utente. Lo sguardo fisso è presente solo nei sistemi che supportano il tracciamento oculare. Per altri [dettagli su come](eye-tracking/eye-tracking-main.md) usare lo sguardo fisso, vedere la documentazione relativa al tracciamento oculare.
 
 ## <a name="gazeprovider"></a>GazeProvider
 
@@ -33,14 +33,14 @@ La funzionalità dello sguardo (testa e occhio) viene fornita da [GazeProvider](
 ![Punto di ingresso di configurazione dello sguardo fisso](../images/input/GazeConfigurationEntrypoint.png)
 
 Analogamente ad altre origini di input, il provider dello sguardo fisso interagisce con gli oggetti nella scena tramite l'uso di un puntatore (vedere questo documento per [informazioni sui puntatori).](../../architecture/controllers-pointers-and-focus.md)
-Nel caso del provider di sguardo fisso, il relativo puntatore viene implementato tramite `InternalGazePointer` e non viene configurato tramite un profilo.
+Nel caso del provider di sguardo fisso, il puntatore viene implementato tramite `InternalGazePointer` e non viene configurato tramite un profilo.
 
-È possibile sostituire lo stock GazeProvider con un'implementazione alternativa modificando il tipo di *provider gaze* in modo da fare riferimento a una classe diversa che implementa [IMixedRealityGazeProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGazeProvider) e [IMixedRealityEyeGazeProvider.](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityEyeGazeProvider)
+È possibile sostituire lo stock GazeProvider con un'implementazione alternativa modificando il tipo di *provider gaze* in modo che punti a una classe diversa che implementa [IMixedRealityGazeProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGazeProvider) e [IMixedRealityEyeGazeProvider.](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityEyeGazeProvider)
 È in genere consigliabile usare lo stock GazeProvider (e i problemi di archiviazione in durante la ricerca di bug) perché la ri-implementazione di GazeProvider non è semplice.
 
 ### <a name="alternative-platform-provided-gaze-poses"></a>Posizioni di sguardo alternative fornite dalla piattaforma
 
-Per impostazione predefinita, MRTK GazeProvider usa il centro della cornice della fotocamera come origine dello sguardo. Alcune piattaforme, ad esempio Windows Mixed Reality su HoloLens 2, forniscono una posizione dello sguardo fisso definita in alternativa. Questa operazione viene gestita tramite `Use Head Gaze Override` l'impostazione nelle impostazioni dello sguardo. Se abilitata, verrà usata la sostituzione dello sguardo alternativo. Se disabilitata, verrà usata l'origine predefinita del centro frame. In particolare, per HoloLens 2, l'angolo dello sguardo fisso verrà aumentato di diversi gradi per motivi di comfort dell'utente nell'uso della testa per il targeting.
+Per impostazione predefinita, MRTK GazeProvider usa il centro della cornice della fotocamera come origine dello sguardo. Alcune piattaforme, ad esempio Windows Mixed Reality su HoloLens 2, forniscono una posizione dello sguardo in alternativa definita. Questa operazione viene gestita tramite `Use Head Gaze Override` l'impostazione nelle impostazioni dello sguardo. Se abilitata, verrà usata la sostituzione dello sguardo alternativo. Se disabilitata, verrà usata l'origine predefinita del centro frame. In particolare, per HoloLens 2, l'angolo dello sguardo fisso verrà aumentato di diversi gradi per motivi di comfort dell'utente nell'uso della testa per il targeting.
 
 ## <a name="usage"></a>Utilizzo
 
