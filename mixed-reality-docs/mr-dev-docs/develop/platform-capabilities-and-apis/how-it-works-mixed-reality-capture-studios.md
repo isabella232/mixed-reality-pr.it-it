@@ -1,28 +1,28 @@
 ---
 title: 'Come funziona: Mixed Reality Capture Studio'
-description: Scopri come funziona la tecnologia straordinaria alla base dell'acquisizione video olografica di 360 gradi di Microsoft.
+description: Scopri come funziona la straordinaria tecnologia alla base dell'acquisizione video olografica a 360 gradi di Microsoft.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: video volumetrico, video olografico, video in realtà mista, ologramma, auricolare a realtà mista, cuffia a realtà mista di Windows, auricolare realtà virtuale
-ms.openlocfilehash: 83eba6e0dc3099c85a2db40512c9cae8f5e679c2
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+keywords: video volumetrico, video olografico, video di realtà mista, ologramma, visore VR di realtà mista, visore VR windows di realtà mista, visore VR di realtà virtuale
+ms.openlocfilehash: f8e6c158f3ae5f774e31574bed0c3b50e0e1a7084427a69373c14845d18e72e6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677820"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223596"
 ---
 # <a name="how-it-works---mixed-reality-capture-studios"></a>Come funziona: Mixed Reality Capture Studio
 
-Microsoft Mixed Reality Capture Studios consente agli autori di contenuti di creare ologrammi a 360 gradi da oggetti reali che possono essere usati nelle applicazioni in realtà aumentata, realtà virtuale e schermate 2D. Per altre informazioni sulle potenzialità dell'uso di uno studio di acquisizione realtà mista per vivere la realtà mista, [visitare il sito web ufficiale](https://www.microsoft.com//mixed-reality/capture-studios).
+Microsoft Acquisizione realtà mista Studio consente agli autori di contenuti di creare ologrammi a 360 gradi da soggetti reali che possono essere utilizzati nelle applicazioni su schermi di realtà aumentata, realtà virtuale e 2D. Per altre informazioni sul potenziale dell'uso di Acquisizione realtà mista Studio per dare vita alla realtà mista, [visitare il sito Web ufficiale](https://www.microsoft.com//mixed-reality/capture-studios).
 
-Per scoprire di più sulla tecnologia alla base di studio e su come viene trasformata in un'ampia gamma di dispositivi, Guarda il video seguente e leggi il white paper tecnico "video di alta qualità Free-Viewpoint video", presentato in origine in SIGGRAPH 2015.
+Per altre informazioni sulla tecnologia alla base dello studio e su come è stata creata su una gamma di dispositivi, guardare il video seguente e leggere il white paper tecnico "High-Quality Streamable Free-Viewpoint Video", presentato in origine al Siggraph 2015.
 <br>
 <br>
 >[!VIDEO https://www.youtube.com/embed/OzIo8OTZFy0]
 
 
-**Whitepaper**<br>
+**Whitepaper:**<br>
 ![Anteprima del white paper](images/siggraph-whitepaper-thumb-200px.png)<br>
-[Scarica il white paper "video di alta qualità Free-Viewpoint streaming"](images/high-quality-streamable-free-viewpoint-video.pdf)
+[Scaricare il white paper "High-Quality Streamable Free-Viewpoint Video"](images/high-quality-streamable-free-viewpoint-video.pdf)

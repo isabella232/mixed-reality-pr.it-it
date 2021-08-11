@@ -1,89 +1,89 @@
 ---
 title: Creazione di un progetto DirectX olografico
-description: Informazioni su come creare una nuova app DirectX olografica basata sul modello di app per la realtà mista di Windows.
+description: Informazioni su come creare una nuova app DirectX olografica basata sul modello Windows Mixed Reality app.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Realtà mista di Windows, app olografica, nuova app, app UWP, app modello, ologrammi, nuovo progetto, procedura dettagliata, download, codice di esempio, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: ffc0da73cc93214bb5bef9142797557c6142b479
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality, app olografica, nuova app, app UWP, app modello, ologrammi, nuovo progetto, procedura dettagliata, download, codice di esempio, visore per la realtà mista, visore windows mixed reality, visore per la realtà virtuale
+ms.openlocfilehash: 7de7d73ec1e5fd8abde6d4822c86628e090fdf0cf89769fc9ef21311ff1aff15
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581051"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200174"
 ---
 # <a name="creating-a-holographic-directx-project"></a>Creazione di un progetto DirectX olografico
 
 > [!NOTE]
-> Questo articolo si riferisce alle API native di WinRT legacy.  Per i nuovi progetti di app native, è consigliabile usare l' **[API OpenXR](openxr-getting-started.md)**.
+> Questo articolo è correlato alle API native WinRT legacy.  Per i nuovi progetti di app native, è consigliabile usare **[l'API OpenXR](openxr-getting-started.md)**.
 
-Un'app olografica creata per un HoloLens sarà un' <a href="/windows/uwp/get-started/universal-application-platform-guide" target="_blank">app piattaforma UWP (Universal Windows Platform) (UWP)</a>.  Se la destinazione è costituita da cuffie di realtà mista di Windows desktop, è possibile creare un'app UWP o un'app Win32.
+Un'app olografica creata per un HoloLens sarà <a href="/windows/uwp/get-started/universal-application-platform-guide" target="_blank">un'app UWP (Universal Windows Platform).</a>  Se la destinazione è Windows Mixed Reality visori, è possibile creare un'app UWP o un'app Win32.
 
-Il modello di app UWP olografico DirectX 11 è molto simile al modello di app UWP di DirectX 11. Il modello include un ciclo di programma, una classe **DeviceResources** per gestire il dispositivo e il contesto Direct3D e una classe renderer di contenuto semplificata. Dispone anche di un <a href="/uwp/api/windows.applicationmodel.core.iframeworkview" target="_blank">IFrameworkView</a>, proprio come qualsiasi altra app UWP.
+Il modello di app UWP olografica DirectX 11 è molto simile al modello di app UWP DirectX 11. Il modello include un ciclo di programma, una **classe DeviceResources** per gestire il contesto e il dispositivo Direct3D e una classe renderer di contenuto semplificata. Ha anche un <a href="/uwp/api/windows.applicationmodel.core.iframeworkview" target="_blank">IFrameworkView,</a>proprio come qualsiasi altra app UWP.
 
-L'app per la realtà mista, tuttavia, presenta alcune funzionalità aggiuntive che non sono presenti in una tipica app UWP Direct3D. Il modello di app per la realtà mista di Windows può:
-* Gestire le risorse del dispositivo Direct3D associate a fotocamere olografiche.
-* Recuperare i buffer back della fotocamera dal sistema. Nel caso di Direct3D12, creare risorse buffer di back-out olografico e gestire la durata delle risorse.
-* Gestire l'input di [sguardi](../../design/gaze-and-commit.md) e riconoscere un [movimento](../../design/gaze-and-commit.md#composite-gestures).
-* Passa alla modalità di rendering stereo a schermo intero.
+L'app di realtà mista, tuttavia, include alcune funzionalità aggiuntive che non sono presenti in una tipica app UWP Direct3D. Il modello Windows Mixed Reality'app può:
+* Gestire le risorse del dispositivo Direct3D associate alle fotocamere olografiche.
+* Recuperare i buffer indietro della fotocamera dal sistema. Nel caso di Direct3D12, creare risorse del buffer nascosto olografico e gestire la durata delle risorse.
+* Gestire [l'input](../../design/gaze-and-commit.md) dello sguardo e riconoscere un [movimento](../../design/gaze-and-commit.md#composite-gestures).
+* Passare alla modalità di rendering stereo a schermo intero.
 
 ## <a name="how-do-i-get-started"></a>Come iniziare?
 
-[Installare innanzitutto gli strumenti](../install-the-tools.md)seguendo le istruzioni riportate in download di Visual Studio 2019 e dei modelli di app per la realtà mista di Windows. I modelli di app per la realtà mista sono disponibili in Visual Studio Marketplace come [download Web](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)oppure installarli come estensione tramite l'interfaccia utente di Visual Studio.
+Installare [prima gli strumenti](../install-the-tools.md)seguendo le istruzioni per il download Visual Studio 2019 e i modelli di app Windows Mixed Reality app. I modelli di app di realtà mista sono disponibili nel marketplace Visual Studio come [download Web](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)o installandoli come estensione tramite l'interfaccia Visual Studio interfaccia utente.
 
-A questo punto si è pronti per creare l'app per la realtà mista di Windows DirectX 11. Si noti che per rimuovere il contenuto di esempio, impostare come commento la direttiva per il preprocessore **DRAW_SAMPLE_CONTENT** in *PCH. h*.
+A questo punto è possibile creare l'app DirectX 11 Windows Mixed Reality! Si noti che per rimuovere il contenuto di esempio, impostare come commento **DRAW_SAMPLE_CONTENT** direttiva del preprocessore in *pch.h*.
 
 ## <a name="creating-a-uwp-project"></a>Creazione di un progetto UWP
 
-Una volta installati gli strumenti,] (.. /install-the-tools.md) è quindi possibile creare un progetto UWP DirectX olografico.
+Dopo l'installazione degli strumenti,](.. /install-the-tools.md) è quindi possibile creare un progetto UWP DirectX olografico.
 
 Per creare un nuovo progetto in Visual Studio 2019:
 1. Avviare **Visual Studio**.
-2. Nella sezione **Introduzione** a destra selezionare **Crea un nuovo progetto**.
-3. Nei menu a discesa della finestra di dialogo **Crea un nuovo progetto** selezionare **C++**, **realtà mista di Windows** e **UWP**.
-4. Selezionare l' **app olografica DirectX 11 (Windows universale) (C++/WinRT)**.
-   ![Screenshot del modello di progetto di app UWP DirectX 11 C++/WinRT in Visual Studio 2019](images/holographic-directx-app-cpp-new-project-2019.png)<br>
-   *Modello di progetto app UWP DirectX 11 C++/WinRT in Visual Studio 2019*
+2. Nella sezione **Informazioni di base** a destra selezionare **Crea un nuovo progetto**.
+3. Nei menu a discesa della  finestra di dialogo Crea un nuovo progetto selezionare **C++**, **Windows Mixed Reality** e **UWP**.
+4. Selezionare **Holographic DirectX 11 App (Universal Windows) (C++/WinRT).**
+   ![Screenshot del modello di progetto di app UWP Holographic DirectX 11 C++/WinRT in Visual Studio 2019](images/holographic-directx-app-cpp-new-project-2019.png)<br>
+   *Modello di progetto di app UWP Holographic DirectX 11 C++/WinRT in Visual Studio 2019*
    >[!IMPORTANT]
-   >Verificare che il nome del modello di progetto includa "(C++/WinRT)".  In caso contrario, è installata una versione precedente dei modelli di progetto olografici.  Per ottenere i modelli di progetto più recenti, [installarli](../install-the-tools.md) come estensione di Visual Studio 2019.
+   >Assicurarsi che il nome del modello di progetto includa "(C++/WinRT)".  In caso contrario, è installata una versione precedente dei modelli di progetto olografici.  Per ottenere i modelli di progetto più recenti, [installarli](../install-the-tools.md) come estensione per Visual Studio 2019.
 5. Selezionare **Avanti**.
-5. Immettere le caselle di testo **nome progetto** e **percorso** e selezionare o toccare **Crea**. Il progetto di app olografico viene creato.
-6. Per lo sviluppo destinato solo a HoloLens 2, verificare che la versione di **destinazione** e la **versione minima** siano impostate su **Windows 10, versione 1903**.  Se si fa riferimento anche a HoloLens (1st Gen) o alle cuffie Desktop Mixed Reality di Windows, è possibile impostare la **versione minima** su **Windows 10, versione 1809**. Quando si usano le nuove funzionalità di HoloLens 2, è necessario che nel codice siano presenti <a href="/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">controlli adattivi della versione</a> .
-   ![Screenshot dell'impostazione di Windows 10, versione 1903 come versione di destinazione e minima](images/new-uwp-project.png)<br>
-   *Impostazione di **Windows 10, versione 1903** come versione di destinazione e minima*
+5. Compilare le **caselle Project nome** e **Posizione** e selezionare o toccare **Crea**. Viene creato il progetto di app olografica.
+6. Per lo sviluppo con destinazione HoloLens 2,  assicurarsi  che la versione di destinazione e la versione minima siano impostate su **Windows 10 versione 1903.**  Se si ha come destinazione anche HoloLens visori per dispositivi Windows Mixed Reality desktop, è  possibile impostare Versione minima su **Windows 10, versione 1809**. Ciò richiederà alcuni <a href="/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">controlli adattivi della</a> versione nel codice quando si usano nuove funzionalità di HoloLens 2.
+   ![Screenshot dell'impostazione Windows 10 versione 1903 come versione minima e di destinazione](images/new-uwp-project.png)<br>
+   *Impostazione **Windows 10 versione 1903** come versione di destinazione e minima*
    >[!IMPORTANT]
-   >Se non viene visualizzata l'opzione **Windows 10, versione 1903** , non è installata la versione più recente di Windows 10 SDK.  Per visualizzare questa opzione, <a href="https://developer.microsoft.com/windows/downloads/windows-10-sdk" target="_blank">installare la versione 10.0.18362.0 o successiva di Windows 10 SDK</a>.
+   >Se l'opzione Windows 10, versione **1903,** non è installata la versione Windows 10 SDK più recente.  Per visualizzare questa opzione, installare la versione <a href="https://developer.microsoft.com/windows/downloads/windows-10-sdk" target="_blank">10.0.18362.0</a>o successiva di Windows 10 SDK .
 
 Per creare un nuovo progetto in Visual Studio 2017:
 1. Avviare **Visual Studio**.
-2. Scegliere **nuovo** dal menu **file** e scegliere **progetto** dal menu di scelta rapida. Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
-3. Espandere **installato** a sinistra ed espandere il nodo **Visual C++** Language.
-4. Passare al nodo **universale di Windows > olografico** e selezionare l' **app olografica DirectX 11 (Windows universale) (C++/WinRT)**.
-   ![Screenshot del modello di progetto di app UWP DirectX 11 C++/WinRT in Visual Studio 2017](images/holographic-directx-app-cpp-new-project.png)<br>
-   *Modello di progetto app UWP DirectX 11 C++/WinRT in Visual Studio 2017*
+2. Scegliere **Nuovo** dal menu  File e selezionare Project **dal** menu di scelta rapida. Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
+3. Espandere **Installato** a sinistra ed espandere il **nodo Visual C++** lingua.
+4. Passare al nodo **Windows Universal > Holographic** e selezionare **Holographic DirectX 11 App (Universal Windows) (C++/WinRT).**
+   ![Screenshot del modello di progetto di app UWP Holographic DirectX 11 C++/WinRT in Visual Studio 2017](images/holographic-directx-app-cpp-new-project.png)<br>
+   *Modello di progetto di app UWP Holographic DirectX 11 C++/WinRT in Visual Studio 2017*
    >[!IMPORTANT]
-   >Verificare che il nome del modello di progetto includa "(C++/WinRT)".  In caso contrario, è installata una versione precedente dei modelli di progetto olografici.  Per ottenere i modelli di progetto più recenti, [installarli](../install-the-tools.md) come estensione di Visual Studio 2017.
-5. Immettere le caselle di testo **nome** e **percorso** e selezionare o toccare **OK**. Il progetto di app olografico viene creato.
-6. Per lo sviluppo destinato solo a HoloLens 2, verificare che la versione di **destinazione** e la **versione minima** siano impostate su **Windows 10, versione 1903**.  Se si fa riferimento anche a HoloLens (1st Gen) o alle cuffie Desktop Mixed Reality di Windows, è possibile impostare la **versione minima** su **Windows 10, versione 1809**. Quando si usano le nuove funzionalità di HoloLens 2, è necessario che nel codice siano presenti <a href="/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">controlli adattivi della versione</a> .
-   ![Screenshot dell'impostazione di Windows 10, versione 1903 come versione di destinazione e minima](images/new-uwp-project.png)<br>
-   *Impostazione di **Windows 10, versione 1903** come versione di destinazione e minima*
+   >Assicurarsi che il nome del modello di progetto includa "(C++/WinRT)".  In caso contrario, è installata una versione precedente dei modelli di progetto olografici.  Per ottenere i modelli di progetto più recenti, [installarli](../install-the-tools.md) come estensione per Visual Studio 2017.
+5. Compilare le **caselle di** **testo Nome** e Posizione e selezionare o toccare **OK.** Viene creato il progetto di app olografica.
+6. Per lo sviluppo con destinazione HoloLens 2,  assicurarsi  che la versione di destinazione e la versione minima siano impostate su **Windows 10 versione 1903.**  Se si ha come destinazione anche HoloLens visori per dispositivi Windows Mixed Reality desktop, è  possibile impostare Versione minima su **Windows 10, versione 1809**. Ciò richiederà alcuni <a href="/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">controlli adattivi della</a> versione nel codice quando si usano nuove funzionalità di HoloLens 2.
+   ![Screenshot dell'impostazione Windows 10 versione 1903 come versione minima e di destinazione](images/new-uwp-project.png)<br>
+   *Impostazione **Windows 10 versione 1903** come versione di destinazione e minima*
    >[!IMPORTANT]
-   >Se non viene visualizzata l'opzione **Windows 10, versione 1903** , non è installata la versione più recente di Windows 10 SDK.  Per visualizzare questa opzione, <a href="https://developer.microsoft.com/windows/downloads/windows-10-sdk" target="_blank">installare la versione 10.0.18362.0 o successiva di Windows 10 SDK</a>.
+   >Se l'opzione Windows 10, versione **1903,** non è installata la versione Windows 10 SDK più recente.  Per visualizzare questa opzione, installare la versione <a href="https://developer.microsoft.com/windows/downloads/windows-10-sdk" target="_blank">10.0.18362.0</a>o successiva di Windows 10 SDK .
 
-Il modello genera un progetto con <a href="/windows/uwp/cpp-and-winrt-apis/" target="_blank">c++/WinRT</a>, una proiezione del linguaggio c++ 17 delle API Windows Runtime che supporta qualsiasi compilatore c++ 17 conforme agli standard.  Il progetto Mostra come creare un cubo con blocco globale posizionato a 2 metri dall'utente. L'utente può [toccare](../../design/gaze-and-commit.md#composite-gestures) o premere un pulsante sul controller per posizionare il cubo in una posizione diversa specificata dallo [sguardo](../../design/gaze-and-commit.md)dell'utente. È possibile modificare questo progetto per creare qualsiasi app di realtà mista.
+Il modello genera un progetto <a href="/windows/uwp/cpp-and-winrt-apis/" target="_blank">usando C++/WinRT</a>, una proiezione in linguaggio C++17 delle API di runtime di Windows che supporta qualsiasi compilatore C++17 conforme agli standard.  Il progetto illustra come creare un cubo bloccato dal mondo posizionato a 2 metri dall'utente. L'utente [può toccare o](../../design/gaze-and-commit.md#composite-gestures) premere un pulsante sul controller per posizionare il cubo in una posizione diversa specificata dallo sguardo dell'utente. [](../../design/gaze-and-commit.md) È possibile modificare questo progetto per creare qualsiasi app di realtà mista.
 
-È anche possibile creare un nuovo progetto usando il modello di progetto olografico di **Visual C#** , basato su SharpDX.  Se il progetto C# olografico non è stato avviato dal modello di app olografico di Windows, è necessario copiare il file MS. fxcompile. targets da un progetto di modello C# per la realtà mista di Windows e importarlo nel file con estensione csproj per compilare i file HLSL aggiunti al progetto. Un modello Direct3D 12 viene fornito anche nell'estensione modelli di app per la realtà mista di Windows in Visual Studio.
+È anche possibile creare un nuovo progetto usando il modello di progetto olografico di **Visual C#,** basato su SharpDX.  Se il progetto C# olografico non è stato avviato dal modello di app holographic di Windows, è necessario copiare il file ms.fxcompile.targets da un progetto modello C# Windows Mixed Reality e importarlo nel file con estensione csproj per compilare i file HLSL aggiunti al progetto. Un modello Direct3D 12 viene fornito anche nell'estensione Windows Mixed Reality di modelli di app per Visual Studio.
 
-Vedere [uso di Visual Studio per distribuire ed eseguire il debug](../platform-capabilities-and-apis/using-visual-studio.md) per informazioni su come compilare e distribuire l'esempio in HOLOLENS, PC con dispositivo immersivo collegato o emulatore.
+Per [informazioni su come compilare](../platform-capabilities-and-apis/using-visual-studio.md) e distribuire l'esempio nel HoloLens, nel PC con dispositivo immersivo collegato o in un emulatore, vedere Using Visual Studio to deploy and debug (Uso di Visual Studio per distribuire ed eseguire il debug).
 
-Nelle altre istruzioni riportate di seguito si presuppone che si stia usando C++ per compilare l'app.
+Le altre istruzioni riportate di seguito presuppongono che si sta usando C++ per compilare l'app.
 
 ### <a name="uwp-app-entry-point"></a>Punto di ingresso dell'app UWP
 
-L'app UWP olografica viene avviata nella funzione **wWinMain** in AppView. cpp. La funzione **wWinMain** crea il <a href="/uwp/api/windows.applicationmodel.core.iframeworkview" target="_blank">IFrameworkView</a> dell'app e avvia il <a href="/uwp/api/windows.applicationmodel.core.coreapplication" target="_blank">CoreApplication</a> .
+L'app UWP olografica viene avviata nella **funzione wWinMain** in AppView.cpp. La **funzione wWinMain** crea <a href="/uwp/api/windows.applicationmodel.core.iframeworkview" target="_blank">l'oggetto IFrameworkView</a> dell'app e avvia <a href="/uwp/api/windows.applicationmodel.core.coreapplication" target="_blank">CoreApplication</a> con esso.
 
-Da **AppView. cpp**:
+Da **AppView.cpp**:
 
 ```cpp
 // The main function bootstraps into the IFrameworkView.
@@ -95,19 +95,19 @@ int __stdcall wWinMain(HINSTANCE, HINSTANCE, PWSTR, int)
 }
 ```
 
-Da questo punto in poi, la classe AppView gestisce l'interazione con gli eventi di input di Windows Basic, gli eventi e la messaggistica CoreWindow e così via. Creerà anche il HolographicSpace usato dall'app.
+Da quel momento in poi, la classe AppView gestisce l'interazione con Windows di input di base, gli eventi CoreWindow e la messaggistica e così via. Creerà anche l'holographicSpace usato dall'app.
 
 ## <a name="creating-a-win32-project"></a>Creazione di un progetto Win32
 
-Il modo più semplice per iniziare a creare un progetto olografico Win32 consiste nell'adattare l' <a href="https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/BasicHologram" target="_blank">esempio Win32 *BasicHologram*</a>.
+Il modo più semplice per iniziare a creare un progetto olografico Win32 è adattare l'esempio <a href="https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/BasicHologram" target="_blank"> *Win32 BasicHologram*</a>.
 
-Questo esempio Win32 USA <a href="/windows/uwp/cpp-and-winrt-apis/" target="_blank">C++/WinRT</a>, una proiezione del linguaggio c++ 17 delle API Windows Runtime che supporta qualsiasi compilatore c++ 17 conforme agli standard.  Il progetto Mostra come creare un cubo con blocco globale posizionato a 2 metri dall'utente. L'utente può premere un pulsante sul controller per posizionare il cubo in una posizione diversa specificata dallo [sguardo](../../design/gaze-and-commit.md)dell'utente. È possibile modificare questo progetto per creare qualsiasi app di realtà mista.
+Questo esempio Win32 usa <a href="/windows/uwp/cpp-and-winrt-apis/" target="_blank">C++/WinRT,</a>una proiezione in linguaggio C++17 delle API di runtime di Windows che supporta qualsiasi compilatore C++17 conforme agli standard.  Il progetto illustra come creare un cubo bloccato dal mondo posizionato a 2 metri dall'utente. L'utente può premere un pulsante sul controller per posizionare il cubo in una posizione diversa specificata dallo sguardo [dell'utente.](../../design/gaze-and-commit.md) È possibile modificare questo progetto per creare qualsiasi app di realtà mista.
 
 ### <a name="win32-app-entry-point"></a>Punto di ingresso dell'app Win32
 
-L'app Win32 olografica viene avviata nella funzione **wWinMain** in AppMain. cpp. La funzione **wWinMain** crea l'oggetto HWND dell'app e avvia il ciclo di messaggi.
+L'app Win32 olografica viene avviata nella **funzione wWinMain** in AppMain.cpp. La **funzione wWinMain** crea HWND dell'app e avvia il ciclo di messaggi.
 
-Da **AppMain. cpp**:
+Da **AppMain.cpp**:
 
 ```cpp
 int APIENTRY wWinMain(
@@ -139,49 +139,49 @@ int APIENTRY wWinMain(
 }
 ```
 
-Da quel momento in poi, la classe AppMain gestisce l'interazione con i messaggi della finestra di base e così via. Creerà anche il HolographicSpace usato dall'app.
+Da quel momento in poi, la classe AppMain gestisce l'interazione con i messaggi di finestra di base e così via. Creerà anche l'holographicSpace usato dall'app.
 
-## <a name="render-holographic-content"></a>Rendering del contenuto olografico
+## <a name="render-holographic-content"></a>Eseguire il rendering del contenuto olografico
 
-La cartella **contenuto** del progetto contiene le classi per il rendering degli ologrammi nello [spazio olografico](getting-a-holographicspace.md). L'ologramma predefinito nel modello è un cubo rotante che si trova a 2 metri di fuori dall'utente. La creazione di questo cubo è implementata in **SpinningCubeRenderer. cpp**, che include i metodi principali seguenti:
+La cartella **Content del** progetto contiene classi per il rendering degli ologrammi nello [spazio olografico](getting-a-holographicspace.md). L'ologramma predefinito nel modello è un cubo rotante posizionato a 2 metri di distanza dall'utente. Il disegno di questo cubo viene implementato in **SpinningCubeRenderer.cpp,** che dispone di questi metodi chiave:
 
 |  Metodo  |  Spiegazione | 
 |----------|----------|
-|  `CreateDeviceDependentResources` |  Carica shader e crea la mesh del cubo. | 
-|  `PositionHologram` |  Inserisce l'ologramma nella posizione specificata dal <a href="/uwp/api/windows.ui.input.spatial.spatialpointerpose" target="_blank">SpatialPointerPose</a>fornito. | 
+|  `CreateDeviceDependentResources` |  Carica gli shader e crea la mesh del cubo. | 
+|  `PositionHologram` |  Posiziona l'ologramma nella posizione specificata <a href="/uwp/api/windows.ui.input.spatial.spatialpointerpose" target="_blank">dall'oggetto SpatialPointerPose specificato.</a> | 
 |  `Update` |  Ruota il cubo e imposta la matrice del modello. | 
-|  `Render` |  Esegue il rendering di un frame utilizzando i vertici e i pixel shader. | 
+|  `Render` |  Esegue il rendering di un frame usando il vertice e i pixel shader. | 
 
-La sottocartella **shader** contiene quattro implementazioni dello shader predefinite:
+La **sottocartella Shaders** contiene quattro implementazioni di shader predefinite:
 
 |  Shader  |  Spiegazione | 
 |----------|----------|
-|  `GeometryShader.hlsl` |  Un pass-through che lascia la geometria non modificata. | 
-|  `PixelShader.hlsl` |  Passa i dati dei colori. I dati relativi ai colori vengono interpolati e assegnati a un pixel al passaggio di rasterizzazione. | 
-|  `VertexShader.hlsl` |  Shader semplice per eseguire l'elaborazione del vertice sulla GPU. | 
-|  `VPRTVertexShader.hlsl` |  Shader semplice per eseguire l'elaborazione dei vertici sulla GPU, ottimizzata per il rendering stereo di realtà mista di Windows. | 
+|  `GeometryShader.hlsl` |  Pass-through che lascia invariata la geometria. | 
+|  `PixelShader.hlsl` |  Passa attraverso i dati relativi al colore. I dati relativi al colore vengono interpolati e assegnati a un pixel nel passaggio di rasterizzazione. | 
+|  `VertexShader.hlsl` |  Shader semplice per eseguire l'elaborazione dei vertici nella GPU. | 
+|  `VPRTVertexShader.hlsl` |  Shader semplice per eseguire l'elaborazione dei vertici nella GPU, ottimizzata per Windows Mixed Reality rendering stereo. | 
 
 `VertexShaderShared.hlsl` contiene codice comune condiviso tra `VertexShader.hlsl` e `VPRTVertexShader.hlsl` .
 
-Nota: il modello di app Direct3D 12 include anche `ViewInstancingVertexShader.hlsl` . Questa variante usa le funzionalità facoltative di D3D12 per eseguire il rendering delle immagini stereo in modo più efficiente.
+Nota: il modello di app Direct3D 12 include anche `ViewInstancingVertexShader.hlsl` . Questa variante usa le funzionalità facoltative D3D12 per eseguire il rendering delle immagini stereo in modo più efficiente.
 
-Gli shader vengono compilati quando il progetto viene compilato e caricati nel metodo **SpinningCubeRenderer:: CreateDeviceDependentResources** .
+Gli shader vengono compilati quando il progetto viene compilato e caricati nel metodo **SpinningCubeRenderer::CreateDeviceDependentResources.**
 
 ## <a name="interact-with-your-holograms"></a>Interagire con gli ologrammi
 
-L'input dell'utente viene elaborato nella classe **SpatialInputHandler** , che ottiene un'istanza di <a href="/uwp/api/windows.ui.input.spatial.spatialinteractionmanager" target="_blank">SpatialInteractionManager</a> e sottoscrive l'evento <a href="/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcepressed" target="_blank">SourcePressed</a> . In questo modo è possibile rilevare il movimento di tocco aereo e altri eventi di input spaziali.
+L'input dell'utente viene elaborato nella classe **SpatialInputHandler,** che ottiene <a href="/uwp/api/windows.ui.input.spatial.spatialinteractionmanager" target="_blank">un'istanza spatialInteractionManager</a> e sottoscrive <a href="/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcepressed" target="_blank">l'evento SourcePressed.</a> Ciò consente di rilevare il movimento di tocco dell'aria e altri eventi di input spaziale.
 
-## <a name="update-holographic-content"></a>Aggiorna contenuto olografico
+## <a name="update-holographic-content"></a>Aggiornare il contenuto olografico
 
-Gli aggiornamenti dell'app di realtà mista in un ciclo di gioco, che per impostazione predefinita viene implementato nel metodo di **aggiornamento** in `AppMain.cpp` . Il metodo **Update** aggiorna gli oggetti della scena, ad esempio il cubo rotante, e restituisce un oggetto <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> usato per ottenere le matrici di visualizzazione e proiezione aggiornate e per presentare la catena di scambio.
+L'app di realtà mista viene aggiornata in un ciclo di gioco, che per impostazione predefinita viene implementato nel **metodo Update** in `AppMain.cpp` . Il **metodo Update** aggiorna gli oggetti della scena, ad esempio il cubo rotante, e restituisce un oggetto <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> usato per ottenere matrici di visualizzazione e proiezione aggiornate e per presentare la catena di scambio.
 
-Il metodo **Render** in `AppMain.cpp` accetta <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> ed esegue il rendering del frame corrente in ogni fotocamera olografica, in base all'app corrente e allo stato di posizionamento spaziale.
+Il **metodo Render** in accetta HolographicFrame ed esegue il rendering del fotogramma corrente in ogni fotocamera `AppMain.cpp` olografica, in base all'app corrente e allo stato di posizionamento spaziale. <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank"></a>
 
 ## <a name="notes"></a>Note
 
-Il modello di app per la realtà mista di Windows supporta ora la compilazione con il flag di mitigazione Spectre abilitato (/Qspectre). Prima di compilare una configurazione con la mitigazione Spectre abilitata, assicurarsi di installare le librerie di runtime di Microsoft Visual C++ (MSVC) per Spectre-mitigate. Per installare le librerie C++ con attenuazione Spectre, avviare il Programma di installazione di Visual Studio e selezionare **modifica**. Passare a **singoli componenti** e cercare "Spectre". Selezionare le caselle corrispondenti alle piattaforme di destinazione e alla versione di MSVC per cui è necessario compilare il codice con attenuazione Spectre per e fare clic su **modifica** per avviare l'installazione.
+Il modello Windows Mixed Reality app supporta ora la compilazione con il flag di mitigazione Spectre abilitato (/Qspectre). Assicurarsi di installare la versione con mitigazione Spectre delle librerie di runtime Microsoft Visual C++ (MSVC) prima di compilare una configurazione con mitigazione Spectre abilitata. Per installare le librerie C++ con mitigazione Spectre, avviare il Programma di installazione di Visual Studio e selezionare **Modifica.** Passare a **Singoli componenti** e cercare "spectre". Selezionare le caselle corrispondenti alle piattaforme di destinazione e alla versione MSVC cui è necessario compilare il codice con mitigazione Spectre e fare clic **su** Modifica per avviare l'installazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Ottenere un HolographicSpace](getting-a-holographicspace.md)
 * <a href="/uwp/api/windows.graphics.holographic.holographicspaceh" target="_blank">HolographicSpace</a>
 * [Rendering in DirectX](rendering-in-directx.md)

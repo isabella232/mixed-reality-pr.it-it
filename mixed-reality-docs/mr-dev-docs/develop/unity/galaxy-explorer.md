@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Galaxy Explorer, case study, progetto, esempio, MRTK, Mixed Reality Toolkit, Unity, app di esempio, app di esempio, open source, Microsoft Store, HoloLens, visore per realtà mista, visore windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: c1294a197878ecf0c6672b028284ad51eaef6955
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+keywords: galaxy explorer, case study, project, sample, MRTK, Mixed Reality Toolkit, Unity, app di esempio, app di esempio, open source, Microsoft Store, HoloLens, visore per realtà mista, visore windows mixed reality, visore per realtà virtuale
+ms.openlocfilehash: e24336ffafd389f60835e80dbb665063bec2904afc121cfcae0f2c9d2b70dd2f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757338"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225683"
 ---
 # <a name="galaxy-explorer"></a>Galaxy Explorer
 ![Galaxy Explorer](../images/HTK_GalaxyExplorer.jpg)
@@ -53,7 +53,7 @@ Nell'episodio 1, il team di sviluppo inizia il processo di creazione di un proge
 
 >[!VIDEO https://www.youtube.com/embed/q1ee8a-84Ro]
 
-Nell'episodio 2 il team di sviluppo completa la fase di creazione di prototipi, affrontando problemi complessi e cercando di capire quali idee approfondire.
+Nell'episodio 2, il team di sviluppo completa la fase di creazione di prototipi, affrontando problemi complessi e cercando di capire quali idee approfondire.
 
 ## <a name="ep-3-laying-foundations"></a>Ep 3: Laying Foundations
 
@@ -77,7 +77,7 @@ Nell'episodio 5 il team di sviluppo testa l'app, cerca i bug che devono essere c
 
 >[!VIDEO https://www.youtube.com/embed/sMuJFKbylY4]
 
-Nell'episodio 6 il team termina l'ultima settimana di sviluppo, si prepara per due settimane di lavoro di lucido e riflette sullo stato di avanzamento che ha fatto
+Nell'episodio 6, il team termina l'ultima settimana di sviluppo, si prepara per due settimane di lavoro polacco e riflette sui progressi che ha fatto
 
 ## <a name="ep-7-the-final-product"></a>Ep 7: Il prodotto finale
 
@@ -94,19 +94,19 @@ Per altre informazioni e lezioni sullo sviluppo di Galaxy Explorer, vedere ["Cre
 ![Team di sviluppo di Galaxy Explorer](images/syiteampic.jpg)<br>
 *Team di sviluppo di Galaxy Explorer*
 
-Si è appreso che la creazione del team giusto è uno degli investimenti più importanti che è possibile effettuare e che si è deciso di organizzare in modo analogo a un game studio per chi ha familiarità con tale modello di sviluppo. È stato scelto di avere 11 membri del team di base per controllare l'ambito, poiché è stato definito un intervallo di tempo fisso (creare qualcosa di interessante prima della build del 30 marzo 2016).
+Si è appreso che la creazione del team giusto è uno degli investimenti più importanti che è possibile effettuare e che si è deciso di organizzare in modo analogo a un game studio per chi ha familiarità con tale modello di sviluppo. È stato scelto di avere 11 membri principali del team per controllare l'ambito, poiché è stato definito un intervallo di tempo fisso (creare qualcosa di interessante prima della compilazione il 30 marzo 2016).
 
-Per questo progetto, abbiamo iniziato con un produttore, Jessica, che ha eseguito la pianificazione, la revisione dello stato di avanzamento e il mantenimento quotidiano delle attività. È quella con i peli rosa. Abbiamo avuto un direttore del design (Jon) e un senior designer (Peter). Hanno mantenuto la visione creativa di Galaxy Explorer. Jon è quello in vetri in prima riga e Peter è il secondo da destra nella parte posteriore.
+Per questo progetto, abbiamo iniziato con un produttore, Jessica, che ha eseguito la pianificazione, la revisione dello stato di avanzamento e il mantenimento delle attività quotidiane. È quella con i peli rosa. Abbiamo avuto un direttore del design (Jon) e un senior designer (Peter). Hanno mantenuto la visione creativa di Galaxy Explorer. Jon è quello in vetri in prima riga e Peter è il secondo da destra nella parte posteriore.
 
 Abbiamo tre sviluppatori: BJ (tra Jon e Jessica), Mike (seconda riga a sinistra) e Karim (seconda riga al centro, accanto a BJ). Hanno trovato le soluzioni tecniche necessarie per realizzare questa visione creativa.
 
 Abbiamo iniziato con quattro artisti a tempo pieno: un concept artist (Jedd, secondo da sinistra nella parte posteriore), un modellatore (Andy, terzo da destra nella parte posteriore), un artista tecnico (Alex (persona più a destra)) e un animatore (Steve (persona più a sinistra). Ognuno di essi esegue anche altre attività, ma queste sono le responsabilità principali.
 
-È stato un tester a tempo pieno, Lena, che ha testato le build ogni giorno, ha configurato le revisioni delle build e ha esaminato le funzionalità non appena vengono online. Tutti i test sono stati tuttavia eserciti costantemente, in quanto le compilazioni sono sempre state oggetto di esame. Lena è quella che fa dondolo il giubbotto in pelle.
+È stato un tester a tempo pieno, Lena, che ha testato le build ogni giorno, ha configurato le revisioni delle build e ha esaminato le funzionalità non appena vengono online. Tutti i test sono stati eserciti in modo costante, dato che le compilazioni sono state sempre in esame. Lena è quella che fa dondolo il giubbotto in pelle.
 
 Tutti gli utenti fanno parte di uno studio più ampio qui in Microsoft (si pensi al team per lo sviluppo non di giochi). Sono state coinvolte anche molte altre persone: abbiamo chiamato spesso i talent del direttore dell'arte, dell'audio e della dirigenza dello studio in tutto il progetto, ma queste persone erano risorse condivise con altri progetti del team più ampio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Case study - Creazione di una galassia in realtà mista](../../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md)
 * [Galaxy Explorer GitHub repo](https://github.com/Microsoft/GalaxyExplorer)
 * [Galaxy Explorer 2.0](galaxy-explorer-update.md)

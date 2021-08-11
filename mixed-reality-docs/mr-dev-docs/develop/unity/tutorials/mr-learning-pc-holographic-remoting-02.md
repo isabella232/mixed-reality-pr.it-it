@@ -7,12 +7,12 @@ ms.date: 07/26/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, holographic remoting per PC, Visual Studio
 ms.localizationpriority: high
-ms.openlocfilehash: 19c10ad0cdad70b38663f9da0f7d2a1f1702d94d
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: d395801c20d95ee0fdddc144b4e28c841554fb5116f847574ec4a931d116026e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757233"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197962"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2. Creazione di un'applicazione Holographic Remoting per PC
 
@@ -28,7 +28,7 @@ In questa esercitazione si apprenderà come creare un'app per PC che usa Hologra
 
 ## <a name="configuring-the-capabilities"></a>Configurazione delle funzionalità
 
-Nella finestra **Project Impostazioni** di pubblicazione espandere **l'Impostazioni** di pubblicazione , scorrere verso il basso fino alla sezione Funzionalità e selezionare la casella di controllo della funzionalità illustrata di seguito oltre alle funzionalità esistenti.
+Nella finestra **Project Impostazioni** espandere il nodo **Publishing Impostazioni**,scorrere verso il basso fino alla sezione Capabilities (Funzionalità) e selezionare la casella di controllo della funzionalità illustrata di seguito oltre alle funzionalità esistenti.
 
 * Client e server Internet
 * Client e server di rete privata

@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 0b26242d71bbe080e440f9c52a009e29000ab00b
-ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
+ms.openlocfilehash: add3aaa2a98ca2ddc1f60b0307a3defed3236d9a2c09aa70ea2d12b2d9638eba
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114224209"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228386"
 ---
 # <a name="pulse-shader"></a>Pulse shader
 
@@ -45,6 +45,6 @@ Lo script **PulseShaderSpatialMeshHandler.cs** genera l'effetto pulse sulla mesh
 
 ## <a name="hand-mesh-example---pulseshaderhandmeshexampleunity"></a>Esempio di mesh manuale - PulseShaderHandMeshExample.unity
 
-Questa scena di esempio illustra la visualizzazione della mesh della mano usando pulse shader. Quando viene rilevata una mano dal dispositivo HoloLens, l'animazione dell'impulso viene attivata una sola volta. Questo feedback visivo può aumentare l'attendibilità dell'interazione dell'utente. 
+Questa scena di esempio illustra la visualizzazione della mesh della mano usando pulse shader. Quando una mano viene rilevata dal dispositivo HoloLens, l'animazione dell'impulso viene attivata una sola volta. Questo feedback visivo può aumentare l'attendibilità dell'interazione dell'utente. 
 
 Lo script **PulseShaderHandMeshHandler.cs** genera l'effetto pulse sul materiale assegnato. Per impostazione predefinita, l'opzione "Pulse On Hand Detected" è selezionata.

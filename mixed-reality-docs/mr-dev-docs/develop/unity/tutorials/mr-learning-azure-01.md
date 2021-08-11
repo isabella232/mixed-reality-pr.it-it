@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: azure, realtà mista, unity, esercitazione, hololens, hololens 2, archiviazione blob di azure, archiviazione tabelle di azure, ancoraggi nello spazio di azure, azure bot framework, servizi cloud di azure, visione personalizzata di azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 3c52384b118a72b1c2f2dfaa2205e4f890e2e5a7
-ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
+ms.openlocfilehash: 84eb1555d0020eebe9de440fcdbdd58ac17875ab417a209ea083664ab17fbfd8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114224402"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115227031"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. Servizi cloud di Azure per HoloLens 2
 
@@ -104,7 +104,7 @@ Nella finestra Project (Progetto) passa alla cartella **Assets** (Asset)  > **MR
 
 ![Unity con i prefab SceneController, RootMenu e DataManager selezionati](images/mr-learning-azure/tutorial1-section5-step1-1.png)
 
-SceneController **(prefab)** contiene due script, **SceneController (script)** e **AppDispatcher (script).** Il componente script **SceneController** contiene diverse funzioni UX e facilita la funzionalità di acquisizione di foto, mentre **AppDispatcher** è una classe helper per consentire l'esecuzione di azioni nel thread principale di Unity.
+SceneController **(prefab)** contiene due script, **SceneController (script)** e **AppDispatcher (script).** Il componente script **SceneController** contiene diverse funzioni dell'esperienza utente e facilita la funzionalità di acquisizione di foto, mentre **AppDispatcher** è una classe helper per consentire l'esecuzione di azioni nel thread principale di Unity.
 
 **RootMenu (prefab)** è il principale prefab dell'interfaccia utente e include tutte le relative finestre, che sono connesse tra loro tramite vari piccoli componenti script e controllano il flusso UX generale dell'applicazione.
 

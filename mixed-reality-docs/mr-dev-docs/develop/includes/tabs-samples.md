@@ -1,14 +1,14 @@
 ---
-ms.openlocfilehash: d7b025ebc362a441ef45860b946a7a0f30b99b1e
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 5cac1c1ab2fda0564f258611abe891b7706afb62eb2d65b68f234f333fa28a98
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757365"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115227682"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
-Le open source di esempio sono state create dai team per aiutare a ottenere una gestione pratica dello sviluppo di realtà mista. I progetti e il codice sorgente completo sono stati forniti come riferimento per l'apprendimento.
+Le open source di esempio sono state create dai team per aiutare a gestire lo sviluppo di realtà mista in prima mano. I progetti e il codice sorgente completo sono stati forniti come riferimento per l'apprendimento.
 
 ### <a name="hololens-2-open-source-sample-apps"></a>App di esempio open source per HoloLens 2
 
@@ -23,7 +23,7 @@ Le open source di esempio sono state create dai team per aiutare a ottenere una 
 
 :::row:::
     :::column:::
-       [ ![ Superfici](../images/MRDL_Surfaces.jpg)](../unity/sampleapp-surfaces.md) **[](../unity/sampleapp-surfaces.md)**
+       [ ![ Superfici](../images/MRDL_Surfaces.jpg)](../unity/sampleapp-surfaces.md) **[Superfici](../unity/sampleapp-surfaces.md)**
     :::column-end:::
     :::column:::
        [ ![ Galaxy Explorer 2.0](../images/GalaxyExplorer2.jpg)](../unity/galaxy-explorer-update.md) **[Galaxy Explorer 2.0](../unity/galaxy-explorer-update.md)**

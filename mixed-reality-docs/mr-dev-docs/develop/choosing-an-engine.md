@@ -1,17 +1,17 @@
 ---
 title: Scelta del motore
-description: Introduzione alle opzioni del motore disponibili per lo sviluppo di realtà mista per HoloLens e la realtà virtuale.
+description: Introduzione alle opzioni del motore disponibili per lo sviluppo di realtà mista per HoloLens realtà virtuale.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 04/22/2021
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, visore VR di realtà mista, visore VR windows di realtà mista, visore VR di realtà virtuale, unity
-ms.openlocfilehash: c91a4df9db8ef71778421750bca48d81d4b4a02e
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: 14235852f8c90e7ccc4f105f2938ce514ae2933973469db9a0e01bd03d2c1b6d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394525"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115227553"
 ---
 # <a name="choosing-your-engine"></a>Scelta del motore
 
@@ -31,7 +31,7 @@ Sono disponibili diversi percorsi di sviluppo che è possibile seguire attravers
 * **Gli sviluppatori Web** che creano esperienze Web AR/VR accattivanti tra browser possono usare **WebXR.**
 
     > [!NOTE]
-    > **Babylon.js** per lo sviluppo di HoloLens è attualmente in corso. Scopri le novità [più recenti e interagisci con la community.](https://doc.babylonjs.com/divingDeeper/webXR/introToWebXR)
+    > **Babylon.js** per HoloLens lo sviluppo è attualmente in corso. Scopri le novità [più recenti e interagisci con la community.](https://doc.babylonjs.com/divingDeeper/webXR/introToWebXR)
 
 <!-- Babylon is a Javascript-based, open source, 3D graphics engine capable of powering 3D scenes in a web browser. Babylon.js 4.2+ includes support for WebXR. With Babylon React Native, you can even build cross-platform native     applications for PC, mobile, and mixed reality devices. -->
 
@@ -41,7 +41,7 @@ Sono disponibili diversi percorsi di sviluppo che è possibile seguire attravers
 
 | Logistica | Unity | Unreal | JavaScript | Motore personalizzato <br>(con OpenXR) |
 |---|---|---|---|---|
-| Lingua | C# | C++ | JavaScript | C/C++ |
+| Linguaggio | C# | C++ | JavaScript | C/C++ |
 | Prezzi | [Prezzi di Unity](https://store.unity.com/#plans-individual) | [Prezzi di Unreal](https://www.unrealengine.com/download) | Gratuito | Gratuito |
 
 <br>
@@ -65,16 +65,16 @@ Sono disponibili diversi percorsi di sviluppo che è possibile seguire attravers
 | HoloLens 2 | ✔️ | ✔️ | ✔️ | ✔️ |
 | HoloLens (prima generazione) | ✔️ | ✔️ | ❌ | Solo WinRT (legacy) |
 | [Visori VR di Windows Mixed Reality](../discover/immersive-headset-hardware-details.md) | ✔️ | ✔️ | ✔️ | ✔️ |
-| Visori VR a tutto tondo | ✔️ | ✔️ | ✔️ | ✔️ |
+| Visori Per lavr a vapore | ✔️ | ✔️ | ✔️ | ✔️ |
 | Oculus Quest/Rift | ✔️ | ✔️ | ✔️ | ✔️ |
-| Dispositivi mobili (ARCore/ARKit) | ✔️ | ✔️ | ✔️ | ❌ |
+| Mobile (ARCore/ARKit) | ✔️ | ✔️ | ✔️ | ❌ |
 
 <br>
 
 | Strumenti | Unity | Unreal | JavaScript | Motore personalizzato <br>(con OpenXR) |
 |---|---|---|---|---|
 | Mixed Reality Toolkit | ✔️ | ✔️ | ❌  | ❌ |
-| World Locking Tools | ✔️ | ❌ | ❌  | ❌ |
+| Strumenti di blocco del mondo | ✔️ | ❌ | ❌  | ❌ |
 <!-- | Mesh | ❌ | ❌ | ❌ | ❌ | -->
 
 <br>
@@ -86,7 +86,7 @@ Sono disponibili diversi percorsi di sviluppo che è possibile seguire attravers
 | Rendering remoto di Azure | ✔️ * | ❌ | ❌ | ✔️ * |
 
 > [!NOTE]
-> * Rendering remoto di Azure è attualmente supportato nelle app che usano le API WinRT legacy (plug-in Windows XR in Unity). Il supporto di ARR per le app OpenXR sarà presto disponibile.
+> * Rendering remoto di Azure è attualmente supportato nelle app che usano le API WinRT legacy (Windows plug-in XR in Unity). Il supporto ARR per le app OpenXR sarà presto disponibile.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

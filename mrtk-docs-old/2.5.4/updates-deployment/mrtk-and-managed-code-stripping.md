@@ -1,27 +1,27 @@
 ---
 title: MRTK_and_managed_code_stripping
-description: Rimozione del codice in MRTK e Unity
+description: Stripping del codice in MRTK e Unity
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 7e80f25f6e5af7fe851bf9106ebbd07dece5dbad
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 6b341f51b07da215269e3c3e0dee10ff151956b9d7e7b0c47e25fbbe9d4694c0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702037"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115199783"
 ---
-# <a name="mrtk-and-unity-managed-code-stripping"></a>Rimozione del codice gestito di MRTK e Unity
+# <a name="mrtk-and-unity-managed-code-stripping"></a>Stripping del codice gestito MRTK e Unity
 
-Quando si usa il back-end di scripting IL2CPP di Unity (facoltativo in Unity 2018,4, richiesto in 2019 e versioni successive), si verifica la [rimozione del codice gestito](https://docs.unity3d.com/Manual/ManagedCodeStripping.html) .
+Quando si usa il back-end di scripting IL2CPP di Unity (facoltativo in Unity 2018.4, obbligatorio nella versione 2019 e nelle più recente), si verifica lo [stripping](https://docs.unity3d.com/Manual/ManagedCodeStripping.html) del codice gestito.
 Il linker di Unity esegue questo processo per ridurre le dimensioni binarie e per ridurre i tempi di compilazione.
 
-Il Toolkit di realtà mista Usa un file, `link.xml` , per influenzare il modo in cui il linker di Unity elabora gli assembly MRTK. Questo file, descritto nella documentazione completa di [Unity](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML), fornisce al linker istruzioni su come mantenere il codice quando non è possibile dedurre l'utilizzo (ad esempio, usato tramite Reflection).
+L'Toolkit realtà mista usa un file, , per influenzare il modo in cui il linker di Unity elabora `link.xml` gli assembly MRTK. Questo file, descritto in modo completo nella documentazione di Unity, fornisce al linker istruzioni su come mantenere il codice quando non è possibile dedurne [l'utilizzo](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML)(ad esempio, usato tramite reflection).
 
-Come piattaforma flessibile e personalizzabile, MRTK crea il `link.xml` file in in `Assets/MixedRealityToolkit.Generated` caso di importazione, se non è presente. I file di link.xml preesistenti non vengono sovrascritti. È consigliabile `link.xml` `link.xml.meta` aggiungere e al controllo della versione. Gli sviluppatori devono essere in grado di personalizzare `Assets/MixedRealityToolkit.Generated/link.xml` per soddisfare le esigenze del progetto.
+Come piattaforma flessibile e personalizzabile, MRTK crea il file in durante l'importazione, se non `link.xml` `Assets/MixedRealityToolkit.Generated` esiste. I file di link.xml non vengono sovrascritti. È consigliabile aggiungere `link.xml` e al controllo della `link.xml.meta` versione. Gli sviluppatori devono essere in grado di `Assets/MixedRealityToolkit.Generated/link.xml` personalizzare per soddisfare le esigenze del progetto.
 
-Per impostazione predefinita, il file link.xml creato da MRTK conserva l'intero assembly illustrato nei dati seguenti.
+Per impostazione predefinita, link.xml file creato da MRTK mantiene l'intero assembly mostrato nei dati seguenti.
 
 ``` xml
 <linker> 
@@ -61,9 +61,9 @@ Per impostazione predefinita, il file link.xml creato da MRTK conserva l'intero 
 </linker>
 ```
 
-Per ulteriori informazioni sul formato di file link.xml, consultare la documentazione di Unity.
+Per altre informazioni sul formato link.xml file, vedere la documentazione di Unity.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Unity: rimozione di codice gestito](https://docs.unity3d.com/Manual/ManagedCodeStripping.html)
-- [Unity: collega file XML](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML)
+- [Unity: stripping del codice gestito](https://docs.unity3d.com/Manual/ManagedCodeStripping.html)
+- [Unity: collegare un file XML](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML)

@@ -1,66 +1,66 @@
 ---
-title: ConfiguringDiagnostics
+title: Configurazionediagnostics
 description: documentazione per configurare la diagnostica in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 4d8cd70f59dba08f09177c0b3d7f08aae1955801
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ba3965eea7b6b84e3334c6f1bc6a37a7df41a39c6255fd85356a9ab571d98323
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104683044"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200595"
 ---
 # <a name="configuring-the-diagnostics-system"></a>Configurazione del sistema di diagnostica
 
 ## <a name="general-settings"></a>Impostazioni generali
 
-![Impostazioni generali di diagnostica](../images/diagnostics/DiagnosticsGeneralSettings.png)
+![Diagnostica Generale Impostazioni](../images/diagnostics/DiagnosticsGeneralSettings.png)
 
 ### <a name="enable-verbose-logging"></a>Abilita la registrazione dettagliata
 
-Indica se la registrazione MRTK dettagliata verrà abilitata. Il valore predefinito è false, ma può essere attivato per eseguire tracce dettagliate che consentono al team di MRTK di eseguire il debug e l'analisi dei problemi. Ad esempio, quando si segnala un problema, il fissaggio dei log del lettore Unity (dall'editor o dal lettore) può contribuire a limitare l'origine di bug e problemi.
+Indica se verrà abilitata o meno la registrazione dettagliata di MRTK. Il valore predefinito è false, ma può essere attivato per eseguire tracce dettagliate che consentono al team MRTK di eseguire il debug o l'analisi dei problemi. Ad esempio, quando si registra un problema, allegare i log del lettore Unity (dall'editor o dal lettore) può aiutare a restringere l'origine di bug e problemi.
 
-Si noti che questa opzione è indipendente dall'abilitazione o meno del sistema di diagnostica. viene visualizzato nel sistema di diagnostica perché si tratta di un'opzione di registrazione, ma opera a un livello superiore perché influiscono sulla registrazione nell'intera codebase MRTK.
+Si noti che questa opzione è indipendente dal fatto che il sistema di diagnostica sia abilitato o meno. Questa opzione viene visualizzata nel sistema di diagnostica perché è un'opzione di registrazione, ma in definitiva funziona a un livello superiore perché influisce sulla registrazione nell'intera codebase di MRTK.
 
 ### <a name="show-diagnostics"></a>Visualizza diagnostica
 
-Indica se il sistema di diagnostica deve visualizzare o meno le opzioni di diagnostica configurate.
+Indica se il sistema di diagnostica deve visualizzare le opzioni di diagnostica configurate.
 
-Quando questa opzione è disabilitata, tutte le opzioni di diagnostica configurate saranno nascoste.
+Se disabilitata, tutte le opzioni di diagnostica configurate verranno nascoste.
 
 ## <a name="profiler-settings"></a>Impostazioni del profiler
 
-![Impostazioni del profiler di diagnostica](../images/diagnostics/DiagnosticsProfilerSettings.png)
+![Profiler di diagnostica Impostazioni](../images/diagnostics/DiagnosticsProfilerSettings.png)
 
-### <a name="show-profiler"></a>Mostra Profiler
+### <a name="show-profiler"></a>Mostra profiler
 
-Indica se il profiler deve essere visualizzato o meno.
+Indica se visual profiler deve essere visualizzato o meno.
 
-### <a name="frame-sample-rate"></a>Frequenza di campionamento frame
+### <a name="frame-sample-rate"></a>Frequenza di campionamento dei fotogrammi
 
-Quantità di tempo, in secondi, per la raccolta dei frame per il calcolo della frequenza dei fotogrammi. L'intervallo è compreso tra 0 e 5 secondi.
+Quantità di tempo, in secondi, per raccogliere i fotogrammi per il calcolo della frequenza dei fotogrammi. L'intervallo è compreso tra 0 e 5 secondi.
 
-### <a name="window-anchor"></a>Ancoraggio finestra
+### <a name="window-anchor"></a>Ancoraggio della finestra
 
-A quale parte della porta di visualizzazione deve essere ancorata la finestra del profiler. Il valore predefinito è il centro inferiore.
+A quale parte della porta di visualizzazione deve essere ancorata la finestra del profiler. Il valore predefinito è Lower Center.
 
-### <a name="window-offset"></a>Offset finestra
+### <a name="window-offset"></a>Offset della finestra
 
-Offset, dal centro della porta di visualizzazione, per inserire Visual Profiler. L'offset sarà nella direzione della proprietà di *ancoraggio della finestra* .
+Offset, dal centro della porta di visualizzazione, per posizionare Visual Profiler. L'offset sarà nella direzione della *proprietà Ancoraggio finestra.*
 
-### <a name="window-scale"></a>Scala della finestra
+### <a name="window-scale"></a>Scala delle finestre
 
-Moltiplicatore dimensioni applicato alla finestra del profiler. Se ad esempio si imposta il valore su 2, le dimensioni della finestra vengono raddoppiate.
+Moltiplicatore di dimensioni applicato alla finestra del profiler. Ad esempio, l'impostazione del valore su 2 raddoppierà le dimensioni della finestra.
 
-### <a name="window-follow-speed"></a>Velocità di completamento finestra
+### <a name="window-follow-speed"></a>Velocità di follow della finestra
 
-Velocità di spostamento della finestra del profiler per mantenere la visibilità all'interno della porta di visualizzazione.
+Velocità con cui spostare la finestra del profiler per mantenere la visibilità all'interno della porta di visualizzazione.
 
-## <a name="programmatically-controlling-the-diagnostics-system"></a>Controllo a livello di codice del sistema di diagnostica
+## <a name="programmatically-controlling-the-diagnostics-system"></a>Controllo del sistema di diagnostica a livello di codice
 
-È anche possibile impostare la visibilità del sistema di diagnostica e del profiler in fase di esecuzione. Il codice seguente, ad esempio, nasconde il sistema di diagnostica e il profiler.
+È anche possibile attivare o disattivare la visibilità del sistema di diagnostica e del profiler in fase di esecuzione. Ad esempio, il codice seguente nasconderà il sistema di diagnostica e il profiler.
 
 ```c#
 CoreServices.DiagnosticsSystem.ShowDiagnostics = false;

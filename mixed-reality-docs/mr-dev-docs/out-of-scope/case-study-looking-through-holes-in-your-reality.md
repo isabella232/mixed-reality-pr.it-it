@@ -1,75 +1,75 @@
 ---
 title: Case study - Guardare attraverso fori nella realtà
-description: In questo case study viene illustrata l'implementazione dell'effetto "finestra magica" in HoloLens, che consente all'utente di vedere dietro le pareti, sotto il pavimento e in aperture virtuali.
+description: Questo case study illustra l'implementazione dell'effetto "finestra magica" su HoloLens, consentendo all'utente di vedere dietro le pareti, sotto il piano e nelle aperte virtuali.
 author: ericrehmeyer
 ms.author: bestruku
 ms.date: 10/18/2019
 ms.topic: article
-keywords: Realtà mista di Windows, HoloLens, Magic Window, parallasse
-ms.openlocfilehash: 018e45a79d88cbc8e28204f023106fbe5dae39bc
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: Windows Mixed Reality, HoloLens, finestra magic, parallassa
+ms.openlocfilehash: 0769d8a7bd2b5bdf1ef1fe50f1bbcd2f284b8503bf66b8fdb09b2206b716ea65
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010111"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228183"
 ---
 # <a name="case-study---looking-through-holes-in-your-reality"></a>Case study - Guardare attraverso fori nella realtà
 
-Quando le persone pensano alla realtà mista e a cosa possono fare con Microsoft HoloLens, in genere si limitano a domande come "quali oggetti è possibile aggiungere alla mia stanza?" o "quali sono I livelli in cima allo spazio?" Desidero evidenziare un'altra area che è possibile prendere in considerazione, essenzialmente un trucco magico, che usa la stessa tecnologia per esaminare o attraverso oggetti fisici reali.
+Quando gli utenti pensano alla realtà mista e a cosa possono fare con Microsoft HoloLens, in genere si attenono a domande come "Quali oggetti è possibile aggiungere alla stanza?" o "What can I layer on top of my space?" Mi piace evidenziare un'altra area che è possibile prendere in considerazione, essenzialmente un magic trick, usando la stessa tecnologia per esaminare o usare oggetti fisici reali intorno all'utente.
 
-## <a name="the-tech"></a>Il Tech
+## <a name="the-tech"></a>La tecnologia
 
-Se si hanno combattuto gli stranieri durante l'attraversamento dei muri in **[RoboRaid](https://www.youtube.com/watch?v=Hf9qkURqtbM)**, è stato sbloccato un muro sicuro nei **[frammenti](case-study-creating-an-immersive-experience-in-fragments.md)** oppure è stato abbastanza fortunato per vedere il UNSC Infinity hangar nell' **[esperienza di Halo 5 all'E3 nel 2015](https://www.youtube.com/watch?v=QDw5QjDtFy8)**, si è visto che cosa sto parlando. A seconda dell'immaginazione, questo espediente visivo può essere usato per inserire buchi temporanei nel muro a secco o per nascondere i mondi in un listello separato.
+Se si è provato a sfondare le pareti in **[RoboRaid,](https://www.youtube.com/watch?v=Hf9qkURqtbM)** si è sbloccata una cassaforte per le pareti in **[Frammenti](case-study-creating-an-immersive-experience-in-fragments.md)** o si è visto il hangar UNSC Infinity nell'esperienza Halo 5 alla E3 nel **[2015,](https://www.youtube.com/watch?v=QDw5QjDtFy8)** si è visto di cosa si sta parlando. A seconda dell'azzarre, questo trick visivo può essere usato per inserire fori temporanei nella tera o per nascondere i mondo sotto una lavagna.
 
-![RoboRaid aggiunge le pipe tridimensionali e altre strutture dietro le pareti, visibili solo attraverso buchi creati come interruzioni degli invasori.](../develop/unity/images/roboraid-640px.png)
+![RoboRaid aggiunge pipe tridimensionali e altre strutture dietro le pareti, visibili solo tramite fori creati durante l'attraversamento dei tachi.](../develop/unity/images/roboraid-640px.png)
 
-RoboRaid aggiunge le pipe tridimensionali e altre strutture dietro le pareti, visibili solo attraverso buchi creati come interruzioni degli invasori.
+RoboRaid aggiunge pipe tridimensionali e altre strutture dietro le pareti, visibili solo tramite fori creati durante l'attraversamento dei tachi.
 
-Usando uno di questi ologrammi univoci in HoloLens, un'app può fornire l'illusione di contenuti protetti da muri o attraverso la propria pavimentazione in modo analogo alla realtà. Spostarsi a sinistra ed è possibile vedere qualunque sia il lato destro. È possibile avvicinarsi a un po' di tutto. La differenza principale consiste nel fatto che i buchi reali consentono di raggiungere il contenuto olografico, mentre il suo piano non consente di passare a tale contenuto. Aggiungo un'attività al backlog.
+Usando uno di questi ologrammi univoci in HoloLens, un'app può fornire l'idea del contenuto dietro le pareti o attraverso il piano nello stesso modo in cui la realtà si presenta attraverso una finestra effettiva. Spostati a sinistra e puoi vedere tutto quello che c'è sul lato destro. Più da vicino, è possibile vedere un po' più di tutto. La differenza principale è che i fori reali consentono di passare, mentre il tuo piano non ti permetterà di passare a quel contenuto olografico di grande effetto. Si aggiungerà un'attività al backlog.
 
 ## <a name="behind-the-scenes"></a>Dietro le quinte
 
-Questo trucco è costituito da una combinazione di due effetti. Per prima cosa, il contenuto olografico viene aggiunto al mondo con "ancoraggi spaziali". L'uso di ancoraggi per rendere il contenuto "con blocco universale" significa che ciò che si sta osservando non deriva visivamente dagli oggetti fisici vicini, anche quando si sposta o il sistema di mapping spaziale sottostante aggiorna il proprio modello 3D della chat room.
+Questo trick è una combinazione di due effetti. In primo luogo, il contenuto olografico viene aggiunto al mondo usando "ancoraggi nello spaziale". L'uso di ancoraggi per rendere il contenuto "bloccato al mondo" significa che ciò che si sta guardando non si allontana visivamente dagli oggetti fisici vicini, anche quando ci si sposta o il sistema di mapping spaziale sottostante aggiorna il modello 3D della stanza.
 
-In secondo luogo, il contenuto olografico è limitato visivamente a uno spazio molto specifico, quindi è possibile vedere solo il foro della realtà. Tale occlusione è necessaria per richiedere la ricerca in un foro logico, una finestra o una porta, che vende il trucco. Senza bloccare la maggior parte della visualizzazione, un crack nello spazio a una dimensione Jurassic segreta potrebbe essere simile a un dinosauro mal inserito.
+In secondo luogo, il contenuto olografico è visivamente limitato a uno spazio molto specifico, quindi puoi vedere solo il foro nella realtà. Questa occlusione è necessaria per richiedere di guardare attraverso un foro logico, una finestra o una porta, che vende il trick. Senza qualcosa che blocca la maggior parte della visualizzazione, una crepa nello spazio di una dimensione segreta di Jurassic potrebbe sembrare semplicemente un dinosauro posizionato in modo non sufficiente.
 
-![Non si tratta di uno screenshot effettivo, ma viene illustrato il modo in cui il segreto Sottomondo di MR nozioni di base 101 esamina HoloLens. L'enclosure nera non viene visualizzata, ma è possibile visualizzare il contenuto tramite un foro virtuale. Quando si esamina un dispositivo reale, il piano sembrerebbe scomparire ulteriormente perché gli occhi si concentrano su un ulteriore distanza, come se non fosse neanche presente.](images/origamiholecomposited-640px.png)
+![Non si tratta di uno screenshot effettivo, ma di un'illustrazione dell'aspetto del segreto di Mr Basics 101 HoloLens. L'enclosure nera non viene visualizzata, ma è possibile visualizzare il contenuto attraverso un foro virtuale. Quando si guarda attraverso un dispositivo reale, il piano sembra scomparire ancora di più perché gli occhi si concentrano a una distanza maggiore come se non fosse ancora presente.](images/origamiholecomposited-640px.png)
 
-Non si tratta di uno screenshot effettivo, ma viene illustrato il modo in cui il segreto Sottomondo di [Mr nozioni di base 101](../develop/unity/tutorials/holograms-101.md) esamina HoloLens. L'enclosure nera non viene visualizzata, ma è possibile visualizzare il contenuto tramite un foro virtuale. Quando si esamina un dispositivo reale, il piano sembrerebbe scomparire ulteriormente perché gli occhi si concentrano su un ulteriore distanza, come se non fosse neanche presente.
+Non si tratta di uno screenshot effettivo, ma di un'illustrazione dell'aspetto del segreto di [Mr Basics 101](../develop/unity/tutorials/holograms-101.md) HoloLens. L'enclosure nera non viene visualizzata, ma è possibile visualizzare il contenuto attraverso un foro virtuale. Quando si guarda attraverso un dispositivo reale, il piano sembra scomparire ancora di più perché gli occhi si concentrano a una distanza maggiore come se non fosse ancora presente.
 
-### <a name="world-locking-holographic-content"></a>Contenuto olografico con blocco globale
+### <a name="world-locking-holographic-content"></a>Contenuto olografico che blocca il mondo
 
-In Unity, causando il blocco del contenuto olografico è facile aggiungere un componente WorldAnchor:
+In Unity, fare in modo che il contenuto olografico rimanga bloccato a livello mondiale è facile quanto aggiungere un componente WorldAnchor:
 
 ```
 myObject.AddComponent<WorldAnchor>();
 ```
 
-Il componente WorldAnchor regola costantemente la posizione e la rotazione dei relativi GameObject (e quindi qualsiasi altro elemento sotto tale oggetto nella gerarchia) per mantenerlo stabile rispetto agli oggetti fisici adiacenti. Quando si crea il contenuto, crearlo in modo che il pivot radice dell'oggetto sia centrato su questo foro virtuale. Se il pivot dell'oggetto è profondo nella parete, le piccole modifiche apportate alla posizione e alla rotazione saranno molto più evidenti e il foro potrebbe non sembrare molto stabile.
+Il componente WorldAnchor regola costantemente la posizione e la rotazione del gameobject (e quindi qualsiasi altro elemento sotto tale oggetto nella gerarchia) per mantenerlo stabile rispetto agli oggetti fisici vicini. Quando si crea il contenuto, crearlo in modo che il pivot radice dell'oggetto sia centrato in corrispondenza di questo foro virtuale. Se il pivot dell'oggetto si trova in profondità nella barriera, le lievi modifiche nella posizione e nella rotazione saranno molto più evidenti e il foro potrebbe non sembrare molto stabile.
 
-### <a name="occluding-everything-but-the-virtual-hole"></a>Occlusione tutto tranne il foro virtuale
+### <a name="occluding-everything-but-the-virtual-hole"></a>Occluding everything but the virtual hole
 
-Esistono diversi modi per bloccare selettivamente la visualizzazione a ciò che è nascosto nei muri. Il più semplice sfrutta il fatto che HoloLens utilizza una visualizzazione additiva, il che significa che gli oggetti completamente neri appaiono invisibili. Questa operazione può essere eseguita in Unity senza eseguire particolari operazioni di shader o materiali, ma è sufficiente creare un materiale nero e assegnarlo a un oggetto che riquadri il contenuto. Se non si ha familiarità con la modellazione 3D, è sufficiente usare alcuni oggetti Quad predefiniti e sovrapporli leggermente. Questo approccio presenta diversi svantaggi, ma è il modo più rapido per lavorare e ottenere un modello di verifica a bassa fedeltà funzionante, anche se si sospetta che sia necessario effettuare il refactoring in un secondo momento.
+Esistono diversi modi per bloccare in modo selettivo la visualizzazione su ciò che è nascosto nelle pareti. Il più semplice sfrutta il fatto che HoloLens usa uno schermo additivo, il che significa che gli oggetti completamente neri appaiono invisibili. È possibile eseguire questa operazione in Unity senza eseguire particolari trucchi per shader o materiali. È sufficiente creare un materiale nero e assegnarlo a un oggetto che contiene le caselle nel contenuto. Se non si vuole eseguire la modellazione 3D, è sufficiente usare alcuni oggetti Quad predefiniti e sovrapporli leggermente. Esistono diversi svantaggi di questo approccio, ma è il modo più rapido per far funzionare qualcosa e ottenere un modello di verifica a bassa fedeltà è ideale, anche se si ritiene di volerne eseguire il refactoring in un secondo momento.
 
-Uno dei principali svantaggi dell'approccio "black box" precedente è la mancata fotografia. Anche se l'effetto potrebbe sembrare perfetto attraverso la visualizzazione di HoloLens, le schermate che verranno visualizzate mostreranno un oggetto nero di grandi dimensioni anziché quello che rimane della parete o del pavimento. Questo è il motivo per cui l'hardware fisico e le schermate degli ologrammi e della realtà compositi sono diversi. Devi dedicare qualche istante a una matematica falsa...
+Uno degli svantaggi principali dell'approccio "black box" precedente è che non fotografa bene. Anche se l'effetto potrebbe essere perfetto tramite la visualizzazione di HoloLens, tutti gli screenshot che si eseranno mostreranno un oggetto nero di grandi dimensioni anziché ciò che rimane della superficie o del piano. Il motivo è che l'hardware fisico e screenshot ologrammi compositi e realtà in modo diverso. Distouriamo per un momento alcuni calcoli matematici falsi...
 
-*Avviso matematico falso. Questi numeri e formule hanno lo scopo di illustrare un punto, non come una metrica accurata.*
+*Avviso matematico falso. Questi numeri e formule sono concepiti per illustrare un punto, non per essere una metrica accurata.*
 
-Cosa si vede con HoloLens:
+Ciò che viene visualizzato tramite HoloLens:
 
 ```
 ( Reality * darkening_amount ) + Holograms
 ```
 
-Cosa viene visualizzato in screenshot e video:
+Elementi visualizzati in screenshot e video:
 
 ```
 ( Reality * ( 1 - hologram_alpha ) ) + Holograms * hologram_alpha
 ```
 
-In inglese: ciò che viene visualizzato tramite HoloLens è una semplice combinazione di realtà offuscata (ad esempio tramite occhiali) e qualsiasi ologramma che l'app vuole visualizzare. Tuttavia, quando si acquisisce una schermata, l'immagine della fotocamera viene fusa con gli ologrammi dell'app in base al valore di trasparenza per pixel.
+In inglese: ciò che si vede tramite HoloLens è una semplice combinazione di realtà scura (ad esempio tramite occhiali da sole) e qualsiasi ologramma che l'app vuole mostrare. Tuttavia, quando si esegue uno screenshot, l'immagine della fotocamera viene sfumita con gli ologrammi dell'app in base al valore di trasparenza per pixel.
 
-Un modo per aggirare questo problema consiste nel modificare il materiale "black box" per scrivere solo nel buffer di profondità e ordinarlo con tutti gli altri materiali opachi. Per un esempio, vedere il [file WindowOcclusion. shader in MixedRealityToolkit su GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Common/Shaders/WindowOcclusion.shader). Le righe rilevanti vengono copiate qui:
+Un modo per aggirare questo problema è modificare il materiale "black box" per scrivere solo nel buffer di profondità e ordinare con tutti gli altri materiali opachi. Per un esempio, vedere il [file WindowOcclusion.shader in MixedRealityToolkit in GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Common/Shaders/WindowOcclusion.shader). Le righe pertinenti vengono copiate qui:
 
 ```
 "RenderType" = "Opaque"
@@ -77,27 +77,27 @@ Un modo per aggirare questo problema consiste nel modificare il materiale "black
 ColorMask 0
 ```
 
-Si noti che la linea "offset 50, 100" consiste nel risolvere i problemi non correlati, quindi potrebbe essere opportuno lasciarlo invariato.
+Si noti che la riga "Offset 50, 100" è quella di gestire i problemi non correlati, quindi è probabile che sia opportuno non farlo.
 
-Implementando un materiale di occlusione invisibile come che consente all'app di creare una casella che sembra corretta nella visualizzazione e negli screenshot di realtà mista. Per i punti di bonus, è possibile provare a migliorare ulteriormente le prestazioni di tale box eseguendo operazioni intelligenti per creare un numero ancora inferiore di pixel invisibili, ma che possono entrare nelle erbacce e, in genere, non sono necessarie.
+Implementazione di un materiale di occlusione invisibile come che consente all'app di disegnare una casella con un aspetto corretto nello schermo e negli screenshot di realtà mista. Per i punti bonus, puoi provare a migliorare ulteriormente le prestazioni di tale scatola eseguendo operazioni intelligenti per disegnare ancora meno pixel invisibili, ma ciò può effettivamente entrare nelle alveare e in genere non sarà necessario.
 
-![Di seguito è riportato il segreto sotterraneo di MR nozioni di base 101 As Unity lo disegna, eccetto le parti esterne della casella occlusione. Si noti che il perno per il Sottomondo è al centro della casella, che consente di tenere il foro il più possibile stabile rispetto al piano effettivo.](images/underworld-occluded-640px.png)
+![Ecco il segreto di MR Basics 101, che Unity disegna, ad eccezione delle parti esterne della scatola occluding. Si noti che il pivot per l'infermo si trova al centro della scatola, che consente di mantenere il foro il più stabile possibile rispetto al piano effettivo.](images/underworld-occluded-640px.png)
 
-Di seguito è riportato il segreto sotterraneo di [Mr nozioni di base 101](../develop/unity/tutorials/holograms-101.md) As Unity lo disegna, eccetto le parti esterne della casella occlusione. Si noti che il perno per il Sottomondo è al centro della casella, che consente di tenere il foro il più possibile stabile rispetto al piano effettivo.
+Ecco il segreto di [MR Basics 101,](../develop/unity/tutorials/holograms-101.md) che Unity disegna, ad eccezione delle parti esterne della scatola occluding. Si noti che il pivot per l'infermo si trova al centro della scatola, che consente di mantenere il foro il più stabile possibile rispetto al piano effettivo.
 
 ## <a name="do-it-yourself"></a>Provare
 
-Si ha un HoloLens e si vuole provare l'effetto per se stessi? La cosa più semplice da fare (non è necessario scrivere codice) consiste nell'installare l'app visualizzatore 3D gratuita e quindi caricare il [file con estensione FBX fornito in GitHub](https://github.com/Microsoft/HolographicAcademy/tree/CaseStudy-MagicWindow/MagicWindow) per visualizzare un modello di Flower Pot nella propria stanza. Caricarla in HoloLens. è possibile osservare l'illusione al lavoro. Quando ci si trova davanti al modello, è possibile vedere solo nel piccolo foro, tutto il resto è invisibile. Esaminare il modello da qualsiasi altro lato e scomparire completamente. Usare i controlli di spostamento, rotazione e scalabilità del visualizzatore 3D per posizionare il foro virtuale su qualsiasi superficie verticale che è possibile considerare per generare alcune idee.
+Si ha HoloLens e si vuole provare l'effetto per se stessi? La cosa più semplice da fare (senza scrivere codice) è installare l'app Visualizzatore 3D gratuita e quindi caricare il file con estensione [fbx](https://github.com/Microsoft/HolographicAcademy/tree/CaseStudy-MagicWindow/MagicWindow) fornito in GitHub per visualizzare un modello di fiori nella stanza. Caricarlo in HoloLens ed è possibile vedere l'avaria al lavoro. Quando ci si trova davanti al modello, è possibile vedere solo nel piccolo foro, tutto il resto è invisibile. Osservare il modello da qualsiasi altro lato e scompare completamente. Usare i controlli di spostamento, rotazione e scala dell'Visualizzatore 3D per posizionare il foro virtuale su qualsiasi superficie verticale a cui si possa pensare per generare alcune idee.
 
-![La visualizzazione di questo modello nell'editor di Unity mostrerà un black box di grandi dimensioni intorno al vaso. In HoloLens, la casella scompare, consentendo un effetto della finestra magica.](images/magicwindowflowerpotineditor.png)
+![La visualizzazione di questo modello nell'editor di Unity mostrerà un'ampia black box intorno alla fioriera. In HoloLens, la casella scompare, cedendo il controllo a un effetto magico della finestra.](images/magicwindowflowerpotineditor.png)
 
-La visualizzazione di questo modello nell'editor di Unity mostrerà un black box di grandi dimensioni intorno al vaso. In HoloLens, la casella scompare, consentendo un effetto della finestra magica.
+La visualizzazione di questo modello nell'editor di Unity mostrerà un'ampia black box intorno alla fioriera. In HoloLens, la casella scompare, cedendo il controllo a un effetto magico della finestra.
 
-Se si vuole compilare un'app che usa questa tecnica, vedere l' [esercitazione nozioni di base su 101](../develop/unity/tutorials/holograms-101.md) nelle [esercitazioni sulla realtà mista](../develop/unity/tutorials.md). Il capitolo 7 termina con un'esplosione al pavimento che rivela un Sottomondo nascosto (come illustrato in precedenza). Chi ha detto che le esercitazioni erano noiose?
+Se vuoi creare un'app che usa questa tecnica, consulta l'esercitazione Nozioni di base [mr 101](../develop/unity/tutorials/holograms-101.md) nelle esercitazioni [sulla realtà mista.](../develop/unity/tutorials.md) Il capitolo 7 termina con un'esplosione nel piano che rivela un mondo nascosto (come illustrato in precedenza). Who detto che le esercitazioni dovevano essere noiose?
 
-Di seguito sono riportate alcune idee in cui è possibile adottare questa idea:
-* Si pensi ai modi per rendere il contenuto all'interno del foro virtuale interattivo. Consentire agli utenti di avere un certo effetto oltre i muri può migliorare il senso di stupore che questo trick può offrire.
-* Si pensi ai modi per visualizzare gli oggetti attraverso le aree note. Come è possibile, ad esempio, inserire un foro olografico nella tabella del caffè per visualizzare il piano sottostante?
+Ecco alcune idee su dove è possibile prendere questa idea in seguito:
+* Si pensi a come rendere interattivo il contenuto all'interno del foro virtuale. Lasciare che gli utenti possano avere un certo impatto oltre le proprie pareti può effettivamente migliorare il senso di stupore che questo scemino può offrire.
+* Si pensi a come visualizzare gli oggetti fino ad aree note. Ad esempio, come è possibile inserire un foro olografico nel tavolo per il caffè e vedere il piano sotto di esso?
 
 ## <a name="about-the-author"></a>Informazioni sull'autore
 
@@ -108,7 +108,7 @@ Di seguito sono riportate alcune idee in cui è possibile adottare questa idea:
 </tr>
 </table>
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Nozioni di base MR 101: Progetto completo con dispositivo](../develop/unity/tutorials/holograms-101.md)
 * [Sistemi di coordinate](../design/coordinate-systems.md)
 * [Ancoraggi nello spazio](../design/spatial-anchors.md)

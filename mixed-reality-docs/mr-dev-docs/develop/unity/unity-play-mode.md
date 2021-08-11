@@ -5,13 +5,13 @@ author: keveleigh
 ms.author: v-vtieto
 ms.date: 07/26/2021
 ms.topic: article
-keywords: Unity, comunicazione remota, comunicazione remota olografica, lettore di comunicazione remota olografica, HoloLens, visore per realtà mista, visore windows mixed reality, visore di realtà virtuale, modalità di riproduzione unity
-ms.openlocfilehash: 0c71791c80a5e84ee48241baa756064a800e5a41
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+keywords: Unity, comunicazione remota, comunicazione remota olografica, lettore di comunicazione remota olografica, HoloLens, visore per realtà mista, visore windows mixed reality, visore per realtà virtuale, modalità di riproduzione unity
+ms.openlocfilehash: cd9dca9d1ddf17b78e8c317fa3a58093c9b5837de379510148c6e645b31120ca
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757213"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226233"
 ---
 # <a name="preview-your-work-with-holographic-remoting"></a>Visualizzare in anteprima il lavoro con Holographic Remoting
 
@@ -27,9 +27,9 @@ Un modo rapido per lavorare al progetto Unity è usare la "modalità di riproduz
 
     ![Screenshot di Holographic Remoting Player in esecuzione nel HoloLens](images/openxr-features-img-01.png)
 
-## <a name="unity-play-mode-with-holographic-remoting"></a>Modalità di riproduzione Unity con holographic Remoting
+## <a name="unity-play-mode-with-holographic-remoting"></a>Modalità di riproduzione Unity con Holographic Remoting
 
-Con Holographic Remoting è possibile sperimentare l'app nel HoloLens mentre viene eseguita nell'editor di Unity nel PC. Lo sguardo, il movimento, la voce e l'input di mapping spaziale vengono inviati dal HoloLens al PC. I fotogrammi sottoposti a rendering vengono quindi inviati di nuovo HoloLens. Questo è un ottimo modo per eseguire rapidamente il debug dell'app senza compilare e distribuire un progetto completo.
+Con Holographic Remoting è possibile sperimentare l'app nel HoloLens mentre viene eseguita nell'editor di Unity nel PC. Lo sguardo, il movimento, la voce e l'input di mapping spaziale vengono inviati dal HoloLens al PC. I fotogrammi sottoposti a rendering vengono quindi inviati nuovamente HoloLens. Questo è un ottimo modo per eseguire rapidamente il debug dell'app senza compilare e distribuire un progetto completo.
 
 [!INCLUDE[](includes/unity-play-mode.md)]
 

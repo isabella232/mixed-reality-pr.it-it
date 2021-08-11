@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, profili,
-ms.openlocfilehash: 785d402e924a534627dfd1d742d2019d9ce9dd5a
-ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
+ms.openlocfilehash: b3ba5aa9ac08dcfe0eecdb479db075b39b43a0e376239822432df872b0775d27
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111908237"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225658"
 ---
 # <a name="profiles"></a>Profiles
 
@@ -27,7 +27,7 @@ Ad esempio, il comportamento del sistema di input è regolato da un profilo di s
 
 I profili sono destinati principalmente a supportare scenari specifici in più dispositivi, che vengono gestiti tramite i provider di dati. In questo modo, un'app può essere progettata in modo indipendente dal dispositivo e consentire a MRTK e ai provider di dati del profilo di gestire il supporto multipiattaforma.
 
-Esistono anche profili creati in base alle funzionalità di input di dispositivi specifici, ad esempio il profilo HoloLens 1, che per impostazione predefinita è basato sulle interazioni in stile GGV.
+Sono disponibili anche profili creati in base alle funzionalità di input di dispositivi specifici, ad esempio il profilo HoloLens 1, che per impostazione predefinita è basato sulle interazioni di tipo GGV.
 
 ## <a name="xr-sdk"></a>XR SDK
 
@@ -37,14 +37,14 @@ Usare uno dei profili MRTK predefiniti, che sono tutti configurati nelle pipelin
 ::: moniker range="< mrtkunity-2021-05"
 Attualmente sono disponibili due profili per XR SDK, `DefaultXRSDKConfigurationProfile` e `DefaultHoloLens2XRSDKConfigurationProfile` . Di conseguenza, non tutte le scene di esempio sono completamente supportate a causa di configurazioni specifiche della scena e dello scenario. Tutti gli esempi che `DefaultMixedRealityToolkitConfigurationProfile` usano e `DefaultHoloLens2ConfigurationProfile` _possono_ essere scambiati con i profili XR SDK corrispondenti. Se si usa OpenXR con XR SDK, usare invece `DefaultOpenXRConfigurationProfile` .
 
-Sono in corso ulteriori operazioni per semplificare la configurazione e supportare tutte le scene di esempio, consentendo la configurazione side-by-side di XR SDK e XR SDK legacy. Per informazioni sul [rilevamento, #9419](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9419) problema.
+Sono in corso ulteriori operazioni per semplificare la configurazione e supportare tutte le scene di esempio, consentendo la configurazione side-by-side di XR SDK e XR SDK legacy. Per il [rilevamento, #9419](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9419) problema.
 ::: moniker-end
 
 Per altre informazioni sulla conversione dei profili tra XR legacy e XR SDK, vedere [Configuring MRTK for the XR SDK pipeline](../../configuration/getting-started-with-mrtk-and-xrsdk.md#configuring-mrtk-for-the-xr-sdk-pipeline) (Configurazione di MRTK per la pipeline di XR SDK).
 
 ## <a name="default-profile"></a>Profilo predefinito
 
-MRTK offre un set di profili predefiniti che coprono la maggior parte delle piattaforme e degli scenari supportati da MRTK. Ad esempio, quando si seleziona `DefaultMixedRealityToolkitConfigurationProfile` (Assets/MRTK/SDK/Profiles) sarà possibile provare scenari in VR (OpenVR, WMR) e HoloLens (1 e 2).
+MRTK fornisce un set di profili predefiniti che coprono la maggior parte delle piattaforme e degli scenari supportati da MRTK. Ad esempio, quando si seleziona `DefaultMixedRealityToolkitConfigurationProfile` (Assets/MRTK/SDK/Profiles) sarà possibile provare scenari in VR (OpenVR, WMR) e HoloLens (1 e 2).
 
 Si noti che poiché si tratta di un profilo di utilizzo generale, non è ottimizzato per un caso d'uso specifico. Se si vogliono avere impostazioni più performanti/specifiche che siano migliori in altre piattaforme, vedere gli altri profili seguenti, che sono leggermente modificati per migliorare le rispettive piattaforme.
 

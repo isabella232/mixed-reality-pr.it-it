@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, prefab, ologrammi, descrizioni comandi
 ms.localizationpriority: high
-ms.openlocfilehash: 0abfb4ea2fac3a2e50837c219a465c4ab002e69d
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: 605379be0e2f3238ddb5de5c47b6df005c4bf2eb82a2e04156f1317e0e7659fe
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110272"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115227774"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Creazione delle interfacce utente
 
@@ -86,7 +86,7 @@ e il pulsante **Explode** per attivare e disattivare la visualizzazione esplosa:
 
 ## <a name="creating-a-dynamic-menu-that-follows-the-user"></a>Creazione di un menu dinamico che segue l'utente
 
-Nella finestra Project (Progetto) passa alla cartella **Packages**  >  **Mixed Reality Toolkit Foundation** SDK Features UX Prefabs Menus (Menu prefab UX), fai clic e trascina il prefab NearMenu4x1 nella finestra Hierarchy (Gerarchia), imposta transform position (Posizione trasformazione) su  >    >    >    >    >   X = 0, Y = -0.4, Z = 0   e configuralo come segue:
+Nella finestra Project passare alla cartella Packages  >  **Mixed Reality Toolkit Foundation** SDK Features UX Prefabs Menus (Menu prefab UX), fare clic e trascinare il prefab NearMenu4x1 nella finestra Hierarchy (Gerarchia), impostarne la posizione di trasformazione su  >    >    >    >    >   X = 0, Y = -0.4, Z = 0   e configurarlo come segue:
 
 * Verifica che per **Tracked Target Type** (Tipo destinazione tracciata) del componente **SolverHandler** sia impostato il valore **Head** (Testa)
 * Seleziona la casella di controllo accanto al componente **RadialView** in modo che sia abilitato per impostazione predefinita
@@ -107,7 +107,7 @@ Rinominare il primo pulsante in ButtonCollection in Indicator, quindi nella fine
 
 ![Unity con il componente Button Config Helper dell'oggetto pulsante Indicator configurato](images/mr-learning-base/base-06-section2-step1-3.png)
 
-Per disabilitare l'oggetto Indicatore di avanzamento, nella finestra Hierarchy (Gerarchia) selezionare l'oggetto Indicator simile a chevron e quindi nella finestra Inspector (Controllo):
+Per disabilitare l'oggetto Indicatore di avanzamento, nella finestra Hierarchy (Gerarchia) selezionare l'oggetto Indicator simile a chevron (Indicatore), quindi nella finestra Inspector (Controllo):
 
 * Deseleziona la casella di controllo accanto al nome per rendere inattivo il componente per impostazione predefinita
 * Usare il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **Directional Indicator Controller (Script)** (Controller destinazione direzionale - Script)
@@ -165,14 +165,14 @@ Quindi configura il componente **TextMeshPro - Text** (TextMeshPro - Testo) come
 
 ## <a name="adding-tooltips"></a>Aggiunta di descrizioni comandi
 
-Nella finestra Project (Progetto) passa alla cartella **Packages**  >  Mixed Reality Toolkit Foundation SDK Features  >    >    >  **UX**  >  Prefabs ToolTip (Descrizione comando UX **Prefabs)**  >   per individuare i prefab di descrizione comando:
+Nella finestra Project passare alla cartella Packages  >  **Mixed Reality Toolkit Foundation**  >  **SDK**  >  **Features**  >  UX Prefabs ToolTip (Descrizione comando prefab **UX)**  >    >   per individuare i prefab della descrizione comando:
 
 ![Finestra Project di Unity con la cartella ToolTips selezionata](images/mr-learning-base/base-06-section4-step1-1.png)
 
 Nella finestra Hierarchy (Gerarchia) espandi l'oggetto RoverExplorer > **RoverParts** e seleziona tutti i relativi oggetti parte rover figlio, quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **ToolTipSpawner** e configuralo come indicato di seguito:
 
 * Verifica che la casella di controllo **Focus Enabled** (Stato attivo abilitato) sia selezionata per richiedere all'utente di guardare la parte per visualizzare la descrizione comando
-* Assegnare il prefab **della descrizione comando** Riga semplice dalla finestra Progetto al **campo Prefab**
+* Assegnare il prefab **Descrizione comando** linea semplice dalla finestra Project al **campo Prefab**
 * Imposta ToolTip Override Settings (Impostazioni di override descrizione comando) > **Settings Mode** (Modalità impostazioni) su **Override**
 * Imposta ToolTip Override Settings (Impostazioni di override descrizione comando) > **Manual Pivot Local Position Y** (Posizione Y locale pivot manuale) su **1.5**
 

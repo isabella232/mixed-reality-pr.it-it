@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: 7124650a59271b48b763719063411765b5457768
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: cab10789bc7ab86a4090a0db46e5445b728c7c8ad2dd904cba530e81f1bab18e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175810"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115201436"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. Inizializzazione del progetto e distribuzione della prima applicazione
 
@@ -38,10 +38,10 @@ In questa esercitazione apprenderai come creare un nuovo progetto Unity, come co
 :::row-end:::
 :::row:::
     :::column:::
-       ![Panoramica Passaggio 4 ](images/mr-learning-base/base-02-overview-step4.png) **4. Compilare Unity Project**
+       ![Panoramica Passaggio 4 ](images/mr-learning-base/base-02-overview-step4.png) **4. Compilare unity Project**
     :::column-end:::
     :::column:::
-       ![Panoramica Passaggio 5 ](images/mr-learning-base/base-02-overview-step5.png) **5. Compilare la Project UWP**
+       ![Panoramica Passaggio 5 ](images/mr-learning-base/base-02-overview-step5.png) **5. Creare applicazioni UWP Project**
     :::column-end:::
     :::column:::
        ![Panoramica Passaggio 6 ](images/mr-learning-base/base-02-overview-step6.png) **6. Eseguire Project nel dispositivo**
@@ -87,33 +87,33 @@ Dal menu di Unity scegli **File** > **Build Settings** (Impostazioni di compilaz
 Nella finestra Build Impostazioni selezionare **Universal Windows Platform** e:
 
 1. Impostare **Dispositivo di destinazione** su **HoloLens**
-2. Impostare **Architettura** su **ARM 64** 
+2. Impostare **Architecture (Architettura)** **su ARM 64** 
 3. Impostare **Build Type** (Tipo di compilazione) su **D3D Project**
-4. Impostare **Versione SDK di destinazione** su Versione più recente **installata**
-5. Impostare **Versione minima della piattaforma** su **10.0.1024.0**
-6. Impostare **Visual Studio versione più recente** **installata**
-7. Impostare **Compila ed Esegui su** dispositivo **USB**
-8. Impostare **Configurazione build** su **Versione** perché si sono noti problemi di prestazioni con debug
+4. Impostare **Versione SDK di destinazione** su Ultima versione **installata**
+5. Impostare **versione minima della piattaforma** su **10.0.1024.0**
+6. Impostare **Visual Studio versione su** Versione più recente **installata**
+7. Impostare **Build and Run on (Compila ed esegui** **su) su USB Device (Dispositivo USB)**
+8. Impostare **La configurazione della build** su **Rilascio** perché sono presenti problemi di prestazioni noti con debug
 9. Fare clic sul pulsante Cambia piattaforma
 
-![Unity Build Impostazioni con le impostazioni della piattaforma Windows universali impostate](images/mr-learning-base/base-02-section2-step1-2-openxr.png)
+![Unity Build Impostazioni con le impostazioni di Universal Windows Platform impostate](images/mr-learning-base/base-02-section2-step1-2-openxr.png)
 
 Attendi che Unity completi il passaggio all'altra piattaforma:
 
 ![Passaggio di Unity all'altra piattaforma in corso](images/mr-learning-base/base-02-section2-step1-3-openxr.png)
 
-Al termine del passaggio della piattaforma da parte di Unity, fare clic sull'icona **x** per chiudere la Impostazioni compilazione.
+Dopo che Unity ha terminato di cambiare piattaforma, fare clic sull'icona **x** per chiudere la Impostazioni compilazione.
 
 ## <a name="importing-the-mixed-reality-toolkit-and-configuring-the-unity-project"></a>Importazione del progetto Toolkit realtà mista e configurazione del progetto Unity
 
-Per importare Toolkit realtà mista nel Project Unity Project è necessario usare lo strumento [funzionalità](../welcome-to-mr-feature-tool.md) realtà mista che consente agli sviluppatori di individuare, aggiornare e aggiungere pacchetti di funzionalità di realtà mista nei progetti Unity. È possibile cercare i pacchetti in base al nome o alla categoria, visualizzarne le dipendenze e persino visualizzare le modifiche proposte al file manifesto del progetto prima dell'importazione.
+Per importare Toolkit realtà mista nel Project Unity, è necessario usare [lo](../welcome-to-mr-feature-tool.md) strumento di funzionalità di realtà mista che consente agli sviluppatori di individuare, aggiornare e aggiungere pacchetti di funzionalità di realtà mista nei progetti Unity. È possibile cercare i pacchetti in base al nome o alla categoria, visualizzarne le dipendenze e persino visualizzare le modifiche proposte al file manifesto del progetto prima dell'importazione.
 
-Scaricare la versione più recente di Mixed Reality Feature Tool dall'Area download [Microsoft](https://aka.ms/MRFeatureTool). Al termine del download, decomprimere il file e salvarlo sul desktop.
+Scaricare la versione più recente di Mixed Reality Feature Tool dall'Area download [Microsoft.](https://aka.ms/MRFeatureTool)Al termine del download, decomprimere il file e salvarlo sul desktop.
 
 > [!NOTE]
-> Prima di poter eseguire lo strumento di funzionalità di realtà mista, installare [il runtime di .NET 5.0](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-desktop-5.0.7-windows-x64-installer)
+> Prima di poter eseguire Mixed Reality Feature Tool, installare [il runtime di .NET 5.0](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-desktop-5.0.7-windows-x64-installer)
 
-Aprire il file eseguibile **MixedRealityFeatureTool** dalla cartella scaricata per avviare Mixed Reality Feature Tool.  
+Aprire il file **eseguibile MixedRealityFeatureTool** dalla cartella scaricata per avviare mixed reality feature tool.  
 
 
 <img src="images/mr-learning-base/base-02-section4-step1-1.png" width="750px" alt="Opening MixedRealityFeatureTool">
@@ -122,18 +122,18 @@ Aprire il file eseguibile **MixedRealityFeatureTool** dalla cartella scaricata p
 
 ## <a name="creating-the-scene-and-configuring-mrtk"></a>Creazione della scena e configurazione di MRTK
 
-Nel menu Unity selezionare **File**  >  **Nuova scena**:
+Nel menu di Unity selezionare **File**  >  **New Scene (File nuova scena):**
 
 ![Percorso del menu New Scene di Unity](images/mr-learning-base/base-02-section6-step1-1.png)
 
-Nella finestra **Nuova scena** selezionare **Basic (incorporato)** e fare clic su **Crea** per creare una nuova scena:
+Nella finestra **Nuova scena** selezionare Di **base (incorporata)** e fare clic su **Crea** per creare una nuova scena:
 
 ![Finestra Nuova scena di Unity](images/mr-learning-base/base-02-section6-step1-1-newscene.png)
 
 > [!NOTE]
-> Lo screenshot precedente è della versione 2020 di Unity, se si  usa Unity 2019 quando si fa clic su Crea una nuova scena vuota.
+> Lo screenshot precedente deriva dalla versione 2020 di Unity, se si  usa Unity 2019 quando si fa clic su Crea verrà creata una nuova scena vuota.
 
-Nel menu Unity selezionare **Realtà** mista Toolkit Aggiungi alla scena e  >    >  **Configura...** per aggiungere MRTK alla scena corrente:
+Nel menu di Unity seleziona **Mixed Reality**  >  **(Realtà mista) Toolkit** Add to Scene and Configure (Aggiungi alla scena e configura) per aggiungere  >   MRTK alla scena corrente:
 
 ![Percorso del menu Add to Scene and Configure... di Unity](images/mr-learning-base/base-02-section6-step1-2.png)
 
@@ -145,40 +145,40 @@ Dal menu di Unity scegli **File** > **Save As** (Salva con nome) per visualizzar
 
 ![Percorso del menu Save As... di Unity](images/mr-learning-base/base-02-section6-step1-4.png)
 
-Salvare la scena nel progetto in **Asset**  >  **Scenes**.
+Salvare la scena nel progetto in Asset Scenes **(Scene**  >  **asset).**
 
 ![Finestra Save Scene di Unity con il prompt di salvataggio](images/mr-learning-base/base-02-section6-step1-5.png)
 
 ## <a name="adding-hand-interaction-to-an-object"></a>Aggiunta dell'interazione manuale a un oggetto
 
-Nel menu Unity selezionare **GameObject**  >  **3D Object**  >  **Cube** per aggiungere un oggetto cubo alla scena.
+Nel menu di Unity selezionare **GameObject**  >  **3D Object** Cube (Cubo oggetto 3D GameObject) per aggiungere un oggetto cubo alla  >   scena.
 
 ![Aggiunta di un cubo alla scena](images/mr-learning-base/base-02-section8-step1-1.png)
 
-Fare clic **sull'oggetto** Cube nella finestra Hierarchy (Gerarchia), quindi nella finestra Inspector (Controllo) configurare **il componente Transform (Trasforma)** come indicato di seguito
+Fare clic **sull'oggetto** Cube (Cubo) nella finestra Hierarchy (Gerarchia), quindi nella finestra Inspector (Controllo) configurare **il relativo componente Transform (Trasformazione)** come indicato di seguito
 
-* **Posizione:** X = 0, Y = -0,1, Z = 0,5
+* **Posizione:** X = 0, Y = -0.1, Z = 0,5
 * **Rotation** (Rotazione): X = 0, Y = 0, Z = 0
 * **Scala:** X = 0,1, Y = 0,1, Z = 0,1
 
-1 unità Unity è di 1 metro. Le dimensioni del cubo sono state aggiornate a 10x10x10 cm, posizionate a 50 cm dalla posizione del visore (0,0,0). 10 cm sotto il livello dell'occhio per un'interazione comoda. 
+1 unità Unity è di 1 contatore. Le dimensioni del cubo sono state aggiornate a 10x10x10 cm, posizionate a 50 cm dalla posizione del visore VR (0,0,0). 10 cm sotto il livello oculare per un'interazione comoda. 
 
-Se si usa la scala predefinita (1,1,1), il cubo sarà troppo grande. Se si usa la posizione predefinita (0,0,0), il cubo verrà posizionato nella stessa posizione del visore e non sarà possibile visualizzare il cubo fino a quando non si passa all'indietro.
+Se si usa la scala predefinita (1,1,1), il cubo sarà troppo grande. Se si usa la posizione predefinita (0,0,0), il cubo verrà posizionato nella stessa posizione del visore VR e non sarà possibile visualizzarlo fino a quando non si torna indietro.
 
 ![Modifica delle informazioni di trasformazione](images/mr-learning-base/base-02-section8-step1-1b.png)
 
-Per concentrarsi sugli oggetti nella scena, è possibile fare doppio clic **sull'oggetto Cubo** e quindi eseguire di nuovo lo zoom avanti leggermente. Oppure è possibile usare il tasto F per eseguire lo zoom e lo stato attivo sull'oggetto.
+Per concentrarsi sugli oggetti nella scena, è possibile fare doppio clic sull'oggetto **Cube** e quindi fare di nuovo leggermente zoom avanti. Oppure è possibile usare il tasto F per eseguire lo zoom e lo stato attivo sull'oggetto.
 
 Per interagire e afferrare un oggetto con le mani tracciate, l'oggetto deve avere:
- * Componente collisore, ad **esempio Box Collider** (il cubo di Unity ha già un Collisore di box per impostazione predefinita)
+ * Componente collisore, ad **esempio Box Collider** (il cubo di Unity ha già un collisore di box per impostazione predefinita)
  * Componente **Object Manipulator (Script)** (Manipolatore oggetti - script)
  * **Componente NearInteractionGrabbable(Script)**
 
 Lo script **ObjectManipulator** di MRTK rende un oggetto mobile, scalabile e rotabile usando una o due mani. Questo script supporta il modello di input di manipolazione diretta in quanto consente all'utente di toccare gli ologrammi direttamente con le proprie mani.
 
-Con il **cubo** ancora selezionato nella finestra Hierarchy (Gerarchia), nella finestra Inspector (Controllo) fare clic sul pulsante **Add Component** (Aggiungi componente), quindi cercare e selezionare **Object Manipulator** script (Manipolatore di oggetti) per aggiungere lo script Object Manipulator all'oggetto cubo.
+Con **il** cubo ancora selezionato nella finestra Hierarchy (Gerarchia), nella finestra Inspector (Controllo) fare clic sul pulsante **Add Component** (Aggiungi componente), quindi cercare e selezionare Object Manipulator script (Manipolatore oggetti) per aggiungere lo script Object **Manipulator** (Manipolatore oggetti) all'oggetto cubo.
 
-![aggiunta dell'oggetto manupulator al cubo](images/mr-learning-base/base-02-section8-step1-2.PNG)
+![aggiunta di Object Manupulator al cubo](images/mr-learning-base/base-02-section8-step1-2.PNG)
 
 Ripetere la stessa operazione per aggiungere **lo script Near Interaction Grabbable** al cubo
 
@@ -187,11 +187,11 @@ Ripetere la stessa operazione per aggiungere **lo script Near Interaction Grabba
 > [!NOTE]
 > Quando si aggiunge un manipolatore di oggetti (script), in questo caso, Gestione vincoli (script) viene aggiunto automaticamente perché il manipolatore di oggetti (script) dipende da esso.
 
-## <a name="testing-your-application-in-unity-editor-with-mrtk-input-simulation"></a>Test dell'applicazione nell'editor unity con simulazione di input MRTK
+## <a name="testing-your-application-in-unity-editor-with-mrtk-input-simulation"></a>Test dell'applicazione nell'editor unity con la simulazione dell'input MRTK
 
-Con la simulazione di input di MRTK è possibile testare vari tipi di interazioni nell'editor di Unity senza compilare e distribuire in un dispositivo. In questo modo è possibile scorrere rapidamente le idee nel processo di progettazione e sviluppo. Usare combinazioni di tastiera e mouse per controllare gli input simulati.
+Con la simulazione di input di MRTK, è possibile testare vari tipi di interazioni nell'editor di Unity senza compilare e distribuire in un dispositivo. Ciò consente di eseguire rapidamente l'iterazione delle idee nel processo di progettazione e sviluppo. Usare combinazioni di tastiera e mouse per controllare gli input simulati.
 
-Fare clic sul pulsante play (Riproduci) e immettere la modalità di riproduzione. Tenere premuto MAIUSC  **sinistro** o BARRA SPAZIATRICE per visualizzare il controller (mani simulate), lo spostamento del mouse sposterà il controller e potrà anche essere spostato più o più vicino alla fotocamera usando la rotellina del mouse. Quando il puntatore è posizionato sul cubo, tenere premuto **il pulsante sinistro del mouse** per afferrare l'oggetto Cube.
+Fare clic sul pulsante di riproduzione e accedere alla modalità di riproduzione. Tenere **premuto** MAIUSC  sinistro o BARRA SPAZIATRICE per visualizzare il controller (mani simulate), il movimento del mouse sposterà il controller e potrà anche essere spostato più o più vicino alla fotocamera usando la rotellina del mouse. Quando il puntatore è posizionato sul cubo, tenere premuto **il pulsante sinistro del mouse** per afferrare l'oggetto Cube.
 
 * Premere **i tasti W, A, S, D, Q, E** per spostare la fotocamera.
 * Tenere premuto **il pulsante destro del mouse** e spostare il mouse per guardarsi attorno.
@@ -261,7 +261,7 @@ Seleziona **Compila > Distribuisci soluzione** per eseguire la distribuzione nel
 
 ## <a name="congratulations"></a>Lezione completata
 
-A questo punto hai distribuito la tua prima app per HoloLens. Una volta aperta l'app, dovrebbe essere visualizzato un oggetto Cube e dovrebbe essere possibile interagire con il cubo spostando il cubo e, mentre ci si sposta, si dovrebbe vedere una mesh di mapping spaziale che copre le superfici percepite dal HoloLens. Dovresti anche vedere indicatori sulle mani e sulle dita per il tracciamento delle mani e un contatore della frequenza dei fotogrammi per tenere sotto controllo le prestazioni dell'app. Queste funzionalità sono solo alcune delle parti fondamentali incluse in MRTK. Nelle esercitazioni successive aggiungerai contenuto alla scena per esplorare le funzionalità di HoloLens e MRTK.
+A questo punto hai distribuito la tua prima app per HoloLens. Una volta aperta l'app, dovrebbe essere visualizzato un oggetto Cube e dovrebbe essere possibile interagire con il cubo spostando il cubo e, durante la procedura, si dovrebbe vedere una mesh di mapping spaziale che copre le superfici percepite dal HoloLens. Dovresti anche vedere indicatori sulle mani e sulle dita per il tracciamento delle mani e un contatore della frequenza dei fotogrammi per tenere sotto controllo le prestazioni dell'app. Queste funzionalità sono solo alcune delle parti fondamentali incluse in MRTK. Nelle esercitazioni successive aggiungerai contenuto alla scena per esplorare le funzionalità di HoloLens e MRTK.
 
 > [!div class="nextstepaction"]
 > [Esercitazione successiva: 3. Configurazione dei profili di MRTK](mr-learning-base-03.md)

@@ -5,22 +5,22 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 341ba0ee3e5900cc52f1ef715232f49064102309
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 9b7ef7564e0e4f84ba70c034b1bcc33a29498432620a002c8509de518dde479c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121379"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228387"
 ---
 # <a name="experimental-features"></a>Funzionalità sperimentali
 
-Alcune funzionalità a cui lavora il team di MRTK sembrano avere un valore iniziale molto grande anche se i dettagli non sono stati completamente dettagliati. Per questi tipi di funzionalità, la community vuole avere la possibilità di vederle in anticipo. Poiché sono all'inizio del ciclo, vengono etichettati come sperimentali per indicare che sono ancora in evoluzione e soggetti a modifiche nel tempo.
+Alcune funzionalità a cui lavora il team MRTK sembrano avere un valore iniziale molto grande anche se i dettagli non sono stati completamente dettagliati. Per questi tipi di funzionalità, la community vuole avere la possibilità di vederle in anticipo. Poiché sono all'inizio del ciclo, vengono etichettati come sperimentali per indicare che sono ancora in evoluzione e soggetti a modifiche nel tempo.
 
 ## <a name="what-to-expect-from-an-experimental-feature"></a>Cosa aspettarsi da una funzionalità sperimentale
 
 Se un componente è contrassegnato come sperimentale, è possibile prevedere quanto segue:
 
-- Scena di esempio che illustra l'utilizzo, che si trova `MRTK/Examples/Experimental` nella sottocartella
+- Scena di esempio che illustra l'utilizzo, che si trova nella `MRTK/Examples/Experimental` sottocartella
 - Le funzionalità sperimentali potrebbero non avere documenti.
 - Probabilmente non hanno test.
 - Le funzionalità sperimentali sono soggette a modifiche.
@@ -29,11 +29,11 @@ Se un componente è contrassegnato come sperimentale, è possibile prevedere qua
 
 ### <a name="experimental-code-should-live-in-a-separate-folder"></a>Il codice sperimentale deve essere contenuto in una cartella separata
 
-Il codice sperimentale deve essere inserito in una cartella sperimentale di primo livello seguita dal nome della funzionalità sperimentale. Ad esempio, se si prova a fornire una nuova funzionalità FooBar, inserire il codice seguente:
+Il codice sperimentale deve essere inserito in una cartella sperimentale di primo livello seguita dal nome della funzionalità sperimentale. Ad esempio, se si tenta di contribuire a una nuova funzionalità FooBar, inserire il codice seguente:
 
 - Scene di esempio, script `MRTK/Examples/Experimental/FooBar/`
 - Script dei componenti, prefab `MRTK/SDK/Experimental/FooBar/`
-- I controlli dei componenti passano a `MRTK/SDK/Inspectors/Experimental/FooBar`
+- I controlli componenti passano a `MRTK/SDK/Inspectors/Experimental/FooBar`
 
 Quando si usano sottocartelle sotto il nome della funzionalità sperimentale, provare a eseguire il mirroring della stessa struttura di cartelle di MRTK.
 
@@ -42,7 +42,7 @@ Ad esempio, i risolutori verrebbero sotto `MRTK/SDK/Experimental/FooBar/Features
 Tenere le scene in una cartella della scena nella parte superiore: `MRTK/Examples/Experimental/FooBar/Scenes/FooBarExample.unity`
 
 > [!NOTE]
-> Si è considerato di non avere una singola cartella radice sperimentale e di inserire sperimentale in say `MRTK/Examples/HandTracking/Scenes/Experimental/HandBasedMenuExample.unity` . Si è deciso di aggiungere cartelle alla base per semplificare l'individuazione delle funzionalità sperimentali.
+> Si è considerato di non avere una singola cartella radice sperimentale e di inserire invece Sperimentale in say `MRTK/Examples/HandTracking/Scenes/Experimental/HandBasedMenuExample.unity` . Si è deciso di aggiungere cartelle alla base per semplificare l'individuazione delle funzionalità sperimentali.
 
 ### <a name="experimental-code-should-be-in-a-special-namespace"></a>Il codice sperimentale deve essere in uno spazio dei nomi speciale
 
@@ -98,7 +98,7 @@ La maggior parte delle persone usa componenti principali dell'esperienza utente 
 
 L'uso del componente non deve interrompere i pulsanti, ManipulationHandler, BoundingBox o interagire.
 
-Ad esempio, in questa richiesta pull [ScrollableObjectCollection,](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6001)l'aggiunta di un oggetto ScrollableObjectCollection ha causato la non possibilità di usare i prefab del pulsante HoloLens. Anche se questo non è stato causato da un bug nella richiesta pull (ma piuttosto da un bug esistente), ha impedito l'accesso alla richiesta pull.
+Ad esempio, in questa richiesta pull [ScrollableObjectCollection](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6001)l'aggiunta di scrollableObjectCollection ha causato l'inascoltamento dei prefab HoloLens pulsante. Anche se questo non è stato causato da un bug nella richiesta pull (ma piuttosto da un bug esistente), ha impedito l'accesso alla richiesta pull.
 
 ### <a name="provide-an-example-scene-that-demonstrates-how-to-use-the-feature"></a>Fornire una scena di esempio che illustra come usare la funzionalità
 
@@ -108,7 +108,7 @@ Fornire un esempio in MRTK/Examples/Experimental/YOUR_FEATURE
 
 ### <a name="minimize-user-visible-flaws-in-experimental-features"></a>Ridurre al minimo i difetti visibili all'utente nelle funzionalità sperimentali
 
-Altri utenti non useranno la funzionalità sperimentale se non funziona, non rilasseranno a una funzionalità.
+Altri utenti non useranno la funzionalità sperimentale se non funziona, non saranno in grado di passare a una funzionalità.
 
 Testare la scena di esempio nella piattaforma di destinazione, assicurarsi che funzioni come previsto. Assicurarsi che la funzionalità funzioni anche nell'editor, in modo che gli utenti possano eseguire rapidamente l'iterazione e visualizzare la funzionalità anche se non hanno la piattaforma di destinazione.
 

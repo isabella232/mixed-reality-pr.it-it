@@ -7,12 +7,12 @@ ms.date: 07/26/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, holographic remoting per PC, descrizioni comandi, tracciamento oculare
 ms.localizationpriority: high
-ms.openlocfilehash: 53ede3db405e6f6f4ccaa20ff35847ecc9081dca
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 3a8c409d06861d99a217dcf4e670a9aa543b441c352ea68bc738779a3f779046
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757353"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225552"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Introduzione a Holographic Remoting per PC
 
@@ -41,7 +41,7 @@ Nella seconda esercitazione, Creare un'applicazione [Holographic Remoting,](mr-l
 Prima di proseguire, è **consigliabile** completare la serie di [Esercitazioni introduttive](mr-learning-base-01.md) o alcune esperienze pregresse di base con Unity e MRTK.
 
 > [!IMPORTANT]
-> * Questa serie di esercitazioni supporta Unity 2020 LTS (attualmente 2020.3.x) se si usano Open XR e Unity 2019 LTS (attualmente 2019.4.x) se si usa WSA legacy. Questo sostituisce tutti i requisiti della versione di Unity indicati nei prerequisiti collegati in precedenza.
+> * Questa serie di esercitazioni supporta Unity 2020 LTS (attualmente 2020.3.x) se si usano Open XR e Unity 2019 LTS (attualmente 2019.4.x) se si usa WSA legacy. In questo modo vengono sostituiti tutti i requisiti della versione di Unity indicati nei prerequisiti collegati in precedenza.
 
 ## <a name="creating-and-preparing-the-unity-project"></a>Creazione e preparazione del progetto Unity
 

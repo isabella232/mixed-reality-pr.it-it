@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Realtà mista, progettazione, comodità, HoloLens 2, HoloLens (1a generazione), visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, locomozione
-ms.openlocfilehash: f8c62b8208ee756efd2fc217f4e4aa4a541f770d
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 87cf45628a530da65d9feb29556afb7c4a8ee1d3f13385cbf521d2621ac0c2ae
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "103022853"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226433"
 ---
 # <a name="comfort"></a>Comfort
 
@@ -166,7 +166,7 @@ Per evitare l'affaticamento oculare e la tensione a livello cervicale, il conten
 * **Evita** angolature dello sguardo di oltre 60 gradi al di sotto dell'orizzonte (spostamento verticale)
 * **Evitare** rotazioni del collo di oltre 45 gradi rispetto al centro (spostamento orizzontale)
 
-L'angolo di sguardo ottimale (in appoggio) viene considerato compreso tra 10-20 gradi al di sotto dell'orizzonte, perché la testa tende a inclinare leggermente verso il basso, soprattutto durante le attività.
+L'angolo di sguardo fisso ottimale viene considerato tra i 10 e i 20 gradi sotto l'orizzonte, perché la testa tende a inclinarsi leggermente verso il basso, soprattutto durante le attività.
 
 ## <a name="arm-positions"></a>Posizioni delle braccia
 

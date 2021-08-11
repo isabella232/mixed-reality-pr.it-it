@@ -1,23 +1,23 @@
 ---
 title: Modello di articolo
-description: File del modello di articolo. MD che può essere copiato. Viene illustrato come eseguire il layout delle immagini utilizzando righe e colonne e altre convenzioni.
+description: File md dell'articolo modello che può essere copiato. Illustra come eseguire il layout delle immagini usando righe e colonne e altre convenzioni.
 author: rwinj
 ms.author: randyw
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Nessuno
-ms.openlocfilehash: 246e87ace1c0b3edf5e9f4829a5a0879cddf7279
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 4e08f015000fe214438879cd6433248d444f3d659b6338505495bebb76309a67
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583170"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115199557"
 ---
-# <a name="title-be-as-specific-as-possible-use-human-terms"></a>Titolo (per quanto possibile, usare i termini umani) 
+# <a name="title-be-as-specific-as-possible-use-human-terms"></a>Titolo (essere il più specifico possibile, usare termini umani) 
 
-![Includi immagine Hero. 16:9 razioni di aspetto. Descrizione delle immagini disponibili.](images/image-hero-template.jpg)
+![Includere l'immagine dell'eroe. 16:9 razione degli aspetti. Descrizione delle immagini qui.](images/image-hero-template.jpg)
 
-**Introduzione: Panoramica di alto livello dell'argomento.** Modernipsum dolore sit amet idealismo neo-minimalism, Pop Art Street Art Cubo-Futurismo Cobra, realism espressionismo Academic Jugendstil. Romanticismo cubista video game art synchromism neoclassicismo International Gothic baroque, Vorticismo Street Art Suprematismo abstract espressionismo. 
+**Introduzione: panoramica generale dell'argomento.** Modernipsum dolor sit amet idealism neo-minimalism, pop art street art cubo-futurism cobra, realistic expressionism academic jugendstil. Cubismo cubism video game art synchromism neoclassicism international con stile barocco gotico, vorticismo street art suprematism abstract expressionism. 
 
 <br>
 
@@ -37,7 +37,7 @@ ms.locfileid: "98583170"
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Visori VR immersive</strong></a></td>
 </tr>
 <tr>
-     <td>Argomento o titolo dell'articolo</td>
+     <td>Oggetto o titolo dell'articolo</td>
      <td>❌ Non supportato</td>
      <td>✔️ Consigliato</td>
      <td>✔️ Consigliato</td>
@@ -48,25 +48,25 @@ ms.locfileid: "98583170"
 
 
 
-## <a name="section-1---2--3-columns"></a>Sezione #1-2 & 3 colonne
+## <a name="section-1---2--3-columns"></a>Sezione #1 - 2 & 3 colonne
 
 Una sezione può contenere uno o tutti gli elementi seguenti:  
 
 *   Spiegazioni
 *   Considerazioni
-*   Regole empiriche 
-*   Metodi di utilizzo 
+*   Regole generali 
+*   Metodi d'uso 
 *   Vantaggi
-*   Do is e dont
+*   Da fare e da non fare
 
 Convenzioni editoriali:
 
-*   Usare il senso comune.
-*   Non provare a essere divertente.
-*   Scrivi usando l'ortografia e le convenzioni en-US (Stati Uniti Inglese).
-*   **Usa la distinzione tra maiuscole e minuscole per titoli, intestazioni di sezione e... bene.** All'interno delle frasi, le uniche parole che devono essere in lettere maiuscole sono i sostantivi appropriati (proprio come si è appreso nella scuola di grammatica). I nomi dei marchi, ad esempio Microsoft HoloLens, sono sostantivi appropriati. I nomi delle funzionalità, ad esempio il mapping spaziale, non sono sostantivi appropriati, a meno che non siano marchiati.
-*   Non scrivere collegamenti nel formato "per altre informazioni, vedere [qui](../contributing.md)". Al contrario, posizionare i collegamenti in modo [contestuale](../contributing.md) senza indirizzare il lettore a andare altrove.
-*   Questa documentazione è l'origine della verità. Le informazioni devono essere accurate e aggiornate.
+*   Usare il buon senso.
+*   Non cercare di essere divertente.
+*   Scrivere usando l'ortografia e le convenzioni en-us (Stati Uniti inglese).
+*   **Usare la distinzione tra maiuscole e minuscole per titoli, intestazioni di sezione e... bene tutto.** All'interno delle frasi, le uniche parole che devono essere in maiuscolo sono sostantivi propri (proprio come si è appreso nella grammatica). I nomi dei marchi (ad esempio Microsoft HoloLens) sono nomi propri. I nomi delle funzionalità ,ad esempio il mapping spaziale, non sono nomi propri, a meno che non siano marchi registrati.
+*   Non scrivere collegamenti nel formato "Per altre informazioni, [vedere qui".](../contributing.md) Inserire invece i collegamenti [contestualmente](../contributing.md) senza indirizzare il lettore a un'altra posizione.
+*   Questa documentazione è la fonte di verità. Le informazioni devono essere accurate e aggiornate.
 
 <br>
 
@@ -76,14 +76,14 @@ Convenzioni editoriali:
 
 :::row:::
     :::column:::
-        ![Descrizione delle immagini disponibili.](images/image-466x466px-2-columns.jpg)<br>
-        **Testo dell'etichetta #1 immagine**<br>
-        Ulteriori chiarimenti e descrizioni dell'immagine-facoltativo, utilizzare in base alle esigenze
+        ![Descrizione delle immagini qui.](images/image-466x466px-2-columns.jpg)<br>
+        **Testo dell#1'etichetta**<br>
+        Ulteriori chiarimenti e descrizione dell'immagine: facoltativo, usare in base alle esigenze
     :::column-end:::
     :::column:::
-        ![Descrizione delle immagini disponibili.](images/image-466x466px-2-columns.jpg)<br>
-        **Testo dell'etichetta #2 immagine**<br>
-        Ulteriori chiarimenti e descrizioni dell'immagine-facoltativo, utilizzare in base alle esigenze
+        ![Descrizione delle immagini qui.](images/image-466x466px-2-columns.jpg)<br>
+        **Testo dell#2'etichetta**<br>
+        Ulteriori chiarimenti e descrizione dell'immagine: facoltativo, usare in base alle esigenze
     :::column-end:::
 :::row-end:::
 
@@ -94,20 +94,20 @@ Convenzioni editoriali:
 
 ### <a name="3-columns"></a>3 colonne
 
-Les Nabis operando il fotorealistico il campo colori del disegno nel campo del quadro del Cloisonnism internazionale, il remodernismo socialismo geometrico astratto Abstraction concettuale, secolarismo del neo-minimismo.<br>
+Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism geometric abstraction geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism.<br>
 
 :::row:::
     :::column:::
-       ![Descrizione delle immagini disponibili.](images/image-306x306px-3-columns.jpg)<br>
-       **Testo dell'etichetta #1 immagine**<br>
+       ![Descrizione delle immagini qui.](images/image-306x306px-3-columns.jpg)<br>
+       **Testo dell#1'etichetta**<br>
     :::column-end:::
     :::column:::
-       ![Descrizione delle immagini disponibili.](images/image-306x306px-3-columns.jpg)<br>
-        **Testo dell'etichetta #2 immagine**<br>
+       ![Descrizione delle immagini qui.](images/image-306x306px-3-columns.jpg)<br>
+        **Testo dell#2'etichetta**<br>
     :::column-end:::
     :::column:::
-       ![Descrizione delle immagini disponibili.](images/image-306x306px-3-columns.jpg)<br>
-       **Testo dell'etichetta #3 immagine**<br>
+       ![Descrizione delle immagini qui.](images/image-306x306px-3-columns.jpg)<br>
+       **Immagine #3 testo dell'etichetta**<br>
     :::column-end:::
 :::row-end:::
 
@@ -116,55 +116,55 @@ Les Nabis operando il fotorealistico il campo colori del disegno nel campo del q
 
 ---
 
-## <a name="section-2---4-columns"></a>Sezione #2-4 colonne
+## <a name="section-2---4-columns"></a>Sezione #2 - 4 colonne
 
-Les Nabis operando il fotorealistico il campo colori del disegno nel campo del quadro del Cloisonnism internazionale, il remodernismo socialismo geometrico astratto Abstraction concettuale, secolarismo del neo-minimismo. Divisionism International Gothic baroque Situational International lettrism Vorticismo Gothic Art Modern Art, International Gothic Systems Art postmoderniism pop art. Il neoclassicismo internazionale luminismo.<br>
+Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism geometric abstraction geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism. Divisionismo internazionale conciso barocco barocco situazionista internazionale lettrism vorticism di arte moderna moderna, sistemi internazionali di cultura goticatica arte postmodernismo romanico pop art. Luminism situationist international neoclassicism.<br>
 
 ### <a name="4-columns"></a>4 colonne
 
-Neo-Geo umanesimo strutturalismo post-impressionismo Die Brücke esistenzialismo Superflat, Neo-Dada idealismo Gründerzeit.<br>
+Neo-geo humanism structuralism post-impressionism die brücke existentialism superflat, neo-dada idealism gründerzeit.<br>
 
 :::row:::
     :::column:::
-       ![Descrizione delle immagini disponibili.](images/image-226x226px-4-columns.jpg)<br>
-       **Testo dell'etichetta #1 immagine**<br>
+       ![Descrizione delle immagini qui.](images/image-226x226px-4-columns.jpg)<br>
+       **Testo dell#1'etichetta**<br>
     :::column-end:::
     :::column:::
-       ![Descrizione delle immagini disponibili.](images/image-226x226px-4-columns.jpg)<br>
-        **Testo dell'etichetta #2 immagine**<br>
+       ![Descrizione delle immagini qui.](images/image-226x226px-4-columns.jpg)<br>
+        **Testo dell#2'etichetta**<br>
     :::column-end:::
     :::column:::
-       ![Descrizione delle immagini disponibili.](images/image-226x226px-4-columns.jpg)<br>
-       **Testo dell'etichetta #3 immagine**<br>
+       ![Descrizione delle immagini qui.](images/image-226x226px-4-columns.jpg)<br>
+       **Immagine #3 testo dell'etichetta**<br>
     :::column-end:::
     :::column:::
-       ![Descrizione delle immagini disponibili.](images/image-226x226px-4-columns.jpg)<br>
-       **Testo dell'etichetta #4 immagine**<br>
+       ![Descrizione delle immagini qui.](images/image-226x226px-4-columns.jpg)<br>
+       **Testo dell#4'etichetta**<br>
     :::column-end:::
 :::row-end:::
 
-### <a name="subsection-name"></a>Nome sottosezione
+### <a name="subsection-name"></a>Nome della sottosezione
 
-Les Nabis operando il fotorealistico il campo colori del disegno nel campo del quadro del Cloisonnism internazionale, il remodernismo socialismo geometrico astratto Abstraction concettuale, secolarismo del neo-minimismo. Divisionism International Gothic baroque Situational International lettrism Vorticismo gothic art.<br>
+Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism geometric abstraction geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism. Divisionismo internazionale gotico barocco situazionista internazionale lettrism vorticism con arte ghiotto.<br>
 
 <br>
 
 ---
 
-## <a name="section-3---split-textimage-and-bullets"></a>Sezione #3-Suddividi testo/immagine e punti elenco
+## <a name="section-3---split-textimage-and-bullets"></a>Sezione #3 - Dividere testo/immagine e punti elenco
 
-Les Nabis operando il fotorealistico il campo colori del quadro del disegno del quadro di Cloisonnism internazionale, remodernismo socialismo geometrico Abstraction concettuale arte, strutturalismo laicismo.<br>
+Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism realisticism geometric abstraction conceptual art, secularism structuralism.<br>
 
 
 :::row:::
     :::column:::
-        ### <a name="2-columns---text-left-image-rightbr"></a>2 colonne-testo a sinistra, immagine a destra<br>
-        Descrizione testo a sinistra-azione pittura campo colori disegno New oggettività stuckismo moderna arte strutturale Neo-Dada Stuckism International New oggettivity, video game art primitivismo lyrical abstraction postminimism remodernismo illusionismo. Ego-Futurismo Surrealismo: Art Kinetic Art caravaggisti.<br>
+        ### <a name="2-columns---text-left-image-rightbr"></a>2 colonne - testo a sinistra, immagine a destra<br>
+        Testo della descrizione a sinistra- Campo di colore di action painting che dipinge il nuovo bloccatoismo oggettività modern art structuralism neo-dada stuckism international new objectivity, video game art primitivism lyrical abstraction postminimalism remodernism illusionism. Opera d'arte cinetica dell'installazione di un'opera d'arte cinetica moderna e futurista.<br>
         <br>
-        *Image (immagine): Descrizione dell'immagine.*
+        *Immagine: Descrizione dell'immagine qui.*
     :::column-end:::
         :::column:::
-        ![Aggiungi questo spaziatore quando si tenta di allineare in primo piano il testo H3](images/spacer-20x582.png)<br>
+        ![Aggiungere questo spazio quando si tenta di allineare in alto il testo H3](images/spacer-20x582.png)<br>
        ![Feedback visivo sulla prossimità della mano](images/HoloLens2_Proximity.gif)<br>
     :::column-end:::
 :::row-end:::
@@ -176,40 +176,40 @@ Les Nabis operando il fotorealistico il campo colori del quadro del disegno del 
 
 ### <a name="bullet-list"></a>Elenco puntato
 
-Les Nabis (fotorealism) il disegno del campo dei colori del quadro di Stuckism International Cloisonnism di seguito:
+Les nabis photorealism action painting color field painting stuckism international cloisonnism ::
 
-* Punto **elenco 1** -ulteriori chiarimenti e descrizioni (facoltativo, utilizzo in base alle esigenze)
-* Punto **elenco 2** -ulteriori chiarimenti e descrizioni
-* **Elemento Bullet 3** -ulteriori chiarimenti e descrizioni
+* **Punto elenco 1:** ulteriori chiarimenti e descrizione (facoltativo, usare in base alle esigenze)
+* **Punto elenco 2** - Ulteriori chiarimenti e descrizione
+* **Punto elenco 3** - Ulteriori chiarimenti e descrizione
 
 <br>
 
 ---
 
-## <a name="section-4---large-images"></a>Sezione #4-immagini di grandi dimensioni
+## <a name="section-4---large-images"></a>Sezione #4 - Immagini di grandi dimensioni
 
 ### <a name="table-layout"></a>Layout tabella
 
-Neo-Geo umanesimo strutturalismo post-impressionismo Die Brücke esistenzialismo Superflat, Neo-Dada idealismo Gründerzeit.
+Neo-geo humanism structuralism post-impressionism die brücke existentialism superflat, neo-dada idealism gründerzeit.
 
 | Distanza | Angolo di visualizzazione | Dimensione |
 |---------|---------|---------|
-| 45cm  | non inferiore a 2 ° | 1,6 x 1,6 cm |
+| 45 cm  | non inferiore a 2° | 1,6 x 1,6 cm |
 
-### <a name="large-edge-to-edge-image-min-width-of-asset--940px"></a>Immagine Edge-to-Edge grande (larghezza minima di asset = 940px)
+### <a name="large-edge-to-edge-image-min-width-of-asset--940px"></a>Immagine da bordo a bordo grande (larghezza minima dell'asset = 940 px)
 
-Il campo dei colori dell'azione disegnando la nuova oggettività del stuckismo Modern Art strutturalismo Neo-Dada Stuckism International New oggettivity, video game art primitivismo lyrical abstraction postminimism remodernity illusionism. Ego-Futurismo Surrealismo: Art Kinetic Art caravaggisti.
+Action painting color field painting new objectivity stuckism modern art structuralism neo-dada stuckism international new objectivity, video game art primitivism lyrical abstraction postminimalism remodernism illusionism. Opera d'arte cinetica dell'installazione di un'opera d'arte cinetica moderna e futurista.
 
-![Descrizione delle immagini disponibili.](images/image-hero-template.jpg)<br>
-*Descrizione delle immagini disponibili.*
+![Descrizione delle immagini qui.](images/image-hero-template.jpg)<br>
+*Descrizione delle immagini qui.*
 
 <br>
 
 ---
 
-### <a name="edge-to-edge-youtube-video"></a>Video YouTube Edge-to-Edge 
+### <a name="edge-to-edge-youtube-video"></a>Video di YouTube edge-to-edge 
 
-Impostare iframe su Width = "940" height = "530".
+Impostare iframe su width="940" height="530".
 
 <br>
 
@@ -221,20 +221,20 @@ Impostare iframe su Width = "940" height = "530".
 
 ---
 
-## <a name="section-5---pull-quotes"></a>Sezione #5-citazioni Pull
+## <a name="section-5---pull-quotes"></a>Sezione #5 - Virgolette pull
 
-> *"Maggiore è il numero di letture, maggiori sono le informazioni che si saprà. Maggiore è la quantità di informazioni apprese, maggiori saranno le posizioni.*<br>
-> -Dr. Seuss
+> *"Più si legge, più informazioni si conoscono. Più si apprende, più luoghi si andranno."*<br>
+> — Dr. Seuss
 
-> *"Un'occhiata a un libro e la voce di un'altra persona, forse qualcuno è morto per 1.000 anni. Per eseguire la lettura è necessario eseguire il viaggio nel tempo. "*<br>
-> -Carl Sagan
+> *"Uno sguardo a un libro e si ascolta la voce di un'altra persona, forse una persona che è morta per 1.000 anni. Leggere è passare attraverso il tempo."*<br>
+> — Carl Sagan
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Nome dell'articolo correlato 1](../design/design.md)
-* [Nome dell'articolo 2 correlato](../design/design.md)
-* [Nome articolo 3 correlato-collegamento a una sezione specifica](../design/design.md#2-core-concepts)
+* [Nome dell'articolo correlato 2](../design/design.md)
+* [Nome dell'articolo correlato 3: collegamento a una sezione specifica](../design/design.md#2-core-concepts)

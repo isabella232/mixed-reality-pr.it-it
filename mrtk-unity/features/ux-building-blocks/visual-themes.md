@@ -1,76 +1,76 @@
 ---
-title: Temi degli oggetti visivi
-description: "Panoramica: Controllo flessibile dei temi visivi degli asset dell'esperienza utente in MRTK"
+title: Temi visivi
+description: Panoramica del controllo flessibile dei temi visivi degli asset dell'esperienza utente in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, temi MRTK,
-ms.openlocfilehash: d97c470bf1d77299c6848990cdc69d886d432ecb
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: f7e0b10f51947884c4d23191fd147315084c5295e9b48953bb5de10b7cbc0d22
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177176"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223970"
 ---
-# <a name="visual-themes"></a>Temi degli oggetti visivi
+# <a name="visual-themes"></a>Temi visivi
 
-I temi consentono un controllo flessibile degli asset dell'esperienza utente in risposta a diverse transizioni di stato. Ciò può comportare la modifica del colore di un pulsante, il ridimensionamento di un elemento in risposta all'attivazione e così via. Il framework dei temi visivi è costituito da due parti chiave: 1) configurazione e 2) motori di runtime.
+I temi consentono un controllo flessibile degli asset dell'esperienza utente in risposta a diverse transizioni di stati. Ciò può comportare la modifica del colore di un pulsante, il ridimensionamento di un elemento in risposta all'attivazione e così via. Il framework temi visivi è costituito da due parti chiave: 1) configurazione e 2) motori di runtime.
 
-[Le configurazioni](#theme-configuration) dei temi [](#theme-engines) sono definizioni di proprietà e tipi, mentre i motori dei temi sono classi che utilizzano le configurazioni e implementano la logica per aggiornare trasformazioni, materiali e altro ancora in fase di esecuzione.
+[Le configurazioni](#theme-configuration) del tema [](#theme-engines) sono definizioni di proprietà e tipi, mentre i motori tema sono classi che utilizzano le configurazioni e implementano la logica per aggiornare trasformazioni, materiali e altro ancora in fase di esecuzione.
 
 ## <a name="theme-configuration"></a>Configurazione del tema
 
-Le configurazioni dei temi [sono ScriptableObject che](https://docs.unity3d.com/Manual/class-ScriptableObject.html) definiscono come verranno inizializzati i motori dei temi in fase di esecuzione. Definiscono le proprietà e i valori da usare in risposta all'input o ad altre modifiche di stato durante l'esecuzione dell'app. Come [asset ScriptableObjects,](https://docs.unity3d.com/Manual/class-ScriptableObject.html) le configurazioni dei temi possono essere definite una sola volta e quindi riutilizzabili in diversi componenti dell'esperienza utente.
+Le configurazioni del tema [sono ScriptableObject che](https://docs.unity3d.com/Manual/class-ScriptableObject.html) definiscono la modalità di inizializzazione dei motori tema in fase di esecuzione. Definiscono le proprietà e i valori da utilizzare in risposta all'input o ad altre modifiche dello stato quando l'app è in esecuzione. Come [asset ScriptableObjects,](https://docs.unity3d.com/Manual/class-ScriptableObject.html) le configurazioni del tema possono essere definite una sola volta e quindi riutilizzabili in diversi componenti dell'esperienza utente.
 
 Per creare un nuovo [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme) asset:
 
 1) Fare clic con il pulsante destro *del mouse Project finestra*
-1) Selezionare Create Mixed Reality Toolkit Theme **(Crea**  >  **tema Toolkit** realtà  >  **mista)**
+1) Selezionare **Crea**  >  **tema Toolkit** realtà  >  **mista**
 
 Gli asset di configurazione del tema di esempio sono disponibili in `MRTK/SDK/Features/UX/Interactable/Themes` .
 
-![Esempio di ScriptableObject del tema nel controllo](../images/visual-themes/ThemeInspectorExample.png)
+![Esempio scriptableObject del tema nel controllo](../images/visual-themes/ThemeInspectorExample.png)
 
 ### <a name="states"></a>Stati
 
-Quando si crea un nuovo [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme) , la prima cosa da impostare è quali stati sono disponibili. La *proprietà States* indica il numero di valori che una configurazione Theme deve definire perché sarà presente un valore per ogni stato. Nell'immagine di esempio precedente, gli stati predefiniti definiti per il componente [Interactable](interactable.md#general-input-settings) sono *Default,* *Focus,* *Pressed* e *Disabled.* Questi sono definiti nel file di `DefaultInteractableStates` asset (Assets/MRTK/SDK/Features/UX/Interactable/States).
+Quando si crea un nuovo [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme) , la prima cosa da impostare è quali stati sono disponibili. La *proprietà States* indica il numero di valori che una configurazione theme deve definire perché sarà presente un valore per stato. Nell'immagine di esempio precedente, gli stati predefiniti definiti per il componente [Interactable](interactable.md#general-input-settings) sono *Default*, *Focus*, *Pressed* e *Disabled*. Questi sono definiti nel `DefaultInteractableStates` file di asset (Assets/MRTK/SDK/Features/UX/Interactable/States).
 
 Per creare un nuovo [`State`](xref:Microsoft.MixedReality.Toolkit.UI.States) asset:
 
 1) Fare clic con il pulsante destro *del mouse Project finestra*
-1) Selezionare **Create** Mixed Reality Toolkit State  >  **(Crea stato** Toolkit realtà  >  **mista)**
+1) Selezionare **Crea**  >  **realtà mista Toolkit**  >  **stato**
 
-![Esempio scriptableObject di stati nel controllo](../images/interactable/DefaultInteractableStates.png)
+![Esempio di ScriptableObject di stati nel controllo](../images/interactable/DefaultInteractableStates.png)
 
-Uno ScriptableObject definisce sia l'elenco di stati che il tipo [`State`](xref:Microsoft.MixedReality.Toolkit.UI.States) di *StateModel* da creare per questi stati. StateModel *è* una classe che estende e implementa la logica della macchina a [`BaseStateModel`](xref:Microsoft.MixedReality.Toolkit.UI.BaseStateModel) stati per generare lo stato corrente in fase di esecuzione. Lo stato corrente di questa classe viene in genere usato dai motori dei temi in fase di esecuzione per determinato i valori da impostare in base alle proprietà dei materiali, alle trasformazioni GameObject e altro ancora.
+ScriptableObject definisce sia l'elenco di stati che il [`State`](xref:Microsoft.MixedReality.Toolkit.UI.States) tipo di *StateModel* da creare per questi stati. StateModel *è* una classe che estende e implementa la logica della macchina a [`BaseStateModel`](xref:Microsoft.MixedReality.Toolkit.UI.BaseStateModel) stati per generare lo stato corrente in fase di esecuzione. Lo stato corrente di questa classe viene in genere usato dai motori tema in fase di esecuzione per indicare quali valori impostare sulle proprietà del materiale, sulle trasformazioni GameObject e altro ancora.
 
 ### <a name="theme-engine-properties"></a>Proprietà del motore del tema
 
-Al di *fuori di States*, un asset definisce anche un elenco di motori a tema e le proprietà associate per questi [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme) motori. Un [motore Theme definisce](#theme-engines) di nuovo la logica per impostare i valori corretti su un GameObject in fase di esecuzione.
+Al di *fuori degli* stati , un asset definisce anche un elenco di motori tema e le proprietà associate per [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme) questi motori. Un [motore tema definisce](#theme-engines) di nuovo la logica per impostare i valori corretti su un GameObject in fase di esecuzione.
 
-Un [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme) asset può definire più motori di tema per ottenere transizioni sofisticate degli stati di visualizzazione che hanno come destinazione più proprietà GameObject.
+Un asset può definire più motori tema per ottenere transizioni sofisticate degli stati di visualizzazione che hanno come [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme) destinazione più proprietà GameObject.
 
 **Runtime del tema**
 
-Definisce il tipo di classe del motore Theme che verrà creato
+Definisce il tipo di classe del motore tema che verrà creato
 
 **Allentamento**
 
-Alcuni *motori dei temi,* se definiscono la proprietà [IsEasingSupported](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.IsEasingSupported) come true, supportano l'easing tra gli stati. Ad esempio, il lerping tra due colori quando si verifica una modifica dello stato. La *durata* definisce in secondi per quanto tempo è  possibile passare dal valore iniziale al valore finale e la curva di animazione definisce la frequenza di modifica durante tale periodo di tempo.
+Alcuni *motori tema,* se definiscono la proprietà [IsEasingSupported](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.IsEasingSupported) come true, supportano l'easing tra gli stati. Ad esempio, la lerping tra due colori quando si verifica una modifica dello stato. La *durata* definisce in secondi per quanto tempo è  possibile passare dal valore iniziale al valore finale e la curva di animazione definisce la velocità di modifica durante tale periodo di tempo.
 
-**Proprietà shader**
+**Proprietà dello shader**
 
-Alcuni *motori dei temi,* se definiscono la proprietà [AreShadersSupported](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.AreShadersSupported) come true, modificheranno determinate proprietà dello shader in fase di esecuzione. I *campi Shader* e *Proprietà* definiscono la proprietà shader di destinazione.
+Alcuni *motori tema,* se definiscono la proprietà [AreShadersSupported](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.AreShadersSupported) come true, modificheranno determinate proprietà dello shader in fase di esecuzione. I *campi Shader* e *Proprietà* definiscono la proprietà shader di destinazione.
 
 ### <a name="create-a-theme-configuration-via-code"></a>Creare una configurazione del tema tramite codice
 
-In generale, è più semplice progettare configurazioni dei temi tramite il controllo Unity, ma in alcuni casi i temi devono essere generati dinamicamente in fase di esecuzione tramite codice. Il frammento di codice seguente offre un esempio di come eseguire questa attività.
+In generale, è più semplice progettare configurazioni dei temi tramite il controllo Unity, ma in alcuni casi i temi devono essere generati dinamicamente in fase di esecuzione tramite codice. Il frammento di codice seguente fornisce un esempio di come eseguire questa attività.
 
 Per accelerare lo sviluppo, i metodi helper seguenti sono utili per semplificare la configurazione.
 
 [`Interactable.GetDefaultInteractableStates()`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable): crea un nuovo States ScriptableObject con i quattro valori di stato predefiniti usati nel [componente Interactable.](interactable.md)
 
-[`ThemeDefinition.GetDefaultThemeDefinition<T>()`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeDefinition) - Ogni motore dei temi definisce una configurazione predefinita con le proprietà corrette necessarie per quel tipo di runtime Theme. Questo helper crea una definizione per il tipo di motore del tema specificato.
+[`ThemeDefinition.GetDefaultThemeDefinition<T>()`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeDefinition) - Ogni motore tema definisce una configurazione predefinita con le proprietà corrette necessarie per il tipo di runtime Theme. Questo helper crea una definizione per il tipo di motore tema specificato.
 
 ```c#
 // This code example builds a Theme ScriptableObject that can be used with an Interactable component.
@@ -97,13 +97,13 @@ testTheme.States = defaultStates;
 testTheme.Definitions = new List<ThemeDefinition>() { newThemeType };
 ```
 
-## <a name="theme-engines"></a>Motori dei temi
+## <a name="theme-engines"></a>Motori a tema
 
-Un [motore dei temi](#theme-engines) è una classe che si estende dalla classe [`InteractableThemeBase`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase) . Le istanze di queste classi vengono create in fase di esecuzione e configurate con [`ThemeDefinition`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeDefinition) un oggetto come descritto in precedenza.
+Un [motore tema](#theme-engines) è una classe che si estende dalla classe [`InteractableThemeBase`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase) . Viene creata un'istanza di queste classi in fase di esecuzione e configurata con un [`ThemeDefinition`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeDefinition) oggetto come descritto in precedenza.
 
-### <a name="default-theme-engines"></a>Motori del tema predefiniti
+### <a name="default-theme-engines"></a>Motori tema predefiniti
 
-MRTK viene fornito con un set predefinito di motori dei temi elencati di seguito:
+MRTK viene fornito con un set predefinito di motori a tema elencati di seguito:
 
 - [`InteractableActivateTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableActivateTheme)
 - [`InteractableAnimatorTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableAnimatorTheme)
@@ -120,21 +120,21 @@ MRTK viene fornito con un set predefinito di motori dei temi elencati di seguito
 - [`InteractableTextureTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableTextureTheme)
 - [`ScaleOffsetColorTheme`](xref:Microsoft.MixedReality.Toolkit.UI.ScaleOffsetColorTheme)
 
-I motori dei temi predefiniti sono disponibili in `MRTK/SDK/Features/UX/Scripts/VisualThemes/ThemeEngines` .
+I motori tema predefiniti sono disponibili in `MRTK/SDK/Features/UX/Scripts/VisualThemes/ThemeEngines` .
 
-### <a name="custom-theme-engines"></a>Motori dei temi personalizzati
+### <a name="custom-theme-engines"></a>Motori tema personalizzati
 
-Come indicato, un motore dei temi è definito come una classe che si estende dalla [`InteractableThemeBase`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase) classe . Di conseguenza, il nuovo motore dei temi deve estendere solo questa classe e implementare quanto segue:
+Come indicato, un motore tema è definito come classe che si estende dalla [`InteractableThemeBase`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase) classe . Di conseguenza, il nuovo motore dei temi deve estendere solo questa classe e implementare quanto segue:
 
 #### <a name="mandatory-implementations"></a>Implementazioni obbligatorie
 
 `public abstract void SetValue(ThemeStateProperty property, int index, float percentage)`(xref:Microsoft.MixedReality. Toolkit. Ui. InteractableThemeBase.SetValue)
 
-Per la proprietà specificata, che può essere identificata da , impostare il relativo valore di stato corrente nell'host GameObject di `ThemeStateProperty.Name` destinazione, ad esempio impostare il colore del materiale e così via). *L'indice* indica il valore dello stato corrente a cui accedere e la percentuale *,* un valore float compreso tra 0 e 1, viene usato per l'easing/lerping tra i valori.
+Per la proprietà specificata, che può essere identificata da , impostare il relativo valore di stato corrente nell'host GameObject di `ThemeStateProperty.Name` destinazione, ad esempio impostare il colore del materiale e così via). *L'indice* indica il valore dello stato corrente a cui accedere e la *percentuale,* un valore float compreso tra 0 e 1, viene usato per l'easing/lerping tra valori.
 
 `public abstract ThemePropertyValue GetProperty(ThemeStateProperty property)`(xref:Microsoft.MixedReality. Toolkit. Ui. InteractableThemeBase.GetProperty)
 
-Per la proprietà specificata, che può essere identificata da , restituisce il valore corrente impostato nel GameObject host di `ThemeStateProperty.Name` destinazione,ad esempio il colore del materiale corrente, l'offset della posizione locale corrente e così via). Viene usato principalmente per memorizzare nella cache il valore iniziale durante l'easing tra gli stati.
+Per la proprietà specificata, che può essere identificata da , restituisce il valore corrente impostato nell'oggetto GameObject host di `ThemeStateProperty.Name` destinazione, ad esempio il colore del materiale corrente, l'offset della posizione locale corrente e così via). Viene usato principalmente per memorizzare nella cache il valore iniziale durante l'allerta tra gli stati.
 
 `public abstract ThemeDefinition GetDefaultThemeDefinition()`(xref:Microsoft.MixedReality. Toolkit. Ui. InteractableThemeBase.GetDefaultThemeDefinition)
 
@@ -142,28 +142,28 @@ Restituisce un [`ThemeDefinition`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeD
 
 `protected abstract void SetValue(ThemeStateProperty property, ThemePropertyValue value)`
 
-Variante protetta della definizione pubblica, ad eccezione del valore ThemePropertyValue fornito da impostare invece di indirizzare l'uso della configurazione `SetValue()` dell'indice e/o della percentuale.
+Variante protetta della definizione pubblica, ad eccezione di ThemePropertyValue fornito da impostare invece di indirizzare all'uso `SetValue()` della configurazione dell'indice e/o della percentuale.
 
-#### <a name="recommended-overrides"></a>Override consigliati
+#### <a name="recommended-overrides"></a>Sostituzioni consigliate
 
 [`InteractableThemeBase.Init(GameObject host, ThemeDefinition settings)`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase)
 
-Eseguire qui i passaggi di inizializzazione per il parametro *GameObject* fornito e usando le proprietà e le configurazioni definite nel *parametro ThemeDefinition.* È consigliabile chiamare `base.Init(host, settings)` all'inizio di un override.
+Eseguire qui i passaggi di inizializzazione che hanno come destinazione il parametro *GameObject* fornito e usando le proprietà e le configurazioni definite nel *parametro ThemeDefinition.* È consigliabile chiamare `base.Init(host, settings)` all'inizio di un override.
 
 [`InteractableThemeBase.IsEasingSupported`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.IsEasingSupported)
 
-Se il motore dei temi personalizzato può supportare l'easing tra i valori configurati tramite la [`ThemeDefinition.Easing`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeDefinition.Easing) proprietà .
+Se il motore tema personalizzato può supportare l'easing tra i valori configurati tramite la [`ThemeDefinition.Easing`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeDefinition.Easing) proprietà .
 
 [`InteractableThemeBase.AreShadersSupported`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.AreShadersSupported)
 
-Se il motore dei temi personalizzato può supportare la destinazione delle proprietà dello shader. È consigliabile estendere da per trarre vantaggio dall'infrastruttura esistente per impostare/ottenere in modo efficiente le proprietà [`InteractableShaderTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableShaderTheme) dello shader tramite [MaterialPropertyBlocks.](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) Le informazioni sulle proprietà dello shader vengono archiviate in [`ThemeStateProperty`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeStateProperty) ogni tramite [`ThemeStateProperty.TargetShader`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeStateProperty.TargetShader) e [`ThemeStateProperty.ShaderPropertyName`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeStateProperty.ShaderPropertyName) .
+Se il motore tema personalizzato può supportare la destinazione delle proprietà dello shader. È consigliabile estendere da per trarre vantaggio dall'infrastruttura esistente per impostare/ottenere in modo efficiente le proprietà [`InteractableShaderTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableShaderTheme) dello shader tramite [MaterialPropertyBlocks](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html). Le informazioni sulle proprietà dello shader vengono archiviate in [`ThemeStateProperty`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeStateProperty) ogni tramite [`ThemeStateProperty.TargetShader`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeStateProperty.TargetShader) e [`ThemeStateProperty.ShaderPropertyName`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeStateProperty.ShaderPropertyName) .
 
 > [!NOTE]
-> Se si [`InteractableShaderTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableShaderTheme) estende , può anche essere utile eseguire l'override di [InteractableShaderTheme.DefaultShaderProperty](xref:Microsoft.MixedReality.Toolkit.UI.InteractableShaderTheme.DefaultShaderProperty) tramite *il nuovo .*
+> Se si [`InteractableShaderTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableShaderTheme) estende , può anche essere utile eseguire l'override di [InteractableShaderTheme.DefaultShaderProperty](xref:Microsoft.MixedReality.Toolkit.UI.InteractableShaderTheme.DefaultShaderProperty) tramite *il nuovo*.
 >
 > Codice di esempio: `protected new const string DefaultShaderProperty = "_Color";`
 >
-> Inoltre, le classi seguenti estendono la [`InteractableShaderTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableShaderTheme) classe che usa di nuovo [MaterialPropertyBlocks](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) per modificare i valori delle proprietà dello shader. Questo approccio [consente di migliorare le](https://docs.unity3d.com/Manual/DrawCallBatching.html) prestazioni perché *MaterialPropertyBlocks* non crea nuovi materiali di cui è stata creata un'istanza quando i valori cambiano. Tuttavia, l'accesso alle proprietà [tipiche della](https://docs.unity3d.com/ScriptReference/Material.html) classe Material non restituirà i valori previsti. Usare *MaterialPropertyBlocks per* ottenere e convalidare i valori correnti delle proprietà dei materiali,ad esempio *_Color* o *_MainTex*).
+> Inoltre, le classi seguenti estendono la classe che usa di nuovo [`InteractableShaderTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableShaderTheme) [MaterialPropertyBlocks](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) per modificare i valori delle proprietà shader. Questo approccio [consente di migliorare le](https://docs.unity3d.com/Manual/DrawCallBatching.html) prestazioni perché *MaterialPropertyBlocks* non crea nuovi materiali con istanze quando i valori cambiano. Tuttavia, l'accesso alle proprietà [tipiche della](https://docs.unity3d.com/ScriptReference/Material.html) classe Material non restituirà i valori previsti. Usare *MaterialPropertyBlocks* per ottenere e convalidare i valori correnti delle proprietà del materiale,ad esempio *_Color* o *_MainTex*).
 >
 > - [`InteractableColorChildrenTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableColorChildrenTheme)
 > - [`InteractableColorTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableColorTheme)
@@ -172,11 +172,11 @@ Se il motore dei temi personalizzato può supportare la destinazione delle propr
 
 [`InteractableThemeBase.Reset`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.Reset)
 
-Indica al tema di reimpostare le proprietà modificate sui valori originali impostati nel GameObject host quando è stato inizializzato il motore del tema.  
+Indica al tema di reimpostare le proprietà modificate sui valori originali impostati nell'host GameObject quando questo motore del tema è stato inizializzato.  
 
-### <a name="custom-theme-engine-example"></a>Esempio di motore del tema personalizzato
+### <a name="custom-theme-engine-example"></a>Esempio di motore tema personalizzato
 
-La classe seguente è un esempio di un nuovo motore dei temi personalizzato. Questa implementazione troverà un [componente MeshRenderer](https://docs.unity3d.com/ScriptReference/MeshRenderer.html) nell'oggetto host inizializzato e ne controlla la visibilità in base allo stato corrente.
+La classe seguente è un esempio di un nuovo motore tema personalizzato. Questa implementazione troverà un [componente MeshRenderer](https://docs.unity3d.com/ScriptReference/MeshRenderer.html) nell'oggetto host inizializzato e ne controlla la visibilità in base allo stato corrente.
 
 ```c#
 using Microsoft.MixedReality.Toolkit.UI;
@@ -251,10 +251,10 @@ public class MeshVisibilityTheme : InteractableThemeBase
 
 ## <a name="end-to-end-example"></a>Esempio end-to-end
 
-Estendendo il motore dei temi personalizzato definito nella sezione precedente, l'esempio di codice seguente illustra come controllare questo tema in fase di esecuzione. In particolare, come impostare lo stato corrente sul tema in modo che la visibilità di MeshRenderer sia aggiornata in modo appropriato.
+Estendendo il motore tema personalizzato definito nella sezione precedente, l'esempio di codice seguente illustra come controllare questo tema in fase di esecuzione. In particolare, come impostare lo stato corrente sul tema in modo che la visibilità di MeshRenderer sia aggiornata in modo appropriato.
 
 > [!NOTE]
-> `theme.OnUpdate(state,force)` in genere deve essere chiamato nel metodo Update() per supportare i motori dei temi che utilizzano l'easing/lerping tra i valori.
+> `theme.OnUpdate(state,force)` in genere deve essere chiamato nel metodo Update() per supportare i motori a tema che utilizzano l'easing/lerping tra i valori.
 
 ```c#
 using Microsoft.MixedReality.Toolkit.UI;
@@ -296,6 +296,6 @@ public class MeshVisibilityController : MonoBehaviour
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Con interazione](interactable.md)
+- [Interagibile](interactable.md)

@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, EyeTracking,
-ms.openlocfilehash: ff464c6f2381a9df020a9ccf807672d4463d662c
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 37411eb344b4efae03a00bb06a31ce56182cc724d96b2cdcc008f10a66d56011
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175117"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115224762"
 ---
 # <a name="eyes-and-hands"></a>Occhi e mani
 
@@ -25,11 +25,11 @@ Nelle demo [sul tracciamento oculare di MRTK](../../example-scenes/eye-tracking-
 
 Si noti che MRTK è attualmente progettato in modo che i raggi della mano a distanza fungono da puntatori di messa a fuoco classificati in ordine di priorità.
 Ciò significa che i puntatori della testa e dello sguardo fisso verranno automaticamente soppressi quando viene rilevata una mano e diventeranno nuovamente visibili dopo aver detto "Seleziona".
-Tuttavia, questo potrebbe non essere il modo in cui si vuole interagire a una distanza e preferire una semplice interazione "sguardo fisso e _commit"_ indipendente dalla presenza di mani nella visualizzazione.
+Tuttavia, questo potrebbe non essere il modo in cui si vuole interagire a distanza e preferire una semplice interazione "sguardo fisso e _commit"_ indipendente dalla presenza di mani nella visualizzazione.
 
 ### <a name="how-to-disable-the-hand-ray"></a>Come disabilitare il raggio della mano
 
-Per disabilitare l'indicatore di misura del raggio della mano, è sufficiente rimuovere _"DefaultControllerPointer"_ nell'impostazione di configurazione _Input -> pointer_ MRTK.
+Per disabilitare l'indicatore di misura del raggio della mano, è sufficiente rimuovere _"DefaultControllerPointer"_ nell'impostazione di configurazione _Input -> POINTER_ MRTK.
 Per usare occhi e mani come descritto in precedenza nell'app, assicurarsi anche di soddisfare tutti i requisiti per [l'uso del tracciamento oculare.](eye-tracking-basic-setup.md)
 
 ![Come rimuovere il raggio della mano](../../images/eye-tracking/mrtk_setup_removehandray.jpg)

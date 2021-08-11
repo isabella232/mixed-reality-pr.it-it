@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, funzionalità multiutente, Photon, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure
 ms.localizationpriority: high
-ms.openlocfilehash: 4be0fc30b6d1b401bf137be4060704f54515ceb1
-ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
+ms.openlocfilehash: c9a37dd94083b796da6d5fba2727d739112e411b494af5882ad08525e733a722
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114702484"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200788"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4. Condivisione dei movimenti di oggetti con più utenti
 
@@ -27,17 +27,17 @@ In questa esercitazione si apprenderà come condividere i movimenti degli oggett
 
 In questa sezione preparerai la scena aggiungendo il prefab dell'esercitazione.
 
-Nella finestra Hierarchy (Gerarchia) espandi l'oggetto **MixedRealityPlayspace** e seleziona l'oggetto figlio **Main Camera** (Fotocamera principale), quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente AR Camera Manager **(Script) (Gestione** fotocamera AR - Script) all'oggetto Main Camera **(Fotocamera** principale):
+Nella finestra Gerarchia espandere l'oggetto **MixedRealityPlayspace** e selezionare l'oggetto figlio **Main Camera,** quindi nella finestra Inspector (Controllo) usare il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente AR Camera **Manager (Script)** all'oggetto Fotocamera **principale:**
 
-![Unity con componente AR Camera Manager parzialmente configurato](images/mr-learning-sharing/sharing-04-section1-step1-0.png)
+![Unity con il componente AR Camera Manager parzialmente configurato](images/mr-learning-sharing/sharing-04-section1-step1-0.png)
 
 Nella finestra Project (Progetto) passare alla cartella **Assets** (Asset) > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** (Prefab) e trascinare il prefab **TableAnchor** nell'oggetto **SharedPlayground** nella finestra Hierarchy (Gerarchia) per aggiungerlo alla scena come elemento figlio dell'oggetto SharedPlayground:
 
 ![Unity con il prefab TableAnchor appena aggiunto selezionato](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
 
-Nella finestra Hierarchy (Gerarchia) verifica che **l'oggetto MixedRealityPlayspace** sia espanso e che **l'oggetto TableAnchor** sia selezionato. Trascinare **il componente Main Camera** **(Fotocamera** principale) nel campo Camera (Fotocamera) del componente **AR Session Origin (Origine** sessione AR) di **TableAnchor:**
+Nella finestra Gerarchia verificare che **l'oggetto MixedRealityPlayspace** sia espanso e che **l'oggetto TableAnchor** sia selezionato. Trascinare **il componente Fotocamera** principale nel campo **Camera** del componente Origine sessione **AR** di **TableAnchor:**
 
-![Unity con l'assegnazione della fotocamera principale dell'origine sessione AR configurata](images/mr-learning-sharing/sharing-04-section1-step1-2.png)
+![Unity con l'assegnazione della fotocamera principale ar Session Origin configurata](images/mr-learning-sharing/sharing-04-section1-step1-2.png)
 
 ## <a name="configuring-pun-to-instantiate-the-objects"></a>Configurazione di PUN per creare un'istanza degli oggetti
 

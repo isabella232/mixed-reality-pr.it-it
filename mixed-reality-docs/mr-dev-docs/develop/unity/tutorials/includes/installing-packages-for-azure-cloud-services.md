@@ -1,14 +1,14 @@
 ---
-ms.openlocfilehash: 7cd9400ddb83b95f145a9b962be51aaed30df47b
-ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
+ms.openlocfilehash: eaa7ee56cdaf8b003990571d85f0c2a3bd61ba74fcc0a1112b498fef08032759
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114224464"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115227061"
 ---
 # <a name="unity-2020--openxr"></a>[Unity 2020 + OpenXR](#tab/openxr)
 
-Nel menu Unity selezionare **Finestra** Gestione pacchetti per aprire la finestra Gestione pacchetti, quindi verificare che sia installata la versione  >   di **AR Foundation**  >  **4.1.7.**
+Nel menu di Unity selezionare **Window** Gestione pacchetti per aprire la finestra Gestione pacchetti e quindi verificare che sia installata la versione  >   **AR Foundation**  >  **4.1.7.**
 
 ![Package Manager di Unity con AR Foundation selezionato](../images/mr-learning-asa/asa-02-section3-step1-1-OpenXR.png)
 
@@ -22,18 +22,18 @@ Aggiungere AzurespatialAnchors SDK V2.10 al progetto. Per aggiungere i pacchetti
 Scarica e **importa** i pacchetti personalizzati di Unity seguenti, **nell'ordine in cui sono elencati**:
 
 * [AzureStorageForUnity.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureStorageForUnity.unitypackage)
-* [MRTK. Tutorials.AzureCloudServices.XRPlugginManagement.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.XRPlugginManagement.unitypackage)
+* [MRTK. Tutorials.AzureCloudServices.XRPlumanagementManagement.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.XRPlugginManagement.unitypackage)
 
 Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progetto) avrà un aspetto simile al seguente:
 
 ![Finestre Hierarchy, Scene e Project di Unity dopo l'importazione degli asset dell'esercitazione](../images/mr-learning-azure/tutorial1-section4-step1-1-OpenXR.png)
 
 > [!TIP]
-> Per un promemoria su come importare un pacchetto personalizzato unity, è possibile fare riferimento alle istruzioni sull'importazione della realtà [mista Toolkit](../mr-learning-base-04.md#importing-the-tutorial-assets)   istruzioni.
+> Per un promemoria su come importare un pacchetto personalizzato unity, puoi fare riferimento alle istruzioni relative all'importazione della realtà [mista Toolkit.](../mr-learning-base-04.md#importing-the-tutorial-assets)  
 
 # <a name="unity-2020--windows-xr-plugin"></a>[Unity 2020 + Windows plug-in XR](#tab/winxr)
 
-Nel menu Unity selezionare **Window** Gestione pacchetti per aprire la finestra Gestione pacchetti, quindi  >   selezionare AR Foundation > **versione 4.0.12** e fare clic sul pulsante **Installa** per installare il pacchetto:
+Nel menu di Unity selezionare **Window** Gestione pacchetti (Finestra Gestione pacchetti) per aprire la finestra Gestione pacchetti, quindi  >   selezionare AR Foundation **> 4.0.12 version (Versione AR Foundation > 4.0.12)** e fare clic sul pulsante **Install** (Installa) per installare il pacchetto:
 
 ![Package Manager di Unity con AR Foundation selezionato](../images/mr-learning-asa/asa-02-section3-step1-1-XRSDK.png)
 
@@ -47,18 +47,18 @@ Aggiungere AzurespatialAnchors SDK V2.10 al progetto. Per aggiungere i pacchetti
 Scarica e **importa** i pacchetti personalizzati di Unity seguenti, **nell'ordine in cui sono elencati**:
 
 * [AzureStorageForUnity.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureStorageForUnity.unitypackage)
-* [MRTK. Tutorials.AzureCloudServices.XRPlugginManagement.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.XRPlugginManagement.unitypackage)
+* [MRTK. Tutorials.AzureCloudServices.XRPlumanagementManagement.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.XRPlugginManagement.unitypackage)
 
 Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progetto) avrà un aspetto simile al seguente:
 
 ![Finestre Hierarchy, Scene e Project di Unity dopo l'importazione degli asset dell'esercitazione](../images/mr-learning-azure/tutorial1-section4-step1-1-XRSDK.png)
 
 > [!TIP]
-> Per un promemoria su come importare un pacchetto personalizzato unity, è possibile fare riferimento alle istruzioni sull'importazione della realtà [mista Toolkit](../mr-learning-base-04.md#importing-the-tutorial-assets)   istruzioni.
+> Per un promemoria su come importare un pacchetto personalizzato unity, puoi fare riferimento alle istruzioni relative all'importazione della realtà [mista Toolkit.](../mr-learning-base-04.md#importing-the-tutorial-assets)  
 
 # <a name="legacy-wsa"></a>[Legacy WSA](#tab/wsa)
 
-Nel menu Unity selezionare **Window** Gestione pacchetti per aprire la finestra Gestione pacchetti, quindi  >   selezionare AR Foundation > **versione 3.1.3** e fare clic sul pulsante **Installa** per installare il pacchetto:
+Nel menu di Unity selezionare **Window** Gestione pacchetti (Finestra Gestione pacchetti) per aprire la finestra Gestione pacchetti, quindi  >   selezionare AR Foundation **> 3.1.3 version (Versione AR Foundation > 3.1.3)** e fare clic sul pulsante **Install** (Installa) per installare il pacchetto:
 
 ![Package Manager di Unity con AR Foundation selezionato](../images/mr-learning-asa/asa-02-section3-step1-1-Legacy.png)
 
@@ -82,4 +82,4 @@ Dopo l'importazione degli asset dell'esercitazione, la finestra Project (Progett
 > Se vengono visualizzati avvisi CS0618 che indicano che 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' e 'WorldAnchor.GetNativeSpatialAnchorPtr()' sono obsoleti, è possibile ignorare tali avvisi.
 
 > [!TIP]
-> Per un promemoria su come importare un pacchetto personalizzato unity, è possibile fare riferimento alle istruzioni sull'importazione della realtà [mista Toolkit](../mr-learning-base-04.md#importing-the-tutorial-assets)   istruzioni.
+> Per un promemoria su come importare un pacchetto personalizzato unity, puoi fare riferimento alle istruzioni relative all'importazione della realtà [mista Toolkit.](../mr-learning-base-04.md#importing-the-tutorial-assets)  

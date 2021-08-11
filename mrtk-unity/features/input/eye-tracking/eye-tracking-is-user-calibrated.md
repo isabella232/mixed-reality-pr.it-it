@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, tracciamento oculare, calibrazione,
-ms.openlocfilehash: a2023a2d7f6a0254e8fef32f4faf09def956e94f
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 02b173bbc7a6bf410d3521b37660f292b8e3340de6b1a98007fdbc200f26bc49
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177200"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115199770"
 ---
 # <a name="eye-calibration"></a>Calibrazione oculare
 
@@ -43,8 +43,8 @@ Dopo la ricezione dei dati, restituirà true o false per indicare che la calibra
 
 3. Vedere _EyeCalibrationChecker:_
    - In questa scena è già disponibile un esempio per rilevare se l'utente corrente è calibrato nell'oggetto gioco *_EyeCalibrationChecker_*.
-Contiene semplicemente alcune mesh di testo e include alcuni trigger aggiuntivi per la fusione della notifica in e in uscita. Ciò include l'aumento lento delle dimensioni e dell'opacità in caso di attivazione.
-Quando la notifica viene ignorata, diminuisce lentamente le dimensioni e si dissolve in uscita.
+Contiene semplicemente alcune mesh di testo e include alcuni trigger aggiuntivi per la fusione della notifica in e in uscita. Ciò include l'aumento lento delle dimensioni e dell'opacità all'attivazione.
+Una volta chiusa, la notifica diminuisce lentamente le dimensioni e si dissolve in uscita.
 
    - Associato *_all'oggetto gioco EyeCalibrationChecker_* è lo script [EyeCalibrationChecker](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.EyeCalibrationChecker) che espone due eventi unity:
       - `OnEyeCalibrationDetected()`
@@ -54,7 +54,7 @@ Quando la notifica viene ignorata, diminuisce lentamente le dimensioni e si diss
       - L'app viene riavviata
       - È stato rilevato un utente valido e quindi un nuovo utente non certificato ha inserito il dispositivo
 
-   - Per verificare se le animazioni e gli eventi vengono attivati correttamente, lo script EyeCalibrationChecker possiede un `bool editorTestUserIsCalibrated` flag. Ad esempio, quando si esegue nell'editor di Unity, è possibile testare:
+   - Per verificare se le animazioni e gli eventi vengono attivati correttamente, lo script EyeCalibrationChecker possiede un `bool editorTestUserIsCalibrated` flag . Ad esempio, quando si esegue nell'editor di Unity, è possibile testare:
       1. Indica se la notifica viene visualizzata automaticamente quando lo stato di calibrazione cambia da true a false
       1. Indica se la notifica viene chiusa automaticamente quando lo stato cambia da false a true.
 
@@ -87,7 +87,7 @@ Quando la notifica viene ignorata, diminuisce lentamente le dimensioni e si diss
    }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica del tracciamento oculare di MRTK](eye-tracking-main.md)
 - [Configurazione del tracciamento oculare di MRTK](eye-tracking-basic-setup.md)

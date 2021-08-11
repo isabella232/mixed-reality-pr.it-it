@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 7036bb552952a0e45a8ba465d769a8952e48bc36
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: f32f7321ec30f337e03d006f47fa92639796a74156483917331304811ea86a45
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177557"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198481"
 ---
 # <a name="constraint-manager"></a>Gestione vincoli
 
@@ -147,7 +147,7 @@ Vincola gli assi di trasformazione locali dell'oggetto modificato se true. False
 
 Questo vincolo può essere usato per correggere gli assi su cui può essere ruotato un oggetto modificato. Ciò può essere utile per mantenere un oggetto modificato in posizione verticale, ma consentendo comunque le rotazioni dell'asse y, ad esempio. Le proprietà per `RotationAxisConstraint` sono le seguenti:
 
-#### <a name="constraint-on-rotation"></a>Vincolo alla rotazione
+#### <a name="constraint-on-rotation"></a>Vincolo in base alla rotazione
 
 Specifica gli assi su cui impedire la rotazione. Per impostazione predefinita, questi assi saranno globali anziché locali, ma possono essere modificati di seguito. Poiché questa proprietà è un flag, è possibile selezionare un numero qualsiasi di opzioni.
 

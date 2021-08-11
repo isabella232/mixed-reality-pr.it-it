@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/29/2021
 ms.topic: article
 keywords: Figma, Sketch, Adobe XD, progettazione, progettazione, file di progettazione, progettazione UX, HoloLens, MRTK, mixed reality Toolkit
-ms.openlocfilehash: ef36e68e7340bc0a1500a9468db35d1e0b417ed6
-ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
+ms.openlocfilehash: e34c7854a65583f18a2605e9a0e19272d7f504975a698fa961d94af97565f7e5
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114224329"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115199636"
 ---
 # <a name="figma-toolkit"></a>Figma Toolkit
 
@@ -33,7 +33,7 @@ Fare **clic su Torna ai file** per visualizzare la copia duplicata. È possibile
 
 <img src="images/UX_Figma_Use3.png" width="300px" alt="Menu duplicate 3"><br>
 
-Per scaricare e lavorare in locale, usare **File > menu Salva copia** locale. Importare il file scaricato (.fig) in Figma usando **il pulsante Importa** nell'angolo superiore destro.
+Per scaricare e lavorare in locale, usare **file > menu Salva copia** locale. Importare il file scaricato (.fig) in Figma usando **il pulsante Importa** nell'angolo superiore destro.
 
 <img src="images/UX_FigmaToolkit_Import.png" width="200px" alt="Import menu"><br>
 

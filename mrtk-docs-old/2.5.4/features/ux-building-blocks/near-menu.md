@@ -1,85 +1,85 @@
 ---
 title: NearMenuUI
-description: Panoramica vicino ai tipi di menu in MRTK
+description: Panoramica dei tipi di menu near in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, menu near,
-ms.openlocfilehash: 59725765d880f614890676ad4f97f0e2c9d6ddeb
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, menu vicino,
+ms.openlocfilehash: a8e34bb2e0f322e570475c5fbc3c57a8a4c2a602f375e0ac0a36a4444c2c5d3d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104686274"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115199781"
 ---
 # <a name="near-menu"></a>Menu adiacente
 
 ![Menu vicino](../images/near-menu/MRTK_UX_NearMenu.png)
 
-Near menu è un controllo UX che fornisce una raccolta di pulsanti o altri componenti dell'interfaccia utente. Il corpo dell'utente è fluttuante e facilmente accessibile in qualsiasi momento. Poiché è a regime di controllo libero, l'interazione dell'utente con il contenuto di destinazione non viene disturbata. L'utente può utilizzare il pulsante "Aggiungi" per bloccare/sbloccare il menu. Il menu può essere afferrato e posizionato in una posizione specifica.
+Near Menu è un controllo UX che fornisce una raccolta di pulsanti o altri componenti dell'interfaccia utente. È mobile intorno al corpo dell'utente e facilmente accessibile in qualsiasi momento. Poiché è liberamente associato all'utente, non disturba l'interazione dell'utente con il contenuto di destinazione. L'utente può usare il pulsante "Aggiungi" per bloccare/sbloccare il menu. Il menu può essere afferrato e posizionato in una posizione specifica.
 
-## <a name="interaction-behavior"></a>Comportamento interazione
+## <a name="interaction-behavior"></a>Comportamento dell'interazione
 
-- **Tag-along**: il menu segue e rimane entro 30-60cm dall'utente per le interazioni near.
-- **Pin**: usando il pulsante "pin", il menu può essere bloccato e rilasciato in tutto il mondo.
-- **Acquisisci e sposta**: il menu è sempre accessibile e mobile. Indipendentemente dallo stato precedente, il menu verrà bloccato (con blocco internazionale) quando viene catturato e rilasciato. Sono disponibili segnali visivi per l'area di acquisizione. Vengono rivelate sulla prossimità.
+- **Tag-along**: il menu segue l'utente e rimane entro un intervallo di 30-60 cm dall'utente per le interazioni più vicine.
+- **Aggiungi:** usando il pulsante "Aggiungi", il menu può essere bloccato a livello mondiale e rilasciato.
+- **Grab and move**(Afferra e sposta): il menu è sempre selezionabile e mobile. Indipendentemente dallo stato precedente, il menu verrà aggiunto (world-locked) quando viene afferrato e rilasciato. Esistono segnali visivi per l'area afferrabile. Vengono rivelati sulla prossimità manuale.
 
 <img src="../images/near-menu/MRTK_UX_NearMenu_Grab.png" alt="Near Menu grab">
 
-## <a name="prefabs"></a>Prefabbricati
+## <a name="prefabs"></a>Prefab
 
-I prefissi dei menu near sono progettati per illustrare come usare i vari componenti di MRTK per compilare menu per le interazioni near.
+I prefab near Menu sono progettati per illustrare come usare i vari componenti di MRTK per creare menu per le interazioni near.
 
-- **NearMenu2x4. prefabbricate**
-- **NearMenu3x1. prefabbricate**
-- **NearMenu3x2. prefabbricate**
-- **NearMenu3x3. prefabbricate**
-- **NearMenu4x1. prefabbricate**
-- **NearMenu4x2. prefabbricate**
+- **NearMenu2x4.prefab**
+- **NearMenu3x1.prefab**
+- **NearMenu3x2.prefab**
+- **NearMenu3x3.prefab**
+- **NearMenu4x1.prefab**
+- **NearMenu4x2.prefab**
 
 ## <a name="example-scene"></a>Scena di esempio
 
-È possibile trovare esempi di prefabbricati di menu near nella `NearMenuExamples` scena.
+È possibile trovare esempi di prefab near menu nella `NearMenuExamples` scena.
 
 <img src="../images/near-menu/MRTK_UX_NearMenu_Examples.png" alt="Near Menu Example">
 
 ## <a name="structure"></a>Struttura
 
-I prefabbricati di menu near vengono creati con i componenti MRTK seguenti.
+I prefab near Menu sono realizzati con i componenti MRTK seguenti.
 
-- [**PressableButtonHoloLens2**](button.md) prefabbricato
-- [**Raccolta di oggetti Grid**](object-collection.md): layout di più pulsanti nella griglia
-- [**Gestore di manipolazione**](manipulation-handler.md): selezionare e spostare il menu
-- [**RadialView Solver**](solvers/solver.md): comportamento follow me (Tag-Along)
+- [**Prefab PressableButtonHoloLens2**](button.md)
+- [**Raccolta di oggetti Grid:**](object-collection.md)layout di più pulsanti nella griglia
+- [**Gestore di manipolazione:**](manipulation-handler.md)afferrare e spostare il menu
+- [**RadialView Solver**](solvers/solver.md): Comportamento Follow Me(tag-along)
 
-![Prefabbricato menu vicino](../images/near-menu/MRTK_UX_NearMenu_Structure.png)
+![Prefab del menu vicino](../images/near-menu/MRTK_UX_NearMenu_Structure.png)
 
 ## <a name="how-to-customize"></a>Modalità di personalizzazione
 
-**1. pulsanti Aggiungi/Rimuovi**
+**1. Aggiungere/rimuovere pulsanti**
 
-In `ButtonCollection` oggetto, Aggiungi o rimuovi pulsanti.  
+`ButtonCollection`Nell'oggetto aggiungere o rimuovere pulsanti.  
 <img src="../images/near-menu/MRTK_UX_NearMenu_Custom0.png" width="450" alt="Near Menu Custome 0">
 
-**2. aggiornare la raccolta di oggetti Grid**
+**2. Aggiornare la raccolta di oggetti Grid**
 
-Fare clic sul `Update Collection` pulsante nel controllo dell' `ButtonCollection` oggetto. Il layout della griglia verrà aggiornato.  
+Fare `Update Collection` clic sul pulsante nel controllo dell'oggetto `ButtonCollection` . Aggiornerà il layout della griglia.  
 <img src="../images/near-menu/MRTK_UX_NearMenu_Custom1.png" alt="Near Menu Custome 1">
 
-È possibile configurare il numero di righe utilizzando `Rows` la proprietà della raccolta di oggetti Grid.  
+È possibile configurare il numero di righe usando `Rows` la proprietà della raccolta di oggetti Grid.  
 <img src="../images/near-menu/MRTK_UX_NearMenu_Custom2.png" alt="Near Menu Custome 2">
 
-**3. regolare le dimensioni del backplate**
+**3. Regolare le dimensioni del backplate**
 
-Regolare le dimensioni dell' `Quad` oggetto sotto `Backplate` . La larghezza e l'altezza del backplate devono essere `0.032 * [Number of the buttons + 1]` . Se, ad esempio, si dispone di 3 pulsanti x 2, la larghezza della contropiastra è `0.032 * 4` e l'altezza è `0.032 * 3` . È possibile inserire direttamente questa espressione nel campo di Unity.  
+Regolare le dimensioni `Quad` dell'oggetto `Backplate` in . La larghezza e l'altezza del backplate devono essere `0.032 * [Number of the buttons + 1]` . Ad esempio, se si dispone di 3 x 2 pulsanti, la larghezza del backplate è `0.032 * 4` e l'altezza è `0.032 * 3` . È possibile inserire direttamente questa espressione nel campo di Unity.  
 <img src="../images/near-menu/MRTK_UX_NearMenu_Custom3.png" width="450" alt="Near Menu Custome 3">
 
-- Le dimensioni predefinite del pulsante HoloLens 2 sono 3,2 x 3,2 cm (0.032 m)
+- Le dimensioni predefinite del HoloLens 2 sono 3,2x3,2 cm (0,032 m)
 
 ## <a name="see-also"></a>Vedi anche
 
 - [**Pulsanti**](button.md)
-- [**Controllo dei limiti**](bounds-control.md)
+- [**Controllo Bounds**](bounds-control.md)
 - [**Slider**](sliders.md)
 - [**Raccolta di oggetti Grid**](object-collection.md)
 - [**Gestore di manipolazione**](manipulation-handler.md)

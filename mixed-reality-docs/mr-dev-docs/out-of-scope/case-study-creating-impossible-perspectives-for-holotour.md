@@ -1,95 +1,95 @@
 ---
-title: 'Case Study: creazione di prospettive impossibili per HoloTour'
-description: L'esperienza di HoloTour per Microsoft HoloLens è stata indimenticata. Oltre alle interruzioni turistiche tradizionali, abbiamo pianificato alcune "prospettive impossibili".
+title: Case study - Creazione di prospettive impossibili per HoloTour
+description: Abbiamo voluto che le tue esperienze in HoloTour Microsoft HoloLens che siano più uniche. Oltre alle tradizionali fermate, sono state pianificate alcune "prospettive impossibili".
 author: dannyaskew
 ms.author: daaske
 ms.date: 03/21/2018
 ms.topic: article
-keywords: HoloTour, HoloLens, realtà mista di Windows
-ms.openlocfilehash: f3ca07dfab1e4477039481c268e418aac9034bc5
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloTour, HoloLens, Windows Mixed Reality
+ms.openlocfilehash: bf1f2b3c9c82e4b649a75efc0275a063ea5a2363dfa15b818c0159b947f6b515
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690940"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115199914"
 ---
-# <a name="case-study---creating-impossible-perspectives-for-holotour"></a>Case Study: creazione di prospettive impossibili per HoloTour
+# <a name="case-study---creating-impossible-perspectives-for-holotour"></a>Case study - Creazione di prospettive impossibili per HoloTour
 
-L'esperienza di HoloTour per Microsoft HoloLens è stata indimenticata. Oltre alle interruzioni turistiche tradizionali, abbiamo pianificato alcune "prospettive impossibili", ovvero momenti che sarebbe impossibile sperimentare in qualsiasi tour, ma che, grazie alla tecnologia di HoloLens, avremmo potuto portare direttamente alla tua sala da visita. Per creare il contenuto di queste esperienze è necessario adottare alcune tecniche diverse da quelle del processo di acquisizione standard.
+Abbiamo voluto che le tue esperienze in HoloTour Microsoft HoloLens che siano più uniche. Oltre alle tradizionali fermate, sono state pianificate alcune "prospettive impossibili", ovvero momenti che sarebbe impossibile sperimentare in qualsiasi tour, ma che, tramite la tecnologia di HoloLens, si potevano portare direttamente nel proprio locale. La creazione del contenuto per queste esperienze richiede alcune tecniche diverse rispetto al processo di acquisizione standard.
 
 ## <a name="the-content-challenge"></a>La richiesta di contenuto
 
-Ci sono alcune scene nell'esperienza HoloTour, ad esempio il giro di mongolfiera a caldo di Roma e la lotta tra i gladiatori presso il Colosseo nell'antica Roma, che offrono visualizzazioni univoche che non verranno visualizzate altrove. Questi istanti hanno lo scopo di entusiasmare e stupire l'utente, rendendo il viaggio in HoloTour più di una semplice esperienza didattica. Sono i momenti in cui ci si vuole ricordare e si è entusiasti di informare altri utenti. Dal momento che non è stato possibile portare il rig della fotocamera verso l'alto e non è ancora stato eseguito il mastering, ognuna di queste "prospettive impossibili" ha chiamato un approccio speciale per la creazione di contenuti.
+L'esperienza di HoloTour offre alcune scene, ad esempio la corsa con mongolfiera sulla Moderna Città di Rome e la recintona al Tempio di Rome, che offrono visualizzazioni uniche che non si possono vedere altrove. Questi momenti sono pensati per emotizzare, rendendo il viaggio attraverso HoloTour più che un'esperienza didattica. Sono i momenti che ci si vuole ricordare e di cui si è contenti di parlare ad altri utenti. Poiché non è stato possibile portare il gruppo di fotocamere nel cielo e non si è ancora riusciti a sfruttare il tempo, ognuna di queste "prospettive impossibili" ha chiesto un approccio speciale alla creazione di contenuto.
 
 ## <a name="behind-the-scenes"></a>Dietro le quinte
 
-La creazione di questi momenti e prospettive univoci è stata necessaria oltre alla semplice creazione di filmati e modifiche. È stata impiegata una notevole quantità di tempo, persone con molte competenze diverse e un po' di magia di Hollywood.
+La creazione di questi momenti e prospettive univoci richiedeva molto più della semplice creazione di film e modifiche. Ci sono stati un'enorme quantità di tempo, persone con molte competenze diverse e un po' di magic DiNo.
 
-### <a name="viewing-rome-from-a-hot-air-balloon"></a>Visualizzazione di Roma da un pallone ad aria calda
+### <a name="viewing-rome-from-a-hot-air-balloon"></a>Viewing Rome from a hot air balloon (Visualizzazione di Rome da un fumetto)
 
-Dai primi giorni della pianificazione, sapevamo che volevamo eseguire le viste aeree in HoloTour. Vedendo Roma dal cielo ti offre una prospettiva che la maggior parte degli utenti non è mai in grado di vedere e in che modo i punti di riferimento più diffusi si trovano a livello spaziale. Il tentativo di acquisire questo comportamento con la fotocamera e il rig microfonici esistenti sarebbe stato estremamente complesso, ma fortunatamente non era necessario.
+Dai nostri primi giorni di pianificazione, abbiamo capito di voler eseguire viste aeree in HoloTour. La visualizzazione di Rome dal cielo offre una prospettiva che la maggior parte delle persone non vede mai e un'idea di come si trovano i luoghi di interesse più diffusi dal punto di vista spaziale. Il tentativo di acquisire questa immagine con la videocamera e il microfono esistenti sarebbe stato estremamente difficile, ma fortunatamente non è stato necessario.
 
-Prima di tutto, è importante spiegare che tutti i percorsi visitati in HoloTour sono in movimento. Il nostro obiettivo è quello di fare in modo che tu sia davvero in realtà e, dal momento che sei circondato da un movimento ovunque ti trovi in realtà, le nostre destinazioni virtuali necessarie per fornire anche lo spostamento ambientale. Ad esempio, quando si visita il Pantheon durante il viaggio, si vedranno le persone che vagano in tutto il piazzale e si uniscono i passaggi. Il movimento in background ti aiuta a farti sentire come se fossi in realtà nella posizione, anziché in un ambiente statico a fasi.
+In primo luogo, è importante spiegare che tutte le località visitate in HoloTour sono in movimento. L'obiettivo era quello di fare in modo che l'utente "si senta effettivamente presente" e, essendo racchiuso dal movimento ovunque ci si trovi nella vita reale, le destinazioni virtuali dovevano trasmettere anche lo spostamento ambientale. Ad esempio, quando si visita pantheon durante il viaggio, si vedranno persone che si aggirano lungo la strada e si riuniranno i passaggi. Il movimento di sfondo consente di avere l'aspetto di essere effettivamente in posizione, anziché in un ambiente statico di installazione di scena.
 
-Per creare le visualizzazioni aeree per la corsa in mongolfiera, abbiamo collaborato con altri team di Microsoft per ottenere l'accesso alle immagini panoramiche aeree di Roma. La qualità di queste immagini è stata eccellente e la visualizzazione era sorprendente, ma quando le abbiamo usate in scena senza modifiche, si sono rilevati inevitabili rispetto alle altre parti del tour e la mancanza di movimento era distrazione. 
+Per creare le viste aeree per la corsa in mongolfiera, abbiamo collaborato con altri team di Microsoft per ottenere l'accesso alle immagini panoramiche aeree di Rome. La qualità di queste immagini era eccellente e la visualizzazione era straordinaria, ma quando le abbiamo usate in scene senza modifiche, si sono verificate senza vita rispetto alle altre parti del tour e la mancanza di movimento era distrazione. 
 
 
-![Il basket del pallone ad aria calda, Mobile su Roma.](images/hotairballoon1-300px.png)<br>
-*Basket ad aria calda, Mobile su Roma*
+![Il carrello con mongolfiera, che fluttua su Rome.](images/hotairballoon1-300px.png)<br>
+*The hot air balloon basket, floating over Rome*
 
-Per garantire che le località aeree soddisfino la stessa barra di qualità delle altre destinazioni, abbiamo deciso di trasformare le fotografie statiche in scene in continua evoluzione. Il primo passaggio consiste nel modificare l'immagine e il movimento composito al suo interno. L'autore di effetti visivi è stato contratto per aiutare Microsoft a eseguire questa operazione. La modifica è stata eseguita per mostrare lentamente i cloud, gli uccelli che volano da e un aereo o un elicottero occasionale attraversando l'orizzonte. A fondo, sono state effettuate numerose automobili per guidare le strade. Se si è passati al tour di Roma in HoloTour, è improbabile che si sia in grado di riconoscere in modo esplicito uno di questi spostamenti. Si tratta di un'ottima soluzione. Il lieve movimento non è concepito per attirare gli occhi, ma senza questi piccoli tocchi, le persone hanno notato immediatamente che era un'immagine statica nella scena.
+Per garantire che le località aeree siano in grado di ottenere la stessa qualità delle altre destinazioni, abbiamo deciso di trasformare le fotografie statiche in scene in movimento. Il primo passaggio consisteva nel modificare l'immagine e il movimento composito al suo interno. Per risolvere questo problema, abbiamo contratto un artista con effetti visivi. La modifica è stata eseguita per mostrare le nubi che si allontanano lentamente, gli animali che passano da e un piano o un volo occasionale che attraversano lo skyline. A terra sono state fatti diversi veicoli per guidare le strade. Se si è già preso parte al tour di Rome a HoloTour, è improbabile che si sia a conoscenza esplicitamente di questo movimento. In realtà è un'ottima cosa. Il movimento sottile non ha lo scopo di intercettare l'attenzione, ma senza questi piccoli tocchi, si è notato immediatamente che si tratta di un'immagine statica nella scena.
 
-La seconda cosa da fare è fornire un punto di vista da cui visualizzare la scena. Non ci si farà sentire come se fosse semplicemente a mezz'aria, quindi è stato creato un modello 3D di un fumetto e ci si trova all'interno. In questo modo è possibile aggirare il fumetto ed esaminare il bordo per ottenere un punto di vista migliore. Abbiamo scoperto che questo è un modo naturale e divertente per sperimentare le immagini aeree.
+La seconda cosa che abbiamo fatto è stata fornire un punto di vista da cui visualizzare la scena. Non ti sembra di essere effettivamente presente se sembra che tu sia semplicemente mobile a midair, quindi abbiamo creato un modello 3D di un balloon e ti abbiamo inserito al suo interno. In questo modo è possibile aggirare il balloon e guardare il bordo per ottenere un punto di vista migliore. Si tratta di un modo naturale e divertente per sperimentare le immagini aeree.
 
-L'esperienza di mongolfiera a caldo presenta problematiche uniche per il nostro team audio, perché la logistica ha impedito ai microfoni di passare da migliaia di metri a Roma. Fortunatamente, abbiamo avuto una grande quantità di acquisizione audio di ambiente da tutte le città che potevamo usare durante la fase di post-produzione. Gli emettitori audio sono stati inseriti nelle rispettive posizioni da dove sono stati acquisiti da zero. L'audio è stato filtrato in modo da sembrare distante, come se fosse stato sentito dal punto di vista di un utente che si trovava nel pallone ad aria calda, offrendo un paesaggista autentico e direzionale per la scena.
+L'esperienza di mongolfiera ha presentato sfide uniche per il team audio, perché la logistica ha impedito ai microfoni di passare migliaia di piedi su Rome. Fortunatamente, abbiamo avuto una grande quantità di acquisizione audio ambientale da tutta la città che abbiamo potuto usare durante la post-produzione. Gli emettitori audio sono stati posizionati nelle relative posizioni da dove sono stati acquisiti da terra. L'audio è stato quindi filtrato in modo da sembrare distante, come se lo si ascoltava dal punto di vista di qualcuno che si trovava nel fumetto dell'aria calda, fornendo un panorama sonoro autentica e direzionale per la scena.
 
-### <a name="time-traveling-to-ancient-rome"></a>Tempo di viaggio verso la Roma antica
+### <a name="time-traveling-to-ancient-rome"></a>Tempo in viaggio verso La Capitale
 
-I rimanenti dei monumenti e delle costruzioni a Roma sono impressionanti anche 2000 anni dopo la loro costruzione, ma sapevamo che avevamo un'opportunità unica di dimostrare cosa sarebbe stato come tornare indietro nel tempo e osservare queste strutture come sono apparse nell'antica Roma.
+I resti di bambini e edifici in tutta La Capitale sono straordinari anche duemila anni dopo la loro costruzione, ma abbiamo avuto l'opportunità unica di mostrare cosa sarebbe stato come tornare indietro nel tempo e vedere queste strutture come apparivano nella Città di Rome.
 
-Naturalmente, non è presente alcun video o immagine statica del Colosseo come appare al momento della compilazione, quindi è necessario crearne uno personalizzato. Era necessario eseguire molte ricerche per apprendere il maggior numero possibile della struttura. conoscere i materiali da cui è stato creato, esaminare i diagrammi dell'architettura e leggere le descrizioni storiche per ottenere informazioni sufficienti per poter creare una ricreazione virtuale. 
+Naturalmente, non è presente alcun filmato video o immagine statica) dell'Elemento Scalare come appare al momento della creazione, quindi è necessario crearne uno personalizzato. È stato necessario eseguire molte ricerche per ottenere il maggior numero possibile di informazioni sulla struttura. comprendere i materiali da cui è stato creato, esaminare i diagrammi dell'architettura e leggere descrizioni cronologiche per ottenere informazioni sufficienti per poter creare una ricreazione virtuale. 
 
-![Il giorno moderno rovine del Colosseo con una sovrapposizione che mostra il piano dell'Arena, come sarebbe stato osservato nell'antica Roma.](images/rome-colosseum-overlay-500px.png)<br>
-*Il giorno moderno rovine del Colosseo con una sovrapposizione che mostra il piano dell'Arena come sarebbe stato osservato nell'antica Roma*
+![L'odierna città si invade del Vecchioeum con una sovrimpressione che mostra il piano del reparto come avrebbe potuto guardare a Rome.](images/rome-colosseum-overlay-500px.png)<br>
+*I giorni moderni della Città del Tempo con una sovrimpressione che mostrava il piano del reparto come avrebbe potuto guardare a Rome*
 
-La prima cosa che volevamo fare era migliorare i tour tradizionali con sovrapposizioni didattiche. In HoloTour quando si visitano i ruderi del Colosseo così come si trova oggi, il piano dell'Arena viene trasformato per illustrare il modo in cui sarebbe stato osservato durante l'uso, incluse le aree di gestione temporanea elaborate. In una presentazione normale è possibile che queste informazioni siano state descritte ed è possibile provare a immaginarla, ma in HoloTour è possibile visualizzarla effettivamente.
+La prima cosa che si vuole fare è migliorare i tradizionali giochi con sovrimpressione didattica. In HoloTour, quando si visitano le erre del Periodoeum così com'è oggi, il piano a superficie viene trasformato per mostrare l'aspetto che avrebbe avuto durante l'uso, incluse le complesse aree di gestione temporanea. In una normale presentazione è possibile che queste informazioni si descrivano e che si possa provare a immaginare, ma in HoloTour è possibile vederlo.
 
-Per una sovrapposizione come questa, abbiamo fatto in modo che i nostri artisti corrispondano al punto di vista del nostro metraggio di acquisizione e creiamo l'immagine sovrapposta manualmente. Il punto di vista deve corrispondere in modo che, quando si sostituisce il video con l'immagine, entrambi si allineano correttamente.
+Per una sovrimpressione come questa, gli autori hanno fatto corrispondere il punto di vista del filmato di acquisizione e creare manualmente l'immagine di sovrimpressione. La prospettiva deve corrispondere in modo che quando si sostituisce il video con l'immagine, entrambi verranno allineati correttamente.
 
-### <a name="staging-the-gladiator-fight"></a>Gestione temporanea del gladiatore
+### <a name="staging-the-gladiator-fight"></a>Gestione temporanea dell'avana
 
-Sebbene le sovrapposizioni siano un modo accattivante per insegnare agli utenti la cronologia, ciò che era più entusiasta è stato quello di trasportarsi indietro nel tempo. La sovrimpressione è stata un'immagine ancora da un particolare punto di vista, ma il tempo di viaggio richiederebbe la modellazione dell'intero Colosseum e, come illustrato in precedenza, era necessario avere un movimento nella scena per far sentire la sua vita. Il raggiungimento di una notevole quantità di lavoro.
+Anche se le sovrimpressione sono un modo coinvolgente per insegnare agli utenti la storia, quello che ci ha molto a che fare è stato trasportarti indietro nel tempo. La sovrimpressione era semplicemente un'immagine ancora da un punto di vista particolare, ma per il viaggio nel tempo sarebbe stato necessario modellare l'intero Tracciatore e, come illustrato in precedenza, era necessario avere un movimento nella scena per renderlo attivo. Il raggiungimento di questo obiettivo ha richiesto una notevole quantità di lavoro.
 
-Questa impresa era troppo grande per il nostro team, quindi il nostro team artistico lavorava con Whiskytree, una società di effetti esterni che in genere funziona sugli effetti visivi per i film hollywoodiani. Whiskytree ci ha aiutato a ricreare il Colosseo nel suo apogeo, che ci ha permesso di insegnare alla struttura mentre si trovava sul pavimento dell'Arena e di creare una vista di una lotta gladiatore dalla scatola dell'imperatore. La folla allegra e i banner ondeggianti aggiungono il lieve movimento necessario per far sembrare che si tratta di luoghi reali e non solo immagini.
+Questa impresa era troppo grande per il nostro team per fare da sola, quindi il nostro team di grafica ha lavorato con Iltree, una società di effetti esterni che in genere lavora sugli effetti visivi per i film DiFfi. Il reparto Dieo ha contribuito a ricreare il Periodo d'apocalisso, consentendoci di insegnare la struttura mentre era in piedi sul piano terra e di creare una vista di un amico dalla scatola dei bambini. I messaggi di benvenuto e i banner ondulati aggiungono il movimento sottile necessario per fare in modo che questi siano luoghi reali e non solo immagini.
 
-![Il Colosseo ricreato, come visto dal piano Arena. Quando vengono visualizzati in HoloTour, i banner sventolano al vento, offrendo una sensazione di movimento.](images/recreated-colosseum-holotour-500px.png)<br>
-*Il Colosseo ricreato, come visto dal piano Arena. Quando vengono visualizzati in HoloTour, i banner sventolano al vento, offrendo una sensazione di movimento.*
+![Oggetto ricreato, come si può vedere dal piano a ricrea. Quando vengono visualizzati in HoloTour, i banner svolazzano nell'aria, dando una impressione di movimento.](images/recreated-colosseum-holotour-500px.png)<br>
+*Oggetto ricreato, come si può vedere dal piano a ricrea. Quando vengono visualizzati in HoloTour, i banner svolazzano nella confusione, dando una impressione di movimento.*
 
-La presentazione di Roma culmina con la lotta gladiatore. Whiskytree ci ha fornito le simulazioni Arena e 3D per la folla con rendering come video, ma è stato necessario aggiungere i gladiatori sul piano Arena. Questa parte del processo ha avuto un aspetto analogo a quello di una produzione di video Hollywood rispetto a un progetto di Game Studio Incubation. I membri del team hanno eseguito il mapping di una sequenza di lotte approssimativa e la loro raffinata con un coreografo. Abbiamo assunto gli attori per organizzare la nostra battaglia fittizia e abbiamo acquistato armature, in modo che possano sembrare la parte. Infine, abbiamo girato l'intera scena su una schermata verde.
+Il tour di Rome si snoda con la città. Il modello Diffondo ha fornito le simulazioni di crowd 3D e di cui è stato eseguito il rendering come video, ma è stato necessario aggiungere i campi sul piano planimetria. Questa parte del processo è stata più simile a una produzione video di Un'incubazione che a un progetto di un game studio di incubazione. I membri del nostro team hanno eseguito il mapping di una sequenza approssimativa e quindi l'hanno perfezionata con un elemento più avaro. Abbiamo assunto attori per schernire la nostra finta e abbiamo acquistato la blindatura in modo che guardasse la parte. Infine, abbiamo filmato l'intera scena su uno schermo verde.
 
-![I nostri gladiatori, ricevendo istruzioni tra.](images/green-screen-gladiators-holotour-500px.jpg)<br>
-*Il nostro gladiatiors, ottenendo istruzioni tra*
+![I nostri clienti, che hanno istruzioni tra le due, accettano.](images/green-screen-gladiators-holotour-500px.jpg)<br>
+*I nostri soddisfatti, ottenere istruzioni tra accetta*
 
-Questa scena si trova nella casella dell'imperatore, il che significava che tutto il metraggio era necessario da questa prospettiva. Se abbiamo girato da dove i gladiatori stavano combattendo nell'Arena, non saremmo riusciti a comporre correttamente la sequenza di lotte in un secondo momento, quindi mettiamo l'operatore della fotocamera in un ascensore a forbice molto alto, guardando la sequenza di lotte per il film.
+Questa scena inserisce l'utente nella scatola di Avai, il che significava che tutti i film dovevano essere da tale prospettiva. Se si fosse filmato da dove i operazione dei operazione si trovavano sul piano a terra, non sarebbe stato possibile creare correttamente la sequenza della camera in un secondo momento, quindi l'operatore della fotocamera si è alzato su un'altezza molto alta della forbice, esaminando la sequenza della canna per le filmate.
 
-![Ottenere la prospettiva giusta: il film da un lift a forbice.](images/scissor-lift-holotour-500px.jpg)<br>
-*Ottenere la prospettiva giusta: film da un lift a forbice*
+![Ottenere il punto di vista giusto: filmare da un'ascensore a forbice.](images/scissor-lift-holotour-500px.jpg)<br>
+*Ottenere la prospettiva giusta: filmare da un'ascensore a forbice*
 
-Nel corso della fase di post-produzione, i gladiatori sono stati compositi sul pavimento dell'Arena e la prospettiva era corretta, ma è rimasto un problema: le ombre dei gladiatori nella schermata verde sono state rimosse come parte del processo di composizione. Senza ombre, sembrava che i gladiatori fossero fluttuati in aria. Fortunatamente, Whiskytree è la soluzione ideale per risolvere questo tipo di problema e hanno usato una parte della procedura guidata tecnica per aggiungere ombre alla nostra scena. Il risultato è quello che viene visualizzato oggi nella presentazione.
+Nella post-produzione, i suolo sono stati compositi sul piano a terra e la prospettiva era corretta, ma un problema è rimasto: le ombreggiature dei operazione su schermo verde sono state rimosse come parte del processo di composizione. Senza ombreggiature, sembra che i operazione fossero in aria. Per fortuna, Il Piccolotree è ideale per risolvere questo tipo di problema e ha usato un po' di procedure guidate tecniche per aggiungere nuovamente le ombreggiature alla scena. Il risultato è quello che si vede nella presentazione di oggi.
 
 ## <a name="about-the-authors"></a>Informazioni sugli autori
 
 <table style="border:0">
 <tr>
 <td style="border:0" width="60px"> <img alt="David Haley" width="60" height="60" src="images/haley.png" /></td>
-<td style="border:0" width="408"> <b>David Haley</b> è uno sviluppatore senior che ha appreso altre informazioni sui rig della fotocamera e la riproduzione video di quanto pensi possa essere usato in HoloTour.</td>
+<td style="border:0" width="408"> <b>David Haley è</b> uno sviluppatore senior che ha appreso più informazioni sui dispositivi di videocamera e sulla riproduzione di video di quanto pensasse possibile lavorando a HoloTour.</td>
 
 <td style="border:0" width="60px"> <img alt="Jason Syltebo" width="60" height="60" src="images/syltebo.png" /></td>
-<td style="border:0" width="408"> <b>Jason Syltebo</b> è una finestra di progettazione audio che ha avuto la certezza di poter provare il paesaggio appropriato di ogni destinazione visitata, anche quando si torna indietro nel tempo.</td>
+<td style="border:0" width="408"> <b>Jason Syltebo</b> è un audio designer che ha verificato di poter sperimentare il soundscape di ogni destinazione visitata, anche quando si torna indietro nel tempo.</td>
 </tr>
 <tr>
 <td style="border:0" width="60px"> <img alt="Danny Askew" width="60" height="60" src="images/askew.png" /></td>
-<td style="border:0" width="408"> <b>Danny storta</b> è un artista video che ha avuto la certezza che il suo percorso attraverso Roma fosse il più perfetto possibile.</td>
+<td style="border:0" width="408"> <b>Askew è</b> un video artista che si è assicurata che il viaggio attraverso Rome sia stato il più perfetto possibile.</td>
 
 <td style="border:0" width="60px"></td>
 <td style="border:0" width="408"></td>
@@ -97,5 +97,5 @@ Nel corso della fase di post-produzione, i gladiatori sono stati compositi sul p
 </table>
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 * [Video: Microsoft HoloLens: HoloTour](https://www.youtube.com/watch?v=pLd9WPlaMpY)
