@@ -6,16 +6,16 @@ ms.author: v-hferrone
 ms.date: 04/22/2021
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, visore di realtà mista, visore windows mixed reality, visore per realtà virtuale, unity
-ms.openlocfilehash: d2904b9ea4771286b7091a8d5b7c599fcbd1244a
-ms.sourcegitcommit: e380d56f5504be4e4f069394a58cf0147eb33b66
+ms.openlocfilehash: 72f17ec9fc74143a2ae6cc51e1ffed0c73d13ef04ef5c4004537be70d1daaaca
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2021
-ms.locfileid: "113603727"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202718"
 ---
 # <a name="setting-up-your-xr-configuration"></a>Configurazione della configurazione XR
 
-Dopo aver scelto una [versione di Unity,](choosing-unity-version.md)il passaggio successivo consiste nel selezionare la configurazione XR che verrà utilizzata per creare l'app di realtà mista:
+Dopo aver scelto una [versione di Unity,](choosing-unity-version.md)il passaggio successivo consiste nel selezionare la configurazione XR da usare per creare l'app di realtà mista:
 
 ## <a name="choosing-an-xr-configuration"></a>Scelta di una configurazione XR
 
@@ -37,6 +37,6 @@ Per altre informazioni sul modello di realtà Toolkit, vedere la [documentazione
 
 ## <a name="manual-setup-without-mrtk"></a>Configurazione manuale senza MRTK
 
-Anche se Microsoft e la community hanno creato open source strumenti come Il Toolkit di realtà mista [(MRTK)](/windows/mixed-reality/mrtk-unity) che configura automaticamente l'ambiente per la realtà mista, alcuni sviluppatori potrebbero voler creare le proprie esperienze da zero.
+Anche se Microsoft e la community hanno creato open source strumenti come [mixed reality Toolkit (MRTK)](/windows/mixed-reality/mrtk-unity) che configurano automaticamente l'ambiente per la realtà mista, alcuni sviluppatori potrebbero voler creare le proprie esperienze da zero.
 
 [!INCLUDE[](includes/xr/manual-setup.md)]

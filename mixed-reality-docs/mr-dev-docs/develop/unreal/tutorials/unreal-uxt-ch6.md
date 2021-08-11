@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, esercitazione, guida introduttiva, mrtk, uxt, UX Tools, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 7dbf72a477f376e338d346965b5276eba00ab543
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+ms.openlocfilehash: c50be323bac18984e735517f85724fb087e76cbf0ae8a6ccde6b44c460ef0b8e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110711560"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203369"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. Creazione di pacchetti e distribuzione nel dispositivo o nell'emulatore
 
@@ -34,7 +34,7 @@ Se usi questa strategia per l'app di scacchi, dovrai eseguire alcuni passaggi:
 
 ![RHI predefinito](../images/unreal/performance-recommendations-img-09.png)
 
-2.  Nell'editor di Unreal passare a Edit **> Project Settings** (Modifica impostazioni progetto) e selezionare Enable **Remoting** (Abilita comunicazione remota) nella sezione **Open XR Holographic Remoting (Apri XR Holographic Remoting).**
+2.  Nell'editor Unreal passare  a Modifica > Project Impostazioni e  selezionare Abilita comunicazione remota nella **sezione Open XR Holographic Remoting (Open XR Holographic Remoting).**
 
 3.  Riavviare l'editor e immettere l'indirizzo IP del dispositivo (come visualizzato nell'app del lettore Holographic Remoting) e quindi fare clic su **Connect** (Connetti).
 

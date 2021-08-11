@@ -1,53 +1,53 @@
 ---
-title: MigrationWindow
+title: Finestra di migrazione
 description: Documentazione su come eseguire la migrazione a un aggiornamento in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 936367307b858d96e788aa29bc5c4fd5e06a3418
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 655c35a750a2a247b497a7cb2b04f1708646913650ec9f1c95ba9f4b8a944c9c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104682114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115218997"
 ---
 # <a name="migration-window"></a>Finestra di migrazione
 
-Quando il MRTK subisce modifiche, è possibile che alcuni componenti vengano deprecati e che vengano introdotti sostituzioni.
-La finestra migrazione è uno strumento che consente agli utenti di eseguire automaticamente la migrazione di un subset di tali componenti deprecati alle nuove sostituzioni.
+Quando mrTK subisce modifiche, alcuni componenti potrebbero essere deprecati e verranno introdotte le sostituzioni.
+La finestra di migrazione è uno strumento che consente agli utenti di eseguire automaticamente la migrazione di un subset di tali componenti deprecati alle nuove sostituzioni.
 
 ![Finestra di migrazione](../images/migration-window/MRTK_Migration_Window.png)
 
 ## <a name="usage"></a>Utilizzo
 
-Per aprire la finestra, selezionare la finestra di migrazione utilità del *Toolkit di realtà mista*  >    >  . Una volta aperta la finestra di migrazione, è possibile abilitare le schede di navigazione in modalità selezione scegliendo l'implementazione specifica del componente del gestore di migrazione.  
+Per aprire la finestra, selezionare *Mixed Reality Toolkit* Utilities Migration Window (Finestra di migrazione di Mixed Reality Toolkit  >    >  *Utilities).* Una volta aperta la finestra di migrazione, le schede di navigazione in modalità di selezione possono essere abilitate scegliendo l'implementazione specifica del componente del gestore della migrazione.  
 
 ![Modalità di selezione della migrazione](../images/migration-window/MRTK_Migration_Modes.png)
 
 ### <a name="object-mode"></a>Modalità oggetto
 
-Selezionando la scheda oggetti, viene abilitato il campo oggetto in cui l'utente può trascinare e rilasciare gli oggetti gioco dalla scena attualmente aperta o dai prefabbricati dalla cartella del progetto da migrare.
-Premendo il pulsante Rimuovi *(-)* visualizzato a destra dell'oggetto elencato viene rimosso l'oggetto dall'elenco di selezione.
+La selezione della scheda Oggetti consente all'oggetto Campo in cui l'utente può trascinare e rilasciare qualsiasi oggetto Game dalla scena o dai prefab attualmente aperti dalla cartella del progetto da migrare.
+Se si preme *il pulsante rimuovi (-)* visualizzato sul lato destro dell'oggetto elencato, l'oggetto viene rimosso dall'elenco di selezione.
 
-Una volta che tutti gli oggetti desiderati sono presenti nell'elenco, se si preme il pulsante *migra* verranno applicate le modifiche richieste dall'implementazione del gestore della migrazione scelta a tutti i componenti della selezione che corrispondono all'implementazione.
+Quando tutti gli oggetti desiderati sono  presenti nell'elenco, premendo il pulsante Esegui migrazione le modifiche richieste dall'implementazione del gestore di migrazione scelta verranno applicate a tutti i componenti nella selezione corrispondenti all'implementazione.
 
-![Migrazione selezione](../images/migration-window/MRTK_Object_Migration.png)
+![Migrazione della selezione](../images/migration-window/MRTK_Object_Migration.png)
 
 ### <a name="scene-mode"></a>Modalità scena
 
-Consente all'utente di trascinare e rilasciare asset della scena contenenti oggetti da migrare.
+Consente all'utente di trascinare e rilasciare gli asset della scena contenenti oggetti di cui eseguire la migrazione.
 
 ![Selezione di scene per la migrazione](../images/migration-window/MRTK_Scene_Selection.png)
 
-### <a name="project-mode"></a>Modalità progetto
+### <a name="project-mode"></a>Project predefinita
 
-Quando si preme il pulsante *migra* , il componente di destinazione dell'implementazione del gestore della migrazione viene aggiornato per tutte le prefabbricate e le scene del progetto.
+Premendo il *pulsante Esegui* migrazione, il componente di destinazione dell'implementazione del gestore di migrazione verrà aggiornato per tutti i prefab e le scene nel progetto.
 
 ![Migrazione di un progetto completo](../images/migration-window/MRTK_Project_Migration.png)
 
 ## <a name="see-also"></a>Vedi anche
 
 - [Aggiornamento da versioni precedenti](../../updates-deployment/updating.md)
-- [Versioni di Microsoft Mixed Reality Toolkit](../../packages-releases/release-notes.md)
-- [Roadmap MRTK](../../roadmap.md)
+- [Microsoft Mixed Reality Toolkit versioni](../../packages-releases/release-notes.md)
+- [Roadmap di MRTK](../../roadmap.md)

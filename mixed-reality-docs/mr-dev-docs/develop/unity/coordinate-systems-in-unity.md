@@ -5,26 +5,26 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: sistema di coordinate spaziali, sistema di coordinate spaziali, solo orientamento, scala da posizione, scalabilità in piedi, scala della stanza, scala del mondo, 360 gradi, posto a posto, in piedi, stanza, mondo, scala, posizione, orientamento, Unity, ancoraggio, ancoraggio nello spazio, ancoraggio del mondo, world-locked, world-locking, body-locked, body-locking, tracking loss, locatability, bounds, recenter, visore VR realtà mista, visore VR di realtà mista windows, visore VR realtà virtuale
-ms.openlocfilehash: 91b1adf6dcf1c54d0d29a02bfb97ac4674a87c88
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+keywords: sistema di coordinate, sistema di coordinate spaziali, solo orientamento, scala da seduti, scalabilità in piedi, scalabilità locale, scala globale, 360 gradi, seduti, in piedi, stanza, scala, scala, posizione, orientamento, Unity, ancoraggio spaziale, ancoraggio globale, world-locked, world-locking, body-locked, body-locking, tracking loss, locatability, bounds, recenter, mixed reality headset, visore di realtà mista windows, visore realtà virtuale
+ms.openlocfilehash: 3372b9bd259202145fd658e225a36d2125f4a86d01eb90bc765b65918540db8b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528749"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203583"
 ---
 # <a name="coordinate-systems-in-unity"></a>Sistemi di coordinate in Unity
 
-Windows Mixed Reality supporta le app in un'ampia gamma di scale di esperienza, dalle app con solo orientamento e da posti a posto fino alle app a scalabilità di stanza. In HoloLens puoi andare oltre e creare app su scala globale che consentono agli utenti di superare i 5 metri, esplorando un intero piano di un edificio e oltre.
+Windows Mixed Reality supporta le app in un'ampia gamma di scalabilità di esperienze, dalle app con orientamento solo e da seduti fino alle app su larga scala. In HoloLens, è possibile andare oltre e creare app di livello mondiale che consentono agli utenti di superare i 5 metri, esplorando un intero piano di un edificio e oltre.
 
-Il primo passaggio per la creazione di un'esperienza di realtà mista in Unity consiste nel comprendere i sistemi di coordinate e scegliere la [scalabilità](../../design/coordinate-systems.md) dell'esperienza di destinazione dell'app.
+Il primo passaggio per creare un'esperienza di realtà mista in Unity consiste nel comprendere i sistemi di coordinate e scegliere la [scalabilità dell'esperienza](../../design/coordinate-systems.md) a cui l'app sarà destinazione.
 
-## <a name="building-an-orientation-only-or-seated-scale-experience"></a>Creazione di un'esperienza di solo orientamento o di ridimensionamento da disegno
+## <a name="building-an-orientation-only-or-seated-scale-experience"></a>Creazione di un'esperienza solo orientamento o su scala da seduti
 
 **Spazio dei nomi:** *UnityEngine.XR*<br>
 **Tipo:** *XRDevice*
 
-Per creare **un'esperienza di solo orientamento** o di ridimensionamento, è necessario impostare Unity sul tipo di spazio di tracciamento stazionario.  Lo spazio di tracciamento stazionario imposta il sistema di coordinate del mondo di Unity per tenere traccia del [fotogramma stazionario di riferimento](../../design/coordinate-systems.md#spatial-coordinate-systems). In modalità di rilevamento stazionario, il contenuto posizionato nell'editor proprio davanti alla posizione predefinita della fotocamera (in avanti è -Z) verrà visualizzato davanti all'utente all'avvio dell'app.
+Per creare **un'esperienza solo orientamento** o su scala da seduti, è necessario impostare Unity sul tipo di spazio di rilevamento stazionario.  Lo spazio di rilevamento stazionario imposta il sistema di coordinate del mondo di Unity per tenere traccia [del fotogramma stazionario di riferimento.](../../design/coordinate-systems.md#spatial-coordinate-systems) Nella modalità di rilevamento stazionario, il contenuto posizionato nell'editor proprio davanti alla posizione predefinita della fotocamera (forward è -Z) verrà visualizzato davanti all'utente all'avvio dell'app.
 
 ```cs
 XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
@@ -33,13 +33,13 @@ XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
 **Spazio dei nomi:** *UnityEngine.XR*<br>
 **Tipo:** *InputTracking*
 
-Per **un'esperienza** pura di solo orientamento, ad esempio un visualizzatore video a 360 gradi (in cui gli aggiornamenti della testa posizionale possono insorre nell'aria), è quindi possibile impostare [XR. InputTracking.disablePositionalTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking-disablePositionalTracking.html) su true:
+Per **un'esperienza** pura solo con orientamento, ad esempio un visualizzatore video a 360 gradi (in cui gli aggiornamenti della testa posizionale avrebbero distrutto l'illusione), è quindi possibile impostare [XR. InputTracking.disablePositionalTracking su](https://docs.unity3d.com/ScriptReference/XR.InputTracking-disablePositionalTracking.html) true:
 
 ```cs
 InputTracking.disablePositionalTracking = true;
 ```
 
-Per **un'esperienza di ridimensionamento,** per consentire all'utente di visualizzare più di recente l'origine del seme, è possibile chiamare [il codice XR. Metodo InputTracking.Recenter:](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html)
+Per **un'esperienza su larga scala,** per consentire all'utente di eseguire in seguito una versione più recente dell'origine da seduti, è possibile chiamare [il metodo XR. Metodo InputTracking.Recenter:](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html)
 
 ```cs
 InputTracking.Recenter();
@@ -50,9 +50,9 @@ InputTracking.Recenter();
 **Spazio dei nomi:** *UnityEngine.XR*<br>
 **Tipo:** *XRDevice*
 
-Per **un'esperienza su larga** **scala** o su scala locale, è necessario posizionare il contenuto rispetto al piano. Per la motivazione del piano dell'utente si usa la fase spaziale **[,](../../design/coordinate-systems.md#spatial-coordinate-systems)** che rappresenta l'origine definita a livello di piano dell'utente e il limite facoltativo della stanza, configurato durante la prima esecuzione.
+Per **un'esperienza su larga** **scala** o su scala locale, è necessario posizionare il contenuto rispetto al piano. Il piano dell'utente viene ragione usando la fase spaziale **[,](../../design/coordinate-systems.md#spatial-coordinate-systems)** che rappresenta l'origine definita a livello di piano dell'utente e il limite facoltativo della stanza, configurato durante la prima esecuzione.
 
-Per garantire il funzionamento di Unity con il sistema di coordinate del mondo a livello di piano, è possibile impostare e verificare che Unity utilizzi il tipo di spazio di rilevamento RoomScale:
+Per garantire il funzionamento di Unity con il sistema di coordinate globale a livello di piano, è possibile impostare e testare che Unity sta usando il tipo di spazio di rilevamento RoomScale:
 
 ```cs
 if (XRDevice.SetTrackingSpaceType(TrackingSpaceType.RoomScale))
@@ -67,7 +67,7 @@ else
 * Se SetTrackingSpaceType restituisce true, Unity ha commutato correttamente il sistema di coordinate del mondo per tenere traccia del [fotogramma della fase di riferimento.](../../design/coordinate-systems.md#spatial-coordinate-systems)
 * Se SetTrackingSpaceType restituisce false, Unity non è stato in grado di passare al frame di fase di riferimento, probabilmente perché l'utente non ha configurato un piano nel proprio ambiente. Anche se un valore restituito falso non è comune, può verificarsi se la fase è impostata in una stanza diversa e il dispositivo viene spostato nella stanza corrente senza che l'utente configura una nuova fase.
 
-Dopo che l'app ha impostato correttamente il tipo di spazio di rilevamento RoomScale, sul piano y=0 verrà visualizzato il contenuto posizionato sul piano y=0. L'origine in corrispondenza di 0, 0, 0 sarà la posizione specifica sul piano in cui si trovava l'utente durante la configurazione della stanza, con -Z che rappresenta la direzione in avanti rivolta durante la configurazione.
+Dopo che l'app ha impostato correttamente il tipo di spazio di rilevamento RoomScale, sul piano y=0 verrà visualizzato il contenuto posizionato sul piano y=0. L'origine a 0, 0, 0 sarà la posizione specifica sul piano in cui si trovava l'utente durante la configurazione della stanza, con -Z che rappresenta la direzione in avanti che stava affrontando durante la configurazione.
 
 **Spazio dei nomi:** *UnityEngine.Experimental.XR*<br>
 **Tipo:** *Limite*
@@ -75,7 +75,7 @@ Dopo che l'app ha impostato correttamente il tipo di spazio di rilevamento RoomS
 Nel codice di script è quindi possibile chiamare il metodo TryGetGeometry sul tipo UnityEngine.Experimental.XR.Boundary per ottenere un poligono limite, specificando un tipo di limite TrackedArea. Se l'utente ha definito un limite (si ottiene un elenco di  vertici), è possibile offrire un'esperienza su larga scala all'utente, in cui può aggirare la scena creata.
 
 > [!NOTE]
-> Il sistema eseguirà automaticamente il rendering del limite quando l'utente si avvicina. L'app non deve usare questo poligono per eseguire il rendering del limite stesso. Tuttavia, è possibile scegliere di impostare il layout degli oggetti della scena usando questo poligono limite, per garantire che l'utente possa raggiungere fisicamente tali oggetti senza teletrasporto:
+> Il sistema eseguirà automaticamente il rendering del limite quando l'utente vi si avvicina. L'app non deve usare questo poligono per eseguire il rendering del limite stesso. Tuttavia, è possibile scegliere di impostare il layout degli oggetti della scena usando questo poligono limite, per garantire che l'utente possa raggiungere fisicamente tali oggetti senza teletrasporto:
 
 ```cs
 var vertices = new List<Vector3>();
@@ -90,11 +90,11 @@ if (UnityEngine.Experimental.XR.Boundary.TryGetGeometry(vertices, Boundary.Type.
 **Spazio dei nomi:** *UnityEngine.XR.WSA*<br>
 **Tipo:** *WorldAnchor*
 
-Per le **vere esperienze su** scala mondiale in HoloLens che consentono agli utenti di superare i 5 metri, sono necessarie nuove tecniche oltre quelle usate per le esperienze su larga scala. Una tecnica chiave da usare consiste nel creare un [ancoraggio](../../design/coordinate-systems.md#spatial-anchors) spaziale per bloccare un cluster di ologrammi esattamente in posizione nel mondo fisico, indipendentemente dalla distanza di roaming dell'utente e quindi trovare di nuovo tali [ologrammi](../../design/coordinate-systems.md#spatial-anchor-persistence)nelle sessioni successive.
+Per le **vere esperienze su** scala HoloLens che consentono agli utenti di superare i 5 metri, sono necessarie nuove tecniche oltre a quelle usate per le esperienze su larga scala. Una tecnica chiave da usare consiste nel creare un [ancoraggio](../../design/coordinate-systems.md#spatial-anchors) spaziale per bloccare un cluster di ologrammi esattamente in posizione nel mondo fisico, indipendentemente dalla distanza di roaming dell'utente e quindi trovare di nuovo tali [ologrammi](../../design/coordinate-systems.md#spatial-anchor-persistence)nelle sessioni successive.
 
 In Unity si crea un ancoraggio spaziale aggiungendo il **componente WorldAnchor** Unity a gameobject.
 
-### <a name="adding-a-world-anchor"></a>Aggiunta di un ancoraggio mondo
+### <a name="adding-a-world-anchor"></a>Aggiunta di un ancoraggio world
 
 Per aggiungere un ancoraggio mondo, chiamare AddComponent () sull'oggetto gioco con la trasformazione che si vuole ancorare <WorldAnchor> nel mondo reale.
 
@@ -139,7 +139,7 @@ Per ricevere una notifica sulle modifiche di individuazione:
 1. Sottoscrivere l'evento OnTrackingChanged
 2. Gestire l'evento
 
-**L'evento OnTrackingChanged** verrà chiamato ogni volta che l'ancoraggio spaziale sottostante cambia tra uno stato di individuazione e non di individuazione.
+**L'evento OnTrackingChanged** verrà chiamato ogni volta che l'ancoraggio spaziale sottostante cambia tra uno stato di posizione e non di posizione.
 
 ```cs
 anchor.OnTrackingChanged += Anchor_OnTrackingChanged;
@@ -171,7 +171,7 @@ Dopo aver eseguito le attività con Ancoraggi nello spazio di Azure, è possibil
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di checkpoint di sviluppo unity che è stato strutturato, si stanno esplorando i blocchi predefiniti di base di Realtà mista. Da qui è possibile passare al blocco predefinito successivo:
+Se si sta seguendo il percorso di checkpoint di sviluppo di Unity che è stato previsto, si stanno esplorando i blocchi predefiniti di base della realtà mista. Da qui è possibile passare al blocco predefinito successivo:
 
 > [!div class="nextstepaction"]
 > [Sguardo fisso](gaze-in-unity.md)

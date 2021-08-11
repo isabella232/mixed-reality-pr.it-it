@@ -6,16 +6,16 @@ ms.author: v-hferrone
 ms.date: 01/14/2021
 ms.topic: article
 keywords: mixed reality toolkit, MRTK, examples, HoloLens, HoloLens 2, shaders, tooltips, hand interaction, clipping, bounding boxes, buttons, hand menus, slate, slider
-ms.openlocfilehash: c748b0cc87e1f25ee3de62ef4f5c056f82db74ad
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: 724d9b2c4886d6a6f7de74c4393809f8075ca15e584336b89d339cb8c0bcd610
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281902"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203288"
 ---
 # <a name="try-out-the-mrtk-examples-hub"></a>Provare l'hub degli esempi MRTK
 
-L'app Hub esempi MRTK consente di sperimentare le scene di esempio importanti di MRTK nel dispositivo HoloLens senza compilarle e distribuirle. L'app include esempi di interazioni di tracciamento manuale, interazioni di tracciamento oculare, ritaglio, descrizioni comando, shader, rettande di selezione, pulsanti pressabili, menu a forma di mano, ardesia, dispositivi di scorrimento e altro ancora.
+L'app hub MrTK Examples consente di sperimentare le scene di esempio importanti di MRTK nel dispositivo HoloLens senza compilarle e distribuirle. L'app include esempi di interazioni di tracciamento manuale, interazioni di tracciamento oculare, ritaglio, descrizioni comando, shader, rettande di selezione, pulsanti pressabili, menu a forma di mano, ardesia, dispositivi di scorrimento e altro ancora.
 
 ## <a name="hololens-2-and-hololens-1st-gen"></a>HoloLens 2 e HoloLens (prima generazione)
 ![Pagina hub di esempi MRTK in Microsoft Store](features/images/examples-hub/ExamplesHubStore.jpg)

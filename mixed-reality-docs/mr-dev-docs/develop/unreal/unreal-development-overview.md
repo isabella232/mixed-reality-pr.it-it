@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicazione remota, realtà mista, sviluppo, guida introduttiva, funzionalità, nuovo progetto, emulatore, documentazione, guide, caratteristiche, ologrammi, sviluppo di giochi, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, OpenXR
-ms.openlocfilehash: 1225c507ec46c6f42c2fc10582a7920802860ad0
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: fd9eec18e865910ef4899dfda75661d1edb57eed25a55641cde3ca7ac3f0b3a8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394315"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203465"
 ---
 # <a name="unreal-development-overview"></a>Panoramica dello sviluppo con Unreal
 
@@ -116,7 +116,7 @@ Lo sviluppo per la realtà mista prevede punti di controllo delle prestazioni ch
 | Mobile Multi-View: prestazioni fino a 60 fps | 4.25 | ✔️ |
 | Rendering della terza fotocamera | 4.25 | ✔️ |
 | Streaming da un'app desktop in pacchetto | 4.25.1 | ✔️ |
-| Ancoraggi nello stato di Azure per HoloLens 2 | 4.25 | ✔️ |
+| Ancoraggi nello HoloLens 2 | 4.25 | ✔️ |
 | Supporto del plug-in UX Tools di Mixed Reality Toolkit | 4.25 | ✔️ |
 | Documentazione ed esercitazioni per sviluppatori | 4.25 | ✔️ |
 | Tastiera di sistema | 4.26 | ✔️ |

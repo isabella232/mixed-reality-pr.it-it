@@ -7,12 +7,12 @@ ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, esercitazione, guida introduttiva, mrtk, uxt, UX Tools, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: 771dd4028adfacb27544e632aa0f355d3bc91c66
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+ms.openlocfilehash: 74d4fb7ebab2f5ba2df477cc29d8787367c1f105cc7a65d87460ac1e033b0fbb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110712606"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203780"
 ---
 # <a name="4-making-your-scene-interactive"></a>4. Rendere la scena interattiva
 
@@ -26,13 +26,13 @@ Nell'esercitazione precedente sono stati aggiunti un asset ARSession, il pedone 
 * Uso della simulazione dell'input per convalidare il progetto
 
 ## <a name="downloading-the-mixed-reality-ux-tools-plugin"></a>Download del plug-in UX Tools di Mixed Reality Toolkit
-Prima di iniziare a lavorare con l'input dell'utente, devi aggiungere il plug-in Mixed Reality UX Tools al progetto. Per altre informazioni su UX Tools, è possibile vedere il progetto in [GitHub.](https://aka.ms/uxt-unreal)
+Prima di iniziare a lavorare con l'input dell'utente, devi aggiungere il plug-in Mixed Reality UX Tools al progetto. Per altre informazioni su UX Tools, è possibile estrarre il progetto in [GitHub](https://aka.ms/uxt-unreal).
 
-1. Aprire l'utilità di avvio Epic Games. Passare a Unreal Engine Marketplace e cercare "[Mixed Reality UX Tools".](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools) Installare il plug-in nel motore.
+1. Aprire l'utilità di avvio Epic Games. Passare a Unreal Engine Marketplace e cercare "[Mixed Reality UX Tools](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools)". Installare il plug-in nel motore.
 
 ![Unreal Marketplace](images/unreal-uxt/2-uxt-plugin.PNG)
 
-2. Nell'editor di Unreal passare a **Project Settings**  >  **Plugins (Plug-in** impostazioni progetto) e cercare "Mixed Reality UX Tools". Verificare che il plug-in sia abilitato e riavviare l'editor, se richiesto.
+2. Nell'editor di Unreal passare a **Project Impostazioni plug-in** e cercare  >   "Mixed Reality UX Tools". Verificare che il plug-in sia abilitato e riavviare l'editor, se richiesto.
 
 ![Abilitazione del plug-in UX Tools per realtà mista](images/unreal-uxt/2-enable-uxt.PNG)
 

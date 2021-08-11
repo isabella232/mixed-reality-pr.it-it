@@ -1,14 +1,14 @@
-- name: Chaser giunto mano
+- name: Hand Joint Inseguer
   href: hand-joint-chaser.md
-- name: Servizio di rilevamento perso
+- name: Servizio di rilevamento della perdita
   href: lost-tracking-service.md
-- name: Prefabbricato di testo
+- name: Prefab di testo
   href: text-prefab.md
-- name: Temi visivi
+- name: Temi degli oggetti visivi
   href: visual-themes.md
 - name: Limite
   href: boundary/toc.yml
-- name: Sistema fotocamera
+- name: Sistema di fotocamera
   href: camera-system/toc.yml
 - name: Multipiattaforma
   href: cross-platform/toc.yml
@@ -20,7 +20,7 @@
   href: experimental/toc.yml
 - name: Estensioni
   href: extensions/toc.yml
-- name: EyeTracking
+- name: Tracciamento oculare
   href: eye-tracking/toc.yml
 - name: Input
   href: input/toc.yml
@@ -30,15 +30,15 @@
   href: profiles/toc.yml
 - name: Rendering
   href: rendering/toc.yml
-- name: Sistema di scena
+- name: Sistema scena
   href: scene-system/toc.yml
-- name: Utilità servizio
+- name: Utilità di servizio
   href: service-utilities/toc.yml
 - name: Consapevolezza spaziale
   href: spatial-awareness/toc.yml
-- name: Sistema Teleport
+- name: Sistema di teletrasporto
   href: teleport-system/toc.yml
 - name: Strumenti
   href: tools/toc.yml
-- name: Blocchi predefiniti di UX
+- name: Blocchi predefiniti dell'esperienza utente
   href: ux-building-blocks/toc.yml

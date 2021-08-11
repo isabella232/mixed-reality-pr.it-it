@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, esercitazione, guida introduttiva, mrtk, uxt, UX Tools, documentazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: f7cf43e8f1c040660b6a2688e234a271bc071b00
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+ms.openlocfilehash: e4fd7f69b3febec3997b13d7cb92579e9018e86cb3805b9a94dc76190affb34d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110712650"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203920"
 ---
 # <a name="2-initializing-your-project-and-first-application"></a>2. Inizializzazione del progetto e prima applicazione
 
@@ -52,13 +52,13 @@ Il progetto dovrebbe aprirsi automaticamente nell'editor Unreal e a quel punto p
 
 ## <a name="enabling-required-plugins"></a>Abilitazione dei plug-in necessari
 
-Per usare le funzionalità disponibili tramite la piattaforma di realtà mista di Microsoft, è prima necessario installare e abilitare il plug-in Microsoft OpenXR. Per altre informazioni sul plug-in, è possibile vedere il progetto in [GitHub.](https://github.com/microsoft/Microsoft-OpenXR-Unreal)
+Per usare le funzionalità disponibili tramite la piattaforma di realtà mista di Microsoft, è prima necessario installare e abilitare il plug-in Microsoft OpenXR. Per altre informazioni sul plug-in, è possibile vedere il progetto in [GitHub](https://github.com/microsoft/Microsoft-OpenXR-Unreal).
 
-1. Aprire l'utilità di avvio Epic Games. Passare a Unreal Engine Marketplace e cercare "[Microsoft OpenXR](https://www.unrealengine.com/marketplace/product/ef8930ca860148c498b46887da196239)". Installare il plug-in nel motore.
+1. Aprire l'utilità di avvio di Epic Games. Passare a Unreal Engine Marketplace e cercare "[Microsoft OpenXR](https://www.unrealengine.com/marketplace/product/ef8930ca860148c498b46887da196239)". Installare il plug-in nel motore.
 
 ![Unreal Marketplace](images/unreal-uxt/2-openxr-plugin.PNG)
 
-2. Nell'editor di Unreal passare a **Project Settings**  >  **Plugins (Plug-in** impostazioni progetto) e cercare "Microsoft OpenXR". Verificare che il plug-in sia abilitato e riavviare l'editor, se richiesto.
+2. Nell'editor Unreal passare a **Project Impostazioni**  >  **plug-in e** cercare "Microsoft OpenXR". Assicurarsi che il plug-in sia abilitato e riavviare l'editor, se richiesto.
 
 ![Abilitazione del plug-in Microsoft OpenXR](images/unreal-uxt/2-enable-plugin.PNG)
 

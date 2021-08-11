@@ -1,25 +1,25 @@
 ---
-ms.openlocfilehash: 85792491eb4c349eea3dac4ae227c6736d7a90c2
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: 4dde9dcb34553e1ad39d9c732f32f9d0ef174eaf2a6b6fbe7b59b8fdc9facf8d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638728"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115204271"
 ---
 # <a name="all-platforms"></a>[Tutte le piattaforme](#tab/all)
 
-Gli stessi mapping di azione e asse nelle impostazioni del progetto di input del gioco possono essere usati da C++.
+Le stesse azioni e gli stessi mapping degli assi nelle impostazioni del progetto di input del gioco possono essere usati da C++.
 
-1. Crea una nuova classe C++ con file/nuova classe C++...
+1. Creare una nuova classe C++ con File/Nuova classe C++...
 
 ![Creazione di una nuova classe C++](../images/reverb-g2-img-11.png)
 
-2. Creare un Pawn
+2. Creare un pedone
 
-![Creazione di un Pawn](../images/reverb-g2-img-12.png)
+![Creazione di un pedone](../images/reverb-g2-img-12.png)
 
-3. Nella soluzione Visual Studio del progetto individuare la nuova classe Pawn e configurarla per l'input.
-* Per prima cosa, nel costruttore impostare AutoPossessPlayer sul primo giocatore per indirizzare l'input al pedone.
+3. Nella soluzione del progetto Visual Studio trovare la nuova classe Pawn e configurarla per l'input.
+* Innanzitutto, nel costruttore impostare AutoPossessPlayer sul primo lettore per indirizzare l'input al pedone.
 
 ```cpp
 AMyPawn::AMyPawn()
@@ -30,7 +30,7 @@ AMyPawn::AMyPawn()
 }
 ```
 
-* In SetupPlayerInputComponent associare quindi gli eventi Action e AXIS ai nomi di azione dalle impostazioni di input del progetto.
+* In SetupPlayerInputComponent associare quindi azioni ed eventi asse ai nomi delle azioni dalle impostazioni di input del progetto.
 
 ```cpp
 void AMyPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -42,7 +42,7 @@ void AMyPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 }
 ```
 
-* Aggiungere le funzioni di callback alla classe:
+* Aggiungere le funzioni di callback alla classe :
 
 ```cpp
 void AMyPawn::XPressed()
@@ -59,7 +59,7 @@ void AMyPawn::LeftGripAxis(float AxisValue)
 }
 ```
 
-* Aggiornare l'intestazione del Pawn con le definizioni della funzione di callback:
+* Aggiornare l'intestazione del pedone con le definizioni di funzione di callback:
 
 ```cpp
 private:
@@ -67,15 +67,15 @@ private:
     void LeftGripAxis(float AxisValue);
 ```
 
-4. Compilare da Visual Studio per avviare l'editor con il nuovo pedone. Trascinare il pedone dal browser contenuto al gioco e il pedone eseguirà i callback quando viene premuto l'input.
+4. Compilare da Visual Studio per avviare l'editor con il nuovo pedone. Trascinare e rilasciare il pedone dal browser del contenuto nel gioco e il pedone eseguirà ora i callback quando viene premuto l'input.
 
 # <a name="steamvr"></a>[SteamVR](#tab/steamvr)
 
-Quando si usano gli eventi dell'asse levetta, il nome dell'evento dell'asse deve terminare con "_X" o "_Y" corrispondenti alla chiave usata.
+Quando si usano gli eventi dell'asse delle leve, il nome dell'evento dell'asse deve terminare con "_X" o "_Y" corrispondente alla chiave usata.
 
-![Uso degli eventi levetta](../images/reverb-g2-img-09.png)
+![Uso degli eventi di identificazione personale](../images/reverb-g2-img-09.png)
 
-Infine, registrare le azioni nel gioco con SteamVR usando il manifesto dell' **azione di rigenerazione** e **rigenerare i pulsanti associazioni controller** in Impostazioni progetto > input di Steam VR.
+Registrare infine le azioni nel gioco con  SteamVR usando i pulsanti Rigenera manifesto azione e Rigenera associazioni **controller** in Project Impostazioni >'input VR di Steam.
 
-![Registrazione delle azioni nelle impostazioni del progetto](../images/reverb-g2-img-10.png)
+![Registrazione di azioni nelle impostazioni del progetto](../images/reverb-g2-img-10.png)
 

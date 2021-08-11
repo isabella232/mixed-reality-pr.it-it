@@ -1,18 +1,18 @@
-- name: Configurazione di base di Eye Tracking
+- name: Configurazione di base del tracciamento oculare
   href: eye-tracking-basic-setup.md
-- name: Panoramica degli esempi di rilevamento degli occhi
+- name: Panoramica degli esempi di tracciamento oculare
   href: eye-tracking-examples-overview.md
-- name: Provider sguardi occhi di rilevamento
+- name: Eye Tracking Eye Gaze Provider
   href: eye-tracking-eye-gaze-provider.md
-- name: Occhi e mani per tenere traccia degli occhi
+- name: Tracciamento oculare di occhi e mani
   href: eye-tracking-eyes-and-hands.md
-- name: Rilevamento degli occhi è calibrato dall'utente
+- name: Il tracciamento oculare è calibrato dall'utente
   href: eye-tracking-is-user-calibrated.md
-- name: Main Tracking
+- name: Tracciamento oculare principale
   href: eye-tracking-main.md
-- name: Esplorazione del rilevamento degli occhi
+- name: Navigazione del tracciamento oculare
   href: eye-tracking-navigation.md
-- name: Posizionamento del rilevamento degli occhi
+- name: Posizionamento del tracciamento oculare
   href: eye-tracking-positioning.md
-- name: Eye-Tracking-target-selection
+- name: Tracciamento oculare-destinazione-selezione
   href: eye-tracking-target-selection.md

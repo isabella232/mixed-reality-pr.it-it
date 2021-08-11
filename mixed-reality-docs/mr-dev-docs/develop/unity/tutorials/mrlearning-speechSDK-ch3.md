@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, riconoscimento vocale, Windows 10, traduzione vocale
 ms.localizationpriority: high
-ms.openlocfilehash: bcc966b63f4c3e5bb9e6d6a38dc7f0312b288402
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: b6172ff5d313cadb3a270fdf4b6a56f45e924e97ec92d071d5c6b0e4636bd658
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590143"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202079"
 ---
 # <a name="3-adding-the-azure-cognitive-services-speech-translation-component"></a>3. Aggiunta del componente di traduzione vocale di Servizi cognitivi di Azure
 

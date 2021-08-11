@@ -5,19 +5,19 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Realtà mista, controlli, interazione, interfaccia utente, ux, menu, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: ecee6182d64ab1c843a9948984565d49ae313923
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Realtà mista, controlli, interazione, interfaccia utente, ux, menu, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, HoloLens, MRTK, realtà mista Toolkit
+ms.openlocfilehash: ab035c195824d987b397676e946633734b0f1af6a983bada4ea9145ff7d07b1e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600170"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115201768"
 ---
 # <a name="near-menu"></a>Menu adiacente
 
 ![Menu adiacente](images/UX_Hero_NearMenu.jpg)
 
-Un menu vicino è una raccolta di pulsanti in un pannello che seguono gli utenti con [un comportamento basato su tag.](billboarding-and-tag-along.md#what-is-a-tag-along) Il pannello rimane entro un intervallo e un angolo di distanza impostati, che consentono agli utenti di interagire con il contenuto in modo a distorsio. Se devi bloccare il mondo o disabilitare il comportamento del tag lungo il pannello, usa il pulsante aggiungi o afferra e posiziona il menu. L'aggiunta del pannello consente agli utenti di concentrarsi sul contenuto di destinazione senza distrazioni. È possibile ri abilitare il comportamento di aggiunta di tag in qualsiasi momento premendo il pulsante aggiungi per fare in modo che il menu segua di nuovo l'utente.
+Un menu vicino è una raccolta di pulsanti in un pannello che seguono gli utenti con [un comportamento basato su tag.](billboarding-and-tag-along.md#what-is-a-tag-along) Il pannello rimane entro un intervallo di distanza e un angolo impostati, in modo che gli utenti interagiscano con il contenuto senza problemi. Se devi bloccare il mondo o disabilitare il comportamento del tag lungo il pannello, usa il pulsante aggiungi o afferra e posiziona il menu. L'aggiunta del pannello consente agli utenti di concentrarsi sul contenuto di destinazione senza distrazioni. È possibile ri abilitare il comportamento di tag lungo in qualsiasi momento premendo il pulsante aggiungi per fare in modo che il menu segua di nuovo l'utente.
 
 <br>
 

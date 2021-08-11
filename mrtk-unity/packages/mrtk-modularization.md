@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: eac96e309afc21f9a2b6efe9c3aef5975e4f0dff
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 1c32486c83eda9b99540d1719753977b6cdb2d18735e799dcd6c2ca3fcf200ce
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177015"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203625"
 ---
 # <a name="mrtk-modularization"></a>Modularizzazione di MRTK
 
@@ -58,7 +58,7 @@ Quando si seleziona un'architettura dell'applicazione, è importante considerare
 
 #### <a name="mixedrealitytoolkit-service-locator"></a>Localizzatore del servizio MixedRealityToolkit
 
-MRTK abilita (e configura automaticamente) le scene dell'applicazione per usare il componente [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) del localizzatore di servizi predefinito. Questo componente include il supporto per la configurazione di sistemi MRTK e provider di dati tramite i controlli di configurazione e gestisce la durata dei componenti e i comportamenti principali (ad esempio, quando eseguire l'aggiornamento).
+MRTK abilita (e configura automaticamente) le scene dell'applicazione per l'uso del componente [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) del localizzatore di servizi predefinito. Questo componente include il supporto per la configurazione di sistemi MRTK e provider di dati tramite i controlli di configurazione e gestisce la durata dei componenti e i comportamenti principali (ad esempio, quando eseguire l'aggiornamento).
 
 Tutti i sistemi sono rappresentati nel controllo della configurazione principale, indipendentemente dal fatto che siano o meno presenti o abilitati nel progetto. Per altre [informazioni, vedere la Guida](../configuration/mixed-reality-configuration-guide.md) alla configurazione della realtà mista.
 

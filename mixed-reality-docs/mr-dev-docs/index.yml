@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Documentazione sulla realtà mista
-summary: 'Esplora il mondo in espansione delle applicazioni di realtà mista con Mixed Reality Toolkit (MRTK), Windows Mixed Reality, Unity, Unreal e altro ancora per HoloLens e visori VR immersive di Windows.'
+summary: 'Esplora il mondo in espansione delle applicazioni di realtà mista con Toolkit (MRTK), Windows Mixed Reality, Unity, Unreal e altro ancora per visori immersive HoloLens e Windows.'
 brand: windows
 metadata:
   title: Documentazione sulla realtà mista
-  description: 'Esplora il mondo in espansione delle applicazioni di realtà mista con Mixed Reality Toolkit (MRTK), Windows Mixed Reality, Unity, Unreal e altro ancora per HoloLens e visori VR immersive di Windows.'
+  description: 'Esplora il mondo in espansione delle applicazioni di realtà mista con Toolkit (MRTK), Windows Mixed Reality, Unity, Unreal e altro ancora per visori immersive HoloLens e Windows.'
   services: service
   ms.service: service
   ms.subservice: subservice
@@ -41,7 +41,7 @@ highlightedContent:
       url: /windows/mixed-reality/altspace-vr/journey
 productDirectory:
   title: Approfondimenti su Realtà mista
-  summary: 'Indipendentemente dal fatto che tu progetti, sviluppi o distribuisca un''applicazione di realtà mista, abbiamo il percorso curato giusto per iniziare a procedere prima dell''esecuzione.'
+  summary: 'Indipendentemente dal fatto che si progetti, sviluppi o distribuisca un''applicazione di realtà mista, abbiamo il percorso curato giusto per iniziare a procedere prima dell''esecuzione.'
   items:
     - title: Progettazione
       imageSrc: images/icon-design.png
@@ -163,7 +163,7 @@ conceptualContent:
         text: Altre risorse
 tools:
   title: SDK e API
-  summary: Inizia a usare Mixed Reality Toolkit per Unity e Unreal ed esplora le funzionalità offerte da Windows XR e OpenXR.
+  summary: Introduzione a Mixed Reality Toolkit per Unity e Unreal ed esplorare le Windows XR e OpenXR da offrire.
   items:
     - title: MRTK per Unity
       imageSrc: images/Final_mrtk-small_logo.png

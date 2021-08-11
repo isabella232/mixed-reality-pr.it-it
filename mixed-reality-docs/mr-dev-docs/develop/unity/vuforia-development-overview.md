@@ -5,21 +5,21 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 12/20/2019
 ms.topic: article
-keywords: Vuforia, marcatori, coordinate, frame di riferimento, rilevamento, visore per realtà mista, visore windows mixed reality, visore di realtà virtuale, unity, HoloLens, rilevamento dei dispositivi, modalità prestazioni, Vuforia portale per sviluppatori
-ms.openlocfilehash: 1a21f4bb441a1ab0706b5916feaac0d691486626
-ms.sourcegitcommit: 7160843723ccd6567490e2f4222219603f184d76
+keywords: Vuforia, marcatori, coordinate, frame di riferimento, rilevamento, visore per realtà mista, visore per realtà mista windows, visore di realtà virtuale, unity, HoloLens, rilevamento dei dispositivi, modalità prestazioni, Vuforia portale per sviluppatori
+ms.openlocfilehash: dd5153b5e4986ebf1ecc2c133f3d431de08ce5b923cc7d2327d9cbda4f4df61c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232171"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115216417"
 ---
 # <a name="using-vuforia-engine-with-unity"></a>Uso del motore Vuforia con Unity
 
-Il motore Vuforia offre una funzionalità importante per HoloLens, la possibilità di connettere esperienze ar a immagini e oggetti specifici nell'ambiente. È possibile usare questa funzionalità per sovrapporre istruzioni dettagliate guidate ai macchinari per l'azienda industriale o aggiungere funzionalità ed esperienze digitali a un prodotto fisico o a un gioco.
+Il motore Vuforia offre una funzionalità importante per HoloLens, la possibilità di connettere esperienze ar a immagini e oggetti specifici nell'ambiente. È possibile usare questa funzionalità per sovrapporre istruzioni dettagliate guidate sui macchinari per l'azienda industriale o aggiungere funzionalità ed esperienze digitali a un prodotto fisico o a un gioco.
 
 Il motore Vuforia offre un'ampia gamma di funzionalità e destinazioni per rendere più flessibile il processo di sviluppo ar. Una delle funzionalità più recenti, Vuforia Model Targets, è una funzionalità chiave per usi commerciali e industriali. Le destinazioni del modello consentono alle applicazioni di riconoscere oggetti fisici come macchine, automobili o giocattoli e di tenerne traccia in base a un modello CAD o 3D digitale. Per gli usi industriali, questa funzionalità può fornire agli addetti all'assemblaggio e ai tecnici del servizio le istruzioni di lavoro e le indicazioni procedurali per l'ar mentre sono in fabbrica o fuori sul campo.
 
-Le app del motore Vuforia esistenti create per telefoni e tablet possono essere facilmente configurate in Unity per l'esecuzione HoloLens. È anche possibile usare Vuforia Engine per portare la nuova app HoloLens in Windows 10 tablet, ad esempio Surface Pro e Surface Book.
+Le app del motore Vuforia esistenti create per telefoni e tablet possono essere facilmente configurate in Unity per l'esecuzione in HoloLens. È anche possibile usare il motore Vuforia per portare la nuova app HoloLens in Windows 10 tablet, ad esempio Surface Pro e Surface Book.
 
 
 ## <a name="get-the-tools"></a>Get the tools
@@ -34,18 +34,18 @@ Aggiungere il pacchetto del motore Vuforia come descritto [qui.](https://library
 
 Il punto di partenza migliore per imparare a conoscere Vuforia Engine e HoloLens è l'esempio di HoloLens [Vuforia Engine](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) (disponibile in Unity Asset Store). L'esempio fornisce un progetto HoloLens completo che include scene preconfigurati che possono essere distribuite in un HoloLens.
 
-Le scene mostrano come usare Vuforia Image Targets per riconoscere un'immagine e aumentarla con contenuto digitale in un'HoloLens virtuale. L'esempio di HoloLens motore Vuforia include anche una scena che mostra l'utilizzo di Destinazioni modello e VuMarks HoloLens. È possibile sostituire facilmente il proprio contenuto nelle scene per sperimentare la creazione di app HoloLens che usano il motore Vuforia.
+Le scene mostrano come usare Vuforia Image Targets per riconoscere un'immagine e aumentarla con contenuto digitale in un'HoloLens esperienza. L'esempio di HoloLens motore Vuforia include anche una scena che mostra l'utilizzo di Destinazioni modello e VuMarks HoloLens. È possibile sostituire facilmente il proprio contenuto nelle scene per sperimentare la creazione di app HoloLens che usano il motore Vuforia.
 
 
 
 ## <a name="configuring-a-vuforia-app-for-hololens"></a>Configurazione di un'app Vuforia per HoloLens
 
-Lo sviluppo di un'app Vuforia Engine HoloLens è fondamentalmente uguale allo sviluppo di app Vuforia Engine per altri dispositivi. È quindi possibile applicare le impostazioni di compilazione e le configurazioni descritte nella sezione seguente. Questo è tutto ciò che serve per consentire al motore Vuforia di funzionare con i HoloLens di rilevamento spaziale e posizionale.
+Lo sviluppo di un'app motore Vuforia per HoloLens è fondamentalmente uguale allo sviluppo di app del motore Vuforia per altri dispositivi. È quindi possibile applicare le impostazioni di compilazione e le configurazioni descritte nella sezione seguente. Questo è tutto ciò che serve per consentire al motore Vuforia di funzionare con i HoloLens di rilevamento spaziale e posizionale.
 
 ## <a name="build-and-run-the-vuforia-engine-sample-for-hololens"></a>Compilare ed eseguire l'esempio di motore Vuforia per HoloLens
 1.  Scaricare [l'esempio di motore Vuforia per HoloLens](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) da Unity Asset Store
 2.  Applicare le [opzioni consigliate del motore unity per la potenza e le prestazioni](performance-recommendations-for-unity.md)
-3.  Aggiungere le scene di esempio a **Scene** in **compilazione.**
+3.  Aggiungere le scene di esempio a Scenes in **Build.Add** the sample scenes to **Scenes** in Build.
 4.  In **Build Impostazioni**(Piattaforma di compilazione) passare alla piattaforma **UWP** facendo clic **sul pulsante Add Open Scenes (Aggiungi scene** aperte).
 ![image](https://user-images.githubusercontent.com/45470042/89573103-173daa80-d7f8-11ea-9284-931a7b6c913d.png)
 5.  Selezionare il **pulsante Impostazioni** lettore.  
@@ -58,7 +58,7 @@ Lo sviluppo di un'app Vuforia Engine HoloLens è fondamentalmente uguale allo sv
 6.  Espandere la **sezione Impostazioni** pubblicazione.
    * In **Funzionalità** assicurarsi che siano selezionate le opzioni **Client Internet, WebCam, Microfono** **e SpatialPerception.**
    * **NOTA: SpatialPerception** deve essere selezionato solo se si intende usare l'API Surface Observer.
-   * In **Supported Device Families (Famiglie di dispositivi** supportate) assicurarsi che sia selezionato **Holographic.** 
+   * In **Supported Device Families (Famiglie di dispositivi** supportate) assicurarsi che sia selezionata l'opzione **Holographic.** 
 7.  Espandere la **sezione Risoluzione e** presentazione.
    * Disabilitare **Esegui in background** in modo che il motore Vuforia si sospende quando l'app viene messa in background e può accedere di nuovo alla fotocamera quando l'app viene ripresa. 
    * **Nell'elenco a discesa Orientamento** predefinito verificare che sia selezionata **l'opzione Orizzontale** a sinistra.
@@ -67,11 +67,11 @@ Lo sviluppo di un'app Vuforia Engine HoloLens è fondamentalmente uguale allo sv
 
 ## <a name="the-vuforia-developer-portal"></a>Vuforia portale per sviluppatori
 
-Gli sviluppatori che desiderano creare esperienze di ar con Vuforia Engine e HoloLens devono iscriversi al portale per sviluppatori Vuforia [all'indirizzo developer.vuforia.com](https://developer.vuforia.com/). Nel portale gli sviluppatori hanno accesso ai [forum di Vuforia Engine](https://developer.vuforia.com/forum) in cui possono partecipare alle discussioni della community, una libreria con documentazione approfondita su tutte le funzionalità del motore Vuforia e [Vuforia Target Manager](https://developer.vuforia.com/target-manager) in cui gli utenti possono creare destinazioni personalizzate. [](https://library.vuforia.com/) Gli sviluppatori possono anche iscriversi per ottenere una licenza per sviluppatori gratuita usando [Vuforia License Manager.](https://developer.vuforia.com/license-manager)
+Gli sviluppatori che desiderano creare esperienze di ar con Vuforia Engine e HoloLens devono iscriversi al portale per sviluppatori Vuforia [all'indirizzo developer.vuforia.com](https://developer.vuforia.com/). Nel portale gli sviluppatori hanno accesso ai forum del motore [Vuforia](https://developer.vuforia.com/forum) in cui possono partecipare [alle](https://library.vuforia.com/) discussioni della community, una libreria con documentazione approfondita su tutte le funzionalità del motore Vuforia e [Vuforia Target Manager](https://developer.vuforia.com/target-manager) in cui gli utenti possono creare destinazioni personalizzate. Gli sviluppatori possono anche iscriversi per ottenere una licenza per sviluppatori gratuita usando [Vuforia License Manager.](https://developer.vuforia.com/license-manager)
 
 ## <a name="device-tracking-with-vuforia"></a>Rilevamento dei dispositivi con Vuforia
 
-[Rilevamento dispositivi](https://library.vuforia.com/features/environments/device-tracker-overview.html) mantiene il rilevamento anche quando una destinazione non è più in visualizzazione. Viene abilitata automaticamente per tutte le destinazioni quando l'indicatore di dispositivo posizionale è abilitato. Per HoloLens applicazioni, Positional Device Tracker viene avviato automaticamente in Unity.
+[Rilevamento dispositivi](https://library.vuforia.com/features/environments/device-tracker-overview.html) mantiene il rilevamento anche quando una destinazione non è più in visualizzazione. Viene abilitata automaticamente per tutte le destinazioni quando è abilitato Positional Device Tracker. Per HoloLens applicazioni, Positional Device Tracker viene avviato automaticamente in Unity.
 
 Il motore Vuforia unisce automaticamente le pose dal rilevamento della fotocamera e dal tracciamento spaziale di HoloLens per fornire posizioni di destinazione stabili indipendentemente dal fatto che la destinazione sia vista o meno dalla fotocamera.
 
@@ -89,9 +89,9 @@ Le destinazioni rilevate, ma non più visualizzate, vengono segnalate come EXTEN
 
 ## <a name="performance-mode-with-vuforia-engine"></a>Modalità prestazioni con il motore Vuforia 
 
-È possibile tramite il motore Vuforia gestire le prestazioni sul HoloLens per l'estensione delle esperienze ar e ridurre il carico di lavoro nella CPU. Il motore Vuforia offre tre modalità che è possibile selezionare: predefinita, per ottimizzare la velocità e per ottimizzare la qualità. 
+È possibile tramite il motore Vuforia gestire le prestazioni nel HoloLens per l'estensione delle esperienze di ar e ridurre il carico di lavoro nella CPU. Il motore Vuforia offre tre modalità che è possibile selezionare: predefinita, per ottimizzare la velocità e per ottimizzare la qualità. 
 
-*   MODE_OPTIMIZE_SPEED consente di ridurre al minimo il carico di lavoro nel dispositivo HoloLens ed è ideale per l'estensione delle esperienze di ar. È consigliabile per le situazioni in cui l'app sta verificando oggetti/destinazioni statici.
+*   MODE_OPTIMIZE_SPEED consente di ridurre al minimo il carico di lavoro nel dispositivo HoloLens ed è ideale per l'estensione delle esperienze ar. È consigliabile per le situazioni in cui l'app sta verificando oggetti/destinazioni statici.
 *   MODE_DEFAULT è la modalità normale, che può essere usata nella maggior parte degli scenari.
 *   MODE_OPTIMIZE_QUALITY è migliore per tenere traccia delle destinazioni mobili o delle destinazioni del modello che si prevede di essere prelevate.
 

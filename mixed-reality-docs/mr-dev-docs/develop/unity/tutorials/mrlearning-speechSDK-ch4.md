@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, ancoraggi nello spazio di Azure, riconoscimento vocale, Windows 10, LUIS, portale LUIS, finalità, entità, espressioni, comprensione del linguaggio naturale
 ms.localizationpriority: high
-ms.openlocfilehash: ab9c1db7ca90a59e4ef688a8faa3d294e433cff6
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: fab521f51f653f3d7f381468cfc045c8c8c0f0c79354c5bf41f9531d0178a193
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111403462"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207132"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4. Configurazione della comprensione delle finalità e del linguaggio naturale
 
@@ -55,7 +55,7 @@ Fai clic sul pulsante **Create** (Crea) per creare un'istanza del servizio:
 Nella pagina Create (Crea) fai clic sull'opzione **Prediction** (Stima) e immetti i valori seguenti:
 
 * In **Subscription** (Sottoscrizione) seleziona **Free Trail** (Prova gratuita) se disponi di una sottoscrizione di prova gratuita, altrimenti seleziona una delle altre sottoscrizioni
-* Per il **gruppo di risorse** fare clic sul collegamento Crea nuovo, immettere un nome appropriato, ad esempio *MRKT-Tutorials,* e quindi fare clic su **OK** 
+* Per Gruppo **di risorse** fare clic **sul** collegamento Crea nuovo, immettere un nome appropriato, ad esempio *MRKT-Tutorials,* quindi fare clic su **OK**
 
 ![mrlearning-speech 6](images/mrlearning-speech/tutorial4-section2-step1-3.png)
 
@@ -73,7 +73,7 @@ Sempre nella pagina Create (Crea) immetti i valori seguenti:
 
 ![mrlearning-speech 7](images/mrlearning-speech/tutorial4-section2-step1-4.png)
 
-Fare quindi  clic sulla scheda Rivedi e crea,  esaminare i dettagli e quindi fare clic sul pulsante Crea nella parte inferiore della pagina per creare la risorsa, nonché il nuovo gruppo di risorse, se ne è stato configurato uno da creare:
+Fare quindi clic sulla scheda **Rivedi** e crea,  esaminare i dettagli e quindi fare clic sul pulsante Crea nella parte inferiore della pagina per creare la risorsa, nonché il nuovo gruppo di risorse, se ne è stato configurato uno da creare:
 
 ![mrlearning-speech 8](images/mrlearning-speech/tutorial4-section2-step1-5.png)
 
@@ -114,7 +114,7 @@ Dopo aver eseguito l'accesso, fare clic su **Nuova app** e immettere i valori se
 * In **Name** (Nome) immetti un nome appropriato, ad esempio *MRTK Tutorials - AzureSpeechServices*
 * In **Culture** (Impostazioni cultura) seleziona **English** (Inglese)
 * In **Description** (Descrizione) immetti facoltativamente una descrizione appropriata
-* Per **Risorsa stima** selezionare l'elenco a discesa della risorsa di stima per che è stato creato nel portale di Azure.
+* Per **Risorsa di previsione** selezionare l'elenco a discesa della risorsa di stima per che è stato creato nel portale di Azure.
 
 Fai quindi clic sul pulsante **Done** (Fine) per creare la nuova app:
 
@@ -126,7 +126,7 @@ Al termine della creazione della nuova app, visualizzerai la pagina **Dashboard*
 
 ### <a name="2-create-intents"></a>2. Creare finalità
 
-Dalla pagina Dashboard passare alla pagina Build > App Assets > **Intents** (Finalità dell'app build > app), quindi fare clic su **Create** (Crea) e immettere il valore seguente nella finestra popup **Create new intent** (Crea nuova finalità):
+Dalla pagina Dashboard passare alla pagina Build > App Assets > **Intents** (Crea asset app >), quindi fare clic su **Create** (Crea) e immettere il valore seguente nella finestra popup **Create new intent** (Crea nuova finalità):
 
 * In **Intent name** (Nome finalità) immetti **PressButton**
 
@@ -165,10 +165,10 @@ Dopo aver aggiunto tutte le espressioni di esempio, la pagina della finalità Pr
 
 ### <a name="4-create-entities"></a>4. Creare entità
 
-Dalla pagina finalità PressButton passare alla pagina Build > App Assets > Entities (Crea asset app > **Entities),** quindi fare clic su **Create** (Crea) e immettere i valori seguenti nella finestra popup **Create new entity** (Crea nuova entità):
+Dalla pagina della finalità PressButton passare alla pagina Build > App Assets > **Entities** (Crea asset app >), quindi fare clic su **Create** (Crea) e immettere i valori seguenti nella finestra popup **Create new entity** (Crea nuova entità):
 
 * In **Entity name** (Nome entità) immetti **Action** (Azione)
-* Per **Tipo di entità** selezionare Machine **learned**
+* Per **Tipo di entità** selezionare Machine **Learned**
 
 Fare quindi clic **sul pulsante** Crea per creare la nuova entità:
 
@@ -189,7 +189,7 @@ Dopo essere tornato alla pagina della finalità PressButton, fai clic sulla paro
 
 ![mrlearning-speech 18](images/mrlearning-speech/tutorial4-section3-step5-1.png)
 
-La frase **go ahead** (vai avanti) è ora definita come valore dell'entità **Action** (Azione). È ora possibile notare il valore dell'entità azione sotto la parola andare avanti:
+La frase **go ahead** (vai avanti) è ora definita come valore dell'entità **Action** (Azione). È ora possibile notare il valore dell'entità azione sotto la parola go ahead:
 
 ![mrlearning-speech 19](images/mrlearning-speech/tutorial4-section3-step5-2.png)
 
@@ -200,7 +200,7 @@ Fai quindi clic sulla parola **launch** (lancia) e infine scegli **Target (Simpl
 
 ![mrlearning-speech 20](images/mrlearning-speech/tutorial4-section3-step5-3.png)
 
-La **parola** di avvio è ora definita come valore **dell'entità** Target. È ora possibile notare il valore dell'entità Target sotto la parola launch :
+La **parola di** avvio è ora definita come valore **dell'entità** Target. È ora possibile notare il valore dell'entità Target sotto la parola launch:
 
 ![mrlearning-speech 21](images/mrlearning-speech/tutorial4-section3-step5-4.png)
 
@@ -242,7 +242,7 @@ Dopo l'elaborazione dell'espressione di test, fai clic su **Inspect** (Ispeziona
 
 ![mrlearning-speech 25](images/mrlearning-speech/tutorial4-section3-step6-3.png)
 
-Per pubblicare l'app, fare clic sul pulsante Pubblica in alto a destra, quindi nella finestra popup Scegliere lo **slot** di pubblicazione e le impostazioni selezionare Produzione e fare clic **sul pulsante** Fine:  
+Per pubblicare l'app, fare clic sul pulsante Publish (Pubblica) in alto a destra, quindi nella finestra popup Choose **your publishing slot and settings** (Scegliere lo slot di pubblicazione e le impostazioni) selezionare **Production** (Produzione) e fare clic **sul pulsante Done (Fine):** 
 
 ![mrlearning-speech 26](images/mrlearning-speech/tutorial4-section3-step6-4.png)
 
@@ -250,7 +250,7 @@ Attendi il completamento del processo di pubblicazione:
 
 ![mrlearning-speech 27](images/mrlearning-speech/tutorial4-section3-step6-5.png)
 
-Passare alla pagina Gestisci > applicazione > risorse di **Azure.** La pagina Risorse di Azure dovrebbe essere simile alla seguente:
+Passare alla pagina Gestisci >'Impostazioni > **risorse di Azure.** La pagina Risorse di Azure sarà simile alla seguente:
 
 ![mrlearning-speech 28](images/mrlearning-speech/tutorial4-section3-step6-6.png)
 

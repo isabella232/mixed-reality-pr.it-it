@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 252bd3d406e797ed219fade0438869e5253d5e5f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 0e815a117aa44654aa55eea03ffae5f966d4f53adaf75682310546e6064ef7cb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104686244"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202607"
 ---
 # <a name="progress-indicators"></a>Indicatori di stato
 
@@ -18,13 +18,13 @@ ms.locfileid: "104686244"
 
 ## <a name="example-scene"></a>Scena di esempio
 
-Esempi di come usare gli indicatori di stato sono disponibili nella `ProgressIndicatorExamples` scena. In questa scena viene illustrato ogni prefabbricato indicatore di stato incluso nell'SDK.
+Esempi di come usare gli indicatori di stato sono disponibili nella `ProgressIndicatorExamples` scena. Questa scena illustra ognuno dei prefab dell'indicatore di stato inclusi nell'SDK.
 
 <img src="../images/progress-indicator/MRTK_ProgressIndicator_Examples.png" alt="Progress Indicator Examples 1">
 
-## <a name="example-open-update--close-a-progress-indicator"></a>Esempio: apertura, aggiornamento & chiusura di un indicatore di stato
+## <a name="example-open-update--close-a-progress-indicator"></a>Esempio: Aprire, aggiornare & chiudere un indicatore di stato
 
-Gli indicatori di stato implementano l' [`IProgressIndicator`](xref:Microsoft.MixedReality.Toolkit.UI.IProgressIndicator) interfaccia. Questa interfaccia può essere recuperata da un GameObject usando `GetComponent` .
+Gli indicatori di stato implementano [`IProgressIndicator`](xref:Microsoft.MixedReality.Toolkit.UI.IProgressIndicator) l'interfaccia . Questa interfaccia può essere recuperata da un GameObject usando `GetComponent` .
 
 ```c#
 [SerializedField]
@@ -37,9 +37,9 @@ private void Start()
 }
 ```
 
-I `IProgressIndicator.OpenAsync()` `IProgressIndicator.CloseAsync()` metodi e restituiscono [attività](xref:System.Threading.Tasks.Task). Si consiglia di attendere queste attività in un metodo asincrono.
+I `IProgressIndicator.OpenAsync()` metodi e `IProgressIndicator.CloseAsync()` restituiscono [Attività](xref:System.Threading.Tasks.Task). È consigliabile attendere queste attività in un metodo asincrono.
 
-Impostare la proprietà dell'indicatore `Progress` su un valore compreso tra 0-1 per aggiornare lo stato di avanzamento visualizzato. Impostarne la `Message` proprietà per aggiornare il messaggio visualizzato. Implementazioni diverse possono visualizzare questo contenuto in modi diversi.
+Impostare la proprietà `Progress` dell'indicatore su un valore compreso tra 0 e 1 per aggiornarne lo stato visualizzato. Impostare la `Message` proprietà per aggiornare il messaggio visualizzato. Implementazioni diverse possono visualizzare questo contenuto in modi diversi.
 
 ```c#
 private async void OpenProgressIndicator()
@@ -59,9 +59,9 @@ private async void OpenProgressIndicator()
 }
 ```
 
-## <a name="indicator-states"></a>Stati indicatore
+## <a name="indicator-states"></a>Stati dell'indicatore
 
-La proprietà di un indicatore `State` determina quali operazioni sono valide. La chiamata a un metodo non valido genererà l'indicatore per segnalare un errore e non eseguire alcuna azione.
+La proprietà di un `State` indicatore determina le operazioni valide. Se si chiama un metodo non valido, l'indicatore segnala in genere un errore e non esegue alcuna azione.
 
 State | Operazioni valide
 --- | ---

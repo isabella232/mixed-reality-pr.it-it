@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 46bb78bc4e2574fd4da14f19edf52624b7b301c2
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: bbe5b923ea7da965424e7fac98adca180c6f91d0c9b4c4ca7a0477e301c362f9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176715"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115204329"
 ---
 # <a name="spatial-awareness-getting-started"></a>Introduzione alla consapevolezza spaziale
 
@@ -31,7 +31,7 @@ L'aggiunta del supporto per la consapevolezza spaziale richiede due componenti c
 
 ### <a name="enable-the-spatial-awareness-system"></a>Abilitare il sistema di consapevolezza spaziale
 
-Il sistema di consapevolezza spaziale è gestito dall'oggetto MixedRealityToolkit (o da un altro [componente registrar](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) del servizio). Seguire questa procedura per abilitare o disabilitare il *sistema di* consapevolezza spaziale nel *profilo MixedRealityToolkit.*
+Il sistema di consapevolezza spaziale è gestito dall'oggetto MixedRealityToolkit (o da un altro [componente registrar del](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) servizio). Seguire questa procedura per abilitare o disabilitare il *sistema di* consapevolezza spaziale nel *profilo MixedRealityToolkit.*
 
 L'Toolkit realtà mista viene fornito con alcuni profili preconfigurati predefiniti. Per alcuni di questi il sistema di consapevolezza spaziale è abilitato o disabilitato per impostazione predefinita. Lo scopo di questa pre-configurazione, in particolare per quando è disabilitato, è evitare il sovraccarico visivo dovuto al calcolo e al rendering delle mesh.
 
@@ -78,14 +78,14 @@ Il sistema di consapevolezza spaziale è simile perché i provider di dati forni
 Dopo aver configurato il sistema di consapevolezza spaziale con gli osservatori desiderati, il progetto può essere compilato e distribuito nella piattaforma di destinazione.
 
 > [!IMPORTANT]
-> Se la destinazione è Windows Mixed Reality piattaforma (ad esempio, HoloLens), è importante assicurarsi che la funzionalità [Percezione](/windows/mixed-reality/spatial-mapping-in-unity) spaziale sia abilitata per usare il sistema di consapevolezza spaziale sul dispositivo.
+> Se la destinazione è Windows Mixed Reality piattaforma (ad esempio, HoloLens), è importante assicurarsi che la funzionalità [Percezione](/windows/mixed-reality/spatial-mapping-in-unity) spaziale sia abilitata per usare il sistema di consapevolezza spaziale nel dispositivo.
 
 > [!WARNING]
 > Alcune piattaforme, tra cui Microsoft HoloLens, forniscono il supporto per l'esecuzione remota dall'interno di Unity. Questa funzionalità consente lo sviluppo e il test rapidi senza richiedere il passaggio di compilazione e distribuzione. Assicurarsi di eseguire il test di accettazione finale usando una versione compilata e distribuita dell'applicazione, in esecuzione nell'hardware e nella piattaforma di destinazione.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo aver seguito le procedure precedenti per abilitare il sistema di consapevolezza spaziale, il sistema può essere configurato e controllato in modo più dettagliato.
+Dopo aver seguito le procedure descritte in precedenza per abilitare il sistema di consapevolezza spaziale, il sistema può essere configurato e controllato in modo più dettagliato.
 
 Informazioni per la configurazione degli osservatori nel controllo:
 
@@ -97,7 +97,7 @@ Informazioni per il controllo e l'estensione degli osservatori tramite codice:
 - [Configurazione degli osservatori tramite codice](usage-guide.md)
 - [Creazione di un osservatore personalizzato](create-data-provider.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Documentazione dell'API di consapevolezza spaziale](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness)
 - [Panoramica del mapping spaziale WMR](/windows/mixed-reality/spatial-mapping)

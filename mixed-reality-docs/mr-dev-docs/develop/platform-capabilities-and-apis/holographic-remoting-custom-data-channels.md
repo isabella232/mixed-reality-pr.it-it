@@ -1,36 +1,36 @@
 ---
 title: Canali di dati di Holographic Remoting personalizzati
-description: I canali di dati personalizzati possono essere usati per inviare dati utente tramite la connessione remota olografica già stabilita.
+description: È possibile usare canali di dati personalizzati per inviare dati utente tramite la connessione holographic Remoting già stabilita.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
-keywords: HoloLens, comunicazione remota, comunicazione remota olografica, auricolare realtà mista, cuffia di realtà mista di Windows, auricolare della realtà virtuale, canali di dati
-ms.openlocfilehash: ed9da4a21c2fe9b25ae29e9b2044d82438b19559
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+keywords: HoloLens, Comunicazione remota, Holographic Remoting, visore per realtà mista, visore windows mixed reality, visore per realtà virtuale, canali dati
+ms.openlocfilehash: 09fea161f9042d7afc59c16d3b5e8a6c69892e84b1de5e9ab4a4808733b4f171
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810099"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115217087"
 ---
 # <a name="custom-holographic-remoting-data-channels"></a>Canali di dati di Holographic Remoting personalizzati
 
 >[!NOTE]
->Queste linee guida sono specifiche per la comunicazione remota olografica in HoloLens 2.
+>Queste linee guida sono specifiche di Holographic Remoting HoloLens 2.
 
-Utilizzare canali di dati personalizzati per inviare dati personalizzati tramite una connessione remota consolidata.
+Usare canali di dati personalizzati per inviare dati personalizzati tramite una connessione remota stabilita.
 
 >[!IMPORTANT]
->I canali di dati personalizzati richiedono un'app remota personalizzata e un'app per lettore personalizzata, perché consente la comunicazione tra le due app personalizzate.
+>I canali dati personalizzati richiedono un'app remota personalizzata e un'app lettore personalizzata, in quanto consente la comunicazione tra le due app personalizzate.
 
 >[!TIP]
->È possibile trovare un semplice esempio di ping-pong negli esempi remote e Player all'interno del [repository GitHub degli esempi di comunicazione remota olografica](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples). Rimuovere il commento ```#define ENABLE_CUSTOM_DATA_CHANNEL_SAMPLE``` dai file SampleRemoteMain. h/SamplePlayerMain. h per abilitare il codice di esempio.
+>Un semplice esempio di ping-pong è disponibile negli esempi di remote e player all'interno del repository github degli esempi [di Holographic Remoting.](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples) Rimuovere il commento ```#define ENABLE_CUSTOM_DATA_CHANNEL_SAMPLE``` nei file SampleRemoteMain.h/SamplePlayerMain.h per abilitare il codice di esempio.
 
 
-## <a name="create-a-custom-data-channel"></a>Creare un canale di dati personalizzato
+## <a name="create-a-custom-data-channel"></a>Creare un canale dati personalizzato
 
 
-Per creare un canale di dati personalizzato, sono necessari i campi seguenti:
+Per creare un canale dati personalizzato, sono necessari i campi seguenti:
 ```cpp
 std::recursive_mutex m_customDataChannelLock;
 winrt::Microsoft::Holographic::AppRemoting::IDataChannel m_customDataChannel = nullptr;
@@ -38,28 +38,28 @@ winrt::Microsoft::Holographic::AppRemoting::IDataChannel::OnDataReceived_revoker
 winrt::Microsoft::Holographic::AppRemoting::IDataChannel::OnClosed_revoker m_customChannelClosedEventRevoker;
 ```
 
-Una volta stabilita una connessione, è possibile creare nuovi canali dati dal lato remoto, dal lato Player o da entrambi. Sia RemoteContext che PlayerContext forniscono un ```CreateDataChannel()``` metodo per la creazione di canali di dati. Il primo parametro è l'ID del canale, che viene usato per identificare il canale dati nelle operazioni successive. Il secondo parametro è la priorità, che specifica la priorità con cui i dati di questo canale vengono trasferiti sull'altro lato. Gli ID di canale validi sul lato remoto sono compresi tra 0 e 63 e 64 fino a e compreso 127 per il lato Player. Le priorità valide sono ```Low``` , ```Medium``` o ```High``` (su entrambi i lati).
+Dopo aver stabilito una connessione, è possibile creare nuovi canali dati dal lato remoto, dal lato lettore o da entrambi. Sia RemoteContext che PlayerContext forniscono un ```CreateDataChannel()``` metodo per la creazione di canali di dati. Il primo parametro è l'ID canale, usato per identificare il canale dati nelle operazioni successive. Il secondo parametro è la priorità, che specifica la priorità con cui i dati di questo canale vengono trasferiti sull'altro lato. Gli ID canale validi sul lato remoto sono compresi tra 0 e 63 e 64 fino a 127 per il lato lettore. Le priorità valide ```Low``` sono ```Medium``` , o ```High``` (su entrambi i lati).
 
-Per avviare la creazione di un canale dati sul lato **remoto** :
+Per avviare la creazione di un canale dati sul **lato** remoto:
 ```cpp
 // Valid channel ids for channels created on the remote side are 0 up to and including 63
 m_remoteContext.CreateDataChannel(0, DataChannelPriority::Low);
 ```
 
-Per avviare la creazione di un canale dati sul lato **Player** :
+Per avviare la creazione di un canale dati sul lato **lettore:**
 ```cpp
 // Valid channel ids for channels created on the player side are 64 up to and including 127
 m_playerContext.CreateDataChannel(64, DataChannelPriority::Low);
 ```
 
 >[!NOTE]
->Per creare un nuovo canale di dati personalizzato, è necessario che il metodo venga chiamato da un solo lato (remoto o lettore) ```CreateDataChannel``` .
+>Per creare un nuovo canale dati personalizzato, solo un lato (remoto o lettore) deve chiamare il ```CreateDataChannel``` metodo .
 
-## <a name="handling-custom-data-channel-events"></a>Gestione degli eventi del canale dati personalizzati
+## <a name="handling-custom-data-channel-events"></a>Gestione degli eventi del canale dati personalizzato
 
-Per stabilire un canale di dati personalizzato, ```OnDataChannelCreated``` è necessario gestire l'evento (sia sul lettore che sul lato remoto). Viene attivato quando un canale dati utente viene creato da entrambi i lati e fornisce un ```IDataChannel``` oggetto che può essere utilizzato per inviare e ricevere dati su questo canale.
+Per stabilire un canale dati personalizzato, l'evento deve essere gestito (sia sul ```OnDataChannelCreated``` lettore che sul lato remoto). Viene attivato quando un canale dati utente è stato creato da entrambi i lati e fornisce un oggetto , che può essere usato per inviare e ricevere ```IDataChannel``` dati tramite questo canale.
 
-Per registrare un listener per l' ```OnDataChannelCreated``` evento:
+Per registrare un listener ```OnDataChannelCreated``` nell'evento:
 ```cpp
 m_onDataChannelCreatedEventRevoker = m_remoteContext.OnDataChannelCreated(winrt::auto_revoke,
     [this](const IDataChannel& dataChannel, uint8_t channelId)
@@ -71,7 +71,7 @@ m_onDataChannelCreatedEventRevoker = m_remoteContext.OnDataChannelCreated(winrt:
     });
 ```
 
-Per ricevere una notifica quando vengono ricevuti i dati, effettuare la registrazione all' ```OnDataReceived``` evento nell' ```IDataChannel``` oggetto fornito dal ```OnDataChannelCreated``` gestore. Eseguire la registrazione all' ```OnClosed``` evento per ricevere una notifica quando il canale dati è stato chiuso.
+Per ricevere una notifica quando vengono ricevuti i dati, registrarsi ```OnDataReceived``` all'evento ```IDataChannel``` sull'oggetto fornito dal ```OnDataChannelCreated``` gestore. Registrarsi ```OnClosed``` all'evento per ricevere una notifica quando il canale dati è stato chiuso.
 
 ```cpp
 m_customChannelDataReceivedEventRevoker = m_customDataChannel.OnDataReceived(winrt::auto_revoke, 
@@ -95,28 +95,28 @@ m_customChannelClosedEventRevoker = m_customDataChannel.OnClosed(winrt::auto_rev
 
 ## <a name="sending-data"></a>Invio di dati
 
-Per inviare dati su un canale di dati personalizzato, utilizzare il ```IDataChannel::SendData()``` metodo. Il primo parametro è un oggetto ```winrt::array_view<const uint8_t>``` per i dati che devono essere inviati. Il secondo parametro specifica la posizione in cui i dati devono essere inviati di nuovo, fino a quando l'altro lato non riconosce la ricezione. 
+Per inviare dati tramite un canale dati personalizzato, usare il ```IDataChannel::SendData()``` metodo . Il primo parametro è ```winrt::array_view<const uint8_t>``` un oggetto ai dati da inviare. Il secondo parametro specifica dove inviare di nuovo i dati, fino a quando l'altro lato non conferma la ricezione. 
 
 >[!IMPORTANT]
->In caso di condizioni di rete non valide, lo stesso pacchetto di dati potrebbe arrivare più di una volta. Il codice ricevente deve essere in grado di gestire questa situazione.
+>In caso di condizioni di rete non ottimali, lo stesso pacchetto di dati potrebbe arrivare più di una volta. Il codice ricevente deve essere in grado di gestire questa situazione.
 
 ```cpp
 uint8_t data[] = {1};
 m_customDataChannel.SendData(data, true);
 ```
 
-## <a name="closing-a-custom-data-channel"></a>Chiusura di un canale di dati personalizzato
+## <a name="closing-a-custom-data-channel"></a>Chiusura di un canale dati personalizzato
 
-Per chiudere un canale di dati personalizzato, utilizzare il ```IDataChannel::Close()``` metodo. Entrambi i lati verranno informati dall' ```OnClosed``` evento dopo la chiusura del canale dati personalizzato.
+Per chiudere un canale dati personalizzato, usare il ```IDataChannel::Close()``` metodo . Entrambi i lati riceveranno una notifica ```OnClosed``` dall'evento dopo la chiusura del canale dati personalizzato.
 
 ```cpp
 m_customDataChannel.Close();
 ```
 
 ## <a name="see-also"></a>Vedere anche
-* [Scrittura di un'app remota olografica remota usando le API di realtà mista di Windows](holographic-remoting-create-remote-wmr.md)
-* [Scrittura di un'app remota di comunicazione remota olografica usando le API di OpenXR](holographic-remoting-create-remote-openxr.md)
+* [Scrittura di un'app remota Holographic Remoting Windows Mixed Reality API](holographic-remoting-create-remote-wmr.md)
+* [Scrittura di un'app remota Holographic Remoting con API OpenXR](holographic-remoting-create-remote-openxr.md)
 * [Scrivere un'app lettore Holographic Remoting personalizzata](holographic-remoting-create-player.md)
-* [Limitazioni e risoluzione dei problemi di comunicazione remota olografica](holographic-remoting-troubleshooting.md)
+* [Risoluzione dei problemi e limitazioni di Holographic Remoting](holographic-remoting-troubleshooting.md)
 * [Condizioni di licenza software per Holographic Remoting](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Informativa sulla privacy di Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

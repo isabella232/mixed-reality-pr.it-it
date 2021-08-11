@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 061e4233d61de817b1aaed7faaa6d461427d6f07
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 16aea46890297dab209c13b6776a0a571b1e05bf5021a5795a33dc88366ee9b1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176702"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115217433"
 ---
 # <a name="mixed-reality-service-registry"></a>Registro del servizio realtà mista
 
@@ -55,7 +55,7 @@ Ognuno dei componenti precedenti, ad eccezione di InputSystemManager, è respons
 
 In generale, i metodi definiti da IMixedRealityServiceRegistrar vengono chiamati internamente dai componenti di gestione dei servizi o dai servizi che richiedono componenti del servizio aggiuntivi per funzionare correttamente. Il codice dell'applicazione in genere non deve chiamare questi metodi, perché in questo modo l'applicazione potrebbe comportarsi in modo imprevedibile (ad esempio, un'istanza del servizio memorizzata nella cache potrebbe diventare non valida).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Documentazione dell'API IMixedRealityServiceRegistrar](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar)
 - [Documentazione dell'API MixedRealityServiceRegistry](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry)

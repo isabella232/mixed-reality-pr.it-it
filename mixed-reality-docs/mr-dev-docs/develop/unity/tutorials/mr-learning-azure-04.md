@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, hololens 2, ancoraggi nello spazio di Azure, servizi cloud di azure, visione personalizzata di azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: ab5bcfe92e5de2149e844fc02164f5079e215142
-ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
+ms.openlocfilehash: 7f85efae0ee24e4785d862873b8b1723460791d2d6a00406a3fd81f465c6faa7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114224284"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115218567"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4. Integrazione di Ancoraggi nello spazio di Azure
 
@@ -39,12 +39,12 @@ Vedere come [creare una risorsa di Ancoraggi nello spazio](/azure/spatial-anchor
 
 In questa sezione verrà illustrato come configurare la scena e apportare le modifiche necessarie.
 
-Selezionare **l'oggetto MixedRealityToolkit** nella finestra Hierarchy **(Gerarchia)** e usare il pulsante Add **Component** (Aggiungi componente) nella finestra Inspector (Controllo) per aggiungere AR Anchor Manager (Script)
+Selezionare **l'oggetto MixedRealityToolkit** nella finestra Hierarchy (Gerarchia) e usare il pulsante **Add Component** (Aggiungi componente) nella finestra Inspector (Controllo) per aggiungere AR Anchor Manager **(Script) (Gestione ancoraggi AR - Script)**
 
-![Oggetto Unity MixedRealityToolkit con componenti ar Anchor Manager aggiunti ](images/mr-learning-azure/tutorial4-section1-step1-1.png)
+![Oggetto MixedRealityToolkit di Unity con componenti AR Anchor Manager aggiunti ](images/mr-learning-azure/tutorial4-section1-step1-1.png)
 
 > [!NOTE]
-> Quando si aggiunge il componente AR Anchor Manager (Script), il componente AR Session Origin (Script) viene aggiunto automaticamente perché è richiesto dal componente AR Anchor Manager (Script).
+> Quando aggiungi il componente AR Anchor Manager (Script), il componente AR Session Origin (Script) (Origine sessione AR - Script) viene aggiunto automaticamente perché è richiesto dal componente AR Anchor Manager (Script) (Gestione ancoraggi AR - Script).
 
 Nella finestra Project (Progetto) passa a **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manager**
 

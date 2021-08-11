@@ -1,37 +1,37 @@
 ---
 title: Punto focale in Unity
-description: Informazioni su come regolare manualmente la stabilità degli ologrammi in Unity impostando il punto di messa a fuoco per gli auricolari HoloLens e di realtà mista di Windows.
+description: Informazioni su come ottimizzare manualmente la stabilità dell'ologramma in Unity impostando il punto di interesse per HoloLens e Windows Mixed Reality visori immersive.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, punto focale, piano di messa a fuoco, piano di stabilizzazione, punto di stabilizzazione, riproiezione, LSR, buffer di profondità, auricolare realtà mista, auricolare della realtà mista di Windows, auricolare della realtà virtuale
-ms.openlocfilehash: 16f359e1742b86c5f12c0c5965ac9e818ea76aee
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+keywords: Unity, focus point, focus plane, stabilization plane, stabilization point, reprojection, LSR, depth buffer, mixed reality headset, windows mixed reality headset, virtual reality headset
+ms.openlocfilehash: 91fba310cf86f145174512c4c1e23d69907d2f57f48f3fe1992b417eb283235f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636223"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203593"
 ---
 # <a name="focus-point-in-unity"></a>Punto focale in Unity
 
-**Spazio dei nomi:** *UnityEngine. XR. WSA*<br>
-**Tipo**: *HolographicSettings*
+**Spazio dei nomi:** *UnityEngine.XR.WSA*<br>
+**Tipo:** *HolographicSettings*
 
-Usare il [punto di interesse](../platform-capabilities-and-apis/hologram-stability.md#reprojection) per fornire a HoloLens un suggerimento su come stabilizzare al meglio gli ologrammi attualmente in fase di visualizzazione.
+Usare il [punto di](../platform-capabilities-and-apis/hologram-stability.md#reprojection) messa a HoloLens con un suggerimento su come stabilizzare al meglio gli ologrammi attualmente visualizzati.
 
-Se si vuole impostare il punto di messa a fuoco in Unity, è necessario impostare ogni fotogramma usando *HolographicSettings. SetFocusPointForFrame ()*. Quando il punto di attivazione non è impostato per un frame, viene usato il piano di stabilizzazione predefinito.
+Se si vuole impostare il punto di messa a fuoco in Unity, è necessario impostarlo per ogni fotogramma usando *HolographicSettings.SetFocusPointForFrame()*. Quando il punto di messa a fuoco non è impostato per un frame, viene usato il piano di stabilizzazione predefinito.
 
 > [!NOTE]
-> Per impostazione predefinita, i nuovi progetti Unity hanno l'opzione "Abilita condivisione buffer di profondità" impostata.  Con questa opzione, un'app Unity in esecuzione in una cuffia desktop immersiva o un HoloLens che esegue l'aggiornamento di Windows 10 aprile 2018 (RS4) o versione successiva invierà il buffer di profondità a Windows per ottimizzare automaticamente la stabilità dell'ologramma, senza che l'app specifichi un punto di interesse:
-> * In un auricolare desktop immersivo, verrà abilitata la riproiezione basata sulla profondità per pixel.
-> * In una HoloLens che esegue l'aggiornamento di Windows 10 aprile 2018 o versione successiva, verrà analizzato il buffer di profondità per selezionare automaticamente un piano di stabilizzazione ottimale.
+> Per impostazione predefinita, per i nuovi progetti Unity è impostata l'opzione "Abilita condivisione buffer di profondità".  Con questa opzione, un'app Unity in esecuzione su un visore desktop immersivo o un HoloLens che esegue l'aggiornamento di Windows 10 aprile 2018 (RS4) o versione successiva invierà il buffer di profondità a Windows per ottimizzare automaticamente la stabilità dell'ologramma, senza che l'app specifica un punto di interesse:
+> * In un visore desktop immersivo, ciò consentirà la riproiezione basata sulla profondità per pixel.
+> * In un HoloLens l'aggiornamento Windows 10 aprile 2018 o versione successiva, verrà analizzato il buffer di profondità per scegliere automaticamente un piano di stabilizzazione ottimale.
 >
-> Entrambi gli approcci dovrebbero fornire una qualità dell'immagine ancora migliore senza lavoro esplicito da parte dell'app per selezionare un punto di interesse per ogni frame.  Si noti che se si specifica un punto di interesse manualmente, che sostituisce il comportamento automatico descritto in precedenza, e in genere ridurrà la stabilità degli ologrammi.  In genere, è necessario specificare un punto di messa a fuoco manuale solo quando l'app è in esecuzione in un HoloLens che non è ancora stato aggiornato all'aggiornamento di Windows 10 aprile 2018.
+> Entrambi gli approcci dovrebbero offrire una qualità dell'immagine ancora migliore senza il lavoro esplicito dell'app per selezionare un punto attivo per ogni fotogramma.  Si noti che se si specifica manualmente un punto di messa a fuoco, questo eseguirà l'override del comportamento automatico descritto in precedenza e in genere ridurrà la stabilità dell'ologramma.  In genere, è necessario specificare un punto di attivazione manuale solo quando l'app è in esecuzione in un HoloLens che non è ancora stato aggiornato all'aggiornamento Windows 10 aggiornamento di aprile 2018.
 
 ### <a name="example"></a>Esempio
 
-Esistono diversi modi per impostare il punto di interesse, come suggerito dagli overload disponibili nella funzione statica *SetFocusPointForFrame* . Di seguito è riportato un semplice esempio per impostare il piano di attivazione sull'oggetto fornito per ogni frame:
+Esistono molti modi per impostare il punto di messa a fuoco, come suggerito dagli overload disponibili nella funzione statica *SetFocusPointForFrame.* Di seguito è riportato un semplice esempio per impostare il piano di messa a fuoco sull'oggetto fornito per ogni fotogramma:
 
 ```cs
 public GameObject focusedObject;
@@ -49,11 +49,11 @@ void Update()
 ```
 
 > [!NOTE]
-> Il semplice codice precedente può ridurre la stabilità dell'ologramma se l'oggetto con stato attivo termina dietro l'utente. È in genere consigliabile impostare **[Abilita condivisione buffer di profondità](camera-in-unity.md#sharing-depth-buffers)** anziché specificare manualmente un punto di interesse.
+> Il semplice codice precedente può ridurre la stabilità dell'ologramma se l'oggetto con lo stato attivo termina dietro l'utente. È in genere consigliabile impostare **[Abilita condivisione buffer di](camera-in-unity.md#sharing-depth-buffers)** profondità anziché specificare manualmente un punto di attivazione.
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di sviluppo di Unity, è possibile esplorare le funzionalità e le API della piattaforma per la realtà mista. Da qui, è possibile passare all'argomento successivo:
+Se si sta seguendo il percorso di sviluppo di Unity che è stato strutturato, si stanno esplorando le API e le funzionalità della piattaforma di realtà mista. Da qui, è possibile passare all'argomento successivo:
 
 > [!div class="nextstepaction"]
 > [Perdita del tracciamento](tracking-loss-in-unity.md)
@@ -61,7 +61,7 @@ Se si sta seguendo il percorso di sviluppo di Unity, è possibile esplorare le f
 In alternativa, passare direttamente alla distribuzione dell'app in un dispositivo o emulatore:
 
 > [!div class="nextstepaction"]
-> [Eseguire la distribuzione in HoloLens o in modalità mista di Windows per la realtà mista](../platform-capabilities-and-apis/using-visual-studio.md)
+> [Distribuire in HoloLens o Windows Mixed Reality visori immersive](../platform-capabilities-and-apis/using-visual-studio.md)
 
 È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](unity-development-overview.md#3-advanced-features) in qualsiasi momento.
 

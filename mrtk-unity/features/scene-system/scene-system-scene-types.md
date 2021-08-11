@@ -4,13 +4,13 @@ description: Documentazione sui diversi tipi di scena in MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 06bfd1dbad3986044f099510c2de4d36cda50fc0
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
+ms.openlocfilehash: be34110c693c749535f6bfcd0411ecbd0bafc3bb48ab2392b3635c2e86a4dfb1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144575"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203331"
 ---
 # <a name="scene-types"></a>Tipi di scena
 
@@ -36,11 +36,11 @@ ___
 
 ## <a name="lighting-scenes"></a>Scene di illuminazione
 
-Set di scene che archiviano informazioni sull'illuminazione e oggetti di illuminazione. Solo uno può essere caricato alla volta e le relative impostazioni possono essere combinate durante i carichi per transizioni di illuminazione fluide.
+Set di scene che archiviano informazioni di illuminazione e oggetti di illuminazione. Solo uno può essere caricato alla volta e le relative impostazioni possono essere combinate durante i carichi per transizioni di illuminazione fluide.
 
-Le impostazioni di illuminazione di Unity, ad esempio luce ambientale, skybox e così via, possono essere complesse da gestire quando si usa il caricamento additivo perché sono collegate a singole scene e il comportamento di override non è semplice. In pratica questo può causare confusione quando gli asset vengono creati in condizioni di illuminazione che non si ottengono in fase di esecuzione.
+Le impostazioni di illuminazione di Unity, ad esempio luce ambientale, skybox e così via, possono essere complesse da gestire quando si usa il caricamento additivo perché sono legate a singole scene e il comportamento di override non è semplice. In pratica questo può causare confusione quando gli asset vengono creati in condizioni di illuminazione che non ottengono in fase di esecuzione.
 
-![Impostazioni di illuminazione del sistema della scena](../images/scene-system/MRTK_SceneSystemLightingSettings.PNG)
+![Impostazioni di illuminazione del sistema di scena](../images/scene-system/MRTK_SceneSystemLightingSettings.PNG)
 
 Il sistema scene usa scene di illuminazione per garantire che queste impostazioni rimangano coerenti indipendentemente dalle scene caricate o attive, sia in modalità di modifica che in modalità di riproduzione.
 
@@ -48,15 +48,15 @@ Per abilitare questa funzionalità, `Use Lighting Scene` archiviare il profilo e
 
 ### <a name="cached-lighting-settings"></a>Impostazioni di illuminazione memorizzate nella cache
 
-Il profilo archivia copie memorizzate nella cache delle impostazioni di illuminazione mantenute nelle scene di illuminazione. Se queste impostazioni cambiano nelle scene di illuminazione, sarà necessario aggiornare la cache per assicurarsi che l'illuminazione venga visualizzata come previsto in modalità di riproduzione. Il profilo visualizza un avviso quando sospetta che le impostazioni memorizzate nella cache non siano aggiornate. Facendo `Update Cached Lighting Settings` clic su vengono caricate tutte le scene di illuminazione, ne vengono estratte le impostazioni e quindi archiviate nel profilo.
+Il profilo archivia le copie memorizzate nella cache delle impostazioni di illuminazione conservate nelle scene di illuminazione. Se queste impostazioni cambiano nelle scene di illuminazione, sarà necessario aggiornare la cache per assicurarsi che l'illuminazione venga visualizzata come previsto in modalità di riproduzione. Il profilo visualizza un avviso quando sospetta che le impostazioni memorizzate nella cache non siano aggiornate. Facendo `Update Cached Lighting Settings` clic verrà caricata ogni scena di illuminazione, verranno estratte le impostazioni e quindi archiviate nel profilo.
 
-![Impostazioni di illuminazione memorizzate nella cache del sistema della scena](../images/scene-system/MRTK_SceneSystemCachedLightingSettings.PNG)
+![Impostazioni di illuminazione memorizzate nella cache del sistema di scena](../images/scene-system/MRTK_SceneSystemCachedLightingSettings.PNG)
 
 ### <a name="editor-behavior"></a>Comportamento dell'editor
 
-Uno dei vantaggi dell'uso delle scene di illuminazione è sapere che il contenuto viene acceso correttamente durante la modifica. A questo scopo, il servizio scene manterà sempre una scena di illuminazione caricata e copierà le impostazioni di illuminazione della scena nella scena attiva corrente.\*
+Uno dei vantaggi dell'uso delle scene di illuminazione è sapere che il contenuto viene acceso correttamente durante la modifica. A questo scopo, il servizio scena manterà sempre una scena di illuminazione caricata e copierà le impostazioni di illuminazione della scena nella scena attiva corrente.\*
 
-È possibile modificare la scena di illuminazione caricata aprendo il controllo del servizio del [sistema della scena.](../../configuration/mixed-reality-configuration-guide.md#editor-utilities) In modalità di modifica è possibile eseguire immediatamente la transizione tra scene di illuminazione. In modalità di riproduzione è possibile visualizzare in anteprima le transizioni.
+È possibile modificare la scena di illuminazione caricata aprendo il controllo del servizio del sistema [di scena.](../../configuration/mixed-reality-configuration-guide.md#editor-utilities) In modalità di modifica è possibile eseguire immediatamente la transizione tra scene di illuminazione. In modalità di riproduzione è possibile visualizzare in anteprima le transizioni.
 
 ![Controllo sistema scena](../images/scene-system/MRTK_SceneSystemServiceInspector.PNG)
 

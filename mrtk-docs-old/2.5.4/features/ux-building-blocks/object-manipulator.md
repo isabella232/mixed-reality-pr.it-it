@@ -5,34 +5,34 @@ author: thalbern
 ms.author: bethalha
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, manipolazione degli oggetti,
-ms.openlocfilehash: 3797bb1938b137d319bdc6454f0aba9a352221bc
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 19cea7bf3cc74ba7936a9eeca624f681043db53fc3776c6c84aadfd2a2e6da01
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104686254"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202611"
 ---
 # <a name="object-manipulator"></a>Manipolatore di oggetti
 
 ![Manipolatore di oggetti](../images/manipulation-handler/MRTK_Manipulation_Main.png)
 
-*ObjectManipulator* è il nuovo componente per il comportamento di manipolazione, disponibile in precedenza in *ManipulationHandler*. Il manipolatore di oggetti apporta diversi miglioramenti e semplificazioni. Questo componente sostituisce il gestore di manipolazione, che verrà deprecato.
+*ObjectManipulator è il* nuovo componente per il comportamento di manipolazione, disponibile in precedenza in *ManipulationHandler.* Il manipolatore di oggetti apporta una serie di miglioramenti e semplificazioni. Questo componente è una sostituzione per il gestore di manipolazione, che verrà deprecato.
 
-Lo script *ObjectManipulator* rende un oggetto mobile, scalabile e girevole usando uno o due mani. Il manipolatore di oggetti può essere configurato per controllare la modalità di risposta dell'oggetto a diversi input. Lo script dovrebbe funzionare con la maggior parte delle forme di interazione, ad esempio HoloLens 2, a mano articolata, HoloLens 2, raggi mano, HoloLens 1 sguardo e movimenti e input del controller di movimento dell'auricolare.
+Lo script *ObjectManipulator* rende un oggetto mobile, scalabile e rotabile usando una o due mani. Il manipolatore di oggetti può essere configurato per controllare il modo in cui l'oggetto risponderà a vari input. Lo script dovrebbe funzionare con la maggior parte delle forme di interazione, ad esempio HoloLens 2 mano articolata, raggi della mano HoloLens 2, HoloLens 1 sguardo fisso e movimenti e l'input del controller del movimento del visore VR immersive.
 
-## <a name="how-to-use-the-object-manipulator"></a>Come utilizzare il manipolatore di oggetti
+## <a name="how-to-use-the-object-manipulator"></a>Come usare il manipolatore di oggetti
 
-Per usare il manipolatore di oggetti, aggiungere prima il `ObjectManipulator` componente script a un GameObject. Assicurarsi di aggiungere anche un Collider all'oggetto, associando i relativi limiti afferrabili.
+Per usare il manipolatore di oggetti, aggiungere prima di tutto il `ObjectManipulator` componente script a un GameObject. Assicurarsi anche di aggiungere un collisore all'oggetto, corrispondente ai limiti afferrabili.
 
-Per fare in modo che l'oggetto risponda all'input della mano quasi articolato, aggiungere `NearInteractionGrabbable` anche lo script.
+Per fare in modo che l'oggetto risponda all'input della mano quasi `NearInteractionGrabbable` articolato, aggiungere anche lo script .
 
-Il comportamento fisico può essere abilitato per il manipolatore di oggetti aggiungendo un componente rigidbody all'oggetto. Il comportamento fisico abilitato aggiungendo questo componente viene discusso in modo più dettagliato in [*fisica e collisioni*](#physics-and-collisions).
+Il comportamento fisico può essere abilitato per il manipolatore di oggetti aggiungendo un componente rigidbody all'oggetto. Il comportamento fisico abilitato con l'aggiunta di questo componente viene illustrato in modo più dettagliato in [*Fisica e collisioni.*](#physics-and-collisions)
 
-Inoltre, la manipolazione può essere vincolata dall'aggiunta di componenti di [vincoli di manipolazione](constraint-manager.md#transform-constraints) all'oggetto. Si tratta di componenti speciali che funzionano con la manipolazione e modificano in qualche modo il comportamento di manipolazione.
+Oltre a questo, la manipolazione può essere vincolata aggiungendo componenti [del vincolo di manipolazione](constraint-manager.md#transform-constraints) all'oggetto. Si tratta di componenti speciali che funzionano con la manipolazione e modificano in qualche modo il comportamento di manipolazione.
 
 ![Gestore di manipolazione](../images/object-manipulator/MRTK_ObjectManipulator_Howto.png)
 
-## <a name="inspector-properties-and-fields"></a>Proprietà e campi di Inspector
+## <a name="inspector-properties-and-fields"></a>Proprietà e campi del controllo
 
 <img src="../images/object-manipulator/MRTK_ObjectManipulator_Structure.png" width="450" alt="Object Manipulator Structure">
 
@@ -44,124 +44,124 @@ Trasformazione dell'oggetto che verrà modificato. Il valore predefinito è l'og
 
 #### <a name="manipulation-type"></a>Tipo di manipolazione
 
-Specifica se l'oggetto può essere modificato usando una sola mano o due mani. Poiché questa proprietà è un flag, è possibile selezionare entrambe le opzioni.
+Specifica se l'oggetto può essere modificato usando una o due mani. Poiché questa proprietà è un flag, è possibile selezionare entrambe le opzioni.
 
-- *Uno gestito*: Abilita una manipolazione gestita se selezionata.
-- *Due gestite*: Abilita due manipolazioni gestite, se selezionate.
+- *One handed (Una mano):* abilita la manipolazione con una mano, se selezionata.
+- Two handed (Due *mani):* abilita la manipolazione a due mani, se selezionata.
 
-#### <a name="allow-far-manipulation"></a>Consenti manipolazione a lungo
+#### <a name="allow-far-manipulation"></a>Consenti manipolazione da lontano
 
-Specifica se è possibile eseguire la manipolazione utilizzando l'interazione con i puntatori.
+Specifica se la manipolazione può essere eseguita usando l'interazione da lontano con i puntatori.
 
-### <a name="one-handed-manipulation-properties"></a>Proprietà di manipolazione a una mano
+### <a name="one-handed-manipulation-properties"></a>Proprietà di manipolazione con una mano
 
-#### <a name="one-hand-rotation-mode-near"></a>Modalità di rotazione a una mano vicino
+#### <a name="one-hand-rotation-mode-near"></a>Modalità di rotazione a una mano vicina
 
-Specifica come si comporterà l'oggetto quando viene afferrato con una mano vicino a. Queste opzioni funzionano solo per le mani articolate.
+Specifica il comportamento dell'oggetto quando viene afferrato con una mano vicina. Queste opzioni funzionano solo per le mani articolate.
 
-- *Ruota intorno al centro oggetti*: l'oggetto ruota usando la rotazione della mano, ma il punto centrale dell'oggetto. L'oggetto comparirà in modo che lo spostamento risulti minore durante la rotazione, ma potrebbe esserci una sensazione di disconnessione tra la mano e l'oggetto. Più utile per l'interazione di gran lunga.
-- *Ruota intorno al punto di* controllo: ruotare l'oggetto con la mano del punto di controllo tra il pollice e il dito dell'indice. Dovrebbe essere considerato come se l'oggetto fosse mantenuto a mano.
+- *Ruota intorno al centro dell'oggetto:* l'oggetto ruota usando la rotazione della mano, ma intorno al punto centrale dell'oggetto. L'oggetto apparirà meno spostato durante la rotazione, ma potrebbe esserci una sensazione di disconnessione tra la mano e l'oggetto. Più utile per l'interazione da lontano.
+- *Ruotare intorno al punto di cattura:* ruotare l'oggetto con la mano intorno al punto di cattura tra il pollice e il dito indice. Dovrebbe essere come se l'oggetto fosse tenuto dalla mano.
 
-#### <a name="one-hand-rotation-mode-far"></a>Modalità di rotazione a una mano
+#### <a name="one-hand-rotation-mode-far"></a>Modalità di rotazione a una mano da lontano
 
-Specifica come si comporterà l'oggetto quando viene afferrato con una sola mano alla distanza. Queste opzioni funzionano solo per le mani articolate.
+Specifica il comportamento dell'oggetto quando viene afferrato con una mano alla distanza. Queste opzioni funzionano solo per le mani articolate.
 
-- *Ruotare about Object Center*: ruotare l'oggetto usando la rotazione della mano, ma il punto centrale dell'oggetto. Utile per esaminare a distanza senza che il centro oggetti si sposti durante la rotazione dell'oggetto.
-- *Ruota intorno al punto di* recupero: ruotare l'oggetto usando la rotazione della mano, ma il punto di riscontro del raggio puntatore. Utile per l'ispezione.
+- *Ruotare intorno al centro dell'oggetto:* ruotare l'oggetto usando la rotazione della mano, ma intorno al punto centrale dell'oggetto. Utile per controllare a una distanza senza spostare il centro dell'oggetto durante la rotazione dell'oggetto.
+- *Ruotare intorno al punto di afferrazione:* ruotare l'oggetto usando la rotazione della mano, ma intorno al punto di hit del raggio dell'indicatore di misura. Utile per l'ispezione.
 
-### <a name="two-handed-manipulation-properties"></a>Due proprietà di manipolazione gestite
+### <a name="two-handed-manipulation-properties"></a>Proprietà di manipolazione a due mani
 
-#### <a name="two-handed-manipulation-type"></a>Tipo di manipolazione a due mano
+#### <a name="two-handed-manipulation-type"></a>Tipo di manipolazione a due mani
 
-Specifica il modo in cui due manipolazioni a mano possono trasformare un oggetto. Poiché questa proprietà è un flag, è possibile selezionare qualsiasi numero di opzioni.
+Specifica il modo in cui la manipolazione a due mani può trasformare un oggetto. Poiché questa proprietà è un flag, è possibile selezionare un numero qualsiasi di opzioni.
 
-- *Move*: lo spostamento è consentito se selezionato.
-- *Scala*: il ridimensionamento è consentito se selezionato.
-- *Rotazione: la* rotazione è consentita se selezionata.
+- *Move:* lo spostamento è consentito se selezionato.
+- *Scalabilità:* il ridimensionamento è consentito se selezionato.
+- *Ruota:* la rotazione è consentita se selezionata.
 
 ![Gestore di manipolazione](../images/manipulation-handler/MRTK_ManipulationHandler_TwoHanded.jpg)
 
 ### <a name="constraints"></a>Vincoli
 
-#### <a name="enable-constraints"></a>Abilita vincoli
+#### <a name="enable-constraints"></a>Abilitare i vincoli
 
-Questa impostazione consentirà di abilitare il [gestore di vincoli](constraint-manager.md)collegati. Le modifiche alle trasformazioni verranno elaborate dai vincoli registrati per il [gestore di vincoli](constraint-manager.md)selezionato.
+Questa impostazione abiliterà la gestione [vincoli collegata.](constraint-manager.md) Le modifiche di trasformazione verranno elaborate dai vincoli registrati nella gestione [vincoli selezionata.](constraint-manager.md)
 
 #### <a name="constraint-manager"></a>Gestione vincoli
 
-L'elenco a discesa consente di selezionare qualsiasi [gestore di vincoli](constraint-manager.md)associato. Il manipolatore di oggetti garantisce la presenza di un [gestore di vincoli](constraint-manager.md) sempre collegato.
-Si noti che più componenti dello stesso tipo vengono visualizzati con lo stesso nome in Unity. Per semplificare la distinzione tra più gestori di vincoli nello stesso oggetto, le opzioni disponibili visualizzeranno un hint per la configurazione del gestore di vincoli selezionato (selezione del vincolo manuale o automatica).
+L'elenco a discesa consente di selezionare uno dei gestori [vincoli collegati.](constraint-manager.md) Il manipolatore di oggetti garantisce che sia [sempre collegato un](constraint-manager.md) gestore vincoli.
+Si noti che più componenti dello stesso tipo verranno visualizzati con lo stesso nome in Unity. Per semplificare la distinzione tra più gestori vincoli nello stesso oggetto, nelle opzioni disponibili verrà visualizzato un hint per la configurazione della gestione vincoli selezionata (selezione manuale o automatica dei vincoli).
 
 #### <a name="go-to-component"></a>Vai al componente
 
-La selezione di gestione vincoli viene fornita con un pulsante *Vai al componente* . Questo pulsante farà sì che il controllo Scorri fino al componente selezionato in modo che sia possibile configurarlo.
+La selezione di Gestione vincoli viene fornita con *un pulsante Vai al* componente. Questo pulsante fa scorrere il controllo fino al componente selezionato in modo che possa essere configurato.
 
 ### <a name="physics"></a>Fisica
 
-Le impostazioni in questa sezione vengono visualizzate solo quando l'oggetto include un componente RigidBody.
+Impostazioni in questa sezione vengono visualizzati solo quando l'oggetto ha un componente RigidBody.
 
-#### <a name="release-behavior"></a>Comportamento della versione
+#### <a name="release-behavior"></a>Comportamento di rilascio
 
-Specificare le proprietà fisiche che un oggetto modificato deve tenere al rilascio. Poiché questa proprietà è un flag, è possibile selezionare entrambe le opzioni.
+Specificare le proprietà fisiche che un oggetto modificato deve mantenere al momento del rilascio. Poiché questa proprietà è un flag, è possibile selezionare entrambe le opzioni.
 
-- *Mantieni velocità*: quando l'oggetto viene rilasciato, se questa opzione è selezionata, manterrà la velocità lineare.
-- *Mantieni velocità angolare*: quando l'oggetto viene rilasciato, se questa opzione è selezionata, manterrà la velocità angolare.
+- *Keep Velocity*(Mantieni velocità): quando l'oggetto viene rilasciato, se questa opzione è selezionata mantiene la velocità lineare.
+- *Mantieni Angular velocità:* quando l'oggetto viene rilasciato, se questa opzione è selezionata, manterà la velocità angolare.
 
-#### <a name="use-forces-for-near-manipulation"></a>USA Forces per la manipolazione quasi
+#### <a name="use-forces-for-near-manipulation"></a>Usare le forze per la manipolazione da vicino
 
-Indica se vengono usate le forze di fisica per spostare l'oggetto quando si eseguono le modifiche più vicine. Se si imposta questa opzione su *false* , l'oggetto risulterà più connesso direttamente alla mano degli utenti. L'impostazione di questa opzione su *true* rispetterà la massa e l'inerzia dell'oggetto, ma potrebbe essere considerato come se l'oggetto fosse connesso tramite una molla. Il valore predefinito è *false*.
+Indica se le forze fisiche vengono usate per spostare l'oggetto durante l'esecuzione di manipolazioni vicine. Impostando questo valore *su false,* l'oggetto sarà più direttamente connesso alla mano dell'utente. L'impostazione di questa proprietà su *true* rispetta la massa e l'inerzia dell'oggetto, ma può sembrare che l'oggetto sia connesso tramite una spring. Il valore predefinito è *false*.
 
 ### <a name="smoothing"></a>Definizione di movimenti uniformi
 
-#### <a name="smoothing-far"></a>Smussamento lontano
+#### <a name="smoothing-far"></a>Smussamento da lontano
 
-Indica se la smussatura indipendente dalla frequenza dei fotogrammi è abilitata per le interazioni lontane. Per impostazione predefinita, la smussatura è abilitata.
+Indica se la smussazione indipendente dalla frequenza dei fotogrammi è abilitata per le interazioni da lontano. L'arrotondamento di gran lunga è abilitato per impostazione predefinita.
 
-#### <a name="smoothing-near"></a>Smussamento vicino
+#### <a name="smoothing-near"></a>Smussamento nelle vicinanze
 
-Se è abilitata la smussatura indipendente dalla frequenza dei frame per le interazioni near. Near smoothing è disabilitato per impostazione predefinita perché l'effetto può essere percepito come ' disconnected ' dalla mano.
+Indica se la smussazione indipendente dalla frequenza dei fotogrammi è abilitata per le interazioni da vicino. La smussamento quasi è disabilitata per impostazione predefinita perché l'effetto può essere percepito come "disconnesso" dalla mano.
 
 #### <a name="smoothing-active"></a>Smoothing attivo
 
-Obsoleto e verrà rimosso in una versione futura. Le applicazioni devono usare SmoothingFar, SmoothingNear o una combinazione dei due.
+Obsoleti e verranno rimossi in una versione futura. Le applicazioni devono usare SmoothingFar, SmoothingNear o una combinazione dei due.
 
-#### <a name="move-lerp-time"></a>Sposta Lerp tempo
+#### <a name="move-lerp-time"></a>Tempo di spostamento del lerp
 
-Quantità di smussatura da applicare allo spostamento. L'uniformità di 0 significa nessuna smussatura. Il valore max significa nessuna modifica al valore.
+Quantità di smussamento da applicare al movimento. Smussamento di 0 significa nessuna smussamento. Il valore massimo indica che non viene apportata alcuna modifica al valore.
 
-#### <a name="rotate-lerp-time"></a>Ruota Lerp tempo
+#### <a name="rotate-lerp-time"></a>Ruotare il tempo di lerp
 
-Quantità di smussatura da applicare alla rotazione. L'uniformità di 0 significa nessuna smussatura. Il valore max significa nessuna modifica al valore.
+Quantità di smussamento da applicare alla rotazione. Smussamento di 0 significa nessuna smussamento. Il valore massimo indica che non viene apportata alcuna modifica al valore.
 
-#### <a name="scale-lerp-time"></a>Ridimensionamento Lerp tempo
+#### <a name="scale-lerp-time"></a>Ridimensionare il tempo di lerp
 
-Quantità di smussatura da applicare alla scala. L'uniformità di 0 significa nessuna smussatura. Il valore max significa nessuna modifica al valore.
+Quantità di smussamento da applicare alla scala. Smussamento di 0 significa nessuna smussamento. Il valore massimo indica che non viene apportata alcuna modifica al valore.
 
 ### <a name="manipulation-events"></a>Eventi di manipolazione
 
 Il gestore di manipolazione fornisce gli eventi seguenti:
 
-- *OnManipulationStarted*: generato all'avvio della manipolazione.
-- *OnManipulationEnded*: viene attivato al termine della manipolazione.
-- *OnHoverStarted*: viene attivato quando una mano o un controller passa il mouse sul manipolabile, quasi o lontano.
-- *OnHoverEnded*: viene attivato quando una mano o un controller Annulla il passaggio del mouse sul manipolabile, quasi o lontano.
+- *OnManipulationStarted: generato* all'avvio della manipolazione.
+- *OnManipulationEnded:* viene generato al termine della manipolazione.
+- *OnHoverStarted:* viene attivato quando una mano/controller passa il puntatore del mouse sul manipolabile, vicino o lontano.
+- *OnHoverEnded:* viene attivato quando una mano/controller sposta il puntatore del mouse sul manipolabile, vicino o lontano.
 
-L'ordine di attivazione dell'evento per la manipolazione è:
+L'ordine di generazione degli eventi per la manipolazione è:
 
 *OnHoverStarted*  ->  *OnManipulationStarted*  ->  *OnManipulationEnded*  ->  *OnHoverEnded*
 
-Se non è presente alcuna manipolazione, si otterranno comunque gli eventi hover con l'ordine di incendio seguente:
+Se non è presente alcuna manipolazione, si otterrà comunque un evento al passaggio del mouse con l'ordine di incendio seguente:
 
 *OnHoverStarted*  ->  *OnHoverEnded*
 
 ## <a name="physics-and-collisions"></a>Fisica e collisioni
 
-Il comportamento fisico può essere abilitato aggiungendo un componente rigidbody allo stesso oggetto di un manipolatore di oggetti. Non solo questa operazione Abilita la configurazione del [comportamento di rilascio](#release-behavior) precedente, inoltre consente conflitti. Senza un componente rigidbody, i conflitti non si comportano correttamente durante la manipolazione:
+Il comportamento fisico può essere abilitato aggiungendo un componente rigidbody allo stesso oggetto di un manipolatore di oggetti. Non solo abilita la configurazione del comportamento [di rilascio](#release-behavior) precedente, ma abilita anche le collisioni. Senza un componente rigidbody, le collisioni non si comportano correttamente durante la manipolazione:
 
-- I conflitti tra un oggetto modificato e un Collider statico (ovvero un oggetto con un Collider ma nessun rigidbody) non funzionano, l'oggetto modificato passa direttamente attraverso il Collider statico senza effetti.
-- Collisioni tra un oggetto modificato e un rigidbody (ad esempio un oggetto con un Collider e un rigidbody) fa sì che rigidbody abbia una risposta di collisione, ma la risposta è inattiva e non naturale. Non esiste inoltre alcuna risposta di collisione sull'oggetto modificato.
+- Le collisioni tra un oggetto manipolato e un collisore statico (ad esempio un oggetto con un collisore ma senza rigidbody) non funzionano, l'oggetto manipolato passa direttamente attraverso il collisore statico senza essere interessato.
+- Collisioni tra un oggetto modificato e un rigidbody (ad esempio un oggetto con un collisore e un rigidbody) causano una risposta di collisione al rigidbody, ma la risposta è jumpy e innaturale. Non esiste inoltre alcuna risposta di collisione sull'oggetto modificato.
 
-Quando viene aggiunto un rigidbody, i conflitti dovrebbero funzionare correttamente.
+Quando viene aggiunto un rigidbody, le collisioni dovrebbero funzionare correttamente.
 
 ### <a name="without-rigidbody"></a>Senza rigidbody
 
@@ -171,15 +171,15 @@ Quando viene aggiunto un rigidbody, i conflitti dovrebbero funzionare correttame
 
 <img src="../images/object-manipulator/MRTK_PhysicsManipulation_Rigidbody.gif" width="500" alt="Rigid Body">
 
-## <a name="elastics-experimental"></a>Elastici (sperimentale)
+## <a name="elastics-experimental"></a>Elastics (sperimentale)
 
-Gli elastici possono essere usati per la manipolazione di oggetti tramite il manipolatore di oggetti. Si noti che il [sistema elastico](../elastics/elastic-system.md) è ancora in stato sperimentale. Per abilitare gli elastici, collegare un componente di gestione elastici esistente o creare e collegare un nuovo gestore elastici tramite il `Add Elastics Manager` pulsante.
+Gli elastici possono essere usati quando si modificano gli oggetti tramite il manipolatore di oggetti. Si noti che il [sistema elastico](../elastics/elastic-system.md) è ancora in stato sperimentale. Per abilitare gli elastici, collegare un componente di gestione elastici esistente oppure creare e collegare un nuovo gestore elastici tramite il `Add Elastics Manager` pulsante .
 
 <img src="../images/bounds-control/MRTK_BoundsControl_Elastics.png" width="450" alt="Bounds Control Elastics">
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Controllo dei limiti](bounds-control.md)
+- [Controllo Limiti](bounds-control.md)
 - [Gestione vincoli](constraint-manager.md)
 - [Finestra di migrazione](../tools/migration-window.md)
-- [Sistema elastici (sperimentale)](../elastics/elastic-system.md)
+- [Sistema elastico (sperimentale)](../elastics/elastic-system.md)

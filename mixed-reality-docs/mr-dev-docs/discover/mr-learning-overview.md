@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, apprendimento, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, traduzione, Azure, servizi cognitivi di Azure, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: e21f6245be5a47797c2b58fd8f57c4c6179b1751
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: 24584532fca0872a1ec62f6f2381e0aa076da5bb79eea765cb3a0a0f5736f36f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112906877"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115204397"
 ---
 # <a name="mixed-reality-learn-overview"></a>Panoramica di Learn sulla realtà mista
 
@@ -23,7 +23,7 @@ Durante lo sviluppo di soluzioni per la realtà mista, maggiore è il numero di 
 I moduli di Learn consentono di diventare sviluppatori esperti di soluzioni di realtà mista, fornendo una struttura basata su moduli che permette di iniziare a usare strumenti chiave come Mixed Reality Toolkit, Unity e i servizi di Realtà mista di Azure. Con la definizione degli obiettivi di apprendimento e dei requisiti e l'impostazione dell'intervallo di tempo previsto per il completamento in un'unica interfaccia, l'uso di Hello World è più facile che mai. 
 
 > [!div class="nextstepaction"]
-> [Introduzione al percorso di apprendimento sulla realtà mista](/learn/browse/?terms=mixed+reality)
+> [Introduzione al percorso di apprendimento di Realtà mista](/learn/browse/?terms=mixed+reality)
 
 ## <a name="general-modules"></a>Moduli generali
 
@@ -56,7 +56,7 @@ Informazioni su come creare un'applicazione HoloLens 2 di realtà mista usando G
 Al termine di questo percorso di apprendimento, si sarà in grado di:
 
 * Installare e configurare l'ambiente di sviluppo per la compilazione di soluzioni di realtà mista per HoloLens 2, usando Gemelli digitali di Azure e Unity
-* Creare una scena 3D in Unity usando dati di terreno statici e dinamici con Microsoft Maps SDK
+* Creare una scena 3D in Unity usando dati statici e dinamici del terreno con Microsoft Mappe SDK
 * Usare le interazioni MRTK per offrire un'esperienza utente avanzata
 * Connettersi a un'origine dati di Gemelli digitali in Azure
 * Trasmettere i dati di telemetria agli asset nella scena di Unity usando i servizi di Azure, incluso Gemelli digitali di Azure
@@ -97,6 +97,6 @@ Creare una sessione di Rendering remoto di Azure ed eseguire il rendering di un 
 
 Al termine del modulo, si sarà in grado di:
 
-* Creare una sessione di Rendering remoto
+* Creare una sessione di rendering remoto
 * Caricare un modello 3D
 * Eseguire il rendering di un modello 3D

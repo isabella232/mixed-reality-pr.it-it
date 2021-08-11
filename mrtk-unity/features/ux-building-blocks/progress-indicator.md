@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 268d13d00bc0bcf1d522eaa6809dab9892624e11
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: b5147e5c592b80ab100a7cf7ce2487d971299832fec11f7ca57b1fdeef530900
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176573"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202589"
 ---
 # <a name="progress-indicator"></a>Indicatore di stato
 
@@ -18,7 +18,7 @@ ms.locfileid: "113176573"
 
 ## <a name="example-scene"></a>Scena di esempio
 
-Esempi di come usare gli indicatori di stato sono disponibili nella `ProgressIndicatorExamples` scena. Questa scena illustra ognuno dei prefab dell'indicatore di stato inclusi nell'SDK. Illustra anche come usare gli indicatori di stato in combinazione con alcune attività asincrone comuni, ad esempio il caricamento della scena.
+Esempi di come usare gli indicatori di stato sono disponibili nella `ProgressIndicatorExamples` scena. Questa scena illustra ognuno dei prefab indicatore di stato inclusi nell'SDK. Illustra anche come usare gli indicatori di stato in combinazione con alcune attività asincrone comuni, ad esempio il caricamento della scena.
 
 <img src="../images/progress-indicator/MRTK_ProgressIndicator_Examples.png" alt="Progress Indicator Examples 1">
 
@@ -37,11 +37,11 @@ private void Start()
 }
 ```
 
-I `IProgressIndicator.OpenAsync()` metodi e `IProgressIndicator.CloseAsync()` restituiscono [Attività](xref:System.Threading.Tasks.Task). È consigliabile attendere queste attività in un metodo asincrono.
+I `IProgressIndicator.OpenAsync()` metodi `IProgressIndicator.CloseAsync()` e restituiscono [Tasks.](xref:System.Threading.Tasks.Task) È consigliabile attendere queste attività in un metodo asincrono.
 
-I prefab predefiniti dell'indicatore di stato di MRTK devono essere inattivi quando vengono posizionati in una scena. Quando i `IProgressIndicator.OpenAsync()` relativi metodi vengono chiamati, gli indicatori di stato attivano e disattivano automaticamente gli oggetti di gioco. Questo modello non è un requisito dell'interfaccia IProgressIndicator.
+I prefab degli indicatori di stato predefiniti di MRTK devono essere inattivi quando vengono posizionati in una scena. Quando i `IProgressIndicator.OpenAsync()` relativi metodi vengono chiamati, gli indicatori di stato attivano e disattivano automaticamente i gameobject. Questo modello non è un requisito dell'interfaccia IProgressIndicator.
 
-Impostare la proprietà `Progress` dell'indicatore su un valore compreso tra 0 e 1 per aggiornarne lo stato visualizzato. Impostare la `Message` proprietà per aggiornare il messaggio visualizzato. Implementazioni diverse possono visualizzare questo contenuto in modi diversi.
+Impostare la proprietà `Progress` dell'indicatore su un valore compreso tra 0 e 1 per aggiornarne lo stato di avanzamento visualizzato. Impostarne `Message` la proprietà per aggiornare il messaggio visualizzato. Implementazioni diverse possono visualizzare questo contenuto in modi diversi.
 
 ```c#
 private async void OpenProgressIndicator()
@@ -63,9 +63,9 @@ private async void OpenProgressIndicator()
 
 ## <a name="indicator-states"></a>Stati dell'indicatore
 
-La proprietà di un `State` indicatore determina le operazioni valide. Se si chiama un metodo non valido, l'indicatore segnala in genere un errore e non esegue alcuna azione.
+La proprietà di un `State` indicatore determina quali operazioni sono valide. Se si chiama un metodo non valido, l'indicatore segnala in genere un errore e non esegue alcuna azione.
 
-Stato | Operazioni valide
+State | Operazioni valide
 --- | ---
 `ProgressIndicatorState.Opening` | `AwaitTransitionAsync()`
 `ProgressIndicatorState.Open` | `CloseAsync()`

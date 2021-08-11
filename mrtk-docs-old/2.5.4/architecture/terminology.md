@@ -1,58 +1,58 @@
 ---
 title: Terminologia
-description: Sistema di input diversa in MRTK.
+description: Sistema di input diffrent in MRTK.
 author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, input,
-ms.openlocfilehash: d06e37185b44796d2a95645f78c735e849bab7b4
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: e13dd23b33690039839ad66d8b0e3235a7238fc6118927dbce51065e01aae3ee
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104682214"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115201823"
 ---
 # <a name="input-system"></a>Sistema di input
 
-Il sistema di input è uno dei sistemi più grandi per tutte le funzionalità offerte da MRTK.
-Molti elementi all'interno del Toolkit si basano su di esso (puntatori, messa a fuoco, prefabbricati). Il codice all'interno del sistema di input è quello che consente le interazioni naturali, ad esempio il recupero e la rotazione tra le diverse piattaforme.
+Il sistema di input è uno dei sistemi più grandi di tutte le funzionalità offerte da MRTK.
+Molti elementi all'interno del toolkit si basano su di esso (puntatori, stato attivo, prefab). Il codice all'interno del sistema di input consente interazioni naturali, ad esempio afferrare e ruotare tra piattaforme diverse.
 
-Il sistema di input presenta alcuni dei propri termini che è opportuno definire:
+Il sistema di input ha una terminologia propria che vale la pena definire:
 
 - **Provider di dati**
 
-    Le impostazioni di input nel profilo di input contengono riferimenti a entità note come provider di dati, un'altra parola che ne descrive i gestori di dispositivi. Si tratta di componenti il cui processo consiste nell'estendere il sistema di input MRTK tramite l'interazione con un sistema sottostante specifico. Un esempio di provider è il provider di realtà mista di Windows, il cui compito consiste nel comunicare con le API di realtà mista di Windows sottostanti e quindi tradurre i dati da tali API in concetti di input specifici di MRTK di seguito. Un altro esempio è il provider OpenVR, il cui processo consiste nel comunicare con la versione astratta di Unity delle API OpenVR e quindi tradurre i dati in concetti di input MRTK.
+    Le impostazioni di input nel profilo di input hanno riferimenti a entità note come provider di dati, un'altra parola che descrive che si tratta di gestori di dispositivi. Si tratta di componenti il cui compito è quello di estendere il sistema di input MRTK tramite l'interfaccia con un sistema sottostante specifico. Un esempio di provider è il provider Windows Mixed Reality, il cui compito è quello di parlare con le API Windows Mixed Reality sottostanti e quindi convertire i dati da tali API in concetti di input specifici di MRTK riportati di seguito. Un altro esempio è il provider OpenVR (il cui compito è quello di parlare con la versione astratta da Unity delle API OpenVR e quindi convertire i dati in concetti di input MRTK).
 
 - **Controller**
 
-    Rappresentazione di un controller fisico (se si tratta di un controller a 6 gradi di libertà, una mano di tipo HoloLens con supporto per i movimenti, una mano completamente articolata, un controller di movimento LEAP e così via). I controller vengono generati da Gestione dispositivi (ad esempio, WMR Device Manager genera un controller e ne gestisce la durata quando si verifica una mano articolata).
+    Rappresentazione di un controller fisico (che si tratta di un controller a 6 gradi di libertà, una mano di tipo HoloLens 1 con supporto del movimento, una mano completamente articolata, un controller di movimento intercalare e così via). I controller vengono generati da gestori di dispositivi, ad esempio gestione dispositivi WMR genera un controller e ne gestisce la durata quando viene visualizzata una mano articolata.
 
 - **Puntatore**
 
-    I controller usano i puntatori per interagire con gli oggetti di gioco. Il puntatore near Interaction, ad esempio, è responsabile del rilevamento quando la mano (ovvero un controller) si avvicina a oggetti che si annunciano come supporto di "near Interaction". Altri esempi per i puntatori sono la teleportazione o i puntatori a distanza (ovvero il puntatore del raggio della mano della Shell) che usano raycasts per interagire con il contenuto che è più lungo della lunghezza delle armi dell'utente.
+    I controller usano i puntatori per interagire con gli oggetti gioco. Ad esempio, il puntatore di interazione da vicino è responsabile del rilevamento quando la mano (che è un controller) è vicina agli oggetti che si annunciano come supporto dell'"interazione da vicino". Altri esempi di puntatori sono il teletrasporto o i puntatori da lontano (ad esempio, l'indicatore di misura del raggio della mano della shell) che usano raycast di distanza per interagire con contenuti più lunghi della lunghezza delle mani da parte dell'utente.
 
-    I puntatori vengono creati da Gestione dispositivi e quindi collegati a un'origine di input. Per ottenere tutti i puntatori per un controller, eseguire le operazioni seguenti: `controller.InputSource.Pointers`
+    I puntatori vengono creati da Gestione dispositivi e quindi collegati a un'origine di input. Per ottenere tutti i puntatori per un controller, eseguire: `controller.InputSource.Pointers`
 
-    Si noti che un controller può essere associato a molti puntatori diversi contemporaneamente. Per assicurarsi che questo non determini il caos, c'è un Mediator del puntatore che controlla i puntatori che possono essere attivi. ad esempio, il Mediator Disabilita i puntatori di interazione di disparità quando viene rilevata l'interazione vicina.
+    Si noti che un controller può essere associato a molti puntatori diversi contemporaneamente. Per assicurarsi che non si diffondono nel chaos, è disponibile un mediatore di puntatori che controlla quali puntatori possono essere attivi (ad esempio, il mediatore disabiliterà i puntatori di interazione da lontano quando viene rilevata l'interazione da vicino).
 
-- **Lo stato attivo**
+- **Focus**
 
-    Gli eventi del puntatore vengono inviati agli oggetti nello **stato attivo**. La selezione dello stato attivo può variare in base al tipo di puntatore; un puntatore a raggio mano userà raycasts, mentre un puntatore poke utilizzerà spherecasts. Un oggetto deve implementare IMixedRealityFocusHandler per ricevere lo stato attivo. È possibile registrare globalmente un oggetto per ricevere eventi puntatore non filtrati, ma questo approccio non è consigliato.
+    Gli eventi del puntatore vengono inviati agli oggetti nello **stato attivo.** La selezione dello stato attivo varia in base al tipo di puntatore. Un indicatore di misura del raggio della mano userà raycast, mentre un puntatore poke userà spherecast. Un oggetto deve implementare IMixedRealityFocusHandler per ricevere lo stato attivo. È possibile registrare a livello globale un oggetto per ricevere eventi puntatore non filtrati, ma questo approccio non è consigliato.
 
-    Il componente che aggiorna quali oggetti sono in stato attivo è [FocusProvider](xref:Microsoft.MixedReality.Toolkit.Input.FocusProvider)
+    Il componente che aggiorna gli oggetti con lo stato attivo è [FocusProvider](xref:Microsoft.MixedReality.Toolkit.Input.FocusProvider)
 
 - **Cursore**
 
-    Entità associata a un puntatore che fornisce indicazioni visive aggiuntive intorno all'interazione del puntatore. Ad esempio, il FingerCursor eseguirà il rendering di un anello intorno al dito e potrà ruotare tale anello quando il dito si avvicina agli oggetti "near interactable". Un puntatore può essere associato a un singolo cursore al momento.
+    Entità associata a un puntatore che fornisce suggerimenti visivi aggiuntivi sull'interazione del puntatore. Ad esempio, FingerCursor esegue il rendering di un anello intorno al dito e può ruotare l'anello quando il dito è vicino a oggetti "near interactable". Un puntatore può essere associato a un singolo cursore alla volta.
 
 - **Interazione e manipolazione**
 
-    Gli oggetti possono essere contrassegnati con uno script di interazione o manipolazione. Potrebbe trattarsi di un oggetto o di un [`Interactable`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) elemento simile a [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable) / [`ManipulationHandler`](xref:Microsoft.MixedReality.Toolkit.UI.ManipulationHandler) .
+    Gli oggetti possono essere contrassegnati con uno script di interazione o manipolazione. Può trattarsi di tramite [`Interactable`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) o un elemento simile a [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable) / [`ManipulationHandler`](xref:Microsoft.MixedReality.Toolkit.UI.ManipulationHandler) .
 
-    Ad esempio, NearInteractionGrabbable e NearInteractionTouchable consentono determinati puntatori (in particolare vicino ai puntatori di interazione) per individuare gli oggetti su cui è possibile concentrarsi.
+    Ad esempio, NearInteractionGrabbable e NearInteractionTouchable consentono a determinati puntatori (in particolare i puntatori di interazione da vicino) di sapere su quali oggetti è possibile concentrarsi.
 
-    Interactable e ManipulationHandler sono esempi di componenti che ascoltano gli eventi del puntatore per modificare gli oggetti visivi dell'interfaccia utente o spostare/ridimensionare/ruotare gli oggetti di gioco.
+    Interactable e ManipulationHandler sono esempi di componenti che sono in ascolto di eventi puntatore per modificare gli oggetti visivi dell'interfaccia utente o spostare/ridimensionare/ruotare gli oggetti gioco.
 
-L'immagine seguente acquisisce la build di alto livello (dal basso verso l'alto) dello stack di input MRTK:
+L'immagine seguente acquisisce la compilazione di alto livello (dal basso verso l'alto) dello stack di input MRTK:
 
 ![Diagramma del sistema di input](../features/images/input/MRTK_InputSystem.png)

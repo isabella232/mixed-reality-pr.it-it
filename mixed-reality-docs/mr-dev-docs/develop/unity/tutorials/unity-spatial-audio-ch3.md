@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens2, spatial audio, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head-related transfer function, reverb, Microsoft Spatializer, video importing, Video Player
-ms.openlocfilehash: 60b70fc3b7f49f5b39138a218f93c0b37f29b9d9
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+ms.openlocfilehash: 2926301aac9db67d3e72b0511600720c24e5965f52a23faa1230c381a47c9b90
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110712879"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202934"
 ---
 # <a name="3-spatializing-audio-from-a-video"></a>3. Spazializzazione dell'audio da un video
 
@@ -36,7 +36,7 @@ Nella finestra **Importa nuovo** asset selezionare il file **Microsoft HoloLens 
 
 ![Selezione dell'asset](images/spatial-audio/spatial-audio-03-section1-step1-2.PNG)
 
-La regolazione delle impostazioni di qualità nel clip video può garantire una riproduzione uniforme HoloLens 2. Selezionare il file video nella finestra **Progetto** e nella finestra Controllo del file video eseguire **l'override** delle impostazioni per Le **app di Windows Store** e:
+La regolazione delle impostazioni di qualità nel clip video può garantire una riproduzione uniforme HoloLens 2. Selezionare il file video nella **finestra Project** e nella finestra Inspector  (Controllo) del file video sostituire le impostazioni per Windows **Store Apps** e:
 
 * Abilita **transcodifica**
 * Impostare **Codec** su H264
@@ -63,7 +63,7 @@ Fare clic con il pulsante destro del mouse su Hierarchy (Gerarchia), selezionare
 
 ![Aggiungere un quad](images/spatial-audio/spatial-audio-03-section2-step1-1.PNG)
 
-A questo punto è necessario trameare  il **quad** con il video. Nella finestra Progetto fare clic con il pulsante destro del mouse e scegliere Crea trama di rendering per creare un componente Trama di rendering, immettere un nome appropriato per la trama di rendering, ad esempio  >   Trama _audio_ spaziale:
+A questo punto  è necessario trameare il quad con il video. Nella finestra **Project** fare clic con il pulsante destro del mouse e scegliere Crea trama di rendering per creare un componente Trama di rendering, immettere un nome appropriato per la trama di rendering, ad esempio  >   Trama _audio_ spaziale:
 
 ![Creare una trama di rendering](images/spatial-audio/spatial-audio-03-section2-step1-2.PNG)
 
@@ -73,14 +73,14 @@ Selezionare Trama **di rendering** e nella finestra Controllo impostare la propr
 
 Usare quindi render texture **spatial audio texture (Trama audio spaziale** di rendering) creata come trama per il **quad**:
 
-1. Trascinare **la trama audio** spaziale dalla finestra **Progetto** al **quad** nella gerarchia per aggiungere la trama di rendering al quad
-2. Per garantire prestazioni ottimali nel HoloLens 2, selezionare Quad nella gerarchia e nella finestra Inspector (Controllo) per lo shader selezionare **Mixed Reality Toolkit** Standard Shader (Shader standard di Mixed Reality  >   Toolkit).
+1. Trascinare **la trama audio** spaziale dalla finestra **Project** sul **quad** nella gerarchia per aggiungere la trama di rendering al quad
+2. Per garantire prestazioni ottimali HoloLens 2, selezionare Quad nella gerarchia e nella finestra Inspector (Controllo) per lo shader selezionare **mixed reality Toolkit** Standard  >  **Shader(Shader Standard).**
 
 ![Proprietà trama quadrupla](images/spatial-audio/spatial-audio-03-section2-step1-4.PNG)
 
 Per impostare **Lettore video e** **Trama di** rendering per  riprodurre il video clip, selezionare il lettore **video** nella gerarchia e nella finestra **Inspector (Controllo).**
 
-* Impostare la **proprietà Clip video** sul file video scaricato 'Microsoft HoloLens - Spatial Sound-PTPvx7mDon4'
+* Impostare la **proprietà Video Clip** sul file video scaricato 'Microsoft HoloLens - Spatial Sound-PTPvx7mDon4'
 * Selezionare la **casella di controllo** Ciclo
 * Impostare **Trama di destinazione** sulla nuova trama di rendering Trama audio **spaziale**
 
@@ -92,7 +92,7 @@ Nella finestra Hierarchy (Gerarchia) selezionare **Quad** object (Oggetto Quad),
 
 In **Origine audio**:
 
-* Impostare **Output** sul **mixer audio spaziale**
+* Impostare **Output** **sull'audio spaziale Mixer**
 * Selezionare la **casella Spazializza**
 * Spostare il **dispositivo di scorrimento Fusione** spaziale su 1 (3D)
 

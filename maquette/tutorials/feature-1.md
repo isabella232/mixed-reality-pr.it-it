@@ -1,19 +1,19 @@
 ---
-title: Esercitazione sulle funzionalità 1
+title: Esercitazione sulla funzionalità 1
 description: Provare le app di esempio Unity che usano Maquette.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/26/2020
 ms.topic: article
-keywords: Realtà mista di Windows, maquette, prototipi, realtà mista, realtà virtuale, VR, MR, feedback, hub di feedback, bug
-ms.openlocfilehash: 322e71c61d77adb03cea87970c21aaf5c965e50b
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+keywords: Windows Mixed Reality, Maquette, prototipazione, Realtà mista, Realtà virtuale, REALTÀ VIRTUALE, MR, Feedback, Hub di Feedback, bug
+ms.openlocfilehash: e4ed6b03f04c5425a215121e912226d71de39387267730df3f32eae5e49dba56
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94935442"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202389"
 ---
-# <a name="feature-1-tutorial"></a>Esercitazione sulle funzionalità 1
+# <a name="feature-1-tutorial"></a>Esercitazione sulla funzionalità 1
 
 <!-- TODO(Harrison/Stefan): Need cool header image from tutorial -->
 

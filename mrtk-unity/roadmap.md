@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 03/03/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK
-ms.openlocfilehash: 7385d516e986c1602ad59e2825aa6d1262504727
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: b591d3ed7bd3c470bdf5b9598864f35963fb99a9957c5ceefdd1417372a3b97e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175580"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203233"
 ---
 # <a name="roadmap"></a>Roadmap
 
