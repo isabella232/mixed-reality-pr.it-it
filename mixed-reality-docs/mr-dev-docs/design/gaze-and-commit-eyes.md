@@ -7,12 +7,12 @@ ms.date: 05/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Tracciamento oculare, Realtà mista, Input, Sguardo fisso, Selezione oculare della destinazione, HoloLens 2, Selezione con gli occhi, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, sguardo
-ms.openlocfilehash: 1dff0ded282678a695070feca2b578004610d2c7
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+ms.openlocfilehash: 12ffc24c39a9f8be329972516d42730dc98899d3ebba8359e9fea6ebbf6d02c2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196466"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197825"
 ---
 # <a name="eye-gaze-and-commit"></a>Sguardo fisso e commit
 
@@ -31,13 +31,13 @@ Lo sguardo fisso tuttavia ha un comportamento diverso da quello del puntamento c
 Nelle [linee guida di progettazione per l'uso dello sguardo fisso](eye-tracking.md) vengono riepilogati i vantaggi generali e le problematiche dell'uso del tracciamento oculare come input nell'app olografica. In questa sezione vengono trattate le considerazioni relative alla progettazione specifiche per l'uso di _sguardo fisso e commit_.
 Prima di tutto i nostri occhi si muovono con una rapidità incredibile e sono un mezzo straordinario per individuare velocemente una destinazione all'interno della visualizzazione. Lo sguardo fisso è la soluzione ideale per eseguire rapide azioni di sguardo fisso e commit, soprattutto se combinate con commit rapidi come quelli effettuati tramite simulazione del tocco o pressione di un pulsante.
 
-## <a name="head-and-eye-tracking-design-concepts-demo"></a>Demo dei concetti di progettazione del rilevamento oculare e della testa
+## <a name="head-and-eye-tracking-design-concepts-demo"></a>Demo dei concetti di progettazione del tracciamento oculare e della testa
 
-Se si desidera vedere i concetti di progettazione di Head e Eye Tracking in azione, vedere la demo video **Designing Holograms - Head Tracking and Eye Tracking** (Progettazione di ologrammi - Rilevamento della testa e tracciamento oculare) di seguito. Al termine, continuare per un'analisi più dettagliata di argomenti specifici.
+Se si desidera vedere i concetti di progettazione di head e tracciamento oculare in azione, vedere la demo video Progettazione **di Ologrammi - Tracciamento** testa e tracciamento oculare di seguito. Al termine, continuare per un approfondimento più dettagliato su argomenti specifici.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
 
-*Questo video è stato tratto dall'app "Designing Holograms" (Progettazione di ologrammi) HoloLens 2 app. Scaricare e usufruire dell'esperienza completa [qui.](https://aka.ms/dhapp)*
+*Questo video è stato tratto dall'app "Progettazione Ologrammi" HoloLens 2 app. Scaricare e usufruire dell'esperienza completa [qui.](https://aka.ms/dhapp)*
    
 ## <a name="design-guidelines-for-eye-gaze-and-commit"></a>Linee guida di progettazione per sguardo fisso e commit
 

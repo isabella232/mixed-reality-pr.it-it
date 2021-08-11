@@ -1,21 +1,21 @@
 ---
 title: Supporto
-description: Risorse della community, esercitazioni, domande frequenti e supporto per Maquette.
+description: Trovare risorse della community, esercitazioni, domande frequenti e supporto per Maquette.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/26/2020
 ms.topic: article
-keywords: Realtà mista di Windows, maquette, prototipi, realtà mista, realtà virtuale, VR, MR, feedback, hub di feedback, bug
-ms.openlocfilehash: 43a5c465fcc546a09444396cbcaefa6b65e08de4
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+keywords: Windows Mixed Reality, Maquette, prototipazione, Realtà mista, Realtà virtuale, VR, MR, Feedback, Hub di Feedback, bug
+ms.openlocfilehash: 9e91a1cefccb15fd5c454f981c4959748ff4d63ee277da85f21a4e5043a9bf07
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94935496"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196236"
 ---
 # <a name="support"></a>Supporto
 
-![Logo](../images/MaquetteIcon.png) Supporto per script Maquette
+![Logo](../images/MaquetteIcon.png) Supporto di script Maquette
 
 ## <a name="support"></a>Supporto
 
@@ -27,11 +27,11 @@ Collegamenti di riferimento a:
   * Impostazioni
 * Elementi dell'interfaccia utente
 * Interattività
-* Modello per l'estensione di elementi dell'interfaccia utente, pennelli e così via.
+* Modello per l'estensione: elementi dell'interfaccia utente, pennelli e così via.
 
 ## <a name="tutorials"></a>Esercitazioni
 
-Esempi che illustrano il funzionamento dello scripting-concentrarsi su come eseguire operazioni specifiche
+Esempi che illustrano il funzionamento dello scripting: concentrarsi su come eseguire operazioni specifiche
 * Esempio di funzionalità 1
 * Esempio di funzionalità 2
 * Esempio di funzionalità 3
@@ -42,14 +42,14 @@ Esempi che illustrano il funzionamento dello scripting-concentrarsi su come eseg
 * Dati di Excel
 
  Esempi completi
-* Tic tac toe
+* Tic Tac Toe
 * Tetris
 
-## <a name="maquette-community"></a>Community di maquette
+## <a name="maquette-community"></a>Maquette Community
 
-* [Forum su Maquette](https://steamcommunity.com/app/967490/discussions/)
-* Forum su Maquette scripting Forums-TBD-needs Forum
-* Database di bug-esporre? collegamento necessario
+* [Forum di Maquette](https://steamcommunity.com/app/967490/discussions/)
+* Forum di scripting di Maquette - TBD - sezione del forum per le esigenze
+* Database di bug: esporre? collegamento di necessità
 * [YouTube](https://www.youtube.com/channel/UC3LL920zxSo16CmmmVCntxw)
 * [Twitter](https://twitter.com/MadeInMaquette)
 * [Instagram](https://www.instagram.com/microsoftmaquette/)
@@ -57,17 +57,17 @@ Esempi che illustrano il funzionamento dello scripting-concentrarsi su come eseg
 
 ## <a name="faq"></a>Domande frequenti
 
-* JS rispetto a MQJS
-  * Cosa posso includere/incorporare in MQJS? Node.js? Via?
-  * Tutte le librerie?
-  * Quali sono i runtime del linguaggio? Si tratta di una parte di JS come funzioni Math/String?
+* JS e MQJS
+  * Cosa è possibile includere/incorporare in MQJS? Node.js? and so on?
+  * Sono presenti librerie?
+  * E i runtime di linguaggio? Fanno parte di JS come le funzioni matematiche/stringa?
   * Dom? No
-* Prestazioni? (si dice qualcosa?)
-* Profilatura (no)
+* Perf? (si dice qualcosa su questo?)
+* Profiling (No)
 * Registrazione (stdin, stdout, console, altro?)
-* Riferimento/collegamento o Jint
+* Riferimento/collegamento a Jint
 * Dispositivi supportati
-* Streaming remoto app HL (?)
+* Streaming remoto di app HL (?)
 
 ## <a name="release-notes"></a>Note sulla versione
 

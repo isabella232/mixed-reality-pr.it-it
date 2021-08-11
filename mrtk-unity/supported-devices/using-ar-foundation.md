@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, AR Core, AR Kit, iOS, IOS, Android, AR Foundation
-ms.openlocfilehash: d127b9b39cbaa90f0c8c5a8a6ac7955f33404cbf
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: 109241da4137664510aab27094bd508aabaee1d145e387d80da9df259dc730a1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281949"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196709"
 ---
 # <a name="deploying-to-android-and-ios-ar-foundation-experimental"></a>Distribuzione in Android e iOS (AR Foundation) [Sperimentale]
 
@@ -62,7 +62,7 @@ La procedura seguente presuppone l'uso dell'oggetto MixedRealityToolkit. I passa
 
     ![Clonare il profilo della fotocamera MRTK](../features/images/camera-system/CloneCameraProfileARFoundation.png)
 
-1. Passare al pannello Inspector (Controllo) nella sezione camera system (Sistema fotocamera) ed espandere la **sezione Camera Impostazioni Providers (Provider di** Impostazioni camera).
+1. Passare al pannello Inspector (Controllo) nella sezione camera system (Sistema fotocamera) ed espandere la **sezione Camera Impostazioni Providers (Provider Impostazioni camera).**
 
     ![Espandere i provider di impostazioni](../features/images/camera-system/ExpandProviders.png)
 

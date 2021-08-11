@@ -1,26 +1,26 @@
 ---
 title: TeleportSystemOverview
-description: Panoramica sull'abilitazione e la disabilitazione del sistema Teleport in MRTK
+description: Panoramica sull'abilitazione e la disabilitazione del sistema teletrasporto in MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 ms.localizationpriority: high
-keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, sistema Teleport,
-ms.openlocfilehash: 872ae21b36dff81af144752c175ed80ff0e6c245
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, sistema di teletrasporto,
+ms.openlocfilehash: ee56f62d6e0206249db62d8e7e93cf97cdf8bcc40c35ec0284ebae319870f8ee
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101782227"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197641"
 ---
-# <a name="teleport-system"></a>Sistema Teleport
+# <a name="teleport-system"></a>Sistema di teletrasporto
 
-Il sistema Teleport è un sottosistema del MRTK che gestisce il Teleporting dell'utente quando l'applicazione usa una visualizzazione opaca. Per le esperienze AR (ad esempio HoloLens), il sistema di teleportazione non è attivo. Per esperienze HMD immersive (OpenVR, WMR) è possibile abilitare il sistema Teleport.
+Il sistema di teletrasporto è un sottosistema di MRTK che gestisce il teletrasporto dell'utente quando l'applicazione usa uno schermo opaco. Per le esperienze ar (HoloLens), il sistema di teletrasporto non è attivo. Per esperienze HMD immersive (OpenVR, WMR) è possibile abilitato il sistema di teletrasporto.
 
 ## <a name="enabling-and-disabling"></a>Abilitazione e disabilitazione
 
-Il sistema Teleport può essere abilitato o disabilitato attivando la casella di controllo nel relativo profilo.
-Questa operazione può essere eseguita selezionando l'oggetto MixedRealityToolkit nella scena, facendo clic su "Teleport" e quindi attivando la casella di controllo "Enable Teleport System".
+Il sistema di teletrasporto può essere abilitato o disabilitato attivando la casella di controllo nel relativo profilo.
+A tale scopo, selezionare l'oggetto MixedRealityToolkit nella scena, fare clic su "Teletrasporto" e quindi selezionare la casella di controllo "Abilita teletrasporto".
 
 Questa operazione può essere eseguita anche in fase di esecuzione:
 
@@ -38,14 +38,14 @@ void EnableTeleportSystem()
 
 ## <a name="events"></a>Eventi
 
-Il sistema Teleport espone gli eventi tramite l' [`IMixedRealityTeleportHandler`](xref:Microsoft.MixedReality.Toolkit.Teleport.IMixedRealityTeleportHandler) interfaccia per fornire segnali quando le azioni Teleport iniziano, terminano o vengono annullate.
-Per informazioni dettagliate sui meccanismi degli eventi e sul payload associato, vedere la documentazione dell'API collegata.
+Il sistema di teletrasporto espone gli eventi tramite l'interfaccia per fornire segnali quando le azioni di [`IMixedRealityTeleportHandler`](xref:Microsoft.MixedReality.Toolkit.Teleport.IMixedRealityTeleportHandler) teletrasporto iniziano, terminano o vengono annullate.
+Per altri dettagli sui meccanismi degli eventi e sul payload associato, vedere la documentazione dell'API collegata.
 
 ## <a name="usage"></a>Utilizzo
 
-### <a name="how-to-register-for-teleportation-events"></a>Come registrarsi per gli eventi di teleportazione
+### <a name="how-to-register-for-teleportation-events"></a>Come registrarsi per gli eventi di teletrasporto
 
-Il codice seguente illustra come creare un monobehavior che resterà in ascolto di eventi di teleportazione. Questo codice presuppone che il sistema Teleport sia abilitato.
+Il codice seguente illustra come creare un oggetto MonoBehaviour che sarà in ascolto degli eventi di teletrasporto. Questo codice presuppone che il sistema di teletrasporto sia abilitato.
 
 ```c#
 using Microsoft.MixedReality.Toolkit;

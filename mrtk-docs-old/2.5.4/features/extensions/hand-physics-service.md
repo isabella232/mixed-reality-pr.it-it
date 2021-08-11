@@ -1,55 +1,55 @@
 ---
 title: HandPhysicsServiceOverview
-description: documentazione per usare il servizio di estensione della fisica della mano in MRTK
+description: documentazione per l'uso del servizio di estensione hand physics in MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: d897c9ab3e85aa38edfbc6f3bd3bff6b6c1b2627
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: d518298d2d6d357e1f7abbbb30998f6a15bf5c8275b161b3283ebe67bddfcaec
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685524"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196749"
 ---
-# <a name="hand-physics-extension-service"></a>Servizio di estensione fisica della mano
+# <a name="hand-physics-extension-service"></a>Servizio di estensione della fisica della mano
 
 ![Servizio di estensione fisica della mano](../images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)
 
-Il servizio di fisica della mano Abilita gli eventi di collisione corpo rigidi e le interazioni con le mani articolate.
+Il servizio di fisica della mano consente eventi rigidi di collisione del corpo e interazioni con mani articolate.
 
 ## <a name="enabling-the-extension"></a>Abilitazione dell'estensione
 
-Per abilitare l'estensione, aprire il profilo RegisteredServiceProvider. Fare clic `Register a new Service Provider` per aggiungere una nuova configurazione. Nel campo tipo di componente selezionare HandPhysicsService. Nel campo profilo di configurazione selezionare il profilo fisico della mano predefinito incluso nell'estensione.
+Per abilitare l'estensione, aprire il profilo RegisteredServiceProvider. Fare `Register a new Service Provider` clic per aggiungere una nuova configurazione. Nel campo tipo di componente selezionare HandPhysicsService. Nel campo Profilo di configurazione selezionare il profilo di fisica della mano predefinito incluso nell'estensione.
 
-## <a name="profile-options"></a>Opzioni profilo
+## <a name="profile-options"></a>Opzioni del profilo
 
 ### <a name="hand-physics-layer"></a>Livello di fisica della mano
 
-Controlla il livello a cui verranno indirizzati i giunti a cui è stata creata un'istanza.
+Controlla il livello a cui verranno associati i giunzioni delle mani di cui è stata creata un'istanza.
 
-Mentre per il servizio viene usato per impostazione predefinita il livello "default" (0), è consigliabile usare un livello separato per gli oggetti fisici della mano. In caso contrario, potrebbero verificarsi collisioni indesiderate e/o raycasts non accurati.
+Mentre il servizio usa il livello "predefinito" (0), è consigliabile usare un livello separato per gli oggetti di fisica della mano. In caso contrario, potrebbero verificarsi collisioni indesiderate e/o raycast non accurati.
 
-### <a name="finger-tip-kinematic-body-prefab"></a>Prefabbricato del corpo cinematica del finger tip
+### <a name="finger-tip-kinematic-body-prefab"></a>Prefab del corpo cinematico con punta del dito
 
-Controlla la creazione di un'istanza del prefabbricato a portata di mano. Affinché il servizio funzioni come previsto, il prefabbricato richiede:
+Controlla il prefab di cui viene creata un'istanza sulla punta delle dita. Per il funzionamento previsto del servizio, il prefab richiede:
 
-- Un componente rigidbody con l'abilitazione della funzionalità cinematica
-- Un Collider
+- Componente rigidbody con isKinematic abilitato
+- Un collisore
 - Componente `JointKinematicBody`
 
-### <a name="use-palm-kinematic-body"></a>USA corpo cinematica Palm
+### <a name="use-palm-kinematic-body"></a>Usare il corpo cinematico delle palme
 
-Controlla se il servizio tenterà di creare un'istanza di una prefabbricata sul giunto di Palm.
+Controlla se il servizio tenterà di creare un'istanza di un prefab sul palmo.
 
-### <a name="palm-kinematic-body-prefab"></a>Prefabbricato del corpo di Palm cinematico
+### <a name="palm-kinematic-body-prefab"></a>Prefab del corpo cinematico delle palme
 
-Quando `UsePalmKinematicBody` è abilitato, si tratta della prefabbricata di cui verrà creata un'istanza. Analogamente a `FingerTipKinematicBodyPrefab` questa prefabbricata è necessario:
+Quando `UsePalmKinematicBody` è abilitato, questo è il prefab di cui verrà creata un'istanza. Proprio come `FingerTipKinematicBodyPrefab` , questo prefab richiede:
 
-- Un componente rigidbody con l'abilitazione della funzionalità cinematica
-- Un Collider
+- Componente rigidbody con isKinematic abilitato
+- Un collisore
 - Componente `JointKinematicBody`
 
 ## <a name="how-to-use-the-service"></a>Come usare il servizio
 
-Una volta abilitata, usare la proprietà di qualsiasi Collider `IsTrigger` per ricevere eventi di collisione da tutte le 10 cifre (e Palms se sono abilitate).
+Una volta abilitata, usare la proprietà di qualsiasi collisore per ricevere eventi di collisione da `IsTrigger` tutte le 10 cifre (e palmi se abilitati).

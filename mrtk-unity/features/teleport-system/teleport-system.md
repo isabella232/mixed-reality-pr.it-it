@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, sistema di teletrasporto,
-ms.openlocfilehash: 7a49b1fea36eb1809c57abee4cede1216c07d5bf
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: c46438ed30880029760b5155efb3e3cd1d571c81a03bfbf764b2010e2e232c53
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176179"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197046"
 ---
 # <a name="teleport-system"></a>Sistema di teletrasporto
 

@@ -1,39 +1,39 @@
 ---
 title: PulseShader
-description: Descrizione su Pulse shader in MRTK.
+description: descrizione degli shader Pulse in MRTK.
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: b9c9e9191b72efd05c7cb11396ec5b202ad051a1
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 6a8979b42af9ce8e12875c8bd24ecc4fdc20df46650192fceb8b7a25707571ac
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685554"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197033"
 ---
 # <a name="pulse-shader"></a>Pulse shader
 
 ![MRTK_SpatialMesh_Pulse](https://user-images.githubusercontent.com/13754172/68261851-3489e200-fff6-11e9-9f6c-5574a7dd8db7.gif)
 
-![MRTK_HandMesh_Pulse2 ](https://user-images.githubusercontent.com/13754172/68262035-e4f7e600-fff6-11e9-9858-796afd1cabc5.gif) usare Pulse shader per animare un effetto di impulso visivo sulla ricostruzione della superficie, sulla mesh a mano articolata o su qualsiasi altra mesh.
+![MRTK_HandMesh_Pulse2 usare lo shader pulse per animare un effetto di impulso visivo sulla ricostruzione della superficie, sulla mesh della mano articolata ](https://user-images.githubusercontent.com/13754172/68262035-e4f7e600-fff6-11e9-9858-796afd1cabc5.gif) o su qualsiasi altra mesh.
 
 ## <a name="shader-and-material"></a>Shader e materiale
 
-**MRTK_SurfaceReconstruction. Mat** e **MRTK_ArticulatedHandMeshPulse. Mat** utilizzano **SR_Triangles** shader. È possibile configurare diverse opzioni, ad esempio colore riempimento, colore linea e colore Pulse.
+**MRTK_SurfaceReconstruction.mat** **e MRTK_ArticulatedHandMeshPulse.mat** **usa** SR_Triangles shader. È possibile configurare varie opzioni, ad esempio il colore di riempimento, il colore della linea e il colore dell'impulso.
 
 ## <a name="example-scene"></a>Scena di esempio
 
-Aprire la scena **PulseShaderExamples. Unity** e osservare l'effetto pulsato sulle sfere, sulla ricostruzione della superficie e sulla mesh a mano articolata.
+Aprire la scena **PulseShaderExamples.unity** e osservare l'effetto pulsante sulle sfera, la ricostruzione della superficie e la mesh articolata della mano.
 
-Usare lo script SurfacePulse. cs per animare l'effetto di impulso sul materiale assegnato oppure attivare "Pulse automatico" nel materiale stesso.
+Usare lo script SurfacePulse.cs per animare l'effetto di impulso sul materiale assegnato o attivare "Pulsazione automatica" nel materiale stesso.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Per la ricostruzione della superficie, assicurarsi che MRTK_SurfaceReconstruction. Mat sia assegnato in impostazioni di MRTK-> riconoscimento spaziale-> impostazioni di visualizzazione-> materiale visibile.
+Per la ricostruzione della superficie, assicurarsi che MRTK_SurfaceReconstruction.mat sia assegnato in MRTK Impostazioni -> Spatial Awareness -> Display Impostazioni -> Visible Material.
 
-Per la mano articolata, assicurarsi che MRTK_ArticulatedHandMeshPulse. Mat venga assegnato in ArticulatedHandMesh. prefabbricate, che a sua volta deve essere assegnato in MRTK Settings-> input-> Hand Tracking-> prefabbricato mesh Hand.
+Per la mano articolata, assicurarsi che MRTK_ArticulatedHandMeshPulse.mat sia assegnato in ArticulatedHandMesh.prefab, che deve essere assegnato in MRTK Impostazioni -> Input -> Hand Tracking -> Hand Mesh Prefab.
 
 ## <a name="how-it-works"></a>Funzionamento
 
-Lo shader della mano mesh usa le UV per eseguire il mapping dell'impulso lungo la mesh mano e per dissolvere il polso. Per eseguire il mapping dell'impulso, lo shader per la ricostruzione della superficie usa le posizioni dei vertici.
+Lo shader hand mesh usa gli UV per mappare l'impulso lungo la mesh della mano e per sfumare il polso. Lo shader di ricostruzione della superficie usa le posizioni dei vertici per eseguire il mapping dell'impulso.

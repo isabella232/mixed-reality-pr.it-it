@@ -7,12 +7,12 @@ ms.date: 03/05/2021
 ms.topic: article
 keywords: realtà mista, javascript, esercitazione, BabylonJS, hololens, realtà mista, UWP, Windows 10, WebXR, web immersive
 ms.localizationpriority: high
-ms.openlocfilehash: a3dbab0572cd50105dac3d877a0d72c5cbc504b6
-ms.sourcegitcommit: 29a43366d5969f1a895bd184ebe272168d9be1e2
+ms.openlocfilehash: 9aa044789c5d9d331677206dbc7ef7170bfa592075819ae73bd46aa14116122a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110584520"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196888"
 ---
 # <a name="tutorial-interact-with-3d-object"></a>Esercitazione: Interagire con un oggetto 3D
 
@@ -180,7 +180,7 @@ Ora che i colori del cubo cambiano, è possibile provare l'esperienza immersiva.
 
     In questo modo viene creato un semplice piano da 4x4 metri.
 
-1. Per aggiungere il supporto di WebXR, è necessario chiamare *createDefaultXRExperienceAsync*, che ha un *risultato Promise.* Aggiungere questo codice alla fine della *funzione createScene* anziché restituire *la scena;*:
+1. Per aggiungere il supporto WebXR, è necessario chiamare *createDefaultXRExperienceAsync*, che ha un *risultato Promise.* Aggiungere questo codice alla fine della *funzione createScene* anziché restituire *la scena;*:
 
     ```javascript
     const xrPromise = scene.createDefaultXRExperienceAsync({
@@ -290,7 +290,7 @@ Per abilitare il debug nel dispositivo Android, seguire questa procedura:
 
 ### <a name="prerequisites"></a>Prerequisiti
 
-* Un server Web che serve una pagina HTML statica in un contesto sicuro (https:// o tramite port forwarding in localhost) nel computer di sviluppo. Ad esempio, *sfruttare il pacchetto* npm come semplice server Web leggero che serve file HTML statici. Vedere altre [informazioni su npm serve](https://github.com/vercel/serve#readme)
+* Un server Web che serve una pagina HTML statica in un contesto sicuro (https:// o tramite port forwarding in localhost) nel computer di sviluppo. Ad esempio, *sfruttare il pacchetto* npm serve come semplice server Web leggero che serve file HTML statici. Vedere altre [informazioni su npm serve](https://github.com/vercel/serve#readme)
 * Il dispositivo originariamente fornito con il Google Play Store e deve eseguire Android 7.0 o versione più recente
 * La versione più recente [di Google Chrome](https://support.google.com/chrome/answer/95346) sia nella workstation di sviluppo che nel dispositivo
 * Per verificare che il dispositivo sia configurato correttamente per l'esecuzione di WebXR, passare a una pagina [WebXR](https://immersive-web.github.io/webxr-samples/) di esempio nel dispositivo. Verrà visualizzato il messaggio, ad esempio:
@@ -298,7 +298,7 @@ Per abilitare il debug nel dispositivo Android, seguire questa procedura:
     > Il browser supporta WebXR e può eseguire esperienze di realtà virtuale e realtà aumentata se si dispone dell'hardware appropriato.
 
 1. Abilitare la modalità sviluppatore e il debug USB in un dispositivo Android. Per informazioni su come eseguire questa operazione per la versione di Android in uso, vedere la pagina della documentazione ufficiale [Configurare le opzioni per sviluppatori su dispositivo](https://developer.android.com/studio/debug/dev-options)
-1. Connettere quindi il dispositivo Android al computer di sviluppo o al portatile tramite cavo USB
+1. Connettere quindi il dispositivo Android al computer di sviluppo o al portatile tramite un cavo USB
 1. Verificare che il server Web nel computer di sviluppo sia in esecuzione. Ad esempio, passare alla cartella radice contenente la pagina di hosting Web (index.html) ed eseguire il codice seguente (presupponendo di usare il pacchetto npm):
 
     ```bash
@@ -310,7 +310,7 @@ Per abilitare il debug nel dispositivo Android, seguire questa procedura:
 1. Assicurarsi che la casella *di controllo Individua dispositivi USB* sia abilitata
 1. Fare clic sul pulsante *Port forwarding* (Inoltro porta) e assicurarsi che *port forwarding* sia abilitato e contenga una voce *localhost:5000,* come illustrato di seguito: Chrome Port Forwarding window (Finestra inoltro  ![ porta Chrome)](../images/chrome-port-forwarding.png)
 1. Nel dispositivo Android connesso aprire una finestra di Google Chrome e passare *http://localhost:5000* a per visualizzare il cubo
-1. Nel computer di sviluppo, in Chrome, verrà visualizzato il dispositivo e un elenco di pagine Web attualmente aperte in questa finestra:  ![ Chrome Inspect window (Finestra Di ispezione Chrome)](../images/chrome-inspect.png)
+1. Nel computer di sviluppo, in Chrome, verrà visualizzato il dispositivo e un elenco di pagine Web attualmente aperte in questa finestra:  ![ Chrome Inspect window (Ispezionare Chrome)](../images/chrome-inspect.png)
 1. Fare clic sul pulsante *Inspect (Ispeziona)* accanto a una voce *http://localhost:5000* : Chrome  ![ DevTools Debug window (Debug di Chrome DevTools)](../images/chrome-debug.png)
 1. Usare [Chrome DevTools per](https://developers.google.com/web/tools/chrome-devtools) eseguire il debug della pagina
 
@@ -328,6 +328,6 @@ Congratulazioni! È stata completata la serie di esercitazioni babylon.js e si �
 > * Configurare un ambiente di sviluppo
 > * Creare una nuova pagina Web per visualizzare i risultati
 > * Api babylon.js per creare e interagire con elementi 3D di base
-> * Eseguire e testare l'applicazione in un simulatore di Windows Mixed Reality
+> * Eseguire e testare l'applicazione in un simulatore Windows Mixed Reality
 
 Per altre informazioni sullo sviluppo JavaScript per realtà mista, vedere [Panoramica dello sviluppo javascript.](/javascript-development-overview.md)

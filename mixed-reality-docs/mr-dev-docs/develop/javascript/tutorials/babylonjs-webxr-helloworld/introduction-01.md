@@ -7,12 +7,12 @@ ms.date: 03/05/2021
 ms.topic: article
 keywords: realtà mista, javascript, esercitazione, BabylonJS, hololens, realtà mista, UWP, Windows 10, WebXR, web immersivo
 ms.localizationpriority: high
-ms.openlocfilehash: 2d3f59b2769f99a756c4f0c10df1d8a8604a595e
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: e2006e911ad9dae00252c929c7739ff2209f4bf7796f1c49e713cfaf53267cd2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600120"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196825"
 ---
 # <a name="tutorial-create-your-first-webxr-application-using-babylonjs"></a>Esercitazione: Creare la prima applicazione WebXR usando babylon.js
 
@@ -23,11 +23,11 @@ Questa esercitazione illustra come creare un'app di realtà mista di base usando
 > * Api babylon.js per creare elementi 3D di base  
 > * Creare una nuova pagina Web
 > * Interagire con gli elementi 3D
-> * Eseguire l'applicazione in un simulatore di Windows Mixed Reality
+> * Eseguire l'applicazione in un simulatore Windows Mixed Reality
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-* Browser supportato da WebXR, ad [esempio](../../../../whats-new/new-microsoft-edge.md) Microsoft Edge
+* Browser supportato da WebXR, ad esempio [Microsoft Edge](../../../../whats-new/new-microsoft-edge.md)
 * [Babylon.js](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers) 4.2 o versione successiva
 * [NodeJS](https://nodejs.org/)
 * Facoltativo: [Windows 10 Creator Update](https://www.microsoft.com/software-download/windows10) se si vuole usare un simulatore di Windows Mixed Reality
@@ -38,7 +38,7 @@ Questa esercitazione illustra come creare un'app di realtà mista di base usando
 Per creare questo progetto da zero, iniziare con un progetto Visual Studio Code (VSCode).
 
 > [!NOTE]
-> L'uso di VSCode non è obbligatorio, ma verrà utilizzato per praticità durante l'esercitazione. Gli sviluppatori JavaScript più esperti possono usare qualsiasi altro editor di propria scelta, anche il Blocco note più semplice.
+> L'uso di VSCode non è obbligatorio, ma verrà utilizzato per praticità durante l'esercitazione. Gli sviluppatori JavaScript più esperti possono usare qualsiasi altro editor di propria scelta, anche il più semplice Blocco note.
 
 1. Scaricare il [babylon.js](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers) file singolo o usare una versione online disponibile nel sito [Web ufficiale babylon.js](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers). È anche possibile clonare l'intero babylon.js progetto da [GitHub](https://github.com/BabylonJS/Babylon.js)
 1. Creare un file vuoto e salvarlo come pagina HTML, ad esempio index.html

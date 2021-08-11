@@ -1,25 +1,25 @@
 ---
 title: MaterialInstance
-description: Documentazione sull'istanza del materiale e sui relativi usi in MRTK
+description: Documentazione sull'istanza material e i relativi usi in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, MaterialInstance,
-ms.openlocfilehash: 45537cc7b6103626be6461a80e9d2da25f34c126
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 2f1a0cd430abc651ab4af911b4d3cb307301df17c8dce48a985dd2545009e81a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685234"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208305"
 ---
-# <a name="material-instance"></a>Istanza del materiale
+# <a name="material-instance"></a>Istanza material
 
-Gli [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) assistenti di comportamento nel rilevamento della durata del materiale dell'istanza ed eliminano automaticamente i materiali di istanza per l'utente. Questo componente utilità può essere utilizzato come sostituzione di [renderer. Material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) o [renderer. Materials](https://docs.unity3d.com/ScriptReference/Renderer-materials.html).
+Il [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) comportamento consente di tenere traccia della durata del materiale dell'istanza e di eliminare automaticamente i materiali di istanza per l'utente. Questo componente dell'utilità può essere usato come sostituzione di [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) o [Renderer.materials.](https://docs.unity3d.com/ScriptReference/Renderer-materials.html)
 
 > [!NOTE]
-> [MaterialPropertyBlocks](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) sono preferiti rispetto alle istanze del materiale ma non sono sempre disponibili in tutti gli scenari.
+> [Gli oggetti MaterialPropertyBlock sono](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) preferibili rispetto alle istanze di materiale, ma non sono sempre disponibili in tutti gli scenari.
 
-Perché è possibile utilizzare [renderer. Material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) ? Se si aggiunge il codice seguente a una scena Unity e l'utilizzo della memoria di hit Play continuerà ad arrampicarsi:
+Perché [l'uso di Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) può essere un problema? Se si aggiunge il codice seguente a una scena Unity e si preme l'uso della memoria di riproduzione, l'uso della memoria continuerà a essere molto familiare:
 
 ```c#
 public class Leak : MonoBehaviour
@@ -36,9 +36,9 @@ public class Leak : MonoBehaviour
 ```
 
 > [!NOTE]
-> Il comportamento della perdita precedente **arresterà l'arresto anomalo di Unity se viene** eseguito per troppo tempo.
+> Il comportamento di perdita precedente **arresterà in modo** anomalo Unity se eseguito per troppo tempo.
 
-In alternativa, provare a usare il [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) comportamento:
+In alternativa, provare a usare il [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) comportamento :
 
 ```c#
 public class NoLeak : MonoBehaviour
@@ -56,9 +56,9 @@ public class NoLeak : MonoBehaviour
 
 ## <a name="usage"></a>Utilizzo
 
-Quando si richiama il [renderer. Materials](https://docs.unity3d.com/ScriptReference/Renderer-material.html)di Unity, Unity crea automaticamente un'istanza di nuovi materiali. È responsabilità del chiamante eliminare i materiali quando un materiale non è più necessario o l'oggetto gioco viene eliminato definitivamente. Il [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) comportamento consente di evitare perdite di materiale e di mantenere coerenti i percorsi di allocazione del materiale durante la modifica e la fase di esecuzione.
+Quando si richiama [renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html)di Unity, Unity crea automaticamente un'istanza di nuovi materiali. È responsabilità del chiamante eliminare i materiali quando un materiale non è più necessario o l'oggetto gioco viene eliminato. Il [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) comportamento consente di evitare perdite di materiale e mantiene coerenti i percorsi di allocazione dei materiali durante la modifica e la fase di esecuzione.
 
-Quando non è possibile usare un [MaterialPropertyBlock](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) e un materiale deve essere sottoposto a un'istanza, [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) può essere usato come indicato di seguito:
+Quando non [è possibile usare MaterialPropertyBlock](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) e è necessario creare istanze di un materiale, [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) è possibile usare come indicato di seguito:
 
 ```c#
 public class MyBehaviour : MonoBehaviour
@@ -75,7 +75,7 @@ public class MyBehaviour : MonoBehaviour
 }
 ```
 
-Se più oggetti richiedono la proprietà dell'istanza del materiale, è preferibile assumere la proprietà esplicita per il rilevamento dei riferimenti. (Esiste un'interfaccia facoltativa denominata [`IMaterialInstanceOwner`](xref:Microsoft.MixedReality.Toolkit.Rendering.IMaterialInstanceOwner) Exists per aide con proprietà). Di seguito è riportato un esempio di utilizzo:
+Se più oggetti necessitano della proprietà dell'istanza material, è meglio assumere la proprietà esplicita per il rilevamento dei riferimenti. Esiste un'interfaccia [`IMaterialInstanceOwner`](xref:Microsoft.MixedReality.Toolkit.Rendering.IMaterialInstanceOwner) facoltativa denominata per il controllo della proprietà. Di seguito è riportato un esempio di utilizzo:
 
 ```c#
 public class MyBehaviour : MonoBehaviour,  IMaterialInstanceOwner
@@ -103,8 +103,8 @@ public class MyBehaviour : MonoBehaviour,  IMaterialInstanceOwner
 }
 ```
 
-Per ulteriori informazioni, vedere l'esempio di utilizzo illustrato nel [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) comportamento.
+Per altre informazioni, vedere l'esempio di utilizzo illustrato all'interno del [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) comportamento.
 
 ## <a name="see-also"></a>Vedi anche
 
-* [Shader standard MRTK](mrtk-standard-shader.md)
+* [MRTK Standard Shader](mrtk-standard-shader.md)

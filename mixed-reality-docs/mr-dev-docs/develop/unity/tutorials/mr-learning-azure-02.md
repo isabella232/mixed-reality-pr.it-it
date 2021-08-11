@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, hololens 2, archiviazione di azure, servizi cloud di azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 189fea44da6d2da7cd98629a4a67c2f7c9340d2b
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 190e64c1de3d4e6724b428ea01cbd30cedbc07c2a7d76176cacad11e8bd84eae
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550331"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196482"
 ---
 # <a name="2-integrating-azure-storage"></a>2. Integrazione di Archiviazione di Azure
 

@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, progettazione, controlli, interfaccia utente, ux, indicatore di stato, visore di realtà mista, visore windows di realtà mista, visore di realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 01f032efb887ecfc6f8d66683fb954cd0574a4f3
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Windows Mixed Reality, progettazione, controlli, interfaccia utente, ux, indicatore di stato, visore di realtà mista, visore windows di realtà mista, visore di realtà virtuale, HoloLens, MRTK, realtà mista Toolkit
+ms.openlocfilehash: 8d397f627b55409d640ac6925a72d6bf169e207c27cb2a90bcee990c7a8d7683
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600550"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207885"
 ---
 # <a name="progress-indicator"></a>Indicatore di stato
 
@@ -55,7 +55,7 @@ Un controllo di stato fornisce il feedback che un'operazione a esecuzione lunga 
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![Esempio di anello di stato nel dispositivo HoloLens](images/640px-progressring.jpg)<br>
+       ![Esempio di anello di stato HoloLens dispositivo](images/640px-progressring.jpg)<br>
     :::column-end:::
 :::row-end:::
 
@@ -83,7 +83,7 @@ Un controllo di stato fornisce il feedback che un'operazione a esecuzione lunga 
 ## <a name="best-practices"></a>Procedure consigliate
 
 * Coppia stretta di [manifesti o tag-along](billboarding-and-tag-along.md) per la visualizzazione di Progress poiché l'utente può spostare facilmente la testa nello spazio vuoto e perdere il contesto. L'app potrebbe sembrare che si sia verificata in modo anomalo se l'utente non riesce a visualizzare alcun elemento. I tag e i tag sono incorporati nel prefab Stato di avanzamento.
-* È sempre bene fornire informazioni sullo stato di ciò che accade all'utente. Il prefab Stato fornisce vari stili di visualizzazione, tra cui lo stato di avanzamento del tipo di anello standard di Windows per fornire lo stato. È anche possibile usare una mesh personalizzata con un'animazione se si vuole che lo stile dello stato di avanzamento sia allineato al marchio dell'app.
+* È sempre bene fornire informazioni sullo stato di ciò che accade all'utente. Il prefab Stato fornisce vari stili di visualizzazione, incluso Windows stato standard del tipo di anello per fornire lo stato. È anche possibile usare una mesh personalizzata con un'animazione se si vuole che lo stile dello stato di avanzamento sia allineato al marchio dell'app.
 
 <br>
 

@@ -1,23 +1,23 @@
 ---
 title: Descrizione comando
-description: Informazioni su come usare le descrizioni comando nelle applicazioni di realtà mista, ovvero brevi descrizioni collegate a un altro controllo o oggetto.
+description: Informazioni su come usare le descrizioni comando in applicazioni di realtà mista, ovvero brevi descrizioni collegate a un altro controllo o oggetto.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Realtà mista, controlli, interazione, interfaccia utente, esperienza utente, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, HoloLens, descrizione comando, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: cd490a260c5caedc3f315d72f9a47bce563695a0
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Realtà mista, controlli, interazione, interfaccia utente, esperienza utente, visore per realtà mista, visore di realtà mista windows, visore per realtà virtuale, HoloLens, descrizione comando, MRTK, realtà mista Toolkit
+ms.openlocfilehash: 3bf9230f89ebac3ad14e1e383c0f51a5a8d61c1c498c0a242e4dffbd1488bdbf
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600591"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196856"
 ---
 # <a name="tooltip"></a>Descrizione comando
 
 ![Descrizione comando](images/UX_Hero_Tooltip.jpg)
 
-Una descrizione comando è una breve descrizione collegata a un altro controllo o oggetto. Vengono usati per comunicare un suggerimento o informazioni aggiuntive dopo un'analisi più vicina. Le descrizioni comando consentono agli utenti di comprendere gli oggetti non noti nell'ambiente fisico che non sono descritti direttamente. 
+Una descrizione comando è una breve descrizione collegata a un altro controllo o oggetto. Vengono usati per trasmettere un suggerimento o informazioni aggiuntive al momento di un'ispezione più vicina. Le descrizioni comando consentono agli utenti di comprendere gli oggetti non noti nell'ambiente fisico che non vengono descritti direttamente. 
 
 <br>
 
