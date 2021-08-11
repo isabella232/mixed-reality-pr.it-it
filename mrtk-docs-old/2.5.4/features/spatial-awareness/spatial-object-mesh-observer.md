@@ -1,90 +1,90 @@
 ---
 title: SpatialObjectMeshObserver
-description: Documentazione sull'osservatore mesh spaziale in MRTK
+description: Documentazione sull'osservatore della mesh spaziale in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: ed88f677088b1e4194865e90db7c35bb58e3ecf0
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: b656121a74772b139d022f705271497684f5be101ed754a811fde389c0728fc6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685064"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115191591"
 ---
 # <a name="configuring-mesh-observers-for-the-editor"></a>Configurazione degli osservatori mesh per l'editor
 
-Un modo pratico per fornire i dati di rete dell'ambiente nell'editor di Unity consiste nell'usare la [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) classe. L' *osservatore mesh di oggetti spaziali* è un provider di dati solo editor per il [sistema di riconoscimento spaziale](spatial-awareness-getting-started.md) che consente di importare i dati del modello 3D per rappresentare una mesh spaziale. Un uso comune dell' *osservatore mesh di oggetti spaziali* consiste nell'importare i dati analizzati tramite un HoloLens Microsoft per testare il modo in cui un'esperienza si adatta a diversi ambienti da Unity.
+Un modo pratico per fornire i dati della mesh dell'ambiente nell'editor di Unity è usare la [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) classe . *Spatial Object Mesh Observer è un* provider di dati solo editor per il sistema [di](spatial-awareness-getting-started.md) consapevolezza spaziale che consente di importare i dati del modello 3D per rappresentare una mesh spaziale. Un uso comune di *Spatial Object Mesh Observer* è l'importazione dei dati analizzati tramite un Microsoft HoloLens per testare l'adattamento di un'esperienza ai diversi ambienti all'interno di Unity.
 
-## <a name="getting-started"></a>Introduzione
+## <a name="getting-started"></a>Guida introduttiva
 
-In questa guida viene illustrata la configurazione di un *Observer mesh di oggetti spaziali*. Per abilitare questa funzionalità, è necessario eseguire tre passaggi principali.
+Questa guida illustra la configurazione di un *osservatore di mesh di oggetti spaziali.* Per abilitare questa funzionalità, è necessario eseguire tre passaggi chiave.
 
-1. Aggiungere un *Observer mesh di oggetti spaziali* al profilo del sistema di riconoscimento spaziale
-1. Impostare l'oggetto dati mesh ambiente
+1. Aggiungere un *osservatore della mesh di oggetti spaziali* al profilo del sistema di consapevolezza spaziale
+1. Impostare l'oggetto Environment Mesh Data
 1. [Configurare il resto delle proprietà del profilo osservatore mesh](configuring-spatial-awareness-mesh-observer.md)
 
-### <a name="set-up-a-spatial-object-mesh-observer-profile"></a>Configurare un profilo *osservatore mesh oggetto spaziale*
+### <a name="set-up-a-spatial-object-mesh-observer-profile"></a>Configurare un profilo *osservatore della mesh di oggetti* spaziali
 
-1. Selezionare il profilo di configurazione del *Toolkit di realtà mista* desiderato o selezionare l'oggetto del *Toolkit di realtà mista* in scena
-1. Aprire o espandere la scheda *sistema di riconoscimento spaziale*
-1. Fai clic sul pulsante *"Aggiungi osservatore spaziale"*
+1. Selezionare il profilo *di configurazione Toolkit* realtà mista o selezionare l'oggetto Toolkit realtà mista nella scena 
+1. Aprire o espandere la *scheda Spatial Awareness System (Sistema di consapevolezza* spaziale)
+1. Fare clic sul *pulsante "Add Spatial Observer" (Aggiungi osservatore* spaziale)
 
-    ![Aggiungi osservatore spaziale](../images/spatial-awareness/AddObserver.png)
+    ![Aggiungere l'osservatore spaziale](../images/spatial-awareness/AddObserver.png)
 
-1. Selezionare il tipo di *SpatialObjectMeshObserver*
+1. Selezionare il *tipo SpatialObjectMeshObserver*
 
-    ![Seleziona osservatore mesh oggetto spaziale](../images/spatial-awareness/SelectObjectObserver.png)
+    ![Selezionare Spatial Object Mesh Observer (Osservatore mesh oggetti spaziali)](../images/spatial-awareness/SelectObjectObserver.png)
 
-1. Selezionare l' *oggetto mesh spaziale* desiderato. Per impostazione predefinita, l'Observer viene configurato con un modello di esempio. Questo modello è stato creato usando un HoloLens Microsoft, ma è possibile [creare un nuovo oggetto mesh di analisi](#acquiring-environment-scans).
+1. Selezionare *l'oggetto mesh spaziale desiderato.* Per impostazione predefinita, l'osservatore è configurato con un modello di esempio. Questo modello è stato creato usando un Microsoft HoloLens ma è possibile creare un [nuovo oggetto mesh di analisi](#acquiring-environment-scans).
 1. [Configurare il resto delle proprietà del profilo osservatore mesh](configuring-spatial-awareness-mesh-observer.md)
 
-    ![Selezionare l'oggetto mesh](../images/spatial-awareness/ObjectObserverProfile.png)
+    ![Selezionare l'oggetto Mesh](../images/spatial-awareness/ObjectObserverProfile.png)
 
-### <a name="spatial-object-mesh-observer-profile-notes"></a>Note del profilo osservatore mesh oggetto spaziale
+### <a name="spatial-object-mesh-observer-profile-notes"></a>Note sul profilo osservatore della mesh di oggetti spaziali
 
-Poiché l' *osservatore mesh di oggetti spaziali* carica i dati da un modello 3D, non rispetta alcune delle impostazioni standard dell'Observer mesh descritte di seguito.
+Poiché *Spatial Object Mesh Observer* carica i dati da un modello 3D, non rispetta alcune delle impostazioni dell'osservatore mesh standard descritte di seguito.
 
 **Intervallo di aggiornamento**
 
-L'  *osservatore mesh di oggetti spaziali* Invia tutte le mesh a un'applicazione quando il modello viene caricato. Non simula i Delta temporali tra gli aggiornamenti. Un'applicazione può ricevere nuovamente gli eventi mesh chiamando [`myObserver.ClearObservation()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver.ClearObservations) e [`myObserver.Resume()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver.Resume) .
+Spatial  *Object Mesh Observer* invia tutte le mesh a un'applicazione quando viene caricato il modello. Non simula i delta di tempo tra gli aggiornamenti. Un'applicazione può ricevere nuovamente gli eventi mesh chiamando [`myObserver.ClearObservation()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver.ClearObservations) e [`myObserver.Resume()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver.Resume) .
 
-**Osservatore stazionario**
+**Is Stationary Observer**
 
-L' *osservatore mesh oggetto spaziale* considera tutti gli oggetti mesh 3D come stazionari e non considera l'origine.
+Spatial *Object Mesh Observer* considera tutti gli oggetti mesh 3D stazionari e ignora l'origine.
 
-**Forma ed extent dell'Observer**
+**Forma ed extent dell'osservatore**
 
-L'  *osservatore mesh di oggetti spaziali* invia l'intera mesh 3D all'applicazione. Gli extent e la forma Observer non vengono considerati.
+Spatial  *Object Mesh Observer* invia l'intera mesh 3D all'applicazione. La forma e gli extent dell'osservatore non vengono considerati.
 
-**Livello di dettaglio e triangoli/misuratore cubico**
+**Livello di dettaglio e triangoli/contatore cubico**
 
-L'Observer non tenta di trovare il modello 3D LODs quando invia le mesh all'applicazione.
+Observer non tenta di trovare gli ID modello 3D durante l'invio delle mesh all'applicazione.
 
 ## <a name="acquiring-environment-scans"></a>Acquisizione di analisi dell'ambiente
 
-In questa sezione vengono descritte informazioni aggiuntive per la creazione e la raccolta di file di *oggetti mesh spaziali* da utilizzare con l' *osservatore mesh di oggetti spaziali*.
+Questa sezione descrive informazioni aggiuntive per creare e raccogliere file *oggetto mesh* spaziale da usare con Spatial Object *Mesh Observer.*
 
 ### <a name="windows-device-portal"></a>Portale di dispositivi di Windows
 
-Il [portale per dispositivi Windows](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) può essere usato per scaricare la mesh spaziale, come file con estensione obj, da un dispositivo HoloLens Microsoft.
+Il [Windows Portale di dispositivi](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) può essere usato per scaricare la mesh spaziale, come file obj, da un Microsoft HoloLens dispositivo.
 
-1. Eseguire un'analisi semplicemente e visualizzare l'ambiente desiderato con un HoloLens
-1. Connettersi a HoloLens tramite il portale del dispositivo Windows
-1. Passa alla pagina della *visualizzazione 3D*
-1. Fare clic sul pulsante *Aggiorna* in sezione *mapping spaziale*
-1. Fare clic sul pulsante *Salva* nella sezione *mapping spaziale* per salvare il file obj sul PC
+1. Eseguire l'analisi semplicemente a piedi e visualizzare l'ambiente desiderato con un HoloLens
+1. Connessione al HoloLens usando il Windows Portale di dispositivi
+1. Passare alla pagina *3D View (Visualizzazione 3D)*
+1. Fare clic *sul pulsante* Aggiorna nella *sezione Mapping* spaziale
+1. Fare clic *sul pulsante* Salva nella *sezione Mapping* spaziale per salvare il file obj nel PC
 
 > [!NOTE]
-> **File HoloToolkit. room**
+> **File room di HoloToolkit**
 >
-> Molti sviluppatori utilizzeranno in precedenza HoloToolkit per analizzare gli ambienti e creare file con estensione room. Il Toolkit di realtà mista supporta ora l'importazione di questi file come GameObject in Unity e li usa come *oggetti mesh spaziali* nell'Observer.
+> Molti sviluppatori hanno già usato HoloToolkit per analizzare gli ambienti e creare file con estensione room. L'Toolkit realtà mista supporta ora l'importazione di questi file come GameObject in Unity e li usa come *oggetti mesh spaziale* nell'osservatore.
 
 ## <a name="see-also"></a>Vedi anche
 
 - [Profili](../profiles/profiles.md)
-- [Guida alla configurazione del profilo del Toolkit di realtà mista](../../configuration/mixed-reality-configuration-guide.md)
-- [Introduzione a consapevolezza spaziale](spatial-awareness-getting-started.md)
+- [Guida alla configurazione del profilo Toolkit realtà mista](../../configuration/mixed-reality-configuration-guide.md)
+- [Introduzione alla consapevolezza spaziale](spatial-awareness-getting-started.md)
 - [Configurazione degli osservatori mesh nel dispositivo](configuring-spatial-awareness-mesh-observer.md)
-- [Configurazione di osservatori mesh tramite codice](usage-guide.md)
+- [Configurazione degli osservatori mesh tramite codice](usage-guide.md)
 - [Avviare il Portale di dispositivi di Windows](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)

@@ -1,23 +1,23 @@
 ---
 title: Slate
-description: Lean about slates, a thin window style control for displaying 2D content using the Mixed Reality Toolkit( Slates, un controllo di stile finestra sottile per la visualizzazione di contenuto 2D usando Mixed Reality Toolkit).
+description: Slate, un controllo di stile finestra sottile per la visualizzazione di contenuto 2D usando l'Toolkit.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Realtà mista, controlli, interazione, interfaccia utente, esperienza utente, visore per realtà mista, visore windows mixed reality, visore per realtà virtuale, HoloLens, Slate, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 2988419e44b21f6655a71d726dabd5091569f7ac
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Realtà mista, controlli, interazione, interfaccia utente, esperienza utente, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, HoloLens, Slate, MRTK, realtà mista Toolkit
+ms.openlocfilehash: 57a1e39528bb758b948f44ebea114798458591713b90e7b3db4bf0188969961f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600130"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193530"
 ---
 # <a name="slate"></a>Slate
 
 ![Slate](images/UX_Hero_Slate.jpg)
 
-Uno slate è un controllo di stile finestra sottile per la visualizzazione di contenuto 2D come testo normale, immagini o documenti. Uno slate offre una barra del titolo afferrabile con pulsanti per "Seguimi (tag lungo)" e la funzionalità di chiusura. Il contenuto all'interno di uno slate può essere scorrendo tramite [manipolazione diretta](direct-manipulation.md#2d-slate-interaction) proprio come un touch screen fisico. È possibile usare lo sguardo, il tocco dell'aria e il movimento di trascinamento o anche il puntatore di un controller di movimento.
+Uno slate è un controllo di stile finestra sottile per la visualizzazione di contenuto 2D, ad esempio testo normale, immagini o documenti. Uno slate offre una barra del titolo afferrabile con pulsanti per "Seguimi (tag lungo)" e funzionalità di chiusura. È possibile scorrere il contenuto all'interno di uno slate tramite [manipolazione diretta](direct-manipulation.md#2d-slate-interaction) proprio come un touchscreen fisico. È anche possibile usare lo sguardo fisso, il tocco e il movimento di trascinamento o il puntatore di un controller del movimento.
 
 <br>
 

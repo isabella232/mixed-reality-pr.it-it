@@ -1,50 +1,50 @@
 ---
-title: Fotocamera video foto in Unity
-description: Informazioni su come acquisire una foto in un file o in un Texture2D, come acquisire una foto e interagire con i byte non elaborati e come acquisire un video.
+title: Fotocamera con foto in Unity
+description: Informazioni su come acquisire una foto in un file o in un oggetto Texture2D, come acquisire una foto e interagire con i byte non elaborati e come acquisire un video.
 author: keveleigh
 ms.author: v-hferrone
 ms.date: 03/21/2021
 ms.topic: article
-keywords: Foto, video, hololens, fotocamera, Unity, locatable, PVC, videocamera video foto, auricolare realtà mista, auricolare di realtà mista, auricolare di realtà virtuale, webcam, acquisizione foto, acquisizione video
-ms.openlocfilehash: 1cae796a793036ed59c1d0805df76cb8ac143027
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+keywords: foto, video, hololens, fotocamera, unity, localizzatore, PVC, fotocamera, visore di realtà mista, visore di realtà mista windows, visore di realtà virtuale, webcam, acquisizione di foto, acquisizione video
+ms.openlocfilehash: 4fdf895e6b2b7ed1fc051b45b07ce49052f8a95587178caddfc71a0cfd364eee
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636213"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193505"
 ---
-# <a name="photo-video-camera-in-unity"></a>Fotocamera video foto in Unity
+# <a name="photo-video-camera-in-unity"></a>Fotocamera con foto in Unity
 
 ## <a name="enabling-the-capability-for-camera-access"></a>Abilitazione della funzionalità per l'accesso alla fotocamera
 
-La funzionalità "WebCam" deve essere dichiarata per l'uso della [fotocamera](../platform-capabilities-and-apis/locatable-camera.md)da parte di un'app.
+La funzionalità "WebCam" deve essere dichiarata perché un'app usi la [fotocamera](../platform-capabilities-and-apis/locatable-camera.md).
 
-1. Nell'editor di Unity passare alle impostazioni del lettore passando alla pagina "Edit > Project Settings > Player"
+1. Nell'editor unity passare alle impostazioni del lettore passando alla pagina "Modifica > Project Impostazioni > lettore"
 2. Selezionare la scheda "Windows Store"
-3. Nella sezione "impostazioni di pubblicazione > funzionalità" controllare le funzionalità di **Webcam** e **microfono**
+3. Nella sezione "Funzionalità di Impostazioni > pubblicazione" controllare le **funzionalità WebCam** e **microfono**
 
-Con la fotocamera può essere eseguita una sola operazione alla volta. È possibile controllare la modalità con cui la fotocamera è attualmente disponibile `UnityEngine.XR.WSA.WebCam.Mode` in unity 2018 e versioni precedenti o `UnityEngine.Windows.WebCam.Mode` in unity 2019 e versioni successive. Le modalità disponibili sono Photo, video o None.
+Con la fotocamera è possibile eseguire una sola operazione alla volta. È possibile controllare la modalità in cui si trova attualmente la fotocamera in Unity 2018 e versioni precedenti o `UnityEngine.XR.WSA.WebCam.Mode` `UnityEngine.Windows.WebCam.Mode` in Unity 2019 e versioni successive. Le modalità disponibili sono foto, video o nessuna.
 
-## <a name="photo-capture"></a>Acquisizione foto
+## <a name="photo-capture"></a>Acquisizione di foto
 
-**Spazio dei nomi (prima di unity 2019):** *UnityEngine. XR. WSA. Webcam*<br>
-**Spazio dei nomi (unity 2019 e versioni successive):** *UnityEngine. Windows. Webcam*<br>
-**Tipo:** *fotoacquisizione*
+**Spazio dei nomi (prima di Unity 2019):** *UnityEngine.XR.WSA.WebCam*<br>
+**Spazio dei nomi (Unity 2019 e versioni successive):** *UnityEngine.Windows. WebCam*<br>
+**Tipo:** *PhotoCapture*
 
-Il tipo di *acquisizione* di foto consente di scattare fotografie con la fotocamera del video. Il modello generale per l'uso di *fotocapture* per scattare una foto è il seguente:
+Il *tipo PhotoCapture* consente di scattare foto con la fotocamera. Il modello generale per *l'uso di PhotoCapture* per scattare una foto è il seguente:
 
-1. Creare un oggetto di *acquisizione*
-2. Creare un oggetto *CameraParameters* con le impostazioni desiderate
+1. Creare un *oggetto PhotoCapture*
+2. Creare un *oggetto CameraParameters* con le impostazioni desiderate
 3. Avviare la modalità foto tramite *StartPhotoModeAsync*
 4. Scattare la foto desiderata
-    * opzionale Interagire con l'immagine
+    * (facoltativo) Interagire con tale immagine
 5. Arrestare la modalità foto e pulire le risorse
 
-### <a name="common-set-up-for-photocapture"></a>Configurazione comune per l'acquisizione di fotorileva
+### <a name="common-set-up-for-photocapture"></a>Configurazione comune per PhotoCapture
 
 Per tutti e tre gli usi, iniziare con gli stessi primi tre passaggi precedenti
 
-Iniziare creando un oggetto di *acquisizione*
+Iniziare creando un *oggetto PhotoCapture*
 
 ```cs
 private void Start()
@@ -53,7 +53,7 @@ private void Start()
 }
 ```
 
-Quindi, archiviare l'oggetto, impostare i parametri e avviare la modalità foto
+Archiviare quindi l'oggetto, impostare i parametri e avviare la modalità foto
 
 ```cs
 private PhotoCapture photoCaptureObject = null;
@@ -84,13 +84,13 @@ void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
 }
 ```
 
-Dopo questa procedura, è possibile scegliere il tipo di foto da acquisire.
+Dopo questi passaggi, è possibile scegliere il tipo di foto da acquisire.
 
 ### <a name="capture-a-photo-to-a-file"></a>Acquisire una foto in un file
 
-L'operazione più semplice consiste nell'acquisire una foto direttamente in un file. La foto può essere salvata come JPG o PNG.
+L'operazione più semplice è acquisire una foto direttamente in un file. La foto può essere salvata come JPG o PNG.
 
-Se la modalità Photo è stata avviata correttamente, scattare una foto e archiviarla sul disco
+Se la modalità foto è stata avviata correttamente, scattare una foto e archiviarla su disco
 
 ```cs
 private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
@@ -126,9 +126,9 @@ void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
 }
 ```
 
-### <a name="capture-a-photo-to-a-texture2d-with-location"></a>Acquisisci una foto in una Texture2D con percorso
+### <a name="capture-a-photo-to-a-texture2d-with-location"></a>Acquisire una foto in un oggetto Texture2D con posizione
 
-Quando si acquisiscono dati in un Texture2D, il processo è simile all'acquisizione su disco.
+Quando si acquisisce dati in un oggetto Texture2D, il processo è simile all'acquisizione su disco.
 
 Seguire il processo di configurazione precedente.
 
@@ -148,7 +148,7 @@ private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
 }
 ```
 
-Si applicherà quindi il risultato a una trama e si userà il codice di pulizia comune riportato sopra.
+Si applierà quindi il risultato a una trama e si userà il codice di pulizia comune precedente.
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -169,7 +169,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 
 #### <a name="locatable-camera"></a>Fotocamera individuabile
 
-Per inserire questa trama nella scena e visualizzarla usando le matrici della fotocamera locatable, aggiungere il codice seguente a *OnCapturedPhotoToMemory* nel `result.success` controllo:
+Per inserire questa trama nella scena e visualizzarla usando le matrici di fotocamera localizzate, aggiungere il codice seguente a *OnCapturedPhotoToMemory* nel `result.success` controllo :
 
 ```cs
 if (photoCaptureFrame.hasLocationData)
@@ -183,13 +183,13 @@ if (photoCaptureFrame.hasLocationData)
 }
 ```
 
-[Unity ha fornito il codice di esempio](https://forum.unity.com/threads/holographic-photo-blending-with-photocapture.416023/?_ga=2.57872105.210548785.1614215615-862490274.1597860099) per applicare la matrice di proiezione a uno shader specifico nei forum.
+[Unity ha fornito codice di esempio](https://forum.unity.com/threads/holographic-photo-blending-with-photocapture.416023/?_ga=2.57872105.210548785.1614215615-862490274.1597860099) per l'applicazione della matrice di proiezione a uno shader specifico nei forum.
 
-### <a name="capture-a-photo-and-interact-with-the-raw-bytes"></a>Acquisisci una foto e interagisci con i byte non elaborati
+### <a name="capture-a-photo-and-interact-with-the-raw-bytes"></a>Acquisire una foto e interagire con i byte non elaborati
 
-Per interagire con i byte non elaborati di un frame in memoria, seguire gli stessi passaggi di installazione indicati in precedenza e *OnPhotoModeStarted* come per acquisire una foto in un Texture2D. La differenza si trova in *OnCapturedPhotoToMemory* , in cui è possibile ottenere i byte non elaborati e interagire con essi.
+Per interagire con i byte non elaborati di un frame in memoria, seguire la stessa procedura di configurazione descritta in precedenza e *OnPhotoModeStarted* come nell'acquisizione di una foto in un oggetto Texture2D. La differenza è in *OnCapturedPhotoToMemory* in cui è possibile ottenere i byte non elaborati e interagire con essi.
 
-In questo esempio verrà creato un *elenco <Color>* che verrà ulteriormente elaborato o applicato a una trama tramite *sepixels ()*
+In questo esempio si creerà un *elenco <Color>* da elaborare ulteriormente o applicare a una trama tramite *SetPixels()*
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -224,20 +224,20 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 
 ## <a name="video-capture"></a>Acquisizione video
 
-**Spazio dei nomi (prima di unity 2019):** *UnityEngine. XR. WSA. Webcam*<br>
-**Spazio dei nomi (unity 2019 e versioni successive):** *UnityEngine. Windows. Webcam*<br>
+**Spazio dei nomi (prima di Unity 2019):** *UnityEngine.XR.WSA.WebCam*<br>
+**Spazio dei nomi (Unity 2019 e versioni successive):** *UnityEngine.Windows. WebCam*<br>
 **Tipo:** *VideoCapture*
 
-*VideoCapture* funziona in modo analogo alla *fotoacquisizione*. Le uniche due differenze sono che è necessario specificare un valore per i frame al secondo (FPS) ed è possibile salvare direttamente sul disco come file con estensione MP4. I passaggi per usare *VideoCapture* sono i seguenti:
+*VideoCapture* funziona in modo simile a *PhotoCapture.* Le uniche due differenze sono che è necessario specificare un valore FpS (Frames Per Second) ed è possibile salvare direttamente su disco solo come .mp4 file. La procedura per usare *VideoCapture* è la seguente:
 
-1. Creare un oggetto *VideoCapture*
-2. Creare un oggetto *CameraParameters* con le impostazioni desiderate
-3. Avviare la modalità video tramite *StartVideoModeAsync*
-4. Avviare la registrazione del video
-5. Interrompi registrazione video
-6. Arrestare la modalità video e pulire le risorse
+1. Creare un *oggetto VideoCapture*
+2. Creare un *oggetto CameraParameters* con le impostazioni desiderate
+3. Avviare la modalità video *tramite StartVideoModeAsync*
+4. Avviare la registrazione di video
+5. Arrestare la registrazione di video
+6. Arrestare la modalità video ed eliminare le risorse
 
-Per iniziare, creare l'oggetto *VideoCapture* *VideoCapture m_VideoCapture = null;*
+Per iniziare, creare *l'oggetto VideoCapture* *VideoCapture m_VideoCapture = null;*
 
 ```cs
 void Start ()
@@ -246,7 +246,7 @@ void Start ()
 }
 ```
 
-Successivamente, impostare i parametri da usare per la registrazione e avviare.
+Configurare quindi i parametri desiderati per la registrazione e l'avvio.
 
 ```cs
 void OnVideoCaptureCreated(VideoCapture videoCapture)
@@ -291,7 +291,7 @@ void OnStartedVideoCaptureMode(VideoCapture.VideoCaptureResult result)
 }
 ```
 
-Dopo l'avvio della registrazione, è possibile aggiornare l'interfaccia utente o i comportamenti per consentire l'arresto. Qui è sufficiente eseguire il log.
+Dopo l'avvio della registrazione, è possibile aggiornare l'interfaccia utente o i comportamenti per abilitare l'arresto. Qui è sufficiente eseguire la registrazione.
 
 ```cs
 void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
@@ -301,7 +301,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
 }
 ```
 
-In un secondo momento, è necessario arrestare la registrazione usando un timer o un input utente, ad esempio.
+In un secondo momento, si vorrà arrestare la registrazione usando un timer o un input utente, ad esempio.
 
 ```cs
 // The user has indicated to stop recording
@@ -311,7 +311,7 @@ void StopRecordingVideo()
 }
 ```
 
-Dopo che la registrazione è stata interrotta, arrestare la modalità video e pulire le risorse.
+Una volta arrestata la registrazione, arrestare la modalità video e pulire le risorse.
 
 ```cs
 void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
@@ -329,12 +329,12 @@ void OnStoppedVideoCaptureMode(VideoCapture.VideoCaptureResult result)
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-* Non sono disponibili risoluzioni
-  * Verificare che la funzionalità **Webcam** sia specificata nel progetto.
+* Non sono disponibili soluzioni
+  * Verificare che **la funzionalità WebCam** sia specificata nel progetto.
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si segue il percorso di checkpoint per lo sviluppo di Unity, è possibile esplorare le funzionalità e le API della piattaforma per la realtà mista. Da qui, è possibile passare all'argomento successivo:
+Se si sta seguendo il percorso di checkpoint di sviluppo unity che è stato previsto, si sta esplorando le API e le funzionalità della piattaforma di realtà mista. Da qui, è possibile passare all'argomento successivo:
 
 > [!div class="nextstepaction"]
 > [Punto di interesse](focus-point-in-unity.md)
@@ -342,7 +342,7 @@ Se si segue il percorso di checkpoint per lo sviluppo di Unity, è possibile esp
 In alternativa, passare direttamente alla distribuzione dell'app in un dispositivo o emulatore:
 
 > [!div class="nextstepaction"]
-> [Eseguire la distribuzione in HoloLens o in modalità mista di Windows per la realtà mista](../platform-capabilities-and-apis/using-visual-studio.md)
+> [Distribuire in HoloLens o Windows Mixed Reality visori immersive](../platform-capabilities-and-apis/using-visual-studio.md)
 
 È sempre possibile tornare ai [checkpoint per lo sviluppo con Unity](unity-development-overview.md#3-advanced-features) in qualsiasi momento.
 

@@ -5,144 +5,144 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, puntatori,
-ms.openlocfilehash: 96d7e1c14361fdce94efcdef07b02a51f06ce599
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 9fec02e7866aaf867c7145491bfd84f727e039cdd7a4323ace9c65f74e49480a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104694308"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115191016"
 ---
 # <a name="pointers"></a>Pointers
 
 ![Puntatore](../images/pointers/MRTK_Pointer_Main.png)
 
-Questo articolo illustra come configurare e rispondere all'input del puntatore in pratica rispetto all' [architettura del puntatore](../../architecture/controllers-pointers-and-focus.md)
+Questo articolo illustra come configurare e rispondere all'input del puntatore in pratica, rispetto all'architettura [del puntatore](../../architecture/controllers-pointers-and-focus.md)
 
-I puntatori vengono automaticamente istanze in fase di esecuzione quando viene rilevato un nuovo controller. È possibile collegare più di un puntatore a un controller. Con il profilo puntatore predefinito, ad esempio, i controller di realtà mista di Windows ottengono rispettivamente una linea e un puntatore parabolico per la selezione e la teleportazione normali.
+Le istanze dei puntatori vengono automaticamente inizializzate in fase di esecuzione quando viene rilevato un nuovo controller. È possibile collegare più puntatori a un controller. Ad esempio, con il profilo puntatore predefinito, i controller Windows Mixed Reality ottengono rispettivamente una linea e un indicatore di misura parabolico per la selezione normale e il teletrasporto.
 
-## <a name="pointer-configuration"></a>Configurazione puntatore
+## <a name="pointer-configuration"></a>Configurazione del puntatore
 
-I puntatori sono configurati come parte del sistema di input in MRTK tramite un [`MixedRealityPointerProfile`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityPointerProfile) . Questo tipo di profilo viene assegnato a un oggetto [`MixedRealityInputSystemProfile`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystemProfile) in controllo configurazione MRTK. Il profilo del puntatore determina il cursore, i tipi di puntatori disponibili in fase di esecuzione e il modo in cui tali puntatori comunicano tra loro per decidere quale sia attivo.
+I puntatori sono configurati come parte del sistema di input in MRTK tramite [`MixedRealityPointerProfile`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityPointerProfile) . Questo tipo di profilo viene assegnato a un [`MixedRealityInputSystemProfile`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystemProfile) oggetto nel controllo della configurazione di MRTK. Il profilo Puntatore determina il cursore, i tipi di puntatori disponibili in fase di esecuzione e il modo in cui tali puntatori comunicano tra loro per decidere quale è attivo.
 
-- *Extent di puntamento* : definisce la distanza massima per cui un puntatore può interagire con un GameObject.
+- *Extent di puntamento:* definisce la distanza massima per cui un puntatore può interagire con un GameObject.
 
-- *Pointing Raycast layer masks* : si tratta di una matrice con priorità di LayerMasks per determinare quali possibili GameObject qualsiasi puntatore specificato possono interagire con e l'ordine di interazione da tentare. Questo può essere utile per garantire che i puntatori interagiscano con gli elementi dell'interfaccia utente prima di altri oggetti della scena.
+- *Maschera di livello Raycast* di puntamento: si tratta di una matrice con priorità di LayerMasks per determinare i gameobject possibili con cui un determinato puntatore può interagire e l'ordine di interazione da provare. Ciò può essere utile per garantire che i puntatori interagiscano con gli elementi dell'interfaccia utente prima di altri oggetti della scena.
 ![Esempio di profilo puntatore](../images/input/pointers/PointerProfile.PNG)
 
 ### <a name="pointer-options-configuration"></a>Configurazione delle opzioni del puntatore
 
-La configurazione predefinita del profilo puntatore MRTK include le classi di puntatore seguenti e i prefabbricati associati. L'elenco di puntatori disponibili per il sistema in fase di esecuzione è definito in *Opzioni puntatore* nel profilo puntatore. Gli sviluppatori possono utilizzare questo elenco per riconfigurare i puntatori esistenti, aggiungere nuovi puntatori o eliminarne uno.
+La configurazione predefinita di MRTK Pointer Profile include le classi puntatore seguenti e i prefab associati predefiniti. L'elenco dei puntatori disponibili per il sistema in fase di esecuzione è definito in *Pointer Options (Opzioni puntatore)* nel profilo Pointer (Puntatore). Gli sviluppatori possono usare questo elenco per riconfigurare i puntatori esistenti, aggiungerne di nuovi o eliminarli.
 
 ![Esempio di profilo Opzioni puntatore](../images/input/pointers/PointerOptionsProfile.PNG)
 
-Ogni voce del puntatore viene definita dal set di dati seguente:
+Ogni voce pointer è definita dal set di dati seguente:
 
-- *Tipo di controller* : il set di controller per cui è valido un puntatore.
-  - Ad esempio, *PokePointer* è responsabile per gli oggetti "frugare" con un dito e è, per impostazione predefinita, contrassegnato come supporto solo per il tipo di controller a mano articolata. Viene creata un'istanza dei puntatori solo quando un controller diventa disponibile e in particolare il *tipo di controller* definisce quali controller possono essere creati da questo puntatore.
+- *Tipo di controller:* set di controller per cui è valido un puntatore.
+  - Ad esempio, *Il PokePointer* è responsabile del "poking" degli oggetti con un dito ed è, per impostazione predefinita, contrassegnato come supporto solo del tipo di controller della mano articolato. Viene creata un'istanza dei puntatori solo  quando un controller diventa disponibile e in particolare il tipo di controller definisce i controller con cui è possibile creare questo prefab del puntatore.
 
-- *Manualità* : consente di creare un'istanza di un puntatore solo per una mano specifica (a sinistra o a destra)
-
-> [!NOTE]
-> Se si imposta la proprietà della *manualità* di una voce del puntatore su *None* , questa verrà disabilitata dal sistema come alternativa alla rimozione del puntatore dall'elenco.
-
-- *Prefabbricato del puntatore* : verrà creata un'istanza dell'asset prefabbricato quando un controller che corrisponde al tipo di controller e alla manualità specificati inizierà a essere rilevato.
-
-È possibile avere più puntatori associati a un controller. Ad esempio, in `DefaultHoloLens2InputSystemProfile` (assets/MRTK/SDK/Profiles/HoloLens2/) il controller a mano articolata è associato a *PokePointer*, *GrabPointer* e *DefaultControllerPointer* (ovvero raggi mano).
+- *Handness* : consente la creazione di un'istanza di un puntatore solo per una mano specifica (sinistra/destra)
 
 > [!NOTE]
-> MRTK fornisce un set di prefabbricati puntatore in *assets/MRTK/SDK/features/UX/premises/puntatori*. Una nuova precostruzione personalizzata può essere compilata purché contenga uno degli script di puntatore in *assets/MRTK/SDK/features/UX/scripts/puntatori* o qualsiasi altro script che implementa [`IMixedRealityPointer`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointer) .
+> *L'impostazione della proprietà Handedness* di una voce Pointer su *None* la disabilita in modo efficace dal sistema in alternativa alla rimozione di tale puntatore dall'elenco.
+
+- *Prefab* puntatore: verrà creata un'istanza di questo asset prefab quando un controller corrispondente al tipo di controller specificato e il numero di mani inizia a essere monitorato.
+
+È possibile avere più puntatori associati a un controller. Ad esempio, in `DefaultHoloLens2InputSystemProfile` (Assets/MRTK/SDK/Profiles/HoloLens2/) il controller della mano articolato è associato a *PokePointer,* *GrabPointer* e *DefaultControllerPointer* (ad esempio raggi mano).
+
+> [!NOTE]
+> MRTK fornisce un set di prefab puntatore in *Assets/MRTK/SDK/Features/UX/Prefabs/Pointers*. È possibile creare un nuovo prefab personalizzato, purché contenga uno degli script puntatore in *Assets/MRTK/SDK/Features/UX/Scripts/Pointers* o qualsiasi altro script che implementa [`IMixedRealityPointer`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointer) .
 
 ### <a name="default-pointer-classes"></a>Classi puntatore predefinite
 
-Le classi seguenti sono i puntatori MRTK predefiniti disponibili e definiti nel *profilo puntatore MRTK* predefinito descritto in precedenza. Ogni prefabbricato del puntatore fornito in *assets/MRTK/SDK/features/UX/Prefabbricates/puntatori* contiene uno dei componenti del puntatore collegati.
+Le classi seguenti sono i puntatori MRTK predefiniti disponibili e definiti nel profilo puntatore *MRTK* predefinito descritto in precedenza. Ogni prefab del puntatore fornito in *Assets/MRTK/SDK/Features/UX/Prefabs/Pointers* contiene uno dei componenti del puntatore collegati.
 
 ![Puntatori predefiniti MRTK](../images/input/pointers/MRTK_Pointers.png)
 
-#### <a name="far-pointers"></a>Puntatori a distanza
+#### <a name="far-pointers"></a>Puntatori far
 
 ##### [`LinePointer`](xref:Microsoft.MixedReality.Toolkit.Input.LinePointer)
 
- *LinePointer*, una classe puntatore di base, disegna una linea dall'origine dell'input (ovvero il controller) nella direzione del puntatore e supporta un solo cast a raggio in questa direzione. In genere, [`ShellHandRayPointer`](xref:Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer) viene creata un'istanza delle classi figlio come e i puntatori di Teleport, che consentono di indicare la posizione in cui si trova la teleporta, anziché questa classe, che fornisce principalmente funzionalità comuni.
+ *LinePointer,* una classe puntatore di base, disegna una linea dall'origine dell'input (ad esempio il controller) nella direzione del puntatore e supporta un singolo ray cast in questa direzione. In genere, le classi figlio, ad esempio e i puntatori di teletrasporto, vengono create e utilizzate (che disegnano anche linee per indicare dove finirà il teletrasporto) anziché questa classe che fornisce principalmente funzionalità [`ShellHandRayPointer`](xref:Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer) comuni.
 
-Per i controller di movimento come in Oculus, vive e la realtà mista di Windows, la rotazione corrisponderà alla rotazione del controller. Per gli altri controller, ad esempio HoloLens 2, la rotazione corrisponde alla punta della mano fornita dal sistema.
+Per i controller del movimento come in Oculus, Vive e Windows Mixed Reality, la rotazione corrisponderà alla rotazione del controller. Per altri controller, HoloLens 2 mani articolate, la rotazione corrisponde alla posizione di puntamento fornita dal sistema della mano.
 
 <img src="../images/pointers/MRTK_Pointers_Line.png" width="400" alt="MRTK Pointer Line">
 
 ##### [`CurvePointer`](xref:Microsoft.MixedReality.Toolkit.Input.CurvePointer)
 
-*CurvePointer* estende la classe *LinePointer* consentendo il cast dei raggi in più passaggi lungo una curva. Questa classe di puntatore di base è utile per le istanze curve, ad esempio i puntatori di teleportazione in cui la linea si piega in modo coerente in una parabola.
+*CurvePointer* estende la *classe LinePointer* consentendo di eseguire raggi in più passaggi lungo una curva. Questa classe di puntatore di base è utile per le istanze curve, ad esempio i puntatori di teletrasporto in cui la linea si sposta in modo coerente in una parabola.
 
 ##### [`ShellHandRayPointer`](xref:Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer)
 
-L'implementazione di *ShellHandRayPointer*, che si estende da [`LinePointer`](xref:Microsoft.MixedReality.Toolkit.Input.MousePointer) , viene usata come impostazione predefinita per il *profilo del puntatore MRTK*. Il prefabbricato *DefaultControllerPointer* implementa la [`ShellHandRayPointer`](xref:Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer) classe.
+L'implementazione *di ShellHandRayPointer,* che si estende da , viene usata come impostazione predefinita per il [`LinePointer`](xref:Microsoft.MixedReality.Toolkit.Input.MousePointer) profilo *puntatore MRTK.* Il prefab *DefaultControllerPointer* implementa la [`ShellHandRayPointer`](xref:Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer) classe .
 
 ##### [`GGVPointer`](xref:Microsoft.MixedReality.Toolkit.Input.GGVPointer)
 
-Noto anche come puntatore a *sguardi/movimenti/voce (GGV)* , GGVPointer alimenta le interazioni di tipo "1" e "tocco", principalmente tramite lo sguardo e il tocco aereo o l'interazione con selezione voce. La posizione e la direzione del puntatore GGV sono determinate dalla posizione e dalla rotazione della testa.
+Noto anche come puntatore *GGV (Gaze/Gesture/Voice),* GGVPointer consente di eseguire interazioni con aspetto e tocco HoloLens uno stile, principalmente tramite l'interazione di selezione dello sguardo fisso e dell'aria o sguardo fisso e voce. La posizione e la direzione dell'indicatore di misura GGV sono guidate dalla posizione e dalla rotazione della testa.
 
 ##### [`TouchPointer`](xref:Microsoft.MixedReality.Toolkit.Input.TouchPointer)
 
-Il *TouchPointer* è responsabile dell'uso di Unity touch input (ad esempio touchscreen). Si tratta di "Interactions", perché l'azione di toccare lo schermo consente di eseguire il cast di un raggio dalla fotocamera a una posizione potenzialmente lontana nella scena.
+*TouchPointer è* responsabile dell'uso dell'input Touch di Unity,ad esempio il touchscreen. Si tratta di "interazioni da lontano" perché l'atto di toccare lo schermo proietta un raggio dalla fotocamera a una posizione potenzialmente distante nella scena.
 
 ##### [`MousePointer`](xref:Microsoft.MixedReality.Toolkit.Input.MousePointer)
 
-Il *MousePointer* alimenta una schermata per la Raycast globale per le interazioni di gran lunga, ma per il mouse anziché il tocco.
+*MousePointer alimenta un* raycast da schermo a mondo per interazioni da lontano, ma per il mouse anziché per il tocco.
 
 ![Puntatore del mouse](../images/pointers/MRTK_MousePointer.png)
 
 > [!NOTE]
-> Il supporto del mouse non è disponibile per impostazione predefinita in MRTK, ma può essere abilitato aggiungendo un nuovo *provider di dati di input* di tipo [`MouseDeviceManager`](xref:Microsoft.MixedReality.Toolkit.Input.UnityInput.MouseDeviceManager) al profilo di input MRTK e assegnando al [`MixedRealityMouseInputProfile`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityMouseInputProfile) provider di dati.
+> Il supporto del mouse non è disponibile per impostazione predefinita in MRTK, ma *può* essere abilitato aggiungendo un nuovo provider di dati di input di tipo al profilo di input MRTK e assegnando al provider di [`MouseDeviceManager`](xref:Microsoft.MixedReality.Toolkit.Input.UnityInput.MouseDeviceManager) [`MixedRealityMouseInputProfile`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityMouseInputProfile) dati.
 
-#### <a name="near-pointers"></a>Near puntatori
+#### <a name="near-pointers"></a>Puntatori vicini
 
 ##### [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer)
 
-*[PokePointer](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer)* viene usato per interagire con gli oggetti del gioco che supportano "near Interaction touchable". ovvero GameObject a cui è associato uno [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) script. Nel caso di UnityUI, questo puntatore Cerca NearInteractionTouchableUnityUIs.  PokePointer usa un SphereCast per determinare l'elemento ritoccabile più vicino e viene usato per potenziare elementi come i pulsanti stampabili.
+*[PokePointer viene usato](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer)* per interagire con gli oggetti del gioco che supportano "near interaction touchable". che sono GameObject a cui è associato uno [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) script. Nel caso di UnityUI, questo puntatore cerca NearInteractionTouchableUnityUIs.  PokePointer usa SphereCast per determinare l'elemento toccabile più vicino e viene usato per alimentare elementi come i pulsanti a pressione.
 
- Quando si configura GameObject con il [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) componente, assicurarsi di configurare il parametro *localForward* in modo che punti all'inizio del pulsante o di un altro oggetto che deve essere reso toccabile. Assicurarsi inoltre che i *limiti* di touchable corrispondano ai limiti dell'oggetto toccabile.
+ Quando si configura GameObject con il componente , assicurarsi di configurare il parametro localForward in modo che punti all'esterno della parte anteriore del pulsante o di un altro oggetto che deve [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) essere reso  toccabile. Assicurarsi anche che i limiti del *toccabile* corrispondano ai limiti dell'oggetto toccabile.
 
-Proprietà del puntatore poke utili:
+Proprietà utili del puntatore Poke:
 
-- *TouchableDistance*: distanza massima in cui è possibile interagire con una superficie toccabile
-- Oggetti *visivi*: oggetto gioco usato per eseguire il rendering dell'oggetto visivo della descrizione comando (l'anello sul dito, per impostazione predefinita).
-- *Line*: linea facoltativa da trascinare da un dito alla superficie di input attiva.
-- *Maschere livello poke* : matrice con priorità di LayerMasks per determinare il GameObject possibile con cui può interagire il puntatore e l'ordine di interazione da tentare. Si noti che un GameObject deve avere anche un `NearInteractionTouchable` componente per interagire con un puntatore poke.
+- *TouchableDistance:* distanza massima con cui è possibile interagire con una superficie toccabile
+- *Oggetti visivi: oggetto* gioco usato per eseguire il rendering dell'oggetto visivo punta del dito (l'anello sul dito, per impostazione predefinita).
+- *Linea:* linea facoltativa per disegnare dalla punta del dito alla superficie di input attiva.
+- *Poke Layer Masks (Maschera livello poke)* - Matrice di LayerMasks classificata in ordine di priorità per determinare i GameObject possibili con cui il puntatore può interagire e l'ordine di interazione da provare. Si noti che un GameObject deve avere anche un componente per interagire con `NearInteractionTouchable` un puntatore poke.
 
 <img src="../images/pointers/MRTK_PokePointer.png" width="400" alt="Poke Pointer">
 
 ##### [`SpherePointer`](xref:Microsoft.MixedReality.Toolkit.Input.SpherePointer)
 
-*[SpherePointer](xref:Microsoft.MixedReality.Toolkit.Input.SpherePointer)* utilizza [UnityEngine. Physics. OverlapSphere](https://docs.unity3d.com/ScriptReference/Physics.OverlapSphere.html) per identificare l'oggetto più vicino per l' [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable) interazione, che risulta utile per l'input "afferrabile", ad esempio `ManipulationHandler` . Analogamente alla [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer) / [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) coppia funzionale, per poter interagire con il puntatore a sfera, l'oggetto Game deve contenere un componente che rappresenta lo [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable) script.
+*[SpherePointer](xref:Microsoft.MixedReality.Toolkit.Input.SpherePointer)* usa [UnityEngine.Physics.OverlapSphere](https://docs.unity3d.com/ScriptReference/Physics.OverlapSphere.html) per identificare l'oggetto più vicino per l'interazione, utile per l'input [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable) "afferrabile", ad esempio `ManipulationHandler` . Analogamente alla coppia funzionale, per poter interagire con l'indicatore di misura Sphere, l'oggetto gioco deve contenere un componente [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer) / [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) che rappresenta lo [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable) script.
 
 <img src="../images/pointers/MRTK_GrabPointer.jpg" width="400" alt="Grab Pointer">
 
-Proprietà del puntatore della sfera utili:
+Proprietà utili dell'indicatore di misura sphere:
 
-- *Raggio del cast della sfera*: raggio per la sfera utilizzata per eseguire una query per gli oggetti afferrabili.
-- *Near object Margin*: distanza sulla parte superiore del raggio del cast della sfera per eseguire una query per rilevare se un oggetto si trova vicino al puntatore. Raggio totale vicino al rilevamento di oggetti
-- *Angolo vicino al settore oggetto*: angolo intorno all'asse di avanzamento del puntatore per l'esecuzione di query per gli oggetti vicini. Fa `IsNearObject` in modo che la query funzioni come un cono. Per impostazione predefinita, questo valore è impostato su 66 gradi per trovare la corrispondenza con il comportamento di Hololens 2
+- *Sphere Cast Radius (Raggio* cast sfera): raggio della sfera usata per eseguire una query per trovare oggetti afferrabili.
+- *Near Object Margin*(Margine oggetto vicino): distanza sopra il raggio del cast di sfera per eseguire una query per rilevare se un oggetto si trova vicino al puntatore. Il raggio totale di rilevamento di oggetti vicini è Raggio del cast di sfera + Margine oggetto vicino
+- *Near Object Sector Angle :* angolo intorno all'asse in avanti del puntatore per l'esecuzione di query sugli oggetti vicini. Rende la `IsNearObject` funzione di query come un cono. Per impostazione predefinita, questa opzione è impostata su 66 gradi in modo che corrisponda al comportamento di Hololens 2
 
-![Puntatore a sfera modificato in modo da eseguire solo una query per gli oggetti nella direzione avanti](https://user-images.githubusercontent.com/39840334/82500569-72d58300-9aa8-11ea-8102-ec9a62832d4e.png)
+![Puntatore sphere modificato per eseguire una query solo per gli oggetti nella direzione avanti](https://user-images.githubusercontent.com/39840334/82500569-72d58300-9aa8-11ea-8102-ec9a62832d4e.png)
 
-- *Near object Smoothing Factor*: fattore di smussatura per il rilevamento Near object. Se viene rilevato un oggetto nel raggio dell'oggetto near, il raggio su cui viene eseguita la query diventa Near object RADIUS * (1 + Near object Smoothing Factor) per ridurre la sensibilità e rendere più difficile per un oggetto lasciare l'intervallo di rilevamento.
-- *Acquisisci maschere di livello* : una matrice con priorità di LayerMasks per determinare il GameObject possibile con cui può interagire il puntatore e l'ordine di interazione da tentare. Si noti che un GameObject deve avere anche un oggetto `NearInteractionGrabbable` per interagire con un SpherePointer.
+- *Near Object Smoothing Factor (Fattore* di smussamento oggetti vicino): fattore di smussamento per il rilevamento di oggetti vicini. Se viene rilevato un oggetto nel raggio dell'oggetto vicino, il raggio sottoposto a query diventa Raggio oggetto vicino * (1 + Fattore di smussamento oggetto vicino) per ridurre la sensibilità e rendere più difficile per un oggetto lasciare l'intervallo di rilevamento.
+- *Grab Layer Masks (Afferra* maschere livello) - Matrice di LayerMasks classificata in ordine di priorità per determinare i gameobject possibili con cui l'indicatore di misura può interagire e l'ordine di interazione da provare. Si noti che un GameObject deve avere anche un `NearInteractionGrabbable` oggetto per interagire con un SpherePointer.
     > [!NOTE]
-    > Il livello di riconoscimento spaziale è disabilitato nel prefabbricato GrabPointer predefinito fornito da MRTK. Questa operazione viene eseguita per ridurre l'effetto sulle prestazioni dell'esecuzione di una query di sovrapposizione delle sfere con la mesh spaziale. Questa operazione può essere abilitata modificando il prefabbricato GrabPointer.
-- *Ignorare i conflitti non in FOV* -se ignorare i Collider che potrebbero essere vicini al puntatore, ma non effettivamente nell'oggetto visivo FOV.
-Questa operazione può impedire le catture accidentali e consentirà di attivare i raggi mano quando si può trovarsi vicino a un oggetto afferrabile, ma non può essere visualizzato. L'oggetto *visivo FOV* viene definito tramite un cono anziché il tronco tipico per motivi di prestazioni. Questo cono è centrato e orientato allo stesso modo in cui si trova il tronco della fotocamera con un raggio uguale a metà di visualizzazione (o di FOV verticale).
+    > Il livello di consapevolezza spaziale è disabilitato nel prefab GrabPointer predefinito fornito da MRTK. Questa operazione viene eseguita per ridurre l'impatto sulle prestazioni dell'esecuzione di una query di sovrapposizione della sfera con la mesh spaziale. È possibile abilitarla modificando il prefab GrabPointer.
+- *Ignore Colliders Not in FOV* (Ignora collisori non presenti nell'oggetto visivo) - Indica se ignorare i collisori che potrebbero essere vicini all'indicatore di misura, ma non effettivamente nell'oggetto visivo.
+Ciò può impedire afferramenti accidentali e consentirà l'attivazione dei raggi della mano quando potresti essere vicino a un afferrabile, ma non puoi vederlo. La *fov visuale* viene definita tramite un cono anziché il frustum tipico per motivi di prestazioni. Questo cono è centrato e orientato allo stesso modo del frustum della fotocamera con un raggio uguale a metà altezza dello schermo (o fov verticale).
 
 <img src="../images/input/pointers/SpherePointer_VisualFOV.png" width="200" alt="Sphere Pointer">
 
-#### <a name="teleport-pointers"></a>Puntatori Teleport
+#### <a name="teleport-pointers"></a>Puntatori di teletrasporto
 
-- [`TeleportPointer`](xref:Microsoft.MixedReality.Toolkit.Teleport.TeleportPointer) genererà una richiesta di Teleport quando viene eseguita l'azione (ad esempio viene premuto il pulsante Teleport per spostare l'utente.
-- [`ParabolicTeleportPointer`](xref:Microsoft.MixedReality.Toolkit.Teleport.ParabolicTeleportPointer) genererà una richiesta di Teleport quando viene eseguita l'azione (ad esempio il pulsante teleport viene premuto con una linea parabolica Raycast per spostare l'utente.
+- [`TeleportPointer`](xref:Microsoft.MixedReality.Toolkit.Teleport.TeleportPointer) genererà una richiesta di teletrasporto quando viene eseguita un'azione ,ad esempio il pulsante teletrasporto è premuto) per spostare l'utente.
+- [`ParabolicTeleportPointer`](xref:Microsoft.MixedReality.Toolkit.Teleport.ParabolicTeleportPointer) genererà una richiesta di teletrasporto quando viene eseguita un'azione ,ad esempio il pulsante di teletrasporto è premuto) con un raycast a linea parabolica per spostare l'utente.
 
 <img src="../images/pointers/MRTK_Pointers_Parabolic.png" width="400" alt="Pointer Parabolic">
 
-## <a name="pointer-support-for-mixed-reality-platforms"></a>Supporto del puntatore per le piattaforme di realtà miste
+## <a name="pointer-support-for-mixed-reality-platforms"></a>Supporto dei puntatori per le piattaforme di realtà mista
 
-La tabella seguente illustra in dettaglio i tipi di puntatore che vengono in genere usati per le piattaforme comuni in MRTK. Nota: è possibile aggiungere diversi tipi di puntatore a queste piattaforme. Ad esempio, è possibile aggiungere un puntatore poke o un puntatore a sfera a VR. Inoltre, i dispositivi VR con un gamepad possono usare il puntatore GGV.
+La tabella seguente contiene informazioni dettagliate sui tipi di puntatore usati in genere per le piattaforme comuni in MRTK. NOTA: è possibile aggiungere tipi di puntatore diversi a queste piattaforme. Ad esempio, è possibile aggiungere un puntatore Poke o Sphere alla realtà virtuale. Inoltre, i dispositivi VR con un game pad possono usare il puntatore GGV.
 
 |       Puntatore              | OpenVR  | Windows Mixed Reality | HoloLens 1 | HoloLens 2 |
 |---------------------|---------|-----------------------|------------|------------|
@@ -152,38 +152,38 @@ La tabella seguente illustra in dettaglio i tipi di puntatore che vengono in gen
 | SpherePointer       |         |                       |            | Valido      |
 | PokePointer         |         |                       |            | Valido      |
 
-## <a name="pointer-interactions-via-code"></a>Interazioni tra puntatori tramite codice
+## <a name="pointer-interactions-via-code"></a>Interazioni dei puntatori tramite codice
 
-### <a name="pointer-event-interfaces"></a>Interfacce eventi puntatore
+### <a name="pointer-event-interfaces"></a>Interfacce di evento puntatore
 
-I monobehavior che implementano una o più delle interfacce seguenti e sono assegnati a un GameObject con un oggetto riceverà `Collider` gli eventi di interazione del puntatore come definito dall'interfaccia associata.
+Gli oggetti MonoBehaviour che implementano una o più delle interfacce seguenti e vengono assegnati a un GameObject con riceveranno eventi di interazione puntatore come definito `Collider` dall'interfaccia associata.
 
 | Event | Descrizione | Gestore |
 | --- | --- | --- |
-| Prima dello stato attivo modificato/stato attivo modificato | Generato nell'oggetto Game che perde lo stato attivo e quello che lo ottiene ogni volta che un puntatore cambia lo stato attivo. | [`IMixedRealityFocusChangedHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusChangedHandler) |
-Invio/uscita dello stato attivo | Generato sull'oggetto gioco che ottiene lo stato attivo quando il primo puntatore lo immette e su quello che perde lo stato attivo quando l'ultimo puntatore lo lascia. | [`IMixedRealityFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusHandler)
-Puntatore inattivo/trascinamento/clic | Elevato per segnalare la pressione, il trascinamento e il rilascio del puntatore. | [`IMixedRealityPointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler)
-Tocco avviato/aggiornato/completato | Generato da puntatori compatibili con il tocco come [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer) per segnalare l'attività di tocco. | [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler)
+| Prima della modifica dello stato attivo/modifica dello stato attivo | Generato sia sull'oggetto gioco che perde lo stato attivo che su quello che lo ottiene ogni volta che un puntatore cambia stato attivo. | [`IMixedRealityFocusChangedHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusChangedHandler) |
+Focus Enter/Exit (Invio/Uscita dello stato attivo) | Generato sull'oggetto gioco che ottiene lo stato attivo quando il primo puntatore lo entra e su quello che perde lo stato attivo quando l'ultimo puntatore lo lascia. | [`IMixedRealityFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusHandler)
+Puntatore verso il basso/trascinato/verso l'alto/su | Generato per segnalare la pressione del puntatore, il trascinamento e il rilascio. | [`IMixedRealityPointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler)
+Tocco avviato/aggiornato/completato | Generato da puntatori con riconoscere il tocco, ad esempio [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer) per segnalare attività di tocco. | [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler)
 
 > [!NOTE]
-> [`IMixedRealityFocusChangedHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusChangedHandler) e [`IMixedRealityFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusHandler) devono essere gestiti negli oggetti in cui vengono generati. È possibile ricevere eventi di attivazione a livello globale, ma, a differenza di altri eventi di input, il gestore eventi globale non blocca la ricezione degli eventi in base allo stato attivo (l'evento verrà ricevuto dal gestore globale e da un oggetto corrispondente nello stato attivo).
+> [`IMixedRealityFocusChangedHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusChangedHandler) e [`IMixedRealityFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusHandler) devono essere gestiti negli oggetti su cui vengono generati. È possibile ricevere eventi di stato attivo a livello globale, ma, a differenza di altri eventi di input, il gestore eventi globale non blocca la ricezione di eventi in base al focus (l'evento verrà ricevuto sia dal gestore globale che da un oggetto corrispondente nello stato attivo).
 
-#### <a name="pointer-input-events-in-action"></a>Eventi di input puntatore in azione
+#### <a name="pointer-input-events-in-action"></a>Eventi di input del puntatore in azione
 
-Gli eventi di input del puntatore vengono riconosciuti e gestiti dal sistema di input MRTK in modo analogo [agli eventi di input normali](input-events.md#input-events-in-action). La differenza consiste nel fatto che gli eventi di input del puntatore vengono gestiti solo da GameObject nello stato attivo dal puntatore che ha attivato l'evento di input, nonché da eventuali gestori di input globali. Gli eventi di input normali vengono gestiti da GameObject in stato attivo per tutti i puntatori attivi.
+Gli eventi di input del puntatore vengono riconosciuti e gestiti dal sistema di input MRTK in modo analogo ai [normali eventi di input](input-events.md#input-events-in-action). La differenza è che gli eventi di input del puntatore vengono gestiti solo dal GameObject nello stato attivo dal puntatore che ha attivato l'evento di input, nonché da qualsiasi gestore di input globale. Gli eventi di input regolari vengono gestiti da GameObject nello stato attivo per tutti i puntatori attivi.
 
 1. Il sistema di input MRTK riconosce che si è verificato un evento di input
-1. Il sistema di input MRTK genera la funzione di interfaccia pertinente per l'evento di input in tutti i gestori di input globali registrati
-1. Il sistema di input determina quale GameObject è attivo per il puntatore che ha attivato l'evento
-    1. Il sistema di input usa il [sistema di eventi di Unity](https://docs.unity3d.com/Manual/EventSystem.html) per attivare la funzione di interfaccia pertinente per tutti i componenti corrispondenti nel GameObject con stato attivo
-    1. Se in qualsiasi momento un evento di input è stato [contrassegnato come usato](input-events.md#how-to-stop-input-events), il processo terminerà e nessun altro GameObject riceverà i callback.
-        - Esempio: ai componenti che implementano l'interfaccia [`IMixedRealityFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) verrà eseguita la ricerca di un GameObject guadagni o perde lo stato attivo
-        - Nota: il sistema di eventi Unity verrà propagato per eseguire una ricerca nel GameObject padre se non sono stati trovati componenti corrispondenti all'interfaccia desiderata nel GameObject corrente.
-1. Se non viene registrato alcun gestore di input globale e non viene trovato alcun GameObject con un componente/interfaccia corrispondente, il sistema di input chiamerà ogni gestore di input registrato di fallback.
+1. Il sistema di input MRTK genera la funzione di interfaccia pertinente per l'evento di input a tutti i gestori di input globali registrati
+1. Il sistema di input determina quale GameObject è attivo per il puntatore che ha generato l'evento
+    1. Il sistema di input usa il sistema eventi [di Unity per](https://docs.unity3d.com/Manual/EventSystem.html) impostare la funzione di interfaccia pertinente per tutti i componenti corrispondenti sul GameObject con lo stato attivo
+    1. Se in qualsiasi momento un evento di input è stato contrassegnato come [usato,](input-events.md#how-to-stop-input-events)il processo terminerà e nessun altro GameObject riceverà callback.
+        - Esempio: i componenti che implementano [`IMixedRealityFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) l'interfaccia verranno cercati un GameObject che ottiene o perde lo stato attivo
+        - Nota: il sistema di eventi Unity verrà visualizzato per cercare il GameObject padre se non vengono trovati componenti corrispondenti all'interfaccia desiderata nell'oggetto GameObject corrente.
+1. Se non è registrato alcun gestore di input globale e non viene trovato alcun GameObject con un componente/interfaccia corrispondente, il sistema di input chiamerà ogni gestore di input registrato di fallback
 
 #### <a name="example"></a>Esempio
 
-Di seguito è riportato uno script di esempio che modifica il colore del renderer collegato quando un puntatore accetta o lascia lo stato attivo o quando un puntatore seleziona l'oggetto.
+Di seguito è riportato uno script di esempio che modifica il colore del renderer associato quando un puntatore assume o lascia lo stato attivo o quando un puntatore seleziona l'oggetto.
 
 ```c#
 public class ColorTap : MonoBehaviour, IMixedRealityFocusHandler, IMixedRealityPointerHandler
@@ -223,7 +223,7 @@ public class ColorTap : MonoBehaviour, IMixedRealityFocusHandler, IMixedRealityP
 
 ### <a name="query-pointers"></a>Puntatori di query
 
-È possibile raccogliere tutti i puntatori attualmente attivi eseguendo un ciclo attraverso le origini di input disponibili, ad esempio controller e input disponibili) per individuare i puntatori a essi collegati.
+È possibile raccogliere tutti i puntatori attualmente attivi scorrendo a ciclo continuo le origini di input disponibili,ad esempio controller e input disponibili) per individuare i puntatori associati.
 
 ```c#
 var pointers = new HashSet<IMixedRealityPointer>();
@@ -243,7 +243,7 @@ foreach (var inputSource in CoreServices.InputSystem.DetectedInputSources)
 
 #### <a name="primary-pointer"></a>Puntatore primario
 
-Gli sviluppatori possono sottoscrivere l'evento PrimaryPointerChanged di FocusProviders per ricevere una notifica quando il puntatore primario è stato modificato. Questo può essere estremamente utile per identificare se l'utente sta attualmente interagendo con una scena tramite lo sguardo o un raggio di mano o un'altra origine di input.
+Gli sviluppatori possono sottoscrivere l'evento PrimaryPointerChanged di FocusProviders per ricevere una notifica quando il puntatore principale nello stato attivo viene modificato. Questo può essere estremamente utile per identificare se l'utente sta attualmente interagendo con una scena tramite sguardo fisso, un raggio della mano o un'altra origine di input.
 
 ```c#
 private void OnEnable()
@@ -267,13 +267,13 @@ private void OnDisable()
 }
 ```
 
-La `PrimaryPointerExample` scena (assets/MRTK/examples/Demos/input/Scenes/PrimaryPointer) Mostra come usare la [`PrimaryPointerChangedHandler`](xref:Microsoft.MixedReality.Toolkit.Input.PrimaryPointerChangedHandler) per gli eventi per rispondere a un nuovo puntatore primario.
+La `PrimaryPointerExample` scena (Assets/MRTK/Examples/Demos/Input/Scenes/PrimaryPointer) mostra come usare per gli eventi per rispondere a un nuovo [`PrimaryPointerChangedHandler`](xref:Microsoft.MixedReality.Toolkit.Input.PrimaryPointerChangedHandler) puntatore primario.
 
 <img src="../images/pointers/PrimaryPointerExample.png" style="max-width:100%;" alt="Primary Pointer Example">
 
-### <a name="pointer-result"></a>Risultato indicatore di misura
+### <a name="pointer-result"></a>Risultato del puntatore
 
-La [`Result`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointer.Result) Proprietà Pointer contiene il risultato corrente per la query della scena utilizzata per determinare l'oggetto con lo stato attivo. Per un puntatore Raycast, come quello creato per impostazione predefinita per i controller di movimento, l'input dello sguardo e il raggio della mano, conterrà la posizione e la normale della hit raycast.
+La proprietà pointer [`Result`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointer.Result) contiene il risultato corrente per la query della scena usata per determinare l'oggetto con lo stato attivo. Per un indicatore di misura del raycast, come quelli creati per impostazione predefinita per i controller del movimento, l'input dello sguardo fisso e i raggi della mano, conterrà la posizione e la normale dell'hit del raycast.
 
 ```c#
 private void IMixedRealityPointerHandler.OnPointerClicked(MixedRealityPointerEventData eventData)
@@ -285,13 +285,13 @@ private void IMixedRealityPointerHandler.OnPointerClicked(MixedRealityPointerEve
 }
 ```
 
-La `PointerResultExample` scena (assets/MRTK/examples/Demos/input/Scenes/PointerResult/PointerResultExample. Unity) Mostra come usare il puntatore [`Result`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointer.Result) per generare un oggetto in corrispondenza della posizione di hit.
+La `PointerResultExample` scena (Assets/MRTK/Examples/Demos/Input/Scenes/PointerResult/PointerResultExample.unity) mostra come usare il puntatore per generare un oggetto nella posizione di [`Result`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointer.Result) hit.
 
 <img src="../images/input/PointerResultExample.png" style="max-width:100%;" alt="Pointer Result">
 
 ### <a name="disable-pointers"></a>Disabilitare i puntatori
 
-Per attivare e disattivare i puntatori, ad esempio per disabilitare il raggio della mano, impostare [`PointerBehavior`](xref:Microsoft.MixedReality.Toolkit.Input.PointerBehavior) per un tipo di puntatore specificato tramite [`PointerUtils`](xref:Microsoft.MixedReality.Toolkit.Input.PointerUtils) .
+Per abilitare e disabilitare i puntatori (ad esempio, per disabilitare il raggio della mano), impostare per [`PointerBehavior`](xref:Microsoft.MixedReality.Toolkit.Input.PointerBehavior) un determinato tipo di puntatore tramite [`PointerUtils`](xref:Microsoft.MixedReality.Toolkit.Input.PointerUtils) .
 
 ```c#
 // Disable the hand rays
@@ -314,26 +314,26 @@ public void SetHoloLens1()
 }
 ```
 
-[`PointerUtils`](xref:Microsoft.MixedReality.Toolkit.Input.PointerUtils) [`TurnPointersOnOff`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.DisablePointersExample) Per altri esempi, vedere e.
+Per [`PointerUtils`](xref:Microsoft.MixedReality.Toolkit.Input.PointerUtils) altri [`TurnPointersOnOff`](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.DisablePointersExample) esempi, vedere e .
 
-## <a name="pointer-interactions-via-editor"></a>Interazioni tra puntatori tramite Editor
+## <a name="pointer-interactions-via-editor"></a>Interazioni con i puntatori tramite l'editor
 
-Per gli eventi del puntatore gestiti da [`IMixedRealityPointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler) , MRTK offre ulteriore praticità sotto forma di [`PointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.PointerHandler) componente, che consente di gestire gli eventi del puntatore direttamente tramite gli eventi di Unity.
+Per gli eventi puntatore gestiti da , MRTK offre ulteriore praticità sotto forma di componente, che consente di gestire gli eventi puntatore direttamente [`IMixedRealityPointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler) [`PointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.PointerHandler) tramite eventi unity.
 
 <img src="../images/pointers/PointerHandler.png" style="max-width:100%;" alt="Pointer Handler">
 
 ## <a name="pointer-extent"></a>Extent del puntatore
 
-I puntatori a distanza presentano impostazioni che limitano il modo in cui verranno Raycast e interagiranno con altri oggetti nella scena.
-Per impostazione predefinita, questo valore è impostato su 10 metri. Questo valore è stato scelto per restare coerente con il comportamento della shell HoloLens.
+I puntatori di lontano hanno impostazioni che limitano la distanza del raycast e l'interazione con altri oggetti nella scena.
+Per impostazione predefinita, questo valore è impostato su 10 metri. Questo valore è stato scelto per mantenere la coerenza con il comportamento HoloLens shell.
 
-Questo può essere modificato aggiornando i `DefaultControllerPointer` campi del componente del prefabbricato [`ShellHandRayPointer`](xref:Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer) :
+Questa operazione può essere modificata aggiornando i `DefaultControllerPointer` campi del componente del prefab: [`ShellHandRayPointer`](xref:Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer)
 
-*Extent del puntatore* : consente di controllare la distanza massima con cui i puntatori interagiranno.
+*Extent puntatore:* controlla la distanza massima con cui interagiranno i puntatori.
 
-*Extent del puntatore predefinito* : controlla la lunghezza del raggio/linea del puntatore che verrà eseguito quando il puntatore non interagisce con alcun elemento.
+*Default Pointer Extent (Extent* puntatore predefinito) - Controlla la lunghezza del raggio/linea del puntatore di cui verrà eseguito il rendering quando il puntatore non interagisce con alcun elemento.
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Architettura del puntatore](../../architecture/controllers-pointers-and-focus.md)
+- [Architettura dei puntatori](../../architecture/controllers-pointers-and-focus.md)
 - [Eventi di input](input-events.md)

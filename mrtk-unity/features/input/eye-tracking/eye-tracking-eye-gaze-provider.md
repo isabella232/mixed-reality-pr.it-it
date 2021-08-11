@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, EyeTracking, EyeGaze,
-ms.openlocfilehash: ef50a55d52a5dad9f424c8af8139565e02542b6c
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 9a62bdba0bc4bb2985e6c2ffc4e8e66a8f867681a5e51c9e5f235b29f3baaf50
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144021"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193193"
 ---
 # <a name="accessing-eye-tracking-data-in-your-unity-script"></a>Accesso ai dati di tracciamento oculare nello script unity
 
@@ -22,7 +22,7 @@ L'accesso ai dati di tracciamento oculare in uno script MonoBehaviour è semplic
 La configurazione del tracciamento oculare in MRTK viene configurata tramite [`IMixedRealityEyeGazeProvider`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityEyeGazeProvider) l'interfaccia . [L'uso di CoreServices.InputSystem.EyeGazeProvider fornisce](eye-tracking-eye-gaze-provider.md) l'implementazione predefinita del provider gaze registrato nel toolkit in fase di esecuzione.
 Le proprietà utili `EyeGazeProvider` dell'oggetto sono descritte di seguito.
 
-- **IsEyeTrackingEnabled:** True se l'utente ha selezionato di usare il tracciamento oculare per lo sguardo.
+- **IsEyeTrackingEnabled:** True se l'utente ha scelto di usare il tracciamento oculare per lo sguardo.
 
 - **IsEyeCalibrationValid:** indica se la calibrazione del tracciamento oculare dell'utente è valida o meno.
 Restituisce "null", se il valore non ha ancora ricevuto dati dal sistema di tracciamento oculare.
@@ -35,26 +35,26 @@ Potrebbe non essere disponibile a causa del timeout superato (dovrebbe essere af
 Vedere [l'esempio di notifica di calibrazione](eye-tracking-is-user-calibrated.md) oculare mancante che spiega come rilevare se un utente è calibrato dagli occhi e visualizzare una notifica appropriata.
 
 - **GazeOrigin:** origine del raggio dello sguardo.
-Si noti che restituirà l'origine *dello sguardo* fisso con la testa se 'IsEyeGazeValid' è false.
+Si noti che verrà restituita l'origine *dello* sguardo head se 'IsEyeGazeValid' è false.
 
-- **GazeDirection:** direzione del raggio dello sguardo fisso.
-Verrà restituita la *direzione dello sguardo* con la testa se 'IsEyeGazeValid' è false.
+- **GazeDirection:** direzione del raggio dello sguardo.
+Verrà restituita la *direzione dello* sguardo head se 'IsEyeGazeValid' è false.
 
-- **HitInfo,** **HitPosition,** **HitNormal** e così via: informazioni sull'oggetto attualmente rivolto verso la destinazione.
-Anche in questo `IsEyeGazeValid` caso, se è false, si baserà sullo sguardo con la testa *dell'utente.*
+- **HitInfo,** **HitPosition,** **HitNormal** e così via: informazioni sull'oggetto attualmente a guardare la destinazione.
+Anche in questo caso, se è false, si baserà sullo sguardo della `IsEyeGazeValid` *testa dell'utente.*
 
 ## <a name="examples-for-using-coreservicesinputsystemeyegazeprovider"></a>Esempi per l'uso di CoreServices.InputSystem.EyeGazeProvider
 
-Di seguito è riportato un esempio [del file FollowEyeGaze.cs:](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.FollowEyeGaze)
+Di seguito è riportato un esempio [di FollowEyeGaze.cs:](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.FollowEyeGaze)
 
-- Ottenere il punto di un ologramma che l'utente sta guardando:
+- Ottenere il punto di un ologramma che l'utente sta osservando:
 
 ```c#
 // Show the object at the hit position of the user's eye gaze ray with the target.
 gameObject.transform.position = CoreServices.InputSystem.EyeGazeProvider.HitPosition;
 ```
 
-- Visualizzazione di un asset visivo a una distanza fissa dalla posizione in cui l'utente sta attualmente cercando:
+- Visualizzazione di un asset visivo a una distanza fissa da dove l'utente sta attualmente cercando:
 
 ```c#
 // If no target is hit, show the object at a default distance along the gaze ray.
@@ -65,7 +65,7 @@ CoreServices.InputSystem.EyeGazeProvider.GazeDirection.normalized * defaultDista
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Panoramica del tracciamento oculare di MRTK](eye-tracking-main.md)
-- [Configurazione del tracciamento oculare di MRTK](eye-tracking-basic-setup.md)
+- [Panoramica del tracciamento oculare MRTK](eye-tracking-main.md)
+- [Configurazione di MrTK Eye Tracking](eye-tracking-basic-setup.md)
 - [Calibrazione del tracciamento oculare MRTK](eye-tracking-is-user-calibrated.md)
-- [HoloLens 2 di tracciamento oculare](/windows/mixed-reality/eye-tracking)
+- [HoloLens 2 Documentazione sul tracciamento oculare](/windows/mixed-reality/eye-tracking)

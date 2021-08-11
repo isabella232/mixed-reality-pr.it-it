@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, Material Shader
-ms.openlocfilehash: 0a92388bc9be7c11967501709031f559f17f8966
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: e740c1cb662f88f7ce925482de9ed758d5f18ee152363a663aa678056ba2825f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176447"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115191158"
 ---
 # <a name="mrtk-standard-shader"></a>Shader standard MRTK
 
@@ -28,7 +28,7 @@ Gli esempi di materiale shader sono disponibili nella scena **MaterialGallery** 
 
 ![Confronto dei materiali](../images/mrtk-standard-shader/MRTK_StandardMaterialComparison.gif)
 
-## <a name="architecture"></a>Architecture
+## <a name="architecture"></a>Architettura
 
 Il sistema di ombreggiatura MRTK/Standard è uno "shader uber" che usa la funzionalità di variante del programma shader di [Unity](https://docs.unity3d.com/Manual/SL-MultipleProgramVariants.html) per generare automaticamente codice shader ottimale in base alle proprietà del materiale. Quando un utente seleziona le proprietà dei materiali nel controllo dei materiali, comporta solo costi di prestazioni per le funzionalità abilitate.
 
@@ -112,34 +112,34 @@ Il sistema di ombreggiatura STANDARD MRTK funziona con il sistema di interfaccia
 
 Si noti che quando si usa un componente Immagine Unity, è consigliabile specificare "Nessuno (Sprite)" per l'immagine di origine per impedire all'interfaccia utente di Unity di generare vertici aggiuntivi.
 
-Un canvas all'interno di MRTK richiederà l'aggiunta di [`ScaleMeshEffect.cs`](xref:Microsoft.MixedReality.Toolkit.Input.Utilities.ScaleMeshEffect) un quando è necessario:
+Un canvas all'interno di MRTK richiederà l'aggiunta di un oggetto [`ScaleMeshEffect.cs`](xref:Microsoft.MixedReality.Toolkit.Input.Utilities.ScaleMeshEffect) quando ne è necessario uno:
 
 ![Ridimensionare l'effetto mesh](../images/mrtk-standard-shader/MRTK_ScaleMeshEffect.jpg)
 
-## <a name="texture-combiner"></a>Combinatore di trame
+## <a name="texture-combiner"></a>Combinazione di trame
 
-Per migliorare la parità con lo shader standard Unity per pixel, è possibile controllare tutti i valori di uniformità, emissive e occlusione tramite la creazione di un pacchetto [di canali.](http://wiki.polycount.com/wiki/ChannelPacking) Ad esempio:
+Per migliorare la parità con lo shader Unity Standard per pixel, i valori metallici, smoothness, emissive e occlusion possono essere controllati tutti tramite [channel packing.](http://wiki.polycount.com/wiki/ChannelPacking) Ad esempio:
 
 ![Esempio di mappa dei canali](../images/mrtk-standard-shader/MRTK_ChannelMap.gif)
 
-Quando si usa la creazione di un pacchetto di canali, è sufficiente campionare e caricare una trama in memoria anziché quattro trame separate. Quando si scrivono le mappe trame in un programma, ad esempio Azzarre o Photoshop, è possibile imballarle manualmente come segue:
+Quando si usa la creazione di un pacchetto di canali, è sufficiente campionare e caricare una trama in memoria invece di quattro trame separate. Quando si scrivono le mappe trame in un programma come Sostanza o Photoshop, è possibile imballarle manualmente come segue:
 
 | Canale | Proprietà             |
 |---------|----------------------|
 | Red     | Metallici             |
 | Green   | Occlusione            |
-| Blu    | Emissione (gradazioni di grigio) |
+| Blu    | Emissione (scala di grigi) |
 | Alfa   | Scorrevolezza           |
 
-In caso contrario, è possibile usare lo strumento combinatore di trame MRTK. Per aprire lo strumento, selezionare: **Mixed Reality Toolkit -> Utilities -> Texture Combiner** (Utilità -> texture) per aprire la finestra seguente:
+In caso contrario, è possibile usare lo strumento di combinazione di trame MRTK. Per aprire lo strumento, selezionare: **Mixed Reality Toolkit -> Utilities -> Texture Combiner** che aprirà la finestra seguente:
 
-![Esempio di combinatore di trame](../images/mrtk-standard-shader/MRTK_TextureCombiner.jpg)
+![Esempio di combinazione di trame](../images/mrtk-standard-shader/MRTK_TextureCombiner.jpg)
 
-Questa finestra può essere compilata automaticamente selezionando uno shader Unity Standard e facendo clic su "Autopopulate from Standard Material" (Popolamento automatico da materiale standard). In caso contrario, è possibile specificare manualmente una trama (o un valore costante) per ogni canale rosso, verde, blu o alfa. La combinazione di trame è accelerata dalla GPU e non richiede che la trama di input sia accessibile dalla CPU.
+Questa finestra può essere compilata automaticamente selezionando uno shader Unity Standard e facendo clic su "Popola automaticamente da materiale standard". In caso contrario, è possibile specificare manualmente una trama (o un valore costante) per ogni canale rosso, verde, blu o alfa. La combinazione di trame è accelerata dalla GPU e non richiede che la trama di input sia accessibile alla CPU.
 
 ## <a name="additional-feature-documentation"></a>Documentazione aggiuntiva delle funzionalità
 
-Di seguito sono riportati dettagli aggiuntivi su alcuni dettagli delle funzionalità disponibili con lo shader MRTK/Standard.
+Di seguito sono riportati dettagli aggiuntivi su una serie di dettagli delle funzionalità disponibili con lo shader MRTK/Standard.
 
 ### <a name="primitive-clipping"></a>Ritaglio primitivo
 
@@ -149,48 +149,48 @@ Di seguito sono riportati dettagli aggiuntivi su alcuni dettagli delle funzional
 
 ### <a name="mesh-outlines"></a>Strutture mesh
 
-Molte tecniche di struttura mesh vengono eseguite usando una tecnica [di post-elaborazione.](https://docs.unity3d.com/Manual/PostProcessingOverview.html) La post-elaborazione offre strutture di qualità elevata, ma può essere estremamente costosa in molti dispositivi di realtà mista. È possibile trovare una scena che illustra l'uso dei contorni mesh nella  **scena OutlineExamples in** `MRTK/Examples/Demos/StandardShader/Scenes/` .
+Molte tecniche di struttura della mesh vengono eseguite usando una tecnica [di post-elaborazione.](https://docs.unity3d.com/Manual/PostProcessingOverview.html) La post-elaborazione offre un'ottima qualità, ma può essere proibitivamente costosa in molti dispositivi di realtà mista. È possibile trovare una scena che illustra l'uso delle strutture mesh nella  **scena OutlineExamples in** `MRTK/Examples/Demos/StandardShader/Scenes/` .
 
 <img src="../images/mrtk-standard-shader/MRTK_MeshOutline.jpg" width="900" alt="Mesh Outline">
 
-[`MeshOutline.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshOutline) e [`MeshOutlineHierarchy.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshOutlineHierarchy) possono essere usati per eseguire il rendering di un contorno intorno a un renderer mesh. L'abilitazione di questo componente introduce un passaggio di rendering aggiuntivo dell'oggetto da delineare, ma è progettato per essere eseguito in modo performante nei dispositivi mobili di realtà mista e non usa alcun post-processo. Le limitazioni di questo effetto includono che non funziona correttamente sugli oggetti che non sono stagnati (o devono essere affiancati) e possono verificarsi problemi di ordinamento della profondità su oggetti sovrapposti.
+[`MeshOutline.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshOutline) e [`MeshOutlineHierarchy.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshOutlineHierarchy) possono essere usati per eseguire il rendering di un contorno intorno a un renderer mesh. L'abilitazione di questo componente introduce un passaggio di rendering aggiuntivo dell'oggetto da delineare, ma è progettato per essere eseguito in modo performante nei dispositivi mobili di realtà mista e non usa alcun processo post. Le limitazioni di questo effetto includono che non funziona correttamente sugli oggetti che non sono a tenuta stagna (o devono essere a due lati) e possono verificarsi problemi di ordinamento della profondità su oggetti sovrapposti.
 
-I comportamenti del contorno sono progettati per essere usati in combinazione con lo shader MRTK/Standard. I materiali del contorno sono in genere un colore non chiaro a tinta unita, ma possono essere configurati per ottenere un'ampia gamma di effetti. La configurazione predefinita di un materiale della struttura è la seguente:
+I comportamenti della struttura sono progettati per essere usati in combinazione con lo shader MRTK/Standard. I materiali di contorno sono in genere un colore non illuminato a tinta unita, ma possono essere configurati per ottenere un'ampia gamma di effetti. La configurazione predefinita di un materiale di struttura è la seguente:
 
 <img src="../images/mrtk-standard-shader/MRTK_OutlineMaterial.jpg" width="450" alt="Mesh Outline Material">
 
-1. Scrittura profondità: deve essere disabilitata per i materiali del contorno per assicurarsi che la struttura non impedirà il rendering di altri oggetti.
-2. Estrusione vertice: deve essere abilitata per il rendering del contorno.
-3. Usa normali uniformi: questa impostazione è facoltativa per alcune mesh. L'estrusione si verifica spostando un vertice lungo una normale vertice. In alcune mesh estruso lungo le normali predefinite si verificano discontinuità nel contorno. Per correggere queste discontinuità, è possibile selezionare questa casella per usare un altro set di normali smussate generate da [`MeshSmoother.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshSmoother)
+1. Scrittura profondità: deve essere disabilitata per i materiali di struttura per assicurarsi che la struttura non impedirà il rendering di altri oggetti.
+2. Estrusione vertice: deve essere abilitata per il rendering della struttura.
+3. Usa normali smussati: questa impostazione è facoltativa per alcune mesh. L'estrusione si verifica spostando un vertice lungo una normale vertice, in alcune mesh estruso lungo le normali predefinite causeranno discontinuità nella struttura. Per correggere queste discontinuità, è possibile selezionare questa casella per usare un altro set di normali smussate generate da [`MeshSmoother.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshSmoother)
 
-[`MeshSmoother.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshSmoother) è un componente che può essere usato per generare automaticamente normali smussate su una mesh. Questo metodo raggruppa i vertici in una mesh che condividono la stessa posizione nello spazio, quindi esegue la media delle normali di tali vertici. Questo processo crea una copia della mesh sottostante e deve essere usato solo quando necessario.
+[`MeshSmoother.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshSmoother) è un componente che può essere usato per generare automaticamente normali smussate su una mesh. Questo metodo raggruppa i vertici in una mesh che condividono la stessa posizione nello spazio e quindi esegue la media delle normali di tali vertici. Questo processo crea una copia della mesh sottostante e deve essere usato solo quando necessario.
 
 <img src="../images/mrtk-standard-shader/MRTK_SmoothNormals.jpg" width="450" alt="Smooth Normals Outline">
 
-1. Normali uniformi generate tramite [`MeshSmoother.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshSmoother) .
-2. Vengono usate le normali predefinite. Si notino gli artefatti intorno agli angoli del cubo.
+1. Normali smussato generate tramite [`MeshSmoother.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshSmoother) .
+2. Le normali predefinite usate, si notino gli artefatti intorno agli angoli del cubo.
 
 ### <a name="stencil-testing"></a>Test degli stencil
 
-Supporto di test degli stencil configurabile incorporato per ottenere un'ampia gamma di effetti. Ad esempio i portali:
+Supporto di test di stencil configurabile per ottenere un'ampia gamma di effetti. Ad esempio i portali:
 
-![test stencil](../images/mrtk-standard-shader/MRTK_StencilTest.gif)
+![test di stencil](../images/mrtk-standard-shader/MRTK_StencilTest.gif)
 
-### <a name="instanced-color-support"></a>Supporto dei colori con istanze
+### <a name="instanced-color-support"></a>Supporto dei colori in istanze
 
-Supporto dei colori con istanze per offrire migliaia di mesh con istanze GPU proprietà del materiale univoche:
+Supporto dei colori in istanze per fornire migliaia di mesh con istanze GPU proprietà del materiale univoche:
 
 ![proprietà con istanze](../images/mrtk-standard-shader/MRTK_InstancedProperties.gif)
 
 ### <a name="triplanar-mapping"></a>Mapping triplanar
 
-Il mapping triplanar è una tecnica per la trama di una mesh a livello di codice. Spesso usato in terreno, mesh senza UV o difficile da annullare il wrapping delle forme. Questa implementazione supporta la proiezione di tutto il mondo o dello spazio locale, la specifica di smussamento della fusione e il normale supporto della mappa. Si noti che ogni trama usata richiede 3 campioni di trama, quindi usare solo in situazioni critiche per le prestazioni.
+Il mapping triplanar è una tecnica per la trama di una mesh a livello di codice. Spesso usato in terreno, mesh senza UV o difficile da annullare il wrapping delle forme. Questa implementazione supporta la proiezione dello spazio mondiale o locale, la specifica della smussamento della fusione e il normale supporto della mappa. Si noti che ogni trama usata richiede 3 campioni di trama, quindi usare con parsimonio in situazioni critiche per le prestazioni.
 
 ![triplanar](../images/mrtk-standard-shader/MRTK_TriplanarMapping.gif)
 
-### <a name="vertex-extrusion"></a>Estrusione vertice
+### <a name="vertex-extrusion"></a>Estrusione dei vertici
 
-Estrusione vertice nello spazio mondiale. Utile per la visualizzazione di volumi di delimitazione estruso o transizioni di mesh in/out.
+Estrusione dei vertici nello spazio mondiale. Utile per visualizzare i volumi di delimitazione estruso o le transizioni di mesh in/out.
 
 ![scala mappa normale 1](../images/mrtk-standard-shader/MRTK_VertexExtrusion.gif)
 
@@ -198,17 +198,17 @@ Estrusione vertice nello spazio mondiale. Utile per la visualizzazione di volumi
 
 Casella di controllo per controllare le ottimizzazioni di albedo. Poiché le operazioni albedo di ottimizzazione vengono disabilitate quando non viene specificata alcuna trama albedo. Ciò è utile per controllare il [caricamento remoto delle trame.](http://dotnetbyexample.blogspot.com/2018/10/workaround-remote-texture-loading-does.html)
 
-Selezionare semplicemente questa casella:
+È sufficiente selezionare questa casella:
 
 ![assegnazione albedo](../images/mrtk-standard-shader/MRTK_AlbedoAssignment.jpg)
 
-Sono supportate le trame di ritaglio per pixel, l'anti-aliasing basato sul bordo locale e il ridimensionamento normale della mappa.
+Sono supportate trame di ritaglio per pixel, anti aliasing basato sul bordo locale e scalabilità normale della mappa.
 
 ![scala mappa normale 2](../images/mrtk-standard-shader/MRTK_NormalMapScale.gif)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-* [Con interazione](../ux-building-blocks/interactable.md)
-* [Luce al passaggio del mouse](hover-light.md)
+* [Interagibile](../ux-building-blocks/interactable.md)
+* [Luce del passaggio del mouse](hover-light.md)
 * [Luce di prossimità](proximity-light.md)
 * [Primitiva di ritaglio](clipping-primitive.md)

@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realtà mista, sviluppare, sviluppo, HoloLens, unity, unreal, directx, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, sviluppo di realtà virtuale, sviluppo di realtà aumentata
-ms.openlocfilehash: b47970de15451ea3bd0c121edd7dc61438fa115c
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: 2020ceb898f6badaec56a599348c8633c4cb90ba22eaf53df0e097d4fc3e110e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394325"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115195958"
 ---
 # <a name="introduction-to-mixed-reality-development"></a>Introduzione allo sviluppo di app di Realtà mista
 
@@ -22,7 +22,7 @@ Realtà mista è un vasto spazio, un nesso in cui il mondo reale e quello virtua
 
 Sono disponibili tre possibili percorsi per iniziare lo sviluppo in realtà mista, ognuno dei quali è descritto nella sezione seguente:
 * [Microsoft Learn](#microsoft-learn)
-* [Serie di esercitazioni su Mixed Reality Toolkit](#mixed-reality-toolkit-tutorials)
+* [Serie di esercitazioni Toolkit realtà mista](#mixed-reality-toolkit-tutorials)
 * [Esplorazione self-guided](#self-guided-exploration)
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
@@ -34,7 +34,7 @@ I moduli di Learn consentono di diventare sviluppatori esperti di soluzioni di r
 > [!div class="nextstepaction"]
 > [Introduzione alla realtà mista in Microsoft Learn](/learn/modules/intro-to-mixed-reality)
 
-## <a name="mixed-reality-toolkit-tutorials"></a>Esercitazioni su Mixed Reality Toolkit
+## <a name="mixed-reality-toolkit-tutorials"></a>Esercitazioni sulla Toolkit realtà mista
 
 Se sei più un utente che apprende, consulta la serie di esercitazioni su Mixed Reality Toolkit (MRTK). Verrà compilata un'esperienza di realtà mista in cui l'utente può esplorare un ologramma modellato sulla base di Mars Più Rover della NASA e ottenere una solida comprensione di MRTK e di come può velocizzare il processo di sviluppo.
 

@@ -1,30 +1,30 @@
 ---
 title: Puntamento con la testa e sguardo fisso in DirectX
-description: Informazioni su come richiedere, usare e decomprimere i dati di Raycasting da sguardi e rilevamento degli occhi nelle app DirectX native.
+description: Informazioni su come richiedere, usare e decomprimere i dati di raycasting dallo sguardo fisso con la testa e dal tracciamento oculare nelle app DirectX native.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
-keywords: occhi, sguardi, Head-sguardi, tracking, tracking, Eye Tracking, DirectX, input, ologrammi, cuffie per realtà mista, cuffie per la realtà mista di Windows, cuffie per realtà virtuale
-ms.openlocfilehash: 8b3c63ac7a7edba0ce3173e024139e29d49757ab
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+keywords: sguardo fisso, sguardo con la testa, tracciamento della testa, tracciamento oculare, directx, input, ologrammi, visore VR di realtà mista, visore VR windows di realtà mista, visore VR di realtà virtuale
+ms.openlocfilehash: 0e32c9f24b56d938b5c6f9cbdf28e9959b190abc22591a26d1dfcfa0af2f5f4d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810171"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193208"
 ---
-# <a name="head-gaze-and-eye-gaze-input-in-directx"></a>Input occhi e sguardi in DirectX
+# <a name="head-gaze-and-eye-gaze-input-in-directx"></a>Input con sguardo fisso e sguardo fisso in DirectX
 
 > [!NOTE]
-> Questo articolo si riferisce alle API native di WinRT legacy.  Per i nuovi progetti di app native, è consigliabile usare l' **[API OpenXR](openxr-getting-started.md)**.
+> Questo articolo è correlato alle API native WinRT legacy.  Per i nuovi progetti di app native, è consigliabile usare **[l'API OpenXR](openxr-getting-started.md)**.
 
-Per quanto riguarda la realtà mista di Windows, viene usato l'input occhi e occhio per determinare l'aspetto dell'utente. È possibile usare i dati per guidare i modelli di input primari come [Head-sguardi e commit](../../design/gaze-and-commit.md)e fornire il contesto per diversi tipi di interazione. Esistono due tipi di vettori di sguardi disponibili tramite l'API, ovvero Head-sguardi e sguardo.  Entrambi sono forniti come un raggio tridimensionale con un'origine e una direzione. Le applicazioni possono quindi Raycast nelle proprie scene, o nel mondo reale, e determinare le operazioni di destinazione dell'utente.
+In Windows Mixed Reality l'input dello sguardo fisso e della testa viene usato per determinare ciò che l'utente sta guardando. È possibile usare i dati per guidare i modelli di input principali, ad esempio il sguardo con la testa e [il commit,](../../design/gaze-and-commit.md)e fornire il contesto per tipi di interazione diversi. Esistono due tipi di vettori di sguardo fisso disponibili tramite l'API: sguardo con la testa e sguardo fisso.  Entrambi vengono forniti come raggio tridimensionale con un'origine e una direzione. Le applicazioni possono quindi eseguire il raycast nelle scene o nel mondo reale e determinare la destinazione dell'utente.
 
-**Head-sguardi** rappresenta la direzione a cui è puntata la testa dell'utente. Si pensi a un punto di fronte come la posizione e la direzione di avanzamento del dispositivo stesso, con la posizione come punto centrale tra le due visualizzazioni. Head-sguardi è disponibile in tutti i dispositivi a realtà mista.
+**Il puntato con** la testa rappresenta la direzione in cui punta la testa dell'utente. Si pensi al puntamento con la testa come alla posizione e alla direzione in avanti del dispositivo stesso, con la posizione come punto centrale tra i due schermi. Il sguardo con la testa è disponibile in tutti i dispositivi di realtà mista.
 
-**Eye-sguardi** rappresenta la direzione verso la quale gli occhi dell'utente stanno cercando. L'origine si trova tra gli occhi dell'utente.  È disponibile nei dispositivi a realtà mista che includono un sistema di rilevamento degli occhi.
+**Lo sguardo fisso** rappresenta la direzione verso cui gli occhi dell'utente guardano. L'origine si trova tra gli occhi dell'utente.  È disponibile nei dispositivi di realtà mista che includono un sistema di tracciamento oculare.
 
-I raggi Head e sguardi sono accessibili tramite l'API  [SpatialPointerPose](/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) . Chiamare [SpatialPointerPose:: TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) per ricevere un nuovo oggetto SpatialPointerPose in corrispondenza del timestamp e del [sistema di coordinate](coordinate-systems-in-directx.md)specificati. Questo SpatialPointerPose contiene un'origine e una direzione per lo sguardo del capo. Contiene anche un'origine e una direzione degli sguardi se è disponibile la verifica degli occhi.
+I raggi della testa e dello sguardo fisso sono accessibili tramite l'API [SpatialPointerPose.](/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) Chiamare [SpatialPointerPose::TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) per ricevere un nuovo oggetto SpatialPointerPose in corrispondenza del timestamp e del sistema [di coordinate specificati.](coordinate-systems-in-directx.md) Questo SpatialPointerPose contiene un'origine e una direzione di sguardo con la testa. Contiene anche un'origine e una direzione dello sguardo fisso se è disponibile il tracciamento oculare.
 
 ### <a name="device-support"></a>Supporto di dispositivi
 
@@ -48,20 +48,20 @@ I raggi Head e sguardi sono accessibili tramite l'API  [SpatialPointerPose](/uwp
      <td>✔️</td>
 </tr>
 <tr>
-     <td>Sguardo attento</td>
+     <td>Sguardo fisso</td>
      <td>❌</td>
      <td>✔️</td>
      <td>❌</td>
 </tr>
 </table>
 
-## <a name="using-head-gaze"></a>Uso di Head-sguardi
+## <a name="using-head-gaze"></a>Uso dello sguardo fisso con la testa
 
-Per accedere all'Head-sguardi, iniziare chiamando  [SpatialPointerPose:: TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) per ricevere un nuovo oggetto SpatialPointerPose. Passare i parametri seguenti.
- - Oggetto [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) che rappresenta il sistema di coordinate desiderato per lo sguardo inverso. Questa operazione è rappresentata dalla variabile *coordinateSystem* nel codice riportato di seguito. Per ulteriori informazioni, visitare la guida per gli sviluppatori di [sistemi di coordinate](coordinate-systems-in-directx.md) .
- - [Timestamp](/uwp/api/windows.graphics.holographic.holographicframeprediction.timestamp#Windows_Graphics_Holographic_HolographicFramePrediction_Timestamp) che rappresenta l'ora esatta della richiesta Head.  In genere, verrà utilizzato un timestamp corrispondente all'ora di visualizzazione del frame corrente. È possibile ottenere questo timestamp di visualizzazione stimato da un oggetto  [HolographicFramePrediction](/uwp/api/Windows.Graphics.Holographic.HolographicFramePrediction) , accessibile tramite il [HolographicFrame](/uwp/api/windows.graphics.holographic.holographicframe)corrente.  Questo oggetto HolographicFramePrediction è rappresentato dalla variabile di *stima* nel codice riportato di seguito.
+Per accedere al sguardo fisso, iniziare chiamando  [SpatialPointerPose::TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) per ricevere un nuovo oggetto SpatialPointerPose. Passare i parametri seguenti.
+ - [SpatialCoordinateSystem che](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) rappresenta il sistema di coordinate desiderato per lo sguardo con la testa. È rappresentato dalla variabile *coordinateSystem* nel codice seguente. Per altre informazioni, vedere la guida per gli [sviluppatori dei sistemi](coordinate-systems-in-directx.md) di coordinate.
+ - Timestamp [che](/uwp/api/windows.graphics.holographic.holographicframeprediction.timestamp#Windows_Graphics_Holographic_HolographicFramePrediction_Timestamp) rappresenta l'ora esatta della posizione della testa richiesta.  In genere, si usa un timestamp che corrisponde all'ora in cui verrà visualizzato il frame corrente. È possibile ottenere questo timestamp di visualizzazione previsto da un [oggetto HolographicFramePrediction,](/uwp/api/Windows.Graphics.Holographic.HolographicFramePrediction) accessibile tramite l'oggetto [HolographicFrame corrente.](/uwp/api/windows.graphics.holographic.holographicframe)  Questo oggetto HolographicFramePrediction è rappresentato dalla variabile *di* stima nel codice seguente.
 
- Quando si dispone di un SpatialPointerPose valido, la posizione della testa e la direzione di avanzamento sono accessibili come proprietà.  Nel codice seguente viene illustrato come accedervi.
+ Dopo aver creato un spatialPointerPose valido, la posizione della testa e la direzione in avanti sono accessibili come proprietà.  Il codice seguente illustra come accedervi.
 
  ```cpp
 using namespace winrt::Windows::UI::Input::Spatial;
@@ -77,16 +77,16 @@ if (pointerPose)
 }
 ```
 
-## <a name="using-eye-gaze"></a>Uso degli sguardi
+## <a name="using-eye-gaze"></a>Uso dello sguardo fisso
 
-Per consentire agli utenti di usare l'input con sguardo oculare, ogni utente deve esaminare la [calibrazione degli utenti](/hololens/hololens-calibration) per la prima volta che usano il dispositivo. L'API Eye-sguardi è simile a Head-sguardi.
-Usa la stessa API [SpatialPointerPose](/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) , che fornisce un'origine e una direzione del raggio che è possibile Raycast per la scena.  L'unica differenza è che è necessario abilitare in modo esplicito la verifica degli occhi prima di usarla:
-1. Richiedere all'utente l'autorizzazione per usare il rilevamento degli occhi nell'app.
-2. Abilitare la funzionalità di "input dello sguardo" nel manifesto del pacchetto.
+Per consentire agli utenti di usare l'input dello [](/hololens/hololens-calibration) sguardo fisso, ogni utente deve eseguire una calibrazione dell'utente di tracciamento oculare la prima volta che usa il dispositivo. L'API sguardo fisso è simile al sguardo fisso con la testa.
+Usa la stessa API [SpatialPointerPose,](/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) che fornisce un'origine e una direzione del raggio che è possibile eseguire il raycast sulla scena.  L'unica differenza è che è necessario abilitare in modo esplicito il tracciamento oculare prima di usarlo:
+1. Richiedere all'utente l'autorizzazione per usare il tracciamento oculare nell'app.
+2. Abilitare la funzionalità "Input sguardo fisso" nel manifesto del pacchetto.
 
-### <a name="requesting-access-to-eye-gaze-input"></a>Richiesta di accesso a Eye-sguardi input
+### <a name="requesting-access-to-eye-gaze-input"></a>Richiesta di accesso all'input dello sguardo fisso
 
-All'avvio dell'app, chiamare [EyesPose:: RequestAccessAsync](/uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) per richiedere l'accesso al rilevamento degli occhi. Se necessario, il sistema richiede all'utente e restituisce [GazeInputAccessStatus:: allowed](/uwp/api/windows.ui.input.gazeinputaccessstatus) dopo che è stato concesso l'accesso. Si tratta di una chiamata asincrona, quindi richiede un po' di gestione aggiuntiva. Nell'esempio seguente viene avviata un'operazione std:: thread scollegata per attendere il risultato, che viene archiviato in una variabile membro denominata *m_isEyeTrackingEnabled*.
+Quando l'app si avvia, chiama [EyePose::RequestAccessAsync](/uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) per richiedere l'accesso al tracciamento oculare. Il sistema chiederà all'utente se necessario e restituirà [GazeInputAccessStatus::Allowed](/uwp/api/windows.ui.input.gazeinputaccessstatus) dopo che l'accesso è stato concesso. Si tratta di una chiamata asincrona, quindi richiede un po' di gestione aggiuntiva. Nell'esempio seguente viene creato un std::thread scollegato per attendere il risultato, archiviato in una variabile membro *denominata m_isEyeTrackingEnabled*.
 
 ```cpp
 using namespace winrt::Windows::Perception::People;
@@ -105,10 +105,10 @@ std::thread requestAccessThread([this]()
 requestAccessThread.detach();
 
 ```
-L'avvio di un thread scollegato è solo un'opzione per la gestione delle chiamate asincrone. È anche possibile usare la nuova funzionalità di [co_await](/windows/uwp/cpp-and-winrt-apis/concurrency) supportata da C++/WinRT.
-Ecco un altro esempio per richiedere l'autorizzazione utente:
--   EyesPose:: supporto () consente all'applicazione di attivare la finestra di dialogo di autorizzazione solo se è presente uno strumento di rilevamento.
--   GazeInputAccessStatus m_gazeInputAccessStatus; In questo modo si evita di riscattare il prompt delle autorizzazioni più volte.
+L'avvio di un thread disconnesso è solo un'opzione per la gestione delle chiamate asincrone. Puoi anche usare la [nuova](/windows/uwp/cpp-and-winrt-apis/concurrency) co_await funzionalità supportata da C++/WinRT.
+Ecco un altro esempio di richiesta dell'autorizzazione utente:
+-   EyePose::IsSupported() consente all'applicazione di attivare la finestra di dialogo di autorizzazione solo se è presente un tracciatore oculare.
+-   GazeInputAccessStatus m_gazeInputAccessStatus; In questo modo si evita di visualizzare più volte la richiesta di autorizzazione.
 
 ```cpp
 GazeInputAccessStatus m_gazeInputAccessStatus; // This is to prevent popping up the permission prompt over and over again.
@@ -134,25 +134,25 @@ if (Windows::Perception::People::EyesPose::IsSupported() &&
 
 ```
 
-### <a name="declaring-the-gaze-input-capability"></a>Dichiarazione della funzionalità di *input di sguardi*
+### <a name="declaring-the-gaze-input-capability"></a>Dichiarazione della funzionalità *Di input sguardo* fisso
 
-Fare doppio clic sul file appxmanifest in *Esplora soluzioni*.  Passare quindi alla sezione *funzionalità* e controllare la funzionalità di *input di sguardi* . 
+Fare doppio clic sul file appxmanifest in *Esplora soluzioni*.  Passare quindi alla sezione *Capabilities (Funzionalità)* e controllare la *funzionalità Gaze Input (Input* sguardo fisso). 
 
-![Funzionalità di input di sguardi](images/gaze-input-capability.png)
+![Funzionalità di input sguardo fisso](images/gaze-input-capability.png)
 
-Vengono aggiunte le righe seguenti alla sezione del *pacchetto* nel file appxmanifest:
+Le righe seguenti vengono aggiunte *alla sezione Package* del file appxmanifest:
 ```xml
   <Capabilities>
     <DeviceCapability Name="gazeInput" />
   </Capabilities>
 ```
 
-### <a name="getting-the-eye-gaze-ray"></a>Ottenere il raggio d'occhio
+### <a name="getting-the-eye-gaze-ray"></a>Ottenere il raggio dello sguardo fisso
 
-Dopo aver ricevuto l'accesso a ET, è possibile cogliere il raggio d'occhio per ogni fotogramma.
-Come per l'Head-sguardi, ottenere il [SpatialPointerPose](/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) chiamando [SpatialPointerPose:: TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) con un timestamp e un sistema di coordinate desiderati. SpatialPointerPose contiene un oggetto [EyesPose](/uwp/api/windows.perception.people.eyespose) tramite la proprietà [Eyes](/uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes) . Questo valore non è null solo se è abilitata la funzionalità Eye Tracking. Da qui è possibile verificare se l'utente nel dispositivo ha una calibrazione per il rilevamento degli occhi chiamando [EyesPose:: IsCalibrationValid](/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid).  Usare quindi la proprietà [sguardi](/uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) per ottenere [SpatialRay](/uwp/api/windows.perception.spatial.spatialray) che contiene la posizione e la direzione degli sguardi. La proprietà sguardi può talvolta essere null, quindi assicurarsi di controllarla. Questo problema può verificarsi se un utente calibrato chiude temporaneamente gli occhi.
+Dopo aver ricevuto l'accesso a ET, è possibile afferrare il raggio dello sguardo fisso per ogni fotogramma.
+Come con lo sguardo fisso con la testa, ottenere [SpatialPointerPose](/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) chiamando [SpatialPointerPose::TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) con un timestamp e un sistema di coordinate desiderati. SpatialPointerPose contiene un [oggetto EyesPose](/uwp/api/windows.perception.people.eyespose) tramite la [proprietà Eyes.](/uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes) Non è Null solo se è abilitato il tracciamento oculare. Da qui è possibile controllare se l'utente nel dispositivo ha una calibrazione del tracciamento oculare chiamando [EyePose::IsCalibrationValid.](/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid)  Usare quindi la proprietà [Gaze](/uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) per ottenere [spatialRay](/uwp/api/windows.perception.spatial.spatialray) contenente la posizione e la direzione dello sguardo fisso. A volte la proprietà Sguardo fisso può essere null, quindi assicurarsi di verificare la presenza di questo valore. Ciò può verificarsi se un utente calibrato chiude temporaneamente gli occhi.
 
-Il codice seguente illustra come accedere al raggio d'occhio.
+Il codice seguente illustra come accedere al raggio dello sguardo fisso.
 
 ```cpp
 using namespace winrt::Windows::UI::Input::Spatial;
@@ -176,44 +176,44 @@ if (pointerPose)
 
 ```
 
-## <a name="fallback-when-eye-tracking-isnt-available"></a>Fallback quando il rilevamento degli occhi non è disponibile
+## <a name="fallback-when-eye-tracking-isnt-available"></a>Fallback quando il tracciamento oculare non è disponibile
 
-Come indicato nella documentazione di progettazione per il [monitoraggio degli occhi](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-isnt-available), sia le finestre di progettazione che gli sviluppatori devono tenere presenti le istanze in cui i dati di rilevamento degli occhi potrebbero non essere disponibili.
+Come accennato nella [documentazione sulla](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-isnt-available)progettazione del tracciamento oculare, sia i progettisti che gli sviluppatori devono essere a conoscenza delle istanze in cui i dati di tracciamento oculare potrebbero non essere disponibili.
 
-I dati non sono disponibili per diversi motivi:
-* Un utente che non è stato calibrato
-* Un utente ha negato l'accesso dell'app ai dati di rilevamento degli occhi
-* Interferenze temporanee, ad esempio le sbavature sulla visiera HoloLens o sui capelli occlusione gli occhi dell'utente. 
+Esistono diversi motivi per cui i dati non sono disponibili:
+* Un utente non calibrato
+* Un utente ha negato all'app l'accesso ai dati di tracciamento oculare
+* Interferenze temporanee, ad esempio sbavature HoloLens visore o capello che oscludono gli occhi dell'utente. 
 
-Sebbene alcune API siano già state citate in questo documento, di seguito viene fornito un riepilogo su come rilevare che il rilevamento degli occhi è disponibile come riferimento rapido: 
+Anche se alcune DELLE API sono già state citate in questo documento, di seguito viene fornito un riepilogo di come rilevare che il tracciamento oculare è disponibile come riferimento rapido: 
 
-* Verificare che il sistema supporti la verifica degli occhi. Chiamare il *Metodo* seguente: [Windows. Perception. people. EyesPose. IsValid ()](/uwp/api/windows.perception.people.eyespose.issupported#Windows_Perception_People_EyesPose_IsSupported)
+* Verificare che il sistema supporti il tracciamento oculare. Chiamare il metodo *seguente:* [Windows. Perception.People.EyesPose.IsSupported()](/uwp/api/windows.perception.people.eyespose.issupported#Windows_Perception_People_EyesPose_IsSupported)
 
-* Verificare che l'utente sia calibrato. Chiamare la *Proprietà* seguente: [Windows. Perception. people. EyesPose. IsCalibrationValid](/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid)   
+* Verificare che l'utente sia calibrato. Chiamare la proprietà *seguente:* [Windows. Perception.People.EyesPose.IsCalibrationValid](/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid)   
 
-* Verificare che l'utente abbia specificato l'autorizzazione dell'app per usare i dati di rilevamento degli occhi: recuperare il _' GazeInputAccessStatus '_ corrente. Un esempio di come eseguire questa operazione è illustrato nella pagina relativa alla [richiesta di accesso a sguardi input](/windows/mixed-reality/gaze-in-directX#requesting-access-to-gaze-input). 
+* Verificare che l'utente abbia assegnato all'app l'autorizzazione per usare i dati di tracciamento oculare: recuperare l'oggetto _'GazeInputAccessStatus' corrente._ Un esempio su come eseguire questa operazione è illustrato in Richiedere [l'accesso all'input dello sguardo fisso.](/windows/mixed-reality/gaze-in-directX#requesting-access-to-gaze-input) 
 
-È anche possibile verificare che i dati di rilevamento degli occhi non siano obsoleti aggiungendo un timeout tra gli aggiornamenti dei dati di rilevamento degli occhi ricevuti e altrimenti il fallback a Head-sguardi, come descritto di seguito.   
-Per ulteriori informazioni, vedere le [considerazioni sulla progettazione di fallback](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-isnt-available) .
+È anche possibile verificare che i dati di tracciamento oculare non sono obsoleti aggiungendo un timeout tra gli aggiornamenti dei dati di tracciamento oculare ricevuti e in caso contrario il fallback al sguardo con la testa, come illustrato di seguito.   
+Per altre informazioni, vedere le considerazioni sulla progettazione del [fallback.](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-isnt-available)
 
 <br>
 
-## <a name="correlating-gaze-with-other-inputs"></a>Correlazione di sguardi con altri input
+## <a name="correlating-gaze-with-other-inputs"></a>Correlazione dello sguardo fisso con altri input
 
-In alcuni casi potrebbe essere necessario un [SpatialPointerPose](/uwp/api/windows.ui.input.spatial.spatialpointerpose) che corrisponda a un evento nel passato. Ad esempio, se l'utente esegue una scelta aerea, l'app potrebbe voler sapere cosa stavano cercando. A questo scopo, l'uso di [SpatialPointerPose:: TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) con il tempo previsto per i frame potrebbe non essere accurato a causa della latenza tra l'elaborazione dell'input di sistema e l'ora di visualizzazione. Inoltre, se si usa il controllo degli sguardi per la destinazione, gli occhi tendono a proseguire anche prima di terminare un'azione di commit. Si tratta di un problema minore per un semplice tocco, ma diventa più importante quando si combinano i comandi Long Voice con rapidi movimenti oculari. Un modo per gestire questo scenario è eseguire un'ulteriore chiamata a  [SpatialPointerPose:: TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp), usando un timestamp cronologico corrispondente all'evento di input.  
+In alcuni casi può essere necessario un [spatialPointerPose](/uwp/api/windows.ui.input.spatial.spatialpointerpose) che corrisponde a un evento nel passato. Ad esempio, se l'utente esegue un'operazione Air Tap, l'app potrebbe voler sapere cosa stava guardando. A questo scopo, il semplice uso di [SpatialPointerPose::TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) con il tempo di frame previsto non sarebbe accurato a causa della latenza tra l'elaborazione dell'input di sistema e l'ora di visualizzazione. Inoltre, se si usa lo sguardo fisso per la destinazione, gli occhi tendono a procedere anche prima di completare un'azione di commit. Questo è meno un problema per un semplice tocco d'aria, ma diventa più importante quando si combinano comandi vocali lunghi con movimenti oculari rapidi. Un modo per gestire questo scenario consiste nell'effettuare una chiamata aggiuntiva a  [SpatialPointerPose::TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp)usando un timestamp cronologico corrispondente all'evento di input.  
 
-Tuttavia, per l'input che viene indirizzato attraverso SpatialInteractionManager, è disponibile un metodo più semplice. [SpatialInteractionSourceState](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) dispone di una propria funzione [TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose) . Chiamando che fornirà un [SpatialPointerPose](/uwp/api/windows.ui.input.spatial.spatialpointerpose) perfettamente correlato senza le congetture. Per altre informazioni sull'uso di SpatialInteractionSourceStates, vedere la documentazione su [hands and Motion Controllers in DirectX](hands-and-motion-controllers-in-directx.md) .
+Tuttavia, per l'input che viene instradato tramite SpatialInteractionManager, esiste un metodo più semplice. [SpatialInteractionSourceState](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) ha la propria [funzione TryGetAtTimestamp.](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose) Chiamata di che fornirà un [spatialPointerPose](/uwp/api/windows.ui.input.spatial.spatialpointerpose) perfettamente correlato senza indovinare. Per altre informazioni sull'uso di SpatialInteractionSourceStates, vedere mani e controller del movimento [nella documentazione di DirectX.](hands-and-motion-controllers-in-directx.md)
 
 <br>
 
 ## <a name="calibration"></a>Calibrazione
 
-Per il corretto funzionamento dell'analisi degli occhi, è necessario che ogni utente debba esaminare la [calibrazione degli utenti](/hololens/hololens-calibration). In questo modo, il dispositivo può modificare il sistema per un'esperienza di visualizzazione più comoda e di qualità superiore per l'utente e garantire il rilevamento accurato degli occhi allo stesso tempo. Gli sviluppatori non devono eseguire alcuna operazione al termine della gestione della calibrazione degli utenti. Il sistema garantisce che all'utente venga richiesto di calibrare il dispositivo nei casi seguenti:
-* L'utente sta usando il dispositivo per la prima volta
-* L'utente ha rifiutato in precedenza il processo di calibrazione
-* Il processo di calibrazione non ha avuto esito positivo l'ultima volta in cui l'utente ha usato il dispositivo
+Per un corretto funzionamento del tracciamento oculare, ogni utente deve eseguire una calibrazione [dell'utente di tracciamento oculare.](/hololens/hololens-calibration) In questo modo il dispositivo può regolare il sistema per un'esperienza di visualizzazione più comoda e di qualità superiore per l'utente e per garantire contemporaneamente un tracciamento oculare accurato. Gli sviluppatori non devono eseguire alcun'operazione per gestire la calibrazione dell'utente. Il sistema garantisce che all'utente venga richiesto di calibrare il dispositivo nelle circostanze seguenti:
+* L'utente usa il dispositivo per la prima volta
+* L'utente ha precedentemente rifiutato esplicitamente il processo di calibrazione
+* Il processo di calibrazione non è riuscito l'ultima volta che l'utente ha usato il dispositivo
 
-Gli sviluppatori devono garantire un supporto adeguato per gli utenti in cui i dati di rilevamento degli occhi potrebbero non essere disponibili. Per altre informazioni sulle soluzioni di fallback, vedere [Eye tracking on HoloLens 2](../../design/eye-tracking.md).
+Gli sviluppatori devono assicurarsi di fornire un supporto adeguato agli utenti in cui i dati di tracciamento oculare potrebbero non essere disponibili. Per altre informazioni sulle considerazioni per le soluzioni di fallback, vedere [Tracciamento oculare HoloLens 2](../../design/eye-tracking.md).
 
 <br>
 
@@ -221,7 +221,7 @@ Gli sviluppatori devono garantire un supporto adeguato per gli utenti in cui i d
 
 * [Calibrazione](/hololens/hololens-calibration)
 * [Sistemi di coordinate in DirectX](coordinate-systems-in-directx.md)
-* [Eye-sguardi su HoloLens 2](../../design/eye-tracking.md)
-* [Modello di input sguardo e commit](../../design/gaze-and-commit.md)
+* [Sguardo fisso su HoloLens 2](../../design/eye-tracking.md)
+* [Modello di input sguardo fisso e commit](../../design/gaze-and-commit.md)
 * [Mani e controller del movimento in DirectX](hands-and-motion-controllers-in-directx.md)
 * [Input vocale in DirectX](voice-input-in-directx.md)

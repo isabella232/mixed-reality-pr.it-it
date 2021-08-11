@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, interazioni tra oggetti, controlli limiti
 ms.localizationpriority: high
-ms.openlocfilehash: cbf2bbf78a34cfdd4856b7b8d192e4ac7c2f0154
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: d620e0150510bd7d882036786f90db8f74229e6d139a313dc6f026dc10be8047
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110269"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115191435"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interazione con oggetti 3D
 
@@ -59,7 +59,7 @@ Nella finestra Hierarchy (Gerarchia) espandi l'oggetto RoverExplorer > **RoverPa
 > Per selezionare più oggetti non adiacenti, tieni premuto CTRL mentre usi il mouse per selezionare un oggetto.
 
 > [!NOTE]
-> Quando si aggiunge un manipolatore di oggetti (script), in questo caso, Gestione vincoli (script) viene aggiunto automaticamente perché il manipolatore di oggetti (script) dipende da esso.
+> Quando si aggiunge un manipolatore di oggetti (script), in questo caso, gestione vincoli (script) viene aggiunto automaticamente perché il manipolatore di oggetti (script) dipende da esso.
 
 > [!NOTE]
 > Ai fini di questa esercitazione, i collisori sono già stati aggiunti alle parti rover. Per altre informazioni sui collisori, puoi visitare la documentazione <a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">corrispondente</a> di Unity.
@@ -76,7 +76,7 @@ Con tutti gli oggetti parte rover e l'oggetto RoverAssembly ancora selezionati, 
 > [!NOTE]
 > A questo punto hai abilitato la manipolazione per tutti gli oggetti parte rover e per l'oggetto RoverAssembly.
 
-Nella finestra Project (Progetto) passa alla **cartella Packages**  >  **Mixed Reality Toolkit Standard Assets** Audio (Pacchetti Mixed Reality Toolkit Standard Assets  >  **Audio)** per individuare le clip audio:
+Nella finestra Project pacchetti passare a **Packages**  >  **Mixed Reality Toolkit Standard Assets** Audio (Asset standard  >  **audio)** per individuare le clip audio:
 
 ![Finestra Project di Unity con la cartella Audio selezionata](images/mr-learning-base/base-07-section1-step1-3.png)
 

@@ -5,12 +5,12 @@ author: thalbern
 ms.author: bethalha
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, manipolazione degli oggetti,
-ms.openlocfilehash: f9b644c1447d6776389e227bfe49c27f82a3cf31
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 4c43a35e164d3e66e662afc927d28f84463e1586250e9847a2d88c219ba27f23
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176651"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115191613"
 ---
 # <a name="object-manipulator"></a>Manipolatore di oggetti
 
@@ -26,7 +26,7 @@ Lo script *ObjectManipulator* rende un oggetto mobile, scalabile e rotabile usan
 
 Per usare il manipolatore di oggetti, aggiungere prima di tutto il `ObjectManipulator` componente script a un GameObject. Assicurarsi anche di aggiungere un collisore all'oggetto, corrispondente ai limiti afferrabili.
 
-Per fare in modo che l'oggetto risponda all'input della mano quasi articolato, aggiungere `NearInteractionGrabbable` anche lo script .
+Per fare in modo che l'oggetto risponda all'input della mano quasi `NearInteractionGrabbable` articolato, aggiungere anche lo script .
 
 Il comportamento fisico può essere abilitato per il manipolatore di oggetti aggiungendo un componente rigidbody all'oggetto. Il comportamento fisico abilitato con l'aggiunta di questo componente viene illustrato in modo più dettagliato in [*Fisica e collisioni.*](#physics-and-collisions)
 
@@ -106,7 +106,7 @@ Impostazioni in questa sezione vengono visualizzati solo quando l'oggetto ha un 
 
 Specificare le proprietà fisiche che un oggetto modificato deve mantenere al momento del rilascio. Poiché questa proprietà è un flag, è possibile selezionare entrambe le opzioni.
 
-- *Mantieni velocità:* quando l'oggetto viene rilasciato, se questa opzione è selezionata, manterà la velocità lineare.
+- *Keep Velocity*(Mantieni velocità): quando l'oggetto viene rilasciato, se questa opzione è selezionata mantiene la velocità lineare.
 - *Mantieni Angular velocità:* quando l'oggetto viene rilasciato, se questa opzione è selezionata, manterà la velocità angolare.
 
 #### <a name="use-forces-for-near-manipulation"></a>Usare le forze per la manipolazione da vicino
@@ -127,7 +127,7 @@ Indica se la smussazione indipendente dalla frequenza dei fotogrammi è abilitat
 
 Obsoleti e verranno rimossi in una versione futura. Le applicazioni devono usare SmoothingFar, SmoothingNear o una combinazione dei due.
 
-#### <a name="move-lerp-time"></a>Tempo di spostamento del lerp
+#### <a name="move-lerp-time"></a>Move Lerp time (Tempo di spostamento lerp)
 
 Quantità di smussamento da applicare al movimento. Smussamento di 0 significa nessuna smussamento. Il valore massimo indica che non viene apportata alcuna modifica al valore.
 
@@ -179,7 +179,7 @@ Gli elastici possono essere usati quando si modificano oggetti tramite il manipo
 
 <img src="../images/bounds-control/MRTK_BoundsControl_Elastics.png" width="450" alt="Bounds Control Elastics">
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Controllo Limiti](bounds-control.md)
 - [Gestione vincoli](constraint-manager.md)

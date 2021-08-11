@@ -4,13 +4,13 @@ description: Panoramica dei tipi di menu near in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, menu vicino,
-ms.openlocfilehash: 15f53ad4e67a0b281750fd1df7f894c49f546531
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, near menu,
+ms.openlocfilehash: 75e7ee195a5838e88c42b7547e7b75205bfe1ee2fa1c8b1ba0a868b294883347
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175657"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190622"
 ---
 # <a name="near-menu"></a>Menu adiacente
 
@@ -22,7 +22,7 @@ Near Menu è un controllo UX che fornisce una raccolta di pulsanti o altri compo
 
 - **Tag lungo:** il menu segue l'utente e rimane entro un intervallo di 30-60 cm dall'utente per le interazioni da vicino.
 - **Aggiungi:** usando il pulsante "Aggiungi", il menu può essere bloccato a livello mondiale e rilasciato.
-- **Afferra e sposta:** il menu è sempre afferrabile e mobile. Indipendentemente dallo stato precedente, il menu verrà aggiunto (bloccato al mondo) quando viene afferrato e rilasciato. Esistono segnali visivi per l'area afferrabile. Vengono rivelati sulla prossimità manuale.
+- **Afferra e sposta:** il menu è sempre afferrabile e mobile. Indipendentemente dallo stato precedente, il menu verrà aggiunto (bloccato a livello mondiale) quando viene afferrato e rilasciato. Esistono segnali visivi per l'area afferrabile. Vengono rivelati sulla prossimità manuale.
 
 <img src="../images/near-menu/MRTK_UX_NearMenu_Grab.png" alt="Near Menu grab">
 
@@ -71,12 +71,12 @@ Fare `Update Collection` clic sul pulsante nel controllo dell'oggetto. `ButtonCo
 
 **3. Regolare le dimensioni del backplate**
 
-Regolare le dimensioni dell'oggetto `Quad` `Backplate` nell'oggetto . La larghezza e l'altezza del backplate devono essere `0.032 * [Number of the buttons + 1]` . Ad esempio, se si dispone di 3 x 2 pulsanti, la larghezza del backplate è `0.032 * 4` e l'altezza è `0.032 * 3` . È possibile inserire direttamente questa espressione nel campo di Unity.  
+Regolare le dimensioni dell'oggetto `Quad` sotto `Backplate` l'oggetto . La larghezza e l'altezza del backplate devono essere `0.032 * [Number of the buttons + 1]` . Ad esempio, se si dispone di 3 x 2 pulsanti, la larghezza del backplate è `0.032 * 4` e l'altezza è `0.032 * 3` . È possibile inserire direttamente questa espressione nel campo di Unity.  
 <img src="../images/near-menu/MRTK_UX_NearMenu_Custom3.png" width="450" alt="Near Menu Custome 3">
 
 - La dimensione predefinita del HoloLens 2 è 3,2x3,2 cm (0,032 m)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [**Pulsanti**](button.md)
 - [**Controllo Bounds**](bounds-control.md)

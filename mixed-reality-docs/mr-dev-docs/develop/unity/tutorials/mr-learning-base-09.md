@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, comandi vocali, input vocale
 ms.localizationpriority: high
-ms.openlocfilehash: 9422c16781af33fa3d68d7f6046e3a86c4b36b44
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: 448dafbbfdea7ebec26cdafe6c638c37333bcf01399a8272d5637730469ab579
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111403372"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192299"
 ---
 # <a name="9-using-speech-commands"></a>9. Uso dei comandi vocali
 
@@ -25,7 +25,7 @@ In questa esercitazione verrà spiegato come creare comandi vocali e come contro
 
 ## <a name="ensuring-the-microphone-capability-is-enabled"></a>Verificare che la funzionalità Microfono sia abilitata
 
-Nel menu Unity selezionare Mixed Reality > Toolkit > Utilities > **Configure Project for MRTK** per aprire la finestra **MRTK Project Configurator**  e quindi nella sezione **Funzionalità UWP** verificare che Abilita funzionalità microfono sia disattivata:
+Nel menu di Unity selezionare Mixed Reality > Toolkit > Utilities > Configure Project for MRTK (Configura Project per **MRTK)** per aprire la finestra **MRTK Project Configurator** e quindi nella sezione UWP Capabilities (Funzionalità **UWP)** verificare che **Enable Microphone Capability** (Abilita funzionalità microfono) sia disattivata:
 
 ![Abilitare la funzionalità microfono](images/mr-learning-base/base-09-section1-step1-1.png)
 
@@ -59,7 +59,7 @@ Nella sezione **Speech Commands** (Comandi vocali) fare clic sul pulsante **+ Ad
 
 ## <a name="controlling-speech-commands"></a>Controllo dei comandi vocali
 
-Nella finestra Progetto passare alla cartella **Package**  >  **Mixed Reality Toolkit Foundation**  >  **SDK**  >  **Features**  >  **UX**  >  **Prefabs ToolTip** per individuare i  >   prefab della descrizione comando:
+Nella finestra Project passare alla cartella Package  >  **Mixed Reality Toolkit Foundation**  >  **SDK**  >  **Features**  >  **UX** Prefabs ToolTip (Descrizione comando dei  >  **prefab**  >   dell'esperienza utente per la realtà mista) per individuare i prefab della descrizione comando:
 
 ![Apertura della cartella delle descrizioni comando](images/mr-learning-base/base-09-section3-step1-1.png)
 
@@ -88,10 +88,10 @@ Espandere **Element 0** e configurarlo come segue:
 
 Espandere **Element 1** e configurarlo come segue:
 
-* Nel campo **Parola** chiave immettere **Abilita controllo limiti** per fare riferimento al comando Abilita controllo limiti creato nella sezione precedente
+* Nel campo **Keyword (Parola** chiave) immettere **Enable Bounds Control**(Abilita controllo limiti) per fare riferimento al comando Enable Bounds Control (Abilita controllo limiti) creato nella sezione precedente
 * Fare clic sulla piccola icona **+** per aggiungere un evento
 * Nella finestra Hierarchy (Gerarchia) assegnare l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)
-* **Nell'elenco a discesa Nessuna** funzione selezionare **BoundsControl**  >  **bool enabled** per aggiornare il valore della proprietà quando viene attivato l'evento
+* **Nell'elenco a discesa No Function** (Nessuna funzione) selezionare BoundsControl bool enabled **(Bool boundsControl** abilitato) per aggiornare il valore di questa proprietà quando  >   viene attivato l'evento
 * Assicurarsi che la casella di controllo dell'argomento sia **selezionata**
 * Fai clic sulla piccola icona **+** per aggiungere un altro evento
 * Nella finestra Hierarchy (Gerarchia) assegnare l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)
@@ -102,10 +102,10 @@ Espandere **Element 1** e configurarlo come segue:
 
 Espandere **Element 2** e configurarlo come segue:
 
-* Nel campo **Parola** chiave immettere **Disabilita controllo** limiti per fare riferimento al comando Disabilita controllo limiti creato nella sezione precedente
+* Nel campo **Parola** chiave immettere **Disable Bounds Control** per fare riferimento al comando Disable Bounds Control creato nella sezione precedente
 * Fare clic sulla piccola icona **+** per aggiungere un evento
 * Nella finestra Hierarchy (Gerarchia) assegnare l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)
-* **Nell'elenco a discesa Nessuna** funzione selezionare **BoundsControl**  >  **bool enabled** per aggiornare il valore della proprietà quando viene attivato l'evento
+* **Nell'elenco a discesa No Function** (Nessuna funzione) selezionare BoundsControl bool enabled **(Bool boundsControl** abilitato) per aggiornare il valore di questa proprietà quando  >   viene attivato l'evento
 * Verificare che la casella di controllo dell'argomento sia **deselezionata**
 * Fai clic sulla piccola icona **+** per aggiungere un altro evento
 * Nella finestra Hierarchy (Gerarchia) assegnare l'oggetto **RoverExplorer** al campo **None (Object)** (Nessuno - Oggetto)

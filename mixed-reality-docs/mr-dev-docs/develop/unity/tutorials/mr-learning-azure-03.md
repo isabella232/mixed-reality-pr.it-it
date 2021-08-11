@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, hololens 2, visione personalizzata di azure, servizi cognitivi di azure, servizi cloud di azure, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 7624ed28c337f3621a29f15f1ab3b0e98aeb89db
-ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
+ms.openlocfilehash: e5914b99e83df0c8ed7bf5aa26f11bf5b224b64107a6ca8e05994bc6ee41147f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114224234"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190465"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Integrazione di Visione personalizzata di Azure
 
