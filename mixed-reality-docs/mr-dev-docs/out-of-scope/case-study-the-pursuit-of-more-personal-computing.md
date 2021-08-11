@@ -1,163 +1,163 @@
 ---
-title: 'Case Study: ricerca di più personal computing'
+title: Case study - Ricerca di un maggiore personal computing
 description: Le opportunità di domani diventano possibili creando prodotti oggi. Le soluzioni fornite da questi prodotti rivelano ciò che è necessario per anticipare il futuro.
 author: danielescudero
 ms.author: daescu
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Realtà mista di Windows, HoloLens, case study, visione, scenari
-ms.openlocfilehash: e08026dbb490f8581118b1bf6351231eeffba92a
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Windows Mixed Reality, HoloLens, case study, visione, scenari
+ms.openlocfilehash: 0e365be307781d652474ab3a1d15e6b66eb38f1a61a1175f44cdb7a01705ca61
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340679"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223369"
 ---
-# <a name="case-study---the-pursuit-of-more-personal-computing"></a>Case Study: ricerca di più personal computing
+# <a name="case-study---the-pursuit-of-more-personal-computing"></a>Case study - Ricerca di un maggiore personal computing
 
-Le opportunità di domani diventano possibili creando prodotti oggi. Le soluzioni fornite da questi prodotti rivelano ciò che è necessario per anticipare il futuro. Con la realtà mista questa situazione è particolarmente vera: la comprensione significativa deriva dalla possibilità di acquisire dimestichezza con il lavoro reale, ovvero dispositivi reali, clienti reali e problemi reali.
+Le opportunità di domani diventano possibili creando prodotti oggi. Le soluzioni fornite da questi prodotti rivelano ciò che è necessario per anticipare il futuro. Con la realtà mista ciò è particolarmente vero: le informazioni significative derivano dall'introduzione di attività reali, ovvero dispositivi reali, clienti reali, problemi reali.
 
-In Microsoft, sono parte del team di progettazione che consente ai partner aziendali di creare esperienze per la propria azienda usando la realtà mista di Windows. Nel corso dell'anno scorso, il nostro team si è concentrato su HoloLens e comprende il modo in cui il dispositivo olografico principale di Microsoft è in grado di offrire valore ai clienti. Collaborando con i progettisti e gli sviluppatori di queste società, il nostro team è incentrato sulla scoperta di soluzioni che sarebbero tecnicamente non realizzabili, finanziariamente impraticabili o altrimenti impossibili senza HoloLens.
+Microsoft fa parte del team di progettazione che aiuta i partner aziendali a creare esperienze per la propria azienda usando Windows Mixed Reality. Nell'ultimo anno, il team si è concentrato sulla HoloLens e sulla comprensione del modo in cui il dispositivo olografico di punta di Microsoft può offrire valore ai clienti oggi. Lavorando a stretto contatto con progettisti e sviluppatori di queste aziende, il team si concentra sulla ricerca di soluzioni tecnicamente infeasible, finanziariamente impraticabili o altrimenti impossibili senza HoloLens.
 
 ![Case Western Reserve University](images/case-western-reserve-university.jpg)<br>
-*HoloAnatomy da Case Western Reserve University*
+*HoloAnatomy della Case Western Reserve University*
 
-La creazione di queste soluzioni aiuta i team interni di Microsoft a prepararsi per la prossima generazione di computer. Conoscere il modo in cui gli utenti e le aziende interagiscono con tecnologie di base come la realtà mista, la voce e l'intelligenza artificiale consentono a Microsoft di creare dispositivi, piattaforme e strumenti migliori per gli sviluppatori. Gli sviluppatori o gli sviluppatori che esplorano questo spazio possono comprendere i concetti che i nostri team stanno imparando dai partner oggi sono cruciali per prepararsi alle opportunità di realtà mista di domani.
+La creazione di queste soluzioni consente ai team interni di Microsoft di prepararsi per la prossima generazione di elaborazione. Learning modo in cui singoli utenti e aziende interagiscono con tecnologie di base come realtà mista, voce e intelligenza artificiale, consente a Microsoft di creare dispositivi, piattaforme e strumenti migliori per gli sviluppatori. Se si è un progettista o uno sviluppatore che esplora questo spazio, comprendere ciò che i team stanno imparando dai partner è fondamentale per prepararsi alle opportunità di realtà mista del futuro.
 
-## <a name="microsofts-ambition-for-mixed-reality"></a>Ambiti di Microsoft per realtà mista
+## <a name="microsofts-ambition-for-mixed-reality"></a>L'obiettivo di Microsoft per la realtà mista
 
-Viviamo tra due mondi: il fisico e il digitale. Entrambi hanno punti di forza fondamentali che abbiamo sfruttato per aumentare ed estendere le nostre capacità. Possiamo parlare di persona con un amico, usando i nostri sensi fisici per capire cosa, come il linguaggio del corpo, oppure possiamo migliorare la nostra capacità di comunicare con un video-chat con un amico di Miles a distanza. Fino ad ora questi due mondi e i rispettivi punti di forza, sono stati fondamentalmente separati.
+La vita viene vissta tra due mondi: il fisico e il digitale. Entrambi hanno punti di forza fondamentali che vengono sfruttati per aumentare ed estendere le capacità. È possibile parlare di persona con un amico, usando i sensi fisici per comprendere cose come il linguaggio del corpo, oppure aumentare la capacità di parlare tramite video chat con un amico a chilometri di distanza. Finora questi due mondi, e i rispettivi punti di forza, sono stati fondamentalmente separati.
 
-**Il mondo fisico è uno degli atomi e della fisica.** Usiamo i nostri sensi per prendere decisioni, sfruttando gli anni di comportamento appreso per interagire con gli oggetti e le persone negli ambienti. Nonostante la facilità di queste interazioni, le nostre capacità fisiche e le leggi della natura sono limitate.
+**Il mondo fisico è uno degli atomi e della fisica.** I sensi vengono utilizzati per prendere decisioni, sfruttando anni di comportamenti appresi per interagire con oggetti e persone nei nostri ambienti. Nonostante la facilità di queste interazioni, le capacità fisiche e le leggi della natura sono limitate.
 
-**Il mondo digitale è uno dei bit e della logica.** I calcoli vengono eseguiti immediatamente, mentre le informazioni possono essere distribuite con facilità. Nonostante la velocità e il flusso di informazioni, le interazioni sono troppo spesso limitate a schermate piccole, input astratti e feed rumorosi.
+**Il mondo digitale è uno dei bit e della logica.** I calcoli vengono eseguono immediatamente, mentre le informazioni possono essere distribuite senza sforzo. Nonostante la velocità e il flusso delle informazioni, le interazioni sono troppo spesso limitate a schermi di piccole dimensioni, input astratti e feed rumorosi.
 
 ![HoloStudio](images/holostudio-450px.jpg)<br>
 *HoloStudio*
 
-Cosa accade se è possibile combinare i vantaggi dei mondi fisici e digitali? Questo è l'elemento fondamentale delle esperienze nell'ambito della realtà mista, ovvero un supporto con la coesistenza fisica e digitale e l'interazione senza interruzioni. Combinando questi mondi si crea una nuova base per interagire più naturalmente con la tecnologia, un'evoluzione nel personal computing.
+Cosa succede se si combinano i vantaggi del mondo fisico e digitale? Questo è il fondamento delle esperienze nello spettro della realtà mista: un medium in cui il fisico e il digitale coesistono e interagiscono senza problemi. La combinazione di questi mondi crea una nuova base per interagire in modo più naturale con la tecnologia, un'evoluzione nel personal computing.
 
-Lo spettro della realtà mista è esploso perché gli sviluppatori hanno iniziato a esplorare le opportunità di coinvolgimento e presenza. Riportare gli utenti nel mondo digitale con esperienze immersive (realtà virtuale) e creare oggetti digitali nel mondo fisico con esperienze olografiche (realtà aumentata). Ma quali sono i vantaggi derivanti dal mapping del mondo fisico al mondo digitale? Che cosa accade quando si dà la vista ai computer?
+Lo spettro della realtà mista è esploso quando gli sviluppatori hanno iniziato a esplorare le opportunità di coinvolgimento e presenza. Portare gli utenti nel mondo digitale con esperienze immersive (realtà virtuale) e creare oggetti digitali nel mondo fisico con esperienze olografiche (realtà aumentata). Ma quali sono i vantaggi del mapping del mondo fisico al mondo digitale? Cosa accade quando si dà agli occhi dei computer la vista?
 
-La tecnologia fondamentale per la visione artificiale dietro gli ologrammi agisce come una coppia di occhi per il computer per vedere l'ambiente intorno all'utente: gli oggetti nel mondo, gli utenti in tutto il mondo, cambiano man mano che si verificano. Una comprensione digitale del contesto nel mondo fisico. Ciò comporta una grande quantità di informazioni, ovvero le implicazioni di cui si sta iniziando a comprendere.
+La tecnologia di visione della fotocamera alla base degli ologrammi agisce come un paio di occhi per il computer per vedere l'ambiente intorno a te: gli oggetti nel mondo, le persone intorno a te, cambiano quando si verificano. Una comprensione digitale del contesto nel mondo fisico. Ciò comporta un'enorme quantità di informazioni, le cui implicazioni sono solo all'inizio.
 
-### <a name="culminating-core-technologies"></a>Principali tecnologie principali
+### <a name="culminating-core-technologies"></a>Tecnologie di base culminanti
 
-Il computing è troppo spesso una cosa tangibile. Afferriamo i nostri dispositivi per capire chi siamo e cosa vogliamo. La nostra idea e l'allineamento di ciò che diciamo corrispondano a quanto riteniamo che il computer debba sentire.
+Il calcolo è troppo spesso una cosa tangibile. Afferrare i dispositivi per indicare loro chi siamo e cosa si vuole. Contorting our thinking and aligning what we say to match what we believe the computer needs to hear.
 
-La promessa di realtà mista, soprattutto nel mondo reale con esperienze olografiche, consiste nel ridurre il carico di interazione con la tecnologia. Riduzione del carico cognitivo perché gli utenti esplorano i livelli di astrazione inerenti al computing odierno. In che modo è possibile progettare esperienze che non solo sfruttano i vantaggi della comprensione contestuale, ma semplificano l'analisi e l'intervento? Anche due tecnologie che contribuiscono a risolvere questo problema:
-* **Voce** , in termini di riconoscimento vocale e conversazione, consente agli utenti di comunicare con i computer in modo più naturale, rispondendo ai bot tramite testo o inviando comandi all'hardware colloquiale.
-* L' **intelligenza artificiale** è in grado di potenziare le esperienze che distillano informazioni dettagliate da set di impostazioni sempre più complessi. Mentre AI è un argomento enorme, lo stato di avanzamento recente ha fornito le basi per i dispositivi che si basano sulla visione artificiale, sugli assistenti digitali più naturali e sulle azioni consigliate agli utenti.
+La promessa della realtà mista, in particolare nel mondo reale con esperienze olografiche, è ridurre il carico di interazione con la tecnologia. Riduzione del carico cognitivo quando gli utenti esplorano i livelli di astrazione intrinseci al calcolo attuale. Come è possibile progettare esperienze che non solo sfruttano la comprensione contestuale, ma semplificano l'analisi e l'azione? Anche due tecnologie che contribuiscono stanno tentando di risolvere questo problema:
+* **La** voce, in termini di voce e conversazione, consente agli utenti di comunicare con i computer con mezzi più naturali, ovvero rispondendo ai bot tramite testo o emettendo comandi all'hardware di conversazione.
+* **L'intelligenza** artificiale sta ingendo esperienze che rescindono informazioni dettagliate da set di dati sempre più complessi. Anche se l'intelligenza artificiale è un argomento enorme, i recenti progressi hanno fornito le basi per i dispositivi che si basano sulla visione artificiale, su assistenti digitali più naturali e sulla raccomandazione di azioni agli utenti.
 
-La realtà mista fornisce un supporto per combinare queste tecnologie in un'unica esperienza utente. Voice diventa un metodo naturale e potente per l'input quando si indossa un auricolare olografico. AI funge da crittografia critica per contestualizzare le enormi quantità di informazioni che connettono i mondi fisici e digitali. Questo è il motivo per cui Sataya NADELLA si riferisce a HoloLens come "Ultimate computer", che è un dispositivo culminante per tre tecnologie principali. Una piattaforma per consentire agli utenti di interagire più facilmente con la crescente complessità di dispositivi e servizi.
+La realtà mista offre un supporto per combinare queste tecnologie in un'esperienza utente singola. La voce diventa un metodo potente e naturale per l'input quando si indossa un visore olografico. L'intelligenza artificiale funge da crittografia critica per contestualizzare le enormi quantità di informazioni che collegano il mondo fisico e quello digitale. Questo è il motivo per cui Sataya Nadella si riferisce HoloLens come "il computer finale", è un dispositivo culminante per tre tecnologie di base. Una piattaforma per consentire agli esseri umani di interagire più facilmente con la crescente complessità di dispositivi e servizi.
 
-### <a name="less-interface-in-your-face"></a>Minore interfaccia nel viso
+### <a name="less-interface-in-your-face"></a>Meno interfaccia nel viso
 
-Un dispositivo culminante che connette il mondo fisico al mondo digitale ci permette di progettare esperienze che si adattano più naturalmente, senza complesse astrazioni. Si prendano in considerazione le esperienze create: quando vengono rimosse le barriere dell'astrazione, qual è la quantità di interfaccia rimasta? Quali parti del flusso dell'app cambiano quando si conosce l'utente e il relativo contesto? Quanti menu e pulsanti rimangono?
+Un dispositivo culminante che connette il mondo fisico al mondo digitale consente di progettare esperienze più naturali, senza astrazioni ingombranti. Si considerino le esperienze create: quando vengono rimosse le barriere di astrazione, quanto resta dell'interfaccia? Quali parti del flusso dell'app cambiano quando si conosce l'utente e il relativo contesto? Quanti menu e pulsanti rimangono?
 
-Si pensi, ad esempio, alle esperienze condivise in realtà mista come il laboratorio di propulsione jet della NASA per gli scienziati. Invece di creare un sistema per esaminare i dati marziani (astrarre i dati su schermate o schermi), hanno portato gli scienziati all'interno dei dati, inserendoli in modo effettivo sulla superficie di Mars durante la loro collaborazione.
+Si pensi, ad esempio, alle esperienze condivise nella realtà mista, come lo strumento OnSight Jet Spaziale Laboratory della NASA creato per gli scienziati. Invece di creare un sistema per esaminare i dati marziani (astraendo i dati su schermi o schermi), hanno portato gli scienziati all'interno dei dati, inserendoli in modo efficace sulla superficie di Marte durante la collaborazione.
 
-![Controllo della NASA](images/nasa-onsight.jpg)<br>
-*Controllo della NASA/JPL*
+![NASA OnSight](images/nasa-onsight.jpg)<br>
+*NASA/JPL OnSight*
 
-Invece di trovare il pulsante per attirare l'attenzione su una geologia marziana, gli scienziati possono puntare direttamente a essa. Nessun menu, nessuna penna, nessuna curva di apprendimento per usare lo strumento in modo efficace. Sfruttando le nostre capacità note del mondo fisico, le interazioni più naturali nella realtà mista possono aggirare l'alfabetizzazione tecnica approfondita anche negli strumenti di settore più avanzati.
+Invece di trovare il pulsante per attirare l'attenzione su una certa geologia marziana, gli scienziati possono puntare direttamente a esso. Nessun menu, nessuna penna, nessuna curva di apprendimento per usare lo strumento in modo efficace. Sfruttando le capacità note del mondo fisico, le interazioni più naturali nella realtà mista possono aggirare una profonda insoddità tecnica anche negli strumenti di settore più avanzati.
 
-Analogamente, la voce e l'intelligenza artificiale possono estendere l'interazione naturale in questa esperienza. Quando gli assistenti digitali possono "vedere" in tutto il mondo, le conversazioni risulteranno meno complesse. Un bot nello strumento della NASA potrebbe estrarre il contesto dagli scienziati che conferiscono la geologia marziana, che funge da fonte di informazioni pronta (e conversazione) quando gli scienziati eseguono il gesto e chiedono "questo" o "questo". Un computer che conosce il contesto è pronto a passare con le informazioni appropriate, tramite un metodo di interazione più appropriato per il contesto.
+Analogamente, la voce e l'intelligenza artificiale possono estendere l'interazione naturale in un'esperienza come questa. Quando gli assistenti digitali possono "vedere" il mondo che ci circonda, le conversazioni saranno meno ingombranti. Un bot nello strumento della NASA potrebbe estrarre il contesto dagli scienziati che conferino sulla geologia marziana, fungendo da fonte di informazioni pronta (e conversazionale) quando gli scienziati agiscono e chiedono "questo" o "questo". Un computer che conosce il contesto è pronto a passare con le informazioni appropriate, tramite un metodo di interazione più appropriato al contesto.
 
 ### <a name="building-on-a-foundation"></a>Creazione di una base
 
-In questo mondo di esperienze contestuali, il catering per la mobilità dell'utente è fondamentale. Lo spostamento fluido tra dispositivi e servizi, con contesti altamente personalizzati, gli utenti viaggeranno sul mondo fisico senza problemi, creando una *grande* sfida per la piattaforma. Quando il mondo fisico diventa un endpoint digitale, l'interoperabilità è sovrana.
+In questo mondo di esperienze contestuali, la mobilità dell'utente è fondamentale. Spostandosi in modo fluido tra dispositivi e servizi, con contesti altamente  personalizzati, gli utenti viaggiano senza problemi nel mondo fisico, creando un'enorme sfida per la piattaforma. Quando il mondo fisico diventa un punto di partenza digitale, l'interoperabilità diventa un punto di forza.
 
 
-> *"Riunendo l'universo digitale e il mondo fisico riuscirà a sbloccare il potenziale umano... consentire a ogni persona e organizzazione del mondo di ottenere ulteriori risultati ".*<br>
-> -NADELLA
+> *"Riunire l'universo digitale e il mondo fisico sbloccherà il potenziale umano... consentendo a ogni persona e organizzazione del mondo di ottenere di più."*<br>
+> - Satya Nadella
 
-La realtà mista di Windows è un tentativo di creare una piattaforma per un ecosistema di dispositivi, consentendo agli sviluppatori di creare esperienze coinvolgenti, accessibili e compatibili per il maggior numero possibile di destinatari. Il futuro non sarà limitato a un singolo produttore, tantomeno a un singolo dispositivo. Cuffie, dispositivi mobili, PC, accessori... Tutti questi elementi fisici devono interagire (oltre a elementi digitali, ad esempio grafici e servizi) attraverso una piattaforma sottostante per garantire la riuscita della realtà mista.
+Windows Mixed Reality è uno sforzo per creare una piattaforma per un ecosistema di dispositivi, consentendo agli sviluppatori di creare esperienze immersive, convenienti e compatibili per il pubblico più ampio possibile. Il futuro non sarà limitato a un singolo produttore, per non parlare di un singolo dispositivo. Visori, dispositivi mobili, PC, accessori... tutti questi elementi fisici devono interagire (così come gli elementi digitali come grafi e servizi) tramite una piattaforma sottostante per garantire la promessa della realtà mista.
 
-## <a name="designing-for-tomorrows-experiences-today"></a>Progettazione per le esperienze di domani
+## <a name="designing-for-tomorrows-experiences-today"></a>Progettazione per le esperienze di oggi
 
-![Progettazione per le esperienze di domani](images/designing-for-tomorrows-experiences-today-450px.jpg) 
+![Progettazione per le esperienze di oggi](images/designing-for-tomorrows-experiences-today-450px.jpg) 
 <br>
-Ognuna delle tecnologie principali alla base di questa nuova classe di esperienze è consentire ai progettisti e agli sviluppatori di creare esperienze accattivanti e di successo oggi. Grazie alla riduzione dell'astrazione, possiamo interagire più direttamente con il mondo digitale, consentendo la progettazione in modi che aumentano e amplificano le capacità umane. La tecnologia vocale (attraverso bot e assistenti digitali come Cortana) consente agli utenti di eseguire conversazioni e scenari sempre più complessi, mentre la tecnologia di intelligenza artificiale (tramite strumenti come servizi cognitivi Microsoft) fa sì che le aziende ripensino in che modo gli utenti interagiranno con qualsiasi cosa, dai social media alla gestione della supply chain.
+Ognuna delle tecnologie di base alla base di questa nuova classe di esperienze consente a progettisti e sviluppatori di creare esperienze accattivanti e di successo. Riducendo l'astrazione, è possibile interagire più direttamente con il mondo digitale, consentendo di progettare in modi che aumentano e amplificano le capacità umane. La tecnologia vocale (tramite bot e assistenti digitali come Cortana) consente agli utenti di eseguire conversazioni e scenari sempre più complessi, mentre la tecnologia di intelligenza artificiale (tramite strumenti come Servizi cognitivi Microsoft) sta inducendo le aziende a ri-modificare il modo in cui gli utenti interagiranno con tutto, dai social media alla gestione della supply chain.
 
-Questi tipi di interazioni si basano su una nuova classe di strumenti di progettazione e sul supporto fondamentale della piattaforma. La creazione di questi strumenti e la creazione di questa piattaforma per dispositivi e servizi si basano sulla comprensione del modo in cui le esperienze future risolveranno problemi reali e tangibili. Abbiamo identificato cinque aree di opportunità in cui i nostri partner aziendali hanno fornito soluzioni preziose e dove riteniamo che gli investimenti continui ci consentiranno di prepararsi per questa nuova classe di elaborazione. 
+Questi tipi di interazioni si baseranno sia su una nuova classe di strumenti di progettazione che sul supporto fondamentale della piattaforma. La creazione di questi strumenti e la creazione di questa piattaforma per dispositivi e servizi si basa sulla comprensione del modo in cui le esperienze del futuro risolveranno problemi reali e tangibili. Sono state identificate cinque aree di opportunità in cui i partner aziendali hanno fornito soluzioni preziose e in cui si ritiene che gli investimenti continui ci aiuteranno a prepararsi per questa nuova classe di calcolo. 
 
 ## <a name="areas-of-opportunity"></a>Aree di opportunità
 
-Il passato anno di partnership per sviluppatori presenta aree di opportunità non scoperte che risuonano con i clienti e creano soluzioni aziendali efficaci. Da scienziati e tecnici ai progettisti e ai client, sono emerse cinque aree di opportunità in cui i partner Microsoft trovano un valore per la realtà mista. Queste aree forniscono già informazioni approfondite sulle esigenze future di piattaforme come la realtà mista di Windows e consentono di comprendere in che modo queste nuove esperienze influirà sui modi in cui si apprende, collaborano, comunicano e creano.
+L'ultimo anno di partnership per sviluppatori ha scoperto aree di opportunità che risuonano con i clienti e creano soluzioni aziendali di successo. Da scienziati e tecnici a progettisti e clienti sono emerse cinque aree di opportunità in cui i partner Microsoft trovano valore con la realtà mista. Queste aree offrono già informazioni approfondite sulle esigenze future di piattaforme come Windows Mixed Reality e possono aiutare a comprendere in che modo queste nuove esperienze incideranno sul modo in cui apprendiamo, collaboriamo, comunichiamo e creiamo.
 
-### <a name="1-creation-and-design"></a>1. creazione e progettazione
+### <a name="1-creation-and-design"></a>1. Creazione e progettazione
 
-Una delle principali opportunità della realtà mista è la possibilità di visualizzare e modificare le progettazioni 3D in tempo reale, in un'impostazione reale, a dimensioni e scalabilità reali. Gli strumenti per la progettazione e la creazione di prototipi hanno preceduto i confini delle schermate, tornando a un'area di progettazione generalmente riservata ai materiali fisici, come Wood e Clay.
+Una delle maggiori opportunità della realtà mista è la possibilità di vedere e manipolare i progetti 3D in tempo reale, in un ambiente reale, con dimensioni e scalabilità reali. Gli strumenti di progettazione e prototipazione sono sfuggiti ai confini degli schermi, tornando a un ambito di progettazione solitamente riservato a materiali fisici tangibili come il legna e l'argillo.
 
 <br>
 
 >[!VIDEO https://www.youtube.com/embed/Hx6biWE2VsM]
 
-[Autodesk](https://www.youtube.com/watch?v=Hx6biWE2VsM) ha creato un'esperienza di realtà mista finalizzata a migliorare la collaborazione nell'intero processo di sviluppo del prodotto. La possibilità per i tecnici e i progettisti di esaminare e criticare i modelli 3D nel proprio ambiente consentiva di eseguire l'iterazione di una progettazione in tempo reale. Questa funzionalità non è stata abilitata solo per la prototipazione più veloce, ma è stato possibile prendere decisioni più sicure nel processo.
+[Autodesk](https://www.youtube.com/watch?v=Hx6biWE2VsM) ha creato un'esperienza di realtà mista volta a migliorare la collaborazione nell'intero processo di sviluppo del prodotto. La possibilità per ingegneri e progettisti di eseguire il sondaggio e la critica dei modelli 3D nel proprio ambiente ha consentito loro di eseguire l'iterazione di una progettazione in tempo reale. Questo non solo ha abilitato la creazione di prototipi più veloci, ma ha lasciato spazio a decisioni più sicure nel processo.
 
-Esperienze come questa evidenziano la necessità di esperienze di collaborazione di base, la possibilità per gli utenti di visualizzare e comunicare con gli oggetti condivisi. L'obiettivo di Autodesk è espandere il prodotto da progettazione professionale e ingegneri a artisti digitali, studenti e appassionati. Con la riduzione del livello di esperienza 3D degli utenti, la possibilità di interagire con gli oggetti diventa naturalmente fondamentale.
+Esperienze come questa evidenziano la necessità di esperienze di collaborazione di base, la possibilità per gli utenti di visualizzare e comunicare con oggetti condivisi. L'obiettivo di Autodesk è quello di espandere il prodotto da professionisti di progettazione e tecnici ad architetti digitali, studenti e progettisti. Con la diminuzione del livello di esperienza 3D degli utenti, la possibilità di interagire con gli oggetti diventa naturalmente fondamentale.
 
-### <a name="2-assembly-and-manufacturing"></a>2. assembly e produzione
+### <a name="2-assembly-and-manufacturing"></a>2. Assembly e produzione
 
-Dalla maggior parte delle specializzazioni nei pavimenti delle fabbriche ai rapidi progressi della gestione della supply chain, l'accesso trasparente alle informazioni rilevanti è fondamentale. La realtà mista offre la possibilità di sintetizzare set di dati estesi e fornire visualizzazioni visive che facilitano la navigazione e le operazioni. Si tratta spesso di campi di nicchia altamente tecnici, in cui l'integrazione con i set di dati e i servizi personalizzati è fondamentale per ridurre la complessità e garantire un'esperienza ottimale.
+Dalla crescente specializzazione nei piani di produzione ai rapidi miglioramenti della gestione della supply chain, è fondamentale l'accesso trasparente alle informazioni pertinenti. La realtà mista offre la possibilità di sintetizzare set di dati estesi e fornire schermi visivi che consentono di accedere ad aree come la navigazione e le operazioni. Si tratta spesso di campi di niche altamente tecnici in cui l'integrazione con set di dati e servizi personalizzati è fondamentale per ridurre la complessità e offrire un'esperienza ottimale.
 
 <br>
 
 >[!VIDEO https://www.youtube.com/embed/8OWhGiyR4Ns]
 
-Il produttore dell'ascensore [Thyssen](https://www.youtube.com/watch?v=8OWhGiyR4Ns) ha creato un'esperienza per i tecnici del servizio di ascensore, consentendo loro di visualizzare e identificare i problemi in preparazione di un processo. Con un team che si estende su più di 24.000 tecnici, i dispositivi come HoloLens consentono a questi tecnici di disporre di accesso remoto e gratuito alle informazioni tecniche e di esperti.
+Il produttore [di ascensori ThyrataKrupp](https://www.youtube.com/watch?v=8OWhGiyR4Ns) ha creato un'esperienza per i tecnici del servizio ascensore, consentendo loro di visualizzare e identificare i problemi in preparazione di un lavoro. Con un team che si estende su oltre 24.000 tecnici, dispositivi come HoloLens consentono a questi tecnici di avere accesso remoto e a mani libere a informazioni tecniche ed esperte.
 
-Thyssen mette in evidenza un concetto potente che consente di recapitare rapidamente agli utenti le informazioni più importanti e contestuale. Con l'aspetto di una nuova classe di esperienze, distillare grandi quantità di possibili informazioni sul contenuto pertinente per l'utente sarà fondamentale.
+Thyrupp evidenzia un concetto potente in questo caso che le informazioni critiche e contestualmente rilevanti possono essere recapitate rapidamente agli utenti. Mentre si guarda avanti a una nuova classe di esperienze, sarà fondamentale la distribuzione di grandi quantità di informazioni possibili al contenuto pertinente per l'utente.
 
-### <a name="3-training-and-development"></a>3. formazione e sviluppo
+### <a name="3-training-and-development"></a>3. Training e sviluppo
 
-La rappresentazione di oggetti e informazioni in tre dimensioni offre nuovi modi per spiegare visivamente gli scenari e con la comprensione spaziale. La formazione diventa un'area chiave di opportunità, sfruttando la possibilità di rappresentare digitalmente oggetti complessi e enormi, ad esempio motori jet, per creare simulazioni di training per una frazione del costo di una soluzione fisica.
+La rappresentazione di oggetti e informazioni in tre dimensioni offre nuovi modi per spiegare gli scenari visivamente e con la comprensione spaziale. Il training diventa un'area di opportunità chiave, sfruttando la possibilità di rappresentare digitalmente oggetti enormi e complessi (come i motori a jet) per creare simulazioni di training per una frazione del costo di una soluzione fisica.
 
 <br>
 
 >[!VIDEO https://www.youtube.com/embed/GjZgI2oDcwM]
 
-[Japan Airlines](https://www.youtube.com/watch?v=GjZgI2oDcwM&t=158s) ha sperimentato i programmi concettuali per offrire formazione supplementare per i meccanici dei motori e le squadre di volo. Gli enormi motori Jet (in termini di dimensioni e complessità) possono essere rappresentati in 3D, ignorando le limitazioni del mondo fisico per spostare e ruotare gli oggetti virtuali intorno ai partecipanti, consentendo loro di vedere come funzionano i componenti della linea aerea in tempo reale.
+[Japan Japan Japan](https://www.youtube.com/watch?v=GjZgI2oDcwM&t=158s) ha fatto esperimenti con i programmi concettuali per fornire una formazione supplementare per la meccanica dei motori e le compagnie di volo. I motori a jet di grandi dimensioni (sia in termini di dimensioni che di complessità) possono essere rappresentati in 3D, ignorando le limitazioni del mondo fisico per spostare e ruotare gli oggetti virtuali intorno ai partecipanti, consentendo loro di vedere come funzionano i componenti delle compagnie aeree in tempo reale.
 
-Il training con componenti virtuali (e la necessità di simulatori di training fisici costosi) è un modo chiave per offrire un valore in scenari aziendali oggi. Poiché questo scenario si espande (come abbiamo visto in settori come la medicina), la visione artificiale diventa particolarmente importante per riconoscere gli oggetti univoci nell'ambiente, comprendere il contesto dell'utente e fornire le istruzioni pertinenti.
+Il training con componenti virtuali (e la riduzione della necessità di costosi simulatori di training fisici) è un modo chiave per offrire valore negli scenari aziendali. Con l'espansione di questo scenario (come si è visto in aree come la farmacia), la visione informatica diventa particolarmente importante per riconoscere oggetti univoci nell'ambiente, comprendere il contesto dell'utente e fornire istruzioni pertinenti.
 
-### <a name="4-communication-and-understanding"></a>4. comunicazione e comprensione
+### <a name="4-communication-and-understanding"></a>4. Comunicazione e comprensione
 
-Le interazioni tra due persone (indipendentemente dal fatto che entrambi i partecipanti si trovino in dispositivi a realtà mista o su un PC o un telefono tradizionale) possono fornire un'idea di coinvolgimento in un nuovo ambiente o un senso di presenza durante la comunicazione virtuale con altri utenti. Negli scenari aziendali questa sensazione di presenza è un vantaggio per i team mobili, contribuendo ad aumentare la comprensione dei progetti e a ridurre la necessità di viaggio.
+Le interazioni tra due persone (che si applichi a entrambi i partecipanti in dispositivi di realtà mista o che uno si trova in un PC o un telefono tradizionale) possono fornire sia un senso di instabilità all'interno di un nuovo ambiente che un senso di presenza quando comunicano virtualmente con altri utenti. Negli scenari aziendali questo senso di presenza è una manna per i team mobili, che contribuisce a migliorare la comprensione dei progetti e ridurre la necessità di viaggi.
 
 <br>
 
 >[!VIDEO https://www.youtube.com/embed/kXVW4sUsh3A]
 
-Produttore tecnologico commerciale [Trimble](https://www.youtube.com/watch?v=kXVW4sUsh3A) ha sviluppato una soluzione per l'architettura e i professionisti del settore edile per collaborare ed esaminare il lavoro durante la compilazione dello sviluppo. I professionisti possono immergersi in modalità remota in un progetto per discutere lo stato di avanzamento o la posizione e i piani di revisione come dovrebbero apparire (nel formato finale) nell'ambiente in cui si trovano.
+Il produttore tecnologico [commerciale Trimble ha](https://www.youtube.com/watch?v=kXVW4sUsh3A) sviluppato una soluzione per i professionisti del settore dell'architettura e della costruzione per collaborare e rivedere il lavoro durante lo sviluppo della compilazione. I professionisti possono entrare in un progetto in remoto per discutere lo stato di avanzamento o essere in posizione e rivedere i piani come dovrebbero (nella loro forma finale) nell'ambiente che li circonda.
 
-Le esperienze condivise sono un'area principale di investimento per Microsoft, con app come Skype che esplorano i nuovi modi per rappresentare gli utenti nello spazio digitale. I team stanno esplorando registrazioni video volumetriche, avatar e ricreazioni dello spazio fisico di un partecipante.
+Le esperienze condivise sono un'area di investimento importante per Microsoft, con app come Skype l'esplorazione di nuovi modi per rappresentare gli esseri umani nello spazio digitale. Teams esplorano registrazioni video volumetrici, avatar e ricreazioni dello spazio fisico di un partecipante.
 
-### <a name="5-entertainment-and-engagement"></a>5. divertimento e Engagement
+### <a name="5-entertainment-and-engagement"></a>5. Intrattenimento e engagement
 
-La natura dell'immersione nella realtà mista può avere un notevole effetto sul modo in cui i clienti si impegnano con l'intrattenimento e il marketing. Gli artisti e gli studio di intrattenimento hanno esplorato la realtà mista come un supporto accattivante per la narrativa, mentre le aziende stanno esplorando le implicazioni per il marketing del marchio. Dalle demo dei prodotti negli showroom privati alle parti della visione rilasciate al Trade Expos, il contenuto può essere distribuito in modo più coinvolgente e personalizzato.
+La natura dell'intrattenimento nella realtà mista può avere un notevole impatto sul modo in cui i clienti interagiscono con l'intrattenimento e il marketing. Gli artista e gli studi di intrattenimento hanno esplorato la realtà mista come mezzo interessante per raccontare storie, mentre le aziende stanno valutando le implicazioni per il marketing del marchio. Dalle demo di prodotti in showroom privati ai componenti della visione raccontati durante le esezioni commerciali, i contenuti possono essere recapitati in modi più immersive e personalizzati.
 
 <br>
 
 >[!VIDEO https://www.youtube.com/embed/DilzwF90vec]
 
-Volvo ha creato un'esperienza per la presentazione dei modelli di auto più recenti (per immergere gli utenti in diversi colori e configurazioni), evidenziando il funzionamento dei sensori avanzati per creare un'esperienza di guida migliore e sicura. I clienti che usano un'esperienza di showroom guidata consentono a Volvo di raccontare la storia dietro la funzionalità di un'auto all'avanguardia, offrendo al tempo stesso una memorabile rappresentazione della propria storia.
+Ha creato un'esperienza per la presentazione dei modelli di auto più recenti (per coinvolgere gli utenti in diversi colori e configurazioni) evidenziando al tempo stesso il funzionamento dei sensori avanzati per creare un'esperienza di guida migliore e più sicura. Portare i clienti attraverso un'esperienza di showroom guidata consente a Possibile raccontare la storia alla base di funzionalità all'avanguardia per le automobili, offrendo al tempo stesso un'esperienza di successo facile da ricordare per il marchio.
 
-L'intrattenimento è in molti modi per eseguire il push dei limiti della realtà mista (in particolare la realtà virtuale) e forse più interessante in questo spazio è il modo in cui interagirà con l'area di opportunità precedente: comunicazione e comprensione. Con più utenti, ognuno con la propria variante di dispositivi e metodi di interfaccia, è possibile immaginare un vasto futuro di personalizzazione nel mondo dell'intrattenimento.
+L'intrattenimento è in molti modi in grado di superare i limiti della realtà mista (in particolare la realtà virtuale) e forse la più interessante in questo ambito è il modo in cui interagirà con l'area di opportunità precedente: comunicazione e comprensione. Con più utenti, ognuno con una propria variante di dispositivi e metodi di interfaccia, è possibile immaginare un vasto futuro di personalizzazione nell'ambito dell'intrattenimento.
 
-## <a name="start-building-today"></a>Inizia subito a sviluppare
+## <a name="start-building-today"></a>Inizia subito a creare
 
-È difficile dire quale sarà il futuro della realtà mista per gli utenti, ma concentrarsi sui problemi specifici, acquisire dimestichezza con l'hardware reale e **sperimentare *oggi* con l'intersezione tra la realtà mista, la voce e l'intelligenza artificiale è fondamentale**. Microsoft sta iniziando a usare la realtà mista, ma l'apprendimento dei successi realizzati dalle aziende oggi ti aiuterà a creare le esperienze di domani.
+È difficile dire quale sarà il futuro lontano della realtà mista per i consumer, ma concentrarsi su problemi univoci, mettere in pratica hardware reale e sperimentare oggi l'intersezione tra realtà mista, voce e intelligenza artificiale è **fondamentale.** Microsoft sta per iniziare a usare la realtà mista, ma l'apprendimento dei risultati realizzati oggi dalle aziende consente di creare le esperienze di domani.
 
-## <a name="next-discovery-checkpoint"></a>Checkpoint individuazione successiva
+## <a name="next-discovery-checkpoint"></a>Prossima stazione di scoperta
 
-Se si sta seguendo il [percorso di individuazione](../discover/get-started-with-mr.md) , è possibile esplorare le nozioni di base della realtà mista. Da qui è possibile passare all'argomento di base successivo: 
+Se si sta seguendo il [percorso di scoperta](../discover/get-started-with-mr.md) definito, è possibile esplorare le nozioni di base della realtà mista. Da qui è possibile passare all'argomento di base successivo: 
 
 > [!div class="nextstepaction"]
 > [Coinvolgente, ergonomico, istintivo e senza cavi](https://www.microsoft.com//hololens/hardware)
 
-In alternativa, passare all'esperienza di base per realtà mista:
+Oppure passare alle esperienze principali della realtà mista:
 
 > [!div class="nextstepaction"]
 > [Fare in modo che l'utente possa operare comodamente (comfort)](../design/comfort.md)
@@ -167,7 +167,7 @@ In alternativa, passare all'esperienza di base per realtà mista:
 <table style="border-collapse:collapse">
 <tr>
 <td style="border-style: none" width="60" padding-left="0px"><img alt="Picture of Mark Vitazko" width="60" height="60" src="images/mark-vitazko.jpg"></td>
-<td style="border-style: none"><b>Contrassegnare Vitazko</b><br>Designer di esperienza utente @Microsoft</td>
+<td style="border-style: none"><b>Mark Vitazko</b><br>Designer di esperienza utente @Microsoft</td>
 </tr>
 </table>
  

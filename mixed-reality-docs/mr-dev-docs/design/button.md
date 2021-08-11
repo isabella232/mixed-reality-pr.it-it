@@ -1,42 +1,42 @@
 ---
-title: Pulsante
-description: Informazioni su come attivare un'azione immediata con i pulsanti, uno dei componenti di base della realtà mista.
+title: Button
+description: Scopri come attivare un'azione immediata con i pulsanti, uno dei componenti di base della realtà mista.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Realtà mista, controlli, interazione, interfaccia utente, esperienza utente, visore per realtà mista, visore windows mixed reality, visore per realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit, pulsante
-ms.openlocfilehash: ddad8b23950bddd03dd4024497c212d1cc950fb0
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Realtà mista, controlli, interazione, interfaccia utente, esperienza utente, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, HoloLens, MRTK, realtà mista Toolkit, pulsante
+ms.openlocfilehash: 602d5b8784c97676e29574e4a5b0ffb7b240f07c2c43bbe68e0f8bc49db9dd1f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600370"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219322"
 ---
 # <a name="button"></a>Button
 
 ![Button](images/UX_Hero_Button.jpg)
 
-Un pulsante consente agli utenti di attivare azioni immediate in un'esperienza di realtà mista. In HoloLens 2, i pulsanti hanno suggerimenti visivi e convenienze che consentono di aumentare la confidenza dell'interazione con gli utenti. 
+Un pulsante consente agli utenti di attivare azioni immediate in un'esperienza di realtà mista. In HoloLens 2, i pulsanti hanno segnali visivi e suggerimenti che consentono di aumentare la confidenza di interazione con gli utenti. 
 
 :::row:::
     :::column:::
-       ![Pulsante con l'effetto di luce di prossimità visualizzato](images/UX_Button_Affordance_ProximityLight.jpg)<br>
+       ![Pulsante con effetto di luce di prossimità visualizzato](images/UX_Button_Affordance_ProximityLight.jpg)<br>
        **Luce di prossimità**<br>
     :::column-end:::
     :::column:::
-       ![Pulsante selezionato con l'effetto evidenziazione dello stato attivo visualizzato](images/UX_Button_Affordance_FocusHighlight.jpg)<br>
+       ![Pulsante selezionato con l'effetto di evidenziazione dello stato attivo visualizzato](images/UX_Button_Affordance_FocusHighlight.jpg)<br>
         **Evidenziazione dello stato attivo**<br>
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       ![Pulsante premuto con l'effetto della compressione della cella visualizzata](images/UX_Button_Affordance_Compression.jpg)<br>
-       **Compressione di una cella**<br>
+       ![Pulsante premuto con l'effetto di compressione della compressione visualizzato](images/UX_Button_Affordance_Compression.jpg)<br>
+       **Compressione della compressa**<br>
     :::column-end:::
     :::column:::
-       ![Pulsante premuto con l'effetto trigger pulse visualizzato](images/UX_Button_Affordance_Pulse.jpg)<br>
+       ![Pulsante premuto con l'effetto di attivazione dell'effetto di pulsazione visualizzato](images/UX_Button_Affordance_Pulse.jpg)<br>
         **Pulse on trigger**<br>
     :::column-end:::
 :::row-end:::
@@ -46,13 +46,13 @@ Un pulsante consente agli utenti di attivare azioni immediate in un'esperienza d
 ---
 
 ## <a name="button-in-mrtkmixed-reality-toolkit-for-unity"></a>Pulsante in MRTK (Mixed Reality Toolkit) per Unity
-**[MRTK per Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)** offre vari tipi di prefab dei pulsanti, inclusi i pulsanti di tipo shell per HoloLens 2 e HoloLens (prima generazione). Il prefab del pulsante HoloLens 2 contiene diverse opzioni dettagliate che consentono di migliorare l'attendibilità degli utenti:
+**[MRTK per Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)** offre vari tipi di prefab di pulsanti, inclusi i pulsanti in stile shell per HoloLens 2 e HoloLens (prima generazione). Il prefab del pulsante HoloLens 2 contiene diversi argomenti dettagliati che consentono di migliorare la fiducia degli utenti:
 
 * Evidenziazione basata sulla prossimità
-* Compressione della cella anteriore
-* Effetto dell'impulso sul trigger.
+* Compressione della fronte
+* Effetto di pulsazione sul trigger.
 
-* Per altre istruzioni ed esempi personalizzati, vedere [MRTK - Pulsante.](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button)
+* Per altre istruzioni ed esempi personalizzati, vedere [MRTK - Button ( MRTK](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button) - Pulsante).
 
 <br>
 

@@ -5,20 +5,20 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, estensioni di sistema,
-ms.openlocfilehash: bb66d89db0bca5d0f2a6b49e1b6713d485988e35
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 7185d56e508be849b7fb0605d218a10527ee478d8762b60f2746c3ff236c8f9c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104682244"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220295"
 ---
 # <a name="systems-extension-services-and-data-providers"></a>Sistemi, servizi di estensione e provider di dati
 
-Nel Toolkit per la realtà mista, molte delle funzionalità vengono fornite sotto forma di servizi. I servizi sono raggruppati in tre categorie principali: sistemi, servizi di estensione e provider di dati.
+Nell'Toolkit realtà mista molte delle funzionalità vengono recapitate sotto forma di servizi. I servizi sono raggruppati in tre categorie principali: sistemi, servizi di estensione e provider di dati.
 
 ## <a name="systems"></a>-
 
-I sistemi sono servizi che forniscono le funzionalità principali del Toolkit di realtà mista. Tutti i sistemi sono implementazioni dell' [`IMixedRealityService`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityService) interfaccia.
+I sistemi sono servizi che forniscono le funzionalità di base dell'Toolkit. Tutti i sistemi sono implementazioni [`IMixedRealityService`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityService) dell'interfaccia .
 
 - [BoundarySystem](../features/boundary/boundary-system-getting-started.md)
 - [CameraSystem](../features/camera-system/camera-system-overview.md)
@@ -28,43 +28,43 @@ I sistemi sono servizi che forniscono le funzionalità principali del Toolkit di
 - [SpatialAwarenessSystem](../features/spatial-awareness/spatial-awareness-getting-started.md)
 - [TeleportSystem](../features/teleport-system/teleport-system.md)
 
-Ognuno dei sistemi elencati viene esposto nel [profilo](../features/profiles/profiles.md)di configurazione del componente MixedRealityToolkit.
+Ognuno dei sistemi elencati viene visualizzato nel profilo di configurazione [](../features/profiles/profiles.md)del componente MixedRealityToolkit.
 
 ## <a name="extensions"></a>Estensioni
 
-I servizi di estensione sono componenti che estendono le funzionalità del Toolkit di realtà mista. Tutti i servizi di estensione devono specificare che implementano l' [`IMixedRealityExtensionService`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService) interfaccia.
+I servizi di estensione sono componenti che estendono le funzionalità dell'Toolkit. Tutti i servizi di estensione devono specificare che implementano [`IMixedRealityExtensionService`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService) l'interfaccia .
 
-Per informazioni sulla creazione di servizi di estensione, fare riferimento all'articolo [servizi di estensione](../features/extensions/extension-services.md) .
+Per informazioni sulla creazione di servizi di estensione, vedere [l'articolo Servizi di](../features/extensions/extension-services.md) estensione.
 
-Per poter accedere a MRTK, i servizi di estensione sono registrati e configurati usando la sezione Extensions del profilo di configurazione del componente MixedRealityToolkit.
+Per essere accessibili a MRTK, i servizi di estensione vengono registrati e configurati usando la sezione Estensioni del profilo di configurazione del componente MixedRealityToolkit.
 
 ![Configurazione di un servizio di estensione](../features/images/profiles/ConfiguredExtensionService.png)
 
 ## <a name="data-providers"></a>Provider di dati
 
-I provider di dati sono componenti che, per nome, forniscono dati a un servizio Toolkit di realtà mista. Tutti i provider di dati devono specificare che implementano l' [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) interfaccia.
+I provider di dati sono componenti che, in base al nome, forniscono dati a un servizio Toolkit realtà mista. Tutti i provider di dati devono specificare che implementano [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) l'interfaccia .
 
 > [!NOTE]
-> Non tutti i servizi richiedono provider di dati. Dei sistemi del Toolkit di realtà mista, i sistemi di riconoscimento spaziale e di input sono gli unici servizi per usare i provider di dati.
+> Non tutti i servizi richiedono provider di dati. Tra i sistemi Toolkit realtà mista, i sistemi input e consapevolezza spaziale sono gli unici servizi che utilizzano i provider di dati.
 
-Per essere accessibile al servizio MRTK specifico, i provider di dati vengono registrati nel profilo di configurazione del servizio.
+Per essere accessibili al servizio MRTK specifico, i provider di dati vengono registrati nel profilo di configurazione del servizio.
 
-Il codice dell'applicazione accede ai provider di dati tramite l' [`IMixedRealityDataProviderAccess`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess) interfaccia. Per semplificare l'accesso, è inoltre possibile recuperare i provider di dati tramite la `CoreServices` classe helper.
+Il codice dell'applicazione accede ai provider di dati tramite [`IMixedRealityDataProviderAccess`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess) l'interfaccia . Per semplificare l'accesso, i provider di dati possono essere recuperati anche tramite la `CoreServices` classe helper .
 
 ```c#
 var inputSimulationService = CoreServices.GetDataProvider<IInputSimulationService>(CoreServices.InputSystem);
 ```
 
 > [!IMPORTANT]
-> Sebbene `IMixedRealityDataProvider` erediti da `IMixedRealityService` , i provider di dati non sono registrati con `MixedRealityServiceRegistry` . Per accedere ai provider di dati, il codice dell'applicazione deve eseguire una query sull'istanza del servizio per la quale sono stati registrati (ad esempio, il sistema di input).
+> Anche `IMixedRealityDataProvider` se eredita da , i provider di dati non vengono registrati con `IMixedRealityService` `MixedRealityServiceRegistry` . Per accedere ai provider di dati, il codice dell'applicazione deve eseguire una query sull'istanza del servizio per cui sono stati registrati (ad esempio: sistema di input).
 
 ### <a name="input"></a>Input
 
-Il sistema di input MRTK utilizza solo i provider di dati che implementano [`IMixedRealityInputDeviceManager`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputDeviceManager) .
+Il sistema di input MRTK usa solo provider di dati che implementano [`IMixedRealityInputDeviceManager`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputDeviceManager) .
 
 ![Provider di dati di sistema di input](../features/images/input/RegisteredServiceProviders.PNG)
 
-Nell'esempio seguente viene illustrato l'accesso al provider della simulazione di input e la proprietà SmoothEyeTracking.
+L'esempio seguente illustra l'accesso al provider di simulazione di input e l'attivazione/disattivazione della proprietà SmoothEyeTracking.
 
 ```c#
 IMixedRealityDataProviderAccess dataProviderAccess = CoreServices.InputSystem as IMixedRealityDataProviderAccess;
@@ -81,7 +81,7 @@ if (dataProviderAccess != null)
 }
 ```
 
-L'accesso a un provider di dati per il sistema di input di base può anche essere semplificato tramite l'uso della `CoreServices` classe helper.
+L'accesso a un provider di dati per il sistema di input principale può essere semplificato anche tramite l'uso della classe `CoreServices` helper.
 
 ```c#
 var inputSimulationService = CoreServices.GetInputSystemDataProvider<IInputSimulationService>();
@@ -94,15 +94,15 @@ if (inputSimulationService != null)
 > [!NOTE]
 > Il sistema di input restituisce solo i provider di dati supportati per la piattaforma in cui è in esecuzione l'applicazione.
 
-Per informazioni sulla scrittura di un provider di dati per il sistema di input MRTK, vedere [creazione di un provider di dati di sistema di input](../features/input/create-data-provider.md).
+Per informazioni sulla scrittura di un provider di dati per il sistema di input MRTK, vedere Creazione di un provider di [dati del sistema di input](../features/input/create-data-provider.md).
 
 ### <a name="spatial-awareness"></a>Consapevolezza spaziale
 
-Il sistema di riconoscimento spaziale MRTK utilizza solo i provider di dati che implementano l' [`IMixedRealitySpatialAwarenessObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver) interfaccia.
+Il sistema di riconoscimento spaziale MRTK usa solo provider di dati che implementano [`IMixedRealitySpatialAwarenessObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver) l'interfaccia .
 
 ![Provider di dati del sistema di riconoscimento spaziale](../features/images/spatial-awareness/SpatialAwarenessProfile.png)
 
-Nell'esempio seguente viene illustrato l'accesso ai provider di dati di mesh spaziali registrati e la modifica della visibilità dei mesh.
+L'esempio seguente illustra l'accesso ai provider di dati di mesh spaziali registrati e la modifica della visibilità delle mesh.
 
 ```c#
 IMixedRealityDataProviderAccess dataProviderAccess =
@@ -121,7 +121,7 @@ if (dataProviderAccess != null)
 }
 ```
 
-L'accesso a un provider di dati per il sistema di riconoscimento spaziale principale può anche essere semplificato tramite l'uso della `CoreServices` classe helper.
+L'accesso a un provider di dati per il sistema di riconoscimento spaziale principale può essere semplificato anche tramite l'uso della `CoreServices` classe helper.
 
 ```c#
 var dataProvider = CoreServices.GetSpatialAwarenessSystemDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
@@ -134,14 +134,14 @@ if (dataProvider != null)
 > [!NOTE]
 > Il sistema di riconoscimento spaziale restituisce solo i provider di dati supportati per la piattaforma in cui è in esecuzione l'applicazione.
 
-Per informazioni sulla scrittura di un provider di dati per il sistema di riconoscimento spaziale MRTK, vedere [creazione di un provider di dati di sistema per la consapevolezza spaziale](../features/spatial-awareness/create-data-provider.md).
+Per informazioni sulla scrittura di un provider di dati per il sistema di riconoscimento spaziale MRTK, vedere Creazione di un provider di dati [del sistema di riconoscimento spaziale](../features/spatial-awareness/create-data-provider.md).
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Cosa rende una funzionalità di realtà mista](mixed-reality-services.md)
+- [Che cosa rende una funzionalità di realtà mista](mixed-reality-services.md)
 - [Servizi di estensione](../features/extensions/extension-services.md)
-- [Creazione di un provider di dati di sistema di input](../features/input/create-data-provider.md)
-- [Creazione di un provider di dati di sistema del sistema di riconoscimento spaziale](../features/spatial-awareness/create-data-provider.md)
+- [Creazione di un provider di dati del sistema di input](../features/input/create-data-provider.md)
+- [Creazione di un provider di dati del sistema di riconoscimento spaziale](../features/spatial-awareness/create-data-provider.md)
 - [Interfaccia IMixedRealityService](xref:Microsoft.MixedReality.Toolkit.IMixedRealityService)
 - [Interfaccia IMixedRealityDataProvider](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider)
 - [Interfaccia IMixedRealityExtensionService](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService)

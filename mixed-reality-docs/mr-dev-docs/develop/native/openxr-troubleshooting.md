@@ -1,27 +1,27 @@
 ---
 title: Risoluzione dei problemi di OpenXR
-description: Trovare le risorse e le risposte ai problemi comuni di risoluzione dei problemi nelle applicazioni OpenXR di realtà miste di Windows.
+description: Trovare risorse e risposte ai problemi comuni di risoluzione dei problemi nelle Windows Mixed Reality OpenXR.
 author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
-keywords: OpenXR, Khronos, BasicXRApp, DirectX, nativo, app nativa, motore personalizzato, middleware, risoluzione dei problemi
-ms.openlocfilehash: 6e1696bca4f31f70af10c32087400ed56efa3c11
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: OpenXR, Khronos, BasicXRApp, DirectX, app nativa, nativa, motore personalizzato, middleware, risoluzione dei problemi
+ms.openlocfilehash: 456dcf927c70aaaebc8dda1338d24acc910a1e801cf29e8880048d44f9432718
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006731"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219205"
 ---
 # <a name="openxr-troubleshooting"></a>Risoluzione dei problemi di OpenXR
 
-Di seguito sono riportati alcuni suggerimenti per la risoluzione dei problemi durante lo sviluppo di un'app OpenXR con la realtà mista di Windows OpenXR Runtime.  Per eventuali altre domande sulla <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">specifica OpenXR 1,0</a>, visitare il <a href="https://community.khronos.org/c/openxr" target="_blank">Forum Khronos OpenXR</a> o il <a href="https://khr.io/slack" target="_blank">canale Slack #openxr</a>.
+Ecco alcuni suggerimenti per la risoluzione dei problemi quando si sviluppa un'app OpenXR usando Windows Mixed Reality OpenXR Runtime.  Per altre domande sulla specifica <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">OpenXR 1.0,</a>visitare i forum di <a href="https://community.khronos.org/c/openxr" target="_blank">Khronos OpenXR</a> o <a href="https://khr.io/slack" target="_blank">slack #openxr canale</a>.
 
 >[!NOTE]
->Si sono verificati problemi noti nel runtime corrente di Windows mixed OpenXR con app x86.  Al momento, è necessario compilare app desktop OpenXR per x64.
+>Esistono problemi noti nella versione corrente Windows Mixed Reality runtime OpenXR con app x86.  Al momento è consigliabile creare app OpenXR desktop per x64.
 
-### <a name="openxr-app-not-starting-windows-mixed-reality"></a>App OpenXR che non avvia la realtà mista di Windows
+### <a name="openxr-app-not-starting-windows-mixed-reality"></a>L'app OpenXR non viene Windows Mixed Reality
 
-Se l'app OpenXR non avvia la realtà mista di Windows quando viene eseguita, il runtime di OpenXR per la realtà mista di Windows non può essere impostato come runtime attivo. Per risolvere il problema, seguire le istruzioni per iniziare a usare [OpenXR per le cuffie di realtà miste di Windows](openxr-getting-started.md#getting-started-with-openxr-for-windows-mixed-reality-headsets) .
+Se l'app OpenXR non viene Windows Mixed Reality al momento dell'esecuzione, il runtime Windows Mixed Reality OpenXR potrebbe non essere impostato come runtime attivo. Seguire le istruzioni per [iniziare a usare OpenXR](openxr-getting-started.md#getting-started-with-openxr-for-windows-mixed-reality-headsets) per Windows Mixed Reality visori VR per risolvere il problema.
 
-È anche possibile eseguire il [strumenti di sviluppo OpenXR per la realtà mista di Windows](openxr-getting-started.md#getting-the-openxr-developer-tools-for-windows-mixed-reality) per ottenere informazioni sulla risoluzione dei problemi sullo stato del runtime di Windows Mixed Reality OpenXR.
+È anche possibile eseguire [OpenXR Strumenti di sviluppo for Windows Mixed Reality](openxr-getting-started.md#getting-the-openxr-developer-tools-for-windows-mixed-reality) per ottenere informazioni sulla risoluzione dei problemi relativi allo stato dei sistemi Windows Mixed Reality OpenXR Runtime.

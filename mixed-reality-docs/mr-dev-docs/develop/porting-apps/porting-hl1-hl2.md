@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, MRTK, MRTK versione 2, HoloLens 2, unity, porting, HoloLens 1a generazione, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, migrazione, procedure consigliate, ARM
-ms.openlocfilehash: 512bd3e841d40ffd606d59ee4bb4d955306cc2d0
-ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
+ms.openlocfilehash: f7a70a8bd5a6d11d6502b431b17bbd3391d24ce4e19f0a842503ccae834589fa
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "113042252"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219287"
 ---
 # <a name="porting-hololens-1st-gen-apps-to-hololens-2"></a>Conversione di app HoloLens (prima generazione) in HoloLens 2
 

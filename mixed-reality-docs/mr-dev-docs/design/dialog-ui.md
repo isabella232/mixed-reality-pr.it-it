@@ -5,17 +5,17 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
-keywords: Realtà mista, HoloLens, controlli dell'interfaccia utente, interazione, interfaccia utente, UX Design, interfaccia utente spaziale, interazione spaziale, interfaccia utente 3D, esperienza utente 3D, visore per realtà mista, visore windows mixed reality, visore per realtà virtuale, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: aa85402f765e8b02842054db0c2fb37ca4fa9d93
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Realtà mista, HoloLens, controlli dell'interfaccia utente, interazione, interfaccia utente, UX Design, interfaccia utente spaziale, interazione spaziale, interfaccia utente 3D, esperienza utente 3D, visore per realtà mista, visore windows mixed reality, visore di realtà virtuale, HoloLens, MRTK, realtà mista Toolkit
+ms.openlocfilehash: 044953b1ac4af60c413f177cac13d9411cf9dc9523e7def74c99487eb5ee6102
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600310"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219257"
 ---
 # <a name="dialog"></a>Finestra di dialogo
 
-![Screenshot della sovrapposizione di una finestra di dialogo con pulsanti sì e no visualizzati in HoloLens](images/MRTK_UX_Dialog.jpg)
+![Screenshot della sovrapposizione di una finestra di dialogo con pulsanti sì e no visualizzati HoloLens](images/MRTK_UX_Dialog.jpg)
 
 I controlli finestra di dialogo sono sovrapposizioni dell'interfaccia utente che forniscono informazioni contestuali sull'app, spesso richiedendo un'azione dell'utente. Usare i dialoghe per fornire agli utenti informazioni importanti e richiedere conferma o informazioni aggiuntive prima che sia possibile completare un'azione.
 
@@ -30,7 +30,7 @@ MRTK fornisce il controllo dialogo in tre dimensioni con una o due opzioni del p
 - DialogMedium_192x128.prefab: 192x128mm
 - DialogLarge_192x192.prefab: 192x192mm
 
-![Screenshot delle sovrapposizioni delle finestre di dialogo di dimensioni diverse in esecuzione in HoloLens](images/MRTK_UX_Dialog_Types.jpg)
+![Screenshot delle sovrapposizioni delle finestre di dialogo di dimensioni diverse in esecuzione HoloLens](images/MRTK_UX_Dialog_Types.jpg)
 
 
 * Per altre informazioni, vedere [MRTK - Dialog](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/dialog).

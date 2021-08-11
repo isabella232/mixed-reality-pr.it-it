@@ -1,41 +1,41 @@
 ---
 title: Input vocale in DirectX
-description: Viene illustrato come implementare i comandi vocali e il riconoscimento di frasi e frasi brevi in un'app DirectX per la realtà mista di Windows.
+description: Illustra come implementare comandi vocali e il riconoscimento di frasi e frasi di piccole dimensioni in un'app DirectX per Windows Mixed Reality.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: procedura dettagliata, comando vocale, frase, riconoscimento, sintesi vocale, DirectX, piattaforma, Cortana, realtà mista di Windows
-ms.openlocfilehash: 5f7ed587b474d147c0b13e4896a89f655f8dc30b
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: procedura dettagliata, comando vocale, frase, riconoscimento, riconoscimento vocale, directx, piattaforma, cortana, realtà mista di Windows
+ms.openlocfilehash: e30d5c2101bed4b613111b6131a3e94d654c3ff5b1e913f4d8e275ffc1a2776a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583745"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221841"
 ---
 # <a name="voice-input-in-directx"></a>Input vocale in DirectX
 
 > [!NOTE]
-> Questo articolo si riferisce alle API native di WinRT legacy.  Per i nuovi progetti di app native, è consigliabile usare l' **[API OpenXR](openxr-getting-started.md)**.
+> Questo articolo è correlato alle API native WinRT legacy.  Per i nuovi progetti di app native, è consigliabile usare **[l'API OpenXR](openxr-getting-started.md)**.
 
-Questo articolo illustra come implementare i [comandi vocali](../../design/voice-input.md) e il riconoscimento di frasi brevi e frasi in un'app DirectX per la realtà mista di Windows.
+Questo articolo illustra come implementare i comandi [vocali e](../../design/voice-input.md) il riconoscimento di frasi piccole e frasi in un'app DirectX per Windows Mixed Reality.
 
 >[!NOTE]
->I frammenti di codice in questo articolo usano C++/CX anziché C++/WinRT conforme a C + 17, usato nel [modello di progetto olografico c++](creating-a-holographic-directx-project.md).  I concetti sono equivalenti per un progetto C++/WinRT, ma è necessario tradurre il codice.
+>I frammenti di codice in questo articolo usano C++/CX anziché C++17 conforme a C++/WinRT, che viene usato nel modello di progetto [olografico C++.](creating-a-holographic-directx-project.md)  I concetti sono equivalenti per un progetto C++/WinRT, ma è necessario tradurre il codice.
 
 ## <a name="use-speechrecognizer-for-continuous-speech-recognition"></a>Usare SpeechRecognizer per il riconoscimento vocale continuo
 
-Questa sezione descrive come usare il riconoscimento vocale continuo per abilitare i comandi vocali nell'app. Questa procedura dettagliata usa il codice dell'esempio [HolographicVoiceInput](https://go.microsoft.com/fwlink/p/?LinkId=844964) . Quando l'esempio è in esecuzione, pronunciare il nome di uno dei comandi colorati registrati per modificare il colore del cubo rotante.
+Questa sezione descrive come usare il riconoscimento vocale continuo per abilitare i comandi vocali nell'app. Questa procedura guidata usa il codice [dell'esempio HolographicVoiceInput.](https://go.microsoft.com/fwlink/p/?LinkId=844964) Quando l'esempio è in esecuzione, pronunciare il nome di uno dei comandi di colore registrati per modificare il colore del cubo rotante.
 
-Per prima cosa, creare una nuova istanza di *Windows:: media:: sintesi vocale:: SpeechRecognizer* .
+Creare prima di tutto una *nuova Windows::Media::SpeechRecognition::SpeechRecognizer.*
 
-Da *HolographicVoiceInputSampleMain:: CreateSpeechConstraintsForCurrentState*:
+Da *HolographicVoiceInputSampleMain::CreateSpeechConstraintsForCurrentState*:
 
 ```
 m_speechRecognizer = ref new SpeechRecognizer();
 ```
 
-Creare un elenco di comandi vocali per il riconoscimento da ascoltare. Qui viene costruito un set di comandi per modificare il colore di un ologramma. Per praticità, vengono creati anche i dati che verranno usati per i comandi in un secondo momento.
+Creare un elenco di comandi vocali per il riconoscimento vocale per l'ascolto. In questo caso si costruisce un set di comandi per modificare il colore di un ologramma. Per praticità, verranno creati anche i dati che verranno utilizzati per i comandi in un secondo momento.
 
 ```
 m_speechCommandList = ref new Platform::Collections::Vector<String^>();
@@ -67,7 +67,7 @@ m_speechCommandList->Append(StringReference(L"SpeechRecognizer"));
    m_speechCommandData.push_back(float4(0.5f, 0.1f, 1.f, 1.f));
 ```
 
-Per caricare l'elenco di comandi nell'elenco di vincoli per il riconoscimento vocale, usare un oggetto [SpeechRecognitionListConstraint](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint) .
+Per caricare l'elenco di comandi nell'elenco di vincoli per il riconoscimento vocale, usare un [oggetto SpeechRecognitionListConstraint.](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint)
 
 ```
 SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListConstraint(m_speechCommandList);
@@ -86,7 +86,7 @@ SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListCon
    });
 ```
 
-Sottoscrivere l'evento [ResultGenerated](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession) sulla [SpeechContinuousRecognitionSession](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession)del riconoscimento vocale. Questo evento invia una notifica all'app quando uno dei comandi è stato riconosciuto.
+Sottoscrivere [l'evento ResultGenerated](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession) nella [sessione SpeechContinuousRecognitionSession del riconoscimento vocale.](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession) Questo evento invia una notifica all'app quando uno dei comandi è stato riconosciuto.
 
 ```
 m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
@@ -95,9 +95,9 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
            );
 ```
 
-Il gestore dell'evento *OnResultGenerated* riceve i dati dell'evento in un'istanza di [SpeechContinuousRecognitionResultGeneratedEventArgs](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionResultGeneratedEventArgs) . Se la confidenza è maggiore della soglia definita, l'applicazione deve tenere presente che si è verificato l'evento. Salvare i dati dell'evento in modo che sia possibile utilizzarli in un ciclo di aggiornamento successivo.
+Il *gestore dell'evento OnResultGenerated* riceve i dati dell'evento in un'istanza [speechContinuousRecognitionResultGeneratedEventArgs.](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionResultGeneratedEventArgs) Se l'attendibilità è maggiore della soglia definita, l'app dovrebbe notare che l'evento si è verificato. Salvare i dati dell'evento in modo che sia possibile usarli in un ciclo di aggiornamento successivo.
 
-Da *HolographicVoiceInputSampleMain. cpp*:
+Da *HolographicVoiceInputSampleMain.cpp:*
 
 ```
 // Change the cube color, if we get a valid result.
@@ -110,9 +110,9 @@ Da *HolographicVoiceInputSampleMain. cpp*:
    }
 ```
 
-Nel codice di esempio, viene modificato il colore del cubo dell'ologramma rotante in base al comando dell'utente.
+Nel codice di esempio viene modificato il colore del cubo dell'ologramma rotante in base al comando dell'utente.
 
-Da *HolographicVoiceInputSampleMain:: Update*:
+Da *HolographicVoiceInputSampleMain::Update*:
 
 ```
 // Check for new speech input since the last frame.
@@ -135,15 +135,15 @@ Da *HolographicVoiceInputSampleMain:: Update*:
    }
 ```
 
-## <a name="use-one-shot-recognition"></a>Usa il riconoscimento "One-Shot"
+## <a name="use-one-shot-recognition"></a>Usare il riconoscimento "one-shot"
 
-È possibile configurare un riconoscimento vocale per ascoltare frasi o frasi pronunciate dall'utente. In questo caso, viene applicato un *SpeechRecognitionTopicConstraint* che indica al riconoscimento vocale il tipo di input previsto. Ecco un flusso di lavoro dell'app per questo scenario:
-1. L'app crea il SpeechRecognizer, fornisce prompt dell'interfaccia utente e inizia l'ascolto di un comando parlato.
+È possibile configurare un sistema di riconoscimento vocale per l'ascolto di frasi o frasi parlate dall'utente. In questo caso, viene applicato *un oggetto SpeechRecognitionTopicConstraint* che indica al sistema di riconoscimento vocale il tipo di input previsto. Ecco un flusso di lavoro dell'app per questo scenario:
+1. L'app crea SpeechRecognizer, fornisce prompt dell'interfaccia utente e inizia ad ascoltare un comando parlato.
 2. L'utente pronuncia una frase o una frase.
-3. Il riconoscimento della voce dell'utente si verifica e viene restituito un risultato all'app. A questo punto, l'app deve fornire un prompt dell'interfaccia utente per indicare che si è verificato il riconoscimento.
-4. A seconda del livello di confidenza a cui si desidera rispondere e del livello di confidenza del risultato del riconoscimento vocale, l'app può elaborare il risultato e rispondere nel modo appropriato.
+3. Viene eseguito il riconoscimento vocale dell'utente e viene restituito un risultato all'app. A questo punto, l'app deve fornire un prompt dell'interfaccia utente per indicare che si è verificato il riconoscimento.
+4. A seconda del livello di confidenza a cui si vuole rispondere e del livello di attendibilità del risultato del riconoscimento vocale, l'app può elaborare il risultato e rispondere in base alle esigenze.
 
-Questa sezione descrive come creare un SpeechRecognizer, compilare il vincolo e restare in ascolto dell'input vocale.
+Questa sezione descrive come creare un oggetto SpeechRecognizer, compilare il vincolo e restare in ascolto dell'input vocale.
 
 Il codice seguente compila il vincolo dell'argomento, che in questo caso è ottimizzato per la ricerca Web.
 
@@ -171,7 +171,7 @@ try
                {
 ```
 
-Il risultato viene quindi restituito all'app. Se il risultato è sufficientemente sicuro, è possibile elaborare il comando. Questo esempio di codice elabora i risultati con almeno una confidenza media.
+Il risultato viene quindi restituito all'app. Se il risultato è abbastanza sicuro, è possibile elaborare il comando. Questo esempio di codice elabora i risultati con attendibilità minima media.
 
 ```
 try
@@ -212,7 +212,7 @@ try
                    }
 ```
 
-Quando si usa il riconoscimento vocale, controllare le eccezioni che potrebbero indicare che l'utente ha disattivato il microfono nelle impostazioni relative alla privacy del sistema. Questo problema può verificarsi durante l'inizializzazione o il riconoscimento.
+Ogni volta che si usa il riconoscimento vocale, cercare le eccezioni che potrebbero indicare che l'utente ha disattivato il microfono nelle impostazioni di privacy del sistema. Questa operazione può verificarsi durante l'inizializzazione o il riconoscimento.
 
 ```
 catch (Exception^ exception)
@@ -256,16 +256,16 @@ catch (Exception^ exception)
 ```
 
 > [!NOTE]
-> Sono disponibili diversi [SpeechRecognitionScenarios](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionScenario) predefiniti che è possibile usare per ottimizzare il riconoscimento vocale.
+> Esistono diversi [speechRecognitionScenarios](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionScenario) predefiniti che è possibile usare per ottimizzare il riconoscimento vocale.
 
-* Per ottimizzare la dettatura, utilizzare lo scenario di dettatura.<br/>
+* Per ottimizzare la dettatura, usare lo scenario di dettatura.<br/>
    ```
    // Compile the dictation topic constraint, which optimizes for speech dictation.
    auto dictationConstraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::Dictation, "dictation");
    m_speechRecognizer->Constraints->Append(dictationConstraint);
    ```
 
-* Per le ricerche web vocali, utilizzare il seguente vincolo di scenario specifico per il Web.
+* Per le ricerche Web vocali, usare il vincolo dello scenario specifico del Web seguente.
 
    ```
    // Add a web search topic constraint to the recognizer.
@@ -273,7 +273,7 @@ catch (Exception^ exception)
    speechRecognizer->Constraints->Append(webSearchConstraint);
    ```
 
-* Utilizzare il vincolo form per compilare i moduli. In questo caso, è preferibile applicare la propria grammatica ottimizzata per compilare il modulo.
+* Usare il vincolo del modulo per compilare i moduli. In questo caso, è meglio applicare la propria grammatica ottimizzata per la compilazione del modulo.
 
    ```
    // Add a form constraint to the recognizer.
@@ -282,11 +282,11 @@ catch (Exception^ exception)
    ```
 * È possibile fornire la propria grammatica nel formato SRGS.
 
-## <a name="use-continuous-recognition"></a>Usa il riconoscimento continuo
+## <a name="use-continuous-recognition"></a>Usare il riconoscimento continuo
 
-Per lo scenario di dettatura continua, vedere l' [esempio di codice di riconoscimento vocale di Windows 10 UWP](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp).
+Per lo scenario di dettatura continua, vedere l'esempio di Windows 10 di codice vocale [UWP.](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp)
 
-## <a name="handle-quality-degradation"></a>Gestione della riduzione della qualità
+## <a name="handle-quality-degradation"></a>Gestire la riduzione della qualità
 
 Le condizioni ambientali talvolta interferiscono con il riconoscimento vocale. Ad esempio, la stanza potrebbe essere troppo rumorosa o l'utente potrebbe parlare troppo forte. Quando possibile, l'API riconoscimento vocale fornisce informazioni sulle condizioni che hanno causato la riduzione della qualità. Queste informazioni vengono inserite nell'app tramite un evento WinRT. Nell'esempio seguente viene illustrato come sottoscrivere questo evento.
 
@@ -297,7 +297,7 @@ m_speechRecognizer->RecognitionQualityDegrading +=
            );
 ```
 
-Nell'esempio di codice vengono scritte le informazioni sulle condizioni nella console di debug. Un'app potrebbe voler fornire feedback all'utente tramite l'interfaccia utente, la sintesi vocale e un altro metodo. In alternativa, potrebbe essere necessario comportarsi in modo diverso quando il discorso viene interrotto da una riduzione temporanea della qualità.
+Nell'esempio di codice si scrivono le informazioni sulle condizioni nella console di debug. Un'app potrebbe voler fornire commenti e suggerimenti all'utente tramite l'interfaccia utente, la sintesi vocale e un altro metodo. Oppure potrebbe essere necessario comportarsi in modo diverso quando la voce viene interrotta da una riduzione temporanea della qualità.
 
 ```
 void HolographicSpeechPromptSampleMain::OnSpeechQualityDegraded(SpeechRecognizer^ recognizer, SpeechRecognitionQualityDegradingEventArgs^ args)
@@ -336,7 +336,7 @@ void HolographicSpeechPromptSampleMain::OnSpeechQualityDegraded(SpeechRecognizer
    }
 ```
 
-Se non si usano le classi di riferimento per creare l'app DirectX, è necessario annullare la sottoscrizione all'evento prima di rilasciare o ricreare il riconoscimento vocale. HolographicSpeechPromptSample dispone di una routine per arrestare il riconoscimento e annullare la sottoscrizione agli eventi.
+Se non si usano classi di riferimento per creare l'app DirectX, è necessario annullare la sottoscrizione all'evento prima di rilasciare o ricreare il riconoscimento vocale. HolographicSpeechPromptSample include una routine per arrestare il riconoscimento e annullare la sottoscrizione agli eventi.
 
 ```
 Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizerIfExists()
@@ -363,26 +363,26 @@ Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizer
    }
 ```
 
-## <a name="use-speech-synthesis-to-provide-audible-prompts"></a>Usare la sintesi vocale per fornire richieste acustiche
+## <a name="use-speech-synthesis-to-provide-audible-prompts"></a>Usare la sintesi vocale per fornire prompt udibili
 
-Gli esempi di riconoscimento vocale olografico usano la sintesi vocale per fornire istruzioni acustiche all'utente. Questa sezione illustra come creare un esempio di voce sintetizzata e riprodurlo con le API HRTF audio.
+Gli esempi di riconoscimento vocale olografico usano la sintesi vocale per fornire istruzioni udibili all'utente. Questa sezione illustra come creare un esempio di voce sintetizzata e quindi riprodurlo tramite le API audio HRTF.
 
-Quando si richiede l'input di frasi, è consigliabile fornire le proprie richieste di riconoscimento vocale. I prompt possono anche indicare quando è possibile pronunciare i comandi vocali per uno scenario di riconoscimento continuo. Nell'esempio seguente viene illustrato come utilizzare un sintetizzatore vocale a tale scopo. È anche possibile usare un clip vocale pre-registrato, un'interfaccia utente visiva o un altro indicatore degli elementi da pronunciare, ad esempio negli scenari in cui il messaggio di richiesta non è dinamico.
+Quando si richiede l'input di frasi, è consigliabile fornire prompt vocali personalizzati. Le richieste possono anche indicare quando i comandi vocali possono essere pronunciati per uno scenario di riconoscimento continuo. L'esempio seguente illustra come usare un sintetizzatore vocale a tale scopo. È anche possibile usare un clip vocale preregistrato, un'interfaccia utente visiva o un altro indicatore di cosa dire, ad esempio negli scenari in cui la richiesta non è dinamica.
 
-Per prima cosa, creare l'oggetto SpeechSynthesizer.
+Creare prima di tutto l'oggetto SpeechSynthesizer.
 
 ```
 auto speechSynthesizer = ref new Windows::Media::SpeechSynthesis::SpeechSynthesizer();
 ```
 
-È anche necessaria una stringa che includa il testo da sintetizzare.
+È necessaria anche una stringa che includa il testo da sintetizzare.
 
 ```
 // Phrase recognition works best when requesting a phrase or sentence.
    StringReference voicePrompt = L"At the prompt: Say a phrase, asking me to change the cube to a specific color.";
 ```
 
-Il riconoscimento vocale viene sintetizzato in modo asincrono tramite SynthesizeTextToStreamAsync. Qui viene avviata un'attività asincrona per sintetizzare il discorso.
+La sintesi vocale viene sintetizzata in modo asincrono tramite SynthesizeTextToStreamAsync. In questo caso, si avvia un'attività asincrona per sintetizzare il parlato.
 
 ```
 create_task(speechSynthesizer->SynthesizeTextToStreamAsync(voicePrompt), task_continuation_context::use_current())
@@ -392,7 +392,7 @@ create_task(speechSynthesizer->SynthesizeTextToStreamAsync(voicePrompt), task_co
        {
 ```
 
-La sintesi vocale viene inviata come flusso di byte. È possibile usare il flusso di byte per inizializzare una voce XAudio2. Per gli esempi di codice olografico, viene riprodotto come effetto audio HRTF.
+La sintesi vocale viene inviata come flusso di byte. È possibile usare tale flusso di byte per inizializzare una voce XAudio2. Per gli esempi di codice olografico, viene riprodotto come effetto audio HRTF.
 
 ```
 Windows::Media::SpeechSynthesis::SpeechSynthesisStream^ stream = synthesisStreamTask.get();
@@ -414,7 +414,7 @@ Windows::Media::SpeechSynthesis::SpeechSynthesisStream^ stream = synthesisStream
        }
 ```
 
-Come per il riconoscimento vocale, la sintesi vocale genera un'eccezione se si verifica un errore.
+Come per il riconoscimento vocale, la sintesi vocale genera un'eccezione in caso di problemi.
 
 ```
 catch (Exception^ exception)
@@ -430,6 +430,6 @@ catch (Exception^ exception)
    });
 ```
 
-## <a name="see-also"></a>Vedere anche
-* [Progettazione di app vocali](/windows/uwp/design/input/speech-interactions)
-* [Esempio SpeechRecognitionAndSynthesis](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)
+## <a name="see-also"></a>Vedi anche
+* [Progettazione di app per il riconoscimento vocale](/windows/uwp/design/input/speech-interactions)
+* [Esempio di SpeechRecognitionAndSynthesis](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)

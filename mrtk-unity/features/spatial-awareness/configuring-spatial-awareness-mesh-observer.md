@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: aba49e88d4fc555a88fe42e4b09858f1d2453ddc
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: 00a3b9afe1970239f52b1ead4f87f930c5826ba75522b99a52cf368249c9fd83
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281934"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228458"
 ---
 # <a name="configuring-mesh-observers-for-device"></a>Configurazione degli osservatori mesh per il dispositivo
 
@@ -26,11 +26,11 @@ I due elementi seguenti devono essere definiti per primi quando si configura un 
 > [!NOTE]
 > Tutti gli osservatori devono estendere [l'interfaccia IMixedRealitySpatialAwarenessObserver.](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver)
 
-![Tipi di piattaforma Impostazioni Mesh Observer](../images/spatial-awareness/SpatialAwarenessMeshObserverProfile_TypesPlatforms.png)
+![Tipi di piattaforma Impostazioni Mesh Observer General](../images/spatial-awareness/SpatialAwarenessMeshObserverProfile_TypesPlatforms.png)
 
 ### <a name="general-settings"></a>Impostazioni generali
 
-![Impostazioni generali dell'osservatore di mesh Impostazioni genral](../images/spatial-awareness/MeshObserverGeneralSettings.png)
+![Impostazioni generali dell'osservatore Impostazioni genral](../images/spatial-awareness/MeshObserverGeneralSettings.png)
 
 **Comportamento di avvio**
 
@@ -39,7 +39,7 @@ Il comportamento di avvio specifica se l'osservatore inizierà l'esecuzione alla
 * *Avvio automatico:* valore predefinito in base al quale l'osservatore inizierà l'operazione dopo l'inizializzazione
 * *Avvio manuale:* l'osservatore attende di essere indirizzato all'avvio
 
-Se si usa *l'avvio* manuale, è necessario [riprenderli e sospenderli in fase di esecuzione tramite codice](usage-guide.md#starting-and-stopping-mesh-observation).
+Se si usa *l'avvio* manuale, è [necessario riprenderli e sospenderli in fase di esecuzione tramite codice](usage-guide.md#starting-and-stopping-mesh-observation).
 
 **Intervallo di aggiornamento**
 
@@ -53,7 +53,7 @@ Non verranno calcolati dati mesh per alcuna area fisica esterna allo spazio Obse
 
 **Forma osservatore**
 
-La forma observer definisce il tipo di volume che verrà utilizzato dall'osservatore mesh durante l'osservazione delle mesh. Le opzioni supportate sono:
+La forma osservatore definisce il tipo di volume che verrà utilizzato dall'osservatore mesh durante l'osservazione delle mesh. Le opzioni supportate sono:
 
 * *Cubo allineato* all'asse: forma rettangolare che rimane allineata agli assi del sistema di coordinate del mondo, come determinato all'avvio dell'applicazione.
 * *Cubo allineato dall'utente* : forma rettangolare che ruota per allinearsi al sistema di coordinate locale degli utenti.
@@ -72,7 +72,7 @@ Gli extent di osservazione definiscono la distanza dal punto di osservazione in 
 Livello fisico su cui verranno posizionati gli oggetti mesh spaziali per interagire con i sistemi Unity Physics e RayCast.
 
 > [!NOTE]
-> Per impostazione predefinita, Toolkit realtà mista riserva *il livello 31* per l'uso da parte degli osservatori di Consapevolezza spaziale.
+> Per impostazione predefinita, Toolkit realtà mista riserva *il livello 31* per l'uso da parte degli osservatori di consapevolezza spaziale.
 
 **Ricalcolare le normali**
 
@@ -86,7 +86,7 @@ Specifica se l'osservatore mesh ricalcolerà o meno le normali della mesh dopo l
 
 Specifica il livello di dettaglio (LOD) dei dati della mesh spaziale. I valori attualmente definiti sono Grosso, Fine e Personalizzato.
 
-* *Grosso modo: consente di* avere un impatto minore sulle prestazioni dell'applicazione ed è una scelta eccellente per la ricerca di navigazione/piano.
+* *Grosso modo: influisce* meno sulle prestazioni dell'applicazione ed è un'ottima scelta per la ricerca di navigazione/piano.
 
 * *Media:* impostazione bilanciata spesso utile per le esperienze che analizzano continuamente l'ambiente alla ricerca di caratteristiche, piani e pareti di grandi dimensioni, nonché dettagli di occlusione.
 
@@ -95,7 +95,7 @@ Specifica il livello di dettaglio (LOD) dei dati della mesh spaziale. I valori a
 * *Personalizzato:* richiede all'applicazione di specificare la proprietà *Triangles/Cubic Meter* e consente alle applicazioni di ottimizzare l'accuratezza e l'impatto sulle prestazioni dell'osservatore della mesh spaziale.
 
 > [!NOTE]
-> Non è garantito che tutti i *valori triangles/cubic meter* siano rispettati da tutte le piattaforme. La sperimentazione e la profilatura sono altamente consigliate quando si usa un LOD personalizzato.
+> Non è garantito che tutti i *valori triangles/cubic meter* siano rispettati da tutte le piattaforme. La sperimentazione e la profilatura sono altamente consigliate quando si usa un lod personalizzato.
 
 **Triangoli per contatore cubo**
 
@@ -111,7 +111,7 @@ Specifica la modalità di visualizzazione delle mesh spaziali da parte dell'osse
 
 * *Nessuno-* Observer non eseguirà il rendering della mesh
 * *Visibile:* i dati della mesh saranno visibili usando *il materiale visibile*
-* *Occlusione:* i dati della mesh occludono gli elementi nella scena usando il *materiale di occlusione*
+* *Occlusione:* i dati mesh occluderanno gli elementi nella scena usando il *materiale di occlusione*
 
 ![Selezionare l'implementazione del sistema di consapevolezza spaziale](../images/spatial-awareness/MRTK_SpatialAwareness_DisplayOptions.jpg)
 

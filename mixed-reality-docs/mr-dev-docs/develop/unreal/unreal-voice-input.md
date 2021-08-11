@@ -1,67 +1,67 @@
 ---
 title: Input vocale in Unreal
-description: Informazioni su come configurare e usare l'input vocale, i mapping vocale e il riconoscimento in app Real realtà mista per i dispositivi HoloLens 2.
+description: Informazioni su come configurare e usare l'input vocale, i mapping vocali e il riconoscimento nelle app di realtà mista Unreal per HoloLens 2 dispositivi.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Realtà mista di Windows, Unreal, Unreal Engine 4, UE4, HoloLens 2, Voice, input vocale, riconoscimento vocale, realtà mista, sviluppo, funzionalità, documentazione, guide, ologrammi, sviluppo di giochi, cuffie per realtà mista, cuffia di realtà mista di Windows, Headset della realtà virtuale
-ms.openlocfilehash: 466b41c522e95f9fe3d618ad221dde8ccd925634
-ms.sourcegitcommit: a688bf0f1b796e4860f8252e852be79053937088
+keywords: Windows Mixed Reality, Unreal, Unreal Engine 4, UE4, HoloLens 2, voce, input vocale, riconoscimento vocale, realtà mista, sviluppo, funzionalità, documentazione, ologrammi, sviluppo di giochi, visore per realtà mista, visore windows mixed reality, visore per realtà virtuale
+ms.openlocfilehash: 12d0c595b5319da50e119f4a2463e2ca3e07ce449f11d6fd266c5f988d180465
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205836"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221012"
 ---
 # <a name="voice-input-in-unreal"></a>Input vocale in Unreal
 
-L'input vocale in Unreal consente di interagire con un ologramma senza dover usare i movimenti della mano ed è supportato solo HoloLens 2. L'input vocale in HoloLens 2 è alimentato dallo stesso motore che supporta la sintesi vocale in tutte le altre app di Windows universale, ma Unreal usa un motore più limitato per elaborare l'input vocale. In questo modo è possibile limitare le funzionalità di input vocali in Unreal ai mapping di riconoscimento vocale predefiniti, descritte nelle sezioni seguenti. 
+L'input vocale in Unreal consente di interagire con un ologramma senza dover usare i movimenti della mano ed è supportato solo HoloLens 2. L'input vocale HoloLens 2 è alimentato dallo stesso motore che supporta la voce in tutte le altre app universali Windows, ma Unreal usa un motore più limitato per elaborare l'input vocale. Ciò limita le funzionalità di input vocale in Unreal ai mapping vocali predefiniti, trattati nelle sezioni seguenti. 
 
 ## <a name="enabling-speech-recognition"></a>Abilitazione del riconoscimento vocale
 
-Se si usa un plug-in realtà misto di Windows, l'input vocale non richiede alcuna API della realtà mista di Windows speciale; si basa sull'API di mapping di [input](https://docs.unrealengine.com/Gameplay/Input/index.html) Unreal Engine 4 esistente. Se si usa OpenXR, è necessario installare anche il plug-in [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal). 
+Se si usa Windows Mixed Reality plug-in, l'input vocale non richiede api Windows Mixed Reality speciali. è basato sull'API di mapping [dell'input](https://docs.unrealengine.com/Gameplay/Input/index.html) di Unreal Engine 4 esistente. Se si usa OpenXR, è necessario installare anche il [plug-in Microsoft OpenXR.](https://github.com/microsoft/Microsoft-OpenXR-Unreal) 
 
 Per abilitare il riconoscimento vocale in HoloLens:
-1. Selezionare **Impostazioni progetto > piattaforma > funzionalità di > HoloLens** e abilitare il **microfono**. 
-2. Il riconoscimento vocale è stato abilitato in **impostazioni > Privacy > vocale** e selezionare **inglese**.
+1. Selezionare **Project Impostazioni > funzionalità > HoloLens > piattaforma e** abilitare **Microfono**. 
+2. Abilitato il riconoscimento vocale in **Impostazioni > Privacy > riconoscimento vocale e** selezionare **Inglese.**
 
 > [!NOTE]
-> Il riconoscimento vocale funziona sempre nella lingua di visualizzazione di Windows configurata nell'app **Impostazioni** . È inoltre consigliabile abilitare il **riconoscimento vocale online** per la qualità del servizio migliore.
+> Il riconoscimento vocale funziona sempre nel Windows lingua di visualizzazione configurata nell'app **Impostazioni** predefinita. È consigliabile abilitare anche il riconoscimento vocale **online** per la migliore qualità del servizio.
 
-![Impostazioni di riconoscimento vocale Windows](images/unreal/speech-recognition-settings.png)
+![Windows Impostazioni di riconoscimento vocale](images/unreal/speech-recognition-settings.png)
 
-3. Una finestra di dialogo viene visualizzata quando l'applicazione inizia per la prima volta a richiedere se si vuole abilitare il microfono. Se **si seleziona Sì** , viene avviato l'input vocale nell'app.
+3. Verrà visualizzata una finestra di dialogo quando l'applicazione inizia a chiedere se si vuole abilitare il microfono. Se si **seleziona Sì,** l'input vocale viene avviato nell'app.
 
-## <a name="adding-speech-mappings"></a>Aggiunta di mapping vocale
+## <a name="adding-speech-mappings"></a>Aggiunta di mapping voce
 
-La connessione vocale all'azione è un passaggio importante quando si usa l'input vocale. Questi mapping monitorano l'app per le parole chiave vocali che un utente potrebbe pronunciare, quindi avviare un'azione collegata. È possibile trovare mapping vocale per:
-1. Selezionare **modifica > impostazioni progetto**, scorrere fino alla sezione **motore** e fare clic su **input**.
+La connessione del riconoscimento vocale all'azione è un passaggio importante quando si usa l'input vocale. Questi mapping monitorano l'app per le parole chiave vocali che un utente potrebbe pronunciare e quindi generano un'azione collegata. È possibile trovare i mapping del riconoscimento vocale tramite:
+1. Selezionare **Modifica > Project Impostazioni**, scorrere fino alla sezione **Motore** e fare clic su **Input**.
 
-Per aggiungere un nuovo mapping vocale per un comando Jump:
-1. Selezionare l' **+** icona accanto agli **elementi della matrice** e compilare i valori seguenti:
-    * **jumpWord** per **nome azione**
-    * **passa** alla **parola chiave Speech**
+Per aggiungere un nuovo mapping vocale per un comando jump:
+1. Selezionare **+** l'icona accanto **a Elementi matrice** e compilare i valori seguenti:
+    * **jumpWord per** **Nome azione**
+    * **passare alla** parola **chiave Speech**
 
 > [!NOTE]
-> Tutte le parole o le frasi brevi possono essere utilizzate come parola chiave. 
+> Qualsiasi parola o frase breve in inglese può essere usata come parola chiave. 
 
-![Impostazioni di input del motore UE4](images/unreal/engine-input.png)
+![Input del motore UE4 Impostazioni](images/unreal/engine-input.png)
 
-I mapping vocale possono essere usati come componenti di input come mapping di azioni o assi o come nodi del progetto nel grafico eventi. Ad esempio, è possibile collegare il comando Jump per stampare due log diversi a seconda del momento in cui viene pronunciata la parola:
+I mapping del riconoscimento vocale possono essere usati come componenti di input, ad esempio mapping di azioni o assi, o come nodi del progetto nell'Graph. Ad esempio, è possibile collegare il comando jump per stampare due log diversi a seconda di quando viene pronunciata la parola:
 
-1. Fare doppio clic su un progetto per aprirlo nel **grafico eventi**.
-2. **Fare clic con il pulsante destro del mouse** e cercare il **nome dell'azione** del mapping vocale (in questo caso **JumpWord**), quindi premere **invio** per aggiungere un nodo **azione di input** al grafico.
-3. Trascinare e rilasciare il pin **premuto** nel nodo della **stringa di stampa** come illustrato nell'immagine seguente. È possibile lasciare vuoto il pin **rilasciato** e non eseguire alcuna operazione per i mapping vocale.
+1. Fare doppio clic su un progetto per aprirlo **nell'Graph**.
+2. **Fare clic con** il  pulsante destro del mouse e cercare il nome azione del mapping vocale (in questo caso **jumpWord),** quindi premere **INVIO** per aggiungere un nodo Azione di **input** al grafico.
+3. Trascinare e rilasciare **il segnaposto** Premuto **nel nodo Stringa** di stampa, come illustrato nell'immagine seguente. È possibile lasciare vuoto **il segnaposto** Rilasciato, che non eseguirà alcun elemento per i mapping di riconoscimento vocale.
  
 ![Azione semplice per la voce](images/unreal/voice-input-img-03.png)
 
-4. Riprodurre l'app, pronunciare il Word **Jump** e guardare la console per stampare i log.
+4. Riprodurre l'app, pronunciare la parola **jump** e guardare la console stampare i log.
 
-Questa è tutta la configurazione necessaria per iniziare ad aggiungere input voce alle app HoloLens in Unreal. È possibile trovare altre informazioni sulla voce e sull'interattività nei collegamenti seguenti e assicurarsi di considerare l'esperienza che si sta creando per gli utenti.
+Questa è tutta la configurazione necessaria per iniziare ad aggiungere input vocale alle app HoloLens in Unreal. È possibile trovare altre informazioni sul riconoscimento vocale e l'interattività nei collegamenti seguenti e assicurarsi di pensare all'esperienza che si sta creando per gli utenti.
 
 ## <a name="next-development-checkpoint"></a>Successivo checkpoint di sviluppo
 
-Se si sta seguendo il percorso di sviluppo non reale, si sta per iniziare a esplorare le funzionalità e le API della piattaforma di realtà mista: 
+Se si sta seguendo il percorso di sviluppo unreal che è stato previsto, l'attività successiva è esplorare le API e le funzionalità della piattaforma di realtà mista: 
 
 > [!div class="nextstepaction"]
 > [Fotocamera HoloLens](unreal-hololens-camera.md)

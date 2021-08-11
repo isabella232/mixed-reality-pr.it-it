@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Portale di dispositivi di Windows, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: d772175683208ac0e3ed4b3163ca561da416c1cf
-ms.sourcegitcommit: 593e8f80297ac0b5eccb2488d3f333885eab9adf
+ms.openlocfilehash: edcd1796598b558f42232bf54ae3d40d3c509bb9515d8dcbe7f3cf9f2b7dfd62
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112919812"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221514"
 ---
 # <a name="using-the-windows-device-portal"></a>Uso del Portale di dispositivi di Windows
 
@@ -27,6 +27,8 @@ ms.locfileid: "112919812"
 Il Portale di dispositivi di Windows per HoloLens consente di configurare e gestire un dispositivo in remoto tramite Wi-Fi o USB. Device Portal è un server Web in HoloLens a cui è possibile connettersi da un browser Web nel PC. Il Portale di dispositivi include molti strumenti che ti consentono di gestire HoloLens, nonché di eseguire il debug delle app e ottimizzarle.
 
 Questa documentazione è specifica del Portale di dispositivi di Windows per HoloLens. Per usare il Portale di dispositivi di Windows per desktop (tra cui Windows Mixed Reality), vedi [Panoramica del Portale di dispositivi di Windows](/windows/uwp/debug-test-perf/device-portal).
+
+> [NOTA]] L'uso del portale dei dispositivi non è consigliato per HoloLens dispositivi distribuiti nell'organizzazione.
 
 ## <a name="setting-up-hololens-to-use-windows-device-portal"></a>Configurazione di HoloLens per l'uso del Portale di dispositivi di Windows
 
@@ -51,7 +53,7 @@ Questa documentazione è specifica del Portale di dispositivi di Windows per Hol
 2. Cerca l'indirizzo IP del dispositivo in uno di questi modi:
   * Passa a **Impostazioni > Rete e Internet > Wi-Fi > Opzioni avanzate**.
   * Passa a **Impostazioni > Rete e Internet** e seleziona **Proprietà hardware**.
-  * Usando il messaggio "Qual è l'indirizzo IP?" comando vocale.
+  * Uso di "Qual è l'indirizzo IP?" comando vocale.
 
 ![Impostazioni HoloLens 2](images/using-windows-portal-img-02.jpg)
 
@@ -61,29 +63,29 @@ Questa documentazione è specifica del Portale di dispositivi di Windows per Hol
 ## <a name="connecting-over-usb"></a>Connessione tramite USB
 
 > [!IMPORTANT]
-> IpOverUsb non è più consigliato per i nuovi standard del browser perché richiede l'uso della porta 10080. Se si vuole comunque usare IpOverUsb, selezionare la casella "Connettività dispositivo USB" durante l'installazione Visual Studio, che non è selezionata per impostazione predefinita. È invece consigliabile connettersi con UsbNcm, che è supportato per impostazione predefinita HoloLens 2. Se si usa HoloLens 1, è consigliabile connettersi al PC tramite Wi-Fi.
+> IpOverUsb non è più consigliato per i nuovi standard del browser perché richiede l'uso della porta 10080. Se si vuole comunque usare IpOverUsb, selezionare la casella "Connettività del dispositivo USB" durante l'installazione Visual Studio, che non è selezionata per impostazione predefinita. È invece consigliabile connettersi con UsbNcm, che è supportato per impostazione predefinita HoloLens 2. Se si usa un HoloLens 1, è consigliabile connettersi al PC tramite Wi-Fi.
 
 1. Se il HoloLens 2 esegue Windows Holographic versione 21H1 o successiva, passare a "Per gli sviluppatori" nell'app Impostazioni e verificare che l'opzione "Individuazione dispositivi" sia attivata. 
-2. Connettere il HoloLens 2 al PC con un cavo USB-C.
-3. Trovare l'indirizzo IP UsbNcm. Esistono diversi modi per eseguire questa operazione:
+2. Connessione il HoloLens 2 al PC con un cavo USB-C.
+3. Trovare l'indirizzo IP UsbNcm. Esistono alcuni modi per eseguire questa operazione:
   * Nell'app Impostazioni nel dispositivo (questo metodo funziona solo per HoloLenses che esegue Windows Holographic versione 21H1 o successiva, con l'opzione "Individuazione dispositivi" attivata.)
     1. Passare all'app Impostazioni nel dispositivo.
-    2. Passare a "Aggiorna & sicurezza" > "Per gli sviluppatori". Si tratta della stessa posizione in cui è stata abilitata Portale di dispositivi.
+    2. Passare a "Update & Security" > "For developers". Questa è la stessa posizione in cui è stata abilitata Portale di dispositivi.
     3. Nella parte inferiore della pagina copiare l'indirizzo IP **Ethernet.** Si tratta dell'indirizzo IP UsbNcm. 
-    ![HoloLens 2 impostazioni - IP UsbNcm](images/deviceportal_usbncm_ipaddress.jpg)
+    ![HoloLens 2 impostazioni - USBNcm IP](images/deviceportal_usbncm_ipaddress.jpg)
 
   * In Portale di dispositivi 
-    1. Nel dispositivo aprire il Portale di dispositivi usando l'indirizzo Wi-Fi di HoloLens. Se non si conosce l'indirizzo Wi-Fi di HoloLens, è possibile usare il comando vocale "Qual è l'indirizzo IP?"
+    1. Nel dispositivo aprire il Portale di dispositivi usando l'HoloLens Wi-Fi del dispositivo. Se non si conosce l'indirizzo Wi-HoloLens, è possibile usare il comando vocale "Qual è l'indirizzo IP?"
     2. Passare a Rete > sistema
-    3. All'estrema destra della pagina nel pannello "Configurazione IP" individuare la sezione che inizia con "Descrizione: Funzione UsbNcm".
-    4. L'indirizzo IP UsbNcm è la riga "Indirizzo IPv4". È possibile copiare l'indirizzo o fare semplicemente clic sull'indirizzo. Si tratta di un collegamento ipertestuale che verrà riaperto Portale di dispositivi'indirizzo IP UsbNcm.
+    3. Sul lato destro della pagina nel pannello "Configurazione IP" individuare la sezione che inizia con "Descrizione: Funzione UsbNcm".
+    4. L'INDIRIZZO IP UsbNcm è la riga "Indirizzo IPv4". È possibile copiare l'indirizzo o semplicemente fare clic sull'indirizzo: si tratta di un collegamento ipertestuale che verrà riaperto Portale di dispositivi tramite l'INDIRIZZO IP UsbNcm.
   
   * In un prompt dei comandi
     1. In qualsiasi prompt dei comandi passare alla cartella bin \x86 in cui è installato Windows 10 SDK, ad esempio \<SDK version> C:\Programmi (x86)\Windows Kits\10\bin\10.0.19041.0\x86.
     2. Digitare "winappdeploycmd devices" e premere INVIO.
-    3. Nell'output cercare la voce in cui la colonna Model/Name è il nome del dispositivo HoloLens, ad esempio HOLOLENS-xxxxxx. L'indirizzo IP UsbNcm si trova all'inizio di questa riga e sarà un indirizzo IP privato automatico nel formato 169.254.x.x. Copiare questo indirizzo. 
+    3. Nell'output cercare la voce in cui la colonna Model/Name è il nome HoloLens dispositivo, ad esempio HOLOLENS-xxxxxx. L'INDIRIZZO IP UsbNcm si trova all'inizio di questa riga e sarà un indirizzo IP privato automatico nel formato 169.254.x.x. Copiare questo indirizzo. 
  
-4. Se l'indirizzo IP UsbNcm è stato copiato, da un Web browser nel PC passare a https:// seguito dall'indirizzo IP UsbNcm.
+4. Se l'indirizzo IP UsbNcm è stato copiato, da un Web browser nel PC passare a https:// seguito dall'INDIRIZZO IP UsbNcm.
 
 ### <a name="moving-files-over-usb"></a>Spostamento di file tramite USB
 
@@ -175,6 +177,8 @@ Al termine dell'installazione, tornare alla pagina **Tutte le app** in HoloLens 
 ![Home page del Portale di dispositivi di Windows in Microsoft HoloLens](images/using-windows-portal-img-04.png)<br>
 *Home page del Portale di dispositivi di Windows in Microsoft HoloLens*
 
+> [NOTA] Impostazioni configurate nel portale di dispositivi si applicano all'intero dispositivo e vengono mantenute durante i riavvii. È consigliabile usare il portale dei dispositivi solo durante lo sviluppo e non nei dispositivi distribuiti.
+
 La pagina iniziale di una sessione di Device Portal è la home page. Puoi accedere alle altre pagine dalla barra di spostamento sul lato sinistro della home page.
 
 La barra degli strumenti nella parte superiore della pagina permette di accedere allo stato e alle funzionalità che usi di frequente.
@@ -241,6 +245,8 @@ Per importare le mappe e gli ancoraggi, selezionare rispettivamente **Upload a m
 
 ![Pagina Mixed Reality Capture (Acquisizione realtà mista) del Portale di dispositivi di Windows in Microsoft HoloLens](images/using-windows-portal-img-07.png)<br>
 *Pagina Mixed Reality Capture (Acquisizione realtà mista) del Portale di dispositivi di Windows in Microsoft HoloLens*
+
+> [IMPORTANTE] Impostazioni configurate nel portale dei dispositivi si applicano all'intero dispositivo e vengono mantenute tramite riavvii. Tutte le impostazioni modificate nel portale dei dispositivi verranno applicate alle app e alle acquisizioni di realtà mista. Poiché queste impostazioni sono persistenti, è consigliabile usare il portale dei dispositivi solo durante lo sviluppo e non nei dispositivi distribuiti.
 
 Usa la pagina Mixed Reality Capture per salvare flussi multimediali da HoloLens.
 * **Impostazioni di acquisizione**: controlla i flussi multimediali acquisiti selezionando le impostazioni seguenti:
@@ -400,7 +406,7 @@ Ti permette di registrare e riprodurre dati di input per il testing.
 * **Capture room** (Ambiente acquisizione): opzione usata per scaricare il file di un ambiente simulato che contiene la mesh di mapping spaziale per l'ambiente circostante dell'utente. Assegnare un nome alla stanza e quindi fare clic su **Capture** (Acquisisci) per salvare i data come file con estensione xef nel PC. Questo file può essere caricato nell'emulatore di HoloLens.
 * **Recording** (Registrazione): consente di controllare i flussi da registrare e di assegnare un nome alla registrazione. Tocca o fai clic su **Record** (Registra) per avviare la registrazione. Eseguire le azioni con HoloLens e quindi fare clic su **Stop** (Arresta) per salvare i dati come file con estensione xef nel PC. Questo file può essere caricato nell'emulatore di HoloLens o nel dispositivo stesso.
   >[!NOTE]
-  >La funzionalità Registrazione è attualmente disponibile solo nella prima generazione di HoloLens. La registrazione non è ancora supportata HoloLens 2, ma è supportata la riproduzione di registrazioni esistenti.
+  >La funzionalità Registrazione è attualmente disponibile solo nella prima HoloLens generazione. La registrazione non è ancora supportata HoloLens 2, ma è supportata la riproduzione di registrazioni esistenti.
 * **Playback** (Riproduzione): tocca o fai clic su **Upload recording** (Carica registrazione) per selezionare un file XEF nel PC e inviare i dati a HoloLens.
 * **Control mode** (Modalità di controllo): seleziona **Default** (Predefinita) o **Simulation** (Simulazione) dall'elenco a discesa e quindi tocca o fai clic sul pulsante **Set** (Imposta) per selezionare la modalità in HoloLens. Scegliendo "Simulation" vengono disabilitati i sensori reali in HoloLens e al loro posto vengono usati i dati di simulazione caricati. Se si passa alla modalità "Simulation" (Simulazione), HoloLens non risponderà all'utente reale fino a quando non verrà ripristinata la modalità "Default" (Predefinita).
 

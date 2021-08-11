@@ -5,58 +5,58 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: c2810f6f1f90b32ee7621f52e3911da23a86a983
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 18e936ec4a896e7e0087023c8ed71899cbe5ab129389f6f715ac03d038d1cfb5
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693748"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220293"
 ---
 # <a name="experimental-features"></a>Funzionalità sperimentali
 
-Alcune funzionalità del team di MRTK sembrano avere molto valore iniziale anche se non sono stati completati i dettagli. Per questi tipi di funzionalità, è necessario che la community ottenga la possibilità di vederle presto. Poiché si trovano all'inizio del ciclo, le etichette vengono etichettate come sperimentali per indicare che sono in continua evoluzione e soggette a modifiche nel tempo.
+Alcune funzionalità a cui lavora il team MRTK sembrano avere un valore iniziale molto grande anche se i dettagli non sono stati completamente dettagliati. Per questi tipi di funzionalità, la community vuole avere la possibilità di vederle in anticipo. Poiché sono all'inizio del ciclo, vengono etichettati come sperimentali per indicare che sono ancora in evoluzione e soggetti a modifiche nel tempo.
 
 ## <a name="what-to-expect-from-an-experimental-feature"></a>Cosa aspettarsi da una funzionalità sperimentale
 
 Se un componente è contrassegnato come sperimentale, è possibile prevedere quanto segue:
 
-- Una scena di esempio che illustra l'utilizzo, disponibile nella `MRTK/Examples/Experimental` sottocartella
+- Scena di esempio che illustra l'utilizzo, che si trova nella `MRTK/Examples/Experimental` sottocartella
 - Le funzionalità sperimentali potrebbero non avere documenti.
 - Probabilmente non hanno test.
 - Le funzionalità sperimentali sono soggette a modifiche.
 
 ## <a name="experimental-feature-guidelines"></a>Linee guida sulle funzionalità sperimentali
 
-### <a name="experimental-code-should-live-in-a-separate-folder"></a>Il codice sperimentale dovrebbe risiedere in una cartella separata
+### <a name="experimental-code-should-live-in-a-separate-folder"></a>Il codice sperimentale deve essere contenuto in una cartella separata
 
-Il codice sperimentale dovrebbe essere inserito in una cartella sperimentale di primo livello seguita dal nome della funzionalità sperimentale. Ad esempio, se si tenta di contribuire a una nuova funzionalità FooBar, inserire il codice seguente:
+Il codice sperimentale deve essere inserito in una cartella sperimentale di primo livello seguita dal nome della funzionalità sperimentale. Ad esempio, se si tenta di contribuire a una nuova funzionalità FooBar, inserire il codice seguente:
 
 - Scene di esempio, script `MRTK/Examples/Experimental/FooBar/`
-- Script dei componenti, prefabbricati `MRTK/SDK/Experimental/FooBar/`
-- I controlli componente entrano in `MRTK/SDK/Inspectors/Experimental/FooBar`
+- Script dei componenti, prefab `MRTK/SDK/Experimental/FooBar/`
+- I controlli componenti passano a `MRTK/SDK/Inspectors/Experimental/FooBar`
 
 Quando si usano sottocartelle sotto il nome della funzionalità sperimentale, provare a eseguire il mirroring della stessa struttura di cartelle di MRTK.
 
-Ad esempio, i risolutori subentrano `MRTK/SDK/Experimental/FooBar/Features/Utilities/Solvers/FooBarSolver.cs`
+Ad esempio, i risolutori verrebbero sotto `MRTK/SDK/Experimental/FooBar/Features/Utilities/Solvers/FooBarSolver.cs`
 
-Mantieni le scene in una cartella della scena nella parte superiore: `MRTK/Examples/Experimental/FooBar/Scenes/FooBarExample.unity`
+Tenere le scene in una cartella della scena nella parte superiore: `MRTK/Examples/Experimental/FooBar/Scenes/FooBarExample.unity`
 
 > [!NOTE]
-> Non è stata considerata una singola cartella radice sperimentale, ma è stato inserito un esperimento sperimentale in say `MRTK/Examples/HandTracking/Scenes/Experimental/HandBasedMenuExample.unity` . Abbiamo deciso di usare le cartelle alla base per semplificare l'individuazione delle funzionalità sperimentali.
+> Si è considerato di non avere una singola cartella radice sperimentale e di inserire invece Sperimentale in say `MRTK/Examples/HandTracking/Scenes/Experimental/HandBasedMenuExample.unity` . Si è deciso di aggiungere cartelle alla base per semplificare l'individuazione delle funzionalità sperimentali.
 
-### <a name="experimental-code-should-be-in-a-special-namespace"></a>Il codice sperimentale deve trovarsi in uno spazio dei nomi speciale
+### <a name="experimental-code-should-be-in-a-special-namespace"></a>Il codice sperimentale deve essere in uno spazio dei nomi speciale
 
-Verificare che il codice sperimentale si trovi in uno spazio dei nomi sperimentale che corrisponda alla posizione non sperimentale. Se, ad esempio, il componente fa parte dei risolutori in `Microsoft.MixedReality.Toolkit.Utilities.Solvers` , il relativo spazio dei nomi deve essere `Microsoft.MixedReality.Toolkit.Experimental.Utilities.Solvers` .
+Assicurarsi che il codice sperimentale si trova in uno spazio dei nomi sperimentale corrispondente alla posizione non sperimentale. Ad esempio, se il componente fa parte dei risolutori in `Microsoft.MixedReality.Toolkit.Utilities.Solvers` , il relativo spazio dei nomi deve essere `Microsoft.MixedReality.Toolkit.Experimental.Utilities.Solvers` .
 
-Per un esempio, vedere [questa](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/4532) richiesta pull.
+Per [un esempio, vedere](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/4532) questa richiesta pull.
 
-### <a name="experimental-features-should-have-an-experimental-attribute"></a>Le funzionalità sperimentali devono avere un attributo [Experimental]
+### <a name="experimental-features-should-have-an-experimental-attribute"></a>Le funzionalità sperimentali devono avere un attributo [Sperimentale]
 
-Aggiungere un `[Experimental]` attributo sopra uno dei campi per visualizzare una piccola finestra di dialogo nell'editor del componente che indica che la funzionalità è sperimentale e soggetta a modifiche significative.
+Aggiungere un attributo sopra uno dei campi per visualizzare una piccola finestra di dialogo nell'editor dei componenti che indica che la funzionalità è sperimentale e soggetta `[Experimental]` a modifiche significative.
 
-### <a name="menus-for-experimental-features-should-go-under-experimental-sub-menu"></a>I menu per le funzionalità sperimentali dovrebbero andare sotto il sottomenu "sperimentale"
+### <a name="menus-for-experimental-features-should-go-under-experimental-sub-menu"></a>I menu per le funzionalità sperimentali devono essere disponibili nel sottomenu "Sperimentale"
 
-Quando si aggiungono comandi ai menu nell'editor, verificare che le funzionalità sperimentali siano sottomenu "sperimentali". Ecco alcuni esempi:
+Assicurarsi che le funzionalità sperimentali siano disponibili nei sottomenu "sperimentali" quando si aggiungono comandi ai menu nell'editor. Ecco alcuni esempi:
 
 Aggiunta di un comando di menu di primo livello:
 
@@ -65,7 +65,7 @@ Aggiunta di un comando di menu di primo livello:
 public static void MyCommand()
 ```
 
-Aggiunta di un menu componenti:
+Aggiunta di un menu dei componenti:
 
 ```c#
 [AddComponentMenu("MRTK/Experimental/MyCommand")]
@@ -73,49 +73,49 @@ Aggiunta di un menu componenti:
 
 ## <a name="documentation"></a>Documentazione
 
-Per aggiungere la documentazione per la funzionalità sperimentale, attenersi alla procedura seguente:
+Seguire questa procedura per aggiungere la documentazione per la funzionalità sperimentale:
 
-1. Qualsiasi documentazione relativa a una funzionalità sperimentale dovrebbe andare in un `readme.md` file nella cartella sperimentale. ad esempio [`MRTK/SDK/Experimental/PulseShader/readme.md`](../features/experimental/pulse-shader.md).
+1. Qualsiasi documentazione per una funzionalità sperimentale deve essere in un `readme.md` file nella cartella sperimentale. ad esempio [`MRTK/SDK/Experimental/PulseShader/readme.md`](../features/experimental/pulse-shader.md).
 
-1. In *Panoramica delle funzionalità* aggiungere un collegamento nella sezione *sperimentale* all'indirizzo [`Documentation/toc.yml`](../toc.yml) .
+1. In *Cenni preliminari sulle* funzionalità aggiungere un collegamento nella sezione *Sperimentale* all'indirizzo [`Documentation/toc.yml`](../toc.yml) .
 
-### <a name="minimize-impact-to-mrtk-code"></a>Ridurre al minimo l'effetto sul codice MRTK
+### <a name="minimize-impact-to-mrtk-code"></a>Ridurre al minimo l'impatto sul codice MRTK
 
-Anche se la modifica del MRTK potrebbe far funzionare l'esperimento, può influito su altri utenti in modi non previsti.
-Tutte le regressioni apportate al codice MRTK Core comporteranno il ripristino della richiesta pull.
+Anche se la modifica di MRTK potrebbe far funzionare l'esperimento, potrebbe influire su altre persone in modi non previsti.
+Eventuali regressioni apportate al codice principale di MRTK comportano il ripristino della richiesta pull.
 
-Scopo di avere zero modifiche in cartelle diverse dalle cartelle sperimentali. Di seguito è riportato un elenco di cartelle che possono avere modifiche sperimentali:
+Mirare a non apportare modifiche alle cartelle diverse da quelle sperimentali. Ecco un elenco di cartelle che possono avere modifiche sperimentali:
 
-- MRTK/SDK/sperimentale
-- MRTK/SDK/ispettori/sperimentale
-- MRTK/esempi/sperimentale
+- MRTK/SDK/Sperimentale
+- MRTK/SDK/Inspectors/Experimental
+- MRTK/Examples/Experimental
 
-Le modifiche al di fuori di queste cartelle devono essere trattate con molta attenzione. Se la funzionalità sperimentale deve includere modifiche al codice MRTK core, è consigliabile suddividere le modifiche apportate da MRTK in una richiesta pull separata che includa i test e la documentazione.
+Le modifiche all'esterno di queste cartelle devono essere trattate con attenzione. Se la funzionalità sperimentale deve includere modifiche al codice principale di MRTK, valuta la possibilità di suddividere le modifiche di MRTK in una richiesta pull separata che include test e documentazione.
 
-### <a name="using-your-experimental-feature-should-not-impact-peoples-ability-to-use-core-controls"></a>L'uso della funzionalità sperimentale non dovrebbe influito sulla capacità degli utenti di usare i controlli di base
+### <a name="using-your-experimental-feature-should-not-impact-peoples-ability-to-use-core-controls"></a>L'uso della funzionalità sperimentale non dovrebbe influire sulla capacità degli utenti di usare i controlli di base
 
-La maggior parte degli utenti usa componenti UX di base come Button, ManipulationHandler e interagiscono molto spesso. Probabilmente non utilizzeranno la funzionalità sperimentale se impedisce l'uso di pulsanti.
+La maggior parte delle persone usa componenti principali dell'esperienza utente come il pulsante, ManipulationHandler e Interactable molto spesso. Probabilmente non useranno la funzionalità sperimentale se impedisce loro di usare i pulsanti.
 
-L'uso del componente non dovrebbe interrompere i pulsanti, ManipulationHandler, BoundingBox o interactable.
+L'uso del componente non deve interrompere i pulsanti, ManipulationHandler, BoundingBox o interagire.
 
-Ad esempio, in [questa](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6001)richiesta pull di ScrollableObjectCollection, l'aggiunta di un ScrollableObjectCollection ha impedito agli utenti di usare i prefabbricati dei pulsanti HoloLens. Anche se ciò non è stato causato da un bug nella richiesta pull (ma è stato invece esposto un bug esistente), non è stato necessario che la richiesta pull venisse archiviata.
+Ad esempio, in questa richiesta pull [ScrollableObjectCollection](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6001)l'aggiunta di scrollableObjectCollection ha causato l'inascoltamento dei prefab HoloLens pulsante. Anche se questo non è stato causato da un bug nella richiesta pull (ma piuttosto da un bug esistente), ha impedito l'accesso alla richiesta pull.
 
-### <a name="provide-an-example-scene-that-demonstrates-how-to-use-the-feature"></a>Fornire una scena di esempio in cui viene illustrato come utilizzare la funzionalità
+### <a name="provide-an-example-scene-that-demonstrates-how-to-use-the-feature"></a>Fornire una scena di esempio che illustra come usare la funzionalità
 
 Gli utenti devono vedere come usare la funzionalità e come testarla.
 
-Fornire un esempio in MRTK/examples/Experimental/YOUR_FEATURE
+Fornire un esempio in MRTK/Examples/Experimental/YOUR_FEATURE
 
-### <a name="minimize-user-visible-flaws-in-experimental-features"></a>Ridurre al minimo gli errori visibili per gli utenti nelle funzionalità sperimentali
+### <a name="minimize-user-visible-flaws-in-experimental-features"></a>Ridurre al minimo i difetti visibili all'utente nelle funzionalità sperimentali
 
-Altri utenti non utilizzeranno la funzionalità sperimentale se non funziona, ma non consentirà di laurearsi a una funzionalità.
+Altri utenti non useranno la funzionalità sperimentale se non funziona, non saranno in grado di passare a una funzionalità.
 
-Testare la scena di esempio sulla piattaforma di destinazione e verificare che funzioni come previsto. Assicurarsi che la funzionalità funzioni anche nell'editor, in modo che gli utenti possano scorrere rapidamente e visualizzare la funzionalità anche se non dispongono della piattaforma di destinazione.
+Testare la scena di esempio nella piattaforma di destinazione, assicurarsi che funzioni come previsto. Assicurarsi che la funzionalità funzioni anche nell'editor, in modo che gli utenti possano eseguire rapidamente l'iterazione e visualizzare la funzionalità anche se non hanno la piattaforma di destinazione.
 
-## <a name="graduating-experimental-code-into-mrtk-code"></a>Graduazione del codice sperimentale nel codice MRTK
+## <a name="graduating-experimental-code-into-mrtk-code"></a>Frammentazione del codice sperimentale nel codice MRTK
 
-Se una funzionalità è molto utile, è necessario configurarla nel codice MRTK principale. A tale scopo, la funzionalità deve disporre di test, documentazione e una scena di esempio.
+Se una funzionalità finisce per essere molto utile, è consigliabile trasformarla in codice MRTK di base. A tale scopo, la funzionalità deve avere test, documentazione e una scena di esempio.
 
-Quando si è pronti a laureare la funzionalità MRTK, creare un problema per archiviare la richiesta pull. La richiesta pull deve includere tutti gli elementi necessari per rendere questa funzionalità di base: test, documentazione e una scena di esempio che illustra l'utilizzo.
+Quando si è pronti a modificare la funzionalità MRTK, creare un problema da controllare nella richiesta pull. La richiesta pull deve includere tutti gli elementi necessari per rendere questa funzionalità di base: test, documentazione e una scena di esempio che mostra l'utilizzo.
 
-Inoltre, non dimenticare di aggiornare gli spazi dei nomi per rimuovere il sottospazio "sperimentale".
+Non dimenticare inoltre di aggiornare gli spazi dei nomi per rimuovere il sottospazio "Sperimentale".

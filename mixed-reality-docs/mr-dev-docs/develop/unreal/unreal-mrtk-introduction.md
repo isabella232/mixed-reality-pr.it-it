@@ -1,18 +1,18 @@
 ---
 title: Introduzione a MRTK per Unreal
-description: Introduzione a tutto ciò che Mixed Reality Toolkit per Unreal offre nuovi sviluppatori di realtà mista.
+description: Iniziare a usare tutto ciò che Toolkit realtà mista per Unreal offre nuovi sviluppatori di realtà mista.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 01/08/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, Mixed Reality Toolkit, MRTK versione 2, MRTK, strumenti, SDK, HoloLens, HoloLens 2, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, multipiattaforma
-ms.openlocfilehash: 3d46b92dbf3182ca5a50a8e106d2b947e4f7120f
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: 06eacac245c80f16ab48dbda4b5aca740ffdfd66a0266beafac5e46b39a9d109
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394285"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221831"
 ---
 # <a name="introducing-mrtk-for-unreal"></a>Introduzione a MRTK per Unreal
 
@@ -22,15 +22,15 @@ ms.locfileid: "112394285"
 
 MRTK è uno straordinario toolkit open source disponibile sin dalla prima versione di HoloLens. Il toolkit non avrebbe raggiunto i livelli attuali senza il contributo e l'impegno costante della community di sviluppatori Microsoft. 
 
-Mixed Reality Toolkit for Unreal (MRTK-Unreal) è un set di componenti, sotto forma di plug-in, esempi e documentazione, progettati per facilitare lo sviluppo di applicazioni di realtà mista usando il motore Unreal. Attualmente, il toolkit è costituito da:
+Mixed Reality Toolkit for Unreal (MRTK-Unreal) è un set di componenti, sotto forma di plug-in, esempi e documentazione, progettati per facilitare lo sviluppo di applicazioni di realtà mista con il motore Unreal. Attualmente, il toolkit è costituito da:
 * [UX Tools for Unreal,](https://github.com/microsoft/MixedReality-UXTools-Unreal)che fornisce codice, progetti ed esempi per implementare le funzionalità dell'esperienza utente per le applicazioni Hololens 2.
 * [Strumenti di grafica per Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal), che consente di migliorare la fedeltà visiva delle applicazioni di realtà mista mantenendo i budget per le prestazioni.
 
-Esaminare la documentazione [di MRTK](https://microsoft.github.io/MixedReality-UXTools-Unreal/README.html) in GitHub e iniziare a usare le guide all'installazione degli strumenti [UX](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Installation.html) o [degli strumenti](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/blob/main/Docs/Installation.md) di grafica.
+Vedere la documentazione di [MRTK su GitHub](https://microsoft.github.io/MixedReality-UXTools-Unreal/README.html) e iniziare a usare le guide all'installazione degli strumenti [UX](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Installation.html) o [degli strumenti](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/blob/main/Docs/Installation.md) di grafica.
 
 ### <a name="modular"></a>Modularità
 
-È stato creato MRTK Unreal in modo modulare, quindi non è necessario importare tutti i componenti del toolkit nel progetto. È possibile selezionare e scegliere i plug-in necessari e aggiungerli o rimuoverli ogni volta che lo si desidera. Questo approccio mantiene le dimensioni del progetto più piccole e semplifica la gestione.  
+MrTK Unreal è stato creato in modo modulare, quindi non è necessario importare ogni parte del toolkit nel progetto. È possibile selezionare e scegliere i plug-in necessari e aggiungerli o rimuoverli ogni volta che lo si desidera. Questo approccio mantiene le dimensioni del progetto più piccole e semplifica la gestione.  
 
 ### <a name="performant"></a>Ottime prestazioni
 

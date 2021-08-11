@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, MRTK, mixed reality toolkit, UWP, risolutori
 ms.localizationpriority: high
-ms.openlocfilehash: 8398c4d6fdc69801beff1b7c6de5e4c3847dd5e4
-ms.sourcegitcommit: adbe3baa6b1c284ed1c4fd796d8b5612c3ca3f42
+ms.openlocfilehash: 3060e6f6b1e04f356f2b9d7466c0f8f3481c53ba090f6d8a62405a4da3dc21a4
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112270426"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221243"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Creazione di contenuto dinamico tramite risolutori
 
@@ -26,14 +26,14 @@ In questa esercitazione verrà analizzato come posizionare in modo dinamico gli 
 
 ## <a name="location-of-solvers-in-the-mrtk"></a>Posizione dei risolutori in MRTK
 
- I risolutori di MRTK si trovano nella cartella MRTK SDK. Per visualizzare i risolutori disponibili nel progetto, nella finestra Progetto passare a **Pacchetti**  >  **Mixed Reality Toolkit Foundation**  >  **SDK**  >  **Features**  >  **Utilities**  >  **Solvers**:
+ I risolutori di MRTK si trovano nella cartella MRTK SDK. Per visualizzare i risolutori disponibili nel progetto, nella finestra Project passare a **Packages**  >  **Mixed Reality Toolkit Foundation** SDK Features Utilities  >    >    >    >  **Solvers**(Risolutori di utilità per le funzionalità di Mixed Reality Toolkit Foundation SDK):
 
 ![Finestra Project di Unity con la cartella Solvers selezionata](images/mr-learning-base/base-05-section1-step1-1.png)
 
 In questa esercitazione verrà esaminata l'implementazione dei risolutori Directional Indicator (Indicatore direzionale) e Tap To Place (Tocco per posizionamento). Per altre informazioni sull'intera gamma di risolutori disponibili in MRTK, puoi fare riferimento alla guida [Risolutori](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver) nel [portale della documentazione di MRTK](/windows/mixed-reality/mrtk-unity).
 
 > [!NOTE]
-> Il risolutore indicatore direzionale non si trova nelle cartelle risolutori a cui si fa riferimento in precedenza, ma nelle cartelle Pacchetti > Mixed Reality Toolkit Foundation > SDK > Experimental > Features > Utilities, perché si tratta di una funzionalità sperimentale.
+> Il risolutore indicatore direzionale non si trova nelle cartelle risolutori a cui si fa riferimento in precedenza, ma nelle cartelle Packages > Mixed Reality Toolkit Foundation > SDK > Experimental > Features > Utilities (Pacchetti > Mixed Reality Toolkit Foundation > SDK > Experimental > Features > Utilities), perché si tratta di una funzionalità sperimentale.
 
 ## <a name="using-the-directional-indicator-solver-to-direct-the-user-to-objects"></a>Uso del risolutore Directional Indicator (Indicatore direzionale) per indirizzare l'utente verso gli oggetti
 
@@ -44,7 +44,7 @@ Nella finestra Project (Progetto) passa alla cartella **Assets (Asset)**  > **MR
 > [!TIP]
 > Se ritieni che la fotocamera o altre icone nella scena nascondano gli oggetti o siano elementi di distrazione, puoi nasconderli <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">disattivando il menu Gizmos</a> come illustrato nell'immagine precedente. Per altre informazioni sul menu Gizmos e su come è possibile usarlo per ottimizzare la vista della scena, puoi fare riferimento alla documentazione relativa al <a href="https://docs.unity3d.com/Manual/GizmosMenu.html" target="_blank">menu Gizmos</a> di Unity.
 
-Rinominare l'oggetto Chevron appena aggiunto in **Indicator**, quindi nella finestra Inspector (Controllo) usare il pulsante **Add Component** (Aggiungi componente) per aggiungere **DirectionalIndicator**:
+Rinominare l'oggetto Chevron appena aggiunto in **Indicator,** quindi nella finestra Inspector (Controllo) usare il pulsante **Add Component** (Aggiungi componente) per aggiungere **DirectionalIndicator:**
 
 ![Unity con il componente risolutore DirectionalIndicator aggiunto](images/mr-learning-base/base-05-section2-step1-2.png)
 
@@ -79,7 +79,7 @@ Seleziona il pulsante Play (Riproduci) per attivare la modalità di gioco e tien
 Nella finestra Hierarchy (Gerarchia) seleziona l'oggetto RoverExplorer > **RoverAssembly** e quindi nella finestra Inspector (Controllo) usa il pulsante **Add Component** (Aggiungi componente) per aggiungere il componente **Tap To Place (Script)** (Tocco per posizionamento - Script) e configuralo come indicato di seguito:
 
 * Verifica che per **Tracked Target Type** (Tipo destinazione tracciata) del componente **SolverHandler** sia impostato il valore **Head** (Testa)
-* Deselezionare **l'opzione Usa offset normale della** superficie predefinita e assicurarsi che **l'opzione Offset** normale della superficie sia impostata su 0
+* Deselezionare **l'opzione Usa offset normale della superficie predefinito** e assicurarsi che **l'opzione Surface Normal Offset (Offset** normale superficie) sia impostata su 0
 * Seleziona la casella di controllo **Keep Orientation Vertical** (Mantieni orientamento verticale)
 * Dall'elenco a discesa **Magnetic Surfaces (Superfici magnetiche)**  > **Element 0 (Elemento 0)** deseleziona tutte le opzioni tranne **Spatial Awareness** (Consapevolezza spaziale)
 

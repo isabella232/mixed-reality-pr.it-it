@@ -1,10 +1,10 @@
 - name: Configurazione e profili
   href: configuration-and-profiles.md
-- name: Puntatori e stato attivo del controller
+- name: Puntatori dei controller e stato attivo
   href: controllers-pointers-and-focus.md
-- name: Sistema principale
+- name: Sistema di base
   href: core-system.md
-- name: Framework e Runtime
+- name: Framework e runtime
   href: framework-and-runtime.md
 - name: Servizi di realtà mista
   href: mixed-reality-services.md

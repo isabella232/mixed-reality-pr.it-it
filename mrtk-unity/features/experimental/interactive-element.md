@@ -4,13 +4,13 @@ description: Documentazione di InteractiveElement MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 02/22/2021
-keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, elemento interattivo, interactable
-ms.openlocfilehash: 65f518c53414d68d3a9d2093cb427140cc65560b
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, elemento interattivo, interagiscibile
+ms.openlocfilehash: 6d8f36c4780844e991eb32943645402503fab8340c6843dbb607f1c11033d912
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144768"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220444"
 ---
 # <a name="interactive-element-experimental"></a>Elemento Interactive [Sperimentale]
 
@@ -33,15 +33,15 @@ L'elemento Interactive contiene gli stati principali e supporta l'aggiunta [di s
 - [Default](#default-state) 
 
 Stati principali di interazione da vicino e da lontano:
-- [Concentrarsi](#focus-state) 
+- [Focus](#focus-state) 
 
-Vicino agli stati core di interazione:
+Stati principali dell'interazione da vicino:
 
 - [Messa a fuoco nelle vicinanze](#focus-near-state)
 - [Tocco](#touch-state)
 
-Stati principali di interazione lontano:
-- [Messa a fuoco lontano](#focus-far-state)
+Stati principali di interazione da lontano:
+- [Messa a fuoco da lontano](#focus-far-state)
 - [Selezionare Lontano](#select-far-state)
 
 Altri stati principali:
@@ -49,23 +49,23 @@ Altri stati principali:
 - [Attivare e disattivare](#toggle-on-and-toggle-off-state)
 - [Parola chiave Speech](#speech-keyword-state)
 
-### <a name="how-to-add-a-core-state-via-inspector"></a>Come aggiungere uno stato core tramite Inspector
+### <a name="how-to-add-a-core-state-via-inspector"></a>Come aggiungere uno stato principale tramite Inspector
 
-1. Passare ad **Add Core State (Aggiungi** stato core) nel controllo per Interactive Element (Elemento interattivo).
+1. Passare ad **Add Core State (Aggiungi stato** principale) nel controllo per Interactive Element (Elemento interattivo).
 
-    ![Aggiungere uno stato di base tramite Inspector](../images/interactive-element/InEditor/InteractiveElementAddCoreState.png)
-
-
-1. Selezionare il **pulsante Seleziona stato** per scegliere lo stato principale da aggiungere. Gli stati nel menu vengono ordinati in base al tipo di interazione.
-
-    ![Aggiungere uno stato core tramite Inspector con lo stato selezionato](../images/interactive-element/InEditor/InteractiveElementAddCoreStateSelectState.png)
-
-1. Aprire il foldout Configurazione eventi per visualizzare gli eventi e le proprietà associati allo stato.
-
-    ![Aggiungere uno stato core tramite Inspector con la configurazione degli eventi](../images/interactive-element/InEditor/InteractiveElementAddCoreStateSelectStateEventConfig.png)
+    ![Aggiungere uno stato principale tramite Inspector](../images/interactive-element/InEditor/InteractiveElementAddCoreState.png)
 
 
-### <a name="how-to-add-a-core-state-via-script"></a>Come aggiungere uno stato core tramite script
+1. Selezionare il **pulsante Seleziona** stato per scegliere lo stato principale da aggiungere. Gli stati nel menu sono ordinati in base al tipo di interazione.
+
+    ![Aggiungere uno stato principale tramite Inspector con lo stato selezionato](../images/interactive-element/InEditor/InteractiveElementAddCoreStateSelectState.png)
+
+1. Aprire la sezione Configurazione eventi per visualizzare gli eventi e le proprietà associati allo stato.
+
+    ![Aggiungere uno stato principale tramite Inspector con la configurazione dell'evento](../images/interactive-element/InEditor/InteractiveElementAddCoreStateSelectStateEventConfig.png)
+
+
+### <a name="how-to-add-a-core-state-via-script"></a>Come aggiungere uno stato principale tramite script
 
 Usare il `AddNewState(stateName)` metodo per aggiungere uno stato principale. Per un elenco dei nomi di stato principali disponibili, usare `CoreInteractionState` l'enumerazione .
 
@@ -77,22 +77,22 @@ interactiveElement.AddNewState("SelectFar");
 interactiveElement.AddNewState(CoreInteractionState.SelectFar.ToString());
 ```
 
-### <a name="states-internal-structure"></a>Struttura interna States 
+### <a name="states-internal-structure"></a>Struttura interna degli stati 
 
 Gli stati nell'elemento interattivo sono di tipo `InteractionState` .  Un `InteractionState` oggetto contiene le proprietà seguenti:
 
-- **Nome**: nome dello stato.
-- **Valore**: valore dello stato.  Se lo stato è attivo, il valore dello stato è 1. Se lo stato è disattivato, il valore dello stato è 0.
-- **Attivo:** indica se lo stato è attualmente attivo. Il valore della proprietà Active è true quando lo stato è attivo, false se lo stato è disattivato. 
+- **Name:** nome dello stato.
+- **Value**: valore dello stato.  Se lo stato è attivo, il valore dello stato è 1. Se lo stato è disattivato, il valore dello stato è 0.
+- **Active:** indica se lo stato è attualmente attivo. Il valore della proprietà Active è true quando lo stato è attivo, false se lo stato è disattivato. 
 - **Tipo di interazione:** il tipo di interazione di uno stato è il tipo di interazione a cui è destinato uno stato. 
   - `None`: non supporta alcuna forma di interazione di input.
-  - `Near`: supporto vicino all'interazione. L'input viene considerato vicino all'interazione quando una mano articolata ha un contatto diretto con un altro oggetto di gioco, ad esempio la posizione in cui la mano articolata è vicina alla posizione dell'oggetto di gioco nello spazio mondiale.
-  - `Far`: supporto dell'interazione da lontano. L'input viene considerato interazione da lontano quando non è necessario un contatto diretto con l'oggetto del gioco. Ad esempio, l'input tramite il raggio del controller o lo sguardo è considerato input di interazione lontano.
-  - `NearAndFar`: include il supporto per le interazioni vicino e lontano. 
+  - `Near`: supporto dell'interazione da vicino. L'input è considerato un'interazione da vicino quando una mano articolata ha un contatto diretto con un altro oggetto di gioco, ad esempio la posizione della mano articolata è vicina alla posizione dell'oggetto gioco nello spazio mondiale.
+  - `Far`: supporto dell'interazione da lontano. L'input è considerato un'interazione da lontano quando non è necessario un contatto diretto con l'oggetto gioco. Ad esempio, l'input tramite raggio del controller o sguardo fisso è considerato input di interazione da lontano.
+  - `NearAndFar`: include il supporto dell'interazione da vicino e da lontano. 
   - `Other`: supporto dell'interazione indipendente dal puntatore.
 - **Configurazione eventi:** la configurazione degli eventi per uno stato è il punto di ingresso del profilo eventi serializzati. 
 
-Tutte queste proprietà vengono impostate internamente nell'elemento `State Manager` contenuto in Interactive Element. Per la modifica degli stati, usare i metodi helper seguenti:
+Tutte queste proprietà vengono impostate internamente nell'oggetto `State Manager` contenuto nell'elemento interattivo. Per modificare gli stati, usare i metodi helper seguenti:
 
 **Metodi helper per l'impostazione dello stato**
 
@@ -130,7 +130,7 @@ T stateNameEvents = interactiveElement.GetStateEvents<T>("StateName");
 
 ### <a name="default-state"></a>Stato predefinito
 
-Lo stato Predefinito è sempre presente in un elemento interattivo.  Questo stato sarà attivo solo quando tutti gli altri stati non sono attivi.  Se un altro stato diventa attivo, lo stato Predefinito verrà impostato su disattivato internamente. 
+Lo stato Predefinito è sempre presente in un elemento interattivo.  Questo stato sarà attivo solo quando tutti gli altri stati non sono attivi.  Se un altro stato diventa attivo, lo stato Predefinito verrà impostato internamente su Off. 
 
 Un elemento interattivo viene inizializzato con gli stati Predefinito e Stato attivo presenti nell'elenco degli stati. Lo stato Predefinito deve essere sempre presente nell'elenco degli stati. 
 
@@ -154,7 +154,7 @@ defaultEvents.OnStateOff.AddListener(() =>
 
 ### <a name="focus-state"></a>Stato attivo
 
-Lo stato messa a fuoco è uno stato di interazione da vicino e da lontano che può essere ritenuto come la realtà mista equivalente al passaggio del mouse. Il fattore di distinzione tra l'interazione da vicino e da lontano per lo stato di messa a fuoco è il tipo di puntatore attivo corrente.  Se il tipo di puntatore per lo stato di messa a fuoco è il puntatore Poke, l'interazione viene considerata quasi interazione.  Se il puntatore principale non è il puntatore Poke, l'interazione viene considerata un'interazione da lontano. Lo stato attivo è presente nell'elemento interattivo per impostazione predefinita.
+Lo stato messa a fuoco è uno stato di interazione vicino e lontano che può essere ritenuto come la realtà mista equivalente al passaggio del mouse. Il fattore di distinzione tra l'interazione da vicino e da lontano per lo stato di messa a fuoco è il tipo di puntatore attivo corrente.  Se il tipo di puntatore per lo stato di messa a fuoco è il puntatore Poke, l'interazione viene considerata quasi come interazione.  Se il puntatore principale non è il puntatore Poke, l'interazione viene considerata un'interazione da lontano. Lo stato attivo è presente nell'elemento interattivo per impostazione predefinita.
 
 **Comportamento dello stato attivo** 
  ![ Stato di messa a fuoco con interazione con la mano virtuale](../images/interactive-element/InEditor/Gifs/FocusStateEditor.gif) 
@@ -180,23 +180,23 @@ focusEvents.OnFocusOff.AddListener((pointerEventData) =>
 });
 ```
 
-#### <a name="focus-near-vs-focus-far-behavior"></a>Comportamento di messa a fuoco vicino a messa a fuoco e stato attivo lontano 
+#### <a name="focus-near-vs-focus-far-behavior"></a>Focus Near (Stato attivo vicino) e Focus Far Behavior (Comportamento da lontano dello stato attivo) 
 
-![Concentrarsi vicino e lontano con l'interazione con la mano virtuale](../images/interactive-element/InEditor/Gifs/FocusNearFocusFar.gif)
+![Concentrarsi da vicino e da lontano con l'interazione con la mano virtuale](../images/interactive-element/InEditor/Gifs/FocusNearFocusFar.gif)
 
-### <a name="focus-near-state"></a>Messa a fuoco vicino allo stato
+### <a name="focus-near-state"></a>Stato attivo vicino
 
-Lo stato Stato attivo vicino viene impostato quando viene generato un evento di stato attivo e il puntatore primario è il puntatore Poke, un'indicazione dell'interazione vicina. 
+Lo stato Stato attivo vicino viene impostato quando viene generato un evento di stato attivo e il puntatore principale è il puntatore Poke, un'indicazione dell'interazione da vicino. 
 
-**Messa a fuoco vicino allo stato Comportamento** 
- ![ Concentrarsi vicino allo stato con l'interazione con la mano virtuale](../images/interactive-element/InEditor/Gifs/FocusNearStateEditor.gif) 
+**Focus Near State Behavior** 
+ ![ Concentrarsi sullo stato vicino con l'interazione con la mano virtuale](../images/interactive-element/InEditor/Gifs/FocusNearStateEditor.gif) 
 
-**Focus Near State Inspector (Messa a fuoco vicino a controllo stato)** 
- ![ Messa a fuoco vicino al componente nel controllo](../images/interactive-element/InEditor/FocusNearStateInspector.png)
+**Focus Near State Inspector** 
+ ![ Focus near component in the Inspector](../images/interactive-element/InEditor/FocusNearStateInspector.png)
 
 #### <a name="getting-focusnear-state-events&quot;></a>Recupero di eventi di stato FocusNear
 
-Tipo di configurazione dell'evento per stato FocusNear: `FocusEvents`
+Tipo di configurazione dell'evento per lo stato FocusNear: `FocusEvents`
 
 ```c#
 FocusEvents focusNearEvents = interactiveElement.GetStateEvents<FocusEvents>(&quot;FocusNear");
@@ -214,15 +214,15 @@ focusNearEvents.OnFocusOff.AddListener((pointerEventData) =>
 
 ### <a name="focus-far-state"></a>Stato attivo lontano
 
-Lo stato Focus Far viene impostato quando il puntatore primario non è il puntatore Poke.  Ad esempio, il puntatore di raggio del controller predefinito e il puntatore GGV (Sguardo fisso, Movimento, Voce) sono considerati puntatori di interazione lontano.
+Lo stato Stato attivo lontano viene impostato quando il puntatore principale non è il puntatore Poke.  Ad esempio, l'indicatore di misura del raggio del controller predefinito e il puntatore GGV (Sguardo fisso, Movimento, Voce) sono considerati puntatori di interazione da lontano.
 
-**Comportamento dello stato attivo lontano** 
+**Stato attivo lontano Comportamento stato** 
  ![ Stato di messa a fuoco lontano con l'interazione con la mano virtuale](../images/interactive-element/InEditor/Gifs/FocusFarStateEditor.gif)
 
 **Focus Far State Inspector** 
- ![ Componente Distorsiva nello stato attivo nel controllo](../images/interactive-element/InEditor/FocusFarStateInspector.png)
+ ![ Focus far component in the Inspector](../images/interactive-element/InEditor/FocusFarStateInspector.png)
 
-#### <a name="getting-focus-far-state-events&quot;></a>Recupero di eventi di stato lontano dello stato attivo
+#### <a name="getting-focus-far-state-events&quot;></a>Ottenere lo stato attivo da lontano gli eventi di stato
 
 Tipo di configurazione dell'evento per stato FocusFar: `FocusEvents`
 
@@ -242,13 +242,13 @@ focusFarEvents.OnFocusOff.AddListener((pointerEventData) =>
 
 ### <a name="touch-state"></a>Stato tocco
 
-Lo stato Tocco è uno stato di interazione vicino che viene impostato quando una mano articolata tocca direttamente l'oggetto.  Un tocco diretto significa che il dito indice della mano articolata è molto vicino alla posizione mondiale dell'oggetto. Per impostazione predefinita, `NearInteractionTouchableVolume` un componente viene collegato all'oggetto se lo stato Tocco viene aggiunto all'elenco degli stati.  La presenza di un  `NearInteractionTouchableVolume` componente o è necessaria per `NearInteractionTouchable` rilevare gli eventi touch.  La differenza tra e è che rileva un tocco in base al collisore dell'oggetto e rileva il tocco all'interno di `NearInteractionTouchableVolume` un'area definita di un `NearInteractionTouchable` `NearInteractionTouchableVolume` `NearInteractionTouchable` piano.
+Lo stato Tocco è uno stato di interazione vicino che viene impostato quando una mano articolata tocca direttamente l'oggetto.  Un tocco diretto significa che il dito indice della mano articolata è molto vicino alla posizione mondiale dell'oggetto. Per impostazione predefinita, `NearInteractionTouchableVolume` un componente viene collegato all'oggetto se lo stato Tocco viene aggiunto all'elenco degli stati.  La presenza di un  `NearInteractionTouchableVolume` componente o è necessaria per `NearInteractionTouchable` rilevare gli eventi Touch.  La differenza tra e è che rileva un tocco in base al collisore dell'oggetto e rileva il tocco all'interno di `NearInteractionTouchableVolume` un'area definita di un `NearInteractionTouchable` `NearInteractionTouchableVolume` `NearInteractionTouchable` piano.
 
 **Comportamento dello stato tocco** 
  ![ Stato tocco con interazione con la mano virtuale](../images/interactive-element/InEditor/Gifs/TouchStateEditor.gif)
 
 **Controllo stato tocco** 
- ![ Componente stato tocco nel controllo](../images/interactive-element/InEditor/TouchStateInspector.png)
+ ![ Componente Stato tocco nel controllo](../images/interactive-element/InEditor/TouchStateInspector.png)
 
 #### <a name="getting-touch-state-events&quot;></a>Recupero di eventi di stato tocco
 
@@ -275,17 +275,17 @@ touchEvents.OnTouchUpdated.AddListener((touchData) =>
 
 ### <a name="select-far-state"></a>Selezionare Stato lontano
 
-Lo stato Select Far (Seleziona da lontano) `IMixedRealityPointerHandler` è quello indicato.  Questo stato è uno stato di interazione da lontano che rileva il clic di interazione da lontano (tocco) e mantiene l'uso di puntatori di interazione da lontano, ad esempio l'indicatore di misura del raggio del controller predefinito o il puntatore GGV.  Lo stato Select Far (Seleziona da lontano) ha un'opzione nella sezione di configurazione dell'evento denominata `Global` . Se `Global` è true, viene `IMixedRealityPointerHandler` registrato come gestore di input globale.  Lo stato attivo su un oggetto non è necessario per attivare eventi di sistema di input se un gestore è registrato come globale.  Ad esempio, se un utente vuole sapere ogni volta che viene eseguito il movimento di tocco/selezione indipendentemente dall'oggetto nello stato attivo, impostare `Global` su true. 
+Lo stato Seleziona lontano è `IMixedRealityPointerHandler` lo stato in superficie.  Questo stato è uno stato di interazione lontano che rileva il clic di interazione lontano (tocco dell'aria) e mantiene l'uso di puntatori di interazione lontano, ad esempio il puntatore a raggi del controller predefinito o il puntatore GGV.  Lo stato Seleziona lontano ha un'opzione sotto il foldout di configurazione degli eventi denominato `Global` . Se `Global` è true, viene registrato `IMixedRealityPointerHandler` come gestore di input globale.  Lo stato attivo su un oggetto non è necessario per attivare eventi di sistema di input se un gestore è registrato come globale.  Ad esempio, se un utente vuole sapere ogni volta che viene eseguito il movimento di tocco/selezione dell'aria indipendentemente dall'oggetto attivo, impostare `Global` su true. 
 
-**Selezionare Far State Behavior (Comportamento stato lontano)** 
- ![ Selezionare da lontano con l'interazione con la mano virtuale](../images/interactive-element/InEditor/Gifs/SelectFarStateEditor.gif)
+**Selezionare Comportamento stato lontano** 
+ ![ Selezionare lontano con l'interazione con la mano virtuale](../images/interactive-element/InEditor/Gifs/SelectFarStateEditor.gif)
 
 **Selezionare Far State Inspector (Controllo stato lontano)** 
- ![ Selezionare il componente lontano nel controllo](../images/interactive-element/InEditor/SelectFarStateInspector.png)
+ ![ Selezionare un componente lontano nel controllo](../images/interactive-element/InEditor/SelectFarStateInspector.png)
 
 #### <a name="getting-select-far-state-events&quot;></a>Recupero di eventi select far state
 
-Tipo di configurazione dell'evento per SelectFar State: `SelectFarEvents`
+Tipo di configurazione dell'evento per lo stato SelectFar: `SelectFarEvents`
 
 ```c#
 SelectFarEvents selectFarEvents = interactiveElement.GetStateEvents<SelectFarEvents>(&quot;SelectFar");
@@ -313,7 +313,7 @@ selectFarEvents.OnSelectClicked.AddListener((pointerEventData) =>
 
 ### <a name="clicked-state"></a>Stato selezionato
 
-Lo stato Clicked (Selezionato) viene attivato da un clic di interazione da lontano (Select Far state) (Seleziona stato lontano) per impostazione predefinita.  Questo stato viene commutato internamente su on, richiama l'evento OnClicked e quindi viene immediatamente disattivato. 
+Lo stato Clicked viene attivato da un clic di interazione lontano (Seleziona stato lontano) per impostazione predefinita.  Questo stato viene commutato internamente su on, richiama l'evento OnClicked e quindi viene immediatamente disattivato. 
 
 > [!NOTE]
 > Il feedback visivo nel controllo in base all'attività di stato non è presente per lo stato Clicked perché viene attivata e quindi disattivata immediatamente. 
@@ -331,7 +331,7 @@ Lo stato selezionato può essere attivato tramite punti di ingresso aggiuntivi u
 
 #### <a name="getting-clicked-state-events&quot;></a>Recupero di eventi di stato su cui è stato fatto clic
 
-Tipo di configurazione dell'evento per lo stato selezionato: `ClickedEvents`
+Tipo di configurazione dell'evento per lo stato su cui è stato fatto clic: `ClickedEvents`
 
 ```c#
 ClickedEvents clickedEvent = interactiveElement.GetStateEvents<ClickedEvents>(&quot;Clicked");
@@ -344,7 +344,7 @@ clickedEvent.OnClicked.AddListener(() =>
 
 ### <a name="toggle-on-and-toggle-off-state"></a>Attivare e disattivare lo stato
 
-Gli stati Attiva/Disattiva e Disattiva sono una coppia ed entrambi devono essere presenti per il comportamento di attivazione/disattivazione.  Per impostazione predefinita, gli stati Attiva/Disattiva e Disattiva vengono attivati tramite un clic di interazione lontano (Seleziona stato lontano).  Per impostazione predefinita, lo stato Toggle Off è attivo all'avvio, vale a dire che l'interruttore verrà inizializzato su off.  Se un utente vuole che lo stato Attiva/Disattiva sia attivo all'avvio, nello stato Attiva/Disattiva impostare `IsSelectedOnStart` su true.
+Gli stati Attiva/Disattiva e Disattiva sono una coppia ed entrambi devono essere presenti per il comportamento di attivazione/disattivazione.  Per impostazione predefinita, gli stati Attiva/Disattiva e Disattiva vengono attivati tramite un clic di interazione lontano (Seleziona stato lontano).  Per impostazione predefinita, lo stato Toggle Off è attivo all'avvio, vale a dire che l'interruttore verrà inizializzato su off.  Se un utente vuole che lo stato Toggle On sia attivo all'avvio, lo stato Toggle On è `IsSelectedOnStart` impostato su true.
 
 **Comportamento dello stato ToggleOn e** 
  ![ Toggle Off Attivare e disattivare le interazioni con la mano virtuale](../images/interactive-element/InEditor/Gifs/ToggleOnToggleOffStateEditor.gif)
@@ -382,16 +382,16 @@ toggleOffEvent.OnToggleOff.AddListener(() =>
 
 ### <a name="speech-keyword-state"></a>Stato parola chiave voce
 
-Lo stato Parola chiave voce è in ascolto delle parole chiave definite nel profilo voce di realtà mista. Qualsiasi nuova parola chiave DEVE essere registrata nel profilo del comando vocale prima del runtime (procedura seguente). 
+Lo stato Parola chiave voce è in ascolto delle parole chiave definite nel profilo di riconoscimento vocale di realtà mista. Qualsiasi nuova parola chiave DEVE essere registrata nel profilo del comando vocale prima del runtime (procedura seguente). 
 
-**Comportamento dello stato delle parole chiave vocali** 
- ![ Parola chiave voce con interazione virtuale](../images/interactive-element/InEditor/Gifs/SpeechKeywordStateEditor.gif)
+**Comportamento dello stato delle parole chiave voce** 
+ ![ Parola chiave Speech con interazione virtuale](../images/interactive-element/InEditor/Gifs/SpeechKeywordStateEditor.gif)
 
 **Controllo stato parola chiave voce** 
- ![ Componente parola chiave Voce in Inspector](../images/interactive-element/InEditor/SpeechKeywordStateInspector.png)
+ ![ Componente parola chiave voce in Inspector](../images/interactive-element/InEditor/SpeechKeywordStateInspector.png)
 
 > [!NOTE]
-> Lo stato della parola chiave voce è stato attivato nell'editor premendo F5 nella gif precedente. La configurazione nel test dell'editor per il riconoscimento vocale è descritta nei passaggi seguenti. 
+> Lo stato parola chiave voce è stato attivato nell'editor premendo il tasto F5 nella gif precedente. La configurazione nei test dell'editor per il riconoscimento vocale è descritta nei passaggi seguenti. 
 
 #### <a name="how-to-register-a-speech-commandkeyword"></a>Come registrare un comando vocale/parola chiave
 
@@ -403,13 +403,13 @@ Lo stato Parola chiave voce è in ascolto delle parole chiave definite nel profi
 
 1. Scorrere verso il basso fino alla sezione Voce nel profilo di input e clonare il profilo voce
 
-    ![Profilo delle parole chiave vocali nell'oggetto gioco MRTK](../images/interactive-element/InEditor/SpeechKeywordProfileClone.png) 
+    ![Profilo parola chiave voce nell'oggetto gioco MRTK](../images/interactive-element/InEditor/SpeechKeywordProfileClone.png) 
 
-1. Selezionare Aggiungi un nuovo comando vocale
+1. Selezionare Aggiungi un nuovo comando voce
 
     ![Aggiunta di una nuova parola chiave vocale nel profilo MRTK](../images/interactive-element/InEditor/SpeechKeywordProfileAddKeyword.png) 
 
-1. Immettere la nuova parola chiave. Facoltativo: modificare KeyCode in F5 (o un altro KeyCode) per consentire il test nell'editor. 
+1. Immettere la nuova parola chiave. Facoltativo: impostare KeyCode su F5 (o un altro KeyCode) per consentire il test nell'editor. 
 
     ![Configurazione della parola chiave speech nel profilo MRTK](../images/interactive-element/InEditor/SpeechKeywordProfileAddKeywordName.png) 
 
@@ -424,7 +424,7 @@ Lo stato Parola chiave voce è in ascolto delle parole chiave definite nel profi
     ![Immissione di una nuova parola chiave vocale](../images/interactive-element/InEditor/SpeechKeywordEnterKeyword.png) 
 
 
-Per testare lo stato parola chiave voce nell'editor, premere keyCode definito nel passaggio 6 (F5) per simulare l'evento riconoscimento della parola chiave vocale.
+Per testare lo stato parola chiave voce nell'editor, premere il codice key definito nel passaggio 6 (F5) per simulare l'evento riconoscimento della parola chiave vocale.
 
 #### <a name="getting-speech-keyword-state-events&quot;></a>Recupero di eventi relativi allo stato delle parole chiave vocali
 
@@ -465,7 +465,7 @@ Lo stato personalizzato creato tramite il controllo verrà inizializzato con la 
     
     ![Aggiungere uno stato personalizzato all'elenco di stati](../images/interactive-element/InEditor/InteractiveElementCreateCustomStateNameSet.png)
 
-   Questo stato personalizzato viene inizializzato con la configurazione `StateEvents` dell'evento predefinita che contiene gli `OnStateOn` eventi `OnStateOff` e . Per creare una configurazione di evento personalizzata per un nuovo stato, vedere: [Creazione di uno stato personalizzato con una configurazione di eventi personalizzati.](#creating-a-custom-state-with-a-custom-event-configuration)
+   Questo stato personalizzato viene inizializzato con la configurazione `StateEvents` dell'evento predefinita che contiene gli `OnStateOn` eventi e `OnStateOff` . Per creare una configurazione di evento personalizzata per un nuovo stato, vedere: [Creazione di uno stato personalizzato con una configurazione di eventi personalizzati](#creating-a-custom-state-with-a-custom-event-configuration).
     
     ![Nuovo stato visualizzato nel componente dell'elemento interattivo](../images/interactive-element/InEditor/InteractiveElementCreateCustomStateEventConfig.png)
 
@@ -489,24 +489,24 @@ myNewStateEvents.OnStateOn.AddListener(() =>
 
 ### <a name="creating-a-custom-state-with-a-custom-event-configuration"></a>Creazione di uno stato personalizzato con una configurazione di eventi personalizzati 
 
-I file di esempio per uno stato personalizzato denominato **Keyboard** sono disponibili qui: MRTK\SDK\Experimental\InteractiveElement\Examples\Scripts\CustomStateExample
+I file di esempio per uno stato personalizzato denominato **Tastiera** si trovano qui: MRTK\SDK\Experimental\InteractiveElement\Examples\Scripts\CustomStateExample
 
 La procedura seguente illustra un esempio esistente di creazione di file di configurazione e ricevitore di eventi di stato personalizzati.
 
-1. Si pensi a un nome di stato.  Questo nome deve essere univoco e non può corrispondere agli stati principali esistenti. Ai fini di questo esempio, il nome dello stato sarà **Tastiera**.
+1. Si pensi a un nome di stato.  Questo nome deve essere univoco e non può essere uguale agli stati di base esistenti. Ai fini di questo esempio, il nome dello stato sarà **Keyboard**.
 
 1. Creare due file con estensione cs denominati state name + "Receiver" e state name + "Events". La denominazione di questi file viene presa in considerazione internamente e deve seguire la convenzione nome stato + evento/ricevitore. 
 
     ![Script di stato della tastiera](../images/interactive-element/InEditor/KeyboardStateFiles.png)
 
-1. Per altri dettagli sul contenuto dei file, vedere i file KeyboardEvents.cs e KeyboardReceiver.cs. Le nuove classi di configurazione degli eventi devono ereditare da e le nuove classi del ricevitore `BaseInteractionEventConfiguration` di eventi devono ereditare da `BaseEventReceiver` .  Esempi di impostazione dello stato per lo stato della tastiera si trovano nel `CustomStateSettingExample.cs` file . 
+1. Per altri dettagli sul contenuto dei file, vedere i file KeyboardEvents.cs e KeyboardReceiver.cs. Le nuove classi di configurazione degli eventi devono ereditare da `BaseInteractionEventConfiguration` e le nuove classi del ricevitore di eventi devono ereditare da `BaseEventReceiver` .  Esempi sull'impostazione dello stato per lo stato della tastiera si trovano nel `CustomStateSettingExample.cs` file . 
 
-1. Aggiungere lo stato all'elemento interattivo usando il nome dello stato. Il nome dello stato verrà riconosciuto se sono presenti file di configurazione dell'evento e del ricevitore di eventi.  Le proprietà nel file di configurazione dell'evento personalizzato dovrebbero essere visualizzate nel controllo.
+1. Aggiungere lo stato all'elemento interattivo usando il nome dello stato, il nome dello stato verrà riconosciuto se sono presenti file di configurazione dell'evento e ricevitore di eventi.  Le proprietà nel file di configurazione dell'evento personalizzato dovrebbero essere visualizzate nel controllo .
 
     ![Aggiunta di uno stato personalizzato all'elemento interattivo ](../images/interactive-element/InEditor/AddKeyboardState.png) ![ Stato personalizzato riconosciuto nell'elemento interattivo](../images/interactive-element/InEditor/SetKeyboardStateName.png)
 
 
-1. Per altri esempi di file di configurazione e ricevitore di eventi, vedere i file nei percorsi seguenti:    
+1. Per altri esempi di configurazione degli eventi e dei file del ricevitore di eventi, vedere i file nei percorsi seguenti:    
 - MRTK\SDK\Experimental\InteractiveElement\InteractiveElement\Events\EventConfigurations
 - MRTK\SDK\Experimental\InteractiveElement\InteractiveElement\Events\EventReceivers
 
@@ -528,32 +528,32 @@ Il componente Visualizzatore stato aggiunge animazioni a un oggetto in base agli
 
 Il visualizzatore di stato sfrutta attualmente il sistema di animazione Unity. 
 
-Quando  si preme il pulsante Genera nuove clip di animazione nel visualizzatore di stato, vengono generati nuovi asset di clip di animazione in base ai nomi di stato nell'elemento interattivo e inseriti nella cartella MixedRealityToolkit.Generated. La proprietà Clip animazione in ogni contenitore di stato è impostata sul clip di animazione associato.
+Quando  viene premuto il pulsante Genera nuove clip di animazione nel visualizzatore di stato, vengono generati nuovi asset di clip di animazione in base ai nomi di stato nell'elemento interattivo e inseriti nella cartella MixedRealityToolkit.Generated. La proprietà Clip animazione in ogni contenitore di stato viene impostata sul clip di animazione associato.
 
 ![Clip di animazione nel componente visualizzatore di stato](../images/interactive-element/StateVisualizer/AnimationClips.png)
 
 Viene generata anche una macchina a stati di [Animator](https://docs.unity3d.com/Manual/AnimationOverview.html) per gestire le transizioni uniformi tra le clip di animazione.  Per impostazione predefinita, la macchina a stati usa [Qualsiasi stato](https://docs.unity3d.com/Manual/class-State.html) per consentire le transizioni tra qualsiasi stato nell'elemento interattivo. 
 
-[I visualizzatori di stato attivati nell'animatore](https://docs.unity3d.com/Manual/AnimationParameters.html) vengono generati anche per ogni stato. I parametri del trigger vengono usati nel visualizzatore di stato per attivare un'animazione.
+[I visualizzatori di stato attivati nell'animatore](https://docs.unity3d.com/Manual/AnimationParameters.html) vengono generati anche per ogni stato, mentre i parametri del trigger vengono usati nel visualizzatore di stato per attivare un'animazione.
 
-![Macchina a stati Unity](../images/interactive-element/StateVisualizer/UnityStateMachine.png)
+![Macchina a stati unity](../images/interactive-element/StateVisualizer/UnityStateMachine.png)
 
 ### <a name="runtime-limitations"></a>Limitazioni di runtime 
 
-Il visualizzatore di stato deve essere aggiunto a un oggetto tramite il controllo e non può essere aggiunto tramite script.  Le proprietà che modificano AnimatorStateMachine/AnimationController sono contenute in uno spazio dei nomi dell'editor ( ) che vengono rimosse `UnityEditor.Animations` quando viene compilata l'app.
+Il visualizzatore di stato deve essere aggiunto a un oggetto tramite inspector e non può essere aggiunto tramite script.  Le proprietà che modificano AnimatorStateMachine/AnimationController sono contenute in uno spazio dei nomi dell'editor ( ) che viene rimosso quando viene compilata `UnityEditor.Animations` l'app.
 
 ## <a name="how-to-use-the-state-visualizer"></a>Come usare il visualizzatore di stato
 
 1. Creare un cubo
 1. Associare un elemento interattivo
-1. Attach State Visualizer
-1. Selezionare Generate **New Animation Clips (Genera nuove clip di animazione)**
+1. Visualizzatore dello stato di collegamento
+1. Selezionare **Genera nuove clip di animazione**
 
     ![Generazione di nuove clip di animazione](../images/interactive-element/StateVisualizer/GenerateAnimationClips.png)
 
-    ![Visualizzazione delle clip di animazione generate nei componenti del visualizzatore e degli elementi interattivi](../images/interactive-element/StateVisualizer/GenerateAnimationClips2.png)
+    ![Visualizzazione di clip di animazione generate nel visualizzatore e nei componenti degli elementi interattivi](../images/interactive-element/StateVisualizer/GenerateAnimationClips2.png)
 
-1. Nel contenitore Stato attivo selezionare **Aggiungi destinazione**
+1. Nel contenitore Stato stato attivo selezionare **Aggiungi destinazione**
 
     ![Aggiunta della destinazione del visualizzatore di stato](../images/interactive-element/StateVisualizer/AddTarget.png)
 
@@ -561,12 +561,12 @@ Il visualizzatore di stato deve essere aggiunto a un oggetto tramite il controll
 
     ![Impostazione della destinazione del visualizzatore di stato](../images/interactive-element/StateVisualizer/SetTarget.png)
 
-1. Aprire il riquadro proprietà animabili del cubo
-1. Selezionare il menu a discesa delle proprietà Animabile e selezionare **Colore**
+1. Aprire la finestra di dialogo Proprietà animabili del cubo
+1. Selezionare il menu a discesa Della proprietà Animabile e selezionare **Colore**
 
     ![Impostazione del colore del visualizzatore di stato](../images/interactive-element/StateVisualizer/SetColor.png)
 
-1. Selezionare **Add the Color Animatable Property (Aggiungi proprietà animabile color)**
+1. Selezionare **Aggiungi la proprietà Color Animatable**
 
     ![Selezione della proprietà animabile color color animatable del visualizzatore](../images/interactive-element/StateVisualizer/SetColorProperty.png)
 
@@ -580,7 +580,7 @@ Il visualizzatore di stato deve essere aggiunto a un oggetto tramite il controll
 
 ## <a name="animatable-properties"></a>Proprietà animabili
 
-Lo scopo principale di Proprietà animabili è semplificare l'impostazione del fotogramma chiave della clip di animazione.  Se un utente ha familiarità con Unity Animation System e preferisce impostare direttamente i fotogrammi chiave nelle clip di animazione generate, non può semplicemente aggiungere proprietà animabili a un oggetto di destinazione e aprire il clip nella finestra Animazione di Unity (Animazione di Windows > > Animation). 
+Lo scopo principale di Proprietà animabili è semplificare l'impostazione del fotogramma chiave della clip di animazione.  Se un utente ha familiarità con Unity Animation System e preferisce impostare direttamente i fotogrammi chiave nelle clip di animazione generate, non può semplicemente aggiungere proprietà animabili a un oggetto di destinazione e aprire il clip nella finestra Animazione di Unity (animazione Windows > animation > Animation). 
 
 Se si usano le proprietà animabili per l'animazione, il tipo di curva viene impostato su EaseInOut.
 
@@ -608,7 +608,7 @@ La proprietà Position Offset Animatable accetta la posizione corrente dell'ogge
 
 La proprietà Color Animatable rappresenta il colore principale di un materiale se il materiale ha una proprietà di colore principale. Questa proprietà aggiunge un'animazione alla `material._Color` proprietà .
 
-![Modifica del colore dello stato attivo con l'interazione con la mano virtuale](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
+![Modifica del colore di messa a fuoco con l'interazione con la mano virtuale](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
 
 ### <a name="shader-color"></a>Colore shader
 

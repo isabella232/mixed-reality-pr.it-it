@@ -7,12 +7,12 @@ ms.date: 04/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, realtà mista, debug, distribuzione
-ms.openlocfilehash: 5510646c058f683babff5e9e34dd296f88cd06c3
-ms.sourcegitcommit: b4bdac2c4d7315902712ce74fd909fb8383d4bfd
+ms.openlocfilehash: 43abf7b512d6b01695e2c953df821a608359918c461614e3f94710b57f241db0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110543227"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221141"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>Uso di Visual Studio per la distribuzione e il debug
 
@@ -37,7 +37,7 @@ Per iniziare, abilita **Modalità sviluppatore** sul tuo dispositivo per consent
 3. Seleziona il riquadro **Impostazioni** per avviare l'app nell'ambiente in uso.
 4. Scegli la voce di menu **Aggiorna**.
 5. Scegli la voce di menu **Per gli sviluppatori**.
-6. Abilitare **Usa le funzionalità per sviluppatori** per distribuire le app Visual Studio in HoloLens. Se il dispositivo esegue Windows Holographic versione 21H1 o successiva, abilitare anche **Individuazione dispositivi**.
+6. Abilitare **Usa le funzionalità per sviluppatori** per distribuire le app Visual Studio nel HoloLens. Se il dispositivo esegue Windows Holographic versione 21H1 o successiva, abilitare anche **Individuazione dispositivi**.
 7. Facoltativo: scorrere verso il basso e abilitare anche il **Portale di dispositivi**, che consente di connettersi al [Portale di dispositivi di Windows](using-the-windows-device-portal.md) in HoloLens da un Web browser.
 
 ### <a name="windows-pc"></a>PC Windows
@@ -48,7 +48,7 @@ Se si usa un visore VR di Windows Mixed Reality connesso al PC, è necessario ab
 3. Seleziona **Per gli sviluppatori**
 4. Abilitare **Modalità sviluppatore**, leggere la dichiarazione di non responsabilità relativa all'impostazione scelta e quindi selezionare Sì per accettare la modifica.
 
-## <a name="deploying-a-hololens-app-over-wi-fi"></a>Distribuzione di un'app HoloLens Wi-Fi 
+## <a name="deploying-a-hololens-app-over-wi-fi"></a>Distribuzione di un'app HoloLens su Wi-Fi 
 
 Configurare il Visual Studio progetto con le proprietà seguenti:
 
@@ -73,7 +73,7 @@ Successivamente, è necessario impostare la connessione remota. Per i progetti C
 > Se la finestra di dialogo di connessione remota non viene visualizzata nel progetto C#, è possibile aprirla manualmente da **Proprietà > Debug**.
 
 1. Immetti l'indirizzo IP del tuo dispositivo nel campo **Indirizzo** o **Nome computer**. 
-    * È possibile trovare l'indirizzo IP in HoloLens in Impostazioni **> rete & Internet > opzioni avanzate**
+    * È possibile trovare l'indirizzo IP nel HoloLens in Impostazioni > **Rete & Internet > Opzioni avanzate**
     * È sempre consigliabile immettere manualmente l'indirizzo IP anziché a seconda della funzionalità Rilevata automaticamente
 
 2. Impostare la **modalità di autenticazione** su Universale **(protocollo non crittografato)**
@@ -88,7 +88,7 @@ Successivamente, è necessario impostare la connessione remota. Per i progetti C
 
 4. La prima volta che viene distribuita un'app in HoloLens dal PC, verrà chiesto di specificare un PIN. Segui le istruzioni riportate di seguito in **Associazione del dispositivo**.
 
-## <a name="deploying-a-hololens-app-over-usb"></a>Distribuzione di un'app HoloLens tramite USB 
+## <a name="deploying-a-hololens-app-over-usb"></a>Distribuzione di un'app HoloLens usb 
 
 <br>
 
@@ -120,9 +120,9 @@ Successivamente, è necessario impostare la connessione remota. Per i progetti C
 > [!NOTE]
 > Se si verifica un ritardo notevole con la distribuzione delle app tramite USB, è consigliabile usare le istruzioni del [computer](#deploying-a-hololens-app-over-wi-fi) remoto nella sezione precedente.
 
-## <a name="deploying-an-app-to-the-hololens-emulator"></a>Distribuzione di un'app nell'emulatore HoloLens
+## <a name="deploying-an-app-to-the-hololens-emulator"></a>Distribuzione di un'app nel HoloLens Emulator
 
-1. Assicurarsi di aver installato **[l'emulatore HoloLens 2 o HoloLens (prima generazione)](../install-the-tools.md#installation-checklist)**
+1. Assicurarsi di aver installato il **[HoloLens 2 o HoloLens (prima generazione) Emulator](../install-the-tools.md#installation-checklist)**
 2. Selezionare la configurazione di compilazione e l'emulatore in base al dispositivo
 
 [!INCLUDE[](includes/vs-wifi-hl-include.md)]

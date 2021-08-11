@@ -4,19 +4,19 @@ description: Panoramica sui pulsanti in MRTK
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, pulsanti MRTK
-ms.openlocfilehash: 16baeede2c63437e933eb1367f01af7f372cd62f
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+keywords: Pulsanti Unity,HoloLens, HoloLens 2, Realtà mista, sviluppo, MRTK, MRTK
+ms.openlocfilehash: 7d1c141981ec402d85e1e2004739e9ab9f0ebe9da5361e4e3100b43a2b5b4129
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281850"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115229002"
 ---
 # <a name="buttons"></a>Pulsanti
 
 ![Pulsante principale](../images/button/MRTK_Button_Main.png)
 
-Un pulsante offre all'utente un modo per attivare un'azione immediata. È uno dei componenti di base della realtà mista. MRTK offre vari tipi di prefab per i pulsanti.
+Un pulsante offre all'utente un modo per attivare un'azione immediata. È uno dei componenti di base più importanti nella realtà mista. MRTK fornisce vari tipi di prefab dei pulsanti.
 
 ## <a name="button-prefabs-in-mrtk"></a>Prefab dei pulsanti in MRTK
 
@@ -29,7 +29,7 @@ Esempi dei prefab dei pulsanti nella ``MRTK/SDK/Features/UX/Interactable/Prefabs
 * `PressableButtonUnityUICircular.prefab`
 * `PressableButtonHoloLens2UnityUI.prefab`
 
-### <a name="collider-based-buttons"></a>Pulsanti basati su collisori
+### <a name="collider-based-buttons"></a>Pulsanti basati sul collisore
 
 :::row:::
     :::column:::
@@ -44,13 +44,13 @@ Esempi dei prefab dei pulsanti nella ``MRTK/SDK/Features/UX/Interactable/Prefabs
 :::row-end:::
 :::row:::
     :::column::: 
-    HoloLens 2 pulsante in stile shell di HoloLens 2 con backplate che supporta vari commenti visivi, ad esempio luce del bordo, luce di prossimità e pappe anteriore compresso
+    HoloLens 2 pulsante in stile shell con backplate che supporta vari feedback visivi, ad esempio luce del bordo, luce di prossimità e barra anteriore compressa
     :::column-end:::
     :::column:::
-    HoloLens 2 di stile della shell senza backplate
+    HoloLens 2 pulsante di tipo shell senza backplate
     :::column-end:::
     :::column:::
-    HoloLens 2 in stile shell di HoloLens 2 con forma circolare
+    HoloLens 2 pulsante in stile shell con forma circolare
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -66,7 +66,7 @@ Esempi dei prefab dei pulsanti nella ``MRTK/SDK/Features/UX/Interactable/Prefabs
 :::row-end:::
 :::row:::
     :::column::: 
-    Pulsante HoloLens 2 stile shell di Wide HoloLens 2 32x96mm
+    Pulsante HoloLens 2 di tipo shell 32x96mm
     :::column-end:::
     :::column:::
     Barra dei HoloLens 2 orizzontale con backplate condiviso
@@ -88,13 +88,13 @@ Esempi dei prefab dei pulsanti nella ``MRTK/SDK/Features/UX/Interactable/Prefabs
 :::row-end:::
 :::row:::
     :::column:::     
-    HoloLens 2 della casella di controllo di tipo shell 32x32mm
+    HoloLens 2 casella di controllo di tipo shell 32x32mm
     :::column-end:::
     :::column:::
-    HoloLens 2 di tipo shell di HoloLens 2 32x32mm 
+    HoloLens 2 dell'interruttore di tipo shell 32x32mm 
     :::column-end:::
     :::column:::
-    HoloLens 2 radio in stile shell di HoloLens 2 32x32mm
+    HoloLens 2 di shell in stile radio 32x32mm
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -110,13 +110,13 @@ Esempi dei prefab dei pulsanti nella ``MRTK/SDK/Features/UX/Interactable/Prefabs
 :::row-end:::
 :::row:::
     :::column:::  
-    HoloLens 2 di controllo di tipo shell di HoloLens 2 32x96mm
+    HoloLens 2 della casella di controllo di tipo shell 32x96mm
     :::column-end:::
     :::column:::
-    HoloLens 2 di shell di HoloLens 2 32x96mm
+    HoloLens 2 dell'interruttore di tipo shell 32x96mm
     :::column-end:::
     :::column:::
-    HoloLens 2 radio in stile shell di HoloLens 2 32x96mm
+    HoloLens 2 in stile shell radio 32x96mm
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -124,7 +124,7 @@ Esempi dei prefab dei pulsanti nella ``MRTK/SDK/Features/UX/Interactable/Prefabs
     ![Radiale ](../images/button/MRTK_Button_Radial.png) **radiale**
     :::column-end:::
     :::column:::
-    ![Casella di controllo ](../images/button/MRTK_Button_Checkbox.png) **della casella di controllo**
+    ![Casella di ](../images/button/MRTK_Button_Checkbox.png) **controllo**
     :::column-end:::
     :::column:::
     ![ToggleSwitch ](../images/button/MRTK_Button_ToggleSwitch.png) **ToggleSwitch**
@@ -149,78 +149,78 @@ Esempi dei prefab dei pulsanti nella ``MRTK/SDK/Features/UX/Interactable/Prefabs
     ![PressableRoundButton ](../images/button/MRTK_Button_Round.png) **PressableRoundButton** 
     :::column-end:::
     :::column:::
-    ![Pulsante di base ](../images/button/MRTK_Button_Base.png) **del pulsante**
+    ![Pulsante ](../images/button/MRTK_Button_Base.png)  di base
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::  
-    HoloLens pulsante di stile della shell di prima generazione
+    HoloLens pulsante stile shell di prima generazione
     :::column-end:::
     :::column:::
-    Pulsante di selezione forma rotonda
+    Pulsante di pressione della forma arrotondata
     :::column-end:::
     :::column:::
     Pulsante Di base
     :::column-end:::
 :::row-end:::
 
-`Button`(Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/Button.prefab) si basa sul concetto [interactable](interactable.md) per fornire controlli dell'interfaccia utente semplici per i pulsanti o altri tipi di superfici interattive. Il pulsante baseline supporta tutti i metodi di input disponibili, incluso l'input della mano articolato per le interazioni da vicino, nonché lo sguardo fisso e il tocco nell'aria per le interazioni da lontano. È anche possibile usare il comando vocale per attivare il pulsante.
+`Button`(Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/Button.prefab) si basa sul concetto [Interactable](interactable.md) per fornire semplici controlli dell'interfaccia utente per pulsanti o altri tipi di superfici interattive. Il pulsante baseline supporta tutti i metodi di input disponibili, tra cui l'input manuale articolato per le interazioni vicine, nonché lo sguardo e il tocco dell'aria per le interazioni lontano. È anche possibile usare il comando vocale per attivare il pulsante.
 
-`PressableButtonHoloLens2`(Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2.prefab) è un pulsante di stile della shell di HoloLens 2 che supporta il movimento preciso del pulsante per l'input di tracciamento diretto della mano. Combina script `Interactable` con `PressableButton` script.
+`PressableButtonHoloLens2`(Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2.prefab) è il pulsante di stile della shell di HoloLens 2 che supporta lo spostamento preciso del pulsante per l'input di rilevamento diretto della mano. Combina lo `Interactable` script con lo `PressableButton` script.
 
-Per HoloLens 2, è consigliabile usare pulsanti con un backplate opaco. I pulsanti trasparenti non sono consigliati a causa di questi problemi di usabilità e stabilità:
+Per HoloLens 2, è consigliabile usare pulsanti con backplate opaco. I pulsanti trasparenti non sono consigliati a causa di questi problemi di usabilità e stabilità:
 
 * L'icona e il testo sono difficili da leggere con l'ambiente fisico
-* È difficile comprendere quando viene attivato l'evento
-* Ologrammi visualizzati tramite un piano trasparente possono essere instabili con la HoloLens 2 LSR di profondità del sistema
+* È difficile capire quando viene attivato l'evento
+* Ologrammi che vengono visualizzate tramite un piano trasparente possono essere instabili con la stabilizzazione LSR HoloLens 2 profondità
 
-![Pulsante con i toni](../images/button/MRTK_Button_UsePlated.png)
+![Pulsante placcato](../images/button/MRTK_Button_UsePlated.png)
 
-## <a name="how-to-use-pressable-buttons"></a>Come usare i pulsanti a pressione
+## <a name="how-to-use-pressable-buttons"></a>Come usare i pulsanti pressabili
 
 ### <a name="unity-ui-based-buttons"></a>Pulsanti basati sull'interfaccia utente di Unity
 
-Creare un'area di disegno nella scena (GameObject -> UI -> Canvas). Nel pannello Inspector (Controllo) per Canvas:
+Creare un oggetto Canvas nella scena (GameObject -> UI -> Canvas). Nel pannello Controllo per l'area di disegno:
 
-* Fare clic su "Convert to MRTK Canvas" (Converti in canvas MRTK)
-* Fare clic su "Add NearInteractionTouchableUnityUI" (Aggiungi NearInteractionTouchableUnityUI)
+* Fare clic su "Converti in MRTK Canvas"
+* Fare clic su "Aggiungi NearInteractionTouchableUnityUI"
 * Impostare la scala X, Y e Z del componente Rect Transform su 0,001
 
 Trascinare `PressableButtonUnityUI` quindi (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonUnityUI.prefab), `PressableButtonUnityUICircular` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonUnityUICircular.prefab) o `PressableButtonHoloLens2UnityUI` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2UnityUI.prefab) nell'area di disegno.
 
-### <a name="collider-based-buttons"></a>Pulsanti basati su collisori
+### <a name="collider-based-buttons"></a>Pulsanti basati sul collisore
 
-È sufficiente trascinare `PressableButtonHoloLens2` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2.prefab) o `PressableButtonHoloLens2Unplated` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2Unplated.prefab) nella scena. Questi prefab dei pulsanti sono già configurati per fornire feedback audio-visivo per i vari tipi di input, tra cui input con mano articolata e sguardo fisso.
+È sufficiente trascinare `PressableButtonHoloLens2` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2.prefab) o `PressableButtonHoloLens2Unplated` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2Unplated.prefab) nella scena. Questi prefab dei pulsanti sono già configurati per avere feedback audio-visivo per i vari tipi di input, tra cui l'input della mano articolato e lo sguardo.
 
-Gli eventi esposti nel prefab stesso e nel componente [Interactable](interactable.md) possono essere usati per attivare azioni aggiuntive. I pulsanti a pressione nella scena [HandInteractionExample](../example-scenes/hand-interaction-examples.md) usano l'evento *OnClick* di Interactable per attivare una modifica nel colore di un cubo. Questo evento viene attivato per diversi tipi di metodi di input, ad esempio sguardo fisso, tocco d'aria, raggio della mano e pressione di pulsanti fisici tramite lo script del pulsante a pressione.
+Gli eventi esposti nel prefab stesso e nel componente [Interactable](interactable.md) possono essere usati per attivare azioni aggiuntive. I pulsanti pressabili nella [scena HandInteractionExample](../example-scenes/hand-interaction-examples.md) usano l'evento *OnClick* di Interactable per attivare una modifica del colore di un cubo. Questo evento viene attivato per diversi tipi di metodi di input, ad esempio lo sguardo fisso, il tocco dell'aria, il raggio della mano, nonché la pressione di un pulsante fisico tramite lo script del pulsante pressabile.
 
 <img src="../images/button/MRTK_Button_HowToUse_Interactable.png" width="450" alt="How to Use Interactable">
 
-È possibile configurare quando il pulsante a pressione genera *l'evento OnClick* tramite `PhysicalPressEventRouter` sul pulsante. Ad esempio, è possibile impostare *OnClick* in modo che venga generato quando il pulsante viene premuto per la prima volta, anziché essere premuto e rilasciato, impostando *Interactable On Click* su *Event On Press*.
+È possibile configurare quando il pulsante a pressione genera *l'evento OnClick* tramite `PhysicalPressEventRouter` il pulsante . Ad esempio, è possibile impostare *OnClick* in modo che venga generato quando il pulsante viene premuto per la prima volta, anziché essere premuto e rilasciato, impostando *Interactable On Click* su *Event On Press*.
 
 <img src="../images/button/MRTK_Button_HowTo_Events.png" width="450" alt="How to use events">
 
-Per sfruttare informazioni specifiche sullo stato di input della mano articolata, è possibile usare gli eventi dei pulsanti a pressione: *Inizio* tocco, *Fine* tocco, *Pulsante* premuto, *Pulsante rilasciato.* Questi eventi, tuttavia, non verranno generati in risposta al tocco, al raggio della mano o agli input oculare. **Per supportare le interazioni da vicino e da lontano, è consigliabile usare l'evento *OnClick di Interactable.***
+Per sfruttare informazioni specifiche sullo stato di input manuale articolato, è possibile usare gli eventi dei pulsanti pressabili: *Touch Begin,* *Touch End,* *Button Pressed,* *Button Released.* Questi eventi, tuttavia, non verranno generati in risposta al tocco dell'aria, ai raggi della mano o agli input oculare. **Per supportare le interazioni vicino e lontano, è consigliabile usare l'evento *OnClick di Interactable.***
 
 <img src="../images/button/MRTK_Button_HowTo_PressableButton.png" width="450"  alt="How to use Pressable Buttons">
 
 ## <a name="interaction-states"></a>Stati di interazione
 
-Nello stato di inattività, il pannello anteriore del pulsante non è visibile. Quando un dito si avvicina o un cursore dall'input dello sguardo fisso si rivolge alla superficie, il bordo incandescente della superficie diventa visibile. È disponibile un'evidenziazione aggiuntiva della posizione della punta del dito sulla superficie della piana anteriore. Quando viene premuto con un dito, il piano anteriore si sposta con la punta del dito. Quando la punta del dito tocca la superficie della lastra anteriore, mostra un effetto di pulsazione sottile per fornire un feedback visivo del punto di tocco.
+Nello stato di inattività, la barra anteriore del pulsante non è visibile. Quando un dito si avvicina o un cursore dall'input dello sguardo fisso punta alla superficie, il bordo incandescente della lastra anteriore diventa visibile. È disponibile un'evidenziazione aggiuntiva della posizione della punta delle dita sulla superficie della lastra anteriore. Quando viene premuto con un dito, la lastra anteriore si sposta con la punta del dito. Quando la punta del dito tocca la superficie della lastra anteriore, mostra un sottile effetto di pulsazione per fornire un feedback visivo del punto di tocco.
 
-In HoloLens 2 di tipo shell, sono disponibili molti suggerimenti visivi e suggerimenti per aumentare la fiducia dell'utente nell'interazione.
+In HoloLens 2 di tipo shell, esistono molti suggerimenti visivi e affordance per aumentare la fiducia dell'utente nell'interazione.
 
-|  ![Luce di prossimità](../images/button/ux_button_affordance_proximitylight.jpg) | ![Evidenziazione dello stato attivo](../images/button/ux_button_affordance_focushighlight.jpg)  | ![Compressione della compressa](../images/button/ux_button_affordance_compression.jpg) | ![Pulse on trigger](../images/button/ux_button_affordance_pulse.jpg) |
+|  ![Luce di prossimità](../images/button/ux_button_affordance_proximitylight.jpg) | ![Evidenziazione dello stato attivo](../images/button/ux_button_affordance_focushighlight.jpg)  | ![Compressione di una cella](../images/button/ux_button_affordance_compression.jpg) | ![Pulse on trigger](../images/button/ux_button_affordance_pulse.jpg) |
 |:--- | :--- | :--- | :--- |
-| Luce di prossimità | Evidenziazione dello stato attivo | Compressione della compressa | Pulse on trigger |
+| Luce di prossimità | Evidenziazione dello stato attivo | Compressione di una cella | Pulse on trigger |
 
-L'effetto di pulsazione sottile viene attivato dal pulsante a pressione, che cerca *proximityLight(s)* che si trovano sul puntatore che interagisce attualmente. Se vengono trovate luci di prossimità, viene chiamato il metodo , che aggiunge automaticamente un'animazione ai parametri `ProximityLight.Pulse` dello shader per visualizzare un'animazione.
+L'effetto di pulsazione sottile viene attivato dal pulsante pressable, che cerca *ProximityLight(s)* che si trova sul puntatore attualmente in interazione. Se vengono trovate luci di prossimità, viene chiamato il metodo , che aggiunge automaticamente un'animazione ai parametri `ProximityLight.Pulse` dello shader per visualizzare un impulso.
 
 ## <a name="inspector-properties"></a>Proprietà del controllo
 
-![Struttura dei pulsanti](../images/button/MRTK_Button_Structure.png)
+![Struttura button](../images/button/MRTK_Button_Structure.png)
 
-**Box Collisore** 
+**Collisore di box** 
  `Box Collider` per la barra anteriore del pulsante.
 
 **Pulsante a pressione** Logica per lo spostamento del pulsante con l'interazione con la pressione della mano.
@@ -228,7 +228,7 @@ L'effetto di pulsazione sottile viene attivato dal pulsante a pressione, che cer
 **Router eventi di stampa fisica** Questo script invia eventi dall'interazione con la pressione manuale a [Interactable.](interactable.md)
 
 **Interagibile** 
- [L'interazione](interactable.md) gestisce vari tipi di stati ed eventi di interazione. HoloLens lo sguardo, il movimento e l'input vocale e l'input del controller di movimento vr immersivo vengono gestiti direttamente da questo script.
+ [L'interazione](interactable.md) gestisce vari tipi di stati ed eventi di interazione. HoloLens lo sguardo, il movimento e l'input vocale e l'input del controller di movimento del visore immersivo vengono gestiti direttamente da questo script.
 
 **Origine audio** Origine audio Unity per le clip di feedback audio.
 
@@ -258,7 +258,7 @@ Per modificare lo stile utilizzato  dal pulsante, espandere l'elenco a discesa I
 
 È possibile creare un nuovo set di icone pulsante con il menu asset: Creare > **realtà mista Toolkit > set di icone.** Per aggiungere icone quad e sprite, è sufficiente trascinarle nelle rispettive matrici. Per aggiungere icone Char, è prima necessario creare e assegnare un asset del tipo di carattere.
 
-In MRTK 2.4 e oltre è consigliabile spostare trame di icone personalizzate in un oggetto IconSet.
+In MRTK 2.4 e oltre, è consigliabile spostare trame di icone personalizzate in un oggetto IconSet.
 Per aggiornare gli asset in tutti i pulsanti di un progetto al nuovo formato consigliato, usare ButtonConfigHelperMigrationHandler.
 (Mixed Reality Toolkit -> Utilities -> Migration Window -> Migration Handler Selection -> Microsoft.MixedReality. Toolkit. Utilities.ButtonConfigHelperMigrationHandler)
 
@@ -272,9 +272,9 @@ Se non viene trovata un'icona nel set di icone predefinito durante la migrazione
 
 ### <a name="creating-a-hololens-icon-font-asset"></a>Creazione di un asset HoloLens carattere dell'icona
 
-Per prima cosa, importare il tipo di carattere dell'icona in Unity. Nei Windows è possibile trovare il tipo di carattere HoloLens predefinito in *Windows/Fonts/holomdl2.ttf.* Copiare e incollare questo file nella cartella Assets.
+Importare prima di tutto il tipo di carattere dell'icona in Unity. Nei Windows è possibile trovare il tipo di carattere HoloLens predefinito in *Windows/Fonts/holomdl2.ttf.* Copiare e incollare questo file nella cartella Assets.
 
-Aprire quindi TextMeshPro Font Asset Creator tramite **Window > TextMeshPro > Font Asset Creator.Next,** open the TextMeshPro Font Asset Creator via Window > TextMeshPro > Font Asset Creator. Ecco le impostazioni consigliate per la generazione di un at atlas HoloLens tipo di carattere. Per includere tutte le icone, incollare l'intervallo Unicode seguente nel *campo Sequenza di* caratteri:
+Aprire quindi TextMeshPro Font Asset Creator tramite **Window > TextMeshPro** > Font Asset Creator. Ecco le impostazioni consigliate per la generazione di un at atlas HoloLens tipo di carattere. Per includere tutte le icone, incollare l'intervallo Unicode seguente nel *campo Sequenza di* caratteri:
 
 ```c#
 E700-E702,E706,E70D-E70E,E710-E714,E718,E71A,E71D-E71E,E720,E722,E728,E72A-E72E,E736,E738,E73F,E74A-E74B,E74D,E74F-E752,E760-E761,E765,E767-E769,E76B-E76C,E770,E772,E774,E777,E779-E77B,E782-E783,E785-E786,E799,E7A9-E7AB,E7AF-E7B1,E7B4,E7C8,E7E8-E7E9,E7FC,E80F,E821,E83F,E850-E859,E872-E874,E894-E895,E8A7,E8B2,E8B7,E8B9,E8D5,E8EC,E8FB,E909,E91B,E92C,E942,E95B,E992-E995,E9E9-E9EA,EA37,EA40,EA4A,EA55,EA96,EB51-EB52,EB65,EB9D-EBB5,EBCB-EBCC,EBCF-EBD3,EC03,EC19,EC3F,EC7A,EC8E-EC98,ECA2,ECD8-ECDA,ECE0,ECE7-ECEB,ED17,EE93,EFA9,F114-F120,F132,F181,F183-F186
@@ -316,11 +316,11 @@ Aggiornare le dimensioni della personalizzazione di Quad ![ Button Size 2](../im
 
 Aggiornare le dimensioni della personalizzazione di Box Collider ![ Button Size 3](../images/button/MRTK_Button_SizeCustomization3.png)
 
-Fare clic su "Correggi limiti" ![ Personalizzazione dimensioni pulsante 4](../images/button/MRTK_Button_SizeCustomization4.png)
+Fare clic su "Correggi limiti" Personalizzazione delle dimensioni del pulsante ![ 4](../images/button/MRTK_Button_SizeCustomization4.png)
 
 ## <a name="voice-command-see-it-say-it"></a>Comando vocale ('see-it, say-it')
 
-**Gestore input vocale** Lo script [Interactable](interactable.md) in Pressable Button implementa già `IMixedRealitySpeechHandler` . Qui è possibile impostare una parola chiave di comando vocale.
+**Gestore input vocale** Lo script [interactable](interactable.md) in Pressable Button implementa già `IMixedRealitySpeechHandler` . Qui è possibile impostare una parola chiave di comando vocale.
 
 <img src="../images/button/MRTK_Button_Speech1.png" width="450" alt="Buttons Speech">
 
@@ -348,7 +348,7 @@ Nel pannello `PressableButton` Inspector (Controllo) assegnare l'oggetto cubo ag
 
 <img src="../images/button/MRTK_PressableButtonCube3.png" width="450" alt="pressable button cube 3">
 
-Quando si seleziona il cubo, sull'oggetto verranno visualizzati più livelli colorati. In questo modo vengono visualizzati i valori della distanza **in Press Impostazioni**. Usando gli handle, è possibile configurare quando iniziare a premere (spostare l'oggetto) e quando attivare l'evento.
+Quando si seleziona il cubo, sull'oggetto verranno visualizzati più livelli colorati. In questo modo vengono visualizzati i valori della distanza **in Premere Impostazioni**. Usando gli handle, è possibile configurare quando iniziare a premere (spostare l'oggetto) e quando attivare l'evento.
 
 <img src="../images/button/MRTK_PressableButtonCube1.jpg" width="450" alt="Pressable Buton cube 1">
 
@@ -360,19 +360,19 @@ Quando si preme il pulsante, questo si sposterà e genererà gli eventi adeguati
 
 #### <a name="troubleshooting"></a>Risoluzione dei problemi
 
-Se il pulsante esegue una doppia pressione, assicurarsi che la proprietà Imponi push frontale sia attiva e che il piano **Start Push Distance** sia posizionato davanti al piano Near Interaction **Touchable.**  Il **piano Near Interaction Touchable** è indicato dal piano blu posizionato davanti all'origine della freccia bianca nella gif seguente:
+Se il pulsante esegue una doppia pressione, assicurarsi che la proprietà Imponi push frontale sia attiva e che il piano Start **Push Distance** sia posizionato davanti al piano **Near Interaction Touchable.**  Il **piano Near Interaction Touchable** è indicato dal piano blu posizionato davanti all'origine della freccia bianca nella gif seguente:
 
-![Componente script pulsante a pressione con la proprietà Imponi front push evidenziata](../images/button/MRTK_Button_Enforce_Push.png)
+![Componente script pulsante pre-stampabile con la proprietà Imponi front push evidenziata](../images/button/MRTK_Button_Enforce_Push.png)
 
 ![Esempio animato di spostamento della distanza di push iniziale davanti al piano toccabile vicino all'interazione](../images/button/MRTK_Button_Front_Touch.gif)
 
 ### <a name="2-adding-visual-feedback-to-the-basic-cube-button"></a>2. Aggiunta di commenti e suggerimenti visivi al pulsante cubo di base
 
-MrTK Standard Shader offre varie funzionalità che semplificano l'aggiunta di commenti e suggerimenti visivi. Creare un materiale e selezionare shader `Mixed Reality Toolkit/Standard` . Oppure è possibile usare o duplicare uno dei materiali esistenti in `/SDK/StandardAssets/Materials/` che usa MRTK Standard Shader.
+MRTK Standard Shader offre varie funzionalità che semplificano l'aggiunta di feedback visivo. Creare un materiale e selezionare shader `Mixed Reality Toolkit/Standard` . Oppure è possibile usare o duplicare uno dei materiali esistenti in `/SDK/StandardAssets/Materials/` che usa MRTK Standard Shader.
 
 <img src="../images/button/MRTK_PressableButtonCube4.png" width="450" alt="Pressable button cube 4">
 
-Selezionare `Hover Light` e in Fluent `Proximity Light` **opzioni**. Ciò consente un feedback visivo sia per le interazioni vicino alla mano (luce di prossimità) che per le interazioni con puntatore lontano (Luce del passaggio del mouse).
+Selezionare `Hover Light` e in Fluent `Proximity Light` **opzioni**. Ciò consente un feedback visivo sia per le interazioni vicino alla mano (Luce di prossimità) che per l'indicatore di misura lontano (Luce del passaggio del mouse).
 
 <img src="../images/button/MRTK_PressableButtonCube5.png" width="450" alt="pressable button cube 5">
 
@@ -386,30 +386,30 @@ Poiché lo script espone eventi come `PressableButton.cs` TouchBegin(), TouchEnd
 
 <img src="../images/button/MRTK_PressableButtonCube6.png" width="450" alt="Pressable Button Cube 6">
 
-### <a name="4-adding-visual-states-and-handle-far-interaction-events"></a>4. Aggiunta di stati di visualizzazione e gestione di eventi di interazione lontano
+### <a name="4-adding-visual-states-and-handle-far-interaction-events"></a>4. Aggiunta di stati di visualizzazione e gestione degli eventi di interazione da lontano
 
-[Interactable](interactable.md) è uno script che semplifica la creazione di uno stato di visualizzazione per i vari tipi di interazioni di input. Gestisce anche eventi di interazione lontano. Aggiungere `Interactable.cs` e trascinare l'oggetto cubo nel **campo Destinazione** in **Profili**. Creare quindi un nuovo tema con un tipo **ScaleOffsetColorTheme.** In questo tema è possibile specificare il colore dell'oggetto per gli stati di interazione specifici, ad esempio **Stato attivo** e **Premuto.** È anche possibile controllare Scale e Offset. Selezionare **Easing e** impostare la durata per rendere uniforme la transizione visiva.
+[Interactable](interactable.md) è uno script che semplifica la creazione di uno stato di visualizzazione per i vari tipi di interazioni di input. Gestisce anche gli eventi di interazione da lontano. Aggiungere `Interactable.cs` e trascinare e rilasciare l'oggetto cubo nel **campo Destinazione** in **Profili**. Creare quindi un nuovo tema con un tipo **ScaleOffsetColorTheme.** In questo tema è possibile specificare il colore dell'oggetto per gli stati di interazione specifici, ad esempio **Focus** e **Pressed.** È anche possibile controllare Scala e Offset. Selezionare **Easing (Easing)** e impostare la durata per rendere uniforme la transizione visiva.
 
 ![Selezionare il tema del profilo](../images/button/mrtk_button_profiles.gif)
 
-L'oggetto risponde sia alle interazioni lontano (raggio della mano o sguardo fisso) che alle interazioni near(hand).
+Si può vedere che l'oggetto risponde sia alle interazioni da lontano (raggio della mano o cursore sguardo fisso) che alle interazioni da vicino (mano).
 
 <img src="../images/button/MRTK_PressableButtonCubeRun3.jpg" alt="Pressable Button Cube Run 3">
 <img src="../images/button/MRTK_PressableButtonCubeRun4.jpg" alt="Pressable Button Cube Run 4">
 
 ## <a name="custom-button-examples"></a>Esempi di pulsanti personalizzati
 
-Nella scena [HandInteractionExample](../example-scenes/hand-interaction-examples.md)vedere gli esempi di pulsanti piano e tondo che usano entrambi `PressableButton` .
+Nella scena [HandInteractionExample](../example-scenes/hand-interaction-examples.md)vedere gli esempi di pulsanti piano e rotondo che usano entrambi `PressableButton` .
 
 <img src="../images/button/MRTK_Button_Custom1.png" width="450" alt="Pressable Custom1">
 
 <img src="../images/button/MRTK_Button_Custom2.png" width="450" alt="Pressable Custom2">
 
-A ogni chiave del piano sono `PressableButton` assegnati un e uno `NearInteractionTouchable` script. È importante verificare che la *direzione in* avanti locale di `NearInteractionTouchable` sia corretta. È rappresentato da una freccia bianca nell'editor. Assicurarsi che la freccia punti lontano dal lato anteriore del pulsante:
+A ogni chiave del piano sono `PressableButton` assegnati un e uno `NearInteractionTouchable` script. È importante verificare che la direzione *di Inoltro* locale di `NearInteractionTouchable` sia corretta. È rappresentato da una freccia bianca nell'editor. Assicurarsi che la freccia punti di distanza dalla faccia anteriore del pulsante:
 
 <img src="../images/button/MRTK_Button_Custom3.png" width="450" alt="Pressable Custom3">
 
 ## <a name="see-also"></a>Vedi anche
 
-* [Interagibile](interactable.md)
-* [Temi visivi](visual-themes.md)
+* [Con interazione](interactable.md)
+* [Temi degli oggetti visivi](visual-themes.md)

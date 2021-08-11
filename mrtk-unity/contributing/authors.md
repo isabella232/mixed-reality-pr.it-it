@@ -5,12 +5,12 @@ author: cadia
 ms.author: cadia
 ms.date: 05/27/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, C#, collaboratori, Community
-ms.openlocfilehash: ae8cc8b1ab26a12188622a2c846dddd381491dc2
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: b80b61549d4780dcbc2dace411beba2d268caf94fc38939bbce39eadffc8077c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177288"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228721"
 ---
 # <a name="authors"></a>Autori
 
@@ -27,7 +27,7 @@ Microsoft Mixed Reality Toolkit è un progetto collaborativo che contiene i cont
 - Andrew Hall (ryzngard)
 - Coro Zachesov (googlan)
 - Anuraag Puri (anuraag016)
-- flouflMS
+- msouflMS
 - BenEstard (genbod)
 - Lateadette Thalhammer (thalbern)
 - Bertrand Oustrinico (BertrandOustriere)
@@ -78,7 +78,7 @@ Microsoft Mixed Reality Toolkit è un progetto collaborativo che contiene i cont
 - Jared Bienz [MSFT] (jbienzms)
 - Jarod (Jarodshow)
 - JeromeBert (djee-ms)
-- In questo modo,Ndanda Vander fa (LasetheMighty)
+- Esepara Vander fa (LasetheMighty)
 - John (johnppella)
 - Jon Palmer (PalmerGD)
 - Dana (Nakda)
@@ -112,28 +112,28 @@ Microsoft Mixed Reality Toolkit è un progetto collaborativo che contiene i cont
 - mbeagley-MS
 - michael (insominx)
 - Michael House (michael-house)
-- Michael Kozlsky (mpkoz)
+- Michael Kozlowski (mpkoz)
 - ms738
 - Myranda (myrandaGoesToSpace)
-- Credito Ostrander (naostranMS)
+- Nathan Ostrander (naostranMS)
 - Niall Milsom (MenelvagorMilsom)
 - omanuke
-- Paolo Salandin (paese)
+- Oscar Salandin (avalla)
 - PatientEz
 - Patrick Cook (darax)
-- Paolo (AllBecomesGood)
+- Philip (AllBecomesGood)
 - ritijain
 - Robert Onulak (Ziugy)
 - Roberto Sonnino (robertos)
 - RogPodge
-- Scherma Smeenk (tutto)
+- Roland Smeenk (consemeenk)
 - Rosthouse (Rosthouse)
 - rwinj
 - SabinMGeorge
 - Sarah (SarahSexton)
-- Gwin (sgwin)
-- Shinette Tachitari (decoc)
-- Simon (Darkside) Michael (SimonDarksideJ)
+- Shawn Gwin (sgwin)
+- Shija Tachihara (decoc)
+- Simon (Darkside) Jackson (SimonDarksideJ)
 - sostel
 - Srinjoy Majumdar (srinjoym)
 - Stefan Wasserbauer (wassx)
@@ -142,12 +142,12 @@ Microsoft Mixed Reality Toolkit è un progetto collaborativo che contiene i cont
 - Sue Loh [MS] (sloh-ms)
 - tarukosu (tarukosu)
 - Tim Gerken (timGerken)
-- ToddZer (azerz)
-- Troy Fescher (Troy-Fescher)
+- Todd Williams (abile)
+- Troy Ferrell (Troy-Ferrell)
 - Tux (NoTuxNoBux)
-- Unava (Vaoliva)
-- W cheese (W più666)
+- Vaoliva (Vaoliva)
+- Weasy (Weasy666)
 - Will (wiwei)
-- Bill Tian (witian)
+- William Tian (witian)
 - Yoon Park (cre8ivepark)
 - yoyo (Yoyozilla)

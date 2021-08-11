@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 8b8e0f4488a6e955e599084c0b59d8c80f553a78
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 4348adf1d9cb2e7fc74cf5258e3272baaac96a5fc34565873cf35ae93225bdbe
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176296"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221871"
 ---
 # <a name="mrtk-and-managed-code-stripping"></a>STRIPPING di MRTK e codice gestito
 
@@ -63,7 +63,7 @@ Per impostazione predefinita, link.xml file creato da MRTK mantiene l'intera par
 
 Per altre informazioni sul formato link.xml file, vedere la documentazione di Unity.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Unity: stripping del codice gestito](https://docs.unity3d.com/Manual/ManagedCodeStripping.html)
 - [Unity: Collegare un file XML](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML)

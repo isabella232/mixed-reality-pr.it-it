@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 400212d80833f5d8dfbb3c5265c755ed2e127131
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: bf77d976c9c894e6cf455a3a6b0e0c538912af2a9e8f8e2c7e847ba6e4657140
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176999"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115222763"
 ---
 # <a name="input-animation-file-format"></a>Formato del file di animazione di input
 
@@ -77,23 +77,23 @@ Per ogni mano viene archiviata una sequenza di curve di animazione articolare. I
 | IndexMetacarpal | [Curve di pose](#pose-curves) |
 | IndexKnuckle | [Curve di pose](#pose-curves) |
 | IndexMiddleJoint | [Curve di pose](#pose-curves) |
-| IndexDistalJoint | [Curve di posizione](#pose-curves) |
-| Suggerimento indice | [Curve di posizione](#pose-curves) |
-| MiddleMetacarpal | [Curve di posizione](#pose-curves) |
-| MiddleKnuckle | [Curve di posizione](#pose-curves) |
-| MiddleMiddleJoint | [Curve di posizione](#pose-curves) |
-| MiddleDistalJoint | [Curve di posizione](#pose-curves) |
-| Suggerimento intermedio | [Curve di posizione](#pose-curves) |
-| RingMetacarpal | [Curve di posizione](#pose-curves) |
-| RingKnuckle | [Curve di posizione](#pose-curves) |
-| RingMiddleJoint | [Curve di posizione](#pose-curves) |
-| RingDistalJoint | [Curve di posizione](#pose-curves) |
-| Descrizione comandi | [Curve di posizione](#pose-curves) |
-| RosaMetacarpal | [Curve di posizione](#pose-curves) |
-| PinkyKnuckle | [Curve di posizione](#pose-curves) |
-| Rosa MiddleJoint | [Curve di posizione](#pose-curves) |
-| RosadistalJoint | [Curve di posizione](#pose-curves) |
-| PinkyTip | [Curve di posizione](#pose-curves) |
+| IndexDistalJoint | [Curve di pose](#pose-curves) |
+| Suggerimento indice | [Curve di pose](#pose-curves) |
+| MiddleMetacarpal | [Curve di pose](#pose-curves) |
+| MiddleKnuckle | [Curve di pose](#pose-curves) |
+| MiddleMiddleJoint | [Curve di pose](#pose-curves) |
+| MiddleDistalJoint | [Curve di pose](#pose-curves) |
+| Suggerimento intermedio | [Curve di pose](#pose-curves) |
+| RingMetacarpal | [Curve di pose](#pose-curves) |
+| RingKnuckle | [Curve di pose](#pose-curves) |
+| RingMiddleJoint | [Curve di pose](#pose-curves) |
+| RingDistalJoint | [Curve di pose](#pose-curves) |
+| Descrizione comando | [Curve di pose](#pose-curves) |
+| PinkyMetacarpal | [Curve di pose](#pose-curves) |
+| PinkyKnuckle | [Curve di pose](#pose-curves) |
+| PinkyMiddleJoint | [Curve di pose](#pose-curves) |
+| PinkyDistalJoint | [Curve di pose](#pose-curves) |
+| PinkyTip | [Curve di pose](#pose-curves) |
 
 ### <a name="pose-curves"></a>Curve di posizione
 
@@ -101,35 +101,35 @@ Le curve di posizione sono una sequenza di 3 curve di animazione per il vettore 
 
 | Sezione | Tipo |
 |---------|------|
-| Posizione X | [Float Curve](#float-curve) |
-| Posizione Y | [Float Curve](#float-curve) |
-| Posizione Z | [Float Curve](#float-curve) |
-| Rotazione X | [Float Curve](#float-curve) |
-| Rotazione Y | [Float Curve](#float-curve) |
-| Rotazione Z | [Float Curve](#float-curve) |
-| Rotazione W | [Float Curve](#float-curve) |
+| Posizione X | [Curva float](#float-curve) |
+| Posizione Y | [Curva float](#float-curve) |
+| Posizione Z | [Curva float](#float-curve) |
+| Rotazione X | [Curva float](#float-curve) |
+| Rotazione Y | [Curva float](#float-curve) |
+| Rotazione Z | [Curva float](#float-curve) |
+| Rotazione W | [Curva float](#float-curve) |
 
-### <a name="ray-curves"></a>Curve di raggio
+### <a name="ray-curves"></a>Curve a raggi
 
 Le curve di raggio sono una sequenza di 3 curve di animazione per il vettore di origine, seguite da 3 curve di animazione per il vettore di direzione.
 
 | Sezione | Tipo |
 |---------|------|
-| Origine X | [Float Curve](#float-curve) |
-| Origine Y | [Float Curve](#float-curve) |
-| Origine Z | [Float Curve](#float-curve) |
-| Direzione X | [Float Curve](#float-curve) |
-| Direzione Y | [Float Curve](#float-curve) |
-| Direzione Z | [Float Curve](#float-curve) |
+| Origine X | [Curva float](#float-curve) |
+| Origine Y | [Curva float](#float-curve) |
+| Origine Z | [Curva float](#float-curve) |
+| Direzione X | [Curva float](#float-curve) |
+| Direzione Y | [Curva float](#float-curve) |
+| Direzione Z | [Curva float](#float-curve) |
 
 ### <a name="float-curve"></a>Curva float
 
-Le curve a virgola mobile sono curve di Bézier completamente funzionanti con un numero variabile di fotogrammi chiave. Ogni fotogramma chiave archivia un tempo e un valore di curva, nonché tangenti e pesi sul lato sinistro e destro di ogni fotogramma chiave.
+Le curve a virgola mobile sono curve Bézier completamente funzionanti con un numero variabile di fotogrammi chiave. Ogni fotogramma chiave archivia un tempo e un valore di curva, nonché tangenti e pesi sul lato sinistro e destro di ogni fotogramma chiave.
 
 | Sezione | Tipo |
 |---------|------|
-| Modalità di pre-wrapping | Int32, [modalità wrap](#wrap-mode) |
-| Modalità post-wrapping | Int32, [modalità wrap](#wrap-mode) |
+| Modalità di pre-ritorno a capo | Int32, [modalità di ritorno a capo](#wrap-mode) |
+| Modalità post-wrapping | Int32, [modalità di ritorno a capo](#wrap-mode) |
 | Numero di fotogrammi chiave | Int32 |
 | Fotogrammi chiave | [Fotogramma chiave float](#float-keyframe) |
 

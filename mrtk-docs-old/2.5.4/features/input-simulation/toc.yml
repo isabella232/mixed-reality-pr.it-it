@@ -1,6 +1,6 @@
-- name: Formato file animazione input
+- name: Formato del file di animazione di input
   href: input-animation-file-format.md
 - name: Registrazione dell'animazione di input
   href: input-animation-recording.md
-- name: Servizio di simulazione di input
+- name: Servizio simulazione input
   href: input-simulation-service.md

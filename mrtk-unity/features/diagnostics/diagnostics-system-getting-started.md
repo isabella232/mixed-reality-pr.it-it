@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: a31b88f661c141941cae2d0b01668b26c0bed7d7
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 536a35a0af0c0d0190f2f423f4a39e0d89e92c1acaa105ab37e8cf7fdc37cbf5
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177242"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221814"
 ---
 # <a name="diagnostics-system-overview"></a>Panoramica del sistema di diagnostica
 
@@ -36,7 +36,7 @@ La procedura seguente presuppone l'uso dell'oggetto MixedRealityToolkit. I passa
 
 1. Selezionare l'oggetto MixedRealityToolkit nella gerarchia della scena.
 
-    ![Gerarchia della scena configurata di MRTK](../images/MRTK_ConfiguredHierarchy.png)
+    ![Gerarchia della scena configurata da MRTK](../images/MRTK_ConfiguredHierarchy.png)
 
 1. Passare al pannello Inspector (Controllo) alla sezione Diagnostics System (Sistema di diagnostica) e selezionare Enable (Abilita)
 1. Selezionare l'implementazione del sistema di diagnostica
@@ -55,7 +55,7 @@ Il sistema di diagnostica usa un profilo di configurazione per specificare quali
 >
 > La diagnostica delle prestazioni, ad esempio [Visual Profiler,](using-visual-profiler.md)potrebbe non riflettere accuratamente le prestazioni effettive dell'applicazione quando viene eseguita dall'editor.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Documentazione dell'API Diagnostica](xref:Microsoft.MixedReality.Toolkit.Diagnostics)
 - [Configurazione del sistema di diagnostica](configuring-diagnostics.md)

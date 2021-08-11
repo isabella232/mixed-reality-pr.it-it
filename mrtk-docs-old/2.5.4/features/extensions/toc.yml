@@ -1,6 +1,6 @@
 - name: Servizi di estensione
   href: extension-services.md
-- name: Servizio fisico della mano
+- name: Servizio di fisica delle mani
   href: hand-physics-service.md
-- name: Scenario-transizione-servizio
+- name: Scene-Transition-Service
   href: scene-transition-service.md

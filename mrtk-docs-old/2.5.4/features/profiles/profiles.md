@@ -5,18 +5,18 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, profili,
-ms.openlocfilehash: 3c3b43c35682670579cc5a8c187b59b83dd9099b
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: d71b29b04cc83cc469c57356733c7804ff71dfabb2ec59d7b663eca3a12c509a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693538"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115222747"
 ---
 # <a name="profiles"></a>Profiles
 
-Uno dei modi principali in cui è configurato il MRTK consiste nell'usare i molti profili disponibili nel pacchetto di base. L' [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) oggetto principale in una scena avrà il profilo attivo, che è essenzialmente un ScriptableObject. Il profilo di configurazione di MRTK di livello superiore contiene i dati di sottoprofilo per ogni core dei sistemi principali principali, ognuno dei quali è progettato per configurare il comportamento dei sottosistemi corrispondenti. Inoltre, questi sottoprofili sono anche oggetti gestibili tramite script e possono quindi contenere riferimenti ad altri oggetti profilo a un livello inferiore. Esiste essenzialmente un intero albero di profili connessi che costituiscono le informazioni di configurazione per l'inizializzazione dei sottosistemi e delle funzionalità di MRTK.
+Uno dei modi principali in cui è configurato MRTK è tramite i numerosi profili disponibili nel pacchetto di base. [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit)L'oggetto principale in una scena avrà il profilo attivo, che è essenzialmente uno ScriptableObject. Il profilo di configurazione MRTK di primo livello contiene i dati del profilo secondario per ogni core dei sistemi principali primari, ognuno dei quali è progettato per configurare il comportamento dei relativi sottosistema corrispondenti. Inoltre, questi sottoprogetti sono anche oggetti scriptable e possono quindi contenere riferimenti ad altri oggetti profilo a un livello inferiore. Esiste essenzialmente un intero albero di profili connessi che costituiscono le informazioni di configurazione per l'inizializzazione dei sottosistema e delle funzionalità MRTK.
 
-Il comportamento del sistema di input, ad esempio, è regolato da un profilo di sistema di input, ad esempio `DefaultMixedRealityInputSystemProfile` (assets/MRTK/SDK/Profiles). È consigliabile modificare sempre le risorse del profilo ScriptableObject tramite il controllo nell'editor.
+Ad esempio, il comportamento del sistema di input è regolato da un profilo di sistema di input, ad esempio `DefaultMixedRealityInputSystemProfile` (Assets/MRTK/SDK/Profiles). È consigliabile modificare sempre gli asset ScriptableObject del profilo tramite il controllo nell'editor.
 
 <img src="../images/profiles/input_profile.png" width="650px" alt="Input profile" style="display:block;">
 <sup>Controllo profilo</sup>
@@ -26,31 +26,31 @@ Il comportamento del sistema di input, ad esempio, è regolato da un profilo di 
 
 ## <a name="default-profile"></a>Profilo predefinito
 
-MRTK fornisce un set di profili predefiniti che coprono la maggior parte delle piattaforme e degli scenari supportati da MRTK. Ad esempio, quando si seleziona `DefaultMixedRealityToolkitConfigurationProfile` (assets/MRTK/SDK/Profiles), sarà possibile provare scenari in VR (OpenVR, WMR) e HoloLens (1 e 2).
+MrTK fornisce un set di profili predefiniti che riguardano la maggior parte delle piattaforme e degli scenari supportati da MRTK. Ad esempio, quando si seleziona `DefaultMixedRealityToolkitConfigurationProfile` (Assets/MRTK/SDK/Profiles) sarà possibile provare scenari in VR (OpenVR, WMR) e HoloLens (1 e 2).
 
-Si noti che poiché si tratta di un profilo di utilizzo generale, non è ottimizzato per un particolare caso di utilizzo. Se si desidera disporre di impostazioni più efficienti/specifiche che siano migliori su altre piattaforme, vedere gli altri profili seguenti, che sono leggermente modificati per migliorare le rispettive piattaforme.
+Si noti che poiché si tratta di un profilo di utilizzo generale, non è ottimizzato per un caso d'uso specifico. Se si vogliono avere impostazioni più performanti/specifiche che siano migliori in altre piattaforme, vedere gli altri profili seguenti, che sono leggermente modificati per migliorare le rispettive piattaforme.
 
-## <a name="hololens-2-profile"></a>Profilo HoloLens 2
+## <a name="hololens-2-profile"></a>HoloLens 2 profilo
 
-MRTK fornisce anche un profilo predefinito ottimizzato per la distribuzione e il testing in HoloLens 2: `DefaultHoloLens2ConfigurationProfile` (assets/MRTK/SDK/Profiles/HoloLens2).
+MrTK fornisce anche un profilo predefinito ottimizzato per la distribuzione e i test nel HoloLens 2: `DefaultHoloLens2ConfigurationProfile` (Assets/MRTK/SDK/Profiles/HoloLens2).
 
 Quando viene richiesto di scegliere un profilo per l'oggetto MixedRealityToolkit, usare questo profilo anziché il profilo selezionato predefinito.
 
 Le differenze principali tra il profilo HoloLens2 e il profilo predefinito sono:
 
-**Disabilitato** Funzionalità
+**Disabilitato** Caratteristiche:
 
 - [Sistema di limiti](../boundary/boundary-system-getting-started.md)
-- [Sistema Teleport](../teleport-system/teleport-system.md)
-- [Sistema di riconoscimento spaziale](../spatial-awareness/spatial-awareness-getting-started.md)
-- [Visualizzazione Mesh mano](../input/hand-tracking.md) (a causa dell'overhead delle prestazioni)
+- [Sistema di teletrasporto](../teleport-system/teleport-system.md)
+- [Sistema di consapevolezza spaziale](../spatial-awareness/spatial-awareness-getting-started.md)
+- [Visualizzazione della mesh manuale](../input/hand-tracking.md) (a causa del sovraccarico delle prestazioni)
 
-**Abilitato** Sistemi
+**Abilitato** Sistemi:
 
-- Il [provider di rilevamento degli occhi](../eye-tracking/eye-tracking-main.md)
+- Provider [di tracciamento oculare](../eye-tracking/eye-tracking-main.md)
 - Simulazione dell'input oculare
 
-Le impostazioni del profilo della fotocamera sono impostate in modo da corrispondere alla qualità dell'editor e alla qualità del lettore. Si tratta di un profilo diverso dal profilo della fotocamera predefinito, in cui le visualizzazioni opache sono impostate su una qualità superiore. Questa modifica significa che la qualità nell'Editor sarà inferiore, che corrisponderà più a quanto verrà visualizzato nel dispositivo.
+Le impostazioni del profilo della fotocamera sono impostate in modo che corrispondano la qualità dell'editor e la qualità del giocatore. Questa impostazione è diversa dal profilo predefinito della fotocamera in cui gli schermi Opachi sono impostati su una qualità superiore. Questa modifica significa che la qualità nell'editor sarà inferiore, che corrisponderà più strettamente a ciò che verrà visualizzato nel dispositivo.
   
 > [!NOTE]
-> Il sistema di riconoscimento spaziale è disattivato per impostazione predefinita in base ai commenti e suggerimenti dei client. si tratta di una visualizzazione interessante per vedere inizialmente, ma in genere è disattivata per evitare la distrazione visiva e l'ulteriore impatto sulle prestazioni. Il sistema può essere riabilitato seguendo le istruzioni riportate [qui](../spatial-awareness/spatial-awareness-getting-started.md).
+> Il sistema di consapevolezza spaziale è disattivato per impostazione predefinita in base al feedback del client. Si tratta di una visualizzazione interessante da visualizzare inizialmente, ma in genere è disattivata per evitare la distrazione visiva e l'ulteriore impatto sulle prestazioni di averlo attivato. Il sistema può essere ri-abilitato seguendo le [istruzioni riportate qui.](../spatial-awareness/spatial-awareness-getting-started.md)

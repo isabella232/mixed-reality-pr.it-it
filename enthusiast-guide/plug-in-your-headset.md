@@ -1,47 +1,47 @@
 ---
 title: Collegare il visore VR
-description: Informazioni su come connettere l'auricolare della realtà mista di Windows a USB 3,0, HDMI e cuffie.
+description: Informazioni su come connettere il Windows Mixed Reality visore a USB 3.0, HDMI e cuffia.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
-keywords: Realtà mista di Windows, realtà mista, realtà virtuale, VR, MR, auricolare, installazione, introduzione
+keywords: Windows Mixed Reality, realtà mista, realtà virtuale, VR, MR, visore, configurazione, introduzione
 appliesto:
 - Windows 10
-ms.openlocfilehash: d68c56813c65325d9cab24488f6676d41da435a2
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: e4043a67f4006b59afcdce1ede15d6f665630ad2905d552050bb03fdc4e58128
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725992"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219225"
 ---
 # <a name="plug-in-your-headset"></a>Collegare il visore VR
 
-## <a name="connect-your-headset-to-your-pcs-usb-30-port"></a>Connettere l'auricolare alla porta USB 3,0 del PC
+## <a name="connect-your-headset-to-your-pcs-usb-30-port"></a>Connessione il visore alla porta USB 3.0 del PC
 
-Identificare la porta USB 3,0 nel computer e collegare il cavo USB. Le porte USB 3,0 contengono SS (Super Speed) scritte accanto ad esse. Spesso sono blu, ma non sempre.
+Identificare la porta USB 3.0 nel computer e collegare il cavo USB. Accanto alle porte USB 3.0 sono scritte SS (Super Speed). Spesso sono blu, ma non sempre.
 
-Se non si dispone di un numero sufficiente di porte USB aperte nel PC, è possibile usare un [hub usb 3,0 esterno alimentato da AC](recommended-adapters-for-windows-mixed-reality-capable-pcs.md#using-external-usb-30-hubs-with-windows-mixed-reality-headsets).
+Se le porte USB aperte nel PC non sono sufficienti, è possibile usare un [hub USB 3.0](recommended-adapters-for-windows-mixed-reality-capable-pcs.md#using-external-usb-30-hubs-with-windows-mixed-reality-headsets)esterno alimentato da AC.
 
-## <a name="connect-your-headset-to-your-pcs-hdmi-out-port"></a>Connettere l'auricolare alla porta di uscita HDMI del PC
+## <a name="connect-your-headset-to-your-pcs-hdmi-out-port"></a>Connessione il visore alla porta HDMI out del PC
 
-Identificare la porta HDMI out del computer e collegare il cavo HDMI dell'auricolare. Assicurarsi che **non** si stia effettuando il collegamento all'HDMI in porta.
+Identificare la porta di uscita HDMI nel computer e collegare il cavo HDMI del visore. Assicurarsi di **non collegarsi** alla porta HDMI.
 
-## <a name="connect-headphones-to-your-headset"></a>Connettere le cuffie all'auricolare
+## <a name="connect-headphones-to-your-headset"></a>Connessione le cuffia al visore
 
-A meno che non sia stato acquistato un dispositivo con cuffie AKG integrate e microfoni a doppio array, ad esempio un auricolare Samsung HMD Odyssey, un reverbio di HP o un reverbio di HP G2, saranno necessarie cuffie con un jack audio da 3,5 mm.
+A meno che non sia stato acquistato un dispositivo con cuffia AKG integrata e microfono dual array, ad esempio un visore Samsung HMD Odyssey, HP Reverb o HP Reverb G2, saranno necessarie le cuffia con un jack audio da 3,5 mm.
 
 ## <a name="common-issues"></a>Problemi comuni
 
-* È stato collegato il cavo HDMI prima di collegare il cavo USB 3,0.  Assicurarsi di collegare il cavo USB 3,0 **prima** di collegare il cavo HDMI.
-* È stata inserita una scheda Bluetooth accanto al cavo USB di HMD. **Non** collegare il cavo USB dell'auricolare accanto a una scheda Bluetooth perché l'interferenza radio risultante può influire negativamente sulle prestazioni Bluetooth.
-* Il cavo HDMI è stato collegato alla porta iGPU HDMI anziché alla porta dGPU HDMI per i PC con entrambi. Alcuni PC desktop dispongono sia di un'unità di elaborazione grafica (iGPU) integrata che di un'unità di elaborazione grafica discreta (dGPU). le porte iGPU sono spesso disabilitate. Se il PC dispone di un dGPU, è necessario collegare l'auricolare al dGPU.  
-* Se il PC non dispone di una porta HDMI, potrebbe essere necessario un adapter. Per [visualizzare l'elenco completo degli adapter consigliati, vedere qui](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
-* Si sta connettendo l'auricolare a un dispositivo Surface. Leggere [usando Surface con la realtà mista di Windows](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#windows-mixed-reality-and-surface).
+* È stato collegato il cavo HDMI prima di collegare il cavo USB 3.0.  Assicurarsi di collegare il cavo USB 3.0 prima di collegare il cavo HDMI. 
+* È stato collegato un adattatore Bluetooth accanto al cavo USB del dispositivo HMD. Non collegare il cavo USB del visore accanto a un adattatore Bluetooth perché **l'interferenza** radio risultante può influire negativamente sulle Bluetooth prestazioni.
+* Il cavo HDMI è stato collegato alla porta HDMI iGPU anziché alla porta HDMI dGPU per i PC che dispongono di entrambi. Alcuni PC desktop hanno sia un'unità di elaborazione grafica integrata (iGPU) che un'unità di elaborazione grafica discreta (dGPU). Le porte iGPU sono spesso disabilitate. Se il PC ha una dGPU, il visore deve essere collegato alla dGPU.  
+* Se il PC non ha una porta HDMI, potrebbe essere necessario un adattatore. [Visualizzare l'elenco completo degli adattatori consigliati qui.](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+* Si sta connettendo il visore a un dispositivo Surface. Leggere [usando Surface con Windows Mixed Reality](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#windows-mixed-reality-and-surface).
 
 ## <a name="see-also"></a>Vedi anche
 
-* [Risoluzione dei problemi di connettività auricolare](headset-connectivity.md)
+* [Risoluzione dei problemi relativi alla connettività con visore](headset-connectivity.md)
 * [Installare Windows Mixed Reality](install-windows-mixed-reality.md)
 * [Adapter consigliati](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 * [Linee guida per l'hardware minimo](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)

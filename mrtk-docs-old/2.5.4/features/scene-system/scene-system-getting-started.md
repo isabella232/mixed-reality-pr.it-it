@@ -5,56 +5,56 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: e43bb401ea3c3175b5cb3805e7edf00d361eb4b6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 47787e8ab8b41583233eec9b8522ee87b280d4c78b2bc61b873907b5b84c006c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685124"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223165"
 ---
 # <a name="scene-system-overview"></a>Panoramica del sistema di scena
 
 ## <a name="when-to-use-the-scene-system"></a>Quando usare il sistema di scena
 
-Se il progetto è costituito da un'unica scena, probabilmente il sistema della scena non è necessario. È particolarmente utile quando si verificano una o più delle condizioni seguenti:
+Se il progetto è costituito da una singola scena, il sistema di scena probabilmente non è necessario. È particolarmente utile quando si verificano una o più delle condizioni seguenti:
 
 - Il progetto include più scene.
-- Si viene usati per il caricamento di una singola scena, ma non è come il modo in cui viene distrutta l'istanza di MixedRealityToolkit.
-- Si vuole un modo semplice per caricare additivamente più scene per costruire la propria esperienza.
+- Si è usati per il caricamento di una singola scena, ma non è possibile eliminare l'istanza MixedRealityToolkit.
+- Si vuole un modo semplice per caricare in modo additivo più scene per costruire l'esperienza.
 - Si vuole un modo semplice per tenere traccia delle operazioni di caricamento in corso o un modo semplice per controllare l'attivazione della scena per più scene caricate contemporaneamente.
-- Si vuole rendere l'illuminazione coerente e prevedibile in tutte le scene.
+- Si vuole mantenere l'illuminazione coerente e prevedibile in tutte le scene.
 
 ## <a name="scene-system-resources"></a>Risorse di sistema della scena
 
-Per impostazione predefinita, il sistema di scena usa una coppia di oggetti scene (scena DefaultManagerScene e DefaultLighting). Se una di queste scene non può essere individuata, verrà visualizzato un messaggio nella finestra di controllo profilo del sistema della scena.
+Per impostazione predefinita, scene system usa una coppia di oggetti scena (DefaultManagerScene e DefaultLighting scena). Se non è possibile trovare una di queste scene, verrà visualizzato un messaggio nel controllo del profilo del sistema di scena.
 
-![Messaggio risorse predefinite](../images/scene-system/DefaultResourcesMessage.png)
+![Messaggio delle risorse predefinite](../images/scene-system/DefaultResourcesMessage.png)
 
->! Si noti Se il progetto usa la gestione personalizzata e le scene di illuminazione, questo messaggio può essere ignorato.
+>! [Nota] Se il progetto usa scene di illuminazione e gestione personalizzate, questo messaggio può essere ignorato in tutta sicurezza.
 
-Le sezioni seguenti descrivono ora per risolvere questo messaggio, in base al metodo usato per importare il Toolkit di realtà mista.
+Le sezioni seguenti descrivono ora la risoluzione di questo messaggio, in base al metodo usato per importare la realtà mista Toolkit.
 
-### <a name="unity-package-manager-upm"></a>Gestione pacchetti Unity (UPM)
+### <a name="unity-package-manager-upm"></a>Unity Gestione pacchetti (UPM)
 
-Nei pacchetti UPM del Toolkit per realtà mista le risorse di sistema della scena sono assemblate come esempio. Dato che i pacchetti UPM non sono modificabili, Unity non è in grado di aprire il file della scena necessario, a meno che non vengano importati in modo esplicito nel progetto.
+In Realtà mista Toolkit pacchetti UPM, le risorse di sistema della scena vengono in pacchetto come esempio. Poiché i pacchetti UPM non sono modificabili, Unity non è in grado di aprire il file di scena necessario a meno che non vengano importati in modo esplicito nel progetto.
 
-Per eseguire l'importazione, attenersi alla procedura seguente:
+Per importare, seguire questa procedura:
 
-- Selezionare   >  **Gestione pacchetti** Windows
-- Selezionare **mixed reality Toolkit Foundation**
-- Individuare **le risorse di sistema della scena** nella sezione degli **esempi**
+- Selezionare **Finestra**  >  **Gestione pacchetti**
+- Selezionare **Mixed Reality Toolkit Foundation**
+- Individuare **le risorse di sistema della** scena nella **sezione** Esempi
 
-  ![Importa le risorse di sistema della scena](../images/scene-system/UpmImportSceneSystemResources.png)
+  ![Importare le risorse di sistema della scena](../images/scene-system/UpmImportSceneSystemResources.png)
 
 - Selezionare **Importa**
 
-### <a name="asset-unitypackage-files"></a>File di asset (con estensione file unitypackage Tools)
+### <a name="asset-unitypackage-files"></a>File di asset (con estensione unitypackage)
 
-Se la cartella SceneSystemResources è stata eliminata o è stata deselezionata durante l'importazione, è possibile recuperarla attenendosi alla procedura seguente:
+Se la cartella SceneSystemResources è stata eliminata o è stata deselezionata durante l'importazione, è possibile recuperarla seguendo questa procedura:
 
-- Seleziona **Asset**  >  **Importa** pacchetto  >  **personalizzato** pacchetto
-- Aprire il pacchetto **Microsoft. MixedReality. Toolkit. Foundation**
-- Verificare che siano selezionate le opzioni **Services/SceneSystem/SceneSystemResources** e All Child
+- Selezionare **Il pacchetto personalizzato per l'importazione**  >    >  **di asset**
+- Aprire **Microsoft.MixedReality.Toolkit. Pacchetto Di** base
+- Assicurarsi che **Services/SceneSystem/SceneSystemResources** e tutte le opzioni figlio siano selezionate
 
   ![Reimportare le risorse di sistema della scena](../images/scene-system/ReimportSceneSystemResources.png)
 
@@ -63,20 +63,20 @@ Se la cartella SceneSystemResources è stata eliminata o è stata deselezionata 
 ## <a name="how-to-use-the-scene-system"></a>Come usare il sistema di scena
 
 - [Tipi di scena](scene-system-scene-types.md)
-- [Caricamento della scena del contenuto](scene-system-content-loading.md)
+- [Caricamento della scena di contenuto](scene-system-content-loading.md)
 - [Monitoraggio del caricamento del contenuto](scene-system-load-progress.md)
 - [Caricamento della scena di illuminazione](scene-system-lighting-scenes.md)
 
-## <a name="editor-settings"></a>Impostazioni editor
+## <a name="editor-settings"></a>Impostazioni dell'editor
 
-Per impostazione predefinita, il sistema di scena impone diversi comportamenti nell'editor di Unity. Se uno di questi comportamenti è elevato, è possibile disabilitarli nella sezione **Impostazioni editor** del profilo di sistema della scena.
+Per impostazione predefinita, scene system applica diversi comportamenti nell'editor di Unity. Se si trova uno di questi comportamenti con una mano pesante, questi possono essere disabilitati nella sezione **Editor Impostazioni** del profilo scene system.
 
-- `Editor Manage Build Settings:` Se true, il servizio aggiornerà automaticamente le impostazioni di compilazione, assicurando l'aggiunta di tutte le scene di gestione, illuminazione e contenuto. Disabilitare questa impostazione se si desidera il controllo totale sulle impostazioni di compilazione.
+- `Editor Manage Build Settings:` Se true, il servizio aggiornerà automaticamente le impostazioni di compilazione, assicurando l'aggiunta di tutte le scene di gestione, illuminazione e contenuto. Disabilitare questa opzione se si vuole il controllo totale sulle impostazioni di compilazione.
 
-- `Editor Enforce Scene Order:` Se true, il servizio assicurerà che la scena del Manager venga visualizzata per prima nella gerarchia della scena, seguita dall'illuminazione e quindi dal contenuto. Disabilitare questa proprietà se si desidera il controllo totale sulla gerarchia della scena.
+- `Editor Enforce Scene Order:` Se true, il servizio garantisce che la scena di gestione sia visualizzata per prima nella gerarchia della scena, seguita dall'illuminazione e quindi dal contenuto. Disabilitare questa opzione se si vuole il controllo totale sulla gerarchia della scena.
 
-- `Editor Manage Loaded Scenes:` Se true, il servizio assicurerà che il responsabile, il contenuto e le scene di illuminazione siano sempre caricati. Disabilitare se si desidera il controllo totale sulle scene caricate nell'editor.
+- `Editor Manage Loaded Scenes:` Se true, il servizio garantisce che il gestore, il contenuto e le scene di illuminazione siano sempre caricati. Disabilitare se si vuole il controllo totale sulle scene caricate nell'editor.
 
-- `Editor Enforce Lighting Scene Types:` Se true, il servizio garantirà che solo i componenti correlati all'illuminazione definiti in `PermittedLightingSceneComponentTypes` siano consentiti nelle scene di illuminazione. Disabilitare se si desidera il controllo totale sul contenuto delle scene di illuminazione.
+- `Editor Enforce Lighting Scene Types:` Se true, il servizio garantisce che solo i componenti correlati all'illuminazione definiti in siano consentiti `PermittedLightingSceneComponentTypes` nelle scene di illuminazione. Disabilitare se si vuole il controllo totale sul contenuto delle scene di illuminazione.
 
-![Impostazioni dell'editor di sistema della scena](../images/scene-system/MRTK_SceneSystemProfileEditorSettings.PNG)
+![Impostazioni dell'editor del sistema di scena](../images/scene-system/MRTK_SceneSystemProfileEditorSettings.PNG)

@@ -5,24 +5,24 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, interazioni con la mano, controllo limiti, pulsanti a pressione,
-ms.openlocfilehash: 7926c8bdd525af24a26e2f4c87257dca7628956a
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 5e4f69a9e547476f848c383016008628d56fa801cf90ae9cdccde9fe791d186f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177446"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223183"
 ---
 # <a name="hand-interaction-examples"></a>Esempi di interazione manuale
 
 ![Esempi di interazione manuale 1](../images/hand-interaction-examples/MRTK_HandInteractionExamples.png)
 
-La **scena di esempio HandInteractionExamples** contiene vari tipi di interazioni e controlli dell'interfaccia utente che evidenziano l'input della mano articolato. Con la simulazione di input di MRTK, è possibile sperimentare interazioni di tracciamento manuale nell'editor di Unity. 
+La **scena di esempio HandInteractionExamples** contiene vari tipi di interazioni e controlli dell'interfaccia utente che evidenziano l'input della mano articolato. Con la simulazione dell'input di MRTK, è possibile sperimentare interazioni di tracciamento manuale nell'editor di Unity. 
 
 **La scena HandInteractionExamples** è inclusa nel pacchetto Examples di MRTK. Puoi scaricare e importare il **pacchetto Mixed Reality Toolkit Examples** tramite Mixed Reality Feature [Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool)
 
 <img src="../images/hand-interaction-examples/MRTK_Examples_Package_MRFT.png" width="550" alt="Example Package 1"><br/>
 
-In Unity usare il menu Window > Gestione pacchetti > In Project > Custom (In Project > personalizzato) e selezionare **Mixed Reality Toolkit Examples (Esempi di Toolkit realtà mista).** Fare **clic su Import into Project** (Importa in) accanto a **Demos - HandTracking (Demo - HandTracking).** Sarà possibile trovare la scena **HandInteractionExamples** nella cartella Assets > Samples.
+In Unity usare il menu Window > Gestione pacchetti > In Project > Custom (In Project > personalizzato) e selezionare Mixed Reality Toolkit Examples (Esempi di Toolkit **realtà mista).** Fare **clic su Import into Project** (Importa in) accanto a **Demos - HandTracking (Demo - HandTracking).** Sarà possibile trovare la scena **HandInteractionExamples** nella cartella Assets > Samples.
 
 <img src="../images/hand-interaction-examples/MRTK_Examples_Package_2.png" width="300" alt="Example Package 2"><br/>
 

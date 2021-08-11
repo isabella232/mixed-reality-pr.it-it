@@ -1,25 +1,25 @@
 ---
 title: LostTrackingService
-description: Panoramica sul servizio LostTracking in MRTK
+description: Panoramica del servizio LostTracking in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK,
-ms.openlocfilehash: 1465f1fe934e55f8bd8a5ce6d680e438e436380a
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: bd4aed64ce9a6d05f42891024c051e8ba7771073a29c1b40f93ccc7e6d35f30c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693548"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223167"
 ---
-# <a name="lost-tracking-visualization"></a>Visualizzazione di rilevamento persa
+# <a name="lost-tracking-visualization"></a>Visualizzazione rilevamento perso
 
 ![Rilevamento perso](images/lost-tracking/LostTrackingVisualization.jpg)
 
-Il servizio di estensione rilevamento perso fornisce l'oggetto visivo animato in stile shell HoloLens per lo stato di rilevamento perso.
+Il servizio di estensione rilevamento perso fornisce HoloLens oggetto visivo animato dello stile della shell per lo stato di rilevamento perso.
 
-## <a name="how-to-use-lost-tracking-extensions"></a>Come usare le estensioni di rilevamento perdute
+## <a name="how-to-use-lost-tracking-extensions"></a>Come usare le estensioni di rilevamento perse
 
-In profilo MRTK aggiungere il **servizio di rilevamento perso** alle estensioni. Assegnare **DefaultLostTrackingServiceProfile** che include **LostTrackingVisualPrefab**.
+In Profilo MRTK aggiungere **Il servizio di rilevamento perso** alle estensioni. Assegnare **DefaultLostTrackingServiceProfile** che include **LostTrackingVisualPrefab**.
 
 <img src="images/lost-tracking/LostTracking_Extensions.png" width="550" alt="Lost Tracking Extension">

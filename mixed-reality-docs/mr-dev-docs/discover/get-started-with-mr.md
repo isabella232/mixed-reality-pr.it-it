@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Realtà mista, individuare, distribuire, indice, pagina di destinazione, progettazione, sviluppo, esercitazioni, app di esempio, nozioni di base, case study, risorse, guide pratiche per HoloLens, progetti open source, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: e3c30429109de367993357701092154741ca571b
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: 7d875b1e4aa31c7131f8154b1d4a0d2027dbd022791d8daa06169aa0fcb51b55
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111403382"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228829"
 ---
 # <a name="get-started-with-mixed-reality"></a>Informazioni di base sulla realtà mista
 
@@ -22,10 +22,10 @@ L'ecosistema della realtà mista è un ambito in crescita costituito da interazi
 
 ## <a name="understand-the-basics"></a>Comprendere i concetti di base
 
-Se non si ha familiarità con la realtà mista, è importante iniziare dalle basi e procedere elaborando con i propri tempi i concetti di base, le esperienze e le funzionalità. Sono disponibili due opzioni: è disponibile un modulo incentrato sul Microsoft Learn che ti permetterà di accelerare in tempi non lunghi oppure puoi esplorare il percorso a-la-carte che abbiamo configurato di seguito. Entrambi questi percorsi consentono di definire una solida base per la progettazione e lo sviluppo di idee in realtà mista.
+Se non si ha familiarità con la realtà mista, è importante iniziare dalle basi e procedere elaborando con i propri tempi i concetti di base, le esperienze e le funzionalità. Qui sono disponibili due opzioni: è disponibile un modulo incentrato sul Microsoft Learn che permetterà di velocizzare l'esecuzione in tempi non lunghi oppure è possibile esplorare il percorso a la-carte che è stato configurato di seguito. Entrambi questi percorsi consentono di definire una solida base per la progettazione e lo sviluppo di idee in realtà mista.
 
 > [!div class="nextstepaction"]
-> [Introduzione al modulo Realtà mista](/learn/modules/intro-to-mixed-reality)
+> [Introduzione al modulo realtà mista](/learn/modules/intro-to-mixed-reality)
 
 ### <a name="what-is-mixed-reality"></a>Ce cos'è la realtà mista?
 
@@ -131,7 +131,7 @@ Se si è interessati a vedere come funzionano i diversi servizi e dispositivi ha
 | [Hardware HoloLens](https://www.microsoft.com//hololens/hardware) | HoloLens 2 offre l'esperienza di realtà mista più comoda e immersiva possibile, con soluzioni leader del settore in grado di offrire valore velocemente, il tutto potenziato dall'affidabilità, dalla sicurezza e dalla scalabilità del cloud e dei servizi di intelligenza artificiale di Microsoft |
 | [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | È possibile esplorare una vasta gamma di prodotti, tra cui [Remote Assist](/dynamics365/mixed-reality/remote-assist/ra-overview), Layout e [Guides](/dynamics365/mixed-reality/guides/), che possono potenziare le capacità dei dipendenti e ottimizzare le operazioni con Dynamics 365. Una vera comprensione si acquisisce con la pratica su attività, dispositivi e utenti reali |
 | [Servizi cloud di Azure](../develop/mixed-reality-cloud-services.md) | È possibile creare esperienze immersive accattivanti su diverse piattaforme con consapevolezza spaziale, ancoraggi nello spazio e rendering di modelli 3D complessi |
-| [Microsoft Mesh](/mesh/overview) | Mesh consente alle persone di connettersi con la presenza, condividere lo spazio e collaborare tra loro, da qualsiasi parte del mondo, tramite esperienze di realtà mista abilitate per Mesh. Con Mesh è possibile migliorare le riunioni virtuali, condurre sessioni di progettazione virtuale, aiutare altri utenti in remoto e ospitare riunioni virtuali |
+| [Microsoft Mesh](/mesh/overview) | Mesh consente alle persone di connettersi con la presenza, condividerle nello spazio e collaborare tra loro, da qualsiasi parte del mondo, tramite esperienze di realtà mista abilitate per Mesh. Con Mesh è possibile migliorare le riunioni virtuali, condurre sessioni di progettazione virtuale, aiutare altri utenti in remoto e ospitare riunioni virtuali |
 
 ## <a name="what-would-you-like-to-do-next"></a>Quali operazioni vuoi eseguire successivamente?
 

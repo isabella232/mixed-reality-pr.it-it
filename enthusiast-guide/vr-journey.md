@@ -1,29 +1,29 @@
 ---
-title: Avviare il percorso vr
+title: Avviare il percorso VR
 description: Esplora i checkpoint curati per guidare i nuovi utenti del dispositivo nella configurazione e nell'uso dei dispositivi VR immersivi.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, Realtà mista, Realtà virtuale, VR, MR,
-ms.openlocfilehash: 333da855b7fc995fa40ff66d9da59a38000bf133
-ms.sourcegitcommit: f98884074db7cf334efbaa396059566843c73d56
+ms.openlocfilehash: 43926de06badda7861825eb343991c67942b38a59c670e7142862116322465a4
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114225130"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221352"
 ---
-# <a name="start-your-vr-journey"></a>Avviare il percorso vr
+# <a name="start-your-vr-journey"></a>Avviare il percorso VR
 
 ![Immagine predefinita dell'ambiente vr sovrapposto](images/vr-journey-hero.png)
 
-## <a name="setup--usability-checkpoints"></a>Configurare & checkpoint di usabilità
+## <a name="setup--usability-checkpoints"></a>Configurare & di usabilità
 
 Usare i checkpoint seguenti per configurare, configurare e usare i dispositivi VR immersivi per dare vita ad applicazioni e giochi.
 
 ### <a name="1-before-you-buy"></a>1. Prima di acquistare
 
-Il PC deve gestire l'hardware VR acquistato per ottenere la configurazione e l'esperienza di utilizzo migliori. In alcuni casi, potrebbe essere necessario ordinare schede [aggiuntive o hardware.](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) Questa sezione illustra in modo più dettagliata:
+Il PC deve gestire l'hardware VR che si sta acquistando per ottenere la migliore esperienza di configurazione e utilizzo. In alcuni casi, potrebbe essere necessario ordinare schede [aggiuntive o hardware.](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) Questa sezione illustra in modo più dettagliata:
 
 * Requisiti minimi del PC
 * Controlli di compatibilità
@@ -46,9 +46,9 @@ Dopo aver creato il dispositivo, sarà necessario configurarlo e configurarlo co
 
 |  Checkpoint  |  Risultato  |
 | --- | --- |
-| [Configurare Windows Mixed Reality](set-up-windows-mixed-reality.md) | Sii a tuo agio con i controller, i limiti della stanza, l'input vocale e Microsoft Edge sul nuovo dispositivo VR |
+| [Configurare Windows Mixed Reality](set-up-windows-mixed-reality.md) | Sii a tuo agio con i controller, i limiti della stanza, l'input vocale e Microsoft Edge nel nuovo dispositivo VR |
 | [Windows Mixed Reality domande frequenti sulla configurazione](wmr-setup-faq.yml) | Ottenere risposte e assistenza per la risoluzione dei problemi noti durante la configurazione Windows Mixed Reality |
-| [Linee guida per la salute, la sicurezza e il comfort](wmr-health-safety-comfort.md) | Consigli di rimanere al sicuro durante l'Windows Mixed Reality prima di usare il visore  |
+| [Linee guida per la salute, la sicurezza e il comfort](wmr-health-safety-comfort.md) | Consigli al sicuro durante l'uso di Windows Mixed Reality prima di usare il visore  |
 
 ### <a name="3-using-windows-mixed-reality"></a>3. Uso di Windows Mixed Reality
 
@@ -68,7 +68,7 @@ Sono disponibili funzionalità e servizi diversi tramite visori VR Windows Mixed
 | [Uso dell'input vocale](using-speech-in-wmr.md) | Acquisire familiarità con diversi comandi vocali che possono interagire con oggetti 3D, la barra dell'app, menu Start e Cortana |
 
 > [!NOTE]
-> Se si verificano problemi con una delle funzionalità precedenti, vedere le domande frequenti **[sull'Windows Mixed Reality utilizzo.](using-wmr-faq.yml)**
+> Se si verificano problemi con una delle funzionalità precedenti, vedere le domande frequenti **[sull'Windows Mixed Reality utilizzo](using-wmr-faq.yml)**.
 
 ## <a name="4-discover-apps-and-content"></a>4. Individuare app e contenuto
 
@@ -90,7 +90,7 @@ Quando si verificano problemi con qualsiasi elemento relativo all'hardware immer
  
 * [Domande frequenti di carattere generale](troubleshooting-windows-mixed-reality.md) 
 
-Se non si trova quello che si sta cercando, è presente un elenco completo di documenti di domande frequenti specifici **dell'argomento** nella sezione Domande frequenti sulla risoluzione dei problemi che illustrano tutto, dai codici di installazione e di errore fino ai display delle prestazioni e delle cuffia. Per altre informazioni sul funzionamento di funzionalità [](controllers-in-wmr.md) specifiche, vedere gli articoli sul funzionamento dei controller di movimento e del [rilevamento](tracking-system.md) interno.
+Se non si trova quello che si sta cercando, è presente un elenco completo di documenti di domande frequenti specifici **dell'argomento** nella sezione Domande frequenti sulla risoluzione dei problemi che illustrano tutto, dai codici di installazione e di errore fino ai display delle prestazioni e del visore. Per altre informazioni sul funzionamento di funzionalità [](controllers-in-wmr.md) specifiche, vedere gli articoli sul funzionamento dei controller di movimento e del [rilevamento interno.](tracking-system.md)
 
 Microsoft è sempre alla ricerca di nuovi problemi e bug, quindi se si verificano problemi non documentati, inviare [commenti e suggerimenti.](filing-feedback.md)
 
