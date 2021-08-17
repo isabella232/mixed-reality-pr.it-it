@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 07/27/2021
 ms.topic: article
-keywords: Windows Mixed Reality, progettazione, app di esempio, controlli, MRTK, Mixed Reality Toolkit, Unity, app di esempio, app di esempio, open source, Microsoft Store, HoloLens, visore di realtà mista, visore di realtà mista windows, visore per realtà virtuale, OpenXR, Open XR, Unity
-ms.openlocfilehash: ccfd443bb103f6ac051de84d3a321f3ffd5be2f5bafdc6479e9f67a03771d386
-ms.sourcegitcommit: 5977109661a1db4ee2be8ed532479342093303d5
+keywords: Windows Mixed Reality, progettazione, app di esempio, controlli, MRTK, Mixed Reality Toolkit, Unity, app di esempio, app di esempio, open source, Microsoft Store, HoloLens, visore per realtà mista, visore windows mixed reality, visore per realtà virtuale, OpenXR, Open XR, Unity
+ms.openlocfilehash: 1c9879872e80ebef3ea51cf3aa7dd4d349327cdf
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "116862596"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905690"
 ---
 # <a name="periodic-table-of-the-elements-20"></a>Tavola periodica degli elementi 2.0
 ![Tabella Period dell'app Elements](../images/MRDL_PeriodicTable.jpg)
@@ -19,7 +19,7 @@ ms.locfileid: "116862596"
 >[!NOTE]
 >Questo articolo illustra un esempio esplorativo creato in [Mixed Reality Design Labs,](https://github.com/Microsoft/MRDesignLabs_Unity)un luogo in cui vengono illustrate le informazioni e i suggerimenti per lo sviluppo di app di realtà mista. Gli articoli e il codice relativi alla progettazione si evolvono man appena si effettuano nuove individuazioni.
 
-[La tabella periodica degli elementi è](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) un'app di esempio open source di Microsoft Mixed Reality Design Labs. L'app è stata originariamente progettata per HoloLens prima generazione e visore vr immersivo nel 2015 per illustrare come creare un'esperienza end-to-end usando i blocchi predefiniti di MRTK. Per sfruttare completamente il nuovo rilevamento delle mani articolato e l'input di tracciamento oculare HoloLens 2, l'app è stata aggiornata usando MRTK v2. 
+[La tabella periodica degli elementi è](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) un'app di esempio open source di Microsoft Mixed Reality Design Labs. L'app è stata originariamente progettata per HoloLens prima generazione e visore vr immersivo nel 2015 per illustrare come creare un'esperienza end-to-end usando i blocchi predefiniti di MRTK. Per sfruttare completamente il nuovo rilevamento articolato della mano e l'input di tracciamento oculare HoloLens 2, l'app è stata aggiornata usando MRTK v2. 
 
 ## <a name="demo-video"></a>Video demo 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCF]
@@ -30,7 +30,7 @@ Registrato con HoloLens 2 usando Acquisizione realtà mista
 Fare clic <a href="https://github.com/microsoft/MRDL_Unity_PeriodicTable/releases" target="_blank">**sulla pagina**</a>Versione GitHub.
 
 ## <a name="upgrading-the-project-for-hololens-2-with-mrtk"></a>Aggiornamento del progetto per HoloLens 2 con MRTK
-È possibile trovare HoloLens 2 storia di porting dall'articolo: Portare la tabella periodica dell'app Elements HoloLens 2 <a href="https://dongyoonpark.medium.com/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158" target="_blank"> **con MRTK v2 (2019)**</a>
+È possibile trovare HoloLens 2 di porting dall'articolo: Portare la tabella periodica dell'app Elements HoloLens 2 <a href="https://dongyoonpark.medium.com/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158" target="_blank"> **con MRTK v2 (2019)**</a>
 
 ## <a name="openxr"></a>OpenXR 
 Leggere una storia sull'aggiornamento del progetto Tabella periodica alla pipeline Unity 2020 + OpenXR: Aggiornamento di <a href="https://dongyoonpark.medium.com/updating-mrtk-mixed-reality-project-to-openxr-unity-2020-periodic-table-of-the-elements-4cf55b0479a4" target="_blank"> **MRTK Mixed Reality Project a OpenXR+Unity 2020: Tabella periodica degli elementi per HoloLens 2 (2021)**</a>

@@ -1,47 +1,47 @@
 ---
 title: HoloLens (prima generazione) e Azure 313 - Servizio hub IoT
-description: Informazioni su come implementare il servizio hub Azure IoT in una macchina virtuale che esegue Ubuntu 16.4 e visualizzare i dati dei messaggi usando Microsoft HoloLens vr.
+description: Informazioni su come implementare il servizio hub Azure IoT in una macchina virtuale che esegue Ubuntu 16.4 e visualizzare i dati dei messaggi usando Microsoft HoloLens o visore VR.
 author: drneil
 ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
 keywords: azure, realtà mista, academy, edge, iot edge, esercitazione, api, notifica, funzioni, tabelle, hololens, immersive, vr, iot, macchina virtuale, ubuntu, python, Windows 10, Visual Studio
-ms.openlocfilehash: 0a9f1b7c42094b3c441bdb32082f6821f2fd43a1ce3339cf1f58e7bd0fcf8318
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: fbd793a5941a5fa1b236403672680aa7df375f8d
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115194997"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905768"
 ---
-# <a name="hololens-1st-gen-and-azure-313-iot-hub-service"></a>HoloLens (prima generazione) e Azure 313: servizio hub IoT
+# <a name="hololens-1st-gen-and-azure-313-iot-hub-service"></a>HoloLens (prima generazione) e Azure 313: Servizio hub IoT
 
 >[!NOTE]
 >Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. In futuro verrà pubblicata una nuova serie di esercitazioni che illustrano come sviluppare per HoloLens 2.  Questa comunicazione verrà aggiornata con un collegamento a tali esercitazioni al momento della pubblicazione.
 
 ![risultato del corso](images/AzureLabs-Lab313-00.png)
 
-In questo corso si apprenderà come implementare un servizio **hub di Azure IoT** in una macchina virtuale che esegue il sistema operativo Ubuntu 16.4. Verrà **quindi usata un'app** per le funzioni di Azure per ricevere messaggi dalla macchina virtuale Ubuntu e archiviare il risultato all'interno di un servizio **tabelle di Azure.** Sarà quindi possibile visualizzare questi  dati usando il Power BI in Microsoft HoloLens visore VR immersive.
+In questo corso si apprenderà come implementare un servizio **hub** di Azure IoT in una macchina virtuale che esegue il sistema operativo Ubuntu 16.4. Verrà **quindi usata un'app** per le funzioni di Azure per ricevere messaggi dalla macchina virtuale Ubuntu e archiviare il risultato all'interno di un servizio **tabelle di Azure.** Sarà quindi possibile visualizzare questi  dati usando Power BI su Microsoft HoloLens visore VR immersive.
 
-Il contenuto di  questo corso è applicabile ai dispositivi IoT Edge, anche se ai fini di questo corso, l'attenzione sarà incentrata sull'ambiente di una macchina virtuale, in modo che l'accesso a un dispositivo perimetrale fisico non sia necessario.
+Il contenuto di  questo corso è applicabile ai dispositivi IoT Edge, anche se ai fini di questo corso l'attenzione sarà incentrata sull'ambiente di una macchina virtuale, in modo che l'accesso a un dispositivo perimetrale fisico non sia necessario.
 
 Completando questo corso, si apprenderà come:
 
 - Distribuire un **IoT Edge in** una macchina virtuale (sistema operativo Ubuntu 16), che rappresenterà il dispositivo IoT.
-- Aggiungere un **modello di Azure Visione personalizzata Tensorflow** al modulo Edge, con codice che analizzerà le immagini archiviate nel contenitore.
+- Aggiungere un **modello di Azure Visione personalizzata Tensorflow** al modulo Edge, con il codice che analerà le immagini archiviate nel contenitore.
 - Configurare il modulo per inviare il messaggio dei risultati dell'analisi al servizio **hub IoT.**
 - Usare **un'app per le funzioni di Azure** per archiviare il messaggio all'interno di una tabella di **Azure.**
-- Configurare la **Power BI** raccogliere il messaggio archiviato e creare un report.
+- Configurare le **Power BI** raccogliere il messaggio archiviato e creare un report.
 - Visualizzare i dati dei messaggi IoT **all'interno Power BI**.
 
 I servizi che verranno utilizzati includono:
 
-- **Azure IoT Hub** è un servizio Microsoft Azure che consente agli sviluppatori di connettere, monitorare e gestire asset IoT. Per altre informazioni, visitare la [ **pagina Azure IoT servizio hub.**](https://azure.microsoft.com/services/iot-hub/)
+- **Azure IoT Hub** è un servizio Microsoft Azure che consente agli sviluppatori di connettere, monitorare e gestire asset IoT. Per altre informazioni, visitare la [ **pagina Azure IoT Servizio Hub.**](https://azure.microsoft.com/services/iot-hub/)
 
 - **Registro Azure Container** è un servizio Microsoft Azure che consente agli sviluppatori di archiviare immagini del contenitore per vari tipi di contenitori. Per altre informazioni, visitare la [ **pagina Registro Azure Container Service**](https://azure.microsoft.com/services/container-registry/).
 
-- **L'app per** le Microsoft Azure Azure è un servizio di Microsoft Azure, che consente agli sviluppatori di eseguire piccole parti di codice, "funzioni", in Azure. In questo modo è possibile delegare il lavoro al cloud, anziché all'applicazione locale, che può avere molti vantaggi. **Funzioni di Azure** supporta diversi linguaggi di sviluppo, tra cui \# \# C, F, Node.js, Java e PHP. Per altre informazioni, visitare la [ **Funzioni di Azure** pagina](/azure/azure-functions/functions-overview).
+- **L'app** per le funzioni di Azure Microsoft Azure servizio, che consente agli sviluppatori di eseguire piccole parti di codice, "funzioni", in Azure. In questo modo è possibile delegare il lavoro al cloud, anziché all'applicazione locale, che può avere molti vantaggi. **Funzioni di Azure** supporta diversi linguaggi di sviluppo, tra cui \# \# C, F, Node.js, Java e PHP. Per altre informazioni, visitare la [ **pagina Funzioni di Azure** .](/azure/azure-functions/functions-overview)
 
-- **Archiviazione di Azure: Le** tabelle sono un servizio Microsoft Azure, che consente agli sviluppatori di archiviare dati strutturati, non SQL, nel cloud, rendendoli facilmente accessibili ovunque. Il servizio offre una progettazione senza schema, consentendo l'evoluzione delle tabelle in base alle esigenze e pertanto è molto flessibile. Per altre informazioni, visitare la pagina [ **Tabelle di Azure**](/azure/cosmos-db/table-storage-overview)
+- **Archiviazione di Azure: Tables** è un servizio Microsoft Azure, che consente agli sviluppatori di archiviare dati strutturati, non SQL, nel cloud, rendendoli facilmente accessibili ovunque. Il servizio offre una progettazione senza schema, consentendo l'evoluzione delle tabelle in base alle esigenze e pertanto è molto flessibile. Per altre informazioni, visitare la pagina [ **Tabelle di Azure**](/azure/cosmos-db/table-storage-overview)
 
 Questo corso illustra come configurare e usare il servizio hub IoT e quindi visualizzare una risposta fornita da un dispositivo. L'utente dovrà applicare questi concetti a una configurazione personalizzata del servizio hub IoT, che potrebbe essere compilata.
 
@@ -57,14 +57,14 @@ Questo corso illustra come configurare e usare il servizio hub IoT e quindi visu
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Per i prerequisiti più aggiornati per lo sviluppo con la realtà mista, incluso il Microsoft HoloLens, vedere l'articolo Installare [gli](/windows/mixed-reality/install-the-tools) strumenti.
+Per i prerequisiti più aggiornati per lo sviluppo con realtà mista, incluso il Microsoft HoloLens, vedere l'articolo Installare [gli](../../install-the-tools.md) strumenti.
 
 > [!NOTE]
-> Questa esercitazione è destinata agli sviluppatori che hanno esperienza di base con Python. Tenere inoltre presente che i prerequisiti e le istruzioni scritte all'interno di questo documento rappresentano ciò che è stato testato e verificato al momento della stesura di questo documento (luglio 2018). È possibile usare il software più recente, come indicato nell'articolo Installare gli strumenti, anche se non si presuppone che le informazioni contenute in questo corso corrispondano perfettamente a quelle disponibili nel software più recente rispetto a quelle elencate di seguito. [](../../install-the-tools.md)
+> Questa esercitazione è destinata agli sviluppatori che hanno esperienza di base con Python. Tenere presente anche che i prerequisiti e le istruzioni scritte all'interno di questo documento rappresentano ciò che è stato testato e verificato al momento della stesura di questo documento (luglio 2018). È possibile usare il software più recente, come indicato nell'articolo Installare gli strumenti, anche se non si presuppone che le informazioni contenute in questo corso corrispondano perfettamente a quelle disponibili nel software più recente rispetto a quelle elencate di seguito. [](../../install-the-tools.md)
 
 Sono necessari i componenti hardware e software seguenti:
 
-- Windows 10 Fall Creators Update (o versioni successive), **modalità sviluppatore abilitata**
+- Windows 10 Fall Creators Update (o versione successiva), **modalità sviluppatore abilitata**
 
     > [!WARNING]
     > Non è possibile eseguire una macchina virtuale usando Hyper-V in Windows 10 Home Edition.
@@ -75,13 +75,13 @@ Sono necessari i componenti hardware e software seguenti:
 - Accesso a Internet per Azure e per il servizio hub IoT. Per altre informazioni, seguire questo collegamento [alla pagina del servizio hub IoT](https://azure.microsoft.com/services/iot-hub/)
 - Un modello di Machine Learning. Se non si dispone di un modello pronto per l'uso, [è possibile usare il modello fornito con questo corso.](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20313%20-%20IoT%20Hub%20Service/Custom%20Vision%20Model.zip)
 - **Software Hyper-V** abilitato nel computer Windows 10 di sviluppo.
-- Una macchina virtuale che esegue Ubuntu (16.4 o 18.4), in esecuzione nel computer di sviluppo o in alternativa è possibile usare un computer separato che esegue Linux (Ubuntu 16.4 o 18.4). Per altre informazioni su come creare una macchina virtuale in Windows con Hyper-V, vedere il capitolo "Prima di [iniziare".](#before-you-start) (https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine).  
+- Una macchina virtuale che esegue Ubuntu (16.4 o 18.4), in esecuzione nel computer di sviluppo o in alternativa è possibile usare un computer separato che esegue Linux (Ubuntu 16.4 o 18.4). Per altre informazioni su come creare una macchina virtuale in Windows con Hyper-V, vedere il capitolo ["Prima di iniziare".](#before-you-start) (https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine).  
 
 
 
 ### <a name="before-you-start"></a>Prima di iniziare
 
-1. Configurare e testare l'HoloLens. Se è necessario supporto per la configurazione HoloLens, vedere [l'articolo HoloLens configurazione.](/hololens/hololens-setup)
+1. Configurare e testare l'HoloLens. Se è necessario supporto per la configurazione del HoloLens, [vedere l'articolo HoloLens configurazione.](/hololens/hololens-setup)
 2. È buona idea eseguire  la  calibrazione e l'ottimizzazione dei sensori quando si inizia a sviluppare una nuova app HoloLens (a volte può essere utile eseguire tali attività per ogni utente).
 
 Per informazioni sulla calibrazione, fare clic su questo [collegamento all'HoloLens calibrazione.](/hololens/hololens-calibration#hololens-2)
@@ -91,7 +91,7 @@ Per informazioni sull'ottimizzazione dei sensori, fare clic su questo collegamen
 3. Configurare la **macchina virtuale Ubuntu** **usando Hyper-V.** Le risorse seguenti sono utili per il processo.
     1.  Per prima cosa, seguire questo collegamento per scaricare [l'iso di Ubuntu 16.04.4 LTS (Xenial Xerus).](https://au.releases.ubuntu.com/16.04/) Selezionare **l'immagine desktop del PC a 64 bit (AMD64).**
     2.  Assicurarsi che **Hyper-V** sia abilitato nel computer Windows 10 virtuale. È possibile seguire questo collegamento per indicazioni [sull'installazione e l'abilitazione di Hyper-V in Windows 10](/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).
-    3.  Avviare Hyper-V e creare una nuova macchina virtuale Ubuntu. È possibile seguire questo collegamento per [una guida dettagliata su come creare una macchina virtuale con Hyper-V.](/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine) Quando viene richiesto **di installare un sistema operativo da** un file di immagine di avvio, selezionare l'immagine **ISO Ubuntu** scaricata in precedenza.
+    3.  Avviare Hyper-V e creare una nuova macchina virtuale Ubuntu. È possibile seguire questo collegamento per [una guida dettagliata su come creare una macchina virtuale con Hyper-V.](/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine) Quando viene richiesto di installare un sistema operativo da un file di immagine di **avvio,** selezionare l'immagine **ISO Ubuntu** scaricata in precedenza.
 
     > [!NOTE]
     > **L'uso della creazione rapida di Hyper-V** non è consigliato.  
@@ -141,11 +141,11 @@ Il **servizio hub IoT** che verrà compilato e  utilizzato in questo corso fa ri
 
 4. Impostare i parametri di configurazione del servizio:
 
-    1. Inserire un nome per il progetto, in questo esempio denominato **IoTCRegistry**.
+    1. Inserire un nome per il progetto, denominato **IoTCRegistry** in questo esempio.
 
-    2. Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. È consigliabile mantenere tutti i servizi di Azure associati a un singolo progetto,ad esempio questi corsi, in un gruppo di risorse comune.
+    2. Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. È consigliabile mantenere tutti i servizi di Azure associati a un singolo progetto (ad esempio, questi corsi) in un gruppo di risorse comune.
 
-    3. Impostare il percorso del servizio.
+    3. Impostare la posizione del servizio.
 
     4. Impostare **Utente amministratore** su **Abilita**.
 
@@ -153,13 +153,13 @@ Il **servizio hub IoT** che verrà compilato e  utilizzato in questo corso fa ri
 
     ![](images/AzureLabs-Lab313-07.png)
 
-5. Fare **clic su** Crea e attendere la creazione dei servizi. 
+5. Fare **clic** su Crea e attendere la creazione dei servizi. 
 
-6. Quando viene visualizzata la notifica che informa dell'esito positivo  della creazione del Registro Contenitori, fare clic su Vai alla risorsa per essere reindirizzati alla pagina Servizio.
+6. Quando viene visualizzata la notifica che informa dell'esito positivo della creazione del Registro *Container,* fare clic su **Vai** alla risorsa per essere reindirizzati alla pagina Del servizio.
 
     ![](images/AzureLabs-Lab313-08.png)
 
-7. Nella pagina *Servizio Registro Contenitori* fare clic su **Chiavi di accesso**.
+7. Nella pagina *Servizio Registro Container* fare clic su Chiavi di **accesso**.
 
 8. Prendere nota (è possibile usare il Blocco note) dei parametri seguenti:
     1. **Server di accesso**
@@ -168,85 +168,85 @@ Il **servizio hub IoT** che verrà compilato e  utilizzato in questo corso fa ri
 
     ![](images/AzureLabs-Lab313-09.png)
 
-## <a name="chapter-3---the-iot-hub-service"></a>Capitolo 3 - Servizio hub IoT
+## <a name="chapter-3---the-iot-hub-service"></a>Capitolo 3: Servizio hub IoT
 
 A questo punto si inizierà la creazione e la configurazione del **servizio hub IoT.**
 
 1. Se non è già stato eseguito l'accesso, accedere al [portale di Azure.](https://portal.azure.com)
 
-2.  Dopo aver eseguito l'accesso, fare clic su Crea una risorsa nell'angolo in alto **a** sinistra e cercare **Hub IoT** e fare clic su **Invio.**
+2.  Dopo aver effettuato l'accesso, fare clic su Crea una risorsa nell'angolo in alto **a** sinistra, cercare **Hub IoT** e fare clic su **Invio.**
 
  ![cercare l'account di archiviazione](images/AzureLabs-Lab313-10.png)
 
-3.  La nuova pagina fornirà una descrizione del servizio Archiviazione **account.** Nella parte inferiore sinistra del prompt fare clic sul **pulsante Crea** per creare un'istanza del servizio.
+3.  La nuova pagina fornirà una descrizione del servizio **dell Archiviazione account** utente. Nella parte inferiore sinistra del prompt fare clic sul **pulsante Crea** per creare un'istanza del servizio.
 
     ![creare un'istanza di archiviazione](images/AzureLabs-Lab313-11.png)
 
 4.  Dopo aver fatto clic su **Crea,** verrà visualizzato un pannello:
 
-    1. Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. È consigliabile mantenere tutti i servizi di Azure associati a un singolo progetto,ad esempio questi corsi, in un gruppo di risorse comune.
+    1. Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. È consigliabile mantenere tutti i servizi di Azure associati a un singolo progetto (ad esempio, questi corsi) in un gruppo di risorse comune.
 
-        > Per altre informazioni sui gruppi di risorse di Azure, seguire questo collegamento su [come gestire un gruppo di risorse.](/azure/azure-resource-manager/resource-group-portal)
+        > Per altre informazioni sui gruppi di risorse di Azure, fare clic su questo collegamento per [gestire un gruppo di risorse.](/azure/azure-resource-manager/resource-group-portal)
 
 
-    2. Selezionare un **percorso appropriato** (usare la stessa posizione in tutti i servizi creati in questo corso).
+    2. Selezionare una località **appropriata** (usare la stessa località in tutti i servizi creati in questo corso).
 
     3. Inserire il nome **desiderato per** questa istanza del servizio.    
 
-5.  Nella parte inferiore della pagina fare clic su **Avanti: Dimensioni e scalabilità**.
+5.  Nella parte inferiore della pagina fare clic su **Avanti: Ridimensiona e ridimensiona**.
 
     ![creare un'istanza di archiviazione](images/AzureLabs-Lab313-12.png)
 
-6.  In questa pagina selezionare il piano **tariffario** e di scalabilità. Se si tratta della prima istanza del servizio hub IoT, dovrebbe essere disponibile un livello gratuito.  
+6.  In questa pagina selezionare il piano **tariffario** e il livello di scalabilità. Se si tratta della prima istanza del servizio hub IoT, dovrebbe essere disponibile un livello gratuito.  
 
-7.  Fare clic **su Rivedi e crea**.
+7.  Fare clic **su Rivedi e crea.**
 
     ![creare un'istanza di archiviazione](images/AzureLabs-Lab313-13.png)
 
-8.  Esaminare le impostazioni e fare clic su **Crea**.
+8.  Rivedere le impostazioni e fare clic su **Crea.**
 
     ![creare un'istanza di archiviazione](images/AzureLabs-Lab313-14.png)
 
-9. Quando viene visualizzata la notifica che informa dell'esito positivo della  creazione del servizio *hub IoT,* fare clic su Vai alla risorsa per essere reindirizzati alla pagina Servizio.
+9. Quando viene visualizzata la notifica che informa della corretta creazione del servizio *hub IoT,* fare clic su **Vai** alla risorsa per essere reindirizzati alla pagina Servizio.
 
     ![creare un'istanza di archiviazione](images/AzureLabs-Lab313-15.png)
 
-10. Scorrere il pannello laterale a sinistra fino a visualizzare *Gestione automatica dei dispositivi*, fare clic su **IoT Edge**.
+10. Scorrere il pannello laterale a sinistra fino a visualizzare *Gestione automatica* dei dispositivi , fare clic su **IoT Edge**.
 
     ![creare un'istanza di archiviazione](images/AzureLabs-Lab313-16.png)
 
-11. Nella finestra visualizzata a destra fare clic su Aggiungi IoT Edge **dispositivo**. A destra verrà visualizzato un pannello.
+11. Nella finestra visualizzata a destra fare clic su Aggiungi IoT Edge **dispositivo**. Verrà visualizzato un pannello a destra.
 
-12. Nel pannello specificare al nuovo dispositivo un **ID dispositivo** (un nome a scelta). Fare quindi clic su **Salva**. Le *chiavi primaria* e *secondaria* verranno generate automaticamente, se è selezionata l'opzione **Generazione** automatica.
+12. Nel pannello fornire al nuovo dispositivo un **ID dispositivo** (nome a scelta). Fare quindi clic su **Salva**. Le *chiavi primaria* e *secondaria* verranno generate automaticamente, se la generazione automatica **è** selezionata.
 
     ![creare un'istanza di archiviazione](images/AzureLabs-Lab313-17.png)
 
-13. Si tornerà alla sezione dispositivi *IoT Edge,* in cui verrà elencato il nuovo dispositivo. Fare clic sul nuovo dispositivo (delineato in rosso nell'immagine seguente). 
+13. Si tornerà alla sezione Dispositivi *IoT Edge,* in cui verrà elencato il nuovo dispositivo. Fare clic sul nuovo dispositivo (indicato in rosso nell'immagine seguente). 
 
     ![creare un'istanza di archiviazione](images/AzureLabs-Lab313-18.png)
 
-14. Nella pagina *Dettagli dispositivo* visualizzata eseguire una copia della stringa **di connessione** (chiave primaria).
+14. Nella pagina *Dettagli dispositivo* visualizzata eseguire una copia della stringa di **connessione** (chiave primaria).
 
     ![creare un'istanza di archiviazione](images/AzureLabs-Lab313-19.png)
 
-15. Tornare al pannello a sinistra e fare clic su *Criteri di accesso condiviso* per aprirlo. 
+15. Tornare al pannello a sinistra e fare clic su Criteri *di accesso condiviso* per aprirlo. 
 
-16. Nella pagina visualizzata fare clic su **iothubowner** e a destra dello schermo verrà visualizzato un pannello. 
+16. Nella pagina visualizzata fare clic su **iothubowner** per visualizzare un pannello a destra della schermata. 
 
-17. Prendere nota (nel Blocco note) della stringa di connessione **(chiave** primaria) per usarla in un secondo momento quando si imposta la stringa di *connessione* sul dispositivo.
+17. Prendere nota (nell'Blocco note) della stringa di connessione **(chiave** primaria) per usarla in seguito durante l'impostazione della stringa *di* connessione sul dispositivo.
 
     ![creare un'istanza di archiviazione](images/AzureLabs-Lab313-20.png)
 
 ## <a name="chapter-4---setting-up-the-development-environment"></a>Capitolo 4 - Configurazione dell'ambiente di sviluppo
 
-Per creare e distribuire moduli per *l'hub IoT Edge,* sono necessari i componenti seguenti installati nel computer di sviluppo che esegue Windows 10:
+Per creare e distribuire moduli per *l'hub IoT Edge,* è necessario installare i componenti seguenti nel computer di sviluppo che esegue Windows 10:
 
 1.  [Docker per Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows), verrà chiesto di creare un account per poterlo scaricare. 
 
     [![scaricare Docker per Windows](images/AzureLabs-Lab313-21.png)](https://store.docker.com/editions/community/docker-ce-desktop-windows)
 
     > [!IMPORTANT]
-    > Docker richiede *Windows 10 pro,* *Enterprise 14393* o *Windows Server 2016 RTM* per l'esecuzione. Se si eseguono altre versioni di Windows 10, è possibile provare a installare Docker usando [la casella degli strumenti Docker](https://docs.docker.com/toolbox/toolbox_install_windows/).
+    > Docker richiede *Windows 10 PRO,* *Enterprise 14393* o *Windows Server 2016 RTM* per l'esecuzione. Se si eseguono altre versioni di Windows 10, è possibile provare a installare Docker usando la casella [degli strumenti di Docker.](https://docs.docker.com/toolbox/toolbox_install_windows/)
 
 2.  [Python 3.6](https://www.python.org/downloads/).
 
@@ -254,16 +254,16 @@ Per creare e distribuire moduli per *l'hub IoT Edge,* sono necessari i component
 
 3.  [Visual Studio Code (noto anche come VS Code)](https://code.visualstudio.com/download).
 
-    [![scaricare VS Code](images/AzureLabs-Lab313-23.png)](https://code.visualstudio.com/download)
+    [![Scaricare VS Code](images/AzureLabs-Lab313-23.png)](https://code.visualstudio.com/download)
 
 Dopo aver installato il software indicato in precedenza, è necessario riavviare il computer.
 
 ## <a name="chapter-5---setting-up-the-ubuntu-environment"></a>Capitolo 5 - Configurazione dell'ambiente Ubuntu
 
-È ora possibile passare alla configurazione del dispositivo che esegue il sistema operativo **Ubuntu**. Seguire la procedura seguente, per installare il software necessario, per distribuire i contenitori nella lavagna:
+A questo punto è possibile passare alla configurazione del dispositivo che **esegue il sistema operativo Ubuntu.** Per installare il software necessario, seguire questa procedura per distribuire i contenitori nella scheda:
 
 > [!IMPORTANT]
-> È necessario far precedere sempre i comandi del terminale con **sudo per** l'esecuzione come utente amministratore. Cioè:
+> È necessario far precedere sempre i comandi del terminale **con sudo per** l'esecuzione come utente amministratore. Cioè:
 > 
 >   ```bash
 >   sudo docker \<option> \<command> \<argument>
@@ -271,13 +271,13 @@ Dopo aver installato il software indicato in precedenza, è necessario riavviare
 
 1.  Aprire il **terminale Ubuntu** e usare il comando seguente per installare **pip**:
 
-    > [! HINT] È possibile aprire *Terminale* molto facilmente usando la scelta rapida da tastiera: **CTRL+ALT+T.**
+    > [! HINT] È possibile aprire *Terminale* molto facilmente usando i tasti di scelta rapida **CTRL+ALT+T.**
 
     ```bash
         sudo apt-get install python-pip
     ```
 
-2.  In questo capitolo potrebbe essere richiesto dal *terminale* l'autorizzazione per l'uso dell'archiviazione del dispositivo e per l'immissione di **y/n** (sì o no), digitare **"y"** e quindi premere **INVIO** per accettare.
+2.  In questo capitolo, terminale potrebbe richiedere l'autorizzazione per usare l'archiviazione del dispositivo e immettere **y/n** (sì o no), digitare **"y"** e quindi premere **INVIO** per accettare.
 
 3.  Al termine del comando, usare il comando seguente per installare **curl**:
 
@@ -285,7 +285,7 @@ Dopo aver installato il software indicato in precedenza, è necessario riavviare
         sudo apt install curl
     ```
 
-4.  Dopo **aver installato pip** e **curl,** usare il comando seguente per installare il **runtime di IoT Edge**, necessario per distribuire e controllare i moduli nella scheda:
+4.  Dopo aver installato **pip** e **curl,** usare il comando seguente per installare il **runtime di IoT Edge**, necessario per distribuire e controllare i moduli nella scheda:
 
     ```bash
         curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list > ./microsoft-prod.list
@@ -307,7 +307,7 @@ Dopo aver installato il software indicato in precedenza, è necessario riavviare
         sudo apt-get install iotedge
     ```
 
-5. A questo punto verrà richiesto di aprire il file di configurazione di *runtime*, per inserire la stringa di connessione del dispositivo, che è stata notata (nel Blocco note), durante la creazione del servizio hub **IoT** ( al passaggio [14,](#chapter-3---the-iot-hub-service)del capitolo 3). Eseguire la riga seguente nel terminale per aprire il file:
+5. A questo punto verrà richiesto di aprire il file di configurazione di *runtime*, per inserire la stringa di connessione del dispositivo **,** di cui si è noti (nel Blocco note), durante la creazione del servizio hub **IoT** ( al passaggio [14,](#chapter-3---the-iot-hub-service)del capitolo 3). Eseguire la riga seguente nel terminale per aprire il file:
 
     ```bash
         sudo nano /etc/iotedge/config.yaml
@@ -316,49 +316,49 @@ Dopo aver installato il software indicato in precedenza, è necessario riavviare
 6. Verrà visualizzato il file **config.yaml,** pronto per la modifica:
 
     > [!WARNING]
-    > Quando si apre questo file, può generare confusione. Si modificherà il testo di questo file, all'interno del *terminale* stesso. 
+    > Quando si apre questo file, potrebbe generare confusione. Si modificherà il testo di questo file, all'interno del *terminale* stesso. 
 
-    1.  Usare i tasti di direzione sulla tastiera per scorrere verso il basso (è necessario scorrere verso il basso), per raggiungere la riga che contiene":
+    1.  Usare i tasti di direzione sulla tastiera per scorrere verso il basso (sarà necessario scorrere verso il basso un po' verso il basso), per raggiungere la riga che contiene":
 
         "**\<ADD DEVICE CONNECTION STRING HERE>**".
 
-    2. Sostituire la riga, **incluse le parentesi quadre,** con la **stringa di connessione** del dispositivo specificata in precedenza.
+    2. Sostituire la riga , **incluse le parentesi quadre**, con la **stringa di connessione del** dispositivo di cui si è già fatto clic in precedenza.
 
-7. Con la stringa di connessione sul posto, sulla tastiera premere **i tasti CTRL+X** per salvare il file. Verrà chiesto di confermare digitando **Y**. Premere quindi **INVIO** per confermare. Si tornerà al terminale *normale.* 
+7. Dopo avere premuta la stringa di connessione, premere i tasti **CTRL+X** per salvare il file. Verrà chiesto di confermare digitando **Y**. Premere quindi **INVIO** per confermare. Si tornerà al normale *terminale*. 
 
-8. Dopo che questi comandi sono stati eseguiti correttamente, sarà stato installato **IoT Edge Runtime**. Dopo l'inizializzazione, il runtime verrà avviato da solo ogni volta che il dispositivo viene acceso e si siederà in background, in attesa della distribuzione dei moduli dal servizio **hub IoT.**
+8. Dopo che tutti questi comandi sono stati eseguiti correttamente, sarà stato installato **IoT Edge Runtime** di . Una volta inizializzato, il runtime si avvia da solo ogni volta che il dispositivo viene acceso e si trova in background, in attesa della distribuzione dei moduli dal servizio **hub IoT.**
 
-9.  Eseguire la riga di comando seguente per inizializzare il *runtime IoT Edge:*
+9.  Eseguire la riga di comando seguente per inizializzare *IoT Edge Runtime*:
 
     ```bash
         sudo systemctl restart iotedge
     ```
 
     > [!IMPORTANT]
-    > Se si apportano modifiche al file con estensione yaml o alla configurazione precedente, sarà necessario eseguire di nuovo la riga di riavvio precedente, all'interno del *terminale*.
+    > Se si apportano modifiche al file yaml o all'installazione precedente, sarà necessario eseguire di nuovo la riga di riavvio precedente, all'interno di *Terminale*.
 
-10. Controllare lo *stato IoT Edge Runtime* eseguendo la riga di comando seguente. Il runtime dovrebbe essere visualizzato con lo stato **attivo (in esecuzione)** in testo verde.
+10. Controllare lo *IoT Edge runtime* eseguendo la riga di comando seguente. Il runtime dovrebbe essere visualizzato con lo **stato attivo (in esecuzione)** in verde.
 
     ```bash
         sudo systemctl status iotedge
     ```
 
-11. Premere i **tasti CTRL+C** per uscire dalla pagina di stato. È possibile verificare che il *runtime IoT Edge* il pull dei contenitori correttamente digitando il comando seguente:
+11. Premere **CTRL+C** per uscire dalla pagina di stato. È possibile verificare che il *runtime IoT Edge estrae* correttamente i contenitori digitando il comando seguente:
 
     ```bash
         sudo docker ps
     ```
 
-12. Verrà visualizzato un elenco con due (2) contenitori. Si tratta dei moduli predefiniti creati automaticamente dal servizio hub IoT (edgeAgent e edgeHub). Dopo aver creato e distribuito i propri moduli, questi verranno visualizzati in questo elenco, sotto quelli predefiniti.
+12. Verrà visualizzato un elenco con due (2) contenitori. Si tratta dei moduli predefiniti creati automaticamente dal servizio hub IoT (edgeAgent ed edgeHub). Dopo aver creato e distribuito i propri moduli, questi verranno visualizzati in questo elenco, sotto quelli predefiniti.
 
-## <a name="chapter-6---install-the-extensions"></a>Capitolo 6 - Installare le estensioni
+## <a name="chapter-6---install-the-extensions"></a>Capitolo 6- Installare le estensioni
 
 > [!IMPORTANT]
-> I capitoli successivi (da 6 a 9) devono essere eseguiti nel computer Windows 10 computer.
+> I successivi capitoli (6-9) devono essere eseguiti nel computer Windows 10 macchina virtuale.
 
 1. Aprire **VS Code**.
 
-2. Fare clic sul **pulsante Estensioni** (quadrato) sulla barra sinistra VS Code, per aprire il **pannello Estensioni**.
+2. Fare clic sul **pulsante Estensioni** (quadrato) sulla barra sinistra VS Code per aprire il **pannello Estensioni**.
 
 3. Cercare e installare le estensioni seguenti (come illustrato nell'immagine seguente):
 
@@ -368,11 +368,11 @@ Dopo aver installato il software indicato in precedenza, è necessario riavviare
 
     ![Creare il contenitore](images/AzureLabs-Lab313-24.png)
 
-4. Dopo aver installato le estensioni, chiudere e ria aprire VS Code.
+4. Dopo aver installato le estensioni, chiudere e ria aprirle VS Code.
 
-5. Con VS Code ancora una volta, passare a **Visualizza**  >  **terminale integrato.**
+5. Dopo VS Code ancora una volta, passare a **Visualizza**  >  **terminale integrato.**
 
-6. Verrà ora installato **Cookiecutter**. Nel terminale eseguire il comando bash seguente:
+6. A questo punto si **installerà Cookiecutter**. Nel terminale eseguire il comando bash seguente:
 
     ```bash
         pip install --upgrade --user cookiecutter
@@ -380,54 +380,54 @@ Dopo aver installato il software indicato in precedenza, è necessario riavviare
 
     > [! HINT] In caso di problemi con questo comando: 
     >1. Riavviare VS Code e/o il computer.
-    >2. Potrebbe essere necessario passare il **terminale VS Code** a quello in uso per installare Python, ad esempio **PowerShell(soprattutto** nel caso in cui l'ambiente Python fosse già installato nel computer). Con il terminale aperto, si troverà il menu a discesa sul lato destro del terminale.
+    >2. Potrebbe essere necessario passare dal **terminale VS Code a** quello in uso per installare Python, ad esempio **PowerShell,** in particolare nel caso in cui l'ambiente Python sia già installato nel computer. Con il terminale aperto, il menu a discesa si trova sul lato destro del terminale.
      ![Creare il contenitore](images/AzureLabs-Lab313-24b.png) 
-    >3. Assicurarsi che il **percorso di** installazione di Python sia aggiunto come **Variabile di** ambiente nel computer. Cookiecutter deve far parte dello stesso percorso. Seguire questo [collegamento per altre informazioni sulle variabili di ambiente](/windows/win32/procthread/environment-variables), 
+    >3. Assicurarsi che il **percorso di** installazione di Python sia aggiunto come **variabile di** ambiente nel computer. Cookiecutter deve far parte dello stesso percorso. Seguire questo collegamento [per altre informazioni sulle variabili di ambiente](/windows/win32/procthread/environment-variables), 
 
-7. Al termine dell'installazione di **Cookiecutter,** è necessario riavviare il computer, in modo che **Cookiecutter** venga riconosciuto come comando, all'interno dell'ambiente del sistema.
+7. Al **termine dell'installazione di Cookiecutter,** è necessario riavviare il computer, in modo che **Cookiecutter** venga riconosciuto come comando, all'interno dell'ambiente del sistema.
 
-## <a name="chapter-7---create-your-container-solution"></a>Capitolo 7- Creare la soluzione contenitore
+## <a name="chapter-7---create-your-container-solution"></a>Capitolo 7: Creare la soluzione contenitore
 
-A questo punto, è necessario creare il contenitore con il modulo per il push nel Registro *Contenitori.* Dopo aver eseguito il push del contenitore, si userà il servizio *Edge dell'hub IoT* per distribuirlo nel dispositivo, che esegue il runtime *IoT Edge.*
+A questo punto, è necessario creare il contenitore con il modulo di cui eseguire il push nel Registro *Container.* Dopo aver eseguito il push del contenitore, si userà il servizio *IoT Hub Edge* per distribuirlo nel dispositivo, che esegue il *runtime IoT Edge.*
 
-1. Da VS Code fare clic **su Visualizza riquadro**  >  **comandi**.
+1. Da VS Code fare clic su **Visualizza**  >  **riquadro comandi.**
 
-2. Nel riquadro cercare ed eseguire Azure IoT **Edge: Nuova soluzione Iot Edge**.
+2. Nella tavolozza cercare ed eseguire Azure IoT **Edge: Nuova soluzione IoT Edge.**
 
 3. Passare a un percorso in cui si vuole creare la soluzione. Premere **INVIO** per accettare il percorso.
 
 4. Assegnare un nome alla soluzione. Premere **INVIO** per confermare il nome specificato.
 
-5. A questo punto verrà richiesto di scegliere il framework del modello per la soluzione. Fare clic **su Modulo Python**. Premere **INVIO** per confermare questa scelta.
+5. A questo punto verrà richiesto di scegliere il framework del modello per la soluzione. Fare clic **su Python Module (Modulo Python).** Premere **INVIO** per confermare questa scelta.
 
-6. Assegnare un nome al modulo. Premere **INVIO** per confermare il nome del modulo. Assicurarsi di prendere nota (con il nome Blocco note) del nome del modulo, perché verrà usato in un secondo momento.
+6. Assegnare un nome al modulo. Premere **INVIO** per confermare il nome del modulo. Assicurarsi di prendere nota del nome del modulo (con Blocco note) perché verrà usato in un secondo momento.
 
-7. Si noterà che nel riquadro verrà visualizzato un indirizzo predefinito di *Docker Image Repository.* Avrà un aspetto simile al seguente:
+7. Si noterà che nella tavolozza verrà visualizzato un indirizzo predefinito del repository di immagini *Docker.* L'aspetto sarà simile al seguente:
 
     **localhost:5000/-NOME DEL MODULO-**. 
 
-8. Eliminare **localhost:5000** e al suo  posto inserire l'indirizzo del **server** di accesso del Registro Contenitori, che è stato specificato durante la creazione del servizio Registro Contenitori **(** nel passaggio [8, del capitolo 2](#chapter-2---the-container-registry-service)). Premere **INVIO** per confermare l'indirizzo.
+8. Eliminare **localhost:5000** e al suo  posto inserire l'indirizzo del **server** di accesso del registro contenitori, di cui si è avuto una notata durante la creazione del servizio Registro Container **(** nel passaggio 8 del capitolo [2).](#chapter-2---the-container-registry-service) Premere **INVIO** per confermare l'indirizzo.
 
-9. A questo punto, verrà creata la soluzione contenente il modello per il modulo Python e la relativa struttura verrà visualizzata nella scheda Esplora di VS Code sul lato sinistro dello schermo. Se la **scheda Esplora** non è aperta, è possibile aprirla facendo clic sul pulsante più in alto nella barra a sinistra.
+9. A questo punto, verrà creata la soluzione contenente il modello per il modulo Python e la relativa struttura verrà visualizzata nella scheda Esplora di VS Code, sul lato sinistro della schermata. Se la **scheda Esplora** non è aperta, è possibile aprirla facendo clic sul pulsante in alto nella barra a sinistra.
 
     ![Creare il contenitore](images/AzureLabs-Lab313-25.png)
 
-10. L'ultimo passaggio per questo capitolo consiste nel fare clic e aprire il  **file con** estensione env dall'interno della scheda Esplora **e** aggiungere il nome utente e **la** password del Registro **Contenitori.** Questo file viene ignorato da Git, ma durante la compilazione del contenitore verranno impostate le credenziali per accedere al **servizio Registro Contenitori.**
+10. L'ultimo passaggio di questo capitolo consiste nel fare clic e aprire il  **file con** estensione env dalla scheda **Esplora** e aggiungere il nome utente e **la** **password** di Registro Container. Questo file viene ignorato da Git, ma durante la compilazione del contenitore, imposta le credenziali per accedere al **servizio Registro Container.**
 
     ![Creare il contenitore](images/AzureLabs-Lab313-26.png)
 
-## <a name="chapter-8---editing-your-container-solution"></a>Capitolo 8 - Modifica della soluzione contenitore
+## <a name="chapter-8---editing-your-container-solution"></a>Capitolo 8- Modifica della soluzione contenitore
 
 A questo punto si completerà la soluzione contenitore aggiornando i file seguenti:
 
-- *script <span></span> Python .py* principale.
+- *script <span></span> Python con* estensione py principale.
 - *requirements.txt*.
 - *deployment.template.jsin*.
 - *Dockerfile.amd64*
 
-Si creerà quindi la *cartella images,* usata dallo script Python per verificare la corrispondenza delle immagini con il *Visione personalizzata.* Infine, si aggiungerà il file *labels.txt,* per facilitare la lettura del modello, e il file *model.pb,* che è il modello.
+Si creerà quindi la *cartella images,* usata dallo script Python per verificare la corrispondenza delle immagini con *il modello Visione personalizzata.* Infine, si aggiungeranno il file *labels.txt,* per facilitare la lettura del modello, e il file *model.pb,* che è il modello.
 
-1. Con VS Code aperto, passare alla cartella del modulo e cercare lo script **denominato main <span></span> .py**. Fare doppio clic per aprirlo.
+1. Con VS Code aperto, passare alla cartella del modulo e cercare lo script denominato **main <span></span> .py**. Fare doppio clic per aprirlo.
 
 2. Eliminare il contenuto del file e inserire il codice seguente:
 
@@ -662,7 +662,7 @@ Si creerà quindi la *cartella images,* usata dallo script Python per verificare
         main(PROTOCOL)
     ```
 
-3.  Aprire il file denominato **requirements.txt** e sostituire il contenuto con quanto segue:
+3.  Aprire il file denominato **requirements.txt** e sostituirne il contenuto con il codice seguente:
 
     ```
     azure-iothub-device-client==1.4.0.0b3
@@ -671,20 +671,20 @@ Si creerà quindi la *cartella images,* usata dallo script Python per verificare
     pillow==5.1.0
     ```
 
-4.  Aprire il file denominato **deployment.template.jsin** e sostituire il contenuto seguendo le linee guida seguenti:
+4.  Aprire il file denominato **deployment.template.jsin** e sostituirne il contenuto seguendo le linee guida seguenti:
 
-    1. Poiché si avrà una propria struttura JSON univoca, sarà necessario modificarla manualmente (anziché copiare un esempio). Per semplificare questa operazione, usare l'immagine seguente come guida.
-    2. Le aree che avranno un aspetto diverso da quello dell'utente, ma che **NON è consigliabile modificare, sono evidenziate in giallo.**
+    1. Poiché si avrà una propria struttura JSON univoca, sarà necessario modificarla manualmente anziché copiare un esempio. Per semplificare questa operazione, usare l'immagine seguente come guida.
+    2. Le aree che avranno un aspetto diverso da quello dell'utente, ma che NON **è consigliabile modificare, sono evidenziate in giallo.**
     3. **Le sezioni da eliminare sono evidenziate in rosso.**
-    4. Prestare attenzione a eliminare le parentesi graffe corrette e rimuovere anche le virgole.
+    4. Prestare attenzione a eliminare le parentesi quadre corrette e rimuovere anche le virgole.
 
         ![Creare il contenitore](images/AzureLabs-Lab313-27.png)
 
-    5. Il codice JSON completato dovrebbe essere simile all'immagine seguente (tuttavia, con le differenze univoche: *username/password/module name/module references):*
+    5. Il codice JSON completato dovrebbe essere simile all'immagine seguente (tuttavia, con le differenze univoche: *nome utente/password/nome modulo/riferimenti al modulo):*
 
         ![Creare il contenitore](images/AzureLabs-Lab313-28.png)
 
-5.  Aprire il file **denominato Dockerfile.amd64** e sostituire il contenuto con quanto segue:
+5.  Aprire il file denominato **Dockerfile.amd64** e sostituirne il contenuto con il codice seguente:
 
     ```
     FROM ubuntu:xenial
@@ -731,56 +731,56 @@ Si creerà quindi la *cartella images,* usata dallo script Python per verificare
 
     ```
 
-6.  Fare clic con il pulsante destro del mouse sulla cartella sotto i moduli **(avrà** il nome specificato in precedenza; nell'esempio più in basso, si chiama *pythonmodule*) e fare clic su **Nuova cartella**. Assegnare alla cartella il **nome images**.
+6.  Fare clic con il pulsante destro del mouse sulla cartella sotto i moduli **(con** il nome specificato in precedenza; nell'esempio più in basso si chiama *pythonmodule)* e fare clic su **Nuova cartella.** Assegnare alla cartella il **nome images**.
 
 7.  All'interno della cartella aggiungere alcune immagini contenenti mouse o tastiera. Queste saranno le immagini che verranno analizzate dal modello Tensorflow.
 
     > [!WARNING]
-    > Se si usa un modello personalizzato, sarà necessario modificarlo in modo da riflettere i dati dei propri modelli.
+    > Se si usa un modello personalizzato, sarà necessario modificarlo in modo da riflettere i propri dati dei modelli.
 
-8.  Sarà ora necessario recuperare i **filelabels.txt** **e model.pb** dalla cartella del modello, scaricata in precedenza (o creata dal proprio **Visione personalizzata Service),** nel capitolo [1.](#chapter-1---retrieve-the-custom-vision-model) Dopo aver creato i file, posizionarli all'interno della soluzione, insieme agli altri file. Il risultato finale dovrebbe essere simile all'immagine seguente:
+8.  Sarà ora necessario recuperare i **filelabels.txt** e **model.pb** dalla cartella del modello, scaricata in precedenza (o creata dal servizio **Visione personalizzata),** nel capitolo [1.](#chapter-1---retrieve-the-custom-vision-model) Dopo aver creato i file, posizionarli all'interno della soluzione, insieme agli altri file. Il risultato finale dovrebbe essere simile all'immagine seguente:
 
     ![Creare il contenitore](images/AzureLabs-Lab313-29.png)
 
-## <a name="chapter-9---package-the-solution-as-a-container"></a>Capitolo 9 : Creare un pacchetto della soluzione come contenitore
+## <a name="chapter-9---package-the-solution-as-a-container"></a>Capitolo 9: Creare un pacchetto della soluzione come contenitore
 
-1.  È ora possibile "creare un pacchetto" dei file come contenitore ed eseguire il push nel **Registro Azure Container**. In VS Code aprire il *terminale* integrato **(Visualizza** terminale integrato o CTRL) e usare la riga seguente per accedere a Docker (sostituire i valori del comando con le credenziali del  >   Registro Azure Container  + **\`** **(ACR)**): 
+1.  A questo punto è possibile "creare un pacchetto" dei file come contenitore ed eseguire il push nel **Registro Azure Container**. In VS Code aprire il *terminale* integrato **(Visualizza** terminale integrato o CTRL) e usare la riga seguente per accedere a  >    + **\`** **Docker** (sostituire i valori del comando con le credenziali del Registro Azure Container ):
 
     ```bash
         docker login -u <ACR username> -p <ACR password> <ACR login server>
     ```
 
-2. Fare clic con il pulsante destro del **mousedeployment.template.jsfile in** e scegliere Compila IoT Edge **soluzione**. Questo processo di compilazione richiede molto tempo (a seconda del dispositivo), quindi prepararsi ad attendere. Al termine del processo di compilazione, verrà **creatodeployment.jsfile** all'interno di una nuova cartella denominata **config**.
+2. Fare clic con il pulsante destro del **mousedeployment.template.jsfile in** e scegliere Compila IoT Edge **soluzione**. Questo processo di compilazione richiede molto tempo (a seconda del dispositivo), quindi è necessario prepararsi ad attendere. Al termine del processo di compilazione, **verrà creatodeployment.jsfile** all'interno di una nuova cartella denominata **config**.
 
     ![creare la distribuzione](images/AzureLabs-Lab313-30.png)
 
-3. Aprire di **nuovo il riquadro comandi** e cercare **Azure: Accedi.** Seguire le istruzioni usando le credenziali dell'account Azure. VS Code l'opzione Copia e apri *,* che copierà il codice del dispositivo che sarà presto necessario e aprirà il Web browser predefinito. Quando richiesto, incollare il codice del dispositivo per autenticare il computer.
+3. Aprire di **nuovo il riquadro** comandi e cercare **Azure: Accedi.** Seguire le istruzioni usando le credenziali dell'account Azure. VS Code con l'opzione Copia e *apri,* che copierà il codice del dispositivo che sarà necessario a breve e aprirà il Web browser predefinito. Quando richiesto, incollare il codice del dispositivo per autenticare il computer.
 
     ![copiare e aprire](images/AzureLabs-Lab313-31.png)
 
-4. Dopo l'accesso si noterà, nella  parte inferiore del pannello Esplora, una nuova sezione denominata **Azure IoT hub.** Fare clic su questa sezione per espanderla.
+4. Dopo l'accesso, nella parte inferiore  del pannello Esplora si noterà una nuova sezione denominata **Azure IoT Hub.** Fare clic su questa sezione per espanderla.
 
     ![dispositivo perimetrale](images/AzureLabs-Lab313-32.png)
 
-5. Se il dispositivo non è disponibile, è necessario fare clic con il pulsante destro del mouse su Dispositivi *hub* Azure IoT e quindi scegliere Imposta stringa di **connessione dell'hub IoT**. Si vedrà quindi che **il** riquadro comandi (nella parte superiore della VS Code), richiederà di immettere la stringa *di connessione*. Si tratta della *stringa di* connessione specificata alla fine del [capitolo 3.](#chapter-3---the-iot-hub-service) Premere **INVIO** dopo aver copiato la stringa in .    
+5. Se il dispositivo non è disponibile, è necessario fare clic con il pulsante destro del mouse su Dispositivi *hub* Azure IoT e quindi scegliere Imposta stringa di **connessione hub IoT.** Si noti quindi che il **riquadro** comandi (nella parte superiore di VS Code), richiederà di immettere la stringa *di connessione*. Si tratta della *stringa di* connessione di cui si è stati notati alla fine del [capitolo 3.](#chapter-3---the-iot-hub-service) Premere **INVIO** dopo aver copiato la stringa.    
 
-6. Il dispositivo dovrebbe essere caricato e visualizzato. Fare clic con il pulsante destro del mouse sul nome del dispositivo e quindi scegliere **Crea distribuzione per dispositivo singolo**.
+6. Il dispositivo dovrebbe essere caricato e visualizzato. Fare clic con il pulsante destro del mouse sul nome del dispositivo e quindi scegliere **Crea distribuzione per dispositivo singolo.**
 
     ![creare la distribuzione](images/AzureLabs-Lab313-33b.png)
 
-7. Verrà visualizzato un *Esplora file,* in cui è possibile passare alla cartella **config** e quindi selezionare ildeployment.js **nel** file. Con il file selezionato, fare clic sul **pulsante Seleziona manifesto distribuzione Edge.**
+7. Verrà visualizzato un *prompt Esplora file,* in cui è possibile passare alla cartella **config** e quindi selezionare ildeployment.js **nel** file. Con il file selezionato, fare clic sul **pulsante Select Edge Deployment Manifest (Seleziona manifesto distribuzione Edge).**
 
     ![creare la distribuzione](images/AzureLabs-Lab313-34.png)
 
-8. A questo punto è stato fornito al servizio **hub IoT** il manifesto per distribuire il contenitore, come modulo, dal **Registro Azure Container ,** distribuendo in modo efficace il contenitore nel dispositivo.
+8. A questo punto è stato fornito al servizio hub **IoT** il manifesto per distribuire il contenitore, come modulo, dal **Registro Azure Container ,** distribuerlo in modo efficace nel dispositivo.
 
-9. Per visualizzare i messaggi inviati dal dispositivo all'hub IoT, fare di nuovo clic con il pulsante destro del mouse sul nome del dispositivo nella sezione Dispositivi **dell'hub Azure IoT** nel pannello **Esplora** risorse e fare clic su Avvia monitoraggio **messaggio D2C**. I messaggi inviati dal dispositivo dovrebbero essere visualizzati nel terminale di Visual Studio. Sii paziente, poiché questa operazione potrebbe richiedere del tempo. Vedere il capitolo successivo per il debug e verificare se la distribuzione ha avuto esito positivo.
+9. Per visualizzare i messaggi inviati dal dispositivo all'hub IoT, fare di nuovo clic con il pulsante destro del mouse sul nome del dispositivo nella sezione Azure IoT Hub Devices (Dispositivi hub **di Azure IoT)** nel pannello **Explorer** e fare clic su Start Monitoring D2C Message (Avvia monitoraggio **messaggio D2C).** I messaggi inviati dal dispositivo verranno visualizzati nel terminale di Visual Studio. Sii paziente, poiché questa operazione potrebbe richiedere del tempo. Vedere il capitolo successivo per il debug e verificare se la distribuzione è riuscita.
 
-Questo modulo ora scorre le immagini nella cartella **images** e le analizza, con ogni iterazione. Questa è ovviamente solo una dimostrazione di come usare il modello di Machine Learning di base in un ambiente IoT Edge dispositivo. 
+Questo modulo ora scorrerà le immagini nella cartella **images** e le analerà, con ogni iterazione. Questa è ovviamente solo una dimostrazione di come usare il modello di Machine Learning di base in un ambiente IoT Edge dispositivo. 
 
-Per espandere la funzionalità di questo esempio, è possibile procedere in diversi modi. Un modo potrebbe essere includere codice nel contenitore, che acquisisce foto da una webcam connessa al dispositivo e salva le immagini nella cartella images. 
+Per espandere la funzionalità di questo esempio, è possibile procedere in diversi modi. Un modo potrebbe essere includere codice nel contenitore, che acquisisce le foto da una webcam connessa al dispositivo e salva le immagini nella cartella images. 
 
-Un altro modo potrebbe essere la copia delle immagini dal dispositivo IoT nel contenitore. Un modo pratico per farlo è eseguire il comando seguente nel terminale del dispositivo IoT(ad esempio, una piccola app potrebbe eseguire il processo, se si vuole automatizzare il processo). È possibile testare questo comando eseguendolo manualmente dal percorso della cartella in cui sono archiviati i file:
+Un altro modo potrebbe essere la copia delle immagini dal dispositivo IoT nel contenitore. Un modo pratico per eseguire questa operazione è eseguire il comando seguente nel terminale del dispositivo IoT(ad esempio, una piccola app potrebbe eseguire il processo, se si vuole automatizzare il processo). È possibile testare questo comando eseguendolo manualmente dal percorso della cartella in cui sono archiviati i file:
 
 ```bash
     sudo docker cp <filename> <modulename>:/app/images/<a name of your choice>
@@ -788,9 +788,9 @@ Un altro modo potrebbe essere la copia delle immagini dal dispositivo IoT nel co
 
 ## <a name="chapter-10---debugging-the-iot-edge-runtime"></a>Capitolo 10 - Debug del runtime IoT Edge runtime
 
-Di seguito è riportato un elenco di righe di comando e suggerimenti per monitorare ed eseguire il debug dell'attività di messaggistica di *IoT Edge Runtime* dal dispositivo **Ubuntu.** 
+Di seguito è riportato un elenco di righe di comando e suggerimenti che consentono di monitorare ed eseguire il debug dell'attività di messaggistica di *IoT Edge Runtime* dal dispositivo **Ubuntu.** 
 
-- Controllare lo *stato IoT Edge Runtime* eseguendo la riga di comando seguente:
+- Controllare lo *stato IoT Edge runtime* eseguendo la riga di comando seguente:
 
     ```bash
         sudo systemctl status iotedge
@@ -812,7 +812,7 @@ Di seguito è riportato un elenco di righe di comando e suggerimenti per monitor
     ```
 
     > [!NOTE]
-    > Quanto sopra è un buon modo per verificare se il modulo è stato distribuito correttamente, come verrà visualizzato nell'elenco. In caso **contrario, verranno visualizzati** solo *edgeHub* *e edgeAgent.*
+    > Il codice precedente è un buon metodo per verificare se il modulo è stato distribuito correttamente, perché verrà visualizzato nell'elenco. In caso **contrario, verranno** visualizzati solo *edgeHub* *e edgeAgent.*
 
 - Per visualizzare i log del codice di un contenitore, eseguire la riga di comando seguente:
 
@@ -820,7 +820,7 @@ Di seguito è riportato un elenco di righe di comando e suggerimenti per monitor
         journalctl -u iotedge
     ```
 
-**Comandi utili per gestire il runtime di IoT Edge:**
+**Comandi utili per gestire il IoT Edge runtime:**
 
 -  Per eliminare tutti i contenitori nell'host:
 
@@ -828,25 +828,25 @@ Di seguito è riportato un elenco di righe di comando e suggerimenti per monitor
         sudo docker rm -f $(sudo docker ps -aq)
     ```
 
--  Per arrestare il *runtime IoT Edge:*
+-  Per arrestare il *IoT Edge runtime* di :
 
     ```bash
         sudo systemctl stop iotedge
     ```
 
-## <a name="chapter-11---create-table-service"></a>Capitolo 11 - Creare il servizio tabelle 
+## <a name="chapter-11---create-table-service"></a>Capitolo 11 - Creare un servizio tabelle 
 
-Tornare al portale di Azure, in cui si creerà un servizio Tabelle di Azure, creando una Archiviazione risorsa.
+Tornare al portale di Azure, in cui si creerà un servizio tabelle di Azure, creando una risorsa Archiviazione servizio.
 
 1. Se non è già stato eseguito l'accesso, accedere al [portale di Azure.](https://portal.azure.com)
 
-2. Dopo aver eseguito l'accesso, fare clic su Crea una risorsa nell'angolo  in alto Archiviazione sinistra e cercare **un account** e premere INVIO per avviare la ricerca.
+2. Dopo aver eseguito l'accesso, fare clic su Crea una risorsa , nell'angolo  in alto a sinistra, cercare **l'account Archiviazione** e premere INVIO per avviare la ricerca.
 
-3. Una volta visualizzato, fare clic su **Archiviazione account: BLOB, file, tabella, coda** dall'elenco.
+3. Una volta visualizzato, fare clic su **Archiviazione account: BLOB, file, tabelle, code** dall'elenco.
 
     ![cercare l'account di archiviazione](images/AzureLabs-Lab313-35.png)
 
-4. La nuova pagina fornirà una descrizione del servizio Archiviazione **account.** Nella parte inferiore sinistra del prompt fare clic sul **pulsante Crea** per creare un'istanza del servizio.
+4. La nuova pagina fornirà una descrizione del servizio **dell Archiviazione account** utente. Nella parte inferiore sinistra del prompt fare clic sul **pulsante Crea** per creare un'istanza del servizio.
 
     ![creare un'istanza di archiviazione](images/AzureLabs-Lab313-36.png)
 
@@ -856,11 +856,11 @@ Tornare al portale di Azure, in cui si creerà un servizio Tabelle di Azure, cre
 
     2. Per **Modello di distribuzione** fare clic su Gestione **risorse**.
 
-    3. Per **Tipo di account,** usando il menu a discesa, fare **clic Archiviazione (utilizzo generico v1).**
+    3. Per **Tipo di account**, nel menu a discesa fare clic su Archiviazione **(utilizzo generico v1).**
 
-    4. Fare clic su un percorso **appropriato.**
+    4. Fare clic su un **percorso appropriato.**
     
-    5. Per il menu **a** discesa Replica fare clic su Archiviazione con ridondanza geografica e accesso in lettura **(RA-GRS).**
+    5. Per il menu **a** discesa Replica fare clic su Archiviazione con ridondanza geografica e accesso in **lettura (RA-GRS).**
 
     6. Per **Prestazioni** fare clic su **Standard.**
 
@@ -868,51 +868,51 @@ Tornare al portale di Azure, in cui si creerà un servizio Tabelle di Azure, cre
 
     8. Nel menu **a discesa Sottoscrizione** fare clic su una sottoscrizione appropriata.
 
-    9. Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. È consigliabile mantenere tutti i servizi di Azure associati a un singolo progetto,ad esempio questi corsi, in un gruppo di risorse comune.
+    9. Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. È consigliabile mantenere tutti i servizi di Azure associati a un singolo progetto (ad esempio, questi corsi) in un gruppo di risorse comune.
 
-        > Per altre informazioni sui gruppi di risorse di Azure, seguire questo collegamento su [come gestire un gruppo di risorse.](/azure/azure-resource-manager/resource-group-portal)
+        > Per altre informazioni sui gruppi di risorse di Azure, fare clic su questo collegamento per [gestire un gruppo di risorse.](/azure/azure-resource-manager/resource-group-portal)
 
-    10. Se **si tratta di** un'opzione, lasciare Disabilitato reti virtuali. 
+    10. Lasciare **Reti virtuali** su **Disabilitato,** se questa è un'opzione per l'utente.
 
     11. Fare clic su **Crea**.
 
         ![Compilare i dettagli di archiviazione](images/AzureLabs-Lab313-37.png)
 
-6. Dopo aver fatto clic su **Crea**, sarà necessario attendere la creazione del servizio, l'operazione potrebbe richiedere un minuto.
+6. Dopo aver fatto clic su **Crea**, sarà necessario attendere la creazione del servizio. L'operazione potrebbe richiedere un minuto.
 
 7. Una volta creata l'istanza del servizio, nel portale verrà visualizzata una notifica. Fare clic sulle notifiche per esplorare la nuova istanza del servizio.
 
-    ![nuova notifica di archiviazione](images/AzureLabs-Lab313-38.png)
+    ![notifica della nuova archiviazione](images/AzureLabs-Lab313-38.png)
 
-8. Fare clic **sul pulsante Vai** alla risorsa nella notifica e verrà visualizzata la pagina di panoramica della nuova istanza Archiviazione Service.
+8. Fare clic **sul pulsante Vai** alla risorsa nella notifica per passare alla pagina di panoramica della nuova istanza Archiviazione Service.
 
-    ![passare alla risorsa](images/AzureLabs-Lab313-39.png)
+    ![Vai alla risorsa](images/AzureLabs-Lab313-39.png)
 
 9. Nella pagina di panoramica fare clic su Tabelle sul lato **destro.**
     
     ![tabelle](images/AzureLabs-Lab313-40.png)
 
-10. Il pannello a destra cambierà per visualizzare le **informazioni del servizio** tabelle, in cui è necessario aggiungere una nuova tabella. A tale scopo, fare **clic sul pulsante +** Tabella nell'angolo superiore sinistro.
+10. Il pannello a destra verrà modificato per visualizzare le **informazioni del** servizio tabelle, in cui è necessario aggiungere una nuova tabella. A tale scopo, fare **clic sul pulsante +** Tabella nell'angolo superiore sinistro.
 
     ![aprire tabelle](images/AzureLabs-Lab313-41.png)
 
-11. Verrà visualizzata una nuova pagina in cui è necessario immettere un nome **di tabella**. Questo è il nome che verrà utilizzato per fare riferimento ai dati nell'applicazione nei capitoli successivi (creazione di app per le funzioni e Power BI). Inserire **IoTMessages** come nome (è possibile scegliere il proprio nome, ricordarlo quando viene usato più avanti in questo documento) e fare clic su **OK.** 
+11. Verrà visualizzata una nuova pagina, in cui è necessario immettere un nome **di tabella**. Si tratta del nome che verrà utilizzato per fare riferimento ai dati nell'applicazione nei capitoli successivi (creazione di app per le funzioni e Power BI). Inserire **IoTMessages** come nome (è possibile sceglierne uno personalizzato, ricordarlo quando verrà usato più avanti in questo documento) e fare clic su **OK.** 
 
-12. Dopo aver creato la nuova tabella, sarà possibile visualizzarla nella pagina **Servizio** tabelle (in basso).
+12. Dopo aver creato la nuova tabella, sarà possibile visualizzare la tabella nella pagina **Servizio** tabelle (nella parte inferiore).
 
     ![nuova tabella creata](images/AzureLabs-Lab313-42.png)  
 
-13. Fare clic  su Chiavi di accesso e prendere una copia del nome **dell'account Archiviazione** e della chiave **(usando** il Blocco note), questi valori verranno utilizzati più avanti in questo corso, durante la creazione dell'app per le funzioni di **Azure.**
+13. A questo  punto fare clic su Chiavi di accesso e prendere una copia del nome **dell'account Archiviazione** e della chiave **(usando** il Blocco note). Questi valori verranno utilizzati più avanti in questo corso, durante la creazione dell'app per le funzioni di **Azure.**
 
     ![nuova tabella creata](images/AzureLabs-Lab313-43.png) 
 
-14. Usando di nuovo il pannello a  sinistra, scorrere fino alla sezione Servizio tabelle e fare clic su Tabelle **(o** Sfoglia tabelle **nei** portali più nuovi) e prendere una copia **dell'URL** tabella (usando il Blocco note). Questo valore verrà utilizzato più avanti in questo corso, quando si collega la tabella **all'Power BI app.**
+14. Usando di nuovo il pannello a sinistra, scorrere fino alla sezione *Table Service* (Servizio tabelle) e fare clic su **Tables** (Tabelle) (o **Browse Tables**(Sfoglia tabelle) nei portali più nuovi) ed eseguire una copia dell'URL della tabella (usando il Blocco note).  Questo valore verrà utilizzato più avanti in questo corso, quando si collega la tabella **all'applicazione Power BI** dati.
 
     ![nuova tabella creata](images/AzureLabs-Lab313-44.png)
 
 ## <a name="chapter-12---completing-the-azure-table"></a>Capitolo 12 - Completamento della tabella di Azure
 
-Dopo la configurazione **dell'account** di archiviazione del servizio tabelle, è possibile aggiungevi dati, che verranno usati per archiviare e recuperare informazioni. La modifica delle tabelle può essere eseguita **tramite** Visual Studio .
+Dopo la **configurazione dell'account** di archiviazione del servizio tabelle, è possibile aggiungevi dati, che verranno usati per archiviare e recuperare informazioni. La modifica delle tabelle può essere eseguita tramite **Visual Studio**.
 
 1. Aprire **Visual Studio** **(non Visual Studio Code).**
 
@@ -920,12 +920,12 @@ Dopo la configurazione **dell'account** di archiviazione del servizio tabelle, �
 
     ![aprire Cloud Explorer](images/AzureLabs-Lab313-45.png)
 
-3. Il **Cloud Explorer** si aprirà come elemento ancorato(sii paziente, poiché il caricamento potrebbe richiedere tempo).
+3. Il **Cloud Explorer** verrà aperto come elemento ancorato (sii paziente, poiché il caricamento può richiedere tempo).
 
     > [!WARNING] 
     > Se la sottoscrizione usata per creare gli account *Archiviazione non* è visibile, assicurarsi di disporre di: 
     > - Accedere allo stesso account usato per il portale di Azure.
-    > - Selezionare la sottoscrizione dalla pagina Gestione account (potrebbe essere necessario applicare un filtro dalle impostazioni dell'account):  
+    > - Selezionare la sottoscrizione nella pagina Gestione account (potrebbe essere necessario applicare un filtro dalle impostazioni dell'account):  
     >
     >   ![trovare la sottoscrizione](images/AzureLabs-Lab313-46.png)
 
@@ -933,25 +933,25 @@ Dopo la configurazione **dell'account** di archiviazione del servizio tabelle, �
 
     ![aprire gli account di archiviazione](images/AzureLabs-Lab313-47.png)
 
-5. Dopo l'espansione, **l'account** Archiviazione creato dovrebbe essere disponibile. Fare clic sulla freccia a sinistra dell'archiviazione e  quindi, una volta espansa, trovare  Tabelle e fare clic sulla freccia accanto a tale tabella per visualizzare la tabella creata nell'ultimo capitolo. Fare doppio clic sulla **tabella**.
+5. Dopo l'espansione, **l'account Archiviazione dovrebbe** essere disponibile. Fare clic sulla freccia a sinistra dello spazio di  archiviazione e quindi, una volta espansa, trovare Tabelle e fare clic sulla freccia accanto a tale tabella per visualizzare la tabella creata nell'ultimo capitolo.  Fare doppio clic sulla **tabella**.
 
-6. La tabella verrà aperta al centro della finestra Visual Studio tabella. Fare clic sull'icona della tabella **+** con il segno più (+).
+6. La tabella verrà aperta al centro della finestra Visual Studio finestra. Fare clic sull'icona della tabella **+** con il segno più.
 
     ![aggiungere una nuova tabella](images/AzureLabs-Lab313-48.png)
 
-7. Verrà visualizzata una finestra in cui viene richiesto di *aggiungere l'entità*. Si creerà una sola entità, anche se avrà tre proprietà. Si noterà che sono già disponibili *PartitionKey* e *RowKey,* che vengono usati dalla tabella per trovare i dati. 
+7. Verrà visualizzata una finestra in cui viene richiesto di aggiungere *l'entità*. Si creerà una sola entità, anche se avrà tre proprietà. Si noterà che *PartitionKey* e *RowKey* sono già disponibili, in quanto vengono usati dalla tabella per trovare i dati. 
 
     ![partizione e chiave di riga](images/AzureLabs-Lab313-49.png)
 
 8. Aggiornare i valori seguenti:
 
-    - Nome: **PartitionKey,** Valore: **PK_IoTMessages** 
+    - Nome: **PartitionKey**, Valore: **PK_IoTMessages** 
 
-    - Nome: **RowKey,** Valore: **RK_1_IoTMessages** 
+    - Nome: **RowKey**, Valore: **RK_1_IoTMessages** 
 
 9. Fare quindi clic **su Aggiungi proprietà** (in basso a sinistra nella finestra *Aggiungi* entità) e aggiungere la proprietà seguente:
 
-    - **MessageContent**, come *stringa,* lascia vuoto Il valore.
+    - **MessageContent,** come *stringa,* lascia vuoto Il valore.
 
 10. La tabella deve corrispondere a quella nell'immagine seguente:
 
@@ -968,11 +968,11 @@ Dopo la configurazione **dell'account** di archiviazione del servizio tabelle, �
 
 Prima di tutto, è necessario creare un file che consenta alla funzione di Azure di caricare le librerie necessarie.
 
-1.  Aprire **Blocco note** (premere il tasto *Windows e* digitare *notepad*).
+1.  Aprire **Blocco note** (premere la Windows *chiave* e *digitare* notepad ).
 
     ![aprire blocco note](images/AzureLabs-Lab313-51.png)
 
-2.  Con Blocco note aperta, inserire al suo interno la struttura JSON seguente. Dopo aver eseguito questa operazione, salvarlo sul desktop **comeproject.jsin**. Questo file definisce le librerie che verranno usate dalla funzione. Se è stato usato NuGet, avrà un aspetto familiare.
+2.  Con Blocco note aperta, inserire al suo interno la struttura JSON seguente. Dopo aver eseguito questa operazione, salvarlo sul desktop come **project.jsin**. Questo file definisce le librerie che verranno usate dalla funzione. Se è stato usato NuGet, avrà un aspetto familiare.
     
     > [!WARNING]
     > È importante che la denominazione sia corretta. assicurarsi che **NON abbia un'.txt** file. Per informazioni di riferimento, vedere di seguito:
@@ -1003,17 +1003,17 @@ Prima di tutto, è necessario creare un file che consenta alla funzione di Azure
 
 6.  Dopo aver fatto clic su **Crea,** compilare quanto segue:
 
-    1. In **Nome app** inserire il nome desiderato per questa istanza del servizio.
+    1. Per **Nome app** inserire il nome desiderato per questa istanza del servizio.
 
     2. Selezionare una **Sottoscrizione**.
 
-    3. Selezionare il piano tariffario appropriato, se questa è la prima volta che si crea un servizio **app** per le funzioni, dovrebbe essere disponibile un piano gratuito.
+    3. Selezionare il piano tariffario appropriato, se questa è la prima volta che si crea un servizio **app** per le funzioni, sarà disponibile un piano gratuito.
 
     4. Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. È consigliabile mantenere tutti i servizi di Azure associati a un singolo progetto,ad esempio questi corsi, in un gruppo di risorse comune.
 
         > Per altre informazioni sui gruppi di risorse di Azure, seguire questo collegamento su [come gestire un gruppo di risorse.](/azure/azure-resource-manager/resource-group-portal)
 
-    5. Per **Sistema operativo** fare clic Windows, in quanto si tratta della piattaforma prevista.
+    5. Per **Sistema operativo**, fare clic Windows, in quanto si tratta della piattaforma prevista.
 
     6. Selezionare un **piano di hosting** (questa esercitazione usa un piano a **consumo**).
 
@@ -1021,7 +1021,7 @@ Prima di tutto, è necessario creare un file che consenta alla funzione di Azure
 
     8. Per la **Archiviazione,** è necessario selezionare il servizio Archiviazione **creato nel passaggio precedente.**
 
-    9. L'applicazione *non* è Insights in questa app, quindi è possibile lasciarla **disattivata.**
+    9. L'applicazione *non* sarà Insights in questa app, quindi è possibile lasciarla **disattivata.**
 
     10. Fare clic su **Crea**.
 
@@ -1043,7 +1043,7 @@ Prima di tutto, è necessario creare un file che consenta alla funzione di Azure
 
     ![aggiungere una nuova funzione](images/AzureLabs-Lab313-58.png)
 
-12. Nel pannello centrale verrà visualizzata la **finestra Creazione** funzione. Scorrere ulteriormente verso il basso e fare clic su **Funzione personalizzata**.
+12. Nel pannello centrale verrà visualizzata **la finestra Creazione** funzione. Scorrere ulteriormente verso il basso e fare clic su **Funzione personalizzata**.
 
     ![funzione personalizzata](images/AzureLabs-Lab313-59.png)
 
@@ -1136,8 +1136,8 @@ Prima di tutto, è necessario creare un file che consenta alla funzione di Azure
 
     - **tableName**, con il nome della **tabella** che si trova nell'Archiviazione **account**.
     - **tableURL** con l'URL della **tabella** che si trova nell'Archiviazione **account**.
-    - **storageAccountName**, con il nome del valore corrispondente al nome dell'Archiviazione **Account.**
-    - **storageAccountKey**, con la chiave ottenuta nel servizio Archiviazione creato in precedenza.
+    - **storageAccountName**, con il nome del valore corrispondente al nome **dell'Archiviazione Account.**
+    - **storageAccountKey** con la chiave ottenuta nel servizio Archiviazione creato in precedenza.
 
     ![funzione personalizzata](images/AzureLabs-Lab313-65.png)
 
@@ -1149,7 +1149,7 @@ Prima di tutto, è necessario creare un file che consenta alla funzione di Azure
 
 22. Un pannello scorrerà da destra. In tale pannello fare clic su **Upload** e verrà visualizzato un *Browser* di file.
 
-23. Passare a e fare clic sulproject.js **file** creato **in** precedenza in Blocco note e quindi fare clic sul **pulsante** Apri. Questo file definisce le librerie che verranno usate dalla funzione.
+23. Individuare e fare clic sulproject.js **sul** file creato **in** precedenza Blocco note e quindi fare clic sul **pulsante** Apri. Questo file definisce le librerie che verranno usate dalla funzione.
 
     ![funzione personalizzata](images/AzureLabs-Lab313-67.png)
 
@@ -1178,9 +1178,9 @@ Con il servizio tabelle e l'app per le funzioni, i messaggi del dispositivo Ubun
 ![visualizzare i dati](images/AzureLabs-Lab313-72.png)
 
 
-## <a name="chapter-15---power-bi-setup"></a>Capitolo 15 - Power BI installazione
+## <a name="chapter-15---power-bi-setup"></a>Capitolo 15 - Power BI configurazione
 
-Per visualizzare i dati dal dispositivo IOT, verrà Power BI **(versione** desktop), per raccogliere i dati dal *servizio* tabelle appena creato. La *HoloLens* di Power BI userà quindi i dati per visualizzare il risultato.
+Per visualizzare i dati dal dispositivo IOT, verrà Power BI **(versione** desktop) per raccogliere i dati dal *servizio* tabelle appena creato. La *HoloLens* di Power BI userà quindi i dati per visualizzare il risultato.
 
 1.  Aprire il Microsoft Store in Windows 10 e cercare **Power BI Desktop**.
 
@@ -1188,21 +1188,21 @@ Per visualizzare i dati dal dispositivo IOT, verrà Power BI **(versione** deskt
 
 2.  Scaricare l'applicazione. Al termine del download, aprirlo.
 
-3.  Accedere a *Power BI* con **l'account Microsoft 365.** È possibile che si venga reindirizzati a un browser per l'iscrizione. Dopo aver effettuato l'iscrizione, tornare all'app Power BI ed eseguire di nuovo l'accesso.
+3.  Accedere a *Power BI* con il proprio **account Microsoft 365 .** È possibile che si venga reindirizzati a un browser per l'iscrizione. Dopo aver effettuato l'iscrizione, tornare all'app Power BI ed eseguire di nuovo l'accesso.
 
-4.  Fare clic **su Ottieni dati** e quindi su **Altro.**
+4.  Fare clic **su Ottieni dati** e quindi su **Altro...**.
 
     ![Power BI](images/AzureLabs-Lab313-74.png)
 
-5.  Fare **clic su Azure**, Tabella di Azure **Archiviazione**, quindi fare clic su **Connessione**.
+5.  Fare **clic su Azure,** **Tabella Archiviazione** Azure e quindi fare clic su **Connessione**.
 
     ![Power BI](images/AzureLabs-Lab313-75.png)
 
-6.  Verrà richiesto di inserire **l'URL** della tabella raccolto in precedenza ( nel passaggio 13 del capitolo [11](#chapter-11---create-table-service)) durante la creazione del servizio tabelle. Dopo aver inserito l'URL, eliminare la parte del percorso che fa riferimento alla "sottocartella" tabella (in questo corso IoTMessages). Il risultato finale dovrebbe essere come illustrato nell'immagine seguente. Fare quindi clic su **OK.**
+6.  Verrà richiesto di inserire **l'URL** della tabella raccolto in precedenza ( nel passaggio 13 del capitolo [11](#chapter-11---create-table-service)) durante la creazione del servizio tabelle. Dopo aver inserito l'URL, eliminare la parte del percorso che fa riferimento alla "sottocartella" della tabella (che in questo corso era IoTMessages). Il risultato finale dovrebbe essere come illustrato nell'immagine seguente. Fare quindi clic su **OK.**
 
     ![Power BI](images/AzureLabs-Lab313-76.png)
 
-7.  Verrà richiesto di inserire la chiave **Archiviazione** specificata ( nel passaggio 11 del capitolo [11)](#chapter-11---create-table-service)in precedenza durante la creazione dell'Archiviazione. Fare quindi clic **su Connessione**.
+7.  Verrà richiesto di inserire la chiave **Archiviazione** specificata ( nel passaggio 11 del capitolo [11](#chapter-11---create-table-service)) in precedenza durante la creazione della tabella Archiviazione. Fare quindi clic **su Connessione**.
 
     ![Power BI](images/AzureLabs-Lab313-77.png)  
 
@@ -1226,7 +1226,7 @@ Per visualizzare i dati dal dispositivo IOT, verrà Power BI **(versione** deskt
 
     ![Power BI](images/AzureLabs-Lab313-82.png)
 
-13. Al termine del caricamento della query, all'interno del pannello **CAMPI,** sul lato destro della schermata, selezionare le caselle corrispondenti ai parametri **Name** e **Value** per visualizzare il contenuto della colonna **MessageContent.**
+13. Al termine del caricamento della query, nel pannello **CAMPI,** sul lato destro della schermata, selezionare le caselle corrispondenti ai parametri **Name** e **Value** per visualizzare il contenuto della colonna **MessageContent.**
 
     ![Power BI](images/AzureLabs-Lab313-83.png)
 

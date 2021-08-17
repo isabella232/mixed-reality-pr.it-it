@@ -6,21 +6,21 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, Comunicazione remota, Holographic Remoting, visore per realtà mista, visore windows mixed reality, visore per realtà virtuale, NuGet
-ms.openlocfilehash: 6cf44bd031aec4b475d7496a999a3c7d4d40cae7cc921ff39cfe61698f3dd532
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 3fd210db1b179cbceff057e25bf451be0e7ca843
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115212069"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184592"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-openxr-api"></a>Scrittura di un'app remota Holographic Remoting con l'API OpenXR
 
 >[!IMPORTANT]
 >Questo documento descrive la creazione di un'applicazione remota per HoloLens 2 e Windows Mixed Reality visori con [l'API OpenXR](../native/openxr.md). Le applicazioni remote **per HoloLens (prima generazione)** devono usare NuGet pacchetto **1.x.x**. Ciò implica che le applicazioni remote scritte per HoloLens 2 non sono compatibili con HoloLens 1 e viceversa. La documentazione per HoloLens 1 è disponibile [qui.](add-holographic-remoting.md)
 
-Le app holographic Remoting possono trasmettere contenuti sottoposti a rendering remoto HoloLens 2 e Windows Mixed Reality visori immersivi. È anche possibile accedere a più risorse di sistema e integrare [visualizzazioni immersive remote](../../design/app-views.md) nel software per PC desktop esistente. Un'app remota riceve un flusso di dati di input da HoloLens 2, esegue il rendering del contenuto in una visualizzazione immersiva virtuale e esegue il flusso di frame di contenuto HoloLens 2. La connessione viene stabilita usando il Wi-Fi standard. Holographic Remoting viene aggiunto a un'app desktop o UWP tramite un NuGet pacchetto. È necessario codice aggiuntivo che gestisce la connessione ed esegue il rendering in una visualizzazione immersiva. Una connessione remota tipica avrà fino a 50 ms di latenza. L'app lettore può segnalare la latenza in tempo reale.
+Le app holographic Remoting possono trasmettere contenuti sottoposti a rendering remoto HoloLens 2 e Windows Mixed Reality visori immersivi. È anche possibile accedere a più risorse di sistema e integrare [visualizzazioni immersive remote](../../design/app-views.md) nel software per PC desktop esistente. Un'app remota riceve un flusso di dati di input da HoloLens 2, esegue il rendering del contenuto in una visualizzazione immersiva virtuale e esegue il flusso di frame di contenuto HoloLens 2. La connessione viene stabilita usando il Wi-Fi standard. Holographic Remoting viene aggiunto a un'app desktop o UWP tramite NuGet pacchetto. È necessario codice aggiuntivo che gestisce la connessione ed esegue il rendering in una visualizzazione immersiva. Una connessione remota tipica avrà fino a 50 ms di latenza. L'app lettore può segnalare la latenza in tempo reale.
 
-Tutto il codice in questa pagina e i progetti di lavoro sono disponibili nel repository github degli esempi di [Holographic Remoting](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+Tutto il codice in questa pagina e i progetti di lavoro sono disponibili nel repository github degli esempi [di Holographic Remoting.](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -33,7 +33,7 @@ Un buon punto di partenza è un'app desktop o UWP basata su OpenXR funzionante. 
 
 I passaggi seguenti sono necessari per aggiungere il pacchetto NuGet a un progetto in Visual Studio.
 1. Aprire il progetto in Visual Studio.
-2. Fare clic con il pulsante destro del mouse sul nodo **del progetto e scegliere Gestisci NuGet pacchetti...**
+2. Fare clic con il pulsante destro del mouse sul nodo del **progetto e scegliere Gestisci NuGet pacchetti...**
 3. Nel pannello visualizzato selezionare **Sfoglia** e quindi cercare "Holographic Remoting".
 4. Selezionare **Microsoft.Holographic.Remoting.OpenXr,** assicurarsi di selezionare la versione **2.x.x** più recente e selezionare **Installa**.
 5. Se viene **visualizzata la** finestra di dialogo Anteprima, selezionare **OK.**
@@ -45,7 +45,7 @@ I passaggi seguenti sono necessari per aggiungere il pacchetto NuGet a un proget
 
 ## <a name="select-the-holographic-remoting-openxr-runtime"></a>Selezionare il runtime OpenXR di Holographic Remoting
 
-Il primo passaggio da eseguire nell'app remota consiste nel selezionare il runtime OpenXR holographic Remoting, che fa parte del pacchetto di NuGet Microsoft.Holographic.Remoting.OpenXr. A tale scopo, impostare la variabile di ambiente sul percorso del RemotingXR.js```XR_RUNTIME_JSON``` nel file all'interno dell'app. Questa variabile di ambiente viene usata dal caricatore OpenXR per non usare il runtime OpenXR predefinito del sistema, ma per reindirizzare al runtime OpenXR di Holographic Remoting. Quando si usa il pacchetto NuGet Microsoft.Holographic.Remoting.OpenXr, il RemotingXR.jsnel file viene copiato automaticamente durante la compilazione nella cartella di output, la selezione del runtime OpenXR viene in genere simile alla seguente.
+Il primo passaggio da eseguire nell'app remota consiste nel selezionare il runtime OpenXR holographic Remoting, che fa parte del pacchetto di NuGet Microsoft.Holographic.Remoting.OpenXr. A tale scopo, impostare la variabile di ambiente sul percorso del RemotingXR.js```XR_RUNTIME_JSON``` nel file all'interno dell'app. Questa variabile di ambiente viene usata dal caricatore OpenXR per non usare il runtime OpenXR predefinito del sistema, ma per reindirizzare al runtime OpenXR holographic Remoting. Quando si usa il pacchetto di NuGet Microsoft.Holographic.Remoting.OpenXr il RemotingXR.jsnel file viene copiato automaticamente durante la compilazione nella cartella di output, la selezione del runtime OpenXR ha in genere l'aspetto seguente.
 
 ```cpp
 bool EnableRemotingXR() {
@@ -68,13 +68,13 @@ bool EnableRemotingXR() {
 
 ## <a name="create-xrinstance-with-holographic-remoting-extension"></a>Creare XrInstance con l'estensione Holographic Remoting
 
-Il primo passaggio che una tipica app OpenXR deve eseguire è selezionare le estensioni OpenXR e creare un'istanza XrInstance. La specifica di base OpenXR non fornisce alcuna API specifica per la comunicazione remota. Per questo motivo Holographic Remoting introduce la propria estensione OpenXR denominata ```XR_MSFT_holographic_remoting``` . Assicurarsi che quando si chiama xrCreateInstance ```XR_MSFT_HOLOGRAPHIC_REMOTING_EXTENSION_NAME``` sia incluso in XrInstanceCreateInfo.
+Il primo passaggio che una tipica app OpenXR deve eseguire è selezionare le estensioni OpenXR e creare una XrInstance. La specifica di base OpenXR non fornisce alcuna API specifica per la comunicazione remota. Per questo motivo Holographic Remoting introduce la propria estensione OpenXR denominata ```XR_MSFT_holographic_remoting``` . Assicurarsi che quando si chiama xrCreateInstance ```XR_MSFT_HOLOGRAPHIC_REMOTING_EXTENSION_NAME``` sia incluso in XrInstanceCreateInfo.
 
 >[!TIP]
->Per impostazione predefinita, il contenuto sottoposto a rendering dell'app viene trasmesso solo al lettore Holographic Remoting in esecuzione in un HoloLens 2 o in un visore Windows Mixed Reality visore. Per visualizzare anche il contenuto sottoposto a rendering nel PC remoto, tramite una catena di scambio di una finestra, ad esempio, Holographic Remoting fornisce una seconda estensione OpenXR denominata ```XR_MSFT_holographic_remoting_frame_mirroring``` . Assicurarsi anche di abilitare questa estensione usando nel caso ```XR_MSFT_HOLOGRAPHIC_REMOTING_FRAME_MIRRORING_EXTENSION_NAME``` in cui si voglia usare tale funzionalità.
+>Per impostazione predefinita, il contenuto sottoposto a rendering dell'app viene trasmesso solo al lettore Holographic Remoting in esecuzione in un HoloLens 2 o in un visore Windows Mixed Reality visori. Per visualizzare anche il contenuto sottoposto a rendering nel PC remoto, ad esempio tramite una catena di scambio di una finestra, Holographic Remoting fornisce una seconda estensione OpenXR denominata ```XR_MSFT_holographic_remoting_frame_mirroring``` . Assicurarsi di abilitare anche questa estensione usando nel caso ```XR_MSFT_HOLOGRAPHIC_REMOTING_FRAME_MIRRORING_EXTENSION_NAME``` in cui si voglia usare tale funzionalità.
 
 >[!IMPORTANT]
->Per altre informazioni sull'API di estensione OpenXR [](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html) di Holographic Remoting, vedere la specifica disponibile nel repository github degli esempi di [Holographic Remoting](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+>Per altre informazioni sull'API di estensione OpenXR [](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html) di Holographic Remoting, vedere la specifica disponibile nel repository GitHub degli esempi di [Holographic Remoting.](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)
 
 ## <a name="connect-to-the-device"></a>Connessione al dispositivo
 
@@ -100,7 +100,7 @@ La connessione può essere eseguita in uno dei due modi seguenti.
 1) L'app remota si connette al lettore in esecuzione nel dispositivo.
 2) Il lettore in esecuzione nel dispositivo si connette all'app remota.
 
-Per stabilire una connessione dall'app remota al dispositivo lettore, chiamare il metodo specificando il nome host e ```xrRemotingConnectMSFT``` la porta tramite la struttura  ```XrRemotingConnectInfoMSFT``` . La porta usata da Holographic Remoting Player è **8265**.
+Per stabilire una connessione dall'app remota al dispositivo lettore, chiamare il metodo specificando il nome host e la ```xrRemotingConnectMSFT``` porta tramite la struttura  ```XrRemotingConnectInfoMSFT``` . La porta usata da Holographic Remoting Player è **8265**.
 
 ```cpp
 XrRemotingConnectInfoMSFT connectInfo{static_cast<XrStructureType>(XR_TYPE_REMOTING_CONNECT_INFO_MSFT)};
@@ -110,7 +110,7 @@ connectInfo.secureConnection = false;
 xrRemotingConnectMSFT(m_instance.Get(), m_systemId, &connectInfo);
 ```
 
-L'ascolto delle connessioni in ingresso nell'app remota può essere eseguito chiamando il ```xrRemotingListenMSFT``` metodo . Sia la porta handshake che la porta di trasporto possono essere specificate tramite la ```XrRemotingListenInfoMSFT``` struttura . La porta dell'handshake viene usata per l'handshake iniziale. I dati vengono quindi inviati sulla porta di trasporto. Per impostazione **predefinita vengono usati 8265** e **8266.**
+L'ascolto delle connessioni in ingresso nell'app remota può essere eseguito chiamando il ```xrRemotingListenMSFT``` metodo . Sia la porta dell'handshake che la porta di trasporto possono essere specificate tramite la ```XrRemotingListenInfoMSFT``` struttura . La porta dell'handshake viene usata per l'handshake iniziale. I dati vengono quindi inviati sulla porta di trasporto. Per impostazione **predefinita vengono usati 8265** e **8266.**
 
 ```cpp
 XrRemotingListenInfoMSFT listenInfo{static_cast<XrStructureType>(XR_TYPE_REMOTING_LISTEN_INFO_MSFT)};
@@ -121,7 +121,7 @@ listenInfo.secureConnection = false;
 xrRemotingListenMSFT(m_instance.Get(), m_systemId, &listenInfo);
 ```
 
-Lo stato della connessione deve essere disconnesso quando si chiama ```xrRemotingConnectMSFT``` o ```xrRemotingListenMSFT``` . È possibile ottenere lo stato della connessione in qualsiasi momento dopo aver creato XrInstance ed eseguita una query per XrSystemId tramite ```xrRemotingGetConnectionStateMSFT``` .
+Lo stato della connessione deve essere disconnesso quando si chiama ```xrRemotingConnectMSFT``` o ```xrRemotingListenMSFT``` . È possibile ottenere lo stato della connessione in qualsiasi momento dopo aver creato un oggetto XrInstance e aver sottoposto a query XrSystemId tramite ```xrRemotingGetConnectionStateMSFT``` .
 
 ```cpp
 XrRemotingConnectionStateMSFT connectionState;
@@ -136,14 +136,14 @@ Gli stati di connessione disponibili sono:
 >[!IMPORTANT]
 > ```xrRemotingConnectMSFT``` o ```xrRemotingListenMSFT``` deve essere chiamato prima di provare a creare una sessione XrSession tramite xrCreateSession. Se si tenta di creare una sessione XrSession mentre lo stato della connessione è la creazione della sessione avrà esito positivo, ma lo stato della sessione verrà immediatamente ```XR_REMOTING_CONNECTION_STATE_DISCONNECTED_MSFT``` XR_SESSION_STATE_LOSS_PENDING.
 
-L'implementazione di Holographic Remoting di ```xrCreateSession``` supporta l'attesa di una connessione da stabilire. È possibile chiamare o immediatamente seguito da una chiamata a , che blocca e attende che ```xrRemotingConnectMSFT``` ```xrRemotingListenMSFT``` sia stabilita una connessione. Il timeout è fisso a 10 secondi. Se è possibile stabilire una connessione entro questo periodo, la creazione di XrSession avrà esito positivo e lo stato della sessione verrà XR_SESSION_STATE_READY. Nel caso in cui non sia possibile stabilire alcuna connessione, anche la creazione della sessione ha esito positivo, ma passa immediatamente alla XR_SESSION_STATE_LOSS_PENDING.
+L'implementazione di Holographic Remoting di ```xrCreateSession``` supporta l'attesa della connessione da stabilire. È possibile chiamare o immediatamente seguito da una chiamata a , che blocca e attende che ```xrRemotingConnectMSFT``` ```xrRemotingListenMSFT``` sia stabilita una connessione. Il timeout è fisso a 10 secondi. Se è possibile stabilire una connessione entro questo periodo, la creazione di XrSession avrà esito positivo e lo stato della sessione verrà XR_SESSION_STATE_READY. Nel caso in cui non sia possibile stabilire alcuna connessione, anche la creazione della sessione ha esito positivo, ma passa immediatamente alla XR_SESSION_STATE_LOSS_PENDING.
 
 In generale, lo stato della connessione è associato allo stato XrSession. Qualsiasi modifica apportata allo stato della connessione influisce anche sullo stato della sessione. Ad esempio, se lo stato della connessione passa dallo stato della sessione allo stato sessione, verrà XR_SESSION_STATE_LOSS_PENDING `XR_REMOTING_CONNECTION_STATE_CONNECTED_MSFT` ```XR_REMOTING_CONNECTION_STATE_DISCONNECTED_MSFT``` anche.
 
 ## <a name="handling-remoting-specific-events"></a>Gestione di eventi specifici della comunicazione remota
 
 Il runtime OpenXR di Holographic Remoting espone tre eventi, che sono importanti per monitorare lo stato di una connessione.
-1) ```XR_TYPE_REMOTING_EVENT_DATA_CONNECTED_MSFT```: attivato quando è stata stabilita correttamente una connessione al dispositivo.
+1) ```XR_TYPE_REMOTING_EVENT_DATA_CONNECTED_MSFT```: attivato quando una connessione al dispositivo è stata stabilita correttamente.
 2) ```XR_TYPE_REMOTING_EVENT_DATA_DISCONNECTED_MSFT```: attivato se una connessione stabilita viene chiusa o se non è stato possibile stabilire una connessione.
 3) ```XR_TYPE_REMOTING_EVENT_DATA_LISTENING_MSFT```: quando viene avviato l'ascolto delle connessioni in ingresso.
 
@@ -181,7 +181,7 @@ while (pollEvent(eventData)) {
 
 ## <a name="preview-streamed-content-locally"></a>Anteprima del contenuto trasmesso in streaming in locale
 
-Per visualizzare lo stesso contenuto nell'app remota inviata al dispositivo, è possibile ```XR_MSFT_holographic_remoting_frame_mirroring``` usare l'estensione. Con questa estensione è possibile inviare una trama a xrEndFrame usando l'oggetto che non è concatenato a ```XrRemotingFrameMirrorImageInfoMSFT``` XrFrameEndInfo come indicato di seguito.
+Per visualizzare lo stesso contenuto nell'app remota che viene inviata al dispositivo, è possibile ```XR_MSFT_holographic_remoting_frame_mirroring``` usare l'estensione. Con questa estensione è possibile inviare una trama a xrEndFrame usando l'oggetto che non è concatenato a ```XrRemotingFrameMirrorImageInfoMSFT``` XrFrameEndInfo come indicato di seguito.
 
 ```cpp
 XrFrameEndInfo frameEndInfo{XR_TYPE_FRAME_END_INFO};
@@ -206,6 +206,7 @@ L'esempio precedente usa una trama della catena di scambio DX11 e presenta la fi
 Se l'app remota usa DX12, usare XrRemotingFrameMirrorImageD3D12MSFT anziché XrRemotingFrameMirrorImageD3D11MSFT.
 
 ## <a name="see-also"></a>Vedere anche
+* [Panoramica della comunicazione remota olografica](holographic-remoting-overview.md)
 * [Scrivere un'app lettore Holographic Remoting personalizzata](holographic-remoting-create-player.md)
 * [Stabilire una connessione sicura con Holographic Remoting](holographic-remoting-secure-connection.md)
 * [Risoluzione dei problemi e limitazioni di Holographic Remoting](holographic-remoting-troubleshooting.md)

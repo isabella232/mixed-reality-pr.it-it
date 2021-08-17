@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/29/2021
 ms.topic: article
 keywords: Figma, Sketch, Adobe XD, progettazione, progettazione, file di progettazione, progettazione dell'esperienza utente, HoloLens, MRTK, realtà mista Toolkit
-ms.openlocfilehash: e72dfece3252a35a8da2b1dc72a1476bbf174b36bf01b731b4f0be5af21f2a33
-ms.sourcegitcommit: 5977109661a1db4ee2be8ed532479342093303d5
+ms.openlocfilehash: e911f7b2c1675a8113592d13c01abc3b71238733
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "116862626"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905639"
 ---
 # <a name="mrtk-figma-toolkit"></a>MrTK Figma Toolkit
 
@@ -53,16 +53,16 @@ La pagina Ui Gallery and Components (Raccolta e componenti dell'interfaccia uten
 
 ![Esempio di Toolkit Figma - Interfaccia utente del menu 4](images/UX_FigmaToolkit_Components_Menu3a.png)<br>
 
-Usando **la scheda Asset,** è possibile esplorare questi componenti e trascinarli nella pagina.
+Usando **la scheda Asset** è possibile esplorare questi componenti e trascinarli nella pagina.
 
 <img src="images/UX_FigmaToolkit_Components_Menu3.png" width="200px" alt="Assets tab"><br>
 
 
-## <a name="examples"></a>Esempi
+## <a name="examples"></a>Esempio
 
 Figma Toolkit essere utile per disegnare l'interfaccia utente del menu. 
 
-![Esempio di Toolkit Figma - Interfaccia utente menu 5](images/UX_FigmaToolkit_Examples_Menu.png)<br>
+![Esempio di Toolkit Figma - Interfaccia utente del menu 5](images/UX_FigmaToolkit_Examples_Menu.png)<br>
 
 
 Gli asset possono essere usati per lo storyboard.

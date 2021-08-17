@@ -5,18 +5,18 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
-keywords: Windows Mixed Reality, ologrammi, comunicazione remota olografica, rendering remoto, rendering di rete, HoloLens, ologrammi remoti, risoluzione dei problemi, guida, visore VR di realtà mista, visore VR windows mixed reality, visore VR di realtà virtuale
-ms.openlocfilehash: fa984e89fb6eb770917d9a1d62ce7c1007d45fab7fbcb2723f9642ac81814054
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+keywords: Windows Mixed Reality, ologrammi, comunicazione remota olografica, rendering remoto, rendering di rete, HoloLens, ologrammi remoti, risoluzione dei problemi, guida, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale
+ms.openlocfilehash: d49f73f4cbe205e71cb2f76ab02769ddad5f3ed2
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115223571"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184612"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Risoluzione dei problemi di Holographic Remoting
 
 > [!IMPORTANT]
-> Queste linee guida sono specifiche per Holographic Remoting HoloLens 2.
+> Queste linee guida sono specifiche per Holographic Remoting in HoloLens 2.
 
 ## <a name="spectre-mitigated-libraries-not-found"></a>Librerie con mitigazione Spectre non trovate.
 
@@ -104,6 +104,7 @@ Le API seguenti non  sono attualmente supportate quando si usa Holographic Remot
 * [SpatialGraphInteropPreview.TryCreateFrameOfReference](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.trycreateframeofreference)
 
 ## <a name="see-also"></a>Vedere anche
+* [Panoramica di Holographic Remoting](holographic-remoting-overview.md)
 * [Cronologia delle versioni di Holographic Remoting](holographic-remoting-version-history.md)
 * [Scrittura di un'app remota Holographic Remoting Windows Mixed Reality API](holographic-remoting-create-remote-wmr.md)
 * [Scrittura di un'app remota Holographic Remoting con le API OpenXR](holographic-remoting-create-remote-openxr.md)

@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 02/10/2019
 ms.topic: article
 keywords: esperienza condivisa, realtà mista, ologramma, ancoraggio nello spazio, multi-utente, più
-ms.openlocfilehash: fe738d07e57bd2f62cab8036a09ca6ab31d6544bdd9b6dacc8dde3445fa58214
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 013d30bcbf3818e944eb637a792bdbc82d430f69
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115193591"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184742"
 ---
 # <a name="shared-experiences-in-mixed-reality"></a>Esperienze condivise nella realtà mista
 
@@ -21,7 +21,7 @@ Ologrammi non è necessario rimanere privati per un solo utente. Le app olografi
 
 Prima di iniziare la progettazione per le esperienze condivise, è importante definire gli scenari di destinazione. Questi scenari consentono di chiarire ciò che si sta progettando e di stabilire un vocabolario comune per confrontare e contrapporre le funzionalità necessarie nell'esperienza. Comprendere il problema principale e i diversi modi per trovare soluzioni è fondamentale per scoprire opportunità inerenti a questo nuovo supporto.
 
-Tramite prototipi interni ed esplorazioni delle HoloLens partner, abbiamo creato sei domande per facilitare la definizione di scenari condivisi. Queste domande formano un framework, non destinato a essere esaustivo, per contribuire a estrarre gli attributi importanti degli scenari.
+Tramite prototipi interni ed esplorazioni da HoloLens partner, abbiamo creato sei domande per facilitare la definizione di scenari condivisi. Queste domande formano un framework, non destinato a essere esaustivo, per contribuire a estrarre gli attributi importanti degli scenari.
 
 ### <a name="1-how-are-they-sharing"></a>1. In che modo condividono?
 
@@ -58,7 +58,7 @@ La forza della realtà mista entra in gioco quando un'esperienza condivisa può 
 
 Le categorie seguenti consentono di comunicare dove si trovano gli utenti:
 
-* **Percorso con percorso:** tutti gli utenti saranno nello stesso spazio fisico.
+* **Percorso con percorso:** tutti gli utenti si posizioneranno nello stesso spazio fisico.
 * **Remoto:** tutti gli utenti saranno in spazi fisici separati.
 * **Entrambi:** gli utenti saranno una combinazione di spazi condivisi e remoti.
 
@@ -92,7 +92,7 @@ La probabilità che due ambienti reali identici, al di fuori delle esperienze co
 
 Considerare le esperienze di condivisione che si adattano a una di queste due categorie:
 
-* **Simile:** ambienti che tendono ad avere mobili simili, luce ambientale e suono, dimensioni fisiche della stanza. Ad esempio: il docenti si trova nell'atrio A e gli studenti sono nell'atrio B. La sala delle lezioni A potrebbe avere meno lezioni rispetto a B, ma entrambi possono avere una postazione fisica su cui posizionare gli ologrammi.
+* **Simile:** ambienti che tendono ad avere mobili simili, luce ambientale e suono, dimensioni della stanza fisica. Ad esempio: il docenti si trova nell'atena A e gli studenti sono in sala B. La sala delle lezioni A potrebbe avere meno lezioni rispetto a B, ma entrambi possono avere una postazione fisica su cui posizionare gli ologrammi.
 * **Diverso: ambienti diversi** in ambienti di mobili, dimensioni delle camere, considerazioni sulla luce e sul suono. Ad esempio: un insegnante si trova in una sala di interesse, ma gli studenti sono in una grande sala riunioni, piena di studenti e docenti.
 
 È importante pensare [all'ambiente](/hololens/hololens-environment-considerations), perché influirà su:
@@ -106,9 +106,9 @@ Oggi è spesso probabile che si risivano esperienze condivise tra due dispositiv
 
 ## <a name="exploring-the-potential-of-shared-experiences"></a>Esplorazione del potenziale delle esperienze condivise
 
-Le risposte alle domande precedenti possono essere combinate per comprendere meglio lo scenario condiviso, ampliando le sfide quando si espande l'esperienza. Per il team Microsoft, questo ha consentito di definire una mappa di percorso per migliorare le esperienze usate oggi, comprendendo la sfumatura di questi problemi complessi e come sfruttare le esperienze condivise nella realtà mista.
+Le risposte alle domande precedenti possono essere combinate per comprendere meglio lo scenario condiviso, ampliando le sfide quando si espande l'esperienza. Per il team Microsoft, questo ha consentito di definire una mappa di percorso per migliorare le esperienze attualmente in uso, comprendendo la sfumatura di questi problemi complessi e come sfruttare le esperienze condivise nella realtà mista.
 
-Si consideri, ad esempio, uno degli scenari di Skype dal lancio [](https://www.youtube.com/watch?v=iBfzs3G8BEA) di HoloLens: un utente ha illustrato come correggere un interruttore di luce guasto con l'aiuto di un esperto di una posizione remota.
+Si consideri, ad esempio, uno degli scenari di Skype del [](https://www.youtube.com/watch?v=iBfzs3G8BEA) lancio di HoloLens: un utente ha illustrato come correggere un interruttore di luce guasto con l'aiuto di un esperto di una posizione remota.
 
 ![Correzione di un interruttore leggero con assistenza tramite Skype per HoloLens](images/fix-a-broken-switch-with-hololens-640px.jpg)
 
@@ -122,7 +122,7 @@ Si [consideri lo strumento di collaborazione OnSight,](https://www.youtube.com/w
 
 *Uno scienziato esplora un ambiente usando un dispositivo **3D** di  realtà mista con un piccolo gruppo di colleghi remoti che usano dispositivi  **3D e 2D.** La **collaborazione** è **sincrona** (ma può essere rivisitata in modo asincrono) e gli ambienti fisici sono (virtualmente) **simili.***
 
-Esperienze come OnSight offrono nuove opportunità di collaborazione. Dal punto di vista fisico degli elementi nell'ambiente virtuale alla posizione accanto a un collega e alla condivisione della loro prospettiva mentre spiegano i risultati. OnSight usa l'obiettivo dell'immersione e della presenza per rivisitire le esperienze di condivisione nella realtà mista.
+Esperienze come OnSight offrono nuove opportunità di collaborazione. Dal punto di vista fisico degli elementi nell'ambiente virtuale alla posizione accanto a un collega e alla condivisione della loro prospettiva mentre spiegano i risultati. OnSight usa l'obiettivo dell'immersione e della presenza per ridefinire le esperienze di condivisione nella realtà mista.
 
 La collaborazione intuitiva è il fondamento della conversazione, la collaborazione e la comprensione di come è possibile applicare questa intuitività alla complessità della realtà mista è fondamentale. Se non solo è possibile ricreare esperienze di condivisione nella realtà mista, ma sovrapprezzo, si tratta di un cambio di paradigma per il futuro del lavoro. Progettare esperienze condivise nella realtà mista è uno spazio nuovo ed interessante e siamo solo all'inizio.
 
@@ -130,10 +130,10 @@ La collaborazione intuitiva è il fondamento della conversazione, la collaborazi
 
 A seconda dell'applicazione e dello scenario, saranno necessari diversi requisiti per ottenere l'esperienza desiderata. tra cui:
 
-* **Creazione di corrispondenze:** possibilità di creare sessioni, annunciare sessioni, individuare e invitare utenti specifici, sia in locale che in remoto, a partecipare alla sessione.
+* **Creazione di corrispondenze:** possibilità di creare sessioni, annunciare sessioni, individuare e invitare utenti specifici, sia in locale che in remoto per partecipare alla sessione.
 * **Condivisione dell'ancoraggio:** possibilità di allineare le coordinate tra più dispositivi in uno spazio locale comune, in modo che gli ologrammi vengano visualizzati nella stessa posizione per tutte le persone.
-* **Rete:** possibilità di sincronizzare in tempo reale posizioni, interazioni e movimenti di persone e ologrammi tra tutti i partecipanti.
-* **Archiviazione dello stato:** possibilità di archiviare le caratteristiche e le posizioni degli ologrammi nello spazio per l'aggiunta a metà sessione, il richiamo in un secondo momento e la solidità in caso di problemi di rete.
+* **Rete:** possibilità di avere posizioni, interazioni e movimenti di persone e ologrammi sincronizzati in tempo reale tra tutti i partecipanti.
+* **Archiviazione dello stato:** possibilità di archiviare le caratteristiche e le posizioni degli ologrammi nello spazio per l'aggiunta a metà sessione, il richiamo in un secondo momento e l'affidabilità in caso di problemi di rete.
 
 La chiave per le esperienze condivise è fare in modo che più utenti vedano gli stessi ologrammi nel mondo sul proprio dispositivo, spesso tramite la condivisione di ancoraggi per allineare le coordinate tra i dispositivi.
 
@@ -157,21 +157,21 @@ Sfruttare [ancoraggi nello spaziale di Azure](/azure/spatial-anchors/) nell'app.
 
 ## <a name="share-first-person-perspective"></a>Condividere la prospettiva in prima persona
 
-Sfruttare il supporto Miracast per gli utenti locali quando si dispone di un ricevitore Miracast supportato, ad esempio un PC o un TV. Non è necessario alcun codice dell'app aggiuntivo.
+Sfruttare il supporto Miracast, per gli utenti locali quando si dispone di un ricevitore Miracast supportato, ad esempio un PC o un TV. Non è necessario codice dell'app aggiuntivo.
 
-Sfruttare [MixedReality-WebRTC](https://github.com/microsoft/mixedreality-webrtc) nell'app, per gli utenti remoti o quando si dispone di dispositivi non Miracast che si desidera condividere.  L'abilitazione di una connessione WebRTC abilita flussi audio/video 1:1 tra gli utenti, con un canale dati per la messaggistica tra dispositivi.  L'implementazione di realtà mista è ottimizzata per HoloLens, fornendo ad altri utenti il flusso video di acquisizione di realtà mista della visualizzazione HoloLens'utente.  Se si vuole aumentare lo streaming video a più client remoti, viene in genere usato un provider di servizi [MCU](https://webrtcglossary.com/mcu/) (Unità di conferenza multipoint), ad esempio [SignalWire](https://signalwire.com/).  Una distribuzione SignalWire in Azure con un clic è disponibile tramite [Freeswitch.](https://github.com/andywolk/azure-freeswitch-gpu-windows)
+Sfruttare [MixedReality-WebRTC](https://github.com/microsoft/mixedreality-webrtc) nell'app, per gli utenti remoti o quando si hanno dispositivi non Miracast che si desidera condividere.  L'abilitazione di una connessione WebRTC abilita flussi audio/video 1:1 tra gli utenti, con un canale dati per la messaggistica tra dispositivi.  L'implementazione di realtà mista è ottimizzata per HoloLens, fornendo ad altri utenti il flusso video di acquisizione di realtà mista della visualizzazione HoloLens'utente.  Se si desidera aumentare lo streaming video a più client remoti, viene in genere usato un provider di servizi [MCU](https://webrtcglossary.com/mcu/) (Unità di conferenza multipoint), ad esempio [SignalWire](https://signalwire.com/).  Una distribuzione SignalWire in Azure con un clic è disponibile tramite [Freeswitch.](https://github.com/andywolk/azure-freeswitch-gpu-windows)
 
 > [!NOTE]
-> Si noti che SignalWire è un servizio a pagamento e non è di proprietà o affiliato a Microsoft.
+> Si noti che SignalWire è un servizio a pagamento e non è di proprietà/affiliata a Microsoft.
 
 ## <a name="presenter-spectator-applications-and-demos"></a>Presenter-Spectator applicazioni e demo
 
-Sfruttare [MixedReality-SpectatorView](https://github.com/microsoft/MixedReality-SpectatorView) per portare [la funzionalità di visualizzazione degli spettatori](spectator-view.md) nell'app.  Abilitare altri dispositivi (HL, Android, iOS e videocamere) per vedere cosa vede il HoloLens da una prospettiva diversa nella stessa posizione e ricevere aggiornamenti sulle interazioni dell'utente HoloLens host che interagisce con gli ologrammi.  Guardare, scattare foto e registrare video di ciò che l'host fa con gli ologrammi nell'applicazione dal proprio punto di vista spaziale con lo spettante complementare della stessa app.
+Sfruttare [MixedReality-SpectatorView](https://github.com/microsoft/MixedReality-SpectatorView) per portare [la funzionalità di visualizzazione degli spettatori](spectator-view.md) nell'app.  Abilitare altri dispositivi (HL, Android, iOS e videocamere) per vedere cosa vede il HoloLens da una prospettiva diversa nella stessa posizione e ricevere aggiornamenti sulle interazioni dell'utente HoloLens host che interagisce con gli ologrammi.  Guardare, scattare foto e registrare video di ciò che l'host fa con gli ologrammi nell'applicazione dal proprio punto di vista spaziale con il collega dello spettante della stessa app.
 
 **Nota:** Le immagini vengono scattate tramite screenshot nei dispositivi iOS/Android.
 
 ## <a name="multi-user-collaborative-experience"></a>Esperienza collaborativa multi-utente
-
+<!--Unity Note-->
 Iniziare con [l'esercitazione](../unity/tutorials/mr-learning-sharing-02.md)sull'apprendimento multi-utente, che sfrutta Ancoraggi nello stato di [Azure](/azure/spatial-anchors/) per gli utenti locali e [Photon SDK](https://www.photonengine.com/PUN) per sincronizzare il contenuto/stato nella scena. Creare applicazioni collaborative in locale in cui ogni utente ha la propria prospettiva sugli ologrammi nella scena e può interagire completamente con gli ologrammi.  Gli aggiornamenti vengono forniti in tutti i dispositivi e la gestione dei conflitti di interazione viene gestita da Photon.
 
 > [!NOTE]
@@ -179,9 +179,9 @@ Iniziare con [l'esercitazione](../unity/tutorials/mr-learning-sharing-02.md)sull
 
 ## <a name="future-work"></a>Lavoro futuro
 
-Le funzionalità e le interfacce dei componenti consentono di fornire coerenza comune e un supporto affidabile nei vari scenari e tecnologie sottostanti.  Fino ad allora, scegliere il percorso migliore che si allinea allo scenario che si sta tentando di ottenere nell'applicazione.
+Le funzionalità e le interfacce dei componenti consentono di offrire coerenza comune e un supporto affidabile nei vari scenari e tecnologie sottostanti.  Fino ad allora, scegliere il percorso migliore che si allinea allo scenario che si sta tentando di ottenere nell'applicazione.
 
-Scenario o voglia di usare un'altra tecnologia/servizio? Inviare commenti GitHub problemi nel relativo repo, nella parte inferiore di questa pagina, oppure contattare [HoloDevelopers slack.](https://holodevelopers.slack.com/)
+Scenario o voglia di usare un servizio/tecnologia diverso? Inviare commenti GitHub problemi nel relativo repo, nella parte inferiore di questa pagina, oppure contattare [HoloDevelopers slack.](https://holodevelopers.slack.com/)
 
 ## <a name="see-also"></a>Vedere anche
 

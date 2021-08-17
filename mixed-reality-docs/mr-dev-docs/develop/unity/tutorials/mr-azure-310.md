@@ -1,49 +1,49 @@
 ---
 title: HoloLens (prima generazione) e Azure 310 - Rilevamento oggetti
-description: Completare questo corso per informazioni su come eseguire il training e usare un modello di Machine Learning per riconoscere oggetti simili e la relativa posizione nel mondo reale.
+description: Completare questo corso per apprendere come eseguire il training e usare un modello di Machine Learning per riconoscere oggetti simili e la loro posizione nel mondo reale.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: azure, visione personalizzata, rilevamento di oggetti, realtà mista, academy, unity, tutorial, api, hololens, Windows 10, Visual Studio
-ms.openlocfilehash: 85a99b676f6765696524bc42adf257b3430c00cc955413b4c299ddb58502cefb
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+keywords: azure, visione personalizzata, rilevamento oggetti, realtà mista, academy, unity, esercitazione, api, hololens, Windows 10, Visual Studio
+ms.openlocfilehash: b152aaebbd3858140b79133a8f8e551aab06b4f3
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115216653"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905747"
 ---
 # <a name="hololens-1st-gen-and-azure-310-object-detection"></a>HoloLens (prima generazione) e Azure 310: Rilevamento oggetti
 
 >[!NOTE]
->Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. In futuro verrà pubblicata una nuova serie di esercitazioni che illustrano come sviluppare per HoloLens 2.  Questa informativa verrà aggiornata con un collegamento a tali esercitazioni al momento della pubblicazione.
+>Le esercitazioni di Mixed Reality Academy sono state progettate in base a HoloLens (prima generazione) e ai visori VR immersive di realtà mista.  Pertanto, riteniamo importante lasciarle a disposizione degli sviluppatori a cui serve ancora materiale sussidiario per lo sviluppo di questi dispositivi.  Queste esercitazioni **_non_** verranno aggiornate con i set di strumenti o le interazioni più recenti usati per HoloLens 2.  Rimarranno invariate per consentire di continuare a lavorare sui dispositivi supportati. In futuro verrà pubblicata una nuova serie di esercitazioni che illustrano come sviluppare per HoloLens 2.  Questa comunicazione verrà aggiornata con un collegamento a tali esercitazioni al momento della pubblicazione.
 
 <br>
 
 In questo corso si apprenderà come riconoscere il contenuto visivo personalizzato e la relativa posizione spaziale all'interno di un'immagine fornita, usando le funzionalità "Rilevamento oggetti" di Azure Visione personalizzata in un'applicazione di realtà mista.
 
-Questo servizio consente di eseguire il training di un modello di Machine Learning usando immagini oggetto. Si userà quindi il modello con training per riconoscere oggetti simili e approssimarne la posizione nel mondo reale, come fornito dall'acquisizione della fotocamera di Microsoft HoloLens o da una fotocamera che si connette a un PC per visori VR immersive.
+Questo servizio consentirà di eseguire il training di un modello di Machine Learning usando immagini oggetto. Si userà quindi il modello con training per riconoscere oggetti simili e approssimarne la posizione nel mondo reale, come fornito dall'acquisizione della fotocamera di Microsoft HoloLens o da una fotocamera che si connette a un PC per visori VR immersive.
 
 ![risultato del corso](images/AzureLabs-Lab310-00.png)
 
-**Azure Visione personalizzata, Il rilevamento oggetti è** un servizio Microsoft che consente agli sviluppatori di creare classificatori di immagini personalizzati. Questi classificatori possono quindi essere usati con nuove immagini per rilevare gli oggetti all'interno della nuova immagine, fornendo limiti box **all'interno** dell'immagine stessa. Il servizio offre un portale online semplice, facile da usare per semplificare questo processo. Per altre informazioni, visitare i collegamenti seguenti:
+**Azure Visione personalizzata rilevamento oggetti è** un servizio Microsoft che consente agli sviluppatori di creare classificatori di immagini personalizzati. Questi classificatori possono quindi essere usati con nuove immagini per rilevare gli oggetti all'interno di tale nuova immagine, fornendo **limiti di box all'interno** dell'immagine stessa. Il servizio offre un portale online semplice e facile da usare per semplificare questo processo. Per altre informazioni, visitare i collegamenti seguenti:
 
-* [Pagina Visione personalizzata azure](/azure/cognitive-services/custom-vision-service/home)
+* [Pagina Visione personalizzata Azure](/azure/cognitive-services/custom-vision-service/home)
 * [Limiti e quote](/azure/cognitive-services/custom-vision-service/limits-and-quotas)
 
 Al termine di questo corso, si avrà un'applicazione di realtà mista che sarà in grado di eseguire le operazioni seguenti:
 
-1. L'utente sarà in grado *di* osservare un oggetto di cui è stato creato il training usando il servizio Azure Visione personalizzata, Rilevamento oggetti. 
-2. L'utente userà il *movimento Tocco* per acquisire un'immagine di ciò che sta osservando.
+1. L'utente sarà in *grado* di guardare un oggetto, di cui ha fatto il training usando il servizio Azure Visione personalizzata, Rilevamento oggetti.
+2. L'utente userà il *movimento Tocco* per acquisire un'immagine di ciò che sta guardando.
 3. L'app invierà l'immagine al servizio Visione personalizzata Azure.
-4. Verrà visualizzata una risposta dal servizio che visualizza il risultato del riconoscimento come testo spazio mondiale. Questa operazione verrà eseguita usando il rilevamento spaziale del Microsoft HoloLens, per comprendere la posizione mondiale dell'oggetto riconosciuto e quindi usando il *tag* associato a ciò che viene rilevato nell'immagine, per fornire il testo dell'etichetta.
+4. Verrà visualizzata una risposta dal servizio che visualizza il risultato del riconoscimento come testo nello spazio del mondo. Questa operazione verrà eseguita usando il rilevamento spaziale del Microsoft HoloLens, per comprendere la posizione mondiale dell'oggetto riconosciuto e quindi usando il *tag* associato a ciò che viene rilevato nell'immagine, per fornire il testo dell'etichetta.
 
-Il corso illustra anche il caricamento manuale delle immagini, la creazione di tag e il training del servizio, per riconoscere oggetti diversi (nell'esempio fornito, una tazza), impostando la *casella* limite all'interno dell'immagine che si invia. 
+Il corso illustra anche il caricamento manuale delle immagini, la creazione di tag e il training  del servizio per riconoscere oggetti diversi (nell'esempio fornito, una copia) impostando la casella limite all'interno dell'immagine che si invia.
 
 > [!IMPORTANT]
-> Dopo la creazione e l'uso dell'app, lo sviluppatore deve tornare al servizio Azure Visione personalizzata e identificare le stime effettuate dal servizio e determinare se sono corrette o meno (contrassegnando qualsiasi elemento che il servizio ha perso e modificando i recinti di *delimitazione).* È quindi possibile eseguire nuovamente il training del servizio, che aumenta la probabilità che riconosca gli oggetti reali.
+> Dopo la creazione e l'uso dell'app, lo sviluppatore deve tornare al servizio Azure Visione personalizzata e identificare le stime effettuate dal servizio e determinare se sono corrette o meno (contrassegnando qualsiasi elemento che il servizio ha perso e modificando i recinti di *selezione).* È quindi possibile eseguire nuovamente il training del servizio, in modo da aumentare la probabilità che riconosi gli oggetti reali.
 
-Questo corso illustra come ottenere i risultati dal servizio Azure Visione personalizzata, Rilevamento oggetti, in un'applicazione di esempio basata su Unity. Sarà necessario applicare questi concetti a un'applicazione personalizzata che potrebbe essere compilata.
+Questo corso illustra come ottenere i risultati dal servizio Azure Visione personalizzata, Rilevamento oggetti, in un'applicazione di esempio basata su Unity. L'utente dovrà applicare questi concetti a un'applicazione personalizzata che potrebbe essere compilata.
 
 ## <a name="device-support"></a>Supporto di dispositivi
 
@@ -58,46 +58,46 @@ Questo corso illustra come ottenere i risultati dal servizio Azure Visione perso
 ## <a name="prerequisites"></a>Prerequisiti
 
 > [!NOTE]
-> Questa esercitazione è progettata per sviluppatori con esperienza di base con Unity e C#. Tenere inoltre presente che i prerequisiti e le istruzioni scritte all'interno di questo documento rappresentano ciò che è stato testato e verificato al momento della scrittura (luglio 2018). È possibile usare il software più recente, come elencato nell'articolo Installare gli strumenti, anche se non si deve presumere che le informazioni in questo corso corrispondano perfettamente a quelle disponibili nel software più recente rispetto a quelle elencate di seguito. [](../../install-the-tools.md)
+> Questa esercitazione è destinata agli sviluppatori che hanno esperienza di base con Unity e C#. Tenere presente anche che i prerequisiti e le istruzioni scritte all'interno di questo documento rappresentano ciò che è stato testato e verificato al momento della stesura di questo documento (luglio 2018). È possibile usare il software più recente, come indicato nell'articolo Installare gli strumenti, anche se non si presuppone che le informazioni contenute in questo corso corrispondano perfettamente a quelle disponibili nel software più recente rispetto a quelle elencate di seguito. [](../../install-the-tools.md)
 
 Per questo corso è consigliabile usare l'hardware e il software seguenti:
 
 - Un PC di sviluppo
-- [Windows 10 Fall Creators Update (o versione successiva) con la modalità sviluppatore abilitata](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [L'SDK Windows 10 più recente](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [Unity 2017.4 LTS](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [Visual Studio 2017](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- [Windows 10 Fall Creators Update (o versione successiva) con la modalità sviluppatore abilitata](../../install-the-tools.md#installation-checklist-for-hololens)
+- [La versione più recente Windows 10 SDK](../../install-the-tools.md#installation-checklist-for-hololens)
+- [Unity 2017.4 LTS](../../install-the-tools.md#installation-checklist-for-hololens)
+- [Visual Studio 2017](../../install-the-tools.md#installation-checklist-for-hololens)
 - Un [Microsoft HoloLens](/windows/mixed-reality/hololens-hardware-details) con la modalità sviluppatore abilitata
-- Accesso a Internet per l'installazione di Azure e il Visione personalizzata del servizio
--  È necessaria una serie di almeno quindici (15) immagini) per ogni oggetto che si Visione personalizzata riconoscere. Se lo si desidera, è possibile usare le immagini già fornite con questo corso, [una serie di tazze](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20310%20-%20Object%20detection/Cup%20Images.zip).
+- Accesso a Internet per l'installazione e il Visione personalizzata azure
+-  È necessaria una serie di almeno 15 (15) immagini) per ogni oggetto che si vuole Visione personalizzata riconoscere. Se si vuole, è possibile usare le immagini già fornite con questo corso, [una serie di coppe](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20310%20-%20Object%20detection/Cup%20Images.zip).
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
-1.  Per evitare problemi durante la compilazione di questo progetto, è consigliabile creare il progetto indicato in questa esercitazione in una cartella radice o quasi radice (i percorsi di cartelle lunghe possono causare problemi in fase di compilazione).
-2.  Configurare e testare il HoloLens. Se è necessario supporto per la configurazione del HoloLens, visitare l'articolo HoloLens [setup .](/hololens/hololens-setup) 
-3.  È buona idea eseguire calibrazione e ottimizzazione dei sensori quando si inizia a sviluppare una nuova app HoloLens (talvolta può essere utile per eseguire queste attività per ogni utente). 
+1.  Per evitare di riscontrare problemi durante la compilazione di questo progetto, è consigliabile creare il progetto indicato in questa esercitazione in una cartella radice o vicina alla radice (i percorsi di cartelle lunghi possono causare problemi in fase di compilazione).
+2.  Configurare e testare l'HoloLens. Se è necessario supporto per questa operazione, vedere [l'articolo HoloLens configurazione.](/hololens/hololens-setup)
+3.  È una buona idea eseguire la calibrazione e l'ottimizzazione dei sensori quando si inizia a sviluppare una nuova app HoloLens (a volte può essere utile eseguire tali attività per ogni utente).
 
-Per informazioni sulla calibrazione, seguire questo [collegamento all'HoloLens calibrazione.](/hololens/hololens-calibration#hololens-2)
+Per informazioni sulla calibrazione, fare clic su questo [collegamento all'HoloLens calibrazione.](/hololens/hololens-calibration#hololens-2)
 
-Per informazioni sull'ottimizzazione dei sensori, seguire questo [collegamento all'articolo HoloLens Sensor Tuning](/hololens/hololens-updates).
+Per informazioni sull'ottimizzazione dei sensori, fare clic su questo collegamento [all'HoloLens sull'ottimizzazione dei sensori.](/hololens/hololens-updates)
 
-## <a name="chapter-1---the-custom-vision-portal"></a>Capitolo 1 - Portale Visione personalizzata
+## <a name="chapter-1---the-custom-vision-portal"></a>Capitolo 1 - Portale Visione personalizzata app
 
-Per usare **il servizio Azure Visione personalizzata**, è necessario configurare un'istanza di per essere resa disponibile per l'applicazione.
+Per usare **il servizio azure Visione personalizzata**, è necessario configurare un'istanza di in modo che sia resa disponibile per l'applicazione.
 
 1.  Passare [alla pagina principale Visione personalizzata **Service**](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/).
 
-2.  Fare clic su **Attività iniziali**.
+2.  Fare clic **su Attività iniziali**.
 
     ![](images/AzureLabs-Lab310-01.png)
 
-3.  Accedere al portale Visione personalizzata.
+3.  Accedere al portale Visione personalizzata app.
 
     ![](images/AzureLabs-Lab310-02.png)
 
-4.  Se non si dispone già di un account Azure, è necessario crearne uno. Se si sta seguendo questa esercitazione in una situazione di classe o di lab, chiedere all'insegnante o a uno dei prottori di assistenza per la configurazione del nuovo account.
+4.  Se non si ha già un account Azure, è necessario crearne uno. Se si sta seguendo questa esercitazione in una situazione di classe o di lab, chiedere all'insegnante o a uno dei protori di assistenza per la configurazione del nuovo account.
 
-5.  Dopo aver eseguito l'accesso per la prima volta, verrà visualizzato il pannello *Condizioni per il* servizio. Fare clic sulla casella di *controllo per accettare i termini*. Fare quindi clic **su Accetto**.
+5.  Dopo aver eseguito l'accesso per la prima volta, verrà visualizzato il pannello *Condizioni per l'utilizzo del* servizio. Fare clic sulla casella di *controllo per accettare le condizioni*. Quindi fare clic **su Accetto**.
 
     ![](images/AzureLabs-Lab310-03.png)
 
@@ -105,29 +105,29 @@ Per usare **il servizio Azure Visione personalizzata**, è necessario configurar
 
     ![](images/AzureLabs-Lab310-04.png)
 
-7.  Sul lato destro verrà visualizzata una scheda che richiede di specificare alcuni campi per il progetto.
+7.  Sul lato destro verrà visualizzata una scheda che richiederà di specificare alcuni campi per il progetto.
 
     1.  Inserire un nome per il progetto
 
-    2.  Inserire una descrizione per il progetto (**Facoltativo**)
+    2.  Inserire una descrizione per il progetto **(facoltativo)**
 
-    3.  Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. È consigliabile mantenere tutti i servizi di Azure associati a un singolo progetto,ad esempio questi corsi, in un gruppo di risorse comune.
+    3.  Scegliere un **gruppo di risorse** o crearne uno nuovo. Un gruppo di risorse consente di monitorare, controllare l'accesso, effettuare il provisioning e gestire la fatturazione per una raccolta di asset di Azure. È consigliabile mantenere tutti i servizi di Azure associati a un singolo progetto(ad esempio, questi corsi) in un gruppo di risorse comune.
 
         ![](images/AzureLabs-Lab310-05.png)
 
         > [!NOTE]
         > Per altre informazioni [sui gruppi di risorse di Azure, passare alla documentazione associata](/azure/azure-resource-manager/resource-group-portal)
 
-    4.  Impostare **l'Project tipi di** oggetti **come Rilevamento oggetti (anteprima).**
+    4.  Impostare i **tipi Project come** Rilevamento oggetti **(anteprima).**
 
-8.  Al termine, fare clic su **Crea** progetto e si verrà reindirizzati alla pagina del progetto Visione personalizzata Service.
+8.  Al termine, fare clic su **Crea progetto** per essere reindirizzati alla pagina del progetto Visione personalizzata Service.
 
 
 ## <a name="chapter-2---training-your-custom-vision-project"></a>Capitolo 2 - Training del progetto Visione personalizzata
 
 Una volta nel portale Visione personalizzata, l'obiettivo principale è eseguire il training del progetto per riconoscere oggetti specifici nelle immagini.
 
-Sono necessarie almeno quindici (15) immagini per ogni oggetto che si vuole riconoscere dall'applicazione. È possibile usare le immagini fornite con questo corso ([una serie di tazze](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20310%20-%20Object%20detection/Cup%20Images.zip)).
+Sono necessarie almeno 15 (15) immagini per ogni oggetto che si vuole che l'applicazione riconosca. È possibile usare le immagini fornite con questo corso[(una serie di coppe).](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20310%20-%20Object%20detection/Cup%20Images.zip)
 
 Per eseguire il training Visione personalizzata progetto:
 
@@ -135,7 +135,7 @@ Per eseguire il training Visione personalizzata progetto:
 
     ![](images/AzureLabs-Lab310-06.png)
 
-2.  Aggiungere un **nome** per il tag che verrà usato per associare le immagini. In questo esempio si usano immagini di tazze per il riconoscimento, quindi è stato assegnato un nome al tag per questo, **Cup**. Al **termine, fare clic** su Salva.
+2.  Aggiungere un **nome** per il tag che verrà usato per associare le immagini. In questo esempio si usano immagini di coppe per il riconoscimento, quindi è stato denominato il tag per questo, **Cup**. Al **termine, fare clic** su Salva.
 
     ![](images/AzureLabs-Lab310-07.png)
 
@@ -147,14 +147,14 @@ Per eseguire il training Visione personalizzata progetto:
 
     ![](images/AzureLabs-Lab310-09.png)
 
-5.  Fare clic **su Sfoglia file locali** e individuare le immagini da caricare per un oggetto, con un minimo di 15 (15).
+5.  Fare clic **su Esplora file locali** e passare alle immagini da caricare per un oggetto, con un minimo di 15 (15).
 
     > [!TIP]
-    >  È possibile selezionare più immagini contemporaneamente, da caricare.
+    >  È possibile selezionare più immagini contemporaneamente da caricare.
 
     ![](images/AzureLabs-Lab310-10.png)
 
-6.  Premere **Upload file** dopo aver selezionato tutte le immagini con cui si vuole eseguire il training del progetto. Il caricamento dei file inizierà. Dopo aver visualizzato la conferma del caricamento, fare clic su **Fine.**
+6.  Premere **Upload file** dopo aver selezionato tutte le immagini con cui si vuole eseguire il training del progetto. Verrà iniziato il caricamento dei file. Dopo aver visualizzato la conferma del caricamento, fare clic su **Fine.**
 
     ![](images/AzureLabs-Lab310-11.png)
 
@@ -181,13 +181,13 @@ Per eseguire il training Visione personalizzata progetto:
 
     ![](images/AzureLabs-Lab310-16.png)
 
-12. A questo punto è possibile eseguire il training del servizio. Fare clic **sul pulsante** Train (Train) (Traina) per avviare la prima
+12. A questo punto è possibile eseguire il training del servizio. Fare clic sul **pulsante** Train (Train) (Train (Training) (Train (Training) (Train (Train) (Traina) per avviare la prima
 
     ![](images/AzureLabs-Lab310-17.png)
 
     ![](images/AzureLabs-Lab310-18.png)
 
-13. Dopo la creazione, sarà possibile visualizzare due pulsanti denominati **Impostazione predefinita** e **URL stima**. Fare clic su **Make default first** (Rendi impostazione predefinita), quindi fare clic su Prediction URL **(URL stima).**
+13. Dopo la creazione, sarà possibile visualizzare due pulsanti denominati **Impostazione predefinita** e **URL stima**. Fare clic su **Make default first** (Rendi impostazione predefinita) e quindi su Prediction URL **(URL stima).**
 
     ![](images/AzureLabs-Lab310-19.png)
 
@@ -206,7 +206,7 @@ Di seguito è riportata una configurazione tipica per lo sviluppo con la realtà
 
     ![](images/AzureLabs-Lab310-21.png)
 
-2.  È ora necessario specificare un nome di progetto Unity. Inserire **CustomVisionObjDetection**. Assicurarsi che il tipo di progetto sia impostato  su **3D** e impostare Percorso su un percorso appropriato per l'utente (tenere presente che più vicino alle directory radice è meglio). Fare quindi clic **su Crea progetto**.
+2.  È ora necessario specificare un nome di progetto Unity. Inserire **CustomVisionObjDetection**. Assicurarsi che il tipo di progetto sia impostato  su **3D** e impostare percorso su un percorso appropriato per l'utente (tenere presente che più vicino alle directory radice è meglio). Fare quindi clic **su Crea progetto**.
 
     ![](images/AzureLabs-Lab310-22.png)
 
@@ -223,7 +223,7 @@ Di seguito è riportata una configurazione tipica per lo sviluppo con la realtà
     1.  **Dispositivo di destinazione** impostato su **HoloLens**        
     2.  **Il tipo di** compilazione è impostato **su D3D**
     3.  **L'SDK** è impostato su **Più recente installato**
-    4.  **Visual Studio Version è** impostato su **Latest installed (Versione più recente installata)**
+    4.  **Visual Studio versione è** impostata su **Più recente installato**
     5.  **Compilazione ed esecuzione** è impostato su **Computer locale**            
     6.  Le impostazioni rimanenti, in **Build Impostazioni**, devono essere lasciato come impostazioni predefinite per il momento.
 
@@ -239,7 +239,7 @@ Di seguito è riportata una configurazione tipica per lo sviluppo con la realtà
 
         2. **Il back-end di** scripting deve **essere .NET.**
 
-        3. **Il livello di compatibilità dell'API** **deve essere .NET 4.6.**
+        3. **Il livello di compatibilità dell'API** deve essere **.NET 4.6.**
 
             ![](images/AzureLabs-Lab310-26.png)
 
@@ -257,7 +257,7 @@ Di seguito è riportata una configurazione tipica per lo sviluppo con la realtà
 
         ![](images/AzureLabs-Lab310-29.png)
 
-8.  In **Build Impostazioni**, Unity C Projects (Progetti *Unity \# C)* non è più in grigio: selezionare la casella di controllo accanto a questo.
+8.  In **Build Impostazioni**, *Unity C \# Projects* (Progetti Unity C) non è più in grigio: selezionare la casella di controllo accanto a questo.
 
 9.  Chiudere la finestra **Build Settings** (Impostazioni compilazione).
 
@@ -281,7 +281,7 @@ Per questo corso viene fornito un pacchetto di asset Unity denominato **Azure-MR
 
 È possibile trovare il [pacchetto Azure-MR-310](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20310%20-%20Object%20detection/Azure-MR-310.unitypackage)che è necessario scaricare qui.
 
-1.  Con il dashboard unity davanti all'utente, fare clic su Asset **nel** menu nella parte superiore della schermata, quindi fare clic su Importa pacchetto > **pacchetto personalizzato**.
+1.  Con il dashboard unity davanti all'utente, fare clic su **Asset nel** menu nella parte superiore della schermata, quindi fare clic su Importa pacchetto > **pacchetto personalizzato**.
 
     ![](images/AzureLabs-Lab310-33.png)
 
@@ -300,8 +300,8 @@ Per questo corso viene fornito un pacchetto di asset Unity denominato **Azure-MR
     3.  La **cartella Prefabs** contiene i prefab contenuti nella scena. Essi sono:
 
         1.  **GazeCursor**, il cursore usato nell'applicazione. Funzionerà insieme al prefab SpatialMapping per poter essere posizionato nella scena sopra gli oggetti fisici.
-        2.  Etichetta **,** che è l'oggetto dell'interfaccia utente usato per visualizzare il tag dell'oggetto nella scena quando necessario.
-        3.  **SpatialMapping**, ovvero l'oggetto che consente all'applicazione di usare la creazione di una mappa virtuale, usando il Microsoft HoloLens spaziale.
+        2.  Etichetta , che è l'oggetto dell'interfaccia utente usato per visualizzare il tag dell'oggetto nella scena quando necessario.
+        3.  **SpatialMapping**, ovvero l'oggetto che consente all'applicazione di usare la creazione di una mappa virtuale, usando il rilevamento spaziale Microsoft HoloLens'oggetto .
 
     4.  Cartella **Scenes** che attualmente contiene la scena predefinita per questo corso.
 
@@ -317,7 +317,7 @@ Per questo corso viene fornito un pacchetto di asset Unity denominato **Azure-MR
 A questo punto è possibile scrivere codice. Si inizierà con la **classe CustomVisionAnalyser.**
 
 > [!NOTE]
-> Le chiamate al servizio **Visione personalizzata**, effettuate nel codice illustrato di seguito, vengono effettuate usando l'API **REST Visione personalizzata .** Usando questa funzionalità, si scoprirà come implementare e usare questa API (utile per comprendere come implementare qualcosa di simile in modo personalizzato). Tenere presente che Microsoft offre Visione personalizzata **SDK** che può essere usato anche per effettuare chiamate al servizio. Per altre informazioni, vedere [l'articolo Visione personalizzata SDK.](https://github.com/Microsoft/Cognitive-CustomVision-Windows/)
+> Le chiamate al servizio **Visione personalizzata**, effettuate nel codice riportato di seguito, vengono effettuate usando l'API REST Visione personalizzata **.** Usando questa funzionalità, si scoprirà come implementare e usare questa API (utile per comprendere come implementare qualcosa di simile in modo personalizzato). Tenere presente che Microsoft offre Visione personalizzata **SDK** che può essere usato anche per effettuare chiamate al servizio. Per altre informazioni, vedere [l'articolo Visione personalizzata SDK.](https://github.com/Microsoft/Cognitive-CustomVision-Windows/)
 
 Questa classe è responsabile di:
 
@@ -331,7 +331,7 @@ Questa classe è responsabile di:
 
 Per creare questa classe:
 
-1.  Fare clic con il pulsante destro **del mouse** nella cartella Asset , che si trova nel pannello **Project ,** quindi scegliere **Crea**  >  **cartella**. Chiamare la cartella **Scripts**.
+1.  Fare clic con il pulsante destro **del mouse** nella cartella Asset , che si trova nel **pannello Project**, quindi scegliere **Crea**  >  **cartella**. Chiamare la cartella **Scripts**.
 
     ![](images/AzureLabs-Lab310-37.png)
 
@@ -341,7 +341,7 @@ Per creare questa classe:
 
 4.  Fare doppio clic sul nuovo script **CustomVisionAnalyser** per aprirlo con **Visual Studio.**
 
-5.  Assicurarsi di avere gli spazi dei nomi seguenti a cui viene fatto riferimento nella parte superiore del file:
+5.  Assicurarsi di avere gli spazi dei nomi seguenti a cui viene fatto riferimento all'inizio del file:
 
     ```csharp
     using Newtonsoft.Json;
@@ -376,7 +376,7 @@ Per creare questa classe:
     ```
 
     > [!NOTE]
-    > Assicurarsi di inserire la **chiave di stima del servizio** nella variabile **predictionKey** e **prediction-endpoint** nella **variabile predictionEndpoint.** Sono stati copiati [in Blocco note precedente, nel capitolo 2, passaggio 14.](#chapter-2---training-your-custom-vision-project)
+    > Assicurarsi di inserire la **chiave di stima del** servizio nella variabile **predictionKey** e **prediction-endpoint** nella **variabile predictionEndpoint.** Sono stati copiati in [Blocco note precedente, nel capitolo 2, passaggio 14.](#chapter-2---training-your-custom-vision-project)
 
 7.  È ora necessario aggiungere il codice per **Awake()** per inizializzare la variabile Instance:
 
@@ -488,7 +488,7 @@ Per creare questa classe:
     > [!WARNING]
     > È importante seguire attentamente l'istruzione successiva. Se si inserendo le nuove dichiarazioni di classe all'interno della classe **CustomVisionObjects,** si riceveranno errori di compilazione nel capitolo [10,](#chapter-10---create-the-imagecapture-class)indicando che **AnalysisRootObject** e **BoundingBox** non sono stati trovati.
 
-5.  Aggiungere le classi seguenti *all'esterno* **della classe CustomVisionObjects.** Questi oggetti vengono usati dalla libreria **Newtonsoft** per serializzare e deserializzare i dati della risposta:
+5.  Aggiungere le classi seguenti *all'esterno* **della classe CustomVisionObjects.** Questi oggetti vengono usati dalla libreria **Newtonsoft** per serializzare e deserializzare i dati di risposta:
 
     ```csharp
     // The objects contained in this script represent the deserialized version
@@ -783,7 +783,7 @@ Questa classe:
 
 -   Configurare la *fotocamera principale* collegando i componenti appropriati.
 
--   Quando viene rilevato un oggetto, sarà responsabile del calcolo della posizione nel mondo reale e dell'posizionamento di un'etichetta **di** tag accanto all'oggetto con il nome **tag appropriato.**    
+-   Quando viene rilevato, un oggetto sarà responsabile del calcolo della posizione nel mondo reale e del posizionamento di un'etichetta **di** tag accanto all'oggetto con il nome **tag appropriato.**    
 
 Per creare questa classe:
 
@@ -961,7 +961,7 @@ Per creare questa classe:
         }
     ```
 
-9.  Aggiungere il **metodo CalculateBoundingBoxPosition(),** che ospita una serie  di calcoli necessari per convertire le coordinate del rettangolo di selezione recuperate dal servizio e ricrearle in modo proporzionale sul quad.
+9.  Aggiungere il **metodo CalculateBoundingBoxPosition(),** che ospita una serie di calcoli necessari per convertire le coordinate *del* rettangolo di selezione recuperate dal servizio e ricrearle in modo proporzionale sul quad.
 
     ```csharp
         /// <summary>
@@ -1017,7 +1017,7 @@ La classe successiva che si creerà è **la classe ImageCapture.**
 
 Questa classe è responsabile di:
 
-*   Acquisizione di un'immagine con HoloLens fotocamera e archiviazione nella *cartella App.*
+*   Acquisizione di un'immagine HoloLens fotocamera e archiviazione nella *cartella App.*
 *   Gestione dei *movimenti tocco* da parte dell'utente.
 
 Per creare questa classe:
@@ -1239,12 +1239,12 @@ Dopo aver scritto tutto il codice necessario per questo progetto, è il momento 
 
     ![](images/AzureLabs-Lab310-38.png)
 
-3.   Nel pannello **Project** aprire la cartella Prefab , trascinare il **prefab** **Etichetta** nell'area di input della destinazione di riferimento etichetta vuota, nello script **SceneOrganiser** appena aggiunto alla fotocamera principale, come illustrato nell'immagine seguente: 
+3.  Nel pannello  **Project** aprire la cartella Prefab , trascinare il **prefab** **Etichetta** nell'area di input della destinazione di riferimento etichetta vuota, nello script **SceneOrganiser** appena aggiunto alla fotocamera principale, come illustrato nell'immagine seguente: 
 
     ![](images/AzureLabs-Lab310-39.png)
 
 4.  Nel pannello **Hierarchy (Gerarchia)** selezionare **l'elemento figlio GazeCursor** della **fotocamera principale.**
-5.  Nel pannello **Inspector (Controllo)** con **gazeCursor** selezionato fare clic su **Add Component**(Aggiungi componente), quindi cercare lo script **GazeCursor** e fare doppio clic su per aggiungerlo.
+5.  Nel pannello **Inspector (Controllo)** con **gazeCursor** selezionato fare clic su **Add Component**(Aggiungi componente), cercare lo script **GazeCursor** e fare doppio clic su di esso per aggiungerlo.
 
     ![](images/AzureLabs-Lab310-40.png)
 
@@ -1253,7 +1253,7 @@ Dopo aver scritto tutto il codice necessario per questo progetto, è il momento 
 
     ![](images/AzureLabs-Lab310-41.png)
 
-Gli script rimanenti non impostati verranno aggiunti dal codice nello script **SceneOrganiser** durante il runtime.
+Gli script rimanenti non impostati verranno aggiunti dal codice nello script **SceneOrganiser,** durante il runtime.
 
 ## <a name="chapter-12---before-building"></a>Capitolo 12 - Prima della compilazione
 
@@ -1270,7 +1270,7 @@ Prima di procedere, assicurarsi che:
     - Assicurarsi di inserire la **chiave di stima del servizio** nella variabile **predictionKey.**
     - L'endpoint **di stima è stato** inserito nella **classe predictionEndpoint.**
 
-## <a name="chapter-13---build-the-uwp-solution-and-sideload-your-application"></a>Capitolo 13- Compilare la soluzione UWP e sideload dell'applicazione
+## <a name="chapter-13---build-the-uwp-solution-and-sideload-your-application"></a>Capitolo 13 - Compilare la soluzione UWP e sideload dell'applicazione
 
 A questo punto è possibile compilare l'applicazione come soluzione UWP in cui sarà possibile eseguire la distribuzione nel Microsoft HoloLens. Per avviare il processo di compilazione:
 
@@ -1286,25 +1286,25 @@ A questo punto è possibile compilare l'applicazione come soluzione UWP in cui s
 
 5.  Unity inizierà a compilare il progetto nella **cartella App.**
 
-6.  Al termine della compilazione di Unity (potrebbe essere necessario del tempo), verrà aperta una finestra **Esplora file** nel percorso della compilazione (controllare la barra delle applicazioni, perché potrebbe non essere sempre visualizzata sopra le finestre, ma verrà notificata l'aggiunta di una nuova finestra).
+6.  Al termine della compilazione di Unity (potrebbe essere necessario del tempo), verrà aperta una finestra **di Esplora file** nel percorso della compilazione (controllare la barra delle applicazioni, perché potrebbe non essere sempre visualizzata sopra le finestre, ma verrà notificata l'aggiunta di una nuova finestra).
 
-7.  Per eseguire la distribuzione in Microsoft HoloLens, è necessario l'indirizzo IP del dispositivo (per la distribuzione remota) e assicurarsi che sia impostata anche la **modalità sviluppatore.** Per eseguire questa operazione:
+7.  Per eseguire la distribuzione in Microsoft HoloLens, è necessario l'indirizzo IP del dispositivo (per la distribuzione remota) e assicurarsi che sia impostata anche **la modalità sviluppatore.** Per eseguire questa operazione:
 
     1.  Mentre si indossa il HoloLens, aprire il **Impostazioni**.
 
-    2.  Passare a **Network & Internet** Wi-Fi Advanced Options (Opzioni avanzate  >  **Wi-Fi Internet)**  >  
+    2.  Passare a **Opzioni avanzate &**  >  **Wi-Fi Internet**  >  
 
     3.  Prendere nota **dell'indirizzo IPv4.**
 
-    4.  Tornare quindi a Impostazioni **e** quindi a Update **& Security**  >  **for Developers**
+    4.  Tornare quindi a **Impostazioni** e quindi a **Update & Security** for  >  **Developers**
 
     5.  Impostare **la modalità sviluppatore** *su*.
 
-8.  Passare alla nuova build di Unity (cartella **App)** e aprire il file di soluzione con **Visual Studio**.
+8.  Passare alla nuova build di Unity (cartella **App)** e aprire il file di soluzione **con Visual Studio**.
 
 9.  In Configurazione soluzione selezionare **Debug**.
 
-10. In Piattaforma soluzione selezionare **x86, Computer remoto**. Verrà richiesto di inserire l'indirizzo **IP** di un dispositivo remoto (la Microsoft HoloLens, in questo caso, che è stata notata).
+10. In Piattaforma soluzione selezionare **x86, Computer remoto**. Verrà richiesto di inserire l'indirizzo **IP** di un dispositivo remoto (il Microsoft HoloLens, in questo caso, che è stato specificato).
 
     ![](images/AzureLabs-Lab310-43.png)
 
@@ -1325,7 +1325,7 @@ A questo punto è possibile compilare l'applicazione come soluzione UWP in cui s
 
 ## <a name="your-custom-vision-object-detection-application"></a>Applicazione Visione personalizzata, Rilevamento oggetti
 
-È stata compilata un'app di realtà mista che sfrutta l'API rilevamento oggetti di Azure Visione personalizzata, in grado di riconoscere un oggetto da un'immagine e quindi fornire una posizione approssimativa per tale oggetto nello spazio 3D.
+È stata creata un'app di realtà mista che sfrutta l'API rilevamento oggetti di Azure Visione personalizzata, in grado di riconoscere un oggetto da un'immagine e quindi fornire una posizione approssimativa per tale oggetto nello spazio 3D.
 
 ![](images/AzureLabs-Lab310-00.png)
 
@@ -1333,11 +1333,11 @@ A questo punto è possibile compilare l'applicazione come soluzione UWP in cui s
 
 ### <a name="exercise-1"></a>Esercizio 1
 
-Aggiungendo all'etichetta di testo, usare un cubo semitrasparente per eseguire il wrapping dell'oggetto reale in un rettangolo di *selezione* 3D.
+Aggiungendo all'etichetta di testo, usare un cubo semitrasparente per eseguire il wrapping dell'oggetto reale in un rettangolo di *selezione 3D.*
 
 ### <a name="exercise-2"></a>Esercizio 2
 
-Eseguire il training del Visione personalizzata per riconoscere più oggetti.
+Eseguire il training Visione personalizzata service per riconoscere più oggetti.
 
 ### <a name="exercise-3"></a>Esercizio 3
 
