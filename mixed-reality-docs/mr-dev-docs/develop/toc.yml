@@ -1,6 +1,6 @@
 - name: Introduzione allo sviluppo di app di Realtà mista
   items:
-    - name: Guida introduttiva
+    - name: Introduzione
       href: development.md
     - name: Installare gli strumenti
       href: install-the-tools.md
@@ -234,6 +234,8 @@
           href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
         - name: Interoperabilità nativa di realtà mista in Unity
           href: unity/unity-xrdevice-advanced.md
+        - name: Usare le risorse del PC per alimentare l'app
+          href: unity/use-pc-resources.md
         - name: Uso di Vuforia
           href: unity/vuforia-development-overview.md
     - name: VR immersive
@@ -266,8 +268,8 @@
           href: unity/managed-debugging-with-unity-il2cpp.md
         - name: Impostazioni consigliate per Unity
           href: unity/recommended-settings-for-unity.md
-        - name: Visualizzare in anteprima il lavoro con Holographic Remoting
-          href: unity/holographic-remoting-in-unity.md
+        - name: Visualizzare in anteprima ed eseguire il debug dell'app con Holographic Remoting
+          href: unity/preview-and-debug-your-app.md
     - name: Soluzioni di Visual Studio
       items:
         - name: Esportazione e creazione di una soluzione di Visual Studio Unity
@@ -452,21 +454,21 @@
           href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: Holographic Remoting
       items:
-        - name: Panoramica
+        - name: Panoramica della comunicazione remota olografica
           href: platform-capabilities-and-apis/holographic-remoting-overview.md
-        - name: Lettore holographic Remoting
+        - name: Lettore Holographic Remoting
           href: platform-capabilities-and-apis/holographic-remoting-player.md
-        - name: Scrivere un'app remota Holographic Remoting
+        - name: Scrittura di un'app remota Holographic Remoting (C++)
           items:
             - name: API HolographicSpace
               href: platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md
             - name: API di OpenXR
               href: platform-capabilities-and-apis/holographic-remoting-create-remote-openxr.md
-        - name: Scrivere un'app lettore Holographic Remoting personalizzata
+        - name: Scrittura di un'app holographic Remoting Player personalizzata (C++)
           href: platform-capabilities-and-apis/holographic-remoting-create-player.md
-        - name: Canali di dati di Holographic Remoting personalizzati
+        - name: Canali di dati olografici remoti personalizzati (C++)
           href: platform-capabilities-and-apis/holographic-remoting-custom-data-channels.md
-        - name: Proteggere la connessione con Holographic Remoting
+        - name: Connessione sicura con Holographic Remoting (C++)
           href: platform-capabilities-and-apis/holographic-remoting-secure-connection.md
         - name: Risoluzione dei problemi e limitazioni
           href: platform-capabilities-and-apis/holographic-remoting-troubleshooting.md
