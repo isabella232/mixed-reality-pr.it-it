@@ -126,9 +126,9 @@
               items:
                 - name: HoloLens (prima generazione) Nozioni di base 100 - Introduzione a Unity
                   href: unity/tutorials/holograms-100.md
-                - name: HoloLens (prima generazione) Nozioni di base 101 - Completare il progetto con il dispositivo
+                - name: HoloLens (prima generazione) Nozioni di base 101 - Progetto completo con dispositivo
                   href: unity/tutorials/holograms-101.md
-                - name: HoloLens (prima generazione) Basics 101E - Completare il progetto con l'emulatore
+                - name: HoloLens (prima generazione) Nozioni di base 101E - Progetto completo con emulatore
                   href: unity/tutorials/holograms-101e.md
                 - name: HoloLens (prima generazione) Input 210 - Sguardo fisso
                   href: unity/tutorials/holograms-210.md
@@ -136,11 +136,11 @@
                   href: unity/tutorials/holograms-211.md
                 - name: HoloLens (prima generazione) Input 212 - Voce
                   href: unity/tutorials/holograms-212.md
-                - name: HoloLens (prima generazione) Spaziale 220 - Suono spaziale
+                - name: HoloLens (prima generazione) Spaziale 220 - Audio spaziale
                   href: unity/tutorials/holograms-220.md
                 - name: HoloLens (prima generazione) Spaziale 230 - Mapping spaziale
                   href: unity/tutorials/holograms-230.md
-                - name: HoloLens (prima generazione) Condivisione di 240 - Più HoloLens dispositivi
+                - name: HoloLens (prima generazione) Condivisione 240 - Più HoloLens mobili
                   href: unity/tutorials/holograms-240.md
             - name: Realtà mista e servizi di Azure
               items:
@@ -152,13 +152,13 @@
                   href: unity/tutorials/mr-azure-302b.md
                 - name: HoloLens (prima generazione) e Azure 303 - Comprensione del linguaggio naturale
                   href: unity/tutorials/mr-azure-303.md
-                - name: HoloLens (prima generazione) e Azure 304 - Riconoscimento del viso
+                - name: HoloLens (prima generazione) e Azure 304 - Riconoscimento volto
                   href: unity/tutorials/mr-azure-304.md
                 - name: HoloLens (prima generazione) e Azure 305 - Funzioni e archiviazione
                   href: unity/tutorials/mr-azure-305.md
                 - name: HoloLens (prima generazione) e Azure 306 - Streaming video
                   href: unity/tutorials/mr-azure-306.md
-                - name: HoloLens (prima generazione) e Azure 307 - Apprendimento di Maching
+                - name: HoloLens (prima generazione) e Azure 307 - Apprendimento maching
                   href: unity/tutorials/mr-azure-307.md
                 - name: HoloLens (prima generazione) e Azure 308 - Notifiche tra dispositivi
                   href: unity/tutorials/mr-azure-308.md
@@ -168,7 +168,7 @@
                   href: unity/tutorials/mr-azure-310.md
                 - name: HoloLens (prima generazione) e Azure 311 - Microsoft Graph
                   href: unity/tutorials/mr-azure-311.md
-                - name: HoloLens (prima generazione) e Azure 312 - Integrazione del bot
+                - name: HoloLens (prima generazione) e Azure 312 - Integrazione di bot
                   href: unity/tutorials/mr-azure-312.md
                 - name: HoloLens (prima generazione) e Azure 313 - Servizio hub IoT
                   href: unity/tutorials/mr-azure-301.md
@@ -176,7 +176,7 @@
       items:
         - name: Scelta di una versione di Unity e di un plug-in XR
           href: unity/choosing-unity-version.md
-        - name: Configurazione della configurazione XR
+        - name: Configurazione di XR
           href: unity/xr-project-setup.md
         - name: Strumento per la funzionalità di realtà mista
           items:
@@ -196,7 +196,7 @@
       items:
         - name: Impostazione della fotocamera
           href: unity/camera-in-unity.md
-        - name: Blocco del mondo e ancoraggi spaziali
+        - name: Blocco del mondo e ancoraggi nello spaziale
           href: unity/spatial-anchors-in-unity.md
         - name: Esperienze condivise
           href: unity/shared-experiences-in-unity.md
@@ -218,9 +218,11 @@
           href: unity/spatial-mapping-in-unity.md
         - name: Audio spaziale
           href: unity/spatial-sound-in-unity.md
+        - name: Informazioni sulle scene
+          href: unity/scene-understanding-sdk.md
     - name: Funzionalità avanzate
       items:
-        - name: Fotocamera video
+        - name: Fotocamera con foto
           href: unity/locatable-camera-in-unity.md
         - name: Punto di interesse
           href: unity/focus-point-in-unity.md
@@ -252,7 +254,7 @@
               href: unity/periodic-table-of-the-elements-2.md
             - name: Galaxy Explorer 2.0
               href: unity/galaxy-explorer-update.md
-            - name: Concetti fondamentali sulla qualità
+            - name: Nozioni fondamentali sulla qualità
               href: unity/quality-fundamentals.md
         - name: HoloLens (prima generazione)
           items:
@@ -264,6 +266,8 @@
               href: unity/lunar-module.md
     - name: Debug e prestazioni
       items:
+        - name: Consigli sulle prestazioni per Unity
+          href: unity/performance-recommendations-for-unity.md
         - name: Debug gestito con Unity
           href: unity/managed-debugging-with-unity-il2cpp.md
         - name: Impostazioni consigliate per Unity
@@ -278,7 +282,7 @@
           href: unity/best-practices-for-working-with-unity-and-visual-studio.md
     - name: Note sulla versione
       items:
-        - name: Plug-in OpenXR per Realtà mista
+        - name: Plug-in OpenXR di realtà mista
           href: unity/openxr-release-notes.md
 - name: Unreal
   items:
@@ -292,7 +296,7 @@
       href: unreal/unreal-porting.md
     - name: Avvi rapidi
       items:
-        - name: Creazione della prima HoloLens unreal
+        - name: Creazione della prima applicazione HoloLens Unreal
           href: unreal/unreal-quickstart.md
     - name: Esercitazioni
       items:
@@ -372,13 +376,13 @@
       href: javascript/webxr-overview.md
     - name: Esercitazioni
       items:
-        - name: Realtà Hello World virtuale con BabylonJS
+        - name: Vr Hello World uso di BabylonJS
           items:
             - name: 1. Introduzione
               href: javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md
             - name: 2. Preparare una scena con un oggetto 3D di base
               href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
-            - name: 3. Interagire con un oggetto 3D
+            - name: 3. Interagire con l'oggetto 3D
               href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
 - name: Motore personalizzato
   items:
@@ -422,15 +426,13 @@
   items:
     - name: Componenti fondamentali
       items:
-        - name: Informazioni sulle scene
-          href: platform-capabilities-and-apis/scene-understanding-sdk.md
         - name: Ancoraggi nello spazio condivisi
           href: platform-capabilities-and-apis/shared-spatial-anchors-in-directx.md
-        - name: 'Input da tastiera, mouse e controller'
+        - name: 'Input da tastiera, mouse e controller (con esempi C++)'
           href: platform-capabilities-and-apis/keyboard-mouse-and-controller-input-in-directx.md
         - name: Uso di XAML con app DirectX olografiche
           href: platform-capabilities-and-apis/using-xaml-with-holographic-directx-apps.md
-        - name: Rilevamento di codici a matrice
+        - name: Rilevamento del codice a livello di codice (con esempi C# e C++)
           href: platform-capabilities-and-apis/qr-code-tracking.md
     - name: Esperienze condivise in Realtà mista
       items:
@@ -440,13 +442,13 @@
           href: /azure/spatial-anchors/
         - name: Visualizzazione spettatore
           href: platform-capabilities-and-apis/spectator-view.md
-        - name: WebRTC
+        - name: 'WebRTC (C#, C++, Unity)'
           href: 'https://github.com/microsoft/MixedReality-WebRTC'
     - name: Fotocamera e acquisizione
       items:
-        - name: Fotocamera individuabile
+        - name: Fotocamera localizzata (con esempi C++)
           href: platform-capabilities-and-apis/locatable-camera.md
-        - name: Acquisizione realtà mista per sviluppatori
+        - name: Acquisizione di realtà mista per sviluppatori (con esempi C# e C++)
           href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md
         - name: 'Come funziona: Mixed Reality Capture Studio'
           href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
@@ -454,7 +456,7 @@
           href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: Holographic Remoting
       items:
-        - name: Panoramica di Holographic Remoting
+        - name: Panoramica della comunicazione remota olografica
           href: platform-capabilities-and-apis/holographic-remoting-overview.md
         - name: Lettore Holographic Remoting
           href: platform-capabilities-and-apis/holographic-remoting-player.md
@@ -464,9 +466,9 @@
               href: platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md
             - name: API di OpenXR
               href: platform-capabilities-and-apis/holographic-remoting-create-remote-openxr.md
-        - name: Scrittura di un'app Holographic Remoting Player personalizzata (C++)
+        - name: Scrittura di un'app holographic Remoting Player personalizzata (C++)
           href: platform-capabilities-and-apis/holographic-remoting-create-player.md
-        - name: Canali di dati di Holographic Remoting personalizzati (C++)
+        - name: Canali di dati olografici remoti personalizzati (C++)
           href: platform-capabilities-and-apis/holographic-remoting-custom-data-channels.md
         - name: Connessione sicura con Holographic Remoting (C++)
           href: platform-capabilities-and-apis/holographic-remoting-secure-connection.md
@@ -484,12 +486,10 @@
           href: platform-capabilities-and-apis/app-quality-criteria.md
         - name: Rendering olografico
           href: platform-capabilities-and-apis/rendering.md
-        - name: Rendering dei volumi
+        - name: Rendering del volume (con esempi C++)
           href: platform-capabilities-and-apis/volume-rendering.md
-        - name: Stabilità degli ologrammi
+        - name: Stabilità dell'ologramma (con esempi C#)
           href: platform-capabilities-and-apis/hologram-stability.md
-        - name: Uso del piano di stabilizzazione per ridurre la turbolenza olografica
-          href: platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md
         - name: Informazioni sulle prestazioni per la realtà mista
           href: platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md
         - name: Consigli sulle prestazioni per Unity
@@ -506,13 +506,13 @@
           href: platform-capabilities-and-apis/advanced-hololens-emulator-and-mixed-reality-simulator-input.md
         - name: Archivio dell'emulatore HoloLens
           href: platform-capabilities-and-apis/hololens-emulator-archive.md
-        - name: Simulazione della percezione
+        - name: Simulazione della percezione (con esempi C#)
           href: platform-capabilities-and-apis/perception-simulation.md
     - name: Portale di dispositivi
       items:
         - name: Uso del Portale di dispositivi di Windows
           href: platform-capabilities-and-apis/using-the-windows-device-portal.md
-        - name: Informazioni di riferimento sulle API di Portale di dispositivi
+        - name: Informazioni di riferimento sulle API del portale dei dispositivi (REST)
           href: platform-capabilities-and-apis/device-portal-api-reference.md
     - name: Strumenti di ricerca
       items:

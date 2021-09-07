@@ -5,14 +5,15 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
-keywords: HoloLens, sincronizzazione, ancoraggio nello spaziale, trasferimento, multiplayer, visualizzazione, scenario, procedura dettagliata, codice di esempio, Azure, Ancoraggi nello stato di Azure, ASA
-ms.openlocfilehash: df78d9e2477fe377d61d2f2c13fc35e0a25b0b2cc37eeb883a69d2041fe42f9b
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+keywords: HoloLens, sincronizzare, ancoraggi nello spaziale, trasferimento, multiplayer, visualizzazione, scenario, procedura dettagliata, codice di esempio, Azure, Ancoraggi nello stato di Azure, ASA
+ms.openlocfilehash: 6b1b98539c05849064f1c33ed859bc925ed5fd31
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115193545"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244320"
 ---
+<!--Unity Note: No Unity specific content in this article. -->
 # <a name="shared-experiences-in-directx"></a>Esperienze condivise in DirectX
 
 > [!NOTE]
@@ -28,7 +29,7 @@ Un'esperienza condivisa è quella in cui più utenti con il proprio dispositivo 
 
 Per iniziare a creare esperienze condivise nell'app HoloLens, provare la guida introduttiva di Ancoraggi nello <a href="/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">spazio di Azure HoloLens di 5 minuti.</a>
 
-Quando si è in esecuzione con Ancoraggi nello spazio di Azure, è possibile creare e individuare <a href="/azure/spatial-anchors/concepts/create-locate-anchors-cpp-winrt" target="_blank">ancoraggi in HoloLens</a>.  Sono disponibili procedure dettagliate anche per Android e <a href="/azure/spatial-anchors/create-locate-anchors-overview" target="_blank">iOS,</a> che consentono di condividere gli stessi ancoraggi in tutti i dispositivi.
+Quando si è in esecuzione con Ancoraggi nello spazio di Azure, è possibile creare e individuare ancoraggi <a href="/azure/spatial-anchors/concepts/create-locate-anchors-cpp-winrt" target="_blank">in HoloLens</a>.  Sono disponibili procedure dettagliate anche per Android e <a href="/azure/spatial-anchors/create-locate-anchors-overview" target="_blank">iOS,</a> che consentono di condividere gli stessi ancoraggi in tutti i dispositivi.
 
 ## <a name="local-anchor-transfers"></a>Trasferimenti di ancoraggi locali
 

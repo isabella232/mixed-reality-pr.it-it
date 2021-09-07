@@ -2,22 +2,22 @@
 title: Oggetto che supporta interazioni
 description: Informazioni su come attivare eventi, fornire segnali visivi e interagire con gli oggetti nelle applicazioni di realtà mista.
 author: cre8ivepark
-ms.author: v-hferrone
+ms.author: dongpark
 ms.date: 06/06/2019
 ms.topic: article
 keywords: Realtà mista, controlli, interazione, segnali, interfaccia utente, esperienza utente, visore VR di realtà mista, visore VR di realtà mista windows, visore VR di realtà virtuale, HoloLens, MRTK, realtà mista Toolkit, audio
-ms.openlocfilehash: 9ce682de7e400eba6ffbaccbca34065a1f09966f842cffd6853f3a064f146904
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: f1fe68c7f35fecb9fbee888893fb15a83a8595ec
+ms.sourcegitcommit: 4f1697b11e5638db9bbd0bd7a671d846d54c6389
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115190752"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "122683000"
 ---
 # <a name="interactable-object"></a>Oggetto che supporta interazioni
 
 ![Oggetti interactible](images/UX_Hero_Interactable.jpg)
 
-Un pulsante è da tempo una metafora usata per attivare un evento nel mondo astratto 2D. Nel mondo della realtà mista tridimensionale non è più necessario limitarsi a questo mondo di astrazione. Qualsiasi elemento può essere **un oggetto che può** interagire che attiva un evento. Un oggetto che può interagire può essere qualsiasi cosa, da una tazzina da caffè su un tavolo a un balloon in midair. I pulsanti tradizionali vengono comunque utilizzati in determinate situazioni, ad esempio nell'interfaccia utente della finestra di dialogo. La rappresentazione visiva del pulsante dipende dal contesto.
+Un pulsante è da tempo una metafora usata per attivare un evento nel mondo astratto 2D. Nel mondo della realtà mista tridimensionale non è più necessario limitarsi a questo mondo di astrazione. Qualsiasi elemento può essere **un oggetto intervienibile** che attiva un evento. Un oggetto che può interagire può essere qualsiasi cosa, da una tazzina da caffè su un tavolo a un balloon in midair. I pulsanti tradizionali vengono ancora utilizzati in determinate situazioni, ad esempio nell'interfaccia utente della finestra di dialogo. La rappresentazione visiva del pulsante dipende dal contesto.
 
 <br>
 
@@ -97,7 +97,7 @@ Usare il feedback visivo per comunicare gli stati seguenti:
 * **Distanza e punto di interazione:** quando la mano si avvicina a un ologramma, progettare il feedback per comunicare il punto di interazione proiettato e la distanza dall'oggetto del dito
 * **Inizio contatto:** modifica gli oggetti visivi (luce, colore) per comunicare che si è verificato un tocco
 * **Afferrato:** modifica gli oggetti visivi (luce, colore) quando l'oggetto viene afferrato
-* **Fine contatto:** modifica gli oggetti visivi (chiaro, colore) al termine del tocco
+* **Fine contatto:** modifica gli oggetti visivi (luce, colore) al termine del tocco
 
 <br>
 
@@ -171,7 +171,7 @@ Un [pulsante in HoloLens 2](/windows/mixed-reality/mrtk-unity/features/ux-buildi
         ### <a name="the-ring-visual-cue-on-hololens-2br"></a>Segnale visivo "anello" su HoloLens 2<br>
         In HoloLens 2 è presente un segnale visivo aggiuntivo che può aiutare la percezione della profondità da parte dell'utente. Un anello vicino alla punta del dito viene visualizzato e ridimensionato man mano che la punta del dito si avvicina all'oggetto. L'anello converge infine in un punto quando viene raggiunto lo stato premuto. Questo oggetto visivo consente all'utente di comprendere quanto sono distasi dall'oggetto.<br>
         <br>
-        *Ciclo video: esempio di feedback visivo basato sulla prossimità a un rettangolo di selezione*
+        *Ciclo video: esempio di feedback visivo basato sulla prossimità di un rettangolo di selezione*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
@@ -188,7 +188,7 @@ Un [pulsante in HoloLens 2](/windows/mixed-reality/mrtk-unity/features/ux-buildi
 ### <a name="audio-cues"></a>Segnali audio
 
 Per le interazioni con la mano diretta, un feedback audio appropriato può migliorare notevolmente l'esperienza utente. Usare il feedback audio per comunicare i segnali seguenti:
-* **Inizio contatto:** riprodurre l'audio all'inizio del tocco
+* **Inizio contatto:** riproduci l'audio all'inizio del tocco
 * **Fine contatto:** riprodurre l'audio all'estremità del tocco
 * **Inizia a afferrare:** riproduci l'audio all'avvio della cattura
 * **Grab ends (Fine afferra):** riproduci l'audio al termine dell'afferrare
@@ -229,18 +229,6 @@ Di seguito sono riportate le raccomandazioni per le dimensioni minime del conten
 ![Dimensioni di destinazione per l'interazione diretta con la mano](images/TargetSizingNear.jpg)<br>
 *Dimensioni di destinazione per l'interazione diretta con la mano*
 
-<br>
-
-### <a name="target-size-for-buttons"></a>Dimensioni di destinazione per i pulsanti
-
-Quando si creano pulsanti per l'interazione diretta, è consigliabile avere dimensioni minime maggiori di 3,2 x 3,2 cm per assicurarsi che sia disponibile spazio sufficiente per contenere un'icona e potenzialmente del testo.
-
-| Distanza | Dimensione minima |
-|---------|---------|
-| 45 cm  | 3,2 x 3,2 cm |
-
-![Dimensioni di destinazione per i pulsanti](images/TargetSizingButtons.png)<br>
-*Dimensioni di destinazione per i pulsanti*
 
 <br>
 

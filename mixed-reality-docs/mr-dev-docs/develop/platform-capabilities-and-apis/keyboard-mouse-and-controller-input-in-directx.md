@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, tastiera, mouse, controller di gioco, controller xbox, HoloLens, desktop, procedura dettagliata, codice di esempio
-ms.openlocfilehash: 2e83fa0a14a24eb98001c7dc88af062202a2ef9a5eee7cd53e9702dbe4eedc8e
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: e7ae65e660fe0348205fabc1c292328912fb1cdc
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115192025"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244174"
 ---
 # <a name="keyboard-mouse-and-controller-input-in-directx"></a>Input da tastiera, mouse e controller in DirectX
 
@@ -20,8 +20,8 @@ ms.locfileid: "115192025"
 
 Tastiere, mouse e controller di gioco possono essere tutte forme di input utili per Windows Mixed Reality dispositivi. Bluetooth tastiere e mouse sono entrambi supportati in HoloLens, per l'uso con il debug dell'app o come forma alternativa di input. Windows Mixed Reality supporta anche visori immersivi collegati a PC, dove topi, tastiere e controller di gioco sono stati la norma.
 
-Per usare l'input da tastiera HoloLens, associare una tastiera Bluetooth al dispositivo o usare l'input virtuale tramite il Windows Portale di dispositivi. Per usare l'input da tastiera mentre si indossa un visore immersivo Windows Mixed Reality, assegnare lo stato attivo per l'input alla realtà mista inserendo il dispositivo o usando la combinazione di tastiera Windows Tasto + Y. Tenere presente che le app destinate HoloLens devono fornire funzionalità senza questi dispositivi collegati.
-
+Per usare l'input da tastiera HoloLens, associare una tastiera Bluetooth al dispositivo o usare l'input virtuale tramite il Windows Portale di dispositivi. Per usare l'input da tastiera mentre si indossa un visore immersivo Windows Mixed Reality, assegnare lo stato attivo per l'input alla realtà mista inserendo il dispositivo o usando la combinazione di tasti Windows Tasto + Y. Tenere presente che le app destinate HoloLens devono fornire funzionalità senza questi dispositivi collegati.
+<!--Unity Note: the paragraph below explains that the article provides C++ code snippets. -->
 >[!NOTE]
 >I frammenti di codice in questo articolo illustrano attualmente l'uso di C++/CX anziché C++17 conforme a C++/WinRT come usato nel modello di progetto [olografico C++.](../native/creating-a-holographic-directx-project.md)  I concetti sono equivalenti per un progetto C++/WinRT, anche se è necessario tradurre il codice.
 
@@ -51,13 +51,13 @@ Da AppView.cpp:
 ```
 
 ### <a name="virtual-keyboard-input"></a>Input da tastiera virtuale
-Per i visori desktop immersivi, è possibile supportare le tastiere virtuali di cui Windows la visualizzazione immersiva implementando **CoreTextEditContext.** Ciò consente Windows informazioni sullo stato delle caselle di testo di cui è stato eseguito il rendering dell'app, in modo che la tastiera virtuale possa contribuire correttamente al testo.
+Per i visori desktop immersivi, è possibile supportare le tastiere virtuali di cui Windows sulla visualizzazione immersiva implementando **CoreTextEditContext.** In questo modo Windows lo stato delle caselle di testo di cui è stato eseguito il rendering dell'app, in modo che la tastiera virtuale possa contribuire correttamente al testo.
 
 Per altre informazioni sull'implementazione del supporto CoreTextEditContext, vedere [l'esempio CoreTextEditContext](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomEditControl).
 
 ### <a name="mouse-input"></a>Mouse Input
 
-È anche possibile usare l'input del mouse, anche in questo caso tramite i gestori eventi di input UWP CoreWindow. Ecco come modificare il modello di app Windows Holographic per supportare i clic del mouse nello stesso modo dei movimenti premuti. Dopo aver apportato questa modifica, un clic del mouse mentre si indossa un dispositivo vr immersivo riposiziona il cubo.
+È anche possibile usare l'input del mouse, anche in questo caso tramite i gestori eventi di input UWP CoreWindow. Ecco come modificare il modello Windows'app Holographic per supportare i clic del mouse nello stesso modo dei movimenti premuti. Dopo aver apportato questa modifica, un clic del mouse mentre si indossa un dispositivo vr immersivo riposiziona il cubo.
 
 > [!NOTE]
 > Le app UWP possono anche ottenere dati XY non elaborati per il mouse usando l'API [MouseDevice.](/uwp/api/Windows.Devices.Input.MouseDevice)
@@ -113,7 +113,7 @@ void MyHolographicAppMain::OnPointerPressed()
    }
 ```
 
-A questo punto, nel metodo Update sostituire la logica esistente per ottenere una posizione del puntatore con questa:
+A questo punto, nel metodo Update sostituire la logica esistente per ottenere una posizione di puntatore con questa:
 
 ```
 SpatialInteractionSourceState^ pointerState = m_spatialInputHandler->CheckForInput();
@@ -262,9 +262,9 @@ Ricompilare e ridistribuire. È ora possibile collegare o associare un controlle
 
 ## <a name="important-guidelines-for-keyboard-and-mouse-input"></a>Linee guida importanti per l'input da tastiera e mouse
 
-Esistono alcune differenze principali nel modo in cui questo codice può essere usato in Microsoft HoloLens, ovvero un dispositivo basato principalmente sull'input naturale dell'utente, rispetto a quanto disponibile in un PC abilitato per Windows Mixed Reality.
+Esistono alcune differenze principali nel modo in cui questo codice può essere usato in Microsoft HoloLens, ovvero un dispositivo basato principalmente sull'input naturale dell'utente, rispetto a ciò che è disponibile in un PC abilitato per Windows Mixed Reality.
 * Non è possibile fare affidamento sull'input della tastiera o del mouse per essere presenti. Tutte le funzionalità dell'app devono funzionare con lo sguardo, i movimenti e l'input vocale.
-* Quando una Bluetooth è collegata, può essere utile abilitare l'input da tastiera per qualsiasi testo che l'app potrebbe richiedere. Questo può essere un ottimo integratore per la dettatura, ad esempio.
+* Quando una Bluetooth tastiera è collegata, può essere utile abilitare l'input da tastiera per qualsiasi testo che l'app potrebbe richiedere. Questo può essere un ottimo integratore per la dettatura, ad esempio.
 * Quando si tratta di progettare l'app, non affidarsi (ad esempio) ai controlli WASD e di aspetto del mouse per il gioco. HoloLens è progettato per consentire all'utente di spostarsi nella stanza. In questo caso, l'utente controlla direttamente la fotocamera. Un'interfaccia per guidare la fotocamera intorno alla stanza con controlli di spostamento/aspetto non offrirà la stessa esperienza.
 * L'input da tastiera è un modo eccellente per controllare il debug dell'app o del motore di gioco, soprattutto perché l'utente non deve usare la tastiera. Il cablaggio è identico a quello usato con le API di evento CoreWindow. In questo scenario è possibile scegliere di implementare un modo per configurare l'app per indirizzare gli eventi della tastiera a una modalità "solo input di debug" durante le sessioni di debug.
 * Bluetooth anche i controller di rete funzionano.
