@@ -7,14 +7,19 @@ ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Realtà mista, MixedRealityToolkit, demo, record
-ms.openlocfilehash: 23f5dce85bdcd15e8950f5682814dec042bc604d7e983b17a5528949e51e844a
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: f30c745154056cda6b5ccf052efbbd0bb7f094ea
+ms.sourcegitcommit: 5d13ff165f4d08a3b028935fb39539a45a30f7e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115190515"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "127779465"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>Spectator View per HoloLens e HoloLens 2
+
+> [!WARNING]
+> Microsoft deprecerà l'esempio Disastabili View a causa di incompatibilità con la versione del pacchetto SDK di Ancoraggi nello stato di Azure su cui si basa l'esempio. Inoltre, l'esempio potrebbe smettere di funzionare a causa di altre modifiche nell'ambiente Unity quando i clienti passano alle build LTS 2019 supportate.
+>
+> Anche se Microsoft attualmente non sta investendo risorse per risolvere i problemi precedenti, potrebbe essere possibile rimuovere la funzionalità di Ancoraggi nello spazio di Azure dall'esempio e basarsi su una tecnologia come i codici a codici a barre per l'allineamento.   Se i membri della community inviano richieste di richiesta per risolvere questi problemi, microsoft li rivedrà e accetterà per il momento.
 
 ![Marcatore](images/SpecViewPhoneHero.jpg)
 
