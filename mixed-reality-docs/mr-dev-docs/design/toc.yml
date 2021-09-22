@@ -150,5 +150,7 @@
       href: asset-creation-process.md
     - name: Progettare ambienti immersivi personalizzati
       href: add-custom-home-environments.md
-    - name: Figma Toolkit
+    - name: MrTK Figma Toolkit
       href: figma-toolkit.md
+    - name: Figma Bridge for Unity
+      href: figma-unity-bridge.md
