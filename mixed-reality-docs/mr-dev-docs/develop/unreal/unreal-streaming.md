@@ -10,16 +10,16 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, realtà mista, str
 appliesto:
 - HoloLens
 - HoloLens 2
-ms.openlocfilehash: 77f32cafa84233654ad9e5754d0db9f7b6f9437a
-ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
+ms.openlocfilehash: 091f0876c37756fad47d2d78520adbd526aab24d
+ms.sourcegitcommit: 71c2a4884bd83599e35dd894771a5e43e951b574
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "122184634"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128184628"
 ---
 # <a name="streaming-in-unreal"></a>Streaming in Unreal
 
-Lo "streaming" viene talvolta definito "comunicazione remota holografica". Per altre informazioni, vedere [Panoramica di Holographic Remoting](../platform-capabilities-and-apis/holographic-remoting-overview.md)
+Lo "streaming" viene talvolta definito "comunicazione remota olografica". Per altre informazioni, vedere [Panoramica di Holographic Remoting](../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 Lo streaming da un PC a HoloLens offre due vantaggi fondamentali: 
 * Consente all'app di realtà mista di sfruttare la potenza di calcolo del PC. 
@@ -93,6 +93,9 @@ In Unreal 4.25.1 e versioni successive, è possibile trasmettere l'app in stream
 
 > [!NOTE]
 > Dovrebbe essere usato automaticamente il nome dell'applicazione nelle impostazioni del progetto per creare il pacchetto di Windows. Se per qualche motivo sono diversi, usa il nome dell'eseguibile di Windows al prompt dei comandi.
+
+> [!NOTE]
+> Se il tracciamento oculare non funziona durante lo streaming da un file eseguibile in pacchetto, disabilitare qualsiasi altro plug-in con i tracciatori oculare supportati da PC (ad esempio Magic Leap) o eseguire l'applicazione dalla riga di comando con l'argomento di tracciamento oculare pertinente (vedere opzioni della riga di comando [).](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unreal/unreal-streaming?tabs=wmr#command-line-options)
 
 Premi INVIO e inizierà lo streaming dell'applicazione.
 

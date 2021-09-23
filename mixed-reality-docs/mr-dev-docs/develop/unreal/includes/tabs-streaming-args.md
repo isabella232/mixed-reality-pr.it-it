@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 283ef0bedc96a63d34a66fa0d88dee97420957c7744ad3702c6ac3bc34c14310
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 12634c1fc18366e28a51688b19fc739ea69d37ec
+ms.sourcegitcommit: 71c2a4884bd83599e35dd894771a5e43e951b574
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115218859"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128184627"
 ---
 # <a name="windows-mixed-reality"></a>[Windows Mixed Reality](#tab/wmr)
 
@@ -15,6 +15,7 @@ ms.locfileid: "115218859"
 | `-HoloLensRemotingListen` | (Facoltativa) Avvia un server di ascolto. |
 | `-HoloLensRemotingListenPort=<port>` | (Facoltativa) Accetta la porta per l'ascolto. Usata per la connessione a un PC o una macchina virtuale da un dispositivo HoloLens. |
 | `-HoloLens1Remoting=<IP address>` | (Deprecata nella versione 4.26) Accetta l'indirizzo IP del dispositivo HoloLens 1 a cui connettersi. |
+| `-eyetracking=WindowsMixedRealityEyeTracker` | (facoltativo) Usare il tracciatore Windows Mixed Reality oculare |
 
 # <a name="openxr"></a>[OpenXR](#tab/openxr)
 
@@ -25,3 +26,4 @@ ms.locfileid: "115218859"
 | `-Listen` | (Facoltativa) Avvia un server di ascolto. |
 | `-RemotingBitrate=<bitrate>` | (Facoltativa) Il valore predefinito è 8000. Velocità massima di trasferimento di rete (KB/s). |
 | `-RemotingCodec=<codec>` | (Facoltativa) Codec di connessione.  |
+| `-eyetracking=OpenXREyeTracker` | (facoltativo) Usare il localizzatore oculare OpenXR |

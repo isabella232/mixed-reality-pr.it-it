@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, comunicazione remota, realtà mista, sviluppo, guida introduttiva, funzionalità, nuovo progetto, emulatore, documentazione, guide, caratteristiche, ologrammi, sviluppo di giochi, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, OpenXR
-ms.openlocfilehash: fd9eec18e865910ef4899dfda75661d1edb57eed25a55641cde3ca7ac3f0b3a8
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 90dfb113008e6f8b1162c068ebfc967ed74fd6b4
+ms.sourcegitcommit: 71c2a4884bd83599e35dd894771a5e43e951b574
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115203465"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128184670"
 ---
 # <a name="unreal-development-overview"></a>Panoramica dello sviluppo con Unreal
 
@@ -39,7 +39,7 @@ Prima di tutto, è necessario installare gli strumenti per lo sviluppo di app pe
 | --- | --- |
 | [Installare gli ultimi aggiornamenti](../install-the-tools.md) | Scaricare e installare la versione più recente di Unreal Engine e configurare il progetto per la realtà mista |
 | [Configurare il progetto](unreal-project-setup.md) | Ottenere la versione più recente di Unreal Engine e MRTK |
-| [Creazione della prima applicazione HoloLens Unreal](unreal-quickstart.md) | Iniziare il percorso di sviluppo di Unreal e HoloLens creando un'applicazione di realtà mista di base |
+| [Creazione della prima HoloLens'applicazione Unreal](unreal-quickstart.md) | Inizia il percorso di sviluppo di Unreal HoloLens sviluppo creando un'applicazione di realtà mista di base |
 | [Serie di esercitazioni su HoloLens 2](tutorials/unreal-uxt-ch1.md) | Acquisire le informazioni necessarie per sviluppare app di realtà mista in Unreal, compilare la prima app con MRTK e distribuire l'app in HoloLens 2 |
 | Introduzione a [OpenXR](../native/openxr.md) in Unreal | Installare e abilitare il plug-in seguente da Unreal Engine Marketplace:<ul><li> [Microsoft OpenXR](https://www.unrealengine.com/marketplace/en-US/product/ef8930ca860148c498b46887da196239)</li></ul>Assicurarsi che il plug-Windows Mixed Reality Microsoft sia disabilitato.<br><br>L'elenco completo delle funzionalità attualmente supportate in OpenXR è [riportato di seguito](#supported-features).|
 
@@ -51,7 +51,7 @@ Ci sono diverse funzionalità chiave per la realtà mista che non vengono tratta
 
 * [UX Tools for Unreal](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools) è il primo plug-in rilasciato ed è attualmente supportato solo su HoloLens 2. Il plug-in include codice C++, progetti e asset di esempio di funzionalità di UX comuni per la simulazione di input, le interazioni con le mani, il magnetismo della superficie e altro ancora.
 
-* [Strumenti di grafica per Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) è un plug-in di gioco UE con codice, progetti e asset di esempio creati per migliorare la fedeltà visiva delle applicazioni di realtà mista mantenendo i budget delle prestazioni.
+* [Strumenti di grafica per Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) è un plug-in di gioco UE con codice, progetti e asset di esempio creati per migliorare la fedeltà visiva delle applicazioni di realtà mista, mantenendo al tempo stesso i budget per le prestazioni.
 
 [!INCLUDE[](../includes/unreal-building-blocks.md)]
 
@@ -110,13 +110,11 @@ Lo sviluppo per la realtà mista prevede punti di controllo delle prestazioni ch
 | Accesso alla fotocamera | 4.23 | ✔️ |
 | Codici QR | 4.23 | ✔️ |
 | Audio spaziale | 4.23 | ✔️ |
-| Supporto Spectator Screen per lo streaming | 4.24 |
 | LSR planare sullo streaming | 4.24 |
 | [App di esempio](../features-and-samples.md) | 4.24 | ✔️ |
 | Mobile Multi-View: prestazioni fino a 60 fps | 4.25 | ✔️ |
-| Rendering della terza fotocamera | 4.25 | ✔️ |
 | Streaming da un'app desktop in pacchetto | 4.25.1 | ✔️ |
-| Ancoraggi nello HoloLens 2 | 4.25 | ✔️ |
+| Ancoraggi nello stato di Azure per HoloLens 2 | 4.25 | ✔️ |
 | Supporto del plug-in UX Tools di Mixed Reality Toolkit | 4.25 | ✔️ |
 | Documentazione ed esercitazioni per sviluppatori | 4.25 | ✔️ |
 | Tastiera di sistema | 4.26 | ✔️ |
