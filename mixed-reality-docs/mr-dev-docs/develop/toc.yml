@@ -36,38 +36,6 @@
           href: unity/tutorials.md
         - name: Esercitazioni su HoloLens 2
           items:
-            - name: Esercitazioni di MRTK per principianti
-              items:
-                - name: 1. Introduzione
-                  href: unity/tutorials/mr-learning-base-01.md
-                - name: 2. Inizializzazione del progetto e prima applicazione
-                  href: unity/tutorials/mr-learning-base-02.md
-                - name: 3. Configurazione dei profili di Mixed Reality Toolkit
-                  href: unity/tutorials/mr-learning-base-03.md
-                - name: 4. Posizionamento degli oggetti nella scena
-                  href: unity/tutorials/mr-learning-base-04.md
-                - name: 5. Creazione di contenuto dinamico tramite risolutori
-                  href: unity/tutorials/mr-learning-base-05.md
-                - name: 6. Creazione delle interfacce utente
-                  href: unity/tutorials/mr-learning-base-06.md
-                - name: 7. Interazione con oggetti 3D
-                  href: unity/tutorials/mr-learning-base-07.md
-                - name: 8. Uso del tracciamento oculare
-                  href: unity/tutorials/mr-learning-base-08.md
-                - name: 9. Uso dei comandi vocali
-                  href: unity/tutorials/mr-learning-base-09.md
-            - name: Esercitazioni su Ancoraggi nello spazio di Azure
-              items:
-                - name: 1. Introduzione
-                  href: unity/tutorials/mr-learning-asa-01.md
-                - name: 2. Introduzione ad Ancoraggi nello spazio di Azure
-                  href: unity/tutorials/mr-learning-asa-02.md
-                - name: '3. Salvataggio, recupero e condivisione di Ancoraggi nello spazio di Azure'
-                  href: unity/tutorials/mr-learning-asa-03.md
-                - name: 4. Visualizzazione del feedback su Ancoraggi nello spazio di Azure
-                  href: unity/tutorials/mr-learning-asa-04.md
-                - name: 5. Ancoraggi nello spazio di Azure per Android e iOS
-                  href: unity/tutorials/mr-learning-asa-05.md
             - name: Esercitazioni sulle funzionalità multiutente
               items:
                 - name: 1. Introduzione
@@ -80,67 +48,27 @@
                   href: unity/tutorials/mr-learning-sharing-04.md
                 - name: 5. Integrazione di Ancoraggi nello spazio di Azure in un'esperienza condivisa
                   href: unity/tutorials/mr-learning-sharing-05.md
-            - name: Esercitazioni sui servizi Voce di Azure
-              items:
-                - name: 1. Integrazione e uso del riconoscimento vocale e della trascrizione
-                  href: unity/tutorials/mrlearning-speechsdk-ch1.md
-                - name: 2. Aggiunta di una modalità offline per la traduzione locale da voce a testo
-                  href: unity/tutorials/mrlearning-speechsdk-ch2.md
-                - name: 3. Aggiunta del componente di traduzione vocale in Servizi cognitivi di Azure
-                  href: unity/tutorials/mrlearning-speechsdk-ch3.md
-                - name: 4. Configurazione di finalità e comprensione del linguaggio naturale
-                  href: unity/tutorials/mrlearning-speechsdk-ch4.md
-            - name: Esercitazioni sull'audio spaziale
-              items:
-                - name: 1. Aggiunta dell'audio spaziale al progetto
-                  href: unity/tutorials/unity-spatial-audio-ch1.md
-                - name: 2. Spazializzazione dei suoni di interazione di un pulsante
-                  href: unity/tutorials/unity-spatial-audio-ch2.md
-                - name: 3. Spazializzazione dell'audio da un video
-                  href: unity/tutorials/unity-spatial-audio-ch3.md
-                - name: 4. Abilitazione e disabilitazione dell'audio spaziale in fase di esecuzione
-                  href: unity/tutorials/unity-spatial-audio-ch4.md
-                - name: 5. Uso del riverbero per aggiungere distanza all'audio spaziale
-                  href: unity/tutorials/unity-spatial-audio-ch5.md
-            - name: Esercitazioni su Servizi cloud di Azure
-              items:
-                - name: 1. Servizi cloud di Azure per HoloLens 2
-                  href: unity/tutorials/mr-learning-azure-01.md
-                - name: 2. Integrazione di Archiviazione di Azure
-                  href: unity/tutorials/mr-learning-azure-02.md
-                - name: 3. Integrazione di Visione personalizzata di Azure
-                  href: unity/tutorials/mr-learning-azure-03.md
-                - name: 4. Integrazione di Ancoraggi nello spazio di Azure
-                  href: unity/tutorials/mr-learning-azure-04.md
-                - name: 5. Integrazione del servizio Azure Bot
-                  href: unity/tutorials/mr-learning-azure-05.md
-            - name: Esercitazioni su Holographic Remoting per PC
-              items:
-                - name: 1. Introduzione a Holographic Remoting per PC
-                  href: unity/tutorials/mr-learning-pc-holographic-remoting-01.md
-                - name: 2. Creazione di un'applicazione Holographic Remoting per PC
-                  href: unity/tutorials/mr-learning-pc-holographic-remoting-02.md
         - name: Esercitazioni per HoloLens (prima generazione) e per i visori VR immersive
           items:
             - name: Funzionalità di realtà mista
               items:
                 - name: HoloLens (prima generazione) Nozioni di base 100 - Introduzione a Unity
                   href: unity/tutorials/holograms-100.md
-                - name: HoloLens (prima generazione) Nozioni di base 101 - Completare il progetto con il dispositivo
+                - name: HoloLens (prima generazione) Nozioni di base 101 - Progetto completo con dispositivo
                   href: unity/tutorials/holograms-101.md
-                - name: HoloLens (prima generazione) Basics 101E - Completare il progetto con l'emulatore
+                - name: HoloLens (prima generazione) Nozioni di base 101E - Progetto completo con emulatore
                   href: unity/tutorials/holograms-101e.md
-                - name: HoloLens (prima generazione) Input 210 - Gaze
+                - name: HoloLens (prima generazione) Input 210 - Sguardo fisso
                   href: unity/tutorials/holograms-210.md
                 - name: HoloLens (prima generazione) Input 211 - Movimento
                   href: unity/tutorials/holograms-211.md
                 - name: HoloLens (prima generazione) Input 212 - Voce
                   href: unity/tutorials/holograms-212.md
-                - name: HoloLens (prima generazione) Spaziale 220 - Suono spaziale
+                - name: HoloLens spaziale 220 (prima generazione) - Audio spaziale
                   href: unity/tutorials/holograms-220.md
                 - name: HoloLens (prima generazione) Spaziale 230 - Mapping spaziale
                   href: unity/tutorials/holograms-230.md
-                - name: HoloLens (prima generazione) Condivisione di 240 - Più HoloLens dispositivi
+                - name: HoloLens (prima generazione) Condivisione 240 - Più HoloLens dispositivi
                   href: unity/tutorials/holograms-240.md
             - name: Realtà mista e servizi di Azure
               items:
@@ -152,13 +80,13 @@
                   href: unity/tutorials/mr-azure-302b.md
                 - name: HoloLens (prima generazione) e Azure 303 - Comprensione del linguaggio naturale
                   href: unity/tutorials/mr-azure-303.md
-                - name: HoloLens (prima generazione) e Azure 304 - Riconoscimento del viso
+                - name: HoloLens (prima generazione) e Azure 304 - Riconoscimento volto
                   href: unity/tutorials/mr-azure-304.md
                 - name: HoloLens (prima generazione) e Azure 305 - Funzioni e archiviazione
                   href: unity/tutorials/mr-azure-305.md
                 - name: HoloLens (prima generazione) e Azure 306 - Streaming video
                   href: unity/tutorials/mr-azure-306.md
-                - name: HoloLens (prima generazione) e Azure 307 - Apprendimento di Maching
+                - name: HoloLens (prima generazione) e Azure 307 - Apprendimento maching
                   href: unity/tutorials/mr-azure-307.md
                 - name: HoloLens (prima generazione) e Azure 308 - Notifiche tra dispositivi
                   href: unity/tutorials/mr-azure-308.md
@@ -168,7 +96,7 @@
                   href: unity/tutorials/mr-azure-310.md
                 - name: HoloLens (prima generazione) e Azure 311 - Microsoft Graph
                   href: unity/tutorials/mr-azure-311.md
-                - name: HoloLens (prima generazione) e Azure 312 - Integrazione del bot
+                - name: HoloLens (prima generazione) e Azure 312 - Integrazione di bot
                   href: unity/tutorials/mr-azure-312.md
                 - name: HoloLens (prima generazione) e Azure 313 - Servizio hub IoT
                   href: unity/tutorials/mr-azure-301.md
@@ -176,7 +104,7 @@
       items:
         - name: Scelta di una versione di Unity e di un plug-in XR
           href: unity/choosing-unity-version.md
-        - name: Configurazione della configurazione XR
+        - name: Configurazione di XR
           href: unity/xr-project-setup.md
         - name: Strumento per la funzionalità di realtà mista
           items:
@@ -196,7 +124,7 @@
       items:
         - name: Impostazione della fotocamera
           href: unity/camera-in-unity.md
-        - name: Blocco del mondo e ancoraggi spaziali
+        - name: Blocco del mondo e ancoraggi nello spaziale
           href: unity/spatial-anchors-in-unity.md
         - name: Esperienze condivise
           href: unity/shared-experiences-in-unity.md
@@ -282,7 +210,7 @@
           href: unity/best-practices-for-working-with-unity-and-visual-studio.md
     - name: Note sulla versione
       items:
-        - name: Plug-in OpenXR per Realtà mista
+        - name: Plug-in OpenXR di realtà mista
           href: unity/openxr-release-notes.md
 - name: Unreal
   items:
@@ -296,7 +224,7 @@
       href: unreal/unreal-porting.md
     - name: Avvi rapidi
       items:
-        - name: Creazione della prima HoloLens unreal
+        - name: Creazione della prima applicazione HoloLens Unreal
           href: unreal/unreal-quickstart.md
     - name: Esercitazioni
       items:
@@ -376,13 +304,13 @@
       href: javascript/webxr-overview.md
     - name: Esercitazioni
       items:
-        - name: Realtà Hello World virtuale con BabylonJS
+        - name: Vr Hello World uso di BabylonJS
           items:
             - name: 1. Introduzione
               href: javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md
             - name: 2. Preparare una scena con un oggetto 3D di base
               href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
-            - name: 3. Interagire con un oggetto 3D
+            - name: 3. Interagire con l'oggetto 3D
               href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
         - name: Creare un piano in WebXR usando babylon.js
           items:
@@ -440,7 +368,7 @@
           href: platform-capabilities-and-apis/keyboard-mouse-and-controller-input-in-directx.md
         - name: Uso di XAML con app DirectX olografiche
           href: platform-capabilities-and-apis/using-xaml-with-holographic-directx-apps.md
-        - name: Rilevamento del codice a codici a qr (con esempi C# e C++)
+        - name: Rilevamento del codice a livello di codice (con esempi C# e C++)
           href: platform-capabilities-and-apis/qr-code-tracking.md
     - name: Esperienze condivise in Realtà mista
       items:
@@ -464,7 +392,7 @@
           href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: Holographic Remoting
       items:
-        - name: Panoramica di Holographic Remoting
+        - name: Panoramica della comunicazione remota olografica
           href: platform-capabilities-and-apis/holographic-remoting-overview.md
         - name: Lettore Holographic Remoting
           href: platform-capabilities-and-apis/holographic-remoting-player.md
