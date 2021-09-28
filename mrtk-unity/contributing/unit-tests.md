@@ -5,18 +5,18 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, realtà mista, sviluppo, MRTK, UnitTest,
-ms.openlocfilehash: d528b5c16ab39271f9984bdd9e23ebca091efd53ed563149f3933ed31ed656dd
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 85c8a330d9af5b0d91c2b1b838ead7d10d97f981
+ms.sourcegitcommit: 3176df29fb0c9508751bd370f1211031d50d2c14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115216257"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129148660"
 ---
 # <a name="writing-and-running-tests"></a>Scrittura ed esecuzione di test
 
 Per garantire l'affidabilità di MRTK, MRTK dispone di un set di test per garantire che le modifiche al codice non regredino nel comportamento esistente. Avere un buon code coverage di test in una grande codebase come MRTK è fondamentale per la stabilità e la sicurezza quando si apportano modifiche.
 
-MRTK usa [l'Test Runner Unity](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) che usa un'integrazione unity di [NUnit](https://nunit.org/). Questa guida fornirà un punto di partenza per aggiungere test a MRTK. Non verranno illustrate le Test Runner [Unity](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) e [NUnit](https://nunit.org/) che possono essere cercate nei collegamenti forniti.
+MRTK usa [l'Test Runner Unity](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) che usa un'integrazione unity di [NUnit](https://nunit.org/). Questa guida fornirà un punto di partenza per aggiungere test a MRTK. Non verranno illustrate le Test Runner [Unity e](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) [NUnit](https://nunit.org/) che possono essere cercate nei collegamenti forniti.
 
 Prima di inviare una richiesta pull, assicurarsi di:
 
@@ -24,7 +24,7 @@ Prima di inviare una richiesta pull, assicurarsi di:
 
 1. Se si corregge un bug, scrivere un test per testare la correzione e assicurarsi che le future modifiche al codice non lo interrompano di nuovo.
 
-1. Se si scrive una funzionalità, scrivere nuovi test per evitare che le prossime modifiche del codice infrangono questa funzionalità.
+1. Se si scrive una funzionalità, scrivere nuovi test per evitare che le modifiche del codice imminenti superino questa funzionalità.
 
 Attualmente i test playmode devono essere eseguiti in Unity 2018.4 e potrebbero non riuscire in altre versioni di Unity
 
@@ -32,7 +32,7 @@ Attualmente i test playmode devono essere eseguiti in Unity 2018.4 e potrebbero 
 
 ### <a name="unity-editor"></a>Editor Unity
 
-Il [Test Runner Unity](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) è disponibile in **Finestra** generale Test Runner e mostra tutti i test di riproduzione e modifica  >    >   MRTK disponibili.
+[L'Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) Unity è disponibile in **Finestra** generale Test Runner e mostra tutti i test di riproduzione e modifica  >    >   MRTK disponibili.
 
 ### <a name="command-line"></a>Riga di comando
 
@@ -41,13 +41,13 @@ I test possono essere eseguiti anche da uno script [di PowerShell](/powershell/s
 Eseguire i test sul progetto che si trova in H:\mrtk.dev, con Unity 2018.4 (ad esempio Unity 2018.4.26f1)
 
 ```ps
-.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe"
+.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe"
 ```
 
-Eseguire i test sul progetto che si trova in H:\mrtk.dev, con Unity 2018.4, restituisce i risultati a C:\playmode_test_out
+Eseguire i test sul progetto che si trova in H:\mrtk.dev, con Unity 2018.4, restituisce i risultati in C:\playmode_test_out
 
 ```ps
-.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe" -outFolder "C:\playmode_test_out\"
+.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe" -outFolder "C:\playmode_test_out\"
 ```
 
 È anche possibile eseguire i test playmode più volte tramite lo `run_repeat_tests.ps1` script. È possibile usare tutti `run_playmode_tests.ps1` i parametri usati in .
@@ -58,7 +58,7 @@ Eseguire i test sul progetto che si trova in H:\mrtk.dev, con Unity 2018.4, rest
 
 ### <a name="pull-request-validation"></a>Convalida della richiesta pull
 
-L'CI di MRTK compila MRTK in tutte le configurazioni ed esegue tutti i test della modalità di modifica e riproduzione. L'attivazione continua può essere attivata pubblicando un commento nella richiesta pull di GitHub `/azp run mrtk_pr` se l'utente dispone di diritti sufficienti. Le esecuzioni ci-ci sono visibili nella scheda "controlli" della richiesta pull.
+L'interfaccia utente avanzata di MRTK compila MRTK in tutte le configurazioni ed esegue tutti i test della modalità di modifica e riproduzione. L'attivazione continua può essere attivata pubblicando un commento sulla richiesta pull di GitHub `/azp run mrtk_pr` se l'utente dispone di diritti sufficienti. Le esecuzioni ci-ci sono visibili nella scheda "controlli" della richiesta pull.
 
 Solo dopo che tutti i test sono stati superati correttamente, la richiesta pull può essere unita in main.
 
@@ -77,7 +77,7 @@ Per un singolo test che deve essere eseguito più volte:
 public IEnumerator MyTest() {...}
 ```
 
-Eseguire il comando seguente da una riga di comando[(è consigliabile utilizzare PowerShell)](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6#powershell-core)
+Eseguire quanto segue da una riga di comando[(è consigliabile utilizzare PowerShell)](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6#powershell-core)
 
 ```powershell
 cd scripts\tests

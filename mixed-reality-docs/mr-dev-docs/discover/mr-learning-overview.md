@@ -2,17 +2,17 @@
 title: Panoramica dei moduli di Learn sulla realtà mista
 description: Aggiornamento costante con tutti i moduli di realtà mista disponibili, ospitati nella piattaforma Microsoft Learn.
 author: hferrone
-ms.author: jemccull
-ms.date: 11/30/2020
+ms.author: v-vtieto
+ms.date: 9/27/2021
 ms.topic: article
 keywords: realtà mista, unity, esercitazione, hololens, apprendimento, visore VR realtà mista, visore VR di windows mixed reality, visore per realtà virtuale, che cos'è la realtà virtuale, che cos'è la realtà aumentata, MRTK, mixed reality toolkit, traduzione, Azure, servizi cognitivi di Azure, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 24584532fca0872a1ec62f6f2381e0aa076da5bb79eea765cb3a0a0f5736f36f
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 595aad668e2ff2a1a91fc801981be1d004bc012f
+ms.sourcegitcommit: 3176df29fb0c9508751bd370f1211031d50d2c14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115204397"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129148682"
 ---
 # <a name="mixed-reality-learn-overview"></a>Panoramica di Learn sulla realtà mista
 
@@ -23,7 +23,7 @@ Durante lo sviluppo di soluzioni per la realtà mista, maggiore è il numero di 
 I moduli di Learn consentono di diventare sviluppatori esperti di soluzioni di realtà mista, fornendo una struttura basata su moduli che permette di iniziare a usare strumenti chiave come Mixed Reality Toolkit, Unity e i servizi di Realtà mista di Azure. Con la definizione degli obiettivi di apprendimento e dei requisiti e l'impostazione dell'intervallo di tempo previsto per il completamento in un'unica interfaccia, l'uso di Hello World è più facile che mai. 
 
 > [!div class="nextstepaction"]
-> [Introduzione al percorso di apprendimento di Realtà mista](/learn/browse/?terms=mixed+reality)
+> [Esplorare i moduli Di apprendimento di realtà mista](/learn/browse/?terms=mixed+reality)
 
 ## <a name="general-modules"></a>Moduli generali
 
