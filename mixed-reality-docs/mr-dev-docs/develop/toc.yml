@@ -36,6 +36,8 @@
           href: unity/tutorials.md
         - name: Esercitazioni su HoloLens 2
           items:
+            - name: HoloLens 2 Esercitazioni sui concetti fondamentali
+              href: /learn/paths/beginner-hololens-2-tutorials/
             - name: Esercitazioni sulle funzionalità multiutente
               items:
                 - name: 1. Introduzione
@@ -402,9 +404,9 @@
               href: platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md
             - name: API di OpenXR
               href: platform-capabilities-and-apis/holographic-remoting-create-remote-openxr.md
-        - name: Scrittura di un'app Holographic Remoting Player personalizzata (C++)
+        - name: Scrittura di un'app holographic Remoting Player personalizzata (C++)
           href: platform-capabilities-and-apis/holographic-remoting-create-player.md
-        - name: Canali di dati di Holographic Remoting personalizzati (C++)
+        - name: Canali di dati olografici remoti personalizzati (C++)
           href: platform-capabilities-and-apis/holographic-remoting-custom-data-channels.md
         - name: Connessione sicura con Holographic Remoting (C++)
           href: platform-capabilities-and-apis/holographic-remoting-secure-connection.md
@@ -448,7 +450,7 @@
       items:
         - name: Uso del Portale di dispositivi di Windows
           href: platform-capabilities-and-apis/using-the-windows-device-portal.md
-        - name: Informazioni di riferimento sulle API del portale di dispositivi (REST)
+        - name: Informazioni di riferimento sulle API del portale dei dispositivi (REST)
           href: platform-capabilities-and-apis/device-portal-api-reference.md
     - name: Strumenti di ricerca
       items:
