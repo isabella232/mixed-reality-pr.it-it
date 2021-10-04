@@ -1,23 +1,23 @@
 ---
 title: Assistenza per la compatibilità dei PC
-description: Tenersi aggiornati sulle risorse per la risoluzione dei problemi di compatibilità del PC quando si Windows Mixed Reality applicazioni e dispositivi.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 01/07/2021
+description: Tenersi aggiornati sulle risorse per la risoluzione dei problemi di compatibilità del PC quando si lavora Windows Mixed Reality applicazioni e dispositivi.
+author: qianw211
+ms.author: v-qianwen
+ms.date: 9/24/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Realtà mista, Realtà virtuale, REALTÀ VIRTUALE, MR, Feedback, Hub di Feedback, bug
 appliesto:
-- Windows 10
-ms.openlocfilehash: cd5598147823670d1aa00eddda844bea21d7da262339624613f3724cbc5157fa
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+- Windows 10 and Windows 11
+ms.openlocfilehash: 1a07326da871eead6b13fe8350f37a22f8d27c23
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115189213"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436563"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Ottenere assistenza per la compatibilità del PC in Windows Mixed Reality
 
-Quando si configura un Windows Mixed Reality o si usa il Portale realtà mista [,](install-windows-mixed-reality.md)si otterrà un report che indica se il PC è in grado di eseguire l'attività. Sono stati suddivisi dettagli specifici su ciò che potrebbe essere visualizzato nelle sezioni seguenti.
+Quando si configura un Windows Mixed Reality o si usa il [Portale realtà mista](install-windows-mixed-reality.md), si otterrà un report che indica se il PC è in grado di eseguire l'attività. Sono stati suddivisi dettagli specifici su ciò che potrebbe essere visualizzato nelle sezioni seguenti.
 
 Prima di procedere, provare le correzioni più comuni seguenti: 
 
@@ -31,7 +31,7 @@ Se si vuole entrare in contatto, è possibile chiedere alla [community,](https:/
 
 ## <a name="youre-good-to-go"></a>È tutto a posto
 
-Buona notizia: se viene visualizzato il messaggio **You're good to go** (Sei a posto), il PC può essere Windows Mixed Reality! C'è ancora una variazione tra l'hardware e la configurazione del computer, quindi l'esperienza di realtà mista potrebbe non essere la stessa in ogni PC.
+Buona notizia: se viene visualizzato il messaggio **You're good to go** (Sei a buon posto), il PC può essere Windows Mixed Reality! Esistono ancora variazioni tra l'hardware e la configurazione del computer, quindi l'esperienza di realtà mista potrebbe non essere la stessa in ogni PC.
 
 ## <a name="supports-some-features"></a>Supporta alcune funzionalità
 
@@ -44,13 +44,14 @@ Se viene visualizzato il messaggio **Supports some features** (Supporta alcune f
 * [Questo PC potrebbe non avere una configurazione USB compatibile](#this-pc-might-not-have-a-compatible-usb-configuration)
 * [Questo PC non dispone di Bluetooth 4.0 per i controller](#this-pc-doesnt-have-bluetooth-40-for-controllers)
 * [A seconda del visore VR, potrebbe essere necessario un adattatore Bluetooth per usare i controller del movimento](#depending-on-your-headset-you-may-need-a-bluetooth-adapter-to-use-motion-controllers)
-* [Questo PC non dispone di una porta USB autoesostima](#this-pc-doesnt-have-a-self-powered-usb-port)
+* [Questo PC non dispone di una porta USB auto-alimentato](#this-pc-doesnt-have-a-self-powered-usb-port)
 * [La scheda grafica di questo PC non funzionerà con Windows Mixed Reality](#this-pcs-graphics-card-wont-work-with-windows-mixed-reality)
 * [Il driver di grafica di questo PC non funzionerà con Windows Mixed Reality](#this-pcs-graphics-driver-wont-work-with-windows-mixed-reality)
 * [Il processore di questo PC non funzionerà con Windows Mixed Reality](#this-pcs-processor-wont-work-with-windows-mixed-reality)
 * [Questo PC non dispone di spazio libero su disco sufficiente per eseguire Windows Mixed Reality](#this-pc-doesnt-have-enough-free-disk-space-to-run-windows-mixed-reality)
 * [Questo PC esegue un'edizione di Windows che non supporta Windows Mixed Reality](#this-pc-is-running-an-edition-of-windows-that-doesnt-support-windows-mixed-reality)
 * [Questo PC non esegue la versione più recente di Windows 10](#this-pc-isnt-running-the-latest-version-of-windows-10)
+* [Questo PC non esegue la versione più recente di Windows 11](#this-pc-isnt-running-the-latest-version-of-windows-11)
 * [Questo PC non ha una porta USB 3.0](#this-pc-has-no-usb-30-port)
 * [Non è possibile eseguire questa app tramite Desktop remoto](#you-cant-run-this-app-via-remote-desktop)
 
@@ -60,7 +61,7 @@ Le schede grafiche integrate offrono la migliore Windows Mixed Reality'esperienz
 
 > [!div class="checklist"]
 > * Installare una [scheda grafica discreta compatibile](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines)
-> * Installare un'unità RAM aggiuntiva per creare RAM a doppio canale
+> * Installare un'unità RAM aggiuntiva per creare ram a doppio canale
 > * Passare a [un PC compatibile](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines)
 
 ### <a name="this-pc-has-a-hybrid-graphics-configuration-with-an-incompatible-pcie-link"></a>Questo PC ha una configurazione grafica ibrida con un collegamento PCIe incompatibile
@@ -116,15 +117,15 @@ Se i problemi persistono:
 
 ### <a name="this-pc-doesnt-have-bluetooth-40-for-controllers"></a>Questo PC non dispone di Bluetooth 4.0 per i controller
 
-I visori VR Windows Mixed Reality 2018 e versioni più recenti hanno già il Bluetooth incorporato, ma se si dispone di visori VR meno recenti, è necessario bluetooth 4.0 per i controller del movimento di realtà mista. È comunque possibile usare Windows Mixed Reality con un [controller Xbox,](motion-controller-problems.md#can-i-pair-my-xbox-controller-to-my-pc-so-i-can-use-it-in-headset)un [mouse](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home#keyboard-and-mouse)e una tastiera o un [adattatore usb Bluetooth](motion-controller-problems.md#how-can-i-tell-if-im-using-bluetooth-technology) per connettere i controller del movimento al PC. [Vedere schede consigliate](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+I visori VR Windows Mixed Reality 2018 e versioni più recenti hanno già il Bluetooth incorporato, ma se si dispone di visori VR meno recenti, è necessario bluetooth 4.0 per i controller del movimento di realtà mista. È comunque possibile usare Windows Mixed Reality con un [controller Xbox,](motion-controller-problems.md#can-i-pair-my-xbox-controller-to-my-pc-so-i-can-use-it-in-headset)un [mouse](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home#keyboard-and-mouse)e una tastiera o un [adattatore usb Bluetooth](motion-controller-problems.md#how-can-i-tell-if-im-using-bluetooth-technology) per connettere i controller del movimento al PC. [Vedere gli adapter consigliati](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 ### <a name="depending-on-your-headset-you-may-need-a-bluetooth-adapter-to-use-motion-controllers"></a>A seconda del visore VR, potrebbe essere necessario un adattatore Bluetooth per usare i controller del movimento
 
 Alcuni visori VR Bluetooth incorporati in modo che i controller possano essere associati direttamente ai visori VR. Altri richiedono una Bluetooth radio nel PC (o un dongle separato) per usare i controller del movimento. Per altre informazioni, vedere la [pagina adapter consigliati.](recommended-adapters-for-windows-mixed-reality-capable-pcs.md#windows-mixed-reality-compatible-usb-bluetooth-adapters)
 
-### <a name="this-pc-doesnt-have-a-self-powered-usb-port"></a>Questo PC non dispone di una porta USB autoesostima
+### <a name="this-pc-doesnt-have-a-self-powered-usb-port"></a>Questo PC non dispone di una porta USB auto-alimentato
 
-Per connettere un visore VR, è necessaria una porta USB 3.0 auto-Windows Mixed Reality. Connessione un [hub USB 3.0](recommended-adapters-for-windows-mixed-reality-capable-pcs.md#using-external-usb-30-hubs-with-windows-mixed-reality-headsets) alimentato al PC e usarlo per connettere il visore VR.
+È necessaria una porta USB 3.0 autoappresa per connettere un visore WINDOWS MIXED REALITY visore VR. Connessione un [hub USB 3.0](recommended-adapters-for-windows-mixed-reality-capable-pcs.md#using-external-usb-30-hubs-with-windows-mixed-reality-headsets) alimentato al PC e usarlo per connettere il visore VR.
 
 ### <a name="this-pcs-graphics-card-wont-work-with-windows-mixed-reality"></a>La scheda grafica di questo PC non funzionerà con Windows Mixed Reality
 
@@ -162,11 +163,15 @@ Windows Mixed Reality richiede 10 GB di spazio libero su disco per la configuraz
 
 ### <a name="this-pc-is-running-an-edition-of-windows-that-doesnt-support-windows-mixed-reality"></a>Questo PC esegue un'edizione di Windows che non supporta Windows Mixed Reality
 
-Windows Mixed Reality funziona [su](https://www.microsoft.com/p/windows-10-home/d76qx4bznwk4?activetab=pivot:overviewtab) Windows 10 Home e [Windows 10 Pro](https://www.microsoft.com/p/windows-10-pro/DF77X4D43RKT?icid=W10Pro_upsell_071817&activetab=pivot:overviewtab). È necessario installare una di queste edizioni per usare Windows Mixed Reality.
+Windows Mixed Reality funziona su [Windows 10 Home,](https://www.microsoft.com/p/windows-10-home/d76qx4bznwk4?activetab=pivot:overviewtab) [Windows 10 Pro](https://www.microsoft.com/p/windows-10-pro/DF77X4D43RKT?icid=W10Pro_upsell_071817&activetab=pivot:overviewtab)e Windows [11](https://www.microsoft.com/software-download/windows11). È necessario installare una di queste edizioni per usare Windows Mixed Reality.
 
 ### <a name="this-pc-isnt-running-the-latest-version-of-windows-10"></a>Questo PC non esegue la versione più recente di Windows 10
 
 Windows Mixed Reality richiede l'Windows 10 Fall Creators Update. [Aggiornare il PC](https://support.microsoft.com/help/4028685) e riprovare.
+
+### <a name="this-pc-isnt-running-the-latest-version-of-windows-11"></a>Questo PC non esegue la versione più recente di Windows 11
+
+Windows Mixed Reality richiede la versione Windows 11 più recente. [Aggiornare il PC](https://www.microsoft.com/software-download/windows11) e riprovare.
 
 ### <a name="this-pc-has-no-usb-30-port"></a>Questo PC non ha una porta USB 3.0
 
@@ -174,11 +179,11 @@ Sarà necessaria una porta USB 3.0 per connettere un dispositivo Windows Mixed R
 
 ### <a name="you-cant-run-this-app-via-remote-desktop"></a>Non è possibile eseguire questa app tramite Desktop remoto
 
-Per usare Windows Mixed Reality, è necessario un PC con un monitor connesso. Se si usa una macchina virtuale o non si ha un monitoraggio, provare a usare una scheda video virtuale. Si tratta di un dispositivo che collega displayPort del PC ed emula uno schermo del computer.
+Per usare Windows Mixed Reality, è necessario un PC con un monitor connesso. Se si usa una macchina virtuale o non si ha un monitoraggio, provare a usare una scheda video virtuale. Si tratta di un dispositivo che si collega a DisplayPort del PC ed emula uno schermo del computer.
 
 ## <a name="getting-the-best-performance"></a>Ottenere le prestazioni migliori
 
-Alcune configurazioni hardware potrebbero causare problemi di prestazioni con Windows Mixed Reality. Per problemi come il caricamento lento, gli oggetti visivi sminuzzanti o una qualità visiva scadente, provare queste correzioni comuni:
+Alcune configurazioni hardware potrebbero causare problemi di prestazioni Windows Mixed Reality. Per problemi come il caricamento lento, gli oggetti visivi sminuzzanti o una qualità visiva scadente, provare queste correzioni comuni:
 
 * Chiudere tutte le app aperte in esecuzione sul desktop del PC
 * Se si usa un adattatore USB-C o DisplayPort to HDMI, provarne uno diverso. Vedere gli adapter consigliati
@@ -194,7 +199,7 @@ Se si verificano ancora problemi di prestazioni, aggiornare le [impostazioni](se
 * Calibrazione
 
 > [!NOTE]
-> Se viene visualizzato il messaggio "Questa configurazione hardware potrebbe funzionare con Windows Mixed Reality, ma non è ancora stata testata", si potrebbero verificare alcuni problemi di prestazioni durante l'esecuzione di Windows Mixed Reality per sessioni lunghe.
+> Se viene visualizzato un messaggio che indica che questa configurazione hardware potrebbe funzionare con Windows Mixed Reality, ma non è ancora stata testata, si potrebbero verificare alcuni problemi di prestazioni durante l'esecuzione di Windows Mixed Reality per sessioni lunghe.
 
 ## <a name="working-with-steamvr"></a>Uso di SteamVR
 
