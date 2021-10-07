@@ -6,16 +6,16 @@ ms.author: v-qianwen
 ms.date: 07/15/2021
 ms.topic: article
 keywords: concetti fondamentali sulla qualità, case study, progetto, esempio, MRTK, Realtà mista Toolkit, Unity, app di esempio, app di esempio, open source, Microsoft Store, HoloLens, visore per realtà mista, visore windows mixed reality, visore per realtà virtuale
-ms.openlocfilehash: a8189ca8cb161bb792ad298535c32eac1a47260d8d5559c2383e0322b2cbeb03
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 69c6a55b95937c0c6af4920f6ffe0929eebe76ee
+ms.sourcegitcommit: 82f7db75d8ecc7ac89c76b0db504126cbcb8f16d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115211956"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129647532"
 ---
 # <a name="quality-fundamentals"></a>Nozioni fondamentali sulla qualità
 
-Quality Fundamentals è un'app HoloLens 2 che illustra i concetti fondamentali della creazione di un'esperienza di realtà mista ottimale.  Invece di apprendere e leggere i problemi di qualità nella realtà mista, è ora possibile sperimentare in prima persona problemi comuni di ambiente, progettazione e prestazioni e soluzioni selezionando le opzioni disponibili nell'app.
+Quality Fundamentals è un HoloLens 2 app che illustra i concetti fondamentali della creazione di un'esperienza di realtà mista ottimale.  Invece di apprendere e leggere i problemi di qualità nella realtà mista, è ora possibile sperimentare in prima persona problemi comuni di ambiente, progettazione e prestazioni e soluzioni selezionando le opzioni disponibili nell'app.
 
 Per scaricare e installare l'app, passare alla pagina di download dell'app:
 
@@ -27,26 +27,26 @@ Per scaricare e installare l'app, passare alla pagina di download dell'app:
 In questa app di esempio verranno apprese le informazioni seguenti:
 
 >[!div class = "checklist"]
-> * [I/O del dispositivo e ambiente:](#device-io-and-environment)in che modo i fattori ambientali possono influire sulle HoloLens'ambiente.
+> * [I/O del dispositivo e ambiente:](#device-io-and-environment)in che modo i fattori ambientali possono influire HoloLens prestazioni.
 > * [Ancoraggi nello spazio:](#anchor-fundamentals)come allineare gli ologrammi a uno spazio fisico usando ancoraggi spaziali.
 > * [Stabilità e fedeltà olografica:](#stability-and-fidelity)esplorare le tecniche per migliorare la stabilità e la fedeltà dei Ologrammi.
 > * [Nozioni fondamentali degli asset 3D:](#3d-asset-fundamentals)come ottimizzare gli asset 3D per mantenere un'elevata fedeltà visiva. 
 
 ## <a name="device-io-and-environment"></a>I/O del dispositivo e ambiente
 
-Avviare l'app Quality Fundamentals HoloLens. Quando viene visualizzata la home page dell'app, selezionare **Device I/O and Environment (Ambiente e I/O del dispositivo).**  Verrà illustrato in che modo i sensori HoloLens e l'ambiente circostante influiscono sulla mappatura spaziale, sul rilevamento e sul posizionamento degli ologrammi. 
+Avviare l'app Quality Fundamentals HoloLens. Quando viene visualizzata la home page dell'app, selezionare **Device I/O and Environment (Ambiente e I/O del dispositivo).**  Verrà illustrato in che modo i sensori HoloLens e l'ambiente circostante influiscono sul mapping spaziale, sul rilevamento e sul posizionamento degli ologrammi. 
 
 ### <a name="surfaces"></a>Superfici
 
-Gli mirror o le superfici con finiture speculari possono confondere HoloLens sensori sulla forma dell'oggetto.  Gli oggetti riflessi sulla superficie possono essere interpretati dal dispositivo come ambiente mutevoli, causando la perdita del rilevamento del dispositivo.  Se le superfici speculari causano problemi per HoloLens, valutare la possibilità di aggiungere uno schermo o delle tende closable.
+Gli mirror o le superfici con finiture speculari possono confondere HoloLens sensori sulla forma dell'oggetto.  Gli oggetti riflessi sulla superficie possono essere interpretati dal dispositivo come ambiente mutevoli, causando la perdita del rilevamento del dispositivo.  Se le superfici speculari causano problemi per HoloLens, valutare la possibilità di aggiungere uno schermo o tende accecabili.
 
-Per altre informazioni, vedere [surfaces in a space in](/hololens/hololens-environment-considerations#surfaces-in-a-space) HoloLens environment [considerations](/hololens/hololens-environment-considerations).
+Per altre informazioni, vedere [Le superfici in uno spazio in](/hololens/hololens-environment-considerations#surfaces-in-a-space) HoloLens considerazioni [sull'ambiente](/hololens/hololens-environment-considerations).
 
 ### <a name="lighting"></a>Luce
 
-HoloLens prestazioni possono essere influenzate negativamente da condizioni di luce molto bassa o molto brillante.  I sensori di rilevamento HoloLens hanno bisogno di circa 500-1000 lum di luce per funzionare in modo ottimale. È possibile usare un'app per dispositivi mobili o un'app per dispositivi mobili per misurare la quantità di luce nello spazio.
+HoloLens prestazioni possono essere influenzate negativamente da condizioni di luce molto bassa o molto brillante.  I sensori di rilevamento HoloLens devono funzionare in modo ottimale con circa 500-1000 lum di luce. È possibile usare un'app per dispositivi mobili o un'app per dispositivi mobili per misurare la quantità di luce nello spazio.
 
-Per altre informazioni, vedere [considerazioni sull'illuminazione](/hololens/hololens-environment-considerations?branch=pr-en-us-3071#lighting) [HoloLens'ambiente .](/hololens/hololens-environment-considerations)
+Per altre informazioni, vedere [considerazioni sull'illuminazione](/hololens/hololens-environment-considerations?branch=pr-en-us-3071#lighting) [HoloLens'ambiente](/hololens/hololens-environment-considerations).
 
 ## <a name="anchor-fundamentals"></a>Nozioni fondamentali dell'ancoraggio
 
@@ -60,7 +60,7 @@ In questa parte dell'app verranno esaminati gli scenari utente seguenti:
 > * Condivisione di un ancoraggio spaziale tra più collaboratori usando un codice a qr.
 > * Posizionamento dell'ancoraggio per oggetti molto grandi in uno spazio.
 
-Per altre informazioni, vedere [Ancoraggi nello spazio nella](/windows/mixed-reality/design/spatial-anchors) documentazione [di Realtà](/windows/mixed-reality/design/spatial-anchors) mista.
+Per altre informazioni, vedere [Ancoraggi nello spazio nella](../../design/spatial-anchors.md) documentazione [di Realtà](../../design/spatial-anchors.md) mista.
 
 ## <a name="stability-and-fidelity"></a>Stabilità e fedeltà
 
@@ -80,7 +80,7 @@ Per offrire la migliore esperienza possibile per gli ologrammi, gli sviluppatori
 
 ![Ottimizzazione del conteggio dei triangoli](images\qf-triangle-count-optimization.png)
 
-Per altre informazioni, vedere [frame rate nell'articolo](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability#frame-rate) sulla stabilità [dell'ologramma.](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability)
+Per altre informazioni, vedere [frame rate nell'articolo](../platform-capabilities-and-apis/hologram-stability.md#frame-rate) sulla stabilità [dell'ologramma.](../platform-capabilities-and-apis/hologram-stability.md)
 
 ### <a name="late-stage-reprojection-lsr"></a>Riprogettazione in fase tardiva (LSR)
 
@@ -88,7 +88,7 @@ La riproiezione viene usata per stabilizzare gli ologrammi quando gli utenti si 
 
 ![Provare le diverse opzioni di riproiezione per sperimentare la differenza.](images\qf-lsr-modes.jpg)
 
-Per informazioni dettagliate, vedere [la riproiezione nell'articolo](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability#reprojection) sulla stabilità [dell'ologramma.](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability)
+Per informazioni dettagliate, vedere [la riproiezione nell'articolo](../platform-capabilities-and-apis/hologram-stability.md#reprojection) sulla stabilità [dell'ologramma.](../platform-capabilities-and-apis/hologram-stability.md)
 
 ### <a name="z-fighting"></a>Z-fighting
 
@@ -96,7 +96,7 @@ Lo Z-fighting si verifica quando l'applicazione di realtà mista non riesce a di
 
 ![Esperienza di z-fighting con il posizionamento degli oggetti.](images\qf-z-fighting.jpg)
 
-Per informazioni dettagliate sul controllo z, vedere l'articolo abilitare la condivisione [del buffer](/windows/mixed-reality/develop/unity/recommended-settings-for-unity#enable-depth-buffer-sharing) di profondità nelle impostazioni consigliate [per Unity.](/windows/mixed-reality/develop/unity/recommended-settings-for-unity)
+Per informazioni dettagliate sul controllo z, vedere l'articolo abilitare la condivisione [del buffer](./recommended-settings-for-unity.md#enable-depth-buffer-sharing) di profondità nelle impostazioni consigliate [per Unity.](./recommended-settings-for-unity.md)
 
 ### <a name="anti-aliasing"></a>Antialiasing
 
@@ -104,7 +104,7 @@ L'anti-aliasing è una tecnica usata per smussare i bordi frastagliati su linee 
 
 ## <a name="3d-asset-fundamentals"></a>Nozioni fondamentali degli asset 3D
 
-Nella home page dell'applicazione selezionare Nozioni fondamentali sugli asset **3D** per esplorare come ottimizzare gli asset 3D per soddisfare il requisito di frequenza dei fotogrammi mantenendo al tempo stesso un'elevata fedeltà visiva.
+Nella home page dell'applicazione selezionare Nozioni fondamentali sugli asset **3D** per esplorare come ottimizzare gli asset 3D per soddisfare il requisito di frequenza dei fotogrammi mantenendo un'elevata fedeltà visiva.
 
 Verranno esaminati i concetti chiave seguenti:
 
@@ -116,11 +116,11 @@ Verranno esaminati i concetti chiave seguenti:
 
 ### <a name="triangle-count"></a>Conteggio triangoli
 
-Selezionare il numero e la complessità dei modelli di biciclette per sperimentare la differenza visiva basata su FPS.
+Selezionare il numero e la complessità dei modelli di biciclette per sperimentare la differenza visiva in base a FPS.
 
 ![Scegliere diverse opzioni di conteggio triangolo per visualizzare gli effetti sulla frequenza dei fotogrammi.](images\qf-3d-asset-visible-triangles.jpg)
 
-Per altre informazioni, vedere Processo [di creazione di asset.](/windows/mixed-reality/design/asset-creation-process)
+Per altre informazioni, vedere Processo [di creazione di asset.](../../design/asset-creation-process.md)
 
 ### <a name="shader-passes"></a>Passaggi dello shader
 
@@ -136,7 +136,7 @@ Le chiamate di disegno sono chiamate a elevato utilizzo di risorse alla scheda g
 
 ![Le chiamate di disegno devono essere ottimizzate per migliorare le prestazioni.](images\qf-3d-asset-draw-calls.jpg)
 
-Vedere [Consigli sulle prestazioni da CPU a GPU.](/windows/mixed-reality/develop/unity/performance-recommendations-for-unity#cpu-to-gpu-performance-recommendations)
+Vedere [Consigli sulle prestazioni da CPU a GPU.](./performance-recommendations-for-unity.md#cpu-to-gpu-performance-recommendations)
 
 ### <a name="finale"></a>Finale
 
